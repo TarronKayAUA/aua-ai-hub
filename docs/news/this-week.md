@@ -20,8 +20,15 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">A six-point plan to prepare psychiatrists in training for the age of AI</a>
+        <p class="news-card-summary">Editorial proposing a six-point plan for psychiatry training programs to prepare residents for clinical and educational impacts of artificial intelligence.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 4, 2026</span></div>
@@ -297,13 +304,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Study finds clinicians perform inconsistently when labeling arrhythmia training data, especially for complex cases, supporting the case for clinical decision support tools and better labeler preparation.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42665263?fc=20260609215449&amp;ff=20260829030726&amp;v=2.20.1">A Comparative Analysis of Large Language Model Performance on USMLE Step 1-Style Allergy/Immunology Questions: Evaluating Correctness and Consistency</a>
-        <p class="news-card-summary">Gemini and Grok achieved approximately 81% accuracy on USMLE Step 1-style allergy and immunology questions, outperforming ChatGPT, with performance varying significantly based on prompt complexity.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 28, 2026</span></div>
@@ -321,15 +321,36 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 33 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">ECG-based detection of occlusion myocardial infarction: a dedicated deep neural network versus multimodal large language models and physicians - a retrospective diagnostic accuracy study</a>
+        <p class="news-card-summary">Task-specific deep neural networks outperformed general-purpose large language models for electrocardiogram-based occlusion myocardial infarction detection, with models showing clinically important limitations.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03108-0">From feasibility to neuroanatomic validity of remote cognitive smartphone assessments in early Alzheimer’s disease</a>
         <p class="news-card-summary">Remote cognitive assessments via smartphone show neuroanatomic validity for detecting early Alzheimer&#x27;s disease, supporting feasibility of smartphone-based cognitive monitoring.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03131-1">Senescence-aware filtering facilitates robust prediction of cancer immunotherapy outcomes</a>
+        <p class="news-card-summary">Senescence-aware filtering improves machine learning prediction accuracy for cancer immunotherapy outcomes.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03177-1">Unsupervised machine learning for placental disease using cell spatial organization</a>
+        <p class="news-card-summary">Unsupervised machine learning applied to spatial cell organization in placental tissue enables detection of placental disease.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -546,13 +567,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03144-w">AgentDS-BUS: a fine-tuning-free agentic breast ultrasound malignancy classification framework with decoupled segmentation and feature analysis</a>
-        <p class="news-card-summary">AgentDS-BUS is a fine-tuning-free agentic system for breast ultrasound malignancy classification that decouples segmentation and feature analysis without requiring model retraining.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03145-9">Interpretable multi-modal hierarchical framework to support cytomorphological analysis of hematologic cancers</a>
         <p class="news-card-summary">Peer-reviewed framework combines multiple data types in an interpretable model to assist pathologists in analyzing hematologic cancer cell morphology.</p>
       </div>
@@ -569,8 +583,16 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident">OpenAI admits to German wiki ‘incident’</a>
+        <p class="news-card-summary">OpenAI disclosed that its autonomous agents inadvertently wrote to a German wiki site and acknowledged need to improve incident reporting procedures.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D_54a015.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 4, 2026</span></div>
@@ -863,14 +885,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Terminal Bench 4.0 released with updated leaderboard showing GLM-5.3 and Fable 5 at comparable performance levels; benchmark includes focus on rapid iteration to address saturation.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/49j32fxfk9mh1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=8b4fef10ec92ba49c55974de956673941355815d" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1w0tgzl/zaiorgglm53_hugging_face">zai-org/GLM-5.3 · Hugging Face</a>
-        <p class="news-card-summary">GLM-5.3, an open-weights model, achieves state-of-the-art performance on coding benchmarks through post-training improvements, with 50% gains over GLM-5.2 on internal and public coding evaluation sets.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/BhH_AjL0mdp-2nZPRCiygI2acL0nwkgIh3KfgwJsMEU.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=dea490193213b00bb41f33cf60be19d474c255bb" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 

@@ -18,14 +18,35 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 5, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">ECG-based detection of occlusion myocardial infarction: a dedicated deep neural network versus multimodal large language models and physicians - a retrospective diagnostic accuracy study</a>
+    <p class="news-card-summary">Task-specific deep neural networks outperformed general-purpose large language models for electrocardiogram-based occlusion myocardial infarction detection, with models showing clinically important limitations.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03108-0">From feasibility to neuroanatomic validity of remote cognitive smartphone assessments in early Alzheimer’s disease</a>
     <p class="news-card-summary">Remote cognitive assessments via smartphone show neuroanatomic validity for detecting early Alzheimer&#x27;s disease, supporting feasibility of smartphone-based cognitive monitoring.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03131-1">Senescence-aware filtering facilitates robust prediction of cancer immunotherapy outcomes</a>
+    <p class="news-card-summary">Senescence-aware filtering improves machine learning prediction accuracy for cancer immunotherapy outcomes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03177-1">Unsupervised machine learning for placental disease using cell spatial organization</a>
+    <p class="news-card-summary">Unsupervised machine learning applied to spatial cell organization in placental tissue enables detection of placental disease.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -104,27 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03191-3">The illusion of clinical reasoning: a benchmark reveals the pervasive gap in vision-language models for clinical competency</a>
     <p class="news-card-summary">A benchmark assessment reveals vision-language models fail to demonstrate genuine clinical reasoning despite appearing competent on surface metrics.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03175-3">Explicit chain of diagnosis for CMR semantic interpretation via large reasoning model</a>
-    <p class="news-card-summary">Study of a large reasoning model for cardiac magnetic resonance interpretation using explicit diagnostic chain of reasoning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88206">Markov Decision Process, Based Personalized Follow-Up Planning for Type 2 Diabetes: Retrospective Cohort Study</a>
-    <p class="news-card-summary">Researchers develop a Markov decision process framework for personalized follow-up scheduling in type 2 diabetes care, balancing monitoring frequency, delivery mode, health outcomes, and resource use.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 2, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82540">Automatic Kidney Image Segmentation During Robot-Assisted Partial Nephrectomy Using a Deep Learning Model Based on a Multiannotator Dataset: Model Development and Validation Study</a>
-    <p class="news-card-summary">A deep learning model for real-time kidney image segmentation during robot-assisted partial nephrectomy was developed and validated using a multiannotator dataset to enable augmented reality guidance.</p>
   </div>
 </div>
 </div>
