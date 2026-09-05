@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -297,13 +297,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A randomized crossover trial found that ChatGPT-assisted personalized learning improved surgical education outcomes for undergraduate medical students compared to traditional methods.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 29, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42666714?fc=20260609215449&amp;ff=20260829152515&amp;v=2.20.1">Clinician Performance in Training Data Curation for an Arrhythmia Machine Learning Model: Is Anyone Qualified?</a>
-        <p class="news-card-summary">Study finds clinicians perform inconsistently when labeling arrhythmia training data, especially for complex cases, supporting the case for clinical decision support tools and better labeler preparation.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -314,9 +307,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 5, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 36 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
@@ -562,13 +555,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 31, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03168-2">Artificial intelligence tools in sepsis prediction: a systematic review and meta-analysis</a>
         <p class="news-card-summary">Systematic review and meta-analysis of artificial intelligence tools for sepsis prediction synthesizes evidence on performance and clinical applicability.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 29, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03145-9">Interpretable multi-modal hierarchical framework to support cytomorphological analysis of hematologic cancers</a>
-        <p class="news-card-summary">Peer-reviewed framework combines multiple data types in an interpretable model to assist pathologists in analyzing hematologic cancer cell morphology.</p>
       </div>
     </div>
     </div>
