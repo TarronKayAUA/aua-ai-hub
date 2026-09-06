@@ -1,114 +1,6 @@
 {
  "items": [
   {
-   "url": "https://huggingface.co/blog/amazon/one-click-to-sagemaker-studio",
-   "title_hash": "a210f18dd6f0d267807f6c23436cf6c5",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/us-manufacturers-energy-costs-soar-because-of-ai-data-center-demand",
-   "title_hash": "81d695822231e205e7103c6b71b28e71",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-4",
-   "title_hash": "abe3aedfe2e3dd9bc444f5ea58e00566",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/7/sqlite-migrate",
-   "title_hash": "a7f7d3e686f7230a1ca0a8007be41aa2",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/7/github-code-component",
-   "title_hash": "9966df8fb9857fc29d51ddf8e6596f85",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": false,
-   "reason": "minor tool release notes"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils",
-   "title_hash": "62df974f15af65e16e26ebdbe4acd7e6",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": false,
-   "reason": "duplicate of a kept candidate"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42412625?fc=20260609215449&ff=20260707193356&v=2.20.0",
-   "title_hash": "1942351f5155a215b0ed1eb0684f45eb",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/7/sqlite-utils-2",
-   "title_hash": "a67eaa5971f05e5504eb629e41e99af9",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02963-1",
-   "title_hash": "a2dc948e875afc1230c3429b15240644",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": true,
-   "title": "Clinical trials and evaluation of AI tools in solid organ transplantation: implications for clinical care, regulatory science, and rare diseases",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-07T00:00:00+00:00",
-   "summary": "Review examines clinical trials and regulatory evaluation of AI tools in solid organ transplantation with implications for rare disease care.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02859-0",
-   "title_hash": "063e57ee08cc18d51a65ad85c297ff87",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": true,
-   "title": "An Interpretable AI System for Oral Leukoplakia Progression: From Early Screening to Lesion Delineation",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-07T00:00:00+00:00",
-   "summary": "Study presents an interpretable AI system for detecting and delineating oral leukoplakia lesions with early screening capability.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02974-y",
-   "title_hash": "237776bf426d6c164b54a60ce09b6719",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": true,
-   "title": "Attachment, loneliness, and social support as moderators of conversational AI, based mental health outcomes",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-07T00:00:00+00:00",
-   "summary": "Research examines how attachment, loneliness, and social support affect mental health outcomes from conversational AI interventions.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02852-7",
-   "title_hash": "ae544b1a2352dbfc8d651af233f17387",
-   "first_seen": "2026-07-07T23:33:56.155440+00:00",
-   "kept": true,
-   "title": "Benchmarking large language models against practicing clinicians on psychopathological assessment",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-07T00:00:00+00:00",
-   "summary": "Study compares large language models to practicing clinicians on standardized psychopathological assessment tasks.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
    "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets",
    "title_hash": "dffbbf01589cc668aaf82daa0c185f2f",
    "first_seen": "2026-07-08T09:32:49.198412+00:00",
@@ -32914,6 +32806,27 @@
    "first_seen": "2026-09-05T18:20:25.368411+00:00",
    "kept": false,
    "reason": "personal blog post on a niche tool integration, not of significance to medical educators"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ngyFRCNq0Yc",
+   "title_hash": "a41e231f5b67b2f067b03004876166fb",
+   "first_seen": "2026-09-06T04:42:53.950167+00:00",
+   "kept": false,
+   "reason": "speculation and rumors about unreleased models without confirmed developments"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=aHy7cNj-W2I",
+   "title_hash": "5ff1e30622c9c342064891b18051f52e",
+   "first_seen": "2026-09-06T04:42:53.950167+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased models without confirmed developments"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/ai-am-highlights-welcome-to-the-agi-era",
+   "title_hash": "100ed612ca6701fc862c122e217fee08",
+   "first_seen": "2026-09-06T04:42:53.950167+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased models and unconfirmed incidents; no substantive educational or technical content identifiable from the summary"
   }
  ],
  "digests": [
@@ -33092,19 +33005,19 @@
  "last_digest_at": "2026-09-04T04:37:53.288113+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "General-use multimodal AI models continue to struggle with specialized visual tasks in medicine: platforms tested on Pell and Gregory classification of impacted molars performed poorly against radiographs <a href=\"https://pubmed.ncbi.nlm.nih.gov/42694521?fc=20260609215449&amp;ff=20260904145949&amp;v=2.20.1\">[3]</a>, and a related study found that prompting strategy alone did not close the gap for gross anatomy image interpretation across four models <a href=\"https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1\">[2]</a>. Attitudes toward AI vary by clinical context and experience: radiology-bound Canadian medical students report confidence in the specialty&#x27;s sustainability despite automation concerns <a href=\"https://pubmed.ncbi.nlm.nih.gov/42697747?fc=20260609215449&amp;ff=20260905003334&amp;v=2.20.1\">[4]</a>, while endoscopists surveyed three years after GI Genius adoption describe increasingly positive views of AI-assisted colonoscopy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42687598?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1\">[10]</a>. Meanwhile, a randomized trial tested AI-scaffolded problem-based learning for medical interns under facilitated and unfacilitated designs <a href=\"https://mededu.jmir.org/2026/1/e95039\">[7]</a>.\n\nAlso this week: six items address teaching and curriculum design, including a multidimensional rubric for evaluating AI teaching agents beyond platform-generated scores and a course-grounded chatbot for STEM lecture videos, alongside three studies on assessment and feedback, one on emergency physician task automation, and a pilot trial of AI-based simulation for code status discussions in internal medicine residency.",
-   "hash": "3932377f10940170",
-   "date": "September 5, 2026"
+   "text": "A six-point plan for preparing psychiatry residents for AI&#x27;s clinical and educational impact anchors curriculum discussions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[1]</a>, alongside a randomized trial testing a multiagent AI system to scaffold problem-based learning for medical interns <a href=\"https://mededu.jmir.org/2026/1/e95039\">[8]</a>. Attitudes research shows Canadian medical students drawn to radiology remain confident in the specialty&#x27;s sustainability despite automation concerns <a href=\"https://pubmed.ncbi.nlm.nih.gov/42697747?fc=20260609215449&amp;ff=20260905003334&amp;v=2.20.1\">[5]</a>, while a new multidimensional rubric moves evaluation of AI teaching agents beyond simple platform scores <a href=\"https://mededu.jmir.org/2026/1/e96819\">[9]</a>. Multimodal models tested on dental charts and gross anatomy images show mixed reliability for supporting hands-on training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1\">[3]</a>.\n\nAlso this week: six curriculum-focused pieces span psychiatry, ophthalmology, and application-essay integrity concerns, alongside four studies on student and clinician attitudes toward AI-assisted colonoscopy and automation. Three assessment and feedback papers examine evaluation methods for AI teaching tools, and a pilot trial explores AI-based simulation for code status discussions with internal medicine residents.",
+   "hash": "9b855490a55b273e",
+   "date": "September 6, 2026"
   },
   "clinical_practice": {
-   "text": "The FDA&#x27;s TEMPO pilot program is opening a path for generative AI medical devices to reach patients before formal marketing authorization, letting companies such as Cadence and Limbic deploy tools ahead of full clearance <a href=\"https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation\">[7]</a>. That regulatory shift arrives alongside new evidence that AI systems still struggle with genuine clinical reasoning: a benchmark of vision-language models found persistent gaps between surface-level competence and actual diagnostic understanding <a href=\"https://www.nature.com/articles/s41746-026-03191-3\">[12]</a>. Meanwhile, a Nature Medicine study describes a Mother-Child AI agent that integrates longitudinal electronic health records to forecast maternal and infant outcomes, illustrating growing interest in agent-based clinical decision support <a href=\"https://www.nature.com/articles/s41591-026-04694-y\">[6]</a>. A separate voice-biomarker model further extends monitoring to ALS and Parkinson&#x27;s disease <a href=\"https://www.nature.com/articles/s41746-026-03206-z\">[4]</a>.\n\nAlso this week: five decision-support studies address diabetes follow-up planning and infectious disease surveillance, while five safety and evaluation papers include a five-phase framework for diagnostic AI and a fairness audit of clinical language model agents. Three patient-facing tools cover topics from messaging tone to mental health assessment, and two imaging papers examine cardiac MRI interpretation and robotic kidney segmentation.",
-   "hash": "37e2580650614fb0",
-   "date": "September 5, 2026"
+   "text": "A retrospective study found that task-specific deep neural networks outperformed both general-purpose large language models and physicians in detecting occlusion myocardial infarction from ECG data, exposing clinically important limitations in current multimodal systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[1]</a>. Regulatory oversight is adapting alongside these findings: the FDA&#x27;s TEMPO pilot now allows generative AI medical devices, including products from Cadence and Limbic, to reach patients before formal marketing authorization <a href=\"https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation\">[11]</a>. A proposed five-phase framework for evaluating diagnostic and predictive medical AI aims to standardize such assessments <a href=\"https://www.nature.com/articles/s41746-026-03155-7\">[15]</a>, while a Nature Medicine study introduced an LLM-based agent that analyzes longitudinal electronic health records to forecast maternal and infant outcomes, supporting risk-stratified prenatal care <a href=\"https://www.nature.com/articles/s41591-026-04694-y\">[10]</a>.\n\nAlso this week: six items address safety and evaluation, four focus on clinical decision support, three cover patient-facing tools, and two examine imaging and diagnostics. Coverage includes a voice-biomarker foundation model for ALS and Parkinson&#x27;s screening, along with new work on infectious disease surveillance platforms.",
+   "hash": "406b35d8245b528d",
+   "date": "September 6, 2026"
   },
   "general_ai": {
-   "text": "OpenAI&#x27;s GPT-6 Astra launch dominates this cycle, with the company touting major capability gains <a href=\"https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release\">[8]</a> even as Sam Altman acknowledged a rocky rollout that locked out some paying subscribers <a href=\"https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout\">[1]</a>. Google answered with Gemini 3.8 Flash, adding iterative reasoning and tool use while holding introductory pricing <a href=\"https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash\">[15]</a>. Beneath the headline releases, methodological scrutiny continues: a benchmark contamination study found inflated scores rarely reshuffle leaderboard rankings <a href=\"https://arxiv.org/abs/2609.02899\">[4]</a>, while a separate analysis flagged rubric artifacts biasing LLM-as-judge evaluations <a href=\"https://arxiv.org/abs/2609.02942\">[5]</a>.\n\nAlso this week: eight new model releases broaden the field, including Nvidia&#x27;s free Personal AI Router for linking home computers into a shared inference cluster and K2 Horizon&#x27;s fleet of six open-weights models, alongside five papers on methods ranging from biomedical relation extraction to energy-efficient on-device inference, plus additional evaluation work on instruction-tuning quality confounds.",
-   "hash": "a95c765792be1ea7",
-   "date": "September 5, 2026"
+   "text": "OpenAI&#x27;s release of GPT-6 Astra stands as the most consequential development, pitched by the company as a generational leap in cybersecurity, software engineering, and computer use <a href=\"https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release\">[9]</a>, though the rollout left paying subscribers locked out and drew a public apology from Sam Altman <a href=\"https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout\">[2]</a>. OpenAI also disclosed that its autonomous agents inadvertently edited a German wiki site, an incident it says exposed gaps in reporting procedures <a href=\"https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident\">[1]</a>. Separately, open-weights development continues with K2 Horizon&#x27;s six-model fleet <a href=\"https://ifm.ai/blog/k2\">[11]</a>, and a benchmarking study found that data contamination inflates leaderboard scores without materially reordering rankings <a href=\"https://arxiv.org/abs/2609.02899\">[5]</a>.\n\nAlso this week: seven new-model releases include Nvidia&#x27;s free Personal AI Router for linking idle home computers into a shared inference cluster and Hugging Face&#x27;s NeoMME multimodal encoder. Five papers on research and methods cover biomedical relation extraction, embedding transfer, and instruction-tuning format effects, while a second evaluation paper documents rubric bias in LLM-as-judge scoring.",
+   "hash": "0ca0d9cd433b8584",
+   "date": "September 6, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -33199,5 +33112,5 @@
    "url": "https://nebiusglobalaihackathon.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-05"
+ "section_briefs_refreshed": "2026-09-06"
 }
