@@ -32699,6 +32699,13 @@
    "first_seen": "2026-09-06T12:09:51.318481+00:00",
    "kept": false,
    "reason": "business leadership and organizational strategy content outside scope of medical educators and students"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/6/the-purpose-of-dns-is-to-spread-scams",
+   "title_hash": "9b543e3af84e73b13b31d62e7565bc0b",
+   "first_seen": "2026-09-06T15:30:14.651358+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
