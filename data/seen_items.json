@@ -32488,6 +32488,20 @@
    "first_seen": "2026-09-06T18:19:39.376003+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/the-best-person-to-discuss-vaccines",
+   "title_hash": "b34cc34242db72ab51d13b9d45221733",
+   "first_seen": "2026-09-06T22:08:25.345160+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/6/theres-no-limit-to-how-bad-code-can-get",
+   "title_hash": "5f8418f86e7c770bace1e8bebd556beb",
+   "first_seen": "2026-09-06T22:08:25.345160+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
