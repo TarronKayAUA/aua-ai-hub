@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=mUw27wG7uFA" target="_blank" rel="noopener" title="AI Simplified: 6 Concepts You Need to Know About Modern AI">
+  <img src="https://i2.ytimg.com/vi/mUw27wG7uFA/hqdefault.jpg" alt="Video: AI fundamentals and key concepts explained" loading="lazy">
+  <span class="video-card-title">AI fundamentals and key concepts explained</span>
+  <span class="video-card-meta">IBM Technology, September 6, 2026</span>
+  <span class="video-card-desc">IBM explainer covering fundamental AI concepts and terminology for audiences new to the field.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=Spuza-KwTJ4" target="_blank" rel="noopener" title="GPT 6 Astra, so good even OpenAI are worried">
   <img src="https://i4.ytimg.com/vi/Spuza-KwTJ4/hqdefault.jpg" alt="Video: Recent AI model releases and benchmark updates" loading="lazy">
   <span class="video-card-title">Recent AI model releases and benchmark updates</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI agents controlling physical science equipment safely</span>
   <span class="video-card-meta">Anthropic, August 27, 2026</span>
   <span class="video-card-desc">Anthropic introduces a Model Hardware Standard enabling AI agents to safely operate laboratory equipment and scientific instruments.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=nVImVgKpoOY" target="_blank" rel="noopener" title="LLM &amp; AI Agent Benchmarks vs Reality: Why AI Applications Break">
-  <img src="https://i3.ytimg.com/vi/nVImVgKpoOY/hqdefault.jpg" alt="Video: LLM benchmarks versus real-world performance gap" loading="lazy">
-  <span class="video-card-title">LLM benchmarks versus real-world performance gap</span>
-  <span class="video-card-meta">IBM Technology, August 27, 2026</span>
-  <span class="video-card-desc">IBM technical explainer on why large language models score well on benchmarks but fail in real-world applications, with analysis of the gap.</span>
 </a>
 </div>
 

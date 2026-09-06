@@ -18,15 +18,71 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 6, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">A six-point plan to prepare psychiatrists in training for the age of AI</a>
         <p class="news-card-summary">Editorial proposing a six-point plan for psychiatry training programs to prepare residents for clinical and educational impacts of artificial intelligence.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Hands-on Artificial Intelligence Education for Radiology Residents: A Three-year Feasibility and Curriculum Implementation Study</a>
+        <p class="news-card-summary">A three-year study found that structured, hands-on AI education integrated into radiology residency training is feasible and sustainable, with learners attaining foundational AI competencies and providing feedback for curriculum refinement.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42700004?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">A comparative evaluation of ChatGPT-assisted and traditional methods of teaching diagnostic assessments to medical students: A randomized controlled study</a>
+        <p class="news-card-summary">A randomized controlled trial compared ChatGPT-assisted teaching of diagnostic assessments to traditional methods in medical students, evaluating the effectiveness of AI-supported instruction.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42699427?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Adoption, perceived value, and barriers to generative artificial intelligence in emergency medicine: A cross-sectional survey of Latin American clinicians</a>
+        <p class="news-card-summary">A survey of Latin American emergency clinicians found rapid generative AI adoption with perceived clinical benefits, but without governance frameworks or structured training, indicating urgent need for policy and education infrastructure.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42699426?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Using Chat Generative Pre-Trained Transformer for teaching and learning: A survey among health professions educators</a>
+        <p class="news-card-summary">A survey among health professions educators found differences in knowledge, attitudes, and practices regarding ChatGPT integration, recommending targeted AI literacy programs to support implementation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42699128?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Artificial Intelligence in Orthopaedic Training: A Narrative Literature Review of Applications, Evidence, and Limitations</a>
+        <p class="news-card-summary">A narrative review examines AI applications in orthopaedic surgical training, including evidence and limitations of AI-supported skill development and operative exposure.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698619?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Writing as formation: supervising AI use in early-career medical authorship</a>
+        <p class="news-card-summary">A commentary proposes supervision strategies for trainee use of large language models in medical writing and thesis preparation, addressing the formative phase of researcher development.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Comparison of artificial intelligence assisted training and traditional learning paths in clinical simulation skills training: meta-analysis of randomized controlled trials</a>
+        <p class="news-card-summary">A meta-analysis found that vision-based deep learning effectively guides procedural skill training, while complex cognitive skills benefit most from AI-supported standardized practice followed by expert instruction.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698520?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Development of AI competencies within the medical curriculum</a>
+        <p class="news-card-summary">Integrated, longitudinal, and active learning-based models provide the strongest foundation for developing AI competencies in medical curricula to prepare physicians for clinical AI collaboration.</p>
       </div>
     </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
@@ -567,9 +623,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 6, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -856,14 +912,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Tutorial explains the technical approach to building diffusion models applied to language generation, covering architecture and training methods.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">August 29, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Aug/29/hy4">Introducing Hy4 Preview</a>
-        <p class="news-card-summary">Tencent released Hy4 Preview, an open-weights large language model with 770B total parameters, 49B active, and 1M token context window.</p>
-      </div>
-      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026-08-29/IMG_7725.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">August 29, 2026</span></div>
@@ -881,6 +929,12 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ??? abstract "Show the 18 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=mUw27wG7uFA" target="_blank" rel="noopener" title="AI Simplified: 6 Concepts You Need to Know About Modern AI">
+      <img src="https://i2.ytimg.com/vi/mUw27wG7uFA/hqdefault.jpg" alt="Video: AI fundamentals and key concepts explained" loading="lazy">
+      <span class="video-card-title">AI fundamentals and key concepts explained</span>
+      <span class="video-card-meta">IBM Technology, September 6, 2026</span>
+      <span class="video-card-desc">IBM explainer covering fundamental AI concepts and terminology for audiences new to the field.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=Spuza-KwTJ4" target="_blank" rel="noopener" title="GPT 6 Astra, so good even OpenAI are worried">
       <img src="https://i4.ytimg.com/vi/Spuza-KwTJ4/hqdefault.jpg" alt="Video: Recent AI model releases and benchmark updates" loading="lazy">
       <span class="video-card-title">Recent AI model releases and benchmark updates</span>
@@ -970,12 +1024,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">Tencent HY4 hands-on testing across coding and application tasks</span>
       <span class="video-card-meta">Bijan Bowen, August 31, 2026</span>
       <span class="video-card-desc">Hands-on testing of Tencent HY4 across coding, browser OS, and game development tasks, demonstrating model capabilities on practical applications.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=4wjHNgMLeyY" target="_blank" rel="noopener" title="Ox Alpha reveal, realtime Minimax, Qwen Next, Hy4, robot olympics: AI NEWS">
-      <img src="https://i1.ytimg.com/vi/4wjHNgMLeyY/hqdefault.jpg" alt="Video: Recent model releases: GLM, Qwen, Minimax, and Hy4" loading="lazy">
-      <span class="video-card-title">Recent model releases: GLM, Qwen, Minimax, and Hy4</span>
-      <span class="video-card-meta">AI Search, August 30, 2026</span>
-      <span class="video-card-desc">Roundup covering recent model releases including GLM 5.3 Flash, Qwen 3.8 Flash Next, Minimax FastH3, and Hy4 with news and capability comparisons.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=b0dZjfQ1rpc" target="_blank" rel="noopener">
       <img src="https://i3.ytimg.com/vi/b0dZjfQ1rpc/hqdefault.jpg" alt="Video: 5 Reasons Physicians Should Get On Board With AI Scribes - The Medical Futurist" loading="lazy">

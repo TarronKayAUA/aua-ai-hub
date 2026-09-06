@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 6, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -26,6 +26,62 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">A six-point plan to prepare psychiatrists in training for the age of AI</a>
     <p class="news-card-summary">Editorial proposing a six-point plan for psychiatry training programs to prepare residents for clinical and educational impacts of artificial intelligence.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Hands-on Artificial Intelligence Education for Radiology Residents: A Three-year Feasibility and Curriculum Implementation Study</a>
+    <p class="news-card-summary">A three-year study found that structured, hands-on AI education integrated into radiology residency training is feasible and sustainable, with learners attaining foundational AI competencies and providing feedback for curriculum refinement.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42700004?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">A comparative evaluation of ChatGPT-assisted and traditional methods of teaching diagnostic assessments to medical students: A randomized controlled study</a>
+    <p class="news-card-summary">A randomized controlled trial compared ChatGPT-assisted teaching of diagnostic assessments to traditional methods in medical students, evaluating the effectiveness of AI-supported instruction.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42699427?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Adoption, perceived value, and barriers to generative artificial intelligence in emergency medicine: A cross-sectional survey of Latin American clinicians</a>
+    <p class="news-card-summary">A survey of Latin American emergency clinicians found rapid generative AI adoption with perceived clinical benefits, but without governance frameworks or structured training, indicating urgent need for policy and education infrastructure.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42699426?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Using Chat Generative Pre-Trained Transformer for teaching and learning: A survey among health professions educators</a>
+    <p class="news-card-summary">A survey among health professions educators found differences in knowledge, attitudes, and practices regarding ChatGPT integration, recommending targeted AI literacy programs to support implementation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42699128?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Artificial Intelligence in Orthopaedic Training: A Narrative Literature Review of Applications, Evidence, and Limitations</a>
+    <p class="news-card-summary">A narrative review examines AI applications in orthopaedic surgical training, including evidence and limitations of AI-supported skill development and operative exposure.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698619?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Writing as formation: supervising AI use in early-career medical authorship</a>
+    <p class="news-card-summary">A commentary proposes supervision strategies for trainee use of large language models in medical writing and thesis preparation, addressing the formative phase of researcher development.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Comparison of artificial intelligence assisted training and traditional learning paths in clinical simulation skills training: meta-analysis of randomized controlled trials</a>
+    <p class="news-card-summary">A meta-analysis found that vision-based deep learning effectively guides procedural skill training, while complex cognitive skills benefit most from AI-supported standardized practice followed by expert instruction.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698520?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Development of AI competencies within the medical curriculum</a>
+    <p class="news-card-summary">Integrated, longitudinal, and active learning-based models provide the strongest foundation for developing AI competencies in medical curricula to prepare physicians for clinical AI collaboration.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -68,62 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 3, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e96673">Estimating the Prevalence of Generative AI Use in Medical School Application Essays: Cross-Sectional Study</a>
     <p class="news-card-summary">Cross-sectional study estimating generative AI use in medical school application essays across cohorts spanning the rollout period from November 2022 onward.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95039">Scaffolded AI-Supported Problem-Based Learning for Medical Interns: Exploratory Retrospectively Registered Randomized Controlled Evaluation With a Voluntary Feasibility Follow-Up</a>
-    <p class="news-card-summary">Randomized controlled trial of a multiagent AI system designed to scaffold problem-based learning for medical interns, comparing facilitated and unfacilitated AI-supported approaches.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e96819">What Platform Scores Miss: Multidimensional Evaluation of AI Teaching Agents in Medical Education</a>
-    <p class="news-card-summary">Study develops and validates a multidimensional rubric for evaluating AI teaching agents beyond platform-generated scores to assess true pedagogical quality.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42687662?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Vibe coding for ophthalmologists</a>
-    <p class="news-card-summary">Review examines vibe coding, conversational AI-assisted software development, through an ophthalmology-specific lens to identify where it adds value and limitations.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42687598?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Endoscopists&#x27; attitudes toward and experiences with artificial intelligence-assisted colonoscopy: a 3-year follow-up survey after the implementation of GI Genius</a>
-    <p class="news-card-summary">Three-year follow-up survey finds endoscopists generally perceive AI-assisted colonoscopy as improving quality, with greater experience associated with more positive attitudes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42687470?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Will Artificial Intelligence Replace Me? Automation Susceptibility of Emergency Physician Tasks</a>
-    <p class="news-card-summary">Study finds routine cognitive tasks consume disproportionate emergency physician time and are immediate targets for AI workflow automation, with augmentation of complex tasks accelerating.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42690629?fc=20260609215449&amp;ff=20260903183658&amp;v=2.20.1">The Role of Artificial Intelligence in Teaching Ophthalmology Skills: A Systematic Review</a>
-    <p class="news-card-summary">Systematic review of AI-enabled interventions in ophthalmology training, finding promise for diagnostic learning and feedback but noting limited evidence from small heterogeneous studies.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42690594?fc=20260609215449&amp;ff=20260903183658&amp;v=2.20.1">Artificial Intelligence-Based Simulation to Improve Code Status Discussions Among Internal Medicine Residents: A Pilot Randomized Trial</a>
-    <p class="news-card-summary">Pilot randomized trial showing feasibility and promise of AI-based simulation for training internal medicine residents in code status discussion skills.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.01833">Candidate Generation and Definition-Guided Verification for Sentence-Level Depression Symptom Recognition</a>
-    <p class="news-card-summary">Preprint proposes a two-stage framework using language models to recognize depression symptoms at sentence level with grounding in diagnostic definitions.</p>
   </div>
 </div>
 </div>
