@@ -345,17 +345,32 @@ SOFT_404_SHAPES = [
         # sentinel /PageNotFound.aspx. A live form leaves the host entirely
         # for forms.cloud.microsoft/pages/responsepage.aspx.
         #
-        # TWO KNOWN LIMITS, both unprobed as of 2026-09-05, stated here
-        # rather than left for someone to discover from a green report.
+        # TWO KNOWN LIMITS, stated here rather than left for someone to
+        # discover from a green report.
         # (a) This covers the form being DELETED or re-issued under a new
-        #     code. A form CLOSED to responses, which is Microsoft's
-        #     one-click retire and the likelier path for a form the owner no
-        #     longer wants, probably still resolves to responsepage.aspx and
-        #     would read alive. Settle it by closing a throwaway form and
-        #     fetching its link once, then add a second clause here.
+        #     code. It does NOT cover a form CLOSED to responses, which is
+        #     Microsoft's one-click retire, and it never can. Probed
+        #     2026-09-07 with a throwaway form fetched before and after
+        #     toggling "Accept responses" off: status, final URL, title and
+        #     body size were all unchanged, still 200 on
+        #     /pages/responsepage.aspx titled "Microsoft Forms". Forms is a
+        #     JavaScript app that fetches its own open/closed state after
+        #     the page loads, and the served HTML carries no state field at
+        #     all. Two workarounds exist and both are rejected: driving a
+        #     headless browser is disproportionate for one URL shape in an
+        #     authoring-time checker, and calling the app's private
+        #     definition endpoint would couple this file to an undocumented
+        #     internal API that Microsoft can change without notice.
         # (b) The long-form URL the same Copy link menu offers,
-        #     forms.office.com/Pages/ResponsePage.aspx?id=..., is neither
-        #     surveyed nor matched. It does not appear in this repository.
+        #     Pages/ResponsePage.aspx?id=..., is neither surveyed nor
+        #     matched. It does not appear in this repository.
+        #
+        # OPERATIONAL RULE, which is the real mitigation for (a): when the
+        # feedback form is retired, DELETE it or re-issue it under a new
+        # code. Do not merely close it to responses, because the 13 links
+        # would go on reporting healthy while leading readers to a dead end
+        # that nothing on this site can detect. If closing is unavoidable,
+        # update those 13 links in the same sitting.
         "host": "forms.office.com",
         "prefix": "/r/",
         "dead": _forms_not_found,
