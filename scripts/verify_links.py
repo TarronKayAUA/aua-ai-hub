@@ -291,6 +291,17 @@ def _cert_error(exc, depth: int = 0) -> ssl.SSLCertVerificationError | None:
     return None
 
 
+def _forms_not_found(final: str, title: str) -> bool:
+    """Microsoft Forms redirects a dead shortlink to a PageNotFound sentinel.
+
+    Shared by both Forms entries below rather than written twice, so the two
+    domains cannot drift apart when one is edited. Each still carries its own
+    canary, so a change on one domain is still caught on that domain.
+    """
+    return urllib.parse.urlparse(final).path.lower().endswith(
+        "/pagenotfound.aspx")
+
+
 # Hosts that answer HTTP 200 for a path that cannot exist ("soft 404"), so
 # `status < 400` is not evidence a link is alive. On these shapes a dead link
 # is unreportable and the monthly run stays green forever.
@@ -347,14 +358,37 @@ SOFT_404_SHAPES = [
         #     surveyed nor matched. It does not appear in this repository.
         "host": "forms.office.com",
         "prefix": "/r/",
-        "dead": lambda final, title: urllib.parse.urlparse(
-            final).path.lower().endswith("/pagenotfound.aspx"),
+        "dead": _forms_not_found,
         # TRAP, and the reason this canary REPLACES the code rather than
         # extending it: forms.office.com/r/5a8RCi2YKP-zq7v3x-does-not-exist
         # still resolves to the REAL form and returns the live page, so a
         # canary built by appending a suffix would silently always pass.
         # SOFT_404_CONTROLS below pins that case so nobody re-derives it.
         "canary": "https://forms.office.com/r/Zq7V3xKp2M",
+        "verdict": "soft 404, form gone",
+    },
+    {
+        # The SAME product on its current domain. Microsoft is migrating
+        # Forms to *.cloud.microsoft: as of 2026-09-07 the "Copy link" menu
+        # hands out forms.cloud.microsoft/r/, and every forms.office.com/r/
+        # shortlink already redirects there, so the 13 links on this site
+        # reach the new host by way of the old one.
+        #
+        # This entry exists because the registry is keyed on the host of the
+        # URL AS WRITTEN, not the host it ends up on. Without it, the day
+        # anyone pastes a freshly copied Forms link into a page, that link
+        # silently stops being judged and goes back to a bare HTTP 200.
+        # Measured before it was added: a dead forms.cloud.microsoft/r/ code
+        # returned (True, "HTTP 200"), a false green of exactly the kind the
+        # table exists to prevent.
+        #
+        # Do NOT retire the forms.office.com entry above in favour of this
+        # one. The old domain still resolves, the site's own 13 links are
+        # written against it, and both must stay covered.
+        "host": "forms.cloud.microsoft",
+        "prefix": "/r/",
+        "dead": _forms_not_found,
+        "canary": "https://forms.cloud.microsoft/r/Zq7V3xKp2M",
         "verdict": "soft 404, form gone",
     },
     {
@@ -451,6 +485,14 @@ SOFT_404_CONTROLS = [
       "?id=xxx&route=shorturl"), "Microsoft Forms", False),
     # The trap: a suffix on the real code still resolves to the real form.
     ("https://forms.office.com/r/5a8RCi2YKP-zq7v3x-does-not-exist",
+     ("https://forms.cloud.microsoft/pages/responsepage.aspx"
+      "?id=xxx&route=shorturl"), "Microsoft Forms", False),
+    # The current domain, recorded from the same 2026-09-07 probe. Note the
+    # sentinel is that domain's own PageNotFound.aspx, not the legacy one,
+    # which is why the predicate keys on the path rather than the full URL.
+    ("https://forms.cloud.microsoft/r/Zq7V3xKp2M",
+     "https://forms.cloud.microsoft/PageNotFound.aspx", "Page not found", True),
+    ("https://forms.cloud.microsoft/r/dz5qq2UyXK",
      ("https://forms.cloud.microsoft/pages/responsepage.aspx"
       "?id=xxx&route=shorturl"), "Microsoft Forms", False),
     ("https://arena.ai/leaderboard/text-to-image-zq7v3x-does-not-exist",
