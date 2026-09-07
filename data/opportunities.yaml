@@ -268,3 +268,30 @@
   support: "Organizer-stated: $50,000+ in prizes including $20,000 grand prize, $10,000 2nd place, $6,000 3rd place, NVIDIA Jetson Orin Nano devices, and other awards"
   relevance: "Global online AI hackathon with substantial prizes and beginner-friendly focus, accessible to international medical students and faculty seeking general AI building skills."
   verified: 2026-08-31
+
+# Auto-verified 2026-09-07 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: "Build, Ship, Shape: Amazon Developer Hackathon"
+  url: https://amazonappdev2026.devpost.com/
+  organizer: "Amazon"
+  type: hackathon
+  format: virtual
+  eligibility: "Individuals above legal age of majority in country of residence, from all countries/territories excluding standard exceptions"
+  deadline: 2026-10-23
+  end_date: 2026-10-23
+  support: "Organizer-stated: $138,000 in prizes including cash, AWS credits, meetings with Amazon Developer team, and feature on Amazon Developer channels"
+  relevance: "Online hackathon with AI/ML theme open to international participants, relevant as a major platform provider opportunity for building skills."
+  verified: 2026-09-07
+
+# Auto-verified 2026-09-07 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: "OpenCV AI Competition 2026, powered by AWS"
+  url: https://opencv26.devpost.com/
+  organizer: "OpenCV Foundation (Administrator) and Amazon Web Services (Sponsor)"
+  type: competition
+  format: virtual
+  eligibility: "Individuals above legal age of majority in their country of residence, from all countries/territories excluding standard exceptions"
+  deadline: 2026-10-26
+  start_date: 2026-08-26
+  end_date: 2026-10-26
+  support: "Organizer-stated: $20,250 in cash prizes, including two optional $1,000 featured path awards, plus optional $150 cloud compute grants for selected teams"
+  relevance: "Online AI/ML competition with computer vision focus open globally, applicable to medical imaging and healthcare AI applications."
+  verified: 2026-09-07
