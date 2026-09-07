@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-documentation">
@@ -27,6 +27,21 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://arxiv.org/abs/2609.04366">VERGE: Verification-Enhanced Refinement for Grounded Extraction of Early-Onset Colorectal Cancer Symptoms in Clinical Notes</a>
     <p class="news-card-summary">A method for extracting early-onset colorectal cancer symptoms from clinical notes using language models to capture symptom duration, context, and family history for improved detection.</p>
   </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03202-3">Multimodal artificial intelligence integrating peritumoral MRI and clinical data stratifies meningioma recurrence risk after radiotherapy</a>
+    <p class="news-card-summary">Multimodal AI integrating peritumoral MRI and clinical data predicts meningioma recurrence risk after radiotherapy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04633-x">From algorithms to patient outcomes, lessons from one of the first randomized trials of AI in medicine</a>
+    <p class="news-card-summary">A randomized trial of AI in clinical practice shows algorithms must improve patient outcomes, not merely match clinician performance.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04633-x/MediaObjects/41591_2026_4633_Figa_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
@@ -111,20 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.01832">Interpretable Symptom Vectors for Depression in a Large Language Model</a>
     <p class="news-card-summary">Preprint demonstrates how large language models represent depressive symptoms as interpretable vectors, offering potential for nuanced mental health assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.01971">NS-Copilot: An LLM-Driven Agent System for Autonomous Neuroscience Analysis</a>
-    <p class="news-card-summary">Preprint presents an agent system that integrates heterogeneous neural models to lower barriers for laboratories adopting AI in neuroscience research.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03185-1">Differences in tone of AI and care team responses to patient messages by patient demographics</a>
-    <p class="news-card-summary">Study examines differences in tone between AI and human care team responses to patient messages across patient demographic groups.</p>
   </div>
 </div>
 </div>

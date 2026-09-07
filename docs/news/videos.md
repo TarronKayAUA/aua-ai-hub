@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=GRYZR2R20FI" target="_blank" rel="noopener" title="Code Quality in the Age of AI: Why Great Code Isn&#x27;t Enough">
+  <img src="https://i4.ytimg.com/vi/GRYZR2R20FI/hqdefault.jpg" alt="Video: Code quality in AI-assisted software development" loading="lazy">
+  <span class="video-card-title">Code quality in AI-assisted software development</span>
+  <span class="video-card-meta">IBM Technology, September 7, 2026</span>
+  <span class="video-card-desc">IBM explains software quality considerations when integrating AI code generation into development workflows.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=mUw27wG7uFA" target="_blank" rel="noopener" title="AI Simplified: 6 Concepts You Need to Know About Modern AI">
   <img src="https://i2.ytimg.com/vi/mUw27wG7uFA/hqdefault.jpg" alt="Video: AI fundamentals and key concepts explained" loading="lazy">
   <span class="video-card-title">AI fundamentals and key concepts explained</span>
@@ -127,17 +133,17 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">Bijan Bowen, August 27, 2026</span>
   <span class="video-card-desc">Hands-on comparison of Zhipu GLM 5.3 Flash against the full GLM 5.3 model across multiple benchmarks and use cases.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=P1zBiAQU1IA" target="_blank" rel="noopener" title="AI models can now help run physical science experiments">
-  <img src="https://i1.ytimg.com/vi/P1zBiAQU1IA/hqdefault.jpg" alt="Video: AI agents controlling physical science equipment safely" loading="lazy">
-  <span class="video-card-title">AI agents controlling physical science equipment safely</span>
-  <span class="video-card-meta">Anthropic, August 27, 2026</span>
-  <span class="video-card-desc">Anthropic introduces a Model Hardware Standard enabling AI agents to safely operate laboratory equipment and scientific instruments.</span>
-</a>
 </div>
 
 ## Medical AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=32HJG_jdC2g" target="_blank" rel="noopener" title="What is Translational Foresight? - The Medical Futurist">
+  <img src="https://i4.ytimg.com/vi/32HJG_jdC2g/hqdefault.jpg" alt="Video: Translational foresight in science and medicine" loading="lazy">
+  <span class="video-card-title">Translational foresight in science and medicine</span>
+  <span class="video-card-meta">The Medical Futurist, September 7, 2026</span>
+  <span class="video-card-desc">The Medical Futurist introduces translational foresight, a framework for integrating futures thinking into scientific practice.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=vm96htqioYc" target="_blank" rel="noopener" title="MedAI #162: Resource-Efficient LLMs for Infection Surveillance in Home Healthcare | Zidu Xu">
   <img src="https://i3.ytimg.com/vi/vm96htqioYc/hqdefault.jpg" alt="Video: Resource-efficient LLMs for infection surveillance in home healthcare" loading="lazy">
   <span class="video-card-title">Resource-efficient LLMs for infection surveillance in home healthcare</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
   <span class="video-card-desc">Keynote on the long history and current trajectory of AI adoption in pediatric medicine, featuring practitioners from academia and digital health.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=m1nAWwAL4FI" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/m1nAWwAL4FI/hqdefault.jpg" alt="Video: Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26" loading="lazy">
-  <span class="video-card-title">Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Panel on regulatory pathways, risk assessment, and organizational decision-making in deploying health AI systems in clinical practice.</span>
 </a>
 </div>
 
