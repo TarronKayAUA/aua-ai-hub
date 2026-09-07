@@ -4,4 +4,4 @@
 - [Current Landscape of Curriculum Development and Implementation in Medical Artificial Intelligence: A Scoping Review](https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&ff=20260907101629&v=2.20.1) (PubMed AI in medical education, September 7, 2026)
 - ['Apply caution' Medical educator perspectives on undergraduate students using AI in reflection: a qualitative study](https://pubmed.ncbi.nlm.nih.gov/42702837?fc=20260609215449&ff=20260907101629&v=2.20.1) (PubMed AI in medical education, September 7, 2026)
 - [Elucidating the transformative role of large language models in advancing anesthesiology education](https://pubmed.ncbi.nlm.nih.gov/42704109?fc=20260609215449&ff=20260907155900&v=2.20.1) (PubMed AI in medical education, September 7, 2026)
-- [Evidence Integration in Large Language Models](https://arxiv.org/abs/2609.04290) (arXiv cs.CL, September 7, 2026)
+- [Select large language models outperform hip preservation experts on consensus-based hip preservation questionnaire](https://pubmed.ncbi.nlm.nih.gov/42704695?fc=20260609215449&ff=20260907185139&v=2.20.1) (PubMed AI in medical education, September 7, 2026)
