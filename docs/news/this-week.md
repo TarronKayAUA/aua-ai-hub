@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 49 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -34,6 +34,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42702837?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1">&#x27;Apply caution&#x27; Medical educator perspectives on undergraduate students using AI in reflection: a qualitative study</a>
         <p class="news-card-summary">Qualitative study of medical educators identifies ethical and pedagogical concerns about students using generative AI for professional reflection.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42704109?fc=20260609215449&amp;ff=20260907155900&amp;v=2.20.1">Elucidating the transformative role of large language models in advancing anesthesiology education</a>
+        <p class="news-card-summary">A narrative review synthesizes evidence on large language model implementation in anesthesiology training, identifying four validated use cases for clinical education.</p>
       </div>
     </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
@@ -352,21 +359,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Survey of graduate medical education trainees and faculty on generative AI use in clinical training.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">August 31, 2026</span></div>
-        <a class="news-card-title" href="https://medicalfuturist.com/data-annotation">Data Annotators: The Unsung Heroes Of Artificial Intelligence Development</a>
-        <p class="news-card-summary">Article examines the role of data annotators in training healthcare AI systems and the labor practices underlying machine learning model development.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2019/04/081_data_annotator-scaled.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03082-7">Evaluating foundation models on official German medical licensing examinations: Implications for high-stakes assessment and AI-assisted medical education</a>
-        <p class="news-card-summary">Foundation models evaluated on German medical licensing examinations show varying performance with implications for high-stakes assessment design and AI-assisted medical education.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -377,9 +369,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
@@ -642,13 +634,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Machine learning study predicting call abandonment in health care call centers using anonymized operational data only.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">August 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03168-2">Artificial intelligence tools in sepsis prediction: a systematic review and meta-analysis</a>
-        <p class="news-card-summary">Systematic review and meta-analysis of artificial intelligence tools for sepsis prediction synthesizes evidence on performance and clinical applicability.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -659,9 +644,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (14)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -923,29 +908,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Hugging Face releases open-weights collection of 200+ WebGPU computational kernels for running AI models locally in web browsers.</p>
       </div>
       <img class="news-card-thumb" src="https://huggingface.co/blog/assets/webgpu-kernels/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">August 31, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/tech/986789/linux-debian-generative-ai-policy">Debian won’t ban AI code from its Linux distribution</a>
-        <p class="news-card-summary">Debian&#x27;s new policy permits developers to use AI tools in contributions with no special restrictions beyond existing standards, recognizing productivity benefits.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK414_AI_CVIRGINIA_I__0009_7.png?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">August 31, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules">ChatGPT and Reddit now face EU&#x27;s toughest online safety rules</a>
-        <p class="news-card-summary">European Union classified ChatGPT as a very large online search engine under the Digital Services Act, imposing stricter regulatory obligations on content moderation and risk mitigation.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2022/03/getty-eu-flag-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">August 30, 2026</span></div>
-        <a class="news-card-title" href="https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model">How to build a diffusion language model</a>
-        <p class="news-card-summary">Tutorial explains the technical approach to building diffusion models applied to language generation, covering architecture and training methods.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">

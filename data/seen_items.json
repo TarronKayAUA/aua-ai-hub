@@ -32413,6 +32413,47 @@
    "first_seen": "2026-09-07T14:16:29.356250+00:00",
    "kept": false,
    "reason": "promotional episode for a commercial product launch"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42704109?fc=20260609215449&ff=20260907155900&v=2.20.1",
+   "title_hash": "a27bd734efe966ad43f8d06d6e5a4074",
+   "first_seen": "2026-09-07T19:59:00.516651+00:00",
+   "kept": true,
+   "title": "Elucidating the transformative role of large language models in advancing anesthesiology education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-07T10:00:00+00:00",
+   "summary": "A narrative review synthesizes evidence on large language model implementation in anesthesiology training, identifying four validated use cases for clinical education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42704074?fc=20260609215449&ff=20260907155900&v=2.20.1",
+   "title_hash": "a7245d39b5eba335f408631f7d024865",
+   "first_seen": "2026-09-07T19:59:00.516651+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; primarily about medical education assessment policy rather than artificial intelligence in medicine or education"
+  },
+  {
+   "url": "https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open",
+   "title_hash": "8680f1dd2d63fca3712e3960a0a3c145",
+   "first_seen": "2026-09-07T19:59:00.516651+00:00",
+   "kept": false,
+   "reason": "forum discussion with no substantive analysis for medical educators; minor philosophical commentary on LLM use"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w7thwv/ive_found_myself_using_local_llms_like_3d_printers",
+   "title_hash": "aacbbf6071732cfcb5a0a974fb5e4cb4",
+   "first_seen": "2026-09-07T19:59:00.516651+00:00",
+   "kept": false,
+   "reason": "personal blog post about local LLM utility; no significance for medical education or clinical practice"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=QDLlQ5IL2Bk",
+   "title_hash": "3efca5cb476c1c517c580485f3b51ae9",
+   "first_seen": "2026-09-07T19:59:00.516651+00:00",
+   "kept": false,
+   "reason": "marketing demonstration from the product's own company without educational payload beyond product features"
   }
  ],
  "digests": [

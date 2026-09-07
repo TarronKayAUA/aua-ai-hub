@@ -3,5 +3,5 @@
 - [Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman](https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman) (Import AI, September 7, 2026)
 - [Current Landscape of Curriculum Development and Implementation in Medical Artificial Intelligence: A Scoping Review](https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&ff=20260907101629&v=2.20.1) (PubMed AI in medical education, September 7, 2026)
 - ['Apply caution' Medical educator perspectives on undergraduate students using AI in reflection: a qualitative study](https://pubmed.ncbi.nlm.nih.gov/42702837?fc=20260609215449&ff=20260907101629&v=2.20.1) (PubMed AI in medical education, September 7, 2026)
+- [Elucidating the transformative role of large language models in advancing anesthesiology education](https://pubmed.ncbi.nlm.nih.gov/42704109?fc=20260609215449&ff=20260907155900&v=2.20.1) (PubMed AI in medical education, September 7, 2026)
 - [Evidence Integration in Large Language Models](https://arxiv.org/abs/2609.04290) (arXiv cs.CL, September 7, 2026)
-- [MedProb: Probing Internal Representations of Vision-Language Models for Medical Question Answering](https://arxiv.org/abs/2609.04336) (arXiv cs.CL, September 7, 2026)
