@@ -13,15 +13,22 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## Medical Education
 
 <div class="section-brief">
-<p>A six-point plan for preparing psychiatry residents for AI&#x27;s clinical and educational impact anchors curriculum discussions <a href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[1]</a>, alongside a randomized trial testing a multiagent AI system to scaffold problem-based learning for medical interns <a href="https://mededu.jmir.org/2026/1/e95039">[8]</a>. Attitudes research shows Canadian medical students drawn to radiology remain confident in the specialty&#x27;s sustainability despite automation concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42697747?fc=20260609215449&amp;ff=20260905003334&amp;v=2.20.1">[5]</a>, while a new multidimensional rubric moves evaluation of AI teaching agents beyond simple platform scores <a href="https://mededu.jmir.org/2026/1/e96819">[9]</a>. Multimodal models tested on dental charts and gross anatomy images show mixed reliability for supporting hands-on training <a href="https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1">[3]</a>.</p>
-<p>Also this week: six curriculum-focused pieces span psychiatry, ophthalmology, and application-essay integrity concerns, alongside four studies on student and clinician attitudes toward AI-assisted colonoscopy and automation. Three assessment and feedback papers examine evaluation methods for AI teaching tools, and a pilot trial explores AI-based simulation for code status discussions with internal medicine residents.</p>
-<p class="section-brief-date">The picture as of September 6, 2026; numbered links go to the source items.</p>
+<p>Radiology residency programs now have three years of data showing that a structured, hands-on AI curriculum is feasible and produces measurable competency gains among trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[3]</a>, a finding that dovetails with a six-point plan urging psychiatry programs to prepare residents for AI&#x27;s clinical and educational effects <a href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[2]</a>. Broader curriculum-design work argues that integrated, longitudinal instruction builds AI literacy more effectively than isolated modules <a href="https://pubmed.ncbi.nlm.nih.gov/42698520?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[10]</a>, while a meta-analysis of simulation training finds that procedural skills respond best to AI-guided practice, with complex cognitive tasks still requiring expert instruction afterward <a href="https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[9]</a>. A randomized trial comparing ChatGPT-assisted and traditional teaching of diagnostic assessments adds direct classroom evidence to this picture <a href="https://pubmed.ncbi.nlm.nih.gov/42700004?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[4]</a>.</p>
+<p>Also this week: three surveys on generative AI attitudes and adoption among clinicians and educators, two benchmarking studies testing multimodal models on dental and anatomical image interpretation, and a commentary on supervising trainees&#x27; AI-assisted medical writing address the single reported assessment and feedback topic.</p>
+<p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.04336">MedProb: Probing Internal Representations of Vision-Language Models for Medical Question Answering</a>
+        <p class="news-card-summary">MedProb is a lightweight framework that extracts medical visual question-answering answers from frozen vision-language model representations without fine-tuning.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
@@ -351,15 +358,22 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A retrospective study found that task-specific deep neural networks outperformed both general-purpose large language models and physicians in detecting occlusion myocardial infarction from ECG data, exposing clinically important limitations in current multimodal systems <a href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[1]</a>. Regulatory oversight is adapting alongside these findings: the FDA&#x27;s TEMPO pilot now allows generative AI medical devices, including products from Cadence and Limbic, to reach patients before formal marketing authorization <a href="https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation">[11]</a>. A proposed five-phase framework for evaluating diagnostic and predictive medical AI aims to standardize such assessments <a href="https://www.nature.com/articles/s41746-026-03155-7">[15]</a>, while a Nature Medicine study introduced an LLM-based agent that analyzes longitudinal electronic health records to forecast maternal and infant outcomes, supporting risk-stratified prenatal care <a href="https://www.nature.com/articles/s41591-026-04694-y">[10]</a>.</p>
-<p>Also this week: six items address safety and evaluation, four focus on clinical decision support, three cover patient-facing tools, and two examine imaging and diagnostics. Coverage includes a voice-biomarker foundation model for ALS and Parkinson&#x27;s screening, along with new work on infectious disease surveillance platforms.</p>
-<p class="section-brief-date">The picture as of September 6, 2026; numbered links go to the source items.</p>
+<p>A retrospective diagnostic accuracy study finds that a dedicated deep neural network outperforms multimodal large language models and physicians in detecting occlusion myocardial infarction from ECGs, exposing clinically important limitations in general-purpose models <a href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[2]</a>. The FDA&#x27;s TEMPO pilot now lets generative AI medical devices, including tools from Cadence and Limbic, reach patients before formal marketing authorization <a href="https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation">[12]</a>. In decision support, an LLM-based Mother-Child AI agent draws on longitudinal electronic health records to forecast maternal and infant outcomes for risk-stratified care <a href="https://www.nature.com/articles/s41591-026-04694-y">[11]</a>. Elsewhere, researchers note that fairness audits of multi-step clinical LLM agents must account for per-action instability when assessing demographic disparities <a href="https://arxiv.org/abs/2609.03221">[8]</a>.</p>
+<p>Also this week: the section carries five papers on safety and evaluation, four on clinical decision support, three on patient-facing tools, two on imaging and diagnostics, and one on clinical documentation, including a voice-biomarker foundation model for ALS monitoring and Parkinson&#x27;s screening and a scoping review of fall-risk prediction tools for long-term care.</p>
+<p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.04366">VERGE: Verification-Enhanced Refinement for Grounded Extraction of Early-Onset Colorectal Cancer Symptoms in Clinical Notes</a>
+        <p class="news-card-summary">A method for extracting early-onset colorectal cancer symptoms from clinical notes using language models to capture symptom duration, context, and family history for improved detection.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
@@ -611,15 +625,50 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI&#x27;s release of GPT-6 Astra stands as the most consequential development, pitched by the company as a generational leap in cybersecurity, software engineering, and computer use <a href="https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release">[9]</a>, though the rollout left paying subscribers locked out and drew a public apology from Sam Altman <a href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">[2]</a>. OpenAI also disclosed that its autonomous agents inadvertently edited a German wiki site, an incident it says exposed gaps in reporting procedures <a href="https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident">[1]</a>. Separately, open-weights development continues with K2 Horizon&#x27;s six-model fleet <a href="https://ifm.ai/blog/k2">[11]</a>, and a benchmarking study found that data contamination inflates leaderboard scores without materially reordering rankings <a href="https://arxiv.org/abs/2609.02899">[5]</a>.</p>
-<p>Also this week: seven new-model releases include Nvidia&#x27;s free Personal AI Router for linking idle home computers into a shared inference cluster and Hugging Face&#x27;s NeoMME multimodal encoder. Five papers on research and methods cover biomedical relation extraction, embedding transfer, and instruction-tuning format effects, while a second evaluation paper documents rubric bias in LLM-as-judge scoring.</p>
-<p class="section-brief-date">The picture as of September 6, 2026; numbered links go to the source items.</p>
+<p>GPT-6 Astra arrived as OpenAI&#x27;s next major model, described as a generational capability advance <a href="https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release">[14]</a>, though the rollout proved messy enough that Sam Altman apologized after paying users were locked out <a href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">[7]</a>, and a separate mishap saw the company&#x27;s autonomous agents inadvertently edit a German wiki site, prompting a promise to improve incident reporting <a href="https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident">[6]</a>. Elsewhere, research on internal model behavior continues to reveal gaps between what language models know and what they output, as probes and shared circuits expose miscalibrated readouts and hidden knowledge not reflected in stated answers <a href="https://arxiv.org/abs/2609.04582">[5]</a>. A related study found that benchmark contamination inflates scores without changing leaderboard rankings <a href="https://arxiv.org/abs/2609.02899">[10]</a>.</p>
+<p>Also this week: six papers on research and methods explore topics from evidence integration to biomedical domain adaptation, complementing five new model releases. Two papers address safety and reliability, including boundary-aware refusal, while two more focus on benchmark evaluation methods. Nvidia released a free tool linking home computers into a personal AI cluster.</p>
+<p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (16)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.04290">Evidence Integration in Large Language Models</a>
+        <p class="news-card-summary">Research on how large language models integrate external evidence into decision-making through distributional theory of evidence combination.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.04442">GRACE: Graph-Grounded Reflective Agent Copilot Engine for Expert-in-the-Loop Knowledge Expansion</a>
+        <p class="news-card-summary">GRACE is a retrieval-augmented generation system that grounds language model outputs through graph-structured evidence and tracks uncertainty for high-stakes applications.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.04463">Shared circuits predict whether LLMs generalize across formats in arithmetic reasoning</a>
+        <p class="news-card-summary">Study showing that language models failing to generalize across arithmetic formats reveal hidden knowledge in their internal representations that does not match behavior.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.04482">Safety for Whom? Boundary-Aware Self-Distillation for Controlled LLM Safety Refusal</a>
+        <p class="news-card-summary">Method for deploying models with context-specific safety boundaries that allow different refusal patterns across applications while sharing a base model.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.04582">When Do Internal Probes Beat Reading the Answer? Miscalibrated Readouts and Behavior-Concealed Knowledge in Language Models</a>
+        <p class="news-card-summary">Study showing that internal probes can detect knowledge language models possess but fail to express in their outputs, revealing miscalibration in reasoning.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 5, 2026</span></div>

@@ -1,120 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust",
-   "title_hash": "b75a1ff1529a817382343a159cce80df",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; engineering retrospective unrelated to AI in medicine or education"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/8/introducing-gptlive",
-   "title_hash": "f9e9be80860973e54fd6237f765be783",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": true,
-   "title": "Introducing GPT‑Live",
-   "source": "Simon Willison's weblog",
-   "published": "2026-07-08T23:20:48+00:00",
-   "summary": "OpenAI upgraded ChatGPT's voice mode model and added delegation to GPT-4o for tasks requiring web search or complex reasoning.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "New models"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university",
-   "title_hash": "3592b4c80dea9c816ac1f2defbede823",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": false,
-   "reason": "anecdotal teaching story without systematic evidence or policy implications"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/8/kenton-varda",
-   "title_hash": "73cd4bb9fc4f3d03ad406f69ea99afd3",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": false,
-   "reason": "opinion piece with no new information about AI capability or deployment"
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-grok-user-made-7k-child-sex-images-xai-only-reported-one-gang-rape-prompt",
-   "title_hash": "4ef9e952ccee5aac2a39e67e58c79f2c",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; criminal matter unrelated to medical AI"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e84804",
-   "title_hash": "437974b60083c6670db25180a7b26c42",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": true,
-   "title": "AI-Assisted Detection of Supraspinatus Tendon Pathologies Using a Hierarchical Deep Learning Model to Improve Clinical Applicability: Development and Evaluation Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-08T19:00:28+00:00",
-   "summary": "A hierarchical deep learning model classifies supraspinatus tendon pathologies on MRI to improve diagnostic consistency in musculoskeletal imaging workflows.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uqpxgp/can_you_trust_local_models_to_answer_accurately",
-   "title_hash": "42592ec1ff1705ea98b6646a062227b9",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": false,
-   "reason": "performance-tinkering thread with no benchmark or capability news"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02937-3",
-   "title_hash": "3e851149d7ed6b45c57c6a0522f629d2",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": true,
-   "title": "Injury prediction in elite women’s football: an integrative machine learning-based decision-support framework",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-08T00:00:00+00:00",
-   "summary": "A machine learning framework predicts injury risk in elite women's football players, supporting clinical decision-making.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02969-9",
-   "title_hash": "fa7b1cf4c5048fb630b3376b80b8d06e",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": true,
-   "title": "Prediction of incident atrial fibrillation from retinal fundus images using a multimodal foundation model",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-08T00:00:00+00:00",
-   "summary": "A multimodal foundation model predicts incident atrial fibrillation from retinal fundus images.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=8xqQzrLf0co",
-   "title_hash": "d52b5942aceba3dc986389379a5e77fd",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=9f-Ew_lDtxc",
-   "title_hash": "52576eab03426cac95e8e98d85af748b",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": true,
-   "title": "The next generation of ChatGPT Voice",
-   "source": "OpenAI",
-   "published": "2026-07-08T21:13:26+00:00",
-   "summary": "OpenAI engineers demonstrate the next generation of ChatGPT voice models with live demonstrations of capabilities and features.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i2.ytimg.com/vi/9f-Ew_lDtxc/hqdefault.jpg"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Costs-Are-Surging-and-the-Cheap-Model-Fix-Might-Not-Last-e3lr0u0",
-   "title_hash": "254efc8a58d51d579be1d3e2a9596f67",
-   "first_seen": "2026-07-09T00:20:27.014828+00:00",
-   "kept": false,
-   "reason": "daily news show recap with no standout relevance to medical education or clinical practice"
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42422823?fc=20260609215449&ff=20260709101140&v=2.20.0",
    "title_hash": "d962ffd7cf83226ab56952d2753e738b",
    "first_seen": "2026-07-09T14:11:39.958868+00:00",
@@ -32502,6 +32388,258 @@
    "first_seen": "2026-09-06T22:08:25.345160+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04223",
+   "title_hash": "286f47e1aa12ceddc55d8fddb353bf3d",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "narrow linguistic corpus study, not relevant to medical education audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04289",
+   "title_hash": "872fe61f31a32ac175ea532e5bac7606",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "audio synthesis architecture, off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04290",
+   "title_hash": "dac8fd9c3a807a3c4cb056d1fc58e90b",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": true,
+   "title": "Evidence Integration in Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-07T04:00:00+00:00",
+   "summary": "Research on how large language models integrate external evidence into decision-making through distributional theory of evidence combination.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04336",
+   "title_hash": "893c9e475bc3dfcd522a84fe5f4e1735",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": true,
+   "title": "MedProb: Probing Internal Representations of Vision-Language Models for Medical Question Answering",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-07T04:00:00+00:00",
+   "summary": "MedProb is a lightweight framework that extracts medical visual question-answering answers from frozen vision-language model representations without fine-tuning.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04350",
+   "title_hash": "8d49795fd9844cd7b5d37b4e073743e2",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "mental health counselor training, application domain outside medical education focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04366",
+   "title_hash": "c1a317c68f3309c8c636f2691ec0485f",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": true,
+   "title": "VERGE: Verification-Enhanced Refinement for Grounded Extraction of Early-Onset Colorectal Cancer Symptoms in Clinical Notes",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-07T04:00:00+00:00",
+   "summary": "A method for extracting early-onset colorectal cancer symptoms from clinical notes using language models to capture symptom duration, context, and family history for improved detection.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04384",
+   "title_hash": "8f5e83bf4f6d6886401de43a3a9e46d4",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "narrow domain application in Chinese pragmatics, not medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04391",
+   "title_hash": "568dc12a54325b2ae973d093e0428ea4",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "narrow phonetic encoding evaluation, no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04404",
+   "title_hash": "ebe346bf507ea315581e12f459df822c",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "speech recognition hallucination study, not relevant to medical education or practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04409",
+   "title_hash": "22ee56be9f0009551b4cb2f067845525",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "cross-lingual consistency in multilingual models, not medical domain"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04434",
+   "title_hash": "ab75cb6987530229b7a2e270439dfc8b",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "technical study of hybrid model components, not significant capability change"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04442",
+   "title_hash": "435d73dd27f928ce3f4924151f23ffd1",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": true,
+   "title": "GRACE: Graph-Grounded Reflective Agent Copilot Engine for Expert-in-the-Loop Knowledge Expansion",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-07T04:00:00+00:00",
+   "summary": "GRACE is a retrieval-augmented generation system that grounds language model outputs through graph-structured evidence and tracks uncertainty for high-stakes applications.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04452",
+   "title_hash": "3d4a27f842e8c5959b8a02628a154eeb",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "fact-checking benchmark with no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04463",
+   "title_hash": "ba2e3ba494bfa099ae2d8cb1cb131487",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": true,
+   "title": "Shared circuits predict whether LLMs generalize across formats in arithmetic reasoning",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-07T04:00:00+00:00",
+   "summary": "Study showing that language models failing to generalize across arithmetic formats reveal hidden knowledge in their internal representations that does not match behavior.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04482",
+   "title_hash": "7504fa0bdc8a5fad6bba0efa0e7ea87a",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": true,
+   "title": "Safety for Whom? Boundary-Aware Self-Distillation for Controlled LLM Safety Refusal",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-07T04:00:00+00:00",
+   "summary": "Method for deploying models with context-specific safety boundaries that allow different refusal patterns across applications while sharing a base model.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04484",
+   "title_hash": "d3544bdc1e548e9643284fa8ffff255e",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "study of structural priming in language models, narrow linguistic finding without medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04485",
+   "title_hash": "bb314f991447007a6098297d07bd873d",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "cultural values alignment in language models, policy interest but not medical education or practice"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04489",
+   "title_hash": "2f3e8842303b34078460c0f53c58ee63",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "technical study of pause token training dynamics, incremental method contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04511",
+   "title_hash": "4711b565f4c56f4686f1065bf00b771e",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "latent entity extraction framework, no medical relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04526",
+   "title_hash": "123910f86be4c193a15b8e646adeba0c",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "quantization and adapter merging technique, infrastructure detail not significant for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04539",
+   "title_hash": "c5d334d28b63f14adc81f5d2351c322f",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "confidence estimation framework with generic application, incremental contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04556",
+   "title_hash": "7f1ec193be136800d981119eccc12a2d",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "workplace agent activity interpretation, off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04582",
+   "title_hash": "2b3133c516336891666ab0224c6bcecc",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": true,
+   "title": "When Do Internal Probes Beat Reading the Answer? Miscalibrated Readouts and Behavior-Concealed Knowledge in Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-07T04:00:00+00:00",
+   "summary": "Study showing that internal probes can detect knowledge language models possess but fail to express in their outputs, revealing miscalibration in reasoning.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04598",
+   "title_hash": "19d0845170a264f69fceaad08e28bde7",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "veterinary benchmark, not medical education or clinical practice for human medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.04637",
+   "title_hash": "606bd09bc01ac5e0a180dfcf815f29d9",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "narrow study of audio model internals, not significant for medical education or practice"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai",
+   "title_hash": "27ccc2dff4040fb9fd80c6bf27a4f40b",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "speculation and commentary about internal OpenAI processes without confirmed details"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/990932/seattle-times-newsday-lawsuit-openai-microsoft",
+   "title_hash": "a6a6efd709986dd7f88f77859225df47",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "copyright litigation, not relevant to medical education or clinical AI deployment"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w8vx6w/8_uncensored_qwen_38_27b_variants_one_base_167",
+   "title_hash": "7b2f6e4e3c9b0b5b0825cd6a069018e4",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "minor model ablation comparison from community forum, not significant capability news"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42702492?fc=20260609215449&ff=20260907004553&v=2.20.1",
+   "title_hash": "62e198a5d330ca3550e8b2e377356927",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "dengue risk modeling application, not AI in medical education"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Ji4amrxrzVM",
+   "title_hash": "cb919a7191cce2a5d1635c39450484a3",
+   "first_seen": "2026-09-07T04:45:53.601532+00:00",
+   "kept": false,
+   "reason": "speculation and rumor about unreleased model, no underlying real event or substantive content"
   }
  ],
  "digests": [
@@ -32680,19 +32818,19 @@
  "last_digest_at": "2026-09-04T04:37:53.288113+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A six-point plan for preparing psychiatry residents for AI&#x27;s clinical and educational impact anchors curriculum discussions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[1]</a>, alongside a randomized trial testing a multiagent AI system to scaffold problem-based learning for medical interns <a href=\"https://mededu.jmir.org/2026/1/e95039\">[8]</a>. Attitudes research shows Canadian medical students drawn to radiology remain confident in the specialty&#x27;s sustainability despite automation concerns <a href=\"https://pubmed.ncbi.nlm.nih.gov/42697747?fc=20260609215449&amp;ff=20260905003334&amp;v=2.20.1\">[5]</a>, while a new multidimensional rubric moves evaluation of AI teaching agents beyond simple platform scores <a href=\"https://mededu.jmir.org/2026/1/e96819\">[9]</a>. Multimodal models tested on dental charts and gross anatomy images show mixed reliability for supporting hands-on training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1\">[3]</a>.\n\nAlso this week: six curriculum-focused pieces span psychiatry, ophthalmology, and application-essay integrity concerns, alongside four studies on student and clinician attitudes toward AI-assisted colonoscopy and automation. Three assessment and feedback papers examine evaluation methods for AI teaching tools, and a pilot trial explores AI-based simulation for code status discussions with internal medicine residents.",
-   "hash": "9b855490a55b273e",
-   "date": "September 6, 2026"
+   "text": "Radiology residency programs now have three years of data showing that a structured, hands-on AI curriculum is feasible and produces measurable competency gains among trainees <a href=\"https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[3]</a>, a finding that dovetails with a six-point plan urging psychiatry programs to prepare residents for AI&#x27;s clinical and educational effects <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[2]</a>. Broader curriculum-design work argues that integrated, longitudinal instruction builds AI literacy more effectively than isolated modules <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698520?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[10]</a>, while a meta-analysis of simulation training finds that procedural skills respond best to AI-guided practice, with complex cognitive tasks still requiring expert instruction afterward <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[9]</a>. A randomized trial comparing ChatGPT-assisted and traditional teaching of diagnostic assessments adds direct classroom evidence to this picture <a href=\"https://pubmed.ncbi.nlm.nih.gov/42700004?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[4]</a>.\n\nAlso this week: three surveys on generative AI attitudes and adoption among clinicians and educators, two benchmarking studies testing multimodal models on dental and anatomical image interpretation, and a commentary on supervising trainees&#x27; AI-assisted medical writing address the single reported assessment and feedback topic.",
+   "hash": "1c305eaa047c28ca",
+   "date": "September 7, 2026"
   },
   "clinical_practice": {
-   "text": "A retrospective study found that task-specific deep neural networks outperformed both general-purpose large language models and physicians in detecting occlusion myocardial infarction from ECG data, exposing clinically important limitations in current multimodal systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[1]</a>. Regulatory oversight is adapting alongside these findings: the FDA&#x27;s TEMPO pilot now allows generative AI medical devices, including products from Cadence and Limbic, to reach patients before formal marketing authorization <a href=\"https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation\">[11]</a>. A proposed five-phase framework for evaluating diagnostic and predictive medical AI aims to standardize such assessments <a href=\"https://www.nature.com/articles/s41746-026-03155-7\">[15]</a>, while a Nature Medicine study introduced an LLM-based agent that analyzes longitudinal electronic health records to forecast maternal and infant outcomes, supporting risk-stratified prenatal care <a href=\"https://www.nature.com/articles/s41591-026-04694-y\">[10]</a>.\n\nAlso this week: six items address safety and evaluation, four focus on clinical decision support, three cover patient-facing tools, and two examine imaging and diagnostics. Coverage includes a voice-biomarker foundation model for ALS and Parkinson&#x27;s screening, along with new work on infectious disease surveillance platforms.",
-   "hash": "406b35d8245b528d",
-   "date": "September 6, 2026"
+   "text": "A retrospective diagnostic accuracy study finds that a dedicated deep neural network outperforms multimodal large language models and physicians in detecting occlusion myocardial infarction from ECGs, exposing clinically important limitations in general-purpose models <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[2]</a>. The FDA&#x27;s TEMPO pilot now lets generative AI medical devices, including tools from Cadence and Limbic, reach patients before formal marketing authorization <a href=\"https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation\">[12]</a>. In decision support, an LLM-based Mother-Child AI agent draws on longitudinal electronic health records to forecast maternal and infant outcomes for risk-stratified care <a href=\"https://www.nature.com/articles/s41591-026-04694-y\">[11]</a>. Elsewhere, researchers note that fairness audits of multi-step clinical LLM agents must account for per-action instability when assessing demographic disparities <a href=\"https://arxiv.org/abs/2609.03221\">[8]</a>.\n\nAlso this week: the section carries five papers on safety and evaluation, four on clinical decision support, three on patient-facing tools, two on imaging and diagnostics, and one on clinical documentation, including a voice-biomarker foundation model for ALS monitoring and Parkinson&#x27;s screening and a scoping review of fall-risk prediction tools for long-term care.",
+   "hash": "a1e158782aa3c8b5",
+   "date": "September 7, 2026"
   },
   "general_ai": {
-   "text": "OpenAI&#x27;s release of GPT-6 Astra stands as the most consequential development, pitched by the company as a generational leap in cybersecurity, software engineering, and computer use <a href=\"https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release\">[9]</a>, though the rollout left paying subscribers locked out and drew a public apology from Sam Altman <a href=\"https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout\">[2]</a>. OpenAI also disclosed that its autonomous agents inadvertently edited a German wiki site, an incident it says exposed gaps in reporting procedures <a href=\"https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident\">[1]</a>. Separately, open-weights development continues with K2 Horizon&#x27;s six-model fleet <a href=\"https://ifm.ai/blog/k2\">[11]</a>, and a benchmarking study found that data contamination inflates leaderboard scores without materially reordering rankings <a href=\"https://arxiv.org/abs/2609.02899\">[5]</a>.\n\nAlso this week: seven new-model releases include Nvidia&#x27;s free Personal AI Router for linking idle home computers into a shared inference cluster and Hugging Face&#x27;s NeoMME multimodal encoder. Five papers on research and methods cover biomedical relation extraction, embedding transfer, and instruction-tuning format effects, while a second evaluation paper documents rubric bias in LLM-as-judge scoring.",
-   "hash": "0ca0d9cd433b8584",
-   "date": "September 6, 2026"
+   "text": "GPT-6 Astra arrived as OpenAI&#x27;s next major model, described as a generational capability advance <a href=\"https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release\">[14]</a>, though the rollout proved messy enough that Sam Altman apologized after paying users were locked out <a href=\"https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout\">[7]</a>, and a separate mishap saw the company&#x27;s autonomous agents inadvertently edit a German wiki site, prompting a promise to improve incident reporting <a href=\"https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident\">[6]</a>. Elsewhere, research on internal model behavior continues to reveal gaps between what language models know and what they output, as probes and shared circuits expose miscalibrated readouts and hidden knowledge not reflected in stated answers <a href=\"https://arxiv.org/abs/2609.04582\">[5]</a>. A related study found that benchmark contamination inflates scores without changing leaderboard rankings <a href=\"https://arxiv.org/abs/2609.02899\">[10]</a>.\n\nAlso this week: six papers on research and methods explore topics from evidence integration to biomedical domain adaptation, complementing five new model releases. Two papers address safety and reliability, including boundary-aware refusal, while two more focus on benchmark evaluation methods. Nvidia released a free tool linking home computers into a personal AI cluster.",
+   "hash": "9886b2fcb6998e8d",
+   "date": "September 7, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -32787,5 +32925,5 @@
    "url": "https://nebiusglobalaihackathon.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-06"
+ "section_briefs_refreshed": "2026-09-07"
 }

@@ -13,14 +13,49 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI&#x27;s release of GPT-6 Astra stands as the most consequential development, pitched by the company as a generational leap in cybersecurity, software engineering, and computer use <a href="https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release">[9]</a>, though the rollout left paying subscribers locked out and drew a public apology from Sam Altman <a href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">[2]</a>. OpenAI also disclosed that its autonomous agents inadvertently edited a German wiki site, an incident it says exposed gaps in reporting procedures <a href="https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident">[1]</a>. Separately, open-weights development continues with K2 Horizon&#x27;s six-model fleet <a href="https://ifm.ai/blog/k2">[11]</a>, and a benchmarking study found that data contamination inflates leaderboard scores without materially reordering rankings <a href="https://arxiv.org/abs/2609.02899">[5]</a>.</p>
-<p>Also this week: seven new-model releases include Nvidia&#x27;s free Personal AI Router for linking idle home computers into a shared inference cluster and Hugging Face&#x27;s NeoMME multimodal encoder. Five papers on research and methods cover biomedical relation extraction, embedding transfer, and instruction-tuning format effects, while a second evaluation paper documents rubric bias in LLM-as-judge scoring.</p>
-<p class="section-brief-date">The picture as of September 6, 2026; numbered links go to the items below.</p>
+<p>GPT-6 Astra arrived as OpenAI&#x27;s next major model, described as a generational capability advance <a href="https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release">[14]</a>, though the rollout proved messy enough that Sam Altman apologized after paying users were locked out <a href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">[7]</a>, and a separate mishap saw the company&#x27;s autonomous agents inadvertently edit a German wiki site, prompting a promise to improve incident reporting <a href="https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident">[6]</a>. Elsewhere, research on internal model behavior continues to reveal gaps between what language models know and what they output, as probes and shared circuits expose miscalibrated readouts and hidden knowledge not reflected in stated answers <a href="https://arxiv.org/abs/2609.04582">[5]</a>. A related study found that benchmark contamination inflates scores without changing leaderboard rankings <a href="https://arxiv.org/abs/2609.02899">[10]</a>.</p>
+<p>Also this week: six papers on research and methods explore topics from evidence integration to biomedical domain adaptation, complementing five new model releases. Two papers address safety and reliability, including boundary-aware refusal, while two more focus on benchmark evaluation methods. Nvidia released a free tool linking home computers into a personal AI cluster.</p>
+<p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.04290">Evidence Integration in Large Language Models</a>
+    <p class="news-card-summary">Research on how large language models integrate external evidence into decision-making through distributional theory of evidence combination.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.04442">GRACE: Graph-Grounded Reflective Agent Copilot Engine for Expert-in-the-Loop Knowledge Expansion</a>
+    <p class="news-card-summary">GRACE is a retrieval-augmented generation system that grounds language model outputs through graph-structured evidence and tracks uncertainty for high-stakes applications.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.04463">Shared circuits predict whether LLMs generalize across formats in arithmetic reasoning</a>
+    <p class="news-card-summary">Study showing that language models failing to generalize across arithmetic formats reveal hidden knowledge in their internal representations that does not match behavior.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.04482">Safety for Whom? Boundary-Aware Self-Distillation for Controlled LLM Safety Refusal</a>
+    <p class="news-card-summary">Method for deploying models with context-specific safety boundaries that allow different refusal patterns across applications while sharing a base model.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.04582">When Do Internal Probes Beat Reading the Answer? Miscalibrated Readouts and Behavior-Concealed Knowledge in Language Models</a>
+    <p class="news-card-summary">Study showing that internal probes can detect knowledge language models possess but fail to express in their outputs, revealing miscalibration in reasoning.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 5, 2026</span></div>
@@ -94,42 +129,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Nvidia releases Personal AI Router, free open-source software for coordinating local AI inference across multiple home computers.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-03-at-10.42.02-AM.png?quality=90&amp;strip=all&amp;crop=0%2C3.342396806572%2C100%2C93.315206386856&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://ifm.ai/blog/k2">K2 Horizon: A connected fleet of six open models</a>
-    <p class="news-card-summary">K2 Horizon releases a connected fleet of six open-weights models supporting diverse application requirements.</p>
-  </div>
-  <img class="news-card-thumb" src="https://ifm.ai/blog/k2/assets/k2-horizon-social.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://huggingface.co/blog/Hcompany/neomme">NeoMME: an efficient Multimodal-native and Multilingual Encoder</a>
-    <p class="news-card-summary">Hugging Face releases NeoMME, an efficient multimodal and multilingual encoder model.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.01798">How Do Prompt Variations Affect Energy Consumption in On-Device LLMs?</a>
-    <p class="news-card-summary">Preprint investigates how prompt design choices affect energy consumption during on-device language model inference.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.01867">Thinking effort aligns between humans and reasoning models in abductive reasoning</a>
-    <p class="news-card-summary">Preprint shows that reasoning models align with human thinking effort in abductive reasoning tasks, suggesting behavioral correspondence in cognitive modeling.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.02015">How Output Format Confounds Data Quality and Capability in Instruction Tuning</a>
-    <p class="news-card-summary">Preprint shows that output format significantly confounds quality and capability assessment in instruction-tuned models across multiple tasks and architectures.</p>
-  </div>
 </div>
 </div>

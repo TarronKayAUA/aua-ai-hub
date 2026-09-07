@@ -13,14 +13,21 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A six-point plan for preparing psychiatry residents for AI&#x27;s clinical and educational impact anchors curriculum discussions <a href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[1]</a>, alongside a randomized trial testing a multiagent AI system to scaffold problem-based learning for medical interns <a href="https://mededu.jmir.org/2026/1/e95039">[8]</a>. Attitudes research shows Canadian medical students drawn to radiology remain confident in the specialty&#x27;s sustainability despite automation concerns <a href="https://pubmed.ncbi.nlm.nih.gov/42697747?fc=20260609215449&amp;ff=20260905003334&amp;v=2.20.1">[5]</a>, while a new multidimensional rubric moves evaluation of AI teaching agents beyond simple platform scores <a href="https://mededu.jmir.org/2026/1/e96819">[9]</a>. Multimodal models tested on dental charts and gross anatomy images show mixed reliability for supporting hands-on training <a href="https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1">[3]</a>.</p>
-<p>Also this week: six curriculum-focused pieces span psychiatry, ophthalmology, and application-essay integrity concerns, alongside four studies on student and clinician attitudes toward AI-assisted colonoscopy and automation. Three assessment and feedback papers examine evaluation methods for AI teaching tools, and a pilot trial explores AI-based simulation for code status discussions with internal medicine residents.</p>
-<p class="section-brief-date">The picture as of September 6, 2026; numbered links go to the items below.</p>
+<p>Radiology residency programs now have three years of data showing that a structured, hands-on AI curriculum is feasible and produces measurable competency gains among trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[3]</a>, a finding that dovetails with a six-point plan urging psychiatry programs to prepare residents for AI&#x27;s clinical and educational effects <a href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[2]</a>. Broader curriculum-design work argues that integrated, longitudinal instruction builds AI literacy more effectively than isolated modules <a href="https://pubmed.ncbi.nlm.nih.gov/42698520?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[10]</a>, while a meta-analysis of simulation training finds that procedural skills respond best to AI-guided practice, with complex cognitive tasks still requiring expert instruction afterward <a href="https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[9]</a>. A randomized trial comparing ChatGPT-assisted and traditional teaching of diagnostic assessments adds direct classroom evidence to this picture <a href="https://pubmed.ncbi.nlm.nih.gov/42700004?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[4]</a>.</p>
+<p>Also this week: three surveys on generative AI attitudes and adoption among clinicians and educators, two benchmarking studies testing multimodal models on dental and anatomical image interpretation, and a commentary on supervising trainees&#x27; AI-assisted medical writing address the single reported assessment and feedback topic.</p>
+<p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.04336">MedProb: Probing Internal Representations of Vision-Language Models for Medical Question Answering</a>
+    <p class="news-card-summary">MedProb is a lightweight framework that extracts medical visual question-answering answers from frozen vision-language model representations without fine-tuning.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.03213">LLMs Learn Better In-Context from Rules than from Examples</a>
     <p class="news-card-summary">Language models learn new tasks more effectively from rule descriptions than examples in in-context learning, with implications for prompt-based instruction.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e96673">Estimating the Prevalence of Generative AI Use in Medical School Application Essays: Cross-Sectional Study</a>
-    <p class="news-card-summary">Cross-sectional study estimating generative AI use in medical school application essays across cohorts spanning the rollout period from November 2022 onward.</p>
   </div>
 </div>
 </div>
