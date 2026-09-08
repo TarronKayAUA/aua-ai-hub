@@ -32191,6 +32191,68 @@
    "category": "medical_education",
    "score": 3.0,
    "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/7/llm",
+   "title_hash": "9bc462aa49d1b63705035f2e09dd1aad",
+   "first_seen": "2026-09-08T04:41:22.243234+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/7/creepy-crawlies",
+   "title_hash": "3589d1e9962155d5dce300371ca157f0",
+   "first_seen": "2026-09-08T04:41:22.243234+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w9ylhh/i_really_hope_the_new_gemma_5_family_sticks_to",
+   "title_hash": "5667251f8e4f584a966fc4f991197579",
+   "first_seen": "2026-09-08T04:41:22.243234+00:00",
+   "kept": false,
+   "reason": "community forum discussion without significant news or instructive analysis"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42705636?fc=20260609215449&ff=20260908004122&v=2.20.1",
+   "title_hash": "0a05c63458a3fea566587fa06acf58cb",
+   "first_seen": "2026-09-08T04:41:22.243234+00:00",
+   "kept": true,
+   "title": "AI at the Bedside: An Argument for a Training Wheels Approach",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-07T10:00:00+00:00",
+   "summary": "Opinion piece argues for graduated clinical introduction of generative AI tools, balancing clinician efficiency gains against patient and trainee acceptance concerns.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42705517?fc=20260609215449&ff=20260908004122&v=2.20.1",
+   "title_hash": "ee8f4c5e426e6199f46745f4b2c22b59",
+   "first_seen": "2026-09-08T04:41:22.243234+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/2/llm-openrouter",
+   "title_hash": "3982a86f46f3953e4773986a934ddd1f",
+   "first_seen": "2026-09-08T04:41:22.243234+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/2/llm",
+   "title_hash": "268e657701ffcbc5ff74e22f1e4018ed",
+   "first_seen": "2026-09-08T04:41:22.243234+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/2/llm-anthropic",
+   "title_hash": "86c78fed00dc7d7515cbb9775a539b9d",
+   "first_seen": "2026-09-08T04:41:22.243234+00:00",
+   "kept": false,
+   "reason": "minor release notes"
   }
  ],
  "digests": [
@@ -32369,19 +32431,19 @@
  "last_digest_at": "2026-09-04T04:37:53.288113+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "Radiology residency programs now have three years of data showing that a structured, hands-on AI curriculum is feasible and produces measurable competency gains among trainees <a href=\"https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[3]</a>, a finding that dovetails with a six-point plan urging psychiatry programs to prepare residents for AI&#x27;s clinical and educational effects <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[2]</a>. Broader curriculum-design work argues that integrated, longitudinal instruction builds AI literacy more effectively than isolated modules <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698520?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[10]</a>, while a meta-analysis of simulation training finds that procedural skills respond best to AI-guided practice, with complex cognitive tasks still requiring expert instruction afterward <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[9]</a>. A randomized trial comparing ChatGPT-assisted and traditional teaching of diagnostic assessments adds direct classroom evidence to this picture <a href=\"https://pubmed.ncbi.nlm.nih.gov/42700004?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[4]</a>.\n\nAlso this week: three surveys on generative AI attitudes and adoption among clinicians and educators, two benchmarking studies testing multimodal models on dental and anatomical image interpretation, and a commentary on supervising trainees&#x27; AI-assisted medical writing address the single reported assessment and feedback topic.",
-   "hash": "1c305eaa047c28ca",
-   "date": "September 7, 2026"
+   "text": "A scoping review finds medical AI curricula still nascent, urging faster development and stronger evaluation systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1\">[1]</a>. Radiology residency programs offer a concrete counterpoint, with a three-year study showing hands-on AI training is feasible and sustainable <a href=\"https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[8]</a>. Meanwhile, a meta-analysis of simulation training finds AI-assisted methods help procedural skill acquisition, with complex cognitive tasks still requiring expert instruction <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[14]</a>. Attitudes remain mixed: a survey of Latin American emergency clinicians shows rapid generative AI adoption outpacing governance and training infrastructure <a href=\"https://pubmed.ncbi.nlm.nih.gov/42699427?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[10]</a>, while psychiatry educators propose a six-point plan to prepare residents for AI&#x27;s clinical and educational impact <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[7]</a>.\n\nAlso this week: coverage spans seven items on teaching and curriculum design, from anesthesiology and orthopaedic training reviews to supervision of trainee writing with large language models. Four pieces examine attitudes and adoption, including educator surveys on ChatGPT use, while two studies benchmark model performance against expert clinicians on structured hip preservation questions.",
+   "hash": "265a7885b3891af1",
+   "date": "September 8, 2026"
   },
   "clinical_practice": {
-   "text": "A retrospective diagnostic accuracy study finds that a dedicated deep neural network outperforms multimodal large language models and physicians in detecting occlusion myocardial infarction from ECGs, exposing clinically important limitations in general-purpose models <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[2]</a>. The FDA&#x27;s TEMPO pilot now lets generative AI medical devices, including tools from Cadence and Limbic, reach patients before formal marketing authorization <a href=\"https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation\">[12]</a>. In decision support, an LLM-based Mother-Child AI agent draws on longitudinal electronic health records to forecast maternal and infant outcomes for risk-stratified care <a href=\"https://www.nature.com/articles/s41591-026-04694-y\">[11]</a>. Elsewhere, researchers note that fairness audits of multi-step clinical LLM agents must account for per-action instability when assessing demographic disparities <a href=\"https://arxiv.org/abs/2609.03221\">[8]</a>.\n\nAlso this week: the section carries five papers on safety and evaluation, four on clinical decision support, three on patient-facing tools, two on imaging and diagnostics, and one on clinical documentation, including a voice-biomarker foundation model for ALS monitoring and Parkinson&#x27;s screening and a scoping review of fall-risk prediction tools for long-term care.",
-   "hash": "a1e158782aa3c8b5",
-   "date": "September 7, 2026"
+   "text": "A randomized trial of AI in clinical practice makes clear that algorithms must improve patient outcomes, not merely match clinician performance <a href=\"https://www.nature.com/articles/s41591-026-04633-x\">[3]</a>. That caution is reinforced by a retrospective study finding that general-purpose large language models fall short of task-specific deep neural networks for ECG-based detection of occlusion myocardial infarction, with clinically important limitations <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[4]</a>. Regulatory pathways are shifting too: the FDA&#x27;s TEMPO pilot lets generative AI devices from companies such as Cadence and Limbic reach patients before formal marketing authorization <a href=\"https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation\">[14]</a>. Meanwhile, an LLM-based Mother-Child AI agent shows how longitudinal electronic health records can forecast maternal and infant risk to guide prenatal and postnatal care <a href=\"https://www.nature.com/articles/s41591-026-04694-y\">[13]</a>.\n\nAlso this week: six items address safety and evaluation, three cover imaging and diagnostics, three focus on clinical decision support, and two offer patient-facing tools, including a voice-biomarker foundation model for ALS and Parkinson&#x27;s screening. One entry, on extracting colorectal cancer symptoms from clinical notes, covers clinical documentation.",
+   "hash": "0650669e7d1e5add",
+   "date": "September 8, 2026"
   },
   "general_ai": {
-   "text": "GPT-6 Astra arrived as OpenAI&#x27;s next major model, described as a generational capability advance <a href=\"https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release\">[14]</a>, though the rollout proved messy enough that Sam Altman apologized after paying users were locked out <a href=\"https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout\">[7]</a>, and a separate mishap saw the company&#x27;s autonomous agents inadvertently edit a German wiki site, prompting a promise to improve incident reporting <a href=\"https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident\">[6]</a>. Elsewhere, research on internal model behavior continues to reveal gaps between what language models know and what they output, as probes and shared circuits expose miscalibrated readouts and hidden knowledge not reflected in stated answers <a href=\"https://arxiv.org/abs/2609.04582\">[5]</a>. A related study found that benchmark contamination inflates scores without changing leaderboard rankings <a href=\"https://arxiv.org/abs/2609.02899\">[10]</a>.\n\nAlso this week: six papers on research and methods explore topics from evidence integration to biomedical domain adaptation, complementing five new model releases. Two papers address safety and reliability, including boundary-aware refusal, while two more focus on benchmark evaluation methods. Nvidia released a free tool linking home computers into a personal AI cluster.",
-   "hash": "9886b2fcb6998e8d",
-   "date": "September 7, 2026"
+   "text": "OpenAI&#x27;s rollout of GPT-6 Astra draws the most attention, with the company describing generational gains in cybersecurity, software engineering, and science <a href=\"https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release\">[15]</a>, even as paying users faced access problems that Sam Altman called &quot;messy&quot; <a href=\"https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout\">[8]</a>. The release follows an admission that autonomous OpenAI agents inadvertently edited a German wiki site, prompting new scrutiny of incident-reporting practices <a href=\"https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident\">[7]</a>. Separately, research into model internals continues to complicate capability claims: one study finds language models often possess knowledge that their outputs fail to express <a href=\"https://arxiv.org/abs/2609.04582\">[6]</a>, while another shows benchmark contamination inflates scores without reordering leaderboards <a href=\"https://arxiv.org/abs/2609.02899\">[11]</a>.\n\nAlso this week: six papers on research and methods span evidence integration, graph-grounded retrieval, and biomedical domain adaptation, alongside three safety and reliability papers on context-specific refusal boundaries. Four new-model announcements include GPT-6 Astra&#x27;s release and Jina-OCR-v1, a document-parsing system for low-cost hardware, plus two benchmarks papers on contamination effects and rubric bias in evaluation.",
+   "hash": "7bc514efd402620d",
+   "date": "September 8, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -32476,5 +32538,5 @@
    "url": "https://nebiusglobalaihackathon.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-07"
+ "section_briefs_refreshed": "2026-09-08"
 }

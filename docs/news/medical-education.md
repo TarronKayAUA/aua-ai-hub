@@ -13,12 +13,12 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Radiology residency programs now have three years of data showing that a structured, hands-on AI curriculum is feasible and produces measurable competency gains among trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[3]</a>, a finding that dovetails with a six-point plan urging psychiatry programs to prepare residents for AI&#x27;s clinical and educational effects <a href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[2]</a>. Broader curriculum-design work argues that integrated, longitudinal instruction builds AI literacy more effectively than isolated modules <a href="https://pubmed.ncbi.nlm.nih.gov/42698520?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[10]</a>, while a meta-analysis of simulation training finds that procedural skills respond best to AI-guided practice, with complex cognitive tasks still requiring expert instruction afterward <a href="https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[9]</a>. A randomized trial comparing ChatGPT-assisted and traditional teaching of diagnostic assessments adds direct classroom evidence to this picture <a href="https://pubmed.ncbi.nlm.nih.gov/42700004?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[4]</a>.</p>
-<p>Also this week: three surveys on generative AI attitudes and adoption among clinicians and educators, two benchmarking studies testing multimodal models on dental and anatomical image interpretation, and a commentary on supervising trainees&#x27; AI-assisted medical writing address the single reported assessment and feedback topic.</p>
-<p class="section-brief-date">The picture as of September 7, 2026; numbered links go to the items below.</p>
+<p>A scoping review finds medical AI curricula still nascent, urging faster development and stronger evaluation systems <a href="https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1">[1]</a>. Radiology residency programs offer a concrete counterpoint, with a three-year study showing hands-on AI training is feasible and sustainable <a href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[8]</a>. Meanwhile, a meta-analysis of simulation training finds AI-assisted methods help procedural skill acquisition, with complex cognitive tasks still requiring expert instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[14]</a>. Attitudes remain mixed: a survey of Latin American emergency clinicians shows rapid generative AI adoption outpacing governance and training infrastructure <a href="https://pubmed.ncbi.nlm.nih.gov/42699427?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[10]</a>, while psychiatry educators propose a six-point plan to prepare residents for AI&#x27;s clinical and educational impact <a href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[7]</a>.</p>
+<p>Also this week: coverage spans seven items on teaching and curriculum design, from anesthesiology and orthopaedic training reviews to supervision of trainee writing with large language models. Four pieces examine attitudes and adoption, including educator surveys on ChatGPT use, while two studies benchmark model performance against expert clinicians on structured hip preservation questions.</p>
+<p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -47,6 +47,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42704695?fc=20260609215449&amp;ff=20260907185139&amp;v=2.20.1">Select large language models outperform hip preservation experts on consensus-based hip preservation questionnaire</a>
     <p class="news-card-summary">Two large language models outperformed expert panelists on a consensus-based hip preservation questionnaire, showing improving accuracy on structured clinical questions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42705636?fc=20260609215449&amp;ff=20260908004122&amp;v=2.20.1">AI at the Bedside: An Argument for a Training Wheels Approach</a>
+    <p class="news-card-summary">Opinion piece argues for graduated clinical introduction of generative AI tools, balancing clinician efficiency gains against patient and trainee acceptance concerns.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698520?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Development of AI competencies within the medical curriculum</a>
     <p class="news-card-summary">Integrated, longitudinal, and active learning-based models provide the strongest foundation for developing AI competencies in medical curricula to prepare physicians for clinical AI collaboration.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 4, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91809">Multimodal Large Language Models for Dental Chart Image Interpretation: Cross-Sectional Benchmarking Study With Students and Clinicians</a>
-    <p class="news-card-summary">Multimodal large language models that interpret dental chart images were benchmarked against student and clinician performance to assess their potential for supporting dental education.</p>
   </div>
 </div>
 </div>
