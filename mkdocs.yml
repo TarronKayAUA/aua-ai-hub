@@ -62,7 +62,25 @@ extra_javascript:
   - javascripts/listen.js
 
 plugins:
-  - search
+  # Material's default separator splits only on whitespace and hyphens, which
+  # broke search in two ways specific to this site (measured 2026-09-08, from
+  # an external review). House style expands an acronym on first use, so the
+  # first and most authoritative mention on every page is written "protected
+  # health information (PHI)"; with the default separator "(PHI)" is one
+  # token and a search for PHI never matches it. "CGEA" returned nothing at
+  # all despite appearing eight times. Tool cards have the same shape,
+  # "Comet (Perplexity)", so searching a vendor missed its own card. And a
+  # trailing question mark silently deleted the reader's last word, so
+  # "Can students use AI?" searched two terms of three.
+  #
+  # Adding ( ) and ? to the separator fixes all three. Deliberately NOT done
+  # instead: per-page search boosts, lowering the title boost, or the
+  # stemmer. All three were measured and all three are worse here; the
+  # policy page needs roughly a 200x boost to move on "patient data" while
+  # 2x already steals other queries from the right guide, and the stemmer
+  # stops "glossary" returning the Glossary.
+  - search:
+      separator: '[\s\-()?]+'
 
 hooks:
   - scripts/render_data.py
