@@ -1,140 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.nature.com/articles/s41746-026-02894-x",
-   "title_hash": "38955da8e92cd4c6f5eed0143da648e2",
-   "first_seen": "2026-07-10T15:03:32.492316+00:00",
-   "kept": true,
-   "title": "BrainSeg: a generalized framework for comprehensive multimodal brain tissue segmentation, parcellation, and lesion labeling",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-10T00:00:00+00:00",
-   "summary": "Peer-reviewed study presents BrainSeg, a framework for automated segmentation, parcellation, and lesion labeling across multiple brain imaging modalities.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02941-7",
-   "title_hash": "c78da8e3b7fb5b945893e46e7f6f152c",
-   "first_seen": "2026-07-10T15:03:32.492316+00:00",
-   "kept": true,
-   "title": "A vision transformer deep learning model for assessing pediatric ileocolic intussusception severity using ultrasound images",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-10T00:00:00+00:00",
-   "summary": "Vision transformer model trained to assess severity of pediatric ileocolic intussusception from ultrasound images, published in peer-reviewed journal.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uqbug5/this_is_what_hy3_is_capable_of_mother_of_god",
-   "title_hash": "f8ead31176948ea15985d1598d894203",
-   "first_seen": "2026-07-10T15:03:32.492316+00:00",
-   "kept": false,
-   "reason": "reaction content and anecdotal performance report without substantive analysis"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1umo8zu/longcat_2_model_weights_have_been_published",
-   "title_hash": "b9c148b0cf7fc977f6cc9e9bfd250a5a",
-   "first_seen": "2026-07-10T15:03:32.492316+00:00",
-   "kept": true,
-   "title": "Longcat 2 model weights have been published",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-03T19:49:38+00:00",
-   "summary": "Meituan released open-weights Longcat 2 model in INT8 and FP8 quantized formats on Hugging Face.",
-   "category": "general_ai",
-   "score": 2.0,
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=mWlCituW7wo",
-   "title_hash": "f941b61953732a20a711ba4dd97dce2d",
-   "first_seen": "2026-07-10T15:03:32.492316+00:00",
-   "kept": false,
-   "reason": "title is rumor-framed and speculative; no confirmed model releases documented"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/10/nilay-patel",
-   "title_hash": "6e74cb678be3be97669a04652802cb39",
-   "first_seen": "2026-07-10T18:02:50.443040+00:00",
-   "kept": false,
-   "reason": "opinion piece with no new information"
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/disable-auto-play-and-infinite-scroll-or-risk-massive-fines-eu-tells-meta",
-   "title_hash": "58affe7ebde30d2e975a06a845597884",
-   "first_seen": "2026-07-10T18:02:50.443040+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1usniqh/25x_faster_qwen36_nvfp4_unsloth_quants",
-   "title_hash": "3f951f51bc4f25fcc7ef92f63252cdd4",
-   "first_seen": "2026-07-10T18:02:50.443040+00:00",
-   "kept": true,
-   "title": "2.5x faster Qwen3.6 NVFP4 Unsloth quants",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-10T13:20:19+00:00",
-   "summary": "Unsloth released 2.5x faster quantized inference for Qwen 3.6 using 4-bit tensor cores with FP8 key-value cache support.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://preview.redd.it/yoxm16aijech1.png?width=640&crop=smart&auto=webp&s=68cb2bb669bbaee024fb2f7d1cb9aa832e4530de",
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02956-0",
-   "title_hash": "e405c10ad497a5c8c99e5401a98ade9e",
-   "first_seen": "2026-07-10T18:02:50.443040+00:00",
-   "kept": true,
-   "title": "Simulation of covariate and concept drift in machine learning hospital admission prediction from emergency triage",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-10T00:00:00+00:00",
-   "summary": "Peer-reviewed study examines how covariate and concept drift affect machine learning models for hospital admission prediction from emergency triage data.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02876-z",
-   "title_hash": "a035636c6f40c661cbe956e4bf24d54f",
-   "first_seen": "2026-07-10T18:02:50.443040+00:00",
-   "kept": true,
-   "title": "An information bottleneck-based optimal transport network for automated diagnosis of spinal diseases",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-10T00:00:00+00:00",
-   "summary": "Peer-reviewed study presents an information bottleneck-based optimal transport network for automated diagnosis of spinal diseases.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=nep5byxmr_M",
-   "title_hash": "18bd3271af51193b9f5d86020f8b593a",
-   "first_seen": "2026-07-10T18:02:50.443040+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=1DtMiRKg-cs",
-   "title_hash": "a4d3b4638ddf94574c4aec34cb3015fe",
-   "first_seen": "2026-07-10T18:02:50.443040+00:00",
-   "kept": true,
-   "title": "Understanding the inner thoughts of AI",
-   "source": "Google DeepMind",
-   "published": "2026-07-10T15:50:55+00:00",
-   "summary": "A Google DeepMind episode exploring how neural networks represent information internally and what interpretability reveals about AI reasoning.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i2.ytimg.com/vi/1DtMiRKg-cs/hqdefault.jpg"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=WHFLWrnFc1E",
-   "title_hash": "9357136e1b48aa4e700f6d829afedaf0",
-   "first_seen": "2026-07-10T18:02:50.443040+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
    "url": "https://mededu.jmir.org/2026/1/e70400",
    "title_hash": "892fa3cab872b56e9c69bfbcdbd40942",
    "first_seen": "2026-07-10T21:29:14.632193+00:00",
@@ -31891,6 +31757,205 @@
    "first_seen": "2026-09-08T12:53:25.523804+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/991216/meta-bets-on-ai-agent-muse-to-catch-up-in-ai-race",
+   "title_hash": "895273864b3589f4a56a2c27ed649a12",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/real-photos-of-young-girls-were-in-nudify-app-ads-on-facebook-instagram",
+   "title_hash": "5250fca2e2990837aecec2f562e458fa",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e92937",
+   "title_hash": "337a05e69e29c42eea26cf8148b668c9",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": true,
+   "title": "Automated Extraction of Postoperative Cancer Recurrence and Metastasis From Computed Tomography (CT) Reports: Semisupervised Deep Learning Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-08T18:15:12+00:00",
+   "summary": "A semisupervised deep learning approach automatically extracts postoperative cancer recurrence and metastasis data from unstructured computed tomography reports despite linguistic variability.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://arstechnica.com/science/2026/09/googles-ai-weather-model-now-uses-more-raw-satellite-data",
+   "title_hash": "5bfe8e453f5c6eb80f79f81d507e5fec",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/990313/anthropic-class-action-lawsuit-pricing-subscription-plans",
+   "title_hash": "60944227bf9f88111020a03b57c1d247",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-code-review-software-engineers",
+   "title_hash": "c78b23bcbaf7525a600a37544b5864f4",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": true,
+   "title": "AI Slop Is Changing How Engineers Review Code",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-09-08T16:16:49+00:00",
+   "summary": "AI code generation tools now produce thousands of lines rapidly, but reviewers must identify hidden vulnerabilities and faulty logic that surface testing may miss.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/illustration-of-workers-overwhelmed-by-a-giant-black-ai-barrel-spilling-yellow-liquid-one-sits-at-a-computer-while-the-other-us.jpg?id=67739596&width=980",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://huggingface.co/blog/MultiverseComputingCAI/safety-for-whom",
+   "title_hash": "a9a8cc8877b996ca8e4f801b6336704b",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "summary text missing; cannot evaluate content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wapjaw/openai_alleged_of_stealing_mathematicians_work",
+   "title_hash": "cd38c10e9e21cd401c027abc16fa91c2",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "rumor and allegation without confirmed event"
+  },
+  {
+   "url": "https://spectrum.ieee.org/alphagenome-atlas",
+   "title_hash": "b592fab277835eb768b43923d3511a16",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": true,
+   "title": "Google DeepMind Maps 9 Billion Possible DNA Variants",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-09-08T14:00:05+00:00",
+   "summary": "Google DeepMind has mapped nine billion possible DNA variants to understand how non-coding DNA regulates gene activity and affects biological function.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/glowing-blue-digital-dna-helix-with-data-patterns.jpg?id=67719885&width=980",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas",
+   "title_hash": "4ccd5008f2bdfe04cd15041f8a5b4f38",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": true,
+   "title": "Google’s Atlas of the human genome could pave the way for new treatments",
+   "source": "The Verge AI",
+   "published": "2026-09-08T14:00:00+00:00",
+   "summary": "Google DeepMind's AlphaGenome Atlas uses artificial intelligence to create a predictive map of DNA variants, potentially accelerating research into disease mechanisms and treatments.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.theverge.com/tech/991133/adobe-is-trying-to-make-its-ai-generators-idiot-proof-in-premiere",
+   "title_hash": "8a3ed751e4c754779a6aebcaea886e51",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "vendor marketing"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42708899?fc=20260609215449&ff=20260908152637&v=2.20.1",
+   "title_hash": "02c5ba6db5fa884c96f12437064f9b61",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": true,
+   "title": "Developing validity arguments for artificial intelligence-based assessment: Balancing affordances and threats",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-08T10:00:00+00:00",
+   "summary": "Validity for AI-based assessment requires ongoing governance as a sociotechnical system, with explicit validity arguments, auditability, multi-site evaluation, and continuous monitoring of consequences.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wa9309/wsj_unregulated_openweight_ai_is_an_invitation_to",
+   "title_hash": "58482d9a34c3d531047a7522515ed84c",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "forum discussion without confirmed reporting; sourced from Reddit commentary"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03223-y",
+   "title_hash": "aaed4f876332bec99bfd178ada3bf9c4",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": true,
+   "title": "Identifying potential nonpulmonary vein triggers in persistent atrial fibrillation using digital twins and deep learning",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-08T00:00:00+00:00",
+   "summary": "Deep learning applied to digital twins identifies potential triggers for persistent atrial fibrillation outside the pulmonary veins.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03200-5",
+   "title_hash": "63a37b41020c9a1799e7461848be557d",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03182-4",
+   "title_hash": "2f90c1a33c2c33c6c9e84ceed3741af9",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": true,
+   "title": "Intervention fidelity and competency translation of serious games in pharmacy education: a scoping umbrella review",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-08T00:00:00+00:00",
+   "summary": "A scoping umbrella review examines how intervention fidelity and competency translate when serious games are used in pharmacy education.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=A7MSwdXj86k",
+   "title_hash": "08e6bb73d390880b4e99b5f364f031fd",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=-VukmrOT1eE",
+   "title_hash": "c4dfe7beb588f35506c44dcc6a85430c",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=imPtIEAEHSU",
+   "title_hash": "6418c69e39116264cdd07499d0571746",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=6l7ble9P74o",
+   "title_hash": "402feaca26f65eaa389ae7cdbf519e74",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=U0aToL5C-bQ",
+   "title_hash": "b1a1b5d67fd03b424afabab608e44852",
+   "first_seen": "2026-09-08T19:26:37.884844+00:00",
+   "kept": true,
+   "title": "AlphaGenome Atlas: Understanding the human genome",
+   "source": "Google DeepMind",
+   "published": "2026-09-08T13:58:27+00:00",
+   "summary": "AlphaGenome predicts molecular effects of all nine billion single-nucleotide variants in the human genome, enabling systematic analysis of genetic variation.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i2.ytimg.com/vi/U0aToL5C-bQ/hqdefault.jpg",
+   "display_title": "AlphaGenome Atlas: predicting effects of human genome variants"
   }
  ],
  "digests": [

@@ -18,9 +18,33 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 8, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/ai-code-review-software-engineers">AI Slop Is Changing How Engineers Review Code</a>
+    <p class="news-card-summary">AI code generation tools now produce thousands of lines rapidly, but reviewers must identify hidden vulnerabilities and faulty logic that surface testing may miss.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/illustration-of-workers-overwhelmed-by-a-giant-black-ai-barrel-spilling-yellow-liquid-one-sits-at-a-computer-while-the-other-us.jpg?id=67739596&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 8, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/alphagenome-atlas">Google DeepMind Maps 9 Billion Possible DNA Variants</a>
+    <p class="news-card-summary">Google DeepMind has mapped nine billion possible DNA variants to understand how non-coding DNA regulates gene activity and affects biological function.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/glowing-blue-digital-dna-helix-with-data-patterns.jpg?id=67719885&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas">Google’s Atlas of the human genome could pave the way for new treatments</a>
+    <p class="news-card-summary">Google DeepMind&#x27;s AlphaGenome Atlas uses artificial intelligence to create a predictive map of DNA variants, potentially accelerating research into disease mechanisms and treatments.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 7, 2026</span></div>
@@ -106,27 +130,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.02899">Contamination Inflates Scores but Rarely Reorders Large Language Model Leaderboards</a>
     <p class="news-card-summary">Study shows benchmark contamination inflates model scores but rarely changes their relative ranking on large language model leaderboards.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.02942">Judging LLM-as-a-Judge: Concerning Rubric Artifacts in LLM-based Automated Text Generation Evaluation</a>
-    <p class="news-card-summary">Language models used as evaluation judges show systematic biases from rubric text alone, raising concerns about automated text generation assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.03181">Jina-OCR-v1: Efficient Document Parsing with Speculative Decoding and Dense Verifiable Rewards</a>
-    <p class="news-card-summary">Jina-OCR-v1 combines compressed vision encoding and mixture-of-experts decoding with speculative decoding for efficient document parsing on low-cost hardware.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Sep/3/gpt6-astra">GPT‑6 Astra</a>
-    <p class="news-card-summary">OpenAI released GPT-6 Astra to limited organizations initially, rolling out to ChatGPT Plus, Pro, Business, and Enterprise users and the API at Claude Opus pricing.</p>
   </div>
 </div>
 </div>

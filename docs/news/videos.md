@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=U0aToL5C-bQ" target="_blank" rel="noopener" title="AlphaGenome Atlas: Understanding the human genome">
+  <img src="https://i2.ytimg.com/vi/U0aToL5C-bQ/hqdefault.jpg" alt="Video: AlphaGenome Atlas: predicting effects of human genome variants" loading="lazy">
+  <span class="video-card-title">AlphaGenome Atlas: predicting effects of human genome variants</span>
+  <span class="video-card-meta">Google DeepMind, September 8, 2026</span>
+  <span class="video-card-desc">AlphaGenome predicts molecular effects of all nine billion single-nucleotide variants in the human genome, enabling systematic analysis of genetic variation.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=GRYZR2R20FI" target="_blank" rel="noopener" title="Code Quality in the Age of AI: Why Great Code Isn&#x27;t Enough">
   <img src="https://i4.ytimg.com/vi/GRYZR2R20FI/hqdefault.jpg" alt="Video: Code quality in AI-assisted software development" loading="lazy">
   <span class="video-card-title">Code quality in AI-assisted software development</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Model Hardware Standard for AI control of lab equipment</span>
   <span class="video-card-meta">Anthropic, August 28, 2026</span>
   <span class="video-card-desc">Anthropic announces Model Hardware Standard, a framework for AI agents to safely control physical equipment in scientific and research settings.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=VmT7SU81tuM" target="_blank" rel="noopener" title="GLM 5.3 Flash Is HERE, Is THIS Better Than the FULL GLM 5.3?">
-  <img src="https://i3.ytimg.com/vi/VmT7SU81tuM/hqdefault.jpg" alt="Video: GLM 5.3 Flash model comparison and testing" loading="lazy">
-  <span class="video-card-title">GLM 5.3 Flash model comparison and testing</span>
-  <span class="video-card-meta">Bijan Bowen, August 27, 2026</span>
-  <span class="video-card-desc">Hands-on comparison of Zhipu GLM 5.3 Flash against the full GLM 5.3 model across multiple benchmarks and use cases.</span>
 </a>
 </div>
 
