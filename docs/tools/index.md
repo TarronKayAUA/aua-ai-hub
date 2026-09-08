@@ -21,7 +21,7 @@ A directory of artificial intelligence (AI) tools relevant to teaching, learning
 | <span class="badge badge-caution">Use with caution</span> | A specific concern is documented in the entry's note; read it before using the tool. |
 | <span class="badge badge-restricted">Restricted</span> | Reviewed and found unsuitable for institutional use. |
 
-Hover any badge for the entry's note; expand a category to browse it.
+Where an entry carries a specific caution or access condition, it is printed on the card under the description. Expand a category to browse it.
 
 Whatever a tool's status, two rules always apply: never enter protected health information (PHI), and never enter student records covered by the Family Educational Rights and Privacy Act (FERPA). See [PHI and FERPA considerations](../basics/glossary.md#phi-and-ferpa-considerations) in the glossary.
 

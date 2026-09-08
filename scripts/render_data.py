@@ -244,6 +244,34 @@ def _favicon_img(url: str) -> str:
             "onerror=\"this.style.display='none'\">")
 
 
+# The standing sentence every listing carries. It is stated twice already in
+# hand-authored prose on the tools page, so repeating it on 56 of 75 cards
+# would be noise; only what a note says BEYOND it goes on the card.
+BOILERPLATE_NOTE = ("Listed for discovery, not endorsement; "
+                    "the policy's data rules apply.")
+
+
+def _card_note(note: str) -> str:
+    """The part of a status note that belongs on the card, or "".
+
+    Status notes were reachable only as a badge tooltip until 2026-09-08, so
+    touch and keyboard users could not read them and they were absent from
+    the search index, while the page told readers to "hover any badge" and
+    the caution row told them to read the note before using the tool. On a
+    phone neither instruction could be followed. Nineteen of the 75 notes
+    carry something real: documented-consent requirements for avatar and
+    voice tools, services operated from China, credential limits, ongoing
+    litigation. Those are exactly the entries where hover-only mattered most.
+
+    The tooltip is deliberately left in place: this is additive, so nothing a
+    reader can reach today stops being reachable.
+    """
+    text = (note or "").strip()
+    if text.startswith(BOILERPLATE_NOTE):
+        text = text[len(BOILERPLATE_NOTE):].strip()
+    return text
+
+
 def _render_tools(config) -> str:
     tools = _load(_data_dir(config) / "tools.yaml")
 
@@ -261,6 +289,7 @@ def _render_tools(config) -> str:
 
     lines = []
     rendered = 0
+    notes_shown = 0
     per_category_counts = {}
     standing_counts: dict[str, int] = {}
     for category, label in CATEGORY_LABELS.items():
@@ -299,6 +328,15 @@ def _render_tools(config) -> str:
         for tool in sorted(group, key=lambda t: t["name"].lower()):
             status_label, status_css = STATUS_LABELS[tool["governance_status"]]
             badge = _badge(status_label, status_css, tool.get("status_note", ""))
+            note_text = _card_note(tool.get("status_note", ""))
+            note_html = (f'  <p class="tool-card-note">{note_text}</p>\n'
+                         if note_text else "")
+            if note_text:
+                notes_shown += 1
+            checked = tool.get("last_reviewed")
+            checked_html = (
+                f'  <p class="tool-card-checked">Checked {checked}</p>\n'
+                if checked else "")
             body.append(
                 '<div class="tool-card">\n'
                 '  <div class="tool-card-head">'
@@ -307,6 +345,7 @@ def _render_tools(config) -> str:
                 f'  <div class="tool-card-sub">{tool["vendor"]}'
                 f'<span class="cost-chip">{tool["cost"]}</span></div>\n'
                 f'  <p class="tool-card-blurb">{tool["blurb"]}</p>\n'
+                f'{note_html}{checked_html}'
                 "</div>"
             )
             rendered += 1
@@ -331,6 +370,16 @@ def _render_tools(config) -> str:
     standings = ", ".join(f"{k} {v}" for k, v in sorted(standing_counts.items()))
     print(f"  standings       : {standings}")
     print(f"  rendered total  : {rendered} (cross-check ok)")
+    # Cross-check the visible notes against the data rather than trusting the
+    # loop: a note that stops rendering is a caution a reader stops seeing.
+    expected_notes = sum(
+        1 for t in tools if _card_note(t.get("status_note", "")))
+    print(f"  notes on cards  : {notes_shown} of {len(tools)} "
+          f"(cross-check {'ok' if notes_shown == expected_notes else 'MISMATCH'})")
+    if notes_shown != expected_notes:
+        raise AssertionError(
+            f"render_data hook: {expected_notes} tools carry a substantive "
+            f"status note but {notes_shown} rendered on a card")
 
     return "\n".join(lines)
 

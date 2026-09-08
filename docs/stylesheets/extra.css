@@ -819,6 +819,19 @@
   color: var(--md-default-fg-color--light);
 }
 
+/* Substantive status notes, visible on the card rather than hover-only
+   (2026-09-08). Nineteen of 75 tools carry one: documented-consent
+   requirements, services operated from China, credential limits, ongoing
+   litigation. Slightly stronger than the blurb above it, because a caution
+   should not read as quieter than the description it qualifies. */
+.md-typeset .tool-card-note {
+  margin: 0.45rem 0 0;
+  padding-left: 0.5rem;
+  border-left: 0.12rem solid var(--md-default-fg-color--lighter);
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color);
+}
+
 /* Entry provenance on tool and open-weights cards. "Checked" deliberately,
    never "reviewed": the weekly content watch may set data/tools.yaml's
    last_reviewed itself, so the label must not imply a person looked
