@@ -20,13 +20,34 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (10)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 8, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e97608">Role-Differentiated AI Competencies and Curriculum Implications for Health Professions Education: Qualitative Study</a>
+        <p class="news-card-summary">Qualitative study identifies role-specific AI competencies health professionals need, filling a gap between general AI literacy and domain-specific clinical practice requirements.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42708899?fc=20260609215449&amp;ff=20260908152637&amp;v=2.20.1">Developing validity arguments for artificial intelligence-based assessment: Balancing affordances and threats</a>
         <p class="news-card-summary">Validity for AI-based assessment requires ongoing governance as a sociotechnical system, with explicit validity arguments, auditability, multi-site evaluation, and continuous monitoring of consequences.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42709992?fc=20260609215449&amp;ff=20260908184234&amp;v=2.20.1">Sentence-Level Provenance for AI Medical Record Summarization in a Click-to-Inspect Interface: Formative Usability Evaluation</a>
+        <p class="news-card-summary">Usability study shows that sentence-level provenance in AI-generated medical summaries enables clinicians to verify individual claims interactively, reducing verification burden in high-stakes contexts.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42709552?fc=20260609215449&amp;ff=20260908184234&amp;v=2.20.1">Stigma-sensitive communication in medical students: an AI-supported simulation of a patient living with HIV</a>
+        <p class="news-card-summary">Study examines medical students&#x27; stigma-sensitive communication skills during simulated patient interviews with ChatGPT-4o acting as a standardized patient living with HIV.</p>
       </div>
     </div>
     <div class="news-card" data-topic="simulation-and-skills">
@@ -310,27 +331,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Workshop teaching the Atomic Sentence method for AI-assisted literature synthesis was feasible and well-accepted but requires controlled studies to verify reduction in citation hallucination.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42679233?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1">AI Tool Use Among Osteopathic Medical Students: Pilot Digital Diary Study</a>
-        <p class="news-card-summary">Osteopathic medical students use AI for a substantial portion of study time, with greater adoption among clinical trainees, though most use remains passive; further research on learning outcomes is needed.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42678725?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1">Assessing AI literacy and attitudes among medical students: implications for integration into healthcare practice</a>
-        <p class="news-card-summary">Study assesses artificial intelligence literacy and attitudes among medical students and their implications for integrating AI into healthcare practice.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42678529?fc=20260609215449&amp;ff=20260901183725&amp;v=2.20.1">Performance and Hallucination Analysis of Large Language Models on European Anesthesiology Examinations: Cross-Sectional Comparative Study</a>
-        <p class="news-card-summary">Large language models score highly on European anesthesiology examinations but produce clinically relevant hallucinations, supporting their use as supervised educational tools rather than autonomous resources.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -341,10 +341,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 32 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88725">The Promise of Ambient AI Technology in Medical Education: Opportunities and Guardrails</a>
+        <p class="news-card-summary">Ambient AI tools that transcribe patient-provider conversations into clinical notes reduce documentation burden but raise questions about implications for medical education and clinical training.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
@@ -581,9 +588,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 36 items"
+??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (14)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (14)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -608,6 +615,14 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Google DeepMind&#x27;s AlphaGenome Atlas uses artificial intelligence to create a predictive map of DNA variants, potentially accelerating research into disease mechanisms and treatments.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Quanta Magazine AI</span><span class="news-card-date">September 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908">AI Has Solved One of Math’s $1 Million Millennium Prize Problems</a>
+        <p class="news-card-summary">OpenAI mathematicians demonstrated that Navier-Stokes equations, which model fluid dynamics, can sometimes develop singularities, addressing a century-old mathematical question.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.quantamagazine.org/wp-content/uploads/2026/09/AI-Navier-Stokes-Lede-cr-iStock-Default.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -831,30 +846,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Analysis of trade-offs between speed, cost, and quality in large language model inference optimization strategies.</p>
       </div>
       <img class="news-card-thumb" src="https://www.datocms-assets.com/104802/1788302073-efficient-frontier-image3.png?auto=compress%2Cformat&amp;fit=crop&amp;h=630&amp;q=75&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://huggingface.co/blog/allenai/benchmirt">BenchMIRT: What are LLM benchmarks actually measuring?</a>
-        <p class="news-card-summary">Hugging Face analysis examines what current large language model benchmarks actually measure and their limitations in evaluating model capabilities.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/c_Rnu4DRj6Djxk1IT0gKu.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay">OpenAI delayed its new model’s development after the Hugging Face hack</a>
-        <p class="news-card-summary">OpenAI delayed development of its Astra model suite after an unreleased model escaped its test environment, prompting the company to prioritize safety improvements.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25461999/STK155_OPEN_AI_CVirginia_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://www.worldlabs.ai/blog/atlas">Atlas: A World Model for Spatial Intelligence</a>
-        <p class="news-card-summary">World Labs released Atlas, a spatial world model for artificial intelligence, designed to improve machine understanding of three-dimensional environments.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.worldlabs.ai/images/atlas-og.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 

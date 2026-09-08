@@ -1,119 +1,6 @@
 {
  "items": [
   {
-   "url": "https://mededu.jmir.org/2026/1/e70400",
-   "title_hash": "892fa3cab872b56e9c69bfbcdbd40942",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": false,
-   "reason": "pandemic-specific health literacy content, not relevant to artificial intelligence in medicine"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e90052",
-   "title_hash": "4fe8ee338506924311162e057df3780a",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": true,
-   "title": "Evaluation of an AI Medical Scribe After 236,153 Notes Generated Across Care Levels in a European Health System: Mixed Methods Retrospective Observational Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-10T20:30:16+00:00",
-   "summary": "Mixed methods study evaluates real-world performance of an AI medical scribe across care levels in a European health system based on over 236,000 generated notes.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical documentation"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e91249",
-   "title_hash": "a32904242bf28d37ddc3cc590bfb746b",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": true,
-   "title": "Natural Language Processing Applied to Psychiatric Clinical Notes: Scoping Review",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-10T20:30:16+00:00",
-   "summary": "Scoping review examines natural language processing applications to psychiatric clinical notes in electronic health records for earlier illness identification and personalized treatment planning.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical documentation"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e79418",
-   "title_hash": "49d89d7bcadd22af72eb3e7975a54d9d",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": true,
-   "title": "e-Learning, Distance Education, and Virtual and Augmented Reality in Orthopedic Training: European Cross-Sectional Survey of Trainee Acceptance Guided by the Technology Acceptance Model and Unified Theory of Acceptance and Use of Technology",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-10T20:00:03+00:00",
-   "summary": "European survey assesses trainee acceptance of digital learning technologies in orthopedic training using technology adoption models to identify barriers and facilitators.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e91652",
-   "title_hash": "28803b9f23b59167a19f2139808d0cb5",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": true,
-   "title": "Exploring the Role of Large Language Models in Primary Care: Qualitative Study of Physicians in the United States and the Netherlands",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-10T19:30:02+00:00",
-   "summary": "Qualitative study explores how large language models can support primary care physicians with clinical, administrative, and communication tasks in their workflows.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Other"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1usg4ox/someone_tweeted_after_3_years_about_his_model",
-   "title_hash": "b9e4aae0d7cbf0675f626a462c4b2d05",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": false,
-   "reason": "forum discussion about rumored model release, not substantive news"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03002-9",
-   "title_hash": "ac0244f3ff3432198d14a6601982431e",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": true,
-   "title": "Psychometric characterization of human and artificial intelligence performance on cardiology residency in-service examination items",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-10T00:00:00+00:00",
-   "summary": "Study characterizes psychometric performance of artificial intelligence and human physicians on cardiology residency examination items.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02989-5",
-   "title_hash": "28a32caccbecf84ef43a7b0dffa93be0",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": true,
-   "title": "Real-time anatomy recognition in laparoscopic liver resection using video segmentation AI model",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-10T00:00:00+00:00",
-   "summary": "Published study describes video segmentation artificial intelligence model for real-time anatomy recognition during laparoscopic liver resection.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=yATno77Uo6A",
-   "title_hash": "37e46bf41e1e8c5d3b74d79d3cadb6ca",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=IYYTI73J7Rg",
-   "title_hash": "dafad45c01e766c17b143c3cbf03265b",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/ChatGPT-Just-Became-a-Work-Agent-e3lu1ln",
-   "title_hash": "b2d1f5937e94f11e74abdcfd2cbfa98a",
-   "first_seen": "2026-07-10T21:29:14.632193+00:00",
-   "kept": false,
-   "reason": "daily news show recap without substantive analysis or standout reporting"
-  },
-  {
    "url": "https://www.nature.com/articles/s41746-026-02986-8",
    "title_hash": "15e0f700f89139c520cac0c65c734ded",
    "first_seen": "2026-07-11T03:44:36.607487+00:00",
@@ -31956,6 +31843,114 @@
    "score": 4.0,
    "thumbnail": "https://i2.ytimg.com/vi/U0aToL5C-bQ/hqdefault.jpg",
    "display_title": "AlphaGenome Atlas: predicting effects of human genome variants"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/lecture-6-km-curves",
+   "title_hash": "ed5983e6eae3c9c73bdbc48ed9f15ce1",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/09/microsoft-patches-a-record-972-vulnerabilities-112-of-them-critical",
+   "title_hash": "f15b92b47a26599b1b3cb6eefe6b9b23",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e88725",
+   "title_hash": "fb1d30707ffa75a6e43675bc0daa438b",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": true,
+   "title": "The Promise of Ambient AI Technology in Medical Education: Opportunities and Guardrails",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-08T20:00:19+00:00",
+   "summary": "Ambient AI tools that transcribe patient-provider conversations into clinical notes reduce documentation burden but raise questions about implications for medical education and clinical training.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e97608",
+   "title_hash": "65eb542b37acaf4c8142c7cbe96483d3",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": true,
+   "title": "Role-Differentiated AI Competencies and Curriculum Implications for Health Professions Education: Qualitative Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-08T19:30:16+00:00",
+   "summary": "Qualitative study identifies role-specific AI competencies health professionals need, filling a gap between general AI literacy and domain-specific clinical practice requirements.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42709992?fc=20260609215449&ff=20260908184234&v=2.20.1",
+   "title_hash": "176cff0dbc8ad0db8a39eb61c46820a5",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": true,
+   "title": "Sentence-Level Provenance for AI Medical Record Summarization in a Click-to-Inspect Interface: Formative Usability Evaluation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-08T10:00:00+00:00",
+   "summary": "Usability study shows that sentence-level provenance in AI-generated medical summaries enables clinicians to verify individual claims interactively, reducing verification burden in high-stakes contexts.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42709552?fc=20260609215449&ff=20260908184234&v=2.20.1",
+   "title_hash": "166fd0982c165bca1d4f235d46395435",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": true,
+   "title": "Stigma-sensitive communication in medical students: an AI-supported simulation of a patient living with HIV",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-08T10:00:00+00:00",
+   "summary": "Study examines medical students' stigma-sensitive communication skills during simulated patient interviews with ChatGPT-4o acting as a standardized patient living with HIV.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42709279?fc=20260609215449&ff=20260908184234&v=2.20.1",
+   "title_hash": "00f495ff7d6ec7ed77697fff9791de6d",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908",
+   "title_hash": "4ea48b4a69b8dc1d4763052ba583ad5e",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": true,
+   "title": "AI Has Solved One of Math’s $1 Million Millennium Prize Problems",
+   "source": "Quanta Magazine AI",
+   "published": "2026-09-08T08:43:52+00:00",
+   "summary": "OpenAI mathematicians demonstrated that Navier-Stokes equations, which model fluid dynamics, can sometimes develop singularities, addressing a century-old mathematical question.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://www.quantamagazine.org/wp-content/uploads/2026/09/AI-Navier-Stokes-Lede-cr-iStock-Default.jpg",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://github.com/TauricResearch/TradingAgents",
+   "title_hash": "b0e7ad29a185b59491b2f91fb00ef65f",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://alvins82.github.io/hangar-harness-model-tests",
+   "title_hash": "4812afb1b659396aed221eafd1b88bdc",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": false,
+   "reason": "minor tool evaluation without broad significance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w9fwsw/when_will_open_source_llm_catch_up_to_astra_i",
+   "title_hash": "5c60b22fa60371d2c81e635b50240080",
+   "first_seen": "2026-09-08T22:42:34.214362+00:00",
+   "kept": false,
+   "reason": "community discussion without substantive analysis"
   }
  ],
  "digests": [
