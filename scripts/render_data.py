@@ -1235,6 +1235,47 @@ def _inject_narration(src: str, markdown: str) -> str:
     return markdown
 
 
+def on_config(config):
+    """Fail the build if the footer link config is missing or malformed.
+
+    overrides/partials/copyright.html renders the footer links from
+    config.extra.footer_links. If that key is absent, empty or mistyped the
+    template simply renders nothing: the build passes, --strict passes, and
+    both links vanish from all 80 pages with no error anywhere. That is the
+    same silent-loss shape as the bug this replaced, so it is checked here
+    rather than trusted (2026-09-08).
+
+    The trailing-slash rule matters as much as the key's presence. An
+    internal target written the way it appears under docs/, as
+    "accessibility.md", would pass the url filter and produce a link to a
+    file that is not served, recreating the original 404 from inside the fix.
+    """
+    links = (config.get("extra") or {}).get("footer_links")
+    if not links:
+        raise ValueError(
+            "render_data hook: mkdocs.yml extra.footer_links is missing or "
+            "empty. overrides/partials/copyright.html renders the footer "
+            "links from it and would silently drop them from every page.")
+    for link in links:
+        missing = [key for key in ("text", "url") if not link.get(key)]
+        if missing:
+            raise ValueError(
+                f"render_data hook: footer link {link!r} is missing "
+                f"{', '.join(missing)}")
+        url = link["url"]
+        if "://" not in url and not url.endswith("/"):
+            raise ValueError(
+                f"render_data hook: internal footer link {url!r} must be the "
+                f"address-bar path with a trailing slash, such as "
+                f"'accessibility/', not a path under docs/. Without the "
+                f"slash this rebuilds the 404 the config change removed.")
+    print("render_data: footer links verification")
+    print(f"  links configured: {len(links)} "
+          f"({sum(1 for x in links if '://' in x['url'])} external, "
+          f"{sum(1 for x in links if '://' not in x['url'])} internal)")
+    return config
+
+
 def on_page_markdown(markdown, page, config, files):
     src = page.file.src_uri
     markdown += _reviewed_footer(page.meta, src)

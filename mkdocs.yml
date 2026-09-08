@@ -7,9 +7,28 @@ repo_url: https://github.com/TarronKayAUA/aua-ai-hub
 repo_name: TarronKayAUA/aua-ai-hub
 copyright: >-
   Maintained by Dr. Tarron Kayalackakom, Assistant Dean of AI in Medical
-  Education, AUA College of Medicine &nbsp;|&nbsp;
-  <a href="https://forms.office.com/r/5a8RCi2YKP">Feedback</a> &nbsp;|&nbsp;
-  <a href="accessibility/">Accessibility</a>
+  Education, AUA College of Medicine
+
+extra:
+  # Footer links, rendered by overrides/partials/copyright.html and NOT by
+  # the copyright string above. They used to be raw HTML inside that string,
+  # but MkDocs inserts `copyright` verbatim and never rewrites a relative
+  # href in it, so <a href="accessibility/"> shipped unchanged to every page:
+  # right from the site root, and pointing at a page that does not exist
+  # everywhere else. On 2026-09-08 that was 78 of 79 content pages, the
+  # accessibility statement's own footer among them.
+  #
+  # Write an internal target as the path a reader sees in the ADDRESS BAR,
+  # with a trailing slash ("accessibility/"), never the file path under
+  # docs/ ("accessibility.md"). Anything containing "://" is treated as
+  # external and passed through untouched. scripts/render_data.py checks
+  # both rules at build time, because the template renders nothing at all if
+  # this block is missing or mistyped.
+  footer_links:
+    - text: Feedback
+      url: https://forms.office.com/r/5a8RCi2YKP
+    - text: Accessibility
+      url: accessibility/
 
 theme:
   name: material

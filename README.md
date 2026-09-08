@@ -182,6 +182,17 @@ page's item set changes; test with a dry run with `GITHUB_TOKEN` set.
 the nightly run to the Anthropic path automatically; removing it switches
 back. Mind the GitHub Models 8,000-token request cap (`max_payload_chars`).
 
+**Change a footer link** — edit `extra.footer_links` in `mkdocs.yml`, not the
+`copyright` string. Write an internal target as the path a reader sees in the
+address bar with a trailing slash (`accessibility/`), never the file path
+under `docs/`; anything containing `://` is treated as external. The links are
+rendered by `overrides/partials/copyright.html` so they resolve correctly from
+every page depth, which a raw `<a href>` inside `copyright` cannot do: MkDocs
+ships that string verbatim, which is how the Accessibility link came to 404 on
+78 of 79 pages. `scripts/render_data.py` fails the build on a missing key or a
+`docs/`-style path, so a mistake here is loud rather than an invisibly dropped
+link. Build strict and commit.
+
 **Update the committee roster** — edit `data/committee.yaml`; for a new
 member, add their photo to `graphics/`, map it in
 `scripts/build_brand_assets.py`, and run that script; build strict, commit.

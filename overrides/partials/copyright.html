@@ -1,0 +1,54 @@
+{#-
+  Overrides material/templates/partials/copyright.html (Material 9.7.6,
+  pinned exactly in requirements.txt, so this copy can only drift on a
+  deliberate, reviewable version bump).
+
+  WHY THIS FILE EXISTS. The footer links used to live inside the `copyright`
+  string in mkdocs.yml as raw HTML. MkDocs inserts that value verbatim and
+  never rewrites it, and it is never rendered through Jinja either (probed
+  2026-09-08: a {{ ... }} placed inside `copyright` prints literally). So a
+  relative href shipped unchanged to every page: correct from the site root,
+  and pointing at a page that does not exist from anywhere else. That was 78
+  of 79 content pages serving an Accessibility link that 404ed, including the
+  accessibility statement's own footer. Nothing caught it, because
+  verify_links.py reads markdown under docs/ and never reads mkdocs.yml or
+  the built HTML.
+
+  Rendering the links here instead lets the `| url` filter resolve each one
+  against the page being built, which is base-address independent: it is
+  correct served from a domain root, from /aua-ai-hub/ on GitHub Pages, and
+  under `mkdocs serve`. It also repairs the 404 page, where MkDocs sets
+  base_url from site_url, which no string in mkdocs.yml could do.
+
+  READ THIS BEFORE "FIXING" IT. overrides/main.html carries the OPPOSITE
+  instruction: use config.site_url, never the page-relative `| url` filter.
+  That rule is real but specific to the announce banner, whose dismissal is
+  keyed to a hash of its rendered content, so the banner's markup must be
+  byte-identical on every page. The footer has no such constraint and the
+  opposite requirement. Changing this file to match main.html reintroduces
+  the 404.
+
+  The generator credit below is copied verbatim from Material's own partial.
+  Keep it, or the theme's attribution disappears from the whole site.
+-#}
+<div class="md-copyright">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight">
+      {{ config.copyright }}
+      {%- for link in config.extra.footer_links %}
+        &nbsp;|&nbsp;
+        {%- if "://" in link.url %}
+          <a href="{{ link.url }}">{{ link.text }}</a>
+        {%- else %}
+          <a href="{{ link.url | url }}">{{ link.text }}</a>
+        {%- endif %}
+      {%- endfor %}
+    </div>
+  {% endif %}
+  {% if not config.extra.generator == false %}
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  {% endif %}
+</div>
