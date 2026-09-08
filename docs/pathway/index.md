@@ -8,7 +8,7 @@ last_reviewed: 2026-09-01
 
 A self-paced pathway in three stages: short plain-language modules, pointers into the relevant material on this site and beyond, and a short self-check in each. Every module stands alone, and none requires math.
 
-The university's [AI Responsible Use Policy](../governance/policy.md) commits AUA to providing training resources on responsible AI use. This pathway is the AI Hub's contribution to that commitment, maintained by the Assistant Dean of AI in Medical Education.
+The university's [AI Responsible Use Policy](../governance/policy.md) commits AUA to providing training resources on responsible AI use. This pathway is the AI Hub's contribution to that commitment, maintained by the Associate Dean of AI in Medical Education.
 
 <img class="section-banner" src="../assets/section-pathway.svg" alt="">
 
