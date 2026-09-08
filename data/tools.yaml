@@ -233,7 +233,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Web browser with a built-in agent that can summarize, navigate, and act across your open tabs and accounts. Free to use, with higher limits on paid plans.
 
 # Verified 2026-07-28 from Perplexity's own pages (the Windows product
@@ -261,7 +261,7 @@
   cost: free
   governance_status: caution
   status_note: Self-hosted software with broad system access; it is intended for technically confident users who scope its permissions deliberately.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Open-source, self-hosted personal agent that connects a model of your choice to the messaging apps you already use. Free software; you supply the model, hardware, and judgment.
 
 - name: Elicit
@@ -459,7 +459,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Adaptive USMLE study platform whose lessons, flashcards, and quizzes adjust to performance, with a built-in tutoring chatbot.
 
 - name: Gamma
@@ -512,7 +512,7 @@
   cost: free
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Tool for downloading and running open-weights models on your own computer, through a command line or an official desktop chat app. The local app is free; the company separately sells an optional cloud service for models too large to run locally.
 
 # Cost and blurb updated 2026-07-28 (issue #28, owner approved): the
@@ -562,7 +562,7 @@
   cost: institutional
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Built into PowerPoint under the institutional Microsoft 365 license, where Microsoft now calls the feature Design Suggestions and delivers it through Copilot. Suggests layouts, imagery, and design treatments for the slide being edited, so an existing deck improves one slide at a time without leaving the file.
 
 - name: Canva
@@ -572,7 +572,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Design platform with prompt-based Magic Design features and a large asset library. Imports an existing PowerPoint deck for restyling and exports the result back to PowerPoint.
 
 - name: Beautiful.ai
@@ -582,7 +582,7 @@
   cost: paid
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Presentation tool whose built-in design rules keep slides tidy as content changes. Works in its own format but exports to PowerPoint cleanly.
 
 # --- Image Generation (owner approved 2026-06-12) ---------------------------
@@ -645,7 +645,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Google's creative studio for video and image generation, combining the Veo 3.1 and Gemini Omni video models with Nano Banana image generation. It absorbed Google's earlier ImageFX and Whisk tools.
 
 - name: Runway
@@ -665,7 +665,7 @@
   cost: freemium
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Video generator from the Chinese company Kuaishou. The Kling 3.0 family generates clips with native synchronized audio and multi-language lip sync, and ranks among the leading models in mid-2026 comparisons.
 
 - name: Hailuo
@@ -736,7 +736,7 @@
   cost: freemium
   governance_status: caution
   status_note: Voice cloning requires documented consent from the person whose voice is used.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: Speech synthesis, voice, music, and sound effect generation for narrating course material or producing audio versions of written content. The music model is trained on licensed data, with generated tracks cleared for commercial use.
 
 # Discovery survey additions (owner approved 2026-07-15): every
@@ -766,7 +766,7 @@
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply. Public preview; free-tier quotas have changed several times.
-  last_reviewed: 2026-08-04
+  last_reviewed: 2026-09-08
   blurb: "Google's development platform built around agents: an editor and a command-line tool plan and execute multi-step coding tasks using Gemini and other models. It replaced Google's earlier Gemini Command Line Interface for individual users in June 2026."
 
 - name: SciSpace
