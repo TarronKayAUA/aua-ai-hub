@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (13)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -347,20 +347,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.28619">From GenAI Virtual Patient Dialogue Logs to Teacher-Interpretable Process Evidence: A Learning Analytics Study in Higher Education</a>
-        <p class="news-card-summary">Learning analytics study extracting interpretable process evidence from generative AI virtual patient dialogue logs for medical history-taking assessment.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42670678?fc=20260609215449&amp;ff=20260901011346&amp;v=2.20.1">Practicing pediatric interviews with parents through conversational AI-based virtual patients: an observational study in Spanish undergraduate medical education</a>
-        <p class="news-card-summary">Observational study of Spanish medical students&#x27; acceptance and satisfaction with conversational AI-based virtual patients for pediatric interview practice.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">August 31, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42675315?fc=20260609215449&amp;ff=20260901093100&amp;v=2.20.1">Comparison of artificial intelligence and lecturers&#x27; grading in the evaluation of handwritten open-ended anatomy examinations</a>
         <p class="news-card-summary">ChatGPT aligned best with lecturer grading of handwritten anatomy exams, but AI-assisted grading requires human oversight and structured criteria for high-stakes assessments.</p>
@@ -383,10 +369,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03201-4">AI-derived carotid plaque vulnerability from B-mode ultrasound for cerebrovascular risk stratification: a multicenter cohort study</a>
+        <p class="news-card-summary">Multicenter study validates AI-derived carotid plaque vulnerability assessment from ultrasound as a tool for cerebrovascular risk stratification.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
@@ -634,20 +627,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Perspective on advancing clinical adoption of spatial omics and computational pathology methods in oncology practice.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">August 31, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87730">Generative Large Language Models in Mental Health Care Settings: Systematic Review and Meta-Analysis</a>
-        <p class="news-card-summary">Systematic review and meta-analysis of large language models in mental health care examining clinical usefulness, safety, and implementation readiness.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">August 31, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88441">Predicting Call Abandonment in a Health Care Call Center Using Nonpersonal Operational Data: Machine Learning Study</a>
-        <p class="news-card-summary">Machine learning study predicting call abandonment in health care call centers using anonymized operational data only.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -658,10 +637,18 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 7, 2026</span></div>
+        <a class="news-card-title" href="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses">AI models ran real businesses: They sent $12,431 in fake invoices, lost $3,200</a>
+        <p class="news-card-summary">Autonomous AI agents operating businesses made costly errors including generating fake invoices and losing money, highlighting real-world reliability challenges.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses/og.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">September 7, 2026</span></div>
@@ -900,20 +887,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">World Labs released Atlas, a spatial world model for artificial intelligence, designed to improve machine understanding of three-dimensional environments.</p>
       </div>
       <img class="news-card-thumb" src="https://www.worldlabs.ai/images/atlas-og.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.28626">Do large language models scrutinise what they review? A multimodal audit of scoring calibration, error detection, and author-identity effects</a>
-        <p class="news-card-summary">Audit of multimodal large language models as peer reviewers examining scoring calibration, error detection, and author-identity bias.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2608.28667">GreenBench: Benchmarking Energy Efficiency and Carbon Footprint of Open-Source LLM Inference on Apple Silicon</a>
-        <p class="news-card-summary">Benchmark and evaluation of large language model inference energy efficiency and carbon footprint on Apple Silicon.</p>
-      </div>
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">

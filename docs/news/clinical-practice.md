@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03201-4">AI-derived carotid plaque vulnerability from B-mode ultrasound for cerebrovascular risk stratification: a multicenter cohort study</a>
+    <p class="news-card-summary">Multicenter study validates AI-derived carotid plaque vulnerability assessment from ultrasound as a tool for cerebrovascular risk stratification.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
@@ -120,12 +127,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">The FDA&#x27;s TEMPO pilot program allows generative AI medical devices from companies including Cadence and Limbic to reach patients before obtaining formal marketing authorization.</p>
   </div>
   <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_1767433801-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.01832">Interpretable Symptom Vectors for Depression in a Large Language Model</a>
-    <p class="news-card-summary">Preprint demonstrates how large language models represent depressive symptoms as interpretable vectors, offering potential for nuanced mental health assessment.</p>
-  </div>
 </div>
 </div>

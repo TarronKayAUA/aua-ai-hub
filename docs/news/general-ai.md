@@ -18,9 +18,17 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses">AI models ran real businesses: They sent $12,431 in fake invoices, lost $3,200</a>
+    <p class="news-card-summary">Autonomous AI agents operating businesses made costly errors including generating fake invoices and losing money, highlighting real-world reliability challenges.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses/og.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">September 7, 2026</span></div>
@@ -120,13 +128,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://simonwillison.net/2026/Sep/3/gpt6-astra">GPT‑6 Astra</a>
     <p class="news-card-summary">OpenAI released GPT-6 Astra to limited organizations initially, rolling out to ChatGPT Plus, Pro, Business, and Enterprise users and the API at Claude Opus pricing.</p>
   </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release">OpenAI’s next big AI model has ‘entered the AGI era’</a>
-    <p class="news-card-summary">OpenAI releases GPT-6 Astra, described as a generational capability advance in cybersecurity, software engineering, science, and computer use.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS522_AGI_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
