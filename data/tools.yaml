@@ -548,12 +548,32 @@
 - name: Claude Design
   vendor: Anthropic
   category: presentations_design
-  url: https://claude.com/design
+  # claude.com/design 301-redirects here (checked 2026-09-08); the card links
+  # the destination so a reader is not bounced.
+  url: https://claude.com/product/design
   cost: paid
   governance_status: listed
-  status_note: Research preview on paid Claude plans; sign-in required.
-  last_reviewed: 2026-08-04
-  blurb: Design tool from Anthropic Labs that turns prompts and uploaded files into slides, one-pagers, and graphics. Imports PowerPoint files and exports finished work back to PowerPoint, PDF, or Canva.
+  # Corrected 2026-09-08 from "Research preview ... sign-in required", which
+  # was wrong on the first count and uninformative on the second. Anthropic's
+  # own product FAQ says "Claude Design is in beta on Claude Pro, Max, Team,
+  # and Enterprise plans" and "an Anthropic beta product"; the string
+  # "research preview" appears nowhere on the page, and Anthropic documents
+  # the two as different maturity stages, so the card understated it by a
+  # step. The access route is from the same page: "work directly in Claude
+  # Code with /design", plus "Start designing at claude.ai/design".
+  #
+  # A claim that this is off by default on Enterprise plans until an admin
+  # enables it was NOT included: the Help Center article it was sourced to
+  # returns 404 and it could not be confirmed from an Anthropic page.
+  status_note: Beta on paid Claude plans, used at claude.ai/design or from within Claude Code.
+  last_reviewed: 2026-09-08
+  # "from Anthropic Labs" dropped 2026-09-08: the word Labs no longer appears
+  # anywhere on the product page. The export clause is left as it stands,
+  # since PowerPoint, PDF and Canva are all still named there. A suggestion
+  # to widen the import clause to "PowerPoint, Word, and Excel" was NOT
+  # taken: neither Word nor Excel appears on the page, so it would have
+  # published an unverified claim.
+  blurb: Design tool from Anthropic that turns prompts and uploaded files into slides, one-pagers, and graphics. Imports PowerPoint files and exports finished work back to PowerPoint, PDF, or Canva.
 
 - name: PowerPoint Design Suggestions
   vendor: Microsoft
