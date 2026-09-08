@@ -33,7 +33,6 @@ OPEN_MODELS_MARKER = "<!-- render:open-models -->"
 GUIDE_VIDEOS_LOCAL_MARKER = "<!-- render:guide-videos:local -->"
 CONFERENCES_MARKER = "<!-- render:conferences -->"
 OPPORTUNITIES_MARKER = "<!-- render:opportunities -->"
-LAST_UPDATED_MARKER = "<!-- render:last-updated -->"
 PROMPTS_MARKER = "<!-- render:prompts -->"
 PROMPT_RESOURCES_MARKER = "<!-- render:prompt-resources -->"
 SKILLS_MARKER = "<!-- render:skills -->"
@@ -350,6 +349,7 @@ def _render_open_models(config) -> str:
 
     lines = []
     rendered = 0
+    dated = 0
     per_modality = {}
     for modality, label in MODALITY_LABELS.items():
         group = by_modality.get(modality, [])
@@ -373,6 +373,17 @@ def _render_open_models(config) -> str:
         lines.append("")
         body = ['<div class="tool-grid">']
         for entry in sorted(group, key=lambda m: m["name"].lower()):
+            # docs/tools/index.md promises that each entry "shows the date
+            # its license and description were last checked". Every entry
+            # has carried last_reviewed since launch but no card ever
+            # rendered it, so the page stated something false about itself
+            # (found 2026-09-08). Raise rather than print "Checked None":
+            # a page that promises a date must not ship one that is absent.
+            checked = entry.get("last_reviewed")
+            if not checked:
+                raise ValueError(
+                    f"render_data hook: open model {entry['name']!r} has no "
+                    f"last_reviewed, but the page promises a checked date")
             body.append(
                 '<div class="tool-card">\n'
                 '  <div class="tool-card-head">'
@@ -380,9 +391,11 @@ def _render_open_models(config) -> str:
                 f'  <div class="tool-card-sub">{entry["vendor"]}'
                 f'<span class="cost-chip">{entry["license"]}</span></div>\n'
                 f'  <p class="tool-card-blurb">{entry["blurb"]}</p>\n'
+                f'  <p class="tool-card-checked">Checked {checked}</p>\n'
                 "</div>"
             )
             rendered += 1
+            dated += 1
         body.append("</div>")
         for chunk in body:
             for line in chunk.split("\n"):
@@ -395,8 +408,14 @@ def _render_open_models(config) -> str:
         print(f"  {label:<16}: {count}")
     print(f"  cards rendered: {rendered} (cross-check "
           f"{'ok' if rendered == len(models) else 'MISMATCH'})")
+    print(f"  checked dates : {dated} (cross-check "
+          f"{'ok' if dated == rendered else 'MISMATCH'})")
     if rendered != len(models):
         raise AssertionError("render_data hook: open models count mismatch")
+    if dated != rendered:
+        raise AssertionError(
+            f"render_data hook: {rendered} open model cards rendered but "
+            f"{dated} carry a checked date; the page promises one on each")
     return "\n".join(lines)
 
 
@@ -1319,7 +1338,15 @@ def on_page_markdown(markdown, page, config, files):
             PROMPT_RESOURCES_MARKER,
             _render_prompt_resources_general(resource_groups),
         )
-    if src == "index.md" and LAST_UPDATED_MARKER in markdown:
-        stamp = date.today().strftime("%B %d, %Y").replace(" 0", " ")
-        return markdown.replace(LAST_UPDATED_MARKER, stamp)
+    # The homepage's "Last updated" stamp was removed on 2026-09-08 (owner
+    # approved, external review). It printed date.today(), so it recorded
+    # when the site was BUILT, not when anything changed: 144 of the last
+    # 479 commits rebuilt and deployed with no pipeline run behind them, and
+    # it advanced on every one. A freshness claim that cannot go stale
+    # cannot warn anyone, and it read as a content date to a reader.
+    #
+    # Nothing replaced it because nothing needs to. The Latest items block
+    # above it already prints the five newest item dates, is pipeline
+    # generated, and therefore visibly freezes when the pipeline stops,
+    # which is the honest signal the stamp was pretending to be.
     return markdown

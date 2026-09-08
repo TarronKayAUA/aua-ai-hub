@@ -819,6 +819,17 @@
   color: var(--md-default-fg-color--light);
 }
 
+/* Entry provenance on tool and open-weights cards. "Checked" deliberately,
+   never "reviewed": the weekly content watch may set data/tools.yaml's
+   last_reviewed itself, so the label must not imply a person looked
+   (2026-09-08). Sits under the blurb at the metadata type-scale floor of
+   0.68rem set in the 2026-07-09 type pass. */
+.md-typeset .tool-card-checked {
+  margin: 0.45rem 0 0;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
 /* Freshness footer on pages enrolled in prose page review: quiet,
    separated from content, but present (owner approved 2026-07-09). */
 .md-typeset .page-reviewed {

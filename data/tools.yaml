@@ -217,9 +217,12 @@
   url: https://manus.im
   cost: freemium
   governance_status: listed
+  # Keep this on one line. It was rewritten in place on 2026-09-01 and the
+  # previous version's last two lines were left behind indented beneath it,
+  # so YAML folded them into the same plain scalar and published a
+  # contradictory tail ("Independent again since August 2026 ... will soon
+  # resume operating as an independent company"). Removed 2026-09-08.
   status_note: Listed for discovery, not endorsement; the policy's data rules apply. Independent again since August 2026 after Chinese regulators blocked Meta's acquisition; existing accounts may have changed during the separation.
-    will soon resume operating as an independent company; account
-    changes may be required during the transition.
   last_reviewed: 2026-09-01
   blurb: General-purpose autonomous agent that breaks a goal into steps and executes them in a cloud workspace, producing research, documents, slides, and simple applications.
 

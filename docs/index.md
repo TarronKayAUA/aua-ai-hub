@@ -146,7 +146,3 @@ More on the [Videos page](news/videos.md), and episodes on the [Podcasts page](n
 ## Announcements
 
 Institutional updates and committee polls live on the [Announcements page](announcements/index.md).
-
----
-
-Last updated: <!-- render:last-updated -->
