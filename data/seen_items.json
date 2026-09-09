@@ -32563,6 +32563,117 @@
    "score": 2.0,
    "thumbnail": "https://i4.ytimg.com/vi/O_EWbnkjXdk/hqdefault.jpg",
    "display_title": "AI applications in weather prediction"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/991977/suno-releases-its-first-ai-music-model-made-with-record-industry-help",
+   "title_hash": "89bb525bdc8e85424499e877be2fbbb6",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; music generation unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes",
+   "title_hash": "951dc5f985e6a0889763bc1f8b618892",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": true,
+   "title": "OpenAI’s sly mathematical breakthrough sends a chill through academia",
+   "source": "The Verge AI",
+   "published": "2026-09-09T21:16:34+00:00",
+   "summary": "OpenAI announced progress on a Millennium Prize problem in mathematics, demonstrating AI capability in advanced mathematical research with implications for academic fields.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292626872.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.theverge.com/tech/992919/apple-siri-ai-audio-intelligence-privacy",
+   "title_hash": "e128191f15751fcdcd633f947b557002",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; consumer device privacy features not relevant to medical education or practice"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e98766",
+   "title_hash": "d505422ec6488dc55e3644829ba264e9",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": true,
+   "title": "AI-Assisted Angoff Standard Setting for Multiple-Choice Examinations in Medical Education: Comparative Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-09T20:30:16+00:00",
+   "summary": "Study examines whether large language models can assist with the Angoff standard-setting method for determining passing scores on medical education multiple-choice exams.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/six-chinese-ai-firms-accused-of-aggressively-copying-us-frontier-models",
+   "title_hash": "377ad7c3cb800c02ef832eb481a6ecb5",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "industry and policy news without direct relevance to medical educators or practitioners"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e90270",
+   "title_hash": "6574b03f717abbd0c3768caded477fc0",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; healthcare policy and workforce reform without AI relevance"
+  },
+  {
+   "url": "https://www.theverge.com/tech/992766/apple-iphone-18-pro-reference-image",
+   "title_hash": "3b22cffb18dbac8601c40bcd91f4a16b",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "consumer device feature; not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wble79/why_the_hell_is_lm_studio_making_lm_studio_so",
+   "title_hash": "cc6d518b31b62039f3d08bbba52822da",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "community meta-discussion about software usability; not substantive technical content"
+  },
+  {
+   "url": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and",
+   "title_hash": "7694a97d588608b3ae90074bb57ff188",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "speculative commentary on unreleased models lacking substantive analysis"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42714583?fc=20260609215449&ff=20260909183437&v=2.20.1",
+   "title_hash": "d378ac49447a6fb1cdd0df2230cb02ea",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "epidemiology study of health risk factors; machine learning application to public health policy rather than medical education or clinical deployment"
+  },
+  {
+   "url": "https://blog.hofstede.it/bespoke-a-programming-language-for-people-who-say-please",
+   "title_hash": "0b8148c89a143851f3161fbe95dd4f5a",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "niche programming language tool; no relevance to medical education or practice"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=kuGjypoJKwk",
+   "title_hash": "24c83b5e38d82415c7018443bc2623aa",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=n-dqdVMwoas",
+   "title_hash": "38c07f5f02fad6701652b2c939d839a0",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Model-Month-Is-Off-to-a-Blistering-Start-e3ok1na",
+   "title_hash": "6658312d4c541e601680fb5b71ec8a3e",
+   "first_seen": "2026-09-09T22:34:37.132498+00:00",
+   "kept": false,
+   "reason": "daily news recap with no standout episode distinction; routine model announcement coverage"
   }
  ],
  "digests": [

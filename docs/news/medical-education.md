@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98766">AI-Assisted Angoff Standard Setting for Multiple-Choice Examinations in Medical Education: Comparative Study</a>
+    <p class="news-card-summary">Study examines whether large language models can assist with the Angoff standard-setting method for determining passing scores on medical education multiple-choice exams.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1">Current Landscape of Curriculum Development and Implementation in Medical Artificial Intelligence: A Scoping Review</a>
     <p class="news-card-summary">A scoping review finds medical AI education programs are nascent and calls for accelerated curriculum development, enhanced practical training, and stronger evaluation systems.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42702837?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1">&#x27;Apply caution&#x27; Medical educator perspectives on undergraduate students using AI in reflection: a qualitative study</a>
-    <p class="news-card-summary">Qualitative study of medical educators identifies ethical and pedagogical concerns about students using generative AI for professional reflection.</p>
   </div>
 </div>
 </div>

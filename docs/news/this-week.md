@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 51 items"
+??? abstract "Show the 50 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (21)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (20)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98766">AI-Assisted Angoff Standard Setting for Multiple-Choice Examinations in Medical Education: Comparative Study</a>
+        <p class="news-card-summary">Study examines whether large language models can assist with the Angoff standard-setting method for determining passing scores on medical education multiple-choice exams.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
@@ -331,20 +338,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42683094?fc=20260609215449&amp;ff=20260902152408&amp;v=2.20.1">Readiness and Perception Toward Artificial Intelligence Among Undergraduate Medical Students at a Tertiary Care Teaching Institute: A Cross-Sectional Study</a>
-        <p class="news-card-summary">A cross-sectional study assessed undergraduate medical students&#x27; readiness and perceptions toward artificial intelligence in healthcare and education.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42682551?fc=20260609215449&amp;ff=20260902152408&amp;v=2.20.1">AI-generated videos in medical science popularization and education: a scoping review</a>
-        <p class="news-card-summary">A scoping review synthesized evidence on AI-generated videos for public, patient, and medical student education, finding few studies with considerable heterogeneity and insufficient standardization.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
@@ -390,9 +383,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
@@ -651,20 +644,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Researchers develop a Markov decision process framework for personalized follow-up scheduling in type 2 diabetes care, balancing monitoring frequency, delivery mode, health outcomes, and resource use.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e82540">Automatic Kidney Image Segmentation During Robot-Assisted Partial Nephrectomy Using a Deep Learning Model Based on a Multiannotator Dataset: Model Development and Validation Study</a>
-        <p class="news-card-summary">A deep learning model for real-time kidney image segmentation during robot-assisted partial nephrectomy was developed and validated using a multiannotator dataset to enable augmented reality guidance.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e89981">A Clinical AI-Based System (MoodMon) for Affective Disorders: Algorithm Development and Validation</a>
-        <p class="news-card-summary">MoodMon, an AI-based smartphone system using speech acoustic features, was developed and validated to detect mood changes in patients with major depressive disorder and bipolar disorder.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 2, 2026</span></div>
@@ -682,10 +661,18 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (14)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes">OpenAI’s sly mathematical breakthrough sends a chill through academia</a>
+        <p class="news-card-summary">OpenAI announced progress on a Millennium Prize problem in mathematics, demonstrating AI capability in advanced mathematical research with implications for academic fields.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292626872.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 9, 2026</span></div>
@@ -926,14 +913,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK255_Google_Gemini_B_474198.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/trump-may-be-forced-to-reveal-secret-rules-feds-use-for-ai-safety-testing">Trump may be forced to reveal secret rules feds use for AI safety testing</a>
-        <p class="news-card-summary">A lawsuit alleges that secret federal AI safety testing rules may conceal corruption, arguing for public disclosure of frontier model review procedures.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2250714805-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 2, 2026</span></div>
@@ -941,14 +920,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">WebLLM provides a high-performance in-browser inference engine for large language models.</p>
       </div>
       <img class="news-card-thumb" src="https://opengraph.githubassets.com/13ca5c82c1e87d3a6a42e37488f35a796f50f6af452de27bb2801312577645e4/mlc-ai/web-llm" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/ai-engineer-skills">AI Efficiency Could Cost Us the Next Generation of Experts</a>
-        <p class="news-card-summary">An analysis argues that pursuing extreme AI efficiency may undermine the development of domain expertise and human oversight needed for safe system operation.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/human-and-robotic-hands-share-a-caliper-over-technical-engineering-blueprints.png?id=67702640&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
