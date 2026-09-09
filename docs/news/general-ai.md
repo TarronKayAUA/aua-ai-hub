@@ -18,9 +18,17 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/ai-watermark-text-anthropic-openai">AI Models Are Watermarking Text, Will You Notice?</a>
+    <p class="news-card-summary">Anthropic, Google, and OpenAI are implementing text watermarks in AI model outputs to identify AI-generated content and detect misuse.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-cursor-symbol-for-editing-text-set-against-a-green-background-with-sporadic-pieces-highlighted-in-r.jpg?id=67710314&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 8, 2026</span></div>
@@ -125,12 +133,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">OpenAI released GPT-6 Astra with reported significant capability improvements, though initial rollout experienced access issues for paying users.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285138968.jpg?quality=90&amp;strip=all&amp;crop=0%2C12.219817290162%2C100%2C75.560365419677&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.02896">PiPMRE: A Pipeline Based on Language Model for Medical Relation Extraction</a>
-    <p class="news-card-summary">Language model approach improves extraction of entities and relations from medical text compared to prior sequence tagging methods.</p>
-  </div>
 </div>
 </div>

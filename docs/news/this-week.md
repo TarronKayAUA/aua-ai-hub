@@ -18,10 +18,31 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (10)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (10)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e102697">How to Conduct Usability Testing of Medical Education Simulations: Methods Tutorial Using a Telemedicine Simulation for Maternal Care</a>
+        <p class="news-card-summary">Methods tutorial on conducting usability testing of simulation-based medical education tools to improve realism and learning outcomes.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92486">Effect of Large Language Model, Powered Virtual Standardized Patients on History-Taking Among Undergraduate Medical Students: Propensity-Matched Cohort Study</a>
+        <p class="news-card-summary">Propensity-matched cohort study found that large language model powered virtual standardized patients improved history-taking performance in undergraduate medical students.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03197-x">A global framework for artificial intelligence education in medicine: international working group recommendations</a>
+        <p class="news-card-summary">International working group published recommendations for a global framework on artificial intelligence education in medical schools and training programs.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 8, 2026</span></div>
@@ -275,13 +296,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42680939?fc=20260609215449&amp;ff=20260902084734&amp;v=2.20.1">SlideChat is a multimodal generative artificial intelligence assistant for whole-slide computational pathology across cancer types</a>
-        <p class="news-card-summary">SlideChat is a multimodal AI assistant that analyzes whole-slide pathology images across cancer types, addressing a gap in AI tools for gigapixel-scale clinical image interpretation.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
@@ -341,10 +355,26 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 31 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/09/09/ai-medicine-assisted-physicians-research-autonomy">Opinion: Autonomous AI will beat AI-assisted physicians at some medical tasks by 2030</a>
+        <p class="news-card-summary">Opinion piece argues that autonomous AI systems will likely exceed both unaided physicians and AI-assisted physicians on five core cognitive medical tasks by 2030.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_549878230-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/09/09/ai-healthcare-limitations-emergency-room-study-medical-scribe-impact">STAT+: Can AI fix health care? In the chaos of emergency rooms, the technology comes up short</a>
+        <p class="news-card-summary">Investigation of AI deployment in emergency departments shows the technology falls short of industry predictions in real-world clinical settings.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/20260825_kaf_baugh_003-1-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 9, 2026</span></div>
@@ -364,6 +394,20 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03111-5">Impact of LLM assistance on physician decision-making: a multi-country randomized controlled trial</a>
         <p class="news-card-summary">A multi-country randomized controlled trial measures how large language model assistance changes physician clinical decision-making across different healthcare contexts.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03194-0">PREDICT-GBM: A multicenter platform advancing personalized glioblastoma radiotherapy planning</a>
+        <p class="news-card-summary">Multicenter platform designed to advance personalized glioblastoma radiotherapy planning using artificial intelligence.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04647-5">Consensus framework for the validation of generative AI: call for collaborators on the Validation Accords</a>
+        <p class="news-card-summary">Researchers published a consensus framework and call for collaboration on validating generative AI in clinical applications.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-documentation">
@@ -576,8 +620,16 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://spectrum.ieee.org/ai-watermark-text-anthropic-openai">AI Models Are Watermarking Text, Will You Notice?</a>
+        <p class="news-card-summary">Anthropic, Google, and OpenAI are implementing text watermarks in AI model outputs to identify AI-generated content and detect misuse.</p>
+      </div>
+      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-cursor-symbol-for-editing-text-set-against-a-green-background-with-sporadic-pieces-highlighted-in-r.jpg?id=67710314&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 8, 2026</span></div>
@@ -810,23 +862,33 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/human-and-robotic-hands-share-a-caliper-over-technical-engineering-blueprints.png?id=67702640&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://www.baseten.co/blog/the-efficient-frontier-of-llm-inference">The efficient frontier of LLM inference</a>
-        <p class="news-card-summary">Analysis of trade-offs between speed, cost, and quality in large language model inference optimization strategies.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.datocms-assets.com/104802/1788302073-efficient-frontier-image3.png?auto=compress%2Cformat&amp;fit=crop&amp;h=630&amp;q=75&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 14 videos"
+??? abstract "Show the 13 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=UzvTJSuFsWA" target="_blank" rel="noopener" title="Gemini 3.8 Flash Is HERE, Testing Google’s BEST Model Yet!">
+      <img src="https://i2.ytimg.com/vi/UzvTJSuFsWA/hqdefault.jpg" alt="Video: Gemini 3.8 Flash hands-on testing across multiple tasks" loading="lazy">
+      <span class="video-card-title">Gemini 3.8 Flash hands-on testing across multiple tasks</span>
+      <span class="video-card-meta">Bijan Bowen, September 9, 2026</span>
+      <span class="video-card-desc">Hands-on testing of Google&#x27;s Gemini 3.8 Flash model across multiple tasks including code generation, browser automation, and interactive applications.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=6AuYLbHqirk" target="_blank" rel="noopener" title="Why won’t AI agents just follow the rules?">
+      <img src="https://i3.ytimg.com/vi/6AuYLbHqirk/hqdefault.jpg" alt="Video: AI agents and constraint adherence" loading="lazy">
+      <span class="video-card-title">AI agents and constraint adherence</span>
+      <span class="video-card-meta">IBM Technology, September 9, 2026</span>
+      <span class="video-card-desc">Discussion of how AI agents reason around or circumvent specified rules and constraints, relevant to AI safety and reliability in deployment.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=T2dnchLabZQ" target="_blank" rel="noopener" title="DeepSeek V4.1 Flash Is INSANELY GOOD! Fast, Cheap, Powerful! (Fully Tested)">
+      <img src="https://i1.ytimg.com/vi/T2dnchLabZQ/hqdefault.jpg" alt="Video: DeepSeek V4.1 Flash performance and capability testing" loading="lazy">
+      <span class="video-card-title">DeepSeek V4.1 Flash performance and capability testing</span>
+      <span class="video-card-meta">WorldofAI, September 9, 2026</span>
+      <span class="video-card-desc">Performance testing of DeepSeek V4.1 Flash model with evaluation of speed, cost efficiency, and capability across benchmark tasks.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=U0aToL5C-bQ" target="_blank" rel="noopener" title="AlphaGenome Atlas: Understanding the human genome">
       <img src="https://i2.ytimg.com/vi/U0aToL5C-bQ/hqdefault.jpg" alt="Video: AlphaGenome Atlas: predicting effects of human genome variants" loading="lazy">
       <span class="video-card-title">AlphaGenome Atlas: predicting effects of human genome variants</span>
@@ -886,30 +948,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">Claude Fable 5.1 technical analysis</span>
       <span class="video-card-meta">Two Minute Papers, September 3, 2026</span>
       <span class="video-card-desc">Technical analysis of Claude Fable 5.1 capabilities and behavior patterns beyond release announcements.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=eHsuG3bPiJ8" target="_blank" rel="noopener" title="Stop Paying for ElevenLabs? NEW #1 Realtime AI Voice Inworld TTS-2">
-      <img src="https://i2.ytimg.com/vi/eHsuG3bPiJ8/hqdefault.jpg" alt="Video: Inworld TTS-2 real-time voice performance and comparison" loading="lazy">
-      <span class="video-card-title">Inworld TTS-2 real-time voice performance and comparison</span>
-      <span class="video-card-meta">WorldofAI, September 2, 2026</span>
-      <span class="video-card-desc">Hands-on comparison of Inworld TTS-2 against commercial alternatives, demonstrating real-time text-to-speech capabilities and relative performance rankings.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=qRNZMGc7TMc" target="_blank" rel="noopener" title="GPT-6 Astra Just Went CRITICAL...">
-      <img src="https://i2.ytimg.com/vi/qRNZMGc7TMc/hqdefault.jpg" alt="Video: OpenAI Astra model cybersecurity risk assessment" loading="lazy">
-      <span class="video-card-title">OpenAI Astra model cybersecurity risk assessment</span>
-      <span class="video-card-meta">Wes Roth, September 2, 2026</span>
-      <span class="video-card-desc">Report on OpenAI&#x27;s assessment of its upcoming Astra model against its Preparedness Framework cybersecurity thresholds and implications for model safety classification.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=epogfA_0R4E" target="_blank" rel="noopener" title="Anthropic went CRAZY (Mythos/Fable 5.1)">
-      <img src="https://i2.ytimg.com/vi/epogfA_0R4E/hqdefault.jpg" alt="Video: Anthropic Fable 5.1 hands-on demonstration and testing" loading="lazy">
-      <span class="video-card-title">Anthropic Fable 5.1 hands-on demonstration and testing</span>
-      <span class="video-card-meta">Matthew Berman, September 1, 2026</span>
-      <span class="video-card-desc">Hands-on demonstration of Anthropic&#x27;s Mythos and Fable 5.1 models showing agent capabilities, benchmarks, and real-world test applications.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=9Z9rPZavjUU" target="_blank" rel="noopener" title="Claude Fable 5.1 Is INSANE, Hands-On With the BEST Model Yet!">
-      <img src="https://i2.ytimg.com/vi/9Z9rPZavjUU/hqdefault.jpg" alt="Video: Claude Fable 5.1 technical testing and benchmark review" loading="lazy">
-      <span class="video-card-title">Claude Fable 5.1 technical testing and benchmark review</span>
-      <span class="video-card-meta">Bijan Bowen, September 1, 2026</span>
-      <span class="video-card-desc">Technical hands-on testing of Claude Fable 5.1 across benchmarks, browser automation, and coding tasks with performance analysis.</span>
     </a>
     </div>
 

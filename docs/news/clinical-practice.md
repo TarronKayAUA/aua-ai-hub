@@ -18,9 +18,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/09/09/ai-medicine-assisted-physicians-research-autonomy">Opinion: Autonomous AI will beat AI-assisted physicians at some medical tasks by 2030</a>
+    <p class="news-card-summary">Opinion piece argues that autonomous AI systems will likely exceed both unaided physicians and AI-assisted physicians on five core cognitive medical tasks by 2030.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_549878230-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/09/09/ai-healthcare-limitations-emergency-room-study-medical-scribe-impact">STAT+: Can AI fix health care? In the chaos of emergency rooms, the technology comes up short</a>
+    <p class="news-card-summary">Investigation of AI deployment in emergency departments shows the technology falls short of industry predictions in real-world clinical settings.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/20260825_kaf_baugh_003-1-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 9, 2026</span></div>
@@ -40,6 +56,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03111-5">Impact of LLM assistance on physician decision-making: a multi-country randomized controlled trial</a>
     <p class="news-card-summary">A multi-country randomized controlled trial measures how large language model assistance changes physician clinical decision-making across different healthcare contexts.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03194-0">PREDICT-GBM: A multicenter platform advancing personalized glioblastoma radiotherapy planning</a>
+    <p class="news-card-summary">Multicenter platform designed to advance personalized glioblastoma radiotherapy planning using artificial intelligence.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04647-5">Consensus framework for the validation of generative AI: call for collaborators on the Validation Accords</a>
+    <p class="news-card-summary">Researchers published a consensus framework and call for collaboration on validating generative AI in clinical applications.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-documentation">
@@ -97,34 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">ECG-based detection of occlusion myocardial infarction: a dedicated deep neural network versus multimodal large language models and physicians - a retrospective diagnostic accuracy study</a>
     <p class="news-card-summary">Task-specific deep neural networks outperformed general-purpose large language models for electrocardiogram-based occlusion myocardial infarction detection, with models showing clinically important limitations.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03108-0">From feasibility to neuroanatomic validity of remote cognitive smartphone assessments in early Alzheimer’s disease</a>
-    <p class="news-card-summary">Remote cognitive assessments via smartphone show neuroanatomic validity for detecting early Alzheimer&#x27;s disease, supporting feasibility of smartphone-based cognitive monitoring.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03131-1">Senescence-aware filtering facilitates robust prediction of cancer immunotherapy outcomes</a>
-    <p class="news-card-summary">Senescence-aware filtering improves machine learning prediction accuracy for cancer immunotherapy outcomes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03177-1">Unsupervised machine learning for placental disease using cell spatial organization</a>
-    <p class="news-card-summary">Unsupervised machine learning applied to spatial cell organization in placental tissue enables detection of placental disease.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03198-w">Exploring generalizability and explainability of LLMs in classifying clinically rated suicidal ideation using heterogeneous data</a>
-    <p class="news-card-summary">Peer-reviewed study examines how large language models generalize across heterogeneous data when classifying clinically rated suicidal ideation and explores model explainability for this application.</p>
   </div>
 </div>
 </div>

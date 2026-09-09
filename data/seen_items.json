@@ -1,80 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uswlq8/training_an_llm_from_scratch_on_1800s_texts_160gb",
-   "title_hash": "0bc97aae8d6f0f8baa8f1821a1d441d0",
-   "first_seen": "2026-07-11T06:27:48.574541+00:00",
-   "kept": false,
-   "reason": "community project with no significance for medical educators; not a model release, benchmark, or capability advancement with broad relevance"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1utb6io/qwen36_35ba3b_q8_0_no_kv_quant_single_prompt_in",
-   "title_hash": "db0b0ee77eca22d7e8f516d01c580723",
-   "first_seen": "2026-07-11T09:49:52.240760+00:00",
-   "kept": false,
-   "reason": "forum thread about model quantization tinkering; minor technical discussion without broader significance"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02954-2",
-   "title_hash": "16ec08e2e07c4b5592f60da86ad2801c",
-   "first_seen": "2026-07-11T09:49:52.240760+00:00",
-   "kept": true,
-   "title": "Passive early screening for Alzheimer’s disease and related dementias using EHR comorbidity patterns",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-11T00:00:00+00:00",
-   "summary": "Peer-reviewed study describes passive screening for Alzheimer's disease and related dementias using machine learning patterns in electronic health records.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02646-x",
-   "title_hash": "be403e11b39cf4dac6db3510e9ca06b3",
-   "first_seen": "2026-07-11T09:49:52.240760+00:00",
-   "kept": true,
-   "title": "Single lead electrocardiographic detection of left ventricular systolic dysfunction in pediatric and congenital heart disease",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-11T00:00:00+00:00",
-   "summary": "Peer-reviewed study reports machine learning detection of left ventricular systolic dysfunction from single-lead electrocardiograms in pediatric and congenital heart disease.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42432646?fc=20260609215449&ff=20260711054952&v=2.20.0",
-   "title_hash": "21115dd1fb897ddc290353a72bf5cdde",
-   "first_seen": "2026-07-11T09:49:52.240760+00:00",
-   "kept": true,
-   "title": "From hype to reality: the feasibility, dilemmas, and solutions of Gen AI in medical education from students' perspectives",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-10T10:00:00+00:00",
-   "summary": "Peer-reviewed study finds medical students accept generative AI in education based on perceived feasibility and usefulness rather than ethical concerns, though AI cannot yet replace human teachers.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42431658?fc=20260609215449&ff=20260711054952&v=2.20.0",
-   "title_hash": "a5211c8f4b0f3a6456f401219086e709",
-   "first_seen": "2026-07-11T09:49:52.240760+00:00",
-   "kept": false,
-   "reason": "domain application study with narrow scope; machine learning applied to antenatal care dropout prediction in one region"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42431535?fc=20260609215449&ff=20260711054952&v=2.20.0",
-   "title_hash": "ff0dee8545c74fc30b1af520d3e03890",
-   "first_seen": "2026-07-11T09:49:52.240760+00:00",
-   "kept": false,
-   "reason": "epidemiology study; no artificial intelligence methods or focus"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42431526?fc=20260609215449&ff=20260711054952&v=2.20.0",
-   "title_hash": "cb753aa39c54b2996d64a6ce53ab25fa",
-   "first_seen": "2026-07-11T09:49:52.240760+00:00",
-   "kept": false,
-   "reason": "environmental health study; no artificial intelligence methods or focus"
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42434788?fc=20260609215449&ff=20260711095618&v=2.20.0",
    "title_hash": "880513c24403cf7d0ac74075f991bc28",
    "first_seen": "2026-07-11T13:56:18.374878+00:00",
@@ -32193,6 +32119,239 @@
    "first_seen": "2026-09-09T04:46:39.774338+00:00",
    "kept": false,
    "reason": "speculation about unreleased model and unclear evaluation; daily news show recap format"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e102697",
+   "title_hash": "b44382dbb7f090ca9068a0ed4c9ef88e",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "How to Conduct Usability Testing of Medical Education Simulations: Methods Tutorial Using a Telemedicine Simulation for Maternal Care",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-09T12:15:03+00:00",
+   "summary": "Methods tutorial on conducting usability testing of simulation-based medical education tools to improve realism and learning outcomes.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/991956/student-ai-use-scores-oecd-pisa",
+   "title_hash": "4f6cddda72e5d2d8ee642733a3acf341",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "general education finding not specific to medical education and of limited relevance to clinical educators"
+  },
+  {
+   "url": "https://spectrum.ieee.org/ai-watermark-text-anthropic-openai",
+   "title_hash": "904286bc1165e3f582fe4498168145b7",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "AI Models Are Watermarking Text, Will You Notice?",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-09-09T12:00:04+00:00",
+   "summary": "Anthropic, Google, and OpenAI are implementing text watermarks in AI model outputs to identify AI-generated content and detect misuse.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-cursor-symbol-for-editing-text-set-against-a-green-background-with-sporadic-pieces-highlighted-in-r.jpg?id=67710314&width=980",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e92486",
+   "title_hash": "b5e9012191fcb060d028bc8fafc23d3f",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "Effect of Large Language Model, Powered Virtual Standardized Patients on History-Taking Among Undergraduate Medical Students: Propensity-Matched Cohort Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-09T12:00:02+00:00",
+   "summary": "Propensity-matched cohort study found that large language model powered virtual standardized patients improved history-taking performance in undergraduate medical students.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/man-told-chatgpt-he-was-feeling-delusional-chatgpt-insisted-he-was-jesus",
+   "title_hash": "619b27a1d7ab77cca3a9ee97eea65612",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "drama coverage and mental health crisis, not substantive AI safety analysis"
+  },
+  {
+   "url": "https://spectrum.ieee.org/china-ai-chatbot-regulation",
+   "title_hash": "e241c27e2918e7b45aa92b723cb0476f",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "companion bot regulation story without medical education or clinical practice relevance"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/991927/anthropic-ai-kill-all-humans",
+   "title_hash": "6086ddc61dee4a60f8eb384cdb1bef0c",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "speculation about existential risk without substantive technical or policy analysis"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/fortnight-in-medicine",
+   "title_hash": "de2f642e3d45778977edc2e41460bd76",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "insufficient information and no artificial intelligence content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wbfrut/deepseek_has_soft_retired_deepseek_v4_pro",
+   "title_hash": "9b9230bd1c9ff0347db5ada6b8817fbe",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "minor model version and discontinuation announcement without broader significance"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/09/ai-medicine-assisted-physicians-research-autonomy",
+   "title_hash": "3fa7a9fad1744e5f17488c81a517daf3",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "Opinion: Autonomous AI will beat AI-assisted physicians at some medical tasks by 2030",
+   "source": "STAT News AI",
+   "published": "2026-09-09T08:30:00+00:00",
+   "summary": "Opinion piece argues that autonomous AI systems will likely exceed both unaided physicians and AI-assisted physicians on five core cognitive medical tasks by 2030.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_549878230-645x645.jpeg",
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/09/ai-healthcare-limitations-emergency-room-study-medical-scribe-impact",
+   "title_hash": "789f411499c9f366c1cb393c2ffdb166",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "STAT+: Can AI fix health care? In the chaos of emergency rooms, the technology comes up short",
+   "source": "STAT News AI",
+   "published": "2026-09-09T08:30:00+00:00",
+   "summary": "Investigation of AI deployment in emergency departments shows the technology falls short of industry predictions in real-world clinical settings.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/09/20260825_kaf_baugh_003-1-645x645.jpg",
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/09/ai-medicine-doctors-replacement-debate-ama-ceo",
+   "title_hash": "219da7e8ef7f732dac4d2574eaf18e80",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "opinion without new information or instructive analysis"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03197-x",
+   "title_hash": "11e620eb2a462a992f669c067c26488f",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "A global framework for artificial intelligence education in medicine: international working group recommendations",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-09T00:00:00+00:00",
+   "summary": "International working group published recommendations for a global framework on artificial intelligence education in medical schools and training programs.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03194-0",
+   "title_hash": "55ef585cdb334723e8d837b56952cdc1",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "PREDICT-GBM: A multicenter platform advancing personalized glioblastoma radiotherapy planning",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-09T00:00:00+00:00",
+   "summary": "Multicenter platform designed to advance personalized glioblastoma radiotherapy planning using artificial intelligence.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04647-5",
+   "title_hash": "f2b9208908a03a7743aca5daadea8968",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "Consensus framework for the validation of generative AI: call for collaborators on the Validation Accords",
+   "source": "Nature Medicine",
+   "published": "2026-09-09T00:00:00+00:00",
+   "summary": "Researchers published a consensus framework and call for collaboration on validating generative AI in clinical applications.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04685-z",
+   "title_hash": "c05d064a1954f73f989a8060b39e5125",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "editorial opinion without artificial intelligence focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04607-z",
+   "title_hash": "ec4880fe71320be8f00119bfc4a1c9d5",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "clinical trial result unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04615-z",
+   "title_hash": "e723692e30a592dfc1264ed44e3d4260",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "clinical trial result unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wauxg9/qwenqwendrive104b_hugging_face",
+   "title_hash": "8bbd60c8d04a0b39847159a6506bded8",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "domain-specific application outside medical education or clinical practice"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=UzvTJSuFsWA",
+   "title_hash": "9816bd340b6dd2deebbf9db43b0a85ee",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "Gemini 3.8 Flash Is HERE, Testing Google’s BEST Model Yet!",
+   "source": "Bijan Bowen",
+   "published": "2026-09-09T11:56:32+00:00",
+   "summary": "Hands-on testing of Google's Gemini 3.8 Flash model across multiple tasks including code generation, browser automation, and interactive applications.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/UzvTJSuFsWA/hqdefault.jpg",
+   "display_title": "Gemini 3.8 Flash hands-on testing across multiple tasks"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=T2dnchLabZQ",
+   "title_hash": "c21dc001dbde8ee362244f094876b817",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "DeepSeek V4.1 Flash Is INSANELY GOOD! Fast, Cheap, Powerful! (Fully Tested)",
+   "source": "WorldofAI",
+   "published": "2026-09-09T06:15:29+00:00",
+   "summary": "Performance testing of DeepSeek V4.1 Flash model with evaluation of speed, cost efficiency, and capability across benchmark tasks.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/T2dnchLabZQ/hqdefault.jpg",
+   "display_title": "DeepSeek V4.1 Flash performance and capability testing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=lkujyxUdUIk",
+   "title_hash": "ac0da7e4ffd71366a4cb16b4226ca2cf",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": false,
+   "reason": "unconfirmed claim about unreleased capability; speculation without verified underlying event"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=6AuYLbHqirk",
+   "title_hash": "ddaee88186ad3587dbe19e92da903934",
+   "first_seen": "2026-09-09T12:59:00.813147+00:00",
+   "kept": true,
+   "title": "Why won’t AI agents just follow the rules?",
+   "source": "IBM Technology",
+   "published": "2026-09-09T10:00:14+00:00",
+   "summary": "Discussion of how AI agents reason around or circumvent specified rules and constraints, relevant to AI safety and reliability in deployment.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/6AuYLbHqirk/hqdefault.jpg",
+   "display_title": "AI agents and constraint adherence"
   }
  ],
  "digests": [

@@ -13,6 +13,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=UzvTJSuFsWA" target="_blank" rel="noopener" title="Gemini 3.8 Flash Is HERE, Testing Google’s BEST Model Yet!">
+  <img src="https://i2.ytimg.com/vi/UzvTJSuFsWA/hqdefault.jpg" alt="Video: Gemini 3.8 Flash hands-on testing across multiple tasks" loading="lazy">
+  <span class="video-card-title">Gemini 3.8 Flash hands-on testing across multiple tasks</span>
+  <span class="video-card-meta">Bijan Bowen, September 9, 2026</span>
+  <span class="video-card-desc">Hands-on testing of Google&#x27;s Gemini 3.8 Flash model across multiple tasks including code generation, browser automation, and interactive applications.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=6AuYLbHqirk" target="_blank" rel="noopener" title="Why won’t AI agents just follow the rules?">
+  <img src="https://i3.ytimg.com/vi/6AuYLbHqirk/hqdefault.jpg" alt="Video: AI agents and constraint adherence" loading="lazy">
+  <span class="video-card-title">AI agents and constraint adherence</span>
+  <span class="video-card-meta">IBM Technology, September 9, 2026</span>
+  <span class="video-card-desc">Discussion of how AI agents reason around or circumvent specified rules and constraints, relevant to AI safety and reliability in deployment.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=T2dnchLabZQ" target="_blank" rel="noopener" title="DeepSeek V4.1 Flash Is INSANELY GOOD! Fast, Cheap, Powerful! (Fully Tested)">
+  <img src="https://i1.ytimg.com/vi/T2dnchLabZQ/hqdefault.jpg" alt="Video: DeepSeek V4.1 Flash performance and capability testing" loading="lazy">
+  <span class="video-card-title">DeepSeek V4.1 Flash performance and capability testing</span>
+  <span class="video-card-meta">WorldofAI, September 9, 2026</span>
+  <span class="video-card-desc">Performance testing of DeepSeek V4.1 Flash model with evaluation of speed, cost efficiency, and capability across benchmark tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=U0aToL5C-bQ" target="_blank" rel="noopener" title="AlphaGenome Atlas: Understanding the human genome">
   <img src="https://i2.ytimg.com/vi/U0aToL5C-bQ/hqdefault.jpg" alt="Video: AlphaGenome Atlas: predicting effects of human genome variants" loading="lazy">
   <span class="video-card-title">AlphaGenome Atlas: predicting effects of human genome variants</span>
@@ -114,24 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Tencent HY4 hands-on testing across coding and application tasks</span>
   <span class="video-card-meta">Bijan Bowen, August 31, 2026</span>
   <span class="video-card-desc">Hands-on testing of Tencent HY4 across coding, browser OS, and game development tasks, demonstrating model capabilities on practical applications.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=4wjHNgMLeyY" target="_blank" rel="noopener" title="Ox Alpha reveal, realtime Minimax, Qwen Next, Hy4, robot olympics: AI NEWS">
-  <img src="https://i1.ytimg.com/vi/4wjHNgMLeyY/hqdefault.jpg" alt="Video: Recent model releases: GLM, Qwen, Minimax, and Hy4" loading="lazy">
-  <span class="video-card-title">Recent model releases: GLM, Qwen, Minimax, and Hy4</span>
-  <span class="video-card-meta">AI Search, August 30, 2026</span>
-  <span class="video-card-desc">Roundup covering recent model releases including GLM 5.3 Flash, Qwen 3.8 Flash Next, Minimax FastH3, and Hy4 with news and capability comparisons.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=LBiNcdGNgrg" target="_blank" rel="noopener" title="This Free AI Just Caught The Billion Dollar Giants">
-  <img src="https://i1.ytimg.com/vi/LBiNcdGNgrg/hqdefault.jpg" alt="Video: Qwen3.8-Flash-Next compared to larger commercial models" loading="lazy">
-  <span class="video-card-title">Qwen3.8-Flash-Next compared to larger commercial models</span>
-  <span class="video-card-meta">Two Minute Papers, August 28, 2026</span>
-  <span class="video-card-desc">Comparison of Qwen3.8-Flash-Next against larger commercial models, demonstrating competitive performance of an open-weights alternative.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=UxJZrCFzTHY" target="_blank" rel="noopener" title="Model Hardware Standard: AI operating physical equipment">
-  <img src="https://i2.ytimg.com/vi/UxJZrCFzTHY/hqdefault.jpg" alt="Video: Model Hardware Standard for AI control of lab equipment" loading="lazy">
-  <span class="video-card-title">Model Hardware Standard for AI control of lab equipment</span>
-  <span class="video-card-meta">Anthropic, August 28, 2026</span>
-  <span class="video-card-desc">Anthropic announces Model Hardware Standard, a framework for AI agents to safely control physical equipment in scientific and research settings.</span>
 </a>
 </div>
 
