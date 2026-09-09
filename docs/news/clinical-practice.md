@@ -13,14 +13,35 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A randomized trial of AI in clinical practice makes clear that algorithms must improve patient outcomes, not merely match clinician performance <a href="https://www.nature.com/articles/s41591-026-04633-x">[3]</a>. That caution is reinforced by a retrospective study finding that general-purpose large language models fall short of task-specific deep neural networks for ECG-based detection of occlusion myocardial infarction, with clinically important limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[4]</a>. Regulatory pathways are shifting too: the FDA&#x27;s TEMPO pilot lets generative AI devices from companies such as Cadence and Limbic reach patients before formal marketing authorization <a href="https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation">[14]</a>. Meanwhile, an LLM-based Mother-Child AI agent shows how longitudinal electronic health records can forecast maternal and infant risk to guide prenatal and postnatal care <a href="https://www.nature.com/articles/s41591-026-04694-y">[13]</a>.</p>
-<p>Also this week: six items address safety and evaluation, three cover imaging and diagnostics, three focus on clinical decision support, and two offer patient-facing tools, including a voice-biomarker foundation model for ALS and Parkinson&#x27;s screening. One entry, on extracting colorectal cancer symptoms from clinical notes, covers clinical documentation.</p>
-<p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the items below.</p>
+<p>A new analysis of one of the first randomized trials of AI in medicine argues that algorithms must demonstrably improve patient outcomes, not just match clinician performance <a href="https://www.nature.com/articles/s41591-026-04633-x">[10]</a>. That standard is echoed in a multi-country randomized controlled trial showing large language model assistance shifts physician decision-making in ways that vary by healthcare context <a href="https://www.nature.com/articles/s41746-026-03111-5">[3]</a>. Diagnostic accuracy work reinforces the caution: a retrospective study found task-specific deep neural networks outperformed general-purpose large language models and physicians at detecting occlusion myocardial infarction from ECGs <a href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[11]</a>. Meanwhile, ambient AI tools that ease documentation burden are prompting new scrutiny of their effects on medical training <a href="https://medinform.jmir.org/2026/1/e88725">[4]</a>.</p>
+<p>Also this week: the section includes four papers on safety and evaluation, four on imaging and diagnostics, three on clinical decision support, three on clinical documentation, and one patient-facing tool. Work spans opioid use disorder phenotyping from clinical narratives and a medical speech recognition metric that weights clinically critical errors over raw word accuracy.</p>
+<p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.05682">A Rubric-Guided Large Language Model Solution for Opioid Use Disorder Computable Phenotyping</a>
+    <p class="news-card-summary">Large language models guided by clinical rubrics can identify opioid use disorder from electronic health records by extracting evidence from clinical narratives where diagnosis codes are missing.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.05728">MedWER: A Reproducible, Model-Free Evaluation Protocol for Medical Speech Recognition</a>
+    <p class="news-card-summary">A model-free evaluation metric for medical speech recognition weights clinically critical errors like drug-name substitutions rather than raw word accuracy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03111-5">Impact of LLM assistance on physician decision-making: a multi-country randomized controlled trial</a>
+    <p class="news-card-summary">A multi-country randomized controlled trial measures how large language model assistance changes physician clinical decision-making across different healthcare contexts.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
@@ -104,27 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03198-w">Exploring generalizability and explainability of LLMs in classifying clinically rated suicidal ideation using heterogeneous data</a>
     <p class="news-card-summary">Peer-reviewed study examines how large language models generalize across heterogeneous data when classifying clinically rated suicidal ideation and explores model explainability for this application.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42696799?fc=20260609215449&amp;ff=20260905003334&amp;v=2.20.1">Digital Predictive Technologies for Fall Risk Assessment, Prediction, and Prevention in Long-Term Care: A Scoping Review</a>
-    <p class="news-card-summary">A scoping review finds digital predictive technologies show emerging potential for fall risk assessment in long-term care but remain heterogeneous and developmental, functioning as decision-support tools rather than replacements for clinical judgment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.03221">Counterfactual Fairness Audits of Multi-Step Clinical LLM Agents Require a Measured Per-Action Instability Floor</a>
-    <p class="news-card-summary">Counterfactual fairness audits of clinical language model agents require accounting for inherent action instability when evaluating demographic disparities.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03206-z">A voice-biomarker foundation model for ALS monitoring and Parkinson’s screening</a>
-    <p class="news-card-summary">Foundation model trained on voice biomarkers demonstrates capability for remote monitoring of amyotrophic lateral sclerosis and screening for Parkinson&#x27;s disease.</p>
   </div>
 </div>
 </div>

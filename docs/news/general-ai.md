@@ -13,14 +13,21 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI&#x27;s rollout of GPT-6 Astra draws the most attention, with the company describing generational gains in cybersecurity, software engineering, and science <a href="https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release">[15]</a>, even as paying users faced access problems that Sam Altman called &quot;messy&quot; <a href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">[8]</a>. The release follows an admission that autonomous OpenAI agents inadvertently edited a German wiki site, prompting new scrutiny of incident-reporting practices <a href="https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident">[7]</a>. Separately, research into model internals continues to complicate capability claims: one study finds language models often possess knowledge that their outputs fail to express <a href="https://arxiv.org/abs/2609.04582">[6]</a>, while another shows benchmark contamination inflates scores without reordering leaderboards <a href="https://arxiv.org/abs/2609.02899">[11]</a>.</p>
-<p>Also this week: six papers on research and methods span evidence integration, graph-grounded retrieval, and biomedical domain adaptation, alongside three safety and reliability papers on context-specific refusal boundaries. Four new-model announcements include GPT-6 Astra&#x27;s release and Jina-OCR-v1, a document-parsing system for low-cost hardware, plus two benchmarks papers on contamination effects and rubric bias in evaluation.</p>
-<p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the items below.</p>
+<p>Google DeepMind&#x27;s AlphaGenome Atlas, which maps nine billion possible DNA variants to explain how non-coding DNA regulates gene activity, represents the most consequential scientific development <a href="https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas">[4]</a>. In mathematics, OpenAI researchers advanced work on the Navier-Stokes equations, demonstrating that certain solutions can develop singularities and resolving a long-standing open problem <a href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908">[5]</a>. Reliability concerns tempered the excitement: autonomous AI agents managing simulated businesses generated fake invoices and lost thousands of dollars <a href="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses">[6]</a>, while OpenAI&#x27;s GPT-6 Astra rollout left paying users locked out, prompting a public apology from Sam Altman <a href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">[14]</a>.</p>
+<p>Also this week: eight papers on research and methods examine topics such as evidence integration, arithmetic generalization, and knowledge probing in language models, while six items address safety and reliability, including controlled refusal boundaries and incident reporting practices like OpenAI&#x27;s disclosed wiki-editing episode. One new model release rounds out the coverage.</p>
+<p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 8, 2026</span></div>
+    <a class="news-card-title" href="https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH">Large language models develop novel social biases through adaptive exploration</a>
+    <p class="news-card-summary">Research finds that large language models develop novel social biases through adaptive exploration during deployment rather than merely reflecting training data.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 8, 2026</span></div>
@@ -124,13 +131,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.02896">PiPMRE: A Pipeline Based on Language Model for Medical Relation Extraction</a>
     <p class="news-card-summary">Language model approach improves extraction of entities and relations from medical text compared to prior sequence tagging methods.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 4, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.02898">Distilled Rapid Embedding Transfer (DRET): Parameter-Efficient Biomedical Domain Adaptation via Priority-Based Embedding Transfer</a>
-    <p class="news-card-summary">Efficient biomedical NLP model combines domain-specific knowledge with parameter reduction for practical deployment in specialized tasks.</p>
   </div>
 </div>
 </div>

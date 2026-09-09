@@ -1,26 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.nature.com/articles/s41746-026-02986-8",
-   "title_hash": "15e0f700f89139c520cac0c65c734ded",
-   "first_seen": "2026-07-11T03:44:36.607487+00:00",
-   "kept": false,
-   "reason": "narrow domain application, systematic review of comparative performance on a specific prediction task"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42430284?fc=20260609215449&ff=20260710234436&v=2.20.0",
-   "title_hash": "159bc84d3debfb0c1f8406fc4b2e3eef",
-   "first_seen": "2026-07-11T03:44:36.607487+00:00",
-   "kept": true,
-   "title": "Artificial Intelligence for Cervical HPV Infection and Lesion Screening: A Cross-Sectional Analysis of Its Application Potential and Patient Satisfaction",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-10T10:00:00+00:00",
-   "summary": "Cross-sectional study finds patients support AI for cervical lesion screening efficiency and diagnosis but cite privacy, reliability, and trust concerns.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uswlq8/training_an_llm_from_scratch_on_1800s_texts_160gb",
    "title_hash": "0bc97aae8d6f0f8baa8f1821a1d441d0",
    "first_seen": "2026-07-11T06:27:48.574541+00:00",
@@ -31951,6 +31931,268 @@
    "first_seen": "2026-09-08T22:42:34.214362+00:00",
    "kept": false,
    "reason": "community discussion without substantive analysis"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05531",
+   "title_hash": "f1dc6f0ae6e03ba5efa993d4f327cdfa",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow framework paper on agent governance without demonstrated broad impact or application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05631",
+   "title_hash": "910d091d6bbc4ef82cbe76534cc303f2",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow domain application in a single language, not broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05637",
+   "title_hash": "ef5502100d4a55d7e3af8a4692f73f22",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "incremental study on retrieval-augmented generation technique, narrow significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05677",
+   "title_hash": "0e2e34db77ff4abda3acf58d03e0ab54",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow longitudinal study on LLM skill maintenance, limited scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05682",
+   "title_hash": "8bf97d38a99d41e0be89d7b4bbabe5ba",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": true,
+   "title": "A Rubric-Guided Large Language Model Solution for Opioid Use Disorder Computable Phenotyping",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-09T04:00:00+00:00",
+   "summary": "Large language models guided by clinical rubrics can identify opioid use disorder from electronic health records by extracting evidence from clinical narratives where diagnosis codes are missing.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05707",
+   "title_hash": "96f3204b9f501347a0a752f08c501b5c",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "technical optimization for a specialized task, not broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05728",
+   "title_hash": "1f0aad51cc7d90b1955c9944b8d47a63",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": true,
+   "title": "MedWER: A Reproducible, Model-Free Evaluation Protocol for Medical Speech Recognition",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-09T04:00:00+00:00",
+   "summary": "A model-free evaluation metric for medical speech recognition weights clinically critical errors like drug-name substitutions rather than raw word accuracy.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05743",
+   "title_hash": "014d9fddf4d66b84189f0243214dfb6a",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow research on internal LLM representations without direct application to this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05757",
+   "title_hash": "d44f684ac57143db8bedec06e1352a9c",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "domain-specific knowledge distillation for social media sentiment analysis, not broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05797",
+   "title_hash": "956e7549e07136a726dc3a862dac3635",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "specialized safety evaluation methodology without broad clinical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05799",
+   "title_hash": "11a8755bc75acd304f02a543f1286b6f",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow technical work on simultaneous speech translation, not broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05802",
+   "title_hash": "bd9b6b5f8e0f975cf37025e8a5abbc99",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow domain research on document citation verification, not broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05821",
+   "title_hash": "c54add3c26581fd6969d9a66454068f1",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "specialized optimization technique for vision-language models, not broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05843",
+   "title_hash": "9ac92e2855e76becda3922fad3c3a12a",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow benchmark on glyph obfuscation in Chinese moderation, not broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05882",
+   "title_hash": "2afb6b0bbbfe12f188a4ef5174c8b088",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow study of multi-turn degradation without clear clinical or educational application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05899",
+   "title_hash": "df69ab9ffa25cd7bd83911dea0fee315",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "specialized method for preference data filtering, not broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05905",
+   "title_hash": "77a6c0903adfcda8edf353614002aec8",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow application to agentic forecasting, not broad significance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05910",
+   "title_hash": "e1e5991c050660ef8f095b9476af23ff",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "specialized framework for reward models across languages, narrow research scope"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05913",
+   "title_hash": "e37281426e34c540db87a40eeb4d9f9e",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "fine-tuning optimization technique without broad application significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05928",
+   "title_hash": "f753419e052c66fad70c1a0527d18e3a",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "domain-specific application to tax reasoning, not broad significance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05938",
+   "title_hash": "97399dd58bbd6f122cda75e723c4e5cc",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "domain-specific application to survey generation, not broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05949",
+   "title_hash": "269acdaf5494a136e5dc30597359e796",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "narrow evaluation methodology for machine translation, not broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05976",
+   "title_hash": "22e841f692f285d6b3a2a5f4742db22e",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "specialized study on multilingual unlearning, narrow research without broad medical or educational significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.05993",
+   "title_hash": "4a73cd798cdd62750624871a3e86ca0f",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "specialized study on demographic conditioning in LLMs, narrow scope without medical education focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.06000",
+   "title_hash": "752d0c7fd5007fe50c3991c486077240",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "highly specialized technical work on phase geometry in transformers, not broad significance"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/08/1143747/what-openais-latest-controversy-tells-us-about-the-future-of-math",
+   "title_hash": "583f99045c8dfa5b1b8f722948c012e6",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 0; keeps the more authoritative primary source from OpenAI instead"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/9/terence-tao",
+   "title_hash": "f3a723064470b07247087c0c23bf905e",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "commentary on the Millennium Prize problem dispute already covered; adds no new information"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03111-5",
+   "title_hash": "d0b3f2410ff41fceab10ae3f58fc46b7",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": true,
+   "title": "Impact of LLM assistance on physician decision-making: a multi-country randomized controlled trial",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-09T00:00:00+00:00",
+   "summary": "A multi-country randomized controlled trial measures how large language model assistance changes physician clinical decision-making across different healthcare contexts.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/8/on-navier-stokes",
+   "title_hash": "8c22c414bb5fc5382933cfa6b076e1d9",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "drama coverage with unresolved authorship dispute overshadowing the technical claim"
+  },
+  {
+   "url": "https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH",
+   "title_hash": "9971a8e258f0ee735e52a3a4109025d8",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": true,
+   "title": "Large language models develop novel social biases through adaptive exploration",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-09-08T21:47:38+00:00",
+   "summary": "Research finds that large language models develop novel social biases through adaptive exploration during deployment rather than merely reflecting training data.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/991710/openai-navier-stokes-solution",
+   "title_hash": "2c9e423470333af970bd482aafa851d5",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 0; the drama-focused news coverage adds no new technical information"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/991727/openai-chatgpt-images-2-5-sketch",
+   "title_hash": "fc159262ed90f20ca06b66273f885a93",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "vendor marketing of a product feature from OpenAI's own channel"
+  },
+  {
+   "url": "https://ishamf.dev/p/llm-attention-visualizer",
+   "title_hash": "81b4c26c0f45fc68e1a539ec38a7e896",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "tool demonstration without significant news or substantive analysis for this audience"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-GPT-6-Astra-Is-So-Significant-and-So-Confounding-e3oib9i",
+   "title_hash": "aa4c28769829fb66be946ca879013268",
+   "first_seen": "2026-09-09T04:46:39.774338+00:00",
+   "kept": false,
+   "reason": "speculation about unreleased model and unclear evaluation; daily news show recap format"
   }
  ],
  "digests": [
@@ -32129,19 +32371,19 @@
  "last_digest_at": "2026-09-04T04:37:53.288113+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A scoping review finds medical AI curricula still nascent, urging faster development and stronger evaluation systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1\">[1]</a>. Radiology residency programs offer a concrete counterpoint, with a three-year study showing hands-on AI training is feasible and sustainable <a href=\"https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[8]</a>. Meanwhile, a meta-analysis of simulation training finds AI-assisted methods help procedural skill acquisition, with complex cognitive tasks still requiring expert instruction <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[14]</a>. Attitudes remain mixed: a survey of Latin American emergency clinicians shows rapid generative AI adoption outpacing governance and training infrastructure <a href=\"https://pubmed.ncbi.nlm.nih.gov/42699427?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[10]</a>, while psychiatry educators propose a six-point plan to prepare residents for AI&#x27;s clinical and educational impact <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[7]</a>.\n\nAlso this week: coverage spans seven items on teaching and curriculum design, from anesthesiology and orthopaedic training reviews to supervision of trainee writing with large language models. Four pieces examine attitudes and adoption, including educator surveys on ChatGPT use, while two studies benchmark model performance against expert clinicians on structured hip preservation questions.",
-   "hash": "265a7885b3891af1",
-   "date": "September 8, 2026"
+   "text": "A scoping review finds that medical AI curricula remain nascent across institutions, with calls for faster development and stronger evaluation systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1\">[6]</a>. That gap is prompting more specific responses: a qualitative study maps role-differentiated AI competencies for health professionals <a href=\"https://mededu.jmir.org/2026/1/e97608\">[1]</a>, while radiology residency programs report a three-year hands-on curriculum is feasible and sustainable <a href=\"https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[13]</a>. Assessment is drawing separate scrutiny, with a new framework arguing that AI-based evaluation needs explicit validity arguments, auditability, and ongoing monitoring <a href=\"https://pubmed.ncbi.nlm.nih.gov/42708899?fc=20260609215449&amp;ff=20260908152637&amp;v=2.20.1\">[2]</a>. Meanwhile a survey of Latin American emergency clinicians finds fast adoption of generative AI tools outpacing governance and training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42699427?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1\">[15]</a>.\n\nAlso this week: teaching and curriculum items also cover pharmacy serious games, psychiatry residency planning, and anesthesiology training reviews, alongside three studies on clinician attitudes toward generative AI adoption. Two papers examine assessment and feedback validity, two address simulation and skills training such as stigma-sensitive patient interviews, and two benchmark large language models against clinical experts on exam-style questions.",
+   "hash": "06d5485df1e027f2",
+   "date": "September 9, 2026"
   },
   "clinical_practice": {
-   "text": "A randomized trial of AI in clinical practice makes clear that algorithms must improve patient outcomes, not merely match clinician performance <a href=\"https://www.nature.com/articles/s41591-026-04633-x\">[3]</a>. That caution is reinforced by a retrospective study finding that general-purpose large language models fall short of task-specific deep neural networks for ECG-based detection of occlusion myocardial infarction, with clinically important limitations <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[4]</a>. Regulatory pathways are shifting too: the FDA&#x27;s TEMPO pilot lets generative AI devices from companies such as Cadence and Limbic reach patients before formal marketing authorization <a href=\"https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation\">[14]</a>. Meanwhile, an LLM-based Mother-Child AI agent shows how longitudinal electronic health records can forecast maternal and infant risk to guide prenatal and postnatal care <a href=\"https://www.nature.com/articles/s41591-026-04694-y\">[13]</a>.\n\nAlso this week: six items address safety and evaluation, three cover imaging and diagnostics, three focus on clinical decision support, and two offer patient-facing tools, including a voice-biomarker foundation model for ALS and Parkinson&#x27;s screening. One entry, on extracting colorectal cancer symptoms from clinical notes, covers clinical documentation.",
-   "hash": "0650669e7d1e5add",
-   "date": "September 8, 2026"
+   "text": "A new analysis of one of the first randomized trials of AI in medicine argues that algorithms must demonstrably improve patient outcomes, not just match clinician performance <a href=\"https://www.nature.com/articles/s41591-026-04633-x\">[10]</a>. That standard is echoed in a multi-country randomized controlled trial showing large language model assistance shifts physician decision-making in ways that vary by healthcare context <a href=\"https://www.nature.com/articles/s41746-026-03111-5\">[3]</a>. Diagnostic accuracy work reinforces the caution: a retrospective study found task-specific deep neural networks outperformed general-purpose large language models and physicians at detecting occlusion myocardial infarction from ECGs <a href=\"https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1\">[11]</a>. Meanwhile, ambient AI tools that ease documentation burden are prompting new scrutiny of their effects on medical training <a href=\"https://medinform.jmir.org/2026/1/e88725\">[4]</a>.\n\nAlso this week: the section includes four papers on safety and evaluation, four on imaging and diagnostics, three on clinical decision support, three on clinical documentation, and one patient-facing tool. Work spans opioid use disorder phenotyping from clinical narratives and a medical speech recognition metric that weights clinically critical errors over raw word accuracy.",
+   "hash": "cfe46e2412eb70d0",
+   "date": "September 9, 2026"
   },
   "general_ai": {
-   "text": "OpenAI&#x27;s rollout of GPT-6 Astra draws the most attention, with the company describing generational gains in cybersecurity, software engineering, and science <a href=\"https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release\">[15]</a>, even as paying users faced access problems that Sam Altman called &quot;messy&quot; <a href=\"https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout\">[8]</a>. The release follows an admission that autonomous OpenAI agents inadvertently edited a German wiki site, prompting new scrutiny of incident-reporting practices <a href=\"https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident\">[7]</a>. Separately, research into model internals continues to complicate capability claims: one study finds language models often possess knowledge that their outputs fail to express <a href=\"https://arxiv.org/abs/2609.04582\">[6]</a>, while another shows benchmark contamination inflates scores without reordering leaderboards <a href=\"https://arxiv.org/abs/2609.02899\">[11]</a>.\n\nAlso this week: six papers on research and methods span evidence integration, graph-grounded retrieval, and biomedical domain adaptation, alongside three safety and reliability papers on context-specific refusal boundaries. Four new-model announcements include GPT-6 Astra&#x27;s release and Jina-OCR-v1, a document-parsing system for low-cost hardware, plus two benchmarks papers on contamination effects and rubric bias in evaluation.",
-   "hash": "7bc514efd402620d",
-   "date": "September 8, 2026"
+   "text": "Google DeepMind&#x27;s AlphaGenome Atlas, which maps nine billion possible DNA variants to explain how non-coding DNA regulates gene activity, represents the most consequential scientific development <a href=\"https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas\">[4]</a>. In mathematics, OpenAI researchers advanced work on the Navier-Stokes equations, demonstrating that certain solutions can develop singularities and resolving a long-standing open problem <a href=\"https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908\">[5]</a>. Reliability concerns tempered the excitement: autonomous AI agents managing simulated businesses generated fake invoices and lost thousands of dollars <a href=\"https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses\">[6]</a>, while OpenAI&#x27;s GPT-6 Astra rollout left paying users locked out, prompting a public apology from Sam Altman <a href=\"https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout\">[14]</a>.\n\nAlso this week: eight papers on research and methods examine topics such as evidence integration, arithmetic generalization, and knowledge probing in language models, while six items address safety and reliability, including controlled refusal boundaries and incident reporting practices like OpenAI&#x27;s disclosed wiki-editing episode. One new model release rounds out the coverage.",
+   "hash": "79e6e2845ba879c0",
+   "date": "September 9, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -32236,5 +32478,5 @@
    "url": "https://nebiusglobalaihackathon.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-08"
+ "section_briefs_refreshed": "2026-09-09"
 }

@@ -13,9 +13,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## Medical Education
 
 <div class="section-brief">
-<p>A scoping review finds medical AI curricula still nascent, urging faster development and stronger evaluation systems <a href="https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1">[1]</a>. Radiology residency programs offer a concrete counterpoint, with a three-year study showing hands-on AI training is feasible and sustainable <a href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[8]</a>. Meanwhile, a meta-analysis of simulation training finds AI-assisted methods help procedural skill acquisition, with complex cognitive tasks still requiring expert instruction <a href="https://pubmed.ncbi.nlm.nih.gov/42698550?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[14]</a>. Attitudes remain mixed: a survey of Latin American emergency clinicians shows rapid generative AI adoption outpacing governance and training infrastructure <a href="https://pubmed.ncbi.nlm.nih.gov/42699427?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[10]</a>, while psychiatry educators propose a six-point plan to prepare residents for AI&#x27;s clinical and educational impact <a href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[7]</a>.</p>
-<p>Also this week: coverage spans seven items on teaching and curriculum design, from anesthesiology and orthopaedic training reviews to supervision of trainee writing with large language models. Four pieces examine attitudes and adoption, including educator surveys on ChatGPT use, while two studies benchmark model performance against expert clinicians on structured hip preservation questions.</p>
-<p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the source items.</p>
+<p>A scoping review finds that medical AI curricula remain nascent across institutions, with calls for faster development and stronger evaluation systems <a href="https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1">[6]</a>. That gap is prompting more specific responses: a qualitative study maps role-differentiated AI competencies for health professionals <a href="https://mededu.jmir.org/2026/1/e97608">[1]</a>, while radiology residency programs report a three-year hands-on curriculum is feasible and sustainable <a href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[13]</a>. Assessment is drawing separate scrutiny, with a new framework arguing that AI-based evaluation needs explicit validity arguments, auditability, and ongoing monitoring <a href="https://pubmed.ncbi.nlm.nih.gov/42708899?fc=20260609215449&amp;ff=20260908152637&amp;v=2.20.1">[2]</a>. Meanwhile a survey of Latin American emergency clinicians finds fast adoption of generative AI tools outpacing governance and training <a href="https://pubmed.ncbi.nlm.nih.gov/42699427?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[15]</a>.</p>
+<p>Also this week: teaching and curriculum items also cover pharmacy serious games, psychiatry residency planning, and anesthesiology training reviews, alongside three studies on clinician attitudes toward generative AI adoption. Two papers examine assessment and feedback validity, two address simulation and skills training such as stigma-sensitive patient interviews, and two benchmark large language models against clinical experts on exam-style questions.</p>
+<p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 44 items"
@@ -336,15 +336,36 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A randomized trial of AI in clinical practice makes clear that algorithms must improve patient outcomes, not merely match clinician performance <a href="https://www.nature.com/articles/s41591-026-04633-x">[3]</a>. That caution is reinforced by a retrospective study finding that general-purpose large language models fall short of task-specific deep neural networks for ECG-based detection of occlusion myocardial infarction, with clinically important limitations <a href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[4]</a>. Regulatory pathways are shifting too: the FDA&#x27;s TEMPO pilot lets generative AI devices from companies such as Cadence and Limbic reach patients before formal marketing authorization <a href="https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation">[14]</a>. Meanwhile, an LLM-based Mother-Child AI agent shows how longitudinal electronic health records can forecast maternal and infant risk to guide prenatal and postnatal care <a href="https://www.nature.com/articles/s41591-026-04694-y">[13]</a>.</p>
-<p>Also this week: six items address safety and evaluation, three cover imaging and diagnostics, three focus on clinical decision support, and two offer patient-facing tools, including a voice-biomarker foundation model for ALS and Parkinson&#x27;s screening. One entry, on extracting colorectal cancer symptoms from clinical notes, covers clinical documentation.</p>
-<p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the source items.</p>
+<p>A new analysis of one of the first randomized trials of AI in medicine argues that algorithms must demonstrably improve patient outcomes, not just match clinician performance <a href="https://www.nature.com/articles/s41591-026-04633-x">[10]</a>. That standard is echoed in a multi-country randomized controlled trial showing large language model assistance shifts physician decision-making in ways that vary by healthcare context <a href="https://www.nature.com/articles/s41746-026-03111-5">[3]</a>. Diagnostic accuracy work reinforces the caution: a retrospective study found task-specific deep neural networks outperformed general-purpose large language models and physicians at detecting occlusion myocardial infarction from ECGs <a href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[11]</a>. Meanwhile, ambient AI tools that ease documentation burden are prompting new scrutiny of their effects on medical training <a href="https://medinform.jmir.org/2026/1/e88725">[4]</a>.</p>
+<p>Also this week: the section includes four papers on safety and evaluation, four on imaging and diagnostics, three on clinical decision support, three on clinical documentation, and one patient-facing tool. Work spans opioid use disorder phenotyping from clinical narratives and a medical speech recognition metric that weights clinically critical errors over raw word accuracy.</p>
+<p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 33 items"
+??? abstract "Show the 31 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.05682">A Rubric-Guided Large Language Model Solution for Opioid Use Disorder Computable Phenotyping</a>
+        <p class="news-card-summary">Large language models guided by clinical rubrics can identify opioid use disorder from electronic health records by extracting evidence from clinical narratives where diagnosis codes are missing.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.05728">MedWER: A Reproducible, Model-Free Evaluation Protocol for Medical Speech Recognition</a>
+        <p class="news-card-summary">A model-free evaluation metric for medical speech recognition weights clinically critical errors like drug-name substitutions rather than raw word accuracy.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03111-5">Impact of LLM assistance on physician decision-making: a multi-country randomized controlled trial</a>
+        <p class="news-card-summary">A multi-country randomized controlled trial measures how large language model assistance changes physician clinical decision-making across different healthcare contexts.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
@@ -538,41 +559,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.00055">Zero-Shot Respiratory Sound Classification through LLM-Augmented Audio-Text Alignment</a>
-        <p class="news-card-summary">Researchers developed a framework aligning respiratory sound encoders with medical terminology to enable zero-shot clinical classification without task-specific labeled data.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.00063">Medical Causal Hypothesis Verification with Large Language Models</a>
-        <p class="news-card-summary">Study evaluates large language models&#x27; ability to assess causal relationships in medical information and ground conclusions reliably for healthcare applications.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.00068">Life Operators: a self-evolving framework for multiscale life modelling</a>
-        <p class="news-card-summary">Study proposes a framework combining statistical and mechanistic models to represent patient state and predict outcomes under intervention for longitudinal clinical prediction.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.00191">Assessing Suicide Risk in Arabic Crisis Helpline Calls: A Comparison of Arabic and English Large Language Models</a>
-        <p class="news-card-summary">Researchers compared Arabic and English large language models for assessing suicide risk in crisis helpline calls within privacy constraints of real helpline data.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03186-0">Development and benchmark validation of PubChat for PubMed-grounded multilingual biomedical literature retrieval</a>
-        <p class="news-card-summary">PubChat enables multilingual biomedical literature retrieval from PubMed with benchmark validation for clinical evidence access.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 2, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03018-1">AI models for medication adherence prediction: closing the gap to clinical readiness</a>
         <p class="news-card-summary">Peer-reviewed study examines artificial intelligence models for predicting medication adherence and their readiness for clinical deployment.</p>
@@ -583,15 +569,22 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## General AI
 
 <div class="section-brief">
-<p>OpenAI&#x27;s rollout of GPT-6 Astra draws the most attention, with the company describing generational gains in cybersecurity, software engineering, and science <a href="https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release">[15]</a>, even as paying users faced access problems that Sam Altman called &quot;messy&quot; <a href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">[8]</a>. The release follows an admission that autonomous OpenAI agents inadvertently edited a German wiki site, prompting new scrutiny of incident-reporting practices <a href="https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident">[7]</a>. Separately, research into model internals continues to complicate capability claims: one study finds language models often possess knowledge that their outputs fail to express <a href="https://arxiv.org/abs/2609.04582">[6]</a>, while another shows benchmark contamination inflates scores without reordering leaderboards <a href="https://arxiv.org/abs/2609.02899">[11]</a>.</p>
-<p>Also this week: six papers on research and methods span evidence integration, graph-grounded retrieval, and biomedical domain adaptation, alongside three safety and reliability papers on context-specific refusal boundaries. Four new-model announcements include GPT-6 Astra&#x27;s release and Jina-OCR-v1, a document-parsing system for low-cost hardware, plus two benchmarks papers on contamination effects and rubric bias in evaluation.</p>
-<p class="section-brief-date">The picture as of September 8, 2026; numbered links go to the source items.</p>
+<p>Google DeepMind&#x27;s AlphaGenome Atlas, which maps nine billion possible DNA variants to explain how non-coding DNA regulates gene activity, represents the most consequential scientific development <a href="https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas">[4]</a>. In mathematics, OpenAI researchers advanced work on the Navier-Stokes equations, demonstrating that certain solutions can develop singularities and resolving a long-standing open problem <a href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908">[5]</a>. Reliability concerns tempered the excitement: autonomous AI agents managing simulated businesses generated fake invoices and lost thousands of dollars <a href="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses">[6]</a>, while OpenAI&#x27;s GPT-6 Astra rollout left paying users locked out, prompting a public apology from Sam Altman <a href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">[14]</a>.</p>
+<p>Also this week: eight papers on research and methods examine topics such as evidence integration, arithmetic generalization, and knowledge probing in language models, while six items address safety and reliability, including controlled refusal boundaries and incident reporting practices like OpenAI&#x27;s disclosed wiki-editing episode. One new model release rounds out the coverage.</p>
+<p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 34 items"
+??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (14)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 8, 2026</span></div>
+        <a class="news-card-title" href="https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH">Large language models develop novel social biases through adaptive exploration</a>
+        <p class="news-card-summary">Research finds that large language models develop novel social biases through adaptive exploration during deployment rather than merely reflecting training data.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 8, 2026</span></div>
@@ -816,28 +809,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">An analysis argues that pursuing extreme AI efficiency may undermine the development of domain expertise and human oversight needed for safe system operation.</p>
       </div>
       <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/human-and-robotic-hands-share-a-caliper-over-technical-engineering-blueprints.png?id=67702640&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.00051">From Detection to Refusal: Safer LLMs via Circuit-Guided Weight Scaling</a>
-        <p class="news-card-summary">Study applies mechanistic interpretability to understand LLM safety circuits and proposes weight-scaling methods to improve refusal capabilities under adversarial prompting.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.00065">Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents</a>
-        <p class="news-card-summary">Researchers present a library of procedural knowledge and field-specific skills for research agents to produce defensible scientific analyses beyond syntactically correct code.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 1, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Sep/1/claude-fable-5-1">Claude Fable 5.1 made me a really nice animated pelican</a>
-        <p class="news-card-summary">Anthropic released Claude Fable 5.1, advancing coding and scientific reasoning with 52.6% score on Terminal-Bench-Science 0.1.</p>
-      </div>
-      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/fable-5.1-max.webp" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
