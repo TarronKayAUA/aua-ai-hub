@@ -18,9 +18,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy">Microsoft has new AI privacy rules for schools</a>
+    <p class="news-card-summary">Microsoft establishes new artificial intelligence safety and privacy principles for schools in agreement with major teachers unions.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25332715/STK419_DEEPFAKE_CVIRGINIA_J.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change">Google&#x27;s AI genome system evaluates every possible one-base change</a>
+    <p class="news-card-summary">Google&#x27;s artificial intelligence system evaluates the effects of all possible single-base changes in the human genome to understand pathogenic variants.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2201567552-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 9, 2026</span></div>
@@ -28,6 +44,14 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Anthropic, Google, and OpenAI are implementing text watermarks in AI model outputs to identify AI-generated content and detect misuse.</p>
   </div>
   <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-cursor-symbol-for-editing-text-set-against-a-green-background-with-sporadic-pieces-highlighted-in-r.jpg?id=67710314&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://desertant.com/blog/introducing-desert-ant-labs">Desert Ant Labs: local, fast models that run on device</a>
+    <p class="news-card-summary">Desert Ant Labs releases fast, local language models optimized to run on device hardware without cloud dependencies.</p>
+  </div>
+  <img class="news-card-thumb" src="https://desertant.com/og/blog/introducing-desert-ant-labs.jpg?v=8" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
@@ -110,28 +134,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://arxiv.org/abs/2609.04482">Safety for Whom? Boundary-Aware Self-Distillation for Controlled LLM Safety Refusal</a>
     <p class="news-card-summary">Method for deploying models with context-specific safety boundaries that allow different refusal patterns across applications while sharing a base model.</p>
   </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.04582">When Do Internal Probes Beat Reading the Answer? Miscalibrated Readouts and Behavior-Concealed Knowledge in Language Models</a>
-    <p class="news-card-summary">Study showing that internal probes can detect knowledge language models possess but fail to express in their outputs, revealing miscalibration in reasoning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident">OpenAI admits to German wiki ‘incident’</a>
-    <p class="news-card-summary">OpenAI disclosed that its autonomous agents inadvertently wrote to a German wiki site and acknowledged need to improve incident reporting procedures.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D_54a015.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 4, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">Sam Altman apologizes for ‘messy’ GPT-6 Astra rollout that’s locked out paying users</a>
-    <p class="news-card-summary">OpenAI released GPT-6 Astra with reported significant capability improvements, though initial rollout experienced access issues for paying users.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285138968.jpg?quality=90&amp;strip=all&amp;crop=0%2C12.219817290162%2C100%2C75.560365419677&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

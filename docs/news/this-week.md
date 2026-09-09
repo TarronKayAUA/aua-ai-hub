@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (10)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (21)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (12)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
@@ -34,6 +34,41 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
         <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92486">Effect of Large Language Model, Powered Virtual Standardized Patients on History-Taking Among Undergraduate Medical Students: Propensity-Matched Cohort Study</a>
         <p class="news-card-summary">Propensity-matched cohort study found that large language model powered virtual standardized patients improved history-taking performance in undergraduate medical students.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42714363?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Beyond the Algorithm: A Stewardship Framework for the Hand Surgeon Adopting Artificial Intelligence</a>
+        <p class="news-card-summary">A framework for hand surgeons outlines how to evaluate and safely adopt artificial intelligence tools for imaging, outcome prediction, and patient communication despite validation gaps.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712985?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Generative artificial intelligence in medical education: from knowledge assessment to clinical reasoning and professional competence</a>
+        <p class="news-card-summary">A systematic literature review synthesizes evidence on how generative AI and large language models are being applied across medical education from knowledge assessment to clinical reasoning development.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712696?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Oncologists&#x27; knowledge, attitudes and needs about artificial intelligence in clinical oncology in Luxembourg in 2026: a national cross-sectional survey (AICO study)</a>
+        <p class="news-card-summary">A Luxembourg survey of oncologists shows gaps between current adoption of artificial intelligence and clinician readiness, highlighting needs for training and ethical governance.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712325?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Priorities for artificial intelligence education: clinicians&#x27; perspectives</a>
+        <p class="news-card-summary">A study of clinician perspectives on artificial intelligence training identifies a mismatch: practitioners prioritize liability and algorithm confidence while educators emphasize critical appraisal and patient communication.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712209?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">How Well Do AI Chatbots Understand Abnormal Anatomy: A Comparative Study Using Congenital Anomalies and Tumor Cases</a>
+        <p class="news-card-summary">A comparative study evaluates how well large language model chatbots understand and reason about abnormal anatomy in congenital and tumor cases.</p>
       </div>
     </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
@@ -355,10 +390,25 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e86835">Integrating Lymph Node Metastasis and Programmed Death-Ligand 1 Prediction in Non, Small Cell Lung Cancer From a Single PET/CT Scan: Multicenter Radiomics Study</a>
+        <p class="news-card-summary">A multicenter radiomics study develops an integrated deep learning model to simultaneously predict lymph node metastasis and PD-L1 expression in lung cancer from a single PET/CT scan.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure">STAT+: ARPA-H to invest $62 million to develop FDA-authorized AI to help treat heart failure</a>
+        <p class="news-card-summary">The U.S. government agency ARPA-H is investing 62.7 million dollars to develop FDA-authorized artificial intelligence tools for directing heart failure treatment.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_312976841-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
@@ -408,6 +458,20 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 9, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04647-5">Consensus framework for the validation of generative AI: call for collaborators on the Validation Accords</a>
         <p class="news-card-summary">Researchers published a consensus framework and call for collaboration on validating generative AI in clinical applications.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03235-8">DystoniaDBSNet as a novel deep learning biomarker of predictive deep brain stimulation outcome in dystonia</a>
+        <p class="news-card-summary">A deep learning model predicts outcomes of deep brain stimulation for dystonia, offering a biomarker for treatment planning.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03229-6">A domain-specific large language model for evidence-based nursing: development and multi-method evaluation of EviNurse</a>
+        <p class="news-card-summary">Researchers develop and evaluate EviNurse, a domain-specific large language model designed to support evidence-based nursing practice.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-documentation">
@@ -618,10 +682,26 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 32 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy">Microsoft has new AI privacy rules for schools</a>
+        <p class="news-card-summary">Microsoft establishes new artificial intelligence safety and privacy principles for schools in agreement with major teachers unions.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25332715/STK419_DEEPFAKE_CVIRGINIA_J.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change">Google&#x27;s AI genome system evaluates every possible one-base change</a>
+        <p class="news-card-summary">Google&#x27;s artificial intelligence system evaluates the effects of all possible single-base changes in the human genome to understand pathogenic variants.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2201567552-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 9, 2026</span></div>
@@ -629,6 +709,14 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Anthropic, Google, and OpenAI are implementing text watermarks in AI model outputs to identify AI-generated content and detect misuse.</p>
       </div>
       <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-cursor-symbol-for-editing-text-set-against-a-green-background-with-sporadic-pieces-highlighted-in-r.jpg?id=67710314&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 9, 2026</span></div>
+        <a class="news-card-title" href="https://desertant.com/blog/introducing-desert-ant-labs">Desert Ant Labs: local, fast models that run on device</a>
+        <p class="news-card-summary">Desert Ant Labs releases fast, local language models optimized to run on device hardware without cloud dependencies.</p>
+      </div>
+      <img class="news-card-thumb" src="https://desertant.com/og/blog/introducing-desert-ant-labs.jpg?v=8" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -868,9 +956,15 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 13 videos"
+??? abstract "Show the 14 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=O_EWbnkjXdk" target="_blank" rel="noopener" title="Can AI help us better predict the weather?">
+      <img src="https://i4.ytimg.com/vi/O_EWbnkjXdk/hqdefault.jpg" alt="Video: AI applications in weather prediction" loading="lazy">
+      <span class="video-card-title">AI applications in weather prediction</span>
+      <span class="video-card-meta">Google DeepMind, September 9, 2026</span>
+      <span class="video-card-desc">Google DeepMind explores how artificial intelligence can improve weather prediction, with discussion from Professor Hannah Fry and researchers.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=UzvTJSuFsWA" target="_blank" rel="noopener" title="Gemini 3.8 Flash Is HERE, Testing Google’s BEST Model Yet!">
       <img src="https://i2.ytimg.com/vi/UzvTJSuFsWA/hqdefault.jpg" alt="Video: Gemini 3.8 Flash hands-on testing across multiple tasks" loading="lazy">
       <span class="video-card-title">Gemini 3.8 Flash hands-on testing across multiple tasks</span>

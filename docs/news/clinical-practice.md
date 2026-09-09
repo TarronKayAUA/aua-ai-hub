@@ -18,9 +18,24 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e86835">Integrating Lymph Node Metastasis and Programmed Death-Ligand 1 Prediction in Non, Small Cell Lung Cancer From a Single PET/CT Scan: Multicenter Radiomics Study</a>
+    <p class="news-card-summary">A multicenter radiomics study develops an integrated deep learning model to simultaneously predict lymph node metastasis and PD-L1 expression in lung cancer from a single PET/CT scan.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure">STAT+: ARPA-H to invest $62 million to develop FDA-authorized AI to help treat heart failure</a>
+    <p class="news-card-summary">The U.S. government agency ARPA-H is investing 62.7 million dollars to develop FDA-authorized artificial intelligence tools for directing heart failure treatment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_312976841-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
@@ -72,6 +87,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Researchers published a consensus framework and call for collaboration on validating generative AI in clinical applications.</p>
   </div>
 </div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03235-8">DystoniaDBSNet as a novel deep learning biomarker of predictive deep brain stimulation outcome in dystonia</a>
+    <p class="news-card-summary">A deep learning model predicts outcomes of deep brain stimulation for dystonia, offering a biomarker for treatment planning.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03229-6">A domain-specific large language model for evidence-based nursing: development and multi-method evaluation of EviNurse</a>
+    <p class="news-card-summary">Researchers develop and evaluate EviNurse, a domain-specific large language model designed to support evidence-based nursing practice.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
@@ -98,35 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03223-y">Identifying potential nonpulmonary vein triggers in persistent atrial fibrillation using digital twins and deep learning</a>
     <p class="news-card-summary">Deep learning applied to digital twins identifies potential triggers for persistent atrial fibrillation outside the pulmonary veins.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.04366">VERGE: Verification-Enhanced Refinement for Grounded Extraction of Early-Onset Colorectal Cancer Symptoms in Clinical Notes</a>
-    <p class="news-card-summary">A method for extracting early-onset colorectal cancer symptoms from clinical notes using language models to capture symptom duration, context, and family history for improved detection.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03202-3">Multimodal artificial intelligence integrating peritumoral MRI and clinical data stratifies meningioma recurrence risk after radiotherapy</a>
-    <p class="news-card-summary">Multimodal AI integrating peritumoral MRI and clinical data predicts meningioma recurrence risk after radiotherapy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04633-x">From algorithms to patient outcomes, lessons from one of the first randomized trials of AI in medicine</a>
-    <p class="news-card-summary">A randomized trial of AI in clinical practice shows algorithms must improve patient outcomes, not merely match clinician performance.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04633-x/MediaObjects/41591_2026_4633_Figa_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">ECG-based detection of occlusion myocardial infarction: a dedicated deep neural network versus multimodal large language models and physicians - a retrospective diagnostic accuracy study</a>
-    <p class="news-card-summary">Task-specific deep neural networks outperformed general-purpose large language models for electrocardiogram-based occlusion myocardial infarction detection, with models showing clinically important limitations.</p>
   </div>
 </div>
 </div>

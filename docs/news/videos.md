@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=O_EWbnkjXdk" target="_blank" rel="noopener" title="Can AI help us better predict the weather?">
+  <img src="https://i4.ytimg.com/vi/O_EWbnkjXdk/hqdefault.jpg" alt="Video: AI applications in weather prediction" loading="lazy">
+  <span class="video-card-title">AI applications in weather prediction</span>
+  <span class="video-card-meta">Google DeepMind, September 9, 2026</span>
+  <span class="video-card-desc">Google DeepMind explores how artificial intelligence can improve weather prediction, with discussion from Professor Hannah Fry and researchers.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=UzvTJSuFsWA" target="_blank" rel="noopener" title="Gemini 3.8 Flash Is HERE, Testing Google’s BEST Model Yet!">
   <img src="https://i2.ytimg.com/vi/UzvTJSuFsWA/hqdefault.jpg" alt="Video: Gemini 3.8 Flash hands-on testing across multiple tasks" loading="lazy">
   <span class="video-card-title">Gemini 3.8 Flash hands-on testing across multiple tasks</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Tencent HY4 open-weight model evaluation</span>
   <span class="video-card-meta">WorldofAI, September 1, 2026</span>
   <span class="video-card-desc">Testing and evaluation of Tencent HY4, an open-weight large language model, against comparable alternatives.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=RC-1c9VQjBE" target="_blank" rel="noopener" title="Tencent HY4 Is INSANE, Is THIS Tencent’s Next Frontier Model?">
-  <img src="https://i3.ytimg.com/vi/RC-1c9VQjBE/hqdefault.jpg" alt="Video: Tencent HY4 hands-on testing across coding and application tasks" loading="lazy">
-  <span class="video-card-title">Tencent HY4 hands-on testing across coding and application tasks</span>
-  <span class="video-card-meta">Bijan Bowen, August 31, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Tencent HY4 across coding, browser OS, and game development tasks, demonstrating model capabilities on practical applications.</span>
 </a>
 </div>
 

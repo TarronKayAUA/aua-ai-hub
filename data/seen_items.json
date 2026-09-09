@@ -1,46 +1,6 @@
 {
  "items": [
   {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42434788?fc=20260609215449&ff=20260711095618&v=2.20.0",
-   "title_hash": "880513c24403cf7d0ac74075f991bc28",
-   "first_seen": "2026-07-11T13:56:18.374878+00:00",
-   "kept": false,
-   "reason": "abstract unavailable; insufficient information to evaluate"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42434673?fc=20260609215449&ff=20260711095618&v=2.20.0",
-   "title_hash": "5e9b11a58ad6b82283d440fa6ab322bb",
-   "first_seen": "2026-07-11T13:56:18.374878+00:00",
-   "kept": true,
-   "title": "Artificial Intelligence in Airway Management: Current Evidence and Future Perspectives",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-11T10:00:00+00:00",
-   "summary": "Machine learning and deep learning show promise for improving airway assessment accuracy in anesthesia beyond conventional subjective tools.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Other"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42433425?fc=20260609215449&ff=20260711095618&v=2.20.0",
-   "title_hash": "1e7c0d0f878c2a522de8b8b9e70defff",
-   "first_seen": "2026-07-11T13:56:18.374878+00:00",
-   "kept": false,
-   "reason": "narrow domain application; epidemiologic study using machine learning without focus on AI methods or medical education"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02987-7",
-   "title_hash": "bffa4e059d2a707e679fa0afa11bc005",
-   "first_seen": "2026-07-11T17:17:16.775630+00:00",
-   "kept": true,
-   "title": "Embedded transparency in artificial intelligence: a prerequisite for equity and representation in AI-enabled clinical trials",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-11T00:00:00+00:00",
-   "summary": "Peer-reviewed study argues that transparent, interpretable AI models in clinical trial infrastructure are essential to prevent amplification of existing health disparities in evidence generation.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/11/sqlite-utils",
    "title_hash": "34493e2736465a2f649fe087bec5b29b",
    "first_seen": "2026-07-12T03:59:59.037902+00:00",
@@ -32352,6 +32312,257 @@
    "score": 3.0,
    "thumbnail": "https://i3.ytimg.com/vi/6AuYLbHqirk/hqdefault.jpg",
    "display_title": "AI agents and constraint adherence"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e86835",
+   "title_hash": "f8a6d9ae3471c091ad9e5dda9d2f56d7",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "Integrating Lymph Node Metastasis and Programmed Death-Ligand 1 Prediction in Non, Small Cell Lung Cancer From a Single PET/CT Scan: Multicenter Radiomics Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-09T18:00:16+00:00",
+   "summary": "A multicenter radiomics study develops an integrated deep learning model to simultaneously predict lymph node metastasis and PD-L1 expression in lung cancer from a single PET/CT scan.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.theverge.com/policy/992359/microsoft-aft-schools-ai-privacy",
+   "title_hash": "10a7809aa9e45855bd0cab3979e46cf4",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "Microsoft has new AI privacy rules for schools",
+   "source": "The Verge AI",
+   "published": "2026-09-09T17:07:48+00:00",
+   "summary": "Microsoft establishes new artificial intelligence safety and privacy principles for schools in agreement with major teachers unions.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25332715/STK419_DEEPFAKE_CVIRGINIA_J.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/anthropic-researcher-quits-with-a-warning-self-improving-ai-could-kill-us-all",
+   "title_hash": "dd219feebc8d3b053e2af37fd3aaa070",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "speculation and drama coverage rather than substantive development reporting"
+  },
+  {
+   "url": "https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change",
+   "title_hash": "1508948f71b752ccaffcada4ba7fdceb",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "Google's AI genome system evaluates every possible one-base change",
+   "source": "Ars Technica AI",
+   "published": "2026-09-09T16:34:18+00:00",
+   "summary": "Google's artificial intelligence system evaluates the effects of all possible single-base changes in the human genome to understand pathogenic variants.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2201567552-500x500.jpg",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure",
+   "title_hash": "b45ec54e053d24decd0e21bb723f6061",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "STAT+: ARPA-H to invest $62 million to develop FDA-authorized AI to help treat heart failure",
+   "source": "STAT News AI",
+   "published": "2026-09-09T16:01:00+00:00",
+   "summary": "The U.S. government agency ARPA-H is investing 62.7 million dollars to develop FDA-authorized artificial intelligence tools for directing heart failure treatment.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_312976841-645x645.jpeg",
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://huggingface.co/blog/ibm-research/ibm-releases-sota-granite-time-series",
+   "title_hash": "f1426e06d4ce96406650c87dc6093509",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "minor model release, narrow domain in time-series forecasting unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/09/scribe-emergency-room-fix-health-care-ai-prognosis",
+   "title_hash": "5c752ce1dc3cb1116d8d26090fa10959",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "opinion essay with limited substantive content about AI's specific role"
+  },
+  {
+   "url": "https://www.theverge.com/tech/991809/amazon-prime-video-ai-lip-sync-dubbing",
+   "title_hash": "c2d246e02465ed2b77fc2506b34dc706",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "entertainment technology announcement unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://desertant.com/blog/introducing-desert-ant-labs",
+   "title_hash": "cbc778ee2cb4f5d91ee2e5ee96a9b4ea",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "Desert Ant Labs: local, fast models that run on device",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-09-09T11:39:46+00:00",
+   "summary": "Desert Ant Labs releases fast, local language models optimized to run on device hardware without cloud dependencies.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://desertant.com/og/blog/introducing-desert-ant-labs.jpg?v=8",
+   "topic": "New models"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42714363?fc=20260609215449&ff=20260909151755&v=2.20.1",
+   "title_hash": "504e357b1d40340f492ec816172191b7",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "Beyond the Algorithm: A Stewardship Framework for the Hand Surgeon Adopting Artificial Intelligence",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-09T10:00:00+00:00",
+   "summary": "A framework for hand surgeons outlines how to evaluate and safely adopt artificial intelligence tools for imaging, outcome prediction, and patient communication despite validation gaps.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42714236?fc=20260609215449&ff=20260909151755&v=2.20.1",
+   "title_hash": "e0c57f651a134c504e448aeb6c9fa86f",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "(kept by the model, discarded: over the news keep cap)"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42713607?fc=20260609215449&ff=20260909151755&v=2.20.1",
+   "title_hash": "0a195c806492c9e92a0b9dede9c18be8",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "narrow domain application in gerontology assessment, not core AI in medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42712985?fc=20260609215449&ff=20260909151755&v=2.20.1",
+   "title_hash": "3087ae5f7cc7b17776ff23e73b61fa71",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "Generative artificial intelligence in medical education: from knowledge assessment to clinical reasoning and professional competence",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-09T10:00:00+00:00",
+   "summary": "A systematic literature review synthesizes evidence on how generative AI and large language models are being applied across medical education from knowledge assessment to clinical reasoning development.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42712849?fc=20260609215449&ff=20260909151755&v=2.20.1",
+   "title_hash": "d4162023a46072c4980291922621c99c",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "(kept by the model, discarded: over the news keep cap)"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42712696?fc=20260609215449&ff=20260909151755&v=2.20.1",
+   "title_hash": "d97ed8a73fb65f4a9beedacb2fa832a2",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "Oncologists' knowledge, attitudes and needs about artificial intelligence in clinical oncology in Luxembourg in 2026: a national cross-sectional survey (AICO study)",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-09T10:00:00+00:00",
+   "summary": "A Luxembourg survey of oncologists shows gaps between current adoption of artificial intelligence and clinician readiness, highlighting needs for training and ethical governance.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42712325?fc=20260609215449&ff=20260909151755&v=2.20.1",
+   "title_hash": "b1e830887bfde44d43d2fc3c31021dcd",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "Priorities for artificial intelligence education: clinicians' perspectives",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-09T10:00:00+00:00",
+   "summary": "A study of clinician perspectives on artificial intelligence training identifies a mismatch: practitioners prioritize liability and algorithm confidence while educators emphasize critical appraisal and patient communication.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42712307?fc=20260609215449&ff=20260909151755&v=2.20.1",
+   "title_hash": "770ad866ac5e33a292137080e76d524e",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "no abstract provided, insufficient information to evaluate"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42712209?fc=20260609215449&ff=20260909151755&v=2.20.1",
+   "title_hash": "b16f448470408841f975c5cf73c49d53",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "How Well Do AI Chatbots Understand Abnormal Anatomy: A Comparative Study Using Congenital Anomalies and Tumor Cases",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-09T10:00:00+00:00",
+   "summary": "A comparative study evaluates how well large language model chatbots understand and reason about abnormal anatomy in congenital and tumor cases.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://gpu-lexer.vercel.app/",
+   "title_hash": "708c93782a239c55d323b7a11685cfcd",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "niche software tool announcement unrelated to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03235-8",
+   "title_hash": "7b4ced1c8225cf40f675548b1c2819db",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "DystoniaDBSNet as a novel deep learning biomarker of predictive deep brain stimulation outcome in dystonia",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-09T00:00:00+00:00",
+   "summary": "A deep learning model predicts outcomes of deep brain stimulation for dystonia, offering a biomarker for treatment planning.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03229-6",
+   "title_hash": "4115ff1b2ef91958e285051d3592d24b",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "A domain-specific large language model for evidence-based nursing: development and multi-method evaluation of EviNurse",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-09T00:00:00+00:00",
+   "summary": "Researchers develop and evaluate EviNurse, a domain-specific large language model designed to support evidence-based nursing practice.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04678-y",
+   "title_hash": "7559b9568107dd7b789f9ac6c249ed7e",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "author correction for a basic biology paper unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=e7t9HU2Z6t8",
+   "title_hash": "a70cbcb2a48f42813f6c8609df7fc3c8",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": false,
+   "reason": "speculation or rumor without identified underlying event"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=O_EWbnkjXdk",
+   "title_hash": "1a251cd81d4c5a29000e3d9ea5f404b9",
+   "first_seen": "2026-09-09T19:17:55.474650+00:00",
+   "kept": true,
+   "title": "Can AI help us better predict the weather?",
+   "source": "Google DeepMind",
+   "published": "2026-09-09T16:10:39+00:00",
+   "summary": "Google DeepMind explores how artificial intelligence can improve weather prediction, with discussion from Professor Hannah Fry and researchers.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i4.ytimg.com/vi/O_EWbnkjXdk/hqdefault.jpg",
+   "display_title": "AI applications in weather prediction"
   }
  ],
  "digests": [

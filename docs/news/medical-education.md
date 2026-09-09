@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="simulation-and-skills">
@@ -33,6 +33,41 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e92486">Effect of Large Language Model, Powered Virtual Standardized Patients on History-Taking Among Undergraduate Medical Students: Propensity-Matched Cohort Study</a>
     <p class="news-card-summary">Propensity-matched cohort study found that large language model powered virtual standardized patients improved history-taking performance in undergraduate medical students.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42714363?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Beyond the Algorithm: A Stewardship Framework for the Hand Surgeon Adopting Artificial Intelligence</a>
+    <p class="news-card-summary">A framework for hand surgeons outlines how to evaluate and safely adopt artificial intelligence tools for imaging, outcome prediction, and patient communication despite validation gaps.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712985?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Generative artificial intelligence in medical education: from knowledge assessment to clinical reasoning and professional competence</a>
+    <p class="news-card-summary">A systematic literature review synthesizes evidence on how generative AI and large language models are being applied across medical education from knowledge assessment to clinical reasoning development.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712696?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Oncologists&#x27; knowledge, attitudes and needs about artificial intelligence in clinical oncology in Luxembourg in 2026: a national cross-sectional survey (AICO study)</a>
+    <p class="news-card-summary">A Luxembourg survey of oncologists shows gaps between current adoption of artificial intelligence and clinician readiness, highlighting needs for training and ethical governance.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712325?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Priorities for artificial intelligence education: clinicians&#x27; perspectives</a>
+    <p class="news-card-summary">A study of clinician perspectives on artificial intelligence training identifies a mismatch: practitioners prioritize liability and algorithm confidence while educators emphasize critical appraisal and patient communication.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712209?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">How Well Do AI Chatbots Understand Abnormal Anatomy: A Comparative Study Using Congenital Anomalies and Tumor Cases</a>
+    <p class="news-card-summary">A comparative study evaluates how well large language model chatbots understand and reason about abnormal anatomy in congenital and tumor cases.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -89,41 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42702837?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1">&#x27;Apply caution&#x27; Medical educator perspectives on undergraduate students using AI in reflection: a qualitative study</a>
     <p class="news-card-summary">Qualitative study of medical educators identifies ethical and pedagogical concerns about students using generative AI for professional reflection.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42704109?fc=20260609215449&amp;ff=20260907155900&amp;v=2.20.1">Elucidating the transformative role of large language models in advancing anesthesiology education</a>
-    <p class="news-card-summary">A narrative review synthesizes evidence on large language model implementation in anesthesiology training, identifying four validated use cases for clinical education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42704695?fc=20260609215449&amp;ff=20260907185139&amp;v=2.20.1">Select large language models outperform hip preservation experts on consensus-based hip preservation questionnaire</a>
-    <p class="news-card-summary">Two large language models outperformed expert panelists on a consensus-based hip preservation questionnaire, showing improving accuracy on structured clinical questions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42705636?fc=20260609215449&amp;ff=20260908004122&amp;v=2.20.1">AI at the Bedside: An Argument for a Training Wheels Approach</a>
-    <p class="news-card-summary">Opinion piece argues for graduated clinical introduction of generative AI tools, balancing clinician efficiency gains against patient and trainee acceptance concerns.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.04336">MedProb: Probing Internal Representations of Vision-Language Models for Medical Question Answering</a>
-    <p class="news-card-summary">MedProb is a lightweight framework that extracts medical visual question-answering answers from frozen vision-language model representations without fine-tuning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">A six-point plan to prepare psychiatrists in training for the age of AI</a>
-    <p class="news-card-summary">Editorial proposing a six-point plan for psychiatry training programs to prepare residents for clinical and educational impacts of artificial intelligence.</p>
   </div>
 </div>
 </div>
