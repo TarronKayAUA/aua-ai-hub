@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/is-ai-in-education-reaching-an-inflection-point" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Is AI in Education Reaching an Inflection Point?" loading="lazy">
+  <span class="video-card-title">Is AI in Education Reaching an Inflection Point?</span>
+  <span class="video-card-meta">AI in Education Podcast, September 10, 2026</span>
+  <span class="video-card-desc">Panelists discuss whether AI adoption in education has reached a tipping point, examining recent developments in policy, employment, and public trust.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Agentic-Loops-for-Knowledge-Workers-e3oaiu2" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Agentic Loops for Knowledge Workers" loading="lazy">
   <span class="video-card-title">Agentic Loops for Knowledge Workers</span>

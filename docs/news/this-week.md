@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e102958">Promise, Mimicry, and Surveillance: Responsibly Integrating Artificial Intelligence With Socratic Inquiry in Medical Education</a>
+        <p class="news-card-summary">A viewpoint examines the promise and risks of using large language models for Socratic dialogue in medical education, highlighting failure modes deserving greater attention than current discussion.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
@@ -48,6 +55,27 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42718612?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">Multi-view AI output variability as a teaching resource in a micro-course for thyroid TI-RADS interpretation among ultrasound residents: a randomized controlled trial</a>
         <p class="news-card-summary">Structured micro-course using variable AI outputs improved thyroid ultrasound interpretation accuracy in residents but benefits did not persist at four-week follow-up.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42721453?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Feasibility of AI and Human Standardized Patients to Enhance Customer Discovery Communication Skills in Medical Students: Preliminary Evaluation of an Observational Cohort Study</a>
+        <p class="news-card-summary">A preliminary study demonstrates that AI chatbots can replicate realistic customer discovery interviews for medical student training, with recommendations for larger feasibility studies.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42721094?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Self-Reported Knowledge, Attitudes, Perceptions, and Readiness Regarding AI Among Obstetrics and Gynecology Trainees: Cross-Sectional Study</a>
+        <p class="news-card-summary">A cross-sectional study of obstetrics and gynecology trainees in Jordan found moderate AI knowledge and positive attitudes, with most supporting formal AI training integration.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42720906?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Artificial intelligence in reproductive medicine and education: current evidence, challenges, and future directions</a>
+        <p class="news-card-summary">A review of AI in reproductive medicine education concludes that AI serves best as a supervised adjunct with phased integration, explicit guardrails, and careful evaluation.</p>
       </div>
     </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
@@ -316,13 +344,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Randomized controlled trial of a multiagent AI system designed to scaffold problem-based learning for medical interns, comparing facilitated and unfacilitated AI-supported approaches.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e96819">What Platform Scores Miss: Multidimensional Evaluation of AI Teaching Agents in Medical Education</a>
-        <p class="news-card-summary">Study develops and validates a multidimensional rubric for evaluating AI teaching agents beyond platform-generated scores to assess true pedagogical quality.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
@@ -347,9 +368,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
@@ -405,6 +426,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04695-x">Computable longitudinal patient journeys from structured and unstructured EHR data</a>
         <p class="news-card-summary">Pre-trained language models extract clinical data from unstructured electronic health records and construct knowledge graphs to map patient trajectories and treatment responses.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03070-x">RDMA: cost effective agent-driven rare disease mining from electronic health records</a>
+        <p class="news-card-summary">A study describes an agent-driven system for cost-effective rare disease discovery from electronic health records using AI.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -615,20 +643,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">An LLM-based clinical assistant integrating longitudinal electronic health records can forecast maternal and infant conditions to support risk-stratified prenatal and postnatal care.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03155-7">A five-phase evaluation framework for diagnostic and predictive medical artificial intelligence</a>
-        <p class="news-card-summary">Framework proposes five phases for systematic evaluation of diagnostic and predictive medical artificial intelligence systems.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03191-3">The illusion of clinical reasoning: a benchmark reveals the pervasive gap in vision-language models for clinical competency</a>
-        <p class="news-card-summary">A benchmark assessment reveals vision-language models fail to demonstrate genuine clinical reasoning despite appearing competent on surface metrics.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
@@ -646,9 +660,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 33 items"
+??? abstract "Show the 30 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (30)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -721,6 +735,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Research finds that large language models develop novel social biases through adaptive exploration during deployment rather than merely reflecting training data.</p>
       </div>
     </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 8, 2026</span></div>
+        <a class="news-card-title" href="https://magic.dev/blog/pretraining">Compute-efficient pretraining and scaling to trillion-parameter models</a>
+        <p class="news-card-summary">A technical article from Magic.dev presents methods for compute-efficient pretraining and scaling of large language models to trillion-parameter scales.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 8, 2026</span></div>
@@ -744,6 +765,14 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Google DeepMind&#x27;s AlphaGenome Atlas uses artificial intelligence to create a predictive map of DNA variants, potentially accelerating research into disease mechanisms and treatments.</p>
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wan3nl/deepseek_flash_41_is_already_being_tested_via_api">DeepSeek Flash 4.1 is already being tested via API and rolling out.</a>
+        <p class="news-card-summary">DeepSeek released Flash 4.1, an intermediate model version featuring native multimodal support, improved capabilities, faster inference, and lower costs.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/ca91w26riaoh1.jpg?width=140&amp;height=69&amp;auto=webp&amp;s=cb300f82ce5e0cc3bad3ca1e2b9427b9aa8b8434" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -861,55 +890,21 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">OpenAI released GPT-6 Astra to limited organizations initially, rolling out to ChatGPT Plus, Pro, Business, and Enterprise users and the API at Claude Opus pricing.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release">OpenAI’s next big AI model has ‘entered the AGI era’</a>
-        <p class="news-card-summary">OpenAI releases GPT-6 Astra, described as a generational capability advance in cybersecurity, software engineering, science, and computer use.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS522_AGI_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook">Nvidia launches free tool that links idle computers into a personal AI data center</a>
-        <p class="news-card-summary">Nvidia releases Personal AI Router, free open-source software for coordinating local AI inference across multiple home computers.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Screenshot-2026-09-03-at-10.42.02-AM.png?quality=90&amp;strip=all&amp;crop=0%2C3.342396806572%2C100%2C93.315206386856&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://ifm.ai/blog/k2">K2 Horizon: A connected fleet of six open models</a>
-        <p class="news-card-summary">K2 Horizon releases a connected fleet of six open-weights models supporting diverse application requirements.</p>
-      </div>
-      <img class="news-card-thumb" src="https://ifm.ai/blog/k2/assets/k2-horizon-social.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://huggingface.co/blog/Hcompany/neomme">NeoMME: an efficient Multimodal-native and Multilingual Encoder</a>
-        <p class="news-card-summary">Hugging Face releases NeoMME, an efficient multimodal and multilingual encoder model.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/6264f9655f6f2e14d6ac981c/GJ6FUbgFpq1x8RNOqzmz-.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://github.com/mlc-ai/web-llm">WebLLM: high-performance in-browser LLM inference engine</a>
-        <p class="news-card-summary">WebLLM provides a high-performance in-browser inference engine for large language models.</p>
-      </div>
-      <img class="news-card-thumb" src="https://opengraph.githubassets.com/13ca5c82c1e87d3a6a42e37488f35a796f50f6af452de27bb2801312577645e4/mlc-ai/web-llm" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 14 videos"
+??? abstract "Show the 15 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=2YHa1vhnmK0" target="_blank" rel="noopener" title="Introducing the Agents API">
+      <img src="https://i3.ytimg.com/vi/2YHa1vhnmK0/hqdefault.jpg" alt="Video: OpenAI Agents API announcement" loading="lazy">
+      <span class="video-card-title">OpenAI Agents API announcement</span>
+      <span class="video-card-meta">OpenAI, September 10, 2026</span>
+      <span class="video-card-desc">OpenAI introduces the Agents API for building and deploying autonomous agents at scale with hosted infrastructure.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=0XLGisanEAs" target="_blank" rel="noopener" title="Discovering new antibiotics with ChatGPT">
       <img src="https://i1.ytimg.com/vi/0XLGisanEAs/hqdefault.jpg" alt="Video: Using ChatGPT to discover new antibiotics" loading="lazy">
       <span class="video-card-title">Using ChatGPT to discover new antibiotics</span>
@@ -998,9 +993,15 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Podcasts
 
-??? abstract "Show the 2 episodes"
+??? abstract "Show the 3 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://aipodcast.education/is-ai-in-education-reaching-an-inflection-point" target="_blank" rel="noopener">
+      <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Is AI in Education Reaching an Inflection Point?" loading="lazy">
+      <span class="video-card-title">Is AI in Education Reaching an Inflection Point?</span>
+      <span class="video-card-meta">AI in Education Podcast, September 10, 2026</span>
+      <span class="video-card-desc">Panelists discuss whether AI adoption in education has reached a tipping point, examining recent developments in policy, employment, and public trust.</span>
+    </a>
     <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Agentic-Loops-for-Knowledge-Workers-e3oaiu2" target="_blank" rel="noopener">
       <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Agentic Loops for Knowledge Workers" loading="lazy">
       <span class="video-card-title">Agentic Loops for Knowledge Workers</span>

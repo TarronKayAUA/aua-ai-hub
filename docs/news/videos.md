@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=2YHa1vhnmK0" target="_blank" rel="noopener" title="Introducing the Agents API">
+  <img src="https://i3.ytimg.com/vi/2YHa1vhnmK0/hqdefault.jpg" alt="Video: OpenAI Agents API announcement" loading="lazy">
+  <span class="video-card-title">OpenAI Agents API announcement</span>
+  <span class="video-card-meta">OpenAI, September 10, 2026</span>
+  <span class="video-card-desc">OpenAI introduces the Agents API for building and deploying autonomous agents at scale with hosted infrastructure.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=0XLGisanEAs" target="_blank" rel="noopener" title="Discovering new antibiotics with ChatGPT">
   <img src="https://i1.ytimg.com/vi/0XLGisanEAs/hqdefault.jpg" alt="Video: Using ChatGPT to discover new antibiotics" loading="lazy">
   <span class="video-card-title">Using ChatGPT to discover new antibiotics</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Claude Fable 5.1 technical testing and benchmark review</span>
   <span class="video-card-meta">Bijan Bowen, September 1, 2026</span>
   <span class="video-card-desc">Technical hands-on testing of Claude Fable 5.1 across benchmarks, browser automation, and coding tasks with performance analysis.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=ROF2Nv_KjOM" target="_blank" rel="noopener" title="Introducing Claude Fable 5.1">
-  <img src="https://i3.ytimg.com/vi/ROF2Nv_KjOM/hqdefault.jpg" alt="Video: Claude Fable 5.1 model announcement" loading="lazy">
-  <span class="video-card-title">Claude Fable 5.1 model announcement</span>
-  <span class="video-card-meta">Anthropic, September 1, 2026</span>
-  <span class="video-card-desc">Anthropic announces Claude Fable 5.1, an upgrade to its most capable model class with improvements in complex tasks and research capabilities.</span>
 </a>
 </div>
 

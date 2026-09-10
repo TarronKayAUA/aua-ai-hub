@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e102958">Promise, Mimicry, and Surveillance: Responsibly Integrating Artificial Intelligence With Socratic Inquiry in Medical Education</a>
+    <p class="news-card-summary">A viewpoint examines the promise and risks of using large language models for Socratic dialogue in medical education, highlighting failure modes deserving greater attention than current discussion.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
@@ -47,6 +54,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42718612?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">Multi-view AI output variability as a teaching resource in a micro-course for thyroid TI-RADS interpretation among ultrasound residents: a randomized controlled trial</a>
     <p class="news-card-summary">Structured micro-course using variable AI outputs improved thyroid ultrasound interpretation accuracy in residents but benefits did not persist at four-week follow-up.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42721453?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Feasibility of AI and Human Standardized Patients to Enhance Customer Discovery Communication Skills in Medical Students: Preliminary Evaluation of an Observational Cohort Study</a>
+    <p class="news-card-summary">A preliminary study demonstrates that AI chatbots can replicate realistic customer discovery interviews for medical student training, with recommendations for larger feasibility studies.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42721094?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Self-Reported Knowledge, Attitudes, Perceptions, and Readiness Regarding AI Among Obstetrics and Gynecology Trainees: Cross-Sectional Study</a>
+    <p class="news-card-summary">A cross-sectional study of obstetrics and gynecology trainees in Jordan found moderate AI knowledge and positive attitudes, with most supporting formal AI training integration.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42720906?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Artificial intelligence in reproductive medicine and education: current evidence, challenges, and future directions</a>
+    <p class="news-card-summary">A review of AI in reproductive medicine education concludes that AI serves best as a supervised adjunct with phased integration, explicit guardrails, and careful evaluation.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -96,34 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712696?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Oncologists&#x27; knowledge, attitudes and needs about artificial intelligence in clinical oncology in Luxembourg in 2026: a national cross-sectional survey (AICO study)</a>
     <p class="news-card-summary">A Luxembourg survey of oncologists shows gaps between current adoption of artificial intelligence and clinician readiness, highlighting needs for training and ethical governance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712325?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Priorities for artificial intelligence education: clinicians&#x27; perspectives</a>
-    <p class="news-card-summary">A study of clinician perspectives on artificial intelligence training identifies a mismatch: practitioners prioritize liability and algorithm confidence while educators emphasize critical appraisal and patient communication.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712209?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">How Well Do AI Chatbots Understand Abnormal Anatomy: A Comparative Study Using Congenital Anomalies and Tumor Cases</a>
-    <p class="news-card-summary">A comparative study evaluates how well large language model chatbots understand and reason about abnormal anatomy in congenital and tumor cases.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42715712?fc=20260609215449&amp;ff=20260910004639&amp;v=2.20.1">Leveraging Natural Language Processing for Analysis of EPA Comment Quality by Automated QuAL Scoring</a>
-    <p class="news-card-summary">Natural language processing analysis of evaluation comments in medical education reveals that three-quarters lack improvement suggestions, identifying a gap in feedback quality.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03197-x">A global framework for artificial intelligence education in medicine: international working group recommendations</a>
-    <p class="news-card-summary">International working group published recommendations for a global framework on artificial intelligence education in medical schools and training programs.</p>
   </div>
 </div>
 </div>

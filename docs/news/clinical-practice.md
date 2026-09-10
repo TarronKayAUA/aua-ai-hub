@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -77,6 +77,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Pre-trained language models extract clinical data from unstructured electronic health records and construct knowledge graphs to map patient trajectories and treatment responses.</p>
   </div>
 </div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03070-x">RDMA: cost effective agent-driven rare disease mining from electronic health records</a>
+    <p class="news-card-summary">A study describes an agent-driven system for cost-effective rare disease discovery from electronic health records using AI.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
@@ -121,13 +128,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 9, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.05682">A Rubric-Guided Large Language Model Solution for Opioid Use Disorder Computable Phenotyping</a>
     <p class="news-card-summary">Large language models guided by clinical rubrics can identify opioid use disorder from electronic health records by extracting evidence from clinical narratives where diagnosis codes are missing.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.05728">MedWER: A Reproducible, Model-Free Evaluation Protocol for Medical Speech Recognition</a>
-    <p class="news-card-summary">A model-free evaluation metric for medical speech recognition weights clinically critical errors like drug-name substitutions rather than raw word accuracy.</p>
   </div>
 </div>
 </div>

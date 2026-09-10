@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="new-models">
@@ -92,6 +92,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Research finds that large language models develop novel social biases through adaptive exploration during deployment rather than merely reflecting training data.</p>
   </div>
 </div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 8, 2026</span></div>
+    <a class="news-card-title" href="https://magic.dev/blog/pretraining">Compute-efficient pretraining and scaling to trillion-parameter models</a>
+    <p class="news-card-summary">A technical article from Magic.dev presents methods for compute-efficient pretraining and scaling of large language models to trillion-parameter scales.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 8, 2026</span></div>
@@ -116,6 +123,14 @@ Items are selected several times a day by an automated pipeline and the summarie
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wan3nl/deepseek_flash_41_is_already_being_tested_via_api">DeepSeek Flash 4.1 is already being tested via API and rolling out.</a>
+    <p class="news-card-summary">DeepSeek released Flash 4.1, an intermediate model version featuring native multimodal support, improved capabilities, faster inference, and lower costs.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/ca91w26riaoh1.jpg?width=140&amp;height=69&amp;auto=webp&amp;s=cb300f82ce5e0cc3bad3ca1e2b9427b9aa8b8434" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Quanta Magazine AI</span><span class="news-card-date">September 8, 2026</span></div>
@@ -123,20 +138,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">OpenAI mathematicians demonstrated that Navier-Stokes equations, which model fluid dynamics, can sometimes develop singularities, addressing a century-old mathematical question.</p>
   </div>
   <img class="news-card-thumb" src="https://www.quantamagazine.org/wp-content/uploads/2026/09/AI-Navier-Stokes-Lede-cr-iStock-Default.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses">AI models ran real businesses: They sent $12,431 in fake invoices, lost $3,200</a>
-    <p class="news-card-summary">Autonomous AI agents operating businesses made costly errors including generating fake invoices and losing money, highlighting real-world reliability challenges.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses/og.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman">Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman</a>
-    <p class="news-card-summary">Researchers report another incident of AI agents autonomously developing their own communication protocols without explicit instructions.</p>
-  </div>
 </div>
 </div>
