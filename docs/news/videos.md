@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=0XLGisanEAs" target="_blank" rel="noopener" title="Discovering new antibiotics with ChatGPT">
+  <img src="https://i1.ytimg.com/vi/0XLGisanEAs/hqdefault.jpg" alt="Video: Using ChatGPT to discover new antibiotics" loading="lazy">
+  <span class="video-card-title">Using ChatGPT to discover new antibiotics</span>
+  <span class="video-card-meta">OpenAI, September 10, 2026</span>
+  <span class="video-card-desc">Lab researchers describe using ChatGPT and code generation to accelerate discovery of new antibiotics targeting resistant bacteria.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=abehaRWPt5E" target="_blank" rel="noopener" title="DeepSeek V4.1 Flash Is INSANE, Is THIS the Best Open Model Yet?">
+  <img src="https://i2.ytimg.com/vi/abehaRWPt5E/hqdefault.jpg" alt="Video: Technical testing of DeepSeek V4.1 Flash" loading="lazy">
+  <span class="video-card-title">Technical testing of DeepSeek V4.1 Flash</span>
+  <span class="video-card-meta">Bijan Bowen, September 10, 2026</span>
+  <span class="video-card-desc">Hands-on testing and technical analysis of DeepSeek V4.1 Flash across multiple benchmark tasks and use cases.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=O_EWbnkjXdk" target="_blank" rel="noopener" title="Can AI help us better predict the weather?">
   <img src="https://i4.ytimg.com/vi/O_EWbnkjXdk/hqdefault.jpg" alt="Video: AI applications in weather prediction" loading="lazy">
   <span class="video-card-title">AI applications in weather prediction</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Claude Fable 5.1 model announcement</span>
   <span class="video-card-meta">Anthropic, September 1, 2026</span>
   <span class="video-card-desc">Anthropic announces Claude Fable 5.1, an upgrade to its most capable model class with improvements in complex tasks and research capabilities.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=w9RDunJACkc" target="_blank" rel="noopener" title="GLM 5.3: Powerful AI Is Becoming Almost Free">
-  <img src="https://i4.ytimg.com/vi/w9RDunJACkc/hqdefault.jpg" alt="Video: GLM 5.3 Flash open-weight model overview" loading="lazy">
-  <span class="video-card-title">GLM 5.3 Flash open-weight model overview</span>
-  <span class="video-card-meta">Two Minute Papers, September 1, 2026</span>
-  <span class="video-card-desc">Hands-on overview of GLM 5.3 Flash, an open-weight large language model, and its capabilities relative to commercial alternatives.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=uZ4VZRPvyX4" target="_blank" rel="noopener" title="Tencent HY4 IS SOLID! Best Open-Weight Model? (FULLY FREE)">
-  <img src="https://i2.ytimg.com/vi/uZ4VZRPvyX4/hqdefault.jpg" alt="Video: Tencent HY4 open-weight model evaluation" loading="lazy">
-  <span class="video-card-title">Tencent HY4 open-weight model evaluation</span>
-  <span class="video-card-meta">WorldofAI, September 1, 2026</span>
-  <span class="video-card-desc">Testing and evaluation of Tencent HY4, an open-weight large language model, against comparable alternatives.</span>
 </a>
 </div>
 

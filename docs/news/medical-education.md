@@ -18,9 +18,37 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95772">Profiling Human-AI Regulatory Support in Technology-Enhanced Interprofessional Education Among Health Professions Students: Person-Centered Exploratory Study</a>
+    <p class="news-card-summary">Study examines how health professions students integrate self-regulated learning with AI-based support during technology-enhanced interprofessional education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">Assessment Design in the Era of Large Language Models: Evidence From Japanese Health Professions Licensing Examinations</a>
+    <p class="news-card-summary">Study of large language model performance on Japanese health licensing exams shows domain, search access, and visual content strongly influence results, informing assessment design.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="other">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42719270?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">The potential of large language models to address patients&#x27; preoperative questions before anterior cervical discectomy and fusion surgery</a>
+    <p class="news-card-summary">Large language models provide accurate preoperative patient education for cervical spine surgery but lack individualized risk assessment, suitable as physician counseling aids only.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42718612?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">Multi-view AI output variability as a teaching resource in a micro-course for thyroid TI-RADS interpretation among ultrasound residents: a randomized controlled trial</a>
+    <p class="news-card-summary">Structured micro-course using variable AI outputs improved thyroid ultrasound interpretation accuracy in residents but benefits did not persist at four-week follow-up.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
@@ -96,34 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03197-x">A global framework for artificial intelligence education in medicine: international working group recommendations</a>
     <p class="news-card-summary">International working group published recommendations for a global framework on artificial intelligence education in medical schools and training programs.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e97608">Role-Differentiated AI Competencies and Curriculum Implications for Health Professions Education: Qualitative Study</a>
-    <p class="news-card-summary">Qualitative study identifies role-specific AI competencies health professionals need, filling a gap between general AI literacy and domain-specific clinical practice requirements.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42708899?fc=20260609215449&amp;ff=20260908152637&amp;v=2.20.1">Developing validity arguments for artificial intelligence-based assessment: Balancing affordances and threats</a>
-    <p class="news-card-summary">Validity for AI-based assessment requires ongoing governance as a sociotechnical system, with explicit validity arguments, auditability, multi-site evaluation, and continuous monitoring of consequences.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42709992?fc=20260609215449&amp;ff=20260908184234&amp;v=2.20.1">Sentence-Level Provenance for AI Medical Record Summarization in a Click-to-Inspect Interface: Formative Usability Evaluation</a>
-    <p class="news-card-summary">Usability study shows that sentence-level provenance in AI-generated medical summaries enables clinicians to verify individual claims interactively, reducing verification burden in high-stakes contexts.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42709552?fc=20260609215449&amp;ff=20260908184234&amp;v=2.20.1">Stigma-sensitive communication in medical students: an AI-supported simulation of a patient living with HIV</a>
-    <p class="news-card-summary">Study examines medical students&#x27; stigma-sensitive communication skills during simulated patient interviews with ChatGPT-4o acting as a standardized patient living with HIV.</p>
   </div>
 </div>
 </div>

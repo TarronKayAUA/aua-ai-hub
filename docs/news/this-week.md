@@ -18,10 +18,38 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 41 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95772">Profiling Human-AI Regulatory Support in Technology-Enhanced Interprofessional Education Among Health Professions Students: Person-Centered Exploratory Study</a>
+        <p class="news-card-summary">Study examines how health professions students integrate self-regulated learning with AI-based support during technology-enhanced interprofessional education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">Assessment Design in the Era of Large Language Models: Evidence From Japanese Health Professions Licensing Examinations</a>
+        <p class="news-card-summary">Study of large language model performance on Japanese health licensing exams shows domain, search access, and visual content strongly influence results, informing assessment design.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="other">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42719270?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">The potential of large language models to address patients&#x27; preoperative questions before anterior cervical discectomy and fusion surgery</a>
+        <p class="news-card-summary">Large language models provide accurate preoperative patient education for cervical spine surgery but lack individualized risk assessment, suitable as physician counseling aids only.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42718612?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">Multi-view AI output variability as a teaching resource in a micro-course for thyroid TI-RADS interpretation among ultrasound residents: a randomized controlled trial</a>
+        <p class="news-card-summary">Structured micro-course using variable AI outputs improved thyroid ultrasound interpretation accuracy in residents but benefits did not persist at four-week follow-up.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
@@ -319,10 +347,24 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87794">AI-Based Approaches for the Identification and Quantification of Traumatic Brain Injury in Computed Tomography Imaging: Systematic Review</a>
+        <p class="news-card-summary">Systematic review of AI methods for identifying and quantifying traumatic brain injury in CT scans, addressing diagnostic delays in resource-limited settings.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93501">Enhancing Patients’ Informed Consent Through AI: Systematic Review</a>
+        <p class="news-card-summary">Systematic review examines AI applications for improving patient understanding and comprehension during informed consent processes for medical procedures.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
@@ -356,6 +398,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04631-z">Initial lessons from real-world implementation of an AI-agent eye clinic in China</a>
         <p class="news-card-summary">Real-world implementation of an AI-native eye clinic in China reveals that workflow integration, clinician engagement, and demonstrated clinical value are essential to transition from AI-assisted to integrated care models.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04695-x">Computable longitudinal patient journeys from structured and unstructured EHR data</a>
+        <p class="news-card-summary">Pre-trained language models extract clinical data from unstructured electronic health records and construct knowledge graphs to map patient trajectories and treatment responses.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -597,10 +646,18 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 32 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://cognition.com/blog/swe-2">Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra</a>
+        <p class="news-card-summary">Cognition released SWE-2, a software engineering model claimed to rival competing offerings in code generation capabilities.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cognition.com/images/swe-2/cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 10, 2026</span></div>
@@ -850,9 +907,21 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 12 videos"
+??? abstract "Show the 14 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=0XLGisanEAs" target="_blank" rel="noopener" title="Discovering new antibiotics with ChatGPT">
+      <img src="https://i1.ytimg.com/vi/0XLGisanEAs/hqdefault.jpg" alt="Video: Using ChatGPT to discover new antibiotics" loading="lazy">
+      <span class="video-card-title">Using ChatGPT to discover new antibiotics</span>
+      <span class="video-card-meta">OpenAI, September 10, 2026</span>
+      <span class="video-card-desc">Lab researchers describe using ChatGPT and code generation to accelerate discovery of new antibiotics targeting resistant bacteria.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=abehaRWPt5E" target="_blank" rel="noopener" title="DeepSeek V4.1 Flash Is INSANE, Is THIS the Best Open Model Yet?">
+      <img src="https://i2.ytimg.com/vi/abehaRWPt5E/hqdefault.jpg" alt="Video: Technical testing of DeepSeek V4.1 Flash" loading="lazy">
+      <span class="video-card-title">Technical testing of DeepSeek V4.1 Flash</span>
+      <span class="video-card-meta">Bijan Bowen, September 10, 2026</span>
+      <span class="video-card-desc">Hands-on testing and technical analysis of DeepSeek V4.1 Flash across multiple benchmark tasks and use cases.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=O_EWbnkjXdk" target="_blank" rel="noopener" title="Can AI help us better predict the weather?">
       <img src="https://i4.ytimg.com/vi/O_EWbnkjXdk/hqdefault.jpg" alt="Video: AI applications in weather prediction" loading="lazy">
       <span class="video-card-title">AI applications in weather prediction</span>

@@ -18,9 +18,17 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://cognition.com/blog/swe-2">Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra</a>
+    <p class="news-card-summary">Cognition released SWE-2, a software engineering model claimed to rival competing offerings in code generation capabilities.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cognition.com/images/swe-2/cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 10, 2026</span></div>
@@ -129,13 +137,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">September 7, 2026</span></div>
     <a class="news-card-title" href="https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman">Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman</a>
     <p class="news-card-summary">Researchers report another incident of AI agents autonomously developing their own communication protocols without explicit instructions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.04290">Evidence Integration in Large Language Models</a>
-    <p class="news-card-summary">Research on how large language models integrate external evidence into decision-making through distributional theory of evidence combination.</p>
   </div>
 </div>
 </div>

@@ -1,86 +1,6 @@
 {
  "items": [
   {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&ff=20260712095756&v=2.20.0",
-   "title_hash": "ace7fa7a77b6742f7895c5fefbc0e63d",
-   "first_seen": "2026-07-12T13:57:56.077500+00:00",
-   "kept": true,
-   "title": "Readiness and Knowledge of Medical Students and Staff in the UAE Toward the Integration of Artificial Intelligence in Medicine",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-12T10:00:00+00:00",
-   "summary": "Study examines medical students' and staff readiness to integrate artificial intelligence into clinical practice in the UAE, identifying training gaps and barriers to curriculum adoption.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42436893?fc=20260609215449&ff=20260712095756&v=2.20.0",
-   "title_hash": "ccc3b57e9fdde7c7755330e15b962f1c",
-   "first_seen": "2026-07-12T13:57:56.077500+00:00",
-   "kept": true,
-   "title": "Performance evaluation of five major large language models in tuberculosis Q&A systems: A multidimensional assessment of readability, quality, and reliability",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-12T10:00:00+00:00",
-   "summary": "Comparative evaluation of five large language models for tuberculosis education shows model type significantly affects text quality and readability in AI-assisted health education.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42436873?fc=20260609215449&ff=20260712095756&v=2.20.0",
-   "title_hash": "ae50fd96d02a6257310d01b6784231e7",
-   "first_seen": "2026-07-12T13:57:56.077500+00:00",
-   "kept": true,
-   "title": "Agentic artificial intelligence in medicine and biomedical research: A primer and framework for clinicians and researchers",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-12T10:00:00+00:00",
-   "summary": "Primer and framework for clinicians and researchers on agentic artificial intelligence applications in medicine and biomedical research.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Other"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42436605?fc=20260609215449&ff=20260712095756&v=2.20.0",
-   "title_hash": "a1373e5d73ea13cdc7e403f919f08f56",
-   "first_seen": "2026-07-12T13:57:56.077500+00:00",
-   "kept": false,
-   "reason": "narrow clinical application, not primarily about AI education or broader deployment"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uu15mz/chinas_deepseek_developing_its_own_ai_chip",
-   "title_hash": "c43b9eec43c726afc746ebc88a8d0850",
-   "first_seen": "2026-07-12T13:57:56.077500+00:00",
-   "kept": false,
-   "reason": "rumor and industry gossip without primary source confirmation"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1usy9ie/tencenthy3_is_the_real_deal_on_128gb",
-   "title_hash": "e91209856a9c037e91c7480441f08b76",
-   "first_seen": "2026-07-12T13:57:56.077500+00:00",
-   "kept": false,
-   "reason": "personal blog post / forum discussion without substantive news"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Help-People-Thrive-with-AI-e3lvj3p",
-   "title_hash": "6a09e35a500eefade7588f66fa257403",
-   "first_seen": "2026-07-12T13:57:56.077500+00:00",
-   "kept": false,
-   "reason": "daily news show recap with no specific development or interview subject named"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02932-8",
-   "title_hash": "b62249ead6f91ac60d86151ad5b07561",
-   "first_seen": "2026-07-12T17:19:59.339557+00:00",
-   "kept": true,
-   "title": "A clinician aligned vision language framework for stepwise interpretation in fundus fluorescein angiography",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-12T00:00:00+00:00",
-   "summary": "Researchers developed a vision-language AI framework aligned with clinician workflows for interpreting fundus fluorescein angiography images step-by-step.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uuga40/local_image_to_3d_2gb_ram_20s_apple_silicon_iphone",
    "title_hash": "4d8fc4a59fce7dd750e9fbddfffcaa9a",
    "first_seen": "2026-07-12T21:08:26.734935+00:00",
@@ -32986,6 +32906,244 @@
    "first_seen": "2026-09-10T12:56:23.234897+00:00",
    "kept": false,
    "reason": "promotional episode with no substantive content description; appears to prioritize personality and entertainment over technical or educational substance"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e87794",
+   "title_hash": "38ba2d53d747c46334826705f79951e4",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "AI-Based Approaches for the Identification and Quantification of Traumatic Brain Injury in Computed Tomography Imaging: Systematic Review",
+   "source": "JMIR AI",
+   "published": "2026-09-10T18:45:14+00:00",
+   "summary": "Systematic review of AI methods for identifying and quantifying traumatic brain injury in CT scans, addressing diagnostic delays in resource-limited settings.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e93501",
+   "title_hash": "27b4536d99fd58bb5dc5be030bd9ab2a",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "Enhancing Patients’ Informed Consent Through AI: Systematic Review",
+   "source": "JMIR AI",
+   "published": "2026-09-10T18:45:14+00:00",
+   "summary": "Systematic review examines AI applications for improving patient understanding and comprehension during informed consent processes for medical procedures.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e93885",
+   "title_hash": "9bec413d3d14ecc435cead9800375f6c",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "narrow domain bibliometric analysis without clinical findings or AI capability results"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e95772",
+   "title_hash": "ad5d8e04e32110fa4dbb09e155a7894a",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "Profiling Human-AI Regulatory Support in Technology-Enhanced Interprofessional Education Among Health Professions Students: Person-Centered Exploratory Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-10T18:30:15+00:00",
+   "summary": "Study examines how health professions students integrate self-regulated learning with AI-based support during technology-enhanced interprofessional education.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/panic-builds-over-bankrupt-spirits-looming-data-sale-to-google",
+   "title_hash": "307fe6e968f5fb21230211556f28adee",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general tech industry news unrelated to medicine or education"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/993465/universal-music-elevenlabs-ai",
+   "title_hash": "f294a8925ac6c7cdf420fbe1b3067823",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; music industry product unrelated to medicine or education"
+  },
+  {
+   "url": "https://cognition.com/blog/swe-2",
+   "title_hash": "5aa8d7776cb4b634a2b5b22ef885790c",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "Cognition launches new SWE-2 model, Rivaling Fable 5.1 and GPT-Astra",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-09-10T15:29:47+00:00",
+   "summary": "Cognition released SWE-2, a software engineering model claimed to rival competing offerings in code generation capabilities.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cognition.com/images/swe-2/cover.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcmgbn/another_researcher_accuses_openai_of_training_on",
+   "title_hash": "934f7976d816192b021bcd415914bc9d",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "unconfirmed allegation and drama coverage without substantive technical content"
+  },
+  {
+   "url": "https://www.theverge.com/tech/993391/meta-muse-ai-hands-on",
+   "title_hash": "9cdb3ac370a2f6b89f8feaded937fdea",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general productivity tool review unrelated to medicine or education"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/10/ai-rural-health-hospitals-chris-klomp-nicole-saphier-senate-hearings",
+   "title_hash": "be6b3833b36a816830471eb310e37cca",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "news agenda item lacking concrete AI developments or evidence-based findings"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/992141/decoder-mailbag-ai-backlash-surveillance-midterms-data-centers",
+   "title_hash": "fc7e516d6a4f8beafc97648d675ccc2f",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general technology industry commentary without medical or educational substance"
+  },
+  {
+   "url": "https://rustfoundation.org/media/guest-post-rust-is-tier-1-language-at-microsoft",
+   "title_hash": "ba2a6139db62be273449b2c6bddf9c0e",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general programming language policy unrelated to medicine or AI capabilities"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&ff=20260910150823&v=2.20.1",
+   "title_hash": "870c7a56a3c3be518a8588a50b8ecb59",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "Assessment Design in the Era of Large Language Models: Evidence From Japanese Health Professions Licensing Examinations",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-10T10:00:00+00:00",
+   "summary": "Study of large language model performance on Japanese health licensing exams shows domain, search access, and visual content strongly influence results, informing assessment design.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42719270?fc=20260609215449&ff=20260910150823&v=2.20.1",
+   "title_hash": "2108f1adaa92c1693b0e61d4fab858ca",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "The potential of large language models to address patients' preoperative questions before anterior cervical discectomy and fusion surgery",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-10T10:00:00+00:00",
+   "summary": "Large language models provide accurate preoperative patient education for cervical spine surgery but lack individualized risk assessment, suitable as physician counseling aids only.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Other"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42718612?fc=20260609215449&ff=20260910150823&v=2.20.1",
+   "title_hash": "6be465d1417f671d6d7f60414d5876c2",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "Multi-view AI output variability as a teaching resource in a micro-course for thyroid TI-RADS interpretation among ultrasound residents: a randomized controlled trial",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-10T10:00:00+00:00",
+   "summary": "Structured micro-course using variable AI outputs improved thyroid ultrasound interpretation accuracy in residents but benefits did not persist at four-week follow-up.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42718482?fc=20260609215449&ff=20260910150823&v=2.20.1",
+   "title_hash": "33bb7460cb12dd5b74dd7e03c1dabb46",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "narrow domain application; interpretable machine learning for cognitive screening in one region without broad methodological contribution"
+  },
+  {
+   "url": "https://hugovergnes.github.io/little-lm-3-8b",
+   "title_hash": "faa75ac64ad5e9378eb8a7e909fd28a5",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "minor performance-tinkering technical thread for niche model development"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04695-x",
+   "title_hash": "d068190ab3bcdb7ebd80fe0054dc35ab",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "Computable longitudinal patient journeys from structured and unstructured EHR data",
+   "source": "Nature Medicine",
+   "published": "2026-09-10T00:00:00+00:00",
+   "summary": "Pre-trained language models extract clinical data from unstructured electronic health records and construct knowledge graphs to map patient trajectories and treatment responses.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04702-1",
+   "title_hash": "fd142ed31ef6cc540cf0057fe7df8558",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "author correction to prior article; no new clinical or AI findings"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=abehaRWPt5E",
+   "title_hash": "73eea559205ea3e2a7bd152faa475013",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "DeepSeek V4.1 Flash Is INSANE, Is THIS the Best Open Model Yet?",
+   "source": "Bijan Bowen",
+   "published": "2026-09-10T15:23:17+00:00",
+   "summary": "Hands-on testing and technical analysis of DeepSeek V4.1 Flash across multiple benchmark tasks and use cases.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/abehaRWPt5E/hqdefault.jpg",
+   "display_title": "Technical testing of DeepSeek V4.1 Flash"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=PbfXbDbCthA",
+   "title_hash": "7704f90fa3aa3c181e8343e35bc98f2e",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "marketing without educational payload"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qg_54P-oPgI",
+   "title_hash": "2316f845ad82f74b3308928d30d0d46c",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "customer story from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=mPAmXQnhv2E",
+   "title_hash": "38e6d765f1c1bd47e38c8c380cb7f64a",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "customer story from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=0XLGisanEAs",
+   "title_hash": "7fcf479e8a6e4bfce2a7bb8a2511d4f6",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": true,
+   "title": "Discovering new antibiotics with ChatGPT",
+   "source": "OpenAI",
+   "published": "2026-09-10T15:59:55+00:00",
+   "summary": "Lab researchers describe using ChatGPT and code generation to accelerate discovery of new antibiotics targeting resistant bacteria.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i1.ytimg.com/vi/0XLGisanEAs/hqdefault.jpg",
+   "display_title": "Using ChatGPT to discover new antibiotics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=MSiAd36bGeQ",
+   "title_hash": "975847ed6413916a1605cbb2871ed452",
+   "first_seen": "2026-09-10T19:08:22.906998+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [

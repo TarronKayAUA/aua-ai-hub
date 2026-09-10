@@ -18,9 +18,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87794">AI-Based Approaches for the Identification and Quantification of Traumatic Brain Injury in Computed Tomography Imaging: Systematic Review</a>
+    <p class="news-card-summary">Systematic review of AI methods for identifying and quantifying traumatic brain injury in CT scans, addressing diagnostic delays in resource-limited settings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93501">Enhancing Patients’ Informed Consent Through AI: Systematic Review</a>
+    <p class="news-card-summary">Systematic review examines AI applications for improving patient understanding and comprehension during informed consent processes for medical procedures.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
@@ -54,6 +68,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04631-z">Initial lessons from real-world implementation of an AI-agent eye clinic in China</a>
     <p class="news-card-summary">Real-world implementation of an AI-native eye clinic in China reveals that workflow integration, clinician engagement, and demonstrated clinical value are essential to transition from AI-assisted to integrated care models.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04695-x">Computable longitudinal patient journeys from structured and unstructured EHR data</a>
+    <p class="news-card-summary">Pre-trained language models extract clinical data from unstructured electronic health records and construct knowledge graphs to map patient trajectories and treatment responses.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -107,27 +128,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 9, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.05728">MedWER: A Reproducible, Model-Free Evaluation Protocol for Medical Speech Recognition</a>
     <p class="news-card-summary">A model-free evaluation metric for medical speech recognition weights clinically critical errors like drug-name substitutions rather than raw word accuracy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03111-5">Impact of LLM assistance on physician decision-making: a multi-country randomized controlled trial</a>
-    <p class="news-card-summary">A multi-country randomized controlled trial measures how large language model assistance changes physician clinical decision-making across different healthcare contexts.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03194-0">PREDICT-GBM: A multicenter platform advancing personalized glioblastoma radiotherapy planning</a>
-    <p class="news-card-summary">Multicenter platform designed to advance personalized glioblastoma radiotherapy planning using artificial intelligence.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04647-5">Consensus framework for the validation of generative AI: call for collaborators on the Validation Accords</a>
-    <p class="news-card-summary">Researchers published a consensus framework and call for collaboration on validating generative AI in clinical applications.</p>
   </div>
 </div>
 </div>
