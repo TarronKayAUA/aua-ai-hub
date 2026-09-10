@@ -18,9 +18,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data">Mathematicians want proof OpenAI didn’t use their work</a>
+    <p class="news-card-summary">A mathematician has accused OpenAI of unethical behavior and lack of transparency regarding the sources and origins of data used in the company&#x27;s mathematical model training.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2236544323.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.54557577814%2C100%2C78.90884844372&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wcbid7/deepseek_v41_flash_is_out">DeepSeek V4-1 Flash is out</a>
+    <p class="news-card-summary">DeepSeek V4-1 Flash, a multimodal mixture-of-experts model with 552 billion backbone parameters and one-million-token context support, is now available.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/6c1tvzhn4noh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=6d491c59edb2545a53f1ac5c9c4f8ce0d2bb59c9" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 9, 2026</span></div>
@@ -120,20 +136,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.04290">Evidence Integration in Large Language Models</a>
     <p class="news-card-summary">Research on how large language models integrate external evidence into decision-making through distributional theory of evidence combination.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.04442">GRACE: Graph-Grounded Reflective Agent Copilot Engine for Expert-in-the-Loop Knowledge Expansion</a>
-    <p class="news-card-summary">GRACE is a retrieval-augmented generation system that grounds language model outputs through graph-structured evidence and tracks uncertainty for high-stakes applications.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.04463">Shared circuits predict whether LLMs generalize across formats in arithmetic reasoning</a>
-    <p class="news-card-summary">Study showing that language models failing to generalize across arithmetic formats reveal hidden knowledge in their internal representations that does not match behavior.</p>
   </div>
 </div>
 </div>

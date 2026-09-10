@@ -1,93 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.iroh.computer/blog/mesh-llm",
-   "title_hash": "4b3bbb43960ccdbdf7819627ac029417",
-   "first_seen": "2026-07-12T06:47:14.457479+00:00",
-   "kept": false,
-   "reason": "forum link without substantive analysis"
-  },
-  {
-   "url": "https://blog.yaelwrites.com/stop-telling-me-to-ask-an-llm",
-   "title_hash": "e917347939094bca8e6ecb04e147c91f",
-   "first_seen": "2026-07-12T06:47:14.457479+00:00",
-   "kept": false,
-   "reason": "opinion piece with no new information"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42436060?fc=20260609215449&ff=20260712024714&v=2.20.0",
-   "title_hash": "f8b2a492586e157818747c9a393258e3",
-   "first_seen": "2026-07-12T06:47:14.457479+00:00",
-   "kept": true,
-   "title": "Application Effectiveness Analysis of Artificial Intelligence-assisted Teaching in Standardized Training for Medical Imaging Residents",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-11T10:00:00+00:00",
-   "summary": "Randomized controlled trial shows AI-assisted teaching combined with expert-led sessions improves radiology residents' diagnostic performance and clinical reasoning more than either method alone.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42435734?fc=20260609215449&ff=20260712024714&v=2.20.0",
-   "title_hash": "8d940f9a4235216c47780c1e24ba4385",
-   "first_seen": "2026-07-12T06:47:14.457479+00:00",
-   "kept": true,
-   "title": "Artificial Intelligence in Dental Education: Overview of Teaching, Assessment and Academic Performance Prediction",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-11T10:00:00+00:00",
-   "summary": "Literature overview of artificial intelligence applications in dental education, examining impact on teaching, assessment, and prediction of academic performance.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42435572?fc=20260609215449&ff=20260712024714&v=2.20.0",
-   "title_hash": "af0be8cb51a0119f8f914df6353a7801",
-   "first_seen": "2026-07-12T06:47:14.457479+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42435465?fc=20260609215449&ff=20260712024714&v=2.20.0",
-   "title_hash": "719038d08706af860f51c89aab7bf6a3",
-   "first_seen": "2026-07-12T06:47:14.457479+00:00",
-   "kept": true,
-   "title": "Aspects of the use of artificial intelligence in medical education: Results of a cross-sectional survey conducted at Bogomolets national medical university",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-11T10:00:00+00:00",
-   "summary": "Cross-sectional survey at a Ukrainian medical university documents normalization of AI in academic practice as cognitive extension while identifying risks of reduced autonomy and ethical challenges.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42434966?fc=20260609215449&ff=20260712024714&v=2.20.0",
-   "title_hash": "f3467a142a572e804af4b975af2bc2a5",
-   "first_seen": "2026-07-12T06:47:14.457479+00:00",
-   "kept": false,
-   "reason": "domain research on causal inference in rheumatology, not AI in medicine or medical education"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42434916?fc=20260609215449&ff=20260712024714&v=2.20.0",
-   "title_hash": "2a5116afaaa19d473dec8899cb97eb2f",
-   "first_seen": "2026-07-12T06:47:14.457479+00:00",
-   "kept": true,
-   "title": "Mapping artificial intelligence integration in objective structured clinical examinations: A scoping review",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-11T10:00:00+00:00",
-   "summary": "Scoping review mapping artificial intelligence applications in objective structured clinical examinations for assessment of clinical competence.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=GtrWMNsXghA",
-   "title_hash": "14ac7ca6855653995e901d1b4185daf4",
-   "first_seen": "2026-07-12T10:02:41.516725+00:00",
-   "kept": false,
-   "reason": "vendor marketing and off-topic for this audience"
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42437241?fc=20260609215449&ff=20260712095756&v=2.20.0",
    "title_hash": "ace7fa7a77b6742f7895c5fefbc0e63d",
    "first_seen": "2026-07-12T13:57:56.077500+00:00",
@@ -32887,6 +32800,192 @@
    "category": "medical_education",
    "score": 3.0,
    "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.aipolicyperspectives.com/p/the-ai-paper-trail-7",
+   "title_hash": "540bcd68fe1d3d888f9cb7650715e161",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "insufficient content; generic newsletter header"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data",
+   "title_hash": "a9688bd0cff42b956aa1ad768a68d244",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": true,
+   "title": "Mathematicians want proof OpenAI didn’t use their work",
+   "source": "The Verge AI",
+   "published": "2026-09-10T11:00:57+00:00",
+   "summary": "A mathematician has accused OpenAI of unethical behavior and lack of transparency regarding the sources and origins of data used in the company's mathematical model training.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2236544323.jpg?quality=90&strip=all&crop=0%2C10.54557577814%2C100%2C78.90884844372&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/10/rural-health-care-ai-adoption-challenges-part-4-unraveled-series",
+   "title_hash": "2f95d2cd6b661a2a5be77c21e68e8f59",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; policy commentary on rural health and AI without specific AI clinical or educational content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcbid7/deepseek_v41_flash_is_out",
+   "title_hash": "8ef868ae1ff673248670c115a437b2d9",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": true,
+   "title": "DeepSeek V4-1 Flash is out",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-09-10T06:54:19+00:00",
+   "summary": "DeepSeek V4-1 Flash, a multimodal mixture-of-experts model with 552 billion backbone parameters and one-million-token context support, is now available.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://preview.redd.it/6c1tvzhn4noh1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=6d491c59edb2545a53f1ac5c9c4f8ce0d2bb59c9",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcagoi/deepseekaideepseekv41flash_hugging_face",
+   "title_hash": "356a5d90c3eb8a92754765cc43b0d20a",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wc6krf/so_relevant",
+   "title_hash": "b8c0a0667c5c52f86672f7d325964951",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; low-substance social media thread"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03228-7",
+   "title_hash": "aabf5e4fb15dfd9e009f219239cc2491",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": true,
+   "title": "Impact of LLM-supported patient education on patient perspectives and patient-reported outcomes: a mixed-methods systematic review",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-10T00:00:00+00:00",
+   "summary": "A systematic review finds that large language model-supported patient education affects patient perspectives and reported outcomes, with mixed results across studies.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04703-0",
+   "title_hash": "c7ce399b34b6ff01faf8e02332c68c95",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": true,
+   "title": "A clinically-oriented foundation model for intraoperative pathology",
+   "source": "Nature Medicine",
+   "published": "2026-09-10T00:00:00+00:00",
+   "summary": "CRISP, a vision-based foundation model trained on frozen section pathology slides, supports intraoperative decision-making with superior performance to existing models and prospective validation.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04596-z",
+   "title_hash": "e75e930d78cca767aff0f630fd603513",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general population health cohort analysis without AI focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04634-w",
+   "title_hash": "8520749ee3f01fddf09371204cfe3ae4",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; oncology value frameworks without AI focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04631-z",
+   "title_hash": "5a1a33ed850a4b7575dbd1d37679f945",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": true,
+   "title": "Initial lessons from real-world implementation of an AI-agent eye clinic in China",
+   "source": "Nature Medicine",
+   "published": "2026-09-10T00:00:00+00:00",
+   "summary": "Real-world implementation of an AI-native eye clinic in China reveals that workflow integration, clinician engagement, and demonstrated clinical value are essential to transition from AI-assisted to integrated care models.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04602-4",
+   "title_hash": "4d729543612b60c71c66f88ffb10454f",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; epidemiological cohort analysis without AI focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04640-y",
+   "title_hash": "b3d469ce0b893eda5be157cc0b9fa21e",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; clinical trial of immunotherapy without AI involvement"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04572-7",
+   "title_hash": "d06b044dce2e55bb7fd9ecabbc41570b",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; clinical trial of immunotherapy without AI involvement"
+  },
+  {
+   "url": "https://huggingface.co/blog/gradio-workflow-1111",
+   "title_hash": "17d4b47329943f383afaa40b4e040ed9",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; tool development without medical or educational context"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wc0ekw/apple_a20_pro_debuts_with_7core_gpu_32core_neural",
+   "title_hash": "54d6256b9e2023c30f724e5ce9bcfa5d",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; hardware specifications without medical AI application"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=mOvtumfyjCs",
+   "title_hash": "4aa8a58b222bec8eeedbb06591135384",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "speculation and rumor without confirmed development"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=tbXKZsodiiw",
+   "title_hash": "b0047320ea49c7cf8d791a1aa34e883d",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "speculation and rumor without confirmed releases"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=q9tpIc8PVKM",
+   "title_hash": "cf626d4d6ba9b2a80eb9391d688cfec5",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "product review without substantive educational or clinical value for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WBK2WX7TA4g",
+   "title_hash": "43a33c57f522c26510615ac661278028",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "drama and conspiracy coverage, not substantive AI development"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=zqowMgMgSjA",
+   "title_hash": "a34baf82b088f9a8925da8cdfa29ae1a",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "vendor marketing from IBM's own channel"
+  },
+  {
+   "url": "https://share.transistor.fm/s/72586f97",
+   "title_hash": "6c5850e46d1d0cae8c23a610ec674462",
+   "first_seen": "2026-09-10T12:56:23.234897+00:00",
+   "kept": false,
+   "reason": "promotional episode with no substantive content description; appears to prioritize personality and entertainment over technical or educational substance"
   }
  ],
  "digests": [

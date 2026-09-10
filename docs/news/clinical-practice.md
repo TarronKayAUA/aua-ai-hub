@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -33,6 +33,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.09696">When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination</a>
     <p class="news-card-summary">Study of large language model reliability as document auditors reveals batch-size effects and confident hallucination in detecting planted errors in academic papers.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03228-7">Impact of LLM-supported patient education on patient perspectives and patient-reported outcomes: a mixed-methods systematic review</a>
+    <p class="news-card-summary">A systematic review finds that large language model-supported patient education affects patient perspectives and reported outcomes, with mixed results across studies.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04703-0">A clinically-oriented foundation model for intraoperative pathology</a>
+    <p class="news-card-summary">CRISP, a vision-based foundation model trained on frozen section pathology slides, supports intraoperative decision-making with superior performance to existing models and prospective validation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04631-z">Initial lessons from real-world implementation of an AI-agent eye clinic in China</a>
+    <p class="news-card-summary">Real-world implementation of an AI-native eye clinic in China reveals that workflow integration, clinician engagement, and demonstrated clinical value are essential to transition from AI-assisted to integrated care models.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -107,27 +128,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04647-5">Consensus framework for the validation of generative AI: call for collaborators on the Validation Accords</a>
     <p class="news-card-summary">Researchers published a consensus framework and call for collaboration on validating generative AI in clinical applications.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03235-8">DystoniaDBSNet as a novel deep learning biomarker of predictive deep brain stimulation outcome in dystonia</a>
-    <p class="news-card-summary">A deep learning model predicts outcomes of deep brain stimulation for dystonia, offering a biomarker for treatment planning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03229-6">A domain-specific large language model for evidence-based nursing: development and multi-method evaluation of EviNurse</a>
-    <p class="news-card-summary">Researchers develop and evaluate EviNurse, a domain-specific large language model designed to support evidence-based nursing practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88725">The Promise of Ambient AI Technology in Medical Education: Opportunities and Guardrails</a>
-    <p class="news-card-summary">Ambient AI tools that transcribe patient-provider conversations into clinical notes reduce documentation burden but raise questions about implications for medical education and clinical training.</p>
   </div>
 </div>
 </div>

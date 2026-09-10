@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 49 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (11)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -298,27 +298,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42687662?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Vibe coding for ophthalmologists</a>
-        <p class="news-card-summary">Review examines vibe coding, conversational AI-assisted software development, through an ophthalmology-specific lens to identify where it adds value and limitations.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42687598?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Endoscopists&#x27; attitudes toward and experiences with artificial intelligence-assisted colonoscopy: a 3-year follow-up survey after the implementation of GI Genius</a>
-        <p class="news-card-summary">Three-year follow-up survey finds endoscopists generally perceive AI-assisted colonoscopy as improving quality, with greater experience associated with more positive attitudes.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42687470?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Will Artificial Intelligence Replace Me? Automation Susceptibility of Emergency Physician Tasks</a>
-        <p class="news-card-summary">Study finds routine cognitive tasks consume disproportionate emergency physician time and are immediate targets for AI workflow automation, with augmentation of complex tasks accelerating.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42690629?fc=20260609215449&amp;ff=20260903183658&amp;v=2.20.1">The Role of Artificial Intelligence in Teaching Ophthalmology Skills: A Systematic Review</a>
         <p class="news-card-summary">Systematic review of AI-enabled interventions in ophthalmology training, finding promise for diagnostic learning and feedback but noting limited evidence from small heterogeneous studies.</p>
       </div>
@@ -328,41 +307,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 3, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42690594?fc=20260609215449&amp;ff=20260903183658&amp;v=2.20.1">Artificial Intelligence-Based Simulation to Improve Code Status Discussions Among Internal Medicine Residents: A Pilot Randomized Trial</a>
         <p class="news-card-summary">Pilot randomized trial showing feasibility and promise of AI-based simulation for training internal medicine residents in code status discussion skills.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42686494?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Artificial Intelligence-Enabled Precision Education: A Novel Tool to Augment Radiology Residency Training</a>
-        <p class="news-card-summary">AI-enabled precision education identified pathology exposure gaps in radiology residents and enhanced training while maintaining clinical opportunities.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42686199?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">A Real-World Evaluation of Large Language Model-Generated Hospital Courses in Pediatrics</a>
-        <p class="news-card-summary">Real-world evaluation of LLM-generated pediatric hospital courses found common errors but low perceived harm, supporting use as clinician-reviewed starting drafts with institutional safeguards.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42686188?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Performance of ChatGPT, Claude, and AMBOSS on the European Board of Urology In-Service Assessment and Alignment With the European Association of Urology 2025 Guidelines: Comparative Study</a>
-        <p class="news-card-summary">Comparative study of ChatGPT, Claude, and AMBOSS on European Board of Urology assessments shows high accuracy but differences in reasoning quality and guideline adherence, with ChatGPT performing best.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42684392?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">AI Use, Perceptions, and Perceived Impact Among Nursing Students: Cross-Sectional Study</a>
-        <p class="news-card-summary">Cross-sectional study finds nursing students widely use AI for learning and academic performance but shows limited impact on professional and interpersonal competencies, suggesting curriculum integration needed.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42684317?fc=20260609215449&amp;ff=20260903085057&amp;v=2.20.1">Teaching the Atomic Sentence Method for Source-Verified, AI-Assisted Literature Synthesis to Clinical Health Care Professionals: Single-Cohort Feasibility and Acceptability Study</a>
-        <p class="news-card-summary">Workshop teaching the Atomic Sentence method for AI-assisted literature synthesis was feasible and well-accepted but requires controlled studies to verify reduction in citation hallucination.</p>
       </div>
     </div>
     </div>
@@ -375,9 +319,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 36 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -391,6 +335,27 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2609.09696">When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination</a>
         <p class="news-card-summary">Study of large language model reliability as document auditors reveals batch-size effects and confident hallucination in detecting planted errors in academic papers.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03228-7">Impact of LLM-supported patient education on patient perspectives and patient-reported outcomes: a mixed-methods systematic review</a>
+        <p class="news-card-summary">A systematic review finds that large language model-supported patient education affects patient perspectives and reported outcomes, with mixed results across studies.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04703-0">A clinically-oriented foundation model for intraoperative pathology</a>
+        <p class="news-card-summary">CRISP, a vision-based foundation model trained on frozen section pathology slides, supports intraoperative decision-making with superior performance to existing models and prospective validation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04631-z">Initial lessons from real-world implementation of an AI-agent eye clinic in China</a>
+        <p class="news-card-summary">Real-world implementation of an AI-native eye clinic in China reveals that workflow integration, clinician engagement, and demonstrated clinical value are essential to transition from AI-assisted to integrated care models.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -603,21 +568,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation">STAT+: FDA pilot offers generative AI medical devices a path to patients before they are authorized</a>
-        <p class="news-card-summary">The FDA&#x27;s TEMPO pilot program allows generative AI medical devices from companies including Cadence and Limbic to reach patients before obtaining formal marketing authorization.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_1767433801-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03185-1">Differences in tone of AI and care team responses to patient messages by patient demographics</a>
-        <p class="news-card-summary">Study examines differences in tone between AI and human care team responses to patient messages across patient demographic groups.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 3, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03155-7">A five-phase evaluation framework for diagnostic and predictive medical artificial intelligence</a>
         <p class="news-card-summary">Framework proposes five phases for systematic evaluation of diagnostic and predictive medical artificial intelligence systems.</p>
@@ -647,10 +597,26 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 30 items"
+??? abstract "Show the 32 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (30)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (32)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data">Mathematicians want proof OpenAI didn’t use their work</a>
+        <p class="news-card-summary">A mathematician has accused OpenAI of unethical behavior and lack of transparency regarding the sources and origins of data used in the company&#x27;s mathematical model training.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2236544323.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.54557577814%2C100%2C78.90884844372&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 10, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wcbid7/deepseek_v41_flash_is_out">DeepSeek V4-1 Flash is out</a>
+        <p class="news-card-summary">DeepSeek V4-1 Flash, a multimodal mixture-of-experts model with 552 billion backbone parameters and one-million-token context support, is now available.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/6c1tvzhn4noh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=6d491c59edb2545a53f1ac5c9c4f8ce0d2bb59c9" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 9, 2026</span></div>
@@ -884,7 +850,7 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 14 videos"
+??? abstract "Show the 12 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=O_EWbnkjXdk" target="_blank" rel="noopener" title="Can AI help us better predict the weather?">
@@ -959,23 +925,11 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-meta">OpenAI, September 3, 2026</span>
       <span class="video-card-desc">OpenAI announces GPT-6 Astra with benchmarks on long-context computer-use tasks and multimodal capabilities.</span>
     </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=X4FVEEegCbk" target="_blank" rel="noopener" title="Skills vs MCP vs RAG vs Memory: What AI Agents Need to Know">
-      <img src="https://i1.ytimg.com/vi/X4FVEEegCbk/hqdefault.jpg" alt="Video: AI agent architecture: skills, MCP, RAG, and memory" loading="lazy">
-      <span class="video-card-title">AI agent architecture: skills, MCP, RAG, and memory</span>
-      <span class="video-card-meta">IBM Technology, September 3, 2026</span>
-      <span class="video-card-desc">Explains architectural components of AI agents: skills, model context protocol, retrieval-augmented generation, and memory systems.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=B3LXEW4Pc-w" target="_blank" rel="noopener" title="Claude Fable AI Is Much Stranger Than The Headlines Suggest">
-      <img src="https://i3.ytimg.com/vi/B3LXEW4Pc-w/hqdefault.jpg" alt="Video: Claude Fable 5.1 technical analysis" loading="lazy">
-      <span class="video-card-title">Claude Fable 5.1 technical analysis</span>
-      <span class="video-card-meta">Two Minute Papers, September 3, 2026</span>
-      <span class="video-card-desc">Technical analysis of Claude Fable 5.1 capabilities and behavior patterns beyond release announcements.</span>
-    </a>
     </div>
 
 ## Podcasts
 
-??? abstract "Show the 3 episodes"
+??? abstract "Show the 2 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Agentic-Loops-for-Knowledge-Workers-e3oaiu2" target="_blank" rel="noopener">
@@ -989,12 +943,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">Inside Oxford&#x27;s AI Competency Centre: Rethinking Assessment and Authorship</span>
       <span class="video-card-meta">AI in Education Podcast, September 3, 2026</span>
       <span class="video-card-desc">Oxford&#x27;s AI Consultant explores how universities should rethink authorship, assessment, and academic integrity as generative AI tools become routine in academic work.</span>
-    </a>
-    <a class="video-card" href="https://share.transistor.fm/s/ec79b4ac" target="_blank" rel="noopener">
-      <img src="https://img.transistorcdn.com/-0_OMgmp3xKvAJfdUTA1m0vONHyL0qOVlX1utg7d2G8/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81MjEz/Yzc5NWZiN2FjZDRk/NzVjYWQ2NDhkZjRj/YjNlZi5wbmc.jpg" alt="Podcast: Less about Models; More about Architecture" loading="lazy">
-      <span class="video-card-title">Less about Models; More about Architecture</span>
-      <span class="video-card-meta">Practical AI, September 3, 2026</span>
-      <span class="video-card-desc">A Rackspace CAO discusses how enterprises should shift focus from model selection to systems architecture as AI moves from research to production deployment.</span>
     </a>
     </div>
 
