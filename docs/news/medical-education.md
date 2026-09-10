@@ -13,14 +13,21 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A scoping review finds that medical AI curricula remain nascent across institutions, with calls for faster development and stronger evaluation systems <a href="https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1">[6]</a>. That gap is prompting more specific responses: a qualitative study maps role-differentiated AI competencies for health professionals <a href="https://mededu.jmir.org/2026/1/e97608">[1]</a>, while radiology residency programs report a three-year hands-on curriculum is feasible and sustainable <a href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[13]</a>. Assessment is drawing separate scrutiny, with a new framework arguing that AI-based evaluation needs explicit validity arguments, auditability, and ongoing monitoring <a href="https://pubmed.ncbi.nlm.nih.gov/42708899?fc=20260609215449&amp;ff=20260908152637&amp;v=2.20.1">[2]</a>. Meanwhile a survey of Latin American emergency clinicians finds fast adoption of generative AI tools outpacing governance and training <a href="https://pubmed.ncbi.nlm.nih.gov/42699427?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">[15]</a>.</p>
-<p>Also this week: teaching and curriculum items also cover pharmacy serious games, psychiatry residency planning, and anesthesiology training reviews, alongside three studies on clinician attitudes toward generative AI adoption. Two papers examine assessment and feedback validity, two address simulation and skills training such as stigma-sensitive patient interviews, and two benchmark large language models against clinical experts on exam-style questions.</p>
-<p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
+<p>An international working group has published recommendations for a global framework on AI education in medical schools <a href="https://www.nature.com/articles/s41746-026-03197-x">[11]</a>, arriving alongside a systematic review mapping how generative AI is already reshaping knowledge assessment and clinical reasoning training <a href="https://pubmed.ncbi.nlm.nih.gov/42712985?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">[6]</a>. Concrete applications are advancing in parallel: a propensity-matched cohort study found that LLM-powered virtual standardized patients improved history-taking skills among undergraduate students <a href="https://mededu.jmir.org/2026/1/e92486">[4]</a>, while a comparative study explored whether large language models can assist human examiners in setting passing scores for multiple-choice exams <a href="https://mededu.jmir.org/2026/1/e98766">[2]</a>. Underlying these gains, an NLP analysis of clinical feedback comments found that three-quarters lack concrete improvement suggestions <a href="https://pubmed.ncbi.nlm.nih.gov/42715712?fc=20260609215449&amp;ff=20260910004639&amp;v=2.20.1">[10]</a>.</p>
+<p>Also this week: coverage spans five items on teaching and curriculum design, four on assessment and feedback methods, and two each on exam benchmarks, simulation-based skills training, and clinician attitudes toward adoption. Additional work covers AI competency frameworks for health professions curricula and stigma-sensitive communication training using a simulated HIV patient interview.</p>
+<p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.09684">Which Medical Questions Deserve Rationales? Perturbation-Sensitive Selection for Robust QA</a>
+    <p class="news-card-summary">A method selects which medical questions in training datasets should receive rationale supervision under budget constraints to improve question-answering robustness.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
@@ -77,6 +84,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">A comparative study evaluates how well large language model chatbots understand and reason about abnormal anatomy in congenital and tumor cases.</p>
   </div>
 </div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42715712?fc=20260609215449&amp;ff=20260910004639&amp;v=2.20.1">Leveraging Natural Language Processing for Analysis of EPA Comment Quality by Automated QuAL Scoring</a>
+    <p class="news-card-summary">Natural language processing analysis of evaluation comments in medical education reveals that three-quarters lack improvement suggestions, identifying a gap in feedback quality.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 9, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42709552?fc=20260609215449&amp;ff=20260908184234&amp;v=2.20.1">Stigma-sensitive communication in medical students: an AI-supported simulation of a patient living with HIV</a>
     <p class="news-card-summary">Study examines medical students&#x27; stigma-sensitive communication skills during simulated patient interviews with ChatGPT-4o acting as a standardized patient living with HIV.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03182-4">Intervention fidelity and competency translation of serious games in pharmacy education: a scoping umbrella review</a>
-    <p class="news-card-summary">A scoping umbrella review examines how intervention fidelity and competency translate when serious games are used in pharmacy education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42703532?fc=20260609215449&amp;ff=20260907101629&amp;v=2.20.1">Current Landscape of Curriculum Development and Implementation in Medical Artificial Intelligence: A Scoping Review</a>
-    <p class="news-card-summary">A scoping review finds medical AI education programs are nascent and calls for accelerated curriculum development, enhanced practical training, and stronger evaluation systems.</p>
   </div>
 </div>
 </div>

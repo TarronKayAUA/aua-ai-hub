@@ -13,14 +13,36 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A new analysis of one of the first randomized trials of AI in medicine argues that algorithms must demonstrably improve patient outcomes, not just match clinician performance <a href="https://www.nature.com/articles/s41591-026-04633-x">[10]</a>. That standard is echoed in a multi-country randomized controlled trial showing large language model assistance shifts physician decision-making in ways that vary by healthcare context <a href="https://www.nature.com/articles/s41746-026-03111-5">[3]</a>. Diagnostic accuracy work reinforces the caution: a retrospective study found task-specific deep neural networks outperformed general-purpose large language models and physicians at detecting occlusion myocardial infarction from ECGs <a href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">[11]</a>. Meanwhile, ambient AI tools that ease documentation burden are prompting new scrutiny of their effects on medical training <a href="https://medinform.jmir.org/2026/1/e88725">[4]</a>.</p>
-<p>Also this week: the section includes four papers on safety and evaluation, four on imaging and diagnostics, three on clinical decision support, three on clinical documentation, and one patient-facing tool. Work spans opioid use disorder phenotyping from clinical narratives and a medical speech recognition metric that weights clinically critical errors over raw word accuracy.</p>
-<p class="section-brief-date">The picture as of September 9, 2026; numbered links go to the items below.</p>
+<p>An investigation into AI use in emergency departments finds the technology falls short of the predictions once made for it <a href="https://www.statnews.com/2026/09/09/ai-healthcare-limitations-emergency-room-study-medical-scribe-impact">[7]</a>, a sobering counterpoint to a multi-country randomized controlled trial showing that large language model assistance does change physician decision-making, for better and worse, depending on context <a href="https://www.nature.com/articles/s41746-026-03111-5">[10]</a>. Regulators are responding: the United Kingdom has issued new recommendations for governing AI in medicine <a href="https://www.statnews.com/2026/09/09/uk-unveils-recommendations-ai-regulation-medicine">[3]</a>, while the U.S. agency ARPA-H is committing 62.7 million dollars to develop FDA-authorized tools for heart failure treatment <a href="https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure">[5]</a>. Meanwhile, a Nature Medicine consensus effort calls for shared standards to validate generative AI in clinical use <a href="https://www.nature.com/articles/s41591-026-04647-5">[12]</a>.</p>
+<p>Also this week: clinical decision support remains the dominant theme, spanning seven items that include maternal triage tools in India and evidence-based nursing assistants, while five entries examine safety and evaluation, from auditor hallucination studies to speech-recognition benchmarks. Imaging papers cover lung cancer radiomics and glioblastoma radiotherapy planning, and one report addresses ambient documentation tools in medical education.</p>
+<p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.09356">Auditable Emergency Triage for Maternal and Newborn Care in India</a>
+    <p class="news-card-summary">A WhatsApp-based maternal health service deployed large language models for emergency triage classification with auditability requirements.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.09696">When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination</a>
+    <p class="news-card-summary">Study of large language model reliability as document auditors reveals batch-size effects and confident hallucination in detecting planted errors in academic papers.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/09/09/uk-unveils-recommendations-ai-regulation-medicine">STAT+: U.K. unveils recommendations for regulating AI in medicine</a>
+    <p class="news-card-summary">The United Kingdom released regulatory recommendations for artificial intelligence use in medicine.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_476983486-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 9, 2026</span></div>
@@ -106,27 +128,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88725">The Promise of Ambient AI Technology in Medical Education: Opportunities and Guardrails</a>
     <p class="news-card-summary">Ambient AI tools that transcribe patient-provider conversations into clinical notes reduce documentation burden but raise questions about implications for medical education and clinical training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92937">Automated Extraction of Postoperative Cancer Recurrence and Metastasis From Computed Tomography (CT) Reports: Semisupervised Deep Learning Study</a>
-    <p class="news-card-summary">A semisupervised deep learning approach automatically extracts postoperative cancer recurrence and metastasis data from unstructured computed tomography reports despite linguistic variability.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03201-4">AI-derived carotid plaque vulnerability from B-mode ultrasound for cerebrovascular risk stratification: a multicenter cohort study</a>
-    <p class="news-card-summary">Multicenter study validates AI-derived carotid plaque vulnerability assessment from ultrasound as a tool for cerebrovascular risk stratification.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03223-y">Identifying potential nonpulmonary vein triggers in persistent atrial fibrillation using digital twins and deep learning</a>
-    <p class="news-card-summary">Deep learning applied to digital twins identifies potential triggers for persistent atrial fibrillation outside the pulmonary veins.</p>
   </div>
 </div>
 </div>
