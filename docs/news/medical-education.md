@@ -13,14 +13,21 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>An international working group has published recommendations for a global framework on AI education in medical schools <a href="https://www.nature.com/articles/s41746-026-03197-x">[11]</a>, arriving alongside a systematic review mapping how generative AI is already reshaping knowledge assessment and clinical reasoning training <a href="https://pubmed.ncbi.nlm.nih.gov/42712985?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">[6]</a>. Concrete applications are advancing in parallel: a propensity-matched cohort study found that LLM-powered virtual standardized patients improved history-taking skills among undergraduate students <a href="https://mededu.jmir.org/2026/1/e92486">[4]</a>, while a comparative study explored whether large language models can assist human examiners in setting passing scores for multiple-choice exams <a href="https://mededu.jmir.org/2026/1/e98766">[2]</a>. Underlying these gains, an NLP analysis of clinical feedback comments found that three-quarters lack concrete improvement suggestions <a href="https://pubmed.ncbi.nlm.nih.gov/42715712?fc=20260609215449&amp;ff=20260910004639&amp;v=2.20.1">[10]</a>.</p>
-<p>Also this week: coverage spans five items on teaching and curriculum design, four on assessment and feedback methods, and two each on exam benchmarks, simulation-based skills training, and clinician attitudes toward adoption. Additional work covers AI competency frameworks for health professions curricula and stigma-sensitive communication training using a simulated HIV patient interview.</p>
-<p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
+<p>A JMIR viewpoint warns that large language models used for Socratic dialogue in medical education carry failure modes that current discussion underweights <a href="https://mededu.jmir.org/2026/1/e102958">[2]</a>. A propensity-matched cohort study found that LLM-powered virtual standardized patients improved history-taking among undergraduate medical students <a href="https://mededu.jmir.org/2026/1/e92486">[13]</a>, while a separate comparative study examined whether LLMs can assist with Angoff standard-setting for exam passing scores <a href="https://mededu.jmir.org/2026/1/e98766">[11]</a>. An analysis of Japanese health licensing exams showed that domain, search access, and visual content strongly shape LLM performance, with implications for assessment design <a href="https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">[4]</a>.</p>
+<p>Also this week: the section adds five items on teaching and curriculum, from specialty adoption frameworks to reproductive medicine education, two pieces on simulation and skills such as usability testing for telemedicine simulations, two studies on attitudes and adoption covering trainee readiness in obstetrics and gynecology, and an arXiv paper on paralinguistic AI for Alzheimer&#x27;s detection.</p>
+<p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.10896">LLM-Anchored Paralinguistic Enrichment for Alzheimer&#x27;s Disease Detection</a>
+    <p class="news-card-summary">Speech-based Alzheimer&#x27;s disease detection integrates paralinguistic cues with linguistic features using language models for early cognitive screening applications.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712985?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Generative artificial intelligence in medical education: from knowledge assessment to clinical reasoning and professional competence</a>
     <p class="news-card-summary">A systematic literature review synthesizes evidence on how generative AI and large language models are being applied across medical education from knowledge assessment to clinical reasoning development.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712696?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Oncologists&#x27; knowledge, attitudes and needs about artificial intelligence in clinical oncology in Luxembourg in 2026: a national cross-sectional survey (AICO study)</a>
-    <p class="news-card-summary">A Luxembourg survey of oncologists shows gaps between current adoption of artificial intelligence and clinician readiness, highlighting needs for training and ethical governance.</p>
   </div>
 </div>
 </div>

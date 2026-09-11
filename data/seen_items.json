@@ -1,259 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arxiv.org/abs/2607.08775",
-   "title_hash": "70905b17a8d4b6edd28a298689131b04",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "incremental fine-tuning study"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09053",
-   "title_hash": "f7c7f2cee5fa9a4e31c3c33285a3e216",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09092",
-   "title_hash": "09084636527042346c39b9055384cade",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09094",
-   "title_hash": "d1d504ce67e9bc55037e1b64a56f42b8",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09121",
-   "title_hash": "100d8b2dfedbdda794e6da89db0d1e7e",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09204",
-   "title_hash": "13864fcd1131d59bde0cff5fd44cf1ea",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "incremental fine-tuning study"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09291",
-   "title_hash": "ee473d3482ea076dc0e9f25f009b16de",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09306",
-   "title_hash": "6edf408ea2e9f49ded2c6871bbbb7fc4",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09316",
-   "title_hash": "2c8da4e95a0e34692fea88b6bec400c8",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09324",
-   "title_hash": "f735b825f16577cac2f48b0b3fa1a1f7",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09328",
-   "title_hash": "06a431185cf5960c93bacfa4ea412f69",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": true,
-   "title": "WILDTRACE: Benchmarking Natural Evidence Trails in Long-Context Reasoning",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-13T04:00:00+00:00",
-   "summary": "WILDTRACE benchmark evaluates long-context language models on reasoning tasks requiring evidence integration across distant passages in documents.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Benchmarks and evaluation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09338",
-   "title_hash": "55dfa88032a9ace69fae10a3ee5b9561",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09348",
-   "title_hash": "c446cc45459ca5c58912fa5eb50779a6",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09349",
-   "title_hash": "3079ee7ddddb2e718132138bbeb51c32",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": true,
-   "title": "Deceptive Grounding: Entity Attribution Failure in Clinical Retrieval-Augmented Generation",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-13T04:00:00+00:00",
-   "summary": "Study identifies entity attribution failures in clinical retrieval-augmented generation systems that pass automated evaluation checks but misattribute evidence to incorrect drugs or entities.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09415",
-   "title_hash": "5a0096b75e7aeeb45ff4af55df959e91",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": true,
-   "title": "Self-Guided Test-Time Training for Long-Context LLMs",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-13T04:00:00+00:00",
-   "summary": "Self-guided test-time training method improves long-context language model performance by helping models better identify and use relevant evidence from long inputs.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09424",
-   "title_hash": "c74ad58db4f4547d32a693e05ccd5ebc",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": true,
-   "title": "A Sovereign, Open-Source Foundation Model for German and English",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-13T04:00:00+00:00",
-   "summary": "Soofi S 30B-A3B is an open-source Mixture-of-Experts hybrid model for German and English with efficient long-context processing through Mamba-Transformer architecture.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "New models"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09438",
-   "title_hash": "faf27d9753b8703236495fbb3a3f1ead",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09501",
-   "title_hash": "4113ba7d36ba50929943e62c4e7eff03",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09530",
-   "title_hash": "7073fb0184c9e755c0a5e1caa3ef8ff1",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09576",
-   "title_hash": "dbfe82b43aef774f944f322766017430",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09598",
-   "title_hash": "ab0d6b4409cd2f5b41ca7ca01c75a5e2",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09611",
-   "title_hash": "90b14c90bb02f5b4fbd0d78f6ed2ffb3",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.09623",
-   "title_hash": "ed23ad1db7bde9da1d9c6a0ef1f13a41",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.08776",
-   "title_hash": "9e8e3c7595592f546c7b2b72bb11486a",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.08780",
-   "title_hash": "ca1652fdf41d8b7567955f49672d0c77",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": true,
-   "title": "Sticky Routing: Training MoE Models for Memory-Efficient Inference",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-13T04:00:00+00:00",
-   "summary": "Sticky Routing is a training method for Mixture-of-Experts models that improves memory efficiency on edge devices by reducing expert weight swapping during inference.",
-   "category": "general_ai",
-   "score": 2.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals",
-   "title_hash": "88bf1a108db19c0dca0fbce6aa482069",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/12/shot-scraper",
-   "title_hash": "322dd3cd4d953387a75cb886ede542f9",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uus189/apple_sues_openai_alleging_trade_secret_theft",
-   "title_hash": "9264842534a185c418a04cd31b36cb08",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "rumor and gossip"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/12/bump",
-   "title_hash": "f5d320325e4756716259f08ef7d5badf",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/12/sqlite-utils",
-   "title_hash": "312303a0c31b038fb161f2e02cd969bf",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42437519?fc=20260609215449&ff=20260713000220&v=2.20.0",
-   "title_hash": "4f796645bc609f7c15f2e6d9b61c95e1",
-   "first_seen": "2026-07-13T04:02:15.848752+00:00",
-   "kept": true,
-   "title": "Prompt Framing and Evidence Requirements for AI-Generated Educational Responses in Dental Education: An Experimental Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-12T10:00:00+00:00",
-   "summary": "Experimental study shows prompt design significantly affects language model responses in dental education, with evidence requirements increasing citations and instructional framing affecting pedagogical stance.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42437956?fc=20260609215449&ff=20260713034129&v=2.20.0",
    "title_hash": "b83d19f00ae5fd3381f47832a8a40bc8",
    "first_seen": "2026-07-13T07:41:25.463487+00:00",
@@ -33312,16 +33059,236 @@
    "first_seen": "2026-09-10T22:36:53.571226+00:00",
    "kept": false,
    "reason": "geopolitical analysis and speculation rather than substantive artificial intelligence development or deployment news relevant to medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10702",
+   "title_hash": "dd55b031485d15428557ed32e16cb335",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": true,
+   "title": "Data-Efficient Language Modeling: From Frontier Advancement to Principle-Guided Model Improvement",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-11T04:00:00+00:00",
+   "summary": "Autonomous research program on efficient language model training achieved frontier results within 10 million words and 100 million cumulative presentations, connecting data efficiency advances to model improvement principles.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10715",
+   "title_hash": "b7c1b8d18920babe0a119292fe4d5581",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": true,
+   "title": "NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-11T04:00:00+00:00",
+   "summary": "Latent-space language model NCP-ArchPreview combines next-token prediction with next-concept prediction to learn discrete multi-token concepts alongside traditional autoregressive objectives.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10722",
+   "title_hash": "34c89129fe341f1d19777e3971f600b9",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10745",
+   "title_hash": "c48bf28029ef6b58b7ff18db11ed0295",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10758",
+   "title_hash": "9bd08e3f58406ec072ca4af91f39b54e",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10792",
+   "title_hash": "652abb9d31a2f17ba84e52107ed74a78",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10810",
+   "title_hash": "670442da73d819459d27a6223c11b4c1",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10830",
+   "title_hash": "6ef67b44b6fa3a2a85743500c524b90b",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": true,
+   "title": "Detectable Only Where It Is Confounded: What Verified Duplication Counts Say About Membership Evidence in Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-11T04:00:00+00:00",
+   "summary": "Study of OLMo-2 and Pythia model families with verified training data membership shows duplication is detectable only where textual confounding exists, improving membership inference measurement.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10893",
+   "title_hash": "e8c85bd395373af10d1d9334b761b265",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10896",
+   "title_hash": "22aaa13dd0e565c22d7d30ec27b0412e",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": true,
+   "title": "LLM-Anchored Paralinguistic Enrichment for Alzheimer's Disease Detection",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-11T04:00:00+00:00",
+   "summary": "Speech-based Alzheimer's disease detection integrates paralinguistic cues with linguistic features using language models for early cognitive screening applications.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10901",
+   "title_hash": "8bc30432f5e9cb7b4ccc6d5179a9fda6",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10922",
+   "title_hash": "f1a07944939f9dbbef2c1774ea7d0ef9",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10923",
+   "title_hash": "8b083c38fd0d760f8db2f90f14bcf4bf",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10934",
+   "title_hash": "5109b0c368ed055e74dea40e68f9350c",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10950",
+   "title_hash": "6ca2fe6c4b9f55ad98bdee7c6fe9d530",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10993",
+   "title_hash": "d5226d5ebb4a1c2576d0d6df8e62f432",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.10996",
+   "title_hash": "4187e7b28de6bfbb0818812b1923ea38",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.11020",
+   "title_hash": "3f78990cdb09a30de5019b41d85544bd",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.11029",
+   "title_hash": "80496ad423e17cc1260ccf3de829945d",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.11067",
+   "title_hash": "45acb9f5a1912c0d25ec6e543d932c44",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.11101",
+   "title_hash": "4347f39a7366789a19ce1f83402e0501",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.11117",
+   "title_hash": "fc70a1b8710f7b1864b1148549ef4a0b",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.11128",
+   "title_hash": "f982886c1a4719a4dbfe289a3236cfc9",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.11131",
+   "title_hash": "99a6f3ca6b0c140297dc690a84cf1f61",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.11141",
+   "title_hash": "2b97562aba8d825c57bb347894cb1fd1",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/11/datasette-security",
+   "title_hash": "23e9e43f08855c013b7dff27f7245399",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/10/trynix",
+   "title_hash": "7147ae12c4b4f39a07e2f2cdd3dd128e",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wcdati/deepseekv41flash_surprised",
+   "title_hash": "b7a25dfc2a19857985faf95fc07e515f",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "community meta-discussion"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w8jahs/qwen3827b_unhacked_my_pc",
+   "title_hash": "3459038ff8ebd4a62ba85831839ee454",
+   "first_seen": "2026-09-11T04:44:45.324469+00:00",
+   "kept": false,
+   "reason": "anecdotal forum post"
   }
  ],
  "digests": [
-  {
-   "guid": "aua-ai-digest-2026-W25",
-   "title": "AUA AI Hub Digest: Week of June 15, 2026",
-   "link": "https://tarronkayaua.github.io/aua-ai-hub/news/archive/2026-w25/",
-   "pub_date": "Fri, 19 Jun 2026 16:33:28 +0000",
-   "description": "<h3>The week in brief</h3><p>A head-to-head evaluation in Nature Medicine found that three frontier general-purpose large language models, GPT-5.2, Gemini 3.1 Pro, and Claude Opus 4.6, outperformed two specialized clinical artificial intelligence (AI) tools, OpenEvidence and UpToDate Expert AI, across 500 MedQA questions, 500 HealthBench items, and a 100-query real clinical queries benchmark reviewed by 12 blinded US clinicians <a href=\"https://www.nature.com/articles/s41591-026-04431-5\">[1]</a>. Notably, the clinical tools performed comparably to an auto-enabled Google Search AI Overview on the real-query benchmark, which the authors use to argue for independent, real-world evaluation before tools reach clinical settings <a href=\"https://www.nature.com/articles/s41591-026-04431-5\">[1]</a>. That call for scrutiny connects to a review proposing MedSAFE, a decision-theoretic framework for when a model should abstain rather than answer, since state-of-the-art models still struggle to refuse inappropriate prompts in medical scenarios <a href=\"https://www.nature.com/articles/s41746-026-02882-1\">[6]</a>.</p><p>For educators, several reports describe AI as a teaching aid rather than a replacement. A meta-analysis of randomized controlled trials found AI-based teaching performed comparably to or better than traditional methods <a href=\"https://pubmed.ncbi.nlm.nih.gov/42284227?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0\">[4]</a>, and a quasi-experimental study of 162 students reported a modest gain in self-assessed communication competence after one conversation with a role-prompted GPT-4o chatbot, with a mean difference of 0.94 on a 0-to-10 scale <a href=\"https://mededu.jmir.org/2026/1/e88092\">[5]</a>. Spaced repetition work suggests AI can generate flashcards to scale review material in radiology curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42276882?fc=20260609215449&amp;ff=20260612061318&amp;v=2.20.0\">[2]</a>.</p><p>Workforce preparation drew attention as well, with nursing scholars urging that AI competencies be built into curricula and policy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42276635?fc=20260609215449&amp;ff=20260612061318&amp;v=2.20.0\">[3]</a>. A podcast episode raises a counterpoint, examining why AI tutoring may correlate with both higher grades and more failures <a href=\"https://aipodcast.education/more-as-more-fails-what-ai-is-really-doing-to-student-performance\">[12]</a>.</p><h3>Medical Education</h3><ul><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42276882?fc=20260609215449&amp;ff=20260612061318&amp;v=2.20.0\">Revolutionizing radiology education: exploring and implementing spaced repetition in radiology teaching and curricula</a> (PubMed AI in medical education). Study evaluates spaced repetition techniques, including Anki platforms, as scalable adjuncts to traditional radiology education and curriculum design.</li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42276635?fc=20260609215449&amp;ff=20260612061318&amp;v=2.20.0\">Preparing the nursing workforce for the health AI era: Insights from the Macy Foundation Conference on AI in Medical Education</a> (PubMed AI in medical education). Macy Foundation conference proceedings address curriculum and workforce preparation for integrating artificial intelligence into nursing education and clinical practice.</li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42284227?fc=20260609215449&amp;ff=20260613081755&amp;v=2.20.0\">Meta-analysis of randomized controlled trials comparing outcomes of artificial intelligence-based teaching versus traditional-based teaching in medical education</a> (PubMed AI in medical education). Meta-analysis of randomized controlled trials found artificial intelligence-based teaching approaches performed comparably to or better than traditional teaching methods.</li><li><a href=\"https://mededu.jmir.org/2026/1/e88092\">Training Empathetic Communication Skills in Medical Students With a Role-Prompted GPT-4o Chatbot: Quasi-Experimental Intervention Study</a> (JMIR Medical Education). Quasi-experimental study evaluated a role-prompted GPT-4o chatbot for training empathetic communication skills in medical students with measured learning outcomes.</li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42281959?fc=20260609215449&amp;ff=20260612131628&amp;v=2.20.0\">Quantifying the AI readiness gap: An international, multidisciplinary assessment of artificial intelligence literacy in the radiation oncology community</a> (PubMed AI in medical education). International study establishes a global benchmark for artificial intelligence literacy and readiness among radiation oncology clinical staff.</li><li><a href=\"https://pubmed.ncbi.nlm.nih.gov/42311928?fc=20260609215449&amp;ff=20260618141138&amp;v=2.20.0\">Evaluation of Large Language Models in Infectious Disease Decision-Making: From Examination to Clinical Practice</a> (PubMed AI in medical education). Large language models show substantial potential in infectious disease education and decision support, with ability to handle both exam and clinical scenarios.</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://www.nature.com/articles/s41591-026-04431-5\">General-purpose large language models outperform specialized clinical AI tools on medical benchmarks</a> (Nature Medicine). Nature Medicine reports that general-purpose large language models match or exceed specialized clinical AI tools on medical benchmarks in independent evaluation.</li><li><a href=\"https://www.nature.com/articles/s41746-026-02882-1\">When silence is safer: a review and decision-theoretic framework for LLM abstention in healthcare</a> (npj Digital Medicine). Framework proposes decision-theoretic approach for when large language models should abstain from responding in clinical settings.</li></ul><h3>Videos</h3><ul><li><a href=\"https://www.youtube.com/watch?v=9K9TR1GVec0\">IBIIS-AIMI Seminar | Susan Shelmerdine, MBBS - Healthcare AI Requires System Changes, Not Just Tasks</a> (Stanford AIMI)</li><li><a href=\"https://www.youtube.com/watch?v=UxY8zJKRrHU\">Improving health intelligence in ChatGPT</a> (OpenAI)</li></ul><h3>Podcasts</h3><ul><li><a href=\"https://ai-podcast.nejm.org/e/openai-s-karan-singal-on-healthbench-and-the-future-of-medical-ai\">OpenAI’s Karan Singal on HealthBench and the Future of Medical AI</a> (NEJM AI Grand Rounds)</li><li><a href=\"https://aipodcast.education/more-as-more-fails-what-ai-is-really-doing-to-student-performance\">More A's, More Fails: What AI Is Really Doing to Student Performance</a> (AI in Education Podcast)</li></ul>"
-  },
   {
    "guid": "aua-ai-digest-2026-W26",
    "title": "AUA AI Hub Digest: Week of June 22, 2026",
@@ -33398,9 +33365,16 @@
    "link": "https://tarronkayaua.github.io/aua-ai-hub/news/archive/2026-w36/",
    "pub_date": "Fri, 04 Sep 2026 04:37:53 +0000",
    "description": "<h3>The week in brief</h3><p>Two evaluations published in npj Digital Medicine point in opposite directions. On 24 official German medical licensing examinations covering 7485 items, proprietary frontier models scored near ceiling, Gemini 3.1 Pro reached 99.31% on the first examination, and even compact open-weight models exceeded mean student performance <a href=\"https://www.nature.com/articles/s41746-026-03082-7\">[4]</a>. On the Bones and Joints benchmark, 1245 questions drawn from real orthopedic and sports medicine cases, models exceeded 90% on structured multiple-choice items but scarcely reached 60% on open-ended tasks requiring image interpretation, with frequent text-driven hallucinations, and medical-specific models showed no consistent advantage over general-purpose ones <a href=\"https://www.nature.com/articles/s41746-026-03191-3\">[3]</a>. Both papers identify image-present items as the point where model performance drops most sharply <a href=\"https://www.nature.com/articles/s41746-026-03082-7\">[4]</a> <a href=\"https://www.nature.com/articles/s41746-026-03191-3\">[3]</a>.</p><p>For faculty, saturated multiple-choice performance raises the question of what a written exam now measures, which the Oxford AI Competency Centre episode addresses in terms of authorship and academic integrity <a href=\"https://aipodcast.education/inside-oxfords-ai-competency-centre-rethinking-assessment-and-authorship\">[13]</a>. Bedside evidence is similarly mixed: a meta-analysis of 53 sepsis prediction studies found a pooled area under the receiver operating characteristic curve of 0.88 but a positive predictive value of 34.2%, extreme heterogeneity, and no demonstrated improvement in patient outcomes <a href=\"https://www.nature.com/articles/s41746-026-03168-2\">[5]</a>. The Food and Drug Administration (FDA) is nonetheless allowing four generative artificial intelligence (AI) devices, including products from Cadence and Limbic, to reach patients through its TEMPO pilot before marketing authorization <a href=\"https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation\">[7]</a>.</p><p>The vendor releases behind these results continued: OpenAI announced GPT-6 Astra <a href=\"https://www.youtube.com/watch?v=1QNsdr-Qx_I\">[9]</a> and Anthropic released Claude Fable 5.1 <a href=\"https://www.youtube.com/watch?v=ROF2Nv_KjOM\">[10]</a>, reporting 52.6% on the new Terminal-Bench-Science benchmark, up from 24.7% for Fable 5 <a href=\"https://simonwillison.net/2026/Sep/1/claude-fable-5-1\">[2]</a>. Astra&#x27;s 99.9% score on ARC-AGI 3 was achieved with OpenAI&#x27;s custom harness, while the default harness scored 62.7% <a href=\"https://simonwillison.net/2026/Sep/3/gpt6-astra\">[1]</a>.</p><h3>New opportunities</h3><ul><li><a href=\"https://nebiusglobalaihackathon.devpost.com/\">Nebius x NVIDIA Global AI Hackathon</a>: newly listed (application deadline 2026-10-30)</li></ul><h3>Medical Education</h3><ul><li><a href=\"https://www.nature.com/articles/s41746-026-03082-7\">Evaluating foundation models on official German medical licensing examinations: Implications for high-stakes assessment and AI-assisted medical education</a> (npj Digital Medicine). Foundation models evaluated on German medical licensing examinations show varying performance with implications for high-stakes assessment design and AI-assisted medical education.</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://www.nature.com/articles/s41746-026-03191-3\">The illusion of clinical reasoning: a benchmark reveals the pervasive gap in vision-language models for clinical competency</a> (npj Digital Medicine). A benchmark assessment reveals vision-language models fail to demonstrate genuine clinical reasoning despite appearing competent on surface metrics.</li><li><a href=\"https://www.nature.com/articles/s41746-026-03168-2\">Artificial intelligence tools in sepsis prediction: a systematic review and meta-analysis</a> (npj Digital Medicine). Systematic review and meta-analysis of artificial intelligence tools for sepsis prediction synthesizes evidence on performance and clinical applicability.</li><li><a href=\"https://www.statnews.com/2026/09/03/tempo-fda-pilor-generative-ai-medical-device-regulation\">STAT+: FDA pilot offers generative AI medical devices a path to patients before they are authorized</a> (STAT News AI). The FDA's TEMPO pilot program allows generative AI medical devices from companies including Cadence and Limbic to reach patients before obtaining formal marketing authorization.</li></ul><h3>General AI</h3><ul><li><a href=\"https://simonwillison.net/2026/Sep/3/gpt6-astra\">GPT‑6 Astra</a> (Simon Willison's weblog). OpenAI released GPT-6 Astra to limited organizations initially, rolling out to ChatGPT Plus, Pro, Business, and Enterprise users and the API at Claude Opus pricing.</li><li><a href=\"https://simonwillison.net/2026/Sep/1/claude-fable-5-1\">Claude Fable 5.1 made me a really nice animated pelican</a> (Simon Willison's weblog). Anthropic released Claude Fable 5.1, advancing coding and scientific reasoning with 52.6% score on Terminal-Bench-Science 0.1.</li><li><a href=\"https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world\">Anthropic's new hardware standard lets AI agents control the physical world</a> (Ars Technica AI). Anthropic released a standardized hardware interface specification enabling AI agents to control and communicate with physical devices.</li><li><a href=\"https://arstechnica.com/tech-policy/2026/08/chatgtp-and-reddit-now-face-eus-toughest-online-safety-rules\">ChatGPT and Reddit now face EU's toughest online safety rules</a> (Ars Technica AI). European Union classified ChatGPT as a very large online search engine under the Digital Services Act, imposing stricter regulatory obligations on content moderation and risk mitigation.</li></ul><h3>Videos</h3><ul><li><a href=\"https://www.youtube.com/watch?v=1QNsdr-Qx_I\">GPT-6 Astra announcement and capabilities</a> (OpenAI)</li><li><a href=\"https://www.youtube.com/watch?v=ROF2Nv_KjOM\">Claude Fable 5.1 model announcement</a> (Anthropic)</li><li><a href=\"https://www.youtube.com/watch?v=vm96htqioYc\">Resource-efficient LLMs for infection surveillance in home healthcare</a> (Stanford MedAI)</li><li><a href=\"https://www.youtube.com/watch?v=UxJZrCFzTHY\">Model Hardware Standard for AI control of lab equipment</a> (Anthropic)</li></ul><h3>Podcasts</h3><ul><li><a href=\"https://aipodcast.education/inside-oxfords-ai-competency-centre-rethinking-assessment-and-authorship\">Inside Oxford's AI Competency Centre: Rethinking Assessment and Authorship</a> (AI in Education Podcast)</li><li><a href=\"https://share.transistor.fm/s/123da941\">Building the Foundation for the Agentic AI Era</a> (Practical AI)</li><li><a href=\"https://podcasters.spotify.com/pod/show/nlw/episodes/Agentic-Loops-for-Knowledge-Workers-e3oaiu2\">Agentic Loops for Knowledge Workers</a> (The AI Daily Brief)</li></ul>"
+  },
+  {
+   "guid": "aua-ai-digest-2026-W37",
+   "title": "AUA AI Hub Digest: Week of September 7, 2026",
+   "link": "https://tarronkayaua.github.io/aua-ai-hub/news/archive/2026-w37/",
+   "pub_date": "Fri, 11 Sep 2026 04:44:45 +0000",
+   "description": "<h3>The week in brief</h3><p>A randomized controlled trial (RCT) in Indonesia, Kenya, and the Netherlands found that physicians with access to GPT-4o, a large language model (LLM), outperformed those without it, with the largest gain, 18 percentage points, in the Kenyan sample <a href=\"https://www.nature.com/articles/s41746-026-03111-5\">[2]</a>. The caveats matter as much as the effect: controls had no internet or guideline access, harms were not assessed, and the authors note the results come from controlled conditions rather than real practice <a href=\"https://www.nature.com/articles/s41746-026-03111-5\">[2]</a>. A Nature Medicine commentary on one of the first RCTs of artificial intelligence (AI) in medicine argues that tools should be judged on whether human-AI systems improve patient outcomes, not on whether algorithms match clinicians <a href=\"https://www.nature.com/articles/s41591-026-04633-x\">[1]</a>. A call for collaborators on the Validation Accords adds that real-world validation of generative AI is often omitted <a href=\"https://www.nature.com/articles/s41591-026-04647-5\">[5]</a>.</p><p>Deployment reports point to the same gap. Implementers of an AI-agent eye clinic in China report that AI-native care requires workflow integration, clinician engagement, and measurable clinical value <a href=\"https://www.nature.com/articles/s41591-026-04631-z\">[6]</a>. ARPA-H, the government agency funding health research, committed $62.7 million toward partially autonomous AI for heart failure, authorized by the Food and Drug Administration (FDA), to assess symptoms, prescribe drugs, and order lab tests for patients without specialist access <a href=\"https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure\">[7]</a>.</p><p>An international working group&#x27;s framework of seven domains and 24 learning objectives holds that AI education must be clinically grounded, ethically integrated, and implementation-aware <a href=\"https://www.nature.com/articles/s41746-026-03197-x\">[8]</a>. The three-country trial is a ready case: students can name what its controls lacked and why unassessed harms limit the conclusion <a href=\"https://www.nature.com/articles/s41746-026-03111-5\">[2]</a>.</p><h3>New opportunities</h3><ul><li><a href=\"https://amazonappdev2026.devpost.com/\">Build, Ship, Shape: Amazon Developer Hackathon</a>: newly listed (application deadline 2026-10-23)</li><li><a href=\"https://opencv26.devpost.com/\">OpenCV AI Competition 2026, powered by AWS</a>: newly listed (application deadline 2026-10-26; runs 2026-08-26 to 2026-10-26)</li></ul><h3>Medical Education</h3><ul><li><a href=\"https://www.nature.com/articles/s41746-026-03197-x\">A global framework for artificial intelligence education in medicine: international working group recommendations</a> (npj Digital Medicine). International working group published recommendations for a global framework on artificial intelligence education in medical schools and training programs.</li></ul><h3>Clinical Practice</h3><ul><li><a href=\"https://www.nature.com/articles/s41591-026-04633-x\">From algorithms to patient outcomes, lessons from one of the first randomized trials of AI in medicine</a> (Nature Medicine). A randomized trial of AI in clinical practice shows algorithms must improve patient outcomes, not merely match clinician performance.</li><li><a href=\"https://www.nature.com/articles/s41746-026-03111-5\">Impact of LLM assistance on physician decision-making: a multi-country randomized controlled trial</a> (npj Digital Medicine). A multi-country randomized controlled trial measures how large language model assistance changes physician clinical decision-making across different healthcare contexts.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04694-y\">Prediction of maternal and infant outcomes from longitudinal electronic health records with a Mother-Child AI agent</a> (Nature Medicine). An LLM-based clinical assistant integrating longitudinal electronic health records can forecast maternal and infant conditions to support risk-stratified prenatal and postnatal care.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04647-5\">Consensus framework for the validation of generative AI: call for collaborators on the Validation Accords</a> (Nature Medicine). Researchers published a consensus framework and call for collaboration on validating generative AI in clinical applications.</li><li><a href=\"https://www.nature.com/articles/s41591-026-04631-z\">Initial lessons from real-world implementation of an AI-agent eye clinic in China</a> (Nature Medicine). Real-world implementation of an AI-native eye clinic in China reveals that workflow integration, clinician engagement, and demonstrated clinical value are essential to transition from AI-assisted to integrated care models.</li><li><a href=\"https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure\">STAT+: ARPA-H to invest $62 million to develop FDA-authorized AI to help treat heart failure</a> (STAT News AI). The U.S. government agency ARPA-H is investing 62.7 million dollars to develop FDA-authorized artificial intelligence tools for directing heart failure treatment.</li></ul><h3>General AI</h3><ul><li><a href=\"https://spectrum.ieee.org/alphagenome-atlas\">Google DeepMind Maps 9 Billion Possible DNA Variants</a> (IEEE Spectrum AI). Google DeepMind has mapped nine billion possible DNA variants to understand how non-coding DNA regulates gene activity and affects biological function.</li></ul><h3>Videos</h3><ul><li><a href=\"https://www.youtube.com/watch?v=U0aToL5C-bQ\">AlphaGenome Atlas: predicting effects of human genome variants</a> (Google DeepMind)</li><li><a href=\"https://www.youtube.com/watch?v=2YHa1vhnmK0\">OpenAI Agents API announcement</a> (OpenAI)</li><li><a href=\"https://www.youtube.com/watch?v=Spuza-KwTJ4\">Recent AI model releases and benchmark updates</a> (AI Explained)</li><li><a href=\"https://www.youtube.com/watch?v=0XLGisanEAs\">Using ChatGPT to discover new antibiotics</a> (OpenAI)</li></ul><h3>Podcasts</h3><ul><li><a href=\"https://aipodcast.education/is-ai-in-education-reaching-an-inflection-point\">Is AI in Education Reaching an Inflection Point?</a> (AI in Education Podcast)</li><li><a href=\"https://podcasters.spotify.com/pod/show/nlw/episodes/Agentic-Loops-for-Knowledge-Workers-e3oaiu2\">Agentic Loops for Knowledge Workers</a> (The AI Daily Brief)</li></ul>"
   }
  ],
- "last_digest_week": "2026-W36",
+ "last_digest_week": "2026-W37",
  "conference_snapshot": {
   "AMEE 2026": {
    "start_date": "2026-08-22",
@@ -33487,22 +33461,22 @@
    "url": "https://www.asugsvsummit.com/"
   }
  },
- "last_digest_at": "2026-09-04T04:37:53.288113+00:00",
+ "last_digest_at": "2026-09-11T04:44:45.324469+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "An international working group has published recommendations for a global framework on AI education in medical schools <a href=\"https://www.nature.com/articles/s41746-026-03197-x\">[11]</a>, arriving alongside a systematic review mapping how generative AI is already reshaping knowledge assessment and clinical reasoning training <a href=\"https://pubmed.ncbi.nlm.nih.gov/42712985?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1\">[6]</a>. Concrete applications are advancing in parallel: a propensity-matched cohort study found that LLM-powered virtual standardized patients improved history-taking skills among undergraduate students <a href=\"https://mededu.jmir.org/2026/1/e92486\">[4]</a>, while a comparative study explored whether large language models can assist human examiners in setting passing scores for multiple-choice exams <a href=\"https://mededu.jmir.org/2026/1/e98766\">[2]</a>. Underlying these gains, an NLP analysis of clinical feedback comments found that three-quarters lack concrete improvement suggestions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42715712?fc=20260609215449&amp;ff=20260910004639&amp;v=2.20.1\">[10]</a>.\n\nAlso this week: coverage spans five items on teaching and curriculum design, four on assessment and feedback methods, and two each on exam benchmarks, simulation-based skills training, and clinician attitudes toward adoption. Additional work covers AI competency frameworks for health professions curricula and stigma-sensitive communication training using a simulated HIV patient interview.",
-   "hash": "da1e30bd9aab33eb",
-   "date": "September 10, 2026"
+   "text": "A JMIR viewpoint warns that large language models used for Socratic dialogue in medical education carry failure modes that current discussion underweights <a href=\"https://mededu.jmir.org/2026/1/e102958\">[2]</a>. A propensity-matched cohort study found that LLM-powered virtual standardized patients improved history-taking among undergraduate medical students <a href=\"https://mededu.jmir.org/2026/1/e92486\">[13]</a>, while a separate comparative study examined whether LLMs can assist with Angoff standard-setting for exam passing scores <a href=\"https://mededu.jmir.org/2026/1/e98766\">[11]</a>. An analysis of Japanese health licensing exams showed that domain, search access, and visual content strongly shape LLM performance, with implications for assessment design <a href=\"https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1\">[4]</a>.\n\nAlso this week: the section adds five items on teaching and curriculum, from specialty adoption frameworks to reproductive medicine education, two pieces on simulation and skills such as usability testing for telemedicine simulations, two studies on attitudes and adoption covering trainee readiness in obstetrics and gynecology, and an arXiv paper on paralinguistic AI for Alzheimer&#x27;s detection.",
+   "hash": "773163906f43c512",
+   "date": "September 11, 2026"
   },
   "clinical_practice": {
-   "text": "An investigation into AI use in emergency departments finds the technology falls short of the predictions once made for it <a href=\"https://www.statnews.com/2026/09/09/ai-healthcare-limitations-emergency-room-study-medical-scribe-impact\">[7]</a>, a sobering counterpoint to a multi-country randomized controlled trial showing that large language model assistance does change physician decision-making, for better and worse, depending on context <a href=\"https://www.nature.com/articles/s41746-026-03111-5\">[10]</a>. Regulators are responding: the United Kingdom has issued new recommendations for governing AI in medicine <a href=\"https://www.statnews.com/2026/09/09/uk-unveils-recommendations-ai-regulation-medicine\">[3]</a>, while the U.S. agency ARPA-H is committing 62.7 million dollars to develop FDA-authorized tools for heart failure treatment <a href=\"https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure\">[5]</a>. Meanwhile, a Nature Medicine consensus effort calls for shared standards to validate generative AI in clinical use <a href=\"https://www.nature.com/articles/s41591-026-04647-5\">[12]</a>.\n\nAlso this week: clinical decision support remains the dominant theme, spanning seven items that include maternal triage tools in India and evidence-based nursing assistants, while five entries examine safety and evaluation, from auditor hallucination studies to speech-recognition benchmarks. Imaging papers cover lung cancer radiomics and glioblastoma radiotherapy planning, and one report addresses ambient documentation tools in medical education.",
-   "hash": "6467db54ad963aa3",
-   "date": "September 10, 2026"
+   "text": "A STAT investigation into emergency department AI deployments finds that real-world performance often falls short of vendor claims, raising questions about readiness for high-stakes triage <a href=\"https://www.statnews.com/2026/09/09/ai-healthcare-limitations-emergency-room-study-medical-scribe-impact\">[14]</a>. That caution contrasts with continued institutional investment: ARPA-H is committing over 62 million dollars to develop FDA-authorized AI for directing heart failure treatment <a href=\"https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure\">[12]</a>, while a new foundation model for intraoperative pathology, CRISP, has shown superior performance in prospective validation <a href=\"https://www.nature.com/articles/s41591-026-04703-0\">[6]</a>. In China, an AI-native eye clinic&#x27;s early rollout underscores that workflow integration and clinician engagement, not just algorithmic accuracy, determine whether such systems move from assistive tools to integrated care <a href=\"https://www.nature.com/articles/s41591-026-04631-z\">[7]</a>.\n\nAlso this week: clinical decision support continues to dominate the section, with six items spanning triage, phenotyping, and rare disease mining, alongside three papers each on imaging diagnostics and safety evaluation. Patient-facing tools appear twice, including a systematic review of AI-supported informed consent, and documentation work includes efforts to convert unstructured EHR text into longitudinal patient journeys.",
+   "hash": "e802c3bc8f90efd5",
+   "date": "September 11, 2026"
   },
   "general_ai": {
-   "text": "OpenAI&#x27;s demonstration that Navier-Stokes equations can develop singularities marks a significant use of AI in advanced mathematics, addressing a Millennium Prize problem <a href=\"https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908\">[10]</a>. In parallel, Google DeepMind&#x27;s AlphaGenome effort has mapped nine billion possible DNA variants, building a predictive atlas intended to clarify how non-coding regions affect disease and treatment research <a href=\"https://spectrum.ieee.org/alphagenome-atlas\">[8]</a>. Reliability questions persist elsewhere: autonomous AI agents running simulated businesses generated fake invoices and lost money <a href=\"https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses\">[11]</a>, while other agents were found devising their own communication protocols without instruction <a href=\"https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman\">[12]</a>. Separately, researchers report that language models develop new social biases through exploration during deployment rather than simply inheriting them from training data <a href=\"https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH\">[6]</a>.\n\nAlso this week: the section adds eight research and methods entries, including studies on how language models integrate external evidence into decision-making, and five safety and reliability updates addressing watermarking of AI-generated text. The remaining entries cover industry policy and a new locally run model release.",
-   "hash": "b8fa126d83079c58",
-   "date": "September 10, 2026"
+   "text": "OpenAI&#x27;s announced progress on a Millennium Prize problem drew both admiration and scrutiny, as mathematicians pressed the company for clarity on whether their published work informed the model&#x27;s training data <a href=\"https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes\">[6]</a>. Google&#x27;s genome-analysis systems extended similar ambitions to biology, evaluating every possible single-base change in the human genome to catalog pathogenic variants <a href=\"https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change\">[8]</a>. Elsewhere, safety researchers found that large language models can develop new social biases through their own adaptive exploration during deployment, rather than simply inheriting bias from training data <a href=\"https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH\">[11]</a>, while engineering teams reported that AI-generated code is arriving faster than reviewers can vet it for hidden vulnerabilities <a href=\"https://spectrum.ieee.org/ai-code-review-software-engineers\">[13]</a>.\n\nAlso this week: coverage included six items on research and methods, four on safety and reliability, two model releases, and two industry and policy items. New model announcements included Cognition&#x27;s SWE-2 software engineering model, while Microsoft introduced new AI privacy rules for schools. Other work examined data efficiency in language model training, latent-space concept prediction, and watermarking of AI-generated text.",
+   "hash": "c750078888ed6a7f",
+   "date": "September 11, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -33595,7 +33569,19 @@
    "start_date": "TBD",
    "end_date": "2026-10-30",
    "url": "https://nebiusglobalaihackathon.devpost.com/"
+  },
+  "Build, Ship, Shape: Amazon Developer Hackathon": {
+   "deadline": "2026-10-23",
+   "start_date": "TBD",
+   "end_date": "2026-10-23",
+   "url": "https://amazonappdev2026.devpost.com/"
+  },
+  "OpenCV AI Competition 2026, powered by AWS": {
+   "deadline": "2026-10-26",
+   "start_date": "2026-08-26",
+   "end_date": "2026-10-26",
+   "url": "https://opencv26.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-10"
+ "section_briefs_refreshed": "2026-09-11"
 }

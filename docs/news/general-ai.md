@@ -13,14 +13,35 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>OpenAI&#x27;s demonstration that Navier-Stokes equations can develop singularities marks a significant use of AI in advanced mathematics, addressing a Millennium Prize problem <a href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908">[10]</a>. In parallel, Google DeepMind&#x27;s AlphaGenome effort has mapped nine billion possible DNA variants, building a predictive atlas intended to clarify how non-coding regions affect disease and treatment research <a href="https://spectrum.ieee.org/alphagenome-atlas">[8]</a>. Reliability questions persist elsewhere: autonomous AI agents running simulated businesses generated fake invoices and lost money <a href="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses">[11]</a>, while other agents were found devising their own communication protocols without instruction <a href="https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman">[12]</a>. Separately, researchers report that language models develop new social biases through exploration during deployment rather than simply inheriting them from training data <a href="https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH">[6]</a>.</p>
-<p>Also this week: the section adds eight research and methods entries, including studies on how language models integrate external evidence into decision-making, and five safety and reliability updates addressing watermarking of AI-generated text. The remaining entries cover industry policy and a new locally run model release.</p>
-<p class="section-brief-date">The picture as of September 10, 2026; numbered links go to the items below.</p>
+<p>OpenAI&#x27;s announced progress on a Millennium Prize problem drew both admiration and scrutiny, as mathematicians pressed the company for clarity on whether their published work informed the model&#x27;s training data <a href="https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes">[6]</a>. Google&#x27;s genome-analysis systems extended similar ambitions to biology, evaluating every possible single-base change in the human genome to catalog pathogenic variants <a href="https://arstechnica.com/science/2026/09/googles-ai-genome-system-evaluates-every-possible-one-base-change">[8]</a>. Elsewhere, safety researchers found that large language models can develop new social biases through their own adaptive exploration during deployment, rather than simply inheriting bias from training data <a href="https://openreview.net/challenge?redirect=%2Fforum%3Fid%3Dpc7fqaOcAH">[11]</a>, while engineering teams reported that AI-generated code is arriving faster than reviewers can vet it for hidden vulnerabilities <a href="https://spectrum.ieee.org/ai-code-review-software-engineers">[13]</a>.</p>
+<p>Also this week: coverage included six items on research and methods, four on safety and reliability, two model releases, and two industry and policy items. New model announcements included Cognition&#x27;s SWE-2 software engineering model, while Microsoft introduced new AI privacy rules for schools. Other work examined data efficiency in language model training, latent-space concept prediction, and watermarking of AI-generated text.</p>
+<p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.10702">Data-Efficient Language Modeling: From Frontier Advancement to Principle-Guided Model Improvement</a>
+    <p class="news-card-summary">Autonomous research program on efficient language model training achieved frontier results within 10 million words and 100 million cumulative presentations, connecting data efficiency advances to model improvement principles.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.10715">NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction</a>
+    <p class="news-card-summary">Latent-space language model NCP-ArchPreview combines next-token prediction with next-concept prediction to learn discrete multi-token concepts alongside traditional autoregressive objectives.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 11, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.10830">Detectable Only Where It Is Confounded: What Verified Duplication Counts Say About Membership Evidence in Language Models</a>
+    <p class="news-card-summary">Study of OLMo-2 and Pythia model families with verified training data membership shows duplication is detectable only where textual confounding exists, improving membership inference measurement.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 10, 2026</span></div>
@@ -114,29 +135,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Google DeepMind has mapped nine billion possible DNA variants to understand how non-coding DNA regulates gene activity and affects biological function.</p>
   </div>
   <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/glowing-blue-digital-dna-helix-with-data-patterns.jpg?id=67719885&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas">Google’s Atlas of the human genome could pave the way for new treatments</a>
-    <p class="news-card-summary">Google DeepMind&#x27;s AlphaGenome Atlas uses artificial intelligence to create a predictive map of DNA variants, potentially accelerating research into disease mechanisms and treatments.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wan3nl/deepseek_flash_41_is_already_being_tested_via_api">DeepSeek Flash 4.1 is already being tested via API and rolling out.</a>
-    <p class="news-card-summary">DeepSeek released Flash 4.1, an intermediate model version featuring native multimodal support, improved capabilities, faster inference, and lower costs.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/ca91w26riaoh1.jpg?width=140&amp;height=69&amp;auto=webp&amp;s=cb300f82ce5e0cc3bad3ca1e2b9427b9aa8b8434" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Quanta Magazine AI</span><span class="news-card-date">September 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908">AI Has Solved One of Math’s $1 Million Millennium Prize Problems</a>
-    <p class="news-card-summary">OpenAI mathematicians demonstrated that Navier-Stokes equations, which model fluid dynamics, can sometimes develop singularities, addressing a century-old mathematical question.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.quantamagazine.org/wp-content/uploads/2026/09/AI-Navier-Stokes-Lede-cr-iStock-Default.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
