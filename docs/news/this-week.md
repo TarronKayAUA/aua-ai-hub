@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -316,13 +316,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Multimodal large language models that interpret dental chart images were benchmarked against student and clinician performance to assess their potential for supporting dental education.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42694521?fc=20260609215449&amp;ff=20260904145949&amp;v=2.20.1">Accuracy of General-Use Multimodal AI Platforms for Pell and Gregory Classification of Impacted Mandibular Third Molars</a>
-        <p class="news-card-summary">ChatGPT and Grok showed poor accuracy in classifying impacted mandibular third molars on radiographs, indicating general-use AI models are unreliable for independent radiographic assessment.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
@@ -344,6 +337,20 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
     <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e97661">Quantifying the Impact of Anonymization-Induced Clinical Data Quality Loss: Methodological Quantitative Case Study Using Primary Diagnosis Codes and Hospital Length of Stay</a>
+        <p class="news-card-summary">A quantitative study measures how k-anonymity privacy protection affects the quality and analytical value of electronic health record data for secondary research use.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83544">Reinforcement Learning, Based Temporal Knowledge Graph Reasoning for Predicting Chronic Gastritis Diagnosis and Treatment: Development and Validation Study</a>
+        <p class="news-card-summary">Researchers developed a reinforcement learning temporal knowledge graph system to predict chronic gastritis diagnosis by capturing disease progression and relationships among clinical events.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 11, 2026</span></div>
@@ -594,20 +601,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A scoping review finds digital predictive technologies show emerging potential for fall risk assessment in long-term care but remain heterogeneous and developmental, functioning as decision-support tools rather than replacements for clinical judgment.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 4, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03189-x">Platforms for artificial intelligence-enabled infectious disease surveillance</a>
-        <p class="news-card-summary">A review of platforms for artificial intelligence-enabled infectious disease surveillance examines systems and approaches for monitoring disease patterns and outbreaks.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 4, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04694-y">Prediction of maternal and infant outcomes from longitudinal electronic health records with a Mother-Child AI agent</a>
-        <p class="news-card-summary">An LLM-based clinical assistant integrating longitudinal electronic health records can forecast maternal and infant conditions to support risk-stratified prenatal and postnatal care.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -618,10 +611,26 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 26 items"
+??? abstract "Show the 28 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (26)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (28)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity">Anthropic spent this week in hot water over cybersecurity</a>
+        <p class="news-card-summary">Anthropic released a report documenting incidents where its Claude models were used for cyberattacks and system compromises, raising concerns about AI model safeguards.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_B.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research">Claude users found ways around safeguards for bioweapons research</a>
+        <p class="news-card-summary">Researchers found that Claude users could circumvent safety guardrails designed to prevent bioweapon research by framing dangerous biology requests as legitimate science.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/03/claude-app-500x500-1773164045.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 11, 2026</span></div>

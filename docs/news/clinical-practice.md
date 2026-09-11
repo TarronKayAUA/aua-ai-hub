@@ -21,6 +21,20 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e97661">Quantifying the Impact of Anonymization-Induced Clinical Data Quality Loss: Methodological Quantitative Case Study Using Primary Diagnosis Codes and Hospital Length of Stay</a>
+    <p class="news-card-summary">A quantitative study measures how k-anonymity privacy protection affects the quality and analytical value of electronic health record data for secondary research use.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83544">Reinforcement Learning, Based Temporal Knowledge Graph Reasoning for Predicting Chronic Gastritis Diagnosis and Treatment: Development and Validation Study</a>
+    <p class="news-card-summary">Researchers developed a reinforcement learning temporal knowledge graph system to predict chronic gastritis diagnosis by capturing disease progression and relationships among clinical events.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 11, 2026</span></div>
@@ -113,21 +127,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">The U.S. government agency ARPA-H is investing 62.7 million dollars to develop FDA-authorized artificial intelligence tools for directing heart failure treatment.</p>
   </div>
   <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_312976841-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/09/09/ai-medicine-assisted-physicians-research-autonomy">Opinion: Autonomous AI will beat AI-assisted physicians at some medical tasks by 2030</a>
-    <p class="news-card-summary">Opinion piece argues that autonomous AI systems will likely exceed both unaided physicians and AI-assisted physicians on five core cognitive medical tasks by 2030.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_549878230-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/09/09/ai-healthcare-limitations-emergency-room-study-medical-scribe-impact">STAT+: Can AI fix health care? In the chaos of emergency rooms, the technology comes up short</a>
-    <p class="news-card-summary">Investigation of AI deployment in emergency departments shows the technology falls short of industry predictions in real-world clinical settings.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/20260825_kaf_baugh_003-1-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
