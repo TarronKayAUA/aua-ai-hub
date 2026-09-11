@@ -18,15 +18,36 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e97822">Teaching Model Context Protocol, Retrieval-Augmented Generation, and AI Agents to a Multidisciplinary Hospital Workforce: Single-Group Pre-Post Survey Study</a>
+        <p class="news-card-summary">An eight-week training program taught hospital staff model context protocols, retrieval-augmented generation, and AI agents; study reports design, implementation, and lessons learned.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e84266">Performance of Cloud-Hosted Large Vision-Language Models on the Japanese National Examination for Clinical Laboratory Technicians: Comparative Benchmarking Study</a>
+        <p class="news-card-summary">Cloud-hosted vision-language models were benchmarked on Japan&#x27;s National Examination for Clinical Laboratory Technicians, comparing their performance on multimodal test questions requiring both text and image reasoning.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42722929?fc=20260609215449&amp;ff=20260911085044&amp;v=2.20.1">Can Artificial Intelligence-Based Counseling Improve Iranian Students&#x27; Spiritual Well-Being?</a>
         <p class="news-card-summary">A quasi-experimental study compared AI-based counseling with face-to-face counseling for spiritual well-being in 105 Iranian medical students.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42725275?fc=20260609215449&amp;ff=20260911183704&amp;v=2.20.1">Artificial Intelligence-Assisted Versus Traditional Learning and Long-Term Knowledge Retention Among Undergraduate Medical Students: A Sequential, Explanatory Mixed-Methods Study</a>
+        <p class="news-card-summary">A mixed-methods study compared long-term knowledge retention between undergraduate medical students learning with AI-assisted personalized explanations versus traditional instruction.</p>
       </div>
     </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
@@ -309,13 +330,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Integrated, longitudinal, and active learning-based models provide the strongest foundation for developing AI competencies in medical curricula to prepare physicians for clinical AI collaboration.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 4, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e91809">Multimodal Large Language Models for Dental Chart Image Interpretation: Cross-Sectional Benchmarking Study With Students and Clinicians</a>
-        <p class="news-card-summary">Multimodal large language models that interpret dental chart images were benchmarked against student and clinician performance to assess their potential for supporting dental education.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
@@ -333,10 +347,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88390">Privacy Leakage in Federated Learning in Radiology Reports: Comparative Evaluation of Tokenizer and Batch-Size Privacy Risks</a>
+        <p class="news-card-summary">Researchers quantified privacy risks from gradient inversion attacks on federated learning systems trained on radiology reports, evaluating how tokenizer design and batch size affect information leakage.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
@@ -611,10 +632,18 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 28 items"
+??? abstract "Show the 29 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (28)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (29)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses">ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses</a>
+        <p class="news-card-summary">A New Mexico lawyer was fined and held in contempt for submitting a murder case appeal containing fabricated witnesses and false testimony generated by ChatGPT without verification.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/chatgpt-icon-500x500-1789154135.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 11, 2026</span></div>
@@ -834,7 +863,7 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 11 videos"
+??? abstract "Show the 21 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=2YHa1vhnmK0" target="_blank" rel="noopener" title="Introducing the Agents API">
@@ -902,6 +931,66 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">AI fundamentals and key concepts explained</span>
       <span class="video-card-meta">IBM Technology, September 6, 2026</span>
       <span class="video-card-desc">IBM explainer covering fundamental AI concepts and terminology for audiences new to the field.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener" title="AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26">
+      <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for publication versus improved patient outcomes" loading="lazy">
+      <span class="video-card-title">AI for publication versus improved patient outcomes</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Panel discussion on the tensions between using AI to advance academic publication versus directly improving patient outcomes in pediatrics.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=WiK924ZLarE" target="_blank" rel="noopener" title="Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26">
+      <img src="https://i4.ytimg.com/vi/WiK924ZLarE/hqdefault.jpg" alt="Video: AI for pediatric diagnostics and imaging" loading="lazy">
+      <span class="video-card-title">AI for pediatric diagnostics and imaging</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Lightning talks on artificial intelligence applications in pediatric radiology and diagnostic imaging, featuring clinical experts.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=yEXbXbESX4w" target="_blank" rel="noopener" title="Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26">
+      <img src="https://i2.ytimg.com/vi/yEXbXbESX4w/hqdefault.jpg" alt="Video: Adapting and validating AI models for pediatric use" loading="lazy">
+      <span class="video-card-title">Adapting and validating AI models for pediatric use</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Lightning talks on adapting and validating AI models specifically for pediatric clinical use, covering translational challenges.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=IbJFb6Q2GD0" target="_blank" rel="noopener" title="From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026">
+      <img src="https://i2.ytimg.com/vi/IbJFb6Q2GD0/hqdefault.jpg" alt="Video: Unlocking pediatric data for AI development" loading="lazy">
+      <span class="video-card-title">Unlocking pediatric data for AI development</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Discussion on addressing fragmented pediatric data to create AI-ready datasets for model development and clinical deployment.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=7nwO85lEYFw" target="_blank" rel="noopener" title="The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026">
+      <img src="https://i4.ytimg.com/vi/7nwO85lEYFw/hqdefault.jpg" alt="Video: AI in pediatric medicine: three decades of progress" loading="lazy">
+      <span class="video-card-title">AI in pediatric medicine: three decades of progress</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Keynote on the three-decade evolution of AI in pediatric medicine and current momentum in clinical translation.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=m1nAWwAL4FI" target="_blank" rel="noopener" title="Health AI Deployment: Navigating Decisions and Constraints | AIMI Symposium 2026 #AIMI26">
+      <img src="https://i2.ytimg.com/vi/m1nAWwAL4FI/hqdefault.jpg" alt="Video: Health AI deployment: regulatory and organizational decisions" loading="lazy">
+      <span class="video-card-title">Health AI deployment: regulatory and organizational decisions</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Panel on regulatory pathways, risk assessment, and organizational decision-making in deploying health AI systems clinically.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=VamomgkqsuE" target="_blank" rel="noopener" title="Building and Scaling Health AI from Industry to Practice | AIMI Symposium 2026 #AIMI26">
+      <img src="https://i3.ytimg.com/vi/VamomgkqsuE/hqdefault.jpg" alt="Video: Building and scaling health AI for clinical practice" loading="lazy">
+      <span class="video-card-title">Building and scaling health AI for clinical practice</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Discussion of economic, operational, and market realities in building and scaling AI products for real healthcare delivery.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=zrM2gAjXLx8" target="_blank" rel="noopener" title="Human-AI Collaboration in Clinical Workflows | AIMI Symposium 2026 #AIMI26">
+      <img src="https://i3.ytimg.com/vi/zrM2gAjXLx8/hqdefault.jpg" alt="Video: Human-AI collaboration in clinical workflows" loading="lazy">
+      <span class="video-card-title">Human-AI collaboration in clinical workflows</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Real-world examples of human-AI collaboration in clinical workflows and interface design for clinical adoption.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=qS4rKbAkI7U" target="_blank" rel="noopener" title="Data as the Foundation for Clinical AI | AIMI Symposium 2026 #AIMI26">
+      <img src="https://i2.ytimg.com/vi/qS4rKbAkI7U/hqdefault.jpg" alt="Video: Clinical data as foundation for health AI" loading="lazy">
+      <span class="video-card-title">Clinical data as foundation for health AI</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Framework for developing AI-ready clinical data at scale to support development, evaluation, and real-world impact of health AI.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=HglH-xztThA" target="_blank" rel="noopener" title="Session 1: Advances in AI Methods and Clinical Intelligence | AIMI Symposium 2026 #AIMI26">
+      <img src="https://i1.ytimg.com/vi/HglH-xztThA/hqdefault.jpg" alt="Video: Advances in AI methods and clinical intelligence" loading="lazy">
+      <span class="video-card-title">Advances in AI methods and clinical intelligence</span>
+      <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
+      <span class="video-card-desc">Session on emerging AI methods and their potential clinical applications, featuring scientific advances in next-generation health AI.</span>
     </a>
     </div>
 

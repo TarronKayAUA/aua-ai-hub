@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88390">Privacy Leakage in Federated Learning in Radiology Reports: Comparative Evaluation of Tokenizer and Batch-Size Privacy Risks</a>
+    <p class="news-card-summary">Researchers quantified privacy risks from gradient inversion attacks on federated learning systems trained on radiology reports, evaluating how tokenizer design and batch size affect information leakage.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
@@ -119,13 +126,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e86835">Integrating Lymph Node Metastasis and Programmed Death-Ligand 1 Prediction in Non, Small Cell Lung Cancer From a Single PET/CT Scan: Multicenter Radiomics Study</a>
     <p class="news-card-summary">A multicenter radiomics study develops an integrated deep learning model to simultaneously predict lymph node metastasis and PD-L1 expression in lung cancer from a single PET/CT scan.</p>
   </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/09/09/arpa-h-advocate-program-autonomous-ai-bots-for-heart-failure">STAT+: ARPA-H to invest $62 million to develop FDA-authorized AI to help treat heart failure</a>
-    <p class="news-card-summary">The U.S. government agency ARPA-H is investing 62.7 million dollars to develop FDA-authorized artificial intelligence tools for directing heart failure treatment.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_312976841-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

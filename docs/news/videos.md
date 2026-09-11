@@ -156,35 +156,35 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">Stanford AIMI, August 21, 2026</span>
   <span class="video-card-desc">Curt Langlotz discusses foundation models for radiology and their role in clinical practice and medical education.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26" loading="lazy">
-  <span class="video-card-title">AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener" title="AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26">
+  <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for publication versus improved patient outcomes" loading="lazy">
+  <span class="video-card-title">AI for publication versus improved patient outcomes</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Panel discussion on balancing publication-focused versus patient-outcome-focused applications of AI in pediatric medicine.</span>
+  <span class="video-card-desc">Panel discussion on the tensions between using AI to advance academic publication versus directly improving patient outcomes in pediatrics.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=WiK924ZLarE" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/WiK924ZLarE/hqdefault.jpg" alt="Video: Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26" loading="lazy">
-  <span class="video-card-title">Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=WiK924ZLarE" target="_blank" rel="noopener" title="Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26">
+  <img src="https://i4.ytimg.com/vi/WiK924ZLarE/hqdefault.jpg" alt="Video: AI for pediatric diagnostics and imaging" loading="lazy">
+  <span class="video-card-title">AI for pediatric diagnostics and imaging</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Lightning talks on AI applications in pediatric radiology and diagnostic imaging, with emphasis on sharper image analysis and clinical insights.</span>
+  <span class="video-card-desc">Lightning talks on artificial intelligence applications in pediatric radiology and diagnostic imaging, featuring clinical experts.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=yEXbXbESX4w" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/yEXbXbESX4w/hqdefault.jpg" alt="Video: Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26" loading="lazy">
-  <span class="video-card-title">Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=yEXbXbESX4w" target="_blank" rel="noopener" title="Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26">
+  <img src="https://i2.ytimg.com/vi/yEXbXbESX4w/hqdefault.jpg" alt="Video: Adapting and validating AI models for pediatric use" loading="lazy">
+  <span class="video-card-title">Adapting and validating AI models for pediatric use</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Lightning talks on adapting and validating AI models specifically for pediatric clinical use, addressing safety and efficacy considerations.</span>
+  <span class="video-card-desc">Lightning talks on adapting and validating AI models specifically for pediatric clinical use, covering translational challenges.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=IbJFb6Q2GD0" target="_blank" rel="noopener">
-  <img src="https://i2.ytimg.com/vi/IbJFb6Q2GD0/hqdefault.jpg" alt="Video: From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026" loading="lazy">
-  <span class="video-card-title">From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=IbJFb6Q2GD0" target="_blank" rel="noopener" title="From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026">
+  <img src="https://i2.ytimg.com/vi/IbJFb6Q2GD0/hqdefault.jpg" alt="Video: Unlocking pediatric data for AI development" loading="lazy">
+  <span class="video-card-title">Unlocking pediatric data for AI development</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Discussion of pediatric data fragmentation challenges and strategies for organizing data infrastructure to support pediatric AI development.</span>
+  <span class="video-card-desc">Discussion on addressing fragmented pediatric data to create AI-ready datasets for model development and clinical deployment.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=7nwO85lEYFw" target="_blank" rel="noopener">
-  <img src="https://i4.ytimg.com/vi/7nwO85lEYFw/hqdefault.jpg" alt="Video: The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026" loading="lazy">
-  <span class="video-card-title">The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026</span>
+<a class="video-card" href="https://www.youtube.com/watch?v=7nwO85lEYFw" target="_blank" rel="noopener" title="The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026">
+  <img src="https://i4.ytimg.com/vi/7nwO85lEYFw/hqdefault.jpg" alt="Video: AI in pediatric medicine: three decades of progress" loading="lazy">
+  <span class="video-card-title">AI in pediatric medicine: three decades of progress</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Keynote on the long history and current trajectory of AI adoption in pediatric medicine, featuring practitioners from academia and digital health.</span>
+  <span class="video-card-desc">Keynote on the three-decade evolution of AI in pediatric medicine and current momentum in clinical translation.</span>
 </a>
 </div>
 
