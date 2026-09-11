@@ -22,6 +22,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
     <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42722929?fc=20260609215449&amp;ff=20260911085044&amp;v=2.20.1">Can Artificial Intelligence-Based Counseling Improve Iranian Students&#x27; Spiritual Well-Being?</a>
+        <p class="news-card-summary">A quasi-experimental study compared AI-based counseling with face-to-face counseling for spiritual well-being in 105 Iranian medical students.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 11, 2026</span></div>
@@ -309,13 +316,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Multimodal large language models that interpret dental chart images were benchmarked against student and clinician performance to assess their potential for supporting dental education.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42693451?fc=20260609215449&amp;ff=20260904084448&amp;v=2.20.1">Prompt Strategy and Model Choice in AI-Assisted Gross Anatomy Education: Evaluating Zero-Shot, Few-Shot, and Chain-of-Thought Prompting for Image Interpretation</a>
-        <p class="news-card-summary">Study evaluates four multimodal language models on visual identification of anatomical structures and assesses whether prompt engineering strategies improve accuracy for gross anatomy education.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 4, 2026</span></div>
@@ -342,8 +342,15 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 11, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04621-1">A global digital navigator of human health for precision medicine</a>
+        <p class="news-card-summary">The International Consortium of Digital Twins in Healthcare and Medicine established infrastructure to advance medical digital twin technology for precision health applications.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 10, 2026</span></div>
@@ -587,13 +594,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A scoping review finds digital predictive technologies show emerging potential for fall risk assessment in long-term care but remain heterogeneous and developmental, functioning as decision-support tools rather than replacements for clinical judgment.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 4, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03206-z">A voice-biomarker foundation model for ALS monitoring and Parkinson’s screening</a>
-        <p class="news-card-summary">Foundation model trained on voice biomarkers demonstrates capability for remote monitoring of amyotrophic lateral sclerosis and screening for Parkinson&#x27;s disease.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 4, 2026</span></div>
@@ -618,9 +618,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 27 items"
+??? abstract "Show the 26 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (27)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (26)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (8)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -819,21 +819,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D_54a015.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 4, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout">Sam Altman apologizes for ‘messy’ GPT-6 Astra rollout that’s locked out paying users</a>
-        <p class="news-card-summary">OpenAI released GPT-6 Astra with reported significant capability improvements, though initial rollout experienced access issues for paying users.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2285138968.jpg?quality=90&amp;strip=all&amp;crop=0%2C12.219817290162%2C100%2C75.560365419677&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 13 videos"
+??? abstract "Show the 11 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=2YHa1vhnmK0" target="_blank" rel="noopener" title="Introducing the Agents API">
@@ -901,18 +893,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">AI fundamentals and key concepts explained</span>
       <span class="video-card-meta">IBM Technology, September 6, 2026</span>
       <span class="video-card-desc">IBM explainer covering fundamental AI concepts and terminology for audiences new to the field.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=Spuza-KwTJ4" target="_blank" rel="noopener" title="GPT 6 Astra, so good even OpenAI are worried">
-      <img src="https://i4.ytimg.com/vi/Spuza-KwTJ4/hqdefault.jpg" alt="Video: Recent AI model releases and benchmark updates" loading="lazy">
-      <span class="video-card-title">Recent AI model releases and benchmark updates</span>
-      <span class="video-card-meta">AI Explained, September 4, 2026</span>
-      <span class="video-card-desc">Overview of recent AI model releases and benchmarks, including cost efficiency improvements and safety considerations for medical educators following the field.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=W3iQbl5R_Jk" target="_blank" rel="noopener" title="Anthropic reveals hardware specs and Claude updates, OpenAI talks security, and Runway&#x27;s new model">
-      <img src="https://i4.ytimg.com/vi/W3iQbl5R_Jk/hqdefault.jpg" alt="Video: Anthropic, OpenAI, and Runway AI updates digest" loading="lazy">
-      <span class="video-card-title">Anthropic, OpenAI, and Runway AI updates digest</span>
-      <span class="video-card-meta">IBM Technology, September 4, 2026</span>
-      <span class="video-card-desc">Podcast episode covering Anthropic hardware specifications, Claude updates, OpenAI security announcements, and Runway model releases from industry leaders.</span>
     </a>
     </div>
 

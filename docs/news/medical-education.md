@@ -21,6 +21,13 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42722929?fc=20260609215449&amp;ff=20260911085044&amp;v=2.20.1">Can Artificial Intelligence-Based Counseling Improve Iranian Students&#x27; Spiritual Well-Being?</a>
+    <p class="news-card-summary">A quasi-experimental study compared AI-based counseling with face-to-face counseling for spiritual well-being in 105 Iranian medical students.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 11, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42714363?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Beyond the Algorithm: A Stewardship Framework for the Hand Surgeon Adopting Artificial Intelligence</a>
     <p class="news-card-summary">A framework for hand surgeons outlines how to evaluate and safely adopt artificial intelligence tools for imaging, outcome prediction, and patient communication despite validation gaps.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42712985?fc=20260609215449&amp;ff=20260909151755&amp;v=2.20.1">Generative artificial intelligence in medical education: from knowledge assessment to clinical reasoning and professional competence</a>
-    <p class="news-card-summary">A systematic literature review synthesizes evidence on how generative AI and large language models are being applied across medical education from knowledge assessment to clinical reasoning development.</p>
   </div>
 </div>
 </div>
