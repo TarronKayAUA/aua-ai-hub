@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 12, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -277,13 +277,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698122?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">A six-point plan to prepare psychiatrists in training for the age of AI</a>
-        <p class="news-card-summary">Editorial proposing a six-point plan for psychiatry training programs to prepare residents for clinical and educational impacts of artificial intelligence.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42701044?fc=20260609215449&amp;ff=20260906080951&amp;v=2.20.1">Hands-on Artificial Intelligence Education for Radiology Residents: A Three-year Feasibility and Curriculum Implementation Study</a>
         <p class="news-card-summary">A three-year study found that structured, hands-on AI education integrated into radiology residency training is feasible and sustainable, with learners attaining foundational AI competencies and providing feedback for curriculum refinement.</p>
       </div>
@@ -347,10 +340,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 12, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 36 items"
+??? abstract "Show the 34 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (34)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 12, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03199-9">Safety, efficacy and acceptability of human-GenAI single-session exposure-based intervention for academic anxiety: randomized controlled trials</a>
+        <p class="news-card-summary">Randomized controlled trial of human-AI single-session exposure therapy for academic anxiety shows safety, efficacy, and acceptability.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
@@ -580,27 +580,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04633-x/MediaObjects/41591_2026_4633_Figa_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 5, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42698102?fc=20260609215449&amp;ff=20260905075040&amp;v=2.20.1">ECG-based detection of occlusion myocardial infarction: a dedicated deep neural network versus multimodal large language models and physicians - a retrospective diagnostic accuracy study</a>
-        <p class="news-card-summary">Task-specific deep neural networks outperformed general-purpose large language models for electrocardiogram-based occlusion myocardial infarction detection, with models showing clinically important limitations.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03131-1">Senescence-aware filtering facilitates robust prediction of cancer immunotherapy outcomes</a>
-        <p class="news-card-summary">Senescence-aware filtering improves machine learning prediction accuracy for cancer immunotherapy outcomes.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03177-1">Unsupervised machine learning for placental disease using cell spatial organization</a>
-        <p class="news-card-summary">Unsupervised machine learning applied to spatial cell organization in placental tissue enables detection of placental disease.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 5, 2026</span></div>
@@ -618,9 +597,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 12, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 29 items"
+??? abstract "Show the 28 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (29)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (28)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (10)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -834,14 +813,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <a class="news-card-title" href="https://arxiv.org/abs/2609.04582">When Do Internal Probes Beat Reading the Answer? Miscalibrated Readouts and Behavior-Concealed Knowledge in Language Models</a>
         <p class="news-card-summary">Study showing that internal probes can detect knowledge language models possess but fail to express in their outputs, revealing miscalibration in reasoning.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 5, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident">OpenAI admits to German wiki ‘incident’</a>
-        <p class="news-card-summary">OpenAI disclosed that its autonomous agents inadvertently wrote to a German wiki site and acknowledged need to improve incident reporting procedures.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D_54a015.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
