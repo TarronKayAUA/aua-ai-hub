@@ -13,12 +13,12 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A JMIR viewpoint warns that large language models used for Socratic dialogue in medical education carry failure modes that current discussion underweights <a href="https://mededu.jmir.org/2026/1/e102958">[2]</a>. A propensity-matched cohort study found that LLM-powered virtual standardized patients improved history-taking among undergraduate medical students <a href="https://mededu.jmir.org/2026/1/e92486">[13]</a>, while a separate comparative study examined whether LLMs can assist with Angoff standard-setting for exam passing scores <a href="https://mededu.jmir.org/2026/1/e98766">[11]</a>. An analysis of Japanese health licensing exams showed that domain, search access, and visual content strongly shape LLM performance, with implications for assessment design <a href="https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">[4]</a>.</p>
-<p>Also this week: the section adds five items on teaching and curriculum, from specialty adoption frameworks to reproductive medicine education, two pieces on simulation and skills such as usability testing for telemedicine simulations, two studies on attitudes and adoption covering trainee readiness in obstetrics and gynecology, and an arXiv paper on paralinguistic AI for Alzheimer&#x27;s detection.</p>
-<p class="section-brief-date">The picture as of September 11, 2026; numbered links go to the items below.</p>
+<p>A study of automated rank order lists for diagnostic radiology residency selection finds that large language models cannot reliably reproduce program-specific rankings and risk bias against applicant subgroups <a href="https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1">[5]</a>. Japanese licensing exam data show that language model performance depends heavily on domain, search access, and visual content, information that assessment designers can use to build more resistant exams <a href="https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">[9]</a>. On the instructional side, a mixed-methods trial finds AI-assisted personalized explanations improve long-term knowledge retention among undergraduate medical students compared with traditional teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42725275?fc=20260609215449&amp;ff=20260911183704&amp;v=2.20.1">[4]</a>, while an eight-week hospital-wide program shows staff can be trained in model context protocols, retrieval-augmented generation, and AI agents <a href="https://mededu.jmir.org/2026/1/e97822">[1]</a>.</p>
+<p>Also this week: five items address teaching and curriculum, four report new exam and benchmark comparisons, and three cover assessment and feedback, including a randomized trial using variable AI outputs to teach thyroid ultrasound interpretation to residents. Single items round out simulation training, learner attitudes toward AI, and other applications such as speech-based Alzheimer&#x27;s screening.</p>
+<p class="section-brief-date">The picture as of September 12, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -47,6 +47,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42725275?fc=20260609215449&amp;ff=20260911183704&amp;v=2.20.1">Artificial Intelligence-Assisted Versus Traditional Learning and Long-Term Knowledge Retention Among Undergraduate Medical Students: A Sequential, Explanatory Mixed-Methods Study</a>
     <p class="news-card-summary">A mixed-methods study compared long-term knowledge retention between undergraduate medical students learning with AI-assisted personalized explanations versus traditional instruction.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1">Human Judgment and the Limits of Artificial Intelligence for Automated Rank Order Lists in Diagnostic Radiology Residency Selection</a>
+    <p class="news-card-summary">Study examining whether large language models can reliably reproduce residency program rank order lists and whether automated ranking introduces systematic bias against applicant subgroups.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.09684">Which Medical Questions Deserve Rationales? Perturbation-Sensitive Selection for Robust QA</a>
     <p class="news-card-summary">A method selects which medical questions in training datasets should receive rationale supervision under budget constraints to improve question-answering robustness.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98766">AI-Assisted Angoff Standard Setting for Multiple-Choice Examinations in Medical Education: Comparative Study</a>
-    <p class="news-card-summary">Study examines whether large language models can assist with the Angoff standard-setting method for determining passing scores on medical education multiple-choice exams.</p>
   </div>
 </div>
 </div>
