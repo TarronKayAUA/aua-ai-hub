@@ -1,67 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/google/2026/07/google-revamps-image-search-for-its-25th-anniversary-with-more-images-and-more-ai",
-   "title_hash": "d13dd02956b7898ba619c6d2ba4b9ee6",
-   "first_seen": "2026-07-14T17:35:21.205694+00:00",
-   "kept": false,
-   "reason": "vendor marketing for a consumer product without medical relevance"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uwbpmw/a_new_glm_model_incoming",
-   "title_hash": "6703763060f63665552651e733f84960",
-   "first_seen": "2026-07-14T17:35:21.205694+00:00",
-   "kept": false,
-   "reason": "rumor about unreleased model with no substantive information"
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/new-york-is-the-first-state-to-impose-a-data-center-moratorium",
-   "title_hash": "656223bce0ef1d000fe4ff418dd8911c",
-   "first_seen": "2026-07-14T17:35:21.205694+00:00",
-   "kept": false,
-   "reason": "policy news tangential to AI development, not central to medical education or practice"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uvwn9q/i_just_dont_get_it_these_big_tech_companies_can",
-   "title_hash": "702b38ff57799170c22a2b11c0b3e6e5",
-   "first_seen": "2026-07-14T17:35:21.205694+00:00",
-   "kept": false,
-   "reason": "opinion piece with no new information"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03001-w",
-   "title_hash": "d08571264ae2ad3082706c85b7971021",
-   "first_seen": "2026-07-14T17:35:21.205694+00:00",
-   "kept": true,
-   "title": "Multimodal AI for predicting comorbid REM sleep behavior disorder in major depressive disorder",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-14T00:00:00+00:00",
-   "summary": "Peer-reviewed study uses multimodal AI to predict comorbid REM sleep behavior disorder in patients with major depressive disorder.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03003-8",
-   "title_hash": "88c9972b4427f4d9654f0243b09adb58",
-   "first_seen": "2026-07-14T17:35:21.205694+00:00",
-   "kept": true,
-   "title": "Smartphone-based kinematic biomarkers for degenerative cervical myelopathy screening robust to physiological aging",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-14T00:00:00+00:00",
-   "summary": "Peer-reviewed study develops smartphone-based kinematic biomarkers for screening degenerative cervical myelopathy that remain robust across ages.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=etduwo9Lu3M",
-   "title_hash": "3af3559bd1dee0255240f0aa2af171ea",
-   "first_seen": "2026-07-14T17:35:21.205694+00:00",
-   "kept": false,
-   "reason": "marketing from an affiliated partner with no substantive educational content"
-  },
-  {
    "url": "https://mededu.jmir.org/2026/1/e88695",
    "title_hash": "66e87745e77d35b141871376b55c9e78",
    "first_seen": "2026-07-14T19:15:33.176165+00:00",
@@ -32953,6 +32892,34 @@
    "category": "clinical_practice",
    "score": 3.0,
    "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/12/paul-ford",
+   "title_hash": "81dcc93f26d753426b60f81543bb740e",
+   "first_seen": "2026-09-12T18:25:52.033235+00:00",
+   "kept": false,
+   "reason": "commentary on software development without substantive analysis of AI capability or method"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development",
+   "title_hash": "74d55f852ade77edf50975eabb9a1ac8",
+   "first_seen": "2026-09-12T18:25:52.033235+00:00",
+   "kept": true,
+   "title": "Anthropic CEO says it’s time to pump the brakes on AI",
+   "source": "The Verge AI",
+   "published": "2026-09-12T16:23:40+00:00",
+   "summary": "Anthropic's CEO proposes slowing AI development and committing to third-party safety evaluations to ensure adherence to stated safety practices.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/ai-am-highlights-astra-as-agi-openai-s-pause-mythos-mozilla-human-agency-vs-technocapitalism",
+   "title_hash": "ee66ffcc65dca57f44076e563740cf30",
+   "first_seen": "2026-09-12T18:25:52.033235+00:00",
+   "kept": false,
+   "reason": "daily news recap with generic boilerplate; no substantive focus on medical education or clinical practice"
   }
  ],
  "digests": [
