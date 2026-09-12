@@ -1,155 +1,6 @@
 {
  "items": [
   {
-   "url": "https://mededu.jmir.org/2026/1/e88695",
-   "title_hash": "66e87745e77d35b141871376b55c9e78",
-   "first_seen": "2026-07-14T19:15:33.176165+00:00",
-   "kept": true,
-   "title": "AI-Generated Microlearning for Plastic Surgery Residency: Single-Arm Pre-Post Feasibility Study",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-14T18:30:18+00:00",
-   "summary": "A feasibility study evaluates AI-generated microlearning modules for plastic surgery residency training, assessing whether language models can support brief, focused education within fragmented clinical schedules.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/14/armin-ronacher",
-   "title_hash": "c3434e4797caf91eed1d89d448a71fd2",
-   "first_seen": "2026-07-14T19:15:33.176165+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/us-military-sent-explosive-drone-boats-into-combat-for-the-first-time",
-   "title_hash": "8e51c7a72adb6b9d20f3ccde4c59a2cf",
-   "first_seen": "2026-07-14T19:15:33.176165+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42445655?fc=20260609215449&ff=20260714151534&v=2.20.0",
-   "title_hash": "027ce3d35db20c7ea2a4ead831c56b6b",
-   "first_seen": "2026-07-14T19:15:33.176165+00:00",
-   "kept": true,
-   "title": "AI-Augmented Mentorship in Orthopedic Surgery: A Conceptual Framework for Expanding Access for Underrepresented and Less-Resourced Students",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-14T10:00:00+00:00",
-   "summary": "A conceptual framework proposes AI-augmented mentorship to expand access to orthopedic surgery training for underrepresented students and trainees from lower-resourced institutions.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42445619?fc=20260609215449&ff=20260714151534&v=2.20.0",
-   "title_hash": "79ccc457e92316ac17ad8adea9e63bb8",
-   "first_seen": "2026-07-14T19:15:33.176165+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42444773?fc=20260609215449&ff=20260714151534&v=2.20.0",
-   "title_hash": "6d3e230e3a4f80b06e0f436420659be8",
-   "first_seen": "2026-07-14T19:15:33.176165+00:00",
-   "kept": true,
-   "title": "Hotspot Evolution and Future Prospects of Large Language Models in Medical Education: A Bibliometric Analysis",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-14T10:00:00+00:00",
-   "summary": "Bibliometric analysis identifies rapid growth in large language model medical education research but flags gaps in empirical evidence, imbalanced research themes, and delayed governance frameworks.",
-   "category": "medical_education",
-   "score": 3.0
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02985-9",
-   "title_hash": "9b8d70627c211673285e262aa6fda891",
-   "first_seen": "2026-07-14T19:15:33.176165+00:00",
-   "kept": true,
-   "title": "Safety boundary maintenance in consumer AI systems responding to pediatric health queries: a cross-platform benchmark evaluation under naturalistic and adversarially pressured conditions",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-14T00:00:00+00:00",
-   "summary": "A benchmark evaluation tests how consumer AI systems maintain safety boundaries when answering pediatric health questions under both realistic and adversarial conditions.",
-   "category": "clinical_practice",
-   "score": 4.0
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e90146",
-   "title_hash": "a6a383fca87a9f3a89edb83d4b4b1aff",
-   "first_seen": "2026-07-14T21:16:18.159227+00:00",
-   "kept": true,
-   "title": "The Swiss Personalized Health Network Metadata Catalog: Platform for Health Data Discovery and Exploration Based on Findable, Accessible, Interoperable, and Reusable Principles",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-14T20:30:13+00:00",
-   "summary": "Swiss health network launched a metadata catalog enabling researchers to discover sensitive health datasets while meeting legal and FAIR data principles.",
-   "category": "clinical_practice",
-   "score": 2.0
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/lawsuit-claims-metas-layoff-decisions-were-made-by-ai-not-humans",
-   "title_hash": "249b2ea887917871e36d9a3e03306308",
-   "first_seen": "2026-07-14T21:16:18.159227+00:00",
-   "kept": false,
-   "reason": "employment law and litigation, not AI capability or deployment news"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e92420",
-   "title_hash": "d88ef9de82c6c5b34a8f1ef2702ebf5a",
-   "first_seen": "2026-07-14T21:16:18.159227+00:00",
-   "kept": true,
-   "title": "A National Exploration of Medical Students’ Views Surrounding Skin Color Terminology in Undergraduate Education",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-14T20:00:19+00:00",
-   "summary": "Study examines UK medical students' preferences for skin color terminology in medical education to support more inclusive clinical language.",
-   "category": "medical_education",
-   "score": 2.0
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/14/lobsters-sqlite",
-   "title_hash": "93df89cd698356a58fe672bc445ed55c",
-   "first_seen": "2026-07-14T21:16:18.159227+00:00",
-   "kept": false,
-   "reason": "infrastructure news about a community site, not relevant to medical education or practice"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uwe542/kimi_k3_in_the_next_few_hours_deepseek_v4_ga",
-   "title_hash": "fcbc07c821376a40662d2982ab9c527c",
-   "first_seen": "2026-07-14T21:16:18.159227+00:00",
-   "kept": false,
-   "reason": "rumors and speculation without substantive reporting of released models or confirmed announcements"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/14/datasette",
-   "title_hash": "e5a0a63c8b10ad1bb84034d17a289030",
-   "first_seen": "2026-07-14T21:16:18.159227+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=avpZWh6sm9M",
-   "title_hash": "9cabf10e2fabd685dc7a6d98a39ab553",
-   "first_seen": "2026-07-14T21:16:18.159227+00:00",
-   "kept": true,
-   "title": "Improved Intelligence with GPT-Live",
-   "source": "OpenAI",
-   "published": "2026-07-14T20:22:11+00:00",
-   "summary": "OpenAI presents GPT-Live, a next-generation voice model with improved capabilities for real-time interaction.",
-   "category": "videos",
-   "score": 4.0,
-   "thumbnail": "https://i2.ytimg.com/vi/avpZWh6sm9M/hqdefault.jpg",
-   "display_title": "GPT-Live next-generation voice model"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=8zH_O74hZBw",
-   "title_hash": "d1993c4f98271661e509af944f741c8a",
-   "first_seen": "2026-07-14T21:16:18.159227+00:00",
-   "kept": false,
-   "reason": "product feature demonstration from vendor's own channel without clear educational or clinical relevance"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Optimism-vs--AI-Pessimism-e3m3a74",
-   "title_hash": "c88f81731b3e1485c47de7302dc794a3",
-   "first_seen": "2026-07-14T21:16:18.159227+00:00",
-   "kept": false,
-   "reason": "opinion and commentary without new information"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/14/github-changeling",
    "title_hash": "b28b84b93fd23dfec837a4aecbce4056",
    "first_seen": "2026-07-15T02:49:47.598617+00:00",
@@ -32920,6 +32771,27 @@
    "first_seen": "2026-09-12T18:25:52.033235+00:00",
    "kept": false,
    "reason": "daily news recap with generic boilerplate; no substantive focus on medical education or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/994383/openais-rogue-ai-rubygems-hack",
+   "title_hash": "5a2ed7a120d52c7faf302de1d821ad8d",
+   "first_seen": "2026-09-12T22:20:07.106459+00:00",
+   "kept": false,
+   "reason": "unverified claim from independent researchers about alleged AI behavior; requires confirmation from OpenAI or primary evidence"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/994384/sam-altman-no-openai-ipo-ill-advised",
+   "title_hash": "0692effbfbf197623e80bc0d4c01d438",
+   "first_seen": "2026-09-12T22:20:07.106459+00:00",
+   "kept": false,
+   "reason": "funding and acquisition gossip"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1we8tl1/3827b_has_ruined_353635bs_for_me_its_just",
+   "title_hash": "bfcb10d371d81fda292c462a1ecd35c5",
+   "first_seen": "2026-09-12T22:20:07.106459+00:00",
+   "kept": false,
+   "reason": "forum discussion of model performance preferences, not significant news"
   }
  ],
  "digests": [
