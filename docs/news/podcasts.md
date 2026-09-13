@@ -137,10 +137,4 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">AI in Education Podcast, July 16, 2026</span>
   <span class="video-card-desc">A discussion of whether AI tools improve student learning or merely raise test scores, drawing on recent research and cases including findings from Brown University.</span>
 </a>
-<a class="video-card" href="https://ai-podcast.nejm.org/e/weave-s-brandon-rice-on-rebuilding-drug-regulation-with-ai" target="_blank" rel="noopener">
-  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Weave’s Brandon Rice on Rebuilding Drug Regulation with AI" loading="lazy">
-  <span class="video-card-title">Weave’s Brandon Rice on Rebuilding Drug Regulation with AI</span>
-  <span class="video-card-meta">NEJM AI Grand Rounds, July 15, 2026</span>
-  <span class="video-card-desc">Brandon Rice from Weave discusses using AI to modernize pharmaceutical regulatory infrastructure and organize scientific knowledge for drug development.</span>
-</a>
 </div>

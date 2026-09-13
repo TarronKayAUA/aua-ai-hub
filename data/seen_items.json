@@ -1,314 +1,6 @@
 {
  "items": [
   {
-   "url": "https://spectrum.ieee.org/ai-dna-origami",
-   "title_hash": "83566d5b3715161445560e5273156f99",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.aipolicyperspectives.com/p/conjecture-machines",
-   "title_hash": "81f6276f54018c9f3e4a02d1fac7feec",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": true,
-   "title": "Conjecture Machines",
-   "source": "AI Policy Perspectives",
-   "published": "2026-07-15T12:33:55+00:00",
-   "summary": "Analysis of how AI agents create a validation bottleneck in science by generating claims faster than researchers can verify them.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://substackcdn.com/image/fetch/$s_!uI0t!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f84fabc-d39b-4bec-b24b-6644b4652e02_2048x1143.png",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42454403?fc=20260609215449&ff=20260715101248&v=2.20.0",
-   "title_hash": "aaf720d79647b648960308298c2776f5",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": true,
-   "title": "Reference Hallucination, Citation Reliability, and Readability of Large Language Models in Anatomy-Related Question Answering",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-15T10:00:00+00:00",
-   "summary": "ChatGPT, Gemini Pro, and DeepSeek V3 frequently hallucinate anatomical references and citations, raising concerns about their reliability for medical education and academic writing.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42453269?fc=20260609215449&ff=20260715101248&v=2.20.0",
-   "title_hash": "36827815f8170f001cebdd8cff99402b",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": true,
-   "title": "AI-powered tools in family medicine: Bridging technology and practice",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-15T10:00:00+00:00",
-   "summary": "Survey of family physicians in Saudi Arabia shows interest in AI training but identifies barriers including concerns about reliability, data quality, and workflow integration.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42451488?fc=20260609215449&ff=20260715101248&v=2.20.0",
-   "title_hash": "69f7d79864479419087ac84b1f5d507f",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42451408?fc=20260609215449&ff=20260715101248&v=2.20.0",
-   "title_hash": "95486784d7c0a5fe60ff4adaf74922bb",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42450917?fc=20260609215449&ff=20260715101248&v=2.20.0",
-   "title_hash": "7bff7035e49f05a19a721c03a4605f28",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": true,
-   "title": "Influence of Oral and Maxillofacial Radiology Training and Experience on Attitudes Toward Artificial Intelligence in Dentistry: A Cross-Sectional Questionnaire Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-15T10:00:00+00:00",
-   "summary": "Cross-sectional study of dental professionals and students shows that training and experience level influence attitudes toward AI in dentistry.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42450893?fc=20260609215449&ff=20260715101248&v=2.20.0",
-   "title_hash": "7ff4160145fc5f5aafc30c83204e1334",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": true,
-   "title": "Generative AI-Assisted Simulation Training Is Associated with Higher Post-Intervention Diagnostic Communication Scores Across Type 2 Diabetes, Obesity, and Breast Cancer Scenarios",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-15T10:00:00+00:00",
-   "summary": "Undergraduate medical students using generative AI-assisted simulation training achieved higher diagnostic communication scores across diabetes, obesity, and cancer scenarios.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Simulation and skills"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04526-z",
-   "title_hash": "ec7af281a471d42bbf4a0ece881a5d67",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04515-2",
-   "title_hash": "a3113bc7425858de315ac3d12224d5b3",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04507-2",
-   "title_hash": "46d829c70458af7eb9354326ebefa572",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04520-5",
-   "title_hash": "fd57ef90ec2960267750cd1265cd1ca5",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04491-7",
-   "title_hash": "9ddb69124b46e09c89f10b5b85d47437",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://huggingface.co/blog/real-world-voiceeq",
-   "title_hash": "3914d95e219c3f715b5aafbd780dcc3d",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://www.benjamin-bai.com/projects/lemario",
-   "title_hash": "e8a115ea8ed9f8bb8d0d5115c33565c9",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uwf1x4/prismml_bonsai_qwen_36_27b",
-   "title_hash": "ad83c8b11944cef787617888590abe45",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://github.com/jbwinters/jacquard-lang",
-   "title_hash": "c0746a6be1cf694a46748c562d555198",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=0CqLVnx-2UM",
-   "title_hash": "8dd96361cb11af3e32eb35bb797b00cd",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": false,
-   "reason": "speculation and reaction video with no underlying real development announced"
-  },
-  {
-   "url": "https://ai-podcast.nejm.org/e/weave-s-brandon-rice-on-rebuilding-drug-regulation-with-ai",
-   "title_hash": "67e0a924694d8c12540bae3867b9273a",
-   "first_seen": "2026-07-15T14:12:24.291393+00:00",
-   "kept": true,
-   "title": "Weave’s Brandon Rice on Rebuilding Drug Regulation with AI",
-   "source": "NEJM AI Grand Rounds",
-   "published": "2026-07-15T13:00:00+00:00",
-   "summary": "Brandon Rice from Weave discusses using AI to modernize pharmaceutical regulatory infrastructure and organize scientific knowledge for drug development.",
-   "category": "podcasts",
-   "score": 3.0,
-   "thumbnail": "https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg"
-  },
-  {
-   "url": "https://huggingface.co/blog/allenai/shippy-tech-blog",
-   "title_hash": "7e211a67e340d69964869f4da9844a8f",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "vendor marketing from company's own blog"
-  },
-  {
-   "url": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt",
-   "title_hash": "31b20b5966a9e79222781618e1c661dc",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "vendor marketing from company's own blog"
-  },
-  {
-   "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer",
-   "title_hash": "00e8b09cc97c96802a9fbe65a183106a",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": true,
-   "title": "Meet GPT-Red: an LLM super-hacker OpenAI built to make its models safer",
-   "source": "MIT Technology Review AI",
-   "published": "2026-07-15T17:09:37+00:00",
-   "summary": "OpenAI built GPT-Red, an adversarial language model that tests its systems for cybersecurity vulnerabilities, and used it to strengthen GPT-5.6 against attacks.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/spar-red.jpg?resize=1200,600",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://arena.ai/blog/factuality-in-arena",
-   "title_hash": "314452adfe9b5e8915920ee118f05315",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": true,
-   "title": "Factuality in the Arena",
-   "source": "LMArena blog",
-   "published": "2026-07-15T16:28:25+00:00",
-   "summary": "A new leaderboard ranks language models by both human preference and factual accuracy of responses, addressing a persistent evaluation challenge.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://storage.ghost.io/c/37/18/37180a6f-127b-4177-bb4a-98f4f26f9e5d/content/images/2026/07/Factuality_Blog_Header_Web_Optimized.jpg",
-   "topic": "Benchmarks and evaluation"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/openais-first-branded-hardware-is-a-light-up-keyboard",
-   "title_hash": "99b22f5d53a24dba74c119cabfb29f58",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "hardware product announcement without substantive AI capability news"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/965901/openai-hardware-codex-micro-launch",
-   "title_hash": "f68e896891bfeae511fe771ff328f07b",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "duplicate of candidate 6, same hardware announcement"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ux9xze/the_best_model_is_the_one_you_can_actually_run",
-   "title_hash": "01b508cadf16efad6e45494b34ac048d",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "personal user experience from forum, no significant news or instructive analysis"
-  },
-  {
-   "url": "https://spectrum.ieee.org/eliza-chatbot-source-code",
-   "title_hash": "b3cb660f2c80c8c89547a9deabd88019",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "historical retrospective without current relevance to this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/15/claude-web-fetch-exfiltration",
-   "title_hash": "67c4df8fe3ae5022a32b06e02cb8b05e",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": true,
-   "title": "How I tricked Claude into leaking your deepest, darkest secrets",
-   "source": "Simon Willison's weblog",
-   "published": "2026-07-15T14:21:54+00:00",
-   "summary": "A researcher demonstrated a data exfiltration vulnerability in Claude's web-fetch tool, showing how agent security requires careful design of tool integrations.",
-   "category": "general_ai",
-   "score": 4.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://briarproject.org/news/2026-maintenance-mode",
-   "title_hash": "54b789d3b0837f4f0a9012e846aa7cd0",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "off-topic news about privacy software project"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42455100?fc=20260609215449&ff=20260715134021&v=2.20.0",
-   "title_hash": "0f0f3021937f6d244172015b1bdae33b",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "environmental health study, off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02988-6",
-   "title_hash": "3cbdfd56a1dca0b023adfdfb92d51209",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "narrow domain application without AI significance to this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03024-3",
-   "title_hash": "441066ab2d06ce40d798bf7400ea4eb6",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": true,
-   "title": "Naturalistic adoption and deliberate practice use of an AI-based OSCE platform during national licensure preparation",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-15T00:00:00+00:00",
-   "summary": "A study documents how medical students naturally adopted an AI-based OSCE platform during licensure preparation, examining deliberate practice patterns.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04547-8",
-   "title_hash": "4861b1e410624f15f2ffc3f10e6ea639",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "clinical trial in non-AI domain, off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/d41591-026-00035-1",
-   "title_hash": "39298de0ea43cbac728808a86b9f14a4",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "clinical genetics trial without AI component, off-topic for this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=nxr20lcqagg",
-   "title_hash": "c47a4a538e268fd6ca06010444fee1c7",
-   "first_seen": "2026-07-15T17:40:21.706542+00:00",
-   "kept": false,
-   "reason": "marketing from a commercial product's own channel without substantive educational or technical content"
-  },
-  {
    "url": "https://mededu.jmir.org/2026/1/e89942",
    "title_hash": "32f9e2145f818c18b6adecfb14f7e9f3",
    "first_seen": "2026-07-15T21:16:13.985694+00:00",
@@ -32296,6 +31988,41 @@
    "first_seen": "2026-09-13T13:19:33.735497+00:00",
    "kept": false,
    "reason": "promotional content without relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://twitter.com/DavidSacks/status/2098973625252708460",
+   "title_hash": "006c16fcf844edbeb6ecec3a859c6529",
+   "first_seen": "2026-09-13T18:48:31.785994+00:00",
+   "kept": false,
+   "reason": "industry gossip and policy commentary without substantive analysis or new information"
+  },
+  {
+   "url": "https://techcrunch.com/2026/09/11/y-combinators-garry-tan-wants-u-s-open-weight-ai-labs-to-distill-frontier-models-too",
+   "title_hash": "016ad19868e4b7c36397aeed5552e0a2",
+   "first_seen": "2026-09-13T18:48:31.785994+00:00",
+   "kept": false,
+   "reason": "industry and policy gossip without substantive analysis"
+  },
+  {
+   "url": "https://sebastianraschka.com/blog/2026/ai-reasoning-models-course.html",
+   "title_hash": "bd7aab814b2f1c93e6a35b33cd4b9842",
+   "first_seen": "2026-09-13T18:48:31.785994+00:00",
+   "kept": false,
+   "reason": "vendor marketing, a course promotion from LinkedIn Learning"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wf3i1m/the_local_llm_community_feels_like_the_golden_era",
+   "title_hash": "d9b76587a1ea50f39751e2c6bb3b2fda",
+   "first_seen": "2026-09-13T18:48:31.785994+00:00",
+   "kept": false,
+   "reason": "community meta-discussion without news or instructive analysis for this audience"
+  },
+  {
+   "url": "https://prydt.xyz/blog/a-few-good-ideas-in-pl",
+   "title_hash": "da13f96d4af15ab08adaa596639b79c9",
+   "first_seen": "2026-09-13T18:48:31.785994+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, general programming language design unrelated to AI"
   }
  ],
  "digests": [
