@@ -13,14 +13,49 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A study of automated rank order lists for diagnostic radiology residency selection finds that large language models cannot reliably reproduce program-specific rankings and risk bias against applicant subgroups <a href="https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1">[5]</a>. Japanese licensing exam data show that language model performance depends heavily on domain, search access, and visual content, information that assessment designers can use to build more resistant exams <a href="https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">[9]</a>. On the instructional side, a mixed-methods trial finds AI-assisted personalized explanations improve long-term knowledge retention among undergraduate medical students compared with traditional teaching <a href="https://pubmed.ncbi.nlm.nih.gov/42725275?fc=20260609215449&amp;ff=20260911183704&amp;v=2.20.1">[4]</a>, while an eight-week hospital-wide program shows staff can be trained in model context protocols, retrieval-augmented generation, and AI agents <a href="https://mededu.jmir.org/2026/1/e97822">[1]</a>.</p>
-<p>Also this week: five items address teaching and curriculum, four report new exam and benchmark comparisons, and three cover assessment and feedback, including a randomized trial using variable AI outputs to teach thyroid ultrasound interpretation to residents. Single items round out simulation training, learner attitudes toward AI, and other applications such as speech-based Alzheimer&#x27;s screening.</p>
-<p class="section-brief-date">The picture as of September 12, 2026; numbered links go to the items below.</p>
+<p>A randomized study in cardiac surgery training found that combining AI-enhanced instruction with traditional teaching produced measurable gains in clinical and surgical skill acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42730487?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[1]</a>. A separate non-inferiority trial testing LLM-generated synthetic clinical cases against real patient records found the synthetic material performed comparably on immediate test performance but stopped short of establishing formal non-inferiority <a href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[2]</a>. Exam-focused work continued to probe how AI systems handle high-stakes assessment: a study of Japanese health professions licensing exams showed that domain, search access, and visual content substantially shape model performance <a href="https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">[14]</a>, while a separate analysis found large language models cannot reliably reproduce residency program rank order lists without risking bias against applicant subgroups <a href="https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1">[10]</a>.</p>
+<p>Also this week: six items on teaching and curriculum address topics from dental education frameworks to hospital staff training in retrieval-augmented generation, and four exam and benchmark studies test model performance on radiology and licensing questions. Two pieces cover attitudes and adoption, and two more address assessment and feedback, including a study on AI-assisted preoperative patient counseling.</p>
+<p class="section-brief-date">The picture as of September 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42730487?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">Application of AI-Enhanced Teaching Combined With Traditional Instruction in Cardiac and Great Vessel Surgery</a>
+    <p class="news-card-summary">AI-enhanced instruction combined with traditional teaching significantly improves clinical and surgical skills in cardiac surgery residency training.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">Pedagogical Efficacy of LLM-Generated Synthetic Data Versus Real-World Clinical Records: A Randomized Controlled Non-Inferiority Trial</a>
+    <p class="news-card-summary">Randomized trial found LLM-generated synthetic clinical cases non-inferior to real cases for immediate test performance but did not demonstrate non-inferiority.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42729277?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">Reasoning vs. conventional large language models for BI-RADS educational questions answering: a multi-model comparative evaluation</a>
+    <p class="news-card-summary">Reasoning language models outperform conventional LLMs on BI-RADS radiology guidelines education questions but require specific optimization for complex scenarios.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42728652?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">AI In Dental Education: Upskilled, Differently Skilled, or Never Skilled?</a>
+    <p class="news-card-summary">Framework for integrating AI into dental education while protecting foundational competence through staged implementation and AI-independent milestones.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42728650?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">A Reflection on the Populist Challenge for Oral Health Professions Education</a>
+    <p class="news-card-summary">Reflection on challenges to oral health education including predatory publishing, industry influence, and generative AI, emphasizing need for responsible technology governance.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 11, 2026</span></div>
@@ -89,41 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42719270?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">The potential of large language models to address patients&#x27; preoperative questions before anterior cervical discectomy and fusion surgery</a>
     <p class="news-card-summary">Large language models provide accurate preoperative patient education for cervical spine surgery but lack individualized risk assessment, suitable as physician counseling aids only.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42718612?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">Multi-view AI output variability as a teaching resource in a micro-course for thyroid TI-RADS interpretation among ultrasound residents: a randomized controlled trial</a>
-    <p class="news-card-summary">Structured micro-course using variable AI outputs improved thyroid ultrasound interpretation accuracy in residents but benefits did not persist at four-week follow-up.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42721453?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Feasibility of AI and Human Standardized Patients to Enhance Customer Discovery Communication Skills in Medical Students: Preliminary Evaluation of an Observational Cohort Study</a>
-    <p class="news-card-summary">A preliminary study demonstrates that AI chatbots can replicate realistic customer discovery interviews for medical student training, with recommendations for larger feasibility studies.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42721094?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Self-Reported Knowledge, Attitudes, Perceptions, and Readiness Regarding AI Among Obstetrics and Gynecology Trainees: Cross-Sectional Study</a>
-    <p class="news-card-summary">A cross-sectional study of obstetrics and gynecology trainees in Jordan found moderate AI knowledge and positive attitudes, with most supporting formal AI training integration.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42720906?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Artificial intelligence in reproductive medicine and education: current evidence, challenges, and future directions</a>
-    <p class="news-card-summary">A review of AI in reproductive medicine education concludes that AI serves best as a supervised adjunct with phased integration, explicit guardrails, and careful evaluation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.09684">Which Medical Questions Deserve Rationales? Perturbation-Sensitive Selection for Robust QA</a>
-    <p class="news-card-summary">A method selects which medical questions in training datasets should receive rationale supervision under budget constraints to improve question-answering robustness.</p>
   </div>
 </div>
 </div>
