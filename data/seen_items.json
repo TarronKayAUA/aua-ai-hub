@@ -1,328 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arxiv.org/abs/2607.11889",
-   "title_hash": "28c513986edb94744d8cc1cfbe2ce513",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": true,
-   "title": "Scaling Point-in-Time Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-15T04:00:00+00:00",
-   "summary": "Point-in-time language models trained only on temporally prior text eliminate lookahead bias for valid backtesting and causal inference.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11891",
-   "title_hash": "d697fad975d0ac223e4f809eaf4869dd",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow domain application with incremental evaluation focus"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11892",
-   "title_hash": "1789290b4a80521d699f3b284ab7fdd9",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "domain-specific application to nuclear power plants outside medical scope"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11893",
-   "title_hash": "94244533cbb709895c628241a1a030a0",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow language accessibility evaluation without broad medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11894",
-   "title_hash": "b37ccc3cb6de37e3a2ee182e1cf02688",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11898",
-   "title_hash": "66f5a7dbff2dec36e4d0621f703f4be3",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow NLP methods paper without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11933",
-   "title_hash": "ee4a00a2be12e07fac8963062cd14c38",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow technical optimization without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11944",
-   "title_hash": "4c5c2f5c4fdbcf9171ecbdd372feb3c7",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow prompt optimization study without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11945",
-   "title_hash": "e52fb69a7d7fe4e92ff0b1e3db01f97c",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow mechanistic analysis without broad medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11946",
-   "title_hash": "a2e91be90dd56be5894740c62d47a463",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow language identification application without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.11981",
-   "title_hash": "be35ded0b274daeff1a61078b9cc3d71",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow evaluation methodology for essay scoring without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12051",
-   "title_hash": "17115b6505ac0f9edb992bb59d9d0899",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": true,
-   "title": "Agentic systems for breast cancer treatment recommendations",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-15T04:00:00+00:00",
-   "summary": "Evaluation of language model systems for breast cancer treatment recommendations across clinical stages shows reliability and safety considerations for oncology decision support.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12071",
-   "title_hash": "bba5dfe741e418766979c330b5635052",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow neuroscience application outside medical education and clinical practice scope"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12079",
-   "title_hash": "f17bba58e548c6e7328dc0691431de4d",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow neuroscience application outside medical education and clinical practice scope"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12086",
-   "title_hash": "2317b756240e63b8c2149b6030670d1c",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12161",
-   "title_hash": "677691404c74563be75da0c9e984dfdf",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow technical study of cost optimization without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12169",
-   "title_hash": "0ae5d0adc941cbc003ec0fd77f7d099e",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12185",
-   "title_hash": "ff7c496d3852645b0b1475da220a25d1",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow cognitive science study without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12195",
-   "title_hash": "3720b1f7373ab1a5104cad937a45e5cd",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow cognitive science comparison without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12215",
-   "title_hash": "7d8fde5a948cda907693becc951c0c6c",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow personality assessment application without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12216",
-   "title_hash": "bf8c5c0c1fac2b9e35533a8fa07ef169",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow technical study of prompt allocation without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12233",
-   "title_hash": "2f10dd1a8c4a7ff7ad5158a6f77167a7",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12252",
-   "title_hash": "445e9a3f7696a6e3ce7140d551ee7c4c",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "domain-specific financial benchmark with no relevance to medical audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12279",
-   "title_hash": "eaa4d99168c185b13d083fb678716cba",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "narrow mechanistic analysis without broad medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.12310",
-   "title_hash": "5c6ba5eb727ddaed5ecfce2ba0232cbc",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02983-x",
-   "title_hash": "3363d56c399e36c5909991bbefa6d350",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": true,
-   "title": "Landscape of regulatory clinical investigations status of traditional and digital medical devices in the Republic of Korea (2003, mid 2024)",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-15T00:00:00+00:00",
-   "summary": "Regulatory analysis of clinical investigations for traditional and digital medical devices in South Korea from 2003 to mid-2024 documents approval pathways and oversight trends.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02953-3",
-   "title_hash": "d303e0c0c9f83bee86572e426960c9d8",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": true,
-   "title": "A scoping review of explainable artificial intelligence for medical multimodal data",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-15T00:00:00+00:00",
-   "summary": "Scoping review of explainable artificial intelligence methods for medical multimodal data documents interpretability approaches in clinical applications.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03023-4",
-   "title_hash": "53cef93be1a835d5fc1b199b18d2e8b3",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": true,
-   "title": "Explainable machine learning for 10-year prediction of cognitive impairment in a rural Chinese population",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-15T00:00:00+00:00",
-   "summary": "Machine learning model with interpretability features predicts cognitive impairment risk over ten years in a rural Chinese cohort.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uwhukq/bonsai_27b_the_first_27bclass_model_to_run_on_a",
-   "title_hash": "36f26210d8cc8c5b417f998c89204982",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": true,
-   "title": "Bonsai 27B: The First 27B-Class Model to Run on a Phone",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-14T18:57:20+00:00",
-   "summary": "Bonsai 27B is a 27-billion-parameter language model capable of running on mobile phones.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "New models"
-  },
-  {
-   "url": "https://github.com/Danau5tin/ai-trains-ai",
-   "title_hash": "d5df29027e46f91895fc2120d24cf23c",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "minor technical development without broad significance"
-  },
-  {
-   "url": "https://www.thedial.world/articles/news/amish-pennsylvania-dutch",
-   "title_hash": "722f67775807f1c10a64edfd6e765bef",
-   "first_seen": "2026-07-15T06:29:22.503180+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.sensible-med.com/p/this-fortnight-in-medicine-xxx",
-   "title_hash": "70ee7e0488e8ea43ed9388ea3cb9fc88",
-   "first_seen": "2026-07-15T10:16:18.997467+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.insidehighered.com/opinion/columns/online-trending-now/2026/07/15/what-if-us-government-owned-stock-ai-companies",
-   "title_hash": "75297807f7345421da24d3921e49b5ff",
-   "first_seen": "2026-07-15T10:16:18.997467+00:00",
-   "kept": false,
-   "reason": "policy commentary without substantive AI education or deployment content"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02994-8",
-   "title_hash": "c7c5565e557ccf97a8e8483e115e72c7",
-   "first_seen": "2026-07-15T10:16:18.997467+00:00",
-   "kept": true,
-   "title": "Interpretable agentic AI system with localized reasoning for radiology",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-15T00:00:00+00:00",
-   "summary": "Peer-reviewed study in npj Digital Medicine describes an interpretable agentic AI system with localized reasoning for radiology applications.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uwfva9/bonsai_27b_1bit_dense_llm_running_locally_in_your",
-   "title_hash": "8437019cf65118e850ebd07645ff17cc",
-   "first_seen": "2026-07-15T10:16:18.997467+00:00",
-   "kept": true,
-   "title": "Bonsai 27B: 1-bit dense LLM running locally in your browser using custom WebGPU kernels",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-14T17:48:27+00:00",
-   "summary": "PrismML released Bonsai 27B, a 1-bit quantized large language model that compresses to 3.8GB while retaining 90% of capability, runnable in web browsers via custom WebGPU kernels.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://external-preview.redd.it/cGZwaWYxanQ3OGRoMXn7IuFtrK_hbLC66wg8SQ4wFJyBLQaa2tVzFGmUcDuQ.png?width=640&crop=smart&auto=webp&s=cc6dcc927df912a535cbcce268b4dd27331b0df0",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=bVGZd6UsQ0k",
-   "title_hash": "c5cb5b6f19be52218d8db5d200c85154",
-   "first_seen": "2026-07-15T10:16:18.997467+00:00",
-   "kept": false,
-   "reason": "speculation and rumor about unreleased model versions without substantive news or benchmark data"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=eiQgljOrkWU",
-   "title_hash": "d80347f62750300658a3178e8af24f03",
-   "first_seen": "2026-07-15T10:16:18.997467+00:00",
-   "kept": false,
-   "reason": "vendor marketing of product updates from OpenAI's own channel with no medical or educational relevance"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=matzTxfrhJU",
-   "title_hash": "56feda117465079b8adbb7be8b827235",
-   "first_seen": "2026-07-15T10:16:18.997467+00:00",
-   "kept": false,
-   "reason": "vendor marketing of product feature from OpenAI's own channel with no medical or educational relevance"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=qXGJ7pi-XOo",
-   "title_hash": "73e6cfa1892bc939b7d1691816b8a287",
-   "first_seen": "2026-07-15T10:16:18.997467+00:00",
-   "kept": false,
-   "reason": "podcast episode mislabeled as video; content is about security vulnerabilities in code models, not medical education or clinical practice"
-  },
-  {
    "url": "https://spectrum.ieee.org/ai-dna-origami",
    "title_hash": "83566d5b3715161445560e5273156f99",
    "first_seen": "2026-07-15T14:12:24.291393+00:00",
@@ -32530,6 +32208,94 @@
    "first_seen": "2026-09-13T04:52:13.385622+00:00",
    "kept": false,
    "reason": "news roundup video with generic boilerplate and no substantive indication of depth; titles naming multiple unrelated developments without clear focus; single…"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/medicine-and-public-health-have-an",
+   "title_hash": "a808759fcd34c2ba815cc0d3b93f3e21",
+   "first_seen": "2026-09-13T13:19:33.735497+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42732302?fc=20260609215449&ff=20260913091933&v=2.20.1",
+   "title_hash": "0fc4abbed8f8702a466b0ad1eb716802",
+   "first_seen": "2026-09-13T13:19:33.735497+00:00",
+   "kept": true,
+   "title": "A Pilot Study of a CustomGPT for the Royal College of Ophthalmologists Curriculum 2024",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-13T10:00:00+00:00",
+   "summary": "A curriculum-specific GPT tool provided rapid, accurate guidance aligned with Royal College of Ophthalmologists training standards, improving efficiency and accessibility in postgraduate medical education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&ff=20260913091933&v=2.20.1",
+   "title_hash": "539f41669d92635ebea9d6e974a8e023",
+   "first_seen": "2026-09-13T13:19:33.735497+00:00",
+   "kept": true,
+   "title": "High Accuracy, Questionable References: Large Language Models' Performance and Citation Reliability in Foot and Ankle Surgery Examinations",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-13T10:00:00+00:00",
+   "summary": "ChatGPT 5.4 achieved high accuracy on foot and ankle surgery exam questions but produced the most fabricated citations of tested models, highlighting risks of using large language models as primary educational tools without reference verification.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04587-0",
+   "title_hash": "e7a8a8d11da517bd6e41cb91bc111788",
+   "first_seen": "2026-09-13T13:19:33.735497+00:00",
+   "kept": true,
+   "title": "A multimodal murmuration for immunotherapy",
+   "source": "Nature Medicine",
+   "published": "2026-09-13T00:00:00+00:00",
+   "summary": "Integrating multiple multimodal, patient-level biomarkers improved prediction of cancer immunotherapy response, though generalizability across populations remains a challenge.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04587-0/MediaObjects/41591_2026_4587_Fig1_HTML.png",
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04488-2",
+   "title_hash": "fc6b76a63c2a52ea2c0c4ba9f6228c1f",
+   "first_seen": "2026-09-13T13:19:33.735497+00:00",
+   "kept": true,
+   "title": "Clinical usability of an explainable AI decision support tool and evaluation of multimodal models in NSCLC",
+   "source": "Nature Medicine",
+   "published": "2026-09-13T00:00:00+00:00",
+   "summary": "A multimodal explainable AI model outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in a large international real-world study.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wehlyi/looks_like_a_coordination_to_stop_distribution_of",
+   "title_hash": "a2625334279c38bed29dfd510730863f",
+   "first_seen": "2026-09-13T13:19:33.735497+00:00",
+   "kept": false,
+   "reason": "speculation and community meta-discussion without substantive news"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=fyygMxVCAWI",
+   "title_hash": "8f65f41a87ef4230c516c38f770911cb",
+   "first_seen": "2026-09-13T13:19:33.735497+00:00",
+   "kept": false,
+   "reason": "speculation and rumor without confirmed developments"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=XN3xNJvWXsc",
+   "title_hash": "4c13c95f1c672711d4fdf9dbd8906ea5",
+   "first_seen": "2026-09-13T13:19:33.735497+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/10-Ways-to-Think-Bigger-with-Opportunity-AI-e3opfqe",
+   "title_hash": "d3ac7eaa93d627fdabdec732a6529d20",
+   "first_seen": "2026-09-13T13:19:33.735497+00:00",
+   "kept": false,
+   "reason": "promotional content without relevance to medical education or clinical practice"
   }
  ],
  "digests": [
