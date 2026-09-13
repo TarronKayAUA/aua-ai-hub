@@ -18,9 +18,17 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 13, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 13, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting">Trump and Mike Johnson think the AI industry is overreacting</a>
+    <p class="news-card-summary">Political leaders dismiss recent calls from major AI company executives to slow frontier AI development.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 12, 2026</span></div>
@@ -128,13 +136,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Google&#x27;s artificial intelligence system evaluates the effects of all possible single-base changes in the human genome to understand pathogenic variants.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2201567552-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 9, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/ai-watermark-text-anthropic-openai">AI Models Are Watermarking Text, Will You Notice?</a>
-    <p class="news-card-summary">Anthropic, Google, and OpenAI are implementing text watermarks in AI model outputs to identify AI-generated content and detect misuse.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-cursor-symbol-for-editing-text-set-against-a-green-background-with-sporadic-pieces-highlighted-in-r.jpg?id=67710314&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

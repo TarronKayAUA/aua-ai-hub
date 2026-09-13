@@ -1,127 +1,6 @@
 {
  "items": [
   {
-   "url": "https://mededu.jmir.org/2026/1/e89942",
-   "title_hash": "32f9e2145f818c18b6adecfb14f7e9f3",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": true,
-   "title": "Digital Training for Lay Health Care Workers’ Knowledge and Skills in HIV Index Case Testing: Cluster Randomized Trial",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-15T20:30:14+00:00",
-   "summary": "Cluster randomized trial evaluating digital training for lay health care workers learning HIV index case testing in low-resource settings.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e77034",
-   "title_hash": "05191f13d219c6a9ee048ac47858769e",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": true,
-   "title": "Synchronous Remote Teaching for Neurological Examination Training in Fifth-Year Medical Students: Quasi-Experimental Study",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-15T20:30:14+00:00",
-   "summary": "Quasi-experimental study comparing synchronous remote teaching with in-person instruction for teaching neurological examination skills including tendon reflex assessment to medical students.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://ai.jmir.org/2026/1/e76400",
-   "title_hash": "e3024ad569edc6b654bd822d8b21835b",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": true,
-   "title": "Metrics Used for the Evaluation of Chatbots Providing Cancer Genetic Risk Assessment and Education: Systematic Review",
-   "source": "JMIR AI",
-   "published": "2026-07-15T20:30:14+00:00",
-   "summary": "Systematic review of metrics used to evaluate chatbots delivering cancer genetic risk assessment and counseling, identifying strengths and weaknesses of chatbot-assisted applications.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.theverge.com/entertainment/965616/ash-koosha-odysseus-the-fall-foundtain-zero-tilly-norwood",
-   "title_hash": "79f7ff0473260691b54916c627f84f44",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e96244",
-   "title_hash": "04d26806466694c1f7b64bf8e04d78b0",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": true,
-   "title": "Systemic Barriers to Curriculum Adaptation for Rapidly Changing Knowledge in Medical Education: Qualitative Study",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-15T19:30:04+00:00",
-   "summary": "Qualitative study identifying systemic barriers to rapid curriculum adaptation in medical education, using digitalization in medicine as an illustrative case.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e90611",
-   "title_hash": "270116a3874519ca92c73446394c0149",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": true,
-   "title": "Research on the Improvement Path of Human-AI Collaborative Consultation Effectiveness From the Perspective of Information Ecology: Configurational Analysis",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-15T19:00:05+00:00",
-   "summary": "Configurational analysis of pathways to improve human-AI collaborative consultation effectiveness in online health communities from an information ecology perspective.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e80431",
-   "title_hash": "9b659e55e2ea845d1600bbd9c9b13d89",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": false,
-   "reason": "narrow healthcare informatics application without AI relevance"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uxdv34/thinking_machines_releases_first_openweight_model",
-   "title_hash": "0cd8e10adc013f1aec142e88d352b68f",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": true,
-   "title": "Thinking Machines releases first open-weight model “Inkling”",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-15T18:12:43+00:00",
-   "summary": "Thinking Machines released Inkling, an open-weight language model.",
-   "category": "general_ai",
-   "score": 2.0,
-   "thumbnail": "https://preview.redd.it/d7s0z8kqpfdh1.jpeg?width=640&crop=smart&auto=webp&s=f56cf81af181e41f80e2963533db6f6e5408fad2",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/966072/suno-ai-music-training-scraping-youtube-hack",
-   "title_hash": "1ae9d0b711aeba39e3069c2db931c1fc",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uxbrw4/linus_torvalds_tells_people_to_stop_attacking",
-   "title_hash": "93189ac1b3860117fe41d899dde4d35b",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": false,
-   "reason": "community meta-discussion without substantive news or analysis for medical educators"
-  },
-  {
-   "url": "https://huggingface.co/blog/thinkingmachines-inkling",
-   "title_hash": "1691ef04e9eea18b7de89fcb750d2e62",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": false,
-   "reason": "duplicate of candidate 4 from more authoritative source already kept"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=m8uUUUsMD3Y",
-   "title_hash": "83b4118b5dae047abf46872c23a8e1b2",
-   "first_seen": "2026-07-15T21:16:13.985694+00:00",
-   "kept": false,
-   "reason": "hardware product marketing from OpenAI's own channel; unrelated to medical education or AI capability"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/16/grok-mermaid",
    "title_hash": "1d5903b85bc12054e99be547bb8e4116",
    "first_seen": "2026-07-16T03:39:47.875629+00:00",
@@ -32023,6 +31902,34 @@
    "first_seen": "2026-09-13T18:48:31.785994+00:00",
    "kept": false,
    "reason": "off-topic for this audience, general programming language design unrelated to AI"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting",
+   "title_hash": "c4e4cc572f4f2950b1b9134dffc93870",
+   "first_seen": "2026-09-13T22:26:26.712758+00:00",
+   "kept": true,
+   "title": "Trump and Mike Johnson think the AI industry is overreacting",
+   "source": "The Verge AI",
+   "published": "2026-09-13T19:41:48+00:00",
+   "summary": "Political leaders dismiss recent calls from major AI company executives to slow frontier AI development.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wfhiqx/plot_twist",
+   "title_hash": "726a339c2c636fc0ef202daf15f4987e",
+   "first_seen": "2026-09-13T22:26:26.712758+00:00",
+   "kept": false,
+   "reason": "forum discussion with no substantive content or verifiable claim"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wfe9zt/3k_128gb_vram_256gb_ram_ddr4_server",
+   "title_hash": "4e3b723cce2f9958db4e0e848e400c8f",
+   "first_seen": "2026-09-13T22:26:26.712758+00:00",
+   "kept": false,
+   "reason": "personal hardware build log, not relevant to medical educators or students"
   }
  ],
  "digests": [
