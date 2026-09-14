@@ -138,6 +138,12 @@ Cards link to YouTube; nothing plays on this site.
 ## Medical AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=86wroj3Aq3I" target="_blank" rel="noopener" title="MedAI #164: Generative AI for inpatient documentation summaries | Steve G. Peters">
+  <img src="https://i1.ytimg.com/vi/86wroj3Aq3I/hqdefault.jpg" alt="Video: Generative AI for inpatient documentation summaries" loading="lazy">
+  <span class="video-card-title">Generative AI for inpatient documentation summaries</span>
+  <span class="video-card-meta">Stanford MedAI, September 14, 2026</span>
+  <span class="video-card-desc">Stanford MedAI seminar on clinical deployment of generative AI for summarizing inpatient documentation, with Steve G. Peters.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=32HJG_jdC2g" target="_blank" rel="noopener" title="What is Translational Foresight? - The Medical Futurist">
   <img src="https://i4.ytimg.com/vi/32HJG_jdC2g/hqdefault.jpg" alt="Video: Translational foresight in science and medicine" loading="lazy">
   <span class="video-card-title">Translational foresight in science and medicine</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Unlocking pediatric data for AI development</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
   <span class="video-card-desc">Discussion on addressing fragmented pediatric data to create AI-ready datasets for model development and clinical deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=7nwO85lEYFw" target="_blank" rel="noopener" title="The Revolution That Took 30 Years (And Is Just Getting Started) | AIMI Pediatric Symposium 2026">
-  <img src="https://i4.ytimg.com/vi/7nwO85lEYFw/hqdefault.jpg" alt="Video: AI in pediatric medicine: three decades of progress" loading="lazy">
-  <span class="video-card-title">AI in pediatric medicine: three decades of progress</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Keynote on the three-decade evolution of AI in pediatric medicine and current momentum in clinical translation.</span>
 </a>
 </div>
 

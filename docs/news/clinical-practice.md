@@ -24,6 +24,13 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e97520">Locally Deployed Large Language Models for AI-Assisted Outpatient Prescription Review: Crossover Study</a>
+    <p class="news-card-summary">Peer-reviewed study of locally deployed large language models for pharmacist-reviewed prescription safety, demonstrating clinical utility while preserving data privacy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 14, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88732">Machine Learning, Based Prediction of Culture-Confirmed Neonatal Sepsis in a Tertiary Neonatal Intensive Care Unit: Retrospective Cohort Study</a>
     <p class="news-card-summary">Machine learning model trained on electronic health records predicts culture-confirmed neonatal sepsis early in a tertiary neonatal intensive care unit.</p>
   </div>
@@ -118,13 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e97661">Quantifying the Impact of Anonymization-Induced Clinical Data Quality Loss: Methodological Quantitative Case Study Using Primary Diagnosis Codes and Hospital Length of Stay</a>
     <p class="news-card-summary">A quantitative study measures how k-anonymity privacy protection affects the quality and analytical value of electronic health record data for secondary research use.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83544">Reinforcement Learning, Based Temporal Knowledge Graph Reasoning for Predicting Chronic Gastritis Diagnosis and Treatment: Development and Validation Study</a>
-    <p class="news-card-summary">Researchers developed a reinforcement learning temporal knowledge graph system to predict chronic gastritis diagnosis by capturing disease progression and relationships among clinical events.</p>
   </div>
 </div>
 </div>

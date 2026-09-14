@@ -1,190 +1,6 @@
 {
  "items": [
   {
-   "url": "https://mededu.jmir.org/2026/1/e100467",
-   "title_hash": "4b4ad6de573b83d1600273c3667adba1",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": true,
-   "title": "AI-Simulated Patients for Training Shared Decision-Making: Feasibility Study in Medical Education",
-   "source": "JMIR Medical Education",
-   "published": "2026-07-16T21:15:02+00:00",
-   "summary": "A feasibility study of AI chatbot simulations for training shared decision-making communication skills with automated feedback in medical education.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Simulation and skills"
-  },
-  {
-   "url": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android",
-   "title_hash": "7f21955768db9e77aedf14498234f01d",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "policy news not specific to medical education or clinical AI"
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/xai-cant-deny-grok-makes-csam-anymore-so-its-suing-users",
-   "title_hash": "fcedb67caccf7eb8480dbde5bb89e260",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "litigation and product safety incident outside scope of medical education and clinical practice"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/16/kimi-k3",
-   "title_hash": "0e023d91611a2d487fc98399e0ca8695",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": true,
-   "title": "Kimi K3, and what we can still learn from the pelican benchmark",
-   "source": "Simon Willison's weblog",
-   "published": "2026-07-16T20:19:30+00:00",
-   "summary": "Moonshot AI announced Kimi K3, a 2.8 trillion parameter model, with open-weight release promised by July 27, 2026.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://static.simonwillison.net/static/2026/kimi-3-pelican.jpg",
-   "topic": "New models"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e82230",
-   "title_hash": "4d746ac0c80b0ad81a588f044e9a7afa",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": true,
-   "title": "Machine Learning, Augmented Traditional Analysis of Lactate vs Lactate-to-Albumin Ratio for Predicting Mortality Risk in Patients With Sepsis: Large-Scale Retrospective Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-16T20:15:02+00:00",
-   "summary": "Machine learning analysis of lactate and lactate-to-albumin ratio for mortality risk prediction in sepsis patients using large-scale retrospective data.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/fear-of-humanoid-robots-spurs-human-workers-to-strike-at-hyundai-auto-factory",
-   "title_hash": "240de83377c09633e237e6f12102cb5f",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "labor relations and robotics deployment unrelated to medical education or clinical AI"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/linus-torvalds-to-critics-of-ai-coding-in-linux-fork-it-or-just-walk-away",
-   "title_hash": "c37001ad5df6abc7f05be71757c10e09",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "open source development meta-discussion without medical relevance"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies",
-   "title_hash": "0c8c675dcec7d9bf2408de4d9ea15a34",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "administrative policy news without specific medical or educational application"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/16/bad-codex-bug",
-   "title_hash": "4bfc965bbe64c1813809278f9cf414d3",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "product bug report without broader significance to this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uy9cft/kimi_k3_benchmarks",
-   "title_hash": "575e13257d9da6a19fe33afc2a595634",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "forum link without substantive analysis or summary"
-  },
-  {
-   "url": "https://blog.lyc8503.net/en/post/llm-classifier",
-   "title_hash": "a1ddd8707522e29d2c7c0245a9c6adac",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "detection of AI-generated text has no direct relevance to medical education or clinical practice"
-  },
-  {
-   "url": "https://www.spaceweather.gov/news/goes-19-safe-hold",
-   "title_hash": "4dd53191d821ec1911e2536a60a362ba",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "satellite operations incident unrelated to medical education or AI"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42460692?fc=20260609215449&ff=20260716171756&v=2.20.0",
-   "title_hash": "58e47e12af6da9615cd37c4521c1656e",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "narrow curricular case study without clear AI focus or method"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42460590?fc=20260609215449&ff=20260716171756&v=2.20.0",
-   "title_hash": "f97ffb422457c755f47d136c4984e336",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": true,
-   "title": "A Methodological Framework for Designing Clinically Coherent Generative AI Simulated Patients: A Physiotherapy Education Case Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-16T10:00:00+00:00",
-   "summary": "A methodological framework for designing clinically coherent generative AI simulated patients, demonstrated with a physiotherapy education chatbot.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Simulation and skills"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42460585?fc=20260609215449&ff=20260716171756&v=2.20.0",
-   "title_hash": "9d49c5ad734d4dfb2ea2ba93bbe28b5e",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": true,
-   "title": "A Preliminary Approach to Fall Risk Assessment in Aged Care Facilities Using Generative AI Technologies",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-16T10:00:00+00:00",
-   "summary": "An approach using generative AI to assess fall risk in elderly residential aged care residents from unstructured electronic health record data.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://blog.greg.technology/2026/07/14/llm-networking-with-mikrotik.html",
-   "title_hash": "55c72efdbeceac0c08240897aebd099c",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": false,
-   "reason": "network configuration tutorial without medical or educational relevance"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=xPcZ0w3ouo8",
-   "title_hash": "6c4e805732d073b5589e01c4f8e398b6",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": true,
-   "title": "Kimi K3 Is INSANE, Is THIS a Sol & Fable Competitor?",
-   "source": "Bijan Bowen",
-   "published": "2026-07-16T20:52:47+00:00",
-   "summary": "Hands-on testing of Kimi K3, a multimodal AI model, with technical review and performance evaluation across browser and application tasks.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i1.ytimg.com/vi/xPcZ0w3ouo8/hqdefault.jpg",
-   "display_title": "Testing Kimi K3 multimodal model performance"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=dB6pOolO7io",
-   "title_hash": "f27b08d0bfc2529122268fb1b8f19087",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": true,
-   "title": "ChatGPT can now complete tasks on your computer",
-   "source": "OpenAI",
-   "published": "2026-07-16T18:00:16+00:00",
-   "summary": "Demonstration of GPT-5.6 computer use capability, showing how the model can control applications and browsers to complete tasks.",
-   "category": "videos",
-   "score": 4.0,
-   "thumbnail": "https://i1.ytimg.com/vi/dB6pOolO7io/hqdefault.jpg",
-   "display_title": "GPT-5.6 computer control and task automation"
-  },
-  {
-   "url": "https://aipodcast.education/higher-marks-lower-learning-ais-favourite-magic-trick",
-   "title_hash": "22d875c1732b4cd6a74b9e543b62da17",
-   "first_seen": "2026-07-16T21:17:56.513249+00:00",
-   "kept": true,
-   "title": "Higher Marks, Lower Learning? AI's Favourite Magic Trick",
-   "source": "AI in Education Podcast",
-   "published": "2026-07-16T20:24:00+00:00",
-   "summary": "A discussion of whether AI tools improve student learning or merely raise test scores, drawing on recent research and cases including findings from Brown University.",
-   "category": "podcasts",
-   "score": 4.0,
-   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/17/spot-birds-not-golf",
    "title_hash": "df2f0ce9198afee6441ab71cfd1dc69d",
    "first_seen": "2026-07-17T03:40:17.932462+00:00",
@@ -31871,6 +31687,75 @@
    "first_seen": "2026-09-14T20:19:17.761044+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/995141/ai-executives-politicians-safety-regulation-anthropic-dario-amodei",
+   "title_hash": "396b0ef8bed88926b6b16f91198c29bd",
+   "first_seen": "2026-09-14T23:12:31.816015+00:00",
+   "kept": false,
+   "reason": "roundup of opinion statements on AI pacing; editorial compilation without substantive analysis or new information"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear",
+   "title_hash": "717b63c6dcbdd9f8d0bd5f77c123bb7b",
+   "first_seen": "2026-09-14T23:12:31.816015+00:00",
+   "kept": false,
+   "reason": "commentary on internal company culture and existential risk speculation rather than substantive analysis or development"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam",
+   "title_hash": "554f949ebcfb8a69d2416bd728395c32",
+   "first_seen": "2026-09-14T23:12:31.816015+00:00",
+   "kept": false,
+   "reason": "social media spam and bot activity, off-topic for this audience"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e97520",
+   "title_hash": "b4a1a431c9e5667fe3d5087aca0371d6",
+   "first_seen": "2026-09-14T23:12:31.816015+00:00",
+   "kept": true,
+   "title": "Locally Deployed Large Language Models for AI-Assisted Outpatient Prescription Review: Crossover Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-14T20:30:59+00:00",
+   "summary": "Peer-reviewed study of locally deployed large language models for pharmacist-reviewed prescription safety, demonstrating clinical utility while preserving data privacy.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/14/influences",
+   "title_hash": "b9d7f0911146d815b53a9d2196239c50",
+   "first_seen": "2026-09-14T23:12:31.816015+00:00",
+   "kept": false,
+   "reason": "meta-discussion about influential blog posts, no new information or development relevant to this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wg7dd5/ukisai_swiftqwen3827b_583_thinking_x195_speed",
+   "title_hash": "ed121d5cfdaca38fcd57c4c4da755c77",
+   "first_seen": "2026-09-14T23:12:31.816015+00:00",
+   "kept": true,
+   "title": "UkisAI Swift-Qwen3.8-27B / -58.3% thinking, x1.95 speed while keeping the accuracy of xhigh",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-09-14T15:57:17+00:00",
+   "summary": "Open-weight fine-tuned model reduces reasoning token overhead by 58 percent while maintaining accuracy and increasing inference speed.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/dW1paTAwYmpjaXBoMeu6SMTdIKcnONQ26KrXYxTr0l4PSQ46Rzar8UC5vEoK.png?width=640&crop=smart&auto=webp&s=a1762aac1142b29b0a14f89a61afac14ce2e465b",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=86wroj3Aq3I",
+   "title_hash": "0a64cc77106a8b058e8a9ecaecb8c848",
+   "first_seen": "2026-09-14T23:12:31.816015+00:00",
+   "kept": true,
+   "title": "MedAI #164: Generative AI for inpatient documentation summaries | Steve G. Peters",
+   "source": "Stanford MedAI",
+   "published": "2026-09-14T21:58:58+00:00",
+   "summary": "Stanford MedAI seminar on clinical deployment of generative AI for summarizing inpatient documentation, with Steve G. Peters.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i1.ytimg.com/vi/86wroj3Aq3I/hqdefault.jpg",
+   "display_title": "Generative AI for inpatient documentation summaries"
   }
  ],
  "digests": [

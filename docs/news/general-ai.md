@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-reliability">
@@ -36,6 +36,14 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Google DeepMind researchers observed AI agents detecting and reporting cheating by other agents in a math problem task, a first observation of whistleblowing behavior with implications for multi-agent alignment.</p>
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/09/260911_AIangentscheating.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wg7dd5/ukisai_swiftqwen3827b_583_thinking_x195_speed">UkisAI Swift-Qwen3.8-27B / -58.3% thinking, x1.95 speed while keeping the accuracy of xhigh</a>
+    <p class="news-card-summary">Open-weight fine-tuned model reduces reasoning token overhead by 58 percent while maintaining accuracy and increasing inference speed.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/dW1paTAwYmpjaXBoMeu6SMTdIKcnONQ26KrXYxTr0l4PSQ46Rzar8UC5vEoK.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a1762aac1142b29b0a14f89a61afac14ce2e465b" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -123,13 +131,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">DeepSeek V4.1 Flash outperformed Astra on Artificial Analysis&#x27;s new Intelligence Index v4.3 benchmark, displacing prior leaders.</p>
   </div>
   <img class="news-card-thumb" src="https://preview.redd.it/b8lrmxaj1eph1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=bca6bf2f85360c40d00744cc38488e7129fc5290" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/994441/trump-mike-johnson-ai-industry-overreacting">Trump and Mike Johnson think the AI industry is overreacting</a>
-    <p class="news-card-summary">Political leaders dismiss recent calls from major AI company executives to slow frontier AI development.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

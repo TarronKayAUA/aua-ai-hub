@@ -131,10 +131,4 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">AI in Education Podcast, July 23, 2026</span>
   <span class="video-card-desc">Digital wellbeing researcher discusses how schools and parents can help young people develop critical thinking while navigating artificial intelligence in education.</span>
 </a>
-<a class="video-card" href="https://aipodcast.education/higher-marks-lower-learning-ais-favourite-magic-trick" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Higher Marks, Lower Learning? AI&#x27;s Favourite Magic Trick" loading="lazy">
-  <span class="video-card-title">Higher Marks, Lower Learning? AI&#x27;s Favourite Magic Trick</span>
-  <span class="video-card-meta">AI in Education Podcast, July 16, 2026</span>
-  <span class="video-card-desc">A discussion of whether AI tools improve student learning or merely raise test scores, drawing on recent research and cases including findings from Brown University.</span>
-</a>
 </div>
