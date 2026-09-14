@@ -1,89 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/16/grok-mermaid",
-   "title_hash": "1d5903b85bc12054e99be547bb8e4116",
-   "first_seen": "2026-07-16T03:39:47.875629+00:00",
-   "kept": false,
-   "reason": "minor tool release notes"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/15/grok-build",
-   "title_hash": "a3e34fde080489565808b0ab25b72fd5",
-   "first_seen": "2026-07-16T03:39:47.875629+00:00",
-   "kept": false,
-   "reason": "security incident reporting without substantive analysis for medical educators"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/966293/xai-grok-user-lawsuit-csam",
-   "title_hash": "68e5f1b1ae2b580adfd00d16b3177788",
-   "first_seen": "2026-07-16T03:39:47.875629+00:00",
-   "kept": false,
-   "reason": "legal proceedings without substantive analysis for medical educators"
-  },
-  {
-   "url": "https://ai.jmir.org/2026/1/e86864",
-   "title_hash": "423b73f4bd538d2baa827b05d1f7b22a",
-   "first_seen": "2026-07-16T03:39:47.875629+00:00",
-   "kept": true,
-   "title": "Performance Gaps and Optimization Strategies in Chinese Medical Large Language Models Based on MedBench: Evaluation Study",
-   "source": "JMIR AI",
-   "published": "2026-07-15T21:30:14+00:00",
-   "summary": "Study evaluates Chinese medical language models on a benchmark dataset, identifying performance gaps and optimization strategies for clinical deployment.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uxfu4k/google_is_updating_gemma_4s_chat_templates",
-   "title_hash": "568f9791cc5e2044a909aec0a5ea20d3",
-   "first_seen": "2026-07-16T03:39:47.875629+00:00",
-   "kept": true,
-   "title": "Google is updating Gemma 4's chat templates, bringing major fixes to tool calling and reducing \"laziness\", and enabling Flash Attention 4 on Hopper GPUs, plus an interactive guide on how to work with and improve its vision!",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-15T19:26:23+00:00",
-   "summary": "Google updates Gemma 4 with fixes to tool calling, reduced latency, and Flash Attention 4 support on Hopper GPUs.",
-   "category": "general_ai",
-   "score": 2.0,
-   "thumbnail": "https://preview.redd.it/9j0dofv61gdh1.png?width=140&height=140&crop=1:1,smart&auto=webp&s=297238a83604eb277cd8f270d08df7e91d8b721b",
-   "topic": "New models"
-  },
-  {
-   "url": "https://thinkingmachines.ai/inkling",
-   "title_hash": "470950852f528abbde9984bf4d17ea99",
-   "first_seen": "2026-07-16T03:39:47.875629+00:00",
-   "kept": false,
-   "reason": "duplicate of a kept candidate"
-  },
-  {
-   "url": "https://thinkingmachines.ai/news/introducing-inkling",
-   "title_hash": "45d4b2edc97f268bb23fafb4c6fa83aa",
-   "first_seen": "2026-07-16T03:39:47.875629+00:00",
-   "kept": true,
-   "title": "Inkling: Our Open-Weights Model",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-07-15T18:12:45+00:00",
-   "summary": "Thinking Machines releases Inkling, an open-weights 975-billion-parameter language model.",
-   "category": "general_ai",
-   "score": 2.0,
-   "thumbnail": "https://thinkingmachines.ai/news/introducing-inkling/images/cover-social-inkling-post.png",
-   "topic": "New models"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42456080?fc=20260609215449&ff=20260715233948&v=2.20.0",
-   "title_hash": "e5eea8e11d58820702b5a9d070f9d0e5",
-   "first_seen": "2026-07-16T03:39:47.875629+00:00",
-   "kept": false,
-   "reason": "narrow domain application of image segmentation without AI education relevance"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=CToxp125mhc",
-   "title_hash": "d3cd9daa9c2a0704886b28818b68a061",
-   "first_seen": "2026-07-16T03:39:47.875629+00:00",
-   "kept": false,
-   "reason": "product demo from the vendor's own channel without educational payload for medical educators"
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42458459?fc=20260609215449&ff=20260716023257&v=2.20.0",
    "title_hash": "4bd2b092710826360daa18259955295b",
    "first_seen": "2026-07-16T06:32:57.257971+00:00",
@@ -31930,6 +31847,249 @@
    "first_seen": "2026-09-13T22:26:26.712758+00:00",
    "kept": false,
    "reason": "personal hardware build log, not relevant to medical educators or students"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.11955",
+   "title_hash": "d39a3d3d653ae5703e52454312a8a565",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": true,
+   "title": "R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-14T04:00:00+00:00",
+   "summary": "Modular fact-checking architecture separates evidence retrieval, reasoning, verification, and confidence calibration to improve interpretability and reliability of automated fact checks.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12085",
+   "title_hash": "300b6f7f88abf79f7b493792a6805598",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12107",
+   "title_hash": "a209a23bb1e780a08a9ac3c785a901e6",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12111",
+   "title_hash": "dfc3c79e4493d66ae8891257bfe2340f",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": true,
+   "title": "The Cost of Compression: A Rate-Distortion Limit on Factual Hallucination",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-14T04:00:00+00:00",
+   "summary": "Analysis of factual hallucination in language models from memory compression perspective, showing how finite storage forces approximate encoding of facts.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12122",
+   "title_hash": "bfcc661d4d9534b83d7847eb7006df2d",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12127",
+   "title_hash": "f35be6d1eb5b5373f13d5cd57f602858",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside core AI literacy for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12132",
+   "title_hash": "a0025dfb2c12c2e790a90b08187b3378",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "domain application lacking AI methodology or significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12191",
+   "title_hash": "353e1083889037ef1bf7030774ecd01c",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": true,
+   "title": "GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-14T04:00:00+00:00",
+   "summary": "Protocol assesses reliability of language models as judges in evaluating task-oriented agents, identifying when LLM judging fails to rank candidates correctly.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12230",
+   "title_hash": "44a46e7607428c0322bd8f9511a67c01",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside core AI literacy for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12243",
+   "title_hash": "929fff761b9a3507559baf14421da41f",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": true,
+   "title": "Chopthin-Consensus Power Sampling: A Diversity-Preserving Approach to LLM Decoding",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-14T04:00:00+00:00",
+   "summary": "Inference-time sampling method preserves diverse reasoning paths during language model decoding to improve answer quality without post-training.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12254",
+   "title_hash": "a17aba648ca749ff685f4248afc89bfd",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12260",
+   "title_hash": "7cd1f34c320391023da54e7bc20add74",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": true,
+   "title": "HypoKG: Evidence-Disciplined Biomedical Hypothesis Generation Beyond Endpoint Knowledge",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-14T04:00:00+00:00",
+   "summary": "Study evaluates whether large language models generate biomedical hypotheses through genuine scientific reasoning or pattern matching, using integrated biochemical knowledge graphs.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12268",
+   "title_hash": "de54ff898c89acc41995c45bfd70a4eb",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": true,
+   "title": "EAR: Entity-Aware Partitioning Approach for Retrieval-Augmented Generation Development",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-14T04:00:00+00:00",
+   "summary": "Entity-aware partitioning approach for retrieval-augmented generation improves performance by dividing source documents around semantic boundaries rather than fixed chunks.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12303",
+   "title_hash": "136b1b342d60074054bdded2180807a9",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": true,
+   "title": "Breaking the Token Ceiling: Distilling Smaller, Stronger Byte Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-14T04:00:00+00:00",
+   "summary": "Techniques for distilling smaller byte-based language models from token-based models enable direct comparison of scaling behavior across different tokenization schemes.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12310",
+   "title_hash": "4a60eb938fc6302c84e02c071480029a",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow shared task submission outside general significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12341",
+   "title_hash": "c97a247d849de9d79e20c85d60c6d609",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12353",
+   "title_hash": "eabf9d013fab598eb66d1b75aa1e7c3b",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": true,
+   "title": "SynthSentry: Detecting Synthetic Data Contamination in Language Model Training Data",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-14T04:00:00+00:00",
+   "summary": "Method for detecting synthetic or model-generated data in training corpora before training begins, addressing model collapse from recursive self-training.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12354",
+   "title_hash": "d937ff2dc917833bd2efdbbb5f41dde9",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside core AI literacy for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12366",
+   "title_hash": "802c30d3486f222663cbc3e83e3a984c",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12382",
+   "title_hash": "9befe8a9f61f00eb96cf5f2149b9cf7b",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow technical contribution outside core interest for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12448",
+   "title_hash": "cc863f838f5da86b9d8794c54dfc5444",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12469",
+   "title_hash": "eae280b2cbedff427830c57a677c49a9",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12471",
+   "title_hash": "04450211e9877b482a7be643387180f4",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12475",
+   "title_hash": "0110b5a373e3e20c80825efabd66586c",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": true,
+   "title": "Zipbench: Low-Cost Framework for Compressing Comprehensive Benchmarks of Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-14T04:00:00+00:00",
+   "summary": "Framework for compressing large language model benchmark suites to reduce redundancy and evaluation cost while maintaining assessment validity.",
+   "category": "general_ai",
+   "score": 2.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.12537",
+   "title_hash": "c56186a418e35144391933b00c6022d0",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "narrow domain application outside medical education or AI in medicine"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/14/commit-rewriter",
+   "title_hash": "f6089c2af24a6b1761f2ce932f8e8781",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "minor release notes for a niche tool"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/13/shot-scraper",
+   "title_hash": "7e440eaa097b5f84107af76d1f8ad935",
+   "first_seen": "2026-09-14T05:00:23.370574+00:00",
+   "kept": false,
+   "reason": "minor release notes for a niche tool"
   }
  ],
  "digests": [
@@ -32108,19 +32268,19 @@
  "last_digest_at": "2026-09-11T04:44:45.324469+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A randomized study in cardiac surgery training found that combining AI-enhanced instruction with traditional teaching produced measurable gains in clinical and surgical skill acquisition <a href=\"https://pubmed.ncbi.nlm.nih.gov/42730487?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1\">[1]</a>. A separate non-inferiority trial testing LLM-generated synthetic clinical cases against real patient records found the synthetic material performed comparably on immediate test performance but stopped short of establishing formal non-inferiority <a href=\"https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1\">[2]</a>. Exam-focused work continued to probe how AI systems handle high-stakes assessment: a study of Japanese health professions licensing exams showed that domain, search access, and visual content substantially shape model performance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1\">[14]</a>, while a separate analysis found large language models cannot reliably reproduce residency program rank order lists without risking bias against applicant subgroups <a href=\"https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1\">[10]</a>.\n\nAlso this week: six items on teaching and curriculum address topics from dental education frameworks to hospital staff training in retrieval-augmented generation, and four exam and benchmark studies test model performance on radiology and licensing questions. Two pieces cover attitudes and adoption, and two more address assessment and feedback, including a study on AI-assisted preoperative patient counseling.",
-   "hash": "2ff120046ffe2f1e",
-   "date": "September 13, 2026"
+   "text": "A comparative exam study found ChatGPT 5.4 accurate on foot and ankle surgery questions but prone to fabricated citations, underscoring the need for reference verification before language models serve as primary study aids <a href=\"https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1\">[2]</a>. A related trial found LLM-generated synthetic clinical cases performed comparably to real records on immediate tests but did not establish non-inferiority <a href=\"https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1\">[4]</a>. Concerns about automation extend to high-stakes decisions and dialogue: one study warns that language models cannot reliably reproduce residency rank order lists without risking bias against applicant subgroups <a href=\"https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1\">[12]</a>, while a related viewpoint flags similar risks in using AI for Socratic teaching methods <a href=\"https://mededu.jmir.org/2026/1/e102958\">[14]</a>.\n\nAlso this week: seven items address teaching and curriculum design, from AI-enhanced cardiac surgery training to dental education frameworks balancing skill development with technology use. Four entries benchmark exam performance, two examine student attitudes toward AI-based counseling, and two more explore assessment and feedback approaches such as profiling human-AI regulatory support in interprofessional education.",
+   "hash": "7357f58ec93fd7d7",
+   "date": "September 14, 2026"
   },
   "clinical_practice": {
-   "text": "A vision-based foundation model called CRISP now supports intraoperative pathology decisions, trained on frozen section slides and validated prospectively against existing models <a href=\"https://www.nature.com/articles/s41591-026-04703-0\">[13]</a>. Real-world deployment of an AI-agent eye clinic in China shows that workflow integration and clinician engagement, not just model accuracy, determine whether AI-assisted care becomes integrated care <a href=\"https://www.nature.com/articles/s41591-026-04631-z\">[14]</a>. In histopathology, a deep learning model predicts gene rearrangements in large B-cell lymphoma directly from tissue images, potentially bypassing additional molecular testing <a href=\"https://www.nature.com/articles/s41746-026-03238-5\">[2]</a>. A systematic review of AI methods for detecting traumatic brain injury on CT scans highlights ongoing diagnostic gaps in resource-limited settings <a href=\"https://ai.jmir.org/2026/1/e87794\">[8]</a>.\n\nAlso this week: four papers on safety and evaluation address privacy risks, anonymization tradeoffs, and AI auditing reliability, while four more cover clinical decision support, including chronic disease prediction and emergency triage. Two patient-facing tools examine exposure therapy for academic anxiety and AI-supported informed consent, and one study addresses documentation, extracting patient journeys from unstructured records.",
-   "hash": "1dc1b79e64c11263",
-   "date": "September 13, 2026"
+   "text": "A large international study found that a multimodal explainable AI model outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in practice <a href=\"https://www.nature.com/articles/s41591-026-04488-2\">[2]</a>. In pathology, a vision-based foundation model trained on frozen section slides showed strong performance in intraoperative decision-making with prospective validation <a href=\"https://www.nature.com/articles/s41591-026-04703-0\">[15]</a>, while a separate deep learning approach predicted gene rearrangements in large B-cell lymphoma directly from histopathology images, potentially shortening time to diagnosis <a href=\"https://www.nature.com/articles/s41746-026-03238-5\">[4]</a>. A randomized trial also found a human-AI single-session exposure intervention for academic anxiety to be safe, effective, and acceptable <a href=\"https://www.nature.com/articles/s41746-026-03199-9\">[3]</a>, as researchers separately quantified privacy leakage risks in federated learning systems trained on radiology reports <a href=\"https://medinform.jmir.org/2026/1/e88390\">[6]</a>.\n\nAlso this week: four items examine safety and evaluation, including anonymization-related data quality loss and confident hallucination in AI auditing, and four cover imaging and diagnostics, from a systematic review of CT-based traumatic brain injury detection to thyroid carcinoma lymph node staging. Two patient-facing tools address informed consent and AI-supported patient education.",
+   "hash": "494926f86178dbdc",
+   "date": "September 14, 2026"
   },
   "general_ai": {
-   "text": "Anthropic&#x27;s chief executive called for slowing AI development and independent safety audits <a href=\"https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development\">[2]</a>, a plea that gained urgency after the company documented Claude&#x27;s misuse in cyberattacks <a href=\"https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity\">[4]</a> and researchers showed users could bypass safeguards to pursue bioweapons research by reframing dangerous requests as legitimate science <a href=\"https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research\">[5]</a>. Separately, a New Mexico attorney was fined for filing a court appeal containing fabricated witnesses generated by ChatGPT <a href=\"https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses\">[3]</a>, underscoring how unchecked reliance on AI output can carry real legal consequences. Meanwhile, OpenAI&#x27;s claimed progress on a Millennium Prize mathematics problem drew scrutiny from mathematicians disputing the sourcing of training data <a href=\"https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes\">[11]</a>.\n\nAlso this week: six items address safety and reliability, four explore research and methods including data efficiency and latent-space concept modeling, and two cover industry and policy matters. A single benchmark, Real-SWE, evaluates AI models on private enterprise code, and one new model release, SWE-2, targets software engineering tasks.",
-   "hash": "bf6bb08424de4c4e",
-   "date": "September 13, 2026"
+   "text": "Anthropic&#x27;s own safety practices came under scrutiny after a report detailed Claude models used in cyberattacks <a href=\"https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity\">[14]</a>, compounding separate findings that users bypassed safeguards to pursue bioweapons-related research <a href=\"https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research\">[15]</a>. The company&#x27;s CEO responded by calling for slower development and third-party safety audits <a href=\"https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development\">[12]</a>. Meanwhile, a New Mexico lawyer was sanctioned for submitting fabricated case citations generated by ChatGPT <a href=\"https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses\">[13]</a>, illustrating how unchecked model outputs can cause real-world harm. Underlying these episodes, new theoretical work ties hallucination directly to the limits of memory compression in language models <a href=\"https://arxiv.org/abs/2609.12111\">[2]</a>.\n\nAlso this week: five papers advanced methods ranging from retrieval-augmented generation to decoding strategies for language models, while three benchmarking efforts addressed evaluation costs and judge reliability, including Real-SWE&#x27;s focus on enterprise codebases. One piece covered industry and policy tensions between AI executives and lawmakers over development pace.",
+   "hash": "a3d8eb64a2bdb6a7",
+   "date": "September 14, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -32227,5 +32387,5 @@
    "url": "https://opencv26.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-13"
+ "section_briefs_refreshed": "2026-09-14"
 }

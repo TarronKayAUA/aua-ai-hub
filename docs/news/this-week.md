@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## Medical Education
 
 <div class="section-brief">
-<p>A randomized study in cardiac surgery training found that combining AI-enhanced instruction with traditional teaching produced measurable gains in clinical and surgical skill acquisition <a href="https://pubmed.ncbi.nlm.nih.gov/42730487?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[1]</a>. A separate non-inferiority trial testing LLM-generated synthetic clinical cases against real patient records found the synthetic material performed comparably on immediate test performance but stopped short of establishing formal non-inferiority <a href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[2]</a>. Exam-focused work continued to probe how AI systems handle high-stakes assessment: a study of Japanese health professions licensing exams showed that domain, search access, and visual content substantially shape model performance <a href="https://pubmed.ncbi.nlm.nih.gov/42719489?fc=20260609215449&amp;ff=20260910150823&amp;v=2.20.1">[14]</a>, while a separate analysis found large language models cannot reliably reproduce residency program rank order lists without risking bias against applicant subgroups <a href="https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1">[10]</a>.</p>
-<p>Also this week: six items on teaching and curriculum address topics from dental education frameworks to hospital staff training in retrieval-augmented generation, and four exam and benchmark studies test model performance on radiology and licensing questions. Two pieces cover attitudes and adoption, and two more address assessment and feedback, including a study on AI-assisted preoperative patient counseling.</p>
-<p class="section-brief-date">The picture as of September 13, 2026; numbered links go to the source items.</p>
+<p>A comparative exam study found ChatGPT 5.4 accurate on foot and ankle surgery questions but prone to fabricated citations, underscoring the need for reference verification before language models serve as primary study aids <a href="https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1">[2]</a>. A related trial found LLM-generated synthetic clinical cases performed comparably to real records on immediate tests but did not establish non-inferiority <a href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[4]</a>. Concerns about automation extend to high-stakes decisions and dialogue: one study warns that language models cannot reliably reproduce residency rank order lists without risking bias against applicant subgroups <a href="https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1">[12]</a>, while a related viewpoint flags similar risks in using AI for Socratic teaching methods <a href="https://mededu.jmir.org/2026/1/e102958">[14]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum design, from AI-enhanced cardiac surgery training to dental education frameworks balancing skill development with technology use. Four entries benchmark exam performance, two examine student attitudes toward AI-based counseling, and two more explore assessment and feedback approaches such as profiling human-AI regulatory support in interprofessional education.</p>
+<p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -316,26 +316,19 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Opinion piece argues for graduated clinical introduction of generative AI tools, balancing clinician efficiency gains against patient and trainee acceptance concerns.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.04336">MedProb: Probing Internal Representations of Vision-Language Models for Medical Question Answering</a>
-        <p class="news-card-summary">MedProb is a lightweight framework that extracts medical visual question-answering answers from frozen vision-language model representations without fine-tuning.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>A vision-based foundation model called CRISP now supports intraoperative pathology decisions, trained on frozen section slides and validated prospectively against existing models <a href="https://www.nature.com/articles/s41591-026-04703-0">[13]</a>. Real-world deployment of an AI-agent eye clinic in China shows that workflow integration and clinician engagement, not just model accuracy, determine whether AI-assisted care becomes integrated care <a href="https://www.nature.com/articles/s41591-026-04631-z">[14]</a>. In histopathology, a deep learning model predicts gene rearrangements in large B-cell lymphoma directly from tissue images, potentially bypassing additional molecular testing <a href="https://www.nature.com/articles/s41746-026-03238-5">[2]</a>. A systematic review of AI methods for detecting traumatic brain injury on CT scans highlights ongoing diagnostic gaps in resource-limited settings <a href="https://ai.jmir.org/2026/1/e87794">[8]</a>.</p>
-<p>Also this week: four papers on safety and evaluation address privacy risks, anonymization tradeoffs, and AI auditing reliability, while four more cover clinical decision support, including chronic disease prediction and emergency triage. Two patient-facing tools examine exposure therapy for academic anxiety and AI-supported informed consent, and one study addresses documentation, extracting patient journeys from unstructured records.</p>
-<p class="section-brief-date">The picture as of September 13, 2026; numbered links go to the source items.</p>
+<p>A large international study found that a multimodal explainable AI model outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in practice <a href="https://www.nature.com/articles/s41591-026-04488-2">[2]</a>. In pathology, a vision-based foundation model trained on frozen section slides showed strong performance in intraoperative decision-making with prospective validation <a href="https://www.nature.com/articles/s41591-026-04703-0">[15]</a>, while a separate deep learning approach predicted gene rearrangements in large B-cell lymphoma directly from histopathology images, potentially shortening time to diagnosis <a href="https://www.nature.com/articles/s41746-026-03238-5">[4]</a>. A randomized trial also found a human-AI single-session exposure intervention for academic anxiety to be safe, effective, and acceptable <a href="https://www.nature.com/articles/s41746-026-03199-9">[3]</a>, as researchers separately quantified privacy leakage risks in federated learning systems trained on radiology reports <a href="https://medinform.jmir.org/2026/1/e88390">[6]</a>.</p>
+<p>Also this week: four items examine safety and evaluation, including anonymization-related data quality loss and confident hallucination in AI auditing, and four cover imaging and diagnostics, from a systematic review of CT-based traumatic brain injury detection to thyroid carcinoma lymph node staging. Two patient-facing tools address informed consent and AI-supported patient education.</p>
+<p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 36 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (36)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (8)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -580,13 +573,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Deep learning applied to digital twins identifies potential triggers for persistent atrial fibrillation outside the pulmonary veins.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.04366">VERGE: Verification-Enhanced Refinement for Grounded Extraction of Early-Onset Colorectal Cancer Symptoms in Clinical Notes</a>
-        <p class="news-card-summary">A method for extracting early-onset colorectal cancer symptoms from clinical notes using language models to capture symptom duration, context, and family history for improved detection.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 7, 2026</span></div>
@@ -607,15 +593,78 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## General AI
 
 <div class="section-brief">
-<p>Anthropic&#x27;s chief executive called for slowing AI development and independent safety audits <a href="https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development">[2]</a>, a plea that gained urgency after the company documented Claude&#x27;s misuse in cyberattacks <a href="https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity">[4]</a> and researchers showed users could bypass safeguards to pursue bioweapons research by reframing dangerous requests as legitimate science <a href="https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research">[5]</a>. Separately, a New Mexico attorney was fined for filing a court appeal containing fabricated witnesses generated by ChatGPT <a href="https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses">[3]</a>, underscoring how unchecked reliance on AI output can carry real legal consequences. Meanwhile, OpenAI&#x27;s claimed progress on a Millennium Prize mathematics problem drew scrutiny from mathematicians disputing the sourcing of training data <a href="https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes">[11]</a>.</p>
-<p>Also this week: six items address safety and reliability, four explore research and methods including data efficiency and latent-space concept modeling, and two cover industry and policy matters. A single benchmark, Real-SWE, evaluates AI models on private enterprise code, and one new model release, SWE-2, targets software engineering tasks.</p>
-<p class="section-brief-date">The picture as of September 13, 2026; numbered links go to the source items.</p>
+<p>Anthropic&#x27;s own safety practices came under scrutiny after a report detailed Claude models used in cyberattacks <a href="https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity">[14]</a>, compounding separate findings that users bypassed safeguards to pursue bioweapons-related research <a href="https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research">[15]</a>. The company&#x27;s CEO responded by calling for slower development and third-party safety audits <a href="https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development">[12]</a>. Meanwhile, a New Mexico lawyer was sanctioned for submitting fabricated case citations generated by ChatGPT <a href="https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses">[13]</a>, illustrating how unchecked model outputs can cause real-world harm. Underlying these episodes, new theoretical work ties hallucination directly to the limits of memory compression in language models <a href="https://arxiv.org/abs/2609.12111">[2]</a>.</p>
+<p>Also this week: five papers advanced methods ranging from retrieval-augmented generation to decoding strategies for language models, while three benchmarking efforts addressed evaluation costs and judge reliability, including Real-SWE&#x27;s focus on enterprise codebases. One piece covered industry and policy tensions between AI executives and lawmakers over development pace.</p>
+<p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 31 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (31)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.11955">R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration</a>
+        <p class="news-card-summary">Modular fact-checking architecture separates evidence retrieval, reasoning, verification, and confidence calibration to improve interpretability and reliability of automated fact checks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.12111">The Cost of Compression: A Rate-Distortion Limit on Factual Hallucination</a>
+        <p class="news-card-summary">Analysis of factual hallucination in language models from memory compression perspective, showing how finite storage forces approximate encoding of facts.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.12191">GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents</a>
+        <p class="news-card-summary">Protocol assesses reliability of language models as judges in evaluating task-oriented agents, identifying when LLM judging fails to rank candidates correctly.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.12243">Chopthin-Consensus Power Sampling: A Diversity-Preserving Approach to LLM Decoding</a>
+        <p class="news-card-summary">Inference-time sampling method preserves diverse reasoning paths during language model decoding to improve answer quality without post-training.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.12260">HypoKG: Evidence-Disciplined Biomedical Hypothesis Generation Beyond Endpoint Knowledge</a>
+        <p class="news-card-summary">Study evaluates whether large language models generate biomedical hypotheses through genuine scientific reasoning or pattern matching, using integrated biochemical knowledge graphs.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.12268">EAR: Entity-Aware Partitioning Approach for Retrieval-Augmented Generation Development</a>
+        <p class="news-card-summary">Entity-aware partitioning approach for retrieval-augmented generation improves performance by dividing source documents around semantic boundaries rather than fixed chunks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.12303">Breaking the Token Ceiling: Distilling Smaller, Stronger Byte Models</a>
+        <p class="news-card-summary">Techniques for distilling smaller byte-based language models from token-based models enable direct comparison of scaling behavior across different tokenization schemes.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.12353">SynthSentry: Detecting Synthetic Data Contamination in Language Model Training Data</a>
+        <p class="news-card-summary">Method for detecting synthetic or model-generated data in training corpora before training begins, addressing model collapse from recursive self-training.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.12475">Zipbench: Low-Cost Framework for Compressing Comprehensive Benchmarks of Large Language Models</a>
+        <p class="news-card-summary">Framework for compressing large language model benchmark suites to reduce redundancy and evaluation cost while maintaining assessment validity.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 13, 2026</span></div>
@@ -815,41 +864,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">September 7, 2026</span></div>
         <a class="news-card-title" href="https://jack-clark.net/2026/09/07/import-ai-472-deepminds-cheating-math-agents-populist-ai-policies-and-forethought-theorizes-a-nightwatchman">Import AI 472: DeepMind’s cheating math agents; populist AI policies; and Forethought theorizes a nightwatchman</a>
         <p class="news-card-summary">Researchers report another incident of AI agents autonomously developing their own communication protocols without explicit instructions.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.04290">Evidence Integration in Large Language Models</a>
-        <p class="news-card-summary">Research on how large language models integrate external evidence into decision-making through distributional theory of evidence combination.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.04442">GRACE: Graph-Grounded Reflective Agent Copilot Engine for Expert-in-the-Loop Knowledge Expansion</a>
-        <p class="news-card-summary">GRACE is a retrieval-augmented generation system that grounds language model outputs through graph-structured evidence and tracks uncertainty for high-stakes applications.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.04463">Shared circuits predict whether LLMs generalize across formats in arithmetic reasoning</a>
-        <p class="news-card-summary">Study showing that language models failing to generalize across arithmetic formats reveal hidden knowledge in their internal representations that does not match behavior.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.04482">Safety for Whom? Boundary-Aware Self-Distillation for Controlled LLM Safety Refusal</a>
-        <p class="news-card-summary">Method for deploying models with context-specific safety boundaries that allow different refusal patterns across applications while sharing a base model.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 7, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.04582">When Do Internal Probes Beat Reading the Answer? Miscalibrated Readouts and Behavior-Concealed Knowledge in Language Models</a>
-        <p class="news-card-summary">Study showing that internal probes can detect knowledge language models possess but fail to express in their outputs, revealing miscalibration in reasoning.</p>
       </div>
     </div>
     </div>
