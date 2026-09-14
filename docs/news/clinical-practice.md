@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88732">Machine Learning, Based Prediction of Culture-Confirmed Neonatal Sepsis in a Tertiary Neonatal Intensive Care Unit: Retrospective Cohort Study</a>
+    <p class="news-card-summary">Machine learning model trained on electronic health records predicts culture-confirmed neonatal sepsis early in a tertiary neonatal intensive care unit.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
@@ -40,6 +47,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 14, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04639-5">Prospective evidence for conversational medical AI is hard, but non-negotiable</a>
     <p class="news-card-summary">Clinical AI trust requires prospective studies in real-world settings, not benchmarks alone, with lessons often concerning human systems rather than the technology itself.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03196-y">BenchECG and xECG: a benchmark and baseline for ECG foundation models</a>
+    <p class="news-card-summary">BenchECG and xECG provide a benchmark and foundation model for electrocardiogram interpretation tasks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03246-5">A scoping review of artificial intelligence-enabled wearables for medication adherence</a>
+    <p class="news-card-summary">Scoping review examines artificial intelligence-enabled wearable devices designed to support medication adherence in patients.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03204-1">Training and validation of a 12-lead ECG-based deep-learning model for myocardial infarction subtypes</a>
+    <p class="news-card-summary">Deep learning model trained and validated on 12-lead electrocardiograms distinguishes myocardial infarction subtypes.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -97,34 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83544">Reinforcement Learning, Based Temporal Knowledge Graph Reasoning for Predicting Chronic Gastritis Diagnosis and Treatment: Development and Validation Study</a>
     <p class="news-card-summary">Researchers developed a reinforcement learning temporal knowledge graph system to predict chronic gastritis diagnosis by capturing disease progression and relationships among clinical events.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04621-1">A global digital navigator of human health for precision medicine</a>
-    <p class="news-card-summary">The International Consortium of Digital Twins in Healthcare and Medicine established infrastructure to advance medical digital twin technology for precision health applications.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e87794">AI-Based Approaches for the Identification and Quantification of Traumatic Brain Injury in Computed Tomography Imaging: Systematic Review</a>
-    <p class="news-card-summary">Systematic review of AI methods for identifying and quantifying traumatic brain injury in CT scans, addressing diagnostic delays in resource-limited settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93501">Enhancing Patients’ Informed Consent Through AI: Systematic Review</a>
-    <p class="news-card-summary">Systematic review examines AI applications for improving patient understanding and comprehension during informed consent processes for medical procedures.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.09356">Auditable Emergency Triage for Maternal and Newborn Care in India</a>
-    <p class="news-card-summary">A WhatsApp-based maternal health service deployed large language models for emergency triage classification with auditability requirements.</p>
   </div>
 </div>
 </div>

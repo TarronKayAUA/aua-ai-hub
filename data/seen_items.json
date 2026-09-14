@@ -1,179 +1,6 @@
 {
  "items": [
   {
-   "url": "https://huggingface.co/blog/nvidia/nemotron-3-embed-wins-rteb",
-   "title_hash": "003d2b4e8b24d052bccb246fa7113eaf",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": true,
-   "title": "NVIDIA Nemotron 3 Embed Ranks #1 Overall on RTEB, Advancing Agentic Retrieval",
-   "source": "Hugging Face blog",
-   "published": "2026-07-16T16:01:21+00:00",
-   "summary": "NVIDIA released Nemotron 3 Embed, an embedding model achieving top performance on the Retrieval Text Embedding Benchmark for agentic retrieval applications.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/697fa5ae089a7f9330c5078f/AaXgkciE-wvxSPrA4wg0n.png",
-   "topic": "Benchmarks and evaluation"
-  },
-  {
-   "url": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
-   "title_hash": "244338ad91ccf5563695e9410c59ddc8",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "product rebrand and naming announcement; purely administrative news without capability or deployment significance"
-  },
-  {
-   "url": "https://arstechnica.com/information-technology/2026/07/energy-ipos-surge-as-investors-hunt-for-ways-to-play-ai-boom",
-   "title_hash": "f1cfc7759fe48acafad921ef6cb014e3",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "industry and finance coverage with no relevance to medical education or AI development"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uy3a0q/kimi_k3_released_on_web_and_app",
-   "title_hash": "1085d9891ce36e5934042d034e881a0c",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "forum post lacking substantive analysis; model specs alone do not constitute news for this audience"
-  },
-  {
-   "url": "https://www.theocharis.dev/blog/llm-critics-are-right-i-use-llms-anyway",
-   "title_hash": "19bcf66e3ed6cd17614c416b8640ac1a",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "personal essay on tool adoption; carries no new information or instructive analysis for medical educators"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03014-5",
-   "title_hash": "083163115b8c79aeda7e5b62ba0b784c",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": true,
-   "title": "Public availability of evidence-based mental health apps: a systematic review and meta-analysis of self-guided apps",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-16T00:00:00+00:00",
-   "summary": "Systematic review and meta-analysis examining the public availability and effectiveness of evidence-based self-guided mental health applications.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04569-2",
-   "title_hash": "25309c2e353acaf265e74ed573f38275",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "author correction to prior article; not news and unrelated to artificial intelligence"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04581-6",
-   "title_hash": "f6e997b933664598b9567b1865d1d189",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "author correction to prior article; not news and unrelated to artificial intelligence"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04498-0",
-   "title_hash": "7d8462197573d8c5b43a5a9644c57d2c",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": true,
-   "title": "A neuroprosthesis for restoring hand movement and sensation in a person with complete tetraplegia",
-   "source": "Nature Medicine",
-   "published": "2026-07-16T00:00:00+00:00",
-   "summary": "Bidirectional neuroprosthetic system restored hand motor and sensory function in a person with complete tetraplegia using brain signal decoding and targeted neuromodulation.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=5HTqWgt6ctk",
-   "title_hash": "bf2a73a34fd0172c558e7d45728aafa5",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "news recap show; without specific episode topic, insufficient to assess substantive content"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=WMiylHobhBM",
-   "title_hash": "bf2a73a34fd0172c558e7d45728aafa5",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "news recap show; without specific episode topic, insufficient to assess substantive content"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=axOcn--n_lM",
-   "title_hash": "8c3409e870df7b2bf02a63bfeca53434",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": true,
-   "title": "The Dangerous Illusion of AI Coding Skills",
-   "source": "Two Minute Papers",
-   "published": "2026-07-16T15:39:17+00:00",
-   "summary": "Analysis of limitations in AI coding models and the gap between marketed capabilities and real-world performance in software development.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i2.ytimg.com/vi/axOcn--n_lM/hqdefault.jpg",
-   "display_title": "Limitations of AI coding models in practice"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=-56F0u0xN1A",
-   "title_hash": "9297c37904c4d767492b40318f517180",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": true,
-   "title": "Bonsai 27B Deep Dive, 1-Bit, Ternary & Full Precision Compared!",
-   "source": "Bijan Bowen",
-   "published": "2026-07-16T14:12:00+00:00",
-   "summary": "Technical comparison of Bonsai 27B model across quantization methods including 1-bit, ternary, and full precision with local setup guidance.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i2.ytimg.com/vi/-56F0u0xN1A/hqdefault.jpg",
-   "display_title": "Bonsai 27B model quantization comparison and local deployment"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=KNPjRpNtQ7s",
-   "title_hash": "8128af25983fbcddc86a4ed7555fd814",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "marketing and vendor promotion from OpenAI's own channel"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Xk-X1TI2pQ4",
-   "title_hash": "9d6eaf57d80761b8b14c90a16c06ce58",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Fu3WWi-pAv4",
-   "title_hash": "83debf38cfc7178713b9ec740677d0bb",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=1fL_lwsdMd4",
-   "title_hash": "a5581487490a8c558216d9a3d1b2b924",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=W0mU8zgop60",
-   "title_hash": "8a16d3be3fde800d079955d5cf9bd92a",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=K9_G-v8AE_s",
-   "title_hash": "b86eac873130dea1008642cc7f763f7f",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=jaYDbeQTUR0",
-   "title_hash": "cd87f74d2d373179b6bbb6b97bc4d8d0",
-   "first_seen": "2026-07-16T17:41:18.924756+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
    "url": "https://mededu.jmir.org/2026/1/e100467",
    "title_hash": "4b4ad6de573b83d1600273c3667adba1",
    "first_seen": "2026-07-16T21:17:56.513249+00:00",
@@ -31920,6 +31747,128 @@
    "url": "https://www.youtube.com/watch?v=X0UI0O8YzJM",
    "title_hash": "3e97b7fb9cc838323381385a06ee86bf",
    "first_seen": "2026-09-14T15:02:24.026460+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.theverge.com/tech/995079/president-donald-trump-calls-nvidia-ceo-jensen-huang-all-in-summit",
+   "title_hash": "b7c8fb39a9a624f97972fb330a517744",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": false,
+   "reason": "corporate stunt coverage, not substantive technology or policy news"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/musk-drops-apple-from-antitrust-suit-but-keeps-gunning-for-openai",
+   "title_hash": "14b824ada635c81a96e7922a3539b81e",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": false,
+   "reason": "legal and business gossip, not substantive technology news"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/founders-cost-cutting-obsession-drove-unitree-lead-in-cheap-humanoid-robots",
+   "title_hash": "9b88a5da203572566782f4b5cd87ffb7",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": false,
+   "reason": "corporate leadership profile, not relevant to medical education or AI capability"
+  },
+  {
+   "url": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements",
+   "title_hash": "234a6e9b426eadcff94fb5670d6ac906",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": false,
+   "reason": "vendor marketing from Apple's own product release"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed",
+   "title_hash": "45a149c45f454b64307a4ec4d37d50f3",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": true,
+   "title": "AI leaders want to hit the brakes after years of reckless speed",
+   "source": "Ars Technica AI",
+   "published": "2026-09-14T19:06:13+00:00",
+   "summary": "Industry leaders, including Anthropic's CEO, are calling for slower development pace of large language models to address safety concerns.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1482639221-500x500-1789407445.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/14/1144048/the-ai-industry-has-taken-a-doomer-turn-what-now",
+   "title_hash": "1571b800278776f6bd55effd108e9a1d",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": false,
+   "reason": "near-duplicate of candidate 5"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues",
+   "title_hash": "082cf84b88c3b0e8097fea063540423c",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": true,
+   "title": "AI agents blew the whistle on their cheating colleagues",
+   "source": "MIT Technology Review AI",
+   "published": "2026-09-14T16:00:00+00:00",
+   "summary": "Google DeepMind researchers observed AI agents detecting and reporting cheating by other agents in a math problem task, a first observation of whistleblowing behavior with implications for multi-agent alignment.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/260911_AIangentscheating.jpg?resize=1200,600",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e88732",
+   "title_hash": "ee32dca4cfa3ad25352ee2b5ef82d3ad",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": true,
+   "title": "Machine Learning, Based Prediction of Culture-Confirmed Neonatal Sepsis in a Tertiary Neonatal Intensive Care Unit: Retrospective Cohort Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-14T15:30:15+00:00",
+   "summary": "Machine learning model trained on electronic health records predicts culture-confirmed neonatal sepsis early in a tertiary neonatal intensive care unit.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03196-y",
+   "title_hash": "6f5d2782b05fcf8f152913675c3ccbed",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": true,
+   "title": "BenchECG and xECG: a benchmark and baseline for ECG foundation models",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-14T00:00:00+00:00",
+   "summary": "BenchECG and xECG provide a benchmark and foundation model for electrocardiogram interpretation tasks.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03246-5",
+   "title_hash": "88d2851f6f0877250fddf74154b6488e",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": true,
+   "title": "A scoping review of artificial intelligence-enabled wearables for medication adherence",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-14T00:00:00+00:00",
+   "summary": "Scoping review examines artificial intelligence-enabled wearable devices designed to support medication adherence in patients.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03204-1",
+   "title_hash": "2fb624d2375f9c62a6690ef419bfceb3",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
+   "kept": true,
+   "title": "Training and validation of a 12-lead ECG-based deep-learning model for myocardial infarction subtypes",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-14T00:00:00+00:00",
+   "summary": "Deep learning model trained and validated on 12-lead electrocardiograms distinguishes myocardial infarction subtypes.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=PSnJBfa183Y",
+   "title_hash": "fd34096fdaf83beb6d0658b9bc3fd01f",
+   "first_seen": "2026-09-14T20:19:17.761044+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
   }

@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -304,13 +304,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A scoping umbrella review examines how intervention fidelity and competency translate when serious games are used in pharmacy education.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42704109?fc=20260609215449&amp;ff=20260907155900&amp;v=2.20.1">Elucidating the transformative role of large language models in advancing anesthesiology education</a>
-        <p class="news-card-summary">A narrative review synthesizes evidence on large language model implementation in anesthesiology training, identifying four validated use cases for clinical education.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 7, 2026</span></div>
@@ -335,10 +328,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (7)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88732">Machine Learning, Based Prediction of Culture-Confirmed Neonatal Sepsis in a Tertiary Neonatal Intensive Care Unit: Retrospective Cohort Study</a>
+        <p class="news-card-summary">Machine learning model trained on electronic health records predicts culture-confirmed neonatal sepsis early in a tertiary neonatal intensive care unit.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
@@ -358,6 +358,27 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 14, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04639-5">Prospective evidence for conversational medical AI is hard, but non-negotiable</a>
         <p class="news-card-summary">Clinical AI trust requires prospective studies in real-world settings, not benchmarks alone, with lessons often concerning human systems rather than the technology itself.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03196-y">BenchECG and xECG: a benchmark and baseline for ECG foundation models</a>
+        <p class="news-card-summary">BenchECG and xECG provide a benchmark and foundation model for electrocardiogram interpretation tasks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03246-5">A scoping review of artificial intelligence-enabled wearables for medication adherence</a>
+        <p class="news-card-summary">Scoping review examines artificial intelligence-enabled wearable devices designed to support medication adherence in patients.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03204-1">Training and validation of a 12-lead ECG-based deep-learning model for myocardial infarction subtypes</a>
+        <p class="news-card-summary">Deep learning model trained and validated on 12-lead electrocardiograms distinguishes myocardial infarction subtypes.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -613,10 +634,26 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed">AI leaders want to hit the brakes after years of reckless speed</a>
+        <p class="news-card-summary">Industry leaders, including Anthropic&#x27;s CEO, are calling for slower development pace of large language models to address safety concerns.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1482639221-500x500-1789407445.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">September 14, 2026</span></div>
+        <a class="news-card-title" href="https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues">AI agents blew the whistle on their cheating colleagues</a>
+        <p class="news-card-summary">Google DeepMind researchers observed AI agents detecting and reporting cheating by other agents in a math problem task, a first observation of whistleblowing behavior with implications for multi-agent alignment.</p>
+      </div>
+      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/09/260911_AIangentscheating.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 14, 2026</span></div>

@@ -18,9 +18,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed">AI leaders want to hit the brakes after years of reckless speed</a>
+    <p class="news-card-summary">Industry leaders, including Anthropic&#x27;s CEO, are calling for slower development pace of large language models to address safety concerns.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1482639221-500x500-1789407445.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues">AI agents blew the whistle on their cheating colleagues</a>
+    <p class="news-card-summary">Google DeepMind researchers observed AI agents detecting and reporting cheating by other agents in a math problem task, a first observation of whistleblowing behavior with implications for multi-agent alignment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/09/260911_AIangentscheating.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 14, 2026</span></div>
@@ -115,20 +131,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Political leaders dismiss recent calls from major AI company executives to slow frontier AI development.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK466_ELECTION_2024_CVirginia_E.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 12, 2026</span></div>
-    <a class="news-card-title" href="https://withspecific.com/benchmarks/real-swe">Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases</a>
-    <p class="news-card-summary">Real-SWE benchmark evaluates AI models on private enterprise codebases rather than public datasets to measure practical software engineering capability.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development">Anthropic CEO says it’s time to pump the brakes on AI</a>
-    <p class="news-card-summary">Anthropic&#x27;s CEO proposes slowing AI development and committing to third-party safety evaluations to ensure adherence to stated safety practices.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
