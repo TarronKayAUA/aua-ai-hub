@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=ArKnoMPSO_k" target="_blank" rel="noopener" title="Cognition SWE-2 First Test, Is THIS a Better Kimi K3?">
+  <img src="https://i2.ytimg.com/vi/ArKnoMPSO_k/hqdefault.jpg" alt="Video: Cognition SWE-2 hands-on test and comparison with Kimi K3" loading="lazy">
+  <span class="video-card-title">Cognition SWE-2 hands-on test and comparison with Kimi K3</span>
+  <span class="video-card-meta">Bijan Bowen, September 14, 2026</span>
+  <span class="video-card-desc">Hands-on test of Cognition SWE-2 agent across multiple coding and software tasks, compared with Kimi K3.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=2YHa1vhnmK0" target="_blank" rel="noopener" title="Introducing the Agents API">
   <img src="https://i3.ytimg.com/vi/2YHa1vhnmK0/hqdefault.jpg" alt="Video: OpenAI Agents API announcement" loading="lazy">
   <span class="video-card-title">OpenAI Agents API announcement</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Anthropic Fable 5.1 hands-on demonstration and testing</span>
   <span class="video-card-meta">Matthew Berman, September 1, 2026</span>
   <span class="video-card-desc">Hands-on demonstration of Anthropic&#x27;s Mythos and Fable 5.1 models showing agent capabilities, benchmarks, and real-world test applications.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=9Z9rPZavjUU" target="_blank" rel="noopener" title="Claude Fable 5.1 Is INSANE, Hands-On With the BEST Model Yet!">
-  <img src="https://i2.ytimg.com/vi/9Z9rPZavjUU/hqdefault.jpg" alt="Video: Claude Fable 5.1 technical testing and benchmark review" loading="lazy">
-  <span class="video-card-title">Claude Fable 5.1 technical testing and benchmark review</span>
-  <span class="video-card-meta">Bijan Bowen, September 1, 2026</span>
-  <span class="video-card-desc">Technical hands-on testing of Claude Fable 5.1 across benchmarks, browser automation, and coding tasks with performance analysis.</span>
 </a>
 </div>
 

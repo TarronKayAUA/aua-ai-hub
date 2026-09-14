@@ -23,6 +23,29 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42733601?fc=20260609215449&amp;ff=20260914110224&amp;v=2.20.1">Evaluating the Teaching Effectiveness of Interactive Virtual Platform Based on Artificial Intelligence for Obstetrics and Gynecology Residency Training</a>
+    <p class="news-card-summary">Study showed AI-based virtual case platform improved resident competencies, teaching satisfaction, and patient satisfaction in obstetrics and gynecology training.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/09/14/nonexistent-research-ais-benefits-education">The ‘Nonexistent’ Research on AI’s Benefits for Education</a>
+    <p class="news-card-summary">Analysis documents gap between rapid college adoption of AI in education and lack of independent research on learning outcomes.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-01/Robot_teaching.jpg?itok=7bmRWyA0" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03187-z">Multi-Agent collaboration as a complementary architecture for AI-generated medical examination items</a>
+    <p class="news-card-summary">Study evaluated multi-agent collaboration architecture as complementary approach for AI-generated medical examination items.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-026-03187-z/MediaObjects/41746_2026_3187_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 13, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42732302?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1">A Pilot Study of a CustomGPT for the Royal College of Ophthalmologists Curriculum 2024</a>
     <p class="news-card-summary">A curriculum-specific GPT tool provided rapid, accurate guidance aligned with Royal College of Ophthalmologists training standards, improving efficiency and accessibility in postgraduate medical education.</p>
@@ -103,27 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1">Human Judgment and the Limits of Artificial Intelligence for Automated Rank Order Lists in Diagnostic Radiology Residency Selection</a>
     <p class="news-card-summary">Study examining whether large language models can reliably reproduce residency program rank order lists and whether automated ranking introduces systematic bias against applicant subgroups.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.10896">LLM-Anchored Paralinguistic Enrichment for Alzheimer&#x27;s Disease Detection</a>
-    <p class="news-card-summary">Speech-based Alzheimer&#x27;s disease detection integrates paralinguistic cues with linguistic features using language models for early cognitive screening applications.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e102958">Promise, Mimicry, and Surveillance: Responsibly Integrating Artificial Intelligence With Socratic Inquiry in Medical Education</a>
-    <p class="news-card-summary">A viewpoint examines the promise and risks of using large language models for Socratic dialogue in medical education, highlighting failure modes deserving greater attention than current discussion.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95772">Profiling Human-AI Regulatory Support in Technology-Enhanced Interprofessional Education Among Health Professions Students: Person-Centered Exploratory Study</a>
-    <p class="news-card-summary">Study examines how health professions students integrate self-regulated learning with AI-based support during technology-enhanced interprofessional education.</p>
   </div>
 </div>
 </div>

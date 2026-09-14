@@ -18,9 +18,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03239-4">Prospective validation of machine learning models predicting Gram negative bacteremia in ICU versus clinical scores</a>
+    <p class="news-card-summary">Prospective validation study compared machine learning models to clinical scores for predicting Gram-negative bacteremia in intensive care.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03254-5">A novel multiomics machine learning signature identifies rapid progression in clinically low risk prostate cancer</a>
+    <p class="news-card-summary">Machine learning signature integrating multiple data types identified rapid progression risk in low-risk prostate cancer patients.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04639-5">Prospective evidence for conversational medical AI is hard, but non-negotiable</a>
+    <p class="news-card-summary">Clinical AI trust requires prospective studies in real-world settings, not benchmarks alone, with lessons often concerning human systems rather than the technology itself.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 13, 2026</span></div>
@@ -104,27 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.09356">Auditable Emergency Triage for Maternal and Newborn Care in India</a>
     <p class="news-card-summary">A WhatsApp-based maternal health service deployed large language models for emergency triage classification with auditability requirements.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.09696">When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination</a>
-    <p class="news-card-summary">Study of large language model reliability as document auditors reveals batch-size effects and confident hallucination in detecting planted errors in academic papers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03228-7">Impact of LLM-supported patient education on patient perspectives and patient-reported outcomes: a mixed-methods systematic review</a>
-    <p class="news-card-summary">A systematic review finds that large language model-supported patient education affects patient perspectives and reported outcomes, with mixed results across studies.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04703-0">A clinically-oriented foundation model for intraoperative pathology</a>
-    <p class="news-card-summary">CRISP, a vision-based foundation model trained on frozen section pathology slides, supports intraoperative decision-making with superior performance to existing models and prospective validation.</p>
   </div>
 </div>
 </div>

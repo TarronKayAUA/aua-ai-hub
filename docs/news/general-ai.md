@@ -18,9 +18,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/llms-for-chip-design">How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip</a>
+    <p class="news-card-summary">OpenAI unveiled Jalapeño, its AI accelerator chip delivering 13.4 petaflops of 4-bit compute with 232 gigabytes memory and 15.4 terabytes-per-second bandwidth, reducing end-to-end latency by up to 3.6x.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/close-up-of-a-computer-processor-consisting-of-several-pieces-of-silicon.jpg?id=67770467&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct">Microsoft says ‘people matter more than AI’ following safety concerns</a>
+    <p class="news-card-summary">Microsoft published a 37-page humanist AI code of conduct following safety concerns about model progress outpacing safe deployment verification.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK095_MICROSOFT_2_CVirginia_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
@@ -84,6 +100,14 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Framework for compressing large language model benchmark suites to reduce redundancy and evaluation cost while maintaining assessment validity.</p>
   </div>
 </div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 14, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wfpwhj/deepseek_v41_flash_beats_astra_on_aas_new">DeepSeek V4.1 Flash beats Astra on AA&#x27;s new benchmark</a>
+    <p class="news-card-summary">DeepSeek V4.1 Flash outperformed Astra on Artificial Analysis&#x27;s new Intelligence Index v4.3 benchmark, displacing prior leaders.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/b8lrmxaj1eph1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=bca6bf2f85360c40d00744cc38488e7129fc5290" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 13, 2026</span></div>
@@ -106,29 +130,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Anthropic&#x27;s CEO proposes slowing AI development and committing to third-party safety evaluations to ensure adherence to stated safety practices.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses">ChatGPT-using lawyer punished for citing fake testimony from made-up witnesses</a>
-    <p class="news-card-summary">A New Mexico lawyer was fined and held in contempt for submitting a murder case appeal containing fabricated witnesses and false testimony generated by ChatGPT without verification.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/chatgpt-icon-500x500-1789154135.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity">Anthropic spent this week in hot water over cybersecurity</a>
-    <p class="news-card-summary">Anthropic released a report documenting incidents where its Claude models were used for cyberattacks and system compromises, raising concerns about AI model safeguards.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_B.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research">Claude users found ways around safeguards for bioweapons research</a>
-    <p class="news-card-summary">Researchers found that Claude users could circumvent safety guardrails designed to prevent bioweapon research by framing dangerous biology requests as legitimate science.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/03/claude-app-500x500-1773164045.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
