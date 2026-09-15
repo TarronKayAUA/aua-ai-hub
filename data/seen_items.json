@@ -1,80 +1,6 @@
 {
  "items": [
   {
-   "url": "https://medinform.jmir.org/2026/1/e82924",
-   "title_hash": "a868297c2d1300e67a37f74a6a5dc14c",
-   "first_seen": "2026-07-17T21:09:17.322907+00:00",
-   "kept": true,
-   "title": "Benchmarking Fast Healthcare Interoperability Resources, Based Analytics: Quantitative Study of RESTful Server Queries and Big Data Engines",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-17T20:45:02+00:00",
-   "summary": "Study benchmarks Fast Healthcare Interoperability Resources analytics tools to measure performance of RESTful queries and data engines for electronic health records research.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://ai.jmir.org/2026/1/e75561",
-   "title_hash": "a51ba40d88c4d834693ec7dc20be8441",
-   "first_seen": "2026-07-17T21:09:17.322907+00:00",
-   "kept": true,
-   "title": "Enhancing Large Language Models for Identifying and Prioritizing Important Medical Jargons From Electronic Health Record Notes Using Data Augmentation: Comparative Study",
-   "source": "JMIR AI",
-   "published": "2026-07-17T20:00:03+00:00",
-   "summary": "Study uses data augmentation and large language models to identify and prioritize medical terms in electronic health record notes to improve patient comprehension through OpenNotes.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://arstechnica.com/space/2026/07/google-backed-satellites-for-wildfire-detection-launch-as-smoke-chokes-us-canada",
-   "title_hash": "4be881f53a3efc7facbb73b112c5eb18",
-   "first_seen": "2026-07-17T21:09:17.322907+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
-   "title_hash": "9066f085e07151eb33ecc2b52af0a694",
-   "first_seen": "2026-07-17T21:09:17.322907+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
-   "url": "https://ai.jmir.org/2026/1/e89750",
-   "title_hash": "7b58b9f65c1f6e5d034ba99215621634",
-   "first_seen": "2026-07-17T21:09:17.322907+00:00",
-   "kept": true,
-   "title": "Current Landscape of Generative AI Use as a Search Engine Among Resident Physicians: Cross-Sectional Study",
-   "source": "JMIR AI",
-   "published": "2026-07-17T18:45:11+00:00",
-   "summary": "Cross-sectional study examines generative AI use as a search tool among resident physicians and identifies patterns of adoption and knowledge gaps in this population.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
-   "title_hash": "4a0fcba6b5b2476fe6feac7bb3e393f7",
-   "first_seen": "2026-07-17T21:09:17.322907+00:00",
-   "kept": false,
-   "reason": "drama coverage"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter",
-   "title_hash": "80a2d7beee5e32efbf474aa84d47b9e2",
-   "first_seen": "2026-07-17T21:09:17.322907+00:00",
-   "kept": false,
-   "reason": "minor tool release notes"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Is-Kimi-K3-Really-Fable-Class-e3m7gee",
-   "title_hash": "6472edeed89270c44422123c07cfc006",
-   "first_seen": "2026-07-17T21:09:17.322907+00:00",
-   "kept": false,
-   "reason": "drama coverage and speculation; the episode frames itself around hype claims rather than substantive analysis of the model's capabilities or deployment"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uza5wb/kimi_k3_is_top_of_nextjs_eval",
    "title_hash": "a2747ac6c0516e9aae1b0a61b8ac7792",
    "first_seen": "2026-07-18T03:34:17.311320+00:00",
@@ -31766,6 +31692,73 @@
    "first_seen": "2026-09-15T19:42:27.230432+00:00",
    "kept": false,
    "reason": "policy discussion without direct relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/lecture-7",
+   "title_hash": "6b652ca5aecd1fde6b1189b848df93e6",
+   "first_seen": "2026-09-15T22:54:52.407853+00:00",
+   "kept": false,
+   "reason": "stub content with no substantive information"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e94589",
+   "title_hash": "14b753c958ac8fbc0046aea44a3a12c6",
+   "first_seen": "2026-09-15T22:54:52.407853+00:00",
+   "kept": true,
+   "title": "Consumer Preferences for AI-Based Smart Home Medical Emergency Detection Among German Adults: Choice-Based Conjoint Analysis",
+   "source": "JMIR AI",
+   "published": "2026-09-15T20:45:11+00:00",
+   "summary": "Conjoint analysis study of German adult preferences for artificial intelligence-based smart home systems designed to detect medical emergencies and enable independent living.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e78523",
+   "title_hash": "18524ab31f352ea93527cd3ca894b4d7",
+   "first_seen": "2026-09-15T22:54:52.407853+00:00",
+   "kept": true,
+   "title": "Automated Renal Tumor Segmentation in Computed Tomography Images Using a Global Attention, Based DeepLabV3+ Model: Algorithm Development and Validation",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-15T20:45:11+00:00",
+   "summary": "Development and validation of a deep learning model using global attention-based DeepLabV3+ for automated segmentation of renal tumors in computed tomography scans to improve surgical planning.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e87587",
+   "title_hash": "8587e88e33e83e353293307965e42777",
+   "first_seen": "2026-09-15T22:54:52.407853+00:00",
+   "kept": true,
+   "title": "Teaching Acute Coronary Syndrome High-Risk ECG Interpretation and Clinical Decision-Making Through FOAMed Videos and Podcast Versus Print-Based Materials Among Emergency Care Providers: Randomized Controlled Mixed Methods Trial",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-15T20:30:14+00:00",
+   "summary": "Randomized trial comparing effectiveness of Free Open Access Medical Education videos and podcasts versus print materials for teaching high-risk acute coronary syndrome electrocardiogram interpretation to emergency care providers.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+   "title_hash": "4f1cf00babf2665ae0f7cd091fc3eae1",
+   "first_seen": "2026-09-15T22:54:52.407853+00:00",
+   "kept": false,
+   "reason": "forum discussion link with minimal substantive summary; requires source inspection to assess merit"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wh2cga/got_it_unopened_off_craigslist_for_4k_excited_to",
+   "title_hash": "6f9c8c6f88e23cadb56089ef708ee8c9",
+   "first_seen": "2026-09-15T22:54:52.407853+00:00",
+   "kept": false,
+   "reason": "personal anecdote about hardware purchase; no news or educational content"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Trump-Rails-Against-AI-Slowdown-Hoax-e3ot4h6",
+   "title_hash": "04982254d94b4b26068e3d423465b6fa",
+   "first_seen": "2026-09-15T22:54:52.407853+00:00",
+   "kept": false,
+   "reason": "daily news recap with no substantive analysis of AI policy or governance for medical educators"
   }
  ],
  "digests": [

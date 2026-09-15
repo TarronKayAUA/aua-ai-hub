@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87587">Teaching Acute Coronary Syndrome High-Risk ECG Interpretation and Clinical Decision-Making Through FOAMed Videos and Podcast Versus Print-Based Materials Among Emergency Care Providers: Randomized Controlled Mixed Methods Trial</a>
+        <p class="news-card-summary">Randomized trial comparing effectiveness of Free Open Access Medical Education videos and podcasts versus print materials for teaching high-risk acute coronary syndrome electrocardiogram interpretation to emergency care providers.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
@@ -311,27 +318,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">International working group published recommendations for a global framework on artificial intelligence education in medical schools and training programs.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e97608">Role-Differentiated AI Competencies and Curriculum Implications for Health Professions Education: Qualitative Study</a>
-        <p class="news-card-summary">Qualitative study identifies role-specific AI competencies health professionals need, filling a gap between general AI literacy and domain-specific clinical practice requirements.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42709992?fc=20260609215449&amp;ff=20260908184234&amp;v=2.20.1">Sentence-Level Provenance for AI Medical Record Summarization in a Click-to-Inspect Interface: Formative Usability Evaluation</a>
-        <p class="news-card-summary">Usability study shows that sentence-level provenance in AI-generated medical summaries enables clinicians to verify individual claims interactively, reducing verification burden in high-stakes contexts.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42709552?fc=20260609215449&amp;ff=20260908184234&amp;v=2.20.1">Stigma-sensitive communication in medical students: an AI-supported simulation of a patient living with HIV</a>
-        <p class="news-card-summary">Study examines medical students&#x27; stigma-sensitive communication skills during simulated patient interviews with ChatGPT-4o acting as a standardized patient living with HIV.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -342,10 +328,24 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 49 items"
+??? abstract "Show the 50 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (16)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (16)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e94589">Consumer Preferences for AI-Based Smart Home Medical Emergency Detection Among German Adults: Choice-Based Conjoint Analysis</a>
+        <p class="news-card-summary">Conjoint analysis study of German adult preferences for artificial intelligence-based smart home systems designed to detect medical emergencies and enable independent living.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78523">Automated Renal Tumor Segmentation in Computed Tomography Images Using a Global Attention, Based DeepLabV3+ Model: Algorithm Development and Validation</a>
+        <p class="news-card-summary">Development and validation of a deep learning model using global attention-based DeepLabV3+ for automated segmentation of renal tumors in computed tomography scans to improve surgical planning.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 15, 2026</span></div>
@@ -688,13 +688,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Researchers develop and evaluate EviNurse, a domain-specific large language model designed to support evidence-based nursing practice.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88725">The Promise of Ambient AI Technology in Medical Education: Opportunities and Guardrails</a>
-        <p class="news-card-summary">Ambient AI tools that transcribe patient-provider conversations into clinical notes reduce documentation burden but raise questions about implications for medical education and clinical training.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -705,9 +698,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 39 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -995,14 +988,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">DeepSeek released Flash 4.1, an intermediate model version featuring native multimodal support, improved capabilities, faster inference, and lower costs.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/ca91w26riaoh1.jpg?width=140&amp;height=69&amp;auto=webp&amp;s=cb300f82ce5e0cc3bad3ca1e2b9427b9aa8b8434" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Quanta Magazine AI</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908">AI Has Solved One of Math’s $1 Million Millennium Prize Problems</a>
-        <p class="news-card-summary">OpenAI mathematicians demonstrated that Navier-Stokes equations, which model fluid dynamics, can sometimes develop singularities, addressing a century-old mathematical question.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.quantamagazine.org/wp-content/uploads/2026/09/AI-Navier-Stokes-Lede-cr-iStock-Default.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 
