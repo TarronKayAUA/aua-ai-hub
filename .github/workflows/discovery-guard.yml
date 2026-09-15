@@ -60,12 +60,20 @@ jobs:
           # and only fails when the API call itself fails. Suppressing that
           # would turn an unreadable issue list into a confident "nothing
           # filed", which is the exact silence this guard exists to break.
-          found=$(gh issue list --state all --limit 300 --json title \
+          # --repo is explicit on every gh call here because this job has no
+          # actions/checkout step, unlike the sibling health workflows which
+          # need the repository to run their checker. Without a checkout gh
+          # cannot infer the repo from git and exits 1 ("not a git
+          # repository"), which is how the first dispatch of this workflow
+          # failed. Staying checkout-free keeps the guard to a few seconds.
+          found=$(gh issue list --repo "$GITHUB_REPOSITORY" \
+            --state all --limit 300 --json title \
             --jq "[.[] | select(.title | startswith(\"Tool discovery ${month}\"))] | length")
           # Any open guard issue from a previous month. Its title deliberately
           # does NOT start with "Tool discovery", so the guard can never count
           # its own alarm as the artifact it is looking for.
-          existing=$(gh issue list --state open --limit 100 --json title,number \
+          existing=$(gh issue list --repo "$GITHUB_REPOSITORY" \
+            --state open --limit 100 --json title,number \
             --jq '[.[] | select(.title | startswith("Discovery survey did not file"))] | .[0].number // empty')
           # Unknown is not zero. Guessing either way is worse than stopping:
           # guessing "none" files a false alarm, and a guard that cries wolf
@@ -126,15 +134,17 @@ jobs:
               echo "the 17th or the 24th, or immediately if you dispatch it by hand."
             } > body.md
             if [[ -n "$EXISTING" ]]; then
-              gh issue edit "$EXISTING" --title "$title" --body-file body.md
-              gh issue comment "$EXISTING" \
+              gh issue edit --repo "$GITHUB_REPOSITORY" "$EXISTING" \
+                --title "$title" --body-file body.md
+              gh issue comment --repo "$GITHUB_REPOSITORY" "$EXISTING" \
                 --body "Still no survey issue for ${MONTH} as of $(date -u +%F)."
             else
-              gh issue create --title "$title" --body-file body.md \
+              gh issue create --repo "$GITHUB_REPOSITORY" \
+                --title "$title" --body-file body.md \
                 --assignee TarronKayAUA
             fi
           elif [[ -n "$EXISTING" ]]; then
-            gh issue close "$EXISTING" \
+            gh issue close --repo "$GITHUB_REPOSITORY" "$EXISTING" \
               --comment "A survey issue for ${MONTH} now exists. Closing."
           else
             echo "Survey issue for ${MONTH} found; nothing to manage."
