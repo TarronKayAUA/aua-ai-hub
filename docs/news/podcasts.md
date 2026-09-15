@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Even-Other-AI-Labs-Are-Rallying-Around-Anthropics-Slowdown-Proposal-e3orsav" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Even Other AI Labs Are Rallying Around Anthropic’s Slowdown Proposal" loading="lazy">
+  <span class="video-card-title">Even Other AI Labs Are Rallying Around Anthropic’s Slowdown Proposal</span>
+  <span class="video-card-meta">The AI Daily Brief, September 14, 2026</span>
+  <span class="video-card-desc">Leaders at competing AI labs publicly support Anthropic&#x27;s proposal for slowed AI development, with analysis of safety arguments and industry incentives.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/is-ai-in-education-reaching-an-inflection-point" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Is AI in Education Reaching an Inflection Point?" loading="lazy">
   <span class="video-card-title">Is AI in Education Reaching an Inflection Point?</span>

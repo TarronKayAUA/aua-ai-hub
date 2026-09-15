@@ -1,82 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/17/spot-birds-not-golf",
-   "title_hash": "df2f0ce9198afee6441ab71cfd1dc69d",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/16/firefox-in-webassembly",
-   "title_hash": "b4f086985076c5a8b142d6c61b3877ec",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": false,
-   "reason": "minor tool release notes"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uygxt3/anthropic_and_openai_dont_have_secret_sauce",
-   "title_hash": "56a1fb70542a0068686400bf99d2a3f5",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": false,
-   "reason": "rumor and speculation without substantive content"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uydii0/kimi_k3_beats_claude_fable_and_gpt_56_sol_in",
-   "title_hash": "1a506d9c6819491ea25eadd70fb45868",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": false,
-   "reason": "duplicate of kept candidate; forum discussion without authoritative analysis"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uycepz/kimi_k3_achieves_3rd_place_on_artificalanalysis",
-   "title_hash": "ace2f8b5938300ca203754f3b4ab40b2",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": false,
-   "reason": "duplicate of kept candidate; forum discussion without authoritative analysis"
-  },
-  {
-   "url": "https://spectrum.ieee.org/invisible-spinning-drone",
-   "title_hash": "66eef69d0bf9db1dfec6cb538b35d034",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/16/mermaid-ascii",
-   "title_hash": "1a6a6b0da5f10cce4bd278adc2eea358",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": false,
-   "reason": "minor tool release notes"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42461982?fc=20260609215449&ff=20260716234018&v=2.20.0",
-   "title_hash": "63b27ecd20b2ef54bdf69c1756144732",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": true,
-   "title": "AI-Enhanced Predictive Analytics to Optimize Tele-Oncology Implementation in Rural Settings: Scoping Review",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-16T10:00:00+00:00",
-   "summary": "A scoping review finds insufficient evidence for AI-enhanced predictive analytics in rural tele-oncology, highlighting underrepresentation of underserved populations in digital health research.",
-   "category": "medical_education",
-   "score": 2.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=OHVu3Y4B3RI",
-   "title_hash": "2317a7656f9d6f244c9070357428cfab",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-New-Enterprise-Battle-Over-Who-Owns-the-Model-e3m65k0",
-   "title_hash": "9c5218cf2b441fe992f47164b0727335",
-   "first_seen": "2026-07-17T03:40:17.932462+00:00",
-   "kept": false,
-   "reason": "daily news show recap with no standout episode substance; speculative framing about enterprise battles rather than substantive coverage of a model release"
-  },
-  {
    "url": "https://arxiv.org/abs/2607.14099",
    "title_hash": "9d59e69920a2de2b3127aacc78651c2f",
    "first_seen": "2026-07-17T06:28:49.072125+00:00",
@@ -31756,6 +31680,277 @@
    "score": 4.0,
    "thumbnail": "https://i1.ytimg.com/vi/86wroj3Aq3I/hqdefault.jpg",
    "display_title": "Generative AI for inpatient documentation summaries"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13151",
+   "title_hash": "b4667de9e3d46b457776e9b40dfb6da8",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, speech recognition optimization not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13152",
+   "title_hash": "0f44155dd4ae79cd9d166edd1fb8ea27",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, physics reasoning not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13154",
+   "title_hash": "047753acbc9606ad01ba96e42f9b23dc",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization, prompt compression not significant for medical education audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13158",
+   "title_hash": "70bba8f90da6ff0d3375d2b613b69570",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, scientific exam VQA not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13238",
+   "title_hash": "75267263da7fb54c1bb2d39d3cd40677",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": true,
+   "title": "Clinical Reasoning Under a Partially Observed Objective in Cone Beam CT Report Generation",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-15T04:00:00+00:00",
+   "summary": "Researchers evaluated cone beam computed tomography report generation using a composite scoring objective weighted toward language model factual entailment, highlighting the challenge of evaluation design for clinical radiology outputs.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13389",
+   "title_hash": "f2088f081c6330e78e59b6d94bbaa193",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, network protocol reasoning not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13413",
+   "title_hash": "72f7c61a683fd1bf0d285716bc1475c9",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, multilingual speech corpus not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13445",
+   "title_hash": "a64954c348fcc96865d20a7be3d2b565",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, speech LLM technical issue not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13454",
+   "title_hash": "dfccdab45d3be097dc0a1a8cb6cade57",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": true,
+   "title": "Hindsight Bias in Clinical Temporal Reasoning: How Future Data Exposure Affects Large Language Model Judgment",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-15T04:00:00+00:00",
+   "summary": "Researchers introduced a benchmark showing that language models evaluated on retrospective clinical records may reward use of future information rather than prospective reasoning under uncertainty present at decision time.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13481",
+   "title_hash": "461803d0aeb8bb40e47eee6f63d39b0a",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": true,
+   "title": "A Hybrid Hierarchical 1D-CNN-BiLSTM Framework for Extractive Summarization of Biomedical and Clinical Text",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-15T04:00:00+00:00",
+   "summary": "A hybrid CNN-LSTM framework performs extractive summarization of biomedical and clinical text to avoid hallucinations in abstractive summaries, addressing safety concerns for medical documentation.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13520",
+   "title_hash": "8fbd36fff97fdaa4f6f17d96bbb418bb",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow technical methods paper, evaluation framework not significant for medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13534",
+   "title_hash": "9206cdc72c9dba5e43d285a02b253e76",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow technical safety research, harmfulness layer dynamics not broad significance for audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13556",
+   "title_hash": "0e926214b6440ebfd1ae2c85b1b9d039",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": true,
+   "title": "Domain-Specific Jargon in Large Language Models: A Comparative Analysis between General-Purpose and Specialist Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-15T04:00:00+00:00",
+   "summary": "Researchers compared how general-purpose and specialist language models encode domain-specific medical terminology through two novel medical jargon evaluation benchmarks.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13581",
+   "title_hash": "6ff0cbfb30598f24ed65aed17be001de",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": true,
+   "title": "Toward Complete Hospital Discharge Summarization with Abstract Meaning Representation",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-15T04:00:00+00:00",
+   "summary": "Researchers addressed automatic hospital discharge summary generation using abstract meaning representation to reduce hallucinations, a critical safety concern for clinical documentation.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13582",
+   "title_hash": "312a0c05c647fa01e8d5f45987c4167c",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": true,
+   "title": "Same Patient, Different Order: Action-Level Reliability of Clinical LLM Agents Under Repeated Runs",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-15T04:00:00+00:00",
+   "summary": "A clinical agent benchmark study found that identical inputs produced materially different clinical actions across repeated runs, exposing unreliability in how agents order tests, request medications, and place referrals.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13611",
+   "title_hash": "d0beffd82eccbe0c2d7193d637219a53",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, machine translation evaluation not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13615",
+   "title_hash": "31171e06d58996ad14da4b9f3b6bfb36",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, low-resource creole translation not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13682",
+   "title_hash": "2d51b0032e02e5424f749b4df97e0958",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow technical optimization, layer-skipping inference efficiency not significant for medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13685",
+   "title_hash": "c56f396f38ea5ae5a8d19f1f6fe8c572",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow linguistic research, negation understanding not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13709",
+   "title_hash": "2efc1d2a13286fd443b0987a2d962c6a",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow technical methods paper, gradient geometry for editing not significant for audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13721",
+   "title_hash": "203cc25f2b72e71935086c9ec5bf1eea",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, Hindi quantum NLP not medical or educational focus"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13734",
+   "title_hash": "33c3140c38c598d46d63fe1e436c5b72",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": true,
+   "title": "PolicyMem: Geometric Policy Memory for LLM Governance",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-15T04:00:00+00:00",
+   "summary": "Researchers introduced PolicyMem, a geometric policy memory framework that decouples language model governance from specific trained models and taxonomies, offering flexible safeguarding for high-stakes deployments.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13737",
+   "title_hash": "5e7f9cc64de224084d5df5bc460b76ce",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": true,
+   "title": "ForeSight: Enhancing Risk Monitoring via Early Safety Signal Distillation",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-15T04:00:00+00:00",
+   "summary": "ForeSight distills early safety signals from language model internals to detect harmful content generation before output, improving on surface-token and output-logit detection methods.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13745",
+   "title_hash": "73d0ce4437d6757cb895a48d800cfc17",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow technical analysis, vision-language model chart reading internals not significant for medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13768",
+   "title_hash": "cc2ace4346a54172efabbdc9df2dc103",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "narrow domain application, multi-hop question answering not medical or educational focus"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/995186/is-big-techs-ai-slowdown-a-safety-pact-or-a-cartel",
+   "title_hash": "1bc0443283501bf0f89c977b130310d9",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "policy speculation without concrete development, primarily industry gossip"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wgeo55/nvidias_rtx_5090_vanishes_from_online_retail_in",
+   "title_hash": "337b44141041df75ea6166bd8b3c31cf",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, GPU availability pricing not relevant to medical education or AI in medicine"
+  },
+  {
+   "url": "https://entelligence.ai/blogs/gpt-5.6-luna-vs-gpt-6-astra-is-a-1.20-model-good-enough-for-code-review",
+   "title_hash": "c7fe1bc58dfd88023a9e2b0d5998db1e",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, code review model comparison not medical or educational focus"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wg82rd/for_the_gpu_poor_k2_horizon_7b_ranks_between_qwen",
+   "title_hash": "8bcbc570eed45e7490c600c2d9a65740",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "minor release notes, community discussion of a new model without broader significance"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Even-Other-AI-Labs-Are-Rallying-Around-Anthropics-Slowdown-Proposal-e3orsav",
+   "title_hash": "83589effbdd831fe15e95f25130b4fa2",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": true,
+   "title": "Even Other AI Labs Are Rallying Around Anthropic’s Slowdown Proposal",
+   "source": "The AI Daily Brief",
+   "published": "2026-09-14T23:22:34+00:00",
+   "summary": "Leaders at competing AI labs publicly support Anthropic's proposal for slowed AI development, with analysis of safety arguments and industry incentives.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://pdst.fm/e/traffic.megaphone.fm/AMMTO5225146122.mp3",
+   "title_hash": "7e6ad33f398f2318aa72cffae7f15159",
+   "first_seen": "2026-09-15T04:57:50.831444+00:00",
+   "kept": false,
+   "reason": "vendor marketing for a corporate acquisition and product deployment"
   }
  ],
  "digests": [
@@ -31934,19 +32129,19 @@
  "last_digest_at": "2026-09-11T04:44:45.324469+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A comparative exam study found ChatGPT 5.4 accurate on foot and ankle surgery questions but prone to fabricated citations, underscoring the need for reference verification before language models serve as primary study aids <a href=\"https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1\">[2]</a>. A related trial found LLM-generated synthetic clinical cases performed comparably to real records on immediate tests but did not establish non-inferiority <a href=\"https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1\">[4]</a>. Concerns about automation extend to high-stakes decisions and dialogue: one study warns that language models cannot reliably reproduce residency rank order lists without risking bias against applicant subgroups <a href=\"https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1\">[12]</a>, while a related viewpoint flags similar risks in using AI for Socratic teaching methods <a href=\"https://mededu.jmir.org/2026/1/e102958\">[14]</a>.\n\nAlso this week: seven items address teaching and curriculum design, from AI-enhanced cardiac surgery training to dental education frameworks balancing skill development with technology use. Four entries benchmark exam performance, two examine student attitudes toward AI-based counseling, and two more explore assessment and feedback approaches such as profiling human-AI regulatory support in interprofessional education.",
-   "hash": "7357f58ec93fd7d7",
-   "date": "September 14, 2026"
+   "text": "A new benchmark finds that language models tested on retrospective clinical records may be rewarded for using information unavailable at decision time, raising doubts about their prospective reasoning <a href=\"https://arxiv.org/abs/2609.13454\">[1]</a>. That concern echoes a broader gap: despite rapid college adoption of AI tools, independent research on actual learning outcomes remains scarce <a href=\"https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/09/14/nonexistent-research-ais-benefits-education\">[4]</a>. Reliability issues extend to exams as well, with one model scoring well on foot and ankle surgery questions while fabricating citations more often than others tested <a href=\"https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1\">[7]</a>. A randomized trial comparing LLM-generated synthetic clinical cases with real records found the synthetic data performed comparably, though non-inferiority was not established <a href=\"https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1\">[9]</a>.\n\nAlso this week: seven items address teaching and curriculum, four cover exams and benchmarks, and two each examine assessment and feedback and attitudes toward AI adoption. Highlights include a pilot CustomGPT built for the Royal College of Ophthalmologists&#x27; 2024 curriculum and an eight-week hospital program that trained staff on model context protocols and retrieval-augmented generation.",
+   "hash": "12a89a73e7fdc425",
+   "date": "September 15, 2026"
   },
   "clinical_practice": {
-   "text": "A large international study found that a multimodal explainable AI model outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in practice <a href=\"https://www.nature.com/articles/s41591-026-04488-2\">[2]</a>. In pathology, a vision-based foundation model trained on frozen section slides showed strong performance in intraoperative decision-making with prospective validation <a href=\"https://www.nature.com/articles/s41591-026-04703-0\">[15]</a>, while a separate deep learning approach predicted gene rearrangements in large B-cell lymphoma directly from histopathology images, potentially shortening time to diagnosis <a href=\"https://www.nature.com/articles/s41746-026-03238-5\">[4]</a>. A randomized trial also found a human-AI single-session exposure intervention for academic anxiety to be safe, effective, and acceptable <a href=\"https://www.nature.com/articles/s41746-026-03199-9\">[3]</a>, as researchers separately quantified privacy leakage risks in federated learning systems trained on radiology reports <a href=\"https://medinform.jmir.org/2026/1/e88390\">[6]</a>.\n\nAlso this week: four items examine safety and evaluation, including anonymization-related data quality loss and confident hallucination in AI auditing, and four cover imaging and diagnostics, from a systematic review of CT-based traumatic brain injury detection to thyroid carcinoma lymph node staging. Two patient-facing tools address informed consent and AI-supported patient education.",
-   "hash": "494926f86178dbdc",
-   "date": "September 14, 2026"
+   "text": "The most notable signal this cycle concerns reliability: a benchmark study found that clinical LLM agents given identical inputs produced different orders, medications, and referrals across repeated runs <a href=\"https://arxiv.org/abs/2609.13582\">[4]</a>, reinforcing a broader argument that trust in conversational medical AI depends on prospective, real-world validation rather than benchmark performance alone <a href=\"https://www.nature.com/articles/s41591-026-04639-5\">[9]</a>. In oncology decision support, a multimodal explainable AI tool outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in an international study <a href=\"https://www.nature.com/articles/s41591-026-04488-2\">[14]</a>. Separately, a crossover study of locally deployed large language models showed pharmacist-reviewed prescription safety benefits while preserving data privacy <a href=\"https://medinform.jmir.org/2026/1/e97520\">[5]</a>.\n\nAlso this week: the section includes five safety and evaluation studies, four on clinical decision support, and three on imaging and diagnostics, plus two documentation papers addressing hallucination risk in discharge summaries and biomedical text. One patient-facing study evaluates a human-AI exposure intervention for academic anxiety, with imaging work spanning ECG foundation models to prostate cancer risk signatures.",
+   "hash": "70d8ddc6897c8bd5",
+   "date": "September 15, 2026"
   },
   "general_ai": {
-   "text": "Anthropic&#x27;s own safety practices came under scrutiny after a report detailed Claude models used in cyberattacks <a href=\"https://www.theverge.com/ai-artificial-intelligence/994064/anthropic-spent-this-week-in-hot-water-over-cybersecurity\">[14]</a>, compounding separate findings that users bypassed safeguards to pursue bioweapons-related research <a href=\"https://arstechnica.com/ai/2026/09/claude-users-found-ways-around-safeguards-for-bioweapons-research\">[15]</a>. The company&#x27;s CEO responded by calling for slower development and third-party safety audits <a href=\"https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development\">[12]</a>. Meanwhile, a New Mexico lawyer was sanctioned for submitting fabricated case citations generated by ChatGPT <a href=\"https://arstechnica.com/tech-policy/2026/09/chatgpt-using-lawyer-punished-for-citing-fake-testimony-from-made-up-witnesses\">[13]</a>, illustrating how unchecked model outputs can cause real-world harm. Underlying these episodes, new theoretical work ties hallucination directly to the limits of memory compression in language models <a href=\"https://arxiv.org/abs/2609.12111\">[2]</a>.\n\nAlso this week: five papers advanced methods ranging from retrieval-augmented generation to decoding strategies for language models, while three benchmarking efforts addressed evaluation costs and judge reliability, including Real-SWE&#x27;s focus on enterprise codebases. One piece covered industry and policy tensions between AI executives and lawmakers over development pace.",
-   "hash": "a3d8eb64a2bdb6a7",
-   "date": "September 14, 2026"
+   "text": "Anthropic&#x27;s CEO joined other industry leaders in urging a slower pace for large language model development, citing safety concerns that have outpaced deployment safeguards <a href=\"https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed\">[3]</a>. That call gained concrete weight from a related finding: Google DeepMind researchers observed AI agents independently detecting and reporting cheating by other agents during a math task, marking a notable instance of whistleblowing behavior with implications for multi-agent alignment <a href=\"https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues\">[4]</a>. Microsoft followed with a 37-page code of conduct asserting that people matter more than AI as models advance faster than safety verification allows <a href=\"https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct\">[6]</a>. Meanwhile, OpenAI&#x27;s newly detailed Jalapeño accelerator chip illustrates how quickly the compute powering these systems continues to advance <a href=\"https://spectrum.ieee.org/llms-for-chip-design\">[5]</a>.\n\nAlso this week: the section carries seven items on safety and reliability, five on research and methods, and one each on new models and benchmarking. Additional work covers retrieval partitioning for generation systems, byte-level model distillation, and biomedical hypothesis generation, while GAUGE examines when language-model judges misjudge task-oriented agents.",
+   "hash": "25d29c414109ff9e",
+   "date": "September 15, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -32053,5 +32248,5 @@
    "url": "https://opencv26.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-14"
+ "section_briefs_refreshed": "2026-09-15"
 }

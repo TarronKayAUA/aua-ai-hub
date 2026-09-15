@@ -13,14 +13,28 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A comparative exam study found ChatGPT 5.4 accurate on foot and ankle surgery questions but prone to fabricated citations, underscoring the need for reference verification before language models serve as primary study aids <a href="https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1">[2]</a>. A related trial found LLM-generated synthetic clinical cases performed comparably to real records on immediate tests but did not establish non-inferiority <a href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[4]</a>. Concerns about automation extend to high-stakes decisions and dialogue: one study warns that language models cannot reliably reproduce residency rank order lists without risking bias against applicant subgroups <a href="https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1">[12]</a>, while a related viewpoint flags similar risks in using AI for Socratic teaching methods <a href="https://mededu.jmir.org/2026/1/e102958">[14]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum design, from AI-enhanced cardiac surgery training to dental education frameworks balancing skill development with technology use. Four entries benchmark exam performance, two examine student attitudes toward AI-based counseling, and two more explore assessment and feedback approaches such as profiling human-AI regulatory support in interprofessional education.</p>
-<p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the items below.</p>
+<p>A new benchmark finds that language models tested on retrospective clinical records may be rewarded for using information unavailable at decision time, raising doubts about their prospective reasoning <a href="https://arxiv.org/abs/2609.13454">[1]</a>. That concern echoes a broader gap: despite rapid college adoption of AI tools, independent research on actual learning outcomes remains scarce <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/09/14/nonexistent-research-ais-benefits-education">[4]</a>. Reliability issues extend to exams as well, with one model scoring well on foot and ankle surgery questions while fabricating citations more often than others tested <a href="https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1">[7]</a>. A randomized trial comparing LLM-generated synthetic clinical cases with real records found the synthetic data performed comparably, though non-inferiority was not established <a href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[9]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum, four cover exams and benchmarks, and two each examine assessment and feedback and attitudes toward AI adoption. Highlights include a pilot CustomGPT built for the Royal College of Ophthalmologists&#x27; 2024 curriculum and an eight-week hospital program that trained staff on model context protocols and retrieval-augmented generation.</p>
+<p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.13454">Hindsight Bias in Clinical Temporal Reasoning: How Future Data Exposure Affects Large Language Model Judgment</a>
+    <p class="news-card-summary">Researchers introduced a benchmark showing that language models evaluated on retrospective clinical records may reward use of future information rather than prospective reasoning under uncertainty present at decision time.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.13556">Domain-Specific Jargon in Large Language Models: A Comparative Analysis between General-Purpose and Specialist Models</a>
+    <p class="news-card-summary">Researchers compared how general-purpose and specialist language models encode domain-specific medical terminology through two novel medical jargon evaluation benchmarks.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 14, 2026</span></div>
@@ -112,20 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42722929?fc=20260609215449&amp;ff=20260911085044&amp;v=2.20.1">Can Artificial Intelligence-Based Counseling Improve Iranian Students&#x27; Spiritual Well-Being?</a>
     <p class="news-card-summary">A quasi-experimental study compared AI-based counseling with face-to-face counseling for spiritual well-being in 105 Iranian medical students.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42725275?fc=20260609215449&amp;ff=20260911183704&amp;v=2.20.1">Artificial Intelligence-Assisted Versus Traditional Learning and Long-Term Knowledge Retention Among Undergraduate Medical Students: A Sequential, Explanatory Mixed-Methods Study</a>
-    <p class="news-card-summary">A mixed-methods study compared long-term knowledge retention between undergraduate medical students learning with AI-assisted personalized explanations versus traditional instruction.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42727622?fc=20260609215449&amp;ff=20260912003917&amp;v=2.20.1">Human Judgment and the Limits of Artificial Intelligence for Automated Rank Order Lists in Diagnostic Radiology Residency Selection</a>
-    <p class="news-card-summary">Study examining whether large language models can reliably reproduce residency program rank order lists and whether automated ranking introduces systematic bias against applicant subgroups.</p>
   </div>
 </div>
 </div>

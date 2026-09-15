@@ -13,14 +13,42 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A large international study found that a multimodal explainable AI model outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in practice <a href="https://www.nature.com/articles/s41591-026-04488-2">[2]</a>. In pathology, a vision-based foundation model trained on frozen section slides showed strong performance in intraoperative decision-making with prospective validation <a href="https://www.nature.com/articles/s41591-026-04703-0">[15]</a>, while a separate deep learning approach predicted gene rearrangements in large B-cell lymphoma directly from histopathology images, potentially shortening time to diagnosis <a href="https://www.nature.com/articles/s41746-026-03238-5">[4]</a>. A randomized trial also found a human-AI single-session exposure intervention for academic anxiety to be safe, effective, and acceptable <a href="https://www.nature.com/articles/s41746-026-03199-9">[3]</a>, as researchers separately quantified privacy leakage risks in federated learning systems trained on radiology reports <a href="https://medinform.jmir.org/2026/1/e88390">[6]</a>.</p>
-<p>Also this week: four items examine safety and evaluation, including anonymization-related data quality loss and confident hallucination in AI auditing, and four cover imaging and diagnostics, from a systematic review of CT-based traumatic brain injury detection to thyroid carcinoma lymph node staging. Two patient-facing tools address informed consent and AI-supported patient education.</p>
-<p class="section-brief-date">The picture as of September 14, 2026; numbered links go to the items below.</p>
+<p>The most notable signal this cycle concerns reliability: a benchmark study found that clinical LLM agents given identical inputs produced different orders, medications, and referrals across repeated runs <a href="https://arxiv.org/abs/2609.13582">[4]</a>, reinforcing a broader argument that trust in conversational medical AI depends on prospective, real-world validation rather than benchmark performance alone <a href="https://www.nature.com/articles/s41591-026-04639-5">[9]</a>. In oncology decision support, a multimodal explainable AI tool outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in an international study <a href="https://www.nature.com/articles/s41591-026-04488-2">[14]</a>. Separately, a crossover study of locally deployed large language models showed pharmacist-reviewed prescription safety benefits while preserving data privacy <a href="https://medinform.jmir.org/2026/1/e97520">[5]</a>.</p>
+<p>Also this week: the section includes five safety and evaluation studies, four on clinical decision support, and three on imaging and diagnostics, plus two documentation papers addressing hallucination risk in discharge summaries and biomedical text. One patient-facing study evaluates a human-AI exposure intervention for academic anxiety, with imaging work spanning ECG foundation models to prostate cancer risk signatures.</p>
+<p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.13238">Clinical Reasoning Under a Partially Observed Objective in Cone Beam CT Report Generation</a>
+    <p class="news-card-summary">Researchers evaluated cone beam computed tomography report generation using a composite scoring objective weighted toward language model factual entailment, highlighting the challenge of evaluation design for clinical radiology outputs.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.13481">A Hybrid Hierarchical 1D-CNN-BiLSTM Framework for Extractive Summarization of Biomedical and Clinical Text</a>
+    <p class="news-card-summary">A hybrid CNN-LSTM framework performs extractive summarization of biomedical and clinical text to avoid hallucinations in abstractive summaries, addressing safety concerns for medical documentation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.13581">Toward Complete Hospital Discharge Summarization with Abstract Meaning Representation</a>
+    <p class="news-card-summary">Researchers addressed automatic hospital discharge summary generation using abstract meaning representation to reduce hallucinations, a critical safety concern for clinical documentation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.13582">Same Patient, Different Order: Action-Level Reliability of Clinical LLM Agents Under Repeated Runs</a>
+    <p class="news-card-summary">A clinical agent benchmark study found that identical inputs produced materially different clinical actions across repeated runs, exposing unreliability in how agents order tests, request medications, and place referrals.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 14, 2026</span></div>
@@ -97,34 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 12, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03199-9">Safety, efficacy and acceptability of human-GenAI single-session exposure-based intervention for academic anxiety: randomized controlled trials</a>
     <p class="news-card-summary">Randomized controlled trial of human-AI single-session exposure therapy for academic anxiety shows safety, efficacy, and acceptability.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03238-5">Deep learning predicts gene rearrangements from histopathology in large B-cell lymphoma</a>
-    <p class="news-card-summary">Deep learning model predicts gene rearrangements directly from histopathology images in large B-cell lymphoma, potentially enabling faster diagnosis without additional molecular testing.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03203-2">Deep learning combined habitat radiomics analysis of central lymph node metastasis in papillary thyroid carcinoma</a>
-    <p class="news-card-summary">Deep learning combined with radiomics analysis predicts central lymph node metastasis in papillary thyroid carcinoma from imaging, supporting clinical staging decisions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88390">Privacy Leakage in Federated Learning in Radiology Reports: Comparative Evaluation of Tokenizer and Batch-Size Privacy Risks</a>
-    <p class="news-card-summary">Researchers quantified privacy risks from gradient inversion attacks on federated learning systems trained on radiology reports, evaluating how tokenizer design and batch size affect information leakage.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e97661">Quantifying the Impact of Anonymization-Induced Clinical Data Quality Loss: Methodological Quantitative Case Study Using Primary Diagnosis Codes and Hospital Length of Stay</a>
-    <p class="news-card-summary">A quantitative study measures how k-anonymity privacy protection affects the quality and analytical value of electronic health record data for secondary research use.</p>
   </div>
 </div>
 </div>
