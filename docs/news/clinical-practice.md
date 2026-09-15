@@ -21,6 +21,14 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care">STAT+: Medicare’s AI prior authorization pilot was rushed and full of problems, new documents reveal</a>
+    <p class="news-card-summary">Medicare&#x27;s AI prior authorization pilot launched with insufficient testing, resulting in delayed patient care in some cases.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_1144154192-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
@@ -47,6 +55,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.13582">Same Patient, Different Order: Action-Level Reliability of Clinical LLM Agents Under Repeated Runs</a>
     <p class="news-card-summary">A clinical agent benchmark study found that identical inputs produced materially different clinical actions across repeated runs, exposing unreliability in how agents order tests, request medications, and place referrals.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04609-x">On-premise medical AI agents for reliable clinical decision-making</a>
+    <p class="news-card-summary">On-premise deployment of autonomous clinical AI agents improves decision-making through built-in reliability metrics and selective autonomy for diagnostic tasks.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -112,19 +127,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Integrating multiple multimodal, patient-level biomarkers improved prediction of cancer immunotherapy response, though generalizability across populations remains a challenge.</p>
   </div>
   <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04587-0/MediaObjects/41591_2026_4587_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04488-2">Clinical usability of an explainable AI decision support tool and evaluation of multimodal models in NSCLC</a>
-    <p class="news-card-summary">A multimodal explainable AI model outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in a large international real-world study.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 12, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03199-9">Safety, efficacy and acceptability of human-GenAI single-session exposure-based intervention for academic anxiety: randomized controlled trials</a>
-    <p class="news-card-summary">Randomized controlled trial of human-AI single-session exposure therapy for academic anxiety shows safety, efficacy, and acceptability.</p>
-  </div>
 </div>
 </div>

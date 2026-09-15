@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">Early evidence for a multi-agent AI simulator for clinical reasoning practice: performance, consistency, and challenges</a>
+    <p class="news-card-summary">Multi-agent language model simulations support deliberate practice in clinical reasoning when designed for role stability, contextual fidelity, and learner interpretation of information.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 11, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e84266">Performance of Cloud-Hosted Large Vision-Language Models on the Japanese National Examination for Clinical Laboratory Technicians: Comparative Benchmarking Study</a>
     <p class="news-card-summary">Cloud-hosted vision-language models were benchmarked on Japan&#x27;s National Examination for Clinical Laboratory Technicians, comparing their performance on multimodal test questions requiring both text and image reasoning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42722929?fc=20260609215449&amp;ff=20260911085044&amp;v=2.20.1">Can Artificial Intelligence-Based Counseling Improve Iranian Students&#x27; Spiritual Well-Being?</a>
-    <p class="news-card-summary">A quasi-experimental study compared AI-based counseling with face-to-face counseling for spiritual well-being in 105 Iranian medical students.</p>
   </div>
 </div>
 </div>

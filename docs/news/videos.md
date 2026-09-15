@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=YoEWjZSwoys" target="_blank" rel="noopener" title="Claude Is Now Leaving Invisible Fingerprints In Its Text">
+  <img src="https://i2.ytimg.com/vi/YoEWjZSwoys/hqdefault.jpg" alt="Video: Statistical fingerprints in Claude model outputs" loading="lazy">
+  <span class="video-card-title">Statistical fingerprints in Claude model outputs</span>
+  <span class="video-card-meta">Two Minute Papers, September 15, 2026</span>
+  <span class="video-card-desc">Claude model analysis reveals that the model leaves detectable statistical patterns in its output text, with implications for authenticity and detection.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=ArKnoMPSO_k" target="_blank" rel="noopener" title="Cognition SWE-2 First Test, Is THIS a Better Kimi K3?">
   <img src="https://i2.ytimg.com/vi/ArKnoMPSO_k/hqdefault.jpg" alt="Video: Cognition SWE-2 hands-on test and comparison with Kimi K3" loading="lazy">
   <span class="video-card-title">Cognition SWE-2 hands-on test and comparison with Kimi K3</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">OpenAI Astra model cybersecurity risk assessment</span>
   <span class="video-card-meta">Wes Roth, September 2, 2026</span>
   <span class="video-card-desc">Report on OpenAI&#x27;s assessment of its upcoming Astra model against its Preparedness Framework cybersecurity thresholds and implications for model safety classification.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=epogfA_0R4E" target="_blank" rel="noopener" title="Anthropic went CRAZY (Mythos/Fable 5.1)">
-  <img src="https://i2.ytimg.com/vi/epogfA_0R4E/hqdefault.jpg" alt="Video: Anthropic Fable 5.1 hands-on demonstration and testing" loading="lazy">
-  <span class="video-card-title">Anthropic Fable 5.1 hands-on demonstration and testing</span>
-  <span class="video-card-meta">Matthew Berman, September 1, 2026</span>
-  <span class="video-card-desc">Hands-on demonstration of Anthropic&#x27;s Mythos and Fable 5.1 models showing agent capabilities, benchmarks, and real-world test applications.</span>
 </a>
 </div>
 

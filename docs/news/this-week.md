@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 43 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">Early evidence for a multi-agent AI simulator for clinical reasoning practice: performance, consistency, and challenges</a>
+        <p class="news-card-summary">Multi-agent language model simulations support deliberate practice in clinical reasoning when designed for role stability, contextual fidelity, and learner interpretation of information.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
@@ -328,10 +335,18 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (16)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (17)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care">STAT+: Medicare’s AI prior authorization pilot was rushed and full of problems, new documents reveal</a>
+        <p class="news-card-summary">Medicare&#x27;s AI prior authorization pilot launched with insufficient testing, resulting in delayed patient care in some cases.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_1144154192-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
@@ -358,6 +373,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2609.13582">Same Patient, Different Order: Action-Level Reliability of Clinical LLM Agents Under Repeated Runs</a>
         <p class="news-card-summary">A clinical agent benchmark study found that identical inputs produced materially different clinical actions across repeated runs, exposing unreliability in how agents order tests, request medications, and place referrals.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04609-x">On-premise medical AI agents for reliable clinical decision-making</a>
+        <p class="news-card-summary">On-premise deployment of autonomous clinical AI agents improves decision-making through built-in reliability metrics and selective autonomy for diagnostic tasks.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -645,13 +667,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A semisupervised deep learning approach automatically extracts postoperative cancer recurrence and metastasis data from unstructured computed tomography reports despite linguistic variability.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03201-4">AI-derived carotid plaque vulnerability from B-mode ultrasound for cerebrovascular risk stratification: a multicenter cohort study</a>
-        <p class="news-card-summary">Multicenter study validates AI-derived carotid plaque vulnerability assessment from ultrasound as a tool for cerebrovascular risk stratification.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
@@ -671,8 +686,16 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 42 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (16)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models">Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost</a>
+        <p class="news-card-summary">Open-weight models now match frontier commercial models within four months at one-fifth the cost, according to Mozilla&#x27;s analysis.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/China-US-AI-race-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
@@ -984,23 +1007,21 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://www.quantamagazine.org/wp-content/uploads/2026/09/AI-Navier-Stokes-Lede-cr-iStock-Default.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 7, 2026</span></div>
-        <a class="news-card-title" href="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses">AI models ran real businesses: They sent $12,431 in fake invoices, lost $3,200</a>
-        <p class="news-card-summary">Autonomous AI agents operating businesses made costly errors including generating fake invoices and losing money, highlighting real-world reliability challenges.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.bottlenecklabs.com/blog/benchmarking-7-autonomous-businesses/og.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 20 videos"
+??? abstract "Show the 21 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=YoEWjZSwoys" target="_blank" rel="noopener" title="Claude Is Now Leaving Invisible Fingerprints In Its Text">
+      <img src="https://i2.ytimg.com/vi/YoEWjZSwoys/hqdefault.jpg" alt="Video: Statistical fingerprints in Claude model outputs" loading="lazy">
+      <span class="video-card-title">Statistical fingerprints in Claude model outputs</span>
+      <span class="video-card-meta">Two Minute Papers, September 15, 2026</span>
+      <span class="video-card-desc">Claude model analysis reveals that the model leaves detectable statistical patterns in its output text, with implications for authenticity and detection.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=86wroj3Aq3I" target="_blank" rel="noopener" title="MedAI #164: Generative AI for inpatient documentation summaries | Steve G. Peters">
       <img src="https://i1.ytimg.com/vi/86wroj3Aq3I/hqdefault.jpg" alt="Video: Generative AI for inpatient documentation summaries" loading="lazy">
       <span class="video-card-title">Generative AI for inpatient documentation summaries</span>
