@@ -621,15 +621,40 @@
   last_reviewed: 2026-06-12
   blurb: Image generation service known for strong aesthetics and stylization, used through its website or Discord. No free tier.
 
-- name: GPT Image
+# Renamed from "GPT Image" 2026-09-15 (content watch issue #49). OpenAI draws
+# the line itself in the Images 2.5 announcement: "people create more than 3
+# billion images across ChatGPT Images and the GPT-Image models in the API".
+# ChatGPT Images is the feature a reader uses; GPT-Image is the API model
+# family (ids gpt-image-2.5-sunburst, gpt-image-2.5-flare). This directory
+# lists features, not model ids. Same shape as the NotebookLM rename recorded
+# in SPEC, and the same remedy: point verify_url at the help centre.
+- name: ChatGPT Images
   vendor: OpenAI
   category: image_generation
   url: https://chatgpt.com
+  # The entry's url was https://chatgpt.com alone, byte-identical to the
+  # ChatGPT assistant entry above, so the watch could only ever fetch a login
+  # shell: 534 characters of app chrome, nothing about image generation. That
+  # is why #49 returned blurb_accurate=unknown, and it is also why the two
+  # earlier "verified unchanged" passes (issues #25 and #39) were false: the
+  # page never carried evidence either way. The help centre article is
+  # fetchable and descriptive (5,000 chars through the pipeline's own
+  # strip_page, checked 2026-09-15); the bare article id also resolves, so a
+  # slug change will not break it.
+  verify_url: https://help.openai.com/en/articles/11084440-images-in-chatgpt
   cost: freemium
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
-  last_reviewed: 2026-08-11
-  blurb: OpenAI's image generation inside ChatGPT, strong at following detailed instructions and rendering readable text, which suits diagrams and slide artwork.
+  last_reviewed: 2026-09-15
+  # Blurb rewritten the same day. The previous one claimed the tool was
+  # "strong at following detailed instructions" and at "rendering readable
+  # text", and that it "suits diagrams and slide artwork". The first is
+  # sourceable only to OpenAI's comparatives against its own prior version,
+  # which is the vendor editorialising the style rule forbids; the second
+  # could not be found on any current OpenAI page and duplicated the Ideogram
+  # entry's stated differentiator four cards away; the third appears nowhere.
+  # Every clause below is on the linked help centre page.
+  blurb: Image generation and editing inside ChatGPT. Creates images from a description and edits existing ones, including adding text, changing details, and making a background transparent. Available on every tier, with slower and more limited generation on the free plan.
 
 - name: Adobe Firefly
   vendor: Adobe
