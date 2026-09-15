@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92727">Real-World Use of Controlled Terminologies, Ontologies, and Vocabularies for Evidence Generation Across a Large International Observational Network: Challenges and Lessons Learned From a Mixed Method Study</a>
+    <p class="news-card-summary">Study identifies challenges in applying controlled terminologies and ontologies for real-world evidence generation across federated international observational data sources.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 15, 2026</span></div>
@@ -64,6 +71,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">On-premise deployment of autonomous clinical AI agents improves decision-making through built-in reliability metrics and selective autonomy for diagnostic tasks.</p>
   </div>
 </div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03192-2">Auditing what was said: the epistemic promise and limits of ambient AI in clinical practice</a>
+    <p class="news-card-summary">Study examines ambient AI for clinical auditing and documentation, exploring its epistemic promises and practical limitations in clinical settings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03122-2">Multi-institutional pan-cancer validation of pathology foundation models for whole-slide image retrieval using TCGA</a>
+    <p class="news-card-summary">Pathology foundation models validated across multiple institutions for whole-slide image retrieval using The Cancer Genome Atlas data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03207-y">Automated pancreatic cancer pathology image segmentation using deep learning to quantify lymphocyte stroma ratio</a>
+    <p class="news-card-summary">Deep learning approach automates pancreatic cancer pathology image segmentation to quantify lymphocyte-stroma ratio for prognostic assessment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 14, 2026</span></div>
@@ -98,34 +126,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04639-5">Prospective evidence for conversational medical AI is hard, but non-negotiable</a>
     <p class="news-card-summary">Clinical AI trust requires prospective studies in real-world settings, not benchmarks alone, with lessons often concerning human systems rather than the technology itself.</p>
   </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03196-y">BenchECG and xECG: a benchmark and baseline for ECG foundation models</a>
-    <p class="news-card-summary">BenchECG and xECG provide a benchmark and foundation model for electrocardiogram interpretation tasks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03246-5">A scoping review of artificial intelligence-enabled wearables for medication adherence</a>
-    <p class="news-card-summary">Scoping review examines artificial intelligence-enabled wearable devices designed to support medication adherence in patients.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03204-1">Training and validation of a 12-lead ECG-based deep-learning model for myocardial infarction subtypes</a>
-    <p class="news-card-summary">Deep learning model trained and validated on 12-lead electrocardiograms distinguishes myocardial infarction subtypes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 13, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04587-0">A multimodal murmuration for immunotherapy</a>
-    <p class="news-card-summary">Integrating multiple multimodal, patient-level biomarkers improved prediction of cancer immunotherapy response, though generalizability across populations remains a challenge.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04587-0/MediaObjects/41591_2026_4587_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

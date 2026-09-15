@@ -1,168 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/17/kimi-k3",
-   "title_hash": "bd5fe8c2a1b3671b8bc99077911002cb",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": false,
-   "reason": "anecdotal commentary on a model's personality; no substantive news or capability information"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42464729?fc=20260609215449&ff=20260717100456&v=2.20.0",
-   "title_hash": "332b715b119ffc06ff7690ac348c6d5c",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": false,
-   "reason": "medical education pedagogy without AI focus; OBE curriculum design is off-topic"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42464292?fc=20260609215449&ff=20260717100456&v=2.20.0",
-   "title_hash": "5a7fda52092423fa1831da63d0b545d4",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": true,
-   "title": "Effectiveness of an AI-augmented teacher feedback model in improving medical students' clinical documentation skills: a retrospective cohort study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-17T10:00:00+00:00",
-   "summary": "A generative AI scoring tool based on large language models provided feedback on clinical documentation that aligned with expert ratings and showed preliminary benefits over traditional teacher feedback alone.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42464241?fc=20260609215449&ff=20260717100456&v=2.20.0",
-   "title_hash": "016cc5e259f5969a71ebe90f2326593e",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": true,
-   "title": "Enhancing ultrasound training for breast cancer diagnosis: a controlled study of AI-assisted learning",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-17T10:00:00+00:00",
-   "summary": "An AI-assisted platform integrated into ultrasound residency training showed potential to improve residents' diagnostic accuracy for breast cancer detection in an exploratory study.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Simulation and skills"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uytamy/chinese_president_xi_jinping_speaks_at_world_ai",
-   "title_hash": "fd8fa06742a120358a463516623e56ae",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": false,
-   "reason": "forum discussion of policy statement; no substantive technical or policy news"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02965-z",
-   "title_hash": "f6afad882f8ab5685f879341ace0019d",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": false,
-   "reason": "disease-specific digital health tool without AI focus; not about artificial intelligence"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03041-2",
-   "title_hash": "aecf361c43650ad9e99fdfff343bf485",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": true,
-   "title": "Artificial intelligence needs better health systems to reduce inequalities",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-17T00:00:00+00:00",
-   "summary": "Commentary on how AI deployment in healthcare requires stronger health systems to avoid widening existing health inequalities.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/d41591-026-00037-z",
-   "title_hash": "9034b4f5c1835a23d2c4bfa146e2e103",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": true,
-   "title": "An AI co-scientist to accelerate biomedical research",
-   "source": "Nature Medicine",
-   "published": "2026-07-17T00:00:00+00:00",
-   "summary": "Biomni, an AI agent system, performs diverse biomedical research tasks and could serve as a research partner for scientists with further development.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://media.nature.com/lw1200/magazine-assets/d41591-026-00037-z/d41591-026-00037-z_52987696.jpg",
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uydbmc/kimi_k3_shows_openweight_models_are_about_to",
-   "title_hash": "85fa61888cfa6f995566759c23ad26fe",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": false,
-   "reason": "forum speculation about model capabilities; speculation-driven commentary without substantive benchmark data"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=tyAO2zR_qZI",
-   "title_hash": "84a23e04ff29d6fa43fdfc11fe392254",
-   "first_seen": "2026-07-17T14:04:56.166022+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/apple-google-must-stop-profiting-off-ai-nudify-apps-san-francisco-ag-says",
-   "title_hash": "c0471938e34bf9ed3e1c3578c1317541",
-   "first_seen": "2026-07-17T17:32:02.326421+00:00",
-   "kept": false,
-   "reason": "regulatory action on commercial nudity-synthesis apps, unrelated to medical education or clinical practice"
-  },
-  {
-   "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
-   "title_hash": "7d228d4bd68a71db90dc54cf498e7a33",
-   "first_seen": "2026-07-17T17:32:02.326421+00:00",
-   "kept": false,
-   "reason": "vendor marketing from Hugging Face and NVIDIA about fine-tuning infrastructure"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e91071",
-   "title_hash": "cf4949d198f933c9c96090c76114ef04",
-   "first_seen": "2026-07-17T17:32:02.326421+00:00",
-   "kept": false,
-   "reason": "gender differences in self-assessment are not specific to artificial intelligence in medical education"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42465979?fc=20260609215449&ff=20260717133202&v=2.20.0",
-   "title_hash": "8113cc8fc6a743d33a330c1a528f39f7",
-   "first_seen": "2026-07-17T17:32:02.326421+00:00",
-   "kept": true,
-   "title": "Knowledge, Attitude, and Perception of Artificial Intelligence in Healthcare Among Postgraduate Residents: A Cross-sectional Survey",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-17T10:00:00+00:00",
-   "summary": "A survey of postgraduate residents found significant gaps in artificial intelligence knowledge despite support for AI integration, highlighting the need for structured AI training in medical education.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42465092?fc=20260609215449&ff=20260717133202&v=2.20.0",
-   "title_hash": "87cbae83eb188c7faeb85536e1b1d106",
-   "first_seen": "2026-07-17T17:32:02.326421+00:00",
-   "kept": true,
-   "title": "Construction of a virtual simulation teaching system for medical imaging education: a single-center experience",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-17T10:00:00+00:00",
-   "summary": "Virtual simulation systems integrating computer graphics, dynamic modeling, and artificial intelligence have become a core teaching methodology in medical imaging education.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Simulation and skills"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uylutc/anyone_else_completely_tuning_out_these_massive",
-   "title_hash": "bab9c7fe9196b3dafb923d86a9fd1229",
-   "first_seen": "2026-07-17T17:32:02.326421+00:00",
-   "kept": false,
-   "reason": "forum discussion about model size versus practical local deployment, not significant news"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03020-7",
-   "title_hash": "1d83af27bb5a674bdc0dc0cc3b683cb4",
-   "first_seen": "2026-07-17T17:32:02.326421+00:00",
-   "kept": true,
-   "title": "Deep learning, based automatic measurement of spinal alignment and implant detection in scoliosis radiographs",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-17T00:00:00+00:00",
-   "summary": "Deep learning automatically measures spinal alignment and detects implants in scoliosis radiographs, supporting diagnostic accuracy.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
    "url": "https://medinform.jmir.org/2026/1/e82924",
    "title_hash": "a868297c2d1300e67a37f74a6a5dc14c",
    "first_seen": "2026-07-17T21:09:17.322907+00:00",
@@ -31746,6 +31584,188 @@
    "first_seen": "2026-09-15T13:35:49.893134+00:00",
    "kept": false,
    "reason": "vendor marketing from IBM's own channel"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e92727",
+   "title_hash": "e747dacd9b3f8f9f7ccd58c19929f48c",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": true,
+   "title": "Real-World Use of Controlled Terminologies, Ontologies, and Vocabularies for Evidence Generation Across a Large International Observational Network: Challenges and Lessons Learned From a Mixed Method Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-15T19:30:14+00:00",
+   "summary": "Study identifies challenges in applying controlled terminologies and ontologies for real-world evidence generation across federated international observational data sources.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/agilitys-new-humanoid-robot-will-stop-squat-to-avoid-harming-human-coworkers",
+   "title_hash": "e71196b1de2ead1fe966b39382a7ad5e",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general robotics without medical or educational relevance"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all",
+   "title_hash": "63284384a6cca278a74e1eb78abe1a45",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "speculation and drama coverage without substantive analysis; AI extinction fears without grounding for medical educators"
+  },
+  {
+   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+   "title_hash": "659162815342099d0099530fceefff89",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "incomplete candidate; no summary provided; cannot evaluate"
+  },
+  {
+   "url": "https://www.theverge.com/tech/995453/meta-one-subscriptions-ai",
+   "title_hash": "5084375a4c1c50f043d2d8ac7a253c5a",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "marketing from the company's own channel; product pricing announcement"
+  },
+  {
+   "url": "https://www.theverge.com/tech/995365/simplisafe-video-doorbell-series-2-virtual-guard-price-specs",
+   "title_hash": "b534ae3deb4eb6a357a76c4715423a0e",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "marketing from the company's own channel; product announcement"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wgwe4n/crofai_cheapest_inference_provider_in_the_world",
+   "title_hash": "f0592b4fbfe60717706a76e98bbebdfc",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "community drama and fraud reporting; off-topic for medical audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42742562?fc=20260609215449&ff=20260915154227&v=2.20.1",
+   "title_hash": "e6a16a7d641ddb79b63c795827e1f58e",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": true,
+   "title": "The use of artificial intelligence, virtual, augmented, and mixed reality, and 3D technologies in the treatment of urolithiasis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-15T10:00:00+00:00",
+   "summary": "Integration of AI with virtual, augmented, and mixed reality for urolithiasis treatment improves procedure planning and training, though clinical validation in complex cases remains needed.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&ff=20260915154227&v=2.20.1",
+   "title_hash": "8fb0065684cdfb05262ca9b529d4ab35",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": true,
+   "title": "Attitudes Toward Large Language Models in Health Care and Preferences for Their Adoption and Oversight Among Health Care Professionals: Cross-Sectional Survey",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-15T10:00:00+00:00",
+   "summary": "Survey of healthcare professionals found early adoption of large language models for lower-risk tasks alongside significant concerns about safety, bias, and governance.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42741389?fc=20260609215449&ff=20260915154227&v=2.20.1",
+   "title_hash": "e877effd33800a22839de52076f7cbed",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": true,
+   "title": "Automated Assessment of OCT Angiography Image Quality Using the Artificial Intelligence Ready and Exploratory Atlas for Diabetes Insights Data Set",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-15T10:00:00+00:00",
+   "summary": "Deep learning models trained on the AI-READI dataset achieved high performance in assessing optical coherence tomography angiography image quality and generalized well across institutions and equipment.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://tintotint.eu/whacky-corner/f-droid_slop",
+   "title_hash": "0ad1cf327d4caa21f404f92e125b0c68",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "community meta-discussion without substantive news or analysis for medical educators"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03192-2",
+   "title_hash": "e13a5c48777e597111706c6be2d2f4e0",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": true,
+   "title": "Auditing what was said: the epistemic promise and limits of ambient AI in clinical practice",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-15T00:00:00+00:00",
+   "summary": "Study examines ambient AI for clinical auditing and documentation, exploring its epistemic promises and practical limitations in clinical settings.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03122-2",
+   "title_hash": "56eb09a916be5e59de5c8c732e17fff9",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": true,
+   "title": "Multi-institutional pan-cancer validation of pathology foundation models for whole-slide image retrieval using TCGA",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-15T00:00:00+00:00",
+   "summary": "Pathology foundation models validated across multiple institutions for whole-slide image retrieval using The Cancer Genome Atlas data.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03207-y",
+   "title_hash": "0dbfa0f75fb8e5a529669e9f15063cd6",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": true,
+   "title": "Automated pancreatic cancer pathology image segmentation using deep learning to quantify lymphocyte stroma ratio",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-15T00:00:00+00:00",
+   "summary": "Deep learning approach automates pancreatic cancer pathology image segmentation to quantify lymphocyte-stroma ratio for prognostic assessment.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03233-w",
+   "title_hash": "954564c5b640e5cc0beaf70d84842efe",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; cognitive training study without AI focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03184-2",
+   "title_hash": "21da1794c2d46d6d69d50d8cc80817a2",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; wearable device adherence without AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04610-4",
+   "title_hash": "f06741f08fb757723157c0f29bb2bd77",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; drug development without AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04559-4",
+   "title_hash": "eb081ef09575dfd14a11d6cec3037658",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; drug development without AI relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=_6PR25pkHKI",
+   "title_hash": "33df38c4f767a5a77bb18f9005bfe511",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "promotional content with sponsorship integration"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/the-balance-of-ai-power-anton-leicht-on-politics-pacing-deals-and-muddling-through-well",
+   "title_hash": "3810ae85a10b834b4b694f4bc90f354b",
+   "first_seen": "2026-09-15T19:42:27.230432+00:00",
+   "kept": false,
+   "reason": "policy discussion without direct relevance to medical education or clinical practice"
   }
  ],
  "digests": [

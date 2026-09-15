@@ -18,15 +18,36 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 43 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (9)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">Early evidence for a multi-agent AI simulator for clinical reasoning practice: performance, consistency, and challenges</a>
         <p class="news-card-summary">Multi-agent language model simulations support deliberate practice in clinical reasoning when designed for role stability, contextual fidelity, and learner interpretation of information.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42742562?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">The use of artificial intelligence, virtual, augmented, and mixed reality, and 3D technologies in the treatment of urolithiasis</a>
+        <p class="news-card-summary">Integration of AI with virtual, augmented, and mixed reality for urolithiasis treatment improves procedure planning and training, though clinical validation in complex cases remains needed.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">Attitudes Toward Large Language Models in Health Care and Preferences for Their Adoption and Oversight Among Health Care Professionals: Cross-Sectional Survey</a>
+        <p class="news-card-summary">Survey of healthcare professionals found early adoption of large language models for lower-risk tasks alongside significant concerns about safety, bias, and governance.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42741389?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">Automated Assessment of OCT Angiography Image Quality Using the Artificial Intelligence Ready and Exploratory Atlas for Diabetes Insights Data Set</a>
+        <p class="news-card-summary">Deep learning models trained on the AI-READI dataset achieved high performance in assessing optical coherence tomography angiography image quality and generalized well across institutions and equipment.</p>
       </div>
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
@@ -300,13 +321,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42708899?fc=20260609215449&amp;ff=20260908152637&amp;v=2.20.1">Developing validity arguments for artificial intelligence-based assessment: Balancing affordances and threats</a>
-        <p class="news-card-summary">Validity for AI-based assessment requires ongoing governance as a sociotechnical system, with explicit validity arguments, auditability, multi-site evaluation, and continuous monitoring of consequences.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42709992?fc=20260609215449&amp;ff=20260908184234&amp;v=2.20.1">Sentence-Level Provenance for AI Medical Record Summarization in a Click-to-Inspect Interface: Formative Usability Evaluation</a>
         <p class="news-card-summary">Usability study shows that sentence-level provenance in AI-generated medical summaries enables clinicians to verify individual claims interactively, reducing verification burden in high-stakes contexts.</p>
       </div>
@@ -316,13 +330,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 8, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42709552?fc=20260609215449&amp;ff=20260908184234&amp;v=2.20.1">Stigma-sensitive communication in medical students: an AI-supported simulation of a patient living with HIV</a>
         <p class="news-card-summary">Study examines medical students&#x27; stigma-sensitive communication skills during simulated patient interviews with ChatGPT-4o acting as a standardized patient living with HIV.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03182-4">Intervention fidelity and competency translation of serious games in pharmacy education: a scoping umbrella review</a>
-        <p class="news-card-summary">A scoping umbrella review examines how intervention fidelity and competency translate when serious games are used in pharmacy education.</p>
       </div>
     </div>
     </div>
@@ -335,10 +342,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 49 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (17)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (16)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (6)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92727">Real-World Use of Controlled Terminologies, Ontologies, and Vocabularies for Evidence Generation Across a Large International Observational Network: Challenges and Lessons Learned From a Mixed Method Study</a>
+        <p class="news-card-summary">Study identifies challenges in applying controlled terminologies and ontologies for real-world evidence generation across federated international observational data sources.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 15, 2026</span></div>
@@ -380,6 +394,27 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 15, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04609-x">On-premise medical AI agents for reliable clinical decision-making</a>
         <p class="news-card-summary">On-premise deployment of autonomous clinical AI agents improves decision-making through built-in reliability metrics and selective autonomy for diagnostic tasks.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03192-2">Auditing what was said: the epistemic promise and limits of ambient AI in clinical practice</a>
+        <p class="news-card-summary">Study examines ambient AI for clinical auditing and documentation, exploring its epistemic promises and practical limitations in clinical settings.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03122-2">Multi-institutional pan-cancer validation of pathology foundation models for whole-slide image retrieval using TCGA</a>
+        <p class="news-card-summary">Pathology foundation models validated across multiple institutions for whole-slide image retrieval using The Cancer Genome Atlas data.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 15, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03207-y">Automated pancreatic cancer pathology image segmentation using deep learning to quantify lymphocyte stroma ratio</a>
+        <p class="news-card-summary">Deep learning approach automates pancreatic cancer pathology image segmentation to quantify lymphocyte-stroma ratio for prognostic assessment.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -660,20 +695,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Ambient AI tools that transcribe patient-provider conversations into clinical notes reduce documentation burden but raise questions about implications for medical education and clinical training.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92937">Automated Extraction of Postoperative Cancer Recurrence and Metastasis From Computed Tomography (CT) Reports: Semisupervised Deep Learning Study</a>
-        <p class="news-card-summary">A semisupervised deep learning approach automatically extracts postoperative cancer recurrence and metastasis data from unstructured computed tomography reports despite linguistic variability.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03223-y">Identifying potential nonpulmonary vein triggers in persistent atrial fibrillation using digital twins and deep learning</a>
-        <p class="news-card-summary">Deep learning applied to digital twins identifies potential triggers for persistent atrial fibrillation outside the pulmonary veins.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -684,9 +705,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (13)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (14)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -967,30 +988,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A technical article from Magic.dev presents methods for compute-efficient pretraining and scaling of large language models to trillion-parameter scales.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/ai-code-review-software-engineers">AI Slop Is Changing How Engineers Review Code</a>
-        <p class="news-card-summary">AI code generation tools now produce thousands of lines rapidly, but reviewers must identify hidden vulnerabilities and faulty logic that surface testing may miss.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/illustration-of-workers-overwhelmed-by-a-giant-black-ai-barrel-spilling-yellow-liquid-one-sits-at-a-computer-while-the-other-us.jpg?id=67739596&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/alphagenome-atlas">Google DeepMind Maps 9 Billion Possible DNA Variants</a>
-        <p class="news-card-summary">Google DeepMind has mapped nine billion possible DNA variants to understand how non-coding DNA regulates gene activity and affects biological function.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/glowing-blue-digital-dna-helix-with-data-patterns.jpg?id=67719885&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/991180/google-launches-alpha-genome-atlas">Google’s Atlas of the human genome could pave the way for new treatments</a>
-        <p class="news-card-summary">Google DeepMind&#x27;s AlphaGenome Atlas uses artificial intelligence to create a predictive map of DNA variants, potentially accelerating research into disease mechanisms and treatments.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/alphagenome-atlas-cover__background.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 8, 2026</span></div>
@@ -1013,7 +1010,7 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 21 videos"
+??? abstract "Show the 20 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=YoEWjZSwoys" target="_blank" rel="noopener" title="Claude Is Now Leaving Invisible Fingerprints In Its Text">
@@ -1075,12 +1072,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">DeepSeek V4.1 Flash performance and capability testing</span>
       <span class="video-card-meta">WorldofAI, September 9, 2026</span>
       <span class="video-card-desc">Performance testing of DeepSeek V4.1 Flash model with evaluation of speed, cost efficiency, and capability across benchmark tasks.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=U0aToL5C-bQ" target="_blank" rel="noopener" title="AlphaGenome Atlas: Understanding the human genome">
-      <img src="https://i2.ytimg.com/vi/U0aToL5C-bQ/hqdefault.jpg" alt="Video: AlphaGenome Atlas: predicting effects of human genome variants" loading="lazy">
-      <span class="video-card-title">AlphaGenome Atlas: predicting effects of human genome variants</span>
-      <span class="video-card-meta">Google DeepMind, September 8, 2026</span>
-      <span class="video-card-desc">AlphaGenome predicts molecular effects of all nine billion single-nucleotide variants in the human genome, enabling systematic analysis of genetic variation.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener" title="AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26">
       <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for publication versus improved patient outcomes" loading="lazy">

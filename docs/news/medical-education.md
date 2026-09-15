@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="simulation-and-skills">
@@ -26,6 +26,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">Early evidence for a multi-agent AI simulator for clinical reasoning practice: performance, consistency, and challenges</a>
     <p class="news-card-summary">Multi-agent language model simulations support deliberate practice in clinical reasoning when designed for role stability, contextual fidelity, and learner interpretation of information.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42742562?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">The use of artificial intelligence, virtual, augmented, and mixed reality, and 3D technologies in the treatment of urolithiasis</a>
+    <p class="news-card-summary">Integration of AI with virtual, augmented, and mixed reality for urolithiasis treatment improves procedure planning and training, though clinical validation in complex cases remains needed.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">Attitudes Toward Large Language Models in Health Care and Preferences for Their Adoption and Oversight Among Health Care Professionals: Cross-Sectional Survey</a>
+    <p class="news-card-summary">Survey of healthcare professionals found early adoption of large language models for lower-risk tasks alongside significant concerns about safety, bias, and governance.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42741389?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">Automated Assessment of OCT Angiography Image Quality Using the Artificial Intelligence Ready and Exploratory Atlas for Diabetes Insights Data Set</a>
+    <p class="news-card-summary">Deep learning models trained on the AI-READI dataset achieved high performance in assessing optical coherence tomography angiography image quality and generalized well across institutions and equipment.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -105,27 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42728652?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">AI In Dental Education: Upskilled, Differently Skilled, or Never Skilled?</a>
     <p class="news-card-summary">Framework for integrating AI into dental education while protecting foundational competence through staged implementation and AI-independent milestones.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42728650?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">A Reflection on the Populist Challenge for Oral Health Professions Education</a>
-    <p class="news-card-summary">Reflection on challenges to oral health education including predatory publishing, industry influence, and generative AI, emphasizing need for responsible technology governance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e97822">Teaching Model Context Protocol, Retrieval-Augmented Generation, and AI Agents to a Multidisciplinary Hospital Workforce: Single-Group Pre-Post Survey Study</a>
-    <p class="news-card-summary">An eight-week training program taught hospital staff model context protocols, retrieval-augmented generation, and AI agents; study reports design, implementation, and lessons learned.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 11, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e84266">Performance of Cloud-Hosted Large Vision-Language Models on the Japanese National Examination for Clinical Laboratory Technicians: Comparative Benchmarking Study</a>
-    <p class="news-card-summary">Cloud-hosted vision-language models were benchmarked on Japan&#x27;s National Examination for Clinical Laboratory Technicians, comparing their performance on multimodal test questions requiring both text and image reasoning.</p>
   </div>
 </div>
 </div>
