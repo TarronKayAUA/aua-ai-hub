@@ -1,0 +1,141 @@
+name: Monthly discovery survey guard
+
+# The tool discovery survey is a Claude Code scheduled task on the owner's
+# machine (~/.claude/scheduled-tasks/monthly-tool-discovery-survey/SKILL.md,
+# cron 0 9 15 * *), so it runs outside this repository and nothing here can
+# see whether it started. What this repository CAN see is whether it
+# delivered, and CLAUDE.md is explicit that the output contract is the issue,
+# not the method.
+#
+# That distinction is the whole point. The 2026-08-15 run terminated partway
+# through, filed nothing, and was recorded as "succeeded"; it went unnoticed
+# for a month, and only turned up because someone asked why no August issue
+# existed. A guard that trusted the task's own status would have missed it.
+# This one looks for the artifact instead, so it fires on a crashed run, a
+# stalled run, a run that never started, and a laptop that was switched off.
+#
+# Runs twice, on the 17th and the 24th. The 17th gives the survey two days
+# past its cron (it carries jitter); the 24th means a re-run is noticed
+# within a week rather than a month.
+
+on:
+  schedule:
+    - cron: "0 14 17,24 * *" # 14:00 UTC on the 17th and 24th
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Look for this month's discovery issue
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          month=$(date -u +%Y-%m)
+          # Deliberately a plain listing rather than --search, unlike the
+          # sibling health workflows. Those look for their own issue, which
+          # they filed themselves; this one looks for an issue filed two days
+          # earlier by something else, and GitHub's search index can lag a
+          # fresh issue. A false alarm here would teach the owner to ignore
+          # the guard, which is the failure this whole class of check exists
+          # to avoid (issues #31 and #45).
+          #
+          # Any state counts: a survey issue already triaged and closed still
+          # proves the survey ran. The survey also files a "no changes
+          # proposed" issue in a quiet month, by its own step 6, so silence
+          # is never the correct outcome.
+          # gh's own --jq is used rather than piping to standalone jq: it is
+          # guaranteed present wherever gh is, and it let both expressions be
+          # tested against this repository before shipping.
+          # Deliberately NOT suffixed with `|| true`, unlike the greps in the
+          # sibling health workflows. That idiom exists because grep exits
+          # nonzero on no matches; this returns the string "0" on no matches
+          # and only fails when the API call itself fails. Suppressing that
+          # would turn an unreadable issue list into a confident "nothing
+          # filed", which is the exact silence this guard exists to break.
+          found=$(gh issue list --state all --limit 300 --json title \
+            --jq "[.[] | select(.title | startswith(\"Tool discovery ${month}\"))] | length")
+          # Any open guard issue from a previous month. Its title deliberately
+          # does NOT start with "Tool discovery", so the guard can never count
+          # its own alarm as the artifact it is looking for.
+          existing=$(gh issue list --state open --limit 100 --json title,number \
+            --jq '[.[] | select(.title | startswith("Discovery survey did not file"))] | .[0].number // empty')
+          # Unknown is not zero. Guessing either way is worse than stopping:
+          # guessing "none" files a false alarm, and a guard that cries wolf
+          # gets ignored (issues #31 and #45); guessing "found" restores the
+          # silence. Same rule the narration spend ledger already follows.
+          if ! [[ "$found" =~ ^[0-9]+$ ]]; then
+            echo "Could not read the issue list, so the survey's status is" >&2
+            echo "unknown. Refusing to guess. Check the workflow run log." >&2
+            exit 1
+          fi
+          echo "month=$month" >> "$GITHUB_OUTPUT"
+          echo "found=$found" >> "$GITHUB_OUTPUT"
+          echo "existing=${existing}" >> "$GITHUB_OUTPUT"
+          echo "month=$month found=$found existing=${existing:-none}"
+      - name: Open, update, or close the guard issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          MONTH: ${{ steps.check.outputs.month }}
+          FOUND: ${{ steps.check.outputs.found }}
+          EXISTING: ${{ steps.check.outputs.existing }}
+        run: |
+          set -e
+          if [[ "$FOUND" == "0" ]]; then
+            title="Discovery survey did not file for ${MONTH}"
+            {
+              echo "No issue titled \`Tool discovery ${MONTH}-..\` exists, so the"
+              echo "monthly tool discovery survey did not deliver this month."
+              echo
+              echo "The survey runs as a Claude Code scheduled task on the owner's"
+              echo "machine, not in this repository:"
+              echo
+              echo '    ~/.claude/scheduled-tasks/monthly-tool-discovery-survey/SKILL.md'
+              echo '    cron 0 9 15 * *'
+              echo
+              echo "This check cannot see whether it started, only whether it"
+              echo "produced its artifact. That is deliberate: its output contract"
+              echo "is the issue, not the method."
+              echo
+              echo "**Precedent.** The 2026-08-15 run stopped partway through, filed"
+              echo "nothing, and was still recorded as \`succeeded\`. Nobody noticed"
+              echo "for a month. A task's own status does not establish that it did"
+              echo "its job, which is why this guard looks for the issue instead."
+              echo
+              echo "What to check, in order:"
+              echo
+              echo "1. The task's recent runs. A run marked succeeded that lasted"
+              echo "   seconds did not do a survey; the July run took about 17"
+              echo "   minutes. A run still marked running with a stale last-activity"
+              echo "   timestamp has stalled."
+              echo "2. Whether the machine was awake and online at 09:00 on the 15th."
+              echo "3. Whether the harness had the tools the SKILL.md expects."
+              echo "   CLAUDE.md notes the fallback: if the Workflow tool is missing,"
+              echo "   run the hunters sequentially. The output contract is the issue,"
+              echo "   not the method."
+              echo
+              echo "To clear this, re-run the survey so it files its issue. This"
+              echo "workflow closes this issue on its next run once one exists, on"
+              echo "the 17th or the 24th, or immediately if you dispatch it by hand."
+            } > body.md
+            if [[ -n "$EXISTING" ]]; then
+              gh issue edit "$EXISTING" --title "$title" --body-file body.md
+              gh issue comment "$EXISTING" \
+                --body "Still no survey issue for ${MONTH} as of $(date -u +%F)."
+            else
+              gh issue create --title "$title" --body-file body.md \
+                --assignee TarronKayAUA
+            fi
+          elif [[ -n "$EXISTING" ]]; then
+            gh issue close "$EXISTING" \
+              --comment "A survey issue for ${MONTH} now exists. Closing."
+          else
+            echo "Survey issue for ${MONTH} found; nothing to manage."
+          fi
