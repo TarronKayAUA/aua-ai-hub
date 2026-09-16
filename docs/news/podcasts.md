@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://ai-podcast.nejm.org/e/beyond-the-hype-dr-xiao-liu-on-evaluating-medical-ai" target="_blank" rel="noopener">
+  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Beyond the Hype: Dr. Xiao Liu on Evaluating Medical AI" loading="lazy">
+  <span class="video-card-title">Beyond the Hype: Dr. Xiao Liu on Evaluating Medical AI</span>
+  <span class="video-card-meta">NEJM AI Grand Rounds, September 16, 2026</span>
+  <span class="video-card-desc">Dr. Xiao Liu discusses evidence-based evaluation of medical AI systems, emphasizing trustworthiness and clinical utility beyond performance metrics.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Even-Other-AI-Labs-Are-Rallying-Around-Anthropics-Slowdown-Proposal-e3orsav" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Even Other AI Labs Are Rallying Around Anthropic’s Slowdown Proposal" loading="lazy">
   <span class="video-card-title">Even Other AI Labs Are Rallying Around Anthropic’s Slowdown Proposal</span>

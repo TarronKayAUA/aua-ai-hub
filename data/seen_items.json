@@ -1,66 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent",
-   "title_hash": "d1de7ce4fb59dbd899c62276fe0f4858",
-   "first_seen": "2026-07-18T06:21:31.965293+00:00",
-   "kept": false,
-   "reason": "vendor marketing and incomplete summary"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/18/quixote",
-   "title_hash": "6cab2e56c101ac396a7855698cd779e6",
-   "first_seen": "2026-07-18T06:21:31.965293+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42469353?fc=20260609215449&ff=20260718022132&v=2.20.0",
-   "title_hash": "9b0b4d0c1c4ea73928b70f143b49d2a6",
-   "first_seen": "2026-07-18T06:21:31.965293+00:00",
-   "kept": true,
-   "title": "Cross-cultural adaptation and psychometric evaluation of the Japanese version of the scale for the assessment of non-experts' AI literacy among medical trainees in a multicenter cross-sectional study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-17T10:00:00+00:00",
-   "summary": "Cross-cultural adaptation of an AI literacy assessment scale for medical trainees, with psychometric evaluation of the Japanese version.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42468505?fc=20260609215449&ff=20260718022132&v=2.20.0",
-   "title_hash": "6f6a2e5a57563b313b8060654d1a032d",
-   "first_seen": "2026-07-18T06:21:31.965293+00:00",
-   "kept": true,
-   "title": "Enhancing medical imaging teaching on scoliosis: Efficacy of learning method integrating 3D printing and artificial intelligence technologies",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-17T10:00:00+00:00",
-   "summary": "Integration of 3D printing and artificial intelligence into scoliosis teaching improves student comprehension, practical skills, and overall educational outcomes.",
-   "category": "medical_education",
-   "score": 2.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03034-1",
-   "title_hash": "e542d12ff7df64d94a58f8e5e16d2ea9",
-   "first_seen": "2026-07-18T09:46:55.808880+00:00",
-   "kept": true,
-   "title": "Reinforcement learning for treatment decision-making in sepsis: a scoping review",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-18T00:00:00+00:00",
-   "summary": "Scoping review examines reinforcement learning methods for sepsis treatment decision-making, synthesizing evidence on machine learning approaches to optimize clinical interventions.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=JrVPIy9AdfQ",
-   "title_hash": "26311215590977e3e76f4d83971e8098",
-   "first_seen": "2026-07-18T09:46:55.808880+00:00",
-   "kept": false,
-   "reason": "pure reaction video with no substantive benchmark analysis or comparison"
-  },
-  {
    "url": "https://www.theverge.com/tech/967544/best-apps-gadgets-reading-installer",
    "title_hash": "20c74cc76058f23fff43dd18b2d76dae",
    "first_seen": "2026-07-18T13:51:50.391500+00:00",
@@ -31963,6 +31903,169 @@
    "first_seen": "2026-09-16T04:52:41.355548+00:00",
    "kept": false,
    "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://content.knowledgehub.wiley.com/single-phase-direct-liquid-cooling-is-proven-for-the-next-decade-of-ultra-dense-compute",
+   "title_hash": "547adaf2a80bfaf5d6e5828334e88a09",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "marketing from equipment vendor"
+  },
+  {
+   "url": "https://www.theverge.com/policy/995534/a-brief-history-of-ai-executives-calling-for-regulation",
+   "title_hash": "679abed3d95074791a09559011f00fa9",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": true,
+   "title": "A brief history of AI executives calling for regulation",
+   "source": "The Verge AI",
+   "published": "2026-09-16T12:00:00+00:00",
+   "summary": "Commentary on AI executive calls for regulation from Altman, Amodei, Hassabis, Nadella, and Musk, examining patterns in public advocacy for oversight.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK_414_5_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/should-doctors-clinicians-researchers",
+   "title_hash": "1f586449d512445ca29e068776310df8",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42745894?fc=20260609215449&ff=20260916093149&v=2.20.1",
+   "title_hash": "3b1469734ef74b098654de71e257d579",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": true,
+   "title": "Use of artificial intelligence in education and training of radiology",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-16T10:00:00+00:00",
+   "summary": "Review of AI in radiology education finds potential in personalized learning and competency development but requires standardized curricula, faculty training, competency frameworks, and ethical oversight.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42745657?fc=20260609215449&ff=20260916093149&v=2.20.1",
+   "title_hash": "fef757956269eb83d91776a6c302d7a7",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42745325?fc=20260609215449&ff=20260916093149&v=2.20.1",
+   "title_hash": "79cd5a62b5f2103b1bd60b7caeae1869",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": true,
+   "title": "Awareness and perceptions of artificial intelligence among pulmonologists and thoracic surgeons: a national survey",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-16T10:00:00+00:00",
+   "summary": "Survey of pulmonologists and thoracic surgeons finds generally positive attitudes toward AI but persistent concerns about ethics, law, data security, and need for comprehensive regulation.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42745060?fc=20260609215449&ff=20260916093149&v=2.20.1",
+   "title_hash": "175c9e24148973c6dc1ab4c803e2bb8a",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": true,
+   "title": "Artificial intelligence in otolaryngology: current applications, limitations, and future perspectives",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-16T10:00:00+00:00",
+   "summary": "Narrative review identifies methodological and translational barriers to clinical AI adoption in otolaryngology: limited validation, bias, opacity, privacy concerns, and automation bias.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/09/16/survey-ais-perceived-effect-human-connection-thinking",
+   "title_hash": "181ad96fb8ec5a06bf1cf9863bc473f4",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "generic polling with no substantive analysis or findings"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03212-1",
+   "title_hash": "954187ac460ccf59cd39816137786776",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": true,
+   "title": "Predicting calcification risk in prosthetic aortic valves: a hybrid physics-based and machine learning approach",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-16T00:00:00+00:00",
+   "summary": "Hybrid physics-based and machine learning model predicts calcification risk in prosthetic aortic valves.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03163-7",
+   "title_hash": "fe78980edb398ad5b176e8328c854a3b",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "no AI or machine learning content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03222-z",
+   "title_hash": "8835c911008e454e374d3c7fc89635c9",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "no AI or machine learning content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04665-3",
+   "title_hash": "b393f0e8b77838fa6b9c63465e332ecd",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "no AI or machine learning content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04625-x",
+   "title_hash": "bc47915e6656c4c6d4df01c20a51756f",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "no AI or machine learning content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04636-8",
+   "title_hash": "fa96c0164df457cc20da536818436350",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "no AI or machine learning content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04662-6",
+   "title_hash": "ff1b7c50134abc263610c68ad24947b5",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "no AI or machine learning content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wgwh7k/qwen3827bturbofablecoldfusion735882hereticuncensor",
+   "title_hash": "7b1f75df6f9b7d45aae3372fa54e8152",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "minor model release notes from niche community"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=t8Y-eqZ5_-0",
+   "title_hash": "21270181d908e21f95fb6f40db280738",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": false,
+   "reason": "promotional content from vendor's own channel with no substantive AI in medicine, education, or medical learning relevance"
+  },
+  {
+   "url": "https://ai-podcast.nejm.org/e/beyond-the-hype-dr-xiao-liu-on-evaluating-medical-ai",
+   "title_hash": "001d56d546777e9689625650706b9b21",
+   "first_seen": "2026-09-16T13:31:49.546216+00:00",
+   "kept": true,
+   "title": "Beyond the Hype: Dr. Xiao Liu on Evaluating Medical AI",
+   "source": "NEJM AI Grand Rounds",
+   "published": "2026-09-16T13:00:00+00:00",
+   "summary": "Dr. Xiao Liu discusses evidence-based evaluation of medical AI systems, emphasizing trustworthiness and clinical utility beyond performance metrics.",
+   "category": "podcasts",
+   "score": 4.0,
+   "thumbnail": "https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg"
   }
  ],
  "digests": [

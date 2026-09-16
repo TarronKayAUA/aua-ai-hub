@@ -18,9 +18,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42745894?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">Use of artificial intelligence in education and training of radiology</a>
+    <p class="news-card-summary">Review of AI in radiology education finds potential in personalized learning and competency development but requires standardized curricula, faculty training, competency frameworks, and ethical oversight.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42745325?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">Awareness and perceptions of artificial intelligence among pulmonologists and thoracic surgeons: a national survey</a>
+    <p class="news-card-summary">Survey of pulmonologists and thoracic surgeons finds generally positive attitudes toward AI but persistent concerns about ethics, law, data security, and need for comprehensive regulation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42745060?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">Artificial intelligence in otolaryngology: current applications, limitations, and future perspectives</a>
+    <p class="news-card-summary">Narrative review identifies methodological and translational barriers to clinical AI adoption in otolaryngology: limited validation, bias, opacity, privacy concerns, and automation bias.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
@@ -105,27 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 13, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42732302?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1">A Pilot Study of a CustomGPT for the Royal College of Ophthalmologists Curriculum 2024</a>
     <p class="news-card-summary">A curriculum-specific GPT tool provided rapid, accurate guidance aligned with Royal College of Ophthalmologists training standards, improving efficiency and accessibility in postgraduate medical education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1">High Accuracy, Questionable References: Large Language Models&#x27; Performance and Citation Reliability in Foot and Ankle Surgery Examinations</a>
-    <p class="news-card-summary">ChatGPT 5.4 achieved high accuracy on foot and ankle surgery exam questions but produced the most fabricated citations of tested models, highlighting risks of using large language models as primary educational tools without reference verification.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42730487?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">Application of AI-Enhanced Teaching Combined With Traditional Instruction in Cardiac and Great Vessel Surgery</a>
-    <p class="news-card-summary">AI-enhanced instruction combined with traditional teaching significantly improves clinical and surgical skills in cardiac surgery residency training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">Pedagogical Efficacy of LLM-Generated Synthetic Data Versus Real-World Clinical Records: A Randomized Controlled Non-Inferiority Trial</a>
-    <p class="news-card-summary">Randomized trial found LLM-generated synthetic clinical cases non-inferior to real cases for immediate test performance but did not demonstrate non-inferiority.</p>
   </div>
 </div>
 </div>
