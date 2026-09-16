@@ -1,73 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.theverge.com/tech/967544/best-apps-gadgets-reading-installer",
-   "title_hash": "20c74cc76058f23fff43dd18b2d76dae",
-   "first_seen": "2026-07-18T13:51:50.391500+00:00",
-   "kept": false,
-   "reason": "listicle of consumer gadgets, not relevant to this audience"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/will-ai-fix-prior-authorization-or-make-it-worse",
-   "title_hash": "4bcdb4ff87a0af1b2793ceb5a9e1fde6",
-   "first_seen": "2026-07-18T13:51:50.391500+00:00",
-   "kept": true,
-   "title": "Will AI fix prior authorization, or make it worse?",
-   "source": "Ars Technica AI",
-   "published": "2026-07-18T11:18:25+00:00",
-   "summary": "Government pilot program tests artificial intelligence for automated insurance coverage decisions, raising questions about clinical and administrative impact.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-2264310821-500x500.jpg",
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42470080?fc=20260609215449&ff=20260718095150&v=2.20.0",
-   "title_hash": "785897aa6363e9ea756b24964a7ec0b9",
-   "first_seen": "2026-07-18T13:51:50.391500+00:00",
-   "kept": true,
-   "title": "Exploring the role of generative artificial intelligence in enhancing clinical skills training: A bibliometric analysis",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-18T10:00:00+00:00",
-   "summary": "Bibliometric analysis shows generative AI in clinical skills training is rapidly expanding with growing attention to language models and ethical issues.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42470020?fc=20260609215449&ff=20260718095150&v=2.20.0",
-   "title_hash": "e53c9880bd195425dde59dea86bc9d7e",
-   "first_seen": "2026-07-18T13:51:50.391500+00:00",
-   "kept": true,
-   "title": "Attitudes, usage patterns, and learning interests of medical students toward DeepSeek in medical education: A cross-sectional survey",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-18T10:00:00+00:00",
-   "summary": "Survey of medical students' attitudes, usage patterns, and learning interests regarding DeepSeek in medical education.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uzqspl/what_kind_of_dark_magic_is_deepseek_using",
-   "title_hash": "005176133b08edd3b90916cb9b8ee829",
-   "first_seen": "2026-07-18T13:51:50.391500+00:00",
-   "kept": false,
-   "reason": "forum discussion of performance speculation, not substantive analysis or documented finding"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03004-7",
-   "title_hash": "85141226434c9f254335b6e353bf448f",
-   "first_seen": "2026-07-18T17:16:20.699876+00:00",
-   "kept": true,
-   "title": "Research landscape of robot-assisted reconstructive and plastic surgery",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-18T00:00:00+00:00",
-   "summary": "Systematic review of the research landscape on robot-assisted reconstructive and plastic surgery, mapping evidence and gaps in the field.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
    "url": "https://www.theverge.com/ai-artificial-intelligence/967630/dave-eggers-openai-chatgpt-silencing-an-entire-generation",
    "title_hash": "e475aebbad90c0bd1e4c0e75ef7ee54a",
    "first_seen": "2026-07-18T21:07:24.641809+00:00",
@@ -32066,6 +31999,162 @@
    "category": "podcasts",
    "score": 4.0,
    "thumbnail": "https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e82012",
+   "title_hash": "91c4cd54b82193a15eb1971c36f59e68",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": false,
+   "reason": "narrow domain application without AI methodology focus"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/16/one-claude",
+   "title_hash": "295fbc91599db85ef52898385170ec3b",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": true,
+   "title": "Claude Cowork and chat are now one Claude",
+   "source": "Simon Willison's weblog",
+   "published": "2026-09-16T18:09:49+00:00",
+   "summary": "Anthropic merged Claude Cowork and chat into a unified interface supporting both quick questions and extended tasks on Pro and Max plans.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/tech/996321/apple-servers-ai-nvidia",
+   "title_hash": "bdc3c4b494d7292585c147727878c214",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": false,
+   "reason": "unconfirmed speculation about unreleased hardware"
+  },
+  {
+   "url": "https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date",
+   "title_hash": "0a39f2264fa2f1ebc77808f724686924",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": true,
+   "title": "Google will now let any AI agent run your smart home",
+   "source": "The Verge AI",
+   "published": "2026-09-16T17:00:00+00:00",
+   "summary": "Google opened its smart home platform to third-party AI agents via Model Context Protocol, enabling tools like Claude to control connected devices.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gemini-for-home.jpg?quality=90&strip=all&crop=0%2C3.4128369206903%2C100%2C93.174326158619&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://spectrum.ieee.org/physical-ai-robot-cybersecurity-vicone",
+   "title_hash": "170bdb6fafc90204e7a3c7f0b58596f7",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": true,
+   "title": "Rethinking Robot Safety in the Age of AI",
+   "source": "IEEE Spectrum AI",
+   "published": "2026-09-16T16:51:02+00:00",
+   "summary": "Analysis of robot safety challenges in physical AI systems when attackers can manipulate multimodal perception or decision-making without obvious failures.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://spectrum.ieee.org/media-library/humanoid-robots-and-people-walking-through-a-modern-city-street-with-glass-buildings.jpg?id=67745861&width=980",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
+   "title_hash": "a8054aaaf36d6d84a722ff6effc6dc57",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": true,
+   "title": "Claude comes for Gemini with its own take on Docs and Slides",
+   "source": "The Verge AI",
+   "published": "2026-09-16T16:30:00+00:00",
+   "summary": "Anthropic released Claude Docs and Slides for creating and exporting documents and presentations within Claude chat interface.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Claude-Docs.png?quality=90&strip=all&crop=0%2C3.4613147178592%2C100%2C93.077370564282&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/16/mustafa-suleyman",
+   "title_hash": "2ec3fea4564b3768789730b48b5ac6d7",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": false,
+   "reason": "policy commentary without new information or instructive analysis"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/995348/ai-dating-app-scams",
+   "title_hash": "99fe5246c463ebe6e553132f19de6fdf",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://mustafa-suleyman.ai/a-warning-about-model-welfare",
+   "title_hash": "e918bdaff446a01ae904df707b5fe23a",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": false,
+   "reason": "forum discussion aggregator without substantive analysis"
+  },
+  {
+   "url": "https://enclave.ai/blog/deepseek-v41-flash-is-now-our-best-hacking-model",
+   "title_hash": "d9582e76d9b42a88db126f022140876c",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": false,
+   "reason": "narrow benchmark on niche task application"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42747318?fc=20260609215449&ff=20260916153444&v=2.20.1",
+   "title_hash": "493e05f96a0a2b66566d8eebb39562f7",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": true,
+   "title": "Bridging algorithm and narrative: natural language processing, narratology, and radical empathy as core competencies in medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-16T10:00:00+00:00",
+   "summary": "Commentary argues medical education must integrate computational literacy with narrative understanding and empathy as core competencies as AI shapes clinical practice.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42746198?fc=20260609215449&ff=20260916153444&v=2.20.1",
+   "title_hash": "9005fb09b8a3b65ff5f2292f132564f2",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence in Medical Education: Perceptions of Romanian Medical Students in a Cross-Sectional Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-16T10:00:00+00:00",
+   "summary": "Survey of Romanian medical students found high familiarity with AI applications and favorable views of their educational and clinical utility, though concerns about accuracy and overdependence persist.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03224-x",
+   "title_hash": "d06725fea30fa2cc5875f6fbf4d58515",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": true,
+   "title": "Knowledge-enhanced LLMs for multilingual biomedical concept normalization: a multilingual benchmarking and behavioral analysis",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-16T00:00:00+00:00",
+   "summary": "Benchmarking study evaluates knowledge-enhanced large language models for multilingual biomedical concept normalization across multiple languages.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03090-7",
+   "title_hash": "927a932f15b34aaaf7a85e16bfedd88c",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": true,
+   "title": "Auditing sex/gender disparities in emergency triage with LLM-based paired comparisons",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-16T00:00:00+00:00",
+   "summary": "Study uses paired large language model comparisons to audit sex and gender disparities in emergency triage decision-making.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=iZE2r-Vx5b8",
+   "title_hash": "329f8dbc6cb443f91adc9afe18d7761c",
+   "first_seen": "2026-09-16T19:34:44.381673+00:00",
+   "kept": false,
+   "reason": "vendor marketing for ChatGPT's own product features"
   }
  ],
  "digests": [

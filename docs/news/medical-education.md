@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -40,6 +40,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42745060?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">Artificial intelligence in otolaryngology: current applications, limitations, and future perspectives</a>
     <p class="news-card-summary">Narrative review identifies methodological and translational barriers to clinical AI adoption in otolaryngology: limited validation, bias, opacity, privacy concerns, and automation bias.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42747318?fc=20260609215449&amp;ff=20260916153444&amp;v=2.20.1">Bridging algorithm and narrative: natural language processing, narratology, and radical empathy as core competencies in medical education</a>
+    <p class="news-card-summary">Commentary argues medical education must integrate computational literacy with narrative understanding and empathy as core competencies as AI shapes clinical practice.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42746198?fc=20260609215449&amp;ff=20260916153444&amp;v=2.20.1">Artificial Intelligence in Medical Education: Perceptions of Romanian Medical Students in a Cross-Sectional Study</a>
+    <p class="news-card-summary">Survey of Romanian medical students found high familiarity with AI applications and favorable views of their educational and clinical utility, though concerns about accuracy and overdependence persist.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -112,20 +126,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Analysis documents gap between rapid college adoption of AI in education and lack of independent research on learning outcomes.</p>
   </div>
   <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-01/Robot_teaching.jpg?itok=7bmRWyA0" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03187-z">Multi-Agent collaboration as a complementary architecture for AI-generated medical examination items</a>
-    <p class="news-card-summary">Study evaluated multi-agent collaboration architecture as complementary approach for AI-generated medical examination items.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-026-03187-z/MediaObjects/41746_2026_3187_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 13, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42732302?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1">A Pilot Study of a CustomGPT for the Royal College of Ophthalmologists Curriculum 2024</a>
-    <p class="news-card-summary">A curriculum-specific GPT tool provided rapid, accurate guidance aligned with Royal College of Ophthalmologists training standards, improving efficiency and accessibility in postgraduate medical education.</p>
-  </div>
 </div>
 </div>
