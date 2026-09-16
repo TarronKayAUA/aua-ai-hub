@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e108766">The AWARE (AI Use, Why, Attachment, Reality and Risk, and Effect on Functioning) Framework for Assessing Patients’ Use of AI in Mental Health Care</a>
+    <p class="news-card-summary">Framework for assessing how patients use conversational AI systems in mental health care, addressing integration of language models into cognitive and emotional decision-making.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
@@ -118,13 +125,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42733601?fc=20260609215449&amp;ff=20260914110224&amp;v=2.20.1">Evaluating the Teaching Effectiveness of Interactive Virtual Platform Based on Artificial Intelligence for Obstetrics and Gynecology Residency Training</a>
     <p class="news-card-summary">Study showed AI-based virtual case platform improved resident competencies, teaching satisfaction, and patient satisfaction in obstetrics and gynecology training.</p>
   </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/09/14/nonexistent-research-ais-benefits-education">The ‘Nonexistent’ Research on AI’s Benefits for Education</a>
-    <p class="news-card-summary">Analysis documents gap between rapid college adoption of AI in education and lack of independent research on learning outcomes.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-01/Robot_teaching.jpg?itok=7bmRWyA0" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

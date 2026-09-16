@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="new-models">
@@ -27,6 +27,14 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://simonwillison.net/2026/Sep/16/one-claude">Claude Cowork and chat are now one Claude</a>
     <p class="news-card-summary">Anthropic merged Claude Cowork and chat into a unified interface supporting both quick questions and extended tasks on Pro and Max plans.</p>
   </div>
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wi32jg/chinas_openweight_ai_models_are_now_just_4_months">China&#x27;s open-weight AI models are now just 4 months behind frontier US offerings, Mozilla report claims, models still lag in some benchmarks but are drastically cheaper to use</a>
+    <p class="news-card-summary">Report documents that open-weight AI models from China have narrowed the capability gap with US frontier models to four months while remaining significantly cheaper.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/y3j4Fmp2AEvl6NBWF18BXvT9FUJHVLNQKd8wfNdJLc8.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b03d9c1b3e83708b79569a6b1d65f58f875ddb77" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -122,13 +130,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.13734">PolicyMem: Geometric Policy Memory for LLM Governance</a>
     <p class="news-card-summary">Researchers introduced PolicyMem, a geometric policy memory framework that decouples language model governance from specific trained models and taxonomies, offering flexible safeguarding for high-stakes deployments.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.13737">ForeSight: Enhancing Risk Monitoring via Early Safety Signal Distillation</a>
-    <p class="news-card-summary">ForeSight distills early safety signals from language model internals to detect harmful content generation before output, improving on surface-token and output-logit detection methods.</p>
   </div>
 </div>
 </div>

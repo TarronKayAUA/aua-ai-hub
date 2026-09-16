@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=J3ljHm57yU0" target="_blank" rel="noopener" title="What AI Researchers Saw, Before Their Demand to ‘Pace’ AI">
+  <img src="https://i3.ytimg.com/vi/J3ljHm57yU0/hqdefault.jpg" alt="Video: AI safety warnings and researcher calls to pace development" loading="lazy">
+  <span class="video-card-title">AI safety warnings and researcher calls to pace development</span>
+  <span class="video-card-meta">AI Explained, September 16, 2026</span>
+  <span class="video-card-desc">Analysis of recent safety warnings and calls to slow AI development from leading researchers and lab leaders.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=YoEWjZSwoys" target="_blank" rel="noopener" title="Claude Is Now Leaving Invisible Fingerprints In Its Text">
   <img src="https://i2.ytimg.com/vi/YoEWjZSwoys/hqdefault.jpg" alt="Video: Statistical fingerprints in Claude model outputs" loading="lazy">
   <span class="video-card-title">Statistical fingerprints in Claude model outputs</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Inworld TTS-2 real-time voice performance and comparison</span>
   <span class="video-card-meta">WorldofAI, September 2, 2026</span>
   <span class="video-card-desc">Hands-on comparison of Inworld TTS-2 against commercial alternatives, demonstrating real-time text-to-speech capabilities and relative performance rankings.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=qRNZMGc7TMc" target="_blank" rel="noopener" title="GPT-6 Astra Just Went CRITICAL...">
-  <img src="https://i2.ytimg.com/vi/qRNZMGc7TMc/hqdefault.jpg" alt="Video: OpenAI Astra model cybersecurity risk assessment" loading="lazy">
-  <span class="video-card-title">OpenAI Astra model cybersecurity risk assessment</span>
-  <span class="video-card-meta">Wes Roth, September 2, 2026</span>
-  <span class="video-card-desc">Report on OpenAI&#x27;s assessment of its upcoming Astra model against its Preparedness Framework cybersecurity thresholds and implications for model safety classification.</span>
 </a>
 </div>
 

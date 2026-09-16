@@ -20,8 +20,15 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 40 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 16, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e108766">The AWARE (AI Use, Why, Attachment, Reality and Risk, and Effect on Functioning) Framework for Assessing Patients’ Use of AI in Mental Health Care</a>
+        <p class="news-card-summary">Framework for assessing how patients use conversational AI systems in mental health care, addressing integration of language models into cognitive and emotional decision-making.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
@@ -290,13 +297,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A method selects which medical questions in training datasets should receive rationale supervision under budget constraints to improve question-answering robustness.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 9, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e98766">AI-Assisted Angoff Standard Setting for Multiple-Choice Examinations in Medical Education: Comparative Study</a>
-        <p class="news-card-summary">Study examines whether large language models can assist with the Angoff standard-setting method for determining passing scores on medical education multiple-choice exams.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
@@ -314,10 +314,24 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 42 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 16, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91618">Prediction Models for In-Hospital Delirium Using Routinely Collected Electronic Health Record Data: Systematic Review</a>
+        <p class="news-card-summary">Systematic review evaluates prediction models built from electronic health record data for early identification of in-hospital delirium, assessing their methodological quality and clinical readiness.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 16, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93761">Retrieve-Then-Verify for Evaluating Evidence Support and Hallucination in Large Language Model, Generated Medical Information: Empirical Study</a>
+        <p class="news-card-summary">Empirical study examines whether large language models cite source documents when generating medical information, testing transparency and auditability for clinical knowledge management.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
@@ -627,7 +641,7 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -635,6 +649,14 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <a class="news-card-title" href="https://simonwillison.net/2026/Sep/16/one-claude">Claude Cowork and chat are now one Claude</a>
         <p class="news-card-summary">Anthropic merged Claude Cowork and chat into a unified interface supporting both quick questions and extended tasks on Pro and Max plans.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 16, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wi32jg/chinas_openweight_ai_models_are_now_just_4_months">China&#x27;s open-weight AI models are now just 4 months behind frontier US offerings, Mozilla report claims, models still lag in some benchmarks but are drastically cheaper to use</a>
+        <p class="news-card-summary">Report documents that open-weight AI models from China have narrowed the capability gap with US frontier models to four months while remaining significantly cheaper.</p>
+      </div>
+      <img class="news-card-thumb" src="https://external-preview.redd.it/y3j4Fmp2AEvl6NBWF18BXvT9FUJHVLNQKd8wfNdJLc8.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b03d9c1b3e83708b79569a6b1d65f58f875ddb77" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -944,14 +966,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 9, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/992953/openai-math-millennium-prize-navier-stokes">OpenAI’s sly mathematical breakthrough sends a chill through academia</a>
-        <p class="news-card-summary">OpenAI announced progress on a Millennium Prize problem in mathematics, demonstrating AI capability in advanced mathematical research with implications for academic fields.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292626872.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 8, 2026</span></div>
         <a class="news-card-title" href="https://magic.dev/blog/pretraining">Compute-efficient pretraining and scaling to trillion-parameter models</a>
         <p class="news-card-summary">A technical article from Magic.dev presents methods for compute-efficient pretraining and scaling of large language models to trillion-parameter scales.</p>
@@ -971,9 +985,15 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 16 videos"
+??? abstract "Show the 17 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=J3ljHm57yU0" target="_blank" rel="noopener" title="What AI Researchers Saw, Before Their Demand to ‘Pace’ AI">
+      <img src="https://i3.ytimg.com/vi/J3ljHm57yU0/hqdefault.jpg" alt="Video: AI safety warnings and researcher calls to pace development" loading="lazy">
+      <span class="video-card-title">AI safety warnings and researcher calls to pace development</span>
+      <span class="video-card-meta">AI Explained, September 16, 2026</span>
+      <span class="video-card-desc">Analysis of recent safety warnings and calls to slow AI development from leading researchers and lab leaders.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=YoEWjZSwoys" target="_blank" rel="noopener" title="Claude Is Now Leaving Invisible Fingerprints In Its Text">
       <img src="https://i2.ytimg.com/vi/YoEWjZSwoys/hqdefault.jpg" alt="Video: Statistical fingerprints in Claude model outputs" loading="lazy">
       <span class="video-card-title">Statistical fingerprints in Claude model outputs</span>
