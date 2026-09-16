@@ -1,60 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uza5wb/kimi_k3_is_top_of_nextjs_eval",
-   "title_hash": "a2747ac6c0516e9aae1b0a61b8ac7792",
-   "first_seen": "2026-07-18T03:34:17.311320+00:00",
-   "kept": false,
-   "reason": "insufficient substance; forum post without details on benchmark or method"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1uyz9n2/bonsai_27b_runs_locally_on_an_iphone_a_27b_model",
-   "title_hash": "092a365a3dab685239bb29706dfedcdc",
-   "first_seen": "2026-07-18T03:34:17.311320+00:00",
-   "kept": true,
-   "title": "Bonsai 27B runs locally on an iPhone - a 27B model in 3.9GB",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-17T13:08:58+00:00",
-   "summary": "PrismML created Bonsai, a 27-billion-parameter model quantized to 1.125 bits per weight, fitting in 3.9GB while retaining approximately 90 percent of benchmark performance and running on mobile devices.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://external-preview.redd.it/Z29wbnZ0ZjFoc2RoMYNmW7XUoGPceguvH8OPb5Eb_TxAIeLh42MnMxNtDYX4.png?width=640&crop=smart&auto=webp&s=d0c914491c817a040cf9c0ecf6c840d097a47716",
-   "topic": "New models"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42467960?fc=20260609215449&ff=20260717233417&v=2.20.0",
-   "title_hash": "f4a905470529eb4ba40039214ab7f24c",
-   "first_seen": "2026-07-18T03:34:17.311320+00:00",
-   "kept": true,
-   "title": "PEPCAL: A Heuristic Framework for Teaching Generative AI to Continuing Professional Education Providers and Faculty Developers",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-17T10:00:00+00:00",
-   "summary": "PEPCAL, a framework addressing pedagogical, ethical, preparation, creative, administrative, and data considerations, guides continuing professional education providers and faculty developers in integrating generative AI responsibly.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42467502?fc=20260609215449&ff=20260717233417&v=2.20.0",
-   "title_hash": "27c7fe64ec02b19780f7c7c585158be1",
-   "first_seen": "2026-07-18T03:34:17.311320+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; article on scientific writing instruction without AI focus"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03040-3",
-   "title_hash": "a380af3fbda4a1312d264d002003644d",
-   "first_seen": "2026-07-18T03:34:17.311320+00:00",
-   "kept": true,
-   "title": "Synthesized clinical notes enable training robust multimodal AI models from unimodal dermatology datasets",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-17T00:00:00+00:00",
-   "summary": "Researchers demonstrated that synthesized clinical notes can train robust multimodal AI models from single-modality dermatology datasets, addressing data imbalance in medical image analysis.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent",
    "title_hash": "d1de7ce4fb59dbd899c62276fe0f4858",
    "first_seen": "2026-07-18T06:21:31.965293+00:00",
@@ -31759,6 +31705,264 @@
    "first_seen": "2026-09-15T22:54:52.407853+00:00",
    "kept": false,
    "reason": "daily news recap with no substantive analysis of AI policy or governance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15990",
+   "title_hash": "6d6dc27f9c900172252250884fa52ec4",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": true,
+   "title": "Few-Shot Degradation Is Not What It Seems: Behavioral Evidence, Representation Analysis, and a Random-Text Control Across 12 Models, 2 Tasks, and 2 Architectures",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-16T04:00:00+00:00",
+   "summary": "Behavioral study across 12 models shows few-shot prompting effects are task-dependent, with performance gains varying from 3.4 to 24 percentage points.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15991",
+   "title_hash": "ff026a56c65c46a9e34d44274dbd7aa1",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15992",
+   "title_hash": "05dd47033d386879d8a85b2bcc760710",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": true,
+   "title": "Optimal Model Activation Policies for Inference Networks of Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-16T04:00:00+00:00",
+   "summary": "Research on cost-performance trade-offs for ensemble and serial inference with multiple expert language models without fixed reasoning programs.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15993",
+   "title_hash": "052466edec986a6f1468e33d45754a55",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15994",
+   "title_hash": "72932c60f4985fb0d50f37f99288e29a",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": true,
+   "title": "Latent Undertow: How Ordinary Typos Break Probes",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-16T04:00:00+00:00",
+   "summary": "Study finds that ordinary typos rotate probe readout vectors in language models, causing malicious prompt detectors to fail below 15 percent accuracy.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15995",
+   "title_hash": "7e85bab8894f06c0ad2668df9566e947",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": true,
+   "title": "Bias Audits Detect Bias but Disagree on Ranking: Evidence from Ten Instruments and Ten Frontier Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-16T04:00:00+00:00",
+   "summary": "Ten bias audit instruments produce inconsistent model rankings across ten frontier models, raising concerns about audit-based regulation and model comparison.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15996",
+   "title_hash": "2598cb969a2548241286d41b771b8f4f",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow methodological comment"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15997",
+   "title_hash": "9c047755404fc4fe154104ebc512cf7c",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15998",
+   "title_hash": "e325a29a65ccd14128449d803c0bc96a",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": true,
+   "title": "Self-reported archetypes and behavioral failures in Large Language Models",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-16T04:00:00+00:00",
+   "summary": "Research maps self-reported character traits in language models, revealing persistent behavioral dispositions that shape interaction patterns and failure modes.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.15999",
+   "title_hash": "d56bfc26bdd8ff7fc62a826f73b4bb09",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16010",
+   "title_hash": "65dda74e4d88fd6f26d2a6226c2cc7f1",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16014",
+   "title_hash": "536531d4a9617dcec054625d8727724d",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16023",
+   "title_hash": "d6df0d48055ec0485f423afa33c6b7be",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": true,
+   "title": "Are We Grading Properly? Understanding Failure Modes in Medical Benchmarks",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-16T04:00:00+00:00",
+   "summary": "Study examines failure modes in medical benchmarks that use rubric-based evaluation to grade open-ended clinical scenarios at scale.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16053",
+   "title_hash": "c406d2b17ed9d669efcd56d7c7d1ec0f",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16055",
+   "title_hash": "bf24dfbb36658dfabe4e8a8c8b42d1ac",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16059",
+   "title_hash": "6ef1c8066aba40cd969682634aa007ef",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16070",
+   "title_hash": "a757e2298d95415f4aa89fa1edbdf121",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16073",
+   "title_hash": "3b2666cd70556d32f0082b1ff5783fda",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16076",
+   "title_hash": "a3f0c78df741d9993581183205f42607",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16095",
+   "title_hash": "4363c3537b5f542238205ca0524d1255",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": true,
+   "title": "RAG-CT: Mitigating Privacy Risks on Retrieval-Augmented Generation Systems via Scanning Prompt Distribution",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-16T04:00:00+00:00",
+   "summary": "Study demonstrates privacy vulnerabilities in retrieval-augmented generation systems where adversaries can exploit retrieval mechanisms through prompt distribution scanning.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16268",
+   "title_hash": "28dae25cf81db6691fe7bb7474e24971",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": true,
+   "title": "Spurious Tool Use: When RL Agents Learn the Wrong Reason to Act",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-16T04:00:00+00:00",
+   "summary": "Research on reinforcement learning-trained language model agents reveals how they learn spurious correlations and shortcut policies for tool use.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16274",
+   "title_hash": "397ea8e051d9a3e68f64f2de88a8afc2",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16275",
+   "title_hash": "3903d9d17afd8ab07e9c13275c618b17",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16312",
+   "title_hash": "e0fd79ad7943b21084e73fa7d18f717f",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.16340",
+   "title_hash": "c8a10267eeca263a1db77010834384a6",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/995917/data-center-nyt-midterm-poll-september",
+   "title_hash": "b3b2756d03724d1395b8642cdf729b5a",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/15/gemini-live",
+   "title_hash": "a0ee9162c1029f4dd833a6b6caec7b86",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1whf7ov/dont_buy_a_9k_rtx_5090_instead",
+   "title_hash": "981dd562ccfd5d4f6f91273f61a4a61a",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://github.com/GraafHenk/numberwang",
+   "title_hash": "39c66f400950df0d11b5c6d19529ca24",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "minor release notes"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42743814?fc=20260609215449&ff=20260916005241&v=2.20.1",
+   "title_hash": "0db55669ebc97881b2daff8953829721",
+   "first_seen": "2026-09-16T04:52:41.355548+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
   }
  ],
  "digests": [
@@ -31937,19 +32141,19 @@
  "last_digest_at": "2026-09-11T04:44:45.324469+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A new benchmark finds that language models tested on retrospective clinical records may be rewarded for using information unavailable at decision time, raising doubts about their prospective reasoning <a href=\"https://arxiv.org/abs/2609.13454\">[1]</a>. That concern echoes a broader gap: despite rapid college adoption of AI tools, independent research on actual learning outcomes remains scarce <a href=\"https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/09/14/nonexistent-research-ais-benefits-education\">[4]</a>. Reliability issues extend to exams as well, with one model scoring well on foot and ankle surgery questions while fabricating citations more often than others tested <a href=\"https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1\">[7]</a>. A randomized trial comparing LLM-generated synthetic clinical cases with real records found the synthetic data performed comparably, though non-inferiority was not established <a href=\"https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1\">[9]</a>.\n\nAlso this week: seven items address teaching and curriculum, four cover exams and benchmarks, and two each examine assessment and feedback and attitudes toward AI adoption. Highlights include a pilot CustomGPT built for the Royal College of Ophthalmologists&#x27; 2024 curriculum and an eight-week hospital program that trained staff on model context protocols and retrieval-augmented generation.",
-   "hash": "12a89a73e7fdc425",
-   "date": "September 15, 2026"
+   "text": "A new study of rubric-based grading in medical benchmarks finds that scoring methods can introduce errors, raising questions about how AI systems are evaluated at scale <a href=\"https://arxiv.org/abs/2609.16023\">[1]</a>. A related benchmark shows that models tested on retrospective records can be rewarded for using information unavailable at the time of decision, exposing hindsight bias in clinical reasoning <a href=\"https://arxiv.org/abs/2609.13454\">[7]</a>. A randomized trial found LLM-generated synthetic clinical cases performed comparably to real records for immediate testing but did not meet non-inferiority thresholds <a href=\"https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1\">[15]</a>, while another study used multi-agent collaboration to generate exam items <a href=\"https://www.nature.com/articles/s41746-026-03187-z\">[11]</a>. A survey of health care professionals found openness to AI for lower-risk tasks tempered by concerns about oversight <a href=\"https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1\">[5]</a>.\n\nAlso this week: teaching and curriculum work makes up the largest share of new items, including trials on ECG interpretation training and AI-based virtual platforms for residency education, alongside four papers on assessment and feedback, two on simulation and skills, two more on exams and benchmarks, and one survey on clinician attitudes toward adoption.",
+   "hash": "d5ad3b248c27c8fe",
+   "date": "September 16, 2026"
   },
   "clinical_practice": {
-   "text": "The most notable signal this cycle concerns reliability: a benchmark study found that clinical LLM agents given identical inputs produced different orders, medications, and referrals across repeated runs <a href=\"https://arxiv.org/abs/2609.13582\">[4]</a>, reinforcing a broader argument that trust in conversational medical AI depends on prospective, real-world validation rather than benchmark performance alone <a href=\"https://www.nature.com/articles/s41591-026-04639-5\">[9]</a>. In oncology decision support, a multimodal explainable AI tool outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in an international study <a href=\"https://www.nature.com/articles/s41591-026-04488-2\">[14]</a>. Separately, a crossover study of locally deployed large language models showed pharmacist-reviewed prescription safety benefits while preserving data privacy <a href=\"https://medinform.jmir.org/2026/1/e97520\">[5]</a>.\n\nAlso this week: the section includes five safety and evaluation studies, four on clinical decision support, and three on imaging and diagnostics, plus two documentation papers addressing hallucination risk in discharge summaries and biomedical text. One patient-facing study evaluates a human-AI exposure intervention for academic anxiety, with imaging work spanning ECG foundation models to prostate cancer risk signatures.",
-   "hash": "70d8ddc6897c8bd5",
-   "date": "September 15, 2026"
+   "text": "Medicare&#x27;s rushed AI prior authorization pilot drew scrutiny after documents revealed insufficient testing led to delayed care in some cases <a href=\"https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care\">[4]</a>, underscoring reliability concerns that also surfaced in a benchmark finding that clinical LLM agents produce inconsistent actions on identical patient inputs <a href=\"https://arxiv.org/abs/2609.13582\">[8]</a>. In response to such unpredictability, researchers proposed on-premise deployment of clinical AI agents with built-in reliability metrics and selective autonomy <a href=\"https://www.nature.com/articles/s41591-026-04609-x\">[9]</a>. Parallel efforts targeted documentation safety, with new frameworks for extractive summarization and discharge summary generation aimed at reducing hallucinations <a href=\"https://arxiv.org/abs/2609.13581\">[7]</a>, while imaging work included a global attention-based segmentation model for renal tumors <a href=\"https://medinform.jmir.org/2026/1/e78523\">[2]</a>.\n\nAlso this week: four studies examined clinical documentation tools, three focused on safety and evaluation methods for AI outputs, and three assessed clinical decision support systems, including locally deployed models for prescription review and machine learning predictions of neonatal sepsis. A single conjoint analysis explored patient preferences for smart home emergency detection systems among German adults.",
+   "hash": "b3238c664d6a19ab",
+   "date": "September 16, 2026"
   },
   "general_ai": {
-   "text": "Anthropic&#x27;s CEO joined other industry leaders in urging a slower pace for large language model development, citing safety concerns that have outpaced deployment safeguards <a href=\"https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed\">[3]</a>. That call gained concrete weight from a related finding: Google DeepMind researchers observed AI agents independently detecting and reporting cheating by other agents during a math task, marking a notable instance of whistleblowing behavior with implications for multi-agent alignment <a href=\"https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues\">[4]</a>. Microsoft followed with a 37-page code of conduct asserting that people matter more than AI as models advance faster than safety verification allows <a href=\"https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct\">[6]</a>. Meanwhile, OpenAI&#x27;s newly detailed Jalapeño accelerator chip illustrates how quickly the compute powering these systems continues to advance <a href=\"https://spectrum.ieee.org/llms-for-chip-design\">[5]</a>.\n\nAlso this week: the section carries seven items on safety and reliability, five on research and methods, and one each on new models and benchmarking. Additional work covers retrieval partitioning for generation systems, byte-level model distillation, and biomedical hypothesis generation, while GAUGE examines when language-model judges misjudge task-oriented agents.",
-   "hash": "25d29c414109ff9e",
-   "date": "September 15, 2026"
+   "text": "Industry leaders, including Anthropic&#x27;s chief executive, are urging a slower pace of large language model development, citing safety concerns that have outpaced deployment safeguards <a href=\"https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed\">[11]</a>. Microsoft&#x27;s newly published conduct code echoes that concern, asserting that human oversight must take priority over model capability gains <a href=\"https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct\">[14]</a>. Meanwhile, Google DeepMind researchers documented AI agents autonomously detecting and reporting cheating by other agents during a math task, a first observation of whistleblowing behavior with implications for multi-agent alignment <a href=\"https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues\">[12]</a>. Separately, researchers found that ordinary typos can rotate probe readout vectors, causing malicious-prompt detectors to fail below 15 percent accuracy <a href=\"https://arxiv.org/abs/2609.15994\">[3]</a>, underscoring how fragile some safety mechanisms remain.\n\nAlso this week: nine items address safety and reliability, including audits showing bias-detection tools disagree on model rankings and reinforcement-learning agents that learn spurious tool-use policies. Two research and methods papers examine inference cost trade-offs and self-reported model archetypes, while two new-model reports cover OpenAI&#x27;s Jalapeño accelerator chip and Mozilla&#x27;s finding that open-weight models match frontier systems within four months.",
+   "hash": "2400c2f49815c5c2",
+   "date": "September 16, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -32056,5 +32260,5 @@
    "url": "https://opencv26.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-15"
+ "section_briefs_refreshed": "2026-09-16"
 }

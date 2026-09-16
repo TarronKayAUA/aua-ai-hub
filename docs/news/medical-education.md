@@ -13,14 +13,21 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A new benchmark finds that language models tested on retrospective clinical records may be rewarded for using information unavailable at decision time, raising doubts about their prospective reasoning <a href="https://arxiv.org/abs/2609.13454">[1]</a>. That concern echoes a broader gap: despite rapid college adoption of AI tools, independent research on actual learning outcomes remains scarce <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/09/14/nonexistent-research-ais-benefits-education">[4]</a>. Reliability issues extend to exams as well, with one model scoring well on foot and ankle surgery questions while fabricating citations more often than others tested <a href="https://pubmed.ncbi.nlm.nih.gov/42732183?fc=20260609215449&amp;ff=20260913091933&amp;v=2.20.1">[7]</a>. A randomized trial comparing LLM-generated synthetic clinical cases with real records found the synthetic data performed comparably, though non-inferiority was not established <a href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[9]</a>.</p>
-<p>Also this week: seven items address teaching and curriculum, four cover exams and benchmarks, and two each examine assessment and feedback and attitudes toward AI adoption. Highlights include a pilot CustomGPT built for the Royal College of Ophthalmologists&#x27; 2024 curriculum and an eight-week hospital program that trained staff on model context protocols and retrieval-augmented generation.</p>
-<p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the items below.</p>
+<p>A new study of rubric-based grading in medical benchmarks finds that scoring methods can introduce errors, raising questions about how AI systems are evaluated at scale <a href="https://arxiv.org/abs/2609.16023">[1]</a>. A related benchmark shows that models tested on retrospective records can be rewarded for using information unavailable at the time of decision, exposing hindsight bias in clinical reasoning <a href="https://arxiv.org/abs/2609.13454">[7]</a>. A randomized trial found LLM-generated synthetic clinical cases performed comparably to real records for immediate testing but did not meet non-inferiority thresholds <a href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[15]</a>, while another study used multi-agent collaboration to generate exam items <a href="https://www.nature.com/articles/s41746-026-03187-z">[11]</a>. A survey of health care professionals found openness to AI for lower-risk tasks tempered by concerns about oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">[5]</a>.</p>
+<p>Also this week: teaching and curriculum work makes up the largest share of new items, including trials on ECG interpretation training and AI-based virtual platforms for residency education, alongside four papers on assessment and feedback, two on simulation and skills, two more on exams and benchmarks, and one survey on clinician attitudes toward adoption.</p>
+<p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.16023">Are We Grading Properly? Understanding Failure Modes in Medical Benchmarks</a>
+    <p class="news-card-summary">Study examines failure modes in medical benchmarks that use rubric-based evaluation to grade open-ended clinical scenarios at scale.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 15, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">Pedagogical Efficacy of LLM-Generated Synthetic Data Versus Real-World Clinical Records: A Randomized Controlled Non-Inferiority Trial</a>
     <p class="news-card-summary">Randomized trial found LLM-generated synthetic clinical cases non-inferior to real cases for immediate test performance but did not demonstrate non-inferiority.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 12, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42729277?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">Reasoning vs. conventional large language models for BI-RADS educational questions answering: a multi-model comparative evaluation</a>
-    <p class="news-card-summary">Reasoning language models outperform conventional LLMs on BI-RADS radiology guidelines education questions but require specific optimization for complex scenarios.</p>
   </div>
 </div>
 </div>

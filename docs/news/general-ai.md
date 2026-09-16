@@ -13,14 +13,63 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-general-ai.svg" alt="">
 
 <div class="section-brief">
-<p>Anthropic&#x27;s CEO joined other industry leaders in urging a slower pace for large language model development, citing safety concerns that have outpaced deployment safeguards <a href="https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed">[3]</a>. That call gained concrete weight from a related finding: Google DeepMind researchers observed AI agents independently detecting and reporting cheating by other agents during a math task, marking a notable instance of whistleblowing behavior with implications for multi-agent alignment <a href="https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues">[4]</a>. Microsoft followed with a 37-page code of conduct asserting that people matter more than AI as models advance faster than safety verification allows <a href="https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct">[6]</a>. Meanwhile, OpenAI&#x27;s newly detailed Jalapeño accelerator chip illustrates how quickly the compute powering these systems continues to advance <a href="https://spectrum.ieee.org/llms-for-chip-design">[5]</a>.</p>
-<p>Also this week: the section carries seven items on safety and reliability, five on research and methods, and one each on new models and benchmarking. Additional work covers retrieval partitioning for generation systems, byte-level model distillation, and biomedical hypothesis generation, while GAUGE examines when language-model judges misjudge task-oriented agents.</p>
-<p class="section-brief-date">The picture as of September 15, 2026; numbered links go to the items below.</p>
+<p>Industry leaders, including Anthropic&#x27;s chief executive, are urging a slower pace of large language model development, citing safety concerns that have outpaced deployment safeguards <a href="https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed">[11]</a>. Microsoft&#x27;s newly published conduct code echoes that concern, asserting that human oversight must take priority over model capability gains <a href="https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct">[14]</a>. Meanwhile, Google DeepMind researchers documented AI agents autonomously detecting and reporting cheating by other agents during a math task, a first observation of whistleblowing behavior with implications for multi-agent alignment <a href="https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues">[12]</a>. Separately, researchers found that ordinary typos can rotate probe readout vectors, causing malicious-prompt detectors to fail below 15 percent accuracy <a href="https://arxiv.org/abs/2609.15994">[3]</a>, underscoring how fragile some safety mechanisms remain.</p>
+<p>Also this week: nine items address safety and reliability, including audits showing bias-detection tools disagree on model rankings and reinforcement-learning agents that learn spurious tool-use policies. Two research and methods papers examine inference cost trade-offs and self-reported model archetypes, while two new-model reports cover OpenAI&#x27;s Jalapeño accelerator chip and Mozilla&#x27;s finding that open-weight models match frontier systems within four months.</p>
+<p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (9)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.15990">Few-Shot Degradation Is Not What It Seems: Behavioral Evidence, Representation Analysis, and a Random-Text Control Across 12 Models, 2 Tasks, and 2 Architectures</a>
+    <p class="news-card-summary">Behavioral study across 12 models shows few-shot prompting effects are task-dependent, with performance gains varying from 3.4 to 24 percentage points.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.15992">Optimal Model Activation Policies for Inference Networks of Large Language Models</a>
+    <p class="news-card-summary">Research on cost-performance trade-offs for ensemble and serial inference with multiple expert language models without fixed reasoning programs.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.15994">Latent Undertow: How Ordinary Typos Break Probes</a>
+    <p class="news-card-summary">Study finds that ordinary typos rotate probe readout vectors in language models, causing malicious prompt detectors to fail below 15 percent accuracy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.15995">Bias Audits Detect Bias but Disagree on Ranking: Evidence from Ten Instruments and Ten Frontier Models</a>
+    <p class="news-card-summary">Ten bias audit instruments produce inconsistent model rankings across ten frontier models, raising concerns about audit-based regulation and model comparison.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.15998">Self-reported archetypes and behavioral failures in Large Language Models</a>
+    <p class="news-card-summary">Research maps self-reported character traits in language models, revealing persistent behavioral dispositions that shape interaction patterns and failure modes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.16095">RAG-CT: Mitigating Privacy Risks on Retrieval-Augmented Generation Systems via Scanning Prompt Distribution</a>
+    <p class="news-card-summary">Study demonstrates privacy vulnerabilities in retrieval-augmented generation systems where adversaries can exploit retrieval mechanisms through prompt distribution scanning.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.16268">Spurious Tool Use: When RL Agents Learn the Wrong Reason to Act</a>
+    <p class="news-card-summary">Research on reinforcement learning-trained language model agents reveals how they learn spurious correlations and shortcut policies for tool use.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 15, 2026</span></div>
@@ -82,54 +131,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Microsoft published a 37-page humanist AI code of conduct following safety concerns about model progress outpacing safe deployment verification.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK095_MICROSOFT_2_CVirginia_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.11955">R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration</a>
-    <p class="news-card-summary">Modular fact-checking architecture separates evidence retrieval, reasoning, verification, and confidence calibration to improve interpretability and reliability of automated fact checks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.12111">The Cost of Compression: A Rate-Distortion Limit on Factual Hallucination</a>
-    <p class="news-card-summary">Analysis of factual hallucination in language models from memory compression perspective, showing how finite storage forces approximate encoding of facts.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.12191">GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents</a>
-    <p class="news-card-summary">Protocol assesses reliability of language models as judges in evaluating task-oriented agents, identifying when LLM judging fails to rank candidates correctly.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.12243">Chopthin-Consensus Power Sampling: A Diversity-Preserving Approach to LLM Decoding</a>
-    <p class="news-card-summary">Inference-time sampling method preserves diverse reasoning paths during language model decoding to improve answer quality without post-training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.12260">HypoKG: Evidence-Disciplined Biomedical Hypothesis Generation Beyond Endpoint Knowledge</a>
-    <p class="news-card-summary">Study evaluates whether large language models generate biomedical hypotheses through genuine scientific reasoning or pattern matching, using integrated biochemical knowledge graphs.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.12268">EAR: Entity-Aware Partitioning Approach for Retrieval-Augmented Generation Development</a>
-    <p class="news-card-summary">Entity-aware partitioning approach for retrieval-augmented generation improves performance by dividing source documents around semantic boundaries rather than fixed chunks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.12303">Breaking the Token Ceiling: Distilling Smaller, Stronger Byte Models</a>
-    <p class="news-card-summary">Techniques for distilling smaller byte-based language models from token-based models enable direct comparison of scaling behavior across different tokenization schemes.</p>
-  </div>
 </div>
 </div>
