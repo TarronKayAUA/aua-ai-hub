@@ -18,9 +18,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42751669?fc=20260609215449&amp;ff=20260917154430&amp;v=2.20.1">Comparative Error Analysis of GPT-5.2 Reasoning Modes on Performance in Postgraduate Internal Medicine Single-Best-Answer Questions</a>
+    <p class="news-card-summary">Study compares GPT-5.2 reasoning modes on postgraduate internal medicine examination questions, evaluating extended-reasoning performance against standard modes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42751277?fc=20260609215449&amp;ff=20260917154430&amp;v=2.20.1">A Medical Large Language Model-Based System Improves History-Taking Performance Among Medical Students</a>
+    <p class="news-card-summary">A medical large language model system for history-taking training shows automated scoring agreement with manual assessment and strengthens students&#x27; clinical interviewing ability.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 17, 2026</span></div>
@@ -111,20 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42741389?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">Automated Assessment of OCT Angiography Image Quality Using the Artificial Intelligence Ready and Exploratory Atlas for Diabetes Insights Data Set</a>
     <p class="news-card-summary">Deep learning models trained on the AI-READI dataset achieved high performance in assessing optical coherence tomography angiography image quality and generalized well across institutions and equipment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.13454">Hindsight Bias in Clinical Temporal Reasoning: How Future Data Exposure Affects Large Language Model Judgment</a>
-    <p class="news-card-summary">Researchers introduced a benchmark showing that language models evaluated on retrospective clinical records may reward use of future information rather than prospective reasoning under uncertainty present at decision time.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.13556">Domain-Specific Jargon in Large Language Models: A Comparative Analysis between General-Purpose and Specialist Models</a>
-    <p class="news-card-summary">Researchers compared how general-purpose and specialist language models encode domain-specific medical terminology through two novel medical jargon evaluation benchmarks.</p>
   </div>
 </div>
 </div>

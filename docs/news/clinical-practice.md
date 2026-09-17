@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e74339">Hospital Human Resource Managers’ Perspectives on Organizational Readiness for Generative AI Skills: Qualitative Descriptive Study</a>
+    <p class="news-card-summary">Qualitative study examines hospital HR managers&#x27; perspectives on organizational readiness for generative AI adoption, identifying barriers including privacy, security, and governance concerns.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">September 17, 2026</span></div>
@@ -64,6 +71,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Peer-reviewed study applying conditional deep generative modeling to blood-based infrared spectroscopy for in-silico phenotyping.</p>
   </div>
 </div>
+<div class="news-card" data-topic="other">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03266-1">The generative rearchitecture of antibody engineering shifts empirical discovery into intentional design</a>
+    <p class="news-card-summary">Research describes how generative models enable intentional design approaches in antibody engineering, shifting from empirical discovery methods.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03262-5">The evidence challenge facing large language models in medicine</a>
+    <p class="news-card-summary">Article examines challenges in evidence generation and evaluation of large language models in clinical medicine, including rapid model iteration and variable study design reporting.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 16, 2026</span></div>
@@ -104,27 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03253-6">Benchmarking AI-generated thin-slice CT under clinical reconstruction conditions: a multicohort study</a>
     <p class="news-card-summary">Multicohort study benchmarks AI-generated thin-slice CT reconstruction quality under realistic clinical conditions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e94589">Consumer Preferences for AI-Based Smart Home Medical Emergency Detection Among German Adults: Choice-Based Conjoint Analysis</a>
-    <p class="news-card-summary">Conjoint analysis study of German adult preferences for artificial intelligence-based smart home systems designed to detect medical emergencies and enable independent living.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78523">Automated Renal Tumor Segmentation in Computed Tomography Images Using a Global Attention, Based DeepLabV3+ Model: Algorithm Development and Validation</a>
-    <p class="news-card-summary">Development and validation of a deep learning model using global attention-based DeepLabV3+ for automated segmentation of renal tumors in computed tomography scans to improve surgical planning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92727">Real-World Use of Controlled Terminologies, Ontologies, and Vocabularies for Evidence Generation Across a Large International Observational Network: Challenges and Lessons Learned From a Mixed Method Study</a>
-    <p class="news-card-summary">Study identifies challenges in applying controlled terminologies and ontologies for real-world evidence generation across federated international observational data sources.</p>
   </div>
 </div>
 </div>

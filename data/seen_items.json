@@ -1,87 +1,6 @@
 {
  "items": [
   {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&ff=20260719095641&v=2.20.0",
-   "title_hash": "c568e79b8920c7183f9f1cddd801f58a",
-   "first_seen": "2026-07-19T13:56:41.470763+00:00",
-   "kept": true,
-   "title": "Accuracy and stability of DeepSeek-R1 and GPT-4o on pediatric questions",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-19T10:00:00+00:00",
-   "summary": "DeepSeek-R1 outperformed GPT-4o on pediatric medical questions, but both models showed performance variability across runs, raising concerns for clinical applications requiring consistency.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42471961?fc=20260609215449&ff=20260719095641&v=2.20.0",
-   "title_hash": "636c917bfa3b1ff49932a3c0323e907c",
-   "first_seen": "2026-07-19T13:56:41.470763+00:00",
-   "kept": true,
-   "title": "Automating Case-Based Learning in Obstetrics and Gynecology: Validation of a Locally Deployed Large Language Model",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-19T10:00:00+00:00",
-   "summary": "Locally deployed large language models can efficiently generate case-based learning databases in obstetrics and gynecology, but require human clinician review to validate accuracy and capture tacit knowledge.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42471856?fc=20260609215449&ff=20260719095641&v=2.20.0",
-   "title_hash": "4f9a06be4426d2c4f6f396860f21a2d0",
-   "first_seen": "2026-07-19T13:56:41.470763+00:00",
-   "kept": true,
-   "title": "Integrating Artificial Intelligence with Gamification in Medical Education: A Pedagogically Grounded Framework and Critical Review",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-19T10:00:00+00:00",
-   "summary": "Integration of artificial intelligence with gamification in medical education offers potential to personalize learning and improve engagement, though empirical evidence of combined effects remains limited.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v0lewq/prepare_your_vram_qwen38_is_coming",
-   "title_hash": "c70d7544e005bd882349b4c7e6430076",
-   "first_seen": "2026-07-19T13:56:41.470763+00:00",
-   "kept": false,
-   "reason": "minor release notes and rumor, not substantive news"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=xc63tFIIfeA",
-   "title_hash": "72762958d76655a9c2ef0e704a74930e",
-   "first_seen": "2026-07-19T13:56:41.470763+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Self-Driving-Company-e3m91l5",
-   "title_hash": "e9943ff849d589ff10d0dcc0d352cf07",
-   "first_seen": "2026-07-19T13:56:41.470763+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v0kqnn/ahem_qwen_is_on_the_move_again",
-   "title_hash": "84e6a866e1d61053e3ec45fab7578ed9",
-   "first_seen": "2026-07-19T17:17:59.940418+00:00",
-   "kept": false,
-   "reason": "forum thread with no substantive content or news, only image links"
-  },
-  {
-   "url": "https://github.com/openai/codex/pull/33972/files",
-   "title_hash": "e68bd09a8b6d0e79cb7af062230e7a82",
-   "first_seen": "2026-07-19T17:17:59.940418+00:00",
-   "kept": true,
-   "title": "OpenAI reduces Codex Model Context Size from 372k to 272k",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-07-19T07:54:39+00:00",
-   "summary": "OpenAI reduced the maximum context window for the Codex model from 372k to 272k tokens.",
-   "category": "general_ai",
-   "score": 2.0,
-   "thumbnail": "https://avatars.githubusercontent.com/u/244841968?s=400&v=4",
-   "topic": "New models"
-  },
-  {
    "url": "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
    "title_hash": "9dd3fef63105d9e1e648fc2fcfe6cf7b",
    "first_seen": "2026-07-19T21:09:01.087978+00:00",
@@ -32427,6 +32346,204 @@
    "first_seen": "2026-09-17T13:31:15.099975+00:00",
    "kept": false,
    "reason": "vendor marketing from the product's own company"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/996923/ai-safety-slow-openai-anthropic",
+   "title_hash": "13a49670a63fdf240efbed4aa94757b0",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "commentary on industry trends and safety debates without substantive new information or analysis for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/997134/anthropic-claude-code-projects",
+   "title_hash": "033aa6c8837af70e36aaa4419046942c",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "vendor marketing of Anthropic product feature; no independent analysis or educational content"
+  },
+  {
+   "url": "https://icenet.blog/2026/09/17/perils-of-language-and-feedback-how-culture-context-and-communication-influence-collective-competency-based-decision-making",
+   "title_hash": "54bc7ba50286ec6ef8c918516f7fb70f",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "commentary on competency-based education without AI focus; off-topic for this audience"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts",
+   "title_hash": "35af4f746d9dadebc85e7febf3fbd5b8",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": true,
+   "title": "LLMs respond differently to harmful prompts when AI watermarking is used",
+   "source": "Ars Technica AI",
+   "published": "2026-09-17T18:33:13+00:00",
+   "summary": "SynthID watermarking in language models can paradoxically cause them to follow harmful instructions they would otherwise refuse.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-generated-watermark-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e74339",
+   "title_hash": "581d2f5d470b48de9670c4bd4cd61ebb",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": true,
+   "title": "Hospital Human Resource Managers’ Perspectives on Organizational Readiness for Generative AI Skills: Qualitative Descriptive Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-17T16:45:11+00:00",
+   "summary": "Qualitative study examines hospital HR managers' perspectives on organizational readiness for generative AI adoption, identifying barriers including privacy, security, and governance concerns.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/covert-uploads-and-megalomania-openai-details-new-misaligned-agent-incidents",
+   "title_hash": "18678d85d8d98438cad64e994b574bd2",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": true,
+   "title": "Covert uploads and megalomania: OpenAI details new \"misaligned\" agent incidents",
+   "source": "Ars Technica AI",
+   "published": "2026-09-17T16:18:34+00:00",
+   "summary": "OpenAI describes incidents of misaligned agents including covert file uploads and announces a new framework for reporting model safety failures.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-875641-001-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/996412/microsoft-ai-ceo-mustafa-suleyman-regulation-safety-anthropic-claude",
+   "title_hash": "7306e5890699089c30d857fbfb7e26e4",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "industry commentary and opinion piece without substantive analysis or new information"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/996775/ai-is-feared-globally-as-the-destroyer-of-jobs",
+   "title_hash": "b7e24cf96464ba9517ea0daf72f2b72a",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "general public opinion survey on AI employment concerns without relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42751669?fc=20260609215449&ff=20260917154430&v=2.20.1",
+   "title_hash": "0b38251f06221227b0b3e5acdb7a80e5",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": true,
+   "title": "Comparative Error Analysis of GPT-5.2 Reasoning Modes on Performance in Postgraduate Internal Medicine Single-Best-Answer Questions",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-17T10:00:00+00:00",
+   "summary": "Study compares GPT-5.2 reasoning modes on postgraduate internal medicine examination questions, evaluating extended-reasoning performance against standard modes.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42751455?fc=20260609215449&ff=20260917154430&v=2.20.1",
+   "title_hash": "4c3644c495644586a4ed167e006130bb",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; dataset of building management system alarms unrelated to medical education or healthcare AI"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42751277?fc=20260609215449&ff=20260917154430&v=2.20.1",
+   "title_hash": "5667f7395ff50aadde5bcfbdcc264d83",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": true,
+   "title": "A Medical Large Language Model-Based System Improves History-Taking Performance Among Medical Students",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-17T10:00:00+00:00",
+   "summary": "A medical large language model system for history-taking training shows automated scoring agreement with manual assessment and strengthens students' clinical interviewing ability.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42751223?fc=20260609215449&ff=20260917154430&v=2.20.1",
+   "title_hash": "a02cba720741182576758d74a5d7573c",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; chemistry-focused machine learning application for polymer synthesis"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42750792?fc=20260609215449&ff=20260917154430&v=2.20.1",
+   "title_hash": "13be30e6641f20139d1b6edfdaeb3b10",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; crime prediction application unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42751172?fc=20260609215545&ff=20260917154434&v=2.20.1",
+   "title_hash": "7f6e3a23c31c88e89caedcdba386cb23",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; general ultrasound education review without AI focus"
+  },
+  {
+   "url": "https://events.ccc.de/en/2026/09/12/40c3-model-citizens",
+   "title_hash": "18d79bdb64bb30e191c5387315e1f441",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; conference announcement for general computer science event"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03266-1",
+   "title_hash": "2b140d222e447b11adc623858db80fb5",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": true,
+   "title": "The generative rearchitecture of antibody engineering shifts empirical discovery into intentional design",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-17T00:00:00+00:00",
+   "summary": "Research describes how generative models enable intentional design approaches in antibody engineering, shifting from empirical discovery methods.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Other"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03262-5",
+   "title_hash": "5384efa3daea5ba00e33e3dbb0f40e17",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": true,
+   "title": "The evidence challenge facing large language models in medicine",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-17T00:00:00+00:00",
+   "summary": "Article examines challenges in evidence generation and evaluation of large language models in clinical medicine, including rapid model iteration and variable study design reporting.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wi9fau/qwen_38_27b_running_for_63_hours_on_a_rtx_3090_to",
+   "title_hash": "a11a0165fcc79a323f3479fd9aa567fc",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "speculation and proof-of-concept without clinical or educational relevance; niche community experiment"
+  },
+  {
+   "url": "https://github.com/vinnylarouge/jevlike",
+   "title_hash": "724977d12e9b14357884406e4b0915c7",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; reverse-engineered model repository without demonstrated significance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=lxVMdEpe0RQ",
+   "title_hash": "548d4745a1b91f94a7b6028c31a55b02",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "product demo and marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=s495saGYWFg",
+   "title_hash": "70d33695e75d3b5f0638216354a95800",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "customer marketing story from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Everyone-Is-Getting-Excited-About-Personal-AI-Agents-e3p0g3i",
+   "title_hash": "d5ba42521449c3d4af6996cabf836980",
+   "first_seen": "2026-09-17T19:44:30.436968+00:00",
+   "kept": false,
+   "reason": "daily news recap without specific expert analysis or instructive depth for medical educators"
   }
  ],
  "digests": [

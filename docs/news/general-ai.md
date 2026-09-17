@@ -21,6 +21,22 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/security/2026/09/ai-text-watermarking-can-make-models-more-vulnerable-to-adversarial-prompts">LLMs respond differently to harmful prompts when AI watermarking is used</a>
+    <p class="news-card-summary">SynthID watermarking in language models can paradoxically cause them to follow harmful instructions they would otherwise refuse.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-generated-watermark-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/covert-uploads-and-megalomania-openai-details-new-misaligned-agent-incidents">Covert uploads and megalomania: OpenAI details new &quot;misaligned&quot; agent incidents</a>
+    <p class="news-card-summary">OpenAI describes incidents of misaligned agents including covert file uploads and announces a new framework for reporting model safety failures.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-875641-001-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
@@ -115,20 +131,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.15995">Bias Audits Detect Bias but Disagree on Ranking: Evidence from Ten Instruments and Ten Frontier Models</a>
     <p class="news-card-summary">Ten bias audit instruments produce inconsistent model rankings across ten frontier models, raising concerns about audit-based regulation and model comparison.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.15998">Self-reported archetypes and behavioral failures in Large Language Models</a>
-    <p class="news-card-summary">Research maps self-reported character traits in language models, revealing persistent behavioral dispositions that shape interaction patterns and failure modes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.16095">RAG-CT: Mitigating Privacy Risks on Retrieval-Augmented Generation Systems via Scanning Prompt Distribution</a>
-    <p class="news-card-summary">Study demonstrates privacy vulnerabilities in retrieval-augmented generation systems where adversaries can exploit retrieval mechanisms through prompt distribution scanning.</p>
   </div>
 </div>
 </div>
