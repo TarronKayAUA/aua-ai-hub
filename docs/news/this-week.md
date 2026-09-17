@@ -13,14 +13,14 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## Medical Education
 
 <div class="section-brief">
-<p>A new study of rubric-based grading in medical benchmarks finds that scoring methods can introduce errors, raising questions about how AI systems are evaluated at scale <a href="https://arxiv.org/abs/2609.16023">[1]</a>. A related benchmark shows that models tested on retrospective records can be rewarded for using information unavailable at the time of decision, exposing hindsight bias in clinical reasoning <a href="https://arxiv.org/abs/2609.13454">[7]</a>. A randomized trial found LLM-generated synthetic clinical cases performed comparably to real records for immediate testing but did not meet non-inferiority thresholds <a href="https://pubmed.ncbi.nlm.nih.gov/42730316?fc=20260609215449&amp;ff=20260913005213&amp;v=2.20.1">[15]</a>, while another study used multi-agent collaboration to generate exam items <a href="https://www.nature.com/articles/s41746-026-03187-z">[11]</a>. A survey of health care professionals found openness to AI for lower-risk tasks tempered by concerns about oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">[5]</a>.</p>
-<p>Also this week: teaching and curriculum work makes up the largest share of new items, including trials on ECG interpretation training and AI-based virtual platforms for residency education, alongside four papers on assessment and feedback, two on simulation and skills, two more on exams and benchmarks, and one survey on clinician attitudes toward adoption.</p>
-<p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the source items.</p>
+<p>A multi-agent language model simulator for clinical reasoning practice shows promise for deliberate practice when agents maintain role stability and contextual fidelity <a href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">[9]</a>. That optimism sits alongside new scrutiny of how such systems are graded: one study finds common failure modes in rubric-based benchmarks used to score open-ended clinical scenarios <a href="https://arxiv.org/abs/2609.16023">[7]</a>, while another shows benchmarks built on retrospective records can reward hindsight over prospective reasoning <a href="https://arxiv.org/abs/2609.13454">[13]</a>. Meanwhile, an AI-based virtual case platform in obstetrics and gynecology residency training improved resident and patient satisfaction <a href="https://pubmed.ncbi.nlm.nih.gov/42733601?fc=20260609215449&amp;ff=20260914110224&amp;v=2.20.1">[15]</a>, and survey data continue to show clinicians and students favor AI adoption while flagging unresolved concerns about accuracy, bias, and oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">[11]</a>.</p>
+<p>Also this week: four papers explore attitudes and adoption among clinicians and trainees across specialties such as pulmonology, otolaryngology, and radiology, four more examine assessment and feedback methods for AI-driven tools, and two focus on simulation and skills training. Additional teaching and curriculum work covers narrative competency, medical jargon comprehension, and structured frameworks for assessing patient AI use.</p>
+<p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
@@ -290,34 +290,41 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A review of AI in reproductive medicine education concludes that AI serves best as a supervised adjunct with phased integration, explicit guardrails, and careful evaluation.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.09684">Which Medical Questions Deserve Rationales? Perturbation-Sensitive Selection for Robust QA</a>
-        <p class="news-card-summary">A method selects which medical questions in training datasets should receive rationale supervision under budget constraints to improve question-answering robustness.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 9, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42715712?fc=20260609215449&amp;ff=20260910004639&amp;v=2.20.1">Leveraging Natural Language Processing for Analysis of EPA Comment Quality by Automated QuAL Scoring</a>
-        <p class="news-card-summary">Natural language processing analysis of evaluation comments in medical education reveals that three-quarters lack improvement suggestions, identifying a gap in feedback quality.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Medicare&#x27;s rushed AI prior authorization pilot drew scrutiny after documents revealed insufficient testing led to delayed care in some cases <a href="https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care">[4]</a>, underscoring reliability concerns that also surfaced in a benchmark finding that clinical LLM agents produce inconsistent actions on identical patient inputs <a href="https://arxiv.org/abs/2609.13582">[8]</a>. In response to such unpredictability, researchers proposed on-premise deployment of clinical AI agents with built-in reliability metrics and selective autonomy <a href="https://www.nature.com/articles/s41591-026-04609-x">[9]</a>. Parallel efforts targeted documentation safety, with new frameworks for extractive summarization and discharge summary generation aimed at reducing hallucinations <a href="https://arxiv.org/abs/2609.13581">[7]</a>, while imaging work included a global attention-based segmentation model for renal tumors <a href="https://medinform.jmir.org/2026/1/e78523">[2]</a>.</p>
-<p>Also this week: four studies examined clinical documentation tools, three focused on safety and evaluation methods for AI outputs, and three assessed clinical decision support systems, including locally deployed models for prescription review and machine learning predictions of neonatal sepsis. A single conjoint analysis explored patient preferences for smart home emergency detection systems among German adults.</p>
-<p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the source items.</p>
+<p>Medicare&#x27;s rushed rollout of an AI-based prior authorization pilot drew scrutiny, as newly revealed documents showed insufficient testing led to delayed care in some cases <a href="https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care">[13]</a>. Bias and reliability concerns also surfaced in academic work: a paired-comparison audit found sex and gender disparities in emergency triage decisions generated by large language models <a href="https://www.nature.com/articles/s41746-026-03090-7">[8]</a>, while a retrieve-then-verify study questioned whether models properly cite sources when generating medical information, raising hallucination concerns <a href="https://ai.jmir.org/2026/1/e93761">[5]</a>. On the imaging side, a multicohort benchmark evaluated AI-generated thin-slice CT reconstruction under real clinical conditions <a href="https://www.nature.com/articles/s41746-026-03253-6">[9]</a>, and a systematic review assessed the readiness of electronic health record-based models for predicting in-hospital delirium <a href="https://medinform.jmir.org/2026/1/e91618">[4]</a>.</p>
+<p>Also this week: the section adds six safety and evaluation studies, including multilingual biomedical concept normalization benchmarking and traditional Chinese medicine case evaluations, alongside three clinical decision support papers, three imaging and diagnostics studies, two clinical documentation projects, and one patient-facing tool assessing consumer preferences for smart home emergency detection.</p>
+<p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.17532">Enhancing Extubation Failure Prediction with LLM-Derived Features from Respiratory Therapy Clinical Notes</a>
+        <p class="news-card-summary">Method to predict mechanical ventilation extubation failure using large language model features extracted from respiratory therapy clinical notes.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.17544">Large Language Models Versus Physicians in Traditional Chinese Medicine: A Real-World Clinical Case Evaluation</a>
+        <p class="news-card-summary">Evaluation of 16 large language models versus practicing physicians on 349 real-world traditional Chinese medicine clinical cases.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03193-1">Probabilistic multimodal learning for drug, target interaction prediction</a>
+        <p class="news-card-summary">Probabilistic multimodal learning approach for predicting drug-target interactions.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 16, 2026</span></div>
@@ -351,6 +358,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03090-7">Auditing sex/gender disparities in emergency triage with LLM-based paired comparisons</a>
         <p class="news-card-summary">Study uses paired large language model comparisons to audit sex and gender disparities in emergency triage decision-making.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03253-6">Benchmarking AI-generated thin-slice CT under clinical reconstruction conditions: a multicohort study</a>
+        <p class="news-card-summary">Multicohort study benchmarks AI-generated thin-slice CT reconstruction quality under realistic clinical conditions.</p>
       </div>
     </div>
     <div class="news-card" data-topic="patient-facing-tools">
@@ -572,20 +586,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Systematic review examines AI applications for improving patient understanding and comprehension during informed consent processes for medical procedures.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.09356">Auditable Emergency Triage for Maternal and Newborn Care in India</a>
-        <p class="news-card-summary">A WhatsApp-based maternal health service deployed large language models for emergency triage classification with auditability requirements.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.09696">When Auditors Fabricate: Batch-Size Degradation and Confident Hallucination in LLM Detection of Planted Document Contamination</a>
-        <p class="news-card-summary">Study of large language model reliability as document auditors reveals batch-size effects and confident hallucination in detecting planted errors in academic papers.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 10, 2026</span></div>
@@ -621,14 +621,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A study describes an agent-driven system for cost-effective rare disease discovery from electronic health records using AI.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 9, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/09/09/uk-unveils-recommendations-ai-regulation-medicine">STAT+: U.K. unveils recommendations for regulating AI in medicine</a>
-        <p class="news-card-summary">The United Kingdom released regulatory recommendations for artificial intelligence use in medicine.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_476983486-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## General AI
@@ -639,10 +631,31 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.17535">DANTINOX: A Unified Framework for Multi-Paradigm Language Modeling</a>
+        <p class="news-card-summary">Unified framework comparing three language generation paradigms autoregressive, masked diffusion, flow-matching in single codebase.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.17708">Confidence Comes from Experience: Experiential Confidence Estimation from Reasoning to Agents</a>
+        <p class="news-card-summary">Method for reliable confidence estimation in language model outputs using experiential data from model history.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.17848">SFT or RL for Tool-Calling Agents? A Controlled Study Across Data, Method, and Scale</a>
+        <p class="news-card-summary">Controlled comparison of supervised fine-tuning and reinforcement learning methods for training tool-calling agents across model scales.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 16, 2026</span></div>

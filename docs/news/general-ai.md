@@ -18,9 +18,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.17535">DANTINOX: A Unified Framework for Multi-Paradigm Language Modeling</a>
+    <p class="news-card-summary">Unified framework comparing three language generation paradigms autoregressive, masked diffusion, flow-matching in single codebase.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.17708">Confidence Comes from Experience: Experiential Confidence Estimation from Reasoning to Agents</a>
+    <p class="news-card-summary">Method for reliable confidence estimation in language model outputs using experiential data from model history.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.17848">SFT or RL for Tool-Calling Agents? A Controlled Study Across Data, Method, and Scale</a>
+    <p class="news-card-summary">Controlled comparison of supervised fine-tuning and reinforcement learning methods for training tool-calling agents across model scales.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 16, 2026</span></div>
@@ -108,28 +129,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.16095">RAG-CT: Mitigating Privacy Risks on Retrieval-Augmented Generation Systems via Scanning Prompt Distribution</a>
     <p class="news-card-summary">Study demonstrates privacy vulnerabilities in retrieval-augmented generation systems where adversaries can exploit retrieval mechanisms through prompt distribution scanning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.16268">Spurious Tool Use: When RL Agents Learn the Wrong Reason to Act</a>
-    <p class="news-card-summary">Research on reinforcement learning-trained language model agents reveals how they learn spurious correlations and shortcut policies for tool use.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/exclusive-open-chinese-models-close-gap-with-silicon-valleys-frontier-ai-models">Exclusive: Paying for frontier AI models buys 4-month head start at 5x the cost</a>
-    <p class="news-card-summary">Open-weight models now match frontier commercial models within four months at one-fifth the cost, according to Mozilla&#x27;s analysis.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/China-US-AI-race-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.13734">PolicyMem: Geometric Policy Memory for LLM Governance</a>
-    <p class="news-card-summary">Researchers introduced PolicyMem, a geometric policy memory framework that decouples language model governance from specific trained models and taxonomies, offering flexible safeguarding for high-stakes deployments.</p>
   </div>
 </div>
 </div>
