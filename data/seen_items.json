@@ -1,74 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/19/ai-mania",
-   "title_hash": "ec95d88209359fbfe42e2ebb2fc4a4d7",
-   "first_seen": "2026-07-19T06:43:48.488671+00:00",
-   "kept": false,
-   "reason": "commentary on corporate decision-making trends rather than substantive analysis of AI development or deployment relevant to medical education"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/19/claude-code-in-bun-in-rust",
-   "title_hash": "2ab5790bed4cfa27667d65a8e6cb465c",
-   "first_seen": "2026-07-19T06:43:48.488671+00:00",
-   "kept": false,
-   "reason": "minor release notes and implementation detail not relevant to medical educators"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v0czbk/head_of_strategic_futures_from_openai_on",
-   "title_hash": "46ff961070acf9868cc04c90fa71095f",
-   "first_seen": "2026-07-19T06:43:48.488671+00:00",
-   "kept": true,
-   "title": "head of strategic futures from openai on open-weight chinese models.",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-19T01:15:23+00:00",
-   "summary": "An analysis of China's open-weight AI models and their potential effects on capital expenditure and US regulatory response in the context of strategic competition.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://preview.redd.it/fzdusgco73eh1.png?width=640&crop=smart&auto=webp&s=d32d1aaa09ce0461d200358ff5b96cf12e4633d5",
-   "topic": "Industry and policy"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42471688?fc=20260609215449&ff=20260719024348&v=2.20.0",
-   "title_hash": "41a0cc4faf7e436f75b134df58bc4011",
-   "first_seen": "2026-07-19T06:43:48.488671+00:00",
-   "kept": true,
-   "title": "Technology anxiety and artificial intelligence readiness in nursing students: a cross-sectional study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-18T10:00:00+00:00",
-   "summary": "A study finds that nursing students with greater AI preparation report less technology anxiety, suggesting curriculum-integrated AI training and digital skills development may reduce adoption barriers.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42471045?fc=20260609215449&ff=20260719024348&v=2.20.0",
-   "title_hash": "d8496276c224af3a573671c5fd758782",
-   "first_seen": "2026-07-19T06:43:48.488671+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; vaccine development review with no focus on artificial intelligence"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42470613?fc=20260609215449&ff=20260719024348&v=2.20.0",
-   "title_hash": "02a6991ddc71783be9386dde608d5ff6",
-   "first_seen": "2026-07-19T06:43:48.488671+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; focuses on clinical education logistics in emergency departments, not artificial intelligence"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42470331?fc=20260609215449&ff=20260719024348&v=2.20.0",
-   "title_hash": "1b1b5d8226a2a4b971f5d7d8934be0a0",
-   "first_seen": "2026-07-19T06:43:48.488671+00:00",
-   "kept": true,
-   "title": "Artificial Intelligence and the Art of Medicine: A Framework for Clinical Wisdom in a Digital Age",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-18T10:00:00+00:00",
-   "summary": "A framework examining how AI transforms clinical practice and medical education while addressing ethical, legal, and professional challenges in the physician-patient relationship and clinical decision-making.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
    "url": "https://pubmed.ncbi.nlm.nih.gov/42472269?fc=20260609215449&ff=20260719095641&v=2.20.0",
    "title_hash": "c568e79b8920c7183f9f1cddd801f58a",
    "first_seen": "2026-07-19T13:56:41.470763+00:00",
@@ -32336,6 +32268,165 @@
    "first_seen": "2026-09-17T04:56:10.006408+00:00",
    "kept": false,
    "reason": "off-topic for this audience; no relevance to medicine, medical education, or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/996563/ai-safety-research-metr-redwood-openai-anthropic",
+   "title_hash": "5165389ef75c0f695d3ce1d78ae9cf93",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "speculative fiction about unreleased model and industry drama; no real event or development"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/things-you-should-have-stopped-doing",
+   "title_hash": "42d2a4781c3935a8e7ea7e9c7dec4f9a",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "listicle with no substantive content summary provided; insufficient detail to evaluate"
+  },
+  {
+   "url": "https://medicalfuturist.com/the-future-of-pharma-reps-5-ways-ai-will-transform-pharmaceutical-sales-representatives",
+   "title_hash": "3cd82f760e61713a73331bf1703434ae",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "vendor marketing from The Medical Futurist about pharma adoption; speculative rather than evidence-based"
+  },
+  {
+   "url": "https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices",
+   "title_hash": "be8fc5a78fee76c1067a0416813f1103",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": true,
+   "title": "The Current State Of Over 1600 FDA-Approved, AI-Based Medical Devices",
+   "source": "The Medical Futurist blog",
+   "published": "2026-09-17T08:56:00+00:00",
+   "summary": "Overview of regulatory landscape for over 1600 FDA-approved AI-based medical devices and the challenges of effective oversight in clinical settings.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://cdn.medicalfuturist.com/wp-content/uploads/2020/10/214_tmf-01-1.png",
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wijo3e/i_literally_built_the_jev_architecture_one_year",
+   "title_hash": "7f9906551216a19f0cc48030124a2cdb",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "forum thread complaint about priority and credit; not substantive technical news"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact",
+   "title_hash": "22993b2017aa00644d3b1b2adaea7452",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": true,
+   "title": "2 in 3 Harvard Professors Say AI Has a Negative Impact on Class",
+   "source": "Inside Higher Ed AI",
+   "published": "2026-09-17T03:00:00+00:00",
+   "summary": "Survey finding that two-thirds of Harvard professors report negative impact of AI on classroom instruction.",
+   "category": "medical_education",
+   "score": 3.0,
+   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2025-07/GettyImages-2217246201.jpg?itok=memmdnLJ",
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/views/2026/09/17/cures-ai-are-killing-humanities-opinion",
+   "title_hash": "7cb703848a13a4f74222b790bbcf7311",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "opinion piece on essay assignments without AI-specific evidence or actionable insight"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03234-9",
+   "title_hash": "ff9493392924276cbc02b44c426ca2b4",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": true,
+   "title": "Clinical trials for digital health interventions: a rapid review of study independence and the developer effect",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-17T00:00:00+00:00",
+   "summary": "Peer-reviewed rapid review examining study independence and developer bias in clinical trials of digital health interventions.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03226-9",
+   "title_hash": "a6d4d0ce942d9af0737f7c7aec79f337",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": true,
+   "title": "Conditional deep generative modeling of blood-based infrared spectra enables controlled in-silico phenotyping studies",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-17T00:00:00+00:00",
+   "summary": "Peer-reviewed study applying conditional deep generative modeling to blood-based infrared spectroscopy for in-silico phenotyping.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04646-6",
+   "title_hash": "8d597372d89037448af74cc39dd83ac5",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "molecular biology research not about artificial intelligence"
+  },
+  {
+   "url": "https://www.insidehighered.com/podcasts/weekly-wisdom/2026/09/16/weekly-wisdom-future-higher-education-paul-leblanc",
+   "title_hash": "08297de44b2bf3d54662e83e11067e60",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "general higher-education philosophical discussion; not specific to medical education or AI in medicine"
+  },
+  {
+   "url": "https://www.insidehighered.com/podcasts/key-podcast/2026/09/16/ep-213-wascs-maria-toyoda-accreditations-uncertain-future",
+   "title_hash": "32fc52db82ab7588b9ecc9b33d0dbd49",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "higher-education policy discussion without AI-specific relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wg4kpu/xi_promotes_open_source_ai_zone_among_brics",
+   "title_hash": "72c8785944da0c739b7c99d8efb976a2",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "geopolitical statement with no substantive technical development or capability news"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=thR9_VYJiQo",
+   "title_hash": "ed6bd8de2ab359fb3672579108aa97de",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": true,
+   "title": "Google is SO back...",
+   "source": "Wes Roth",
+   "published": "2026-09-17T07:35:41+00:00",
+   "summary": "Google researchers use a technique called Dream-RSI to help AI agents learn from past experiments and improve decision-making in novel situations.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/thR9_VYJiQo/hqdefault.jpg",
+   "display_title": "Dream-RSI: using past experiments to improve AI agent reasoning"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Q_MEaNdMpZw",
+   "title_hash": "cd6c9afeca4fe1620a6dff03f23feaba",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=iZX6d0OdZys",
+   "title_hash": "a1d5b2fcafdbe90c4ebe472edce6f09f",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://share.transistor.fm/s/66185604",
+   "title_hash": "31124a94a65dec251b97006a0c7c593c",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/no-code-is-code-zapier-ceo-wade-foster-on-headless-tools-zapier-mcp-automation-bench",
+   "title_hash": "84b5aac844a0fd36ddece8aa25992e0a",
+   "first_seen": "2026-09-17T13:31:15.099975+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the product's own company"
   }
  ],
  "digests": [
@@ -32514,19 +32605,19 @@
  "last_digest_at": "2026-09-11T04:44:45.324469+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A multi-agent language model simulator for clinical reasoning practice shows promise for deliberate practice when agents maintain role stability and contextual fidelity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1\">[9]</a>. That optimism sits alongside new scrutiny of how such systems are graded: one study finds common failure modes in rubric-based benchmarks used to score open-ended clinical scenarios <a href=\"https://arxiv.org/abs/2609.16023\">[7]</a>, while another shows benchmarks built on retrospective records can reward hindsight over prospective reasoning <a href=\"https://arxiv.org/abs/2609.13454\">[13]</a>. Meanwhile, an AI-based virtual case platform in obstetrics and gynecology residency training improved resident and patient satisfaction <a href=\"https://pubmed.ncbi.nlm.nih.gov/42733601?fc=20260609215449&amp;ff=20260914110224&amp;v=2.20.1\">[15]</a>, and survey data continue to show clinicians and students favor AI adoption while flagging unresolved concerns about accuracy, bias, and oversight <a href=\"https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1\">[11]</a>.\n\nAlso this week: four papers explore attitudes and adoption among clinicians and trainees across specialties such as pulmonology, otolaryngology, and radiology, four more examine assessment and feedback methods for AI-driven tools, and two focus on simulation and skills training. Additional teaching and curriculum work covers narrative competency, medical jargon comprehension, and structured frameworks for assessing patient AI use.",
-   "hash": "43cfe4e99bd85981",
+   "text": "Two-thirds of Harvard faculty say generative AI has hurt classroom instruction, showing that early enthusiasm for AI in teaching is meeting real skepticism <a href=\"https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact\">[1]</a>. Surveys of practicing clinicians in pulmonology and thoracic surgery show more cautious optimism, welcoming AI&#x27;s promise while demanding stronger governance and validation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42745325?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1\">[4]</a>. Concerns about how these tools are measured are intensifying too: new research on grading open-ended clinical scenarios finds real weaknesses in rubric-based benchmarks <a href=\"https://arxiv.org/abs/2609.16023\">[8]</a>. Meanwhile, early trials of multi-agent language model simulators suggest they can support deliberate practice in clinical reasoning when designed for role stability and contextual fidelity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1\">[10]</a>.\n\nAlso this week: four teaching and curriculum papers cover radiology education and calls to blend narrative empathy with computational literacy, while two simulation and skills studies include AI-assisted urolithiasis treatment planning. Broader adoption surveys span otolaryngology and Romanian medical students, and assessment work extends to hindsight bias in clinical reasoning models.",
+   "hash": "4cd59e7d963ef74d",
    "date": "September 17, 2026"
   },
   "clinical_practice": {
-   "text": "Medicare&#x27;s rushed rollout of an AI-based prior authorization pilot drew scrutiny, as newly revealed documents showed insufficient testing led to delayed care in some cases <a href=\"https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care\">[13]</a>. Bias and reliability concerns also surfaced in academic work: a paired-comparison audit found sex and gender disparities in emergency triage decisions generated by large language models <a href=\"https://www.nature.com/articles/s41746-026-03090-7\">[8]</a>, while a retrieve-then-verify study questioned whether models properly cite sources when generating medical information, raising hallucination concerns <a href=\"https://ai.jmir.org/2026/1/e93761\">[5]</a>. On the imaging side, a multicohort benchmark evaluated AI-generated thin-slice CT reconstruction under real clinical conditions <a href=\"https://www.nature.com/articles/s41746-026-03253-6\">[9]</a>, and a systematic review assessed the readiness of electronic health record-based models for predicting in-hospital delirium <a href=\"https://medinform.jmir.org/2026/1/e91618\">[4]</a>.\n\nAlso this week: the section adds six safety and evaluation studies, including multilingual biomedical concept normalization benchmarking and traditional Chinese medicine case evaluations, alongside three clinical decision support papers, three imaging and diagnostics studies, two clinical documentation projects, and one patient-facing tool assessing consumer preferences for smart home emergency detection.",
-   "hash": "0b59dcf159bc8d5c",
+   "text": "Regulatory oversight of artificial intelligence in medicine continues to lag behind adoption, with an overview of more than 1600 FDA-approved AI-based medical devices highlighting gaps in post-market monitoring <a href=\"https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices\">[1]</a>. Evaluation efforts are filling some of that gap: a paired-comparison audit finds sex and gender disparities in large language model-driven emergency triage decisions <a href=\"https://www.nature.com/articles/s41746-026-03090-7\">[11]</a>, while a separate study tests whether generated medical information is properly grounded in cited sources <a href=\"https://ai.jmir.org/2026/1/e93761\">[8]</a>. Imaging validation also advances, with a multicohort benchmark of AI-generated thin-slice CT reconstruction under real clinical conditions <a href=\"https://www.nature.com/articles/s41746-026-03253-6\">[12]</a>. A systematic review of in-hospital delirium prediction models further finds that many tools built on electronic health record data are not yet ready for clinical deployment <a href=\"https://medinform.jmir.org/2026/1/e91618\">[7]</a>.\n\nAlso this week: the section&#x27;s seven items on safety and evaluation dominate current coverage, alongside three each on clinical decision support and imaging and diagnostics. A single entry addresses patient-facing tools, examining German consumers&#x27; preferences for AI-based home emergency detection, and one covers clinical documentation, using large language model features from respiratory therapy notes to predict extubation failure.",
+   "hash": "b8b5380dd8f5517e",
    "date": "September 17, 2026"
   },
   "general_ai": {
-   "text": "Industry leaders, including Anthropic&#x27;s chief executive, are urging a slower pace of large language model development, citing safety concerns that have outpaced deployment safeguards <a href=\"https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed\">[11]</a>. Microsoft&#x27;s newly published conduct code echoes that concern, asserting that human oversight must take priority over model capability gains <a href=\"https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct\">[14]</a>. Meanwhile, Google DeepMind researchers documented AI agents autonomously detecting and reporting cheating by other agents during a math task, a first observation of whistleblowing behavior with implications for multi-agent alignment <a href=\"https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues\">[12]</a>. Separately, researchers found that ordinary typos can rotate probe readout vectors, causing malicious-prompt detectors to fail below 15 percent accuracy <a href=\"https://arxiv.org/abs/2609.15994\">[3]</a>, underscoring how fragile some safety mechanisms remain.\n\nAlso this week: nine items address safety and reliability, including audits showing bias-detection tools disagree on model rankings and reinforcement-learning agents that learn spurious tool-use policies. Two research and methods papers examine inference cost trade-offs and self-reported model archetypes, while two new-model reports cover OpenAI&#x27;s Jalapeño accelerator chip and Mozilla&#x27;s finding that open-weight models match frontier systems within four months.",
-   "hash": "2400c2f49815c5c2",
-   "date": "September 16, 2026"
+   "text": "A study on ordinary typos found that small perturbations can rotate probe readout vectors inside language models, causing malicious prompt detectors to fall below 15 percent accuracy <a href=\"https://arxiv.org/abs/2609.15994\">[11]</a>, underscoring how fragile current safety filters remain. Related work on bias audits shows that ten instruments applied to ten frontier models produce inconsistent rankings, raising doubts about audit-based regulation <a href=\"https://arxiv.org/abs/2609.15995\">[12]</a>. IEEE Spectrum examined parallel risks in physical AI, noting that attackers can manipulate a robot&#x27;s multimodal perception without triggering obvious failures <a href=\"https://spectrum.ieee.org/physical-ai-robot-cybersecurity-vicone\">[6]</a>. Amid these reliability questions, Anthropic merged its Cowork and chat products into a single Claude interface for Pro and Max users <a href=\"https://simonwillison.net/2026/Sep/16/one-claude\">[4]</a>.\n\nAlso this week: five items on safety and reliability, four on research and methods, three new model releases, and single entries on industry policy and benchmarks and evaluation fill out the section. Coverage ranges from Google opening its smart home platform to third-party AI agents to a controlled study comparing supervised fine-tuning and reinforcement learning for tool-calling agents.",
+   "hash": "8c671c2027eb59b4",
+   "date": "September 17, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -32633,5 +32724,5 @@
    "url": "https://opencv26.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-16"
+ "section_briefs_refreshed": "2026-09-17"
 }

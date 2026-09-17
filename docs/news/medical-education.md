@@ -13,14 +13,22 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A multi-agent language model simulator for clinical reasoning practice shows promise for deliberate practice when agents maintain role stability and contextual fidelity <a href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">[9]</a>. That optimism sits alongside new scrutiny of how such systems are graded: one study finds common failure modes in rubric-based benchmarks used to score open-ended clinical scenarios <a href="https://arxiv.org/abs/2609.16023">[7]</a>, while another shows benchmarks built on retrospective records can reward hindsight over prospective reasoning <a href="https://arxiv.org/abs/2609.13454">[13]</a>. Meanwhile, an AI-based virtual case platform in obstetrics and gynecology residency training improved resident and patient satisfaction <a href="https://pubmed.ncbi.nlm.nih.gov/42733601?fc=20260609215449&amp;ff=20260914110224&amp;v=2.20.1">[15]</a>, and survey data continue to show clinicians and students favor AI adoption while flagging unresolved concerns about accuracy, bias, and oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">[11]</a>.</p>
-<p>Also this week: four papers explore attitudes and adoption among clinicians and trainees across specialties such as pulmonology, otolaryngology, and radiology, four more examine assessment and feedback methods for AI-driven tools, and two focus on simulation and skills training. Additional teaching and curriculum work covers narrative competency, medical jargon comprehension, and structured frameworks for assessing patient AI use.</p>
+<p>Two-thirds of Harvard faculty say generative AI has hurt classroom instruction, showing that early enthusiasm for AI in teaching is meeting real skepticism <a href="https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact">[1]</a>. Surveys of practicing clinicians in pulmonology and thoracic surgery show more cautious optimism, welcoming AI&#x27;s promise while demanding stronger governance and validation <a href="https://pubmed.ncbi.nlm.nih.gov/42745325?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">[4]</a>. Concerns about how these tools are measured are intensifying too: new research on grading open-ended clinical scenarios finds real weaknesses in rubric-based benchmarks <a href="https://arxiv.org/abs/2609.16023">[8]</a>. Meanwhile, early trials of multi-agent language model simulators suggest they can support deliberate practice in clinical reasoning when designed for role stability and contextual fidelity <a href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">[10]</a>.</p>
+<p>Also this week: four teaching and curriculum papers cover radiology education and calls to blend narrative empathy with computational literacy, while two simulation and skills studies include AI-assisted urolithiasis treatment planning. Broader adoption surveys span otolaryngology and Romanian medical students, and assessment work extends to hindsight bias in clinical reasoning models.</p>
 <p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact">2 in 3 Harvard Professors Say AI Has a Negative Impact on Class</a>
+    <p class="news-card-summary">Survey finding that two-thirds of Harvard professors report negative impact of AI on classroom instruction.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2025-07/GettyImages-2217246201.jpg?itok=memmdnLJ" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 16, 2026</span></div>
@@ -117,13 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 15, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.13556">Domain-Specific Jargon in Large Language Models: A Comparative Analysis between General-Purpose and Specialist Models</a>
     <p class="news-card-summary">Researchers compared how general-purpose and specialist language models encode domain-specific medical terminology through two novel medical jargon evaluation benchmarks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 14, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42733601?fc=20260609215449&amp;ff=20260914110224&amp;v=2.20.1">Evaluating the Teaching Effectiveness of Interactive Virtual Platform Based on Artificial Intelligence for Obstetrics and Gynecology Residency Training</a>
-    <p class="news-card-summary">Study showed AI-based virtual case platform improved resident competencies, teaching satisfaction, and patient satisfaction in obstetrics and gynecology training.</p>
   </div>
 </div>
 </div>

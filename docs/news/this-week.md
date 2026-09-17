@@ -13,15 +13,23 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## Medical Education
 
 <div class="section-brief">
-<p>A multi-agent language model simulator for clinical reasoning practice shows promise for deliberate practice when agents maintain role stability and contextual fidelity <a href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">[9]</a>. That optimism sits alongside new scrutiny of how such systems are graded: one study finds common failure modes in rubric-based benchmarks used to score open-ended clinical scenarios <a href="https://arxiv.org/abs/2609.16023">[7]</a>, while another shows benchmarks built on retrospective records can reward hindsight over prospective reasoning <a href="https://arxiv.org/abs/2609.13454">[13]</a>. Meanwhile, an AI-based virtual case platform in obstetrics and gynecology residency training improved resident and patient satisfaction <a href="https://pubmed.ncbi.nlm.nih.gov/42733601?fc=20260609215449&amp;ff=20260914110224&amp;v=2.20.1">[15]</a>, and survey data continue to show clinicians and students favor AI adoption while flagging unresolved concerns about accuracy, bias, and oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">[11]</a>.</p>
-<p>Also this week: four papers explore attitudes and adoption among clinicians and trainees across specialties such as pulmonology, otolaryngology, and radiology, four more examine assessment and feedback methods for AI-driven tools, and two focus on simulation and skills training. Additional teaching and curriculum work covers narrative competency, medical jargon comprehension, and structured frameworks for assessing patient AI use.</p>
+<p>Two-thirds of Harvard faculty say generative AI has hurt classroom instruction, showing that early enthusiasm for AI in teaching is meeting real skepticism <a href="https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact">[1]</a>. Surveys of practicing clinicians in pulmonology and thoracic surgery show more cautious optimism, welcoming AI&#x27;s promise while demanding stronger governance and validation <a href="https://pubmed.ncbi.nlm.nih.gov/42745325?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">[4]</a>. Concerns about how these tools are measured are intensifying too: new research on grading open-ended clinical scenarios finds real weaknesses in rubric-based benchmarks <a href="https://arxiv.org/abs/2609.16023">[8]</a>. Meanwhile, early trials of multi-agent language model simulators suggest they can support deliberate practice in clinical reasoning when designed for role stability and contextual fidelity <a href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">[10]</a>.</p>
+<p>Also this week: four teaching and curriculum papers cover radiology education and calls to blend narrative empathy with computational literacy, while two simulation and skills studies include AI-assisted urolithiasis treatment planning. Broader adoption surveys span otolaryngology and Romanian medical students, and assessment work extends to hindsight bias in clinical reasoning models.</p>
 <p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact">2 in 3 Harvard Professors Say AI Has a Negative Impact on Class</a>
+        <p class="news-card-summary">Survey finding that two-thirds of Harvard professors report negative impact of AI on classroom instruction.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2025-07/GettyImages-2217246201.jpg?itok=memmdnLJ" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 16, 2026</span></div>
@@ -295,15 +303,23 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Medicare&#x27;s rushed rollout of an AI-based prior authorization pilot drew scrutiny, as newly revealed documents showed insufficient testing led to delayed care in some cases <a href="https://www.statnews.com/2026/09/15/medicare-wiser-ai-prior-authorization-pilot-rushed-launch-delayed-care">[13]</a>. Bias and reliability concerns also surfaced in academic work: a paired-comparison audit found sex and gender disparities in emergency triage decisions generated by large language models <a href="https://www.nature.com/articles/s41746-026-03090-7">[8]</a>, while a retrieve-then-verify study questioned whether models properly cite sources when generating medical information, raising hallucination concerns <a href="https://ai.jmir.org/2026/1/e93761">[5]</a>. On the imaging side, a multicohort benchmark evaluated AI-generated thin-slice CT reconstruction under real clinical conditions <a href="https://www.nature.com/articles/s41746-026-03253-6">[9]</a>, and a systematic review assessed the readiness of electronic health record-based models for predicting in-hospital delirium <a href="https://medinform.jmir.org/2026/1/e91618">[4]</a>.</p>
-<p>Also this week: the section adds six safety and evaluation studies, including multilingual biomedical concept normalization benchmarking and traditional Chinese medicine case evaluations, alongside three clinical decision support papers, three imaging and diagnostics studies, two clinical documentation projects, and one patient-facing tool assessing consumer preferences for smart home emergency detection.</p>
+<p>Regulatory oversight of artificial intelligence in medicine continues to lag behind adoption, with an overview of more than 1600 FDA-approved AI-based medical devices highlighting gaps in post-market monitoring <a href="https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices">[1]</a>. Evaluation efforts are filling some of that gap: a paired-comparison audit finds sex and gender disparities in large language model-driven emergency triage decisions <a href="https://www.nature.com/articles/s41746-026-03090-7">[11]</a>, while a separate study tests whether generated medical information is properly grounded in cited sources <a href="https://ai.jmir.org/2026/1/e93761">[8]</a>. Imaging validation also advances, with a multicohort benchmark of AI-generated thin-slice CT reconstruction under real clinical conditions <a href="https://www.nature.com/articles/s41746-026-03253-6">[12]</a>. A systematic review of in-hospital delirium prediction models further finds that many tools built on electronic health record data are not yet ready for clinical deployment <a href="https://medinform.jmir.org/2026/1/e91618">[7]</a>.</p>
+<p>Also this week: the section&#x27;s seven items on safety and evaluation dominate current coverage, alongside three each on clinical decision support and imaging and diagnostics. A single entry addresses patient-facing tools, examining German consumers&#x27; preferences for AI-based home emergency detection, and one covers clinical documentation, using large language model features from respiratory therapy notes to predict extubation failure.</p>
 <p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the source items.</p>
 </div>
 
 ??? abstract "Show the 45 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices">The Current State Of Over 1600 FDA-Approved, AI-Based Medical Devices</a>
+        <p class="news-card-summary">Overview of regulatory landscape for over 1600 FDA-approved AI-based medical devices and the challenges of effective oversight in clinical settings.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2020/10/214_tmf-01-1.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
@@ -323,6 +339,20 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03193-1">Probabilistic multimodal learning for drug, target interaction prediction</a>
         <p class="news-card-summary">Probabilistic multimodal learning approach for predicting drug-target interactions.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03234-9">Clinical trials for digital health interventions: a rapid review of study independence and the developer effect</a>
+        <p class="news-card-summary">Peer-reviewed rapid review examining study independence and developer bias in clinical trials of digital health interventions.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03226-9">Conditional deep generative modeling of blood-based infrared spectra enables controlled in-silico phenotyping studies</a>
+        <p class="news-card-summary">Peer-reviewed study applying conditional deep generative modeling to blood-based infrared spectroscopy for in-silico phenotyping.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -586,27 +616,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Systematic review examines AI applications for improving patient understanding and comprehension during informed consent processes for medical procedures.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03228-7">Impact of LLM-supported patient education on patient perspectives and patient-reported outcomes: a mixed-methods systematic review</a>
-        <p class="news-card-summary">A systematic review finds that large language model-supported patient education affects patient perspectives and reported outcomes, with mixed results across studies.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04703-0">A clinically-oriented foundation model for intraoperative pathology</a>
-        <p class="news-card-summary">CRISP, a vision-based foundation model trained on frozen section pathology slides, supports intraoperative decision-making with superior performance to existing models and prospective validation.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04631-z">Initial lessons from real-world implementation of an AI-agent eye clinic in China</a>
-        <p class="news-card-summary">Real-world implementation of an AI-native eye clinic in China reveals that workflow integration, clinician engagement, and demonstrated clinical value are essential to transition from AI-assisted to integrated care models.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 10, 2026</span></div>
@@ -626,14 +635,14 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ## General AI
 
 <div class="section-brief">
-<p>Industry leaders, including Anthropic&#x27;s chief executive, are urging a slower pace of large language model development, citing safety concerns that have outpaced deployment safeguards <a href="https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed">[11]</a>. Microsoft&#x27;s newly published conduct code echoes that concern, asserting that human oversight must take priority over model capability gains <a href="https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct">[14]</a>. Meanwhile, Google DeepMind researchers documented AI agents autonomously detecting and reporting cheating by other agents during a math task, a first observation of whistleblowing behavior with implications for multi-agent alignment <a href="https://www.technologyreview.com/2026/09/14/1144037/ai-agents-blew-whistle-o-cheating-colleagues">[12]</a>. Separately, researchers found that ordinary typos can rotate probe readout vectors, causing malicious-prompt detectors to fail below 15 percent accuracy <a href="https://arxiv.org/abs/2609.15994">[3]</a>, underscoring how fragile some safety mechanisms remain.</p>
-<p>Also this week: nine items address safety and reliability, including audits showing bias-detection tools disagree on model rankings and reinforcement-learning agents that learn spurious tool-use policies. Two research and methods papers examine inference cost trade-offs and self-reported model archetypes, while two new-model reports cover OpenAI&#x27;s Jalapeño accelerator chip and Mozilla&#x27;s finding that open-weight models match frontier systems within four months.</p>
-<p class="section-brief-date">The picture as of September 16, 2026; numbered links go to the source items.</p>
+<p>A study on ordinary typos found that small perturbations can rotate probe readout vectors inside language models, causing malicious prompt detectors to fall below 15 percent accuracy <a href="https://arxiv.org/abs/2609.15994">[11]</a>, underscoring how fragile current safety filters remain. Related work on bias audits shows that ten instruments applied to ten frontier models produce inconsistent rankings, raising doubts about audit-based regulation <a href="https://arxiv.org/abs/2609.15995">[12]</a>. IEEE Spectrum examined parallel risks in physical AI, noting that attackers can manipulate a robot&#x27;s multimodal perception without triggering obvious failures <a href="https://spectrum.ieee.org/physical-ai-robot-cybersecurity-vicone">[6]</a>. Amid these reliability questions, Anthropic merged its Cowork and chat products into a single Claude interface for Pro and Max users <a href="https://simonwillison.net/2026/Sep/16/one-claude">[4]</a>.</p>
+<p>Also this week: five items on safety and reliability, four on research and methods, three new model releases, and single entries on industry policy and benchmarks and evaluation fill out the section. Coverage ranges from Google opening its smart home platform to third-party AI agents to a controlled study comparing supervised fine-tuning and reinforcement learning for tool-calling agents.</p>
+<p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
@@ -961,22 +970,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://cognition.com/images/swe-2/cover.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/993263/where-does-openai-get-mathematics-training-data">Mathematicians want proof OpenAI didn’t use their work</a>
-        <p class="news-card-summary">A mathematician has accused OpenAI of unethical behavior and lack of transparency regarding the sources and origins of data used in the company&#x27;s mathematical model training.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2236544323.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.54557577814%2C100%2C78.90884844372&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wcbid7/deepseek_v41_flash_is_out">DeepSeek V4-1 Flash is out</a>
-        <p class="news-card-summary">DeepSeek V4-1 Flash, a multimodal mixture-of-experts model with 552 billion backbone parameters and one-million-token context support, is now available.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/6c1tvzhn4noh1.jpg?width=140&amp;height=140&amp;crop=1:1,smart&amp;auto=webp&amp;s=6d491c59edb2545a53f1ac5c9c4f8ce0d2bb59c9" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 8, 2026</span></div>
@@ -998,9 +991,15 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 17 videos"
+??? abstract "Show the 18 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=thR9_VYJiQo" target="_blank" rel="noopener" title="Google is SO back...">
+      <img src="https://i1.ytimg.com/vi/thR9_VYJiQo/hqdefault.jpg" alt="Video: Dream-RSI: using past experiments to improve AI agent reasoning" loading="lazy">
+      <span class="video-card-title">Dream-RSI: using past experiments to improve AI agent reasoning</span>
+      <span class="video-card-meta">Wes Roth, September 17, 2026</span>
+      <span class="video-card-desc">Google researchers use a technique called Dream-RSI to help AI agents learn from past experiments and improve decision-making in novel situations.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=J3ljHm57yU0" target="_blank" rel="noopener" title="What AI Researchers Saw, Before Their Demand to ‘Pace’ AI">
       <img src="https://i3.ytimg.com/vi/J3ljHm57yU0/hqdefault.jpg" alt="Video: AI safety warnings and researcher calls to pace development" loading="lazy">
       <span class="video-card-title">AI safety warnings and researcher calls to pace development</span>

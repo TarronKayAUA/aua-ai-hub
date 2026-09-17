@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=thR9_VYJiQo" target="_blank" rel="noopener" title="Google is SO back...">
+  <img src="https://i1.ytimg.com/vi/thR9_VYJiQo/hqdefault.jpg" alt="Video: Dream-RSI: using past experiments to improve AI agent reasoning" loading="lazy">
+  <span class="video-card-title">Dream-RSI: using past experiments to improve AI agent reasoning</span>
+  <span class="video-card-meta">Wes Roth, September 17, 2026</span>
+  <span class="video-card-desc">Google researchers use a technique called Dream-RSI to help AI agents learn from past experiments and improve decision-making in novel situations.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=J3ljHm57yU0" target="_blank" rel="noopener" title="What AI Researchers Saw, Before Their Demand to ‘Pace’ AI">
   <img src="https://i3.ytimg.com/vi/J3ljHm57yU0/hqdefault.jpg" alt="Video: AI safety warnings and researcher calls to pace development" loading="lazy">
   <span class="video-card-title">AI safety warnings and researcher calls to pace development</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Claude Fable 5.1 technical analysis</span>
   <span class="video-card-meta">Two Minute Papers, September 3, 2026</span>
   <span class="video-card-desc">Technical analysis of Claude Fable 5.1 capabilities and behavior patterns beyond release announcements.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=eHsuG3bPiJ8" target="_blank" rel="noopener" title="Stop Paying for ElevenLabs? NEW #1 Realtime AI Voice Inworld TTS-2">
-  <img src="https://i2.ytimg.com/vi/eHsuG3bPiJ8/hqdefault.jpg" alt="Video: Inworld TTS-2 real-time voice performance and comparison" loading="lazy">
-  <span class="video-card-title">Inworld TTS-2 real-time voice performance and comparison</span>
-  <span class="video-card-meta">WorldofAI, September 2, 2026</span>
-  <span class="video-card-desc">Hands-on comparison of Inworld TTS-2 against commercial alternatives, demonstrating real-time text-to-speech capabilities and relative performance rankings.</span>
 </a>
 </div>
 
