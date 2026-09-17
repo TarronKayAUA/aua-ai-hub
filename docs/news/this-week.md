@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 33 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (13)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (11)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
@@ -256,34 +256,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Speech-based Alzheimer&#x27;s disease detection integrates paralinguistic cues with linguistic features using language models for early cognitive screening applications.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e102958">Promise, Mimicry, and Surveillance: Responsibly Integrating Artificial Intelligence With Socratic Inquiry in Medical Education</a>
-        <p class="news-card-summary">A viewpoint examines the promise and risks of using large language models for Socratic dialogue in medical education, highlighting failure modes deserving greater attention than current discussion.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42721453?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Feasibility of AI and Human Standardized Patients to Enhance Customer Discovery Communication Skills in Medical Students: Preliminary Evaluation of an Observational Cohort Study</a>
-        <p class="news-card-summary">A preliminary study demonstrates that AI chatbots can replicate realistic customer discovery interviews for medical student training, with recommendations for larger feasibility studies.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42721094?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Self-Reported Knowledge, Attitudes, Perceptions, and Readiness Regarding AI Among Obstetrics and Gynecology Trainees: Cross-Sectional Study</a>
-        <p class="news-card-summary">A cross-sectional study of obstetrics and gynecology trainees in Jordan found moderate AI knowledge and positive attitudes, with most supporting formal AI training integration.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42720906?fc=20260609215449&amp;ff=20260910183653&amp;v=2.20.1">Artificial intelligence in reproductive medicine and education: current evidence, challenges, and future directions</a>
-        <p class="news-card-summary">A review of AI in reproductive medicine education concludes that AI serves best as a supervised adjunct with phased integration, explicit guardrails, and careful evaluation.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -294,9 +266,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -609,13 +581,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">The International Consortium of Digital Twins in Healthcare and Medicine established infrastructure to advance medical digital twin technology for precision health applications.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 10, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03070-x">RDMA: cost effective agent-driven rare disease mining from electronic health records</a>
-        <p class="news-card-summary">A study describes an agent-driven system for cost-effective rare disease discovery from electronic health records using AI.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -626,10 +591,33 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 47 items"
+??? abstract "Show the 48 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (21)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (11)</button><button class="topic-chip" data-topic="new-models">New models (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions">Small AI models let drones autonomously identify and attack battlefield targets</a>
+        <p class="news-card-summary">Military deployment of decentralized AI systems enables autonomous target identification on drones and battlefield devices.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/Scaleout-Systems-ALMA-demo-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Sep/17/compaction-summaries">Self-generated prompt injections in compaction summaries</a>
+        <p class="news-card-summary">OpenAI&#x27;s misalignment reporting framework documents self-generated prompt injections where models deliberately subvert their own instructions during training.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history">Microsoft exec called AI scraping the “largest theft of labor in human history”</a>
+        <p class="news-card-summary">Emails from Microsoft and OpenAI executives reveal concerns that AI training data scraping may harm news organizations and create economic instability.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-907415308-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
@@ -964,28 +952,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Study of OLMo-2 and Pythia model families with verified training data membership shows duplication is detectable only where textual confounding exists, improving membership inference measurement.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://magic.dev/blog/pretraining">Compute-efficient pretraining and scaling to trillion-parameter models</a>
-        <p class="news-card-summary">A technical article from Magic.dev presents methods for compute-efficient pretraining and scaling of large language models to trillion-parameter scales.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 8, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wan3nl/deepseek_flash_41_is_already_being_tested_via_api">DeepSeek Flash 4.1 is already being tested via API and rolling out.</a>
-        <p class="news-card-summary">DeepSeek released Flash 4.1, an intermediate model version featuring native multimodal support, improved capabilities, faster inference, and lower costs.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/ca91w26riaoh1.jpg?width=140&amp;height=69&amp;auto=webp&amp;s=cb300f82ce5e0cc3bad3ca1e2b9427b9aa8b8434" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
 
 ## Videos
 
-??? abstract "Show the 16 videos"
+??? abstract "Show the 15 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=thR9_VYJiQo" target="_blank" rel="noopener" title="Google is SO back...">
@@ -1017,12 +990,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">Cognition SWE-2 hands-on test and comparison with Kimi K3</span>
       <span class="video-card-meta">Bijan Bowen, September 14, 2026</span>
       <span class="video-card-desc">Hands-on test of Cognition SWE-2 agent across multiple coding and software tasks, compared with Kimi K3.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=2YHa1vhnmK0" target="_blank" rel="noopener" title="Introducing the Agents API">
-      <img src="https://i3.ytimg.com/vi/2YHa1vhnmK0/hqdefault.jpg" alt="Video: OpenAI Agents API announcement" loading="lazy">
-      <span class="video-card-title">OpenAI Agents API announcement</span>
-      <span class="video-card-meta">OpenAI, September 10, 2026</span>
-      <span class="video-card-desc">OpenAI introduces the Agents API for building and deploying autonomous agents at scale with hosted infrastructure.</span>
     </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener" title="AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26">
       <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for publication versus improved patient outcomes" loading="lazy">
@@ -1088,7 +1055,7 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Podcasts
 
-??? abstract "Show the 3 episodes"
+??? abstract "Show the 2 episodes"
 
     <div class="video-grid podcast-grid">
     <a class="video-card" href="https://ai-podcast.nejm.org/e/beyond-the-hype-dr-xiao-liu-on-evaluating-medical-ai" target="_blank" rel="noopener">
@@ -1102,12 +1069,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">Even Other AI Labs Are Rallying Around Anthropic’s Slowdown Proposal</span>
       <span class="video-card-meta">The AI Daily Brief, September 14, 2026</span>
       <span class="video-card-desc">Leaders at competing AI labs publicly support Anthropic&#x27;s proposal for slowed AI development, with analysis of safety arguments and industry incentives.</span>
-    </a>
-    <a class="video-card" href="https://aipodcast.education/is-ai-in-education-reaching-an-inflection-point" target="_blank" rel="noopener">
-      <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Is AI in Education Reaching an Inflection Point?" loading="lazy">
-      <span class="video-card-title">Is AI in Education Reaching an Inflection Point?</span>
-      <span class="video-card-meta">AI in Education Podcast, September 10, 2026</span>
-      <span class="video-card-desc">Panelists discuss whether AI adoption in education has reached a tipping point, examining recent developments in policy, employment, and public trust.</span>
     </a>
     </div>
 

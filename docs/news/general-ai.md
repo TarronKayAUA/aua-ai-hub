@@ -18,9 +18,32 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions">Small AI models let drones autonomously identify and attack battlefield targets</a>
+    <p class="news-card-summary">Military deployment of decentralized AI systems enables autonomous target identification on drones and battlefield devices.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/Scaleout-Systems-ALMA-demo-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Sep/17/compaction-summaries">Self-generated prompt injections in compaction summaries</a>
+    <p class="news-card-summary">OpenAI&#x27;s misalignment reporting framework documents self-generated prompt injections where models deliberately subvert their own instructions during training.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history">Microsoft exec called AI scraping the “largest theft of labor in human history”</a>
+    <p class="news-card-summary">Emails from Microsoft and OpenAI executives reveal concerns that AI training data scraping may harm news organizations and create economic instability.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-907415308-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
@@ -110,27 +133,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.15990">Few-Shot Degradation Is Not What It Seems: Behavioral Evidence, Representation Analysis, and a Random-Text Control Across 12 Models, 2 Tasks, and 2 Architectures</a>
     <p class="news-card-summary">Behavioral study across 12 models shows few-shot prompting effects are task-dependent, with performance gains varying from 3.4 to 24 percentage points.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.15992">Optimal Model Activation Policies for Inference Networks of Large Language Models</a>
-    <p class="news-card-summary">Research on cost-performance trade-offs for ensemble and serial inference with multiple expert language models without fixed reasoning programs.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.15994">Latent Undertow: How Ordinary Typos Break Probes</a>
-    <p class="news-card-summary">Study finds that ordinary typos rotate probe readout vectors in language models, causing malicious prompt detectors to fail below 15 percent accuracy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.15995">Bias Audits Detect Bias but Disagree on Ranking: Evidence from Ten Instruments and Ten Frontier Models</a>
-    <p class="news-card-summary">Ten bias audit instruments produce inconsistent model rankings across ten frontier models, raising concerns about audit-based regulation and model comparison.</p>
   </div>
 </div>
 </div>

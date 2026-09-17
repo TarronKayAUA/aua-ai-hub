@@ -1,27 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.theverge.com/entertainment/967678/1010benja-semiramis-dream-suno-ai-music",
-   "title_hash": "9dd3fef63105d9e1e648fc2fcfe6cf7b",
-   "first_seen": "2026-07-19T21:09:01.087978+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v0t1g2/please_qwen_can_we_have_more_3x35ba3b_please",
-   "title_hash": "78fb1267b2c694e9ee5de16d9669ab72",
-   "first_seen": "2026-07-19T21:09:01.087978+00:00",
-   "kept": false,
-   "reason": "community meta-discussion with no substantive news"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=AopewjYV1Ho",
-   "title_hash": "2835e405e1544e99aee372a4e5becb46",
-   "first_seen": "2026-07-19T21:09:01.087978+00:00",
-   "kept": false,
-   "reason": "marketing and celebration content without technical or educational substance"
-  },
-  {
    "url": "https://arxiv.org/abs/2607.15380",
    "title_hash": "9f268cacb6f52f756d74f71fc2cf5a5d",
    "first_seen": "2026-07-20T04:06:25.878332+00:00",
@@ -32544,6 +32523,103 @@
    "first_seen": "2026-09-17T19:44:30.436968+00:00",
    "kept": false,
    "reason": "daily news recap without specific expert analysis or instructive depth for medical educators"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions",
+   "title_hash": "7aa9e4a5fe52035217ceca364bcdc24f",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": true,
+   "title": "Small AI models let drones autonomously identify and attack battlefield targets",
+   "source": "Ars Technica AI",
+   "published": "2026-09-17T22:12:58+00:00",
+   "summary": "Military deployment of decentralized AI systems enables autonomous target identification on drones and battlefield devices.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Scaleout-Systems-ALMA-demo-500x500.png",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries",
+   "title_hash": "2c9be238f65a3a63521c6870d3c677ef",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": true,
+   "title": "Self-generated prompt injections in compaction summaries",
+   "source": "Simon Willison's weblog",
+   "published": "2026-09-17T20:57:55+00:00",
+   "summary": "OpenAI's misalignment reporting framework documents self-generated prompt injections where models deliberately subvert their own instructions during training.",
+   "category": "general_ai",
+   "score": 4.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://bend-lang.com/",
+   "title_hash": "51ef391ef5609b8a4c4a43613afd9856",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience: language design for formal verification"
+  },
+  {
+   "url": "https://arstechnica.com/google/2026/09/google-announces-new-experimental-cc-ai-agent-for-families",
+   "title_hash": "7a44dcfec806840d1dfa217e8a631e4c",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": false,
+   "reason": "vendor marketing for a product announcement"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history",
+   "title_hash": "5568a630fd253947d57625b6af40a357",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": true,
+   "title": "Microsoft exec called AI scraping the “largest theft of labor in human history”",
+   "source": "Ars Technica AI",
+   "published": "2026-09-17T20:10:41+00:00",
+   "summary": "Emails from Microsoft and OpenAI executives reveal concerns that AI training data scraping may harm news organizations and create economic instability.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-907415308-500x500.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e89400",
+   "title_hash": "c014e15699ae7d36db30fba1e8ec6c6f",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience: infectious disease reporting system without AI component"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wj3s31/thank_you_swift_qwen_38_27b_now_has_100k",
+   "title_hash": "73f3640fa5426d7a970224f2d4ed0581",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": false,
+   "reason": "community meta-discussion and minor release notes"
+  },
+  {
+   "url": "https://openai.com/index/model-misalignment-reporting-framework",
+   "title_hash": "990157c99df26cd4f784c555cc50a28d",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": false,
+   "reason": "duplicate of kept candidate 2"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wi9ebm/xiaomi_mimo_26_live_training_dashboard",
+   "title_hash": "5ddf1d7cba540f8be03765a74dcd0bb2",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": false,
+   "reason": "minor release notes and community meta-discussion"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=YeeGHCixr7o",
+   "title_hash": "89ecbf725c4d553280acaedb46cf6f93",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://aipodcast.education/dr-phil-cummins-the-tide-is-in-ai-is-here",
+   "title_hash": "3653035e846b206d6143adff070c45ae",
+   "first_seen": "2026-09-17T22:51:58.002892+00:00",
+   "kept": false,
+   "reason": "promotional episode or generic commentary without substantive analysis or news"
   }
  ],
  "digests": [
