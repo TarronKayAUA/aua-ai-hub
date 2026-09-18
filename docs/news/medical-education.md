@@ -91,6 +91,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Pilot study found early introduction of AI concepts in medical school feasible but identified need for balanced curricula combining AI literacy with ethical training.</p>
   </div>
 </div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42758583?fc=20260609215449&amp;ff=20260918183606&amp;v=2.20.1">Generative AI for Personalized Learning Platforms in Otolaryngology-head and neck surgery (ENT) Education: Scoping Review</a>
+    <p class="news-card-summary">Scoping review synthesizes generative AI capabilities with learning outcomes, assessment, safety, and implementation in otolaryngology education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 18, 2026</span></div>
@@ -118,13 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42753323?fc=20260609215449&amp;ff=20260918004743&amp;v=2.20.1">Artificial intelligence in emergency medicine education: A narrative review</a>
     <p class="news-card-summary">Narrative review assesses artificial intelligence tools in emergency medicine education, emphasizing clinician educator responsibility for safe and effective deployment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754791?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Education on Artificial Intelligence in US Internal Medicine Residencies: Results of a National Survey</a>
-    <p class="news-card-summary">A national survey documents the current state of artificial intelligence education within United States internal medicine residency training programs.</p>
   </div>
 </div>
 </div>

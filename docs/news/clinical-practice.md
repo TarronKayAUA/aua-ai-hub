@@ -45,6 +45,13 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03249-2">Video-based assessment of surgical skills using frozen pretrained video foundation models</a>
+    <p class="news-card-summary">Peer-reviewed study demonstrates video foundation models for automated assessment of surgical skills without model fine-tuning.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e74339">Hospital Human Resource Managers’ Perspectives on Organizational Readiness for Generative AI Skills: Qualitative Descriptive Study</a>
     <p class="news-card-summary">Qualitative study examines hospital HR managers&#x27; perspectives on organizational readiness for generative AI adoption, identifying barriers including privacy, security, and governance concerns.</p>
@@ -119,13 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 16, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91618">Prediction Models for In-Hospital Delirium Using Routinely Collected Electronic Health Record Data: Systematic Review</a>
     <p class="news-card-summary">Systematic review evaluates prediction models built from electronic health record data for early identification of in-hospital delirium, assessing their methodological quality and clinical readiness.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93761">Retrieve-Then-Verify for Evaluating Evidence Support and Hallucination in Large Language Model, Generated Medical Information: Empirical Study</a>
-    <p class="news-card-summary">Empirical study examines whether large language models cite source documents when generating medical information, testing transparency and auditability for clinical knowledge management.</p>
   </div>
 </div>
 </div>
