@@ -18,9 +18,24 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754902?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Assessment of drug harm by final-year medical students and ChatGPT - a comparative analysis</a>
+    <p class="news-card-summary">Final-year medical students and ChatGPT showed strong agreement on the most harmful drugs but differed on moderately and minimally harmful substances, suggesting AI assessments may not fully capture clinical experience and cultural context.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/news/quick-takes/2026/09/18/report-higher-eds-adoption-ai-outpaces-student-guards">Report: Student Protections Haven’t Kept Up With Higher Ed’s Adoption of AI</a>
+    <p class="news-card-summary">A report finds that student protections and policies have not kept pace with higher education&#x27;s adoption of artificial intelligence tools.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2025-06/GettyImages-1478407211.jpg?itok=q-h11SOD" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
@@ -40,6 +55,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42753323?fc=20260609215449&amp;ff=20260918004743&amp;v=2.20.1">Artificial intelligence in emergency medicine education: A narrative review</a>
     <p class="news-card-summary">Narrative review assesses artificial intelligence tools in emergency medicine education, emphasizing clinician educator responsibility for safe and effective deployment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754791?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Education on Artificial Intelligence in US Internal Medicine Residencies: Results of a National Survey</a>
+    <p class="news-card-summary">A national survey documents the current state of artificial intelligence education within United States internal medicine residency training programs.</p>
   </div>
 </div>
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -104,27 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 15, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87587">Teaching Acute Coronary Syndrome High-Risk ECG Interpretation and Clinical Decision-Making Through FOAMed Videos and Podcast Versus Print-Based Materials Among Emergency Care Providers: Randomized Controlled Mixed Methods Trial</a>
     <p class="news-card-summary">Randomized trial comparing effectiveness of Free Open Access Medical Education videos and podcasts versus print materials for teaching high-risk acute coronary syndrome electrocardiogram interpretation to emergency care providers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">Early evidence for a multi-agent AI simulator for clinical reasoning practice: performance, consistency, and challenges</a>
-    <p class="news-card-summary">Multi-agent language model simulations support deliberate practice in clinical reasoning when designed for role stability, contextual fidelity, and learner interpretation of information.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42742562?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">The use of artificial intelligence, virtual, augmented, and mixed reality, and 3D technologies in the treatment of urolithiasis</a>
-    <p class="news-card-summary">Integration of AI with virtual, augmented, and mixed reality for urolithiasis treatment improves procedure planning and training, though clinical validation in complex cases remains needed.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">Attitudes Toward Large Language Models in Health Care and Preferences for Their Adoption and Oversight Among Health Care Professionals: Cross-Sectional Survey</a>
-    <p class="news-card-summary">Survey of healthcare professionals found early adoption of large language models for lower-risk tasks alongside significant concerns about safety, bias, and governance.</p>
   </div>
 </div>
 </div>

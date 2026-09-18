@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=vIHw_2VjSUw" target="_blank" rel="noopener" title="DeepSeek’s Insane New Architecture">
+  <img src="https://i3.ytimg.com/vi/vIHw_2VjSUw/hqdefault.jpg" alt="Video: DeepSeek V4.1 Flash architecture explained" loading="lazy">
+  <span class="video-card-title">DeepSeek V4.1 Flash architecture explained</span>
+  <span class="video-card-meta">Two Minute Papers, September 18, 2026</span>
+  <span class="video-card-desc">Technical breakdown of DeepSeek V4.1 Flash&#x27;s architecture and capabilities.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=OA5cICIzD-c" target="_blank" rel="noopener" title="Bonsai 2 27B First Test, Is THIS the BEST Single-GPU AI Model?">
+  <img src="https://i4.ytimg.com/vi/OA5cICIzD-c/hqdefault.jpg" alt="Video: Bonsai 2 27B model testing and performance review" loading="lazy">
+  <span class="video-card-title">Bonsai 2 27B model testing and performance review</span>
+  <span class="video-card-meta">Bijan Bowen, September 18, 2026</span>
+  <span class="video-card-desc">Hands-on testing and evaluation of the Bonsai 2 27B language model on single-GPU systems.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=thR9_VYJiQo" target="_blank" rel="noopener" title="Google is SO back...">
   <img src="https://i1.ytimg.com/vi/thR9_VYJiQo/hqdefault.jpg" alt="Video: Dream-RSI: using past experiments to improve AI agent reasoning" loading="lazy">
   <span class="video-card-title">Dream-RSI: using past experiments to improve AI agent reasoning</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">GPT-6 Astra announcement and capabilities</span>
   <span class="video-card-meta">OpenAI, September 3, 2026</span>
   <span class="video-card-desc">OpenAI announces GPT-6 Astra with benchmarks on long-context computer-use tasks and multimodal capabilities.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=X4FVEEegCbk" target="_blank" rel="noopener" title="Skills vs MCP vs RAG vs Memory: What AI Agents Need to Know">
-  <img src="https://i1.ytimg.com/vi/X4FVEEegCbk/hqdefault.jpg" alt="Video: AI agent architecture: skills, MCP, RAG, and memory" loading="lazy">
-  <span class="video-card-title">AI agent architecture: skills, MCP, RAG, and memory</span>
-  <span class="video-card-meta">IBM Technology, September 3, 2026</span>
-  <span class="video-card-desc">Explains architectural components of AI agents: skills, model context protocol, retrieval-augmented generation, and memory systems.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=B3LXEW4Pc-w" target="_blank" rel="noopener" title="Claude Fable AI Is Much Stranger Than The Headlines Suggest">
-  <img src="https://i3.ytimg.com/vi/B3LXEW4Pc-w/hqdefault.jpg" alt="Video: Claude Fable 5.1 technical analysis" loading="lazy">
-  <span class="video-card-title">Claude Fable 5.1 technical analysis</span>
-  <span class="video-card-meta">Two Minute Papers, September 3, 2026</span>
-  <span class="video-card-desc">Technical analysis of Claude Fable 5.1 capabilities and behavior patterns beyond release announcements.</span>
 </a>
 </div>
 

@@ -21,11 +21,26 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny">STAT+: A geriatrician explains why AI for older adults deserves careful scrutiny</a>
+    <p class="news-card-summary">A geriatrician discusses benefits and pitfalls of AI in care decisions for older adults, highlighting the need for careful scrutiny of AI deployment in vulnerable populations.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2022/04/AP22039367701680-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 18, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.19585">CliniCIRCA: A Modular LLM Framework for Constructing Longitudinal Mental Health Patient Journeys from Raw EHR Narratives</a>
     <p class="news-card-summary">CliniCIRCA is a multi-stage language model framework for extracting longitudinal mental health patient journeys from unstructured electronic health record narratives.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03247-4">Communicating the uncertainty of individual risk from clinical prediction tools with the PGower similarity measure</a>
+    <p class="news-card-summary">A method for communicating uncertainty from clinical prediction tools helps clinicians understand individual risk variation beyond point estimates.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -111,20 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 16, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93761">Retrieve-Then-Verify for Evaluating Evidence Support and Hallucination in Large Language Model, Generated Medical Information: Empirical Study</a>
     <p class="news-card-summary">Empirical study examines whether large language models cite source documents when generating medical information, testing transparency and auditability for clinical knowledge management.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03212-1">Predicting calcification risk in prosthetic aortic valves: a hybrid physics-based and machine learning approach</a>
-    <p class="news-card-summary">Hybrid physics-based and machine learning model predicts calcification risk in prosthetic aortic valves.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03224-x">Knowledge-enhanced LLMs for multilingual biomedical concept normalization: a multilingual benchmarking and behavioral analysis</a>
-    <p class="news-card-summary">Benchmarking study evaluates knowledge-enhanced large language models for multilingual biomedical concept normalization across multiple languages.</p>
   </div>
 </div>
 </div>

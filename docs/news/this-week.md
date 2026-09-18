@@ -18,10 +18,25 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 33 items"
+??? abstract "Show the 35 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (33)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754902?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Assessment of drug harm by final-year medical students and ChatGPT - a comparative analysis</a>
+        <p class="news-card-summary">Final-year medical students and ChatGPT showed strong agreement on the most harmful drugs but differed on moderately and minimally harmful substances, suggesting AI assessments may not fully capture clinical experience and cultural context.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://www.insidehighered.com/news/quick-takes/2026/09/18/report-higher-eds-adoption-ai-outpaces-student-guards">Report: Student Protections Haven’t Kept Up With Higher Ed’s Adoption of AI</a>
+        <p class="news-card-summary">A report finds that student protections and policies have not kept pace with higher education&#x27;s adoption of artificial intelligence tools.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2025-06/GettyImages-1478407211.jpg?itok=q-h11SOD" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
@@ -41,6 +56,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42753323?fc=20260609215449&amp;ff=20260918004743&amp;v=2.20.1">Artificial intelligence in emergency medicine education: A narrative review</a>
         <p class="news-card-summary">Narrative review assesses artificial intelligence tools in emergency medicine education, emphasizing clinician educator responsibility for safe and effective deployment.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754791?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Education on Artificial Intelligence in US Internal Medicine Residencies: Results of a National Survey</a>
+        <p class="news-card-summary">A national survey documents the current state of artificial intelligence education within United States internal medicine residency training programs.</p>
       </div>
     </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
@@ -235,13 +257,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Cloud-hosted vision-language models were benchmarked on Japan&#x27;s National Examination for Clinical Laboratory Technicians, comparing their performance on multimodal test questions requiring both text and image reasoning.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42722929?fc=20260609215449&amp;ff=20260911085044&amp;v=2.20.1">Can Artificial Intelligence-Based Counseling Improve Iranian Students&#x27; Spiritual Well-Being?</a>
-        <p class="news-card-summary">A quasi-experimental study compared AI-based counseling with face-to-face counseling for spiritual well-being in 105 Iranian medical students.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 11, 2026</span></div>
@@ -266,15 +281,30 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 46 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny">STAT+: A geriatrician explains why AI for older adults deserves careful scrutiny</a>
+        <p class="news-card-summary">A geriatrician discusses benefits and pitfalls of AI in care decisions for older adults, highlighting the need for careful scrutiny of AI deployment in vulnerable populations.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2022/04/AP22039367701680-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="clinical-documentation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 18, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2609.19585">CliniCIRCA: A Modular LLM Framework for Constructing Longitudinal Mental Health Patient Journeys from Raw EHR Narratives</a>
         <p class="news-card-summary">CliniCIRCA is a multi-stage language model framework for extracting longitudinal mental health patient journeys from unstructured electronic health record narratives.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03247-4">Communicating the uncertainty of individual risk from clinical prediction tools with the PGower similarity measure</a>
+        <p class="news-card-summary">A method for communicating uncertainty from clinical prediction tools helps clinicians understand individual risk variation beyond point estimates.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -586,13 +616,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 11, 2026</span></div>
         <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e83544">Reinforcement Learning, Based Temporal Knowledge Graph Reasoning for Predicting Chronic Gastritis Diagnosis and Treatment: Development and Validation Study</a>
         <p class="news-card-summary">Researchers developed a reinforcement learning temporal knowledge graph system to predict chronic gastritis diagnosis by capturing disease progression and relationships among clinical events.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 11, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04621-1">A global digital navigator of human health for precision medicine</a>
-        <p class="news-card-summary">The International Consortium of Digital Twins in Healthcare and Medicine established infrastructure to advance medical digital twin technology for precision health applications.</p>
       </div>
     </div>
     </div>
@@ -973,9 +996,21 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 15 videos"
+??? abstract "Show the 17 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=vIHw_2VjSUw" target="_blank" rel="noopener" title="DeepSeek’s Insane New Architecture">
+      <img src="https://i3.ytimg.com/vi/vIHw_2VjSUw/hqdefault.jpg" alt="Video: DeepSeek V4.1 Flash architecture explained" loading="lazy">
+      <span class="video-card-title">DeepSeek V4.1 Flash architecture explained</span>
+      <span class="video-card-meta">Two Minute Papers, September 18, 2026</span>
+      <span class="video-card-desc">Technical breakdown of DeepSeek V4.1 Flash&#x27;s architecture and capabilities.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=OA5cICIzD-c" target="_blank" rel="noopener" title="Bonsai 2 27B First Test, Is THIS the BEST Single-GPU AI Model?">
+      <img src="https://i4.ytimg.com/vi/OA5cICIzD-c/hqdefault.jpg" alt="Video: Bonsai 2 27B model testing and performance review" loading="lazy">
+      <span class="video-card-title">Bonsai 2 27B model testing and performance review</span>
+      <span class="video-card-meta">Bijan Bowen, September 18, 2026</span>
+      <span class="video-card-desc">Hands-on testing and evaluation of the Bonsai 2 27B language model on single-GPU systems.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=thR9_VYJiQo" target="_blank" rel="noopener" title="Google is SO back...">
       <img src="https://i1.ytimg.com/vi/thR9_VYJiQo/hqdefault.jpg" alt="Video: Dream-RSI: using past experiments to improve AI agent reasoning" loading="lazy">
       <span class="video-card-title">Dream-RSI: using past experiments to improve AI agent reasoning</span>
