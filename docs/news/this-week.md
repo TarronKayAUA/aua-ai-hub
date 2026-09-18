@@ -18,15 +18,78 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 35 items"
+??? abstract "Show the 44 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (35)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (12)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754902?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Assessment of drug harm by final-year medical students and ChatGPT - a comparative analysis</a>
         <p class="news-card-summary">Final-year medical students and ChatGPT showed strong agreement on the most harmful drugs but differed on moderately and minimally harmful substances, suggesting AI assessments may not fully capture clinical experience and cultural context.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Artificial Intelligence Readiness in Emergency Medicine: Expert Consensus Opinion for Preparing the Workforce</a>
+        <p class="news-card-summary">Expert consensus that emergency medicine workforce lacks foundational skills to evaluate and safely deploy AI tools now entering triage, imaging, and documentation workflows.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">The Long road to AI-physician partnership starts with learners: a map for AI in medical education</a>
+        <p class="news-card-summary">Medical learners are already using generative AI informally in clinical work; policy and pedagogy must adapt to integrate these tools rather than restrict them.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Generative AI Research in Health Professions Education: A Scoping Review</a>
+        <p class="news-card-summary">Scoping review of 517 publications mapping generative AI research across health professions education from 2022-2025, showing rapid GPT-model dominance and fragmented application.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756506?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Let&#x27;s Talk Systems - What Do We Really Mean by a Systems Approach in AI-Enhanced Medical Education?</a>
+        <p class="news-card-summary">Conceptual framework examining how AI reshapes medical education through assessment generation, simulation, adaptive feedback, and clinical decision support as integrated systems.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756478?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">YouTube, Large Language Models (LLMs), or Textbooks? Usage Trends and Associations with Academic Performance and Learning Satisfaction among Medical Students in Pakistan: A Cross-Sectional Study</a>
+        <p class="news-card-summary">Cross-sectional study in Pakistan found balanced YouTube and textbook use predicts better performance; high LLM satisfaction associated with poorer academic outcomes.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756308?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">The Impact of an AI-Enhanced Teaching Model on Cultivating Clinical Reasoning in Ultrasound Diagnosis among Medical Students</a>
+        <p class="news-card-summary">AI-enhanced ultrasound teaching model improved clinical reasoning and student satisfaction compared to traditional approaches.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756282?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">PeruMedQA: Benchmarking Large Language Models (LLMs) on Peruvian Medical Exams-Dataset Construction and Evaluation</a>
+        <p class="news-card-summary">New medical exam benchmark dataset from Peru; medgemma-27b-text-it model showed strongest performance for Spanish-language medical knowledge evaluation.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756279?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Does Artificial Intelligence Belong in Medical Admissions Screening? A Student-Informed Commentary on Risks, Benefits, and Hybrid Use</a>
+        <p class="news-card-summary">Student-informed commentary on AI use in medical admissions screening, weighing benefits of reduced application burden against risks of bias and equity concerns.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756209?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Piloting an AI Introduction Program for Incoming Medical Students: A Novel Approach to Medical Education</a>
+        <p class="news-card-summary">Pilot study found early introduction of AI concepts in medical school feasible but identified need for balanced curricula combining AI literacy with ethical training.</p>
       </div>
     </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
@@ -628,10 +691,34 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (21)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (23)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious">US government website used Chinese model the FBI called &quot;malicious&quot;</a>
+        <p class="news-card-summary">Federal Register website briefly deployed open-source Chinese AI search tool flagged as malicious by FBI, raising questions about vendor evaluation.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2260760373-500x500-1789748963.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch">Gavin Newsom is pushing for an AI kill switch</a>
+        <p class="news-card-summary">California governor issued executive order directing state experts to recommend AI safety oversight mechanisms including potential kill switches for frontier models.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292819671.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729329167465%2C100%2C78.541341665071&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai">Researchers used Claude to hack OpenAI</a>
+        <p class="news-card-summary">Independent security researchers used Claude to compromise OpenAI employee accounts and access sensitive GitHub data within 72 hours.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/ailogos-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 18, 2026</span></div>

@@ -1,137 +1,6 @@
 {
  "items": [
   {
-   "url": "https://jack-clark.net/2026/07/20/import-ai-465-open-vs-closed-gaps-kimi-k3-demis-big-policy-plan",
-   "title_hash": "09cc779a128ace46e2d4702ff5e6f6fd",
-   "first_seen": "2026-07-20T14:34:26.998946+00:00",
-   "kept": true,
-   "title": "Import AI 465: Open vs closed gaps; Kimi K3; Demis’ big policy plan",
-   "source": "Import AI",
-   "published": "2026-07-20T12:31:45+00:00",
-   "summary": "UK government analysis finds the performance gap between open and closed weight models on cybersecurity tasks is narrowing.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/07/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-jWGEYJ.png?fit=258%2C258&ssl=1",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v1k3pw/kimi_k3_just_fixed_15_critical_security_bugs_that",
-   "title_hash": "060493edf1f47d6daf1958f6a185f7f9",
-   "first_seen": "2026-07-20T14:34:26.998946+00:00",
-   "kept": false,
-   "reason": "forum thread discussing speculation and hearsay without verified sourcing"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/beyond-grep-the-case-for-a-context-rich-ai-coding-harness",
-   "title_hash": "4f36811a822452f4f2ee8508e63dc418",
-   "first_seen": "2026-07-20T14:34:26.998946+00:00",
-   "kept": false,
-   "reason": "vendor marketing for a commercial coding product"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03027-0",
-   "title_hash": "835dd75c4d39a0d689a7e72e9c114d8f",
-   "first_seen": "2026-07-20T14:34:26.998946+00:00",
-   "kept": true,
-   "title": "Interpretable multimodal deep learning for time-resolved survival prediction after hepatocellular carcinoma resection",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-20T00:00:00+00:00",
-   "summary": "Peer-reviewed study presents an interpretable multimodal deep learning model for predicting survival outcomes after hepatocellular carcinoma resection.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Wlh1na7rB4o",
-   "title_hash": "7dd16b987585b04ff514e15ee4953299",
-   "first_seen": "2026-07-20T14:34:26.998946+00:00",
-   "kept": true,
-   "title": "Qwen3.8 MAX Preview Is HERE, Is THIS the BEST Open Model Yet?",
-   "source": "Bijan Bowen",
-   "published": "2026-07-20T13:18:16+00:00",
-   "summary": "Hands-on testing and benchmarking of the Qwen 3.8 MAX open-weight model across vision, reasoning, and coding tasks.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i4.ytimg.com/vi/Wlh1na7rB4o/hqdefault.jpg",
-   "display_title": "Testing Qwen 3.8 MAX open-weight model"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=MmYCdNhrhfA",
-   "title_hash": "1790dea4860f09c970d43ae037972ce2",
-   "first_seen": "2026-07-20T14:34:26.998946+00:00",
-   "kept": false,
-   "reason": "vendor marketing from the product's own company"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/20/afraid-of-chinese-models",
-   "title_hash": "90dd03bbc2b5a3b6192b09bc0e2e1548",
-   "first_seen": "2026-07-20T18:21:29.314418+00:00",
-   "kept": false,
-   "reason": "policy commentary without new actionable information or substantive analysis instructive to this audience"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e83216",
-   "title_hash": "9bce78124bc91623026fc084babd5c97",
-   "first_seen": "2026-07-20T18:21:29.314418+00:00",
-   "kept": true,
-   "title": "A Secure User Interface for Preclinical Evaluation of AI in Patient Portal Message Management: Tutorial",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-20T17:00:13+00:00",
-   "summary": "Researchers describe a secure sandbox interface for testing artificial intelligence in patient portal message management without exposing clinical systems to safety and data-governance risks.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.theverge.com/tech/967791/adobe-indigo-camera-app-ai-playground-update",
-   "title_hash": "0b9055cda953a17fa8853536868ef4dc",
-   "first_seen": "2026-07-20T18:21:29.314418+00:00",
-   "kept": false,
-   "reason": "off-topic for medical education and clinical practice; general consumer photography tool"
-  },
-  {
-   "url": "https://huggingface.co/blog/nvidia/cosmos3edge",
-   "title_hash": "1d56ea503550d00647eb83f26033f564",
-   "first_seen": "2026-07-20T18:21:29.314418+00:00",
-   "kept": false,
-   "reason": "candidate summary is empty; insufficient information to evaluate"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03007-4",
-   "title_hash": "7e40c5ab58b8e4ae52a9a6c123862336",
-   "first_seen": "2026-07-20T18:21:29.314418+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance for medical educators and students"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03025-2",
-   "title_hash": "a1fed5dcf1b209c67c955c6a8cdf6f8d",
-   "first_seen": "2026-07-20T18:21:29.314418+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance for medical educators and students"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02979-7",
-   "title_hash": "7f6293b57af7932183aa61602696b4ca",
-   "first_seen": "2026-07-20T18:21:29.314418+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance for medical educators and students"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=WwxZeU4WH14",
-   "title_hash": "6a78ca9d3a8cae53740a89e5f93306a9",
-   "first_seen": "2026-07-20T18:21:29.314418+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Get-the-Most-Out-of-Fable-5-and-GPT-5-6-Sol-e3maada",
-   "title_hash": "a2ed2ddccdb0a485e86d79fdc20b544e",
-   "first_seen": "2026-07-20T18:21:29.314418+00:00",
-   "kept": false,
-   "reason": "promotional episode with sponsored content"
-  },
-  {
    "url": "https://www.theverge.com/business/968257/spacex-in-your-index-fund-explained",
    "title_hash": "94018e35623f5458ec6f5b5e8c8ff4ec",
    "first_seen": "2026-07-20T21:34:03.375370+00:00",
@@ -32663,6 +32532,305 @@
    "first_seen": "2026-09-18T13:01:25.155936+00:00",
    "kept": false,
    "reason": "podcast content mislabeled as video; IBM corporate channel promotion"
+  },
+  {
+   "url": "https://www.theverge.com/policy/997573/virginia-governor-spanberger-data-center-ai-task-force",
+   "title_hash": "452420fa150535048521fccd31601814",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "state data center policy without AI capability or model development relevance"
+  },
+  {
+   "url": "https://www.oneusefulthing.org/p/the-overhang",
+   "title_hash": "2a9d399269ef1754ef20f81a794a5ec4",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "generic explainer without substantive new information or specific development content"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious",
+   "title_hash": "7335930676d2c2ab2a6fdf18c77b3719",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "US government website used Chinese model the FBI called \"malicious\"",
+   "source": "Ars Technica AI",
+   "published": "2026-09-18T17:28:50+00:00",
+   "summary": "Federal Register website briefly deployed open-source Chinese AI search tool flagged as malicious by FBI, raising questions about vendor evaluation.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2260760373-500x500-1789748963.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch",
+   "title_hash": "75e80b021ce88065ee8a9458b42a8aae",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "Gavin Newsom is pushing for an AI kill switch",
+   "source": "The Verge AI",
+   "published": "2026-09-18T17:04:51+00:00",
+   "summary": "California governor issued executive order directing state experts to recommend AI safety oversight mechanisms including potential kill switches for frontier models.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292819671.jpg?quality=90&strip=all&crop=0%2C10.729329167465%2C100%2C78.541341665071&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/997358/what-hollywood-thinks-about-existential-ai-warnings",
+   "title_hash": "07d2bcae2bd56233f59e974791f25947",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "media commentary on entertainment industry labor concerns; not substantive AI development or policy analysis"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/997444/openai-hack-claude-heif-heist",
+   "title_hash": "429dcdbd574eae261f061aa4be05c77f",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "duplicate of kept candidate 14"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit",
+   "title_hash": "3902f69abe6ea4b149b419be9d798aaa",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "off-topic; film production technique history unrelated to AI in medicine or education"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai",
+   "title_hash": "69bf2dad69be4d9dd7d45677920ee839",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "Researchers used Claude to hack OpenAI",
+   "source": "Ars Technica AI",
+   "published": "2026-09-18T13:30:12+00:00",
+   "summary": "Independent security researchers used Claude to compromise OpenAI employee accounts and access sensitive GitHub data within 72 hours.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/ailogos-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "f826a86c25358489b0c93347491b3812",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence Readiness in Emergency Medicine: Expert Consensus Opinion for Preparing the Workforce",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-18T10:00:00+00:00",
+   "summary": "Expert consensus that emergency medicine workforce lacks foundational skills to evaluate and safely deploy AI tools now entering triage, imaging, and documentation workflows.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "522d129764dbca43415c7965c71cd7b9",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "The Long road to AI-physician partnership starts with learners: a map for AI in medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-18T10:00:00+00:00",
+   "summary": "Medical learners are already using generative AI informally in clinical work; policy and pedagogy must adapt to integrate these tools rather than restrict them.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756866?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "20715eed911b1a6ce0dfeb628df3d928",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "psychological correlational study without direct AI pedagogical or clinical relevance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "b0a0412d99ec62126586e722f92176db",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "Generative AI Research in Health Professions Education: A Scoping Review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-18T10:00:00+00:00",
+   "summary": "Scoping review of 517 publications mapping generative AI research across health professions education from 2022-2025, showing rapid GPT-model dominance and fragmented application.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756506?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "90079642b733369c0d13d233706df724",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "Let's Talk Systems - What Do We Really Mean by a Systems Approach in AI-Enhanced Medical Education?",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-18T10:00:00+00:00",
+   "summary": "Conceptual framework examining how AI reshapes medical education through assessment generation, simulation, adaptive feedback, and clinical decision support as integrated systems.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756501?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "ff72d93f1f9bfa27e4dc84e8b978321f",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "no abstract provided; cannot assess content"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756478?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "d0409d8b05e9c640a19ee94b5675bbb3",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "YouTube, Large Language Models (LLMs), or Textbooks? Usage Trends and Associations with Academic Performance and Learning Satisfaction among Medical Students in Pakistan: A Cross-Sectional Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-18T10:00:00+00:00",
+   "summary": "Cross-sectional study in Pakistan found balanced YouTube and textbook use predicts better performance; high LLM satisfaction associated with poorer academic outcomes.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756308?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "6e3cb642c8ffcaa20caf8b0a271bf110",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "The Impact of an AI-Enhanced Teaching Model on Cultivating Clinical Reasoning in Ultrasound Diagnosis among Medical Students",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-18T10:00:00+00:00",
+   "summary": "AI-enhanced ultrasound teaching model improved clinical reasoning and student satisfaction compared to traditional approaches.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756282?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "761baea0306550fb408dfca763f66f9a",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "PeruMedQA: Benchmarking Large Language Models (LLMs) on Peruvian Medical Exams-Dataset Construction and Evaluation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-18T10:00:00+00:00",
+   "summary": "New medical exam benchmark dataset from Peru; medgemma-27b-text-it model showed strongest performance for Spanish-language medical knowledge evaluation.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756279?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "4a13cd105dfb8875159f3639b4c40185",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "Does Artificial Intelligence Belong in Medical Admissions Screening? A Student-Informed Commentary on Risks, Benefits, and Hybrid Use",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-18T10:00:00+00:00",
+   "summary": "Student-informed commentary on AI use in medical admissions screening, weighing benefits of reduced application burden against risks of bias and equity concerns.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42756209?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "bd4ff79b71a917a34bbc4ceb07ae78ca",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": true,
+   "title": "Piloting an AI Introduction Program for Incoming Medical Students: A Novel Approach to Medical Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-18T10:00:00+00:00",
+   "summary": "Pilot study found early introduction of AI concepts in medical school feasible but identified need for balanced curricula combining AI literacy with ethical training.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42755527?fc=20260609215449&ff=20260918150306&v=2.20.1",
+   "title_hash": "c4f6caaf5e890fa51e0392b5e20c6e58",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "bibliometric analysis outside core AI in medical education scope; no AI-specific findings"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wjieap/made_the_horizontal_opensource_model_for_jev_with",
+   "title_hash": "077b33e62ba3c4b0358389dc4fa9fa7b",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "minor release notes from individual developer; niche local model announcement"
+  },
+  {
+   "url": "https://linguisticdiscovery.com/posts/pre-greek",
+   "title_hash": "10a2eab77ffcc568a6dc8a3534cd8024",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "off-topic; historical linguistics unrelated to AI in medicine or education"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04708-9",
+   "title_hash": "92ec0431318cd130ceaae845ca390178",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "editorial expression of concern on unrelated cancer research; no AI component"
+  },
+  {
+   "url": "https://minimallysufficient.com/posts/llm-classification-is-feature-extraction",
+   "title_hash": "f6432e1f72a34ac020b2e9a40612ab0f",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "technical post on LLM feature engineering without medical or educational relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=2z-7pIj57f8",
+   "title_hash": "33473097cbb85b01420c3717986bee47",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "promotional content with affiliate link and newsletter signup"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=bbNTY8O0GTY",
+   "title_hash": "baa4486caa877eca32de6f3735da0bbd",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "vendor marketing of ChatGPT Work product features"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=GzCsKuDgr6Q",
+   "title_hash": "c9bef38acf79e3a1d75ff09f72bc0362",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "vendor marketing of ChatGPT Work product features"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Wb8MhkpQpX8",
+   "title_hash": "6575671143a3da01359f6225a7374adc",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "vendor marketing of ChatGPT Work product features"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=euED8JRunBA",
+   "title_hash": "acd7a2ac4984378b67195353f204f648",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "vendor marketing of ChatGPT Work product features"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=wK0zWeVyLM4",
+   "title_hash": "f1a48739574ca2edee4292bf82f91571",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "vendor marketing of ChatGPT Work product features"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=cXUmFec2PNY",
+   "title_hash": "09c02796d5f7342cb28e08033bc55a05",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "vendor marketing of ChatGPT Work product features"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=VMgEQ7ym9WU",
+   "title_hash": "1386ef2cea5a95851f37965228d9f5bd",
+   "first_seen": "2026-09-18T19:03:06.063875+00:00",
+   "kept": false,
+   "reason": "vendor marketing of ChatGPT Work product features"
   }
  ],
  "digests": [

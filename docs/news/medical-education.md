@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -26,6 +26,69 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754902?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Assessment of drug harm by final-year medical students and ChatGPT - a comparative analysis</a>
     <p class="news-card-summary">Final-year medical students and ChatGPT showed strong agreement on the most harmful drugs but differed on moderately and minimally harmful substances, suggesting AI assessments may not fully capture clinical experience and cultural context.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Artificial Intelligence Readiness in Emergency Medicine: Expert Consensus Opinion for Preparing the Workforce</a>
+    <p class="news-card-summary">Expert consensus that emergency medicine workforce lacks foundational skills to evaluate and safely deploy AI tools now entering triage, imaging, and documentation workflows.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">The Long road to AI-physician partnership starts with learners: a map for AI in medical education</a>
+    <p class="news-card-summary">Medical learners are already using generative AI informally in clinical work; policy and pedagogy must adapt to integrate these tools rather than restrict them.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Generative AI Research in Health Professions Education: A Scoping Review</a>
+    <p class="news-card-summary">Scoping review of 517 publications mapping generative AI research across health professions education from 2022-2025, showing rapid GPT-model dominance and fragmented application.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756506?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Let&#x27;s Talk Systems - What Do We Really Mean by a Systems Approach in AI-Enhanced Medical Education?</a>
+    <p class="news-card-summary">Conceptual framework examining how AI reshapes medical education through assessment generation, simulation, adaptive feedback, and clinical decision support as integrated systems.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756478?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">YouTube, Large Language Models (LLMs), or Textbooks? Usage Trends and Associations with Academic Performance and Learning Satisfaction among Medical Students in Pakistan: A Cross-Sectional Study</a>
+    <p class="news-card-summary">Cross-sectional study in Pakistan found balanced YouTube and textbook use predicts better performance; high LLM satisfaction associated with poorer academic outcomes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756308?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">The Impact of an AI-Enhanced Teaching Model on Cultivating Clinical Reasoning in Ultrasound Diagnosis among Medical Students</a>
+    <p class="news-card-summary">AI-enhanced ultrasound teaching model improved clinical reasoning and student satisfaction compared to traditional approaches.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756282?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">PeruMedQA: Benchmarking Large Language Models (LLMs) on Peruvian Medical Exams-Dataset Construction and Evaluation</a>
+    <p class="news-card-summary">New medical exam benchmark dataset from Peru; medgemma-27b-text-it model showed strongest performance for Spanish-language medical knowledge evaluation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756279?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Does Artificial Intelligence Belong in Medical Admissions Screening? A Student-Informed Commentary on Risks, Benefits, and Hybrid Use</a>
+    <p class="news-card-summary">Student-informed commentary on AI use in medical admissions screening, weighing benefits of reduced application burden against risks of bias and equity concerns.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756209?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Piloting an AI Introduction Program for Incoming Medical Students: A Novel Approach to Medical Education</a>
+    <p class="news-card-summary">Pilot study found early introduction of AI concepts in medical school feasible but identified need for balanced curricula combining AI literacy with ethical training.</p>
   </div>
 </div>
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -62,70 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754791?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Education on Artificial Intelligence in US Internal Medicine Residencies: Results of a National Survey</a>
     <p class="news-card-summary">A national survey documents the current state of artificial intelligence education within United States internal medicine residency training programs.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact">2 in 3 Harvard Professors Say AI Has a Negative Impact on Class</a>
-    <p class="news-card-summary">Survey finding that two-thirds of Harvard professors report negative impact of AI on classroom instruction.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2025-07/GettyImages-2217246201.jpg?itok=memmdnLJ" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e108766">The AWARE (AI Use, Why, Attachment, Reality and Risk, and Effect on Functioning) Framework for Assessing Patients’ Use of AI in Mental Health Care</a>
-    <p class="news-card-summary">Framework for assessing how patients use conversational AI systems in mental health care, addressing integration of language models into cognitive and emotional decision-making.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42745894?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">Use of artificial intelligence in education and training of radiology</a>
-    <p class="news-card-summary">Review of AI in radiology education finds potential in personalized learning and competency development but requires standardized curricula, faculty training, competency frameworks, and ethical oversight.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42745325?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">Awareness and perceptions of artificial intelligence among pulmonologists and thoracic surgeons: a national survey</a>
-    <p class="news-card-summary">Survey of pulmonologists and thoracic surgeons finds generally positive attitudes toward AI but persistent concerns about ethics, law, data security, and need for comprehensive regulation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42745060?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">Artificial intelligence in otolaryngology: current applications, limitations, and future perspectives</a>
-    <p class="news-card-summary">Narrative review identifies methodological and translational barriers to clinical AI adoption in otolaryngology: limited validation, bias, opacity, privacy concerns, and automation bias.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42747318?fc=20260609215449&amp;ff=20260916153444&amp;v=2.20.1">Bridging algorithm and narrative: natural language processing, narratology, and radical empathy as core competencies in medical education</a>
-    <p class="news-card-summary">Commentary argues medical education must integrate computational literacy with narrative understanding and empathy as core competencies as AI shapes clinical practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42746198?fc=20260609215449&amp;ff=20260916153444&amp;v=2.20.1">Artificial Intelligence in Medical Education: Perceptions of Romanian Medical Students in a Cross-Sectional Study</a>
-    <p class="news-card-summary">Survey of Romanian medical students found high familiarity with AI applications and favorable views of their educational and clinical utility, though concerns about accuracy and overdependence persist.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.16023">Are We Grading Properly? Understanding Failure Modes in Medical Benchmarks</a>
-    <p class="news-card-summary">Study examines failure modes in medical benchmarks that use rubric-based evaluation to grade open-ended clinical scenarios at scale.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87587">Teaching Acute Coronary Syndrome High-Risk ECG Interpretation and Clinical Decision-Making Through FOAMed Videos and Podcast Versus Print-Based Materials Among Emergency Care Providers: Randomized Controlled Mixed Methods Trial</a>
-    <p class="news-card-summary">Randomized trial comparing effectiveness of Free Open Access Medical Education videos and podcasts versus print materials for teaching high-risk acute coronary syndrome electrocardiogram interpretation to emergency care providers.</p>
   </div>
 </div>
 </div>

@@ -18,9 +18,33 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (6)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (7)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/us-government-website-used-chinese-model-the-fbi-called-malicious">US government website used Chinese model the FBI called &quot;malicious&quot;</a>
+    <p class="news-card-summary">Federal Register website briefly deployed open-source Chinese AI search tool flagged as malicious by FBI, raising questions about vendor evaluation.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2260760373-500x500-1789748963.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/policy/997516/california-governor-newsom-ai-kill-switch">Gavin Newsom is pushing for an AI kill switch</a>
+    <p class="news-card-summary">California governor issued executive order directing state experts to recommend AI safety oversight mechanisms including potential kill switches for frontier models.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2292819671.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.729329167465%2C100%2C78.541341665071&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/researchers-used-claude-to-hack-openai">Researchers used Claude to hack OpenAI</a>
+    <p class="news-card-summary">Independent security researchers used Claude to compromise OpenAI employee accounts and access sensitive GitHub data within 72 hours.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/ailogos-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 18, 2026</span></div>
@@ -109,29 +133,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://simonwillison.net/2026/Sep/16/one-claude">Claude Cowork and chat are now one Claude</a>
     <p class="news-card-summary">Anthropic merged Claude Cowork and chat into a unified interface supporting both quick questions and extended tasks on Pro and Max plans.</p>
   </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wi32jg/chinas_openweight_ai_models_are_now_just_4_months">China&#x27;s open-weight AI models are now just 4 months behind frontier US offerings, Mozilla report claims, models still lag in some benchmarks but are drastically cheaper to use</a>
-    <p class="news-card-summary">Report documents that open-weight AI models from China have narrowed the capability gap with US frontier models to four months while remaining significantly cheaper.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/y3j4Fmp2AEvl6NBWF18BXvT9FUJHVLNQKd8wfNdJLc8.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b03d9c1b3e83708b79569a6b1d65f58f875ddb77" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/tech/996310/google-home-mcp-integration-agentic-ai-smart-home-price-release-date">Google will now let any AI agent run your smart home</a>
-    <p class="news-card-summary">Google opened its smart home platform to third-party AI agents via Model Context Protocol, enabling tools like Claude to control connected devices.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/gemini-for-home.jpg?quality=90&amp;strip=all&amp;crop=0%2C3.4128369206903%2C100%2C93.174326158619&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/physical-ai-robot-cybersecurity-vicone">Rethinking Robot Safety in the Age of AI</a>
-    <p class="news-card-summary">Analysis of robot safety challenges in physical AI systems when attackers can manipulate multimodal perception or decision-making without obvious failures.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/humanoid-robots-and-people-walking-through-a-modern-city-street-with-glass-buildings.jpg?id=67745861&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
