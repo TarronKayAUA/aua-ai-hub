@@ -13,12 +13,12 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Two-thirds of Harvard faculty say generative AI has hurt classroom instruction, showing that early enthusiasm for AI in teaching is meeting real skepticism <a href="https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact">[1]</a>. Surveys of practicing clinicians in pulmonology and thoracic surgery show more cautious optimism, welcoming AI&#x27;s promise while demanding stronger governance and validation <a href="https://pubmed.ncbi.nlm.nih.gov/42745325?fc=20260609215449&amp;ff=20260916093149&amp;v=2.20.1">[4]</a>. Concerns about how these tools are measured are intensifying too: new research on grading open-ended clinical scenarios finds real weaknesses in rubric-based benchmarks <a href="https://arxiv.org/abs/2609.16023">[8]</a>. Meanwhile, early trials of multi-agent language model simulators suggest they can support deliberate practice in clinical reasoning when designed for role stability and contextual fidelity <a href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">[10]</a>.</p>
-<p>Also this week: four teaching and curriculum papers cover radiology education and calls to blend narrative empathy with computational literacy, while two simulation and skills studies include AI-assisted urolithiasis treatment planning. Broader adoption surveys span otolaryngology and Romanian medical students, and assessment work extends to hindsight bias in clinical reasoning models.</p>
-<p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the items below.</p>
+<p>Two-thirds of Harvard faculty report that AI is having a negative effect on classroom teaching <a href="https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact">[4]</a>, a finding that sits uneasily alongside more optimistic evidence from clinical training tools: a large language model system that scores medical students&#x27; history-taking performance on par with human raters <a href="https://pubmed.ncbi.nlm.nih.gov/42751277?fc=20260609215449&amp;ff=20260917154430&amp;v=2.20.1">[2]</a> and an early multi-agent simulator built for deliberate clinical-reasoning practice <a href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">[13]</a>. A comparison of GPT-5.2&#x27;s reasoning modes on postgraduate internal medicine questions probes how far strong exam performance actually extends toward safe clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42751669?fc=20260609215449&amp;ff=20260917154430&amp;v=2.20.1">[1]</a>. Meanwhile, a broader survey of health care professionals finds adoption concentrated in lower-risk tasks, tempered by persistent concerns about safety and oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">[15]</a>.</p>
+<p>Also this week: five items on teaching and curriculum design cover radiology education, narrative-medicine competencies, and FOAMed-based ECG instruction, while five more track attitudes among students, pulmonologists, and thoracic surgeons. Three simulation and skills papers include work on urolithiasis technology, alongside single studies on benchmark grading and assessment feedback.</p>
+<p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -33,6 +33,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42751277?fc=20260609215449&amp;ff=20260917154430&amp;v=2.20.1">A Medical Large Language Model-Based System Improves History-Taking Performance Among Medical Students</a>
     <p class="news-card-summary">A medical large language model system for history-taking training shows automated scoring agreement with manual assessment and strengthens students&#x27; clinical interviewing ability.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42753323?fc=20260609215449&amp;ff=20260918004743&amp;v=2.20.1">Artificial intelligence in emergency medicine education: A narrative review</a>
+    <p class="news-card-summary">Narrative review assesses artificial intelligence tools in emergency medicine education, emphasizing clinician educator responsibility for safe and effective deployment.</p>
   </div>
 </div>
 <div class="news-card" data-topic="attitudes-and-adoption">
@@ -118,13 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">Attitudes Toward Large Language Models in Health Care and Preferences for Their Adoption and Oversight Among Health Care Professionals: Cross-Sectional Survey</a>
     <p class="news-card-summary">Survey of healthcare professionals found early adoption of large language models for lower-risk tasks alongside significant concerns about safety, bias, and governance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 15, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42741389?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">Automated Assessment of OCT Angiography Image Quality Using the Artificial Intelligence Ready and Exploratory Atlas for Diabetes Insights Data Set</a>
-    <p class="news-card-summary">Deep learning models trained on the AI-READI dataset achieved high performance in assessing optical coherence tomography angiography image quality and generalized well across institutions and equipment.</p>
   </div>
 </div>
 </div>

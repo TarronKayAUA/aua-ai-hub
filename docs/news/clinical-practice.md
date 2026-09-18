@@ -13,19 +13,33 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>Regulatory oversight of artificial intelligence in medicine continues to lag behind adoption, with an overview of more than 1600 FDA-approved AI-based medical devices highlighting gaps in post-market monitoring <a href="https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices">[1]</a>. Evaluation efforts are filling some of that gap: a paired-comparison audit finds sex and gender disparities in large language model-driven emergency triage decisions <a href="https://www.nature.com/articles/s41746-026-03090-7">[11]</a>, while a separate study tests whether generated medical information is properly grounded in cited sources <a href="https://ai.jmir.org/2026/1/e93761">[8]</a>. Imaging validation also advances, with a multicohort benchmark of AI-generated thin-slice CT reconstruction under real clinical conditions <a href="https://www.nature.com/articles/s41746-026-03253-6">[12]</a>. A systematic review of in-hospital delirium prediction models further finds that many tools built on electronic health record data are not yet ready for clinical deployment <a href="https://medinform.jmir.org/2026/1/e91618">[7]</a>.</p>
-<p>Also this week: the section&#x27;s seven items on safety and evaluation dominate current coverage, alongside three each on clinical decision support and imaging and diagnostics. A single entry addresses patient-facing tools, examining German consumers&#x27; preferences for AI-based home emergency detection, and one covers clinical documentation, using large language model features from respiratory therapy notes to predict extubation failure.</p>
-<p class="section-brief-date">The picture as of September 17, 2026; numbered links go to the items below.</p>
+<p>The regulatory landscape for clinical AI continues to expand, with over 1600 FDA-approved AI-based medical devices now in use and oversight mechanisms struggling to keep pace <a href="https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices">[4]</a>. That gap is compounded by a broader evidentiary problem: rapid model iteration and inconsistent study design make it difficult to establish reliable evidence for large language models in clinical settings <a href="https://www.nature.com/articles/s41746-026-03262-5">[11]</a>. Concrete evaluations illustrate the stakes: one study pitted 16 large language models against practicing physicians on real-world traditional Chinese medicine cases <a href="https://arxiv.org/abs/2609.17544">[6]</a>, another used LLM-derived features from respiratory therapy notes to predict extubation failure <a href="https://arxiv.org/abs/2609.17532">[5]</a>, and a systematic review assessed electronic health record-based models for predicting in-hospital delirium <a href="https://medinform.jmir.org/2026/1/e91618">[12]</a>.</p>
+<p>Also this week: the section&#x27;s eight items on safety and evaluation extend beyond the headline studies, covering hallucination detection, multilingual concept normalization, and hospital readiness for generative AI governance. Two entries examine imaging and diagnostics, including orbital disease applications, while single items address clinical documentation and drug-target interaction prediction.</p>
+<p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (9)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.19585">CliniCIRCA: A Modular LLM Framework for Constructing Longitudinal Mental Health Patient Journeys from Raw EHR Narratives</a>
+    <p class="news-card-summary">CliniCIRCA is a multi-stage language model framework for extracting longitudinal mental health patient journeys from unstructured electronic health record narratives.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e74339">Hospital Human Resource Managers’ Perspectives on Organizational Readiness for Generative AI Skills: Qualitative Descriptive Study</a>
     <p class="news-card-summary">Qualitative study examines hospital HR managers&#x27; perspectives on organizational readiness for generative AI adoption, identifying barriers including privacy, security, and governance concerns.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754174?fc=20260609215449&amp;ff=20260918004743&amp;v=2.20.1">Artificial intelligence in orbital diseases: opportunities, challenges, and future horizons</a>
+    <p class="news-card-summary">Review examines artificial intelligence applications in orbital disease diagnosis and management across multimodal imaging and clinical heterogeneity.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -111,20 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03224-x">Knowledge-enhanced LLMs for multilingual biomedical concept normalization: a multilingual benchmarking and behavioral analysis</a>
     <p class="news-card-summary">Benchmarking study evaluates knowledge-enhanced large language models for multilingual biomedical concept normalization across multiple languages.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03090-7">Auditing sex/gender disparities in emergency triage with LLM-based paired comparisons</a>
-    <p class="news-card-summary">Study uses paired large language model comparisons to audit sex and gender disparities in emergency triage decision-making.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03253-6">Benchmarking AI-generated thin-slice CT under clinical reconstruction conditions: a multicohort study</a>
-    <p class="news-card-summary">Multicohort study benchmarks AI-generated thin-slice CT reconstruction quality under realistic clinical conditions.</p>
   </div>
 </div>
 </div>

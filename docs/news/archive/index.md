@@ -4,6 +4,7 @@
 
 Weekly digests, newest first. Each digest is also published to the [digest feed](../../digest.xml), which any feed reader can follow.
 
+- [Week 38, 2026](2026-w38.md): September 11, 2026 to September 18, 2026
 - [Week 37, 2026](2026-w37.md): September 4, 2026 to September 11, 2026
 - [Week 36, 2026](2026-w36.md): August 28, 2026 to September 4, 2026
 - [Week 35, 2026](2026-w35.md): August 21, 2026 to August 28, 2026
