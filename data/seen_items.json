@@ -1,75 +1,6 @@
 {
  "items": [
   {
-   "url": "https://huggingface.co/blog/nvidia/state-of-simulation-for-physical-ai",
-   "title_hash": "5738ed33556b47eb29efbabed504b249",
-   "first_seen": "2026-07-21T21:33:58.397837+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/968855/substack-pangram-ai-detecting-tool",
-   "title_hash": "38d472d518b3f4df304b22b765ee58ef",
-   "first_seen": "2026-07-21T21:33:58.397837+00:00",
-   "kept": false,
-   "reason": "vendor marketing"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v2ky1e/anthropic_claims_local_models_are_stealing_from",
-   "title_hash": "36e49a1fbc5959e1771f9525bf0484cb",
-   "first_seen": "2026-07-21T21:33:58.397837+00:00",
-   "kept": false,
-   "reason": "funding and acquisition gossip"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02964-0",
-   "title_hash": "d7d71e209388356cf66ac6d94851fcea",
-   "first_seen": "2026-07-21T21:33:58.397837+00:00",
-   "kept": true,
-   "title": "Real-world deployment of remote sleep monitoring technologies reveals distinct patterns associated with cognitive decline",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-21T00:00:00+00:00",
-   "summary": "Real-world deployment of remote sleep monitoring identifies patterns associated with cognitive decline in older adults.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=6BtIQIGqGJc",
-   "title_hash": "740055208075a588fa1083f8a6d0d101",
-   "first_seen": "2026-07-21T21:33:58.397837+00:00",
-   "kept": false,
-   "reason": "promotional content with marketing integration, no substantive AI development or educational value"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=XSHTyq8Z9jA",
-   "title_hash": "d22a196b50ca8455783a9bfc077a13cf",
-   "first_seen": "2026-07-21T21:33:58.397837+00:00",
-   "kept": true,
-   "title": "Gemini 3.6 Flash Is HERE, Testing Google’s BEST Model Yet!",
-   "source": "Bijan Bowen",
-   "published": "2026-07-21T21:06:10+00:00",
-   "summary": "Hands-on testing of Google's Gemini 3.6 Flash model covering technical specifications, performance comparisons with earlier versions, and practical capabilities.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i1.ytimg.com/vi/XSHTyq8Z9jA/hqdefault.jpg",
-   "display_title": "Gemini 3.6 Flash testing and technical overview"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=pKwRNdDtai0",
-   "title_hash": "929963a6949e6d2ff36d0bd3f0a4682e",
-   "first_seen": "2026-07-21T21:33:58.397837+00:00",
-   "kept": false,
-   "reason": "routine product feature announcement from vendor's own channel, minor feature integration rather than significant capability change"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Fight-Over-Which-AI-Models-You-Can-Use-e3mceub",
-   "title_hash": "df761b0e95e81024325a9182a5cb746a",
-   "first_seen": "2026-07-21T21:33:58.397837+00:00",
-   "kept": false,
-   "reason": "daily news recap without substantive analysis or expert guest; policy coverage belongs only when it offers detailed explanation or informed perspective"
-  },
-  {
    "url": "https://www.theverge.com/entertainment/968703/neill-blomkamps-nightborne-barley-studios-seedance",
    "title_hash": "5da93aa30f5a74315e555e78610dbada",
    "first_seen": "2026-07-22T03:49:16.266769+00:00",
@@ -32481,6 +32412,27 @@
    "first_seen": "2026-09-19T18:37:52.556636+00:00",
    "kept": false,
    "reason": "daily news recap from a generalist AI podcast, not a standout episode with specific relevance to medical educators"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/997833/meta-muse-creepy",
+   "title_hash": "9e8b0339c30186b2f742bfd4c486ba0f",
+   "first_seen": "2026-09-19T22:20:06.846478+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the product's own company channel"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/19/datasette-auth-github",
+   "title_hash": "19fcddd097d2d75e92ff5b6410c8b9b5",
+   "first_seen": "2026-09-19T22:20:06.846478+00:00",
+   "kept": false,
+   "reason": "minor release notes for a niche software tool"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wkocvj/calling_it_now_within_the_next_year_a_major_us",
+   "title_hash": "f395b9a6aaca87b06c9ad09b6a820d0e",
+   "first_seen": "2026-09-19T22:20:06.846478+00:00",
+   "kept": false,
+   "reason": "speculation and rumor with no underlying confirmed event"
   }
  ],
  "digests": [
