@@ -121,10 +121,9 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/news/quick-takes/2026/09/18/report-higher-eds-adoption-ai-outpaces-student-guards">Report: Student Protections Haven’t Kept Up With Higher Ed’s Adoption of AI</a>
-    <p class="news-card-summary">A report finds that student protections and policies have not kept pace with higher education&#x27;s adoption of artificial intelligence tools.</p>
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42760544?fc=20260609215449&amp;ff=20260919083106&amp;v=2.20.1">AI literacy and ethical attitudes toward AI in medical students: evidence from a structural model</a>
+    <p class="news-card-summary">Research finds medical students with higher AI literacy show stronger ethical attitudes toward AI, independent of frequency of use.</p>
   </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2025-06/GettyImages-1478407211.jpg?itok=q-h11SOD" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

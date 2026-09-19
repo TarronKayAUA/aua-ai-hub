@@ -18,9 +18,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 19, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03270-5">Outcome-grounded effect of clinically stigmatizing information on large language model emergency triage prioritization</a>
+    <p class="news-card-summary">Study examines how stigmatizing patient information affects large language model performance in emergency triage prioritization.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03209-w">Staged purpose-blinded evaluation of provenance risk from a general-purpose generator in breast ultrasound</a>
+    <p class="news-card-summary">Study evaluates risks from general-purpose generative AI applied to breast ultrasound interpretation through staged purpose-blinded testing.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 18, 2026</span></div>
@@ -112,20 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03266-1">The generative rearchitecture of antibody engineering shifts empirical discovery into intentional design</a>
     <p class="news-card-summary">Research describes how generative models enable intentional design approaches in antibody engineering, shifting from empirical discovery methods.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03262-5">The evidence challenge facing large language models in medicine</a>
-    <p class="news-card-summary">Article examines challenges in evidence generation and evaluation of large language models in clinical medicine, including rapid model iteration and variable study design reporting.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 16, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91618">Prediction Models for In-Hospital Delirium Using Routinely Collected Electronic Health Record Data: Systematic Review</a>
-    <p class="news-card-summary">Systematic review evaluates prediction models built from electronic health record data for early identification of in-hospital delirium, assessing their methodological quality and clinical readiness.</p>
   </div>
 </div>
 </div>
