@@ -13,9 +13,9 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Two-thirds of Harvard faculty report that AI is having a negative effect on classroom teaching <a href="https://www.insidehighered.com/news/quick-takes/2026/09/17/2-3-harvard-professors-say-ai-has-negative-impact">[4]</a>, a finding that sits uneasily alongside more optimistic evidence from clinical training tools: a large language model system that scores medical students&#x27; history-taking performance on par with human raters <a href="https://pubmed.ncbi.nlm.nih.gov/42751277?fc=20260609215449&amp;ff=20260917154430&amp;v=2.20.1">[2]</a> and an early multi-agent simulator built for deliberate clinical-reasoning practice <a href="https://pubmed.ncbi.nlm.nih.gov/42740524?fc=20260609215449&amp;ff=20260915093550&amp;v=2.20.1">[13]</a>. A comparison of GPT-5.2&#x27;s reasoning modes on postgraduate internal medicine questions probes how far strong exam performance actually extends toward safe clinical use <a href="https://pubmed.ncbi.nlm.nih.gov/42751669?fc=20260609215449&amp;ff=20260917154430&amp;v=2.20.1">[1]</a>. Meanwhile, a broader survey of health care professionals finds adoption concentrated in lower-risk tasks, tempered by persistent concerns about safety and oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42742517?fc=20260609215449&amp;ff=20260915154227&amp;v=2.20.1">[15]</a>.</p>
-<p>Also this week: five items on teaching and curriculum design cover radiology education, narrative-medicine competencies, and FOAMed-based ECG instruction, while five more track attitudes among students, pulmonologists, and thoracic surgeons. Three simulation and skills papers include work on urolithiasis technology, alongside single studies on benchmark grading and assessment feedback.</p>
-<p class="section-brief-date">The picture as of September 18, 2026; numbered links go to the items below.</p>
+<p>A scoping review of 517 publications finds generative AI research in health professions education has grown rapidly since 2022 but remains fragmented, dominated by GPT-based tools <a href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[4]</a>. That growth is outpacing institutional response: medical learners are already using generative AI informally in clinical work, and one framework argues policy and curricula must adapt rather than restrict this use <a href="https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[3]</a>. Evidence on whether such exposure translates into skill is mixed; a randomized trial found that AI-assisted ultrasound nerve identification training did not improve student performance once the AI support was removed <a href="https://pubmed.ncbi.nlm.nih.gov/42760064?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">[12]</a>. Meanwhile, a national report finds student protections have not kept pace with higher education&#x27;s broader adoption of AI tools <a href="https://www.insidehighered.com/news/quick-takes/2026/09/18/report-higher-eds-adoption-ai-outpaces-student-guards">[15]</a>.</p>
+<p>Also this week: seven items address teaching and curriculum design, from an AI-enhanced ultrasound teaching model that improved clinical reasoning to a pilot program introducing incoming students to AI literacy and ethics. Two studies each examine assessment and feedback, student and clinician attitudes toward AI adoption, and exam benchmarking, including a new Peruvian medical exam dataset testing Spanish-language model performance.</p>
+<p class="section-brief-date">The picture as of September 19, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
@@ -98,6 +98,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Scoping review synthesizes generative AI capabilities with learning outcomes, assessment, safety, and implementation in otolaryngology education.</p>
   </div>
 </div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42760064?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">Real-time AI-assisted nerve tracking for ultrasound-guided nerve identification: a prospective randomized trial</a>
+    <p class="news-card-summary">A randomized trial found that brief AI-assisted training did not improve independent ultrasound nerve identification after AI support was removed, questioning immediate transfer of learning.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42759901?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">Clinicians vs. Artificial Intelligence in Predicting 28-Day ICU Mortality: A Vignette Study</a>
+    <p class="news-card-summary">Clinicians achieved higher accuracy than ChatGPT at predicting 28-day ICU mortality in a vignette study, supporting human judgment in high-stakes prognostic decisions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42759135?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">Pilot Validation of a Large Language Model Facilitator for Peer-to-Peer Learning</a>
+    <p class="news-card-summary">A pilot study validated that large language models can support peer-to-peer learning in surgical education but cannot yet replace human instructors.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 18, 2026</span></div>
@@ -105,26 +126,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">A report finds that student protections and policies have not kept pace with higher education&#x27;s adoption of artificial intelligence tools.</p>
   </div>
   <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2025-06/GettyImages-1478407211.jpg?itok=q-h11SOD" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42751669?fc=20260609215449&amp;ff=20260917154430&amp;v=2.20.1">Comparative Error Analysis of GPT-5.2 Reasoning Modes on Performance in Postgraduate Internal Medicine Single-Best-Answer Questions</a>
-    <p class="news-card-summary">Study compares GPT-5.2 reasoning modes on postgraduate internal medicine examination questions, evaluating extended-reasoning performance against standard modes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42751277?fc=20260609215449&amp;ff=20260917154430&amp;v=2.20.1">A Medical Large Language Model-Based System Improves History-Taking Performance Among Medical Students</a>
-    <p class="news-card-summary">A medical large language model system for history-taking training shows automated scoring agreement with manual assessment and strengthens students&#x27; clinical interviewing ability.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42753323?fc=20260609215449&amp;ff=20260918004743&amp;v=2.20.1">Artificial intelligence in emergency medicine education: A narrative review</a>
-    <p class="news-card-summary">Narrative review assesses artificial intelligence tools in emergency medicine education, emphasizing clinician educator responsibility for safe and effective deployment.</p>
-  </div>
 </div>
 </div>
