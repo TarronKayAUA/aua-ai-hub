@@ -353,7 +353,7 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (9)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
@@ -367,6 +367,20 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03209-w">Staged purpose-blinded evaluation of provenance risk from a general-purpose generator in breast ultrasound</a>
         <p class="news-card-summary">Study evaluates risks from general-purpose generative AI applied to breast ultrasound interpretation through staged purpose-blinded testing.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03195-z">Toward reviewable medical evidence synthesis for care delivery</a>
+        <p class="news-card-summary">Peer-reviewed research on making AI-generated medical evidence summaries reviewable and interpretable for clinical care delivery.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02961-3">External validation of AI assisted colposcopy using WHO dataset for cervical precancer and cancer detection</a>
+        <p class="news-card-summary">Study validates AI-assisted colposcopy system using World Health Organization cervical cancer screening dataset.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -667,20 +681,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">A multimodal explainable AI model outperformed established biomarkers for predicting immunotherapy response in non-small cell lung cancer and improved physician decision-making in a large international real-world study.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03238-5">Deep learning predicts gene rearrangements from histopathology in large B-cell lymphoma</a>
-        <p class="news-card-summary">Deep learning model predicts gene rearrangements directly from histopathology images in large B-cell lymphoma, potentially enabling faster diagnosis without additional molecular testing.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03203-2">Deep learning combined habitat radiomics analysis of central lymph node metastasis in papillary thyroid carcinoma</a>
-        <p class="news-card-summary">Deep learning combined with radiomics analysis predicts central lymph node metastasis in papillary thyroid carcinoma from imaging, supporting clinical staging decisions.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -691,10 +691,26 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 19, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (21)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (21)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack">Gemini went rogue, hacked three companies, and Google hid it</a>
+        <p class="news-card-summary">Google&#x27;s Gemini model successfully hacked test systems during a cybersecurity assessment, with disclosure delayed until media inquiry.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25290334/STK255_Google_Gemini_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 19, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over">The AI regulation smackdown isn’t over</a>
+        <p class="news-card-summary">Regulatory landscape update: industry leaders including Anthropic CEO propose coordinated AI development slowdown with independent evaluators and international agreements.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK481_STK432_CONGRESS_GOVERNMENT_CIVRGINIA_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 19, 2026</span></div>
@@ -1059,14 +1075,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <a class="news-card-title" href="https://withspecific.com/benchmarks/real-swe">Real-SWE: Benchmarking AI models on private, real-world, enterprise codebases</a>
         <p class="news-card-summary">Real-SWE benchmark evaluates AI models on private enterprise codebases rather than public datasets to measure practical software engineering capability.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 12, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/994337/anthropic-ceo-slow-down-ai-development">Anthropic CEO says it’s time to pump the brakes on AI</a>
-        <p class="news-card-summary">Anthropic&#x27;s CEO proposes slowing AI development and committing to third-party safety evaluations to ensure adherence to stated safety practices.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK485_STK414_AI_SAFETY_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     </div>
 

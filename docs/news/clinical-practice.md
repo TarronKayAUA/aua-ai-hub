@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 19, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -33,6 +33,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03209-w">Staged purpose-blinded evaluation of provenance risk from a general-purpose generator in breast ultrasound</a>
     <p class="news-card-summary">Study evaluates risks from general-purpose generative AI applied to breast ultrasound interpretation through staged purpose-blinded testing.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03195-z">Toward reviewable medical evidence synthesis for care delivery</a>
+    <p class="news-card-summary">Peer-reviewed research on making AI-generated medical evidence summaries reviewable and interpretable for clinical care delivery.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02961-3">External validation of AI assisted colposcopy using WHO dataset for cervical precancer and cancer detection</a>
+    <p class="news-card-summary">Study validates AI-assisted colposcopy system using World Health Organization cervical cancer screening dataset.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -112,20 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03234-9">Clinical trials for digital health interventions: a rapid review of study independence and the developer effect</a>
     <p class="news-card-summary">Peer-reviewed rapid review examining study independence and developer bias in clinical trials of digital health interventions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03226-9">Conditional deep generative modeling of blood-based infrared spectra enables controlled in-silico phenotyping studies</a>
-    <p class="news-card-summary">Peer-reviewed study applying conditional deep generative modeling to blood-based infrared spectroscopy for in-silico phenotyping.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="other">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03266-1">The generative rearchitecture of antibody engineering shifts empirical discovery into intentional design</a>
-    <p class="news-card-summary">Research describes how generative models enable intentional design approaches in antibody engineering, shifting from empirical discovery methods.</p>
   </div>
 </div>
 </div>
