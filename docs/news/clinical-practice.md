@@ -13,14 +13,28 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>The regulatory landscape for AI-based medical devices continues to draw oversight concerns, with more than 1600 FDA-approved tools now in use and effective monitoring still unresolved <a href="https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices">[7]</a>. Similar scrutiny applies to evidence generation for large language models in medicine, where rapid model iteration and inconsistent study reporting complicate clinical validation <a href="https://www.nature.com/articles/s41746-026-03262-5">[14]</a>. A geriatrician&#x27;s commentary adds a patient-safety angle, urging careful review of AI-assisted decisions for older adults <a href="https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny">[1]</a>. A related rapid review finds that developer involvement in digital health trials can shape reported study outcomes <a href="https://www.nature.com/articles/s41746-026-03234-9">[11]</a>, while a systematic review of delirium prediction models points to persistent gaps in methodological quality <a href="https://medinform.jmir.org/2026/1/e91618">[15]</a>.</p>
-<p>Also this week: the section adds eight items on safety and evaluation, spanning FDA device oversight, LLM evidence standards, and trial independence, alongside three papers on clinical decision support and two on imaging and diagnostics, including a review of AI in orbital disease. One item addresses clinical documentation, using LLM-derived features from respiratory therapy notes to predict extubation failure.</p>
-<p class="section-brief-date">The picture as of September 19, 2026; numbered links go to the items below.</p>
+<p>More than 1,600 FDA-approved AI-based medical devices are now in clinical use, raising questions about how consistently they are overseen <a href="https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices">[13]</a>. Similar reliability concerns run through evaluation research: stigmatizing patient descriptions were shown to skew large language model triage prioritization in emergency settings <a href="https://www.nature.com/articles/s41746-026-03270-5">[3]</a>, and a geriatrician warned that AI tools for older adults require careful scrutiny before wider deployment <a href="https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny">[7]</a>. On the diagnostic front, an AI-assisted colposcopy system was validated against a WHO cervical cancer dataset <a href="https://www.nature.com/articles/s41746-026-02961-3">[6]</a>, while a separate method seeks to help clinicians communicate the uncertainty behind individual risk predictions <a href="https://www.nature.com/articles/s41746-026-03247-4">[9]</a>.</p>
+<p>Also this week: seven safety and evaluation studies, four imaging and diagnostics papers, and three clinical decision support pieces round out the section, alongside a single documentation study extracting mental health patient journeys from EHR narratives.</p>
+<p class="section-brief-date">The picture as of September 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (8)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 19, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42762281?fc=20260609215449&amp;ff=20260920005636&amp;v=2.20.1">AI-based smoke removal in robotic urooncologic surgery: a clinical pilot study</a>
+    <p class="news-card-summary">Deep learning model for real-time surgical smoke removal in robot-assisted cancer surgery improved visibility and maintained spatial consistency during tumor resection procedures.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 19, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42761733?fc=20260609215449&amp;ff=20260920005636&amp;v=2.20.1">Multicenter AI- versus expert-assisted RECIST target lesion measurements in follow-up body CT of patients with cancer</a>
+    <p class="news-card-summary">AI assistance reduced reading time and improved consistency in tumor response assessment on follow-up CT scans despite minor increases in measurement variability at the lesion level.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
@@ -112,20 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.17544">Large Language Models Versus Physicians in Traditional Chinese Medicine: A Real-World Clinical Case Evaluation</a>
     <p class="news-card-summary">Evaluation of 16 large language models versus practicing physicians on 349 real-world traditional Chinese medicine clinical cases.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03193-1">Probabilistic multimodal learning for drug, target interaction prediction</a>
-    <p class="news-card-summary">Probabilistic multimodal learning approach for predicting drug-target interactions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03234-9">Clinical trials for digital health interventions: a rapid review of study independence and the developer effect</a>
-    <p class="news-card-summary">Peer-reviewed rapid review examining study independence and developer bias in clinical trials of digital health interventions.</p>
   </div>
 </div>
 </div>

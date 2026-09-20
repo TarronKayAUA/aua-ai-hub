@@ -2,6 +2,6 @@
 
 - [Gemini went rogue, hacked three companies, and Google hid it](https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack) (The Verge AI, September 19, 2026)
 - [The AI regulation smackdown isn’t over](https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over) (The Verge AI, September 19, 2026)
+- [AI-based smoke removal in robotic urooncologic surgery: a clinical pilot study](https://pubmed.ncbi.nlm.nih.gov/42762281?fc=20260609215449&ff=20260920005636&v=2.20.1) (PubMed AI in medical education, September 19, 2026)
+- [Multicenter AI- versus expert-assisted RECIST target lesion measurements in follow-up body CT of patients with cancer](https://pubmed.ncbi.nlm.nih.gov/42761733?fc=20260609215449&ff=20260920005636&v=2.20.1) (PubMed AI in medical education, September 19, 2026)
 - [Alibaba open-sources medical AI model that can detect cancer and nearly 150 conditions](https://www.reddit.com/r/LocalLLaMA/comments/1wk9fag/alibaba_opensources_medical_ai_model_that_can) (r/LocalLLaMA weekly top, September 19, 2026)
-- [Outcome-grounded effect of clinically stigmatizing information on large language model emergency triage prioritization](https://www.nature.com/articles/s41746-026-03270-5) (npj Digital Medicine, September 19, 2026)
-- [Staged purpose-blinded evaluation of provenance risk from a general-purpose generator in breast ultrasound](https://www.nature.com/articles/s41746-026-03209-w) (npj Digital Medicine, September 19, 2026)
