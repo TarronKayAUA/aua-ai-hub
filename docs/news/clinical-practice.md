@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 20, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42763426?fc=20260609215449&amp;ff=20260920090402&amp;v=2.20.1">An Artificial Intelligence-Based Preoperative Planning System for High Tibial Osteotomy Significantly Enhances Planning Speed With Comparable Accuracy to Surgeons</a>
+    <p class="news-card-summary">An AI system for preoperative planning of high tibial osteotomy achieved surgeon-comparable measurement accuracy while substantially reducing planning time.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 19, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.17532">Enhancing Extubation Failure Prediction with LLM-Derived Features from Respiratory Therapy Clinical Notes</a>
     <p class="news-card-summary">Method to predict mechanical ventilation extubation failure using large language model features extracted from respiratory therapy clinical notes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.17544">Large Language Models Versus Physicians in Traditional Chinese Medicine: A Real-World Clinical Case Evaluation</a>
-    <p class="news-card-summary">Evaluation of 16 large language models versus practicing physicians on 349 real-world traditional Chinese medicine clinical cases.</p>
   </div>
 </div>
 </div>

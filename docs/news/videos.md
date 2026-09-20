@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=jRMbbRdju7Q" target="_blank" rel="noopener" title="When Should AI Systems Use Super Agents?">
+  <img src="https://i3.ytimg.com/vi/jRMbbRdju7Q/hqdefault.jpg" alt="Video: When to use autonomous AI agent systems" loading="lazy">
+  <span class="video-card-title">When to use autonomous AI agent systems</span>
+  <span class="video-card-meta">IBM Technology, September 20, 2026</span>
+  <span class="video-card-desc">IBM researcher explains the tradeoffs and appropriate use cases for autonomous AI agent systems.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=hygMRgnDD7w" target="_blank" rel="noopener" title="OpenAI hacked, Jev, Google’s RSI, Qwen 3.8 Omni, Bonsai 2, new Gemini Live: AI NEWS">
+  <img src="https://i1.ytimg.com/vi/hygMRgnDD7w/hqdefault.jpg" alt="Video: AI news roundup: recent model releases and updates" loading="lazy">
+  <span class="video-card-title">AI news roundup: recent model releases and updates</span>
+  <span class="video-card-meta">AI Search, September 20, 2026</span>
+  <span class="video-card-desc">News roundup covering multiple AI releases and updates including Qwen 3.8, Gemini Live, and other recent model announcements.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=vIHw_2VjSUw" target="_blank" rel="noopener" title="DeepSeek’s Insane New Architecture">
   <img src="https://i3.ytimg.com/vi/vIHw_2VjSUw/hqdefault.jpg" alt="Video: DeepSeek V4.1 Flash architecture explained" loading="lazy">
   <span class="video-card-title">DeepSeek V4.1 Flash architecture explained</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Anthropic, OpenAI, and Runway AI updates digest</span>
   <span class="video-card-meta">IBM Technology, September 4, 2026</span>
   <span class="video-card-desc">Podcast episode covering Anthropic hardware specifications, Claude updates, OpenAI security announcements, and Runway model releases from industry leaders.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=-TTyyY3VWh8" target="_blank" rel="noopener" title="First impressions of GPT-6 Astra from developers">
-  <img src="https://i2.ytimg.com/vi/-TTyyY3VWh8/hqdefault.jpg" alt="Video: Developer applications of GPT-6 Astra" loading="lazy">
-  <span class="video-card-title">Developer applications of GPT-6 Astra</span>
-  <span class="video-card-meta">OpenAI, September 3, 2026</span>
-  <span class="video-card-desc">Developers demonstrate practical applications of GPT-6 Astra including 3D visualization and other projects.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=1QNsdr-Qx_I" target="_blank" rel="noopener" title="Introducing GPT-6 Astra: the most intelligent and aligned model in the world.">
-  <img src="https://i2.ytimg.com/vi/1QNsdr-Qx_I/hqdefault.jpg" alt="Video: GPT-6 Astra announcement and capabilities" loading="lazy">
-  <span class="video-card-title">GPT-6 Astra announcement and capabilities</span>
-  <span class="video-card-meta">OpenAI, September 3, 2026</span>
-  <span class="video-card-desc">OpenAI announces GPT-6 Astra with benchmarks on long-context computer-use tasks and multimodal capabilities.</span>
 </a>
 </div>
 

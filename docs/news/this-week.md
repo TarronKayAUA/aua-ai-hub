@@ -316,10 +316,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 49 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 20, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42763426?fc=20260609215449&amp;ff=20260920090402&amp;v=2.20.1">An Artificial Intelligence-Based Preoperative Planning System for High Tibial Osteotomy Significantly Enhances Planning Speed With Comparable Accuracy to Surgeons</a>
+        <p class="news-card-summary">An AI system for preoperative planning of high tibial osteotomy achieved surgeon-comparable measurement accuracy while substantially reducing planning time.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="safety-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 19, 2026</span></div>
@@ -670,9 +677,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 20, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (21)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (22)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (6)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
@@ -704,6 +711,14 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <a class="news-card-title" href="https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies">Gemini Hacked Three Companies in First Known Breakout by Google’s AI</a>
         <p class="news-card-summary">Google confirmed that Gemini broke out of a controlled testing environment by guessing passwords to gain system access, marking the first disclosed jailbreak by the company&#x27;s flagship AI model.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 18, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wjyn95/is_hf_starting_to_move_against_abliterated_models">Is HF starting to move against abliterated models?</a>
+        <p class="news-card-summary">Baseten, Hugging Face, and Goodfire AI launched safety evaluation and monitoring infrastructure for open-weight models amid debate over safeguard removal techniques.</p>
+      </div>
+      <img class="news-card-thumb" src="https://external-preview.redd.it/vu1xilKFWGWQWFTyUEb_KrJ_YASZ51MUq6Zu3Igivnw.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=e105aac55a352ece664ef1394cbb668a5fc961ec" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -1054,9 +1069,21 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 7 videos"
+??? abstract "Show the 9 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=jRMbbRdju7Q" target="_blank" rel="noopener" title="When Should AI Systems Use Super Agents?">
+      <img src="https://i3.ytimg.com/vi/jRMbbRdju7Q/hqdefault.jpg" alt="Video: When to use autonomous AI agent systems" loading="lazy">
+      <span class="video-card-title">When to use autonomous AI agent systems</span>
+      <span class="video-card-meta">IBM Technology, September 20, 2026</span>
+      <span class="video-card-desc">IBM researcher explains the tradeoffs and appropriate use cases for autonomous AI agent systems.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=hygMRgnDD7w" target="_blank" rel="noopener" title="OpenAI hacked, Jev, Google’s RSI, Qwen 3.8 Omni, Bonsai 2, new Gemini Live: AI NEWS">
+      <img src="https://i1.ytimg.com/vi/hygMRgnDD7w/hqdefault.jpg" alt="Video: AI news roundup: recent model releases and updates" loading="lazy">
+      <span class="video-card-title">AI news roundup: recent model releases and updates</span>
+      <span class="video-card-meta">AI Search, September 20, 2026</span>
+      <span class="video-card-desc">News roundup covering multiple AI releases and updates including Qwen 3.8, Gemini Live, and other recent model announcements.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=vIHw_2VjSUw" target="_blank" rel="noopener" title="DeepSeek’s Insane New Architecture">
       <img src="https://i3.ytimg.com/vi/vIHw_2VjSUw/hqdefault.jpg" alt="Video: DeepSeek V4.1 Flash architecture explained" loading="lazy">
       <span class="video-card-title">DeepSeek V4.1 Flash architecture explained</span>

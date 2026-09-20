@@ -1,263 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arxiv.org/abs/2607.18321",
-   "title_hash": "f97cc9cc30c3aed3c31d015adc5404f7",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "neuroscience research on reading mechanisms without AI system development or evaluation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18358",
-   "title_hash": "dbe8908cba5c7b2ba77791d265d1ef83",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "general document classification method without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18413",
-   "title_hash": "0b784d210ba310d9442412ec6987bc53",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "architectural study of language models without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18432",
-   "title_hash": "427728fb6ea122e8f67811792f05f2e4",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "narrow domain application with limited relevance to medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18438",
-   "title_hash": "46bfdb86cac0bc8081691dc6bc010665",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "general reasoning benchmark without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18443",
-   "title_hash": "057d719f8ef40a2b9f6d5a8c30f23c08",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "computational linguistics research without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18446",
-   "title_hash": "e500c36c7d7a976ce3b56a60ece818d3",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "police incident classification with limited relevance to medical education or practice"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18448",
-   "title_hash": "332ab570f52194d0afd17783f223c14a",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": true,
-   "title": "PathReportEval: A Systematic Benchmark for Pathology Report Generation",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-22T04:00:00+00:00",
-   "summary": "Benchmark for evaluating pathology report generation from whole-slide images addresses heterogeneous datasets and evaluation protocols in multimodal medical AI.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical documentation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18476",
-   "title_hash": "f659ee10bc84a5c8f552b09724fab72f",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "formatting effects on model output without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18481",
-   "title_hash": "f0989b22ee52dfe434437c3208064f61",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "knowledge graph question answering without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18532",
-   "title_hash": "0223d0b64c6e96fe80ca918bb4f182c3",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "internal model behavior analysis without direct medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18566",
-   "title_hash": "641a0252525b1ad15d96834d5f2eb997",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "game-based study of language model behavior without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18570",
-   "title_hash": "5926acf3e2eb45257cefd5523f48c118",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "discourse relation encoding without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18615",
-   "title_hash": "55421d182267e7c3a1e5de5edcc996c7",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "machine unlearning for vision-language models without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18618",
-   "title_hash": "66a5d9bc9c93cf689ca015758547e1b0",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "machine translation method without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18666",
-   "title_hash": "9c337a2f009eb136b2fdbe6381fc5a22",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "general multimodal embedding work without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18693",
-   "title_hash": "dd1f080b922c373ad2ae3c093b8198aa",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "cross-lingual stance detection without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18725",
-   "title_hash": "963b23835ff4ac5d933e9785370d510c",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "cybersecurity question answering system without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18730",
-   "title_hash": "98351640cf7c2eb568c81bc753b784b9",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "transformer architecture modification without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18772",
-   "title_hash": "8a8e7cacb16cfa0ca2c69b8e4d02eb1e",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "domain-specific application to circuit design without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18820",
-   "title_hash": "083461787c0e1b731d8d15ea31dfd488",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "chain-of-thought reasoning faithfulness without direct medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18825",
-   "title_hash": "cf4db3645c2b5b4e7a9f7328db4cbfdf",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "legal question answering system without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18839",
-   "title_hash": "f8d3edffdb5f0a39b65d859e2b70f630",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "document parsing method without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18912",
-   "title_hash": "13d1fa602fc64995619560af8a9d7617",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "speech recognition for non-English languages without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.18915",
-   "title_hash": "914e6cab29b9184bef8390c0ff215569",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": false,
-   "reason": "reasoning error correction method without direct medical relevance"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02467-y",
-   "title_hash": "9b38a5491ec9f5950a82862ea44320c6",
-   "first_seen": "2026-07-22T06:43:33.346598+00:00",
-   "kept": true,
-   "title": "Large language models for interpretation of health checkup results",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-22T00:00:00+00:00",
-   "summary": "Study examines large language models for interpreting health checkup results and their potential role in clinical practice.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/969137/us-utility-ai-electricty-data-center-rate-pledge-trump",
-   "title_hash": "ce519f6034cbbc6f7c3eca181decef6a",
-   "first_seen": "2026-07-22T10:34:55.682509+00:00",
-   "kept": false,
-   "reason": "industry and policy news without substantive information about AI capabilities, deployment, or safety; reports on corporate pledges rather than governance or…"
-  },
-  {
-   "url": "https://www.insidehighered.com/opinion/views/2026/07/22/chart-brown-isnt-really-about-cheating-opinion",
-   "title_hash": "5d1da63b47b9220ccbdc2a9f52d6d5a8",
-   "first_seen": "2026-07-22T10:34:55.682509+00:00",
-   "kept": true,
-   "title": "That Chart From Brown Isn’t Really About Cheating",
-   "source": "Inside Higher Ed AI",
-   "published": "2026-07-22T03:00:00+00:00",
-   "summary": "An analysis of Brown University data on student grades suggests AI's impact on academic integrity reflects broader shifts in how educational institutions measure and value performance.",
-   "category": "medical_education",
-   "score": 2.0,
-   "thumbnail": "https://www.insidehighered.com/sites/default/files/styles/large/public/2026-07/GettyImages-1489365739.jpg?itok=3EbBMSjR",
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04535-y",
-   "title_hash": "2bedf4bde799b663093a6fd2d9ec0abd",
-   "first_seen": "2026-07-22T10:34:55.682509+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; addresses health system governance and unpaid care accounting, not artificial intelligence"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04522-3",
-   "title_hash": "897f63efe71433bd70d4d5b988c67290",
-   "first_seen": "2026-07-22T10:34:55.682509+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; clinical trial of a bispecific antibody, not artificial intelligence"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v2pg99/laguna_s_21_released_cheaper_than_deepseek_v4",
-   "title_hash": "593135554b573bfe06efbfcee8dfad29",
-   "first_seen": "2026-07-22T10:34:55.682509+00:00",
-   "kept": false,
-   "reason": "forum post about a model release without independent verification or substantive analysis; belongs on a model-tracking site, not an educational news page"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=WQhYlsQOKhc",
-   "title_hash": "3dc9ccadb7e12a89e370df5f43424d08",
-   "first_seen": "2026-07-22T10:34:55.682509+00:00",
-   "kept": false,
-   "reason": "speculation and rumors with no substantive developments; drama and leak coverage without educational payload"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=g4CNcUAqM4Q",
-   "title_hash": "7d7446219ce2be49dc6f6a3ca7e2a143",
-   "first_seen": "2026-07-22T10:34:55.682509+00:00",
-   "kept": true,
-   "title": "GPT-Red: Can AI read teams stop prompt injections?",
-   "source": "IBM Technology",
-   "published": "2026-07-22T10:00:36+00:00",
-   "summary": "IBM researchers discuss prompt injection attacks on large language models and strategies for defending AI systems against such exploits.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i4.ytimg.com/vi/g4CNcUAqM4Q/hqdefault.jpg",
-   "display_title": "Prompt injection attacks and AI security defenses"
-  },
-  {
    "url": "https://arstechnica.com/ai/2026/07/us-army-faces-ai-use-limits-after-exhausting-years-supply-of-ai-tokens",
    "title_hash": "8da8a265f6dcf02bf04344151bc9d6ba",
    "first_seen": "2026-07-22T14:24:22.063958+00:00",
@@ -32432,6 +32175,68 @@
    "first_seen": "2026-09-20T04:56:36.698274+00:00",
    "kept": false,
    "reason": "marketing from vendor; promotional whitepaper on data engineering infrastructure unrelated to medical education or clinical AI"
+  },
+  {
+   "url": "https://www.theverge.com/science/997834/ai-cyberattack-energy-critical-infrastructure",
+   "title_hash": "3ad5cfd4af1e9c83988c1fde1216d791",
+   "first_seen": "2026-09-20T13:04:02.780089+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42763426?fc=20260609215449&ff=20260920090402&v=2.20.1",
+   "title_hash": "838cacb6da1adbace70596bf61e5cc7d",
+   "first_seen": "2026-09-20T13:04:02.780089+00:00",
+   "kept": true,
+   "title": "An Artificial Intelligence-Based Preoperative Planning System for High Tibial Osteotomy Significantly Enhances Planning Speed With Comparable Accuracy to Surgeons",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-20T10:00:00+00:00",
+   "summary": "An AI system for preoperative planning of high tibial osteotomy achieved surgeon-comparable measurement accuracy while substantially reducing planning time.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wjyn95/is_hf_starting_to_move_against_abliterated_models",
+   "title_hash": "a81047ad08669ee0acf70087641858ae",
+   "first_seen": "2026-09-20T13:04:02.780089+00:00",
+   "kept": true,
+   "title": "Is HF starting to move against abliterated models?",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-09-18T18:43:03+00:00",
+   "summary": "Baseten, Hugging Face, and Goodfire AI launched safety evaluation and monitoring infrastructure for open-weight models amid debate over safeguard removal techniques.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/vu1xilKFWGWQWFTyUEb_KrJ_YASZ51MUq6Zu3Igivnw.jpeg?width=640&crop=smart&auto=webp&s=e105aac55a352ece664ef1394cbb668a5fc961ec",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=hygMRgnDD7w",
+   "title_hash": "3993785035811dc9ecccb8af4b4a7050",
+   "first_seen": "2026-09-20T13:04:02.780089+00:00",
+   "kept": true,
+   "title": "OpenAI hacked, Jev, Google’s RSI, Qwen 3.8 Omni, Bonsai 2, new Gemini Live: AI NEWS",
+   "source": "AI Search",
+   "published": "2026-09-20T03:28:57+00:00",
+   "summary": "News roundup covering multiple AI releases and updates including Qwen 3.8, Gemini Live, and other recent model announcements.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i1.ytimg.com/vi/hygMRgnDD7w/hqdefault.jpg",
+   "display_title": "AI news roundup: recent model releases and updates"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=jRMbbRdju7Q",
+   "title_hash": "04a15111fd4cf57090e3763b3f9c58a0",
+   "first_seen": "2026-09-20T13:04:02.780089+00:00",
+   "kept": true,
+   "title": "When Should AI Systems Use Super Agents?",
+   "source": "IBM Technology",
+   "published": "2026-09-20T11:00:32+00:00",
+   "summary": "IBM researcher explains the tradeoffs and appropriate use cases for autonomous AI agent systems.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i3.ytimg.com/vi/jRMbbRdju7Q/hqdefault.jpg",
+   "display_title": "When to use autonomous AI agent systems"
   }
  ],
  "digests": [
