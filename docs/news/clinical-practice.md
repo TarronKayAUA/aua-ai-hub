@@ -13,14 +13,35 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>More than 1,600 FDA-approved AI-based medical devices are now in clinical use, raising questions about how consistently they are overseen <a href="https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices">[13]</a>. Similar reliability concerns run through evaluation research: stigmatizing patient descriptions were shown to skew large language model triage prioritization in emergency settings <a href="https://www.nature.com/articles/s41746-026-03270-5">[3]</a>, and a geriatrician warned that AI tools for older adults require careful scrutiny before wider deployment <a href="https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny">[7]</a>. On the diagnostic front, an AI-assisted colposcopy system was validated against a WHO cervical cancer dataset <a href="https://www.nature.com/articles/s41746-026-02961-3">[6]</a>, while a separate method seeks to help clinicians communicate the uncertainty behind individual risk predictions <a href="https://www.nature.com/articles/s41746-026-03247-4">[9]</a>.</p>
-<p>Also this week: seven safety and evaluation studies, four imaging and diagnostics papers, and three clinical decision support pieces round out the section, alongside a single documentation study extracting mental health patient journeys from EHR narratives.</p>
-<p class="section-brief-date">The picture as of September 20, 2026; numbered links go to the items below.</p>
+<p>A study in npj Digital Medicine found that stigmatizing language in patient records can skew large language model triage prioritization, raising bias concerns for emergency decision support <a href="https://www.nature.com/articles/s41746-026-03270-5">[7]</a>. A related paper flagged provenance risks when a general-purpose image generator is applied to breast ultrasound interpretation <a href="https://www.nature.com/articles/s41746-026-03209-w">[8]</a>. Diagnostic validation continues elsewhere, with an AI-assisted colposcopy system validated externally against a WHO cervical cancer dataset <a href="https://www.nature.com/articles/s41746-026-02961-3">[10]</a>. A STAT News commentary adds caution on deploying AI in care decisions for older adults <a href="https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny">[11]</a>, while an AI-based preoperative planning system for high tibial osteotomy matched surgeon accuracy with far less planning time <a href="https://pubmed.ncbi.nlm.nih.gov/42763426?fc=20260609215449&amp;ff=20260920090402&amp;v=2.20.1">[4]</a>.</p>
+<p>Also this week: five studies address safety and evaluation of clinical AI, including uncertainty communication for risk prediction and reviewable evidence synthesis, alongside four papers on clinical decision support and four on imaging and diagnostics spanning surgical skill assessment and radiology reporting. A scoping review covers chatbot-based motivational interviewing, and one study builds longitudinal mental health journeys from EHR narratives.</p>
+<p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.20825">HERMES: Contrast-Aware Knowledge Graph Reasoning from Clinical Notes for Patient Outcome Prediction</a>
+    <p class="news-card-summary">HERMES uses contrast-aware knowledge graph reasoning over clinical notes to preserve relational and temporal structure for improved patient outcome prediction.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.20826">TALON: A Temporally Aware Longitudinal Framework for Radiology Report Generation</a>
+    <p class="news-card-summary">TALON generates radiology reports with awareness of prior examinations to enable longitudinal comparison and detect subtle interval changes in imaging studies.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.20902">Generative Artificial Intelligence Chatbots for Motivational Interviewing: A Scoping Review From System Design to Intervention Outcomes</a>
+    <p class="news-card-summary">Scoping review examines design, assessment, and outcomes of generative AI chatbots adapted for motivational interviewing in health behavior change.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 20, 2026</span></div>
@@ -104,28 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 17, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e74339">Hospital Human Resource Managers’ Perspectives on Organizational Readiness for Generative AI Skills: Qualitative Descriptive Study</a>
     <p class="news-card-summary">Qualitative study examines hospital HR managers&#x27; perspectives on organizational readiness for generative AI adoption, identifying barriers including privacy, security, and governance concerns.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754174?fc=20260609215449&amp;ff=20260918004743&amp;v=2.20.1">Artificial intelligence in orbital diseases: opportunities, challenges, and future horizons</a>
-    <p class="news-card-summary">Review examines artificial intelligence applications in orbital disease diagnosis and management across multimodal imaging and clinical heterogeneity.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://medicalfuturist.com/the-current-state-of-fda-approved-ai-based-medical-devices">The Current State Of Over 1600 FDA-Approved, AI-Based Medical Devices</a>
-    <p class="news-card-summary">Overview of regulatory landscape for over 1600 FDA-approved AI-based medical devices and the challenges of effective oversight in clinical settings.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2020/10/214_tmf-01-1.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.17532">Enhancing Extubation Failure Prediction with LLM-Derived Features from Respiratory Therapy Clinical Notes</a>
-    <p class="news-card-summary">Method to predict mechanical ventilation extubation failure using large language model features extracted from respiratory therapy clinical notes.</p>
   </div>
 </div>
 </div>

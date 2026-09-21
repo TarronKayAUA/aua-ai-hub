@@ -13,14 +13,28 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A scoping review of 517 publications maps rapid growth of generative AI research in health professions education, though most work remains fragmented around a few GPT models <a href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[4]</a>. That expansion collides with practical limits: medical learners already use generative AI informally in clinical settings, pushing schools to build policy and curricula around the tools rather than banning them <a href="https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[3]</a>. Evidence on whether such exposure translates into skill is mixed, as a randomized trial found AI-assisted nerve-tracking training did not improve students&#x27; independent ultrasound performance once the AI support was withdrawn <a href="https://pubmed.ncbi.nlm.nih.gov/42760064?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">[12]</a>. Meanwhile, emergency medicine experts warn the workforce still lacks foundational skills to safely evaluate AI tools entering triage and documentation workflows <a href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[2]</a>.</p>
-<p>Also this week: coverage spans seven items on teaching and curriculum, including AI-literacy pilots for incoming students and personalized-learning reviews in otolaryngology, alongside two studies each on assessment and feedback, attitudes and adoption, simulation and skills, and exam benchmarking. A Peru-based benchmark, PeruMedQA, tested language models on Spanish-language medical exams.</p>
-<p class="section-brief-date">The picture as of September 20, 2026; numbered links go to the items below.</p>
+<p>A scoping review of 517 publications maps rapid growth in generative AI research across health professions education, though most work remains fragmented and GPT-model dominant <a href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[6]</a>. That growth is outpacing preparation: emergency medicine experts warn the workforce lacks skills to safely evaluate AI tools now entering triage and documentation <a href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[4]</a>, while one review argues learners are already using generative AI informally and calls for policy that adapts rather than restricts <a href="https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[5]</a>. A randomized trial complicates optimism about skills transfer, finding AI-assisted nerve-tracking training did not improve independent ultrasound performance once support was withdrawn <a href="https://pubmed.ncbi.nlm.nih.gov/42760064?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">[14]</a>.</p>
+<p>Also this week: teaching and curriculum approaches dominate with seven items, including a pilot AI-introduction program for incoming students and an AI-enhanced ultrasound teaching model. Three papers address assessment and feedback, two cover simulation and skills, two present new exam benchmarks including a Peruvian medical-exam dataset, and one examines attitudes toward AI in admissions screening.</p>
+<p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.20827">From Discharge Notes to Patient Understanding: Persona-Grounded, Open-Ended Simulation of LLMs as Discharge Educators</a>
+    <p class="news-card-summary">DischargeBench simulates language models as discharge educators with patient personas to evaluate how well models adapt explanations to literacy and personality in open-ended dialogue.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 20, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42763979?fc=20260609215449&amp;ff=20260921010018&amp;v=2.20.1">CReaTe-LM: A large language model for stepwise, heuristic clinical reasoning instruction</a>
+    <p class="news-card-summary">CReaTe-LM is a large language model designed to provide stepwise, heuristic instruction in clinical reasoning rather than passive answer generation, addressing a key medical education challenge.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42759901?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">Clinicians vs. Artificial Intelligence in Predicting 28-Day ICU Mortality: A Vignette Study</a>
     <p class="news-card-summary">Clinicians achieved higher accuracy than ChatGPT at predicting 28-day ICU mortality in a vignette study, supporting human judgment in high-stakes prognostic decisions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42759135?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">Pilot Validation of a Large Language Model Facilitator for Peer-to-Peer Learning</a>
-    <p class="news-card-summary">A pilot study validated that large language models can support peer-to-peer learning in surgical education but cannot yet replace human instructors.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42760544?fc=20260609215449&amp;ff=20260919083106&amp;v=2.20.1">AI literacy and ethical attitudes toward AI in medical students: evidence from a structural model</a>
-    <p class="news-card-summary">Research finds medical students with higher AI literacy show stronger ethical attitudes toward AI, independent of frequency of use.</p>
   </div>
 </div>
 </div>
