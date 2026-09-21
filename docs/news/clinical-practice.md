@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -40,6 +40,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.20902">Generative Artificial Intelligence Chatbots for Motivational Interviewing: A Scoping Review From System Design to Intervention Outcomes</a>
     <p class="news-card-summary">Scoping review examines design, assessment, and outcomes of generative AI chatbots adapted for motivational interviewing in health behavior change.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03205-0">Physician involvement and research quality in chest X-ray foundation models</a>
+    <p class="news-card-summary">Peer-reviewed study examines how physician involvement affects research quality in chest X-ray foundation models used in clinical settings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03208-x">Why responsible AI needs regional networks in low-resource health systems</a>
+    <p class="news-card-summary">Published research argues for regional networks to support responsible artificial intelligence deployment in health systems with limited resources.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -111,20 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 18, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03247-4">Communicating the uncertainty of individual risk from clinical prediction tools with the PGower similarity measure</a>
     <p class="news-card-summary">A method for communicating uncertainty from clinical prediction tools helps clinicians understand individual risk variation beyond point estimates.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03249-2">Video-based assessment of surgical skills using frozen pretrained video foundation models</a>
-    <p class="news-card-summary">Peer-reviewed study demonstrates video foundation models for automated assessment of surgical skills without model fine-tuning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 17, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e74339">Hospital Human Resource Managers’ Perspectives on Organizational Readiness for Generative AI Skills: Qualitative Descriptive Study</a>
-    <p class="news-card-summary">Qualitative study examines hospital HR managers&#x27; perspectives on organizational readiness for generative AI adoption, identifying barriers including privacy, security, and governance concerns.</p>
   </div>
 </div>
 </div>

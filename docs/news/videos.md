@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=i00isgmGgGg" target="_blank" rel="noopener" title="HUGE Opus 5.5 LEAKS + Cheaper? Qwen 4, Kimi K3.1, MiniMax M3.1 &amp; Step 5 Preview! AI NEWS">
+  <img src="https://i2.ytimg.com/vi/i00isgmGgGg/hqdefault.jpg" alt="Video: Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others" loading="lazy">
+  <span class="video-card-title">Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others</span>
+  <span class="video-card-meta">WorldofAI, September 21, 2026</span>
+  <span class="video-card-desc">Roundup of recent model releases and updates including Anthropic Opus 5.5, Qwen 4, Kimi K3.1, MiniMax M3.1, and preview of OpenAI Step 5.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=jRMbbRdju7Q" target="_blank" rel="noopener" title="When Should AI Systems Use Super Agents?">
   <img src="https://i3.ytimg.com/vi/jRMbbRdju7Q/hqdefault.jpg" alt="Video: When to use autonomous AI agent systems" loading="lazy">
   <span class="video-card-title">When to use autonomous AI agent systems</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Recent AI model releases and benchmark updates</span>
   <span class="video-card-meta">AI Explained, September 4, 2026</span>
   <span class="video-card-desc">Overview of recent AI model releases and benchmarks, including cost efficiency improvements and safety considerations for medical educators following the field.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=W3iQbl5R_Jk" target="_blank" rel="noopener" title="Anthropic reveals hardware specs and Claude updates, OpenAI talks security, and Runway&#x27;s new model">
-  <img src="https://i4.ytimg.com/vi/W3iQbl5R_Jk/hqdefault.jpg" alt="Video: Anthropic, OpenAI, and Runway AI updates digest" loading="lazy">
-  <span class="video-card-title">Anthropic, OpenAI, and Runway AI updates digest</span>
-  <span class="video-card-meta">IBM Technology, September 4, 2026</span>
-  <span class="video-card-desc">Podcast episode covering Anthropic hardware specifications, Claude updates, OpenAI security announcements, and Runway model releases from industry leaders.</span>
 </a>
 </div>
 

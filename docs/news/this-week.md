@@ -18,9 +18,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 40 items"
+??? abstract "Show the 37 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (40)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (14)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
@@ -283,29 +283,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Researchers compared how general-purpose and specialist language models encode domain-specific medical terminology through two novel medical jargon evaluation benchmarks.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42733601?fc=20260609215449&amp;ff=20260914110224&amp;v=2.20.1">Evaluating the Teaching Effectiveness of Interactive Virtual Platform Based on Artificial Intelligence for Obstetrics and Gynecology Residency Training</a>
-        <p class="news-card-summary">Study showed AI-based virtual case platform improved resident competencies, teaching satisfaction, and patient satisfaction in obstetrics and gynecology training.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/09/14/nonexistent-research-ais-benefits-education">The ‘Nonexistent’ Research on AI’s Benefits for Education</a>
-        <p class="news-card-summary">Analysis documents gap between rapid college adoption of AI in education and lack of independent research on learning outcomes.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-01/Robot_teaching.jpg?itok=7bmRWyA0" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03187-z">Multi-Agent collaboration as a complementary architecture for AI-generated medical examination items</a>
-        <p class="news-card-summary">Study evaluated multi-agent collaboration architecture as complementary approach for AI-generated medical examination items.</p>
-      </div>
-      <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-026-03187-z/MediaObjects/41746_2026_3187_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ## Clinical Practice
@@ -316,9 +293,9 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 50 items"
+??? abstract "Show the 49 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (18)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (10)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (5)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
@@ -339,6 +316,20 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2609.20902">Generative Artificial Intelligence Chatbots for Motivational Interviewing: A Scoping Review From System Design to Intervention Outcomes</a>
         <p class="news-card-summary">Scoping review examines design, assessment, and outcomes of generative AI chatbots adapted for motivational interviewing in health behavior change.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03205-0">Physician involvement and research quality in chest X-ray foundation models</a>
+        <p class="news-card-summary">Peer-reviewed study examines how physician involvement affects research quality in chest X-ray foundation models used in clinical settings.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03208-x">Why responsible AI needs regional networks in low-resource health systems</a>
+        <p class="news-card-summary">Published research argues for regional networks to support responsible artificial intelligence deployment in health systems with limited resources.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -631,27 +622,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Machine learning model trained on electronic health records predicts culture-confirmed neonatal sepsis early in a tertiary neonatal intensive care unit.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03239-4">Prospective validation of machine learning models predicting Gram negative bacteremia in ICU versus clinical scores</a>
-        <p class="news-card-summary">Prospective validation study compared machine learning models to clinical scores for predicting Gram-negative bacteremia in intensive care.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03254-5">A novel multiomics machine learning signature identifies rapid progression in clinically low risk prostate cancer</a>
-        <p class="news-card-summary">Machine learning signature integrating multiple data types identified rapid progression risk in low-risk prostate cancer patients.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04639-5">Prospective evidence for conversational medical AI is hard, but non-negotiable</a>
-        <p class="news-card-summary">Clinical AI trust requires prospective studies in real-world settings, not benchmarks alone, with lessons often concerning human systems rather than the technology itself.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 14, 2026</span></div>
@@ -683,10 +653,34 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 55 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (55)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (23)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement">iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement</a>
+        <p class="news-card-summary">Apple&#x27;s $250 million settlement over undelivered AI-upgraded Siri feature now allows eligible iPhone owners to submit claims for compensation.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC08433.webp?quality=90&amp;strip=all&amp;crop=0%2C11.097693417406%2C100%2C77.804613165189&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">September 21, 2026</span></div>
+        <a class="news-card-title" href="https://jack-clark.net/2026/09/21/import-ai-473-the-uss-superintelligence-strategy-human-brain-in-a-mouse-skull-and-machine-hermeneutics">Import AI 473: The US’s superintelligence strategy; human brain in a mouse skull; and machine hermeneutics</a>
+        <p class="news-card-summary">Import AI newsletter covers US superintelligence strategy, brain-inspired computing, and machine interpretation of text in a weekly analysis.</p>
+      </div>
+      <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/09/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-L4yH52.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 21, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle">UN says AI safeguards can’t wait for certainty</a>
+        <p class="news-card-summary">A UN scientific panel called for governments to establish AI safeguards before risks are fully understood, placing artificial intelligence on the global diplomatic agenda.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2234546269.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
@@ -1010,93 +1004,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/dW1paTAwYmpjaXBoMeu6SMTdIKcnONQ26KrXYxTr0l4PSQ46Rzar8UC5vEoK.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=a1762aac1142b29b0a14f89a61afac14ce2e465b" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/llms-for-chip-design">How OpenAI Used Its Own LLMs to Design Its Jalapeño Chip</a>
-        <p class="news-card-summary">OpenAI unveiled Jalapeño, its AI accelerator chip delivering 13.4 petaflops of 4-bit compute with 232 gigabytes memory and 15.4 terabytes-per-second bandwidth, reducing end-to-end latency by up to 3.6x.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/close-up-of-a-computer-processor-consisting-of-several-pieces-of-silicon.jpg?id=67770467&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/news/994566/microsoft-humanist-ai-code-of-conduct">Microsoft says ‘people matter more than AI’ following safety concerns</a>
-        <p class="news-card-summary">Microsoft published a 37-page humanist AI code of conduct following safety concerns about model progress outpacing safe deployment verification.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK095_MICROSOFT_2_CVirginia_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.11955">R2VC: Modular Fact-Checking with Retrieval, Verification, and Confidence Calibration</a>
-        <p class="news-card-summary">Modular fact-checking architecture separates evidence retrieval, reasoning, verification, and confidence calibration to improve interpretability and reliability of automated fact checks.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.12111">The Cost of Compression: A Rate-Distortion Limit on Factual Hallucination</a>
-        <p class="news-card-summary">Analysis of factual hallucination in language models from memory compression perspective, showing how finite storage forces approximate encoding of facts.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.12191">GAUGE: When Not to Trust LLM-as-a-Judge in User-Simulated Evaluation of Task-Oriented Agents</a>
-        <p class="news-card-summary">Protocol assesses reliability of language models as judges in evaluating task-oriented agents, identifying when LLM judging fails to rank candidates correctly.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.12243">Chopthin-Consensus Power Sampling: A Diversity-Preserving Approach to LLM Decoding</a>
-        <p class="news-card-summary">Inference-time sampling method preserves diverse reasoning paths during language model decoding to improve answer quality without post-training.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.12260">HypoKG: Evidence-Disciplined Biomedical Hypothesis Generation Beyond Endpoint Knowledge</a>
-        <p class="news-card-summary">Study evaluates whether large language models generate biomedical hypotheses through genuine scientific reasoning or pattern matching, using integrated biochemical knowledge graphs.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.12268">EAR: Entity-Aware Partitioning Approach for Retrieval-Augmented Generation Development</a>
-        <p class="news-card-summary">Entity-aware partitioning approach for retrieval-augmented generation improves performance by dividing source documents around semantic boundaries rather than fixed chunks.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.12303">Breaking the Token Ceiling: Distilling Smaller, Stronger Byte Models</a>
-        <p class="news-card-summary">Techniques for distilling smaller byte-based language models from token-based models enable direct comparison of scaling behavior across different tokenization schemes.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.12353">SynthSentry: Detecting Synthetic Data Contamination in Language Model Training Data</a>
-        <p class="news-card-summary">Method for detecting synthetic or model-generated data in training corpora before training begins, addressing model collapse from recursive self-training.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://arxiv.org/abs/2609.12475">Zipbench: Low-Cost Framework for Compressing Comprehensive Benchmarks of Large Language Models</a>
-        <p class="news-card-summary">Framework for compressing large language model benchmark suites to reduce redundancy and evaluation cost while maintaining assessment validity.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="benchmarks-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 14, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wfpwhj/deepseek_v41_flash_beats_astra_on_aas_new">DeepSeek V4.1 Flash beats Astra on AA&#x27;s new benchmark</a>
-        <p class="news-card-summary">DeepSeek V4.1 Flash outperformed Astra on Artificial Analysis&#x27;s new Intelligence Index v4.3 benchmark, displacing prior leaders.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/b8lrmxaj1eph1.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=bca6bf2f85360c40d00744cc38488e7129fc5290" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
@@ -1106,6 +1013,12 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 ??? abstract "Show the 9 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=i00isgmGgGg" target="_blank" rel="noopener" title="HUGE Opus 5.5 LEAKS + Cheaper? Qwen 4, Kimi K3.1, MiniMax M3.1 &amp; Step 5 Preview! AI NEWS">
+      <img src="https://i2.ytimg.com/vi/i00isgmGgGg/hqdefault.jpg" alt="Video: Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others" loading="lazy">
+      <span class="video-card-title">Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others</span>
+      <span class="video-card-meta">WorldofAI, September 21, 2026</span>
+      <span class="video-card-desc">Roundup of recent model releases and updates including Anthropic Opus 5.5, Qwen 4, Kimi K3.1, MiniMax M3.1, and preview of OpenAI Step 5.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=jRMbbRdju7Q" target="_blank" rel="noopener" title="When Should AI Systems Use Super Agents?">
       <img src="https://i3.ytimg.com/vi/jRMbbRdju7Q/hqdefault.jpg" alt="Video: When to use autonomous AI agent systems" loading="lazy">
       <span class="video-card-title">When to use autonomous AI agent systems</span>
@@ -1153,12 +1066,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
       <span class="video-card-title">Generative AI for inpatient documentation summaries</span>
       <span class="video-card-meta">Stanford MedAI, September 14, 2026</span>
       <span class="video-card-desc">Stanford MedAI seminar on clinical deployment of generative AI for summarizing inpatient documentation, with Steve G. Peters.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=ArKnoMPSO_k" target="_blank" rel="noopener" title="Cognition SWE-2 First Test, Is THIS a Better Kimi K3?">
-      <img src="https://i2.ytimg.com/vi/ArKnoMPSO_k/hqdefault.jpg" alt="Video: Cognition SWE-2 hands-on test and comparison with Kimi K3" loading="lazy">
-      <span class="video-card-title">Cognition SWE-2 hands-on test and comparison with Kimi K3</span>
-      <span class="video-card-meta">Bijan Bowen, September 14, 2026</span>
-      <span class="video-card-desc">Hands-on test of Cognition SWE-2 agent across multiple coding and software tasks, compared with Kimi K3.</span>
     </a>
     </div>
 

@@ -1,400 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/23/seth-larson",
-   "title_hash": "04645ea2d2febcb491b6fc9afa23082d",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19361",
-   "title_hash": "48f516719bd6221d892764878d7e694a",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": true,
-   "title": "Stateful Guardrails for Multi-Turn LLM Systems: A Conversational Risk Accumulation Framework",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-23T04:00:00+00:00",
-   "summary": "Research identifies conversational risk accumulation in multi-turn language model dialogues, where benign individual turns compose into harm over conversation flow.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19523",
-   "title_hash": "b9ca8a67b9ded8904e9b753c718b75f9",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19573",
-   "title_hash": "01757dbddf9c69efa371a6f21a330588",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19604",
-   "title_hash": "152784757bde56a268cbdd10a98a539d",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19608",
-   "title_hash": "c17bf36402df9482d82aad4ea6e7fab1",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19629",
-   "title_hash": "1422376669898b433e47790dc2a0d48f",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19678",
-   "title_hash": "22c58038ffcf46c59bf88731ff9754c6",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19686",
-   "title_hash": "de34891a925457c0732592aa51c3a959",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19691",
-   "title_hash": "cf0537b2227e82cd2dd5eea59c5649b5",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19718",
-   "title_hash": "374be12b326c45accc32671dec833e38",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19747",
-   "title_hash": "caef6bd45658a83b324a98b961114704",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19751",
-   "title_hash": "5cf0d96246050dd342fc6b16db04c475",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19794",
-   "title_hash": "62c023f998a72f75489ac6a4c515fb92",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19830",
-   "title_hash": "e46f2d02e0f2313e8a6fa7f4a88ce98a",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19834",
-   "title_hash": "d90e53e6f95fb2e6d7565053ee7a0a00",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19845",
-   "title_hash": "597b743e98740322bcfcb48b95979bc7",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19848",
-   "title_hash": "560943c662cbed8b684e1cc75b308ec8",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19856",
-   "title_hash": "f5728d094adec6b6c0412528d2b75c1e",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19867",
-   "title_hash": "8b30ace667dd4c92ea83c03d44d42bc2",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19932",
-   "title_hash": "fee7127849b2e2843a349471438614ec",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19954",
-   "title_hash": "48dcff3b45430df3165f6f868c67ac3b",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19956",
-   "title_hash": "2b9c852b67138d02dc1f4c4e02fee94d",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.19992",
-   "title_hash": "96d999f8951079e65cf04c7fa28d40b8",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20009",
-   "title_hash": "716b2e002eb8ead069d8f6867b3c6711",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20056",
-   "title_hash": "c9e1ee1f2962055301eb4a52d1db3c37",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03013-6",
-   "title_hash": "a3f9b6d36a612d53bfff72dc15fc7482",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v3v75j/sanctions_on_open_source_hope_they_dont_do",
-   "title_hash": "d8f6c89ed9ec22942a4fe2d068ac268e",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "forum discussion without substantive analysis"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=ERCdFgTXNY4",
-   "title_hash": "7bbe2b5233b7452d91048780e2214d82",
-   "first_seen": "2026-07-23T06:41:20.289439+00:00",
-   "kept": false,
-   "reason": "speculation and clickbait framing with insufficient substantive benchmark analysis"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42488878?fc=20260609215449&ff=20260723063539&v=2.20.0",
-   "title_hash": "bc4137843dc7b650bde8097afd79f9dd",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": true,
-   "title": "Awareness, Perceptions, and Concerns among medical students regarding Artificial Intelligence integration in Healthcare: A Comprehensive Analysis",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-23T10:00:00+00:00",
-   "summary": "Medical students show moderate awareness of AI in healthcare but lack formal training, with persistent concerns about ethics, job displacement, and clinical errors despite recognizing AI's potential.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42488579?fc=20260609215449&ff=20260723063539&v=2.20.0",
-   "title_hash": "1d96eb3ac1a2cbfbf9bef29d9024295b",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": true,
-   "title": "Automated Generation and Human Evaluation of Neurosurgical Board Examination Self-Assessment Questions",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-23T10:00:00+00:00",
-   "summary": "Vision-language models can generate neurosurgical board exam questions with identified quality gaps compared to human-authored items, reducing burden on credentialing organizations.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42488481?fc=20260609215449&ff=20260723063539&v=2.20.0",
-   "title_hash": "071e7e8a3fb7208066dbbed0304dc30e",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": true,
-   "title": "Mapping Personalized Learning in Medical Education: A Meta-Synthesis of Artificial Intelligence Applications",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-23T10:00:00+00:00",
-   "summary": "Meta-synthesis finds AI integration enables adaptive learning pathways and data-driven instruction in medical education, enhancing engagement and equity in learning outcomes.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42488377?fc=20260609215449&ff=20260723063539&v=2.20.0",
-   "title_hash": "7e1707f0e55167501aefde4990c4aeea",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": true,
-   "title": "Beyond accuracy: evaluating the reliability of large language models for medical assessment",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-23T10:00:00+00:00",
-   "summary": "Large language model deployment for automated assessment metadata extraction should prioritize reliability over accuracy and use task-specific piloting with human oversight of semantic fields.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://www.sensible-med.com/p/a-cautionary-tale-of-clinical-mistranslation",
-   "title_hash": "a2b097df12d11731fb80075dda6af570",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.insidehighered.com/news/business/financial-health/2026/07/23/call-meet-moment-nacubo",
-   "title_hash": "ee44a9c1fa7336b585914be0d0d56b81",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04534-z",
-   "title_hash": "e10cffb1a1f4e4340eaa43eea96edeab",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://huggingface.co/blog/nunchaku-diffusers",
-   "title_hash": "01d4032dd85d937464c5ba0c989b86cf",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v3k0ei/openai_hacking_huggingface_in_one_meme",
-   "title_hash": "0c08e85bd92c96e00f6b480d9b7c50f3",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": false,
-   "reason": "forum post with no substantive news or analysis"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=MX95QbxSc9Q",
-   "title_hash": "481b20c23566a1bdc876712f94fb3103",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://share.transistor.fm/s/8a2e4fc0",
-   "title_hash": "d2737743d54e634398cd0aa168ce104b",
-   "first_seen": "2026-07-23T10:35:39.420508+00:00",
-   "kept": false,
-   "reason": "speculative economics and industry commentary without substantive analysis relevant to medical education or clinical practice"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal",
-   "title_hash": "ee1eebc02fbdec2a436c881f10886fd7",
-   "first_seen": "2026-07-23T14:34:29.882975+00:00",
-   "kept": true,
-   "title": "Lawmakers prepare bill requiring AI ‘kill switch’",
-   "source": "The Verge AI",
-   "published": "2026-07-23T14:13:35+00:00",
-   "summary": "U.S. lawmakers are preparing legislation requiring AI companies to shut down or throttle systems on orders from the Department of Homeland Security in response to safety concerns.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/02/STK_414_AI_C-1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-   "topic": "Industry and policy"
-  },
-  {
-   "url": "https://www.theverge.com/podcast/968787/apple-openai-trade-secrets-lawsuit-ai-hardware-smartphone-jony-ive",
-   "title_hash": "74127c278d14b585991be4592085354f",
-   "first_seen": "2026-07-23T14:34:29.882975+00:00",
-   "kept": false,
-   "reason": "corporate dispute and business strategy coverage, not substantive AI development or policy analysis"
-  },
-  {
-   "url": "https://spectrum.ieee.org/nasa-ai-satellite-image-analysis",
-   "title_hash": "6e8bbbf5f2b95fbd723523dc02e5678d",
-   "first_seen": "2026-07-23T14:34:29.882975+00:00",
-   "kept": true,
-   "title": "NASA Puts Google’s Gemma Large Language Model in Orbit",
-   "source": "IEEE Spectrum AI",
-   "published": "2026-07-23T13:00:01+00:00",
-   "summary": "NASA's Jet Propulsion Laboratory deployed Google's Gemma 3 vision-language model in orbit, demonstrating the first in-space implementation of a large language model for analyzing satellite imagery.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://spectrum.ieee.org/media-library/satellite-image-of-an-arid-coastal-landscape-with-a-small-concentrated-metropolitan-area.jpg?id=67522667&width=980",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.theverge.com/policy/969667/humans-first-data-center-protest-hernando-county-florida-republicans",
-   "title_hash": "8023848ea583caa7b78bbe3e828abf39",
-   "first_seen": "2026-07-23T14:34:29.882975+00:00",
-   "kept": false,
-   "reason": "community opposition coverage without AI policy or technical substance"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v4avga/ceo_of_hugging_face_heading_to_san_francisco_to",
-   "title_hash": "6dfb2206c0403b8a22ebe4d45bee20de",
-   "first_seen": "2026-07-23T14:34:29.882975+00:00",
-   "kept": false,
-   "reason": "forum thread with no substantive content, only a social media link"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04563-8",
-   "title_hash": "74c672d368c75a303db0679fd7ecfb68",
-   "first_seen": "2026-07-23T14:34:29.882975+00:00",
-   "kept": true,
-   "title": "Early detection of Alzheimer’s disease with circular RNA from blood",
-   "source": "Nature Medicine",
-   "published": "2026-07-23T00:00:00+00:00",
-   "summary": "Researchers report a blood-based circular RNA signature that detects Alzheimer's disease with accuracy matching or exceeding current biomarkers and can predict symptom onset before clinical appearance.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04563-8/MediaObjects/41591_2026_4563_Fig1_HTML.png",
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=E3dDr_QtBuo",
-   "title_hash": "1881ab652222fb2be130e62c47abb3fa",
-   "first_seen": "2026-07-23T14:34:29.882975+00:00",
-   "kept": false,
-   "reason": "product demo without educational payload for this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=_ZqSFVi6UDY",
-   "title_hash": "ee6fb9126337a77eb8e3877938e696b8",
-   "first_seen": "2026-07-23T14:34:29.882975+00:00",
-   "kept": true,
-   "title": "Knowing When Not to Use AI: AI Agents vs Rules vs ML",
-   "source": "IBM Technology",
-   "published": "2026-07-23T11:00:00+00:00",
-   "summary": "Sam Anthony discusses when AI agents, rule-based systems, and machine learning are appropriate choices for different problems.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i4.ytimg.com/vi/_ZqSFVi6UDY/hqdefault.jpg",
-   "display_title": "When to use AI agents versus rules versus machine learning"
-  },
-  {
    "url": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
    "title_hash": "f8c8dc9a254622a592e7f66c4dc2320c",
    "first_seen": "2026-07-23T17:48:45.235288+00:00",
@@ -32218,6 +31824,228 @@
    "first_seen": "2026-09-21T05:00:18.826445+00:00",
    "kept": false,
    "reason": "minor release notes"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/996874/apple-john-ternus-tim-cook-mark-gurman-future-ai-siri-iphone",
+   "title_hash": "8c72dd90e65bc4db5e403f3e14786422",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "vendor marketing; corporate leadership interview about future products"
+  },
+  {
+   "url": "https://huggingface.co/blog/MultiverseComputingCAI/pruning-llms-like-a-physicist-block-removal-as-an",
+   "title_hash": "bc99e65edaf7df602353d4106bd242a8",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "minor technical paper without broad significance for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement",
+   "title_hash": "73e862b4e73908ece86555693d97b05f",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": true,
+   "title": "iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement",
+   "source": "The Verge AI",
+   "published": "2026-09-21T13:36:52+00:00",
+   "summary": "Apple's $250 million settlement over undelivered AI-upgraded Siri feature now allows eligible iPhone owners to submit claims for compensation.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC08433.webp?quality=90&strip=all&crop=0%2C11.097693417406%2C100%2C77.804613165189&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/a-summary-of-the-evidence-for-left",
+   "title_hash": "e9e3a6dfda5d33b0361133d40991d5d5",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; medical content unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://jack-clark.net/2026/09/21/import-ai-473-the-uss-superintelligence-strategy-human-brain-in-a-mouse-skull-and-machine-hermeneutics",
+   "title_hash": "b4dd9ca95e5271d22f21a58bf4a49893",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": true,
+   "title": "Import AI 473: The US’s superintelligence strategy; human brain in a mouse skull; and machine hermeneutics",
+   "source": "Import AI",
+   "published": "2026-09-21T12:31:04+00:00",
+   "summary": "Import AI newsletter covers US superintelligence strategy, brain-inspired computing, and machine interpretation of text in a weekly analysis.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/09/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-L4yH52.png?fit=258%2C258&ssl=1",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/21/1144161/border-towers-surveillance-methodology",
+   "title_hash": "7d76e861054b714cc1b5c7aed41f366a",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; surveillance investigation without AI education or clinical relevance"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations",
+   "title_hash": "92c69b1c22028b10e771b1c839681440",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; policy analysis of border surveillance system without AI education or clinical relevance"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/21/1144166/border-towers-surveillance-investigation",
+   "title_hash": "6121312e7a33aa1a88944281d71f33a0",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; failure analysis of border surveillance system without AI education or clinical relevance"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/21/1144170/border-towers-surveillance-feature",
+   "title_hash": "59a35bf7b3db29c71e0b6838dbe39d48",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; investigative reporting on border surveillance without AI education or clinical relevance"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle",
+   "title_hash": "d327248601756edf9445ed590dcb704b",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": true,
+   "title": "UN says AI safeguards can’t wait for certainty",
+   "source": "The Verge AI",
+   "published": "2026-09-21T10:18:06+00:00",
+   "summary": "A UN scientific panel called for governments to establish AI safeguards before risks are fully understood, placing artificial intelligence on the global diplomatic agenda.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2234546269.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping",
+   "title_hash": "68abee89acd37fa34d196b7cf4ea95c0",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "minor business news; service blocking incident without significance for this audience"
+  },
+  {
+   "url": "https://medicalfuturist.com/what-i-told-the-next-generation-of-physicians-about-the-future-of-medicine",
+   "title_hash": "254357ac768dc81de3e54eba476b19f7",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "no substantive AI content; personal reflection without new information or instructive analysis"
+  },
+  {
+   "url": "https://medicalfuturist.com/4-practical-technologies-aiding-patients-getting-through-medical-procedures",
+   "title_hash": "892c1a049d581e66aaab7392fc0cd6aa",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "listicle format; vendor marketing without independent analysis"
+  },
+  {
+   "url": "https://medicalfuturist.com/the-technological-future-of-surgery",
+   "title_hash": "e6d0858508f07d58fe845c713106b9bc",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "listicle format; vendor marketing without independent analysis"
+  },
+  {
+   "url": "https://github.com/jaredpalmer/kev/tree/main",
+   "title_hash": "a9e1c7d6261d4dce2a3d36783ce9d233",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "minor tool release notes; niche community project without significance for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wm4o8x/clarification_on_the_qwenimage21_license",
+   "title_hash": "a4bfaf070aea3c7651daa5b2cdc76512",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "minor license clarification; community meta-discussion"
+  },
+  {
+   "url": "https://github.com/volotat/mini-AGI",
+   "title_hash": "229d89ed2c225f49530dfd714ca09f47",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "minor tool release; performance-tinkering project without broad significance"
+  },
+  {
+   "url": "https://heretic-project.org/",
+   "title_hash": "dabaaa6a80a10cb589872d1610bad360",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "jailbreak tool announcement; not relevant to medical educators"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wlzvcx/zcode_is_now_open_source",
+   "title_hash": "738f66317c6f14c8cf74158c18aa47b7",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "minor open-source announcement; niche development tool without significance for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03205-0",
+   "title_hash": "83914df02be405860063179c0ee31322",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": true,
+   "title": "Physician involvement and research quality in chest X-ray foundation models",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-21T00:00:00+00:00",
+   "summary": "Peer-reviewed study examines how physician involvement affects research quality in chest X-ray foundation models used in clinical settings.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03208-x",
+   "title_hash": "598ae8b9cfd008f4c74f98d4ab03138a",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": true,
+   "title": "Why responsible AI needs regional networks in low-resource health systems",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-21T00:00:00+00:00",
+   "summary": "Published research argues for regional networks to support responsible artificial intelligence deployment in health systems with limited resources.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03286-x",
+   "title_hash": "1eda8ef8a094161075a5e38b5b987e55",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "author correction; not substantive content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04654-6",
+   "title_hash": "7443892967a0c241c3325c297b7d85cc",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; medical guideline unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://huggingface.co/blog/tokenizers-v1",
+   "title_hash": "48d48895aae114941b4926c75aac7c1f",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "minor release notes; technical tool documentation without significance for this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=i00isgmGgGg",
+   "title_hash": "883f60cd8282e321d964b94f4640652a",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": true,
+   "title": "HUGE Opus 5.5 LEAKS + Cheaper? Qwen 4, Kimi K3.1, MiniMax M3.1 & Step 5 Preview! AI NEWS",
+   "source": "WorldofAI",
+   "published": "2026-09-21T06:15:27+00:00",
+   "summary": "Roundup of recent model releases and updates including Anthropic Opus 5.5, Qwen 4, Kimi K3.1, MiniMax M3.1, and preview of OpenAI Step 5.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/i00isgmGgGg/hqdefault.jpg",
+   "display_title": "Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=FheRqx7DjbU",
+   "title_hash": "5b552d9880a335b3d8bb62f2eed9957a",
+   "first_seen": "2026-09-21T15:07:48.180924+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [
