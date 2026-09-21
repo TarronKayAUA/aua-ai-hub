@@ -18,9 +18,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90285">Development and Validation of an Interpretable Machine Learning Model to Predict Mortality in Patients With Sepsis-Induced Coagulopathy: Multicenter Cohort Study</a>
+    <p class="news-card-summary">Researchers developed and validated an interpretable machine learning model to predict mortality in sepsis-induced coagulopathy patients, addressing limitations of traditional clinical scoring systems.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e99757">Diagnostic Performance of a Locally Deployed Vision Language Model for Bone Tumor Diagnosis Using Smartphone-Captured Images: Exploratory Retrospective Study</a>
+    <p class="news-card-summary">Researchers tested a locally deployed vision language model for bone tumor diagnosis using smartphone-captured images, examining whether retrieval-augmented generation improves accuracy on noisy primary care data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e105049">Interpretable Multihorizon Glucose Forecasting for Assessing Nutritional Information Impact in Type 1 Diabetes Management: Model Development and Validation Study</a>
+    <p class="news-card-summary">Developers created an interpretable multihorizon glucose forecasting model for type 1 diabetes that assesses how nutritional macronutrient composition beyond carbohydrates affects postprandial glucose control.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
@@ -103,28 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02961-3">External validation of AI assisted colposcopy using WHO dataset for cervical precancer and cancer detection</a>
     <p class="news-card-summary">Study validates AI-assisted colposcopy system using World Health Organization cervical cancer screening dataset.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny">STAT+: A geriatrician explains why AI for older adults deserves careful scrutiny</a>
-    <p class="news-card-summary">A geriatrician discusses benefits and pitfalls of AI in care decisions for older adults, highlighting the need for careful scrutiny of AI deployment in vulnerable populations.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2022/04/AP22039367701680-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.19585">CliniCIRCA: A Modular LLM Framework for Constructing Longitudinal Mental Health Patient Journeys from Raw EHR Narratives</a>
-    <p class="news-card-summary">CliniCIRCA is a multi-stage language model framework for extracting longitudinal mental health patient journeys from unstructured electronic health record narratives.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03247-4">Communicating the uncertainty of individual risk from clinical prediction tools with the PGower similarity measure</a>
-    <p class="news-card-summary">A method for communicating uncertainty from clinical prediction tools helps clinicians understand individual risk variation beyond point estimates.</p>
   </div>
 </div>
 </div>

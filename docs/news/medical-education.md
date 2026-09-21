@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e85442">Collaborative Simulation-Based Learning to Develop Competencies in Physical Therapy Students: Randomized Controlled Trial</a>
+    <p class="news-card-summary">A randomized controlled trial examined whether collaborative simulation-based learning develops clinical competence more effectively than individual simulation in physical therapy students.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42760064?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">Real-time AI-assisted nerve tracking for ultrasound-guided nerve identification: a prospective randomized trial</a>
     <p class="news-card-summary">A randomized trial found that brief AI-assisted training did not improve independent ultrasound nerve identification after AI support was removed, questioning immediate transfer of learning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42759901?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">Clinicians vs. Artificial Intelligence in Predicting 28-Day ICU Mortality: A Vignette Study</a>
-    <p class="news-card-summary">Clinicians achieved higher accuracy than ChatGPT at predicting 28-day ICU mortality in a vignette study, supporting human judgment in high-stakes prognostic decisions.</p>
   </div>
 </div>
 </div>

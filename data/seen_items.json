@@ -1,74 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/970115/openai-chatgpt-health-launch-claims",
-   "title_hash": "f8c8dc9a254622a592e7f66c4dc2320c",
-   "first_seen": "2026-07-23T17:48:45.235288+00:00",
-   "kept": false,
-   "reason": "vendor marketing from the product's own company with unsupported capability claims"
-  },
-  {
-   "url": "https://arstechnica.com/google/2026/07/google-just-had-its-first-negative-cash-flow-quarter-ever-due-to-massive-ai-spending",
-   "title_hash": "6ee2af870ed1a02fcac5ef25318154cf",
-   "first_seen": "2026-07-23T17:48:45.235288+00:00",
-   "kept": false,
-   "reason": "financial and business reporting, not substantive technical development"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/ai-arms-race-in-line-for-a-reckoning-after-openai-hacking-incident",
-   "title_hash": "04a0a6c96d623785f668279808b3f9d1",
-   "first_seen": "2026-07-23T17:48:45.235288+00:00",
-   "kept": true,
-   "title": "AI arms race in line for a reckoning after OpenAI hacking incident",
-   "source": "Ars Technica AI",
-   "published": "2026-07-23T14:45:05+00:00",
-   "summary": "Analysis of security incident at OpenAI and implications of aggressive model training practices for safety risks.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/05/AI-chatbot-icons-on-smartphone-1-500x500.jpg",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v49zi9/absurd_claim_the_distilled_model_outperforms_the",
-   "title_hash": "7490bbdf3f8651bebcf86a572e6c1344",
-   "first_seen": "2026-07-23T17:48:45.235288+00:00",
-   "kept": false,
-   "reason": "community meta-discussion and speculation about policy, not substantive technical news"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02971-1",
-   "title_hash": "e5166292c1936725161b4480ca4d3021",
-   "first_seen": "2026-07-23T17:48:45.235288+00:00",
-   "kept": true,
-   "title": "Meaningful oversight of medical AI beyond human in the loop",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-23T00:00:00+00:00",
-   "summary": "Peer-reviewed analysis proposes four conditions for meaningful human oversight of medical AI systems beyond nominal clinician presence.",
-   "category": "clinical_practice",
-   "score": 5.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02928-4",
-   "title_hash": "a735e98b7d4d9de9c2684b509b4c2ec5",
-   "first_seen": "2026-07-23T17:48:45.235288+00:00",
-   "kept": true,
-   "title": "Evaluating large language models for assessment of psychosis risk",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-23T00:00:00+00:00",
-   "summary": "Peer-reviewed study evaluates large language models for their ability to assess psychosis risk in patients.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=lR58Dge8jE8",
-   "title_hash": "03470e0b92c752f76a81e4894fff840f",
-   "first_seen": "2026-07-23T17:48:45.235288+00:00",
-   "kept": false,
-   "reason": "marketing of a product feature from the product's own company"
-  },
-  {
    "url": "https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices",
    "title_hash": "f51ea496f9902930a4e49aaa55f3f235",
    "first_seen": "2026-07-23T21:29:30.591291+00:00",
@@ -32046,6 +31978,163 @@
    "first_seen": "2026-09-21T15:07:48.180924+00:00",
    "kept": false,
    "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e90285",
+   "title_hash": "39b02dc856af1e950224619b663176c3",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": true,
+   "title": "Development and Validation of an Interpretable Machine Learning Model to Predict Mortality in Patients With Sepsis-Induced Coagulopathy: Multicenter Cohort Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-21T19:30:12+00:00",
+   "summary": "Researchers developed and validated an interpretable machine learning model to predict mortality in sepsis-induced coagulopathy patients, addressing limitations of traditional clinical scoring systems.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e99757",
+   "title_hash": "51057be2ef5fac8832fbf78b179a97d4",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": true,
+   "title": "Diagnostic Performance of a Locally Deployed Vision Language Model for Bone Tumor Diagnosis Using Smartphone-Captured Images: Exploratory Retrospective Study",
+   "source": "JMIR AI",
+   "published": "2026-09-21T18:15:03+00:00",
+   "summary": "Researchers tested a locally deployed vision language model for bone tumor diagnosis using smartphone-captured images, examining whether retrieval-augmented generation improves accuracy on noisy primary care data.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e105049",
+   "title_hash": "ce403c0325844f18c3179117a1e563b6",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": true,
+   "title": "Interpretable Multihorizon Glucose Forecasting for Assessing Nutritional Information Impact in Type 1 Diabetes Management: Model Development and Validation Study",
+   "source": "JMIR AI",
+   "published": "2026-09-21T18:00:17+00:00",
+   "summary": "Developers created an interpretable multihorizon glucose forecasting model for type 1 diabetes that assesses how nutritional macronutrient composition beyond carbohydrates affects postprandial glucose control.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e85442",
+   "title_hash": "405384ec74974f8c1ae6a9a0375677e4",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": true,
+   "title": "Collaborative Simulation-Based Learning to Develop Competencies in Physical Therapy Students: Randomized Controlled Trial",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-21T18:00:14+00:00",
+   "summary": "A randomized controlled trial examined whether collaborative simulation-based learning develops clinical competence more effectively than individual simulation in physical therapy students.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026",
+   "title_hash": "2735ac22f62eb10c6a0b3af0a29758e9",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "off-topic; cybersecurity incident unrelated to medical education or clinical AI"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/trump-rejects-ai-slowdown-calls-launches-ai-force-instead",
+   "title_hash": "222a7174c6b7c81a6eadfca4ebe515c2",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "off-topic; general AI policy news without medical relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/MacOSBeta/comments/1vlnf13/workaround_to_avoid_downloading_ai_models_and",
+   "title_hash": "5c8c43286aeb0eb476d34e3bec7d5b78",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "off-topic; macOS operating system configuration unrelated to medical education or clinical AI"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42765931?fc=20260609215449&ff=20260921162614&v=2.20.1",
+   "title_hash": "8aa199f6e892ab9e4a4ca3c166d51fd1",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "narrow domain application; healthcare cost forecasting via administrative data lacks significance for medical educators and students"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42765524?fc=20260609215449&ff=20260921162614&v=2.20.1",
+   "title_hash": "80a15f35e4f9def3578f36fbeeaed410",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; focuses on older adults' adoption of assistive technology generally, not medical education or clinical AI deployment"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03255-4",
+   "title_hash": "04bcf6a7556df884d598d6bfa5ab4590",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "bibliometric survey; primarily a literature review without new findings or methods of significance to this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/20/hn-49779718",
+   "title_hash": "e0d1c0100dafbbfb6ec82f5abd42e441",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "forum discussion; blog comment on Model Context Protocol technical debate without substantive educational value"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wlqxeu/qwen38flashnext_cosmic_arcade_oneshot_slop_game",
+   "title_hash": "9b5f4b5771346b5039723e4f6ccfd7f1",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "performance tinkering thread; local deployment configuration discussion lacking significance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wleg4w/what_is_jev_and_what_is_it_used_for",
+   "title_hash": "c4b5eab0a0ac228ca19b5463d6819e7b",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "community meta-discussion; forum question about technical terminology without educational content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wi5rx2/frontier_llm_development_simplified_for",
+   "title_hash": "426f2f186bd7a0dd1fd5a9dda6a58a95",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "off-topic; political commentary on AI policy without medical relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=rRm3Vnb7UPY",
+   "title_hash": "513491a848f96a81ebc56c738b545a10",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "customer showcase and product marketing from OpenAI's own channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=p7TjXroM4ak",
+   "title_hash": "c1978411ea581cb8138513bf2499ae7c",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "customer showcase and product marketing from OpenAI's own channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=dtNlpZI86Dk",
+   "title_hash": "17af0cfad5e2ca1f10be3361a397d1d2",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "customer showcase and product marketing from OpenAI's own channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=4swQ0YknTLs",
+   "title_hash": "0e430616dc14a62b453ed6ff79089cdd",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "customer showcase and product marketing from OpenAI's own channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=QFxDF30qf_4",
+   "title_hash": "ca1094b8fceec16282a78ca24f4cf160",
+   "first_seen": "2026-09-21T20:26:13.947700+00:00",
+   "kept": false,
+   "reason": "customer showcase and product marketing from OpenAI's own channel"
   }
  ],
  "digests": [
