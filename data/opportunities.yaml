@@ -295,3 +295,31 @@
   support: "Organizer-stated: $20,250 in cash prizes, including two optional $1,000 featured path awards, plus optional $150 cloud compute grants for selected teams"
   relevance: "Online AI/ML competition with computer vision focus open globally, applicable to medical imaging and healthcare AI applications."
   verified: 2026-09-07
+
+# Auto-verified 2026-09-21 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon"
+  url: https://aws-cds-partner.devpost.com/
+  organizer: "AWS (Amazon Web Services) - Communication Developer Services"
+  type: hackathon
+  format: virtual
+  eligibility: "AWS Partner professionals or post grads, above legal age of majority, most countries eligible"
+  deadline: 2026-10-28
+  start_date: 2026-09-14
+  end_date: 2026-10-28
+  support: "Organizer-stated: 40000 USD in cash prizes: 1st 18000, 2nd 8000, 3rd 4000, plus AWS credits, Kiro access codes, marketplace and GTM support, and case study opportunities"
+  relevance: "Online agentic AI hackathon with machine learning focus and substantial prizes, accessible to international participants including medical faculty and students interested in AI applications."
+  verified: 2026-09-21
+
+# Auto-verified 2026-09-21 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
+- name: "MLAI Hackathon 2026"
+  url: https://mlai-hackathon.devpost.com/
+  organizer: "Mạng Lưới AI (in collaboration with HCMUT and OpenAI)"
+  type: hackathon
+  format: virtual
+  eligibility: "Students or alumni from one of 23 member universities of Mạng Lưới AI in Vietnam, teams of 1-4 members"
+  deadline: 2026-10-17
+  start_date: 2026-09-18
+  end_date: 2026-10-16
+  support: "Organizer-stated: Cash prizes, OpenAI API credits, ChatGPT Pro subscriptions, certificates from HCA, and networking/job opportunities with partners"
+  relevance: "Online machine learning and AI hackathon with open international participation, relevant for building core AI skills applicable to medical and health contexts."
+  verified: 2026-09-21
