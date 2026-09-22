@@ -24,13 +24,20 @@ name: Model comparison
 on:
   workflow_dispatch:
     inputs:
+      task:
+        description: "Which prompt to compare on"
+        type: choice
+        options: [briefs, narrative]
+        default: briefs
       models:
-        description: "Space-separated provider:model pairs"
+        description: "Space-separated provider:model pairs (blank uses the task's defaults)"
         required: false
         # Kept in step with DEFAULT_MODELS in scripts/compare_brief_models.py.
+        # For the narrative task, leave this at the default text or blank to
+        # use DEFAULT_MODELS in scripts/compare_narrative_models.py.
         default: "anthropic:claude-sonnet-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5"
       category:
-        description: "Limit to one category key (blank runs all three)"
+        description: "Briefs only: limit to one category key (blank runs all three)"
         required: false
         default: ""
       repeat:
@@ -58,6 +65,7 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - name: Compare models on the section-brief prompt
+        if: inputs.task == 'briefs'
         env:
           GITHUB_TOKEN: ${{ github.token }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -67,3 +75,21 @@ jobs:
             ARGS="$ARGS --category ${{ inputs.category }}"
           fi
           python scripts/compare_brief_models.py $ARGS
+      # The digest narrative, added 2026-09-22 to settle Fable 5.1 against
+      # Opus 5.5 on the prose (see the model review in feeds.yaml). It runs
+      # the real narrative code over a published digest's highlights; each
+      # draft is a paid call of roughly 5 to 15 cents.
+      - name: Compare models on the digest narrative
+        if: inputs.task == 'narrative'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODELS: ${{ inputs.models }}
+        run: |
+          ARGS="--repeat ${{ inputs.repeat }}"
+          # The brief defaults include a Haiku candidate that is no part of
+          # this question, so the brief default string means "use the
+          # narrative harness's own defaults".
+          if [ -n "$MODELS" ] && [ "$MODELS" != "anthropic:claude-sonnet-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5" ]; then
+            ARGS="$ARGS --models $MODELS"
+          fi
+          python scripts/compare_narrative_models.py $ARGS
