@@ -18,10 +18,17 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 39 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (15)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (39)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (16)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769016?fc=20260609215449&amp;ff=20260922092604&amp;v=2.20.1">Responsible Artificial Intelligence Integration in Medical Student Education in Somalia and Low-Resource Settings: A Context-Sensitive Implementation Framework</a>
+        <p class="news-card-summary">Framework for responsible integration of generative AI and large language models in health professions education in Somalia and other low-resource settings, addressing gaps between rapid adoption and institutional governance.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="assessment-and-feedback">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 22, 2026</span></div>
@@ -300,15 +307,36 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 44 items"
+??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (44)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (11)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 22, 2026</span></div>
         <a class="news-card-title" href="https://arxiv.org/abs/2609.22110">Evaluating Fine-Tuned and Base Language Models in Maternal and Vaccination Healthcare for African Settings</a>
         <p class="news-card-summary">A study compared domain-specific fine-tuned language models with base models for maternal health and vaccination advice in Nigeria, assessing accuracy and cultural appropriateness.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03288-9">Preparing AI chatbots to respond to patient distress and suicidality in high-risk healthcare settings</a>
+        <p class="news-card-summary">Study on preparing generative AI chatbots to respond appropriately to patient distress and suicidality in healthcare settings, addressing safety gaps in behavioral health support.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04688-w">Some answers, more questions for multi-cancer early detection tests</a>
+        <p class="news-card-summary">PATHFINDER 2 and NHS-Galleri studies assess clinical performance and safety of multi-cancer early detection tests, identifying next steps for demonstrating population-level benefit.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04656-4">Large-scale esophageal cancer screening through noncontrast computed tomography and artificial intelligence</a>
+        <p class="news-card-summary">Large-scale study of Esophageal AI-Guided malignant Lesion Evaluation tool for esophageal cancer detection via noncontrast computed tomography, demonstrating high sensitivity and specificity across diverse settings.</p>
       </div>
     </div>
     <div class="news-card" data-topic="clinical-decision-support">
@@ -625,10 +653,18 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 45 items"
+??? abstract "Show the 46 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (17)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (46)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (18)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent">Meta patches Muse exploit that let attackers control the AI agent</a>
+        <p class="news-card-summary">Meta patches zero-day vulnerability in Muse macOS app that allowed attackers to control the AI agent through local code execution exploiting an undocumented setting.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D_54a015.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 22, 2026</span></div>
@@ -975,9 +1011,27 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 8 videos"
+??? abstract "Show the 11 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=qBBRRsH0rQc" target="_blank" rel="noopener" title="Yes, Jev Is Insane, But There&#x27;s A Catch">
+      <img src="https://i2.ytimg.com/vi/qBBRRsH0rQc/hqdefault.jpg" alt="Video: Jev model architecture analysis and capabilities" loading="lazy">
+      <span class="video-card-title">Jev model architecture analysis and capabilities</span>
+      <span class="video-card-meta">Two Minute Papers, September 22, 2026</span>
+      <span class="video-card-desc">Overview of Jev, a new model architecture, with technical analysis and performance discussion relevant to open-source development.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=BaE6UBfNdQk" target="_blank" rel="noopener" title="Finally! New best local AI image editor is here">
+      <img src="https://i3.ytimg.com/vi/BaE6UBfNdQk/hqdefault.jpg" alt="Video: Qwen Image 2.1 open-source image generator review and setup" loading="lazy">
+      <span class="video-card-title">Qwen Image 2.1 open-source image generator review and setup</span>
+      <span class="video-card-meta">AI Search, September 22, 2026</span>
+      <span class="video-card-desc">Hands-on review and setup guide for Qwen Image 2.1 open-source image generation model with local execution instructions.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=MJllZbpvrAc" target="_blank" rel="noopener" title="Did Elon catch up? (Grok 4.7 is here)">
+      <img src="https://i2.ytimg.com/vi/MJllZbpvrAc/hqdefault.jpg" alt="Video: Grok 4.7 model testing and capability comparison" loading="lazy">
+      <span class="video-card-title">Grok 4.7 model testing and capability comparison</span>
+      <span class="video-card-meta">Matthew Berman, September 22, 2026</span>
+      <span class="video-card-desc">Testing and review of Grok 4.7 release, comparing capabilities and performance against other frontier models.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=i00isgmGgGg" target="_blank" rel="noopener" title="HUGE Opus 5.5 LEAKS + Cheaper? Qwen 4, Kimi K3.1, MiniMax M3.1 &amp; Step 5 Preview! AI NEWS">
       <img src="https://i2.ytimg.com/vi/i00isgmGgGg/hqdefault.jpg" alt="Video: Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others" loading="lazy">
       <span class="video-card-title">Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others</span>

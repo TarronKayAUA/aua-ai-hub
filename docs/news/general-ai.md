@@ -18,9 +18,17 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="new-models">New models (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent">Meta patches Muse exploit that let attackers control the AI agent</a>
+    <p class="news-card-summary">Meta patches zero-day vulnerability in Muse macOS app that allowed attackers to control the AI agent through local code execution exploiting an undocumented setting.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D_54a015.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 22, 2026</span></div>
@@ -127,13 +135,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Regulatory landscape update: industry leaders including Anthropic CEO propose coordinated AI development slowdown with independent evaluators and international agreements.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK481_STK432_CONGRESS_GOVERNMENT_CIVRGINIA_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wk9fag/alibaba_opensources_medical_ai_model_that_can">Alibaba open-sources medical AI model that can detect cancer and nearly 150 conditions</a>
-    <p class="news-card-summary">Alibaba released an open-source medical AI model capable of detecting cancer and approximately 150 health conditions.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/pJ-zdMLcj8M8GKW-OaubqnT-8Zuw2WrSQsQawSxoYsg.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=109f94405185b88ec2d70c823990bc859e0c27ec" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

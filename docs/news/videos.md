@@ -13,6 +13,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=qBBRRsH0rQc" target="_blank" rel="noopener" title="Yes, Jev Is Insane, But There&#x27;s A Catch">
+  <img src="https://i2.ytimg.com/vi/qBBRRsH0rQc/hqdefault.jpg" alt="Video: Jev model architecture analysis and capabilities" loading="lazy">
+  <span class="video-card-title">Jev model architecture analysis and capabilities</span>
+  <span class="video-card-meta">Two Minute Papers, September 22, 2026</span>
+  <span class="video-card-desc">Overview of Jev, a new model architecture, with technical analysis and performance discussion relevant to open-source development.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=BaE6UBfNdQk" target="_blank" rel="noopener" title="Finally! New best local AI image editor is here">
+  <img src="https://i3.ytimg.com/vi/BaE6UBfNdQk/hqdefault.jpg" alt="Video: Qwen Image 2.1 open-source image generator review and setup" loading="lazy">
+  <span class="video-card-title">Qwen Image 2.1 open-source image generator review and setup</span>
+  <span class="video-card-meta">AI Search, September 22, 2026</span>
+  <span class="video-card-desc">Hands-on review and setup guide for Qwen Image 2.1 open-source image generation model with local execution instructions.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=MJllZbpvrAc" target="_blank" rel="noopener" title="Did Elon catch up? (Grok 4.7 is here)">
+  <img src="https://i2.ytimg.com/vi/MJllZbpvrAc/hqdefault.jpg" alt="Video: Grok 4.7 model testing and capability comparison" loading="lazy">
+  <span class="video-card-title">Grok 4.7 model testing and capability comparison</span>
+  <span class="video-card-meta">Matthew Berman, September 22, 2026</span>
+  <span class="video-card-desc">Testing and review of Grok 4.7 release, comparing capabilities and performance against other frontier models.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=i00isgmGgGg" target="_blank" rel="noopener" title="HUGE Opus 5.5 LEAKS + Cheaper? Qwen 4, Kimi K3.1, MiniMax M3.1 &amp; Step 5 Preview! AI NEWS">
   <img src="https://i2.ytimg.com/vi/i00isgmGgGg/hqdefault.jpg" alt="Video: Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others" loading="lazy">
   <span class="video-card-title">Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others</span>
@@ -114,24 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AlphaGenome Atlas: predicting effects of human genome variants</span>
   <span class="video-card-meta">Google DeepMind, September 8, 2026</span>
   <span class="video-card-desc">AlphaGenome predicts molecular effects of all nine billion single-nucleotide variants in the human genome, enabling systematic analysis of genetic variation.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=GRYZR2R20FI" target="_blank" rel="noopener" title="Code Quality in the Age of AI: Why Great Code Isn&#x27;t Enough">
-  <img src="https://i4.ytimg.com/vi/GRYZR2R20FI/hqdefault.jpg" alt="Video: Code quality in AI-assisted software development" loading="lazy">
-  <span class="video-card-title">Code quality in AI-assisted software development</span>
-  <span class="video-card-meta">IBM Technology, September 7, 2026</span>
-  <span class="video-card-desc">IBM explains software quality considerations when integrating AI code generation into development workflows.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=mUw27wG7uFA" target="_blank" rel="noopener" title="AI Simplified: 6 Concepts You Need to Know About Modern AI">
-  <img src="https://i2.ytimg.com/vi/mUw27wG7uFA/hqdefault.jpg" alt="Video: AI fundamentals and key concepts explained" loading="lazy">
-  <span class="video-card-title">AI fundamentals and key concepts explained</span>
-  <span class="video-card-meta">IBM Technology, September 6, 2026</span>
-  <span class="video-card-desc">IBM explainer covering fundamental AI concepts and terminology for audiences new to the field.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=Spuza-KwTJ4" target="_blank" rel="noopener" title="GPT 6 Astra, so good even OpenAI are worried">
-  <img src="https://i4.ytimg.com/vi/Spuza-KwTJ4/hqdefault.jpg" alt="Video: Recent AI model releases and benchmark updates" loading="lazy">
-  <span class="video-card-title">Recent AI model releases and benchmark updates</span>
-  <span class="video-card-meta">AI Explained, September 4, 2026</span>
-  <span class="video-card-desc">Overview of recent AI model releases and benchmarks, including cost efficiency improvements and safety considerations for medical educators following the field.</span>
 </a>
 </div>
 

@@ -1,299 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arxiv.org/abs/2607.20425",
-   "title_hash": "a51c548c5393aacb32f9a1905f1392d5",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "narrow domain application outside medical and healthcare contexts"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20426",
-   "title_hash": "f9831fb87d78ba31e40d3f399828ab9c",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": true,
-   "title": "Knowledge Injection Exists in MoE? Exploring Expert-Aware Contrast Decoding in MoE for Mitigating LLMs'Hallucinations",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-24T04:00:00+00:00",
-   "summary": "Expert-aware contrast decoding in mixture-of-experts models mitigates hallucinations by exploiting layer-wise differences and enables cross-domain generalization.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20427",
-   "title_hash": "c6dd44b05c6bab85d56dde3bca65f5c0",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": true,
-   "title": "Is MoE Routing a Huffman Code? Discovering the Frequency-Diversity Law in Chain-of-Thought",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-24T04:00:00+00:00",
-   "summary": "Mixture-of-experts routing operates according to a Huffman Coding principle, revealing a frequency-diversity law governing how state-of-the-art models allocate computation.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20428",
-   "title_hash": "b4c1f3907b7167e099ffb2f5796164ae",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": true,
-   "title": "Human-in-the-Loop Large Language Model Framework for Identification of Cutaneous Immune-Related Adverse Events",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-24T04:00:00+00:00",
-   "summary": "A human-in-the-loop large language model framework detected cutaneous immune-related adverse events from clinical notes with higher accuracy and inter-rater agreement than manual review alone.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20429",
-   "title_hash": "feac15729b4262399520dc35b14fd467",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "narrow application to simulating diverse human opinions without broader technical or methodological significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20430",
-   "title_hash": "d31be20b520a06621d2e43fe02cc005b",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "shared task system paper with narrow domain application to argument mining"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20431",
-   "title_hash": "26a679acc2c605eaab13fd7ce905edf9",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "narrow domain application to materials science without relevance to medical education or practice"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20432",
-   "title_hash": "586b8b69a08eeffe1d2d0a12b4bbc1af",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "position paper on programming languages lacking substantive technical analysis or medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20433",
-   "title_hash": "27e77cc37b2c68ec2dbb7798247a9cc7",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "narrow application to knowledge editing without broad significance for medical audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20434",
-   "title_hash": "9db7847fd7eb25f86d94a8df85484b6b",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "model compression technique paper narrow in scope without medical or educational application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20435",
-   "title_hash": "1ebfa8863da9dc8266f85e690db4d394",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "watermark durability paper narrow in technical scope without medical significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20436",
-   "title_hash": "b84bb9179b01b6aae72643f5003c26cf",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": true,
-   "title": "Routing Subspaces: Auditing Evaluation-to-Deployment Mismatch in Fine-Tuned Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-24T04:00:00+00:00",
-   "summary": "Fine-tuning can create mismatches between model behavior under evaluation and ordinary use, revealing safety risks not captured by standard testing.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20437",
-   "title_hash": "ff8331b5b2b61579af74df18808bc9ef",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "narrow security application to retrieval-augmented generation systems without broad medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20438",
-   "title_hash": "288b1a9bf62fd644b12fe53b71f20210",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "technical analysis of preference tuning spectral properties narrow in scope without medical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20439",
-   "title_hash": "d6c4af1e3b0fc5164eb712c74107767e",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "shared task system paper with narrow application to political evasion detection"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20440",
-   "title_hash": "08ccad68e442ec1fa7586a43f0a15de9",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "knowledge distillation defense paper narrow in scope without medical significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20441",
-   "title_hash": "4a5027a6e6ae902eb8bcf8bca28d60ef",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "information ecosystem bias measurement narrow in scope without medical or educational application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20442",
-   "title_hash": "6cc420d0dafd39040072e35aca958d15",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "dataset and corpus announcement without broad significance for medical audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20443",
-   "title_hash": "d5c4f84764fe74a11d5714f0ad45962f",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "dataset and corpus announcement without broad significance for medical audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20444",
-   "title_hash": "672c4db263b0b8cd9bf4b364b6f7befb",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": true,
-   "title": "Confidently Deceptive: How Confidence Amplifies the Risk of LLM Deception",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-24T04:00:00+00:00",
-   "summary": "Large language models can produce deceptive responses with high confidence, and higher confidence may increase persuasiveness of false information to users.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20445",
-   "title_hash": "229cd2147599f4772b35121a98ebb0a4",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "emotion recognition in conversations narrow domain application without medical relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20446",
-   "title_hash": "caae00160eaa82720c77731a6b286606",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": true,
-   "title": "Distinguishing Artificial from Authentic: Evaluating LLMs for Detecting LLM-Generated Content",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-24T04:00:00+00:00",
-   "summary": "Large language models show limited ability to reliably detect their own generated content across student submissions and program code.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20447",
-   "title_hash": "3a739c269766bf9c4153359e97657da1",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "shared task system paper on gaming toxicity detection without medical or educational significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20448",
-   "title_hash": "58305663204543ad3321425e224f925f",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": true,
-   "title": "Domyn-Small: A European 10B Reasoning Language Model",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-24T04:00:00+00:00",
-   "summary": "Domyn-Small, a 10-billion-parameter open-weight reasoning model trained on 9 trillion multilingual tokens, is released under the MIT license.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "New models"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.20449",
-   "title_hash": "6c06f806fcac80708dcb9aba9b84deac",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "narrative patterns in language models narrow conceptual scope without substantive technical or medical analysis"
-  },
-  {
-   "url": "https://news.ycombinator.com/item?id=49026810",
-   "title_hash": "5d6fc16e8e3c0968d8903781559fb26a",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "personal blog post or informal project announcement lacking substantive technical analysis"
-  },
-  {
-   "url": "https://claytondorge.com/patterns-list",
-   "title_hash": "a242197d2eae94e1308b31717813b83e",
-   "first_seen": "2026-07-24T06:40:42.546676+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; design patterns unrelated to AI or medicine"
-  },
-  {
-   "url": "https://www.sensible-med.com/p/i-cant-seem-to-ignore-the-longevity",
-   "title_hash": "d666f7a1f28b130353b0ea08db1195ab",
-   "first_seen": "2026-07-24T10:28:57.810369+00:00",
-   "kept": false,
-   "reason": "opinion piece without substantive analysis or new information"
-  },
-  {
-   "url": "https://www.insidehighered.com/opinion/columns/confessions-community-college-dean/2026/07/24/fumbling-toward-ai-policy",
-   "title_hash": "dcf421f8ea2bb10952affabad18113f6",
-   "first_seen": "2026-07-24T10:28:57.810369+00:00",
-   "kept": false,
-   "reason": "no substantive content provided"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04545-w",
-   "title_hash": "9966ffac487fe92f10f2c9f743db8ce8",
-   "first_seen": "2026-07-24T10:28:57.810369+00:00",
-   "kept": true,
-   "title": "AI-based clinician decision support system for diagnosis of inherited retinal diseases: a multicenter, randomized trial",
-   "source": "Nature Medicine",
-   "published": "2026-07-24T00:00:00+00:00",
-   "summary": "An AI system for inherited retinal disease diagnosis integrating multimodal imaging and clinical data achieved 88.5% accuracy in a randomized multicenter trial.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04496-2",
-   "title_hash": "0ff5b7c16af7b11477eaadab0c730e6b",
-   "first_seen": "2026-07-24T10:28:57.810369+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; biomarker study without AI component"
-  },
-  {
-   "url": "https://obsoletesony.substack.com/p/why-sony-cant-bring-back-classic-walkman",
-   "title_hash": "a03547e2ef34454c4151812a525f8afe",
-   "first_seen": "2026-07-24T10:28:57.810369+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; no AI relevance"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=ao5Q4aCURmc",
-   "title_hash": "438c9077ea55007082cc8545dfeff48f",
-   "first_seen": "2026-07-24T10:28:57.810369+00:00",
-   "kept": false,
-   "reason": "rumor and leak speculation without confirmed developments"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=PB7DBemxl3E",
-   "title_hash": "4f5ccd92a8e578df6c11557fcb36ab2c",
-   "first_seen": "2026-07-24T10:28:57.810369+00:00",
-   "kept": false,
-   "reason": "vendor marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=7eCM7jsfbeA",
-   "title_hash": "cb2700b7c64d37076e52ce3fd949d267",
-   "first_seen": "2026-07-24T10:28:57.810369+00:00",
-   "kept": false,
-   "reason": "drama and speculation coverage without substantive technical analysis"
-  },
-  {
    "url": "https://arstechnica.com/tech-policy/2026/07/ai-firms-want-more-data-centers-trumps-epa-may-give-neighbors-less-say",
    "title_hash": "931e26a82d3f5917a933e18d99d68024",
    "first_seen": "2026-07-24T14:14:46.172802+00:00",
@@ -32157,6 +31864,240 @@
    "first_seen": "2026-09-22T05:00:55.964212+00:00",
    "kept": false,
    "reason": "daily news recap with no substantive content or expert analysis for medical educators"
+  },
+  {
+   "url": "https://spectrum.ieee.org/fanless-liquid-cooled-ai-servers-coolit",
+   "title_hash": "193f6754fe9ab9b3f5f8b75e8bd65844",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "vendor marketing for cooling hardware, not AI research or capability news"
+  },
+  {
+   "url": "https://www.theverge.com/tech/998679/meta-muse-patch-zero-day-exploit-ai-agent",
+   "title_hash": "0061be7fbf6aaea65f246820491b6985",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": true,
+   "title": "Meta patches Muse exploit that let attackers control the AI agent",
+   "source": "The Verge AI",
+   "published": "2026-09-22T11:53:58+00:00",
+   "summary": "Meta patches zero-day vulnerability in Muse macOS app that allowed attackers to control the AI agent through local code execution exploiting an undocumented setting.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D_54a015.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype",
+   "title_hash": "2aeef2687add36fc82ad7b1a9b5fc0d1",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "commentary with no substantive new information beyond existing announcements"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42769016?fc=20260609215449&ff=20260922092604&v=2.20.1",
+   "title_hash": "5aefa7e03020748b99184c74744acbcf",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": true,
+   "title": "Responsible Artificial Intelligence Integration in Medical Student Education in Somalia and Low-Resource Settings: A Context-Sensitive Implementation Framework",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-22T10:00:00+00:00",
+   "summary": "Framework for responsible integration of generative AI and large language models in health professions education in Somalia and other low-resource settings, addressing gaps between rapid adoption and institutional governance.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42768330?fc=20260609215449&ff=20260922092604&v=2.20.1",
+   "title_hash": "b3678d9a7b167fa1d98ad08165f6e801",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "narrow domain application of machine learning to surgical outcomes prediction, not AI in medical education or practice"
+  },
+  {
+   "url": "https://nathan.rs/posts/gzip-lm",
+   "title_hash": "bb090ba65f6fc6719ee875b2845bb034",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "research forum discussion of narrow technical interest, not significant for medical educators"
+  },
+  {
+   "url": "https://icenet.blog/2026/09/22/looking-back-to-move-learning-forward-building-medical-games-from-childhood-favorites",
+   "title_hash": "34f8fe082628872a0a4076149724fab4",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "general educational content without specific relevance to artificial intelligence in medical education"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/09/22/ai-created-recession-job-market-some-new-grads",
+   "title_hash": "ff3b9d00831f808dcdc202eda9e36ce1",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "general higher education employment trend unrelated to artificial intelligence in medicine"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/student-success/college-experience/2026/09/22/5-ways-ai-reshaping-student-success",
+   "title_hash": "9e0d43169735a0377a26709cfb42c587",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "listicle on general student success without specific medical education or AI substance"
+  },
+  {
+   "url": "https://status.claude.com/incidents/7g1qpkyz5gxh",
+   "title_hash": "d2ff7b624eff7886c57ab2e35061256a",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "service incident report, not news of significance for this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03288-9",
+   "title_hash": "ab5296c6b1ad0f7c01b001acd868cf29",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": true,
+   "title": "Preparing AI chatbots to respond to patient distress and suicidality in high-risk healthcare settings",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-22T00:00:00+00:00",
+   "summary": "Study on preparing generative AI chatbots to respond appropriately to patient distress and suicidality in healthcare settings, addressing safety gaps in behavioral health support.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04688-w",
+   "title_hash": "b0476288e746a76eed91bba67d5f3cc4",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": true,
+   "title": "Some answers, more questions for multi-cancer early detection tests",
+   "source": "Nature Medicine",
+   "published": "2026-09-22T00:00:00+00:00",
+   "summary": "PATHFINDER 2 and NHS-Galleri studies assess clinical performance and safety of multi-cancer early detection tests, identifying next steps for demonstrating population-level benefit.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04656-4",
+   "title_hash": "ac924863c39ff4e558a650190d01a55e",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": true,
+   "title": "Large-scale esophageal cancer screening through noncontrast computed tomography and artificial intelligence",
+   "source": "Nature Medicine",
+   "published": "2026-09-22T00:00:00+00:00",
+   "summary": "Large-scale study of Esophageal AI-Guided malignant Lesion Evaluation tool for esophageal cancer detection via noncontrast computed tomography, demonstrating high sensitivity and specificity across diverse settings.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04648-4",
+   "title_hash": "37be46b85361170b4aee0ede0e4391e8",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "clinical biomarker study unrelated to artificial intelligence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04679-x",
+   "title_hash": "049c9d1f5d0e232182e3776496c34358",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "clinical trial of conventional oncology therapy, not AI-related"
+  },
+  {
+   "url": "https://huggingface.co/blog/transformers-llama-cpp-quants",
+   "title_hash": "028848e03af2d0124a3a68668e60692b",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "minor release notes without significance for medical educators"
+  },
+  {
+   "url": "https://huggingface.co/blog/omlx",
+   "title_hash": "62b797a98ac19dc507455e04d1758259",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "staffing announcement with no substantive news about capability or development"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wmnw89/xiaomimimomimov26flashrl_hugging_face",
+   "title_hash": "90f159b04cde99e4ac02f281a41fa75c",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "minor model release from community forum, not significant for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wm65le/i_really_dont_understand_jev_hype",
+   "title_hash": "b37ae7b7c0c155199b524227e5a922c0",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "community discussion forum post without substantive content or news"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=MJllZbpvrAc",
+   "title_hash": "65a25b0ac3dced6729c0a6164619c5be",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": true,
+   "title": "Did Elon catch up? (Grok 4.7 is here)",
+   "source": "Matthew Berman",
+   "published": "2026-09-22T00:13:35+00:00",
+   "summary": "Testing and review of Grok 4.7 release, comparing capabilities and performance against other frontier models.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/MJllZbpvrAc/hqdefault.jpg",
+   "display_title": "Grok 4.7 model testing and capability comparison"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qBBRRsH0rQc",
+   "title_hash": "a5630ad25a67b661cce2fd09ba6ff14b",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": true,
+   "title": "Yes, Jev Is Insane, But There's A Catch",
+   "source": "Two Minute Papers",
+   "published": "2026-09-22T09:32:13+00:00",
+   "summary": "Overview of Jev, a new model architecture, with technical analysis and performance discussion relevant to open-source development.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/qBBRRsH0rQc/hqdefault.jpg",
+   "display_title": "Jev model architecture analysis and capabilities"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=HAi7twQBKlY",
+   "title_hash": "7ad520fd941443e0182de593dbf41662",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "duplicate of candidate 5, covering same Grok 4.7 release"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Nv_kTdHIVNY",
+   "title_hash": "3fc8708352cf307a6c53f6e78ca2cb59",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "promotional content with community membership solicitation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=BaE6UBfNdQk",
+   "title_hash": "73508d8e6f8b94eb9db80266c4701e27",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": true,
+   "title": "Finally! New best local AI image editor is here",
+   "source": "AI Search",
+   "published": "2026-09-22T03:26:02+00:00",
+   "summary": "Hands-on review and setup guide for Qwen Image 2.1 open-source image generation model with local execution instructions.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/BaE6UBfNdQk/hqdefault.jpg",
+   "display_title": "Qwen Image 2.1 open-source image generator review and setup"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=p2i-fcx0G0M",
+   "title_hash": "8d8957ce3ca186606690855eaf0e4d5d",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "speculation and rumor content without confirmed developments"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=XzL_vtYAO-4",
+   "title_hash": "905428cb157eb4f95c690a09e32046cf",
+   "first_seen": "2026-09-22T13:26:04.200522+00:00",
+   "kept": false,
+   "reason": "vendor marketing from IBM's own channel"
   }
  ],
  "digests": [
