@@ -27,7 +27,8 @@ on:
       models:
         description: "Space-separated provider:model pairs"
         required: false
-        default: "github:openai/gpt-4.1 anthropic:claude-haiku-4-5 anthropic:claude-opus-5"
+        # Kept in step with DEFAULT_MODELS in scripts/compare_brief_models.py.
+        default: "anthropic:claude-sonnet-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5"
       category:
         description: "Limit to one category key (blank runs all three)"
         required: false

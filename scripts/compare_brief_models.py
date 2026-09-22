@@ -8,8 +8,8 @@ never writes a docs page, and has no effect on the site.
 Usage (needs GITHUB_TOKEN for github models, ANTHROPIC_API_KEY for claude):
 
     python scripts/compare_brief_models.py
-    python scripts/compare_brief_models.py --models anthropic:claude-opus-5 \
-        github:openai/gpt-4.1 --category general_ai
+    python scripts/compare_brief_models.py --models anthropic:claude-opus-5-5 \
+        anthropic:claude-sonnet-5 --category general_ai
 
 Each candidate is scored against the same contract the pipeline enforces
 (word bounds, reference count and validity, two-paragraph structure), so a
@@ -27,10 +27,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import aggregate  # noqa: E402
 
+# The production incumbent, the cheapest tier, and the newest Opus.
+# Updated 2026-09-22: github:openai/gpt-4.1 was dropped because GitHub
+# Models was retired on 2026-07-30, so that default failed every run, and
+# Sonnet 5 took its place as the model the briefs actually run on.
 DEFAULT_MODELS = [
-    "github:openai/gpt-4.1",
+    "anthropic:claude-sonnet-5",
     "anthropic:claude-haiku-4-5",
-    "anthropic:claude-opus-5",
+    "anthropic:claude-opus-5-5",
 ]
 
 

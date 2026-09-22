@@ -49,6 +49,40 @@ llm:
   # account level: prepaid credits with auto-reload off, plus a workspace
   # monthly limit. The section briefs stay on the free tier by design
   # (configured in the briefs block below).
+  # Model review, 2026-09-22 (Claude Opus 5.5 release; the owner asked for
+  # every task, not only the Opus ones, to be weighed on price against
+  # performance, keeping the cheapest viable model for simple work).
+  # Nothing switched. The reasons, so the next review starts from here:
+  #   - Haiku 4.5 tasks (curation, conference_watch, content_verify,
+  #     opportunity_watch, and the anthropic default above): already the
+  #     cheapest viable tier. Owner's plan: move them to Haiku 5.5 when it
+  #     ships (Anthropic announced it for "the coming weeks"), after the
+  #     checks below. One known Haiku 4.5 weakness favors that: its
+  #     February 2025 knowledge cutoff predates the Claude 5 family, and on
+  #     2026-09-22 curation rewrote "Claude Opus 5.5" as "Claude Opus 3.5"
+  #     in a published video card (ledger entry corrected by hand).
+  #   - Sonnet 5 tasks: Opus 5.5 costs twice as much per token ($4/$20 per
+  #     million against $2/$10), and none of these tasks is failing for
+  #     want of capability (the briefs passed 8 of 8 contract checks).
+  #     Opus 5.5 also carries Fable-class biology classifiers, a refusal
+  #     risk on medical payloads (content_watch already needed a refusal
+  #     chain on Sonnet 5, issue #33). Revisit against Sonnet 5.5.
+  #   - Fable 5.1 digest narrative: Opus 5.5 is 40% of the per-token
+  #     price and leads Anthropic's own table on every row, but that table
+  #     covers coding, agents and knowledge work. LiveBench, independent,
+  #     has Fable 5.1 ahead on Language (89.5 against 86.3) and
+  #     instruction following (73.0 against 65.7), which are what a
+  #     320-word narrative contract tests, and about $4 a year is at
+  #     stake. Switch only on a blind side-by-side of the actual prose.
+  #   - Opus 5 fallbacks: kept deliberately; see the notes beside them.
+  # RE-RUN THIS REVIEW when Sonnet 5.5 or Haiku 5.5 ships. Before any
+  # swap: verify the id, price, default thinking and knowledge cutoff
+  # from the platform docs; set max_tokens explicitly on every swapped
+  # task, because Claude 5 generation thinking draws on the reply budget
+  # and the 4000 default truncated JSON twice (issues #20 and #27); check
+  # whether the new model's safety classifiers can refuse a medical
+  # payload; dry-run curation against the incumbent on the same
+  # candidates; and dispatch model-compare.yml for the briefs.
   tasks:
     curation:
       provider: anthropic
@@ -88,6 +122,13 @@ llm:
       # likely to share the disposition. Tried in order, once each,
       # only after the primary returns empty twice; costs nothing in
       # normal weeks.
+      # Kept on claude-opus-5 at the 2026-09-22 review, deliberately, not
+      # an oversight: Opus 5.5 ships with Fable-class biology and
+      # cybersecurity classifiers, and Anthropic's own routing sends
+      # biology refusals from Fable 5.1 and Opus 5.5 to Opus 5 (Claude
+      # Code model-configuration docs). A refusal escape must not share
+      # the classifier it is escaping, so "upgrading" this slot would
+      # weaken the chain.
       refusal_fallback_models: [claude-opus-5, claude-opus-4-8]
     # Section briefs moved off the free tier 2026-07-31: GitHub Models
     # was fully retired 2026-07-30 (docs.github.com, checked 2026-07-31;
@@ -157,6 +198,9 @@ llm:
     digest_narrative:
       provider: anthropic
       model: claude-fable-5-1
+      # Kept on claude-opus-5 at the 2026-09-22 review: it is the model
+      # Anthropic itself routes Fable 5.1's biology refusals to, whereas
+      # Opus 5.5 shares Fable's classifiers. Do not upgrade this slot.
       fallback_model: claude-opus-5
       max_tokens: 8000
       # List prices for the cost line in the verification block (USD per
