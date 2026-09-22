@@ -18,9 +18,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money">New Anthropic, OpenAI models make same promise: A little more for a lot less money</a>
+    <p class="news-card-summary">Anthropic and OpenAI released more capable models at lower cost, shifting the frontier AI landscape toward efficiency over raw performance.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/Claude-ChatGPT-500x500-1790110453.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000">Microsoft disrupts AI-assisted platform that compromised 12,000 accounts</a>
+    <p class="news-card-summary">Microsoft disrupted an AI-enabled platform used for mass account compromise, highlighting security risks in AI-assisted tools.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 22, 2026</span></div>
@@ -120,20 +136,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.20829">SAGE: Schema-Guided LLMs for Grant Review</a>
     <p class="news-card-summary">SAGE translates grant review rubrics into structured checks that link assessments directly to evidence in application materials, demonstrating schema-guided language model evaluation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="benchmarks-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.20836">PhysioBench: A Unified Benchmark for Physiological Signal Question Answering</a>
-    <p class="news-card-summary">PhysioBench is a unified benchmark for evaluating language models on physiological signal interpretation tasks using natural language instructions across diverse clinical monitoring objectives.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.20850">MME-Safety: A Fine-grained Benchmark for Safety Evaluation of MLLMs</a>
-    <p class="news-card-summary">MME-Safety introduces a fine-grained benchmark for evaluating safety vulnerabilities in multimodal large language models with intent-based annotations.</p>
   </div>
 </div>
 </div>

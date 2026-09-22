@@ -18,10 +18,24 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 37 items"
+??? abstract "Show the 38 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (37)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e103584">Generative AI, Assisted Progressive-Disclosure Case-Based Learning for Clinical Reasoning in Occupational Medicine: Quasi-Experimental Study</a>
+        <p class="news-card-summary">Generative AI can support progressive-disclosure case-based learning in occupational medicine to develop iterative clinical reasoning and prevent premature diagnostic closure.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95342">Large Language Model Performance on Multistep Clinical Cases: Comparative Study Across Question and Case Levels</a>
+        <p class="news-card-summary">Large language models&#x27; performance on multistep clinical cases reveals gaps beyond single-question accuracy on medical licensing exams.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
@@ -276,13 +290,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Study examines failure modes in medical benchmarks that use rubric-based evaluation to grade open-ended clinical scenarios at scale.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 15, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e87587">Teaching Acute Coronary Syndrome High-Risk ECG Interpretation and Clinical Decision-Making Through FOAMed Videos and Podcast Versus Print-Based Materials Among Emergency Care Providers: Randomized Controlled Mixed Methods Trial</a>
-        <p class="news-card-summary">Randomized trial comparing effectiveness of Free Open Access Medical Education videos and podcasts versus print materials for teaching high-risk acute coronary syndrome electrocardiogram interpretation to emergency care providers.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -295,8 +302,22 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ??? abstract "Show the 47 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (12)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (11)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="patient-facing-tools">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e84469">Demographics, Clinical Content, Use Patterns, and Care-Seeking Intent Across Two Generations of AI-Enabled Clinical Triage Tools (A Traditional Structured Questionnaire and a Large Language Model, Enabled Conversational Interface): Comparative Retrospective Observational Study</a>
+        <p class="news-card-summary">A study compares large language model-enabled conversational triage with traditional structured questionnaires to assess effects on clinical content capture and care alignment.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="clinical-decision-support">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92831">A Hierarchical Machine Learning, Based Framework for Clinical Decision Support in Foot Orthosis Prescription: Algorithm Development and Validation Study</a>
+        <p class="news-card-summary">A hierarchical machine learning framework addresses variability in foot orthosis prescription by providing decision support from incomplete biomechanical assessments.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 22, 2026</span></div>
@@ -614,20 +635,6 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Multicohort study benchmarks AI-generated thin-slice CT reconstruction quality under realistic clinical conditions.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 15, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e94589">Consumer Preferences for AI-Based Smart Home Medical Emergency Detection Among German Adults: Choice-Based Conjoint Analysis</a>
-        <p class="news-card-summary">Conjoint analysis study of German adult preferences for artificial intelligence-based smart home systems designed to detect medical emergencies and enable independent living.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 15, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78523">Automated Renal Tumor Segmentation in Computed Tomography Images Using a Global Attention, Based DeepLabV3+ Model: Algorithm Development and Validation</a>
-        <p class="news-card-summary">Development and validation of a deep learning model using global attention-based DeepLabV3+ for automated segmentation of renal tumors in computed tomography scans to improve surgical planning.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -638,10 +645,26 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 48 items"
+??? abstract "Show the 51 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (48)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (19)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (9)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money">New Anthropic, OpenAI models make same promise: A little more for a lot less money</a>
+        <p class="news-card-summary">Anthropic and OpenAI released more capable models at lower cost, shifting the frontier AI landscape toward efficiency over raw performance.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/Claude-ChatGPT-500x500-1790110453.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000">Microsoft disrupts AI-assisted platform that compromised 12,000 accounts</a>
+        <p class="news-card-summary">Microsoft disrupted an AI-enabled platform used for mass account compromise, highlighting security risks in AI-assisted tools.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 22, 2026</span></div>
@@ -910,6 +933,13 @@ Everything kept in the last seven days, refreshed several times a day. Items are
         <p class="news-card-summary">Controlled comparison of supervised fine-tuning and reinforcement learning methods for training tool-calling agents across model scales.</p>
       </div>
     </div>
+    <div class="news-card" data-topic="benchmarks-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 16, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.13009">How good are frontier models at physics?</a>
+        <p class="news-card-summary">A benchmarking study evaluates frontier large language models&#x27; physics reasoning capabilities across multiple domains.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 16, 2026</span></div>
@@ -1012,9 +1042,15 @@ Everything kept in the last seven days, refreshed several times a day. Items are
 
 ## Videos
 
-??? abstract "Show the 11 videos"
+??? abstract "Show the 12 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=ux6Lafw7en0" target="_blank" rel="noopener" title="Claude Opus 5.5 Is INSANE, Hands-On With the BEST Model Yet!">
+      <img src="https://i2.ytimg.com/vi/ux6Lafw7en0/hqdefault.jpg" alt="Video: Hands-on testing of Claude Opus 3.5" loading="lazy">
+      <span class="video-card-title">Hands-on testing of Claude Opus 3.5</span>
+      <span class="video-card-meta">Bijan Bowen, September 22, 2026</span>
+      <span class="video-card-desc">Hands-on testing and technical evaluation of Anthropic&#x27;s Claude Opus 3.5 model across multiple capability areas.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=rFCaGc7owT8" target="_blank" rel="noopener" title="Claude Opus 5.5 IS THE Greatest AI Model EVER! Cheaper, Fast, &amp; Powerful! (FULLY TESTED)">
       <img src="https://i3.ytimg.com/vi/rFCaGc7owT8/hqdefault.jpg" alt="Video: Claude Opus 5.5 benchmarking and performance testing" loading="lazy">
       <span class="video-card-title">Claude Opus 5.5 benchmarking and performance testing</span>

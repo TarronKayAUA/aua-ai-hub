@@ -1,135 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/ai/2026/07/anthropics-opus-5-is-about-token-efficiency-not-a-capability-leap",
-   "title_hash": "4e1b9797be45fd743ec4536f4724fa1d",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": true,
-   "title": "Anthropic's Opus 5 is about token efficiency, not a capability leap",
-   "source": "Ars Technica AI",
-   "published": "2026-07-24T21:05:51+00:00",
-   "summary": "Anthropic released Claude Opus 5 optimized for token efficiency and cost rather than absolute capability gains over its predecessor.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/opus-5-500x500.jpg",
-   "topic": "New models"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e87831",
-   "title_hash": "9f8462054e99bc4bcaa78cb55f24e4ab",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": false,
-   "reason": "narrow domain application; dataset and method study without broad significance"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e86145",
-   "title_hash": "ff163f487ba0487c5580d326deb35243",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": true,
-   "title": "Large Language Models for Endodontic Symptom Assessment and Treatment Planning Using Image-Free Clinical Records: Comparative Evaluation Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-24T20:30:15+00:00",
-   "summary": "Large language models assessed pulpal status and treatment planning in endodontics using clinical records alone, achieving comparable accuracy to models using radiographic images.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e105550",
-   "title_hash": "5b2be9c1c30df7e998ede3c22b14337c",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": false,
-   "reason": "correction notice only, no new substantive content"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e91960",
-   "title_hash": "e71b43676c10dc10dc3312d3b1bd62d2",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": true,
-   "title": "R-R Interval Histogram-Based Deep Learning for 3-Class Atrial Fibrillation Screening in Garment-Type Wearable Holter Electrocardiogram Monitoring: Algorithm Development and Validation Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-24T19:30:15+00:00",
-   "summary": "A deep learning algorithm detected atrial fibrillation from wearable ECG data using R-R interval histograms, addressing noise contamination in real-world recordings.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e81942",
-   "title_hash": "e09bae50b2ce8c16ddd087561750dbc9",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": true,
-   "title": "Clinically Interpretable Deep Learning for Differentiating Vitiligo and Postinflammatory Hypopigmentation: Diagnostic Accuracy Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-24T19:30:14+00:00",
-   "summary": "An interpretable deep learning model distinguished vitiligo from postinflammatory hypopigmentation with diagnostic accuracy and feature visualization for clinical transparency.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition",
-   "title_hash": "3dbf0ed93664a087eac6f1e6ee7a5658",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; acquisition gossip with no medical or education relevance"
-  },
-  {
-   "url": "https://ai.jmir.org/2026/1/e82647",
-   "title_hash": "2c7ba6846f6afdaa797019d9c515565d",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; general clinical intervention trial unrelated to AI literacy or medical AI"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e79808",
-   "title_hash": "b1aa1d09a3de6da7c666ec508aa11e7f",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": true,
-   "title": "From Paper to Digital Medical Documentation in the Field: The Rapid Development and Deployment of the Digital Casualty Card System During a War",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-24T19:00:03+00:00",
-   "summary": "The Israeli Defense Forces deployed a digital casualty card system replacing paper documentation for prehospital medical care during armed conflict.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical documentation"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v5g4tl/it_appears_that_the_anti_opensource_ai_lobby_is",
-   "title_hash": "5f642773ef8564639a736959a80a350f",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": false,
-   "reason": "forum discussion with no news or substantive analysis; community meta-discussion"
-  },
-  {
-   "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
-   "title_hash": "203c34e1e51e6c31b5bc296efb9733e4",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": true,
-   "title": "Nvidia, Microsoft, Meta warn against overregulating open-weight models",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-07-24T13:32:30+00:00",
-   "summary": "Nvidia, Microsoft, and Meta issued a letter cautioning against overregulation of open-weight artificial intelligence models.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://image.cnbcfm.com/api/v1/image/108173882-1752844539526-gettyimages-2225696381-mms28707_1cm2uml7.jpeg?v=1752844582&w=1920&h=1080",
-   "topic": "Industry and policy"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=jyuyY86GJnA",
-   "title_hash": "9900ff2121af1e85cbfe82fd6aed3053",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": false,
-   "reason": "routine product demo from the product's own company without significant new capability announcement"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-AI-Hasnt-Increased-Unemployment--According-to-Anthropic-e3mgkqc",
-   "title_hash": "bf396d968cebde8cf1267f9580300746",
-   "first_seen": "2026-07-24T21:29:39.098997+00:00",
-   "kept": false,
-   "reason": "daily news show recap without standout analysis or guest significance"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/25/boris-cherny",
    "title_hash": "74a1afb59a1437e86e289e708b30a68f",
    "first_seen": "2026-07-25T03:40:33.794790+00:00",
@@ -32179,6 +32050,169 @@
    "first_seen": "2026-09-22T19:45:29.055834+00:00",
    "kept": false,
    "reason": "drama coverage and speculation presented as news; no substantive information on AI capability, education, or clinical deployment"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e93801",
+   "title_hash": "38a7902bbe0ce06aa997b686aa31ea83",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": false,
+   "reason": "narrow domain application with limited relevance to medical educators"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e84469",
+   "title_hash": "42cecfe76a866268b91e29748e93b79d",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": true,
+   "title": "Demographics, Clinical Content, Use Patterns, and Care-Seeking Intent Across Two Generations of AI-Enabled Clinical Triage Tools (A Traditional Structured Questionnaire and a Large Language Model, Enabled Conversational Interface): Comparative Retrospective Observational Study",
+   "source": "JMIR AI",
+   "published": "2026-09-22T22:00:03+00:00",
+   "summary": "A study compares large language model-enabled conversational triage with traditional structured questionnaires to assess effects on clinical content capture and care alignment.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e103584",
+   "title_hash": "4c2773e621c868f9ec4bd1e7b48d14ac",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": true,
+   "title": "Generative AI, Assisted Progressive-Disclosure Case-Based Learning for Clinical Reasoning in Occupational Medicine: Quasi-Experimental Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-22T21:45:39+00:00",
+   "summary": "Generative AI can support progressive-disclosure case-based learning in occupational medicine to develop iterative clinical reasoning and prevent premature diagnostic closure.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e95342",
+   "title_hash": "5905f572f1e1d9dca3671cc0b90d41b0",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": true,
+   "title": "Large Language Model Performance on Multistep Clinical Cases: Comparative Study Across Question and Case Levels",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-22T21:45:24+00:00",
+   "summary": "Large language models' performance on multistep clinical cases reveals gaps beyond single-question accuracy on medical licensing exams.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e85557",
+   "title_hash": "b578937076a979a56f0546fecd3a5dae",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": false,
+   "reason": "narrow prediction model study without distinctive relevance to AI in medical education"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money",
+   "title_hash": "5861b609d59c35830210f5783ff7dc6f",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": true,
+   "title": "New Anthropic, OpenAI models make same promise: A little more for a lot less money",
+   "source": "Ars Technica AI",
+   "published": "2026-09-22T21:25:18+00:00",
+   "summary": "Anthropic and OpenAI released more capable models at lower cost, shifting the frontier AI landscape toward efficiency over raw performance.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/Claude-ChatGPT-500x500-1790110453.jpg",
+   "topic": "New models"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e92831",
+   "title_hash": "5373aa6a2a505e05528ec35104acbd5e",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": true,
+   "title": "A Hierarchical Machine Learning, Based Framework for Clinical Decision Support in Foot Orthosis Prescription: Algorithm Development and Validation Study",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-09-22T21:00:18+00:00",
+   "summary": "A hierarchical machine learning framework addresses variability in foot orthosis prescription by providing decision support from incomplete biomechanical assessments.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3",
+   "title_hash": "94f1f8b34055acd09c3de7d3760ab4a9",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": false,
+   "reason": "vendor marketing for commercial product deployment"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e85088",
+   "title_hash": "1ba122aae6d2dee4811127172b0213a8",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": false,
+   "reason": "narrow natural language processing application without broad relevance to medical educators"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/lecture-8-endpoints",
+   "title_hash": "ab1877b9755ca33f19c8ce7095d4f2a7",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; course lecture series content"
+  },
+  {
+   "url": "https://www.assbench.com/",
+   "title_hash": "eb92ca533a5d92768d5430c9238c33fa",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": false,
+   "reason": "minor tool release notes without significance for medical educators"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000",
+   "title_hash": "39cc95e236820be8ca8be09a07c37acc",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": true,
+   "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
+   "source": "Ars Technica AI",
+   "published": "2026-09-22T19:45:47+00:00",
+   "summary": "Microsoft disrupted an AI-enabled platform used for mass account compromise, highlighting security risks in AI-assisted tools.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04618-w",
+   "title_hash": "8de4b3cff80cc870b78fe3958923632f",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": false,
+   "reason": "clinical trial of cancer detection test without AI focus; not about artificial intelligence"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04652-8",
+   "title_hash": "b7e4c50c4cb6272f5ede169cd388693e",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": false,
+   "reason": "clinical trial of cancer detection test without AI focus; not about artificial intelligence"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.13009",
+   "title_hash": "7413429ca8c262909a112d84cc71ab2e",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": true,
+   "title": "How good are frontier models at physics?",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-09-16T19:19:08+00:00",
+   "summary": "A benchmarking study evaluates frontier large language models' physics reasoning capabilities across multiple domains.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Benchmarks and evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ux6Lafw7en0",
+   "title_hash": "1ed8bbc82e4cba6a5fafdcdae0284206",
+   "first_seen": "2026-09-22T22:58:40.284499+00:00",
+   "kept": true,
+   "title": "Claude Opus 5.5 Is INSANE, Hands-On With the BEST Model Yet!",
+   "source": "Bijan Bowen",
+   "published": "2026-09-22T22:42:33+00:00",
+   "summary": "Hands-on testing and technical evaluation of Anthropic's Claude Opus 3.5 model across multiple capability areas.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/ux6Lafw7en0/hqdefault.jpg",
+   "display_title": "Hands-on testing of Claude Opus 3.5"
   }
  ],
  "digests": [

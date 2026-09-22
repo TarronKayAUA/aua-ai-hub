@@ -18,9 +18,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e103584">Generative AI, Assisted Progressive-Disclosure Case-Based Learning for Clinical Reasoning in Occupational Medicine: Quasi-Experimental Study</a>
+    <p class="news-card-summary">Generative AI can support progressive-disclosure case-based learning in occupational medicine to develop iterative clinical reasoning and prevent premature diagnostic closure.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95342">Large Language Model Performance on Multistep Clinical Cases: Comparative Study Across Question and Case Levels</a>
+    <p class="news-card-summary">Large language models&#x27; performance on multistep clinical cases reveals gaps beyond single-question accuracy on medical licensing exams.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756506?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Let&#x27;s Talk Systems - What Do We Really Mean by a Systems Approach in AI-Enhanced Medical Education?</a>
     <p class="news-card-summary">Conceptual framework examining how AI reshapes medical education through assessment generation, simulation, adaptive feedback, and clinical decision support as integrated systems.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756478?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">YouTube, Large Language Models (LLMs), or Textbooks? Usage Trends and Associations with Academic Performance and Learning Satisfaction among Medical Students in Pakistan: A Cross-Sectional Study</a>
-    <p class="news-card-summary">Cross-sectional study in Pakistan found balanced YouTube and textbook use predicts better performance; high LLM satisfaction associated with poorer academic outcomes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756308?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">The Impact of an AI-Enhanced Teaching Model on Cultivating Clinical Reasoning in Ultrasound Diagnosis among Medical Students</a>
-    <p class="news-card-summary">AI-enhanced ultrasound teaching model improved clinical reasoning and student satisfaction compared to traditional approaches.</p>
   </div>
 </div>
 </div>

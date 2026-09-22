@@ -18,9 +18,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e84469">Demographics, Clinical Content, Use Patterns, and Care-Seeking Intent Across Two Generations of AI-Enabled Clinical Triage Tools (A Traditional Structured Questionnaire and a Large Language Model, Enabled Conversational Interface): Comparative Retrospective Observational Study</a>
+    <p class="news-card-summary">A study compares large language model-enabled conversational triage with traditional structured questionnaires to assess effects on clinical content capture and care alignment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92831">A Hierarchical Machine Learning, Based Framework for Clinical Decision Support in Foot Orthosis Prescription: Algorithm Development and Validation Study</a>
+    <p class="news-card-summary">A hierarchical machine learning framework addresses variability in foot orthosis prescription by providing decision support from incomplete biomechanical assessments.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 22, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 21, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e105049">Interpretable Multihorizon Glucose Forecasting for Assessing Nutritional Information Impact in Type 1 Diabetes Management: Model Development and Validation Study</a>
     <p class="news-card-summary">Developers created an interpretable multihorizon glucose forecasting model for type 1 diabetes that assesses how nutritional macronutrient composition beyond carbohydrates affects postprandial glucose control.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.20825">HERMES: Contrast-Aware Knowledge Graph Reasoning from Clinical Notes for Patient Outcome Prediction</a>
-    <p class="news-card-summary">HERMES uses contrast-aware knowledge graph reasoning over clinical notes to preserve relational and temporal structure for improved patient outcome prediction.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.20826">TALON: A Temporally Aware Longitudinal Framework for Radiology Report Generation</a>
-    <p class="news-card-summary">TALON generates radiology reports with awareness of prior examinations to enable longitudinal comparison and detect subtle interval changes in imaging studies.</p>
   </div>
 </div>
 </div>

@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=ux6Lafw7en0" target="_blank" rel="noopener" title="Claude Opus 5.5 Is INSANE, Hands-On With the BEST Model Yet!">
+  <img src="https://i2.ytimg.com/vi/ux6Lafw7en0/hqdefault.jpg" alt="Video: Hands-on testing of Claude Opus 3.5" loading="lazy">
+  <span class="video-card-title">Hands-on testing of Claude Opus 3.5</span>
+  <span class="video-card-meta">Bijan Bowen, September 22, 2026</span>
+  <span class="video-card-desc">Hands-on testing and technical evaluation of Anthropic&#x27;s Claude Opus 3.5 model across multiple capability areas.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=rFCaGc7owT8" target="_blank" rel="noopener" title="Claude Opus 5.5 IS THE Greatest AI Model EVER! Cheaper, Fast, &amp; Powerful! (FULLY TESTED)">
   <img src="https://i3.ytimg.com/vi/rFCaGc7owT8/hqdefault.jpg" alt="Video: Claude Opus 5.5 benchmarking and performance testing" loading="lazy">
   <span class="video-card-title">Claude Opus 5.5 benchmarking and performance testing</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI agents and constraint adherence</span>
   <span class="video-card-meta">IBM Technology, September 9, 2026</span>
   <span class="video-card-desc">Discussion of how AI agents reason around or circumvent specified rules and constraints, relevant to AI safety and reliability in deployment.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=T2dnchLabZQ" target="_blank" rel="noopener" title="DeepSeek V4.1 Flash Is INSANELY GOOD! Fast, Cheap, Powerful! (Fully Tested)">
-  <img src="https://i1.ytimg.com/vi/T2dnchLabZQ/hqdefault.jpg" alt="Video: DeepSeek V4.1 Flash performance and capability testing" loading="lazy">
-  <span class="video-card-title">DeepSeek V4.1 Flash performance and capability testing</span>
-  <span class="video-card-meta">WorldofAI, September 9, 2026</span>
-  <span class="video-card-desc">Performance testing of DeepSeek V4.1 Flash model with evaluation of speed, cost efficiency, and capability across benchmark tasks.</span>
 </a>
 </div>
 
