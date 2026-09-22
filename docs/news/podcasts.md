@@ -137,10 +137,4 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">The Cognitive Revolution, July 30, 2026</span>
   <span class="video-card-desc">FAR.AI co-founder Adam Gleave discusses the AI Security Leaderboard, a systematic evaluation of safety safeguards in frontier models, revealing gaps in how developers measure misuse defenses.</span>
 </a>
-<a class="video-card" href="https://aipodcast.education/why-ai-in-education-starts-with-better-conversations-dr-jo-orlando" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Why AI in Education Starts With Better Conversations: Dr Jo Orlando" loading="lazy">
-  <span class="video-card-title">Why AI in Education Starts With Better Conversations: Dr Jo Orlando</span>
-  <span class="video-card-meta">AI in Education Podcast, July 23, 2026</span>
-  <span class="video-card-desc">Digital wellbeing researcher discusses how schools and parents can help young people develop critical thinking while navigating artificial intelligence in education.</span>
-</a>
 </div>

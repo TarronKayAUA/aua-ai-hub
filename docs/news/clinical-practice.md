@@ -13,14 +13,21 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-clinical-practice.svg" alt="">
 
 <div class="section-brief">
-<p>A study in npj Digital Medicine found that stigmatizing language in patient records can skew large language model triage prioritization, raising bias concerns for emergency decision support <a href="https://www.nature.com/articles/s41746-026-03270-5">[7]</a>. A related paper flagged provenance risks when a general-purpose image generator is applied to breast ultrasound interpretation <a href="https://www.nature.com/articles/s41746-026-03209-w">[8]</a>. Diagnostic validation continues elsewhere, with an AI-assisted colposcopy system validated externally against a WHO cervical cancer dataset <a href="https://www.nature.com/articles/s41746-026-02961-3">[10]</a>. A STAT News commentary adds caution on deploying AI in care decisions for older adults <a href="https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny">[11]</a>, while an AI-based preoperative planning system for high tibial osteotomy matched surgeon accuracy with far less planning time <a href="https://pubmed.ncbi.nlm.nih.gov/42763426?fc=20260609215449&amp;ff=20260920090402&amp;v=2.20.1">[4]</a>.</p>
-<p>Also this week: five studies address safety and evaluation of clinical AI, including uncertainty communication for risk prediction and reviewable evidence synthesis, alongside four papers on clinical decision support and four on imaging and diagnostics spanning surgical skill assessment and radiology reporting. A scoping review covers chatbot-based motivational interviewing, and one study builds longitudinal mental health journeys from EHR narratives.</p>
-<p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the items below.</p>
+<p>A multicenter validation study introduced an interpretable machine learning model for predicting mortality in sepsis-induced coagulopathy, aiming to outperform traditional scoring systems <a href="https://medinform.jmir.org/2026/1/e90285">[2]</a>. Imaging applications also advanced, with a locally deployed vision language model tested for bone tumor diagnosis from smartphone images in primary care settings <a href="https://ai.jmir.org/2026/1/e99757">[3]</a>, while a separate study found AI assistance reduced reading time in tumor response measurements on follow-up CT scans despite minor variability increases <a href="https://pubmed.ncbi.nlm.nih.gov/42761733?fc=20260609215449&amp;ff=20260920005636&amp;v=2.20.1">[12]</a>. Safety concerns received attention too, as researchers examined how stigmatizing patient information skews large language model emergency triage decisions <a href="https://www.nature.com/articles/s41746-026-03270-5">[13]</a>, and a preoperative planning system for high tibial osteotomy matched surgeon accuracy while cutting planning time <a href="https://pubmed.ncbi.nlm.nih.gov/42763426?fc=20260609215449&amp;ff=20260920090402&amp;v=2.20.1">[10]</a>.</p>
+<p>Also this week: the section holds six items on clinical decision support and five on imaging and diagnostics, spanning maternal health chatbots, glucose forecasting, and radiology report generation, alongside three safety and evaluation studies addressing provenance risk and evidence synthesis, and one patient-facing tool exploring motivational interviewing chatbots.</p>
+<p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.22110">Evaluating Fine-Tuned and Base Language Models in Maternal and Vaccination Healthcare for African Settings</a>
+    <p class="news-card-summary">A study compared domain-specific fine-tuned language models with base models for maternal health and vaccination advice in Nigeria, assessing accuracy and cultural appropriateness.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 21, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03195-z">Toward reviewable medical evidence synthesis for care delivery</a>
     <p class="news-card-summary">Peer-reviewed research on making AI-generated medical evidence summaries reviewable and interpretable for clinical care delivery.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02961-3">External validation of AI assisted colposcopy using WHO dataset for cervical precancer and cancer detection</a>
-    <p class="news-card-summary">Study validates AI-assisted colposcopy system using World Health Organization cervical cancer screening dataset.</p>
   </div>
 </div>
 </div>

@@ -13,19 +13,33 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A scoping review of 517 publications maps rapid growth in generative AI research across health professions education, though most work remains fragmented and GPT-model dominant <a href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[6]</a>. That growth is outpacing preparation: emergency medicine experts warn the workforce lacks skills to safely evaluate AI tools now entering triage and documentation <a href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[4]</a>, while one review argues learners are already using generative AI informally and calls for policy that adapts rather than restricts <a href="https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[5]</a>. A randomized trial complicates optimism about skills transfer, finding AI-assisted nerve-tracking training did not improve independent ultrasound performance once support was withdrawn <a href="https://pubmed.ncbi.nlm.nih.gov/42760064?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">[14]</a>.</p>
-<p>Also this week: teaching and curriculum approaches dominate with seven items, including a pilot AI-introduction program for incoming students and an AI-enhanced ultrasound teaching model. Three papers address assessment and feedback, two cover simulation and skills, two present new exam benchmarks including a Peruvian medical-exam dataset, and one examines attitudes toward AI in admissions screening.</p>
-<p class="section-brief-date">The picture as of September 21, 2026; numbered links go to the items below.</p>
+<p>A scoping review of 517 publications from 2022 to 2025 shows generative AI research in health professions education growing rapidly but remaining fragmented <a href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[9]</a>. A urology trial found that DeepSeek-assisted self-study raised exam scores more than conventional online study, while ChatGPT&#x27;s gains were not statistically significant <a href="https://pubmed.ncbi.nlm.nih.gov/42766393?fc=20260609215449&amp;ff=20260922010056&amp;v=2.20.1">[3]</a>. Separately, a Pakistani study linked heavy reliance on large language models to weaker academic performance compared with balanced use of textbooks and video lectures <a href="https://pubmed.ncbi.nlm.nih.gov/42756478?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[11]</a>. Expert consensus in emergency medicine warns that the workforce still lacks skills to safely evaluate AI tools already entering clinical workflows <a href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[7]</a>.</p>
+<p>Also this week: seven items cover teaching and curriculum, including a pilot AI introduction program for incoming students and a systems framework spanning assessment, simulation, and clinical decision support. Four papers address assessment and feedback, two cover simulation-based skills, and one item each addresses admissions attitudes and a new Peruvian exam benchmark.</p>
+<p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.22133">Observational Equivalence of LLM and Human Annotation</a>
+    <p class="news-card-summary">A study replicated 14 political science annotation tasks and found recent large language models agree with expert coders at rates comparable to inter-expert agreement.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 21, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e85442">Collaborative Simulation-Based Learning to Develop Competencies in Physical Therapy Students: Randomized Controlled Trial</a>
     <p class="news-card-summary">A randomized controlled trial examined whether collaborative simulation-based learning develops clinical competence more effectively than individual simulation in physical therapy students.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 21, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42766393?fc=20260609215449&amp;ff=20260922010056&amp;v=2.20.1">Effectiveness of ChatGPT and DeepSeek in Urology Medical Education: Randomized Controlled Trial</a>
+    <p class="news-card-summary">A randomized controlled trial found that DeepSeek-assisted self-study improved urology exam performance more than traditional internet learning, while ChatGPT showed numerically higher but nonsignificant gains.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -110,20 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756209?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Piloting an AI Introduction Program for Incoming Medical Students: A Novel Approach to Medical Education</a>
     <p class="news-card-summary">Pilot study found early introduction of AI concepts in medical school feasible but identified need for balanced curricula combining AI literacy with ethical training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42758583?fc=20260609215449&amp;ff=20260918183606&amp;v=2.20.1">Generative AI for Personalized Learning Platforms in Otolaryngology-head and neck surgery (ENT) Education: Scoping Review</a>
-    <p class="news-card-summary">Scoping review synthesizes generative AI capabilities with learning outcomes, assessment, safety, and implementation in otolaryngology education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42760064?fc=20260609215449&amp;ff=20260919004057&amp;v=2.20.1">Real-time AI-assisted nerve tracking for ultrasound-guided nerve identification: a prospective randomized trial</a>
-    <p class="news-card-summary">A randomized trial found that brief AI-assisted training did not improve independent ultrasound nerve identification after AI support was removed, questioning immediate transfer of learning.</p>
   </div>
 </div>
 </div>
