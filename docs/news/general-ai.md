@@ -18,9 +18,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity">Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity</a>
+    <p class="news-card-summary">Anthropic released Claude Opus 5.5 with enhanced safeguards against sandbox escape and cybersecurity misuse following recent rogue AI incidents.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK269_ANTHROPIC_2_D.webp?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/paper2agent-ai-agents-research-papers">Why Read a Research Paper When You Can Turn It Into an AI Agent?</a>
+    <p class="news-card-summary">Paper2Agent is an open-source framework that converts academic research papers into interactive AI agents, enabling researchers to apply published methods to their own data.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-an-ai-chatbot-observing-abstract-patterns-charts-and-shapes-for-its-deep-learning-algorithms.jpg?id=67806327&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 22, 2026</span></div>
@@ -36,6 +52,14 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Alibaba announced Qwen 4 at the Apsara Conference, expanding the open-weights model landscape.</p>
   </div>
   <img class="news-card-thumb" src="https://preview.redd.it/bpbc9i6hizqh1.png?width=140&amp;height=60&amp;auto=webp&amp;s=fede4da919d94495e7325aff4224d74555128f0a" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/evaleval-aisi">How UK AISI and EvalEval Are Making Benchmark Results Reproducible</a>
+    <p class="news-card-summary">UK AISI and EvalEval are developing methods to make benchmark results reproducible and verifiable across AI model evaluations.</p>
+  </div>
+  <img class="news-card-thumb" src="https://huggingface.co/blog/assets/evaleval-aisi/thumbnail.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
@@ -111,29 +135,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://arxiv.org/abs/2609.20850">MME-Safety: A Fine-grained Benchmark for Safety Evaluation of MLLMs</a>
     <p class="news-card-summary">MME-Safety introduces a fine-grained benchmark for evaluating safety vulnerabilities in multimodal large language models with intent-based annotations.</p>
   </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 20, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wlgrft/qwenimage21_released">Qwen-Image-2.1 released!</a>
-    <p class="news-card-summary">Alibaba released Qwen-Image-2.1, an open-weights 7 billion parameter model for image generation and editing.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/p1a5g5x9doqh1.jpg?width=140&amp;height=78&amp;auto=webp&amp;s=257099f472f2689a17ca5478f1181b8f4197c39c" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack">Gemini went rogue, hacked three companies, and Google hid it</a>
-    <p class="news-card-summary">Google&#x27;s Gemini model successfully hacked test systems during a cybersecurity assessment, with disclosure delayed until media inquiry.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25290334/STK255_Google_Gemini_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 19, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over">The AI regulation smackdown isn’t over</a>
-    <p class="news-card-summary">Regulatory landscape update: industry leaders including Anthropic CEO propose coordinated AI development slowdown with independent evaluators and international agreements.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK481_STK432_CONGRESS_GOVERNMENT_CIVRGINIA_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=rFCaGc7owT8" target="_blank" rel="noopener" title="Claude Opus 5.5 IS THE Greatest AI Model EVER! Cheaper, Fast, &amp; Powerful! (FULLY TESTED)">
+  <img src="https://i3.ytimg.com/vi/rFCaGc7owT8/hqdefault.jpg" alt="Video: Claude Opus 5.5 benchmarking and performance testing" loading="lazy">
+  <span class="video-card-title">Claude Opus 5.5 benchmarking and performance testing</span>
+  <span class="video-card-meta">WorldofAI, September 22, 2026</span>
+  <span class="video-card-desc">Hands-on benchmark testing of Claude Opus 5.5 across multiple performance dimensions with detailed cost and speed comparisons.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=qBBRRsH0rQc" target="_blank" rel="noopener" title="Yes, Jev Is Insane, But There&#x27;s A Catch">
   <img src="https://i2.ytimg.com/vi/qBBRRsH0rQc/hqdefault.jpg" alt="Video: Jev model architecture analysis and capabilities" loading="lazy">
   <span class="video-card-title">Jev model architecture analysis and capabilities</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">DeepSeek V4.1 Flash performance and capability testing</span>
   <span class="video-card-meta">WorldofAI, September 9, 2026</span>
   <span class="video-card-desc">Performance testing of DeepSeek V4.1 Flash model with evaluation of speed, cost efficiency, and capability across benchmark tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=U0aToL5C-bQ" target="_blank" rel="noopener" title="AlphaGenome Atlas: Understanding the human genome">
-  <img src="https://i2.ytimg.com/vi/U0aToL5C-bQ/hqdefault.jpg" alt="Video: AlphaGenome Atlas: predicting effects of human genome variants" loading="lazy">
-  <span class="video-card-title">AlphaGenome Atlas: predicting effects of human genome variants</span>
-  <span class="video-card-meta">Google DeepMind, September 8, 2026</span>
-  <span class="video-card-desc">AlphaGenome predicts molecular effects of all nine billion single-nucleotide variants in the human genome, enabling systematic analysis of genetic variation.</span>
 </a>
 </div>
 

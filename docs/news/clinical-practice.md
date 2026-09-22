@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
@@ -47,6 +47,48 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04656-4">Large-scale esophageal cancer screening through noncontrast computed tomography and artificial intelligence</a>
     <p class="news-card-summary">Large-scale study of Esophageal AI-Guided malignant Lesion Evaluation tool for esophageal cancer detection via noncontrast computed tomography, demonstrating high sensitivity and specificity across diverse settings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03251-8">Patient journey evaluation for consumer AI health assistants</a>
+    <p class="news-card-summary">Patient journey evaluation of consumer AI health assistants measures how patients engage with and benefit from AI-assisted health tools in practice.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03260-7">Prospective multicenter evaluation of an autonomous robotic ultrasound system integrated with AI-assisted thyroid nodule assessment</a>
+    <p class="news-card-summary">Prospective multicenter study evaluated an autonomous robotic ultrasound system with integrated AI for thyroid nodule assessment in clinical deployment.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03237-6">BrainCSD: a hierarchical consistency-driven MoE framework for connectome synthesis and multitask brain trait prediction</a>
+    <p class="news-card-summary">BrainCSD uses a hierarchical mixture-of-experts framework for connectome synthesis and multitask brain trait prediction from neuroimaging data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03244-7">DoseTailor for personalised tacrolimus dose optimisation across multicentre populations using interpretable AI</a>
+    <p class="news-card-summary">DoseTailor applies interpretable AI for personalized tacrolimus dosing optimization across multicenter patient populations.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03278-x">AI adoption and workflow optimization following orchestration platform implementation and structured change management</a>
+    <p class="news-card-summary">Study evaluated AI adoption and workflow optimization outcomes following implementation of a clinical orchestration platform with structured change management.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03280-3">Leveraging dynamic prompting for outcome prediction of cancer patients using large language models and electronic health record notes</a>
+    <p class="news-card-summary">Dynamic prompting with large language models applied to electronic health record notes for cancer patient outcome prediction.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-decision-support">
@@ -82,48 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.20826">TALON: A Temporally Aware Longitudinal Framework for Radiology Report Generation</a>
     <p class="news-card-summary">TALON generates radiology reports with awareness of prior examinations to enable longitudinal comparison and detect subtle interval changes in imaging studies.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.20902">Generative Artificial Intelligence Chatbots for Motivational Interviewing: A Scoping Review From System Design to Intervention Outcomes</a>
-    <p class="news-card-summary">Scoping review examines design, assessment, and outcomes of generative AI chatbots adapted for motivational interviewing in health behavior change.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03205-0">Physician involvement and research quality in chest X-ray foundation models</a>
-    <p class="news-card-summary">Peer-reviewed study examines how physician involvement affects research quality in chest X-ray foundation models used in clinical settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03208-x">Why responsible AI needs regional networks in low-resource health systems</a>
-    <p class="news-card-summary">Published research argues for regional networks to support responsible artificial intelligence deployment in health systems with limited resources.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 20, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42763426?fc=20260609215449&amp;ff=20260920090402&amp;v=2.20.1">An Artificial Intelligence-Based Preoperative Planning System for High Tibial Osteotomy Significantly Enhances Planning Speed With Comparable Accuracy to Surgeons</a>
-    <p class="news-card-summary">An AI system for preoperative planning of high tibial osteotomy achieved surgeon-comparable measurement accuracy while substantially reducing planning time.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42762281?fc=20260609215449&amp;ff=20260920005636&amp;v=2.20.1">AI-based smoke removal in robotic urooncologic surgery: a clinical pilot study</a>
-    <p class="news-card-summary">Deep learning model for real-time surgical smoke removal in robot-assisted cancer surgery improved visibility and maintained spatial consistency during tumor resection procedures.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 19, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42761733?fc=20260609215449&amp;ff=20260920005636&amp;v=2.20.1">Multicenter AI- versus expert-assisted RECIST target lesion measurements in follow-up body CT of patients with cancer</a>
-    <p class="news-card-summary">AI assistance reduced reading time and improved consistency in tumor response assessment on follow-up CT scans despite minor increases in measurement variability at the lesion level.</p>
   </div>
 </div>
 </div>

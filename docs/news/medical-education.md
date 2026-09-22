@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 22, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -26,6 +26,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769016?fc=20260609215449&amp;ff=20260922092604&amp;v=2.20.1">Responsible Artificial Intelligence Integration in Medical Student Education in Somalia and Low-Resource Settings: A Context-Sensitive Implementation Framework</a>
     <p class="news-card-summary">Framework for responsible integration of generative AI and large language models in health professions education in Somalia and other low-resource settings, addressing gaps between rapid adoption and institutional governance.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769815?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">Metaverse and Immersive Technologies: Redefining the Future of Healthcare: A Scoping Review</a>
+    <p class="news-card-summary">Scoping review found the metaverse and immersive technologies are moving from concept to clinical practice in healthcare delivery and education, with measurable outcomes when integrated into existing health systems.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769517?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">Performance of ChatGPT-5 on the official sample questions for the Fellowship of the Royal College of Anaesthetists Final Written examination</a>
+    <p class="news-card-summary">ChatGPT-5 performance on official Fellowship of the Royal College of Anaesthetists Final Written examination questions was evaluated to establish baseline performance in high-stakes anaesthesia certification.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -110,20 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756308?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">The Impact of an AI-Enhanced Teaching Model on Cultivating Clinical Reasoning in Ultrasound Diagnosis among Medical Students</a>
     <p class="news-card-summary">AI-enhanced ultrasound teaching model improved clinical reasoning and student satisfaction compared to traditional approaches.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756282?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">PeruMedQA: Benchmarking Large Language Models (LLMs) on Peruvian Medical Exams-Dataset Construction and Evaluation</a>
-    <p class="news-card-summary">New medical exam benchmark dataset from Peru; medgemma-27b-text-it model showed strongest performance for Spanish-language medical knowledge evaluation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756279?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Does Artificial Intelligence Belong in Medical Admissions Screening? A Student-Informed Commentary on Risks, Benefits, and Hybrid Use</a>
-    <p class="news-card-summary">Student-informed commentary on AI use in medical admissions screening, weighing benefits of reduced application burden against risks of bias and equity concerns.</p>
   </div>
 </div>
 </div>
