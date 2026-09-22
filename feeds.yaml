@@ -67,13 +67,16 @@ llm:
   #     Opus 5.5 also carries Fable-class biology classifiers, a refusal
   #     risk on medical payloads (content_watch already needed a refusal
   #     chain on Sonnet 5, issue #33). Revisit against Sonnet 5.5.
-  #   - Fable 5.1 digest narrative: Opus 5.5 is 40% of the per-token
-  #     price and leads Anthropic's own table on every row, but that table
-  #     covers coding, agents and knowledge work. LiveBench, independent,
-  #     has Fable 5.1 ahead on Language (89.5 against 86.3) and
+  #   - Digest narrative, the one switch: Opus 5.5 is 40% of Fable 5.1's
+  #     per-token price and leads Anthropic's own table on every row, but
+  #     that table covers coding, agents and knowledge work, while
+  #     LiveBench has Fable 5.1 ahead on Language (89.5 against 86.3) and
   #     instruction following (73.0 against 65.7), which are what a
-  #     320-word narrative contract tests, and about $4 a year is at
-  #     stake. Switch only on a blind side-by-side of the actual prose.
+  #     320-word contract tests. So it was settled on the prose: a blind
+  #     side-by-side over the W38 highlights (model-compare.yml, task
+  #     narrative) and the owner preferred the Opus 5.5 draft without
+  #     knowing which was which. Both passed the validator first time;
+  #     that week cost about $0.08 on Opus 5.5 against $0.20 on Fable.
   #   - Opus 5 fallbacks: kept deliberately; see the notes beside them.
   # RE-RUN THIS REVIEW when Sonnet 5.5 or Haiku 5.5 ships. Before any
   # swap: verify the id, price, default thinking and knowledge cutoff
@@ -195,18 +198,28 @@ llm:
     # cutoff, so the swap follows the July 25 logic that moved the
     # fallback. The July 4 prose-density judgement was made on Fable 5;
     # if the narrative's register drifts, this is the line to revisit.
+    # Primary moved from claude-fable-5-1 to claude-opus-5-5 on 2026-09-22
+    # (owner approved): the owner preferred the Opus 5.5 draft in a blind
+    # side-by-side over the W38 highlights, which answers the July 4
+    # concern about Opus expounding on the prose itself (239 words against
+    # Fable's 254). It is 40% of Fable's price per token. Opus 5.5 thinking
+    # is adaptive and always on, so the 8000 ceiling stays; the comparison
+    # draft used about 1,500 output tokens. If the register drifts, the
+    # same harness re-runs the comparison against Fable in one dispatch.
     digest_narrative:
       provider: anthropic
-      model: claude-fable-5-1
-      # Kept on claude-opus-5 at the 2026-09-22 review: it is the model
-      # Anthropic itself routes Fable 5.1's biology refusals to, whereas
-      # Opus 5.5 shares Fable's classifiers. Do not upgrade this slot.
+      model: claude-opus-5-5
+      # Kept on claude-opus-5 at the 2026-09-22 review: Anthropic itself
+      # routes biology refusals from Opus 5.5 (and Fable 5.1) to Opus 5,
+      # whereas another 5.5 or Fable model would share the classifier
+      # being escaped. Do not upgrade this slot.
       fallback_model: claude-opus-5
       max_tokens: 8000
       # List prices for the cost line in the verification block (USD per
-      # million tokens, verified against the live pricing docs 2026-07-04).
-      usd_per_m_input: 10
-      usd_per_m_output: 50
+      # million tokens, claude-opus-5-5, verified against the platform
+      # models overview 2026-09-22).
+      usd_per_m_input: 4
+      usd_per_m_output: 20
   # Section briefs: one short narrative per news category page, regenerated
   # only when that page's item set changes. Model wiring lives in
   # llm.tasks.section_briefs (moved off the retired GitHub Models free
