@@ -204,6 +204,119 @@ def display_title_of(record: dict) -> str:
     return record.get("display_title") or record.get("title", "")
 
 
+# Name-and-number grounding for curator rewrites (owner approved 2026-09-22).
+# The curator restates titles and writes summaries, and a model whose
+# knowledge predates a release "corrects" a name it does not recognize:
+# Haiku 4.5, whose knowledge ends in February 2025, rewrote "Claude Opus
+# 5.5" as "Claude Opus 3.5" in both the display title and the summary of a
+# published video card, while three other Opus 5.5 items that day came
+# through intact. Intermittent, so spot checks look clean. It recurs at
+# every release the curator's knowledge predates, whatever the model.
+#
+# Deliberately narrow: a capitalized name followed by a number is flagged
+# only when the source names the same thing with a different number. A name
+# the source never mentions is out of scope (that is invention, not a
+# rename, and flagging it would reject ordinary summaries). Years are
+# skipped because they are dates, not versions. A rejected rewrite falls
+# back to text the source itself said, so a wrong rejection costs a less
+# tidy card, never a wrong one; NAME_GUARD_CONTROLS below makes both kinds
+# of error loud at import.
+# Any hyphen or dash, since vendors write "GPT‑5.6" with U+2011. A number
+# followed directly by a letter is a quantity or part of a compound name
+# ("2.4T", "27B", "Paper2Agent"), not a version, so it is not captured.
+_HYPHENS = "\\-\u2010-\u2015\u2212"
+_NAMED_NUMBER = re.compile(
+    rf"\b([A-Z][A-Za-z]*)([ {_HYPHENS}]?)(\d+(?:\.\d+)*)(?!\.?\d)(?![A-Za-z])")
+_GUARD_STOPWORDS = frozenset({
+    "a", "an", "the", "in", "on", "at", "by", "for", "of", "to", "and", "or",
+    "with", "from", "over", "under", "about", "after", "before", "since",
+    "between", "among", "across", "around", "nearly", "only", "some",
+    "these", "those", "its", "their", "all", "every", "each", "just",
+    "roughly", "more", "than", "up", "into", "as", "is", "are", "was",
+    "were", "has", "have", "had"})
+
+
+def _squash(text: str) -> str:
+    return re.sub(rf"[\s{_HYPHENS}]+", "", text.lower())
+
+
+def ungrounded_names(text: str, source: str) -> list[str]:
+    """Name-number pairs in `text` that the source gives a different number
+    for, e.g. "Opus 3.5" against a source that says "Opus 5.5"."""
+    flagged = []
+    squashed = _squash(source)
+    for match in _NAMED_NUMBER.finditer(text or ""):
+        name, sep, number = match.groups()
+        if name.lower() in _GUARD_STOPWORDS:
+            continue
+        if len(name) == 1 and sep:
+            continue  # "A 27" is an article; "K3.1" is a name
+        if re.fullmatch(r"(19|20)\d\d", number):
+            continue  # a year, not a version
+        # Case-insensitive, because video titles shout ("OPUS 5.5"), but the
+        # occurrence must start with a capital: "image editor" is a word,
+        # not the name "Image".
+        named = any(
+            m.group(0)[0].isupper() for m in re.finditer(
+                rf"(?<![A-Za-z]){re.escape(name)}(?![a-z])", source,
+                re.IGNORECASE))
+        if not named:
+            continue  # the source never names it: outside this guard
+        if _squash(name + number) not in squashed:
+            flagged.append(match.group(0))
+    return flagged
+
+
+# (rewrite, source, expected flags). The first two are the 2026-09-22 card.
+NAME_GUARD_CONTROLS = [
+    ("Hands-on testing of Claude Opus 3.5",
+     "Claude Opus 5.5 Is INSANE, Hands-On With the BEST Model Yet!",
+     ["Opus 3.5"]),
+    (("Hands-on testing and technical evaluation of Anthropic's Claude Opus "
+      "3.5 model across multiple capability areas."),
+     "Claude Opus 5.5 Is INSANE, Hands-On With the BEST Model Yet!",
+     ["Opus 3.5"]),
+    ("Claude Opus 5.5 benchmarking and performance testing",
+     "Claude Opus 5.5 IS THE Greatest AI Model EVER! Cheaper, Fast, & Powerful!",
+     []),
+    ("Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others",
+     "HUGE Opus 5.5 LEAKS + Cheaper? Qwen 4, Kimi K3.1, MiniMax M3.1 & Step 5",
+     []),
+    ("A GPT-4 hands-on review", "GPT-5 hands-on: is it worth it?", ["GPT-4"]),
+    ("Qwen3 family update", "Qwen 3 release notes and benchmarks", []),
+    ("The 3 new models tested", "Three new models tested", []),
+    ("A Phase 2 trial of AI triage", "A Phase 3 trial of AI triage", ["Phase 2"]),
+    ("Compared with Gemini 3.1", "Claude Opus 5.5 tested", []),
+    ("Scopus AI 2026 update", "Scopus AI update for 2026", []),
+    # False positives found by replaying the guard over the ledger:
+    ("OpenAI cuts GPT-5.6 prices", "Price-performance with GPT‑5.6", []),
+    ("Qwen3.8-Max 2.4T parameter model", "Qwen3.8-2.4T-A95B (aka Qwen3.8-Max)",
+     []),
+    ("Paper2Agent turns papers into agents",
+     "Why Read a Research Paper When You Can Turn It Into an AI Agent?", []),
+    ("Qwen Image 2.1 review", "New best local AI image editor is here", []),
+]
+for _rewrite, _source, _want in NAME_GUARD_CONTROLS:
+    _got = ungrounded_names(_rewrite, _source)
+    assert _got == _want, (
+        f"name guard control failed: {_rewrite!r} against {_source!r} "
+        f"flagged {_got}, expected {_want}")
+
+# Rejections this run, for the verification block.
+NAME_GUARD_REJECTS: list = []
+
+
+def guard_rewrite(text: str, source: str, fallback: str, kind: str,
+                  title: str) -> str:
+    """Return the curator's text, or `fallback` when it renames something
+    the source names differently. Logged for the verification block."""
+    flags = ungrounded_names(text, source)
+    if not flags:
+        return text
+    NAME_GUARD_REJECTS.append({"field": kind, "title": title, "flags": flags})
+    return fallback
+
+
 def remove_dashes(text: str) -> str:
     """Site style rule: no em dashes in rendered copy (CLAUDE.md)."""
     text = re.sub(r"(?<=\d)[–—](?=\d)", "-", text)  # numeric ranges: 2024-2025
@@ -823,6 +936,11 @@ def update_section_briefs(config: dict, categories: dict, ledger: dict,
                 raise ValueError(f"word count {words} out of range")
             if "\n\n" not in text or "Also this week:" not in text:
                 raise ValueError("brief missing the two-paragraph structure")
+            renamed = ungrounded_names(text, items_block)
+            if renamed:
+                raise ValueError(
+                    "brief gives a different version number than its "
+                    f"sources: {', '.join(renamed)}")
             escaped = html.escape(text)
             linked = re.sub(
                 r"\[(\d+)\]",
@@ -1389,9 +1507,11 @@ def curate_llm(fresh: list, config: dict, verbose: bool):
     for decision in news_decisions:
         item = by_id[decision["id"]]
         item.category = decision["category"]
-        item.summary = post_process_summary(
-            decision["summary"], item.summary, llm_cfg["summary_word_cap"]
-        )
+        source_text = f"{item.title} {item.summary}"
+        item.summary = guard_rewrite(
+            post_process_summary(decision["summary"], item.summary,
+                                 llm_cfg["summary_word_cap"]),
+            source_text, item.summary, "summary", item.title)
         item.score = float(decision["importance"])
         # Topics are presentation-only and fail soft: an unknown or
         # missing tag lands in Other, never affects the keep.
@@ -1484,11 +1604,14 @@ def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
         # Curator-written description shown under the card; when the model
         # returns nothing usable, show no description rather than the raw
         # feed description snippet.
-        item.summary = post_process_summary(
-            decision["summary"], "", llm_cfg["summary_word_cap"]
-        )
-        item.display_title = post_process_display_title(
-            decision.get("display_title", ""))
+        source_text = f"{item.title} {item.summary}"
+        item.summary = guard_rewrite(
+            post_process_summary(decision["summary"], "",
+                                 llm_cfg["summary_word_cap"]),
+            source_text, "", "summary", item.title)
+        item.display_title = guard_rewrite(
+            post_process_display_title(decision.get("display_title", "")),
+            source_text, "", "display_title", item.title)
         kept_items.append(item)
         if decision["is_cfp"]:
             cfp_items.append(item)
@@ -2023,6 +2146,11 @@ def generate_digest_narrative(highlights: list[dict], window_label: str,
                 raise ValueError(f"word count {words} out of range")
             if not 1 <= len(paragraphs) <= 4:
                 raise ValueError(f"{len(paragraphs)} paragraphs")
+            renamed = ungrounded_names(text, "\n\n".join(blocks))
+            if renamed:
+                raise ValueError(
+                    "gives a different version number than the items "
+                    f"say: {', '.join(renamed)}")
         except ValueError as exc:
             last_failure = f"rejected ({exc})"
             if verbose:
@@ -2891,6 +3019,10 @@ def main() -> int:
     print(f"episodes window  : {len(episodes_window)}, fresh after dedupe: "
           f"{len(fresh_episodes)}, kept: {len(kept_episodes)}")
     print(f"cfp flags        : {cfp_count} appended to data/conference_flags.md")
+    print(f"name guard       : {len(NAME_GUARD_REJECTS)} curator rewrite(s) "
+          "rejected for renaming a versioned name")
+    for r in NAME_GUARD_REJECTS:
+        print(f"  {r['field']}: {r['title'][:60]} | {', '.join(r['flags'])}")
     all_fresh = fresh + fresh_videos + fresh_episodes
     dropped_fresh = [i for i in all_fresh if id(i) not in kept_set]
     with_reason = sum(1 for i in dropped_fresh if i.drop_reason)
