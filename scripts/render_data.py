@@ -61,6 +61,18 @@ PROMPT_AUDIENCE_LABELS = {
     "both": "Faculty and students",
 }
 
+# Chip text for the prompt library chooser (owner approved 2026-09-23):
+# short, sentence case, one per PROMPT_CATEGORY_LABELS key (checked at
+# render time), since the section headings are too long for a pill.
+PROMPT_CATEGORY_CHIPS = {
+    "research": "Research",
+    "mcq_generation": "Write MCQs",
+    "mcq_vetting": "Review MCQs",
+    "data_analysis": "Analyze data",
+    "content_generation": "Make teaching content",
+    "study_strategy": "Study",
+}
+
 
 def _long_date(value) -> str:
     """A checked date as readers write it (September 22, 2026), not ISO."""
@@ -1020,7 +1032,26 @@ def _render_prompts(config, resource_groups: dict[str, list]) -> str:
     if len(set(slugs)) != len(slugs):
         raise ValueError("render_data hook: duplicate prompt anchor slugs")
 
-    lines = ["## The library at a glance", ""]
+    if set(PROMPT_CATEGORY_CHIPS) != set(PROMPT_CATEGORY_LABELS):
+        raise ValueError("render_data hook: PROMPT_CATEGORY_CHIPS and "
+                         "PROMPT_CATEGORY_LABELS must name the same categories")
+    for entry in prompts:
+        if entry["audience"] not in PROMPT_AUDIENCE_LABELS:
+            raise ValueError(f"render_data hook: unknown prompt audience "
+                             f"{entry['audience']!r} on {entry['title']!r}")
+    # The chooser (docs/javascripts/prompt-chooser.js) filters the table
+    # below and the prompt sections by the data attributes on each prompt
+    # heading; this island only carries chip labels and order. Without
+    # JavaScript the host stays hidden and the page is unchanged.
+    chooser = json.dumps({
+        "categories": [[key, PROMPT_CATEGORY_CHIPS[key], key.replace("_", "-")]
+                       for key in PROMPT_CATEGORY_LABELS if key in by_category],
+        "audiences": [["faculty", "Faculty"], ["students", "Students"]],
+    })
+    lines = ["## The library at a glance", "",
+             '<div class="tool-chooser prompt-chooser" id="prompt-chooser" hidden></div>',
+             f'<script type="application/json" id="prompt-chooser-data">{chooser}</script>',
+             ""]
     lines.append("| Prompt | For | Status | What it does |")
     lines.append("| --- | --- | --- | --- |")
     for category, label in PROMPT_CATEGORY_LABELS.items():
@@ -1055,7 +1086,8 @@ def _render_prompts(config, resource_groups: dict[str, list]) -> str:
             slug = _prompt_slug(entry["title"])
             lines.append(
                 f"### {entry['title']} {badge} {audience} "
-                f"{{: #{slug} data-toc-label=\"{entry['title']}\" }}"
+                f"{{: #{slug} data-toc-label=\"{entry['title']}\" "
+                f"data-audience=\"{entry['audience']}\" data-category=\"{category}\" }}"
             )
             lines.append("")
             if entry.get("notes"):

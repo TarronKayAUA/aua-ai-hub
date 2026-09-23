@@ -83,6 +83,7 @@ extra_javascript:
   - javascripts/listen.js
   - javascripts/next-token.js
   - javascripts/tools-chooser.js
+  - javascripts/prompt-chooser.js
 
 plugins:
   # Material's default separator splits only on whitespace and hyphens, which
