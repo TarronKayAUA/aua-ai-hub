@@ -40,6 +40,7 @@ SKILLS_MARKER = "<!-- render:skills -->"
 COMMITTEE_MARKER = "<!-- render:committee -->"
 HARDWARE_ESTIMATOR_MARKER = "<!-- render:hardware-estimator -->"
 NEXT_TOKEN_MARKER = "<!-- render:next-token-demo -->"
+TOOL_CHOOSER_MARKER = "<!-- render:tool-chooser -->"
 DIGEST_PAGE_RE = re.compile(r"news/archive/(\d{4})-w(\d{2})\.md")
 
 PROMPT_CATEGORY_LABELS = {
@@ -176,6 +177,17 @@ STATUS_LABELS = {
 # Standings worth calling out on a collapsed category bar; listed is the
 # unmarked default and stays silent.
 STATUS_EXCEPTIONS = ("licensed", "reviewed", "caution", "restricted")
+
+# Short meanings for the task chooser's standings line, worded from the
+# "How to read the statuses" legend on docs/tools/index.md; order is the
+# order a mixed line lists them in.
+STATUS_SHORT = {
+    "licensed": "procured by the university",
+    "reviewed": "examined by the AI Committee; see the note on the card",
+    "caution": "read the note on the card before using it",
+    "restricted": "found unsuitable for institutional use",
+    "listed": "in the directory, not an endorsement",
+}
 
 FORMAT_LABELS = {
     "in_person": "In person",
@@ -420,6 +432,135 @@ def _card_note(note: str) -> str:
     return text
 
 
+def _tool_anchor(name: str) -> str:
+    """Stable card id, e.g. "tool-gemini-notebook". The task chooser links
+    to cards by it, and other pages may. Renaming a tool changes its
+    anchor; duplicates fail the build in _render_tools."""
+    return "tool-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+
+
+def _join_names(names: list[str]) -> str:
+    if len(names) <= 1:
+        return "".join(names)
+    if len(names) == 2:
+        return f"{names[0]} and {names[1]}"
+    return ", ".join(names[:-1]) + f", and {names[-1]}"
+
+
+def _tool_standing_sentence(group: list[dict]) -> str:
+    """One line stating the governance standing of a set of tools, e.g.
+    "All 7 are Listed: in the directory, not an endorsement." Every set of
+    chooser results carries one, so the non-endorsement point travels with
+    the results rather than sitting only at the top of the page."""
+    counts: dict[str, int] = {}
+    for tool in group:
+        counts[tool["governance_status"]] = counts.get(tool["governance_status"], 0) + 1
+    if len(counts) == 1:
+        standing = next(iter(counts))
+        lead = f"{group[0]['name']} is" if len(group) == 1 else f"All {len(group)} are"
+        return f"{lead} {STATUS_LABELS[standing][0]}: {STATUS_SHORT[standing]}."
+    parts = [f"{counts[s]} {STATUS_LABELS[s][0]} ({STATUS_SHORT[s]})"
+             for s in STATUS_SHORT if s in counts]
+    return "Standings: " + _join_names(parts) + "."
+
+
+def _render_tool_chooser(config) -> str:
+    """The Tool Directory's task chooser (owner approved 2026-09-23): a
+    build-time task index that is both the no-JavaScript fallback and the
+    data docs/javascripts/tools-chooser.js turns into chips. Tasks come from
+    data/tool_tasks.yaml; membership is derived from data/tools.yaml (a
+    task's category or status, plus each tool's optional `also_for`), so a
+    new tool joins the chooser with no second edit. Markdown inside
+    md_in_html, so MkDocs rewrites and checks the guide and card links. The
+    index carries data-search-exclude, so site search indexes each tool
+    once, in its category."""
+    tools = _load(_data_dir(config) / "tools.yaml")
+    tasks = _load(_data_dir(config) / "tool_tasks.yaml")
+    task_ids = [t["id"] for t in tasks]
+    if len(set(task_ids)) != len(task_ids):
+        raise ValueError("render_data hook: duplicate task id in tool_tasks.yaml")
+    for t in tasks:
+        if t.get("from_category") and t["from_category"] not in CATEGORY_LABELS:
+            raise ValueError(f"render_data hook: task {t['id']!r} names unknown "
+                             f"category {t['from_category']!r}")
+        if t.get("from_status") and t["from_status"] not in STATUS_LABELS:
+            raise ValueError(f"render_data hook: task {t['id']!r} names unknown "
+                             f"status {t['from_status']!r}")
+        if t.get("group", "task") not in ("task", "data"):
+            raise ValueError(f"render_data hook: task {t['id']!r} has unknown group")
+    members: dict[str, list] = {tid: [] for tid in task_ids}
+    for tool in tools:
+        extra = tool.get("also_for") or []
+        for tid in extra:
+            if tid not in members:
+                raise ValueError(f"render_data hook: {tool['name']!r} also_for "
+                                 f"unknown task {tid!r}")
+        for t in tasks:
+            if (t.get("from_category") == tool["category"]
+                    or t.get("from_status") == tool["governance_status"]
+                    or t["id"] in extra):
+                members[t["id"]].append(tool)
+    empty = [tid for tid, group in members.items() if not group]
+    if empty:
+        raise ValueError(f"render_data hook: tool chooser tasks with no tools: {empty}")
+    in_any = {tool["name"] for group in members.values() for tool in group}
+    orphans = sorted({tool["name"] for tool in tools} - in_any)
+    if orphans:
+        raise ValueError(f"render_data hook: tools in no chooser task: {orphans}")
+    institutional = sorted((tool["name"] for tool in tools
+                            if tool["cost"] == "institutional"), key=str.lower)
+
+    lines = [
+        '<div class="tool-chooser" id="tool-chooser" hidden></div>',
+        "",
+        # A <section>, not a <div>: Material's search parser tracks excluded
+        # elements by tag name alone, so the first inner <div> to close
+        # would end the exclusion of an outer <div> (measured 2026-09-23:
+        # only the first task was excluded). The attribute also needs a
+        # value, or md_in_html drops it.
+        '<section class="tool-task-index" id="tool-task-index" data-search-exclude="" markdown>',
+        "",
+        ("Each task lists its tools; the names link to their cards in the "
+         "directory below."),
+        "",
+    ]
+    for t in tasks:
+        group = sorted(members[t["id"]], key=lambda x: x["name"].lower())
+        home = ""
+        if t.get("from_category"):
+            home = re.sub(r"[^a-z0-9]+", "-",
+                          CATEGORY_LABELS[t["from_category"]].lower()).strip("-")
+        attrs = (f'data-task="{html.escape(t["id"])}" '
+                 f'data-label="{html.escape(t["label"])}" '
+                 f'data-heading="{html.escape(t["heading"])}" '
+                 f'data-group="{t.get("group", "task")}" data-home="{home}"')
+        links = ", ".join(f"[{x['name']}](#{_tool_anchor(x['name'])})" for x in group)
+        guide = " ".join((t.get("guide") or "").split())
+        standing = _tool_standing_sentence(group)
+        if t.get("from_status") == "licensed" and institutional:
+            standing += (f" {len(institutional)} more carry the Institutional cost "
+                         "label, meaning they need an organization's license: "
+                         f"{_join_names(institutional)}.")
+        lines += [f'<div class="tt-item" {attrs} markdown>', "",
+                  f"**{t['label']}** ({len(group)}): {links}", "{ .tt-tools }", ""]
+        if guide:
+            lines += [guide, "{ .tt-guide }", ""]
+        lines += [standing, "{ .tt-standing }", "", "</div>", ""]
+    lines += ["</section>", ""]
+    out = "\n".join(lines)
+    if "\u2014" in out:
+        raise ValueError("render_data hook: em dash in the tool chooser")
+
+    print("render_data: tool chooser verification")
+    print(f"  tasks read      : {len(tasks)}")
+    for t in tasks:
+        source = t.get("from_category") or t.get("from_status") or "also_for only"
+        print(f"    {t['id']:<14}: {len(members[t['id']]):>2} ({source})")
+    print(f"  tools with also_for: {sum(1 for x in tools if x.get('also_for'))}")
+    print(f"  tools in a task : {len(in_any)} of {len(tools)} (cross-check ok)")
+    return out
+
+
 def _render_tools(config) -> str:
     tools = _load(_data_dir(config) / "tools.yaml")
 
@@ -440,6 +581,7 @@ def _render_tools(config) -> str:
     notes_shown = 0
     per_category_counts = {}
     standing_counts: dict[str, int] = {}
+    anchors: set[str] = set()
     for category, label in CATEGORY_LABELS.items():
         group = by_category.get(category, [])
         if not group:
@@ -485,8 +627,13 @@ def _render_tools(config) -> str:
             checked_html = (
                 f'  <p class="tool-card-checked">Checked {_long_date(checked)}</p>\n'
                 if checked else "")
+            anchor = _tool_anchor(tool["name"])
+            if anchor in anchors:
+                raise ValueError(f"render_data hook: two tools share the card "
+                                 f"anchor {anchor!r}")
+            anchors.add(anchor)
             body.append(
-                '<div class="tool-card">\n'
+                f'<div class="tool-card" id="{anchor}">\n'
                 '  <div class="tool-card-head">'
                 f'<a href="{tool["url"]}">{_favicon_img(tool["url"])}'
                 f'{tool["name"]}</a>{badge}</div>\n'
@@ -1509,6 +1656,12 @@ def on_page_markdown(markdown, page, config, files):
                     f"render_data hook: tools/index.md is missing the "
                     f"{marker} marker"
                 )
+        if TOOL_CHOOSER_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: tools/index.md is missing the "
+                f"{TOOL_CHOOSER_MARKER} marker"
+            )
+        markdown = markdown.replace(TOOL_CHOOSER_MARKER, _render_tool_chooser(config))
         markdown = markdown.replace(TOOLS_MARKER, _render_tools(config))
         return markdown.replace(OPEN_MODELS_MARKER, _render_open_models(config))
     if src == "tools/agents.md":

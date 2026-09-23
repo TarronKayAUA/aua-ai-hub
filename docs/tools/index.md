@@ -8,6 +8,14 @@ A directory of artificial intelligence (AI) tools relevant to teaching, learning
 
 <img class="section-banner" src="../assets/section-tools.svg" alt="">
 
+## Find tools by task
+
+<!-- render:tool-chooser -->
+
+For a whole task walked through end to end, guardrails included, the [playbooks](../playbooks/index.md) take one at a time, and the [prompt library](../prompts/index.md) holds the templates they draw on.
+
+## Reading the directory
+
 !!! note "A listing is not an endorsement"
     Statuses describe where the institution actually stands with a tool, not a quality verdict. Committee review of any tool can be requested through the [review process](../governance/review-process.md), and the data rules below apply everywhere, whatever a tool's status.
 
@@ -20,23 +28,9 @@ A directory of artificial intelligence (AI) tools relevant to teaching, learning
     | <span class="badge badge-caution">Use with caution</span> | A specific concern is documented in the entry's note; read it before using the tool. |
     | <span class="badge badge-restricted">Restricted</span> | Reviewed and found unsuitable for institutional use. |
 
-Where an entry carries a specific caution or access condition, it is printed on the card under the description. The small label beside each vendor shows cost: free, freemium (a free tier with paid upgrades), paid, institutional (needs an organization's license), or AUA-licensed (provided by AUA). Expand a category to browse it.
+Where an entry carries a specific caution or access condition, it is printed on the card under the description. The small label beside each vendor shows cost: free, freemium (a free tier with paid upgrades), paid, institutional (needs an organization's license), or AUA-licensed (provided by AUA). Below the chooser, the whole directory is grouped by category; expand one to browse it.
 
 Whatever a tool's status, two rules always apply: never enter protected health information (PHI), and never enter student records covered by the Family Educational Rights and Privacy Act (FERPA). See [PHI and FERPA considerations](../basics/glossary.md#phi-and-ferpa-considerations) in the glossary. The [AI Responsible Use Policy](../governance/policy.md) also keeps confidential personnel information, proprietary information, and unpublished research data out of publicly available tools unless a tool has been approved for that data.
-
-## Not sure where to start?
-
-The directory catalogs; the guides recommend. Route by what you need:
-
-- **A general assistant:** for questions and drafting, browse [Assistants](#assistants), and [Choosing Your Interface](interfaces.md) explains which kind of tool fits which work.
-- **Study tools:** [Medical Learning](#medical-learning), with the study workflow routed on the [students page](../students.md).
-- **Literature and research:** [AI for Research](research.md) maps tools to each stage of a project, starting with Scopus with AI, licensed through the AUA Library.
-- **Slides and diagrams:** [Presentations and Design](#presentations-and-design) covers decks, posters, and text-to-diagram tools.
-- **Data stays on your machine:** [Local Models](#local-models), with [Running Models Locally](local.md) as the walkthrough and [Hardware for Local AI](hardware.md) for sizing the machine.
-- **A task end to end:** The [playbooks](../playbooks/index.md) walk one task at a time, guardrails included, and the [prompt library](../prompts/index.md) holds the reusable templates they draw on.
-- **Delegate a task to an agent:** [AI Agents](agents.md) is the field guide; [Your First Agent Session](first-session.md) runs one in 20 minutes on a folder that cannot be hurt.
-- **Documents, decks, and spreadsheets:** In Claude, four document [skills](skills.md) come built in; the same page shows how to switch file creation on if they are not working, and why skills from unknown authors should be treated as software, not advice.
-- **Your own lectures and papers:** [Gemini Notebook](gemini-notebook.md) answers from what you upload, with citations; [Standing Setups](standing-setups.md) makes any assistant remember your course.
 
 <!-- render:tools -->
 

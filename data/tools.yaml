@@ -10,6 +10,14 @@
 # restricted = reviewed and found unsuitable.
 # Only the owner changes governance_status.
 #
+# Task chooser key (optional, per entry, added 2026-09-23): `also_for:` lists
+# extra task ids from data/tool_tasks.yaml. Every tool already joins one
+# task through its category; cross-list a tool under another task only
+# where its own blurb or status note, or an existing guide page on this
+# site, names that task. Deliberately not cross-listed: services carrying
+# a data-handling caution (the China-operated assistants) under tasks that
+# invite uploading your own files. The render hook fails on an unknown id.
+#
 # Content-watch keys (optional, per entry): the weekly content-watch
 # workflow verifies entries against their pages and bumps last_reviewed
 # when unchanged. verify_url points it at a fetchable marketing page when
@@ -63,6 +71,7 @@
 - name: Microsoft 365 Copilot
   vendor: Microsoft
   category: assistants
+  also_for: [slides]
   url: https://www.microsoft.com/en-us/microsoft-365-copilot
   cost: institutional
   governance_status: listed
@@ -158,6 +167,7 @@
 - name: Cowork
   vendor: Anthropic
   category: agents
+  also_for: [own_documents]
   url: https://claude.com/product/cowork
   cost: paid
   governance_status: listed
@@ -190,6 +200,7 @@
 - name: ChatGPT Work
   vendor: OpenAI
   category: agents
+  also_for: [slides]
   url: https://openai.com/chatgpt-work/
   cost: freemium
   governance_status: listed
@@ -214,6 +225,7 @@
   # disappearance, not a new statement.
   vendor: Manus (Butterfly Effect)
   category: agents
+  also_for: [slides]
   url: https://manus.im
   cost: freemium
   governance_status: listed
@@ -307,6 +319,7 @@
 - name: Gemini Notebook
   vendor: Google
   category: research
+  also_for: [own_documents, study]
   url: https://notebook.google/
   verify_url: https://support.google.com/gemininotebook/
   cost: freemium
@@ -488,6 +501,7 @@
 - name: Whisper
   vendor: OpenAI
   category: meetings_transcription
+  also_for: [local]
   url: https://github.com/openai/whisper
   cost: free
   governance_status: listed
@@ -686,6 +700,7 @@
 - name: Flow
   vendor: Google
   category: video_generation
+  also_for: [images]
   url: https://labs.google/fx/tools/flow
   cost: freemium
   governance_status: listed
@@ -817,6 +832,7 @@
 - name: SciSpace
   vendor: SciSpace
   category: research
+  also_for: [own_documents]
   url: https://scispace.com
   # scispace.com and the legacy typeset.io both serve empty
   # client-rendered shells to scripted fetches, and /about returns an
@@ -948,6 +964,7 @@
 - name: Napkin AI
   vendor: Napkin AI
   category: presentations_design
+  also_for: [images]
   url: https://www.napkin.ai
   cost: freemium
   governance_status: listed
@@ -992,6 +1009,7 @@
 - name: BioRender
   vendor: BioRender
   category: presentations_design
+  also_for: [images]
   url: https://www.biorender.com
   cost: freemium
   governance_status: listed

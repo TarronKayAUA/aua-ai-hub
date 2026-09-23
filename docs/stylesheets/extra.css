@@ -2099,3 +2099,301 @@
   font-size: 0.72rem;
   color: var(--md-default-fg-color--light);
 }
+
+/* === Tool Directory task chooser (owner approved 2026-09-23) ==============
+   docs/javascripts/tools-chooser.js over the task index render_data.py
+   builds from data/tool_tasks.yaml. Uses only Material's tokens and the
+   site's existing widget idiom (the estimator panels, pill chips), so both
+   schemes follow automatically. */
+
+/* The panel: same frame as the hardware estimator and token estimator. */
+.md-typeset .tool-chooser {
+  margin: 0.6rem 0 1.4rem;
+  padding: 0.8rem 1rem 0.9rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-left: 0.2rem solid var(--md-primary-fg-color);
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset .tc-fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.md-typeset .tc-legend {
+  padding: 0;
+  margin-bottom: 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.md-typeset .tc-subhead {
+  margin: 0.6rem 0 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--md-typeset-color);
+}
+
+.md-typeset .tc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* The radio sits under its pill: invisible, still focusable and still in
+   the accessibility tree, so arrow keys and screen readers work natively. */
+.md-typeset .tc-chip {
+  position: relative;
+  display: inline-flex;
+}
+
+.md-typeset .tc-chip input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.md-typeset .tc-chip label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 1.8rem;
+  padding: 0.1rem 0.65rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 1rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-color);
+  font-size: 0.72rem;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.md-typeset .tc-chip input:hover + label {
+  border-color: var(--md-primary-fg-color);
+}
+
+/* Focus ring in the link color: about 6.6:1 on white and 6:1 on slate,
+   where the amber accent would fall under the 3:1 a focus ring needs. */
+.md-typeset .tc-chip input:focus-visible + label {
+  outline: 2px solid var(--md-typeset-a-color);
+  outline-offset: 2px;
+}
+
+/* Chosen: filled, bold AND a check mark, so the state never rests on
+   color alone. The check is decorative; the radio announces "checked". */
+.md-typeset .tc-chip input:checked + label {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.md-typeset .tc-chip input:checked + label::before {
+  content: "\2713";
+  content: "\2713" / "";
+}
+
+.md-typeset .tc-count {
+  display: inline-block;
+  flex: none;
+  white-space: nowrap;
+  min-width: 1.2rem;
+  padding: 0 0.3rem;
+  border-radius: 0.6rem;
+  background: var(--md-default-fg-color--lightest);
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.md-typeset .tc-chip input:checked + label .tc-count {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.md-typeset .tc-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.md-typeset .tc-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem 1rem;
+}
+
+.md-typeset .tc-status {
+  margin: 0.6rem 0 0;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.md-typeset .tc-status:empty {
+  margin: 0;
+}
+
+.md-typeset .tc-clear,
+.md-typeset .tc-openall {
+  padding: 0.15rem 0.7rem;
+  border: 0.05rem solid var(--md-primary-fg-color);
+  border-radius: 0.3rem;
+  background: transparent;
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.md-typeset .tc-clear {
+  margin-top: 0.6rem;
+}
+
+.md-typeset .tc-clear:focus-visible,
+.md-typeset .tc-openall:focus-visible {
+  outline: 2px solid var(--md-typeset-a-color);
+  outline-offset: 2px;
+}
+
+.md-typeset .tc-idle {
+  margin: 0.7rem 0 0;
+  font-size: 0.74rem;
+}
+
+.md-typeset .tc-results {
+  margin-top: 0.6rem;
+  padding-top: 0.7rem;
+  border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h3.tc-results-heading,
+[data-md-color-scheme="slate"] .md-typeset h3.tc-results-heading {
+  margin: 0 0 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.md-typeset .tc-guide,
+.md-typeset .tc-standing {
+  margin: 0 0 0.4rem;
+  font-size: 0.76rem;
+}
+
+/* The standings line carries governance meaning, so it keeps full-strength
+   text: the site's grey (--md-default-fg-color--light) measured under
+   4.5:1 on the panel background (axe, 2026-09-23). Italic sets it apart. */
+.md-typeset .tc-standing {
+  font-style: italic;
+}
+
+.md-typeset .tc-results-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 1rem;
+}
+
+.md-typeset .tc-change {
+  font-size: 0.72rem;
+}
+
+.md-typeset .tc-results-heading {
+  scroll-margin-top: 7rem;
+}
+
+.md-typeset .tc-grid {
+  margin: 0.8rem 0 0.6rem;
+}
+
+.md-typeset .tc-also-heading {
+  margin: 1rem 0 0;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+/* Cross-listed card: says where it lives in the directory. */
+.md-typeset .tc-home {
+  margin: 0.45rem 0 0;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .tc-foot {
+  margin: 0.2rem 0 0;
+  font-size: 0.72rem;
+}
+
+/* A card reached by a #tool-... link: a brief outline so the eye lands. */
+.md-typeset .tool-card.tc-target {
+  outline: 2px solid var(--md-typeset-a-color);
+  outline-offset: 2px;
+  animation: tc-flash 2.4s ease-out 1 forwards;
+}
+
+@keyframes tc-flash {
+  0%, 60% { outline-color: var(--md-typeset-a-color); }
+  100% { outline-color: transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .tool-card.tc-target {
+    animation: none;
+  }
+}
+
+/* Anchored cards clear Material's sticky header when jumped to. */
+.md-typeset .tool-card[id] {
+  scroll-margin-top: 6rem;
+}
+
+/* No-JavaScript task index: compact, one paragraph per task. */
+.md-typeset .tool-task-index .tt-item {
+  margin: 0 0 0.7rem;
+}
+
+.md-typeset .tool-task-index .tt-item p {
+  margin: 0 0 0.2rem;
+  font-size: 0.76rem;
+}
+
+.md-typeset .tool-task-index .tt-standing {
+  color: var(--md-default-fg-color--light);
+}
+
+/* Phones: two even columns of pills instead of one ragged column, which
+   cut the chooser from about 590px to about 400px tall at 390px wide.
+   Labels may wrap to a second line inside their pill. */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .tool-chooser {
+    padding: 0.7rem 0.75rem 0.8rem;
+  }
+  .md-typeset .tc-chips {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.35rem;
+  }
+  .md-typeset .tc-chip {
+    display: flex;
+  }
+  .md-typeset .tc-chip label {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.15rem 0.55rem;
+    border-radius: 0.8rem;
+    font-size: 0.68rem;
+  }
+}

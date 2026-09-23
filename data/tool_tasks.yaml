@@ -1,0 +1,158 @@
+# The Tool Directory's task chooser (owner approved 2026-09-23).
+#
+# Owner-owned. One entry per chip; order here is chip order. Rendered by
+# scripts/render_data.py (marker <!-- render:tool-chooser --> in
+# docs/tools/index.md) into a task index that is both the no-JavaScript
+# fallback and the data docs/javascripts/tools-chooser.js reads.
+#
+# Membership is NOT listed here. It is derived from data/tools.yaml, so a
+# new tool joins the chooser the moment it has a category:
+#   from_category  every tool in that category belongs to this task
+#   from_status    every tool with that governance_status belongs to it
+#   (neither)      members come only from tools' `also_for` lists
+# A tool joins further tasks through its own optional `also_for:` list in
+# data/tools.yaml (rule for when to cross-list: see that file's header).
+#
+# Fields:
+#   id       short key used in the URL (?task=slides) and in also_for lists;
+#            changing one breaks shared links, so add rather than rename
+#   label    the chip text; short, sentence case, completes "What do you
+#            want to do?"
+#   heading  the results heading once the chip is chosen
+#   guide    one or two sentences of markdown shown above the results;
+#            links are relative to docs/tools/index.md, as in the page body.
+#            Do not put counts or tool lists here: the renderer states them
+#            from the data, so they cannot go stale.
+#   group    "task" (first row) or "data" (second row, "Or by data and
+#            licensing"); purely visual, one choice at a time either way
+#
+# The render hook refuses to build on an unknown category, status or task
+# id, a task with no tools, or a tool that belongs to no task.
+
+- id: ask
+  label: Ask and draft
+  heading: Ask questions and draft text
+  from_category: assistants
+  group: task
+  guide: >-
+    General chat assistants. [Choosing Your Interface](interfaces.md)
+    explains which kind of tool fits which work, and the [prompt
+    library](../prompts/index.md) holds reusable templates.
+
+- id: research
+  label: Research and literature
+  heading: Research and the literature
+  from_category: research
+  group: task
+  guide: >-
+    [AI for Research](research.md) maps these tools to each stage of a
+    project, starting with Scopus with AI, licensed through the AUA
+    Library. The [Reviewing the Literature](../playbooks/literature-reviews.md)
+    playbook walks one review end to end.
+
+- id: study
+  label: Study for exams
+  heading: Study for exams and courses
+  from_category: medical_learning
+  group: task
+  guide: >-
+    The [students page](../students.md) routes the study workflow, and
+    [Standing Setups](standing-setups.md) builds a question tutor from your
+    own lecture notes.
+
+- id: slides
+  label: Make slides or posters
+  heading: Make slides, posters, or diagrams
+  from_category: presentations_design
+  group: task
+  guide: >-
+    To improve an existing PowerPoint deck, start with tools that work on
+    the .pptx file itself. In Claude, four document [skills](skills.md)
+    also build decks and documents directly.
+
+- id: writing
+  label: Polish writing
+  heading: Polish my writing
+  from_category: writing_slides
+  group: task
+  guide: >-
+    Grammar, clarity, and language feedback. For feedback on student work,
+    see the [Feedback on Student Writing](../playbooks/writing-feedback.md)
+    playbook first.
+
+- id: transcribe
+  label: Transcribe audio
+  heading: Transcribe lectures or meetings
+  from_category: meetings_transcription
+  group: task
+  guide: >-
+    Whisper runs on your own computer, so the audio never leaves it. Otter
+    and Fathom transcribe and summarize video calls.
+
+- id: own_documents
+  label: Use my own documents
+  heading: Work from my own documents
+  group: task
+  guide: >-
+    [Gemini Notebook](gemini-notebook.md) answers from what you upload,
+    with citations, and [Standing Setups](standing-setups.md) makes any
+    assistant remember your course.
+
+- id: images
+  label: Make images
+  heading: Make images or figures
+  from_category: image_generation
+  group: task
+  guide: >-
+    Generated anatomy looks right and is often wrong. Read
+    [AI-Generated Images in Teaching](../playbooks/ai-images.md) before
+    using one in a session.
+
+- id: video
+  label: Make video
+  heading: Make video
+  from_category: video_generation
+  group: task
+  guide: >-
+    Avatar and voice features need documented consent before using any
+    real person's face or voice.
+
+- id: audio
+  label: Make audio
+  heading: Make or clean up audio
+  from_category: music_audio
+  group: task
+  guide: >-
+    Music, narration, and cleanup of recorded speech. Voice cloning needs
+    documented consent from the person whose voice is used.
+
+- id: agents
+  label: Hand off a task
+  heading: Hand off a multi-step task to an agent
+  from_category: agents
+  group: task
+  guide: >-
+    [AI Agents](agents.md) is the field guide, and [Your First Agent
+    Session](first-session.md) runs one in 20 minutes on a folder that
+    cannot be hurt.
+
+- id: local
+  label: Keep data on my computer
+  heading: Keep my data on my computer
+  from_category: local
+  group: data
+  guide: >-
+    These run on your own machine, so what you type or record stays there.
+    [Running Models Locally](local.md) is the walkthrough and [Hardware for
+    Local AI](hardware.md) sizes the machine. The two data rules still
+    apply.
+
+- id: licensed
+  label: See what AUA licenses
+  heading: What AUA licenses
+  from_status: licensed
+  group: data
+  guide: >-
+    Licensed means institutionally licensed or procured by the university;
+    this list grows as the university licenses more. The policy's data
+    rules apply to licensed tools as everywhere.
