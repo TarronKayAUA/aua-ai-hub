@@ -45,35 +45,32 @@ Real systems achieve roughly half to two thirds of that ceiling. Memory bandwidt
 
 Two consequences worth internalizing. First, **what separates VRAM from RAM is the width of the pipe, not the memory chips themselves**: a midrange graphics card moves data four to six times faster than excellent system memory. Second, **speed follows where the bytes live**. A model entirely in the fast tier runs at the fast tier's rate; every byte it reads from a slower tier is paid for at that tier's rate.
 
-<figure class="figure">
-<svg viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Memory tiers drawn as pipes of very different widths: video memory moves hundreds of gigabytes per second, system memory tens, a solid-state drive single digits. A model split across tiers pays each tier's rate for the bytes living there, and the tokens-per-second ceiling is bandwidth divided by bytes read per token">
-<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The pipe decides the speed</text>
-<rect x="20" y="36" width="180" height="52" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="110" y="57" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">graphics memory (VRAM)</text>
-<text x="110" y="74" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">250 to 1,000+ GB/s</text>
-<rect x="20" y="102" width="180" height="52" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.2"/>
-<text x="110" y="123" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">system memory (RAM)</text>
-<text x="110" y="140" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">60 to 100 GB/s</text>
-<rect x="20" y="168" width="180" height="52" rx="7" fill="none" stroke="var(--aua-alert)" stroke-width="1.2"/>
-<text x="110" y="189" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">solid-state drive (SSD)</text>
-<text x="110" y="206" text-anchor="middle" font-size="9" fill="var(--aua-alert)">3 to 7 GB/s: a hard stop</text>
-<rect x="204" y="48" width="236" height="28" fill="var(--md-primary-fg-color)" opacity="0.85"/>
-<rect x="204" y="122" width="236" height="10" fill="var(--md-primary-fg-color)" opacity="0.55"/>
-<rect x="204" y="192" width="236" height="3" fill="var(--aua-alert)" opacity="0.7"/>
-<text x="322" y="94" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">pipe width is the published</text>
-<text x="322" y="107" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">"memory bandwidth" number</text>
-<rect x="444" y="36" width="196" height="184" rx="8" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2"/>
-<text x="542" y="58" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">the processor</text>
-<text x="542" y="80" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">every token generated</text>
-<text x="542" y="94" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">rereads all the model's</text>
-<text x="542" y="108" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">active weights, and each</text>
-<text x="542" y="122" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">byte moves at the speed</text>
-<text x="542" y="136" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">of the tier it lives in</text>
-<rect x="460" y="152" width="164" height="52" rx="7" fill="var(--md-primary-fg-color)"/>
-<text x="542" y="173" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#ffffff">tokens/s ceiling ≈ bandwidth</text>
-<text x="542" y="189" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#ffffff">÷ bytes read per token</text>
-<text x="330" y="242" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">real systems reach roughly half to two thirds of the ceiling; a model split across tiers pays each tier's rate</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">The pipe decides the speed</p>
+<div class="hf-pipes">
+<div class="hf-box">
+<p class="hf-box-title">Graphics memory (VRAM)</p>
+<p class="hf-box-sub">250 to 1,000+ GB/s</p>
+</div>
+<span class="hf-pipe hf-pipe--wide" aria-hidden="true"></span>
+<div class="hf-box hf-box--plain">
+<p class="hf-box-title">System memory (RAM)</p>
+<p class="hf-box-sub">60 to 100 GB/s</p>
+</div>
+<span class="hf-pipe hf-pipe--mid" aria-hidden="true"></span>
+<div class="hf-box hf-box--stop">
+<p class="hf-box-title">Solid-state drive (SSD)</p>
+<p class="hf-box-alert">3 to 7 GB/s: a hard stop</p>
+</div>
+<span class="hf-pipe hf-pipe--thin" aria-hidden="true"></span>
+<p class="hf-pipes-note">Pipe width is the published "memory bandwidth" number.</p>
+<div class="hf-box hf-box--plain hf-processor">
+<p class="hf-box-title">The processor</p>
+<p>Every token generated rereads all the model's active weights, and each byte moves at the speed of the tier it lives in.</p>
+<p class="hf-pill">tokens/s ceiling &asymp; bandwidth &divide; bytes read per token</p>
+</div>
+</div>
+<p class="hf-note">Real systems reach roughly half to two thirds of the ceiling; a model split across tiers pays each tier's rate.</p>
 <figcaption>Speed follows where the bytes live: the same model is instant from the wide pipe and a crawl from the narrow one.</figcaption>
 </figure>
 

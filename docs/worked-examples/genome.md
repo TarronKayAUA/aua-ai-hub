@@ -18,17 +18,13 @@ So the question assembled itself in about four seconds, and so did the mistake.
 
 Here is the trap, and it is worth naming before any results, because naming it afterwards would be too late to be honest.
 
-<figure class="figure">
-<svg viewBox="0 0 660 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart comparing how common the archaic growth hormone receptor variant is, as a share of copies of the gene: up to 24 percent in South Asian populations (20 percent across the region) against about 0.5 percent in European populations">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Why the paper made the news</text>
-<text x="150" y="46" text-anchor="end" font-size="11" fill="var(--md-typeset-color)">South Asian populations</text>
-<rect x="160" y="34" width="384" height="18" rx="3" fill="var(--md-primary-fg-color)"/>
-<text x="554" y="48" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">up to 24%</text>
-<text x="150" y="80" text-anchor="end" font-size="11" fill="var(--md-typeset-color)">European populations</text>
-<rect x="160" y="68" width="8" height="18" rx="3" fill="var(--md-default-fg-color--light)"/>
-<text x="178" y="82" font-size="11" fill="var(--md-typeset-color)">about 0.5%</text>
-<text x="330" y="112" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">a large difference in how common the variant is, which says nothing yet about what it does to any one person</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">Why the paper made the news</p>
+<div class="hf-bars">
+<p><span class="hf-bar-label">South Asian populations</span><span class="hf-bar-track"><span class="hf-bar-fill" style="width: 80%"></span><span class="hf-bar-value"><strong>up to 24%</strong></span></span></p>
+<p><span class="hf-bar-label">European populations</span><span class="hf-bar-track"><span class="hf-bar-fill hf-bar-fill--muted" style="width: 1.67%"></span><span class="hf-bar-value">about 0.5%</span></span></p>
+</div>
+<p class="hf-note">A large difference in how common the variant is, which says nothing yet about what it does to any one person.</p>
 <figcaption>Frequency gaps are what make a variant newsworthy. They are not what make it meaningful for a person. The figures are shares of copies of the gene, not of people: 20 percent across South Asia and 24 percent in the paper's Pakistani sample.</figcaption>
 </figure>
 
@@ -93,26 +89,19 @@ So: probably a carrier. Which felt, briefly, wonderful.
 
 Then the arithmetic.
 
-<figure class="figure">
-<svg viewBox="0 0 660 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scale comparison showing that one copy of the variant contributes about 285 grams and two copies about 570 grams, against a personal difference from population average measured in several kilograms">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The variant, drawn to scale against the thing it was supposed to explain</text>
-<line x1="60" y1="118" x2="620" y2="118" stroke="var(--md-default-fg-color--light)" stroke-width="1.5"/>
-<text x="60" y="136" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)">0 kg</text>
-<line x1="153" y1="114" x2="153" y2="122" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<text x="153" y="136" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)">1 kg</text>
-<line x1="340" y1="114" x2="340" y2="122" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<text x="340" y="136" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)">3 kg</text>
-<line x1="527" y1="114" x2="527" y2="122" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<text x="527" y="136" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)">5 kg</text>
-<rect x="60" y="96" width="27" height="18" fill="var(--md-primary-fg-color)"/>
-<line x1="73" y1="96" x2="73" y2="62" stroke="var(--md-primary-fg-color)" stroke-width="1"/>
-<text x="80" y="58" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">one copy: 285 g</text>
-<text x="80" y="72" font-size="10" fill="var(--md-default-fg-color--light)">what I actually carry</text>
-<rect x="60" y="96" width="53" height="18" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5" stroke-dasharray="3,2"/>
-<text x="122" y="110" font-size="10" fill="var(--md-default-fg-color--light)">two copies: 570 g</text>
-<path d="M60,150 L60,158 L560,158 L560,150" fill="none" stroke="var(--aua-alert)" stroke-width="1.5"/>
-<text x="310" y="172" text-anchor="middle" font-size="10.5" fill="var(--aua-alert)">the difference from population average this was invoked to explain: several kilograms</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">The variant, drawn to scale against the thing it was supposed to explain</p>
+<div class="hf-scale">
+<p><strong>One copy: 285 g</strong>, what I actually carry</p>
+<div class="hf-scale-track">
+<span class="hf-scale-two" style="width: 9.5%"></span>
+<span class="hf-scale-one" style="width: 4.75%"></span>
+<span class="hf-scale-note" style="left: 9.5%">two copies: 570 g</span>
+</div>
+<div class="hf-scale-axis" aria-hidden="true"><span style="left: 0">0 kg</span><span style="left: 16.67%">1 kg</span><span style="left: 50%">3 kg</span><span style="left: 83.33%">5 kg</span></div>
+<div class="hf-scale-bracket" style="width: 89.5%" aria-hidden="true"></div>
+<p class="hf-scale-bracket-label">The difference from population average this was invoked to explain: several kilograms.</p>
+</div>
 <figcaption>285 grams per allele copy, against a difference measured in kilograms. Drawn to scale, which is the entire point.</figcaption>
 </figure>
 

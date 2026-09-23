@@ -2982,3 +2982,281 @@
     padding-bottom: 0;
   }
 }
+
+/* .hf vocabulary, last additions:
+     .hf-lanes     labeled lanes, each a short flow
+     .hf-wall      a dashed red wall between steps (not a step itself)
+     .hf-pipes     memory tiers as pipes of different widths
+     .hf-scale     a ruler drawn to scale, with labeled marks
+     .hf-chart     a data chart: bars stay SVG (no text in it), and the
+                   legend, notes and axis labels are HTML
+     .hf-sr        text for screen readers only */
+.md-typeset .hf-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.md-typeset .hf-lanes {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 0.7rem 1rem;
+  align-items: center;
+}
+
+.md-typeset .hf-lanes > .hf-lane-label {
+  margin: 0;
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.md-typeset .hf-lane-note {
+  flex: 1 1 0;
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-wall {
+  align-self: stretch;
+  width: 0;
+  margin: 0 0.5rem;
+  border-left: 3px dashed var(--aua-alert);
+}
+
+/* Memory tiers as pipes: a grid of tier, pipe, and the processor they feed. */
+.md-typeset .hf-pipes {
+  display: grid;
+  grid-template-columns: minmax(9rem, 1fr) minmax(6rem, 1.3fr) minmax(10rem, 1.2fr);
+  gap: 0.6rem 0.6rem;
+  align-items: center;
+}
+
+.md-typeset .hf-pipes > .hf-pipe {
+  display: block;
+  border-radius: 0.2rem;
+}
+
+.md-typeset .hf-pipe--wide {
+  height: 2.2rem;
+  background: var(--aua-figure-fill);
+}
+
+.md-typeset .hf-pipe--mid {
+  height: 0.75rem;
+  background: var(--aua-figure-line);
+  opacity: 0.6;
+}
+
+.md-typeset .hf-pipe--thin {
+  height: 0.25rem;
+  background: var(--aua-alert);
+}
+
+.md-typeset .hf-pipes > .hf-processor {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  align-self: stretch;
+}
+
+.md-typeset .hf-pipes > .hf-pipes-note {
+  grid-column: 2;
+  margin: 0;
+  font-size: 0.66rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+
+/* A ruler drawn to scale; positions are inline percentages of its width. */
+.md-typeset .hf-scale {
+  position: relative;
+  padding: 0 0.5rem;
+  font-size: 0.72rem;
+}
+
+.md-typeset .hf-scale > p {
+  margin: 0;
+}
+
+.md-typeset .hf-scale-track {
+  position: relative;
+  height: 1.1rem;
+  margin: 0.3rem 0 0;
+}
+
+.md-typeset .hf-scale-track > span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.md-typeset .hf-scale-track > .hf-scale-two {
+  border: 1.5px dashed var(--aua-figure-line);
+}
+
+.md-typeset .hf-scale-track > .hf-scale-one {
+  background: var(--aua-figure-fill);
+}
+
+.md-typeset .hf-scale-track > .hf-scale-note {
+  bottom: auto;
+  padding-left: 0.4rem;
+  font-size: 0.68rem;
+  white-space: nowrap;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-scale-axis {
+  position: relative;
+  height: 1.6rem;
+  border-top: 1.5px solid var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-scale-axis > span {
+  position: absolute;
+  top: 0;
+  padding-top: 0.35rem;
+  transform: translateX(-50%);
+  font-size: 0.66rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-scale-axis > span::before {
+  content: "";
+  position: absolute;
+  top: -0.25rem;
+  left: 50%;
+  height: 0.5rem;
+  border-left: 1px solid var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-scale-axis > span:first-child {
+  transform: none;
+}
+
+.md-typeset .hf-scale-axis > span:first-child::before {
+  left: 0;
+}
+
+.md-typeset .hf-scale-bracket {
+  margin-top: 0.3rem;
+  padding-top: 0.35rem;
+  border: 1.5px solid var(--aua-alert);
+  border-top: 0;
+  height: 0.5rem;
+}
+
+.md-typeset .hf-scale > .hf-scale-bracket-label {
+  margin-top: 0.3rem;
+  color: var(--aua-alert);
+}
+
+/* A data chart with HTML text around SVG bars. */
+.md-typeset .hf-chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 1rem;
+  margin: 0 0 0.3rem;
+  font-size: 0.7rem;
+}
+
+.md-typeset .hf-chart-legend > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.md-typeset .hf-chart-legend > .hf-chart-peak {
+  margin-left: auto;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-swatch {
+  width: 0.65rem;
+  height: 0.65rem;
+  background: var(--aua-figure-fill);
+}
+
+.md-typeset .hf-swatch--muted {
+  background: var(--md-default-fg-color--light);
+  opacity: 0.5;
+}
+
+.md-typeset .hf-chart > svg {
+  display: block;
+  width: 100%;
+  height: 9rem;
+}
+
+.md-typeset .hf-chart-axis {
+  position: relative;
+  height: 1.2rem;
+  margin: 0;
+  font-size: 0.66rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-chart-axis > span {
+  position: absolute;
+  top: 0.15rem;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .hf-lanes {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+
+  .md-typeset .hf-lanes > .hf-lane-label {
+    margin-top: 0.6rem;
+  }
+
+  .md-typeset .hf-wall {
+    width: auto;
+    height: 0;
+    margin: 0.4rem 0;
+    border-left: 0;
+    border-top: 3px dashed var(--aua-alert);
+  }
+
+  .md-typeset .hf-pipes {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .hf-pipes > .hf-processor,
+  .md-typeset .hf-pipes > .hf-pipes-note {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+/* Small pieces for the last batch. */
+.md-typeset .hf-box--aside {
+  max-width: 18rem;
+  margin: 0 0 0.7rem;
+  font-size: 0.7rem;
+}
+
+.md-typeset .hf-chips--below {
+  margin-top: 0.5rem;
+}
+
+[dir] .md-typeset ul.hf-list > li.hf-list-key {
+  border: 1.5px solid var(--aua-figure-line);
+  font-weight: 700;
+}
+
+/* The first axis label starts at its tick rather than centering on it,
+   which would push it past the chart's left edge. */
+.md-typeset .hf-chart-axis > span:first-child {
+  transform: none;
+}

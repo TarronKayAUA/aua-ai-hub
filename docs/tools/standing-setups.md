@@ -20,28 +20,21 @@ The common idea: **instructions plus materials, attached to the work instead of 
 
 There is a fourth container worth knowing about, and it works the other way around: a [skill](skills.md) attaches instructions to a *kind of task* rather than to one body of work, so it applies wherever you are. If you use claude.ai or Cowork, four of them are already available to you, and that page also covers why skills from unknown authors deserve real caution. A per-course [Gemini Notebook](gemini-notebook.md) is the same pattern for source-grounded questions: your lectures uploaded once, answered from with citations all term.
 
-<figure class="figure">
-<svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomy of a standing setup: instructions and uploaded knowledge sit in the container, and every conversation inside it starts with both already in place">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Anatomy of a standing setup</text>
-<rect x="40" y="30" width="580" height="150" rx="10" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="330" y="50" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">the container: a project, or a folder with a brief</text>
-<rect x="60" y="64" width="250" height="44" rx="7" fill="var(--md-primary-fg-color)"/>
-<text x="185" y="82" text-anchor="middle" font-size="9.5" fill="#ffffff">instructions: who it is, your rules,</text>
-<text x="185" y="96" text-anchor="middle" font-size="9.5" fill="#ffffff">what to answer from</text>
-<rect x="350" y="64" width="250" height="44" rx="7" fill="var(--md-primary-fg-color)"/>
-<text x="475" y="82" text-anchor="middle" font-size="9.5" fill="#ffffff">knowledge: syllabus, objectives,</text>
-<text x="475" y="96" text-anchor="middle" font-size="9.5" fill="#ffffff">papers, materials you would hand out</text>
-<rect x="60" y="124" width="165" height="40" rx="7" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2"/>
-<text x="142" y="141" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">Monday's chat</text>
-<text x="142" y="155" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">starts already briefed</text>
-<rect x="247" y="124" width="165" height="40" rx="7" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2"/>
-<text x="329" y="141" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">next week's chat</text>
-<text x="329" y="155" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">same instructions, same knowledge</text>
-<rect x="434" y="124" width="165" height="40" rx="7" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2"/>
-<text x="516" y="141" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">week ten's chat</text>
-<text x="516" y="155" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">still nothing re-explained</text>
-<text x="330" y="200" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">set up once; every conversation inside inherits both boxes above it</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">Anatomy of a standing setup</p>
+<div class="hf-frame">
+<p class="hf-frame-title">The container: a project, or a folder with a brief</p>
+<div class="hf-chips">
+<span class="hf-chip hf-chip--filled">Instructions<small>who it is, your rules, what to answer from</small></span>
+<span class="hf-chip hf-chip--filled">Knowledge<small>syllabus, objectives, papers, materials you would hand out</small></span>
+</div>
+<div class="hf-chips hf-chips--below">
+<span class="hf-chip">Monday's chat<small>starts already briefed</small></span>
+<span class="hf-chip">Next week's chat<small>same instructions, same knowledge</small></span>
+<span class="hf-chip">Week ten's chat<small>still nothing re-explained</small></span>
+</div>
+</div>
+<p class="hf-note">Set up once; every conversation inside inherits both boxes above it.</p>
 <figcaption>The container holds what you would otherwise repeat; the chats just use it.</figcaption>
 </figure>
 
@@ -66,28 +59,26 @@ Agent interfaces have their own version, and it is just a text file. Claude Code
 
 The heuristic for what to add: **when the agent makes the same mistake twice, or you type the same correction twice, that correction belongs in the brief.** Standing setups are how one-time feedback becomes permanent behavior.
 
-<figure class="figure">
-<svg viewBox="0 0 660 235" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How folder briefs layer: a personal brief in your home directory applies to all your work, the working folder's brief adds this project's rules on top, the agent reads both before any session, and corrections you find yourself repeating flow back into the folder's brief">
-<defs><marker id="ss-lay" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">How folder briefs layer</text>
-<rect x="20" y="52" width="180" height="64" rx="8" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.5"/>
-<text x="110" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">your personal brief</text>
-<text x="110" y="90" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">.claude or .codex folder: the defaults</text>
-<text x="110" y="103" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">that apply to all your work</text>
-<line x1="202" y1="84" x2="234" y2="84" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ss-lay)"/>
-<rect x="238" y="52" width="184" height="64" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="330" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">the folder's brief</text>
-<text x="330" y="90" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">CLAUDE.md or AGENTS.md:</text>
-<text x="330" y="103" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">this project's rules, on top</text>
-<line x1="424" y1="84" x2="456" y2="84" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ss-lay)"/>
-<rect x="460" y="52" width="180" height="64" rx="8" fill="var(--md-primary-fg-color)"/>
-<text x="550" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffffff">the session</text>
-<text x="550" y="90" text-anchor="middle" font-size="8.5" fill="#ffffff">the agent reads both briefs,</text>
-<text x="550" y="103" text-anchor="middle" font-size="8.5" fill="#ffffff">global to folder, before any work</text>
-<path d="M 550 118 L 550 160 L 330 160 L 330 122" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#ss-lay)"/>
-<text x="440" y="178" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">the same correction twice becomes a line in the brief</text>
-<text x="330" y="218" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the personal brief carries your voice everywhere; the folder's brief speaks for the project</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">How folder briefs layer</p>
+<div class="hf-flow">
+<div class="hf-box hf-box--plain">
+<p class="hf-box-title">Your personal brief</p>
+<p class="hf-box-sub">.claude or .codex folder: the defaults that apply to all your work</p>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-box">
+<p class="hf-box-title">The folder's brief</p>
+<p class="hf-box-sub">CLAUDE.md or AGENTS.md: this project's rules, on top</p>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-box hf-box--filled">
+<p class="hf-box-title">The session</p>
+<p class="hf-box-sub">the agent reads both briefs, global to folder, before any work</p>
+</div>
+</div>
+<p class="hf-return">The same correction twice becomes a line in the folder's brief.</p>
+<p class="hf-note">The personal brief carries your voice everywhere; the folder's brief speaks for the project.</p>
 <figcaption>Layered, not merged: the broad rules travel with you, the specific ones live with the work, and repeated feedback flows back in.</figcaption>
 </figure>
 

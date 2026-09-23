@@ -32,27 +32,26 @@ The same model behaves very differently depending on the room you put it in. A w
 
 A tool call is the model pausing text generation to request an action: read this file, run this command, search this folder. The interface executes the action (asking your permission where it matters), returns the result, and the model continues with that result in hand. That loop, repeated, is what makes an agent an agent.
 
-<figure class="figure">
-<svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The tool call loop: the model requests an action, the interface checks permission and runs the tool on your machine, and the result returns to the model">
-<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The tool call loop</text>
-<rect x="30" y="60" width="150" height="60" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="105" y="85" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">model (cloud)</text>
-<text x="105" y="103" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">decides what it needs</text>
-<rect x="255" y="60" width="150" height="60" rx="8" fill="none" stroke="#ff8f00" stroke-width="2"/>
-<text x="330" y="85" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">interface</text>
-<text x="330" y="103" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">permission check</text>
-<rect x="480" y="60" width="150" height="60" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="555" y="85" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">tool (your machine)</text>
-<text x="555" y="103" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">reads, converts, runs</text>
-<defs><marker id="tc-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-default-fg-color--light)"/></marker></defs>
-<line x1="180" y1="75" x2="253" y2="75" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#tc-ar)"/>
-<text x="216" y="68" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">"read chapter 3"</text>
-<line x1="405" y1="75" x2="478" y2="75" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#tc-ar)"/>
-<text x="441" y="68" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">approved</text>
-<path d="M 555 120 L 555 160 L 105 160 L 105 122" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#tc-ar)"/>
-<text x="330" y="153" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">result returns: only the 30 lines that matter enter the model's context</text>
-<text x="330" y="188" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">generation pauses, the action runs, and the model continues with the result in hand</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">The tool call loop</p>
+<div class="hf-flow">
+<div class="hf-box">
+<p class="hf-box-title">Model (cloud)</p>
+<p class="hf-box-sub">decides what it needs</p>
+</div>
+<span class="hf-arrow">"read chapter 3"</span>
+<div class="hf-box hf-box--warn">
+<p class="hf-box-title">Interface</p>
+<p class="hf-box-sub">permission check</p>
+</div>
+<span class="hf-arrow">approved</span>
+<div class="hf-box hf-box--ok">
+<p class="hf-box-title">Tool (your machine)</p>
+<p class="hf-box-sub">reads, converts, runs</p>
+</div>
+</div>
+<p class="hf-return">Result returns to the model: only the 30 lines that matter enter its context.</p>
+<p class="hf-note">Generation pauses, the action runs, and the model continues with the result in hand.</p>
 <figcaption>The permission check sits between the model's request and your machine; the rules are enforced by the interface, not by the model.</figcaption>
 </figure>
 

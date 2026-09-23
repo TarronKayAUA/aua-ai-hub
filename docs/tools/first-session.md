@@ -15,37 +15,17 @@ last_reviewed: 2026-09-01
 
 ## The walkthrough
 
-<figure class="figure">
-<svg viewBox="0 0 660 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The first session in five beats: a folder of copies, one real task, permission prompts you actually read, the agent's work loop, and your own review of the output">
-<defs><marker id="fs-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Twenty minutes, five beats</text>
-<rect x="20" y="40" width="112" height="66" rx="7" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="76" y="62" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">a folder</text>
-<text x="76" y="78" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">of copies,</text>
-<text x="76" y="92" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">never originals</text>
-<line x1="134" y1="73" x2="150" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-ar)"/>
-<rect x="153" y="40" width="112" height="66" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="209" y="62" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">one real task</text>
-<text x="209" y="78" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">a deliverable,</text>
-<text x="209" y="92" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">not a question</text>
-<line x1="267" y1="73" x2="283" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-ar)"/>
-<rect x="286" y="40" width="112" height="66" rx="7" fill="none" stroke="#ff8f00" stroke-width="2"/>
-<text x="342" y="62" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">the prompts</text>
-<text x="342" y="78" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">read each one;</text>
-<text x="342" y="92" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">you are the gate</text>
-<line x1="400" y1="73" x2="416" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-ar)"/>
-<rect x="419" y="40" width="112" height="66" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="475" y="62" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">the loop</text>
-<text x="475" y="78" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">read, write, check,</text>
-<text x="475" y="92" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">continue</text>
-<line x1="533" y1="73" x2="549" y2="73" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-ar)"/>
-<rect x="552" y="40" width="88" height="66" rx="7" fill="var(--md-primary-fg-color)"/>
-<text x="596" y="66" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#ffffff">you review</text>
-<text x="596" y="82" text-anchor="middle" font-size="9" fill="#ffffff">the output,</text>
-<text x="596" y="95" text-anchor="middle" font-size="9" fill="#ffffff">yourself</text>
-<text x="330" y="136" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">green: your safety net · amber: your control · filled: your judgment</text>
-<text x="330" y="158" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">the beats repeat for every new kind of task, not just the first one ever</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">Twenty minutes, five beats</p>
+<ol class="hf-steps">
+<li class="hf-box hf-box--ok"><p class="hf-box-title">A folder</p><p class="hf-box-sub">of copies, never originals</p></li>
+<li class="hf-box"><p class="hf-box-title">One real task</p><p class="hf-box-sub">a deliverable, not a question</p></li>
+<li class="hf-box hf-box--warn"><p class="hf-box-title">The prompts</p><p class="hf-box-sub">read each one; you are the gate</p></li>
+<li class="hf-box"><p class="hf-box-title">The loop</p><p class="hf-box-sub">read, write, check, continue</p></li>
+<li class="hf-box hf-box--filled"><p class="hf-box-title">You review the output, yourself</p></li>
+</ol>
+<p class="hf-legend">Green: your safety net. Amber: your control. Filled: your judgment.</p>
+<p class="hf-note">The beats repeat for every new kind of task, not just the first one ever.</p>
 <figcaption>Copies, a task, the gate, the loop, and your own eyes on the result.</figcaption>
 </figure>
 
@@ -92,39 +72,31 @@ This site's recommendation, stated as a table so you can disagree with it precis
 | Orchestration (ultracode / Ultra) | Off | On for large, decomposable tasks, accepting the time and token cost | On for routine questions |
 | Folder access | One task-specific folder | Additional folders added deliberately | Your whole home directory or disk |
 
-<figure class="figure">
-<svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The permission trust ladder: start at ask first, where the agent asks before consequential actions, graduate a proven workflow to auto-approved edits, then to checked autonomy where an automatic reviewer surfaces only flagged actions; Plan mode reads without changing anything and is useful at every rung; the bypass and full access modes sit behind a wall, for isolated machines only">
-<defs><marker id="fs-lad" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Permissions: a ladder you climb per workflow, not a dial you set once</text>
-<rect x="20" y="34" width="180" height="42" rx="7" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2" stroke-dasharray="5 4"/>
-<text x="110" y="51" text-anchor="middle" font-size="8.5" fill="var(--md-typeset-color)">Plan mode: read and propose,</text>
-<text x="110" y="64" text-anchor="middle" font-size="8.5" fill="var(--md-typeset-color)">change nothing; useful at every rung</text>
-<rect x="20" y="156" width="150" height="52" rx="7" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="95" y="177" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">ask first</text>
-<text x="95" y="192" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">Manual · Ask for approval</text>
-<line x1="172" y1="172" x2="196" y2="152" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-lad)"/>
-<rect x="200" y="126" width="150" height="82" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="275" y="147" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">edits flow</text>
-<text x="275" y="162" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">Accept edits, for a workflow</text>
-<text x="275" y="175" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">that has earned it</text>
-<line x1="352" y1="142" x2="376" y2="122" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#fs-lad)"/>
-<rect x="380" y="96" width="150" height="112" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="455" y="117" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">checked autonomy</text>
-<text x="455" y="132" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">Auto · Approve for me:</text>
-<text x="455" y="145" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">a reviewer surfaces only</text>
-<text x="455" y="158" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">what it flags, and it can</text>
-<text x="455" y="171" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">be wrong: keep reading</text>
-<text x="455" y="184" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">the surprises</text>
-<line x1="552" y1="96" x2="552" y2="208" stroke="var(--aua-alert)" stroke-width="2" stroke-dasharray="5 4"/>
-<rect x="566" y="96" width="80" height="112" rx="7" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
-<text x="606" y="130" text-anchor="middle" font-size="9" font-weight="bold" fill="var(--md-typeset-color)">Bypass ·</text>
-<text x="606" y="144" text-anchor="middle" font-size="9" font-weight="bold" fill="var(--md-typeset-color)">Full access</text>
-<text x="606" y="165" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">isolated</text>
-<text x="606" y="177" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">machines only,</text>
-<text x="606" y="189" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">never one you</text>
-<text x="606" y="201" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">care about</text>
-<text x="330" y="230" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">every new kind of task starts back at ask first; the ladder is climbed by workflows, not by people</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">Permissions: a ladder you climb per workflow, not a dial you set once</p>
+<div class="hf-box hf-box--dashed hf-box--aside"><p>Plan mode: read and propose, change nothing; useful at every rung.</p></div>
+<div class="hf-flow">
+<div class="hf-box hf-box--ok">
+<p class="hf-box-title">Ask first</p>
+<p class="hf-box-sub">Manual: Ask for approval</p>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-box">
+<p class="hf-box-title">Edits flow</p>
+<p class="hf-box-sub">Accept edits, for a workflow that has earned it</p>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-box">
+<p class="hf-box-title">Checked autonomy</p>
+<p class="hf-box-sub">Auto: Approve for me. A reviewer surfaces only what it flags, and it can be wrong: keep reading the surprises.</p>
+</div>
+<span class="hf-wall"><span class="hf-sr">A wall, not a rung:</span></span>
+<div class="hf-box hf-box--stop">
+<p class="hf-box-title">Bypass, Full access</p>
+<p class="hf-box-sub">isolated machines only, never one you care about</p>
+</div>
+</div>
+<p class="hf-note">Every new kind of task starts back at ask first; the ladder is climbed by workflows, not by people.</p>
 <figcaption>Trust is granted to a proven workflow, one rung at a time, and the wall on the right is not a rung.</figcaption>
 </figure>
 
