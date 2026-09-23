@@ -23,7 +23,7 @@ The reports carry different rulers, so read yours against the right row:
 | NBME self-assessment | | | Time spent per question, the only NBME report with pacing data; if timing is your suspected problem, this is where the evidence lives |
 | In-house exam | | | Category and question-level reports through the exam platform; the same method below applies to them |
 
-Most tables in INSIGHTS export to a spreadsheet.
+Most tables in INSIGHTS export to a spreadsheet. For an in-house block exam, the [study schedule builder](../prompts/index.md#study-schedule-builder) is the closer fit: it plans day by day from your syllabus and teaching calendar, where the planner below works week by week toward NBME exams.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">The shape of an INSIGHTS exam-results view</p>
