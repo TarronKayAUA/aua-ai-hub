@@ -16,14 +16,14 @@ last_reviewed: 2026-09-01
 
 ## The core idea
 
-The quality of what you get is mostly determined by what you give. Modern assistants do not need magic words; they need what any capable new colleague would need: context, materials, a clear task, and an example of what good output looks like. Four habits cover most of it:
+The quality of what you get is mostly determined by what you give. Modern assistants do not need magic words; they need what any capable new colleague would need: context, your materials, a clear task, and a description of the output you want. Four habits cover most of it:
 
 1. **Give it your materials.** The single biggest upgrade. Paste your learning objectives, your draft, your criteria, your data description. A model working from your actual material is grounded; a model working from a blank page is improvising.
 2. **Say who it is and who you are.** "You are helping a medical educator review exam questions for structural flaws" beats an unframed request, because it tells the model which of its many registers to use.
 3. **Specify the output.** Format, length, level, what to include and exclude. If you want options rather than one answer, say how many.
 4. **Iterate.** The first response is a first draft. Ask for what is missing, point at what is wrong, push back. Models respond well to specific correction, and two rounds of iteration routinely beat one elaborate prompt.
 
-And one meta-habit: **ask for reasoning you can check, not bare answers.** A response that shows its steps, cites its sources, or flags its own uncertainty gives you something to verify. The [prompt library](../prompts/index.md) is built around these habits; every template there shows them in action, and the [Learning to Prompt](../prompts/learning.md) resources go deeper, from Anthropic's 24-minute Prompting 101 video to Google's beginner guide.
+And one meta-habit: **ask for reasoning you can check, not bare answers.** A response that shows its steps, cites its sources, or flags its own uncertainty gives you something to verify. The [prompt library](../prompts/index.md) is built around these habits; every template there shows them in action, and the [Learning to Prompt](../prompts/learning.md) resources go deeper, from short videos to beginner guides.
 
 <figure class="figure">
 <svg viewBox="0 0 660 195" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomy of a strong request: role, materials, task, and output shape, plus an iteration loop with the reply">
@@ -64,8 +64,8 @@ Calibrate verification to stakes: a brainstorm needs a sniff test, a lecture sli
 
 ## Going deeper
 
-- [Getting Better Answers](../basics/better-answers.md): the three levers behind everything here: context, memory, and standing instructions.
+- [Getting Better Answers](../basics/better-answers.md): the three levers behind everything here (context, memory, and standing instructions), and the reading Stage 3 assumes.
 - [Standing Setups](../tools/standing-setups.md): make good prompting permanent with a project per course or a folder brief.
-- [Prompt Library](../prompts/index.md): reusable templates with clear review statuses.
+- [Prompt Library](../prompts/index.md): reusable templates, each with a provisional review status.
 
 **Next:** [Module 3: The Rules](rules.md)

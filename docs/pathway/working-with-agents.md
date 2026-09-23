@@ -11,11 +11,11 @@ last_reviewed: 2026-09-01
 - Explain what makes an agent different from a chat assistant, in one sentence.
 - Read a permission prompt and decide, deliberately, whether to approve it.
 - Recognize the tasks where an agent is the right tool and the ones where chat is.
-- Keep the safety rules intact when an AI can touch your files.
+- Keep the safety rules intact when an artificial intelligence (AI) tool can touch your files.
 
 ## The core idea
 
-A chat assistant answers you; an agent works for you. The difference is the loop: an agent can act (read a file, run a command, write a document), check its own result, and continue, repeating until the task is done. That loop lets an agent run checks and hand you *evidence* that the work was completed, not just text that looks right. Those checks improve reliability, but they are the agent grading its own work: they do not replace your review. The loop is also why agents come with a control chat never needed: your permission.
+A chat assistant answers you; an agent works for you. The difference is the loop: an agent can act (read a file, run a command, write a document), check its own result, and continue, repeating until the task is done. That loop lets an agent run checks and hand you *evidence* that the work was completed, not just text that looks right. Those checks improve reliability, but they are the agent grading its own work: they do not replace your review. The loop is also why agents need a control that chat never did: your permission.
 
 ### Tool calls, and why you are the gate
 
@@ -37,8 +37,8 @@ When an agent needs something done in the world, it pauses and asks: may I read 
 <line x1="190" y1="92" x2="253" y2="92" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#wa-ar)"/>
 <line x1="405" y1="92" x2="468" y2="92" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#wa-ar)"/>
 <text x="437" y="84" text-anchor="middle" font-size="8.5" fill="#2e7d32">approve</text>
-<path d="M 330 132 L 330 168 L 110 168 L 110 126" fill="none" stroke="#c62828" stroke-width="1.6" marker-end="url(#wa-ar)"/>
-<text x="220" y="161" text-anchor="middle" font-size="8.5" fill="#c62828">deny, and ask the agent why it wanted that</text>
+<path d="M 330 132 L 330 168 L 110 168 L 110 126" fill="none" stroke="var(--aua-alert)" stroke-width="1.6" marker-end="url(#wa-ar)"/>
+<text x="220" y="161" text-anchor="middle" font-size="8.5" fill="var(--aua-alert)">deny, and ask the agent why it wanted that</text>
 <text x="330" y="198" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the gate is enforced by the interface software, not by the model's judgment</text>
 </svg>
 <figcaption>Approve what matches your request; deny what surprises you. That one habit is most of agent safety.</figcaption>
@@ -46,7 +46,7 @@ When an agent needs something done in the world, it pauses and asks: may I read 
 
 ### When an agent beats chat
 
-The heavier and more file-bound the task, the more an agent wins. Chat is right for questions, drafts, and thinking; an agent is right when the work lives in files (a folder of readings to summarize, a document to revise consistently, data to reorganize), when it has many steps, or when it should be checked before you see it. There is an economic reason too: an agent writes a small script and lets your computer do mechanical work in seconds, where a chat interface would regenerate every word as paid output. If you have ever pasted a whole document into a chat window, an agent is the tool you were missing.
+The heavier and more file-bound the task, the more an agent wins. Chat is right for questions, drafts, and thinking; an agent is right when the work lives in files (a folder of readings to summarize, a document to revise consistently, data to reorganize), when it has many steps, or when it should be checked before you see it. There is an economic reason too: an agent writes a small script and lets your computer do mechanical work in seconds, where a chat interface would regenerate every word as paid output. If you regularly paste long documents into a chat window one at a time, that work may suit an agent better.
 
 ### Setups that persist
 
@@ -65,7 +65,7 @@ Everything from [Module 3](rules.md) applies with more force, because an agent c
     Move the files the task actually needs into a fresh folder and open that instead. The agent can read anything in the folder you grant, so the grant is the decision that matters; a protected record in scope is a data-rules problem even if the agent never happens to open it.
 
 ??? question "The agent reports the task finished successfully. Why open the output yourself anyway?"
-    Because "finished" is the agent's claim about its own work, and the pathway's rule for artificial intelligence (AI) claims does not change when the AI can run tools: verify before you rely. Agents make checking cheap (the file is right there), and the two minutes of looking is what makes delegating to one responsible rather than hopeful.
+    Because "finished" is the agent's claim about its own work, and the pathway's rule for AI claims does not change when the AI can run tools: verify before you rely. Agents make checking cheap (the file is right there), and the two minutes of looking is what makes delegating to one responsible rather than hopeful.
 
 ## Going deeper
 

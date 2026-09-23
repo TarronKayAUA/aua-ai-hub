@@ -18,7 +18,7 @@ Two different worlds share the word "clinical," and the rules differ sharply bet
 
 ### Learning clinical medicine with AI: encouraged, with discipline
 
-Practicing differentials against an artificial intelligence (AI) case, asking for mechanism explanations, generating practice questions: these are legitimate and effective uses, and the [Medical Learning tools](../tools/index.md) section lists platforms built for exactly this. The discipline is remembering Module 1: fluent clinical-sounding text is not verified clinical knowledge. Your course materials and the literature stay primary, per the [AI Responsible Use Policy](../governance/policy.md); the model is a practice partner, not a reference.
+Practicing differentials against an artificial intelligence (AI) case, asking for mechanism explanations, generating practice questions: these are legitimate and effective uses, and the [Medical Learning tools](../tools/index.md#medical-learning) section lists platforms built for exactly this. The discipline is remembering Module 1: fluent clinical-sounding text is not verified clinical knowledge. Your course materials and the literature stay primary, per the [AI Responsible Use Policy](../governance/policy.md); the model is a practice partner, not a reference.
 
 ### AI in patient care: extreme caution, by policy
 
@@ -26,7 +26,7 @@ The policy is direct: AI tools must not replace professional judgment or clinica
 
 ### The absolute rule
 
-Patient health information (PHI) never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart, not a recorded encounter for transcription. There are no informal exceptions; tools must be specifically approved for patient data before it touches them, and consumer chatbots are not. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
+Protected health information (PHI) never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart, not a recorded encounter for transcription. There are no informal exceptions; tools must be specifically approved for patient data before it touches them, and consumer chatbots are not. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
 
 <figure class="figure">
 <svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels: learning clinical medicine with AI is encouraged with discipline; AI in patient care is extreme caution; patient information never enters a public tool in either world">
@@ -38,7 +38,7 @@ Patient health information (PHI) never goes into a public AI tool. Not a name, n
 <text x="170" y="110" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">mechanism explanations</text>
 <text x="170" y="128" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">generated practice questions</text>
 <text x="170" y="146" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">the literature stays primary</text>
-<rect x="340" y="30" width="300" height="125" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
+<rect x="340" y="30" width="300" height="125" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="490" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">AI in patient care</text>
 <text x="490" y="68" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">extreme caution, by policy</text>
 <text x="490" y="92" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">augments decisions,</text>
@@ -73,7 +73,7 @@ Models reflect their training data, and documented performance gaps across popul
 ## Going deeper
 
 - [Medical Learning tools](../tools/index.md#medical-learning): the directory's category built for study and case practice.
-- [Image Generation benchmarks](../benchmarks/image.md): including the medical-contexts section and its institutional line.
-- [AI and the Residency Application](../playbooks/residency-application.md): what the AAMC and ECFMG actually permit, and the patient-story privacy trap in personal statements.
+- [Image Generation Benchmarks](../benchmarks/image.md#medical-images-are-a-different-question): why general image models are not anatomy references, and the patient-image lines that are never crossed.
+- [AI and the Residency Application](../playbooks/residency-application.md): what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) permit, and the patient-story privacy trap in personal statements.
 
 **Done with the core pathway?** Stage 3 is waiting when you are: [Module 7: Working with Agents](working-with-agents.md). The [Playbooks](../playbooks/index.md) turn these foundations into task-by-task workflows, and the [News](../news/this-week.md) section keeps you current from here.

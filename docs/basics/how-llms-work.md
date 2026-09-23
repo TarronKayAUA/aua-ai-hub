@@ -18,12 +18,12 @@ The "large" refers to two things: the amount of text the model learned from, and
 
 Training happens before you ever type anything, and it has two main stages.
 
-The first stage is pretraining. The model is shown enormous amounts of text with words hidden, and it must guess them. Each time it guesses wrong, its parameters are nudged so it does slightly better next time. Repeat this trillions of times and the model develops a statistical sense of how language fits together. To predict text well, it ends up absorbing a great deal about the world the text describes: grammar, facts, reasoning patterns, clinical vocabulary, and also the errors and biases present in its training data.
+The first stage is pretraining. The model reads enormous amounts of text and, at each point, must guess the next word. Each time it guesses wrong, its parameters are nudged so it does slightly better next time. Repeat this trillions of times and the model develops a statistical sense of how language fits together. To predict text well, it ends up absorbing a great deal about the world the text describes: grammar, facts, reasoning patterns, clinical vocabulary, and also the errors and biases present in its training data.
 
 The second stage shapes that raw predictor into a useful assistant. Companies fine-tune the model on examples of helpful question-and-answer conversations, and they apply a technique called reinforcement learning from human feedback (RLHF), where human reviewers rate model responses and the model is adjusted to produce more of what reviewers prefer. This is why a modern assistant answers your question instead of merely continuing your sentence, and why it usually declines harmful requests.
 
 <figure class="figure">
-<svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of the three training stages leading to an assistant">
+<svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of the two training stages leading to an assistant: pretraining, then fine-tuning and RLHF, with the knowledge cutoff marked where the training data ends">
 <defs><marker id="ar1" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
 <rect x="10" y="40" width="180" height="70" rx="8" fill="var(--md-default-fg-color--lightest)" stroke="var(--md-primary-fg-color)"/>
 <text x="100" y="68" text-anchor="middle" font-size="14" font-weight="bold" fill="var(--md-typeset-color)">Pretraining</text>
@@ -70,7 +70,7 @@ Using a trained model is called inference. When you send a message, the model do
 <figcaption>A response is built one token at a time; nothing is looked up.</figcaption>
 </figure>
 
-Everything the model can see at once, your conversation so far plus any documents you pasted in, is called the context window. It is the model's working memory. It is large but finite, and when a conversation outgrows it, the earliest material falls out of view. That is why a long chat can seem to forget instructions you gave at the start, and why pasting in the relevant policy or article often improves answers: you are placing the facts directly into the model's working memory instead of relying on what it half-remembers from training.
+Everything the model can see at once (your conversation so far plus any documents you pasted in) is called the context window. It is the model's working memory. It is large but finite, and when a conversation outgrows it, the earliest material falls out of view. That is why a long chat can seem to forget instructions you gave at the start, and why pasting in the relevant policy or article often improves answers: you are placing the facts directly into the model's working memory instead of relying on what it half-remembers from training.
 
 <figure class="figure">
 <svg viewBox="0 0 660 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of the context window as working memory">
@@ -96,7 +96,7 @@ Everything the model can see at once, your conversation so far plus any document
 <figcaption>Working memory is large but finite; what falls outside it is invisible to the model.</figcaption>
 </figure>
 
-Using that working memory well, what to put in it, what to keep out of it, and when to start a fresh conversation, is a skill of its own; [Getting Better Answers](better-answers.md) covers it.
+Using that working memory well (what to put in it, what to keep out of it, and when to start a fresh conversation) is a skill of its own; [Getting Better Answers](better-answers.md) covers it.
 
 There is also a setting called temperature that controls how predictable the output is. Low temperature makes the model pick the most likely next token nearly every time, which produces consistent but sometimes flat responses. Higher temperature allows more variety. This is one reason the same question can produce different answers on different tries.
 
@@ -123,7 +123,7 @@ Hallucination is not a glitch. It follows directly from how the model works. The
 <rect x="415" y="28" width="235" height="52" rx="8" fill="var(--md-default-fg-color--lightest)" stroke="#2e7d32" stroke-width="2"/>
 <text x="532" y="50" text-anchor="middle" font-size="11.5" font-weight="bold" fill="var(--md-typeset-color)">plausible and true</text>
 <text x="532" y="68" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">a correct, confident answer</text>
-<rect x="415" y="125" width="235" height="52" rx="8" fill="var(--md-default-fg-color--lightest)" stroke="#c62828" stroke-width="2"/>
+<rect x="415" y="125" width="235" height="52" rx="8" fill="var(--md-default-fg-color--lightest)" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="532" y="147" text-anchor="middle" font-size="11.5" font-weight="bold" fill="var(--md-typeset-color)">plausible but invented</text>
 <text x="532" y="165" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">a hallucination, equally confident</text>
 <text x="650" y="203" text-anchor="end" font-size="10.5" font-style="italic" fill="var(--md-default-fg-color--light)">both read identically; only checking the source tells them apart</text>
@@ -143,10 +143,11 @@ A few rules of thumb follow directly from the mechanics described above.
 
 Treat outputs as a competent first draft from an assistant who has read widely but verifies nothing. Check claims against primary sources before they reach students or patients. Never paste protected health information (PHI) or student records covered by the Family Educational Rights and Privacy Act (FERPA) into consumer artificial intelligence (AI) tools; see the [tools directory](../tools/index.md) for the governance status of each tool at our institution.
 
-Finally, remember that capability is moving quickly. Specific model names and features will change; the fundamentals on this page, prediction, training, context, and hallucination, change much more slowly and remain the right lens for judging each new tool.
+Finally, remember that capability is moving quickly. Specific model names and features will change; the fundamentals on this page (prediction, training, context, and hallucination) change much more slowly and remain the right lens for judging each new tool.
 
 ## Where to go next
 
+- Came here from [Module 1: How AI Works](../pathway/how-ai-works.md)? Go back there for the rest of the module and its self-check.
 - The [Glossary](glossary.md) defines the terms used here, plus the rest of the vocabulary you will encounter.
 - [Common Misconceptions](misconceptions.md) addresses frequent misunderstandings directly.
-- The [Learning page](../learning/index.md) lists courses and videos if you want to go deeper.
+- [Courses and Resources](../learning/index.md) lists courses and videos if you want to go deeper.

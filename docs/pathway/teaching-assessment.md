@@ -24,7 +24,7 @@ The [Preparing a Lecture playbook](../playbooks/lecture-prep.md) walks the full 
 
 ### Assessment writing
 
-AI drafts plausible multiple choice questions (MCQs) quickly, and the evidence so far says quality is usable but uneven, with structural flaws that standard item-writing rules catch. Two non-negotiables frame the workflow: every AI-drafted item gets faculty review for accuracy and blueprint fit before use, and secure assessment materials (live exam items, answer keys, secure banks) never go into public AI tools. The [exam questions playbook](../playbooks/exam-items.md) gives the step-by-step, and the prompt library's [item writer and flaw checker](../prompts/index.md) carry the studies behind this as further reading.
+AI drafts plausible multiple choice questions (MCQs) quickly, and the evidence so far says quality is usable but uneven, with structural flaws that standard item-writing rules catch. Two non-negotiables frame the workflow: every AI-drafted item gets faculty review for accuracy and blueprint fit before use, and secure assessment materials (live exam items, answer keys, secure banks) never go into public AI tools. The [exam questions playbook](../playbooks/exam-items.md) gives the step-by-step, and the prompt library's [item writer](../prompts/index.md#single-best-answer-item-writer) and [flaw checker](../prompts/index.md#item-flaw-checker) carry the studies behind this as further reading.
 
 ### Evaluating student work
 
@@ -46,7 +46,7 @@ Students will use these tools; ambiguity serves no one. The policy delegates lab
 <text x="430" y="119" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">usable but uneven drafts; faculty review every item, and</text>
 <text x="430" y="133" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">finalized secure items never enter public tools</text>
 <text x="24" y="191" text-anchor="start" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">evaluating student work</text>
-<rect x="220" y="166" width="420" height="44" rx="6" fill="none" stroke="#c62828" stroke-width="2"/>
+<rect x="220" y="166" width="420" height="44" rx="6" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="430" y="184" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">FERPA territory: de-identify or do not use AI at all;</text>
 <text x="430" y="198" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">detector flags are indicators, never verdicts</text>
 </svg>
@@ -62,7 +62,7 @@ Students will use these tools; ambiguity serves no one. The policy delegates lab
     A closer human look, and nothing more. Detector outputs are preliminary indicators with known false-positive problems. An academic integrity action needs human review of the actual evidence and an opportunity for the student to respond, not a percentage from a black box.
 
 ??? question "Why are AI-drafted exam items kept out of public AI tools after they are finalized for use?"
-    Because a live exam item is secure assessment material: pasting it into a public tool risks exposing it (some tools learn from or store inputs), which compromises the assessment. Drafting with AI happens before items become secure; once they are finalized for use, they stay out of public tools.
+    Because a live exam item is secure assessment material: pasting it into a public tool risks exposing it (some tools learn from or store inputs), which compromises the assessment. Treat anything drafted in a public tool as already exposed, so do the final revision outside the tool before an item enters a secure bank, and never paste a finalized item back in.
 
 ## Going deeper
 

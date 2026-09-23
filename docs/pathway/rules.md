@@ -21,7 +21,7 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work,
 2. **Some data never goes in.** Public AI tools may store, learn from, or expose what you type, so entering sensitive information into them is prohibited unless a tool has been specifically vetted and approved for that data.
 
     !!! danger "Never in a public AI tool"
-        - Patient health information (PHI)
+        - Protected health information (PHI)
         - Student education records protected by the Family Educational Rights and Privacy Act (FERPA)
         - Confidential personnel information
         - AUA proprietary information, including unpublished research data
@@ -39,7 +39,7 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work,
 <text x="95" y="106" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">what you are</text>
 <text x="95" y="120" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">about to type</text>
 <line x1="172" y1="110" x2="216" y2="110" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rl-ar)"/>
-<rect x="220" y="30" width="220" height="175" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
+<rect x="220" y="30" width="220" height="175" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="330" y="52" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">does it contain:</text>
 <text x="330" y="74" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">patient information (PHI)</text>
 <text x="330" y="92" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">student records (FERPA)</text>
@@ -49,7 +49,7 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work,
 <text x="330" y="165" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">if you would not email it outside</text>
 <text x="330" y="178" text-anchor="middle" font-size="9" font-style="italic" fill="var(--md-default-fg-color--light)">the university, treat it the same</text>
 <line x1="442" y1="80" x2="478" y2="80" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rl-ar)"/>
-<rect x="482" y="45" width="160" height="62" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
+<rect x="482" y="45" width="160" height="62" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="562" y="66" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">yes: it stays out;</text>
 <text x="562" y="80" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">use a tool cleared for it</text>
 <text x="562" y="94" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">or de-identify first</text>
@@ -63,12 +63,12 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work,
 <figcaption>Rule 2 as a habit: run the gate before anything enters a public tool.</figcaption>
 </figure>
 
-If you see misuse, a data exposure, or a tool producing harmful or discriminatory output, the policy expects you to report it to the AI Responsible Use Subcommittee; the [About page](../about.md) has the contact route. Reports are handled confidentially, and retaliation against good-faith reporters is prohibited.
+If you see misuse, a data exposure, or a tool producing harmful or discriminatory output, the policy expects you to report it to the AI Responsible Use Subcommittee; the [AI Committee page](../governance/committee.md) gives the reporting contact. The policy commits the university to taking steps to protect reporters' confidentiality, and it prohibits retaliation against anyone who reports in good faith.
 
 ## Self-check
 
 ??? question "A student pastes a classmate's draft case write-up into a chatbot to get feedback for them. Any problem?"
-    Yes, potentially two. If the write-up contains patient details, that is PHI in a public tool. And another student's identifiable academic work is education-record territory; it is not yours to submit to a third-party service. De-identified, your-own-work feedback requests are the safe version.
+    Yes, potentially two. If the write-up contains patient details, that is PHI in a public tool. And another student's work is not yours to submit to a third-party service without their consent, even to help them. De-identified, your-own-work feedback requests are the safe version.
 
 ??? question "You used a chatbot to draft a paragraph of a committee report and edited it lightly. What does the policy expect?"
     That the AI contribution is acknowledged per the applicable guidelines, that you verified any factual claims in it, and that you stand behind the final text as your own responsibility. Light editing does not transfer accountability to the tool.
