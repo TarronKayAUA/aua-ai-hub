@@ -169,8 +169,9 @@ def main() -> int:
     failing = sorted({(r[0], r[1]) for r in results
                       if r[3] is not None and r[3] < args.min_px})
     n_figs = len({(r[0], r[1]) for r in results})
-    lines = [f"figure sheet: {len(pages)} pages, {n_figs} figures, "
-             f"4 conditions, threshold {args.min_px:g}px", ""]
+    header = (f"figure sheet: {len(pages)} pages, {n_figs} figures, "
+              f"4 conditions, threshold {args.min_px:g}px")
+    lines = [header, ""]
     for rel, idx in sorted({(r[0], r[1]) for r in results}):
         row = {r[2]: r[3] for r in results if (r[0], r[1]) == (rel, idx)}
         worst = min(v for v in row.values() if v is not None) if any(
