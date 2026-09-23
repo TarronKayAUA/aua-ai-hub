@@ -18,9 +18,9 @@ Everything kept in the last seven days. Items are selected several times a day b
 <p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 38 items"
+??? abstract "Show the 41 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (38)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (17)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (41)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
     <div class="news-list">
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
@@ -55,6 +55,27 @@ Everything kept in the last seven days. Items are selected several times a day b
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769517?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">Performance of ChatGPT-5 on the official sample questions for the Fellowship of the Royal College of Anaesthetists Final Written examination</a>
         <p class="news-card-summary">ChatGPT-5 performance on official Fellowship of the Royal College of Anaesthetists Final Written examination questions was evaluated to establish baseline performance in high-stakes anaesthesia certification.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772970?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">A Multi-Level Perspective on Generative AI Usage, Supervision, and Policy in Radiology Training and Education</a>
+        <p class="news-card-summary">A multi-level panel examines how generative AI is reshaping radiology training, documenting the gap between active trainee use and formal institutional guidance.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772746?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">Process-Oriented, Behaviorally Anchored Assessment of Clinical Reasoning in Large Language Models and the Effect of Extended Thinking: Protocol for a Prospective, Multigroup, Comparative Study</a>
+        <p class="news-card-summary">REACT-AI provides a reusable framework for assessing clinical reasoning in language models beyond accuracy metrics, enabling study of reasoning modes.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772047?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">Supporting shared mental models: How an AI facilitator shapes interprofessional team cognition in collaborative learning</a>
+        <p class="news-card-summary">An AI facilitator improved interprofessional teamwork by scaffolding metacognitive regulation, demonstrating AI as a process-oriented pedagogical tool beyond content delivery.</p>
       </div>
     </div>
     <div class="news-card" data-topic="assessment-and-feedback">
@@ -645,10 +666,18 @@ Everything kept in the last seven days. Items are selected several times a day b
 <p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the source items.</p>
 </div>
 
-??? abstract "Show the 53 items"
+??? abstract "Show the 54 items"
 
-    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (53)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
+    <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (54)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (20)</button><button class="topic-chip" data-topic="new-models">New models (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (4)</button></div>
     <div class="news-list">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 23, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel">OpenAI wants to consult elite mathematicians about how to not fumble again</a>
+        <p class="news-card-summary">OpenAI announced an independent panel of mathematicians to advise on responsible interaction with mathematical research after prior reputational issues.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2294952541.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.735367145048%2C100%2C78.529265709904&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 22, 2026</span></div>

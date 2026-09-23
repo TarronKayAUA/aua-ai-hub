@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -54,6 +54,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769517?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">Performance of ChatGPT-5 on the official sample questions for the Fellowship of the Royal College of Anaesthetists Final Written examination</a>
     <p class="news-card-summary">ChatGPT-5 performance on official Fellowship of the Royal College of Anaesthetists Final Written examination questions was evaluated to establish baseline performance in high-stakes anaesthesia certification.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772970?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">A Multi-Level Perspective on Generative AI Usage, Supervision, and Policy in Radiology Training and Education</a>
+    <p class="news-card-summary">A multi-level panel examines how generative AI is reshaping radiology training, documenting the gap between active trainee use and formal institutional guidance.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772746?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">Process-Oriented, Behaviorally Anchored Assessment of Clinical Reasoning in Large Language Models and the Effect of Extended Thinking: Protocol for a Prospective, Multigroup, Comparative Study</a>
+    <p class="news-card-summary">REACT-AI provides a reusable framework for assessing clinical reasoning in language models beyond accuracy metrics, enabling study of reasoning modes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772047?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">Supporting shared mental models: How an AI facilitator shapes interprofessional team cognition in collaborative learning</a>
+    <p class="news-card-summary">An AI facilitator improved interprofessional teamwork by scaffolding metacognitive regulation, demonstrating AI as a process-oriented pedagogical tool beyond content delivery.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -103,27 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Artificial Intelligence Readiness in Emergency Medicine: Expert Consensus Opinion for Preparing the Workforce</a>
     <p class="news-card-summary">Expert consensus that emergency medicine workforce lacks foundational skills to evaluate and safely deploy AI tools now entering triage, imaging, and documentation workflows.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">The Long road to AI-physician partnership starts with learners: a map for AI in medical education</a>
-    <p class="news-card-summary">Medical learners are already using generative AI informally in clinical work; policy and pedagogy must adapt to integrate these tools rather than restrict them.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Generative AI Research in Health Professions Education: A Scoping Review</a>
-    <p class="news-card-summary">Scoping review of 517 publications mapping generative AI research across health professions education from 2022-2025, showing rapid GPT-model dominance and fragmented application.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42756506?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Let&#x27;s Talk Systems - What Do We Really Mean by a Systems Approach in AI-Enhanced Medical Education?</a>
-    <p class="news-card-summary">Conceptual framework examining how AI reshapes medical education through assessment generation, simulation, adaptive feedback, and clinical decision support as integrated systems.</p>
   </div>
 </div>
 </div>
