@@ -1,0 +1,95 @@
+# Next-token stepper on docs/basics/how-llms-work.md (owner approved
+# 2026-09-23, from the fresh-eyes design review).
+#
+# The reader clicks through one reply a token at a time, in two scenarios
+# that differ only in what the model can see: with no paper, the number step
+# is a flat spread of guesses; with the paper pasted in, one number
+# dominates. Same model, same loop; the source is what changed the odds.
+#
+# Rendered by scripts/render_data.py (marker <!-- render:next-token-demo -->)
+# into a JSON island read by docs/javascripts/next-token.js. The static loop
+# diagram above it on the page remains the no-JavaScript version.
+#
+# ILLUSTRATIVE DATA: a made-up trial and made-up probabilities, and the page
+# says so. Keep it plausible, never presented as a real model's output.
+#
+# The render hook refuses to build if any of these break:
+#   - every scenario has the same number of steps as the first
+#   - each step's candidate percentages plus `other` sum to exactly 100
+#   - candidates are listed most likely first (the first one is the pick)
+#   - no em dashes anywhere
+#
+# Quote any token or note containing ": " or starting with punctuation, so
+# YAML keeps it a string (a bare "." or a colon-space breaks parsing).
+
+title: "Step through a reply, one token at a time"
+ask: "Summarize the trial in one sentence."
+attachment: "trial-paper.pdf, in the context window"
+start_note: "Press Next token. The model scores candidates for the first token and takes the most likely one."
+disclaimer: >-
+  Illustrative: a made-up trial and made-up probabilities, not output from a
+  real model. Here the model always takes its top candidate, as it nearly
+  always does at a low temperature; real models score every token in a
+  vocabulary of many thousands at each step.
+noscript: "This demonstration needs JavaScript. The diagram above shows the same loop."
+
+scenarios:
+  - key: none
+    label: "No paper provided"
+    final: >-
+      Finished. The sentence reads as confidently at 240, which was a guess,
+      as at the words the model was nearly sure of. Nothing in the output
+      marks the difference.
+    steps:
+      - cands: [["The", 71], ["This", 17], ["In", 7]]
+        other: 5
+        note: "How a one-sentence summary usually starts. The model is fairly sure."
+      - cands: [["trial", 62], ["study", 24], ["randomized", 9]]
+        other: 5
+        note: "Your question said trial, so trial leads."
+      - cands: [["enrolled", 55], ["found", 22], ["included", 14]]
+        other: 9
+        note: "A summary of a trial tends to say who took part next."
+      - cands: [["240", 9], ["120", 8], ["312", 7], ["200", 7], ["1,000", 6]]
+        other: 63
+        other_label: "other numbers"
+        note: >-
+          Nothing in the conversation says how many people took part. Hundreds
+          of numbers are about equally plausible, so no bar is long, and the
+          model picks one anyway.
+      - cands: [["patients", 78], ["participants", 14], ["adults", 6]]
+        other: 2
+        note: "Back on firm ground: after a number, a word for people is very likely."
+      - cands: [[".", 66], ["with", 21], ["across", 8]]
+        other: 5
+        note: "One sentence was asked for, so the sentence ends."
+
+  - key: pasted
+    label: "Paper pasted in"
+    final: >-
+      Finished, and this time the number came from your source. It reads
+      exactly like the guessed version, which is why checking the output
+      against the source is still your job.
+    steps:
+      - cands: [["The", 71], ["This", 17], ["In", 7]]
+        other: 5
+        note: "How a one-sentence summary usually starts. The model is fairly sure."
+      - cands: [["trial", 62], ["study", 24], ["randomized", 9]]
+        other: 5
+        note: "Your question said trial, so trial leads."
+      - cands: [["enrolled", 55], ["found", 22], ["included", 14]]
+        other: 9
+        note: "A summary of a trial tends to say who took part next."
+      - cands: [["312", 96], ["310", 1], ["300", 1]]
+        other: 2
+        other_label: "other numbers"
+        note: >-
+          The paper is in the context window and states the enrollment, so one
+          number dominates. Same model, same loop: what changed the odds is the
+          source you supplied.
+      - cands: [["patients", 78], ["participants", 14], ["adults", 6]]
+        other: 2
+        note: "After a number, a word for people is very likely."
+      - cands: [[".", 66], ["with", 21], ["across", 8]]
+        other: 5
+        note: "One sentence was asked for, so the sentence ends."

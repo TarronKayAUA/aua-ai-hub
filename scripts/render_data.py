@@ -16,6 +16,7 @@ Verification counts are printed on every build and the hook raises (failing
 the build) if totals do not cross-check (CLAUDE.md working rule 2).
 """
 
+import html
 import json
 import re
 from datetime import date
@@ -38,6 +39,7 @@ PROMPT_RESOURCES_MARKER = "<!-- render:prompt-resources -->"
 SKILLS_MARKER = "<!-- render:skills -->"
 COMMITTEE_MARKER = "<!-- render:committee -->"
 HARDWARE_ESTIMATOR_MARKER = "<!-- render:hardware-estimator -->"
+NEXT_TOKEN_MARKER = "<!-- render:next-token-demo -->"
 
 PROMPT_CATEGORY_LABELS = {
     "research": "Research",
@@ -246,6 +248,97 @@ def _render_hardware_estimator(config) -> str:
         f'<script type="application/json" id="hw-data">{payload}</script>\n'
         '<div class="hw-estimator" id="hw-estimator"></div>\n\n'
         + "".join(rows) + "\n"
+    )
+
+
+def _render_next_token_demo(config) -> str:
+    """Container, controls and data island for the next-token stepper
+    (docs/javascripts/next-token.js) on basics/how-llms-work.md, owner
+    approved 2026-09-23. Every word a reader sees comes from
+    data/next_token_demo.yaml except the button labels; the checks below
+    are the rules stated in that file's header. The marker is an HTML
+    comment, which the narration extractor strips, so adding or changing
+    the demo never changes the page's spoken text."""
+    path = _data_dir(config) / "next_token_demo.yaml"
+    if not path.exists():
+        raise FileNotFoundError(f"render_data hook: missing data file {path}")
+    demo = yaml.safe_load(path.read_text(encoding="utf-8"))
+    scenarios = demo["scenarios"]
+    if len(scenarios) < 2:
+        raise ValueError("render_data hook: next_token_demo needs two scenarios")
+    n_steps = len(scenarios[0]["steps"])
+    payload = {"start_note": demo["start_note"], "scenarios": {}}
+    for sc in scenarios:
+        if len(sc["steps"]) != n_steps:
+            raise ValueError(
+                f"render_data hook: next_token_demo scenario {sc['key']!r} has "
+                f"{len(sc['steps'])} steps, expected {n_steps}")
+        steps = []
+        for i, step in enumerate(sc["steps"], 1):
+            pcts = [int(p) for _, p in step["cands"]]
+            total = sum(pcts) + int(step.get("other", 0))
+            if total != 100:
+                raise ValueError(
+                    f"render_data hook: next_token_demo {sc['key']} step {i} "
+                    f"sums to {total}, not 100")
+            if pcts != sorted(pcts, reverse=True):
+                raise ValueError(
+                    f"render_data hook: next_token_demo {sc['key']} step {i} "
+                    "candidates are not listed most likely first")
+            steps.append({"cands": [[str(t), int(p)] for t, p in step["cands"]],
+                          "other": int(step.get("other", 0)),
+                          "otherLabel": step.get("other_label", "everything else"),
+                          "note": step["note"]})
+        payload["scenarios"][sc["key"]] = {"label": sc["label"], "steps": steps,
+                                          "final": sc["final"]}
+    blob = json.dumps(payload, ensure_ascii=False)
+    if "\u2014" in blob or "\u2014" in json.dumps(demo, ensure_ascii=False):
+        raise ValueError("render_data hook: em dash in next_token_demo.yaml")
+    # A literal "</" inside the island would end the script element early.
+    blob = blob.replace("</", "<\\/")
+
+    chips = []
+    for i, sc in enumerate(scenarios):
+        active = i == 0
+        chips.append(
+            f'<button type="button" class="nt-chip{" is-active" if active else ""}" '
+            f'data-scenario="{html.escape(sc["key"])}" '
+            f'aria-pressed="{"true" if active else "false"}">'
+            f'{html.escape(sc["label"])}</button>')
+    print("render_data: next-token demo verification")
+    print(f"  scenarios   : {len(scenarios)}")
+    print(f"  steps each  : {n_steps} (all sum to 100)")
+    esc = html.escape
+    return (
+        '<div class="nt-demo" id="nt-demo" markdown="0">\n'
+        f'<p class="nt-title">{esc(demo["title"])}</p>\n'
+        '<div class="nt-scenarios" role="group" aria-label="What the model can see">\n'
+        + "\n".join(chips) + "\n</div>\n"
+        '<div class="nt-context">\n'
+        '<span class="nt-label">You asked</span>\n'
+        f'<span class="nt-ask">{esc(demo["ask"])}</span>\n'
+        f'<span class="nt-attach" hidden>{esc(demo["attachment"])}</span>\n'
+        '</div>\n'
+        '<div class="nt-reply">\n'
+        '<span class="nt-label">Reply so far</span>\n'
+        '<span class="nt-text"></span><span class="nt-caret" aria-hidden="true"></span>\n'
+        '</div>\n'
+        '<div class="nt-weigh">\n'
+        '<span class="nt-label nt-weigh-label">What the model will weigh</span>\n'
+        '<ul class="nt-cands"></ul>\n'
+        f'<p class="nt-note">{esc(demo["start_note"])}</p>\n'
+        '<p class="nt-final" hidden></p>\n'
+        '</div>\n'
+        '<div class="nt-controls">\n'
+        '<button type="button" class="nt-next">Next token</button>\n'
+        '<button type="button" class="nt-reset">Start over</button>\n'
+        f'<span class="nt-count">Token 0 of {n_steps}</span>\n'
+        '</div>\n'
+        '<p class="nt-status" role="status" aria-live="polite"></p>\n'
+        f'<p class="nt-disclaimer">{esc(demo["disclaimer"])}</p>\n'
+        f'<noscript><p class="nt-note">{esc(demo["noscript"])}</p></noscript>\n'
+        f'<script type="application/json" id="nt-data">{blob}</script>\n'
+        '</div>\n'
     )
 
 
@@ -1395,6 +1488,13 @@ def on_page_markdown(markdown, page, config, files):
             GUIDE_VIDEOS_LOCAL_MARKER,
             _render_guide_videos_group(config, "local"),
         )
+    if src == "basics/how-llms-work.md":
+        if NEXT_TOKEN_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: basics/how-llms-work.md is missing the "
+                f"{NEXT_TOKEN_MARKER} marker"
+            )
+        return markdown.replace(NEXT_TOKEN_MARKER, _render_next_token_demo(config))
     if src == "tools/hardware.md":
         if HARDWARE_ESTIMATOR_MARKER not in markdown:
             raise AssertionError(

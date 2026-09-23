@@ -1222,3 +1222,278 @@
     transform: none;
   }
 }
+
+/* === Next-token stepper (How LLMs Work, owner approved 2026-09-23) ========
+   docs/javascripts/next-token.js with data/next_token_demo.yaml. Same frame
+   as the site's other widgets: a left brand rule on the code background.
+   Colors are scheme-aware tokens only. The newest word is underlined, so
+   nothing depends on seeing the arrival animation, and that animation and
+   the bar fill are removed under prefers-reduced-motion. */
+.md-typeset .nt-demo {
+  margin: 1rem 0 1.4rem;
+  padding: 0.9rem 1.1rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-left: 0.2rem solid var(--md-primary-fg-color);
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: var(--md-code-bg-color);
+  font-size: 0.76rem;
+  --nt-tint: rgba(7, 97, 140, 0.18);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .nt-demo {
+  border-left-color: var(--md-typeset-a-color);
+  --nt-tint: rgba(90, 163, 199, 0.28);
+}
+
+.md-typeset .nt-title {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.md-typeset .nt-label {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .nt-scenarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin: 0 0 0.7rem;
+}
+
+.md-typeset .nt-chip {
+  font: inherit;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  padding: 0.05rem 0.7rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 1px solid var(--md-default-fg-color--light);
+  background: transparent;
+  color: var(--md-typeset-color);
+}
+
+.md-typeset .nt-chip.is-active {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: #ffffff;
+}
+
+.md-typeset .nt-context,
+.md-typeset .nt-reply {
+  margin: 0 0 0.6rem;
+}
+
+.md-typeset .nt-ask {
+  font-style: italic;
+}
+
+.md-typeset .nt-attach {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0 0.5rem;
+  border-radius: 0.8rem;
+  font-size: 0.66rem;
+  background: var(--md-default-fg-color--lightest);
+}
+
+/* `hidden` loses to any author `display`, so restate it; without this the
+   attachment chip showed in the no-paper scenario. */
+.md-typeset .nt-demo [hidden] {
+  display: none;
+}
+
+.md-typeset .nt-final {
+  margin: 0 0 0.7rem;
+  font-weight: 700;
+}
+
+.md-typeset .nt-reply {
+  padding: 0.45rem 0.7rem;
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  min-height: 3.4rem;
+}
+
+.md-typeset .nt-text {
+  font-size: 0.85rem;
+}
+
+.md-typeset .nt-newest {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--md-typeset-a-color);
+  border-radius: 0.15rem;
+}
+
+.md-typeset .nt-caret {
+  display: inline-block;
+  width: 0.08rem;
+  height: 1em;
+  margin-left: 0.15rem;
+  vertical-align: -0.12em;
+  background: var(--md-default-fg-color--light);
+}
+
+/* Material indents lists with [dir] selectors; match their weight. */
+[dir] .md-typeset ul.nt-cands {
+  list-style: none;
+  margin: 0.2rem 0 0.4rem;
+  padding: 0;
+}
+
+[dir] .md-typeset .nt-cands li.nt-cand {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr 5.2rem;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0 0 0.25rem;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.md-typeset .nt-tok {
+  font-family: var(--md-code-font-family);
+  font-size: 0.72rem;
+}
+
+.md-typeset .nt-bar {
+  height: 0.55rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  background: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .nt-fill {
+  display: block;
+  height: 100%;
+  border-radius: 0.3rem;
+  background: var(--md-default-fg-color--light);
+  transition: width 360ms cubic-bezier(0.2, 0.7, 0.3, 1);
+}
+
+.md-typeset .nt-pct {
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+  font-variant-numeric: tabular-nums;
+}
+
+.md-typeset .is-picked .nt-tok,
+.md-typeset .is-picked .nt-pct {
+  font-weight: 700;
+  color: var(--md-typeset-color);
+}
+
+.md-typeset .is-picked .nt-fill {
+  background: var(--md-typeset-a-color);
+}
+
+.md-typeset .is-other .nt-tok {
+  font-family: inherit;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .is-other .nt-fill {
+  background: repeating-linear-gradient(135deg, var(--md-default-fg-color--lighter) 0 3px, transparent 3px 6px);
+}
+
+.md-typeset .nt-note {
+  margin: 0.3rem 0 0.7rem;
+  min-height: 2.6em;
+}
+
+.md-typeset .nt-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.md-typeset .nt-controls button {
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.25rem 0.8rem;
+  border-radius: 0.3rem;
+  border: 0.05rem solid var(--md-typeset-a-color);
+  background: transparent;
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .nt-controls .nt-next {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: #ffffff;
+}
+
+.md-typeset .nt-controls .nt-next:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.md-typeset .nt-controls button:focus-visible,
+.md-typeset .nt-chip:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}
+
+.md-typeset .nt-count {
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Screen-reader-only live region. */
+.md-typeset .nt-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.md-typeset .nt-disclaimer {
+  margin: 0.7rem 0 0;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+@keyframes nt-arrive {
+  0% { background-color: var(--nt-tint); transform: translateY(0.25em); opacity: 0.2; }
+  25% { transform: none; opacity: 1; }
+  100% { background-color: transparent; }
+}
+
+.md-typeset .nt-arrive {
+  display: inline-block;
+  animation: nt-arrive 1.1s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .nt-fill {
+    transition: none;
+  }
+
+  .md-typeset .nt-arrive {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  [dir] .md-typeset .nt-cands li.nt-cand {
+    grid-template-columns: 5.2rem 1fr 4.4rem;
+    gap: 0.4rem;
+  }
+}

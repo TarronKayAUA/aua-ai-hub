@@ -100,6 +100,8 @@ Using that working memory well (what to put in it, what to keep out of it, and w
 
 There is also a setting called temperature that controls how predictable the output is. Low temperature makes the model pick the most likely next token nearly every time, which produces consistent but sometimes flat responses. Higher temperature allows more variety. This is one reason the same question can produce different answers on different tries.
 
+<!-- render:next-token-demo -->
+
 ## Why models make things up
 
 The failure mode everyone in medicine needs to understand is hallucination, sometimes called confabulation: the model states something false with complete fluency and confidence. A fabricated citation with a plausible journal name, real author names, and a fake page range is the classic example.
