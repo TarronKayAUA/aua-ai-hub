@@ -8,4 +8,4 @@ Curated starting points on prompting current models, from short guides to peer-r
 
 <!-- render:prompt-resources -->
 
-For the habits these resources teach, applied to this site's own templates, head to the [Prompt Library](index.md); studies specific to one kind of task (literature screening, question writing, study planning) appear as further reading under that task's section there. The pathway's [Prompting Fundamentals module](../pathway/prompting.md) is the 15-minute version of what these resources cover in depth.
+For the habits these resources teach, applied to this site's own templates, head to the [Prompt Library](index.md); studies specific to one kind of task (literature screening, question writing, study planning) appear as further reading under that task's section there. The pathway's [Prompting Fundamentals module](../pathway/prompting.md) is the 15-minute version of what these resources cover in depth. For broader courses on AI beyond prompting, see [Courses and Resources](../learning/index.md).

@@ -41,7 +41,7 @@ This site was built for the whole American University of Antigua College of Medi
 
 </div>
 
-## The lines that never move
+## The lines that never move: patient data, classmates' work, exams {: #the-lines-that-never-move }
 
 These hold at every stage below, whatever the tool and whatever the pressure. The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible Use Policy](governance/policy.md).
 
@@ -73,7 +73,7 @@ This is where the daily habits form, and the ones that pay off share a shape: th
 - **Do not let AI draw your anatomy.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong; the [misconceptions page](basics/misconceptions.md) explains what to use instead.
 - **Calibrating trust.** Fluency is not accuracy; the [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, which matters double for exams and wards.
 
-## Around an exam
+## Around an exam: NBME, USMLE Step 1 and course exams {: #around-an-exam }
 
 **Before.** The [NBME-style question tutor](prompts/index.md#nbme-style-question-tutor) in exam mode drills first and debriefs after, which is closer to the real thing than reading explanations as you go. Build questions from the lectures you were actually taught, not from a general model's memory of the subject, and treat every explanation as something to check rather than something to trust.
 

@@ -76,7 +76,7 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     The university's AI Responsible Use Policy, the committee behind it, and how tools get reviewed.
 
-    [See how AI is governed](governance/index.md)
+    [See how AI is governed](governance/index.md) · [The data rules](pathway/rules.md)
 
 - :material-calendar-star:{ .lg .middle } __Conferences and Opportunities__
 
@@ -86,7 +86,7 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     [See the calendar](conferences.md) · [See open calls](opportunities.md)
 
-- :material-newspaper-variant:{ .lg .middle } __Follow the Field__
+- :material-newspaper-variant:{ .lg .middle } __News & Events__
 
     ---
 

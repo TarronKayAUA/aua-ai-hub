@@ -47,7 +47,7 @@ If you read nothing else, the literacy pathway's plain-language modules cover th
 3. [The Rules](pathway/rules.md): what never enters a public AI tool, and what the university expects when AI contributes to work.
 4. [Teaching and Assessment](pathway/teaching-assessment.md): where AI genuinely helps in course preparation and evaluation, and where it needs your expert review.
 
-## The lines that never move
+## The lines that never move: patient data, student records, exams {: #the-lines-that-never-move }
 
 The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible Use Policy](governance/policy.md); the short version:
 
