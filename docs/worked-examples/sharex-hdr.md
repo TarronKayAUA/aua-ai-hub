@@ -6,7 +6,7 @@ last_reviewed: 2026-09-03
 
 <span class="meta-chip">For anyone thinking of contributing to open source</span><span class="meta-chip">About 9 minutes</span> <span class="meta-note">A worked example, in someone else's codebase, with an ending I did not control.</span>
 
-ShareX is a screenshot tool that several million people use. On a monitor capable of high dynamic range (HDR), which is now most decent monitors, it produced washed out and slightly grey screenshots, and the accepted workaround was to turn HDR off before every single capture and turn it back on afterwards.
+ShareX is a screenshot tool that several million people use. On a monitor capable of high dynamic range (HDR), which is now most decent monitors, it produced washed out and slightly gray screenshots, and the accepted workaround was to turn HDR off before every single capture and turn it back on afterwards.
 
 Somebody opened an issue about this in January 2023. By the summer of 2026 it had accumulated 280 comments, most of them variations on "please".
 
@@ -132,7 +132,7 @@ Display discovery worked. The shaders compiled. The settings, the routing and th
 
 I published it anyway, with that limitation written into the documentation rather than quietly omitted, and posted it publicly with the same caveat plus the two monitors I had genuinely tested on and their peak brightness.
 
-The comment I left on that thread opened with four words:
+The comment I left on that thread included four words:
 
 > I'm not a programmer!
 

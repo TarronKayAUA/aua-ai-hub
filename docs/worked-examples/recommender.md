@@ -87,7 +87,7 @@ Which brings us back to the frame rate counter.
 
 Importing a games library hands you hours played, and hours played looks like an absolute gift to a system that needs to know what you enjoy. It was sold to me, cheerfully and correctly, as the solution to the cold start problem on the games shelf (a recommender knows nothing about your taste until you have rated things). It ran. It produced numbers. The numbers populated a profile and the profile fed recommendations and every part of that pipeline was working as specified.
 
-Then I looked at it. Genuinely excellent games sat at 3.0. My inferred favourites were, in order, the games I had left running longest, which is a category that includes several I actively resent. And underneath the comedy sat something worse: a game I had never launched scored 30, and 30 is also precisely what the system writes when a person deliberately says *I disliked this*. My backlog, two hundred games of good intentions, was being read as two hundred active dislikes.
+Then I looked at it. Genuinely excellent games sat at 3.0. My inferred favorites were, in order, the games I had left running longest, which is a category that includes several I actively resent. And underneath the comedy sat something worse: a game I had never launched scored 30, and 30 is also precisely what the system writes when a person deliberately says *I disliked this*. My backlog, two hundred games of good intentions, was being read as two hundred active dislikes.
 
 Playtime measures retention. It has almost nothing to do with affection. The two correlate just enough to look like a signal and not nearly enough to be one.
 
@@ -129,7 +129,7 @@ The second is that the same discipline caught the first version cheating.
 
 Version one chose which pairs to show me by always choosing whichever pair covered the most new genres, which had the unadvertised effect of making rare, oddball titles the most attractive things in the library to put on screen. Which meant my "unpopular" results were partly just a census of my own shelves, wearing a preference's clothes and looking very convincing.
 
-The tell was a correlation of +0.50 between how rare a title's genre was and how often it lost. Nothing on the screen looked wrong. Nothing in the code was wrong. It was found only by checking the answers against the thing the chooser had been quietly optimising for, which is a check you only think to run if you have already accepted that your instruments can flatter you.
+The tell was a correlation of +0.50 between how rare a title's genre was and how often it lost. Nothing on the screen looked wrong. Nothing in the code was wrong. It was found only by checking the answers against the thing the chooser had been quietly optimizing for, which is a check you only think to run if you have already accepted that your instruments can flatter you.
 
 And none of this was possible at first, because the application had cheerfully shown 118 recommendations while keeping no record whatsoever of which ones it had shown, in what order, or what anybody did next. There is no clever statistics that recovers from that. Somebody has to write down what was asked before anything can be learned from the answer.
 
@@ -140,7 +140,7 @@ And none of this was possible at first, because the application had cheerfully s
 
 ## What the measurements said when I stopped flattering myself
 
-An audit in September asked the rude question: is the personalisation actually doing anything?
+An audit in September asked the rude question: is the personalization actually doing anything?
 
 The answer is that most of the machinery is worth about two cards in ten. The language model's general knowledge is doing most of the work. At one point a deliberately scrambled version of my taste profile predicted my ratings better than the real one, which is the sort of result that makes you put your coffee down.
 
@@ -154,7 +154,7 @@ Nearly everything technical was delegated. The database, the deployment, the sta
 
 What stayed with me was narrower than I expected and, it turns out, sufficient.
 
-The boundary stayed with me. The system may track content from unofficial sources but must never scrape their catalogues or link to unlicensed streams. I set that in the first hour, by refusing my own euphemism and making myself say plainly what I meant, and it never moved afterwards.
+The boundary stayed with me. The system may track content from unofficial sources but must never scrape their catalogs or link to unlicensed streams. I set that in the first hour, by refusing my own euphemism and making myself say plainly what I meant, and it never moved afterwards.
 
 Money stayed with me. Every ceiling, the per-person quota built twelve hours in before anybody else even had an account, and the shutdown procedure written on the day the storage was approved rather than on the day something went wrong.
 

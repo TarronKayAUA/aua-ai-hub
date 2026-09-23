@@ -71,7 +71,7 @@ Tier C is the one doing the work, and it is the tier most consumer genetics quie
 
 **Unconfirmed stays unconfirmed.** Rare pathogenic-looking calls in consumer array data are wrong roughly forty percent of the time, because the probes misbehave precisely where variants are rare. So the standing rule was that any alarming rare result gets flagged as a probable artifact until clinically retested, and never reported as a finding. If you take one thing from this article into your own life, take that one.
 
-**And some things were refused outright.** I wanted to look at cognitive and behavioural traits, because of course I did. Those live in thousands of tiny-effect variants and can only be read through a polygenic score, and published scores are trained overwhelmingly on European-ancestry cohorts with well-documented miscalibration when applied to a South Asian genome. The answer I got, which I kept because it was better than the question:
+**And some things were refused outright.** I wanted to look at cognitive and behavioral traits, because of course I did. Those live in thousands of tiny-effect variants and can only be read through a polygenic score, and published scores are trained overwhelmingly on European-ancestry cohorts with well-documented miscalibration when applied to a South Asian genome. The answer I got, which I kept because it was better than the question:
 
 > A number I could technically compute for you would be pseudo-quantitative garbage, and those websites you used years ago handed people exactly that. I won't.
 
@@ -120,7 +120,7 @@ Two hundred and eighty-five grams. Per copy. That is the effect, drawn from over
 
 It is also about the weight of a large apple, set against a physique that differs from the population mean by several kilograms. My one copy accounts for single-digit percent of the thing I was trying to explain. The variant is very probably in my genome and it is very nearly irrelevant to the question I asked it.
 
-The same pattern holds for the other trait it touches, incidentally. It associates with roughly three millimetres of additional height per copy. The palaeoanthropologist John Hawks made exactly this point in his commentary on the paper: three millimetres is not much for one person, and folk reasoning about archaic ancestry is a poor way to explain individual traits.
+The same pattern holds for the other trait it touches, incidentally. It associates with roughly three millimeters of additional height per copy. The paleoanthropologist John Hawks made exactly this point in his commentary on the paper: three millimeters is not much for one person, and folk reasoning about archaic ancestry is a poor way to explain individual traits.
 
 ## The correction, which was the most useful thing that happened
 
@@ -141,7 +141,7 @@ And I could only catch it because mandibular anatomy happens to be inside my tra
 - Put the deflating context on the table before you search, not after you find something. Afterwards is too late to be honest with yourself.
 - Grade every claim, and make sure your weakest grade says out loud that the finding is individually meaningless. Most consumer genetics omits that tier entirely, which is precisely how it sells.
 - Decide what you will refuse to compute before a tempting number exists.
-- Genotype data cannot be anonymised by deleting a header. Parse it where it sits.
+- Genotype data cannot be anonymized by deleting a header. Parse it where it sits.
 - Press hard on something inside your own expertise. It is the only place you can referee, and what you learn there tells you how much to trust everything else.
 
 ## Why only one result appears here
