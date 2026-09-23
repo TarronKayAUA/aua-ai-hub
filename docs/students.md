@@ -73,6 +73,26 @@ This is where the daily habits form, and the ones that pay off share a shape: th
 - **Do not let AI draw your anatomy.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong; the [misconceptions page](basics/misconceptions.md) explains what to use instead.
 - **Calibrating trust.** Fluency is not accuracy; the [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, which matters double for exams and wards.
 
+## Building a study schedule {: #building-a-study-schedule }
+
+A schedule is only as good as what goes into it. The [study schedule builder](prompts/index.md#study-schedule-builder) is written for this school's block structure, either keeping up through a block or counting down to one exam such as a remedial. Before you use it, gather:
+
+- **Your course syllabus**, the version that lists the learning objectives. It turns "review neuro" into named objectives you can act on.
+- **The teaching calendar**, with your individual readiness assurance test (iRAT), quiz, and end-of-system exam dates.
+- **Any score reports from this block**, with your name and student number removed.
+- **Your honest hours** per day, and your fixed commitments.
+- **A few sentences on what you think is going wrong.** It is the most useful thing you can give it.
+
+What a good schedule has, whoever builds it:
+
+- **Clock times and named content**, each block ending in something you produce: a diagram drawn from memory, a set number of questions on named objectives. "Review cardiology" is not a plan.
+- **The weekly rhythm**: preparation before team-based learning, each lecture consolidated within a day, a spaced revisit of earlier material from the block, and a question set.
+- **Your school's lectures and slides as the main source.** Exams before your final term are written in-house from them; question banks and flashcards support them.
+- **What you are not studying, and why.** A plan that covers everything thoroughly has not made the hard choices.
+- **Checkpoints and a buffer**: a review after each assessment, and slack so one bad day does not sink the week.
+
+Take the result to your advisor. After your next assessment, the [study plan progress check](prompts/index.md#study-plan-progress-check) tells you honestly whether it is working.
+
 ## Around an exam: NBME, USMLE Step 1 and course exams {: #around-an-exam }
 
 **Before.** The [NBME-style question tutor](prompts/index.md#nbme-style-question-tutor) in exam mode drills first and debriefs after, which is closer to the real thing than reading explanations as you go. Build questions from the lectures you were actually taught, not from a general model's memory of the subject, and treat every explanation as something to check rather than something to trust.
