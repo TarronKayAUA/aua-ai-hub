@@ -6,6 +6,8 @@ last_reviewed: 2026-07-14
 
 Short, plain-language definitions of the artificial intelligence (AI) terms you will meet on this site and in the wider literature. Entries are alphabetized.
 
+<!-- render:glossary-az -->
+
 <div class="glossary" markdown>
 
 ## Agent

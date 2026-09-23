@@ -68,7 +68,7 @@ This is where the daily habits form, and the ones that pay off share a shape: th
 - **Three prompts written for this stage.** A lecture tutor, a daily review sheet builder, and a National Board of Medical Examiners (NBME)-style question tutor, all working from the lecture you attach, in the [prompt library](prompts/index.md).
 - **Documents, without the fiddling.** Scanned PDFs, exported spreadsheets, and study sheets as real files: the [Skills page](tools/skills.md) covers what is switched on, and why unknown skills deserve caution.
 - **One notebook per course.** [Gemini Notebook](tools/gemini-notebook.md) (formerly NotebookLM) answers from what you upload, with citations; it finds well and summarizes less reliably.
-- **Finding study tools.** The [Medical Learning tools](tools/index.md#medical-learning) are built for this; statuses describe the institution's relationship with a tool, not an endorsement.
+- **Finding study tools.** The [study tools](tools/index.md?task=study) are built for this; statuses describe the institution's relationship with a tool, not an endorsement.
 - **Better answers, less effort.** [Getting Better Answers](basics/better-answers.md) explains the three levers that decide quality: context, memory, and standing instructions.
 - **Do not let AI draw your anatomy.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong; the [misconceptions page](basics/misconceptions.md) explains what to use instead.
 - **Calibrating trust.** Fluency is not accuracy; the [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, which matters double for exams and wards.

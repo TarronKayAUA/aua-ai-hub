@@ -604,6 +604,14 @@ benchmarks:
     fallback_version: "2026_06_25"
     rows: 15
 
+# This Week page, two tiers (owner approved 2026-09-23): each section shows
+# its newest items directly and the rest behind one "Show the other N" bar.
+# Before this every item sat behind a bar, and the page ran to about 64
+# phone screens once opened. Topic chips filter both tiers.
+this_week:
+  news: 10
+  media: 6
+
 # Curated YouTube channels for the Videos page. Feed URLs derive from
 # channel_id: https://www.youtube.com/feeds/videos.xml?channel_id=<id>
 # All channel ids resolved from the channels' own pages and verified with

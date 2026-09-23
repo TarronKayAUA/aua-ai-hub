@@ -2359,10 +2359,26 @@ def _collapsed_block(summary: str, chunks: list[str]) -> list[str]:
     return out
 
 
+def _two_tiers(first: list[str], rest: list[str], rest_label: str) -> list[str]:
+    """The This Week page's two tiers (owner approved 2026-09-23): the first
+    chunks show directly, and the rest sit behind one collapsed bar. The
+    page had put every item behind a bar, 64 phone screens once opened."""
+    out = [*first, ""]
+    if rest:
+        out.extend(_collapsed_block(rest_label, rest))
+        out.append("")
+    return out
+
+
 def render_this_week(categories: dict, by_category: dict, videos: list[dict],
                      podcasts: list[dict],
-                     briefs: dict | None = None) -> str:
-    """Rolling trailing-seven-day view, regenerated on every run."""
+                     briefs: dict | None = None,
+                     first_tier: dict | None = None) -> str:
+    """Rolling trailing-seven-day view, regenerated on every run. Each
+    section shows its newest items directly (feeds.yaml this_week, default
+    10 news items and 6 videos or episodes) and the rest behind one bar;
+    topic chips filter both tiers (docs/javascripts/topics.js)."""
+    tiers = {"news": 10, "media": 6, **(first_tier or {})}
     lines = [
         COMMENTS_FRONT_MATTER + GENERATED_HEADER,
         "",
@@ -2397,36 +2413,44 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
                 "</div>"
             )
             lines.append("")
-        noun = "item" if len(records) == 1 else "items"
         chips = _topic_chips_html(records)
-        lines.extend(_collapsed_block(
-            f"Show the {len(records)} {noun}",
+        top, rest = records[:tiers["news"]], records[tiers["news"]:]
+        noun = "item" if len(rest) == 1 else "items"
+        lines.extend(_two_tiers(
             ([chips] if chips else [])
             + ['<div class="news-list">',
-               *(render_item_md(r, suppress) for r in records),
-               "</div>"]))
-        lines.append("")
+               *(render_item_md(r, suppress) for r in top),
+               "</div>"],
+            ['<div class="news-list news-list--more">',
+             *(render_item_md(r, suppress) for r in rest),
+             "</div>"],
+            f"Show the other {len(rest)} {noun}"))
     if videos or podcasts:
         # Curated articles above, media below: a change of kind, marked
         # the same way the tools page splits services from model files.
         if not empty:
             lines.extend(["---", ""])
+    n_media = tiers["media"]
     if videos:
         empty = False
-        noun = "video" if len(videos) == 1 else "videos"
+        rest = videos[n_media:]
+        noun = "video" if len(rest) == 1 else "videos"
         lines.extend(["## Videos", ""])
-        lines.extend(_collapsed_block(f"Show the {len(videos)} {noun}",
-                                      [_video_grid_html(videos)]))
-        lines.append("")
+        lines.extend(_two_tiers(
+            [_video_grid_html(videos[:n_media])],
+            [_video_grid_html(rest)] if rest else [],
+            f"Show the other {len(rest)} {noun}"))
     if podcasts:
         empty = False
-        noun = "episode" if len(podcasts) == 1 else "episodes"
+        rest = podcasts[n_media:]
+        noun = "episode" if len(rest) == 1 else "episodes"
         lines.extend(["## Podcasts", ""])
-        lines.extend(_collapsed_block(
-            f"Show the {len(podcasts)} {noun}",
-            [_video_grid_html(podcasts, extra_class="podcast-grid",
-                              kind="Podcast")]))
-        lines.append("")
+        lines.extend(_two_tiers(
+            [_video_grid_html(podcasts[:n_media], extra_class="podcast-grid",
+                              kind="Podcast")],
+            [_video_grid_html(rest, extra_class="podcast-grid",
+                              kind="Podcast")] if rest else [],
+            f"Show the other {len(rest)} {noun}"))
     if empty:
         lines.append("No items were kept in the last seven days.")
     return "\n".join(lines) + "\n"
@@ -3004,7 +3028,8 @@ def main() -> int:
     write(NEWS_DIR / "this-week.md",
           render_this_week(categories, rolling_by_cat, rolling_videos,
                            rolling_podcasts,
-                           briefs=ledger.get("section_briefs", {})),
+                           briefs=ledger.get("section_briefs", {}),
+                           first_tier=config.get("this_week", {})),
           rolling_count)
 
     # weekly highlights digest on the configured day (default friday), one

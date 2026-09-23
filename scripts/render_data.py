@@ -41,6 +41,7 @@ COMMITTEE_MARKER = "<!-- render:committee -->"
 HARDWARE_ESTIMATOR_MARKER = "<!-- render:hardware-estimator -->"
 NEXT_TOKEN_MARKER = "<!-- render:next-token-demo -->"
 TOOL_CHOOSER_MARKER = "<!-- render:tool-chooser -->"
+GLOSSARY_AZ_MARKER = "<!-- render:glossary-az -->"
 DIGEST_PAGE_RE = re.compile(r"news/archive/(\d{4})-w(\d{2})\.md")
 
 PROMPT_CATEGORY_LABELS = {
@@ -401,6 +402,45 @@ def _digest_page(src: str, markdown: str, config) -> str:
         raise AssertionError(f"render_data hook: {src} H1 is not the first block")
     markdown = markdown[:h1.end()] + "\n\n" + nav + "\n" + markdown[h1.end():]
     return markdown.rstrip("\n") + "\n\n" + nav + "\n"
+
+
+def _render_glossary_az(markdown: str) -> str:
+    """A to Z jump row for basics/glossary.md (owner approved 2026-09-23).
+    Built from the glossary's own term headings at build time, so a new
+    term needs no second edit: each letter links to its first term, using
+    the same slug function MkDocs' toc extension gives the heading (or the
+    heading's pinned {: #id }), and letters with no terms render as plain,
+    dimmed text hidden from screen readers. The page promises that entries
+    are alphabetized, and the first-of-letter links depend on it, so an
+    out-of-order term fails the build."""
+    from markdown.extensions.toc import slugify
+    if '<div class="glossary" markdown>' not in markdown:
+        raise AssertionError("render_data hook: glossary wrapper div not found")
+    body = markdown.split('<div class="glossary" markdown>', 1)[1]
+    terms = []
+    for m in re.finditer(r"^## (.+?)(?:\s*\{:\s*#([\w-]+)[^}]*\})?\s*$", body, flags=re.MULTILINE):
+        terms.append((m.group(1).strip(), m.group(2) or slugify(m.group(1).strip(), "-")))
+    names = [name.lower() for name, _ in terms]
+    if names != sorted(names):
+        bad = next(n for n, s in zip(names, sorted(names)) if n != s)
+        raise AssertionError(f"render_data hook: glossary terms are not alphabetized "
+                             f"(first out of place: {bad!r})")
+    first: dict[str, str] = {}
+    for name, anchor in terms:
+        letter = name[0].upper()
+        if letter.isalpha():
+            first.setdefault(letter, anchor)
+    parts = []
+    for letter in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+        if letter in first:
+            parts.append(f'<a href="#{first[letter]}">{letter}</a>')
+        else:
+            parts.append(f'<span class="is-empty" aria-hidden="true">{letter}</span>')
+    print("render_data: glossary A to Z verification")
+    print(f"  terms read   : {len(terms)} (alphabetized)")
+    print(f"  letters used : {len(first)} of 26")
+    return ('<nav class="glossary-az" aria-label="Jump to a letter in the glossary">'
+            + "".join(parts) + "</nav>")
 
 
 def _favicon_img(url: str) -> str:
@@ -1677,8 +1717,28 @@ def on_config(config):
     return config
 
 
+_TASK_LINK_RE = re.compile(r"tools/(?:index\.md)?\?task=([\w-]+)")
+
+
+def _check_task_links(src: str, markdown: str, config) -> None:
+    """Pages link straight to a filtered Tool Directory view
+    (tools/index.md?task=study). MkDocs checks the page but not the task,
+    and the chooser quietly shows no selection for an unknown id, so a
+    renamed task would leave working-looking links that do nothing. Fail
+    the build instead (2026-09-23)."""
+    used = set(_TASK_LINK_RE.findall(markdown))
+    if not used:
+        return
+    known = {t["id"] for t in _load(_data_dir(config) / "tool_tasks.yaml")}
+    unknown = sorted(used - known)
+    if unknown:
+        raise ValueError(f"render_data hook: {src} links to unknown tool "
+                         f"chooser task(s) {unknown}; see data/tool_tasks.yaml")
+
+
 def on_page_markdown(markdown, page, config, files):
     src = page.file.src_uri
+    _check_task_links(src, markdown, config)
     markdown += _reviewed_footer(page.meta, src)
     markdown = _inject_narration(src, markdown)
     if src == "tools/index.md":
@@ -1712,6 +1772,13 @@ def on_page_markdown(markdown, page, config, files):
         )
     if DIGEST_PAGE_RE.fullmatch(src):
         return _digest_page(src, markdown, config)
+    if src == "basics/glossary.md":
+        if GLOSSARY_AZ_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: basics/glossary.md is missing the "
+                f"{GLOSSARY_AZ_MARKER} marker"
+            )
+        return markdown.replace(GLOSSARY_AZ_MARKER, _render_glossary_az(markdown))
     if src == "basics/how-llms-work.md":
         if NEXT_TOKEN_MARKER not in markdown:
             raise AssertionError(

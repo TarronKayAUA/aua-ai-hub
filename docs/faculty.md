@@ -62,20 +62,20 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 
 | Your task | Start here | Worth knowing |
 | --- | --- | --- |
-| Preparing or revising a lecture | [Preparing a Lecture](playbooks/lecture-prep.md) | Source gathering to slide outlines, with verification steps built in |
+| Preparing or revising a lecture | [Preparing a Lecture](playbooks/lecture-prep.md) | Source gathering to slide outlines, with verification steps built in; [slide and poster tools](tools/index.md?task=slides) |
 | Writing and vetting exam questions | [Writing and Vetting Exam Questions](playbooks/exam-items.md) | Item drafting and quality checks without exposing secure content |
 | Setting expectations for your course | [Your Syllabus AI Statement](playbooks/syllabus-statement.md) | Three template tiers; assignment-level rules are yours to set |
-| Research and literature work | [Reviewing the Literature](playbooks/literature-reviews.md) | [AI for Research](tools/research.md) by stage; integrity and disclosure in [Module 5](pathway/research.md) |
+| Research and literature work | [Reviewing the Literature](playbooks/literature-reviews.md) | [AI for Research](tools/research.md) by stage, and the [research tools](tools/index.md?task=research) at a glance; integrity and disclosure in [Module 5](pathway/research.md) |
 | Reusable prompts | [Prompt library](prompts/index.md) | Templates for lecture planning, exam items, research, and study support, each Draft or Reviewed |
-| Choosing a tool for anything else | [Tool directory](tools/index.md) | Grouped by task; a listing is not an endorsement; review on [request](governance/review-process.md) |
+| Choosing a tool for anything else | [Tool directory](tools/index.md) | Pick a task at the top to see only its tools; a listing is not an endorsement; review on [request](governance/review-process.md) |
 | Feedback on student writing | [Feedback on Student Writing](playbooks/writing-feedback.md) | Rubric-grounded, records rules built in; grades stay human |
 | Memos, minutes, and reports | [Administrative Drafting](playbooks/admin-drafting.md) | Every fact yours; the model does the arranging |
 | Advising students on exam performance | [Making Sense of Your Score Reports](playbooks/score-reports.md) | Honest plans from National Board of Medical Examiners (NBME) INSIGHTS data, with an advisor note |
 | Ending the re-explaining | [Standing Setups](tools/standing-setups.md) | A project per course; [Your First Agent Session](tools/first-session.md) for file-based work |
 | Producing documents, decks, and spreadsheets | [Skills](tools/skills.md) | Four document skills already on in claude.ai and Cowork; skills from unknown authors are a real risk |
 | Writing a letter of recommendation | [AI and the Residency Application: for faculty writing letters](playbooks/residency-application.md#for-faculty-writing-letters) | The Association of American Medical Colleges (AAMC) permits AI drafting; you remain the author, and records stay protected |
-| Making or sourcing a figure for a session | [AI-Generated Images in Teaching](playbooks/ai-images.md) | Generated anatomy looks right and is often wrong; look harder before generating |
-| Working across a stack of your own documents | [Gemini Notebook](tools/gemini-notebook.md) (formerly NotebookLM) | Cited answers from your uploads; reliable for retrieval, less so for summaries |
+| Making or sourcing a figure for a session | [AI-Generated Images in Teaching](playbooks/ai-images.md) | Generated anatomy looks right and is often wrong; look harder before generating, and read each [image tool](tools/index.md?task=images)'s note |
+| Working across a stack of your own documents | [Gemini Notebook](tools/gemini-notebook.md) (formerly NotebookLM) | Cited answers from your uploads; reliable for retrieval, less so for summaries; [other tools that work from your documents](tools/index.md?task=own_documents) |
 | Getting better answers from any tool | [Getting Better Answers](basics/better-answers.md) | The three levers: context, memory, and standing instructions |
 
 ## Staying current
