@@ -65,7 +65,9 @@
   type: guide
   category: general
   url: https://workspace.google.com/learning/content/gemini-prompt-guide
-  thumbnail: https://cloud.google.com/_static/cloud/images/social-icon-google-cloud-1200-630.png
+  # No thumbnail (2026-09-22): the guide page's own og:image URL now serves
+  # an HTML page, not an image (verify_links.py), so the card uses the
+  # site's resource artwork until Google fixes its preview image.
   blurb: A plain-language handbook for prompting in everyday office work,
     built on a four-part pattern of persona, task, context, and format. The
     gentlest starting point on this list.
