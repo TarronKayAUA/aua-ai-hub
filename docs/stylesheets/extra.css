@@ -1646,3 +1646,133 @@
     transform: translateX(-50%) rotate(135deg);
   }
 }
+
+/* === "How the weekly review missed a rename" (worked-examples/this-site.md,
+   owner approved 2026-09-23) ================================================
+   Words in HTML, arranged by CSS grid; no SVG at all. In the DOM the result
+   comes after every row, so a screen reader hears the rows first and the
+   verdict last; on wide screens the grid places the verdict in a third
+   column beside the rows. The "never read" gap is marked in words, with a
+   dashed outline, and in the alert color, so no meaning rests on color. */
+[data-md-color-scheme="default"] {
+  --aua-ok: #2e7d32;
+}
+
+[data-md-color-scheme="slate"] {
+  --aua-ok: #81c784;
+}
+
+.md-typeset .check-fig {
+  padding: 0.9rem 1rem 0.6rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  text-align: left;
+}
+
+.md-typeset .check-fig-title {
+  margin: 0 0 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.md-typeset .check-fig-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.45rem 1rem;
+  align-items: center;
+  font-size: 0.74rem;
+}
+
+.md-typeset .check-fig-head {
+  margin: 0;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .check-fig-head--result {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.md-typeset .check-item {
+  padding: 0.3rem 0.6rem;
+  border: 0.05rem solid var(--md-default-fg-color--lighter);
+  border-radius: 0.3rem;
+}
+
+.md-typeset .check-item--exempt {
+  border-style: dashed;
+}
+
+.md-typeset .check-flag {
+  display: inline-block;
+  margin-left: 0.3rem;
+  padding: 0 0.45rem;
+  border-radius: 0.6rem;
+  font-size: 0.62rem;
+  background: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .check-mark {
+  color: var(--aua-ok);
+  font-weight: 700;
+}
+
+.md-typeset .check-read--missing {
+  padding: 0.28rem 0.6rem;
+  border: 0.05rem dashed var(--aua-alert);
+  border-radius: 0.3rem;
+  font-style: italic;
+  color: var(--aua-alert);
+}
+
+.md-typeset .check-result {
+  grid-column: 3;
+  grid-row: 2 / span 4;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  padding: 0.8rem;
+  border: 2px solid var(--aua-ok);
+  border-radius: 0.4rem;
+  text-align: center;
+}
+
+.md-typeset .check-result span:last-child {
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .check-result-mark {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--aua-ok);
+}
+
+.md-typeset .check-fig-note {
+  margin: 0.8rem 0 0;
+  font-size: 0.72rem;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .check-fig-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .md-typeset .check-fig-head--result,
+  .md-typeset .check-result {
+    grid-column: 1 / -1;
+    grid-row: auto;
+  }
+
+  .md-typeset .check-fig-head--result {
+    margin-top: 0.4rem;
+  }
+}

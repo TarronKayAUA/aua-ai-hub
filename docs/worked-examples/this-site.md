@@ -12,6 +12,26 @@ Nothing was broken. No alarm fired, no build failed, no check went red. The tool
 
 That is the characteristic failure of this project. Not bad code. Not crashes. A check that quietly stopped checking, and went on reporting success from behind its own blind spot.
 
+<figure class="figure figure--html check-fig" markdown="0">
+<p class="check-fig-title">How the weekly review missed a rename</p>
+<div class="check-fig-grid">
+<p class="check-fig-head">In the directory</p>
+<p class="check-fig-head">Read by the weekly review</p>
+<span class="check-item">Claude</span>
+<span class="check-read"><span class="check-mark" aria-hidden="true">&#10003;</span> read, unchanged</span>
+<span class="check-item">ChatGPT</span>
+<span class="check-read"><span class="check-mark" aria-hidden="true">&#10003;</span> read, unchanged</span>
+<span class="check-item">Gemini</span>
+<span class="check-read"><span class="check-mark" aria-hidden="true">&#10003;</span> read, unchanged</span>
+<span class="check-item check-item--exempt">NotebookLM <span class="check-flag">exempt: login wall</span></span>
+<span class="check-read check-read--missing">never read</span>
+<p class="check-fig-head check-fig-head--result">What the review reported</p>
+<div class="check-result"><span class="check-result-mark" aria-hidden="true">&#10003;</span><strong>No changes found</strong><span>true of everything it read</span></div>
+</div>
+<p class="check-fig-note">Google renamed NotebookLM to Gemini Notebook on July 16, 2026. The review kept finding nothing for about six weeks, because the renamed product was the one entry it never read. Four of the directory's entries are shown.</p>
+<figcaption>The exemption was meant for one check and silently removed the entry from all of them. A clean result describes what a check read, not what it was supposed to read.</figcaption>
+</figure>
+
 I want to describe the whole system, because it is the site you are currently reading and every claim below can be verified against it. But the check that quietly stopped checking is the thread worth pulling.
 
 ## What this is, and who wrote it
