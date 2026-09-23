@@ -27,7 +27,7 @@ Artificial intelligence (AI) is strong at structure and variation: organizing co
 
 ## Gather first
 
-- Your learning objectives for the session (the single highest-value input).
+- Your learning objectives for the session (the single highest-value input). If they are rough, the [learning objective sharpener](../prompts/index.md#learning-objective-sharpener) tightens them first.
 - Existing materials: last year's slides or outline, the assigned reading, the curriculum map context.
 - Constraints: duration, audience year, format, what the students were taught before this session.
 

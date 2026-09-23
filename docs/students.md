@@ -65,7 +65,7 @@ The literacy pathway's first three modules are short, plain-language, and writte
 This is where the daily habits form, and the ones that pay off share a shape: the AI works from **your** materials, and **you** do the recalling.
 
 - **Set it up once, not every session.** A [standing setup](tools/standing-setups.md) holds your course, its objectives, and your notes, so every conversation starts briefed.
-- **Three prompts written for this stage.** A lecture tutor, a daily review sheet builder, and a National Board of Medical Examiners (NBME)-style question tutor, all working from the lecture you attach, in the [prompt library](prompts/index.md).
+- **Prompts written for this stage.** A lecture tutor, a daily review sheet builder, a flashcard builder, and a National Board of Medical Examiners (NBME)-style question tutor, all working from the lecture you attach, in the [prompt library](prompts/index.md).
 - **Documents, without the fiddling.** Scanned PDFs, exported spreadsheets, and study sheets as real files: the [Skills page](tools/skills.md) covers what is switched on, and why unknown skills deserve caution.
 - **One notebook per course.** [Gemini Notebook](tools/gemini-notebook.md) (formerly NotebookLM) answers from what you upload, with citations; it finds well and summarizes less reliably.
 - **Finding study tools.** The [study tools](tools/index.md?task=study) are built for this; statuses describe the institution's relationship with a tool, not an endorsement.
@@ -97,7 +97,7 @@ Take the result to your advisor. After your next assessment, the [study plan pro
 
 **Before.** The [NBME-style question tutor](prompts/index.md#nbme-style-question-tutor) in exam mode drills first and debriefs after, which is closer to the real thing than reading explanations as you go. Build questions from the lectures you were actually taught, not from a general model's memory of the subject, and treat every explanation as something to check rather than something to trust.
 
-**After.** The [score reports playbook](playbooks/score-reports.md) turns an NBME INSIGHTS report or an in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it.
+**After.** The [score reports playbook](playbooks/score-reports.md) turns an NBME INSIGHTS report or an in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it. For a practice block or a quiz, the [missed-question debrief](prompts/index.md#missed-question-debrief) sorts each miss by cause (a knowledge gap, a slip, a misread, a changed answer, or the clock), working from your own notes rather than the questions themselves.
 
 ## On the wards
 
