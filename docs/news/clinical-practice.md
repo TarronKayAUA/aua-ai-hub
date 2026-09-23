@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (4)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93498">Implicit Bias in Large Language Model Diagnosis of Eating Disorders: Experimental Vignette Study</a>
+    <p class="news-card-summary">Large language models demonstrate demographic bias in eating disorder diagnosis across patient groups, posing risks for mental health applications that mediate clinical decisions.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 23, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03260-7">Prospective multicenter evaluation of an autonomous robotic ultrasound system integrated with AI-assisted thyroid nodule assessment</a>
     <p class="news-card-summary">Prospective multicenter study evaluated an autonomous robotic ultrasound system with integrated AI for thyroid nodule assessment in clinical deployment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03237-6">BrainCSD: a hierarchical consistency-driven MoE framework for connectome synthesis and multitask brain trait prediction</a>
-    <p class="news-card-summary">BrainCSD uses a hierarchical mixture-of-experts framework for connectome synthesis and multitask brain trait prediction from neuroimaging data.</p>
   </div>
 </div>
 </div>

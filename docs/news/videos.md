@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=LrUCo_7jor4" target="_blank" rel="noopener" title="GPT-6 Sol Is VERY GOOD, Is THIS an Opus 5.5 Competitor?">
+  <img src="https://i1.ytimg.com/vi/LrUCo_7jor4/hqdefault.jpg" alt="Video: GPT-6 Sol testing and comparison with Claude Opus" loading="lazy">
+  <span class="video-card-title">GPT-6 Sol testing and comparison with Claude Opus</span>
+  <span class="video-card-meta">Bijan Bowen, September 23, 2026</span>
+  <span class="video-card-desc">Hands-on testing and comparison of GPT-6 Sol against Claude Opus, covering technical capabilities and practical performance across multiple tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=GJIkBVSoxUw" target="_blank" rel="noopener" title="HUGE AI NEWS: GPT-6 Sol &amp; Luna, Opus 5.5, Sonnet 5.5, Haiku 5.5, Qwen 4.0, &amp; Trump To Change AI!">
   <img src="https://i4.ytimg.com/vi/GJIkBVSoxUw/hqdefault.jpg" alt="Video: Benchmark comparison of Opus 5.5, Sonnet 5.5, Haiku 5.5, and Qwen 4.0" loading="lazy">
   <span class="video-card-title">Benchmark comparison of Opus 5.5, Sonnet 5.5, Haiku 5.5, and Qwen 4.0</span>
@@ -127,17 +133,17 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">Bijan Bowen, September 10, 2026</span>
   <span class="video-card-desc">Hands-on testing and technical analysis of DeepSeek V4.1 Flash across multiple benchmark tasks and use cases.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=O_EWbnkjXdk" target="_blank" rel="noopener" title="Can AI help us better predict the weather?">
-  <img src="https://i4.ytimg.com/vi/O_EWbnkjXdk/hqdefault.jpg" alt="Video: AI applications in weather prediction" loading="lazy">
-  <span class="video-card-title">AI applications in weather prediction</span>
-  <span class="video-card-meta">Google DeepMind, September 9, 2026</span>
-  <span class="video-card-desc">Google DeepMind explores how artificial intelligence can improve weather prediction, with discussion from Professor Hannah Fry and researchers.</span>
-</a>
 </div>
 
 ## Medical AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=fjyB3B-nLJM" target="_blank" rel="noopener" title="AIMI Grand Rounds: AI in the Loop: From Clinical Intelligence to Clinical Action - Maya Yiadom, MD">
+  <img src="https://i3.ytimg.com/vi/fjyB3B-nLJM/hqdefault.jpg" alt="Video: AI in clinical workflows: intelligence to action" loading="lazy">
+  <span class="video-card-title">AI in clinical workflows: intelligence to action</span>
+  <span class="video-card-meta">Stanford AIMI, September 23, 2026</span>
+  <span class="video-card-desc">Stanford AIMI grand rounds session on implementing AI systems in clinical workflows, from decision support to actionable clinical outcomes.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=86wroj3Aq3I" target="_blank" rel="noopener" title="MedAI #164: Generative AI for inpatient documentation summaries | Steve G. Peters">
   <img src="https://i1.ytimg.com/vi/86wroj3Aq3I/hqdefault.jpg" alt="Video: Generative AI for inpatient documentation summaries" loading="lazy">
   <span class="video-card-title">Generative AI for inpatient documentation summaries</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Adapting and validating AI models for pediatric use</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
   <span class="video-card-desc">Lightning talks on adapting and validating AI models specifically for pediatric clinical use, covering translational challenges.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=IbJFb6Q2GD0" target="_blank" rel="noopener" title="From Fragmentation to Foundation: Unlocking Pediatric Data for AI | AIMI Pediatric Symposium 2026">
-  <img src="https://i2.ytimg.com/vi/IbJFb6Q2GD0/hqdefault.jpg" alt="Video: Unlocking pediatric data for AI development" loading="lazy">
-  <span class="video-card-title">Unlocking pediatric data for AI development</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Discussion on addressing fragmented pediatric data to create AI-ready datasets for model development and clinical deployment.</span>
 </a>
 </div>
 
