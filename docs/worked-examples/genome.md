@@ -136,6 +136,8 @@ That assumption had been sitting underneath the entire line of reasoning, unstat
 
 And I could only catch it because mandibular anatomy happens to be inside my training. One step outside that, and I would have nodded along.
 
+In fairness to the paper, its authors read these findings the other way: they count the shorter mandibular ramus, the higher risk of overbite and the tendency toward shorter tooth roots seen in carriers among Neanderthal characteristics. My point is narrower, and concerns where the jaw sits.
+
 ## What transfers
 
 - Put the deflating context on the table before you search, not after you find something. Afterwards is too late to be honest with yourself.
