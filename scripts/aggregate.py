@@ -2368,7 +2368,8 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
         "",
         "# This Week",
         "",
-        "Everything kept in the last seven days. "
+        "Everything kept in the last seven days. Earlier weeks' highlights "
+        "are in the [News Archive](archive/index.md). "
         + selection_note("../"),
         "",
         # Raw HTML is not path-rewritten by MkDocs: the page serves from

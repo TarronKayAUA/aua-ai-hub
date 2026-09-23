@@ -40,6 +40,7 @@ SKILLS_MARKER = "<!-- render:skills -->"
 COMMITTEE_MARKER = "<!-- render:committee -->"
 HARDWARE_ESTIMATOR_MARKER = "<!-- render:hardware-estimator -->"
 NEXT_TOKEN_MARKER = "<!-- render:next-token-demo -->"
+DIGEST_PAGE_RE = re.compile(r"news/archive/(\d{4})-w(\d{2})\.md")
 
 PROMPT_CATEGORY_LABELS = {
     "research": "Research",
@@ -340,6 +341,42 @@ def _render_next_token_demo(config) -> str:
         f'<script type="application/json" id="nt-data">{blob}</script>\n'
         '</div>\n'
     )
+
+
+def _digest_week_label(name: str) -> str:
+    year, week = name.removesuffix(".md").split("-w")
+    return f"Week {int(week)}, {year}"
+
+
+def _digest_page(src: str, markdown: str, config) -> str:
+    """Weekly digest pages (news/archive/YYYY-wNN.md) are generated once, sit
+    outside the nav, and had no way back to the rest of the site; their
+    browser and search title also read "2026 w38", because MkDocs takes a
+    page title from the H1 only when the H1 comes first and the GENERATED
+    comment sat above it (2026-09-23 navigation review). Both are fixed
+    here at build time rather than by rewriting generated files, so every
+    existing week is covered and new ones need nothing: the comment is left
+    out of the rendered page (it stays in the source), and a line linking
+    the previous week, the archive and the next week goes under the H1 and
+    at the foot of the page."""
+    weeks = sorted(p.name for p in (Path(config["docs_dir"]) / "news" / "archive").glob("*-w*.md"))
+    name = Path(src).name
+    i = weeks.index(name)
+    parts = []
+    if i > 0:
+        parts.append(f"[\u2190 {_digest_week_label(weeks[i - 1])}]({weeks[i - 1]})")
+    parts.append("[All weeks in the News Archive](index.md)")
+    if i + 1 < len(weeks):
+        parts.append(f"[{_digest_week_label(weeks[i + 1])} \u2192]({weeks[i + 1]})")
+    nav = " \u00b7 ".join(parts) + "\n{: .digest-nav }"
+    markdown = re.sub(r"\A\s*<!-- GENERATED[^\n]*-->[ \t]*\n", "", markdown)
+    h1 = re.search(r"^# .+$", markdown, flags=re.MULTILINE)
+    if not h1:
+        raise AssertionError(f"render_data hook: {src} has no H1")
+    if h1.start() != len(markdown) - len(markdown.lstrip()):
+        raise AssertionError(f"render_data hook: {src} H1 is not the first block")
+    markdown = markdown[:h1.end()] + "\n\n" + nav + "\n" + markdown[h1.end():]
+    return markdown.rstrip("\n") + "\n\n" + nav + "\n"
 
 
 def _favicon_img(url: str) -> str:
@@ -1488,6 +1525,8 @@ def on_page_markdown(markdown, page, config, files):
             GUIDE_VIDEOS_LOCAL_MARKER,
             _render_guide_videos_group(config, "local"),
         )
+    if DIGEST_PAGE_RE.fullmatch(src):
+        return _digest_page(src, markdown, config)
     if src == "basics/how-llms-work.md":
         if NEXT_TOKEN_MARKER not in markdown:
             raise AssertionError(
