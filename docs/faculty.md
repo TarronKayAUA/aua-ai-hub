@@ -63,7 +63,7 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 | Your task | Start here | Worth knowing |
 | --- | --- | --- |
 | Preparing or revising a lecture | [Preparing a Lecture](playbooks/lecture-prep.md) | Source gathering to slide outlines, with verification steps built in; [slide and poster tools](tools/index.md?task=slides) |
-| Writing and vetting exam questions | [Writing and Vetting Exam Questions](playbooks/exam-items.md) | Item drafting and quality checks without exposing secure content; the [item analysis reader](prompts/index.md#post-exam-item-analysis-reader) reads post-exam statistics with no item text or key |
+| Writing and vetting exam questions | [Writing and Vetting Exam Questions](playbooks/exam-items.md) | Item drafting and quality checks without exposing secure content; the [item analysis reader](prompts/index.md#post-exam-item-analysis-reader) reads post-exam statistics with no item text |
 | Building a team-based learning (TBL) session | [Team-based learning session builder](prompts/index.md#team-based-learning-session-builder) | Individual and team readiness tests (iRAT and tRAT) from your pre-work, then two or three application cases |
 | Setting expectations for your course | [Your Syllabus AI Statement](playbooks/syllabus-statement.md) | Three template tiers; assignment-level rules are yours to set |
 | Research and literature work | [Reviewing the Literature](playbooks/literature-reviews.md) | [AI for Research](tools/research.md) by stage, and the [research tools](tools/index.md?task=research) at a glance; integrity and disclosure in [Module 5](pathway/research.md) |
