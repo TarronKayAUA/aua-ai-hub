@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=GJIkBVSoxUw" target="_blank" rel="noopener" title="HUGE AI NEWS: GPT-6 Sol &amp; Luna, Opus 5.5, Sonnet 5.5, Haiku 5.5, Qwen 4.0, &amp; Trump To Change AI!">
+  <img src="https://i4.ytimg.com/vi/GJIkBVSoxUw/hqdefault.jpg" alt="Video: Benchmark comparison of Opus 5.5, Sonnet 5.5, Haiku 5.5, and Qwen 4.0" loading="lazy">
+  <span class="video-card-title">Benchmark comparison of Opus 5.5, Sonnet 5.5, Haiku 5.5, and Qwen 4.0</span>
+  <span class="video-card-meta">WorldofAI, September 23, 2026</span>
+  <span class="video-card-desc">Benchmark comparison of recent model releases including Anthropic Opus 5.5, Sonnet 5.5, Haiku 5.5, Qwen 4.0, and other systems.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=OWu2kjKrRTA" target="_blank" rel="noopener" title="Anthropic went CRAZY (Opus 5.5)">
+  <img src="https://i4.ytimg.com/vi/OWu2kjKrRTA/hqdefault.jpg" alt="Video: Testing and analysis of Anthropic Opus 5.5" loading="lazy">
+  <span class="video-card-title">Testing and analysis of Anthropic Opus 5.5</span>
+  <span class="video-card-meta">Matthew Berman, September 23, 2026</span>
+  <span class="video-card-desc">Hands-on testing and analysis of Anthropic&#x27;s Opus 5.5 model release.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=ux6Lafw7en0" target="_blank" rel="noopener" title="Claude Opus 5.5 Is INSANE, Hands-On With the BEST Model Yet!">
   <img src="https://i2.ytimg.com/vi/ux6Lafw7en0/hqdefault.jpg" alt="Video: Hands-on testing of Claude Opus 5.5" loading="lazy">
   <span class="video-card-title">Hands-on testing of Claude Opus 5.5</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI applications in weather prediction</span>
   <span class="video-card-meta">Google DeepMind, September 9, 2026</span>
   <span class="video-card-desc">Google DeepMind explores how artificial intelligence can improve weather prediction, with discussion from Professor Hannah Fry and researchers.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=UzvTJSuFsWA" target="_blank" rel="noopener" title="Gemini 3.8 Flash Is HERE, Testing Google’s BEST Model Yet!">
-  <img src="https://i2.ytimg.com/vi/UzvTJSuFsWA/hqdefault.jpg" alt="Video: Gemini 3.8 Flash hands-on testing across multiple tasks" loading="lazy">
-  <span class="video-card-title">Gemini 3.8 Flash hands-on testing across multiple tasks</span>
-  <span class="video-card-meta">Bijan Bowen, September 9, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Google&#x27;s Gemini 3.8 Flash model across multiple tasks including code generation, browser automation, and interactive applications.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=6AuYLbHqirk" target="_blank" rel="noopener" title="Why won’t AI agents just follow the rules?">
-  <img src="https://i3.ytimg.com/vi/6AuYLbHqirk/hqdefault.jpg" alt="Video: AI agents and constraint adherence" loading="lazy">
-  <span class="video-card-title">AI agents and constraint adherence</span>
-  <span class="video-card-meta">IBM Technology, September 9, 2026</span>
-  <span class="video-card-desc">Discussion of how AI agents reason around or circumvent specified rules and constraints, relevant to AI safety and reliability in deployment.</span>
 </a>
 </div>
 

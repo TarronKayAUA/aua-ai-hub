@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -77,6 +77,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">An AI facilitator improved interprofessional teamwork by scaffolding metacognitive regulation, demonstrating AI as a process-oriented pedagogical tool beyond content delivery.</p>
   </div>
 </div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42773445?fc=20260609215449&amp;ff=20260923094024&amp;v=2.20.1">Daily temporal associations among AI replacement anxiety, state anxiety, and academic burnout indicators in medicine and nursing students: a 10-day diary study</a>
+    <p class="news-card-summary">Diary study tracks daily links between AI replacement anxiety, state anxiety, and burnout in medicine and nursing students over ten days.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42773409?fc=20260609215449&amp;ff=20260923094024&amp;v=2.20.1">Ethical and responsible use of artificial intelligence in medical education</a>
+    <p class="news-card-summary">Survey finds AI governance scholarship lags capability research in medical education, with publication concentrated in few countries; calls for empirical evaluation frameworks.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 22, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 20, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42763979?fc=20260609215449&amp;ff=20260921010018&amp;v=2.20.1">CReaTe-LM: A large language model for stepwise, heuristic clinical reasoning instruction</a>
     <p class="news-card-summary">CReaTe-LM is a large language model designed to provide stepwise, heuristic instruction in clinical reasoning rather than passive answer generation, addressing a key medical education challenge.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754902?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Assessment of drug harm by final-year medical students and ChatGPT - a comparative analysis</a>
-    <p class="news-card-summary">Final-year medical students and ChatGPT showed strong agreement on the most harmful drugs but differed on moderately and minimally harmful substances, suggesting AI assessments may not fully capture clinical experience and cultural context.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">Artificial Intelligence Readiness in Emergency Medicine: Expert Consensus Opinion for Preparing the Workforce</a>
-    <p class="news-card-summary">Expert consensus that emergency medicine workforce lacks foundational skills to evaluate and safely deploy AI tools now entering triage, imaging, and documentation workflows.</p>
   </div>
 </div>
 </div>

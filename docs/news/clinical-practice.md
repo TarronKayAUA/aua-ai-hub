@@ -18,9 +18,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03264-3">A spatially aware deep learning framework for multiscale cellular ecology profiling to predict 5-year recurrence in invasive lung adenocarcinoma</a>
+    <p class="news-card-summary">Deep learning framework integrating spatial cellular context predicts recurrence in invasive lung adenocarcinoma with five-year follow-up.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03269-y">Rule-aware reasoning visual language model for molecular prediction in adult-type diffuse glioma lacking contrast enhancement</a>
+    <p class="news-card-summary">Visual language model with rule-aware reasoning predicts molecular status of diffuse gliomas from MRI images lacking contrast enhancement.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04643-9">Practical lessons in the global scaling of clinical AI: from one hospital to over a million patients screened</a>
+    <p class="news-card-summary">Multi-country deployment study of a deep learning screening tool across India, Thailand, and Australia identifies cross-cutting lessons for scaling clinical AI globally.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 22, 2026</span></div>
@@ -103,27 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03280-3">Leveraging dynamic prompting for outcome prediction of cancer patients using large language models and electronic health record notes</a>
     <p class="news-card-summary">Dynamic prompting with large language models applied to electronic health record notes for cancer patient outcome prediction.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90285">Development and Validation of an Interpretable Machine Learning Model to Predict Mortality in Patients With Sepsis-Induced Coagulopathy: Multicenter Cohort Study</a>
-    <p class="news-card-summary">Researchers developed and validated an interpretable machine learning model to predict mortality in sepsis-induced coagulopathy patients, addressing limitations of traditional clinical scoring systems.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e99757">Diagnostic Performance of a Locally Deployed Vision Language Model for Bone Tumor Diagnosis Using Smartphone-Captured Images: Exploratory Retrospective Study</a>
-    <p class="news-card-summary">Researchers tested a locally deployed vision language model for bone tumor diagnosis using smartphone-captured images, examining whether retrieval-augmented generation improves accuracy on noisy primary care data.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e105049">Interpretable Multihorizon Glucose Forecasting for Assessing Nutritional Information Impact in Type 1 Diabetes Management: Model Development and Validation Study</a>
-    <p class="news-card-summary">Developers created an interpretable multihorizon glucose forecasting model for type 1 diabetes that assesses how nutritional macronutrient composition beyond carbohydrates affects postprandial glucose control.</p>
   </div>
 </div>
 </div>
