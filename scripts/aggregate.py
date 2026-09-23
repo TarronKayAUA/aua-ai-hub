@@ -58,6 +58,10 @@ WEEKDAYS = {"monday": 0, "tuesday": 1, "wednesday": 2, "thursday": 3,
             "friday": 4, "saturday": 5, "sunday": 6}
 CONFERENCE_FLAGS_PATH = REPO / "data" / "conference_flags.md"
 LIVEBENCH_INCLUDE = REPO / "includes" / "livebench.md"
+# Column headers for LiveBench categories whose published names are
+# abbreviations a reader cannot decode (2026-09-22 audit); others pass
+# through as LiveBench writes them.
+LIVEBENCH_LABELS = {"IF": "Instruction Following"}
 COMMITTEE_UPDATES_INCLUDE = REPO / "includes" / "committee-updates.md"
 
 USER_AGENT = "AUA-AI-Hub pipeline (github.com/TarronKayAUA/aua-ai-hub)"
@@ -634,7 +638,7 @@ def render_videos_page(sections: list) -> str:
             lines.extend([f"## {label}", ""])
         lines.extend([_video_grid_html(records), ""])
     if not rendered:
-        lines.append("No videos yet. The pipeline adds videos nightly.")
+        lines.append("No videos yet. The pipeline adds videos several times a day.")
     return "\n".join(lines) + "\n"
 
 
@@ -655,7 +659,7 @@ def render_podcasts_page(records: list[dict]) -> str:
         lines.append(_video_grid_html(records, extra_class="podcast-grid",
                                       kind="Podcast"))
     else:
-        lines.append("No episodes yet. The pipeline adds episodes nightly.")
+        lines.append("No episodes yet. The pipeline adds episodes several times a day.")
     return "\n".join(lines) + "\n"
 
 
@@ -688,6 +692,26 @@ def _video_grid_html(records: list[dict], extra_class: str = "",
         )
     css = ("video-grid " + extra_class).strip()
     return f'<div class="{css}">\n' + "\n".join(cards) + "\n</div>"
+
+
+def _video_list_html(records: list[dict]) -> str:
+    """The homepage's videos as a plain list, no thumbnails (owner approved,
+    2026-09-22 site review). The curator rewrites hype titles into neutral
+    ones, but YouTube thumbnails are designed to provoke clicks and put the
+    hype straight back on the institution's front page; six cards in a
+    five-column grid also orphaned one. The Videos page keeps thumbnails.
+    As on the cards, the creator's original title stays one hover away."""
+    items = []
+    for r in records:
+        published = datetime.fromisoformat(r["published"])
+        tooltip = ""
+        if r.get("display_title") and r.get("title"):
+            tooltip = f' title="{html.escape(r["title"])}"'
+        items.append(
+            f'<li><a href="{html.escape(r["url"])}" target="_blank" '
+            f'rel="noopener"{tooltip}>{html.escape(display_title_of(r))}</a> '
+            f"({html.escape(r['source'])}, {fmt_date(published)})</li>")
+    return "<ul>\n" + "\n".join(items) + "\n</ul>"
 
 
 # --- community Prompt Exchange (GitHub Discussions) ----------------------------
@@ -778,14 +802,15 @@ def update_community_prompts(config: dict, now: datetime, dry_run: bool,
         board = [
             GENERATED_HEADER,
             "",
-            "# Community Exchange",
+            "# Prompt Exchange",
             "",
-            "Every prompt shared on the community board, mirrored here "
-            f"nightly (as of {fmt_date(now)}) and sorted by votes. Posts "
-            "appear as their authors wrote them and are not reviewed; the "
-            "best are tested and promoted into the "
-            "[reviewed library](index.md) with credit. Voting and replying "
-            "happen on GitHub and need a free "
+            "Every prompt shared on the community board, updated here "
+            f"several times a day (last updated {fmt_date(now)}) and sorted "
+            "by votes. Posts appear as their authors wrote them and are not "
+            "reviewed; prompts that hold up in testing can be promoted into "
+            "the [prompt library](index.md), with credit to the "
+            "contributor. Voting and replying happen on GitHub and need "
+            "a free "
             "[GitHub account](https://github.com/signup). Keep posts "
             "professional, and never include patient information, student "
             "records, or exam content, consistent with the university's "
@@ -829,7 +854,7 @@ def update_community_prompts(config: dict, now: datetime, dry_run: bool,
                     encoding="utf-8", newline="\n")
             if not EXCHANGE_PAGE.exists():
                 EXCHANGE_PAGE.write_text(
-                    GENERATED_HEADER + "\n\n# Community Exchange\n\n"
+                    GENERATED_HEADER + "\n\n# Prompt Exchange\n\n"
                     + fallback + "\n",
                     encoding="utf-8", newline="\n")
         return f"unavailable ({type(exc).__name__})"
@@ -1166,7 +1191,9 @@ def update_livebench(config: dict, now: datetime, dry_run: bool,
             "[LiveBench](https://livebench.ai/), an open, "
             "contamination-aware benchmark.",
             "",
-            "| # | Model | Global | " + " | ".join(group_names) + " |",
+            "| # | Model | Global | "
+            + " | ".join(LIVEBENCH_LABELS.get(g, g) for g in group_names)
+            + " |",
             "| --- | --- | --- | " + " | ".join("---" for _ in group_names) + " |",
         ]
         for rank, row in enumerate(top, 1):
@@ -1815,7 +1842,7 @@ def render_category_page(label: str, intro: str, records: list[dict],
         lines.extend(render_item_md(r, suppress) for r in records)
         lines.append("</div>")
     else:
-        lines.append("No items yet. The pipeline adds items nightly.")
+        lines.append("No items yet. The pipeline adds items several times a day.")
     return "\n".join(lines) + "\n"
 
 
@@ -1828,7 +1855,7 @@ def render_latest_include(records: list[dict]) -> str:
             f"({record['source']}, {fmt_date(published)})"
         )
     if not records:
-        lines.append("No items yet. The pipeline adds items nightly.")
+        lines.append("No items yet. The pipeline adds items several times a day.")
     return "\n".join(lines) + "\n"
 
 
@@ -2200,13 +2227,13 @@ def _collapsed_block(summary: str, chunks: list[str]) -> list[str]:
 def render_this_week(categories: dict, by_category: dict, videos: list[dict],
                      podcasts: list[dict],
                      briefs: dict | None = None) -> str:
-    """Rolling trailing-seven-day view, regenerated nightly."""
+    """Rolling trailing-seven-day view, regenerated on every run."""
     lines = [
         COMMENTS_FRONT_MATTER + GENERATED_HEADER,
         "",
         "# This Week",
         "",
-        "Everything kept in the last seven days, refreshed several times a day. "
+        "Everything kept in the last seven days. "
         + selection_note("../"),
         "",
         # Raw HTML is not path-rewritten by MkDocs: the page serves from
@@ -2812,8 +2839,8 @@ def main() -> int:
         video_records, int(video_cfg.get("home_items", 3)),
         int(video_cfg.get("home_max_per_channel", 2)))
     home_include = GENERATED_HEADER + "\n\n" + (
-        _video_grid_html(home_videos) if home_videos
-        else "No videos yet. The pipeline adds videos nightly."
+        _video_list_html(home_videos) if home_videos
+        else "No videos yet. The pipeline adds videos several times a day."
     ) + "\n"
     write(REPO / "includes" / "latest-videos.md", home_include,
           len(home_videos))

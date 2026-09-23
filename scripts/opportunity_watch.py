@@ -98,8 +98,59 @@ any string:
  "start_date": "YYYY-MM-DD" or null,
  "end_date": "YYYY-MM-DD" or null,
  "eligibility": "one line: who may take part" or "unknown",
+ "open_to_aua": true or false or "unknown" (true only when the page's own
+  eligibility rules let a student or faculty member of a medical school
+  in Antigua and Barbuda enter; false when entry is limited to a country
+  or region that excludes Antigua, to a list of institutions, to
+  employees or members of an organization or partner program, or to
+  invitees; "unknown" when the page does not say),
  "format": "virtual" or "hybrid" or "in_person" or "unknown",
- "support": "one line of organizer-stated prizes or support" or null}"""
+ "support": "one line of organizer-stated prizes or support" or null,
+ "relevance": "one neutral sentence for readers of a medical school's
+  AI site saying what the opportunity is and who it suits, with no prize
+  amounts, no superlatives, and no claim of medical relevance the page
+  does not make"}"""
+
+# Eligibility wording that means "not open to AUA" whatever the model
+# concluded (added 2026-09-22). On 2026-09-21 the watch auto-listed two
+# events AUA readers cannot enter: one for students of 23 member
+# universities in Vietnam, one for staff of AWS Partner Network
+# organizations. Both passed every gate, because no gate looked at
+# eligibility at all. This deterministic backstop sits behind the model's
+# open_to_aua answer, so a model that misreads the rules is still caught.
+_RESTRICTED_ELIGIBILITY = re.compile(
+    r"member (universit|institution|school|organi[sz]ation)"
+    r"|\b(employ(ed|ees?)|staff) (by|of|at)\b"
+    r"|\bpartner (network|professionals?|organi[sz]ations?)\b"
+    r"|\bpartners only\b|\bAPN\b"
+    r"|\b(residents?|citizens?|nationals?) of\b"
+    r"|\b(students?|alumni|faculty)( or alumni)? (from|of|at) "
+    r"(one of )?(the )?\d+\b"
+    r"|\binvit(e|ation)[- ]only\b",
+    re.IGNORECASE)
+
+# (eligibility text, expected to read as restricted). The first three are
+# the real 2026-09-21 lines; the open ones must never be caught, since a
+# false catch only demotes a listing to a proposal but still costs the
+# owner a review.
+ELIGIBILITY_CONTROLS = [
+    (("Students or alumni from one of 23 member universities of Mang Luoi "
+      "AI in Vietnam, teams of 1-4 members"), True),
+    (("AWS Partner professionals or post grads, above legal age of "
+      "majority, most countries eligible"), True),
+    (("Individuals employed by an organization registered with the AWS "
+      "Partner Network"), True),
+    ("Residents of the United States only", True),
+    ("Open to everyone 18 and over, worldwide", False),
+    ("Students and professionals in all countries except sanctioned ones",
+     False),
+    ("Anyone over the age of majority; teams of up to 4", False),
+    (("Researchers, clinicians, and students worldwide; industry partners "
+      "welcome"), False),
+]
+for _text, _want in ELIGIBILITY_CONTROLS:
+    assert bool(_RESTRICTED_ELIGIBILITY.search(_text)) is _want, (
+        f"eligibility control failed: {_text!r} expected restricted={_want}")
 
 
 def strip_page(url: str, page_chars: int = 9000) -> str:
@@ -145,6 +196,22 @@ def check_gates(keep: dict, verdict: dict, existing_names: set,
         v = verdict.get(field)
         if v is not None and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(v)):
             failed.append(f"{field} not a plain date")
+    # Eligibility and coherence gates (added 2026-09-22, see
+    # _RESTRICTED_ELIGIBILITY): only an explicit yes from the page's own
+    # rules lets a listing go live without the owner.
+    if verdict.get("open_to_aua") is not True:
+        failed.append("eligibility for AUA faculty or students not "
+                      "confirmed on the page")
+    hit = _RESTRICTED_ELIGIBILITY.search(str(verdict.get("eligibility", "")))
+    if hit:
+        failed.append(f"eligibility reads as restricted ({hit.group(0)!r})")
+    end = verdict.get("end_date")
+    if (re.fullmatch(r"\d{4}-\d{2}-\d{2}", deadline)
+            and end and re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(end))
+            and deadline > str(end)):
+        failed.append("deadline falls after the event ends")
+    if not str(verdict.get("relevance") or "").strip():
+        failed.append("no reader-facing relevance line")
     if title.lower() in existing_names:
         failed.append("already listed")
     return failed
@@ -174,7 +241,7 @@ def build_entry_yaml(title: str, url: str, keep: dict, verdict: dict,
     lines = [
         f"# Auto-verified {today_iso} from the official page (managed "
         "platform; gates: current, organizer named, free entry, "
-        "deadline confirmed).",
+        "deadline confirmed, open to AUA).",
         f"- name: {q(title)}",
         f"  url: {url}",
         f"  organizer: {q(verdict['organizer'])}",
@@ -193,7 +260,11 @@ def build_entry_yaml(title: str, url: str, keep: dict, verdict: dict,
             support_clean = f"Organizer-stated: {support_clean}"
         lines.append(
             "  support: " + json.dumps(support_clean, ensure_ascii=False))
-    lines.append(f"  relevance: {q(keep.get('why', ''))}")
+    # The reader-facing line the gate wrote under house rules, never the
+    # screener's `why`, which is a note for the owner: publishing that
+    # verbatim is how "substantial prizes" and "a major platform provider
+    # opportunity" reached the live page (2026-09-22 site audit).
+    lines.append(f"  relevance: {q(verdict['relevance'])}")
     lines.append(f"  verified: {today_iso}")
     return "\n".join(lines)
 

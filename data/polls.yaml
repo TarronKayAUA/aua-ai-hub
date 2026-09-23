@@ -5,7 +5,9 @@
 # shows a quiet placeholder when no poll is active.
 #
 # active entries: question, url (the Forms share link), closes (display
-# string), optional note. closed entries: question, outcome.
+# string), optional note, optional restricted (true when the form needs an
+# AUA sign-in; the renderer then says so). closed entries: question,
+# outcome.
 
 # Poll URL verified live at add time; the Forms page is JavaScript-rendered,
 # so the question wording below is confirmed against the owner's form

@@ -609,8 +609,8 @@ video_feeds:
   # not silenced forever. Added 2026-07-16 with the livestream fix.
   defer_hours: 72
   home_items: 6
-  # Homepage grid only: at most this many videos from any one channel,
-  # so a single channel's launch-day burst cannot fill the grid (owner
+  # Homepage list only: at most this many videos from any one channel,
+  # so a single channel's launch-day burst cannot fill the list (owner
   # approved 2026-07-09). The Videos page itself stays uncapped.
   home_max_per_channel: 2
   # The Videos page renders one section per group, in this order. A video's

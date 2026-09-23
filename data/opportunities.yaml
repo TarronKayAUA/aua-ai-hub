@@ -1,7 +1,12 @@
 # Opportunities for the Opportunities page (docs/opportunities.md).
-# Owner-owned: the weekly opportunity-watch workflow proposes new entries
-# through GitHub issues and never edits this file; all additions and
-# changes are the owner's (or an owner-approved session's).
+# Owner-owned. The weekly opportunity-watch workflow proposes most new
+# entries through GitHub issues, and under tiered autonomy (owner directive
+# 2026-07-08) appends an entry itself only when it is hosted on a managed
+# platform and passes every gate; those carry an "Auto-verified" comment.
+# Since 2026-09-22 the gates include eligibility: the page's own rules must
+# let AUA faculty or students enter (two listings AUA readers could not
+# enter were auto-added on 2026-09-21 and removed the next day). All other
+# additions and changes are the owner's (or an owner-approved session's).
 #
 # Scope (owner directive 2026-07-06): global, not regional. List any
 # opportunity for which AUA faculty or students would be eligible and
@@ -48,7 +53,7 @@
   start_date: 2026-05-19
   end_date: 2026-08-17
   support: "Organizer-stated: US$2,000,000 in total prizes, top prize US$500,000"
-  relevance: A major agent-building competition, teams build a functioning business operated primarily by AI agents on Google Cloud, with education among the themes. Free to enter.
+  relevance: An agent-building competition in which teams build a functioning business operated primarily by AI agents on Google Cloud, with education among the themes. Free to enter.
   verified: 2026-07-07
 
 # Verified 2026-07-07 on the Devpost page: submissions close July 9,
@@ -92,7 +97,7 @@
   start_date: 2026-07-13
   end_date: 2026-07-21
   support: "Organizer-stated: $100,000 in total cash prizes, Dev Day/Exchange passes, Pro Account for 1 year, promotion by OpenAI Developers, meeting with the Codex Team"
-  relevance: Major AI model provider hackathon with substantial prizes, online format open to international participants, and relevant ML/AI focus for medical students and faculty.
+  relevance: Online hackathon run by OpenAI, open to participants in eligible countries, suited to students and faculty building general AI skills.
   verified: 2026-07-13
 
 # Verified 2026-07-21 on the grand-challenge.org page: registration
@@ -135,7 +140,7 @@
   start_date: 2026-07-17
   end_date: 2026-07-30
   support: "Organizer-stated: $1,500+ in cash prizes (1st $1,000, 2nd $400, 3rd $100, plus certificates for other placements)"
-  relevance: Online AI challenge open internationally with machine learning focus suitable for medical students and faculty.
+  relevance: Online AI challenge for students, open internationally, with a machine learning focus.
   verified: 2026-07-27
 
 # Auto-verified 2026-08-04 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
@@ -149,7 +154,7 @@
   start_date: 2026-07-27
   end_date: 2026-09-07
   support: "Organizer-stated: $75,000 in cash prizes across five partner tracks (IBM, Grafana, Parallel, Clickhouse, Replit), each with 1st ($7,500), 2nd ($4,500), and 3rd ($3,000) place cash prizes plus social media promotion opportunity"
-  relevance: "Online AI and machine learning hackathon hosted by Google with substantial prizes, relevant to medical AI applications and general AI skills development."
+  relevance: "Online hackathon hosted by Google on building AI agents for filmmaking; a general AI skills opportunity, not a medical one."
   verified: 2026-08-04
 
 # Auto-verified 2026-08-10 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
@@ -163,7 +168,7 @@
   start_date: 2026-08-04
   end_date: 2026-08-31
   support: "Organizer-stated: $180,000 in cash prizes and $150 in Google Cloud credits per participant"
-  relevance: "Online AI hackathon with substantial prizes hosted by Google; medical students and faculty can meaningfully participate in machine learning and AI agent development."
+  relevance: "Online hackathon hosted by Google on building AI agents; a general AI skills opportunity."
   verified: 2026-08-10
 
 # Verified 2026-08-10 on the official grand-challenge.org pages
@@ -183,7 +188,7 @@
   start_date: 2026-07-20
   end_date: 2026-09-27
   support: "Organizer-stated: cash prizes totaling up to US$8,500"
-  relevance: Surgical video AI challenge (tool localization and video question answering from endoscopic video), fifth year of an established series and a concrete entry point into surgical data science. Note the August 15 registration cutoff.
+  relevance: Surgical video AI challenge (tool localization and video question answering from endoscopic video), fifth year of an established series and a concrete entry point into surgical data science.
   verified: 2026-08-10
 
 # Verified 2026-08-10 on the official grand-challenge.org pages
@@ -217,7 +222,7 @@
   start_date: 2026-08-10
   end_date: 2026-09-14
   support: "Organizer-stated: $40,000 in cash prizes across three tracks, $50 in AWS credits, AWS Builder ID, featured AWS social posts"
-  relevance: "Online AI hackathon with machine learning focus and substantial prizes, open to international participants and relevant to medical AI applications."
+  relevance: "Online hackathon from Amazon Web Services on building AI agents; a general AI skills opportunity."
   verified: 2026-08-17
 
 # Auto-verified 2026-08-24 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
@@ -231,7 +236,7 @@
   start_date: 2026-08-21
   end_date: 2026-09-15
   support: "Organizer-stated: $33,900+ in prizes including cash awards and sponsor perks such as NexFellow plans and Tin Computer credits"
-  relevance: "General AI building opportunity open to international participants online; relevant for medical students seeking foundational ML skills."
+  relevance: "Online AI building hackathon open to international participants, suited to those learning machine learning basics."
   verified: 2026-08-24
 
 # Verified 2026-08-24 from the official grand-challenge.org pages:
@@ -253,7 +258,7 @@
   start_date: 2026-07-10
   end_date: 2026-10-01
   support: "Organizer-stated: 1,500 euros in prizes per submission round (first 750, second 500, third 250), plus a 500 US dollar award for the most innovative agentic AI solution"
-  relevance: Agentic multimodal AI challenge across the full prostate cancer patient journey, from MRI-based diagnosis through biopsy risk stratification to pathology prediction, run with MICCAI 2026.
+  relevance: Agentic multimodal AI challenge across the full prostate cancer patient journey, from MRI-based diagnosis through biopsy risk stratification to pathology prediction, run with the Medical Image Computing and Computer Assisted Intervention (MICCAI) 2026 conference.
   verified: 2026-08-24
 
 # Auto-verified 2026-08-31 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
@@ -266,7 +271,7 @@
   deadline: 2026-10-30
   end_date: 2026-10-30
   support: "Organizer-stated: $50,000+ in prizes including $20,000 grand prize, $10,000 2nd place, $6,000 3rd place, NVIDIA Jetson Orin Nano devices, and other awards"
-  relevance: "Global online AI hackathon with substantial prizes and beginner-friendly focus, accessible to international medical students and faculty seeking general AI building skills."
+  relevance: "Online AI hackathon from Nebius and NVIDIA with a beginner-friendly focus, suited to those building general AI skills."
   verified: 2026-08-31
 
 # Auto-verified 2026-09-07 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
@@ -279,7 +284,7 @@
   deadline: 2026-10-23
   end_date: 2026-10-23
   support: "Organizer-stated: $138,000 in prizes including cash, AWS credits, meetings with Amazon Developer team, and feature on Amazon Developer channels"
-  relevance: "Online hackathon with AI/ML theme open to international participants, relevant as a major platform provider opportunity for building skills."
+  relevance: "Online hackathon from Amazon with an AI and machine learning theme, suited to building general AI skills."
   verified: 2026-09-07
 
 # Auto-verified 2026-09-07 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
@@ -293,33 +298,5 @@
   start_date: 2026-08-26
   end_date: 2026-10-26
   support: "Organizer-stated: $20,250 in cash prizes, including two optional $1,000 featured path awards, plus optional $150 cloud compute grants for selected teams"
-  relevance: "Online AI/ML competition with computer vision focus open globally, applicable to medical imaging and healthcare AI applications."
+  relevance: "Online computer vision competition open globally; the techniques overlap with medical image analysis."
   verified: 2026-09-07
-
-# Auto-verified 2026-09-21 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
-- name: "AWS Communication Developer Services (CDS) Agentic AI Partner Hackathon"
-  url: https://aws-cds-partner.devpost.com/
-  organizer: "AWS (Amazon Web Services) - Communication Developer Services"
-  type: hackathon
-  format: virtual
-  eligibility: "AWS Partner professionals or post grads, above legal age of majority, most countries eligible"
-  deadline: 2026-10-28
-  start_date: 2026-09-14
-  end_date: 2026-10-28
-  support: "Organizer-stated: 40000 USD in cash prizes: 1st 18000, 2nd 8000, 3rd 4000, plus AWS credits, Kiro access codes, marketplace and GTM support, and case study opportunities"
-  relevance: "Online agentic AI hackathon with machine learning focus and substantial prizes, accessible to international participants including medical faculty and students interested in AI applications."
-  verified: 2026-09-21
-
-# Auto-verified 2026-09-21 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
-- name: "MLAI Hackathon 2026"
-  url: https://mlai-hackathon.devpost.com/
-  organizer: "Mạng Lưới AI (in collaboration with HCMUT and OpenAI)"
-  type: hackathon
-  format: virtual
-  eligibility: "Students or alumni from one of 23 member universities of Mạng Lưới AI in Vietnam, teams of 1-4 members"
-  deadline: 2026-10-17
-  start_date: 2026-09-18
-  end_date: 2026-10-16
-  support: "Organizer-stated: Cash prizes, OpenAI API credits, ChatGPT Pro subscriptions, certificates from HCA, and networking/job opportunities with partners"
-  relevance: "Online machine learning and AI hackathon with open international participation, relevant for building core AI skills applicable to medical and health contexts."
-  verified: 2026-09-21

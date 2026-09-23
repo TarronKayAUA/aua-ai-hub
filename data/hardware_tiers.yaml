@@ -8,6 +8,12 @@
 # gigabytes per second, used for the teaching estimate on the page; every
 # spec sheet lists the real number for a specific device. Values checked
 # against vendor specifications 2026-07-02.
+#
+# Every tier names ONE capacity, the one the estimator computes with
+# (2026-09-22 audit): range tiers such as "12 to 16 GB" computed at the top
+# of the range, so a reader with a 12 GB card was told a model "fits in
+# 16 GB". The split tiers keep the representative bandwidth checked for
+# the original range.
 
 - name: Laptop GPU, 6 GB VRAM
   memory_gb: 6
@@ -19,7 +25,12 @@
   bandwidth_gbs: 350
   note: Common midrange cards from recent generations.
 
-- name: Desktop GPU, 12 to 16 GB VRAM
+- name: Desktop GPU, 12 GB VRAM
+  memory_gb: 12
+  bandwidth_gbs: 500
+  note: Upper-midrange cards; comfortable for dense models up to about 14 billion parameters.
+
+- name: Desktop GPU, 16 GB VRAM
   memory_gb: 16
   bandwidth_gbs: 500
   note: Enthusiast cards; the practical sweet spot for local language models.
@@ -39,10 +50,15 @@
   bandwidth_gbs: 270
   note: Pro-class unified-memory chips.
 
-- name: Unified memory, high tier (64 to 128 GB)
-  memory_gb: 96
+- name: Unified memory, high tier (64 GB)
+  memory_gb: 64
   bandwidth_gbs: 550
-  note: Max-class unified memory; fits models no consumer graphics card can.
+  note: Max-class unified memory; fits models larger than any consumer graphics card holds.
+
+- name: Unified memory, top tier (128 GB)
+  memory_gb: 128
+  bandwidth_gbs: 550
+  note: Max-class unified memory at full capacity; room for the large mixture-of-experts models.
 
 - name: CPU only, dual-channel DDR5 (32 GB)
   memory_gb: 32

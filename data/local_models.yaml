@@ -26,7 +26,7 @@
   active_b: 3.6
   note: OpenAI's smaller open-weights model; mixture-of-experts, so it needs a 20B-class memory footprint but runs at small-model speed.
 
-- name: Qwen3 30B (A3B)
+- name: Qwen3 30B (3B active)
   arch: moe
   total_b: 30.5
   active_b: 3.3

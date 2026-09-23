@@ -34,7 +34,7 @@ To update the conferences table or the tools directory, edit the YAML files only
 
 ## Videos and podcasts
 
-The Videos and Podcasts pages (and the homepage video strip) are produced by
+The Videos and Podcasts pages (and the homepage video list) are produced by
 the same pipeline from the `video_feeds` and `podcast_feeds` lists in
 `feeds.yaml` (channel/show RSS, no API keys). Cards link out to the original
 platform; nothing is embedded. To add or remove a channel or show, edit

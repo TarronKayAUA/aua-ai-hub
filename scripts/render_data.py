@@ -41,16 +41,33 @@ HARDWARE_ESTIMATOR_MARKER = "<!-- render:hardware-estimator -->"
 
 PROMPT_CATEGORY_LABELS = {
     "research": "Research",
-    "mcq_generation": "MCQ Generation",
-    "mcq_vetting": "MCQ Vetting",
+    "mcq_generation": "Multiple-Choice Question (MCQ) Writing",
+    "mcq_vetting": "MCQ Review",
     "data_analysis": "Data Analysis",
     "content_generation": "Content Generation",
     "study_strategy": "Study Strategy",
 }
 
+# Display labels for the prompts.yaml audience field, which stores lowercase
+# keys (2026-09-22 audit: the at-a-glance table printed "both" and
+# "faculty" verbatim).
+PROMPT_AUDIENCE_LABELS = {
+    "faculty": "Faculty",
+    "students": "Students",
+    "both": "Faculty and students",
+}
+
+
+def _long_date(value) -> str:
+    """A checked date as readers write it (September 22, 2026), not ISO."""
+    if hasattr(value, "strftime"):
+        return f"{value:%B} {value.day}, {value.year}"
+    return str(value)
+
+
 PROMPT_STATUS_LABELS = {
     "draft": ("Draft", "badge-under-review"),
-    "reviewed": ("Reviewed", "badge-approved"),
+    "reviewed": ("Reviewed", "badge-reviewed"),
 }
 
 # Skill provenance is the safety-relevant fact about a skill, so it is
@@ -106,7 +123,8 @@ CATEGORY_INTROS = {
     ),
     "research": (
         "[AI for Research](research.md) maps these tools to each stage of a "
-        "project, licensed library tools first; [Gemini Notebook]"
+        "project, starting with Scopus with AI, licensed through the AUA "
+        "Library; [Gemini Notebook]"
         "(gemini-notebook.md) has its own guide because it works from your "
         "own uploads rather than the open web."
     ),
@@ -135,9 +153,9 @@ MODALITY_LABELS = {
 
 # Same idea for the open-weights modality subsections.
 MODALITY_DESCRIPTORS = {
-    "language": "Chat, reasoning, and coding model families to run on your own hardware.",
+    "language": "Chat, reasoning, and coding model families, from laptop-sized models to data-center scale.",
     "image": "Image generators for local or self-hosted pipelines.",
-    "video": "Video generators; the heaviest hardware demands on this page.",
+    "video": "Video generators for local or self-hosted pipelines, generally needing more video memory than image models.",
     "audio": "Music and sound generation models.",
     "data": "Models for tabular and structured data.",
 }
@@ -335,7 +353,7 @@ def _render_tools(config) -> str:
                 notes_shown += 1
             checked = tool.get("last_reviewed")
             checked_html = (
-                f'  <p class="tool-card-checked">Checked {checked}</p>\n'
+                f'  <p class="tool-card-checked">Checked {_long_date(checked)}</p>\n'
                 if checked else "")
             body.append(
                 '<div class="tool-card">\n'
@@ -440,7 +458,7 @@ def _render_open_models(config) -> str:
                 f'  <div class="tool-card-sub">{entry["vendor"]}'
                 f'<span class="cost-chip">{entry["license"]}</span></div>\n'
                 f'  <p class="tool-card-blurb">{entry["blurb"]}</p>\n'
-                f'  <p class="tool-card-checked">Checked {checked}</p>\n'
+                f'  <p class="tool-card-checked">Checked {_long_date(checked)}</p>\n'
                 "</div>"
             )
             rendered += 1
@@ -733,7 +751,7 @@ def _render_prompts(config, resource_groups: dict[str, list]) -> str:
             status_label, _ = PROMPT_STATUS_LABELS[entry["status"]]
             lines.append(
                 f"| [{entry['title']}](#{_prompt_slug(entry['title'])}) "
-                f"| {entry['audience']} | {status_label} "
+                f"| {PROMPT_AUDIENCE_LABELS.get(entry['audience'], entry['audience'])} | {status_label} "
                 f"| {entry['tagline'].strip()} |"
             )
     lines.append("")
@@ -746,11 +764,17 @@ def _render_prompts(config, resource_groups: dict[str, list]) -> str:
         if not group:
             continue
         per_category[label] = len(group)
-        lines.extend([f"## {label}", ""])
+        # Anchors are pinned to the category key, so relabeling a heading
+        # (MCQ Generation became Multiple-Choice Question (MCQ) Writing on
+        # 2026-09-22) never breaks the playbooks' #mcq-generation links.
+        anchor = category.replace("_", "-")
+        lines.extend([f"## {label} {{: #{anchor} }}", ""])
         for entry in group:
             status_label, status_css = PROMPT_STATUS_LABELS[entry["status"]]
             badge = _badge(status_label, status_css)
-            audience = _badge(entry["audience"], "badge-unconfirmed")
+            audience = _badge(
+                PROMPT_AUDIENCE_LABELS.get(entry["audience"], entry["audience"]),
+                "badge-unconfirmed")
             slug = _prompt_slug(entry["title"])
             lines.append(
                 f"### {entry['title']} {badge} {audience} "
@@ -897,14 +921,16 @@ def _render_polls(config) -> str:
             closes = (f" *Closes {poll['closes']}.*"
                       if poll.get("closes") else "")
             button = poll.get("button", "Answer the poll")
+            # Per-poll since 2026-09-22: committee polls were restricted to
+            # the AUA organization in Forms (owner-confirmed 2026-06-11),
+            # but the standing entry is the site feedback form, which the
+            # owner opened to anyone, so the sentence was untrue for it.
+            access = (" Responses are collected through Microsoft Forms "
+                      "and need an AUA account to access."
+                      if poll.get("restricted") else "")
             lines.append(
-                # Committee polls are restricted to the AUA organization in
-                # Forms (owner-confirmed 2026-06-11). If a public poll ever
-                # runs, move this sentence into a per-poll field.
                 f'!!! question "The AI Committee is asking"\n'
-                f"    **{poll['question']}**{note} Responses are collected "
-                f"through Microsoft Forms and need an AUA account to "
-                f"access.\n\n"
+                f"    **{poll['question']}**{note}{access}\n\n"
                 f"    [{button}]({poll['url']})"
                 f"{{ .md-button .md-button--primary }}{closes}"
             )
@@ -1091,7 +1117,7 @@ def _render_opportunities(config) -> str:
 
     required = ("name", "url", "organizer", "type", "format",
                 "eligibility", "deadline", "relevance", "verified")
-    open_now, past = [], []
+    open_now, in_progress, past = [], [], []
     for opp in opportunities:
         for field in required:
             if not opp.get(field):
@@ -1117,6 +1143,10 @@ def _render_opportunities(config) -> str:
         closed = str(deadline).lower() == "closed"
         if event_over or closed or (deadline_passed and end is None):
             past.append(opp)
+        elif deadline_passed:
+            # Still running, but no longer joinable (2026-09-22 audit:
+            # three such rows sat at the top of "Open and upcoming").
+            in_progress.append(opp)
         else:
             open_now.append(opp)
 
@@ -1135,6 +1165,17 @@ def _render_opportunities(config) -> str:
         )
     lines.append("")
 
+    if in_progress:
+        in_progress.sort(key=lambda o: str(o.get("end_date")))
+        lines.append('??? note "In progress, closed to new entrants"')
+        lines.append("")
+        for row in [OPPORTUNITY_HEADER] + [
+            _opportunity_row(o, today) for o in in_progress
+        ]:
+            for inner in row.split("\n"):
+                lines.append("    " + inner)
+        lines.append("")
+
     if past:
         lines.append('??? note "Past opportunities"')
         lines.append("")
@@ -1145,18 +1186,20 @@ def _render_opportunities(config) -> str:
                 lines.append("    " + inner)
         lines.append("")
 
-    if len(open_now) + len(past) != len(opportunities):
+    if len(open_now) + len(in_progress) + len(past) != len(opportunities):
         raise AssertionError(
             f"render_data hook: opportunity count mismatch, read "
             f"{len(opportunities)} but split into {len(open_now)} open "
-            f"+ {len(past)} past"
+            f"+ {len(in_progress)} in progress + {len(past)} past"
         )
 
     print("render_data: opportunities verification")
     print(f"  entries read : {len(opportunities)}")
     print(f"  open         : {len(open_now)}")
+    print(f"  in progress  : {len(in_progress)}")
     print(f"  past         : {len(past)}")
-    print(f"  total        : {len(open_now) + len(past)} (cross-check ok)")
+    print(f"  total        : {len(open_now) + len(in_progress) + len(past)} "
+          "(cross-check ok)")
 
     return "\n".join(lines)
 
