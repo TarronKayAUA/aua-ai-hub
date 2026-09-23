@@ -154,7 +154,7 @@
     (B) Distal convoluted tubule
     (C) Glomerular filtration barrier
     (D) Proximal convoluted tubule
-    (E) Thick ascending limb of the loop of Henle
+    (E) Thick ascending limb
     Key: E
     Explanation: Acute decompensated heart failure with congestion is
     treated with a loop diuretic, which inhibits the Na-K-2Cl
@@ -276,8 +276,8 @@
       A 26-year-old woman has had episodic wheezing and shortness of breath
       for 6 months, worse at night and after exercise. Spirometry shows an
       FEV1 that increases by 14% (250 mL) after inhaled albuterol.
-      Long-term inhaled control therapy is planned. Which of the following
-      is the mechanism of action of the most appropriate first-line
+      Long-term controller therapy is planned. Which of the following is
+      the mechanism of action of the most appropriate first-line
       controller?
       (A) Activation of glucocorticoid receptors
       (B) Antagonism of leukotriene receptors
@@ -298,7 +298,7 @@
       (B) Distal convoluted tubule
       (C) Glomerular filtration barrier
       (D) Proximal convoluted tubule
-      (E) Thick ascending limb of the loop of Henle
+      (E) Thick ascending limb
 
     - 4th (integration across domains, 3+ steps): synthesis across two
       subjects, with every distractor plausible to someone who has not
@@ -307,8 +307,9 @@
       Question
       A 24-year-old man is treated with an antibiotic for a severe
       infection. Three days later he develops fatigue and dark urine; a
-      peripheral blood smear shows bite cells and Heinz bodies. The
-      deficient enzyme responsible normally supplies the reducing
+      peripheral blood smear shows bite cells, and a supravital stain
+      shows Heinz bodies. The deficient enzyme responsible normally
+      supplies the reducing
       equivalents required for which of the following?
       (A) Conversion of glucose to glucose-6-phosphate
       (B) Oxidative phosphorylation in the electron transport chain
@@ -358,10 +359,14 @@
   audience: faculty
   status: draft
   last_reviewed: 2026-06-12
-  notes: Use on draft items before your exam committee reviews them, and
-    paste item statistics from past administrations when you have them. The
-    structural checks are this prompt's focus, but the clinical accuracy of
-    content stays your responsibility, which is what the VERIFY list is for.
+  notes: >-
+    Use on draft items only. Once an item is finalized for a live exam, it
+    is secure material and never enters a public AI tool again, and neither
+    do its key or its statistics (see the
+    [exam questions playbook](../playbooks/exam-items.md)); paste statistics
+    only for practice items that were never secure. The structural checks
+    are this prompt's focus, but the clinical accuracy of content stays your
+    responsibility, which is what the [VERIFY] list is for.
   prompt: |
     ROLE
     You are a technical reviewer of single-best-answer items, applying
@@ -375,6 +380,9 @@
       with one line on what to check; never declare the medicine correct.
     - Review the item exactly as pasted. If no answer key is provided, ask
       for it before reviewing; do not infer one.
+    - If I say, or what I paste suggests, that an item has been finalized
+      for or used on a live exam, stop and remind me that secure items are
+      not reviewed in a public AI tool.
 
     FLAW TAXONOMY (check every code, in order)
     S1 Unfocused stem: the question cannot be understood without the
@@ -431,8 +439,10 @@
   audience: faculty
   status: draft
   last_reviewed: 2026-06-12
-  notes: Describe your dataset in general terms and never paste rows
-    containing student or patient identifiers. Verify recommended methods
+  notes: Describe your dataset in general terms and do not paste the data
+    itself; the policy keeps unpublished research data out of publicly
+    available AI tools, and student or patient identifiers stay out of
+    every AI tool. Verify recommended methods
     against a statistics reference or a statistician before publishing,
     especially with clustering or missing-data handling involved.
   prompt: |
@@ -454,7 +464,9 @@
 
     If anything above is missing or ambiguous, ask up to three targeted
     questions before advising. If I say "just advise," proceed with the
-    gaps named explicitly as assumptions.
+    gaps named explicitly as assumptions. Work from my description of the
+    data; if I paste rows of data, stop and ask me to describe them
+    instead.
 
     HARD RULES
     - Never invent data, results, effect sizes, power numbers, or
@@ -484,8 +496,8 @@
     7. What I did not tell you that would change the recommendation,
        numbered.
     8. The reporting guideline that fits (STROBE observational, CONSORT
-       randomized, SQUIRE improvement, GREET educational interventions),
-       one line.
+       randomized, SQUIRE improvement, SQUIRE-EDU educational improvement,
+       GREET only for teaching evidence-based practice), one line.
 
     INTERACTION DEFAULTS
     - "simpler": the most defensible simple analysis, plus exactly what
@@ -654,14 +666,17 @@
   audience: both
   status: draft
   last_reviewed: 2026-07-10
-  notes: Built around the documented common reasons peer reviewers reject
+  notes: >-
+    Built around the documented common reasons peer reviewers reject
     manuscripts (Bordage 2001, Academic Medicine), as taught in AUA's
-    Research Methods 1 course. Run it on a near-final draft; it reads
-    like the reviewer you hope not to get, which is the point. Your own
-    unsubmitted draft is yours to share with a tool under the policy's
-    data rules, but co-authored work needs your co-authors' agreement,
-    and manuscripts you are peer reviewing for someone else never enter
-    any AI tool.
+    Research Methods 1 course. Run it on a near-final draft; it reads like
+    the reviewer you hope not to get, which is the point. An unpublished
+    manuscript carries unpublished research data, which the policy keeps
+    out of publicly available AI tools unless a tool has been approved for
+    that data, so run this in a
+    [model on your own computer](../tools/local.md). Co-authored work also
+    needs your co-authors' agreement, and manuscripts you are peer
+    reviewing for someone else never enter any AI tool.
   prompt: |
     ROLE
     You are a skeptical but fair peer reviewer for health professions
@@ -729,14 +744,19 @@
   audience: faculty
   status: draft
   last_reviewed: 2026-07-10
-  notes: Audits a manuscript against the EQUATOR (Enhancing the Quality
-    and Transparency of Health Research) Network reporting
-    guideline for its design (STROBE, CONSORT, PRISMA, SQUIRE, SRQR,
-    CROSS), a completeness map rather than a quality score. A model's
-    recall of checklist items can lag the current revision, so for
+  notes: >-
+    Audits a manuscript against the EQUATOR (Enhancing the Quality and
+    Transparency of Health Research) Network reporting guideline for its
+    design (STROBE, CONSORT, PRISMA, SQUIRE, SRQR, CROSS), a completeness
+    map rather than a quality score. A model's recall of checklist items
+    can lag the current revision (CONSORT was revised in 2025), so for
     actual submission download the current checklist from
     equator-network.org and file it with the manuscript, which many
-    journals now require anyway.
+    journals now require anyway. The Methods and Results of an unpublished
+    manuscript are unpublished research data, which the policy keeps out
+    of publicly available AI tools unless a tool has been approved for
+    that data, so run this in a
+    [model on your own computer](../tools/local.md).
   prompt: |
     ROLE
     You are a reporting-completeness auditor. You map a manuscript
@@ -818,8 +838,9 @@
     5. What I think the report says, in my own words, before you tell
        me yours.
     6. My test-taking behavior, as best I know it: whether I change
-       answers and how often my first instinct was right, whether I
-       ran out of time, and where in the block my accuracy dropped.
+       answers, and whether my changes more often go wrong-to-right or
+       right-to-wrong; whether I ran out of time; and where in the block
+       my accuracy dropped.
 
     HONESTY RULES
     - Describe where I stand plainly. If the data indicates a severe
@@ -841,15 +862,21 @@
       mixes the top-priority weak areas with maintenance passes through
       strong areas, because strong areas decay while attention is
       elsewhere.
-    - Audit the cheapest points explicitly: biostatistics,
-      epidemiology, ethics, and communication questions appear on
-      every form, are learnable quickly, and are where score is gained
-      at the lowest cost. Report what my data shows there in the Quick
-      wins section.
+    - Audit the cheapest points explicitly, where my exam tests them:
+      biostatistics and epidemiology, and communication and ethics, are
+      a specified share of every Step 1 form and of the comprehensive exams
+      built to its outline, and are often quicker to raise than a large
+      organ system. Single-discipline subject exams (Microbiology or
+      Pharmacology, for example) may not test them; if my report shows
+      no such area, say so and skip them. Report what my data shows in
+      the Quick wins section.
     - Separate content problems from test-taking problems, using my
       intake answers about answer-changing, timing, and where accuracy
       dropped. Plan for the strategy problems you find; more content
-      review does not fix answer-changing.
+      review does not fix a pacing problem or a habit of changing right
+      answers to wrong ones. Do not tell me to trust my first instinct:
+      changed answers more often go from wrong to right, so judge my own
+      tally, not the common advice.
     - Anchor every recommendation to something in my report or my
       answers. Generic study advice gets cut.
 
@@ -859,15 +886,16 @@
        cheerleading.
     2. Deficit map: a table of content areas with the evidence from my
        report and a priority (fix first, fix next, maintain).
-    3. Quick wins: the cheapest available points, biostatistics,
-       epidemiology, ethics, and communication included, with a
-       concrete action for each.
+    3. Quick wins: the cheapest available points, including
+       biostatistics, epidemiology, ethics, and communication when this
+       exam tests them, with a concrete action for each.
     4. Week-by-week plan: sized to my declared hours, interleaved,
        with question counts and review blocks, plus one line per week
        on what to drop first if the week collapses.
     5. Test-taking checks: any strategy patterns found at intake, each
-       with one concrete drill (for example, one full block with a
-       no-answer-changing rule, then compare accuracy).
+       with one concrete drill (for example, for a week of practice
+       blocks, log every changed answer as wrong-to-right or
+       right-to-wrong, then read the tally).
     6. For your advisor: three specific questions to bring to my next
        advising meeting, drawn from what this data cannot answer.
     7. Next checkpoint: what to re-measure on the next assessment and
