@@ -10,30 +10,40 @@ A self-paced introduction to artificial intelligence (AI) in three stages: found
 
 The university's [AI Responsible Use Policy](../governance/policy.md) commits AUA to providing training resources on responsible AI use. This pathway is the AI Hub's contribution to that commitment, maintained by the Associate Dean of AI in Medical Education.
 
-<img class="section-banner" src="../assets/section-pathway.svg" alt="">
+<nav class="route-map" aria-label="The pathway at a glance" markdown>
 
-<figure class="figure">
-<svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The pathway's three stages: foundations for everyone, role-specific modules, then the optional stage on working with agents">
-<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the three stages</text>
-<rect x="25" y="96" width="190" height="60" rx="8" fill="var(--md-primary-fg-color)"/>
-<text x="120" y="118" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">1 · Foundations</text>
-<text x="120" y="134" text-anchor="middle" font-size="9" fill="#ffffff">everyone, in order</text>
-<text x="120" y="147" text-anchor="middle" font-size="9" fill="#ffffff">modules 1 to 3, ~35 min</text>
-<rect x="235" y="66" width="190" height="60" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="330" y="88" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">2 · Your Work</text>
-<text x="330" y="104" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">pick what matches your role</text>
-<text x="330" y="117" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">modules 4 to 6, ~10 to 15 min each</text>
-<rect x="445" y="36" width="190" height="60" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="540" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">3 · Working with Agents</text>
-<text x="540" y="74" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">optional: agents and setups</text>
-<text x="540" y="87" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">module 7, then hands-on guides</text>
-<defs><marker id="pw-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-default-fg-color--light)"/></marker></defs>
-<line x1="215" y1="118" x2="233" y2="104" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#pw-ar)"/>
-<line x1="425" y1="88" x2="443" y2="74" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#pw-ar)"/>
-<text x="330" y="178" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">every module stands alone; the stages are the recommended order, not a requirement</text>
-</svg>
-<figcaption>Foundations for everyone, depth for your role, and an optional stage on working with agents when the basics feel comfortable.</figcaption>
-</figure>
+<div class="route-stage route-stage--core" markdown>
+<p class="route-stage-head"><span class="route-stage-num">Stage 1</span><span class="route-stage-name">Foundations</span><span class="route-stage-note">Everyone, in order, about 35 minutes</span></p>
+
+- <span class="route-n">1</span> [How AI Works](how-ai-works.md)
+- <span class="route-n">2</span> [Prompting Fundamentals](prompting.md)
+- <span class="route-n">3</span> [The Rules](rules.md)
+
+</div>
+
+<div class="route-stage route-stage--pick" markdown>
+<p class="route-stage-head"><span class="route-stage-num">Stage 2</span><span class="route-stage-name">Your Work</span><span class="route-stage-note">Pick what matches your role, 10 to 15 minutes each</span></p>
+
+- <span class="route-n">4</span> [Teaching and Assessment](teaching-assessment.md)
+- <span class="route-n">5</span> [Research and Scholarship](research.md)
+- <span class="route-n">6</span> [Clinical Contexts](clinical.md)
+
+</div>
+
+<div class="route-stage route-stage--optional" markdown>
+<p class="route-stage-head"><span class="route-stage-num">Stage 3, optional</span><span class="route-stage-name">Working with Agents</span><span class="route-stage-note">The module, then four hands-on guides</span></p>
+
+- <span class="route-n">7</span> [Working with Agents](working-with-agents.md)
+- <span class="route-n">8</span> [Choosing Your Interface](../tools/interfaces.md)
+- <span class="route-n">9</span> [Your First Agent Session](../tools/first-session.md)
+- <span class="route-n">10</span> [Standing Setups](../tools/standing-setups.md)
+- <span class="route-n">11</span> [Agent Skills](../tools/skills.md)
+
+</div>
+
+</nav>
+
+<p class="route-legend">A solid line means in order, separate stops mean pick what fits, and a dashed line means optional. Every module also stands alone; the stages are the recommended order, not a requirement.</p>
 
 ## Stage 1: Foundations
 
