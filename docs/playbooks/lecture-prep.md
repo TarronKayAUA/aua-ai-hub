@@ -43,7 +43,7 @@ Artificial intelligence (AI) is strong at structure and variation: organizing co
 
 ## Guardrails for this task
 
-- Your own teaching materials are fine as inputs, and a colleague's need their permission first. Anything the policy treats as AUA proprietary information (unpublished research data, confidential institutional documents) stays out of public AI tools whoever owns it, and a colleague's permission does not change that.
+- Your own teaching materials are fine as inputs, and a colleague's need their permission first. Confidential institutional documents and research participant data stay out of public AI tools whoever supplies them, and a colleague's permission does not change that.
 - If your slides will state that AI assisted their preparation, follow your department's attribution practice; the [policy](../governance/policy.md) delegates the standard to course and departmental guidelines.
 - No identifiable student data belongs in this workflow; if you design a session around last year's cohort performance, de-identify the data first.
 

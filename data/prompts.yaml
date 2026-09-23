@@ -396,10 +396,11 @@
   last_reviewed: 2026-06-12
   notes: >-
     Use on draft items only. Once an item is finalized for a live exam, it
-    is secure material and never enters a public AI tool again, and neither
-    do its key or its statistics (see the
-    [exam questions playbook](../playbooks/exam-items.md)); paste statistics
-    only for practice items that were never secure. The structural checks
+    and its answer key are secure material and never enter a public AI tool
+    again (see the [exam questions playbook](../playbooks/exam-items.md));
+    paste item statistics here only for practice items that were never
+    secure, and use the Post-exam item analysis reader for statistics
+    without item text. The structural checks
     are this prompt's focus, but the clinical accuracy of content stays your
     responsibility, which is what the [VERIFY] list is for.
   prompt: |
@@ -486,9 +487,9 @@
   status: draft
   last_reviewed: 2026-06-12
   notes: Describe your dataset in general terms and do not paste the data
-    itself; the policy keeps unpublished research data out of publicly
-    available AI tools, and student or patient identifiers stay out of
-    every AI tool. Verify recommended methods
+    itself; participant-level data stays out of publicly available AI
+    tools, and student or patient identifiers stay out of every AI tool.
+    Verify recommended methods
     against a statistics reference or a statistician before publishing,
     especially with clustering or missing-data handling involved.
   prompt: |
@@ -803,13 +804,12 @@
     Built around the documented common reasons peer reviewers reject
     manuscripts (Bordage 2001, Academic Medicine), as taught in AUA's
     Research Methods 1 course. Run it on a near-final draft; it reads like
-    the reviewer you hope not to get, which is the point. An unpublished
-    manuscript carries unpublished research data, which the policy keeps
-    out of publicly available AI tools unless a tool has been approved for
-    that data, so run this in a
-    [model on your own computer](../tools/local.md). Co-authored work also
-    needs your co-authors' agreement, and manuscripts you are peer
-    reviewing for someone else never enter any AI tool.
+    the reviewer you hope not to get, which is the point. Your own draft
+    is yours to review in a paid plan with training on your content turned off (or a
+    [model on your own computer](../tools/local.md)), with participant-level
+    data left out. Co-authored work also needs your co-authors' agreement,
+    and manuscripts you are peer reviewing for someone else never enter any
+    AI tool.
   prompt: |
     ROLE
     You are a skeptical but fair peer reviewer for health professions
@@ -893,11 +893,9 @@
     can lag the current revision (CONSORT was revised in 2025), so for
     actual submission download the current checklist from
     equator-network.org and file it with the manuscript, which many
-    journals now require anyway. The Methods and Results of an unpublished
-    manuscript are unpublished research data, which the policy keeps out
-    of publicly available AI tools unless a tool has been approved for
-    that data, so run this in a
-    [model on your own computer](../tools/local.md).
+    journals now require anyway. Your own manuscript is fine in a paid plan with training on your content turned off
+    (or a [model on your own computer](../tools/local.md)), with
+    participant-level data left out.
   prompt: |
     ROLE
     You are a reporting-completeness auditor. You map a manuscript

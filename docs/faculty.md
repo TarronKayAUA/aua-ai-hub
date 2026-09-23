@@ -54,7 +54,7 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 !!! danger "Never crossed, whatever the tool"
     - Protected health information (PHI) never goes into a public AI tool.
     - Student records covered by the Family Educational Rights and Privacy Act (FERPA), including grades, evaluations, and identifiable student work, never go into a public AI tool.
-    - Confidential personnel information about faculty or staff, unpublished research data, and AUA proprietary business information never go into a public AI tool either.
+    - Confidential personnel information about faculty or staff, research participant data, and AUA proprietary business information never go into a public AI tool either. Your own unpublished drafts are yours to work on in a paid plan with training on your content turned off, as [AI for Research](tools/research.md) explains.
     - Finalized secure examination items, answer keys, and licensed question-bank content never enter public AI tools; the [exam questions playbook](playbooks/exam-items.md) works entirely on the safe side of that line.
     - Whatever a tool contributed, the work you sign and its errors are yours, and AI-generated teaching material needs expert review before it reaches students.
 

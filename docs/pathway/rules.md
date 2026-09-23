@@ -26,7 +26,7 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work,
         - Confidential personnel information
         - AUA proprietary information, including unpublished research data
 
-    The policy states this list is not exhaustive: treat secure assessment materials, unpublished manuscripts, and anything you would not email outside the university with the same caution.
+    The policy states this list is not exhaustive: treat secure assessment materials, other people's unpublished work, and anything you would not email outside the university with the same caution. Your own unpublished drafts are yours to work on in a paid plan with training on your content turned off, as long as participant data and identifiers stay out.
 
 3. **Label and verify.** AI-generated content must be identified and attributed according to academic standards and your course or department's guidelines, never presented as your own original work. Anything an AI produces that you intend to rely on (especially references, which models fabricate fluently) must be verified at the original source. AI is also not a primary source for foundational knowledge; your course materials and the academic literature are.
 
@@ -45,7 +45,8 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work,
 <li>patient information (PHI)</li>
 <li>student records (FERPA)</li>
 <li>personnel information</li>
-<li>unpublished or proprietary work</li>
+<li>research participant data</li>
+<li>proprietary or others' confidential work</li>
 </ul>
 <p class="hf-box-foot">The policy's list is not exhaustive: if you would not email it outside the university, treat it the same.</p>
 </div>

@@ -28,7 +28,7 @@ Two norms are now widely shared across journals: an AI tool cannot be an author,
 
 ### Restricted zones
 
-Unpublished manuscripts, grant applications, and materials you receive for peer review are confidential; they do not go into public AI tools, and many funders explicitly prohibit AI use in peer review. Funder rules for AI in proposal preparation vary and change; check the current policy of your funder before drafting with assistance. Research data carrying human subjects identifiers falls under the [AI Responsible Use Policy](../governance/policy.md)'s prohibited-data rules: de-identify before any AI-assisted analysis, and involve your institutional review board (IRB) where human subjects research requires it.
+Manuscripts and grant applications you receive for peer review are confidential; they do not go into any AI tool, and many funders explicitly prohibit AI use in peer review. Your own unpublished drafts are different: they are yours, and a paid plan with training on your content turned off is a reasonable place to work on them, with your co-authors' agreement for shared work. Funder rules for AI in proposal preparation vary and change; check the current policy of your funder before drafting with assistance. Research data carrying human subjects identifiers falls under the [AI Responsible Use Policy](../governance/policy.md)'s prohibited-data rules: de-identify before any AI-assisted analysis, and involve your institutional review board (IRB) where human subjects research requires it.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">The three zones of research AI use</p>
