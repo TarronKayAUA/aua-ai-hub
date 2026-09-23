@@ -1118,6 +1118,128 @@ def _livebench_discover_version(base_url: str, timeout: int) -> str | None:
     return None
 
 
+_NUMBER_WORDS = ("zero", "one", "two", "three", "four", "five", "six",
+                 "seven", "eight", "nine", "ten")
+
+
+def _livebench_spread_html(top: list[dict], group_names: list[str]) -> str:
+    """The "Where the top N differ" chart above the LiveBench table
+    (owner approved 2026-09-23). Built from the same rows as the table, so
+    the two can never disagree and every snapshot redraws it. Words are
+    HTML, so they keep the site's type size on a phone; the marks are SVG
+    positioned in percentages with no viewBox, so nothing text-like is ever
+    scaled down and dots stay round at any width. Colors come from classes
+    in extra.css (.lb-*), never from attributes here."""
+    leader = top[0]["model"]
+    metrics = [("global", "Overall (global average)")] + [
+        (g, LIVEBENCH_LABELS.get(g, g)) for g in group_names]
+
+    # Rounded to the table's one decimal first, so a caption such as
+    # "78.5 to 83.4, a spread of 4.9 points" does its own arithmetic
+    # correctly for a reader checking it against the table.
+    def values(key: str) -> list[tuple[str, float]]:
+        if key == "global":
+            return [(r["model"], round(r["global"], 1)) for r in top]
+        return [(r["model"], round(r["cats"][key], 1))
+                for r in top if key in r["cats"]]
+
+    data = {key: values(key) for key, _ in metrics}
+    data = {k: v for k, v in data.items() if v}
+    everything = [v for vals in data.values() for _, v in vals]
+    lo = int(min(everything) // 10 * 10)
+    hi = 100
+
+    def pos(v: float) -> float:
+        return (v - lo) / (hi - lo) * 100
+
+    spreads = {k: (min(v for _, v in vals), max(v for _, v in vals))
+               for k, vals in data.items()}
+    cats = [(k, label) for k, label in metrics if k != "global" and k in data]
+    widest_key, widest_label = max(
+        cats, key=lambda c: spreads[c[0]][1] - spreads[c[0]][0])
+    leads = sum(1 for k, _ in cats
+                if dict(data[k]).get(leader, -1.0) >= spreads[k][1])
+
+    def say(k: int) -> str:
+        return _NUMBER_WORDS[k] if 0 <= k < len(_NUMBER_WORDS) else str(k)
+
+    if leads == 0:
+        lead_sentence = ("The model ranked first overall is not first in any "
+                         f"of the {say(len(cats))} categories.")
+    else:
+        lead_sentence = ("The model ranked first overall is first in "
+                         f"{say(leads)} of the {say(len(cats))} categories.")
+
+    def strip(key: str) -> str:
+        a, b = spreads[key]
+        parts = ['<svg class="lb-strip" aria-hidden="true" focusable="false">']
+        parts += [f'<line class="lb-grid" x1="{pos(t):.2f}%" x2="{pos(t):.2f}%"'
+                  ' y1="4" y2="24"/>' for t in range(lo, hi + 1, 10)]
+        parts.append(f'<rect class="lb-range" x="{pos(a):.2f}%" y="10" '
+                     f'width="{pos(b) - pos(a):.2f}%" height="8" rx="4"/>')
+        # The leader is drawn last so its diamond sits on top of any dot.
+        for model, v in sorted(data[key], key=lambda mv: mv[0] == leader):
+            tip = html.escape(f"{remove_dashes(model)}: {v:.1f}")
+            if model == leader:
+                parts.append(
+                    f'<svg x="{pos(v):.2f}%" y="14" overflow="visible">'
+                    '<path class="lb-lead" d="M0,-6.5 L6.5,0 L0,6.5 L-6.5,0 Z">'
+                    f'<title>{tip}</title></path></svg>')
+            else:
+                parts.append(f'<circle class="lb-dot" cx="{pos(v):.2f}%" '
+                             f'cy="14" r="4.5"><title>{tip}</title></circle>')
+        parts.append("</svg>")
+        return "".join(parts)
+
+    n = len(top)
+    out = [
+        '<figure class="lb-spread" markdown="0">',
+        '<div class="lb-spread-head">',
+        f'<p class="lb-spread-title">Where the top {n} differ</p>',
+        '<p class="lb-legend">',
+        ('<span><svg class="lb-key" aria-hidden="true"><circle class="lb-dot" '
+         'cx="8" cy="8" r="4.5"/></svg>one model</span>'),
+        ('<span><svg class="lb-key" aria-hidden="true"><path class="lb-lead" '
+         'd="M8,1.5 L14.5,8 L8,14.5 L1.5,8 Z"/></svg>ranked first overall '
+         f'({html.escape(remove_dashes(leader))})</span>'),
+        ('<span><svg class="lb-key lb-key--wide" aria-hidden="true"><rect '
+         'class="lb-range" x="1" y="4" width="26" height="8" rx="4"/></svg>'
+         'lowest to highest</span>'),
+        '</p></div>',
+    ]
+    for key, label in metrics:
+        if key not in data:
+            continue
+        a, b = spreads[key]
+        cls = "lb-row lb-row--global" if key == "global" else "lb-row"
+        out.append(
+            f'<div class="{cls}"><p class="lb-label"><span class="lb-name">'
+            f'{html.escape(label)}</span><span class="lb-span">{a:.1f} to '
+            f'{b:.1f}, a spread of {b - a:.1f} points</span></p>'
+            f'{strip(key)}</div>')
+    ticks = []
+    for t in range(lo, hi + 1, 10):
+        anchor = "start" if t == lo else "end" if t == hi else "middle"
+        ticks.append(f'<text x="{pos(t):.2f}%" y="12" '
+                     f'text-anchor="{anchor}">{t}</text>')
+    out.append('<div class="lb-row lb-row--axis"><p class="lb-label" '
+               'aria-hidden="true"></p><svg class="lb-strip lb-axis" '
+               f'aria-hidden="true">{"".join(ticks)}</svg></div>')
+    g_lo, g_hi = spreads["global"]
+    w_lo, w_hi = spreads[widest_key]
+    out.append(
+        f'<figcaption>Every row uses the same {lo} to {hi} scale; each dot is '
+        f'one of the {n} models in the table below. Their overall scores sit '
+        f'within {g_hi - g_lo:.1f} points of one another, while a single '
+        f'category spreads as widely as {w_hi - w_lo:.1f} points '
+        f'({html.escape(widest_label)}). {lead_sentence}</figcaption>')
+    out.append("</figure>")
+    fragment = "\n".join(out)
+    if "—" in fragment:
+        raise ValueError("em dash in LiveBench chart output")
+    return fragment
+
+
 def update_livebench(config: dict, now: datetime, dry_run: bool,
                      verbose: bool) -> str:
     """Refresh includes/livebench.md from LiveBench's published data.
@@ -1182,6 +1304,7 @@ def update_livebench(config: dict, now: datetime, dry_run: bool,
         top = rows[: cfg.get("rows", 15)]
 
         group_names = list(groups)
+        chart = _livebench_spread_html(top, group_names)
         lines = [
             GENERATED_HEADER,
             "",
@@ -1190,6 +1313,11 @@ def update_livebench(config: dict, now: datetime, dry_run: bool,
             "the mean of the category averages. Data: "
             "[LiveBench](https://livebench.ai/), an open, "
             "contamination-aware benchmark.",
+            "",
+            chart,
+            "",
+            # Scopes the table's width fix in extra.css to this table only.
+            '<div class="livebench-table" markdown="1">',
             "",
             "| # | Model | Global | "
             + " | ".join(LIVEBENCH_LABELS.get(g, g) for g in group_names)
@@ -1205,16 +1333,23 @@ def update_livebench(config: dict, now: datetime, dry_run: bool,
                 f"| {rank} | {remove_dashes(row['model'])} "
                 f"| **{row['global']:.1f}** | {cells} |"
             )
+        lines += ["", "</div>"]
         content = "\n".join(lines) + "\n"
+        chart_rows = chart.count('<div class="lb-row')
+        # Metric rows plus the axis row; a mismatch means a metric was
+        # silently dropped from the chart.
+        if chart_rows != len(group_names) + 2:
+            raise ValueError(f"chart has {chart_rows} rows, expected "
+                             f"{len(group_names) + 2}")
         if dry_run:
             print(f"[dry-run] would write includes/livebench.md "
-                  f"({len(top)} rows)")
+                  f"({len(top)} rows, chart {chart_rows - 1} metrics)")
         else:
             LIVEBENCH_INCLUDE.parent.mkdir(parents=True, exist_ok=True)
             LIVEBENCH_INCLUDE.write_text(content, encoding="utf-8",
                                          newline="\n")
         return (f"updated ({discovery} {version}, {len(rows)} models, "
-                f"top {len(top)} rendered)")
+                f"top {len(top)} rendered, chart {chart_rows - 1} metrics)")
     except (requests.RequestException, ValueError, KeyError) as exc:
         if verbose:
             print(f"  livebench update failed: {type(exc).__name__}: {exc}")

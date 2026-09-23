@@ -935,3 +935,290 @@
   border-color: var(--md-primary-fg-color);
   color: #ffffff;
 }
+
+/* === Figure colors in the dark scheme (2026-09-23 design review) ==========
+   Hand-drawn figures color their lines and boxes with the brand blue
+   (var(--md-primary-fg-color), #07618c in both schemes). Against the dark
+   page that is about 2.4:1, below the 3:1 that graphics need, and it was
+   used 135 times as a stroke across 40 figures. Rather than touch every
+   figure, these rules retarget the exact attribute values the figures use,
+   in the dark scheme only (CSS outranks SVG presentation attributes):
+   lines and arrowheads take the dark link blue (#5aa3c7, about 5:1), and
+   filled boxes take a middle blue (#2b7aab) that clears 3:1 against the
+   page while white text on it stays at about 4.7:1. The light scheme is
+   untouched. New figures should use var(--aua-figure-line) and
+   var(--aua-figure-fill) directly instead of the primary color. */
+[data-md-color-scheme="default"] {
+  --aua-figure-line: #07618c;
+  --aua-figure-fill: #07618c;
+}
+
+[data-md-color-scheme="slate"] {
+  --aua-figure-line: #5aa3c7;
+  --aua-figure-fill: #2b7aab;
+}
+
+[data-md-color-scheme="slate"] .md-typeset svg [stroke="var(--md-primary-fg-color)"] {
+  stroke: var(--aua-figure-line);
+}
+
+[data-md-color-scheme="slate"] .md-typeset svg path[fill="var(--md-primary-fg-color)"] {
+  fill: var(--aua-figure-line);
+}
+
+[data-md-color-scheme="slate"] .md-typeset svg rect[fill="var(--md-primary-fg-color)"] {
+  fill: var(--aua-figure-fill);
+}
+
+/* Green means "fine" or "safe" in the figures; #2e7d32 is about 3.1:1 on
+   the dark page, so the dark scheme lightens it. */
+[data-md-color-scheme="slate"] .md-typeset svg [stroke="#2e7d32"] {
+  stroke: #66bb6a;
+}
+
+[data-md-color-scheme="slate"] .md-typeset svg [fill="#2e7d32"] {
+  fill: #81c784;
+}
+
+/* === Figures on phones ===================================================
+   The figures are drawn on a ~660-unit canvas and scale to the column, so
+   on a 390px phone their labels shrank to 4 to 6px against 16px body text.
+   Until each is rebuilt with its words in HTML (the pathway modules were
+   first, 2026-09-23), a figure that is still one SVG keeps a readable
+   minimum width on phones and scrolls sideways inside its own box, the way
+   the site's wide tables already do. */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .figure:has(> svg) {
+    overflow-x: auto;
+  }
+
+  .md-typeset .figure:has(> svg) > svg {
+    min-width: 600px;
+  }
+
+  .md-typeset .figure:has(> svg)::before {
+    content: "Swipe sideways to see the whole figure";
+    display: block;
+    margin-bottom: 0.3rem;
+    font-size: 0.64rem;
+    text-align: left;
+    color: var(--md-default-fg-color--light);
+  }
+
+  /* The section banners are decorative art that shrinks to a thin, empty
+     blue strip at phone width; on a phone they only push the text down. */
+  .md-typeset .section-banner {
+    display: none;
+  }
+}
+
+/* === Glossary terms ======================================================
+   Terms rendered at the same weight as their definitions (400 in the dark
+   scheme), so the eye had nothing to catch while scanning the list. */
+.md-typeset .glossary h2,
+[data-md-color-scheme="slate"] .md-typeset .glossary h2 {
+  font-weight: 700;
+}
+
+/* === LiveBench spread chart (Benchmarks page, owner approved 2026-09-23) ==
+   Generated with the table by aggregate.update_livebench(), from the same
+   rows, so it redraws with every snapshot and cannot disagree with the
+   table. Words are HTML so they keep the site's type size on a phone; the
+   marks are SVG placed in percentages with no viewBox, so dots stay round
+   at any width and nothing is scaled down. Material's
+   `.md-typeset figure { width: fit-content }` and
+   `.md-typeset svg { height: auto }` would shrink-wrap the figure and give
+   every viewBox-less SVG a 150px default height; the selectors below
+   outrank both. */
+.md-typeset .lb-spread {
+  width: 100%;
+  max-width: none;
+  margin: 1.2rem 0 1.6rem;
+  padding: 0.9rem 1.1rem 0.7rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  text-align: left;
+}
+
+.md-typeset .lb-spread-head {
+  margin-bottom: 0.4rem;
+}
+
+.md-typeset .lb-spread-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.md-typeset .lb-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .lb-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.md-typeset .lb-spread svg.lb-key {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+.md-typeset .lb-spread svg.lb-key--wide {
+  width: 28px;
+}
+
+.md-typeset .lb-row {
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  align-items: center;
+  column-gap: 1rem;
+  padding: 0.3rem 0;
+  border-top: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .lb-row--global {
+  margin: 0 -0.5rem;
+  padding: 0.35rem 0.5rem;
+  border-top: 0;
+  border-radius: 0.3rem;
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset .lb-row--axis {
+  border-top: 0;
+  padding-top: 0;
+}
+
+.md-typeset .lb-label {
+  margin: 0;
+  line-height: 1.35;
+}
+
+.md-typeset .lb-name {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.md-typeset .lb-span {
+  display: block;
+  font-size: 0.66rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .lb-spread svg.lb-strip {
+  display: block;
+  width: 100%;
+  height: 28px;
+  max-width: none;
+  overflow: visible;
+}
+
+.md-typeset .lb-spread svg.lb-axis {
+  height: 16px;
+}
+
+.lb-axis text {
+  font-size: 0.62rem;
+  fill: var(--md-default-fg-color--light);
+}
+
+.lb-grid {
+  stroke: var(--md-default-fg-color--lightest);
+  stroke-width: 1;
+}
+
+.lb-range {
+  fill: var(--md-default-fg-color--lightest);
+}
+
+.lb-row--global .lb-range {
+  fill: var(--md-default-fg-color--lighter);
+}
+
+.lb-dot {
+  fill: var(--md-default-bg-color);
+  stroke: var(--md-default-fg-color--light);
+  stroke-width: 1.5;
+}
+
+.lb-row--global .lb-dot {
+  fill: var(--md-code-bg-color);
+}
+
+.lb-lead {
+  fill: var(--md-typeset-a-color);
+  stroke: var(--md-default-bg-color);
+  stroke-width: 1.5;
+}
+
+.md-typeset .lb-spread figcaption {
+  max-width: 40rem; /* Material caps figcaption at 24rem */
+  margin: 0.6rem 0 0;
+  font-size: 0.68rem;
+  line-height: 1.5;
+  color: var(--md-default-fg-color--light);
+  text-align: left;
+}
+
+/* Phones: the label stacks over its strip so the strip gets the full width. */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .lb-row {
+    grid-template-columns: 1fr;
+    row-gap: 0.1rem;
+  }
+
+  .md-typeset .lb-row--axis .lb-label {
+    display: none;
+  }
+}
+
+@media print {
+  .md-typeset .lb-row--global {
+    background: none;
+  }
+}
+
+/* The LiveBench table itself. Material gives every table header a 5rem
+   minimum width, so its ten columns needed about 1000px in a 940px column
+   and the last one was cut off at 1440px wide. Scoped to this table (the
+   generator wraps it in .livebench-table); model names stay on one line
+   instead of breaking at every hyphen. */
+/* Material's rule is `.md-typeset table:not([class]) th`; this must outrank it. */
+.md-typeset .livebench-table table:not([class]) th {
+  min-width: 0;
+}
+
+.md-typeset .livebench-table table:not([class]) td:nth-child(2) {
+  white-space: nowrap;
+}
+
+/* === Reduced motion ======================================================
+   Visitors who ask their system for reduced motion get no hover lifts and
+   no smooth scrolling. Nothing on the site carries meaning through motion,
+   so this removes decoration only. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .md-typeset .grid.cards > ul > li,
+  .video-card,
+  .tool-card {
+    transition: none;
+  }
+
+  .md-typeset .grid.cards > ul > li:hover,
+  .video-card:hover,
+  .tool-card:hover {
+    transform: none;
+  }
+}
