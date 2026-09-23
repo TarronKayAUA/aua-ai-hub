@@ -30,32 +30,38 @@ Two norms are now widely shared across journals: an AI tool cannot be an author,
 
 Unpublished manuscripts, grant applications, and materials you receive for peer review are confidential; they do not go into public AI tools, and many funders explicitly prohibit AI use in peer review. Funder rules for AI in proposal preparation vary and change; check the current policy of your funder before drafting with assistance. Research data carrying human subjects identifiers falls under the [AI Responsible Use Policy](../governance/policy.md)'s prohibited-data rules: de-identify before any AI-assisted analysis, and involve your institutional review board (IRB) where human subjects research requires it.
 
-<figure class="figure">
-<svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three zones of research AI use: assisted and verified literature work, disclosed writing assistance, and restricted confidential material">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the three zones of research AI use</text>
-<rect x="20" y="30" width="195" height="130" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="117" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">assisted, verified</text>
-<text x="117" y="74" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">literature screening</text>
-<text x="117" y="90" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">first-pass synthesis</text>
-<text x="117" y="106" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">analysis code drafting</text>
-<text x="117" y="130" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">every citation checked</text>
-<text x="117" y="143" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">at the original source</text>
-<rect x="232" y="30" width="195" height="130" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="329" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">disclosed</text>
-<text x="329" y="74" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">AI is never an author</text>
-<text x="329" y="90" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">assistance disclosed per venue</text>
-<text x="329" y="106" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">check ICMJE and the journal</text>
-<text x="329" y="130" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">fabricated data, images, or</text>
-<text x="329" y="143" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">references are misconduct</text>
-<rect x="444" y="30" width="195" height="130" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
-<text x="541" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">restricted</text>
-<text x="541" y="74" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">manuscripts under review</text>
-<text x="541" y="90" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">grant confidentiality, funder rules</text>
-<text x="541" y="106" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">identifiable subjects data</text>
-<text x="541" y="130" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">de-identify first and involve</text>
-<text x="541" y="143" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">the IRB where required</text>
-<text x="330" y="180" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">accountability never moves: it stays with you and your coauthors in every zone</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">The three zones of research AI use</p>
+<div class="hf-panels">
+<div class="hf-box hf-box--ok">
+<p class="hf-box-title">Assisted, verified</p>
+<ul>
+<li>literature screening</li>
+<li>first-pass synthesis</li>
+<li>analysis code drafting</li>
+</ul>
+<p class="hf-box-foot">Every citation checked at the original source.</p>
+</div>
+<div class="hf-box">
+<p class="hf-box-title">Disclosed</p>
+<ul>
+<li>AI is never an author</li>
+<li>assistance disclosed per venue</li>
+<li>check ICMJE and the journal</li>
+</ul>
+<p class="hf-box-foot">Fabricated data, images, or references are misconduct.</p>
+</div>
+<div class="hf-box hf-box--stop">
+<p class="hf-box-title">Restricted</p>
+<ul>
+<li>manuscripts under review</li>
+<li>grant confidentiality, funder rules</li>
+<li>identifiable subjects data</li>
+</ul>
+<p class="hf-box-foot">De-identify first and involve the IRB where required.</p>
+</div>
+</div>
+<p class="hf-note">Accountability never moves: it stays with you and your coauthors in every zone.</p>
 <figcaption>Reward and risk rise together; disclosure and verification keep you on the right side.</figcaption>
 </figure>
 

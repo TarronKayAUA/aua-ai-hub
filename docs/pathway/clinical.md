@@ -28,26 +28,30 @@ The policy is direct: AI tools must not replace professional judgment or clinica
 
 Protected health information (PHI) never goes into a public AI tool. Not a name, not an identifiable case detail, not a photo of a chart, not a recorded encounter for transcription. There are no informal exceptions; tools must be specifically approved for patient data before it touches them, and consumer chatbots are not. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
 
-<figure class="figure">
-<svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two panels: learning clinical medicine with AI is encouraged with discipline; AI in patient care is extreme caution; patient information never enters a public tool in either world">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">two worlds share the word clinical</text>
-<rect x="20" y="30" width="300" height="125" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="170" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">learning clinical medicine</text>
-<text x="170" y="68" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">encouraged, with discipline</text>
-<text x="170" y="92" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">practice differentials on AI cases</text>
-<text x="170" y="110" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">mechanism explanations</text>
-<text x="170" y="128" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">generated practice questions</text>
-<text x="170" y="146" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">the literature stays primary</text>
-<rect x="340" y="30" width="300" height="125" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
-<text x="490" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">AI in patient care</text>
-<text x="490" y="68" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">extreme caution, by policy</text>
-<text x="490" y="92" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">augments decisions,</text>
-<text x="490" y="110" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">never automates them</text>
-<text x="490" y="128" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">never between you and your supervisor</text>
-<text x="490" y="146" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">accountability stays human</text>
-<rect x="20" y="170" width="620" height="30" rx="6" fill="var(--md-primary-fg-color)"/>
-<text x="330" y="189" text-anchor="middle" font-size="9.5" fill="#ffffff">the absolute rule in both worlds: patient information never enters a public AI tool, no informal exceptions</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">Two worlds share the word clinical</p>
+<div class="hf-panels">
+<div class="hf-box hf-box--ok">
+<p class="hf-box-title">Learning clinical medicine</p>
+<p class="hf-box-sub">Encouraged, with discipline</p>
+<ul>
+<li>practice differentials on AI cases</li>
+<li>mechanism explanations</li>
+<li>generated practice questions</li>
+</ul>
+<p class="hf-box-foot">The literature stays primary.</p>
+</div>
+<div class="hf-box hf-box--stop">
+<p class="hf-box-title">AI in patient care</p>
+<p class="hf-box-sub">Extreme caution, by policy</p>
+<ul>
+<li>augments decisions, never automates them</li>
+<li>never between you and your supervisor</li>
+</ul>
+<p class="hf-box-foot">Accountability stays human.</p>
+</div>
+</div>
+<p class="hf-banner">The absolute rule in both worlds: patient information never enters a public AI tool, no informal exceptions.</p>
 <figcaption>Same word, different rules; the data floor is identical in both.</figcaption>
 </figure>
 

@@ -21,26 +21,26 @@ A chat assistant answers you; an agent works for you. The difference is the loop
 
 When an agent needs something done in the world, it pauses and asks: may I read this file, may I run this command, may I write this document. The interface executes the action only after the request passes a permission check, and in the default permission modes that check is you for anything consequential. Some settings auto-approve certain actions; [Your First Agent Session](../tools/first-session.md#the-settings-that-matter) covers which, and when they are earned. This is the module's one habit to build: **read the request before approving it.** A request that matches what you asked for gets a yes; a request that surprises you gets a no and a question. The permission prompt is not a formality to click through; it is the mechanism that makes an agent safe to use, and it is enforced by the software, not by the model's good intentions.
 
-<figure class="figure">
-<svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An agent proposes an action, you approve or deny at the gate, and only approved actions reach your machine">
-<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">you are the gate</text>
-<rect x="30" y="60" width="160" height="64" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="110" y="86" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">the agent proposes</text>
-<text x="110" y="104" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">"may I write this file?"</text>
-<rect x="255" y="52" width="150" height="80" rx="40" fill="none" stroke="#ff8f00" stroke-width="2.5"/>
-<text x="330" y="86" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">you decide</text>
-<text x="330" y="104" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">does this match my request?</text>
-<rect x="470" y="60" width="160" height="64" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="550" y="86" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">the action runs</text>
-<text x="550" y="104" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">only what you approved</text>
-<defs><marker id="wa-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-default-fg-color--light)"/></marker></defs>
-<line x1="190" y1="92" x2="253" y2="92" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#wa-ar)"/>
-<line x1="405" y1="92" x2="468" y2="92" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#wa-ar)"/>
-<text x="437" y="84" text-anchor="middle" font-size="8.5" fill="#2e7d32">approve</text>
-<path d="M 330 132 L 330 168 L 110 168 L 110 126" fill="none" stroke="var(--aua-alert)" stroke-width="1.6" marker-end="url(#wa-ar)"/>
-<text x="220" y="161" text-anchor="middle" font-size="8.5" fill="var(--aua-alert)">deny, and ask the agent why it wanted that</text>
-<text x="330" y="198" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the gate is enforced by the interface software, not by the model's judgment</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">You are the gate</p>
+<div class="hf-flow">
+<div class="hf-box">
+<p class="hf-box-title">The agent proposes</p>
+<p class="hf-box-sub">"May I write this file?"</p>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-box hf-box--warn hf-box--pill">
+<p class="hf-box-title">You decide</p>
+<p class="hf-box-sub">Does this match my request?</p>
+</div>
+<span class="hf-arrow">approve</span>
+<div class="hf-box hf-box--ok">
+<p class="hf-box-title">The action runs</p>
+<p class="hf-box-sub">Only what you approved</p>
+</div>
+</div>
+<p class="hf-return hf-return--stop">Deny, and ask the agent why it wanted that.</p>
+<p class="hf-note">The gate is enforced by the interface software, not by the model's judgment.</p>
 <figcaption>Approve what matches your request; deny what surprises you. That one habit is most of agent safety.</figcaption>
 </figure>
 

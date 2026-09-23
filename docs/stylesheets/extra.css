@@ -1776,3 +1776,315 @@
     margin-top: 0.4rem;
   }
 }
+
+/* === HTML figures (the pathway modules first, 2026-09-23) ================
+   Words in HTML, shapes in CSS. A figure drawn as one SVG scales its whole
+   canvas, text included, to the column, which put labels at 4 to 6px on a
+   phone; these reflow instead, so text stays at the page's own size and
+   panels stack on narrow screens. Vocabulary:
+     .hf-box (+ --ok --info --warn --stop --plain)  a bordered box
+     .hf-panels  boxes side by side, stacking when there is no room
+     .hf-flow    boxes joined by arrows (.hf-arrow), stacking on phones
+     .hf-return  a labeled arrow back to an earlier step
+     .hf-gradient  labeled rows beside a caution bar
+   Colors: --aua-ok (fine), --aua-figure-line (neutral), --aua-warn
+   (review), --aua-alert (stop), all scheme-aware. Every color also has
+   words next to it, so no meaning rests on color alone. */
+[data-md-color-scheme="default"] {
+  --aua-warn: #e65100;
+}
+
+[data-md-color-scheme="slate"] {
+  --aua-warn: #ffa726;
+}
+
+.md-typeset .hf {
+  text-align: left;
+}
+
+.md-typeset .hf-title {
+  margin: 0 0 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.md-typeset .hf-note {
+  margin: 0.75rem 0 0;
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-box {
+  padding: 0.6rem 0.8rem;
+  border: 2px solid var(--aua-figure-line);
+  border-radius: 0.45rem;
+  background: var(--md-default-bg-color);
+  font-size: 0.74rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.md-typeset .hf-box--ok {
+  border-color: var(--aua-ok);
+}
+
+.md-typeset .hf-box--warn {
+  border-color: var(--aua-warn);
+}
+
+.md-typeset .hf-box--stop {
+  border-color: var(--aua-alert);
+}
+
+.md-typeset .hf-box--plain {
+  border: 1px solid var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-box > p {
+  margin: 0;
+}
+
+.md-typeset .hf-box-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.md-typeset .hf-box-sub {
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-box > .hf-box-foot {
+  margin-top: 0.45rem;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-box > .hf-box-ok {
+  margin-top: 0.45rem;
+  font-size: 0.7rem;
+  color: var(--aua-ok);
+}
+
+[dir] .md-typeset .hf-box ul {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .hf-box ul > li {
+  margin: 0 0 0.1rem;
+}
+
+.md-typeset .hf-banner {
+  margin: 0.8rem 0 0;
+  padding: 0.55rem 0.8rem;
+  border-radius: 0.45rem;
+  background: var(--aua-figure-fill);
+  color: #ffffff;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Panels: as many columns as fit at 11rem or more, so three sit side by
+   side in the column and stack on a phone without a breakpoint. */
+.md-typeset .hf-panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.8rem;
+}
+
+/* Flow: boxes joined by arrows, left to right; top to bottom on phones. */
+.md-typeset .hf-flow {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.md-typeset .hf-flow > .hf-box,
+.md-typeset .hf-flow > .hf-col {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.md-typeset .hf-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.md-typeset .hf-arrow {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1.8rem;
+  font-size: 0.64rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-arrow::after {
+  content: "\2192";
+  font-size: 1.2rem;
+  line-height: 1;
+  color: var(--aua-figure-line);
+}
+
+.md-typeset .hf-box--pill {
+  border-radius: 2rem;
+}
+
+.md-typeset .hf-return {
+  margin: 0.55rem 0 0;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-return::before {
+  content: "\21A9\00a0";
+  font-size: 0.95rem;
+  color: var(--aua-figure-line);
+}
+
+.md-typeset .hf-return--stop {
+  color: var(--aua-alert);
+}
+
+.md-typeset .hf-return--stop::before {
+  color: var(--aua-alert);
+}
+
+/* The request stack in the prompting figure. */
+.md-typeset .hf-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.5rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 0.45rem;
+}
+
+.md-typeset .hf-stack > p {
+  margin: 0;
+  padding: 0.35rem 0.6rem;
+  border-radius: 0.3rem;
+  background: var(--md-default-fg-color--lightest);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.md-typeset .hf-stack > .hf-stack-key {
+  background: var(--aua-figure-fill);
+  color: #ffffff;
+}
+
+/* Small drawn cues inside the consequence panels (decorative; the words
+   beside them say the same thing). */
+.md-typeset .hf-timeline {
+  display: flex;
+  margin: 0.55rem 0 0.2rem;
+  font-size: 0.64rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-timeline > span {
+  flex: 1;
+  padding-top: 0.25rem;
+  border-top: 2px solid var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-timeline > .hf-tl-after {
+  border-top: 2px dashed var(--aua-alert);
+  border-left: 3px solid var(--aua-alert);
+  color: var(--aua-alert);
+}
+
+.md-typeset .hf-window {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0.5rem 0 0.2rem;
+  font-size: 0.66rem;
+}
+
+.md-typeset .hf-window > span:first-child {
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-window > span:last-child {
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 0.3rem;
+}
+
+.md-typeset .hf-quote {
+  margin: 0.45rem 0 0;
+  font-style: italic;
+}
+
+/* The caution gradient in the teaching figure: a bar from ok to stop
+   beside labeled rows. */
+.md-typeset .hf-gradient {
+  display: grid;
+  grid-template-columns: 0.5rem minmax(8rem, 12rem) 1fr;
+  gap: 0.65rem 0.9rem;
+  align-items: center;
+}
+
+.md-typeset .hf-gradient::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  background: linear-gradient(var(--aua-ok), var(--aua-warn), var(--aua-alert));
+}
+
+.md-typeset .hf-grad-row {
+  display: contents;
+}
+
+.md-typeset .hf-grad-row > .hf-grad-label {
+  grid-column: 2;
+  margin: 0;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.md-typeset .hf-grad-row > .hf-box {
+  grid-column: 3;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .hf-flow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .md-typeset .hf-arrow::after {
+    content: "\2193";
+  }
+
+  .md-typeset .hf-gradient {
+    grid-template-columns: 0.5rem 1fr;
+    gap: 0.35rem 0.8rem;
+  }
+
+  .md-typeset .hf-gradient::before {
+    grid-row: 1 / span 6;
+  }
+
+  .md-typeset .hf-grad-row > .hf-grad-label,
+  .md-typeset .hf-grad-row > .hf-box {
+    grid-column: 2;
+  }
+
+  .md-typeset .hf-grad-row > .hf-grad-label {
+    margin-top: 0.4rem;
+  }
+}

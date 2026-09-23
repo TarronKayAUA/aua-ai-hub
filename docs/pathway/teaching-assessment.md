@@ -34,22 +34,22 @@ This is the highest-caution zone. Identifiable student work and grades are recor
 
 Students will use these tools; ambiguity serves no one. The policy delegates labeling and attribution expectations to course and departmental guidelines, which means your syllabus is where the line gets drawn. The [syllabus AI statement playbook](../playbooks/syllabus-statement.md) offers adaptable templates from prohibited to encouraged-with-verification.
 
-<figure class="figure">
-<svg viewBox="0 0 660 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Caution gradient across three teaching tasks: content preparation has strong leverage, assessment writing needs review and security, evaluating student work is the highest-caution zone">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the caution gradient</text>
-<text x="24" y="61" text-anchor="start" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">content preparation</text>
-<rect x="220" y="36" width="420" height="44" rx="6" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="430" y="54" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">strong leverage: outlines, cases, checks from your materials;</text>
-<text x="430" y="68" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">the accuracy of what reaches students is yours to confirm</text>
-<text x="24" y="126" text-anchor="start" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">assessment writing</text>
-<rect x="220" y="101" width="420" height="44" rx="6" fill="none" stroke="#e65100" stroke-width="2"/>
-<text x="430" y="119" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">usable but uneven drafts; faculty review every item, and</text>
-<text x="430" y="133" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">finalized secure items never enter public tools</text>
-<text x="24" y="191" text-anchor="start" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">evaluating student work</text>
-<rect x="220" y="166" width="420" height="44" rx="6" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
-<text x="430" y="184" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">FERPA territory: de-identify or do not use AI at all;</text>
-<text x="430" y="198" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">detector flags are indicators, never verdicts</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">The caution gradient</p>
+<div class="hf-gradient">
+<div class="hf-grad-row">
+<p class="hf-grad-label">Content preparation</p>
+<div class="hf-box hf-box--ok"><p>Strong leverage: outlines, cases, checks from your materials. The accuracy of what reaches students is yours to confirm.</p></div>
+</div>
+<div class="hf-grad-row">
+<p class="hf-grad-label">Assessment writing</p>
+<div class="hf-box hf-box--warn"><p>Usable but uneven drafts. Faculty review every item, and finalized secure items never enter public tools.</p></div>
+</div>
+<div class="hf-grad-row">
+<p class="hf-grad-label">Evaluating student work</p>
+<div class="hf-box hf-box--stop"><p>FERPA territory: de-identify or do not use AI at all. Detector flags are indicators, never verdicts.</p></div>
+</div>
+</div>
 <figcaption>The further down, the less the tool decides and the more you do.</figcaption>
 </figure>
 

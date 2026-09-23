@@ -24,32 +24,26 @@ Three consequences worth internalizing:
 2. **Memory has a size.** The context window is the model's working memory for your conversation. Very long conversations and documents can push earlier material out of focus. New conversation, fresh start.
 3. **Fluency is not accuracy.** The polish of the prose carries no information about its truth. Verification is your job, every time, and the [AI Responsible Use Policy](../governance/policy.md) makes that responsibility explicit.
 
-<figure class="figure">
-<svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The three consequences: knowledge has a training cutoff date, working memory has a size limit, and fluent confident text is not evidence of accuracy">
-<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the three consequences worth internalizing</text>
-<rect x="20" y="34" width="195" height="118" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="117" y="56" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">knowledge has a date</text>
-<line x1="45" y1="78" x2="190" y2="78" stroke="var(--md-default-fg-color--light)" stroke-width="2"/>
-<line x1="140" y1="70" x2="140" y2="86" stroke="var(--aua-alert)" stroke-width="2.5"/>
-<text x="92" y="100" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">training data</text>
-<text x="165" y="100" text-anchor="middle" font-size="8.5" fill="var(--aua-alert)">invisible</text>
-<text x="117" y="124" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">after the cutoff: nothing,</text>
-<text x="117" y="138" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">unless it searches or you paste it in</text>
-<rect x="232" y="34" width="195" height="118" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="329" y="56" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">memory has a size</text>
-<rect x="262" y="68" width="134" height="26" rx="4" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.5"/>
-<text x="329" y="85" text-anchor="middle" font-size="8.5" fill="var(--md-typeset-color)">the context window</text>
-<text x="247" y="85" text-anchor="middle" font-size="9" fill="var(--aua-alert)">...</text>
-<text x="329" y="124" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">very long chats push earlier</text>
-<text x="329" y="138" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">material out of focus</text>
-<rect x="444" y="34" width="195" height="118" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="541" y="56" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">fluency is not accuracy</text>
-<text x="541" y="82" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">"confident, polished, specific"</text>
-<text x="541" y="100" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">tells you nothing about</text>
-<text x="541" y="114" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">whether it is true</text>
-<text x="541" y="138" text-anchor="middle" font-size="8.5" fill="#2e7d32">verification is your job, every time</text>
-<text x="330" y="184" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">one mechanism, predicting plausible text, explains all three</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">The three consequences worth internalizing</p>
+<div class="hf-panels">
+<div class="hf-box">
+<p class="hf-box-title">Knowledge has a date</p>
+<p class="hf-timeline" aria-hidden="true"><span>training data</span><span class="hf-tl-after">invisible</span></p>
+<p class="hf-box-foot">After the cutoff: nothing, unless it searches or you paste it in.</p>
+</div>
+<div class="hf-box">
+<p class="hf-box-title">Memory has a size</p>
+<p class="hf-window" aria-hidden="true"><span>&hellip;</span><span>the context window</span></p>
+<p class="hf-box-foot">Very long chats push earlier material out of focus.</p>
+</div>
+<div class="hf-box hf-box--ok">
+<p class="hf-box-title">Fluency is not accuracy</p>
+<p class="hf-quote">"Confident, polished, specific" tells you nothing about whether it is true.</p>
+<p class="hf-box-ok">Verification is your job, every time.</p>
+</div>
+</div>
+<p class="hf-note">One mechanism, predicting plausible text, explains all three.</p>
 <figcaption>Everything impressive and everything dangerous about these systems follows from the same mechanism.</figcaption>
 </figure>
 
