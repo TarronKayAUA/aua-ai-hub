@@ -123,7 +123,7 @@ That instrument cost forty minutes of relentless tapping, and I want to describe
 
 The first is that **the failure condition was written down before the data was collected.** If the tournament results simply mirrored the star ratings already on file, then the whole exercise had bought nothing, and the honest response was to throw the instrument away. The threshold was set in advance: a rank correlation above 0.70 against my existing ratings meant discard it.
 
-It came in between 0.49 and 0.69 across the three shelves it was measured on (films and television together, games, and books). Comfortably under the line it had been given permission to fail at, while predicting my actual appetite answers dramatically better than my ratings ever had. A test it was allowed to fail, and did not.
+It came in between 0.49 and 0.69 across the three shelves it was measured on (films and television together, games, and books). Under the line it had been given permission to fail at on all three, while predicting my actual appetite answers dramatically better than my ratings ever had. A test it was allowed to fail, and did not.
 
 The second is that the same discipline caught the first version cheating.
 
