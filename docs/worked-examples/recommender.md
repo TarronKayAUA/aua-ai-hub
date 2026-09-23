@@ -2,11 +2,11 @@
 last_reviewed: 2026-09-03
 ---
 
-# My favourite game was not a game
+# My favorite game was not a game
 
 <span class="meta-chip">For anyone evaluating an AI-built system</span><span class="meta-chip">About 14 minutes</span> <span class="meta-note">A worked example from outside medicine, kept here because the measurement problems are the same ones clinical data poses.</span>
 
-The fourth-favourite game of my life, according to software I had commissioned and paid for and was rather proud of, was a frame rate counter.
+The fourth-favorite game of my life, according to software I had commissioned and paid for and was rather proud of, was a frame rate counter.
 
 Its name is fpsVR. It is a small utility that floats your graphics performance in the corner of your vision while you are wearing a virtual reality headset, and it had scored 94 out of 100, placing it above things I have genuinely loved. Two rows below sat Mirror's Edge, at 30. I have never started Mirror's Edge. It came in a bundle.
 
@@ -27,7 +27,7 @@ It has been in real use since August. It cost about five dollars a month to run,
 
 I did not write any of it. Not a line. Across some sixteen hundred messages I never once cited a file path or a function name, and when the interface first showed me a diff I had to ask what I was looking at and whether I was supposed to do anything about it.
 
-| | |
+| Measure | Value |
 |---|---|
 | Commits in 21 days | 509, with a peak of 60 in a single day |
 | Application code | About 31,000 lines |
@@ -41,11 +41,11 @@ The row I want you to look at twice is not the last one. It is the pair in the m
 
 A crash is a gift. A crash is loud, somebody phones you about it within the hour, and you know precisely where to look.
 
-What I was actually afraid of was the other kind. Software that keeps running and quietly gets worse. A search that silently ignores half your filters. A slider that appears to save your preference and does not. A cheerful empty state reading "No games yet" to a man who has just imported two thousand one hundred and three games.
+What I was actually afraid of was the other kind. Software that keeps running and quietly gets worse. A search that silently ignores half your filters. A slider that appears to save your preference and does not. A cheerful empty state reading "No games yet" to a man who has just imported 2,103 games.
 
 None of those ring any alarms. They just make the product a bit worse, forever, and everyone slowly stops using it without ever quite being able to say why.
 
-So the whole test suite got organised around one question, which sits at the top of the project's design document and which I have since started applying to almost everything:
+So the whole test suite got organized around one question, which sits at the top of the project's design document and which I have since started applying to almost everything:
 
 > If this broke silently, what would the family see, and how long before anyone said so?
 
@@ -85,7 +85,7 @@ That is worth sitting with. In each case the test reads correctly. The code read
 
 Which brings us back to the frame rate counter.
 
-Importing a games library hands you hours played, and hours played looks like an absolute gift to a system that needs to know what you enjoy. It was sold to me, cheerfully and correctly, as the solution to the cold start problem on the games shelf. It ran. It produced numbers. The numbers populated a profile and the profile fed recommendations and every part of that pipeline was working as specified.
+Importing a games library hands you hours played, and hours played looks like an absolute gift to a system that needs to know what you enjoy. It was sold to me, cheerfully and correctly, as the solution to the cold start problem on the games shelf (a recommender knows nothing about your taste until you have rated things). It ran. It produced numbers. The numbers populated a profile and the profile fed recommendations and every part of that pipeline was working as specified.
 
 Then I looked at it. Genuinely excellent games sat at 3.0. My inferred favourites were, in order, the games I had left running longest, which is a category that includes several I actively resent. And underneath the comedy sat something worse: a game I had never launched scored 30, and 30 is also precisely what the system writes when a person deliberately says *I disliked this*. My backlog, two hundred games of good intentions, was being read as two hundred active dislikes.
 
@@ -115,7 +115,7 @@ A recommender cannot learn anything from an unbroken run of approval. Worse, "I 
 
 The fix was to stop asking for verdicts and start asking for choices. Show me two things, make me pick one. I always pick. And every pick quietly produces a loser without requiring anybody to condemn anything.
 
-Two thousand and sixty-one forced comparisons later, the bottom of my appetite list finally contained real negatives: things sitting at 70 to 75 in my ratings that I plainly never want to see again. The first honest bad news the system had ever held about me.
+Two thousand sixty-one forced comparisons later, the bottom of my appetite list finally contained real negatives: things sitting at 70 to 75 in my ratings that I plainly never want to see again. The first honest bad news the system had ever held about me.
 
 ## Agreeing to be wrong in advance
 
@@ -127,11 +127,11 @@ It came in between 0.49 and 0.68. Comfortably under the line it had been given p
 
 The second is that the same discipline caught the first version cheating.
 
-Version one chose which pairs to show me by greedily maximising genre coverage, which had the unadvertised effect of making rare, oddball titles the most attractive things in the library to put on screen. Which meant my "unpopular" results were partly just a census of my own shelves, wearing a preference's clothes and looking very convincing.
+Version one chose which pairs to show me by always choosing whichever pair covered the most new genres, which had the unadvertised effect of making rare, oddball titles the most attractive things in the library to put on screen. Which meant my "unpopular" results were partly just a census of my own shelves, wearing a preference's clothes and looking very convincing.
 
 The tell was a correlation of +0.50 between how rare a title's genre was and how often it lost. Nothing on the screen looked wrong. Nothing in the code was wrong. It was found only by checking the answers against the thing the chooser had been quietly optimising for, which is a check you only think to run if you have already accepted that your instruments can flatter you.
 
-And none of this was possible for the first several months, because the application had cheerfully shown 118 recommendations while keeping no record whatsoever of which ones it had shown, in what order, or what anybody did next. There is no clever statistics that recovers from that. Somebody has to write down what was asked before anything can be learned from the answer.
+And none of this was possible at first, because the application had cheerfully shown 118 recommendations while keeping no record whatsoever of which ones it had shown, in what order, or what anybody did next. There is no clever statistics that recovers from that. Somebody has to write down what was asked before anything can be learned from the answer.
 
 <figure class="figure">
 <img src="../../assets/worked-examples/tracker-feedback.jpg" alt="A card asking whether the reader watched any of five previously suggested titles, with Watched It, Not yet and No buttons beside each">
@@ -172,6 +172,6 @@ Last, and least comfortably: the facts about myself that invalidate the data. Th
 - If somebody will not give you bad news, stop asking for verdicts and start asking for choices.
 - Nothing can be evaluated until something writes down what was asked.
 
-The binding constraint on quality was never the code. It was knowing what question the data was actually answering, and that judgement stayed with me the whole way through, because it was the one thing the machine could not supply for itself.
+The binding constraint on quality was never the code. It was knowing what question the data was actually answering, and that judgment stayed with me the whole way through, because it was the one thing the machine could not supply for itself.
 
 Every error in this piece shipped as working, tested, correct-looking software. Not one of them was a bug. And in every single case, the person who eventually noticed could not read a line of the code doing it.

@@ -15,8 +15,8 @@ They are here because the useful skill is turning out not to be generating thing
 | Worked example | What it is | What it demonstrates |
 | --- | --- | --- |
 | [When a check stops checking](this-site.md) | How this site is built, and the six weeks it displayed a product name that no longer existed | Specification before code, a selection algorithm that turned out to be an essay, and five ways a check went on reporting success from behind its own blind spot |
-| [I fixed software I cannot read](sharex-hdr.md) | Building HDR screenshot capture into ShareX, in a language the author does not write | Deciding boundaries when you cannot review the code, refusing things on a maintainer's behalf, and an ending the author did not control |
-| [My favourite game was not a game](recommender.md) | A media tracker and recommender for one family, built in three weeks without the author writing a line of it | Testing software you cannot read, six ways a check passes against broken code, and a measurement that flattered its way into the profile |
+| [I fixed software I cannot read](sharex-hdr.md) | Building high dynamic range (HDR) screenshot capture into ShareX, a free screenshot tool, in a language the author does not write | Deciding boundaries when you cannot review the code, refusing things on a maintainer's behalf, and an ending the author did not control |
+| [My favorite game was not a game](recommender.md) | A media tracker and recommender for one family, built in three weeks without the author writing a line of it | Testing software you cannot read, six ways a check passes against broken code, and a measurement that flattered its way into the profile |
 | [The Neanderthal gene that explained nothing](genome.md) | A widely reported genetics finding, tested against the author's own genotype | Declining a flattering conclusion the data cannot support, refusals agreed in advance, and catching a confident error inside your own expertise |
 
 !!! note "How to read these"

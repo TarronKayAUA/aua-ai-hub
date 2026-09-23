@@ -22,13 +22,13 @@ For faculty integrating AI into courses, assessment, and curriculum, or setting 
 
 ## For students
 
-The [Getting started](#getting-started) courses above fit students too. Beyond those, one video earns its hour better than anything else, and pairs well with the [Common Misconceptions](../basics/misconceptions.md) page here. Before using any tool for coursework, check its status in the [tools directory](../tools/index.md), and never enter patient or student data into consumer AI tools.
+The [Getting started](#getting-started) courses above fit students too. Beyond those, one hour-long lecture is worth the time, and pairs well with the [Common Misconceptions](../basics/misconceptions.md) page here. Before using any tool for coursework, check its status in the [tools directory](../tools/index.md), and never enter patient information or student records into a public AI tool.
 
 <!-- render:learning-resources:students -->
 
 ## Going deeper (technical)
 
-For anyone who wants to understand the machinery, not just use it. The more technical [DeepLearning.AI](https://www.deeplearning.ai/short-courses/) entries cover retrieval-augmented generation (RAG), agents, and fine-tuning with working code, and [Anthropic Academy](https://www.anthropic.com/learn) includes hands-on courses for building with the Claude application programming interface (API).
+For anyone who wants to understand the machinery, not just use it. The DeepLearning.AI short courses below cover retrieval-augmented generation (RAG), agents, and fine-tuning with working code, and Anthropic Academy, listed under Teaching with AI above, also includes hands-on courses for building with the Claude application programming interface (API).
 
 <!-- render:learning-resources:technical -->
 

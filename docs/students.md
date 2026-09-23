@@ -1,5 +1,7 @@
 ---
 last_reviewed: 2026-09-01
+hide:
+  - navigation
 ---
 
 # For Students
@@ -25,7 +27,7 @@ This site was built for the whole American University of Antigua College of Medi
 
     ---
 
-    An exam-style question tutor built from your own lecture notes, set up once per course, or one notebook per course.
+    Set up an exam-style question tutor once per course from your own lecture notes, or keep one notebook per course.
 
     [Set it up](tools/standing-setups.md) · [One notebook per course](tools/gemini-notebook.md)
 
@@ -52,7 +54,7 @@ These hold at every stage below, whatever the tool and whatever the pressure. Th
 
 ## Starting out
 
-The literacy pathway's first three modules are short, plain-language, and written for everyone. Thirty-five minutes here covers most of what you need:
+The literacy pathway's first three modules are short, plain-language, and written for everyone. Start with these three:
 
 1. [How AI Works](pathway/how-ai-works.md) (about 10 minutes): why a chatbot's confident answer is not always a correct one, and why that is a feature of the mechanism rather than an occasional glitch.
 2. [Prompting Fundamentals](pathway/prompting.md) (about 15 minutes): the habits that most improve what you get back, starting with giving the model your actual materials.
@@ -73,7 +75,7 @@ This is where the daily habits form, and the ones that pay off share a shape: th
 
 ## Around an exam
 
-**Before.** The question tutor's exam mode drills first and debriefs after, which is closer to the real thing than reading explanations as you go. Build questions from the lectures you were actually taught, not from a general model's memory of the subject, and treat every explanation as something to check rather than something to trust.
+**Before.** The [NBME-style question tutor](prompts/index.md#nbme-style-question-tutor) in exam mode drills first and debriefs after, which is closer to the real thing than reading explanations as you go. Build questions from the lectures you were actually taught, not from a general model's memory of the subject, and treat every explanation as something to check rather than something to trust.
 
 **After.** The [score reports playbook](playbooks/score-reports.md) turns an NBME INSIGHTS report or an in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it.
 
@@ -97,4 +99,4 @@ For anything about strategy, meaning which programs, how many, how to signal, an
 
 ## Take part
 
-The [Opportunities page](opportunities.md) lists buildathons, hackathons, and challenges you are eligible for, wherever in the world they run. The [Prompt Exchange](prompts/exchange.md) accepts community prompt contributions with public voting, and news pages carry a comments section (free GitHub account required; posts are public; standards on the [About page](about.md#comments-and-feedback)). If something on this site is wrong, missing, or confusing, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) is five questions and about two minutes.
+The [Opportunities page](opportunities.md) lists buildathons, hackathons, and challenges open to international participants, wherever in the world they run; check each listing's eligibility before you plan around it. The [Prompt Exchange](prompts/exchange.md) accepts community prompt contributions with public voting, and news pages carry a comments section (free GitHub account required; posts are public; standards on the [About page](about.md#comments-and-feedback)). If something on this site is wrong, missing, or confusing, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) is five questions and about two minutes.

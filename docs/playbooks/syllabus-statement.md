@@ -4,13 +4,11 @@ last_reviewed: 2026-09-01
 
 # Playbook: Your Syllabus AI Statement
 
-<span class="meta-chip">For faculty</span> <span class="meta-note">Templates below are starting points, adapt to your course</span>
+<span class="meta-chip">For faculty</span><span class="meta-chip">About 6 minutes</span> <span class="meta-note">Templates below are starting points, adapt to your course</span>
 
 ## The task
 
-Set explicit, enforceable expectations for student artificial intelligence (AI) use in your course. The university's [AI Responsible Use Policy](../governance/policy.md) deliberately delegates labeling and attribution standards to "specific course or departmental guidelines," which means the syllabus is where your line gets drawn. No statement is itself a statement, and it will be read as permission.
-
---8<-- "includes/prompt-maturity-note.md"
+Set explicit, enforceable expectations for student artificial intelligence (AI) use in your course. The university's [AI Responsible Use Policy](../governance/policy.md) deliberately delegates labeling and attribution standards to "specific course or departmental guidelines," which means the syllabus is where your line gets drawn. Leaving AI out of your syllabus still sends a message: students will read the silence as permission.
 
 ## Where AI helps, and where it hurts
 
@@ -20,7 +18,7 @@ A model can help you draft and stress-test your statement (feed it your assessme
 
 - Your assignment list, and for each: what skill it actually builds or measures.
 - Your department's existing guidance, if any, so your statement does not conflict with it.
-- The university policy's fixed points, which no course statement can relax: accountability stays with the student, AI-generated content must not be presented as original work, sensitive data stays out of public tools, and unauthorized AI use in secure examinations is academic dishonesty under the existing integrity rules.
+- The fixed points no course statement can relax. From the AI Responsible Use Policy: accountability stays with the student, AI-generated content must not be presented as original work, and sensitive data stays out of public AI tools. From the existing academic integrity rules: unauthorized AI use in secure examinations is academic dishonesty.
 
 ## Three templates
 
@@ -48,7 +46,7 @@ Adapt freely; the bracketed parts are yours to fill. Each is written to be speci
 <text x="330" y="168" text-anchor="middle" font-size="9.5" fill="#ffffff">the floor no course statement can relax: accountability stays with the student,</text>
 <text x="330" y="182" text-anchor="middle" font-size="9.5" fill="#ffffff">AI work is never presented as original, data rules hold, secure exams stay AI-free</text>
 </svg>
-<figcaption>Choose per course, even per assessment; the floor comes from the university policy and cannot be lowered by a syllabus.</figcaption>
+<figcaption>Choose per course, even per assessment; the floor comes from the AI policy and the academic integrity rules, and cannot be lowered by a syllabus.</figcaption>
 </figure>
 
 ### Restrictive: AI not permitted for graded work
@@ -92,7 +90,7 @@ always apply: no patient information, no identifiable records, in any tool.
 ## Guardrails for this task
 
 - Whatever tier you choose, restate it next to each major assessment, not only on page one; point-of-use beats page-one fine print.
-- Keep your in-exam rule aligned with the proctored-exam reality: unauthorized AI use in secure examinations is academic dishonesty regardless of your course tier.
+- State your exam rule outright: unauthorized AI use in secure examinations is academic dishonesty, whichever tier your course uses.
 - Expect to revise once per term; tools change faster than syllabi.
 
 ## Before you rely on it

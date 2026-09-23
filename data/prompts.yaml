@@ -7,8 +7,8 @@
 # status values: draft | reviewed   (drafts carry a visible Draft badge;
 # the owner flips status to reviewed after checking a prompt personally)
 #
-# The seed entries below are placeholders written to demonstrate the format.
-# The owner replaces or refines them with institution-tested prompts.
+# Entries began as seed placeholders written to demonstrate the format; the
+# owner has since refined or replaced them, and several are now Reviewed.
 
 - title: Literature screening assistant
   tagline: Second-screens titles and abstracts against your stated inclusion criteria
@@ -167,7 +167,7 @@
     class; recall its site of action).
 
 - title: NBME-style question tutor
-  tagline: Drills exam-style questions generated from your own course materials
+  tagline: Drills National Board of Medical Examiners (NBME) style questions built from your own course materials
   category: mcq_generation
   audience: students
   status: reviewed
@@ -275,14 +275,14 @@
       Question
       A 26-year-old woman has had episodic wheezing and shortness of breath
       for 6 months, worse at night and after exercise. Spirometry shows an
-      FEV1/FVC ratio that rises by 14% after albuterol. Long-term inhaled
-      control therapy is planned. Which of the following is the mechanism
-      of action of the most appropriate first-line controller?
-      (A) Blockade of muscarinic receptors
-      (B) Inhibition of leukotriene receptors
-      (C) Inhibition of phosphodiesterase
-      (D) Reduction of airway inflammation via glucocorticoid receptor
-          binding
+      FEV1 that increases by 14% (250 mL) after inhaled albuterol.
+      Long-term inhaled control therapy is planned. Which of the following
+      is the mechanism of action of the most appropriate first-line
+      controller?
+      (A) Activation of glucocorticoid receptors
+      (B) Antagonism of leukotriene receptors
+      (C) Antagonism of muscarinic receptors
+      (D) Inhibition of phosphodiesterase
       (E) Stabilization of mast cell membranes
 
     - 3rd (multi-step within one domain, 3+ steps): identify the
@@ -358,10 +358,10 @@
   audience: faculty
   status: draft
   last_reviewed: 2026-06-12
-  notes: Use on draft items before committee review, and paste item
-    statistics from past administrations when you have them. The structural
-    review is reliable, but the clinical accuracy of content stays your
-    responsibility, which is what the VERIFY list is for.
+  notes: Use on draft items before your exam committee reviews them, and
+    paste item statistics from past administrations when you have them. The
+    structural checks are this prompt's focus, but the clinical accuracy of
+    content stays your responsibility, which is what the VERIFY list is for.
   prompt: |
     ROLE
     You are a technical reviewer of single-best-answer items, applying
@@ -426,7 +426,7 @@
       generic example, not my item.
 
 - title: Analysis plan reviewer
-  tagline: Reviews a study's analysis plan before any data is collected
+  tagline: Reviews a study's analysis plan before you run the analysis
   category: data_analysis
   audience: faculty
   status: draft
@@ -577,8 +577,9 @@
   status: draft
   last_reviewed: 2026-07-10
   notes: Derived from the question-formulation frameworks taught in AUA's
-    Research Methods 1 course (Bordage's question typology, PICO/PICOT,
-    SPIDER, the FINER screen). The output is a sharpened question, not a
+    Research Methods 1 course (Bordage's question typology; the PICO or
+    PICOT and SPIDER question templates; and the FINER screen of feasible,
+    interesting, novel, ethical, and relevant). The output is a sharpened question, not a
     literature verdict, so run the novelty search it hands you in a real
     database (Scopus through the AUA Library) before you commit to the
     question.
@@ -728,7 +729,8 @@
   audience: faculty
   status: draft
   last_reviewed: 2026-07-10
-  notes: Audits a manuscript against the EQUATOR Network reporting
+  notes: Audits a manuscript against the EQUATOR (Enhancing the Quality
+    and Transparency of Health Research) Network reporting
     guideline for its design (STROBE, CONSORT, PRISMA, SQUIRE, SRQR,
     CROSS), a completeness map rather than a quality score. A model's
     recall of checklist items can lag the current revision, so for

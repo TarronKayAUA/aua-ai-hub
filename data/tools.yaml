@@ -153,7 +153,7 @@
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
-  blurb: Anthropic's agent for software work, available in the terminal, IDE extensions, a desktop app, and the browser. Plans and executes multi-step tasks against your own files; included with paid Claude plans.
+  blurb: Anthropic's agent for software work, available in the terminal, in code editor extensions, in a desktop app, and in the browser. Plans and executes multi-step tasks against your own files; included with paid Claude plans.
 
 - name: Cowork
   vendor: Anthropic
@@ -178,7 +178,7 @@
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
-  blurb: OpenAI's coding agent, part of the ChatGPT desktop app since the July 2026 merge, alongside a command-line tool, an IDE extension, and a cloud service. Works with local folders, repositories, and terminals; included with every ChatGPT plan, including Free.
+  blurb: OpenAI's coding agent, part of the ChatGPT desktop app since the July 2026 merge, alongside a command-line tool, a code editor extension, and a cloud service. Works with local folders, repositories, and terminals; included with every ChatGPT plan, including Free.
 
 # Renamed from "ChatGPT Agent Mode" 2026-07-13: Agent Mode was
 # consolidated into ChatGPT Work in the 2026-07-09 desktop app merge.
@@ -313,7 +313,7 @@
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-26
-  blurb: Research notebook that answers questions and generates summaries grounded only in documents you upload. Formerly NotebookLM.
+  blurb: Research notebook that answers questions and generates summaries from documents you upload, with citations back to the passage; optional features can add web sources. Formerly NotebookLM.
 
 - name: OpenEvidence
   vendor: OpenEvidence
@@ -331,7 +331,7 @@
   # NPI expanded 2026-09-08: status notes became visible card text that day,
   # so they are body copy now and the expand-on-first-use rule applies. The
   # acronym appears nowhere else in this page's prose.
-  status_note: Verification requires US credentials, either a National Provider Identifier (NPI) or a US medical school; withdrew from the UK and EU in spring 2026.
+  status_note: Verification requires US credentials, either a National Provider Identifier (NPI) or enrollment at a US medical school; withdrew from the United Kingdom and European Union in spring 2026.
   last_reviewed: 2026-09-01
   blurb: Clinical question-answering tool for verified health professionals, with answers cited to the medical literature.
 
@@ -408,7 +408,7 @@
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
-  blurb: General-purpose study app widely used by medical students. Upload readings or lecture notes and it builds flashcards, practice tests, and summaries with spaced repetition.
+  blurb: Study app that builds flashcards, practice tests, and summaries with spaced repetition from uploaded readings or lecture notes.
 
 - name: Medical Student AI
   vendor: Help You Match LLC
@@ -668,7 +668,7 @@
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-07-21
-  blurb: Adobe's image generation, trained on licensed and public-domain content, which makes it the conservative choice when questions about training-data provenance or commercial use matter.
+  blurb: Adobe's image generation app. Adobe's own Firefly models are trained on licensed and public-domain content, which matters when training-data provenance or commercial use is a concern; the app also offers partner models from other companies that do not carry that assurance, so check which model is selected.
 
 - name: Ideogram
   vendor: Ideogram
@@ -678,7 +678,7 @@
   governance_status: listed
   status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
-  blurb: Image generator particularly good at legible text inside images, useful for posters, badges, and labeled figures.
+  blurb: Image generator designed for legible text inside images, useful for posters, badges, and labeled figures.
 
 # --- Video Generation (owner approved 2026-06-12; OpenAI's Sora was
 # discontinued April 2026 and is deliberately absent) ------------------------
@@ -711,7 +711,7 @@
   governance_status: caution
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-09-08
-  blurb: Video generator from the Chinese company Kuaishou. The Kling 3.0 family generates clips with native synchronized audio and multi-language lip sync, and ranks among the leading models in mid-2026 comparisons.
+  blurb: Video generator from the Chinese company Kuaishou. The Kling 3.0 family generates clips with native synchronized audio and multi-language lip sync.
 
 - name: Hailuo
   vendor: MiniMax
@@ -756,7 +756,7 @@
   governance_status: caution
   status_note: Training-data copyright litigation is ongoing; check output-use terms before publishing generated music.
   last_reviewed: 2026-09-22
-  blurb: Generates complete songs with vocals from a text description. The most widely used music generator, with a free tier.
+  blurb: Generates complete songs with vocals from a text description, with a free tier.
 
 - name: Udio
   vendor: Udio

@@ -94,12 +94,19 @@
    exactly what the 78rem cap above was widened to avoid. That trade is
    the owner's call, so the column stays wide until he takes it. */
 
+/* --aua-alert is the red that figures use for warnings and failure paths
+   (added 2026-09-22 site audit). It was hard-coded as #c62828 in 43 places
+   across 19 pages, which is about 2.9:1 against the dark scheme's
+   background, below the 4.5:1 that small figure text needs; the dark value
+   is about 8:1. Figures reference it as fill="var(--aua-alert)". */
 [data-md-color-scheme="default"] {
   --md-typeset-a-color: #07618c;
+  --aua-alert: #c62828;
 }
 
 [data-md-color-scheme="slate"] {
   --md-typeset-a-color: #5aa3c7;
+  --aua-alert: #ef9a9a;
 }
 
 /* Material sets headings at weight 300. Light strokes hold their shape on a
@@ -110,6 +117,16 @@
 [data-md-color-scheme="slate"] .md-typeset h2,
 [data-md-color-scheme="slate"] .md-typeset h3 {
   font-weight: 400;
+}
+
+/* Page titles: Material sets h1 at weight 300 in 54% grey, which made every
+   page title the faintest text on its page, lighter than the card headings
+   beneath it (site review, 2026-09-22). Full-strength color and a medium
+   weight restore the hierarchy in both schemes. */
+.md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-weight: 500;
 }
 
 /* The section banners are a dark brand gradient, which reads as a strong
@@ -142,9 +159,11 @@
 .badge-reviewed { background-color: #1565c0; color: #ffffff; }
 .badge-caution { background-color: #ff8f00; color: #1a1a1a; }
 
-/* Glossary terms render as compact h4 headings so the right-hand TOC
-   becomes an A-Z index; scoped to the glossary's wrapper div. */
-.md-typeset .glossary h4 {
+/* Glossary terms render as compact headings so the right-hand TOC
+   becomes an A-Z index; scoped to the glossary's wrapper div. They are h2
+   since 2026-09-22 (were h4): h1 straight to h4 was the site's only
+   heading-level skip, which the accessibility statement rules out. */
+.md-typeset .glossary h2 {
   margin: 1.1em 0 0.25em;
   font-size: 0.8rem;
 }

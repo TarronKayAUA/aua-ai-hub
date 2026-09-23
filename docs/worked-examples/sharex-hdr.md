@@ -6,7 +6,7 @@ last_reviewed: 2026-09-03
 
 <span class="meta-chip">For anyone thinking of contributing to open source</span><span class="meta-chip">About 9 minutes</span> <span class="meta-note">A worked example, in someone else's codebase, with an ending I did not control.</span>
 
-ShareX is a screenshot tool that several million people use. On a monitor capable of high dynamic range, which is now most decent monitors, it produced washed out and slightly grey screenshots, and the accepted workaround was to turn HDR off before every single capture and turn it back on afterwards.
+ShareX is a screenshot tool that several million people use. On a monitor capable of high dynamic range (HDR), which is now most decent monitors, it produced washed out and slightly grey screenshots, and the accepted workaround was to turn HDR off before every single capture and turn it back on afterwards.
 
 Somebody opened an issue about this in January 2023. By the summer of 2026 it had accumulated 280 comments, most of them variations on "please".
 
@@ -26,7 +26,7 @@ It pins the exact commit of the official project the work began from, with its d
 
 And then it lists the things the project was not allowed to do:
 
-- Keep the official behaviour as the baseline, and keep the existing capture path as the default.
+- Keep the official behavior as the baseline, and keep the existing capture path as the default.
 - If the new path fails, fall back to the old one once, and log it.
 - Do not merge, rebase, or mass cherry-pick from the other fork.
 - Do not copy the other fork's branding, updater, or installer.
@@ -39,7 +39,7 @@ What I could do was decide the boundaries in advance, in language I understood p
 
 ## What it does
 
-Thirty-six commits over eight days. Display discovery for HDR-capable monitors, a capture path through the Windows desktop duplication interface, tone-mapping shaders, and three files out of one capture: an ordinary image for normal use, a lossless file preserving the full high dynamic range data, and a modern format that displays correctly on both HDR and ordinary screens.
+Thirty-six commits over eight days. Display discovery for HDR-capable monitors, a capture path through the Windows desktop duplication interface, tone-mapping shaders (small programs on the graphics card that squeeze HDR brightness into a range any screen can show), and three files out of one capture: an ordinary image for normal use, a lossless file preserving the full high dynamic range data, and a modern format that displays correctly on both HDR and ordinary screens.
 
 It works. I have been using it since July.
 
@@ -73,11 +73,11 @@ It works. I have been using it since July.
 <rect x="422" y="84" width="224" height="26" rx="4" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.4"/>
 <text x="434" y="101" font-size="10.5" fill="var(--md-typeset-color)">an Ultra HDR file, correct on both</text>
 
-<path d="M70,88 L70,150 L342,150" fill="none" stroke="#c62828" stroke-width="1.6" stroke-dasharray="4,3"/>
-<path d="M337,146 L342,150 L337,154" fill="none" stroke="#c62828" stroke-width="1.6"/>
-<rect x="346" y="136" width="188" height="28" rx="5" fill="none" stroke="#c62828" stroke-width="1.6"/>
-<text x="440" y="154" text-anchor="middle" font-size="10.5" fill="#c62828">fall back once, and say so</text>
-<text x="70" y="170" text-anchor="middle" font-size="9.5" fill="#c62828">any stage fails</text>
+<path d="M70,88 L70,150 L342,150" fill="none" stroke="var(--aua-alert)" stroke-width="1.6" stroke-dasharray="4,3"/>
+<path d="M337,146 L342,150 L337,154" fill="none" stroke="var(--aua-alert)" stroke-width="1.6"/>
+<rect x="346" y="136" width="188" height="28" rx="5" fill="none" stroke="var(--aua-alert)" stroke-width="1.6"/>
+<text x="440" y="154" text-anchor="middle" font-size="10.5" fill="var(--aua-alert)">fall back once, and say so</text>
+<text x="70" y="170" text-anchor="middle" font-size="9.5" fill="var(--aua-alert)">any stage fails</text>
 
 <text x="330" y="192" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the old capture path stays the default; this one is opt-in and gives way the moment it cannot deliver</text>
 </svg>
@@ -109,7 +109,7 @@ I want to be clear that I did not diagnose any of these in code. What I did was 
 
 The last third of the project is not features at all.
 
-It is a run of commits auditing the licence of every bundled dependency, restoring a third party's copyright notice that had been trimmed at some point, removing a proprietary component that had no business being redistributed, and labelling the build unmistakably as unofficial so that nobody could mistake it for the real thing.
+It is a run of commits auditing the license of every bundled dependency, restoring a third party's copyright notice that had been trimmed at some point, removing a proprietary component that had no business being redistributed, and labeling the build unmistakably as unofficial so that nobody could mistake it for the real thing.
 
 And one decision that matters more than the rest of them combined. **I disabled the update mechanism in my fork.**
 
@@ -126,7 +126,7 @@ The plan document ends with a validation note that I have come to think of as th
 Display discovery worked. The shaders compiled. The settings, the routing and the fallback all worked, and the whole solution built clean. But the machine session available at the time returned an access denied error from the screen duplication interface before a single frame could be captured, which meant the end-to-end path, actual HDR pixels going through the actual tone mapper, was never confirmed in that environment.
 
 <figure class="figure figure--narrow">
-<img src="../../assets/worked-examples/hdr-gainmap.png" alt="An inspector panel showing a histogram split into SDR and HDR regions, a list of image components including base image and gain map, and the line: This is an SDR photo with a Gain Map.">
+<img src="../../assets/worked-examples/hdr-gainmap.png" alt="An inspector panel showing a histogram split into standard dynamic range (SDR) and high dynamic range (HDR) regions, a list of image components including base image and gain map, and the line: This is an SDR photo with a Gain Map.">
 <figcaption>What I could check, I checked in somebody else's software. Adobe's inspector reading my fork's output and confirming the gain map is real.</figcaption>
 </figure>
 
@@ -148,20 +148,20 @@ His note read:
 
 I have to be careful here, because there is a flattering story available and I cannot support it.
 
-Another fork had existed for over a year and has 114 stars against my zero. A third contributor had been working on the problem for months and discussing it openly in that same thread. Years of pressure had piled up on an issue with 280 comments and no shortage of people asking. The maintainer never referenced my fork, I have no evidence of influence, and I am not claiming any. The people who built the earlier implementations are actual programmers, and if credit is owed anywhere it is owed to them.
+Another fork had existed for over a year and had 114 GitHub stars in September 2026, against my zero. A third contributor had been working on the problem for months and discussing it openly in that same thread. Years of pressure had piled up on an issue with 280 comments and no shortage of people asking. The maintainer never referenced my fork, I have no evidence of influence, and I am not claiming any. The people who built the earlier implementations are actual programmers, and if credit is owed anywhere it is owed to them.
 
 What I can say is simply what is on the public record: the thing I wanted got built, by somebody competent, into the software everybody actually uses, and my fork is now unnecessary. Which is precisely the outcome I would have chosen if anybody had asked me.
 
-The genuinely interesting part is what happened either side of it. Two people, neither with any expertise in this specific domain, both reached for AI to solve the same problem within a fortnight of each other, and both volunteered that they had done so without anybody asking.
+The genuinely interesting part is what happened either side of it. Two people, neither with any expertise in this specific domain, both reached for AI to solve the same problem within two weeks of each other, and both volunteered that they had done so without anybody asking.
 
 The receptions differed rather sharply. My post drew polite curiosity. His drew a long and increasingly heated argument about whether AI-written code belongs in open source at all, conducted by people with strong opinions and no prospect of agreement.
 
-I do not think my experience settles that argument, and I would be suspicious of anyone who claimed theirs did. But the norm both of us reached for independently, which is to say that you used it and say what you have not verified, seems close to the minimum. It cost neither of us anything, and it is the only reason either claim can be assessed at all.
+I do not think my experience settles that argument, and I would be suspicious of anyone who claimed theirs did. But the norm both of us reached for independently (say that you used it, and say what you have not verified) seems close to the minimum. It cost neither of us anything, and it is the only reason either claim can be assessed at all.
 
 ## What transfers
 
 - Do the archaeology before the implementation and write it down. Pin the exact starting point, so that later failures have somewhere to be attributed other than an argument.
 - Write your list of refusals while you still have no emotional investment in the feature. It is a completely different document if you write it afterwards.
-- When you cannot review the code, review the boundaries instead. Scope, defaults, fallbacks and failure behaviour are all decidable without reading anything.
+- When you cannot review the code, review the boundaries instead. Scope, defaults, fallbacks and failure behavior are all decidable without reading anything.
 - Publish what you could not test, in the same place you publish the thing itself.
 - If you fork somebody's project, take care not to spend their resources or their reputation. Turning off my own updater was the clearest decision in the entire project, and the only one that cost me something.

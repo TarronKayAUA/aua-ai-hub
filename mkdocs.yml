@@ -3,8 +3,11 @@ site_description: >-
   Curated artificial intelligence reference and news hub for the American
   University of Antigua College of Medicine.
 site_url: https://tarronkayaua.github.io/aua-ai-hub/
-repo_url: https://github.com/TarronKayAUA/aua-ai-hub
-repo_name: TarronKayAUA/aua-ai-hub
+# No repo_url or repo_name, deliberately (2026-09-22 site review): Material
+# renders them as a GitHub widget in the header of every page, which read as
+# a personal code project on an institutional site and advertised "0 stars,
+# 0 forks". Nothing else uses them: comments and the Prompt Exchange link to
+# the Discussions board directly, and edit links are not enabled.
 copyright: >-
   Maintained by Dr. Tarron Kayalackakom, Associate Dean of AI in Medical
   Education, AUA College of Medicine
@@ -64,8 +67,6 @@ theme:
     - search.suggest
     - search.highlight
     - toc.follow
-    - search.suggest
-    - search.highlight
     - content.code.copy
     - announce.dismiss
 
@@ -137,21 +138,31 @@ nav:
           - Glossary: basics/glossary.md
           - Common Misconceptions: basics/misconceptions.md
       - Courses and Resources: learning/index.md
+      - Worked Examples:
+          - worked-examples/index.md
+          - When a Check Stops Checking: worked-examples/this-site.md
+          - I Fixed Software I Cannot Read: worked-examples/sharex-hdr.md
+          - My Favorite Game Was Not a Game: worked-examples/recommender.md
+          - The Neanderthal Gene That Explained Nothing: worked-examples/genome.md
   - Use AI:
       - tools/index.md
       - AI Agents: tools/agents.md
       - Choosing Your Interface: tools/interfaces.md
+      - Your First Agent Session: tools/first-session.md
       - Standing Setups: tools/standing-setups.md
       - Agent Skills: tools/skills.md
-      - Your First Agent Session: tools/first-session.md
       - Running Models Locally: tools/local.md
       - Hardware for Local AI: tools/hardware.md
       - Gemini Notebook (NotebookLM): tools/gemini-notebook.md
       - AI for Research: tools/research.md
+      - Benchmarks:
+          - Language Models: benchmarks.md
+          - Image Generation: benchmarks/image.md
+          - Video Generation: benchmarks/video.md
       - Prompts:
           - prompts/index.md
           - Learning to Prompt: prompts/learning.md
-          - Community Exchange: prompts/exchange.md
+          - Prompt Exchange: prompts/exchange.md
       - Playbooks:
           - playbooks/index.md
           - Preparing a Lecture: playbooks/lecture-prep.md
@@ -173,18 +184,8 @@ nav:
       - Videos: news/videos.md
       - Podcasts: news/podcasts.md
       - Archive: news/archive/index.md
-      - Benchmarks:
-          - Language Models: benchmarks.md
-          - Image Generation: benchmarks/image.md
-          - Video Generation: benchmarks/video.md
       - Conferences: conferences.md
       - Opportunities: opportunities.md
-  - Worked Examples:
-      - worked-examples/index.md
-      - When a Check Stops Checking: worked-examples/this-site.md
-      - I Fixed Software I Cannot Read: worked-examples/sharex-hdr.md
-      - My Favourite Game Was Not a Game: worked-examples/recommender.md
-      - The Neanderthal Gene That Explained Nothing: worked-examples/genome.md
   - Governance:
       - governance/index.md
       - AI Responsible Use Policy: governance/policy.md

@@ -4,7 +4,7 @@ last_reviewed: 2026-09-03
 
 # When a check stops checking
 
-<span class="meta-chip">For anyone curious how this site works</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">A worked example. Every number here was measured from the repository, and the repository is public.</span>
+<span class="meta-chip">For anyone curious how this site works</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">A worked example. Every number here was measured from the repository, and the [repository is public](https://github.com/TarronKayAUA/aua-ai-hub).</span>
 
 For roughly six weeks, this site confidently told visitors about a Google product using a name Google had stopped using.
 
@@ -12,25 +12,25 @@ Nothing was broken. No alarm fired, no build failed, no check went red. The tool
 
 That is the characteristic failure of this project. Not bad code. Not crashes. A check that quietly stopped checking, and went on reporting success from behind its own blind spot.
 
-I want to describe the whole system, because it is the site you are currently reading and every claim below can be verified against it. But that is the thread worth pulling.
+I want to describe the whole system, because it is the site you are currently reading and every claim below can be verified against it. But the check that quietly stopped checking is the thread worth pulling.
 
 ## What this is, and who wrote it
 
-This site publishes curated artificial intelligence news six times a day, maintains a directory of tools, a literacy pathway, a governance section and a conference calendar, and costs nothing to host. It has been running since 9 June 2026.
+This site publishes curated artificial intelligence news six times a day, maintains a [directory of tools](../tools/index.md), a [literacy pathway](../pathway/index.md), a [governance section](../governance/index.md) and a [conference calendar](../conferences.md), and costs nothing to host. It has been running since June 9, 2026.
 
 I am a physician and a medical educator. I cannot write the code that does any of this.
 
-| | |
+| Measure | Count |
 |---|---|
-| Commits, 9 June to 3 September 2026 | 658 |
+| Commits, June 9 to September 3, 2026 | 658 |
 | By an automated account | 419 |
 | By me | 239 |
-| Of those, carrying an AI co-author trailer | 180 |
-| Automated news refreshes | 396, about 61% of all history |
+| Of those, crediting an AI assistant as co-author | 180 |
+| Automated news refreshes | 396, about 60% of all history |
 | Test files in the repository | 0 |
 
 <figure class="figure">
-<svg viewBox="0 0 660 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daily commits from 9 June to 3 September 2026. A near-constant low band of automated commits on 86 of 87 days, with taller bursts of human commits on 42 days, the largest 33 in one day at launch.">
+<svg viewBox="0 0 660 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daily commits from June 9 to September 3, 2026. A near-constant low band of automated commits on 86 of 87 days, with taller bursts of human commits on 42 days; the busiest day, at launch, had 35 commits, 33 of them human.">
 <text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">every commit to this site, by day</text>
 <line x1="44" y1="172" x2="646" y2="172" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
 <rect x="44.9" y="120.7" width="5.1" height="51.3" fill="var(--md-primary-fg-color)"/>
@@ -184,9 +184,9 @@ I put that on the table immediately because a reader who assumed I had hand-writ
 
 ## Writing the rules before there was anything to break
 
-The very first commit contains no pipeline. It contains a 473-line specification and a working-rules document, and nothing whatsoever that executes.
+The very first commit contains no pipeline. It contains a 312-line specification, a working-rules document and an empty site skeleton for them to govern.
 
-Both files still govern the project three months later. The rules document opens with five non-negotiable working rules, one of which constrains the assistant rather than me: present a short plan and wait for approval before writing code. Others forbid hardcoding any value that ought to come from a data file, and require every generation step to print its counts and fail loudly when they do not add up.
+Both files still govern the project three months later. The rules document opens with five non-negotiable working rules, and its process section adds one that constrains the assistant rather than me: present a short plan and wait for approval before writing code. Among the five, one forbids hardcoding any value that ought to come from a data file, and another requires every generation step to print its counts and fail loudly when they do not add up.
 
 Writing the constraints before the code was the single highest-leverage decision in the project, and it cost an afternoon. Every subsequent argument about whether something was permitted had somewhere to be settled, rather than being relitigated from scratch by two parties with no shared memory.
 
@@ -224,15 +224,15 @@ An entry in the link checker's exemption list was keyed with a `www.` prefix tha
 
 The tool exemption I opened with, which quietly removed an entry from every check rather than one, and left a stale product name on the site for six weeks.
 
-A nightly benchmark table that fell back to a pinned copy six months old, because the upstream source changed a naming convention and the pattern that discovered the current version returned nothing at all. No automated check noticed, for weeks. I noticed, by reading the page and thinking that two obviously current models were conspicuously absent.
+A nightly [benchmark table](../benchmarks.md) that fell back to a pinned copy six months old, because the upstream source changed a naming convention and the pattern that discovered the current version returned nothing at all. No automated check noticed, for weeks. I noticed, by reading the page and thinking that two obviously current models were conspicuously absent.
 
 A build cache scoped one directory too wide, which restored the previous run's audio files over freshly published ones, so the live site served recordings a commit behind for two deploys.
 
 A spending guard that read a corrupted ledger, the expected result of an interrupted run, and interpreted it as "nothing spent this month". It would have failed open at precisely the moment it was needed, which is the only moment that counts.
 
-Every one of these is invisible while it is happening. That is the property they share, and it is why the working-rules document now carries fourteen documented gotchas where it originally carried five. The rulebook grew out of the failures, each entry dated to the incident that produced it, which makes it a rather unflattering document and a genuinely useful one.
+Every one of these is invisible while it is happening. That is the property they share, and it is why the working-rules document carried fourteen documented gotchas when I wrote this, where it originally carried five. The rulebook grew out of the failures, most entries tied to the incident that produced it, which makes it a rather unflattering document and a genuinely useful one.
 
-Twice, an audit built to catch the model's mistakes ended up convicting my own configuration instead. On one occasion I reviewed around 130 rejection decisions hunting for bad judgement, found none whatsoever, and discovered that the pipeline had been truncating the evidence it sent, so the model had been accurately reporting that it could not see enough to decide and I had been reading that as incompetence.
+Twice, an audit built to catch the model's mistakes ended up convicting my own configuration instead. On one occasion I reviewed around 130 rejection decisions hunting for bad judgment, found none whatsoever, and discovered that the pipeline had been truncating the evidence it sent, so the model had been accurately reporting that it could not see enough to decide and I had been reading that as incompetence.
 
 ## One change, start to finish
 
@@ -242,7 +242,7 @@ The read-aloud players on this site originally used a free voice model that runs
 
 So the paid voice reads the static pages for a couple of dollars a year, and the free one still reads the news, where the same voice would have cost several hundred dollars a month to narrate summaries that are replaced the following morning.
 
-The best open-weights alternative was disqualified on paperwork rather than quality. Its permissive licence covers the inference code and not the model weights, which are restricted to non-commercial use, and two further candidates failed for closely related reasons. On a site run by a university, an unresolved licensing chain is not worth a modest quality gain.
+The best open-weights alternative was disqualified on paperwork rather than quality. Its permissive license covers the inference code and not the model weights, which are restricted to non-commercial use, and two further candidates failed for closely related reasons. On a site run by a university, an unresolved licensing chain is not worth a modest quality gain.
 
 The change cost something, too. The build can no longer regenerate that audio, because the key is deliberately kept off the servers, which means a page edited without regenerating now serves **no player at all** rather than reading superseded words aloud in a confident voice. Silence is the better failure, and it took a while to be comfortable with that.
 
@@ -250,7 +250,7 @@ The change cost something, too. The build can no longer regenerate that audio, b
 
 Hosting is free, on static pages published from the repository. The recurring cost is a few dollars a month in model usage.
 
-Nine workflows run on seven schedules, the busiest being the news refresh six times a day. That frequency is not a freshness preference, which surprises people. Scheduled runs on shared infrastructure are routinely delayed by five to eleven hours, so the schedule gave up trying to hit a particular time and simply blankets the day instead, on the assumption that some of them will land.
+Ten workflows run on eight schedules, the busiest being the news refresh six times a day. That frequency is not a freshness preference, which surprises people. Scheduled runs on shared infrastructure are routinely delayed by five to eleven hours, so the schedule gave up trying to hit a particular time and simply blankets the day instead, on the assumption that some of them will land.
 
 ## What transfers
 
@@ -262,6 +262,6 @@ Nine workflows run on seven schedules, the busiest being the news refresh six ti
 
 ## What this does not show
 
-There is no test suite in this repository and never has been, and nothing measures whether anybody reads the site. I also cannot tell you what the pipeline has wrongly discarded, because rejected items are dropped before anything is written down.
+There is no test suite in this repository and never has been, and beyond an anonymous visit count, nothing measures whether anybody reads the site. I also cannot tell you what the pipeline has wrongly discarded, because rejected items are dropped before anything is written down.
 
 That last gap is not hypothetical. While preparing this piece I ran a review that found the news blocklist matching substrings rather than whole words, which meant the term "crypto" had been quietly discarding anything about cryptogenic stroke or cryptococcal infection. On a medical education site. It is fixed, and by design there is no way to know what it cost.

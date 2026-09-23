@@ -30,7 +30,7 @@ How the American University of Antigua College of Medicine (AUACOM) governs arti
 
     ---
 
-    Current projects and updates from the committee's work, with polls and a feedback route for input.
+    Current projects and posted updates from the committee, with links to open polls and the feedback form.
 
     [See what is moving](updates.md)
 

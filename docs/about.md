@@ -6,19 +6,19 @@ last_reviewed: 2026-09-01
 
 ## Purpose
 
-The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty and students of the American University of Antigua College of Medicine (AUACOM). It is maintained by the Associate Dean of AI in Medical Education, who also chairs the institution's AI Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
+The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty, staff, and students of the American University of Antigua College of Medicine (AUACOM). It is maintained by the Associate Dean of AI in Medical Education, who also chairs the institution's AI Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
 
 ## How content is selected
 
-Most of this site is written and reviewed by people; the News, Videos, Podcasts, and benchmark sections are produced by an automated pipeline that runs several times a day. Here is exactly what it does:
+Most of this site is written and reviewed by people; the News, Videos, and Podcasts sections and the LiveBench table on the Benchmarks page are produced by an automated pipeline that runs several times a day. Here is exactly what it does:
 
 1. **News.** The pipeline reads a fixed, public list of sources: established AI publications and blogs, PubMed literature searches, and medical education and digital health journals. New items are filtered to a recent window, screened against a blocklist of promotional content, and de-duplicated. A language model then selects the items most relevant to medical educators and writes a one-sentence summary of each; when the language model is unavailable, a simpler keyword ranking runs instead.
 2. **Videos and podcasts.** The same pipeline follows a hand-picked roster of YouTube channels and podcast shows. The language model selects relevant uploads and episodes and writes a one-sentence description for each, so you know what you are getting into before you click. Everything links out to the original platform; nothing is embedded or tracked here.
-3. **Benchmarks.** The [Benchmarks page](benchmarks.md) carries a snapshot of the LiveBench leaderboard, rebuilt nightly from LiveBench's published data, with the calculation method described on that page.
+3. **Benchmarks.** The [Benchmarks page](benchmarks.md) carries a snapshot of the LiveBench leaderboard, rebuilt with each pipeline run from LiveBench's published data, with the calculation method described on that page.
 4. **Weekly digest.** Every Friday a second selection pass picks the most significant items of the week, news, videos, and podcasts, plus any updates made to the conference calendar, into a weekly digest. Each week's digest is preserved in the [News Archive](news/archive/index.md) and published to a [digest feed](digest.xml) that any feed reader can follow. The [This Week page](news/this-week.md) is separate: a rolling view of everything kept in the last seven days, refreshed with each run.
 
 <figure class="figure">
-<svg viewBox="0 0 660 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline diagram: fixed public sources flow through the nightly pipeline into the site's generated sections, with a Friday digest branch">
+<svg viewBox="0 0 660 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline diagram: fixed public sources flow through the automated pipeline into the site's generated sections, with a Friday digest branch">
 <defs><marker id="ab-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
 <text x="105" y="30" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-default-fg-color--light)">fixed public sources</text>
 <rect x="20" y="40" width="170" height="24" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
@@ -34,7 +34,7 @@ Most of this site is written and reviewed by people; the News, Videos, Podcasts,
 <path d="M 192 52 L 216 52 M 192 82 L 216 82 M 192 112 L 216 112 M 192 142 L 216 142 M 192 172 L 216 172 M 216 52 L 216 172" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
 <line x1="216" y1="112" x2="240" y2="112" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ab-ar)"/>
 <rect x="242" y="62" width="180" height="100" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="332" y="84" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">nightly pipeline</text>
+<text x="332" y="84" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">automated pipeline</text>
 <text x="332" y="102" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">recent-window filter,</text>
 <text x="332" y="115" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">blocklist, de-duplicate,</text>
 <text x="332" y="128" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">a language model selects</text>
@@ -64,7 +64,7 @@ Most of this site is written and reviewed by people; the News, Videos, Podcasts,
 
 **Freshness.** Guide and reference pages carry a "Content last reviewed" date in their footer. A weekly automated check re-reads each page on a schedule set by how quickly its facts tend to change, verifies the page's checkable claims against current sources, and updates the date when everything holds (the one edit the pipeline may make to a hand-written page); anything that looks out of date is escalated to the maintainer for a human correction. The date moves only when a review actually happened, by machine or by hand.
 
-**Automated upkeep.** For calendar and roster data, watch processes re-check official sources on a schedule, and a narrow class of changes is applied automatically; everything that requires judgment stays human.
+**Automated upkeep.** For calendar and roster data, watch processes re-check official sources on a schedule, and a narrow class of changes is applied automatically; everything that requires judgment stays human. New listings on the [Opportunities page](opportunities.md) can also be added automatically when they are hosted on an established challenge platform and pass the same checks; new conferences are always reviewed by a person first.
 
 ??? note "How automated changes are gated, in detail"
     A change is applied automatically only when every mechanical gate passes: it must be grounded in the item's own official page, the details must be coherent, and date changes must hold across two consecutive checks. Every automatic change lands in the public data files with a comment recording when and how it was verified, so the full audit trail is one click away in the site's repository. Tool governance statuses, prompt review statuses, the policy text, and all removals are never changed by automation, and anything that fails a gate is escalated to the maintainer instead of applied.
@@ -75,7 +75,7 @@ The university's [AI Responsible Use Policy](governance/policy.md) and the [AI C
 
 ## Privacy
 
-This site sets no cookies and runs no advertising scripts. Anonymous visit counts are collected with GoatCounter, a privacy-respecting service that uses no cookies and stores no personal information. Pages with a comments section load a small widget from giscus, an open-source service backed by this site's public GitHub Discussions board: reading comments requires nothing, posting requires a free GitHub account, and anything posted is public. Video thumbnails and podcast artwork load from the platforms that publish them; clicking any card takes you to the original platform, which has its own privacy practices.
+This site sets no cookies and runs no advertising scripts. Page fonts load from Google Fonts, which receives your browser's address when a page loads but sets no cookies. Anonymous visit counts are collected with GoatCounter, a privacy-respecting service that uses no cookies and stores no personal information. Pages with a comments section load a small widget from giscus, an open-source service backed by this site's public GitHub Discussions board: reading comments requires nothing, posting requires a free GitHub account, and anything posted is public. Video thumbnails and podcast artwork load from the platforms that publish them; clicking any card takes you to the original platform, which has its own privacy practices.
 
 ## Disclaimer
 

@@ -12,6 +12,7 @@ This site is built to be usable by everyone in the American University of Antigu
 - **Semantic structure.** Every page uses a proper heading hierarchy, and long pages carry a table of contents; figures are original vector graphics with written descriptions, and images carry alternative text.
 - **Keyboard and screen reader support.** The site is built on a documentation framework whose navigation, search, and collapsible sections are keyboard-operable; collapsible content uses standard disclosure elements that assistive technology announces.
 - **Readable presentation.** Text is sized in relative units so browser zoom and font-size settings are respected, the site offers light and dark color schemes, and color is never the only carrier of meaning (status badges pair color with text labels).
+- **Listen option.** The pathway modules, two reference pages, and the news section briefs offer a machine-read audio version; the written page remains the authoritative text.
 
 ## Known limitations
 

@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Playbook: Feedback on Student Writing
 
-<span class="meta-chip">For faculty</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
+<span class="meta-chip">For faculty</span><span class="meta-chip">About 7 minutes</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
 ## The task
 
@@ -12,7 +12,7 @@ Give substantive, rubric-grounded formative feedback on a stack of student writi
 
 ## Where AI helps, and where it hurts
 
-Artificial intelligence (AI) is strong at the mechanical layer of feedback: applying your rubric consistently to the twentieth essay as to the first, spotting structural patterns (a missing counterargument, an unsupported claim, a conclusion that answers a different question), and offering alternative phrasings for points you want to make more kindly or more clearly. It is weak, and must be kept away from, everything that requires knowing the student: judging growth against their previous work, sensing what this particular writer can hear right now, and any decision that touches a grade. It also fails in a way specific to this task: models generate plausible-sounding praise and criticism that does not match the text in front of them, so every observation must carry a quote you can check.
+Artificial intelligence (AI) is strong at the mechanical layer of feedback: applying your rubric consistently to the twentieth essay as to the first, spotting structural patterns (a missing counterargument, an unsupported claim, a conclusion that answers a different question), and offering alternative phrasings for points you want to make more kindly or more clearly. It is weak at everything that requires knowing the student, and should be kept away from all of it: judging growth against their previous work, sensing what this particular writer can hear right now, and any decision that touches a grade. It also fails in a way specific to this task: models generate plausible-sounding praise and criticism that does not match the text in front of them, so every observation must carry a quote you can check.
 
 One more failure mode is yours rather than the model's: feedback that arrives in a voice that is not yours teaches students that your feedback is not worth reading. The model drafts observations; the words that reach the student are yours.
 
@@ -20,7 +20,7 @@ One more failure mode is yours rather than the model's: feedback that arrives in
 <svg viewBox="0 0 660 205" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The feedback pipeline: student work is de-identified first, the model produces quote-anchored observations against a frozen rubric, you judge and rewrite in your voice, and grades never enter the pipeline">
 <defs><marker id="wf-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
 <text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the pipeline, with its two hard walls</text>
-<rect x="20" y="46" width="140" height="54" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
+<rect x="20" y="46" width="140" height="54" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="90" y="66" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">de-identify first</text>
 <text x="90" y="81" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">names, IDs, traceable details</text>
 <text x="90" y="93" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">out before any upload</text>
@@ -38,7 +38,7 @@ One more failure mode is yours rather than the model's: feedback that arrives in
 <rect x="548" y="46" width="92" height="54" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
 <text x="594" y="70" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">feedback,</text>
 <text x="594" y="85" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">disclosed</text>
-<rect x="20" y="130" width="620" height="34" rx="6" fill="none" stroke="#c62828" stroke-width="2"/>
+<rect x="20" y="130" width="620" height="34" rx="6" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="330" y="151" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">grades, scores, and rankings never enter this pipeline at any step</text>
 <text x="330" y="192" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the wall on the left protects the student's records; the wall below protects your judgment</text>
 </svg>
@@ -55,15 +55,15 @@ One more failure mode is yours rather than the model's: feedback that arrives in
 
 ## The workflow
 
-1. **De-identify first.** Remove names, identification numbers, and identifying details (a described clinical encounter can identify a student as surely as a name). Student submissions are educational records; identifiable student work never enters a public AI tool. A find-and-replace to "Student A, Student B" is usually sufficient and preserves your ability to map feedback back.
-2. **Freeze the criteria.** Give the model your rubric and the assignment brief, have it restate the criteria as a numbered list, and correct it before any essay is read, the same frozen-rubric discipline as the [literature screening prompt](../prompts/index.md). Consistency across the stack is the whole point; a rubric that drifts mid-stack is worse than none.
+1. **De-identify first.** Remove names, identification numbers, and identifying details (a described clinical encounter can identify a student as surely as a name). Student submissions are education records; identifiable student work never enters a public AI tool. A find-and-replace to "Student A, Student B" is usually sufficient and preserves your ability to map feedback back.
+2. **Freeze the criteria.** Give the model your rubric and the assignment brief, have it restate the criteria as a numbered list, and correct it before any essay is read, the same frozen-rubric discipline as the [literature screening prompt](../prompts/index.md#literature-screening-assistant). Consistency across the stack is the whole point; a rubric that drifts mid-stack is worse than none.
 3. **Run per essay, observations only.** For each submission ask for: rubric-grounded observations, each anchored to a verbatim quote from the essay; the single highest-leverage improvement; and one thing done genuinely well, also quote-anchored. Explicitly forbid grades, scores, rankings, and comparisons between students, and never paste one student's work as an exemplar for critiquing another's.
 4. **Judge and rewrite.** Read each observation set against the essay. Discard what is wrong or tone-deaf (some will be), keep what you would have found yourself on a good day, add what only you can know, and rewrite the keepers in your own voice.
-5. **Return it as yours, disclosed as your syllabus says.** How you disclose AI assistance in feedback is a course-level decision the [policy](../governance/policy.md) delegates to you; your [syllabus AI statement](syllabus-statement.md) is the place that decision lives, and students reasonably expect the same transparency about your AI use that you expect about theirs.
+5. **Return it as yours, disclosed as your syllabus says.** How you disclose AI assistance in feedback follows the course and departmental guidelines the [AI Responsible Use Policy](../governance/policy.md) delegates to; your [syllabus AI statement](syllabus-statement.md) is the place that decision lives, and students reasonably expect the same transparency about your AI use that you expect about theirs.
 
 ## Guardrails for this task
 
-- The Family Educational Rights and Privacy Act (FERPA) treats student submissions as educational records: de-identification before any public AI tool is a hard requirement, not a courtesy.
+- The Family Educational Rights and Privacy Act (FERPA) treats student submissions as education records: de-identification before any public AI tool is a hard requirement, not a courtesy.
 - Grades stay entirely human. This playbook is for formative feedback; a model never scores, ranks, or contributes to a summative judgment.
 - Do not build a mental model of a student from an AI's reading of their work; the observations are about the text, not the person.
 - If your course restricts students' AI use, hold your own use to the standard your syllabus sets: disclosed and defensible.

@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Playbook: Making Sense of Your Score Reports
 
-<span class="meta-chip">For students and their advisors</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
+<span class="meta-chip">For students and their advisors</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
 ## The task
 
@@ -12,7 +12,7 @@ Turn an exam performance report (a comprehensive exam, a shelf exam, a self-asse
 
 ## What you already have
 
-Before any artificial intelligence (AI) enters the picture, know your data. If you have taken a National Board of Medical Examiners (NBME) exam, you already have a dashboard: **INSIGHTS**, reached through the [MyNBME examinee portal](https://www.mynbme.org/). It collects your NBME self-assessments from the past two years and your subject and comprehensive exams from early 2024 onward, under the account email the exam was tied to (United States Medical Licensing Examination results are not included, and older score reports come from the school), across four tabs: your exam list with downloadable score reports, per-exam results, question-level detail, and comparisons across multiple takes of the same exam type.
+Before any artificial intelligence (AI) enters the picture, know your data. If you have taken a National Board of Medical Examiners (NBME) exam, you already have a dashboard: **INSIGHTS**, reached through the [MyNBME examinee portal](https://www.mynbme.org/). It collects your NBME self-assessments from the past two years and your subject and comprehensive exams from early 2024 onward, under the email address the exam was tied to. United States Medical Licensing Examination results are not included, and older score reports come from the school. INSIGHTS has four tabs: your exam list with downloadable score reports, per-exam results, question-level detail, and comparisons across multiple takes of the same exam type.
 
 The reports carry different rulers, so read yours against the right row:
 
@@ -47,7 +47,7 @@ Most tables in INSIGHTS export to a spreadsheet.
 <text x="250" y="120" font-size="9" fill="var(--md-typeset-color)">Cardiovascular</text>
 <rect x="390" y="112" width="150" height="9" rx="4" fill="var(--md-default-fg-color--light)" opacity="0.25"/>
 <rect x="390" y="112" width="66" height="9" rx="4" fill="var(--md-primary-fg-color)"/>
-<text x="556" y="120" font-size="8.5" font-weight="bold" fill="#c62828">Lower</text>
+<text x="556" y="120" font-size="8.5" font-weight="bold" fill="var(--aua-alert)">Lower</text>
 <text x="250" y="146" font-size="9" fill="var(--md-typeset-color)">Renal &amp; Urinary</text>
 <rect x="390" y="138" width="150" height="9" rx="4" fill="var(--md-default-fg-color--light)" opacity="0.25"/>
 <rect x="390" y="138" width="102" height="9" rx="4" fill="var(--md-primary-fg-color)"/>
@@ -55,7 +55,7 @@ Most tables in INSIGHTS export to a spreadsheet.
 <text x="250" y="172" font-size="9" fill="var(--md-typeset-color)">Biostatistics &amp; Epidemiology</text>
 <rect x="390" y="164" width="150" height="9" rx="4" fill="var(--md-default-fg-color--light)" opacity="0.25"/>
 <rect x="390" y="164" width="58" height="9" rx="4" fill="var(--md-primary-fg-color)"/>
-<text x="556" y="172" font-size="8.5" font-weight="bold" fill="#c62828">Lower</text>
+<text x="556" y="172" font-size="8.5" font-weight="bold" fill="var(--aua-alert)">Lower</text>
 <text x="250" y="198" font-size="9" fill="var(--md-typeset-color)">Behavioral Sciences</text>
 <rect x="390" y="190" width="150" height="9" rx="4" fill="var(--md-default-fg-color--light)" opacity="0.25"/>
 <rect x="390" y="190" width="120" height="9" rx="4" fill="var(--md-primary-fg-color)"/>
@@ -102,7 +102,7 @@ Before you run any prompt, open your report and write down your own three takeaw
 <text x="262" y="64" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your own read</text>
 <text x="262" y="80" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">three takeaways, written first</text>
 <line x1="334" y1="69" x2="360" y2="69" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#sr-ar)"/>
-<rect x="364" y="42" width="110" height="54" rx="8" fill="none" stroke="#c62828" stroke-width="2"/>
+<rect x="364" y="42" width="110" height="54" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="419" y="64" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">de-identify</text>
 <text x="419" y="80" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">name, ID, exam codes out</text>
 <line x1="476" y1="69" x2="502" y2="69" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#sr-ar)"/>
@@ -125,10 +125,10 @@ Before you run any prompt, open your report and write down your own three takeaw
 
 1. **Get your data out.** Open [INSIGHTS](https://www.mynbme.org/), download the score report or export the tables, or collect your in-house report. Paste it into a text file and strip your name, student number, and any exam identifiers.
 2. **Write your own read.** Three takeaways, before any model sees anything. Two minutes that make everything after them work better.
-3. **Run the [score report study planner](../prompts/index.md).** It will ask for your report, your timeline, your honest hours, your resources, your own read, and your test-taking patterns, then produce an honest assessment, a deficit map, the quick wins (biostatistics, epidemiology, ethics, and communication are checked explicitly; they are the cheapest points on the form), an interleaved week-by-week plan, test-taking drills for any strategy problems it finds, three questions for your advisor, and what to re-measure on your next assessment.
+3. **Run the [score report study planner](../prompts/index.md#score-report-study-planner).** It will ask for your report, your timeline, your honest hours, your resources, your own read, and your test-taking patterns, then produce an honest assessment, a deficit map, the quick wins (biostatistics, epidemiology, ethics, and communication are checked explicitly; they are the cheapest points on the form), an interleaved week-by-week plan, test-taking drills for any strategy problems it finds, three questions for your advisor, and what to re-measure on your next assessment.
 4. **Sanity-check the plan.** Are the weekly hours ones you actually have? Does every week keep your strong areas warm rather than parking a month on one subject? Does every claim about your performance trace to something in your report?
 5. **Take it to your advisor.** The plan's advisor questions are the agenda. Advisors see patterns no model can: how this exam fits your trajectory, what worked for students in your exact position, and when the problem is not the studying at all.
-6. **Close the loop.** After your next assessment, run the [study plan progress check](../prompts/index.md) with the old plan and the new report. It will say honestly which of three things happened: the plan worked, the plan was not followed, or the plan was followed and did not work, and each has a different next move.
+6. **Close the loop.** After your next assessment, run the [study plan progress check](../prompts/index.md#study-plan-progress-check) with the old plan and the new report. It will say honestly which of three things happened: the plan worked, the plan was not followed, or the plan was followed and did not work, and each has a different next move.
 
 ## Guardrails for this task
 

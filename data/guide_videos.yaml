@@ -100,7 +100,7 @@
   length: 14 min
   published: January 2025
   url: https://www.youtube.com/watch?v=UtSSMs6ObqY
-  note: Older than the rest but still accurate; Ollama's basics have not changed.
+  note: Recorded before Ollama added its desktop chat app; the command-line steps it shows still apply.
 
 - tool: ComfyUI
   slug: comfyui

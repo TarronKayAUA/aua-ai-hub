@@ -22,6 +22,21 @@ One reliable place for the American University of Antigua College of Medicine (A
 ## Start here
 
 <div class="grid cards hp-cards" markdown>
+- :material-human-male-board:{ .lg .middle } __For Faculty & Staff__
+
+    ---
+
+    Task-based routes for teaching and administrative work: lectures, exam items, syllabus statements, research, and the data rules.
+
+    [Start on the faculty and staff page](faculty.md)
+
+- :material-account-school:{ .lg .middle } __For Students__
+
+    ---
+
+    Where to start as a student: three short modules, study tools, the rules in brief, and how to get better answers.
+
+    [Start on the students page](students.md)
 
 - :material-head-lightbulb:{ .lg .middle } __Learn__
 
@@ -39,45 +54,13 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     [Open the directory](tools/index.md)
 
-- :material-account-school:{ .lg .middle } __For Students__
-
-    ---
-
-    Where to start as a student: three short modules, study tools, the rules in brief, and how to get better answers.
-
-    [Start here](students.md)
-
-- :material-human-male-board:{ .lg .middle } __For Faculty & Staff__
-
-    ---
-
-    Task-based routes for teaching and administrative work: lectures, exam items, syllabus statements, research, and the data rules.
-
-    [Start here](faculty.md)
-
 - :material-message-text:{ .lg .middle } __Prompts__
 
     ---
 
-    Reusable prompt templates for study and faculty tasks, each with a clear Draft or Reviewed status.
+    Reusable prompt templates for study and faculty tasks, each marked Draft or Reviewed (provisional until the AI Committee ratifies the review process).
 
     [Open the library](prompts/index.md)
-
-- :material-calendar-star:{ .lg .middle } __Conferences and Opportunities__
-
-    ---
-
-    Verified dates and deadlines for AI and medical education meetings, with past events archived automatically.
-
-    [See the calendar](conferences.md) · [See open calls](opportunities.md)
-
-- :material-scale-balance:{ .lg .middle } __Governance__
-
-    ---
-
-    The university's AI Responsible Use Policy, the committee behind it, and how tools get reviewed.
-
-    [See how AI is governed](governance/index.md)
 
 - :material-clipboard-text:{ .lg .middle } __Playbooks__
 
@@ -87,11 +70,27 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     [Pick your task](playbooks/index.md)
 
+- :material-scale-balance:{ .lg .middle } __Governance__
+
+    ---
+
+    The university's AI Responsible Use Policy, the committee behind it, and how tools get reviewed.
+
+    [See how AI is governed](governance/index.md)
+
+- :material-calendar-star:{ .lg .middle } __Conferences and Opportunities__
+
+    ---
+
+    Verified dates and deadlines for AI and medical education meetings, plus hackathons and challenges open to AUA students and faculty.
+
+    [See the calendar](conferences.md) · [See open calls](opportunities.md)
+
 - :material-newspaper-variant:{ .lg .middle } __Follow the Field__
 
     ---
 
-    The last seven days of curated news, videos, and podcasts, refreshed nightly.
+    The last seven days of curated news, videos, and podcasts, refreshed several times a day.
 
     [See this week](news/this-week.md)
 
@@ -109,7 +108,7 @@ How this kind of work actually goes, written up after the fact by the person who
 
     For six weeks this site displayed a product name that no longer existed, and nothing went red.
 
-    [Read it](worked-examples/this-site.md)
+    [Read how the site's checks failed](worked-examples/this-site.md)
 
 - :material-source-fork:{ .lg .middle } __I fixed software I cannot read__
 
@@ -117,25 +116,25 @@ How this kind of work actually goes, written up after the fact by the person who
 
     Building a feature into someone else's software in a language I do not write, and deciding boundaries when you cannot review the code.
 
-    [Read it](worked-examples/sharex-hdr.md)
+    [Read the ShareX account](worked-examples/sharex-hdr.md)
 
-- :material-tune-variant:{ .lg .middle } __My favourite game was not a game__
+- :material-tune-variant:{ .lg .middle } __My favorite game was not a game__
 
     ---
 
-    According to software I built and paid for, my fourth-favourite game was a frame rate counter.
+    According to software I built and paid for, my fourth-favorite game was a frame rate counter.
 
-    [Read it](worked-examples/recommender.md)
+    [Read the recommender story](worked-examples/recommender.md)
 
 </div>
 
 [More worked examples](worked-examples/index.md), including a Neanderthal gene that explained nothing.
 
-## Latest items
+## Latest news
 
 --8<-- "includes/latest.md"
 
-More in the [News section](news/this-week.md), including the weekly digest.
+More on [This Week](news/this-week.md), and past weekly digests in the [News Archive](news/archive/index.md).
 
 ## Latest videos
 

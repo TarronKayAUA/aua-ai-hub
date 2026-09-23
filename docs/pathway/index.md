@@ -4,16 +4,16 @@ last_reviewed: 2026-09-01
 
 # AI Literacy Pathway
 
-<span class="meta-chip">Seven modules</span><span class="meta-chip">Self-paced</span> <span class="meta-note">The two core stages take about 70 minutes total</span>
+<span class="meta-chip">Seven modules</span><span class="meta-chip">Self-paced</span> <span class="meta-note">Foundations takes about 35 minutes; each role module adds 10 to 15</span>
 
-A self-paced pathway in three stages: short plain-language modules, pointers into the relevant material on this site and beyond, and a short self-check in each. Every module stands alone, and none requires math.
+A self-paced introduction to artificial intelligence (AI) in three stages: foundations for everyone, modules for your role, and an optional stage on agents. Each module is short and in plain language, points to the relevant material on this site and beyond, and ends with a short self-check. Every module stands alone, and none requires math.
 
 The university's [AI Responsible Use Policy](../governance/policy.md) commits AUA to providing training resources on responsible AI use. This pathway is the AI Hub's contribution to that commitment, maintained by the Associate Dean of AI in Medical Education.
 
 <img class="section-banner" src="../assets/section-pathway.svg" alt="">
 
 <figure class="figure">
-<svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The pathway's three stages: foundations for everyone, role-specific modules, then the optional operator stage on agents">
+<svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The pathway's three stages: foundations for everyone, role-specific modules, then the optional stage on working with agents">
 <text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the three stages</text>
 <rect x="25" y="96" width="190" height="60" rx="8" fill="var(--md-primary-fg-color)"/>
 <text x="120" y="118" text-anchor="middle" font-size="11" font-weight="bold" fill="#ffffff">1 · Foundations</text>
@@ -24,7 +24,7 @@ The university's [AI Responsible Use Policy](../governance/policy.md) commits AU
 <text x="330" y="104" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">pick what matches your role</text>
 <text x="330" y="117" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">modules 4 to 6, ~10 to 15 min each</text>
 <rect x="445" y="36" width="190" height="60" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="540" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">3 · Becoming an Operator</text>
+<text x="540" y="58" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">3 · Working with Agents</text>
 <text x="540" y="74" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">optional: agents and setups</text>
 <text x="540" y="87" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">module 7, then hands-on guides</text>
 <defs><marker id="pw-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-default-fg-color--light)"/></marker></defs>
@@ -32,7 +32,7 @@ The university's [AI Responsible Use Policy](../governance/policy.md) commits AU
 <line x1="425" y1="88" x2="443" y2="74" stroke="var(--md-default-fg-color--light)" stroke-width="1.6" marker-end="url(#pw-ar)"/>
 <text x="330" y="178" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">every module stands alone; the stages are the recommended order, not a requirement</text>
 </svg>
-<figcaption>Foundations for everyone, depth for your role, and an optional operator stage when the basics feel comfortable.</figcaption>
+<figcaption>Foundations for everyone, depth for your role, and an optional stage on working with agents when the basics feel comfortable.</figcaption>
 </figure>
 
 ## Stage 1: Foundations
@@ -55,21 +55,21 @@ Role-specific depth; take the modules that match what you do.
 | 5 | [Research and Scholarship](research.md) | Faculty and student researchers | ~10 min |
 | 6 | [Clinical Contexts](clinical.md) | Students and clinical faculty | ~10 min |
 
-## Stage 3: Becoming an Operator (optional)
+## Stage 3: Working with Agents (optional)
 
-For when the basics feel comfortable: how to work with AI that can read files, run tools, and hand back verified work. Start with the module, then go hands-on.
+For when the basics feel comfortable: how to work with AI that can read files, run tools, and hand back work with evidence you can check. Start with the module, then go hands-on.
 
 | Step | Page | Time |
 | --- | --- | --- |
 | 7 | [Working with Agents](working-with-agents.md) | ~12 min |
-| 8 | [Choosing Your Interface](../tools/interfaces.md) | ~10 min |
+| 8 | [Choosing Your Interface](../tools/interfaces.md) | ~12 min |
 | 9 | [Your First Agent Session](../tools/first-session.md) | ~20 min, hands-on |
 | 10 | [Standing Setups](../tools/standing-setups.md) | ~10 min |
-| 11 | [Skills](../tools/skills.md) | ~8 min |
+| 11 | [Agent Skills](../tools/skills.md) | ~10 min |
 
 [Getting Better Answers](../basics/better-answers.md), from Module 2, is the prerequisite this stage assumes rather than a step in it.
 
-**The reference shelf.** Five pages sit alongside the modules rather than in sequence: [How LLMs Work](../basics/how-llms-work.md) holds the diagrams Module 1 defers to; [Getting Better Answers](../basics/better-answers.md) is the operating manual for context, memory, and standing instructions; the [Glossary](../basics/glossary.md) defines every term the pathway uses; [Common Misconceptions](../basics/misconceptions.md) calibrates trust by task; and [Courses and Resources](../learning/index.md) lists external courses for when the pathway is done.
+**The reference shelf.** Five pages sit alongside the modules rather than in sequence: [How LLMs Work](../basics/how-llms-work.md), the primer on large language models (LLMs), holds the diagrams Module 1 defers to; [Getting Better Answers](../basics/better-answers.md) is the operating manual for context, memory, and standing instructions; the [Glossary](../basics/glossary.md) defines the AI terms the pathway uses; [Common Misconceptions](../basics/misconceptions.md) calibrates trust by task; and [Courses and Resources](../learning/index.md) lists external courses for when the pathway is done.
 
 **What it aligns with.** The pathway's coverage is mapped to the [Artificial Intelligence Competencies for Medical Educators](https://www.aamc.org/about-us/mission-areas/medical-education/advancing-ai-resource-collection/artificial-intelligence-competencies-medical-educators), the framework compiled by the Central Group on Educational Affairs (CGEA) Faculty Development Special Interest Group and published through the Association of American Medical Colleges (AAMC). Each module notes the competency domain it serves; the six core modules cover all seven domains, and Module 7 deepens Working with AI and Critical Appraisal of AI Outputs.
 

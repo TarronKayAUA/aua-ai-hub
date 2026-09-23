@@ -1,11 +1,12 @@
-# Curated learning resources for the Prompt Library. Rendered into
-# docs/prompts/index.md at build time by scripts/render_data.py: entries with
-# category "general" appear in the "Learning to prompt" section at the top of
-# the page; entries with a prompt-library category appear as "Further reading"
-# under that category's prompts. Edit this file only; never the rendered page.
+# Curated learning resources for the Prompt Library. Rendered at build time
+# by scripts/render_data.py: entries with category "general" render as cards
+# on docs/prompts/learning.md (the Learning to Prompt page); entries with a
+# prompt-library category appear as "Further reading" under that category's
+# prompts on docs/prompts/index.md. Edit this file only; never the rendered
+# pages.
 #
 # category values: general | research | mcq_generation | mcq_vetting |
-#                  data_analysis | content_generation
+#                  data_analysis | content_generation | study_strategy
 # type values: video | guide | paper
 # length is optional display text (for videos); journal/year are for papers.
 #
@@ -27,7 +28,7 @@
   url: https://www.youtube.com/watch?v=ysPbXH0LpIE
   blurb: Two Anthropic engineers rebuild a real prompt step by step, showing
     how role, context, examples, and output structure each change the result.
-    The single best short introduction to how practitioners prompt today.
+    A clear, short introduction to how practitioners prompt current models.
 
 - title: Prompt engineering overview
   source: Anthropic
@@ -52,9 +53,10 @@
   type: guide
   category: general
   url: https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models
-  blurb: Anthropic's guidance for the Claude 5 generation on structuring
-    context, fewer rules and more judgment, progressive disclosure over
-    upfront loading, and concise references over repetition. Most useful
+  blurb: Anthropic's guidance for its Claude 5 models on structuring
+    context, favoring fewer rules and more judgment, detail supplied when a
+    task needs it rather than all at once, and short references instead of
+    repetition. Most useful
     once you are building agents or standing setups; Claude-specific, but
     the principles translate.
 
@@ -84,10 +86,10 @@
   length: 2 hr 11 min
   category: general
   url: https://www.youtube.com/watch?v=EWvNQjAaOHw
-  blurb: A practical tour of what modern assistants can actually do (thinking
-    modes, tool use, file uploads, voice) from a leading AI researcher,
-    illustrated with his own daily workflows. Long, but chaptered so you can
-    watch in sections.
+  blurb: A practical tour of what large language model (LLM) assistants can
+    do (thinking modes, tool use, file uploads, voice), illustrated with an
+    artificial intelligence (AI) researcher's own daily workflows. Long,
+    but chaptered so you can watch in sections.
 
 - title: "Beginner-level tips for medical educators"
   source: Medical Science Educator, 2024
@@ -115,15 +117,15 @@
   url: https://doi.org/10.1001/jamanetworkopen.2024.20496
   blurb: A prospective test of model-assisted title and abstract screening for
     guideline development. Note how much revising the prompt's inclusion
-    criteria mattered, sensitivity rose from 0.75 to 0.91.
+    criteria mattered, with sensitivity rising from 0.75 to 0.91.
 
 - title: "Development and evaluation of prompts to screen titles and abstracts"
   source: BMJ Mental Health, 2025
   type: paper
   category: research
   url: https://doi.org/10.1136/bmjment-2025-301762
-  blurb: Walks through the prompt-refinement workflow itself, a development
-    set, iteration, then held-out evaluation, for literature screening in a
+  blurb: Walks through the prompt-refinement workflow itself (a development
+    set, iteration, then held-out evaluation) for literature screening in a
     living systematic review.
 
 - title: "GPT-4 versus human authors in clinically complex MCQ creation"
@@ -156,7 +158,7 @@
   category: study_strategy
   url: https://www.nbme.org/insights-demo/
   blurb: The National Board of Medical Examiners' own clickable demo of the
-    examinee dashboard, the fastest way to see what your report will look
+    examinee dashboard, a quick way to see what your report will look
     like before your first exam.
 
 - title: INSIGHTS user guide

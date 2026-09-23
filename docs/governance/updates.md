@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Committee Updates
 
-What the [AI Committee](committee.md) is working on, and its announcements to the American University of Antigua College of Medicine (AUACOM) community. The projects list below is maintained by the committee chair; committee announcements will appear below once the committee begins posting them.
+What the [AI Committee](committee.md) is working on, and the updates it posts to the American University of Antigua College of Medicine (AUACOM) community. The projects list below is maintained by the committee chair.
 
 ## Current projects
 
@@ -16,4 +16,4 @@ What the [AI Committee](committee.md) is working on, and its announcements to th
 
 ## Have your say
 
-The committee runs occasional quick polls; open polls appear on the [Announcements page](../announcements/index.md). For anything else, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) reaches the committee directly.
+The committee runs occasional quick polls, listed on the [Announcements page](../announcements/index.md) when one is open. For questions, suggestions, or a tool review request, use the [feedback form](https://forms.office.com/r/5a8RCi2YKP).

@@ -15,7 +15,7 @@ Gemini Notebook is a research notebook that answers questions from the documents
 | Guideline lookup with the guideline in the notebook | Appraisal and judgment, such as rating a study's quality |
 | Questions across a whole term of lecture material at once | Harder questions whose wording does not match the source's keywords |
 
-What makes it different from a chat assistant is that it answers from the documents you upload rather than from general knowledge of the web. Two features are exceptions worth knowing: Discover sources searches the web or your Google Drive, and Deep Research browses on your behalf. Both add what they find as sources you can see and check, so the grounding principle holds, but the material is no longer only what you chose. Opening the same notebook from inside the Gemini app is a different matter, and is not source-only.
+Two features reach beyond your uploads: Discover sources searches the web or your Google Drive, and Deep Research browses on your behalf. Both add what they find as sources you can see and check, so answers stay cited, but the material is no longer only what you chose. Opening the same notebook from inside the Gemini app is different again: answers there are not limited to your sources.
 
 ## What it is for
 
@@ -37,7 +37,7 @@ How accurate any of this is on a given day depends on the current model and on w
 
 **Retrieval is selective.** With many sources it searches and picks passages rather than reading everything, so something you uploaded can be missing from an answer without the answer saying so. Absence of a fact is not evidence the fact is absent from your material.
 
-**Every transformation is a further step away from the source.** A study guide, a summary, or an audio overview has to decide what matters, and that is where emphasis shifts, qualifications drop, and a single author's view becomes a general statement. Independent evaluations have consistently found the derived formats less faithful than direct answers, even when the underlying facts are extracted correctly, and settled material such as textbook chapters survives the process better than primary research does, whose findings live in exactly the caveats that summarizing strips.
+**Every transformation is a further step away from the source.** A study guide, a summary, or an audio overview has to decide what matters, and that is where emphasis shifts, qualifications drop, and a single author's view becomes a general statement. The published evaluations so far have found the derived formats less faithful than direct answers, even when the underlying facts are extracted correctly. Settled material such as textbook chapters survives the process better than primary research, whose findings depend on the caveats that summarizing strips.
 
 !!! tip "The rule that follows from all of this"
     Finding and quoting is what it does best. Every transformation into a study guide, podcast, or verdict is a further place where errors enter, so open the citation and confirm the passage actually says what the answer claims.
@@ -49,11 +49,11 @@ How accurate any of this is on a given day depends on the current model and on w
 ??? note "The published evidence, as of August 2026"
     Specific numbers date quickly, so treat these as a snapshot rather than as the state of the tool.
 
-    On the positive side, controlled comparisons in dental trauma, orthopedic disability assessment, and cancer staging have found document-grounded answers substantially more accurate than the same model without the document, with large time savings ([DOI](https://doi.org/10.1111/edt.70065), [DOI](https://doi.org/10.1177/20552076261473719), [DOI](https://doi.org/10.1007/s12194-026-01026-0)).
+    On the positive side, controlled comparisons in dental trauma, orthopedic disability assessment, and cancer staging have found document-grounded answers substantially more accurate than the same model without the document, with large time savings ([dental trauma study](https://doi.org/10.1111/edt.70065), [orthopedic study](https://doi.org/10.1177/20552076261473719), [cancer staging study](https://doi.org/10.1007/s12194-026-01026-0)).
 
-    On the negative side, podcasts generated from 21 research articles in one issue of *Radiology* were assessed by residents, and 71 percent contained incorrect statements while capturing only 76 percent of the articles' own key results ([PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC11950872/)). Podcasts built from textbook chapters fared better ([DOI](https://doi.org/10.1097/gox.0000000000007299)). On 121 United States Medical Licensing Examination (USMLE) Step 1 dermatology questions, grounding in student study guides scored below a general chat model, with the gap widening on harder items where the question stem lacked the keywords needed to retrieve the right passage ([PubMed Central](https://pmc.ncbi.nlm.nih.gov/articles/PMC13298547/)).
+    On the negative side, podcasts generated from 21 research articles in one issue of *Radiology* were assessed by residents, and 71 percent contained incorrect statements while capturing only 76 percent of the articles' own key results ([Radiology podcast study](https://pmc.ncbi.nlm.nih.gov/articles/PMC11950872/)). Podcasts built from textbook chapters fared better ([textbook podcast study](https://doi.org/10.1097/gox.0000000000007299)). On 121 United States Medical Licensing Examination (USMLE) Step 1 dermatology questions, grounding in student study guides scored below a general chat model, with the gap widening on harder items where the question stem lacked the keywords needed to retrieve the right passage ([dermatology study](https://pmc.ncbi.nlm.nih.gov/articles/PMC13298547/)).
 
-    The published education research is thin. Nearly all of it is small and single-site, with one two-institution pharmacy study as the exception ([DOI](https://doi.org/10.1016/j.ajpe.2025.101925)), and none has measured learning outcomes against a control group. The tool is documented as a time saver and a well-liked format, not as a proven learning tool.
+    The published education research is thin. Nearly all of it is small and single-site, with one two-institution pharmacy study as the exception ([pharmacy study](https://doi.org/10.1016/j.ajpe.2025.101925)), and none has measured learning outcomes against a control group. The tool is documented as a time saver and a well-liked format, not as a proven learning tool.
 
 ## Setting one up
 

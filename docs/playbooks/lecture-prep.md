@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Playbook: Preparing a Lecture
 
-<span class="meta-chip">For faculty</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
+<span class="meta-chip">For faculty</span><span class="meta-chip">About 5 minutes</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
 ## The task
 
@@ -55,15 +55,15 @@ Artificial intelligence (AI) is strong at structure and variation: organizing co
 
 1. **Start from the template.** The [Lecture outline builder](../prompts/index.md#content-generation) prompt in the library takes duration, audience, topic, and objectives, and returns a timed outline with an active check per section. Paste your materials after it; do not run it from a blank page.
 2. **Interrogate the draft.** Ask what the outline omits that a [your specialty] educator would expect, where students typically get confused on this topic, and what could be cut first if time runs short. Treat the answers as prompts for your judgment, not verdicts.
-3. **Deepen the checks.** For each section's active check, ask for one alternative format (one-best-answer question, think-pair-share prompt, quick poll) and pick what fits your room.
+3. **Deepen the checks.** For each section's active check, ask for one alternative format (single best answer question, think-pair-share prompt, quick poll) and pick what fits your room.
 4. **Generate support materials.** Once the outline is yours, ask for the things that follow mechanically: a handout skeleton, draft slide bullets per section, or three vignette variants of your opener for reuse in small groups. For figures, read [AI-Generated Images in Teaching](ai-images.md) before generating one.
 5. **Verify content.** Every factual claim, dose, criterion, and guideline reference that survives into your materials gets checked against a current authoritative source. Models confidently reproduce outdated clinical thresholds; currency checking is non-negotiable.
 
 ## Guardrails for this task
 
-- Unpublished institutional materials are fine to use as inputs only if they are yours to use; a colleague's unpublished materials need their permission first.
+- Your own teaching materials are fine as inputs, and a colleague's need their permission first. Anything the policy treats as AUA proprietary information (unpublished research data, confidential institutional documents) stays out of public AI tools whoever owns it, and a colleague's permission does not change that.
 - If your slides will state that AI assisted their preparation, follow your department's attribution practice; the [policy](../governance/policy.md) delegates the standard to course and departmental guidelines.
-- No student data belongs in this workflow; designing a session around last cohort's performance data means de-identifying it first.
+- No identifiable student data belongs in this workflow; if you design a session around last year's cohort performance, de-identify the data first.
 
 ## Before you rely on it
 

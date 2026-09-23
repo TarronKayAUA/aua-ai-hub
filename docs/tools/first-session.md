@@ -6,11 +6,11 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">About 20 minutes</span> <span class="meta-note">Works with Claude Code or Codex in the ChatGPT desktop app</span>
 
-[Choosing Your Interface](interfaces.md) explains why agents change what artificial intelligence (AI) can do for you; this page has you run one, once, on a folder that cannot be hurt. By the end you will have watched a model read files, ask your permission, run a tool, and hand back verified work, and you will know which settings to change and which to leave alone.
+[Choosing Your Interface](interfaces.md) explains why agents change what artificial intelligence (AI) can do for you; this page has you run one, once, on a folder that cannot be hurt. By the end you will have watched a model read files, ask your permission, run a tool, and hand back work with evidence you can check, and you will know which settings to change and which to leave alone.
 
 ## Before you start
 
-- Install an agent: the [Claude Code desktop app](https://claude.com/claude-code) or the [ChatGPT desktop app](https://learn.chatgpt.com/docs/app) (Codex is a mode inside it). Codex is included with every ChatGPT plan, including Free; Claude Code needs a paid Claude plan (Pro or above), so take the ChatGPT route if you have no subscription.
+- Install an agent: the [Claude Code desktop app](https://claude.com/product/claude-code) or the [ChatGPT desktop app](https://learn.chatgpt.com/docs/app) (Codex is a mode inside it). Codex is included with every ChatGPT plan, including Free; Claude Code needs a paid Claude plan (Pro or above), so take the ChatGPT route if you have no subscription.
 - Optional but worthwhile: the [local toolkit](interfaces.md#equipping-the-machine), so document conversion works when you get ambitious later.
 
 ## The walkthrough
@@ -55,8 +55,8 @@ last_reviewed: 2026-09-01
 
     > Read the documents in this folder. Create a file called summary-table.md with one row per document: title, source and year, a five-sentence summary, and the three points most worth teaching from it. Tell me which document was hardest to read and why.
 
-4. **Watch the permission prompts, and read them.** Reading files inside the folder you opened generally will not prompt; the moment the agent wants to *write* the new file, it asks. This is the habit to build on day one: the prompt tells you exactly what the agent wants to do, and you are the gate. Approve what matches your request; deny anything that surprises you, and ask the agent why it wanted it.
-5. **Watch the loop.** The agent reads each file (tool call), builds the table (generation), writes the file (tool call), and typically re-reads its own output to check it (tool call again). That loop, act, check, continue, is the thing chat interfaces cannot do.
+4. **Watch the permission prompts, and read them.** In Claude Code, reading files inside the folder you opened generally will not prompt, but the moment the agent wants to *write* the new file, it asks. Codex's default mode gives the agent more room: it edits inside the folder without asking and prompts before it reaches the internet or anything outside the folder, so you may see no prompt at this step. This is the habit to build on day one: the prompt tells you exactly what the agent wants to do, and you are the gate. Approve what matches your request; deny anything that surprises you, and ask the agent why it wanted it.
+5. **Watch the loop.** The agent reads each file (tool call), builds the table (generation), writes the file (tool call), and typically re-reads its own output to check it (tool call again). That loop (act, check, continue) is what separates an agent from a chat window.
 6. **Iterate like it is a conversation, because it is.** "Add a column rating each paper's difficulty for second-year students." The agent edits the file it already made; nothing is regenerated from scratch.
 7. **Review the work.** Open summary-table.md yourself. Agents make verification cheap, and the habit of looking at what actually changed is what makes them safe.
 
@@ -64,7 +64,7 @@ If the agent says a tool is missing, it will name exactly what to install; that 
 
 ## The settings that matter
 
-Both agents have a settings surface worth five minutes of your attention. Everything below is verified against the vendors' documentation as of July 2026; treat exact names as subject to drift.
+Both agents have a settings surface worth five minutes of your attention. Everything below was checked against the vendors' documentation in September 2026; treat exact names as subject to drift.
 
 ### Claude Code
 
@@ -77,7 +77,7 @@ Both agents have a settings surface worth five minutes of your attention. Everyt
 ### Codex (ChatGPT desktop app)
 
 - **Permission mode**: *Ask for approval* (the default) lets Codex read and edit within the workspace and run routine commands, asking before it touches the internet or anything beyond the folder. *Approve for me* has ChatGPT auto-review requests and only surface the ones it flags, and OpenAI's docs note the auto-reviewer can make mistakes. *Full access* removes approvals entirely, and the docs attach an explicit warning about data loss and leaks: same verdict as bypass mode above, not for a machine you care about.
-- **Model and effort** live on one slider: Sol, Terra, or Luna, each from light effort up through max, with *Ultra* above them all. The documented default pairing is Sol at medium effort, and the docs' own advice matches this page's: start at the default and increase only when a task visibly needs deeper planning.
+- **Model and effort** live on one slider: Sol, Terra, or Luna, each from light effort up through max, with *Ultra* above them all. On paid plans, the documented default pairing is Sol at medium effort (Free and Go plans run Terra, so the model choice does not appear there), and the docs' own advice matches this page's: start at the default and increase only when a task visibly needs deeper planning.
 - **Ultra mode** is the Codex counterpart of ultracode: it splits large tasks across parallel subagents and synthesizes the results. Same trade, same advice; OpenAI's docs say it plainly: "Most tasks do not need Max or Ultra." (If Ultra is missing from your slider, it enables under Settings, then Configuration.)
 - **A folder brief** (`AGENTS.md`) is read before any work begins, layered from a global file down to per-folder ones. See [Standing Setups](standing-setups.md).
 
@@ -87,13 +87,13 @@ This site's recommendation, stated as a table so you can disagree with it precis
 
 | Setting | Start with | Graduate to | Never (on a machine you care about) |
 | --- | --- | --- | --- |
-| Permissions | Manual / Ask for approval | Plan for exploration; Accept edits or Auto once a workflow has earned trust | Bypass permissions / Full access |
+| Permissions | Manual / Ask for approval, with Plan mode (Claude Code) at any stage for a look before touching | Accept edits, Auto, or Approve for me once a workflow has earned trust | Bypass permissions / Full access |
 | Effort | The default | Low for mechanical batches; xhigh or max for the genuinely hard step | Max as an always-on default |
 | Orchestration (ultracode / Ultra) | Off | On for large, decomposable tasks, accepting the time and token cost | On for routine questions |
 | Folder access | One task-specific folder | Additional folders added deliberately | Your whole home directory or disk |
 
 <figure class="figure">
-<svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The permission trust ladder: start at ask-first where every tool call prompts, graduate a proven workflow to auto-approved edits, then to checked autonomy where an automatic reviewer surfaces only flagged actions; Plan mode reads without changing anything and is useful at every rung; the bypass and full access modes sit behind a wall, for isolated machines only">
+<svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The permission trust ladder: start at ask first, where the agent asks before consequential actions, graduate a proven workflow to auto-approved edits, then to checked autonomy where an automatic reviewer surfaces only flagged actions; Plan mode reads without changing anything and is useful at every rung; the bypass and full access modes sit behind a wall, for isolated machines only">
 <defs><marker id="fs-lad" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
 <text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">permissions: a ladder you climb per workflow, not a dial you set once</text>
 <rect x="20" y="34" width="180" height="42" rx="7" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2" stroke-dasharray="5 4"/>
@@ -115,8 +115,8 @@ This site's recommendation, stated as a table so you can disagree with it precis
 <text x="455" y="158" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">what it flags, and it can</text>
 <text x="455" y="171" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">be wrong: keep reading</text>
 <text x="455" y="184" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">the surprises</text>
-<line x1="552" y1="96" x2="552" y2="208" stroke="#c62828" stroke-width="2" stroke-dasharray="5 4"/>
-<rect x="566" y="96" width="80" height="112" rx="7" fill="none" stroke="#c62828" stroke-width="2"/>
+<line x1="552" y1="96" x2="552" y2="208" stroke="var(--aua-alert)" stroke-width="2" stroke-dasharray="5 4"/>
+<rect x="566" y="96" width="80" height="112" rx="7" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="606" y="130" text-anchor="middle" font-size="9" font-weight="bold" fill="var(--md-typeset-color)">Bypass ·</text>
 <text x="606" y="144" text-anchor="middle" font-size="9" font-weight="bold" fill="var(--md-typeset-color)">Full access</text>
 <text x="606" y="165" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">isolated</text>
@@ -130,4 +130,6 @@ This site's recommendation, stated as a table so you can disagree with it precis
 
 ## Guardrails
 
-The agent's folder boundary is your main control: open the folder the task needs, nothing wider. The [policy](../governance/policy.md)'s data rules apply to every file in that folder, because the agent may read any of it; a folder containing a student roster is a folder an agent should not be working in. And keep the first-session rule for every *new kind* of task, not just the first one ever: copies first, originals after the workflow has earned it. The [AI Agents guide](agents.md) covers the fuller risk model, including prompt injection, once you are running sessions routinely.
+The agent's folder boundary is your main control: open the folder the task needs, nothing wider. The [AI Responsible Use Policy](../governance/policy.md)'s data rules apply to every file in that folder, because the agent may read any of it; a folder containing a student roster is a folder an agent should not be working in. And keep the first-session rule for every *new kind* of task, not just the first one ever: copies first, originals after the workflow has earned it. The [AI Agents guide](agents.md) covers the fuller risk model, including prompt injection, once you are running sessions routinely.
+
+**Next:** [Standing Setups](standing-setups.md), so the assistant keeps your context between sessions.

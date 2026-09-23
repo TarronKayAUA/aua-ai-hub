@@ -6,7 +6,7 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For everyone</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">No technical background needed</span>
 
-The model you use is fixed; what you control is everything around it. This page covers the three levers that decide answer quality in practice: what goes into the **context window** (and what you keep out of it), what persists across conversations as **memory**, and the standing **instructions** that govern how the model behaves. [How LLMs Work](how-llms-work.md), the primer on large language models (LLMs), explains what the context window is; this page is about using it well.
+The model you use is fixed; what you control is everything around it. This page covers the three levers that decide the quality of an artificial intelligence (AI) assistant's answers in practice: what goes into the **context window** (and what you keep out of it), what persists across conversations as **memory**, and the standing **instructions** that govern how the model behaves. [How LLMs Work](how-llms-work.md), the primer on large language models (LLMs), explains what the context window is; this page is about using it well.
 
 The short version is [the checklist](#the-checklist) at the end; the rest of the page explains why each item is there.
 
@@ -53,7 +53,7 @@ It is tempting to attach everything that might be relevant. Past a point this ba
 
 1. **Attention dilutes.** A question buried under two hundred pages competes with everything else for the model's attention. Models have also been shown to recall material at the **beginning and end** of a long context more reliably than material in the middle, an effect first documented in 2023 ([Liu et al.](https://arxiv.org/abs/2307.03172)); newer models have reduced it substantially, but long-context performance still degrades in subtler ways, so the placement advice stands. If one passage matters most, quote it directly next to your question rather than leaving the model to find it.
 2. **Irrelevant material actively misleads.** The model treats everything in the window as potentially relevant. An attached document about a different topic does not just waste space; it invites the answer to drift toward it.
-3. **Attachments are bigger than they look.** A slide deck or a journal article upload can consume tens of thousands of tokens. Three "for reference" attachments can eat more of the window than the entire conversation.
+3. **Attachments are bigger than they look.** A slide deck or a journal article runs to several thousand tokens, and a long or image-heavy PDF can run far higher. Three "for reference" attachments can eat more of the window than the entire conversation.
 
 <figure class="figure">
 <svg viewBox="0 0 660 235" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of approximate token costs: a question about 50, a page of prose about 650, a 30-slide deck about 4,000, a journal article about 8,000, an hour of lecture transcript about 12,000">
@@ -102,10 +102,10 @@ The fix costs thirty seconds: **summarize and carry.** Ask the model to write a 
 <rect x="27" y="42" width="140" height="7" rx="3" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
 <rect x="27" y="56" width="155" height="7" rx="3" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
 <rect x="27" y="70" width="120" height="7" rx="3" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
-<line x1="25" y1="73.5" x2="149" y2="73.5" stroke="#c62828" stroke-width="1.5" opacity="0.75"/>
+<line x1="25" y1="73.5" x2="149" y2="73.5" stroke="var(--aua-alert)" stroke-width="1.5" opacity="0.75"/>
 <rect x="27" y="84" width="150" height="7" rx="3" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
 <rect x="27" y="98" width="130" height="7" rx="3" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
-<line x1="25" y1="101.5" x2="159" y2="101.5" stroke="#c62828" stroke-width="1.5" opacity="0.75"/>
+<line x1="25" y1="101.5" x2="159" y2="101.5" stroke="var(--aua-alert)" stroke-width="1.5" opacity="0.75"/>
 <rect x="27" y="112" width="155" height="7" rx="3" fill="var(--md-default-fg-color--light)" opacity="0.5"/>
 <rect x="27" y="126" width="100" height="7" rx="3" fill="var(--md-default-fg-color--light)" opacity="0.85"/>
 <text x="107" y="163" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">decisions buried under drafts,</text>
@@ -136,13 +136,13 @@ Most consumer assistants now offer a **memory feature**: facts and preferences c
 
 - **Memory is retrieval, not learning.** The model is not retrained on your chats; stored notes are quietly added to your context each conversation. That also means memory consumes window space and can mislead like any other context: a stale stored fact ("working on the cardiology exam") shapes answers long after it stops being true.
 - **Review it periodically.** Every major assistant lets you review and delete stored memories in settings, and some let you edit them in place; prune anything stale or wrong the way you would clean up standing instructions. Some assistants also draw on your past conversations automatically, separately from the visible memory list; that too is a setting you can turn off.
-- **The data rules apply to memory with extra force.** A fact stored in memory resurfaces in every future conversation. Never let an assistant memorize patient information or student records; the [AI Responsible Use Policy](../governance/policy.md)'s lines on protected health information and records covered by the Family Educational Rights and Privacy Act (FERPA) apply to what a tool stores, not just what you type. The practical mechanism: turn memory off, or use a temporary chat (every major assistant offers one, and it keeps the exchange out of stored history) whenever a conversation goes anywhere near those lines, and delete any stored entry that slips through.
+- **The data rules apply to memory with extra force.** A fact stored in memory resurfaces in every future conversation. Patient information and student records never go into a consumer assistant at all; the [AI Responsible Use Policy](../governance/policy.md)'s lines on protected health information and records covered by the Family Educational Rights and Privacy Act (FERPA) cover what a tool stores as well as what you type, and memory is where a slip would persist. The practical mechanism: turn memory off, or use a temporary chat, whenever a conversation goes anywhere near those lines, and delete any stored entry that slips through. A temporary chat keeps the exchange out of your saved history, but the vendor may still keep a copy for a limited period, so it is never a way to enter protected data.
 
-## System instructions: set defaults once
+## Standing instructions: set defaults once
 
 Every assistant offers some form of standing instructions: custom instructions in settings, or per-workspace versions such as Projects in Claude and ChatGPT. Text placed there applies to every conversation and carries extra weight (a direct request in a message can still override it for that reply), which makes it the right home for things you would otherwise repeat: who you are and who your output is for ("I teach preclinical pharmacology; default to US medical education conventions"), format defaults ("no tables unless asked"), and verbosity preferences.
 
-Two habits keep standing instructions useful. **Keep them short and stable**: a page of rules dilutes itself, and the model follows five clear standing instructions better than thirty. **Put role and defaults in the instructions, put the task in the message**: instructions describe how you always want the assistant to behave; the message describes what you want right now. The [prompt library](../prompts/index.md)'s longer prompts are designed for exactly this split, which is why their notes say to paste them into a Project's instructions rather than into the chat; [Standing Setups](../tools/standing-setups.md) walks through building those containers.
+Two habits keep standing instructions useful. **Keep them short and stable**: a page of rules dilutes itself, and the model follows five clear standing instructions better than thirty. **Put role and defaults in the instructions, put the task in the message**: instructions describe how you always want the assistant to behave; the message describes what you want right now. The [prompt library](../prompts/index.md)'s longer prompts work best with this split: paste them into a Project's instructions rather than into the chat, as the question tutor's notes recommend; [Standing Setups](../tools/standing-setups.md) walks through building those containers.
 
 ## The checklist
 
@@ -157,4 +157,4 @@ Before a task that matters, thirty seconds of setup:
 
 None of this is model-specific, and all of it matters more as tasks get longer. Curious what context physically costs? The [hardware page](../tools/hardware.md) shows how conversation length consumes memory when you run models on your own machine. For prompt patterns to use inside the window, see the [Prompting Fundamentals module](../pathway/prompting.md) and the [prompt library](../prompts/index.md).
 
-These are also the levers the pathway's operator stage builds on: the same three, pointed at agents, are what [Choosing Your Interface](../tools/interfaces.md), [Standing Setups](../tools/standing-setups.md), and [Your First Agent Session](../tools/first-session.md) build on.
+The pathway's agent stage builds on these same three levers, pointed at agents: see [Choosing Your Interface](../tools/interfaces.md), [Standing Setups](../tools/standing-setups.md), and [Your First Agent Session](../tools/first-session.md).

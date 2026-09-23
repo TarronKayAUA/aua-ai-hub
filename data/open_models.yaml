@@ -32,7 +32,7 @@
   url: https://www.llama.com
   license: Llama Community License
   last_reviewed: 2026-06-10
-  blurb: Meta's open-weight family and the most widely deployed. Llama 4 Scout and Maverick handle text and images natively, and Scout offers a context window of up to 10 million tokens.
+  blurb: Meta's open-weight family. Llama 4 Scout and Maverick handle text and images natively, and Scout offers a context window of up to 10 million tokens.
 
 - name: Gemma 4
   vendor: Google
@@ -59,7 +59,7 @@
   url: https://huggingface.co/Qwen
   license: Apache 2.0 (Qwen3.8-Max license on the 2.4T flagship; Qwen Community License 1.0 on Flash-Next)
   last_reviewed: 2026-09-01
-  blurb: Alibaba's open-weight line, offered in the widest range of sizes, from models small enough for a laptop to flagship scale, with broad multilingual coverage. The August 2026 Qwen3.8 release opened a Max-class flagship for the first time (2.4 trillion parameters with 95 billion active, data-center hardware only) alongside a 27 billion parameter vision-language model that runs on a workstation, both with a 262,000 token context extensible to about 1 million. Qwen3.8-Flash-Next, published later that month as a preview of the next architecture, is multimodal and carries a third license.
+  blurb: Alibaba's open-weight line, offered in a wide range of sizes, from models small enough for a laptop to flagship scale, with broad multilingual coverage. The August 2026 Qwen3.8 release opened a Max-class flagship for the first time (2.4 trillion parameters with 95 billion active, data-center hardware only) alongside a 27 billion parameter vision-language model that runs on a workstation, both with a 262,000 token context extensible to about 1 million. Qwen3.8-Flash-Next, published later that month as a preview of the next architecture, is multimodal and carries a third license.
 
 - name: DeepSeek
   vendor: DeepSeek
@@ -80,7 +80,7 @@
   # the K2 line's modified MIT, so the label below still fits.
   license: Modified MIT
   last_reviewed: 2026-08-25
-  blurb: Moonshot AI's open-weight family, among the strongest published models on coding and agentic benchmarks. The flagship K3, at 2.8 trillion total parameters with a 1 million token context window, now has published weights under an MIT-style license whose extra conditions apply only to very large commercial deployments; a model that size needs data-center hardware, not a consumer graphics card.
+  blurb: Moonshot AI's open-weight family, aimed at coding and multi-step agent tasks. The flagship K3, at 2.8 trillion total parameters with a 1 million token context window, now has published weights under an MIT-style license whose extra conditions apply only to very large commercial deployments; a model that size needs data-center hardware, not a consumer graphics card.
 
 - name: Mistral
   vendor: Mistral AI
@@ -154,7 +154,7 @@
   license: FLUX Non-Commercial (dev)
   modality: image
   last_reviewed: 2026-07-15
-  blurb: The most capable open-weight image family. FLUX.2 dev (32 billion parameters) generates and edits images under a non-commercial license, with a smaller klein variant for lighter hardware. Runs locally in ComfyUI.
+  blurb: Black Forest Labs' open-weight image family. FLUX.2 dev (32 billion parameters) generates and edits images under a non-commercial license, with a smaller klein variant for lighter hardware. Runs locally in ComfyUI.
 
 - name: Stable Diffusion 3.5
   vendor: Stability AI
@@ -162,7 +162,7 @@
   license: Community License
   modality: image
   last_reviewed: 2026-06-12
-  blurb: The widely supported image generation line with the largest ecosystem of community fine-tunes and tooling. Free for individuals and small organizations under Stability's community license.
+  blurb: A widely supported image generation line with a large ecosystem of community fine-tunes and tooling. Free for individuals and small organizations under Stability's community license.
 
 - name: Qwen-Image
   vendor: Alibaba
@@ -180,7 +180,7 @@
   license: Apache 2.0
   modality: video
   last_reviewed: 2026-06-12
-  blurb: Open-weight video family regarded as the photorealism leader, especially for human subjects. Top quality wants a 24 gigabyte graphics card.
+  blurb: Open-weight video family focused on photorealism, especially for human subjects. Top quality wants a 24 gigabyte graphics card.
 
 - name: HunyuanVideo
   vendor: Tencent
@@ -188,7 +188,7 @@
   license: Community License
   modality: video
   last_reviewed: 2026-06-12
-  blurb: Tencent's open-weight video model, strongest at natural motion and physics such as fluids, cloth, and object interactions.
+  blurb: Tencent's open-weight video model, designed for natural motion and physics such as fluids, cloth, and object interactions.
 
 # License verified 2026-07-15 from the LTX-2 model card tag
 # (ltx-2-community-license-agreement).
@@ -244,7 +244,7 @@
   url: https://huggingface.co/google/medgemma-1.5-4b-it
   license: Health AI Developer Foundations
   last_reviewed: 2026-07-15
-  blurb: Google's open medical variants of Gemma, trained for medical text and image comprehension across radiology, pathology, dermatology, and medical records. Downloading requires accepting Google's Health AI Developer Foundations terms, which permit research and commercial use.
+  blurb: Google's open medical variants of Gemma, trained for medical text and image comprehension across radiology, pathology, dermatology, and medical records. Downloading requires accepting Google's Health AI Developer Foundations terms, which permit research and commercial use. Google presents it as a starting point for developers, and its model card says outputs are not intended to directly inform clinical diagnosis or treatment without validation.
 
 # Auto-verified 2026-07-21: license apache-2.0 from the Hugging Face card tag; repository chosen from search results against the news evidence.
 # Updated 2026-09-22 (content watch issue #51, owner approved) to Ternary
@@ -266,7 +266,7 @@
   url: https://huggingface.co/thinkingmachines/Inkling
   license: Apache 2.0
   last_reviewed: 2026-07-21
-  blurb: Inkling is Thinking Machines Lab's first open-weights model, a Mixture-of-Experts transformer with 975B total parameters (41B active) and up to a 1M token context window, released under the Apache 2.0 license.
+  blurb: Thinking Machines Lab's first open-weight model, a mixture-of-experts design with 975 billion total parameters (41 billion active per token) and a context window of up to 1 million tokens, under Apache 2.0. Data-center hardware only.
 
 # Verified 2026-07-28 (content-watch issue #28, owner approved): the HF
 # card tag is "other" with license_name mit; there is no LICENSE file in

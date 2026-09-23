@@ -9,10 +9,13 @@
 # authoring time (2026-06-11); entries without one render as text cards.
 # kind + source build the card's meta line.
 
+# Paid, verified 2026-09-22 from grow.google/ai-essentials: US$49 a month
+# in the US and Canada after a 7-day free trial, through Coursera. The page
+# promises "free unless noted", so the kind line carries the note.
 - title: Google AI Essentials
   section: getting_started
   source: Google
-  kind: self-paced course
+  kind: self-paced course (paid subscription after a 7-day free trial)
   url: https://grow.google/ai-essentials/
   thumbnail: https://www.gstatic.com/marketing-cms/assets/images/21/31/12172c2d442f9c678f910c1e0f08/christian-aie-1376x1376.webp=s1440-fcrop64=1,000041ddffffbe53-rw
   blurb: A short course on using AI tools productively and responsibly at work. No technical background required.
@@ -42,7 +45,7 @@
   blurb: A concise statement of principles, useful when drafting course policies and AI statements.
 
 - title: DeepLearning.AI short courses
-  section: teaching
+  section: technical
   source: DeepLearning.AI
   kind: hands-on courses
   url: https://www.deeplearning.ai/short-courses/
@@ -72,9 +75,9 @@
 - title: Intro to Large Language Models
   section: students
   source: Andrej Karpathy
-  kind: video, 1 hr
+  kind: video, 1 hr (2023)
   url: https://www.youtube.com/watch?v=zjkBMFhNj_g
-  blurb: A one-hour lecture explaining how large language models actually work, aimed at a general audience. The single best hour of video on the subject.
+  blurb: A one-hour lecture on how large language models work, aimed at a general audience. Recorded in late 2023, so it predates current reasoning models, but the fundamentals hold.
 
 - title: "3Blue1Brown: Neural networks series"
   section: technical
@@ -82,7 +85,7 @@
   kind: video series
   url: https://www.3blue1brown.com/lessons/neural-networks
   thumbnail: https://www.3blue1brown.com/share.jpg
-  blurb: Visually outstanding explanations of neural networks, gradient descent, and transformers. The most accessible serious treatment available.
+  blurb: Animated explanations of neural networks, gradient descent, and transformers, rigorous but accessible without heavy math.
 
 - title: Artificial Intelligence and Academic Medicine
   section: shelf

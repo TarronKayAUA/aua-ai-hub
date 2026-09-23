@@ -11,7 +11,7 @@ This playbook covers the tasks of the application year where artificial intellig
 It deliberately stops short of application strategy. Which programs to apply to, how many, how to signal, what your statement should be about, and how your own record should be presented are questions for the **Education Enhancement Department (EED) clinical advising team**, who know you and know this school's outcomes. Nothing here should be read as replacing their advice, and where the two differ, follow theirs. Application dates move every cycle, so this page links the [Electronic Residency Application Service (ERAS) timeline](https://students-residents.aamc.org/applying-residencies-eras/eras-timeline-applicants) rather than restating it.
 
 !!! tip "The short version"
-    The AAMC permits AI for brainstorming, proofreading, and editing. ECFMG advises against letting it write your statement. Nobody runs AI detection on applications, but the one program-director survey published so far treated any chatbot use as unethical, so the private standard you are judged against may be stricter than the published rule. Your EED clinical advisor owns strategy; this page covers the tools.
+    The Association of American Medical Colleges (AAMC) permits AI for brainstorming, proofreading, and editing. The Educational Commission for Foreign Medical Graduates (ECFMG) advises against letting it write your statement. ERAS does not run AI detection on applications, but in the one published survey of program directors, a majority regarded any chatbot use in a personal statement as unethical, so the private standard you are judged against may be stricter than the published rule. Your EED clinical advisor owns strategy; this page covers the tools.
 
 ## What the rules actually say
 
@@ -76,7 +76,7 @@ Do what you already do on rotations: abstract first. An age band, a presentation
 
 The AAMC addresses writers of a letter of recommendation (LOR) directly and permissively: generative AI "has the potential to support your letter-writing process, including crafting initial drafts of the LOR and editing its content and tone. Regardless of how you use genAI, you remain the author of the letter and are responsible for its content, accuracy, and the assessment it conveys."
 
-Two cautions specific to letters. A letter drafted from a thin prompt reads generic, and a generic letter is worse for the student than a short specific one. And a student's record is an educational record: the detail you paste in to make a draft better is exactly the detail that must not go into a public tool.
+Two cautions specific to letters. A letter drafted from a thin prompt reads generic, and a generic letter is worse for the student than a short specific one. And a student's record is an education record: the detail you paste in to make a draft better is exactly the detail that must not go into a public tool.
 
 ## Before you rely on any of it
 

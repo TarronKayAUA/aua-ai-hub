@@ -4,14 +4,16 @@ last_reviewed: 2026-09-01
 
 # Image Generation Benchmarks
 
-Text-to-image models are judged differently from language models, because there is no answer key for a picture. The field's standard is the **arena**: thousands of people see two images generated from the same prompt, without knowing which model made which, and vote for the better one. Votes become Elo-style ratings, the same math used to rank chess players.
+Text-to-image artificial intelligence (AI) models are judged differently from language models, because there is no answer key for a picture. The field's standard is the **arena**: thousands of people see two images generated from the same prompt, without knowing which model made which, and vote for the better one. Votes become Elo-style ratings, the same math used to rank chess players.
 
-That measures human preference at scale, which is most of what matters for generated images. The caveat is that preference rewards what looks good, not what is accurate, so look past the overall rank for:
+That measures human preference at scale, which is useful for general illustration. The caveat is that preference rewards what looks good, not what is accurate, so look past the overall rank for:
 
 - **Prompt adherence:** whether the image contains what was asked for, in the arrangement asked for.
-- **Text rendering:** legible, correctly spelled labels, which most models still get wrong.
-- **Anatomy:** counts and spatial relations, the two things generators handle worst.
+- **Text rendering:** legible, correctly spelled labels, still a common failure.
+- **Anatomy:** counts and spatial relations (fingers, joints, teeth, ribs), the two things generators handle worst.
 - **Style range:** whether a model can produce a clean schematic as well as a photograph.
+
+A model can win on beauty and lose on every one of those.
 
 <figure class="figure">
 <svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How an arena ranks models: one prompt produces two images from hidden models, a person votes for the better one, and thousands of blind votes become Elo-style ratings">
@@ -40,12 +42,10 @@ That measures human preference at scale, which is most of what matters for gener
 <text x="580" y="114" text-anchor="middle" font-size="9" fill="#ffffff">ratings, the math</text>
 <text x="580" y="129" text-anchor="middle" font-size="9" fill="#ffffff">that ranks chess players</text>
 <text x="330" y="182" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">blind at the vote, honest in aggregate: it measures preference at scale</text>
-<text x="330" y="200" text-anchor="middle" font-size="9" fill="#c62828">the caveat: preference rewards what looks good, which is not always what is accurate</text>
+<text x="330" y="200" text-anchor="middle" font-size="9" fill="var(--aua-alert)">the caveat: preference rewards what looks good, which is not always what is accurate</text>
 </svg>
 <figcaption>The arena mechanism behind every leaderboard on this page and the video page.</figcaption>
 </figure>
-
-When you read an image arena, look past the overall rank to the things that separate models in practice: adherence (did the image contain what the prompt asked for, in the right relationships), text rendering (legible labels and signs remain hard), anatomy (hands, joints, dentition), and style range. A model can win on beauty and lose on every one of those.
 
 ## The leaderboards worth knowing
 
@@ -67,11 +67,11 @@ When you read an image arena, look past the overall rank to the things that sepa
 
     [Visit Image Models](https://artificialanalysis.ai/image/models)
 
-- :material-account-group:{ .lg .middle } __LMArena: Text-to-Image__
+- :material-account-group:{ .lg .middle } __Arena: Text-to-Image__
 
     ---
 
-    The arena that popularized blind-vote ranking, applied to image generation, run by the LMArena team.
+    The arena that popularized blind-vote ranking, applied to image generation, run by the Arena team (formerly LMArena).
 
     [Visit the leaderboard](https://arena.ai/leaderboard/text-to-image)
 
@@ -81,15 +81,15 @@ When you read an image arena, look past the overall rank to the things that sepa
 
 No public leaderboard ranks models on generating *accurate* medical imagery, and the peer-reviewed evidence says the gap between pretty and correct is wide:
 
-- A 2025 study in the Journal of Pediatric Ophthalmology and Strabismus had general text-to-image models depict common pediatric eye pathologies and scored them against human medical illustration: the generated images rated poorly overall and worse on pathological accuracy specifically ([DOI](https://doi.org/10.3928/01913913-20250724-03)).
-- A clinical perspective in Cureus reaches the same balance point for practice: generated imagery may eventually enrich patient communication and teaching, but inaccuracy and bias demand that it supplement, never substitute for, verified clinical material ([DOI](https://doi.org/10.7759/cureus.68313)).
-- The technical literature on medical image synthesis and translation is advancing quickly, with its own evaluation metrics distinct from preference arenas; a 2025 review in Medical Image Analysis maps that landscape ([DOI](https://doi.org/10.1016/j.media.2025.103605)).
+- A 2025 study in the Journal of Pediatric Ophthalmology and Strabismus had general text-to-image models depict common pediatric eye pathologies and scored them against human medical illustration: the generated images rated poorly overall and worse on pathological accuracy specifically ([Jong et al.](https://doi.org/10.3928/01913913-20250724-03)).
+- A clinical perspective in Cureus draws the practical conclusion: generated imagery may eventually enrich patient communication and teaching, but inaccuracy and bias mean it should supplement verified clinical material, never replace it ([Javan et al., 2024](https://doi.org/10.7759/cureus.68313)).
+- The technical literature on medical image synthesis and translation is advancing quickly, with its own evaluation metrics distinct from preference arenas; a 2025 review in Medical Image Analysis maps that landscape ([Chen et al., 2025](https://doi.org/10.1016/j.media.2025.103605)).
 - For teaching figures specifically, the [AI-Generated Images in Teaching](../playbooks/ai-images.md) playbook covers the anatomy evaluations, what to reach for instead, and when a flawed image is defensible in a session.
 
-The practical guidance for the American University of Antigua College of Medicine (AUACOM) follows directly: treat general-purpose image models as illustration tools, not anatomy references. A generated image used in teaching needs expert review for accuracy and labeling as AI-generated per the [AI Responsible Use Policy](../governance/policy.md).
+The practical guidance for the American University of Antigua College of Medicine (AUACOM) follows directly: treat general-purpose image models as illustration tools, not anatomy references. A generated image used in teaching needs review for accuracy by someone with the relevant expertise, and the [AI Responsible Use Policy](../governance/policy.md) requires you to verify AI-generated content and label it as AI-generated.
 
 !!! danger "Never crossed, whatever the tool"
     - Identifiable patient images never enter a generation tool; that is patient data in a public tool, regardless of creative intent.
     - Generated imagery has no place in diagnosis.
 
-For how these models work and how to run open ones yourself, see [Running Models Locally](../tools/local.md). For language model rankings, see [Language Model Benchmarks](../benchmarks.md); for video generation, the [Video Generation Benchmarks](video.md).
+To run open image models yourself, see [Running Models Locally](../tools/local.md#beyond-chat-images-video-and-voice). Image generation tools are listed under [Image Generation](../tools/index.md#image-generation) in the tools directory. For language model rankings, see [Language Model Benchmarks](../benchmarks.md); for video generation, the [Video Generation Benchmarks](video.md).

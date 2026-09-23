@@ -2,7 +2,7 @@
 last_reviewed: 2026-09-01
 ---
 
-# Running AI Models Locally
+# Running Models Locally
 
 <span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">A working local model by the end</span>
 
@@ -42,24 +42,24 @@ Every assistant in the [tools directory](index.md) runs in a vendor's cloud: wha
 
 ## What you need
 
-Memory is the main constraint. A model has to fit in your computer's memory (RAM), or better, in the video memory of a graphics card. Most local models are used in quantized form, meaning compressed versions that trade a small amount of quality for a much smaller size. Rough expectations:
+Memory is the main constraint. A model has to fit in your computer's memory (RAM), or better, in the video memory of a graphics card (a graphics processing unit, or GPU). Most local models are used in quantized form, meaning compressed versions that trade a small amount of quality for a much smaller size. Rough expectations:
 
 - **A typical laptop (8 GB of memory)** runs small models, around 4 billion parameters and under. Fine for experimenting, summaries, and simple drafting.
 - **16 GB of memory** comfortably runs mid-size models; OpenAI's gpt-oss-20b, for example, is designed to run in 16 GB.
-- **32 GB or a recent gaming graphics card** opens up the 20 to 30 billion parameter class, where local models start feeling genuinely useful.
+- **32 GB of memory, or a graphics card with 16 to 24 GB of video memory,** opens up the 20 to 30 billion parameter class, where local models start feeling genuinely useful. Mixture-of-experts models such as gpt-oss-20b fit in less; [Hardware for Local AI](hardware.md) explains why.
 - Apple silicon Macs share memory between the processor and graphics, which makes them popular for local models; the same memory math applies.
 
 For the full picture (what tokens per second feels like, why video memory beats system memory, quantization trade-offs, mixture-of-experts models, and an interactive estimator for your own machine), see [Hardware for Local AI](hardware.md).
 
 ## The simple path: a local chat assistant
 
-1. **Install a runner.** [LM Studio](https://lmstudio.ai) is the simplest start: a desktop application where you browse models, click download, and chat, no command line involved. [Ollama](https://ollama.com) is the command-line equivalent, and pairs with [Open WebUI](https://openwebui.com) if you want a browser chat interface on top. All three are free for local use and listed in the [directory](index.md).
+1. **Install a runner.** [LM Studio](https://lmstudio.ai) is the simplest start: a desktop application where you browse models, click download, and chat, no command line involved. [Ollama](https://ollama.com) works from the command line and also has its own desktop chat app, and it pairs with [Open WebUI](https://openwebui.com) if you want a browser chat interface on top. All three are free for local use and listed in the [directory](index.md).
 2. **Pick a small model first.** Start with something in the 4 billion parameter class (a small Gemma or Qwen variant), confirm it runs smoothly, then work upward to the largest model your memory allows. The [open-weights section](index.md#open-weights-models) lists the major families, the [Benchmarks page](../benchmarks.md) tracks how they currently rank, and both runners show curated, ready-to-download versions of all of them.
 3. **Calibrate expectations.** Replies stream more slowly than cloud assistants, knowledge cutoffs are real, and there is no web search unless you add one. Treat outputs with the same verification habits as any other model, per the [misconceptions page](../basics/misconceptions.md).
 
 ## Beyond chat: images, video, and voice
 
-Text is the simple case. Open-weights models also exist for image generation, video generation, speech-to-text, and text-to-speech, and a different tool dominates that world: [ComfyUI](https://www.comfy.org), a free, open-source application where you assemble model pipelines visually by connecting nodes on a canvas. It is the standard way to run the Stable Diffusion family and newer open image and video models locally. The learning curve is steeper than a chat runner, and image and video models generally want more video memory than text models, but the community templates make the first steps manageable.
+Text is the simple case. Open-weights models also exist for image generation, video generation, speech-to-text, and text-to-speech, and a different tool is standard there: [ComfyUI](https://www.comfy.org), a free, open-source application where you assemble model pipelines visually by connecting nodes on a canvas. It is the standard way to run the Stable Diffusion family and newer open image and video models locally. The learning curve is steeper than a chat runner, and image and video models generally want more video memory than text models, but the community templates make the first steps manageable.
 
 For voice, [Whisper](https://github.com/openai/whisper) (already in the directory) transcribes speech to text entirely on your machine, and open text-to-speech models are improving quickly.
 
@@ -71,7 +71,7 @@ Be clear-eyed about what this trades away. The moment your model runs on rented 
 
 ## Watch: setting it up
 
-Verified walkthroughs for the tools on this page. Links reviewed September 2026; check a video's date against the tool's current version.
+Verified walkthroughs for two of the tools on this page. Links reviewed September 2026; check a video's date against the tool's current version.
 
 <!-- render:guide-videos:local -->
 

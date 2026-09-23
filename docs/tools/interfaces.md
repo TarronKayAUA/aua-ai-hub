@@ -4,27 +4,27 @@ last_reviewed: 2026-09-01
 
 # Chat, Work, or Code: Choosing Your AI Interface
 
-<span class="meta-chip">Stage 3: for operators</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">The Equipping section is for people setting up an agent</span>
+<span class="meta-chip">Stage 3: working with agents</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">The Equipping section is for people setting up an agent</span>
 
-The same model behaves very differently depending on the room you put it in. A web chat, a working session, and a code agent can all run the identical frontier model, but the interface decides what the model can actually do, how much of your material it can see, and what the work costs. This page explains the three kinds of interface, what a tool call is, why letting a model run tools on your machine is substantially cheaper for heavy work, and how to equip a computer so an agent can do real work on it.
+The same model behaves very differently depending on the room you put it in. A web chat, a working session, and a code agent can all run the identical frontier model, but the interface decides what the model can actually do, how much of your material it can see, and what the work costs. This page explains the three kinds of artificial intelligence (AI) interface, what a tool call is, why letting a model run tools on your machine is substantially cheaper for heavy work, and how to equip a computer so an agent can do real work on it.
 
 !!! note "This page is not about running models locally"
     Everything here uses cloud models; what runs locally is the *tools* they call (file readers, document converters, compilers). Running the models themselves on your own hardware is a different topic with its own trade-offs: see [Running Models Locally](local.md).
 
 ## Web chat, working session, or code agent
 
-**Web chat** (chatgpt.com, claude.ai) is a conversation. You paste material in, the model generates text out. It is the right tool for questions, drafting, and thinking out loud, and the wrong tool the moment the work involves files, revisions at scale, or verification.
+**Web chat** (chatgpt.com, claude.ai) is a conversation. You paste or upload material, and the model mostly replies with text. It is the right tool for questions, drafting, and thinking out loud, and the wrong tool the moment the work involves files, revisions at scale, or verification.
 
-**Working sessions** are the middle tier: [Claude Cowork](https://claude.com/product/cowork) and [ChatGPT Work](https://learn.chatgpt.com/docs/app) take a task rather than a message, plan it, execute it over minutes, and hand back finished artifacts: documents, spreadsheets, slide decks. Anthropic's framing is exact: "Where Chat is a conversation, Cowork is a working session." Cowork runs in an isolated environment on Anthropic's servers with your files uploaded to it; ChatGPT Work on the desktop can additionally use local files and desktop applications with your permission (on web and mobile it cannot reach your computer's files).
+**Working sessions** are the middle tier: [Claude Cowork](https://claude.com/product/cowork) and [ChatGPT Work](https://openai.com/chatgpt-work/) take a task rather than a message, plan it, execute it over minutes, and hand back finished artifacts: documents, spreadsheets, slide decks. Anthropic's framing is exact: "Where Chat is a conversation, Cowork is a working session." In the Claude desktop app, Cowork works in folders you choose on your computer, and a task started from web or mobile keeps running in Anthropic's cloud; ChatGPT Work on the desktop can likewise use local files and desktop applications with your permission (on web and mobile it cannot reach your computer's files).
 
-**Code agents** are the deepest tier: [Claude Code](https://code.claude.com/docs/en/overview) (terminal, IDE extensions, desktop app, or web) and [Codex mode](https://learn.chatgpt.com/docs/app) in the ChatGPT desktop app. These work directly in a folder you open for them: reading files, editing them in place, and running commands, with every consequential action gated by a permission system. Despite the name, code agents are not only for code: anything that lives in files (a course folder, a manuscript, a data export) is their territory.
+**Code agents** are the deepest tier: [Claude Code](https://code.claude.com/docs/en/overview) (the terminal, extensions for code editors, a desktop app, or the web) and [Codex mode](https://openai.com/codex/) in the ChatGPT desktop app. These work directly in a folder you open for them: reading files, editing them in place, and running commands, with every consequential action gated by a permission system. Despite the name, code agents are not only for code: anything that lives in files (a course folder, a manuscript, a data export) is their territory.
 
 | | Web chat | Working session | Code agent |
 | --- | --- | --- | --- |
 | You provide | Pasted text, uploads | A task and files or folder access | A folder on your machine |
-| It produces | Text in the chat | Finished documents, sheets, decks | Edited files, run commands, verified results |
+| It produces | Text in the chat, and files when file creation is on | Finished documents, sheets, decks | Edited files, run commands, results it has checked |
 | Sees your files | Only what you paste or upload | Uploaded or permitted files | The folder you opened, on demand |
-| Runs tools | No | Yes, mostly in the vendor's cloud | Yes, on your machine |
+| Runs tools | Some, in the vendor's cloud (web search, and file creation where it is switched on) | Yes, on your computer or in the vendor's cloud | Yes, on your machine |
 | Effort control | Limited | Model and effort selection on paid plans | Full effort dial |
 | Best for | Questions, drafts, exploration | Deliverables from your materials | Heavy, multi-step, verifiable work |
 
@@ -70,7 +70,7 @@ The practical rule: the heavier and more file-bound the task, the further right 
 
 ## Dialing effort
 
-Both vendors now expose how hard the model thinks as a setting, and it is the most direct cost and quality lever you have. Claude Code offers effort levels low, medium, high, xhigh, and max, plus a fast mode for quick turnarounds; high is the default on most models, but Claude Opus 5.5 starts at medium. The GPT-5.6 family exposes effort from none up to a new max setting on paid plans. Both ecosystems also added orchestration above a single agent: ChatGPT's ultra mode splits a task across parallel subagents, and Claude Code's ultracode setting has the model orchestrate multi-agent workflows.
+Both vendors now expose how hard the model thinks as a setting, and it is the most direct cost and quality lever you have. Claude Code offers effort levels low, medium, high, xhigh, and max, plus a fast mode for quick turnarounds; high is the default on most models, but Claude Opus 5.5 starts at medium. The GPT-5.6 family exposes a range of effort settings up to max on paid plans. Both ecosystems also added orchestration above a single agent: ChatGPT's Ultra mode splits a task across parallel subagents, and Claude Code's ultracode setting has the model orchestrate multi-agent workflows.
 
 The heuristic: default effort for routine work; drop effort (or use fast mode) for mechanical batch tasks where the steps are obvious; raise it only for the genuinely hard steps: architecture decisions, subtle debugging, analysis where a wrong answer is expensive. Effort applies per task, so one session can dial down for the cleanup and up for the hard part. Paying maximum reasoning for routine file renames is the agent-era version of leaving the lights on.
 
@@ -78,7 +78,11 @@ The heuristic: default effort for routine work; drop effort (or use fast mode) f
 
 Model names go stale faster than anything else on this page; treat these as a snapshot, check the [Benchmarks section](../benchmarks.md) for standings, and expect the interfaces to outlive the models in them.
 
-- **Anthropic:** Claude Code and Cowork run the Claude family. Claude Opus 5.5, released September 22, 2026, is Anthropic's recommended starting point for most work and Claude Code's default model on paid plans; Anthropic reports it matches Claude Fable 5.1 on most work at a lower price. Fable 5.1, released September 1, 2026, remains Anthropic's model for demanding reasoning and long-running agent work, with standings left to the [Benchmarks section](../benchmarks.md). Fable is available on every paid plan but never the default: you select it explicitly (in Claude Code with `/model`), Max plans include it for up to half of weekly usage, and Pro plans pay for it with usage credits. Claude Sonnet 5 is the faster, lower-cost tier, and Anthropic says Sonnet 5.5 and Haiku 5.5 will follow in the coming weeks. When Opus 5.5 or Fable 5.1 flags a request as biology or cybersecurity work, Claude Code re-runs it on an older Claude model and notes the switch in the transcript; researchers working with biomedical material should expect to see this.
+- **Anthropic:** Claude Code and Cowork run the Claude family.
+    - **Claude Opus 5.5** (released September 22, 2026) is Anthropic's recommended starting point for most work and Claude Code's default model on paid plans; Anthropic reports it matches Claude Fable 5.1 on most work at a lower price.
+    - **Claude Fable 5.1** (released September 1, 2026) remains Anthropic's model for demanding reasoning and long-running agent work. It is available on every paid plan but never the default: you select it explicitly (in Claude Code with `/model`); Max plans include it for up to half of weekly usage, and on Pro plans it draws on usage credits.
+    - **Claude Sonnet 5** is the faster, lower-cost tier; Anthropic says Sonnet 5.5 and Haiku 5.5 will follow in the coming weeks.
+    - When Opus 5.5 or Fable 5.1 flags a request as biology or cybersecurity work, Claude Code re-runs it on an older Claude model and notes the switch in the transcript; researchers working with biomedical material should expect to see this.
 - **OpenAI:** the ChatGPT app runs the GPT-5.6 family, three tiers under one generation: Sol (flagship), Terra (the everyday mid-tier), Luna (fastest and cheapest). Free and Go plans get Terra; Plus, Pro, Business, and Enterprise plans choose the tier and set the effort level.
 
 ## Equipping the machine
@@ -93,13 +97,15 @@ This starter set covers most academic document work, and each item is something 
     | LibreOffice | Convert Word, Excel, and PowerPoint files to PDF; open legacy formats; render documents so the agent can visually verify its own edits | `winget install TheDocumentFoundation.LibreOffice` | `brew install --cask libreoffice` |
     | Poppler | Read and render PDF pages, extract text | `winget install oschwartz10612.Poppler` | `brew install poppler` |
     | Pandoc | Convert between document formats (Markdown, Word, HTML) | `winget install JohnMacFarlane.Pandoc` | `brew install pandoc` |
-    | Python | Data work, scripting, document surgery | `winget install Python.Python.3.13` | ships with tools agents install |
+    | Python | Data work, scripting, document surgery | `winget install Python.Python.3.13` | `brew install python` |
     | Node.js | Generate Word and PowerPoint files programmatically; web tooling | `winget install OpenJS.NodeJS.LTS` | `brew install node` |
     | Tesseract (optional) | Read scanned documents (optical character recognition) | `winget install UB-Mannheim.TesseractOCR` | `brew install tesseract` |
     | ImageMagick (optional) | Convert and resize images in bulk | `winget install ImageMagick.ImageMagick` | `brew install imagemagick` |
 
-All commands verified July 2026 (winget ships with Windows 11; [Homebrew](https://brew.sh) is the Mac equivalent). After installing, restart the terminal or app so the new tools are visible. On university-managed machines, software installation may require information technology involvement; the toolkit works identically on personal machines.
+All commands verified July 2026 (winget ships with Windows 11; [Homebrew](https://brew.sh) is the Mac equivalent). After installing, restart the terminal or app so the new tools are visible. On university-managed machines, installing software may need help from Information Technology (IT); on a personal machine you can install the toolkit yourself.
 
 ## The data rules apply in every interface
 
-The interface changes what a model can do, never what you may give it: the [AI Responsible Use Policy](../governance/policy.md)'s data rules apply identically in chat, sessions, and agents, and an agent with file access makes them easier to violate by accident, so open folders deliberately. The permission systems are real but bounded: consequential actions prompt for approval, and the rules are enforced by the interface software rather than by the model's judgment. Grant access to the folder the task needs, not your whole disk. For the fuller risk picture (consequential actions, prompt injection, and the guardrails for each), see the [AI Agents guide](agents.md), and for what these agents are and who makes them, the same page has the field guide.
+The interface changes what a model can do, never what you may give it: the [AI Responsible Use Policy](../governance/policy.md)'s data rules apply identically in chat, sessions, and agents, and an agent with file access makes them easier to violate by accident, so open folders deliberately. The permission systems are real but bounded: consequential actions prompt for approval, and the rules are enforced by the interface software rather than by the model's judgment. Grant access to the folder the task needs, not your whole disk. The [AI Agents guide](agents.md) covers the fuller risk picture (consequential actions and prompt injection) and profiles each agent and its maker. When you are ready to try one, [Your First Agent Session](first-session.md) walks you through twenty minutes on a folder of copies.
+
+**Next:** [Your First Agent Session](first-session.md).

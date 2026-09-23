@@ -50,7 +50,7 @@ rs12124819  1           776546     AG
 
 Six hundred thousand rows or so. Completely unmanageable for a person scrolling, and utterly trivial for a targeted lookup, which is the entire reason a project like this is possible at all for someone who is not a geneticist.
 
-I built a panel of around 250 variants and ran it in two directions. Backward from traits I already knew I had, looking for the genetics underneath them. And forward from the genotype, for things that would never announce themselves in a mirror. Of the sixty-one variants that made the final report, fifty-five were recoverable from my chip. The other six simply were not on it, and are reported as absent rather than quietly guessed at.
+I built a panel of around 250 variants and ran it in two directions. Backward from traits I already knew I had, looking for the genetics underneath them. And forward from the genotype, for things that would never announce themselves in a mirror. Of the sixty-one variants that made the final report, fifty-five were recoverable from my chip (the genotyping array the testing service used, which reads a fixed set of positions rather than the whole genome). The other six simply were not on it, and are reported as absent rather than quietly guessed at.
 
 ## The rules I wrote before I was allowed to look
 
@@ -65,7 +65,7 @@ This is the part I would keep if I could keep only one, and every rule was fixed
 | A | Deterministic or guideline-grade. True of this body. | Mendelian genotypes, pharmacogenomics with clinical guidelines |
 | B | Robust and material. Replicated across ancestries, effect large enough to notice. | Alcohol metabolism, lactase persistence |
 | C | Real but individually near-meaningless. Effect sizes stated in embarrassing plainness. | Most cognition and personality single variants |
-| D | Folklore, labelled as such. | The "warrior gene" and its relatives |
+| D | Folklore, labeled as such. | The "warrior gene" and its relatives |
 
 Tier C is the one doing the work, and it is the tier most consumer genetics quietly omits. A finding can be entirely real, replicated, statistically unimpeachable, and still tell you absolutely nothing useful about yourself. Giving that its own category, instead of letting it sit next to Tier A looking equally important, is most of the discipline right there.
 
@@ -81,13 +81,13 @@ That refusal was settled before the analysis began, not negotiated in the moment
 
 Years ago I uploaded this same data to third-party interpretation sites, stripping the identifying headers off first, feeling rather clever about it.
 
-That instinct was right and it could not possibly have worked. Genotype data *is* the identifier. There is no header you can remove that de-identifies half a million of your own variants, because the variants are the thing that identifies you. I had performed a ritual, not a precaution.
+That instinct was right and it could not possibly have worked. Genotype data *is* the identifier. There is no header you can remove that de-identifies six hundred thousand of your own variants, because the variants are the thing that identifies you. I had performed a ritual, not a precaution.
 
 Parsing locally removes the problem rather than managing it. The file sits in a folder, specific lines get read, nothing is transmitted anywhere. If you are weighing whether to upload your own data somewhere, that is the whole lesson and you can stop reading here.
 
 ## What was actually in there
 
-The paper's own tag variant was not on my chip. The other archaic change on the same inherited segment was, and I carry one copy of it. Because the two travel together on the introgressed haplotype, one copy of the second is a strong indicator that I carry one copy of the whole thing. Confirming it properly would require sequencing rather than an array.
+The variant the paper used as its marker was not on my chip. The other archaic change on the same inherited segment was, and I carry one copy of it. Because the two travel together on the inherited Neanderthal segment (the introgressed haplotype), one copy of the second is a strong indicator that I carry one copy of the whole thing. Confirming it properly would require sequencing rather than an array.
 
 So: probably a carrier. Which felt, briefly, wonderful.
 
@@ -110,8 +110,8 @@ Then the arithmetic.
 <text x="80" y="72" font-size="10" fill="var(--md-default-fg-color--light)">what I actually carry</text>
 <rect x="60" y="96" width="53" height="18" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5" stroke-dasharray="3,2"/>
 <text x="122" y="110" font-size="10" fill="var(--md-default-fg-color--light)">two copies: 570 g</text>
-<path d="M60,150 L60,158 L560,158 L560,150" fill="none" stroke="#c62828" stroke-width="1.5"/>
-<text x="310" y="172" text-anchor="middle" font-size="10.5" fill="#c62828">the difference from population average this was invoked to explain: several kilograms</text>
+<path d="M60,150 L60,158 L560,158 L560,150" fill="none" stroke="var(--aua-alert)" stroke-width="1.5"/>
+<text x="310" y="172" text-anchor="middle" font-size="10.5" fill="var(--aua-alert)">the difference from population average this was invoked to explain: several kilograms</text>
 </svg>
 <figcaption>285 grams per allele copy, against a difference measured in kilograms. Drawn to scale, which is the entire point.</figcaption>
 </figure>

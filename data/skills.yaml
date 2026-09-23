@@ -38,32 +38,32 @@
 - name: Word documents
   provenance: builtin
   what: Creates and edits Word documents, including tracked changes, comments, and find and replace across a long file.
-  surfaces: claude.ai and Cowork
-  setup: Nothing
+  surfaces: claude.ai, Cowork, and Claude Code
+  setup: Nothing, once file creation is on
   url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
   last_reviewed: 2026-08-19
 
 - name: PowerPoint decks
   provenance: builtin
   what: Builds slide decks, and reads existing ones, including pulling out speaker notes and comments from a deck you already have.
-  surfaces: claude.ai and Cowork
-  setup: Nothing
+  surfaces: claude.ai, Cowork, and Claude Code
+  setup: Nothing, once file creation is on
   url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
   last_reviewed: 2026-08-19
 
 - name: Excel spreadsheets
   provenance: builtin
   what: Creates spreadsheets with formulas and charts, and cleans up messy exports where headers are in the wrong place or rows are malformed.
-  surfaces: claude.ai and Cowork
-  setup: Nothing
+  surfaces: claude.ai, Cowork, and Claude Code
+  setup: Nothing, once file creation is on
   url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
   last_reviewed: 2026-08-19
 
 - name: PDF documents
   provenance: builtin
   what: Produces formatted PDFs, and also fills PDF forms, merges or splits files, and runs text recognition on a scanned document so it becomes searchable.
-  surfaces: claude.ai and Cowork
-  setup: Nothing
+  surfaces: claude.ai, Cowork, and Claude Code
+  setup: Nothing, once file creation is on
   url: https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview
   last_reviewed: 2026-08-19
 

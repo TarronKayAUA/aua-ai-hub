@@ -4,11 +4,11 @@ last_reviewed: 2026-09-01
 
 # Playbook: Reviewing the Literature
 
-<span class="meta-chip">For faculty and graduate student researchers</span> <span class="meta-note">From question to appraised evidence</span>
+<span class="meta-chip">For faculty and graduate student researchers</span><span class="meta-chip">About 9 minutes</span> <span class="meta-note">From question to appraised evidence</span>
 
 ## The task
 
-Artificial intelligence (AI) has changed literature work more than any other research task: tools now find, screen, and summarize papers faster than any manual process. What has not changed is the standard your review will be judged by, and the failure that sinks manuscripts fastest, citations that do not check out, is a signature AI failure. This playbook walks the workflow that captures the speed without inheriting the risk. The [AI for Research guide](../tools/research.md) describes the tools themselves; this page is the discipline for using them in sequence.
+Artificial intelligence (AI) has changed literature work as much as any research task: tools now find, screen, and summarize papers faster than any manual process. What has not changed is the standard your review will be judged by, and the failure that sinks manuscripts fastest, citations that do not check out, is a signature AI failure. This playbook walks the workflow that captures the speed without inheriting the risk. The [AI for Research guide](../tools/research.md) describes the tools themselves; this page is the discipline for using them in sequence.
 
 ## Where AI helps, and where it hurts
 
@@ -47,15 +47,15 @@ Artificial intelligence (AI) has changed literature work more than any other res
 <rect x="20" y="106" width="116" height="48" rx="7" fill="none" stroke="#2e7d32" stroke-width="2"/>
 <text x="78" y="126" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">7 verify every</text>
 <text x="78" y="141" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">citation at source</text>
-<text x="330" y="182" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">AI accelerates six of the seven steps; the appraisal step is the one that makes it your review</text>
-<text x="330" y="200" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">outlined boxes: AI-assisted, you steer · filled box: entirely yours</text>
+<text x="330" y="182" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">AI accelerates five of the seven steps; appraisal and citation checking stay yours</text>
+<text x="330" y="200" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">outlined boxes: AI-assisted, you steer · filled and green boxes: entirely yours</text>
 </svg>
 <figcaption>Speed where speed is safe; judgment where judgment is the point.</figcaption>
 </figure>
 
 ## Gather first
 
-- Your research question, framework-vetted. If it is still an idea, the [Research question coach](../prompts/index.md) prompt converts it into a PICO (population, intervention, comparison, outcome) structure, or its PICOT and SPIDER variants, with a FINER (feasible, interesting, novel, ethical, relevant) screen, and hands you the novelty search to run.
+- Your research question, framework-vetted. If it is still an idea, the [Research question coach](../prompts/index.md#research-question-coach) prompt converts it into a PICO (population, intervention, comparison, outcome) structure, or its PICOT (PICO plus time frame) and SPIDER (sample, phenomenon of interest, design, evaluation, research type) variants, with a FINER (feasible, interesting, novel, ethical, relevant) screen, and hands you the novelty search to run.
 - Your inclusion and exclusion criteria, written as numbered lists before any tool sees a single abstract.
 - Your review's ambition, named honestly: an orientation for an introduction section, a scoping review, or a full systematic review. A systematic review needs a registered protocol and [Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)](https://www.prisma-statement.org/) documentation from the first search onward, not retrofitted at the end.
 - Library access: [Scopus with AI](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home) through your AUA credentials.
@@ -67,7 +67,7 @@ Artificial intelligence (AI) has changed literature work more than any other res
 1. **Orient with Scopus AI.** Ask your question plainly and read the cited orientation summary, opening the citations rather than trusting the synthesis. You are mapping the conversation your question joins: the key authors, the recent reviews, the terms the field actually uses.
 2. **Run the real search.** Move from AI conversation to explicit database queries in Scopus and PubMed using the vocabulary step 1 surfaced. Save the exact query strings and dates; every serious review reports them. For systematic work, this is the step to involve a librarian.
 3. **Grow the map from seeds.** Feed your strongest papers to ResearchRabbit or use Scopus citation chasing to find what your keyword queries missed: the papers your seeds cite, and the papers that cite your seeds.
-4. **Screen at scale, conservatively.** The [Literature screening assistant](../prompts/index.md) prompt applies your frozen criteria to titles and abstracts with an audit trail, defaulting to "unclear" whenever the abstract cannot support a decision. Borderline calls stay yours, and screening decisions are aids, never verdicts.
+4. **Screen at scale, conservatively.** The [Literature screening assistant](../prompts/index.md#literature-screening-assistant) prompt applies your frozen criteria to titles and abstracts with an audit trail, defaulting to "unclear" whenever the abstract cannot support a decision. Borderline calls stay yours, and screening decisions are aids, never verdicts.
 5. **Appraise by hand.** This step does not delegate. Read the methods sections of everything that survives screening and apply a structured instrument: the reporting checklist for each study's design as a completeness lens, and in medical education research, a rigor instrument such as the Medical Education Research Study Quality Instrument (MERSQI). AI can fetch and summarize; it cannot be accountable for your judgment that a study is worth building on.
 6. **Synthesize from your own set.** Load the appraised papers, your papers, not the open web, into [Gemini Notebook](../tools/gemini-notebook.md) or a Claude Project and draft the synthesis grounded in that set, with every claim traceable to a source you have read.
 7. **Verify every citation at the source.** Before any reference enters your manuscript: the paper exists, the authors and year are right, and it says what your sentence claims. No exceptions, including references you are certain about.
@@ -76,7 +76,7 @@ Artificial intelligence (AI) has changed literature work more than any other res
 
 - AI-generated summaries are not citable sources; cite the papers.
 - A reference list that is only partially verified is not a reference list; it is a list of leads (the [Research and Scholarship module](../pathway/research.md) covers why this failure is treated as misconduct when it reaches print).
-- Manuscripts you receive for peer review, and other people's unpublished work, never enter any AI tool.
+- Manuscripts you receive for peer review, and other people's unpublished work, never enter any AI tool: journal and funder confidentiality rules for reviewers generally forbid it.
 - Disclose AI assistance per your target venue's instructions; the International Committee of Medical Journal Editors (ICMJE) recommendations are the baseline: writing assistance in the acknowledgments, AI used in data collection or analysis in the methods, and responsibility for all of it stays with the authors.
 
 ## Before you rely on it
