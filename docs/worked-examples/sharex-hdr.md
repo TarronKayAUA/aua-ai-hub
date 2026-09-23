@@ -22,7 +22,7 @@ The first commit in my fork contains no code at all. It is a document, and its o
 
 I did not write that document either, of course. But I asked for it, and I read it, and I would not have let the work start without it.
 
-It pins the exact commit of the official project the work began from, with its date and its subject line, so that any later problem could be traced to a known starting point rather than argued about. It records that the other existing fork was examined as a read-only reference, and precisely how much of it: twelve commits, sixty-seven changed files, five and a half thousand inserted lines. It records a build of the completely untouched official code, before anything was modified, down to the toolchain version and the ninety-eight seconds it took, so that if my changes broke the build I could not blame the ground I was standing on.
+It pins the exact commit of the official project the work began from, with its date and its subject line, so that any later problem could be traced to a known starting point rather than argued about. It records that the older of the two existing forks was examined as a read-only reference, and precisely how much of it: twelve commits, sixty-seven changed files, five and a half thousand inserted lines. (I had already tried the other one, which had not worked for me.) It records a build of the completely untouched official code, before anything was modified, down to the toolchain version and the ninety-eight seconds it took, so that if my changes broke the build I could not blame the ground I was standing on.
 
 And then it lists the things the project was not allowed to do:
 

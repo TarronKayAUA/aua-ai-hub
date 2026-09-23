@@ -238,9 +238,9 @@ Twice, an audit built to catch the model's mistakes ended up convicting my own c
 
 A recent example small enough to follow completely.
 
-The read-aloud players on this site originally used a free voice model that runs on a laptop. Replacing it with a better commercial voice took a day, and the entire decision turned on one measurement: the pages that rarely change come to about 42,000 characters in total, and the news pages consume that much every five days.
+The read-aloud players on this site originally used a free voice model that runs on a laptop. Replacing it with a better commercial voice took a day, and the decision started from one measurement: the pages that rarely change come to about 42,000 characters in total, and the news pages consume that much every five days.
 
-So the paid voice reads the static pages for a couple of dollars a year, and the free one still reads the news, where the same voice would have cost several hundred dollars a month to narrate summaries that are replaced the following morning.
+So the paid voice reads the static pages for a couple of dollars a year. The news would add at most a couple of dollars a month, so price is not what keeps it on the free voice. The news is narrated on GitHub's servers every time it refreshes, and the paid voice's key is deliberately never stored there, which is not a rule worth bending for summaries that are replaced the following morning.
 
 The best open-weights alternative was disqualified on paperwork rather than quality. Its permissive license covers the inference code and not the model weights, which are restricted to non-commercial use, and two further candidates failed for closely related reasons. On a site run by a university, an unresolved licensing chain is not worth a modest quality gain.
 

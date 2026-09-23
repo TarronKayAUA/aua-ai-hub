@@ -19,7 +19,7 @@ So the question assembled itself in about four seconds, and so did the mistake.
 Here is the trap, and it is worth naming before any results, because naming it afterwards would be too late to be honest.
 
 <figure class="figure">
-<svg viewBox="0 0 660 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart comparing the frequency of the archaic growth hormone receptor variant, about 24 percent in South Asian populations against about 0.5 percent in European populations">
+<svg viewBox="0 0 660 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart comparing how common the archaic growth hormone receptor variant is, as a share of copies of the gene: up to 24 percent in South Asian populations (20 percent across the region) against about 0.5 percent in European populations">
 <text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">why the paper made the news</text>
 <text x="150" y="46" text-anchor="end" font-size="11" fill="var(--md-typeset-color)">South Asian populations</text>
 <rect x="160" y="34" width="384" height="18" rx="3" fill="var(--md-primary-fg-color)"/>
@@ -29,7 +29,7 @@ Here is the trap, and it is worth naming before any results, because naming it a
 <text x="178" y="82" font-size="11" fill="var(--md-typeset-color)">about 0.5%</text>
 <text x="330" y="112" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">a large difference in how common the variant is, which says nothing yet about what it does to any one person</text>
 </svg>
-<figcaption>Frequency gaps are what make a variant newsworthy. They are not what make it meaningful for a person.</figcaption>
+<figcaption>Frequency gaps are what make a variant newsworthy. They are not what make it meaningful for a person. The figures are shares of copies of the gene, not of people: 20 percent across South Asia and 24 percent in the paper's Pakistani sample.</figcaption>
 </figure>
 
 A genome-wide association study establishes that a statistical relationship exists across a population. It does not, and cannot, establish that the relationship explains anything about the particular human being reading the headline. Those are different claims that happen to sound identical when you are the human being in question and the finding flatters you.
@@ -56,7 +56,7 @@ I built a panel of around 250 variants and ran it in two directions. Backward fr
 
 This is the part I would keep if I could keep only one, and every rule was fixed before a single lookup ran.
 
-**The deflating fact went first.** Before searching for anything, I established the finding that argues against the whole enterprise: archaic ancestry is *depleted* for the heritability of body composition traits, not enriched. Two independent analyses agree. Putting that on the table first meant any positive result had to survive a prior pointing firmly the other way. It is remarkably hard to do this afterwards, and remarkably easy to skip.
+**The deflating fact went first.** Before searching for anything, I established the finding that argues against the whole enterprise: archaic ancestry is *depleted* for the heritability of body composition traits, not enriched. Two independent analyses agree ([McArthur et al., 2021](https://doi.org/10.1038/s41467-021-24582-y); [Wei et al., 2023](https://doi.org/10.7554/eLife.80757)). Putting that on the table first meant any positive result had to survive a prior pointing firmly the other way. It is remarkably hard to do this afterwards, and remarkably easy to skip.
 
 **Every claim got a grade.** Statistical significance is necessary and nowhere near sufficient, so each line in the report carried one of four tiers:
 
@@ -69,9 +69,9 @@ This is the part I would keep if I could keep only one, and every rule was fixed
 
 Tier C is the one doing the work, and it is the tier most consumer genetics quietly omits. A finding can be entirely real, replicated, statistically unimpeachable, and still tell you absolutely nothing useful about yourself. Giving that its own category, instead of letting it sit next to Tier A looking equally important, is most of the discipline right there.
 
-**Unconfirmed stays unconfirmed.** Rare pathogenic-looking calls in consumer array data are wrong roughly forty percent of the time, because the probes misbehave precisely where variants are rare. So the standing rule was that any alarming rare result gets flagged as a probable artifact until clinically retested, and never reported as a finding. If you take one thing from this article into your own life, take that one.
+**Unconfirmed stays unconfirmed.** Rare pathogenic-looking calls in consumer array data are wrong roughly forty percent of the time ([Tandy-Connor et al., 2018](https://doi.org/10.1038/gim.2018.38)), because the probes misbehave precisely where variants are rare ([Weedon et al., 2021](https://doi.org/10.1136/bmj.n214)). So the standing rule was that any alarming rare result gets flagged as a probable artifact until clinically retested, and never reported as a finding. If you take one thing from this article into your own life, take that one.
 
-**And some things were refused outright.** I wanted to look at cognitive and behavioral traits, because of course I did. Those live in thousands of tiny-effect variants and can only be read through a polygenic score, and published scores are trained overwhelmingly on European-ancestry cohorts with well-documented miscalibration when applied to a South Asian genome. The answer I got, which I kept because it was better than the question:
+**And some things were refused outright.** I wanted to look at cognitive and behavioral traits, because of course I did. Those live in thousands of tiny-effect variants and can only be read through a polygenic score, and published scores are trained overwhelmingly on European-ancestry cohorts ([Martin et al., 2019](https://doi.org/10.1038/s41588-019-0379-x)) with well-documented miscalibration when applied to a South Asian genome ([Martin et al., 2017](https://doi.org/10.1016/j.ajhg.2017.03.004); [Privé et al., 2022](https://doi.org/10.1016/j.ajhg.2021.11.008)). The answer I got, which I kept because it was better than the question:
 
 > A number I could technically compute for you would be pseudo-quantitative garbage, and those websites you used years ago handed people exactly that. I won't.
 
@@ -116,11 +116,11 @@ Then the arithmetic.
 <figcaption>285 grams per allele copy, against a difference measured in kilograms. Drawn to scale, which is the entire point.</figcaption>
 </figure>
 
-Two hundred and eighty-five grams. Per copy. That is the effect, drawn from over 1.1 million people, and it is a real and replicated finding.
+Two hundred and eighty-five grams. Per copy. That is the effect on body weight, almost all of it muscle, drawn from over 1.1 million people, and it is a real and replicated finding.
 
 It is also about the weight of a large apple, set against a physique that differs from the population mean by several kilograms. My one copy accounts for single-digit percent of the thing I was trying to explain. The variant is very probably in my genome and it is very nearly irrelevant to the question I asked it.
 
-The same pattern holds for the other trait it touches, incidentally. It associates with roughly three millimeters of additional height per copy. The paleoanthropologist John Hawks made exactly this point in his commentary on the paper: three millimeters is not much for one person, and folk reasoning about archaic ancestry is a poor way to explain individual traits.
+The same pattern holds for the other trait it touches, incidentally. It associates with roughly three millimeters of additional height per copy. The paleoanthropologist John Hawks made exactly this point in [his commentary on the paper](https://www.johnhawks.net/p/how-neanderthal-ancestry-affects): three millimeters is not much for one person, and folk reasoning about archaic ancestry is a poor way to explain individual traits.
 
 ## The correction, which was the most useful thing that happened
 
@@ -148,7 +148,7 @@ And I could only catch it because mandibular anatomy happens to be inside my tra
 
 The analysis returned around sixty results, including pharmacogenomic findings and disease risk loci. Those are my medical record and they stay private.
 
-The single variant discussed here is ancestry-informative rather than disease-predictive, roughly a quarter of South Asians carry it, and nothing adverse can be inferred from it by an insurer, an employer, or anybody else. A genome is also partly information about relatives who consented to none of this, which is the other reason the published slice is one common variant rather than a panel.
+The single variant discussed here is ancestry-informative rather than disease-predictive, it is common (about one in five copies of the gene in South Asia is the Neanderthal version), and nothing adverse can be inferred from it by an insurer, an employer, or anybody else. A genome is also partly information about relatives who consented to none of this, which is the other reason the published slice is one common variant rather than a panel.
 
 Deciding which single result was safe to publish took considerably longer than running the analysis did.
 

@@ -87,7 +87,7 @@ Which brings us back to the frame rate counter.
 
 Importing a games library hands you hours played, and hours played looks like an absolute gift to a system that needs to know what you enjoy. It was sold to me, cheerfully and correctly, as the solution to the cold start problem on the games shelf (a recommender knows nothing about your taste until you have rated things). It ran. It produced numbers. The numbers populated a profile and the profile fed recommendations and every part of that pipeline was working as specified.
 
-Then I looked at it. Genuinely excellent games sat at 3.0. My inferred favorites were, in order, the games I had left running longest, which is a category that includes several I actively resent. And underneath the comedy sat something worse: a game I had never launched scored 30, and 30 is also precisely what the system writes when a person deliberately says *I disliked this*. My backlog, two hundred games of good intentions, was being read as two hundred active dislikes.
+Then I looked at it. Genuinely excellent games sat at 3. My inferred favorites were, in order, the games I had left running longest, which is a category that includes several I actively resent. And underneath the comedy sat something worse: a game I had never launched scored 30, and 30 is also precisely what the system writes when a person deliberately says *I disliked this*. My backlog, two hundred games of good intentions, was being read as two hundred active dislikes.
 
 Playtime measures retention. It has almost nothing to do with affection. The two correlate just enough to look like a signal and not nearly enough to be one.
 
@@ -109,7 +109,7 @@ The most interesting defect in the system turned out to be me.
 
 Three completely independent instruments. Three near-zero counts. When your measuring equipment disagrees with reality this consistently, the equipment is usually broken. Here it was fine. It was faithfully recording a man who does not say no.
 
-I worked out why eventually, and it is not flattering. I avoid saying no because it feels like criticism, and some part of me does not want the model to hold it against me. I am aware of how that sounds. I said it out loud to the machine, in writing, in a transcript I have now published on my employer's website, which tells you something about the standard of self-examination this project demanded.
+I worked out why eventually, and it is not flattering. I avoid saying no because it feels like criticism, and some part of me does not want the model to hold it against me. I am aware of how that sounds. I said it out loud to the machine, in writing, and I am now repeating it on my employer's website, which tells you something about the standard of self-examination this project demanded.
 
 A recommender cannot learn anything from an unbroken run of approval. Worse, "I liked it" and "send me more of that" turn out to be entirely different sentences: documentary is my highest-rated genre and sits in the bottom third of what I actually reach for on a given evening.
 
@@ -123,7 +123,7 @@ That instrument cost forty minutes of relentless tapping, and I want to describe
 
 The first is that **the failure condition was written down before the data was collected.** If the tournament results simply mirrored the star ratings already on file, then the whole exercise had bought nothing, and the honest response was to throw the instrument away. The threshold was set in advance: a rank correlation above 0.70 against my existing ratings meant discard it.
 
-It came in between 0.49 and 0.68. Comfortably under the line it had been given permission to fail at, while predicting my actual appetite answers dramatically better than my ratings ever had. A test it was allowed to fail, and did not.
+It came in between 0.49 and 0.69 across the three shelves it was measured on (films and television together, games, and books). Comfortably under the line it had been given permission to fail at, while predicting my actual appetite answers dramatically better than my ratings ever had. A test it was allowed to fail, and did not.
 
 The second is that the same discipline caught the first version cheating.
 
@@ -142,7 +142,7 @@ And none of this was possible at first, because the application had cheerfully s
 
 An audit in September asked the rude question: is the personalization actually doing anything?
 
-The answer is that most of the machinery is worth about two cards in ten. The language model's general knowledge is doing most of the work. At one point a deliberately scrambled version of my taste profile predicted my ratings better than the real one, which is the sort of result that makes you put your coffee down.
+The answer is that most of the machinery changes about two of every ten recommendation cards. The language model's general knowledge is doing most of the work. At one point a deliberately scrambled version of my taste profile predicted my ratings better than the real one, which is the sort of result that makes you put your coffee down.
 
 Elsewhere, a feature that blended the model's ranking with the statistical one looked good in offline testing, was built out completely, was raced against the existing approach on live data with the win condition agreed beforehand, and lost. It ships today, switched off, with the losing machinery and the race rig left in place, because a negative result you keep is worth more than one you quietly delete.
 
@@ -174,4 +174,4 @@ Last, and least comfortably: the facts about myself that invalidate the data. Th
 
 The binding constraint on quality was never the code. It was knowing what question the data was actually answering, and that judgment stayed with me the whole way through, because it was the one thing the machine could not supply for itself.
 
-Every error in this piece shipped as working, tested, correct-looking software. Not one of them was a bug. And in every single case, the person who eventually noticed could not read a line of the code doing it.
+Every measurement error in this piece shipped as working, tested, correct-looking software. Not one of them was a bug. And in every single case, the person who eventually noticed could not read a line of the code doing it.
