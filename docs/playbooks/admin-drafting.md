@@ -16,34 +16,28 @@ AI is reliable at the shape of administrative writing: structure, register, cond
 
 The second hazard is voice. Administrative documents signed by you should sound like you; a department that starts producing identical AI-cadence memos has lost something real. The fix is cheap: draft from your own examples.
 
-<figure class="figure">
-<svg viewBox="0 0 660 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sensitivity gate before drafting: public content proceeds, internal content needs judgment and de-identification, confidential content never enters public AI tools">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Classify before anything is pasted</text>
-<rect x="20" y="88" width="140" height="50" rx="8" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<text x="90" y="109" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">the document</text>
-<text x="90" y="123" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">you need drafted</text>
-<defs><marker id="ad-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<line x1="162" y1="113" x2="208" y2="113" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ad-ar)"/>
-<rect x="212" y="30" width="180" height="50" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="302" y="51" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">public</text>
-<text x="302" y="67" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">announcements, published policy</text>
-<rect x="212" y="88" width="180" height="50" rx="8" fill="none" stroke="#e65100" stroke-width="2"/>
-<text x="302" y="109" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">internal</text>
-<text x="302" y="125" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">routine operations, planning</text>
-<rect x="212" y="146" width="180" height="50" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
-<text x="302" y="167" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">confidential</text>
-<text x="302" y="183" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">personnel, individuals, legal</text>
-<line x1="394" y1="55" x2="440" y2="55" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ad-ar)"/>
-<text x="530" y="52" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">draft with AI freely;</text>
-<text x="530" y="66" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">verify the record layer</text>
-<line x1="394" y1="113" x2="440" y2="113" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ad-ar)"/>
-<text x="530" y="110" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">would you email it outside AUA?</text>
-<text x="530" y="124" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">if so, de-identify individuals</text>
-<line x1="394" y1="171" x2="440" y2="171" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ad-ar)"/>
-<text x="530" y="168" text-anchor="middle" font-size="9.5" fill="var(--aua-alert)">no public AI tools,</text>
-<text x="530" y="182" text-anchor="middle" font-size="9.5" fill="var(--aua-alert)">in whole or summarized part</text>
-<text x="330" y="216" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">a mixed document is treated as its most sensitive part</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">Classify before anything is pasted</p>
+<div class="hf-flow">
+<div class="hf-box hf-box--plain">
+<p>The document you need drafted</p>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-col">
+<div class="hf-rows">
+<div class="hf-box hf-box--ok"><p class="hf-box-title">Public</p><p class="hf-box-sub">announcements, published policy</p></div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<p>Draft with AI freely; verify the record layer.</p>
+<div class="hf-box hf-box--warn"><p class="hf-box-title">Internal</p><p class="hf-box-sub">routine operations, planning</p></div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<p>Would you email it outside AUA? If so, de-identify individuals.</p>
+<div class="hf-box hf-box--stop"><p class="hf-box-title">Confidential</p><p class="hf-box-sub">personnel, individuals, legal</p></div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<p class="hf-box-alert">No public AI tools, in whole or summarized part.</p>
+</div>
+</div>
+</div>
+<p class="hf-note">A mixed document is treated as its most sensitive part.</p>
 <figcaption>The tier decides the tool before the tool sees a word.</figcaption>
 </figure>
 

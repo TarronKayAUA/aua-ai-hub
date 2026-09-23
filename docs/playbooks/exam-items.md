@@ -39,25 +39,30 @@ This is where assessment security and AI collide, so the lines are bright:
 - Item drafts derived from past exam performance data require that data to be de-identified first.
 - Per the [AI Responsible Use Policy](../governance/policy.md), the final items are your responsibility and your exam committee's, regardless of what drafted them.
 
-<figure class="figure">
-<svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline split by a bright line: AI may touch draft items, and never touches finalized secure items">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The bright line</text>
-<rect x="20" y="28" width="295" height="130" rx="8" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.3" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<text x="167" y="50" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">while drafting</text>
-<text x="167" y="66" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">AI is fine here</text>
-<text x="167" y="90" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">draft variants with AI</text>
-<text x="167" y="108" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">structural flaw vetting</text>
-<text x="167" y="126" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your own content vet</text>
-<rect x="345" y="28" width="295" height="130" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
-<text x="492" y="50" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">once finalized for a live exam</text>
-<text x="492" y="66" text-anchor="middle" font-size="9.5" fill="var(--aua-alert)">never enters a public AI tool again</text>
-<text x="492" y="90" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">no revision help</text>
-<text x="492" y="108" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">no explanation drafting</text>
-<text x="492" y="126" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">no difficulty estimation</text>
-<line x1="330" y1="24" x2="330" y2="162" stroke="var(--aua-alert)" stroke-width="3"/>
-<text x="330" y="176" text-anchor="middle" font-size="9.5" fill="var(--aua-alert)">finalized</text>
-<text x="330" y="192" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">answer keys and licensed bank content live on the secure side from day one</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">The bright line</p>
+<div class="hf-split">
+<div class="hf-box hf-box--plain">
+<p class="hf-box-title">While drafting</p>
+<p class="hf-box-sub">AI is fine here</p>
+<ul>
+<li>draft variants with AI</li>
+<li>structural flaw vetting</li>
+<li>your own content vet</li>
+</ul>
+</div>
+<div class="hf-split-line"><span>finalized</span></div>
+<div class="hf-box hf-box--stop">
+<p class="hf-box-title">Once finalized for a live exam</p>
+<p class="hf-box-alert">never enters a public AI tool again</p>
+<ul>
+<li>no revision help</li>
+<li>no explanation drafting</li>
+<li>no difficulty estimation</li>
+</ul>
+</div>
+</div>
+<p class="hf-note">Answer keys and licensed bank content live on the secure side from day one.</p>
 <figcaption>Drafting with AI is fine; a finalized item is secure material, and secure material never touches a public tool.</figcaption>
 </figure>
 

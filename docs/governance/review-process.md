@@ -9,30 +9,25 @@ The [tools directory](../tools/index.md) gives every entry a status describing t
 
 Consistent with the [AI Responsible Use Policy](policy.md), a Reviewed status is not a general endorsement. Where a review clears a tool, it clears it only *for specified categories of data and use*. A review record that names no sensitive data categories means the tool is cleared for non-sensitive use only; the policy's data rules apply at all times regardless of any tool's status.
 
-<figure class="figure">
-<svg viewBox="0 0 660 185" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Review flow: screening facts, six scored domains with privacy as the gate, then a directory status, with annual re-review">
-<defs><marker id="rp-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker><marker id="rp-red" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--aua-alert)"/></marker></defs>
-<text x="330" y="14" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">re-reviewed annually, or sooner on a material vendor change</text>
-<path d="M 555 38 L 555 24 L 105 24 L 105 36" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.5" marker-end="url(#rp-ar)"/>
-<rect x="20" y="40" width="170" height="75" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="105" y="62" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">screening facts</text>
-<text x="105" y="82" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">from the vendor's terms,</text>
-<text x="105" y="96" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">not marketing copy</text>
-<rect x="245" y="40" width="170" height="75" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="330" y="60" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">six scored domains</text>
-<rect x="257" y="72" width="146" height="32" rx="4" fill="var(--md-primary-fg-color)"/>
-<text x="330" y="85" text-anchor="middle" font-size="9" fill="#ffffff">data privacy and security</text>
-<text x="330" y="97" text-anchor="middle" font-size="9" fill="#ffffff">is the gate</text>
-<rect x="470" y="40" width="170" height="75" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="555" y="62" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">directory status</text>
-<text x="555" y="82" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Reviewed, Use with caution,</text>
-<text x="555" y="96" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">or Restricted</text>
-<line x1="192" y1="77" x2="243" y2="77" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rp-ar)"/>
-<line x1="417" y1="77" x2="468" y2="77" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#rp-ar)"/>
-<path d="M 330 115 L 330 138" fill="none" stroke="var(--aua-alert)" stroke-width="2" marker-end="url(#rp-red)"/>
-<text x="330" y="154" text-anchor="middle" font-size="9.5" fill="var(--aua-alert)">a privacy failure caps the outcome at Use with caution</text>
-<text x="330" y="168" text-anchor="middle" font-size="9.5" fill="var(--aua-alert)">and blocks clearance for any sensitive data category</text>
-</svg>
+<figure class="figure figure--html hf">
+<div class="hf-flow">
+<div class="hf-box">
+<p class="hf-box-title">Screening facts</p>
+<p class="hf-box-sub">from the vendor's terms, not marketing copy</p>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-box">
+<p class="hf-box-title">Six scored domains</p>
+<p class="hf-pill">Data privacy and security is the gate</p>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-box">
+<p class="hf-box-title">Directory status</p>
+<p class="hf-box-sub">Reviewed, Use with caution, or Restricted</p>
+</div>
+</div>
+<p class="hf-note hf-note--alert">A privacy failure caps the outcome at Use with caution and blocks clearance for any sensitive data category.</p>
+<p class="hf-return">Re-reviewed annually, or sooner on a material vendor change.</p>
 <figcaption>Privacy is a gate, not a score; and review outcomes expire into annual re-review.</figcaption>
 </figure>
 

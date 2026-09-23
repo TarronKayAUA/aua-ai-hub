@@ -25,45 +25,25 @@ The reports carry different rulers, so read yours against the right row:
 
 Most tables in INSIGHTS export to a spreadsheet.
 
-<figure class="figure">
-<svg viewBox="0 0 660 305" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schematic of the INSIGHTS exam results view: four tabs across the top, a total score gauge on the left which for the basic science comprehensive exam adds an estimated probability of passing Step 1, content areas on the right scored against a national comparison group and flagged lower, same, or higher, and a suggested areas of focus strip along the bottom">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The shape of an INSIGHTS exam-results view</text>
-<rect x="20" y="28" width="620" height="240" rx="10" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.5"/>
-<rect x="36" y="42" width="100" height="26" rx="6" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<text x="86" y="59" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">My Exams</text>
-<rect x="144" y="42" width="110" height="26" rx="6" fill="var(--md-primary-fg-color)"/>
-<text x="199" y="59" text-anchor="middle" font-size="9" font-weight="bold" fill="#ffffff">Exam Results</text>
-<rect x="262" y="42" width="120" height="26" rx="6" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<text x="322" y="59" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">Question Details</text>
-<rect x="390" y="42" width="140" height="26" rx="6" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<text x="460" y="59" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">Results Comparison</text>
-<path d="M 60 160 A 52 52 0 0 1 164 160" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="9" opacity="0.3"/>
-<path d="M 60 160 A 52 52 0 0 1 138 115" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="9"/>
-<text x="112" y="152" text-anchor="middle" font-size="13" font-weight="bold" fill="var(--md-typeset-color)">total score</text>
-<text x="112" y="180" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">equated percent correct (EPC)</text>
-<text x="112" y="196" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">the basic science comprehensive exam</text>
-<text x="112" y="208" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">adds a probability of passing Step 1</text>
-<text x="250" y="96" font-size="9" font-weight="bold" fill="var(--md-typeset-color)">content areas, your EPC vs a national comparison group</text>
-<text x="250" y="120" font-size="9" fill="var(--md-typeset-color)">Cardiovascular</text>
-<rect x="390" y="112" width="150" height="9" rx="4" fill="var(--md-default-fg-color--light)" opacity="0.25"/>
-<rect x="390" y="112" width="66" height="9" rx="4" fill="var(--md-primary-fg-color)"/>
-<text x="556" y="120" font-size="8.5" font-weight="bold" fill="var(--aua-alert)">Lower</text>
-<text x="250" y="146" font-size="9" fill="var(--md-typeset-color)">Renal &amp; Urinary</text>
-<rect x="390" y="138" width="150" height="9" rx="4" fill="var(--md-default-fg-color--light)" opacity="0.25"/>
-<rect x="390" y="138" width="102" height="9" rx="4" fill="var(--md-primary-fg-color)"/>
-<text x="556" y="146" font-size="8.5" fill="var(--md-default-fg-color--light)">Same</text>
-<text x="250" y="172" font-size="9" fill="var(--md-typeset-color)">Biostatistics &amp; Epidemiology</text>
-<rect x="390" y="164" width="150" height="9" rx="4" fill="var(--md-default-fg-color--light)" opacity="0.25"/>
-<rect x="390" y="164" width="58" height="9" rx="4" fill="var(--md-primary-fg-color)"/>
-<text x="556" y="172" font-size="8.5" font-weight="bold" fill="var(--aua-alert)">Lower</text>
-<text x="250" y="198" font-size="9" fill="var(--md-typeset-color)">Behavioral Sciences</text>
-<rect x="390" y="190" width="150" height="9" rx="4" fill="var(--md-default-fg-color--light)" opacity="0.25"/>
-<rect x="390" y="190" width="120" height="9" rx="4" fill="var(--md-primary-fg-color)"/>
-<text x="556" y="198" font-size="8.5" font-weight="bold" fill="#2e7d32">Higher</text>
-<rect x="36" y="222" width="588" height="32" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5" stroke-dasharray="4 3"/>
-<text x="330" y="242" text-anchor="middle" font-size="9.5" fill="var(--md-typeset-color)">suggested areas of focus: the dashboard lists up to six, split between systems and disciplines</text>
-<text x="330" y="292" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">an illustration of the layout, not a real report; NBME's own demo linked below shows the live version</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">The shape of an INSIGHTS exam-results view</p>
+<div class="hf-mock">
+<p class="hf-mock-tabs"><span>My Exams</span><span class="is-active">Exam Results</span><span>Question Details</span><span>Results Comparison</span></p>
+<div class="hf-mock-body">
+<p class="hf-gauge"><span aria-hidden="true"></span><strong>Total score</strong>equated percent correct (EPC); the basic science comprehensive exam adds a probability of passing Step 1</p>
+<div>
+<p class="hf-label">Content areas, your EPC vs a national comparison group</p>
+<div class="hf-bars">
+<p><span class="hf-bar-label">Cardiovascular</span><span class="hf-bar-track"><span class="hf-bar-fill" style="width: 35%"></span><span class="hf-bar-value hf-flag--low">Lower</span></span></p>
+<p><span class="hf-bar-label">Renal &amp; Urinary</span><span class="hf-bar-track"><span class="hf-bar-fill" style="width: 54%"></span><span class="hf-bar-value">Same</span></span></p>
+<p><span class="hf-bar-label">Biostatistics &amp; Epidemiology</span><span class="hf-bar-track"><span class="hf-bar-fill" style="width: 31%"></span><span class="hf-bar-value hf-flag--low">Lower</span></span></p>
+<p><span class="hf-bar-label">Behavioral Sciences</span><span class="hf-bar-track"><span class="hf-bar-fill" style="width: 64%"></span><span class="hf-bar-value hf-flag--high">Higher</span></span></p>
+</div>
+</div>
+</div>
+<p class="hf-mock-strip">Suggested areas of focus: the dashboard lists up to six, split between systems and disciplines.</p>
+</div>
+<p class="hf-note">An illustration of the layout, not a real report; NBME's own demo linked below shows the live version.</p>
 <figcaption>What to look for when you open it: the score is one number, but the comparison flags and areas of focus are where a plan starts.</figcaption>
 </figure>
 
@@ -90,36 +70,18 @@ Before you run any prompt, open your report and write down your own three takeaw
 
 ## The workflow
 
-<figure class="figure">
-<svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The improvement loop: your score report leads to your own written read, then through a de-identification gate to the planner prompt, then to your advisor, then to the next assessment, which produces the next report and closes the loop">
-<defs><marker id="sr-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The loop, closed at both ends</text>
-<rect x="20" y="42" width="140" height="54" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="90" y="64" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your score report</text>
-<text x="90" y="80" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">INSIGHTS or in-house</text>
-<line x1="162" y1="69" x2="188" y2="69" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#sr-ar)"/>
-<rect x="192" y="42" width="140" height="54" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="262" y="64" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your own read</text>
-<text x="262" y="80" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">three takeaways, written first</text>
-<line x1="334" y1="69" x2="360" y2="69" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#sr-ar)"/>
-<rect x="364" y="42" width="110" height="54" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
-<text x="419" y="64" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">de-identify</text>
-<text x="419" y="80" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">name, ID, exam codes out</text>
-<line x1="476" y1="69" x2="502" y2="69" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#sr-ar)"/>
-<rect x="506" y="42" width="134" height="54" rx="8" fill="var(--md-primary-fg-color)"/>
-<text x="573" y="64" text-anchor="middle" font-size="10" fill="#ffffff">planner prompt</text>
-<text x="573" y="80" text-anchor="middle" font-size="8.5" fill="#ffffff">an honest, interleaved plan</text>
-<line x1="573" y1="98" x2="573" y2="130" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#sr-ar)"/>
-<rect x="506" y="134" width="134" height="54" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
-<text x="573" y="156" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your advisor</text>
-<text x="573" y="172" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">the plan becomes the agenda</text>
-<line x1="504" y1="161" x2="422" y2="161" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#sr-ar)"/>
-<rect x="240" y="134" width="180" height="54" rx="8" fill="none" stroke="#2e7d32" stroke-width="2"/>
-<text x="330" y="156" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">next assessment</text>
-<text x="330" y="172" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">keep, shrink, or change the plan</text>
-<path d="M 238 161 L 90 161 L 90 100" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#sr-ar)"/>
-<text x="330" y="224" text-anchor="middle" font-size="10" font-style="italic" fill="var(--md-default-fg-color--light)">the plan is a hypothesis; the next assessment is the test</text>
-</svg>
+<figure class="figure figure--html hf">
+<p class="hf-title">The loop, closed at both ends</p>
+<ol class="hf-steps">
+<li class="hf-box"><p class="hf-box-title">Your score report</p><p class="hf-box-sub">INSIGHTS or in-house</p></li>
+<li class="hf-box"><p class="hf-box-title">Your own read</p><p class="hf-box-sub">three takeaways, written first</p></li>
+<li class="hf-box hf-box--stop"><p class="hf-box-title">De-identify</p><p class="hf-box-sub">name, ID, exam codes out</p></li>
+<li class="hf-box hf-box--filled"><p class="hf-box-title">Planner prompt</p><p class="hf-box-sub">an honest, interleaved plan</p></li>
+<li class="hf-box"><p class="hf-box-title">Your advisor</p><p class="hf-box-sub">the plan becomes the agenda</p></li>
+<li class="hf-box hf-box--ok"><p class="hf-box-title">Next assessment</p><p class="hf-box-sub">keep, shrink, or change the plan</p></li>
+</ol>
+<p class="hf-return">The next assessment produces the next report, and the loop starts again.</p>
+<p class="hf-note">The plan is a hypothesis; the next assessment is the test.</p>
 <figcaption>No step is optional: skip your own read and you stop learning to self-assess; skip the advisor and the plan never meets someone who knows you.</figcaption>
 </figure>
 
