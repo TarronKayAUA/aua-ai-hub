@@ -24,10 +24,10 @@ Models draft plausible vignette-based items quickly and are genuinely good at th
 
 ## The workflow
 
-1. **Draft.** Run the [Single best answer item writer](../prompts/index.md#mcq-generation) with one objective at a time. Generate two or three variants per objective; variety is cheap and your selection instinct is fast.
+1. **Draft.** Run the [Single best answer item writer](../prompts/index.md#mcq-generation) with one objective at a time. Generate two or three variants per objective; variety is cheap and your selection instinct is fast. For a team-based learning session, the [Team-based learning session builder](../prompts/index.md#team-based-learning-session-builder) drafts the readiness questions and application cases together, in AUA's format.
 2. **Vet structurally.** Feed each candidate through the [Item flaw checker](../prompts/index.md#mcq-vetting). Have it report flaws before proposing any rewrite, so you see the diagnosis, not just a polished surface.
 3. **Vet for content.** This step is entirely yours: clinical accuracy, currency of the underlying knowledge, blueprint fit, and difficulty for your cohort. The studies are blunt that this is where AI items fail when they fail.
-4. **Pilot like any item.** AI-drafted items earn no exemption from your normal exam review committee and post-exam item analysis. Flag their origin in your records so you can compare their performance statistics over time.
+4. **Pilot like any item.** AI-drafted items earn no exemption from your normal exam review committee and post-exam item analysis. Flag their origin in your records so you can compare their performance statistics over time. The [post-exam item analysis reader](../prompts/index.md#post-exam-item-analysis-reader) helps read those statistics without any item text or answer key leaving your hands.
 
 ## Guardrails for this task
 

@@ -48,7 +48,7 @@ The practical consequence has nothing to do with rules. A statement you did not 
 
 This is where AI earns its place in the application year, and it matters most for students who do not have a network of physicians to practice with. An assistant can run a mock interview that asks real follow-up questions, stays in role, and debriefs you afterward on what was vague, what was rehearsed-sounding, and what a program would probably probe.
 
-Ask for one question at a time, answer out loud before reading further, and have it push back rather than praise. Ask for the follow-up you would least like to be asked. Practicing the answer to "walk me through this gap in your record" ten times in private is worth more than any drafting the same tool could do for you.
+Ask for one question at a time, answer out loud before reading further, and have it push back rather than praise. Ask for the follow-up you would least like to be asked. Practicing the answer to "walk me through this gap in your record" ten times in private is worth more than any drafting the same tool could do for you. The [mock residency interview](../prompts/index.md#mock-residency-interview) prompt sets this up: it stays in role, asks one question at a time, and debriefs you from your own answers.
 
 ### Program research and keeping track
 
@@ -58,7 +58,7 @@ One hard rule: **verify every program fact against the program's own page.** Mod
 
 ### Your own draft, interrogated
 
-The useful role on a personal statement is critic, not author. Once you have written a draft, ask an assistant what is missing, where you told the reader something instead of showing it, which paragraph is doing the least work, and what a program director would want to ask you after reading it. Then rewrite it yourself.
+The useful role on a personal statement is critic, not author. Once you have written a draft, ask an assistant what is missing, where you told the reader something instead of showing it, which paragraph is doing the least work, and what a program director would want to ask you after reading it. Then rewrite it yourself. The [personal statement critic](../prompts/index.md#personal-statement-critic) asks those questions, quoting your draft, and never rewrites it for you.
 
 That order matters. A draft you wrote and had criticized reads like you. A draft the model wrote and you edited reads like the model, and it puts you inside ECFMG's advice against relying on AI to write it.
 

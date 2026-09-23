@@ -63,12 +63,13 @@ The full detail lives in [The Rules](pathway/rules.md) and the [AI Responsible U
 | Your task | Start here | Worth knowing |
 | --- | --- | --- |
 | Preparing or revising a lecture | [Preparing a Lecture](playbooks/lecture-prep.md) | Source gathering to slide outlines, with verification steps built in; [slide and poster tools](tools/index.md?task=slides) |
-| Writing and vetting exam questions | [Writing and Vetting Exam Questions](playbooks/exam-items.md) | Item drafting and quality checks without exposing secure content |
+| Writing and vetting exam questions | [Writing and Vetting Exam Questions](playbooks/exam-items.md) | Item drafting and quality checks without exposing secure content; the [item analysis reader](prompts/index.md#post-exam-item-analysis-reader) reads post-exam statistics with no item text or key |
+| Building a team-based learning (TBL) session | [Team-based learning session builder](prompts/index.md#team-based-learning-session-builder) | Individual and team readiness tests (iRAT and tRAT) from your pre-work, then two or three application cases |
 | Setting expectations for your course | [Your Syllabus AI Statement](playbooks/syllabus-statement.md) | Three template tiers; assignment-level rules are yours to set |
 | Research and literature work | [Reviewing the Literature](playbooks/literature-reviews.md) | [AI for Research](tools/research.md) by stage, and the [research tools](tools/index.md?task=research) at a glance; integrity and disclosure in [Module 5](pathway/research.md) |
-| Reusable prompts | [Prompt library](prompts/index.md) | Templates for lecture planning, exam items, research, and study support, each Draft or Reviewed |
+| Reusable prompts | [Prompt library](prompts/index.md) | Templates for lecture planning, exam items, team-based learning, feedback, research, and study support, each Draft or Reviewed |
 | Choosing a tool for anything else | [Tool directory](tools/index.md) | Pick a task at the top to see only its tools; a listing is not an endorsement; review on [request](governance/review-process.md) |
-| Feedback on student writing | [Feedback on Student Writing](playbooks/writing-feedback.md) | Rubric-grounded, records rules built in; grades stay human |
+| Feedback on student writing | [Feedback on Student Writing](playbooks/writing-feedback.md) | Rubric-grounded, records rules built in; grades stay human; the [rubric feedback drafter](prompts/index.md#rubric-feedback-drafter) runs the method |
 | Memos, minutes, and reports | [Administrative Drafting](playbooks/admin-drafting.md) | Every fact yours; the model does the arranging |
 | Advising students on exam performance | [Making Sense of Your Score Reports](playbooks/score-reports.md) | Honest plans from National Board of Medical Examiners (NBME) INSIGHTS data, with an advisor note |
 | Ending the re-explaining | [Standing Setups](tools/standing-setups.md) | A project per course; [Your First Agent Session](tools/first-session.md) for file-based work |

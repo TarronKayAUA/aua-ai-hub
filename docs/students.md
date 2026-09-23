@@ -104,12 +104,12 @@ Take the result to your advisor. After your next assessment, the [study plan pro
 Clinical rotations change the rules, because you are now inside a hospital's privacy perimeter as well as the university's.
 
 - Read [Clinical Contexts](pathway/clinical.md) before your first rotation. It shows exactly where the line sits between AI as a study aid and AI anywhere near real patients.
-- **Practicing differentials against an AI is legitimate and effective**, with one discipline: a real encounter gets stripped to a teaching abstraction first, meaning an age band, a presentation pattern, and nothing identifiable.
+- **Practicing differentials against an AI is legitimate and effective**, with one discipline: a real encounter gets stripped to a teaching abstraction first, meaning an age band, a presentation pattern, and nothing identifiable. The [clinical reasoning partner](prompts/index.md#clinical-reasoning-partner) runs practice cases a step at a time and holds that line.
 - Your clinical site has its own rules, and they may be stricter than ours. Follow the stricter one, and ask before using anything on site.
 
 ## The application year
 
-The [residency application playbook](playbooks/residency-application.md) covers what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) actually permit, the best use of AI in this year (interview rehearsal, especially if you do not have a network of physicians to practice with), how to use an assistant as a critic of your own draft rather than its author, and the privacy trap hiding inside patient stories in personal statements.
+The [residency application playbook](playbooks/residency-application.md) covers what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) actually permit, the best use of AI in this year (interview rehearsal, especially if you do not have a network of physicians to practice with), how to use an assistant as a critic of your own draft rather than its author, and the privacy trap hiding inside patient stories in personal statements. Two prompts support it: the [mock residency interview](prompts/index.md#mock-residency-interview) and the [personal statement critic](prompts/index.md#personal-statement-critic).
 
 For anything about strategy, meaning which programs, how many, how to signal, and how your own record should be presented, your Education Enhancement Department (EED) clinical advisor is the person to see. The playbook is about the tools, not the plan.
 

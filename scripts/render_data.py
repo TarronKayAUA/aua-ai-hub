@@ -50,7 +50,9 @@ PROMPT_CATEGORY_LABELS = {
     "mcq_vetting": "MCQ Review",
     "data_analysis": "Data Analysis",
     "content_generation": "Content Generation",
+    "feedback": "Feedback on Student Work",
     "study_strategy": "Study Strategy",
+    "residency": "Residency Applications",
 }
 
 # Display labels for the prompts.yaml audience field, which stores lowercase
@@ -71,7 +73,9 @@ PROMPT_CATEGORY_CHIPS = {
     "mcq_vetting": "Review MCQs",
     "data_analysis": "Analyze data",
     "content_generation": "Make teaching content",
+    "feedback": "Give feedback",
     "study_strategy": "Study",
+    "residency": "Residency",
 }
 
 
