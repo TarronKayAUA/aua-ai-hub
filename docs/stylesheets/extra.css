@@ -2411,3 +2411,311 @@
   opacity: 0.45;
   cursor: default;
 }
+
+/* === HTML figures, extended (the remaining 32 rebuilt, 2026-09-23) =======
+   More shapes for the .hf vocabulary above, still words in HTML and shapes
+   in CSS:
+     .hf-box--filled / --dashed    a solid brand box with white text; a
+                                   dashed box for optional or side notes
+     .hf-list                      a column of small labeled pills
+     .hf-segbar                    one bar split into labeled segments
+     .hf-bars                      a labeled horizontal bar chart
+     .hf-frame, .hf-chip           a container of chips (a window, a folder)
+     .hf-label, .hf-marker         a small label above a box; a dashed
+                                   marker line with its label
+   Phones stack everything that sits side by side. */
+.md-typeset .hf-box--filled {
+  border-color: var(--aua-figure-fill);
+  background: var(--aua-figure-fill);
+  color: #ffffff;
+}
+
+.md-typeset .hf-box--filled > .hf-box-sub,
+.md-typeset .hf-box--filled > .hf-box-foot {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.md-typeset .hf-box--dashed {
+  border: 1.5px dashed var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-label {
+  margin: 0.3rem 0 0.2rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-col > .hf-label:first-child {
+  margin-top: 0;
+}
+
+[dir] .md-typeset ul.hf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset ul.hf-list > li {
+  margin: 0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.3rem;
+  background: var(--md-default-fg-color--lightest);
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.md-typeset .hf-arrow--down {
+  align-self: center;
+}
+
+.md-typeset .hf-arrow--down::after {
+  content: "\2193";
+}
+
+.md-typeset .hf-col > .hf-banner {
+  margin-top: 0;
+}
+
+.md-typeset .hf-note--alert {
+  font-style: normal;
+  color: var(--aua-alert);
+}
+
+.md-typeset .hf-note-right {
+  margin: 0.4rem 0 0;
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+/* A bar split into segments; flex-grow sets the relative share. */
+.md-typeset .hf-segbar {
+  display: flex;
+  overflow: hidden;
+  border: 2px solid var(--aua-figure-line);
+  border-radius: 0.45rem;
+  font-size: 0.72rem;
+}
+
+.md-typeset .hf-segbar > span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 4.5rem;
+  padding: 0.55rem 0.4rem;
+  border-right: 1px solid var(--md-default-bg-color);
+  background: var(--md-default-fg-color--lightest);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.md-typeset .hf-segbar > span:last-child {
+  border-right: 0;
+}
+
+.md-typeset .hf-segbar small {
+  display: block;
+  font-size: 0.64rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-segbar > .hf-seg--key {
+  background: var(--aua-figure-fill);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* A labeled horizontal bar chart. Fill widths are set inline as a share
+   of 80% of the track, leaving room for the value after the longest bar. */
+.md-typeset .hf-bars {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.45rem 0.8rem;
+  align-items: center;
+  font-size: 0.74rem;
+}
+
+.md-typeset .hf-bars > p {
+  display: contents;
+}
+
+.md-typeset .hf-bar-label {
+  text-align: right;
+}
+
+.md-typeset .hf-bar-track {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.md-typeset .hf-bar-fill {
+  flex: none;
+  min-width: 3px;
+  height: 1.1rem;
+  border-radius: 0.15rem;
+  background: var(--aua-figure-fill);
+}
+
+.md-typeset .hf-bar-fill--muted {
+  background: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-bar-value {
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-bar-value strong {
+  color: var(--md-typeset-color);
+}
+
+/* A container of chips: the context window, a project, a folder. */
+.md-typeset .hf-frame {
+  padding: 0.6rem;
+  border: 2px solid var(--aua-figure-line);
+  border-radius: 0.5rem;
+}
+
+.md-typeset .hf-frame > .hf-frame-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.md-typeset .hf-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.md-typeset .hf-chip {
+  flex: 1 1 7rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 0.3rem;
+  background: var(--md-default-fg-color--lightest);
+  font-size: 0.72rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.md-typeset .hf-chip small {
+  display: block;
+  font-size: 0.64rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-chip--filled {
+  border-color: var(--aua-figure-fill);
+  background: var(--aua-figure-fill);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.md-typeset .hf-chip--filled small {
+  color: rgba(255, 255, 255, 0.88);
+  font-weight: 400;
+}
+
+.md-typeset .hf-chip--faded {
+  opacity: 0.55;
+  border-style: dashed;
+}
+
+/* Something that has left the frame, beside it. */
+.md-typeset .hf-outside {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.md-typeset .hf-outside > p {
+  margin: 0;
+  font-size: 0.66rem;
+  color: var(--md-default-fg-color--light);
+  text-align: center;
+}
+
+/* Decorative lines standing for a long, messy conversation. */
+.md-typeset .hf-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin: 0.5rem 0;
+}
+
+.md-typeset .hf-lines > span {
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  background: var(--md-default-fg-color--lighter);
+}
+
+.md-typeset .hf-lines > span:nth-child(2n) {
+  width: 85%;
+}
+
+.md-typeset .hf-lines > .is-struck {
+  background: linear-gradient(var(--aua-alert), var(--aua-alert)) center / 100% 2px no-repeat,
+    var(--md-default-fg-color--lighter);
+}
+
+.md-typeset .hf-pill {
+  margin: 0.45rem 0;
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.3rem;
+  background: var(--aua-figure-fill);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+/* A dashed marker under a box, with its label: "the knowledge cutoff". */
+.md-typeset .hf-marker {
+  margin: 0.2rem 0 0 1.2rem;
+  padding: 0.4rem 0 0 0.6rem;
+  border-left: 2px dashed var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .hf-segbar {
+    flex-direction: column;
+  }
+
+  .md-typeset .hf-segbar > span {
+    border-right: 0;
+    border-bottom: 1px solid var(--md-default-bg-color);
+  }
+
+  .md-typeset .hf-bars {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+
+  .md-typeset .hf-bar-label {
+    margin-top: 0.35rem;
+    text-align: left;
+  }
+
+  .md-typeset .hf-outside {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .hf-note-right {
+    text-align: left;
+  }
+}
+
+/* A chip sitting in a sentence (the context window's "oldest messages"). */
+.md-typeset .hf-outside .hf-chip {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+}

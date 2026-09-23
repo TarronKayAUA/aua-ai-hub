@@ -17,46 +17,39 @@ Most of this site is written and reviewed by people; the News, Videos, and Podca
 3. **Benchmarks.** The [Benchmarks page](benchmarks.md) carries a snapshot of the LiveBench leaderboard, rebuilt with each pipeline run from LiveBench's published data, with the calculation method described on that page.
 4. **Weekly digest.** Every Friday a second selection pass picks the most significant items of the week, news, videos, and podcasts, plus any updates made to the conference calendar, into a weekly digest. Each week's digest is preserved in the [News Archive](news/archive/index.md) and published to a [digest feed](digest.xml) that any feed reader can follow. The [This Week page](news/this-week.md) is separate: a rolling view of everything kept in the last seven days, refreshed with each run.
 
-<figure class="figure">
-<svg viewBox="0 0 660 245" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pipeline diagram: fixed public sources flow through the automated pipeline into the site's generated sections, with a Friday digest branch">
-<defs><marker id="ab-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="105" y="30" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-default-fg-color--light)">fixed public sources</text>
-<rect x="20" y="40" width="170" height="24" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="105" y="55" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">AI publications and blogs</text>
-<rect x="20" y="70" width="170" height="24" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="105" y="85" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">PubMed literature searches</text>
-<rect x="20" y="100" width="170" height="24" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="105" y="115" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">medical education journals</text>
-<rect x="20" y="130" width="170" height="24" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="105" y="145" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">YouTube and podcast rosters</text>
-<rect x="20" y="160" width="170" height="24" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="105" y="175" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">LiveBench leaderboard data</text>
-<path d="M 192 52 L 216 52 M 192 82 L 216 82 M 192 112 L 216 112 M 192 142 L 216 142 M 192 172 L 216 172 M 216 52 L 216 172" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<line x1="216" y1="112" x2="240" y2="112" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ab-ar)"/>
-<rect x="242" y="62" width="180" height="100" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
-<text x="332" y="84" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">automated pipeline</text>
-<text x="332" y="102" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">recent-window filter,</text>
-<text x="332" y="115" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">blocklist, de-duplicate,</text>
-<text x="332" y="128" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">a language model selects</text>
-<text x="332" y="141" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">and summarizes each item</text>
-<line x1="424" y1="112" x2="448" y2="112" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ab-ar)"/>
-<path d="M 452 55 L 452 175 M 452 55 L 468 55 M 452 85 L 468 85 M 452 115 L 468 115 M 452 145 L 468 145 M 452 175 L 468 175" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
-<text x="555" y="30" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-default-fg-color--light)">generated sections</text>
-<rect x="470" y="44" width="170" height="22" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="555" y="58" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">News</text>
-<rect x="470" y="74" width="170" height="22" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="555" y="88" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">Videos</text>
-<rect x="470" y="104" width="170" height="22" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="555" y="118" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">Podcasts</text>
-<rect x="470" y="134" width="170" height="22" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="555" y="148" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">This Week (rolling 7 days)</text>
-<rect x="470" y="164" width="170" height="22" rx="4" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.5"/>
-<text x="555" y="178" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">Benchmarks (LiveBench)</text>
-<line x1="332" y1="162" x2="332" y2="188" stroke="var(--md-primary-fg-color)" stroke-width="2" marker-end="url(#ab-ar)"/>
-<rect x="242" y="190" width="180" height="34" rx="6" fill="var(--md-primary-fg-color)"/>
-<text x="332" y="204" text-anchor="middle" font-size="9.5" fill="#ffffff">Fridays: weekly digest,</text>
-<text x="332" y="217" text-anchor="middle" font-size="9.5" fill="#ffffff">archived and published</text>
-</svg>
+<figure class="figure figure--html hf">
+<div class="hf-flow">
+<div class="hf-col">
+<p class="hf-label">Fixed public sources</p>
+<ul class="hf-list">
+<li>AI publications and blogs</li>
+<li>PubMed literature searches</li>
+<li>medical education journals</li>
+<li>YouTube and podcast rosters</li>
+<li>LiveBench leaderboard data</li>
+</ul>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-col">
+<div class="hf-box">
+<p class="hf-box-title">Automated pipeline</p>
+<p class="hf-box-sub">Recent-window filter, blocklist, de-duplicate; a language model selects and summarizes each item.</p>
+</div>
+<span class="hf-arrow hf-arrow--down" aria-hidden="true"></span>
+<p class="hf-banner">Fridays: weekly digest, archived and published</p>
+</div>
+<span class="hf-arrow" aria-hidden="true"></span>
+<div class="hf-col">
+<p class="hf-label">Generated sections</p>
+<ul class="hf-list">
+<li>News</li>
+<li>Videos</li>
+<li>Podcasts</li>
+<li>This Week (rolling 7 days)</li>
+<li>Benchmarks (LiveBench)</li>
+</ul>
+</div>
+</div>
 <figcaption>The pipeline writes only the generated sections; every hand-written page stays human-maintained.</figcaption>
 </figure>
 
