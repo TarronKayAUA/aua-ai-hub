@@ -267,12 +267,21 @@ narration:
     engine: kokoro
     model: kokoro-v1.0
     voice: am_michael
-  # Speechify's free tier is 50,000 characters a month, hard capped with no
-  # overage. A full re-read of every static page is 42,629, so a run that
-  # would exceed the remaining budget stops before spending any of it
-  # rather than failing part way and leaving two voices across the set.
+  # Guard, not a quota: a run that would exceed the remaining budget stops
+  # before spending any of it rather than failing part way and leaving two
+  # voices across the set. A full re-read of every static page is about
+  # 43,000 characters.
+  # Raised 2026-09-22 from 50,000, which assumed a hard-capped free tier.
+  # Checked that day: the account is on a paid plan (the audio endpoint
+  # reports a 60 requests per second limit; Speechify's API-limits docs put
+  # Free at 1), and speechify.ai/pricing lists 1.9M characters a month
+  # included on the smallest paid plan (Starter), then usage-billed per
+  # million. Free itself is now 500K. 1,000,000 keeps every run inside any
+  # paid plan's included characters, so the guard still means no overage.
+  # The API has no usage endpoint; month-to-date usage is on the console
+  # at platform.speechify.ai/usage.
   monthly_char_budget:
-    speechify: 50000
+    speechify: 1000000
 
 # Category order is meaningful: it sets the section order in the weekly
 # digest and mirrors the nav (medical education first, per owner preference).
