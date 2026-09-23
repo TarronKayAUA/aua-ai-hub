@@ -1,101 +1,6 @@
 {
  "items": [
   {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42500695?fc=20260609215449&ff=20260725100347&v=2.20.0",
-   "title_hash": "638cf92e6b1df5800e1785149f8da622",
-   "first_seen": "2026-07-25T14:03:47.530139+00:00",
-   "kept": false,
-   "reason": "no abstract or substantive content provided"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42500520?fc=20260609215449&ff=20260725100347&v=2.20.0",
-   "title_hash": "351900a21f39244af2c0fbb4b0f5dc73",
-   "first_seen": "2026-07-25T14:03:47.530139+00:00",
-   "kept": false,
-   "reason": "narrative review of ultrasound training methods without AI focus"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42500140?fc=20260609215449&ff=20260725100347&v=2.20.0",
-   "title_hash": "bef6b865074412face3b6681ee700412",
-   "first_seen": "2026-07-25T14:03:47.530139+00:00",
-   "kept": false,
-   "reason": "analysis of web search trends unrelated to artificial intelligence"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42500138?fc=20260609215449&ff=20260725100347&v=2.20.0",
-   "title_hash": "f79cd673a0bf2ca0b2e24fd5bf530623",
-   "first_seen": "2026-07-25T14:03:47.530139+00:00",
-   "kept": false,
-   "reason": "analysis of web search trends unrelated to artificial intelligence"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42499728?fc=20260609215449&ff=20260725100347&v=2.20.0",
-   "title_hash": "2d282a5034d1bfe13fa9b6a00e30eb83",
-   "first_seen": "2026-07-25T14:03:47.530139+00:00",
-   "kept": true,
-   "title": "Can artificial intelligence pass the test? Evaluating chatbot scores on pediatric gastroenterology board-style questions",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-25T10:00:00+00:00",
-   "summary": "Study evaluates large language model performance on pediatric gastroenterology board-style examination questions.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42499643?fc=20260609215449&ff=20260725100347&v=2.20.0",
-   "title_hash": "56fe766720c135eea13ef3750a06b997",
-   "first_seen": "2026-07-25T14:03:47.530139+00:00",
-   "kept": true,
-   "title": "Artificial Intelligence Performance Under Different Conditions in Answering China's Standardized Training Examination for Resident Physician in Radiology: A Comparative Analysis",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-25T10:00:00+00:00",
-   "summary": "Comparative analysis shows Gemini-2.0 achieved highest accuracy on China's radiology resident examination, though self-doubt prompting did not improve LLM performance.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v6axx3/google_comes_out_in_favor_of_openweight_models_it",
-   "title_hash": "0e2fafb2288a971cf98406f2447e9cd6",
-   "first_seen": "2026-07-25T17:17:41.722555+00:00",
-   "kept": false,
-   "reason": "forum post reporting on industry gossip without substantive analysis or primary source"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03016-3",
-   "title_hash": "fa806d4341329846c79f797a62729915",
-   "first_seen": "2026-07-25T17:17:41.722555+00:00",
-   "kept": true,
-   "title": "An interpretable artificial intelligence model for real-time leukemia screening via routine blood tests across multicenter cohorts",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-25T00:00:00+00:00",
-   "summary": "Multicenter study develops an interpretable AI model for leukemia screening using routine blood test results in real-time clinical settings.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=4fPLsmJNaMI",
-   "title_hash": "8d316088bdb0a35e6813808704e978de",
-   "first_seen": "2026-07-25T17:17:41.722555+00:00",
-   "kept": true,
-   "title": "Kimi K3 CRUSHED Fable",
-   "source": "Wes Roth",
-   "published": "2026-07-18T04:32:06+00:00",
-   "summary": "Comparison of Kimi K3 and Fable models covering recent developments in large language models.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i1.ytimg.com/vi/4fPLsmJNaMI/hqdefault.jpg",
-   "display_title": "Kimi K3 and Fable model comparison"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=OPuD-UeQGY8",
-   "title_hash": "22f05d5f44d78d6b5562fceaec13a2f8",
-   "first_seen": "2026-07-25T17:17:41.722555+00:00",
-   "kept": false,
-   "reason": "generic news roundup with boilerplate description and no substantive content summary"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/25/ruff",
    "title_hash": "f0f8a04b1000585d2a3bd803c1488d18",
    "first_seen": "2026-07-26T03:57:38.550431+00:00",
@@ -32567,6 +32472,196 @@
    "first_seen": "2026-09-23T13:40:24.292244+00:00",
    "kept": false,
    "reason": "promotional content from corporate channel with generic boilerplate summary"
+  },
+  {
+   "url": "https://arstechnica.com/gadgets/2026/09/youtube-promises-custom-feeds-and-a-lot-more-ai-later-this-year",
+   "title_hash": "8b9fcfd9f81bec0ce4ffc675e6099b00",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "vendor marketing from YouTube's channel"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e93854",
+   "title_hash": "cbe977d4b7b7157d5cdf07094f587157",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": true,
+   "title": "The Perceived Influence of AI on the Craftsmanship of Physicians: Qualitative Interview and Focus Group Study",
+   "source": "JMIR AI",
+   "published": "2026-09-23T19:30:12+00:00",
+   "summary": "Qualitative study examining how physicians perceive AI tools affecting their clinical judgment, craftsmanship, and professional identity in practice.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/999526/meta-muse-ai-agent-hands-on-shopping",
+   "title_hash": "7cb70df306ae41de3acbc192761cf187",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "product review and personal narrative without substantive AI development news"
+  },
+  {
+   "url": "https://huggingface.co/blog/nvidia/how-to-use-nvidia-warp-and-mjwarp",
+   "title_hash": "d3db3228ac9b154e046697c1919fe115",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "minor release notes and tooling announcement"
+  },
+  {
+   "url": "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills",
+   "title_hash": "ebac75858a49b079326e9fc592118141",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": true,
+   "title": "Data centers are black boxes, but California wants to change that",
+   "source": "The Verge AI",
+   "published": "2026-09-23T18:22:57+00:00",
+   "summary": "California legislation mandating transparency and reporting on data center impacts on electricity and water consumption amid growing AI infrastructure deployment.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_B.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr",
+   "title_hash": "31bb9366ae334916931a82f57d90ac94",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": true,
+   "title": "Anthropic’s biolab made a discovery it’s comparing to Crispr",
+   "source": "The Verge AI",
+   "published": "2026-09-23T18:00:00+00:00",
+   "summary": "Anthropic reports that Claude autonomously discovered a novel enzyme system comparable to CRISPR-like machinery from its newly launched wet lab.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB364_CLAUDE_2_C_96d15c-2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://arstechnica.com/gadgets/2026/09/owners-mourn-spoiled-food-after-firmware-update-bricks-samsung-smart-fridges",
+   "title_hash": "a0d28ffca8b18dfa463e869d9da2c0e7",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "off-topic consumer product incident"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/999443/bernie-sanders-ai-superintelligence-ban-act",
+   "title_hash": "e437fea52762ae54b8dc1f136a735fe1",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "political proposal with no substantive AI development or regulation content"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/this-fortnight-in-medicine-xxxiv",
+   "title_hash": "2c68449195c3970050c01f78a8a92781",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "general medicine podcast episode with no AI content"
+  },
+  {
+   "url": "https://www.theverge.com/tech/999140/made-on-youtube-creator-tools-ai-thumbnails-tests",
+   "title_hash": "1bcda79e0be31f1bd19bc01aed830c5d",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "vendor marketing from YouTube's channel"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wo6o0f/mods_can_we_do_something_about_half_the_forum",
+   "title_hash": "982d4d36daf03d4bb9000ccc7ba54c49",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "community meta-discussion and complaint thread"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42775526?fc=20260609215449&ff=20260923154133&v=2.20.1",
+   "title_hash": "395286a30d4d192e75931a32ee9d346d",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": true,
+   "title": "From Simulations to AI: Samir Grover on How Tech Can Enhance Medical Education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-23T10:00:00+00:00",
+   "summary": "Interview with medical educator on integrating simulation, virtual reality, and AI into gastroenterology training and broader medical education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42774317?fc=20260609215449&ff=20260923154133&v=2.20.1",
+   "title_hash": "b9658afbe1e0053643aa85f7fe8ce605",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": true,
+   "title": "On AI's role in training professionals in assisted reproductive technology",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-23T10:00:00+00:00",
+   "summary": "Framework for using AI to standardize and accelerate professional training in assisted reproductive technology, addressing gaps in clinical exposure and learning curves.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42774238?fc=20260609215449&ff=20260923154133&v=2.20.1",
+   "title_hash": "a1cf61f9885ed0f195cfb447d2962d8b",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": true,
+   "title": "AI-assisted vs. textbook-based vs. blended learning for acute abdomen diagnosis: a retrospective cohort study of emergency interns",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-23T10:00:00+00:00",
+   "summary": "Retrospective study comparing AI-assisted, textbook-only, and blended learning approaches for emergency medicine trainees' acute abdomen diagnosis accuracy.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03300-2",
+   "title_hash": "53276dcfe61111a79475f2372fe2ecf9",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": true,
+   "title": "Diabetes self-management in the digital health era: a concept analysis using natural language processing",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-23T00:00:00+00:00",
+   "summary": "Concept analysis using natural language processing to characterize diabetes self-management in the digital health context.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03299-6",
+   "title_hash": "31f539b96287ccacf968d828cac0cc38",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "clinical registry implementation without AI focus"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-025-04128-1",
+   "title_hash": "d47842275863ac0c8b43a8b7f4024111",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": true,
+   "title": "AI-based characterization of Alzheimer’s disease phenotypes from population-scale single-cell data",
+   "source": "Nature Medicine",
+   "published": "2026-09-23T00:00:00+00:00",
+   "summary": "Graph neural network analysis of single-cell brain data from 584 donors identifies Alzheimer's disease phenotypes and patterns linked to cognitive resilience.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=DdCEmlAydcw",
+   "title_hash": "7b5c25939552c98f325b7c97e7484878",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=96ogPwN9ykM",
+   "title_hash": "0f6c5f17a1211e4557f60db723371e76",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=FL6mI_Br-mc",
+   "title_hash": "dfc80254836c0690da8bd9b6ba5f76a2",
+   "first_seen": "2026-09-23T19:41:33.378174+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
   }
  ],
  "digests": [

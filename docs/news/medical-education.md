@@ -18,9 +18,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42775526?fc=20260609215449&amp;ff=20260923154133&amp;v=2.20.1">From Simulations to AI: Samir Grover on How Tech Can Enhance Medical Education</a>
+    <p class="news-card-summary">Interview with medical educator on integrating simulation, virtual reality, and AI into gastroenterology training and broader medical education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42774317?fc=20260609215449&amp;ff=20260923154133&amp;v=2.20.1">On AI&#x27;s role in training professionals in assisted reproductive technology</a>
+    <p class="news-card-summary">Framework for using AI to standardize and accelerate professional training in assisted reproductive technology, addressing gaps in clinical exposure and learning curves.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42774238?fc=20260609215449&amp;ff=20260923154133&amp;v=2.20.1">AI-assisted vs. textbook-based vs. blended learning for acute abdomen diagnosis: a retrospective cohort study of emergency interns</a>
+    <p class="news-card-summary">Retrospective study comparing AI-assisted, textbook-only, and blended learning approaches for emergency medicine trainees&#x27; acute abdomen diagnosis accuracy.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 22, 2026</span></div>
@@ -103,27 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 21, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e85442">Collaborative Simulation-Based Learning to Develop Competencies in Physical Therapy Students: Randomized Controlled Trial</a>
     <p class="news-card-summary">A randomized controlled trial examined whether collaborative simulation-based learning develops clinical competence more effectively than individual simulation in physical therapy students.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42766393?fc=20260609215449&amp;ff=20260922010056&amp;v=2.20.1">Effectiveness of ChatGPT and DeepSeek in Urology Medical Education: Randomized Controlled Trial</a>
-    <p class="news-card-summary">A randomized controlled trial found that DeepSeek-assisted self-study improved urology exam performance more than traditional internet learning, while ChatGPT showed numerically higher but nonsignificant gains.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.20827">From Discharge Notes to Patient Understanding: Persona-Grounded, Open-Ended Simulation of LLMs as Discharge Educators</a>
-    <p class="news-card-summary">DischargeBench simulates language models as discharge educators with patient personas to evaluate how well models adapt explanations to literacy and personality in open-ended dialogue.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 20, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42763979?fc=20260609215449&amp;ff=20260921010018&amp;v=2.20.1">CReaTe-LM: A large language model for stepwise, heuristic clinical reasoning instruction</a>
-    <p class="news-card-summary">CReaTe-LM is a large language model designed to provide stepwise, heuristic instruction in clinical reasoning rather than passive answer generation, addressing a key medical education challenge.</p>
   </div>
 </div>
 </div>

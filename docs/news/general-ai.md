@@ -18,9 +18,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (4)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="new-models">New models (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (3)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (2)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills">Data centers are black boxes, but California wants to change that</a>
+    <p class="news-card-summary">California legislation mandating transparency and reporting on data center impacts on electricity and water consumption amid growing AI infrastructure deployment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr">Anthropic’s biolab made a discovery it’s comparing to Crispr</a>
+    <p class="news-card-summary">Anthropic reports that Claude autonomously discovered a novel enzyme system comparable to CRISPR-like machinery from its newly launched wet lab.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB364_CLAUDE_2_C_96d15c-2.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 23, 2026</span></div>
@@ -122,21 +138,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">California enacted regulations requiring data center rate classification and utility cost responsibility to prevent AI infrastructure expenses from passing to residents.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2286055476.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.022372800543%2C100%2C79.955254398914&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement">iPhone owners can now submit claims in Apple’s $250 million Siri AI settlement</a>
-    <p class="news-card-summary">Apple&#x27;s $250 million settlement over undelivered AI-upgraded Siri feature now allows eligible iPhone owners to submit claims for compensation.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/DSC08433.webp?quality=90&amp;strip=all&amp;crop=0%2C11.097693417406%2C100%2C77.804613165189&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">September 21, 2026</span></div>
-    <a class="news-card-title" href="https://jack-clark.net/2026/09/21/import-ai-473-the-uss-superintelligence-strategy-human-brain-in-a-mouse-skull-and-machine-hermeneutics">Import AI 473: The US’s superintelligence strategy; human brain in a mouse skull; and machine hermeneutics</a>
-    <p class="news-card-summary">Import AI newsletter covers US superintelligence strategy, brain-inspired computing, and machine interpretation of text in a weekly analysis.</p>
-  </div>
-  <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/09/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-L4yH52.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (5)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (3)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (3)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93854">The Perceived Influence of AI on the Craftsmanship of Physicians: Qualitative Interview and Focus Group Study</a>
+    <p class="news-card-summary">Qualitative study examining how physicians perceive AI tools affecting their clinical judgment, craftsmanship, and professional identity in practice.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 23, 2026</span></div>
@@ -40,6 +47,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 23, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04643-9">Practical lessons in the global scaling of clinical AI: from one hospital to over a million patients screened</a>
     <p class="news-card-summary">Multi-country deployment study of a deep learning screening tool across India, Thailand, and Australia identifies cross-cutting lessons for scaling clinical AI globally.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03300-2">Diabetes self-management in the digital health era: a concept analysis using natural language processing</a>
+    <p class="news-card-summary">Concept analysis using natural language processing to characterize diabetes self-management in the digital health context.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 23, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-025-04128-1">AI-based characterization of Alzheimer’s disease phenotypes from population-scale single-cell data</a>
+    <p class="news-card-summary">Graph neural network analysis of single-cell brain data from 584 donors identifies Alzheimer&#x27;s disease phenotypes and patterns linked to cognitive resilience.</p>
   </div>
 </div>
 <div class="news-card" data-topic="patient-facing-tools">
@@ -103,27 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03237-6">BrainCSD: a hierarchical consistency-driven MoE framework for connectome synthesis and multitask brain trait prediction</a>
     <p class="news-card-summary">BrainCSD uses a hierarchical mixture-of-experts framework for connectome synthesis and multitask brain trait prediction from neuroimaging data.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03244-7">DoseTailor for personalised tacrolimus dose optimisation across multicentre populations using interpretable AI</a>
-    <p class="news-card-summary">DoseTailor applies interpretable AI for personalized tacrolimus dosing optimization across multicenter patient populations.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03278-x">AI adoption and workflow optimization following orchestration platform implementation and structured change management</a>
-    <p class="news-card-summary">Study evaluated AI adoption and workflow optimization outcomes following implementation of a clinical orchestration platform with structured change management.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03280-3">Leveraging dynamic prompting for outcome prediction of cancer patients using large language models and electronic health record notes</a>
-    <p class="news-card-summary">Dynamic prompting with large language models applied to electronic health record notes for cancer patient outcome prediction.</p>
   </div>
 </div>
 </div>
