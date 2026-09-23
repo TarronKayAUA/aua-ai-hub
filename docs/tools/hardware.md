@@ -47,7 +47,7 @@ Two consequences worth internalizing. First, **what separates VRAM from RAM is t
 
 <figure class="figure">
 <svg viewBox="0 0 660 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Memory tiers drawn as pipes of very different widths: video memory moves hundreds of gigabytes per second, system memory tens, a solid-state drive single digits. A model split across tiers pays each tier's rate for the bytes living there, and the tokens-per-second ceiling is bandwidth divided by bytes read per token">
-<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the pipe decides the speed</text>
+<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The pipe decides the speed</text>
 <rect x="20" y="36" width="180" height="52" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
 <text x="110" y="57" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">graphics memory (VRAM)</text>
 <text x="110" y="74" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">250 to 1,000+ GB/s</text>

@@ -41,7 +41,7 @@ This is where assessment security and AI collide, so the lines are bright:
 
 <figure class="figure">
 <svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline split by a bright line: AI may touch draft items, and never touches finalized secure items">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the bright line</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The bright line</text>
 <rect x="20" y="28" width="295" height="130" rx="8" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.3" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
 <text x="167" y="50" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">while drafting</text>
 <text x="167" y="66" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">AI is fine here</text>

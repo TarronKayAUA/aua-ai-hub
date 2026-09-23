@@ -45,7 +45,7 @@ It works. I have been using it since July.
 
 <figure class="figure">
 <svg viewBox="0 0 660 214" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The capture path. An HDR display is duplicated to a high precision frame, which is tone mapped and written out as three files: an ordinary image, a lossless HDR file, and an Ultra HDR file carrying both. If any stage fails the whole path falls back once to the original capture method.">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">one capture, three files, and a way back out</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">One capture, three files, and a way back out</text>
 
 <rect x="14" y="42" width="112" height="46" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
 <text x="70" y="62" text-anchor="middle" font-size="10.5" fill="var(--md-typeset-color)">find the HDR</text>

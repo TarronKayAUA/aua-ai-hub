@@ -51,7 +51,7 @@ I am a physician and a medical educator. I cannot write the code that does any o
 
 <figure class="figure">
 <svg viewBox="0 0 660 196" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Daily commits from June 9 to September 3, 2026. A near-constant low band of automated commits on 86 of 87 days, with taller bursts of human commits on 42 days; the busiest day, at launch, had 35 commits, 33 of them human.">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">every commit to this site, by day</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Every commit to this site, by day</text>
 <line x1="44" y1="172" x2="646" y2="172" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
 <rect x="44.9" y="120.7" width="5.1" height="51.3" fill="var(--md-primary-fg-color)"/>
 <rect x="51.8" y="164.1" width="5.1" height="7.9" fill="var(--md-default-fg-color--light)" opacity="0.5"/>

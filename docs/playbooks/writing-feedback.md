@@ -19,7 +19,7 @@ One more failure mode is yours rather than the model's: feedback that arrives in
 <figure class="figure">
 <svg viewBox="0 0 660 205" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The feedback pipeline: student work is de-identified first, the model produces quote-anchored observations against a frozen rubric, you judge and rewrite in your voice, and grades never enter the pipeline">
 <defs><marker id="wf-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the pipeline, with its two hard walls</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The pipeline, with its two hard walls</text>
 <rect x="20" y="46" width="140" height="54" rx="8" fill="none" stroke="var(--aua-alert)" stroke-width="2"/>
 <text x="90" y="66" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">de-identify first</text>
 <text x="90" y="81" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">names, IDs, traceable details</text>

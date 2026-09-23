@@ -18,7 +18,7 @@ last_reviewed: 2026-09-01
 <figure class="figure">
 <svg viewBox="0 0 660 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The first session in five beats: a folder of copies, one real task, permission prompts you actually read, the agent's work loop, and your own review of the output">
 <defs><marker id="fs-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">twenty minutes, five beats</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Twenty minutes, five beats</text>
 <rect x="20" y="40" width="112" height="66" rx="7" fill="none" stroke="#2e7d32" stroke-width="2"/>
 <text x="76" y="62" text-anchor="middle" font-size="9.5" font-weight="bold" fill="var(--md-typeset-color)">a folder</text>
 <text x="76" y="78" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">of copies,</text>
@@ -95,7 +95,7 @@ This site's recommendation, stated as a table so you can disagree with it precis
 <figure class="figure">
 <svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The permission trust ladder: start at ask first, where the agent asks before consequential actions, graduate a proven workflow to auto-approved edits, then to checked autonomy where an automatic reviewer surfaces only flagged actions; Plan mode reads without changing anything and is useful at every rung; the bypass and full access modes sit behind a wall, for isolated machines only">
 <defs><marker id="fs-lad" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">permissions: a ladder you climb per workflow, not a dial you set once</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Permissions: a ladder you climb per workflow, not a dial you set once</text>
 <rect x="20" y="34" width="180" height="42" rx="7" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.2" stroke-dasharray="5 4"/>
 <text x="110" y="51" text-anchor="middle" font-size="8.5" fill="var(--md-typeset-color)">Plan mode: read and propose,</text>
 <text x="110" y="64" text-anchor="middle" font-size="8.5" fill="var(--md-typeset-color)">change nothing; useful at every rung</text>

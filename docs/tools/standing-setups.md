@@ -22,7 +22,7 @@ There is a fourth container worth knowing about, and it works the other way arou
 
 <figure class="figure">
 <svg viewBox="0 0 660 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomy of a standing setup: instructions and uploaded knowledge sit in the container, and every conversation inside it starts with both already in place">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">anatomy of a standing setup</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Anatomy of a standing setup</text>
 <rect x="40" y="30" width="580" height="150" rx="10" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
 <text x="330" y="50" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">the container: a project, or a folder with a brief</text>
 <rect x="60" y="64" width="250" height="44" rx="7" fill="var(--md-primary-fg-color)"/>
@@ -69,7 +69,7 @@ The heuristic for what to add: **when the agent makes the same mistake twice, or
 <figure class="figure">
 <svg viewBox="0 0 660 235" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How folder briefs layer: a personal brief in your home directory applies to all your work, the working folder's brief adds this project's rules on top, the agent reads both before any session, and corrections you find yourself repeating flow back into the folder's brief">
 <defs><marker id="ss-lay" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">how folder briefs layer</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">How folder briefs layer</text>
 <rect x="20" y="52" width="180" height="64" rx="8" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.5"/>
 <text x="110" y="74" text-anchor="middle" font-size="10" font-weight="bold" fill="var(--md-typeset-color)">your personal brief</text>
 <text x="110" y="90" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">.claude or .codex folder: the defaults</text>

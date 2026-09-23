@@ -19,7 +19,7 @@ Artificial intelligence (AI) has changed literature work as much as any research
 <figure class="figure">
 <svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The seven-step literature workflow: AI accelerates orientation, search, mapping, screening, and synthesis, while appraisal stays entirely human and every citation is verified at the source">
 <defs><marker id="lr-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">seven steps, one that never delegates</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Seven steps, one that never delegates</text>
 <rect x="20" y="34" width="118" height="46" rx="7" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="79" y="53" text-anchor="middle" font-size="9" fill="var(--md-typeset-color)">1 orient</text>
 <text x="79" y="67" text-anchor="middle" font-size="8" fill="var(--md-default-fg-color--light)">Scopus AI, cited summary</text>

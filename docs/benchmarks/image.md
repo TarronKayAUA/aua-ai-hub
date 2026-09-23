@@ -18,7 +18,7 @@ A model can win on beauty and lose on every one of those.
 <figure class="figure">
 <svg viewBox="0 0 660 215" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How an arena ranks models: one prompt produces two images from hidden models, a person votes for the better one, and thousands of blind votes become Elo-style ratings">
 <defs><marker id="ar-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">how an arena ranks models</text>
+<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">How an arena ranks models</text>
 <rect x="20" y="76" width="120" height="52" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="80" y="98" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">one prompt</text>
 <text x="80" y="114" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">"a heart, labeled"</text>

@@ -43,7 +43,6 @@ Three consequences worth internalizing:
 <p class="hf-box-ok">Verification is your job, every time.</p>
 </div>
 </div>
-<p class="hf-note">One mechanism, predicting plausible text, explains all three.</p>
 <figcaption>Everything impressive and everything dangerous about these systems follows from the same mechanism.</figcaption>
 </figure>
 

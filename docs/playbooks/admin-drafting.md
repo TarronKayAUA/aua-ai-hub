@@ -18,7 +18,7 @@ The second hazard is voice. Administrative documents signed by you should sound 
 
 <figure class="figure">
 <svg viewBox="0 0 660 225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sensitivity gate before drafting: public content proceeds, internal content needs judgment and de-identification, confidential content never enters public AI tools">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">classify before anything is pasted</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Classify before anything is pasted</text>
 <rect x="20" y="88" width="140" height="50" rx="8" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
 <text x="90" y="109" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">the document</text>
 <text x="90" y="123" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">you need drafted</text>

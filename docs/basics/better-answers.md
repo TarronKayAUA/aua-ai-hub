@@ -16,7 +16,7 @@ Everything the model can see lives in one working memory, the context window, me
 
 <figure class="figure">
 <svg viewBox="0 0 660 170" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of one context window shared by standing instructions, memory, attachments, the conversation, and the reply, with the reply capped to a small slice">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">one window, and everything shares it</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">One window, and everything shares it</text>
 <rect x="20" y="30" width="620" height="60" rx="6" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2.5"/>
 <rect x="22" y="32" width="48" height="56" fill="var(--md-default-fg-color--lightest)" opacity="0.55"/>
 <rect x="72" y="32" width="40" height="56" fill="var(--md-default-fg-color--lightest)" opacity="0.55"/>
@@ -57,7 +57,7 @@ It is tempting to attach everything that might be relevant. Past a point this ba
 
 <figure class="figure">
 <svg viewBox="0 0 660 235" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart of approximate token costs: a question about 50, a page of prose about 650, a 30-slide deck about 4,000, a journal article about 8,000, an hour of lecture transcript about 12,000">
-<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">what familiar material costs, in tokens</text>
+<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">What familiar material costs, in tokens</text>
 <text x="175" y="52" text-anchor="end" font-size="10.5" fill="var(--md-typeset-color)">your question</text>
 <rect x="185" y="38" width="2.5" height="20" fill="var(--md-primary-fg-color)"/>
 <text x="196" y="52" text-anchor="start" font-size="10" fill="var(--md-default-fg-color--light)">≈ 50 (the sliver everything else competes with)</text>

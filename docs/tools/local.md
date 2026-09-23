@@ -16,7 +16,7 @@ Every assistant in the [tools directory](index.md) runs in a vendor's cloud: wha
 <figure class="figure">
 <svg viewBox="0 0 660 230" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Where your text goes: to vendor servers with a cloud assistant, nowhere with a local model, to a rented server with cloud GPUs">
 <defs><marker id="lo-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">where your text goes</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Where your text goes</text>
 <text x="24" y="59" text-anchor="start" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">cloud assistant</text>
 <rect x="150" y="36" width="130" height="36" rx="6" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.4" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
 <text x="215" y="58" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your text</text>

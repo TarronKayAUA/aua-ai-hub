@@ -18,7 +18,7 @@ Fluency and accuracy are unrelated in these systems. The model produces equally 
 
 <figure class="figure">
 <svg viewBox="0 0 660 195" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two-panel diagram: tasks grounded in material you supplied are usually reliable; facts pulled from the model's memory need source verification">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">calibrate trust by task, not by tone</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Calibrate trust by task, not by tone</text>
 <rect x="20" y="30" width="300" height="125" rx="8" fill="var(--md-default-fg-color--lightest)" fill-opacity="0.25" stroke="#2e7d32" stroke-width="2"/>
 <text x="170" y="52" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">grounded in what you supplied</text>
 <text x="170" y="76" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">summarizing your article</text>

@@ -27,7 +27,7 @@ Most tables in INSIGHTS export to a spreadsheet.
 
 <figure class="figure">
 <svg viewBox="0 0 660 305" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schematic of the INSIGHTS exam results view: four tabs across the top, a total score gauge on the left which for the basic science comprehensive exam adds an estimated probability of passing Step 1, content areas on the right scored against a national comparison group and flagged lower, same, or higher, and a suggested areas of focus strip along the bottom">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the shape of an INSIGHTS exam-results view</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The shape of an INSIGHTS exam-results view</text>
 <rect x="20" y="28" width="620" height="240" rx="10" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1.5"/>
 <rect x="36" y="42" width="100" height="26" rx="6" fill="none" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>
 <text x="86" y="59" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">My Exams</text>
@@ -93,7 +93,7 @@ Before you run any prompt, open your report and write down your own three takeaw
 <figure class="figure">
 <svg viewBox="0 0 660 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The improvement loop: your score report leads to your own written read, then through a de-identification gate to the planner prompt, then to your advisor, then to the next assessment, which produces the next report and closes the loop">
 <defs><marker id="sr-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the loop, closed at both ends</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The loop, closed at both ends</text>
 <rect x="20" y="42" width="140" height="54" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="90" y="64" text-anchor="middle" font-size="10" fill="var(--md-typeset-color)">your score report</text>
 <text x="90" y="80" text-anchor="middle" font-size="8.5" fill="var(--md-default-fg-color--light)">INSIGHTS or in-house</text>

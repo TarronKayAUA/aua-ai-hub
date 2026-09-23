@@ -20,7 +20,7 @@ Here is the trap, and it is worth naming before any results, because naming it a
 
 <figure class="figure">
 <svg viewBox="0 0 660 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bar chart comparing how common the archaic growth hormone receptor variant is, as a share of copies of the gene: up to 24 percent in South Asian populations (20 percent across the region) against about 0.5 percent in European populations">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">why the paper made the news</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">Why the paper made the news</text>
 <text x="150" y="46" text-anchor="end" font-size="11" fill="var(--md-typeset-color)">South Asian populations</text>
 <rect x="160" y="34" width="384" height="18" rx="3" fill="var(--md-primary-fg-color)"/>
 <text x="554" y="48" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">up to 24%</text>
@@ -95,7 +95,7 @@ Then the arithmetic.
 
 <figure class="figure">
 <svg viewBox="0 0 660 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scale comparison showing that one copy of the variant contributes about 285 grams and two copies about 570 grams, against a personal difference from population average measured in several kilograms">
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the variant, drawn to scale against the thing it was supposed to explain</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The variant, drawn to scale against the thing it was supposed to explain</text>
 <line x1="60" y1="118" x2="620" y2="118" stroke="var(--md-default-fg-color--light)" stroke-width="1.5"/>
 <text x="60" y="136" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)">0 kg</text>
 <line x1="153" y1="114" x2="153" y2="122" stroke="var(--md-default-fg-color--light)" stroke-width="1"/>

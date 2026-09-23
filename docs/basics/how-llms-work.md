@@ -75,7 +75,7 @@ Everything the model can see at once (your conversation so far plus any document
 <figure class="figure">
 <svg viewBox="0 0 660 175" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram of the context window as working memory">
 <rect x="120" y="35" width="520" height="80" rx="10" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2.5"/>
-<text x="380" y="25" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the context window: everything the model can see</text>
+<text x="380" y="25" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The context window: everything the model can see</text>
 <rect x="20" y="50" width="85" height="50" rx="6" fill="var(--md-default-fg-color--lightest)" opacity="0.45"/>
 <text x="62" y="73" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)" opacity="0.8">oldest</text>
 <text x="62" y="87" text-anchor="middle" font-size="10" fill="var(--md-default-fg-color--light)" opacity="0.8">messages</text>

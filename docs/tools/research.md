@@ -18,7 +18,7 @@ Artificial intelligence tools now cover most stages of a research project, from 
 <figure class="figure">
 <svg viewBox="0 0 660 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Six research stages from finding literature to writing, each mapped to the tools covered below">
 <defs><marker id="rs-ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="var(--md-primary-fg-color)"/></marker></defs>
-<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the pipeline, mapped to tools</text>
+<text x="330" y="16" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The pipeline, mapped to tools</text>
 <rect x="20" y="32" width="195" height="88" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="1.5"/>
 <text x="117" y="52" text-anchor="middle" font-size="10.5" font-weight="bold" fill="var(--md-typeset-color)">1. find and map</text>
 <text x="117" y="72" text-anchor="middle" font-size="9.5" fill="var(--md-default-fg-color--light)">Scopus with AI (AUA-licensed),</text>

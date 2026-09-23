@@ -34,7 +34,7 @@ A tool call is the model pausing text generation to request an action: read this
 
 <figure class="figure">
 <svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The tool call loop: the model requests an action, the interface checks permission and runs the tool on your machine, and the result returns to the model">
-<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">the tool call loop</text>
+<text x="330" y="18" text-anchor="middle" font-size="12" font-weight="bold" fill="var(--md-typeset-color)">The tool call loop</text>
 <rect x="30" y="60" width="150" height="60" rx="8" fill="none" stroke="var(--md-primary-fg-color)" stroke-width="2"/>
 <text x="105" y="85" text-anchor="middle" font-size="11" font-weight="bold" fill="var(--md-typeset-color)">model (cloud)</text>
 <text x="105" y="103" text-anchor="middle" font-size="9" fill="var(--md-default-fg-color--light)">decides what it needs</text>
