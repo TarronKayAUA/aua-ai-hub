@@ -95,7 +95,7 @@ Before you run any prompt, open your report and write down your own three takeaw
 ## Guardrails for this task
 
 - **Your own report only.** A classmate's report is their education record; it is never yours to paste anywhere, even to help them. Point them here instead.
-- **De-identify even your own.** The [AI Responsible Use Policy](../governance/policy.md) draws a hard line around identifiable student records in public AI tools. Strip your name, student number, and exam identifiers before pasting, so what enters the tool is performance data rather than an identifiable record. Both prompts are instructed to stop and ask for a clean re-paste if an identifier slips through; do not rely on that net, it is a backstop, not the method.
+- **De-identify even your own.** The [AI Responsible Use Policy](../governance/policy.md) draws a hard line around identifiable student records in public AI tools. Strip your name, student number, and exam identifiers before pasting, so what enters the tool is performance data rather than an identifiable record.
 - **Performance data, not questions.** NBME exam questions are copyrighted secure content. The report's content-area descriptions are fine to paste; reconstructed exam questions are not, in any tool, ever.
 - **Treat single-exam areas as hypotheses.** Content-area scores on one exam carry wide error bands. A pattern across two or more exams, or a flag that matches your own sense of weakness, is evidence; one dip is a lead to investigate.
 - **The model plans; it does not absolve.** A plan you did not follow is information about the plan's size, not a verdict on you, and the progress check treats it that way. But no prompt fixes not opening the question bank.
