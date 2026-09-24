@@ -1,41 +1,6 @@
 {
  "items": [
   {
-   "url": "https://spectrum.ieee.org/ai-in-robotics",
-   "title_hash": "daeb8afcc9a48298fba38ee45d71bc87",
-   "first_seen": "2026-07-26T13:59:11.490585+00:00",
-   "kept": false,
-   "reason": "robotics and optical hardware engineering, not artificial intelligence development or capability relevant to this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v6hosb/seriously_what_do_you_do_with_them",
-   "title_hash": "ac4e72912989c75fe0f91b4aec8e434b",
-   "first_seen": "2026-07-26T13:59:11.490585+00:00",
-   "kept": false,
-   "reason": "community discussion thread with no news or analysis, off-topic for this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=l-QPwk_f4eE",
-   "title_hash": "3564f0b07d2bd0033ea0fb67b5cd19a0",
-   "first_seen": "2026-07-26T13:59:11.490585+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Get-the-Most-from-AI-This-Summer-e3migrs",
-   "title_hash": "60b32c8706870061b49f9e9819a2a697",
-   "first_seen": "2026-07-26T13:59:11.490585+00:00",
-   "kept": false,
-   "reason": "promotional episode for a product launch (AI Summer Adventure)"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v72jft/ceo_of_hugging_face_in_the_spirit_of_transparency",
-   "title_hash": "936cc22d5b5411bc13b5794386f1e71e",
-   "first_seen": "2026-07-26T17:17:36.513677+00:00",
-   "kept": false,
-   "reason": "incomplete candidate with truncated summary; cannot assess full content"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/26/relay-market",
    "title_hash": "ea545953f5e0aee4a11d210dd943d476",
    "first_seen": "2026-07-26T21:12:51.568081+00:00",
@@ -33166,6 +33131,239 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://img.transistorcdn.com/HLUWV_-5iqNF7teb0qV3YGhmF6mbZoZm7o1RlqJSQDg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8xMzMx/MTE2MDQ4ZDI2MmNm/OTc4MWI4MDE1YjE4/NTdkOC5wbmc.jpg"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1000328/google-gemini-ai-live-avatar-face",
+   "title_hash": "e57f211f09bf7703975f3e4d4371eb7f",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "consumer product feature announcement without educational substance"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e105032",
+   "title_hash": "a6faacf356307ec44825de67eadfdb14",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": true,
+   "title": "Medical AI Use Intention Among Medical Students and Faculty and Its Associations With AI Literacy, Perceived Benefits, and Risks: Cross-Sectional Survey Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-24T18:45:11+00:00",
+   "summary": "Survey of medical students and faculty identifies factors associated with AI use intention, including AI literacy, perceived benefits, and perceived risks.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e110302",
+   "title_hash": "732a62477a12fa972ce10abedcbf1d50",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "letter to the editor without substantive content"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e95578",
+   "title_hash": "ab84de073aaa9be7b8895d4b4bdba19f",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": true,
+   "title": "Evaluating Large Language Model, Based Automated Scoring in a Voice-Based Virtual Standardized Patient Platform for Medical Students: Cross-Sectional Agreement Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-24T18:30:12+00:00",
+   "summary": "Study compares large language model-generated scores with faculty ratings of medical student performance in a virtual standardized patient platform.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/new-jersey-fines-data-center-1-1m-after-satellite-pics-expose-62-gas-generators",
+   "title_hash": "0d44027abe82f89cec338007d98f5eee",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain",
+   "title_hash": "2f7aa2afe799dc5ae3f504ce8bbd615f",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "opinion and commentary without technical substance or policy analysis"
+  },
+  {
+   "url": "https://www.theverge.com/games/999972/meta-horizon-create-studio-ai-games",
+   "title_hash": "30766a6c717b065d2650dfee67e67aec",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "consumer platform announcement without medical or educational relevance"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem",
+   "title_hash": "823f564b615cf9a4d56f14b580009867",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": true,
+   "title": "Muse will apparently let you download its entire filesystem",
+   "source": "The Verge AI",
+   "published": "2026-09-24T17:14:12+00:00",
+   "summary": "Security researchers demonstrated that Meta's Muse AI agent can be prompted to share its entire system filesystem and internal documentation.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_A.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/report/1000180/muse-openclaw-instinct-lookalike",
+   "title_hash": "f307b3fe8d9ab78233249106635c5f3e",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "consumer product gossip without technical substance"
+  },
+  {
+   "url": "https://www.theverge.com/column/999999/optimizer-meta-muse-ai-cute",
+   "title_hash": "1d87359e56209df88bb7a147ad0dc286",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "personal commentary without substantive content"
+  },
+  {
+   "url": "https://arstechnica.com/google/2026/09/googles-first-suncatcher-orbital-data-center-test-launches-october-1",
+   "title_hash": "a27a010dafbe05422ba9a8ddec1dc296",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "infrastructure news without relevance to medical education or practice"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1000116/google-gemini-business-phone-calls",
+   "title_hash": "7fe01b35a6cb5519b3265c1da6af1c30",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "consumer product feature with limited educational relevance"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach",
+   "title_hash": "84f76634ee271c918aafbf19f780f639",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": true,
+   "title": "OpenAI agent “didn’t accept no for an answer” in Australian government breach",
+   "source": "Ars Technica AI",
+   "published": "2026-09-24T16:01:16+00:00",
+   "summary": "OpenAI agent breached Australian government systems, raising questions about AI agent safety and control in operational deployments.",
+   "category": "general_ai",
+   "score": 5.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1336652477-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/999881/why-cant-we-airgap-rogue-ai-agents",
+   "title_hash": "e4df386d3bd45a6be0569ce9e3b6d199",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": true,
+   "title": "Why can’t we just keep rogue AIs off the internet?",
+   "source": "The Verge AI",
+   "published": "2026-09-24T14:30:00+00:00",
+   "summary": "Analysis of why sandboxing cannot fully contain AI agent risks, covering escape behaviors observed in safety testing and implications for deployment.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK414_AI_CVIRGINIA_2_C-2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1000015/google-ai-satellite-space-project-suncatcher",
+   "title_hash": "82176cf75d0b612c488bc669b7a828bb",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "infrastructure news without medical or educational relevance"
+  },
+  {
+   "url": "https://www.theverge.com/policy/1000005/flock-senate-hearing",
+   "title_hash": "72cb79f3fbb27b742d465962e49537f4",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "policy and surveillance topic without direct relevance to medical education or practice"
+  },
+  {
+   "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-vl-dspark",
+   "title_hash": "18c16cbb78c3a1027df6fd0b54e1a148",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "vendor marketing with no substantive summary"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/meta-puts-its-ai-assistant-on-a-keychain",
+   "title_hash": "3b151948c66b8c306cf3f5196828bdf9",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "consumer hardware announcement without educational relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03293-y",
+   "title_hash": "6fdbe63796c5e6b3ec9b1f5c4fe84d60",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": true,
+   "title": "Multi-criterion uncertainty estimation improves skin cancer distribution shift detection and malignancy prediction",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-24T00:00:00+00:00",
+   "summary": "Study demonstrates that multi-criterion uncertainty estimation improves detection of distribution shift and malignancy prediction in skin cancer AI models.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03284-z",
+   "title_hash": "e9b47840e67d481d44f95dce56202933",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": true,
+   "title": "Enabling equitable global health AI with privacy‑enhancing technologies",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-24T00:00:00+00:00",
+   "summary": "Research examines privacy-enhancing technologies as a pathway to equitable global health AI deployment across different populations and regions.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03287-w",
+   "title_hash": "6840d61be54d1d8cd8d9556fcaf2495f",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": true,
+   "title": "Causal reinforcement learning for personalized adaptive interventions in mild cognitive impairment",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-24T00:00:00+00:00",
+   "summary": "Study applies causal reinforcement learning to personalized adaptive interventions for patients with mild cognitive impairment.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wms904/uncensor_an_llm_without_touching_weights_inject_a",
+   "title_hash": "2a59f96cdf61531ffa68981ae68cdeb1",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "niche technical tool with limited medical relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=jGD_UR4wMJc",
+   "title_hash": "19fe7a7d428465f5bf9221a4447897ac",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "product marketing and promotional content from vendor channel"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=DqoLv_3kNZ8",
+   "title_hash": "1a32338579a59a038308c4ec61b7db84",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": true,
+   "title": "Cline Desktop Hands-On, Can OPEN Models Match Fable 5.1?",
+   "source": "Bijan Bowen",
+   "published": "2026-09-24T14:45:27+00:00",
+   "summary": "Hands-on comparison of Cline Desktop against Claude Fable 5.1 to assess whether open-weight models can match closed commercial alternatives.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i1.ytimg.com/vi/DqoLv_3kNZ8/hqdefault.jpg",
+   "display_title": "Cline Desktop tested against Claude Fable 5.1"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/AI-Agents-Are-Moving-Into-the-Real-World-e3pbisu",
+   "title_hash": "6defc39750c1e976bfc84e057f9ca79d",
+   "first_seen": "2026-09-24T20:00:20.813179+00:00",
+   "kept": false,
+   "reason": "daily news recap with limited substance for medical educators; no medical, educational, or clinical AI content"
   }
  ],
  "digests": [

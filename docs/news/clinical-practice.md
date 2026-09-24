@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -34,6 +34,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 24, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03294-x">A multicenter assessment of human oversight of generative AI outputs in simulated clinical decision making</a>
     <p class="news-card-summary">Multicenter study assessed how clinicians oversee and validate generative AI outputs in simulated clinical decision-making scenarios.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03293-y">Multi-criterion uncertainty estimation improves skin cancer distribution shift detection and malignancy prediction</a>
+    <p class="news-card-summary">Study demonstrates that multi-criterion uncertainty estimation improves detection of distribution shift and malignancy prediction in skin cancer AI models.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03284-z">Enabling equitable global health AI with privacy‑enhancing technologies</a>
+    <p class="news-card-summary">Research examines privacy-enhancing technologies as a pathway to equitable global health AI deployment across different populations and regions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03287-w">Causal reinforcement learning for personalized adaptive interventions in mild cognitive impairment</a>
+    <p class="news-card-summary">Study applies causal reinforcement learning to personalized adaptive interventions for patients with mild cognitive impairment.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -104,27 +125,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.22110">Evaluating Fine-Tuned and Base Language Models in Maternal and Vaccination Healthcare for African Settings</a>
     <p class="news-card-summary">A study compared domain-specific fine-tuned language models with base models for maternal health and vaccination advice in Nigeria, assessing accuracy and cultural appropriateness.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03288-9">Preparing AI chatbots to respond to patient distress and suicidality in high-risk healthcare settings</a>
-    <p class="news-card-summary">Study on preparing generative AI chatbots to respond appropriately to patient distress and suicidality in healthcare settings, addressing safety gaps in behavioral health support.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04688-w">Some answers, more questions for multi-cancer early detection tests</a>
-    <p class="news-card-summary">PATHFINDER 2 and NHS-Galleri studies assess clinical performance and safety of multi-cancer early detection tests, identifying next steps for demonstrating population-level benefit.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04656-4">Large-scale esophageal cancer screening through noncontrast computed tomography and artificial intelligence</a>
-    <p class="news-card-summary">Large-scale study of Esophageal AI-Guided malignant Lesion Evaluation tool for esophageal cancer detection via noncontrast computed tomography, demonstrating high sensitivity and specificity across diverse settings.</p>
   </div>
 </div>
 </div>

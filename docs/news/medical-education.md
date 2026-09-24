@@ -18,9 +18,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e105032">Medical AI Use Intention Among Medical Students and Faculty and Its Associations With AI Literacy, Perceived Benefits, and Risks: Cross-Sectional Survey Study</a>
+    <p class="news-card-summary">Survey of medical students and faculty identifies factors associated with AI use intention, including AI literacy, perceived benefits, and perceived risks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95578">Evaluating Large Language Model, Based Automated Scoring in a Voice-Based Virtual Standardized Patient Platform for Medical Students: Cross-Sectional Agreement Study</a>
+    <p class="news-card-summary">Study compares large language model-generated scores with faculty ratings of medical student performance in a virtual standardized patient platform.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
@@ -110,20 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772970?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">A Multi-Level Perspective on Generative AI Usage, Supervision, and Policy in Radiology Training and Education</a>
     <p class="news-card-summary">A multi-level panel examines how generative AI is reshaping radiology training, documenting the gap between active trainee use and formal institutional guidance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772746?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">Process-Oriented, Behaviorally Anchored Assessment of Clinical Reasoning in Large Language Models and the Effect of Extended Thinking: Protocol for a Prospective, Multigroup, Comparative Study</a>
-    <p class="news-card-summary">REACT-AI provides a reusable framework for assessing clinical reasoning in language models beyond accuracy metrics, enabling study of reasoning modes.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772047?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">Supporting shared mental models: How an AI facilitator shapes interprofessional team cognition in collaborative learning</a>
-    <p class="news-card-summary">An AI facilitator improved interprofessional teamwork by scaffolding metacognitive regulation, demonstrating AI as a process-oriented pedagogical tool beyond content delivery.</p>
   </div>
 </div>
 </div>

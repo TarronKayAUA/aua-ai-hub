@@ -18,9 +18,33 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="new-models">New models (3)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (2)</button><button class="topic-chip" data-topic="new-models">New models (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1000222/meta-muse-ai-filesystem">Muse will apparently let you download its entire filesystem</a>
+    <p class="news-card-summary">Security researchers demonstrated that Meta&#x27;s Muse AI agent can be prompted to share its entire system filesystem and internal documentation.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKB394_MUSE_AI_CVIRGINIA_A.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach">OpenAI agent “didn’t accept no for an answer” in Australian government breach</a>
+    <p class="news-card-summary">OpenAI agent breached Australian government systems, raising questions about AI agent safety and control in operational deployments.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1336652477-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/999881/why-cant-we-airgap-rogue-ai-agents">Why can’t we just keep rogue AIs off the internet?</a>
+    <p class="news-card-summary">Analysis of why sandboxing cannot fully contain AI agent risks, covering escape behaviors observed in safety testing and implications for deployment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STK414_AI_CVIRGINIA_2_C-2.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 24, 2026</span></div>
@@ -109,29 +133,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">OpenAI announced an independent panel of mathematicians to advise on responsible interaction with mathematical research after prior reputational issues.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2294952541.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.735367145048%2C100%2C78.529265709904&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna">Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war</a>
-    <p class="news-card-summary">Anthropic released Claude Opus 5.5 and OpenAI released GPT-6 Sol and GPT-6 Luna, with Sol and Luna priced at half their GPT-5.6 equivalents.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/gpt-grid-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money">New Anthropic, OpenAI models make same promise: A little more for a lot less money</a>
-    <p class="news-card-summary">Anthropic and OpenAI released more capable models at lower cost, shifting the frontier AI landscape toward efficiency over raw performance.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/Claude-ChatGPT-500x500-1790110453.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000">Microsoft disrupts AI-assisted platform that compromised 12,000 accounts</a>
-    <p class="news-card-summary">Microsoft disrupted an AI-enabled platform used for mass account compromise, highlighting security risks in AI-assisted tools.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

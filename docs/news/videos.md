@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=DqoLv_3kNZ8" target="_blank" rel="noopener" title="Cline Desktop Hands-On, Can OPEN Models Match Fable 5.1?">
+  <img src="https://i1.ytimg.com/vi/DqoLv_3kNZ8/hqdefault.jpg" alt="Video: Cline Desktop tested against Claude Fable 5.1" loading="lazy">
+  <span class="video-card-title">Cline Desktop tested against Claude Fable 5.1</span>
+  <span class="video-card-meta">Bijan Bowen, September 24, 2026</span>
+  <span class="video-card-desc">Hands-on comparison of Cline Desktop against Claude Fable 5.1 to assess whether open-weight models can match closed commercial alternatives.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=SA9kdAX2Zj0" target="_blank" rel="noopener" title="Claude Opus 5.5 AI: An Incredible Leap Forward">
   <img src="https://i4.ytimg.com/vi/SA9kdAX2Zj0/hqdefault.jpg" alt="Video: Claude Opus 5.5 capabilities overview" loading="lazy">
   <span class="video-card-title">Claude Opus 5.5 capabilities overview</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Cognition SWE-2 hands-on test and comparison with Kimi K3</span>
   <span class="video-card-meta">Bijan Bowen, September 14, 2026</span>
   <span class="video-card-desc">Hands-on test of Cognition SWE-2 agent across multiple coding and software tasks, compared with Kimi K3.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=2YHa1vhnmK0" target="_blank" rel="noopener" title="Introducing the Agents API">
-  <img src="https://i3.ytimg.com/vi/2YHa1vhnmK0/hqdefault.jpg" alt="Video: OpenAI Agents API announcement" loading="lazy">
-  <span class="video-card-title">OpenAI Agents API announcement</span>
-  <span class="video-card-meta">OpenAI, September 10, 2026</span>
-  <span class="video-card-desc">OpenAI introduces the Agents API for building and deploying autonomous agents at scale with hosted infrastructure.</span>
 </a>
 </div>
 
