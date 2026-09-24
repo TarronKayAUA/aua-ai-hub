@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://share.transistor.fm/s/74934e48" target="_blank" rel="noopener">
+  <img src="https://img.transistorcdn.com/HLUWV_-5iqNF7teb0qV3YGhmF6mbZoZm7o1RlqJSQDg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8xMzMx/MTE2MDQ4ZDI2MmNm/OTc4MWI4MDE1YjE4/NTdkOC5wbmc.jpg" alt="Podcast: From AGENTS.md to Enterprise Deployment" loading="lazy">
+  <span class="video-card-title">From AGENTS.md to Enterprise Deployment</span>
+  <span class="video-card-meta">Practical AI, September 24, 2026</span>
+  <span class="video-card-desc">Discussion of deploying AI agents in enterprise environments, covering security, compliance, scalability, and reliability considerations beyond prototype stages.</span>
+</a>
 <a class="video-card" href="https://ai-podcast.nejm.org/e/beyond-the-hype-dr-xiao-liu-on-evaluating-medical-ai" target="_blank" rel="noopener">
   <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Beyond the Hype: Dr. Xiao Liu on Evaluating Medical AI" loading="lazy">
   <span class="video-card-title">Beyond the Hype: Dr. Xiao Liu on Evaluating Medical AI</span>

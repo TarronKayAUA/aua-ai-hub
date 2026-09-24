@@ -1,27 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v6dy7w/great_arguments_by_member_of_technical_staff_at",
-   "title_hash": "51c9bb49cdf2ee5f0c0386fc36bf8e91",
-   "first_seen": "2026-07-26T07:05:43.870651+00:00",
-   "kept": false,
-   "reason": "forum discussion of a tweet; lacks substance for this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=7gUV_Wil3Jo",
-   "title_hash": "ca6b1ab9c2ebbc37213290436b5bead9",
-   "first_seen": "2026-07-26T07:05:43.870651+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; simulated world environment has no relevance to medical education or clinical practice"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v6pkji/karparthy_removed_anthropic_from_his_bio",
-   "title_hash": "c16463dfe6cec997ba0b6a619f1d392b",
-   "first_seen": "2026-07-26T10:13:44.721207+00:00",
-   "kept": false,
-   "reason": "personnel gossip without confirmed news value"
-  },
-  {
    "url": "https://spectrum.ieee.org/ai-in-robotics",
    "title_hash": "daeb8afcc9a48298fba38ee45d71bc87",
    "first_seen": "2026-07-26T13:59:11.490585+00:00",
@@ -33029,6 +33008,164 @@
    "first_seen": "2026-09-24T04:55:58.314622+00:00",
    "kept": false,
    "reason": "forum post with no content, uninformative"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42779201?fc=20260609215449&ff=20260924093431&v=2.20.1",
+   "title_hash": "4cd4dd7e3ef7479eec53aa6f5ad7d374",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": false,
+   "reason": "no substantive content; no abstract provided"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42779013?fc=20260609215449&ff=20260924093431&v=2.20.1",
+   "title_hash": "8dfc43be861eff5b6dab7c01c2ba1db7",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": true,
+   "title": "Generative Artificial Intelligence Use Among Medical Students: Learner Perspectives for Clinical Educators",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-24T10:00:00+00:00",
+   "summary": "Multi-institutional study found medical students frequently use AI tools informally; educators should establish clear expectations, privacy boundaries, and disclosure norms.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.theverge.com/tech/999802/google-deepmind-gemini-4-timeline-koray-kavukcuoglu",
+   "title_hash": "75ab11af378a2390c39813fe2c76dada",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": true,
+   "title": "Gemini 4 is almost ready, says new Google DeepMind chief",
+   "source": "The Verge AI",
+   "published": "2026-09-24T09:04:18+00:00",
+   "summary": "Google DeepMind's new chief reports Gemini 4 is in refinement stage and nearing launch after delays relative to competing developers.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK255_Google_Gemini_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/chatgpt-wasnt-wrong-it-was-solving",
+   "title_hash": "a63304d154d883740ed9d8dcbc9fbdc4",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": false,
+   "reason": "accessible commentary with no new information or instructive analysis beyond a clinical anecdote"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/24/radiology-ai-blurred-line-between-tech-development-clinical-practice",
+   "title_hash": "c2dd020e3607043f375cff8c8c5c43bb",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": true,
+   "title": "STAT+: In radiology, AI is blurring the line between technology development and clinical practice",
+   "source": "STAT News AI",
+   "published": "2026-09-24T08:30:00+00:00",
+   "summary": "Radiology practices increasingly develop and deploy AI in-house, marketing themselves as AI-native amid shifting boundaries between technology development and clinical practice.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_1146014200-645x645.jpeg",
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/tech-innovation/teaching-learning/2026/09/24/silicon-valley-ai-academy-seeks-main-character",
+   "title_hash": "7ffab0603315608c0a9f52feeb110ae7",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; venture capital education initiative unrelated to medical education or medical AI"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/career-advice/2026/09/24/ai-not-making-comms-teams-job-any-easier-opinion",
+   "title_hash": "664cd65d717a7d2b07143c477f284a2b",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; communications staff management not relevant to medical educators or students"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03294-x",
+   "title_hash": "41b7d364a3a52adb132c66f82e63126e",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": true,
+   "title": "A multicenter assessment of human oversight of generative AI outputs in simulated clinical decision making",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-24T00:00:00+00:00",
+   "summary": "Multicenter study assessed how clinicians oversee and validate generative AI outputs in simulated clinical decision-making scenarios.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04653-7",
+   "title_hash": "1217aa3f73f636ed9700f4949b00b09b",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; cancer policy without AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04700-3",
+   "title_hash": "c87ade1e83a2659cb10b9a5daac25b7f",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; clinical trial of cancer drug without AI relevance"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=SA9kdAX2Zj0",
+   "title_hash": "ba23c2856649ccc5803694a25881ee8e",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": true,
+   "title": "Claude Opus 5.5 AI: An Incredible Leap Forward",
+   "source": "Two Minute Papers",
+   "published": "2026-09-24T08:40:55+00:00",
+   "summary": "Overview of Claude Opus 5.5 capabilities and performance improvements from Anthropic's latest model release.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i4.ytimg.com/vi/SA9kdAX2Zj0/hqdefault.jpg",
+   "display_title": "Claude Opus 5.5 capabilities overview"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=zPbbOaX5yJ8",
+   "title_hash": "a19e84760774ed5c005cfea3368b7978",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": false,
+   "reason": "speculation and rumors rather than confirmed developments"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=gX0L0aFA2xg",
+   "title_hash": "32dfc5b1cec6a6922d4535d96163d3c9",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate covering the same model release"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=H7KruLVX2Rk",
+   "title_hash": "6e131969ea23250944c86031783f47b5",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": true,
+   "title": "Claude JUST found hidden DNA...",
+   "source": "Wes Roth",
+   "published": "2026-09-24T05:24:14+00:00",
+   "summary": "Demonstration of Claude agents discovering a previously unknown biological system, showing capability in autonomous scientific discovery.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i1.ytimg.com/vi/H7KruLVX2Rk/hqdefault.jpg",
+   "display_title": "Claude agents in autonomous biological discovery"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=F3hlZSZc6UI",
+   "title_hash": "2f5fdc3d6e69593db420e8b7e8ff29ac",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the product's own company"
+  },
+  {
+   "url": "https://share.transistor.fm/s/74934e48",
+   "title_hash": "f344470e9063f47b2272d13edeb512c9",
+   "first_seen": "2026-09-24T13:34:31.115727+00:00",
+   "kept": true,
+   "title": "From AGENTS.md to Enterprise Deployment",
+   "source": "Practical AI",
+   "published": "2026-09-24T09:00:00+00:00",
+   "summary": "Discussion of deploying AI agents in enterprise environments, covering security, compliance, scalability, and reliability considerations beyond prototype stages.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://img.transistorcdn.com/HLUWV_-5iqNF7teb0qV3YGhmF6mbZoZm7o1RlqJSQDg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8xMzMx/MTE2MDQ4ZDI2MmNm/OTc4MWI4MDE1YjE4/NTdkOC5wbmc.jpg"
   }
  ],
  "digests": [

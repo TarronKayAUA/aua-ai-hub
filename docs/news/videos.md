@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=SA9kdAX2Zj0" target="_blank" rel="noopener" title="Claude Opus 5.5 AI: An Incredible Leap Forward">
+  <img src="https://i4.ytimg.com/vi/SA9kdAX2Zj0/hqdefault.jpg" alt="Video: Claude Opus 5.5 capabilities overview" loading="lazy">
+  <span class="video-card-title">Claude Opus 5.5 capabilities overview</span>
+  <span class="video-card-meta">Two Minute Papers, September 24, 2026</span>
+  <span class="video-card-desc">Overview of Claude Opus 5.5 capabilities and performance improvements from Anthropic&#x27;s latest model release.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=H7KruLVX2Rk" target="_blank" rel="noopener" title="Claude JUST found hidden DNA...">
+  <img src="https://i1.ytimg.com/vi/H7KruLVX2Rk/hqdefault.jpg" alt="Video: Claude agents in autonomous biological discovery" loading="lazy">
+  <span class="video-card-title">Claude agents in autonomous biological discovery</span>
+  <span class="video-card-meta">Wes Roth, September 24, 2026</span>
+  <span class="video-card-desc">Demonstration of Claude agents discovering a previously unknown biological system, showing capability in autonomous scientific discovery.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=LrUCo_7jor4" target="_blank" rel="noopener" title="GPT-6 Sol Is VERY GOOD, Is THIS an Opus 5.5 Competitor?">
   <img src="https://i1.ytimg.com/vi/LrUCo_7jor4/hqdefault.jpg" alt="Video: GPT-6 Sol testing and comparison with Claude Opus" loading="lazy">
   <span class="video-card-title">GPT-6 Sol testing and comparison with Claude Opus</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">OpenAI Agents API announcement</span>
   <span class="video-card-meta">OpenAI, September 10, 2026</span>
   <span class="video-card-desc">OpenAI introduces the Agents API for building and deploying autonomous agents at scale with hosted infrastructure.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=0XLGisanEAs" target="_blank" rel="noopener" title="Discovering new antibiotics with ChatGPT">
-  <img src="https://i1.ytimg.com/vi/0XLGisanEAs/hqdefault.jpg" alt="Video: Using ChatGPT to discover new antibiotics" loading="lazy">
-  <span class="video-card-title">Using ChatGPT to discover new antibiotics</span>
-  <span class="video-card-meta">OpenAI, September 10, 2026</span>
-  <span class="video-card-desc">Lab researchers describe using ChatGPT and code generation to accelerate discovery of new antibiotics targeting resistant bacteria.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=abehaRWPt5E" target="_blank" rel="noopener" title="DeepSeek V4.1 Flash Is INSANE, Is THIS the Best Open Model Yet?">
-  <img src="https://i2.ytimg.com/vi/abehaRWPt5E/hqdefault.jpg" alt="Video: Technical testing of DeepSeek V4.1 Flash" loading="lazy">
-  <span class="video-card-title">Technical testing of DeepSeek V4.1 Flash</span>
-  <span class="video-card-meta">Bijan Bowen, September 10, 2026</span>
-  <span class="video-card-desc">Hands-on testing and technical analysis of DeepSeek V4.1 Flash across multiple benchmark tasks and use cases.</span>
 </a>
 </div>
 
