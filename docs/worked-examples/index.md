@@ -4,7 +4,7 @@ last_reviewed: 2026-09-03
 
 # Worked Examples
 
-Accounts of real projects built with artificial intelligence (AI) assistance, written to show the method rather than the result: what was specified, what was checked, what broke, and what a colleague could reuse. **These are software and data projects, not clinical cases.**
+Accounts of real projects built with artificial intelligence (AI) assistance, written to show the method rather than the result: what was specified, what was checked, what broke, and what a colleague could reuse. They are software and data projects rather than clinical cases.
 
 <img class="section-banner" src="../assets/section-worked-examples.svg" alt="">
 

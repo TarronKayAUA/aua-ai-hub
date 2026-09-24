@@ -55,10 +55,8 @@ Audio is the newest frontier, with some arenas now ranking with and without gene
 
 ## A note on medical use
 
-Everything on the [image generation page about medical contexts](image.md#medical-images-are-a-different-question) applies with more force here: there is no public benchmark for clinically accurate generated video, preference scores say nothing about anatomical or procedural correctness, and a fluent clip of a procedure can be confidently wrong in ways a non-expert will not catch. Generated video in teaching needs review for accuracy by someone with the relevant expertise, and the [AI Responsible Use Policy](../governance/policy.md) requires you to verify it and label it as AI-generated.
+Everything on the [image generation page about medical contexts](image.md#medical-images-are-a-different-question) applies with more force here: there is no public benchmark for clinically accurate generated video, preference scores say nothing about anatomical or procedural correctness, and a fluent clip of a procedure can be confidently wrong in ways a non-expert will not catch. It is worth checking a generated clip for anatomical and procedural accuracy, yourself or with a colleague who knows the procedure, before using it in teaching.
 
-!!! danger "Never crossed, whatever the tool"
-    - Patient-identifiable material never enters a generation tool.
-    - Synthetic media depicting real, identifiable people without consent is prohibited territory regardless of intent.
+A generated clip can show a real, identifiable person saying or doing things they never did. Presented as genuine, that is the misrepresentation the [AI Responsible Use Policy](../governance/policy.md#prohibited-uses) prohibits; asking the person first and labeling the clip as generated keeps clear of it, and respects someone whose face and voice are being used.
 
 Many of the tools being ranked are listed under [Video Generation](../tools/index.md#video-generation) in the directory; for text models, see the [Language Model Benchmarks](../benchmarks.md).

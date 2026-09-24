@@ -136,7 +136,7 @@ nav:
       - pathway/index.md
       - "1. How AI Works": pathway/how-ai-works.md
       - "2. Prompting Fundamentals": pathway/prompting.md
-      - "3. The Rules: Data and Integrity": pathway/rules.md
+      - "3. The Policy in Practice: Data and Integrity": pathway/rules.md
       - "4. Teaching and Assessment": pathway/teaching-assessment.md
       - "5. Research and Scholarship": pathway/research.md
       - "6. Clinical Contexts": pathway/clinical.md

@@ -6,12 +6,12 @@
 **Policy Administrators.** American University of Antigua's AI Responsible Use Subcommittee is responsible for this policy's content, administration, training, compliance monitoring, as well as timely revision and review. This subcommittee also oversees the University's AI usage, ensuring that AI is deployed ethically and in compliance with legal and academic requirements.
 
 !!! note "Where to look (a reader's map, not part of the policy)"
-    - What must never go into a public AI tool, and what you must verify: [Responsible Use](#responsible-use)
+    - What stays out of public AI tools, and what you must verify: [Responsible Use](#responsible-use)
     - What is forbidden outright: [Prohibited Uses](#prohibited-uses)
     - Ownership of what AI helps produce: [Intellectual Property Rights and Copyright Issues](#intellectual-property-rights-and-copyright-issues)
     - What happens on a breach, and how to report one: [Consequences of Misuse](#consequences-of-misuse) and [Reporting Misuse](#reporting-misuse)
     - Training the policy commits to: [Education and Training](#education-and-training)
-    - The ten-minute plain-language version: [Module 3: The Rules](../pathway/rules.md)
+    - The ten-minute plain-language version: [Module 3: The Policy in Practice](../pathway/rules.md)
 
 ## I. Policy Statement
 

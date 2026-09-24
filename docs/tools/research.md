@@ -6,14 +6,12 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">For faculty and student researchers</span><span class="meta-chip">About 12 minutes</span>
 
-Artificial intelligence tools now cover most stages of a research project, from finding literature to checking a manuscript's citations. This page maps the current landscape to the tasks researchers actually do, with honest notes on cost, field fit, and where each tool falls short. Entries here also appear in the [tools directory](index.md) with their governance status; a listing is not an endorsement.
+Artificial intelligence (AI) tools now cover most stages of a research project, from finding literature to checking a manuscript's citations. This page maps the current landscape to the tasks researchers actually do, with honest notes on cost, field fit, and where each tool falls short. Entries here also appear in the [tools directory](index.md) with their governance status.
 
-!!! warning "Three rules before any of the tools"
-    **Verify every citation.** Language models fabricate plausible references, and a fabricated citation in a submitted manuscript is a career-level error. Every reference an AI surfaces gets checked against the actual paper before it enters your work.
+!!! note "Two things that keep AI-assisted research sound"
+    **Check each citation against the paper.** Language models can produce references that look right and do not exist, or cite a real paper for a claim it does not make; opening each one before it goes into your manuscript catches both. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) requires references obtained from an AI tool to be verified at the original source.
 
-    **Check the journal's AI policy before you write with AI.** Most journals now follow International Committee of Medical Journal Editors (ICMJE) style guidance: AI tools cannot be authors, and their use in drafting must be disclosed in the methods or acknowledgments. Check the specific journal's instructions for authors before submission, not after.
-
-    **Participant data stays out of public AI tools.** Data covered by an Institutional Review Board (IRB) protocol and participant information do not belong in any publicly available AI tool, free or paid, unless that tool has been specifically vetted and approved for such data under the policy. Your own unpublished drafts are yours: work on them in a paid plan with training on your content turned off, and get your co-authors' agreement for shared work. The [AI Responsible Use Policy](../governance/policy.md) applies to research exactly as it does to teaching.
+    **Participant data follows the policy and your protocol.** Research participant data, including anything identifiable or covered by an Institutional Review Board (IRB) protocol, is among the information the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps out of publicly available AI tools unless the AI Responsible Use Subcommittee has approved a tool for it, and a paid plan on its own is not that approval. Your IRB protocol usually also says where participant data may be stored and processed, so it is worth checking before bringing a new tool into a study. Your own unpublished drafts are yours to work on in a paid plan with training on your content turned off. A shared manuscript is partly your co-authors' work, so it is worth agreeing with them on the tools you will use, which also keeps the paper's AI disclosure complete.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">The pipeline, mapped to tools</p>
@@ -23,9 +21,9 @@ Artificial intelligence tools now cover most stages of a research project, from 
 <li class="hf-box"><p class="hf-box-title">Evidence questions</p><p class="hf-box-sub">Scopus AI, Consensus, Scite, OpenEvidence</p></li>
 <li class="hf-box"><p class="hf-box-title">Synthesize your sources</p><p class="hf-box-sub">Gemini Notebook, grounded in what you upload</p></li>
 <li class="hf-box"><p class="hf-box-title">Analyze</p><p class="hf-box-sub">Claude Science, analysis plan prompt</p></li>
-<li class="hf-box"><p class="hf-box-title">Write and disclose</p><p class="hf-box-sub">verify every citation, check the journal's AI policy</p></li>
+<li class="hf-box"><p class="hf-box-title">Write and disclose</p><p class="hf-box-sub">pre-submission reviewer and reporting guideline auditor prompts</p></li>
 </ol>
-<figcaption>Each stage has a section below; every stage ends with your own verification at the source.</figcaption>
+<figcaption>Each stage has a section below.</figcaption>
 </figure>
 
 If you only want the table, jump to [Cost and field fit at a glance](#cost-and-field-fit-at-a-glance).
@@ -34,7 +32,7 @@ If you only want the table, jump to [Cost and field fit at a glance](#cost-and-f
 
 AUA holds an institution-wide license to [Scopus](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home), Elsevier's citation database of peer-reviewed literature, arranged through the AUA Library in 2026, and the license includes [Scopus AI](https://www.elsevier.com/products/scopus/scopus-ai), the generative layer built on top of it. Ask a question in plain language and it returns a summary with citations and confidence indicators, a concept map of the surrounding topic, the foundational papers behind the answer, and emerging research themes; a Deep Research mode plans and runs a longer investigation and produces a downloadable report. Sign in with your AUA credentials through the library link above.
 
-Know what it is grounded in before you lean on it: Scopus AI works from titles, abstracts, and metadata rather than full text, its coverage concentrates on literature from 2003 onward, and Elsevier itself states that the summaries are not citable. Treat it as a quick way to orient in an unfamiliar literature and surface the papers that matter, then read those papers; the verification rules at the top of this page apply unchanged.
+Know what it is grounded in before you lean on it: Scopus AI works from titles, abstracts, and metadata rather than full text, its coverage concentrates on literature from 2003 onward, and Elsevier itself states that the summaries are not citable. Treat it as a quick way to orient in an unfamiliar literature and surface the papers that matter, then read those papers.
 
 Because it is comprehensive and the directory's one institutionally licensed research tool, this page's default is Scopus first: where Scopus does a task well, start there. The tools below earn their places by doing things Scopus does not.
 
@@ -46,7 +44,7 @@ Start with [Scopus](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/
 
 [ResearchRabbit](https://www.researchrabbit.ai/) does one thing Scopus AI's concept maps do not: give it a few seed papers you already trust and it maps the literature *around them* visually, surfacing related work, shared authorship, and citation neighborhoods. Its free tier currently includes the full feature set, which the company says it intends to keep. Use Scopus to find your seeds, ResearchRabbit to grow them. The directory's [Research](index.md#research) section lists further search assistants, including Undermind, Asta, and SciSpace.
 
-The **deep research modes** inside the general assistants (ChatGPT, Gemini, and Claude all offer one, with the fullest versions on paid plans) will search the open web and produce a cited report on a topic. They are useful for orientation in an unfamiliar area and weaker for exhaustive coverage: they miss paywalled work and their recall is not systematic-review grade. Treat their output as a scouting report, never as the review itself.
+The **deep research modes** inside the general assistants (ChatGPT, Gemini, and Claude all offer one, with the fullest versions on paid plans) will search the open web and produce a cited report on a topic. They are useful for orientation in an unfamiliar area and weaker for exhaustive coverage: they miss paywalled work and their recall is not systematic-review grade. Their output works best as a scouting report that shows you where to dig, rather than as the review itself.
 
 ## Screening and extracting
 
@@ -70,11 +68,11 @@ For a first pass at "what does the literature say about X," licensed [Scopus AI]
 
 ## Analysis and agentic workbenches
 
-For planning statistics before data touches any tool, the [Analysis plan reviewer](../prompts/index.md#analysis-plan-reviewer) prompt in the library is the place to start; it recommends methods and names its assumptions without ever inventing results.
+For planning statistics before you run them, the [Analysis plan reviewer](../prompts/index.md#analysis-plan-reviewer) prompt in the library is the place to start; it recommends methods and names its assumptions without ever inventing results.
 
-The newest category in 2026 is the **agent-based research workbench**, and [Claude Science](https://claude.com/science) is one example: a local-first desktop application. A coordinating agent can query more than 60 scientific databases and draw on a growing set of scientific skills and connectors (genomics, single-cell analysis, proteomics, structural biology, cheminformatics). It runs code on your machine or your lab's servers, and a separate reviewer agent checks citations and calculations in what it produces. Local-first means your files and outputs stay on your device, but the model itself runs in Anthropic's cloud, so anything the agent reads is sent there. The policy's data rules apply unchanged: keep IRB-covered data and participant information out of it unless it has been approved for that data.
+The newest category in 2026 is the **agent-based research workbench**, and [Claude Science](https://claude.com/science) is one example: a local-first desktop application. A coordinating agent can query more than 60 scientific databases and draw on a growing set of scientific skills and connectors (genomics, single-cell analysis, proteomics, structural biology, cheminformatics). It runs code on your machine or your lab's servers, and a separate reviewer agent checks citations and calculations in what it produces. Local-first means your files and outputs stay on your device, but the model itself runs in Anthropic's cloud, so anything the agent reads is sent there. Because the agent opens files on its own, pointing it at a folder that holds only what you mean to share keeps everything else out of its reach.
 
-**Setting it up:** Claude Science is in beta for Pro, Max, Team, and Enterprise Claude plans, on Mac (Apple silicon and Intel) and Linux, from [claude.com/science](https://claude.com/science). Anthropic also advertises a discounted Team plan for scientists at academic and nonprofit institutions, described on that page as available at no cost to start. On a Windows machine, install it inside the Windows Subsystem for Linux (WSL: run `wsl --install` in an administrator terminal, then install the Linux build inside that environment); it can also run on a remote machine over a secure shell (SSH) connection, including a high-performance computing login node. Expect beta rough edges, and hold it to the same standard as everything else here: the reviewer agent reduces checking work, it does not replace it.
+**Setting it up:** Claude Science is in beta for Pro, Max, Team, and Enterprise Claude plans, on Mac (Apple silicon and Intel) and Linux, from [claude.com/science](https://claude.com/science). Anthropic also advertises a discounted Team plan for scientists at academic and nonprofit institutions, described on that page as available at no cost to start. On a Windows machine, install it inside the Windows Subsystem for Linux (WSL: run `wsl --install` in an administrator terminal, then install the Linux build inside that environment); it can also run on a remote machine over a secure shell (SSH) connection, including a high-performance computing login node. Expect beta rough edges. The reviewer agent reduces the checking you do rather than replacing it, so treat its sign-off as a first pass.
 
 For general-purpose agents (coding assistants, computer-use tools) that also serve research workflows, see [AI Agents](agents.md).
 
@@ -84,7 +82,7 @@ The pipeline's last stage, writing and disclosure, is the one no tool changes. A
 
 - **Reporting guidelines** for your design: the EQUATOR Network's reporting checklists, such as STROBE (Strengthening the Reporting of Observational Studies in Epidemiology) for observational studies or CONSORT (Consolidated Standards of Reporting Trials) for trials.
 - **Rigor instruments** like the Medical Education Research Study Quality Instrument (MERSQI) in medical education.
-- **The International Committee of Medical Journal Editors (ICMJE) authorship rules**, which are explicit on three points: an AI tool cannot be an author; AI writing assistance is disclosed in the acknowledgments and AI used in data collection or analysis in the methods; and responsibility for every AI-assisted sentence stays with the humans who sign the paper.
+- **The International Committee of Medical Journal Editors (ICMJE) authorship rules**, which are explicit on three points: an AI tool cannot be an author; AI writing assistance is disclosed in the acknowledgments and AI used in data collection or analysis in the methods; and responsibility for every AI-assisted sentence stays with the humans who sign the paper. Journals often add their own requirements on top, so reading the target journal's instructions for authors early lets you keep a note of which tools you used as you go, rather than piecing it together at submission.
 
 The prompt library's [Pre-submission reviewer](../prompts/index.md#pre-submission-reviewer) and [Reporting guideline auditor](../prompts/index.md#reporting-guideline-auditor) turn those standards into working checks, the [literature review playbook](../playbooks/literature-reviews.md) walks the full workflow, and the [Research and Scholarship module](../pathway/research.md) covers the disclosure norms.
 
@@ -104,6 +102,6 @@ Prices are approximate, checked September 2026 from vendor pages, and change oft
 | [OpenEvidence](#answering-evidence-questions) | Free for verified US clinicians and US medical students | Clinical questions; US-credential holders only |
 | [Claude Science](#analysis-and-agentic-workbenches) | Included in paid Claude plans (beta); a discounted Team plan for scientists is advertised for academic and nonprofit institutions | Computational and laboratory science; statistics-heavy work |
 
-Field notes: **medical education researchers** get the most from Scopus with AI, Semantic Scholar, Elicit, Gemini Notebook, and the prompt library's research prompts; Consensus and OpenEvidence lean clinical and index education literature thinly. **Bench and computational scientists** are the audience Claude Science was built for. **Clinical questions** belong with OpenEvidence (when accessible) and Consensus, always confirmed against the underlying papers.
+Field notes: **medical education researchers** get the most from Scopus with AI, Semantic Scholar, Elicit, Gemini Notebook, and the prompt library's research prompts; Consensus and OpenEvidence lean clinical and index education literature thinly. **Bench and computational scientists** are the audience Claude Science was built for. **Clinical questions** suit OpenEvidence (when accessible) and Consensus, both of which point you to the underlying papers to read.
 
 Suggest a tool for this page through the [About page](../about.md) contact. New tools enter the directory as Listed, a catalog fact rather than a verdict; committee review of any tool can be requested through the [review process](../governance/review-process.md).

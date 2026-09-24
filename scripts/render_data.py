@@ -139,7 +139,7 @@ CATEGORY_DESCRIPTORS = {
 CATEGORY_INTROS = {
     "agents": (
         "The [AI Agents field guide](agents.md) frames this category: what "
-        "agents are good and bad at, the risk model, and where to start. "
+        "agents are good and bad at, what to watch for, and where to start. "
         "[Your First Agent Session](first-session.md) runs one in 20 minutes."
     ),
     "research": (
@@ -201,9 +201,8 @@ STATUS_EXCEPTIONS = ("licensed", "reviewed", "caution", "restricted")
 STATUS_SHORT = {
     "licensed": "procured by the university",
     "reviewed": "examined by the AI Committee; see the note on the card",
-    "caution": "read the note on the card before using it",
+    "caution": "see the note on the card",
     "restricted": "found unsuitable for institutional use",
-    "listed": "in the directory, not an endorsement",
 }
 
 FORMAT_LABELS = {
@@ -460,9 +459,10 @@ def _favicon_img(url: str) -> str:
             "onerror=\"this.style.display='none'\">")
 
 
-# The standing sentence every listing carries. It is stated twice already in
-# hand-authored prose on the tools page, so repeating it on 56 of 75 cards
-# would be noise; only what a note says BEYOND it goes on the card.
+# The standing sentence 56 listings used to carry (removed from the data
+# 2026-09-23; the non-endorsement point is said once, in the directory
+# legend and on About). Still stripped so a pasted-back copy never reaches
+# a card; only what a note says BEYOND it goes on the card.
 BOILERPLATE_NOTE = ("Listed for discovery, not endorsement; "
                     "the policy's data rules apply.")
 
@@ -504,16 +504,23 @@ def _join_names(names: list[str]) -> str:
 
 
 def _tool_standing_sentence(group: list[dict]) -> str:
-    """One line stating the governance standing of a set of tools, e.g.
-    "All 7 are Listed: in the directory, not an endorsement." Every set of
-    chooser results carries one, so the non-endorsement point travels with
-    the results rather than sitting only at the top of the page."""
+    """One line naming the standings in a set of tools that are more than
+    Listed, e.g. "Scopus with AI is Licensed: procured by the university.",
+    or "" when every tool in the set is simply Listed. The non-endorsement
+    point is said once, in the directory's legend and on the About page,
+    rather than under every set of results (owner decision, 2026-09-23)."""
     counts: dict[str, int] = {}
     for tool in group:
-        counts[tool["governance_status"]] = counts.get(tool["governance_status"], 0) + 1
+        if tool["governance_status"] in STATUS_EXCEPTIONS:
+            counts[tool["governance_status"]] = counts.get(tool["governance_status"], 0) + 1
+    if not counts:
+        return ""
     if len(counts) == 1:
-        standing = next(iter(counts))
-        lead = f"{group[0]['name']} is" if len(group) == 1 else f"All {len(group)} are"
+        standing, n = next(iter(counts.items()))
+        if n == 1:
+            lead = next(t["name"] for t in group if t["governance_status"] == standing) + " is"
+        else:
+            lead = f"All {n} are" if n == len(group) else f"{n} of these are"
         return f"{lead} {STATUS_LABELS[standing][0]}: {STATUS_SHORT[standing]}."
     parts = [f"{counts[s]} {STATUS_LABELS[s][0]} ({STATUS_SHORT[s]})"
              for s in STATUS_SHORT if s in counts]
@@ -594,14 +601,17 @@ def _render_tool_chooser(config) -> str:
         guide = " ".join((t.get("guide") or "").split())
         standing = _tool_standing_sentence(group)
         if t.get("from_status") == "licensed" and institutional:
-            standing += (f" {len(institutional)} more carry the Institutional cost "
-                         "label, meaning they need an organization's license: "
-                         f"{_join_names(institutional)}.")
+            standing = (standing + " " if standing else "") + (
+                f"{len(institutional)} more carry the Institutional cost "
+                "label, meaning they need an organization's license: "
+                f"{_join_names(institutional)}.")
         lines += [f'<div class="tt-item" {attrs} markdown>', "",
                   f"**{t['label']}** ({len(group)}): {links}", "{ .tt-tools }", ""]
         if guide:
             lines += [guide, "{ .tt-guide }", ""]
-        lines += [standing, "{ .tt-standing }", "", "</div>", ""]
+        if standing:
+            lines += [standing, "{ .tt-standing }", ""]
+        lines += ["</div>", ""]
     lines += ["</section>", ""]
     out = "\n".join(lines)
     if "\u2014" in out:
@@ -673,7 +683,7 @@ def _render_tools(config) -> str:
         body = ['<div class="tool-grid">']
         for tool in sorted(group, key=lambda t: t["name"].lower()):
             status_label, status_css = STATUS_LABELS[tool["governance_status"]]
-            badge = _badge(status_label, status_css, tool.get("status_note", ""))
+            badge = _badge(status_label, status_css, _card_note(tool.get("status_note", "")))
             note_text = _card_note(tool.get("status_note", ""))
             note_html = (f'  <p class="tool-card-note">{note_text}</p>\n'
                          if note_text else "")
@@ -1201,7 +1211,7 @@ def _render_skills(config) -> str:
                 "render_data hook: unknown skill provenance "
                 f"{entry['provenance']!r} in {entry['name']!r}; "
                 "data/skills.yaml is limited to first-party and "
-                "AUA-written skills by policy"
+                "AUA-written skills by site curation"
             )
         for field in ("what", "surfaces", "setup", "url"):
             if not str(entry.get(field, "")).strip():

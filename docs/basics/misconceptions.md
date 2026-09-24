@@ -28,7 +28,7 @@ Fluency and accuracy are unrelated in these systems. The model produces equally 
 </ul>
 <p class="hf-box-foot">Usually reliable; still read it.</p>
 </div>
-<div class="hf-box hf-box--stop">
+<div class="hf-box hf-box--warn">
 <p class="hf-box-title">Pulled from the model's memory</p>
 <ul>
 <li>specific facts and numbers</li>
@@ -48,7 +48,7 @@ The mechanism really is next-word prediction, but the conclusion does not follow
 
 ## :material-sync-off: "The model learns from my conversations as we talk"
 
-Within one conversation the model can use what you said earlier, but its underlying knowledge is not updated by chatting. Training is a separate, offline process. A correction you make today does not change the model itself. If your assistant's memory feature is on, it may store a note about the correction and add it to future conversations, which is retrieval, not learning (see [Memory: what persists between conversations](better-answers.md#memory-what-persists-between-conversations)). Whether a vendor later uses your conversations as future training data is a separate privacy question governed by the vendor's data policy, which is one reason [institutional review of tools](../governance/review-process.md) matters.
+Within one conversation the model can use what you said earlier, but its underlying knowledge is not updated by chatting. Training is a separate, offline process. A correction you make today does not change the model itself. If your assistant's memory feature is on, it may store a note about the correction and add it to future conversations, which is retrieval, not learning (see [Memory: what persists between conversations](better-answers.md#memory-what-persists-between-conversations)). Whether a vendor later uses your conversations as future training data is a separate privacy question, answered by the vendor's data policy, and most major assistants let you turn that use off in their settings.
 
 ## :material-magnify-close: "AI detectors can reliably catch AI-generated writing"
 
@@ -68,19 +68,19 @@ Verification works differently here. With text you can check a claim against a s
 
 ### Why the pictures come out wrong
 
-The numbers are not marginal. A 2025 study generated 1,500 images for hand surgery patient education and found fabricated anatomy in 99.8 percent of them, even though four of the six generators matched real patient-education materials on visual detail and clarity ([Duggan et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12547223/)). A 2024 study found that no generator tested could produce a skull, heart, or brain illustration that was both detailed and accurate ([Noel, 2023](https://doi.org/10.1002/ase.2336)). Across the evaluations collected in the [AI-Generated Images in Teaching](../playbooks/ai-images.md) playbook, foramina, suture lines, rib counts, and muscle attachments are among the structures most often wrong, which is to say the structures students are examined on.
+The numbers are not marginal. A 2025 study generated 1,500 images for hand surgery patient education and found fabricated anatomy in 99.8 percent of them, even though four of the six generators matched real patient-education materials on visual detail and clarity ([Duggan et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12547223/)). A 2024 study found that no generator tested could produce a skull, heart, or brain illustration that was both detailed and accurate ([Noel, 2024](https://doi.org/10.1002/ase.2336)). Across the evaluations collected in the [AI-Generated Images in Teaching](../playbooks/ai-images.md) playbook, foramina, suture lines, rib counts, and muscle attachments are among the structures most often wrong, which is to say the structures students are examined on.
 
 The reason is mechanical. These models are good at rendering recognizable objects and measurably worse at counting and at spatial relationships, and anatomy is largely counting and spatial relationships.
 
 Not every generated image is wrong, and the tools have improved between generations. That is exactly what makes them risky for study: some structures come out right, and nothing on the image tells you which ones.
 
-Why this matters more than an ordinary AI error: a wrong sentence is easy to overwrite, but a wrong picture studied during first exposure is memorable, and confident wrong beliefs are the hard ones to shift. In one study of medical students, an incorrect answer held with confidence was corrected only 35.8 percent of the time, against 61.4 percent when the student was unsure ([Versteeg et al., 2020](https://doi.org/10.1186/s12909-020-02166-6)). An image you generated yourself, on your own screen, with nobody checking it, is the ideal way to manufacture exactly that kind of confidence.
+Why this matters more than an ordinary AI error: a wrong sentence is easy to overwrite, but a wrong picture studied during first exposure is memorable, and confident wrong beliefs are the hard ones to shift. In one study of medical students, an incorrect answer held with confidence was corrected only 35.8 percent of the time, against 61.4 percent when the student was unsure ([Versteeg et al., 2020](https://doi.org/10.1186/s12909-020-02166-6)). An image you generate on your own, with nobody checking it, can build exactly that kind of confident wrong belief.
 
-### What to do instead (students)
+### What works better (students)
 
 - Use your atlas, your course materials, and any three-dimensional (3D) anatomy platform the library gives you access to (ask a librarian which ones). Those platforms render a fixed model that anatomists built and reviewed, so rotating the view just moves the camera around it. The anatomy is not re-invented for each new angle, which is precisely what an image generator does. They are different kinds of tool, even though both put a picture on your screen.
 - If the view you want seems not to exist, look harder before concluding it does not. Atlases often show a hidden structure by removing what covers it rather than by changing the angle, and the plate you need may be captioned in a way the index does not surface. Ask a faculty member or a librarian.
-- Text about images is a different case. Asking an assistant to explain a relationship you are looking at in your atlas is ordinary study use, subject to the usual verification. Asking it to draw the structure is not.
+- Text about images is a different case. Asking an assistant to explain a relationship you are looking at in your atlas is ordinary study use, subject to the usual verification. Asking it to draw the structure brings back the counting and spatial errors described above, so treat anything it draws as a sketch to check against your atlas, which stays the source you learn from.
 - If a classmate shares a generated figure in a study group, treat it as unverified. It may be the most memorable thing you see that day.
 
 Faculty: the teaching-side guidance, including the one workflow with evidence behind it, is the [AI-Generated Images in Teaching](../playbooks/ai-images.md) playbook.

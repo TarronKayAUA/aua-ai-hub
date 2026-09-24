@@ -14,7 +14,7 @@ last_reviewed: 2026-09-01
 
 ## The core idea
 
-A large language model is a system trained on enormous amounts of text to do one thing: predict the next small piece of text, over and over, until an answer takes shape. Everything impressive (fluent explanations, working code, a differential diagnosis discussion) and everything dangerous (confident fabrication, invented citations) follows from that single mechanism. The model is not consulting a database of facts. It is producing the most plausible continuation of the conversation, and most of the time the most plausible continuation is also true. When it is not, the output looks exactly as confident.
+A large language model is a system trained on enormous amounts of text to do one thing: predict the next small piece of text, over and over, until an answer takes shape. Everything impressive (fluent explanations, working code, a differential diagnosis discussion) and everything that goes wrong (confident fabrication, invented citations) follows from that single mechanism. The model is not consulting a database of facts. It is producing the most plausible continuation of the conversation, and most of the time the most plausible continuation is also true. When it is not, the output looks exactly as confident.
 
 For the diagrams behind this module, read [How LLMs Work](../basics/how-llms-work.md), a ten-minute plain-language tour of the prediction loop, the context window, how training works, and why hallucination happens. Read it now or after the self-check; this module stands on its own.
 
@@ -22,7 +22,7 @@ Three consequences worth internalizing:
 
 1. **Knowledge has a date.** Models learn from training data with a cutoff. Anything after that date is invisible to the model unless it can search the web or you paste the material in. For a fast-moving field, always ask: would the answer have changed recently?
 2. **Memory has a size.** The context window is the model's working memory for your conversation. Very long conversations and documents can push earlier material out of focus. New conversation, fresh start.
-3. **Fluency is not accuracy.** The polish of the prose carries no information about its truth. Verification is your job, every time, and the [AI Responsible Use Policy](../governance/policy.md) makes that responsibility explicit.
+3. **Fluency is not accuracy.** The polish of the prose carries no information about its truth. Check what you rely on, with more care the more depends on it (Module 2 shows how to match the check to the stakes); the [AI Responsible Use Policy](../governance/policy.md#responsible-use) requires you to verify AI-generated content before you use it in academic work, research, or clinical work.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">The three consequences worth internalizing</p>
@@ -40,10 +40,10 @@ Three consequences worth internalizing:
 <div class="hf-box hf-box--ok">
 <p class="hf-box-title">Fluency is not accuracy</p>
 <p class="hf-quote">"Confident, polished, specific" tells you nothing about whether it is true.</p>
-<p class="hf-box-ok">Verification is your job, every time.</p>
+<p class="hf-box-ok">Check it before you rely on it.</p>
 </div>
 </div>
-<figcaption>Everything impressive and everything dangerous about these systems follows from the same mechanism.</figcaption>
+<figcaption>Everything impressive and everything that goes wrong with these systems follows from the same mechanism.</figcaption>
 </figure>
 
 ## Self-check

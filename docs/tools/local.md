@@ -10,8 +10,7 @@ Every assistant in the [tools directory](index.md) runs in a vendor's cloud: wha
 
 **Why bother.** Three reasons people run models locally: privacy (your text never leaves your hardware), cost (the models and the tools below are free), and learning (nothing demystifies a language model like running one yourself). The honest trade-off: local models are smaller and noticeably less capable than frontier cloud models, and they run slower. For drafting an email that is fine; for hard reasoning you will notice the gap.
 
-!!! warning "Local does not mean exempt"
-    Running a model locally removes the vendor from the picture, but institutional rules still apply. The [AI Responsible Use Policy](../governance/policy.md) governs work with patient information and student records regardless of where the model runs.
+Running a model locally takes the vendor out of the picture: nothing you type is collected, stored, or used for training by a third party, which is the risk the [AI Responsible Use Policy](../governance/policy.md#responsible-use) describes for public tools. Privacy law follows the data rather than the tool, so patient information and student records on your own machine are still covered by the Health Insurance Portability and Accountability Act (HIPAA) and the Family Educational Rights and Privacy Act (FERPA), as the policy notes.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Where your text goes</p>
@@ -34,7 +33,6 @@ Every assistant in the [tools directory](index.md) runs in a vendor's cloud: wha
 <div class="hf-box"><p>a server you rent</p></div>
 </div>
 </div>
-<p class="hf-note">The policy's data rules apply in all three lanes.</p>
 <figcaption>Privacy is the headline reason to run locally: the middle lane is the only one where nothing leaves.</figcaption>
 </figure>
 
@@ -53,7 +51,7 @@ For the full picture (what tokens per second feels like, why video memory beats 
 
 1. **Install a runner.** [LM Studio](https://lmstudio.ai) is the simplest start: a desktop application where you browse models, click download, and chat, no command line involved. [Ollama](https://ollama.com) works from the command line and also has its own desktop chat app, and it pairs with [Open WebUI](https://openwebui.com) if you want a browser chat interface on top. All three are free for local use and listed in the [directory](index.md).
 2. **Pick a small model first.** Start with something in the 4 billion parameter class (a small Gemma or Qwen variant), confirm it runs smoothly, then work upward to the largest model your memory allows. The [open-weights section](index.md#open-weights-models) lists the major families, the [Benchmarks page](../benchmarks.md) tracks how they currently rank, and both runners show curated, ready-to-download versions of all of them.
-3. **Calibrate expectations.** Replies stream more slowly than cloud assistants, knowledge cutoffs are real, and there is no web search unless you add one. Treat outputs with the same verification habits as any other model, per the [misconceptions page](../basics/misconceptions.md).
+3. **Calibrate expectations.** Replies stream more slowly than cloud assistants, knowledge cutoffs are real, and there is no web search unless you add one. Smaller local models make the same kinds of mistakes as cloud assistants, and more of them; the [misconceptions page](../basics/misconceptions.md) covers what to watch for.
 
 ## Beyond chat: images, video, and voice
 
@@ -65,7 +63,7 @@ For voice, [Whisper](https://github.com/openai/whisper) (already in the director
 
 If a model you want will not fit in your hardware, you can rent the hardware instead: cloud providers such as Amazon Web Services (AWS) offer GPU instances by the hour, and GPU rental marketplaces like [RunPod](https://www.runpod.io) and [Vast.ai](https://vast.ai) make the same thing simpler and usually cheaper, with one-click templates for Ollama, Open WebUI, and ComfyUI. You get capability no laptop can match and pay only while the machine runs.
 
-Be clear-eyed about what this trades away. The moment your model runs on rented hardware, your data leaves your machine, which was the headline reason to run locally in the first place. A rented GPU running an open-weights model is still more under your control than a consumer chatbot (you choose the model, nothing is retained to train on by default, and you can destroy the instance), but the [AI Responsible Use Policy](../governance/policy.md)'s data rules apply exactly as they do to any hosted tool: no patient information, student records, or confidential material. Add the practical frictions (per-hour billing that keeps running if you forget to shut down, and more setup than a desktop app) and the honest summary is: rent for capability and experiments, run truly locally for privacy, and use the directory's cloud tools, within the policy's data rules, for everyday work.
+The moment your model runs on rented hardware, your data leaves your machine, which was the headline reason to run locally in the first place. A rented GPU running an open-weights model is still more under your control than a consumer chatbot (you choose the model, nothing is retained to train on by default, and you can destroy the instance), but the data now sits in a provider's data center, so the [AI Responsible Use Policy](../governance/policy.md#responsible-use)'s section on sensitive information applies as it would to any hosted service. Add the practical frictions (per-hour billing that keeps running if you forget to shut down, and more setup than a desktop app) and the honest summary is: rent for capability and experiments, run truly locally for privacy, and use the directory's cloud tools for everyday work.
 
 ## Watch: setting it up
 

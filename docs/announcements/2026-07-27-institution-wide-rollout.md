@@ -12,6 +12,6 @@ Where to start, depending on what you need:
 - [This Week](../news/this-week.md): curated AI news, videos, and podcasts from the last seven days, refreshed nightly, with a highlights digest every Friday.
 - [Governance](../governance/index.md): the approved AI Responsible Use Policy in full, the committee behind it, and how a tool gets reviewed.
 
-Two rules apply everywhere, whatever the tool: patient information and student records never enter public AI tools. [The Rules](../pathway/rules.md) covers those and the rest of the policy's expectations in about ten minutes.
+Two rules apply everywhere, whatever the tool: patient information and student records never enter public AI tools. [The Policy in Practice](../pathway/rules.md), then called The Rules, covers those and the rest of the policy's expectations in about ten minutes. *(Update, September 2026: more precisely, the policy keeps patient information and student records out of public AI tools unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data.)*
 
 The site is maintained continuously and will keep growing. Corrections, questions, and suggestions are all welcome, and they shape what gets built next: the [feedback form](https://forms.office.com/r/5a8RCi2YKP) takes about two minutes, and contact details are on the [About page](../about.md).

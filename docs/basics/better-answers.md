@@ -105,7 +105,7 @@ Most consumer assistants now offer a **memory feature**: facts and preferences c
 
 - **Memory is retrieval, not learning.** The model is not retrained on your chats; stored notes are quietly added to your context each conversation. That also means memory consumes window space and can mislead like any other context: a stale stored fact ("working on the cardiology exam") shapes answers long after it stops being true.
 - **Review it periodically.** Every major assistant lets you review and delete stored memories in settings, and some let you edit them in place; prune anything stale or wrong the way you would clean up standing instructions. Some assistants also draw on your past conversations automatically, separately from the visible memory list; that too is a setting you can turn off.
-- **The data rules apply to memory with extra force.** A fact stored in memory resurfaces in every future conversation. Patient information and student records never go into a consumer assistant at all; the [AI Responsible Use Policy](../governance/policy.md)'s lines on protected health information and records covered by the Family Educational Rights and Privacy Act (FERPA) cover what a tool stores as well as what you type, and memory is where a slip would persist. The practical mechanism: turn memory off, or use a temporary chat, whenever a conversation goes anywhere near those lines, and delete any stored entry that slips through. A temporary chat keeps the exchange out of your saved history, but the vendor may still keep a copy for a limited period, so it is never a way to enter protected data.
+- **Memory carries details forward.** A fact stored in memory resurfaces in every future conversation. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps protected health information and student records covered by the Family Educational Rights and Privacy Act (FERPA) out of publicly available AI tools (section C.3 under Responsible Use), and memory is where a detail entered by mistake would linger. A practical habit: use a temporary chat, or turn memory off, for any conversation whose details you would not want carried into later ones, and delete any stored entry you did not mean to keep. A temporary chat keeps the exchange out of your saved history, though the vendor may still keep a copy for a limited period, so it does not change which data belongs in the tool.
 
 ## Standing instructions: set defaults once
 
@@ -117,7 +117,7 @@ Two habits keep standing instructions useful. **Keep them short and stable**: a 
 
 Before a task that matters, thirty seconds of setup:
 
-1. **Nothing sensitive:** no patient information, no student records, and memory off or a temporary chat if the topic goes anywhere near them.
+1. **Memory set on purpose:** a temporary chat, or memory off, for anything you would rather not see carried into later conversations.
 2. **Right container:** fresh conversation for a new task; standing instructions carry your defaults.
 3. **Curated input:** only the material the task needs, key passage quoted next to the question.
 4. **Stated use:** say what the material is for and what the output should look like.

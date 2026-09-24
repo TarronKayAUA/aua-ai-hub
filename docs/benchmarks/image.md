@@ -45,7 +45,7 @@ A model can win on beauty and lose on every one of those.
 </div>
 </div>
 <p class="hf-note">Blind at the vote, honest in aggregate: it measures preference at scale.</p>
-<p class="hf-note hf-note--alert">The caveat: preference rewards what looks good, which is not always what is accurate.</p>
+<p class="hf-note">Preference rewards what looks good, which is not always what is accurate.</p>
 <figcaption>The arena mechanism behind every leaderboard on this page and the video page.</figcaption>
 </figure>
 
@@ -88,10 +88,8 @@ No public leaderboard ranks models on generating *accurate* medical imagery, and
 - The technical literature on medical image synthesis and translation is advancing quickly, with its own evaluation metrics distinct from preference arenas; a 2025 review in Medical Image Analysis maps that landscape ([Chen et al., 2025](https://doi.org/10.1016/j.media.2025.103605)).
 - For teaching figures specifically, the [AI-Generated Images in Teaching](../playbooks/ai-images.md) playbook covers the anatomy evaluations, what to reach for instead, and when a flawed image is defensible in a session.
 
-The practical guidance for the American University of Antigua College of Medicine (AUACOM) follows directly: treat general-purpose image models as illustration tools, not anatomy references. A generated image used in teaching needs review for accuracy by someone with the relevant expertise, and the [AI Responsible Use Policy](../governance/policy.md) requires you to verify AI-generated content and label it as AI-generated.
+The practical guidance for the American University of Antigua College of Medicine (AUACOM) follows directly: treat general-purpose image models as illustration tools, not anatomy references. Before a generated image goes in front of students, it is worth checking its anatomy and pathology, yourself or with a colleague who knows the area, since pathological accuracy is where the studies above found generated images weakest. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) requires AI-generated content to be checked for accuracy and labeled as AI-generated, according to academic standards and any course or departmental guidelines.
 
-!!! danger "Never crossed, whatever the tool"
-    - Identifiable patient images never enter a generation tool; that is patient data in a public tool, regardless of creative intent.
-    - Generated imagery has no place in diagnosis.
+Identifiable patient images are patient health information, which the policy keeps out of publicly available AI tools unless the AI Responsible Use Subcommittee has approved a tool for that data.
 
 To run open image models yourself, see [Running Models Locally](../tools/local.md#beyond-chat-images-video-and-voice). Image generation tools are listed under [Image Generation](../tools/index.md#image-generation) in the tools directory. For language model rankings, see [Language Model Benchmarks](../benchmarks.md); for video generation, the [Video Generation Benchmarks](video.md).

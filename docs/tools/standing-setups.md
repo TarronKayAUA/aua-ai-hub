@@ -18,7 +18,7 @@ last_reviewed: 2026-09-01
 
 The common idea: **instructions plus materials, attached to the work instead of the conversation.** A project's instructions apply to every chat inside it, and its uploaded knowledge is available without re-uploading.
 
-There is a fourth container worth knowing about, and it works the other way around: a [skill](skills.md) attaches instructions to a *kind of task* rather than to one body of work, so it applies wherever you are. If you use claude.ai or Cowork, four of them are already available to you, and that page also covers why skills from unknown authors deserve real caution. A per-course [Gemini Notebook](gemini-notebook.md) is the same pattern for source-grounded questions: your lectures uploaded once, answered from with citations all term.
+There is a fourth container worth knowing about, and it works the other way around: a [skill](skills.md) attaches instructions to a *kind of task* rather than to one body of work, so it applies wherever you are. If you use claude.ai or Cowork, four of them are already available to you, and that page also covers how to judge a skill someone else wrote. A per-course [Gemini Notebook](gemini-notebook.md) is the same pattern for source-grounded questions: your lectures uploaded once, answered from with citations all term.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Anatomy of a standing setup</p>
@@ -45,7 +45,7 @@ Claude keeps each project's memory separate from your other work. In ChatGPT, do
 The highest-value standing setup for faculty is one project per course:
 
 1. **Create the project** and name it for the course.
-2. **Upload the knowledge**: syllabus, learning objectives, the session schedule, your reading list, and any handouts you would give a student. Only material you would hand to any student belongs here: no rosters, no grades, no individual student work (the [AI Responsible Use Policy](../governance/policy.md)'s data rules apply to knowledge bases exactly as to chat messages).
+2. **Upload the knowledge**: syllabus, learning objectives, the session schedule, your reading list, and any handouts you would give a student. Rosters, grades, and individual student work are student education records, which a course assistant has no use for, and identifiable patient details are protected health information (PHI); the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps both out of publicly available AI tools unless a tool has been approved for them.
 3. **Write the instructions**, which are just a standing version of a good prompt: who the assistant is (a teaching assistant for this specific course and level), what it answers from (the uploaded materials first, citing the section it drew on), and your standing rules (US English, the course's terminology, "say so when the materials do not cover a question rather than guessing").
 4. **Use it all term.** Draft announcements, generate practice questions against the actual objectives, and check whether a planned session duplicates an earlier one, all without re-explaining the course once.
 
@@ -82,9 +82,8 @@ The heuristic for what to add: **when the agent makes the same mistake twice, or
 <figcaption>Layered, not merged: the broad rules travel with you, the specific ones live with the work, and repeated feedback flows back in.</figcaption>
 </figure>
 
-## Guardrails
+## Keeping a setup accurate
 
-- A knowledge base is an upload: everything the [policy](../governance/policy.md) says about data applies. Course materials you would give any student are fine; anything identifiable about individual students or patients is not, in a project or anywhere else.
 - Instructions are advice to the model, not enforcement. A project instructed to answer only from its knowledge will still occasionally reach beyond it; spot-check citations against the uploaded materials, especially early on.
 - Projects accumulate. Review a long-lived project's knowledge each term; a stale syllabus in the knowledge base produces confidently outdated answers, which is worse than no assistant at all.
 

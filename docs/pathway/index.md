@@ -17,7 +17,7 @@ The university's [AI Responsible Use Policy](../governance/policy.md) commits AU
 
 - <span class="route-n">1</span> [How AI Works](how-ai-works.md)
 - <span class="route-n">2</span> [Prompting Fundamentals](prompting.md)
-- <span class="route-n">3</span> [The Rules](rules.md)
+- <span class="route-n">3</span> [The Policy in Practice](rules.md)
 
 </div>
 
@@ -53,7 +53,7 @@ For everyone, in order. About 35 minutes total: what these systems are, how to d
 | --- | --- | --- |
 | 1 | [How AI Works](how-ai-works.md) | ~10 min |
 | 2 | [Prompting Fundamentals](prompting.md) | ~15 min |
-| 3 | [The Rules](rules.md) | ~10 min |
+| 3 | [The Policy in Practice](rules.md) | ~10 min |
 
 ## Stage 2: Your Work
 
@@ -83,6 +83,6 @@ For when the basics feel comfortable: how to work with AI that can read files, r
 
 **What it aligns with.** The pathway's coverage is mapped to the [Artificial Intelligence Competencies for Medical Educators](https://www.aamc.org/about-us/mission-areas/medical-education/advancing-ai-resource-collection/artificial-intelligence-competencies-medical-educators), the framework compiled by the Central Group on Educational Affairs (CGEA) Faculty Development Special Interest Group and published through the Association of American Medical Colleges (AAMC). Each module notes the competency domain it serves; the six core modules cover all seven domains, and Module 7 deepens Working with AI and Critical Appraisal of AI Outputs.
 
-**What it is not.** Completing the pathway is not (yet) a formally designated training requirement; designation is a committee decision. It also does not certify anything. It makes you a more capable, safer user of these tools, which is the point.
+**What it is not.** The pathway is not a training requirement, and completing it does not certify anything. It is here to make you a more capable user of these tools.
 
 Questions, corrections, or suggestions: use the [feedback form](https://forms.office.com/r/5a8RCi2YKP) or the contact route on the [About page](../about.md).

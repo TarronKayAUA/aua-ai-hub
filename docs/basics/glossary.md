@@ -108,7 +108,7 @@ An open standard that lets AI assistants connect to external tools and data sour
 
 ## Memory (assistant memory)
 
-A feature that stores facts and preferences from your conversations and adds them to future ones. It is retrieval, not learning: the model itself is unchanged. Keep patient and student data out of it. See [Getting Better Answers](better-answers.md#memory-what-persists-between-conversations).
+A feature that stores facts and preferences from your conversations and adds them to future ones. It is retrieval, not learning: the model itself is unchanged. You can review and delete what it stores in settings. See [Getting Better Answers](better-answers.md#memory-what-persists-between-conversations).
 
 ## Model card
 
@@ -136,7 +136,7 @@ The pause where an agent asks your approval before an action (writing a file, ru
 
 ## PHI and FERPA considerations
 
-Protected health information (PHI; the policy calls it patient health information) is patient data covered by privacy law; the Family Educational Rights and Privacy Act (FERPA) covers student education records. Neither belongs in a consumer AI tool. Use only tools approved for such data, and when in doubt, leave the data out.
+Protected health information (PHI; the policy calls it patient health information) is patient data covered by privacy law; the Family Educational Rights and Privacy Act (FERPA) covers student education records. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps both out of publicly available AI tools unless the AI Responsible Use Subcommittee has approved a tool for that data (section C.3 under Responsible Use). Many tasks work just as well when the case or record is described in general terms, with nothing that could identify the patient or student.
 
 ## Pretraining
 

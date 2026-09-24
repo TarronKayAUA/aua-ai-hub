@@ -26,7 +26,7 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     ---
 
-    Task-based routes for teaching and administrative work: lectures, exam items, syllabus statements, research, and the data rules.
+    Task-based routes for teaching and administrative work: lectures, exam items, syllabus statements, research, and what the policy asks.
 
     [Start on the faculty and staff page](faculty.md)
 
@@ -34,7 +34,7 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     ---
 
-    Where to start as a student: three short modules, study tools, the rules in brief, and how to get better answers.
+    Where to start as a student: three short modules, study tools, the policy in brief, and how to get better answers.
 
     [Start on the students page](students.md)
 
@@ -50,7 +50,7 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     ---
 
-    A curated directory of AI tools, each carrying a visible governance status, grouped by what you want to get done.
+    A curated directory of AI tools, grouped by what you want to get done, each showing the institution's relationship with it.
 
     [Open the directory](tools/index.md)
 
@@ -58,7 +58,7 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     ---
 
-    Reusable prompt templates for study and faculty tasks, each marked Draft or Reviewed (provisional until the AI Committee ratifies the review process).
+    Reusable prompt templates for study and faculty tasks, each marked Draft or Reviewed.
 
     [Open the library](prompts/index.md)
 
@@ -66,7 +66,7 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     ---
 
-    One task walked end to end: lectures, exam questions, feedback, score reports, and more, guardrails attached.
+    One task walked end to end: lectures, exam questions, feedback, score reports, and more, with verification steps built in.
 
     [Pick your task](playbooks/index.md)
 
@@ -76,7 +76,7 @@ One reliable place for the American University of Antigua College of Medicine (A
 
     The university's AI Responsible Use Policy, the committee behind it, and how tools get reviewed.
 
-    [See how AI is governed](governance/index.md) · [The data rules](pathway/rules.md)
+    [See how AI is governed](governance/index.md) · [The policy in ten minutes](pathway/rules.md)
 
 - :material-calendar-star:{ .lg .middle } __Conferences and Opportunities__
 

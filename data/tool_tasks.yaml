@@ -76,9 +76,7 @@
   from_category: writing_slides
   group: task
   guide: >-
-    Grammar, clarity, and language feedback. For feedback on student work,
-    see the [Feedback on Student Writing](../playbooks/writing-feedback.md)
-    playbook first.
+    Grammar, clarity, and language feedback. For feedback on student work, the [Feedback on Student Writing](../playbooks/writing-feedback.md) playbook shows a method that keeps the student's identity out of the tool and the judgment with you.
 
 - id: transcribe
   label: Transcribe audio
@@ -104,9 +102,7 @@
   from_category: image_generation
   group: task
   guide: >-
-    Generated anatomy looks right and is often wrong. Read
-    [AI-Generated Images in Teaching](../playbooks/ai-images.md) before
-    using one in a session.
+    Generated anatomy looks right and is often wrong. [AI-Generated Images in Teaching](../playbooks/ai-images.md) shows how to check a figure before it goes in front of a class.
 
 - id: video
   label: Make video
@@ -114,8 +110,7 @@
   from_category: video_generation
   group: task
   guide: >-
-    Avatar and voice features need documented consent before using any
-    real person's face or voice.
+    Short clips from text or images, and presenter-style avatar videos from a script.
 
 - id: audio
   label: Make audio
@@ -123,8 +118,7 @@
   from_category: music_audio
   group: task
   guide: >-
-    Music, narration, and cleanup of recorded speech. Voice cloning needs
-    documented consent from the person whose voice is used.
+    Music, narration, and cleanup of recorded speech.
 
 - id: agents
   label: Hand off a task
@@ -142,10 +136,7 @@
   from_category: local
   group: data
   guide: >-
-    These run on your own machine, so what you type or record stays there.
-    [Running Models Locally](local.md) is the walkthrough and [Hardware for
-    Local AI](hardware.md) sizes the machine. The two data rules still
-    apply.
+    These run on your own machine, so what you type or record stays there rather than on a vendor's servers. [Running Models Locally](local.md) is the walkthrough and [Hardware for Local AI](hardware.md) sizes the machine. Patient and student records remain covered by the privacy section of the [AI Responsible Use Policy](../governance/policy.md#responsible-use) wherever they are processed.
 
 - id: licensed
   label: See what AUA licenses
@@ -153,6 +144,4 @@
   from_status: licensed
   group: data
   guide: >-
-    Licensed means institutionally licensed or procured by the university;
-    this list grows as the university licenses more. The policy's data
-    rules apply to licensed tools as everywhere.
+    Licensed means institutionally licensed or procured by the university; this list grows as the university licenses more. A license on its own does not make a tool approved for patient or student records: the [AI Responsible Use Policy](../governance/policy.md#responsible-use) reserves that for tools the AI Responsible Use Subcommittee has vetted for such data.

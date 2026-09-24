@@ -8,7 +8,7 @@ last_reviewed: 2026-09-01
 
 ## The task
 
-Set explicit, enforceable expectations for student artificial intelligence (AI) use in your course. The university's [AI Responsible Use Policy](../governance/policy.md) deliberately delegates labeling and attribution standards to "specific course or departmental guidelines," which means the syllabus is where your line gets drawn. Leaving AI out of your syllabus still sends a message: students will read the silence as permission.
+Set clear expectations for student artificial intelligence (AI) use in your course. The university's [AI Responsible Use Policy](../governance/policy.md) leaves labeling and attribution standards to "specific course or departmental guidelines," so your syllabus is where students look to learn what your course expects. Silence leaves them guessing, and students who guess differently end up working to different standards.
 
 ## Where AI helps, and where it hurts
 
@@ -18,11 +18,11 @@ A model can help you draft and stress-test your statement (feed it your assessme
 
 - Your assignment list, and for each: what skill it actually builds or measures.
 - Your department's existing guidance, if any, so your statement does not conflict with it.
-- The fixed points no course statement can relax. From the AI Responsible Use Policy: accountability stays with the student, AI-generated content must not be presented as original work, and sensitive data stays out of public AI tools. From the existing academic integrity rules: unauthorized AI use in secure examinations is academic dishonesty.
+- What the policy already settles, so your statement can build on it rather than repeat it: students stay accountable for what they submit, AI-generated content is not presented as their own original work, and sensitive data, such as patient information and other students' records, stays out of public AI tools. The Student Handbook adds that unauthorized or unacknowledged AI use in coursework, assessments, or clinical training may constitute academic misconduct, so what your statement authorizes is what students can rely on.
 
 ## Three templates
 
-Adapt freely; the bracketed parts are yours to fill. Each is written to be specific enough to enforce.
+Adapt freely; the bracketed parts are yours to fill. Each is written so a student can apply it without guessing.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Three workable tiers, one shared floor</p>
@@ -43,8 +43,8 @@ Adapt freely; the bracketed parts are yours to fill. Each is written to be speci
 <p class="hf-box-foot">Defend it without the tool.</p>
 </div>
 </div>
-<p class="hf-banner">The floor no course statement can relax: accountability stays with the student, AI work is never presented as original, data rules hold, secure exams stay AI-free.</p>
-<figcaption>Choose per course, even per assessment; the floor comes from the AI policy and the academic integrity rules, and cannot be lowered by a syllabus.</figcaption>
+<p class="hf-banner">Shared by every tier: students stay accountable, AI work is labeled rather than passed off as original, the data rules hold, and AI use a course has not authorized can be academic misconduct under the Student Handbook.</p>
+<figcaption>Choose per course, even per assessment; what every tier shares comes from the AI policy and the academic integrity rules.</figcaption>
 </figure>
 
 ### Restrictive: AI not permitted for graded work
@@ -57,7 +57,7 @@ academic integrity policy. Rationale: [the skill this course builds] is
 developed through the act of producing this work yourself. Permitted: [for
 example, AI for self-quizzing on lecture content, provided no graded
 artifact is AI-produced]. If you are unsure whether a use is permitted, ask
-before using it.
+before using it; a question about AI use never counts against you.
 ```
 
 ### Disclosure-based: permitted for specified uses, with attribution
@@ -69,8 +69,9 @@ data analysis, references]. Any AI assistance must be disclosed: state the
 tool, what you used it for, and include your prompts where practical. You
 remain fully responsible for accuracy; AI-fabricated citations or errors are
 your errors. Undisclosed AI use where disclosure is required is an academic
-integrity matter. Never enter patient information or other students'
-identifiable work into any AI tool.
+integrity matter. Keep patient information out of public AI tools, as the
+university's AI policy requires, and do not put a classmate's work into one
+without their agreement.
 ```
 
 ### Encouraged: integrated, with verification standards
@@ -81,21 +82,22 @@ encouraged to use them for [specified course tasks]. Professional use means:
 you verify every factual claim and citation at its source before relying on
 it, you disclose which tools contributed and how, and you can explain and
 defend every part of what you submit without the tool. Submissions you
-cannot defend in discussion are not your work. The university's data rules
-always apply: no patient information, no identifiable records, in any tool.
+cannot defend in discussion are not your work. The university's AI policy
+still applies: patient information and identifiable records stay out of
+public AI tools.
 ```
 
-## Guardrails for this task
+## Good practice for this task
 
 - Whatever tier you choose, restate it next to each major assessment, not only on page one; point-of-use beats page-one fine print.
-- State your exam rule outright: unauthorized AI use in secure examinations is academic dishonesty, whichever tier your course uses.
+- Say how your tier applies to exams as well as assignments, so students do not have to infer it.
 - Expect to revise once per term; tools change faster than syllabi.
 
 ## Before you rely on it
 
 - [ ] Each major assessment has an explicit AI rule a student could apply without guessing.
-- [ ] Nothing in your statement conflicts with the university policy's fixed points or your department's guidance.
-- [ ] The rationale is stated; students comply better with rules that explain themselves.
+- [ ] Nothing in your statement conflicts with the AI Responsible Use Policy or your department's guidance.
+- [ ] The rationale is stated; students take an expectation more seriously, and ask about it more openly, when they can see the reason for it.
 - [ ] Enforcement language matches what you will actually do.
 
-**Related:** [Feedback on Student Writing](writing-feedback.md), where your disclosure practice has to match this statement, and [Module 3: The Rules](../pathway/rules.md).
+**Related:** [Feedback on Student Writing](writing-feedback.md), where your own disclosure practice follows this statement, and [Module 3: The Policy in Practice](../pathway/rules.md).

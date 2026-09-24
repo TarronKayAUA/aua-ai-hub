@@ -11,7 +11,7 @@ last_reviewed: 2026-09-01
 - Explain what makes an agent different from a chat assistant, in one sentence.
 - Read a permission prompt and decide, deliberately, whether to approve it.
 - Recognize the tasks where an agent is the right tool and the ones where chat is.
-- Keep the safety rules intact when an artificial intelligence (AI) tool can touch your files.
+- Give an artificial intelligence (AI) tool the files a task needs, and keep the rest out of its reach.
 
 ## The core idea
 
@@ -52,9 +52,9 @@ The heavier and more file-bound the task, the more an agent wins. Chat is right 
 
 Agents and assistants can both hold standing context so you stop re-explaining your job: a project per course with your syllabus attached, or a brief file in a folder the agent works in. One heuristic carries the whole idea: when the tool makes the same mistake twice, or you type the same correction twice, that correction belongs in the standing setup.
 
-### The safety floor does not move
+### Choosing what the agent can see
 
-Everything from [Module 3](rules.md) applies with more force, because an agent can read every file in the folder you open for it. Open the folder the task needs, never your whole disk; a folder containing student records is a folder an agent should not work in. Start any new kind of task on copies, not originals. And keep the verification habit that runs through this whole pathway: an agent saying a task is complete is a claim, and you open the result and look, the same way you check a citation.
+An agent can read every file in the folder you open for it, and what it reads goes to the model, so the folder you choose is where the policy's data rules, covered in [Module 3](rules.md), do their work. Open the folder the task needs rather than your whole drive; if that folder also holds student records or patient information, copy just the files you need into a fresh folder and open that instead. Try a new kind of task on copies first, so a misunderstood instruction costs you nothing. And keep the verification habit that runs through this whole pathway: an agent saying a task is complete is a claim, and you open the result and look, the same way you check a citation.
 
 ## Self-check
 
@@ -62,10 +62,10 @@ Everything from [Module 3](rules.md) applies with more force, because an agent c
     Not on that information alone. The request does not obviously match the task, so it gets a no and a question first. Often there is a good reason (a missing PDF-reading tool it needs, which it will name), and after the explanation you may approve it deliberately. The habit being tested is reading the prompt rather than reflexively clicking yes.
 
 ??? question "An agent would save you an hour on a task involving a folder that contains, among other files, a spreadsheet of student grades. What is the move?"
-    Move the files the task actually needs into a fresh folder and open that instead. The agent can read anything in the folder you grant, so the grant is the decision that matters; a protected record in scope is a data-rules problem even if the agent never happens to open it.
+    Copy the files the task actually needs into a fresh folder and open that instead. The agent can read anything in the folder you grant, and you cannot always predict what it will open, so scoping the folder is the dependable way to keep student records out of the model.
 
 ??? question "The agent reports the task finished successfully. Why open the output yourself anyway?"
-    Because "finished" is the agent's claim about its own work, and the pathway's rule for AI claims does not change when the AI can run tools: verify before you rely. Agents make checking cheap (the file is right there), and the two minutes of looking is what makes delegating to one responsible rather than hopeful.
+    Because "finished" is the agent's claim about its own work, and the pathway's habit for AI claims does not change when the AI can run tools: verify before you rely. Agents make checking cheap (the file is right there), and the two minutes of looking is what makes delegating to one responsible rather than hopeful.
 
 ## Going deeper
 

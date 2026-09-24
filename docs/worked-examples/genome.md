@@ -4,7 +4,7 @@ last_reviewed: 2026-09-03
 
 # The Neanderthal gene that explained nothing
 
-<span class="meta-chip">For faculty and students</span><span class="meta-chip">About 11 minutes</span> <span class="meta-note">A worked example. Not medical advice, and not a clinical service.</span>
+<span class="meta-chip">For faculty and students</span><span class="meta-chip">About 11 minutes</span> <span class="meta-note">A worked example, on my own genotype file, with its limits set out at the end.</span>
 
 In August a paper landed that was, for me personally, almost too convenient to be believed.
 

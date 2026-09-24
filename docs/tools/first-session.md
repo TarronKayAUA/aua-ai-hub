@@ -6,7 +6,7 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">About 20 minutes</span> <span class="meta-note">Works with Claude Code or Codex in the ChatGPT desktop app</span>
 
-[Choosing Your Interface](interfaces.md) explains why agents change what artificial intelligence (AI) can do for you; this page has you run one, once, on a folder that cannot be hurt. By the end you will have watched a model read files, ask your permission, run a tool, and hand back work with evidence you can check, and you will know which settings to change and which to leave alone.
+[Choosing Your Interface](interfaces.md) explains why agents change what artificial intelligence (AI) can do for you; this page has you run one, once, on a folder that cannot be hurt. By the end you will have watched a model read files, ask your permission, run a tool, and hand back work with evidence you can check, and you will know which settings are worth changing, and when.
 
 ## Before you start
 
@@ -18,14 +18,13 @@ last_reviewed: 2026-09-01
 <figure class="figure figure--html hf">
 <p class="hf-title">Twenty minutes, five beats</p>
 <ol class="hf-steps">
-<li class="hf-box hf-box--ok"><p class="hf-box-title">A folder</p><p class="hf-box-sub">of copies, never originals</p></li>
+<li class="hf-box hf-box--ok"><p class="hf-box-title">A folder</p><p class="hf-box-sub">of copies, so no mistake matters</p></li>
 <li class="hf-box"><p class="hf-box-title">One real task</p><p class="hf-box-sub">a deliverable, not a question</p></li>
 <li class="hf-box hf-box--warn"><p class="hf-box-title">The prompts</p><p class="hf-box-sub">read each one; you are the gate</p></li>
 <li class="hf-box"><p class="hf-box-title">The loop</p><p class="hf-box-sub">read, write, check, continue</p></li>
 <li class="hf-box hf-box--filled"><p class="hf-box-title">You review the output, yourself</p></li>
 </ol>
 <p class="hf-legend">Green: your safety net. Amber: your control. Filled: your judgment.</p>
-<p class="hf-note">The beats repeat for every new kind of task, not just the first one ever.</p>
 <figcaption>Copies, a task, the gate, the loop, and your own eyes on the result.</figcaption>
 </figure>
 
@@ -48,7 +47,7 @@ Both agents have a settings surface worth five minutes of your attention. Everyt
 
 ### Claude Code
 
-- **Permission mode** is the big one. *Manual* (the default) prompts on first use of each tool: right for your first sessions and for unfamiliar folders. *Plan* has Claude read and explore but not change files: the look-before-touching mode, ideal for "tell me what you would do." *Accept edits* auto-approves file edits in the working folder once you trust the workflow: right for repetitive editing sessions. *Auto* approves tool calls with background safety checks that verify actions match your request: the convenience mode for work you would approve anyway. *Bypass permissions* skips prompting entirely, and Anthropic's own docs restrict it to isolated environments like containers or virtual machines; on a machine you care about, treat it as off-limits.
+- **Permission mode** is the big one. *Manual* (the default) prompts on first use of each tool: right for your first sessions and for unfamiliar folders. *Plan* has Claude read and explore but not change files: the look-before-touching mode, ideal for "tell me what you would do." *Accept edits* auto-approves file edits in the working folder once you trust the workflow: right for repetitive editing sessions. *Auto* approves tool calls with background safety checks that verify actions match your request: the convenience mode for work you would approve anyway. *Bypass permissions* skips prompting entirely. Anthropic's docs recommend it only for isolated environments such as containers or virtual machines, because with no prompts a mistaken or manipulated command, such as deleting files or sending data out, runs before you can see it.
 - **Effort** (the `/effort` command) sets how hard the model reasons, from low to max; the default is high on most models, but Opus 5.5, Claude Code's default model since September 2026, starts at medium. Drop to low for mechanical batch work (renaming, reformatting, applying a known fix everywhere); the work gets faster and cheaper with no quality loss where no judgment is needed. The max level removes reasoning constraints for a single session, and the docs are candid that it "may show diminishing returns and is prone to overthinking": reserve it for genuinely hard problems, not as a default. For one hard question inside an ordinary session, including the word "ultrathink" in a prompt requests deeper reasoning for that turn only.
 - **Ultracode** (also under `/effort`) is a different kind of setting: it combines the xhigh reasoning level with dynamic multi-agent workflows, so substantive tasks get planned and fanned out across parallel subagents. The trade-off is the same in both directions: markedly more thorough on large, decomposable work (audits, sweeps, many-file changes), and markedly more time and token spend. Session-only by design; turn it on for the big task, not for the afternoon.
 - **Fast mode** (`/fast`) makes Opus up to 2.5 times faster at a higher cost per token, billed through usage credits rather than your subscription's included limits. Worth it for interactive back-and-forth where you are waiting on each response; wrong for long autonomous tasks where you are not watching. If you use it, enable it at the start of a session (first enablement mid-conversation charges the fast rate for the whole existing context).
@@ -56,7 +55,7 @@ Both agents have a settings surface worth five minutes of your attention. Everyt
 
 ### Codex (ChatGPT desktop app)
 
-- **Permission mode**: *Ask for approval* (the default) lets Codex read and edit within the workspace and run routine commands, asking before it touches the internet or anything beyond the folder. *Approve for me* has ChatGPT auto-review requests and only surface the ones it flags, and OpenAI's docs note the auto-reviewer can make mistakes. *Full access* removes approvals entirely, and the docs attach an explicit warning about data loss and leaks: same verdict as bypass mode above, not for a machine you care about.
+- **Permission mode**: *Ask for approval* (the default) lets Codex read and edit within the workspace and run routine commands, asking before it touches the internet or anything beyond the folder. *Approve for me* has ChatGPT auto-review requests and only surface the ones it flags, and OpenAI's docs note the auto-reviewer can make mistakes. *Full access* removes approvals entirely, and OpenAI's docs warn that it can lead to data loss or leaks, for the same reason as bypass mode above.
 - **Model and effort** live on one slider: Sol, Terra, or Luna, each from light effort up through max, with *Ultra* above them all. On paid plans, the documented default pairing is Sol at medium effort (Free and Go plans run Terra, so the model choice does not appear there), and the docs' own advice matches this page's: start at the default and increase only when a task visibly needs deeper planning.
 - **Ultra mode** is the Codex counterpart of ultracode: it splits large tasks across parallel subagents and synthesizes the results. Same trade, same advice; OpenAI's docs say it plainly: "Most tasks do not need Max or Ultra." (If Ultra is missing from your slider, it enables under Settings, then Configuration.)
 - **A folder brief** (`AGENTS.md`) is read before any work begins, layered from a global file down to per-folder ones. See [Standing Setups](standing-setups.md).
@@ -65,9 +64,9 @@ Both agents have a settings surface worth five minutes of your attention. Everyt
 
 This site's recommendation, stated as a table so you can disagree with it precisely:
 
-| Setting | Start with | Graduate to | Never (on a machine you care about) |
+| Setting | Start with | Graduate to | Rarely worth it |
 | --- | --- | --- | --- |
-| Permissions | Manual / Ask for approval, with Plan mode (Claude Code) at any stage for a look before touching | Accept edits, Auto, or Approve for me once a workflow has earned trust | Bypass permissions / Full access |
+| Permissions | Manual / Ask for approval, with Plan mode (Claude Code) at any stage for a look before touching | Accept edits, Auto, or Approve for me once a workflow has earned trust | Bypass permissions / Full access, outside an isolated machine |
 | Effort | The default | Low for mechanical batches; xhigh or max for the genuinely hard step | Max as an always-on default |
 | Orchestration (ultracode / Ultra) | Off | On for large, decomposable tasks, accepting the time and token cost | On for routine questions |
 | Folder access | One task-specific folder | Additional folders added deliberately | Your whole home directory or disk |
@@ -90,18 +89,18 @@ This site's recommendation, stated as a table so you can disagree with it precis
 <p class="hf-box-title">Checked autonomy</p>
 <p class="hf-box-sub">Auto: Approve for me. A reviewer surfaces only what it flags, and it can be wrong: keep reading the surprises.</p>
 </div>
-<span class="hf-wall"><span class="hf-sr">A wall, not a rung:</span></span>
+<span class="hf-wall"><span class="hf-sr">A separate setting, not the next rung:</span></span>
 <div class="hf-box hf-box--stop">
 <p class="hf-box-title">Bypass, Full access</p>
-<p class="hf-box-sub">isolated machines only, never one you care about</p>
+<p class="hf-box-sub">no prompts at all: built for isolated machines</p>
 </div>
 </div>
-<p class="hf-note">Every new kind of task starts back at ask first; the ladder is climbed by workflows, not by people.</p>
-<figcaption>Trust is granted to a proven workflow, one rung at a time, and the wall on the right is not a rung.</figcaption>
+<p class="hf-note">A new kind of task is a good moment to step back to ask first, because the workflow has not yet shown what it will do.</p>
+<figcaption>Trust is granted to a proven workflow, one rung at a time; the no-prompt modes on the right are built for isolated machines rather than being the next rung.</figcaption>
 </figure>
 
-## Guardrails
+## Habits worth keeping
 
-The agent's folder boundary is your main control: open the folder the task needs, nothing wider. The [AI Responsible Use Policy](../governance/policy.md)'s data rules apply to every file in that folder, because the agent may read any of it; a folder containing a student roster is a folder an agent should not be working in. And keep the first-session rule for every *new kind* of task, not just the first one ever: copies first, originals after the workflow has earned it. The [AI Agents guide](agents.md) covers the fuller risk model, including prompt injection, once you are running sessions routinely.
+The folder you open is your main control over what the agent sees. Opening only the folder a task needs keeps the agent focused, makes its searches faster, and means you know everything it could read. Because the agent may read any file in that folder, the [AI Responsible Use Policy](../governance/policy.md#responsible-use)'s data rules apply to the whole folder, not only the files the task is about; if a folder also holds something like a class roster, copy the files the task needs into a fresh folder instead. For a new kind of task, working on copies first is still worth the minute it takes: you see what the agent does before anything that matters is touched. The [AI Agents guide](agents.md) covers prompt injection and the rest of what is worth knowing once you are running sessions routinely.
 
 **Next:** [Standing Setups](standing-setups.md), so the assistant keeps your context between sessions.

@@ -9,10 +9,8 @@ last_reviewed: 2026-09-01
 ## What you will be able to do
 
 - Identify the teaching tasks where AI assistance is currently strongest and weakest.
-- Use a safe workflow for AI-assisted assessment item drafting.
+- Use a reliable workflow for drafting assessment items with AI.
 - Set AI expectations for your own course deliberately rather than by default.
-
---8<-- "includes/prompt-maturity-note.md"
 
 ## The core idea
 
@@ -24,18 +22,18 @@ The [Preparing a Lecture playbook](../playbooks/lecture-prep.md) walks the full 
 
 ### Assessment writing
 
-AI drafts plausible multiple choice questions (MCQs) quickly, and the evidence so far says quality is usable but uneven, with structural flaws that standard item-writing rules catch. Two non-negotiables frame the workflow: every AI-drafted item gets faculty review for accuracy and blueprint fit before use, and secure assessment materials (live exam items, answer keys, secure banks) never go into public AI tools. The [exam questions playbook](../playbooks/exam-items.md) gives the step-by-step, and the prompt library's [item writer](../prompts/index.md#single-best-answer-item-writer) and [flaw checker](../prompts/index.md#item-flaw-checker) carry the studies behind this as further reading.
+AI drafts plausible multiple choice questions (MCQs) quickly, and the evidence so far says quality is usable but uneven, with structural flaws that standard item-writing rules catch. One practice keeps the workflow reliable: review every AI-drafted item for accuracy and blueprint fit before it is used, because that review is where the flaws get caught and only you know what the blueprint needs. The [exam questions playbook](../playbooks/exam-items.md) gives the step-by-step, and the prompt library's [item writer](../prompts/index.md#single-best-answer-item-writer) and [flaw checker](../prompts/index.md#item-flaw-checker) carry the studies behind this as further reading.
 
 ### Evaluating student work
 
-This is the highest-caution zone. Identifiable student work and grades are records protected by the Family Educational Rights and Privacy Act (FERPA), so they do not go into public tools; de-identify first or do not use AI at all. And outputs from AI detectors and similarity flags are preliminary indicators, not verdicts; treat any flag as a starting point for human review, never as sufficient evidence on its own.
+Identifiable student work and grades are education records protected by the Family Educational Rights and Privacy Act (FERPA), and the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps them out of public AI tools. De-identify first and the work is open to AI help; a find-and-replace to Student A, Student B usually does it, and the [Feedback on Student Writing](../playbooks/writing-feedback.md) playbook covers the indirect identifiers to watch for. AI detectors and similarity flags produce false positives, so a flag is a reason to look more closely at the work, not evidence on its own; any integrity decision rests on the work itself and on hearing from the student.
 
-### Your course's AI rules
+### Your course's AI expectations
 
 Students will use these tools; ambiguity serves no one. The policy delegates labeling and attribution expectations to course and departmental guidelines, which means your syllabus is where the line gets drawn. The [syllabus AI statement playbook](../playbooks/syllabus-statement.md) offers adaptable templates from prohibited to encouraged-with-verification.
 
 <figure class="figure figure--html hf">
-<p class="hf-title">The caution gradient</p>
+<p class="hf-title">Where your judgment does more of the work</p>
 <div class="hf-gradient">
 <div class="hf-grad-row">
 <p class="hf-grad-label">Content preparation</p>
@@ -43,11 +41,11 @@ Students will use these tools; ambiguity serves no one. The policy delegates lab
 </div>
 <div class="hf-grad-row">
 <p class="hf-grad-label">Assessment writing</p>
-<div class="hf-box hf-box--warn"><p>Usable but uneven drafts. Faculty review every item, and finalized secure items never enter public tools.</p></div>
+<div class="hf-box hf-box--warn"><p>Usable but uneven drafts: review every item.</p></div>
 </div>
 <div class="hf-grad-row">
 <p class="hf-grad-label">Evaluating student work</p>
-<div class="hf-box hf-box--stop"><p>FERPA territory: de-identify or do not use AI at all. Detector flags are indicators, never verdicts.</p></div>
+<div class="hf-box hf-box--stop"><p>De-identify first (FERPA). A detector flag starts a closer look; it is not evidence on its own.</p></div>
 </div>
 </div>
 <figcaption>The further down, the less the tool decides and the more you do.</figcaption>
@@ -56,17 +54,14 @@ Students will use these tools; ambiguity serves no one. The policy delegates lab
 ## Self-check
 
 ??? question "You want AI feedback on twelve student reflection essays. What has to happen first?"
-    De-identification, at minimum: names, identifiers, and details that make an author traceable must come out, because identifiable student work is a protected education record and public tools are not approved for it. Even then, the feedback that reaches the student should be yours; the tool can help you draft, not judge.
+    De-identification: take out names, identification numbers, and details that could identify the author, because identifiable student work is a protected education record and the policy keeps it out of public AI tools. After that, the tool can draft feedback quickly; read and adjust it before it goes back, because you know the student and the course, and the tool does not.
 
 ??? question "An AI detector flags one student's essay at 92 percent. What does that number justify by itself?"
     A closer human look, and nothing more. Detector outputs are preliminary indicators with known false-positive problems. An academic integrity action needs human review of the actual evidence and an opportunity for the student to respond, not a percentage from a black box.
 
-??? question "Why are AI-drafted exam items kept out of public AI tools after they are finalized for use?"
-    Because a live exam item is secure assessment material: pasting it into a public tool risks exposing it (some tools learn from or store inputs), which compromises the assessment. Treat anything drafted in a public tool as already exposed, so do the final revision outside the tool before an item enters a secure bank, and never paste a finalized item back in.
-
 ## Going deeper
 
-- [Feedback on Student Writing](../playbooks/writing-feedback.md): the highest-caution zone above, as a full guarded workflow.
+- [Feedback on Student Writing](../playbooks/writing-feedback.md): the full workflow for AI-assisted feedback on student work, de-identification included.
 - [Administrative Drafting](../playbooks/admin-drafting.md): the same discipline applied to memos, minutes, and reports.
 - [Standing Setups](../tools/standing-setups.md): a project per course, so the model knows your objectives all term.
 - [AI-Generated Images in Teaching](../playbooks/ai-images.md): why generated anatomy fails, what to reach for instead, and the conditions under which a flawed image is defensible pedagogy.

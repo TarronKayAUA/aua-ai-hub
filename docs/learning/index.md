@@ -22,7 +22,7 @@ For faculty integrating AI into courses, assessment, and curriculum, or setting 
 
 ## For students
 
-The [Getting started](#getting-started) courses above fit students too. Beyond those, one hour-long lecture is worth the time, and pairs well with the [Common Misconceptions](../basics/misconceptions.md) page here. Before using any tool for coursework, check its status in the [tools directory](../tools/index.md), and never enter patient information or student records into a public AI tool.
+The [Getting started](#getting-started) courses above fit students too. Beyond those, one hour-long lecture is worth the time, and pairs well with the [Common Misconceptions](../basics/misconceptions.md) page here. The [tools directory](../tools/index.md) describes the tools covered on this site, and a tool's card notes any specific concern worth knowing before you use it. [Module 3](../pathway/rules.md) of the pathway covers what the AI Responsible Use Policy asks of students, in about ten minutes.
 
 <!-- render:learning-resources:students -->
 

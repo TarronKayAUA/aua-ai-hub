@@ -139,7 +139,7 @@ A few rules of thumb follow directly from the mechanics described above.
 
 **Weakest: treated as a search engine or an oracle.** Asked for specific citations, exact dosages, current guidelines, or anything where the precise fact matters and is not supplied in the conversation. These are the situations where hallucination does real damage.
 
-Treat outputs as a competent first draft from an assistant who has read widely but verifies nothing. Check claims against primary sources before they reach students or patients. Never paste protected health information (PHI) or student records covered by the Family Educational Rights and Privacy Act (FERPA) into consumer artificial intelligence (AI) tools; see the [tools directory](../tools/index.md) for the governance status of each tool at our institution.
+Treat outputs as a competent first draft from an assistant who has read widely but verifies nothing. Check claims against primary sources before they reach students or patients. Which data can go into which artificial intelligence (AI) tools is set by the [AI Responsible Use Policy](../governance/policy.md#responsible-use), and [Module 3](../pathway/rules.md) is its plain-language version.
 
 Finally, remember that capability is moving quickly. Specific model names and features will change; the fundamentals on this page (prediction, training, context, and hallucination) change much more slowly and remain the right lens for judging each new tool.
 

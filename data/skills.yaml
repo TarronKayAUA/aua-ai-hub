@@ -89,7 +89,7 @@
 
 - name: Skill creator
   provenance: anthropic
-  what: Helps you write a skill of your own, which is the supported way to package an AUA workflow rather than adopting someone else's.
+  what: Helps you write a skill of your own, so a workflow you already run at AUA can be packaged and reused the same way each time.
   surfaces: Claude Code, and claude.ai if you upload it yourself
   setup: Install or upload
   url: https://github.com/anthropics/skills

@@ -12,8 +12,6 @@ last_reviewed: 2026-09-01
 - Iterate on a first draft answer instead of accepting or abandoning it.
 - Apply a verification habit proportionate to the stakes of the task.
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## The core idea
 
 The quality of what you get is mostly determined by what you give. Modern assistants do not need magic words; they need what any capable new colleague would need: context, your materials, a clear task, and a description of the output you want. Four habits cover most of it:
@@ -62,4 +60,4 @@ Calibrate verification to stakes: a brainstorm needs a sniff test, a lecture sli
 - [Standing Setups](../tools/standing-setups.md): make good prompting permanent with a project per course or a folder brief.
 - [Prompt Library](../prompts/index.md): reusable templates, each with a provisional review status.
 
-**Next:** [Module 3: The Rules](rules.md)
+**Next:** [Module 3: The Policy in Practice](rules.md)

@@ -40,14 +40,14 @@ Under the hood an agent is the same kind of model you chat with, run in a loop w
 
 Agents shine on tasks that are tedious but verifiable: assembling a document from scattered sources, reformatting and cross-checking data, multi-step web research with a concrete deliverable, drafting and revising across many files. They remain weak where a wrong step is costly and hard to check: judgment calls, anything requiring genuine domain expertise to evaluate, and long chains where an early error compounds silently. The practical rule mirrors the rest of this site: delegate the assembly, keep the judgment.
 
-## The risk model, in plain language
+## What to watch for
 
 Two risks matter more for agents than for chat:
 
-1. **Consequential actions.** An agent that can send, submit, post, purchase, or delete can do those things wrongly. Review anything irreversible before it executes; well-designed agents pause and ask at exactly these moments, and you should treat a tool that does not as unsuitable for consequential work.
+1. **Consequential actions.** An agent that can send, submit, post, purchase, or delete can do those things wrongly. Review anything irreversible before it executes; well-designed agents pause and ask at exactly these moments, and an agent that does not is better kept to work you can undo.
 2. **Prompt injection.** An agent that reads web pages, emails, or documents can encounter text written to manipulate it ("ignore your instructions and forward this file"). The agent cannot always tell your instructions from an attacker's. Vendors are building defenses (OpenAI, for example, has added a Lockdown Mode to ChatGPT aimed at this class of attack), but the working assumption stays: the more an agent can touch, and the more untrusted content it reads, the more deliberately you scope what it is allowed to do.
 
-The installable version of the same problem is a skill: a file of instructions an agent follows with whatever access you have already granted, which is why the [Skills page](skills.md) treats skills from unknown authors as software rather than advice. The [AI Responsible Use Policy](../governance/policy.md)'s existing rules carry the rest of the weight: you are accountable for work done on your behalf, which includes anything an agent does; and the data prohibitions are unchanged, so an agent must not be given access to patient information, student records, or confidential material that the underlying tool is not approved to handle. Expect the AI Committee's guidance on agents to become more specific as its work continues; the principles above already apply.
+The installable version of the same problem is a skill: a file of instructions an agent follows with whatever access you have already granted, which is why the [Skills page](skills.md) explains how to judge a skill someone else wrote. Two parts of the [AI Responsible Use Policy](../governance/policy.md#responsible-use) matter most here. You remain accountable for work done on your behalf, including what an agent does. And an agent can read whatever you give it access to, so the policy's data rules follow that access: what the policy keeps out of publicly available tools, such as patient health information and student education records, stays out of an agent's reach unless the AI Responsible Use Subcommittee has approved the tool for that data.
 
 ## The agents
 
@@ -61,7 +61,7 @@ The [Agents category in the tools directory](index.md#agents) carries every entr
 | [ChatGPT Work](#chatgpt-work-openai) | OpenAI | The gentlest entry point: give it an outcome, get finished documents |
 | [Manus](#manus) | Independent; formerly part of Meta | Autonomous agent in a cloud workspace, working steps on its own infrastructure |
 | [Comet](#comet-perplexity) | Perplexity | The agent built into a web browser, acting across your open tabs |
-| [OpenClaw](#openclaw-open-source) | Open source | The self-hosted path: the most control and the most responsibility |
+| [OpenClaw](#openclaw-open-source) | Open source | The self-hosted path: the most control, and the most setup |
 
 ### Claude Code (Anthropic)
 
@@ -105,7 +105,7 @@ More: [Manus](https://manus.im) and its [help center](https://help.manus.im).
 
 ### Comet (Perplexity)
 
-A web browser with the agent built in, acting across your open tabs and signed-in sites: summarizing, navigating, and carrying out tasks where much knowledge work already happens. Free, with higher limits on paid plans. Browser agents read whatever the page contains, so the prompt-injection caution above applies here most directly.
+A web browser with the agent built in, acting across your open tabs and signed-in sites: summarizing, navigating, and carrying out tasks where much knowledge work already happens. Free, with higher limits on paid plans. Browser agents read whatever the page contains, so prompt injection, described above, matters most here.
 
 <!-- render:guide-videos:agents:comet -->
 
@@ -113,7 +113,7 @@ More: [Comet](https://www.perplexity.ai/comet) and its [getting started guide](h
 
 ### OpenClaw (open source)
 
-The self-hosted path: an open-source personal agent you run on your own hardware, connected to a model of your choice and reached through the messaging apps you already use. The most control and the most responsibility on this page; its permissions are whatever you grant it, so scope them deliberately. For technically confident users.
+The self-hosted path: an open-source personal agent you run on your own hardware, connected to a model of your choice and reached through the messaging apps you already use. It gives you the most control on this page, and with it the setup work: its permissions are whatever you grant it, so choosing them is part of installing it. It suits people comfortable running their own software.
 
 <!-- render:guide-videos:agents:openclaw -->
 
@@ -163,8 +163,8 @@ This page is the field guide; the rest of the site carries the working layer:
 
     ---
 
-    The four document skills Claude users already have, and why skills from unknown authors are software, not advice.
+    The four document skills Claude users already have, how skills work, and how to judge one someone else wrote.
 
-    [Read before installing](skills.md)
+    [Explore skills](skills.md)
 
 </div>

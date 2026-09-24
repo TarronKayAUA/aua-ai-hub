@@ -99,12 +99,11 @@
   audience: faculty
   status: draft
   last_reviewed: 2026-06-12
-  notes: Generated items are starting points, and every item needs faculty
-    review for accuracy plus a blueprint check before any assessment use.
-    Never include real patient details, and treat anything drafted in a
-    public tool as exposed, so finalize secure exam items outside it.
-    For team-based learning readiness questions, use the Team-based
-    learning session builder.
+  notes: >-
+    Generated items are starting points: a faculty accuracy check and a
+    blueprint check are what make one ready for an exam. For team-based
+    learning readiness questions, use the Team-based learning session
+    builder.
   prompt: |
     ROLE
     You are an item writer who follows the National Board of Medical
@@ -222,14 +221,10 @@
     questions taken alone as the individual readiness assurance test (iRAT)
     and again in teams on a scratch card as the team test (tRAT), then two
     or three application cases higher on Bloom's taxonomy, with facilitator
-    notes. Attach the pre-work (your own or the school's material, not a
-    licensed textbook chapter) and, for pre-keyed scratch cards, the answer
-    letters for the one card version you will use. Leave out student names,
-    rosters, and scores. Draft with model training turned off where the tool
-    allows it, and do not share the chat, which holds the answer keys;
-    finalized questions are assessment material and never go back into a
-    public AI tool, as the [exam questions
-    playbook](../playbooks/exam-items.md) explains.
+    notes. Attach the pre-work (your own or the school's material; a
+    licensed textbook chapter is third-party content, which the policy does
+    not allow into an AI tool without review) and, for pre-keyed scratch
+    cards, the answer letters for the one card version you will use.
   prompt: |
     ROLE
     You design team-based learning (TBL) sessions for a medical school.
@@ -517,13 +512,15 @@
   last_reviewed: 2026-06-12
   notes: >-
     Works best pasted into the instructions of a Claude Project or ChatGPT
-    Project (see [Standing Setups](../tools/standing-setups.md)) rather
-    than a chat message, with your lecture notes, slides, or syllabus
-    attached as the source material. Attach your own course materials only,
-    never question-bank or NBME questions. Defaults to Exam mode (the
-    objective is hidden until you answer); say "study mode" to work through
-    objectives in order instead. For iRAT preparation, attach the TBL
-    pre-work and ask for 1st-order questions.
+    Project (see [Standing Setups](../tools/standing-setups.md)) rather than
+    a chat message, with your lecture notes, slides, or syllabus attached as
+    the source material. Question-bank and NBME questions are licensed
+    third-party content, which the policy does not allow into an AI tool
+    without review, so the tutor builds its questions from your own
+    materials instead. Defaults to Exam mode (the objective is hidden until
+    you answer); say "study mode" to work through objectives in order
+    instead. For iRAT preparation, attach the TBL pre-work and ask for
+    1st-order questions.
   prompt: |
     ROLE
     You are a USMLE Step 1 item writer. You generate NBME-style single-best-
@@ -720,16 +717,12 @@
   status: draft
   last_reviewed: 2026-06-12
   notes: >-
-    Use on draft items only. Once an item is finalized for a live exam, it
-    and its answer key are secure material and never enter a public AI tool
-    again (see the [exam questions playbook](../playbooks/exam-items.md));
-    paste item statistics here only for practice items that were never
-    secure, and use the Post-exam item analysis reader for statistics
-    without item text. The structural checks
-    are this prompt's focus, but the clinical accuracy of content stays your
-    responsibility, which is what the [VERIFY] list is for. Readiness
-    questions from the Team-based learning session builder are recall by
-    design; say so when you paste them.
+    Built for draft items, while they are still open to revision. For
+    statistics on live exam items, the Post-exam item analysis reader works
+    from numbers alone. Clinical accuracy sits outside these structural
+    checks; the [VERIFY] list marks what to check. Readiness questions from
+    the Team-based learning session builder are recall by design; say so
+    when you paste them.
   prompt: |
     ROLE
     You are a technical reviewer of single-best-answer items, applying
@@ -826,13 +819,12 @@
     For reading post-exam item statistics with your exam committee. Paste
     numbers only: items renumbered 1, 2, 3 in your own order, each item's
     difficulty and discrimination, and each option's share, by letter with
-    the key marked if you like, keeping the map back to the exam's item
-    numbers with your secure records (see the [exam questions
-    playbook](../playbooks/exam-items.md)). Never paste item text, option
-    text, item bank IDs, or any student's data. Every threshold it uses is a
-    labeled rule of thumb with its source, and it never recommends dropping,
-    rescoring, or crediting an item: those are committee decisions, so run
-    it before final scores are released.
+    the key marked if you like, keeping your own map back to the exam's item
+    numbers. Item text, option text, item bank IDs, and student-level data
+    are not needed. Every threshold it uses is a labeled rule of thumb with
+    its source, and it never recommends dropping, rescoring, or crediting an
+    item: those are committee decisions, so run it before final scores are
+    released.
   prompt: |
     ROLE
     You are an item analysis reader for a medical school exam committee.
@@ -1127,12 +1119,15 @@
   audience: faculty
   status: draft
   last_reviewed: 2026-06-12
-  notes: Describe your dataset in general terms and do not paste the data
-    itself; participant-level data stays out of publicly available AI
-    tools, and student or patient identifiers stay out of every AI tool.
-    Verify recommended methods
-    against a statistics reference or a statistician before publishing,
-    especially with clustering or missing-data handling involved.
+  notes: >-
+    Describe your dataset in general terms; the review works from the
+    description, not the data. Participant-level data counts as unpublished
+    research data, which the [AI Responsible Use
+    Policy](../governance/policy.md#responsible-use) keeps out of publicly
+    available AI tools unless the AI Responsible Use Subcommittee has
+    approved a tool for it. Verify recommended methods against a statistics
+    reference or a statistician before publishing, especially with
+    clustering or missing-data handling involved.
   prompt: |
     ROLE
     You are a methodological reviewer for education research analysis
@@ -1298,11 +1293,10 @@
   audience: faculty
   status: draft
   last_reviewed: 2026-06-12
-  notes: Content accuracy and references remain your responsibility, and
-    the VERIFY and SOURCE NEEDED flags exist to make that workload visible
-    instead of hidden. Strongest in revise mode, working from the outline
-    you already teach. Never paste a real patient's case, even without
-    the name.
+  notes: >-
+    The VERIFY and SOURCE NEEDED flags mark what to check before you teach
+    from the outline, so the accuracy work is visible rather than hidden.
+    Strongest in revise mode, working from the outline you already teach.
   prompt: |
     ROLE
     You are an instructional designer for medical school lectures. You
@@ -1380,13 +1374,13 @@
     A second pair of eyes after your own primary pass. Appraise the paper
     first, as step 5 of the [literature review
     playbook](../playbooks/literature-reviews.md) asks, then attach your
-    ratings and notes with the paper's full text. It will not appraise a
-    paper you have not appraised, gives no verdict, score, or include or
-    exclude decision, and anchors every point to a short quote to find in
-    the paper before you change a rating. Published papers and public
-    preprints only: a manuscript you were sent to peer review never goes
-    into any AI tool. In a systematic review, report its use in your methods
-    (PRISMA 2020 item 11), and do not count it as a second reviewer.
+    ratings and notes with the paper's full text. It checks an appraisal you
+    have already made rather than starting from scratch, gives no verdict,
+    score, or include or exclude decision, and anchors every point to a
+    short quote to find in the paper before you change a rating. Built for
+    published papers and public preprints. In a systematic review, report
+    its use in your methods (PRISMA 2020 item 11); it supplements a second
+    human reviewer rather than counting as one.
   prompt: |
     ROLE
     You are a second pair of eyes on my critical appraisal of a published
@@ -1655,9 +1649,10 @@
     each student's name with a label such as "Student A" and remove ID
     numbers and details that could point to the writer or a patient; paste
     the text rather than uploading the file, since a Word file keeps the
-    author's name in its properties. It never grades, scores, ranks, or
-    compares students: it drafts quote-anchored observations for you to
-    check and rewrite in your own voice.
+    author's name in its properties. It drafts quote-anchored observations
+    for you to check and rewrite in your own voice, and leaves grades,
+    scores, and rankings with you, since you stay accountable for the final
+    judgment.
   prompt: |
     ROLE
     You help me, a medical school faculty member, draft formative feedback
@@ -1951,12 +1946,15 @@
     Built around the documented common reasons peer reviewers reject
     manuscripts (Bordage 2001, Academic Medicine), as taught in AUA's
     Research Methods 1 course. Run it on a near-final draft; it reads like
-    the reviewer you hope not to get, which is the point. Your own draft
-    is yours to review in a paid plan with training on your content turned off (or a
-    [model on your own computer](../tools/local.md)), with participant-level
-    data left out. Co-authored work also needs your co-authors' agreement,
-    and manuscripts you are peer reviewing for someone else never enter any
-    AI tool.
+    the reviewer you hope not to get, which is the point. Your own draft is
+    yours to review in a paid plan with training on your content turned off
+    (or a [model on your own computer](../tools/local.md)), with
+    participant-level data left out. For co-authored work, check with your
+    co-authors first, since the draft is theirs too. A manuscript sent to
+    you for peer review is different: its authors shared it in confidence,
+    so it is confidential information, which the [AI Responsible Use
+    Policy](../governance/policy.md#responsible-use) keeps out of publicly
+    available AI tools, and many journals' reviewer policies bar it as well.
   prompt: |
     ROLE
     You are a skeptical but fair peer reviewer for health professions
@@ -2118,14 +2116,18 @@
   audience: students
   status: draft
   last_reviewed: 2026-07-14
-  notes: Paste your own performance report only, with your name, student
-    number, and any examinee or registration ID removed first. Paste the
-    report, never exam questions. Works with an NBME INSIGHTS export or
-    score report text, an in-house category breakdown, or a question-level
-    report; for in-house block exams, the Study schedule builder plans day
-    by day from your syllabus and teaching calendar. The score reports
-    playbook covers the full workflow, including writing your own read of
-    the report before you run this.
+  notes: >-
+    Paste your own performance report with your name, student number, and
+    any examinee or registration ID removed, so the scores cannot be tied
+    back to you and the report is no longer the kind of student record the
+    [AI Responsible Use Policy](../governance/policy.md#responsible-use)
+    keeps out of publicly available AI tools. The plan works from the
+    report's categories, so exam questions are not needed. Works with an
+    NBME INSIGHTS export or score report text, an in-house category
+    breakdown, or a question-level report; for in-house block exams, the
+    Study schedule builder plans day by day from your syllabus and teaching
+    calendar. The score reports playbook covers the full workflow, including
+    writing your own read of the report before you run this.
   prompt: |
     ROLE
     You are a study strategist for a medical student preparing for
@@ -2585,10 +2587,9 @@
   last_reviewed: 2026-09-23
   notes: >-
     After a practice block or a quiz, write a line or two about each
-    question you missed, in your own words. Never paste the question
-    itself, because question-bank and exam questions are licensed or
-    secure material. The missed concepts it lists are ready to paste
-    into the Daily review sheet builder.
+    question you missed, in your own words, since restating it is part of
+    the exercise. The missed concepts it lists are ready to paste into the
+    Daily review sheet builder.
   prompt: |
     ROLE
     You are a study coach helping a medical student learn from the
@@ -2662,14 +2663,16 @@
   notes: >-
     Practice differential diagnosis on an invented case that reveals
     findings only as you ask, or on a teaching abstraction of an encounter
-    you saw; either way it gives feedback on how you reasoned. Strip a real
-    encounter before you type it, to an age band and a presentation pattern
-    with no names, dates, or places, because once sent it cannot be unsent;
-    if real patient information goes in by mistake, the policy asks you to
-    tell the AI Responsible Use Subcommittee right away. Your clinical
-    site's rules may be stricter, and the stricter one applies. The model
-    can be wrong about the medicine: check its teaching points against your
-    course materials.
+    you saw; either way it gives feedback on how you reasoned. Reduce a real
+    encounter to an age band and a presentation pattern, with no names,
+    dates, or places, before you type it: patient health information is what
+    the [AI Responsible Use Policy](../governance/policy.md#responsible-use)
+    keeps out of publicly available AI tools, and a sent message cannot be
+    recalled. If real patient information goes in by mistake, the policy
+    asks you to tell the AI Responsible Use Subcommittee right away. Your
+    clinical site's rules may be stricter, and the stricter one applies. The
+    model can be wrong about the medicine: check its teaching points against
+    your course materials.
   prompt: |
     ROLE
     You are a clinical reasoning practice partner for a medical student in
@@ -2957,13 +2960,13 @@
     Practice a residency interview out loud: it stays in role, asks one
     question at a time, follows up on vague or rehearsed answers, and
     debriefs you with quotes from what you said. Use voice mode if your
-    assistant has one, or say each answer aloud before typing it. Remove
-    your name, ID numbers, and other people's names from anything you paste,
-    and tell patient stories without names, dates, or places. An optional
-    drill practices a question a program should not ask. It will not write
-    answers for you to memorize or advise on where to apply or how to rank;
-    that is for your Education Enhancement Department (EED) clinical
-    advisor.
+    assistant has one, or say each answer aloud before typing it. Tell
+    patient stories without names, dates, or places, and leave other
+    people's names out, since they have not agreed to be part of the chat.
+    An optional drill practices a question a program should not ask. It will
+    not write answers for you to memorize or advise on where to apply or how
+    to rank; that is for your Education Enhancement Department (EED)
+    clinical advisor.
   prompt: |
     ROLE
     You are a residency program interviewer running a mock interview for
@@ -3275,12 +3278,11 @@
     proofreading when you ask, in line with the Association of American
     Medical Colleges (AAMC) and Educational Commission for Foreign Medical
     Graduates (ECFMG) positions in the [residency application
-    playbook](../playbooks/residency-application.md). Remove your name and
-    any ID numbers first, and tell any patient story as an age band and a
-    presentation, with no name, date, or place. Give it your word
-    processor's character count, since chat models count unreliably. What
-    your statement should be about, and how to present your record, are
-    questions for your EED clinical advisor.
+    playbook](../playbooks/residency-application.md). Tell any patient story
+    as an age band and a presentation, with no name, date, or place. Give it
+    your word processor's character count, since chat models count
+    unreliably. What your statement should be about, and how to present your
+    record, are questions for your EED clinical advisor.
   prompt: |
     ROLE
     You are a critic of my residency personal statement, a draft I wrote

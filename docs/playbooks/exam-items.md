@@ -4,11 +4,11 @@ last_reviewed: 2026-09-01
 
 # Playbook: Writing and Vetting Exam Questions
 
-<span class="meta-chip">For faculty</span><span class="meta-chip">About 6 minutes</span> <span class="meta-note">The highest-stakes playbook: read the [guardrails](#guardrails-for-this-task) first</span>
+<span class="meta-chip">For faculty</span><span class="meta-chip">About 6 minutes</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
 ## The task
 
-Use artificial intelligence (AI) to draft and structurally vet multiple choice questions (MCQs), cutting item-writing time while keeping quality control and assessment security entirely human.
+Use artificial intelligence (AI) to draft and structurally vet multiple choice questions (MCQs), cutting item-writing time while the calls that matter stay with you and your exam committee: clinical accuracy, blueprint fit, and what goes on a live exam.
 
 ## Where AI helps, and where it hurts
 
@@ -20,51 +20,18 @@ Models draft plausible vignette-based items quickly and are genuinely good at th
 - Target level (preclinical or clinical) and item format conventions your exam committee uses.
 - Your item-writing standards (the library prompts encode the common National Board of Medical Examiners style rules: vignette-dependent, lead-in answerable cold, homogeneous options, no absolutes or cues).
 
---8<-- "includes/prompt-maturity-note.md"
-
 ## The workflow
 
 1. **Draft.** Run the [Single best answer item writer](../prompts/index.md#mcq-generation) with one objective at a time. Generate two or three variants per objective; variety is cheap and your selection instinct is fast. For a team-based learning session, the [Team-based learning session builder](../prompts/index.md#team-based-learning-session-builder) drafts the readiness questions and application cases together, in AUA's format.
 2. **Vet structurally.** Feed each candidate through the [Item flaw checker](../prompts/index.md#mcq-vetting). Have it report flaws before proposing any rewrite, so you see the diagnosis, not just a polished surface.
 3. **Vet for content.** This step is entirely yours: clinical accuracy, currency of the underlying knowledge, blueprint fit, and difficulty for your cohort. The studies are blunt that this is where AI items fail when they fail.
-4. **Pilot like any item.** AI-drafted items earn no exemption from your normal exam review committee and post-exam item analysis. Flag their origin in your records so you can compare their performance statistics over time. The [post-exam item analysis reader](../prompts/index.md#post-exam-item-analysis-reader) helps read those statistics without any item text leaving your hands; with the items renumbered in your own order, option letters and the keyed option can go in, because they point to no identifiable item.
+4. **Pilot like any item.** AI-drafted items go through your normal exam review committee and post-exam item analysis. Flag their origin in your records so you can compare their performance statistics over time. The [post-exam item analysis reader](../prompts/index.md#post-exam-item-analysis-reader) helps read those statistics, working from the numbers alone.
 
-## Guardrails for this task
+## Good practice for this task
 
-This is where assessment security and AI collide, so the lines are bright:
-
-- **Drafting happens before items are secure.** Working with AI on new draft items is fine. A finalized item is usually a revised draft, so the wording you finalize is only as secure as the drafts before it: draft in a tool with model training turned off where the tool allows it, and keep draft items out of shared or saved chats. Once an item is finalized for a live exam, it is secure assessment material and **never enters a public AI tool again**, not for revision, not for explanation drafting, not for difficulty estimation. Exposure of secure items to tools that may store or learn from inputs compromises the exam.
-- The same applies to answer keys (item statistics renumbered in your own order, with no item text, are not an answer key; see step 4), secure item banks, and anything from a licensed question bank, which is also third-party intellectual property: the policy prohibits entering licensed third-party material into AI tools without review, whatever the license says.
-- Never include real patient details in vignettes; invent or fully abstract them.
-- Item drafts derived from past exam performance data require that data to be de-identified first.
-- Per the [AI Responsible Use Policy](../governance/policy.md), the final items are your responsibility and your exam committee's, regardless of what drafted them.
-
-<figure class="figure figure--html hf">
-<p class="hf-title">The bright line</p>
-<div class="hf-split">
-<div class="hf-box hf-box--plain">
-<p class="hf-box-title">While drafting</p>
-<p class="hf-box-sub">AI is fine here</p>
-<ul>
-<li>draft variants with AI</li>
-<li>structural flaw vetting</li>
-<li>your own content vet</li>
-</ul>
-</div>
-<div class="hf-split-line"><span>finalized</span></div>
-<div class="hf-box hf-box--stop">
-<p class="hf-box-title">Once finalized for a live exam</p>
-<p class="hf-box-alert">never enters a public AI tool again</p>
-<ul>
-<li>no revision help</li>
-<li>no explanation drafting</li>
-<li>no difficulty estimation</li>
-</ul>
-</div>
-</div>
-<p class="hf-note">Answer keys and licensed bank content live on the secure side from day one.</p>
-<figcaption>Drafting with AI is fine; a finalized item is secure material, and secure material never touches a public tool.</figcaption>
-</figure>
+- Questions from a licensed question bank belong to their publisher, and their license usually limits reuse; the [AI Responsible Use Policy](../governance/policy.md#intellectual-property-rights-and-copyright-issues) requires a review before licensed third-party material goes into an AI tool.
+- Build vignettes from invented details, or from a real case abstracted until no one could recognize it. A recognizable case can identify the patient to anyone who was on that rotation, and patient information stays out of public AI tools under the policy.
+- If past exam performance shapes a new item, aggregate statistics (difficulty, how often each option was chosen) are all the drafting needs. Individual students' results are education records and stay out of public AI tools.
 
 ## Before you rely on it
 
@@ -72,6 +39,5 @@ This is where assessment security and AI collide, so the lines are bright:
 - [ ] Structural vet passed, by the flaw checker and by your own read.
 - [ ] Blueprint mapping confirmed; the item tests the objective, not adjacent trivia.
 - [ ] Standard exam committee review and pilot analysis applied, with AI origin noted in records.
-- [ ] No finalized secure item or key has touched a public tool.
 
 **Related:** [Module 4: Teaching and Assessment](../pathway/teaching-assessment.md) for the principles, and the item-vetting prompts in the [prompt library](../prompts/index.md).

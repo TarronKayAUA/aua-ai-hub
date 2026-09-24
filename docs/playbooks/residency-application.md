@@ -8,7 +8,7 @@ last_reviewed: 2026-09-01
 
 This playbook covers the tasks of the application year where artificial intelligence (AI) genuinely helps, the one task where it mostly does not, and the rules that actually apply to you as an international medical graduate (IMG).
 
-It deliberately stops short of application strategy. Which programs to apply to, how many, how to signal, what your statement should be about, and how your own record should be presented are questions for the **Education Enhancement Department (EED) clinical advising team**, who know you and know this school's outcomes. Nothing here should be read as replacing their advice, and where the two differ, follow theirs. Application dates move every cycle, so this page links the [Electronic Residency Application Service (ERAS) timeline](https://students-residents.aamc.org/applying-residencies-eras/eras-timeline-applicants) rather than restating it.
+It deliberately stops short of application strategy. Which programs to apply to, how many, how to signal, what your statement should be about, and how your own record should be presented are questions for the **Education Enhancement Department (EED) clinical advising team**, who know you and know this school's outcomes. Application dates move every cycle, so this page links the [Electronic Residency Application Service (ERAS) timeline](https://students-residents.aamc.org/applying-residencies-eras/eras-timeline-applicants) rather than restating it.
 
 !!! tip "The short version"
     The Association of American Medical Colleges (AAMC) permits AI for brainstorming, proofreading, and editing. The Educational Commission for Foreign Medical Graduates (ECFMG) advises against letting it write your statement. ERAS does not run AI detection on applications, but in the one published survey of program directors, a majority regarded any chatbot use in a personal statement as unethical, so the private standard you are judged against may be stricter than the published rule. Your EED clinical advisor owns strategy; this page covers the tools.
@@ -54,7 +54,7 @@ Ask for one question at a time, answer out loud before reading further, and have
 
 Assistants are useful for organizing: building the comparison sheet, summarizing what a program publishes about its curriculum, drafting the tracker that keeps deadlines and interview invitations straight.
 
-One hard rule: **verify every program fact against the program's own page.** Models state program details fluently and get them wrong, including facts that change yearly. Use AI to organize what you gather, not as the source of what you gather.
+Check every program fact against the program's own page. Models state program details fluently and often get them wrong, including details that change every year, so AI is most useful for organizing what you gather rather than as the source of it.
 
 ### Your own draft, interrogated
 
@@ -64,11 +64,11 @@ That order matters. A draft you wrote and had criticized reads like you. A draft
 
 ### The other pieces
 
-Experience descriptions, thank-you notes, and scheduling correspondence carry far less of your voice and far less risk. The same accuracy rule applies throughout: every fact about you is yours to guarantee.
+Experience descriptions, thank-you notes, and scheduling correspondence carry far less of your voice and far less risk. Accuracy matters just as much in these, because every fact about you is one a program may ask you about.
 
-## The trap nobody warns you about
+## Patient stories in your statement
 
-Personal statements are often built around a patient encounter, which puts the most common privacy mistake in the application year right where nobody expects it. Pasting a real case into a chatbot to "help me tell this better" is exactly what the rules exist to prevent, and the good intention behind it changes nothing.
+Personal statements are often built around a patient encounter, and an assistant can critique how you tell that story. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps protected health information (PHI) out of public AI tools, so the version you work on with AI is the de-identified one.
 
 Do what you already do on rotations: abstract first. An age band, a presentation pattern, no names, no dates, no institution, nothing that could identify a person. The story you tell in a statement should already be abstracted to that level anyway, because it is going to be read by strangers.
 
@@ -76,13 +76,6 @@ Do what you already do on rotations: abstract first. An age band, a presentation
 
 The AAMC addresses writers of a letter of recommendation (LOR) directly and permissively: generative AI "has the potential to support your letter-writing process, including crafting initial drafts of the LOR and editing its content and tone. Regardless of how you use genAI, you remain the author of the letter and are responsible for its content, accuracy, and the assessment it conveys."
 
-Two cautions specific to letters. A letter drafted from a thin prompt reads generic, and a generic letter is worse for the student than a short specific one. And a student's record is an education record: the detail you paste in to make a draft better is exactly the detail that must not go into a public tool.
+Two things specific to letters. A letter drafted from a thin prompt reads generic, and a generic letter does less for the student than a short specific one. And the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps student education records, such as grades, evaluations, and rank, out of public AI tools, so a practical approach is to draft from your own account of what you observed and add record details yourself in the final version.
 
-## Before you rely on any of it
-
-- Your EED clinical advisor sees your whole record and this cycle's outcomes. This page sees neither.
-- Every program fact gets checked at the source.
-- Every claim about you must be one you can defend out loud, in an interview, without notes.
-- Nothing identifiable about a patient goes into any tool, at any stage.
-
-**Related:** [Module 6: Clinical Contexts](../pathway/clinical.md) for the privacy line the patient-story trap crosses, and [Making Sense of Your Score Reports](score-reports.md) for the exams that precede this year.
+**Related:** [Module 6: Clinical Contexts](../pathway/clinical.md) for turning a real case into a teaching abstraction, and [Making Sense of Your Score Reports](score-reports.md) for the exams that precede this year.

@@ -1,13 +1,13 @@
 # How Tools Are Reviewed
 
-!!! warning "Provisional"
-    This rubric is a working draft, published for transparency and comment ahead of AI Committee ratification; expect it to change.
+!!! note "Working draft"
+    This rubric is a working draft, published for transparency and comment ahead of AI Committee ratification; it will change as the committee refines it.
 
 The [tools directory](../tools/index.md) gives every entry a status describing the institution's relationship with the tool. Most entries are Listed, which is a catalog fact rather than a review outcome: the tool is relevant and live, and nothing more is claimed. This page describes the rubric applied when a tool is actually reviewed, so that process is visible rather than implied. Reviews are request-driven: a tool is examined when someone at the American University of Antigua College of Medicine (AUACOM) needs a decision about it, not on a rolling schedule across the whole directory.
 
 ## What a review establishes
 
-Consistent with the [AI Responsible Use Policy](policy.md), a Reviewed status is not a general endorsement. Where a review clears a tool, it clears it only *for specified categories of data and use*. A review record that names no sensitive data categories means the tool is cleared for non-sensitive use only; the policy's data rules apply at all times regardless of any tool's status.
+Consistent with the [AI Responsible Use Policy](policy.md), a Reviewed status is not a general endorsement. The policy keeps no approved list for tools in general use; it asks users to make sure a tool meets its data security, ethical, and legal requirements, so ordinary, non-sensitive work needs no review. A review matters most for sensitive data: the policy allows sensitive, confidential, or proprietary information into a public tool only when the AI Responsible Use Subcommittee has specifically vetted and approved the tool for that data, and a review record names exactly which data categories and uses it clears, if any.
 
 <figure class="figure figure--html hf">
 <div class="hf-flow">
@@ -26,7 +26,7 @@ Consistent with the [AI Responsible Use Policy](policy.md), a Reviewed status is
 <p class="hf-box-sub">Reviewed, Use with caution, or Restricted</p>
 </div>
 </div>
-<p class="hf-note hf-note--alert">A privacy failure caps the outcome at Use with caution and blocks clearance for any sensitive data category.</p>
+<p class="hf-note">A privacy failure caps the outcome at Use with caution and blocks clearance for any sensitive data category.</p>
 <p class="hf-return">Re-reviewed annually, or sooner on a material vendor change.</p>
 <figcaption>Privacy is a gate, not a score; and review outcomes expire into annual re-review.</figcaption>
 </figure>
@@ -55,9 +55,9 @@ A completed review ends in one of three statuses: Reviewed, Use with caution, or
 | <span class="badge badge-listed">Listed</span> | The default for every entry: in the directory because it is relevant and live; not an endorsement, and not a review outcome |
 | <span class="badge badge-licensed">Licensed</span> | Institutionally licensed or procured; a statement of fact rather than a review verdict |
 | <span class="badge badge-reviewed">Reviewed</span> | Examined through this process; the entry's status note carries the conclusions, including the data categories cleared, if any |
-| <span class="badge badge-caution">Use with caution</span> | A specific documented concern in the entry's status note (data handling, consent requirements, unresolved legal terms); read the note before use |
-| <span class="badge badge-restricted">Restricted</span> | Reviewed and found unsuitable; not for institutional use |
+| <span class="badge badge-caution">Use with caution</span> | The entry's status note documents a specific concern (how the tool handles data, a consent step, unresolved legal terms), worth reading before you rely on the tool |
+| <span class="badge badge-restricted">Restricted</span> | Reviewed and found unsuitable for institutional use; the status note says why |
 
-Any status a review assigns (Reviewed, Use with caution, or Restricted) is revisited annually, matching the policy's annual review cycle, or sooner upon a material vendor change. A Use with caution status can also record a documented concern outside a full review, as all current ones do. The weekly automated content watch checks entries against their sources and proposes corrections for the maintainer to apply; it never changes a status, and status changes are never automated. The published entry carries the status, its note, and the last-reviewed date; the full scoring record of a review is retained internally.
+Any status a review assigns (Reviewed, Use with caution, or Restricted) is revisited annually, matching the policy's annual review cycle, or sooner upon a material vendor change. A Use with caution status can also record a documented concern outside a full review. The weekly automated content watch checks entries against their sources and proposes corrections for the maintainer to apply; it never changes a status, and status changes are never automated. The published entry carries the status, its note, and the last-reviewed date; the full scoring record of a review is retained internally.
 
 To request a review of any tool, listed or not, use the [feedback form](https://forms.office.com/r/5a8RCi2YKP) or the contact route on the [About page](../about.md).

@@ -8,23 +8,19 @@ last_reviewed: 2026-09-01
 
 [Standing Setups](standing-setups.md) covers the containers that hold instructions for one body of work: a project for a course, a folder brief for a set of files. A **skill** is the next thing along. It is a small folder of instructions, sometimes with code attached, that teaches an artificial intelligence (AI) assistant how to carry out one kind of task, and it applies wherever you work rather than inside a single project.
 
-The useful half of this page is short and completely safe: you already have four skills, usually already switched on, and most people do not know what they can do. The rest of the page is about the half that is not automatically safe, and it is written carefully on purpose.
+The most useful part of this page is short: you already have four skills, usually already switched on, and most people do not know what they can do. The rest covers where other skills come from, how to judge one before installing it, and how to write your own.
 
 ## What a skill actually is
 
 A skill is a folder containing a file of instructions, and optionally scripts the assistant can run. The assistant reads the short description of every installed skill at all times, and when a task looks like a match, it reads the full instructions and follows them.
 
-That last part is the whole safety story, so it is worth stating plainly.
+That last part is what makes skills useful, and it is also the thing to understand before installing one someone else wrote.
 
-!!! danger "A skill is closer to installing software than to reading advice"
-
-    When you read a document, you decide what to do with it. When an assistant loads a skill, the skill's instructions become instructions **it follows**, without asking you again, and any code bundled with the skill can be run with the access you have already granted: your files, your folders, and any tools that assistant can reach.
-
-    A skill from someone you cannot identify is therefore not a tip. It is a program you are choosing to trust.
+A skill works more like installed software than like advice. When you read a document, you decide what to do with it. When an assistant loads a skill, it follows the skill's instructions without asking you again, and any code bundled with the skill runs with the access you have already granted: your files, your folders, and any tools that assistant can reach. Installing a skill is therefore a decision to trust its author, the same decision you make when installing any program.
 
 ## The four you already have
 
-These are written and maintained by Anthropic and come with claude.ai and Cowork, with nothing to install. They need file creation switched on, which is the default on most personal accounts; if you get text instead of a file, see [Switching file creation on](#switching-file-creation-on) below. Most of what faculty and staff need from skills is already here, which is a safe starting point.
+These are written and maintained by Anthropic and come with claude.ai and Cowork, with nothing to install. They need file creation switched on, which is the default on most personal accounts; if you get text instead of a file, see [Switching file creation on](#switching-file-creation-on) below. Most of what faculty and staff need from skills is already here.
 
 <!-- render:skills -->
 
@@ -36,40 +32,38 @@ The four document skills are available in claude.ai and Cowork, and Anthropic's 
 
 If you ask for a document and get text in the chat instead of a file, the setting is off. On a personal Free, Pro, or Max account, open **Settings**, then **Capabilities**, and turn on code execution and file creation. On a Team or Enterprise account, an administrator enables it in **Organization settings**, under **Skills**. Custom skills you add yourself live under **Customize**, then **Skills**.
 
-## The risk, in plain terms
+## Skills from open directories
 
 Anyone can write a skill and publish it. The largest public directory, skills.sh, is operated by Vercel and indexed roughly ten thousand ranked skills from more than two thousand authors when this page was checked in August 2026. Skills appear there automatically once anyone installs them: there is no application, no identity check, and no editorial review. The directory runs automated security scans, but by its own rules a skill is removed only if it fails **every** scanning partner, so a skill flagged as critical risk by one scanner can and does remain listed. The site says so itself: it cannot guarantee the quality or security of every skill listed.
 
-Three things can go wrong, and none of them look alarming while they are happening:
+Three things can go wrong, and none of them looks alarming while it is happening:
 
 - **The skill does something other than what it says.** Instructions you did not read can tell the assistant to open files you did not mean to share, or to send them somewhere. Nothing on screen has to look unusual.
 - **A skill that was safe stops being safe.** Skills that pull instructions from a website inherit whatever that website says later. An author's account can change hands. What you audited in March is not necessarily what runs in November.
 - **The advice is confidently wrong for medicine.** This is the one most likely to affect us. A skill for clinical documentation or exam writing, written by someone with no medical education background, can encode wrong practice in fluent, professional language, and the assistant will follow it without hesitation.
 
-!!! warning "Popularity is not safety"
-
-    Install counts, star ratings, and leaderboard positions measure how many people tried something. They do not measure whether it is correct, whether it is safe, or whether it suits medical education. A skill can be widely installed and still be wrong for our work, and tools that recommend skills by popularity are ranking that same signal.
+Install counts, star ratings, and leaderboard positions show how many people tried a skill. They do not show whether it is correct or suits medical education, and tools that recommend skills by popularity rank the same signal, so treat a ranking as a reason to look at a skill, not as a reason to install it.
 
 ## What to do
 
-Anthropic's security guidance for its own product is unusually direct, and it is the right default here:
+Anthropic's own security guidance for skills is short:
 
 > Use Skills only from trusted sources: those you created yourself or obtained from Anthropic.
 
-Its documentation adds that where a skill from an unknown source must be used at all, it deserves extreme caution and a thorough audit first, because the realistic failure modes include data exfiltration and unauthorized system access.
+Its documentation adds that a skill from any other source should be audited thoroughly before use, because a skill written to misbehave can direct the assistant to send data elsewhere or reach parts of the system you did not intend.
 
 Translated into practice:
 
-1. **Start, and usually stop, with the built-in skills.** They cover document work, which is most of what this audience needs, and they carry no installation decision at all.
+1. **Start with the built-in skills.** They cover document work, which is most of what this audience needs, with nothing to install.
 2. **If you need more, take it from Anthropic's own published skills**, listed in the table above. You are choosing a known author, and you can read what you are installing.
-3. **Treat anything from an open directory as unvetted software.** If you cannot read its instruction file and understand what it tells the assistant to do, you are not in a position to install it. Browsing to see what exists is fine. Installing on the strength of a leaderboard is not.
-4. **Never combine an unvetted skill with sensitive material.** The [AI Responsible Use Policy](../governance/policy.md) rules do not change here, and they bite harder than usual, because an assistant running a skill has whatever file access you gave it. Patient information and student records stay out, without exception.
+3. **Read a skill from an open directory before installing it.** Its instruction file is plain text: if you can follow what it tells the assistant to do, and what any bundled scripts do, you can judge it as you would any program. Browsing a directory is a good way to find ideas.
+4. **Try a new skill on ordinary files first.** A skill runs with whatever file access you gave the assistant, so the [AI Responsible Use Policy](../governance/policy.md#responsible-use)'s data rules apply to everything it can reach, as they do to anything you paste. A first run on ordinary files shows you what the skill actually does before you rely on it for real work.
 
-Skills are new enough that the AI Committee has not yet taken a position on them, and no skill has been through the [tool review process](../governance/review-process.md). Until that happens, the guidance above is what this page recommends, drawn from the vendor's own documentation and the policy's data rules. If you have found a skill you believe belongs in front of colleagues, that is the kind of thing to bring to the [AI Committee](../governance/committee.md) rather than to pass around informally.
+The AI Committee has not taken a position on skills, and no skill has been through the [tool review process](../governance/review-process.md); the suggestions above come from the vendor's documentation and the policy's data rules. If you find or write a skill colleagues would benefit from, share it along with where it came from, so each person can judge it for themselves, and tell the [AI Committee](../governance/committee.md) too, so it can be weighed for this page.
 
 ## Writing your own
 
-The supported way to get a skill that fits AUA is to write one, not to adopt a stranger's. Anthropic publishes a skill-creator skill for exactly this, and the format is an open standard used by several vendors, so a skill written here is portable rather than tied to one product.
+Often the best way to get a skill that fits AUA is to write one: you know exactly what it tells the assistant, and it encodes your own practice rather than someone else's. Anthropic publishes a skill-creator skill for exactly this, and the format is an open standard used by several vendors, so a skill written here is portable rather than tied to one product.
 
 Two practical limits are worth knowing before you invest effort. On personal accounts, custom skills are **per user**: each person uploads their own copy, and there is no central update or withdrawal. On Team and Enterprise accounts, an administrator can provision a skill for the whole organization from Organization settings, which is the route an institution would use. And custom skills **do not follow you between products**: one uploaded to claude.ai is not available in Claude Code, and the reverse.
 

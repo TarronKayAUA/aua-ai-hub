@@ -39,8 +39,8 @@ How accurate any of this is on a given day depends on the current model and on w
 
 **Every transformation is a further step away from the source.** A study guide, a summary, or an audio overview has to decide what matters, and that is where emphasis shifts, qualifications drop, and a single author's view becomes a general statement. The published evaluations so far have found the derived formats less faithful than direct answers, even when the underlying facts are extracted correctly. Settled material such as textbook chapters survives the process better than primary research, whose findings depend on the caveats that summarizing strips.
 
-!!! tip "The rule that follows from all of this"
-    Finding and quoting is what it does best. Every transformation into a study guide, podcast, or verdict is a further place where errors enter, so open the citation and confirm the passage actually says what the answer claims.
+!!! tip "What this means in practice"
+    Before you rely on an answer, open the citation and confirm the passage says what the answer claims. That check matters most for study guides, audio overviews, and verdicts, the formats furthest from your sources.
 
     For exam preparation this means material generated from your lectures is a revision aid, not a source of truth. The moment you cannot trace a claim to a passage in your own upload, check it against the lecture.
 
@@ -79,6 +79,4 @@ AUA does not provide institutional Google accounts, so everyone here is on a per
 - Google states that notebook content "will not be used to directly train our foundational AI models, unless you choose to provide feedback." Note the wording: it covers direct training of Google's foundation models rather than every use of the content. Pressing thumbs up or thumbs down sends the surrounding context, including your uploaded sources, to human reviewers, and that material is retained for up to three years, disconnected from your account ([privacy](https://support.google.com/gemininotebook/answer/17004255)). Deleting your Gemini activity does not delete notebook data.
 - The exemption from human review that Google documents for Workspace and Workspace for Education accounts does not apply to personal accounts, and paying for a plan does not change it.
 
-None of that is a reason to avoid the tool for your own coursework. It is a reason to think before uploading anything that is not yours to upload. What belongs in a public artificial intelligence (AI) tool, and what never does, is covered by the [AI Responsible Use Policy](../governance/policy.md) and summarized in [The Rules](../pathway/rules.md).
-
-Google's own help pages state that Gemini Notebook can make mistakes, and its documentation says not to rely on it for medical advice. The tool is listed in the [directory](index.md) for discovery, not as an endorsement, and the policy's data rules apply to it as to everything else.
+None of that is a reason to avoid the tool for your own coursework. It is a reason to think before uploading anything that is not yours to upload. Some kinds of information, such as patient health information and student education records, stay out of public artificial intelligence (AI) tools unless a tool has been approved for them. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) sets out the full list, and [Module 3 of the AI Literacy Pathway](../pathway/rules.md) walks through it in plain language.

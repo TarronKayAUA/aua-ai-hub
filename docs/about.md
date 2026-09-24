@@ -64,7 +64,7 @@ Most of this site is written and reviewed by people; the News, Videos, and Podca
 
 ## Governance note
 
-The university's [AI Responsible Use Policy](governance/policy.md) and the [AI Committee](governance/committee.md) are published in the Governance section. The [tools directory](tools/index.md) carries governance status badges describing the institution's relationship with each tool (a listing is not an endorsement, and committee review is available on request), and the [prompt library](prompts/index.md) carries review status badges that are provisional until ratified through the committee process. Nothing else on this site is institutional policy unless explicitly marked as such.
+The university's [AI Responsible Use Policy](governance/policy.md) and the [AI Committee](governance/committee.md) are published in the Governance section. The [tools directory](tools/index.md) shows the institution's relationship with each tool, with committee review available on request, and the [prompt library](prompts/index.md) marks each prompt Draft or Reviewed, a status that is provisional until the committee ratifies its review process. The policy is the only institutional policy on this site. The playbooks, prompts, and other guidance are suggested practice, offered with the reasons they help; where a page summarizes the policy, the policy's own text governs.
 
 ## Privacy
 
@@ -72,7 +72,7 @@ This site sets no cookies and runs no advertising scripts. Page fonts load from 
 
 ## Disclaimer
 
-This site is informational. AI-generated summaries and descriptions may contain errors; readers should verify claims against the linked primary sources before relying on them. Tool listings are not endorsements, benchmark scores are not purchasing advice, and prompts are templates whose outputs require your own verification. Nothing here constitutes clinical guidance, legal advice, or institutional policy unless explicitly marked as such.
+This site is informational. Summaries of news, videos, and podcasts are machine-written and can contain errors, so the linked sources are the reference. Listings on this site are not endorsements, and benchmark scores are not purchasing advice. Nothing here is clinical guidance or legal advice.
 
 ## The maintainer
 
@@ -91,7 +91,7 @@ The fastest way to tell us what works, what does not, and what to fix: the [feed
 
 News, video, podcast, and digest pages also carry a comments section where you can discuss items and react to them, and the [Prompt Exchange](prompts/exchange.md) accepts community prompt contributions with public voting. Both run on the site's [GitHub Discussions board](https://github.com/TarronKayAUA/aua-ai-hub/discussions) and require a free [GitHub account](https://github.com/signup) to post.
 
-**Community standards.** Comments and posts are public. Keep discussion professional, and never post patient information, student records, or exam content, consistent with the university's [AI Responsible Use Policy](governance/policy.md). Content is subject to moderation, and repeated misuse may result in loss of posting access.
+**Community standards.** Comments and posts are public, so leave out patient details, student records, and exam content, which are not yours to publish. Discussion is moderated to keep it professional.
 
 ## Contact
 

@@ -6,7 +6,7 @@
 # pending process (reframed 2026-07-14, owner-approved): listed = in the
 # directory, not an endorsement; licensed = institutionally procured;
 # reviewed = examined by the AI Committee (on request, via the review
-# process); caution = a specific concern documented in the status note;
+# process); caution = a committee review outcome, with the concern documented in the status note;
 # restricted = reviewed and found unsuitable.
 # Only the owner changes governance_status.
 #
@@ -14,9 +14,7 @@
 # extra task ids from data/tool_tasks.yaml. Every tool already joins one
 # task through its category; cross-list a tool under another task only
 # where its own blurb or status note, or an existing guide page on this
-# site, names that task. Deliberately not cross-listed: services carrying
-# a data-handling caution (the China-operated assistants) under tasks that
-# invite uploading your own files. The render hook fails on an unknown id.
+# site, names that task. The render hook fails on an unknown id.
 #
 # Content-watch keys (optional, per entry): the weekly content-watch
 # workflow verifies entries against their pages and bumps last_reviewed
@@ -41,7 +39,6 @@
   url: https://claude.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-22
   blurb: General-purpose artificial intelligence assistant for writing, analysis, coding, and answering questions through a chat interface.
 
@@ -51,7 +48,6 @@
   url: https://chatgpt.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-22
   blurb: Widely used artificial intelligence chat assistant for drafting, summarizing, brainstorming, and general question answering.
 
@@ -64,7 +60,6 @@
   verify_url: https://gemini.google/about/
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-22
   blurb: Google's artificial intelligence assistant, integrated with Google Workspace apps such as Docs and Gmail.
 
@@ -75,7 +70,6 @@
   url: https://www.microsoft.com/en-us/microsoft-365-copilot
   cost: institutional
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
   blurb: Artificial intelligence assistant built into Word, PowerPoint, Outlook, and Teams under an institutional Microsoft 365 license.
 
@@ -88,7 +82,7 @@
   # watch, 2026-07-07).
   verify_url: https://api-docs.deepseek.com/
   cost: free
-  governance_status: caution
+  governance_status: listed
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-08-25
   blurb: Chat assistant from the Chinese lab DeepSeek, built on reasoning models whose weights are openly published.
@@ -103,7 +97,7 @@
   category: assistants
   url: https://chat.qwen.ai
   cost: free
-  governance_status: caution
+  governance_status: listed
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-08-25
   blurb: Alibaba's chat assistant, built on the Qwen model family, with document, image, and voice input alongside text chat.
@@ -117,7 +111,7 @@
   category: assistants
   url: https://www.kimi.com
   cost: free
-  governance_status: caution
+  governance_status: listed
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-08-25
   blurb: Chat assistant from Moonshot AI, built on the Kimi K3 model family, with long-document reading and agent features.
@@ -128,7 +122,6 @@
   url: https://www.perplexity.ai
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   # The app serves a script-only shell to fetchers, but the hub's
   # getting-started page returns a plain product description to scripts
   # ("AI-powered answer engine ... backed by citations you can verify"),
@@ -146,7 +139,7 @@
   # (content watch, 2026-07-07).
   verify: skip
   cost: freemium
-  governance_status: caution
+  governance_status: listed
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-06-10
   blurb: Chat assistant built on the GLM model family from Chinese lab Zhipu AI, with agent modes for slides and documents.
@@ -160,7 +153,6 @@
   url: https://claude.com/product/claude-code
   cost: paid
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
   blurb: Anthropic's agent for software work, available in the terminal, in code editor extensions, in a desktop app, and in the browser. Plans and executes multi-step tasks against your own files; included with paid Claude plans.
 
@@ -171,7 +163,6 @@
   url: https://claude.com/product/cowork
   cost: paid
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
   blurb: Anthropic's desktop agent for non-coding knowledge work. Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
 
@@ -186,7 +177,6 @@
   url: https://openai.com/codex/
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
   blurb: OpenAI's coding agent, part of the ChatGPT desktop app since the July 2026 merge, alongside a command-line tool, a code editor extension, and a cloud service. Works with local folders, repositories, and terminals; included with every ChatGPT plan, including Free.
 
@@ -204,7 +194,6 @@
   url: https://openai.com/chatgpt-work/
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
   # Blurb and cost updated 2026-07-28 (issue #28, owner approved): the
   # successor-to-Agent-Mode framing no longer appears on any official
@@ -234,7 +223,7 @@
   # so YAML folded them into the same plain scalar and published a
   # contradictory tail ("Independent again since August 2026 ... will soon
   # resume operating as an independent company"). Removed 2026-09-08.
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply. Independent again since August 2026 after Chinese regulators blocked Meta's acquisition; existing accounts may have changed during the separation.
+  status_note: Independent again since August 2026 after Chinese regulators blocked Meta's acquisition; existing accounts may have changed during the separation.
   last_reviewed: 2026-09-01
   blurb: General-purpose autonomous agent that breaks a goal into steps and executes them in a cloud workspace, producing research, documents, slides, and simple applications.
 
@@ -244,7 +233,6 @@
   url: https://www.perplexity.ai/comet
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-08
   blurb: Web browser with a built-in agent that can summarize, navigate, and act across your open tabs and accounts. Free to use, with higher limits on paid plans.
 
@@ -262,7 +250,6 @@
   url: https://www.perplexity.ai/hub/products/computer-for-windows
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
   blurb: Perplexity's desktop agent, which orchestrates multiple models across local files, native applications, and the web from a single request. Generally available in the Mac app; rolling out to Pro and Max subscribers on Windows.
 
@@ -271,10 +258,10 @@
   category: agents
   url: https://openclaw.ai
   cost: free
-  governance_status: caution
-  status_note: Self-hosted software with broad system access; it is intended for technically confident users who scope its permissions deliberately.
+  governance_status: listed
+  status_note: Self-hosted, and it acts with whatever access you grant on your computer and messaging accounts. Because it reads incoming messages, text in those messages can steer it, so giving it only the access a task needs limits what a stray instruction can reach.
   last_reviewed: 2026-09-08
-  blurb: Open-source, self-hosted personal agent that connects a model of your choice to the messaging apps you already use. Free software; you supply the model, hardware, and judgment.
+  blurb: Open-source, self-hosted personal agent that connects a model of your choice to the messaging apps you already use. Free software; you supply the model and the hardware.
 
 - name: Elicit
   vendor: Elicit
@@ -282,7 +269,6 @@
   url: https://elicit.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
   blurb: Literature research assistant that finds papers and extracts key findings into structured tables.
 
@@ -295,7 +281,6 @@
   url: https://consensus.app
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-06-09
   blurb: Search engine that answers questions by summarizing findings across published, peer-reviewed studies.
 
@@ -305,7 +290,6 @@
   url: https://scite.ai
   cost: paid
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
   blurb: Citation analysis tool that shows whether later papers support or dispute a given study's claims.
 
@@ -324,7 +308,6 @@
   verify_url: https://support.google.com/gemininotebook/
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-26
   blurb: Research notebook that answers questions and generates summaries from documents you upload, with citations back to the passage; optional features can add web sources. Formerly NotebookLM.
 
@@ -361,7 +344,7 @@
   verify_url: https://www.elsevier.com/products/scopus/scopus-ai
   cost: AUA-licensed
   governance_status: licensed
-  status_note: "Licensed institution-wide through the AUA Library (2026) and reviewed ahead of procurement. Sign in with AUA credentials via the library link. The policy's data rules apply here as everywhere."
+  status_note: "Licensed institution-wide through the AUA Library (2026) and reviewed ahead of procurement. Sign in with AUA credentials via the library link."
   last_reviewed: 2026-08-25
   blurb: Elsevier's Scopus citation database with its Scopus AI layer, answering plain-language questions with cited summaries, concept maps, and an agentic Deep Research mode, grounded in the abstracts of the indexed peer-reviewed literature.
 
@@ -371,7 +354,6 @@
   url: https://www.semanticscholar.org
   cost: free
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-25
   blurb: Free academic search engine with paper summaries, citation graphs, and author pages across scientific fields.
 
@@ -395,7 +377,6 @@
   url: https://www.researchrabbit.ai/
   cost: free
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Visual literature mapping from seed papers, surfacing related work, shared authorship, and citation neighborhoods, with a feature-complete free tier.
 
@@ -409,7 +390,6 @@
   url: https://www.neuralconsult.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
   blurb: Study platform for medical, nursing, and physician assistant students with flashcard generation from your own materials, board-style questions, and simulated patient encounters for clinical exam practice.
 
@@ -419,7 +399,6 @@
   url: https://www.theastudy.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
   blurb: Study app that builds flashcards, practice tests, and summaries with spaced repetition from uploaded readings or lecture notes.
 
@@ -429,7 +408,6 @@
   url: https://medicalstudent.ai
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
   blurb: Tutoring app with a question bank in the style of the United States Medical Licensing Examination (USMLE), cited explanations, and custom quizzes built from uploaded study materials.
 
@@ -439,7 +417,6 @@
   url: https://nabututor.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   # Site 403s all scripted clients (content watch included); confirmed
   # live in a browser 2026-07-14.
   last_reviewed: 2026-07-14
@@ -461,9 +438,8 @@
   url: https://www.stepgenie.app
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-07
-  blurb: Question bank for USMLE Steps 1, 2 CK, and 3 whose answer explanations are built as sequences of images rather than text, alongside a 45-day study plan. The vendor's speed and retention claims are its own.
+  blurb: Question bank for USMLE Steps 1, 2 CK, and 3 whose answer explanations are built as sequences of images rather than text, alongside a 45-day study plan.
 
 - name: Oncourse AI
   vendor: Oncourse AI
@@ -471,7 +447,6 @@
   url: https://getoncourse.ai
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-08
   blurb: Adaptive USMLE study platform whose lessons, flashcards, and quizzes adjust to performance, with a built-in tutoring chatbot.
 
@@ -484,7 +459,6 @@
   url: https://gamma.app
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-06-09
   blurb: Tool that drafts presentations, documents, and simple web pages from a text prompt or outline.
 
@@ -494,7 +468,6 @@
   url: https://www.grammarly.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
   blurb: Writing assistant that checks grammar, clarity, and tone in documents, email, and browser text fields.
 
@@ -515,7 +488,6 @@
   url: https://support.microsoft.com/en-us/teams/meetings/start-stop-and-download-live-transcripts-in-microsoft-teams-meetings
   cost: institutional
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
   blurb: Built-in live transcription for Teams meetings under the institutional Microsoft 365 license.
 
@@ -525,7 +497,6 @@
   url: https://ollama.com
   cost: free
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-08
   blurb: Tool for downloading and running open-weights models on your own computer, through a command line or an official desktop chat app. The local app is free; the company separately sells an optional cloud service for models too large to run locally.
 
@@ -543,7 +514,6 @@
   url: https://lmstudio.ai
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
   blurb: Desktop application with a graphical interface for downloading and chatting with local language models, which remains a free download. The vendor's lead product is now LM Studio Bionic, an agent for open models with free local use and optional paid cloud models.
 
@@ -553,7 +523,6 @@
   url: https://openwebui.com
   cost: free
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
   blurb: Self-hosted web interface for chatting with local models served by tools such as Ollama.
 
@@ -595,7 +564,6 @@
   url: https://support.microsoft.com/en-us/office/create-professional-slide-layouts-with-designer-53c77d7b-dc40-45c2-b684-81415eac0617
   cost: institutional
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-08
   blurb: Built into PowerPoint under the institutional Microsoft 365 license, where Microsoft now calls the feature Design Suggestions and delivers it through Copilot. Suggests layouts, imagery, and design treatments for the slide being edited, so an existing deck improves one slide at a time without leaving the file.
 
@@ -605,7 +573,6 @@
   url: https://www.canva.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-08
   blurb: Design platform with prompt-based Magic Design features and a large asset library. Imports an existing PowerPoint deck for restyling and exports the result back to PowerPoint.
 
@@ -615,7 +582,6 @@
   url: https://www.beautiful.ai
   cost: paid
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-08
   blurb: Presentation tool whose built-in design rules keep slides tidy as content changes. Works in its own format but exports to PowerPoint cleanly.
 
@@ -631,7 +597,6 @@
   verify: skip
   cost: paid
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-06-12
   blurb: Image generation service known for strong aesthetics and stylization, used through its website or Discord. No free tier.
 
@@ -658,7 +623,6 @@
   verify_url: https://help.openai.com/en/articles/11084440-images-in-chatgpt
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   # Blurb rewritten the same day. The previous one claimed the tool was
   # "strong at following detailed instructions" and at "rendering readable
@@ -680,7 +644,6 @@
   verify: skip
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-07-21
   blurb: Adobe's image generation app. Adobe's own Firefly models are trained on licensed and public-domain content, which matters when training-data provenance or commercial use is a concern; the app also offers partner models from other companies that do not carry that assurance, so check which model is selected.
 
@@ -690,7 +653,6 @@
   url: https://ideogram.ai
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Image generator designed for legible text inside images, useful for posters, badges, and labeled figures.
 
@@ -704,7 +666,6 @@
   url: https://labs.google/fx/tools/flow
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-08
   blurb: Google's creative studio for video and image generation, combining the Veo 3.1 and Gemini Omni video models with Nano Banana image generation. It absorbed Google's earlier ImageFX and Whisk tools.
 
@@ -714,7 +675,6 @@
   url: https://runwayml.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-22
   blurb: Video generation and editing platform aimed at production work, with fine control over camera moves, motion, and character consistency.
 
@@ -723,7 +683,7 @@
   category: video_generation
   url: https://kling.ai
   cost: freemium
-  governance_status: caution
+  governance_status: listed
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
   last_reviewed: 2026-09-08
   blurb: Video generator from the Chinese company Kuaishou. The Kling 3.0 family generates clips with native synchronized audio and multi-language lip sync.
@@ -733,7 +693,7 @@
   category: video_generation
   url: https://hailuoai.video
   cost: freemium
-  governance_status: caution
+  governance_status: listed
   status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
   # Re-read 2026-07-21 against the live page (content-watch flag): video
   # generation and the free tier both confirmed; the page now also
@@ -746,8 +706,8 @@
   category: video_generation
   url: https://www.heygen.com
   cost: freemium
-  governance_status: caution
-  status_note: Avatar and voice features require documented consent before using any real person's face or voice.
+  governance_status: listed
+  status_note: "A custom avatar or voice of someone other than you needs that person's agreement: a likeness used without it misrepresents them, which the policy's prohibited uses section rules out."
   last_reviewed: 2026-09-22
   blurb: Generates presenter-style videos with artificial intelligence avatars, including translated, lip-synced versions of existing recordings.
 
@@ -756,8 +716,8 @@
   category: video_generation
   url: https://www.synthesia.io
   cost: freemium
-  governance_status: caution
-  status_note: Avatar and voice features require documented consent before using any real person's face or voice.
+  governance_status: listed
+  status_note: "A custom avatar or voice of someone other than you needs that person's agreement: a likeness used without it misrepresents them, which the policy's prohibited uses section rules out."
   last_reviewed: 2026-09-22
   blurb: Avatar video platform for training and instructional content. Turns a script or document into a narrated presenter video without filming.
 
@@ -768,7 +728,7 @@
   category: music_audio
   url: https://suno.com
   cost: freemium
-  governance_status: caution
+  governance_status: listed
   status_note: Training-data copyright litigation is ongoing; check output-use terms before publishing generated music.
   last_reviewed: 2026-09-22
   blurb: Generates complete songs with vocals from a text description, with a free tier.
@@ -785,7 +745,6 @@
   verify: skip
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-07-15
   blurb: Song generator that settled with Universal Music Group in 2025 and holds agreements with major labels. During the transition to its licensed platform, downloads of generated audio are disabled, so tracks currently cannot leave the platform.
 
@@ -794,8 +753,8 @@
   category: music_audio
   url: https://elevenlabs.io
   cost: freemium
-  governance_status: caution
-  status_note: Voice cloning requires documented consent from the person whose voice is used.
+  governance_status: listed
+  status_note: "A cloned voice of someone other than you needs that person's agreement: a voice used without it misrepresents them, which the policy's prohibited uses section rules out."
   last_reviewed: 2026-09-08
   blurb: Speech synthesis, voice, music, and sound effect generation for narrating course material or producing audio versions of written content. The music model is trained on licensed data, with generated tracks cleared for commercial use.
 
@@ -815,7 +774,6 @@
   verify_url: https://mistral.ai/products/vibe
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Chat assistant from the French lab Mistral, renamed from Le Chat in June 2026. Combines a conversational mode with work and coding agent modes that connect to tools such as email, calendar, and code repositories.
 
@@ -825,7 +783,7 @@
   url: https://antigravity.google
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply. Public preview; free-tier quotas have changed several times.
+  status_note: Public preview; free-tier quotas have changed several times.
   last_reviewed: 2026-09-08
   blurb: "Google's development platform built around agents: an editor and a command-line tool plan and execute multi-step coding tasks using Gemini and other models. It replaced Google's earlier Gemini Command Line Interface for individual users in June 2026."
 
@@ -841,7 +799,6 @@
   verify: skip
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-07-15
   blurb: Research workspace that combines literature search, question answering over uploaded papers, data extraction into tables, and citation formatting in one interface.
 
@@ -851,7 +808,6 @@
   url: https://www.undermind.ai
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Literature search assistant that runs a deep, iterative search on a topic you describe and returns a structured report with citations. Suited to thorough searches such as novelty checks rather than quick lookups.
 
@@ -865,7 +821,6 @@
   verify_url: https://allenai.org/asta
   cost: free
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Scholarly research assistant from the Allen Institute for AI, the makers of Semantic Scholar, that finds papers, answers questions with citations to the literature, and summarizes evidence. Free to use with a sign-in.
 
@@ -875,7 +830,6 @@
   url: https://paperpal.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Academic writing assistant with grammar and language checking tuned to scholarly text, plus paraphrasing, plagiarism checks, and journal submission readiness checks. Works in Microsoft Word, Google Docs, Overleaf, and a web editor.
 
@@ -885,7 +839,6 @@
   url: https://www.writefull.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Language feedback for research manuscripts from models trained on published journal articles, used through Microsoft Word and Overleaf add-ins, with a revision tool for checking a full document before submission.
 
@@ -895,7 +848,6 @@
   url: https://medical.uworld.com/usmle/features/uask/
   cost: paid
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Artificial intelligence study assistant built into UWorld's question banks for the United States Medical Licensing Examination (USMLE) Steps 1 through 3. Answers questions about the item on screen, walks through the clinical reasoning, and can turn responses into flashcards and notebook entries.
 
@@ -905,7 +857,6 @@
   url: https://www.amboss.com/us
   cost: paid
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Medical knowledge platform and question bank with a built-in artificial intelligence study mode (AI Mode Learning) that answers questions grounded in the AMBOSS library, plus a beta collection of Assistants for case simulation, checklists, and consult preparation.
 
@@ -920,7 +871,6 @@
   verify_url: https://www.osmosis.org/about
   cost: paid
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-01
   blurb: Conversational study companion from Elsevier included with Osmosis subscriptions. Answers medical study questions with citations to Elsevier textbooks, links answers to Osmosis videos, and generates flashcards and quiz questions on request.
 
@@ -937,7 +887,6 @@
   verify: skip
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-01
   blurb: Study platform that turns uploaded course materials (slides, PDFs, recordings) into flashcards, quizzes, and practice tests, with an AI tutor that answers from what you upload. Free plan with limits; paid plans lift them.
 
@@ -947,7 +896,6 @@
   url: https://otter.ai
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-15
   blurb: Meeting assistant that transcribes and summarizes video calls, with live transcripts that participants can highlight and comment on during the meeting. The free plan includes 300 transcription minutes per month.
 
@@ -957,7 +905,6 @@
   url: https://fathom.ai
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-22
   blurb: Meeting notetaker that joins video calls to record, transcribe, and summarize them, delivering the summary shortly after the call ends. The free plan does not cap recordings or transcription.
 
@@ -968,7 +915,6 @@
   url: https://www.napkin.ai
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-22
   blurb: Generates editable diagrams, flowcharts, and infographics from pasted or imported text, a quick way to add visuals to lectures and handouts. Exports to PowerPoint, image, and PDF formats; the free plan places a small watermark on exported visuals.
 
@@ -978,7 +924,6 @@
   url: https://jan.ai
   cost: free
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-22
   blurb: Open-source desktop application for downloading and chatting with open-weights models fully offline, similar in role to LM Studio but Apache 2.0 licensed. Runs on Windows, macOS, and Linux.
 
@@ -992,7 +937,6 @@
   url: https://www.rayyan.ai/
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-09-22
   blurb: Web platform for systematic and literature reviews that handles reference import, duplicate detection, and title and abstract screening across a review team. Artificial intelligence features rank records by predicted relevance on every plan including the free one, while automated data extraction requires the Advanced plan or higher.
 
@@ -1002,7 +946,6 @@
   url: https://www.covidence.org/
   cost: paid
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-08-18
   blurb: Web platform for managing systematic reviews with a team, covering screening, data extraction, and reporting aligned to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) standard. Artificial intelligence features sort records by predicted relevance, tag randomized controlled trials, and suggest data extraction values that reviewers accept or reject one at a time.
 
@@ -1013,7 +956,7 @@
   url: https://www.biorender.com
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply. The free tier is for educational use only and grants no publication rights; check your plan before a figure goes into a manuscript.
+  status_note: The free tier is for educational use only and grants no publication rights; check your plan before a figure goes into a manuscript.
   last_reviewed: 2026-08-18
   blurb: Web-based tool for building scientific figures, slides, and posters from a library of biomedical icons and templates. Its artificial intelligence features convert uploaded images to the platform's style, edit icons from text prompts, and draft flowcharts, protocols, and timelines from written descriptions.
 
@@ -1028,6 +971,5 @@
   verify: skip
   cost: freemium
   governance_status: listed
-  status_note: Listed for discovery, not endorsement; the policy's data rules apply.
   last_reviewed: 2026-07-21
   blurb: Web tool from Adobe for cleaning up and editing spoken audio. Its Enhance Speech filter removes background noise and echo from voice recordings, and can separate speech, background noise, and music into layers that are adjusted independently.

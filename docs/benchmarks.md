@@ -10,7 +10,7 @@ How do you know whether one artificial intelligence (AI) model is better than an
 
 ## How to read a leaderboard
 
-Three cautions keep benchmark numbers useful:
+Three things to keep in mind when reading benchmark numbers:
 
 1. **Benchmarks measure the test, not your task.** A model that tops a math benchmark may still write mediocre patient-education materials. Scores are a compass, not a verdict; the only benchmark that truly matters is a trial on your own work.
 2. **Contamination inflates scores.** When a benchmark's questions leak into training data, models can score well by memory rather than ability. Newer benchmarks fight this by refreshing their questions on a schedule. LiveBench, featured below, is one: it releases new questions regularly and delays publishing the most recent ones.

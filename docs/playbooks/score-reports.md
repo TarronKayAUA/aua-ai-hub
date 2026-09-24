@@ -61,12 +61,10 @@ Before you run any prompt, open your report and write down your own three takeaw
 
 ## Gather first
 
-- Your report, as text: export or copy from INSIGHTS, or your in-house report, with your name, student number, and any exam identifiers removed.
+- Your report, as text: export or copy from INSIGHTS, or your in-house report (step 1 below covers what to strip).
 - The date of your next exam and your honest weekly study hours, after classes, work, and everything else. Honest, not aspirational.
 - What resources you actually have (question bank, lecture notes, review materials), so the plan names real things.
 - Your own three takeaways, written first.
-
---8<-- "includes/prompt-maturity-note.md"
 
 ## The workflow
 
@@ -75,37 +73,35 @@ Before you run any prompt, open your report and write down your own three takeaw
 <ol class="hf-steps">
 <li class="hf-box"><p class="hf-box-title">Your score report</p><p class="hf-box-sub">INSIGHTS or in-house</p></li>
 <li class="hf-box"><p class="hf-box-title">Your own read</p><p class="hf-box-sub">three takeaways, written first</p></li>
-<li class="hf-box hf-box--stop"><p class="hf-box-title">De-identify</p><p class="hf-box-sub">name, ID, exam codes out</p></li>
+<li class="hf-box"><p class="hf-box-title">De-identify</p><p class="hf-box-sub">name, ID, exam codes out</p></li>
 <li class="hf-box hf-box--filled"><p class="hf-box-title">Planner prompt</p><p class="hf-box-sub">an honest, interleaved plan</p></li>
 <li class="hf-box"><p class="hf-box-title">Your advisor</p><p class="hf-box-sub">the plan becomes the agenda</p></li>
 <li class="hf-box hf-box--ok"><p class="hf-box-title">Next assessment</p><p class="hf-box-sub">keep, shrink, or change the plan</p></li>
 </ol>
 <p class="hf-return">The next assessment produces the next report, and the loop starts again.</p>
 <p class="hf-note">The plan is a hypothesis; the next assessment is the test.</p>
-<figcaption>No step is optional: skip your own read and you stop learning to self-assess; skip the advisor and the plan never meets someone who knows you.</figcaption>
+<figcaption>Each step earns its place: skip your own read and you stop practicing self-assessment; skip the advisor and the plan never meets someone who knows you.</figcaption>
 </figure>
 
-1. **Get your data out.** Open [INSIGHTS](https://www.mynbme.org/), download the score report or export the tables, or collect your in-house report. Paste it into a text file and strip your name, student number, and any exam identifiers.
+1. **Get your data out.** Open [INSIGHTS](https://www.mynbme.org/), download the score report or export the tables, or collect your in-house report. Paste it into a text file and strip your name, student number, and any exam identifiers. The planner needs none of them, stripping them takes a minute, and the [AI Responsible Use Policy](../governance/policy.md) lists student education records among what stays out of public AI tools.
 2. **Write your own read.** Three takeaways, before any model sees anything. Two minutes that make everything after them work better.
 3. **Run the [score report study planner](../prompts/index.md#score-report-study-planner).** It will ask for your report, your timeline, your honest hours, your resources, your own read, and your test-taking patterns, then produce an honest assessment, a deficit map, the quick wins (biostatistics, epidemiology, ethics, and communication, checked explicitly when your exam tests them, as Step 1 and the comprehensive exams built to its outline do), an interleaved week-by-week plan, test-taking drills for any strategy problems it finds, three questions for your advisor, and what to re-measure on your next assessment.
 4. **Sanity-check the plan.** Are the weekly hours ones you actually have? Does every week keep your strong areas warm rather than parking a month on one subject? Does every claim about your performance trace to something in your report?
 5. **Take it to your advisor.** The plan's advisor questions are the agenda. Advisors see patterns no model can: how this exam fits your trajectory, what worked for students in your exact position, and when the problem is not the studying at all.
 6. **Close the loop.** After your next assessment, run the [study plan progress check](../prompts/index.md#study-plan-progress-check) with the old plan and the new report. It will say honestly which of three things happened: the plan worked, the plan was not followed, or the plan was followed and did not work, and each has a different next move.
 
-## Guardrails for this task
+## Good practice for this task
 
-- **Your own report only.** A classmate's report is their education record; it is never yours to paste anywhere, even to help them. Point them here instead.
-- **De-identify even your own.** The [AI Responsible Use Policy](../governance/policy.md) draws a hard line around identifiable student records in public AI tools. Strip your name, student number, and exam identifiers before pasting, so what enters the tool is performance data rather than an identifiable record.
-- **Performance data, not questions.** NBME exam questions are copyrighted secure content. The report's content-area descriptions are fine to paste; reconstructed exam questions are not, in any tool, ever.
+- **A classmate's report is theirs to share.** It is their education record, and the policy keeps other people's records out of public AI tools. If a classmate wants help, send them this page so they can run the planner on their own report, or sit beside them while they do.
+- **Performance data, not questions.** The report's content-area descriptions are all the planner needs. NBME exam questions are copyrighted and confidential, so leave out any you remember from the exam; to dig into a concept you missed, work from your question bank or your notes instead.
 - **Treat single-exam areas as hypotheses.** Content-area scores on one exam carry wide error bands. A pattern across two or more exams, or a flag that matches your own sense of weakness, is evidence; one dip is a lead to investigate.
-- **The model plans; it does not absolve.** A plan you did not follow is information about the plan's size, not a verdict on you, and the progress check treats it that way. But no prompt fixes not opening the question bank.
+- **A missed plan is information.** A plan you did not follow says something about the plan's size, not about you, and the progress check treats it that way; the next plan should be one you can keep.
 
 !!! note "For advisors"
-    Both prompts work in an advising meeting with the student driving on their own account and screen, which keeps the student's data in the student's hands and teaches the method at the same time. If you handle score reports yourself, de-identification before any public AI tool is the same hard requirement as in the [writing feedback playbook](writing-feedback.md). The planner's output ends with questions the data cannot answer; that section exists to make your meeting sharper, not to replace it.
+    Both prompts work in an advising meeting with the student driving on their own account and screen, which keeps the student's data in the student's hands and teaches the method at the same time. If you work with a student's report yourself, remove the name, student number, and exam identifiers first: in your hands it is a student education record, which the policy keeps out of public AI tools. The planner's output ends with questions the data cannot answer; that section exists to make your meeting sharper, not to replace it.
 
 ## Before you rely on it
 
-- [ ] The pasted report was your own and de-identified, including exam identifiers.
 - [ ] You wrote your own three takeaways first, and compared them with the model's read.
 - [ ] Every claim in the plan about your performance traces to the report; anything generic got cut.
 - [ ] The weekly hours in the plan are hours you demonstrably have.
