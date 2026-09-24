@@ -1,20 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/26/relay-market",
-   "title_hash": "ea545953f5e0aee4a11d210dd943d476",
-   "first_seen": "2026-07-26T21:12:51.568081+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; concerns cryptocurrency and fraud rather than AI capabilities or medical applications"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v74j62/sources_openai_and_anthropic_quietly_lobby",
-   "title_hash": "9a252f14ca30cc6027e9ce72db93a1c3",
-   "first_seen": "2026-07-26T21:12:51.568081+00:00",
-   "kept": false,
-   "reason": "forum gossip and unverified lobbying claims; does not meet the bar for substantive policy news"
-  },
-  {
    "url": "https://arxiv.org/abs/2607.21619",
    "title_hash": "c5ba32c6fd8ba71e0cbf0a2d84a1927c",
    "first_seen": "2026-07-27T04:04:23.633263+00:00",
@@ -33364,6 +33350,76 @@
    "first_seen": "2026-09-24T20:00:20.813179+00:00",
    "kept": false,
    "reason": "daily news recap with limited substance for medical educators; no medical, educational, or clinical AI content"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/24/commit-rewriter",
+   "title_hash": "29c58767c618699a98c1bb1581c70b9c",
+   "first_seen": "2026-09-24T23:13:59.524837+00:00",
+   "kept": false,
+   "reason": "minor release notes for a niche software tool"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/24/datasette",
+   "title_hash": "43dd8b9465095a970fa500c498acc5ce",
+   "first_seen": "2026-09-24T23:13:59.524837+00:00",
+   "kept": false,
+   "reason": "minor release notes for a niche software tool"
+  },
+  {
+   "url": "https://bestmodelforyourbudget.terrydjony.com/",
+   "title_hash": "e2f8f78a3fa2c8a5e6bb0565a9404a7b",
+   "first_seen": "2026-09-24T23:13:59.524837+00:00",
+   "kept": false,
+   "reason": "listicle or ranking tool with no substantive analysis"
+  },
+  {
+   "url": "https://contrastive-lm.notion.site/",
+   "title_hash": "feb2701f1a1757b49c47c2c988e6fa25",
+   "first_seen": "2026-09-24T23:13:59.524837+00:00",
+   "kept": false,
+   "reason": "no clear substance in summary; appears to be a resource index rather than news"
+  },
+  {
+   "url": "https://artificialanalysis.ai/models/mercury-2-5",
+   "title_hash": "be7e73834706d30587cdc1e0a2934878",
+   "first_seen": "2026-09-24T23:13:59.524837+00:00",
+   "kept": true,
+   "title": "Mercury 2.5 LLM hits 770 tokens per second",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-09-23T22:16:19+00:00",
+   "summary": "Mercury 2.5, an open-weights language model, achieves 770 tokens per second inference speed.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://artificialanalysis.ai/en/models/mercury-2-5/opengraph-image?ea6b93c60ecab06d",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wnipcz/new_6b_image_model_coming_antling_just_open",
+   "title_hash": "e5a3dd3618ae87ed3d1f76d5f67c5b85",
+   "first_seen": "2026-09-24T23:13:59.524837+00:00",
+   "kept": true,
+   "title": "New 6B image model coming, AntLing just open sourced the Ming-Image-0.1-Design family",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-09-22T19:06:22+00:00",
+   "summary": "AntLing released Ming-Image-0.1-Design, a 6 billion parameter open-source vision model ranked first among open-weight models on UI/UX design benchmarks.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://preview.redd.it/ajz0oym6e4rh1.jpeg?width=640&crop=smart&auto=webp&s=f7383eae5ada1167675cfb95042e475d5c2d6273",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=R9momwXV9w4",
+   "title_hash": "0d1f2ceac7362b81a850c5a728ae4951",
+   "first_seen": "2026-09-24T23:13:59.524837+00:00",
+   "kept": false,
+   "reason": "speculation about internal lab processes rather than substantive coverage of model capabilities or release details"
+  },
+  {
+   "url": "https://aipodcast.education/dont-panic-ai-might-end-humanity-but-apparently-laptops-ended-education-first",
+   "title_hash": "7df7ce4cfb7b68e3869f4faf89f56be0",
+   "first_seen": "2026-09-24T23:13:59.524837+00:00",
+   "kept": false,
+   "reason": "episode summary does not indicate substantive content on AI in medical education or clinical practice; appears to be a weekly news recap with generic framing"
   }
  ],
  "digests": [

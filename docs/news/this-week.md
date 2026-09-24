@@ -657,7 +657,7 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 <p class="section-brief-date">The picture as of September 24, 2026; numbered links go to the source items.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (50)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (16)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (10)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (15)</button><button class="topic-chip" data-topic="new-models">New models (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
@@ -735,7 +735,7 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 </div>
 </div>
 
-??? abstract "Show the other 40 items"
+??? abstract "Show the other 39 items"
 
     <div class="news-list news-list--more">
     <div class="news-card" data-topic="research-and-methods">
@@ -744,6 +744,14 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <a class="news-card-title" href="https://arxiv.org/abs/2609.27225">Meet, Compare, or Abstain: LatWeave for Deterministic Multi-Hop Question Answering on Knowledge Lattices</a>
         <p class="news-card-summary">LatWeave enables deterministic multi-hop question answering on knowledge graphs that can abstain or be audited, avoiding hallucination common in probabilistic retrieval and reasoning systems.</p>
       </div>
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 23, 2026</span></div>
+        <a class="news-card-title" href="https://artificialanalysis.ai/models/mercury-2-5">Mercury 2.5 LLM hits 770 tokens per second</a>
+        <p class="news-card-summary">Mercury 2.5, an open-weights language model, achieves 770 tokens per second inference speed.</p>
+      </div>
+      <img class="news-card-thumb" src="https://artificialanalysis.ai/en/models/mercury-2-5/opengraph-image?ea6b93c60ecab06d" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
@@ -800,6 +808,14 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <p class="news-card-summary">Microsoft disrupted an AI-enabled platform used for mass account compromise, highlighting security risks in AI-assisted tools.</p>
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wnipcz/new_6b_image_model_coming_antling_just_open">New 6B image model coming, AntLing just open sourced the Ming-Image-0.1-Design family</a>
+        <p class="news-card-summary">AntLing released Ming-Image-0.1-Design, a 6 billion parameter open-source vision model ranked first among open-weight models on UI/UX design benchmarks.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/ajz0oym6e4rh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=f7383eae5ada1167675cfb95042e475d5c2d6273" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
@@ -1001,14 +1017,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <p class="news-card-summary">Survey of model fusion techniques for integrating capabilities from multiple language models into a single target model.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/nato-backed-startup-adapts-ai-for-autonomous-drone-recon-and-attack-missions">Small AI models let drones autonomously identify and attack battlefield targets</a>
-        <p class="news-card-summary">Military deployment of decentralized AI systems enables autonomous target identification on drones and battlefield devices.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/Scaleout-Systems-ALMA-demo-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 17, 2026</span></div>
@@ -1016,21 +1024,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <p class="news-card-summary">Ternary Bonsai 2 is a 27-billion-parameter language model compressed to under 6GB using ternary weights, retaining 98.2% performance while enabling in-browser inference.</p>
       </div>
       <img class="news-card-thumb" src="https://external-preview.redd.it/anl5bGRiY2VpNHFoMcHQBj9sRv79S69RJPJhnukJChD-jMXuXDCCIm0Y2tGS.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=19a4affbe2ffdcf985b56ed50d3f562325a2259a" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 17, 2026</span></div>
-        <a class="news-card-title" href="https://simonwillison.net/2026/Sep/17/compaction-summaries">Self-generated prompt injections in compaction summaries</a>
-        <p class="news-card-summary">OpenAI&#x27;s misalignment reporting framework documents self-generated prompt injections where models deliberately subvert their own instructions during training.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 17, 2026</span></div>
-        <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/microsoft-exec-called-ai-scraping-the-largest-theft-of-labor-in-human-history">Microsoft exec called AI scraping the “largest theft of labor in human history”</a>
-        <p class="news-card-summary">Emails from Microsoft and OpenAI executives reveal concerns that AI training data scraping may harm news organizations and create economic instability.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-907415308-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
