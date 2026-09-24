@@ -83,8 +83,11 @@
   verify_url: https://api-docs.deepseek.com/
   cost: free
   governance_status: listed
-  status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-08-25
+  # Re-verified 2026-09-23 from its own policy pages. Operator Hangzhou
+  # DeepSeek Artificial Intelligence Co., Ltd.; data stored in the PRC; PRC
+  # law governs (privacy policy 2026-02-10, terms 2026-03-27).
+  status_note: Operated from China, where its privacy terms say your conversations are stored, which is worth knowing before you use it for work material.
+  last_reviewed: 2026-09-23
   blurb: Chat assistant from the Chinese lab DeepSeek, built on reasoning models whose weights are openly published.
 
 # Renamed from Qwen Chat 2026-08-25: the web app and both app stores now
@@ -98,8 +101,12 @@
   url: https://chat.qwen.ai
   cost: free
   governance_status: listed
-  status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-08-25
+  # Re-verified 2026-09-23 from its own policy pages. Operator NTH Power
+  # Global Tech Singapore Pte. Ltd.; processed and stored in Singapore by
+  # Alibaba Cloud (Singapore); Singapore law (qwen.ai privacy policy
+  # 2026-09-07, terms 2026-09-10).
+  status_note: Operated from Singapore on Alibaba Cloud; its privacy terms say your conversations are stored there and may be shared with affiliated companies, which is worth knowing before you use it for work material. Smaller Qwen models, listed under open-weights models, run on a laptop, where nothing you type leaves the machine.
+  last_reviewed: 2026-09-23
   blurb: Alibaba's chat assistant, built on the Qwen model family, with document, image, and voice input alongside text chat.
 
 # 2026-08-25: blurb moved from K2 to K3 (App Store listing "Kimi K3 is
@@ -109,11 +116,16 @@
 - name: Kimi
   vendor: Moonshot AI
   category: assistants
-  url: https://www.kimi.com
+  url: https://www.kimi.ai
   cost: free
   governance_status: listed
-  status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-08-25
+  # Re-verified 2026-09-23 from its own policy pages. kimi.com is now the
+  # mainland service (Beijing Moonshot Technology; data in the PRC) and tells
+  # overseas users to use kimi.ai, operated by Novascent Private Limited
+  # (Moonshot AI), Singapore law (privacy policy 2026-08-13); link moved to
+  # kimi.ai.
+  status_note: The international version, linked here, is operated from Singapore, and its privacy terms do not say which country stores your conversations, which is worth knowing before you use it for work material.
+  last_reviewed: 2026-09-23
   blurb: Chat assistant from Moonshot AI, built on the Kimi K3 model family, with long-document reading and agent features.
 
 - name: Perplexity
@@ -140,8 +152,11 @@
   verify: skip
   cost: freemium
   governance_status: listed
-  status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-06-10
+  # Re-verified 2026-09-23 from its own policy pages. Operator Jingsheng
+  # Hengxing Technology Pte. Ltd., Singapore; Singapore law (privacy policy
+  # 2025-09-29, terms 2026-04-14).
+  status_note: Operated from Singapore; its privacy terms say your data is generally processed there and may be transferred to other companies in its group, which is worth knowing before you use it for work material.
+  last_reviewed: 2026-09-23
   blurb: Chat assistant built on the GLM model family from Chinese lab Zhipu AI, with agent modes for slides and documents.
 
 # Agents: tools that plan and carry out multi-step tasks on a user's
@@ -684,8 +699,11 @@
   url: https://kling.ai
   cost: freemium
   governance_status: listed
-  status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
-  last_reviewed: 2026-09-08
+  # Re-verified 2026-09-23 from its own policy pages. Operator Kling AI Pte.
+  # Ltd., Singapore; servers in Singapore; Singapore law (privacy policy and
+  # terms 2026-04-21).
+  status_note: Operated from Singapore; its privacy terms say your data is stored on servers there and may be shared within its corporate group, which is worth knowing before you use it for work material.
+  last_reviewed: 2026-09-23
   blurb: Video generator from the Chinese company Kuaishou. The Kling 3.0 family generates clips with native synchronized audio and multi-language lip sync.
 
 - name: Hailuo
@@ -694,11 +712,14 @@
   url: https://hailuoai.video
   cost: freemium
   governance_status: listed
-  status_note: Consumer service operated from China; review data-handling terms before entering any institutional data.
+  # Re-verified 2026-09-23 from its own policy pages. Operator Nanonoble Pte.
+  # Ltd., Singapore; Singapore law (terms 2026-08-19). Keep the hailuoai.video
+  # link: hailuo.ai now redirects to MiniMax's mainland site.
+  status_note: Operated from Singapore; its privacy terms do not say where your uploads are stored for most users, which is worth knowing before you use it for work material.
   # Re-read 2026-07-21 against the live page (content-watch flag): video
   # generation and the free tier both confirmed; the page now also
   # offers image generation, not claimed in the blurb.
-  last_reviewed: 2026-09-22
+  last_reviewed: 2026-09-23
   blurb: Fast video generator from the Chinese lab MiniMax with a usable free tier, a practical way to try video generation without paying.
 
 - name: HeyGen
@@ -729,8 +750,13 @@
   url: https://suno.com
   cost: freemium
   governance_status: listed
-  status_note: Training-data copyright litigation is ongoing; check output-use terms before publishing generated music.
-  last_reviewed: 2026-09-22
+  # Re-verified 2026-09-23 against the court dockets (CourtListener) and
+  # Suno's
+  # terms (revised 2026-08-10): Warner settled in November 2025; Universal
+  # and Sony are suing in two cases (D. Mass. 2024 and 2026-09-18), with
+  # artist class actions and suits in Germany, Denmark, and Canada open.
+  status_note: Its training data is the subject of ongoing copyright litigation, and its terms allow commercial use only of songs made on a paid plan and downloaded within that plan's monthly allowance, which matters before a track goes into published or shared material.
+  last_reviewed: 2026-09-23
   blurb: Generates complete songs with vocals from a text description, with a free tier.
 
 - name: Udio
@@ -745,8 +771,13 @@
   verify: skip
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-07-15
-  blurb: Song generator that settled with Universal Music Group in 2025 and holds agreements with major labels. During the transition to its licensed platform, downloads of generated audio are disabled, so tracks currently cannot leave the platform.
+  # Re-verified 2026-09-23 against the court dockets (CourtListener) and
+  # Udio's
+  # terms (revised 2025-11-12): Universal and Warner settled in 2025; Sony's
+  # two suits (SDNY 2024 and 2026-07-20) and artist class actions remain open.
+  status_note: Its training data is the subject of ongoing copyright litigation, and its terms allow only personal, noncommercial use of generated songs, shared as links to the platform.
+  last_reviewed: 2026-09-23
+  blurb: Song generator that settled with Universal Music Group and Warner Music Group in 2025. Downloads of generated audio have been disabled since October 2025, pending its licensed platform, so tracks currently cannot leave the platform.
 
 - name: ElevenLabs
   vendor: ElevenLabs

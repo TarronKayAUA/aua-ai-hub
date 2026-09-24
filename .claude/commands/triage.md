@@ -38,10 +38,11 @@ Owner's instruction for this run: $ARGUMENTS
   criteria in data/conferences.yaml's header (medicine and medical
   education first, higher education second, general education third;
   English-language only). New tools enter `governance_status:
-  listed` with the standard "Listed for discovery, not endorsement; the
-  policy's data rules apply." note;
-  services operated from China carry the standard data-handling note;
-  copy conventions from neighboring entries. New open-weights models need
+  listed` with no boilerplate note (since 2026-09-23 the non-endorsement
+  point lives once in the directory legend); add a `status_note` only
+  for something specific, such as where the service's own privacy terms
+  say data is stored, verified from those terms and worded like the
+  DeepSeek or Kling entries; copy conventions from neighboring entries. New open-weights models need
   their license verified from the Hugging Face model card tag.
 - **Conference watch items**: confirm dates on the official page; edit
   data/conferences.yaml with a `# Verified YYYY-MM-DD from <source>`
