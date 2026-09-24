@@ -2,7 +2,7 @@
 
 # Prompt Exchange
 
-Every prompt shared on the community board, updated here several times a day (last updated September 23, 2026) and sorted by votes. Posts appear as their authors wrote them and are not reviewed; prompts that hold up in testing can be promoted into the [prompt library](index.md), with credit to the contributor. Voting and replying happen on GitHub and need a free [GitHub account](https://github.com/signup). Keep posts professional, and never include patient information, student records, or exam content, consistent with the university's [AI Responsible Use Policy](../governance/policy.md); posts are subject to moderation.
+Every prompt shared on the community board, updated here several times a day (last updated September 24, 2026) and sorted by votes. Posts appear as their authors wrote them and are not reviewed; prompts that hold up in testing can be promoted into the [prompt library](index.md), with credit to the contributor. Voting and replying happen on GitHub and need a free [GitHub account](https://github.com/signup). Keep posts professional, and never include patient information, student records, or exam content, consistent with the university's [AI Responsible Use Policy](../governance/policy.md); posts are subject to moderation.
 
 [Share a prompt](https://github.com/TarronKayAUA/aua-ai-hub/discussions/new/choose){ .md-button .md-button--primary }
 

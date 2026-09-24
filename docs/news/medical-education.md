@@ -13,14 +13,21 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A scoping review of 517 publications on generative AI in health professions education finds GPT-based tools dominating a fragmented research landscape <a href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[14]</a>, a pattern reflected in a broader argument that medical learners are already using these tools informally in clinical work, ahead of formal policy <a href="https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[13]</a>. New frameworks are emerging to manage that gap: one for low-resource settings such as Somalia stresses context-sensitive governance <a href="https://pubmed.ncbi.nlm.nih.gov/42769016?fc=20260609215449&amp;ff=20260922092604&amp;v=2.20.1">[3]</a>, while a stepwise clinical-reasoning model, CReaTe-LM, aims to teach reasoning heuristics rather than supply answers <a href="https://pubmed.ncbi.nlm.nih.gov/42763979?fc=20260609215449&amp;ff=20260921010018&amp;v=2.20.1">[10]</a>. Separately, emergency medicine faculty report that the workforce still lacks foundational skills to safely evaluate AI tools now entering triage and documentation <a href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[12]</a>.</p>
-<p>Also this week: nine items on teaching and curriculum span case-based learning frameworks and systems-level models of AI education, three assessment and feedback studies compare student and AI judgments on drug harm and annotation agreement, two exams and benchmarks reports test ChatGPT-5 on anesthesiology certification and multistep clinical reasoning, and a simulation trial evaluates collaborative training for physical therapy students.</p>
-<p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the items below.</p>
+<p>A recurring gap between rapid trainee adoption of generative AI and formal institutional oversight surfaces across radiology training programs, where supervision and policy lag active use <a href="https://pubmed.ncbi.nlm.nih.gov/42772970?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">[12]</a>. Exam-focused evaluations continue to test frontier models against high-stakes licensing content: ChatGPT-5 was benchmarked against official anaesthesia certification questions <a href="https://pubmed.ncbi.nlm.nih.gov/42769517?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">[11]</a>, while a separate study found large language models falter on multistep clinical cases despite strong single-question accuracy <a href="https://mededu.jmir.org/2026/1/e95342">[8]</a>. Meanwhile, a ten-day diary study links AI replacement anxiety to academic burnout in medicine and nursing students <a href="https://pubmed.ncbi.nlm.nih.gov/42773445?fc=20260609215449&amp;ff=20260923094024&amp;v=2.20.1">[15]</a>, underscoring that adoption concerns extend beyond curriculum design into student wellbeing.</p>
+<p>Also this week: the section carries seven items on teaching and curriculum, four on exams and benchmarks, and two each on assessment and feedback and on attitudes and adoption, including a randomized trial comparing virtual patient cases with written case studies and a scoping review of metaverse technologies in healthcare education.</p>
+<p class="section-brief-date">The picture as of September 24, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.27043">EduBehaviors: Assertion-based Schemas for Auditable Coding of Educational Dialogues</a>
+    <p class="news-card-summary">EduBehaviors presents assertion-based schemas for auditable coding of educational dialogue, providing verifiable insight into why language models assign pedagogical labels to conversations.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42773445?fc=20260609215449&amp;ff=20260923094024&amp;v=2.20.1">Daily temporal associations among AI replacement anxiety, state anxiety, and academic burnout indicators in medicine and nursing students: a 10-day diary study</a>
     <p class="news-card-summary">Diary study tracks daily links between AI replacement anxiety, state anxiety, and burnout in medicine and nursing students over ten days.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42773409?fc=20260609215449&amp;ff=20260923094024&amp;v=2.20.1">Ethical and responsible use of artificial intelligence in medical education</a>
-    <p class="news-card-summary">Survey finds AI governance scholarship lags capability research in medical education, with publication concentrated in few countries; calls for empirical evaluation frameworks.</p>
   </div>
 </div>
 </div>

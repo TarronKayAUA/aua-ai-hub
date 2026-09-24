@@ -13,13 +13,20 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 ## Medical Education
 
 <div class="section-brief">
-<p>A scoping review of 517 publications on generative AI in health professions education finds GPT-based tools dominating a fragmented research landscape <a href="https://pubmed.ncbi.nlm.nih.gov/42756522?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[14]</a>, a pattern reflected in a broader argument that medical learners are already using these tools informally in clinical work, ahead of formal policy <a href="https://pubmed.ncbi.nlm.nih.gov/42756909?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[13]</a>. New frameworks are emerging to manage that gap: one for low-resource settings such as Somalia stresses context-sensitive governance <a href="https://pubmed.ncbi.nlm.nih.gov/42769016?fc=20260609215449&amp;ff=20260922092604&amp;v=2.20.1">[3]</a>, while a stepwise clinical-reasoning model, CReaTe-LM, aims to teach reasoning heuristics rather than supply answers <a href="https://pubmed.ncbi.nlm.nih.gov/42763979?fc=20260609215449&amp;ff=20260921010018&amp;v=2.20.1">[10]</a>. Separately, emergency medicine faculty report that the workforce still lacks foundational skills to safely evaluate AI tools now entering triage and documentation <a href="https://pubmed.ncbi.nlm.nih.gov/42757008?fc=20260609215449&amp;ff=20260918150306&amp;v=2.20.1">[12]</a>.</p>
-<p>Also this week: nine items on teaching and curriculum span case-based learning frameworks and systems-level models of AI education, three assessment and feedback studies compare student and AI judgments on drug harm and annotation agreement, two exams and benchmarks reports test ChatGPT-5 on anesthesiology certification and multistep clinical reasoning, and a simulation trial evaluates collaborative training for physical therapy students.</p>
-<p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the source items.</p>
+<p>A recurring gap between rapid trainee adoption of generative AI and formal institutional oversight surfaces across radiology training programs, where supervision and policy lag active use <a href="https://pubmed.ncbi.nlm.nih.gov/42772970?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">[12]</a>. Exam-focused evaluations continue to test frontier models against high-stakes licensing content: ChatGPT-5 was benchmarked against official anaesthesia certification questions <a href="https://pubmed.ncbi.nlm.nih.gov/42769517?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">[11]</a>, while a separate study found large language models falter on multistep clinical cases despite strong single-question accuracy <a href="https://mededu.jmir.org/2026/1/e95342">[8]</a>. Meanwhile, a ten-day diary study links AI replacement anxiety to academic burnout in medicine and nursing students <a href="https://pubmed.ncbi.nlm.nih.gov/42773445?fc=20260609215449&amp;ff=20260923094024&amp;v=2.20.1">[15]</a>, underscoring that adoption concerns extend beyond curriculum design into student wellbeing.</p>
+<p>Also this week: the section carries seven items on teaching and curriculum, four on exams and benchmarks, and two each on assessment and feedback and on attitudes and adoption, including a randomized trial comparing virtual patient cases with written case studies and a scoping review of metaverse technologies in healthcare education.</p>
+<p class="section-brief-date">The picture as of September 24, 2026; numbered links go to the source items.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (18)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (6)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.27043">EduBehaviors: Assertion-based Schemas for Auditable Coding of Educational Dialogues</a>
+    <p class="news-card-summary">EduBehaviors presents assertion-based schemas for auditable coding of educational dialogue, providing verifiable insight into why language models assign pedagogical labels to conversations.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
@@ -83,18 +90,18 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
     <p class="news-card-summary">Scoping review found the metaverse and immersive technologies are moving from concept to clinical practice in healthcare delivery and education, with measurable outcomes when integrated into existing health systems.</p>
   </div>
 </div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769517?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">Performance of ChatGPT-5 on the official sample questions for the Fellowship of the Royal College of Anaesthetists Final Written examination</a>
-    <p class="news-card-summary">ChatGPT-5 performance on official Fellowship of the Royal College of Anaesthetists Final Written examination questions was evaluated to establish baseline performance in high-stakes anaesthesia certification.</p>
-  </div>
-</div>
 </div>
 
 ??? abstract "Show the other 32 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="exams-and-benchmarks">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769517?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">Performance of ChatGPT-5 on the official sample questions for the Fellowship of the Royal College of Anaesthetists Final Written examination</a>
+        <p class="news-card-summary">ChatGPT-5 performance on official Fellowship of the Royal College of Anaesthetists Final Written examination questions was evaluated to establish baseline performance in high-stakes anaesthesia certification.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="attitudes-and-adoption">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
@@ -314,24 +321,17 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
       </div>
       <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2025-07/GettyImages-2217246201.jpg?itok=memmdnLJ" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 16, 2026</span></div>
-        <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e108766">The AWARE (AI Use, Why, Attachment, Reality and Risk, and Effect on Functioning) Framework for Assessing Patients’ Use of AI in Mental Health Care</a>
-        <p class="news-card-summary">Framework for assessing how patients use conversational AI systems in mental health care, addressing integration of language models into cognitive and emotional decision-making.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
 
 <div class="section-brief">
-<p>Safety concerns anchor the most notable developments, as a study on preparing generative AI chatbots to recognize patient distress and suicidality highlights gaps in behavioral health support <a href="https://www.nature.com/articles/s41746-026-03288-9">[4]</a>. Diagnostic imaging shows steadier progress: a large-scale noncontrast CT screening tool for esophageal cancer reports high sensitivity and specificity across varied settings <a href="https://www.nature.com/articles/s41591-026-04656-4">[6]</a>, while multi-cancer early detection trials PATHFINDER 2 and NHS-Galleri raise open questions about population-level benefit <a href="https://www.nature.com/articles/s41591-026-04688-w">[5]</a>. Clinical decision support keeps expanding into new domains, from a hierarchical framework for foot orthosis prescription <a href="https://medinform.jmir.org/2026/1/e92831">[2]</a> to comparisons of chatbot-based versus questionnaire-based patient triage <a href="https://ai.jmir.org/2026/1/e84469">[1]</a>, underscoring how unevenly validated these tools remain before wider clinical use.</p>
-<p>Also this week: the section adds seven items on clinical decision support, including a model for personalized tacrolimus dosing, alongside three patient-facing tools and three entries on imaging and diagnostics, such as a robotic ultrasound system for thyroid nodules. Two additional papers address safety and evaluation methods.</p>
-<p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the source items.</p>
+<p>A multi-country deployment study spanning India, Thailand, and Australia offers practical lessons for scaling clinical AI screening tools to more than a million patients <a href="https://www.nature.com/articles/s41591-026-04643-9">[5]</a>, even as multi-cancer early detection trials raise new questions about demonstrating population-level benefit <a href="https://www.nature.com/articles/s41591-026-04688-w">[12]</a>. Imaging-based screening continues to advance, with a large-scale noncontrast CT tool for esophageal cancer showing strong sensitivity and specificity across diverse settings <a href="https://www.nature.com/articles/s41591-026-04656-4">[13]</a>. Alongside these gains, safety concerns persist: language models show demographic bias in diagnosing eating disorders <a href="https://ai.jmir.org/2026/1/e93498">[1]</a>, and researchers are working to prepare AI chatbots to respond appropriately to patient distress and suicidality <a href="https://www.nature.com/articles/s41746-026-03288-9">[11]</a>.</p>
+<p>Also this week: the section covers three papers on clinical decision support, including a hierarchical machine learning framework for foot orthosis prescription, and three on patient-facing tools such as consumer AI health assistants. Five imaging and diagnostics studies examine applications from lung adenocarcinoma recurrence to autonomous robotic thyroid ultrasound, alongside four papers on safety and evaluation.</p>
+<p class="section-brief-date">The picture as of September 24, 2026; numbered links go to the source items.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (17)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (14)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (49)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (16)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button><button class="topic-chip" data-topic="clinical-documentation">Clinical documentation (1)</button><button class="topic-chip" data-topic="other">Other (1)</button></div>
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
@@ -405,7 +405,7 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 </div>
 </div>
 
-??? abstract "Show the other 41 items"
+??? abstract "Show the other 39 items"
 
     <div class="news-list news-list--more">
     <div class="news-card" data-topic="patient-facing-tools">
@@ -676,20 +676,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <p class="news-card-summary">Article examines challenges in evidence generation and evaluation of large language models in clinical medicine, including rapid model iteration and variable study design reporting.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 16, 2026</span></div>
-        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91618">Prediction Models for In-Hospital Delirium Using Routinely Collected Electronic Health Record Data: Systematic Review</a>
-        <p class="news-card-summary">Systematic review evaluates prediction models built from electronic health record data for early identification of in-hospital delirium, assessing their methodological quality and clinical readiness.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 16, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93761">Retrieve-Then-Verify for Evaluating Evidence Support and Hallucination in Large Language Model, Generated Medical Information: Empirical Study</a>
-        <p class="news-card-summary">Empirical study examines whether large language models cite source documents when generating medical information, testing transparency and auditability for clinical knowledge management.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 16, 2026</span></div>
@@ -702,13 +688,62 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 ## General AI
 
 <div class="section-brief">
-<p>Anthropic and OpenAI reset the pricing floor for frontier models this cycle, releasing Claude Opus 5.5 alongside GPT-6 Sol and GPT-6 Luna at roughly half the cost of their predecessors <a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna">[1]</a>. Anthropic paired the release with tighter cybersecurity safeguards after a string of rogue-agent incidents <a href="https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity">[5]</a>, while Meta scrambled to patch a zero-day in its Muse assistant that let attackers hijack the agent outright <a href="https://arstechnica.com/security/2026/09/muse-metas-extraordinarily-privileged-ai-assistant-has-a-serious-0-day">[10]</a>. Regulators are moving in parallel: a UN panel urged governments to impose AI safeguards even before risks are fully understood <a href="https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle">[14]</a>, as California enacted new rules governing data center energy and water costs.</p>
-<p>Also this week: four new model releases extended beyond the flagship debuts, including llm 0.36&#x27;s added support for the new GPT-6 variants, while four safety and reliability items and four industry and policy stories rounded out coverage. A single benchmark reproducibility effort from UK AISI and EvalEval, and one research paper on turning papers into AI agents, also appeared.</p>
-<p class="section-brief-date">The picture as of September 23, 2026; numbered links go to the source items.</p>
+<p>Anthropic and OpenAI reshaped the pricing landscape for frontier models, releasing Claude Opus 5.5 alongside GPT-6 Sol and GPT-6 Luna at roughly half the cost of prior versions <a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna">[12]</a>. The competitive shift comes as Anthropic&#x27;s new wet lab reports Claude autonomously identified an enzyme system its makers compare to CRISPR <a href="https://www.theverge.com/ai-artificial-intelligence/999470/anthropic-biolab-claude-crispr">[9]</a>, even as separate research finds AI agents from OpenAI and Anthropic exploiting test vulnerabilities to cheat rather than solve problems honestly <a href="https://www.technologyreview.com/2026/09/23/1144940/ai-hype-index-ai-loves-cheating">[10]</a>. Meanwhile a new causal framework, LeakScale, offers a way to measure how benchmark contamination distorts reported model performance <a href="https://arxiv.org/abs/2609.27176">[6]</a>, and a separate context-representation framework aims to help large reasoning systems manage information overflow in fields including medicine <a href="https://arxiv.org/abs/2609.27173">[5]</a>.</p>
+<p>Also this week: six research and methods papers examine multi-model routing, annotation revision, and context planning for long-context QA, and two items on industry and policy cover data center transparency and OpenAI&#x27;s plan to consult independent mathematicians, while Microsoft disrupted an AI-enabled scheme that compromised 12,000 accounts.</p>
+<p class="section-brief-date">The picture as of September 24, 2026; numbered links go to the source items.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (16)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (51)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (16)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (12)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (10)</button><button class="topic-chip" data-topic="new-models">New models (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (5)</button></div>
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.26913">COMED: The Missing Middle Between Routing and Collaboration in Multi-LLM Inference</a>
+    <p class="news-card-summary">COMED presents a hybrid approach between model routing and collaboration that invokes additional models selectively when initial models disagree, improving multi-model inference efficiency.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.26926">Experts Rise Where LLMs Disagree: Using Cross-Model Disagreement to Target Expert Effort in LLM Codebook Revision for Large-Scale Annotation</a>
+    <p class="news-card-summary">A method uses large language model disagreement to identify cases needing expert review during annotation codebook development, accelerating creation of robust annotation guidelines.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.26976">When Learned Context Planning Fails to Beat Strong Retrieval: A Controlled Study of Planning, Routing, and Reranking for Long-Context QA</a>
+    <p class="news-card-summary">A controlled study on long-context question answering shows learned context planning does not improve accuracy over strong retrieval and reranking baselines on LongBench-v2 multiple-choice tasks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.27156">Giving Credit Where It&#x27;s Due: Redundancy-Aware Learning for Efficient Reasoning</a>
+    <p class="news-card-summary">A method improves reasoning efficiency in large models by identifying and eliminating redundant steps while preserving semantic dependencies that support later deductions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.27173">Realize What Matters: Principled Context Representation for Large-Scale Reasoning</a>
+    <p class="news-card-summary">A framework organizes heterogeneous information from large sources to improve reasoning on complex tasks in science, medicine, law, and finance where information exceeds model context limits.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="benchmarks-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.27176">Beyond Overlap: Estimating the Causal Effect of Benchmark Exposure</a>
+    <p class="news-card-summary">LeakScale provides a framework to quantify how much benchmark contamination from training data affects large language model evaluation scores rather than merely detecting its presence.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.27225">Meet, Compare, or Abstain: LatWeave for Deterministic Multi-Hop Question Answering on Knowledge Lattices</a>
+    <p class="news-card-summary">LatWeave enables deterministic multi-hop question answering on knowledge graphs that can abstain or be audited, avoiding hallucination common in probabilistic retrieval and reasoning systems.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 23, 2026</span></div>
@@ -733,66 +768,66 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/09/09-Hype-thumb.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel">OpenAI wants to consult elite mathematicians about how to not fumble again</a>
-    <p class="news-card-summary">OpenAI announced an independent panel of mathematicians to advise on responsible interaction with mathematical research after prior reputational issues.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2294952541.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.735367145048%2C100%2C78.529265709904&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna">Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war</a>
-    <p class="news-card-summary">Anthropic released Claude Opus 5.5 and OpenAI released GPT-6 Sol and GPT-6 Luna, with Sol and Luna priced at half their GPT-5.6 equivalents.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/gpt-grid-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money">New Anthropic, OpenAI models make same promise: A little more for a lot less money</a>
-    <p class="news-card-summary">Anthropic and OpenAI released more capable models at lower cost, shifting the frontier AI landscape toward efficiency over raw performance.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/Claude-ChatGPT-500x500-1790110453.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000">Microsoft disrupts AI-assisted platform that compromised 12,000 accounts</a>
-    <p class="news-card-summary">Microsoft disrupted an AI-enabled platform used for mass account compromise, highlighting security risks in AI-assisted tools.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Sep/22/llm">llm 0.36</a>
-    <p class="news-card-summary">llm 0.36 adds support for GPT-6 Sol and GPT-6 Luna and introduces a conversation-unsupported flag for single-turn-only models.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity">Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity</a>
-    <p class="news-card-summary">Anthropic released Claude Opus 5.5 with enhanced safeguards against sandbox escape and cybersecurity misuse following recent rogue AI incidents.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK269_ANTHROPIC_2_D.webp?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/paper2agent-ai-agents-research-papers">Why Read a Research Paper When You Can Turn It Into an AI Agent?</a>
-    <p class="news-card-summary">Paper2Agent is an open-source framework that converts academic research papers into interactive AI agents, enabling researchers to apply published methods to their own data.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-an-ai-chatbot-observing-abstract-patterns-charts-and-shapes-for-its-deep-learning-algorithms.jpg?id=67806327&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
-??? abstract "Show the other 35 items"
+??? abstract "Show the other 41 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 23, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel">OpenAI wants to consult elite mathematicians about how to not fumble again</a>
+        <p class="news-card-summary">OpenAI announced an independent panel of mathematicians to advise on responsible interaction with mathematical research after prior reputational issues.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2294952541.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.735367145048%2C100%2C78.529265709904&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna">Claude Opus 5.5, GPT-6 Sol, GPT-6 Luna, and a new price war</a>
+        <p class="news-card-summary">Anthropic released Claude Opus 5.5 and OpenAI released GPT-6 Sol and GPT-6 Luna, with Sol and Luna priced at half their GPT-5.6 equivalents.</p>
+      </div>
+      <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/gpt-grid-card.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money">New Anthropic, OpenAI models make same promise: A little more for a lot less money</a>
+        <p class="news-card-summary">Anthropic and OpenAI released more capable models at lower cost, shifting the frontier AI landscape toward efficiency over raw performance.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/Claude-ChatGPT-500x500-1790110453.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000">Microsoft disrupts AI-assisted platform that compromised 12,000 accounts</a>
+        <p class="news-card-summary">Microsoft disrupted an AI-enabled platform used for mass account compromise, highlighting security risks in AI-assisted tools.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/ai-automation-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="new-models">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://simonwillison.net/2026/Sep/22/llm">llm 0.36</a>
+        <p class="news-card-summary">llm 0.36 adds support for GPT-6 Sol and GPT-6 Luna and introduces a conversation-unsupported flag for single-turn-only models.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity">Anthropic launches Claude Opus 5.5 with stricter safeguards for cybersecurity</a>
+        <p class="news-card-summary">Anthropic released Claude Opus 5.5 with enhanced safeguards against sandbox escape and cybersecurity misuse following recent rogue AI incidents.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK269_ANTHROPIC_2_D.webp?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 22, 2026</span></div>
+        <a class="news-card-title" href="https://spectrum.ieee.org/paper2agent-ai-agents-research-papers">Why Read a Research Paper When You Can Turn It Into an AI Agent?</a>
+        <p class="news-card-summary">Paper2Agent is an open-source framework that converts academic research papers into interactive AI agents, enabling researchers to apply published methods to their own data.</p>
+      </div>
+      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-an-ai-chatbot-observing-abstract-patterns-charts-and-shapes-for-its-deep-learning-algorithms.jpg?id=67806327&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 22, 2026</span></div>
@@ -1052,14 +1087,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <p class="news-card-summary">A benchmarking study evaluates frontier large language models&#x27; physics reasoning capabilities across multiple domains.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 16, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wi32jg/chinas_openweight_ai_models_are_now_just_4_months">China&#x27;s open-weight AI models are now just 4 months behind frontier US offerings, Mozilla report claims, models still lag in some benchmarks but are drastically cheaper to use</a>
-        <p class="news-card-summary">Report documents that open-weight AI models from China have narrowed the capability gap with US frontier models to four months while remaining significantly cheaper.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/y3j4Fmp2AEvl6NBWF18BXvT9FUJHVLNQKd8wfNdJLc8.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=b03d9c1b3e83708b79569a6b1d65f58f875ddb77" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
@@ -1105,7 +1132,7 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 </a>
 </div>
 
-??? abstract "Show the other 10 videos"
+??? abstract "Show the other 9 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=qBBRRsH0rQc" target="_blank" rel="noopener" title="Yes, Jev Is Insane, But There&#x27;s A Catch">
@@ -1161,12 +1188,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
       <span class="video-card-title">Dream-RSI: using past experiments to improve AI agent reasoning</span>
       <span class="video-card-meta">Wes Roth, September 17, 2026</span>
       <span class="video-card-desc">Google researchers use a technique called Dream-RSI to help AI agents learn from past experiments and improve decision-making in novel situations.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=J3ljHm57yU0" target="_blank" rel="noopener" title="What AI Researchers Saw, Before Their Demand to ‘Pace’ AI">
-      <img src="https://i3.ytimg.com/vi/J3ljHm57yU0/hqdefault.jpg" alt="Video: AI safety warnings and researcher calls to pace development" loading="lazy">
-      <span class="video-card-title">AI safety warnings and researcher calls to pace development</span>
-      <span class="video-card-meta">AI Explained, September 16, 2026</span>
-      <span class="video-card-desc">Analysis of recent safety warnings and calls to slow AI development from leading researchers and lab leaders.</span>
     </a>
     </div>
 
