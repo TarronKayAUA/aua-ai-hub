@@ -79,7 +79,7 @@ Years ago I uploaded this same data to third-party interpretation sites, strippi
 
 That instinct was right and it could not possibly have worked. Genotype data *is* the identifier. There is no header you can remove that de-identifies six hundred thousand of your own variants, because the variants are the thing that identifies you. I had performed a ritual, not a precaution.
 
-Parsing locally removes the problem rather than managing it. The file sits in a folder, specific lines get read, nothing is transmitted anywhere. If you are weighing whether to upload your own data somewhere, that is the whole lesson and you can stop reading here.
+Parsing locally narrows the problem rather than removing it. The file stayed in a folder on my machine, and only the lines each question needed were read. But the assistant doing the reasoning was a frontier model running in the cloud, so those lines did go to its provider. I made that call knowingly: the analysis needed more capability than anything I could run locally, and the data was mine to risk. It is not a choice I would make with anyone else's data, and it is not the only reasonable choice with your own. A model on your own machine keeps every line at home at the cost of weaker reasoning; a frontier model reasons better and sees whatever you show it. If you are weighing whether to upload your own data somewhere, that trade is the whole lesson.
 
 ## What was actually in there
 

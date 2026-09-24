@@ -168,3 +168,5 @@ This page is the field guide; the rest of the site carries the working layer:
     [Explore skills](skills.md)
 
 </div>
+
+If an agent workflow works well for you, the [AI Committee](../governance/committee.md) would like to hear about it.
