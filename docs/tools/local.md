@@ -41,7 +41,7 @@ Running a model locally takes the vendor out of the picture: nothing you type is
 Memory is the main constraint. A model has to fit in your computer's memory (RAM), or better, in the video memory of a graphics card (a graphics processing unit, or GPU). Most local models are used in quantized form, meaning compressed versions that trade a small amount of quality for a much smaller size. Rough expectations:
 
 - **A typical laptop (8 GB of memory)** runs small models, around 4 billion parameters and under. Fine for experimenting, summaries, and simple drafting.
-- **16 GB of memory** comfortably runs mid-size models; OpenAI's gpt-oss-20b, for example, is designed to run in 16 GB.
+- **16 GB of memory** runs mid-size models. OpenAI's gpt-oss-20b is designed to fit in 16 GB, though on a laptop where the operating system and open apps share that memory it fits only with little else open.
 - **32 GB of memory, or a graphics card with 16 to 24 GB of video memory,** opens up the 20 to 30 billion parameter class, where local models start feeling genuinely useful. Mixture-of-experts models such as gpt-oss-20b fit in less; [Hardware for Local AI](hardware.md) explains why.
 - Apple silicon Macs share memory between the processor and graphics, which makes them popular for local models; the same memory math applies.
 

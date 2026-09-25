@@ -9,7 +9,7 @@ Where to start, depending on what you need:
 - [The AI Literacy Pathway](../pathway/index.md): short plain-language modules, self-paced, no math. The core stages take about seventy minutes in total, and every module stands alone.
 - [For Students](../students.md) and [For Faculty & Staff](../faculty.md): a route into the site organized by what you actually do, from studying and score reports to lecture preparation, exam items, and administrative drafting.
 - [The Tool Directory](../tools/index.md): AI tools relevant to teaching, learning, research, and clinical education, each carrying a status that describes the institution's relationship with it. A listing is not an endorsement, and committee review of any tool can be requested.
-- [This Week](../news/this-week.md): curated AI news, videos, and podcasts from the last seven days, refreshed nightly, with a highlights digest every Friday.
+- [This Week](../news/this-week.md): curated AI news, videos, and podcasts from the last seven days, refreshed several times a day, with a highlights digest every Friday.
 - [Governance](../governance/index.md): the approved AI Responsible Use Policy in full, the committee behind it, and how a tool gets reviewed.
 
 Two rules apply everywhere, whatever the tool: patient information and student records never enter public AI tools. [The Policy in Practice](../pathway/rules.md), then called The Rules, covers those and the rest of the policy's expectations in about ten minutes. *(Update, September 2026: more precisely, the policy keeps patient information and student records out of public AI tools unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data.)*

@@ -45,7 +45,7 @@ This site was built for the whole American University of Antigua College of Medi
 
 The full detail lives in [The Policy in Practice](pathway/rules.md) and the [AI Responsible Use Policy](governance/policy.md).
 
-- Patient information stays out of public AI tools under the policy, and that includes a name, an identifiable case detail, or a photo of a chart. Stripped to a teaching abstraction, a case is fine to practice with; see [On the wards](#on-the-wards).
+- Patient information, including a name, an identifiable case detail, or a photo of a chart, stays out of public AI tools under the policy unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data. Stripped to a teaching abstraction, a case is fine to practice with; see [On the wards](#on-the-wards).
 - A classmate's work is theirs, so check with them before it goes into a tool, the same courtesy you would want for your own draft.
 - Your course syllabus is where expectations for AI on assignments are set, and the policy asks you to acknowledge AI use the way your course or department specifies. If the syllabus does not cover something you want to try, ask your instructor: a quick message usually settles it, and the conversation often improves the idea.
 - The Student Handbook treats unauthorized or unacknowledged AI use in coursework, assessments, or clinical training as possible academic misconduct; your course syllabus says what is authorized.
