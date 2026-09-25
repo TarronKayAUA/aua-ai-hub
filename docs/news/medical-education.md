@@ -13,14 +13,21 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>A recurring gap between rapid trainee adoption of generative AI and formal institutional oversight surfaces across radiology training programs, where supervision and policy lag active use <a href="https://pubmed.ncbi.nlm.nih.gov/42772970?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">[12]</a>. Exam-focused evaluations continue to test frontier models against high-stakes licensing content: ChatGPT-5 was benchmarked against official anaesthesia certification questions <a href="https://pubmed.ncbi.nlm.nih.gov/42769517?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">[11]</a>, while a separate study found large language models falter on multistep clinical cases despite strong single-question accuracy <a href="https://mededu.jmir.org/2026/1/e95342">[8]</a>. Meanwhile, a ten-day diary study links AI replacement anxiety to academic burnout in medicine and nursing students <a href="https://pubmed.ncbi.nlm.nih.gov/42773445?fc=20260609215449&amp;ff=20260923094024&amp;v=2.20.1">[15]</a>, underscoring that adoption concerns extend beyond curriculum design into student wellbeing.</p>
-<p>Also this week: the section carries seven items on teaching and curriculum, four on exams and benchmarks, and two each on assessment and feedback and on attitudes and adoption, including a randomized trial comparing virtual patient cases with written case studies and a scoping review of metaverse technologies in healthcare education.</p>
-<p class="section-brief-date">The picture as of September 24, 2026; numbered links go to the items below.</p>
+<p>Large language models used as graders on computer science exams show wide variation in accuracy and reveal systematic failure modes that complicate their use in automated assessment <a href="https://arxiv.org/abs/2609.29333">[1]</a>. A related study finds LLM-generated scores in a voice-based virtual standardized patient platform agree closely with faculty ratings, suggesting a path toward scalable performance evaluation <a href="https://mededu.jmir.org/2026/1/e95578">[3]</a>. Meanwhile, a cross-sectional survey of medical students and faculty ties willingness to use AI to AI literacy and perceived risk <a href="https://mededu.jmir.org/2026/1/e105032">[2]</a>, and a multi-institutional study finds students already use these tools informally, often without institutional guidance <a href="https://pubmed.ncbi.nlm.nih.gov/42779013?fc=20260609215449&amp;ff=20260924093431&amp;v=2.20.1">[4]</a>. A retrospective cohort study adds that AI-assisted diagnostic training outperformed textbook-only instruction for emergency interns <a href="https://pubmed.ncbi.nlm.nih.gov/42774238?fc=20260609215449&amp;ff=20260923154133&amp;v=2.20.1">[11]</a>.</p>
+<p>Also this week: six items address teaching and curriculum, including a dermatology board-style question benchmark showing inconsistent reasoning stability among four exam and benchmark studies. Three pieces cover attitudes and adoption, and two address assessment and feedback, such as auditable coding schemas for scoring educational dialogue.</p>
+<p class="section-brief-date">The picture as of September 25, 2026; numbered links go to the items below.</p>
 </div>
 
 <div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://arxiv.org/abs/2609.29333">Where LLM Graders Succeed and Break: Evidence from Two Computer-Science Exams</a>
+    <p class="news-card-summary">Evaluation of large language models as graders on computer science exams shows wide performance variation across configurations and reveals systematic failure modes relevant to automated assessment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 24, 2026</span></div>
@@ -40,6 +47,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42779013?fc=20260609215449&amp;ff=20260924093431&amp;v=2.20.1">Generative Artificial Intelligence Use Among Medical Students: Learner Perspectives for Clinical Educators</a>
     <p class="news-card-summary">Multi-institutional study found medical students frequently use AI tools informally; educators should establish clear expectations, privacy boundaries, and disclosure norms.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786019?fc=20260609215449&amp;ff=20260925010106&amp;v=2.20.1">AI in medical training: who decides?</a>
+    <p class="news-card-summary">Short commentary on decision-making regarding artificial intelligence integration in medical training programs and who should have a voice in those choices.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42785050?fc=20260609215449&amp;ff=20260925010106&amp;v=2.20.1">Artificial intelligence in clinical neurophysiology: IFCN handbook chapter</a>
+    <p class="news-card-summary">International Federation of Clinical Neurophysiology handbook chapter reviews automated analysis of complex physiological signals using AI, addressing subjectivity and inter-rater variability in clinical neurophysiology interpretation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42784501?fc=20260609215449&amp;ff=20260925010106&amp;v=2.20.1">AI Workshop for Primary Care Providers: Applying Large Language Models to Reduce Inappropriate Polypharmacy in Older Adults</a>
+    <p class="news-card-summary">Workshop study evaluates large language model training for primary care providers to identify and reduce inappropriate polypharmacy in older adults, demonstrating practical application of AI to geriatric clinical problems.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -96,34 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95342">Large Language Model Performance on Multistep Clinical Cases: Comparative Study Across Question and Case Levels</a>
     <p class="news-card-summary">Large language models&#x27; performance on multistep clinical cases reveals gaps beyond single-question accuracy on medical licensing exams.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769016?fc=20260609215449&amp;ff=20260922092604&amp;v=2.20.1">Responsible Artificial Intelligence Integration in Medical Student Education in Somalia and Low-Resource Settings: A Context-Sensitive Implementation Framework</a>
-    <p class="news-card-summary">Framework for responsible integration of generative AI and large language models in health professions education in Somalia and other low-resource settings, addressing gaps between rapid adoption and institutional governance.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769815?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">Metaverse and Immersive Technologies: Redefining the Future of Healthcare: A Scoping Review</a>
-    <p class="news-card-summary">Scoping review found the metaverse and immersive technologies are moving from concept to clinical practice in healthcare delivery and education, with measurable outcomes when integrated into existing health systems.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42769517?fc=20260609215449&amp;ff=20260922154529&amp;v=2.20.1">Performance of ChatGPT-5 on the official sample questions for the Fellowship of the Royal College of Anaesthetists Final Written examination</a>
-    <p class="news-card-summary">ChatGPT-5 performance on official Fellowship of the Royal College of Anaesthetists Final Written examination questions was evaluated to establish baseline performance in high-stakes anaesthesia certification.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42772970?fc=20260609215449&amp;ff=20260923004820&amp;v=2.20.1">A Multi-Level Perspective on Generative AI Usage, Supervision, and Policy in Radiology Training and Education</a>
-    <p class="news-card-summary">A multi-level panel examines how generative AI is reshaping radiology training, documenting the gap between active trainee use and formal institutional guidance.</p>
   </div>
 </div>
 </div>
