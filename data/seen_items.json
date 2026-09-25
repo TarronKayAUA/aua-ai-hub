@@ -1,34 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/tech-policy/2026/07/google-wont-give-up-odd-war-against-ai-web-scraping-despite-court-loss",
-   "title_hash": "ee43e1fa51180f2069878514e1b21f9f",
-   "first_seen": "2026-07-27T21:30:54.762951+00:00",
-   "kept": false,
-   "reason": "legal and policy gossip, not development or capability news relevant to this audience"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/verizon-seeks-ai-profits-with-mini-data-centers-1b-dark-fiber-deal-with-google",
-   "title_hash": "e66345fbead8415847f7fcd3b79157ac",
-   "first_seen": "2026-07-27T21:30:54.762951+00:00",
-   "kept": false,
-   "reason": "infrastructure investment news without technical or capability significance"
-  },
-  {
-   "url": "https://www.technologyreview.com/2026/07/27/1140836/openai-hugging-face-attack-precedent",
-   "title_hash": "923da2412b2efbe82c396f5d4265c81d",
-   "first_seen": "2026-07-27T21:30:54.762951+00:00",
-   "kept": false,
-   "reason": "incomplete or truncated summary prevents assessment; appears to be commentary on a prior story rather than primary reporting"
-  },
-  {
-   "url": "https://content.knowledgehub.wiley.com/improving-the-capabilities-of-cognitive-radar-and-electronic-warfare-systems",
-   "title_hash": "20a5bff7428c35f55960a2b0952d8ea2",
-   "first_seen": "2026-07-27T21:30:54.762951+00:00",
-   "kept": false,
-   "reason": "military and defense application, off-topic for medical education and clinical practice audience"
-  },
-  {
    "url": "https://www.nature.com/articles/s41746-026-02958-y",
    "title_hash": "0a002bf640b65c3d6d0b1025125b6d9b",
    "first_seen": "2026-07-28T03:38:58.769959+00:00",
@@ -33663,6 +33635,48 @@
    "first_seen": "2026-09-25T20:01:55.804081+00:00",
    "kept": false,
    "reason": "AI safety and venture capital discussion outside the scope of medical education and clinical practice"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features",
+   "title_hash": "0d3ad70ff0c0fb58fcbb5fa8387d3b13",
+   "first_seen": "2026-09-25T23:19:13.999034+00:00",
+   "kept": true,
+   "title": "Court rules Trump can blacklist Anthropic for refusing to enable Claude features",
+   "source": "Ars Technica AI",
+   "published": "2026-09-25T21:36:20+00:00",
+   "summary": "A court ruled that the U.S. government may restrict procurement from Anthropic if Claude's safety features constrain military applications.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/03/claude-app-500x500-1773164045.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/tesla-workers-balk-at-training-optimus-humanoid-robots-as-replacements",
+   "title_hash": "70f57428cec9b82e23d42fd1ed334d57",
+   "first_seen": "2026-09-25T23:19:13.999034+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://ollaya.dev/",
+   "title_hash": "2585d48bc1d839b6d1e2453f2b75d678",
+   "first_seen": "2026-09-25T23:19:13.999034+00:00",
+   "kept": false,
+   "reason": "insufficient substance; forum announcement of niche tool without clear relevance to medical educators"
+  },
+  {
+   "url": "https://www.washingtonsun.com/technology/classified-estimates-nsa-paying-billions-to-test-ai-models",
+   "title_hash": "9c01d7d39f288c10690b8a967d01b71d",
+   "first_seen": "2026-09-25T23:19:13.999034+00:00",
+   "kept": false,
+   "reason": "rumor and classified speculation without substantive reporting"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wpdho8/qwen_38_27b_be_like",
+   "title_hash": "012b654b86fd7f56f40a2e3b57f7c935",
+   "first_seen": "2026-09-25T23:19:13.999034+00:00",
+   "kept": false,
+   "reason": "community meta-discussion; minor performance feedback with no instructive content"
   }
  ],
  "digests": [
