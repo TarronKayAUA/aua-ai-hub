@@ -18,7 +18,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 25, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (5)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="new-models">New models (2)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (6)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (4)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (3)</button><button class="topic-chip" data-topic="new-models">New models (2)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-reliability">
@@ -33,6 +33,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 25, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.29278">Reasoning Instructions Can Break Answer Decoding in Vision--Language Models</a>
     <p class="news-card-summary">Study reveals that chain-of-thought instructions distort multiple-choice visual question-answering evaluation when reasoning cues precede answer decoding, causing significant score drops.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Sep/24/harder">Note on 24th September 2026</a>
+    <p class="news-card-summary">Expert commentary argues that coding agents require extraordinary discipline and knowledge to unlock their potential and may increase software engineering complexity.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-reliability">
@@ -123,13 +130,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Mercury 2.5, an open-weights language model, achieves 770 tokens per second inference speed.</p>
   </div>
   <img class="news-card-thumb" src="https://artificialanalysis.ai/en/models/mercury-2-5/opengraph-image?ea6b93c60ecab06d" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills">Data centers are black boxes, but California wants to change that</a>
-    <p class="news-card-summary">California legislation mandating transparency and reporting on data center impacts on electricity and water consumption amid growing AI infrastructure deployment.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/06/STKS528_DATA_CENTERS2_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
