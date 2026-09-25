@@ -2407,6 +2407,15 @@
   margin-top: 0.6rem;
 }
 
+/* The choosers hide what does not match with the `hidden` attribute, but
+   Material gives details (each "Show the prompt" toggle) display:
+   flow-root, which outranks the browser's own [hidden] rule, so filtered-out
+   toggles stayed on the page without their headings (found 2026-09-25).
+   Restate it for all page content, as .nt-demo already does locally. */
+.md-typeset [hidden] {
+  display: none;
+}
+
 .md-typeset .tc-chip input:disabled + label {
   opacity: 0.45;
   cursor: default;
