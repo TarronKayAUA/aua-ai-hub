@@ -18,8 +18,22 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 <p class="section-brief-date">The picture as of September 25, 2026; numbered links go to the source items.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (9)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (3)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (19)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (8)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (7)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (7)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (4)</button></div>
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786480?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">Application of an AI-enabled personalized medical education model for improving clinical thinking among cardiovascular surgery trainees</a>
+    <p class="news-card-summary">An AI-enabled personalized learning model improved exam scores, critical thinking, and clinical interview performance in cardiovascular surgery trainees.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786477?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">Can students identify AI? - A cross-sectional quantitative study about AI recognition in tablet-based MCQ assessment among fifth-year undergraduate medical students at Saarland University, Germany</a>
+    <p class="news-card-summary">Students could not distinguish between AI-generated and human-written multiple-choice questions, suggesting AI-assisted item drafting may be viable within structured human review.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 25, 2026</span></div>
@@ -69,25 +83,11 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
     <p class="news-card-summary">Workshop study evaluates large language model training for primary care providers to identify and reduce inappropriate polypharmacy in older adults, demonstrating practical application of AI to geriatric clinical problems.</p>
   </div>
 </div>
-<div class="news-card" data-topic="assessment-and-feedback">
+<div class="news-card" data-topic="simulation-and-skills">
   <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.27043">EduBehaviors: Assertion-based Schemas for Auditable Coding of Educational Dialogues</a>
-    <p class="news-card-summary">EduBehaviors presents assertion-based schemas for auditable coding of educational dialogue, providing verifiable insight into why language models assign pedagogical labels to conversations.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42775526?fc=20260609215449&amp;ff=20260923154133&amp;v=2.20.1">From Simulations to AI: Samir Grover on How Tech Can Enhance Medical Education</a>
-    <p class="news-card-summary">Interview with medical educator on integrating simulation, virtual reality, and AI into gastroenterology training and broader medical education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42774317?fc=20260609215449&amp;ff=20260923154133&amp;v=2.20.1">On AI&#x27;s role in training professionals in assisted reproductive technology</a>
-    <p class="news-card-summary">Framework for using AI to standardize and accelerate professional training in assisted reproductive technology, addressing gaps in clinical exposure and learning curves.</p>
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786409?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">LLM-Based Psychiatric Interview Simulation: Technical Development and Pilot Expert-Based Content Validation of a Voice Prototype</a>
+    <p class="news-card-summary">Voice-based large language model simulations enable psychiatric interview practice; current limitations suggest use for formative training rather than high-stakes assessment.</p>
   </div>
 </div>
 </div>
@@ -95,6 +95,27 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 ??? abstract "Show the other 35 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.27043">EduBehaviors: Assertion-based Schemas for Auditable Coding of Educational Dialogues</a>
+        <p class="news-card-summary">EduBehaviors presents assertion-based schemas for auditable coding of educational dialogue, providing verifiable insight into why language models assign pedagogical labels to conversations.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42775526?fc=20260609215449&amp;ff=20260923154133&amp;v=2.20.1">From Simulations to AI: Samir Grover on How Tech Can Enhance Medical Education</a>
+        <p class="news-card-summary">Interview with medical educator on integrating simulation, virtual reality, and AI into gastroenterology training and broader medical education.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42774317?fc=20260609215449&amp;ff=20260923154133&amp;v=2.20.1">On AI&#x27;s role in training professionals in assisted reproductive technology</a>
+        <p class="news-card-summary">Framework for using AI to standardize and accelerate professional training in assisted reproductive technology, addressing gaps in clinical exposure and learning curves.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
@@ -221,13 +242,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <p class="news-card-summary">CReaTe-LM is a large language model designed to provide stepwise, heuristic instruction in clinical reasoning rather than passive answer generation, addressing a key medical education challenge.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754902?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Assessment of drug harm by final-year medical students and ChatGPT - a comparative analysis</a>
-        <p class="news-card-summary">Final-year medical students and ChatGPT showed strong agreement on the most harmful drugs but differed on moderately and minimally harmful substances, suggesting AI assessments may not fully capture clinical experience and cultural context.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 18, 2026</span></div>
@@ -326,21 +340,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <p class="news-card-summary">Research finds medical students with higher AI literacy show stronger ethical attitudes toward AI, independent of frequency of use.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">September 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.insidehighered.com/news/quick-takes/2026/09/18/report-higher-eds-adoption-ai-outpaces-student-guards">Report: Student Protections Haven’t Kept Up With Higher Ed’s Adoption of AI</a>
-        <p class="news-card-summary">A report finds that student protections and policies have not kept pace with higher education&#x27;s adoption of artificial intelligence tools.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2025-06/GettyImages-1478407211.jpg?itok=q-h11SOD" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 17, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42754791?fc=20260609215449&amp;ff=20260918090125&amp;v=2.20.1">Education on Artificial Intelligence in US Internal Medicine Residencies: Results of a National Survey</a>
-        <p class="news-card-summary">A national survey documents the current state of artificial intelligence education within United States internal medicine residency training programs.</p>
-      </div>
-    </div>
     </div>
 
 ## Clinical Practice
@@ -351,8 +350,23 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 <p class="section-brief-date">The picture as of September 25, 2026; numbered links go to the source items.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (42)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (12)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (12)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (4)</button></div>
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment">Trump admin using AI to deny medical care for seniors in disastrous experiment</a>
+    <p class="news-card-summary">A US healthcare system pilot using AI to automate insurance claim denials for seniors prompted concerns about algorithmic incentives and patient access to care.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2295026360-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03250-9">Automated multi-sequence MRI quantitative assessment and 3D visualization of acute cervical spinal cord injury</a>
+    <p class="news-card-summary">Automated analysis of multi-sequence MRI data quantifies acute cervical spinal cord injury and generates 3D visualizations for clinical assessment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 24, 2026</span></div>
@@ -410,25 +424,25 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
     <p class="news-card-summary">Deep learning framework integrating spatial cellular context predicts recurrence in invasive lung adenocarcinoma with five-year follow-up.</p>
   </div>
 </div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03269-y">Rule-aware reasoning visual language model for molecular prediction in adult-type diffuse glioma lacking contrast enhancement</a>
-    <p class="news-card-summary">Visual language model with rule-aware reasoning predicts molecular status of diffuse gliomas from MRI images lacking contrast enhancement.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 23, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04643-9">Practical lessons in the global scaling of clinical AI: from one hospital to over a million patients screened</a>
-    <p class="news-card-summary">Multi-country deployment study of a deep learning screening tool across India, Thailand, and Australia identifies cross-cutting lessons for scaling clinical AI globally.</p>
-  </div>
-</div>
 </div>
 
 ??? abstract "Show the other 32 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="imaging-and-diagnostics">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 23, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03269-y">Rule-aware reasoning visual language model for molecular prediction in adult-type diffuse glioma lacking contrast enhancement</a>
+        <p class="news-card-summary">Visual language model with rule-aware reasoning predicts molecular status of diffuse gliomas from MRI images lacking contrast enhancement.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">September 23, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04643-9">Practical lessons in the global scaling of clinical AI: from one hospital to over a million patients screened</a>
+        <p class="news-card-summary">Multi-country deployment study of a deep learning screening tool across India, Thailand, and Australia identifies cross-cutting lessons for scaling clinical AI globally.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="clinical-decision-support">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 23, 2026</span></div>
@@ -630,21 +644,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
         <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02961-3">External validation of AI assisted colposcopy using WHO dataset for cervical precancer and cancer detection</a>
         <p class="news-card-summary">Study validates AI-assisted colposcopy system using World Health Organization cervical cancer screening dataset.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.statnews.com/2026/09/18/geriatrician-explains-why-ai-for-older-adults-deserves-careful-scrutiny">STAT+: A geriatrician explains why AI for older adults deserves careful scrutiny</a>
-        <p class="news-card-summary">A geriatrician discusses benefits and pitfalls of AI in care decisions for older adults, highlighting the need for careful scrutiny of AI deployment in vulnerable populations.</p>
-      </div>
-      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2022/04/AP22039367701680-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03247-4">Communicating the uncertainty of individual risk from clinical prediction tools with the PGower similarity measure</a>
-        <p class="news-card-summary">A method for communicating uncertainty from clinical prediction tools helps clinicians understand individual risk variation beyond point estimates.</p>
       </div>
     </div>
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -1083,7 +1082,7 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 </a>
 </div>
 
-??? abstract "Show the other 11 videos"
+??? abstract "Show the other 9 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=OWu2kjKrRTA" target="_blank" rel="noopener" title="Anthropic went CRAZY (Opus 5.5)">
@@ -1139,18 +1138,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
       <span class="video-card-title">AI news roundup: recent model releases and updates</span>
       <span class="video-card-meta">AI Search, September 20, 2026</span>
       <span class="video-card-desc">News roundup covering multiple AI releases and updates including Qwen 3.8, Gemini Live, and other recent model announcements.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=vIHw_2VjSUw" target="_blank" rel="noopener" title="DeepSeek’s Insane New Architecture">
-      <img src="https://i3.ytimg.com/vi/vIHw_2VjSUw/hqdefault.jpg" alt="Video: DeepSeek V4.1 Flash architecture explained" loading="lazy">
-      <span class="video-card-title">DeepSeek V4.1 Flash architecture explained</span>
-      <span class="video-card-meta">Two Minute Papers, September 18, 2026</span>
-      <span class="video-card-desc">Technical breakdown of DeepSeek V4.1 Flash&#x27;s architecture and capabilities.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=OA5cICIzD-c" target="_blank" rel="noopener" title="Bonsai 2 27B First Test, Is THIS the BEST Single-GPU AI Model?">
-      <img src="https://i4.ytimg.com/vi/OA5cICIzD-c/hqdefault.jpg" alt="Video: Bonsai 2 27B model testing and performance review" loading="lazy">
-      <span class="video-card-title">Bonsai 2 27B model testing and performance review</span>
-      <span class="video-card-meta">Bijan Bowen, September 18, 2026</span>
-      <span class="video-card-desc">Hands-on testing and evaluation of the Bonsai 2 27B language model on single-GPU systems.</span>
     </a>
     </div>
 

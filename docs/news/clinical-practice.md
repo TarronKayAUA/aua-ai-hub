@@ -18,9 +18,24 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 25, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (4)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (6)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment">Trump admin using AI to deny medical care for seniors in disastrous experiment</a>
+    <p class="news-card-summary">A US healthcare system pilot using AI to automate insurance claim denials for seniors prompted concerns about algorithmic incentives and patient access to care.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2295026360-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03250-9">Automated multi-sequence MRI quantitative assessment and 3D visualization of acute cervical spinal cord injury</a>
+    <p class="news-card-summary">Automated analysis of multi-sequence MRI data quantifies acute cervical spinal cord injury and generates 3D visualizations for clinical assessment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="imaging-and-diagnostics">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 24, 2026</span></div>
@@ -111,20 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 22, 2026</span></div>
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e84469">Demographics, Clinical Content, Use Patterns, and Care-Seeking Intent Across Two Generations of AI-Enabled Clinical Triage Tools (A Traditional Structured Questionnaire and a Large Language Model, Enabled Conversational Interface): Comparative Retrospective Observational Study</a>
     <p class="news-card-summary">A study compares large language model-enabled conversational triage with traditional structured questionnaires to assess effects on clinical content capture and care alignment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e92831">A Hierarchical Machine Learning, Based Framework for Clinical Decision Support in Foot Orthosis Prescription: Algorithm Development and Validation Study</a>
-    <p class="news-card-summary">A hierarchical machine learning framework addresses variability in foot orthosis prescription by providing decision support from incomplete biomechanical assessments.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.22110">Evaluating Fine-Tuned and Base Language Models in Maternal and Vaccination Healthcare for African Settings</a>
-    <p class="news-card-summary">A study compared domain-specific fine-tuned language models with base models for maternal health and vaccination advice in Nigeria, assessing accuracy and cultural appropriateness.</p>
   </div>
 </div>
 </div>

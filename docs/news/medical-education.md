@@ -18,9 +18,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 25, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (2)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (3)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (3)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786480?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">Application of an AI-enabled personalized medical education model for improving clinical thinking among cardiovascular surgery trainees</a>
+    <p class="news-card-summary">An AI-enabled personalized learning model improved exam scores, critical thinking, and clinical interview performance in cardiovascular surgery trainees.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786477?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">Can students identify AI? - A cross-sectional quantitative study about AI recognition in tablet-based MCQ assessment among fifth-year undergraduate medical students at Saarland University, Germany</a>
+    <p class="news-card-summary">Students could not distinguish between AI-generated and human-written multiple-choice questions, suggesting AI-assisted item drafting may be viable within structured human review.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 25, 2026</span></div>
@@ -70,6 +84,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Workshop study evaluates large language model training for primary care providers to identify and reduce inappropriate polypharmacy in older adults, demonstrating practical application of AI to geriatric clinical problems.</p>
   </div>
 </div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786409?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">LLM-Based Psychiatric Interview Simulation: Technical Development and Pilot Expert-Based Content Validation of a Voice Prototype</a>
+    <p class="news-card-summary">Voice-based large language model simulations enable psychiatric interview practice; current limitations suggest use for formative training rather than high-stakes assessment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
@@ -103,27 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42777240?fc=20260609215449&amp;ff=20260923185800&amp;v=2.20.1">Beyond accuracy: an educational benchmarking study of task fragility and reasoning stability of large language models on dermatology board-style questions</a>
     <p class="news-card-summary">Large language models show inconsistent performance on dermatology board-style questions depending on task design and phrasing, raising concerns about their unsupervised use in medical exam preparation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 23, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42777164?fc=20260609215449&amp;ff=20260923185800&amp;v=2.20.1">Knowledge Acquisition, Case Discussion, and Engagement in Health Professional Students Using Interactive Virtual Patient Cases Versus Written Case Studies: Randomized Controlled Trial</a>
-    <p class="news-card-summary">Interactive virtual patient cases produced higher engagement and short-term knowledge gains than static written cases in health professional students, though the design cannot isolate AI&#x27;s independent contribution.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e103584">Generative AI, Assisted Progressive-Disclosure Case-Based Learning for Clinical Reasoning in Occupational Medicine: Quasi-Experimental Study</a>
-    <p class="news-card-summary">Generative AI can support progressive-disclosure case-based learning in occupational medicine to develop iterative clinical reasoning and prevent premature diagnostic closure.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 22, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95342">Large Language Model Performance on Multistep Clinical Cases: Comparative Study Across Question and Case Levels</a>
-    <p class="news-card-summary">Large language models&#x27; performance on multistep clinical cases reveals gaps beyond single-question accuracy on medical licensing exams.</p>
   </div>
 </div>
 </div>

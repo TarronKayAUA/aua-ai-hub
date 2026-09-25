@@ -1,87 +1,6 @@
 {
  "items": [
   {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42503504?fc=20260609215449&ff=20260727035403&v=2.20.0",
-   "title_hash": "4c4b1ede0d19179cd247b5edcfe47efd",
-   "first_seen": "2026-07-27T07:54:03.203629+00:00",
-   "kept": true,
-   "title": "Navigating AI with pedagogical purpose: Toward an anatomy-centered framework for AI-enhanced learning",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-26T10:00:00+00:00",
-   "summary": "Peer-reviewed framework examines how artificial intelligence can enhance anatomy education through customized learning, feedback, and immersive experiences grounded in pedagogical principles.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=DYdC-oqLMiY",
-   "title_hash": "e9b93a479448d03384adcdf5ddefc5d0",
-   "first_seen": "2026-07-27T07:54:03.203629+00:00",
-   "kept": false,
-   "reason": "marketing and product demo without substantive educational content or documented capability finding"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e80580",
-   "title_hash": "62ecc2641249668dd68af19ca9ec2a95",
-   "first_seen": "2026-07-27T11:42:06.674126+00:00",
-   "kept": true,
-   "title": "Dynamic Closed-Loop Medical Record Quality Management Using an AI-Driven Multilevel Quality Control System: Development and Implementation Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-27T11:00:03+00:00",
-   "summary": "A multilevel AI-driven quality control system automatically reviews and flags medical record errors in real time, improving documentation coverage and consistency compared to manual review.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical documentation"
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/artist-sues-ai-meme-generator-for-selling-deeply-personal-comic-as-ad-template",
-   "title_hash": "3b8b59668c0313f6729d7227b58b6f3c",
-   "first_seen": "2026-07-27T11:42:06.674126+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://huggingface.co/blog/nvidia/cosmos-h-dreams",
-   "title_hash": "51e0898a4a2e8f3300d3133d57074bb0",
-   "first_seen": "2026-07-27T11:42:06.674126+00:00",
-   "kept": true,
-   "title": "NVIDIA Cosmos-H-Dreams: Bringing Real-Time Generative Simulation to Surgical Robotics",
-   "source": "Hugging Face blog",
-   "published": "2026-07-27T09:32:20+00:00",
-   "summary": "NVIDIA released Cosmos-H-Dreams, a generative simulation model designed for real-time surgical robotics applications.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/68c1279544f671330c604f4c/Cj0RZwvOSUhFGFEFKgyDw.png",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04539-8",
-   "title_hash": "ba50d0850b31c5b2d69b50290f2870de",
-   "first_seen": "2026-07-27T11:42:06.674126+00:00",
-   "kept": true,
-   "title": "Toward a test of medical AI superintelligence",
-   "source": "Nature Medicine",
-   "published": "2026-07-27T00:00:00+00:00",
-   "summary": "A Nature Medicine commentary argues that existing benchmarks for medical AI are insufficient and calls for a rigorous, task-based framework to define and measure medical AI capabilities.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04528-x",
-   "title_hash": "c6028d4cddf998dc3a2dad73b6aab651",
-   "first_seen": "2026-07-27T11:42:06.674126+00:00",
-   "kept": false,
-   "reason": "narrow domain application without artificial intelligence focus"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=fWZylhIHF9w",
-   "title_hash": "7599bed938ca6f4ceed8e57b18041593",
-   "first_seen": "2026-07-27T11:42:06.674126+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
    "url": "https://jack-clark.net/2026/07/27/import-ai-466-the-bitter-lesson-for-robotics-ais-complete-week-long-programming-tasks-and-openais-accidental-ai-hacker",
    "title_hash": "f769230709fff620aee7ebfcd37c0ab5",
    "first_seen": "2026-07-27T15:15:43.216547+00:00",
@@ -33458,6 +33377,142 @@
    "category": "medical_education",
    "score": 3.0,
    "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
+   "title_hash": "360f78265dbc1fa74ccaab7a1726e910",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; consumer smart-home camera comparison is not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.theverge.com/news/1000532/microsoft-copilot-super-app-chat-coding-autopilot",
+   "title_hash": "19b6def472f415dbeb59815b5b24cf69",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; consumer productivity software rebrand is not relevant to medical education or clinical practice"
+  },
+  {
+   "url": "https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment",
+   "title_hash": "ec6a51a50a5debdf84dec09a73999612",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": true,
+   "title": "Trump admin using AI to deny medical care for seniors in disastrous experiment",
+   "source": "Ars Technica AI",
+   "published": "2026-09-25T11:00:28+00:00",
+   "summary": "A US healthcare system pilot using AI to automate insurance claim denials for seniors prompted concerns about algorithmic incentives and patient access to care.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2295026360-500x500.jpg",
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42786480?fc=20260609215449&ff=20260925095058&v=2.20.1",
+   "title_hash": "480c65a75c2c114b031d7839db4465b1",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": true,
+   "title": "Application of an AI-enabled personalized medical education model for improving clinical thinking among cardiovascular surgery trainees",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-25T10:00:00+00:00",
+   "summary": "An AI-enabled personalized learning model improved exam scores, critical thinking, and clinical interview performance in cardiovascular surgery trainees.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42786477?fc=20260609215449&ff=20260925095058&v=2.20.1",
+   "title_hash": "94eb9f90336bbcc0f0df917c277bdeb7",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": true,
+   "title": "Can students identify AI? - A cross-sectional quantitative study about AI recognition in tablet-based MCQ assessment among fifth-year undergraduate medical students at Saarland University, Germany",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-25T10:00:00+00:00",
+   "summary": "Students could not distinguish between AI-generated and human-written multiple-choice questions, suggesting AI-assisted item drafting may be viable within structured human review.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector",
+   "title_hash": "42fe702e72c801065544c1353adbd584",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; military polygraph technology has no relevance to medical education or clinical practice"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/ending-the-annual-physical",
+   "title_hash": "60edfd7b1d5ea658ee8a6340de842551",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; routine physical examination guidance is not an AI topic"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03250-9",
+   "title_hash": "55671cadd6dda0dd508c0fe13442a135",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": true,
+   "title": "Automated multi-sequence MRI quantitative assessment and 3D visualization of acute cervical spinal cord injury",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-25T00:00:00+00:00",
+   "summary": "Automated analysis of multi-sequence MRI data quantifies acute cervical spinal cord injury and generates 3D visualizations for clinical assessment.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04684-0",
+   "title_hash": "fd9573e5f850626fb49efabd630529bf",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; polygenic scoring policy debate is not an AI topic"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04683-1",
+   "title_hash": "360782f1852ed80bd7901da758df770b",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; clinical trial capacity and equity are not AI topics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04681-3",
+   "title_hash": "1a19b1b9a605a03ee2a3c7760c42b19a",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; translational medicine ecosystem challenges are not an AI topic"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04659-1",
+   "title_hash": "bcf92534fb05c82c45bade59d946d4fc",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; sex differences in cardiovascular medicine is not an AI topic"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42786409?fc=20260609215449&ff=20260925095058&v=2.20.1",
+   "title_hash": "b039f5173905dcdec973d8d57d1604b8",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": true,
+   "title": "LLM-Based Psychiatric Interview Simulation: Technical Development and Pilot Expert-Based Content Validation of a Voice Prototype",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-24T10:00:00+00:00",
+   "summary": "Voice-based large language model simulations enable psychiatric interview practice; current limitations suggest use for formative training rather than high-stakes assessment.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=h5QwrHhW28Q",
+   "title_hash": "ea5c99df89ea408442898a5cd8d7470e",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "news roundup video with speculative framing and no identifiable substantive content beyond rumor"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=O4n1jtWzt30",
+   "title_hash": "3a099535ebd4340718a1dacb716a581d",
+   "first_seen": "2026-09-25T13:50:58.521227+00:00",
+   "kept": false,
+   "reason": "routine podcast episode from corporate channel without substantive educational content identified"
   }
  ],
  "digests": [
