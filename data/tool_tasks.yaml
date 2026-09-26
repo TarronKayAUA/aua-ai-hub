@@ -252,4 +252,4 @@
   from_status: licensed
   group: data
   guide: >-
-    Licensed means institutionally licensed or procured by the university; this list grows as the university licenses more. A license on its own does not make a tool approved for patient or student records: the [AI Responsible Use Policy](../governance/policy.md#responsible-use) reserves that for tools the AI Responsible Use Subcommittee has vetted for such data.
+    Licensed means institutionally licensed or procured by the university; this list grows as the university licenses more. A license on its own does not make a tool approved for patient or student records: the [AI Responsible Use Policy](../governance/policy.md#responsible-use) reserves that for tools the AI Committee has vetted for such data.

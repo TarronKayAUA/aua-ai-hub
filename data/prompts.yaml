@@ -1182,8 +1182,8 @@
     description, not the data. Participant-level data counts as unpublished
     research data, which the [AI Responsible Use
     Policy](../governance/policy.md#responsible-use) keeps out of publicly
-    available AI tools unless the AI Responsible Use Subcommittee has
-    approved a tool for it. Verify recommended methods against a statistics
+    available AI tools unless the AI Committee has approved a tool for it.
+    Verify recommended methods against a statistics
     reference or a statistician before publishing, especially with
     clustering or missing-data handling involved.
   prompt: |
@@ -2034,13 +2034,10 @@
     Built around the documented common reasons peer reviewers reject
     manuscripts (Bordage 2001, Academic Medicine), as taught in AUA's
     Research Methods 1 course. Run it on a near-final draft; it reads like
-    the reviewer you hope not to get, which is the point. Your own draft is
-    yours to review in a paid plan with training on your content turned off
-    (or a [model on your own computer](../tools/local.md)), with
-    participant-level data left out. For co-authored work, check with your
-    co-authors first, since the draft is theirs too. A manuscript sent to
-    you for peer review is different: its authors shared it in confidence,
-    so it is confidential information, which the [AI Responsible Use
+    the reviewer you hope not to get, which is the point. It also runs on a
+    [model on your own computer](../tools/local.md). A manuscript sent to
+    you for peer review was shared in confidence by its authors, so it is
+    confidential information, which the [AI Responsible Use
     Policy](../governance/policy.md#responsible-use) keeps out of publicly
     available AI tools, and many journals' reviewer policies bar it as well.
   prompt: |
@@ -2138,9 +2135,8 @@
     can lag the current revision (CONSORT was revised in 2025), so for
     actual submission download the current checklist from
     equator-network.org and file it with the manuscript, which many
-    journals now require anyway. Your own manuscript is fine in a paid plan with training on your content turned off
-    (or a [model on your own computer](../tools/local.md)), with
-    participant-level data left out.
+    journals now require anyway. It also runs on a [model on your own
+    computer](../tools/local.md).
   prompt: |
     ROLE
     You are a reporting-completeness auditor. You map a manuscript
@@ -2800,10 +2796,8 @@
     encounter to an age band and a presentation pattern, with no names,
     dates, or places, before you type it: patient health information is what
     the [AI Responsible Use Policy](../governance/policy.md#responsible-use)
-    keeps out of publicly available AI tools, and a sent message cannot be
-    recalled. If real patient information goes in by mistake, the policy
-    asks you to tell the AI Responsible Use Subcommittee right away. Your
-    clinical site's rules may be stricter, and the stricter one applies. The
+    keeps out of publicly available AI tools. Your clinical site's rules
+    may be stricter, and the stricter one applies. The
     model can be wrong about the medicine: check its teaching points against
     your course materials.
   prompt: |

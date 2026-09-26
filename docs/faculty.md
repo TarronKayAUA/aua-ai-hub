@@ -38,7 +38,6 @@ Each step-by-step guide walks one job end to end. Artificial intelligence (AI) c
     - <span class="row-tag">Start here</span> [Reviewing the Literature](playbooks/literature-reviews.md) <span class="row-sub">From question to appraised evidence</span>
     - [AI for Research](tools/research.md) <span class="row-sub">Tools by stage, and what AUA licenses</span>
     - [Where to disclose AI use in a manuscript](tools/research.md#judged-by-the-same-rulers) <span class="row-sub">Reporting standards and journal rules</span>
-    - [Your own drafts and AI tools](pathway/rules.md#the-core-idea) <span class="row-sub">What stays out, and what is yours to share</span>
     - [Running Models Locally](tools/local.md) <span class="row-sub">AI on your own computer, for privacy</span>
     - [Module 5: Research and Scholarship](pathway/research.md) <span class="row-sub">Integrity, peer review, and participant data</span>
 
@@ -68,7 +67,7 @@ The first four modules of the literacy pathway take about 50 minutes and cover t
 
 ## What the policy asks: patient data, student records, personnel files {: #the-lines-that-never-move }
 
-Public tools may keep, learn from, or pass on what you type, so the [AI Responsible Use Policy](governance/policy.md) names four kinds of information that stay out of them unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data: protected health information (PHI); student records covered by the Family Educational Rights and Privacy Act (FERPA), such as grades, evaluations, and identifiable student work; faculty and staff confidential personnel information; and AUA proprietary business information, unpublished research data, or trade secrets. The list is not exhaustive, and in practice it includes research participant data. Your own unpublished drafts are yours to share; as a practical protection, work on them in a paid plan with training on your content turned off, so your text does not feed future versions of the model. Licensed question-bank content is third-party material, and the policy asks for a review before it goes into an AI tool, because its license may not allow that. [Module 3: The Policy in Practice](pathway/rules.md) covers all of it in about ten minutes, and [Can I Use AI for This?](governance/can-i.md) answers common questions one at a time.
+The [AI Responsible Use Policy](governance/policy.md) keeps patient information, student records, confidential personnel information, and other sensitive or confidential material out of public AI tools unless the AI Committee has approved a tool for that data. [Can I Use AI for This?](governance/can-i.md) answers common questions one at a time, and [Module 3: The Policy in Practice](pathway/rules.md) covers the policy in about ten minutes.
 
 Whatever a tool contributed, the work you sign is yours. Read AI-drafted teaching material as its content expert before students see it: models make confident errors, and students are the readers least placed to catch them.
 

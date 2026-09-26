@@ -22,8 +22,8 @@ prompts:
 ## Good practice for this task
 
 - Questions from a licensed question bank belong to their publisher, and their license usually limits reuse; the [AI Responsible Use Policy](../governance/policy.md#intellectual-property-rights-and-copyright-issues) requires a review before licensed third-party material goes into an AI tool.
-- Build vignettes from invented details, or from a real case abstracted until no one could recognize it. A recognizable case can identify the patient to anyone who was on that rotation, and patient information stays out of public AI tools under the policy.
-- If past exam performance shapes a new item, aggregate statistics (difficulty, how often each option was chosen) are all the drafting needs. Individual students' results are education records and stay out of public AI tools.
+- Build vignettes from invented details, or from a real case abstracted until no one could recognize it. A recognizable case can identify the patient to anyone who was on that rotation.
+- If past exam performance shapes a new item, aggregate statistics (difficulty, how often each option was chosen) are all the drafting needs.
 
 ## Before you rely on it
 

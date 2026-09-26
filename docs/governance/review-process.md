@@ -8,7 +8,7 @@ The [tools directory](../tools/index.md) gives every entry a status describing t
 
 ## What a review establishes
 
-Consistent with the [AI Responsible Use Policy](policy.md), a Reviewed status is not a general endorsement. The policy keeps no approved list for tools in general use; it requires users to make sure a tool meets its data security, ethical, and legal requirements, so ordinary, non-sensitive work needs no review. A review matters most for sensitive data: the policy allows sensitive, confidential, or proprietary information into a public tool only when the AI Responsible Use Subcommittee has specifically vetted and approved the tool for that data, and a review record names exactly which data categories and uses it clears, if any.
+Consistent with the [AI Responsible Use Policy](policy.md), a Reviewed status is not a general endorsement. The policy keeps no approved list for tools in general use; it requires users to make sure a tool meets its data security, ethical, and legal requirements, so ordinary, non-sensitive work needs no review. A review matters most for sensitive data: the policy allows sensitive, confidential, or proprietary information into a public tool only when the AI Committee has specifically vetted and approved the tool for that data, and a review record names exactly which data categories and uses it clears, if any.
 
 <figure class="figure figure--html hf">
 <div class="hf-flow">

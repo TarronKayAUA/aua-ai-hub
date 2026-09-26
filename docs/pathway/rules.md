@@ -18,14 +18,14 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work,
 
 1. **You are accountable.** Whatever a tool contributed, the work, the decisions, and the errors are yours; the policy makes human oversight and final responsibility explicit. That is also what makes wide use workable: your review is the quality check.
 
-2. **Some information stays out of public tools.** Public AI tools may store, learn from, or pass on what you type, so the policy does not allow sensitive, confidential, or proprietary information into them unless the AI Responsible Use Subcommittee has specifically vetted and approved a tool for that data. It names four categories:
+2. **Some information stays out of public tools.** Public AI tools may store, learn from, or pass on what you type, so the policy does not allow sensitive, confidential, or proprietary information into them unless the AI Committee has specifically vetted and approved a tool for that data. It names four categories:
 
     - Protected health information (PHI)
     - Student education records protected by the Family Educational Rights and Privacy Act (FERPA)
     - Faculty and staff confidential personnel information
     - AUA proprietary business information, unpublished research data, or trade secrets
 
-    The policy's list is not exhaustive: its wording covers sensitive, confidential, and proprietary information generally. Other people's unpublished work is theirs to share. Your own unpublished drafts are yours to work on in a paid plan with training on your content turned off, as long as participant data and identifiers stay out.
+    The policy's list is not exhaustive: its wording covers sensitive, confidential, and proprietary information generally. Other people's unpublished work is theirs to share.
 
 3. **Label and verify.** Acknowledge AI-generated content the way academic standards and your course or department ask, rather than presenting it as your own original work. Check anything an AI produces before you rely on it, and check references at the original source every time, because models produce plausible citations that do not exist. The policy also strongly discourages treating AI as your primary source for foundational knowledge: your course materials and the academic literature are what your exams and your practice are built on.
 
@@ -62,7 +62,7 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work,
 <figcaption>Rule 2 as a habit: a few seconds' check before anything goes into a public tool.</figcaption>
 </figure>
 
-If you see misuse, a data exposure, or a tool producing harmful or discriminatory output, the policy expects you to report it to the AI Responsible Use Subcommittee; the [AI Committee page](../governance/committee.md) gives the reporting contact. The policy commits the university to taking steps to protect reporters' confidentiality, and it prohibits retaliation against anyone who reports in good faith.
+If you see misuse, a data exposure, or a tool producing harmful or discriminatory output, the policy expects you to report it to the AI Committee; the [AI Committee page](../governance/committee.md) gives the reporting contact. The policy commits the university to taking steps to protect reporters' confidentiality, and it prohibits retaliation against anyone who reports in good faith.
 
 ## Self-check
 

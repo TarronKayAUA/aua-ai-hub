@@ -26,7 +26,7 @@ For clinical contexts, the [AI Responsible Use Policy](../governance/policy.md#r
 
 ### Patient information
 
-The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps protected health information (PHI) out of publicly available AI tools unless the AI Responsible Use Subcommittee has specifically approved a tool for patient data, and consumer chatbots are not approved. PHI is broader than a name: a photo of a chart or a recording of an encounter carries it too. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
+The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps protected health information (PHI) out of publicly available AI tools unless the AI Committee has specifically approved a tool for patient data, and consumer chatbots are not approved. PHI is broader than a name: a photo of a chart or a recording of an encounter carries it too. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Two kinds of work share the word clinical</p>

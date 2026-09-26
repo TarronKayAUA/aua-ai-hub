@@ -38,7 +38,7 @@ prompts:
 
 ## Good practice for this task
 
-- **A classmate's report is theirs to share.** It is their education record, and the policy keeps other people's records out of public AI tools. If a classmate wants help, send them this page so they can run the planner on their own report, or sit beside them while they do.
+- **A classmate's report is theirs to share.** It is their education record. If a classmate wants help, send them this page so they can run the planner on their own report, or sit beside them while they do.
 - **Performance data, not questions.** The report's content-area descriptions are all the planner needs. NBME exam questions are copyrighted and confidential, so leave out any you remember from the exam; to dig into a concept you missed, work from your question bank or your notes instead.
 - **Treat single-exam areas as hypotheses.** Content-area scores on one exam carry wide error bands. A pattern across two or more exams, or a flag that matches your own sense of weakness, is evidence; one dip is a lead to investigate.
 - **A missed plan is information.** A plan you did not follow says something about the plan's size, not about you, and the progress check treats it that way; the next plan should be one you can keep.

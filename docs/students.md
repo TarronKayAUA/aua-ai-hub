@@ -81,14 +81,15 @@ The literacy pathway's first three modules are short, plain-language, and writte
 
 ## Can I use AI to study? What stays out {: #the-lines-that-never-move }
 
-The full detail lives in [Module 3: The Policy in Practice](pathway/rules.md) and the [AI Responsible Use Policy](governance/policy.md). More short answers, each with its conditions, are on [Can I Use AI for This?](governance/can-i.md), a draft for AI Committee comment.
+Patient information, including a name, an identifiable case detail, or a photo of a chart, stays out of public AI tools under the [AI Responsible Use Policy](governance/policy.md) unless the AI Committee has approved a tool for that data. Stripped to a teaching abstraction, a case is fine to practice with; see [On rotations](#on-the-wards).
 
-- Patient information, including a name, an identifiable case detail, or a photo of a chart, stays out of public AI tools under the policy unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data. Stripped to a teaching abstraction, a case is fine to practice with; see [On rotations](#on-the-wards).
-- NBME and question-bank items are licensed third-party content, and the policy does not allow licensed material into an AI tool without a review, because the license may not permit it. Build practice from your own slides and notes instead; your in-house exams are written from them.
-- A classmate's work is theirs, so check with them before it goes into a tool, the same courtesy you would want for your own draft.
-- Your course syllabus is where expectations for AI on assignments are set, and the policy asks you to acknowledge AI use the way your course or department specifies. If the syllabus does not cover something you want to try, ask your instructor: a quick message usually settles it, and the conversation often improves the idea.
+- Your course syllabus is where expectations for AI on assignments are set, including how to acknowledge AI use. If it does not cover something you want to try, ask your instructor: a quick message usually settles it, and the conversation often improves the idea.
 - The Student Handbook treats unauthorized or unacknowledged AI use in coursework, assessments, or clinical training as possible academic misconduct; your course syllabus says what is authorized.
+- Practice built from your own slides and notes fits your exams best, because your in-house exams are written from them.
+- A classmate's work is theirs, so check with them before it goes into a tool, the same courtesy you would want for your own draft.
 - Whatever a tool contributed, the work you submit and its errors are yours.
+
+[Can I Use AI for This?](governance/can-i.md) answers more questions one at a time, and [Module 3: The Policy in Practice](pathway/rules.md) covers the policy in about ten minutes.
 
 ## Through the basic sciences
 

@@ -50,7 +50,7 @@ Where an entry has something specific worth knowing, such as an access condition
 
 <!-- render:tool-access -->
 
-The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps sensitive, confidential, and proprietary information out of publicly available AI tools unless the AI Responsible Use Subcommittee has approved a tool for that data. Its list includes patient health information (PHI), student education records protected by the Family Educational Rights and Privacy Act (FERPA), faculty and staff confidential personnel information, and AUA proprietary business information, unpublished research data, and trade secrets. Being Listed or Licensed here does not change that. [Module 3: The Policy in Practice](../pathway/rules.md) explains what each covers, including when your own unpublished draft is fine. See [PHI and FERPA considerations](../basics/glossary.md#phi-and-ferpa-considerations) in the glossary.
+The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps sensitive information, such as patient information and student records, out of publicly available AI tools unless the AI Committee has approved a tool for that data, and a Listed or Licensed status here does not change that; [Can I Use AI for This?](../governance/can-i.md) answers common questions one at a time.
 
 To suggest a tool, use the contact details on the [About page](../about.md). To request committee review, follow [How Tools Are Reviewed](../governance/review-process.md). Reviewed, Use with caution, and Restricted come from that review; Listed and Licensed reflect cataloging and procurement facts.
 
