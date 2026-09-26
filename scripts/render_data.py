@@ -2276,6 +2276,12 @@ def on_page_markdown(markdown, page, config, files):
         )
     if DIGEST_PAGE_RE.fullmatch(src):
         return _digest_page(src, markdown, config)
+    if src == "news/archive/index.md":
+        # The archive index is generated too, and its GENERATED comment above
+        # the H1 made its browser and search title read "Index" (found
+        # 2026-09-26, sidebar-free navigation round). Same remedy as the weekly
+        # pages: leave the comment out of the rendered page, keep the source.
+        return re.sub(r"\A\s*<!-- GENERATED[^\n]*-->[ \t]*\n", "", markdown)
     if src == "basics/glossary.md":
         if GLOSSARY_AZ_MARKER not in markdown:
             raise AssertionError(
