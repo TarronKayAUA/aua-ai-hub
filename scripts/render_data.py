@@ -1408,14 +1408,19 @@ def _conference_row(conf, today) -> str:
     if isinstance(start, str):
         dates_cell = "TBD " + _badge("dates unconfirmed", "badge-unconfirmed")
     return (
-        f"| {name_cell} | {conf['organizer']} | {dates_cell} | {conf['location']} "
-        f"| {FORMAT_LABELS[conf['format']]} "
-        f"| {_deadline_cell(conf['abstract_deadline'], today)} |"
+        f"| {name_cell} | {dates_cell} "
+        f"| {_deadline_cell(conf['abstract_deadline'], today)} "
+        f"| {conf['location']} | {FORMAT_LABELS[conf['format']]} "
+        f"| {conf['organizer']} |"
     )
 
 
+# Column order (layout redesign L20, 2026-09-25): what a reader decides on
+# comes first, so the abstract deadline sits beside the dates instead of
+# off the right edge of a phone. On phones scripts/layout_news.py stacks
+# each row into a card that reads in this same order.
 CONFERENCE_HEADER = (
-    "| Conference | Organizer | Dates | Location | Format | Abstract deadline |\n"
+    "| Conference | Dates | Abstract deadline | Location | Format | Organizer |\n"
     "| --- | --- | --- | --- | --- | --- |"
 )
 

@@ -30,6 +30,7 @@ import re
 import statistics
 import sys
 import time
+import unicodedata
 from dataclasses import dataclass, field
 from datetime import date, datetime, timedelta, timezone
 from email.utils import format_datetime
@@ -107,6 +108,12 @@ def selection_note(rel_prefix: str) -> str:
         f"sources. See [About]({rel_prefix}about.md) for how selection "
         "works."
     )
+
+
+# attr_list suffix that sets the selection note as a quiet meta line on the
+# news pages (layout redesign L19): still on the first screen, in smaller
+# grey type, so the items move up.
+NOTE_CLASS = "\n{: .news-note }"
 
 
 def diversify_by_source(records: list[dict], limit: int,
@@ -876,11 +883,6 @@ def _brief_sanitize(text: str) -> str:
         p = re.sub(r"\s*[–—]+\s*", ", ", p)
         cleaned.append(" ".join(p.split()))
     return "\n\n".join(cleaned)
-
-
-def _brief_paragraphs_html(text: str) -> str:
-    """Stored brief text (escaped, linked) to one <p> per paragraph."""
-    return "\n".join(f"<p>{p}</p>" for p in text.split("\n\n"))
 
 
 def update_section_briefs(config: dict, categories: dict, ledger: dict,
@@ -1873,26 +1875,180 @@ def _topic_slug(topic: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", topic.lower()).strip("-") or "topic"
 
 
-def _topic_chips_html(records: list[dict]) -> str:
+def _topic_chips_html(records: list[dict], group: str) -> str:
     """Filter-chip row for a news list. Chips render only when at least
     two real topics are present; docs/javascripts/topics.js does the
-    filtering, and without it the chips are inert and the full list shows."""
+    filtering.
+
+    Layout redesign (L19, 2026-09-25): the row is one labelled group
+    (`group` makes the label id unique on This Week, which has a row per
+    section), each chip is a toggle button carrying aria-pressed, and the
+    row scrolls sideways on phones instead of wrapping into a block. It
+    ships hidden: topics.js reveals it and adds the "Showing N of M" status
+    line, so a reader without JavaScript never meets buttons that do
+    nothing, and still gets the full list. The row is kept out of the
+    search index, where its counts read as noise."""
     counts: dict[str, int] = {}
     for r in records:
         t = r.get("topic") or "Other"
         counts[t] = counts.get(t, 0) + 1
     if len([t for t in counts if t != "Other"]) < 2:
         return ""
-    chips = [
-        '<button class="topic-chip is-active" data-topic="">'
-        f"All ({len(records)})</button>"
-    ]
-    for t in sorted(counts, key=lambda t: (t == "Other", -counts[t], t)):
-        chips.append(
-            f'<button class="topic-chip" data-topic="{_topic_slug(t)}">'
-            f"{html.escape(t)} ({counts[t]})</button>"
+    label_id = f"topics-{group}"
+
+    def chip(topic_slug: str, text: str, count: int, pressed: bool) -> str:
+        active = " is-active" if pressed else ""
+        return (
+            f'<button type="button" class="topic-chip{active}" '
+            f'data-topic="{topic_slug}" '
+            f'aria-pressed="{"true" if pressed else "false"}">{text} '
+            f'<span class="topic-chip__n">{count}</span></button>'
         )
-    return '<div class="topic-chips">' + "".join(chips) + "</div>"
+
+    chips = [chip("", "All", len(records), True)]
+    for t in sorted(counts, key=lambda t: (t == "Other", -counts[t], t)):
+        chips.append(chip(_topic_slug(t), html.escape(t), counts[t], False))
+    return (
+        f'<div class="topic-chips" role="group" aria-labelledby="{label_id}" '
+        'data-search-exclude="" hidden="">'
+        f'<span class="topic-chips__label" id="{label_id}">Topic</span>'
+        + "".join(chips) + "</div>"
+    )
+
+
+# --- Brief lede and fold (layout redesign L19, 2026-09-25) ---------------------
+#
+# A brief opens its section as a two-sentence lede taken from its own first
+# sentences; the rest of the brief, the player (injected at build time by
+# scripts/render_data.py, before the date line) and the date line sit in one
+# quiet fold. On a phone the full brief was 1,084px before the first item.
+#
+# The markup keeps the contract scripts/narrate.py reads: one
+# `<div class="section-brief">` holding no other div, and the brief as
+# `<p>` paragraphs (the date line is skipped by its class). So the Kokoro
+# narration still reads the whole brief, lede included; the only change to
+# its text is a paragraph break after the lede.
+
+BRIEF_FOLD_LABEL = "Read this week's brief"
+# Shown only when the fold holds a player (layout-news.css hides it
+# otherwise, since audio exists only where narrate.py has run).
+BRIEF_FOLD_LISTEN = ", or listen"
+
+# End of a sentence: terminal punctuation, optional closing quotes, and any
+# numbered citation links written after the stop, followed by space and a
+# capital letter, digit or opening quote. Tested at import (LEDE_CONTROLS).
+_SENTENCE_END = re.compile(
+    r"[.?!](?:&quot;|&#x27;|[\"'”’)])*"
+    r"(?:\s*<a [^>]*>\[\d+\]</a>)*"
+    r"(?=\s+(?:&quot;|&#x27;|[\"'“‘(])?[A-Z0-9])"
+)
+# Words whose trailing period does not end a sentence.
+_ABBREVIATIONS = frozenset({
+    "e.g", "i.e", "etc", "vs", "dr", "drs", "prof", "mr", "mrs", "ms", "st",
+    "no", "fig", "al", "u.s", "u.k", "u.n", "inc", "ltd", "co", "corp",
+    "jr", "sr", "approx", "jan", "feb", "mar", "apr", "jun", "jul", "aug",
+    "sep", "sept", "oct", "nov", "dec", "ph.d", "m.d",
+})
+_CITATION = re.compile(r'<a href="([^"]+)">\[(\d+)\]</a>')
+
+
+def split_lede(paragraph: str, sentences: int = 2) -> tuple[str, str]:
+    """(lede, rest): the paragraph's first `sentences` sentences, and what
+    follows. A paragraph with no more sentences than that is all lede."""
+    count = 0
+    for m in _SENTENCE_END.finditer(paragraph):
+        head = paragraph[:m.start()]
+        if head.rfind("<") > head.rfind(">"):
+            continue  # a period inside a tag (a URL), not in the text
+        word = re.search(r"([A-Za-z][A-Za-z.]*)$", head)
+        if word:
+            w = word.group(1)
+            if w.lower() in _ABBREVIATIONS or (len(w) == 1 and w.isupper()):
+                continue
+        count += 1
+        if count == sentences:
+            return paragraph[:m.end()].strip(), paragraph[m.end():].strip()
+    return paragraph.strip(), ""
+
+
+LEDE_CONTROLS = [
+    # (paragraph, expected lede): the second sentence ends after a citation
+    # link, an abbreviation and an initial do not end a sentence, and a
+    # period inside a link's URL is ignored.
+    (('One is here <a href="https://a.org/x.y">[1]</a>. Two cites '
+      'the U.S. Food and Drug Administration <a href="https://b.org/">[2]</a>. '
+      'Three follows.'),
+     ('One is here <a href="https://a.org/x.y">[1]</a>. Two cites '
+      'the U.S. Food and Drug Administration <a href="https://b.org/">[2]</a>.')),
+    ("Dr. Smith and J. Doe wrote one. Then two? Then three.",
+     "Dr. Smith and J. Doe wrote one. Then two?"),
+    ("Only one sentence here.", "Only one sentence here."),
+]
+for _para, _want in LEDE_CONTROLS:
+    _got = split_lede(_para)[0]
+    if _got != _want:
+        raise AssertionError(
+            f"split_lede control failed: {_para!r} gave {_got!r}")
+
+
+def _label_citations(text: str, sources: dict) -> str:
+    """Give each numbered citation link a screen-reader name naming its
+    source: "[3]" alone told a listener nothing (AC-12). `sources` maps an
+    escaped item URL to its ledger record; a link to an item the ledger no
+    longer holds keeps a plain numbered name."""
+    def sub(m):
+        href, n = m.group(1), m.group(2)
+        record = sources.get(href)
+        label = f"Source {n}"
+        if record:
+            label += f": {record.get('source', '')}, {record.get('title', '')}"
+        return (f'<a href="{href}" aria-label="{html.escape(label)}">'
+                f"[{n}]</a>")
+    return _CITATION.sub(sub, text)
+
+
+def render_brief_html(brief: dict, date_note: str,
+                      sources: dict | None = None) -> str:
+    """A stored section brief as lede plus quiet fold (see above)."""
+    text = _label_citations(brief["text"], sources or {})
+    paragraphs = text.split("\n\n")
+    lede, rest = split_lede(paragraphs[0])
+    folded = ([rest] if rest else []) + paragraphs[1:]
+    lines = [
+        '<div class="section-brief">',
+        f'<p class="section-brief-lede">{lede}</p>',
+        '<details class="note section-brief-more">',
+        (f'<summary data-search-exclude="">{BRIEF_FOLD_LABEL}'
+         f'<span class="section-brief-listen">{BRIEF_FOLD_LISTEN}</span>'
+         "</summary>"),
+        *(f"<p>{p}</p>" for p in folded),
+        (f'<p class="section-brief-date">The picture as of {brief["date"]}; '
+         f"{date_note}</p>"),
+        "</details>",
+        "</div>",
+    ]
+    return "\n".join(lines)
+
+
+def heading_id(text: str) -> str:
+    """The id Python-Markdown's toc extension gives a heading (its default
+    slugify), so a jump link can be written before the page is built.
+    scripts/layout_news.py fails the build if one ever misses."""
+    value = unicodedata.normalize("NFKD", text).encode("ascii", "ignore")
+    value = re.sub(r"[^\w\s-]", "", value.decode("ascii")).strip().lower()
+    return re.sub(r"[-\s]+", "-", value)
+
+
+def _section_chips_html(sections: list[tuple[str, int]]) -> str:
+    """This Week's row of jump links, one per section with its item count
+    (L19). Kept out of the search index."""
+    links = "".join(
+        f'<a class="section-chip" href="#{heading_id(title)}">'
+        f'{html.escape(title)} <span class="section-chip__n">{count}</span></a>'
+        for title, count in sections
+    )
+    return ('<nav class="section-chips" aria-label="Sections on this page" '
+            f'data-search-exclude="">{links}</nav>')
 
 
 def render_item_md(record: dict, suppress: frozenset = frozenset()) -> str:
@@ -1947,29 +2103,32 @@ def kept_records(ledger: dict, category: str | None = None) -> list[dict]:
     return records
 
 
+def brief_sources(ledger: dict) -> dict:
+    """Escaped item URL -> kept record, for naming a brief's numbered
+    citations. Keyed the way update_section_briefs writes each link's
+    href, so a lookup is exact."""
+    return {html.escape(r["url"]): r for r in kept_records(ledger)
+            if r.get("url")}
+
+
 def render_category_page(label: str, intro: str, records: list[dict],
                          brief: dict | None = None,
-                         banner_slug: str | None = None) -> str:
+                         sources: dict | None = None,
+                         group: str = "items") -> str:
+    """One news category page. Items come first (layout redesign L19,
+    2026-09-25): the section banner is retired (L2), the brief is a
+    two-sentence lede with the rest folded, and the topic chips sit on one
+    row. `sources` (escaped URL to ledger record) names each citation for
+    screen readers; `group` makes the chip row's label id unique."""
     lines = [COMMENTS_FRONT_MATTER + GENERATED_HEADER, "", f"# {label}", "",
-             intro, "", selection_note("../"), ""]
-    if banner_slug:
-        # Raw HTML is not path-rewritten by MkDocs: with directory URLs the
-        # page serves from /news/<page>/, so docs/assets needs ../../ here.
-        lines.append(f'<img class="section-banner" '
-                     f'src="../../assets/section-{banner_slug}.svg" alt="">')
-        lines.append("")
+             intro, "", selection_note("../") + NOTE_CLASS, ""]
     if brief and brief.get("text"):
-        lines.append(
-            '<div class="section-brief">\n'
-            f"{_brief_paragraphs_html(brief['text'])}\n"
-            f'<p class="section-brief-date">The picture as of '
-            f"{brief['date']}; numbered links go to the items below.</p>\n"
-            "</div>"
-        )
+        lines.append(render_brief_html(
+            brief, "numbered links go to the items below.", sources))
         lines.append("")
     if records:
         suppress = _generic_thumbnails(records)
-        chips = _topic_chips_html(records)
+        chips = _topic_chips_html(records, group)
         if chips:
             lines.append(chips)
             lines.append("")
@@ -2373,27 +2532,37 @@ def _two_tiers(first: list[str], rest: list[str], rest_label: str) -> list[str]:
 def render_this_week(categories: dict, by_category: dict, videos: list[dict],
                      podcasts: list[dict],
                      briefs: dict | None = None,
-                     first_tier: dict | None = None) -> str:
+                     first_tier: dict | None = None,
+                     sources: dict | None = None) -> str:
     """Rolling trailing-seven-day view, regenerated on every run. Each
     section shows its newest items directly (feeds.yaml this_week, default
     10 news items and 6 videos or episodes) and the rest behind one bar;
-    topic chips filter both tiers (docs/javascripts/topics.js)."""
+    topic chips filter both tiers (docs/javascripts/topics.js).
+
+    Layout redesign (L19, 2026-09-25): a row of jump links under the H1
+    names every section with its count, the banner is retired (L2), and
+    each brief is a lede with the rest folded (render_brief_html)."""
     tiers = {"news": 10, "media": 6, **(first_tier or {})}
+    sections = [(categories[k], len(rs)) for k, rs in by_category.items() if rs]
+    if videos:
+        sections.append(("Videos", len(videos)))
+    if podcasts:
+        sections.append(("Podcasts", len(podcasts)))
     lines = [
         COMMENTS_FRONT_MATTER + GENERATED_HEADER,
         "",
         "# This Week",
         "",
-        "Everything kept in the last seven days. Earlier weeks' highlights "
-        "are in the [News Archive](archive/index.md). "
-        + selection_note("../"),
-        "",
-        # Raw HTML is not path-rewritten by MkDocs: the page serves from
-        # /news/this-week/, so docs/assets needs ../../ here.
-        '<img class="section-banner" '
-        'src="../../assets/section-this-week.svg" alt="">',
-        "",
     ]
+    if len(sections) > 1:
+        lines.extend([_section_chips_html(sections), ""])
+    lines.extend([
+        ("Everything kept in the last seven days. Earlier weeks' highlights "
+         "are in the [News Archive](archive/index.md)."),
+        "",
+        selection_note("../") + NOTE_CLASS,
+        "",
+    ])
     all_records = [r for records in by_category.values() for r in records]
     suppress = _generic_thumbnails(all_records)
     empty = True
@@ -2404,16 +2573,10 @@ def render_this_week(categories: dict, by_category: dict, videos: list[dict],
         lines.extend([f"## {categories[key]}", ""])
         brief = (briefs or {}).get(key)
         if brief and brief.get("text"):
-            lines.append(
-                '<div class="section-brief">\n'
-                f"{_brief_paragraphs_html(brief['text'])}\n"
-                f'<p class="section-brief-date">The picture as of '
-                f"{brief['date']}; numbered links go to the source "
-                "items.</p>\n"
-                "</div>"
-            )
+            lines.append(render_brief_html(
+                brief, "numbered links go to the source items.", sources))
             lines.append("")
-        chips = _topic_chips_html(records)
+        chips = _topic_chips_html(records, heading_id(categories[key]))
         top, rest = records[:tiers["news"]], records[tiers["news"]:]
         noun = "item" if len(rest) == 1 else "items"
         lines.extend(_two_tiers(
@@ -2973,12 +3136,13 @@ def main() -> int:
 
     slug = {"general_ai": "general-ai", "medical_education": "medical-education",
             "clinical_practice": "clinical-practice"}
+    sources = brief_sources(ledger)
     for cat_key, label in categories.items():
         records = kept_records(ledger, cat_key)[:PAGE_ITEMS]
         page = render_category_page(
             label, PAGE_INTROS[cat_key], records,
             brief=ledger.get("section_briefs", {}).get(cat_key),
-            banner_slug=slug[cat_key],
+            sources=sources, group=slug[cat_key],
         )
         write(NEWS_DIR / f"{slug[cat_key]}.md", page, len(records))
 
@@ -3029,7 +3193,8 @@ def main() -> int:
           render_this_week(categories, rolling_by_cat, rolling_videos,
                            rolling_podcasts,
                            briefs=ledger.get("section_briefs", {}),
-                           first_tier=config.get("this_week", {})),
+                           first_tier=config.get("this_week", {}),
+                           sources=sources),
           rolling_count)
 
     # weekly highlights digest on the configured day (default friday), one
