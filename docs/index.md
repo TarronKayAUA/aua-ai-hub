@@ -29,7 +29,7 @@ hide:
 
 <div class="home" markdown>
 
-<section class="home-hero" aria-label="Welcome and site search">
+<section class="home-hero" aria-label="Welcome and site search" data-island-hero>
 <img class="home-hero__wordmark" src="assets/wordmark-white.png" alt="American University of Antigua College of Medicine" width="800" height="297">
 <p class="home-hero__tagline">Artificial intelligence (AI), curated for medical education.</p>
 <p class="home-hero__sub">For the American University of Antigua College of Medicine (AUACOM) community: step-by-step guides, tools, plain answers, and the policy that governs AI use.</p>

@@ -1,1 +1,230 @@
-/* Layout redesign (2026-09-25): styles for the art page type package. */
+/* Layout redesign (2026-09-25): styles for the art page type package.
+
+   Island Night (2026-09-26): the scenery drawn by docs/assets/art/island-core.js (home hero) and
+   island-sides.js (the gutters beside the column on wide screens), fetched by
+   docs/javascripts/layout-art.js. The light scheme shows dusk (19:00), the dark scheme night
+   (19:23); every colour below is a token, so the scheme toggle changes the hour instantly and the
+   drawing never needs rebuilding. The gutters are a pale print of the same view in the light scheme
+   (paler still on pages without the hero) and a night view in the dark one.
+   Motion: on the home page only, the hero fades in and one signal crosses the network, once, all
+   over within about 3 seconds; then a still frame. Only opacity animates. Reduced motion shows the
+   still frame at once, and a hidden tab holds the pass until it is seen. The gutters never move. */
+
+/* --- The hours ------------------------------------------------------------ */
+.isl {
+  /* DUSK, the hero in the light scheme: the brightest afterglow sits low and right of the words, and
+     white text keeps at least 4.5:1 against the sky behind every line at every width (checked
+     against the rendered drawing, without the text shadow). */
+  --isl-sky0: #0b2946; --isl-sky1: #0f4570; --isl-sky2: #245d86; --isl-sky3: #6f94b0; --isl-hz: #b9c4cc;
+  --isl-g1: #ffdca6; --isl-g2: #f3a77a; --isl-g3: #a67fa3;
+  --isl-sea0: #5f7f99; --isl-sea1: #24506f; --isl-sea2: #0d2f4d; --isl-haze: #d4dbe2;
+  --isl-isl: #4d6e8d; --isl-far: #173350; --isl-near: #0a1f35;
+  --isl-rip: #b8cde0; --isl-rip-a: 0.2; --isl-hzline: rgba(255, 236, 214, 0.35);
+  --isl-moon: #fff4d6; --isl-earth: rgba(186, 204, 228, 0.14); --isl-planet: #fffaf0; --isl-star: #ffffff;
+  --isl-net: rgba(205, 224, 248, 0.34); --isl-node: rgba(219, 232, 250, 0.72); --isl-pulse: #ffd89c;
+  --isl-rim: #ffcf9c;
+}
+
+[data-md-color-scheme="slate"] .isl {
+  /* NIGHT, the hero in the dark scheme: the afterglow nearly gone, many more stars out. */
+  --isl-sky0: #030a17; --isl-sky1: #071830; --isl-sky2: #0d2847; --isl-sky3: #1a3a5c; --isl-hz: #2e4b69;
+  --isl-g1: #ffb574; --isl-g2: #b85e50; --isl-g3: #3e376f;
+  --isl-sea0: #1b3653; --isl-sea1: #0a1c32; --isl-sea2: #030b16; --isl-haze: #3a5372;
+  --isl-isl: #122841; --isl-far: #0b1a2e; --isl-near: #040b16;
+  --isl-rip: #4e79a3; --isl-rip-a: 0.28; --isl-hzline: rgba(255, 200, 150, 0.22);
+  --isl-moon: #fff2d0; --isl-earth: rgba(160, 182, 222, 0.18); --isl-planet: #fff8ea;
+  --isl-net: rgba(195, 216, 243, 0.5); --isl-node: rgba(219, 232, 250, 0.88); --isl-pulse: #ffd08a;
+  --isl-rim: #ffb27a;
+}
+
+/* The gutters in the dark scheme: the same night, a little quieter than the hero. */
+[data-md-color-scheme="slate"] .isl-side {
+  --isl-sky0: #050c19; --isl-sky1: #081629; --isl-sky2: #0c213b; --isl-sky3: #152f4d; --isl-hz: #223e5c;
+  --isl-sea0: #142c46; --isl-sea1: #0b1a2d; --isl-sea2: #08121f; --isl-haze: #2f4764;
+  --isl-isl: #10233a; --isl-far: #0b1829; --isl-near: #060d18; --isl-rip-a: 0.2;
+}
+
+/* The gutters in the light scheme: a pale print of the view, no stars, so a white page stays light. */
+[data-md-color-scheme="default"] .isl-side {
+  --isl-sky0: #e8eef5; --isl-sky1: #edf2f7; --isl-sky2: #f1f4f8; --isl-sky3: #f4f3f2; --isl-hz: #efe9e3;
+  --isl-sea0: #e2e9f0; --isl-sea1: #e8eef3; --isl-sea2: #f6f8fa; --isl-haze: #f6f1ec;
+  --isl-isl: #d3dde7; --isl-far: #cbd6e1; --isl-near: #bfcbd8;
+  --isl-rip: #b6c6d6; --isl-rip-a: 0.3; --isl-hzline: rgba(110, 135, 160, 0.3);
+}
+
+/* Paler still on pages without the hero, where the gutters sit beside reading text. */
+[data-md-color-scheme="default"] .isl-sides.isl-inner .isl-side {
+  --isl-sky0: #f0f4f8; --isl-sky1: #f2f5f9; --isl-sky2: #f4f7f9; --isl-sky3: #f7f6f5; --isl-hz: #f3efeb;
+  --isl-sea0: #ecf0f4; --isl-sea1: #eff3f6; --isl-sea2: #f8f9fb; --isl-haze: #f8f5f2;
+  --isl-isl: #e4e9ef; --isl-far: #e1e7ee; --isl-near: #dae2ea;
+  --isl-rip-a: 0.2; --isl-hzline: rgba(110, 135, 160, 0.2);
+}
+
+/* Dusk shows the light scheme's sky, night the dark scheme's. */
+.isl .isl-n { display: none; }
+[data-md-color-scheme="slate"] .isl .isl-n { display: inline; }
+[data-md-color-scheme="slate"] .isl .isl-d { display: none; }
+
+/* --- Paint ------------------------------------------------------------------ */
+.isl .st-sky0 { stop-color: var(--isl-sky0); }
+.isl .st-sky1 { stop-color: var(--isl-sky1); }
+.isl .st-sky2 { stop-color: var(--isl-sky2); }
+.isl .st-sky3 { stop-color: var(--isl-sky3); }
+.isl .st-hz { stop-color: var(--isl-hz); }
+.isl .st-g1 { stop-color: var(--isl-g1); }
+.isl .st-g2 { stop-color: var(--isl-g2); }
+.isl .st-g3 { stop-color: var(--isl-g3); }
+.isl .st-sea0 { stop-color: var(--isl-sea0); }
+.isl .st-sea1 { stop-color: var(--isl-sea1); }
+.isl .st-sea2 { stop-color: var(--isl-sea2); }
+.isl .st-haze { stop-color: var(--isl-haze); }
+.isl .st-moon { stop-color: var(--isl-moon); }
+.isl .st-planet { stop-color: var(--isl-planet); }
+.isl .f-isl { fill: var(--isl-isl); }
+.isl .f-far { fill: var(--isl-far); }
+.isl .f-near { fill: var(--isl-near); }
+.isl .f-moon { fill: var(--isl-moon); }
+.isl .f-earth { fill: var(--isl-earth); }
+.isl .f-planet { fill: var(--isl-planet); }
+.isl .f-pulse { fill: var(--isl-pulse); }
+.isl .s-star { stroke: var(--isl-star); stroke-linecap: round; fill: none; }
+.isl .s-rip { stroke: var(--isl-rip); stroke-opacity: var(--isl-rip-a); fill: none; }
+.isl .s-hz { stroke: var(--isl-hzline); fill: none; }
+.isl .s-net { stroke: var(--isl-net); fill: none; }
+.isl .s-node { stroke: var(--isl-node); fill: none; }
+.isl .s-pulse { stroke: var(--isl-pulse); fill: none; }
+.isl .s-rim { stroke: var(--isl-rim); fill: none; stroke-linecap: round; }
+
+/* --- The hero ----------------------------------------------------------------
+   The drawing sits under the words inside the card (isolation keeps it above the card's own
+   gradient, which stays as the fallback without JavaScript). Nothing in the card moves or resizes. */
+.md-typeset .home-hero.isl-host {
+  position: relative;
+  isolation: isolate;
+}
+
+.isl-hero {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.isl .isl-o {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+/* A soft shadow under the words keeps them clear of the brighter sky near the horizon. */
+.md-typeset .isl-host .home-hero__tagline,
+.md-typeset .isl-host .home-hero__sub {
+  text-shadow: 0 1px 2px rgba(2, 18, 34, 0.55), 0 0 12px rgba(2, 18, 34, 0.35);
+}
+
+.md-typeset .isl-host .home-hero__wordmark {
+  filter: drop-shadow(0 1px 2px rgba(2, 18, 34, 0.45));
+}
+
+/* --- The gutters ----------------------------------------------------------------
+   Fixed behind the page, in the gutters only: each strip fades out at the column's edge, at the
+   outer edge when the gutter is wider than the strip, and downward below the horizon. */
+.isl-sides {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: none;
+  pointer-events: none;
+}
+
+.isl-sides.isl-on {
+  display: block;
+}
+
+.isl-side {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: var(--isl-g, 0px);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(var(--isl-y0, 60vh) + 140px), transparent calc(var(--isl-y0, 60vh) + 420px));
+  mask-image: linear-gradient(to bottom, #000 calc(var(--isl-y0, 60vh) + 140px), transparent calc(var(--isl-y0, 60vh) + 420px));
+}
+
+.isl-side.l { left: 0; }
+.isl-side.r { right: 0; }
+
+.isl-strip {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.isl-side.l .isl-strip {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
+}
+
+.isl-side.r .isl-strip {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 34px);
+  mask-image: linear-gradient(to right, transparent, #000 34px);
+}
+
+.isl-side.l .isl-strip.isl-cut {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 90px, #000 calc(100% - 34px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 90px, #000 calc(100% - 34px), transparent);
+}
+
+.isl-side.r .isl-strip.isl-cut {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 34px, #000 calc(100% - 90px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 34px, #000 calc(100% - 90px), transparent);
+}
+
+[data-md-color-scheme="slate"] .isl-sides.isl-inner .isl-side .isl-art {
+  opacity: 0.85;
+}
+
+/* --- Motion: one pass on the home page ------------------------------------------ */
+.isl-hero .isl-pulse {
+  opacity: 0;
+}
+
+.isl-hero.isl-run {
+  animation: isl-in 0.5s ease-out both;
+}
+
+.isl-hero.isl-run .isl-pulse {
+  animation: isl-pulse 0.8s ease-in-out calc(1s + var(--i, 0) * 0.32s) 1 both;
+}
+
+@keyframes isl-in {
+  from { opacity: 0; }
+}
+
+@keyframes isl-pulse {
+  0% { opacity: 0; }
+  35% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.isl.isl-paused,
+.isl.isl-paused * {
+  animation-play-state: paused !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .isl,
+  .isl * {
+    animation: none !important;
+  }
+}
+
+@media print {
+  .isl-hero,
+  .isl-sides {
+    display: none !important;
+  }
+}
