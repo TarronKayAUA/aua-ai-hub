@@ -103,6 +103,9 @@ extra_css:
   - stylesheets/layout-prompts.css
   - stylesheets/layout-news.css
   - stylesheets/layout-art.css
+  # Navigation design d2 (2026-09-26): the floating section navigator, the
+  # section maps, previous and next cards, and the Tools & Prompts landing.
+  - stylesheets/layout-nav.css
 
 extra_javascript:
   - javascripts/counter.js
@@ -121,6 +124,7 @@ extra_javascript:
   - javascripts/layout-prompts.js
   - javascripts/layout-news.js
   - javascripts/layout-art.js
+  - javascripts/layout-nav.js
 
 plugins:
   # Material's default separator splits only on whitespace and hyphens, which
@@ -157,6 +161,9 @@ hooks:
   - scripts/layout_prompt_pages.py
   - scripts/layout_news.py
   - scripts/layout_learn.py
+  # Navigation design d2 (2026-09-26): the section model, page feet, and
+  # the Tools & Prompts map. Last, so its on_post_page sees every title.
+  - scripts/layout_nav.py
 
 markdown_extensions:
   - admonition
@@ -223,15 +230,20 @@ nav:
           - "How LLMs Work, in Depth": basics/how-llms-work.md
           - Getting Better Answers: basics/better-answers.md
       - Courses and Resources: learning/index.md
+  # Tools & Prompts opens on its own landing (navigation design d2,
+  # 2026-09-26), the tab drawn as a map. The two single tools sit beside the
+  # Tool Directory so the map groups them as "Find a tool"; their URLs are
+  # unchanged, since a URL comes from the file, not its place here.
   - "Tools & Prompts":
+      - tools-and-prompts.md
       - Tool Directory:
           - tools/index.md
+      - "Gemini Notebook (formerly NotebookLM)": tools/gemini-notebook.md
+      - AI for Research: tools/research.md
       - Prompt Library:
           - prompts/index.md
           - Learning to Prompt: prompts/learning.md
           - Prompt Exchange: prompts/exchange.md
-      - "Gemini Notebook (formerly NotebookLM)": tools/gemini-notebook.md
-      - AI for Research: tools/research.md
       - Local and Open Models:
           - Running Models Locally: tools/local.md
           - Hardware for Local AI: tools/hardware.md

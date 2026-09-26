@@ -90,10 +90,11 @@ hide:
     - [Reviewing the Literature](playbooks/literature-reviews.md)
     - [Running Models Locally](tools/local.md)
 
-- ### :material-toolbox:{ .home-icon } [Tools & Prompts](tools/index.md){ .card-link } {: .card-title data-search-exclude="true" }
+- ### :material-toolbox:{ .home-icon } [Tools & Prompts](tools-and-prompts.md){ .card-link } {: .card-title data-search-exclude="true" }
 
     Find a tool by task and see what AUA licenses, or copy a ready-made prompt.
 
+    - [Tool Directory](tools/index.md)
     - [Prompt Library](prompts/index.md)
 
 - ### :material-scale-balance:{ .home-icon } [Policy & Governance](governance/index.md){ .card-link } {: .card-title data-search-exclude="true" }

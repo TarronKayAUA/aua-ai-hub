@@ -1,0 +1,136 @@
+# Decoration for the section navigator (scripts/layout_nav.py): the floating
+# map on every inner page, the map at each page's foot, and the Tools &
+# Prompts landing page, which is the same map drawn full page.
+#
+# WHICH pages appear, their order, their titles and their grouping all come
+# from the nav in mkdocs.yml, never from here: a subsection is a group, and a
+# run of pages that sit directly in a tab is a group named by `loose:` below
+# (in order; the tab's own title when there are more runs than names). This
+# file only gives a tab, a group or a page its icon (a Material Design icon
+# name, checked at build time) and a short line of text.
+#
+# `{tools}` and `{prompts}` in a line are counted from data/tools.yaml and
+# data/prompts.yaml at build time, so a number here never goes stale.
+# Plain language, no em dashes, and no unexpanded acronyms: these lines
+# appear on every page of their section.
+
+tabs:
+  "For Students":
+    icon: account-school
+    loose: ["Guides for students"]
+  "For Faculty & Staff":
+    icon: human-male-board
+  "Learn":
+    icon: school-outline
+    loose: ["The seven modules", "When you finish"]
+  "Tools & Prompts":
+    icon: toolbox
+    loose: ["Find a tool"]
+  "News & Events":
+    icon: newspaper-variant
+    loose: ["Announcements"]
+  "Governance":
+    icon: scale-balance
+    loose: ["Policy and committee"]
+  "About & Contact":
+    icon: information-outline
+    loose: ["This site"]
+
+groups:
+  "Guides for students": {icon: account-school}
+  "Step-by-Step Guides": {icon: format-list-numbered}
+  "The seven modules": {icon: map-marker-path, route: true}
+  "Quick Reference": {icon: book-open-variant}
+  "When you finish": {icon: flag-checkered}
+  "Find a tool":
+    icon: magnify
+    blurb: Search the directory by task, or go deep on two tools that come up often.
+  "Prompt Library":
+    icon: text-box-multiple-outline
+    blurb: Copy a ready-made prompt, learn the craft, or see what colleagues share.
+  "Local and Open Models":
+    icon: laptop
+    blurb: Run a model on your own computer, so what you type never leaves it.
+  "Agents and Setups (Advanced)":
+    icon: robot-outline
+    blurb: Assistants that act for you. Read the four in order the first time.
+  "Benchmarks":
+    icon: podium
+    blurb: How models compare, from independent leaderboards refreshed nightly.
+  "News": {icon: newspaper-variant-outline}
+  "Events": {icon: calendar-star}
+  "Announcements": {icon: bullhorn-outline}
+  "Policy and committee": {icon: scale-balance}
+  "This site": {icon: information-outline}
+  "Project Write-ups": {icon: notebook-edit-outline}
+
+pages:
+  # For Students
+  examples/study-practice-questions.md: {icon: head-question-outline, sub: "From a lecture to explained answers"}
+  playbooks/score-reports.md: {icon: chart-box-outline, sub: "Make sense of your shelf and board scores"}
+  playbooks/residency-application.md: {icon: file-account-outline, sub: "Where it helps in the application year"}
+  # For Faculty & Staff
+  playbooks/index.md: {icon: view-list-outline, sub: "Every guide on one page"}
+  playbooks/lecture-prep.md: {icon: presentation, sub: "Objectives to a session plan"}
+  examples/lecture-outline.md: {icon: file-eye-outline, sub: "Worked example: a physiology outline"}
+  playbooks/exam-items.md: {icon: checkbox-marked-circle-outline, sub: "Multiple-choice items, drafted and checked"}
+  playbooks/syllabus-statement.md: {icon: file-document-outline, sub: "Templates for what students may use"}
+  playbooks/writing-feedback.md: {icon: comment-text-outline, sub: "Rubric-grounded comments you send as your own"}
+  playbooks/ai-images.md: {icon: image-outline, sub: "Figures, and why generated anatomy misleads"}
+  playbooks/literature-reviews.md: {icon: book-search-outline, sub: "From question to appraised evidence"}
+  playbooks/admin-drafting.md: {icon: file-document-edit-outline, sub: "Memos, minutes, and reports"}
+  examples/memo-and-minutes.md: {icon: file-eye-outline, sub: "Worked example: a memo and its minutes"}
+  # Learn
+  pathway/how-ai-works.md: {icon: brain, sub: "What these systems are, and are not"}
+  pathway/prompting.md: {icon: message-text-outline, sub: "How to direct them"}
+  pathway/rules.md: {icon: scale-balance, sub: "A short guide to the policy"}
+  pathway/teaching-assessment.md: {icon: human-male-board, sub: "For faculty"}
+  pathway/research.md: {icon: flask-outline, sub: "For faculty and student researchers"}
+  pathway/clinical.md: {icon: stethoscope, sub: "For students and clinical faculty"}
+  pathway/working-with-agents.md: {icon: robot-outline, sub: "Optional, when the basics feel comfortable"}
+  basics/glossary.md: {icon: alphabetical-variant, sub: "Plain definitions of the terms"}
+  basics/misconceptions.md: {icon: lightbulb-question-outline, sub: "Calibrating trust by task"}
+  basics/how-llms-work.md: {icon: chip, sub: "Language models, one level down"}
+  basics/better-answers.md: {icon: tune-variant, sub: "Context, memory, and standing instructions"}
+  learning/index.md: {icon: bookshelf, sub: "External courses for when you finish"}
+  # Tools & Prompts
+  tools/index.md: {icon: view-grid-outline, sub: "{tools} tools by task, and each one's status here"}
+  tools/gemini-notebook.md: {icon: notebook-outline, sub: "Answers grounded in your own documents"}
+  tools/research.md: {icon: flask-outline, sub: "Tools for each stage of a project"}
+  prompts/index.md: {icon: text-box-multiple-outline, sub: "{prompts} ready-made prompts to copy"}
+  prompts/learning.md: {icon: school-outline, sub: "Guides and studies on prompting"}
+  prompts/exchange.md: {icon: forum-outline, sub: "Prompts shared by the community"}
+  tools/local.md: {icon: laptop, sub: "A model on your own computer"}
+  tools/hardware.md: {icon: memory, sub: "What your machine can run, and how fast"}
+  tools/agents.md: {icon: robot-outline, sub: "What an agent is, and what it can do"}
+  tools/interfaces.md: {icon: application-outline, sub: "Chat, work, or code"}
+  tools/first-session.md: {icon: play-circle-outline, sub: "Run one, once, on a safe folder"}
+  tools/standing-setups.md: {icon: bookmark-multiple-outline, sub: "Assistants that remember your work"}
+  tools/skills.md: {icon: puzzle-outline, sub: "Give an agent a playbook"}
+  benchmarks.md: {icon: text-long, sub: "Language models, ranked"}
+  benchmarks/image.md: {icon: image-outline, sub: "Text to image, by human preference"}
+  benchmarks/video.md: {icon: movie-open-outline, sub: "Text to video, by human preference"}
+  # News & Events
+  news/medical-education.md: {icon: stethoscope, sub: "Research and news for educators"}
+  news/this-week.md: {icon: calendar-week, sub: "Everything from the last seven days"}
+  news/clinical-practice.md: {icon: hospital-building, sub: "Clinical care, deployment, regulation"}
+  news/general-ai.md: {icon: earth, sub: "Model releases and developments"}
+  news/videos.md: {icon: play-box-outline, sub: "Recent videos from curated channels"}
+  news/podcasts.md: {icon: podcast, sub: "Recent episodes from curated shows"}
+  news/archive/index.md: {icon: archive-outline, sub: "Weekly digests, newest first"}
+  conferences.md: {icon: calendar-star, sub: "Meetings and abstract deadlines"}
+  opportunities.md: {icon: trophy-outline, sub: "Hackathons, challenges, and programs"}
+  announcements/index.md: {icon: bullhorn-outline, sub: "Hub and committee news, and polls"}
+  # Governance
+  governance/policy.md: {icon: scale-balance, sub: "The one reference for how AI is used"}
+  governance/committee.md: {icon: account-group-outline, sub: "Who stewards the policy"}
+  governance/updates.md: {icon: clipboard-text-clock-outline, sub: "What the committee is working on"}
+  governance/review-process.md: {icon: clipboard-check-outline, sub: "How a tool gets its status"}
+  # About & Contact
+  about.md: {icon: information-outline, sub: "Contact, and how the site is run"}
+  accessibility.md: {icon: human, sub: "The accessibility statement"}
+  worked-examples/index.md: {icon: notebook-edit-outline, sub: "Real projects, and the method behind them"}
+  worked-examples/this-site.md: {icon: magnify-scan}
+  worked-examples/sharex-hdr.md: {icon: monitor-screenshot}
+  worked-examples/recommender.md: {icon: gamepad-variant-outline}
+  worked-examples/genome.md: {icon: dna}

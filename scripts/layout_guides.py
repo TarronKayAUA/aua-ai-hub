@@ -544,9 +544,9 @@ SCRIPT = r"""
     wire(a, a, text, "prompt", status,
          "Copied. Paste it into your assistant, then add what you have ready.");
   });
-  // layout.js copies the first row's Copy button into the desktop dock and
-  // the phone bar as a plain link; make those copies copy too.
-  document.querySelectorAll(".hub-dock a.md-button, .hub-bar a.md-button").forEach(function (a) {
+  // layout-nav.js docks the page's action (the first row's Copy) in the
+  // section navigator's pill as a plain link; make that copy copy too.
+  document.querySelectorAll("a.secnav__action").forEach(function (a) {
     var source = sources[a.getAttribute("href")];
     if (!source) return;
     a.setAttribute("aria-label", source.getAttribute("aria-label"));

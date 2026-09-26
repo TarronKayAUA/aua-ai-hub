@@ -1,0 +1,1133 @@
+/* =========================================================================
+   The section navigator (navigation design d2, 2026-09-26).
+   No page shows a sidebar (scripts/layout_frame.py). In their place:
+     .secnav     the floating pill (layout-nav.js), foot of the screen
+     .secmap     a tab drawn as groups of cards (scripts/layout_nav.py),
+                 in the pill's panel, at every page's foot, and full page
+                 on the Tools & Prompts landing
+     .secfoot    previous and next cards, then the map in a <details>
+   ========================================================================= */
+
+:root,
+[data-md-color-scheme="default"] {
+  --sn-bar: #10304d;
+  --sn-bar-line: rgba(255, 255, 255, 0.1);
+  --sn-bar-fg: #ffffff;
+  --sn-hot: #ffb74d;
+  --sn-hot-fg: #1d1a14;
+  --sn-panel: #ffffff;
+  --sn-panel-line: rgba(16, 48, 77, 0.12);
+  --sn-card: #f5f8fb;
+  --sn-card-hover: #e9f1f7;
+  --sn-muted: #5b6875;
+  --sn-shadow: 0 1.2rem 3rem rgba(8, 30, 50, 0.28), 0 0.2rem 0.6rem rgba(8, 30, 50, 0.12);
+  --sn-h0: #07618c;
+  --sn-h1: #0f7a6c;
+  --sn-h2: #9a5b00;
+  --sn-h3: #6a4c9c;
+  --sn-h4: #a8325a;
+  --sn-h5: #3f7a2a;
+}
+
+[data-md-color-scheme="slate"] {
+  --sn-bar: #2a3a55;
+  --sn-bar-line: rgba(255, 255, 255, 0.14);
+  --sn-panel: #252b3a;
+  --sn-panel-line: rgba(255, 255, 255, 0.1);
+  --sn-card: #2c3344;
+  --sn-card-hover: #34405a;
+  --sn-muted: #b3bdcc;
+  --sn-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.55), 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
+  --sn-h0: #6cb6db;
+  --sn-h1: #4cc2b0;
+  --sn-h2: #ffb74d;
+  --sn-h3: #b9a3e0;
+  --sn-h4: #f39abb;
+  --sn-h5: #a5d271;
+}
+
+/* --- Frame: no sidebars, and Material's footer pager gives way to the
+   section foot's cards on every page. ------------------------------------ */
+.md-footer .md-footer__inner {
+  display: none;
+}
+
+/* With no sidebars the reading column sits alone in the middle of the
+   screen; the breadcrumb lines up with it instead of the screen's edge. */
+@media screen and (min-width: 45em) {
+  body:is([data-page-type="task"], [data-page-type="lesson"], [data-page-type="reference"]) .md-path {
+    max-width: 33rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* --- Shelves: the chooser is a band across the top, not a column ---------
+   The Tool Directory and the Prompt Library kept a sticky filter column at
+   the left that read as the sidebar this design removes. From 60em the
+   shelf is one column: the chooser's questions sit side by side in a band
+   of chips above the results, which use the full width. Phones keep their
+   own folding chooser (layout-tools.css, layout-prompts.css). */
+@media screen and (min-width: 60em) {
+  .md-typeset .shelf {
+    display: block;
+  }
+  .md-typeset .shelf__filters {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    margin: 0 0 1.4rem;
+    padding: 0.8rem 1rem 0.9rem;
+    border: 1px solid var(--sn-panel-line);
+    border-radius: 0.9rem;
+    background: var(--sn-card);
+  }
+  .md-typeset .shelf__filters:empty,
+  .md-typeset .shelf__filters[hidden] {
+    display: none;
+  }
+  /* Tool Directory: the thirteen tasks as one wrapping row of chips. */
+  .md-typeset .tool-shelf .tc-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .md-typeset .tool-shelf .tc-chip label {
+    width: auto;
+    min-height: 2rem;
+    padding: 0.2rem 0.55rem 0.2rem 0.85rem;
+    border-radius: 1rem;
+  }
+  /* Prompt Library: "Who is it for?", "What do you want to do?" and the
+     saved list side by side, each a row of chips. */
+  .md-typeset .pl-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.6rem 2.2rem;
+  }
+  .md-typeset .pl-fieldset {
+    flex: 0 1 auto;
+    margin: 0;
+  }
+  .md-typeset .pl-fieldset:nth-of-type(2) {
+    flex: 1 1 26rem;
+  }
+  .md-typeset .pl-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .md-typeset .pl-option {
+    min-height: 2rem;
+    padding: 0.15rem 0.75rem 0.15rem 0.55rem;
+    border: 1px solid var(--sn-panel-line);
+    border-radius: 1rem;
+    background: var(--md-default-bg-color);
+    font-size: 0.68rem;
+  }
+  .md-typeset .pl-option__label {
+    flex: 0 1 auto;
+  }
+  .md-typeset .pl-option.is-checked {
+    border-color: var(--md-typeset-a-color);
+    box-shadow: inset 0 0 0 1px var(--md-typeset-a-color);
+  }
+}
+
+/* =========================================================================
+   The pill
+   ========================================================================= */
+.secnav {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  z-index: 6;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+.secnav__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  max-width: calc(100vw - 2rem);
+  padding: 0.25rem;
+  border-radius: 1.6rem;
+  background: var(--sn-bar);
+  color: var(--sn-bar-fg);
+  box-shadow: var(--sn-shadow), inset 0 0 0 1px var(--sn-bar-line);
+}
+
+.secnav__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+  min-height: 2.5rem;
+  margin: 0;
+  padding: 0.2rem 0.75rem 0.2rem 0.25rem;
+  border: 0;
+  border-radius: 1.4rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.secnav__btn:hover,
+.secnav__btn[aria-expanded="true"] {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.secnav__btn + .secnav__btn {
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.secnav__btn + .secnav__btn::before {
+  content: "";
+  position: absolute;
+  left: -0.1rem;
+  top: 0.55rem;
+  bottom: 0.55rem;
+  width: 1px;
+  background: var(--sn-bar-line);
+}
+
+.secnav__icon,
+.secnav__tocicon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--sn-hot);
+}
+
+.secnav__icon svg,
+.secnav__tocicon svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: var(--sn-hot-fg);
+}
+
+.secnav__tocicon {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.secnav__tocicon svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: currentColor;
+}
+
+.secnav__label {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.secnav__section {
+  font-weight: 700;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.secnav__pos {
+  font-size: 0.6rem;
+  color: rgba(255, 255, 255, 0.82);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.secnav__now {
+  max-width: 11rem;
+}
+
+.secnav__chev {
+  flex: 0 0 auto;
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  opacity: 0.8;
+  transition: transform 0.15s ease;
+}
+
+.secnav__btn[aria-expanded="true"] .secnav__chev {
+  transform: rotate(180deg);
+}
+
+/* The section's shape: one tick per page, a gap between groups, the page
+   you are on tall and amber. */
+.sectrack {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28rem;
+  flex: 0 0 auto;
+}
+
+.sectrack__g {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.sectrack i {
+  display: block;
+  width: 4px;
+  height: 0.6rem;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.sectrack__g.is-here i {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.sectrack i.is-current {
+  height: 0.95rem;
+  background: var(--sn-hot);
+}
+
+/* The docked action: the page's one primary action, amber on the pill so
+   it reads as the thing to do next. */
+.secnav__action {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.3rem;
+  max-width: 16rem;
+  margin-left: 0.2rem;
+  padding: 0 1rem;
+  border-radius: 1.2rem;
+  background: var(--sn-hot);
+  color: var(--sn-hot-fg);
+  font-weight: 700;
+  font-size: 0.68rem;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.secnav__action[hidden] {
+  display: none;
+}
+
+/* A prompt page's Copy prompt is a button, not a link (layout-prompts.js). */
+button.secnav__action {
+  border: 0;
+  font-family: inherit;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.secnav__action svg,
+.secnav__action .pl-icon {
+  flex: 0 0 auto;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.35rem;
+  fill: currentColor;
+}
+
+.secnav__action:hover {
+  background: #ffc978;
+  color: var(--sn-hot-fg);
+}
+
+.secnav :focus-visible {
+  outline: 2px solid var(--sn-hot);
+  outline-offset: 2px;
+}
+
+/* --- the panels ------------------------------------------------------------- */
+.secnav__panel {
+  position: fixed;
+  left: 1rem;
+  bottom: 4.4rem;
+  width: min(62rem, calc(100vw - 2rem));
+  max-height: calc(100vh - 10.6rem);
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 0.9rem 1rem 1.1rem;
+  border: 1px solid var(--sn-panel-line);
+  border-radius: 1rem;
+  background: var(--sn-panel);
+  color: var(--md-default-fg-color);
+  box-shadow: var(--sn-shadow);
+}
+
+.secnav__panel[hidden] {
+  display: none;
+}
+
+.secnav__panel:focus {
+  outline: none;
+}
+
+.secnav__panel--toc {
+  width: min(40rem, calc(100vw - 2rem));
+}
+
+.secnav__phead {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0 0 0.9rem;
+}
+
+.secnav__picon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(135deg, #07618c, #1b4165);
+}
+
+.secnav__picon svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: #ffffff;
+}
+
+.secnav__ptext {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin-right: auto;
+}
+
+.secnav__ptitle {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.secnav__pmeta {
+  font-size: 0.62rem;
+  color: var(--sn-muted);
+}
+
+.secnav__overview {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0 0.8rem;
+  border: 1px solid currentColor;
+  border-radius: 1rem;
+  color: var(--md-typeset-a-color);
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.secnav__overview:hover {
+  background: var(--sn-card-hover);
+}
+
+.secnav__close {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--sn-card);
+  color: var(--md-default-fg-color);
+  cursor: pointer;
+}
+
+.secnav__close svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
+
+.secnav__close:hover {
+  background: var(--sn-card-hover);
+}
+
+.secnav__panel :focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+/* On this page: the headings as numbered chips that wrap, so a page's
+   whole outline is in view at once. */
+.secnav__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.secnav__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  min-height: 2rem;
+  margin: 0;
+  padding: 0.2rem 0.8rem 0.2rem 0.3rem;
+  border: 1px solid var(--sn-panel-line);
+  border-radius: 1rem;
+  background: var(--sn-card);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secnav__chip:hover {
+  background: var(--sn-card-hover);
+  color: var(--md-default-fg-color);
+}
+
+.secnav__chipn {
+  display: grid;
+  place-items: center;
+  min-width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: var(--sn-panel);
+  color: var(--sn-muted);
+  font-size: 0.58rem;
+  font-weight: 700;
+}
+
+.secnav__chip[aria-current] {
+  border-color: var(--hub-button-bg);
+  background: var(--hub-button-bg);
+  color: #ffffff;
+}
+
+.secnav__chip[aria-current] .secnav__chipn {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.secnav__chip--top {
+  padding-left: 0.6rem;
+  color: var(--sn-muted);
+}
+
+.secnav__chip--top svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: currentColor;
+}
+
+.secnav__veil {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background: rgba(6, 20, 34, 0.18);
+}
+
+.secnav__veil[hidden] {
+  display: none;
+}
+
+/* The page's last lines and the footer stay clear of the pill. */
+body.has-secnav .md-footer-meta {
+  padding-bottom: 4.6rem;
+}
+
+body.has-secnav {
+  scroll-padding-bottom: 5rem;
+}
+
+body.has-secnav .md-top {
+  bottom: auto;
+}
+
+/* =========================================================================
+   The section map (panel, page foot, and the landing)
+   ========================================================================= */
+.secmap {
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
+.secmap .secmap__groups,
+.md-typeset .secmap .secmap__groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.secmap .secmap__group,
+.md-typeset .secmap .secmap__group {
+  --hue: var(--sn-h0);
+  flex: var(--n) 1 11rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0.6rem 0 0;
+  border-top: 3px solid var(--hue);
+}
+
+.secmap__group--h1 { --hue: var(--sn-h1) !important; }
+.secmap__group--h2 { --hue: var(--sn-h2) !important; }
+.secmap__group--h3 { --hue: var(--sn-h3) !important; }
+.secmap__group--h4 { --hue: var(--sn-h4) !important; }
+.secmap__group--h5 { --hue: var(--sn-h5) !important; }
+
+.secmap .secmap__group--wide,
+.md-typeset .secmap .secmap__group--wide {
+  flex-basis: 100%;
+}
+
+.secmap .secmap__head,
+.md-typeset .secmap .secmap__head {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.5rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--md-default-fg-color);
+}
+
+.secmap__gicon svg {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  fill: var(--hue);
+}
+
+.secmap__gname {
+  min-width: 0;
+}
+
+.secmap__count {
+  margin-left: auto;
+  min-width: 1.3rem;
+  padding: 0 0.35rem;
+  border-radius: 0.7rem;
+  background: var(--sn-card);
+  color: var(--sn-muted);
+  font-size: 0.58rem;
+  text-align: center;
+}
+
+.secmap .secmap__cards,
+.md-typeset .secmap .secmap__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset .secmap .secmap__cards > li,
+.md-typeset .secmap .secmap__groups > li {
+  margin: 0;
+}
+
+.secmap a.secmap__card,
+.md-typeset .secmap a.secmap__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 100%;
+  min-height: 2.6rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid transparent;
+  border-radius: 0.55rem;
+  background: var(--sn-card);
+  text-decoration: none;
+  transition: background-color 0.12s ease, transform 0.12s ease;
+}
+
+.secmap a.secmap__card:hover,
+.md-typeset .secmap a.secmap__card:hover {
+  background: var(--sn-card-hover);
+  transform: translateY(-1px);
+}
+
+.secmap__icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.45rem;
+  background: color-mix(in srgb, var(--hue) 16%, transparent);
+}
+
+.secmap__icon svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: var(--hue);
+}
+
+.secmap__num {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--hue);
+}
+
+.secmap__words {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.secmap__title {
+  font-weight: 650;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color);
+}
+
+.secmap__sub {
+  margin-top: 0.1rem;
+  font-size: 0.6rem;
+  color: var(--sn-muted);
+}
+
+.secmap__here {
+  margin-top: 0.15rem;
+  font-size: 0.56rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* The page you are on: filled in the call-to-action colour. */
+.secmap a.secmap__card.is-current,
+.md-typeset .secmap a.secmap__card.is-current {
+  background: var(--hub-button-bg);
+  border-color: var(--hub-button-bg);
+  box-shadow: 0 0.3rem 0.9rem rgba(7, 97, 140, 0.35);
+}
+
+.secmap a.secmap__card.is-current :is(.secmap__title, .secmap__sub, .secmap__here) {
+  color: #ffffff;
+}
+
+.secmap a.secmap__card.is-current .secmap__icon {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.secmap a.secmap__card.is-current .secmap__icon svg {
+  fill: #ffffff;
+}
+
+.secmap a.secmap__card.is-current .secmap__num {
+  color: #ffffff;
+}
+
+.secmap a.secmap__card:focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+/* A route (the seven modules): the stops joined by a line. */
+.secmap__group--route .secmap__cards {
+  position: relative;
+}
+
+.secmap__group--route .secmap__icon {
+  border-radius: 50%;
+  background: var(--sn-panel);
+  box-shadow: inset 0 0 0 2px var(--hue);
+}
+
+@media screen and (min-width: 45em) {
+  .secmap__group--route .secmap__cards::before {
+    content: "";
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    top: 1.3rem;
+    height: 2px;
+    background: color-mix(in srgb, var(--hue) 45%, transparent);
+  }
+  .secmap__group--route .secmap__cards {
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  }
+  .secmap__group--route a.secmap__card {
+    flex-direction: column;
+    align-items: flex-start;
+    background: transparent;
+    padding-top: 0.3rem;
+  }
+  .secmap__group--route a.secmap__card:hover {
+    background: var(--sn-card);
+  }
+  .secmap__group--route .secmap__icon {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* =========================================================================
+   The section foot: previous and next, then the whole section
+   ========================================================================= */
+.md-typeset .secfoot {
+  margin: 3rem 0 0;
+}
+
+.md-typeset .secfoot__pn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8rem;
+}
+
+.md-typeset a.secfoot__card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-height: 3.6rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--sn-panel-line);
+  border-radius: 0.8rem;
+  background: var(--sn-card);
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  transition: background-color 0.12s ease, border-color 0.12s ease;
+}
+
+.md-typeset a.secfoot__card:hover {
+  border-color: var(--hub-button-bg);
+  background: var(--sn-card-hover);
+}
+
+.md-typeset a.secfoot__card--next {
+  grid-column: 2;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.secfoot__arrow {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--hub-button-bg);
+}
+
+.secfoot__arrow svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: #ffffff;
+}
+
+.secfoot__words {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.secfoot__dir {
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sn-muted);
+}
+
+.secfoot__title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--md-typeset-a-color);
+}
+
+.secfoot__sub {
+  font-size: 0.62rem;
+  color: var(--sn-muted);
+}
+
+.md-typeset details.secfoot__all {
+  margin: 0.9rem 0 0;
+  border: 1px solid var(--sn-panel-line);
+  border-radius: 0.8rem;
+  background: none;
+  box-shadow: none;
+  font-size: 0.7rem;
+}
+
+.md-typeset details.secfoot__all > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.6rem;
+  padding: 0.4rem 2.2rem 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  background: none;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+  cursor: pointer;
+}
+
+.md-typeset details.secfoot__all > summary::before {
+  display: none;
+}
+
+.md-typeset details.secfoot__all > summary:hover {
+  background: var(--sn-card);
+}
+
+.secfoot__sicon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--sn-bar);
+}
+
+.secfoot__sicon svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: var(--sn-hot);
+}
+
+.secfoot__stext {
+  margin-right: auto;
+}
+
+.secfoot .sectrack i {
+  background: var(--sn-panel-line);
+}
+
+.secfoot .sectrack__g.is-here i {
+  background: color-mix(in srgb, var(--hub-button-bg) 45%, transparent);
+}
+
+.secfoot .sectrack i.is-current {
+  background: var(--hub-button-bg);
+}
+
+.md-typeset details.secfoot__all > .secfoot__body {
+  margin: 0;
+  padding: 0.4rem 0.9rem 1rem;
+}
+
+.md-typeset .secfoot__overview {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  margin: 0 0 0.8rem;
+  font-weight: 700;
+}
+
+/* On a reading page the foot's map may be wider than the 33rem column:
+   it spreads across the screen so the section still reads as columns. */
+@media screen and (min-width: 60em) {
+  body:is([data-page-type="task"], [data-page-type="lesson"], [data-page-type="reference"])
+    .md-typeset details.secfoot__all[open] {
+    width: min(62rem, calc(100vw - 4rem));
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================================================================
+   The Tools & Prompts landing: the map, full page
+   ========================================================================= */
+.md-content__inner:has(.secmap--full) > h1 {
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+.md-typeset .tp-lede {
+  max-width: 40rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.md-typeset .tp-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.8rem;
+  margin: 0.2rem 0 1.8rem;
+  color: var(--sn-muted);
+  font-size: 0.7rem;
+}
+
+.md-typeset .tp-stats strong {
+  margin-right: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .secmap--full .secmap__groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  gap: 1rem;
+}
+
+.md-typeset .secmap--full .secmap__group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0.9rem;
+  border: 1px solid var(--sn-panel-line);
+  border-top: 0;
+  border-radius: 0.9rem;
+  background: var(--sn-panel);
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.8rem rgba(8, 30, 50, 0.06);
+}
+
+.md-typeset .secmap--full .secmap__head {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 1rem 1rem 0.3rem;
+  border-top: 5px solid var(--hue);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--hue) 13%, transparent), transparent);
+  font-size: 0.9rem;
+}
+
+.md-typeset .secmap--full .secmap__gicon {
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 0.8rem;
+  background: var(--hue);
+}
+
+.md-typeset .secmap--full .secmap__gicon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .secmap--full .secmap__gicon svg {
+  fill: #14202e;
+}
+
+.md-typeset .secmap--full .secmap__count {
+  display: none;
+}
+
+.md-typeset .secmap--full .secmap__blurb {
+  margin: 0 0 0.8rem;
+  padding: 0 1rem;
+  font-size: 0.64rem;
+  line-height: 1.45;
+  color: var(--sn-muted);
+}
+
+.md-typeset .secmap--full .secmap__cards {
+  grid-template-columns: 1fr;
+  padding: 0 0.7rem;
+}
+
+.md-typeset .secmap--full a.secmap__card {
+  min-height: 3rem;
+}
+
+/* =========================================================================
+   Phones and small tablets: the pill becomes the dock along the foot of
+   the screen (one row), and the panels become sheets above it.
+   ========================================================================= */
+@media screen and (max-width: 59.9375em) {
+  .secnav {
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .secnav__bar {
+    max-width: none;
+    padding: 0.3rem 0.4rem calc(0.3rem + env(safe-area-inset-bottom, 0px));
+    border-radius: 0.9rem 0.9rem 0 0;
+  }
+  .secnav__btn--map {
+    flex: 1 1 auto;
+  }
+  .secnav__btn--toc .secnav__label,
+  .secnav__btn--toc .secnav__chev {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .secnav__btn--toc {
+    flex: 0 0 auto;
+    padding: 0.2rem 0.45rem;
+  }
+  .secnav__tocicon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .secnav__action {
+    flex: 0 1 auto;
+    max-width: 42%;
+    padding: 0 0.8rem;
+  }
+  .secnav__panel,
+  .secnav__panel--toc {
+    left: 0;
+    right: 0;
+    bottom: calc(3.1rem + env(safe-area-inset-bottom, 0px));
+    width: auto;
+    max-height: 72vh;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .secnav__overview {
+    display: none;
+  }
+  .secnav__veil {
+    background: rgba(6, 20, 34, 0.45);
+  }
+  body.has-secnav .md-footer-meta {
+    padding-bottom: 3.6rem;
+  }
+  .md-typeset .secfoot__pn {
+    grid-template-columns: 1fr;
+  }
+  .md-typeset a.secfoot__card--next {
+    grid-column: 1;
+  }
+}
+
+@media screen and (max-width: 29.9375em) {
+  .secnav .sectrack {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .secnav__chev,
+  .secmap a.secmap__card,
+  .md-typeset a.secfoot__card {
+    transition: none;
+  }
+  .secmap a.secmap__card:hover,
+  .md-typeset .secmap a.secmap__card:hover {
+    transform: none;
+  }
+}

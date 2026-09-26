@@ -358,20 +358,21 @@
       }
     }
 
-    /* Prompt page: Copy prompt joins the docked action (wide screens) and
-       the phone bar, which layout.js has built by now. */
+    /* Prompt page: Copy prompt joins the section navigator's pill
+       (layout-nav.js, which has built it by now), so it is in reach
+       however far down the page you are. */
     var first = document.querySelector(".pp-panel button.pp-copy");
     if (first) {
-      [".hub-bar", ".hub-dock"].forEach(function (selector) {
+      [".secnav__bar"].forEach(function (selector) {
         var holder = document.querySelector(selector);
         if (!holder) return;
         var button = document.createElement("button");
         button.type = "button";
-        button.className = "md-button md-button--primary pp-copy";
+        button.className = "secnav__action pp-copy";
         button.setAttribute("data-copy-from", first.getAttribute("data-copy-from"));
         button.setAttribute("data-title", first.getAttribute("data-title") || "");
         button.textContent = "Copy prompt";
-        holder.insertBefore(button, holder.firstChild);
+        holder.appendChild(button);
         setupCopy(button);
       });
     }
