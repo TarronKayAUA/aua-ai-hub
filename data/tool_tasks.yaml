@@ -26,8 +26,29 @@
 #   group    "task" (first row) or "data" (second row, "Or by data and
 #            licensing"); purely visual, one choice at a time either way
 #
+# DRAFT FIELD, AWAITING OWNER SIGN-OFF (layout redesign, 2026-09-25):
+#   start_with  the "Where to start" note shown above a task's results, a
+#               decision aid so a newcomer is not left choosing among ten
+#               similar cards. Optional; a task without it shows no note.
+#               A list of one or two items, each:
+#                 need   a short lead-in naming the job, e.g. "Improve a
+#                        deck you already have"
+#                 tools  one to three tool names, exactly as in
+#                        data/tools.yaml; each must already be in this task
+#                 why    one sentence of markdown saying why it is a
+#                        sensible first pick
+#               The renderer adds each tool's cost or access wording from
+#               data/tools.yaml, and labels the note as suggestions, not
+#               endorsements, apart from the status tags. Rule for writing
+#               one: every reason restates something the tool's own blurb
+#               or note, or a guide on this site, already says (never a
+#               quality ranking), and never steer toward a tool whose note
+#               carries a data-handling caution. The drafts below follow
+#               it; the comment above each names its source.
+#
 # The render hook refuses to build on an unknown category, status or task
-# id, a task with no tools, or a tool that belongs to no task.
+# id, a task with no tools, or a tool that belongs to no task, and on a
+# start_with tool that is not in its task.
 
 - id: ask
   label: Ask and draft
@@ -38,6 +59,17 @@
     General chat assistants. [Choosing Your Interface](interfaces.md)
     explains which kind of tool fits which work, and the [prompt
     library](../prompts/index.md) holds reusable templates.
+  # DRAFT for owner sign-off. Sources: Perplexity's blurb; Projects in
+  # Claude and ChatGPT per basics/better-answers.md and standing-setups.md.
+  start_with:
+    - need: Answers you can check against sources
+      tools: [Perplexity]
+      why: It answers with citations to live web sources.
+    - need: A standing setup for a course or a role
+      tools: [Claude, ChatGPT]
+      why: >-
+        Both keep your instructions and files in a Project, which
+        [Standing Setups](standing-setups.md) walks through.
 
 - id: research
   label: Research and literature
@@ -49,6 +81,17 @@
     project, starting with Scopus with AI, licensed through the AUA
     Library. The [Reviewing the Literature](../playbooks/literature-reviews.md)
     playbook walks one review end to end.
+  # DRAFT for owner sign-off. Source: tools/research.md ("Scopus first";
+  # Elicit for screening and extraction).
+  start_with:
+    - need: Searching and mapping a topic
+      tools: [Scopus with AI]
+      why: >-
+        [AI for Research](research.md) starts here for searching,
+        orientation, and citation chasing.
+    - need: Screening and extracting papers
+      tools: [Elicit]
+      why: It pulls study details into tables you can check column by column.
 
 - id: study
   label: Study for exams
@@ -59,6 +102,17 @@
     The [students page](../students.md) routes the study workflow, and
     [Standing Setups](standing-setups.md) builds a question tutor from your
     own lecture notes.
+  # DRAFT for owner sign-off. Sources: students.md ("One notebook per
+  # course"; "Build practice from your own slides and notes instead; your
+  # in-house exams are written from them"); the three tools' blurbs (each
+  # builds study material from what you upload).
+  start_with:
+    - need: One notebook per course
+      tools: [Gemini Notebook]
+      why: It answers from the slides and notes you upload, with citations.
+    - need: Practice from your own slides and notes
+      tools: [Neural Consult, StudyFetch, Thea]
+      why: Each builds questions or flashcards from what you upload.
 
 - id: slides
   label: Make slides or posters
@@ -69,6 +123,15 @@
     To improve an existing PowerPoint deck, start with tools that work on
     the .pptx file itself. In Claude, four document [skills](skills.md)
     also build decks and documents directly.
+  # DRAFT for owner sign-off. Source: the Presentations and Design intro
+  # in scripts/render_data.py (CATEGORY_INTROS).
+  start_with:
+    - need: Improve a deck you already have
+      tools: [PowerPoint Design Suggestions]
+      why: It works inside the .pptx file itself, so nothing is rebuilt.
+    - need: Restyle a deck and keep it in PowerPoint
+      tools: [Canva, Claude Design]
+      why: Both import a PowerPoint deck and export the result back to one.
 
 - id: writing
   label: Polish writing
@@ -77,6 +140,14 @@
   group: task
   guide: >-
     Grammar, clarity, and language feedback. For feedback on student work, the [Feedback on Student Writing](../playbooks/writing-feedback.md) playbook shows a method that keeps the student's identity out of the tool and the judgment with you.
+  # DRAFT for owner sign-off. Sources: the three tools' blurbs.
+  start_with:
+    - need: Everyday writing
+      tools: [Grammarly]
+      why: It checks grammar, clarity, and tone in documents, email, and browser text fields.
+    - need: Research manuscripts
+      tools: [Writefull, Paperpal]
+      why: Both give language feedback tuned to scholarly writing.
 
 - id: transcribe
   label: Transcribe audio
@@ -103,6 +174,13 @@
   group: task
   guide: >-
     Generated anatomy looks right and is often wrong. [AI-Generated Images in Teaching](../playbooks/ai-images.md) shows how to check a figure before it goes in front of a class.
+  # DRAFT for owner sign-off. Sources: the two tools' blurbs.
+  start_with:
+    - need: Diagrams and labeled figures
+      tools: [Napkin AI, BioRender]
+      why: >-
+        Napkin AI turns text into editable diagrams; BioRender builds
+        figures from a library of biomedical icons.
 
 - id: video
   label: Make video
@@ -111,6 +189,11 @@
   group: task
   guide: >-
     Short clips from text or images, and presenter-style avatar videos from a script.
+  # DRAFT for owner sign-off. Source: Synthesia's blurb.
+  start_with:
+    - need: A presenter video from a script
+      tools: [Synthesia]
+      why: It turns a script or document into a narrated presenter video without filming.
 
 - id: audio
   label: Make audio
@@ -119,6 +202,14 @@
   group: task
   guide: >-
     Music, narration, and cleanup of recorded speech.
+  # DRAFT for owner sign-off. Sources: the two tools' blurbs.
+  start_with:
+    - need: Narration for course material
+      tools: [ElevenLabs]
+      why: It reads written material aloud in a generated voice.
+    - need: Cleaning up a recording
+      tools: [Adobe Podcast]
+      why: Its Enhance Speech filter removes background noise and echo from voice recordings.
 
 - id: agents
   label: Hand off a task
@@ -129,6 +220,14 @@
     [AI Agents](agents.md) is the field guide, and [Your First Agent
     Session](first-session.md) runs one in 20 minutes on a folder that
     cannot be hurt.
+  # DRAFT for owner sign-off. Source: tools/agents.md ("If you have never
+  # used an agent, start with ChatGPT Work or Cowork").
+  start_with:
+    - need: A first agent task
+      tools: [ChatGPT Work, Cowork]
+      why: >-
+        [AI Agents](agents.md) suggests either one, on a task whose result
+        you can fully check.
 
 - id: local
   label: Keep data on my computer
@@ -137,6 +236,15 @@
   group: data
   guide: >-
     These run on your own machine, so what you type or record stays there rather than on a vendor's servers. [Running Models Locally](local.md) is the walkthrough and [Hardware for Local AI](hardware.md) sizes the machine. Patient and student records remain covered by the privacy section of the [AI Responsible Use Policy](../governance/policy.md#responsible-use) wherever they are processed.
+  # DRAFT for owner sign-off. Sources: tools/local.md ("LM Studio is the
+  # simplest start"); Whisper's note.
+  start_with:
+    - need: Chat with no command line
+      tools: [LM Studio]
+      why: '[Running Models Locally](local.md) calls it the simplest start.'
+    - need: Transcribing recordings
+      tools: [Whisper]
+      why: The audio never leaves your computer.
 
 - id: licensed
   label: See what AUA licenses

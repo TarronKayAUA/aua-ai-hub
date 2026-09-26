@@ -1,1 +1,660 @@
-/* Layout redesign (2026-09-25): styles for the tools page type package. */
+/* =========================================================================
+   Tool Directory as a shelf (layout redesign, 2026-09-25; plan change L15).
+   Built on the shared two-pane skeleton in layout.css (.shelf,
+   .shelf__filters, .shelf__results, .shelf__summary). Everything here is
+   scoped to .tool-shelf, the directory's wrapper in docs/tools/index.md,
+   because the Prompt Library reuses the chooser's .tool-chooser and .tc-*
+   classes from extra.css and must not change with this page.
+   Colours are Material's scheme tokens or the hub tokens in layout.css,
+   with explicit slate values where a status colour needs one.
+   ========================================================================= */
+
+.md-typeset .tool-shelf {
+  --tool-rule: var(--hub-row-rule);
+  --tool-panel: var(--md-code-bg-color);
+  margin-top: 1.2rem;
+}
+
+/* The head: title, one sentence, then the chooser. Material's 40px gap
+   under the title is halved here (plan change L2 asks for it site-wide on
+   phones; this page needs it at every width to reach its results). */
+.md-typeset h1:has(~ .tool-shelf) {
+  margin-bottom: 0.8rem;
+}
+
+.md-typeset h1:has(~ .tool-shelf) + p {
+  max-width: 42rem;
+  margin-top: 0;
+}
+
+/* Visually hidden, still read (labels that give a Tab stop its context). */
+.md-typeset .tool-sr,
+.md-typeset .tool-shelf.is-enhanced .tool-filters > h2 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Without JavaScript the filter column holds the task index under a
+   small heading. */
+.md-typeset .tool-filters > h2 {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.md-typeset .tool-filters > h2 .headerlink {
+  display: none;
+}
+
+.md-typeset .tool-shelf .tool-task-index,
+.md-typeset .tool-shelf .tool-task-index .tt-item p {
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.md-typeset .tool-shelf .tool-task-index .tt-item {
+  margin: 0 0 1rem;
+}
+
+.md-typeset .tool-shelf .tool-task-index .tt-start ul {
+  margin: 0.1rem 0 0.4rem;
+}
+
+[dir] .md-typeset .tool-shelf .tool-task-index .tt-start ul li {
+  margin: 0 0 0.2rem 1em;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .tool-shelf {
+    grid-template-columns: minmax(13rem, 15rem) minmax(0, 1fr);
+    gap: 2rem;
+  }
+  /* layout.css shows .shelf__summary unconditionally after hiding it here,
+     so the phone summary is hidden again for this page from 60em. */
+  .md-typeset .tool-shelf .shelf__summary {
+    display: none;
+  }
+  .md-typeset .tool-shelf .shelf__filters {
+    /* Room for the chips' focus rings inside the scrolling column. */
+    padding: 2px 4px 4px 2px;
+  }
+}
+
+.md-typeset .tool-shelf .shelf__summary[hidden],
+.md-typeset .tool-shelf .tool-count[hidden] {
+  display: none;
+}
+
+/* --- The chooser panel ----------------------------------------------------- */
+.md-typeset .tool-shelf .tool-chooser {
+  margin: 0;
+  padding: 0.8rem 0.8rem 0.9rem;
+  border: 1px solid var(--tool-rule);
+  border-radius: 0.5rem;
+  background: var(--tool-panel);
+}
+
+.md-typeset .tool-shelf .tc-legend {
+  margin-bottom: 0.55rem;
+  font-size: 0.8rem;
+}
+
+.md-typeset .tool-shelf .tc-subhead {
+  margin: 0.8rem 0 0.45rem;
+}
+
+/* Chips as rows: label at the left, count at the right, 44px tall.
+   Outlined when free, filled when chosen (filled means pressable and
+   pressed; the status tags on cards are never filled). */
+.md-typeset .tool-shelf .tc-chips {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(7.4rem, 100%), 1fr));
+  gap: 0.35rem;
+}
+
+.md-typeset .tool-shelf .tc-chip {
+  display: flex;
+}
+
+.md-typeset .tool-shelf .tc-chip label {
+  width: 100%;
+  justify-content: space-between;
+  min-height: 2.2rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.7rem;
+  border-radius: 0.45rem;
+  font-size: 0.72rem;
+  line-height: 1.25;
+}
+
+.md-typeset .tool-shelf .tc-label {
+  flex: 1 1 auto;
+  text-align: left;
+}
+
+.md-typeset .tool-shelf .tc-count {
+  margin-left: 0.3rem;
+  background: none;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .tool-shelf .tc-chip input:checked + label .tc-count {
+  background: none;
+  color: #ffffff;
+}
+
+.md-typeset .tool-shelf .tc-chip input:checked + label::before {
+  margin-right: -0.1rem;
+}
+
+.md-typeset .tool-shelf .tc-chip input:focus-visible + label {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+/* In the sticky column the thirteen rows must fit a 900px-tall window
+   without scrolling inside the column, so they are 41px rather than 44px
+   there (still well above the 24px WCAG 2.2 minimum, for a pointer). */
+@media screen and (min-width: 60em) {
+  .md-typeset .tool-shelf .tc-chips {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+  .md-typeset .tool-shelf .tc-chip label {
+    min-height: 2.05rem;
+  }
+}
+
+/* --- Phone summary: the chooser folded to one line ------------------------
+   "Study for exams, 11 tools [Change task]". The count never splits from
+   its number, the label wraps by words, and at large text sizes the button
+   drops to its own line rather than squeezing the words. */
+.md-typeset .tool-shelf .tool-summary {
+  flex-wrap: wrap;
+  gap: 0.4rem 0.8rem;
+  padding: 0.45rem 0.5rem 0.45rem 0.8rem;
+}
+
+.md-typeset .tool-summary__text {
+  flex: 1 1 9rem;
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.md-typeset .tool-summary__count {
+  white-space: nowrap;
+}
+
+.md-typeset .tool-summary__change,
+.md-typeset .tool-showall {
+  flex: none;
+  min-height: 2.2rem;
+  padding: 0 0.8rem;
+  border: 1.5px solid var(--md-typeset-a-color);
+  border-radius: 0.35rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.md-typeset .tool-summary__change:hover,
+.md-typeset .tool-showall:hover {
+  background: var(--hub-quiet-bg);
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-typeset .tool-shelf.is-folded .tool-chooser,
+  .md-typeset .tool-shelf.is-folded .tool-count {
+    display: none;
+  }
+  /* The folded summary names the task; its heading stays for screen
+     readers and heading navigation. */
+  .md-typeset .tool-shelf.is-folded .tool-set__heading {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .md-typeset .tool-shelf .tool-results {
+    margin-top: 0.9rem;
+  }
+}
+
+/* --- Results pane: count, status line, the chosen set ------------------- */
+.md-typeset .tool-count {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.9rem;
+  margin: 0 0 0.35rem;
+}
+
+.md-typeset .tool-count__text {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.md-typeset .tool-showall {
+  min-height: 1.8rem;
+  padding: 0 0.7rem;
+}
+
+.md-typeset .tool-statusline {
+  margin: 0 0 1rem;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .tool-set {
+  margin: 0 0 1.4rem;
+}
+
+.md-typeset .tool-set__heading,
+[data-md-color-scheme="slate"] .md-typeset .tool-set__heading {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+/* "Where to start": editorial, so it looks nothing like a status. A plain
+   ruled note in the page's own colours, labelled as suggestions. */
+.md-typeset .tool-start {
+  margin: 0 0 0.9rem;
+  padding: 0.55rem 0.8rem 0.6rem;
+  border: 1px solid var(--tool-rule);
+  border-radius: 0.5rem;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.md-typeset .tool-start[hidden] {
+  display: none;
+}
+
+.md-typeset .tool-start .tt-start-label {
+  margin: 0 0 0.25rem;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .tool-start .tt-start-label strong {
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .tool-start ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+  gap: 0.3rem 1.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .tool-start ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.md-typeset .tool-set__standing {
+  margin: 0 0 0.6rem;
+  font-size: 0.72rem;
+  font-style: italic;
+}
+
+.md-typeset .tool-set__guide {
+  margin: 0.4rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.md-typeset .tool-set__foot {
+  margin: 0.4rem 0 0;
+  font-size: 0.68rem;
+}
+
+.md-typeset .tool-set .tc-also-heading {
+  margin: 1rem 0 0;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.md-typeset .tool-crosslink {
+  margin: 1.2rem 0 0;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- Category rows ----------------------------------------------------------
+   Each category is one row: the real heading floats at the left of its
+   disclosure, whose summary carries the count at the right and spans the
+   whole row, so a click anywhere on the row opens it. The heading ignores
+   the pointer so the click reaches the summary beneath it. */
+.md-typeset .tool-browse {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem 1rem;
+  margin: 1.4rem 0 0.3rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.md-typeset .tool-openall {
+  min-height: 1.6rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+.md-typeset .tool-cat {
+  display: flow-root;
+  position: relative;
+  border-top: 1px solid var(--tool-rule);
+}
+
+.md-typeset .tool-cat:has(+ :not(.tool-cat)),
+.md-typeset .tool-cat:last-child {
+  border-bottom: 1px solid var(--tool-rule);
+}
+
+.md-typeset .tool-cat > h2,
+.md-typeset .tool-cat > h3,
+[data-md-color-scheme="slate"] .md-typeset .tool-cat > h2,
+[data-md-color-scheme="slate"] .md-typeset .tool-cat > h3 {
+  float: left;
+  position: relative;
+  z-index: 1;
+  max-width: calc(100% - 9rem);
+  margin: 0;
+  padding: 0.7rem 0 0.7rem 0.1rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+  letter-spacing: 0;
+  pointer-events: none;
+}
+
+.md-typeset .tool-cat > h2 .headerlink,
+.md-typeset .tool-cat > h3 .headerlink,
+.md-typeset .tool-card-title .headerlink {
+  display: none;
+}
+
+.md-typeset .tool-cat > details.tool-cat__list {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  font-size: 0.76rem;
+}
+
+.md-typeset .tool-cat > details.tool-cat__list > summary {
+  display: block;
+  overflow: visible;
+  min-height: 0;
+  margin: 0;
+  padding: 0.7rem 2rem 0.7rem 0;
+  border-radius: 0;
+  background: none;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.1rem;
+  text-align: right;
+}
+
+.md-typeset .tool-cat > details.tool-cat__list > summary::before {
+  display: none;
+}
+
+.md-typeset .tool-cat > details.tool-cat__list > summary::after {
+  top: 50%;
+  right: 0.3rem;
+  margin-top: -0.5rem;
+  background-color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .tool-cat > details.tool-cat__list > summary:hover {
+  background: var(--hub-quiet-bg);
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .tool-cat > details.tool-cat__list > summary:focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: -2px;
+}
+
+.md-typeset .tool-cat > details.tool-cat__list > :not(summary) {
+  clear: both;
+}
+
+.md-typeset .tool-cat > details.tool-cat__list[open] {
+  padding-bottom: 0.6rem;
+}
+
+.md-typeset .tool-cat .tool-cat__desc {
+  margin: 0.1rem 0 0.2rem;
+  font-size: 0.76rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .tool-cat .tool-cat__intro {
+  margin: 0.4rem 0 0;
+  font-size: 0.76rem;
+}
+
+/* --- Cards ---------------------------------------------------------------- */
+.md-typeset .tool-shelf .tool-grid {
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+  gap: 0.8rem;
+  margin: 0.7rem 0 0.4rem;
+}
+
+.md-typeset .tool-shelf .tool-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: 0.6rem;
+  align-content: start;
+  padding: 0.75rem 0.9rem 0.8rem;
+  border-color: var(--tool-rule);
+  transition: none;
+}
+
+/* One destination is only the title link, so the card does not lift as if
+   it all were one (MA-2). */
+.md-typeset .tool-shelf .tool-card:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--md-default-fg-color--lighter);
+}
+
+.md-typeset .tool-shelf .tool-card > * {
+  grid-column: 1 / -1;
+}
+
+.md-typeset .tool-card-title,
+[data-md-color-scheme="slate"] .md-typeset .tool-card-title {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.md-typeset .tool-shelf .tool-card > .tool-card-title {
+  grid-column: 1;
+}
+
+.md-typeset .tool-card-title[id] {
+  scroll-margin-top: 7rem;
+}
+
+.md-typeset .tool-card-title a {
+  text-decoration: none;
+}
+
+.md-typeset .tool-card-title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+/* The title goes to the vendor's own site. */
+.md-typeset .tool-card-title a::after {
+  content: "\2197";
+  content: "\2197" / "";
+  margin-left: 0.2em;
+  font-size: 0.75em;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.md-typeset .tool-shelf .tool-card > .tool-status {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  margin-top: 0.1rem;
+}
+
+.md-typeset .tool-card-sub {
+  margin: 0.15rem 0 0;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .tool-card-cost::before,
+.md-typeset .tool-card-license::before {
+  content: "\00b7";
+  content: "\00b7" / "";
+  margin: 0 0.4em;
+}
+
+.md-typeset .tool-card-access {
+  margin: 0.45rem 0 0;
+  font-size: 0.72rem;
+}
+
+/* --- Status tags ---------------------------------------------------------
+   Owner decision 7: "Listed" is quiet grey text on every card; the other
+   standings are restrained outlined tags, tinted, never filled pills, so
+   none reads as an endorsement or a button. The legend at the foot uses
+   the same tags. */
+.md-typeset .tool-status {
+  display: inline-block;
+  padding: 0 0.35rem;
+  border: 1px solid currentColor;
+  border-radius: 0.2rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.md-typeset .tool-status--listed {
+  padding: 0;
+  border: 0;
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .tool-status--licensed {
+  color: #1b5e20;
+  background: rgba(46, 125, 50, 0.07);
+}
+
+.md-typeset .tool-status--reviewed {
+  color: #0d47a1;
+  background: rgba(21, 101, 192, 0.07);
+}
+
+.md-typeset .tool-status--caution {
+  color: #7a4300;
+  background: rgba(255, 143, 0, 0.1);
+}
+
+.md-typeset .tool-status--restricted {
+  color: #a31515;
+  background: rgba(198, 40, 40, 0.07);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tool-status--licensed {
+  color: #8fd694;
+  background: rgba(129, 199, 132, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tool-status--reviewed {
+  color: #9dcffa;
+  background: rgba(144, 202, 249, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tool-status--caution {
+  color: #ffc36b;
+  background: rgba(255, 183, 77, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tool-status--restricted {
+  color: #f4a3a3;
+  background: rgba(239, 154, 154, 0.1);
+}
+
+/* Prose in the results pane keeps a readable line (about 95 characters at
+   most); grids, rows and the legend table use the full width. */
+.md-typeset .tool-results > p:not(.tool-browse),
+.md-typeset .tool-set > p {
+  max-width: 38rem;
+}
+
+/* --- Statuses section at the foot ----------------------------------------- */
+.md-typeset .tool-results > h2 {
+  margin-top: 2rem;
+}
+
+.md-typeset .tool-results table:not([class]) {
+  font-size: 0.72rem;
+}
+
+.md-typeset .tool-results table:not([class]) td:first-child {
+  white-space: nowrap;
+}
+
+.md-typeset .tool-access {
+  font-size: 0.8rem;
+}
+
+/* Reflow: nothing on this page scrolls sideways at 320px. */
+@media screen and (max-width: 22.5em) {
+  .md-typeset .tool-results table:not([class]) td:first-child {
+    white-space: normal;
+  }
+}
