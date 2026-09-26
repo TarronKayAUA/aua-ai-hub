@@ -12,7 +12,7 @@ action:
 **Have ready:** your assignment list, with the skill each one builds or measures, and your department's existing guidance on artificial intelligence (AI), if any.
 {: .have-ready }
 
-**A student whose syllabus says nothing about AI?** Ask your instructor before using it for graded work. [For Students](../students.md#using-ai-well) has the study habits worth pointing them to.
+**A student whose syllabus says nothing about AI?** Ask your instructor before using it for graded work. [For Students](../students.md#the-lines-that-never-move) has the study habits worth pointing them to.
 {: .guide-pointer }
 
 ## Three templates

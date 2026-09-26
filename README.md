@@ -20,7 +20,9 @@ Validation build (run after any nav or content change):
 
 ## How the data-driven pages work
 
-Render markers under `docs/` are replaced at build time from their matching files under `data/` by an MkDocs hook, `scripts/render_data.py`, registered under `hooks:` in `mkdocs.yml`. Hook-rendered surfaces: the conferences table (`docs/conferences.md`), the opportunities board (`docs/opportunities.md`), the tools directory and its open-weights section (`docs/tools/index.md`), the prompt library (`docs/prompts/index.md`) and the Learning to Prompt resources (`docs/prompts/learning.md`), the Courses and Resources cards (`docs/learning/index.md`), the committee page (`docs/governance/committee.md`), the polls block (`docs/announcements/index.md`), the guide-video lists (`docs/tools/agents.md`, `docs/tools/local.md`), the hardware estimator's data island (`docs/tools/hardware.md`), and the homepage last-updated stamp.
+Render markers under `docs/` are replaced at build time from their matching files under `data/` by an MkDocs hook, `scripts/render_data.py`, registered under `hooks:` in `mkdocs.yml`. Hook-rendered surfaces: the conferences table (`docs/conferences.md`), the opportunities board (`docs/opportunities.md`), the tools directory and its open-weights section (`docs/tools/index.md`), the prompt library (`docs/prompts/index.md`) and the Learning to Prompt resources (`docs/prompts/learning.md`), the Courses and Resources cards (`docs/learning/index.md`), the committee page (`docs/governance/committee.md`), the polls block (`docs/announcements/index.md`), the guide-video lists (`docs/tools/agents.md`, `docs/tools/local.md`), and the hardware estimator's data island (`docs/tools/hardware.md`).
+
+Six layout hooks, also registered under `hooks:`, shape pages at build time (since the 2026-09-26 layout redesign; SPEC section 12 has the detail): `scripts/layout_frame.py` gives every page its type, frame, `action:` buttons and common ending; `scripts/layout_home.py` fills the homepage's timely column (the newest Medical Education items from `includes/latest.md`, the next call and event, the open poll); `scripts/layout_guides.py` puts each step-by-step guide's prompt in a panel with a Copy button; `scripts/layout_prompt_pages.py` generates one page per prompt from `data/prompts.yaml`; `scripts/layout_news.py` handles the news pages' search and table stacking; and `scripts/layout_learn.py` checks the Learn landing's times against each module. Each prints a verification block and fails the build on a mismatch.
 
 Why a hook instead of a pre-build script: the hook runs automatically inside both `mkdocs serve` and `mkdocs build --strict`, so there is no extra workflow step to forget, and the rendered tables are injected in memory only. Nothing generated is ever written into hand-authored files under `docs/`.
 
@@ -30,11 +32,11 @@ To update the conferences table or the tools directory, edit the YAML files only
 
 - Hand-authored: everything under `docs/` except `docs/news/**`, `docs/prompts/exchange.md`, and `docs/digest.xml`; `feeds.yaml`; the owner-owned data files (`data/conferences.yaml`, `data/conference_watchlist.yaml`, `data/opportunities.yaml`, `data/tools.yaml`, `data/open_models.yaml`, `data/local_models.yaml`, `data/hardware_tiers.yaml`, `data/prompts.yaml`, `data/prompt_resources.yaml`, `data/guide_videos.yaml`, `data/learning_resources.yaml`, `data/committee.yaml`, `data/committee_work.yaml`, `data/polls.yaml`); and the four owner-tunable prompt files (`prompts/curator.md`, `prompts/digest.md`, `prompts/digest_narrative.md`, `prompts/section_brief.md`).
 - Data-driven: every hook-rendered surface listed above, rendered from YAML at build time.
-- Generated (never hand-edit): `docs/news/**`, `docs/prompts/exchange.md`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `includes/community-prompts.md`, `includes/committee-updates.md` (`includes/prompt-maturity-note.md` is the hand-authored exception), `data/seen_items.json`, `data/conference_flags.md` (created on demand), `data/conference_watch_state.json`, `data/opportunity_watch_state.json`, `data/page_review_state.json`.
+- Generated (never hand-edit): `docs/news/**`, `docs/prompts/exchange.md`, `docs/digest.xml`, `includes/latest.md`, `includes/latest-videos.md`, `includes/livebench.md`, `includes/community-prompts.md`, `includes/committee-updates.md`, `data/seen_items.json`, `data/conference_flags.md` (created on demand), `data/conference_watch_state.json`, `data/opportunity_watch_state.json`, `data/page_review_state.json`.
 
 ## Videos and podcasts
 
-The Videos and Podcasts pages (and the homepage video list) are produced by
+The Videos and Podcasts pages are produced by
 the same pipeline from the `video_feeds` and `podcast_feeds` lists in
 `feeds.yaml` (channel/show RSS, no API keys). Cards link out to the original
 platform; nothing is embedded. To add or remove a channel or show, edit
@@ -43,8 +45,10 @@ platform; nothing is embedded. To add or remove a channel or show, edit
 ## Prompt library
 
 `data/prompts.yaml` holds the prompt library; the render hook builds the
-Prompts page from it at build time. Owner edits the YAML only; prompts marked
-`status: draft` carry a visible Draft badge until the owner reviews them.
+Prompts page from it at build time, and `scripts/layout_prompt_pages.py` makes
+one page per prompt. Owner edits the YAML only; prompts marked `status: draft`
+carry a visible Draft label until the owner reviews them. A prompt's
+`note_visible` line must quote its `notes` word for word, or the build fails.
 
 ## Routine maintenance playbook
 
@@ -95,10 +99,12 @@ blurbs may name current flagships, so refresh blurb and `last_reviewed`
 together; verify links, build strict, commit.
 
 **Edit the literacy pathway or playbooks** — hand-authored pages under
-`docs/pathway/` and `docs/playbooks/`; keep the fixed page shapes
-(objectives/self-checks; guardrails/checklist), keep module 3 and all
-playbook guardrails consistent with the policy version in force, and
-re-check the CGEA mapping note if module scope changes.
+`docs/pathway/` and `docs/playbooks/`; keep the page shapes
+(objectives and self-checks; answer first, prompt panel, checklist), link the
+AI Responsible Use Policy rather than restating it (CLAUDE.md, policy as the
+one reference point), change a module's time chip and the Learn landing
+together (the build checks them), and re-check the CGEA mapping note if
+module scope changes.
 
 **Narrate a page (read-aloud players)** — nine static pages (the seven
 pathway modules plus the two basics pages), the news section briefs, and

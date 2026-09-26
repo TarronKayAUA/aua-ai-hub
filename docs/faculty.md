@@ -65,7 +65,7 @@ Each step-by-step guide walks one job end to end. Artificial intelligence (AI) c
 
 The first four modules of the literacy pathway take about 45 minutes and cover the mechanism, the craft, and the policy: [How AI Works](pathway/how-ai-works.md), [Prompting Fundamentals](pathway/prompting.md), [The Policy in Practice](pathway/rules.md), and [Teaching and Assessment](pathway/teaching-assessment.md). The [full pathway](pathway/index.md) adds research, clinical, and agent modules.
 
-## Your work, your judgment {: #your-judgment }
+## Your work, your judgment {: #the-lines-that-never-move }
 
 Whatever a tool contributed, the work you sign is yours. Read AI-drafted teaching material as its content expert before students see it: models make confident errors, and students are the readers least placed to catch them.
 

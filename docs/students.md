@@ -6,7 +6,7 @@ hide:
 
 # For Students
 
-Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use Policy](governance/policy.md) encourages AI use where it helps you do your work. For graded work, your syllabus says what is expected; if it says nothing, ask your instructor. [A few habits that pay off](#using-ai-well)
+Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use Policy](governance/policy.md) encourages AI use where it helps you do your work. For graded work, your syllabus says what is expected; if it says nothing, ask your instructor. [A few habits that pay off](#the-lines-that-never-move)
 { .hub-lede }
 
 <form class="hub-search" role="search">
@@ -79,7 +79,7 @@ The literacy pathway's first three modules are short, plain-language, and writte
 2. [Prompting Fundamentals](pathway/prompting.md) (about 15 minutes): the habits that most improve what you get back, starting with giving the model your actual materials.
 3. [The Policy in Practice](pathway/rules.md) (about 5 minutes): a short guide to the policy, and why its expectations work in your favor.
 
-## Using AI well for coursework {: #using-ai-well }
+## Using AI well for coursework {: #the-lines-that-never-move }
 
 - Your course syllabus sets the expectations for AI on assignments, including how to acknowledge it. If it does not cover something you want to try, ask your instructor: a quick message usually settles it, and the conversation often improves the idea.
 - The Student Handbook treats unauthorized or unacknowledged AI use in coursework, assessments, or clinical training as possible academic misconduct, which is why that quick message is worth sending.
