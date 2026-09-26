@@ -18,9 +18,44 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (4)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42795823?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">A Survey on Perspectives Toward Artificial Intelligence Among Italian Interventional Cardiologists</a>
+    <p class="news-card-summary">Survey of Italian interventional cardiologists reveals heterogeneous adoption of AI for image analysis, procedural planning, and workflow optimization.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42794969?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">AI-Assisted Scoring Improves Interobserver Agreement in Breast Cancer Biomarker Evaluation</a>
+    <p class="news-card-summary">AI-assisted scoring of breast cancer biomarkers improves agreement between pathologists in evaluating estrogen receptor, progesterone receptor, Ki67, and HER2 status.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42792493?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">Generative Artificial Intelligence Use and Learning Engagement Among Medical Undergraduates: Statistical Indirect and Configurational Associations Involving Basic Psychological Need Satisfaction</a>
+    <p class="news-card-summary">Survey of 498 medical undergraduates shows generative AI use correlates with learning engagement through satisfaction of basic psychological needs for autonomy, competence, and relatedness.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42792422?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">Between Awareness and Readiness: Perceptions of Artificial Intelligence Among Indonesian Mental Health Professionals</a>
+    <p class="news-card-summary">Indonesian mental health professionals report positive perception of AI with widespread awareness and use, but gap between adoption and formal training exists.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42792258?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">Value Configurations Associated with Artificial Intelligence Literacy Among Medical Students: Findings from NCA and fsQCA</a>
+    <p class="news-card-summary">Study of Chinese medical students identifies cultural value orientations associated with AI literacy, including technical understanding, ethical awareness, and responsible engagement.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
@@ -70,6 +105,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Combinatorial optimization with expressive constraint languages solves resident scheduling by addressing local rigidity constraints that manual systems cannot overcome.</p>
   </div>
 </div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42791528?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">Ears for examinations: a multicentre quasi-experimental evaluation of AI-generated revision podcasts on learning outcomes and retention among medical students</a>
+    <p class="news-card-summary">Multicentre trial finds AI-generated revision podcasts improve immediate exam performance but distributed practice outperforms massed study for long-term retention.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 25, 2026</span></div>
@@ -82,48 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 24, 2026</span></div>
     <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e105032">Medical AI Use Intention Among Medical Students and Faculty and Its Associations With AI Literacy, Perceived Benefits, and Risks: Cross-Sectional Survey Study</a>
     <p class="news-card-summary">Survey of medical students and faculty identifies factors associated with AI use intention, including AI literacy, perceived benefits, and perceived risks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e95578">Evaluating Large Language Model, Based Automated Scoring in a Voice-Based Virtual Standardized Patient Platform for Medical Students: Cross-Sectional Agreement Study</a>
-    <p class="news-card-summary">Study compares large language model-generated scores with faculty ratings of medical student performance in a virtual standardized patient platform.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42779013?fc=20260609215449&amp;ff=20260924093431&amp;v=2.20.1">Generative Artificial Intelligence Use Among Medical Students: Learner Perspectives for Clinical Educators</a>
-    <p class="news-card-summary">Multi-institutional study found medical students frequently use AI tools informally; educators should establish clear expectations, privacy boundaries, and disclosure norms.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786019?fc=20260609215449&amp;ff=20260925010106&amp;v=2.20.1">AI in medical training: who decides?</a>
-    <p class="news-card-summary">Short commentary on decision-making regarding artificial intelligence integration in medical training programs and who should have a voice in those choices.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42785050?fc=20260609215449&amp;ff=20260925010106&amp;v=2.20.1">Artificial intelligence in clinical neurophysiology: IFCN handbook chapter</a>
-    <p class="news-card-summary">International Federation of Clinical Neurophysiology handbook chapter reviews automated analysis of complex physiological signals using AI, addressing subjectivity and inter-rater variability in clinical neurophysiology interpretation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42784501?fc=20260609215449&amp;ff=20260925010106&amp;v=2.20.1">AI Workshop for Primary Care Providers: Applying Large Language Models to Reduce Inappropriate Polypharmacy in Older Adults</a>
-    <p class="news-card-summary">Workshop study evaluates large language model training for primary care providers to identify and reduce inappropriate polypharmacy in older adults, demonstrating practical application of AI to geriatric clinical problems.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786409?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">LLM-Based Psychiatric Interview Simulation: Technical Development and Pilot Expert-Based Content Validation of a Voice Prototype</a>
-    <p class="news-card-summary">Voice-based large language model simulations enable psychiatric interview practice; current limitations suggest use for formative training rather than high-stakes assessment.</p>
   </div>
 </div>
 </div>

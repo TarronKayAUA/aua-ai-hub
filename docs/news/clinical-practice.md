@@ -18,9 +18,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 <p class="section-brief-date">The picture as of September 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (7)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (2)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (6)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (5)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (3)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (1)</button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03258-1">Development and validation of a parsimonious AI-based mortality risk score for heart failure</a>
+    <p class="news-card-summary">Development and validation of a parsimonious AI mortality risk score for heart failure patients published in npj Digital Medicine.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 25, 2026</span></div>
@@ -119,13 +126,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 24, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03287-w">Causal reinforcement learning for personalized adaptive interventions in mild cognitive impairment</a>
     <p class="news-card-summary">Study applies causal reinforcement learning to personalized adaptive interventions for patients with mild cognitive impairment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 23, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93498">Implicit Bias in Large Language Model Diagnosis of Eating Disorders: Experimental Vignette Study</a>
-    <p class="news-card-summary">Large language models demonstrate demographic bias in eating disorder diagnosis across patient groups, posing risks for mental health applications that mediate clinical decisions.</p>
   </div>
 </div>
 </div>
