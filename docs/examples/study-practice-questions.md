@@ -57,7 +57,7 @@ The prompt, then five slides from a Year 1 renal physiology lecture, given to Cl
     - In principal cells it increases the abundance and activity of apical ENaC and the activity of the basolateral Na+/K+-ATPase.
     - Net effect: it promotes sodium reabsorption and potassium secretion into the urine. Potassium leaves the cell through apical potassium channels.
 
-Your course slides and notes make the best source, since your in-house exams are written from them. Question-bank and NBME items are a different matter: they are licensed content, and the license may not allow this use.
+Your course slides and notes make the best source, since your in-house exams are written from them. Question-bank and NBME items are a different matter: they are licensed content, and the license may not allow this use (the policy's [intellectual property section](../governance/policy.md#intellectual-property-rights-and-copyright-issues) covers licensed material).
 
 ## The prompt
 

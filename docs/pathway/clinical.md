@@ -18,15 +18,15 @@ Two different kinds of work share the word "clinical," and each has its own expe
 
 ### Learning clinical medicine with AI: encouraged, with discipline
 
-Practicing differentials against an artificial intelligence (AI) case, asking for mechanism explanations, generating practice questions: these are legitimate and effective uses, and the [Medical Learning tools](../tools/index.md#medical-learning) section lists platforms built for exactly this. The discipline is remembering Module 1: fluent clinical-sounding text is not verified clinical knowledge. Your course materials and the literature stay primary, per the [AI Responsible Use Policy](../governance/policy.md); the model is a practice partner, not a reference.
+Practicing differentials against an artificial intelligence (AI) case, asking for mechanism explanations, generating practice questions: these are legitimate and effective uses, and the [Medical Learning tools](../tools/index.md#medical-learning) section lists platforms built for exactly this. The discipline is remembering Module 1: fluent clinical-sounding text is not verified clinical knowledge. Check what it tells you against your course materials and the literature; the model is a practice partner, not a reference.
 
 ### AI in patient care
 
-In patient care, the [AI Responsible Use Policy](../governance/policy.md#responsible-use) asks for extreme caution (section E), and the reason is the patient: a model has not examined them, cannot see what the chart leaves out, and carries none of the responsibility. AI can inform a clinical decision; it cannot own one. As a student, that means your supervisor's judgment about a real patient comes first. If an AI suggestion makes you question a plan, take the question to your supervisor; that is a good use of what the tool showed you.
+In patient care, the reason for caution is the patient: a model has not examined them, cannot see what the chart leaves out, and carries none of the responsibility, which is why the [AI Responsible Use Policy](../governance/policy.md#responsible-use) asks for extreme caution in clinical contexts (section E). AI can inform a clinical decision; it cannot own one. As a student, that means your supervisor's judgment about a real patient comes first. If an AI suggestion makes you question a plan, take the question to your supervisor; that is a good use of what the tool showed you.
 
 ### Patient information
 
-A real case makes a good study prompt, and the version that works best with an AI is the teaching abstraction: an age band, a presentation pattern, the findings, and nothing that could identify the patient. A rare combination of details can identify someone as surely as a name, and a photo of a chart or a recording of an encounter carries as much as the chart itself. The model reasons just as well from the pattern, the pattern is what you will meet again, and an abstraction is a case you can discuss anywhere, with anyone. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information.
+A real case makes a good study prompt, and the version that works best with an AI is the teaching abstraction: an age band, a presentation pattern, the findings, and nothing that could identify the patient. A rare combination of details can identify someone as surely as a name, and a photo of a chart or a recording of an encounter carries as much as the chart itself. The pattern is what you are practicing on, and invented variations of it show you what changes the differential. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Two kinds of work share the word clinical</p>
@@ -39,20 +39,20 @@ A real case makes a good study prompt, and the version that works best with an A
 <li>mechanism explanations</li>
 <li>generated practice questions</li>
 </ul>
-<p class="hf-box-foot">The literature stays primary.</p>
+<p class="hf-box-foot">Checked against the literature.</p>
 </div>
 <div class="hf-box">
 <p class="hf-box-title">AI in patient care</p>
 <p class="hf-box-sub">Informs the decision, never owns it</p>
 <ul>
-<li>augments decisions, never automates them</li>
+<li>informs decisions; clinicians make them</li>
 <li>your supervisor's judgment comes first</li>
 </ul>
 <p class="hf-box-foot">Accountability stays human.</p>
 </div>
 </div>
-<p class="hf-banner">In both, the teaching abstraction is the case to work with: it keeps the pattern and identifies no one.</p>
-<figcaption>Same word, different kinds of work; the teaching abstraction serves both.</figcaption>
+<p class="hf-banner">For study, practice on an invented case or a teaching abstraction; in patient care, the decision rests on the whole patient and the clinicians.</p>
+<figcaption>Same word, different kinds of work: practice on the pattern, decide on the patient.</figcaption>
 </figure>
 
 ### At clinical sites
@@ -66,7 +66,7 @@ Models reflect their training data, and documented performance gaps across popul
 ## Self-check
 
 ??? question "After a memorable encounter, you want to explore the differential with a chatbot tonight. What decides whether that is fine?"
-    What you type in. A teaching abstraction (demographic band, presentation, findings pattern) is a legitimate and useful study exercise, and a better one than the full story, because it trains you on the pattern you will meet again. Anything identifiable, including an unusual combination of details that could point to a real person, is patient information, and the [policy](../governance/policy.md#responsible-use) is the reference for that.
+    What you type in. A teaching abstraction (demographic band, presentation, findings pattern) is a legitimate and useful study exercise, and invented variations of it show you what changes the differential. Anything identifiable, including an unusual combination of details that could point to a real person, is patient information, and the [policy](../governance/policy.md#responsible-use) is the reference for that.
 
 ??? question "A resident on your rotation uses a phone app to transcribe patient conversations and asks you to do the same. What governs your answer?"
     The clinical site's policy on that specific tool, together with the university's policy on patient information. If the site has sanctioned the app for patient encounters, the site's rules for it apply; if it has not, recording patients with it sends their information to a third party without their consent or the site's protections. Ask your supervisor which it is before you start.

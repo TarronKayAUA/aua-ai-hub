@@ -21,7 +21,7 @@ prompts:
 
 ## Good practice for this task
 
-- Questions from a licensed question bank belong to their publisher, and their license usually limits reuse, so items written from your own teaching are the ones you can use freely, and they test what you taught.
+- Questions from a licensed question bank belong to their publisher, and their license usually limits reuse, so new items written from your own learning objectives are the better route, and they test what you taught.
 - Build vignettes from invented details, or from a real case abstracted until no one could recognize it. A recognizable case can identify the patient to anyone who was on that rotation.
 - If past exam performance shapes a new item, aggregate statistics (difficulty, how often each option was chosen) are all the drafting needs.
 

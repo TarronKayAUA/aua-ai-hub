@@ -26,11 +26,11 @@ AI drafts plausible multiple choice questions (MCQs) quickly, and the evidence s
 
 ### Evaluating student work
 
-Take the names out first. The feedback is about the writing, not the writer, and a stack with no names in it is fairer to read, because you see the work rather than the student. A find-and-replace to Student A, Student B usually does it, and the [Feedback on Student Writing](../playbooks/writing-feedback.md) playbook covers the indirect identifiers to watch for; the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for student records. AI detectors and similarity flags produce false positives, so a flag is a reason to look more closely at the work, not evidence on its own; any integrity decision rests on the work itself and on hearing from the student.
+Take the names out first. The feedback is about the writing, not the writer, and leaving names out can help you read the work rather than the student. Labels such as Student A and Student B keep feedback matched to each essay, and the [Feedback on Student Writing](../playbooks/writing-feedback.md) playbook covers the indirect identifiers a find-and-replace misses; the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for student records. AI detectors and similarity flags produce false positives, so a flag is a reason to look more closely at the work, not evidence on its own; any integrity decision rests on the work itself and on hearing from the student.
 
 ### Your course's AI expectations
 
-Students will use these tools; ambiguity serves no one. The policy delegates labeling and attribution expectations to course and departmental guidelines, which means your syllabus is where the line gets drawn. The [syllabus AI statement playbook](../playbooks/syllabus-statement.md) offers adaptable templates from prohibited to encouraged-with-verification.
+Students will use these tools; ambiguity serves no one. The policy ties labeling and attribution to academic standards and to course and departmental guidelines, which makes your syllabus the place students look for the specifics. The [syllabus AI statement playbook](../playbooks/syllabus-statement.md) offers adaptable templates from prohibited to encouraged-with-verification.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Where your judgment does more of the work</p>
@@ -54,7 +54,7 @@ Students will use these tools; ambiguity serves no one. The policy delegates lab
 ## Self-check
 
 ??? question "You want AI feedback on twelve student reflection essays. What makes that work well?"
-    Taking out names, identification numbers, and details that could identify the author, first: the feedback needs the writing, not the writer, and a stack with no names in it is fairer to read. After that, the tool can draft feedback quickly; read and adjust it before it goes back, because you know the student and the course, and the tool does not.
+    Removing names, identification numbers, and details that could identify the author, so the first reading stays on the text: the feedback needs the writing, not the writer. After that, the tool can draft feedback quickly; read and adjust it before it goes back, because you know the student and the course, and the tool does not.
 
 ??? question "An AI detector flags one student's essay at 92 percent. What does that number justify by itself?"
     A closer human look, and nothing more. Detector outputs are preliminary indicators with known false-positive problems. An academic integrity action needs human review of the actual evidence and an opportunity for the student to respond, not a percentage from a black box.

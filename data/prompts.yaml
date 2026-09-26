@@ -555,16 +555,19 @@
   status: reviewed
   last_reviewed: 2026-06-12
   notes: >-
-    Works best pasted into the instructions of a Claude Project or ChatGPT
-    Project (see [Standing Setups](../tools/standing-setups.md)) rather than
-    a chat message, with your lecture notes, slides, or syllabus attached as
-    the source material. The tutor builds its questions from your own
-    materials, which suits your exams best, since in-house exams are written
-    from them. Question-bank and NBME items are licensed content whose
-    license may not allow this use. Defaults to Exam mode (the objective is hidden until
-    you answer); say "study mode" to work through objectives in order
-    instead. For iRAT preparation, attach the TBL pre-work and ask for
-    1st-order questions.
+    Works best pasted into the instructions of a Claude Project or
+    ChatGPT Project (see [Standing Setups](../tools/standing-setups.md))
+    rather than a chat message, with your lecture notes, slides, or
+    syllabus attached as the source material. The tutor builds its
+    questions from your own materials, which suits your exams best,
+    since in-house exams are written from them. Question-bank and NBME
+    items are licensed content whose license may not allow this use. The
+    policy's [intellectual property
+    section](../governance/policy.md#intellectual-property-rights-and-copyright-issues)
+    covers licensed material. Defaults to Exam mode (the objective is
+    hidden until you answer); say "study mode" to work through
+    objectives in order instead. For iRAT preparation, attach the TBL
+    pre-work and ask for 1st-order questions.
   prompt: |
     ROLE
     You are a USMLE Step 1 item writer. You generate NBME-style single-best-
@@ -1179,13 +1182,13 @@
   status: draft
   last_reviewed: 2026-06-12
   notes: >-
-    Describe your dataset in general terms: the review works from the
-    description, not the data, so participant-level data never needs to go
-    in (the [AI Responsible Use
-    Policy](../governance/policy.md#responsible-use) and your protocol are
-    the reference for it). Verify recommended methods against a statistics
-    reference or a statistician before publishing, especially with
-    clustering or missing-data handling involved.
+    Describe the study design, variables, and data structure: that is
+    enough for the review, which works from the description, not the
+    data. The [AI Responsible Use
+    Policy](../governance/policy.md#responsible-use) and your protocol
+    are the references for participant data. Verify recommended methods
+    against a statistics reference or a statistician before publishing,
+    especially with clustering or missing-data handling involved.
   prompt: |
     ROLE
     You are a methodological reviewer for education research analysis
@@ -2023,7 +2026,7 @@
   tagline: A skeptical peer review of your manuscript before you submit
   # use: drafted 2026-09-25 for owner sign-off
   use:
-    - 'Paste the prompt into a new chat with your own near-final draft, its stage, and the journal you are aiming for.'
+    - 'Run it on a [model on your own computer](../tools/local.md), which keeps an unpublished draft on your machine: paste the prompt with your near-final draft, its stage, and the journal you are aiming for.'
     - 'Treat each problem it flags as an objection a journal reviewer is likely to raise.'
     - 'Revise, then say "again" to see which flags your revision resolved.'
   category: research
@@ -2033,12 +2036,15 @@
   notes: >-
     Built around the documented common reasons peer reviewers reject
     manuscripts (Bordage 2001, Academic Medicine), as taught in AUA's
-    Research Methods 1 course. Run it on a near-final draft; it reads like
-    the reviewer you hope not to get, which is the point. It also runs on a
-    [model on your own computer](../tools/local.md). A manuscript sent to
-    you for peer review is a different matter: its authors shared it in
-    confidence and have not agreed to anyone else reading it, and many
-    journals' reviewer policies bar putting it into AI tools.
+    Research Methods 1 course. Run it on a near-final draft; it reads
+    like the reviewer you hope not to get, which is the point. It runs
+    well on a [model on your own computer](../tools/local.md), which
+    keeps an unpublished manuscript on your machine. For a co-authored
+    paper, agreeing with your co-authors on the tools you use keeps its
+    AI disclosure complete. A manuscript sent to you for peer review is
+    a different matter: its authors shared it in confidence and have not
+    agreed to anyone else reading it, and many journals' reviewer
+    policies bar putting it into AI tools.
   prompt: |
     ROLE
     You are a skeptical but fair peer reviewer for health professions
@@ -2119,7 +2125,7 @@
   tagline: Maps a manuscript against its reporting guideline, item by item
   # use: drafted 2026-09-25 for owner sign-off
   use:
-    - 'Paste the prompt into a new chat with your manuscript (at least Methods and Results) and its study design.'
+    - 'Run it on a [model on your own computer](../tools/local.md), which keeps an unpublished manuscript on your machine: paste the prompt with your manuscript (at least Methods and Results) and its study design.'
     - 'Confirm the reporting guideline it names, and paste the official checklist if you have it.'
     - 'For the submission itself, download the current checklist from equator-network.org.'
   category: research
@@ -2129,13 +2135,14 @@
   notes: >-
     Audits a manuscript against the EQUATOR (Enhancing the Quality and
     Transparency of Health Research) Network reporting guideline for its
-    design (STROBE, CONSORT, PRISMA, SQUIRE, SRQR, CROSS), a completeness
-    map rather than a quality score. A model's recall of checklist items
-    can lag the current revision (CONSORT was revised in 2025), so for
-    actual submission download the current checklist from
+    design (STROBE, CONSORT, PRISMA, SQUIRE, SRQR, CROSS), a
+    completeness map rather than a quality score. A model's recall of
+    checklist items can lag the current revision (CONSORT was revised in
+    2025), so for actual submission download the current checklist from
     equator-network.org and file it with the manuscript, which many
-    journals now require anyway. It also runs on a [model on your own
-    computer](../tools/local.md).
+    journals now require anyway. It runs well on a [model on your own
+    computer](../tools/local.md), which keeps an unpublished manuscript
+    on your machine.
   prompt: |
     ROLE
     You are a reporting-completeness auditor. You map a manuscript
@@ -2210,16 +2217,16 @@
   status: draft
   last_reviewed: 2026-07-14
   notes: >-
-    Paste your own performance report with your name, student number, and
-    any examinee or registration ID removed: the plan needs the scores,
-    not who earned them, and without those details nothing in the report
-    points back to you. The plan works from the
-    report's categories, so exam questions are not needed. Works with an
-    NBME INSIGHTS export or score report text, an in-house category
+    Paste your own performance report with your name, student number,
+    and any examinee or registration ID removed: the plan needs the
+    scores, not who earned them. The plan works from the report's
+    categories, so exam questions are not needed. Works with an NBME
+    INSIGHTS export or score report text, an in-house category
     breakdown, or a question-level report; for in-house block exams, the
-    Study schedule builder plans day by day from your syllabus and teaching
-    calendar. The score reports playbook covers the full workflow, including
-    writing your own read of the report before you run this.
+    Study schedule builder plans day by day from your syllabus and
+    teaching calendar. The score reports playbook covers the full
+    workflow, including writing your own read of the report before you
+    run this.
   prompt: |
     ROLE
     You are a study strategist for a medical student preparing for
@@ -2789,13 +2796,14 @@
   last_reviewed: 2026-09-23
   notes: >-
     Practice differential diagnosis on an invented case that reveals
-    findings only as you ask, or on a teaching abstraction of an encounter
-    you saw; either way it gives feedback on how you reasoned. Reduce a real
-    encounter to an age band and a presentation pattern, with no names,
-    dates, or places, before you type it: the pattern is what you are
-    practicing on, and a case that identifies no one can be discussed
-    anywhere. Your clinical site may have its own AI rules. The
-    model can be wrong about the medicine: check its teaching points against
+    findings only as you ask, or on a teaching abstraction of an
+    encounter you saw; either way it gives feedback on how you reasoned.
+    Reduce a real encounter to an age band and a presentation pattern,
+    with no names, dates, or places, before you type it: the pattern is
+    what you are practicing on. If patient details go in by mistake, the
+    [AI Committee](../governance/committee.md) can help you work out
+    next steps. Your clinical site may have its own AI rules. The model
+    can be wrong about the medicine: check its teaching points against
     your course materials.
   prompt: |
     ROLE

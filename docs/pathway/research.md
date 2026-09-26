@@ -18,7 +18,7 @@ Research offers real gains from artificial intelligence (AI) assistance (literat
 
 ### Literature work
 
-Models are genuinely useful for screening titles and abstracts against inclusion criteria and for first-pass synthesis; recent studies (linked as further reading under the [research prompts](../prompts/index.md#research)) report strong sensitivity when prompts state criteria explicitly and a human verifies. Two habits make it work: check every reference an AI suggests at the original source before you cite it, because fabricated citations remain a signature failure (the [AI Responsible Use Policy](../governance/policy.md#responsible-use) asks for this check too); and use a screening assistant for recall rather than judgment, keeping the borderline calls for yourself. The [Literature screening assistant](../prompts/index.md#literature-screening-assistant) prompt in the library is built around exactly this division of labor.
+Models are genuinely useful for screening titles and abstracts against inclusion criteria and for first-pass synthesis; recent studies (linked as further reading under the [research prompts](../prompts/index.md#research)) report strong sensitivity when prompts state criteria explicitly and a human verifies. Two habits make it work: check every reference an AI suggests at the original source before you cite it, because fabricated citations remain a signature failure; and use a screening assistant for recall rather than judgment, keeping the borderline calls for yourself. The [Literature screening assistant](../prompts/index.md#literature-screening-assistant) prompt in the library is built around exactly this division of labor.
 
 ### Writing and disclosure
 
@@ -26,7 +26,7 @@ Two norms are now widely shared across journals: an AI tool cannot be an author,
 
 ### Confidential material and participant data
 
-Manuscripts and grant applications you receive for peer review are shared with you in confidence: their authors have not agreed to anyone else seeing them, and many journals and funders bar reviewers from putting them into AI tools. That reason holds for a paid plan as much as a free one, so keep them out of AI tools unless the reviewer instructions provide or permit one. Funder rules for AI in proposal preparation vary and change; check the current policy of your funder before drafting with assistance. Data that can identify research participants is governed by your institutional review board (IRB) protocol, which sets where participant data may go, and the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for it too. Most AI help with analysis works from a description of the data or a de-identified extract, which leaves the participants out of it entirely.
+Manuscripts and grant applications you receive for peer review are shared with you in confidence: their authors have not agreed to anyone else seeing them, and many journals and funders bar reviewers from putting them into AI tools. That reason holds for a paid plan as much as a free one, and the reviewer instructions say whether any AI use is permitted. Funder rules for AI in proposal preparation vary and change; check the current policy of your funder before drafting with assistance. Data that can identify research participants is governed by your institutional review board (IRB) protocol, which sets where participant data may go, and the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for it too. For analysis planning, a description of the variables, the design and the data structure, or a few invented example rows, gives a model a useful starting point without sharing participants' data.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">The three zones of research AI use</p>
@@ -54,7 +54,7 @@ Manuscripts and grant applications you receive for peer review are shared with y
 <ul>
 <li>manuscripts under review</li>
 <li>grant confidentiality, funder rules</li>
-<li>identifiable subjects data</li>
+<li>participant data and unpublished findings</li>
 </ul>
 <p class="hf-box-foot">Your IRB protocol sets where participant data may go.</p>
 </div>

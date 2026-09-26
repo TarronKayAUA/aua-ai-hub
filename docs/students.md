@@ -56,7 +56,7 @@ Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use 
 
 -   ## :material-stethoscope:{ .lg .middle } On rotations {: #on-rotations }
 
-    Practicing differentials works best on a teaching abstraction: an age band and a presentation pattern, with nothing left that could point to the patient, such as a name, a date, or a rare detail. The model reasons just as well from the pattern. Your clinical site may have its own AI rules; your preceptor can tell you.
+    Practicing differentials works best on a teaching abstraction: an age band and a presentation pattern, with nothing left that could point to the patient, such as a name, a date, or a rare detail. The pattern is what you are practicing on. Your clinical site may have its own AI rules; your preceptor can tell you.
 
     - <span class="row-tag">Start here</span> [Clinical reasoning partner](prompts/index.md#clinical-reasoning-partner) <span class="row-sub">Prompt</span>
     - [Module 6: Clinical Contexts](pathway/clinical.md) <span class="row-sub">AI Literacy Pathway</span>
@@ -84,7 +84,7 @@ The literacy pathway's first three modules are short, plain-language, and writte
 - Your course syllabus sets the expectations for AI on assignments, including how to acknowledge it. If it does not cover something you want to try, ask your instructor: a quick message usually settles it, and the conversation often improves the idea.
 - The Student Handbook treats unauthorized or unacknowledged AI use in coursework, assessments, or clinical training as possible academic misconduct, which is why that quick message is worth sending.
 - Practice built from your own slides and notes fits your exams best, because your in-house exams are written from them.
-- A case works best as a teaching abstraction (an age band and a presentation pattern): it gives the model everything it needs and identifies no one. See [On rotations](#on-the-wards).
+- A case works best as a teaching abstraction (an age band and a presentation pattern), which keeps the practice on the pattern you are learning. See [On rotations](#on-the-wards).
 - A classmate's work is theirs, so check with them before it goes into a tool, the same courtesy you would want for your own draft.
 - Whatever a tool contributed, the work you submit and its errors are yours, which is why checking it is time well spent.
 
@@ -115,7 +115,7 @@ A schedule is only as good as what goes into it. The [study schedule builder](pr
 
     - **Your course syllabus**, the version that lists the learning objectives. It turns "review neuro" into named objectives you can act on.
     - **The teaching calendar**, with your individual readiness assurance test (iRAT), quiz, and end-of-system exam dates.
-    - **Any score reports from this block**, with your name and student number left off. The plan does not need them, and without them the report is performance data rather than an identifiable student record.
+    - **Any score reports from this block**, with your name and student number left off. The plan does not need them.
     - **Your honest hours** per day, and your fixed commitments.
     - **A few sentences on what you think is going wrong.** It is the most useful thing you can give it.
 

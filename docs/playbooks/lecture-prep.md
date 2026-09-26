@@ -23,8 +23,8 @@ prompts:
 
 ## Good practice for this task
 
-- Your own teaching materials are fine as inputs. A colleague's materials are their work, so a word with them before you build on their slides is both a courtesy and a guard against copyright problems.
-- If your department has a practice for noting AI-generated content on slides, use it: students notice whether faculty meet the standard they are asked to meet.
+- Your own teaching materials make the best inputs, since the outline should reflect your course; a licensed figure or a real case among them is worth a second look first. A colleague's materials are their work, so a word with them before you build on their slides is both a courtesy and a guard against copyright problems.
+- Note AI-generated content on slides the way your department does: students notice whether faculty meet the standard they are asked to meet.
 - If you design a session around last year's cohort performance, work from aggregate or de-identified results: a session plan needs the pattern rather than the names.
 
 ## Before you rely on it

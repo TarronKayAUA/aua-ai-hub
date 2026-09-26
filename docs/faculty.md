@@ -69,7 +69,7 @@ The first four modules of the literacy pathway take about 45 minutes and cover t
 
 Whatever a tool contributed, the work you sign is yours. Read AI-drafted teaching material as its content expert before students see it: models make confident errors, and students are the readers least placed to catch them.
 
-Most drafting needs no identifying details at all. A memo about a process, a vignette built from invented facts, or feedback on an essay with the author's name left off gives the model everything it needs, and a draft with nothing sensitive in it is one you can share, reuse, and keep anywhere. The [AI Responsible Use Policy](governance/policy.md) is the reference for patient, student, and personnel information, and [Module 3: The Policy in Practice](pathway/rules.md) is a five-minute guide to it.
+Most drafting needs no identifying details at all. A memo about a process, a vignette built from invented facts, or feedback on an essay with the author's name left off usually gives the model enough to help with structure and wording, and any specifics you add yourself at the end stay with you. The [AI Responsible Use Policy](governance/policy.md) is the reference for patient, student, and personnel information, and [Module 3: The Policy in Practice](pathway/rules.md) is a five-minute guide to it.
 
 ## More ways to work
 

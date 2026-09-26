@@ -82,6 +82,6 @@ The practical consequence has nothing to do with rules. A statement you did not 
 
 The AAMC addresses writers of a letter of recommendation (LOR) directly and permissively: generative AI "has the potential to support your letter-writing process, including crafting initial drafts of the LOR and editing its content and tone. Regardless of how you use genAI, you remain the author of the letter and are responsible for its content, accuracy, and the assessment it conveys."
 
-Two things specific to letters. A letter drafted from a thin prompt reads generic, and a generic letter does less for the student than a short specific one. And a letter is strongest drafted from your own account of what you observed, with record details such as grades, evaluations, and rank added yourself in the final version: the observations are what only you can supply, and the student's records stay with you.
+Two things specific to letters. A letter drafted from a thin prompt reads generic, and a generic letter does less for the student than a short specific one. And a letter is strongest built on your own observations: ask for the structure, then add grades, evaluations, rank, and the specific moments yourself in the final version, since those are what only you can supply.
 
 **Related:** [Module 6: Clinical Contexts](../pathway/clinical.md) for turning a real case into a teaching abstraction, and [Shelf and NBME Score Reports](score-reports.md) for the exams that precede this year.

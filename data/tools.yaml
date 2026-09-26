@@ -731,7 +731,7 @@
   url: https://www.heygen.com
   cost: freemium
   governance_status: listed
-  status_note: "A custom avatar or voice of someone other than you speaks for them, so it is worth having their agreement first; without it, it misrepresents them."
+  status_note: "A custom avatar or voice of someone other than you speaks in their name, so it is worth agreeing its use with them and labeling the result as generated."
   last_reviewed: 2026-09-22
   blurb: Generates presenter-style videos with artificial intelligence avatars, including translated, lip-synced versions of existing recordings.
 
@@ -741,7 +741,7 @@
   url: https://www.synthesia.io
   cost: freemium
   governance_status: listed
-  status_note: "A custom avatar or voice of someone other than you speaks for them, so it is worth having their agreement first; without it, it misrepresents them."
+  status_note: "A custom avatar or voice of someone other than you speaks in their name, so it is worth agreeing its use with them and labeling the result as generated."
   last_reviewed: 2026-09-22
   blurb: Avatar video platform for training and instructional content. Turns a script or document into a narrated presenter video without filming.
 
@@ -788,7 +788,7 @@
   url: https://elevenlabs.io
   cost: freemium
   governance_status: listed
-  status_note: "A cloned voice of someone other than you speaks for them, so it is worth having their agreement first; without it, it misrepresents them."
+  status_note: "A cloned voice of someone other than you speaks in their name, so it is worth agreeing its use with them and labeling the result as generated."
   last_reviewed: 2026-09-08
   blurb: Speech synthesis, voice, music, and sound effect generation for narrating course material or producing audio versions of written content. The music model is trained on licensed data, with generated tracks cleared for commercial use.
 

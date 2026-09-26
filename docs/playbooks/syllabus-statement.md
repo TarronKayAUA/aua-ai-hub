@@ -51,14 +51,14 @@ In this course, the work you submit must be your own without the assistance of g
 
 ??? note "Show the template"
 
-    You may use generative AI tools in this course for [brainstorming, outlining, language polishing, practice questions], and not for [drafting graded text, data analysis, references]. Any AI assistance must be disclosed: state the tool, what you used it for, and include your prompts where practical. You remain fully responsible for accuracy; AI-fabricated citations or errors are your errors. Undisclosed AI use where disclosure is required is an academic integrity matter. Keep patient information out of public AI tools, as the university's AI policy requires, and do not put a classmate's work into one without their agreement.
+    You may use generative AI tools in this course for [brainstorming, outlining, language polishing, practice questions], and not for [drafting graded text, data analysis, references]. Any AI assistance must be disclosed: state the tool, what you used it for, and include your prompts where practical. You remain fully responsible for accuracy; AI-fabricated citations or errors are your errors. Undisclosed AI use where disclosure is required is an academic integrity matter. The university's AI Responsible Use Policy applies to AI use in this course; do not put a classmate's work into a tool without their agreement.
     {: .guide-template }
 
 ### Encouraged: integrated, with verification standards
 
 ??? note "Show the template"
 
-    This course treats AI tools as professional instruments and you are encouraged to use them for [specified course tasks]. Professional use means: you verify every factual claim and citation at its source before relying on it, you disclose which tools contributed and how, and you can explain and defend every part of what you submit without the tool. Submissions you cannot defend in discussion are not your work. The university's AI policy still applies: patient information and identifiable records stay out of public AI tools.
+    This course treats AI tools as professional instruments and you are encouraged to use them for [specified course tasks]. Professional use means: you verify every factual claim and citation at its source before relying on it, you disclose which tools contributed and how, and you can explain and defend every part of what you submit without the tool. Submissions you cannot defend in discussion are not your work. The university's AI Responsible Use Policy still applies.
     {: .guide-template }
 
 ## Good practice for this task
@@ -76,7 +76,7 @@ In this course, the work you submit must be your own without the assistance of g
 
 ## About this task {: #the-task }
 
-Set clear expectations for student AI use in your course. The university's [AI Responsible Use Policy](../governance/policy.md) leaves labeling and attribution standards to "specific course or departmental guidelines," so your syllabus is where students look to learn what your course expects. Silence leaves them guessing, and students who guess differently end up working to different standards.
+Set clear expectations for student AI use in your course. The university's [AI Responsible Use Policy](../governance/policy.md) ties labeling and attribution to "academic standards and specific course or departmental guidelines," so your syllabus is where students look to learn what your course expects. Silence leaves them guessing, and students who guess differently end up working to different standards.
 
 ### What the policy already covers
 
