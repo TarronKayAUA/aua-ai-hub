@@ -68,9 +68,12 @@
   category: assistants
   also_for: [slides]
   url: https://www.microsoft.com/en-us/microsoft-365-copilot
-  cost: institutional
-  governance_status: listed
-  last_reviewed: 2026-08-25
+  # Owner confirmed 2026-09-26: AUA licenses Copilot for a small number of
+  # faculty (the owner among them); students are unlikely to have access.
+  cost: AUA-licensed
+  governance_status: licensed
+  status_note: "AUA licenses Copilot for a small number of faculty; students are unlikely to have access through AUA."
+  last_reviewed: 2026-09-26
   blurb: Artificial intelligence assistant built into Word, PowerPoint, Outlook, and Teams under an institutional Microsoft 365 license.
 
 - name: DeepSeek
