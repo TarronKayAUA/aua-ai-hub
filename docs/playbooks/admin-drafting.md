@@ -9,6 +9,8 @@ last_reviewed: 2026-09-01
 **Have ready:** the facts as your own bullet list (decisions made, dates, names, amounts, action items), one or two past examples in your voice (your best past memo, last month's minutes), and who the document is for.
 {: .have-ready }
 
+**See it done:** [a worked example with real output](../examples/memo-and-minutes.md): a memo and the meeting's minutes, with the checking.
+
 ## The workflow
 
 1. **Check what the document touches.** Most administrative drafting (announcements, routine operations, planning) is ordinary material for any capable artificial intelligence (AI) assistant, and so are ordinary mentions of colleagues, such as who chairs a committee or whom a memo thanks. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps sensitive, confidential, and proprietary information out of public AI tools, including confidential personnel information (an evaluation of someone's performance or conduct, for example), student education records, patient health information, and AUA proprietary business information. For a document about an individual's personnel or student matter, draft the structure with placeholder names and add the specifics yourself.

@@ -395,9 +395,11 @@ def on_env(env, config, files):
     _state["used_rows"] = total
     _state["used_none"] = sorted(entry["title"] for slug, entry in pages.values() if not used[slug])
     _state["files"] = files
-    _state["ids"] = {f.url: set(re.findall(r'\bid="([^"]+)"', f.page.content or ""))
+    # The home page's File.url is "./", a form urljoin never produces, so
+    # key every page by the path a resolved link actually has.
+    _state["ids"] = {_site_path(f.url): set(re.findall(r'\bid="([^"]+)"', f.page.content or ""))
                      for f in files.documentation_pages() if f.page is not None}
-    _state["urls"] = {"/" + f.url for f in files}
+    _state["urls"] = {"/" + _site_path(f.url) for f in files}
     _state["links_checked"] = 0
     _state["copies_checked"] = 0
     return env
@@ -406,6 +408,10 @@ def on_env(env, config, files):
 _ISLAND_RE = re.compile(r'<script type="application/json" id="prompt-texts">(.*?)</script>', re.DOTALL)
 _BODY_RE = re.compile(r'<div class="pp-text__body" id="prompt-text-body">(.*?)</div>', re.DOTALL)
 _SOURCE_RE = re.compile(r'<script type="application/json" id="prompt-text-source">(.*?)</script>', re.DOTALL)
+
+
+def _site_path(url: str) -> str:
+    return "" if url in ("./", ".") else url
 
 
 def _check_links(output: str, page) -> int:

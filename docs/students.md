@@ -41,6 +41,7 @@ Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use 
     <!-- more ways to study -->
 
     - [Flashcards from one lecture](prompts/index.md#flashcard-builder) <span class="row-sub">Flashcard builder</span>
+    - [See it done: practice questions from a lecture](examples/study-practice-questions.md) <span class="row-sub">A worked example with real output</span>
     - [One notebook per course](tools/gemini-notebook.md) <span class="row-sub">Gemini Notebook (formerly NotebookLM)</span>
     - [AI-generated anatomy images](basics/misconceptions.md#if-i-cannot-find-a-good-diagram-i-can-have-ai-generate-one) <span class="row-sub">How far to trust them</span>
     - [All student prompts](prompts/index.md?for=students) <span class="row-sub">Prompt Library</span>

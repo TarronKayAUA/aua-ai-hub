@@ -11,6 +11,8 @@ prompts:
 **Have ready:** your learning objectives for the session, last year's slides or outline, and the session's length, audience, and format.
 {: .have-ready }
 
+**See it done:** [a worked example with real output](../examples/lecture-outline.md), from objectives to a checked outline.
+
 ## The workflow
 
 1. **Start from the template.** Paste the [Lecture outline builder](../prompts/index.md#lecture-outline-builder) prompt into an artificial intelligence (AI) assistant: it takes duration, audience, topic, and objectives, and returns a timed outline with an active check per section. Your objectives are the single highest-value input; if they are rough, the [learning objective sharpener](../prompts/index.md#learning-objective-sharpener) tightens them first. Paste your materials after the prompt (last year's slides or outline, the assigned reading, the curriculum map context, and what the students were taught before this session): with them, the outline starts from what you actually teach rather than from a generic version of the topic.

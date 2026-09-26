@@ -562,3 +562,123 @@ body:not([data-page-type="lesson"]) .md-footer__inner {
     transition: none;
   }
 }
+
+/* =========================================================================
+   Integration fixes (2026-09-26), found independently by several of the
+   page-type builders. Each rule states the specificity it has to beat.
+   ========================================================================= */
+
+/* Focus ring: Material's `.md-typeset a.focus-visible` (0,2,1) paints the
+   amber accent (about 1.9:1 in the light scheme). The html prefix lifts
+   these above it. Hover and focus no longer turn link text amber either;
+   the underline thickens instead. */
+html .md-typeset a:is(:focus-visible, .focus-visible),
+html .md-typeset summary:is(:focus-visible, .focus-visible),
+html .md-typeset button:is(:focus-visible, .focus-visible),
+html .hub-bar :is(a, button):focus-visible,
+html .hub-dock a:focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+html .md-typeset a:not(.md-button):is(:hover, :focus, :focus-visible, .focus-visible) {
+  color: var(--md-typeset-a-color);
+}
+
+/* Footer links in one row: Material's `.md-typeset ul:not([hidden])`
+   display rule outranked the plain class. */
+.md-copyright ul.footer-links:not([hidden]) {
+  display: flex;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-copyright ul.footer-links:not([hidden]) {
+    display: grid;
+  }
+}
+
+/* Buttons outside .md-typeset (the phone bar and the desktop dock) get
+   Material's button look explicitly; its styles are scoped to .md-typeset. */
+:where(.hub-bar, .hub-dock) .md-button {
+  border: 0.1rem solid var(--hub-button-bg);
+  background: transparent;
+  color: var(--hub-button-bg);
+  font-family: inherit;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Secondary (outline) buttons in the dark scheme: #07618c on slate was
+   2.37:1. */
+[data-md-color-scheme="slate"] :is(.md-typeset .page-action, .hub-dock, .hub-bar) .md-button:not(.md-button--primary) {
+  color: #8cc4e2;
+  border-color: #8cc4e2;
+}
+
+/* Reading column centred on wide screens: Material's
+   `[dir=ltr] .md-sidebar--primary:not([hidden]) ~ .md-content >
+   .md-content__inner` sets a fixed left margin at (0,5,0). */
+@media screen and (min-width: 45em) {
+  body[data-page-type="task"] .md-main .md-content > .md-content__inner,
+  body[data-page-type="lesson"] .md-main .md-content > .md-content__inner,
+  body[data-page-type="reference"] .md-main .md-content > .md-content__inner {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* The shelf summary is for phones only; the base rule above came after
+   the rule hiding it from 60em. */
+@media screen and (min-width: 60em) {
+  .md-typeset .shelf .shelf__summary {
+    display: none;
+  }
+}
+
+/* [hidden] must win over any component display rule. */
+.md-typeset [hidden] {
+  display: none !important;
+}
+
+/* The chevron on card rows must not swallow the tap meant for the row. */
+.md-typeset .grid.cards > ul > li ul > li::after {
+  pointer-events: none;
+}
+
+/* Meta items flow as one line and wrap as text, instead of stranding each
+   item on its own line behind a dot. */
+.md-typeset .meta-chip,
+.md-typeset .meta-note {
+  display: inline;
+}
+
+/* Tighter space above and below the title on phones (L2). */
+@media screen and (max-width: 44.9375em) {
+  .md-main__inner {
+    margin-top: 0.6rem;
+  }
+  .md-typeset h1 {
+    margin-bottom: 0.8rem;
+  }
+}
+
+/* The review line now sits inside the page ending (layout_frame.py). */
+.md-typeset .page-end .page-reviewed {
+  margin: 0 0 0.4rem;
+  padding: 0;
+  border: 0;
+}
+
+/* Tab links are 20px-tall text inside a 44 to 48px tab: the link, not the
+   tab, is what takes the tap. A transparent pseudo-element widens the hit
+   area to the full tab without changing how the tab looks (2026-09-26). */
+.md-tabs__link {
+  position: relative;
+}
+
+.md-tabs__link::after {
+  content: "";
+  position: absolute;
+  inset: -0.6rem -0.4rem;
+}

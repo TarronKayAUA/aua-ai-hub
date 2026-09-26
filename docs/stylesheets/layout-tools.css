@@ -658,3 +658,10 @@
     white-space: normal;
   }
 }
+
+/* Tool names are the card's link: give them a 24px target (WCAG 2.5.8)
+   without changing the card's look (integration fix, 2026-09-26). */
+.md-typeset .tool-card-title a {
+  display: inline-block;
+  padding-block: 0.1rem;
+}

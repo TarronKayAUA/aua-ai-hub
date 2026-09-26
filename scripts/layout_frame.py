@@ -10,7 +10,8 @@ one of five types, each with a frame the whole site shares:
   shelf      catalogues (directory, library, news, calendars): wide, no
              "on this page" column
 
-A page chooses its type with front matter `template: <type>`. Without it,
+A page chooses its type with front matter `page_type: <type>` (not
+`template:`, which MkDocs reserves for a Jinja template name). Without it,
 the type comes from the page's address, so the nine narrated pages and the
 pipeline-owned news pages never need editing (their spoken text and their
 generated source stay untouched; everything here is injected into the
@@ -18,7 +19,7 @@ rendered HTML, which narration and search do not read).
 
 Front matter this hook understands:
 
-  template: door | task | lesson | reference | shelf
+  page_type: door | task | lesson | reference | shelf
   action:                       # at most one primary, one secondary
     - text: Start Module 1: How AI Works (10 minutes)
       link: pathway/how-ai-works.md     # a docs path, optional #anchor
@@ -32,7 +33,6 @@ missing target fails the build instead of shipping a broken button.
 """
 from __future__ import annotations
 
-import datetime as _dt
 import html as _html
 import re
 
@@ -48,7 +48,11 @@ SHELF = {"tools/index.md", "prompts/index.md", "prompts/exchange.md",
 
 
 def page_type(page) -> str:
-    chosen = (page.meta or {}).get("template")
+    meta = page.meta or {}
+    if meta.get("template") in TYPES:
+        raise ValueError(f"layout_frame: {page.file.src_uri} sets template: {meta['template']}; "
+                         "use page_type: (MkDocs reads template: as a Jinja file name)")
+    chosen = meta.get("page_type")
     if chosen in TYPES:
         return chosen
     src = page.file.src_uri
@@ -147,26 +151,17 @@ def _feedback_url(config) -> str | None:
     return None
 
 
-def _reviewed(value) -> str | None:
-    if isinstance(value, _dt.date):
-        return f"{value:%B} {value.day}, {value.year}"
-    if isinstance(value, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", value):
-        d = _dt.date.fromisoformat(value)
-        return f"{d:%B} {d.day}, {d.year}"
-    return None
-
-
-def _page_end(page, config) -> str:
+def _page_end(page, config, reviewed_html: str = "") -> str:
+    """The standard ending. The review date comes from render_data.py's
+    existing freshness line (it also says how review dates are kept), moved
+    in here so the date appears once; this hook never prints its own."""
     bits = []
-    reviewed = _reviewed(page.meta.get("last_reviewed"))
+    if reviewed_html:
+        bits.append(reviewed_html)
     feedback = _feedback_url(config)
-    line = []
-    if reviewed:
-        line.append(f"Content last reviewed {reviewed}.")
     if feedback:
-        line.append(f'<a href="{_html.escape(feedback)}">Report a problem with this page</a>')
-    if line:
-        bits.append('<p class="page-end__meta">' + " ".join(line) + "</p>")
+        bits.append(f'<p class="page-end__meta"><a href="{_html.escape(feedback)}">'
+                    "Report a problem with this page</a></p>")
     back = _back_target(page)
     if back:
         title, target = back
@@ -183,8 +178,15 @@ def on_page_content(html, page, config, files):
     if action:
         html = _insert_after_head(html, action)
     if kind != "door":
-        html = html + _page_end(page, config)
+        reviewed = ""
+        m = _REVIEWED_P.search(html)
+        if m:
+            reviewed, html = m.group(0), html[:m.start()] + html[m.end():]
+        html = html + _page_end(page, config, reviewed)
     return html
+
+
+_REVIEWED_P = re.compile(r'<p class="page-reviewed">.*?</p>', re.S)
 
 
 def on_post_page(output, page, config):

@@ -62,14 +62,14 @@ hide:
 
 </section>
 
-<!-- Until governance/can-i.md is published, "Can I use AI for this?"
-     opens the Governance page, whose "policy in brief" answers the common
-     cases; point it at governance/can-i.md, and drop the sub-line, the day
-     that page ships. -->
+<!-- "Can I use AI for this?" depends on governance/can-i.md, which waits for
+     AI Committee comment (owner decision 3). If the rest of the redesign
+     ships before that page does, point this row at governance/index.md
+     with the sub-line "The policy in brief, on the Governance page". -->
 <div class="home-routes" markdown>
 
 - [New to AI? The basics in <!-- timely:minutes pathway/how-ai-works.md pathway/prompting.md pathway/rules.md --> minutes](pathway/index.md) <span class="row-sub">Modules 1 to 3 of the AI Literacy Pathway</span>
-- [Can I use AI for this?](governance/index.md) <span class="row-sub">The policy in brief, on the Governance page</span>
+- [Can I use AI for this?](governance/can-i.md) <span class="row-sub">Short answers, each linked to the policy</span>
 
 </div>
 

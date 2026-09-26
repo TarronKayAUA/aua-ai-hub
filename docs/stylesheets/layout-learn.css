@@ -329,19 +329,14 @@ body[data-page-type="lesson"] .md-typeset h1 {
   color: var(--md-default-fg-color--light);
 }
 
-/* The competency domain, moved from the head to the foot. The page ending
-   below repeats the review date, so the older freshness line is hidden on
-   the modules (it is still in the HTML). */
+/* The competency domain, moved from the head to the foot. The review
+   date now sits once, inside the shared page ending. */
 .md-typeset .learn-foot {
   margin: 1.8rem 0 0;
   line-height: 1.45;
 }
 
-body[data-page-type="lesson"] .md-typeset .page-reviewed {
-  display: none;
-}
-
-body[data-page-type="lesson"] .md-typeset .learn-foot + .page-reviewed + .page-end {
+body[data-page-type="lesson"] .md-typeset .learn-foot + .page-end {
   margin-top: 0.8rem;
 }
 
