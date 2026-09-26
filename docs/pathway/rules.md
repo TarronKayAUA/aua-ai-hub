@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Module 3: The Policy in Practice
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: Ethical Use of AI</span>
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span>
 
 ## What you will be able to do
 
@@ -82,3 +82,5 @@ If you see misuse, a data exposure, or a tool producing harmful or discriminator
 - [For Students](../students.md): the same guidance in student terms, stage by stage.
 
 **Next:** [Module 4: Teaching and Assessment](teaching-assessment.md), [Module 5: Research and Scholarship](research.md), or [Module 6: Clinical Contexts](clinical.md), depending on your role.
+
+<span class="meta-chip">Central Group on Educational Affairs (CGEA) competency domain: Ethical Use of AI</span>

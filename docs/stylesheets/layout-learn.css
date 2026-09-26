@@ -1,1 +1,653 @@
-/* Layout redesign (2026-09-25): styles for the learn page type package. */
+/* =========================================================================
+   Learn landing and the seven modules (layout redesign, 2026-09-25;
+   plan L13, navigation plan step 9). Markup comes from
+   scripts/layout_learn.py (progress strip, Next buttons, foot line,
+   Continue slot), docs/javascripts/listen.js (the Listen row, on every
+   narrated page and news brief) and docs/javascripts/layout-learn.js
+   (Continue where you left off). Loaded after layout.css.
+   ========================================================================= */
+
+/* Screen-reader-only text (speed announcements, a brief's name). */
+.listen-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* --- The Listen row --------------------------------------------------------
+   Two outline buttons, 48px tall: Listen is one way to take in the page,
+   not the page's filled primary, and Speed is one button that cycles
+   instead of six 23px pills. The AI-voice note stays as one muted line.
+   Applies wherever listen.js has enhanced a player (data-listen-ready);
+   without JavaScript the native player in extra.css shows instead. */
+.md-typeset .listen[data-listen-ready] {
+  display: block;
+  margin: 0.9rem 0 1.5rem;
+}
+
+.md-typeset .section-brief .listen[data-listen-ready] {
+  margin: 0.4rem 0 0.6rem;
+}
+
+.listen-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.listen-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.4rem;
+  margin: 0;
+  padding: 0.3rem 0.75rem;
+  border: 2px solid var(--md-typeset-a-color);
+  border-radius: 0.3rem;
+  background: transparent;
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+.listen-btn svg {
+  flex: none;
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: currentColor;
+}
+
+.listen-btn:hover {
+  background: rgba(7, 97, 140, 0.08);
+}
+
+[data-md-color-scheme="slate"] .listen-btn:hover {
+  background: rgba(90, 163, 199, 0.12);
+}
+
+.listen-btn:disabled {
+  border-color: var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color--light);
+  cursor: default;
+}
+
+.listen-btn:disabled:hover {
+  background: transparent;
+}
+
+/* On a phone both fit one 358px row (Listen takes what Speed leaves);
+   below about 350px Speed wraps under it rather than squeezing. */
+.listen-play {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.listen-rate {
+  flex: 0 0 auto;
+  min-width: 6rem;
+  font-variant-numeric: tabular-nums;
+}
+
+@media screen and (min-width: 45em) {
+  .listen-play {
+    flex: 0 0 auto;
+    min-width: 13rem;
+  }
+}
+
+.listen-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 30rem;
+  margin-top: 0.5rem;
+}
+
+.listen-progress[hidden] {
+  display: none;
+}
+
+.listen-seek {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 1.5rem;
+  margin: 0;
+  accent-color: var(--hub-button-bg);
+  cursor: pointer;
+}
+
+.listen-time {
+  flex: none;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.md-typeset .listen[data-listen-ready] .listen-note {
+  display: block;
+  margin-top: 0.45rem;
+  line-height: 1.45;
+}
+
+/* --- Head meta line (landing and modules) -----------------------------------
+   The shared meta line puts a dot before each item after the first. When
+   the line wraps on a phone, that dot started the second line. Here each
+   dot sits in its item's left padding, and the paragraph is shifted left
+   by that much and clipped, so a dot at the start of any line is cut off
+   while dots between items stay. */
+.md-typeset p.learn-meta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.9rem;
+  clip-path: inset(0 0 0 0.9rem);
+}
+
+.md-typeset p.learn-meta > .meta-chip {
+  position: relative;
+  padding-left: 0.9rem;
+}
+
+.md-typeset p.learn-meta > .meta-chip::before {
+  content: "\00b7";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.9rem;
+  margin: 0;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- Module head: "Module N of 7" ----------------------------------------- */
+body[data-page-type="lesson"] .md-typeset h1 {
+  margin-bottom: 0.7rem;
+}
+
+.md-typeset .learn-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 0.3rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.md-typeset .learn-progress__label {
+  flex: none;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .learn-progress__track {
+  display: flex;
+  flex: 0 1 12rem;
+  gap: 0.2rem;
+}
+
+.md-typeset .learn-progress__track > span {
+  flex: 1 1 0;
+  height: 0.3rem;
+  border-radius: 0.15rem;
+  background: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .learn-progress__track > .is-current {
+  background: var(--aua-figure-fill);
+}
+
+/* --- Module end: the authored Next line as buttons -------------------------- */
+.md-typeset .learn-next {
+  margin: 2.2rem 0 1.4rem;
+}
+
+.md-typeset .learn-next__label {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .learn-next__text {
+  margin: 0 0 0.8rem;
+}
+
+.md-typeset .learn-next__btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-height: 3.4rem;
+  margin: 0;
+  padding: 0.65rem 3rem 0.65rem 1rem;
+  border-width: 2px;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+.md-typeset .learn-next__btn::after {
+  content: "\2192";
+  position: absolute;
+  top: 50%;
+  right: 1.1rem;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.md-typeset .learn-next__title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.md-typeset .learn-next__sub {
+  margin-top: 0.15rem;
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+/* The one filled button at the end of a module. Material's own hover and
+   focus turn buttons amber; here they darken to navy instead. */
+.md-typeset .learn-next__btn.md-button--primary,
+.md-typeset .learn-next__btn.md-button--primary:focus {
+  background-color: var(--hub-button-bg);
+  border-color: var(--hub-button-bg);
+  color: var(--hub-button-fg);
+}
+
+.md-typeset .learn-next__btn.md-button--primary:hover {
+  background-color: var(--hub-navy);
+  border-color: var(--hub-navy);
+  color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .learn-next__btn.md-button--primary:hover {
+  background-color: #1f6690;
+  border-color: #1f6690;
+}
+
+/* A choice ("Module 4, 5, or 6"): equal outline buttons, with "or"
+   between them as the source line has it. */
+[dir] .md-typeset .learn-next__choices {
+  display: grid;
+  gap: 0.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .learn-next__choices > li {
+  margin: 0;
+  padding: 0;
+}
+
+.md-typeset .learn-next__choices > li + li::before {
+  content: "or";
+  display: block;
+  margin: 0 0 0.3rem;
+  font-size: 0.72rem;
+  text-align: center;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .learn-next__btn--choice,
+.md-typeset .learn-next__btn--choice:focus {
+  background: transparent;
+  border-color: var(--md-typeset-a-color);
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .learn-next__btn--choice:hover {
+  background: rgba(7, 97, 140, 0.08);
+  border-color: var(--md-typeset-a-color);
+  color: var(--md-typeset-a-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .learn-next__btn--choice:hover {
+  background: rgba(90, 163, 199, 0.12);
+}
+
+.md-typeset .learn-next__btn--choice .learn-next__sub {
+  color: var(--md-default-fg-color--light);
+}
+
+/* The competency domain, moved from the head to the foot. The page ending
+   below repeats the review date, so the older freshness line is hidden on
+   the modules (it is still in the HTML). */
+.md-typeset .learn-foot {
+  margin: 1.8rem 0 0;
+  line-height: 1.45;
+}
+
+body[data-page-type="lesson"] .md-typeset .page-reviewed {
+  display: none;
+}
+
+body[data-page-type="lesson"] .md-typeset .learn-foot + .page-reviewed + .page-end {
+  margin-top: 0.8rem;
+}
+
+/* --- Learn landing ----------------------------------------------------------
+   Intro and the reference shelf side by side from 60em, the route map
+   across the full width under them; one column on phones, in reading
+   order (intro, map, shelf). */
+.md-typeset .learn-door__intro > p,
+.md-typeset .learn-door__intro > ul {
+  max-width: 36rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .learn-door {
+    display: grid;
+    grid-template-columns: minmax(0, 36rem) minmax(16rem, 21rem);
+    grid-template-areas:
+      "intro shelf"
+      "map map"
+      "legend legend";
+    justify-content: space-between;
+    column-gap: 3rem;
+    align-items: start;
+  }
+  .md-typeset .learn-door__intro {
+    grid-area: intro;
+  }
+  .md-typeset .learn-door .route-map {
+    grid-area: map;
+  }
+  .md-typeset .learn-door .route-legend {
+    grid-area: legend;
+  }
+  .md-typeset .learn-door .learn-shelf {
+    grid-area: shelf;
+    margin-top: 0.4rem;
+  }
+}
+
+/* Continue where you left off: filled in by layout-learn.js from this
+   browser's storage; hidden (and empty) when nothing is stored. */
+.md-typeset .learn-continue {
+  max-width: 36rem;
+  margin: -0.4rem 0 1.6rem;
+  padding: 0.75rem 1rem 0.6rem;
+  border: 1px solid var(--hub-row-rule);
+  border-left: 3px solid var(--aua-figure-line);
+  border-radius: 0.4rem;
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .learn-continue[hidden] {
+  display: none;
+}
+
+.md-typeset h2.learn-continue__title {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .learn-continue__lead {
+  margin: 0 0 0.35rem;
+  font-size: 0.72rem;
+}
+
+.md-typeset .learn-continue__row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 2.8rem;
+  margin: 0 -0.5rem;
+  padding: 0.5rem 2.3rem 0.5rem 0.5rem;
+  border-top: 1px solid var(--hub-row-rule);
+  border-radius: 0.2rem;
+  text-decoration: none;
+}
+
+.md-typeset .learn-continue__row:hover {
+  background: rgba(7, 97, 140, 0.06);
+}
+
+.md-typeset .learn-continue__row::after {
+  content: "\203a";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .learn-continue__row:hover .learn-continue__name {
+  text-decoration: underline;
+}
+
+.md-typeset .learn-continue__name {
+  font-weight: 700;
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .learn-continue__sub {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .learn-continue__foot {
+  margin: 0.3rem 0 0;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--hub-row-rule);
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.learn-continue__forget {
+  min-height: 1.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+}
+
+/* The route map carries the minutes: each stop names its length (checked
+   against the page's own chip at build time), role modules name their
+   audience, and the hands-on guides are open dots, not numbers. The whole
+   row is the link. */
+[dir] .md-typeset .route-stage ul > li {
+  position: relative;
+  align-items: flex-start;
+  padding: 0.35rem 0.3rem 0.35rem 0;
+  border-radius: 0.3rem;
+}
+
+.md-typeset .route-stage ul > li:hover {
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .route-stage ul > li:has(a:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 1px;
+}
+
+.md-typeset .route-stage ul > li a:focus-visible {
+  outline: none;
+}
+
+.md-typeset .route-n {
+  pointer-events: none;
+}
+
+.md-typeset .route-text {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+  padding-top: 0.2rem;
+}
+
+.md-typeset .route-text a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.md-typeset .route-for {
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .route-min {
+  flex: none;
+  margin-left: auto;
+  padding-top: 0.25rem;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.md-typeset .route-stage--optional .route-n--guide {
+  border: 0;
+  background: transparent;
+}
+
+.md-typeset .route-n--guide::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 2px solid var(--aua-figure-line);
+  border-radius: 50%;
+  background: var(--md-default-bg-color);
+}
+
+/* "Opened" or "Finished" on this device (layout-learn.js). */
+.md-typeset .route-status {
+  align-self: flex-start;
+  margin-top: 0.15rem;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .route-status--done {
+  color: var(--aua-ok, #2e7d32);
+}
+
+.md-typeset .route-status--done::before {
+  content: "\2713\00a0";
+}
+
+/* The reference shelf: five rows beside the intro on wide screens. */
+.md-typeset .learn-shelf {
+  padding: 0.8rem 1rem 0.3rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.4rem;
+}
+
+.md-typeset .learn-shelf h2 {
+  margin: 0 0 0.15rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.md-typeset .learn-shelf > p {
+  margin: 0 0 0.4rem;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .learn-shelf ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Rows reach 0.5rem into the panel's padding, so the hover tint and the
+   focus ring clear the text while the text stays aligned with the title. */
+[dir] .md-typeset .learn-shelf ul > li {
+  position: relative;
+  margin: 0 -0.5rem;
+  padding: 0.5rem 2.1rem 0.5rem 0.5rem;
+  border-top: 1px solid var(--hub-row-rule);
+  border-radius: 0.2rem;
+  line-height: 1.35;
+}
+
+.md-typeset .learn-shelf li::after {
+  content: "\203a";
+  position: absolute;
+  top: 50%;
+  right: 0.8rem;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .learn-shelf li > a {
+  display: block;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.md-typeset .learn-shelf li > a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.md-typeset .learn-shelf li:hover {
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .learn-shelf li:has(> a:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 1px;
+}
+
+.md-typeset .learn-shelf li > a:focus-visible {
+  outline: none;
+}
+
+.md-typeset .learn-shelf__sub {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-typeset .learn-shelf {
+    margin-top: 1.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .listen-btn,
+  .md-typeset .learn-next__btn {
+    transition: background-color 0.12s ease, border-color 0.12s ease;
+  }
+}

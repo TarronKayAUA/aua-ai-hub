@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Module 7: Working with Agents
 
-<span class="meta-chip">Optional, for when the basics feel comfortable</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domains: Working with AI, Critical Appraisal of AI Outputs</span>
+<span class="meta-chip">Optional, for when the basics feel comfortable</span><span class="meta-chip">About 12 minutes</span>
 
 ## What you will be able to do
 
@@ -75,3 +75,5 @@ An agent can read every file in the folder you open for it, and what it reads go
 - [Skills](../tools/skills.md): the document skills you already have, and how to judge the ones you would have to install.
 
 **Next:** [Choosing Your Interface](../tools/interfaces.md) picks the room, then [Your First Agent Session](../tools/first-session.md) puts this module into practice in 20 minutes.
+
+<span class="meta-chip">Central Group on Educational Affairs (CGEA) competency domains: Working with AI, Critical Appraisal of AI Outputs</span>
