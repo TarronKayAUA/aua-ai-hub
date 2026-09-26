@@ -2,9 +2,9 @@
 last_reviewed: 2026-09-01
 ---
 
-# Playbook: Making Sense of Your Score Reports
+# Shelf and NBME Score Reports
 
-<span class="meta-chip">For students and their advisors</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
+<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For students and their advisors</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
 ## The task
 

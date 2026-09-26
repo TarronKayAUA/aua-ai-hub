@@ -2,9 +2,9 @@
 last_reviewed: 2026-09-01
 ---
 
-# Playbook: Administrative Drafting
+# Administrative Drafting: Memos, Minutes, and Reports
 
-<span class="meta-chip">For faculty and staff</span><span class="meta-chip">About 7 minutes</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
+<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For faculty and staff</span><span class="meta-chip">About 7 minutes</span> <span class="meta-note">Works with any capable assistant in the [tools directory](../tools/index.md)</span>
 
 ## The task
 

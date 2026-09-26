@@ -26,7 +26,7 @@ How the American University of Antigua College of Medicine (AUACOM) governs arti
 
     [Meet the committee](committee.md)
 
-- :material-bullhorn:{ .lg .middle } __Committee Updates__
+- :material-bullhorn:{ .lg .middle } __Committee Work and Updates__
 
     ---
 

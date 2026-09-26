@@ -2,9 +2,9 @@
 last_reviewed: 2026-09-01
 ---
 
-# Playbook: Your Syllabus AI Statement
+# Your Syllabus AI Statement
 
-<span class="meta-chip">For faculty</span><span class="meta-chip">About 6 minutes</span> <span class="meta-note">Templates below are starting points, adapt to your course</span>
+<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For faculty</span><span class="meta-chip">About 6 minutes</span> <span class="meta-note">Templates below are starting points, adapt to your course</span>
 
 ## The task
 

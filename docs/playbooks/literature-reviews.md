@@ -2,9 +2,9 @@
 last_reviewed: 2026-09-01
 ---
 
-# Playbook: Reviewing the Literature
+# Reviewing the Literature
 
-<span class="meta-chip">For faculty and graduate student researchers</span><span class="meta-chip">About 9 minutes</span> <span class="meta-note">From question to appraised evidence</span>
+<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For faculty and graduate student researchers</span><span class="meta-chip">About 9 minutes</span> <span class="meta-note">From question to appraised evidence</span>
 
 ## The task
 

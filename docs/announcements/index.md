@@ -1,6 +1,6 @@
-# Announcements
+# Announcements and Committee Polls
 
-Announcements about the AUA AI Hub and from the AI Committee, newest first.
+Announcements about the AUA AI Hub and from the AI Committee, newest first, and the committee's [polls](#committee-polls).
 
 - **July 27, 2026**: [The AUA AI Hub is open to the community](2026-07-27-institution-wide-rollout.md)
 - **June 9, 2026**: [Welcome to the AUA AI Hub](2026-06-09-aua-ai-hub-launch.md)
@@ -9,4 +9,4 @@ Announcements about the AUA AI Hub and from the AI Committee, newest first.
 
 <!-- render:polls -->
 
-For what the AI Committee is currently working on, see [Committee Updates](../governance/updates.md).
+For what the AI Committee is currently working on, see [Committee Work and Updates](../governance/updates.md).

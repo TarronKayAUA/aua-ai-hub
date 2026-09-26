@@ -1301,7 +1301,7 @@ def _render_polls(config) -> str:
         lines.append(
             "No poll is open right now. New polls from the AI Committee "
             "are announced here, and results are reported on the "
-            "[Committee Updates](../governance/updates.md) page."
+            "[Committee Work and Updates](../governance/updates.md) page."
         )
     if closed:
         lines.append("")

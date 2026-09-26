@@ -84,4 +84,4 @@ Whatever a tool contributed, the work you sign is yours. Read AI-drafted teachin
 
 ## Shape the site
 
-The [Committee Updates page](governance/updates.md) shows what the AI Committee is working on. More playbooks are planned; to request one, or to report anything wrong, missing, or confusing, use the [feedback form](https://forms.office.com/r/5a8RCi2YKP) (five questions, about two minutes). Prompts that work for you belong in the [Prompt Exchange](prompts/exchange.md), and contributions that hold up in testing can be promoted into the library with credit.
+The [Committee Work and Updates page](governance/updates.md) shows what the AI Committee is working on. More playbooks are planned; to request one, or to report anything wrong, missing, or confusing, use the [feedback form](https://forms.office.com/r/5a8RCi2YKP) (five questions, about two minutes). Prompts that work for you belong in the [Prompt Exchange](prompts/exchange.md), and contributions that hold up in testing can be promoted into the library with credit.

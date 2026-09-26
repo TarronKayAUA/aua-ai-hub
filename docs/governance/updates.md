@@ -2,7 +2,7 @@
 last_reviewed: 2026-09-01
 ---
 
-# Committee Updates
+# Committee Work and Updates
 
 What the [AI Committee](committee.md) is working on, and the updates it posts to the American University of Antigua College of Medicine (AUACOM) community. The projects list below is maintained by the committee chair.
 

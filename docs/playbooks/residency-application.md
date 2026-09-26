@@ -2,9 +2,9 @@
 last_reviewed: 2026-09-01
 ---
 
-# Playbook: AI and the Residency Application
+# AI and the Residency Application
 
-<span class="meta-chip">For students</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">How to use AI well in the application year, not what to apply to</span>
+<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For students</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">How to use AI well in the application year, not what to apply to</span>
 
 This playbook covers the tasks of the application year where artificial intelligence (AI) genuinely helps, the one task where it mostly does not, and the rules that actually apply to you as an international medical graduate (IMG).
 

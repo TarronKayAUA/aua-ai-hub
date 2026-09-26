@@ -2,9 +2,9 @@
 last_reviewed: 2026-09-01
 ---
 
-# Playbook: AI-Generated Images in Teaching
+# AI-Generated Images in Teaching
 
-<span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Anatomy, histology, pathology, and any teaching material where a picture carries the content</span>
+<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Anatomy, histology, pathology, and any teaching material where a picture carries the content</span>
 
 ## The task
 

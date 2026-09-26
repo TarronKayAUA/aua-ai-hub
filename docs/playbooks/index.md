@@ -2,7 +2,7 @@
 last_reviewed: 2026-09-01
 ---
 
-# Playbooks
+# Step-by-Step Guides
 
 Task-level walkthroughs for getting real work done with artificial intelligence (AI) at the American University of Antigua College of Medicine (AUACOM). Where the [Prompt Library](../prompts/index.md) gives you the words and the [AI Literacy Pathway](../pathway/index.md) gives you the foundations, a playbook walks one task end to end: where AI helps, what to gather, the workflow, good practice for that specific task, and what to verify before you rely on the result.
 
