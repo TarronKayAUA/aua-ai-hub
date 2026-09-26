@@ -168,8 +168,15 @@ markdown_extensions:
   - pymdownx.snippets:
       check_paths: true
   - pymdownx.superfences
+  # Clickable since the layout redesign (owner decision 13, 2026-09-25):
+  # the guides' "Before you rely on it" checklists are the only task lists
+  # on the site, and a box you can tick is a better prompt to check than a
+  # disabled one that looks tappable (PH-16). Ticks are never stored; they
+  # reset on reload. scripts/layout_guides.py puts each item's text inside
+  # its label, so the whole row is the target and the box has a name.
   - pymdownx.tasklist:
       custom_checkbox: true
+      clickable_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg

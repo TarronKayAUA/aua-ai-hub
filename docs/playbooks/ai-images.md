@@ -6,39 +6,12 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Anatomy, histology, pathology, and any teaching material where a picture carries the content</span>
 
+**The short version:** artificial intelligence (AI) image generators are not a reliable source of anatomical teaching figures, the failure is not visible to a reader who does not already know the anatomy, and the alternative you want is usually a resource you have not exhausted yet rather than a generated picture.
+{: .guide-lede }
+
 ## The task
 
 You need a figure for a session, and the view you want does not turn up in the atlas or the slide bank. An image generator will produce something in seconds. This page is about whether to use it, what it costs when you do, and what to reach for instead.
-
-The short version: artificial intelligence (AI) image generators are not a reliable source of anatomical teaching figures, the failure is not visible to a reader who does not already know the anatomy, and the alternative you want is usually a resource you have not exhausted yet rather than a generated picture.
-
-## Why a wrong picture is worse than no picture
-
-Two findings, from separate literatures, meet here.
-
-Distinctive visual material tends to be remembered better than plain text, an effect documented since the 1970s ([Standing, 1973](https://doi.org/10.1080/14640747308400340)). Recent work suggests the advantage comes from how perceptually distinctive the material is rather than from images being stored in a separate memory channel ([Higdon et al., 2024](https://doi.org/10.1177/17470218241235520)). No one has tested anatomical diagrams against anatomical terms, so the teaching-facing version is an extrapolation, but the practical expectation is reasonable: the picture on the slide is likely to outlast the words you say next to it.
-
-Misunderstandings of core biomedical concepts then prove stubborn. In a two-tier test given to 987 medical students across an entire curriculum, incorrect responses fell between the first and second year and then stayed flat at roughly 35 percent from the second year through to the final year ([Badenhorst et al., 2021](https://doi.org/10.1152/advan.00203.2020)). A separate study, of 161 first-year students in cardiovascular physiology, points at confidence as what makes them stick: when a student was confident in a wrong answer, only 35.8 percent of those answers were later corrected, against 61.4 percent when confidence was low ([Versteeg et al., 2020](https://doi.org/10.1186/s12909-020-02166-6)).
-
-No one has run the study that joins these two findings, but the prediction is not subtle. An inaccurate image shown at first exposure is memorable, it arrives with the authority of a teaching slide, and it produces the kind of confident belief that later correction struggles against.
-
-## What the evidence says about these tools
-
-Peer-reviewed evaluations are consistent, and specific enough to be useful:
-
-- A 2024 study in *Anatomical Sciences Education* found that none of three popular generators produced a skull, heart, or brain illustration that was both detailed and anatomically accurate. Foramina, suture lines, and coronary artery origins were routinely missing or wrong ([Noel, 2024](https://doi.org/10.1002/ase.2336)).
-- In a 2025 study of 736 craniofacial images, physician reviewers scored even the best model below 3 out of 5 for anatomical detail, with foramina, suture lines, muscle origins and insertions, and neurovascular structures misrendered across every model tested. The same study reported that labels on those images were frequently illegible or nonsensical ([Haider et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11989924/)).
-- A 2025 study generating 1,500 images for hand surgery patient education found fabricated anatomy in 99.8 percent of them, even though four of the six generators matched real patient-education materials on visual detail and clarity ([Duggan et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12547223/)).
-- A 2025 comparison in *Clinical Anatomy* found most tools could not render a thorax with the correct number of ribs, with bony structures the weakest area, though heart and brain depictions were mostly acceptable ([Eldesoqui et al., 2025](https://doi.org/10.1002/ca.70002)).
-
-Notice what the second and third findings mean together. The images score well on looking detailed and badly on being right. Visual quality carries no information about accuracy, which is why a glance at whether a figure looks professional tells you nothing, and why the review that matters has to come from someone who knows the structure.
-
-The mechanism is measurable. On a large 2025 benchmark, leading image models rendered recognizable objects 88 to 99 percent of the time but handled counting only 55 to 70 percent of the time and spatial relations 37 to 70 percent of the time, with accuracy falling as a prompt asks for more elements at once ([Kamath et al., 2025](https://arxiv.org/abs/2512.16853)). Anatomy is largely counting and spatial relations.
-
-Read those figures with one caveat. Published evaluations lag the products: the models tested above are one to three generations behind what vendors currently ship, and no independent evaluation of the newest image models on anatomical accuracy has been published. The numbers may understate current capability. What has not changed is that the failure modes are structural, and that you cannot tell from the image which case you are in.
-
-!!! note "This is unreliability, not uniform failure"
-    The same *Clinical Anatomy* comparison found that all four generators produced accurate gross brain reconstructions, two of the four produced anatomically correct hearts, and one produced a satisfactory hand skeleton and sternum while the other three misrendered them. Models have also improved measurably between generations. The problem is not that everything comes out wrong; it is that you cannot tell which parts did. General-purpose vendors describe their image models in terms of speed, resolution, and visual quality, never clinical correctness, and none documents medical or anatomical validation. Where a specialist tool does advertise anatomical accuracy, its own instructions still tell you to have a clinician review the output.
 
 ## Generated pictures and rendered models are not the same thing
 
@@ -92,5 +65,33 @@ Meeting all four is not a guarantee. The ophthalmic study already showed each fl
 - Identifiable patient images, including clinical photographs, are protected health information (PHI), which the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps out of public AI tools.
 
 Students are meeting these tools too, and generating their own study figures. The student-facing version of this guidance is on the [Common Misconceptions](../basics/misconceptions.md) page.
+
+## Why a wrong picture is worse than no picture
+
+Two findings, from separate literatures, meet here.
+
+Distinctive visual material tends to be remembered better than plain text, an effect documented since the 1970s ([Standing, 1973](https://doi.org/10.1080/14640747308400340)). Recent work suggests the advantage comes from how perceptually distinctive the material is rather than from images being stored in a separate memory channel ([Higdon et al., 2024](https://doi.org/10.1177/17470218241235520)). No one has tested anatomical diagrams against anatomical terms, so the teaching-facing version is an extrapolation, but the practical expectation is reasonable: the picture on the slide is likely to outlast the words you say next to it.
+
+Misunderstandings of core biomedical concepts then prove stubborn. In a two-tier test given to 987 medical students across an entire curriculum, incorrect responses fell between the first and second year and then stayed flat at roughly 35 percent from the second year through to the final year ([Badenhorst et al., 2021](https://doi.org/10.1152/advan.00203.2020)). A separate study, of 161 first-year students in cardiovascular physiology, points at confidence as what makes them stick: when a student was confident in a wrong answer, only 35.8 percent of those answers were later corrected, against 61.4 percent when confidence was low ([Versteeg et al., 2020](https://doi.org/10.1186/s12909-020-02166-6)).
+
+No one has run the study that joins these two findings, but the prediction is not subtle. An inaccurate image shown at first exposure is memorable, it arrives with the authority of a teaching slide, and it produces the kind of confident belief that later correction struggles against.
+
+## What the evidence says about these tools
+
+Peer-reviewed evaluations are consistent, and specific enough to be useful:
+
+- A 2024 study in *Anatomical Sciences Education* found that none of three popular generators produced a skull, heart, or brain illustration that was both detailed and anatomically accurate. Foramina, suture lines, and coronary artery origins were routinely missing or wrong ([Noel, 2024](https://doi.org/10.1002/ase.2336)).
+- In a 2025 study of 736 craniofacial images, physician reviewers scored even the best model below 3 out of 5 for anatomical detail, with foramina, suture lines, muscle origins and insertions, and neurovascular structures misrendered across every model tested. The same study reported that labels on those images were frequently illegible or nonsensical ([Haider et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC11989924/)).
+- A 2025 study generating 1,500 images for hand surgery patient education found fabricated anatomy in 99.8 percent of them, even though four of the six generators matched real patient-education materials on visual detail and clarity ([Duggan et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12547223/)).
+- A 2025 comparison in *Clinical Anatomy* found most tools could not render a thorax with the correct number of ribs, with bony structures the weakest area, though heart and brain depictions were mostly acceptable ([Eldesoqui et al., 2025](https://doi.org/10.1002/ca.70002)).
+
+Notice what the second and third findings mean together. The images score well on looking detailed and badly on being right. Visual quality carries no information about accuracy, which is why a glance at whether a figure looks professional tells you nothing, and why the review that matters has to come from someone who knows the structure.
+
+The mechanism is measurable. On a large 2025 benchmark, leading image models rendered recognizable objects 88 to 99 percent of the time but handled counting only 55 to 70 percent of the time and spatial relations 37 to 70 percent of the time, with accuracy falling as a prompt asks for more elements at once ([Kamath et al., 2025](https://arxiv.org/abs/2512.16853)). Anatomy is largely counting and spatial relations.
+
+Read those figures with one caveat. Published evaluations lag the products: the models tested above are one to three generations behind what vendors currently ship, and no independent evaluation of the newest image models on anatomical accuracy has been published. The numbers may understate current capability. What has not changed is that the failure modes are structural, and that you cannot tell from the image which case you are in.
+
+!!! note "This is unreliability, not uniform failure"
+    The same *Clinical Anatomy* comparison found that all four generators produced accurate gross brain reconstructions, two of the four produced anatomically correct hearts, and one produced a satisfactory hand skeleton and sternum while the other three misrendered them. Models have also improved measurably between generations. The problem is not that everything comes out wrong; it is that you cannot tell which parts did. General-purpose vendors describe their image models in terms of speed, resolution, and visual quality, never clinical correctness, and none documents medical or anatomical validation. Where a specialist tool does advertise anatomical accuracy, its own instructions still tell you to have a clinician review the output.
 
 **Related:** [Image Generation Benchmarks](../benchmarks/image.md) for how these models are ranked, and [Preparing a Lecture](lecture-prep.md) for the session the figure belongs to.
