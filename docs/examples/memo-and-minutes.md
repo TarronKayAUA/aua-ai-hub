@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-25
+last_reviewed: 2026-09-26
 action:
   - text: Open the Administrative Drafting guide
     link: playbooks/admin-drafting.md#the-workflow
@@ -9,7 +9,7 @@ action:
 
 <span class="meta-chip">For faculty and staff</span><span class="meta-chip">About 6 minutes</span>
 
-Two everyday drafting jobs, a schedule-change memo and the minutes of the meeting that agreed it, drafted from facts and notes, and the checking that makes them safe to send.
+Two everyday drafting jobs, a schedule-change memo and the minutes of the meeting that agreed it, drafted from facts and notes, and the checking they need before they are sent.
 
 The facts and notes are invented for this example, and the people are roles rather than names. Claude's drafts are its real output, unedited. The same instruction can word things differently each time and in each tool, so yours may differ in the details.
 
@@ -42,7 +42,7 @@ One instruction, used twice in one conversation: first with the memo facts, then
 
     Next meeting Wed Oct 28, same time.
 
-These facts and notes are invented and hold nothing confidential, so they are ordinary material for any capable assistant. Confidential personnel information, student education records, patient health information, and AUA proprietary business information stay out of public artificial intelligence (AI) tools under the [AI Responsible Use Policy](../governance/policy.md#responsible-use), unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data. For a document about an individual, the guide shows how to draft with placeholders and add the specifics yourself.
+These facts and notes are invented and hold nothing confidential, so they are ordinary material for any capable assistant. Confidential personnel information, student education records, patient health information, and AUA proprietary business information stay out of publicly available artificial intelligence (AI) tools under the [AI Responsible Use Policy](../governance/policy.md#responsible-use), unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data. For a document about an individual, the guide shows how to draft with placeholders and add the specifics yourself. A placeholder removes a name, not the confidentiality of what the document says.
 
 ## The prompt
 
@@ -111,23 +111,27 @@ For the minutes, the same sentence with "minutes from exactly these notes". Step
 
 Both drafts are close to ready, which is when a slip gets through. These are the lines a careful sender checks, and why.
 
-1. **Every [TO CONFIRM].** Two in the memo (the date and the room) and three in the minutes (the location and two due dates). They are the gaps made visible: fill each one or take it out before anything is sent.
+1. **Every [TO CONFIRM].** Two in the memo (the date and the room) and three in the minutes (the location and two due dates). They are the gaps made visible. Resolve each one before anything is sent: supply the verified information, say plainly what is still pending, or leave out a detail that is optional. Taking a placeholder out should not hide an open question; a schedule-change memo can go out before a room is assigned, and if the room is still unconfirmed, it says "Room to be announced."
 2. **"What you need to do: reply to the course office"** and **"What you do not need to do: tell the students."** The facts gave both to facilitators. The memo addresses them to everyone on the To line, including faculty who are not facilitating.
 3. **"The committee agreed to move the renal practical..."** The notes never call this meeting a committee. Minutes are the record of who decided what, so name the group as it is.
 4. **"No decision was made."** One risk in drafted minutes is a discussion written up as a decision. It held here; check every "agreed" against your notes anyway (items 1 and 3 were agreed, item 2 was not).
-5. **What the notes did not say.** "12:00 to 1:00 pm" reads "12 to 1" as midday, the year comes from the memo earlier in the conversation, and "Confirm the room ... with facilities" turns "checking with facilities" into a promise to confirm, which is more than the notes record. Each is a reasonable reading, and each is the model's, so confirm it.
+5. **What the notes did not say.** Some of it came from earlier in the conversation: the year, and "the simulation lab" where the notes say only "lab", both come from the memo facts. Some of it is the model's inference: "12:00 to 1:00 pm" reads "12 to 1" as midday, and "Confirm the room ... with facilities" turns "checking with facilities" into a promise to confirm, which is more than the notes record. Confirm that each belongs in the minutes.
 6. **"The room for October 20 is still open..."** Shorthand carried over from the notes. In minutes it could mean the room is free; what is true is that no room is confirmed yet.
-7. **Every date and weekday.** All correct here: Thursday, October 15; Tuesday, October 20; Friday, October 9; Wednesday, October 28. A wrong weekday beside a right date is a common slip, and both documents are records, so check them against a calendar.
+7. **Every date and weekday.** All correct here for 2026: Wednesday, September 30; Friday, October 9; Thursday, October 15; Tuesday, October 20; Wednesday, October 28. A wrong weekday beside a right date is a common slip, and both documents are records, so check them against a calendar.
 
 ## What we changed
 
-**The memo.** The date and room filled in before sending, and the two instructions addressed to the people they are for.
+Our edits, after the checks above. Claude's drafts stay exactly as they came back; every "After" below is our revision.
+
+**The memo.** The two instructions addressed to the people they are for.
 
 - **Before:** "**What you need to do:** reply to the course office by Friday, October 9, to confirm that you can attend on the new date. **What you do not need to do:** tell the students. The course office will let them know."
 - **After:** "**Facilitators:** please reply to the course office by Friday, October 9, to confirm that you can attend on the new date. You do not need to tell the students; the course office will let them know."
+- **Still to do before sending:** this example stops at the draft. A real sender would add the issue date and either the confirmed room or "Room to be announced."
 
 **The minutes.** The committee label removed, the shorthand made plain, and the action matched to what was said.
 
 - **Before:** "The committee agreed to move the renal practical to Tuesday, October 20, at the same time. ... The room for October 20 is still open; the Curriculum Office Coordinator is checking with facilities."
 - **After:** "Agreed: the renal practical moves to Tuesday, October 20, at the same time. ... No room is confirmed for October 20 yet; the Curriculum Office Coordinator is checking with facilities."
-- The action row "Confirm the room for October 20 with facilities" became "Check the room for October 20 with facilities", and the location, the meeting time, and the due dates were confirmed or removed.
+- The action row "Confirm the room for October 20 with facilities" became "Check the room for October 20 with facilities".
+- **Still to do before finalizing:** this example stops at the draft. A real meeting organizer would verify the meeting details (the location, the year, the simulation lab, and the midday time) and the action deadlines before the minutes are circulated.
