@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Module 4: Teaching and Assessment
 
-<span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: AI Possibilities in Medical Education</span>
+<span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span>
 
 ## What you will be able to do
 
@@ -67,3 +67,5 @@ Students will use these tools; ambiguity serves no one. The policy delegates lab
 - [AI-Generated Images in Teaching](../playbooks/ai-images.md): why generated anatomy fails, what to reach for instead, and the conditions under which a flawed image is defensible pedagogy.
 
 **Next:** [Module 5: Research and Scholarship](research.md) or [Module 6: Clinical Contexts](clinical.md)
+
+<span class="meta-chip">Central Group on Educational Affairs (CGEA) competency domain: AI Possibilities in Medical Education</span>

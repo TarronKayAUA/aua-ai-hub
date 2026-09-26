@@ -1640,6 +1640,20 @@ def _reviewed_footer(meta, src: str) -> str:
             f'[About page]({about}).</p>\n')
 
 
+def _listen_kind(player: str, kind: str, name: str = "") -> str:
+    """Tag a player with what it reads ("module", "page" or "brief") and,
+    where several share a page, whose brief it is. docs/javascripts/listen.js
+    turns every player into a compact Listen row (layout redesign,
+    2026-09-25) and names its button from these, so a screen reader hears
+    "Listen to this module" or "Listen to the Medical Education brief"
+    rather than several identical buttons. The audio element, its source
+    and the AI-voice note are unchanged."""
+    attrs = f' data-listen="{kind}"'
+    if name:
+        attrs += f' data-listen-name="{html.escape(name, quote=True)}"'
+    return player.replace('<div class="listen">', f'<div class="listen"{attrs}>', 1)
+
+
 def _inject_narration(src: str, markdown: str) -> str:
     """Add a native audio player wherever a generated MP3 exists for this
     page (scripts/narrate.py). Absent audio means no player, so local
@@ -1650,13 +1664,22 @@ def _inject_narration(src: str, markdown: str) -> str:
     is generated on the maintainer's machine with a metered voice that CI
     has no key for, so a page edited without a local re-run would otherwise
     serve a recording of superseded words. No player is the safe answer, and
-    the daily narration-health workflow raises an issue about it."""
+    the daily narration-health workflow raises an issue about it.
+
+    The player goes under the page's head meta line: the first meta-chip
+    line above the first section heading. Since 2026-09-25 the modules also
+    end with a meta-chip line (the competency domain, moved to the foot),
+    so the search stops at the first "## " rather than taking any meta-chip
+    line on the page."""
     if src in STATIC_PAGES and static_audio_current(src):
         title = re.search(r"^# (.+)$", markdown, flags=re.M)
         label = (title.group(1).strip() if title else src) + ", read aloud"
-        player = player_html(src, page_slug(src), label)
+        kind = "module" if src.startswith("pathway/") else "page"
+        player = _listen_kind(player_html(src, page_slug(src), label), kind)
         lines = markdown.split("\n")
         for i, line in enumerate(lines):
+            if line.startswith("## "):
+                break
             if line.startswith('<span class="meta-chip"'):
                 lines.insert(i + 1, "\n" + player)
                 return "\n".join(lines)
@@ -1678,7 +1701,8 @@ def _inject_narration(src: str, markdown: str) -> str:
                 if audio_exists(slug):
                     chunk = chunk.replace(
                         '<p class="section-brief-date">',
-                        player_html(src, slug, f"{heading} brief, read aloud")
+                        _listen_kind(player_html(src, slug, f"{heading} brief, read aloud"),
+                                     "brief", heading)
                         + '\n<p class="section-brief-date">', 1)
             out.append(chunk)
         return "".join(out)
@@ -1686,7 +1710,8 @@ def _inject_narration(src: str, markdown: str) -> str:
         return markdown.replace(
             "## The week in brief\n",
             "## The week in brief\n\n"
-            + player_html(src, digest_slug(src), "The week in brief, read aloud") + "\n", 1)
+            + _listen_kind(player_html(src, digest_slug(src), "The week in brief, read aloud"), "brief")
+            + "\n", 1)
     return markdown
 
 

@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Module 5: Research and Scholarship
 
-<span class="meta-chip">For faculty and student researchers</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: Using AI in Research and Scholarship</span>
+<span class="meta-chip">For faculty and student researchers</span><span class="meta-chip">About 10 minutes</span>
 
 ## What you will be able to do
 
@@ -81,3 +81,5 @@ Manuscripts and grant applications you receive for peer review are shared with y
 - [Research prompts](../prompts/index.md#research): the question coach, pre-submission reviewer, and reporting guideline auditor.
 
 **Next:** [Module 6: Clinical Contexts](clinical.md)
+
+<span class="meta-chip">Central Group on Educational Affairs (CGEA) competency domain: Using AI in Research and Scholarship</span>

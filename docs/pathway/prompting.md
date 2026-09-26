@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Module 2: Prompting Fundamentals
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domains: Working with AI, Critical Appraisal of AI Outputs</span>
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 15 minutes</span>
 
 ## What you will be able to do
 
@@ -61,3 +61,5 @@ Calibrate verification to stakes: a brainstorm needs a sniff test, a lecture sli
 - [Prompt Library](../prompts/index.md): reusable templates, each with a provisional review status.
 
 **Next:** [Module 3: The Policy in Practice](rules.md)
+
+<span class="meta-chip">Central Group on Educational Affairs (CGEA) competency domains: Working with AI, Critical Appraisal of AI Outputs</span>

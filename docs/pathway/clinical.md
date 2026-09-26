@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Module 6: Clinical Contexts
 
-<span class="meta-chip">For students and clinical faculty</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: AI Enhanced Clinical Encounters</span>
+<span class="meta-chip">For students and clinical faculty</span><span class="meta-chip">About 10 minutes</span>
 
 ## What you will be able to do
 
@@ -81,3 +81,5 @@ Models reflect their training data, and documented performance gaps across popul
 - [AI and the Residency Application](../playbooks/residency-application.md): what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) permit, and how to tell a patient story in a personal statement without identifying the patient.
 
 **Done with the core pathway?** Stage 3 is waiting when you are: [Module 7: Working with Agents](working-with-agents.md). The [Playbooks](../playbooks/index.md) turn these foundations into task-by-task workflows, and the [News](../news/this-week.md) section keeps you current from here.
+
+<span class="meta-chip">Central Group on Educational Affairs (CGEA) competency domain: AI Enhanced Clinical Encounters</span>

@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Module 1: How AI Works
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Central Group on Educational Affairs (CGEA) competency domain: Understanding AI</span>
+<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span>
 
 ## What you will be able to do
 
@@ -65,3 +65,5 @@ Three consequences worth internalizing:
 - [Glossary](../basics/glossary.md): the terms used across the pathway, one paragraph each.
 
 **Next:** [Module 2: Prompting Fundamentals](prompting.md)
+
+<span class="meta-chip">Central Group on Educational Affairs (CGEA) competency domain: Understanding AI</span>
