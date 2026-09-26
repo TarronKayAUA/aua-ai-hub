@@ -199,3 +199,162 @@
   var island = document.getElementById("learn-modules");
   if (slot && island) landing(slot, island);
 })();
+
+/* =========================================================================
+ * ART: the Learn plate (Specimen and Signal, added 2026-09-26).
+ * Everything above this line is the learn package and is unchanged.
+ * -------------------------------------------------------------------------
+ * Draws the decorative plate beside the Learn landing's title (the empty
+ * [data-learn-plate] wrapper in docs/pathway/index.md) from two generated
+ * files in docs/assets/art/:
+ *   learn-plate.svg   the drawing; its signal layer already rests on the
+ *                     composed still (what reduced motion shows, and where
+ *                     the motion ends)
+ *   learn-plate.json  one pass of the signal: keyframes per signal element
+ * Only at 60em and up, where layout-learn.css shows the plate, so phones
+ * and narrow windows fetch neither file.
+ *
+ * The signal plays once (3.3 seconds; the length is in learn-plate.json)
+ * with the Web Animations API, on transform and opacity only. It is skipped, and the still shows at once,
+ * under prefers-reduced-motion, in a hidden tab, or when the files arrive
+ * too late for the pass to end within 5 seconds of the page loading (WCAG
+ * 2.2.2, so the page needs no pause control). Hiding the tab mid-pass
+ * pauses it; on return it resumes only if it can still end inside those 5
+ * seconds, and otherwise goes straight to the still. Decoration only: if
+ * anything fails, the page stays exactly as built.
+ */
+(function () {
+  "use strict";
+  var host = document.querySelector("[data-learn-plate]");
+  if (!host || !window.fetch || !window.matchMedia || !window.Promise || !window.URL) return;
+  var here = (document.currentScript && document.currentScript.src) || location.href;
+  var SVG_URL = new URL("../assets/art/learn-plate.svg", here).href;
+  var MOTION_URL = new URL("../assets/art/learn-plate.json", here).href;
+  var WIDE = window.matchMedia("screen and (min-width: 60em)");
+  var REDUCE = window.matchMedia("(prefers-reduced-motion: reduce)");
+  var LIMIT = 5000; /* ms after the page started loading: all motion has ended by then */
+  var FADE = 400; /* the plate's fade-in, layout-learn.css */
+  var NS = "http://www.w3.org/2000/svg";
+  var started = false;
+  var anims = [];
+
+  function now() {
+    return window.performance && performance.now ? performance.now() : LIMIT;
+  }
+
+  function quiet() {
+    return REDUCE.matches || document.hidden || typeof Element.prototype.animate !== "function";
+  }
+
+  /* Drop the animations: each element falls back to its own attributes in
+     the SVG, which are the composed still. */
+  function settle() {
+    var list = anims;
+    anims = [];
+    list.forEach(function (a) {
+      try {
+        a.cancel();
+      } catch (e) {
+        /* already gone */
+      }
+    });
+    var layer = host.querySelector(".lp-art--signal");
+    if (layer) layer.style.willChange = "";
+  }
+
+  function play(motion, layer) {
+    var dur = motion && motion.duration;
+    if (!(dur > 0) || !Array.isArray(motion.tracks) || now() + dur > LIMIT) return false;
+    layer.style.willChange = "opacity";
+    motion.tracks.forEach(function (t) {
+      var el = layer.querySelector("#" + t.id);
+      if (!el || !Array.isArray(t.k)) return;
+      var frames = t.k.map(function (f) {
+        var k = { offset: f[0], opacity: f[1] };
+        if (f.length > 3) k.transform = "translate(" + f[2] + "px," + f[3] + "px)";
+        return k;
+      });
+      try {
+        anims.push(el.animate(frames, { duration: dur, fill: "both", easing: "linear" }));
+      } catch (e) {
+        /* a malformed track is skipped; the element keeps its still */
+      }
+    });
+    if (!anims.length) return false;
+    Promise.all(anims.map(function (a) { return a.finished; })).then(settle, function () {});
+    return true;
+  }
+
+  function place(svgText, motion) {
+    var panel = document.createElement("div");
+    panel.className = "learn-plate__panel";
+    panel.innerHTML = svgText; /* this site's own generated file */
+    var art = panel.querySelector("svg.lp-art");
+    var signal = art && art.querySelector(".lp-signal");
+    if (!signal) return;
+    /* The light that moves gets its own <svg>, promoted while it moves, so
+       the drawing underneath is painted once. */
+    var layer = document.createElementNS(NS, "svg");
+    layer.setAttribute("class", "lp-art lp-art--signal");
+    layer.setAttribute("viewBox", art.getAttribute("viewBox"));
+    layer.setAttribute("preserveAspectRatio", art.getAttribute("preserveAspectRatio") || "xMidYMid slice");
+    layer.setAttribute("aria-hidden", "true");
+    layer.setAttribute("focusable", "false");
+    layer.appendChild(signal);
+    panel.appendChild(layer);
+    host.appendChild(panel);
+    var moving = !quiet() && play(motion, layer);
+    /* Show it on the next frame, so the fade (when allowed) starts from
+       clear; no fade at all if it would end after the 5-second mark. */
+    window.requestAnimationFrame(function () {
+      if (!moving && now() + FADE > LIMIT) panel.style.transition = "none";
+      panel.setAttribute("data-state", "shown");
+    });
+  }
+
+  function mount() {
+    if (started || !WIDE.matches) return;
+    started = true;
+    var motion = quiet() ? null : fetch(MOTION_URL).then(function (r) {
+      return r.ok ? r.json() : null;
+    }).catch(function () {
+      return null;
+    });
+    Promise.all([
+      fetch(SVG_URL).then(function (r) {
+        if (!r.ok) throw new Error("learn plate: HTTP " + r.status);
+        return r.text();
+      }),
+      motion
+    ]).then(function (got) {
+      place(got[0], got[1]);
+    }).catch(function () {
+      /* decoration only: without the drawing the head is as it was */
+    });
+  }
+
+  document.addEventListener("visibilitychange", function () {
+    if (!anims.length) return;
+    if (document.hidden) {
+      anims.forEach(function (a) { a.pause(); });
+      return;
+    }
+    var left = 0;
+    anims.forEach(function (a) {
+      var d = a.effect && a.effect.getTiming ? Number(a.effect.getTiming().duration) || 0 : 0;
+      left = Math.max(left, d - (a.currentTime || 0));
+    });
+    if (now() + left > LIMIT) settle();
+    else anims.forEach(function (a) { a.play(); });
+  });
+
+  function onChange(mq, fn) {
+    if (mq.addEventListener) mq.addEventListener("change", fn);
+    else if (mq.addListener) mq.addListener(fn);
+  }
+  onChange(REDUCE, function () {
+    if (REDUCE.matches) settle();
+  });
+  onChange(WIDE, mount);
+  mount();
+})();
