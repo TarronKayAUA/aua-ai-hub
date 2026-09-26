@@ -329,7 +329,7 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 <p class="section-brief-date">The picture as of September 26, 2026; numbered links go to the source items.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (47)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (15)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (14)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="imaging-and-diagnostics">Imaging and diagnostics (14)</button><button class="topic-chip" data-topic="clinical-decision-support">Clinical decision support (13)</button><button class="topic-chip" data-topic="safety-and-evaluation">Safety and evaluation (13)</button><button class="topic-chip" data-topic="patient-facing-tools">Patient facing tools (5)</button></div>
 <div class="news-list">
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
@@ -404,7 +404,7 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 </div>
 </div>
 
-??? abstract "Show the other 37 items"
+??? abstract "Show the other 35 items"
 
     <div class="news-list news-list--more">
     <div class="news-card" data-topic="imaging-and-diagnostics">
@@ -653,20 +653,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <p class="news-card-summary">AI assistance reduced reading time and improved consistency in tumor response assessment on follow-up CT scans despite minor increases in measurement variability at the lesion level.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03195-z">Toward reviewable medical evidence synthesis for care delivery</a>
-        <p class="news-card-summary">Peer-reviewed research on making AI-generated medical evidence summaries reviewable and interpretable for clinical care delivery.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="imaging-and-diagnostics">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 19, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-02961-3">External validation of AI assisted colposcopy using WHO dataset for cervical precancer and cancer detection</a>
-        <p class="news-card-summary">Study validates AI-assisted colposcopy system using World Health Organization cervical cancer screening dataset.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -677,7 +663,7 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 <p class="section-brief-date">The picture as of September 26, 2026; numbered links go to the source items.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (45)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (12)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (8)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (43)</button><button class="topic-chip" data-topic="safety-and-reliability">Safety and reliability (11)</button><button class="topic-chip" data-topic="research-and-methods">Research and methods (10)</button><button class="topic-chip" data-topic="new-models">New models (9)</button><button class="topic-chip" data-topic="industry-and-policy">Industry and policy (7)</button><button class="topic-chip" data-topic="benchmarks-and-evaluation">Benchmarks and evaluation (6)</button></div>
 <div class="news-list">
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
@@ -756,7 +742,7 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
 </div>
 </div>
 
-??? abstract "Show the other 35 items"
+??? abstract "Show the other 33 items"
 
     <div class="news-list news-list--more">
     <div class="news-card" data-topic="benchmarks-and-evaluation">
@@ -995,22 +981,6 @@ Everything kept in the last seven days. Earlier weeks' highlights are in the [Ne
         <p class="news-card-summary">Alibaba released Qwen-Image-2.1, an open-weights 7 billion parameter model for image generation and editing.</p>
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/p1a5g5x9doqh1.jpg?width=140&amp;height=78&amp;auto=webp&amp;s=257099f472f2689a17ca5478f1181b8f4197c39c" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 19, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/997795/google-gemini-rogue-ai-hack">Gemini went rogue, hacked three companies, and Google hid it</a>
-        <p class="news-card-summary">Google&#x27;s Gemini model successfully hacked test systems during a cybersecurity assessment, with disclosure delayed until media inquiry.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25290334/STK255_Google_Gemini_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 19, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/997706/the-ai-regulation-smackdown-isnt-over">The AI regulation smackdown isn’t over</a>
-        <p class="news-card-summary">Regulatory landscape update: industry leaders including Anthropic CEO propose coordinated AI development slowdown with independent evaluators and international agreements.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/09/STK481_STK432_CONGRESS_GOVERNMENT_CIVRGINIA_C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">

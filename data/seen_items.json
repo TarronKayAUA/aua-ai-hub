@@ -1,192 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/971750/perplexity-personal-computer-windows-ai-agents",
-   "title_hash": "6c3877862eb235d083eae5e2b33eac55",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": true,
-   "title": "Perplexity’s Personal Computer turns Windows PCs into AI agents",
-   "source": "The Verge AI",
-   "published": "2026-07-28T12:30:00+00:00",
-   "summary": "Perplexity expanded its agentic AI system to Windows PCs, enabling local access to files and applications for automated task execution.",
-   "category": "general_ai",
-   "score": 2.0,
-   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25472503/STK271_PERPLEXITY_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-   "topic": "Other"
-  },
-  {
-   "url": "https://www.theverge.com/gadgets/971744/smart-ring-ai-gadget-stream-index",
-   "title_hash": "17acbe11f63fa65ebedb6c46d9623c27",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": false,
-   "reason": "personal commentary without substantive news or educational content"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children",
-   "title_hash": "7f80b0dd709a267839aa6c809b5c4a69",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": true,
-   "title": "Hugging Face is being used to easily undress women and children",
-   "source": "The Verge AI",
-   "published": "2026-07-28T09:07:14+00:00",
-   "summary": "Study documents that image editing models on Hugging Face readily generate nonconsensual deepfakes, revealing inadequate content safeguards in open-source repositories.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/STK419_DEEPFAKE_CVIRGINIA_F.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03065-8",
-   "title_hash": "d0f1ef23097bef87c58a0d6a546d5dcf",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": true,
-   "title": "Population-specific dementia risk prediction using deep transfer learning in diverse populations",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-28T00:00:00+00:00",
-   "summary": "Deep transfer learning models predict dementia risk in diverse populations, addressing disparities in risk stratification across demographic groups.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03056-9",
-   "title_hash": "2ab58d1855b669ff28562a23929c8c73",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": false,
-   "reason": "narrow domain application without AI component relevant to this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8e36c/openai_management_decided_earlier_today_not_to",
-   "title_hash": "3a8ef6afe20c18002c88704aadfc74fc",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": false,
-   "reason": "industry gossip and internal company politics"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=6hlMmq7lKsk",
-   "title_hash": "8885a06404436697f25466a1bc3d357b",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=g-g6E-qtCjA",
-   "title_hash": "6655f90f61ff9b4d8aaedac818f84245",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=5DbZAMGZ5oM",
-   "title_hash": "528810a76222f347f1d41a783c6d3cdd",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=hjXi7b01s2c",
-   "title_hash": "7c24d0abc1f5f092db9afda2d5aa86c0",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=q9TPE7pKkIo",
-   "title_hash": "46e08c5d98fbf4c296ce2785164a3ce9",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=0ujh7hfutq0",
-   "title_hash": "ee5f579bfa3247909c795a58f4559e83",
-   "first_seen": "2026-07-28T14:40:06.931751+00:00",
-   "kept": true,
-   "title": "Llama.cpp vs vLLM: Which Local LLM Engine Actually Scales?",
-   "source": "IBM Technology",
-   "published": "2026-07-28T11:00:05+00:00",
-   "summary": "Comparative analysis of Llama.cpp and vLLM local language model inference engines, testing their scaling performance and practical trade-offs.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i1.ytimg.com/vi/0ujh7hfutq0/hqdefault.jpg",
-   "display_title": "Llama.cpp versus vLLM: local LLM inference engine performance comparison"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e91016",
-   "title_hash": "e057572ff475da32c58d110e3814e0b9",
-   "first_seen": "2026-07-28T17:45:50.047398+00:00",
-   "kept": true,
-   "title": "Mapping the Reliability-Readability Gap in the Education of Patients With Age-Related Macular Degeneration Across 6 Large Language Models: Comparative Evaluation Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-28T17:15:08+00:00",
-   "summary": "Comparative evaluation of six large language models for patient education on age-related macular degeneration found significant variation in reliability and readability.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e87848",
-   "title_hash": "3d37ebc084fdfca0ce42915ec028f1b0",
-   "first_seen": "2026-07-28T17:45:50.047398+00:00",
-   "kept": false,
-   "reason": "scoping review of methodology frameworks, not a development or evaluation relevant to AI in medical education or clinical practice"
-  },
-  {
-   "url": "https://huggingface.co/blog/allenai/olmoearth-infrastructure",
-   "title_hash": "ca7e572a0d5060989adb8596bb34b583",
-   "first_seen": "2026-07-28T17:45:50.047398+00:00",
-   "kept": false,
-   "reason": "geospatial inference platform, off-topic for medical educators and medical students"
-  },
-  {
-   "url": "https://huggingface.co/blog/LiquidAI/lfm2-5-encoders",
-   "title_hash": "4fd0062b943b92138df3d7c0d5d7cf6f",
-   "first_seen": "2026-07-28T17:45:50.047398+00:00",
-   "kept": false,
-   "reason": "general-purpose CPU inference optimization, not relevant to medical or educational applications"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42517497?fc=20260609215449&ff=20260728134550&v=2.20.0",
-   "title_hash": "3d9567bc45549e368a5e81bb8364a56c",
-   "first_seen": "2026-07-28T17:45:50.047398+00:00",
-   "kept": false,
-   "reason": "machine learning applied to public health data analysis, not about AI in medical education itself"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03006-5",
-   "title_hash": "8405f8619c1e7f4f583233d6afe08670",
-   "first_seen": "2026-07-28T17:45:50.047398+00:00",
-   "kept": true,
-   "title": "Federated modular clinical decision support networks for collaborative learning in resource-limited settings",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-28T00:00:00+00:00",
-   "summary": "Federated learning approach enables clinical decision support networks to train collaboratively across resource-limited settings while preserving data privacy.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8hli2/a_user_has_managed_to_run_kimi_k3_on_80xrtx_5090",
-   "title_hash": "05d585f04c9dd60ca2de98a680ae6b8a",
-   "first_seen": "2026-07-28T17:45:50.047398+00:00",
-   "kept": false,
-   "reason": "infrastructure deployment note from forum discussion, not a significant development or capability change"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v895mm/funny_how_wide_the_spectrum_has_gotten",
-   "title_hash": "8eb2b3b97ebdf9a6c7b3b641be2ba1ad",
-   "first_seen": "2026-07-28T17:45:50.047398+00:00",
-   "kept": false,
-   "reason": "generic forum discussion without specific news content"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v5gh22/why_wont_he_sign_the_letter_then",
-   "title_hash": "81161051319c0f994829045ae41d7535",
-   "first_seen": "2026-07-28T17:45:50.047398+00:00",
-   "kept": false,
-   "reason": "generic forum discussion without specific news content"
-  },
-  {
    "url": "https://medinform.jmir.org/2026/1/e88734",
    "title_hash": "85b19afb0bad5f69997a6db6c425770e",
    "first_seen": "2026-07-28T21:32:58.391287+00:00",
@@ -33354,6 +33168,41 @@
    "first_seen": "2026-09-26T13:08:38.350204+00:00",
    "kept": false,
    "reason": "fiction narration and speculative content without relevance to medical education, clinical practice, or AI literacy for educators"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
+   "title_hash": "ce092081d1a53ef1b0e829b92d492663",
+   "first_seen": "2026-09-26T19:14:06.310103+00:00",
+   "kept": false,
+   "reason": "rumor and speculation about model safety incidents, not confirmed reporting or established policy development"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
+   "title_hash": "f811af1f5b355ace94468dcaa581bde2",
+   "first_seen": "2026-09-26T19:14:06.310103+00:00",
+   "kept": false,
+   "reason": "off-topic general business interview, no AI development or medical education content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wqcrly/ling_tiny_30_is_a_glimpse_of_the_future",
+   "title_hash": "a0113354b79727a42a8207783d37a4bb",
+   "first_seen": "2026-09-26T19:14:06.310103+00:00",
+   "kept": false,
+   "reason": "personal blog post about running a model locally, no significant news or instructive analysis for medical educators"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=gRnRCv1t0r8",
+   "title_hash": "87c3f3c144e6485fa8df70f4e9ff77fd",
+   "first_seen": "2026-09-26T19:14:06.310103+00:00",
+   "kept": false,
+   "reason": "rumor about unreleased model with no confirmed information"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=V3KeMw2nIDA",
+   "title_hash": "8c1b904bf629b8436f00895278d841ef",
+   "first_seen": "2026-09-26T19:14:06.310103+00:00",
+   "kept": false,
+   "reason": "drama coverage and unverified speculation about alignment failure"
   }
  ],
  "digests": [
