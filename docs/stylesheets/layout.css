@@ -1,0 +1,564 @@
+/* =========================================================================
+   Layout frame (layout redesign, owner approved 2026-09-25).
+   The page types come from scripts/layout_frame.py, which stamps
+   data-page-type on <body>: door, task, lesson, reference, shelf.
+   Page-type packages add their own files (layout-home.css and so on);
+   this file holds only what every page shares. Loaded after extra.css,
+   so equal-specificity rules here win.
+   ========================================================================= */
+
+:root,
+[data-md-color-scheme="default"] {
+  --hub-seal: #07618c;
+  --hub-navy: #1b4165;
+  --hub-focus: #1b4165;
+  --hub-row-rule: rgba(0, 0, 0, 0.1);
+  --hub-quiet-bg: rgba(7, 97, 140, 0.04);
+  --hub-button-bg: #07618c;
+  --hub-button-fg: #ffffff;
+}
+
+[data-md-color-scheme="slate"] {
+  --hub-focus: #ffb74d;
+  --hub-row-rule: rgba(255, 255, 255, 0.12);
+  --hub-quiet-bg: rgba(90, 163, 199, 0.07);
+  --hub-button-bg: #2b7aab;
+  --hub-button-fg: #ffffff;
+}
+
+/* --- Tabs at every width (L1) -------------------------------------------
+   Material hides the tab bar below 76.25em, so phones, tablets and a
+   laptop at 125% scaling never saw the site's structure. The bar now
+   shows at every width as one scrolling strip, fading at the right edge
+   when it overflows. On phones the whole header tucks away while reading
+   and returns on scroll up (Material's header.autohide), and stays put
+   from 60em up. */
+.md-tabs__link {
+  font-size: 0.75rem;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 76.2344em) {
+  .md-tabs {
+    display: block;
+  }
+  .md-tabs__list {
+    -webkit-mask-image: linear-gradient(to right, #000 88%, transparent);
+    mask-image: linear-gradient(to right, #000 88%, transparent);
+    padding-right: 1.5rem;
+  }
+  .md-tabs__item {
+    height: 2.2rem;
+  }
+  .md-tabs__link {
+    margin-top: 0.62rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .md-header[hidden] {
+    transform: none;
+  }
+}
+
+.md-header__topic .hub-home-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.md-header__topic .hub-home-link:hover,
+.md-header__topic .hub-home-link:focus-visible {
+  text-decoration: underline;
+}
+
+/* The site's own announcement banner is retired (plan decision 7). */
+.md-banner:empty {
+  display: none;
+}
+
+/* --- Page frames (L3) ------------------------------------------------------
+   Reading frame: task, lesson and reference pages cap the article at about
+   78 characters a line and centre it between the left navigation and the
+   right-hand column, which keeps "On this page" and the docked action.
+   One width for everything in the article, so figures, tables and prose
+   line up (the 2026-07-25 three-widths attempt is recorded in extra.css). */
+@media screen and (min-width: 45em) {
+  body[data-page-type="task"] .md-content__inner,
+  body[data-page-type="lesson"] .md-content__inner,
+  body[data-page-type="reference"] .md-content__inner {
+    max-width: 33rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Door frame: full-width grids, prose capped so paragraphs stay readable. */
+body[data-page-type="door"] .md-typeset > p,
+body[data-page-type="door"] .md-typeset > ul,
+body[data-page-type="door"] .md-typeset > ol {
+  max-width: 40rem;
+}
+
+body[data-page-type="door"] .md-path {
+  display: none;
+}
+
+/* --- Page head: meta line and action slot (L4) --------------------------
+   The bordered chips looked like the choosers' real buttons (FR-4). They
+   become one plain grey line with dots between items. */
+.md-typeset .meta-chip {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .meta-chip + .meta-chip::before,
+.md-typeset .meta-chip + .meta-note::before {
+  content: "\00b7";
+  margin: 0 0.45em;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .meta-note {
+  font-size: 0.72rem;
+}
+
+.md-typeset .page-action {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0 1.6rem;
+}
+
+.md-typeset .page-action .md-button,
+.hub-dock .md-button,
+.hub-bar .md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4rem;
+  margin: 0;
+  padding: 0.45rem 1.1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+}
+
+.md-typeset .page-action .md-button--primary,
+.hub-dock .md-button--primary,
+.hub-bar .md-button--primary {
+  background-color: var(--hub-button-bg);
+  border-color: var(--hub-button-bg);
+  color: var(--hub-button-fg);
+}
+
+.md-typeset .page-action .md-button--primary:hover,
+.hub-dock .md-button--primary:hover {
+  background-color: var(--hub-navy);
+  border-color: var(--hub-navy);
+  color: #ffffff;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .page-action .md-button {
+    width: 100%;
+  }
+}
+
+/* Docked action at the top of the right-hand column (desktop), shown by
+   layout.js once the action slot has scrolled out of view. */
+.hub-dock {
+  margin: 0 0 1rem;
+  padding: 0.8rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.4rem;
+  background: var(--md-default-bg-color);
+}
+
+.hub-dock .md-button {
+  width: 100%;
+}
+
+.hub-dock .md-button + .md-button {
+  margin-top: 0.5rem;
+}
+
+/* --- Phone action bar and Sections sheet (L5) ---------------------------- */
+.hub-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 0.8rem calc(0.5rem + env(safe-area-inset-bottom, 0px));
+  background: var(--md-default-bg-color);
+  border-top: 1px solid var(--hub-row-rule);
+  box-shadow: 0 -0.2rem 0.6rem rgba(0, 0, 0, 0.08);
+  transform: translateY(110%);
+  transition: transform 0.2s ease;
+}
+
+.hub-bar.is-shown {
+  transform: none;
+}
+
+.hub-bar .md-button {
+  flex: 1 1 auto;
+  min-height: 2.6rem;
+}
+
+.hub-bar .hub-bar__sections {
+  flex: 0 0 auto;
+}
+
+body.hub-has-bar {
+  scroll-padding-bottom: 4.5rem;
+}
+
+body.hub-has-bar .md-top {
+  display: none;
+}
+
+.hub-sheet {
+  width: min(100%, 30rem);
+  max-height: 80vh;
+  margin: auto auto 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0.6rem 0.6rem 0 0;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+.hub-sheet::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hub-sheet h2 {
+  margin: 0;
+  padding: 0.9rem 1rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.hub-sheet ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.6rem;
+}
+
+.hub-sheet a,
+.hub-sheet button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 2.6rem;
+  padding: 0 1rem;
+  border: 0;
+  border-top: 1px solid var(--hub-row-rule);
+  background: none;
+  color: var(--md-default-fg-color);
+  font: inherit;
+  font-size: 0.8rem;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 60em) {
+  .hub-bar,
+  .hub-sheet {
+    display: none;
+  }
+}
+
+/* --- Cards and link rows (L6) ---------------------------------------------
+   A card with one destination is one link: its title link (class
+   card-link) stretches over the whole card. Cards with several
+   destinations stop lifting on hover, which promised a click only a small
+   link inside delivered (MA-2). Lists inside cards become 44px rows. */
+.md-typeset .grid.cards > ul > li:not(:has(a.card-link)):hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.md-typeset .grid.cards > ul > li:has(a.card-link) {
+  position: relative;
+}
+
+.md-typeset .grid.cards a.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.md-typeset .grid.cards a.card-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.md-typeset .grid.cards > ul > li:has(a.card-link:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset .grid.cards > ul > li ul {
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.md-typeset .grid.cards > ul > li ul > li {
+  position: relative;
+  margin: 0;
+  padding: 0.55rem 1.4rem 0.55rem 0;
+  min-height: 2.2rem;
+  border-top: 1px solid var(--hub-row-rule);
+  color: var(--md-default-fg-color--light);
+  line-height: 1.4;
+}
+
+.md-typeset .grid.cards > ul > li ul > li::after {
+  content: "\203a";
+  position: absolute;
+  right: 0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .grid.cards > ul > li ul > li > a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.md-typeset .grid.cards > ul > li ul > li:has(> a:only-of-type) > a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.md-typeset .grid.cards > ul > li ul > li:has(> a:only-of-type):hover {
+  background: var(--hub-quiet-bg);
+}
+
+/* --- Links, focus, disclosures, small text (L8) ---------------------------
+   Links in running text are underlined: colour alone measured about 2.4:1
+   against body text, which fails WCAG 1.4.1 (Level A). :where() keeps the
+   specificity low so rows, buttons and cards can opt out. */
+.md-typeset :where(p, li, td, dd, figcaption) a:where(:not(.md-button, .card-link, .headerlink)) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.md-typeset :where(p, li, td, dd, figcaption) a:where(:not(.md-button, .card-link, .headerlink)):hover {
+  text-decoration-thickness: 2px;
+}
+
+.md-typeset a:focus-visible {
+  color: var(--md-typeset-a-color);
+}
+
+:is(a, button, summary, label, input, select, [tabindex]):focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 0.72rem;
+}
+
+.md-typeset table:not([class]) {
+  font-size: 0.72rem;
+}
+
+/* Quiet disclosures: collapsible secondary detail (note, info) becomes a
+   hairline row with a 44px summary instead of a coloured bar. Self-checks
+   (question), tips and open asides keep their colour; the generated
+   "Show the N tools" groups (abstract) become neutral browse rows. */
+.md-typeset details.note,
+.md-typeset details.info,
+.md-typeset details.abstract {
+  border: 0;
+  border-top: 1px solid var(--hub-row-rule);
+  border-bottom: 1px solid var(--hub-row-rule);
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  margin: 1rem 0;
+}
+
+.md-typeset details.note + details.note,
+.md-typeset details.info + details.info,
+.md-typeset details.abstract + details.abstract {
+  margin-top: -1rem;
+  border-top: 0;
+}
+
+.md-typeset details.note > summary,
+.md-typeset details.info > summary,
+.md-typeset details.abstract > summary {
+  display: flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0.4rem 2rem 0.4rem 0;
+  background: none;
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset details.note > summary::before,
+.md-typeset details.info > summary::before,
+.md-typeset details.abstract > summary::before {
+  display: none;
+}
+
+.md-typeset details.note > summary::after,
+.md-typeset details.info > summary::after,
+.md-typeset details.abstract > summary::after {
+  right: 0.2rem;
+  background-color: var(--md-default-fg-color--light);
+}
+
+.md-typeset details.note > summary:hover,
+.md-typeset details.info > summary:hover,
+.md-typeset details.abstract > summary:hover {
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset details.note > :not(summary),
+.md-typeset details.info > :not(summary),
+.md-typeset details.abstract > :not(summary) {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Heading permalink marks: no use on touch screens. */
+@media (hover: none) {
+  .md-typeset .headerlink {
+    display: none;
+  }
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+/* The drawer's current-page marker pulled the row off-screen on phones
+   (extra.css lines 197 to 205 were written for the desktop sidebar). */
+@media screen and (max-width: 76.2344em) {
+  .md-sidebar--primary .md-nav__link--active {
+    margin-left: 0;
+    padding-left: 0.45rem;
+    font-weight: 700;
+  }
+}
+
+/* --- Page ending and footer (L7) ------------------------------------------ */
+.md-typeset .page-end {
+  margin-top: 2.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--hub-row-rule);
+}
+
+.md-typeset .page-end__meta {
+  margin: 0 0 0.6rem;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .page-end__back {
+  display: flex;
+  align-items: center;
+  min-height: 2.2rem;
+  padding: 0 0.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.md-typeset .page-end__back::before {
+  content: "\2190";
+  margin-right: 0.5rem;
+}
+
+/* Previous/next only where there is a real sequence: the seven modules. */
+body:not([data-page-type="lesson"]) .md-footer__inner {
+  display: none;
+}
+
+.md-copyright .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 1.2rem;
+  list-style: none;
+  margin: 0 0 0.4rem;
+  padding: 0;
+}
+
+.md-copyright .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--md-footer-fg-color);
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-copyright .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .md-copyright .footer-links a {
+    width: 100%;
+  }
+}
+
+/* --- Shelf skeleton: the two-pane chooser (L15, L16) ------------------------
+   Shared by the Tool Directory and the Prompt Library so both behave the
+   same: from 60em a sticky filter column beside the results; on phones
+   the filters sit above the results and fold to a one-line summary
+   (.shelf__summary) once a choice is made. Page packages fill it in. */
+@media screen and (min-width: 60em) {
+  .md-typeset .shelf {
+    display: grid;
+    grid-template-columns: minmax(13rem, 16rem) minmax(0, 1fr);
+    gap: 1.6rem;
+    align-items: start;
+  }
+  .md-typeset .shelf__filters {
+    position: sticky;
+    top: 6.5rem;
+    max-height: calc(100vh - 7.5rem);
+    overflow: auto;
+  }
+  .md-typeset .shelf__summary {
+    display: none;
+  }
+}
+
+.md-typeset .shelf__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.4rem;
+  background: var(--hub-quiet-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hub-bar {
+    transition: none;
+  }
+}

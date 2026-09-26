@@ -31,18 +31,27 @@
   The generator credit below is copied verbatim from Material's own partial.
   Keep it, or the theme's attribution disappears from the whole site.
 -#}
+{#-
+  Layout redesign (2026-09-25): the footer links render as a list, which
+  docs/stylesheets/layout.css turns into 44px cells (a 2x2 grid on phones,
+  one row on desktop). They used to be 15px-tall inline links separated by
+  pipes (layout audit PH-15).
+-#}
 <div class="md-copyright">
+  {% if config.extra.footer_links %}
+    <ul class="footer-links">
+      {%- for link in config.extra.footer_links %}
+        {%- if "://" in link.url %}
+          <li><a href="{{ link.url }}">{{ link.text }}</a></li>
+        {%- else %}
+          <li><a href="{{ link.url | url }}">{{ link.text }}</a></li>
+        {%- endif %}
+      {%- endfor %}
+    </ul>
+  {% endif %}
   {% if config.copyright %}
     <div class="md-copyright__highlight">
       {{ config.copyright }}
-      {%- for link in config.extra.footer_links %}
-        &nbsp;|&nbsp;
-        {%- if "://" in link.url %}
-          <a href="{{ link.url }}">{{ link.text }}</a>
-        {%- else %}
-          <a href="{{ link.url | url }}">{{ link.text }}</a>
-        {%- endif %}
-      {%- endfor %}
     </div>
   {% endif %}
   {% if not config.extra.generator == false %}

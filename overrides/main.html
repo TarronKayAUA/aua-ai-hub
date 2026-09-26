@@ -12,10 +12,13 @@
   therefore the hash) differs per page and makes the banner reappear on
   every page until dismissed there too (owner-reported 2026-07-09).
 #}
-{% block announce %}
-  Welcome to the AUA AI Hub. New here?
-  <a href="{{ config.site_url }}pathway/"><strong>Start with the literacy pathway</strong></a>.
-{% endblock %}
+{#
+  Retired 2026-09-25 (owner decision 7 of the navigation redesign): the
+  institution-wide rollout it announced finished on 2026-07-27, and the
+  home page's own button keeps the beginner route. Leave the block empty;
+  filling it again brings the bar back on every page.
+#}
+{% block announce %}{% endblock %}
 
 {#
   Open Graph and Twitter card metadata so shared links (announcement email,

@@ -84,9 +84,25 @@ theme:
     - toc.follow
     - content.code.copy
     - announce.dismiss
+    # Layout redesign (2026-09-25): the header tucks away while reading on
+    # phones (layout.css keeps it in place from 60em up), and the desktop
+    # sidebar lists every page in the current tab.
+    - header.autohide
+    - navigation.expand
 
 extra_css:
   - stylesheets/extra.css
+  # Layout redesign (2026-09-25): the shared frame, then one file per page
+  # type so each can change without touching the others.
+  - stylesheets/layout.css
+  - stylesheets/layout-home.css
+  - stylesheets/layout-hubs.css
+  - stylesheets/layout-guides.css
+  - stylesheets/layout-learn.css
+  - stylesheets/layout-tools.css
+  - stylesheets/layout-prompts.css
+  - stylesheets/layout-news.css
+  - stylesheets/layout-art.css
 
 extra_javascript:
   - javascripts/counter.js
@@ -98,6 +114,13 @@ extra_javascript:
   - javascripts/next-token.js
   - javascripts/tools-chooser.js
   - javascripts/prompt-chooser.js
+  - javascripts/layout.js
+  - javascripts/layout-home.js
+  - javascripts/layout-learn.js
+  - javascripts/layout-tools.js
+  - javascripts/layout-prompts.js
+  - javascripts/layout-news.js
+  - javascripts/layout-art.js
 
 plugins:
   # Material's default separator splits only on whitespace and hyphens, which
@@ -127,6 +150,12 @@ plugins:
 
 hooks:
   - scripts/render_data.py
+  # Layout redesign (2026-09-25): page types, action slot, page ending.
+  - scripts/layout_frame.py
+  - scripts/layout_home.py
+  - scripts/layout_guides.py
+  - scripts/layout_prompt_pages.py
+  - scripts/layout_news.py
 
 markdown_extensions:
   - admonition
