@@ -11,7 +11,7 @@ last_reviewed: 2026-09-01
 If you only want the answer to "what can my machine run", jump to [What you probably own](#what-you-probably-own).
 
 !!! note "Should you run models locally at all?"
-    Be honest about the economics first: a serious graphics card costs more than years of cloud assistant subscriptions, and cloud frontier models are more capable. The reasons local wins are privacy (nothing you type leaves the machine, which matters under the [AI Responsible Use Policy](../governance/policy.md)'s data rules), zero marginal cost once you own the hardware, and education. The best local setup is usually the computer you already own, which is what the estimator below is for. If you need serious hardware occasionally, [rent it by the hour](local.md#when-your-machine-cannot-keep-up-renting-a-gpu) instead of buying.
+    Be honest about the economics first: a serious graphics card costs more than years of cloud assistant subscriptions, and cloud frontier models are more capable. The reasons local wins are privacy (nothing you type leaves the machine), zero marginal cost once you own the hardware, and education. The best local setup is usually the computer you already own, which is what the estimator below is for. If you need serious hardware occasionally, [rent it by the hour](local.md#when-your-machine-cannot-keep-up-renting-a-gpu) instead of buying.
 
 ## What tokens per second feels like
 

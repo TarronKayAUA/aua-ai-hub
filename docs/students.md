@@ -6,7 +6,7 @@ hide:
 
 # For Students
 
-Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use Policy](governance/policy.md) encourages AI use where it helps you do your work. For graded work, your syllabus sets the rules; if it says nothing, ask your instructor. [What stays out of AI tools, and why](#the-lines-that-never-move)
+Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use Policy](governance/policy.md) encourages AI use where it helps you do your work. For graded work, your syllabus says what is expected; if it says nothing, ask your instructor. [A few habits that pay off](#using-ai-well)
 { .hub-lede }
 
 <form class="hub-search" role="search">
@@ -56,7 +56,7 @@ Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use 
 
 -   ## :material-stethoscope:{ .lg .middle } On rotations {: #on-rotations }
 
-    Practicing differentials is fine once the case is a teaching abstraction: an age band and a presentation pattern, with nothing left that could point to the patient, such as a name, a date, or a rare detail. Your clinical site's rules may be stricter.
+    Practicing differentials works best on a teaching abstraction: an age band and a presentation pattern, with nothing left that could point to the patient, such as a name, a date, or a rare detail. The model reasons just as well from the pattern. Your clinical site may have its own AI rules; your preceptor can tell you.
 
     - <span class="row-tag">Start here</span> [Clinical reasoning partner](prompts/index.md#clinical-reasoning-partner) <span class="row-sub">Prompt</span>
     - [Module 6: Clinical Contexts](pathway/clinical.md) <span class="row-sub">AI Literacy Pathway</span>
@@ -71,25 +71,24 @@ Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use 
 
 </div>
 
-## Start with the basics (35 minutes) {: #starting-out }
+## Start with the basics (30 minutes) {: #starting-out }
 
 The literacy pathway's first three modules are short, plain-language, and written for everyone:
 
 1. [How AI Works](pathway/how-ai-works.md) (about 10 minutes): why a chatbot's confident answer is not always a correct one.
 2. [Prompting Fundamentals](pathway/prompting.md) (about 15 minutes): the habits that most improve what you get back, starting with giving the model your actual materials.
-3. [The Policy in Practice](pathway/rules.md) (about 10 minutes): what the policy asks when AI contributes to your work.
+3. [The Policy in Practice](pathway/rules.md) (about 5 minutes): a short guide to the policy, and why its expectations work in your favor.
 
-## Can I use AI to study? What stays out {: #the-lines-that-never-move }
+## Using AI well for coursework {: #using-ai-well }
 
-Patient information, including a name, an identifiable case detail, or a photo of a chart, stays out of public AI tools under the [AI Responsible Use Policy](governance/policy.md) unless the AI Committee has approved a tool for that data. Stripped to a teaching abstraction, a case is fine to practice with; see [On rotations](#on-the-wards).
-
-- Your course syllabus is where expectations for AI on assignments are set, including how to acknowledge AI use. If it does not cover something you want to try, ask your instructor: a quick message usually settles it, and the conversation often improves the idea.
-- The Student Handbook treats unauthorized or unacknowledged AI use in coursework, assessments, or clinical training as possible academic misconduct; your course syllabus says what is authorized.
+- Your course syllabus sets the expectations for AI on assignments, including how to acknowledge it. If it does not cover something you want to try, ask your instructor: a quick message usually settles it, and the conversation often improves the idea.
+- The Student Handbook treats unauthorized or unacknowledged AI use in coursework, assessments, or clinical training as possible academic misconduct, which is why that quick message is worth sending.
 - Practice built from your own slides and notes fits your exams best, because your in-house exams are written from them.
+- A case works best as a teaching abstraction (an age band and a presentation pattern): it gives the model everything it needs and identifies no one. See [On rotations](#on-the-wards).
 - A classmate's work is theirs, so check with them before it goes into a tool, the same courtesy you would want for your own draft.
-- Whatever a tool contributed, the work you submit and its errors are yours.
+- Whatever a tool contributed, the work you submit and its errors are yours, which is why checking it is time well spent.
 
-[Can I Use AI for This?](governance/can-i.md) answers more questions one at a time, and [Module 3: The Policy in Practice](pathway/rules.md) covers the policy in about ten minutes.
+The [AI Responsible Use Policy](governance/policy.md) is the reference for everything else, and [Module 3: The Policy in Practice](pathway/rules.md) is a five-minute guide to it.
 
 ## Through the basic sciences
 

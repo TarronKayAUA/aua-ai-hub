@@ -54,7 +54,7 @@ Agents and assistants can both hold standing context so you stop re-explaining y
 
 ### Choosing what the agent can see
 
-An agent can read every file in the folder you open for it, and what it reads goes to the model, so the folder you choose is where the policy's data rules, covered in [Module 3](rules.md), do their work. Open the folder the task needs rather than your whole drive; if that folder also holds student records or patient information, copy just the files you need into a fresh folder and open that instead. Try a new kind of task on copies first, so a misunderstood instruction costs you nothing. And keep the verification habit that runs through this whole pathway: an agent saying a task is complete is a claim, and you open the result and look, the same way you check a citation.
+An agent can read every file in the folder you open for it, and what it reads goes to the model, so the folder you choose decides what the model sees. Open the folder the task needs rather than your whole drive; if that folder also holds student records or patient information, copy just the files you need into a fresh folder and open that instead. Try a new kind of task on copies first, so a misunderstood instruction costs you nothing. And keep the verification habit that runs through this whole pathway: an agent saying a task is complete is a claim, and you open the result and look, the same way you check a citation.
 
 ## Self-check
 

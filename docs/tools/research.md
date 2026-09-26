@@ -11,7 +11,7 @@ Artificial intelligence (AI) tools now cover most stages of a research project, 
 !!! note "Two things that keep AI-assisted research sound"
     **Check each citation against the paper.** Language models can produce references that look right and do not exist, or cite a real paper for a claim it does not make; opening each one before it goes into your manuscript catches both. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) requires references obtained from an AI tool to be verified at the original source.
 
-    **Participant data follows the policy and your protocol.** Research participant data, including anything identifiable or covered by an Institutional Review Board (IRB) protocol, is among the information the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps out of publicly available AI tools unless the AI Committee has approved a tool for it. Your IRB protocol usually also says where participant data may be stored and processed, so it is worth checking before bringing a new tool into a study.
+    **Participant data follows your protocol.** Your Institutional Review Board (IRB) protocol usually says where participant data may be stored and processed, so it is worth checking before bringing a new tool into a study; the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for participant data too. Most analysis planning works from a description of the dataset, which keeps the data itself out of the conversation.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">The pipeline, mapped to tools</p>

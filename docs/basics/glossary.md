@@ -136,7 +136,7 @@ The pause where an agent asks your approval before an action (writing a file, ru
 
 ## PHI and FERPA considerations
 
-Protected health information (PHI; the policy calls it patient health information) is patient data covered by privacy law; the Family Educational Rights and Privacy Act (FERPA) covers student education records. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps both out of publicly available AI tools unless the AI Committee has approved a tool for that data (section C.3 under Responsible Use). Many tasks work just as well when the case or record is described in general terms, with nothing that could identify the patient or student.
+Protected health information (PHI; the policy calls it patient health information) is patient data covered by privacy law; the Family Educational Rights and Privacy Act (FERPA) covers student education records. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) covers both (section C.3 under Responsible Use). Many tasks work just as well when the case or record is described in general terms, with nothing that could identify the patient or student.
 
 ## Pretraining
 

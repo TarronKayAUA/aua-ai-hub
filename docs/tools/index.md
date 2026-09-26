@@ -50,7 +50,7 @@ Where an entry has something specific worth knowing, such as an access condition
 
 <!-- render:tool-access -->
 
-The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps sensitive information, such as patient information and student records, out of publicly available AI tools unless the AI Committee has approved a tool for that data, and a Listed or Licensed status here does not change that; [Can I Use AI for This?](../governance/can-i.md) answers common questions one at a time.
+A Listed or Licensed status describes AUA's relationship with a tool, not an approval for sensitive data; the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information, student records, and other sensitive material.
 
 To suggest a tool, use the contact details on the [About page](../about.md). To request committee review, follow [How Tools Are Reviewed](../governance/review-process.md). Reviewed, Use with caution, and Restricted come from that review; Listed and Licensed reflect cataloging and procurement facts.
 

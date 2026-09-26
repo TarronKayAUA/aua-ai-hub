@@ -45,7 +45,7 @@ Experience descriptions, thank-you notes, and scheduling correspondence carry fa
 
 ## Patient stories in your statement
 
-Personal statements are often built around a patient encounter, and an assistant can critique how you tell that story. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps protected health information (PHI) out of public AI tools, so the version you work on with AI is the de-identified one.
+Personal statements are often built around a patient encounter, and an assistant can critique how you tell that story. The version to work on is the de-identified one, which is also the one to submit: a patient story told without identifying details is the professional norm, and the story's force is in what you learned.
 
 Do what you already do on rotations: abstract first. An age band, a presentation pattern, no names, no dates, no institution, nothing that could identify a person. The story you tell in a statement should already be abstracted to that level anyway, because it is going to be read by strangers.
 
@@ -82,6 +82,6 @@ The practical consequence has nothing to do with rules. A statement you did not 
 
 The AAMC addresses writers of a letter of recommendation (LOR) directly and permissively: generative AI "has the potential to support your letter-writing process, including crafting initial drafts of the LOR and editing its content and tone. Regardless of how you use genAI, you remain the author of the letter and are responsible for its content, accuracy, and the assessment it conveys."
 
-Two things specific to letters. A letter drafted from a thin prompt reads generic, and a generic letter does less for the student than a short specific one. And the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps student education records, such as grades, evaluations, and rank, out of public AI tools, so a practical approach is to draft from your own account of what you observed and add record details yourself in the final version.
+Two things specific to letters. A letter drafted from a thin prompt reads generic, and a generic letter does less for the student than a short specific one. And a letter is strongest drafted from your own account of what you observed, with record details such as grades, evaluations, and rank added yourself in the final version: the observations are what only you can supply, and the student's records stay with you.
 
 **Related:** [Module 6: Clinical Contexts](../pathway/clinical.md) for turning a real case into a teaching abstraction, and [Shelf and NBME Score Reports](score-reports.md) for the exams that precede this year.

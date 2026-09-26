@@ -44,7 +44,7 @@ Each step-by-step guide walks one job end to end. Artificial intelligence (AI) c
 -   ## :material-briefcase:{ .lg .middle } Staff and administration {: #staff-and-administration }
 
     - <span class="row-tag">Start here</span> [Administrative Drafting](playbooks/admin-drafting.md) <span class="row-sub">Memos, minutes, and reports</span>
-    - [What can go into an AI tool](#the-lines-that-never-move) <span class="row-sub">Personnel, student, and patient information</span>
+    - [The policy in five minutes](pathway/rules.md) <span class="row-sub">Module 3: a short guide to the AI Responsible Use Policy</span>
     - [Letters of recommendation](playbooks/residency-application.md#for-faculty-writing-letters) <span class="row-sub">Drafting with AI while you stay the author</span>
 
 </div>
@@ -54,7 +54,7 @@ Each step-by-step guide walks one job end to end. Artificial intelligence (AI) c
 -   ## Also on this site {: #also-on-this-site }
 
     - [All step-by-step guides](playbooks/index.md)
-    - [Can I use AI for this?](governance/can-i.md)
+    - [AI Responsible Use Policy](governance/policy.md)
     - [Prompt Library](prompts/index.md)
     - [Tool Directory](tools/index.md)
     - [Request a tool review](governance/review-process.md)
@@ -63,13 +63,13 @@ Each step-by-step guide walks one job end to end. Artificial intelligence (AI) c
 
 ## Start with the basics
 
-The first four modules of the literacy pathway take about 50 minutes and cover the mechanism, the craft, and the policy: [How AI Works](pathway/how-ai-works.md), [Prompting Fundamentals](pathway/prompting.md), [The Policy in Practice](pathway/rules.md), and [Teaching and Assessment](pathway/teaching-assessment.md). The [full pathway](pathway/index.md) adds research, clinical, and agent modules.
+The first four modules of the literacy pathway take about 45 minutes and cover the mechanism, the craft, and the policy: [How AI Works](pathway/how-ai-works.md), [Prompting Fundamentals](pathway/prompting.md), [The Policy in Practice](pathway/rules.md), and [Teaching and Assessment](pathway/teaching-assessment.md). The [full pathway](pathway/index.md) adds research, clinical, and agent modules.
 
-## What the policy asks: patient data, student records, personnel files {: #the-lines-that-never-move }
-
-The [AI Responsible Use Policy](governance/policy.md) keeps patient information, student records, confidential personnel information, and other sensitive or confidential material out of public AI tools unless the AI Committee has approved a tool for that data. [Can I Use AI for This?](governance/can-i.md) answers common questions one at a time, and [Module 3: The Policy in Practice](pathway/rules.md) covers the policy in about ten minutes.
+## Your work, your judgment {: #your-judgment }
 
 Whatever a tool contributed, the work you sign is yours. Read AI-drafted teaching material as its content expert before students see it: models make confident errors, and students are the readers least placed to catch them.
+
+Most drafting needs no identifying details at all. A memo about a process, a vignette built from invented facts, or feedback on an essay with the author's name left off gives the model everything it needs, and a draft with nothing sensitive in it is one you can share, reuse, and keep anywhere. The [AI Responsible Use Policy](governance/policy.md) is the reference for patient, student, and personnel information, and [Module 3: The Policy in Practice](pathway/rules.md) is a five-minute guide to it.
 
 ## More ways to work
 

@@ -57,9 +57,9 @@ Translated into practice:
 1. **Start with the built-in skills.** They cover document work, which is most of what this audience needs, with nothing to install.
 2. **If you need more, take it from Anthropic's own published skills**, listed in the table above. You are choosing a known author, and you can read what you are installing.
 3. **Read a skill from an open directory before installing it.** Its instruction file is plain text: if you can follow what it tells the assistant to do, and what any bundled scripts do, you can judge it as you would any program. Browsing a directory is a good way to find ideas.
-4. **Try a new skill on ordinary files first.** A skill runs with whatever file access you gave the assistant, so the [AI Responsible Use Policy](../governance/policy.md#responsible-use)'s data rules apply to everything it can reach, as they do to anything you paste. A first run on ordinary files shows you what the skill actually does before you rely on it for real work.
+4. **Try a new skill on ordinary files first.** A skill runs with whatever file access you gave the assistant, so it can read everything you could have pasted. A first run on ordinary files shows you what the skill actually does before you rely on it for real work.
 
-The AI Committee has not taken a position on skills, and no skill has been through the [tool review process](../governance/review-process.md); the suggestions above come from the vendor's documentation and the policy's data rules. If you find or write a skill colleagues would benefit from, share it along with where it came from, so each person can judge it for themselves, and tell the [AI Committee](../governance/committee.md) too, so it can be weighed for this page.
+The AI Committee has not taken a position on skills, and no skill has been through the [tool review process](../governance/review-process.md); the suggestions above come from the vendor's documentation and ordinary care with files. If you find or write a skill colleagues would benefit from, share it along with where it came from, so each person can judge it for themselves, and tell the [AI Committee](../governance/committee.md) too, so it can be weighed for this page.
 
 ## Writing your own
 

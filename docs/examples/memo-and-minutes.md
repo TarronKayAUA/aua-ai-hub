@@ -42,7 +42,7 @@ One instruction, used twice in one conversation: first with the memo facts, then
 
     Next meeting Wed Oct 28, same time.
 
-These facts and notes are invented and hold nothing confidential, so they are ordinary material for any capable assistant. Confidential personnel information and student education records stay out of publicly available artificial intelligence (AI) tools under the [AI Responsible Use Policy](../governance/policy.md#responsible-use), unless the AI Committee has vetted and approved a tool for that data. For a document about an individual, the guide shows how to draft with placeholders and add the specifics yourself. A placeholder removes a name, not the confidentiality of what the document says.
+These facts and notes are invented and hold nothing confidential, so they are ordinary material for any capable artificial intelligence (AI) assistant. For a document about an individual, the guide shows how to draft with placeholders and add the specifics yourself. A placeholder removes a name, not the confidentiality of what the document says.
 
 ## The prompt
 

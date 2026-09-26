@@ -12,7 +12,7 @@ action:
 **Have ready:** your assignment list, with the skill each one builds or measures, and your department's existing guidance on artificial intelligence (AI), if any.
 {: .have-ready }
 
-**A student whose syllabus says nothing about AI?** Ask your instructor before using it for graded work. [For Students](../students.md#the-lines-that-never-move) covers what stays out of AI tools.
+**A student whose syllabus says nothing about AI?** Ask your instructor before using it for graded work. [For Students](../students.md#using-ai-well) has the study habits worth pointing them to.
 {: .guide-pointer }
 
 ## Three templates
@@ -38,7 +38,7 @@ Adapt freely; the bracketed parts are yours to fill. Each is written so a studen
 <p class="hf-box-foot">Defend it without the tool.</p>
 </div>
 </div>
-<p class="hf-banner">Shared by every tier: students stay accountable, AI work is labeled rather than passed off as original, the data rules hold, and AI use a course has not authorized can be academic misconduct under the Student Handbook.</p>
+<p class="hf-banner">Shared by every tier: the AI Responsible Use Policy and the Student Handbook, which your statement can link rather than repeat.</p>
 <figcaption>Choose per course, even per assessment; what every tier shares comes from the AI policy and the academic integrity rules.</figcaption>
 </figure>
 
@@ -78,9 +78,9 @@ In this course, the work you submit must be your own without the assistance of g
 
 Set clear expectations for student AI use in your course. The university's [AI Responsible Use Policy](../governance/policy.md) leaves labeling and attribution standards to "specific course or departmental guidelines," so your syllabus is where students look to learn what your course expects. Silence leaves them guessing, and students who guess differently end up working to different standards.
 
-### What the policy already settles
+### What the policy already covers
 
-Your statement can build on the policy rather than repeat it: students stay accountable for what they submit, AI-generated content is not presented as their own original work, and sensitive data, such as patient information and other students' records, stays out of public AI tools. The Student Handbook adds that unauthorized or unacknowledged AI use in coursework, assessments, or clinical training may constitute academic misconduct, so what your statement authorizes is what students can rely on.
+Your statement can build on the policy rather than repeat it: link the [policy](../governance/policy.md), and spend your words on what only your course can decide. The Student Handbook adds that unauthorized or unacknowledged AI use in coursework, assessments, or clinical training may constitute academic misconduct, so what your statement authorizes is what students can rely on.
 
 ### Where AI helps, and where it hurts
 

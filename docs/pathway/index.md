@@ -12,7 +12,7 @@ from docs/assets/art/; its styles are at the end of layout-learn.css. -->
 
 # AI Literacy Pathway
 
-<span class="meta-chip">Seven modules</span><span class="meta-chip">Self-paced</span><span class="meta-chip" data-learn-minutes="sum:1-3">Modules 1 to 3 take about 35 minutes</span>
+<span class="meta-chip">Seven modules</span><span class="meta-chip">Self-paced</span><span class="meta-chip" data-learn-minutes="sum:1-3">Modules 1 to 3 take about 30 minutes</span>
 
 <!-- The minutes on this page (the meta line above, the bullets, the stage
 notes and every route-map entry) are checked against each page's own
@@ -26,22 +26,22 @@ together. The Start button's text is checked the same way. -->
 
 A self-paced introduction to artificial intelligence (AI) in plain language, with no math. Each module is short, points to the relevant material on this site and beyond, ends with a short self-check, and stands alone.
 
-- **Modules 1 to 3, the foundations,** are for everyone, in order: what these systems are, how to direct them, and what the university requires. Together they take <span data-learn-minutes="sum:1-3">about 35 minutes</span>.
+- **Modules 1 to 3, the foundations,** are for everyone, in order: what these systems are, how to direct them, and a short guide to the university's policy. Together they take <span data-learn-minutes="sum:1-3">about 30 minutes</span>.
 - **Modules 4 to 6** go deeper for your role, <span data-learn-minutes="each:4-6">10 to 15 minutes</span> each. Take the ones that match your work.
 - **Module 7**, on working with agents, is optional, for when the basics feel comfortable. Four optional hands-on guides follow it.
 
-All seven modules take <span data-learn-minutes="sum:1-7">about 80 minutes</span>, and the hands-on guides add <span data-learn-minutes="sum:guides">about 50 minutes</span>.
+All seven modules take <span data-learn-minutes="sum:1-7">about 75 minutes</span>, and the hands-on guides add <span data-learn-minutes="sum:guides">about 50 minutes</span>.
 
 </div>
 
 <nav class="route-map" aria-label="The pathway at a glance" markdown>
 
 <div class="route-stage route-stage--core" markdown>
-<p class="route-stage-head"><span class="route-stage-num">Stage 1</span><span class="route-stage-name">Foundations</span><span class="route-stage-note" data-learn-minutes="sum:1-3">Everyone, in order, about 35 minutes</span></p>
+<p class="route-stage-head"><span class="route-stage-num">Stage 1</span><span class="route-stage-name">Foundations</span><span class="route-stage-note" data-learn-minutes="sum:1-3">Everyone, in order, about 30 minutes</span></p>
 
 - <span class="route-n">1</span> <span class="route-text">[How AI Works](how-ai-works.md)</span> <span class="route-min">10 min</span>
 - <span class="route-n">2</span> <span class="route-text">[Prompting Fundamentals](prompting.md)</span> <span class="route-min">15 min</span>
-- <span class="route-n">3</span> <span class="route-text">[The Policy in Practice](rules.md)</span> <span class="route-min">10 min</span>
+- <span class="route-n">3</span> <span class="route-text">[The Policy in Practice](rules.md)</span> <span class="route-min">5 min</span>
 
 </div>
 

@@ -30,4 +30,4 @@ The [Prompt Library](../prompts/index.md) gives you the words, and the [AI Liter
 {: .guide-index-intro }
 
 !!! note "The policy behind every guide"
-    Every guide works within the [AI Responsible Use Policy](../governance/policy.md); what each one adds is practical advice, with its reasons. [Can I Use AI for This?](../governance/can-i.md) answers common questions about the policy one at a time, and [The Policy in Practice](../pathway/rules.md) covers the whole policy in about ten minutes.
+    Every guide works within the [AI Responsible Use Policy](../governance/policy.md); what each one adds is practical advice, with its reasons. [The Policy in Practice](../pathway/rules.md) is a five-minute guide to it.

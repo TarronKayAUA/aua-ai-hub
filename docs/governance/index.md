@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-07-15
+last_reviewed: 2026-09-26
 action:
   - text: Read the policy
     link: governance/policy.md
-  - text: Can I use AI for this?
-    link: governance/can-i.md
+  - text: The policy in five minutes
+    link: pathway/rules.md
     style: secondary
 ---
 
@@ -13,10 +13,6 @@ action:
 How the American University of Antigua College of Medicine (AUACOM) governs artificial intelligence (AI) use: a published policy, a standing committee, and a request-driven tool review process. This page is the map.
 
 <div class="grid cards gov-cards" markdown>
-
--   ## :material-chat-question-outline:{ .lg .middle } [Can I Use AI for This?](can-i.md){ .card-link }
-
-    Short answers to common questions, each with its conditions, based on the policy in force. A draft for AI Committee comment.
 
 -   ## :material-file-document:{ .lg .middle } [The Policy](policy.md){ .card-link }
 
@@ -38,4 +34,4 @@ How the American University of Antigua College of Medicine (AUACOM) governs arti
 
 </div>
 
-The policy in brief: it encourages AI use where it helps you do your work, you stay accountable for what you produce with it, and sensitive information, such as patient information and student records, stays out of public AI tools unless the AI Committee has approved a tool for that data. [The Policy in Practice](../pathway/rules.md) covers it in about ten minutes of plain language.
+The policy is short and readable. It encourages AI use where it helps you do your work, and it covers accountability, acknowledging AI contributions, privacy and confidentiality, clinical use, and intellectual property. [The Policy in Practice](../pathway/rules.md) is a five-minute guide to it.

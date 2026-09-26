@@ -19,12 +19,12 @@ prompts:
 2. **Interrogate the draft.** Ask what the outline omits that a [your specialty] educator would expect, where students typically get confused on this topic, and what could be cut first if time runs short. Treat the answers as prompts for your judgment, not verdicts.
 3. **Deepen the checks.** For each section's active check, ask for one alternative format (single best answer question, think-pair-share prompt, quick poll) and pick what fits your room.
 4. **Generate support materials.** Once the outline is yours, ask for the things that follow mechanically: a handout skeleton, draft slide bullets per section, or three vignette variants of your opener for reuse in small groups. For figures, [AI-Generated Images in Teaching](ai-images.md) covers where image generators go wrong on anatomy and what tends to work better.
-5. **Verify content.** Check every factual claim, dose, criterion, and guideline reference that survives into your materials against a current authoritative source. Models confidently reproduce outdated clinical thresholds, and the threshold on a slide is the one students remember. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) requires AI-generated content to be verified before it is used in academic work.
+5. **Verify content.** Check every factual claim, dose, criterion, and guideline reference that survives into your materials against a current authoritative source. Models confidently reproduce outdated clinical thresholds, and the threshold on a slide is the one students remember.
 
 ## Good practice for this task
 
 - Your own teaching materials are fine as inputs. A colleague's materials are their work, so a word with them before you build on their slides is both a courtesy and a guard against copyright problems.
-- The [policy](../governance/policy.md#responsible-use) requires AI-generated content to be identified according to academic standards and your course or department's guidelines, so use your department's practice for how that appears on slides.
+- If your department has a practice for noting AI-generated content on slides, use it: students notice whether faculty meet the standard they are asked to meet.
 - If you design a session around last year's cohort performance, work from aggregate or de-identified results: a session plan needs the pattern rather than the names.
 
 ## Before you rely on it

@@ -62,14 +62,10 @@ hide:
 
 </section>
 
-<!-- "Can I use AI for this?" depends on governance/can-i.md, which waits for
-     AI Committee comment (owner decision 3). If the rest of the redesign
-     ships before that page does, point this row at governance/index.md
-     with the sub-line "The policy in brief, on the Governance page". -->
 <div class="home-routes" markdown>
 
 - [New to AI? The basics in <!-- timely:minutes pathway/how-ai-works.md pathway/prompting.md pathway/rules.md --> minutes](pathway/index.md) <span class="row-sub">Modules 1 to 3 of the AI Literacy Pathway</span>
-- [Can I use AI for this?](governance/can-i.md) <span class="row-sub">Short answers, each linked to the policy</span>
+- [The AI Responsible Use Policy](governance/policy.md) <span class="row-sub">Short, readable, and the one reference</span>
 
 </div>
 

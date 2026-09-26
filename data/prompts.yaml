@@ -251,8 +251,8 @@
     and again in teams on a scratch card as the team test (tRAT), then two
     or three application cases higher on Bloom's taxonomy, with facilitator
     notes. Attach the pre-work (your own or the school's material; a
-    licensed textbook chapter is third-party content, which the policy does
-    not allow into an AI tool without review) and, for pre-keyed scratch
+    licensed textbook chapter belongs to its publisher, and its license may
+    not cover this use) and, for pre-keyed scratch
     cards, the answer letters for the one card version you will use.
   prompt: |
     ROLE
@@ -541,9 +541,10 @@
   # Multiple-Choice Question (MCQ) Writing, where the guides link it.
   featured: true
   also_for: [study_strategy]
-  note_visible: Question-bank and NBME questions are licensed third-party
-    content, which the policy does not allow into an AI tool without review,
-    so the tutor builds its questions from your own materials instead.
+  note_visible: The tutor builds its questions from your own materials,
+    which suits your exams best, since in-house exams are written from them.
+    Question-bank and NBME items are licensed content whose license may not
+    allow this use.
   # use: drafted 2026-09-25 for owner sign-off
   use:
     - 'Start a Project in Claude or ChatGPT for the course (see [Standing Setups](../tools/standing-setups.md)).'
@@ -557,10 +558,10 @@
     Works best pasted into the instructions of a Claude Project or ChatGPT
     Project (see [Standing Setups](../tools/standing-setups.md)) rather than
     a chat message, with your lecture notes, slides, or syllabus attached as
-    the source material. Question-bank and NBME questions are licensed
-    third-party content, which the policy does not allow into an AI tool
-    without review, so the tutor builds its questions from your own
-    materials instead. Defaults to Exam mode (the objective is hidden until
+    the source material. The tutor builds its questions from your own
+    materials, which suits your exams best, since in-house exams are written
+    from them. Question-bank and NBME items are licensed content whose
+    license may not allow this use. Defaults to Exam mode (the objective is hidden until
     you answer); say "study mode" to work through objectives in order
     instead. For iRAT preparation, attach the TBL pre-work and ask for
     1st-order questions.
@@ -1178,12 +1179,11 @@
   status: draft
   last_reviewed: 2026-06-12
   notes: >-
-    Describe your dataset in general terms; the review works from the
-    description, not the data. Participant-level data counts as unpublished
-    research data, which the [AI Responsible Use
-    Policy](../governance/policy.md#responsible-use) keeps out of publicly
-    available AI tools unless the AI Committee has approved a tool for it.
-    Verify recommended methods against a statistics
+    Describe your dataset in general terms: the review works from the
+    description, not the data, so participant-level data never needs to go
+    in (the [AI Responsible Use
+    Policy](../governance/policy.md#responsible-use) and your protocol are
+    the reference for it). Verify recommended methods against a statistics
     reference or a statistician before publishing, especially with
     clustering or missing-data handling involved.
   prompt: |
@@ -2036,10 +2036,9 @@
     Research Methods 1 course. Run it on a near-final draft; it reads like
     the reviewer you hope not to get, which is the point. It also runs on a
     [model on your own computer](../tools/local.md). A manuscript sent to
-    you for peer review was shared in confidence by its authors, so it is
-    confidential information, which the [AI Responsible Use
-    Policy](../governance/policy.md#responsible-use) keeps out of publicly
-    available AI tools, and many journals' reviewer policies bar it as well.
+    you for peer review is a different matter: its authors shared it in
+    confidence and have not agreed to anyone else reading it, and many
+    journals' reviewer policies bar putting it into AI tools.
   prompt: |
     ROLE
     You are a skeptical but fair peer reviewer for health professions
@@ -2212,10 +2211,9 @@
   last_reviewed: 2026-07-14
   notes: >-
     Paste your own performance report with your name, student number, and
-    any examinee or registration ID removed, so the scores cannot be tied
-    back to you and the report is no longer the kind of student record the
-    [AI Responsible Use Policy](../governance/policy.md#responsible-use)
-    keeps out of publicly available AI tools. The plan works from the
+    any examinee or registration ID removed: the plan needs the scores,
+    not who earned them, and without those details nothing in the report
+    points back to you. The plan works from the
     report's categories, so exam questions are not needed. Works with an
     NBME INSIGHTS export or score report text, an in-house category
     breakdown, or a question-level report; for in-house block exams, the
@@ -2794,10 +2792,9 @@
     findings only as you ask, or on a teaching abstraction of an encounter
     you saw; either way it gives feedback on how you reasoned. Reduce a real
     encounter to an age band and a presentation pattern, with no names,
-    dates, or places, before you type it: patient health information is what
-    the [AI Responsible Use Policy](../governance/policy.md#responsible-use)
-    keeps out of publicly available AI tools. Your clinical site's rules
-    may be stricter, and the stricter one applies. The
+    dates, or places, before you type it: the pattern is what you are
+    practicing on, and a case that identifies no one can be discussed
+    anywhere. Your clinical site may have its own AI rules. The
     model can be wrong about the medicine: check its teaching points against
     your course materials.
   prompt: |

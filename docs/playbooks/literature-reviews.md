@@ -41,7 +41,7 @@ prompts:
 ## Good practice for this task
 
 - Cite the papers themselves; an AI-generated summary is a map to them, not a source.
-- Manuscripts and grant applications you receive for peer review are confidential to the journal or funder, and reviewer terms generally bar putting them into AI tools, so they stay out unless the reviewer instructions provide or permit a tool ([Module 5: Research and Scholarship](../pathway/research.md) covers this).
+- Manuscripts and grant applications you receive for peer review are confidential to the journal or funder, and reviewer terms generally bar putting them into AI tools unless the reviewer instructions provide or permit one ([Module 5: Research and Scholarship](../pathway/research.md) covers this).
 - Disclose AI assistance per your target venue's instructions; the International Committee of Medical Journal Editors (ICMJE) recommendations are the baseline: writing assistance in the acknowledgments, AI used in data collection or analysis in the methods, and responsibility for all of it stays with the authors.
 
 ## Before you rely on it

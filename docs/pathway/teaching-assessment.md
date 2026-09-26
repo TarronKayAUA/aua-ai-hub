@@ -26,7 +26,7 @@ AI drafts plausible multiple choice questions (MCQs) quickly, and the evidence s
 
 ### Evaluating student work
 
-Identifiable student work and grades are education records protected by the Family Educational Rights and Privacy Act (FERPA), and the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps them out of public AI tools. De-identify first and the work is open to AI help; a find-and-replace to Student A, Student B usually does it, and the [Feedback on Student Writing](../playbooks/writing-feedback.md) playbook covers the indirect identifiers to watch for. AI detectors and similarity flags produce false positives, so a flag is a reason to look more closely at the work, not evidence on its own; any integrity decision rests on the work itself and on hearing from the student.
+Take the names out first. The feedback is about the writing, not the writer, and a stack with no names in it is fairer to read, because you see the work rather than the student. A find-and-replace to Student A, Student B usually does it, and the [Feedback on Student Writing](../playbooks/writing-feedback.md) playbook covers the indirect identifiers to watch for; the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for student records. AI detectors and similarity flags produce false positives, so a flag is a reason to look more closely at the work, not evidence on its own; any integrity decision rests on the work itself and on hearing from the student.
 
 ### Your course's AI expectations
 
@@ -45,7 +45,7 @@ Students will use these tools; ambiguity serves no one. The policy delegates lab
 </div>
 <div class="hf-grad-row">
 <p class="hf-grad-label">Evaluating student work</p>
-<div class="hf-box hf-box--stop"><p>De-identify first (FERPA). A detector flag starts a closer look; it is not evidence on its own.</p></div>
+<div class="hf-box hf-box--stop"><p>Names out first. A detector flag starts a closer look; it is not evidence on its own.</p></div>
 </div>
 </div>
 <figcaption>The further down, the less the tool decides and the more you do.</figcaption>
@@ -53,8 +53,8 @@ Students will use these tools; ambiguity serves no one. The policy delegates lab
 
 ## Self-check
 
-??? question "You want AI feedback on twelve student reflection essays. What has to happen first?"
-    De-identification: take out names, identification numbers, and details that could identify the author, because identifiable student work is a protected education record and the policy keeps it out of public AI tools. After that, the tool can draft feedback quickly; read and adjust it before it goes back, because you know the student and the course, and the tool does not.
+??? question "You want AI feedback on twelve student reflection essays. What makes that work well?"
+    Taking out names, identification numbers, and details that could identify the author, first: the feedback needs the writing, not the writer, and a stack with no names in it is fairer to read. After that, the tool can draft feedback quickly; read and adjust it before it goes back, because you know the student and the course, and the tool does not.
 
 ??? question "An AI detector flags one student's essay at 92 percent. What does that number justify by itself?"
     A closer human look, and nothing more. Detector outputs are preliminary indicators with known false-positive problems. An academic integrity action needs human review of the actual evidence and an opportunity for the student to respond, not a percentage from a black box.

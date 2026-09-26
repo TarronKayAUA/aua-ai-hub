@@ -26,7 +26,7 @@ Prefer not to post publicly? Send prompts directly; contact information is on th
 
 ### What the policy says about what you paste { #what-stays-out }
 
-The prompts carry no data rules of their own; the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps sensitive information, such as patient information and student records, out of publicly available artificial intelligence (AI) tools unless the AI Committee has approved a tool for that data. Removing names, ID numbers, dates, and places is usually what makes a case or a piece of student work usable.
+The prompts carry no data rules of their own; the [Artificial Intelligence (AI) Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information, student records, and other sensitive material. In practice, a case or a piece of student work rarely needs names, ID numbers, dates, or places, and the prompts work just as well without them.
 
 <details class="note" id="two-habits" markdown>
 <summary>Two habits that make every prompt work better</summary>

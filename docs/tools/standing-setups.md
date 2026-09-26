@@ -45,7 +45,7 @@ Claude keeps each project's memory separate from your other work. In ChatGPT, do
 The highest-value standing setup for faculty is one project per course:
 
 1. **Create the project** and name it for the course.
-2. **Upload the knowledge**: syllabus, learning objectives, the session schedule, your reading list, and any handouts you would give a student. Rosters, grades, and individual student work are student education records, which a course assistant has no use for, and identifiable patient details are protected health information (PHI); the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps both out of publicly available AI tools unless a tool has been approved for them.
+2. **Upload the knowledge**: syllabus, learning objectives, the session schedule, your reading list, and any handouts you would give a student. A course assistant has no use for rosters, grades, individual student work, or identifiable patient details, and leaving them out keeps the project something you can share with a colleague or a teaching assistant without a second thought.
 3. **Write the instructions**, which are just a standing version of a good prompt: who the assistant is (a teaching assistant for this specific course and level), what it answers from (the uploaded materials first, citing the section it drew on), and your standing rules (US English, the course's terminology, "say so when the materials do not cover a question rather than guessing").
 4. **Use it all term.** Draft announcements, generate practice questions against the actual objectives, and check whether a planned session duplicates an earlier one, all without re-explaining the course once.
 

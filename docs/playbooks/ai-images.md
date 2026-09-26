@@ -59,10 +59,10 @@ Meeting all four is not a guarantee. The ophthalmic study already showed each fl
 
 ## Before you rely on any of it
 
-- The [AI Responsible Use Policy](../governance/policy.md) makes you accountable for the final output, requires you to verify AI-generated content before using it, and asks you to consult faculty or other experts when you are unsure of it. For an anatomical figure, verifying it means someone who knows the anatomy checking the anatomy.
+- Whatever a tool contributed, the figure you show is yours, so it needs checking like anything else you put in front of students. For an anatomical figure, that means someone who knows the anatomy checking the anatomy; asking a colleague when you are unsure is also what the [AI Responsible Use Policy](../governance/policy.md) suggests.
 - Labels are the one failure you can check without knowing the structure. Typography in generated images has improved, but a legible word is not the same as the right word in the right place.
 - If a generated image is already in your material and it is wrong, take it out. Removing it costs one slide. Leaving it costs a correction you may never get to make, in students who will be confident.
-- Identifiable patient images, including clinical photographs, are protected health information (PHI), which the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps out of public AI tools.
+- An identifiable patient image, such as a clinical photograph, carries as much as the chart does. A teaching figure rarely needs one, and the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information.
 
 Students are meeting these tools too, and generating their own study figures. The student-facing version of this guidance is on the [Common Misconceptions](../basics/misconceptions.md) page.
 

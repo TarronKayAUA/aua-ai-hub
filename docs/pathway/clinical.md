@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-01
+last_reviewed: 2026-09-26
 ---
 
 # Module 6: Clinical Contexts
@@ -9,8 +9,8 @@ last_reviewed: 2026-09-01
 ## What you will be able to do
 
 - Draw the line between AI as a study aid for clinical reasoning and AI in actual patient care.
-- Keep patient information out of public AI tools, and turn a real case into a teaching abstraction you can discuss freely.
-- Anticipate the AI rules you will meet at clinical sites.
+- Turn a real case into a teaching abstraction you can discuss freely, and explain why it makes the better exercise.
+- Find out what a clinical site expects before you use AI there.
 
 ## The core idea
 
@@ -22,11 +22,11 @@ Practicing differentials against an artificial intelligence (AI) case, asking fo
 
 ### AI in patient care
 
-For clinical contexts, the [AI Responsible Use Policy](../governance/policy.md#responsible-use) calls for extreme caution: AI tools must not replace professional judgment or clinical expertise, they are intended to augment decision-making rather than automate it, and any AI-assisted decision must comply with clinical guidelines, ethical standards, and the law. As a student, that means your supervisor's judgment about a real patient comes first. If an AI suggestion makes you question a plan, take the question to your supervisor; that is a good use of what the tool showed you.
+In patient care, the [AI Responsible Use Policy](../governance/policy.md#responsible-use) asks for extreme caution (section E), and the reason is the patient: a model has not examined them, cannot see what the chart leaves out, and carries none of the responsibility. AI can inform a clinical decision; it cannot own one. As a student, that means your supervisor's judgment about a real patient comes first. If an AI suggestion makes you question a plan, take the question to your supervisor; that is a good use of what the tool showed you.
 
 ### Patient information
 
-The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps protected health information (PHI) out of publicly available AI tools unless the AI Committee has specifically approved a tool for patient data, and consumer chatbots are not approved. PHI is broader than a name: a photo of a chart or a recording of an encounter carries it too. If you want to discuss a real case with an AI for learning, strip it to a teaching abstraction first: age band, presentation pattern, no identifying details, no rare-combination specifics that could re-identify.
+A real case makes a good study prompt, and the version that works best with an AI is the teaching abstraction: an age band, a presentation pattern, the findings, and nothing that could identify the patient. A rare combination of details can identify someone as surely as a name, and a photo of a chart or a recording of an encounter carries as much as the chart itself. The model reasons just as well from the pattern, the pattern is what you will meet again, and an abstraction is a case you can discuss anywhere, with anyone. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Two kinds of work share the word clinical</p>
@@ -41,9 +41,9 @@ The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps p
 </ul>
 <p class="hf-box-foot">The literature stays primary.</p>
 </div>
-<div class="hf-box hf-box--stop">
+<div class="hf-box">
 <p class="hf-box-title">AI in patient care</p>
-<p class="hf-box-sub">Extreme caution, by policy</p>
+<p class="hf-box-sub">Informs the decision, never owns it</p>
 <ul>
 <li>augments decisions, never automates them</li>
 <li>your supervisor's judgment comes first</li>
@@ -51,8 +51,8 @@ The [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps p
 <p class="hf-box-foot">Accountability stays human.</p>
 </div>
 </div>
-<p class="hf-banner">In both: patient information stays out of public AI tools, and a teaching abstraction is fine.</p>
-<figcaption>Same word, different kinds of work; the patient-information line is the same in both.</figcaption>
+<p class="hf-banner">In both, the teaching abstraction is the case to work with: it keeps the pattern and identifies no one.</p>
+<figcaption>Same word, different kinds of work; the teaching abstraction serves both.</figcaption>
 </figure>
 
 ### At clinical sites
@@ -61,23 +61,23 @@ Hospitals and clinics have their own AI policies, some covering specific tools (
 
 ### Bias is a clinical issue here
 
-Models reflect their training data, and documented performance gaps across populations make uncritical clinical use an equity problem, not just an accuracy one. The policy's requirement to identify and mitigate bias applies with most force exactly here.
+Models reflect their training data, and documented performance gaps across populations make uncritical clinical use an equity problem, not just an accuracy one. That is why the policy's attention to bias matters most exactly here: checking a suggestion against the patient in front of you is part of the reasoning.
 
 ## Self-check
 
 ??? question "After a memorable encounter, you want to explore the differential with a chatbot tonight. What decides whether that is fine?"
-    What you type in. A de-identified teaching abstraction (demographic band, presentation, findings pattern) is a legitimate and useful study exercise. Anything identifiable, including unusual combinations of details that could point to a real person, is PHI, which the policy keeps out of public AI tools.
+    What you type in. A teaching abstraction (demographic band, presentation, findings pattern) is a legitimate and useful study exercise, and a better one than the full story, because it trains you on the pattern you will meet again. Anything identifiable, including an unusual combination of details that could point to a real person, is patient information, and the [policy](../governance/policy.md#responsible-use) is the reference for that.
 
 ??? question "A resident on your rotation uses a phone app to transcribe patient conversations and asks you to do the same. What governs your answer?"
     The clinical site's policy on that specific tool, together with the university's policy on patient information. If the site has sanctioned the app for patient encounters, the site's rules for it apply; if it has not, recording patients with it sends their information to a third party without their consent or the site's protections. Ask your supervisor which it is before you start.
 
 ??? question "An AI tool suggests a diagnosis your attending disagrees with. What does the policy say about whose call it is?"
-    The human's, categorically. AI augments judgment; it does not arbitrate it. The tool's suggestion can prompt a question or a second look at the evidence, but clinical authority and accountability stay with the clinicians.
+    The clinician's. AI informs judgment; it does not arbitrate it. The tool's suggestion can prompt a question or a second look at the evidence, but clinical authority and accountability stay with the clinicians.
 
 ## Going deeper
 
 - [Medical Learning tools](../tools/index.md#medical-learning): the directory's category built for study and case practice.
-- [Image Generation Benchmarks](../benchmarks/image.md#medical-images-are-a-different-question): why general image models are not anatomy references, and how the patient-information rule applies to images.
+- [Image Generation Benchmarks](../benchmarks/image.md#medical-images-are-a-different-question): why general image models are not anatomy references.
 - [AI and the Residency Application](../playbooks/residency-application.md): what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) permit, and how to tell a patient story in a personal statement without identifying the patient.
 
 **Done with the core pathway?** Stage 3 is waiting when you are: [Module 7: Working with Agents](working-with-agents.md). The [Playbooks](../playbooks/index.md) turn these foundations into task-by-task workflows, and the [News](../news/this-week.md) section keeps you current from here.

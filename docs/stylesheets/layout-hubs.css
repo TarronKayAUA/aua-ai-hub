@@ -474,15 +474,13 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
   display: none;
 }
 
-[dir] .md-typeset .reader-map ul,
-[dir] .md-typeset .can-i-questions ul {
+[dir] .md-typeset .reader-map ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-[dir] .md-typeset .reader-map li,
-[dir] .md-typeset .can-i-questions li {
+[dir] .md-typeset .reader-map li {
   position: relative;
   min-height: 2.2rem;
   margin: 0;
@@ -491,8 +489,7 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
   line-height: 1.4;
 }
 
-.md-typeset .reader-map li::after,
-.md-typeset .can-i-questions li::after {
+.md-typeset .reader-map li::after {
   content: "\203a";
   position: absolute;
   top: 50%;
@@ -502,22 +499,19 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
   color: var(--md-default-fg-color--light);
 }
 
-.md-typeset .reader-map li > a,
-.md-typeset .can-i-questions li > a {
+.md-typeset .reader-map li > a {
   font-weight: 600;
   text-decoration: none;
 }
 
 /* A row with one link is one link; a row with two keeps two. */
-.md-typeset .reader-map li:has(> a:only-of-type) > a::after,
-.md-typeset .can-i-questions li:has(> a:only-of-type) > a::after {
+.md-typeset .reader-map li:has(> a:only-of-type) > a::after {
   content: "";
   position: absolute;
   inset: 0;
 }
 
-.md-typeset .reader-map li:has(> a:only-of-type):hover,
-.md-typeset .can-i-questions li:has(> a:only-of-type):hover {
+.md-typeset .reader-map li:has(> a:only-of-type):hover {
   background: var(--hub-quiet-bg);
 }
 
@@ -525,48 +519,11 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
   content: none;
 }
 
-.md-typeset .reader-map li:has(> a:focus-visible),
-.md-typeset .can-i-questions li:has(> a:focus-visible) {
+.md-typeset .reader-map li:has(> a:focus-visible) {
   outline: 2px solid var(--hub-focus);
   outline-offset: 1px;
 }
 
-.md-typeset .reader-map li > a:focus-visible,
-.md-typeset .can-i-questions li > a:focus-visible {
+.md-typeset .reader-map li > a:focus-visible {
   outline: none;
-}
-
-/* --- Can I Use AI for This? ------------------------------------------------
-   The question list at the top: grouped rows that jump to each answer. */
-.md-typeset .can-i-questions {
-  margin: 1.2rem 0 1.6rem;
-}
-
-.md-typeset .can-i-questions > p {
-  margin: 1rem 0 0.3rem;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--md-default-fg-color--light);
-}
-
-.md-typeset .can-i-questions > p:first-child {
-  margin-top: 0;
-}
-
-.md-typeset .can-i-questions li {
-  font-size: 0.78rem;
-}
-
-.md-typeset .can-i-example {
-  margin: 0.6rem 0 1rem;
-  padding: 0.6rem 0.8rem;
-  border-left: 0.2rem solid var(--hub-row-rule);
-  background: var(--hub-quiet-bg);
-  font-size: 0.76rem;
-}
-
-.md-typeset .can-i-example p {
-  margin: 0.4rem 0;
 }
