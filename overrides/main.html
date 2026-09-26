@@ -21,6 +21,20 @@
 {% block announce %}{% endblock %}
 
 {#
+  Island Night (2026-09-26): the mount for the scenery in the gutters beside
+  the page column on wide screens. docs/javascripts/layout-art.js fills it
+  only when a gutter is at least 80px wide, so on phones and laptops it
+  stays an empty element. Every page carries it except the Learn section
+  (pathway/), whose modules have their own art. Decorative: aria-hidden.
+#}
+{% block hero %}
+  {{ super() }}
+  {% if not (page and page.url and page.url.startswith("pathway/")) %}
+    <div class="isl-sides" data-island-sides aria-hidden="true"></div>
+  {% endif %}
+{% endblock %}
+
+{#
   Open Graph and Twitter card metadata so shared links (announcement email,
   Teams, social) render a branded preview instead of a bare URL. The image
   is docs/assets/social-card.png, regenerated with
