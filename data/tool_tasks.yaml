@@ -25,6 +25,9 @@
 #            from the data, so they cannot go stale.
 #   group    "task" (first row) or "data" (second row, "Or by data and
 #            licensing"); purely visual, one choice at a time either way
+#   landing  true shows the task as a shortcut on the Tools & Prompts
+#            landing (navigation synthesis, 2026-09-26); presentation only, its
+#            tools and count still come from data/tools.yaml
 #
 # DRAFT FIELD, AWAITING OWNER SIGN-OFF (layout redesign, 2026-09-25):
 #   start_with  the "Where to start" note shown above a task's results, a
@@ -76,6 +79,7 @@
   heading: Research and the literature
   from_category: research
   group: task
+  landing: true
   guide: >-
     [AI for Research](research.md) maps these tools to each stage of a
     project, starting with Scopus with AI, licensed through the AUA
@@ -98,6 +102,7 @@
   heading: Study for exams and courses
   from_category: medical_learning
   group: task
+  landing: true
   guide: >-
     The [students page](../students.md) routes the study workflow, and
     [Standing Setups](standing-setups.md) builds a question tutor from your
@@ -119,6 +124,7 @@
   heading: Make slides, posters, or diagrams
   from_category: presentations_design
   group: task
+  landing: true
   guide: >-
     To improve an existing PowerPoint deck, start with tools that work on
     the .pptx file itself. In Claude, four document [skills](skills.md)
@@ -162,6 +168,7 @@
   label: Use my own documents
   heading: Work from my own documents
   group: task
+  landing: true
   guide: >-
     [Gemini Notebook](gemini-notebook.md) answers from what you upload,
     with citations, and [Standing Setups](standing-setups.md) makes any
@@ -172,6 +179,7 @@
   heading: Make images or figures
   from_category: image_generation
   group: task
+  landing: true
   guide: >-
     Generated anatomy looks right and is often wrong. [AI-Generated Images in Teaching](../playbooks/ai-images.md) shows how to check a figure before it goes in front of a class.
   # DRAFT for owner sign-off. Sources: the two tools' blurbs.
@@ -251,5 +259,6 @@
   heading: What AUA licenses
   from_status: licensed
   group: data
+  landing: true
   guide: >-
     Licensed means institutionally licensed or procured by the university; this list grows as the university licenses more. A license on its own is not an approval for patient or student records; the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for those.

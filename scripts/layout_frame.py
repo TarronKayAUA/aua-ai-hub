@@ -3,12 +3,21 @@
 Layout redesign (owner approved 2026-09-25; SPEC section 12). Every page is
 one of five types, each with a frame the whole site shares:
 
-  door       landing pages: no sidebars, no breadcrumb, cards and rows
+  door       landing pages: no breadcrumb, cards and rows
   task       step-by-step guides: reading column, one action in the head
   lesson     the pathway modules: reading column, Listen row, Next button
   reference  everything else that is read: reading column
-  shelf      catalogues (directory, library, news, calendars): wide, no
-             "on this page" column
+  shelf      catalogues (directory, library, news, calendars): full width
+
+No page of any type shows the left navigation sidebar or the right "On this
+page" column (navigation synthesis, 2026-09-26). Their jobs moved to the
+section navigator (scripts/layout_nav.py, docs/javascripts/layout-nav.js):
+"Browse <section>" opens the section as a map, "On this page" opens the
+page's sections as chips, the page's action docks beside them while its own
+place is out of view, and every inner page ends with "More in this section"
+(Previous and Next on the seven modules) and the section's map.
+On phones Material's menu drawer still works: below 76.25em it shows the
+navigation whatever the page hides.
 
 A page chooses its type with front matter `page_type: <type>` (not
 `template:`, which MkDocs reserves for a Jinja template name). Without it,
@@ -40,7 +49,7 @@ from mkdocs.utils import get_relative_url
 
 TYPES = ("door", "task", "lesson", "reference", "shelf")
 DOOR = {"index.md", "students.md", "faculty.md", "pathway/index.md",
-        "news-and-events.md", "governance/index.md"}
+        "news-and-events.md", "governance/index.md", "tools-and-prompts.md"}
 SHELF = {"tools/index.md", "prompts/index.md", "prompts/exchange.md",
          "playbooks/index.md", "learning/index.md", "benchmarks.md",
          "conferences.md", "opportunities.md", "announcements/index.md",
@@ -73,8 +82,7 @@ def on_page_markdown(markdown, page, config, files):
     kind = page_type(page)
     page.meta["page_type"] = kind
     hide = list(page.meta.get("hide") or [])
-    wanted = {"door": ("navigation", "toc"), "shelf": ("toc",)}.get(kind, ())
-    for flag in wanted:
+    for flag in ("navigation", "toc"):
         if flag not in hide:
             hide.append(flag)
     if hide:
@@ -123,27 +131,6 @@ def _insert_after_head(html: str, block: str) -> str:
     return html[:i + 5] + block + html[i + 5:]
 
 
-def _first_page(section):
-    for child in section.children:
-        if child.is_page:
-            return child
-        if child.is_section:
-            found = _first_page(child)
-            if found is not None:
-                return found
-    return None
-
-
-def _back_target(page):
-    section = page.parent
-    while section is not None:
-        first = _first_page(section)
-        if first is not None and first is not page:
-            return section.title, first
-        section = section.parent
-    return None
-
-
 def _feedback_url(config) -> str | None:
     for link in (config.get("extra") or {}).get("footer_links") or []:
         if link.get("text", "").lower() == "feedback" and "://" in link.get("url", ""):
@@ -162,11 +149,10 @@ def _page_end(page, config, reviewed_html: str = "") -> str:
     if feedback:
         bits.append(f'<p class="page-end__meta"><a href="{_html.escape(feedback)}">'
                     "Report a problem with this page</a></p>")
-    back = _back_target(page)
-    if back:
-        title, target = back
-        href = get_relative_url(target.url, page.url)
-        bits.append(f'<a class="page-end__back" href="{_html.escape(href)}">Back to {_html.escape(title)}</a>')
+    # "Back to <section>" is now part of the section foot that
+    # scripts/layout_nav.py writes above this block: "More in this section"
+    # (led, on a prompt page, by the page it belongs to), or Previous and
+    # Next on the seven modules.
     if not bits:
         return ""
     return '<div class="page-end">' + "".join(bits) + "</div>"

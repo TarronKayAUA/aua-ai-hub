@@ -1,0 +1,1894 @@
+/* =========================================================================
+   The section navigator (navigation synthesis, 2026-09-26).
+   No page shows a sidebar (scripts/layout_frame.py). In their place:
+     .secnav     "Browse <section>" and "On this page" (layout-nav.js): in
+                 the empty gutter beside the reading column where they fit,
+                 otherwise one dock along the foot of the screen
+     .secmap     a tab drawn as groups of cards (scripts/layout_nav.py), in
+                 the Browse panel and at every page's foot
+     .secfoot    More in this section (or Previous and Next on the seven
+                 modules), then the map and the page's sections
+     .tp-*       the Tools & Prompts landing
+     .kind-*     color by meaning, and the key that names the colors
+   ========================================================================= */
+
+/* PALETTE START ============================================================
+   Every color the navigator, the maps, the page feet, the landing, the
+   colored link rows and the color key use is defined here and nowhere else.
+   scripts/layout_nav.py reads this block: a kind in data/section_map.yaml
+   may only name a hue that has --hue-<name>, -tint and -line in BOTH rules.
+
+   Hues (owner's palette, 2026-09-26): the text-strength color, a tint for
+   backgrounds, a line for borders. Every text color measures at least
+   4.6:1 on #ffffff, on #f5f8fb and on its own tint (light), and on #2c3344
+   and its own tint (dark). Which kind wears which hue is data
+   (data/section_map.yaml `kinds:`), written into each page as
+   [data-kind] { --k, --k-tint, --k-line }. Rose is held in reserve. */
+:root,
+[data-md-color-scheme="default"] {
+  --hue-blue: #07618c;
+  --hue-blue-tint: #e6eff4;
+  --hue-blue-line: #8fb8cb;
+  --hue-teal: #027e79;
+  --hue-teal-tint: #f2f9f8;
+  --hue-teal-line: #8dc5c3;
+  --hue-green: #11813c;
+  --hue-green-tint: #f2f8f4;
+  --hue-green-line: #94c6a7;
+  --hue-amber: #a06306;
+  --hue-amber-tint: #fbf8f4;
+  --hue-amber-line: #d4b98f;
+  --hue-coral: #b84f40;
+  --hue-coral-tint: #fbf5f4;
+  --hue-coral-line: #dfb0a9;
+  --hue-rose: #b14c79;
+  --hue-rose-tint: #faf4f7;
+  --hue-rose-line: #dcaec3;
+  --hue-violet: #825eb9;
+  --hue-violet-tint: #f8f6fb;
+  --hue-violet-line: #c7b7e0;
+  --hue-navy: #1b4165;
+  --hue-navy-tint: #e8ecf0;
+  --hue-navy-line: #98aaba;
+  /* Words and icons on a filled hue (the current page, a Browse button). */
+  --kind-on: #ffffff;
+
+  /* Surfaces and words */
+  --nav-surface: #ffffff;
+  --nav-raised: #f5f8fb;
+  --nav-raised-hover: #e9f1f7;
+  --nav-line: rgba(16, 48, 77, 0.14);
+  --nav-line-strong: rgba(16, 48, 77, 0.3);
+  --nav-muted: #5b6875;
+  --nav-accent: #07618c;
+  --nav-accent-on: #ffffff;
+  --nav-focus: #1b4165;
+  --nav-shadow: 0 1.2rem 3rem rgba(8, 30, 50, 0.28), 0 0.2rem 0.6rem rgba(8, 30, 50, 0.12);
+  --nav-card-shadow: 0 0.2rem 0.8rem rgba(8, 30, 50, 0.07);
+  --nav-veil: rgba(6, 20, 34, 0.32);
+
+  /* The dock and the rail: the page's frame at the foot, navy like the
+     header at the top. White words measure 10.6:1 on it. */
+  --nav-dock: #1b4165;
+  --nav-dock-fg: #ffffff;
+  --nav-dock-muted: #c9d3de;
+  --nav-dock-edge: #07618c;
+  --nav-dock-line: rgba(255, 255, 255, 0.45);
+  --nav-dock-hover: rgba(255, 255, 255, 0.12);
+  --nav-dock-mark: rgba(255, 255, 255, 0.16);
+  --nav-dock-open: #ffffff;
+  --nav-dock-open-fg: #1b4165;
+  --nav-dock-focus: #ffd180;
+  --nav-dock-shadow: 0 -0.25rem 1rem rgba(8, 30, 50, 0.2);
+  --nav-action: #ffffff;
+  --nav-action-fg: #1b4165;
+  --nav-action-hover: #e8ecf0;
+}
+
+[data-md-color-scheme="slate"] {
+  --hue-blue: #52bffa;
+  --hue-blue-tint: #31475d;
+  --hue-blue-line: #4180a8;
+  --hue-teal: #04c9c2;
+  --hue-teal-tint: #264856;
+  --hue-teal-line: #168689;
+  --hue-green: #6ec783;
+  --hue-green-tint: #35484d;
+  --hue-green-line: #508467;
+  --hue-amber: #eca552;
+  --hue-amber-tint: #474346;
+  --hue-amber-line: #96724c;
+  --hue-coral: #ff9786;
+  --hue-coral-tint: #4a414d;
+  --hue-coral-line: #a06a68;
+  --hue-rose: #fa95bd;
+  --hue-rose-tint: #494155;
+  --hue-rose-line: #9d6987;
+  --hue-violet: #c4a4fe;
+  --hue-violet-tint: #41435e;
+  --hue-violet-line: #8071aa;
+  --hue-navy: #9cc6e4;
+  --hue-navy-tint: #3c485a;
+  --hue-navy-line: #6a849c;
+  --kind-on: #14202e;
+
+  --nav-surface: #252b3a;
+  --nav-raised: #2c3344;
+  --nav-raised-hover: #34405a;
+  --nav-line: rgba(255, 255, 255, 0.12);
+  --nav-line-strong: rgba(255, 255, 255, 0.28);
+  --nav-muted: #b3bdcc;
+  --nav-accent: #8cc4e2;
+  --nav-accent-on: #14202e;
+  --nav-focus: #ffb74d;
+  --nav-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.55), 0 0.2rem 0.6rem rgba(0, 0, 0, 0.3);
+  --nav-card-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.25);
+  --nav-veil: rgba(0, 0, 0, 0.45);
+
+  --nav-dock: #2a3a55;
+  --nav-dock-fg: #ffffff;
+  --nav-dock-muted: #c9d3de;
+  --nav-dock-edge: #52bffa;
+  --nav-dock-line: rgba(255, 255, 255, 0.4);
+  --nav-dock-hover: rgba(255, 255, 255, 0.12);
+  --nav-dock-mark: rgba(255, 255, 255, 0.14);
+  --nav-dock-open: #ffffff;
+  --nav-dock-open-fg: #1b2a3a;
+  --nav-dock-focus: #ffd180;
+  --nav-dock-shadow: 0 -0.25rem 1rem rgba(0, 0, 0, 0.45);
+  --nav-action: #ffffff;
+  --nav-action-fg: #1b2a3a;
+  --nav-action-hover: #e8ecf0;
+}
+/* PALETTE END ============================================================== */
+
+/* --- Frame: no sidebars, and Material's footer pager gives way to the
+   section foot on every page. ---------------------------------------------- */
+.md-footer .md-footer__inner {
+  display: none;
+}
+
+/* With no sidebars the reading column sits alone in the middle of the
+   screen; the breadcrumb lines up with it instead of the screen's edge. */
+@media screen and (min-width: 45em) {
+  body:is([data-page-type="task"], [data-page-type="lesson"], [data-page-type="reference"]) .md-path {
+    max-width: 33rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.secmap__sr,
+.secnav__sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* --- Shelves: the chooser is a band across the top, not a column ---------
+   From 60em the Tool Directory and the Prompt Library are one column: the
+   chooser's questions sit side by side in a band of chips above the
+   results, which use the full width. Phones keep their own folding chooser
+   (layout-tools.css, layout-prompts.css). Far down a long shelf, the dock's
+   Filters button brings the band back. */
+@media screen and (min-width: 60em) {
+  .md-typeset .shelf {
+    display: block;
+  }
+  .md-typeset .shelf__filters {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    margin: 0 0 1.4rem;
+    padding: 0.8rem 1rem 0.9rem;
+    border: 1px solid var(--nav-line);
+    border-radius: 0.9rem;
+    background: var(--nav-raised);
+  }
+  .md-typeset .shelf__filters:empty,
+  .md-typeset .shelf__filters[hidden] {
+    display: none;
+  }
+  .md-typeset .tool-shelf .tc-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .md-typeset .tool-shelf .tc-chip label {
+    width: auto;
+    min-height: 2rem;
+    padding: 0.2rem 0.55rem 0.2rem 0.85rem;
+    border-radius: 1rem;
+  }
+  .md-typeset .pl-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.6rem 2.2rem;
+  }
+  .md-typeset .pl-fieldset {
+    flex: 0 1 auto;
+    margin: 0;
+  }
+  .md-typeset .pl-fieldset:nth-of-type(2) {
+    flex: 1 1 26rem;
+  }
+  .md-typeset .pl-options {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .md-typeset .pl-option {
+    min-height: 2rem;
+    padding: 0.15rem 0.75rem 0.15rem 0.55rem;
+    border: 1px solid var(--nav-line);
+    border-radius: 1rem;
+    background: var(--md-default-bg-color);
+    font-size: 0.68rem;
+  }
+  .md-typeset .pl-option__label {
+    flex: 0 1 auto;
+  }
+  .md-typeset .pl-option.is-checked {
+    border-color: var(--nav-accent);
+    box-shadow: inset 0 0 0 1px var(--nav-accent);
+  }
+}
+
+/* A shelf's filters, brought back by the dock's Filters button, flash
+   once so the eye lands on them. */
+.md-typeset .shelf__filters.is-called,
+.md-typeset .shelf__summary.is-called {
+  outline: 3px solid var(--nav-accent);
+  outline-offset: 3px;
+  transition: outline-color 1.2s ease;
+}
+
+/* =========================================================================
+   The controls: "Browse <section>", "On this page", Filters, the action
+   ========================================================================= */
+.secnav {
+  position: fixed;
+  z-index: 6;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+/* [hidden] wins over every display rule here (Filters and the docked
+   action come and go with it). */
+.secnav [hidden] {
+  display: none !important;
+}
+
+/* Until layout-nav.js has measured where they fit, they stay out of sight. */
+.secnav:not([data-mode]) {
+  visibility: hidden;
+}
+
+/* The drawer and search cover the page; the controls give way to them. */
+.md-toggle[data-md-toggle="drawer"]:checked ~ .md-container .secnav,
+.md-toggle[data-md-toggle="search"]:checked ~ .md-container .secnav {
+  visibility: hidden;
+}
+
+.secnav__bar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--nav-dock);
+  color: var(--nav-dock-fg);
+}
+
+.secnav__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  min-height: 2.2rem;
+  margin: 0;
+  padding: 0.2rem 0.7rem 0.2rem 0.25rem;
+  border: 1px solid var(--nav-dock-line);
+  border-radius: 1.2rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.secnav__btn:hover {
+  background: var(--nav-dock-hover);
+}
+
+/* Open: filled, so the control reads as pressed. */
+.secnav__btn[aria-expanded="true"] {
+  border-color: var(--nav-dock-open);
+  background: var(--nav-dock-open);
+  color: var(--nav-dock-open-fg);
+}
+
+.secnav__icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--nav-dock-mark);
+}
+
+.secnav__icon svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
+
+.secnav__btn[aria-expanded="true"] .secnav__icon {
+  background: var(--nav-dock-open-fg);
+  color: var(--nav-dock-open);
+}
+
+.secnav__label {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.secnav__long,
+.secnav__short,
+.secnav__always,
+.secnav__now {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.secnav__short {
+  display: none;
+}
+
+.secnav__lead {
+  font-weight: 600;
+}
+
+.secnav__now {
+  display: none;
+  max-width: 13rem;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--nav-dock-muted);
+}
+
+.secnav__btn[aria-expanded="true"] .secnav__now {
+  color: inherit;
+}
+
+.secnav__chev {
+  flex: 0 0 auto;
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  transition: transform 0.15s ease;
+}
+
+.secnav__btn[aria-expanded="true"] .secnav__chev {
+  transform: rotate(180deg);
+}
+
+/* Filters: how many are on, in a badge beside the word. */
+.secnav__btn--filters {
+  padding-right: 0.5rem;
+}
+
+.secnav__badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.2rem;
+  height: 1.2rem;
+  padding: 0 0.3rem;
+  border-radius: 0.6rem;
+  background: var(--nav-dock-open);
+  color: var(--nav-dock-open-fg);
+  font-size: 0.6rem;
+}
+
+/* No badge when no filter is on: "Filters 0" read like a result count. */
+.secnav__badge[data-n="0"] {
+  display: none;
+}
+
+/* The page's primary action: here only while its own place is out of
+   view, and never twice on screen. */
+.secnav__act {
+  display: flex;
+  min-width: 0;
+  margin-left: auto;
+}
+
+.secnav__act[hidden] {
+  display: none;
+}
+
+.secnav__action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-width: 0;
+  max-width: 18rem;
+  min-height: 2.2rem;
+  margin: 0;
+  padding: 0 1rem;
+  border: 0;
+  border-radius: 1.2rem;
+  background: var(--nav-action);
+  color: var(--nav-action-fg);
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.secnav__action:hover,
+.secnav__action:focus-visible {
+  background: var(--nav-action-hover);
+  color: var(--nav-action-fg);
+}
+
+.secnav__action svg,
+.secnav__action .pl-icon {
+  flex: 0 0 auto;
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: currentColor;
+}
+
+.secnav__action .guide-copy__label,
+.secnav__action span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.secnav :focus-visible {
+  outline: 2px solid var(--nav-dock-focus);
+  outline-offset: 2px;
+}
+
+/* --- The dock: one row across the foot of the screen, like the header
+   across its top, in a region the page reserves for it (layout-nav.js
+   measures its height and pads the page by exactly that much). ---------- */
+.secnav[data-mode="dock"] {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.secnav[data-mode="dock"] .secnav__bar {
+  flex-wrap: wrap;
+  padding: 0.4rem 0.8rem calc(0.4rem + env(safe-area-inset-bottom, 0px));
+  border-top: 3px solid var(--nav-dock-edge);
+  border-radius: 0.9rem 0.9rem 0 0;
+  box-shadow: var(--nav-dock-shadow);
+  pointer-events: auto;
+}
+
+/* --- The rail: in the empty gutter beside a reading column, where it
+   fits without touching the column (layout-nav.js decides, and lifts it
+   above the footer). Each control on its own line. ---------------------- */
+.secnav[data-mode="rail"] .secnav__bar {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.3rem;
+  padding: 0.35rem;
+  border-radius: 1.1rem;
+  box-shadow: var(--nav-shadow);
+}
+
+.secnav[data-mode="rail"] .secnav__btn {
+  min-height: 2.6rem;
+  padding: 0.3rem 0.6rem 0.3rem 0.3rem;
+  border-radius: 0.8rem;
+}
+
+.secnav[data-mode="rail"] .secnav__lead {
+  display: block;
+  font-size: 0.6rem;
+  color: var(--nav-dock-muted);
+}
+
+.secnav[data-mode="rail"] .secnav__btn[aria-expanded="true"] .secnav__lead {
+  color: inherit;
+}
+
+.secnav[data-mode="rail"] .secnav__long {
+  white-space: normal;
+}
+
+.secnav[data-mode="rail"] .secnav__now {
+  display: block;
+}
+
+.secnav[data-mode="rail"] .secnav__chev {
+  margin-left: auto;
+}
+
+.secnav[data-mode="rail"] .secnav__act {
+  margin: 0.1rem 0 0;
+}
+
+.secnav[data-mode="rail"] .secnav__action {
+  flex: 1 1 auto;
+  max-width: none;
+  border-radius: 0.8rem;
+}
+
+/* The page reserves the dock's measured height (layout-nav.js sets
+   --secnav-h): its last line ends above the dock, and an anchor jump or a
+   focused control stops short of it. */
+html.secnav-docked {
+  scroll-padding-bottom: calc(var(--secnav-h, 0px) + 0.75rem);
+}
+
+html.secnav-docked body {
+  padding-bottom: var(--secnav-h, 0px);
+}
+
+/* Phones: "Browse pages", a short action label, and no chevrons, so one
+   row holds the controls and the action at normal text size. */
+@media screen and (max-width: 37.4375em) {
+  .secnav[data-mode="dock"] {
+    font-size: 0.65rem;
+  }
+  .secnav[data-mode="dock"] .secnav__long {
+    display: none;
+  }
+  .secnav[data-mode="dock"] .secnav__short {
+    display: block;
+  }
+  .secnav[data-mode="dock"] .secnav__chev,
+  .secnav[data-mode="dock"] .secnav__icon--toc {
+    display: none;
+  }
+  .secnav[data-mode="dock"] .secnav__icon {
+    width: 1.35rem;
+    height: 1.35rem;
+  }
+  .secnav[data-mode="dock"] .secnav__icon svg {
+    width: 0.85rem;
+    height: 0.85rem;
+  }
+  .secnav[data-mode="dock"] .secnav__bar {
+    gap: 0.25rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+  .secnav[data-mode="dock"] .secnav__btn {
+    gap: 0.3rem;
+    padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+  }
+  .secnav[data-mode="dock"] :is(.secnav__btn--toc, .secnav__btn--filters) {
+    padding-left: 0.55rem;
+  }
+  .secnav[data-mode="dock"] .secnav__btn--filters .secnav__icon,
+  .secnav[data-mode="dock"] .secnav__action :is(svg, .pl-icon) {
+    display: none;
+  }
+  .secnav[data-mode="dock"] .secnav__action {
+    max-width: 8.5rem;
+    padding: 0 0.7rem;
+  }
+}
+
+/* --- The panels ------------------------------------------------------------
+   A title and a close button that stay put, and a body that scrolls.
+   layout-nav.js places each panel against its control. */
+.secnav__panel {
+  position: fixed;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--nav-line);
+  border-radius: 1rem;
+  background: var(--nav-surface);
+  color: var(--md-default-fg-color);
+  box-shadow: var(--nav-shadow);
+  pointer-events: auto;
+}
+
+.secnav__panel[hidden] {
+  display: none;
+}
+
+.secnav__panel:focus {
+  outline: none;
+}
+
+.secnav__phead {
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.7rem;
+  padding: 0.7rem 0.8rem 0.7rem 1rem;
+  border-bottom: 1px solid var(--nav-line);
+}
+
+.secnav__pbody {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 0.9rem 1rem 1rem;
+}
+
+.secnav__picon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 0.6rem;
+  background: var(--nav-dock);
+}
+
+.secnav__picon svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: var(--nav-dock-fg);
+}
+
+.secnav__ptext {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.secnav__ptitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.secnav__pmeta {
+  font-size: 0.62rem;
+  color: var(--nav-muted);
+}
+
+.secnav__overview {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0 0.8rem;
+  border: 1px solid var(--nav-accent);
+  border-radius: 1rem;
+  color: var(--nav-accent);
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.secnav__overview:hover {
+  background: var(--nav-accent);
+  color: var(--nav-accent-on);
+}
+
+.secnav__close {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 2rem;
+  margin: 0;
+  padding: 0 0.7rem 0 0.5rem;
+  border: 1px solid var(--nav-line-strong);
+  border-radius: 1rem;
+  background: var(--nav-surface);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  font-size: 0.62rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secnav__close svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: currentColor;
+}
+
+.secnav__close:hover {
+  background: var(--nav-raised-hover);
+}
+
+.secnav__panel :focus-visible {
+  outline: 2px solid var(--nav-focus);
+  outline-offset: 2px;
+}
+
+/* The key is the head's second line: the title, the overview and Close
+   on the first. */
+.secnav__phead .kind-key {
+  order: 5;
+  flex-basis: 100%;
+  margin: 0.1rem 0 0;
+}
+
+/* Jump to group: every group as a small button, on the narrow panels
+   that open scrolled to the reader's own group. */
+.secnav__jump {
+  order: 6;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.secnav__jumplead {
+  margin-right: 0.15rem;
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+}
+
+.secnav__jumpbtn {
+  min-height: 1.6rem;
+  margin: 0;
+  padding: 0 0.6rem;
+  border: 1px solid var(--nav-accent);
+  border-radius: 0.8rem;
+  background: var(--nav-surface);
+  color: var(--nav-accent);
+  font: inherit;
+  font-size: 0.62rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secnav__jumpbtn:hover {
+  background: var(--nav-raised-hover);
+}
+
+.secnav__jumpbtn[aria-current] {
+  background: var(--nav-accent);
+  color: var(--nav-accent-on);
+}
+
+@media screen and (min-width: 60em) {
+  .secnav__jump {
+    display: none;
+  }
+}
+
+/* Narrow panels: the overview joins the Jump to group row, and the title
+   bar stays compact, so most of the sheet is the map itself. */
+.secnav__jumpbtn--overview {
+  display: inline-flex;
+  align-items: center;
+  border-style: dashed;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .secnav__phead .secnav__overview {
+    display: none;
+  }
+  .secnav__phead {
+    gap: 0.3rem 0.6rem;
+    padding: 0.55rem 0.7rem 0.6rem 0.8rem;
+  }
+  .secnav__picon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .secnav__phead .kind-key {
+    gap: 0.2rem 0.7rem;
+    font-size: 0.58rem;
+  }
+  .secnav__jump {
+    gap: 0.25rem;
+  }
+  .secnav__jumpbtn {
+    min-height: 1.45rem;
+    padding: 0 0.5rem;
+    font-size: 0.6rem;
+  }
+}
+
+.secnav__veil {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background: var(--nav-veil);
+}
+
+.secnav__veil[hidden] {
+  display: none;
+}
+
+/* On this page: the page's sections as chips of a few words each (the
+   full heading is each chip's name and tooltip). They wrap, so the whole
+   outline is in view; a long one scrolls inside the panel, never the dock.
+   The section you are reading is filled, the rest outlined. */
+.secnav__chips,
+[dir] .md-typeset .secnav__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .secnav__chips > li {
+  margin: 0;
+}
+
+.secnav__chip,
+.md-typeset a.secnav__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2rem;
+  margin: 0;
+  padding: 0.2rem 0.8rem;
+  border: 1px solid var(--nav-accent);
+  border-radius: 1rem;
+  background: var(--nav-surface);
+  color: var(--nav-accent);
+  font: inherit;
+  font-size: 0.66rem;
+  font-weight: 650;
+  line-height: 1.25;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.secnav__chip:hover,
+.md-typeset a.secnav__chip:hover {
+  background: var(--nav-raised-hover);
+  color: var(--nav-accent);
+}
+
+.secnav__chip[aria-current] {
+  border-color: var(--nav-accent);
+  background: var(--nav-accent);
+  color: var(--nav-accent-on);
+}
+
+.secnav__chip[aria-current]::before {
+  content: "Reading";
+  margin-right: 0.15rem;
+  padding: 0 0.35rem;
+  border-radius: 0.5rem;
+  background: var(--nav-accent-on);
+  color: var(--nav-accent);
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.secnav__chip--top {
+  border-style: dashed;
+}
+
+/* The glossary: its terms by letter, as its own A to Z index has them. */
+.secnav__az {
+  gap: 0.3rem;
+}
+
+.secnav__letter,
+.md-typeset a.secnav__letter {
+  justify-content: center;
+  min-width: 2.2rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.72rem;
+}
+
+.secnav__letter[aria-current]::before {
+  content: none;
+}
+
+.secnav__letter.is-empty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  border: 1px dashed var(--nav-line-strong);
+  border-radius: 1rem;
+  color: var(--nav-muted);
+  font-weight: 600;
+}
+
+.secnav__chip--top svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: currentColor;
+}
+
+/* =========================================================================
+   The section map (panel and page foot)
+   ========================================================================= */
+.secmap {
+  font-size: 0.7rem;
+  line-height: 1.3;
+}
+
+/* Groups flow into balanced columns, so a long group (the agent guides)
+   does not leave holes beside the short ones; a group of six or more
+   spans the width with its cards side by side. */
+.secmap .secmap__groups,
+[dir] .md-typeset .secmap .secmap__groups {
+  display: block;
+  columns: 16.5rem;
+  column-gap: 1.3rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.secmap .secmap__group,
+[dir] .md-typeset .secmap .secmap__group {
+  display: block;
+  min-width: 0;
+  margin: 0 0 1.1rem;
+  padding: 0.55rem 0 0;
+  border-top: 3px solid var(--k, var(--nav-line-strong));
+  break-inside: avoid;
+}
+
+.secmap .secmap__group--wide,
+[dir] .md-typeset .secmap .secmap__group--wide {
+  column-span: all;
+}
+
+.secmap .secmap__head,
+.md-typeset .secmap .secmap__head {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0 0 0.5rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--md-default-fg-color);
+}
+
+.secmap__gicon svg {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  fill: var(--k, var(--nav-muted));
+}
+
+.secmap__gname {
+  min-width: 0;
+}
+
+.secmap__tag {
+  display: block;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--nav-muted);
+}
+
+.secmap__count {
+  flex: 0 0 auto;
+  margin-left: auto;
+  padding: 0.05rem 0.5rem;
+  border-radius: 0.7rem;
+  background: var(--nav-raised);
+  color: var(--nav-muted);
+  font-size: 0.6rem;
+  white-space: nowrap;
+}
+
+.secmap .secmap__subhead,
+.md-typeset .secmap .secmap__subhead {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+}
+
+.secmap .secmap__cards--related,
+.md-typeset .secmap .secmap__cards--related {
+  margin-bottom: 0.7rem;
+}
+
+.secmap .secmap__cards,
+.md-typeset .secmap .secmap__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .secmap .secmap__cards > li {
+  margin: 0;
+}
+
+/* A card is outlined, so it reads as a button; its left bar, tint and
+   title are its kind's (the kind treatment at the end of this file). */
+.secmap a.secmap__card,
+.md-typeset .secmap a.secmap__card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 100%;
+  min-height: 2.6rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--k-line, var(--nav-line-strong));
+  border-left: 4px solid var(--nav-line-strong);
+  border-radius: 0.55rem;
+  background-color: var(--nav-raised);
+  text-decoration: none;
+  transition: border-color 0.12s ease, transform 0.12s ease;
+}
+
+.secmap a.secmap__card:hover,
+.md-typeset .secmap a.secmap__card:hover {
+  border-color: var(--k, var(--nav-accent));
+  transform: translateY(-1px);
+}
+
+.secmap__icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.45rem;
+  background: var(--nav-surface);
+}
+
+.secmap__icon svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: var(--k, var(--nav-muted));
+}
+
+.secmap__num {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--k, var(--nav-accent));
+}
+
+.secmap__words {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.secmap__title {
+  font-weight: 700;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: var(--md-default-fg-color);
+}
+
+.secmap__sub {
+  margin-top: 0.15rem;
+  font-size: 0.65rem;
+  line-height: 1.4;
+  color: var(--nav-muted);
+}
+
+.secmap__here {
+  margin-top: 0.15rem;
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* The page you are on: filled in its kind's color and marked in words. */
+.secmap a.secmap__card.is-current,
+.md-typeset .secmap a.secmap__card.is-current {
+  border-color: var(--k, var(--nav-accent));
+  background-color: var(--k, var(--nav-accent));
+  box-shadow: var(--nav-card-shadow);
+}
+
+.secmap a.secmap__card.is-current :is(.secmap__title, .secmap__sub, .secmap__here, .secmap__num) {
+  color: var(--kind-on);
+}
+
+.secmap a.secmap__card.is-current .secmap__icon {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--kind-on);
+}
+
+.secmap a.secmap__card.is-current .secmap__icon svg {
+  fill: var(--kind-on);
+}
+
+.secmap a.secmap__card:focus-visible {
+  outline: 2px solid var(--nav-focus);
+  outline-offset: 2px;
+}
+
+/* A route (the seven modules): the stops joined by a line. */
+.secmap__group--route .secmap__cards {
+  position: relative;
+}
+
+.secmap__group--route .secmap__icon {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px var(--k, var(--nav-accent));
+}
+
+@media screen and (min-width: 45em) {
+  .secmap__group--route .secmap__cards::before {
+    content: "";
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    top: 1.3rem;
+    height: 2px;
+    background: var(--k-line, var(--nav-line-strong));
+  }
+  .secmap .secmap__group--route .secmap__cards,
+  .md-typeset .secmap .secmap__group--route .secmap__cards {
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  }
+  .secmap .secmap__group--route a.secmap__card,
+  .md-typeset .secmap .secmap__group--route a.secmap__card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.3rem;
+  }
+  .secmap__group--route .secmap__icon {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+/* =========================================================================
+   The section foot: more in this section (or previous and next), then the
+   whole section and the page's sections
+   ========================================================================= */
+.md-typeset .secfoot {
+  margin: 3rem 0 0;
+}
+
+.md-typeset h2.secfoot__h {
+  margin: 0 0 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: var(--md-default-fg-color);
+}
+
+[dir] .md-typeset .secfoot__more {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .secfoot__more > li {
+  margin: 0;
+}
+
+.md-typeset .secfoot .learn-next {
+  margin: 0 0 1rem;
+}
+
+.md-typeset .secfoot__h + .kind-key {
+  margin: -0.2rem 0 0.8rem;
+}
+
+.md-typeset .secfoot__alsorow {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.5rem;
+}
+
+.md-typeset a.secfoot__card {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  height: 100%;
+  min-height: 3.2rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--k-line, var(--nav-line-strong));
+  border-left: 4px solid var(--nav-line-strong);
+  border-radius: 0.7rem;
+  background-color: var(--nav-raised);
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  transition: border-color 0.12s ease;
+}
+
+.md-typeset a.secfoot__card:hover {
+  border-color: var(--k, var(--nav-accent));
+}
+
+.secfoot__icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 0.5rem;
+  background: var(--nav-surface);
+}
+
+.secfoot__icon svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: var(--k, var(--nav-muted));
+}
+
+.secfoot__words {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.secfoot__dir,
+.md-typeset .secfoot__label {
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+}
+
+.md-typeset .secfoot__label {
+  margin: 0 0 0.4rem;
+}
+
+.secfoot__title {
+  font-size: 0.74rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.secfoot__sub {
+  font-size: 0.62rem;
+  color: var(--nav-muted);
+}
+
+.md-typeset .secfoot__related {
+  margin: 1rem 0 0;
+}
+
+.md-typeset .secfoot .kind-key {
+  margin: 0.7rem 0 0;
+}
+
+.md-typeset .secfoot__maps {
+  display: grid;
+  gap: 0.6rem;
+  margin: 1.2rem 0 0;
+}
+
+.md-typeset .secfoot__maps details {
+  margin: 0;
+  border: 1px solid var(--nav-line);
+  border-radius: 0.8rem;
+  background: none;
+  box-shadow: none;
+  font-size: 0.7rem;
+}
+
+.md-typeset .secfoot__maps details > summary {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.6rem;
+  padding: 0.4rem 2.2rem 0.4rem 0.6rem;
+  border-radius: 0.8rem;
+  background: none;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+  cursor: pointer;
+}
+
+.md-typeset .secfoot__maps details > summary::before {
+  display: none;
+}
+
+.md-typeset .secfoot__maps details > summary:hover {
+  background: var(--nav-raised);
+}
+
+.secfoot__sicon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--nav-dock);
+}
+
+.secfoot__sicon svg {
+  width: 0.95rem;
+  height: 0.95rem;
+  fill: var(--nav-dock-fg);
+}
+
+.secfoot__stext {
+  margin-right: auto;
+}
+
+.secfoot__scount {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--nav-muted);
+}
+
+.md-typeset .secfoot__maps details > .secfoot__body {
+  margin: 0;
+  padding: 0.4rem 0.9rem 1rem;
+}
+
+.md-typeset .secfoot__overview {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  margin: 0 0 0.8rem;
+  font-weight: 700;
+}
+
+/* With JavaScript, "On this page" is the control at the foot of the
+   screen; the list here is for readers without it. */
+body.has-secnav .md-typeset .secfoot__toc {
+  display: none;
+}
+
+/* =========================================================================
+   The Tools & Prompts landing
+   ========================================================================= */
+.md-typeset .tp-lede {
+  max-width: 40rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.tp-landing {
+  display: grid;
+  gap: 1.1rem;
+  margin: 0.6rem 0 0;
+}
+
+.tp-primary,
+.tp-guides {
+  display: grid;
+  align-items: start;
+  gap: 1.1rem;
+}
+
+@media screen and (min-width: 60em) {
+  .tp-primary {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.tp-guides {
+  grid-template-columns: repeat(auto-fit, minmax(16.5rem, 1fr));
+}
+
+/* Three guide groups on a wide screen: the tallest (the middle one, Work
+   with agents) takes the right-hand column and the other two stack beside
+   it, so no card stands half empty. The reading order stays the nav's. */
+@media screen and (min-width: 60em) {
+  .tp-guides:has(> :nth-child(3):last-child) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .tp-guides:has(> :nth-child(3):last-child) > :nth-child(2) {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+  .tp-guides:has(> :nth-child(3):last-child) > :nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}
+
+.md-typeset .tp-card,
+.md-typeset .tp-band {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-width: 0;
+  margin: 0;
+  padding: 1rem 1.1rem 1.1rem;
+  border: 1px solid var(--nav-line);
+  border-top: 5px solid var(--k, var(--nav-line-strong));
+  border-radius: 0.9rem;
+  background: var(--nav-surface);
+  box-shadow: var(--nav-card-shadow);
+}
+
+.md-typeset .tp-card--primary {
+  padding: 1.2rem 1.3rem 1.3rem;
+}
+
+.tp-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.tp-head__icon {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.7rem;
+  background: var(--k, var(--nav-accent));
+}
+
+.tp-card--primary .tp-head__icon {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.tp-head__icon svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: var(--kind-on);
+}
+
+.tp-head__words {
+  min-width: 0;
+}
+
+.md-typeset .tp-head__title {
+  margin: 0.1rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .tp-card--primary .tp-head__title {
+  font-size: 1.15rem;
+}
+
+.md-typeset .tp-tag {
+  display: inline-block;
+  margin: 0.25rem 0 0;
+  padding: 0.05rem 0.5rem;
+  border: 1px solid var(--k, var(--nav-line-strong));
+  border-radius: 0.8rem;
+  color: var(--k, var(--nav-muted));
+  font-size: 0.58rem;
+  font-weight: 700;
+}
+
+.md-typeset .tp-head__desc {
+  margin: 0.3rem 0 0;
+  font-size: 0.66rem;
+  line-height: 1.45;
+  color: var(--nav-muted);
+}
+
+.md-typeset a.tp-go {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.5rem;
+  min-height: 2.4rem;
+  padding: 0 1.1rem;
+  border-radius: 1.2rem;
+  background: var(--k, var(--nav-accent));
+  color: var(--kind-on);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.md-typeset a.tp-go:hover {
+  box-shadow: var(--nav-card-shadow), inset 0 0 0 2px var(--kind-on);
+  color: var(--kind-on);
+}
+
+.tp-go svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+}
+
+.md-typeset .tp-sub {
+  margin: 0.2rem 0 -0.2rem;
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+}
+
+.md-typeset .tp-note {
+  margin: -0.2rem 0 0;
+  font-size: 0.6rem;
+  color: var(--nav-muted);
+}
+
+[dir] .md-typeset .tp-shorts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .tp-shorts > li,
+[dir] .md-typeset .tp-rows > li,
+[dir] .md-typeset .tp-tiles > li {
+  margin: 0;
+}
+
+.md-typeset a.tp-short {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 100%;
+  min-height: 2.3rem;
+  padding: 0.3rem 0.4rem 0.3rem 0.65rem;
+  border: 1px solid var(--k-line, var(--nav-line-strong));
+  border-left: 4px solid var(--nav-line-strong);
+  border-radius: 0.55rem;
+  background-color: var(--nav-raised);
+  text-decoration: none;
+}
+
+.md-typeset a.tp-short:hover {
+  border-color: var(--k, var(--nav-accent));
+}
+
+.tp-short__words {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.tp-short__t {
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.tp-short__who {
+  font-size: 0.58rem;
+  color: var(--nav-muted);
+}
+
+.tp-short__n {
+  flex: 0 0 auto;
+  min-width: 1.5rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.8rem;
+  background: var(--nav-surface);
+  box-shadow: inset 0 0 0 1px var(--k-line, var(--nav-line-strong));
+  color: var(--k, var(--nav-muted));
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+[dir] .md-typeset .tp-rows {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 45em) {
+  [dir] .md-typeset .tp-rows--pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.md-typeset a.tp-row,
+.md-typeset a.tp-cross,
+.md-typeset a.tp-tile {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  height: 100%;
+  min-height: 2.8rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--k-line, var(--nav-line-strong));
+  border-left: 4px solid var(--nav-line-strong);
+  border-radius: 0.6rem;
+  background-color: var(--nav-raised);
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  transition: border-color 0.12s ease, transform 0.12s ease;
+}
+
+.md-typeset :is(a.tp-row, a.tp-cross, a.tp-tile):hover {
+  border-color: var(--k, var(--nav-accent));
+  transform: translateY(-1px);
+}
+
+.md-typeset a.tp-cross {
+  margin-top: auto;
+}
+
+.tp-row__icon,
+.tp-row__num {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 0.45rem;
+  background: var(--nav-surface);
+}
+
+.tp-row__icon svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: var(--k, var(--nav-muted));
+}
+
+.tp-row__num {
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px var(--k, var(--nav-accent));
+  color: var(--k, var(--nav-accent));
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.tp-row__words {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.tp-row__title {
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.tp-row__sub {
+  margin-top: 0.1rem;
+  font-size: 0.6rem;
+  color: var(--nav-muted);
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .tp-band {
+    display: grid;
+    grid-template-columns: minmax(14rem, 1fr) 2.4fr;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}
+
+[dir] .md-typeset .tp-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tp-tile__go {
+  margin-left: auto;
+}
+
+.tp-tile__go svg {
+  width: 1rem;
+  height: 1rem;
+  fill: var(--k, var(--nav-muted));
+}
+
+.md-typeset .tp-landing :focus-visible {
+  outline: 2px solid var(--nav-focus);
+  outline-offset: 2px;
+}
+
+/* =========================================================================
+   Color by meaning: the colored link rows, the kind treatment, the key
+   ========================================================================= */
+
+/* The landing pages' link rows (For Students, For Faculty & Staff, Home,
+   News & Events, Governance): a bar on the left and a tint, both the kind
+   of the page the row opens. The widths are the row's; the colors are the
+   kind treatment's below. */
+.md-typeset .grid.cards > ul > li ul > li.kind-row,
+.md-typeset .door-rows > ul > li.kind-row {
+  padding-left: 0.6rem;
+  border-left-width: 4px;
+  border-left-style: solid;
+  border-radius: 0 0.35rem 0.35rem 0;
+}
+
+.md-typeset .grid.cards > ul > li ul > li.kind-row + li.kind-row {
+  margin-top: 0.2rem;
+}
+
+[dir] .md-typeset .door-rows > ul:has(> li.kind-row) {
+  row-gap: 0.3rem;
+}
+
+/* The other lists and cards that point at pages: each item's bar width
+   and spacing are set here; the colors come from the kind treatment. */
+.md-typeset ul.pp-rows > li.kind-row,
+.md-typeset .pl-row.kind-mark,
+[dir] .md-typeset :is(.home-routes, .learn-shelf, .route-stage) ul > li.kind-row,
+.md-typeset .grid.cards > ul > li.kind-card {
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+
+.md-typeset ul.pp-rows > li.kind-row > a {
+  padding-left: 0.6rem;
+}
+
+.md-typeset .pl-row.kind-mark {
+  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+[dir] .md-typeset .learn-shelf ul > li.kind-row,
+[dir] .md-typeset .route-stage ul > li.kind-row {
+  margin-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  border-radius: 0 0.35rem 0.35rem 0;
+}
+
+[dir] .md-typeset .home-routes > ul > li.kind-row {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* A module's Next: a large card in the kind of the page it opens. */
+.md-typeset .learn-next a.learn-next__btn.kind-mark,
+.md-typeset .learn-next a.learn-next__btn.kind-mark:focus {
+  border: 1px solid var(--k-line);
+  border-left: 6px solid var(--k);
+  background-color: var(--k-tint);
+  color: var(--k);
+}
+
+.md-typeset .learn-next a.learn-next__btn.kind-mark:hover {
+  border-color: var(--k);
+  background-color: var(--k-tint);
+  color: var(--k);
+}
+
+.md-typeset .learn-next a.learn-next__btn.kind-mark .learn-next__sub {
+  color: var(--nav-muted);
+}
+
+/* The key: one quiet line naming the colors drawn beside it. */
+.kind-key,
+.md-typeset .kind-key {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.9rem;
+  margin: 0.4rem 0 0.9rem;
+  font-size: 0.62rem;
+  line-height: 1.3;
+  color: var(--nav-muted);
+}
+
+.kind-key__lead {
+  font-weight: 700;
+}
+
+.kind-key__k {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* A swatch is a mini card: 28 by 16px with a thick edge, big enough to
+   tell the hues apart when read on its own. */
+.kind-key__sw {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 28px;
+  height: 16px;
+  border: 1px solid var(--k-line);
+  border-left: 8px solid;
+  border-radius: 4px;
+}
+
+/* THE KIND TREATMENT. The one rule that colors every kinded item and every
+   swatch in a key: a left bar in the kind's color on the kind's tint. The
+   swatches are listed here with the items, so a key can never show a color
+   the items do not wear. Last in the file, so it wins over the neutral
+   defaults above. */
+.kind-key__sw.kind-mark,
+.secmap a.secmap__card.kind-mark,
+.md-typeset .secmap a.secmap__card.kind-mark,
+.md-typeset a.secfoot__card.kind-mark,
+.md-typeset :is(a.tp-row, a.tp-cross, a.tp-tile, a.tp-short).kind-mark,
+.md-typeset .grid.cards > ul > li ul > li.kind-row.kind-mark,
+.md-typeset .door-rows > ul > li.kind-row.kind-mark,
+.md-typeset ul.pp-rows > li.kind-row.kind-mark,
+.md-typeset .pl-shelf .pl-row.kind-mark,
+[dir] .md-typeset :is(.home-routes, .learn-shelf, .route-stage) ul > li.kind-row.kind-mark,
+.md-typeset .grid.cards > ul > li.kind-card.kind-mark {
+  border-left-color: var(--k);
+  background-color: var(--k-tint);
+}
+
+/* And its words: the title of a kinded item is in the kind's color. */
+.kind-mark :is(.secmap__title, .secfoot__title, .tp-row__title, .tp-short__t, .pp-rows__title),
+.md-typeset .grid.cards > ul > li ul > li.kind-row > a,
+.md-typeset .door-rows > ul > li.kind-row > a,
+.md-typeset .pl-row.kind-mark .pl-row__title a,
+.md-typeset :is(.home-routes, .learn-shelf) ul > li.kind-row > a,
+.md-typeset .route-stage ul > li.kind-row .route-text a,
+.md-typeset .grid.cards > ul > li.kind-card.kind-mark a.card-link {
+  color: var(--k);
+}
+
+/* Grey words beside a colored title, measured on every tint (4.9:1 or
+   better). */
+.md-typeset :is(.grid.cards, .door-rows, .home-routes) li.kind-row .row-sub,
+.md-typeset .learn-shelf li.kind-row .learn-shelf__sub,
+.md-typeset .route-stage li.kind-row :is(.route-for, .route-min),
+.md-typeset .pp-rows li.kind-row .pp-rows__sub,
+.md-typeset .pl-row.kind-mark .pl-row__meta {
+  color: var(--nav-muted);
+}
+
+/* Hub rows that lead with "Start here" keep their tag, and take the tint
+   of their kind like the rest. */
+.md-typeset .grid.cards > ul > li ul > li.kind-row:has(> .row-tag) {
+  background-color: var(--k-tint);
+}
+
+/* The current page stays filled over its kind's tint. */
+.secmap a.secmap__card.kind-mark.is-current,
+.md-typeset .secmap a.secmap__card.kind-mark.is-current {
+  border-color: var(--k);
+  background-color: var(--k);
+}
+
+.secmap a.secmap__card.kind-mark.is-current .secmap__title {
+  color: var(--kind-on);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .secnav__chev,
+  .secmap a.secmap__card,
+  .md-typeset a.secfoot__card,
+  .md-typeset :is(a.tp-row, a.tp-cross, a.tp-tile) {
+    transition: none;
+  }
+  .secmap a.secmap__card:hover,
+  .md-typeset .secmap a.secmap__card:hover,
+  .md-typeset :is(a.tp-row, a.tp-cross, a.tp-tile):hover {
+    transform: none;
+  }
+}
+

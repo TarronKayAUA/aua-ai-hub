@@ -1,9 +1,7 @@
 /* Layout frame behaviour (layout redesign, 2026-09-25).
  *
- * 1. The page's action slot (injected by scripts/layout_frame.py) docks
- *    once it scrolls out of view: at the top of the right-hand column on
- *    wide screens, and in a bottom bar on phones, beside a Sections button
- *    that lists the page's headings. Lessons without a slot dock Next.
+ * 1. (Moved 2026-09-26: the docked action and the headings list are now
+ *    part of the section navigator, docs/javascripts/layout-nav.js.)
  * 2. The menu button opens with Enter or Space, and the closed drawer is
  *    taken out of the Tab order (it held 89 invisible Tab stops, AC-2).
  * 3. The search field names what it searches, and the active tab is
@@ -13,9 +11,6 @@
  */
 (function () {
   "use strict";
-  var body = document.body;
-  var type = body.getAttribute("data-page-type") || "";
-  var phone = window.matchMedia("(max-width: 59.9375em)");
   var wide = window.matchMedia("(min-width: 76.25em)");
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
 
@@ -27,13 +22,16 @@
   });
 
   /* --- the tab strip: active tab into view, and "more" chevrons ------------
-     When the strip is wider than the screen, a chevron at each edge that
-     has tabs beyond it (and the fade under it) says there are more, and a
-     tap scrolls the strip that way. The strip opens with the active tab in
-     view and a whole tab, not a fragment, at its left edge. The chevrons
-     are buttons with names, so voice control and screen readers can use
-     them; they are left out of the Tab order because every tab link is
-     already reachable with Tab, and focusing one scrolls it into view. */
+     When the strip is wider than the screen, a chevron sits at each edge in
+     space of its own, outside the scrolling labels (navigation synthesis,
+     2026-09-26: labels crowding the arrows read as clutter), and the labels
+     fade out before they reach it. A chevron with nothing beyond it dims.
+     A tap scrolls the strip that way. The strip opens with the active tab
+     wholly in view, with the tab before it whole at the left edge when both
+     fit. The chevrons are buttons with names, so voice control and screen
+     readers can use them; they are left out of the Tab order because every
+     tab link is already reachable with Tab, and focusing one scrolls it
+     into view. */
   var tabList = document.querySelector(".md-tabs__list");
   var activeTab = document.querySelector(".md-tabs__item--active");
   var CHEVRON = {
@@ -54,6 +52,7 @@
         CHEVRON[dir] + '"/></svg>';
       b.hidden = true;
       b.addEventListener("click", function () {
+        if (b.disabled) return;
         var step = Math.max(list.clientWidth * 0.6, 120) * (dir === "next" ? 1 : -1);
         list.scrollBy({ left: step, behavior: reduce.matches ? "auto" : "smooth" });
       });
@@ -63,22 +62,33 @@
     var prev = make("prev");
     var next = make("next");
     function sync() {
+      var over = grid.classList.contains("hub-tabs--overflow");
       var max = list.scrollWidth - list.clientWidth;
       var atStart = list.scrollLeft <= 2;
       var atEnd = list.scrollLeft >= max - 2;
-      prev.hidden = max <= 2 || atStart;
-      next.hidden = max <= 2 || atEnd;
-      grid.classList.toggle("hub-tabs--more-prev", !prev.hidden);
-      grid.classList.toggle("hub-tabs--more-next", !next.hidden);
+      prev.hidden = !over;
+      next.hidden = !over;
+      prev.disabled = over && atStart;
+      next.disabled = over && atEnd;
+      grid.classList.toggle("hub-tabs--more-prev", over && !atStart);
+      grid.classList.toggle("hub-tabs--more-next", over && !atEnd);
     }
-    // Open on the active tab, with the tab before it whole at the left
-    // edge (clear of the chevron) when both fit.
-    if (activeTab && list.scrollWidth > list.clientWidth) {
+    function measure() {
+      // Overflow is measured without the arrows' reserved space.
+      grid.classList.remove("hub-tabs--overflow");
+      grid.classList.toggle("hub-tabs--overflow", list.scrollWidth > list.clientWidth + 2);
+      sync();
+    }
+    grid.classList.add("hub-tabs");
+    measure();
+    // Open on the active tab, wholly clear of the fades, with the tab
+    // before it whole at the left edge when both fit.
+    if (activeTab && grid.classList.contains("hub-tabs--overflow")) {
       var items = Array.prototype.slice.call(list.children);
       var at = items.indexOf(activeTab);
       var origin = list.getBoundingClientRect().left - list.scrollLeft;
       var leftOf = function (item) { return item.getBoundingClientRect().left - origin; };
-      var reserve = 2 * rem;
+      var reserve = 2.1 * rem;
       var target = leftOf(activeTab) - reserve;
       var before = items[at - 1];
       if (before && leftOf(before) - reserve + list.clientWidth
@@ -87,14 +97,13 @@
       }
       list.scrollLeft = at <= 0 ? 0 : Math.max(0, target);
     }
-    grid.classList.add("hub-tabs");
     var queued = false;
     list.addEventListener("scroll", function () {
       if (queued) return;
       queued = true;
       window.requestAnimationFrame(function () { queued = false; sync(); });
     }, { passive: true });
-    window.addEventListener("resize", sync);
+    window.addEventListener("resize", measure);
     sync();
   }
   if (tabList) tabStrip(tabList);
@@ -127,135 +136,7 @@
     wide.addEventListener("change", syncDrawer);
     syncDrawer();
   }
-
-  /* --- docked action, phone bar, Sections sheet ----------------------------- */
-  if (["task", "lesson", "reference"].indexOf(type) === -1) return;
-  var article = document.querySelector(".md-content__inner");
-  if (!article) return;
-  var slot = article.querySelector("[data-page-action]");
-  var heads = Array.prototype.slice.call(article.querySelectorAll("h2[id]"));
-
-  function label(el) {
-    return (el.textContent || "").replace(/¶/g, "").trim();
-  }
-
-  // The action to dock: the slot's buttons, or Next on a lesson.
-  var actions = [];
-  if (slot) {
-    slot.querySelectorAll("a.md-button").forEach(function (a) {
-      actions.push({ text: label(a), href: a.getAttribute("href"), primary: a.classList.contains("md-button--primary") });
-    });
-  } else if (type === "lesson") {
-    var next = document.querySelector(".md-footer__link--next");
-    if (next) {
-      var title = next.getAttribute("aria-label") || "Next";
-      actions.push({ text: title.replace(/^Next:\s*/, "Next: "), href: next.getAttribute("href"), primary: true });
-    }
-  }
-
-  function button(a) {
-    var el = document.createElement("a");
-    el.className = "md-button" + (a.primary ? " md-button--primary" : "");
-    el.href = a.href;
-    el.textContent = a.text;
-    return el;
-  }
-
-  // Desktop: dock at the top of the right-hand column.
-  var dock = null;
-  var sideRight = document.querySelector(".md-sidebar--secondary .md-sidebar__inner");
-  if (sideRight && actions.length) {
-    dock = document.createElement("div");
-    dock.className = "hub-dock";
-    dock.hidden = true;
-    actions.forEach(function (a) { dock.appendChild(button(a)); });
-    sideRight.insertBefore(dock, sideRight.firstChild);
-  }
-
-  // Phone: bottom bar with the primary action and Sections (or Top).
-  var bar = document.createElement("div");
-  bar.className = "hub-bar";
-  bar.setAttribute("role", "region");
-  bar.setAttribute("aria-label", "Page actions");
-  var primary = actions.filter(function (a) { return a.primary; })[0];
-  if (primary) bar.appendChild(button(primary));
-  var sheet = null;
-  if (heads.length >= 2) {
-    sheet = document.createElement("dialog");
-    sheet.className = "hub-sheet";
-    sheet.setAttribute("aria-label", "Sections on this page");
-    var h = document.createElement("h2");
-    h.textContent = "On this page";
-    sheet.appendChild(h);
-    var ul = document.createElement("ul");
-    heads.forEach(function (head) {
-      var li = document.createElement("li");
-      var a = document.createElement("a");
-      a.href = "#" + head.id;
-      a.textContent = label(head);
-      a.addEventListener("click", function () { sheet.close(); });
-      li.appendChild(a);
-      ul.appendChild(li);
-    });
-    var topLi = document.createElement("li");
-    var topBtn = document.createElement("button");
-    topBtn.type = "button";
-    topBtn.textContent = "Back to top";
-    topBtn.addEventListener("click", function () {
-      sheet.close();
-      window.scrollTo({ top: 0, behavior: reduce.matches ? "auto" : "smooth" });
-    });
-    topLi.appendChild(topBtn);
-    ul.appendChild(topLi);
-    sheet.appendChild(ul);
-    sheet.addEventListener("click", function (e) { if (e.target === sheet) sheet.close(); });
-    document.body.appendChild(sheet);
-    var sections = document.createElement("button");
-    sections.type = "button";
-    sections.className = "md-button hub-bar__sections";
-    sections.textContent = "Sections";
-    sections.addEventListener("click", function () {
-      if (typeof sheet.showModal === "function") sheet.showModal();
-    });
-    bar.appendChild(sections);
-  } else if (!primary) {
-    var top = document.createElement("button");
-    top.type = "button";
-    top.className = "md-button";
-    top.textContent = "Back to top";
-    top.addEventListener("click", function () { window.scrollTo({ top: 0, behavior: reduce.matches ? "auto" : "smooth" }); });
-    bar.appendChild(top);
-  }
-  // The bar is for genuinely long pages only (more than three screens):
-  // Astra's review (2026-09-25) cautioned against persistent controls
-  // where they have not shown a benefit.
-  var longPage = document.documentElement.scrollHeight > window.innerHeight * 3;
-  if (!bar.children.length || !longPage) bar = null;
-  if (bar) {
-    document.body.appendChild(bar);
-    body.classList.add("hub-has-bar");
-  }
-
-  // Show the dock and the bar once the slot (or, without one, the first
-  // screen) has scrolled away above the viewport.
-  function update() {
-    var gone;
-    if (slot) {
-      var r = slot.getBoundingClientRect();
-      gone = r.bottom < 0;
-    } else {
-      gone = window.scrollY > window.innerHeight * 0.8;
-    }
-    if (dock) dock.hidden = !(gone && wide.matches);
-    if (bar) bar.classList.toggle("is-shown", gone && phone.matches);
-  }
-  var ticking = false;
-  window.addEventListener("scroll", function () {
-    if (!ticking) {
-      ticking = true;
-      window.requestAnimationFrame(function () { ticking = false; update(); });
-    }
-  }, { passive: true });
-  window.addEventListener("resize", update);
-  update();
+  // The docked action, the phone action bar and the Sections sheet that
+  // lived here moved to docs/javascripts/layout-nav.js, the section
+  // navigator (navigation design d2, 2026-09-26).
 })();

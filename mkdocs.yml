@@ -77,7 +77,6 @@ theme:
     - navigation.tabs.sticky
     - navigation.indexes
     - navigation.path
-    - navigation.top
     - navigation.footer
     - search.suggest
     - search.highlight
@@ -85,8 +84,10 @@ theme:
     - content.code.copy
     - announce.dismiss
     # Layout redesign (2026-09-25): the header tucks away while reading on
-    # phones (layout.css keeps it in place from 60em up), and the desktop
-    # sidebar lists every page in the current tab.
+    # phones (layout.css keeps it in place from 60em up), and the phone menu
+    # drawer lists every page in the current tab. navigation.top is off
+    # (navigation synthesis, 2026-09-26): its "Back to top" pill floated
+    # over the page's text, and "On this page" offers Back to top instead.
     - header.autohide
     - navigation.expand
 
@@ -103,6 +104,10 @@ extra_css:
   - stylesheets/layout-prompts.css
   - stylesheets/layout-news.css
   - stylesheets/layout-art.css
+  # Navigation synthesis (2026-09-26): the palette block (every navigator,
+  # map, landing and kind color), the Browse and On this page controls, the
+  # section maps, page feet, the Tools & Prompts landing and the color key.
+  - stylesheets/layout-nav.css
 
 extra_javascript:
   - javascripts/counter.js
@@ -121,6 +126,7 @@ extra_javascript:
   - javascripts/layout-prompts.js
   - javascripts/layout-news.js
   - javascripts/layout-art.js
+  - javascripts/layout-nav.js
 
 plugins:
   # Material's default separator splits only on whitespace and hyphens, which
@@ -157,6 +163,10 @@ hooks:
   - scripts/layout_prompt_pages.py
   - scripts/layout_news.py
   - scripts/layout_learn.py
+  # Navigation synthesis (2026-09-26): the section model, page feet, the
+  # Tools & Prompts landing, colored link rows and the color key. Last, so
+  # its on_post_page sees every title.
+  - scripts/layout_nav.py
 
 markdown_extensions:
   - admonition
@@ -186,8 +196,9 @@ markdown_extensions:
 # their own guides, so a guide opened from a hub keeps that hub's tab and
 # breadcrumb. File paths are unchanged: a page's URL comes from its file,
 # not its place here. Three index pages stay wrapped in single-page sections
-# (Tool Directory, News Archive, Announcements) so navigation.indexes does
-# not turn them into their parent tab's landing page (SPEC, 2026-09-23).
+# (the Tool Directory, now in "Find a tool"; News Archive; Announcements) so
+# navigation.indexes does not turn them into their parent tab's landing page
+# (SPEC, 2026-09-23).
 nav:
   - Home: index.md
   - For Students:
@@ -223,25 +234,34 @@ nav:
           - "How LLMs Work, in Depth": basics/how-llms-work.md
           - Getting Better Answers: basics/better-answers.md
       - Courses and Resources: learning/index.md
+  # Tools & Prompts opens on its own landing (navigation synthesis,
+  # 2026-09-26): two primary groups, Find a tool and Use a prompt, then the
+  # guides grouped by what they help with, then Compare models. The landing
+  # and every page's section map draw these same groups. URLs are unchanged,
+  # since a URL comes from the file, not its place here; "Find a tool" still
+  # wraps the Tool Directory so navigation.indexes never makes it the tab's
+  # landing page.
   - "Tools & Prompts":
-      - Tool Directory:
-          - tools/index.md
-      - Prompt Library:
-          - prompts/index.md
+      - tools-and-prompts.md
+      - Find a tool:
+          - Tool Directory: tools/index.md
+      - Use a prompt:
+          - Prompt Library: prompts/index.md
           - Learning to Prompt: prompts/learning.md
           - Prompt Exchange: prompts/exchange.md
-      - "Gemini Notebook (formerly NotebookLM)": tools/gemini-notebook.md
-      - AI for Research: tools/research.md
-      - Local and Open Models:
-          - Running Models Locally: tools/local.md
-          - Hardware for Local AI: tools/hardware.md
-      - Agents and Setups (Advanced):
+      - Work with sources:
+          - "Gemini Notebook (formerly NotebookLM)": tools/gemini-notebook.md
+          - AI for Research: tools/research.md
+      - Work with agents:
           - AI Agents: tools/agents.md
           - Choosing Your Interface: tools/interfaces.md
           - Your First Agent Session: tools/first-session.md
           - "Standing Setups: Assistants that Remember": tools/standing-setups.md
           - Agent Skills: tools/skills.md
-      - Benchmarks:
+      - Run models locally:
+          - Running Models Locally: tools/local.md
+          - Hardware for Local AI: tools/hardware.md
+      - Compare models:
           - Language Models: benchmarks.md
           - Image Generation: benchmarks/image.md
           - Video Generation: benchmarks/video.md

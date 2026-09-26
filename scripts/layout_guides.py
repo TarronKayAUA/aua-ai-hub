@@ -193,8 +193,9 @@ def _prompt_row(pid: str, index: int, ready: str | None, page, files) -> str:
     href = _url(LIBRARY, page, files, pid)
     primary = index == 0
     button_cls = "md-button md-button--primary guide-copy" if primary else "md-button guide-copy"
-    # The first row's buttons are the page's action slot, so layout.js docks
-    # its Copy button (right-hand column on desktop, bottom bar on phones).
+    # The first row's buttons are the page's action slot, so layout-nav.js
+    # docks its Copy button beside the section navigator's controls while
+    # the row is out of view.
     slot = " data-page-action" if primary else ""
     parts = [
         '<div class="guide-prompt">',
@@ -544,25 +545,14 @@ SCRIPT = r"""
     wire(a, a, text, "prompt", status,
          "Copied. Paste it into your assistant, then add what you have ready.");
   });
-  // layout.js copies the first row's Copy button into the desktop dock and
-  // the phone bar as a plain link; make those copies copy too.
-  document.querySelectorAll(".hub-dock a.md-button, .hub-bar a.md-button").forEach(function (a) {
+  // layout-nav.js docks the page's action (the first row's Copy) beside
+  // the section navigator's controls as a plain link; make it copy too,
+  // with the prompt's name in its label and its tooltip.
+  document.querySelectorAll("a.secnav__action").forEach(function (a) {
     var source = sources[a.getAttribute("href")];
     if (!source) return;
     a.setAttribute("aria-label", source.getAttribute("aria-label"));
-    // On desktop, name the prompt above the docked button (hidden from
-    // screen readers, which hear the name in the button's own label).
-    if (a.parentNode.classList.contains("hub-dock")) {
-      var row = source.closest(".guide-prompt");
-      var name = row && row.querySelector(".guide-prompt__name");
-      if (name) {
-        var p = document.createElement("p");
-        p.className = "guide-dock-name";
-        p.setAttribute("aria-hidden", "true");
-        p.textContent = name.textContent;
-        a.parentNode.insertBefore(p, a);
-      }
-    }
+    a.title = source.getAttribute("aria-label");
     wire(a, source, source.getAttribute("data-prompt-text"), "prompt", status,
          "Copied. Paste it into your assistant, then add what you have ready.");
   });

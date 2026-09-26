@@ -16,8 +16,8 @@
  *    windows, blocked site data, previews), so every access is wrapped and
  *    the Save controls stay hidden when it does not work.
  * 3. Prompt pages. The prompt text folds after about 24rem behind "Show the
- *    whole prompt", and Copy prompt joins the docked action and the phone
- *    bar that layout.js builds once the head scrolls away.
+ *    whole prompt". Copy prompt joins the section navigator's controls
+ *    (layout-nav.js) while every Copy prompt on the page is out of view.
  * Without JavaScript none of this is needed: the buttons stay hidden, each
  * library title links to its prompt's page, and the page shows the text.
  */
@@ -358,23 +358,9 @@
       }
     }
 
-    /* Prompt page: Copy prompt joins the docked action (wide screens) and
-       the phone bar, which layout.js has built by now. */
-    var first = document.querySelector(".pp-panel button.pp-copy");
-    if (first) {
-      [".hub-bar", ".hub-dock"].forEach(function (selector) {
-        var holder = document.querySelector(selector);
-        if (!holder) return;
-        var button = document.createElement("button");
-        button.type = "button";
-        button.className = "md-button md-button--primary pp-copy";
-        button.setAttribute("data-copy-from", first.getAttribute("data-copy-from"));
-        button.setAttribute("data-title", first.getAttribute("data-title") || "");
-        button.textContent = "Copy prompt";
-        holder.insertBefore(button, holder.firstChild);
-        setupCopy(button);
-      });
-    }
+    /* Prompt page: layout-nav.js docks a copy of Copy prompt (a
+       button.pp-copy, wired above like the others) while every Copy prompt
+       on the page is out of view. */
   }
 
   if (document.readyState === "loading") {
