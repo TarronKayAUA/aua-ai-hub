@@ -249,8 +249,11 @@
       applyRate(r);
     });
 
+    // "AI voice" stays on the visible label: the full note sits in the
+    // folded player, and the narration provider's terms ask for a clear
+    // disclosure that the voice is AI-generated before anyone listens.
     wire({ audio: audio, play: play, seek: bar.seek, time: bar.time, reveal: panel,
-           idle: "Listen", to: " to this " + what, of: "" });
+           idle: "Listen (AI voice)", to: " to this " + what, of: "" });
   }
 
   /* The position slider and the elapsed / total time. */
