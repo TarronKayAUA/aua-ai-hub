@@ -253,6 +253,7 @@ nav:
           - announcements/index.md
   - Governance:
       - governance/index.md
+      - "Can I Use AI for This?": governance/can-i.md
       - AI Responsible Use Policy: governance/policy.md
       - AI Committee: governance/committee.md
       - Committee Work and Updates: governance/updates.md

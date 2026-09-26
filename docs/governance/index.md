@@ -1,46 +1,40 @@
 ---
 last_reviewed: 2026-07-15
+action:
+  - text: Read the policy
+    link: governance/policy.md
+  - text: Can I use AI for this?
+    link: governance/can-i.md
+    style: secondary
 ---
 
 # Governance
 
 How the American University of Antigua College of Medicine (AUACOM) governs artificial intelligence (AI) use: a published policy, a standing committee, and a request-driven tool review process. This page is the map.
 
-<img class="section-banner" src="../assets/section-governance.svg" alt="">
+<div class="grid cards gov-cards" markdown>
 
-<div class="grid cards" markdown>
+-   ## :material-chat-question-outline:{ .lg .middle } [Can I Use AI for This?](can-i.md){ .card-link }
 
-- :material-file-document:{ .lg .middle } __The Policy__
+    Short answers to common questions, each with its conditions, based on the policy in force. A draft for AI Committee comment.
 
-    ---
+-   ## :material-file-document:{ .lg .middle } [The Policy](policy.md){ .card-link }
 
     The AI Responsible Use Policy, the approved institutional text in full.
 
-    [Read the policy](policy.md)
-
-- :material-account-group:{ .lg .middle } __The Committee__
-
-    ---
+-   ## :material-account-group:{ .lg .middle } [The Committee](committee.md){ .card-link }
 
     Who sits on the AI Committee and how to reach it.
 
-    [Meet the committee](committee.md)
+-   ## :material-bullhorn:{ .lg .middle } [Committee Work and Updates](updates.md){ .card-link }
 
-- :material-bullhorn:{ .lg .middle } __Committee Work and Updates__
+    Current projects and posted updates from the committee.
 
-    ---
+    Open polls: [Announcements and Committee Polls](../announcements/index.md)
 
-    Current projects and posted updates from the committee, with links to open polls and the feedback form.
+-   ## :material-magnify:{ .lg .middle } [Request a Tool Review](review-process.md){ .card-link }
 
-    [See what is moving](updates.md)
-
-- :material-magnify:{ .lg .middle } __Tool Review__
-
-    ---
-
-    How a tool gets reviewed, what the directory statuses mean, and how to request a review.
-
-    [Read the process](review-process.md)
+    How to ask for a tool to be reviewed, and what the directory statuses mean.
 
 </div>
 

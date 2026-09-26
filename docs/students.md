@@ -8,50 +8,66 @@ hide:
 
 <span class="meta-chip">For medical students</span> <span class="meta-note">Organized by where you are</span>
 
-Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use Policy](governance/policy.md) encourages AI use where it helps you do your work. For graded work, your syllabus sets the rules, and if it says nothing, ask your instructor. What stays out of AI tools, and why, is [below](#the-lines-that-never-move).
+Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use Policy](governance/policy.md) encourages AI use where it helps you do your work. For graded work, your syllabus sets the rules, and if it says nothing, ask your instructor. What stays out of AI tools, and why, is [below](#the-lines-that-never-move); more short answers are on [Can I Use AI for This?](governance/can-i.md)
 
-<div class="grid cards two-up" markdown>
+<form class="hub-search" role="search">
+<input class="hub-search__input" type="search" name="q" placeholder="Search guides, tools and prompts" aria-label="Search guides, tools and prompts" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+<button class="hub-search__go" type="submit" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg></button>
+</form>
 
-- :material-book-open-variant:{ .lg .middle } __Study with AI__
+<nav class="hub-jobs" aria-label="Jump to a card" markdown>
 
-    ---
+- [:material-book-open-variant: Study with AI](#study-with-ai)
+- [:material-chart-line: After an exam](#after-an-exam)
+- [:material-stethoscope: On rotations](#on-rotations)
+- [:material-account-tie: Residency applications](#residency-applications)
 
-    Practice questions from your own slides, in three steps: start a Project in ChatGPT or Claude for the course, paste the National Board of Medical Examiners (NBME)-style question tutor into its instructions, and upload your slides.
+</nav>
 
-    - [Practice questions from your slides: NBME-style question tutor](prompts/index.md#nbme-style-question-tutor)
-    - [Flashcards from one lecture: Flashcard builder](prompts/index.md#flashcard-builder)
-    - [One notebook per course: Gemini Notebook (formerly NotebookLM)](tools/gemini-notebook.md)
-    - [AI-generated anatomy images: how far to trust them](basics/misconceptions.md#if-i-cannot-find-a-good-diagram-i-can-have-ai-generate-one)
-    - [All student prompts](prompts/index.md?for=students) · [Study tools in the directory](tools/index.md?task=study)
+<div class="grid cards two-up hub-cards" markdown>
 
-- :material-chart-line:{ .lg .middle } __After an exam__
+-   ## :material-book-open-variant:{ .lg .middle } Study with AI {: #study-with-ai }
 
-    ---
+    Practice questions from your own slides, in three steps.
+
+    - <span class="row-tag">Start here</span> [Practice questions from your slides](prompts/index.md#nbme-style-question-tutor) <span class="row-sub">National Board of Medical Examiners (NBME)-style question tutor</span>
+
+    <!-- the three steps -->
+
+    1. Start a Project in ChatGPT or Claude for the course.
+    2. Paste the NBME-style question tutor into its instructions.
+    3. Upload your slides.
+
+    <!-- more ways to study -->
+
+    - [Flashcards from one lecture](prompts/index.md#flashcard-builder) <span class="row-sub">Flashcard builder</span>
+    - [One notebook per course](tools/gemini-notebook.md) <span class="row-sub">Gemini Notebook (formerly NotebookLM)</span>
+    - [AI-generated anatomy images](basics/misconceptions.md#if-i-cannot-find-a-good-diagram-i-can-have-ai-generate-one) <span class="row-sub">How far to trust them</span>
+    - [All student prompts](prompts/index.md?for=students) <span class="row-sub">Prompt Library</span>
+    - [Study tools in the directory](tools/index.md?task=study) <span class="row-sub">Tool Directory</span>
+
+-   ## :material-chart-line:{ .lg .middle } After an exam {: #after-an-exam }
 
     Turn a shelf, NBME, or course exam score report into a study plan, and sort the questions you missed by why you missed them.
 
-    - [Shelf and NBME Score Reports](playbooks/score-reports.md)
-    - [Missed-question debrief](prompts/index.md#missed-question-debrief)
-    - [Study schedule builder](prompts/index.md#study-schedule-builder)
+    - <span class="row-tag">Start here</span> [Shelf and NBME Score Reports](playbooks/score-reports.md) <span class="row-sub">Step-by-step guide</span>
+    - [Missed-question debrief](prompts/index.md#missed-question-debrief) <span class="row-sub">Prompt</span>
+    - [Study schedule builder](prompts/index.md#study-schedule-builder) <span class="row-sub">Prompt</span>
 
-- :material-stethoscope:{ .lg .middle } __On rotations__
+-   ## :material-stethoscope:{ .lg .middle } On rotations {: #on-rotations }
 
-    ---
+    Practicing differentials is fine once the case is a teaching abstraction: an age band and a presentation pattern, with nothing left that could point to the patient, such as a name, a date, or a rare detail. Your clinical site's rules may be stricter.
 
-    Practicing differentials is fine once the case is a teaching abstraction: an age band and a presentation pattern, with no names, dates, places, or chart photos. Your clinical site's rules may be stricter.
+    - <span class="row-tag">Start here</span> [Clinical reasoning partner](prompts/index.md#clinical-reasoning-partner) <span class="row-sub">Prompt</span>
+    - [Module 6: Clinical Contexts](pathway/clinical.md) <span class="row-sub">AI Literacy Pathway</span>
 
-    - [Clinical reasoning partner](prompts/index.md#clinical-reasoning-partner)
-    - [Module 6: Clinical Contexts](pathway/clinical.md)
-
-- :material-account-tie:{ .lg .middle } __Residency applications__
-
-    ---
+-   ## :material-account-tie:{ .lg .middle } Residency applications {: #residency-applications }
 
     Interview practice and feedback on a personal statement you wrote, within what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) allow.
 
-    - [Mock residency interview](prompts/index.md#mock-residency-interview)
-    - [Personal statement critic](prompts/index.md#personal-statement-critic)
-    - [AI and the Residency Application](playbooks/residency-application.md)
+    - <span class="row-tag">Start here</span> [Mock residency interview](prompts/index.md#mock-residency-interview) <span class="row-sub">Prompt</span>
+    - [Personal statement critic](prompts/index.md#personal-statement-critic) <span class="row-sub">Prompt</span>
+    - [AI and the Residency Application](playbooks/residency-application.md) <span class="row-sub">Step-by-step guide</span>
 
 </div>
 
@@ -78,26 +94,32 @@ The full detail lives in [Module 3: The Policy in Practice](pathway/rules.md) an
 
 This is where the daily habits form, and the ones that pay off share a shape: the AI works from **your** materials, and **you** do the recalling.
 
-- **Set it up once, not every session.** A [standing setup](tools/standing-setups.md) holds your course, its objectives, and your notes, so every conversation starts briefed.
-- **Prompts written for this stage.** A lecture tutor, a daily review sheet builder, a flashcard builder, and a National Board of Medical Examiners (NBME)-style question tutor, all working from the lecture you attach, in the [prompt library](prompts/index.md).
-- **Documents, without the fiddling.** Scanned PDFs, exported spreadsheets, and study sheets as real files: the [Skills page](tools/skills.md) covers what is switched on, and how to judge a skill before adding one.
-- **One notebook per course.** [Gemini Notebook (formerly NotebookLM)](tools/gemini-notebook.md) answers from what you upload, with citations; it finds well and summarizes less reliably.
-- **Finding study tools.** The [study tools](tools/index.md?task=study) are built for this.
-- **Better answers, less effort.** [Getting Better Answers](basics/better-answers.md) explains the three levers that decide quality: context, memory, and standing instructions.
-- **Anatomy is a known weak spot for image generators.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong; the [misconceptions page](basics/misconceptions.md) explains what to use instead.
-- **Calibrating trust.** Fluency is not accuracy; the [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, which matters double for exams and wards.
+??? note "Setups, prompts, notebooks, and when to trust the output"
+
+    - **Set it up once, not every session.** A [standing setup](tools/standing-setups.md) holds your course, its objectives, and your notes, so every conversation starts briefed.
+    - **Prompts written for this stage.** A lecture tutor, a daily review sheet builder, a flashcard builder, and a National Board of Medical Examiners (NBME)-style question tutor, all working from the lecture you attach, in the [prompt library](prompts/index.md).
+    - **Documents, without the fiddling.** Scanned PDFs, exported spreadsheets, and study sheets as real files: the [Skills page](tools/skills.md) covers what is switched on, and how to judge a skill before adding one.
+    - **One notebook per course.** [Gemini Notebook (formerly NotebookLM)](tools/gemini-notebook.md) answers from what you upload, with citations; it finds well and summarizes less reliably.
+    - **Finding study tools.** The [study tools](tools/index.md?task=study) are built for this.
+    - **Better answers, less effort.** [Getting Better Answers](basics/better-answers.md) explains the three levers that decide quality: context, memory, and standing instructions.
+    - **Anatomy is a known weak spot for image generators.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong; the [misconceptions page](basics/misconceptions.md) explains what to use instead.
+    - **Calibrating trust.** Fluency is not accuracy; the [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, which matters double for exams and wards.
 
 ## Building a study schedule {: #building-a-study-schedule }
 
-A schedule is only as good as what goes into it. The [study schedule builder](prompts/index.md#study-schedule-builder) is written for this school's block structure, either keeping up through a block or counting down to one exam such as a remedial. Before you use it, gather:
+A schedule is only as good as what goes into it. The [study schedule builder](prompts/index.md#study-schedule-builder) is written for this school's block structure, either keeping up through a block or counting down to one exam such as a remedial.
 
-- **Your course syllabus**, the version that lists the learning objectives. It turns "review neuro" into named objectives you can act on.
-- **The teaching calendar**, with your individual readiness assurance test (iRAT), quiz, and end-of-system exam dates.
-- **Any score reports from this block**, with your name and student number left off. The plan does not need them, and without them the report is performance data rather than an identifiable student record.
-- **Your honest hours** per day, and your fixed commitments.
-- **A few sentences on what you think is going wrong.** It is the most useful thing you can give it.
+??? note "What to gather first, and what a good schedule has"
 
-??? note "What a good schedule has, whoever builds it"
+    Before you use it, gather:
+
+    - **Your course syllabus**, the version that lists the learning objectives. It turns "review neuro" into named objectives you can act on.
+    - **The teaching calendar**, with your individual readiness assurance test (iRAT), quiz, and end-of-system exam dates.
+    - **Any score reports from this block**, with your name and student number left off. The plan does not need them, and without them the report is performance data rather than an identifiable student record.
+    - **Your honest hours** per day, and your fixed commitments.
+    - **A few sentences on what you think is going wrong.** It is the most useful thing you can give it.
+
+    **What a good schedule has, whoever builds it:**
 
     - **Clock times and named content**, each block ending in something you produce: a diagram drawn from memory, a set number of questions on named objectives. "Review cardiology" is not a plan.
     - **The weekly rhythm**: preparation before team-based learning, each lecture consolidated within a day, a spaced revisit of earlier material from the block, and a question set.
@@ -105,27 +127,33 @@ A schedule is only as good as what goes into it. The [study schedule builder](pr
     - **What you are not studying, and why.** A plan that covers everything thoroughly has not made the hard choices.
     - **Checkpoints and a buffer**: a review after each assessment, and slack so one bad day does not sink the week.
 
-Take the result to your advisor. After your next assessment, the [study plan progress check](prompts/index.md#study-plan-progress-check) tells you honestly whether it is working.
+    Take the result to your advisor. After your next assessment, the [study plan progress check](prompts/index.md#study-plan-progress-check) tells you honestly whether it is working.
 
 ## Shelf exams, NBME, United States Medical Licensing Examination (USMLE) Step 1, and course exams {: #around-an-exam }
 
 **Before.** The [NBME-style question tutor](prompts/index.md#nbme-style-question-tutor) in exam mode drills first and debriefs after, which is closer to the real thing than reading explanations as you go. Build questions from the lectures you were actually taught, not from a general model's memory of the subject, and treat every explanation as something to check rather than something to trust.
 
-**After.** The [Shelf and NBME Score Reports](playbooks/score-reports.md) guide turns an NBME INSIGHTS report or an in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it. For a practice block or a quiz, the [missed-question debrief](prompts/index.md#missed-question-debrief) sorts each miss by cause (a knowledge gap, a slip, a misread, a changed answer, or the clock), working from your own notes rather than the questions themselves.
+??? note "After the exam: your score report and the questions you missed"
+
+    **After.** The [Shelf and NBME Score Reports](playbooks/score-reports.md) guide turns an NBME INSIGHTS report or an in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it. For a practice block or a quiz, the [missed-question debrief](prompts/index.md#missed-question-debrief) sorts each miss by cause (a knowledge gap, a slip, a misread, a changed answer, or the clock), working from your own notes rather than the questions themselves.
 
 ## On rotations: practicing differentials {: #on-the-wards }
 
 Clinical rotations add a second set of policies alongside the university's: the hospital's own rules on privacy and devices.
 
-- Read [Clinical Contexts](pathway/clinical.md) before your first rotation. It covers how AI works as a study aid on rotations and what changes when a real patient is involved.
-- **Practicing differentials against an AI is legitimate and effective**, with one discipline: a real encounter gets stripped to a teaching abstraction first, meaning an age band, a presentation pattern, and nothing identifiable. The [clinical reasoning partner](prompts/index.md#clinical-reasoning-partner) runs practice cases a step at a time.
-- Where the site's policies and the university's differ, the stricter of the two sets the limit in practice. Site orientation or your preceptor can tell you what the site allows.
+??? note "Before your first rotation, and how to practice differentials"
+
+    - Read [Clinical Contexts](pathway/clinical.md) before your first rotation. It covers how AI works as a study aid on rotations and what changes when a real patient is involved.
+    - **Practicing differentials against an AI is legitimate and effective**, with one discipline: a real encounter gets stripped to a teaching abstraction first, meaning an age band, a presentation pattern, and nothing identifiable. The [clinical reasoning partner](prompts/index.md#clinical-reasoning-partner) runs practice cases a step at a time.
+    - Where the site's policies and the university's differ, the stricter of the two sets the limit in practice. Site orientation or your preceptor can tell you what the site allows.
 
 ## Residency applications: interview practice and personal statements {: #the-application-year }
 
 The [residency application guide](playbooks/residency-application.md) covers what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) actually permit, the best use of AI in this year (interview rehearsal, especially if you do not have a network of physicians to practice with), how to use an assistant as a critic of your own draft rather than its author, and how to tell a patient story in a personal statement without identifying the patient. Two prompts support it: the [mock residency interview](prompts/index.md#mock-residency-interview) and the [personal statement critic](prompts/index.md#personal-statement-critic).
 
-For anything about strategy, meaning which programs, how many, how to signal, and how your own record should be presented, your Education Enhancement Department (EED) clinical advisor is the person to see. The guide is about the tools, not the plan.
+??? note "Questions about application strategy: who to see"
+
+    For anything about strategy, meaning which programs, how many, how to signal, and how your own record should be presented, your Education Enhancement Department (EED) clinical advisor is the person to see. The guide is about the tools, not the plan.
 
 ## Staying current
 

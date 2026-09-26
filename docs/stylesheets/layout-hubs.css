@@ -1,1 +1,522 @@
-/* Layout redesign (2026-09-25): styles for the hubs page type package. */
+/* =========================================================================
+   Hubs and governance (layout redesign, 2026-09-25; plan L12, L21, L22).
+   Pages: For Students, For Faculty & Staff, Governance, AI Committee,
+   How Tools Are Reviewed, About, the policy page's reader's map, and
+   Can I Use AI for This?. Builds on layout.css: cards, 44px link rows,
+   the action slot and quiet disclosures come from there; this file adds
+   only what these pages need on top.
+   ========================================================================= */
+
+:root,
+[data-md-color-scheme="default"] {
+  --hubs-start-bg: rgba(7, 97, 140, 0.075);
+  --hubs-tag: #1b4165;
+  --hubs-field-border: rgba(0, 0, 0, 0.45);
+  --hubs-tile-bg: rgba(7, 97, 140, 0.05);
+  --hubs-tile-border: rgba(7, 97, 140, 0.28);
+  --hubs-step-bg: rgba(7, 97, 140, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --hubs-start-bg: rgba(90, 163, 199, 0.13);
+  --hubs-tag: #a9d0e6;
+  --hubs-field-border: rgba(255, 255, 255, 0.42);
+  --hubs-tile-bg: rgba(90, 163, 199, 0.08);
+  --hubs-tile-border: rgba(90, 163, 199, 0.34);
+  --hubs-step-bg: rgba(90, 163, 199, 0.2);
+}
+
+/* --- Search field on the hubs (L10, L12) ------------------------------------
+   A real field, not a picture of one. It is a plain GET form with q=:
+   Material opens its own search, already filled in, when a page loads
+   with ?q=, so the field works from the keyboard and with a screen reader
+   and needs no script. */
+.md-typeset .hub-search {
+  position: relative;
+  max-width: 40rem;
+  margin: 1.2rem 0 1rem;
+}
+
+.md-typeset .hub-search__input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2.4rem;
+  padding: 0 2.6rem 0 0.8rem;
+  border: 1px solid var(--hubs-field-border);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.md-typeset .hub-search__input::placeholder {
+  color: var(--md-default-fg-color--light);
+  opacity: 1;
+}
+
+.md-typeset .hub-search__input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.md-typeset .hub-search__go {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 0;
+  border-radius: 0 0.3rem 0.3rem 0;
+  background: none;
+  color: var(--md-default-fg-color--light);
+  cursor: pointer;
+}
+
+.md-typeset .hub-search__go:hover {
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .hub-search__go svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: currentColor;
+}
+
+/* --- Job picker (phones only) -----------------------------------------------
+   Below 45em the four student jobs (three for faculty) sit on the first
+   screen as tiles that jump to their cards. From 45em the cards
+   themselves are on the first screen, so the picker is not shown. */
+.md-typeset .hub-jobs {
+  display: none;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .hub-jobs {
+    display: block;
+    margin: 0 0 1rem;
+  }
+  [dir] .md-typeset .hub-jobs ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  [dir] .md-typeset .hub-jobs li {
+    margin: 0;
+  }
+  .md-typeset .hub-jobs li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+  .md-typeset .hub-jobs a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 2.8rem;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid var(--hubs-tile-border);
+    border-radius: 0.4rem;
+    background: var(--hubs-tile-bg);
+    color: var(--md-default-fg-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.25;
+    text-decoration: none;
+  }
+  .md-typeset .hub-jobs a .twemoji {
+    flex: none;
+    height: 1.2rem;
+  }
+  .md-typeset .hub-jobs a .twemoji svg {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: var(--md-typeset-a-color);
+  }
+}
+
+/* --- Hub cards (L6, L12) -----------------------------------------------------
+   Card titles are real headings (heading navigation, AC-7). Each card
+   leads with a tinted "Start here" row; destinations are 44px rows from
+   layout.css with a grey sub-label saying what each one is. */
+.md-typeset .hub-cards > ul > li > h2,
+.md-typeset .gov-cards > ul > li > h2,
+.md-typeset .hub-also > ul > li > h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .hub-cards > ul > li > h2 .twemoji,
+.md-typeset .gov-cards > ul > li > h2 .twemoji {
+  flex: none;
+  height: 1.3rem;
+}
+
+.md-typeset .hub-cards > ul > li > h2 .twemoji svg,
+.md-typeset .gov-cards > ul > li > h2 .twemoji svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: var(--md-typeset-a-color);
+}
+
+.md-typeset .hub-cards > ul > li > p {
+  margin: 0 0 0.6rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.md-typeset .grid.cards > ul > li ul > li > a {
+  font-size: 0.78rem;
+}
+
+.md-typeset .grid.cards .row-sub {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1.35;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .grid.cards .row-tag {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: var(--hubs-tag);
+}
+
+.md-typeset .grid.cards > ul > li ul > li:has(> .row-tag) {
+  padding-left: 0.65rem;
+  border-top: 0;
+  border-radius: 0.4rem;
+  background: var(--hubs-start-bg);
+}
+
+.md-typeset .grid.cards > ul > li ul > li:has(> .row-tag) > a {
+  font-weight: 700;
+}
+
+.md-typeset .grid.cards > ul > li ul > li:has(> .row-tag) + li {
+  border-top: 0;
+}
+
+/* Keyboard focus: the whole row is the link, so the ring goes round the
+   row. Material's own `.md-typeset a.focus-visible` (amber, 0,2,1) beats
+   layout.css's navy ring, so the inner link's outline is removed here and
+   the row carries the shared --hub-focus colour. */
+.md-typeset :is(.hub-cards, .hub-also) > ul > li ul > li:has(> a:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 1px;
+  border-radius: 0.3rem;
+}
+
+.md-typeset :is(.hub-cards, .hub-also) > ul > li ul > li > a:is(:focus-visible, .focus-visible),
+.md-typeset .gov-cards a.card-link:is(:focus-visible, .focus-visible) {
+  outline: none;
+}
+
+.md-typeset .hub-jobs a:is(:focus-visible, .focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+/* The three-step strip under the Study card's "Start here" row. */
+[dir] .md-typeset .hub-cards > ul > li > ol {
+  margin: 0.7rem 0 0.5rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: hub-step;
+}
+
+[dir] .md-typeset .hub-cards > ul > li > ol > li {
+  position: relative;
+  margin: 0 0 0.45rem;
+  padding-left: 1.8rem;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  counter-increment: hub-step;
+}
+
+.md-typeset .hub-cards > ul > li > ol > li::before {
+  content: counter(hub-step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background: var(--hubs-step-bg);
+  color: var(--hubs-tag);
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.md-typeset .hub-cards > ul > li > ol + ul {
+  margin-top: 0.2rem;
+}
+
+/* "Also" rows on the faculty hub: one full-width card whose rows sit in
+   columns once there is room. */
+.md-typeset .grid.cards.hub-also {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media screen and (min-width: 45em) {
+  [dir] .md-typeset .hub-also > ul > li > ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  [dir] .md-typeset .hub-also > ul > li > ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* The sections below the hub cards: heading and first paragraph stay
+   open, the rest folds into a quiet disclosure (decision 10). Folded prose
+   is read like the page's own text, so it keeps the body size, and it
+   shares the door frame's 40rem prose width. */
+body[data-page-type="door"] .md-typeset:has(.hub-cards) > details {
+  max-width: 40rem;
+  font-size: 0.8rem;
+}
+
+body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
+  font-size: 0.78rem;
+}
+
+/* --- Governance landing (L21) ---------------------------------------------
+   Whole-card links. A second link inside a card (Committee Work's polls
+   link) sits above the card's stretched link so both can be reached. */
+
+/* The outline button takes Material's primary colour, which measured
+   2.37:1 on the dark background. Scoped to this page's action slot; the
+   same fix belongs in layout.css for every page's secondary action. */
+[data-md-color-scheme="slate"] .md-typeset:has(.gov-cards) > .page-action .md-button:not(.md-button--primary) {
+  border-color: var(--md-typeset-a-color);
+  color: var(--md-typeset-a-color);
+}
+.md-typeset .gov-cards > ul > li > h2 a.card-link:hover {
+  color: var(--md-typeset-a-color);
+}
+
+/* extra.css pushes a card's last paragraph to the bottom so calls to
+   action line up; these cards have no separate call to action (the whole
+   card is the link), so the text stays under its title. */
+.md-typeset .grid.cards.gov-cards > ul > li > p,
+.md-typeset .grid.cards.gov-cards > ul > li > p:last-child {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.md-typeset .grid.cards.gov-cards > ul > li > p + p {
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .grid.cards.gov-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.md-typeset .grid.cards > ul > li:has(a.card-link) p a:not(.card-link) {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- AI Committee ------------------------------------------------------------
+   Members two to a row on phones (ten cards of 245 to 287px each stacked
+   one per row, PH-11). Role labels become quiet text: filled green and
+   amber pills read as statuses, and filled means pressable. */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .committee-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+  .md-typeset .committee-card {
+    padding: 0.75rem 0.45rem;
+  }
+  .md-typeset .committee-card img {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+  .md-typeset .committee-name {
+    font-size: 0.75rem;
+  }
+  .md-typeset .committee-line {
+    font-size: 0.68rem;
+  }
+}
+
+.md-typeset .committee-card .badge {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--hubs-tag);
+  font-size: 0.64rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* --- Status in the meta line ----------------------------------------------
+   "Working draft" and "Draft for AI Committee comment" are statuses, so
+   they read as plain, slightly stronger text in the meta line rather than
+   a coloured box or a pill. */
+.md-typeset .meta-chip.meta-status {
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+/* Material turns a page's `status:` front matter into a navigation icon,
+   with a tooltip only when mkdocs.yml defines that status under
+   extra.status. The Can I page carries `status: draft for AI Committee
+   comment` as a record, not as an icon, so an untitled status marker (an
+   info icon that explains nothing) is not shown. */
+.md-nav .md-status:not([title]) {
+  display: none;
+}
+
+/* --- The policy page's reader's map (L22) ---------------------------------
+   Site-added, not part of the policy: 16px text and 44px rows, directly
+   under the "Current version in force" box. */
+.md-typeset .admonition.reader-map {
+  margin: 1rem 0 1.4rem;
+  padding: 0 0.8rem 0.2rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.4rem;
+  box-shadow: none;
+  background: none;
+  font-size: 0.8rem;
+}
+
+.md-typeset .admonition.reader-map > .admonition-title {
+  margin: 0;
+  padding: 0.7rem 0 0.45rem;
+  border: 0;
+  background: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .admonition.reader-map > .admonition-title::before {
+  display: none;
+}
+
+[dir] .md-typeset .reader-map ul,
+[dir] .md-typeset .can-i-questions ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .reader-map li,
+[dir] .md-typeset .can-i-questions li {
+  position: relative;
+  min-height: 2.2rem;
+  margin: 0;
+  padding: 0.55rem 1.6rem 0.55rem 0;
+  border-top: 1px solid var(--hub-row-rule);
+  line-height: 1.4;
+}
+
+.md-typeset .reader-map li::after,
+.md-typeset .can-i-questions li::after {
+  content: "\203a";
+  position: absolute;
+  top: 50%;
+  right: 0.3rem;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .reader-map li > a,
+.md-typeset .can-i-questions li > a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* A row with one link is one link; a row with two keeps two. */
+.md-typeset .reader-map li:has(> a:only-of-type) > a::after,
+.md-typeset .can-i-questions li:has(> a:only-of-type) > a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.md-typeset .reader-map li:has(> a:only-of-type):hover,
+.md-typeset .can-i-questions li:has(> a:only-of-type):hover {
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .reader-map li:not(:has(> a:only-of-type))::after {
+  content: none;
+}
+
+.md-typeset .reader-map li:has(> a:focus-visible),
+.md-typeset .can-i-questions li:has(> a:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 1px;
+}
+
+.md-typeset .reader-map li > a:focus-visible,
+.md-typeset .can-i-questions li > a:focus-visible {
+  outline: none;
+}
+
+/* --- Can I Use AI for This? ------------------------------------------------
+   The question list at the top: grouped rows that jump to each answer. */
+.md-typeset .can-i-questions {
+  margin: 1.2rem 0 1.6rem;
+}
+
+.md-typeset .can-i-questions > p {
+  margin: 1rem 0 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .can-i-questions > p:first-child {
+  margin-top: 0;
+}
+
+.md-typeset .can-i-questions li {
+  font-size: 0.78rem;
+}
+
+.md-typeset .can-i-example {
+  margin: 0.6rem 0 1rem;
+  padding: 0.6rem 0.8rem;
+  border-left: 0.2rem solid var(--hub-row-rule);
+  background: var(--hub-quiet-bg);
+  font-size: 0.76rem;
+}
+
+.md-typeset .can-i-example p {
+  margin: 0.4rem 0;
+}
