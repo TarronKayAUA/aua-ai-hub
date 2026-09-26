@@ -7,7 +7,8 @@ only: nothing generated is written into the docs/ source tree.
 
 Markers:
     <!-- render:conferences -->   in docs/conferences.md
-    <!-- render:tools -->         in docs/tools/index.md
+    <!-- render:tools -->         in docs/tools/index.md (also tool-chooser,
+                                  tool-access and open-models there)
     <!-- render:last-updated -->  in docs/index.md (build date stamp; stays
                                   current because the site rebuilds nightly
                                   once the Phase 2 pipeline is live)
@@ -116,10 +117,11 @@ CATEGORY_LABELS = {
     "local": "Local Models",
 }
 
-# One-line descriptor rendered under every category heading, above the
-# collapsed bar, so readers know what they are about to expand. Required:
-# the renderer fails on a category without one. Keep each to one short
-# sentence; longer guidance belongs in CATEGORY_INTROS below.
+# One-line descriptor for every category: the first line inside its row
+# once opened (the rows themselves are one line each since the layout
+# redesign, 2026-09-25). Required: the renderer fails on a category without
+# one. Keep each to one short sentence; longer guidance belongs in
+# CATEGORY_INTROS below.
 CATEGORY_DESCRIPTORS = {
     "assistants": "General-purpose chat assistants for questions, drafting, and analysis.",
     "agents": "Tools that plan and carry out multi-step tasks on your behalf.",
@@ -204,6 +206,36 @@ STATUS_SHORT = {
     "caution": "see the note on the card",
     "restricted": "found unsuitable for institutional use",
 }
+
+# Cost values a card may print (SPEC section 6, plus the AUA-licensed label
+# Scopus with AI carries). Anything else fails the build rather than
+# printing an unexplained word on a card; the directory's legend explains
+# each one. The "Where to start" note spells out the one label a newcomer
+# cannot act on as written.
+COST_LABELS = ("free", "freemium", "paid", "institutional", "AUA-licensed")
+COST_WORDS = {"institutional": "needs an organization's license"}
+COST_WORDS_SHARED = {"institutional": "need an organization's license"}
+
+# "What AUA provides" on a card (layout redesign, 2026-09-25, from the
+# independent review's point that availability, approval and cost must not
+# blur): confirmed institutional access (status licensed, or the
+# AUA-licensed cost label) is kept apart from tools that need SOME
+# organization's license, so an Institutional label is never read as a
+# promise of AUA access. Nothing on the site establishes whether AUA holds
+# those licenses (owner decision 8 in the navigation plan), so the second
+# line asserts neither answer.
+ACCESS_LINES = {
+    "licensed": "access, through a university license.",
+    "institutional": "not confirmed. This tool needs an organization's license.",
+}
+
+# The label on the decision aid above a task's results. It is editorial,
+# drawn from each tool's own description and this site's guides, so it is
+# set apart from the status tags and says it is not an endorsement.
+START_LABEL = "Where to start"
+START_QUALIFIER = "suggestions, not endorsements"
+
+TOOL_ACCESS_MARKER = "<!-- render:tool-access -->"
 
 FORMAT_LABELS = {
     "in_person": "In person",
@@ -495,12 +527,38 @@ def _tool_anchor(name: str) -> str:
     return "tool-" + re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
-def _join_names(names: list[str]) -> str:
+def _join_names(names: list[str], conj: str = "and") -> str:
     if len(names) <= 1:
         return "".join(names)
     if len(names) == 2:
-        return f"{names[0]} and {names[1]}"
-    return ", ".join(names[:-1]) + f", and {names[-1]}"
+        return f"{names[0]} {conj} {names[1]}"
+    return ", ".join(names[:-1]) + f", {conj} {names[-1]}"
+
+
+_NUMBER_WORDS = ("No", "One", "Two", "Three", "Four", "Five", "Six", "Seven",
+                 "Eight", "Nine")
+
+
+def _number_word(n: int) -> str:
+    """Sentence-initial count: "One", "Three", or digits from 10."""
+    return _NUMBER_WORDS[n] if n < len(_NUMBER_WORDS) else str(n)
+
+
+def _tool_access(tool: dict) -> str:
+    """Which "What AUA provides" line a card carries: "licensed" for
+    confirmed institutional access, "institutional" for a tool that needs
+    some organization's license, "" for everything else."""
+    if tool["governance_status"] == "licensed" or tool["cost"] == "AUA-licensed":
+        return "licensed"
+    if tool["cost"] == "institutional":
+        return "institutional"
+    return ""
+
+
+def _check_cost(tool: dict) -> None:
+    if tool.get("cost") not in COST_LABELS:
+        raise ValueError(f"render_data hook: {tool['name']!r} has cost "
+                         f"{tool.get('cost')!r}; expected one of {COST_LABELS}")
 
 
 def _tool_standing_sentence(group: list[dict]) -> str:
@@ -572,6 +630,7 @@ def _render_tool_chooser(config) -> str:
         raise ValueError(f"render_data hook: tools in no chooser task: {orphans}")
     institutional = sorted((tool["name"] for tool in tools
                             if tool["cost"] == "institutional"), key=str.lower)
+    start_counts = {t["id"]: _check_start_with(t, members[t["id"]]) for t in tasks}
 
     lines = [
         '<div class="tool-chooser" id="tool-chooser" hidden></div>',
@@ -607,6 +666,7 @@ def _render_tool_chooser(config) -> str:
                 f"{_join_names(institutional)}.")
         lines += [f'<div class="tt-item" {attrs} markdown>', "",
                   f"**{t['label']}** ({len(group)}): {links}", "{ .tt-tools }", ""]
+        lines += _start_with_lines(t, group)
         if guide:
             lines += [guide, "{ .tt-guide }", ""]
         if standing:
@@ -624,10 +684,149 @@ def _render_tool_chooser(config) -> str:
         print(f"    {t['id']:<14}: {len(members[t['id']]):>2} ({source})")
     print(f"  tools with also_for: {sum(1 for x in tools if x.get('also_for'))}")
     print(f"  tools in a task : {len(in_any)} of {len(tools)} (cross-check ok)")
+    with_start = [tid for tid, n in start_counts.items() if n]
+    rendered_starts = out.count('<div class="tt-start"')
+    print(f"  where to start  : {len(with_start)} of {len(tasks)} tasks (DRAFT, "
+          f"owner sign-off pending), {sum(start_counts.values())} tool mentions, "
+          f"all in their task (cross-check "
+          f"{'ok' if rendered_starts == len(with_start) else 'MISMATCH'})")
+    if rendered_starts != len(with_start):
+        raise AssertionError(
+            f"render_data hook: {len(with_start)} tasks carry start_with but "
+            f"{rendered_starts} Where to start notes rendered")
     return out
 
 
+def _check_start_with(task: dict, group: list[dict]) -> int:
+    """Validate a task's optional start_with (DRAFT, awaiting owner sign-off,
+    2026-09-25) and return how many tool mentions it makes. The build fails
+    on a malformed item or on a tool that is not in the task, because a
+    suggestion naming a tool the reader cannot see in the results below it
+    is a broken promise, and a renamed tool would otherwise vanish from the
+    note silently."""
+    items = task.get("start_with") or []
+    if not isinstance(items, list) or len(items) > 2:
+        raise ValueError(f"render_data hook: task {task['id']!r} start_with "
+                         "must be a list of one or two items")
+    names = {tool["name"] for tool in group}
+    mentions = 0
+    for item in items:
+        tools = item.get("tools") or []
+        if not item.get("need") or not item.get("why") or not 1 <= len(tools) <= 3:
+            raise ValueError(f"render_data hook: task {task['id']!r} has a "
+                             "start_with item without a need, a why, and one "
+                             "to three tools")
+        missing = [n for n in tools if n not in names]
+        if missing:
+            raise ValueError(f"render_data hook: task {task['id']!r} start_with "
+                             f"names {missing}, which are not in that task")
+        mentions += len(tools)
+    return mentions
+
+
+def _start_with_lines(task: dict, group: list[dict]) -> list[str]:
+    """The "Where to start" note as markdown inside the task index, so
+    MkDocs rewrites and checks its links and the chooser can copy it. Each
+    tool is named with its cost from data/tools.yaml, which is the access
+    and cost half of the decision aid."""
+    items = task.get("start_with") or []
+    if not items:
+        return []
+    by_name = {tool["name"]: tool for tool in group}
+    out = ['<div class="tt-start" markdown>', "",
+           f"**{START_LABEL}** ({START_QUALIFIER})", "{ .tt-start-label }", ""]
+    for item in items:
+        tools = [by_name[name] for name in item["tools"]]
+        links = [f"[{t['name']}](#{_tool_anchor(t['name'])})" for t in tools]
+        costs = [t["cost"] for t in tools]
+        if len(tools) > 1 and len(set(costs)) == 1:
+            # "Canva or Claude Design (both freemium)", said once.
+            shared = COST_WORDS_SHARED.get(costs[0], costs[0])
+            named = (_join_names(links, "or")
+                     + f" ({'both' if len(tools) == 2 else 'all'} {shared})")
+        else:
+            named = _join_names([f"{link} ({COST_WORDS.get(c, c)})"
+                                 for link, c in zip(links, costs)], "or")
+        why = " ".join(str(item["why"]).split())
+        out.append(f"- **{item['need']}:** {named}. {why}")
+    out += ["", "</div>", ""]
+    return out
+
+
+def _browse_row(heading: str, label: str, count_text: str, extra_class: str = "") -> list[str]:
+    """Open one category as a one-line browse row (layout redesign,
+    2026-09-25; it replaced a heading, a descriptor and a "Show the N tools"
+    bar, twelve of which stacked down the page). The real heading keeps its
+    id, so every #category link and search result still lands, and floats at
+    the left of a disclosure whose summary carries the count at the right:
+    one row reading "Research ... 14 tools", clickable end to end
+    (layout-tools.css). The summary names its category for screen readers,
+    since a Tab stop reading only "14 tools" would lose its context.
+
+    Raw <details markdown> at column 0 rather than a ??? admonition: an
+    admonition indents its body, so the card HTML inside it went through
+    paragraph processing and every grid was wrapped in a <p>, which is why
+    search indexed the cards as run-together text ("AstaListed Allen
+    Institute for AIfree")."""
+    cls = "tool-cat" + (f" {extra_class}" if extra_class else "")
+    return [f'<div class="{cls}" markdown>', "", f"{heading} {label}", "",
+            '<details class="tool-cat__list" markdown>',
+            f'<summary><span class="tool-sr">{html.escape(label)}: </span>'
+            f"{count_text}</summary>", ""]
+
+
+BROWSE_ROW_CLOSE = ["", "</details>", "", "</div>", ""]
+
+# Ids on docs/tools/index.md that begin "tool-" but are not cards: the H1
+# and the chooser's containers. A tool whose anchor matched one would give
+# the page a duplicate id.
+RESERVED_TOOL_IDS = {"tool-directory", "tool-chooser", "tool-task-index"}
+
+
+def _tool_card(tool: dict, anchor: str) -> tuple[str, bool, str]:
+    """One tool card; returns (html, note shown, access line kind).
+
+    The card's title is a real heading carrying the stable #tool-... id, so
+    site search returns one result per tool and heading navigation can move
+    card to card; it is raw HTML, so it stays out of the contents list. The
+    status and cost are data-search-exclude'd leaf spans (Material's search
+    parser tracks excluded elements by tag name, so they must not contain a
+    nested span), and they sit outside the heading so its name is the
+    tool's name alone. The status tooltip keeps the note it has carried
+    since 2026-09-08, so nothing reachable before becomes unreachable."""
+    esc = lambda s: html.escape(str(s), quote=False)
+    status = tool["governance_status"]
+    status_label = STATUS_LABELS[status][0]
+    note = _card_note(tool.get("status_note", ""))
+    title = f' title="{html.escape(note)}"' if note else ""
+    parts = [
+        '<div class="tool-card">',
+        f'<h3 class="tool-card-title" id="{anchor}"><a href="{html.escape(tool["url"])}">'
+        f'{_favicon_img(tool["url"])}{esc(tool["name"])}</a></h3>',
+        '<span class="tool-sr" data-search-exclude="">Status: </span>'
+        f'<span class="tool-status tool-status--{status}" data-search-exclude=""'
+        f"{title}>{status_label}</span>",
+        f'<p class="tool-card-sub">{esc(tool["vendor"])}'
+        f'<span class="tool-card-cost" data-search-exclude="">{esc(tool["cost"])}</span></p>',
+        f'<p class="tool-card-blurb">{esc(tool["blurb"])}</p>',
+    ]
+    if note:
+        parts.append(f'<p class="tool-card-note">{esc(note)}</p>')
+    access = _tool_access(tool)
+    if access:
+        parts.append('<p class="tool-card-access"><strong>What AUA provides:</strong> '
+                     f"{ACCESS_LINES[access]}</p>")
+    checked = tool.get("last_reviewed")
+    if checked:
+        parts.append(f'<p class="tool-card-checked">Checked {_long_date(checked)}</p>')
+    parts.append("</div>")
+    return "\n".join(parts), bool(note), access
+
+
 def _render_tools(config) -> str:
+    """The directory by category (render:tools), as one-line browse rows
+    that open onto the cards. The chooser above clones these cards, so they
+    are the one source of card markup."""
     tools = _load(_data_dir(config) / "tools.yaml")
 
     by_category: dict[str, list] = {}
@@ -640,11 +839,15 @@ def _render_tools(config) -> str:
                 f"render_data hook: unknown governance_status "
                 f"{tool['governance_status']!r} on {tool['name']!r}"
             )
+        _check_cost(tool)
         by_category.setdefault(category, []).append(tool)
 
-    lines = []
+    # Not a "tool-" id: those are reserved for cards (_tool_anchor).
+    lines = [f'<p class="tool-browse" id="browse-by-category">Browse all {len(tools)} '
+             "tools by category</p>", ""]
     rendered = 0
     notes_shown = 0
+    access_shown: dict[str, int] = {}
     per_category_counts = {}
     standing_counts: dict[str, int] = {}
     anchors: set[str] = set()
@@ -653,76 +856,64 @@ def _render_tools(config) -> str:
         if not group:
             continue
         per_category_counts[label] = len(group)
-        lines.append(f"## {label}")
-        lines.append("")
         descriptor = CATEGORY_DESCRIPTORS.get(category)
         if not descriptor:
             raise ValueError(
                 f"render_data hook: category {category!r} has no descriptor"
             )
-        lines.append(descriptor)
-        lines.append("")
-        # Collapsed by default; the bar advertises the count and every
-        # non-listed standing so no signal hides behind the toggle.
-        # Arriving by link auto-expands (docs/javascripts/prompts.js).
+        # The row advertises the count and every standing other than Listed,
+        # so no signal hides behind the toggle. Arriving by link opens it
+        # (docs/javascripts/prompts.js for #category, tools-chooser.js for
+        # #tool-...).
         exceptions = []
         for standing in STATUS_EXCEPTIONS:
             n = sum(1 for t in group if t["governance_status"] == standing)
             if n:
-                exceptions.append(f"{n} {STATUS_LABELS[standing][0].lower()}")
+                exceptions.append(f"{n} {STATUS_LABELS[standing][0]}")
         noun = "tool" if len(group) == 1 else "tools"
-        summary = f"Show the {len(group)} {noun}"
+        count_text = f"{len(group)} {noun}"
         if exceptions:
-            summary += f" ({', '.join(exceptions)})"
-        lines.append(f'??? abstract "{summary}"')
-        lines.append("")
+            count_text += " \u00b7 " + ", ".join(exceptions)
+        lines += _browse_row("##", label, count_text)
+        lines += [descriptor, "{ .tool-cat__desc }", ""]
         intro = CATEGORY_INTROS.get(category)
         if intro:
-            lines.append(f"    {intro}")
-            lines.append("")
-        body = ['<div class="tool-grid">']
+            lines += [intro, "{ .tool-cat__intro }", ""]
+        # md_in_html parses these cards into the document tree, so the toc
+        # extension gives each card heading a permalink and an entry in the
+        # page's contents. Both are hidden on this page (layout-tools.css
+        # hides the permalinks; shelf pages hide the contents column), and
+        # the explicit #tool-... ids are kept as written.
+        lines.append('<div class="tool-grid">')
         for tool in sorted(group, key=lambda t: t["name"].lower()):
-            status_label, status_css = STATUS_LABELS[tool["governance_status"]]
-            badge = _badge(status_label, status_css, _card_note(tool.get("status_note", "")))
-            note_text = _card_note(tool.get("status_note", ""))
-            note_html = (f'  <p class="tool-card-note">{note_text}</p>\n'
-                         if note_text else "")
-            if note_text:
-                notes_shown += 1
-            checked = tool.get("last_reviewed")
-            checked_html = (
-                f'  <p class="tool-card-checked">Checked {_long_date(checked)}</p>\n'
-                if checked else "")
             anchor = _tool_anchor(tool["name"])
-            if anchor in anchors:
-                raise ValueError(f"render_data hook: two tools share the card "
-                                 f"anchor {anchor!r}")
+            if anchor in anchors or anchor in RESERVED_TOOL_IDS:
+                raise ValueError(f"render_data hook: the card anchor {anchor!r} "
+                                 "is taken by another tool or by the page itself")
             anchors.add(anchor)
-            body.append(
-                f'<div class="tool-card" id="{anchor}">\n'
-                '  <div class="tool-card-head">'
-                f'<a href="{tool["url"]}">{_favicon_img(tool["url"])}'
-                f'{tool["name"]}</a>{badge}</div>\n'
-                f'  <div class="tool-card-sub">{tool["vendor"]}'
-                f'<span class="cost-chip">{tool["cost"]}</span></div>\n'
-                f'  <p class="tool-card-blurb">{tool["blurb"]}</p>\n'
-                f'{note_html}{checked_html}'
-                "</div>"
-            )
+            card, noted, access = _tool_card(tool, anchor)
+            lines.append(card)
+            notes_shown += noted
+            if access:
+                access_shown[access] = access_shown.get(access, 0) + 1
             rendered += 1
             standing = tool["governance_status"]
             standing_counts[standing] = standing_counts.get(standing, 0) + 1
-        body.append("</div>")
-        for chunk in body:
-            for line in chunk.split("\n"):
-                lines.append(f"    {line}" if line else "")
-        lines.append("")
+        lines.append("</div>")
+        lines += BROWSE_ROW_CLOSE
 
     if rendered != len(tools):
         raise AssertionError(
             f"render_data hook: tools count mismatch, read {len(tools)} "
             f"but rendered {rendered}"
         )
+    out = "\n".join(lines)
+    if "\u2014" in out:
+        raise ValueError("render_data hook: em dash in the tools directory")
+    headings = len(re.findall(r'<h3 class="tool-card-title" id="tool-', out))
+    if headings != rendered:
+        raise AssertionError(f"render_data hook: {rendered} tool cards but "
+                             f"{headings} carry a #tool-... heading")
 
     print("render_data: tools verification")
     print(f"  entries read    : {len(tools)}")
@@ -731,6 +922,7 @@ def _render_tools(config) -> str:
     standings = ", ".join(f"{k} {v}" for k, v in sorted(standing_counts.items()))
     print(f"  standings       : {standings}")
     print(f"  rendered total  : {rendered} (cross-check ok)")
+    print(f"  card headings   : {headings} with a #tool-... id (cross-check ok)")
     # Cross-check the visible notes against the data rather than trusting the
     # loop: a note that stops rendering is a caution a reader stops seeing.
     expected_notes = sum(
@@ -741,8 +933,49 @@ def _render_tools(config) -> str:
         raise AssertionError(
             f"render_data hook: {expected_notes} tools carry a substantive "
             f"status note but {notes_shown} rendered on a card")
+    expected_access = {}
+    for t in tools:
+        kind = _tool_access(t)
+        if kind:
+            expected_access[kind] = expected_access.get(kind, 0) + 1
+    print(f"  AUA access lines: {access_shown.get('licensed', 0)} licensed, "
+          f"{access_shown.get('institutional', 0)} needing an organization's "
+          f"license (cross-check {'ok' if access_shown == expected_access else 'MISMATCH'})")
+    if access_shown != expected_access:
+        raise AssertionError("render_data hook: What AUA provides lines do not "
+                             "match data/tools.yaml")
+    return out
 
-    return "\n".join(lines)
+
+def _render_tool_access(config) -> str:
+    """"What AUA provides" in the directory's statuses section
+    (render:tool-access), from data/tools.yaml: confirmed institutional
+    access first, then, as a separate statement, the tools that need some
+    organization's license, so the second group is never read as provided."""
+    tools = _load(_data_dir(config) / "tools.yaml")
+    licensed = sorted((t["name"] for t in tools if _tool_access(t) == "licensed"),
+                      key=str.lower)
+    needs = sorted((t["name"] for t in tools if _tool_access(t) == "institutional"),
+                   key=str.lower)
+    if licensed:
+        noun = "tool is" if len(licensed) == 1 else "tools are"
+        text = (f"{_number_word(len(licensed))} {noun} licensed by the "
+                f"university: {_join_names(licensed)}.")
+    else:
+        text = "No tool in the directory is licensed by the university yet."
+    if needs:
+        verb, obj = ("needs", "it") if len(needs) == 1 else ("need", "them")
+        more = " more" if licensed else ""
+        text += (f" {_number_word(len(needs))}{more} {verb} an organization's "
+                 f"license, and this directory does not confirm AUA access to "
+                 f"{obj}: {_join_names(needs)}.")
+    out = f"**What AUA provides.** {text}\n{{ .tool-access }}\n"
+    if "\u2014" in out:
+        raise ValueError("render_data hook: em dash in the tool access line")
+    print("render_data: tool access verification")
+    print(f"  licensed        : {len(licensed)} ({_join_names(licensed) or 'none'})")
+    print(f"  needs a license : {len(needs)} ({_join_names(needs) or 'none'})")
+    return out
 
 
 def _render_open_models(config) -> str:
@@ -757,6 +990,7 @@ def _render_open_models(config) -> str:
                 f"on {entry['name']!r}")
         by_modality.setdefault(modality, []).append(entry)
 
+    esc = lambda s: html.escape(str(s), quote=False)
     lines = []
     rendered = 0
     dated = 0
@@ -766,22 +1000,20 @@ def _render_open_models(config) -> str:
         if not group:
             continue
         per_modality[label] = len(group)
-        lines.append(f"### {label}")
-        lines.append("")
         descriptor = MODALITY_DESCRIPTORS.get(modality)
         if not descriptor:
             raise ValueError(
                 f"render_data hook: modality {modality!r} has no descriptor"
             )
-        lines.append(descriptor)
-        lines.append("")
-        # Collapsed like the tool categories above; prompts.js expands on
-        # arrival by link. Models carry licenses, not statuses, so the bar
-        # needs only the count.
+        # The same one-line browse rows as the tool categories above;
+        # prompts.js opens one on arrival by link. Models carry licenses,
+        # not statuses, so the row needs only the count. The h3 ids must not
+        # change (image-generation_1 and its siblings are deduplicated
+        # against the category h2s, so these rows stay after them).
         noun = "model family" if len(group) == 1 else "model families"
-        lines.append(f'??? abstract "Show the {len(group)} {noun}"')
-        lines.append("")
-        body = ['<div class="tool-grid">']
+        lines += _browse_row("###", label, f"{len(group)} {noun}", "tool-cat--models")
+        lines += [descriptor, "{ .tool-cat__desc }", ""]
+        lines.append('<div class="tool-grid">')
         for entry in sorted(group, key=lambda m: m["name"].lower()):
             # docs/tools/index.md promises that each entry "shows the date
             # its license and description were last checked". Every entry
@@ -794,23 +1026,25 @@ def _render_open_models(config) -> str:
                 raise ValueError(
                     f"render_data hook: open model {entry['name']!r} has no "
                     f"last_reviewed, but the page promises a checked date")
-            body.append(
-                '<div class="tool-card">\n'
-                '  <div class="tool-card-head">'
-                f'<a href="{entry["url"]}">{entry["name"]}</a></div>\n'
-                f'  <div class="tool-card-sub">{entry["vendor"]}'
-                f'<span class="cost-chip">{entry["license"]}</span></div>\n'
-                f'  <p class="tool-card-blurb">{entry["blurb"]}</p>\n'
-                f'  <p class="tool-card-checked">Checked {_long_date(checked)}</p>\n'
-                "</div>"
-            )
+            lines.append("\n".join([
+                '<div class="tool-card tool-card--model">',
+                # A paragraph, not a heading: a heading here would get an id
+                # from the toc extension, and a search result landing on it
+                # inside a closed row would show nothing. Search indexes
+                # the models under their modality row, which opens on
+                # arrival.
+                f'<p class="tool-card-title"><a href="{html.escape(entry["url"])}">'
+                f'{esc(entry["name"])}</a></p>',
+                f'<p class="tool-card-sub">{esc(entry["vendor"])}'
+                f'<span class="tool-card-license">{esc(entry["license"])}</span></p>',
+                f'<p class="tool-card-blurb">{esc(entry["blurb"])}</p>',
+                f'<p class="tool-card-checked">Checked {_long_date(checked)}</p>',
+                "</div>",
+            ]))
             rendered += 1
             dated += 1
-        body.append("</div>")
-        for chunk in body:
-            for line in chunk.split("\n"):
-                lines.append(f"    {line}" if line else "")
-        lines.append("")
+        lines.append("</div>")
+        lines += BROWSE_ROW_CLOSE
 
     print("render_data: open models verification")
     print(f"  entries read : {len(models)}")
@@ -1762,12 +1996,14 @@ def on_page_markdown(markdown, page, config, files):
                     f"render_data hook: tools/index.md is missing the "
                     f"{marker} marker"
                 )
-        if TOOL_CHOOSER_MARKER not in markdown:
-            raise AssertionError(
-                "render_data hook: tools/index.md is missing the "
-                f"{TOOL_CHOOSER_MARKER} marker"
-            )
+        for marker in (TOOL_CHOOSER_MARKER, TOOL_ACCESS_MARKER):
+            if marker not in markdown:
+                raise AssertionError(
+                    "render_data hook: tools/index.md is missing the "
+                    f"{marker} marker"
+                )
         markdown = markdown.replace(TOOL_CHOOSER_MARKER, _render_tool_chooser(config))
+        markdown = markdown.replace(TOOL_ACCESS_MARKER, _render_tool_access(config))
         markdown = markdown.replace(TOOLS_MARKER, _render_tools(config))
         return markdown.replace(OPEN_MODELS_MARKER, _render_open_models(config))
     if src == "tools/agents.md":
