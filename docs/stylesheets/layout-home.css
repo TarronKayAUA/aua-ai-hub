@@ -1,1 +1,663 @@
-/* Layout redesign (2026-09-25): styles for the home page type package. */
+/* =========================================================================
+   Home and the News & Events landing (layout redesign L11 and L18,
+   2026-09-25). Both are Door pages (layout.css frames them); this file
+   adds what only they carry:
+   - the home grid: hero with a search field, shortcuts, the two newcomer
+     routes, the "Start here" cards, and a timely column beside them from
+     60em (after the cards on phones);
+   - the timely blocks, shared with News & Events: newest Medical
+     Education items, what is coming up, and the open committee poll, all
+     filled at build time by scripts/layout_home.py;
+   - door rows: 44px link rows with a grey sub-label.
+   scripts/layout_home.py stamps data-door="home" or "news-events" on
+   <body>, so nothing here reaches another page.
+   ========================================================================= */
+
+body[data-door="home"] {
+  --home-route-bg: rgba(7, 97, 140, 0.07);
+}
+
+body[data-door="home"][data-md-color-scheme="slate"] {
+  --home-route-bg: rgba(90, 163, 199, 0.11);
+}
+
+/* --- Focus ring ----------------------------------------------------------
+   Material's focus polyfill rule (.md-typeset a.focus-visible, amber) is
+   more specific than layout.css's navy ring, so links in running text and
+   lists kept the 1.91:1 amber ring (AC-4). Restated here for these pages. */
+body[data-door] .md-typeset a.focus-visible,
+body[data-door] .md-typeset a:focus-visible {
+  outline-color: var(--hub-focus);
+}
+
+/* --- Frame: less empty space above the first block (layout plan L2) ------ */
+body[data-door] .md-main__inner {
+  margin-top: 0.4rem;
+}
+
+body[data-door] .md-content__inner {
+  padding-top: 0.2rem;
+}
+
+/* --- Home grid ------------------------------------------------------------
+   One column on phones in reading order: hero, shortcuts, routes, cards,
+   timely column, "Short on time?", the announcements line. From 60em the
+   timely column moves beside everything else. Its last row is 1fr so a
+   column taller than the main content takes the spare height there
+   instead of spreading gaps between the cards. */
+.md-typeset .home {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "hero"
+    "tasks"
+    "routes"
+    "start"
+    "timely"
+    "short"
+    "foot";
+  row-gap: 0.7rem;
+  margin: 0 0 1rem;
+}
+
+.md-typeset .home > * {
+  min-width: 0;
+  margin: 0;
+}
+
+.md-typeset .home-hero { grid-area: hero; }
+.md-typeset .home-tasks { grid-area: tasks; }
+.md-typeset .home-routes { grid-area: routes; }
+.md-typeset .home-start { grid-area: start; }
+.md-typeset .home-timely { grid-area: timely; }
+.md-typeset .home-short { grid-area: short; }
+.md-typeset .home-foot { grid-area: foot; }
+
+@media screen and (min-width: 60em) {
+  .md-typeset .home {
+    grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem);
+    grid-template-rows: repeat(6, auto) 1fr;
+    grid-template-areas:
+      "hero timely"
+      "tasks timely"
+      "routes timely"
+      "start timely"
+      "short timely"
+      "foot timely"
+      ". timely";
+    column-gap: 1.6rem;
+    row-gap: 1rem;
+  }
+  .md-typeset .home-timely {
+    align-self: start;
+  }
+}
+
+.md-typeset .home h2 {
+  margin: 0.3rem 0 0.55rem;
+}
+
+/* --- Hero ----------------------------------------------------------------- */
+.md-typeset .home-hero {
+  padding: 0.9rem 0.8rem 0.9rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(135deg,
+    var(--md-primary-fg-color) 0%,
+    var(--md-primary-fg-color--dark) 100%);
+  color: #ffffff;
+}
+
+/* The wordmark identifies the institution, so it stays legible rather than
+   decorative: 52px tall on phones, 60px from 45em (Astra's review asked
+   for no smaller). */
+.md-typeset .home-hero__wordmark {
+  display: block;
+  width: auto;
+  height: 2.6rem;
+  margin: 0 0 0.7rem;
+}
+
+/* 20px on phones keeps it to two lines, so the shortcuts and the For
+   Students card stay near the first screen. */
+.md-typeset .home-hero__tagline {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.md-typeset .home-hero__sub {
+  max-width: 36rem;
+  margin: 0.45rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+@media screen and (min-width: 45em) {
+  .md-typeset .home-hero {
+    padding: 1.4rem 1.6rem 1.5rem;
+  }
+  .md-typeset .home-hero__wordmark {
+    height: 3rem;
+    margin-bottom: 0.9rem;
+  }
+  .md-typeset .home-hero__tagline {
+    font-size: 1.35rem;
+  }
+}
+
+/* The descriptive sentence is hidden visually on phones only: screen
+   readers still hear it, and it carries the page's first expansion of
+   AUACOM. */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .home-hero__sub {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* The search field opens the site search (layout-home.js). 48px tall, and
+   16px text so iOS does not zoom the page when it takes focus. */
+.md-typeset .home-search {
+  position: relative;
+  max-width: 30rem;
+  margin: 0.8rem 0 0;
+}
+
+.md-typeset .home-search__label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.md-typeset .home-search__icon {
+  position: absolute;
+  top: 50%;
+  left: 0.65rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  transform: translateY(-50%);
+  fill: #4a4f55;
+  pointer-events: none;
+}
+
+.md-typeset .home-search__input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.4rem;
+  margin: 0;
+  padding: 0 0.5rem 0 2.3rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.87);
+  font: inherit;
+  font-size: 0.8rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.18);
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: text;
+}
+
+.md-typeset .home-search__input::placeholder {
+  color: #5c6166;
+  opacity: 1;
+}
+
+/* On the blue hero the site's navy focus ring would vanish; white holds. */
+.md-typeset .home-hero .home-search__input:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .home-search__input {
+  border-color: rgba(255, 255, 255, 0.28);
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .home-search__input::placeholder {
+  color: #b0b4ba;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .home-search__icon {
+  fill: #b0b4ba;
+}
+
+/* --- Home cards: the shortcuts and "Start here" ----------------------------
+   Every card is one link (the foundation's card-link), with its title as a
+   real heading, the icon in a column of its own and a chevron at the
+   right. Descriptions are shown in full. Cards with extra destinations
+   keep them as the foundation's 44px rows. Column counts follow the width
+   the cards actually have (container queries), since the timely column
+   takes a share of the page from 60em. */
+.md-typeset .home-tasks,
+.md-typeset .home-start,
+.md-typeset .home-routes,
+.md-typeset .home-short {
+  container-type: inline-size;
+}
+
+.md-typeset .home .grid.cards {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.5rem;
+  margin: 0;
+}
+
+@container (min-width: 30rem) {
+  .md-typeset .home-start .grid.cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.7rem;
+  }
+}
+
+.md-typeset .home .grid.cards > ul > li {
+  position: relative;
+  padding: 0.7rem 1.9rem 0.75rem 2.9rem;
+  border-radius: 0.5rem;
+}
+
+.md-typeset .home .grid.cards > ul > li:has(a.card-link)::after {
+  content: "\203a";
+  position: absolute;
+  top: 0.55rem;
+  right: 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--md-primary-fg-color);
+  pointer-events: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .home .grid.cards > ul > li:has(a.card-link)::after {
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .home .card-title {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.md-typeset .home .card-title a.card-link {
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .home .card-title a.card-link:hover {
+  text-decoration: underline;
+}
+
+.md-typeset .home .card-title .headerlink {
+  display: none;
+}
+
+.md-typeset .home .card-title .home-icon {
+  position: absolute;
+  top: 0.72rem;
+  left: 0.85rem;
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.md-typeset .home .card-title .home-icon svg {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  fill: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .home .card-title .home-icon svg {
+  fill: var(--md-typeset-a-color);
+}
+
+/* extra.css pushes a card's last paragraph to the bottom so calls to
+   action align; here the paragraph is the description, which belongs
+   under its title. */
+.md-typeset .home .grid.cards > ul > li > p,
+.md-typeset .home .grid.cards > ul > li > p:last-child {
+  margin: 0.2rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .home .grid.cards > ul > li ul {
+  margin-top: 0.45rem;
+}
+
+/* The rows' chevron sat above the row's stretched link, so a tap on the
+   chevron itself went nowhere (measured by hit test, 2026-09-25). */
+.md-typeset .home .grid.cards > ul > li ul > li::after {
+  pointer-events: none;
+}
+
+/* The shortcuts are compact: one line of title, one of what it is. */
+.md-typeset .home-tasks .grid.cards > ul > li {
+  padding-top: 0.6rem;
+  padding-bottom: 0.65rem;
+}
+
+.md-typeset .home-tasks .card-title .home-icon {
+  top: 0.62rem;
+}
+
+.md-typeset .home-tasks .grid.cards > ul > li:has(a.card-link)::after {
+  top: 0.45rem;
+}
+
+.md-typeset .home-tasks .grid.cards > ul > li > p {
+  font-size: 0.7rem;
+}
+
+/* Three across only where each card keeps its title to two lines. */
+@container (min-width: 42rem) {
+  .md-typeset .home-tasks .grid.cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md-typeset .home-tasks .grid.cards > ul > li {
+    padding-right: 1.6rem;
+    padding-left: 2.5rem;
+  }
+  .md-typeset .home-tasks .card-title .home-icon {
+    left: 0.7rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .md-typeset .home-tasks .grid.cards > ul > li:has(a.card-link)::after {
+    right: 0.6rem;
+  }
+}
+
+/* --- The two newcomer routes: a tinted pair, set apart from the tasks ---- */
+[dir] .md-typeset .home-routes > ul {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@container (min-width: 32rem) {
+  .md-typeset .home-routes > ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+[dir] .md-typeset .home-routes > ul > li {
+  position: relative;
+  margin: 0;
+  padding: 0.55rem 1.9rem 0.6rem 0.9rem;
+  border-radius: 0.5rem;
+  background: var(--home-route-bg);
+}
+
+.md-typeset .home-routes > ul > li:hover {
+  background: rgba(7, 97, 140, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .home-routes > ul > li:hover {
+  background: rgba(90, 163, 199, 0.18);
+}
+
+/* --- Door rows: 44px link rows with a grey sub-label ---------------------- */
+[dir] .md-typeset .door-rows > ul {
+  display: grid;
+  column-gap: 1.6rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .door-rows > ul > li {
+  position: relative;
+  min-height: 2.2rem;
+  margin: 0;
+  padding: 0.5rem 1.8rem 0.55rem 0.1rem;
+  border-top: 1px solid var(--hub-row-rule);
+}
+
+.md-typeset .door-rows > ul > li:hover {
+  background: var(--hub-quiet-bg);
+}
+
+@container (min-width: 40rem) {
+  .md-typeset .home-short .door-rows > ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 45em) {
+  .md-typeset .door-rows--two > ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Shared by door rows and the routes: the link fills its row, a chevron
+   sits at the right, and the sub-label goes under the link. */
+.md-typeset :is(.door-rows, .home-routes) > ul > li > a {
+  display: block;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.md-typeset :is(.door-rows, .home-routes) > ul > li > a:hover {
+  text-decoration: underline;
+}
+
+.md-typeset :is(.door-rows, .home-routes) > ul > li > a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.md-typeset :is(.door-rows, .home-routes) > ul > li > a:focus-visible {
+  outline: none;
+}
+
+.md-typeset :is(.door-rows, .home-routes) > ul > li:has(> a:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset :is(.door-rows, .home-routes) > ul > li::after {
+  content: "\203a";
+  position: absolute;
+  top: 50%;
+  right: 0.55rem;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: var(--md-default-fg-color--light);
+  pointer-events: none;
+}
+
+.md-typeset :is(.door-rows, .home-routes) .row-sub {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Material's light grey measured 4.48:1 on the routes' tint; one step
+   darker clears 4.5:1 in both schemes. */
+.md-typeset .home-routes .row-sub {
+  color: rgba(0, 0, 0, 0.62);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .home-routes .row-sub {
+  color: rgba(226, 228, 233, 0.72);
+}
+
+/* --- Timely blocks (home column and News & Events panels) ----------------- */
+.md-typeset .home-timely,
+.md-typeset .timely-panel {
+  padding: 0.9rem 1rem 0.35rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.6rem;
+  background: var(--md-default-bg-color);
+}
+
+.md-typeset .timely-block + .timely-block {
+  margin-top: 0.8rem;
+  padding-top: 0.9rem;
+  border-top: 2px solid var(--hub-row-rule);
+}
+
+.md-typeset .timely-panel + .timely-panel {
+  margin-top: 0;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--hub-row-rule);
+}
+
+.md-typeset .timely-block > h2 {
+  margin: 0 0 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .timely-block > h2 .headerlink {
+  display: none;
+}
+
+.md-typeset .timely-kicker {
+  margin: 0.7rem 0 0.15rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .timely-block > h2 + .timely-kicker {
+  margin-top: 0.2rem;
+}
+
+/* [dir] matches Material's own list rules, which carry it and would
+   otherwise indent these lists like bullets. */
+[dir] .md-typeset .timely-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .timely-list > li {
+  margin: 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--hub-row-rule);
+}
+
+[dir] .md-typeset .timely-list > li:first-child,
+[dir] .md-typeset .timely-list > li:nth-child(1 of :not([hidden])) {
+  border-top: 0;
+  padding-top: 0.2rem;
+}
+
+/* 24px tall even on one line (WCAG 2.5.8). */
+.md-typeset a.timely-title {
+  display: block;
+  padding: 0.1rem 0;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.35;
+  color: var(--md-typeset-a-color);
+  text-decoration: none;
+}
+
+.md-typeset a.timely-title:hover,
+.md-typeset a.timely-title:focus-visible {
+  text-decoration: underline;
+}
+
+.md-typeset .timely-meta {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Status in words, weighted and coloured, never a filled pill: a pill
+   reads as a button or an endorsement. */
+.md-typeset .timely-status--open {
+  font-weight: 700;
+  color: var(--aua-ok);
+}
+
+.md-typeset .timely-asof,
+.md-typeset .timely-empty {
+  margin: 0.25rem 0 0;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+[dir] .md-typeset .timely-list > .timely-empty {
+  padding-bottom: 0.3rem;
+}
+
+.md-typeset .timely-block p {
+  margin: 0.15rem 0 0;
+}
+
+.md-typeset a.timely-more {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.md-typeset a.timely-more:hover {
+  text-decoration: underline;
+}
+
+.md-typeset a.timely-more::after {
+  content: "\203a";
+  margin-left: 0.35rem;
+  font-size: 1.15em;
+}
+
+/* --- Home foot line -------------------------------------------------------- */
+.md-typeset .home-foot {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- News & Events landing ---------------------------------------------------
+   Two panels side by side from 60em, stacked on phones; then the rows. */
+.md-typeset .ne-panels {
+  display: grid;
+  gap: 1rem;
+  margin: 1.2rem 0 0.4rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .ne-panels {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+
+body[data-door="news-events"] .md-typeset h1 {
+  margin-bottom: 0.6em;
+}
+
+body[data-door="news-events"] .md-typeset h2#more-news-and-events {
+  margin-top: 1.6rem;
+}

@@ -69,6 +69,15 @@ RETRIES = 2  # additional attempts after the first
 KEEP_PER_CATEGORY = 8  # keyword-mode keep budget per category per run
 PAGE_ITEMS = 15  # items shown on each category page (SPEC section 8)
 LATEST_ITEMS = 5  # items in the homepage include
+# The homepage include carries one section only, Medical Education
+# (navigation plan step 11, owner decision 4, 2026-09-25): all six Phase 1
+# visitors noticed a politically charged General AI headline on the home
+# page. Medical Education items arrive daily (185 kept in 30 days, longest
+# gap 40.5 hours), so five newest stay current. The home page and the News
+# & Events landing both read includes/latest.md through
+# scripts/layout_home.py, which checks each item against this category in
+# the ledger.
+LATEST_CATEGORY = "medical_education"
 DIGEST_KEEP = 12  # digests retained in the RSS channel
 LEDGER_DAYS = 60  # rolling ledger window
 FUZZY_THRESHOLD = 92  # rapidfuzz ratio for title duplicates
@@ -1981,6 +1990,14 @@ def render_category_page(label: str, intro: str, records: list[dict],
     return "\n".join(lines) + "\n"
 
 
+def home_latest_records(ledger: dict) -> list[dict]:
+    """The homepage include's items: the newest kept LATEST_CATEGORY items.
+
+    One function, so the pipeline and any local regeneration from the
+    ledger select exactly the same items."""
+    return kept_records(ledger, LATEST_CATEGORY)[:LATEST_ITEMS]
+
+
 def render_latest_include(records: list[dict]) -> str:
     lines = [GENERATED_HEADER, ""]
     for record in records:
@@ -2982,10 +2999,7 @@ def main() -> int:
         )
         write(NEWS_DIR / f"{slug[cat_key]}.md", page, len(records))
 
-    latest = [
-        r for r in kept_records(ledger)
-        if r.get("category") not in ("videos", "podcasts")
-    ][:LATEST_ITEMS]
+    latest = home_latest_records(ledger)
     write(LATEST_INCLUDE, render_latest_include(latest), len(latest))
 
     video_records = kept_records(ledger, "videos")
@@ -3217,6 +3231,11 @@ def main() -> int:
     print(f"drop reasons     : {with_reason} of {len(dropped_fresh)} drops "
           "carry an audit reason (llm mode only)")
     print(f"news thumbnails  : {thumbs_found} of {len(kept_items)} kept items")
+    home_off = [r for r in latest if r.get("category") != LATEST_CATEGORY]
+    print(f"home include     : {len(latest)} of {LATEST_ITEMS} slots, "
+          f"{len(latest) - len(home_off)} "
+          f"{categories.get(LATEST_CATEGORY, LATEST_CATEGORY)} "
+          f"(cross-check {'ok' if not home_off else 'MISMATCH'})")
     print(f"livebench table  : {livebench_status}")
     print(f"section briefs   : {briefs_status}")
     print(f"community prompts: {community_status}")
@@ -3234,6 +3253,10 @@ def main() -> int:
     if sum(per_cat_counts.values()) != kept_total:
         print("FATAL: per-category counts do not sum to kept total",
               file=sys.stderr)
+        return 3
+    if home_off or len(latest) > LATEST_ITEMS:
+        print(f"FATAL: the homepage include holds {len(latest)} items, "
+              f"{len(home_off)} outside {LATEST_CATEGORY}", file=sys.stderr)
         return 3
     return 0
 
