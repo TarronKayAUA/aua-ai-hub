@@ -234,6 +234,33 @@ body[data-door] .md-content__inner {
   fill: #b0b4ba;
 }
 
+/* The bold hero on desktop, from 1100px (owner direction 2026-09-26: bold
+   where visitors arrive, calm where they work). The words keep to a column
+   on the left and the card grows, so the scenery island-core.js draws has
+   the right of the card: the coast, the afterglow and a frigatebird. The
+   extra height goes above the words, as sky. The card is at most 22rem
+   tall and at most the window's height less 25rem, which keeps the three
+   shortcuts and the two routes on the first screen at 1440 by 900.
+   --isl-bold tells island-core.js which hero it is drawing for. Phones and
+   tablets keep the card above, unchanged. (After the search field's own
+   rules, so its narrower width wins.) */
+@media screen and (min-width: 68.75em) {
+  .md-typeset .home-hero {
+    --isl-bold: 1;
+    display: grid;
+    align-content: end;
+    min-height: min(22rem, 100vh - 25rem);
+  }
+  .md-typeset .home-hero__tagline,
+  .md-typeset .home-hero__sub,
+  .md-typeset .home-search {
+    max-width: min(30rem, 62%);
+  }
+  .md-typeset .home-hero__tagline {
+    text-wrap: balance;
+  }
+}
+
 /* --- Home cards: the shortcuts and "Start here" ----------------------------
    Every card is one link (the foundation's card-link), with its title as a
    real heading, the icon in a column of its own and a chevron at the

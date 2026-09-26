@@ -7,8 +7,11 @@
    drawing never needs rebuilding. The gutters are a pale print of the same view in the light scheme
    (paler still on pages without the hero) and a night view in the dark one.
    Motion: on the home page only, the hero fades in and one signal crosses the network, once, all
-   over within about 3 seconds; then a still frame. Only opacity animates. Reduced motion shows the
-   still frame at once, and a hidden tab holds the pass until it is seen. The gutters never move. */
+   over within about 3 seconds; then a still frame. On desktop the hero is the bold one (taller, the
+   words in a column, a frigatebird in the sky: layout-home.css and island-core.js), and in the same
+   pass the bird glides a few pixels into place. Otherwise only opacity animates. Reduced motion
+   shows the still frame at once, and a hidden tab holds the pass until it is seen. The gutters
+   never move. */
 
 /* --- The hours ------------------------------------------------------------ */
 .isl {
@@ -22,7 +25,7 @@
   --isl-rip: #b8cde0; --isl-rip-a: 0.2; --isl-hzline: rgba(255, 236, 214, 0.35);
   --isl-moon: #fff4d6; --isl-earth: rgba(186, 204, 228, 0.14); --isl-planet: #fffaf0; --isl-star: #ffffff;
   --isl-net: rgba(205, 224, 248, 0.34); --isl-node: rgba(219, 232, 250, 0.72); --isl-pulse: #ffd89c;
-  --isl-rim: #ffcf9c;
+  --isl-rim: #ffcf9c; --isl-bird: #0b2138;
 }
 
 [data-md-color-scheme="slate"] .isl {
@@ -34,7 +37,7 @@
   --isl-rip: #4e79a3; --isl-rip-a: 0.28; --isl-hzline: rgba(255, 200, 150, 0.22);
   --isl-moon: #fff2d0; --isl-earth: rgba(160, 182, 222, 0.18); --isl-planet: #fff8ea;
   --isl-net: rgba(195, 216, 243, 0.5); --isl-node: rgba(219, 232, 250, 0.88); --isl-pulse: #ffd08a;
-  --isl-rim: #ffb27a;
+  --isl-rim: #ffb27a; --isl-bird: #020812;
 }
 
 /* The gutters in the dark scheme: the same night, a little quieter than the hero. */
@@ -87,6 +90,7 @@
 .isl .f-earth { fill: var(--isl-earth); }
 .isl .f-planet { fill: var(--isl-planet); }
 .isl .f-pulse { fill: var(--isl-pulse); }
+.isl .f-bird { fill: var(--isl-bird); }
 .isl .s-star { stroke: var(--isl-star); stroke-linecap: round; fill: none; }
 .isl .s-rip { stroke: var(--isl-rip); stroke-opacity: var(--isl-rip-a); fill: none; }
 .isl .s-hz { stroke: var(--isl-hzline); fill: none; }
@@ -200,8 +204,23 @@
   animation: isl-pulse 0.8s ease-in-out calc(1s + var(--i, 0) * 0.32s) 1 both;
 }
 
+/* The frigatebird (the bold desktop hero only) glides a few pixels into place on the east wind and
+   stops, its wings held still: frigatebirds soar. It lands before the signal's last layer fades,
+   so the still frame that follows is the bird's resting place. */
+.isl-hero .isl-bird {
+  transform-origin: 50% 50%;
+}
+
+.isl-hero.isl-run .isl-bird {
+  animation: isl-glide 2.6s cubic-bezier(0.25, 0.6, 0.3, 1) 0.1s 1 both;
+}
+
 @keyframes isl-in {
   from { opacity: 0; }
+}
+
+@keyframes isl-glide {
+  from { transform: translate(-14px, 4px) rotate(-3deg); }
 }
 
 @keyframes isl-pulse {
