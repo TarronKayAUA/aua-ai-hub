@@ -299,6 +299,15 @@
   color: var(--md-default-fg-color);
 }
 
+/* How the suggestions were chosen: one quiet line under the label. */
+.md-typeset .tool-start .tt-start-basis,
+.md-typeset .tool-task-index .tt-start-basis {
+  margin: 0 0 0.45rem;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  color: var(--md-default-fg-color--light);
+}
+
 .md-typeset .tool-start ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
@@ -551,6 +560,20 @@
   margin: 0.15rem 0 0;
   font-size: 0.68rem;
   color: var(--md-default-fg-color--light);
+}
+
+/* The description is what a reader compares tools by, so it is body
+   text, not grey metadata (extra.css gives it the light grey that the
+   vendor, cost and Checked lines keep). Measured 2026-09-26 on the card
+   background: 16.1:1 in the light scheme and 8.9:1 in the dark, against
+   4.6:1 and 4.9:1 as grey. */
+.md-typeset .tool-shelf .tool-card-blurb {
+  color: var(--md-typeset-color);
+}
+
+/* What "Checked" means, said once per grid, on its first card. */
+.md-typeset .tool-grid > .tool-card:not(:first-child) .tool-card-checked__means {
+  display: none;
 }
 
 .md-typeset .tool-card-cost::before,

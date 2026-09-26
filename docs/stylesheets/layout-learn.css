@@ -2,9 +2,10 @@
    Learn landing and the seven modules (layout redesign, 2026-09-25;
    plan L13, navigation plan step 9). Markup comes from
    scripts/layout_learn.py (progress strip, Next buttons, foot line,
-   Continue slot), docs/javascripts/listen.js (the Listen row, on every
-   narrated page and news brief) and docs/javascripts/layout-learn.js
-   (Continue where you left off). Loaded after layout.css.
+   Continue slot), docs/javascripts/listen.js (Listen in the meta line on
+   narrated pages, the Listen row in news briefs) and
+   docs/javascripts/layout-learn.js (Continue where you left off). Loaded
+   after layout.css.
    ========================================================================= */
 
 /* Screen-reader-only text (speed announcements, a brief's name). */
@@ -20,12 +21,16 @@
   border: 0;
 }
 
-/* --- The Listen row --------------------------------------------------------
-   Two outline buttons, 48px tall: Listen is one way to take in the page,
-   not the page's filled primary, and Speed is one button that cycles
-   instead of six 23px pills. The AI-voice note stays as one muted line.
-   Applies wherever listen.js has enhanced a player (data-listen-ready);
-   without JavaScript the native player in extra.css shows instead. */
+/* --- Listen ------------------------------------------------------------------
+   On a narrated page or module, audio is a utility: one small Listen
+   button at the end of the head meta line, beside the minutes, and the
+   player (slider, time, Speed menu, AI-voice note) folded under the line
+   until the recording starts (.listen--compact, 2026-09-26). Before that
+   the page shows nothing else for audio, so the text starts right under
+   the head. In a news brief the Listen row stays: two outline buttons and
+   the note as one muted line. Applies wherever listen.js has enhanced a
+   player (data-listen-ready); without JavaScript the native player in
+   extra.css shows instead. */
 .md-typeset .listen[data-listen-ready] {
   display: block;
   margin: 0.9rem 0 1.5rem;
@@ -33,6 +38,117 @@
 
 .md-typeset .section-brief .listen[data-listen-ready] {
   margin: 0.4rem 0 0.6rem;
+}
+
+/* Folded, the compact player takes no room at all. */
+.md-typeset .listen--compact[data-listen-ready] {
+  margin: 0;
+}
+
+.md-typeset .meta-listen {
+  display: inline-flex;
+  align-items: center;
+}
+
+.md-typeset .meta-note + .meta-listen::before {
+  content: "\00b7";
+  margin: 0 0.45em;
+  color: var(--md-default-fg-color--light);
+}
+
+/* 30px tall (WCAG 2.5.8 asks for 24), in the link colour with a hairline
+   outline, so it reads as a control without competing with the text. */
+.listen-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 1.5rem;
+  margin: 0;
+  padding: 0 0.6rem 0 0.4rem;
+  border: 1px solid var(--md-typeset-a-color);
+  border-radius: 0.75rem;
+  background: transparent;
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.listen-toggle svg {
+  flex: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  fill: currentColor;
+}
+
+.listen-toggle:hover {
+  background: rgba(7, 97, 140, 0.08);
+}
+
+[data-md-color-scheme="slate"] .listen-toggle:hover {
+  background: rgba(90, 163, 199, 0.12);
+}
+
+.listen-toggle.is-playing {
+  background: rgba(7, 97, 140, 0.08);
+}
+
+[data-md-color-scheme="slate"] .listen-toggle.is-playing {
+  background: rgba(90, 163, 199, 0.12);
+}
+
+.listen-toggle:disabled {
+  border-color: var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color--light);
+  background: transparent;
+  cursor: default;
+}
+
+/* The unfolded player: one quiet ruled panel under the meta line. */
+.md-typeset .listen-panel {
+  max-width: 30rem;
+  margin: 0.1rem 0 1.2rem;
+  padding: 0.35rem 0.7rem 0.5rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.4rem;
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .listen-panel .listen-progress {
+  flex-wrap: wrap;
+  gap: 0.2rem 0.75rem;
+  max-width: none;
+  margin-top: 0;
+}
+
+.listen-speed-field {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 0.35rem;
+  margin-left: auto;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.listen-speed {
+  min-height: 1.6rem;
+  padding: 0 0.3rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 0.25rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+
+.md-typeset .listen-panel .listen-note {
+  display: block;
+  margin-top: 0.3rem;
+  line-height: 1.45;
 }
 
 .listen-row {
@@ -145,12 +261,16 @@
    the line wraps on a phone, that dot started the second line. Here each
    dot sits in its item's left padding, and the paragraph is shifted left
    by that much and clipped, so a dot at the start of any line is cut off
-   while dots between items stay. */
+   while dots between items stay. The clip reaches past the top, right and
+   bottom edges, so the Listen button's focus ring is never cut. */
 .md-typeset p.learn-meta {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  row-gap: 0.2rem;
   margin-left: -0.9rem;
-  clip-path: inset(0 0 0 0.9rem);
+  clip-path: polygon(0.9rem -0.5rem, calc(100% + 0.5rem) -0.5rem,
+                     calc(100% + 0.5rem) calc(100% + 0.5rem), 0.9rem calc(100% + 0.5rem));
 }
 
 .md-typeset p.learn-meta > .meta-chip {
@@ -161,17 +281,32 @@
 .md-typeset p.learn-meta > .meta-chip::before {
   content: "\00b7";
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   width: 0.9rem;
   margin: 0;
   text-align: center;
+  line-height: 1;
   color: var(--md-default-fg-color--light);
+  transform: translateY(-50%);
 }
 
-/* --- Module head: "Module N of 7" ----------------------------------------- */
+/* --- Module head: "Module N of 7" -----------------------------------------
+   Title, strip, meta line (with Listen), then straight into the module:
+   the first section heading sits 1.2rem under the head rather than
+   Material's 2rem, so "What you will be able to do" is on the first
+   screen of a phone with its first objective. */
 body[data-page-type="lesson"] .md-typeset h1 {
   margin-bottom: 0.7rem;
+}
+
+body[data-page-type="lesson"] .md-typeset p.learn-meta {
+  margin-top: 0.6rem;
+}
+
+body[data-page-type="lesson"] .md-typeset p.learn-meta + h2,
+body[data-page-type="lesson"] .md-typeset p.learn-meta + .listen + h2 {
+  margin-top: 1.2rem;
 }
 
 .md-typeset .learn-progress {

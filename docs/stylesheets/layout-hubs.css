@@ -26,6 +26,28 @@
   --hubs-step-bg: rgba(90, 163, 199, 0.2);
 }
 
+/* --- The hubs' opening (2026-09-26) -----------------------------------------
+   Title, one short paragraph, search, then the task cards (on phones, the
+   job picker first). The title's 40px gap and the meta line that repeated
+   the title's audience are gone, so the cards start about 120px higher on
+   a phone and 125px higher at 1440. The paragraph's last link jumps to
+   the fuller section further down, and says so with an arrow. */
+body[data-page-type="door"] .md-typeset:has(.hub-cards) > h1 {
+  margin-bottom: 0.6rem;
+}
+
+.md-typeset p.hub-lede {
+  max-width: 40rem;
+  margin: 0 0 0.2rem;
+}
+
+.md-typeset p.hub-lede > a[href^="#"]:last-child::after {
+  content: "\2193";
+  content: "\2193" / "";
+  display: inline-block;
+  margin-left: 0.25em;
+}
+
 /* --- Search field on the hubs (L10, L12) ------------------------------------
    A real field, not a picture of one. It is a plain GET form with q=:
    Material opens its own search, already filled in, when a page loads
@@ -34,7 +56,7 @@
 .md-typeset .hub-search {
   position: relative;
   max-width: 40rem;
-  margin: 1.2rem 0 1rem;
+  margin: 0.8rem 0 0.9rem;
 }
 
 .md-typeset .hub-search__input {
@@ -95,7 +117,7 @@
 @media screen and (max-width: 44.9375em) {
   .md-typeset .hub-jobs {
     display: block;
-    margin: 0 0 1rem;
+    margin: 0 0 0.9rem;
   }
   [dir] .md-typeset .hub-jobs ul {
     display: grid;
@@ -307,7 +329,35 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
 
 /* --- Governance landing (L21) ---------------------------------------------
    Whole-card links. A second link inside a card (Committee Work's polls
-   link) sits above the card's stretched link so both can be reached. */
+   link) sits above the card's stretched link so both can be reached.
+   Each card is a destination, so its title is the site's blue link with a
+   chevron at the right, the same card-link treatment as the home page's
+   cards (2026-09-26); a black title read as an information box. */
+.md-typeset .gov-cards > ul > li:has(a.card-link) {
+  padding-right: 2.2rem;
+}
+
+/* (0,5,4): layout.css's `.md-typeset .grid.cards a.card-link` sets the
+   colour to inherit at (0,4,1). */
+.md-typeset .grid.cards.gov-cards > ul > li > h2 a.card-link {
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .gov-cards > ul > li:has(a.card-link)::after {
+  content: "\203a";
+  position: absolute;
+  top: 0.68rem;
+  right: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--md-typeset-a-color);
+  pointer-events: none;
+}
+
+.md-typeset .gov-cards > ul > li:has(a.card-link:hover) h2 a.card-link {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
 
 /* The outline button takes Material's primary colour, which measured
    2.37:1 on the dark background. Scoped to this page's action slot; the

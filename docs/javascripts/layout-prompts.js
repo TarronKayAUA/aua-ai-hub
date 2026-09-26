@@ -11,7 +11,8 @@
  * 2. Save. A small toggle keeps a list of prompt ids in this browser's
  *    localStorage and nowhere else ("on this device"); the library's Saved
  *    filter (prompt-chooser.js) reads the same list through
- *    window.AUAPromptSaves. Storage can be missing or throw (private
+ *    window.AUAPromptSaves. The first save in a browser explains that once,
+ *    in a note under the row. Storage can be missing or throw (private
  *    windows, blocked site data, previews), so every access is wrapped and
  *    the Save controls stay hidden when it does not work.
  * 3. Prompt pages. The prompt text folds after about 24rem behind "Show the
@@ -243,12 +244,72 @@
     paintSave(button);
   }
 
+  /* The first save explains, once, where saved prompts live: a note under
+     the row (or under a prompt page's buttons) until OK is pressed. Once
+     shown it is not shown again in this browser. */
+  var TOLD_KEY = "aua-hub:saved-prompts-told";
+  var TIP_LEAD = "Saved on this device only.";
+  var TIP_REST = "Your saved prompts stay in this browser: they are not sent anywhere, " +
+    "and they do not follow you to another browser or device. The Prompt Library's " +
+    "Saved filter lists them.";
+  var TIP_TEXT = TIP_LEAD + " " + TIP_REST;
+
+  function told() {
+    try {
+      return window.localStorage.getItem(TOLD_KEY) === "1";
+    } catch (err) {
+      return true;
+    }
+  }
+
+  function explainOnce(button) {
+    if (told()) return false;
+    try {
+      window.localStorage.setItem(TOLD_KEY, "1");
+    } catch (err) {
+      return false;
+    }
+    var tip = document.createElement("div");
+    tip.className = "pl-save-tip";
+    tip.setAttribute("role", "note");
+    var text = document.createElement("p");
+    text.className = "pl-save-tip__text";
+    var lead = document.createElement("strong");
+    lead.textContent = TIP_LEAD;
+    text.appendChild(lead);
+    text.appendChild(document.createTextNode(" " + TIP_REST));
+    var ok = document.createElement("button");
+    ok.type = "button";
+    ok.className = "pl-save-tip__ok";
+    ok.textContent = "OK";
+    ok.addEventListener("click", function () {
+      tip.parentNode.removeChild(tip);
+      button.focus();
+    });
+    tip.appendChild(text);
+    tip.appendChild(ok);
+    var row = button.closest(".pl-row");
+    var actions = button.closest(".pp-actions");
+    if (row) {
+      row.appendChild(tip);
+    } else if (actions) {
+      actions.parentNode.insertBefore(tip, actions.nextSibling);
+    } else {
+      button.parentNode.insertBefore(tip, button.nextSibling);
+    }
+    return true;
+  }
+
   function toggleSave(button) {
     var id = button.getAttribute("data-save");
     var title = button.getAttribute("data-title") || "This prompt";
     var now = saves.toggle(id);
     if (now === null) {
       announce("This browser is not keeping saved prompts, so nothing was saved.");
+      return;
+    }
+    if (now && explainOnce(button)) {
+      announce(title + " saved. " + TIP_TEXT);
       return;
     }
     announce(now ? title + " saved on this device. The Prompt Library's Saved filter lists it."

@@ -6,9 +6,8 @@ hide:
 
 # For Students
 
-<span class="meta-chip">For medical students</span> <span class="meta-note">Organized by where you are</span>
-
-Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use Policy](governance/policy.md) encourages AI use where it helps you do your work. For graded work, your syllabus sets the rules, and if it says nothing, ask your instructor. What stays out of AI tools, and why, is [below](#the-lines-that-never-move); more short answers are on [Can I Use AI for This?](governance/can-i.md)
+Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use Policy](governance/policy.md) encourages AI use where it helps you do your work. For graded work, your syllabus sets the rules; if it says nothing, ask your instructor. [What stays out of AI tools, and why](#the-lines-that-never-move)
+{ .hub-lede }
 
 <form class="hub-search" role="search">
 <input class="hub-search__input" type="search" name="q" placeholder="Search guides, tools and prompts" aria-label="Search guides, tools and prompts" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
@@ -82,7 +81,7 @@ The literacy pathway's first three modules are short, plain-language, and writte
 
 ## Can I use AI to study? What stays out {: #the-lines-that-never-move }
 
-The full detail lives in [Module 3: The Policy in Practice](pathway/rules.md) and the [AI Responsible Use Policy](governance/policy.md).
+The full detail lives in [Module 3: The Policy in Practice](pathway/rules.md) and the [AI Responsible Use Policy](governance/policy.md). More short answers, each with its conditions, are on [Can I Use AI for This?](governance/can-i.md), a draft for AI Committee comment.
 
 - Patient information, including a name, an identifiable case detail, or a photo of a chart, stays out of public AI tools under the policy unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data. Stripped to a teaching abstraction, a case is fine to practice with; see [On rotations](#on-the-wards).
 - NBME and question-bank items are licensed third-party content, and the policy does not allow licensed material into an AI tool without a review, because the license may not permit it. Build practice from your own slides and notes instead; your in-house exams are written from them.

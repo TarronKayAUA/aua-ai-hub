@@ -29,10 +29,13 @@
 /* --- Tabs at every width (L1) -------------------------------------------
    Material hides the tab bar below 76.25em, so phones, tablets and a
    laptop at 125% scaling never saw the site's structure. The bar now
-   shows at every width as one scrolling strip, fading at the right edge
-   when it overflows. On phones the whole header tucks away while reading
-   and returns on scroll up (Material's header.autohide), and stays put
-   from 60em up. */
+   shows at every width as one scrolling strip. On phones the whole header
+   tucks away while reading and returns on scroll up (Material's
+   header.autohide), and stays put from 60em up.
+   When the strip overflows, each edge with tabs beyond it fades and
+   carries a chevron button that scrolls the strip (layout.js adds them
+   and the .hub-tabs--more-* classes, 2026-09-26). Without JavaScript the
+   right edge simply fades. */
 .md-tabs__link {
   font-size: 0.75rem;
   opacity: 0.9;
@@ -53,6 +56,81 @@
   .md-tabs__link {
     margin-top: 0.62rem;
   }
+  /* A chevron or a swipe comes to rest with a whole tab at the left edge,
+     clear of the chevron, rather than a fragment of one. */
+  .hub-tabs .md-tabs__list {
+    -webkit-mask-image: none;
+    mask-image: none;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 2rem;
+  }
+  .hub-tabs .md-tabs__item {
+    scroll-snap-align: start;
+  }
+  .hub-tabs.hub-tabs--more-next .md-tabs__list {
+    -webkit-mask-image: linear-gradient(to left, transparent 1rem, #000 3.2rem);
+    mask-image: linear-gradient(to left, transparent 1rem, #000 3.2rem);
+  }
+  .hub-tabs.hub-tabs--more-prev .md-tabs__list {
+    -webkit-mask-image: linear-gradient(to right, transparent 1rem, #000 3.2rem);
+    mask-image: linear-gradient(to right, transparent 1rem, #000 3.2rem);
+  }
+  .hub-tabs.hub-tabs--more-prev.hub-tabs--more-next .md-tabs__list {
+    -webkit-mask-image: linear-gradient(to right, transparent 1rem, #000 3.2rem,
+                                        #000 calc(100% - 3.2rem), transparent calc(100% - 1rem));
+    mask-image: linear-gradient(to right, transparent 1rem, #000 3.2rem,
+                                #000 calc(100% - 3.2rem), transparent calc(100% - 1rem));
+  }
+}
+
+/* The chevrons: 36px wide and the strip's full 44px height, white on the
+   header blue (6.8:1 in both schemes), over the faded edge. */
+.hub-tabs {
+  position: relative;
+}
+
+.hub-tabs-more {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--md-primary-bg-color);
+  cursor: pointer;
+}
+
+.hub-tabs-more[hidden] {
+  display: none;
+}
+
+.hub-tabs-more--prev {
+  left: 0;
+}
+
+.hub-tabs-more--next {
+  right: 0;
+}
+
+.hub-tabs-more svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: currentColor;
+}
+
+.hub-tabs-more:hover svg {
+  transform: scale(1.12);
+}
+
+.hub-tabs-more:focus-visible {
+  outline: 2px solid var(--md-primary-bg-color);
+  outline-offset: -3px;
 }
 
 @media screen and (min-width: 60em) {
