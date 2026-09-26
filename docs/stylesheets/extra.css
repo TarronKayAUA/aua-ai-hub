@@ -338,6 +338,13 @@
   .md-typeset .grid.cards.hp-cards {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* For Students has four cards, which auto-fit laid out as 3 + 1 with
+     Residency alone on a row (navigation redesign, 2026-09-25). Two
+     columns make two full rows. */
+  .md-typeset .grid.cards.two-up {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* === News cards =========================================================== */
