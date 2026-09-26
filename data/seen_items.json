@@ -1,95 +1,6 @@
 {
  "items": [
   {
-   "url": "https://medinform.jmir.org/2026/1/e88734",
-   "title_hash": "85b19afb0bad5f69997a6db6c425770e",
-   "first_seen": "2026-07-28T21:32:58.391287+00:00",
-   "kept": true,
-   "title": "Propagation of Interpreter Errors by Ambient AI Scribes: Study Using Simulated Clinical Encounters",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-28T20:45:10+00:00",
-   "summary": "Ambient AI scribes propagated interpreter errors into clinical notes during simulated multilingual encounters, with error patterns varying by speaker role and error type.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical documentation"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/despite-ai-hype-googles-data-shows-workers-arent-automating-themselves-away",
-   "title_hash": "0aae24877635456891182d296b3ef4ad",
-   "first_seen": "2026-07-28T21:32:58.391287+00:00",
-   "kept": true,
-   "title": "Despite AI hype, Google's data shows workers aren't automating themselves away",
-   "source": "Ars Technica AI",
-   "published": "2026-07-28T20:20:20+00:00",
-   "summary": "Analysis of 15 million real AI interactions shows most tasks at most jobs remain unaffected by automation.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/07/GettyImages-1711353151-500x500.jpg",
-   "topic": "Industry and policy"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta",
-   "title_hash": "cedc245bdba4d70d89662bd8cb627621",
-   "first_seen": "2026-07-28T21:32:58.391287+00:00",
-   "kept": true,
-   "title": "AI leaders sign statement asking the government to do something about automated AI",
-   "source": "The Verge AI",
-   "published": "2026-07-28T19:46:43+00:00",
-   "summary": "Employees from major AI labs including OpenAI, Anthropic, and Google sign statement supporting government coordination on frontier AI development governance.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25362061/STK_414_AI_CHATBOT_R2_CVirginia_D.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/972119/ai-stock-fall-google-capex",
-   "title_hash": "cace06f10639e5849c7fcb01b2425d9a",
-   "first_seen": "2026-07-28T21:32:58.391287+00:00",
-   "kept": false,
-   "reason": "vendor marketing and earnings gossip without substantive content for medical educators"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e103543",
-   "title_hash": "3f25bc9d10af772942b7aff78db33d24",
-   "first_seen": "2026-07-28T21:32:58.391287+00:00",
-   "kept": false,
-   "reason": "narrow domain application without AI relevance"
-  },
-  {
-   "url": "https://icenet.blog/2026/07/28/simulation-case-based-point-of-care-ultrasound-competency-assessment-in-senior-emergency-medicine-residents",
-   "title_hash": "ad62cdecd0dcab95c604dcde4f3667ac",
-   "first_seen": "2026-07-28T21:32:58.391287+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; medical education in simulation without artificial intelligence focus"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03037-y",
-   "title_hash": "41d83cbf4d6eaed2a4bd13242a57204e",
-   "first_seen": "2026-07-28T21:32:58.391287+00:00",
-   "kept": true,
-   "title": "AI assistance for fetal ultrasound interpretation in a multi-reader study",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-28T00:00:00+00:00",
-   "summary": "Multi-reader study evaluates AI assistance for fetal ultrasound interpretation, examining model performance across different clinical readers.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://huggingface.co/blog/agent-intrusion-technical-timeline",
-   "title_hash": "0d915c879c809cf49a7a516b04c89236",
-   "first_seen": "2026-07-28T21:32:58.391287+00:00",
-   "kept": false,
-   "reason": "security incident reporting without clear relevance to medical educators or students"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Big-Tech-Unites-for-Open-Source-AIand-Against-Anthropic-e3mm0ks",
-   "title_hash": "a2586535617573524268a7ada6e4da53",
-   "first_seen": "2026-07-28T21:32:58.391287+00:00",
-   "kept": false,
-   "reason": "daily news recap with industry and policy focus; no substantive content on AI in medicine, education, or clinical practice"
-  },
-  {
    "url": "https://simonwillison.net/2026/Jul/28/akshat-bubna",
    "title_hash": "ca30b4d36a738349e32cb90753bd0e0e",
    "first_seen": "2026-07-29T03:42:53.486417+00:00",
@@ -33203,6 +33114,67 @@
    "first_seen": "2026-09-26T19:14:06.310103+00:00",
    "kept": false,
    "reason": "drama coverage and unverified speculation about alignment failure"
+  },
+  {
+   "url": "https://github.com/reladraw/reladraw",
+   "title_hash": "eda9493661435c73440e73afadb13e0c",
+   "first_seen": "2026-09-26T22:54:17.934965+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; a diagramming tool with no medical or educational AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03312-y",
+   "title_hash": "c7335b02f83fb895b02b6dd0e17802bf",
+   "first_seen": "2026-09-26T22:54:17.934965+00:00",
+   "kept": false,
+   "reason": "narrow application study without significant AI methodology or educational insight for the audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03276-z",
+   "title_hash": "c0af49400fc7aece3a8850a89f437571",
+   "first_seen": "2026-09-26T22:54:17.934965+00:00",
+   "kept": true,
+   "title": "Quantifying the plausibility gap in generative AI for surgical video generation with expert assessment",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-26T00:00:00+00:00",
+   "summary": "Expert assessment quantifies the gap between plausible and realistic surgical video generation from generative AI models.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03283-0",
+   "title_hash": "a3ff42f65a9e408cf788072ac43d18e5",
+   "first_seen": "2026-09-26T22:54:17.934965+00:00",
+   "kept": false,
+   "reason": "clinical scoring tool development without substantial AI or digital health innovation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03309-7",
+   "title_hash": "a0ba6daec181fef8ed17ded50ec5bb84",
+   "first_seen": "2026-09-26T22:54:17.934965+00:00",
+   "kept": true,
+   "title": "Large language model, assisted preoperative communication reduces patient anxiety and physician workload in prostate cancer: a prospective randomized phase II trial",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-26T00:00:00+00:00",
+   "summary": "Randomized trial shows large language model assisted preoperative communication for prostate cancer reduces patient anxiety and physician workload.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03295-w",
+   "title_hash": "dd4eadb2a4f4dfc0eb25cb5158ffba0f",
+   "first_seen": "2026-09-26T22:54:17.934965+00:00",
+   "kept": false,
+   "reason": "review or overview article on digital twin applications without peer-reviewed evidence of specific advances"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wmm89l/huawei_shelves_global_ai_chip_rollout_as_chinas",
+   "title_hash": "2b202762489b9cc2bec3bc1e95136070",
+   "first_seen": "2026-09-26T22:54:17.934965+00:00",
+   "kept": false,
+   "reason": "industry gossip and supply-chain news without direct relevance to medical education or clinical deployment"
   }
  ],
  "digests": [
