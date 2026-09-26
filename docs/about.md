@@ -4,11 +4,17 @@ last_reviewed: 2026-09-01
 
 # About
 
-## Purpose
+## Contact {: #contact }
 
-The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty, staff, and students of the American University of Antigua College of Medicine (AUACOM). It is maintained by the Associate Dean of AI in Medical Education, who also chairs the institution's AI Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
+Questions, corrections, tool suggestions, private prompt contributions, conference submissions, and anything not suited to a public comment: contact Dr. Tarron Kayalackakom, Associate Dean of AI in Medical Education, American University of Antigua College of Medicine (AUACOM), at [tkayalackakom@auamed.net](mailto:tkayalackakom@auamed.net).
 
-## How content is selected
+For general feedback about the site, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) takes about two minutes and routes to the same place.
+
+## Purpose {: #purpose }
+
+The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty, staff, and students of AUACOM. It is maintained by the Associate Dean of AI in Medical Education, who also chairs the institution's AI Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
+
+## How content is selected {: #how-content-is-selected }
 
 Most of this site is written and reviewed by people; the News, Videos, and Podcasts sections and the LiveBench table on the Benchmarks page are produced by an automated pipeline that runs several times a day. Here is exactly what it does:
 
@@ -83,7 +89,7 @@ This site is informational. Summaries of news, videos, and podcasts are machine-
 </div>
 </div>
 
-## Comments and feedback
+## Comments and feedback {: #comments-and-feedback }
 
 The site's [accessibility statement](accessibility.md) describes what has been checked, what is known to be imperfect, and how to report a barrier.
 
@@ -92,9 +98,3 @@ The fastest way to tell us what works, what does not, and what to fix: the [feed
 News, video, podcast, and digest pages also carry a comments section where you can discuss items and react to them, and the [Prompt Exchange](prompts/exchange.md) accepts community prompt contributions with public voting. Both run on the site's [GitHub Discussions board](https://github.com/TarronKayAUA/aua-ai-hub/discussions) and require a free [GitHub account](https://github.com/signup) to post.
 
 **Community standards.** Comments and posts are public, so leave out patient details, student records, and exam content, which are not yours to publish. Discussion is moderated to keep it professional.
-
-## Contact
-
-Questions, corrections, tool suggestions, private prompt contributions, conference submissions, and anything not suited to a public comment: contact Dr. Tarron Kayalackakom, Associate Dean of AI in Medical Education, AUACOM, at [tkayalackakom@auamed.net](mailto:tkayalackakom@auamed.net).
-
-For general feedback about the site, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) takes about two minutes and routes to the same place.

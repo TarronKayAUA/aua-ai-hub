@@ -10,41 +10,58 @@ hide:
 
 Pick your task: each step-by-step guide walks one job end to end, with the checking built in. Artificial intelligence (AI) can take real work off your desk; it can also fabricate a citation in the same confident tone, which is why the checking is part of every guide.
 
-<div class="grid cards" markdown>
+<form class="hub-search" role="search">
+<input class="hub-search__input" type="search" name="q" placeholder="Search guides, tools and prompts" aria-label="Search guides, tools and prompts" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
+<button class="hub-search__go" type="submit" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg></button>
+</form>
 
-- :material-school:{ .lg .middle } __Teaching__
+<nav class="hub-jobs" aria-label="Jump to a card" markdown>
 
-    ---
+- [:material-school: Teaching](#teaching)
+- [:material-flask: Research](#research)
+- [:material-briefcase: Staff and administration](#staff-and-administration)
 
-    - [Preparing a Lecture](playbooks/lecture-prep.md): objectives to a session plan
-    - [Writing and Vetting Exam Questions](playbooks/exam-items.md): multiple-choice questions (MCQs), drafted and flaw-checked
-    - [Your Syllabus AI Statement](playbooks/syllabus-statement.md): templates for what students may use
-    - [Feedback on Student Writing](playbooks/writing-feedback.md): rubric-grounded comments you send as your own
-    - [Suspected AI use and detectors](basics/misconceptions.md#ai-detectors-can-reliably-catch-ai-generated-writing): what a detector flag does and does not show
-    - [AI-Generated Images in Teaching](playbooks/ai-images.md): figures, and why generated anatomy misleads
+</nav>
 
-- :material-flask:{ .lg .middle } __Research__
+<div class="grid cards hub-cards" markdown>
 
-    ---
+-   ## :material-school:{ .lg .middle } Teaching {: #teaching }
 
-    - [Reviewing the Literature](playbooks/literature-reviews.md): from question to appraised evidence
-    - [AI for Research](tools/research.md): tools by stage, and what AUA licenses
-    - [Where to disclose AI use in a manuscript](tools/research.md#judged-by-the-same-rulers)
-    - [Your own drafts and AI tools](pathway/rules.md#the-core-idea)
-    - [Running Models Locally](tools/local.md): AI on your own computer, for privacy
-    - [Module 5: Research and Scholarship](pathway/research.md): integrity, peer review, and participant data
+    - <span class="row-tag">Start here</span> [Preparing a Lecture](playbooks/lecture-prep.md) <span class="row-sub">Objectives to a session plan</span>
+    - [Writing and Vetting Exam Questions](playbooks/exam-items.md) <span class="row-sub">Multiple-choice questions (MCQs), drafted and flaw-checked</span>
+    - [Your Syllabus AI Statement](playbooks/syllabus-statement.md) <span class="row-sub">Templates for what students may use</span>
+    - [Feedback on Student Writing](playbooks/writing-feedback.md) <span class="row-sub">Rubric-grounded comments you send as your own</span>
+    - [Suspected AI use and detectors](basics/misconceptions.md#ai-detectors-can-reliably-catch-ai-generated-writing) <span class="row-sub">What a detector flag does and does not show</span>
+    - [AI-Generated Images in Teaching](playbooks/ai-images.md) <span class="row-sub">Figures, and why generated anatomy misleads</span>
 
-- :material-briefcase:{ .lg .middle } __Staff and administration__
+-   ## :material-flask:{ .lg .middle } Research {: #research }
 
-    ---
+    - <span class="row-tag">Start here</span> [Reviewing the Literature](playbooks/literature-reviews.md) <span class="row-sub">From question to appraised evidence</span>
+    - [AI for Research](tools/research.md) <span class="row-sub">Tools by stage, and what AUA licenses</span>
+    - [Where to disclose AI use in a manuscript](tools/research.md#judged-by-the-same-rulers) <span class="row-sub">Reporting standards and journal rules</span>
+    - [Your own drafts and AI tools](pathway/rules.md#the-core-idea) <span class="row-sub">What stays out, and what is yours to share</span>
+    - [Running Models Locally](tools/local.md) <span class="row-sub">AI on your own computer, for privacy</span>
+    - [Module 5: Research and Scholarship](pathway/research.md) <span class="row-sub">Integrity, peer review, and participant data</span>
 
-    - [Administrative Drafting](playbooks/admin-drafting.md): memos, minutes, and reports
-    - [What can go into an AI tool](#the-lines-that-never-move): personnel, student, and patient information
-    - [Letters of recommendation](playbooks/residency-application.md#for-faculty-writing-letters)
+-   ## :material-briefcase:{ .lg .middle } Staff and administration {: #staff-and-administration }
+
+    - <span class="row-tag">Start here</span> [Administrative Drafting](playbooks/admin-drafting.md) <span class="row-sub">Memos, minutes, and reports</span>
+    - [What can go into an AI tool](#the-lines-that-never-move) <span class="row-sub">Personnel, student, and patient information</span>
+    - [Letters of recommendation](playbooks/residency-application.md#for-faculty-writing-letters) <span class="row-sub">Drafting with AI while you stay the author</span>
 
 </div>
 
-**Also:** [All step-by-step guides](playbooks/index.md) · [Prompt Library](prompts/index.md) · [Tool Directory](tools/index.md) · [Request a tool review](governance/review-process.md)
+<div class="grid cards hub-also" markdown>
+
+-   ## Also on this site {: #also-on-this-site }
+
+    - [All step-by-step guides](playbooks/index.md)
+    - [Can I use AI for this?](governance/can-i.md)
+    - [Prompt Library](prompts/index.md)
+    - [Tool Directory](tools/index.md)
+    - [Request a tool review](governance/review-process.md)
+
+</div>
 
 ## Start with the basics
 
@@ -52,19 +69,21 @@ The first four modules of the literacy pathway take about 50 minutes and cover t
 
 ## What the policy asks: patient data, student records, personnel files {: #the-lines-that-never-move }
 
-Public tools may keep, learn from, or pass on what you type, so the [AI Responsible Use Policy](governance/policy.md) names four kinds of information that stay out of them unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data: protected health information (PHI); student records covered by the Family Educational Rights and Privacy Act (FERPA), such as grades, evaluations, and identifiable student work; faculty and staff confidential personnel information; and AUA proprietary business information, unpublished research data, or trade secrets. The list is not exhaustive, and in practice it includes research participant data. Your own unpublished drafts are yours to work on in a paid plan with training on your content turned off. Licensed question-bank content is third-party material, and the policy asks for a review before it goes into an AI tool, because its license may not allow that. [Module 3: The Policy in Practice](pathway/rules.md) covers all of it in about ten minutes.
+Public tools may keep, learn from, or pass on what you type, so the [AI Responsible Use Policy](governance/policy.md) names four kinds of information that stay out of them unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data: protected health information (PHI); student records covered by the Family Educational Rights and Privacy Act (FERPA), such as grades, evaluations, and identifiable student work; faculty and staff confidential personnel information; and AUA proprietary business information, unpublished research data, or trade secrets. The list is not exhaustive, and in practice it includes research participant data. Your own unpublished drafts are yours to share; as a practical protection, work on them in a paid plan with training on your content turned off, so your text does not feed future versions of the model. Licensed question-bank content is third-party material, and the policy asks for a review before it goes into an AI tool, because its license may not allow that. [Module 3: The Policy in Practice](pathway/rules.md) covers all of it in about ten minutes, and [Can I Use AI for This?](governance/can-i.md) answers common questions one at a time.
 
 Whatever a tool contributed, the work you sign is yours. Read AI-drafted teaching material as its content expert before students see it: models make confident errors, and students are the readers least placed to catch them.
 
 ## More ways to work
 
-- **Team-based learning (TBL):** the [TBL session builder](prompts/index.md#team-based-learning-session-builder) drafts individual and team readiness tests (iRAT and tRAT) from your pre-work, then two or three application cases.
-- **After an exam:** the [item analysis reader](prompts/index.md#post-exam-item-analysis-reader) reads post-exam statistics from the numbers alone, and [Shelf and NBME Score Reports](playbooks/score-reports.md) helps you advise a student from National Board of Medical Examiners (NBME) INSIGHTS data, with an advisor note.
-- **Slides and posters:** the [slide and poster tools](tools/index.md?task=slides) in the directory.
-- **Stop re-explaining:** a [standing setup](tools/standing-setups.md) keeps one project per course with your materials attached; [Your First Agent Session](tools/first-session.md) covers file-based work.
-- **Documents, decks, and spreadsheets:** four document [skills](tools/skills.md) are already on in claude.ai and Cowork. A skill runs its author's instructions on your files, so prefer ones from sources you know.
-- **A stack of your own documents:** [Gemini Notebook (formerly NotebookLM)](tools/gemini-notebook.md) gives cited answers from your uploads; it is reliable for retrieval and less so for summaries. See also [other tools that work from your documents](tools/index.md?task=own_documents).
-- **Better answers from any tool:** [Getting Better Answers](basics/better-answers.md) covers the three levers: context, memory, and standing instructions.
+??? note "Team-based learning, exam statistics, slides, and more"
+
+    - **Team-based learning (TBL):** the [TBL session builder](prompts/index.md#team-based-learning-session-builder) drafts individual and team readiness tests (iRAT and tRAT) from your pre-work, then two or three application cases.
+    - **After an exam:** the [item analysis reader](prompts/index.md#post-exam-item-analysis-reader) reads post-exam statistics from the numbers alone, and [Shelf and NBME Score Reports](playbooks/score-reports.md) helps you advise a student from National Board of Medical Examiners (NBME) INSIGHTS data, with an advisor note.
+    - **Slides and posters:** the [slide and poster tools](tools/index.md?task=slides) in the directory.
+    - **Stop re-explaining:** a [standing setup](tools/standing-setups.md) keeps one project per course with your materials attached; [Your First Agent Session](tools/first-session.md) covers file-based work.
+    - **Documents, decks, and spreadsheets:** four document [skills](tools/skills.md) are already on in claude.ai and Cowork. A skill runs its author's instructions on your files, so prefer ones from sources you know.
+    - **A stack of your own documents:** [Gemini Notebook (formerly NotebookLM)](tools/gemini-notebook.md) gives cited answers from your uploads; it is reliable for retrieval and less so for summaries. See also [other tools that work from your documents](tools/index.md?task=own_documents).
+    - **Better answers from any tool:** [Getting Better Answers](basics/better-answers.md) covers the three levers: context, memory, and standing instructions.
 
 ## Staying current
 
