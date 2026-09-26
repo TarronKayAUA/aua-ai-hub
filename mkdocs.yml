@@ -12,6 +12,16 @@ copyright: >-
   Maintained by Dr. Tarron Kayalackakom, Associate Dean of AI in Medical
   Education, AUA College of Medicine
 
+# Anchor checking (added 2026-09-25 for the navigation redesign). By default
+# MkDocs checks that a linked page exists but not that the #anchor on it
+# does, so renaming a heading silently broke every link to it. At "warn",
+# --strict turns a missing anchor into a failed build. Raw-HTML links and
+# the prompt library's title-derived card anchors are still unchecked, so
+# prompts are never retitled casually.
+validation:
+  links:
+    anchors: warn
+
 extra:
   # Footer links, rendered by overrides/partials/copyright.html and NOT by
   # the copyright string above. They used to be raw HTML inside that string,
