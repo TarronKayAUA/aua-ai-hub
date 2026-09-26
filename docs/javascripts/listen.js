@@ -1,29 +1,38 @@
-/* Narration player: one compact Listen row (layout redesign, 2026-09-25;
-   first version with six speed pills, 2026-09-02).
+/* Narration player (layout redesign, 2026-09-25; compact form for pages,
+   2026-09-26; first version with six speed pills, 2026-09-02).
 
    scripts/render_data.py injects a native <audio controls> element, and
-   the AI-voice note, wherever a generated MP3 exists: under the head of a
-   narrated page, and inside each news brief. This script turns each one
-   into a row of two buttons:
+   the AI-voice note, wherever a generated MP3 exists: under the head meta
+   line of a narrated page, and inside each news brief. This script turns
+   each one into buttons, in one of two forms.
 
-     [> Listen to this module]  [Speed 1x]
+   A page or module (the player sits right after the head meta line):
+   audio is a utility, not the page's first action, so one small Listen
+   button joins the end of the meta line, beside the minutes:
 
-   Listen is an outline button, never the page's filled primary: it is one
-   way to take in the page, not the thing everyone should do first. It
-   becomes Pause while playing and Resume after a pause. Speed cycles 1x,
-   1.25x, 1.5x and 2x, announces the new speed to screen readers, applies
-   to every player on the page, and is remembered across pages in
-   localStorage (wrapped in try/catch: a private window simply forgets).
-   Once playback starts, a position slider and the elapsed and total time
-   appear under the row, so a listener can go back without a menu.
+     For everyone · About 10 minutes · [> Listen]
 
-   Browsers preserve pitch by default. A speed saved before 2026-09-25
-   (2.5x or 3x) keeps working until the listener presses Speed, which
-   then starts the cycle again at 1x.
+   Pressing it starts the recording and opens the player under the line:
+   a position slider, the elapsed and total time, a Speed menu, and the
+   AI-voice note. Until then the page shows nothing else for audio, so the
+   module's own text starts right under its title. Listen becomes Pause
+   while playing and Resume after a pause; its description is the note, so
+   a screen reader hears the disclosure before the recording starts.
+
+   A news brief keeps its row of two buttons inside the brief, with the
+   note under them: [> Listen]  [Speed 1x]. There, Speed cycles 1x, 1.25x,
+   1.5x and 2x and announces the new speed to screen readers.
+
+   Either way the speed applies to every player on the page and is
+   remembered across pages in localStorage (wrapped in try/catch: a
+   private window simply forgets). Browsers preserve pitch by default. A
+   speed saved before 2026-09-25 (2.5x or 3x) keeps working: the menu
+   offers it, and the cycling button starts again at 1x when pressed.
 
    Progressive enhancement: without JavaScript, or if this script fails,
-   the native player stays exactly as injected. The note stays visible in
-   every case, because Speechify's terms require that disclosure. */
+   the native player and the note stay exactly as injected. The note is
+   always shown with the controls that play the recording, because
+   Speechify's terms require that disclosure. */
 (function () {
   "use strict";
 
@@ -97,19 +106,49 @@
     if (hidden) btn.appendChild(el("span", "listen-sr", hidden));
   }
 
+  /* The Speed menu offers the cycle's speeds, plus a legacy saved speed
+     (2.5x or 3x) when that is what this browser remembers. */
+  function fillSpeeds(select, rate) {
+    var list = CYCLE.slice();
+    if (list.indexOf(rate) < 0) list.push(rate);
+    if (select.options.length !== list.length) {
+      select.textContent = "";
+      list.forEach(function (r) {
+        var opt = el("option", null, rateText(r));
+        opt.value = String(r);
+        select.appendChild(opt);
+      });
+    }
+    select.value = String(rate);
+  }
+
   function applyRate(rate) {
     players.forEach(function (p) {
       p.audio.preservesPitch = true;
       p.audio.playbackRate = rate;
-      setLabel(p.rate, null, "Speed " + rateText(rate));
+      if (p.rate) setLabel(p.rate, null, "Speed " + rateText(rate));
+      if (p.speed) fillSpeeds(p.speed, rate);
     });
   }
+
+  /* The head meta line a page's player sits under, if it has one. */
+  function metaLine(box) {
+    var prev = box.previousElementSibling;
+    return prev && prev.tagName === "P" && prev.querySelector(".meta-chip") ? prev : null;
+  }
+
+  var uid = 0;
 
   function enhance(box) {
     var audio = box.querySelector("audio");
     if (!audio || box.hasAttribute("data-listen-ready")) return;
     box.setAttribute("data-listen-ready", "");
     var kind = box.getAttribute("data-listen") || (box.closest(".section-brief") ? "brief" : "page");
+    var meta = kind === "brief" ? null : metaLine(box);
+    if (meta) {
+      enhanceCompact(box, audio, kind, meta);
+      return;
+    }
     var idle = kind === "module" ? "Listen to this module"
       : kind === "brief" ? "Listen to this brief" : "Listen to this page";
     /* Several briefs share a page, and each sits in a narrow box, so a
@@ -134,8 +173,89 @@
     row.appendChild(play);
     row.appendChild(rate);
 
+    var bar = seekBar(of);
+    bar.progress.hidden = true;
+
+    var live = el("span", "listen-sr");
+    live.setAttribute("aria-live", "polite");
+
+    var note = box.querySelector(".listen-note");
+    box.insertBefore(row, note || null);
+    box.insertBefore(bar.progress, note || null);
+    box.appendChild(live);
+    audio.removeAttribute("controls");
+
+    players.push({ audio: audio, play: play, rate: rate });
+
+    rate.addEventListener("click", function () {
+      var r = nextRate(savedRate());
+      saveRate(r);
+      applyRate(r);
+      live.textContent = "";
+      window.setTimeout(function () {
+        live.textContent = r === 1 ? "Normal speed" : "Speed " + String(r) + " times";
+      }, 50);
+    });
+
+    wire({ audio: audio, play: play, seek: bar.seek, time: bar.time, reveal: bar.progress,
+           idle: idle, to: to, of: of });
+  }
+
+  /* A page or module: Listen at the end of the head meta line, and the
+     player (slider, time, Speed menu and the note) folded under the line
+     until the recording is started. */
+  function enhanceCompact(box, audio, kind, meta) {
+    var n = ++uid;
+    var what = kind === "module" ? "module" : "page";
+    var note = box.querySelector(".listen-note");
+    if (note && !note.id) note.id = "listen-note-" + n;
+
+    var chip = el("span", "meta-chip meta-listen");
+    var play = el("button", "listen-toggle");
+    play.type = "button";
+    if (note) play.setAttribute("aria-describedby", note.id);
+    chip.appendChild(play);
+    meta.appendChild(chip);
+
+    var panel = el("div", "listen-panel");
+    panel.id = "listen-panel-" + n;
+    panel.hidden = true;
+    panel.setAttribute("role", "group");
+    panel.setAttribute("aria-label", "Recording of this " + what);
+    play.setAttribute("aria-controls", panel.id);
+
+    var bar = seekBar("");
+    var speedField = el("span", "listen-speed-field");
+    var speedLabel = el("label", "listen-speed-label", "Speed");
+    var speed = el("select", "listen-speed");
+    speed.id = "listen-speed-" + n;
+    speedLabel.htmlFor = speed.id;
+    speedField.appendChild(speedLabel);
+    speedField.appendChild(speed);
+    bar.progress.appendChild(speedField);
+    panel.appendChild(bar.progress);
+    if (note) panel.appendChild(note);
+    box.classList.add("listen--compact");
+    box.appendChild(panel);
+    audio.removeAttribute("controls");
+
+    players.push({ audio: audio, play: play, speed: speed });
+    fillSpeeds(speed, savedRate());
+
+    speed.addEventListener("change", function () {
+      var r = parseFloat(speed.value);
+      if (KNOWN.indexOf(r) < 0) return;
+      saveRate(r);
+      applyRate(r);
+    });
+
+    wire({ audio: audio, play: play, seek: bar.seek, time: bar.time, reveal: panel,
+           idle: "Listen", to: " to this " + what, of: "" });
+  }
+
+  /* The position slider and the elapsed / total time. */
+  function seekBar(of) {
     var progress = el("div", "listen-progress");
-    progress.hidden = true;
     var seek = el("input", "listen-seek");
     seek.type = "range";
     seek.min = "0";
@@ -148,18 +268,20 @@
     time.textContent = "0:00";
     progress.appendChild(seek);
     progress.appendChild(time);
+    return { progress: progress, seek: seek, time: time };
+  }
 
-    var live = el("span", "listen-sr");
-    live.setAttribute("aria-live", "polite");
-
-    var note = box.querySelector(".listen-note");
-    box.insertBefore(row, note || null);
-    box.insertBefore(progress, note || null);
-    box.appendChild(live);
-    audio.removeAttribute("controls");
-
-    var player = { audio: audio, play: play, rate: rate };
-    players.push(player);
+  /* Play, pause, the slider and the time, shared by both forms. `reveal`
+     is what appears once playback starts: the slider row in a brief, the
+     whole player on a page. */
+  function wire(p) {
+    var audio = p.audio;
+    var play = p.play;
+    var seek = p.seek;
+    var time = p.time;
+    var idle = p.idle;
+    var to = p.to;
+    var of = p.of;
 
     function showState() {
       if (play.disabled) return;
@@ -204,16 +326,6 @@
       }
     });
 
-    rate.addEventListener("click", function () {
-      var r = nextRate(savedRate());
-      saveRate(r);
-      applyRate(r);
-      live.textContent = "";
-      window.setTimeout(function () {
-        live.textContent = r === 1 ? "Normal speed" : "Speed " + String(r) + " times";
-      }, 50);
-    });
-
     seek.addEventListener("input", function () {
       audio.currentTime = parseFloat(seek.value) || 0;
       showTime(true);
@@ -232,7 +344,7 @@
       /* Some browsers reset playbackRate when the source loads; reapply. */
       audio.preservesPitch = true;
       audio.playbackRate = savedRate();
-      progress.hidden = false;
+      p.reveal.hidden = false;
       showState();
     });
     ["pause", "ended", "emptied"].forEach(function (ev) { audio.addEventListener(ev, showState); });
@@ -242,7 +354,7 @@
     audio.addEventListener("error", function () {
       play.disabled = true;
       setLabel(play, "play", "Recording unavailable");
-      progress.hidden = true;
+      p.reveal.hidden = true;
     });
 
     showState();

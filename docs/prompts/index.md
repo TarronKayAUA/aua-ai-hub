@@ -7,7 +7,7 @@ last_reviewed: 2026-09-01
 Ready-made prompts for studying, teaching, and research: copy one and fill in its [BRACKETED] parts, or open it to see how to use it.
 {: .pl-intro }
 
-Draft and Reviewed prompts are both usable: [what the statuses mean](#prompt-statuses) · [What the policy says about what you paste](#what-stays-out)
+Draft and Reviewed prompts are both usable: [what review adds](#prompt-statuses) · [What the policy says about what you paste](#what-stays-out)
 {: .pl-lede-meta }
 
 <!-- render:prompts -->
@@ -36,9 +36,9 @@ Two habits make every prompt here work better: give the model your actual materi
 </details>
 
 <details class="note" id="prompt-statuses" markdown>
-<summary>What Draft and Reviewed mean (you can use both)</summary>
+<summary>Draft and Reviewed: what review adds (you can use both)</summary>
 
-Draft prompts are still being tested and refined. Reviewed prompts have completed that testing; like every review status in this library, the label is provisional until the AI Committee ratifies it.
+Draft prompts are still being tested and refined, so their wording may still change. Reviewed prompts have completed that testing; that is what review adds. Neither label is a promise about what a model gives back, so check the output of either against your own materials and expertise. Like every review status in this library, the label is provisional until the AI Committee ratifies it.
 
 </details>
 

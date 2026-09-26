@@ -401,31 +401,87 @@
   border-style: dashed;
 }
 
+/* Save: secondary to Copy, but plainly a working control (2026-09-26; the
+   grey word read as disabled). The link colour (6.8:1 light, 5.8:1 dark,
+   against 4.6:1 and 4.9:1 as grey), a larger bookmark icon and a 30px
+   target, the height it had, so the list is no longer; saved, the
+   bookmark fills and the button takes a tint. */
 .md-typeset .pl-save {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
   min-height: 1.5rem;
-  padding: 0.1rem 0.45rem;
-  border: 0;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid transparent;
   border-radius: 0.3rem;
   background: none;
-  color: var(--md-default-fg-color--light);
+  color: var(--md-typeset-a-color);
   font: inherit;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 600;
   white-space: nowrap;
   cursor: pointer;
 }
 
+.md-typeset .pl-save .pl-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
 .md-typeset .pl-save:hover {
+  border-color: var(--md-typeset-a-color);
   background: var(--hub-quiet-bg);
   color: var(--md-typeset-a-color);
 }
 
 .md-typeset .pl-save.is-on {
+  background: var(--hub-quiet-bg);
   color: var(--md-typeset-a-color);
   font-weight: 700;
+}
+
+/* Said once, the first time someone saves: where saved prompts live. In a
+   library row it takes a row of its own under the buttons, whichever of
+   the row's areas are empty. */
+.md-typeset .pl-save-tip {
+  grid-column: 1 / -1;
+  grid-row: -1 / span 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.8rem;
+  max-width: 40rem;
+  margin: 0.6rem 0 0.1rem;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid var(--hub-row-rule);
+  border-left: 3px solid var(--md-typeset-a-color);
+  border-radius: 0.3rem;
+  background: var(--hub-quiet-bg);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.md-typeset .pl-save-tip__text {
+  flex: 1 1 16rem;
+  margin: 0;
+}
+
+.md-typeset .pl-save-tip__ok {
+  flex: none;
+  min-height: 1.8rem;
+  padding: 0 0.8rem;
+  border: 1px solid var(--md-typeset-a-color);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.md-typeset .pl-save-tip__ok:hover {
+  background: var(--hub-quiet-bg);
 }
 
 .md-typeset .pl-empty {

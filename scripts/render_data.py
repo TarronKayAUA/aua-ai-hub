@@ -259,6 +259,22 @@ ACCESS_LINES = {
 # set apart from the status tags and says it is not an endorsement.
 START_LABEL = "Where to start"
 START_QUALIFIER = "suggestions, not endorsements"
+# One line under the label saying how the suggestions were chosen, so an
+# editorial pick is not read as a committee review (DRAFT wording for the
+# owner's sign-off, 2026-09-26, restating the rule in data/tool_tasks.yaml:
+# every reason restates the tool's own description or a guide on this
+# site, and none is a quality ranking).
+START_BASIS = ("Each is picked because its description here, or a guide on this "
+               "site, says it fits the task; not a ranking or an AI Committee "
+               "review.")
+
+# What a card's "Checked" date means, said on the first card of each grid
+# (layout-tools.css hides it on the rest): the listing's details were
+# checked, not the tool. The weekly content watch may set the date itself,
+# so it says nothing about who checked (see the tool-card-checked rule in
+# extra.css).
+CHECKED_MEANS = ("the date this listing's details (link, description, and "
+                 "cost) were last checked; not a review of the tool")
 
 TOOL_ACCESS_MARKER = "<!-- render:tool-access -->"
 
@@ -719,6 +735,12 @@ def _render_tool_chooser(config) -> str:
         raise AssertionError(
             f"render_data hook: {len(with_start)} tasks carry start_with but "
             f"{rendered_starts} Where to start notes rendered")
+    rendered_basis = out.count("{ .tt-start-basis }")
+    print(f"  how chosen line : {rendered_basis} of {rendered_starts} notes (DRAFT "
+          f"wording; cross-check {'ok' if rendered_basis == rendered_starts else 'MISMATCH'})")
+    if rendered_basis != rendered_starts:
+        raise AssertionError("render_data hook: a Where to start note is missing "
+                             "the line saying how its suggestions were chosen")
     return out
 
 
@@ -759,7 +781,8 @@ def _start_with_lines(task: dict, group: list[dict]) -> list[str]:
         return []
     by_name = {tool["name"]: tool for tool in group}
     out = ['<div class="tt-start" markdown>', "",
-           f"**{START_LABEL}** ({START_QUALIFIER})", "{ .tt-start-label }", ""]
+           f"**{START_LABEL}** ({START_QUALIFIER})", "{ .tt-start-label }", "",
+           START_BASIS, "{ .tt-start-basis }", ""]
     for item in items:
         tools = [by_name[name] for name in item["tools"]]
         links = [f"[{t['name']}](#{_tool_anchor(t['name'])})" for t in tools]
@@ -843,7 +866,9 @@ def _tool_card(tool: dict, anchor: str) -> tuple[str, bool, str]:
                      f"{ACCESS_LINES[access]}</p>")
     checked = tool.get("last_reviewed")
     if checked:
-        parts.append(f'<p class="tool-card-checked">Checked {_long_date(checked)}</p>')
+        parts.append(f'<p class="tool-card-checked">Checked {_long_date(checked)}'
+                     f'<span class="tool-card-checked__means" data-search-exclude="">: '
+                     f"{CHECKED_MEANS}</span></p>")
     parts.append("</div>")
     return "\n".join(parts), bool(note), access
 
@@ -948,6 +973,14 @@ def _render_tools(config) -> str:
     print(f"  standings       : {standings}")
     print(f"  rendered total  : {rendered} (cross-check ok)")
     print(f"  card headings   : {headings} with a #tool-... id (cross-check ok)")
+    dated = sum(1 for t in tools if t.get("last_reviewed"))
+    means = out.count('class="tool-card-checked__means"')
+    print(f"  checked dates   : {dated} of {len(tools)}, each with its meaning "
+          f"(shown on the first card of a grid; cross-check "
+          f"{'ok' if means == dated else 'MISMATCH'})")
+    if means != dated:
+        raise AssertionError(f"render_data hook: {dated} tools carry a Checked date "
+                             f"but {means} cards say what it means")
     # Cross-check the visible notes against the data rather than trusting the
     # loop: a note that stops rendering is a caution a reader stops seeing.
     expected_notes = sum(

@@ -6,9 +6,8 @@ hide:
 
 # For Faculty & Staff
 
-<span class="meta-chip">For faculty and staff</span> <span class="meta-note">Pick a task</span>
-
-Pick your task: each step-by-step guide walks one job end to end, with the checking built in. Artificial intelligence (AI) can take real work off your desk; it can also fabricate a citation in the same confident tone, which is why the checking is part of every guide.
+Each step-by-step guide walks one job end to end. Artificial intelligence (AI) can take real work off your desk, and it can fabricate a citation in the same confident tone, so the checking is built into every guide.
+{ .hub-lede }
 
 <form class="hub-search" role="search">
 <input class="hub-search__input" type="search" name="q" placeholder="Search guides, tools and prompts" aria-label="Search guides, tools and prompts" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search">
