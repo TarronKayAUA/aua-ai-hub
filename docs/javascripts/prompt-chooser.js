@@ -1,113 +1,137 @@
-/* Prompt library chooser (owner approved 2026-09-23).
+/* Prompt Library chooser (owner approved 2026-09-23; rebuilt on the shared
+   shelf skeleton for the layout redesign, L16, 2026-09-25).
 
-   Same idiom and styles as tools-chooser.js: progressive enhancement over a
-   page that is complete without it. render_data.py marks every prompt
-   heading with data-audience and data-category and leaves a small JSON
-   island of chip labels; this script adds two radio groups ("Who is it
-   for?" and "What do you want to do?") and hides what does not match: rows
-   of the at-a-glance table, prompt blocks (a heading and everything up to
-   the next heading), and category sections left with no prompts. Nothing
-   is removed from the page, so site search, the table of contents and
-   #prompt links are unaffected, and arriving by a #prompt link shows the
-   whole library. Filters combine; counts on each chip follow the other
-   filter, and a chip that would match nothing is disabled rather than
-   leading to an empty page. The choice is kept in the URL (?for=students
-   &task=research) so a filtered view can be shared. */
+   Progressive enhancement over a page that is complete without it:
+   render_data.py prints every prompt as a row (data-prompt, data-audience,
+   data-category) inside its category section, and a JSON island of chip
+   labels and section orders. This script fills the filter column with three
+   groups, "Who is it for?", "What do you want to do?" and "Saved on this
+   device", and hides what does not match. Nothing is removed from the page.
+
+   - From 60em the filters sit in a sticky column beside the results. On
+     phones they fold to one line ("Students · 14 prompts", Change), so the
+     first prompt is on the first screen.
+   - For students, Study comes first, then Residency (PROMPT_AUDIENCE_FIRST
+     in render_data.py). A prompt listed in two sections (also_for) shows
+     once, in the first visible one; counts are of prompts, not rows.
+   - Counts on each option follow the other filters, and an option that
+     would match nothing is disabled rather than leading to an empty list.
+   - The choice is kept in the address (?for=students&task=study_strategy)
+     so a filtered view can be shared; Saved is not, since it lives only in
+     this browser. Arriving by a #prompt or #category link shows the whole
+     library, so the linked row is never hidden. */
 (function () {
   "use strict";
 
   function init() {
     var host = document.getElementById("prompt-chooser");
     var dataEl = document.getElementById("prompt-chooser-data");
-    if (!host || !dataEl) return;
-    var data = JSON.parse(dataEl.textContent);
-    var article = host.closest("article") || document.body;
-
-    /* ---- map the page: each prompt block and each category section ---- */
-    var categoryIds = {};
-    data.categories.forEach(function (c) { categoryIds[c[2]] = c[0]; });
-    var prompts = [];      // {id, audience, category, els: [...]}
-    var sections = {};     // category key -> {els: [...], prompts: [...]}
-    var current = null, currentPrompt = null, inLibrary = false;
-    [].slice.call(article.children).forEach(function (el) {
-      if (el.tagName === "H2") {
-        var key = categoryIds[el.id];
-        currentPrompt = null;
-        if (key) {
-          inLibrary = true;
-          current = sections[key] = { els: [el], prompts: [] };
-        } else {
-          current = null;
-        }
-        return;
+    var shelf = document.getElementById("prompt-shelf");
+    if (!host || !dataEl || !shelf) return;
+    var data;
+    try {
+      data = JSON.parse(dataEl.textContent);
+    } catch (err) {
+      return;
+    }
+    var results = shelf.querySelector(".pl-results");
+    var countEl = document.getElementById("prompt-count");
+    var groups = [].slice.call(shelf.querySelectorAll(".pl-group"));
+    var groupByKey = {};
+    groups.forEach(function (g) { groupByKey[g.getAttribute("data-category")] = g; });
+    var prompts = {};
+    var order = [];
+    [].slice.call(shelf.querySelectorAll(".pl-row")).forEach(function (row) {
+      var id = row.getAttribute("data-prompt");
+      if (!prompts[id]) {
+        prompts[id] = { id: id, audience: row.getAttribute("data-audience"), cats: [], rows: [] };
+        order.push(id);
       }
-      if (!current) return;
-      if (el.tagName === "HR") { current = null; return; }
-      if (el.tagName === "H3" && el.dataset.category) {
-        currentPrompt = { id: el.id, audience: el.dataset.audience,
-                          category: el.dataset.category, els: [el] };
-        prompts.push(currentPrompt);
-        current.prompts.push(currentPrompt);
-        return;
-      }
-      // A category's "Further reading" (a bold paragraph and its list, from
-      // render_data.py) belongs to the section, not to the last prompt.
-      if (el.tagName === "P" && el.textContent.trim() === "Further reading") {
-        currentPrompt = null;
-      }
-      (currentPrompt || current).els.push(el);
+      prompts[id].cats.push(row.getAttribute("data-category"));
+      prompts[id].rows.push(row);
     });
-    if (!inLibrary || !prompts.length) return;
-    var byId = {};
-    prompts.forEach(function (p) { byId[p.id] = p; });
-    var rows = [].slice.call(article.querySelectorAll("table tr")).filter(function (tr) {
-      var a = tr.querySelector("td a[href^='#']");
-      return a && byId[a.getAttribute("href").slice(1)];
-    }).map(function (tr) {
-      return { tr: tr, prompt: byId[tr.querySelector("td a[href^='#']").getAttribute("href").slice(1)] };
-    });
+    if (!order.length) return;
+    var saves = window.AUAPromptSaves || { available: false, list: function () { return []; } };
+    var chips = {};
+    data.categories.forEach(function (c) { chips[c[0]] = c[1]; });
+    var audienceLabel = {};
+    data.audiences.forEach(function (a) { audienceLabel[a[0]] = a[1]; });
+    var anchors = {};
+    data.categories.forEach(function (c) { anchors[c[2]] = true; });
+    var defaultOrder = data.categories.map(function (c) { return c[0]; });
+    var phone = window.matchMedia("(max-width: 59.9375em)");
 
-    /* ---- build the widget --------------------------------------------- */
-    function chip(name, value, label) {
-      var id = "pc-" + name + "-" + value;
-      return '<span class="tc-chip"><input type="radio" name="pc-' + name + '" id="' + id +
-        '" value="' + value + '"><label for="' + id + '">' + label +
-        '<span class="tc-count" aria-hidden="true"></span><span class="tc-sr"></span></label></span>';
+    /* ---- the filter column ------------------------------------------- */
+    function option(type, name, value, label) {
+      var id = "pl-" + name + "-" + (value || "all");
+      return '<label class="pl-option" for="' + id + '"><input type="' + type + '" name="pl-' + name +
+        '" id="' + id + '" value="' + value + '"><span class="pl-option__label">' + label +
+        '</span><span class="pl-option__count" aria-hidden="true"></span><span class="pl-sr"></span></label>';
     }
     host.innerHTML =
-      '<form class="tc-form" action="#" onsubmit="return false">' +
-      '<fieldset class="tc-fieldset"><legend class="tc-legend">Who is it for?</legend>' +
-      '<div class="tc-chips">' + chip("for", "", "Everyone") +
-      data.audiences.map(function (a) { return chip("for", a[0], a[1]); }).join("") +
+      '<form class="pl-form" action="#" onsubmit="return false">' +
+      '<fieldset class="pl-fieldset"><legend>Who is it for?</legend><div class="pl-options">' +
+      option("radio", "for", "", "Everyone") +
+      data.audiences.map(function (a) { return option("radio", "for", a[0], a[1]); }).join("") +
       "</div></fieldset>" +
-      '<fieldset class="tc-fieldset pc-second"><legend class="tc-legend">What do you want to do?</legend>' +
-      '<div class="tc-chips">' + chip("task", "", "Anything") +
-      data.categories.map(function (c) { return chip("task", c[0], c[1]); }).join("") +
-      "</div></fieldset></form>" +
-      '<div class="tc-bar"><p class="tc-status" role="status" aria-live="polite" aria-atomic="true"></p>' +
-      '<button type="button" class="tc-clear" hidden>Show every prompt</button></div>';
+      '<fieldset class="pl-fieldset"><legend>What do you want to do?</legend><div class="pl-options">' +
+      option("radio", "task", "", "Anything") +
+      data.categories.map(function (c) { return option("radio", "task", c[0], c[1]); }).join("") +
+      "</div></fieldset>" +
+      '<fieldset class="pl-fieldset pl-fieldset--saved"' + (saves.available ? "" : " hidden") +
+      "><legend>Saved on this device</legend><div class=\"pl-options\">" +
+      option("checkbox", "saved", "1", "Only my saved prompts") +
+      '</div><p class="pl-hint">Save marks a prompt in this browser only; nothing is sent anywhere.</p></fieldset>' +
+      "</form>" +
+      '<div class="pl-filters__foot">' +
+      '<button type="button" class="pl-clear" hidden>Show all prompts</button>' +
+      '<button type="button" class="md-button md-button--primary pl-done"></button>' +
+      "</div>";
     host.hidden = false;
-    var statusEl = host.querySelector(".tc-status");
-    var clearBtn = host.querySelector(".tc-clear");
-    var state = { "for": "", task: "" };
+    shelf.classList.add("is-ready");
+
+    // Phones: one line that says what is showing, with Change.
+    var summary = document.createElement("div");
+    summary.className = "shelf__summary pl-summary";
+    summary.innerHTML = '<p class="pl-summary__text"></p>' +
+      '<button type="button" class="pl-summary__change" aria-controls="prompt-chooser"></button>';
+    shelf.insertBefore(summary, host);
+    var summaryText = summary.querySelector(".pl-summary__text");
+    var changeBtn = summary.querySelector(".pl-summary__change");
+    var clearBtn = host.querySelector(".pl-clear");
+    var doneBtn = host.querySelector(".pl-done");
+    var empty = document.createElement("p");
+    empty.className = "pl-empty";
+    empty.hidden = true;
+    results.insertBefore(empty, countEl ? countEl.nextSibling : results.firstChild);
+
+    var state = { "for": "", task: "", saved: false };
     var timer = null;
 
-    function matches(p, st) {
+    /* ---- matching ----------------------------------------------------- */
+    function savedSet() {
+      var set = {};
+      saves.list().forEach(function (id) { set[id] = true; });
+      return set;
+    }
+    function matches(p, st, saved) {
       var forOk = !st["for"] || p.audience === st["for"] || p.audience === "both";
-      var taskOk = !st.task || p.category === st.task;
-      return forOk && taskOk;
+      var taskOk = !st.task || p.cats.indexOf(st.task) !== -1;
+      var savedOk = !st.saved || !!saved[p.id];
+      return forOk && taskOk && savedOk;
     }
-    function count(st) {
-      return prompts.filter(function (p) { return matches(p, st); }).length;
+    function count(st, saved) {
+      return order.filter(function (id) { return matches(prompts[id], st, saved); }).length;
     }
-    function labelOf(name, value) {
-      var input = document.getElementById("pc-" + name + "-" + value);
-      return input ? input.nextElementSibling.firstChild.textContent : "";
-    }
-    function announce(text) {
-      clearTimeout(timer);
-      statusEl.textContent = "";
-      timer = setTimeout(function () { statusEl.textContent = text; }, 450);
+    function describe(n, st) {
+      var bits = [];
+      if (st["for"]) bits.push(audienceLabel[st["for"]] || st["for"]);
+      if (st.task) bits.push(chips[st.task] || st.task);
+      if (st.saved) bits.push("Saved");
+      var nice = n + (n === 1 ? " prompt" : " prompts");
+      if (!bits.length) return { html: "All " + nice, text: "All " + nice + "." };
+      return { html: "<strong>" + bits.join(", ") + "</strong> · " + nice,
+               text: "Showing " + nice + ": " + bits.join(", ").toLowerCase() + "." };
     }
     function setURL() {
       if (!window.history || !history.replaceState) return;
@@ -117,73 +141,150 @@
       history.replaceState(null, "", location.pathname + (q.length ? "?" + q.join("&") : "") + location.hash);
     }
 
+    /* ---- applying a choice -------------------------------------------- */
     function apply(opts) {
       opts = opts || {};
-      // Chip counts follow the other filter; a chip that would match nothing
-      // is disabled (and says so to screen readers) instead of emptying the page.
-      host.querySelectorAll("input[type=radio]").forEach(function (input) {
+      var saved = savedSet();
+      // Option counts follow the other filters.
+      host.querySelectorAll("input").forEach(function (input) {
         var name = input.name.slice(3);
-        var trial = { "for": state["for"], task: state.task };
-        trial[name] = input.value;
-        var n = count(trial);
-        var label = input.nextElementSibling;
-        label.querySelector(".tc-count").textContent = n;
-        label.querySelector(".tc-sr").textContent = ", " + n + (n === 1 ? " prompt" : " prompts");
-        input.disabled = n === 0 && input.value !== "";
-        input.checked = state[name] === input.value;
-      });
-      var shown = 0;
-      prompts.forEach(function (p) {
-        var on = matches(p, state);
-        if (on) shown += 1;
-        p.els.forEach(function (el) { el.hidden = !on; });
-      });
-      Object.keys(sections).forEach(function (key) {
-        var any = sections[key].prompts.some(function (p) { return matches(p, state); });
-        sections[key].els.forEach(function (el) { el.hidden = !any; });
-      });
-      rows.forEach(function (r) { r.tr.hidden = !matches(r.prompt, state); });
-      var filtered = !!(state["for"] || state.task);
-      clearBtn.hidden = !filtered;
-      if (opts.announce !== false) {
-        if (!filtered) {
-          announce("Showing all " + prompts.length + " prompts.");
+        var trial = { "for": state["for"], task: state.task, saved: state.saved };
+        trial[name] = name === "saved" ? true : input.value;
+        var n = count(trial, saved);
+        var label = input.parentNode;
+        label.querySelector(".pl-option__count").textContent = n;
+        label.querySelector(".pl-sr").textContent = ", " + n + (n === 1 ? " prompt" : " prompts");
+        if (name === "saved") {
+          input.checked = state.saved;
+          input.disabled = n === 0 && !state.saved;
         } else {
-          var parts = [];
-          if (state.task) parts.push(labelOf("task", state.task).toLowerCase());
-          if (state["for"]) parts.push("for " + labelOf("for", state["for"]).toLowerCase());
-          announce(shown + (shown === 1 ? " prompt" : " prompts") + " shown: " + parts.join(", ") + ".");
+          input.checked = state[name] === input.value;
+          input.disabled = n === 0 && input.value !== "";
         }
-      }
+        label.classList.toggle("is-checked", input.checked);
+        label.classList.toggle("is-disabled", input.disabled);
+      });
+
+      // Section order: an audience's first sections lead (students: Study).
+      var keys = (state["for"] && data.orders[state["for"]]) || defaultOrder;
+      keys.forEach(function (key) {
+        if (groupByKey[key]) results.appendChild(groupByKey[key]);
+      });
+
+      // Each matching prompt shows once, in the first visible section that
+      // holds it (a prompt listed in two sections is not shown twice).
+      var visibleRows = 0;
+      var shownGroups = {};
+      order.forEach(function (id) {
+        var p = prompts[id];
+        var on = matches(p, state, saved);
+        var chosen = null;
+        if (on) {
+          keys.forEach(function (key) {
+            if (chosen || (state.task && key !== state.task)) return;
+            p.rows.forEach(function (row) {
+              if (!chosen && row.getAttribute("data-category") === key) chosen = row;
+            });
+          });
+        }
+        p.rows.forEach(function (row) { row.hidden = row !== chosen; });
+        if (chosen) {
+          visibleRows += 1;
+          shownGroups[chosen.getAttribute("data-category")] = true;
+        }
+      });
+      groups.forEach(function (g) { g.hidden = !shownGroups[g.getAttribute("data-category")]; });
+
+      var filtered = !!(state["for"] || state.task || state.saved);
+      var words = describe(visibleRows, state);
+      if (countEl) countEl.innerHTML = words.html;
+      summaryText.innerHTML = words.html;
+      clearBtn.hidden = !filtered;
+      doneBtn.textContent = "Show " + visibleRows + (visibleRows === 1 ? " prompt" : " prompts");
+      empty.hidden = visibleRows !== 0;
+      empty.textContent = visibleRows ? "" : (state.saved
+        ? "No saved prompts match. Save a prompt from its row or its page to keep it here."
+        : "No prompts match these choices.");
+      changeBtn.textContent = shelf.classList.contains("is-folded") ? (filtered ? "Change" : "Filter") : "Done";
+      if (opts.announce !== false) liveSay(words.text);
       if (opts.url !== false) setURL();
     }
 
+    // A polite status message, written a moment after the last change so a
+    // run of quick choices is read once.
+    var live = document.createElement("p");
+    live.className = "pl-sr";
+    live.setAttribute("role", "status");
+    live.setAttribute("aria-live", "polite");
+    host.appendChild(live);
+    function liveSay(text) {
+      clearTimeout(timer);
+      live.textContent = "";
+      timer = setTimeout(function () { live.textContent = text; }, 450);
+    }
+
+    /* ---- folding on phones ------------------------------------------------ */
+    // Only a reader's own tap moves focus: opening puts it on the chosen
+    // option, closing on the line that says what is showing.
+    function fold(folded, byReader) {
+      shelf.classList.toggle("is-folded", folded);
+      changeBtn.setAttribute("aria-expanded", folded ? "false" : "true");
+      var filtered = !!(state["for"] || state.task || state.saved);
+      changeBtn.textContent = folded ? (filtered ? "Change" : "Filter") : "Done";
+      if (!byReader) return;
+      if (!folded) {
+        var first = host.querySelector("input:checked") || host.querySelector("input");
+        if (first) first.focus();
+      } else {
+        changeBtn.focus();
+        if (summary.getBoundingClientRect().top < 0) summary.scrollIntoView({ block: "start" });
+      }
+    }
+    changeBtn.addEventListener("click", function () {
+      fold(!shelf.classList.contains("is-folded"), true);
+    });
+    doneBtn.addEventListener("click", function () { fold(true, true); });
+
     host.addEventListener("change", function (ev) {
       var input = ev.target;
-      if (!input || input.type !== "radio") return;
-      state[input.name.slice(3)] = input.value;
+      if (!input || !input.name) return;
+      var name = input.name.slice(3);
+      if (name === "saved") state.saved = input.checked; else state[name] = input.value;
       apply();
     });
     clearBtn.addEventListener("click", function () {
-      state = { "for": "", task: "" };
+      state = { "for": "", task: "", saved: false };
       apply();
-      var first = host.querySelector("input[type=radio]");
+      var first = host.querySelector("input");
       if (first) first.focus();
     });
+    document.addEventListener("aua:saved-prompts", function () {
+      apply({ announce: false, url: false });
+    });
 
-    /* ---- arrival: ?for= and ?task=, unless a #prompt link was followed -- */
+    /* ---- arrival: ?for= and ?task=, unless a #prompt or #section link
+       was followed ------------------------------------------------------- */
     var params = null;
     try { params = new URLSearchParams(location.search); } catch (err) { params = null; }
-    if (params && !(location.hash && byId[location.hash.slice(1)])) {
+    var hash = location.hash ? location.hash.slice(1) : "";
+    var linked = hash && (prompts[hash] || anchors[hash]);
+    if (params && !linked) {
       var f = params.get("for"), k = params.get("task");
-      if (f && document.getElementById("pc-for-" + f)) state["for"] = f;
-      if (k && document.getElementById("pc-task-" + k)) state.task = k;
+      if (f && document.getElementById("pl-for-" + f)) state["for"] = f;
+      if (k && document.getElementById("pl-task-" + k)) state.task = k;
     }
     apply({ announce: false, url: false });
+    fold(phone.matches, false);
+    phone.addEventListener("change", function () { fold(phone.matches, false); });
+    if (linked) {
+      var target = document.getElementById(hash);
+      if (target) target.scrollIntoView();
+    }
   }
 
   // Same start-up as the site's other widget scripts (navigation.instant is
-  // deliberately off; see tools-chooser.js).
+  // deliberately off; see tools-chooser.js). layout-prompts.js, which loads
+  // after this file, defines window.AUAPromptSaves before DOMContentLoaded.
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);
   } else {

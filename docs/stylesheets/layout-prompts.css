@@ -1,1 +1,746 @@
-/* Layout redesign (2026-09-25): styles for the prompts page type package. */
+/* =========================================================================
+   Prompt Library shelf and prompt pages (layout redesign L16 and L17,
+   2026-09-25). The library's rows and filter column come from
+   scripts/render_data.py and docs/javascripts/prompt-chooser.js, on the
+   shared .shelf skeleton in layout.css; each prompt's own page comes from
+   scripts/layout_prompt_pages.py. Behaviour: layout-prompts.js.
+   Only Material's tokens and layout.css's --hub-* tokens are used, so both
+   colour schemes follow. Filled means pressable: the one filled button on
+   a prompt page is Copy prompt; the library's 24 Copy buttons are outlined
+   so the list does not turn into a wall of navy, and statuses are plain
+   grey words, never pills.
+   ========================================================================= */
+
+/* Visually hidden, still read aloud (also used outside .md-typeset). */
+.pl-sr {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.md-typeset .pl-icon {
+  flex: none;
+  width: 1.05em;
+  height: 1.05em;
+  fill: currentColor;
+}
+
+/* --- The library's head --------------------------------------------------- */
+.md-typeset .pl-intro {
+  max-width: 40rem;
+  margin: 0 0 0.4rem;
+}
+
+.md-typeset .pl-lede-meta {
+  max-width: 40rem;
+  margin: 0 0 0.8rem;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* Without JavaScript there is no filter column, so no grid either. */
+.md-typeset .pl-shelf:not(.is-ready) {
+  display: block;
+}
+
+/* --- Filter column ---------------------------------------------------------- */
+.md-typeset .pl-filters {
+  padding: 0.1rem 0.2rem 0.2rem 0.1rem;
+}
+
+.md-typeset .pl-fieldset {
+  min-width: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+  border: 0;
+}
+
+.md-typeset .pl-fieldset legend {
+  margin: 0 0 0.3rem;
+  padding: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .pl-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.md-typeset .pl-option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 0.3rem;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  cursor: pointer;
+}
+
+.md-typeset .pl-option input {
+  flex: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0;
+  accent-color: var(--md-typeset-a-color);
+  cursor: pointer;
+}
+
+/* The ring goes round the whole option, not the small native control. */
+.md-typeset .pl-option input:focus-visible {
+  outline: none;
+}
+
+.md-typeset .pl-option:has(input:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 1px;
+}
+
+.md-typeset .pl-option__label {
+  flex: 1 1 auto;
+}
+
+.md-typeset .pl-option__count {
+  font-size: 0.7rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pl-option:hover {
+  background: var(--hub-quiet-bg);
+}
+
+/* Chosen: a rail, bold text and the checked control, never colour alone,
+   and never filled like a button. */
+.md-typeset .pl-option.is-checked {
+  background: var(--hub-quiet-bg);
+  box-shadow: inset 3px 0 0 var(--md-typeset-a-color);
+  font-weight: 700;
+}
+
+.md-typeset .pl-option.is-disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.md-typeset .pl-option.is-disabled input {
+  cursor: default;
+}
+
+.md-typeset .pl-hint {
+  margin: 0.3rem 0 0;
+  padding: 0 0.55rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pl-filters__foot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.md-typeset .pl-clear,
+.md-typeset .pl-summary__change {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.2rem;
+  padding: 0 0.9rem;
+  border: 1px solid var(--md-typeset-a-color);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.md-typeset .pl-clear:hover,
+.md-typeset .pl-summary__change:hover {
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .pl-done {
+  display: inline-flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4rem;
+  margin: 0;
+  border-color: var(--hub-button-bg);
+  border-radius: 0.3rem;
+  background: var(--hub-button-bg);
+  color: var(--hub-button-fg);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.md-typeset .pl-done:hover,
+.md-typeset .pl-done:focus-visible {
+  border-color: var(--hub-navy);
+  background: var(--hub-navy);
+  color: #ffffff;
+}
+
+/* Phones: the filters fold to one line (the summary), and open as a boxed
+   panel of two columns. */
+.md-typeset .pl-summary {
+  margin: 0.2rem 0 0.4rem;
+}
+
+.md-typeset .pl-summary__text {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-typeset .pl-shelf.is-folded .pl-filters {
+    display: none;
+  }
+  .md-typeset .pl-filters {
+    margin: 0 0 1rem;
+    padding: 0.8rem 0.7rem;
+    border: 1px solid var(--hub-row-rule);
+    border-radius: 0.4rem;
+  }
+  .md-typeset .pl-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.3rem;
+  }
+  .md-typeset .pl-option {
+    min-height: 2.2rem;
+    border: 1px solid var(--hub-row-rule);
+  }
+  .md-typeset .pl-fieldset--saved .pl-options {
+    grid-template-columns: 1fr;
+  }
+  /* The summary line already says what is showing. */
+  .md-typeset .pl-shelf.is-ready .pl-results__count {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .pl-done {
+    display: none;
+  }
+  /* layout.css hides .shelf__summary from 60em, but its unconditional
+     display: flex comes later in that file and wins; restated here. */
+  .md-typeset .pl-summary {
+    display: none;
+  }
+}
+
+/* --- Results -------------------------------------------------------------------- */
+.md-typeset .pl-results__count {
+  margin: 0 0 0.3rem;
+  font-size: 0.8rem;
+}
+
+.md-typeset .pl-group {
+  margin: 0 0 1.4rem;
+}
+
+.md-typeset h2.pl-group__title {
+  margin: 0.4rem 0 0.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+/* One row per prompt. Wide screens: the words on the left, Copy and Save
+   stacked on the right. Phones: the words run the full width and Copy
+   ends the status line, so a row is about 150px rather than 200px. */
+.md-typeset .pl-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "title actions"
+    "tagline actions"
+    "meta actions"
+    "note actions";
+  column-gap: 1rem;
+  align-items: start;
+  padding: 0.75rem 0;
+  border-top: 1px solid var(--hub-row-rule);
+  scroll-margin-top: 6rem;
+}
+
+.md-typeset .pl-row:target {
+  padding-left: 0.6rem;
+  box-shadow: inset 3px 0 0 var(--md-typeset-a-color);
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset h3.pl-row__title {
+  grid-area: title;
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0;
+}
+
+/* A standalone link: padded to a 24px-plus target (WCAG 2.5.8). */
+.md-typeset .pl-row__title a {
+  display: inline-block;
+  padding: 0.1rem 0;
+  color: var(--md-typeset-a-color);
+  text-decoration: none;
+}
+
+.md-typeset .pl-row__title a:hover,
+.md-typeset .pl-row__title a:focus-visible {
+  text-decoration: underline;
+}
+
+.md-typeset .pl-row__tagline {
+  grid-area: tagline;
+  margin: 0.2rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.md-typeset .pl-row__meta {
+  grid-area: meta;
+  margin: 0.25rem 0 0;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pl-row__meta span + span::before {
+  content: "\00b7";
+  margin: 0 0.45em;
+}
+
+/* A requirement stated in the notes, kept beside Copy for readers who copy
+   without opening the prompt. Plain text with a hairline, not a warning. */
+.md-typeset .pl-row__note {
+  grid-area: note;
+  margin: 0.45rem 0 0;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--hub-row-rule);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.md-typeset .pl-row__actions {
+  grid-area: actions;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.25rem;
+  min-width: 5.2rem;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .pl-row {
+    grid-template-areas:
+      "title title"
+      "tagline tagline"
+      "note note"
+      "meta actions";
+    column-gap: 0.6rem;
+    padding: 0.7rem 0 0.6rem;
+  }
+  .md-typeset .pl-row__meta {
+    align-self: center;
+    margin-top: 0.35rem;
+  }
+  .md-typeset .pl-row__actions {
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+    margin-top: 0.35rem;
+  }
+}
+
+.md-typeset .pl-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 2.2rem;
+  padding: 0 0.75rem;
+  border: 1px solid var(--md-typeset-a-color);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.md-typeset .pl-copy:hover,
+.md-typeset .pl-copy.is-done {
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .pl-copy.is-failed {
+  border-style: dashed;
+}
+
+.md-typeset .pl-save {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  min-height: 1.5rem;
+  padding: 0.1rem 0.45rem;
+  border: 0;
+  border-radius: 0.3rem;
+  background: none;
+  color: var(--md-default-fg-color--light);
+  font: inherit;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.md-typeset .pl-save:hover {
+  background: var(--hub-quiet-bg);
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .pl-save.is-on {
+  color: var(--md-typeset-a-color);
+  font-weight: 700;
+}
+
+.md-typeset .pl-empty {
+  margin: 0.6rem 0;
+  padding: 0.8rem 1rem;
+  border: 1px dashed var(--hub-row-rule);
+  border-radius: 0.4rem;
+  font-size: 0.75rem;
+}
+
+/* Studies and guides for a section, folded after its prompts (the quiet
+   disclosure look from layout.css). */
+.md-typeset details.pl-further {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.md-typeset details.pl-further > summary {
+  font-size: 0.72rem;
+}
+
+.md-typeset .pl-further ul {
+  margin: 0 0 0.6rem;
+  padding-left: 1rem;
+}
+
+.md-typeset .pl-further li {
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+.md-typeset .pl-further__meta {
+  color: var(--md-default-fg-color--light);
+}
+
+/* The Prompt Exchange and the notes at the foot keep a reading width. */
+.md-typeset .pl-foot {
+  max-width: 40rem;
+  margin-top: 2rem;
+}
+
+/* --- A prompt's own page ------------------------------------------------------- */
+.md-typeset .pp-lede {
+  margin: 0.8rem 0 1rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.md-typeset .pp-panel {
+  margin: 0 0 1.8rem;
+  padding: 0.9rem 1rem 1rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.5rem;
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .pp-panel > h2 {
+  margin: 0 0 0.6rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .pp-panel > p {
+  margin: 0 0 0.8rem;
+  font-size: 0.78rem;
+}
+
+.md-typeset .pp-panel > ol {
+  margin: 0 0 0.8rem;
+  padding: 0;
+  list-style: none;
+  counter-reset: pp-step;
+}
+
+.md-typeset .pp-panel > ol > li {
+  position: relative;
+  margin: 0 0 0.55rem;
+  padding-left: 1.9rem;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  counter-increment: pp-step;
+}
+
+.md-typeset .pp-panel > ol > li::before {
+  content: counter(pp-step);
+  position: absolute;
+  top: 0.05rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 50%;
+  font-size: 0.64rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.md-typeset .pp-panel > .pp-note {
+  margin: 0.9rem 0 0;
+  padding-left: 0.6rem;
+  border-left: 2px solid var(--hub-row-rule);
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.md-typeset .pp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.md-typeset .pp-actions .md-button,
+.md-typeset .pp-text__bar .md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-height: 2.4rem;
+  margin: 0;
+  padding: 0.45rem 1.1rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.md-typeset .pp-text__bar .md-button {
+  min-height: 2.2rem;
+  font-size: 0.75rem;
+}
+
+/* Outlined buttons take the link colour, which is tuned for both schemes;
+   Material's own outline uses the navy primary, about 2:1 on slate. The
+   docked copy of "Read the prompt" sits outside .md-typeset, where
+   Material gives a button no outline at all. */
+.md-typeset .pp-actions .md-button:not(.md-button--primary),
+.md-typeset .pp-text__bar .md-button,
+.hub-dock:has(.pp-copy) .md-button:not(.md-button--primary) {
+  border: 1px solid var(--md-typeset-a-color);
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .pp-actions .md-button:not(.md-button--primary):hover,
+.md-typeset .pp-text__bar .md-button:hover,
+.hub-dock:has(.pp-copy) .md-button:not(.md-button--primary):hover {
+  border-color: var(--md-typeset-a-color);
+  background: var(--hub-quiet-bg);
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .pp-actions .md-button--primary,
+.hub-bar .pp-copy,
+.hub-dock .pp-copy {
+  border-color: var(--hub-button-bg);
+  background-color: var(--hub-button-bg);
+  color: var(--hub-button-fg);
+}
+
+.md-typeset .pp-actions .md-button--primary:hover,
+.md-typeset .pp-actions .md-button--primary.is-done {
+  border-color: var(--hub-navy);
+  background-color: var(--hub-navy);
+  color: #ffffff;
+}
+
+.hub-bar .pp-copy .pl-icon,
+.hub-dock .pp-copy .pl-icon {
+  width: 1.05em;
+  height: 1.05em;
+  margin-right: 0.35rem;
+  fill: currentColor;
+}
+
+.md-typeset .pp-actions .pp-save {
+  min-height: 2.2rem;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .pp-actions .md-button {
+    width: 100%;
+  }
+  .md-typeset .pp-panel {
+    padding: 0.8rem 0.8rem 0.9rem;
+  }
+}
+
+/* The prompt itself: wrapped at 15px, folded after about 24rem. */
+.md-typeset .pp-text-intro {
+  margin: 0 0 0.5rem;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pp-text {
+  margin: 0 0 1.8rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.5rem;
+  background: var(--md-code-bg-color);
+  overflow: hidden;
+}
+
+.md-typeset .pp-text__body {
+  padding: 0.8rem 1rem;
+  font-family: var(--md-text-font-family);
+  font-size: 0.75rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  tab-size: 4;
+}
+
+.md-typeset .pp-text.is-folded .pp-text__body {
+  max-height: 24rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent);
+  mask-image: linear-gradient(to bottom, #000 70%, transparent);
+}
+
+.md-typeset .pp-text__bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem 0.7rem;
+  border-top: 1px solid var(--hub-row-rule);
+  background: var(--md-default-bg-color);
+}
+
+.md-typeset .pp-text__bar .pp-copy {
+  border-color: var(--md-typeset-a-color);
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .pp-text__bar .pp-copy:hover,
+.md-typeset .pp-text__bar .pp-copy.is-done {
+  background: var(--hub-quiet-bg);
+  color: var(--md-typeset-a-color);
+}
+
+/* Where it is used, and related prompts: 44px rows with a chevron. */
+.md-typeset ul.pp-rows {
+  margin: 0 0 1.6rem;
+  padding: 0;
+  list-style: none;
+}
+
+.md-typeset ul.pp-rows > li {
+  margin: 0;
+  border-top: 1px solid var(--hub-row-rule);
+}
+
+.md-typeset ul.pp-rows > li:last-child {
+  border-bottom: 1px solid var(--hub-row-rule);
+}
+
+.md-typeset .pp-rows a {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 2.2rem;
+  padding: 0.5rem 1.6rem 0.5rem 0.2rem;
+  text-decoration: none;
+}
+
+.md-typeset .pp-rows a::after {
+  content: "\203a";
+  position: absolute;
+  top: 50%;
+  right: 0.4rem;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pp-rows a:hover {
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .pp-rows__title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.md-typeset .pp-rows a:hover .pp-rows__title {
+  text-decoration: underline;
+}
+
+.md-typeset .pp-rows__sub {
+  margin-top: 0.1rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pp-used-none {
+  margin: 0 0 1.6rem;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* The chooser and the scripts hide things with the hidden attribute, but
+   the display values above (grid rows, inline-flex buttons) outrank
+   extra.css's `.md-typeset [hidden]`, so hidden rows and buttons stayed
+   on screen. Restated last, with more weight, for this package. */
+.md-typeset .pl-shelf [hidden],
+.md-typeset .pp-panel [hidden],
+.md-typeset .pp-text [hidden],
+.md-typeset .pp-panel button[hidden],
+.md-typeset .pp-text button[hidden] {
+  display: none;
+}

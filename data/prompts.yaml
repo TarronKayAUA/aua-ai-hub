@@ -9,9 +9,28 @@
 #
 # Entries began as seed placeholders written to demonstrate the format; the
 # owner has since refined or replaced them, and several are now Reviewed.
+#
+# Optional fields, added 2026-09-25 for the layout redesign, when each
+# prompt got its own page (prompts/<slug>/). Every value in them was
+# DRAFTED FOR THE OWNER'S SIGN-OFF that day and is marked where it sits;
+# delete a field and the site falls back as described.
+#   use: two to four short steps, shown as "How to use it" at the top of
+#     the prompt's page. Markdown; links relative to docs/prompts/, as in
+#     notes. Without it the page shows the notes there instead.
+#   featured: true sorts the prompt first in each section it appears in.
+#   also_for: [category, ...] also lists the prompt in another section (and
+#     under that section's filter); its #anchor stays in its own category.
+#   note_visible: one sentence copied word for word from notes, shown
+#     beside the library's Copy button for readers who copy without opening
+#     the prompt. The build fails if the sentence is not in the notes.
 
 - title: Literature screening assistant
   tagline: Second-screens titles and abstracts against your stated inclusion criteria
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Fill in your research question and your inclusion and exclusion criteria at the top, then paste the prompt into a new chat.'
+    - 'Check the numbered rubric it restates and correct it; it screens nothing until you confirm.'
+    - 'Paste abstracts a few at a time, and resolve its UNCLEAR list yourself against the full text.'
   category: research
   audience: faculty
   status: draft
@@ -95,6 +114,11 @@
 
 - title: Single best answer item writer
   tagline: Drafts exam-quality single best answer items from your learning objectives
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Paste the prompt into a new chat with one learning objective, word for word, and its level (preclinical or clinical).'
+    - 'Attach your own teaching material for that objective if you have it; it aims for application questions unless you ask for recall.'
+    - 'Check every draft item for accuracy and for fit with your exam blueprint before it goes further.'
   category: mcq_generation
   audience: faculty
   status: draft
@@ -212,6 +236,11 @@
 # Added 2026-09-23; provenance in the note above Clinical reasoning partner.
 - title: Team-based learning session builder
   tagline: "Builds a team-based learning session: scratch-card readiness tests and application cases"
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Fill in the session details at the top: objectives, timings, and your scratch card key if the cards are pre-keyed.'
+    - 'Attach the pre-work, paste the prompt into a new chat, and confirm the plan it proposes before it writes questions.'
+    - 'Check every question and case for accuracy, then say "student copy" or "facilitator copy" for clean versions.'
   category: mcq_generation
   audience: faculty
   status: draft
@@ -506,6 +535,20 @@
 
 - title: NBME-style question tutor
   tagline: Drills National Board of Medical Examiners (NBME) style questions built from your own course materials
+  # featured, also_for and note_visible: added 2026-09-25 for owner
+  # sign-off (layout plan decision 14, and the independent review's advice
+  # to list the tutor under Study). Its card and #anchor stay under
+  # Multiple-Choice Question (MCQ) Writing, where the guides link it.
+  featured: true
+  also_for: [study_strategy]
+  note_visible: Question-bank and NBME questions are licensed third-party
+    content, which the policy does not allow into an AI tool without review,
+    so the tutor builds its questions from your own materials instead.
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Start a Project in Claude or ChatGPT for the course (see [Standing Setups](../tools/standing-setups.md)).'
+    - 'Paste this prompt into the Project''s instructions, not into a chat message.'
+    - 'Attach your lecture notes, slides, or syllabus. It lists the learning objectives it found and waits for you to confirm them.'
   category: mcq_generation
   audience: students
   status: reviewed
@@ -712,6 +755,11 @@
 
 - title: Item flaw checker
   tagline: Audits draft exam items against standard technical flaw criteria
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Paste the prompt into a new chat, then one draft item with its answer key.'
+    - 'If the item tests recall on purpose, such as a readiness question for team-based learning, say so.'
+    - 'Read the diagnosis first, and ask for a revision only once you agree with it.'
   category: mcq_vetting
   audience: faculty
   status: draft
@@ -811,6 +859,11 @@
 # Added 2026-09-23; provenance in the note above Clinical reasoning partner.
 - title: Post-exam item analysis reader
   tagline: Flags post-exam item statistics for exam committee review, from numbers only
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Renumber the items 1, 2, 3 in your own order, keeping your own map back to the exam.'
+    - 'Fill in the test details and each item''s statistics where the prompt shows, then paste it into a new chat.'
+    - 'Take its review list to your exam committee, which makes every decision about an item.'
   category: mcq_vetting
   audience: faculty
   status: draft
@@ -1115,6 +1168,11 @@
 
 - title: Analysis plan reviewer
   tagline: Reviews a study's analysis plan before you run the analysis
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Describe your study in the fields at the top: question, design, outcome, groups, sample size, structure, and missing data.'
+    - 'Paste the prompt into a new chat and answer the questions it asks, up to three.'
+    - 'Check the methods it recommends against a statistics reference or a statistician before you publish.'
   category: data_analysis
   audience: faculty
   status: draft
@@ -1202,6 +1260,11 @@
 # objectives; it does not write a curriculum.
 - title: Learning objective sharpener
   tagline: Tightens draft learning objectives so each can be taught and assessed
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Fill in the session, the learners, the time available, and how the objectives will be assessed.'
+    - 'Add your draft objectives word for word where the prompt asks, then paste it into a new chat.'
+    - 'Read its flags before its revisions; whether a revision says what you meant is your call.'
   category: content_generation
   audience: faculty
   status: draft
@@ -1289,6 +1352,11 @@
 
 - title: Lecture outline builder
   tagline: Turns objectives into a session outline with active-learning checks
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Fill in the duration, audience, topic, and your objectives, word for word.'
+    - 'Paste the prompt into a new chat, with the outline you already teach if you have one.'
+    - 'Check every VERIFY and SOURCE NEEDED flag before you teach from the outline.'
   category: content_generation
   audience: faculty
   status: draft
@@ -1366,6 +1434,11 @@
 # Added 2026-09-23; provenance in the note above Clinical reasoning partner.
 - title: Critical appraisal second reader
   tagline: Checks your own appraisal of a paper, item by item, against its text
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Appraise the paper yourself first, with a structured checklist or instrument.'
+    - 'Paste the prompt into a new chat with your completed appraisal, the instrument''s items, and the paper''s full text.'
+    - 'Find each quote it gives in the paper before you change a rating.'
   category: research
   audience: both
   status: draft
@@ -1637,6 +1710,11 @@
 # Added 2026-09-23; provenance in the note above Clinical reasoning partner.
 - title: Rubric feedback drafter
   tagline: Drafts quote-anchored observations on de-identified student writing against your frozen rubric
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Paste the prompt into a new chat with your rubric and the assignment brief, and correct the criteria it restates.'
+    - 'Paste one submission''s text per message, labeled "Student A" and so on, with names and ID numbers removed.'
+    - 'Check its quotes against the submission, then rewrite what you keep in your own voice.'
   category: feedback
   audience: faculty
   status: draft
@@ -1848,6 +1926,11 @@
 
 - title: Research question coach
   tagline: Sharpens a vague idea into an answerable research question
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Fill in your idea in two to five sentences, your setting, and your timeframe.'
+    - 'Paste the prompt into a new chat and answer any questions it asks.'
+    - 'Run the literature search it hands you in a real database, such as Scopus through the AUA Library, before you commit.'
   category: research
   audience: both
   status: draft
@@ -1938,6 +2021,11 @@
 
 - title: Pre-submission reviewer
   tagline: A skeptical peer review of your manuscript before you submit
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Paste the prompt into a new chat with your own near-final draft, its stage, and the journal you are aiming for.'
+    - 'Treat each problem it flags as an objection a journal reviewer is likely to raise.'
+    - 'Revise, then say "again" to see which flags your revision resolved.'
   category: research
   audience: both
   status: draft
@@ -2033,6 +2121,11 @@
 
 - title: Reporting guideline auditor
   tagline: Maps a manuscript against its reporting guideline, item by item
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Paste the prompt into a new chat with your manuscript (at least Methods and Results) and its study design.'
+    - 'Confirm the reporting guideline it names, and paste the official checklist if you have it.'
+    - 'For the submission itself, download the current checklist from equator-network.org.'
   category: research
   audience: faculty
   status: draft
@@ -2112,6 +2205,11 @@
 
 - title: Score report study planner
   tagline: Turns an exam performance report into an honest, interleaved study plan
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Paste the prompt into a new chat, then your score report as text, with your name and ID numbers removed.'
+    - 'Answer its intake questions: weeks to the exam, your real weekly hours, your resources, and your own read of the report.'
+    - 'Take the plan and its three questions to your advisor.'
   category: study_strategy
   audience: students
   status: draft
@@ -2227,6 +2325,11 @@
 
 - title: Study plan progress check
   tagline: Compares two reports and says honestly whether the plan is working
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'After your next assessment, paste the prompt into a new chat with the plan you were following.'
+    - 'Paste your previous and new reports as text, de-identified, and say honestly how closely you followed the plan.'
+    - 'Read its verdict before the revised plan: the plan worked, was not followed, or was followed and did not work.'
   category: study_strategy
   audience: students
   status: draft
@@ -2294,6 +2397,11 @@
 # deliberately not referenced, and resource entitlements are not named.
 - title: Study schedule builder
   tagline: Builds a day-by-day schedule for a teaching block or a dated exam
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Fill in the details at the top: mode, dates, and the hours you can really study each day.'
+    - 'Attach your syllabus, teaching calendar, and any score reports from this block, then paste the prompt into a new chat.'
+    - 'Check the objectives it lists before it plans; later, say "shorter" or "revise" to adjust the schedule.'
   category: study_strategy
   audience: students
   status: draft
@@ -2446,6 +2554,11 @@
 
 - title: Lecture tutor
   tagline: Teaches an attached lecture one objective at a time, checking you as it goes
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Open a new chat in any assistant that accepts file uploads, and attach one lecture''s slides.'
+    - 'Paste the prompt. It teaches one learning objective at a time and asks you a question on each.'
+    - 'Say "review" to be quizzed again on what you struggled with, or "back to the protocol" if it starts lecturing.'
   category: study_strategy
   audience: students
   # Owner flipped to reviewed 2026-08-01 after working through both
@@ -2484,6 +2597,11 @@
 
 - title: Daily review sheet builder
   tagline: Builds a detail-preserving review sheet with self-test questions from one lecture
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Attach one lecture''s slides to a new chat.'
+    - 'Paste the prompt, adding the concepts you missed in recent practice questions where it asks, or deleting that paragraph.'
+    - 'Check the sheet against the slides once; then each day, cover it and answer its ten questions from memory.'
   category: study_strategy
   audience: students
   # Owner flipped to reviewed 2026-08-01, same review as Lecture tutor.
@@ -2528,6 +2646,11 @@
 # question-bank and exam questions are licensed or secure material.
 - title: Flashcard builder
   tagline: Turns one lecture into spaced-repetition flashcards you can import
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Attach one lecture''s slides to a new chat and paste the prompt.'
+    - 'Check every card against the slides before you import it.'
+    - 'Import the tab-separated cards into your flashcard app; say "semicolons" if your app needs those instead.'
   category: study_strategy
   audience: students
   status: draft
@@ -2581,6 +2704,11 @@
 
 - title: Missed-question debrief
   tagline: Sorts the questions you missed by why you missed them, with a fix for each
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'After a practice block or quiz, write a line or two about each question you missed, in your own words.'
+    - 'Put your notes where the prompt asks for them, then paste it into a new chat.'
+    - 'Work on the pattern it finds, and paste the missed concepts it lists into the Daily review sheet builder.'
   category: study_strategy
   audience: students
   status: draft
@@ -2656,6 +2784,11 @@
 # robustness, revised, and checked for consistency with the library.
 - title: Clinical reasoning partner
   tagline: Practice differentials on invented cases or your own abstracted encounters, with reasoning feedback
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Choose an invented practice case, or an encounter you saw reduced to an age band and a presentation, with no names, dates, or places.'
+    - 'Fill in your year and rotation (and a complaint and difficulty for a practice case), then paste the prompt into a new chat.'
+    - 'Commit to a ranked differential at each step; say "hint" when stuck and "debrief" for feedback on your reasoning.'
   category: study_strategy
   audience: students
   status: draft
@@ -2952,6 +3085,11 @@
 
 - title: Mock residency interview
   tagline: Rehearses residency interviews one question at a time, then debriefs from your answers
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Fill in the specialty, the parts of your application to probe, and the question you most dread.'
+    - 'Paste the prompt into a new chat, in voice mode if your assistant has one, and confirm the setup it restates.'
+    - 'Answer out loud, one question at a time; say "debrief" for feedback, or "end interview" to finish.'
   category: residency
   audience: students
   status: draft
@@ -3268,6 +3406,11 @@
 
 - title: Personal statement critic
   tagline: Critiques a personal statement you wrote, with questions instead of rewrites
+  # use: drafted 2026-09-25 for owner sign-off
+  use:
+    - 'Fill in the specialty, the length you are working to, and your word processor''s count, then add your own draft.'
+    - 'Paste the prompt into a new chat and answer the questions it asks about your sentences.'
+    - 'Revise in your own words, then send the new draft with "again" to see which flags are resolved.'
   category: residency
   audience: students
   status: draft

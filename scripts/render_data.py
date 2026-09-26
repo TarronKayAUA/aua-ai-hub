@@ -79,6 +79,31 @@ PROMPT_CATEGORY_CHIPS = {
     "residency": "Residency",
 }
 
+# The quiet line under each library row and the meta line on each prompt
+# page (layout redesign, 2026-09-25): plain words, not badge pills, so a
+# status never looks like a button or an endorsement.
+PROMPT_AUDIENCE_META = {
+    "faculty": "For faculty",
+    "students": "For students",
+    "both": "For faculty and students",
+}
+
+# Section order when the library is filtered to one audience (layout
+# redesign L16, 2026-09-25): students see Study first, then Residency, then
+# the rest in PROMPT_CATEGORY_LABELS order. An audience not named here, and
+# the unfiltered library, keep PROMPT_CATEGORY_LABELS order.
+PROMPT_AUDIENCE_FIRST = {
+    "students": ("study_strategy", "residency"),
+}
+
+# Addresses a generated prompt page may not take, because a hand-authored
+# page in docs/prompts/ already serves there.
+PROMPT_RESERVED_SLUGS = {"index", "learning", "exchange"}
+
+# Most steps "How to use it" shows on a prompt page (the design calls for
+# three; a longer list stops being a quick start).
+PROMPT_USE_MAX_STEPS = 4
+
 
 def _long_date(value) -> str:
     """A checked date as readers write it (September 22, 2026), not ISO."""
@@ -1295,113 +1320,241 @@ def _prompt_slug(title: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
 
 
-def _render_prompts(config, resource_groups: dict[str, list]) -> str:
+def _plain(text: str) -> str:
+    """Markdown links reduced to their text, whitespace collapsed."""
+    return " ".join(re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text or "").split())
+
+
+PROMPT_KEYS = {"title", "tagline", "category", "audience", "status",
+               "last_reviewed", "notes", "prompt",
+               # Optional, added for the layout redesign (2026-09-25):
+               "featured", "also_for", "use", "note_visible"}
+
+
+def load_prompts(config) -> list[dict]:
+    """Load data/prompts.yaml and check every field the library rows and the
+    generated prompt pages (scripts/layout_prompt_pages.py) rely on.
+
+    Both hooks call this, so they can never disagree about what a valid
+    entry is. The optional fields are owner-owned like the rest:
+      featured: true        sorts the prompt first in each section it is in
+      also_for: [category]  lists it in another section too (the chooser's
+                            Study chip finds the NBME-style question tutor);
+                            its card and #anchor stay in its own category
+      use: [step, ...]      "How to use it" on the prompt's page (markdown,
+                            links relative to docs/prompts/ as in notes)
+      note_visible: text    one sentence of the notes shown beside Copy in
+                            the library, quoted word for word from the notes
+                            so it can never drift from them
+    """
     prompts = _load(_data_dir(config) / "prompts.yaml")
-
-    by_category: dict[str, list] = {}
-    for entry in prompts:
-        category = entry["category"]
-        if category not in PROMPT_CATEGORY_LABELS:
-            raise ValueError(
-                f"render_data hook: unknown prompt category {category!r}"
-            )
-        if entry["status"] not in PROMPT_STATUS_LABELS:
-            raise ValueError(
-                f"render_data hook: unknown prompt status {entry['status']!r}"
-            )
-        if not entry.get("tagline"):
-            raise ValueError(
-                f"render_data hook: prompt {entry['title']!r} has no tagline "
-                "(required for the at-a-glance table)"
-            )
-        by_category.setdefault(category, []).append(entry)
-
-    slugs = [_prompt_slug(e["title"]) for e in prompts]
-    if len(set(slugs)) != len(slugs):
-        raise ValueError("render_data hook: duplicate prompt anchor slugs")
-
     if set(PROMPT_CATEGORY_CHIPS) != set(PROMPT_CATEGORY_LABELS):
         raise ValueError("render_data hook: PROMPT_CATEGORY_CHIPS and "
                          "PROMPT_CATEGORY_LABELS must name the same categories")
+    for audience, first in PROMPT_AUDIENCE_FIRST.items():
+        if audience not in PROMPT_AUDIENCE_LABELS or not set(first) <= set(PROMPT_CATEGORY_LABELS):
+            raise ValueError("render_data hook: PROMPT_AUDIENCE_FIRST names an "
+                             f"unknown audience or category: {audience!r} {first!r}")
+    seen = set()
     for entry in prompts:
-        if entry["audience"] not in PROMPT_AUDIENCE_LABELS:
+        title = entry.get("title")
+        if not isinstance(title, str) or not title.strip():
+            raise ValueError(f"render_data hook: a prompt has no title: {entry!r:.80}")
+        unknown = sorted(set(entry) - PROMPT_KEYS)
+        if unknown:
+            raise ValueError(f"render_data hook: prompt {title!r} has unknown "
+                             f"field(s) {unknown}; allowed: {sorted(PROMPT_KEYS)}")
+        if entry.get("category") not in PROMPT_CATEGORY_LABELS:
+            raise ValueError(f"render_data hook: unknown prompt category "
+                             f"{entry.get('category')!r} on {title!r}")
+        if entry.get("status") not in PROMPT_STATUS_LABELS:
+            raise ValueError(f"render_data hook: unknown prompt status "
+                             f"{entry.get('status')!r} on {title!r}")
+        if entry.get("audience") not in PROMPT_AUDIENCE_LABELS:
             raise ValueError(f"render_data hook: unknown prompt audience "
-                             f"{entry['audience']!r} on {entry['title']!r}")
-    # The chooser (docs/javascripts/prompt-chooser.js) filters the table
-    # below and the prompt sections by the data attributes on each prompt
-    # heading; this island only carries chip labels and order. Without
-    # JavaScript the host stays hidden and the page is unchanged.
-    chooser = json.dumps({
-        "categories": [[key, PROMPT_CATEGORY_CHIPS[key], key.replace("_", "-")]
-                       for key in PROMPT_CATEGORY_LABELS if key in by_category],
-        "audiences": [["faculty", "Faculty"], ["students", "Students"]],
-    })
-    lines = ["## The library at a glance", "",
-             '<div class="tool-chooser prompt-chooser" id="prompt-chooser" hidden></div>',
-             f'<script type="application/json" id="prompt-chooser-data">{chooser}</script>',
-             ""]
-    lines.append("| Prompt | For | Status | What it does |")
-    lines.append("| --- | --- | --- | --- |")
-    for category, label in PROMPT_CATEGORY_LABELS.items():
-        for entry in by_category.get(category, []):
-            status_label, _ = PROMPT_STATUS_LABELS[entry["status"]]
-            lines.append(
-                f"| [{entry['title']}](#{_prompt_slug(entry['title'])}) "
-                f"| {PROMPT_AUDIENCE_LABELS.get(entry['audience'], entry['audience'])} | {status_label} "
-                f"| {entry['tagline'].strip()} |"
-            )
-    lines.append("")
+                             f"{entry.get('audience')!r} on {title!r}")
+        if not entry.get("tagline"):
+            raise ValueError(f"render_data hook: prompt {title!r} has no tagline "
+                             "(required for its library row and its page)")
+        if not isinstance(entry.get("prompt"), str) or not entry["prompt"].strip():
+            raise ValueError(f"render_data hook: prompt {title!r} has no prompt text")
+        slug = _prompt_slug(title)
+        if slug in seen:
+            raise ValueError(f"render_data hook: duplicate prompt anchor slug {slug!r}")
+        if slug in PROMPT_RESERVED_SLUGS:
+            raise ValueError(f"render_data hook: prompt {title!r} would take the "
+                             f"address prompts/{slug}/, which a page already uses")
+        seen.add(slug)
+        if "featured" in entry and not isinstance(entry["featured"], bool):
+            raise ValueError(f"render_data hook: featured on {title!r} must be true or false")
+        also = entry.get("also_for", [])
+        if (not isinstance(also, list) or len(set(also)) != len(also)
+                or any(c not in PROMPT_CATEGORY_LABELS for c in also)
+                or entry["category"] in also):
+            raise ValueError(f"render_data hook: also_for on {title!r} must list other "
+                             f"known categories once each, got {also!r}")
+        use = entry.get("use")
+        if use is not None and (not isinstance(use, list)
+                                or not 1 <= len(use) <= PROMPT_USE_MAX_STEPS
+                                or any(not isinstance(s, str) or not s.strip() for s in use)):
+            raise ValueError(f"render_data hook: use on {title!r} must be a list of 1 to "
+                             f"{PROMPT_USE_MAX_STEPS} steps")
+        note = entry.get("note_visible")
+        if note is not None:
+            if not isinstance(note, str) or not note.strip() or "[" in note:
+                raise ValueError(f"render_data hook: note_visible on {title!r} must be "
+                                 "plain text (no links)")
+            if " ".join(note.split()) not in _plain(entry.get("notes", "")):
+                raise ValueError(f"render_data hook: note_visible on {title!r} must be "
+                                 "quoted word for word from its notes, so the line "
+                                 "beside Copy can never say more than the notes do")
+    return prompts
 
-    rendered = 0
-    resources_placed = 0
+
+def prompt_json(value) -> str:
+    """JSON that is safe inside a <script> element: <, > and & are written
+    as \\u escapes, so no prompt text can end the element early, and
+    JSON.parse gives back every character exactly."""
+    return (json.dumps(value, ensure_ascii=False)
+            .replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026"))
+
+
+def prompt_group_order(audience: str | None = None) -> list[str]:
+    """Section order: PROMPT_CATEGORY_LABELS, with an audience's first
+    sections moved to the front (students: Study, then Residency)."""
+    first = list(PROMPT_AUDIENCE_FIRST.get(audience, ()))
+    return first + [k for k in PROMPT_CATEGORY_LABELS if k not in first]
+
+
+def _prompt_row(entry, slug: str, category: str, also: bool) -> str:
+    """One library row: the title links to the prompt's own page; Copy and
+    Save are buttons that docs/javascripts/layout-prompts.js reveals, so a
+    reader without JavaScript never meets a control that does nothing. The
+    #slug anchor sits on the row in the prompt's own category only."""
+    title = html.escape(entry["title"])
+    tagline = html.escape(" ".join(entry["tagline"].split()))
+    status, _ = PROMPT_STATUS_LABELS[entry["status"]]
+    audience = PROMPT_AUDIENCE_META[entry["audience"]]
+    note = entry.get("note_visible")
+    anchor = "" if also else f' id="{slug}"'
+    also_attr = " data-also" if also else ""
+    opening = (f'<div class="pl-row"{anchor} data-prompt="{slug}" '
+               f'data-audience="{entry["audience"]}" data-category="{category}"{also_attr}>')
+    parts = [
+        opening,
+        f'<h3 class="pl-row__title"><a href="{slug}/">{title}</a></h3>',
+        f'<p class="pl-row__tagline">{tagline}</p>',
+        f'<p class="pl-row__meta"><span>{status}</span><span>{audience}</span></p>',
+    ]
+    # Every part is its own grid cell (layout-prompts.css): beside Copy on
+    # wide screens; on a phone the text runs full width and Copy sits at
+    # the end of the status line, which keeps each row short.
+    if note:
+        parts.append(f'<p class="pl-row__note">{html.escape(" ".join(note.split()))}</p>')
+    copy = f'<button type="button" class="pl-copy" data-copy="{slug}" data-title="{title}" hidden>Copy</button>'
+    save = f'<button type="button" class="pl-save" data-save="{slug}" data-title="{title}" hidden>Save</button>'
+    parts += ['<div class="pl-row__actions">', copy, save, '</div>', '</div>']
+    return "".join(parts)
+
+
+def _further_reading_html(entries: list) -> str:
+    """A section's studies and guides, folded after its prompts: secondary
+    to the prompts, one tap away (a quiet disclosure, layout.css)."""
+    items = "".join(
+        f'<li><a href="{html.escape(e["url"])}">{html.escape(e["title"])}</a> '
+        f'<span class="pl-further__meta">({html.escape(_resource_meta(e))})</span>: '
+        f'{html.escape(" ".join(e["blurb"].split()))}</li>'
+        for e in entries)
+    return (f'<details class="note pl-further"><summary>Further reading ({len(entries)})</summary>'
+            f'<ul>{items}</ul></details>')
+
+
+def _render_prompts(config, resource_groups: dict[str, list]) -> str:
+    """The Prompt Library shelf (layout redesign L16, owner approved
+    2026-09-25): a filter column beside the results from 60em, and one row
+    per prompt with a Copy button that copies the stored text without
+    opening anything. The at-a-glance table is gone (owner decision 6); the
+    rows carry the tagline and filter the same way. Each prompt's full text
+    is on its own page (scripts/layout_prompt_pages.py) and, for Copy, in a
+    JSON island here. The results are excluded from site search, so search
+    returns one result per prompt, its page."""
+    prompts = load_prompts(config)
+    by_category: dict[str, list] = {}
+    for entry in prompts:
+        by_category.setdefault(entry["category"], []).append((entry, False))
+        for other in entry.get("also_for", []):
+            by_category.setdefault(other, []).append((entry, True))
+    for group in by_category.values():
+        # Featured first, otherwise file order (sort() is stable).
+        group.sort(key=lambda pair: not pair[0].get("featured"))
+
+    # The chooser (docs/javascripts/prompt-chooser.js) reads this island
+    # for chip labels and section order; it filters by the data attributes
+    # on each row. Without JavaScript the filter column stays hidden and
+    # every row shows.
+    chooser = {
+        "categories": [[key, PROMPT_CATEGORY_CHIPS[key], key.replace("_", "-"),
+                        PROMPT_CATEGORY_LABELS[key]]
+                       for key in PROMPT_CATEGORY_LABELS if key in by_category],
+        "audiences": [[a, PROMPT_AUDIENCE_LABELS[a]] for a in ("students", "faculty")],
+        "orders": {a: [k for k in prompt_group_order(a) if k in by_category]
+                   for a in PROMPT_AUDIENCE_FIRST},
+        "total": len(prompts),
+    }
+    texts = {_prompt_slug(e["title"]): e["prompt"] for e in prompts}
+    island = prompt_json(texts)
+    if json.loads(island) != texts:
+        raise AssertionError("render_data hook: the prompt text island does not "
+                             "round-trip; Copy would not give the stored text")
+
+    # The results are a <section> holding no other <section>: Material's
+    # search parser matches elements by tag name alone, so an excluded
+    # <div> would stop being excluded at the first nested </div>.
+    out = ['<div class="shelf pl-shelf" id="prompt-shelf">',
+           '<div class="shelf__filters pl-filters" id="prompt-chooser" hidden></div>',
+           '<section class="shelf__results pl-results" aria-label="Prompts" data-search-exclude>',
+           f'<p class="pl-results__count" id="prompt-count">All {len(prompts)} prompts</p>']
+    primary_rows = also_rows = resources_placed = 0
     per_category = {}
-    for category, label in PROMPT_CATEGORY_LABELS.items():
-        group = by_category.get(category, [])
+    for key in prompt_group_order():
+        group = by_category.get(key, [])
         if not group:
             continue
-        per_category[label] = len(group)
+        label = PROMPT_CATEGORY_LABELS[key]
+        per_category[label] = sum(1 for _, also in group if not also)
         # Anchors are pinned to the category key, so relabeling a heading
         # (MCQ Generation became Multiple-Choice Question (MCQ) Writing on
         # 2026-09-22) never breaks the playbooks' #mcq-generation links.
-        anchor = category.replace("_", "-")
-        lines.extend([f"## {label} {{: #{anchor} }}", ""])
-        for entry in group:
-            status_label, status_css = PROMPT_STATUS_LABELS[entry["status"]]
-            badge = _badge(status_label, status_css)
-            audience = _badge(
-                PROMPT_AUDIENCE_LABELS.get(entry["audience"], entry["audience"]),
-                "badge-unconfirmed")
-            slug = _prompt_slug(entry["title"])
-            lines.append(
-                f"### {entry['title']} {badge} {audience} "
-                f"{{: #{slug} data-toc-label=\"{entry['title']}\" "
-                f"data-audience=\"{entry['audience']}\" data-category=\"{category}\" }}"
-            )
-            lines.append("")
-            if entry.get("notes"):
-                lines.append(f"*{entry['notes'].strip()}*")
-                lines.append("")
-            lines.append('??? example "Show the prompt"')
-            lines.append("")
-            lines.append("    ```text")
-            for prompt_line in entry["prompt"].rstrip().split("\n"):
-                lines.append(f"    {prompt_line}" if prompt_line else "")
-            lines.append("    ```")
-            lines.append("")
-            rendered += 1
-        category_resources = resource_groups.get(category, [])
+        anchor = key.replace("_", "-")
+        out.append(f'<div class="pl-group" id="{anchor}" data-category="{key}">')
+        out.append(f'<h2 class="pl-group__title">{html.escape(label)}</h2>')
+        out.append('<div class="pl-rows">')
+        for entry, also in group:
+            out.append(_prompt_row(entry, _prompt_slug(entry["title"]), key, also))
+            if also:
+                also_rows += 1
+            else:
+                primary_rows += 1
+        out.append('</div>')
+        category_resources = resource_groups.get(key, [])
         if category_resources:
-            lines.append("**Further reading**")
-            lines.append("")
-            lines.extend(_resource_line(e) for e in category_resources)
-            lines.append("")
+            out.append(_further_reading_html(category_resources))
             resources_placed += len(category_resources)
+        out.append('</div>')
+    out.append('</section>')
+    out.append('</div>')
+    out.append(f'<script type="application/json" id="prompt-chooser-data">{prompt_json(chooser)}</script>')
+    out.append(f'<script type="application/json" id="prompt-texts">{island}</script>')
 
-    if rendered != len(prompts):
+    if primary_rows != len(prompts):
         raise AssertionError(
             f"render_data hook: prompts count mismatch, read {len(prompts)} "
-            f"but rendered {rendered}"
+            f"but rendered {primary_rows}"
         )
+    expected_also = sum(len(e.get("also_for", [])) for e in prompts)
+    if also_rows != expected_also:
+        raise AssertionError(f"render_data hook: {expected_also} also_for listings "
+                             f"read but {also_rows} rendered")
     expected_resources = sum(
         len(v) for k, v in resource_groups.items() if k != "general"
     )
@@ -1417,10 +1570,17 @@ def _render_prompts(config, resource_groups: dict[str, list]) -> str:
     print(f"  entries read : {len(prompts)}")
     for label, count in per_category.items():
         print(f"  {label:<18}: {count}")
-    print(f"  rendered total: {rendered} (cross-check ok)")
+    print(f"  rendered total: {primary_rows} rows (cross-check ok)")
+    also_names = [f"{e['title']} in {', '.join(PROMPT_CATEGORY_LABELS[c] for c in e['also_for'])}"
+                  for e in prompts if e.get("also_for")]
+    print(f"  also listed  : {also_rows} ({'; '.join(also_names) or 'none'}) (cross-check ok)")
+    print(f"  copy texts   : {len(texts)} of {len(prompts)} round-trip byte-identical (cross-check ok)")
+    print(f"  featured {sum(1 for e in prompts if e.get('featured'))}, "
+          f"notes beside Copy {sum(1 for e in prompts if e.get('note_visible'))}, "
+          f"use steps {sum(1 for e in prompts if e.get('use'))} of {len(prompts)}")
     print(f"  resources: general {len(resource_groups.get('general', []))}, "
           f"per-category {resources_placed} (cross-check ok)")
-    return "\n".join(lines)
+    return "\n".join(out)
 
 
 # --- committee work and polls ---------------------------------------------------
