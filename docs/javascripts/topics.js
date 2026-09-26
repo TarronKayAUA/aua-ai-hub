@@ -1,14 +1,20 @@
-/* News topic chips: clicking a chip filters the news cards that follow
+/* News topic chips: choosing a chip filters the news cards that follow
    it by their data-topic attribute; All restores the full list. Chips
    are rendered by the pipeline only when a section has at least two
-   real topics. Without JavaScript the chips are inert and the full
-   list shows, so this is progressive enhancement only.
+   real topics.
 
    On This Week a section's items come in two tiers (2026-09-23): the
    newest show directly and the rest sit in a collapsed "Show the other
    N" block. A chip filters every list up to the next heading, both tiers,
    and opens the collapsed tier when it holds a match, so choosing a topic
-   never leaves a matching item hidden. */
+   never leaves a matching item hidden.
+
+   Layout redesign (L19, 2026-09-25): the row is a labelled group of
+   toggle buttons (aria-pressed), one line that scrolls sideways on
+   phones, and a status line under it says how many items show, which a
+   screen reader announces. The pipeline ships the row hidden; this
+   script reveals it, so without JavaScript there are no dead buttons and
+   the full list shows. */
 (function () {
   "use strict";
 
@@ -28,24 +34,31 @@
     return lists;
   }
 
-  document.addEventListener("click", function (ev) {
-    var btn = ev.target.closest(".topic-chip");
-    if (!btn) {
-      return;
+  function status(row) {
+    var next = row.nextElementSibling;
+    if (next && next.classList.contains("topic-status")) {
+      return next;
     }
-    var row = btn.closest(".topic-chips");
-    if (!row) {
-      return;
-    }
+    var p = document.createElement("p");
+    p.className = "topic-status";
+    p.setAttribute("role", "status");
+    row.insertAdjacentElement("afterend", p);
+    return p;
+  }
+
+  function choose(row, btn) {
     var lists = sectionLists(row);
     if (!lists.length) {
       return;
     }
     row.querySelectorAll(".topic-chip").forEach(function (chip) {
-      chip.classList.remove("is-active");
+      var on = chip === btn;
+      chip.classList.toggle("is-active", on);
+      chip.setAttribute("aria-pressed", on ? "true" : "false");
     });
-    btn.classList.add("is-active");
     var topic = btn.getAttribute("data-topic");
+    var shown = 0;
+    var total = 0;
     lists.forEach(function (entry) {
       var matched = 0;
       entry.list.querySelectorAll(".news-card").forEach(function (card) {
@@ -54,13 +67,34 @@
         var cardTopic = card.getAttribute("data-topic") || "other";
         var show = !topic || cardTopic === topic;
         card.style.display = show ? "" : "none";
+        total += 1;
         if (show) {
           matched += 1;
         }
       });
+      shown += matched;
       if (topic && entry.holder && matched) {
         entry.holder.open = true;
       }
     });
+    status(row).textContent = topic
+      ? "Showing " + shown + " of " + total
+      : "Showing all " + total;
+  }
+
+  document.querySelectorAll(".topic-chips").forEach(function (row) {
+    row.hidden = false;
+    status(row);
+  });
+
+  document.addEventListener("click", function (ev) {
+    var btn = ev.target.closest(".topic-chip");
+    if (!btn) {
+      return;
+    }
+    var row = btn.closest(".topic-chips");
+    if (row) {
+      choose(row, btn);
+    }
   });
 })();

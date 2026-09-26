@@ -1,1 +1,523 @@
-/* Layout redesign (2026-09-25): styles for the news page type package. */
+/* Layout redesign (2026-09-25): styles for the news page type package.
+   News pages put items first (L19), wide tables stack on phones (L20), and
+   search results can be scanned (L10). Loaded after extra.css and
+   layout.css, so equal-specificity rules here win. */
+
+:root,
+[data-md-color-scheme="default"] {
+  --news-chip-on-bg: rgba(7, 97, 140, 0.1);
+  --news-chip-on-fg: #1b4165;
+  --news-sticky-edge: rgba(0, 0, 0, 0.12);
+}
+
+[data-md-color-scheme="slate"] {
+  --news-chip-on-bg: rgba(90, 163, 199, 0.18);
+  --news-chip-on-fg: #e3f1f8;
+  --news-sticky-edge: rgba(255, 255, 255, 0.16);
+}
+
+/* --- News page width ---------------------------------------------------------
+   News pages are shelves (no "on this page" column), but a news card
+   stretched across the full 78rem ran titles and summaries to about 150
+   characters a line. The list, brief and chips share one centred column
+   instead, with the section row alongside on This Week. */
+@media screen and (min-width: 60em) {
+  /* Outranks Material's sidebar margin rule (five classes). */
+  body[data-page-type="shelf"] .md-main .md-content > .md-content__inner:has(> .news-list) {
+    max-width: 44rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* The selection note stays on the first screen as a quiet meta line. */
+.md-typeset p.news-note {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- This Week: jump links to each section (L19) -------------------------
+   Links, not filters: link-coloured text with a downward arrow, so they
+   read as "go to", unlike the topic chips below each heading. From 60em,
+   where the header stays put, the row sticks under it while you read, and
+   layout-news.js marks the section in view (aria-current). */
+.md-typeset .section-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: -0.4rem 0 1rem;
+}
+
+.md-typeset .section-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 2rem;
+  padding: 0 0.6rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .section-chip::after {
+  content: "\2193";
+  content: "\2193" / "";
+  font-weight: 400;
+}
+
+.md-typeset .section-chip:hover,
+.md-typeset .section-chip[aria-current] {
+  border-color: var(--md-typeset-a-color);
+  background: var(--news-chip-on-bg);
+}
+
+.md-typeset .section-chip[aria-current] {
+  color: var(--news-chip-on-fg);
+}
+
+/* Phones: the arrows go, so the five sections fit on two rows, and the
+   space above each section heading tightens. */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .section-chip::after {
+    display: none;
+  }
+
+  body[data-page-type="shelf"] .md-content__inner:has(> .news-list) > h2 {
+    margin-top: 1.6em;
+  }
+
+  .md-typeset .section-brief {
+    margin-bottom: 0.7rem;
+  }
+
+  .md-typeset .topic-chips {
+    margin-top: 0;
+  }
+
+  body[data-page-type="shelf"] .md-content__inner:has(> .news-list) > .news-list {
+    margin-top: 0.6rem;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .section-chips {
+    position: sticky;
+    top: var(--news-sticky-top, 4.8rem);
+    z-index: 2;
+    margin: -0.4rem -0.4rem 1rem;
+    padding: 0.4rem;
+    background: var(--md-default-bg-color);
+  }
+
+  .md-typeset .section-chips.is-stuck {
+    box-shadow: 0 1px 0 var(--hub-row-rule), 0 0.3rem 0.5rem -0.3rem rgba(0, 0, 0, 0.15);
+  }
+
+  .md-content__inner:has(> .section-chips) > h2 {
+    scroll-margin-top: 3rem;
+  }
+}
+
+.md-typeset .section-chip__n,
+.md-typeset .topic-chip__n {
+  font-weight: 400;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- Section brief: a two-sentence lede, the rest in a quiet fold (L19) --
+   The brief used to be the whole first screen of a news page on a phone
+   (1,084px before the first item). The fold holds the rest of the brief,
+   the player and the date line; "or listen" shows only when a player is
+   there, since audio exists only where the narration step has run. */
+.md-typeset .section-brief {
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem 0;
+  border-left: 0.2rem solid var(--md-typeset-a-color);
+  border-radius: 0 0.4rem 0.4rem 0;
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .section-brief .section-brief-lede {
+  margin: 0 0 0.6rem;
+}
+
+/* A brief with no fold (the weekly digest's "The week in brief") keeps
+   its bottom padding, and its paragraphs get the space between them they
+   never had. */
+.md-typeset .section-brief:not(:has(.section-brief-more)) {
+  padding-bottom: 0.75rem;
+}
+
+.md-typeset .section-brief > p + p {
+  margin-top: 0.6em;
+}
+
+.md-typeset .section-brief details.section-brief-more {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--hub-row-rule);
+  border-bottom: 0;
+  font-size: inherit;
+}
+
+.md-typeset .section-brief details.section-brief-more > summary {
+  min-height: 2.2rem;
+  margin: 0;
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .section-brief details.section-brief-more > summary:hover {
+  background: none;
+  text-decoration: underline;
+}
+
+/* Material colours a focused summary with the amber accent (1.9:1). */
+.md-typeset .section-brief details.section-brief-more > summary:focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset .section-brief details.section-brief-more > p {
+  margin: 0 0 0.6rem;
+}
+
+.md-typeset .section-brief details.section-brief-more:not(:has(.listen)) .section-brief-listen {
+  display: none;
+}
+
+.md-typeset .section-brief details.section-brief-more .section-brief-date {
+  margin: 0 0 0.8rem !important;
+}
+
+/* --- News cards: the whole card is the link (L6) --------------------------
+   A card lifted on hover but only its title could be tapped (MA-2). The
+   title link now covers the card, the one destination it has. The source
+   becomes plain small capitals instead of a grey pill that measured about
+   4.4:1, and a long source name wraps instead of being cut to "PUBMED AI
+   IN M...". */
+.md-typeset .news-card {
+  position: relative;
+}
+
+.md-typeset .news-card .news-card-title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.md-typeset .news-card:has(.news-card-title:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset .news-card .news-card-title:focus-visible {
+  outline: none;
+}
+
+.md-typeset .news-card .news-card-title:hover {
+  color: var(--md-typeset-a-color) !important;
+  text-decoration: underline;
+}
+
+.md-typeset .news-card .source-chip {
+  max-width: none;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.68rem;
+  white-space: normal;
+  overflow: visible;
+}
+
+.md-typeset .news-card .news-card-head {
+  align-items: baseline;
+}
+
+/* Video and podcast descriptions are cut to three lines; their bottom
+   padding sat inside the cut, so the top of a fourth line showed through
+   under the ellipsis. The space moves outside the clipped box. */
+.video-card .video-card-desc {
+  padding-bottom: 0;
+  margin-bottom: 0.65rem;
+}
+
+/* --- Topic chips: one labelled row (L19) ----------------------------------
+   Toggle buttons with aria-pressed. The pressed chip is tinted and ticked
+   rather than filled: filled means a button that starts something. On
+   phones the row scrolls sideways instead of wrapping into a block that
+   pushed the first card down (141 to 178px); from 45em it wraps, so a
+   mouse never needs a hidden scroll. */
+.md-typeset .topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.2rem 0 0;
+  padding: 0.15rem 0.1rem;
+}
+
+/* The row ships hidden until topics.js can make it work; display: flex
+   above would otherwise outrank the browser's own [hidden] rule. */
+.md-typeset .topic-chips[hidden] {
+  display: none;
+}
+
+.md-typeset .topic-chips__label {
+  flex: none;
+  margin-right: 0.15rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .topic-chips .topic-chip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  min-height: 2rem;
+  margin: 0;
+  padding: 0 0.75rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 1rem;
+  background: transparent;
+  color: var(--md-default-fg-color);
+  font-family: inherit;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.md-typeset .topic-chips .topic-chip:hover {
+  border-color: var(--md-typeset-a-color);
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .topic-chips .topic-chip[aria-pressed="true"] {
+  border-color: var(--md-typeset-a-color);
+  background: var(--news-chip-on-bg);
+  color: var(--news-chip-on-fg);
+  font-weight: 700;
+}
+
+.md-typeset .topic-chips .topic-chip[aria-pressed="true"]::before {
+  content: "\2713";
+  content: "\2713" / "";
+}
+
+.md-typeset .topic-status {
+  margin: 0.3rem 0 0;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .topic-status:empty {
+  margin: 0;
+}
+
+@media screen and (min-width: 45em) {
+  .md-typeset .topic-chips .topic-chip {
+    min-height: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .topic-chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-right: 1.5rem;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 1.5rem), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 1.5rem), transparent);
+  }
+
+  .md-typeset .topic-chips::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* --- Wide tables stack into labelled rows on phones (L20) -----------------
+   scripts/layout_news.py marks registered tables data-stack and labels
+   each body cell with its column. Below 45em each row becomes a card: the
+   first cell as its heading, the rest as "Label: value" lines, empty cells
+   left out. From 45em the table is an ordinary table. */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset table[data-stack]:not([class]) {
+    display: block;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    overflow: visible;
+  }
+
+  .md-typeset table[data-stack]:not([class]) thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .md-typeset table[data-stack]:not([class]) tbody {
+    display: block;
+  }
+
+  .md-typeset table[data-stack]:not([class]) tbody tr {
+    display: block;
+    margin: 0 0 0.6rem;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--md-typeset-table-color);
+    border-radius: 0.4rem;
+    background: var(--md-default-bg-color);
+  }
+
+  .md-typeset table[data-stack]:not([class]) tbody tr:hover {
+    background: var(--md-default-bg-color);
+    box-shadow: none;
+  }
+
+  .md-typeset table[data-stack]:not([class]) tbody tr {
+    transition: none;
+  }
+
+  .md-typeset table[data-stack]:not([class]) td {
+    display: block;
+    padding: 0.15rem 0;
+    border: 0;
+  }
+
+  .md-typeset table[data-stack]:not([class]) td:first-child {
+    padding-bottom: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .md-typeset table[data-stack]:not([class]) td:not(:first-child)::before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    color: var(--md-default-fg-color--light);
+  }
+
+  .md-typeset table[data-stack]:not([class]) td:empty {
+    display: none;
+  }
+
+  /* Material's scroll wrapper has nothing left to scroll. */
+  .md-typeset .md-typeset__scrollwrap:has(> .md-typeset__table > table[data-stack]) {
+    margin-left: 0;
+    margin-right: 0;
+    overflow: visible;
+  }
+
+  .md-typeset .md-typeset__table:has(> table[data-stack]) {
+    padding: 0;
+  }
+}
+
+/* --- LiveBench keeps a scrolling table (L20) -------------------------------
+   A numeric comparison reads better sideways than stacked: rank and model
+   stay put while the category scores scroll under them. layout-news.js
+   adds .is-scrollable when the table is wider than its column, which is
+   when the swipe hint shows. */
+.md-typeset .livebench-table table:not([class]) {
+  overflow: visible;
+}
+
+.md-typeset .livebench-table table:not([class]) :is(th, td):nth-child(-n + 2) {
+  position: sticky;
+  z-index: 1;
+  background-color: var(--md-default-bg-color);
+}
+
+.md-typeset .livebench-table table:not([class]) :is(th, td):nth-child(1) {
+  left: 0;
+  box-sizing: border-box;
+  width: 2.4rem;
+  min-width: 2.4rem;
+  max-width: 2.4rem;
+}
+
+.md-typeset .livebench-table table:not([class]) :is(th, td):nth-child(2) {
+  left: 2.4rem;
+  box-shadow: inset -1px 0 0 var(--news-sticky-edge);
+}
+
+/* On phones the held model column may wrap at its hyphens, so it takes
+   under half the width and two score columns show beside it. */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .livebench-table table:not([class]) td:nth-child(2) {
+    min-width: 8rem;
+    max-width: 8rem;
+    white-space: normal;
+  }
+}
+
+.md-typeset .livebench-table.is-scrollable::before {
+  content: "Swipe for category scores";
+  display: block;
+  margin-bottom: -0.4rem;
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- Search results that can be scanned (L10) ------------------------------
+   Matched words were amber at 1.91:1; they are now bold in the link
+   colour. On phones each result's text stops at three lines: one Prompt
+   Library result used to run to 4,772px. */
+.md-search-result mark {
+  background: none;
+  color: var(--md-typeset-a-color);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.md-search-result .md-typeset h1 mark,
+.md-search-result .md-typeset h2 mark {
+  color: var(--md-typeset-a-color);
+}
+
+/* A result's text is whatever the section holds (lists, tables, a whole
+   prompt), so it is run together as one paragraph and cut after three
+   lines under its title on phones (four on wider screens, where a Prompt
+   Library result was 3,163px); the link goes to the full text.
+   layout-news.js moves the cut text so the first matched word is always
+   among the lines that show. */
+.md-search-result__article {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  overflow: hidden;
+}
+
+/* Nested blocks (Material's lists are flow-root) would each start a
+   formatting context the clamp cannot see into, so they go inline. */
+.md-search-result .md-search-result__article.md-typeset :is(p, ul, ol, li, pre, code, blockquote, dl, dt, dd, table, thead, tbody, tr, td, th) {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: inherit;
+  white-space: normal;
+}
+
+.md-search-result .md-search-result__article.md-typeset :is(p, li, dt, dd, td, th)::after {
+  content: " ";
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-search-result__article {
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+}
