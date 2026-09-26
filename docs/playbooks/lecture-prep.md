@@ -23,9 +23,9 @@ prompts:
 
 ## Good practice for this task
 
-- Your own teaching materials are fine as inputs. A colleague's materials are their work, so a word with them before you build on their slides is both a courtesy and a guard against copyright problems. Confidential institutional documents and research participant data fall under the policy's [privacy section](../governance/policy.md#responsible-use), which keeps them out of public AI tools.
+- Your own teaching materials are fine as inputs. A colleague's materials are their work, so a word with them before you build on their slides is both a courtesy and a guard against copyright problems.
 - The [policy](../governance/policy.md#responsible-use) requires AI-generated content to be identified according to academic standards and your course or department's guidelines, so use your department's practice for how that appears on slides.
-- If you design a session around last year's cohort performance, work from aggregate or de-identified results: a session plan needs the pattern rather than the names, and the policy keeps individual student records out of public AI tools.
+- If you design a session around last year's cohort performance, work from aggregate or de-identified results: a session plan needs the pattern rather than the names.
 
 ## Before you rely on it
 

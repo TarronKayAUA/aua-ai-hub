@@ -11,6 +11,7 @@
     - How to report one: [Reporting Misuse](#reporting-misuse)
     - Training the policy commits to: [Education and Training](#education-and-training)
     - The ten-minute plain-language version: [Module 3: The Policy in Practice](../pathway/rules.md)
+    - Who the AI Responsible Use Subcommittee is: the [AI Committee](committee.md)
 
 **Policy Administrators.** American University of Antigua's AI Responsible Use Subcommittee is responsible for this policy's content, administration, training, compliance monitoring, as well as timely revision and review. This subcommittee also oversees the University's AI usage, ensuring that AI is deployed ethically and in compliance with legal and academic requirements.
 

@@ -24,7 +24,7 @@ How the American University of Antigua College of Medicine (AUACOM) governs arti
 
 -   ## :material-account-group:{ .lg .middle } [The Committee](committee.md){ .card-link }
 
-    Who sits on the AI Committee and how to reach it.
+    Who sits on the AI Committee and how to reach it. The policy's text calls it the AI Responsible Use Subcommittee.
 
 -   ## :material-bullhorn:{ .lg .middle } [Committee Work and Updates](updates.md){ .card-link }
 
@@ -38,4 +38,4 @@ How the American University of Antigua College of Medicine (AUACOM) governs arti
 
 </div>
 
-The policy in brief: it encourages AI use where it helps you do your work; you stay accountable for what you produce with it; sensitive information, such as patient information and student records, stays out of public AI tools unless a tool has been approved for that data; AI contributions are acknowledged as your course or department asks and checked before you rely on them; and existing academic integrity rules and course guidelines still apply. [The Policy in Practice](../pathway/rules.md) covers all of it in about ten minutes of plain language.
+The policy in brief: it encourages AI use where it helps you do your work, you stay accountable for what you produce with it, and sensitive information, such as patient information and student records, stays out of public AI tools unless the AI Committee has approved a tool for that data. [The Policy in Practice](../pathway/rules.md) covers it in about ten minutes of plain language.

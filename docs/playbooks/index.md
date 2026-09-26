@@ -30,4 +30,4 @@ The [Prompt Library](../prompts/index.md) gives you the words, and the [AI Liter
 {: .guide-index-intro }
 
 !!! note "The policy behind every guide"
-    Every guide works within the [AI Responsible Use Policy](../governance/policy.md); what each one adds is practical advice, with its reasons. The policy points that come up most: you are accountable for the final product; AI-generated content is labeled according to academic standards and your course or department's guidelines; references are verified at the original source; and patient information, student records, and confidential institutional material stay out of public AI tools unless the AI Responsible Use Subcommittee has vetted and approved a tool for that data. [The Policy in Practice](../pathway/rules.md) covers the whole policy in about ten minutes.
+    Every guide works within the [AI Responsible Use Policy](../governance/policy.md); what each one adds is practical advice, with its reasons. [Can I Use AI for This?](../governance/can-i.md) answers common questions about the policy one at a time, and [The Policy in Practice](../pathway/rules.md) covers the whole policy in about ten minutes.
