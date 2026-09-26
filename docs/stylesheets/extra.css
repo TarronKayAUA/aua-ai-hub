@@ -2795,7 +2795,8 @@
   justify-content: center;
 }
 
-.md-typeset .hf-steps--wide {
+/* [dir] and ol match the base rule above, which otherwise wins. */
+[dir] .md-typeset ol.hf-steps--wide {
   grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
 }
 

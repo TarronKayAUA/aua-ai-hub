@@ -26,7 +26,7 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Four habits, and what each one gives you back</p>
-<ol class="hf-steps">
+<ol class="hf-steps hf-steps--wide">
 <li class="hf-box"><p class="hf-box-title">Check it</p><p class="hf-box-sub">errors caught by you, not by a reader</p></li>
 <li class="hf-box"><p class="hf-box-title">Own it</p><p class="hf-box-sub">your judgment is what grows</p></li>
 <li class="hf-box"><p class="hf-box-title">Say where AI helped</p><p class="hf-box-sub">the rest of your work speaks for itself</p></li>
