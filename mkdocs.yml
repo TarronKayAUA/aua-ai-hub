@@ -156,6 +156,7 @@ hooks:
   - scripts/layout_guides.py
   - scripts/layout_prompt_pages.py
   - scripts/layout_news.py
+  - scripts/layout_learn.py
 
 markdown_extensions:
   - admonition
