@@ -2440,15 +2440,29 @@
      .hf-label, .hf-marker         a small label above a box; a dashed
                                    marker line with its label
    Phones stack everything that sits side by side. */
+/* Since the layout redesign (L14, 2026-09-25), "filled" is a tint, not
+   solid navy: solid navy now means something you can press (the Copy and
+   Start buttons), and the lecture guide's solid boxes were the same color
+   as its buttons (MA-5). The border keeps the brand line, the tint keeps
+   "filled" readable in the figure legends that name it, and the text is
+   the page's own color, so contrast is the body text's in both schemes. */
+[data-md-color-scheme="default"] {
+  --aua-figure-tint: rgba(7, 97, 140, 0.13);
+}
+
+[data-md-color-scheme="slate"] {
+  --aua-figure-tint: rgba(90, 163, 199, 0.2);
+}
+
 .md-typeset .hf-box--filled {
   border-color: var(--aua-figure-fill);
-  background: var(--aua-figure-fill);
-  color: #ffffff;
+  background: var(--aua-figure-tint);
+  color: var(--md-default-fg-color);
 }
 
 .md-typeset .hf-box--filled > .hf-box-sub,
 .md-typeset .hf-box--filled > .hf-box-foot {
-  color: rgba(255, 255, 255, 0.88);
+  color: var(--md-default-fg-color--light);
 }
 
 .md-typeset .hf-box--dashed {
@@ -2796,7 +2810,7 @@
 }
 
 .md-typeset .hf-box--filled .hf-step-tag {
-  color: rgba(255, 255, 255, 0.88);
+  color: var(--md-default-fg-color--light);
 }
 
 .md-typeset .hf-legend {

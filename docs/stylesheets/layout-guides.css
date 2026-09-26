@@ -1,1 +1,446 @@
-/* Layout redesign (2026-09-25): styles for the guides page type package. */
+/* Layout redesign (2026-09-25): styles for the guides page type package.
+   =========================================================================
+   The nine step-by-step guides (docs/playbooks/) open answer-first: the
+   panel under the meta line holds the prompt the guide uses, what to have
+   ready, and Copy; the steps follow at once (L14, nav plan step 8). The
+   panel, the checklists' rows and the template buttons are written into
+   the page by scripts/layout_guides.py. Everything here is scoped to the
+   classes that hook writes, so no other page type is touched. */
+
+:root,
+[data-md-color-scheme="default"] {
+  --guide-panel-bg: rgba(7, 97, 140, 0.05);
+  --guide-panel-rule: rgba(7, 97, 140, 0.3);
+  --guide-label: #1b4165;
+  --guide-step: #07618c;
+  --guide-slot-bg: rgba(255, 179, 0, 0.22);
+  --guide-check-line: rgba(0, 0, 0, 0.6);
+}
+
+[data-md-color-scheme="slate"] {
+  --guide-panel-bg: rgba(90, 163, 199, 0.08);
+  --guide-panel-rule: rgba(90, 163, 199, 0.38);
+  --guide-label: #a9d2e6;
+  --guide-step: #7cb8d6;
+  --guide-slot-bg: rgba(255, 183, 77, 0.2);
+  --guide-check-line: rgba(255, 255, 255, 0.66);
+}
+
+/* The meta line wraps as text rather than as unbreakable chips, so a long
+   audience ("For students and their advisors") no longer strands each item
+   on its own line behind a leading dot (Score Reports at 390px). */
+body[data-page-type="task"] .md-typeset .meta-chip {
+  display: inline;
+}
+
+/* --- The panel ----------------------------------------------------------
+   Compact on purpose: on a phone the first step should show on the first
+   screen with it (Astra's review of the mockup, whose panel filled it).
+   So one short "Have ready" line sits above Copy, and Copy and "View
+   prompt" share one row at every width. */
+.md-typeset .guide-panel {
+  margin: 0.8rem 0 1.2rem;
+  padding: 0.7rem 0.85rem 0.65rem;
+  border: 1px solid var(--guide-panel-rule);
+  border-radius: 0.4rem;
+  background: var(--guide-panel-bg);
+}
+
+.md-typeset .guide-panel p {
+  margin: 0;
+}
+
+.md-typeset .guide-panel__label {
+  margin-bottom: 0.25rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--guide-label);
+}
+
+.md-typeset .guide-prompt + .guide-prompt {
+  margin-top: 0.7rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--guide-panel-rule);
+}
+
+.md-typeset .guide-prompt__name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.md-typeset .guide-prompt__tagline,
+.md-typeset .guide-prompt__ready,
+.md-typeset .guide-panel__ready {
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.md-typeset .guide-prompt__tagline {
+  margin-top: 0.1rem;
+}
+
+.md-typeset .guide-panel .guide-prompt__ready {
+  margin-top: 0.4rem;
+}
+
+.md-typeset .guide-prompt__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.7rem;
+  margin-top: 0.55rem;
+}
+
+/* Copy: a real 48px button. The first row's is the page's one filled
+   button; a second row's is outlined, so one action leads. */
+.md-typeset .guide-copy.md-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 2.4rem;
+  margin: 0;
+  padding: 0.4rem 0.9rem;
+  border: 0.1rem solid var(--hub-button-bg);
+  border-radius: 0.3rem;
+  background: transparent;
+  color: var(--md-typeset-a-color);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.md-typeset .guide-copy.md-button--primary {
+  background: var(--hub-button-bg);
+  color: var(--hub-button-fg);
+}
+
+/* Material turns buttons amber on hover and focus; here hover darkens,
+   and focus is the site's ring (layout.css), never a colour change. */
+.md-typeset .guide-copy.md-button:hover {
+  background: var(--hub-quiet-bg);
+  border-color: var(--hub-navy);
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .guide-copy.md-button--primary:hover {
+  background: var(--hub-navy);
+  border-color: var(--hub-navy);
+  color: #ffffff;
+}
+
+.md-typeset .guide-copy.md-button:focus:not(:hover) {
+  background: transparent;
+  border-color: var(--hub-button-bg);
+  color: var(--md-typeset-a-color);
+}
+
+.md-typeset .guide-copy.md-button--primary:focus:not(:hover) {
+  background: var(--hub-button-bg);
+  color: var(--hub-button-fg);
+}
+
+/* Material's ".md-typeset a.focus-visible" turns a keyboard focus ring
+   amber (about 1.9:1 on white, AC-4) and outranks layout.css's navy ring;
+   the panel's links keep the site's ring. */
+.md-typeset .guide-panel a.focus-visible,
+.md-typeset .guide-panel a:focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset .guide-copy__icon {
+  flex: 0 0 auto;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.md-typeset .guide-view {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.md-typeset .guide-view::after {
+  content: "\203a";
+  display: inline-block;
+  margin-left: 0.3em;
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.md-typeset .guide-view:hover {
+  text-decoration-thickness: 2px;
+}
+
+.md-typeset .guide-panel__status {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.md-typeset .guide-panel__status:not(:empty) {
+  margin-top: 0.45rem;
+}
+
+.md-typeset .guide-panel__foot {
+  margin-top: 0.6rem;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  color: var(--md-default-fg-color--light);
+}
+
+/* The one guide with no prompt and no steps (AI-Generated Images in
+   Teaching) leads with its answer in the same frame. */
+.md-typeset .guide-lede {
+  margin: 0.8rem 0 1.2rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--guide-panel-rule);
+  border-radius: 0.4rem;
+  background: var(--guide-panel-bg);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+/* The docked copy of Copy (layout.js) names its prompt on desktop. */
+.hub-dock .guide-dock-name {
+  margin: 0 0 0.45rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--md-default-fg-color);
+}
+
+/* A guide without a library prompt keeps the panel for "Have ready", plus
+   the page's own button when it has one (the syllabus guide's templates). */
+.md-typeset .guide-panel--plain .page-action {
+  margin: 0.55rem 0 0;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .guide-panel {
+    padding: 0.65rem 0.75rem 0.6rem;
+  }
+  .md-typeset .guide-prompt__actions .guide-copy {
+    flex: 1 1 auto;
+  }
+}
+
+/* The last resort when a browser blocks copying: the text, selected. */
+.md-typeset .guide-manual {
+  margin-top: 0.5rem;
+}
+
+.md-typeset .guide-manual p {
+  font-size: 0.7rem;
+}
+
+.md-typeset .guide-manual textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.4rem;
+  border: 1px solid var(--guide-panel-rule);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font: 0.72rem/1.45 var(--md-code-font-family);
+}
+
+.guide-sr,
+.guide-offscreen {
+  position: fixed;
+  top: 0;
+  left: -200vw;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+/* --- Numbered steps under "The workflow" --------------------------------
+   Outlined numbers, not solid discs: solid means pressable. */
+.md-typeset ol.guide-steps {
+  counter-reset: guide-step;
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset ol.guide-steps > li {
+  counter-increment: guide-step;
+  position: relative;
+  margin: 0 0 0.9em;
+  padding-left: 2.1rem;
+}
+
+.md-typeset ol.guide-steps > li::before {
+  content: counter(guide-step);
+  position: absolute;
+  left: 0;
+  top: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 1.4rem;
+  height: 1.4rem;
+  border: 0.09rem solid var(--guide-step);
+  border-radius: 50%;
+  background: var(--guide-panel-bg);
+  color: var(--guide-step);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* --- "Before you rely on it": boxes you can tick (decision 13) ----------
+   The hook puts each item's text inside its label, so the whole row is
+   the target (at least 44px) and the checkbox is named by its text. The
+   box is outlined at 3:1 or better and fills navy with a white tick. */
+[dir] .md-typeset ul.task-list {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+[dir] .md-typeset ul.task-list > li.task-list-item {
+  margin: 0;
+  padding: 0;
+}
+
+.md-typeset .task-list-item .task-list-control {
+  position: relative;
+  display: block;
+  min-height: 2.2rem;
+  padding: 0.5rem 0.4rem 0.5rem 2.1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.md-typeset .task-list-item .task-list-control:hover {
+  background: var(--hub-quiet-bg);
+}
+
+[dir] .md-typeset .task-list-item .task-list-control [type="checkbox"] {
+  position: absolute;
+  left: 0.35rem;
+  top: 0.6rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+}
+
+[dir] .md-typeset .task-list-control .task-list-indicator::before {
+  left: 0.35rem;
+  top: 0.6rem;
+  box-sizing: border-box;
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 0.1rem solid var(--guide-check-line);
+  border-radius: 0.2rem;
+  background: var(--md-default-bg-color);
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+[dir] .md-typeset .task-list-control [type="checkbox"]:checked + .task-list-indicator::before {
+  border-color: var(--hub-button-bg);
+  background: var(--hub-button-bg);
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.md-typeset .task-list-control [type="checkbox"]:checked + .task-list-indicator::after {
+  content: "";
+  position: absolute;
+  left: 0.74rem;
+  top: 0.74rem;
+  width: 0.3rem;
+  height: 0.58rem;
+  border: solid #ffffff;
+  border-width: 0 0.12rem 0.12rem 0;
+  transform: rotate(45deg);
+}
+
+.md-typeset .task-list-control [type="checkbox"]:focus-visible + .task-list-indicator::before {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset .task-list-note {
+  margin: 0.2rem 0 0;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- The syllabus guide's templates -------------------------------------
+   Wrapped text a reader can see whole (they were code blocks that ran off
+   a phone screen), the parts to fill marked, and a labelled Copy button
+   under each template's heading, visible whether or not it is folded. */
+.md-typeset .guide-template {
+  margin: 0.4rem 0 0.8rem;
+  padding: 0.7rem 0.9rem;
+  border-left: 0.2rem solid var(--guide-panel-rule);
+  border-radius: 0 0.3rem 0.3rem 0;
+  background: var(--guide-panel-bg);
+  font-size: 0.76rem;
+  line-height: 1.6;
+}
+
+.md-typeset details .guide-template {
+  margin-top: 0.2rem;
+}
+
+.md-typeset .guide-template__slot {
+  padding: 0 0.12em;
+  border-radius: 0.15rem;
+  background: var(--guide-slot-bg);
+}
+
+.md-typeset .guide-template__actions {
+  margin: 0.3rem 0 0.5rem;
+}
+
+.md-typeset .guide-template__actions:has(> [hidden]:only-child) {
+  display: none;
+}
+
+/* --- The Step-by-Step Guides index (a shelf page) -----------------------
+   Prose keeps a readable measure in the wide frame; the two audience cards
+   sit side by side from 60em and end where their rows end. */
+.md-typeset .guide-index-intro,
+body[data-page-type="shelf"] .md-typeset .guide-index ~ .admonition {
+  max-width: 40rem;
+}
+
+.md-typeset .grid.cards.guide-index {
+  align-items: start;
+}
+
+.md-typeset .grid.cards.guide-index > ul > li > h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+/* A student who landed on the syllabus guide from search. */
+.md-typeset .guide-pointer {
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .guide-copy.md-button {
+    transition: none;
+  }
+}
