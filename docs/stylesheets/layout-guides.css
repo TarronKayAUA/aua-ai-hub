@@ -212,15 +212,6 @@ body[data-page-type="task"] .md-typeset .meta-chip {
   line-height: 1.55;
 }
 
-/* The docked copy of Copy (layout.js) names its prompt on desktop. */
-.hub-dock .guide-dock-name {
-  margin: 0 0 0.45rem;
-  font-size: 0.68rem;
-  font-weight: 700;
-  line-height: 1.35;
-  color: var(--md-default-fg-color);
-}
-
 /* A guide without a library prompt keeps the panel for "Have ready", plus
    the page's own button when it has one (the syllabus guide's templates). */
 .md-typeset .guide-panel--plain .page-action {

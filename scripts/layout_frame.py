@@ -10,10 +10,12 @@ one of five types, each with a frame the whole site shares:
   shelf      catalogues (directory, library, news, calendars): full width
 
 No page of any type shows the left navigation sidebar or the right "On this
-page" column (navigation design d2, 2026-09-26). Their jobs moved to the
+page" column (navigation synthesis, 2026-09-26). Their jobs moved to the
 section navigator (scripts/layout_nav.py, docs/javascripts/layout-nav.js):
-a floating pill that opens the section as a map, "On this page" chips, the
-docked action, and previous and next cards at the foot of every inner page.
+"Browse <section>" opens the section as a map, "On this page" opens the
+page's sections as chips, the page's action docks beside them while its own
+place is out of view, and every inner page ends with "More in this section"
+(Previous and Next on the seven modules) and the section's map.
 On phones Material's menu drawer still works: below 76.25em it shows the
 navigation whatever the page hides.
 
@@ -148,8 +150,9 @@ def _page_end(page, config, reviewed_html: str = "") -> str:
         bits.append(f'<p class="page-end__meta"><a href="{_html.escape(feedback)}">'
                     "Report a problem with this page</a></p>")
     # "Back to <section>" is now part of the section foot that
-    # scripts/layout_nav.py writes above this block: previous and next
-    # cards, or a card back to the page a prompt page belongs to.
+    # scripts/layout_nav.py writes above this block: "More in this section"
+    # (led, on a prompt page, by the page it belongs to), or Previous and
+    # Next on the seven modules.
     if not bits:
         return ""
     return '<div class="page-end">' + "".join(bits) + "</div>"

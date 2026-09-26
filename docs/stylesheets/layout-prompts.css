@@ -620,27 +620,21 @@
 }
 
 /* Outlined buttons take the link colour, which is tuned for both schemes;
-   Material's own outline uses the navy primary, about 2:1 on slate. The
-   docked copy of "Read the prompt" sits outside .md-typeset, where
-   Material gives a button no outline at all. */
+   Material's own outline uses the navy primary, about 2:1 on slate. */
 .md-typeset .pp-actions .md-button:not(.md-button--primary),
-.md-typeset .pp-text__bar .md-button,
-.hub-dock:has(.pp-copy) .md-button:not(.md-button--primary) {
+.md-typeset .pp-text__bar .md-button {
   border: 1px solid var(--md-typeset-a-color);
   color: var(--md-typeset-a-color);
 }
 
 .md-typeset .pp-actions .md-button:not(.md-button--primary):hover,
-.md-typeset .pp-text__bar .md-button:hover,
-.hub-dock:has(.pp-copy) .md-button:not(.md-button--primary):hover {
+.md-typeset .pp-text__bar .md-button:hover {
   border-color: var(--md-typeset-a-color);
   background: var(--hub-quiet-bg);
   color: var(--md-typeset-a-color);
 }
 
-.md-typeset .pp-actions .md-button--primary,
-.hub-bar .pp-copy,
-.hub-dock .pp-copy {
+.md-typeset .pp-actions .md-button--primary {
   border-color: var(--hub-button-bg);
   background-color: var(--hub-button-bg);
   color: var(--hub-button-fg);
@@ -651,14 +645,6 @@
   border-color: var(--hub-navy);
   background-color: var(--hub-navy);
   color: #ffffff;
-}
-
-.hub-bar .pp-copy .pl-icon,
-.hub-dock .pp-copy .pl-icon {
-  width: 1.05em;
-  height: 1.05em;
-  margin-right: 0.35rem;
-  fill: currentColor;
 }
 
 .md-typeset .pp-actions .pp-save {

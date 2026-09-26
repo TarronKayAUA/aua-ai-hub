@@ -156,8 +156,9 @@
 
 /* --- Page frames (L3) ------------------------------------------------------
    Reading frame: task, lesson and reference pages cap the article at about
-   78 characters a line and centre it between the left navigation and the
-   right-hand column, which keeps "On this page" and the docked action.
+   78 characters a line and centre it on the screen (no page has sidebars
+   since the navigation synthesis; "On this page" and the docked action are
+   in layout-nav.css).
    One width for everything in the article, so figures, tables and prose
    line up (the 2026-07-25 three-widths attempt is recorded in extra.css). */
 @media screen and (min-width: 45em) {
@@ -211,9 +212,7 @@ body[data-page-type="door"] .md-path {
   margin: 1rem 0 1.6rem;
 }
 
-.md-typeset .page-action .md-button,
-.hub-dock .md-button,
-.hub-bar .md-button {
+.md-typeset .page-action .md-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -225,16 +224,13 @@ body[data-page-type="door"] .md-path {
   border-radius: 0.3rem;
 }
 
-.md-typeset .page-action .md-button--primary,
-.hub-dock .md-button--primary,
-.hub-bar .md-button--primary {
+.md-typeset .page-action .md-button--primary {
   background-color: var(--hub-button-bg);
   border-color: var(--hub-button-bg);
   color: var(--hub-button-fg);
 }
 
-.md-typeset .page-action .md-button--primary:hover,
-.hub-dock .md-button--primary:hover {
+.md-typeset .page-action .md-button--primary:hover {
   background-color: var(--hub-navy);
   border-color: var(--hub-navy);
   color: #ffffff;
@@ -246,114 +242,9 @@ body[data-page-type="door"] .md-path {
   }
 }
 
-/* Docked action at the top of the right-hand column (desktop), shown by
-   layout.js once the action slot has scrolled out of view. */
-.hub-dock {
-  margin: 0 0 1rem;
-  padding: 0.8rem;
-  border: 1px solid var(--hub-row-rule);
-  border-radius: 0.4rem;
-  background: var(--md-default-bg-color);
-}
-
-.hub-dock .md-button {
-  width: 100%;
-}
-
-.hub-dock .md-button + .md-button {
-  margin-top: 0.5rem;
-}
-
-/* --- Phone action bar and Sections sheet (L5) ---------------------------- */
-.hub-bar {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 5;
-  display: flex;
-  gap: 0.5rem;
-  padding: 0.5rem 0.8rem calc(0.5rem + env(safe-area-inset-bottom, 0px));
-  background: var(--md-default-bg-color);
-  border-top: 1px solid var(--hub-row-rule);
-  box-shadow: 0 -0.2rem 0.6rem rgba(0, 0, 0, 0.08);
-  transform: translateY(110%);
-  transition: transform 0.2s ease;
-}
-
-.hub-bar.is-shown {
-  transform: none;
-}
-
-.hub-bar .md-button {
-  flex: 1 1 auto;
-  min-height: 2.6rem;
-}
-
-.hub-bar .hub-bar__sections {
-  flex: 0 0 auto;
-}
-
-body.hub-has-bar {
-  scroll-padding-bottom: 4.5rem;
-}
-
-body.hub-has-bar .md-top {
-  display: none;
-}
-
-.hub-sheet {
-  width: min(100%, 30rem);
-  max-height: 80vh;
-  margin: auto auto 0;
-  padding: 0;
-  border: 0;
-  border-radius: 0.6rem 0.6rem 0 0;
-  background: var(--md-default-bg-color);
-  color: var(--md-default-fg-color);
-}
-
-.hub-sheet::backdrop {
-  background: rgba(0, 0, 0, 0.45);
-}
-
-.hub-sheet h2 {
-  margin: 0;
-  padding: 0.9rem 1rem 0.5rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.hub-sheet ul {
-  list-style: none;
-  margin: 0;
-  padding: 0 0 0.6rem;
-}
-
-.hub-sheet a,
-.hub-sheet button {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  min-height: 2.6rem;
-  padding: 0 1rem;
-  border: 0;
-  border-top: 1px solid var(--hub-row-rule);
-  background: none;
-  color: var(--md-default-fg-color);
-  font: inherit;
-  font-size: 0.8rem;
-  text-align: left;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 60em) {
-  .hub-bar,
-  .hub-sheet {
-    display: none;
-  }
-}
+/* The docked action, the phone bar and the Sections sheet that lived
+   here are gone (navigation synthesis, 2026-09-26): the page's action
+   docks in the section navigator (layout-nav.css). */
 
 /* --- Cards and link rows (L6) ---------------------------------------------
    A card with one destination is one link: its title link (class
@@ -635,12 +526,6 @@ body:not([data-page-type="lesson"]) .md-footer__inner {
   background: var(--hub-quiet-bg);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hub-bar {
-    transition: none;
-  }
-}
-
 /* =========================================================================
    Integration fixes (2026-09-26), found independently by several of the
    page-type builders. Each rule states the specificity it has to beat.
@@ -652,9 +537,7 @@ body:not([data-page-type="lesson"]) .md-footer__inner {
    the underline thickens instead. */
 html .md-typeset a:is(:focus-visible, .focus-visible),
 html .md-typeset summary:is(:focus-visible, .focus-visible),
-html .md-typeset button:is(:focus-visible, .focus-visible),
-html .hub-bar :is(a, button):focus-visible,
-html .hub-dock a:focus-visible {
+html .md-typeset button:is(:focus-visible, .focus-visible) {
   outline: 2px solid var(--hub-focus);
   outline-offset: 2px;
 }
@@ -675,21 +558,9 @@ html .md-typeset a:not(.md-button):is(:hover, :focus, :focus-visible, .focus-vis
   }
 }
 
-/* Buttons outside .md-typeset (the phone bar and the desktop dock) get
-   Material's button look explicitly; its styles are scoped to .md-typeset. */
-:where(.hub-bar, .hub-dock) .md-button {
-  border: 0.1rem solid var(--hub-button-bg);
-  background: transparent;
-  color: var(--hub-button-bg);
-  font-family: inherit;
-  line-height: 1.2;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /* Secondary (outline) buttons in the dark scheme: #07618c on slate was
    2.37:1. */
-[data-md-color-scheme="slate"] :is(.md-typeset .page-action, .hub-dock, .hub-bar) .md-button:not(.md-button--primary) {
+[data-md-color-scheme="slate"] .md-typeset .page-action .md-button:not(.md-button--primary) {
   color: #8cc4e2;
   border-color: #8cc4e2;
 }

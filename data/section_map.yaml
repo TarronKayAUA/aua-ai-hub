@@ -1,18 +1,63 @@
 # Decoration for the section navigator (scripts/layout_nav.py): the floating
-# map on every inner page, the map at each page's foot, and the Tools &
-# Prompts landing page, which is the same map drawn full page.
+# "Browse <section>" and "On this page" controls on every inner page, the
+# section map at each page's foot, the Tools & Prompts landing, and the
+# colored link rows on the landing pages.
 #
 # WHICH pages appear, their order, their titles and their grouping all come
 # from the nav in mkdocs.yml, never from here: a subsection is a group, and a
 # run of pages that sit directly in a tab is a group named by `loose:` below
-# (in order; the tab's own title when there are more runs than names). This
-# file only gives a tab, a group or a page its icon (a Material Design icon
-# name, checked at build time) and a short line of text.
+# (in order; the tab's own title when there are more runs than names). A
+# subsection holding one page is folded into such a run, unless it is named
+# under `groups:` here (Tools & Prompts' "Find a tool" is a group of one).
+# This file only gives a tab, a group or a page its icon (a Material Design
+# icon name, checked at build time), a short line of text, and a kind.
 #
 # `{tools}` and `{prompts}` in a line are counted from data/tools.yaml and
 # data/prompts.yaml at build time, so a number here never goes stale.
 # Plain language, no em dashes, and no unexpanded acronyms: these lines
 # appear on every page of their section.
+
+# --- Kinds: color by meaning (owner decision, 2026-09-26) ----------------------
+# Each color means one kind of page everywhere on the site, never a position
+# or a section. `token` names a hue in the palette block at the top of
+# docs/stylesheets/layout-nav.css (--hue-<token>, -tint and -line, in both
+# schemes); the build fails on a token the palette does not define. A page's
+# kind is derived: a tab's `kind:` covers every page in the tab, a group's
+# covers the group, and a page's own `kind:` below is only for a page that
+# differs. A page outside the nav (a prompt page, a weekly digest) takes the
+# kind of the nav page it belongs to. A link is colored by the kind of the
+# page it opens; a page with no kind (the hubs, About) stays uncolored.
+# `label` is the word in the color key shown wherever the colors appear.
+# Rose is defined in the palette and held in reserve.
+kinds:
+  tool:
+    label: Tool
+    token: blue
+    description: The Tool Directory and its task views
+  prompt:
+    label: Prompt
+    token: teal
+    description: The Prompt Library, each prompt's page, Learning to Prompt and the Prompt Exchange
+  guide:
+    label: Guide
+    token: amber
+    description: Step-by-step guides, tool guides, agent guides and worked examples
+  lesson:
+    label: Lesson
+    token: green
+    description: The seven modules, the quick reference pages, and Courses and Resources
+  benchmark:
+    label: Benchmark
+    token: violet
+    description: The three leaderboard pages
+  news:
+    label: News and events
+    token: coral
+    description: News, the archive, conferences, opportunities and announcements
+  governance:
+    label: Governance
+    token: navy
+    description: The policy, the AI Committee, its work, and how tools are reviewed
 
 tabs:
   "For Students":
@@ -22,41 +67,60 @@ tabs:
     icon: human-male-board
   "Learn":
     icon: school-outline
+    kind: lesson
     loose: ["The seven modules", "When you finish"]
   "Tools & Prompts":
     icon: toolbox
-    loose: ["Find a tool"]
   "News & Events":
     icon: newspaper-variant
+    kind: news
     loose: ["Announcements"]
   "Governance":
     icon: scale-balance
+    kind: governance
     loose: ["Policy and committee"]
   "About & Contact":
     icon: information-outline
     loose: ["This site"]
 
+# Groups. `blurb` is the group's one line on the Tools & Prompts landing;
+# `tag` is a short qualifier shown beside the group's name wherever the
+# group is drawn; `module` links the group to a lesson in Learn (the lesson's
+# page foot links back to the group); `steps` numbers that many guides after
+# the group's first page, which is its overview.
 groups:
-  "Guides for students": {icon: account-school}
-  "Step-by-Step Guides": {icon: format-list-numbered}
+  "Guides for students": {icon: account-school, kind: guide}
+  "Step-by-Step Guides": {icon: format-list-numbered, kind: guide}
   "The seven modules": {icon: map-marker-path, route: true}
   "Quick Reference": {icon: book-open-variant}
   "When you finish": {icon: flag-checkered}
   "Find a tool":
     icon: magnify
-    blurb: Search the directory by task, or go deep on two tools that come up often.
-  "Prompt Library":
+    kind: tool
+    blurb: Search the directory by task, and see where AUA stands with each tool.
+  "Use a prompt":
     icon: text-box-multiple-outline
+    kind: prompt
     blurb: Copy a ready-made prompt, learn the craft, or see what colleagues share.
-  "Local and Open Models":
-    icon: laptop
-    blurb: Run a model on your own computer, so what you type never leaves it.
-  "Agents and Setups (Advanced)":
+  "Work with sources":
+    icon: file-document-multiple-outline
+    kind: guide
+    blurb: Ask questions of your own documents and of the published literature.
+  "Work with agents":
     icon: robot-outline
-    blurb: Assistants that act for you. Read the four in order the first time.
-  "Benchmarks":
+    kind: guide
+    tag: Optional, after the basics
+    blurb: Hand a whole task to an assistant that plans, acts, and reports back.
+    module: pathway/working-with-agents.md
+    steps: 2
+  "Run models locally":
+    icon: laptop
+    kind: guide
+    blurb: Run a model on your own computer, so what you type stays on it.
+  "Compare models":
     icon: podium
-    blurb: How models compare, from independent leaderboards refreshed nightly.
+    kind: benchmark
+    blurb: Independent leaderboards, read with their limits in mind.
   "News": {icon: newspaper-variant-outline}
   "Events": {icon: calendar-star}
   "Announcements": {icon: bullhorn-outline}

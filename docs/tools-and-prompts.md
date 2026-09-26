@@ -4,18 +4,17 @@ last_reviewed: 2026-09-26
 
 # Tools & Prompts
 
-<!-- The Tools & Prompts landing (navigation design d2, 2026-09-26). A Door
-page: the whole tab drawn as one map, the same map the section navigator
-opens on every page in the tab. Nothing below is typed by hand: the empty
-data-secmap-full div is filled by scripts/layout_nav.py from the
-nav in mkdocs.yml (which pages, their order, their groups), with icons and
-one-line subtitles from data/section_map.yaml, and the counts in the stats
-line from data/tools.yaml and data/prompts.yaml. Add a page to the tab in
-mkdocs.yml and it appears here and in every page's navigator. -->
+<!-- The Tools & Prompts landing (navigation synthesis, 2026-09-26). A Door
+page. Nothing below the lede is typed by hand: the empty data-tp-landing div
+is filled by scripts/layout_nav.py from the nav in mkdocs.yml (which pages
+sit in which group, in what order), data/section_map.yaml (icons, one-line
+descriptions, kinds), data/tools.yaml and data/tool_tasks.yaml (tool counts,
+and the tasks flagged `landing: true`), and data/prompts.yaml (prompt
+counts; the categories come from PROMPT_CATEGORY_LANDING in
+scripts/render_data.py). Add a page to the tab in mkdocs.yml and it appears
+here and in every page's section map. -->
 
-Find a tool for the task in front of you, see where the American University of Antigua (AUA) stands with it, or copy a prompt that already works. The deeper guides, on running models on your own computer and on agents, sit alongside.
+Find an artificial intelligence (AI) tool for the task in front of you and see where the American University of Antigua (AUA) stands with it, or copy a prompt that already works. The guides sit alongside.
 { .tp-lede }
 
-<p data-secmap-stats></p>
-
-<div data-secmap-full></div>
+<div data-tp-landing></div>

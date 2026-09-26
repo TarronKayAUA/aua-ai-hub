@@ -79,6 +79,20 @@ PROMPT_CATEGORY_CHIPS = {
     "residency": "Residency",
 }
 
+# Landing shortcuts (navigation synthesis, 2026-09-26): the categories the Tools &
+# Prompts landing offers as one-click entries into the library, in this
+# order, each with the audience its link pre-selects (None for both). A
+# presentation flag only: which prompts a category holds, and how many,
+# still come from data/prompts.yaml.
+PROMPT_CATEGORY_LANDING = {
+    "study_strategy": "students",
+    "mcq_generation": "faculty",
+    "mcq_vetting": "faculty",
+    "research": None,
+    "content_generation": None,
+    "feedback": None,
+}
+
 # The quiet line under each library row and the meta line on each prompt
 # page (layout redesign, 2026-09-25): plain words, not badge pills, so a
 # status never looks like a button or an endorsement.
@@ -626,6 +640,26 @@ def _tool_standing_sentence(group: list[dict]) -> str:
     return "Standings: " + _join_names(parts) + "."
 
 
+def tool_task_members(tools: list, tasks: list) -> dict[str, list]:
+    """Each tool_tasks.yaml task's tools, derived from data/tools.yaml (a
+    task's category or status, plus each tool's optional `also_for`). The
+    chooser and the Tools & Prompts landing (layout_nav.py) both
+    call this, so a shortcut's count is always the chooser's count."""
+    members: dict[str, list] = {t["id"]: [] for t in tasks}
+    for tool in tools:
+        extra = tool.get("also_for") or []
+        for tid in extra:
+            if tid not in members:
+                raise ValueError(f"render_data hook: {tool['name']!r} also_for "
+                                 f"unknown task {tid!r}")
+        for t in tasks:
+            if (t.get("from_category") == tool["category"]
+                    or t.get("from_status") == tool["governance_status"]
+                    or t["id"] in extra):
+                members[t["id"]].append(tool)
+    return members
+
+
 def _render_tool_chooser(config) -> str:
     """The Tool Directory's task chooser (owner approved 2026-09-23): a
     build-time task index that is both the no-JavaScript fallback and the
@@ -650,18 +684,7 @@ def _render_tool_chooser(config) -> str:
                              f"status {t['from_status']!r}")
         if t.get("group", "task") not in ("task", "data"):
             raise ValueError(f"render_data hook: task {t['id']!r} has unknown group")
-    members: dict[str, list] = {tid: [] for tid in task_ids}
-    for tool in tools:
-        extra = tool.get("also_for") or []
-        for tid in extra:
-            if tid not in members:
-                raise ValueError(f"render_data hook: {tool['name']!r} also_for "
-                                 f"unknown task {tid!r}")
-        for t in tasks:
-            if (t.get("from_category") == tool["category"]
-                    or t.get("from_status") == tool["governance_status"]
-                    or t["id"] in extra):
-                members[t["id"]].append(tool)
+    members = tool_task_members(tools, tasks)
     empty = [tid for tid, group in members.items() if not group]
     if empty:
         raise ValueError(f"render_data hook: tool chooser tasks with no tools: {empty}")
