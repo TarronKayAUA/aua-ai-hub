@@ -396,10 +396,9 @@
   font-size: 0.6rem;
 }
 
+/* No badge when no filter is on: "Filters 0" read like a result count. */
 .secnav__badge[data-n="0"] {
-  background: transparent;
-  color: var(--nav-dock-muted);
-  box-shadow: inset 0 0 0 1px var(--nav-dock-line);
+  display: none;
 }
 
 /* The page's primary action: here only while its own place is out of
@@ -725,9 +724,87 @@ html.secnav-docked body {
   margin: 0.1rem 0 0;
 }
 
+/* Jump to group: every group as a small button, on the narrow panels
+   that open scrolled to the reader's own group. */
+.secnav__jump {
+  order: 6;
+  flex-basis: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.secnav__jumplead {
+  margin-right: 0.15rem;
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+}
+
+.secnav__jumpbtn {
+  min-height: 1.6rem;
+  margin: 0;
+  padding: 0 0.6rem;
+  border: 1px solid var(--nav-accent);
+  border-radius: 0.8rem;
+  background: var(--nav-surface);
+  color: var(--nav-accent);
+  font: inherit;
+  font-size: 0.62rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secnav__jumpbtn:hover {
+  background: var(--nav-raised-hover);
+}
+
+.secnav__jumpbtn[aria-current] {
+  background: var(--nav-accent);
+  color: var(--nav-accent-on);
+}
+
+@media screen and (min-width: 60em) {
+  .secnav__jump {
+    display: none;
+  }
+}
+
+/* Narrow panels: the overview joins the Jump to group row, and the title
+   bar stays compact, so most of the sheet is the map itself. */
+.secnav__jumpbtn--overview {
+  display: inline-flex;
+  align-items: center;
+  border-style: dashed;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 59.9375em) {
   .secnav__phead .secnav__overview {
     display: none;
+  }
+  .secnav__phead {
+    gap: 0.3rem 0.6rem;
+    padding: 0.55rem 0.7rem 0.6rem 0.8rem;
+  }
+  .secnav__picon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .secnav__phead .kind-key {
+    gap: 0.2rem 0.7rem;
+    font-size: 0.58rem;
+  }
+  .secnav__jump {
+    gap: 0.25rem;
+  }
+  .secnav__jumpbtn {
+    min-height: 1.45rem;
+    padding: 0 0.5rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -809,6 +886,34 @@ html.secnav-docked body {
   border-style: dashed;
 }
 
+/* The glossary: its terms by letter, as its own A to Z index has them. */
+.secnav__az {
+  gap: 0.3rem;
+}
+
+.secnav__letter,
+.md-typeset a.secnav__letter {
+  justify-content: center;
+  min-width: 2.2rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.72rem;
+}
+
+.secnav__letter[aria-current]::before {
+  content: none;
+}
+
+.secnav__letter.is-empty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  border: 1px dashed var(--nav-line-strong);
+  border-radius: 1rem;
+  color: var(--nav-muted);
+  font-weight: 600;
+}
+
 .secnav__chip--top svg {
   width: 0.9rem;
   height: 0.9rem;
@@ -829,8 +934,8 @@ html.secnav-docked body {
 .secmap .secmap__groups,
 [dir] .md-typeset .secmap .secmap__groups {
   display: block;
-  columns: 14.5rem;
-  column-gap: 1.2rem;
+  columns: 16.5rem;
+  column-gap: 1.3rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -883,21 +988,36 @@ html.secnav-docked body {
 }
 
 .secmap__count {
+  flex: 0 0 auto;
   margin-left: auto;
-  min-width: 1.3rem;
-  padding: 0 0.35rem;
+  padding: 0.05rem 0.5rem;
   border-radius: 0.7rem;
   background: var(--nav-raised);
   color: var(--nav-muted);
-  font-size: 0.58rem;
-  text-align: center;
+  font-size: 0.6rem;
+  white-space: nowrap;
+}
+
+.secmap .secmap__subhead,
+.md-typeset .secmap .secmap__subhead {
+  margin: 0.2rem 0 0.35rem;
+  font-size: 0.56rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--nav-muted);
+}
+
+.secmap .secmap__cards--related,
+.md-typeset .secmap .secmap__cards--related {
+  margin-bottom: 0.7rem;
 }
 
 .secmap .secmap__cards,
 .md-typeset .secmap .secmap__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
-  gap: 0.4rem;
+  grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  gap: 0.45rem;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -962,13 +1082,15 @@ html.secnav-docked body {
 
 .secmap__title {
   font-weight: 700;
-  font-size: 0.68rem;
+  font-size: 0.72rem;
+  line-height: 1.3;
   color: var(--md-default-fg-color);
 }
 
 .secmap__sub {
-  margin-top: 0.1rem;
-  font-size: 0.6rem;
+  margin-top: 0.15rem;
+  font-size: 0.65rem;
+  line-height: 1.4;
   color: var(--nav-muted);
 }
 
@@ -1071,10 +1193,18 @@ html.secnav-docked body {
   margin: 0;
 }
 
-.md-typeset .secfoot__pn {
+.md-typeset .secfoot .learn-next {
+  margin: 0 0 1rem;
+}
+
+.md-typeset .secfoot__h + .kind-key {
+  margin: -0.2rem 0 0.8rem;
+}
+
+.md-typeset .secfoot__alsorow {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.5rem;
 }
 
 .md-typeset a.secfoot__card {
@@ -1095,12 +1225,6 @@ html.secnav-docked body {
 
 .md-typeset a.secfoot__card:hover {
   border-color: var(--k, var(--nav-accent));
-}
-
-.md-typeset a.secfoot__card--next {
-  grid-column: 2;
-  flex-direction: row-reverse;
-  text-align: right;
 }
 
 .secfoot__icon {
@@ -1480,6 +1604,12 @@ body.has-secnav .md-typeset .secfoot__toc {
   list-style: none;
 }
 
+@media screen and (min-width: 45em) {
+  [dir] .md-typeset .tp-rows--pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .md-typeset a.tp-row,
 .md-typeset a.tp-cross,
 .md-typeset a.tp-tile {
@@ -1606,6 +1736,55 @@ body.has-secnav .md-typeset .secfoot__toc {
   row-gap: 0.3rem;
 }
 
+/* The other lists and cards that point at pages: each item's bar width
+   and spacing are set here; the colors come from the kind treatment. */
+.md-typeset ul.pp-rows > li.kind-row,
+.md-typeset .pl-row.kind-mark,
+[dir] .md-typeset :is(.home-routes, .learn-shelf, .route-stage) ul > li.kind-row,
+.md-typeset .grid.cards > ul > li.kind-card {
+  border-left-width: 4px;
+  border-left-style: solid;
+}
+
+.md-typeset ul.pp-rows > li.kind-row > a {
+  padding-left: 0.6rem;
+}
+
+.md-typeset .pl-row.kind-mark {
+  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+}
+
+[dir] .md-typeset .learn-shelf ul > li.kind-row,
+[dir] .md-typeset .route-stage ul > li.kind-row {
+  margin-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  border-radius: 0 0.35rem 0.35rem 0;
+}
+
+[dir] .md-typeset .home-routes > ul > li.kind-row {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* A module's Next: a large card in the kind of the page it opens. */
+.md-typeset .learn-next a.learn-next__btn.kind-mark,
+.md-typeset .learn-next a.learn-next__btn.kind-mark:focus {
+  border: 1px solid var(--k-line);
+  border-left: 6px solid var(--k);
+  background-color: var(--k-tint);
+  color: var(--k);
+}
+
+.md-typeset .learn-next a.learn-next__btn.kind-mark:hover {
+  border-color: var(--k);
+  background-color: var(--k-tint);
+  color: var(--k);
+}
+
+.md-typeset .learn-next a.learn-next__btn.kind-mark .learn-next__sub {
+  color: var(--nav-muted);
+}
+
 /* The key: one quiet line naming the colors drawn beside it. */
 .kind-key,
 .md-typeset .kind-key {
@@ -1652,20 +1831,33 @@ body.has-secnav .md-typeset .secfoot__toc {
 .md-typeset a.secfoot__card.kind-mark,
 .md-typeset :is(a.tp-row, a.tp-cross, a.tp-tile, a.tp-short).kind-mark,
 .md-typeset .grid.cards > ul > li ul > li.kind-row.kind-mark,
-.md-typeset .door-rows > ul > li.kind-row.kind-mark {
+.md-typeset .door-rows > ul > li.kind-row.kind-mark,
+.md-typeset ul.pp-rows > li.kind-row.kind-mark,
+.md-typeset .pl-shelf .pl-row.kind-mark,
+[dir] .md-typeset :is(.home-routes, .learn-shelf, .route-stage) ul > li.kind-row.kind-mark,
+.md-typeset .grid.cards > ul > li.kind-card.kind-mark {
   border-left-color: var(--k);
   background-color: var(--k-tint);
 }
 
 /* And its words: the title of a kinded item is in the kind's color. */
-.kind-mark :is(.secmap__title, .secfoot__title, .tp-row__title, .tp-short__t),
+.kind-mark :is(.secmap__title, .secfoot__title, .tp-row__title, .tp-short__t, .pp-rows__title),
 .md-typeset .grid.cards > ul > li ul > li.kind-row > a,
-.md-typeset .door-rows > ul > li.kind-row > a {
+.md-typeset .door-rows > ul > li.kind-row > a,
+.md-typeset .pl-row.kind-mark .pl-row__title a,
+.md-typeset :is(.home-routes, .learn-shelf) ul > li.kind-row > a,
+.md-typeset .route-stage ul > li.kind-row .route-text a,
+.md-typeset .grid.cards > ul > li.kind-card.kind-mark a.card-link {
   color: var(--k);
 }
 
-/* A row's grey sub-label, measured on every tint (4.9:1 or better). */
-.md-typeset :is(.grid.cards, .door-rows) li.kind-row .row-sub {
+/* Grey words beside a colored title, measured on every tint (4.9:1 or
+   better). */
+.md-typeset :is(.grid.cards, .door-rows, .home-routes) li.kind-row .row-sub,
+.md-typeset .learn-shelf li.kind-row .learn-shelf__sub,
+.md-typeset .route-stage li.kind-row :is(.route-for, .route-min),
+.md-typeset .pp-rows li.kind-row .pp-rows__sub,
+.md-typeset .pl-row.kind-mark .pl-row__meta {
   color: var(--nav-muted);
 }
 
@@ -1700,11 +1892,3 @@ body.has-secnav .md-typeset .secfoot__toc {
   }
 }
 
-@media screen and (max-width: 44.9375em) {
-  .md-typeset .secfoot__pn {
-    grid-template-columns: 1fr;
-  }
-  .md-typeset a.secfoot__card--next {
-    grid-column: 1;
-  }
-}

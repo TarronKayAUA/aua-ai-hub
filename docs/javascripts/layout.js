@@ -22,13 +22,16 @@
   });
 
   /* --- the tab strip: active tab into view, and "more" chevrons ------------
-     When the strip is wider than the screen, a chevron at each edge that
-     has tabs beyond it (and the fade under it) says there are more, and a
-     tap scrolls the strip that way. The strip opens with the active tab in
-     view and a whole tab, not a fragment, at its left edge. The chevrons
-     are buttons with names, so voice control and screen readers can use
-     them; they are left out of the Tab order because every tab link is
-     already reachable with Tab, and focusing one scrolls it into view. */
+     When the strip is wider than the screen, a chevron sits at each edge in
+     space of its own, outside the scrolling labels (navigation synthesis,
+     2026-09-26: labels crowding the arrows read as clutter), and the labels
+     fade out before they reach it. A chevron with nothing beyond it dims.
+     A tap scrolls the strip that way. The strip opens with the active tab
+     wholly in view, with the tab before it whole at the left edge when both
+     fit. The chevrons are buttons with names, so voice control and screen
+     readers can use them; they are left out of the Tab order because every
+     tab link is already reachable with Tab, and focusing one scrolls it
+     into view. */
   var tabList = document.querySelector(".md-tabs__list");
   var activeTab = document.querySelector(".md-tabs__item--active");
   var CHEVRON = {
@@ -49,6 +52,7 @@
         CHEVRON[dir] + '"/></svg>';
       b.hidden = true;
       b.addEventListener("click", function () {
+        if (b.disabled) return;
         var step = Math.max(list.clientWidth * 0.6, 120) * (dir === "next" ? 1 : -1);
         list.scrollBy({ left: step, behavior: reduce.matches ? "auto" : "smooth" });
       });
@@ -58,22 +62,33 @@
     var prev = make("prev");
     var next = make("next");
     function sync() {
+      var over = grid.classList.contains("hub-tabs--overflow");
       var max = list.scrollWidth - list.clientWidth;
       var atStart = list.scrollLeft <= 2;
       var atEnd = list.scrollLeft >= max - 2;
-      prev.hidden = max <= 2 || atStart;
-      next.hidden = max <= 2 || atEnd;
-      grid.classList.toggle("hub-tabs--more-prev", !prev.hidden);
-      grid.classList.toggle("hub-tabs--more-next", !next.hidden);
+      prev.hidden = !over;
+      next.hidden = !over;
+      prev.disabled = over && atStart;
+      next.disabled = over && atEnd;
+      grid.classList.toggle("hub-tabs--more-prev", over && !atStart);
+      grid.classList.toggle("hub-tabs--more-next", over && !atEnd);
     }
-    // Open on the active tab, with the tab before it whole at the left
-    // edge (clear of the chevron) when both fit.
-    if (activeTab && list.scrollWidth > list.clientWidth) {
+    function measure() {
+      // Overflow is measured without the arrows' reserved space.
+      grid.classList.remove("hub-tabs--overflow");
+      grid.classList.toggle("hub-tabs--overflow", list.scrollWidth > list.clientWidth + 2);
+      sync();
+    }
+    grid.classList.add("hub-tabs");
+    measure();
+    // Open on the active tab, wholly clear of the fades, with the tab
+    // before it whole at the left edge when both fit.
+    if (activeTab && grid.classList.contains("hub-tabs--overflow")) {
       var items = Array.prototype.slice.call(list.children);
       var at = items.indexOf(activeTab);
       var origin = list.getBoundingClientRect().left - list.scrollLeft;
       var leftOf = function (item) { return item.getBoundingClientRect().left - origin; };
-      var reserve = 2 * rem;
+      var reserve = 2.1 * rem;
       var target = leftOf(activeTab) - reserve;
       var before = items[at - 1];
       if (before && leftOf(before) - reserve + list.clientWidth
@@ -82,14 +97,13 @@
       }
       list.scrollLeft = at <= 0 ? 0 : Math.max(0, target);
     }
-    grid.classList.add("hub-tabs");
     var queued = false;
     list.addEventListener("scroll", function () {
       if (queued) return;
       queued = true;
       window.requestAnimationFrame(function () { queued = false; sync(); });
     }, { passive: true });
-    window.addEventListener("resize", sync);
+    window.addEventListener("resize", measure);
     sync();
   }
   if (tabList) tabStrip(tabList);

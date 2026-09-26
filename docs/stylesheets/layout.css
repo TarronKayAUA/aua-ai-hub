@@ -57,34 +57,42 @@
     margin-top: 0.62rem;
   }
   /* A chevron or a swipe comes to rest with a whole tab at the left edge,
-     clear of the chevron, rather than a fragment of one. */
+     clear of the fade, rather than a fragment of one. */
   .hub-tabs .md-tabs__list {
     -webkit-mask-image: none;
     mask-image: none;
     scroll-snap-type: x proximity;
-    scroll-padding-inline: 2rem;
+    scroll-padding-inline: 2.1rem;
   }
   .hub-tabs .md-tabs__item {
     scroll-snap-align: start;
   }
+  /* The arrows' own space: the labels scroll between them, never under. */
+  .hub-tabs.hub-tabs--overflow .md-tabs__list {
+    margin-left: 1.9rem;
+    margin-right: 1.9rem;
+    padding-right: 0;
+  }
+  /* The labels fade out before the arrow on a side with more tabs. */
   .hub-tabs.hub-tabs--more-next .md-tabs__list {
-    -webkit-mask-image: linear-gradient(to left, transparent 1rem, #000 3.2rem);
-    mask-image: linear-gradient(to left, transparent 1rem, #000 3.2rem);
+    -webkit-mask-image: linear-gradient(to left, transparent 1.2rem, #000 2.1rem);
+    mask-image: linear-gradient(to left, transparent 1.2rem, #000 2.1rem);
   }
   .hub-tabs.hub-tabs--more-prev .md-tabs__list {
-    -webkit-mask-image: linear-gradient(to right, transparent 1rem, #000 3.2rem);
-    mask-image: linear-gradient(to right, transparent 1rem, #000 3.2rem);
+    -webkit-mask-image: linear-gradient(to right, transparent 1.2rem, #000 2.1rem);
+    mask-image: linear-gradient(to right, transparent 1.2rem, #000 2.1rem);
   }
   .hub-tabs.hub-tabs--more-prev.hub-tabs--more-next .md-tabs__list {
-    -webkit-mask-image: linear-gradient(to right, transparent 1rem, #000 3.2rem,
-                                        #000 calc(100% - 3.2rem), transparent calc(100% - 1rem));
-    mask-image: linear-gradient(to right, transparent 1rem, #000 3.2rem,
-                                #000 calc(100% - 3.2rem), transparent calc(100% - 1rem));
+    -webkit-mask-image: linear-gradient(to right, transparent 1.2rem, #000 2.1rem,
+                                        #000 calc(100% - 2.1rem), transparent calc(100% - 1.2rem));
+    mask-image: linear-gradient(to right, transparent 1.2rem, #000 2.1rem,
+                                #000 calc(100% - 2.1rem), transparent calc(100% - 1.2rem));
   }
 }
 
-/* The chevrons: 36px wide and the strip's full 44px height, white on the
-   header blue (6.8:1 in both schemes), over the faded edge. */
+/* The chevrons: 38px wide and the strip's full 44px height, white on the
+   header blue (6.8:1 in both schemes), each in space of its own beside
+   the scrolling labels. */
 .hub-tabs {
   position: relative;
 }
@@ -97,7 +105,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 1.8rem;
+  width: 1.9rem;
   margin: 0;
   padding: 0;
   border: 0;
@@ -108,6 +116,12 @@
 
 .hub-tabs-more[hidden] {
   display: none;
+}
+
+/* Nothing more that way: the arrow stays in its place, dimmed. */
+.hub-tabs-more:disabled {
+  opacity: 0.35;
+  cursor: default;
 }
 
 .hub-tabs-more--prev {

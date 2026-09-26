@@ -93,6 +93,14 @@ PROMPT_CATEGORY_LANDING = {
     "feedback": None,
 }
 
+# Shorter words for a landing shortcut where the chooser's chip uses an
+# abbreviation a newcomer may not know (owner direction, 2026-09-26: "Write
+# exam questions"). The library and its chips keep their full terms.
+PROMPT_CATEGORY_LANDING_LABELS = {
+    "mcq_generation": "Write exam questions",
+    "mcq_vetting": "Review exam questions",
+}
+
 # The quiet line under each library row and the meta line on each prompt
 # page (layout redesign, 2026-09-25): plain words, not badge pills, so a
 # status never looks like a button or an endorsement.

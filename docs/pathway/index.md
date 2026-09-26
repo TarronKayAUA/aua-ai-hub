@@ -1,4 +1,7 @@
 ---
+# The page's own title: without it MkDocs names the page from its file
+# ("Index"), because the first line below is a comment, not the heading.
+title: AI Literacy Pathway
 last_reviewed: 2026-09-01
 action:
   - text: "Start Module 1: How AI Works (10 minutes)"

@@ -4,11 +4,13 @@
  *
  *   [icon Browse Tools & Prompts ^]  [On this page ^]  [Filters 2]   [Copy prompt]
  *
- * 1. "Browse <section>" ("Browse pages" on phones) opens the section as a
- *    map: groups of cards, the current page filled and marked in words,
- *    every sibling one click away, and a key naming the colors drawn.
+ * 1. "Browse <section>" ("Browse section" on phones) opens the section as
+ *    a map: groups of cards, the current page filled and marked in words,
+ *    every sibling one click away, and a key naming the colors drawn. On a
+ *    narrow screen its title bar also has the section's overview and a
+ *    "Jump to group" row, since the map opens at the reader's own group.
  * 2. "On this page" opens the page's sections as short chips, the one you
- *    are reading filled.
+ *    are reading filled (on the glossary, its A to Z instead).
  * 3. On a shelf, Filters brings the shelf's filter band back into view from
  *    far down the list, and shows how many filters are on.
  * 4. The page's primary action (Copy prompt, a guide's Copy the prompt, a
@@ -90,6 +92,7 @@
   var total = foot.getAttribute("data-total") || "";
   var groups = foot.getAttribute("data-groups") || "";
   var where = foot.getAttribute("data-where") || "";
+  var hereGroup = foot.getAttribute("data-group") || "";
 
   var nav = el("nav", "secnav");
   nav.setAttribute("aria-label", "Section and page navigation");
@@ -114,7 +117,7 @@
   mapBtn.innerHTML =
     '<span class="secnav__icon">' + (sicon ? sicon.innerHTML : "") + "</span>" +
     '<span class="secnav__label"><span class="secnav__long"><span class="secnav__lead">Browse</span> ' +
-    '<span class="secnav__name"></span></span><span class="secnav__short">Browse pages</span></span>' +
+    '<span class="secnav__name"></span></span><span class="secnav__short">Browse section</span></span>' +
     icon("chevron", "secnav__chev");
   mapBtn.querySelector(".secnav__name").textContent = section;
   mapBtn.title = "Browse every page in " + section;
@@ -131,8 +134,9 @@
     '<span class="secnav__picon">' + (sicon ? sicon.innerHTML : "") + "</span>" +
     '<span class="secnav__ptext"><span class="secnav__ptitle"></span> <span class="secnav__pmeta"></span></span>';
   head.querySelector(".secnav__ptitle").textContent = section;
+  // Only numbers the panel shows: its groups, and where the reader is.
   head.querySelector(".secnav__pmeta").textContent =
-    total + " pages in " + groups + (groups === "1" ? " group" : " groups") + ", you are " +
+    groups + (groups === "1" ? " group" : " groups") + " \u00b7 You are " +
     (/^inside /.test(where) ? where : "in " + where);
   var overview = foot.querySelector(".secfoot__overview");
   if (overview) {
@@ -152,12 +156,48 @@
     var key = mapCopy.querySelector(".kind-key");
     if (key) head.insertBefore(key, overview ? head.querySelector(".secnav__overview") : mapClose);
     mapBody.appendChild(mapCopy);
+    // Jump to group: every group as a small button, so a reader who opened
+    // the map at their own group can still survey the section.
+    var groupEls = Array.prototype.slice.call(mapCopy.querySelectorAll(".secmap__group"));
+    if (groupEls.length > 1) {
+      var jump = el("div", "secnav__jump");
+      jump.setAttribute("role", "group");
+      jump.setAttribute("aria-label", "Jump to group");
+      jump.appendChild(el("span", "secnav__jumplead", "Jump to group"));
+      if (overview) {
+        // On a narrow screen the overview leads the row (the title bar's
+        // own copy is for wide screens).
+        var ov2 = overview.cloneNode(true);
+        ov2.className = "secnav__jumpbtn secnav__jumpbtn--overview";
+        jump.appendChild(ov2);
+      }
+      groupEls.forEach(function (g) {
+        var name = g.getAttribute("data-group") || "";
+        var b = el("button", "secnav__jumpbtn");
+        b.type = "button";
+        b.textContent = name;
+        if (name === hereGroup) b.setAttribute("aria-current", "true");
+        b.addEventListener("click", function () {
+          var box = mapBody.getBoundingClientRect();
+          var y = g.getBoundingClientRect().top - box.top + mapBody.scrollTop - 8;
+          mapBody.scrollTo({ top: Math.max(0, y), behavior: behavior() });
+          var first = g.querySelector("a[href]");
+          if (first) first.focus({ preventScroll: true });
+        });
+        jump.appendChild(b);
+      });
+      head.appendChild(jump);
+    }
   }
   mapPanel.appendChild(mapBody);
 
   /* --- 2. On this page ------------------------------------------------------ */
   var tocBtn = null, tocPanel = null, tocClose = null, chips = [], heads = [];
-  var tocSrc = foot.querySelector("[data-sectoc] .secnav__chips");
+  var tocBox = foot.querySelector("[data-sectoc]");
+  var tocSrc = tocBox ? tocBox.querySelector(".secnav__chips") : null;
+  // What the page's sections are ("54 terms" on the glossary).
+  var tocCount = tocBox ? tocBox.getAttribute("data-count") : "";
+  var tocNoun = tocBox ? tocBox.getAttribute("data-noun") || "sections" : "sections";
   if (tocSrc) {
     var list = tocSrc.cloneNode(true);
     // Only sections the page is showing (a chooser can hide its index).
@@ -175,7 +215,7 @@
       tocBtn.type = "button";
       tocBtn.setAttribute("aria-expanded", "false");
       tocBtn.setAttribute("aria-controls", "secnav-toc");
-      tocBtn.setAttribute("aria-label", "On this page: " + chips.length + " sections");
+      tocBtn.setAttribute("aria-label", "On this page: " + (tocCount || chips.length) + " " + tocNoun);
       tocBtn.title = "Jump to a section of this page";
       tocBtn.innerHTML = '<span class="secnav__icon secnav__icon--toc">' + icon("list") + "</span>" +
         '<span class="secnav__label"><span class="secnav__always">On this page</span>' +
@@ -191,7 +231,7 @@
       var th = el("div", "secnav__phead");
       th.innerHTML = '<span class="secnav__ptext"><span class="secnav__ptitle">On this page</span> ' +
         '<span class="secnav__pmeta"></span></span>';
-      th.querySelector(".secnav__pmeta").textContent = chips.length + " sections";
+      th.querySelector(".secnav__pmeta").textContent = (tocCount || chips.length) + " " + tocNoun;
       tocClose = closeButton("On this page");
       th.appendChild(tocClose);
       tocPanel.appendChild(th);
@@ -232,7 +272,7 @@
     filtersBtn.title = "Show the filters at the top of the list";
     filtersBtn.innerHTML = '<span class="secnav__icon">' + icon("filter") + "</span>" +
       '<span class="secnav__label"><span class="secnav__always">Filters</span></span>' +
-      '<span class="secnav__badge" data-n="0" aria-hidden="true">0</span>';
+      '<span class="secnav__badge" data-n="0" aria-hidden="true"></span>';
     badge = filtersBtn.querySelector(".secnav__badge");
     bar.appendChild(filtersBtn);
   }
@@ -386,7 +426,7 @@
       nav.style.bottom = "";
     }
     var short = mode === "dock" && phone.matches;
-    mapBtn.setAttribute("aria-label", short ? "Browse pages in " + section
+    mapBtn.setAttribute("aria-label", short ? "Browse section: " + section
       : "Browse " + section + ", all " + total + " pages");
     reserve();
     update();
@@ -436,7 +476,7 @@
     // for a group taller than the panel, on the current card itself),
     // never on a card cut off at its top.
     var scroller = panel.querySelector(".secnav__pbody");
-    var cur = panel.querySelector('[aria-current="page"], [aria-current="true"], .secnav__chip[aria-current]');
+    var cur = scroller.querySelector('[aria-current="page"], [aria-current="true"], .secnav__chip[aria-current]');
     scroller.scrollTop = 0;
     if (!cur) return;
     var box = scroller.getBoundingClientRect();
@@ -491,15 +531,37 @@
     if (openPair && e.relatedTarget && !nav.contains(e.relatedTarget)) closeAll(false);
   });
 
-  /* A focused control never hides behind the dock (scroll-padding covers
-     most browsers; this covers the rest). */
+  /* A focused control is never even partly hidden by the dock at the foot
+     or by the sticky header and any sticky bar at the top (WCAG 2.4.11 and
+     2.4.12). scroll-padding covers most browsers; this covers the rest,
+     and the header, whose height changes as it hides and returns. */
+  function topCover() {
+    var bottom = headerBottom();
+    Array.prototype.forEach.call(document.querySelectorAll(".md-main [data-sticky-bar], .md-main .section-chips"),
+      function (s) {
+        var st = window.getComputedStyle(s);
+        if (st.position !== "sticky" && st.position !== "fixed") return;
+        var r = s.getBoundingClientRect();
+        if (r.top <= bottom + 1 && r.bottom > bottom) bottom = r.bottom;
+      });
+    return bottom;
+  }
+  function reveal(target) {
+    if (!target || nav.contains(target) || !target.getBoundingClientRect) return;
+    if (target.closest && target.closest(".md-header, .md-tabs, .md-sidebar")) return;
+    var r = target.getBoundingClientRect();
+    if (r.width === 0 && r.height === 0) return;
+    var top = topCover() + 8;
+    var limit = (mode === "dock" ? bar.getBoundingClientRect().top : window.innerHeight) - 8;
+    if (r.height > limit - top) return;
+    if (r.bottom > limit) window.scrollBy(0, r.bottom - limit);
+    else if (r.top < top) window.scrollBy(0, r.top - top);
+  }
   document.addEventListener("focusin", function (e) {
-    if (mode !== "dock" || nav.contains(e.target) || !e.target.getBoundingClientRect) return;
-    var r = e.target.getBoundingClientRect();
-    var limit = bar.getBoundingClientRect().top - 8;
-    if (r.bottom > limit && r.top < window.innerHeight && r.height < limit - headerBottom()) {
-      window.scrollBy(0, r.bottom - limit + 8);
-    }
+    reveal(e.target);
+    // The header can slide back in as the page scrolls up; check again
+    // once it has moved.
+    window.setTimeout(function () { if (document.activeElement === e.target) reveal(e.target); }, 260);
   });
 
   /* --- as you scroll ---------------------------------------------------------- */
@@ -541,15 +603,14 @@
         badge.setAttribute("data-n", String(n));
         badge.textContent = String(n);
       }
-      filtersBtn.setAttribute("aria-label", "Filters, " + (n ? n + " on" : "none on") +
-        ": show the filters at the top of the list");
+      filtersBtn.setAttribute("aria-label", n ? "Filters, " + n + " active" : "Filters");
     }
     if (heads.length) {
       var line = hb + 48, at = -1;
       for (var i = 0; i < heads.length; i++) {
         if (heads[i].getBoundingClientRect().top - line <= 0) at = i; else break;
       }
-      if (nowEl) nowEl.textContent = at === -1 ? chips.length + " sections" : text(chips[at]);
+      if (nowEl) nowEl.textContent = at === -1 ? (tocCount || chips.length) + " " + tocNoun : text(chips[at]);
       chips.forEach(function (c, j) {
         if (j === at) c.setAttribute("aria-current", "location");
         else c.removeAttribute("aria-current");

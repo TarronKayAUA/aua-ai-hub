@@ -87,12 +87,17 @@ tabs:
 # `tag` is a short qualifier shown beside the group's name wherever the
 # group is drawn; `module` links the group to a lesson in Learn (the lesson's
 # page foot links back to the group); `steps` numbers that many guides after
-# the group's first page, which is its overview.
+# the group's first page, which is its overview. `noun` names what the
+# group's badge counts ("5 guides"; "pages" when left out), so a count is
+# always literal. `anchor` is the id of the group's place on its tab's
+# landing page, where the breadcrumb of a group with no overview page of its
+# own leads (the Tools & Prompts groups get one from their titles; the build
+# checks every anchor exists).
 groups:
-  "Guides for students": {icon: account-school, kind: guide}
+  "Guides for students": {icon: account-school, kind: guide, noun: guides}
   "Step-by-Step Guides": {icon: format-list-numbered, kind: guide}
-  "The seven modules": {icon: map-marker-path, route: true}
-  "Quick Reference": {icon: book-open-variant}
+  "The seven modules": {icon: map-marker-path, route: true, noun: modules}
+  "Quick Reference": {icon: book-open-variant, anchor: the-reference-shelf}
   "When you finish": {icon: flag-checkered}
   "Find a tool":
     icon: magnify
@@ -105,10 +110,12 @@ groups:
   "Work with sources":
     icon: file-document-multiple-outline
     kind: guide
+    noun: guides
     blurb: Ask questions of your own documents and of the published literature.
   "Work with agents":
     icon: robot-outline
     kind: guide
+    noun: guides
     tag: Optional, after the basics
     blurb: Hand a whole task to an assistant that plans, acts, and reports back.
     module: pathway/working-with-agents.md
@@ -116,13 +123,15 @@ groups:
   "Run models locally":
     icon: laptop
     kind: guide
+    noun: guides
     blurb: Run a model on your own computer, so what you type stays on it.
   "Compare models":
     icon: podium
     kind: benchmark
+    noun: leaderboards
     blurb: Independent leaderboards, read with their limits in mind.
-  "News": {icon: newspaper-variant-outline}
-  "Events": {icon: calendar-star}
+  "News": {icon: newspaper-variant-outline, anchor: more-news-and-events}
+  "Events": {icon: calendar-star, anchor: coming-up}
   "Announcements": {icon: bullhorn-outline}
   "Policy and committee": {icon: scale-balance}
   "This site": {icon: information-outline}
