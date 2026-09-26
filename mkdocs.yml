@@ -40,6 +40,10 @@ extra:
   footer_links:
     - text: Feedback
       url: https://forms.office.com/r/5a8RCi2YKP
+    - text: Contact
+      url: about/
+    - text: Events
+      url: conferences/
     - text: Accessibility
       url: accessibility/
 
@@ -140,81 +144,95 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
+# Navigation, redesigned 2026-09-25 (owner approved; the Phase 2 study is
+# summarized in SPEC section 12). The two audience pages are tabs that hold
+# their own guides, so a guide opened from a hub keeps that hub's tab and
+# breadcrumb. File paths are unchanged: a page's URL comes from its file,
+# not its place here. Three index pages stay wrapped in single-page sections
+# (Tool Directory, News Archive, Announcements) so navigation.indexes does
+# not turn them into their parent tab's landing page (SPEC, 2026-09-23).
 nav:
   - Home: index.md
+  - For Students:
+      - For Students: students.md
+      - Shelf and NBME Score Reports: playbooks/score-reports.md
+      - AI and the Residency Application: playbooks/residency-application.md
+  - "For Faculty & Staff":
+      - "For Faculty & Staff": faculty.md
+      - Step-by-Step Guides:
+          - playbooks/index.md
+          - Preparing a Lecture: playbooks/lecture-prep.md
+          - Writing and Vetting Exam Questions: playbooks/exam-items.md
+          - Your Syllabus AI Statement: playbooks/syllabus-statement.md
+          - Feedback on Student Writing: playbooks/writing-feedback.md
+          - AI-Generated Images in Teaching: playbooks/ai-images.md
+          - Reviewing the Literature: playbooks/literature-reviews.md
+          - "Administrative Drafting: Memos, Minutes, and Reports": playbooks/admin-drafting.md
   - Learn:
       - pathway/index.md
       - "1. How AI Works": pathway/how-ai-works.md
       - "2. Prompting Fundamentals": pathway/prompting.md
-      - "3. The Policy in Practice: Data and Integrity": pathway/rules.md
+      - "3. The Policy in Practice": pathway/rules.md
       - "4. Teaching and Assessment": pathway/teaching-assessment.md
       - "5. Research and Scholarship": pathway/research.md
       - "6. Clinical Contexts": pathway/clinical.md
       - "7. Working with Agents": pathway/working-with-agents.md
-      - Reference:
-          - How LLMs Work (Primer): basics/how-llms-work.md
-          - Getting Better Answers: basics/better-answers.md
+      - Quick Reference:
           - Glossary: basics/glossary.md
           - Common Misconceptions: basics/misconceptions.md
+          - "How LLMs Work, in Depth": basics/how-llms-work.md
+          - Getting Better Answers: basics/better-answers.md
       - Courses and Resources: learning/index.md
-      - Worked Examples:
+  - "Tools & Prompts":
+      - Tool Directory:
+          - tools/index.md
+      - Prompt Library:
+          - prompts/index.md
+          - Learning to Prompt: prompts/learning.md
+          - Prompt Exchange: prompts/exchange.md
+      - "Gemini Notebook (formerly NotebookLM)": tools/gemini-notebook.md
+      - AI for Research: tools/research.md
+      - Local and Open Models:
+          - Running Models Locally: tools/local.md
+          - Hardware for Local AI: tools/hardware.md
+      - Agents and Setups (Advanced):
+          - AI Agents: tools/agents.md
+          - Choosing Your Interface: tools/interfaces.md
+          - Your First Agent Session: tools/first-session.md
+          - "Standing Setups: Assistants that Remember": tools/standing-setups.md
+          - Agent Skills: tools/skills.md
+      - Benchmarks:
+          - Language Models: benchmarks.md
+          - Image Generation: benchmarks/image.md
+          - Video Generation: benchmarks/video.md
+  - "News & Events":
+      - "News & Events": news-and-events.md
+      - News:
+          - Medical Education: news/medical-education.md
+          - This Week: news/this-week.md
+          - Clinical Practice: news/clinical-practice.md
+          - General AI: news/general-ai.md
+          - Videos: news/videos.md
+          - Podcasts: news/podcasts.md
+          - News Archive:
+              - news/archive/index.md
+      - Events:
+          - Conferences and Events: conferences.md
+          - Opportunities: opportunities.md
+      - Announcements and Committee Polls:
+          - announcements/index.md
+  - Governance:
+      - governance/index.md
+      - AI Responsible Use Policy: governance/policy.md
+      - AI Committee: governance/committee.md
+      - Committee Work and Updates: governance/updates.md
+      - How Tools Are Reviewed: governance/review-process.md
+  - "About & Contact":
+      - About This Site: about.md
+      - Accessibility: accessibility.md
+      - Project Write-ups:
           - worked-examples/index.md
           - When a Check Stops Checking: worked-examples/this-site.md
           - I Fixed Software I Cannot Read: worked-examples/sharex-hdr.md
           - My Favorite Game Was Not a Game: worked-examples/recommender.md
           - The Neanderthal Gene That Explained Nothing: worked-examples/genome.md
-  - Use AI:
-      - Tool Directory:
-          - tools/index.md
-      - Playbooks:
-          - playbooks/index.md
-          - Preparing a Lecture: playbooks/lecture-prep.md
-          - Writing Exam Questions: playbooks/exam-items.md
-          - Syllabus AI Statement: playbooks/syllabus-statement.md
-          - Reviewing the Literature: playbooks/literature-reviews.md
-          - Feedback on Student Writing: playbooks/writing-feedback.md
-          - Administrative Drafting: playbooks/admin-drafting.md
-          - Your Score Reports: playbooks/score-reports.md
-          - Residency Application: playbooks/residency-application.md
-          - AI-Generated Images: playbooks/ai-images.md
-      - Prompts:
-          - prompts/index.md
-          - Learning to Prompt: prompts/learning.md
-          - Prompt Exchange: prompts/exchange.md
-      - AI Agents: tools/agents.md
-      - Choosing Your Interface: tools/interfaces.md
-      - Your First Agent Session: tools/first-session.md
-      - Standing Setups: tools/standing-setups.md
-      - Agent Skills: tools/skills.md
-      - Running Models Locally: tools/local.md
-      - Hardware for Local AI: tools/hardware.md
-      - Gemini Notebook (NotebookLM): tools/gemini-notebook.md
-      - AI for Research: tools/research.md
-      - Benchmarks:
-          - Language Models: benchmarks.md
-          - Image Generation: benchmarks/image.md
-          - Video Generation: benchmarks/video.md
-  - For Faculty & Staff: faculty.md
-  - For Students: students.md
-  - News & Events:
-      - This Week: news/this-week.md
-      - Medical Education: news/medical-education.md
-      - Clinical Practice: news/clinical-practice.md
-      - General AI: news/general-ai.md
-      - Videos: news/videos.md
-      - Podcasts: news/podcasts.md
-      - News Archive:
-          - news/archive/index.md
-      - Conferences: conferences.md
-      - Opportunities: opportunities.md
-  - Governance:
-      - governance/index.md
-      - AI Responsible Use Policy: governance/policy.md
-      - AI Committee: governance/committee.md
-      - Committee Updates: governance/updates.md
-      - How Tools Are Reviewed: governance/review-process.md
-  - About:
-      - About This Site: about.md
-      - Announcements:
-          - announcements/index.md
-      - Accessibility: accessibility.md
