@@ -13,12 +13,12 @@ Items are selected several times a day by an automated pipeline and the summarie
 <img class="section-banner" src="../../assets/section-medical-education.svg" alt="">
 
 <div class="section-brief">
-<p>Large language models used as graders on computer science exams show wide variation in accuracy and reveal systematic failure modes that complicate their use in automated assessment <a href="https://arxiv.org/abs/2609.29333">[1]</a>. A related study finds LLM-generated scores in a voice-based virtual standardized patient platform agree closely with faculty ratings, suggesting a path toward scalable performance evaluation <a href="https://mededu.jmir.org/2026/1/e95578">[3]</a>. Meanwhile, a cross-sectional survey of medical students and faculty ties willingness to use AI to AI literacy and perceived risk <a href="https://mededu.jmir.org/2026/1/e105032">[2]</a>, and a multi-institutional study finds students already use these tools informally, often without institutional guidance <a href="https://pubmed.ncbi.nlm.nih.gov/42779013?fc=20260609215449&amp;ff=20260924093431&amp;v=2.20.1">[4]</a>. A retrospective cohort study adds that AI-assisted diagnostic training outperformed textbook-only instruction for emergency interns <a href="https://pubmed.ncbi.nlm.nih.gov/42774238?fc=20260609215449&amp;ff=20260923154133&amp;v=2.20.1">[11]</a>.</p>
-<p>Also this week: six items address teaching and curriculum, including a dermatology board-style question benchmark showing inconsistent reasoning stability among four exam and benchmark studies. Three pieces cover attitudes and adoption, and two address assessment and feedback, such as auditable coding schemas for scoring educational dialogue.</p>
-<p class="section-brief-date">The picture as of September 25, 2026; numbered links go to the items below.</p>
+<p>Automated grading systems are drawing scrutiny as large language models take on scoring roles across formats, with evaluation of LLM graders on computer science exams showing wide variation and systematic failure modes that carry over to medical assessment design <a href="https://arxiv.org/abs/2609.29333">[8]</a>. A randomized simulation trial found AI assistance boosts pharmacist and trainee accuracy in medication verification but also introduces automation bias, underscoring the need for structured validation training <a href="https://pubmed.ncbi.nlm.nih.gov/42788619?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">[4]</a>. Medical students are already using generative AI informally, prompting calls for educators to set clear expectations around disclosure and privacy <a href="https://pubmed.ncbi.nlm.nih.gov/42779013?fc=20260609215449&amp;ff=20260924093431&amp;v=2.20.1">[11]</a>. Elsewhere, an AI-enabled personalized learning model improved clinical thinking and exam performance among cardiovascular surgery trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42786480?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">[1]</a>.</p>
+<p>Also this week: six items address teaching and curriculum design, from psychiatric training reviews to continuing education courses built with ChatGPT, while four more examine assessment and feedback methods including automated short-answer grading in radiology. Three pieces explore attitudes and adoption among students and faculty, alongside single studies on exam benchmarking and simulation-based skills training.</p>
+<p class="section-brief-date">The picture as of September 26, 2026; numbered links go to the items below.</p>
 </div>
 
-<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (5)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (5)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
+<div class="topic-chips"><button class="topic-chip is-active" data-topic="">All (15)</button><button class="topic-chip" data-topic="teaching-and-curriculum">Teaching and curriculum (6)</button><button class="topic-chip" data-topic="assessment-and-feedback">Assessment and feedback (4)</button><button class="topic-chip" data-topic="attitudes-and-adoption">Attitudes and adoption (3)</button><button class="topic-chip" data-topic="exams-and-benchmarks">Exams and benchmarks (1)</button><button class="topic-chip" data-topic="simulation-and-skills">Simulation and skills (1)</button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -61,6 +61,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42787962?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">Artificial Intelligence and Psychiatric Training: Opportunities, Challenges, and the Future of Mental Health Education</a>
     <p class="news-card-summary">Review examines how machine learning, natural language processing, and large language models are reshaping psychiatric clinical training and education delivery.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42789986?fc=20260609215449&amp;ff=20260926010308&amp;v=2.20.1">Why Manual Scheduling of Resident Rosters Fails: &quot;Schedule Gridlock&quot; and the Case for Combinatorial Optimization</a>
+    <p class="news-card-summary">Combinatorial optimization with expressive constraint languages solves resident scheduling by addressing local rigidity constraints that manual systems cannot overcome.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -117,13 +124,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 24, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786409?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">LLM-Based Psychiatric Interview Simulation: Technical Development and Pilot Expert-Based Content Validation of a Voice Prototype</a>
     <p class="news-card-summary">Voice-based large language model simulations enable psychiatric interview practice; current limitations suggest use for formative training rather than high-stakes assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.27043">EduBehaviors: Assertion-based Schemas for Auditable Coding of Educational Dialogues</a>
-    <p class="news-card-summary">EduBehaviors presents assertion-based schemas for auditable coding of educational dialogue, providing verifiable insight into why language models assign pedagogical labels to conversations.</p>
   </div>
 </div>
 </div>
