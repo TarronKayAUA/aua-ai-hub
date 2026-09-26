@@ -45,7 +45,7 @@ A real case makes a good study prompt, and the version that works best with an A
 <p class="hf-box-title">AI in patient care</p>
 <p class="hf-box-sub">Informs the decision, never owns it</p>
 <ul>
-<li>informs decisions; clinicians make them</li>
+<li>the model has not examined the patient</li>
 <li>your supervisor's judgment comes first</li>
 </ul>
 <p class="hf-box-foot">Accountability stays human.</p>
