@@ -151,6 +151,36 @@ with sync_playwright() as pw:
           "each brief shows its lede with its fold under it")
     check(pg.locator("audio[preload='none']").count() == 3, "native players are preload=none")
     ctx.close()
+
+    # 6. an archive week: its digest player by keyboard, and its text with JS off
+    ARCH = "http://hub.test/news/archive/2026-w39/"
+    for w, h in ((1920, 1080), (390, 844)):
+        print(f"archive 2026-w39, width {w}")
+        ctx = b.new_context(viewport={"width": w, "height": h})
+        ctx.route("**/*", route(SITE))
+        pg = ctx.new_page()
+        reqs = []
+        pg.on("request", lambda r: reqs.append(r.url) if r.url.endswith(".mp3") else None)
+        pg.goto(ARCH, wait_until="load")
+        pg.wait_for_timeout(400)
+        feeds = pg.locator("section.wk-feed")
+        lefts = feeds.evaluate_all("fs => fs.map(f => Math.round(f.getBoundingClientRect().left))")
+        check(len(set(lefts)) == (len(lefts) if w >= 1200 else 1), f"{len(lefts)} feed panels, left edges {lefts}")
+        check(not reqs, "no audio requested before Listen")
+        play = pg.locator(".listen-play").first
+        play.focus()
+        pg.keyboard.press("Enter")
+        pg.wait_for_timeout(800)
+        check(any("digest-2026-w39" in u for u in reqs), "pressing Listen (keyboard) requests the digest's audio")
+        ctx.close()
+    ctx = b.new_context(viewport={"width": 1920, "height": 1080}, java_script_enabled=False)
+    ctx.route("**/*", route(SITE))
+    pg = ctx.new_page()
+    pg.goto(ARCH, wait_until="load")
+    src = Path(SITE, "news/archive/2026-w39/index.html").read_text(encoding="utf-8")
+    check(pg.locator(".news-card").count() == src.count('class="news-card"'), "archive, JS off: every news card present")
+    check(pg.locator("audio[preload='none']").count() == 1, "archive, JS off: the native player is preload=none")
+    ctx.close()
     b.close()
 
 print("week_check: " + ("ok" if not fails else f"{len(fails)} FAILED"))

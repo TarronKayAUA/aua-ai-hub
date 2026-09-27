@@ -30,7 +30,9 @@ content (on_page_content), and so reaches every archived week too:
 3. THE REST. The digest's week in brief, its short update sections
    (conference calendar, new opportunities) as a row of panels, videos,
    podcasts and "Also this week" (in columns) are placed so no panel sits
-   mostly empty. On This Week, the first ten videos show (two rows of five)
+   mostly empty: on a digest, videos and podcasts share one row, and a feed
+   with far more items than the others spans two tracks with its list in
+   two columns. On This Week, the first ten videos show (two rows of five)
    and the rest stay behind "Show the other N videos", its count updated.
 
 Every page it touches is checked: removing the wrappers this hook inserted
@@ -168,6 +170,17 @@ def _arrange(html: str, src: str) -> str:
     return _arrange_body(html, src) + tail
 
 
+def _dominant(counts: list[int]) -> int | None:
+    """The index of a feed with at least four items and at least twice as
+    many as any other feed, or None."""
+    if len(counts) < 2 or len(counts) > 3:
+        return None
+    top = max(counts)
+    k = counts.index(top)
+    rest = counts[:k] + counts[k + 1:]
+    return k if top >= 4 and top >= 2 * max(rest) else None
+
+
 def _arrange_body(html: str, src: str) -> str:
     head, sections = _sections(html)
     if not sections:
@@ -187,12 +200,30 @@ def _arrange_body(html: str, src: str) -> str:
                 c, _ = _strip_hr(sections[i][2])
                 run.append((sections[i][0], c))
                 i += 1
-            out.append(f'<div class="wk-feeds kind-group" data-wk-n="{len(run)}">')
-            for fid, c in run:
-                out.append(f'<section class="wk-feed ne-card kind-block"{kattr} aria-labelledby="{fid}">'
-                           f"{c}</section>")
+            # On a digest, a feed with far more items than the others takes
+            # two tracks and sets its list in two columns, so the short
+            # columns beside it do not stand over a tall empty space.
+            wide = _dominant([c.count('class="news-card"') for _, c in run]) if src != WEEK else None
+            tracks = len(run) + (1 if wide is not None else 0)
+            out.append(f'<div class="wk-feeds kind-group" data-wk-n="{tracks}">')
+            for k, (fid, c) in enumerate(run):
+                cls = "wk-feed ne-card kind-block" + (" wk-feed--wide" if k == wide else "")
+                out.append(f'<section class="{cls}"{kattr} aria-labelledby="{fid}">{c}</section>')
             out.append("</div>\n")
-            shapes.append(f"feeds {len(run)}")
+            shapes.append(f"feeds {len(run)}" + (f" (feed {wide + 1} wide)" if wide is not None else ""))
+            continue
+        if sid == "videos" and src != WEEK and i + 1 < len(sections) and sections[i + 1][0] == "podcasts":
+            # On a digest, videos and podcasts share one row, each card one
+            # share of it (at most 18rem), rather than two mostly empty rows.
+            pchunk, _ = _strip_hr(sections[i + 1][2])
+            v, p = len(_CARD.findall(chunk)), len(_CARD.findall(pchunk))
+            out.append(f'<div class="wk-mediarow" style="--wk-cols: minmax(0, {v}fr) minmax(0, {p}fr); '
+                       f'--wk-cards: {v + p}">'
+                       f'<section class="wk-media" aria-labelledby="videos" style="--wk-n: {v}">{chunk}</section>'
+                       f'<section class="wk-media wk-podcasts" aria-labelledby="podcasts" style="--wk-n: {p}">'
+                       f"{pchunk}</section></div>\n")
+            shapes.append(f"media row {v}+{p}")
+            i += 2
             continue
         if title in ("Conference calendar updates", "New opportunities"):
             run = []

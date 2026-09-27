@@ -580,6 +580,23 @@
   .md-typeset .wk-feeds[data-wk-n="1"] {
     grid-template-columns: minmax(0, 44rem);
   }
+  .md-typeset .wk-feeds[data-wk-n="4"] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  /* A digest's feed with far more items than the others: two tracks, its
+     list in two columns, so the columns beside it are not left standing
+     over a tall empty space. */
+  .md-typeset .wk-feed--wide {
+    grid-column: span 2;
+  }
+  .md-typeset .wk-feed--wide .news-list {
+    display: block;
+    columns: 2;
+    column-gap: 1.6rem;
+  }
+  .md-typeset .wk-feed--wide .news-card {
+    break-inside: avoid;
+  }
 }
 
 .md-typeset .wk-feed.ne-card {
@@ -755,6 +772,25 @@
   grid-template-columns: repeat(auto-fill, minmax(11rem, 14rem));
 }
 
+/* A digest's videos and podcasts share one row: each card one share of
+   the width (at most 18rem), videos first. */
+@media screen and (min-width: 60em) {
+  .md-typeset .wk-mediarow {
+    display: grid;
+    grid-template-columns: var(--wk-cols);
+    column-gap: 1.2rem;
+    align-items: start;
+    max-width: calc(var(--wk-cards) * 18rem);
+    margin: 0 0 1.6rem;
+  }
+  .md-typeset .wk-mediarow > .wk-media {
+    margin: 0;
+  }
+  .md-typeset .wk-mediarow > .wk-media > .video-grid {
+    grid-template-columns: repeat(var(--wk-n), minmax(0, 1fr));
+  }
+}
+
 /* The digest's week in brief: a readable measure in two columns. */
 @media screen and (min-width: 60em) {
   .md-typeset .wk-brief .section-brief {
@@ -799,7 +835,9 @@
   display: none;
 }
 
-/* "Also this week": the topic groups in columns, each group whole. */
+/* "Also this week": the topic groups in balanced columns; a group may
+   continue into the next column, an item never splits and a group's name
+   stays with its first item. */
 @media screen and (min-width: 60em) {
   .md-typeset .wk-also {
     columns: 3;
@@ -808,7 +846,6 @@
   .md-typeset .wk-also > h2 {
     column-span: all;
   }
-  .md-typeset .wk-also > ul,
   .md-typeset .wk-also li {
     break-inside: avoid-column;
   }

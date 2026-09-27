@@ -1,18 +1,146 @@
-Week round: IN PROGRESS, building the render-time hook (scripts/layout_week.py)
+Week round: READY
 
 # Week Round Status (resume point)
 
-Branch `week-round` (from origin/main 79ce3c9). Brief: `_round/c/BRIEF.md`.
+Branch `week-round` (from origin/main 79ce3c9). Brief: `_round/c/BRIEF.md`. Every check the brief asks for passes on the final build (below).
 
-- Round tools were brought from origin/space-round into `_round/`.
-- Chromium already trusts the proxy CA (it has the ccr-agent-proxy entry), so measurement loads Inter.
-- For local testing, placeholder MP3s are copied into docs/assets/audio for the three This Week briefs, the three feed pages and digests w38 and w39, so the players render. They are gitignored (`news-*`, `digest-*`) and never committed.
-- Baseline build: /tmp/wk-base. Baseline measures: /tmp/claude-0/wk/base.
+## What was built, and how
 
-## Baseline (measure.py, before)
+Everything happens at render time, in a new MkDocs hook, `scripts/layout_week.py`. It is registered in mkdocs.yml after layout_news and before layout_learn, layout_nav, layout_width and title_case.
+
+- **No generated file was touched.** `git diff 79ce3c9 -- docs/news` is empty.
+- **aggregate.py is unchanged** and was never run in write mode.
+- Because the hook works on the rendered HTML, every archived week gets the new look, and so will future weeks.
+
+The only other code changes are:
+
+- `docs/stylesheets/layout-news.css`: a week-round block at the end.
+- `scripts/layout_frame.py`: the weekly digests are now "shelf" pages (full frame) instead of "reference" pages.
+- `mkdocs.yml`: the hook is registered.
+
+### This Week (news/this-week.md)
+
+1. **Three columns, one per feed**, in the Latest News panel look of News & Events.
+   - Each panel has an outline, the news hue on its left edge, and the feed name as its heading.
+   - Each item shows its title, then "source · date", then the summary. Thin rules separate items.
+   - Each panel keeps its own brief with Listen, its Topic chips, its list and its "Show the other N items".
+   - The panel is the section that docs/javascripts/topics.js already filters to. Choosing a chip whose topic appears only in the collapsed tier still opens that tier and shows exactly the chip's count.
+   - The jump chips still work.
+2. **The brief is restructured.** In order:
+   - The lede.
+   - Directly under it, a plain disclosure labelled "Read the rest of this week's brief". It holds only the continuation paragraphs.
+   - Then, outside the disclosure: the player (Listen, Speed, the AI-voice note) and the "The picture as of" line.
+
+   There is no box inside a box, and the audio is `preload="none"`. A brief with no continuation gets no disclosure (the hook handles that case; none occurs in today's data).
+3. **Videos: ten show, in two rows of five.** The rest stay behind "Show the other N videos", with N recounted (today "Show the other 3 videos"). The hook asserts that the old N matched the number of hidden cards before rewriting it.
+4. **Podcasts** now show at card size (11 to 14rem) rather than the full width of the frame.
+5. **The foot is spread across the frame.** More in This Section runs as cards across the width, with the report link under it. The foot is kept outside the last section, not inside it.
+6. **Phones**: one column in feed order, nothing lost, no sideways scroll from 360 to 1920.
+
+### Weekly archive pages (16 weeks, news/archive/2026-w24 to w39)
+
+- **The week in brief** runs in two balanced columns across the frame, with Listen spanning both.
+- **Conference calendar and opportunity updates** sit in slim panels in one row.
+- **The feed sections are in the same three-column panel look.** When one feed has at least 4 items and at least twice as many as any other feed, it spans two tracks and sets its list in two columns. Otherwise its neighbours would sit over a tall empty space; for example, w38 has 1 and 7 items.
+  - Order is unchanged.
+  - Phones return it to one column.
+  - This applies to 13 of the 16 weeks. The build log lists each week's shape.
+- **Videos and podcasts share one row** when a week has both, with each card taking one share (at most 18rem). Before, each took a mostly empty full-width row.
+- **"Also this week"** runs in three balanced columns.
+  - A topic group may continue into the next column.
+  - An item never splits.
+  - A group's name stays with its first item.
+- **The foot** is fixed as on This Week.
+- **The archive index** (news/archive/) is unchanged. Its foot was already spread across the frame.
+
+### Also, for consistency
+
+The three feed pages (Medical Education, Clinical Practice, General AI) show the same brief, so it is restructured the same way there. Their layout is otherwise unchanged.
+
+## Design decisions the owner may want to know
+
+- **Opening the brief's disclosure hides its label**, so the continuation reads straight on from the lede as one text. The consequence is that it cannot be folded again on that visit, and keyboard focus moves on to the next item.
+- **Line length.** On shelves, the brief's columns and the item summaries run at about 90 to 110 characters per line at 1920. This Week was already about that before (median 106). Paragraphs outside the panels are held to 44rem.
+
+## Integrity (built into the hook; the build fails on a mismatch)
+
+- **The brief step only moves blocks.** The sorted set of paragraphs, player, date line and lede is identical before and after.
+- **The arrangement only wraps.** The page's text, in order, is identical once the hook's wrappers and the horizontal rules it drops between sections are removed. The one exception is the recounted "Show the other N videos" on This Week.
+- **The build prints what it did.** It restructured 6 briefs (6 with a continuation to fold), arranged 17 pages with their shapes, and moved 4 videos up. It fails if This Week was not arranged.
+
+## Narration: spoken text unchanged
+
+`_round/c/narration_proof.py 79ce3c9` runs `narrate.news_targets()` on this tree and on a worktree of the base commit. No narration was run.
+
+```
+  digest-2026-w39                               same  sha256 59c5d3b201c2dfaf  1943 chars
+  news-clinical-practice-clinical-practice      same  sha256 0b02acfdc3d62515  1213 chars
+  news-general-ai-general-ai                    same  sha256 d623cc365623e50f  1170 chars
+  news-medical-education-medical-education      same  sha256 a3888995a02bdc8b  1417 chars
+  news-this-week-clinical-practice              same  sha256 0b02acfdc3d62515  1213 chars
+  news-this-week-general-ai                     same  sha256 d623cc365623e50f  1170 chars
+  news-this-week-medical-education              same  sha256 a3888995a02bdc8b  1417 chars
+narration_proof: identical
+```
+
+The narration reads the markdown, which this round does not touch, so the result could not have been otherwise. The proof shows it anyway.
+
+## Checks on the final build
+
+| Check | Result |
+|---|---|
+| `mkdocs build --strict` | clean, no warnings |
+| title_case | 2702 checked, 0 violations |
+| layout_width block integrity | blocks read/written 1620 / 1620, 0 left as they were |
+| Sideways scroll (`_round/c/overflow.py`, 111 pages x 360, 390, 768, 1024, 1280, 1440, 1920) | 777 loads, 0 with sideways scroll |
+| `_round/c/week_check.py`, This Week at 1920 and 390, by keyboard | ok. Details below the table. |
+| `_round/c/week_check.py`, archive w39 at 1920 and 390 | ok. Three panels side by side at 1920 and stacked at 390; no audio before Listen; Listen by keyboard fetches the digest audio; with JS off, every card is present and the player is preload=none. |
+| `_round/c/nav_check.py` (Navigate control, JS on and off) | ok; with JS off, 111 of 111 pages are reachable |
+| `_round/c/linkcheck.py` | 19628 internal links in 112 pages, 0 unresolved |
+| Anchors (every `id` on 111 pages, base build against final) | 0 removed, 0 added |
+
+What week_check covers on This Week, at 1920 and 390, by keyboard:
+
+- Each jump chip brings its heading into view.
+- The panels sit side by side at 1920 and stack in feed order at 390.
+- In each column, the chip whose topic is only behind "Show the other N items" shows exactly its count, opens the tier, leaves the other columns alone, and shows a status line. All restores every card.
+- Every "Show the other N" opens with Enter.
+- Each fold is labelled "Read the rest of this week's brief", holds only paragraphs, and opens with Enter. The player and the date line sit outside it.
+- No audio is requested before Listen, and Listen by keyboard fetches the brief's audio.
+- With JavaScript off:
+  - all 130 cards are present;
+  - the chips rows stay hidden;
+  - all 3 ledes and 3 folds show;
+  - all 3 players are preload=none.
+
+## Before and after (`_round/measure.py`, height in px, blank share per screen)
 
 | Page | Height 1920 | Blank 1920 | Height 1440 | Blank 1440 |
 |---|---|---|---|---|
-| news/this-week | 10313 | 39% | 9390 | 41% |
-| news/archive/2026-w39 | 12722 | 20% | 11463 | 21% |
-| news/archive/2026-w38 | 11073 | 22% | 10022 | 20% |
+| news/this-week | 10313 → 5643 | 39% → 24% | 9390 → 5300 | 41% → 27% |
+| news/archive/2026-w39 | 12722 → 7966 | 20% → 21% | 11463 → 7488 | 21% → 18% |
+| news/archive/2026-w38 | 11073 → 7633 | 22% → 20% | 10022 → 7153 | 20% → 17% |
+
+The archives were "reference" pages before (one narrow measure). They are now roughly a third shorter with about the same or less blank share.
+
+The largest blank areas left on these pages are the ones every shelf page has:
+
+- the space beside the short intro at the top;
+- the space beside the comments note at the foot;
+- on This Week, the space to the right of its two podcast cards.
+
+## New wording (every new label, quoted exactly)
+
+- "Read the rest of this week's brief" (the brief's disclosure; it replaces "Read this week's brief, or listen").
+- No other new label. "Show the other N videos" on This Week keeps its wording; only N changes (today "Show the other 3 videos").
+
+## Housekeeping
+
+- Round tools live under `_round/`. They were brought from origin/space-round, plus `_round/c/week_check.py` and `_round/c/narration_proof.py`.
+- No screenshots are committed. Screenshots and measurements live in the session scratch directory.
+- For local testing, placeholder MP3s were copied into docs/assets/audio so the players render:
+  - the three This Week briefs;
+  - the three feed pages;
+  - digests w38 and w39.
+
+  They are gitignored (`news-*`, `digest-*`) and were never committed.
