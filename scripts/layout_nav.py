@@ -162,14 +162,17 @@ def on_config(config):
         if cat not in rd.PROMPT_CATEGORY_LANDING:
             raise ValueError(f"layout_nav: PROMPT_CATEGORY_LANDING_LABELS names {cat!r}, which "
                              "is not a landing shortcut")
+    label = (config.get("extra") or {}).get("nav_control_label", False)
+    if not isinstance(label, bool):
+        raise ValueError("layout_nav: mkdocs.yml extra: nav_control_label must be true or false")
     _S.clear()
-    _S.update(
+    _S.update(fold_label=label,
         deco=deco, kinds=kinds, palette=palette, icons={}, tabs=[], where={}, kind={},
         counts={"tools": len(tools), "prompts": len(prompts)},
         tools=tools, tasks=tasks, members=rd.tool_task_members(tools, tasks), prompts=prompts,
         hrefs=[], feet=0, expected_feet=0, full=0, keys=0, rows={}, row_pages=0,
         tocs=0, azs=0, undecorated=set(), module_links=0, rewritten=0, rewrite_pages=0,
-        crumbs=0, lesson_ends=0,
+        crumbs=0, lesson_ends=0, door_feet=0, doors_seen=0,
     )
     if not tools or not prompts:
         raise ValueError("layout_nav: could not count data/tools.yaml or data/prompts.yaml")
@@ -804,6 +807,95 @@ def _foot(page, article_html: str, learn_next: str, keyed: set) -> str:
             f'</details>{_toc(article_html, page)}</div></nav>')
 
 
+def _site_map(page) -> tuple[str, int, int]:
+    """The homepage's map: one group per tab, each holding the tab's
+    landing page and one card per group of the tab (not every page), in nav
+    order, each card wearing its kind. Built from the same model as the
+    section maps, so it cannot drift from the nav. Returns the map, the
+    pages it covers and the number of tabs."""
+    groups, used, pages = [], set(), 0
+    for tab in _S["tabs"]:
+        cards = []
+        if tab["landing"] is not None:
+            lp = tab["landing"]
+            kind = kind_of(lp.file.src_uri)
+            if kind:
+                used.add(kind)
+            pdeco = (_S["deco"].get("pages") or {}).get(lp.file.src_uri) or {}
+            cards.append(f'<li><a class="secmap__card{_kcls(kind)}"{_kattr(kind)} href="{_esc(_href(lp, page))}">'
+                         f'<span class="secmap__icon">{_icon(pdeco.get("icon", tab["icon"]))}</span>'
+                         f'<span class="secmap__words"><span class="secmap__title">{_esc(tab["title"])} overview</span>'
+                         f' <span class="secmap__sub">The section\'s landing page</span></span></a></li>')
+        for g in tab["groups"]:
+            first = g["entries"][0]["page"]
+            if not g["overview"] and g["anchor"] and tab["landing"] is not None:
+                href = _href(tab["landing"], page, anchor=g["anchor"])
+            else:
+                href = _href(first, page)
+            kind = g["kind"]
+            if kind:
+                used.add(kind)
+            n = len(g["entries"])
+            cards.append(f'<li><a class="secmap__card{_kcls(kind)}"{_kattr(kind)} href="{_esc(href)}">'
+                         f'<span class="secmap__icon">{_icon(g["icon"])}</span>'
+                         f'<span class="secmap__words"><span class="secmap__title">{_esc(g["title"])}</span>'
+                         f' <span class="secmap__sub">{_esc(_count(n, g["noun"]))}</span></span></a></li>')
+        pages += len(tab["flat"])
+        cls = "secmap__group" + (" secmap__group--wide" if len(cards) >= 6 else "")
+        groups.append(f'<li class="{cls}"{_kattr(tab["kind"])} data-group="{_esc(tab["title"])}">'
+                      f'<p class="secmap__head"><span class="secmap__gicon">{_icon(tab["icon"])}</span>'
+                      f'<span class="secmap__gname">{_esc(tab["title"])}</span>'
+                      f'<span class="secmap__count">{_esc(_count(len(tab["flat"]), "pages"))}</span></p>'
+                      f'<ul class="secmap__cards">{"".join(cards)}</ul></li>')
+    html = (f'<div class="secmap secmap--site" data-secmap><ol class="secmap__groups">{"".join(groups)}</ol>'
+            f'{_key(used)}</div>')
+    return html, pages, len(_S["tabs"])
+
+
+def _door_foot(page, article_html: str) -> str:
+    """A landing page's foot, for the corner control only: it is written
+    hidden, because the landing page already is its section's map and
+    without JavaScript nothing is missing. A section landing carries its
+    section's map with its own overview marked as where the reader is; the
+    homepage, which belongs to no single section, carries the whole site."""
+    src = page.file.src_uri
+    found = _S["where"].get(src)
+    if found is not None and found[1] is None:
+        tab = found[0]
+        overview = (f'<a class="secfoot__overview" href="{_esc(_href(tab["landing"], page))}" '
+                    f'aria-current="page">{_esc(tab["title"])} overview '
+                    f'<span class="secfoot__here">You are here</span></a>')
+        body = overview + _map(tab, None, page)
+        attrs = (f'data-section="{_esc(tab["title"])}" data-total="{len(tab["flat"])}" '
+                 f'data-groups="{len(tab["groups"])}" '
+                 f'data-where="on the {_esc(tab["title"])} overview" data-group=""')
+        label, total, icon = f'Browse {_esc(tab["title"])}', len(tab["flat"]), tab["icon"]
+    elif page.is_homepage:
+        body, total, n = _site_map(page)
+        attrs = (f'data-section="the site" data-short="Browse site" data-title="The whole site" '
+                 f'data-unit="section" data-total="{total}" data-groups="{n}" '
+                 f'data-where="on the home page" data-group=""')
+        label, icon = "Browse the site", "sitemap-outline"
+    else:
+        return ""
+    summary = (f'<summary><span class="secfoot__sicon">{_icon(icon)}</span>'
+               f'<span class="secfoot__stext">{label}</span>'
+               f'<span class="secfoot__scount">{total} pages</span></summary>')
+    _S["door_feet"] += 1
+    return (f'<nav class="secfoot secfoot--door" hidden data-secfoot {attrs}>'
+            f'<div class="secfoot__maps"><details class="secfoot__all">{summary}'
+            f'<div class="secfoot__body">{body}</div></details>{_toc(article_html, page)}</div></nav>')
+
+
+def _with_door_foot(output: str, page) -> str:
+    _S["doors_seen"] += 1
+    start, at = output.find("<article"), output.rfind("</article>")
+    if start == -1 or at == -1:
+        raise ValueError(f"layout_nav: landing page {page.file.src_uri} has no article for its foot")
+    foot = _door_foot(page, output[start:at])
+    return output[:at] + foot + output[at:]
+
+
 # --- the Tools & Prompts landing ---------------------------------------------------------
 
 def _group_head(g, level: int = 2) -> str:
@@ -1170,6 +1262,14 @@ def _kind_style() -> str:
 
 
 def on_post_page(output, page, config):
+    output = _post_page(output, page)
+    if _S["fold_label"]:
+        # The folded control's word (mkdocs.yml extra: nav_control_label).
+        output = output.replace(" data-secfoot ", ' data-secfoot data-fold-label="Navigate" ', 1)
+    return output
+
+
+def _post_page(output, page):
     src = page.file.src_uri
     output = output.replace("</head>", _kind_style() + "</head>", 1)
     output = _crumbs(output, page)
@@ -1178,9 +1278,9 @@ def on_post_page(output, page, config):
         if src != "tools-and-prompts.md" or output.count(LANDING_SLOT) != 1:
             raise ValueError(f"layout_nav: {src} holds the landing slot; only "
                              "docs/tools-and-prompts.md may, exactly once")
-        return output.replace(LANDING_SLOT, _landing(page), 1)
-    if kind == "door":
-        return _color_page(output, page, door=True)[0]
+        return _with_door_foot(output.replace(LANDING_SLOT, _landing(page), 1), page)
+    if kind == "door" or src in layout_frame.DOOR:
+        return _with_door_foot(_color_page(output, page, door=True)[0], page)
     # A module's own Next moves to its ending, under "Where to go next".
     learn_next = ""
     if kind == "lesson":
@@ -1228,6 +1328,7 @@ def on_post_build(config):
     print("layout_nav: rendered")
     print(f"  section feet (map, sections)    : {_S['feet']} of {_S['expected_feet']} inner pages, "
           f"{_S['tocs']} with On this page ({_S['azs']} as an A to Z)")
+    print(f"  landing feet (corner control)   : {_S['door_feet']} of {_S['doors_seen']} landing pages")
     print(f"  module endings                  : {_S['lesson_ends']} (Where to go next)")
     print(f"  landing                         : {_S['full']} ({LANDING_TAB})")
     print(f"  prompt links to prompt pages    : {_S['rewritten']} rewritten on {_S['rewrite_pages']} pages")
@@ -1245,5 +1346,7 @@ def on_post_build(config):
     if bad:
         raise AssertionError("layout_nav: generated links that do not resolve:\n  "
                              + "\n  ".join(bad[:20]))
+    if _S["door_feet"] != _S["doors_seen"]:
+        raise AssertionError("layout_nav: a landing page has no foot for the corner control")
     if _S["feet"] != _S["expected_feet"] or _S["full"] != 1 or _S["lesson_ends"] != 7:
         raise AssertionError("layout_nav: a page foot, a module ending or the landing was not written")

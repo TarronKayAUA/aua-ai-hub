@@ -535,8 +535,11 @@
    every width: the labelled buttons first (the old rail tiles' two-line
    labels, side by side), folding after a few seconds without interaction to
    one round button (at least 44px) that hover, focus or a tap opens again.
-   Nothing animates. layout-nav.js lifts it above the footer as it scrolls
-   in and keeps a focused item clear of it. */
+   Folding animates the buttons into the compass (layout-nav.js, transform
+   and opacity, instant under reduced motion); opening is instant.
+   layout-nav.js lifts it above the footer as it scrolls in and keeps a
+   focused item clear of it. On every page with content, landing pages and
+   the homepage included (their foot is written hidden, for this control). */
 .secnav[data-mode="corner"] {
   left: 0.8rem;
   bottom: 0.8rem;
@@ -566,6 +569,68 @@
   width: 1.35rem;
   height: 1.35rem;
   fill: currentColor;
+}
+
+/* The tray while it folds: already inert, drawn above the page only. */
+.secnav.is-folding .secnav__bar {
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* The switchable alternative (mkdocs.yml extra: nav_control_label): once
+   folded, the compass becomes a small pill with the word "Navigate".
+   The word slides out of the compass just after the buttons have folded
+   into it, and slides back into it as the control opens, so the three
+   states read as one object: word and compass, compass, word and compass
+   (owner, 2026-09-27). The pill's radius is the circle's, so only its width
+   changes; instant under reduced motion. */
+.secnav__word {
+  display: none;
+}
+
+.secnav.has-word .secnav__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: max(44px, 2.4rem);
+  padding: 0;
+  border-radius: max(22px, 1.2rem);
+  transition: padding 160ms ease;
+}
+
+.secnav.has-word .secnav__word {
+  display: inline-block;
+  max-width: 0;
+  margin-left: 0;
+  overflow: hidden;
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+  /* Sliding back in (opening): 160ms, matching WORD_MS in layout-nav.js,
+     after which the buttons appear. */
+  transition: max-width 160ms ease, margin-left 160ms ease, opacity 110ms ease;
+}
+
+.secnav.has-word.is-shut .secnav__toggle {
+  padding: 0 0.95rem 0 0.7rem;
+  transition: padding 220ms ease;
+}
+
+.secnav.has-word.is-shut .secnav__word {
+  max-width: 6rem;
+  margin-left: 0.35rem;
+  opacity: 1;
+  transition: max-width 220ms ease, margin-left 220ms ease, opacity 200ms ease 60ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .secnav.has-word .secnav__toggle,
+  .secnav.has-word .secnav__word {
+    transition: none;
+  }
 }
 
 .secnav__toggle:hover {
@@ -792,6 +857,28 @@ html.secnav-docked body {
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
+}
+
+/* On a landing page the overview is the page itself, marked as where the
+   reader is (on narrow panels, in the Jump row and the title's own line). */
+.secnav__jumpbtn--overview[aria-current="page"],
+.secnav__overview[aria-current="page"] {
+  background: var(--nav-accent);
+  color: var(--nav-accent-on);
+  gap: 0.35rem;
+}
+
+:is(.secnav__overview, .secnav__jumpbtn) .secfoot__here {
+  font-weight: 600;
+}
+
+:is(.secnav__overview, .secnav__jumpbtn) .secfoot__here::before {
+  content: "\00b7";
+  margin-right: 0.35rem;
+}
+
+.md-typeset .secfoot[hidden] {
+  display: none;
 }
 
 .secnav__overview:hover {

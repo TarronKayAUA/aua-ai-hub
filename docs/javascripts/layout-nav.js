@@ -94,6 +94,13 @@
   var groups = foot.getAttribute("data-groups") || "";
   var where = foot.getAttribute("data-where") || "";
   var hereGroup = foot.getAttribute("data-group") || "";
+  // A landing page's foot can name the control differently: the homepage
+  // browses "the site", whose groups are sections.
+  var shortName = foot.getAttribute("data-short") || "Browse section";
+  var panelTitle = foot.getAttribute("data-title") || section;
+  var unit = foot.getAttribute("data-unit") || "group";
+  // The folded compass can carry a word (mkdocs.yml extra: nav_control_label).
+  var foldLabel = foot.getAttribute("data-fold-label") || "";
 
   var nav = el("nav", "secnav");
   nav.setAttribute("aria-label", "Section and page navigation");
@@ -118,9 +125,10 @@
   mapBtn.innerHTML =
     '<span class="secnav__icon">' + (sicon ? sicon.innerHTML : "") + "</span>" +
     '<span class="secnav__label"><span class="secnav__long"><span class="secnav__lead">Browse</span> ' +
-    '<span class="secnav__name"></span></span><span class="secnav__short">Browse section</span></span>' +
+    '<span class="secnav__name"></span></span><span class="secnav__short"></span></span>' +
     icon("chevron", "secnav__chev");
   mapBtn.querySelector(".secnav__name").textContent = section;
+  mapBtn.querySelector(".secnav__short").textContent = shortName;
   mapBtn.title = "Browse every page in " + section;
   bar.appendChild(mapBtn);
 
@@ -134,11 +142,11 @@
   head.innerHTML =
     '<span class="secnav__picon">' + (sicon ? sicon.innerHTML : "") + "</span>" +
     '<span class="secnav__ptext"><span class="secnav__ptitle"></span> <span class="secnav__pmeta"></span></span>';
-  head.querySelector(".secnav__ptitle").textContent = section;
+  head.querySelector(".secnav__ptitle").textContent = panelTitle;
   // Only numbers the panel shows: its groups, and where the reader is.
   head.querySelector(".secnav__pmeta").textContent =
-    groups + (groups === "1" ? " group" : " groups") + " \u00b7 You are " +
-    (/^inside /.test(where) ? where : "in " + where);
+    groups + " " + unit + (groups === "1" ? "" : "s") + " \u00b7 You are " +
+    (/^(inside|on) /.test(where) ? where : "in " + where);
   var overview = foot.querySelector(".secfoot__overview");
   if (overview) {
     var ov = overview.cloneNode(true);
@@ -163,8 +171,8 @@
     if (groupEls.length > 1) {
       var jump = el("div", "secnav__jump");
       jump.setAttribute("role", "group");
-      jump.setAttribute("aria-label", "Jump to group");
-      jump.appendChild(el("span", "secnav__jumplead", "Jump to group"));
+      jump.setAttribute("aria-label", "Jump to " + unit);
+      jump.appendChild(el("span", "secnav__jumplead", "Jump to " + unit));
       if (overview) {
         // On a narrow screen the overview leads the row (the title bar's
         // own copy is for wide screens).
@@ -399,15 +407,130 @@
   toggle.setAttribute("aria-controls", "secnav-bar");
   toggle.setAttribute("aria-label", "Page navigation: Browse " + section +
     (tocBtn ? ", On this page" : "") + (filtersBtn ? ", Filters" : ""));
+  if (foldLabel) {
+    // The alternative the owner can switch on: a word beside the folded
+    // compass. The accessible name stays the button's aria-label.
+    var word = el("span", "secnav__word");
+    word.textContent = foldLabel;
+    word.setAttribute("aria-hidden", "true");
+    toggle.appendChild(word);
+    nav.classList.add("has-word");
+  }
   nav.insertBefore(toggle, bar);
   var expanded = true, hover = false, foldTimer = null;
+  /* Folding is animated (owner, 2026-09-27): the buttons shrink and fade
+     into the compass, which stays put, so the reader sees where they went.
+     Transform and opacity only, on the fixed tray, so nothing on the page
+     moves; from the first frame the tray is inert (not focusable, hidden
+     from assistive technology). Opening is instant, and cancels a fold in
+     progress; with reduced motion, folding is instant too. */
+  var FOLD_MS = 300;
+  var WORD_MS = 160;  // the word sliding back into the compass (layout-nav.css)
+  var foldAnim = null, foldBox = null, revealTimer = null;
+  // Where a resting pointer was when the control folded; cleared once the
+  // pointer really moves (see the pointer handlers below).
+  var lastXY = null, stillAt = null;
+  function shut() {
+    foldAnim = null;
+    foldBox = null;
+    bar.hidden = true;
+    bar.inert = false;
+    bar.removeAttribute("aria-hidden");
+    bar.style.transformOrigin = "";
+    nav.classList.remove("is-folding");
+    nav.classList.add("is-shut");
+  }
   function setExpanded(open) {
     expanded = open;
     nav.classList.toggle("is-folded", !open);
-    bar.hidden = !open;
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
     toggle.title = open ? "Fold the page navigation" : "Show the page navigation";
+    if (foldAnim) {
+      var a = foldAnim;
+      foldAnim = null;
+      a.onfinish = null;
+      a.cancel();
+    }
+    if (revealTimer) {
+      clearTimeout(revealTimer);
+      revealTimer = null;
+    }
+    if (open) {
+      foldBox = null;
+      var wasShut = nav.classList.contains("is-shut");
+      bar.style.transformOrigin = "";
+      nav.classList.remove("is-folding", "is-shut");
+      var show = function () {
+        revealTimer = null;
+        bar.hidden = false;
+        bar.inert = false;
+        bar.removeAttribute("aria-hidden");
+      };
+      // With the word on, it first slides back into the compass, then the
+      // buttons appear in their final place, so nothing slides sideways
+      // (owner, 2026-09-27). Without the word, or with reduced motion,
+      // they appear at once.
+      if (wasShut && foldLabel && !reduce.matches && mode === "corner") {
+        revealTimer = setTimeout(show, WORD_MS);
+      } else {
+        show();
+      }
+      return;
+    }
+    stillAt = lastXY ? lastXY.slice() : null;
+    // Folding while the word was still sliding in: put it straight back.
+    if (bar.hidden) {
+      shut();
+      return;
+    }
+    if (reduce.matches || !bar.animate || mode !== "corner") {
+      shut();
+      return;
+    }
+    bar.inert = true;
+    bar.setAttribute("aria-hidden", "true");
+    nav.classList.add("is-folding");
+    var t = toggle.getBoundingClientRect();
+    foldBox = bar.getBoundingClientRect();
+    // Scaled about the compass's centre: the buttons travel into it.
+    bar.style.transformOrigin = (t.left + t.width / 2 - foldBox.left) + "px " +
+      (t.top + t.height / 2 - foldBox.top) + "px";
+    foldAnim = bar.animate([
+      { transform: "scale(1)", opacity: 1 },
+      { transform: "scale(0.12)", opacity: 0 }
+    ], { duration: FOLD_MS, easing: "cubic-bezier(0.4, 0, 0.7, 1)" });
+    foldAnim.onfinish = shut;
   }
+  // The folding tray is inert, so it cannot see the pointer: a pointer
+  // coming back over where the buttons were cancels the fold.
+  // Only a pointer that really moves opens the control. Folding changes
+  // what sits under a resting pointer (the tray shrinks away, and with the
+  // word on, the pill grows back under it), and the browser reports that as
+  // the pointer entering; without this, Escape with the pointer over the
+  // control folded it and the growing pill opened it again (2026-09-27).
+  document.addEventListener("pointermove", function (e) {
+    if (e.pointerType === "mouse") lastXY = [e.clientX, e.clientY];
+  }, true);
+  function moved(e) {
+    return !stillAt || Math.abs(e.clientX - stillAt[0]) > 1 || Math.abs(e.clientY - stillAt[1]) > 1;
+  }
+  document.addEventListener("pointermove", function (e) {
+    if (e.pointerType !== "mouse" || !moved(e)) return;
+    if (stillAt) {
+      stillAt = null;
+      if (!expanded && nav.contains(e.target)) {
+        hover = true;
+        unfold();
+        return;
+      }
+    }
+    if (!foldAnim || !foldBox) return;
+    if (e.clientX >= foldBox.left && e.clientX <= foldBox.right &&
+        e.clientY >= foldBox.top && e.clientY <= foldBox.bottom) {
+      hover = true;
+      unfold();
+    }
+  });
   // Pinned: opened by a tap (or by the keyboard on the compass). It then
   // stays open until the compass is pressed again, the reader taps outside,
   // presses Escape or chooses something in it.
@@ -434,7 +557,10 @@
   }
   setExpanded(true);
   nav.addEventListener("pointerenter", function (e) {
-    if (e.pointerType === "mouse") { hover = true; unfold(); }
+    if (e.pointerType === "mouse") {
+      hover = true;
+      if (moved(e)) { stillAt = null; unfold(); }
+    }
   });
   nav.addEventListener("pointerleave", function (e) {
     if (e.pointerType === "mouse") { hover = false; foldSoon(700); }
@@ -497,7 +623,7 @@
     nav.style.width = "";
     nav.style.top = "";
     var short = phone.matches;
-    mapBtn.setAttribute("aria-label", short ? "Browse section: " + section
+    mapBtn.setAttribute("aria-label", short && !foot.hasAttribute("data-short") ? shortName + ": " + section
       : "Browse " + section + ", all " + total + " pages");
     reserve();
     update();

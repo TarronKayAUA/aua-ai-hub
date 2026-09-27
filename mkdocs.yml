@@ -23,6 +23,10 @@ validation:
     anchors: warn
 
 extra:
+  # The folded page-navigation control at the bottom left (scripts/layout_nav.py,
+  # docs/javascripts/layout-nav.js): false shows the compass alone; true adds the
+  # word "Navigate" beside it, as a small pill. Owner's choice (width round, 2026-09-27).
+  nav_control_label: true
   # Footer links, rendered by overrides/partials/copyright.html and NOT by
   # the copyright string above. They used to be raw HTML inside that string,
   # but MkDocs inserts `copyright` verbatim and never rewrites a relative
