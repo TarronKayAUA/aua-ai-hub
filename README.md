@@ -98,6 +98,16 @@ commit.
 blurbs may name current flagships, so refresh blurb and `last_reviewed`
 together; verify links, build strict, commit.
 
+**Add a page, a section, or a data-driven list**: follow the checklists in
+DESIGN.md section 12 (where the page goes in `mkdocs.yml` and
+`data/section_map.yaml`, how it gets its page type and color kind, what
+the hooks then do on their own, and what the author must do). Before it
+ships: `mkdocs build --strict` (read the hooks' blocks: layout_width
+"left as they were: 0", title_case 0 violations), then
+`python scripts/design_check.py --page <address>/`, and for a layout change
+the full `python scripts/design_check.py`. DESIGN.md is the design
+reference every new page follows.
+
 **Edit the literacy pathway or playbooks** — hand-authored pages under
 `docs/pathway/` and `docs/playbooks/`; keep the page shapes
 (objectives and self-checks; answer first, prompt panel, checklist), link the
