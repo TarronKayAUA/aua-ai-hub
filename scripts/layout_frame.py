@@ -51,11 +51,12 @@ TYPES = ("door", "task", "lesson", "reference", "shelf")
 DOOR = {"index.md", "students.md", "faculty.md", "pathway/index.md",
         "news-and-events.md", "governance/index.md", "tools-and-prompts.md"}
 SHELF = {"tools/index.md", "prompts/index.md", "prompts/exchange.md",
-         "playbooks/index.md", "learning/index.md", "benchmarks.md",
+         "playbooks/index.md", "benchmarks.md",
          "conferences.md", "opportunities.md", "announcements/index.md",
          "news/archive/index.md"}
-# worked-examples/index.md is a reading page since the space round: its
-# three paragraphs keep the measure and its write-ups sit in panels.
+# worked-examples/index.md and learning/index.md are reading pages since the
+# space round: their prose keeps the measure, and their sections sit in
+# panels, a section of one or two cards beside its neighbour.
 
 
 def page_type(page) -> str:

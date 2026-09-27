@@ -506,6 +506,13 @@ class Plan:
                     rows.append(("spread", [("flow", piece)]))
                 i += 2
                 continue
+            if what == "run" and nxt and nxt[0] == "wide" and len(gs) == 1 and _weight(gs) <= 700:
+                # A one-paragraph introduction shares its wide object's row
+                # (cards, a long table) instead of a half-empty panel of its
+                # own above it (space round).
+                rows.append(("wide", [_flat(gs), _flat(nxt[1])]))
+                i += 2
+                continue
             if what == "run":
                 for piece in _chunks(gs):
                     rows.append(("spread", [("flow", piece)]))
@@ -618,13 +625,16 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
     if rest:
         groups = _glue(rest)
         best = None
-        for k in range(len(groups)):
+        # A bare title never takes a cell alone: with no meta line, at least
+        # the first group after the title stays with it (space round).
+        first_k = 0 if any(b.role == "chrome" for b in main) else 1
+        for k in range(first_k, len(groups)):
             wl = sum(b.weight for b in main) + _weight(groups[:k])
             wr = _weight(groups[k:])
             score = abs(wl - wr) - (150 if _lead(groups[k]).role != "prose" else 0)
             if best is None or score < best[0]:
                 best = (score, k)
-        k = best[1]
+        k = best[1] if best else len(groups)
         left, right = main + _flat(groups[:k]), _flat(groups[k:])
     elif (units and units[0].tileable and units[0].weight <= LIFT_MAX and not after_head
           and any(b.role == "chrome" for b in main)):
@@ -900,7 +910,7 @@ def _wrap(article: str, page_type: str, src: str) -> str | None:
     for shape, span, parts in plan.cells:
         classes = "w-cell" + (" w-span" if span == 2 else "")
         if shape in ("tile", "spread", "leaf") or (shape == "wide" and any(
-                isinstance(part, list) and any(b.role == "figure" for b in part) for part in parts)):
+                isinstance(part, list) and any(b.role in ("figure", "prose") for b in part) for part in parts)):
             classes += " w-panel"
         open_(f'<div class="{classes}" data-w-shape="{shape}">')
         for part in parts:
