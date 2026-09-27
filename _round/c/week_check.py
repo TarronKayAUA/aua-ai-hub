@@ -59,6 +59,11 @@ with sync_playwright() as pw:
         feeds = pg.locator("section.wk-feed")
         n = feeds.count()
         check(n == 3, f"three feed panels ({n})")
+        tops = feeds.evaluate_all("fs => fs.map(f => Math.round(f.getBoundingClientRect().left))")
+        if w >= 1200:
+            check(len(set(tops)) == n, f"the panels sit side by side (left edges {tops})")
+        else:
+            check(len(set(tops)) == 1, f"the panels stack in feed order (left edges {tops})")
         for i in range(n):
             feed = feeds.nth(i)
             name = feed.locator("h2").inner_text()

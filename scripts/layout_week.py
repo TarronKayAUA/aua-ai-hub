@@ -154,7 +154,21 @@ def _videos(chunk: str) -> str:
     return out
 
 
+_TAIL = re.compile(r'<(?:div class="page-end"|p class="page-reviewed")')
+
+
 def _arrange(html: str, src: str) -> str:
+    # The page's ending (layout_frame's review date and report link, added
+    # before this hook runs) stays after the last section, never inside it.
+    last_h2 = max((m.start() for m in _H2.finditer(html)), default=0)
+    tail_m = _TAIL.search(html, last_h2)
+    tail = ""
+    if tail_m:
+        html, tail = html[:tail_m.start()], html[tail_m.start():]
+    return _arrange_body(html, src) + tail
+
+
+def _arrange_body(html: str, src: str) -> str:
     head, sections = _sections(html)
     if not sections:
         raise ValueError(f"layout_week: {src} has no sections to arrange")

@@ -819,8 +819,10 @@
 
 /* A panel's column is its own width, whatever a chips row inside it would
    like (the row scrolls sideways on phones instead). */
-.md-typeset .wk-feeds {
-  grid-template-columns: minmax(0, 1fr);
+@media screen and (max-width: 59.9375em) {
+  .md-typeset .wk-feeds {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .md-typeset .wk-feed {
