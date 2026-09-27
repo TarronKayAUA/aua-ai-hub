@@ -639,9 +639,10 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
     elif (units and units[0].tileable and units[0].weight <= LIFT_MAX and not after_head
           and any(b.role == "chrome" for b in main)):
         # A section is lifted beside the head only when the head has more
-        # than its title (a meta line): an h1 never sits in a cell alone,
-        # with a column-high gap under it (space round, owner, 2026-09-27).
-        # A bare title runs across the top and the sections pair below it.
+        # than its title (a meta line): an h1 never
+        # sits in a cell alone with a column-high gap under it (space round,
+        # owner, 2026-09-27). A bare title runs across the top and the
+        # sections pair below it.
         lifted = units.pop(0)
     how = "split" if right else "lifted" if lifted else "title only"
     _S["heads"][how] = _S["heads"].get(how, 0) + 1
