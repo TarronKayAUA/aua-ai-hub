@@ -178,19 +178,23 @@ def jump_chips(b):
               const r = h.getBoundingClientRect();
               const cur = [...document.querySelectorAll('.section-chip[aria-current]')].map(a => a.getAttribute('href'));
               const picked = [...document.querySelectorAll('.wk-feed.is-picked')].map(x => x.getAttribute('aria-labelledby'));
-              return {{focus: document.activeElement === h, top: r.top, picked, cur}};
+              const row = document.querySelector('.section-chips').getBoundingClientRect().bottom;
+              const clear = p.getBoundingClientRect().top - row;
+              return {{focus: document.activeElement === h, top: r.top, picked, cur, clear}};
             }}""")
             in_view = 0 <= st["top"] < h * 0.6
             sticky = w >= 960
             want_cur = [f"#{fid}"] if sticky else []
             ok = st["focus"] and in_view and st["picked"] == [fid] and st["cur"] == want_cur
+            if sticky:
+                ok = ok and st["clear"] >= 6  # the panel and its outline clear the sticky row
             # a small scroll keeps the reader's pick while the panels share a row
             pg.mouse.wheel(0, 120)
             pg.wait_for_timeout(250)
             after = pg.evaluate("[...document.querySelectorAll('.section-chip[aria-current]')].map(a => a.getAttribute('href'))")
             if sticky and share:
                 ok = ok and after == [f"#{fid}"]
-            check(ok, f"{w} chip #{fid}: heading focused {st['focus']}, top {st['top']:.0f}, panel outlined {st['picked']}, "
+            check(ok, f"{w} chip #{fid}: heading focused {st['focus']}, top {st['top']:.0f}, panel {st['clear']:.0f}px below the chips row, outlined {st['picked']}, "
                       f"current {st['cur']}, after a small scroll {after}" + (" (panels share a row)" if share else " (panels stack)"))
         ctx.close()
 

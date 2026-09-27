@@ -1,6 +1,129 @@
-Week round: IN PROGRESS (part 2), five fixes built, running the full checks
+Week round: READY (part 2)
 
 # Week Round Status (resume point)
+
+Branch `week-round`. Part 2 follows `_round/c/BRIEF-2.md` (the owner's review of the preview, five fixes). BRIEF.md's rules and checks still apply, and every check from both briefs passes on the final build. Part 1's record follows below this section, unchanged except where part 2 supersedes it (marked).
+
+## Part 2: the five fixes
+
+Everything is still done at render time and in the site's own scripts and styles:
+
+- **No generated file was touched.** `git diff 79ce3c9 -- docs/news` is empty.
+- **aggregate.py is unchanged.**
+- **No narration was run.**
+
+Files changed:
+
+- `docs/javascripts/topics.js`
+- `docs/javascripts/layout-news.js`
+- `docs/stylesheets/layout-news.css`
+- `scripts/layout_week.py`
+
+### 1. Topic filter: the matches read as one list
+
+While a topic other than All is chosen, the "Show the other N items" tier opens and merges into the list:
+
+- its header and box are hidden;
+- there is no gap;
+- a separator rule sits between every two matches, and none above the first.
+
+"Showing X of Y" stays. Choosing All restores the first tier plus a closed "Show the other N items" with its header, exactly as on load.
+
+Without JavaScript nothing filters, and the fold stays as it is. This applies everywhere topics.js runs: the three This Week columns and the three feed pages.
+
+### 2. The brief can be folded again
+
+The continuation now ends in a **"Hide the rest of this week's brief"** button. It closes the fold, shows "Read the rest of this week's brief" again, and returns focus to that label.
+
+Opening still hides the label, so the text carries straight on from the lede. Because the label held keyboard focus, focus now moves to the start of the continuation when it opens; Tab walks its source links to the Hide button.
+
+The button is rendered by the hook, hidden, and revealed by layout-news.js. Without JavaScript there is no dead button, and the opened fold keeps its label, which closes it.
+
+The player and the date line stay outside the fold. This applies to This Week (3 folds) and the three feed pages. The archive weeks have no fold (their week in brief is always open).
+
+### 3. The jump chips for the three feeds
+
+A feed chip now:
+
+- brings its panel into view, with the whole panel and its outline below the sticky chips row (22 to 26px clear at 1024 to 1920);
+- moves focus to that panel's heading;
+- outlines that panel for a moment. The outline fades out; under reduced motion it is still and then goes.
+
+While the panels share a row, the chip used is the one marked current. Scrolling alone never marks another feed chip, and the pick is forgotten once the reader scrolls on to Videos or Podcasts. Where the panels stack (phones), the chips mark nothing as current, as before.
+
+Videos and Podcasts are unchanged.
+
+### 4. The feed pages in the same design language, for the owner's yes or no
+
+Medical Education, Clinical Practice and General AI now put their brief, Topic chips and items in one news-hue panel on the full frame. Their text is unchanged.
+
+- **The brief:** its text at a reading measure on the left, opened or closed, with the player and the "picture as of" line beside it on the right.
+- **The chips.**
+- **The items:** a grid in rows in the Latest News item style, three across from 76em, two from 60em, one on phones.
+
+The pages have no "Show the other N" today. If one appears, it stays at the end of the panel.
+
+**If the owner says no, the change is easy to back out:** remove the `_feed_page` step in `on_page_content` of layout_week.py and the "feed pages" CSS block. The brief fold from item 2 stays either way.
+
+### 5. Lists in more than one column align in rows
+
+A digest's wide feed and the feed pages are now grids, not CSS columns:
+
+- items line up across each row and read left to right, then down;
+- every item has the same rule under it and none above;
+- the list clips its last row's rule, so no column starts or ends with a stray line;
+- a row's items stretch to the row's height, so the rules of one row sit level.
+
+Checked on w24 to w39 (the 13 weeks with a wide feed) and on the three feed pages at 1920 and 1440: row tops and rules are within 0.00px everywhere.
+
+### New wording (part 2, quoted exactly)
+
+- "Hide the rest of this week's brief" (the button at the end of the brief's continuation).
+
+There is no other new label. The feed pages add no text.
+
+### Part 2 checks on the final build
+
+| Check | Result |
+|---|---|
+| `mkdocs build --strict` | clean |
+| title_case | 2702 checked, 0 violations |
+| layout_width block integrity | 1620 / 1620, 0 left as they were |
+| Sideways scroll, 111 pages x 7 widths (360 to 1920) | 0 of 777 loads |
+| `_round/c/week_check.py` (part 1's checks, updated for the Hide button) | ok, 92 checks |
+| `_round/c/week2_check.py` (part 2) | ok, 65 checks. Details below the table. |
+| `_round/c/nav_check.py` | ok; with JS off, 111 of 111 pages reachable |
+| `_round/c/linkcheck.py` | 19628 internal links, 0 unresolved |
+| Anchors (every `id` on 111 pages, base 79ce3c9 against final) | 0 removed, 0 added |
+| Narration (`_round/c/narration_proof.py 79ce3c9`) | identical for all 7. Hashes below the table. |
+
+What week2_check covers:
+
+- **Item 1:** every chip in every panel, on This Week and the three feed pages, at 1920 and 390, by keyboard. Each chip shows exactly its count as one list, with no fold header visible, no leading rule, and "Showing X of Y". All then restores a closed fold, as on load. This includes the topics found only in the second tier, such as Simulation and skills.
+- **Item 2:** each of the 4 folds opens by Enter, and focus moves to the continuation. The last element is the Hide button, and Tab reaches it inside the fold. Enter closes the fold and focus returns to the label. With JS off, the opened fold keeps its label and has no dead button.
+- **Item 3:** each feed chip at 1920, 1440 and 390 focuses its own heading, outlines its own panel and lands in view. At 1920 and 1440 it marks itself current and stays current after a small scroll. At 390 it marks none, as before.
+- **Items 4 and 5:** 16 lists at each of 1920 and 1440. Row tops and rules are within 0.00px, reading order is left to right, and there are no top rules.
+
+Narration hashes:
+
+- digest-2026-w39: 59c5d3b201c2dfaf
+- the three feed-page briefs and the three This Week briefs: a3888995a02bdc8b, 0b02acfdc3d62515, d623cc365623e50f (each identical on both pages)
+
+### Before and after (`_round/measure.py`; base 79ce3c9, after part 2)
+
+| Page | Height 1920 | Blank 1920 | Height 1440 | Blank 1440 |
+|---|---|---|---|---|
+| news/this-week | 10313 → 5643 | 39% → 24% | 9390 → 5300 | 41% → 27% |
+| news/archive/2026-w39 | 12722 → 7966 | 20% → 21% | 11463 → 7488 | 21% → 18% |
+| news/archive/2026-w38 | 11073 → 7657 | 22% → 20% | 10022 → 7175 | 20% → 17% |
+| news/medical-education | 4641 → 2618 | 39% → 34% | 4226 → 2407 | 42% → 30% |
+| news/clinical-practice | 4512 → 2521 | 39% → 31% | 4108 → 2344 | 40% → 35% |
+| news/general-ai | 4311 → 2485 | 41% → 39% | 3926 → 2306 | 41% → 33% |
+
+---
+
+# Part 1 record
+
 
 Branch `week-round` (from origin/main 79ce3c9). Brief: `_round/c/BRIEF.md`. Every check the brief asks for passes on the final build (below).
 
@@ -59,7 +182,7 @@ The three feed pages (Medical Education, Clinical Practice, General AI) show the
 
 ## Design decisions the owner may want to know
 
-- **Opening the brief's disclosure hides its label**, so the continuation reads straight on from the lede as one text. The consequence is that it cannot be folded again on that visit, and keyboard focus moves on to the next item.
+- **Opening the brief's disclosure hides its label**, so the continuation reads straight on from the lede as one text. (Superseded in part 2: it can now be folded again with "Hide the rest of this week's brief", and focus moves into the continuation.)
 - **Line length.** On shelves, the brief's columns and the item summaries run at about 90 to 110 characters per line at 1920. This Week was already about that before (median 106). Paragraphs outside the panels are held to 44rem.
 
 ## Integrity (built into the hook; the build fails on a mismatch)

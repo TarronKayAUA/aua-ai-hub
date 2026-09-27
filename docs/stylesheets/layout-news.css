@@ -117,9 +117,14 @@
     box-shadow: 0 1px 0 var(--hub-row-rule), 0 0.3rem 0.5rem -0.3rem rgba(0, 0, 0, 0.15);
   }
 
-  .md-content__inner:has(> .section-chips) > h2,
-  .md-content__inner:has(> .section-chips) .wk-feed > h2 {
+  .md-content__inner:has(> .section-chips) > h2 {
     scroll-margin-top: 3rem;
+  }
+
+  /* A feed panel's heading sits inside the panel's padding: the extra
+     margin brings the whole panel, and its outline, clear of the row. */
+  .md-content__inner:has(> .section-chips) .wk-feed > h2 {
+    scroll-margin-top: 4.6rem;
   }
 }
 
@@ -1011,7 +1016,8 @@
 /* --- The feed pages (week round, part 2) -------------------------------------
    Medical Education, Clinical Practice and General AI in the This Week
    look: one news-hue panel on the full frame (scripts/layout_week.py), the
-   brief across its top (two columns once opened), the Topic chips, then the items as
+   brief across its top (its text at a reading measure, Listen beside it),
+   the Topic chips, then the items as
    a grid in rows: three across from 76em, two from 60em, one on phones. */
 .md-typeset:has(> .wk-feed--page) > p {
   max-width: 44rem;
@@ -1030,24 +1036,26 @@
   .md-typeset .wk-feed.wk-feed--page .news-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  /* Closed, the brief is the lede at a reading measure with its fold
-     label under it; opened, the whole text runs in two columns across the
-     panel. */
+  /* The brief's text at a reading measure on the left, opened or closed
+     (the continuation carries straight on under the lede); the player and
+     the date line beside it on the right, level with the lede. */
   .md-typeset .wk-feed--page .section-brief {
-    max-width: 48rem;
+    display: grid;
+    grid-template-columns: minmax(0, 46rem) minmax(14rem, 1fr);
+    column-gap: 3rem;
+    align-items: start;
   }
-  .md-typeset .wk-feed--page .section-brief:has(> details[open]) {
-    max-width: none;
-    columns: 2;
-    column-gap: 2.4rem;
+  .md-typeset .wk-feed--page .section-brief > * {
+    grid-column: 1;
   }
-  .md-typeset .wk-feed--page .section-brief > .section-brief-lede,
-  .md-typeset .wk-feed--page .section-brief > details > p {
-    break-inside: avoid;
+  .md-typeset .wk-feed--page .section-brief > .listen {
+    grid-column: 2;
+    grid-row: 1;
   }
-  .md-typeset .wk-feed--page .section-brief > .listen,
   .md-typeset .wk-feed--page .section-brief > .section-brief-date {
-    column-span: all;
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 0;
   }
 }
 

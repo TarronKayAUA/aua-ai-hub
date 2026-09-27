@@ -118,7 +118,8 @@ with sync_playwright() as pw:
             s = fold.locator("summary")
             check(s.inner_text().strip() == "Read the rest of this week's brief", f"{name}: fold label")
             kinds = fold.evaluate("d => [...d.children].filter(c => c.tagName !== 'SUMMARY').map(c => c.tagName)")
-            check(set(kinds) == {"P"}, f"{name}: the fold holds only paragraphs ({kinds})")
+            check(kinds and set(kinds[:-1]) == {"P"} and kinds[-1] == "BUTTON",
+                  f"{name}: the fold holds only paragraphs, then its Hide button ({kinds})")
             outside = feed.evaluate("f => !!f.querySelector('.section-brief > .listen') && !!f.querySelector('.section-brief > .section-brief-date')")
             check(outside, f"{name}: player and date line outside the fold")
             s.focus()
