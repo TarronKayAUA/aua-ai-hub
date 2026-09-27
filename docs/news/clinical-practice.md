@@ -12,18 +12,39 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">Radiology is emerging as the specialty where the line between building AI and practicing medicine has begun to dissolve, with practices developing and marketing in-house tools as &quot;AI-native&quot; <a href="https://www.statnews.com/2026/09/24/radiology-ai-blurred-line-between-tech-development-clinical-practice" aria-label="Source 1: STAT News AI, STAT+: In radiology, AI is blurring the line between technology development and clinical practice">[1]</a>. That shift toward embedded, at-scale deployment is echoed in a multi-country screening program that has now covered more than a million patients across India, Thailand, and Australia, yielding practical lessons for scaling clinical AI globally <a href="https://www.nature.com/articles/s41591-026-04643-9" aria-label="Source 10: Nature Medicine, Practical lessons in the global scaling of clinical AI: from one hospital to over a million patients screened">[10]</a>.</p>
+<p class="section-brief-lede">A pilot program using AI to automate insurance claim denials for seniors has drawn scrutiny over algorithmic incentives and patient access to care <a href="https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment" aria-label="Source 4: Ars Technica AI, Trump admin using AI to deny medical care for seniors in disastrous experiment">[4]</a>. Oversight concerns extend to clinical decision support, where a multicenter study found variable clinician vigilance in validating generative AI outputs during simulated decision-making <a href="https://www.nature.com/articles/s41746-026-03294-x" aria-label="Source 11: npj Digital Medicine, A multicenter assessment of human oversight of generative AI outputs in simulated clinical decision making">[11]</a>, and to diagnostic bias, with large language models showing demographic skew in eating disorder assessments <a href="https://ai.jmir.org/2026/1/e93498" aria-label="Source 15: JMIR AI, Implicit Bias in Large Language Model Diagnosis of Eating Disorders: Experimental Vignette Study">[15]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Alongside deployment, scrutiny of oversight is intensifying: a multicenter study examined how clinicians actually validate generative AI outputs in simulated decision-making <a href="https://www.nature.com/articles/s41746-026-03294-x" aria-label="Source 2: npj Digital Medicine, A multicenter assessment of human oversight of generative AI outputs in simulated clinical decision making">[2]</a>, while separate research found demographic bias in large language model diagnosis of eating disorders, raising concern for mental health applications <a href="https://ai.jmir.org/2026/1/e93498" aria-label="Source 6: JMIR AI, Implicit Bias in Large Language Model Diagnosis of Eating Disorders: Experimental Vignette Study">[6]</a>.</p>
-<p>Also this week: the section&#x27;s five imaging and diagnostics items include work on uncertainty estimation for skin cancer malignancy prediction, and its four clinical decision support entries include a hierarchical machine learning framework for foot orthosis prescription. Five safety and evaluation items and one patient-facing tool round out the current page.</p>
-<p class="section-brief-date">The picture as of September 25, 2026; numbered links go to the items below.</p>
+<p>In imaging, language models matched or approached radiologists in predicting microvascular invasion in liver cancer <a href="https://pubmed.ncbi.nlm.nih.gov/42787094?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1" aria-label="Source 5: PubMed AI in medical education, Large Language Models for Preoperative Microvascular Invasion Prediction in Hepatocellular Carcinoma: A Multicenter Comparison with Radiologists and Treatment Outcomes">[5]</a>, even as radiology practices themselves increasingly blur the line between AI development and clinical deployment <a href="https://www.statnews.com/2026/09/24/radiology-ai-blurred-line-between-tech-development-clinical-practice" aria-label="Source 10: STAT News AI, STAT+: In radiology, AI is blurring the line between technology development and clinical practice">[10]</a>.</p>
+<p>Also this week: seven papers address safety and evaluation frameworks, including AI Act-aligned model assessments and uncertainty estimation for skin cancer detection, while five studies advance imaging and diagnostics, from spinal cord injury MRI quantification to ophthalmology-focused language models. Two papers examine clinical decision support tools, and one explores AI-mediated patient-provider communication.</p>
+<p class="section-brief-date">The picture as of September 26, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03258-1">Development and validation of a parsimonious AI-based mortality risk score for heart failure</a>
+    <p class="news-card-summary">Development and validation of a parsimonious AI mortality risk score for heart failure patients published in npj Digital Medicine.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03276-z">Quantifying the plausibility gap in generative AI for surgical video generation with expert assessment</a>
+    <p class="news-card-summary">Expert assessment quantifies the gap between plausible and realistic surgical video generation from generative AI models.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03309-7">Large language model, assisted preoperative communication reduces patient anxiety and physician workload in prostate cancer: a prospective randomized phase II trial</a>
+    <p class="news-card-summary">Randomized trial shows large language model assisted preoperative communication for prostate cancer reduces patient anxiety and physician workload.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 25, 2026</span></div>
@@ -108,27 +129,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 24, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03293-y">Multi-criterion uncertainty estimation improves skin cancer distribution shift detection and malignancy prediction</a>
     <p class="news-card-summary">Study demonstrates that multi-criterion uncertainty estimation improves detection of distribution shift and malignancy prediction in skin cancer AI models.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03284-z">Enabling equitable global health AI with privacy‑enhancing technologies</a>
-    <p class="news-card-summary">Research examines privacy-enhancing technologies as a pathway to equitable global health AI deployment across different populations and regions.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03287-w">Causal reinforcement learning for personalized adaptive interventions in mild cognitive impairment</a>
-    <p class="news-card-summary">Study applies causal reinforcement learning to personalized adaptive interventions for patients with mild cognitive impairment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 23, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e93498">Implicit Bias in Large Language Model Diagnosis of Eating Disorders: Experimental Vignette Study</a>
-    <p class="news-card-summary">Large language models demonstrate demographic bias in eating disorder diagnosis across patient groups, posing risks for mental health applications that mediate clinical decisions.</p>
   </div>
 </div>
 </div>
