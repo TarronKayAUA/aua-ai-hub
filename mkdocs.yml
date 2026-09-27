@@ -108,6 +108,9 @@ extra_css:
   # map, landing and kind color), the Browse and On this page controls, the
   # section maps, page feet, the Tools & Prompts landing and the color key.
   - stylesheets/layout-nav.css
+  # Width round, designer C (2026-09-26): reading pages use the width, one
+  # arrangement per kind of page on one shared grid (scripts/layout_width.py).
+  - stylesheets/layout-width.css
 
 extra_javascript:
   - javascripts/counter.js
@@ -127,6 +130,9 @@ extra_javascript:
   - javascripts/layout-news.js
   - javascripts/layout-art.js
   - javascripts/layout-nav.js
+  # Width round, designer C (review fix 6): an arrangement that no longer
+  # fits one screen (short window, zoom, larger text) becomes one column.
+  - javascripts/layout-width.js
 
 plugins:
   # Material's default separator splits only on whitespace and hyphens, which
@@ -167,6 +173,10 @@ hooks:
   # Tools & Prompts landing, colored link rows and the color key. Last, so
   # its on_post_page sees every title.
   - scripts/layout_nav.py
+  # Width round, designer C (2026-09-26): reading pages use the width, one
+  # arrangement per kind of page on one shared grid. After layout_nav, so its
+  # on_post_page sees the finished article with the section foot in place.
+  - scripts/layout_width.py
 
 markdown_extensions:
   - admonition

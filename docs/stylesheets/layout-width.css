@@ -1,0 +1,428 @@
+/* =========================================================================
+   Reading pages use the width (width round, designer C, 2026-09-26).
+
+   scripts/layout_width.py wraps the article of every task, lesson and
+   reference page (body[data-width="packed"]) and sorts its sections into
+   shapes; this file draws them on one grid. From 68.75em (1100px):
+
+     the frame     the landing pages' own edges (x 120 to 1800 at 1920,
+                   16 to 1424 at 1440), not a centred 33rem column
+     two tracks    every row is one or two equal tracks
+     one measure   every piece of running text is 31rem wide (about 79
+                   characters): a panel's side padding is
+                   (track - measure) / 2, clamped, so text boxes line up
+                   on every row and nothing stretches
+     one panel     the landing cards' own look: no fill, a hairline border,
+                   the same radius, so a module, a guide, the glossary and
+                   the policy read as the same family as the landing pages
+
+   Below 68.75em every wrapper is display: contents and today's single
+   column is unchanged (BRIEF rule 7 keeps it below 60em; between 60em and
+   68.75em two tracks would drop under 60 characters, so it stays too).
+   ========================================================================= */
+
+.w-page {
+  --w-gap: 1rem;
+  --w-measure: 31rem;
+  --w-rule: var(--md-default-fg-color--lightest);
+  --w-radius: 0.5rem;
+}
+
+/* --- Below 68.75em: today's page --------------------------------------------
+   The wrappers step aside; the blocks flow as siblings of the article, as
+   before. One lesson rule used sibling selectors across what is now a
+   wrapper boundary (p.learn-meta + .listen + h2 in layout-learn.css), so it
+   is restated for the first heading wherever it now lives. */
+/* layout-hubs.css keeps a landing page's folded prose at body size with a
+   direct-child selector (.md-typeset:has(.hub-cards) > details); restated
+   for the sections now inside the wrappers, at every width. */
+body[data-page-type="door"] .md-typeset:has(.hub-cards) .w-page--door .w-cell > details {
+  font-size: 0.8rem;
+}
+body[data-page-type="door"] .md-typeset:has(.hub-cards) .w-page--door .w-cell > details > summary {
+  font-size: 0.78rem;
+}
+
+@media screen and (max-width: 68.7344em) {
+  .w-page,
+  .w-head,
+  .w-head__main,
+  .w-head__side,
+  .w-rows,
+  .w-cell,
+  .w-part,
+  .w-terms,
+  .w-term {
+    display: contents;
+  }
+  body[data-page-type="lesson"] .md-typeset .w-head__main:has(> :is(p.learn-meta, .listen):last-child) + .w-head__side > h2:first-child,
+  body[data-page-type="lesson"] .md-typeset .w-head:not(:has(.w-head__side)):has(> .w-head__main > :is(p.learn-meta, .listen):last-child) + .w-rows > .w-cell:first-child > h2:first-child {
+    margin-top: 1.2rem;
+  }
+  /* Material's h2 + h3 spacing, where a band holding only its h2 is
+     followed by a subsection opening with its h3. */
+  .md-typeset .w-cell:has(> h2:only-child) + .w-cell > h3:first-child {
+    margin-top: 0.8em;
+  }
+  /* A landing page's prose cap (layout.css, .md-typeset > p) for the prose
+     now inside the wrappers, and its folded prose's width. */
+  body[data-page-type="door"] .md-typeset .w-page--door :is(.w-cell, .w-part) > :is(p, ul, ol, details) {
+    max-width: 40rem;
+  }
+}
+
+@media screen and (min-width: 68.75em) {
+
+  /* --- The frame ------------------------------------------------------------
+     layout.css centres the 33rem column with !important auto margins at
+     (0,4,1); the same weight, later, gives the landing pages' margins. */
+  body[data-width="packed"] .md-main .md-content > .md-content__inner {
+    max-width: none;
+    margin-left: 0.8rem !important;
+    margin-right: 0.8rem !important;
+  }
+
+  /* The tracks and the padding that holds text to the measure. cqi is the
+     frame's width, so the numbers follow the window with no breakpoints:
+     at 1920 a track is 37.7rem and the padding 3.35rem; at 1440, 34.7rem
+     and 1.85rem; at 1280 the padding reaches its 1.2rem floor and text is
+     28.2rem (about 72 characters). */
+  .w-page {
+    container-type: inline-size;
+  }
+  .w-page > * {
+    --w-track: calc((100cqi - var(--w-gap)) / 2);
+    --w-pad: clamp(1.2rem, calc((var(--w-track) - var(--w-measure)) / 2), 3.4rem);
+    --w-inner-gap: calc(var(--w-gap) + 2 * var(--w-pad));
+  }
+
+  .w-head,
+  .w-rows {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--w-gap);
+    align-items: start;
+  }
+  .w-rows {
+    align-items: stretch;
+    margin-top: var(--w-gap);
+  }
+  .w-head > .w-head__main:only-child,
+  .w-cell.w-span {
+    grid-column: 1 / -1;
+  }
+
+  /* --- The panel (restored by the owner, 2026-09-26) ----------------------
+     Sections sit in thin outlined panels in the landing cards' language:
+     no fill, a hairline border, the same radius. Side padding holds text
+     to the measure. */
+  .w-panel {
+    border: 1px solid var(--w-rule);
+    border-radius: var(--w-radius);
+    padding: 1.1rem var(--w-pad) 1.2rem;
+  }
+  .md-typeset .w-panel > :first-child,
+  .md-typeset .w-cell > :first-child,
+  .md-typeset .w-part > :first-child,
+  .md-typeset .w-term > :first-child {
+    margin-top: 0;
+  }
+  .md-typeset .w-panel > :last-child,
+  .md-typeset .w-part > :last-child,
+  .md-typeset .w-term > :last-child {
+    margin-bottom: 0;
+  }
+  /* Headings of open rows (bands, step bands, sets, wide tables) sit on
+     the same vertical as the headings inside panels. */
+  .md-typeset .w-cell:not(.w-panel) > :is(h2, h3):first-child {
+    padding-left: var(--w-pad);
+  }
+
+  /* Running text sitting directly in a panel keeps the measure (a short
+     paragraph kept below a leaf, a lone list). */
+  .md-typeset .w-cell > :is(p, ul, ol, dl, blockquote):not(.guide-steps) {
+    max-width: var(--w-measure);
+  }
+  /* ...and so does a paragraph nested deeper (in a note, a plain div), in
+     body size; a note alone on a full row keeps the measure too. Figures,
+     tables and cards set their own widths. */
+  .md-typeset .w-page p:not(figure p, table p, .committee-grid p, .guide-panel p, .admonition-title) {
+    max-width: var(--w-measure);
+  }
+  /* A figure's caption and notes keep the measure, centred, however wide
+     the drawing is. */
+  .md-typeset .w-page figure > :is(figcaption, p) {
+    max-width: var(--w-measure);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* A guide's prompt panel keeps today's width, so its small print is no
+     longer than it was. */
+  .md-typeset .w-page .guide-panel {
+    max-width: 33rem;
+  }
+  .md-typeset :is(.w-head__main, .w-head__side:not(.w-panel)) > .admonition {
+    max-width: calc(var(--w-measure) + 1.6rem);
+  }
+  .md-typeset .w-cell[data-w-shape="wide"] > .admonition {
+    max-width: calc(var(--w-measure) + 2 * var(--w-pad));
+  }
+
+
+  /* --- The head ------------------------------------------------------------
+     Title, meta line and Listen open on the page, like a landing page's
+     title; beside them what the page leads with (a guide's prompt panel,
+     the policy's reader's map, a module's first short section). */
+  /* The breadcrumb sits above the article; it follows the frame too. */
+  body[data-width="packed"] .md-path {
+    max-width: none;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  /* Lead paragraphs beside the title keep the measure. */
+  .md-typeset .w-head__main > :is(p, ul, ol, dl, blockquote):not(.learn-progress) {
+    max-width: var(--w-measure);
+  }
+  .w-head__main > h1 {
+    margin-bottom: 0.6rem;
+  }
+  .w-head__side {
+    align-self: stretch;
+  }
+  .md-typeset .w-head__side:not(.w-panel) > :is(p, ul, ol, dl, blockquote) {
+    max-width: var(--w-measure);
+  }
+  .md-typeset .w-head__side > :first-child {
+    margin-top: 0;
+  }
+  .md-typeset .w-head__side > :last-child {
+    margin-bottom: 0;
+  }
+
+  /* --- Spread: prose across both tracks, a screen at a time ------------------
+     Two columns whose gap is the row gap plus both paddings, so each column
+     is exactly one measure and lines up with the tiles above and below.
+     Paragraphs and list items stay whole in one column. */
+  .w-flow {
+    columns: 2;
+    column-gap: var(--w-inner-gap);
+  }
+  .w-flow > *,
+  .w-flow li {
+    break-inside: avoid;
+  }
+  .w-flow > :is(ul, ol) {
+    break-inside: auto;
+  }
+  /* A lead-in and what it introduces stay in one column. Chromium does not
+     reliably honour break-after: avoid in columns, so the pair is simply
+     unbreakable; runs with several lead-ins are split into subsections by
+     the hook instead (.w-pair). */
+  .w-flow > .w-keep {
+    break-inside: avoid;
+  }
+  .w-flow > .w-spanall {
+    column-span: all;
+    margin-bottom: 0.8rem;
+  }
+  .md-typeset .w-spanall > :is(p, h4, h5, h6) {
+    max-width: var(--w-measure);
+  }
+  /* Subsections (a lettered part and its provisions) side by side, read
+     left to right, then down; each starts with its own lead-in. */
+  .w-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--w-inner-gap);
+    align-items: start;
+  }
+  .md-typeset .w-pair__side > :first-child {
+    margin-top: 0;
+  }
+  .md-typeset .w-pair__side > :last-child {
+    margin-bottom: 0;
+  }
+  .md-typeset .w-pair + :is(.w-pair, .w-flow) {
+    margin-top: 1.4rem;
+  }
+  .md-typeset .w-keep > :first-child {
+    margin-top: 0;
+  }
+  .md-typeset .w-flow > :first-child {
+    margin-top: 0;
+  }
+
+  /* --- Leaf: prose beside the object it introduces ------------------------- */
+  .w-leaf {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: var(--w-inner-gap);
+    align-items: start;
+  }
+  /* Wrap: the object spans both rows; the prose after it fills in under
+     its introduction (row-major placement, so source order holds). */
+  .w-leaf--wrap {
+    grid-template-rows: auto 1fr;
+  }
+  .w-leaf--wrap > .w-leaf__side:nth-child(2) {
+    grid-row: span 2;
+  }
+  .md-typeset .w-leaf__under {
+    margin-top: 1rem;
+  }
+  .md-typeset .w-leaf__side > :first-child {
+    margin-top: 0;
+  }
+  .md-typeset .w-leaf__side > :last-child {
+    margin-bottom: 0;
+  }
+  .md-typeset .w-leaf :is(figure, .admonition, details, .md-typeset__scrollwrap) {
+    margin-top: 0;
+  }
+  /* When the prose is the taller side, the object stays beside the lines
+     being read. */
+  .w-leaf > .w-leaf__side:has(> :is(figure, .admonition, details, .md-typeset__scrollwrap):first-child) {
+    position: sticky;
+    top: 5.5rem;
+  }
+  /* A figure's flow row in half the width: its closing box keeps a
+     readable width and the stack beside it gives way. */
+  .md-typeset .w-leaf .hf-flow > .hf-stack ~ .hf-box {
+    flex: 0 0 auto;
+    width: 8.5rem;
+  }
+  .md-typeset .w-leaf .hf-flow > .hf-stack {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  /* --- Set, step band: cards three across, the last row completed by count --
+     Six columns; a card spans two (three across). When the count leaves
+     two over, the last two span three each (3 + 2); when it leaves one
+     over, the last four span three each (3 + 2 + 2); one card alone spans
+     the row. Pure quantity selectors: nothing is written into the page. */
+  .w-set,
+  .md-typeset .w-cell[data-w-shape^="steps"] > ol {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: var(--w-gap);
+    max-width: none;
+    margin: 0;
+  }
+  :is(.w-set, .w-cell[data-w-shape^="steps"] > ol) > * {
+    grid-column: span 2;
+    margin: 0;
+  }
+  :is(.w-set, .w-cell[data-w-shape^="steps"] > ol) > :first-child:nth-last-child(2),
+  :is(.w-set, .w-cell[data-w-shape^="steps"] > ol) > :first-child:nth-last-child(3n + 2) ~ :nth-last-child(-n + 2),
+  :is(.w-set, .w-cell[data-w-shape^="steps"] > ol) > :first-child:nth-last-child(3n + 4) ~ :nth-last-child(-n + 4),
+  :is(.w-set, .w-cell[data-w-shape^="steps"] > ol) > :first-child:nth-last-child(4) {
+    grid-column: span 3;
+  }
+  :is(.w-set, .w-cell[data-w-shape^="steps"] > ol) > :only-child {
+    grid-column: 1 / -1;
+  }
+  /* Two across (alike but longer steps, an even number of them). */
+  .md-typeset .w-page .w-cell[data-w-shape="steps2"] > ol > li:nth-child(n) {
+    grid-column: span 3;
+  }
+  [dir] .md-typeset .w-cell[data-w-shape^="steps"] > ol > li {
+    margin: 0;
+    border: 1px solid var(--w-rule);
+    border-radius: var(--w-radius);
+    padding: 0.9rem 1.1rem 1rem 3rem;
+  }
+  /* A module's numbered list (not a guide's) keeps its own numbers,
+     now inside each card. */
+  [dir] .md-typeset .w-cell[data-w-shape^="steps"] > ol:not(.guide-steps) > li {
+    list-style-position: inside;
+    padding-left: 1.1rem;
+  }
+  .md-typeset .w-cell[data-w-shape^="steps"] > ol.guide-steps > li::before {
+    left: 1.1rem;
+    top: 0.95rem;
+  }
+
+  /* --- Terms: the glossary two across ----------------------------------------
+     Each entry is a small panel; rows read left to right, then down, in the
+     glossary's own alphabetical order. */
+  .w-terms {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--w-gap);
+  }
+  .w-term {
+    border: 1px solid var(--w-rule);
+    border-radius: var(--w-radius);
+    padding: 0.9rem var(--w-pad) 1rem;
+  }
+
+  /* --- People: the committee five across -------------------------------------
+     auto-fill at 13rem gives five at 1920 and 1440, so ten members fill two
+     rows with no empty place. */
+  .md-typeset .w-cell .committee-grid {
+    grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+    margin: 0;
+  }
+
+  /* --- Wide rows: tables across the frame ------------------------------------ */
+  .md-typeset .w-cell[data-w-shape="wide"] .md-typeset__table,
+  .md-typeset .w-cell[data-w-shape="wide"] table:not([class]) {
+    display: table;
+    width: 100%;
+  }
+}
+
+/* --- "Fits one screen" holds or falls back (review fix 6) ------------------
+   layout-width.js marks any two-column arrangement taller than the space
+   below the header: a spread becomes one column (.w-single), side-by-side
+   parts or cells stack in reading order (.w-stack). Every line keeps the
+   measure. Without JavaScript, a window under 44em tall (704px at the
+   default text size, less when zoomed or with larger text) gets the same
+   single column. */
+@media screen and (min-width: 68.75em) {
+  .w-flow.w-single {
+    columns: auto;
+    column-count: 1;
+  }
+  .md-typeset :is(.w-single, .w-stack) > :is(ul, ol, dl, blockquote, .w-keep, h2, h3) {
+    max-width: var(--w-measure);
+  }
+  .w-rows > .w-cell.w-stack {
+    grid-column: 1 / -1;
+  }
+  .w-rows > .w-cell.w-stack > :is(p, ul, ol, dl, blockquote, h2, h3) {
+    max-width: var(--w-measure);
+  }
+  :is(.w-leaf, .w-pair).w-stack {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    row-gap: 1.2rem;
+  }
+  :is(.w-leaf, .w-pair).w-stack > * {
+    grid-row: auto;
+    max-width: var(--w-measure);
+  }
+  :is(.w-leaf, .w-pair).w-stack > :has(> :is(figure, table, .admonition, details)) {
+    max-width: none;
+    position: static;
+  }
+}
+@media screen and (min-width: 68.75em) and (max-height: 44em) {
+  .w-flow {
+    columns: auto;
+    column-count: 1;
+  }
+  .w-leaf,
+  .w-pair {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    row-gap: 1.2rem;
+  }
+  :is(.w-leaf, .w-pair) > * {
+    grid-row: auto;
+  }
+  .w-leaf > .w-leaf__side {
+    position: static;
+  }
+}

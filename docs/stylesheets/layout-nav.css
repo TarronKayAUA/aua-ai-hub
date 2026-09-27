@@ -530,6 +530,122 @@
   border-radius: 0.8rem;
 }
 
+/* --- The corner control (width round, designer C; owner, 2026-09-26) -----
+   One control at the bottom left on every page that has these controls, at
+   every width: the labelled buttons first (the old rail tiles' two-line
+   labels, side by side), folding after a few seconds without interaction to
+   one round button (at least 44px) that hover, focus or a tap opens again.
+   Nothing animates. layout-nav.js lifts it above the footer as it scrolls
+   in and keeps a focused item clear of it. */
+.secnav[data-mode="corner"] {
+  left: 0.8rem;
+  bottom: 0.8rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.4rem;
+  max-width: calc(100vw - 1.6rem);
+}
+
+.secnav__toggle {
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: max(44px, 2.4rem);
+  height: max(44px, 2.4rem);
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--nav-dock-line);
+  border-radius: 50%;
+  background: var(--nav-dock);
+  color: var(--nav-dock-fg);
+  box-shadow: var(--nav-shadow);
+  cursor: pointer;
+}
+
+.secnav__toggle svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  fill: currentColor;
+}
+
+.secnav__toggle:hover {
+  box-shadow: var(--nav-shadow), inset 0 0 0 2rem var(--nav-dock-hover);
+}
+
+.secnav__toggle:focus-visible {
+  outline: 2px solid var(--nav-dock-focus);
+  outline-offset: 2px;
+}
+
+.secnav[data-mode="corner"] .secnav__bar {
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  width: fit-content;
+  min-width: 0;
+  padding: 0.35rem;
+  border-radius: 1.1rem;
+  box-shadow: var(--nav-shadow);
+}
+
+.secnav[data-mode="corner"] .secnav__btn {
+  min-height: 2.6rem;
+  padding: 0.3rem 0.6rem 0.3rem 0.3rem;
+  border-radius: 0.8rem;
+}
+
+.secnav[data-mode="corner"] .secnav__lead {
+  display: block;
+  font-size: 0.6rem;
+  color: var(--nav-dock-muted);
+}
+
+.secnav[data-mode="corner"] .secnav__btn[aria-expanded="true"] .secnav__lead {
+  color: inherit;
+}
+
+.secnav[data-mode="corner"] .secnav__now {
+  display: block;
+}
+
+.secnav[data-mode="corner"] .secnav__act {
+  margin-left: 0;
+}
+
+.secnav[data-mode="corner"] .secnav__action {
+  min-height: 2.6rem;
+  border-radius: 0.8rem;
+}
+
+/* The page's end (its foot and page ending) can scroll fully clear of the
+   folded button: room for the button, its 0.8rem margin and a little air.
+   The footer's links are never under it: layout-nav.js lifts the control
+   above the footer as the footer scrolls in. */
+body.has-secnav .md-content__inner {
+  padding-bottom: calc(max(44px, 2.4rem) + 2rem);
+}
+
+/* Phones: the short labels, so the open control fits beside its button. */
+@media screen and (max-width: 37.4375em) {
+  .secnav[data-mode="corner"] {
+    font-size: 0.65rem;
+  }
+  .secnav[data-mode="corner"] .secnav__long {
+    display: none;
+  }
+  .secnav[data-mode="corner"] .secnav__short {
+    display: block;
+  }
+  .secnav[data-mode="corner"] .secnav__action .secnav__long {
+    display: none;
+  }
+  /* The tray hugs its buttons: one under the other, as wide as the widest. */
+  .secnav[data-mode="corner"] .secnav__bar {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+}
+
 /* The page reserves the dock's measured height (layout-nav.js sets
    --secnav-h): its last line ends above the dock, and an anchor jump or a
    focused control stops short of it. */

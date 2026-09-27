@@ -48,6 +48,13 @@
         next.open = true;
         break;
       }
+      // Width round (designer C): a reading page may set the heading's
+      // blocks in a column wrapper (.w-part); look inside it.
+      var inner = next.classList && next.classList.contains("w-part") ? next.querySelector("details") : null;
+      if (inner) {
+        inner.open = true;
+        break;
+      }
       next = next.nextElementSibling;
     }
   }

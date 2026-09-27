@@ -58,7 +58,8 @@
     close: "M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
     up: "M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z",
     filter: "M6 13h12v-2H6m-3-5v2h18V6M10 18h4v-2h-4z",
-    next: "M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"
+    next: "M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z",
+    compass: "M7 17l3.2-6.8L17 7l-3.2 6.8L7 17m5-5.9a.9.9 0 0 0-.9.9.9.9 0 0 0 .9.9.9.9 0 0 0 .9-.9.9.9 0 0 0-.9-.9M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8z"
   };
   function icon(name, cls) {
     return '<svg class="' + (cls || "") + '" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="' +
@@ -381,35 +382,110 @@
     });
     return left;
   }
-  function decide() {
-    if (!READING[type] || window.innerWidth < 60 * 16) return "dock";
-    var grid = document.querySelector(".md-main .md-grid");
-    var gridLeft = grid ? Math.max(0, grid.getBoundingClientRect().left) : 0;
-    var room = columnLeft() - GAP - (gridLeft + EDGE);
-    if (room < 11 * rem()) return "dock";
-    rail.width = Math.min(room, 14 * rem());
-    rail.left = columnLeft() - GAP - rail.width;
-    return "rail";
+  /* Width round, designer C (owner, 2026-09-26): one control at the bottom
+     left on every page that has these controls, at every width. It opens
+     showing the labelled buttons (Browse <section>, On this page with its
+     live second line, and the docked action or Filters when they apply);
+     after about four seconds without interaction it folds to one small
+     round button in the corner, which hover, keyboard focus or a tap opens
+     again. It folds a moment after the pointer or focus leaves, never while
+     a panel is open, focus is inside it or the pointer is over it, and
+     Escape folds it (WCAG 1.4.13: hoverable, dismissible, persistent).
+     Folded, it covers almost nothing; open, it may float over the page, and
+     a focused control it would cover is scrolled clear of it. */
+  var toggle = el("button", "secnav__toggle", icon("compass"));
+  toggle.type = "button";
+  bar.id = "secnav-bar";
+  toggle.setAttribute("aria-controls", "secnav-bar");
+  toggle.setAttribute("aria-label", "Page navigation: Browse " + section +
+    (tocBtn ? ", On this page" : "") + (filtersBtn ? ", Filters" : ""));
+  nav.insertBefore(toggle, bar);
+  var expanded = true, hover = false, foldTimer = null;
+  function setExpanded(open) {
+    expanded = open;
+    nav.classList.toggle("is-folded", !open);
+    bar.hidden = !open;
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    toggle.title = open ? "Fold the page navigation" : "Show the page navigation";
   }
-  var dockH = 0;
-  function reserve() {
-    if (mode === "dock") {
-      var h = Math.ceil(bar.getBoundingClientRect().height);
-      if (h !== dockH) {
-        // A reader already at the end stays at the end when the dock
-        // grows (at a large text size a docked action can wrap it).
-        var atEnd = window.innerHeight + window.pageYOffset >= root.scrollHeight - 2;
-        var grew = h - dockH;
-        dockH = h;
-        root.style.setProperty("--secnav-h", h + "px");
-        if (atEnd && grew > 0 && root.classList.contains("secnav-docked")) window.scrollBy(0, grew);
-      }
-      root.classList.add("secnav-docked");
-    } else {
-      dockH = 0;
-      root.classList.remove("secnav-docked");
-      root.style.removeProperty("--secnav-h");
+  // Pinned: opened by a tap (or by the keyboard on the compass). It then
+  // stays open until the compass is pressed again, the reader taps outside,
+  // presses Escape or chooses something in it.
+  var pinned = false;
+  function canFold() {
+    return !pinned && !openPair && !hover && !nav.contains(document.activeElement);
+  }
+  function foldSoon(ms) {
+    window.clearTimeout(foldTimer);
+    foldTimer = window.setTimeout(function () {
+      if (canFold()) setExpanded(false);
+    }, ms);
+  }
+  var justOpened = false;
+  function unfold() {
+    window.clearTimeout(foldTimer);
+    if (!expanded) {
+      setExpanded(true);
+      // A tap focuses the button and then clicks it: that click must not
+      // fold what the focus has just opened.
+      justOpened = true;
+      window.setTimeout(function () { justOpened = false; }, 400);
     }
+  }
+  setExpanded(true);
+  nav.addEventListener("pointerenter", function (e) {
+    if (e.pointerType === "mouse") { hover = true; unfold(); }
+  });
+  nav.addEventListener("pointerleave", function (e) {
+    if (e.pointerType === "mouse") { hover = false; foldSoon(700); }
+  });
+  // Focus we give the compass ourselves (after Escape) must not reopen it.
+  var quietFocus = false;
+  toggle.addEventListener("focus", function () {
+    if (!quietFocus) unfold();
+  });
+  var lastPointer = "";
+  toggle.addEventListener("pointerdown", function (e) { lastPointer = e.pointerType; });
+  toggle.addEventListener("click", function () {
+    var mouse = lastPointer === "mouse";
+    lastPointer = "";
+    if (mouse) {
+      // A mouse has already opened it by hovering: a click folds it.
+      if (expanded && !justOpened) { pinned = false; closeAll(false); setExpanded(false); } else unfold();
+      return;
+    }
+    // A tap, or Enter or Space: a toggle that stays as it is left.
+    if (expanded && !justOpened) {
+      pinned = false;
+      closeAll(false);
+      setExpanded(false);
+    } else {
+      unfold();
+      pinned = true;
+    }
+  });
+  // A tap outside folds a tray a tap opened.
+  document.addEventListener("pointerdown", function (e) {
+    if (pinned && !nav.contains(e.target)) {
+      pinned = false;
+      if (!openPair) setExpanded(false);
+    }
+  });
+  // Choosing something in the tray ends the pin: an action folds it, a
+  // panel keeps it open until the panel closes.
+  bar.addEventListener("click", function (e) {
+    var hit = e.target.closest && e.target.closest("a, button");
+    if (!hit) return;
+    pinned = false;
+    if (hit.classList.contains("secnav__action") || hit.classList.contains("secnav__btn--filters")) foldSoon(300);
+  });
+
+  function decide() {
+    return "corner";
+  }
+  function reserve() {
+    root.classList.remove("secnav-docked");
+    root.style.removeProperty("--secnav-h");
   }
   function layout() {
     var next = decide();
@@ -417,15 +493,10 @@
       mode = next;
       nav.setAttribute("data-mode", mode);
     }
-    if (mode === "rail") {
-      nav.style.left = rail.left + "px";
-      nav.style.width = rail.width + "px";
-    } else {
-      nav.style.left = "";
-      nav.style.width = "";
-      nav.style.bottom = "";
-    }
-    var short = mode === "dock" && phone.matches;
+    nav.style.left = "";
+    nav.style.width = "";
+    nav.style.top = "";
+    var short = phone.matches;
     mapBtn.setAttribute("aria-label", short ? "Browse section: " + section
       : "Browse " + section + ", all " + total + " pages");
     reserve();
@@ -454,8 +525,17 @@
       s.bottom = Math.max(8, window.innerHeight - r.bottom) + "px";
       s.maxHeight = (r.bottom - hb - 16) + "px";
       s.borderRadius = "";
+    } else if (mode === "corner" && !phone.matches) {
+      // Above the control, over the page, from its left edge.
+      var n = nav.getBoundingClientRect();
+      s.left = n.left + "px";
+      s.right = "";
+      s.width = Math.min(wide, window.innerWidth - n.left - EDGE) + "px";
+      s.bottom = (window.innerHeight - n.top + 8) + "px";
+      s.maxHeight = (n.top - hb - 20) + "px";
+      s.borderRadius = "";
     } else if (phone.matches) {
-      // A sheet across the phone, sitting on the dock.
+      // A sheet across the phone, sitting on the control.
       s.left = "0px";
       s.right = "0px";
       s.width = "auto";
@@ -500,6 +580,7 @@
     veil.hidden = true;
     openPair = null;
     if (restore) btn.focus();
+    foldSoon(700);
   }
   function open(pair) {
     closeAll(false);
@@ -522,6 +603,16 @@
     if (e.key === "Escape" && openPair) {
       e.preventDefault();
       closeAll(true);
+    } else if (e.key === "Escape" && expanded && (hover || pinned || nav.contains(document.activeElement))) {
+      // Escape folds the open control and returns focus to the compass
+      // without opening it again, even with the pointer still over it.
+      e.preventDefault();
+      pinned = false;
+      window.clearTimeout(foldTimer);
+      setExpanded(false);
+      quietFocus = true;
+      toggle.focus({ preventScroll: true });
+      quietFocus = false;
     }
   });
   document.addEventListener("click", function (e) {
@@ -529,6 +620,7 @@
   });
   nav.addEventListener("focusout", function (e) {
     if (openPair && e.relatedTarget && !nav.contains(e.relatedTarget)) closeAll(false);
+    if (!e.relatedTarget || !nav.contains(e.relatedTarget)) foldSoon(700);
   });
 
   /* A focused control is never even partly hidden by the dock at the foot
@@ -553,11 +645,24 @@
     if (r.width === 0 && r.height === 0) return;
     var top = topCover() + 8;
     var limit = (mode === "dock" ? bar.getBoundingClientRect().top : window.innerHeight) - 8;
+    if (mode === "corner") {
+      // A stop that would sit under the control ends above it.
+      var n = nav.getBoundingClientRect();
+      if (r.left < n.right + 8 && r.right > n.left - 8) limit = Math.min(limit, n.top - 8);
+    }
     if (r.height > limit - top) return;
     if (r.bottom > limit) window.scrollBy(0, r.bottom - limit);
     else if (r.top < top) window.scrollBy(0, r.top - top);
   }
   document.addEventListener("focusin", function (e) {
+    if (mode === "corner" && !nav.contains(e.target) && expanded && !hover && !openPair) {
+      // Focus has moved into the page: fold at once if the open control
+      // would sit over the focused item, otherwise in a moment.
+      var t = e.target.getBoundingClientRect ? e.target.getBoundingClientRect() : null;
+      var n = nav.getBoundingClientRect();
+      if (t && t.left < n.right && t.right > n.left && t.bottom > n.top) setExpanded(false);
+      else foldSoon(700);
+    }
     reveal(e.target);
     // The header can slide back in as the page scrolls up; check again
     // once it has moved.
@@ -570,7 +675,7 @@
   function update() {
     var hb = headerBottom();
     var bottom = mode === "dock" ? bar.getBoundingClientRect().top : window.innerHeight;
-    if (mode === "rail") {
+    if (mode === "rail" || mode === "corner") {
       // Lifted above the footer as it scrolls in, never over it.
       var lift = footer ? Math.max(0, window.innerHeight - footer.getBoundingClientRect().top) : 0;
       nav.style.bottom = (EDGE + lift) + "px";
@@ -581,7 +686,8 @@
         var r = source.getBoundingClientRect();
         var inView = twins.some(function (n) {
           var q = n.getBoundingClientRect();
-          return rendered(n) && q.bottom > hb && q.top < bottom;
+          // In view means at least half of it shows, not a sliver at an edge.
+          return rendered(n) && q.bottom - q.height / 2 > hb && q.top + q.height / 2 < bottom;
         });
         var passed = r.bottom <= hb;
         show = !inView && (passed || window.pageYOffset > window.innerHeight * 0.5);
@@ -610,7 +716,12 @@
       for (var i = 0; i < heads.length; i++) {
         if (heads[i].getBoundingClientRect().top - line <= 0) at = i; else break;
       }
-      if (nowEl) nowEl.textContent = at === -1 ? (tocCount || chips.length) + " " + tocNoun : text(chips[at]);
+      var now = at === -1 ? (tocCount || chips.length) + " " + tocNoun : text(chips[at]);
+      if (nowEl && nowEl.textContent !== now) {
+        nowEl.textContent = now;
+        // The accessible name follows the visible second line.
+        tocBtn.setAttribute("aria-label", "On this page: " + now);
+      }
       chips.forEach(function (c, j) {
         if (j === at) c.setAttribute("aria-current", "location");
         else c.removeAttribute("aria-current");
@@ -638,6 +749,9 @@
     shelf.addEventListener("change", function () { window.setTimeout(update, 0); });
   }
   layout();
+  // The labelled buttons show first, then fold to the corner button after
+  // about four seconds without interaction.
+  foldSoon(4000);
   // Web fonts can change the column's measure once they arrive.
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
   window.addEventListener("load", layout);
