@@ -554,3 +554,309 @@
     break-inside: avoid;
   }
 }
+
+/* =========================================================================
+   Week round (designer C, 2026-09-27): This Week and the weekly digests.
+   scripts/layout_week.py wraps each feed in a panel (.wk-feed, the Latest
+   News look of News & Events: outline, the news hue's left edge, its name
+   as the heading, items as a title with "source · date" under it, thin
+   rules between) and the run of feeds in one row (.wk-feeds). Nothing here
+   applies to the feed pages, which keep their single column.
+   ========================================================================= */
+.md-typeset .wk-feeds {
+  display: grid;
+  gap: 1rem;
+  margin: 0.4rem 0 1.6rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .wk-feeds {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+  .md-typeset .wk-feeds[data-wk-n="2"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md-typeset .wk-feeds[data-wk-n="1"] {
+    grid-template-columns: minmax(0, 44rem);
+  }
+}
+
+.md-typeset .wk-feed.ne-card {
+  padding: 0.85rem 1rem 0.6rem;
+}
+
+.md-typeset .wk-feed > h2 {
+  margin: 0 0 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.md-typeset .wk-feed > h2 .headerlink {
+  display: none;
+}
+
+/* Items: the Latest News rows, with the summary kept under them. */
+.md-typeset .wk-feed .news-list {
+  gap: 0;
+  margin-top: 0.5rem;
+}
+
+.md-typeset .wk-feed .news-card {
+  padding: 0.55rem 0;
+  border: 0;
+  border-top: 1px solid var(--hub-row-rule);
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.md-typeset .wk-feed .news-list > .news-card:first-child {
+  border-top: 0;
+}
+
+.md-typeset .wk-feed .news-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.md-typeset .wk-feed .news-card-title {
+  order: 1;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--md-typeset-a-color) !important;
+}
+
+.md-typeset .wk-feed .news-card-head {
+  order: 2;
+  display: block;
+  margin: 0.15rem 0 0;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .wk-feed .news-card .source-chip {
+  display: inline;
+  font-size: inherit;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.md-typeset .wk-feed .news-card-date {
+  font-size: inherit;
+  white-space: normal;
+}
+
+.md-typeset .wk-feed .news-card-date::before {
+  content: "\00b7";
+  content: "\00b7" / "";
+  margin: 0 0.35em;
+}
+
+.md-typeset .wk-feed .news-card-summary {
+  order: 3;
+  margin: 0.25rem 0 0;
+  font-size: 0.72rem;
+  line-height: 1.45;
+}
+
+.md-typeset .wk-feed .news-card-thumb {
+  display: none;
+}
+
+/* The brief inside a panel: no second box, the hue's rule is the panel's. */
+.md-typeset .wk-feed .section-brief {
+  margin: 0 0 0.6rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 0.74rem;
+}
+
+/* "Show the other N items" closes the column, full width of the panel. */
+.md-typeset .wk-feed > details.abstract {
+  margin: 0.6rem 0 0.2rem;
+}
+
+/* --- The brief's fold (This Week and the feed pages) -------------------------
+   The continuation is the same text carrying on: a quiet link-coloured
+   summary, then plain paragraphs, no box. Listen and the date line follow,
+   outside it. */
+.md-typeset .section-brief > details.section-brief-more {
+  margin: 0 0 0.6rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  font-size: inherit;
+}
+
+.md-typeset .section-brief > details.section-brief-more > summary {
+  display: inline-block;
+  min-height: 1.6rem;
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: var(--md-typeset-a-color);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.md-typeset .section-brief > details.section-brief-more > summary::before,
+.md-typeset .section-brief > details.section-brief-more > summary::after {
+  display: none;
+}
+
+.md-typeset .section-brief > details.section-brief-more > summary:hover {
+  text-decoration: underline;
+}
+
+.md-typeset .section-brief > details.section-brief-more > summary:focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset .section-brief > details.section-brief-more[open] > summary {
+  display: none;
+}
+
+.md-typeset .section-brief > details.section-brief-more > p {
+  margin: 0 0 0.6rem;
+}
+
+.md-typeset .section-brief > .section-brief-date {
+  margin: 0.3rem 0 0.8rem;
+  font-size: 0.68rem;
+  color: var(--md-default-fg-color--light);
+}
+
+/* --- The rest of the page ----------------------------------------------------- */
+.md-typeset .wk-media,
+.md-typeset .wk-also,
+.md-typeset .wk-brief,
+.md-typeset .wk-updates {
+  margin: 0 0 1.6rem;
+}
+
+/* This Week: ten videos show, in two rows of five across the frame. */
+@media screen and (min-width: 60em) {
+  .md-typeset .wk-media > .video-grid:not(.podcast-grid),
+  .md-typeset .wk-media details .video-grid:not(.podcast-grid) {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+/* Podcasts: square art at a card's size, never the frame's width. */
+.md-typeset .wk-podcasts .podcast-grid {
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 14rem));
+}
+
+/* The digest's week in brief: a readable measure in two columns. */
+@media screen and (min-width: 60em) {
+  .md-typeset .wk-brief .section-brief {
+    columns: 2;
+    column-gap: 2.4rem;
+    padding-bottom: 0.9rem;
+  }
+  .md-typeset .wk-brief .section-brief > * {
+    break-inside: avoid;
+  }
+  .md-typeset .wk-brief .section-brief > .listen {
+    column-span: all;
+  }
+}
+
+/* The digest's short updates (conference calendar, new opportunities): a
+   row of slim panels, as many across as there are. */
+.md-typeset .wk-updates {
+  display: grid;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .wk-updates[data-wk-n="2"] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.md-typeset .wk-update {
+  padding: 0.8rem 1rem 0.3rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.6rem;
+}
+
+.md-typeset .wk-update > h2 {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.md-typeset .wk-update > h2 .headerlink {
+  display: none;
+}
+
+/* "Also this week": the topic groups in columns, each group whole. */
+@media screen and (min-width: 60em) {
+  .md-typeset .wk-also {
+    columns: 3;
+    column-gap: 2rem;
+  }
+  .md-typeset .wk-also > h2 {
+    column-span: all;
+  }
+  .md-typeset .wk-also > ul,
+  .md-typeset .wk-also li {
+    break-inside: avoid-column;
+  }
+  .md-typeset .wk-also > p {
+    break-after: avoid-column;
+  }
+}
+
+/* A panel's column is its own width, whatever a chips row inside it would
+   like (the row scrolls sideways on phones instead). */
+.md-typeset .wk-feeds {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.md-typeset .wk-feed {
+  min-width: 0;
+}
+
+/* Inside a panel the Listen row is the compact size of the rest of the
+   panel's controls: a 30px row, Listen sized to its word. */
+.md-typeset .wk-feed .listen-btn {
+  min-height: 1.6rem;
+  padding: 0.15rem 0.6rem;
+  border-width: 1px;
+  border-radius: 0.8rem;
+  font-size: 0.7rem;
+}
+
+.md-typeset .wk-feed .listen-btn svg {
+  width: 0.9rem;
+  height: 0.9rem;
+}
+
+.md-typeset .wk-feed .listen-play {
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+.md-typeset .wk-feed .listen-rate {
+  min-width: 0;
+}
+
+.md-typeset .wk-feed .listen-note {
+  font-size: 0.66rem;
+}
+
+/* The page's opening notes keep a readable line across the wider frame. */
+.md-typeset:has(> .wk-feeds) > p,
+.md-typeset:has(> .wk-brief) > p {
+  max-width: 44rem;
+}
