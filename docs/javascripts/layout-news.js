@@ -3,7 +3,10 @@
  * 1. This Week's row of section links sticks under the header from 60em
  *    (layout-news.css). This keeps --news-sticky-top equal to the header's
  *    real height, which changes with the width, and marks the link of the
- *    section being read with aria-current="location".
+ *    section being read with aria-current="location". A feed chip also
+ *    focuses its panel's heading and outlines the panel for a moment,
+ *    and while the feed panels share a row, the chip marked is the one
+ *    picked (week round, part 2).
  * 2. The LiveBench table keeps scrolling sideways on narrow screens, with
  *    its rank and model columns held in place. This marks the table
  *    .is-scrollable whenever it is wider than its column, which shows the
@@ -45,11 +48,58 @@
         if (h && h.getBoundingClientRect().top <= line) current = i;
       });
       if (!sticky.matches) current = -1;
+      // While the feed panels share a row their headings share one height,
+      // so the scroll position cannot tell them apart: the feed chip shown
+      // as current is the one the reader picked, and scrolling alone never
+      // marks another. Leaving the feeds forgets the pick.
+      if (current >= 0 && isFeed(current) && feedsShareRow()) {
+        current = isFeed(picked) ? picked : -1;
+      } else if (current < 0 || !isFeed(current)) {
+        picked = -1;
+      }
       links.forEach(function (a, i) {
         if (i === current) a.setAttribute("aria-current", "location");
         else a.removeAttribute("aria-current");
       });
     };
+
+    /* Feed chips (week round, part 2). A feed chip lands on its panel and
+     * says which one it meant: focus moves to the panel's heading and the
+     * panel is outlined for a moment (a still outline under reduced motion,
+     * layout-news.css). */
+    var picked = -1;
+    var panelOf = function (i) {
+      var h = targets[i];
+      return h ? h.closest(".wk-feed") : null;
+    };
+    var isFeed = function (i) {
+      return i >= 0 && !!panelOf(i);
+    };
+    var feedsShareRow = function () {
+      var tops = [];
+      targets.forEach(function (h, i) {
+        if (isFeed(i)) tops.push(Math.round(h.getBoundingClientRect().top));
+      });
+      return tops.length > 1 && Math.max.apply(null, tops) - Math.min.apply(null, tops) < 2;
+    };
+    links.forEach(function (a, i) {
+      if (!isFeed(i)) return;
+      a.addEventListener("click", function () {
+        picked = i;
+        var h = targets[i];
+        var panel = panelOf(i);
+        window.requestAnimationFrame(function () {
+          if (!h.hasAttribute("tabindex")) h.setAttribute("tabindex", "-1");
+          h.focus({ preventScroll: true });
+          document.querySelectorAll(".wk-feed.is-picked").forEach(function (p) {
+            p.classList.remove("is-picked");
+          });
+          panel.classList.add("is-picked");
+          window.setTimeout(function () { panel.classList.remove("is-picked"); }, 1600);
+          mark();
+        });
+      });
+    });
 
     var ticking = false;
     window.addEventListener("scroll", function () {
@@ -67,6 +117,35 @@
     setTop();
     mark();
   }
+
+  /* --- The brief's fold: a way back (week round, part 2) -------------------
+   * Opened, "Read the rest of this week's brief" hides its label so the
+   * continuation reads straight on from the lede. The button at the end of
+   * the continuation (rendered hidden by scripts/layout_week.py) folds it
+   * again and returns focus to the label; opening moves focus to the start of
+   * the continuation. Without JavaScript the button
+   * stays hidden and the label stays in place, so the fold still closes. */
+  document.querySelectorAll(".section-brief > details.section-brief-more").forEach(function (fold) {
+    var hide = fold.querySelector(".section-brief-hide");
+    var label = fold.querySelector("summary");
+    if (!hide || !label) return;
+    hide.hidden = false;
+    fold.classList.add("has-hide");
+    // The label gives way when the fold opens, so focus would be lost with
+    // it: it moves to the start of the continuation instead, from where Tab
+    // walks its source links to the Hide button.
+    var start = fold.querySelector("summary + p");
+    fold.addEventListener("toggle", function () {
+      if (fold.open && start && (document.activeElement === label || document.activeElement === document.body)) {
+        start.setAttribute("tabindex", "-1");
+        start.focus({ preventScroll: true });
+      }
+    });
+    hide.addEventListener("click", function () {
+      fold.open = false;
+      label.focus();
+    });
+  });
 
   /* --- Search results: keep the first match in view ------------------------
    * layout-news.css cuts each result to a few lines under its title. When a

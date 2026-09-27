@@ -172,6 +172,9 @@ hooks:
   - scripts/layout_guides.py
   - scripts/layout_prompt_pages.py
   - scripts/layout_news.py
+  # Week round, designer C (2026-09-27): This Week and the weekly digests in
+  # three columns, the brief's continuation folded under its lede, at render time.
+  - scripts/layout_week.py
   - scripts/layout_learn.py
   # Navigation synthesis (2026-09-26): the section model, page feet, the
   # Tools & Prompts landing, colored link rows and the color key. Last, so

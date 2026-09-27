@@ -74,6 +74,10 @@ def page_type(page) -> str:
         return "shelf"
     if src.startswith("news/") and not src.startswith("news/archive/"):
         return "shelf"
+    # The weekly digests are shelves since the week round: scripts/layout_week.py
+    # arranges them in the This Week look (three feed columns, the whole frame).
+    if re.fullmatch(r"news/archive/\d{4}-w\d{2}\.md", src):
+        return "shelf"
     if src.startswith("pathway/"):
         return "lesson"
     if src.startswith("playbooks/"):

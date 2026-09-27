@@ -6,8 +6,15 @@
    On This Week a section's items come in two tiers (2026-09-23): the
    newest show directly and the rest sit in a collapsed "Show the other
    N" block. A chip filters every list up to the next heading, both tiers,
-   and opens the collapsed tier when it holds a match, so choosing a topic
-   never leaves a matching item hidden.
+   so choosing a topic never leaves a matching item hidden.
+
+   Week round, part 2 (2026-09-27): while a topic is chosen, the matches of
+   both tiers read as ONE list: the collapsed tier is opened and marked
+   .is-merged, which hides its "Show the other N" header and its box
+   (layout-news.css), because that label counts the whole tier while it
+   would hold only matches. The first match shown is marked .is-lead so no
+   list starts with a separator rule. Choosing All restores the first tier
+   and a closed "Show the other N" exactly as on load.
 
    Layout redesign (L19, 2026-09-25): the row is a labelled group of
    toggle buttons (aria-pressed), one line that scrolls sideways on
@@ -73,9 +80,20 @@
         }
       });
       shown += matched;
-      if (topic && entry.holder && matched) {
-        entry.holder.open = true;
+      if (entry.holder) {
+        entry.holder.classList.toggle("is-merged", !!topic);
+        entry.holder.open = !!topic;
       }
+    });
+    var lead = null;
+    lists.forEach(function (entry) {
+      entry.list.querySelectorAll(".news-card").forEach(function (card) {
+        var first = !!topic && !lead && card.style.display !== "none";
+        if (first) {
+          lead = card;
+        }
+        card.classList.toggle("is-lead", first);
+      });
     });
     status(row).textContent = topic
       ? "Showing " + shown + " of " + total
