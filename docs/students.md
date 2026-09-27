@@ -98,16 +98,47 @@ The [AI Responsible Use Policy](governance/policy.md) is the reference for every
 
 This is where the daily habits form, and the ones that pay off share a shape: the AI works from **your** materials, and **you** do the recalling.
 
-??? note "Setups, prompts, notebooks, and when to trust the output"
+<div class="grid cards hub-tasks" markdown>
 
-    - **Set it up once, not every session.** A [standing setup](tools/standing-setups.md) holds your course, its objectives, and your notes, so every conversation starts briefed.
-    - **Prompts written for this stage.** A lecture tutor, a daily review sheet builder, a flashcard builder, and a National Board of Medical Examiners (NBME)-style question tutor, all working from the lecture you attach, in the [prompt library](prompts/index.md).
-    - **Documents, without the fiddling.** Scanned PDFs, exported spreadsheets, and study sheets as real files: the [Skills page](tools/skills.md) covers what is switched on, and how to judge a skill before adding one.
-    - **One notebook per course.** [Gemini Notebook (formerly NotebookLM)](tools/gemini-notebook.md) answers from what you upload, with citations; it finds well and summarizes less reliably.
-    - **Finding study tools.** The [study tools](tools/index.md?task=study) are built for this.
-    - **Better answers, less effort.** [Getting Better Answers](basics/better-answers.md) explains the three levers that decide quality: context, memory, and standing instructions.
-    - **Anatomy is a known weak spot for image generators.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong; the [misconceptions page](basics/misconceptions.md) explains what to use instead.
-    - **Calibrating trust.** Fluency is not accuracy; the [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, which matters double for exams and wards.
+-   ### Set It Up Once, Not Every Session
+
+    - [Standing Setups](tools/standing-setups.md) <span class="row-sub">Holds your course, its objectives, and your notes, so every conversation starts briefed.</span>
+
+-   ### Prompts Written for This Stage
+
+    - [Prompt Library](prompts/index.md) <span class="row-sub">A lecture tutor, a daily review sheet builder, a flashcard builder, and a National Board of Medical Examiners (NBME)-style question tutor, all working from the lecture you attach.</span>
+
+-   ### Documents, without the Fiddling
+
+    Scanned PDFs, exported spreadsheets, and study sheets as real files.
+
+    - [Agent Skills](tools/skills.md) <span class="row-sub">Covers what is switched on, and how to judge a skill before adding one.</span>
+
+-   ### One Notebook per Course
+
+    - [Gemini Notebook](tools/gemini-notebook.md) <span class="row-sub">Formerly NotebookLM: answers from what you upload, with citations; it finds well and summarizes less reliably.</span>
+
+-   ### Finding Study Tools
+
+    - [Study Tools](tools/index.md?task=study) <span class="row-sub">Built for this.</span>
+
+-   ### Better Answers, Less Effort
+
+    - [Getting Better Answers](basics/better-answers.md) <span class="row-sub">Explains the three levers that decide quality: context, memory, and standing instructions.</span>
+
+-   ### Anatomy Is a Known Weak Spot for Image Generators
+
+    Generated diagrams look convincing and get foramina, rib counts, and attachments wrong.
+
+    - [Common Misconceptions](basics/misconceptions.md) <span class="row-sub">Explains what to use instead.</span>
+
+-   ### Calibrating Trust
+
+    Fluency is not accuracy.
+
+    - [Common Misconceptions](basics/misconceptions.md) <span class="row-sub">Covers how to judge reliability by task, which matters double for exams and wards.</span>
+
+</div>
 
 ## Building a Study Schedule {: #building-a-study-schedule }
 

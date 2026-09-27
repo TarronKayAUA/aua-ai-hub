@@ -241,13 +241,13 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > h1 {
    row. Material's own `.md-typeset a.focus-visible` (amber, 0,2,1) beats
    layout.css's navy ring, so the inner link's outline is removed here and
    the row carries the shared --hub-focus colour. */
-.md-typeset :is(.hub-cards, .hub-also) > ul > li ul > li:has(> a:focus-visible) {
+.md-typeset :is(.hub-cards, .hub-also, .hub-tasks) > ul > li ul > li:has(> a:focus-visible) {
   outline: 2px solid var(--hub-focus);
   outline-offset: 1px;
   border-radius: 0.3rem;
 }
 
-.md-typeset :is(.hub-cards, .hub-also) > ul > li ul > li > a:is(:focus-visible, .focus-visible),
+.md-typeset :is(.hub-cards, .hub-also, .hub-tasks) > ul > li ul > li > a:is(:focus-visible, .focus-visible),
 .md-typeset .gov-cards a.card-link:is(:focus-visible, .focus-visible) {
   outline: none;
 }
@@ -292,6 +292,29 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > h1 {
 
 .md-typeset .hub-cards > ul > li > ol + ul {
   margin-top: 0.2rem;
+}
+
+/* Task cards (final polish, 2026-09-27): a section's tasks, each a card
+   titled by the task, its links as rows of their kind, and any advice that
+   is not about a link as the card's text. Titles are h3 under the
+   section's h2. */
+.md-typeset .hub-tasks > ul > li > h3 {
+  margin: 0 0 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .hub-tasks > ul > li > h3 .headerlink {
+  display: none;
+}
+
+.md-typeset .hub-tasks > ul > li > p {
+  margin: 0 0 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 
 /* "Also" rows on the faculty hub: one full-width card whose rows sit in

@@ -595,6 +595,24 @@ body[data-door] .md-content__inner {
   margin-top: 0.2rem;
 }
 
+/* The home column's feeds: each feed after the first opens with more space
+   and a 2px rule in the news color, and its label takes that color, so a
+   change of feed reads differently from the 1px grey line between articles
+   (owner, 2026-09-27). */
+.md-typeset .timely-feed + .timely-feed {
+  margin-top: 0.75rem;
+  padding-top: 0.15rem;
+  border-top: 2px solid var(--k, var(--hub-row-rule));
+}
+
+.md-typeset .timely-feed[data-kind] > .timely-kicker {
+  color: var(--k);
+}
+
+.md-typeset .timely-block > h2 + .timely-feed > .timely-kicker {
+  margin-top: 0.2rem;
+}
+
 /* [dir] matches Material's own list rules, which carry it and would
    otherwise indent these lists like bullets. */
 [dir] .md-typeset .timely-list {

@@ -73,15 +73,42 @@ Most drafting needs no identifying details at all. A memo about a process, a vig
 
 ## More Ways to Work
 
-??? note "Team-based learning, exam statistics, slides, and more"
+<div class="grid cards hub-tasks" markdown>
 
-    - **Team-based learning (TBL):** the [TBL session builder](prompts/index.md#team-based-learning-session-builder) drafts individual and team readiness tests (iRAT and tRAT) from your pre-work, then two or three application cases.
-    - **After an exam:** the [item analysis reader](prompts/index.md#post-exam-item-analysis-reader) reads post-exam statistics from the numbers alone, and [Shelf and NBME Score Reports](playbooks/score-reports.md) helps you advise a student from National Board of Medical Examiners (NBME) INSIGHTS data, with an advisor note.
-    - **Slides and posters:** the [slide and poster tools](tools/index.md?task=slides) in the directory.
-    - **Stop re-explaining:** a [standing setup](tools/standing-setups.md) keeps one project per course with your materials attached; [Your First Agent Session](tools/first-session.md) covers file-based work.
-    - **Documents, decks, and spreadsheets:** four document [skills](tools/skills.md) are already on in claude.ai and Cowork. A skill runs its author's instructions on your files, so prefer ones from sources you know.
-    - **A stack of your own documents:** [Gemini Notebook (formerly NotebookLM)](tools/gemini-notebook.md) gives cited answers from your uploads; it is reliable for retrieval and less so for summaries. See also [other tools that work from your documents](tools/index.md?task=own_documents).
-    - **Better answers from any tool:** [Getting Better Answers](basics/better-answers.md) covers the three levers: context, memory, and standing instructions.
+-   ### Team-Based Learning (TBL)
+
+    - [TBL Session Builder](prompts/index.md#team-based-learning-session-builder) <span class="row-sub">Drafts individual and team readiness tests (iRAT and tRAT) from your pre-work, then two or three application cases.</span>
+
+-   ### After an Exam
+
+    - [Item Analysis Reader](prompts/index.md#post-exam-item-analysis-reader) <span class="row-sub">Reads post-exam statistics from the numbers alone.</span>
+    - [Shelf and NBME Score Reports](playbooks/score-reports.md) <span class="row-sub">Helps you advise a student from National Board of Medical Examiners (NBME) INSIGHTS data, with an advisor note.</span>
+
+-   ### Slides and Posters
+
+    - [Slide and Poster Tools](tools/index.md?task=slides) <span class="row-sub">In the directory.</span>
+
+-   ### Stop Re-explaining
+
+    - [Standing Setups](tools/standing-setups.md) <span class="row-sub">Keeps one project per course with your materials attached.</span>
+    - [Your First Agent Session](tools/first-session.md) <span class="row-sub">Covers file-based work.</span>
+
+-   ### Documents, Decks, and Spreadsheets
+
+    A skill runs its author's instructions on your files, so prefer ones from sources you know.
+
+    - [Agent Skills](tools/skills.md) <span class="row-sub">Four document skills are already on in claude.ai and Cowork.</span>
+
+-   ### A Stack of Your Own Documents
+
+    - [Gemini Notebook](tools/gemini-notebook.md) <span class="row-sub">Formerly NotebookLM: gives cited answers from your uploads; it is reliable for retrieval and less so for summaries.</span>
+    - [Other Tools That Work from Your Documents](tools/index.md?task=own_documents)
+
+-   ### Better Answers from Any Tool
+
+    - [Getting Better Answers](basics/better-answers.md) <span class="row-sub">Covers the three levers: context, memory, and standing instructions.</span>
+
+</div>
 
 ## Staying Current
 

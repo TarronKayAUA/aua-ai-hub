@@ -420,9 +420,14 @@ def _feeds_mini_html(build: _Build, arg: str, src: str) -> str:
         name, items = build.feed(slug)
         shown = items[:count]
         build.shown.append((src, slug, count))
-        blocks.append(_kicker(name))
-        blocks.append(_news_items(shown, slug) if shown else
-                      '<p class="timely-empty">No items yet.</p>')
+        # One group per feed, wearing the kind of the feed's page, so the
+        # divider between feeds (a rule in that color, layout-home.css) reads
+        # differently from the thin lines between articles.
+        kind = _nav().kind_of(f"news/{slug}.md")
+        attrs = f' data-kind="{kind}"' if kind else ""
+        blocks.append(f'<div class="timely-feed"{attrs}>' + _kicker(name)
+                      + (_news_items(shown, slug) if shown else
+                         '<p class="timely-empty">No items yet.</p>') + "</div>")
     return "\n\n".join(blocks)
 
 

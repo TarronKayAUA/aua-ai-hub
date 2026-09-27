@@ -1692,6 +1692,12 @@
   margin: 0.6rem 0 1rem;
 }
 
+/* A route list outside the Learn map has no next stage, so no arrow: it
+   drew past the page edge once the list was not its block's last child. */
+.md-typeset .route-stage.route-stage--solo:not(:last-child)::after {
+  content: none;
+}
+
 .md-typeset .route-sub {
   display: block;
   margin-top: 0.1rem;
