@@ -651,7 +651,8 @@
 /* Prose in the results pane keeps a readable line (about 95 characters at
    most); grids, rows and the legend table use the full width. */
 .md-typeset .tool-results > p:not(.tool-browse),
-.md-typeset .tool-set > p {
+.md-typeset .tool-set > p,
+.md-typeset .dir-about__text > p {
   max-width: 38rem;
 }
 
@@ -760,4 +761,74 @@
 .md-typeset a.tool-visit:hover {
   border-color: var(--md-typeset-a-color);
   background: var(--hub-quiet-bg);
+}
+
+/* --- The Directory Today (space round, 2026-09-27) -------------------------
+   Counts from data/tools.yaml beside the statuses explanation, in the space
+   the explanation's measure leaves free on wide screens. */
+.md-typeset .dir-today {
+  margin: 1rem 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--tool-rule);
+  border-radius: 0.6rem;
+  font-size: 0.72rem;
+}
+
+.md-typeset .dir-today__title {
+  margin: 0 0 0.3rem;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.md-typeset .dir-today__total {
+  margin: 0 0 0.6rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .dir-today__big {
+  margin-right: 0.25rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+[dir] .md-typeset .dir-today__counts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset .dir-today__counts > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.3rem 0;
+  border-top: 1px solid var(--tool-rule);
+}
+
+.md-typeset .dir-today__n {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.md-typeset .dir-today__note {
+  margin: 0.6rem 0 0;
+  color: var(--md-default-fg-color--light);
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .dir-about {
+    display: grid;
+    grid-template-columns: minmax(0, 38rem) minmax(14rem, 20rem);
+    justify-content: space-between;
+    column-gap: 2.4rem;
+    align-items: start;
+  }
+  .md-typeset .dir-about__text > :first-child {
+    margin-top: 0;
+  }
+  .md-typeset .dir-about > .dir-today {
+    margin-top: 0;
+  }
 }
