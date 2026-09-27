@@ -435,6 +435,9 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) .w-page--door .w-cell > 
   .w-pair > .w-pair__side.w-cols:only-child {
     grid-column: 1 / -1;
   }
+  .md-typeset .w-cols > :is(p, ul, ol, dl, blockquote) {
+    max-width: none;
+  }
   .w-rows > .w-cell.w-stack > :is(p, ul, ol, dl, blockquote, h2, h3) {
     max-width: var(--w-measure);
   }
@@ -450,6 +453,14 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) .w-page--door .w-cell > 
   :is(.w-leaf, .w-pair).w-stack > :has(> :is(figure, table, .admonition, details)) {
     max-width: none;
     position: static;
+  }
+  /* A stacked side set in two columns takes the whole width; each column
+     is then about one measure (space round). */
+  :is(.w-leaf, .w-pair).w-stack > .w-cols {
+    max-width: none;
+  }
+  .md-typeset .w-cols > :is(ul, ol, dl, blockquote, .w-keep) {
+    max-width: none;
   }
 }
 @media screen and (min-width: 68.75em) and (max-height: 44em) {

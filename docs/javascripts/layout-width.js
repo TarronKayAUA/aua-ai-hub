@@ -63,6 +63,11 @@
     rows.forEach(function (p) { parts.push(p[0], p[1]); });
     sides.forEach(function (s) {
       if (s.classList.contains("w-pair")) Array.prototype.forEach.call(s.children, function (c) { parts.push(c); });
+      // A stacked leaf: its text side (not the figure, note or table side).
+      if (s.classList.contains("w-leaf")) Array.prototype.forEach.call(s.children, function (c) {
+        var first = c.firstElementChild;
+        if (first && !first.matches("figure, .admonition, details, .md-typeset__scrollwrap, table, .grid, [class*='-grid']")) parts.push(c);
+      });
     });
     // A lettered part left alone in its row (no partner of similar length)
     // has the same empty half beside it.
