@@ -53,7 +53,9 @@ DOOR = {"index.md", "students.md", "faculty.md", "pathway/index.md",
 SHELF = {"tools/index.md", "prompts/index.md", "prompts/exchange.md",
          "playbooks/index.md", "learning/index.md", "benchmarks.md",
          "conferences.md", "opportunities.md", "announcements/index.md",
-         "news/archive/index.md", "worked-examples/index.md"}
+         "news/archive/index.md"}
+# worked-examples/index.md is a reading page since the space round: its
+# three paragraphs keep the measure and its write-ups sit in panels.
 
 
 def page_type(page) -> str:

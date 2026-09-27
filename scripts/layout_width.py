@@ -280,6 +280,16 @@ class Unit:
                 and not any(b.wide or b.role == "terms" for b in self.blocks))
 
 
+def _one_column(u: Unit) -> bool:
+    """A section whose body is one piece of prose: across the whole width it
+    could only fill one of the two columns."""
+    groups = _glue(u.blocks)
+    if groups and _lead(groups[0]).role in ("h2", "h3"):
+        groups = groups[1:]
+    real = [g for g in groups if _lead(g).role not in ("key", "silent")]
+    return len(real) == 1 and _lead(real[0]).role == "prose"
+
+
 def _pairable(a: Unit, b: Unit) -> bool:
     lo, hi = sorted((a.weight, b.weight))
     return a.tileable and b.tileable and hi <= PAIR_RATIO * lo + PAIR_SLACK
@@ -540,6 +550,10 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
     after_head: list[Block] = []
     for i, b in enumerate(rest):
         if b.wide:
+            # A color key keying the wide block goes with it, not into the
+            # head (space round: the write-ups' key sat above the wrong panel).
+            while i and rest[i - 1].role in ("key", "silent"):
+                i -= 1
             rest, after_head = rest[:i], rest[i:]
             break
     left, right, lifted = main, [], None
@@ -554,7 +568,12 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
                 best = (score, k)
         k = best[1]
         left, right = main + _flat(groups[:k]), _flat(groups[k:])
-    elif units and units[0].tileable and units[0].weight <= LIFT_MAX and not after_head:
+    elif (units and units[0].tileable and units[0].weight <= LIFT_MAX and not after_head
+          and any(b.role == "chrome" for b in main)):
+        # A section is lifted beside the head only when the head has more
+        # than its title (a meta line): an h1 never sits in a cell alone,
+        # with a column-high gap under it (space round, owner, 2026-09-27).
+        # A bare title runs across the top and the sections pair below it.
         lifted = units.pop(0)
     how = "split" if right else "lifted" if lifted else "title only"
     _S["heads"][how] = _S["heads"].get(how, 0) + 1
@@ -586,7 +605,15 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
         deep_head = u.level == 2 and nxt is not None and nxt.level == 3
         nxt_deep = (nxt is not None and nxt.level == 2 and i + 2 < len(queue)
                     and queue[i + 2].level == 3)
-        if not deep_head and not nxt_deep and nxt and nxt.level == u.level and _pairable(u, nxt):
+        # A short section that would sit alone across the whole width with
+        # its text in one column pairs with its neighbour instead, even when
+        # their weights differ more than tiles usually allow (space round).
+        lone_pair = (nxt is not None and u.tileable and nxt.tileable
+                     and (_one_column(u) or _one_column(nxt)))
+        if (not deep_head and not nxt_deep and nxt and nxt.level == u.level
+                and (_pairable(u, nxt) or lone_pair)):
+            if not _pairable(u, nxt):
+                _S["lone_paired"] = _S.get("lone_paired", 0) + 1
             plan.add("tile", 1, [u.blocks])
             plan.add("tile", 1, [nxt.blocks])
             i += 2
@@ -594,6 +621,8 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
         if deep_head and u.weight <= 800:
             plan.add("band", 2, [u.blocks])
         else:
+            if u.tileable and not deep_head and _one_column(u):
+                _S.setdefault("lone", []).append((_S.get("cur"), _text(u.blocks[0].html)[:40], u.weight))
             plan.full(u)
         i += 1
     return plan, left, right, lifted
@@ -914,6 +943,7 @@ def on_post_page(output, page, config):
     if page_type not in READING:
         return output
     _S["pages"] += 1
+    _S["cur"] = page.file.src_uri
     m = _ARTICLE.search(output)
     if not m:
         _S["left"].append((page.file.src_uri, "no article"))
@@ -938,6 +968,9 @@ def on_post_build(config):
     print(f"  heads              : {fmt(_S['heads'])}")
     print(f"  cells by shape     : {fmt(_S['shapes'])}")
     print(f"  blocks read/written: {_S['blocks_in']} / {_S['blocks_out']}")
+    print(f"  short sections paired with an unequal neighbour: {_S.get('lone_paired', 0)}")
+    print(f"  one-paragraph sections still alone across the width: {len(_S.get('lone', []))}"
+          + "".join(f"\n    {s}: {h!r} ({w})" for s, h, w in _S.get("lone", [])))
     print(f"  landing pages with prose rows: {_S.get('doors', 0)}")
     print(f"  left as they were  : {len(_S['left'])}" + "".join(f"\n    {s}: {why}" for s, why in _S["left"]))
     if _S["wrapped"] + len(_S["left"]) != _S["pages"] or _S["blocks_in"] != _S["blocks_out"]:

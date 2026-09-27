@@ -142,7 +142,10 @@ groups:
   "Announcements": {icon: bullhorn-outline}
   "Policy and Committee": {icon: scale-balance}
   "This Site": {icon: information-outline}
-  "Project Write-Ups": {icon: notebook-edit-outline}
+  # Space round (2026-09-27): the write-ups wear the guide hue, the kind
+  # whose description already covers worked examples, so the section has a
+  # color and a Color key like the rest of the site.
+  "Project Write-Ups": {icon: notebook-edit-outline, kind: guide, noun: write-ups}
 
 pages:
   # For Students

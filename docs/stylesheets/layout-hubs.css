@@ -553,3 +553,26 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
 .md-typeset .reader-map li > a:focus-visible {
   outline: none;
 }
+
+/* --- Project Write-Ups index (space round, 2026-09-27) ---------------------
+   The governance landing's whole-card links, two to a row, each card
+   keeping the table's two descriptions under small labels. */
+.md-typeset .wx-label {
+  display: block;
+  margin-bottom: 0.1rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hubs-tag);
+}
+
+.md-typeset .grid.cards.gov-cards.wx-cards > ul > li > p + p {
+  margin-top: 0.75rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .grid.cards.gov-cards.wx-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
