@@ -47,7 +47,7 @@ screen reader's view is unchanged. Headings keep their ids.
 INVARIANTS, checked on every page. Deleting the tags this hook inserted
 gives back the article exactly as it was: no block is lost, duplicated or
 reordered, so reading order is source order (BRIEF rule 4). No h2 or h3 can
-sit above an earlier one: tiles hold no h3, flows and leaves hold no
+sit above an earlier one: a tile holds no heading but its own, flows and leaves hold no
 headings, a heading is always the first thing in its cell, and cells fill
 row by row. A page whose article cannot be split cleanly is left as it is
 and named in the verification block.
@@ -67,6 +67,7 @@ _COMMENT = re.compile(r"<!--.*?-->", re.S)
 # measure, about 79 to a line. They estimate height, never content.
 TILE_MAX = 2200          # a section this light can take half the width
 PAIR_RATIO, PAIR_SLACK = 1.5, 350   # tiles pair when heavier <= ratio * lighter + slack
+LONE_RATIO = 3.0         # a one-paragraph section pairs more freely than that
 CHUNK = 2400             # one piece of a spread: both columns fit a screen at 1440
 LIFT_MAX = 1400          # a first section this light can sit beside a bare head
 STEP_ITEMS, STEP_MEAN = 3, 200      # a numbered list of procedures becomes step cards
@@ -276,7 +277,12 @@ class Unit:
 
     @property
     def tileable(self) -> bool:
-        return (self.weight <= TILE_MAX and not self.has("h3")
+        # An h3 subsection's own heading does not stop it being a tile (the
+        # band shape exists so subsections can pair); an h3 nested inside a
+        # section does. Until the space round a subsection could never be a
+        # tile, so one-paragraph subsections each spanned the full width.
+        nested = self.blocks[1:] if self.level == 3 else self.blocks
+        return (self.weight <= TILE_MAX and not any(b.role == "h3" for b in nested)
                 and not any(b.wide or b.role == "terms" for b in self.blocks))
 
 
@@ -608,8 +614,8 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
         # A short section that would sit alone across the whole width with
         # its text in one column pairs with its neighbour instead, even when
         # their weights differ more than tiles usually allow (space round).
-        lone_pair = (nxt is not None and u.tileable and nxt.tileable
-                     and (_one_column(u) or _one_column(nxt)))
+        lone_pair = (nxt is not None and u.tileable and nxt.tileable and _one_column(u)
+                     and max(u.weight, nxt.weight) <= LONE_RATIO * min(u.weight, nxt.weight) + PAIR_SLACK)
         if (not deep_head and not nxt_deep and nxt and nxt.level == u.level
                 and (_pairable(u, nxt) or lone_pair)):
             if not _pairable(u, nxt):
