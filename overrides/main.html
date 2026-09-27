@@ -24,14 +24,14 @@
   Island Night (2026-09-26): the mount for the scenery in the gutters beside
   the page column on wide screens. docs/javascripts/layout-art.js fills it
   only when a gutter is at least 80px wide, so on phones and laptops it
-  stays an empty element. Every page carries it except the Learn section
-  (pathway/), whose modules have their own art. Decorative: aria-hidden.
+  stays an empty element. Every page carries it, the Learn section's
+  modules included (owner, 2026-09-27: the one section without it read as
+  inconsistent; their own banner art sits inside the column, the scenery
+  outside it). Decorative: aria-hidden.
 #}
 {% block hero %}
   {{ super() }}
-  {% if not (page and page.url and page.url.startswith("pathway/")) %}
-    <div class="isl-sides" data-island-sides aria-hidden="true"></div>
-  {% endif %}
+  <div class="isl-sides" data-island-sides aria-hidden="true"></div>
 {% endblock %}
 
 {#

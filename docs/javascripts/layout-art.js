@@ -4,7 +4,7 @@
    coast at dusk. This file only decides what a page needs and fetches it:
    - the home page hero (the element marked data-island-hero) needs docs/assets/art/island-core.js;
    - the gutters beside the page column (the element marked data-island-sides, written by
-     overrides/main.html on every page but the Learn section) need island-core.js and
+     overrides/main.html on every page) need island-core.js and
      island-sides.js, and only when a gutter is at least 80px wide. Phones never fetch either
      gutter file, and a page with neither mark fetches nothing.
    The drawing, its sources and its checks are described at the top of island-core.js. Styles:
