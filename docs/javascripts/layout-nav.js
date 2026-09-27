@@ -878,6 +878,14 @@
   // The labelled buttons show first, then fold to the corner button after
   // about four seconds without interaction.
   foldSoon(4000);
+  // Space round (owner, 2026-09-27): the foot's "Browse <section>"
+  // disclosure repeats the corner control, so once the control is built
+  // and placed (this line runs only if everything above did) the foot
+  // keeps only More in This Section. The class hides the disclosure with
+  // display: none (layout-nav.css), which also takes it out of the
+  // accessibility tree. Without JavaScript, or if the control fails, the
+  // class is never set and the foot stays the complete way round.
+  if (map && bar.isConnected) body.classList.add("has-secmap");
   // Web fonts can change the column's measure once they arrive.
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
   window.addEventListener("load", layout);

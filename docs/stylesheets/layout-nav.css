@@ -1565,6 +1565,16 @@ body.has-secnav .md-typeset .secfoot__toc {
   display: none;
 }
 
+/* Once the corner control has built itself (layout-nav.js sets has-secmap
+   as its last step), the foot's Browse disclosure is the same list twice;
+   display: none takes it off the screen and out of the accessibility tree
+   (space round, 2026-09-27). With On this page also hidden, the whole row
+   of disclosures goes. */
+body.has-secmap .md-typeset .secfoot__all,
+body.has-secmap.has-secnav .md-typeset .secfoot__maps {
+  display: none;
+}
+
 /* =========================================================================
    The Tools & Prompts landing
    ========================================================================= */

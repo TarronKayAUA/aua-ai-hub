@@ -176,7 +176,7 @@ def on_config(config):
         tools=tools, tasks=tasks, members=rd.tool_task_members(tools, tasks), prompts=prompts,
         hrefs=[], feet=0, expected_feet=0, full=0, keys=0, rows={}, row_pages=0,
         tocs=0, azs=0, undecorated=set(), module_links=0, rewritten=0, rewrite_pages=0,
-        crumbs=0, lesson_ends=0, door_feet=0, doors_seen=0,
+        crumbs=0, lesson_ends=0, door_feet=0, doors_seen=0, foot_dedup=[],
     )
     if not tools or not prompts:
         raise ValueError("layout_nav: could not count data/tools.yaml or data/prompts.yaml")
@@ -665,7 +665,34 @@ def _entry_sub(entry) -> str:
     return _fill(pdeco.get("sub", "")) or entry["group"]["title"]
 
 
-def _more(tab, entry, page, in_nav: bool, used: set) -> str:
+# A page-level list of links in the body: a list item or table cell that
+# starts with its link (after any row tag or route number), or a card's link.
+_BODY_LIST_LINK = re.compile(
+    r'<(?:li|td)\b[^>]*>\s*(?:<span class="(?:row-tag|route-n[^"]*|route-text|row-pair)"[^>]*>(?:[^<]*</span>\s*)?)*'
+    r'<a\b[^>]*?\bhref="([^"#?]*)"'
+    r'|<a\b[^>]*\bclass="[^"]*\bcard-link\b[^"]*"[^>]*\bhref="([^"#?]*)"')
+
+
+def _body_listed(article_html: str, page) -> set[str]:
+    """The pages the body already lists as rows, cards or table rows (whole
+    pages only: a link to a section of a page, or with a filter, is not the
+    page). Running text does not count: it is not a list."""
+    out = set()
+    for m in _BODY_LIST_LINK.finditer(article_html):
+        href = m.group(1) if m.group(1) is not None else m.group(2)
+        if not href:
+            continue
+        parts = urlsplit(urljoin(_HOST + page.url, _html.unescape(href)))
+        if parts.netloc != urlsplit(_HOST).netloc:
+            continue
+        path = parts.path.lstrip("/")
+        f = _S["by_path"].get(path) or _S["by_path"].get(path.removesuffix("index.html"))
+        if f is not None:
+            out.add(f.src_uri)
+    return out
+
+
+def _more(tab, entry, page, in_nav: bool, used: set, listed: frozenset = frozenset()) -> str:
     """"More in this section": the section or group overview first, then
     nav order. The rest are the page's group siblings; when the group has
     fewer than two, the first page of each other group in the tab, groups of
@@ -696,6 +723,13 @@ def _more(tab, entry, page, in_nav: bool, used: set) -> str:
                 e = g["entries"][0]
                 picks.append((e["page"], _title(e), _entry_sub(e)))
                 seen.add(e["page"].file.src_uri)
+    # One page never lists the same destinations twice (space round,
+    # 2026-09-27): what the body already lists as rows or cards leaves the
+    # foot, and the foot's list goes if nothing is left.
+    dropped = [p.file.src_uri for p, _, _ in picks if p.file.src_uri in listed]
+    if dropped:
+        picks = [x for x in picks if x[0].file.src_uri not in listed]
+        _S["foot_dedup"].append((page.file.src_uri, dropped, len(picks)))
     picks = picks[:6]
     if not picks:
         return ""
@@ -791,7 +825,8 @@ def _foot(page, article_html: str, learn_next: str, keyed: set) -> str:
     here_src = src if in_nav else home.file.src_uri
     used: set = set()
     lesson = in_nav and (page.meta or {}).get("page_type") == "lesson"
-    top = _lesson_end(tab, entry, page, learn_next, used) if lesson else _more(tab, entry, page, in_nav, used)
+    top = (_lesson_end(tab, entry, page, learn_next, used) if lesson
+           else _more(tab, entry, page, in_nav, used, frozenset(_body_listed(article_html, page))))
     # A key here only when these cards add a kind the page has not keyed; it
     # goes under the ending's heading.
     top_key = _key(used) if used - keyed else ""
@@ -1359,6 +1394,10 @@ def on_post_build(config):
           + (", ".join(f"{k} {n}" for k, n in sorted(_S['rows'].items())) or "none")
           + f" (on {_S['row_pages']} pages)")
     print(f"  color keys written              : {_S['keys']}")
+    removed = sum(len(d) for _, d, _ in _S["foot_dedup"])
+    print(f"  foot cards the body already lists: {removed} left out on {len(_S['foot_dedup'])} pages"
+          + "".join(f"\n    {src}: {', '.join(d)} ({'list dropped' if n == 0 else f'{n} left'})"
+                    for src, d, n in _S["foot_dedup"]))
     print(f"  links to and from Learn modules : {_S['module_links']}")
     print(f"  palette hues with no kind       : {', '.join(unused) or 'none'}")
     print(f"  icons used                      : {len(_S['icons'])}")
