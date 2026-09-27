@@ -16,7 +16,7 @@ Artificial intelligence (AI) news selected for medical education, and what is co
 
 <section class="timely-block timely-panel" markdown>
 
-## Newest in medical education {: data-search-exclude="true" }
+## Newest in Medical Education {: data-search-exclude="true" }
 
 <!-- timely:news 5 -->
 
@@ -26,7 +26,7 @@ Artificial intelligence (AI) news selected for medical education, and what is co
 
 <section class="timely-block timely-panel" markdown>
 
-## Coming up {: data-search-exclude="true" }
+## Coming Up {: data-search-exclude="true" }
 
 <!-- timely:coming-up 2 -->
 
@@ -40,7 +40,7 @@ Artificial intelligence (AI) news selected for medical education, and what is co
 
 </div>
 
-## More news and events
+## More News and Events
 
 <div class="door-rows door-rows--two" markdown>
 

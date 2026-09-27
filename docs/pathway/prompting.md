@@ -4,15 +4,15 @@ last_reviewed: 2026-09-01
 
 # Module 2: Prompting Fundamentals
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 15 minutes</span>
+<span class="meta-chip">Everyone</span><span class="meta-chip">About 15 minutes</span>
 
-## What you will be able to do
+## What You Will Be Able to Do
 
 - Structure a request so the model has what it needs: a role, your actual materials, the task, and the output shape you want.
 - Iterate on a first draft answer instead of accepting or abandoning it.
 - Apply a verification habit proportionate to the stakes of the task.
 
-## The core idea
+## The Core Idea
 
 The quality of what you get is mostly determined by what you give. Modern assistants do not need magic words; they need what any capable new colleague would need: context, your materials, a clear task, and a description of the output you want. Four habits cover most of it:
 
@@ -43,7 +43,7 @@ And one meta-habit: **ask for reasoning you can check, not bare answers.** A res
 
 Calibrate verification to stakes: a brainstorm needs a sniff test, a lecture slide needs a source check, and anything touching assessment, research, or patient care needs full verification at the original source, per the [AI Responsible Use Policy](../governance/policy.md).
 
-## Self-check
+## Self-Check
 
 ??? question "You want help writing a quiz on a lecture you gave. What is the highest-impact thing to include in your request?"
     The lecture materials themselves: your objectives, slides or notes, and the level of your students. Asking for a quiz on the topic without your materials gets a generic quiz on what the model assumes the topic covers; supplying them gets a quiz on what you actually taught.
@@ -54,7 +54,7 @@ Calibrate verification to stakes: a brainstorm needs a sniff test, a lecture sli
 ??? question "What does 'ask for reasoning you can check' buy you that a bare answer does not?"
     A verification surface. Steps, sources, and stated assumptions can each be checked independently, so errors surface before you rely on them. A bare answer offers nothing to inspect except your trust.
 
-## Going deeper
+## Going Deeper
 
 - [Getting Better Answers](../basics/better-answers.md): the three levers behind everything here (context, memory, and standing instructions), and the reading Stage 3 assumes.
 - [Standing Setups](../tools/standing-setups.md): make good prompting permanent with a project per course or a folder brief.

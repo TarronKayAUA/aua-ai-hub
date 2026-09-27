@@ -4,13 +4,13 @@ last_reviewed: 2026-09-01
 
 # Getting Better Answers
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">No technical background needed</span>
+<span class="meta-chip">Everyone</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">No technical background needed</span>
 
 The model you use is fixed; what you control is everything around it. This page covers the three levers that decide the quality of an artificial intelligence (AI) assistant's answers in practice: what goes into the **context window** (and what you keep out of it), what persists across conversations as **memory**, and the standing **instructions** that govern how the model behaves. [How LLMs Work](how-llms-work.md), the primer on large language models (LLMs), explains what the context window is; this page is about using it well.
 
 The short version is [the checklist](#the-checklist) at the end; the rest of the page explains why each item is there.
 
-## One window, two budgets
+## One Window, Two Budgets
 
 Everything the model can see lives in one working memory, the context window, measured in tokens (a token is roughly three quarters of a word). Everything counts against it: your messages, the files you attach (for very large files, some assistants quietly pull in excerpts rather than the whole document), the model's own replies, your standing instructions, and anything its memory feature has stored. Consumer assistants today offer windows from a few thousand tokens on some free tiers to a million or more, depending on the model and plan; check your plan's documentation rather than assuming.
 
@@ -35,7 +35,7 @@ The less obvious fact is that **output has its own, much smaller cap**. Generate
 
 For genuinely long deliverables, structure beats size: ask for an outline first, approve it, then request the sections one by one. Each request gets a full output budget and your review between sections steers the whole. Curate the input per section too: carry the approved outline forward, and attach only the source material that section needs, rather than dragging everything through every request.
 
-## Context flooding: more input is not better
+## Context Flooding: More Input Is Not Better
 
 It is tempting to attach everything that might be relevant. Past a point this backfires, in three ways:
 
@@ -66,7 +66,7 @@ Curious what your own material costs? Paste it below. The count runs entirely in
 <div class="tok-result" id="tok-result">Paste or type above to see the estimate.</div>
 </div>
 
-## Long conversations drift; know when to start fresh
+## Long Conversations Drift; Know When to Start Fresh
 
 A conversation is one growing context. Late in a long chat, three things degrade: early instructions fade as thousands of tokens pile on top of them, your corrections coexist with the mistakes they corrected (both remain in the window, and the model can regress to the earlier version), and contradictory drafts accumulate. If the model starts repeating an error you already fixed, or reintroducing an approach you rejected, the conversation is the problem, not the request. Push far enough and you also hit the literal wall: a notice that the conversation has reached its maximum length. The same fix recovers both.
 
@@ -99,7 +99,7 @@ The fix costs thirty seconds: **summarize and carry.** Ask the model to write a 
 <figcaption>Summarize and carry: the useful state moves to a fresh window, the clutter stays behind.</figcaption>
 </figure>
 
-## Memory: what persists between conversations
+## Memory: What Persists between Conversations
 
 Most consumer assistants now offer a **memory feature**: facts and preferences carried across conversations ("teaches pharmacology," "prefers tables"). Three things to understand about it:
 
@@ -107,13 +107,13 @@ Most consumer assistants now offer a **memory feature**: facts and preferences c
 - **Review it periodically.** Every major assistant lets you review and delete stored memories in settings, and some let you edit them in place; prune anything stale or wrong the way you would clean up standing instructions. Some assistants also draw on your past conversations automatically, separately from the visible memory list; that too is a setting you can turn off.
 - **Memory carries details forward.** A fact stored in memory resurfaces in every future conversation, so memory is where a detail entered by mistake would linger. A practical habit: use a temporary chat, or turn memory off, for any conversation whose details you would not want carried into later ones, and delete any stored entry you did not mean to keep. A temporary chat keeps the exchange out of your saved history, though the vendor may still keep a copy for a limited period, so it changes what carries forward, not what the vendor receives.
 
-## Standing instructions: set defaults once
+## Standing Instructions: Set Defaults Once
 
 Every assistant offers some form of standing instructions: custom instructions in settings, or per-workspace versions such as Projects in Claude and ChatGPT. Text placed there applies to every conversation and carries extra weight (a direct request in a message can still override it for that reply), which makes it the right home for things you would otherwise repeat: who you are and who your output is for ("I teach preclinical pharmacology; default to US medical education conventions"), format defaults ("no tables unless asked"), and verbosity preferences.
 
 Two habits keep standing instructions useful. **Keep them short and stable**: a page of rules dilutes itself, and the model follows five clear standing instructions better than thirty. **Put role and defaults in the instructions, put the task in the message**: instructions describe how you always want the assistant to behave; the message describes what you want right now. The [prompt library](../prompts/index.md)'s longer prompts work best with this split: paste them into a Project's instructions rather than into the chat, as the question tutor's notes recommend; [Standing Setups](../tools/standing-setups.md) walks through building those containers.
 
-## The checklist
+## The Checklist
 
 Before a task that matters, thirty seconds of setup:
 

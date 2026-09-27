@@ -37,6 +37,8 @@ from mkdocs.utils import get_relative_url
 LIBRARY = "prompts/index.md"
 TEXT_SLOT = '<div class="pp-text" data-pp-text="{slug}"></div>'
 USED_SLOT = '<div class="pp-used" data-pp-used="{slug}"></div>'
+SIDE_SLOT = '<div class="pp-side" data-pp-side="{slug}"></div>'
+EXAMPLES = "examples"
 RELATED_MAX = 3
 _HOST = "https://site.invalid/"
 
@@ -136,7 +138,7 @@ def _markdown(entry: dict, slug: str, related: list[str], by_slug: dict) -> str:
         "",
         '<div class="pp-panel" data-page-action markdown>',
         "",
-        "## How to use it { #how-to-use-it }",
+        "## How to Use It { #how-to-use-it }",
         "",
     ]
     if use:
@@ -164,16 +166,14 @@ def _markdown(entry: dict, slug: str, related: list[str], by_slug: dict) -> str:
     lines += ["</div>", ""]
     if use and notes:
         lines += ["## Notes { #notes }", "", notes, ""]
-    words = len(entry["prompt"].split())
     lines += [
-        "## The prompt { #the-prompt }",
+        f"## {_html.escape(_prompt_heading(entry['title']))} {{ #the-prompt }}",
         "",
-        f"About {_round_words(words):,} words. Copy prompt copies all of it, word for word.",
-        "{: .pp-text-intro }",
+        SIDE_SLOT.format(slug=slug),
         "",
         TEXT_SLOT.format(slug=slug),
         "",
-        "## Where it is used { #where-it-is-used }",
+        "## Where It Is Used { #where-it-is-used }",
         "",
         USED_SLOT.format(slug=slug),
         "",
@@ -184,9 +184,209 @@ def _markdown(entry: dict, slug: str, related: list[str], by_slug: dict) -> str:
             f'{_html.escape(by_slug[other]["title"])}</span><span class="pp-rows__sub">'
             f'{_html.escape(_sentence(by_slug[other]["tagline"]))}</span></a></li>'
             for other in related)
-        lines += ["## Related prompts { #related-prompts }", "",
+        lines += ["## Related Prompts { #related-prompts }", "",
                   f'<ul class="pp-rows">{rows}</ul>', ""]
     return "\n".join(lines)
+
+
+# --- "The prompt" section: its heading, and the panel beside the text -----------
+
+# The same rules as the title-case proposal (_round/c/TITLE-CASE.md, polish
+# round): lowercase words, and prefixes whose second part stays lowercase
+# (Chicago 8.161: Pre-submission, Post-exam).
+_SMALL = frozenset({"a", "an", "the", "and", "but", "or", "nor", "for", "so", "yet", "to", "as",
+                    "vs.", "of", "in", "on", "at", "by", "with", "from", "into", "per", "via",
+                    "over", "about", "between", "through", "within", "without", "across"})
+_PREFIXES = frozenset({"pre", "post", "multi", "re", "co", "non", "anti", "semi", "sub", "inter", "intra"})
+
+
+def _title_case(text: str) -> str:
+    """Chicago-style title case for the one heading this hook writes from a
+    prompt's title: first and last words and every major word capitalized,
+    articles, short conjunctions and prepositions lowercase, each part of a
+    hyphenated compound treated alike, and any word already carrying a
+    capital after its first letter (NBME, ChatGPT) left exactly as it is,
+    and the part after a prefix that cannot stand alone kept lowercase."""
+    words = text.split()
+
+    def one(word: str, edge: bool) -> str:
+        if any(c.isupper() for c in word[1:]):
+            return word
+        if not edge and word.lower() in _SMALL:
+            return word.lower()
+        return word[:1].upper() + word[1:]
+
+    out = []
+    for i, word in enumerate(words):
+        edge = i == 0 or i == len(words) - 1 or out[-1].endswith(":")
+        parts = word.split("-")
+        done = []
+        for k, part in enumerate(parts):
+            if k > 0 and parts[k - 1].lower() in _PREFIXES and not any(c.isupper() for c in part):
+                done.append(part.lower())
+            else:
+                done.append(one(part, edge or k > 0) if part else part)
+        out.append("-".join(done))
+    return " ".join(out)
+
+
+def _prompt_heading(title: str) -> str:
+    """The prompt text's heading: the prompt's own name, then "Prompt",
+    never doubled for a title that already ends in the word."""
+    name = _title_case(" ".join(title.split()))
+    return name if name.lower().endswith("prompt") else f"{name} Prompt"
+
+
+# A fill-in blank is a bracketed placeholder in the prompt's INPUTS block
+# that a label introduces ("My idea: [2 TO 5 SENTENCES]"). Everything else
+# in brackets is the model's to write ([VERIFY], [MISSING]) or part of an
+# output template ("Case [N] ([SETTING], ...)"), and is left alone. A blank
+# may wrap onto the next line, a label may too ("with any written / case
+# it used: [PASTE OR ATTACH]"), one line may hold several labeled fields
+# ("Duration: [MINUTES]   Audience: [YEAR/COURSE]"), and a blank offered
+# as a choice or continued after a comma ("[A] or [B]", "[A], [B]") is one
+# field. A blank that opens a line straight under the INPUTS heading takes
+# its label from the heading ("INPUTS (my misses: ...)").
+_BRACKET = re.compile(r"\[([^\[\]]+)\]")
+_INPUTS = re.compile(r"^INPUTS\b(?:\s*\(([^:)]*))?")
+_BLOCK_HEAD = re.compile(r"^[A-Z][A-Z0-9 ,/'&()-]{2,}:?\s*(?:\(.*\))?\s*$")
+_JOIN = re.compile(r"(\s+or\s+|,\s+)\[([^\[\]]+)\]")
+# A hint asking for more than a phrase gets a larger field.
+_LONG_HINT = re.compile(r"SENTENCE|\bLIST\b|PASTE|ATTACH|NOTES|FULL TEXT|FOR EACH|ONE LINE PER|"
+                        r"MATERIALS|DESCRIPTIONS", re.IGNORECASE)
+
+
+def _blanks(text: str) -> tuple[list[dict], list[str]]:
+    """The prompt's fill-in fields, in order, each with its label, its hint
+    (the bracket text) and every span of the stored text it fills; and a
+    note for each bracket that looked like a blank but was not taken."""
+    lines = text.split("\n")
+    starts = [0]
+    for line in lines:
+        starts.append(starts[-1] + len(line) + 1)
+    first = next((i for i, line in enumerate(lines) if _INPUTS.match(line.strip())), None)
+    doubtful: list[str] = []
+    if first is None:
+        for m in _BRACKET.finditer(text):
+            if not re.fullmatch(r"VERIFY|MISSING|SOURCE NEEDED", m.group(1)):
+                doubtful.append(f"outside any INPUTS block: [{' '.join(m.group(1).split())}]")
+        return [], doubtful
+    last = next((i for i in range(first + 1, len(lines))
+                 if lines[i].strip() and not lines[i][:1].isspace() and _BLOCK_HEAD.match(lines[i].strip())),
+                len(lines))
+    head_label = (_INPUTS.match(lines[first].strip()).group(1) or "").strip()
+    lo, hi = starts[first + 1], starts[last]
+    fields: dict[tuple, dict] = {}
+    pos = lo
+    while True:
+        m = _BRACKET.search(text, pos, hi)
+        if not m:
+            break
+        a, b = m.start(), m.end()
+        pos = b
+        line_start = text.rfind("\n", 0, a) + 1
+        seg = text[line_start:a]
+        seg = re.split(r"\s{3,}|;\s*|\]", seg)[-1].strip()
+        if seg.endswith(":") and seg[:-1].strip():
+            label = seg[:-1].strip()
+            # A label wrapped from the line above: this line is indented and
+            # the line above holds no blank of its own.
+            if text[line_start:line_start + 1].isspace() and label == text[line_start:a].strip()[:-1].strip():
+                prev_start = text.rfind("\n", 0, line_start - 1) + 1
+                prev = text[prev_start:line_start - 1]
+                if (prev_start >= lo and "[" not in prev and "]" not in prev
+                        and not prev.rstrip().endswith(":")):
+                    label = " ".join((prev.strip() + " " + label).split())
+        elif not text[line_start:a].strip() and line_start == lo and head_label:
+            label = head_label
+        else:
+            if not re.fullmatch(r"VERIFY|MISSING|SOURCE NEEDED", m.group(1)):
+                doubtful.append(f"in INPUTS, no label: [{' '.join(m.group(1).split())[:60]}]")
+            continue
+        hints = [" ".join(m.group(1).split())]
+        seps = []
+        while True:
+            j = _JOIN.match(text, b)
+            if not j or b >= hi:
+                break
+            seps.append(" or " if "or" in j.group(1) else ", ")
+            hints.append(" ".join(j.group(2).split()))
+            b = j.end()
+            pos = b
+        hint = hints[0] + "".join(sep + h for sep, h in zip(seps, hints[1:]))
+        label = label[:1].upper() + label[1:]
+        key = (label.lower(), hint)
+        field = fields.setdefault(key, {"label": label, "hint": hint, "spans": []})
+        field["spans"].append((a, b))
+    out = list(fields.values())
+    for k, f in enumerate(out, 1):
+        f["id"] = k
+        f["long"] = bool(_LONG_HINT.search(f["hint"]))
+    return out, doubtful
+
+
+def _examples(files) -> dict[str, tuple]:
+    """Worked examples by the prompt they demonstrate: an example page
+    (docs/examples/) whose primary action opens a prompt in the library
+    (`link: prompts/index.md#<slug>`) is that prompt's worked example. Its
+    title is its H1, its one-line description the page's `sub:` in
+    data/section_map.yaml."""
+    import yaml
+    out: dict[str, tuple] = {}
+    for f in files.documentation_pages():
+        if not f.src_uri.startswith(EXAMPLES + "/"):
+            continue
+        text = Path(f.abs_src_path).read_text(encoding="utf-8")
+        meta = yaml.safe_load(text.split("---")[1]) if text.startswith("---") else {}
+        actions = (meta or {}).get("action") or []
+        primary = next((a for a in actions if a.get("style") != "secondary"), None)
+        m = re.fullmatch(r"prompts/index\.md#([a-z0-9-]+)", (primary or {}).get("link", ""))
+        h1 = re.search(r"^# (.+?)\s*$", text, re.MULTILINE)
+        if m and h1:
+            out.setdefault(m.group(1), []).append((f, h1.group(1)))
+    return out
+
+
+def _side(entry: dict, slug: str, fields: list[dict], example) -> str:
+    """The track beside the prompt text: its length, the fill-in panel (a
+    "Have ready" list without JavaScript; fields that fill the prompt in
+    place with it), and the prompt's worked example."""
+    esc = _html.escape
+    words = len(entry["prompt"].split())
+    parts = [f'<p class="pp-text-intro">About {_round_words(words):,} words. '
+             "Copy prompt copies all of it, word for word.</p>"]
+    if fields:
+        ready = "".join(f'<li><span class="pp-fill__label">{esc(f["label"])}</span>: {esc(f["hint"])}</li>'
+                        for f in fields)
+        rows = []
+        for f in fields:
+            fid = f"fill-{f['id']}"
+            control = (f'<textarea id="{fid}" rows="3" autocomplete="off" aria-describedby="{fid}-hint" '
+                       f'data-fill="{f["id"]}"></textarea>' if f["long"] else
+                       f'<input type="text" id="{fid}" autocomplete="off" aria-describedby="{fid}-hint" '
+                       f'data-fill="{f["id"]}">')
+            rows.append(f'<div class="pp-fill__field"><label for="{fid}">{esc(f["label"])}</label>'
+                        f'{control}<span class="pp-fill__hint" id="{fid}-hint">{esc(f["hint"])}</span></div>')
+        spans = [{"id": f["id"], "spans": f["spans"]} for f in fields]
+        parts.append(
+            '<section class="pp-fill" aria-labelledby="fill-in-your-details" data-search-exclude>'
+            '<h3 id="fill-in-your-details">Fill In Your Details</h3>'
+            '<p class="pp-fill__privacy">Your answers stay in this browser. They are not sent or saved.</p>'
+            f'<div class="pp-fill__ready"><p class="pp-fill__lead">Have Ready:</p><ul>{ready}</ul></div>'
+            f'<div class="pp-fill__form" data-pp-fill hidden>{"".join(rows)}'
+            '<div class="pp-fill__bar">'
+            '<button type="button" class="md-button md-button--primary pp-fill-copy">Copy with my answers</button>'
+            '<button type="button" class="md-button pp-fill-clear">Clear</button></div>'
+            '<p class="pp-fill__status" role="status" aria-live="polite"></p></div>'
+            "</section>"
+            f'<script type="application/json" id="prompt-fill-source">{json.dumps(spans)}</script>')
+    if example:
+        href, title, sub = example
+        parts.append('<div class="pp-example"><p class="pp-example__lead">See It in Action</p>'
+                     f'<ul class="pp-rows"><li><a href="{esc(href)}"><span class="pp-rows__title">{esc(title)}</span>'
+                     + (f'<span class="pp-rows__sub">{esc(sub)}</span>' if sub else "")
+                     + "</a></li></ul></div>")
+    return f'<div class="pp-side"><div class="pp-side__inner">{"".join(parts)}</div></div>'
 
 
 # The stored prompts are hard-wrapped at about 72 characters. Shown as
@@ -234,7 +434,27 @@ def _reflow(text: str) -> str:
     return "\n".join(out)
 
 
-def _text_block(entry: dict) -> str:
+def _marked(entry: dict, fields: list[dict]) -> str:
+    """The reflowed prompt as HTML, each fill-in blank wrapped in a <mark>
+    the panel fills in place. The reflow changes only whitespace, so each
+    blank is found again by its words, in order."""
+    shown = _reflow(entry["prompt"])
+    spans = sorted((a, b, f["id"]) for f in fields for a, b in f["spans"])
+    out, cur = [], 0
+    for a, b, fid in spans:
+        words = entry["prompt"][a:b].split()
+        m = re.compile(r"\s+".join(re.escape(w) for w in words)).search(shown, cur)
+        if not m:
+            raise AssertionError(f"layout_prompt_pages: blank {entry['prompt'][a:b]!r} of "
+                                 f"{entry['title']!r} is not in the text as shown")
+        out.append(_html.escape(shown[cur:m.start()], quote=False))
+        out.append(f'<mark class="pp-blank" data-fill="{fid}">{_html.escape(m.group(0), quote=False)}</mark>')
+        cur = m.end()
+    out.append(_html.escape(shown[cur:], quote=False))
+    return "".join(out)
+
+
+def _text_block(entry: dict, fields: list[dict] | None = None) -> str:
     """The prompt as readers see it, and, separately, as Copy gives it.
 
     The visible block is the reflowed text, excluded from search so a hit
@@ -242,7 +462,7 @@ def _text_block(entry: dict) -> str:
     instructions. The copy source is the stored text itself, in a JSON
     island, so both Copy buttons give data/prompts.yaml byte for byte."""
     title = _html.escape(entry["title"])
-    body = _html.escape(_reflow(entry["prompt"]), quote=False)
+    body = _marked(entry, fields or [])
     # A <section> holding no other <section>: Material's search parser
     # matches elements by tag name alone, so an excluded <div> would stop
     # being excluded at the first nested </div>.
@@ -277,6 +497,35 @@ def on_files(files, config):
                                     inclusion=InclusionLevel.NOT_IN_NAV))
         _state["pages"][src] = (slug, entry)
     _state["related_rows"] = sum(len(v) for v in related.values())
+    # The fill-in panel and the worked example for each prompt.
+    import yaml
+    subs = (yaml.safe_load((Path(config["docs_dir"]).parent / "data" / "section_map.yaml")
+                           .read_text(encoding="utf-8")).get("pages") or {})
+    examples = _examples(files)
+    _state["side"] = {}
+    _state["doubtful"] = {}
+    for slug, entry in by_slug.items():
+        fields, doubtful = _blanks(entry["prompt"])
+        for f in fields:
+            for a, b in f["spans"]:
+                if not (entry["prompt"][a] == "[" and entry["prompt"][b - 1] == "]"):
+                    raise AssertionError(f"layout_prompt_pages: a blank of {entry['title']!r} "
+                                         "does not start and end on its brackets")
+        example = None
+        found = examples.get(slug) or []
+        if len(found) > 1:
+            raise ValueError(f"layout_prompt_pages: several worked examples open {slug!r}: "
+                             f"{[f.src_uri for f, _ in found]}")
+        if found:
+            f, title = found[0]
+            example = (get_relative_url(f.url, f"prompts/{slug}/"), title,
+                       ((subs.get(f.src_uri) or {}).get("sub") or ""))
+        _state["side"][slug] = (fields, example)
+        if doubtful:
+            _state["doubtful"][entry["title"]] = doubtful
+    stray = sorted(set(examples) - set(by_slug))
+    if stray:
+        raise ValueError(f"layout_prompt_pages: worked examples open prompts that do not exist: {stray}")
     return files
 
 
@@ -325,7 +574,12 @@ def on_page_content(html, page, config, files):
     if re.sub(r"\s", "", _reflow(entry["prompt"])) != re.sub(r"\s", "", entry["prompt"]):
         raise AssertionError(f"layout_prompt_pages: the reflowed display of {entry['title']!r} "
                              "changed more than whitespace")
-    return html.replace(slot, _text_block(entry))
+    fields, example = _state["side"][slug]
+    side = SIDE_SLOT.format(slug=slug)
+    if html.count(side) != 1:
+        raise AssertionError(f"layout_prompt_pages: prompt side slot missing on {page.file.src_uri}")
+    html = html.replace(side, _side(entry, slug, fields, example))
+    return html.replace(slot, _text_block(entry, fields))
 
 
 def _text(fragment: str) -> str:
@@ -335,6 +589,17 @@ def _text(fragment: str) -> str:
 
 _HEAD_RE = re.compile(r'<h([1-6])[^>]*\bid="([^"]+)"[^>]*>(.*?)</h\1>', re.DOTALL)
 _LINK_RE = re.compile(r'<a\s[^>]*?\bhref="([^"]*)"[^>]*>(.*?)</a>', re.DOTALL)
+
+
+def _nav_hook():
+    """The loaded layout_nav hook, for its kinds. MkDocs registers a hook
+    under its path from mkdocs.yml, so `import layout_nav` would load a
+    second, empty copy; this finds the one the build is running."""
+    import sys
+    for module in list(sys.modules.values()):
+        if (getattr(module, "__file__", "") or "").endswith("layout_nav.py") and getattr(module, "_S", {}).get("kind"):
+            return module
+    raise AssertionError("layout_prompt_pages: the layout_nav hook has not built its kinds yet")
 
 
 def on_env(env, config, files):
@@ -375,12 +640,18 @@ def on_env(env, config, files):
             for slug in hits:
                 used[slug].setdefault(f.src_uri, (page, anchor, heading))
     rank = _state["nav_rank"]
+    # By kind first (data/section_map.yaml `order:`: guides, then lessons,
+    # then prompts, then tools), pages without a kind (Home, the hubs) last,
+    # then nav order (ordering principle, owner approved 2026-09-27).
+    nav = _nav_hook()
+    order = nav._S["deco"]["order"]
+    kind_rank = lambda src: (order.index(nav.kind_of(src)) if nav.kind_of(src) in order else len(order))
     total = 0
     for src, (slug, _entry) in pages.items():
         ppage = files.get_file_from_path(src).page
         rows = []
         for tsrc, (tpage, anchor, heading) in sorted(used[slug].items(),
-                                                     key=lambda kv: (rank.get(kv[0], 10**6), kv[0])):
+                                                     key=lambda kv: (kind_rank(kv[0]), rank.get(kv[0], 10**6), kv[0])):
             href = get_relative_url(tpage.file.url, ppage.file.url) + (f"#{anchor}" if anchor else "")
             sub = f'<span class="pp-rows__sub">{_html.escape(heading)}</span>' if heading else ""
             rows.append(f'<li><a href="{_html.escape(href)}"><span class="pp-rows__title">'
@@ -463,11 +734,21 @@ def on_post_page(output, page, config):
             raise AssertionError(f"layout_prompt_pages: the Copy text on {src} is not "
                                  "byte-identical to data/prompts.yaml")
         shown = _BODY_RE.findall(output)
-        if len(shown) != 1 or (re.sub(r"\s", "", _html.unescape(shown[0]))
+        if len(shown) != 1 or (re.sub(r"\s", "", _html.unescape(re.sub(r"<[^>]+>", "", shown[0])))
                                != re.sub(r"\s", "", entry["prompt"])):
             raise AssertionError(f"layout_prompt_pages: the prompt shown on {src} differs "
                                  "from data/prompts.yaml by more than line breaks")
         _state["copies_checked"] += 1
+        # Every blank the panel fills is marked in the text once per use,
+        # and the fields, their labels and the spans agree.
+        fields, _example = _state["side"][_slug]
+        marks = re.findall(r'<mark class="pp-blank" data-fill="(\d+)">', shown[0])
+        want = sorted(str(f["id"]) for f in fields for _ in f["spans"])
+        labels = re.findall(r'<label for="fill-(\d+)">', output)
+        if sorted(marks) != want or labels != [str(f["id"]) for f in fields]:
+            raise AssertionError(f"layout_prompt_pages: the fill-in fields on {src} do not match "
+                                 "the blanks marked in its text")
+        _state["blanks_marked"] = _state.get("blanks_marked", 0) + len(marks)
     return output
 
 
@@ -494,3 +775,12 @@ def on_post_build(config):
     print(f"  where-used rows   : {_state['used_rows']}; not linked yet: "
           f"{', '.join(_state['used_none']) or 'none'}")
     print(f"  related rows      : {_state['related_rows']}")
+    side = _state["side"]
+    with_fields = sorted(s for s, (f, _) in side.items() if f)
+    print(f"  fill-in panels    : {len(with_fields)} of {len(side)} prompts, "
+          f"{sum(len(side[s][0]) for s in with_fields)} fields, "
+          f"{_state.get('blanks_marked', 0)} blanks marked in the text")
+    print(f"  no blanks         : {', '.join(sorted(s for s in side if s not in with_fields)) or 'none'}")
+    print(f"  worked examples   : {', '.join(f'{s} ({e[1]})' for s, (_, e) in sorted(side.items()) if e) or 'none'}")
+    for title, notes in sorted(_state["doubtful"].items()):
+        print(f"  doubtful, {title}: " + "; ".join(notes[:4]) + (f" (+{len(notes) - 4} more)" if len(notes) > 4 else ""))

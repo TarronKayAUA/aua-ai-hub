@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # AI for Research
 
-<span class="meta-chip">For faculty and student researchers</span><span class="meta-chip">About 12 minutes</span>
+<span class="meta-chip">Faculty & Student Researchers</span><span class="meta-chip">About 12 minutes</span>
 
 Artificial intelligence (AI) tools now cover most stages of a research project, from finding literature to checking a manuscript's citations. This page maps the current landscape to the tasks researchers actually do, with honest notes on cost, field fit, and where each tool falls short. Entries here also appear in the [tools directory](index.md) with their governance status.
 
@@ -28,7 +28,7 @@ Artificial intelligence (AI) tools now cover most stages of a research project, 
 
 If you only want the table, jump to [Cost and field fit at a glance](#cost-and-field-fit-at-a-glance).
 
-## Scopus with AI, licensed for AUA
+## Scopus with AI, Licensed for AUA
 
 AUA holds an institution-wide license to [Scopus](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home), Elsevier's citation database of peer-reviewed literature, arranged through the AUA Library in 2026, and the license includes [Scopus AI](https://www.elsevier.com/products/scopus/scopus-ai), the generative layer built on top of it. Ask a question in plain language and it returns a summary with citations and confidence indicators, a concept map of the surrounding topic, the foundational papers behind the answer, and emerging research themes; a Deep Research mode plans and runs a longer investigation and produces a downloadable report. Sign in with your AUA credentials through the library link above.
 
@@ -36,7 +36,7 @@ Know what it is grounded in before you lean on it: Scopus AI works from titles, 
 
 Because it is comprehensive and the directory's one institutionally licensed research tool, this page's default is Scopus first: where Scopus does a task well, start there. The tools below earn their places by doing things Scopus does not.
 
-## Finding and mapping literature
+## Finding and Mapping Literature
 
 Start with [Scopus](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home) for searching, orientation summaries, and citation chasing: it is licensed, curated, and its AI layer turns a plain-language question into a cited map of the territory. For anything clinical, PubMed remains its peer rather than its subset; run both.
 
@@ -46,13 +46,13 @@ Start with [Scopus](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/
 
 The **deep research modes** inside the general assistants (ChatGPT, Gemini, and Claude all offer one, with the fullest versions on paid plans) will search the open web and produce a cited report on a topic. They are useful for orientation in an unfamiliar area and weaker for exhaustive coverage: they miss paywalled work and their recall is not systematic-review grade. Their output works best as a scouting report that shows you where to dig, rather than as the review itself.
 
-## Screening and extracting
+## Screening and Extracting
 
-[Elicit](https://elicit.com) is built for the middle of a literature review: it finds empirical papers, screens them against your criteria, and extracts study characteristics (population, intervention, outcomes, effect sizes) into structured tables you can audit column by column. The free tier covers light use; serious extraction work lands on the paid tiers. Pair it with the [Literature screening assistant](../prompts/index.md#literature-screening-assistant) prompt in the library, which turns any capable assistant into a conservative second screener with an audit trail.
+[Elicit](https://elicit.com) is built for the middle of a literature review: it finds empirical papers, screens them against your criteria, and extracts study characteristics (population, intervention, outcomes, effect sizes) into structured tables you can audit column by column. The free tier covers light use; serious extraction work lands on the paid tiers. Pair it with the [Literature Screening Assistant](../prompts/index.md#literature-screening-assistant) prompt in the library, which turns any capable assistant into a conservative second screener with an audit trail.
 
 For team-based systematic reviews, [Rayyan](https://www.rayyan.ai/) (free plan available) and [Covidence](https://www.covidence.org/) (paid) manage reference import, duplicate detection, and screening across a review team; the [directory](index.md#research) describes each.
 
-## Answering evidence questions
+## Answering Evidence Questions
 
 For a first pass at "what does the literature say about X," licensed [Scopus AI](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home) covers this ground well: a cited, confidence-scored summary that tells you which papers to read. The tools below each add something it lacks.
 
@@ -62,13 +62,13 @@ For a first pass at "what does the literature say about X," licensed [Scopus AI]
 
 [Scite](https://scite.ai) answers a narrower and valuable question: has this paper's claim been supported or disputed by later work? Its citation-context analysis is most useful when a key claim in your manuscript rests on one or two studies.
 
-## Synthesizing from your own sources
+## Synthesizing from Your Own Sources
 
 [Gemini Notebook](gemini-notebook.md), which Google renamed from NotebookLM in July 2026, is a free tool for working with a fixed set of papers: upload them and it answers questions, drafts summaries, and builds study aids grounded in the sources you add, with citations back to the exact passage. Because it answers from your uploads rather than from general knowledge, it is less prone to invented answers than a general assistant, though not immune: its [dedicated page](gemini-notebook.md) covers what the published evaluations found, the features that add web sources, and where generated summaries and audio overviews go wrong. The limitation is the same as the strength: it only knows what you upload.
 
-## Analysis and agentic workbenches
+## Analysis and Agentic Workbenches
 
-For planning statistics before you run them, the [Analysis plan reviewer](../prompts/index.md#analysis-plan-reviewer) prompt in the library is the place to start; it recommends methods and names its assumptions without ever inventing results.
+For planning statistics before you run them, the [Analysis Plan Reviewer](../prompts/index.md#analysis-plan-reviewer) prompt in the library is the place to start; it recommends methods and names its assumptions without ever inventing results.
 
 The newest category in 2026 is the **agent-based research workbench**, and [Claude Science](https://claude.com/science) is one example: a local-first desktop application. A coordinating agent can query more than 60 scientific databases and draw on a growing set of scientific skills and connectors (genomics, single-cell analysis, proteomics, structural biology, cheminformatics). It runs code on your machine or your lab's servers, and a separate reviewer agent checks citations and calculations in what it produces. Local-first means your files and outputs stay on your device, but the model itself runs in Anthropic's cloud, so anything the agent reads is sent there. Because the agent opens files on its own, pointing it at a folder that holds only what you mean to share keeps everything else out of its reach.
 
@@ -76,7 +76,7 @@ The newest category in 2026 is the **agent-based research workbench**, and [Clau
 
 For general-purpose agents (coding assistants, computer-use tools) that also serve research workflows, see [AI Agents](agents.md).
 
-## Judged by the same rulers
+## Judged by the Same Rulers
 
 The pipeline's last stage, writing and disclosure, is the one no tool changes. AI-assisted research is held to the same instruments as any research:
 
@@ -84,9 +84,9 @@ The pipeline's last stage, writing and disclosure, is the one no tool changes. A
 - **Rigor instruments** like the Medical Education Research Study Quality Instrument (MERSQI) in medical education.
 - **The International Committee of Medical Journal Editors (ICMJE) authorship rules**, which are explicit on three points: an AI tool cannot be an author; AI writing assistance is disclosed in the acknowledgments and AI used in data collection or analysis in the methods; and responsibility for every AI-assisted sentence stays with the humans who sign the paper. Journals often add their own requirements on top, so reading the target journal's instructions for authors early lets you keep a note of which tools you used as you go, rather than piecing it together at submission. For a co-authored paper, agreeing on the tools with your co-authors early keeps that note, and the disclosure, complete.
 
-The prompt library's [Pre-submission reviewer](../prompts/index.md#pre-submission-reviewer) and [Reporting guideline auditor](../prompts/index.md#reporting-guideline-auditor) turn those standards into working checks, the [literature review playbook](../playbooks/literature-reviews.md) walks the full workflow, and the [Research and Scholarship module](../pathway/research.md) covers the disclosure norms.
+The prompt library's [Pre-submission Reviewer](../prompts/index.md#pre-submission-reviewer) and [Reporting Guideline Auditor](../prompts/index.md#reporting-guideline-auditor) turn those standards into working checks, the [literature review playbook](../playbooks/literature-reviews.md) walks the full workflow, and the [Research and Scholarship module](../pathway/research.md) covers the disclosure norms.
 
-## Cost and field fit at a glance
+## Cost and Field Fit at a Glance
 
 Prices are approximate, checked September 2026 from vendor pages, and change often; the vendor's pricing page is authoritative.
 

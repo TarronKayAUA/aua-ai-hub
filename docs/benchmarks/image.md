@@ -49,7 +49,7 @@ A model can win on beauty and lose on every one of those.
 <figcaption>The arena mechanism behind every leaderboard on this page and the video page.</figcaption>
 </figure>
 
-## The leaderboards worth knowing
+## The Leaderboards Worth Knowing
 
 <div class="grid cards" markdown>
 
@@ -79,7 +79,7 @@ A model can win on beauty and lose on every one of those.
 
 </div>
 
-## Medical images are a different question
+## Medical Images Are a Different Question
 
 No public leaderboard ranks models on generating *accurate* medical imagery, and the peer-reviewed evidence says the gap between pretty and correct is wide:
 

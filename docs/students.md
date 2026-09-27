@@ -29,49 +29,49 @@ Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use 
 
     Practice questions from your own slides, in three steps.
 
-    - <span class="row-tag">Start here</span> [Practice questions from your slides](prompts/index.md#nbme-style-question-tutor) <span class="row-sub">National Board of Medical Examiners (NBME)-style question tutor</span>
+    - <span class="row-tag">Start Here</span> [Practice questions from your slides](prompts/index.md#nbme-style-question-tutor) <span class="row-sub">National Board of Medical Examiners (NBME)-style question tutor</span>
 
     <!-- the three steps -->
 
     1. Start a Project in ChatGPT or Claude for the course.
-    2. Paste the NBME-style question tutor into its instructions.
+    2. Paste the NBME-Style Question Tutor into its instructions.
     3. Upload your slides.
 
     <!-- more ways to study -->
 
-    - [Flashcards from one lecture](prompts/index.md#flashcard-builder) <span class="row-sub">Flashcard builder</span>
     - [See it done: practice questions from a lecture](examples/study-practice-questions.md) <span class="row-sub">A worked example with real output</span>
     - [One notebook per course](tools/gemini-notebook.md) <span class="row-sub">Gemini Notebook (formerly NotebookLM)</span>
     - [AI-generated anatomy images](basics/misconceptions.md#if-i-cannot-find-a-good-diagram-i-can-have-ai-generate-one) <span class="row-sub">How far to trust them</span>
+    - [Flashcards from one lecture](prompts/index.md#flashcard-builder) <span class="row-sub">Flashcard Builder</span>
     - [All student prompts](prompts/index.md?for=students) <span class="row-sub">Prompt Library</span>
     - [Study tools in the directory](tools/index.md?task=study) <span class="row-sub">Tool Directory</span>
 
--   ## :material-chart-line:{ .lg .middle } After an exam {: #after-an-exam }
+-   ## :material-chart-line:{ .lg .middle } After an Exam {: #after-an-exam }
 
     Turn a shelf, NBME, or course exam score report into a study plan, and sort the questions you missed by why you missed them.
 
-    - <span class="row-tag">Start here</span> [Shelf and NBME Score Reports](playbooks/score-reports.md) <span class="row-sub">Step-by-step guide</span>
-    - [Missed-question debrief](prompts/index.md#missed-question-debrief) <span class="row-sub">Prompt</span>
-    - [Study schedule builder](prompts/index.md#study-schedule-builder) <span class="row-sub">Prompt</span>
+    - <span class="row-tag">Start Here</span> [Shelf and NBME Score Reports](playbooks/score-reports.md) <span class="row-sub">Step-by-step guide</span>
+    - [Missed-Question Debrief](prompts/index.md#missed-question-debrief) <span class="row-sub">Prompt</span>
+    - [Study Schedule Builder](prompts/index.md#study-schedule-builder) <span class="row-sub">Prompt</span>
 
--   ## :material-stethoscope:{ .lg .middle } On rotations {: #on-rotations }
+-   ## :material-stethoscope:{ .lg .middle } On Rotations {: #on-rotations }
 
     Practicing differentials works best on a teaching abstraction: an age band and a presentation pattern, with nothing left that could point to the patient, such as a name, a date, or a rare detail. The pattern is what you are practicing on. Your clinical site may have its own AI rules; your preceptor can tell you.
 
-    - <span class="row-tag">Start here</span> [Clinical reasoning partner](prompts/index.md#clinical-reasoning-partner) <span class="row-sub">Prompt</span>
-    - [Module 6: Clinical Contexts](pathway/clinical.md) <span class="row-sub">AI Literacy Pathway</span>
+    - <span class="row-tag">Start Here</span> [Module 6: Clinical Contexts](pathway/clinical.md) <span class="row-sub">AI Literacy Pathway</span>
+    - [Clinical Reasoning Partner](prompts/index.md#clinical-reasoning-partner) <span class="row-sub">Prompt</span>
 
--   ## :material-account-tie:{ .lg .middle } Residency applications {: #residency-applications }
+-   ## :material-account-tie:{ .lg .middle } Residency Applications {: #residency-applications }
 
     Interview practice and feedback on a personal statement you wrote, within what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) allow.
 
-    - <span class="row-tag">Start here</span> [Mock residency interview](prompts/index.md#mock-residency-interview) <span class="row-sub">Prompt</span>
-    - [Personal statement critic](prompts/index.md#personal-statement-critic) <span class="row-sub">Prompt</span>
-    - [AI and the Residency Application](playbooks/residency-application.md) <span class="row-sub">Step-by-step guide</span>
+    - <span class="row-tag">Start Here</span> [AI and the Residency Application](playbooks/residency-application.md) <span class="row-sub">Step-by-step guide</span>
+    - [Mock Residency Interview](prompts/index.md#mock-residency-interview) <span class="row-sub">Prompt</span>
+    - [Personal Statement Critic](prompts/index.md#personal-statement-critic) <span class="row-sub">Prompt</span>
 
 </div>
 
-## Start with the basics (30 minutes) {: #starting-out }
+## Start with the Basics (30 Minutes) {: #starting-out }
 
 The literacy pathway's first three modules are short, plain-language, and written for everyone:
 
@@ -79,7 +79,7 @@ The literacy pathway's first three modules are short, plain-language, and writte
 2. [Prompting Fundamentals](pathway/prompting.md) (about 15 minutes): the habits that most improve what you get back, starting with giving the model your actual materials.
 3. [The Policy in Practice](pathway/rules.md) (about 5 minutes): a short guide to the policy, and why its expectations work in your favor.
 
-## Using AI well for coursework {: #the-lines-that-never-move }
+## Using AI Well for Coursework {: #the-lines-that-never-move }
 
 - Your course syllabus sets the expectations for AI on assignments, including how to acknowledge it. If it does not cover something you want to try, ask your instructor: a quick message usually settles it, and the conversation often improves the idea.
 - The Student Handbook treats unauthorized or unacknowledged AI use in coursework, assessments, or clinical training as possible academic misconduct, which is why that quick message is worth sending.
@@ -90,7 +90,7 @@ The literacy pathway's first three modules are short, plain-language, and writte
 
 The [AI Responsible Use Policy](governance/policy.md) is the reference for everything else, and [Module 3: The Policy in Practice](pathway/rules.md) is a five-minute guide to it.
 
-## Through the basic sciences
+## Through the Basic Sciences
 
 This is where the daily habits form, and the ones that pay off share a shape: the AI works from **your** materials, and **you** do the recalling.
 
@@ -105,9 +105,9 @@ This is where the daily habits form, and the ones that pay off share a shape: th
     - **Anatomy is a known weak spot for image generators.** Generated diagrams look convincing and get foramina, rib counts, and attachments wrong; the [misconceptions page](basics/misconceptions.md) explains what to use instead.
     - **Calibrating trust.** Fluency is not accuracy; the [misconceptions page](basics/misconceptions.md) covers how to judge reliability by task, which matters double for exams and wards.
 
-## Building a study schedule {: #building-a-study-schedule }
+## Building a Study Schedule {: #building-a-study-schedule }
 
-A schedule is only as good as what goes into it. The [study schedule builder](prompts/index.md#study-schedule-builder) is written for this school's block structure, either keeping up through a block or counting down to one exam such as a remedial.
+A schedule is only as good as what goes into it. The [Study Schedule Builder](prompts/index.md#study-schedule-builder) is written for this school's block structure, either keeping up through a block or counting down to one exam such as a remedial.
 
 ??? note "What to gather first, and what a good schedule has"
 
@@ -127,38 +127,38 @@ A schedule is only as good as what goes into it. The [study schedule builder](pr
     - **What you are not studying, and why.** A plan that covers everything thoroughly has not made the hard choices.
     - **Checkpoints and a buffer**: a review after each assessment, and slack so one bad day does not sink the week.
 
-    Take the result to your advisor. After your next assessment, the [study plan progress check](prompts/index.md#study-plan-progress-check) tells you honestly whether it is working.
+    Take the result to your advisor. After your next assessment, the [Study Plan Progress Check](prompts/index.md#study-plan-progress-check) tells you honestly whether it is working.
 
-## Shelf exams, NBME, United States Medical Licensing Examination (USMLE) Step 1, and course exams {: #around-an-exam }
+## Shelf Exams, NBME, United States Medical Licensing Examination (USMLE) Step 1, and Course Exams {: #around-an-exam }
 
-**Before.** The [NBME-style question tutor](prompts/index.md#nbme-style-question-tutor) in exam mode drills first and debriefs after, which is closer to the real thing than reading explanations as you go. Build questions from the lectures you were actually taught, not from a general model's memory of the subject, and treat every explanation as something to check rather than something to trust.
+**Before.** The [NBME-Style Question Tutor](prompts/index.md#nbme-style-question-tutor) in exam mode drills first and debriefs after, which is closer to the real thing than reading explanations as you go. Build questions from the lectures you were actually taught, not from a general model's memory of the subject, and treat every explanation as something to check rather than something to trust.
 
 ??? note "After the exam: your score report and the questions you missed"
 
-    **After.** The [Shelf and NBME Score Reports](playbooks/score-reports.md) guide turns an NBME INSIGHTS report or an in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it. For a practice block or a quiz, the [missed-question debrief](prompts/index.md#missed-question-debrief) sorts each miss by cause (a knowledge gap, a slip, a misread, a changed answer, or the clock), working from your own notes rather than the questions themselves.
+    **After.** The [Shelf and NBME Score Reports](playbooks/score-reports.md) guide turns an NBME INSIGHTS report or an in-house score breakdown into an honest, interleaved study plan, with a prompt built for it and a loop that ends at your advisor's door. You write your own read of the report first; the AI refines it, it does not replace it. For a practice block or a quiz, the [Missed-Question Debrief](prompts/index.md#missed-question-debrief) sorts each miss by cause (a knowledge gap, a slip, a misread, a changed answer, or the clock), working from your own notes rather than the questions themselves.
 
-## On rotations: practicing differentials {: #on-the-wards }
+## On Rotations: Practicing Differentials {: #on-the-wards }
 
 Clinical rotations add a second set of policies alongside the university's: the hospital's own rules on privacy and devices.
 
 ??? note "Before your first rotation, and how to practice differentials"
 
     - Read [Clinical Contexts](pathway/clinical.md) before your first rotation. It covers how AI works as a study aid on rotations and what changes when a real patient is involved.
-    - **Practicing differentials against an AI is legitimate and effective**, with one discipline: a real encounter gets stripped to a teaching abstraction first, meaning an age band, a presentation pattern, and nothing identifiable. The [clinical reasoning partner](prompts/index.md#clinical-reasoning-partner) runs practice cases a step at a time.
+    - **Practicing differentials against an AI is legitimate and effective**, with one discipline: a real encounter gets stripped to a teaching abstraction first, meaning an age band, a presentation pattern, and nothing identifiable. The [Clinical Reasoning Partner](prompts/index.md#clinical-reasoning-partner) runs practice cases a step at a time.
     - Where the site's policies and the university's differ, the stricter of the two sets the limit in practice. Site orientation or your preceptor can tell you what the site allows.
 
-## Residency applications: interview practice and personal statements {: #the-application-year }
+## Residency Applications: Interview Practice and Personal Statements {: #the-application-year }
 
-The [residency application guide](playbooks/residency-application.md) covers what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) actually permit, the best use of AI in this year (interview rehearsal, especially if you do not have a network of physicians to practice with), how to use an assistant as a critic of your own draft rather than its author, and how to tell a patient story in a personal statement without identifying the patient. Two prompts support it: the [mock residency interview](prompts/index.md#mock-residency-interview) and the [personal statement critic](prompts/index.md#personal-statement-critic).
+The [residency application guide](playbooks/residency-application.md) covers what the Association of American Medical Colleges (AAMC) and the Educational Commission for Foreign Medical Graduates (ECFMG) actually permit, the best use of AI in this year (interview rehearsal, especially if you do not have a network of physicians to practice with), how to use an assistant as a critic of your own draft rather than its author, and how to tell a patient story in a personal statement without identifying the patient. Two prompts support it: the [Mock Residency Interview](prompts/index.md#mock-residency-interview) and the [Personal Statement Critic](prompts/index.md#personal-statement-critic).
 
 ??? note "Questions about application strategy: who to see"
 
     For anything about strategy, meaning which programs, how many, how to signal, and how your own record should be presented, your Education Enhancement Department (EED) clinical advisor is the person to see. The guide is about the tools, not the plan.
 
-## Staying current
+## Staying Current
 
 [This Week](news/this-week.md) rolls up the last seven days of curated news, videos, and podcasts, refreshed through the day. The [Videos page](news/videos.md) has a Medical AI section with seminar recordings and explainers, and a weekly digest of highlights lands every Friday in the [archive](news/archive/index.md).
 
-## Take part
+## Take Part
 
 The [Opportunities page](opportunities.md) lists buildathons, hackathons, and challenges open to international participants, wherever in the world they run; check each listing's eligibility before you plan around it. The [Prompt Exchange](prompts/exchange.md) accepts community prompt contributions with public voting, and news pages carry a comments section (free GitHub account required; posts are public; standards on the [About page](about.md#comments-and-feedback)). If something on this site is wrong, missing, or confusing, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) is five questions and about two minutes.

@@ -1,7 +1,7 @@
 ---
 last_reviewed: 2026-09-26
 action:
-  - text: Open the Lecture outline builder
+  - text: Open the Lecture Outline Builder
     link: prompts/index.md#lecture-outline-builder
   - text: Read the lecture guide
     link: playbooks/lecture-prep.md
@@ -10,13 +10,13 @@ action:
 
 # Worked Example: Outlining a Physiology Lecture
 
-<span class="meta-chip">For faculty</span><span class="meta-chip">About 11 minutes</span>
+<span class="meta-chip">Faculty</span><span class="meta-chip">About 11 minutes</span>
 
-What the Lecture outline builder gives back for a 50-minute session, and the checking it needs before you teach from it. An outline is a starting point: the diagrams, your explanations, and a rehearsal still come after.
+What the Lecture Outline Builder gives back for a 50-minute session, and the checking it needs before you teach from it. An outline is a starting point: the diagrams, your explanations, and a rehearsal still come after.
 
 The session details are invented for this example. Claude's outline is its real output, unedited, and long, as a real one is: [what to check](#what-to-check) follows it. The same prompt can word things differently each time and in each tool, so yours may differ in the details.
 
-## What went in
+## What Went In
 
 The prompt, followed by these details, given to Claude together.
 
@@ -35,11 +35,11 @@ The prompt, followed by these details, given to Claude together.
 
     Constraints: Students covered cardiac action potentials and the electrocardiogram (ECG) last week. The Wiggers diagram must appear.
 
-## The prompt
+## The Prompt
 
-The [Lecture outline builder](../prompts/index.md#lecture-outline-builder) from the Prompt Library, word for word, as it stood in September 2026. It shows its time arithmetic first, maps every section to one objective, writes out an active check for each, and marks as [VERIFY] any factual claim you did not supply and no attached source supports.
+The [Lecture Outline Builder](../prompts/index.md#lecture-outline-builder) from the Prompt Library, word for word, as it stood in September 2026. It shows its time arithmetic first, maps every section to one objective, writes out an active check for each, and marks as [VERIFY] any factual claim you did not supply and no attached source supports.
 
-## What came back
+## What Came Back
 
 !!! quote "Output from Claude, September 2026, unedited"
 
@@ -119,7 +119,7 @@ The [Lecture outline builder](../prompts/index.md#lecture-outline-builder) from 
 
     A note on the numbers: the physiology here is settled, but typical values differ a little between textbooks, so check each [VERIFY] number against the text your course assigns.
 
-## What to check
+## What to Check
 
 The prompt marks what it supplied with [VERIFY], so most of the checking is visible. The flags are a help, not a guarantee. These are the lines a careful physiologist checks, and why.
 
@@ -134,7 +134,7 @@ The prompt marks what it supplied with [VERIFY], so most of the checking is visi
 9. **The cut list.** A teaching judgment rather than a fact to check. Cutting the a and v waves first weakens objective 1, which asks for atrial pressure; and the worked example and the active check use the same formula but do different jobs (showing, then practicing). Showing a prepared loop instead of drawing it live saves time without losing either.
 10. **The three answer keys (E, left, and A).** All correct, and the arithmetic holds (70/120 is about 58%, and 56/140 is 40%). Work each one yourself anyway, because students will learn whatever the key says.
 
-## What we changed
+## What We Changed
 
 Our edits, after the checks above. Claude's outline stays exactly as it came back; every "After" below is our revision, not Claude's output.
 

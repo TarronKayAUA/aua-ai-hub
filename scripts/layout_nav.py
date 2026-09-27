@@ -11,7 +11,7 @@ one-line subtitles, nouns and kinds from data/section_map.yaml:
     data/section_map.yaml. Which pages appear, their order and their titles
     come from mkdocs.yml and nothing else. Each group's badge counts its own
     pages with its noun ("5 guides"); a lesson a group builds on (Module 7
-    for Work with agents) sits apart under "Related lesson in Learn".
+    for Work with Agents) sits apart under "Related lesson in Learn".
   - the PAGE FOOT on every inner page: "More in this section" cards (the
     section or group overview first, then nav order); on the seven modules,
     where there is a real order, "Where to go next" instead, holding the
@@ -23,9 +23,9 @@ one-line subtitles, nouns and kinds from data/section_map.yaml:
     docs/javascripts/layout-nav.js lifts the same HTML into the "Browse
     <section>" and "On this page" controls, so they can never disagree.
   - the TOOLS & PROMPTS LANDING (docs/tools-and-prompts.md, slot
-    <div data-tp-landing></div>): "Find a tool" and "Use a prompt" first,
+    <div data-tp-landing></div>): "Find a Tool" and "Use a Prompt" first,
     each with a browse button and a few shortcuts, then the guide groups in
-    parallel, then a Compare models band. The first two nav groups of the
+    parallel, then a Compare Models band. The first two nav groups of the
     tab are the primary cards, the last is the band, the rest are guides.
     Counts come from data/tools.yaml, data/tool_tasks.yaml and
     data/prompts.yaml; which shortcuts appear, and any shorter landing label,
@@ -131,7 +131,7 @@ def on_config(config):
     tools = yaml.safe_load((root / "data" / "tools.yaml").read_text(encoding="utf-8")) or []
     tasks = yaml.safe_load((root / "data" / "tool_tasks.yaml").read_text(encoding="utf-8")) or []
     prompts = rd.load_prompts(config)
-    extra_top = set(deco) - set(ALLOWED)
+    extra_top = set(deco) - set(ALLOWED) - {"order"}
     if extra_top:
         raise ValueError(f"layout_nav: data/section_map.yaml has unknown blocks {sorted(extra_top)}")
     for block, keys in ALLOWED.items():
@@ -150,6 +150,10 @@ def on_config(config):
                 raise ValueError(f"layout_nav: kind {kid!r} uses hue {k['token']!r}, which the "
                                  f"palette block in {PALETTE_CSS} does not define for the "
                                  f"{scheme} scheme (--hue-{k['token']}, -tint and -line)")
+    order = deco.get("order") or []
+    if sorted(order) != sorted(kinds):
+        raise ValueError(f"layout_nav: data/section_map.yaml `order:` must list every kind once "
+                         f"(kinds: {sorted(kinds)}; order: {order})")
     for block in ("tabs", "groups", "pages"):
         for name, entry in (deco.get(block) or {}).items():
             if (entry or {}).get("kind") and entry["kind"] not in kinds:
@@ -257,7 +261,7 @@ def on_nav(nav, config, files):
             steps = int(gdeco.get("steps") or 0)
             first_page = group["entries"][0]["page"] if group["entries"] else None
             # A group's overview: its index page, or the first page of a
-            # group that numbers its steps after one (Work with agents).
+            # group that numbers its steps after one (Work with Agents).
             has_overview = bool(first_page is not None and (first_page.is_index or steps))
             anchor = gdeco.get("anchor") or (_slug(group["title"]) if tab["title"] == LANDING_TAB else "")
             group.update(icon=gdeco.get("icon", tab["icon"]), blurb=gdeco.get("blurb", ""),
@@ -514,14 +518,14 @@ def _module_card(group, page, used: set) -> str:
     _S["module_links"] += 1
     pdeco = (_S["deco"].get("pages") or {}).get(mod.file.src_uri) or {}
     sub = _fill(pdeco.get("sub", ""))
-    return (f'<p class="secmap__subhead">Related lesson in Learn</p>'
+    return (f'<p class="secmap__subhead">Related Lesson in Learn</p>'
             f'<ul class="secmap__cards secmap__cards--related"><li>'
             f'<a class="secmap__card secmap__card--cross{_kcls(kind)}"{_kattr(kind)} '
             f'href="{_esc(_href(mod, page))}"><span class="secmap__icon">{_icon("school-outline")}</span>'
             f'<span class="secmap__words"><span class="secmap__title">{_esc(_module_label(mod))}</span>'
             + (f' <span class="secmap__sub">{_esc(sub)}</span>' if sub else "")
             + "</span></a></li></ul>"
-            f'<p class="secmap__subhead">The {_esc(group["noun"])}</p>')
+            f'<p class="secmap__subhead">The {_esc(group["noun"].title())}</p>')
 
 
 def _map(tab, here_src, page, inside: bool = False) -> str:
@@ -664,8 +668,9 @@ def _entry_sub(entry) -> str:
 def _more(tab, entry, page, in_nav: bool, used: set) -> str:
     """"More in this section": the section or group overview first, then
     nav order. The rest are the page's group siblings; when the group has
-    fewer than two, the first page of each other group in the tab. A page
-    outside the nav starts from the page it belongs to."""
+    fewer than two, the first page of each other group in the tab, groups of
+    the page's own kind first. A page outside the nav starts from the page
+    it belongs to."""
     group = entry["group"]
     here = page.file.src_uri if in_nav else None
     picks = []          # (page, title, sub)
@@ -680,8 +685,14 @@ def _more(tab, entry, page, in_nav: bool, used: set) -> str:
     picks += [(e["page"], _title(e), _entry_sub(e)) for e in siblings]
     seen |= {e["page"].file.src_uri for e in siblings}
     if len(siblings) < 2:
-        for g in tab["groups"]:
-            if g is not group and g["entries"] and g["entries"][0]["page"].file.src_uri not in seen:
+        # Other groups whose first page is this page's kind come first (a
+        # reader finishing a guide most likely wants the next guide), then
+        # the rest, each in nav order (ordering principle, 2026-09-27).
+        mine = kind_of(entry["page"].file.src_uri)
+        others = sorted((g for g in tab["groups"] if g["entries"]),
+                        key=lambda g: kind_of(g["entries"][0]["page"].file.src_uri) != mine)
+        for g in others:
+            if g is not group and g["entries"][0]["page"].file.src_uri not in seen:
                 e = g["entries"][0]
                 picks.append((e["page"], _title(e), _entry_sub(e)))
                 seen.add(e["page"].file.src_uri)
@@ -689,7 +700,7 @@ def _more(tab, entry, page, in_nav: bool, used: set) -> str:
     if not picks:
         return ""
     cards = "".join(f"<li>{_foot_card('', p, t, s, page, used)}</li>" for p, t, s in picks)
-    return (f'<h2 class="secfoot__h">More in this section</h2>'
+    return (f'<h2 class="secfoot__h">More in This Section</h2>'
             f'<ul class="secfoot__more">{cards}</ul>')
 
 
@@ -710,7 +721,7 @@ def _kind_buttons(block: str, page, used: set) -> str:
 
 def _module_back(page, used: set) -> str:
     """A lesson that a Tools & Prompts group builds on links, secondary, to
-    that group on the landing (Module 7 to "Work with agents")."""
+    that group on the landing (Module 7 to "Work with Agents")."""
     group = (_S.get("module_of") or {}).get(page.file.src_uri)
     if group is None or group["tab"]["landing"] is None:
         return ""
@@ -738,7 +749,7 @@ def _lesson_end(tab, entry, page, learn_next: str, used: set) -> str:
     """A module's ending, the same on all seven: "Where to go next", the
     module's own Next (one card, with its time; or its choice of modules),
     then, secondary, Previous and any related group."""
-    top = '<h2 class="secfoot__h">Where to go next</h2>'
+    top = '<h2 class="secfoot__h">Where to Go Next</h2>'
     if learn_next:
         top += _kind_buttons(learn_next, page, used)
     also = []
@@ -791,7 +802,7 @@ def _foot(page, article_html: str, learn_next: str, keyed: set) -> str:
     overview = ""
     if tab["landing"] is not None:
         overview = (f'<a class="secfoot__overview" href="{_esc(_href(tab["landing"], page))}">'
-                    f'{_esc(tab["title"])} overview</a>')
+                    f'{_esc(tab["title"])} Overview</a>')
     summary = (f'<summary><span class="secfoot__sicon">{_icon(tab["icon"])}</span>'
                f'<span class="secfoot__stext">Browse {_esc(tab["title"])}</span>'
                f'<span class="secfoot__scount">{total} pages</span></summary>')
@@ -824,7 +835,7 @@ def _site_map(page) -> tuple[str, int, int]:
             pdeco = (_S["deco"].get("pages") or {}).get(lp.file.src_uri) or {}
             cards.append(f'<li><a class="secmap__card{_kcls(kind)}"{_kattr(kind)} href="{_esc(_href(lp, page))}">'
                          f'<span class="secmap__icon">{_icon(pdeco.get("icon", tab["icon"]))}</span>'
-                         f'<span class="secmap__words"><span class="secmap__title">{_esc(tab["title"])} overview</span>'
+                         f'<span class="secmap__words"><span class="secmap__title">{_esc(tab["title"])} Overview</span>'
                          f' <span class="secmap__sub">The section\'s landing page</span></span></a></li>')
         for g in tab["groups"]:
             first = g["entries"][0]["page"]
@@ -863,7 +874,7 @@ def _door_foot(page, article_html: str) -> str:
     if found is not None and found[1] is None:
         tab = found[0]
         overview = (f'<a class="secfoot__overview" href="{_esc(_href(tab["landing"], page))}" '
-                    f'aria-current="page">{_esc(tab["title"])} overview '
+                    f'aria-current="page">{_esc(tab["title"])} Overview '
                     f'<span class="secfoot__here">You are here</span></a>')
         body = overview + _map(tab, None, page)
         attrs = (f'data-section="{_esc(tab["title"])}" data-total="{len(tab["flat"])}" '
@@ -939,7 +950,7 @@ def _landing(page) -> str:
     used: set = set()
     arrow = _icon("arrow-right")
 
-    # Find a tool: the directory, and the tasks flagged for the landing.
+    # Find a Tool: the directory, and the tasks flagged for the landing.
     g = groups[0]
     directory = g["entries"][0]["page"]
     dkind = kind_of(directory.file.src_uri)
@@ -957,11 +968,11 @@ def _landing(page) -> str:
         f'{_group_head(g)}'
         f'<a class="tp-go"{_kattr(dkind)} href="{_esc(_href(directory, page))}">'
         f'Browse all {len(_S["tools"])} tools{arrow}</a>'
-        f'<p class="tp-sub">Or start from a task</p><ul class="tp-shorts">{"".join(shortcuts)}</ul>'
+        f'<p class="tp-sub">Or Start from a Task</p><ul class="tp-shorts">{"".join(shortcuts)}</ul>'
         f'<p class="tp-note">Every other task is in the directory\'s chooser.</p>'
         + (f'<ul class="tp-rows">{others}</ul>' if others else "") + "</section>")
 
-    # Use a prompt: the library, the categories flagged for the landing
+    # Use a Prompt: the library, the categories flagged for the landing
     # (counted exactly as the library's chooser counts what the link
     # selects), and the group's other pages.
     g = groups[1]
@@ -985,7 +996,7 @@ def _landing(page) -> str:
         f'{_group_head(g)}'
         f'<a class="tp-go"{_kattr(lkind)} href="{_esc(_href(library, page))}">'
         f'Browse all {len(prompts)} prompts{arrow}</a>'
-        f'<p class="tp-sub">Or start from a task</p><ul class="tp-shorts">{"".join(shortcuts)}</ul>'
+        f'<p class="tp-sub">Or Start from a Task</p><ul class="tp-shorts">{"".join(shortcuts)}</ul>'
         + (f'<ul class="tp-rows tp-rows--pair">{others}</ul>' if others else "") + "</section>")
 
     # The guide groups, side by side. A group with a `module` meets the
@@ -1003,11 +1014,11 @@ def _landing(page) -> str:
             _S["module_links"] += 1
             body += (f'<a class="tp-cross{_kcls(mkind)}"{_kattr(mkind)} href="{_esc(_href(g["module"], page))}">'
                      f'<span class="tp-row__icon">{_icon("school-outline")}</span><span class="tp-row__words">'
-                     f'<span class="tp-row__title">New to agents? {_esc(_module_label(g["module"]))}</span> '
+                     f'<span class="tp-row__title">New to Agents? {_esc(_module_label(g["module"]))}</span> '
                      f'<span class="tp-row__sub">The lesson in Learn that introduces them</span></span></a>')
         if g["steps"] and len(entries) > 1:
             first = entries[0]
-            body += (f'<p class="tp-sub">Start here</p><ul class="tp-rows"><li>{_row(first, page, used)}</li></ul>')
+            body += (f'<p class="tp-sub">Start Here</p><ul class="tp-rows"><li>{_row(first, page, used)}</li></ul>')
             steps = entries[1:1 + g["steps"]]
             rest = entries[1 + g["steps"]:]
             body += '<ol class="tp-rows tp-rows--steps">' + "".join(
@@ -1021,7 +1032,7 @@ def _landing(page) -> str:
         mids.append(f'<section class="tp-card"{_kattr(g["kind"])} aria-labelledby="{_esc(g["anchor"])}">'
                     f'{_group_head(g)}{body}</section>')
 
-    # Compare models: a band of tiles across the page.
+    # Compare Models: a band of tiles across the page.
     g = groups[-1]
     tiles = []
     for e in g["entries"]:

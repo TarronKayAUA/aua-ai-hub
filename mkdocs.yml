@@ -181,6 +181,10 @@ hooks:
   # arrangement per kind of page on one shared grid. After layout_nav, so its
   # on_post_page sees the finished article with the section foot in place.
   - scripts/layout_width.py
+  # Title case (polish round, 2026-09-27): checks titles, headings, names and
+  # labels in the final HTML and fails the build on a violation. Last, so it
+  # sees every page as served.
+  - scripts/title_case.py
 
 markdown_extensions:
   - admonition
@@ -210,7 +214,7 @@ markdown_extensions:
 # their own guides, so a guide opened from a hub keeps that hub's tab and
 # breadcrumb. File paths are unchanged: a page's URL comes from its file,
 # not its place here. Three index pages stay wrapped in single-page sections
-# (the Tool Directory, now in "Find a tool"; News Archive; Announcements) so
+# (the Tool Directory, now in "Find a Tool"; News Archive; Announcements) so
 # navigation.indexes does not turn them into their parent tab's landing page
 # (SPEC, 2026-09-23).
 nav:
@@ -249,33 +253,33 @@ nav:
           - Getting Better Answers: basics/better-answers.md
       - Courses and Resources: learning/index.md
   # Tools & Prompts opens on its own landing (navigation synthesis,
-  # 2026-09-26): two primary groups, Find a tool and Use a prompt, then the
-  # guides grouped by what they help with, then Compare models. The landing
+  # 2026-09-26): two primary groups, Find a Tool and Use a Prompt, then the
+  # guides grouped by what they help with, then Compare Models. The landing
   # and every page's section map draw these same groups. URLs are unchanged,
-  # since a URL comes from the file, not its place here; "Find a tool" still
+  # since a URL comes from the file, not its place here; "Find a Tool" still
   # wraps the Tool Directory so navigation.indexes never makes it the tab's
   # landing page.
   - "Tools & Prompts":
       - tools-and-prompts.md
-      - Find a tool:
+      - Find a Tool:
           - Tool Directory: tools/index.md
-      - Use a prompt:
+      - Use a Prompt:
           - Prompt Library: prompts/index.md
           - Learning to Prompt: prompts/learning.md
           - Prompt Exchange: prompts/exchange.md
-      - Work with sources:
-          - "Gemini Notebook (formerly NotebookLM)": tools/gemini-notebook.md
+      - Work with Sources:
+          - "Gemini Notebook (Formerly NotebookLM)": tools/gemini-notebook.md
           - AI for Research: tools/research.md
-      - Work with agents:
+      - Work with Agents:
           - AI Agents: tools/agents.md
           - Choosing Your Interface: tools/interfaces.md
           - Your First Agent Session: tools/first-session.md
-          - "Standing Setups: Assistants that Remember": tools/standing-setups.md
+          - "Standing Setups: Assistants That Remember": tools/standing-setups.md
           - Agent Skills: tools/skills.md
-      - Run models locally:
+      - Run Models Locally:
           - Running Models Locally: tools/local.md
           - Hardware for Local AI: tools/hardware.md
-      - Compare models:
+      - Compare Models:
           - Language Models: benchmarks.md
           - Image Generation: benchmarks/image.md
           - Video Generation: benchmarks/video.md
@@ -304,7 +308,7 @@ nav:
   - "About & Contact":
       - About This Site: about.md
       - Accessibility: accessibility.md
-      - Project Write-ups:
+      - Project Write-Ups:
           - worked-examples/index.md
           - When a Check Stops Checking: worked-examples/this-site.md
           - I Fixed Software I Cannot Read: worked-examples/sharex-hdr.md

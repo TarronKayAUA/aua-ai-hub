@@ -13,7 +13,7 @@ If you only want the answer to "what can my machine run", jump to [What you prob
 !!! note "Should you run models locally at all?"
     Be honest about the economics first: a serious graphics card costs more than years of cloud assistant subscriptions, and cloud frontier models are more capable. The reasons local wins are privacy (nothing you type leaves the machine), zero marginal cost once you own the hardware, and education. The best local setup is usually the computer you already own, which is what the estimator below is for. If you need serious hardware occasionally, [rent it by the hour](local.md#when-your-machine-cannot-keep-up-renting-a-gpu) instead of buying.
 
-## What tokens per second feels like
+## What Tokens per Second Feels Like
 
 Local model speed is measured in tokens per second, where a token is roughly three quarters of a word. Numbers are abstract; feel the difference instead. Each button replays the same passage at a different rate (this is a simulation of the rate, not a benchmark of any particular machine):
 
@@ -27,7 +27,7 @@ Local model speed is measured in tokens per second, where a token is roughly thr
 
 Below about 5 tokens per second, a local model is only usable for short answers. Around 10 to 15 it keeps pace with your reading. Past 40 it stops mattering. That framing turns every hardware question into one concrete target: what rate will this machine produce?
 
-## The one number that decides speed: memory bandwidth
+## The One Number That Decides Speed: Memory Bandwidth
 
 Generating a token requires reading essentially all of the model's active weights out of memory, once per token. Processors are rarely the bottleneck; the pipe between memory and processor is. That gives the estimate this whole page is built on:
 
@@ -74,15 +74,15 @@ Two consequences worth internalizing. First, **what separates VRAM from RAM is t
 <figcaption>Speed follows where the bytes live: the same model is instant from the wide pipe and a crawl from the narrow one.</figcaption>
 </figure>
 
-### When it does not quite fit: partial offloading
+### When It Does Not Quite Fit: Partial Offloading
 
 Runners like Ollama and LM Studio do not give up when a model exceeds video memory; they split it, keeping as many layers as fit on the graphics card and reading the rest from system memory. The arithmetic on this page still works, applied per tier: the spilled fraction is read at system-memory speed, so the result is a blend weighted toward the slower tier. For **dense** models that blend is punishing, and a large dense model living mostly in RAM does crawl. For **mixture-of-experts** models it is surprisingly livable, because only the small active fraction is read per token: gpt-oss-120b split across a 16 GB laptop graphics card and 64 GB of system RAM reads roughly 3 GB per token, mostly from RAM at around 90 GB/s, which pencils out to the teens of tokens per second. That is reading speed, from a model four times larger than the card, and it is a real configuration people run today. The refined rule: **total capacity across VRAM plus RAM decides what is possible; where the bytes sit, and how many of them are active per token, decides how fast.** Spilling past RAM onto an SSD remains a hard stop.
 
-### Unified memory, the interesting middle
+### Unified Memory, the Interesting Middle
 
 Apple silicon Macs (and a growing set of similar PC chips) share one pool of memory between the processor and graphics at bandwidths far above ordinary RAM. The trade is capacity for bandwidth: a 96 GB unified-memory machine runs models no consumer graphics card can hold, at speeds between a graphics card and a central processing unit (CPU). For mixture-of-experts models (below), which need lots of capacity but little bandwidth per token, unified memory is well suited among consumer hardware. If you own a higher-tier Apple silicon Mac, you own a genuinely good local artificial intelligence (AI) machine and may not need to buy anything.
 
-## Sizing a model: parameters × quantization
+## Sizing a Model: Parameters × Quantization
 
 The memory a model needs is its parameter count times the bytes stored per parameter, and **quantization** sets the bytes:
 
@@ -94,7 +94,7 @@ The memory a model needs is its parameter count times the bytes stored per param
 
 So an 8 billion parameter model is roughly 16 GB at full precision, 8.5 GB at Q8, and 4.6 GB at Q4. Q4 is the default the community settled on because the quality loss is modest and the size halves twice; below Q4 (Q3, Q2) degradation gets noticeable quickly, and those are best avoided except in emergencies. On top of the weights, budget **1 to 2 GB of working memory** for short conversations, and more for long ones: the model keeps notes on everything in the current context (the key-value, or KV, cache), and a very long document or chat can add several gigabytes. People who size for the weights alone are the people wondering why their 32,000-token context will not load. (What the context window means for how you use a model, local or cloud, is covered in [Getting Better Answers](../basics/better-answers.md).)
 
-## Dense, mixture-of-experts, and multimodal
+## Dense, Mixture-of-Experts, and Multimodal
 
 - **Dense models** use every parameter for every token. Memory needed and speed both follow the full parameter count. Most small models (4B, 8B) are dense.
 - **Mixture-of-experts (MoE)** models carry many parameters but route each token through a small subset. The rule: **total parameters size the memory, active parameters set the speed.** OpenAI's gpt-oss-20b needs a 20B-class memory footprint but reads only 3.6B parameters per token, so it runs at small-model speed. This is why MoE dominates recent open releases, and why capacity-rich, bandwidth-modest machines (unified memory, CPU with lots of RAM) punch above their weight on them.
@@ -102,7 +102,7 @@ So an 8 billion parameter model is roughly 16 GB at full precision, 8.5 GB at Q8
 
 Note that every open family ships **variants at several sizes** (a Qwen release spans sub-billion to flagship scale, and Gemma 4 runs from 2 billion to 31 billion parameters), so "can I run Qwen?" is really "which Qwen fits my memory?"; the [open-weights section](index.md#open-weights-models) lists the families and the runners list the sizes.
 
-## Put it together: the estimator
+## Put It Together: The Estimator
 
 Pick a model, a quantization, and the hardware tier closest to yours. The widget applies exactly the arithmetic above (nothing is measured or promised; the parameter counts are verified from each model's published weights, and bandwidths are representative figures for the tier, checked July 2026):
 
@@ -110,7 +110,7 @@ Pick a model, a quantization, and the hardware tier closest to yours. The widget
 
 Worked example, by hand: gpt-oss-20b at Q4 is 21.5B × 0.57 ≈ 12.3 GB plus working memory, call it 14 GB, so it misses an 8 GB card entirely, fits a 16 GB card, and a 16 GB Mac only just, since macOS and open apps share the same memory, and on a 500 GB/s card the ceiling is 500 ÷ (3.6 × 0.57) ≈ 240 tokens per second: effectively instant, because only the active parameters move per token.
 
-## Practical notes
+## Practical Notes
 
 **Laptops throttle.** A laptop GPU's headline bandwidth assumes thermals it cannot sustain; after a few minutes of generation expect noticeably below the estimate, and expect fan noise and battery drain. Plugged in and cooled, gaming laptops remain perfectly capable local machines.
 
@@ -120,7 +120,7 @@ Worked example, by hand: gpt-oss-20b at Q4 is 21.5B × 0.57 ≈ 12.3 GB plus wor
 
 **Memory is unusually expensive right now.** Memory prices spiked through late 2025 and 2026 as manufacturers shifted production toward datacenter AI: a 32 GB DDR5 kit that cost $80 to $120 in 2025 listed near $375 in mid 2026, and analysts do not expect meaningful relief before late 2027 ([price tracking](https://www.tomshardware.com/pc-components/ram/ram-price-index-2026-lowest-price-on-ddr5-and-ddr4-memory-of-all-capacities), [market analysis](https://www.idc.com/resource-center/blog/global-memory-shortage-crisis-market-analysis-and-the-potential-impact-on-the-smartphone-and-pc-markets-in-2026/)). Graphics cards carry the same pressure. The practical advice follows from everything above: use the machine you have, favor mixture-of-experts models that fit it, and [rent cloud GPUs](local.md#when-your-machine-cannot-keep-up-renting-a-gpu) for the occasional heavy job rather than buying into a spiked market.
 
-## What you probably own
+## What You Probably Own
 
 | Your machine | What runs comfortably (Q4) | Expect |
 | --- | --- | --- |

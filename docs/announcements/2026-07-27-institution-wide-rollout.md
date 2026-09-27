@@ -1,4 +1,4 @@
-# The AUA AI Hub is open to the community
+# The AUA AI Hub Is Open to the Community
 
 *July 27, 2026*
 

@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Gemini Notebook: Grounded in Your Own Sources
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Widely used at AUA, which is why it has its own page</span>
+<span class="meta-chip">Everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Widely used at AUA, which is why it has its own page</span>
 
 Gemini Notebook is a research notebook that answers questions from the documents you upload, with a citation back to the passage, rather than from general knowledge of the web. Finding and quoting inside your own material is what it does best; every summary, study guide, or audio overview it generates from that material is a step further from the source and needs checking. (It was NotebookLM until Google renamed it on July 16, 2026 ([announcement](https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/)); same product, existing notebooks and links still work.)
 
@@ -17,7 +17,7 @@ Gemini Notebook is a research notebook that answers questions from the documents
 
 Two features reach beyond your uploads: Discover sources searches the web or your Google Drive, and Deep Research browses on your behalf. Both add what they find as sources you can see and check, so answers stay cited, but the material is no longer only what you chose. Opening the same notebook from inside the Gemini app is different again: answers there are not limited to your sources.
 
-## What it is for
+## What It Is For
 
 Grounding pays off when you need to **find and use something specific inside a fixed set of documents**. That is the job it is built for, and studies across several clinical specialties have found it more accurate than a general assistant working from memory when the right document is in the notebook.
 
@@ -29,7 +29,7 @@ In practice:
 
 Answers carry inline citations, and clicking one jumps to the passage in the source. Two caveats: Google notes that a very short source is cited as a whole document rather than a passage, and a citation being attached is not proof that the passage supports the sentence.
 
-## What grounding does not do
+## What Grounding Does Not Do
 
 How accurate any of this is on a given day depends on the current model and on what you put in the notebook, and it improves. Three limits are worth knowing anyway, because they follow from what the tool does rather than from how good the model is, and they have held so far across every generation.
 
@@ -55,7 +55,7 @@ How accurate any of this is on a given day depends on the current model and on w
 
     The published education research is thin. Nearly all of it is small and single-site, with one two-institution pharmacy study as the exception ([pharmacy study](https://doi.org/10.1016/j.ajpe.2025.101925)), and none has measured learning outcomes against a control group. The tool is documented as a time saver and a well-liked format, not as a proven learning tool.
 
-## Setting one up
+## Setting One Up
 
 The pattern that works is one notebook per course, not one per session.
 
@@ -66,13 +66,13 @@ The pattern that works is one notebook per course, not one per session.
 
 For the general version of this habit across other tools, see [Standing Setups](standing-setups.md).
 
-## Limits, plans, and the student offer
+## Limits, Plans, and the Student Offer
 
 The free tier gives 100 notebooks, 50 sources per notebook, 50 chat queries a day, and 3 audio overviews a day, with each source capped at 500,000 words or 200 megabytes ([limits](https://support.google.com/gemininotebook/answer/16213268)). For most coursework that is enough.
 
 Google is running a student offer of 12 months free on a paid plan, which raises those limits, though its terms warn that promotional limits may differ from those of a paid subscription. Two details matter locally. The plan depends on the country of your institution, and for an institution in Antigua and Barbuda that is Google AI Plus, not the AI Pro tier advertised to United States students ([offer](https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/)). It also requires you to be 18 or over, to verify student status through a third-party service, and to enter a payment method that begins charging automatically when the year ends, so it is a free year rather than a free plan, and it must be redeemed by December 31, 2026 ([terms](https://one.google.com/offer/studentoffer8)). Whether AUA is recognized by the verification service is something you will discover at sign-up; we have not tested it.
 
-## What Google does with what you upload
+## What Google Does with What You Upload
 
 AUA does not provide institutional Google accounts, so everyone here is on a personal one. Two facts are worth knowing, because the interface does not surface them:
 

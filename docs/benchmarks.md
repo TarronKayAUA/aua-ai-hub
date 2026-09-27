@@ -8,7 +8,7 @@ How do you know whether one artificial intelligence (AI) model is better than an
 
 <img class="section-banner" src="../assets/section-benchmarks.svg" alt="">
 
-## How to read a leaderboard
+## How to Read a Leaderboard
 
 Three things to keep in mind when reading benchmark numbers:
 
@@ -18,7 +18,7 @@ Three things to keep in mind when reading benchmark numbers:
 
 For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics/glossary.md#eval), and [leaderboard](basics/glossary.md#leaderboard) in the glossary.
 
-## The leaderboards worth knowing
+## The Leaderboards Worth Knowing
 
 <div class="grid cards" markdown>
 
@@ -46,7 +46,7 @@ For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics
 
     [Visit BenchLM](https://benchlm.ai/){ .card-link }
 
-- :material-account-group:{ .lg .middle } __Arena (formerly LMArena)__
+- :material-account-group:{ .lg .middle } __Arena (Formerly LMArena)__
 
     ---
 
@@ -56,7 +56,7 @@ For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics
 
 </div>
 
-## LiveBench snapshot
+## LiveBench Snapshot
 
 --8<-- "includes/livebench.md"
 

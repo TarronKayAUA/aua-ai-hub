@@ -2,7 +2,7 @@
 last_reviewed: 2026-09-03
 ---
 
-# My favorite game was not a game
+# My Favorite Game Was Not a Game
 
 <span class="meta-chip">For anyone evaluating an AI-built system</span><span class="meta-chip">About 14 minutes</span> <span class="meta-note">A worked example from outside medicine, kept here because the measurement problems are the same ones clinical data poses.</span>
 
@@ -14,7 +14,7 @@ Nothing had crashed. No test had failed. The system was working exactly as desig
 
 That single screen is the most useful thing that happened in this project, and everything below is really a longer version of it.
 
-## What I built, and what I did not do
+## What I Built, and What I Did Not Do
 
 In August 2026 I built a media tracker for my family. It follows films, television, games and books across six people in four countries, tells you the day the thing you are waiting for actually arrives, and answers the question that ruins more evenings than any other: what should we watch tonight, for whoever happens to be in the room.
 
@@ -37,7 +37,7 @@ I did not write any of it. Not a line. Across some sixteen hundred messages I ne
 
 The row I want you to look at twice is not the last one. It is the pair in the middle. There is slightly more code checking this system than there is system, and that inversion is not an accident of enthusiasm. It is the entire reason I am able to tell you anything about whether the thing works.
 
-## The failures that do not announce themselves
+## The Failures That Do Not Announce Themselves
 
 A crash is a gift. A crash is loud, somebody phones you about it within the hour, and you know precisely where to look.
 
@@ -64,7 +64,7 @@ The second is that a test which checks nothing counts as a failure. This sounds 
 
 The third is the one I would tattoo on something. **Every test must be seen to fail.** Write it, then deliberately break the code underneath it, watch it go red, then put the code back. A test you have never seen fail is not a test. It is a claim about a test.
 
-## Six ways to be lied to by a passing check
+## Six Ways to Be Lied to by a Passing Check
 
 That last habit earned its keep in a way I did not anticipate.
 
@@ -81,7 +81,7 @@ Every single one of those was found by deliberately breaking the code to see whe
 
 That is worth sitting with. In each case the test reads correctly. The code reads correctly. Only the relationship between them is wrong, and a relationship is not a thing you can see by looking at either end of it. Which is oddly liberating if, like me, you cannot read either end of it in the first place.
 
-## The thing that was measuring the wrong thing
+## The Thing That Was Measuring the Wrong Thing
 
 Which brings us back to the frame rate counter.
 
@@ -97,7 +97,7 @@ The same mistake kept arriving in different costumes. The timestamp on a rating 
 
 None of these were bugs. That is the part I want to be clear about. Every one of them shipped as working, tested, entirely correct software.
 
-## The man who cannot say no
+## The Man Who Cannot Say No
 
 The most interesting defect in the system turned out to be me.
 
@@ -117,7 +117,7 @@ The fix was to stop asking for verdicts and start asking for choices. Show me tw
 
 Two thousand sixty-one forced comparisons later, the bottom of my appetite list finally contained real negatives: things sitting at 70 to 75 in my ratings that I plainly never want to see again. The first honest bad news the system had ever held about me.
 
-## Agreeing to be wrong in advance
+## Agreeing to Be Wrong in Advance
 
 That instrument cost forty minutes of relentless tapping, and I want to describe the two things that make me believe it rather than merely enjoy it.
 
@@ -138,7 +138,7 @@ And none of this was possible at first, because the application had cheerfully s
 <figcaption>The least clever screen here, and the one everything else depends on. Note the third button, and the permission to skip.</figcaption>
 </figure>
 
-## What the measurements said when I stopped flattering myself
+## What the Measurements Said When I Stopped Flattering Myself
 
 An audit in September asked the rude question: is the personalization actually doing anything?
 
@@ -148,7 +148,7 @@ Elsewhere, a feature that blended the model's ranking with the statistical one l
 
 Twice I was convinced the AI prompt was bloated and expensive. Twice a fair race showed the cheaper version was worse. The only saving I ever actually found came from reading the bill instead of reasoning about it: a caching feature designed to make repeated questions cheap had spent 42 cents to save rather less than half a penny, because it turns out every night's question is about a different night.
 
-## What I never handed over
+## What I Never Handed Over
 
 Nearly everything technical was delegated. The database, the deployment, the statistics, the tests, the styling, the choice of platform, the wording of every prompt.
 
@@ -164,7 +164,7 @@ And what the family is asked to do stayed with me, mostly because I kept watchin
 
 Last, and least comfortably: the facts about myself that invalidate the data. That I only watch things I have already researched, so my ratings bunch up at the top of the scale. That I essentially never rewatch anything, which makes "would you watch it again" a useless question to ask me. No amount of analysis would have recovered either of those. They had to be confessed.
 
-## What transfers
+## What Transfers
 
 - Ask what a real person would actually see if this broke silently, and put your effort where the answer is "nothing at all".
 - Write down the result that would make you abandon the idea, before you collect the data that might.

@@ -22,9 +22,9 @@ Share prompts that work for you and vote on what others have shared. Browse ever
 
 Prefer not to post publicly? Send prompts directly; contact information is on the [About page](../about.md).
 
-## About these prompts
+## About These Prompts
 
-### What the policy says about what you paste { #what-stays-out }
+### What the Policy Says about What You Paste { #what-stays-out }
 
 The prompts carry no data rules of their own; the [Artificial Intelligence (AI) Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information, student records, and other sensitive material. In practice, a case or a piece of student work rarely needs names, ID numbers, dates, or places, and the prompts work just as well without them.
 

@@ -2,13 +2,13 @@
 last_reviewed: 2026-09-01
 ---
 
-# Standing Setups: Assistants that Remember
+# Standing Setups: Assistants That Remember
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Longer if you build your first project as you read</span>
+<span class="meta-chip">Everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">Longer if you build your first project as you read</span>
 
 [Getting Better Answers](../basics/better-answers.md) explains the three levers that decide output quality: context, memory, and standing instructions. This page is about making the third lever permanent. If you find yourself re-explaining your course, your project, or your preferences at the start of every conversation, you are doing setup work that the tools are designed to hold for you. Set it up once, and every future session starts already knowing your job.
 
-## The three containers
+## The Three Containers
 
 | Container | Where it lives | What persists | Best for |
 | --- | --- | --- | --- |
@@ -40,7 +40,7 @@ There is a fourth container worth knowing about, and it works the other way arou
 
 Claude keeps each project's memory separate from your other work. In ChatGPT, do not count on context carrying from one chat to the next unless it is in the project's sources. OpenAI's own guidance is to put rules that must always apply in the instructions rather than relying on automatic memory: "Treat memories as a helpful recall layer, not as the only source for rules that must always apply."
 
-## Worked pattern: a course assistant
+## Worked Pattern: A Course Assistant
 
 The highest-value standing setup for faculty is one project per course:
 
@@ -53,7 +53,7 @@ Students can run the same pattern in reverse: a project per course, lecture note
 
 The same shape serves research: one project per manuscript or study, with your appraised paper set as knowledge (the [literature review playbook](../playbooks/literature-reviews.md)'s synthesis step, made permanent) and the project instructions carrying your reporting guideline and journal target.
 
-## Folder briefs: standing instructions for agents
+## Folder Briefs: Standing Instructions for Agents
 
 Agent interfaces have their own version, and it is just a text file. Claude Code reads `CLAUDE.md` files (a personal one in the `.claude` folder of your home directory applies everywhere; a `CLAUDE.md` in the working folder applies to work there), and Codex reads `AGENTS.md` files the same way (a global one in the `.codex` folder of your home directory, then per-folder ones), before doing any work. What belongs in one is what you would otherwise repeat: where things are, what conventions to follow, the "always do X" rules. Two practical notes from Anthropic's guidance: Claude Code can draft a starting brief for you (run `/init` in a folder and it drafts one from what it finds), and the brief should stay short, since the docs recommend under 200 lines; a brief the length of a policy manual stops being read carefully, by models as by people.
 
@@ -82,7 +82,7 @@ The heuristic for what to add: **when the agent makes the same mistake twice, or
 <figcaption>Layered, not merged: the broad rules travel with you, the specific ones live with the work, and repeated feedback flows back in.</figcaption>
 </figure>
 
-## Keeping a setup accurate
+## Keeping a Setup Accurate
 
 - Instructions are advice to the model, not enforcement. A project instructed to answer only from its knowledge will still occasionally reach beyond it; spot-check citations against the uploaded materials, especially early on.
 - Projects accumulate. Review a long-lived project's knowledge each term; a stale syllabus in the knowledge base produces confidently outdated answers, which is worse than no assistant at all.

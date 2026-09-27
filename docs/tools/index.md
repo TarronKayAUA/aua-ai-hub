@@ -10,7 +10,7 @@ Artificial intelligence (AI) tools for teaching, study, research, and clinical w
 
 <div class="shelf__filters tool-filters" markdown>
 
-## Find tools by task
+## Find Tools by Task
 
 <!-- render:tool-chooser -->
 
@@ -26,7 +26,7 @@ Unless a card shows another status, a tool is Listed: in the directory, not revi
 For a whole task walked through end to end, including how to check the result, the [step-by-step guides](../playbooks/index.md) take one at a time, and the [Prompt Library](../prompts/index.md) holds the templates they draw on.
 { .tool-crosslink }
 
-## Open-weights models
+## Open-Weights Models
 
 The assistants above run in their vendor's cloud. Open-weights models are different: the model file itself is published for anyone to download and run on their own hardware, so nothing you type leaves your machine. The Local Models tools above are the usual way to run them; [Running Models Locally](local.md) is a practical walkthrough. Capability rankings shift quickly; the [Benchmarks page](../benchmarks.md) tracks current standings. Model families carry a license instead of a governance status, because there is no service operator to have a relationship with. The license named on each entry says what you may do with a model, such as commercial use or redistribution.
 
@@ -34,7 +34,7 @@ Open-weights model families and notable single releases; each entry shows the da
 
 <!-- render:open-models -->
 
-## What the statuses mean, and how to request a review {: #reading-the-directory }
+## What the Statuses Mean, and How to Request a Review {: #reading-the-directory }
 
 Each status describes where the institution stands with a tool, not a rating of its quality. Anyone at AUA can ask the AI Committee to review a tool through [How Tools Are Reviewed](../governance/review-process.md).
 

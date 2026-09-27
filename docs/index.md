@@ -42,19 +42,19 @@ hide:
 
 <section class="home-tasks" aria-labelledby="common-tasks" markdown>
 
-## Common tasks {: .hp-hidden #common-tasks data-search-exclude="true" }
+## Common Tasks {: .hp-hidden #common-tasks data-search-exclude="true" }
 
 <div class="grid cards" markdown>
 
-- ### :material-head-question-outline:{ .home-icon } [Practice questions from your slides](prompts/index.md#nbme-style-question-tutor){ .card-link } {: .card-title data-search-exclude="true" }
+- ### :material-head-question-outline:{ .home-icon } [Practice Questions from Your Slides](prompts/index.md#nbme-style-question-tutor){ .card-link } {: .card-title data-search-exclude="true" }
 
     Prompt for students
 
-- ### :material-presentation:{ .home-icon } [Prepare a lecture](playbooks/lecture-prep.md){ .card-link } {: .card-title data-search-exclude="true" }
+- ### :material-presentation:{ .home-icon } [Prepare a Lecture](playbooks/lecture-prep.md){ .card-link } {: .card-title data-search-exclude="true" }
 
     Guide for faculty
 
-- ### :material-file-document-edit-outline:{ .home-icon } [Draft a memo or minutes](playbooks/admin-drafting.md){ .card-link } {: .card-title data-search-exclude="true" }
+- ### :material-file-document-edit-outline:{ .home-icon } [Draft a Memo or Minutes](playbooks/admin-drafting.md){ .card-link } {: .card-title data-search-exclude="true" }
 
     Guide for faculty and staff
 
@@ -71,7 +71,7 @@ hide:
 
 <section class="home-start" markdown>
 
-## Start here {: data-search-exclude="true" }
+## Start Here {: data-search-exclude="true" }
 
 <div class="grid cards" markdown>
 
@@ -116,7 +116,7 @@ hide:
 
 <section class="timely-block" markdown>
 
-## Latest in medical education {: data-search-exclude="true" }
+## Latest in Medical Education {: data-search-exclude="true" }
 
 <!-- timely:news 3 -->
 
@@ -126,7 +126,7 @@ hide:
 
 <section class="timely-block" markdown>
 
-## Coming up {: data-search-exclude="true" }
+## Coming Up {: data-search-exclude="true" }
 
 <!-- timely:coming-up 1 -->
 
@@ -142,7 +142,7 @@ hide:
 
 <section class="home-short" markdown>
 
-## Short on time? {: data-search-exclude="true" }
+## Short on Time? {: data-search-exclude="true" }
 
 <div class="door-rows" markdown>
 

@@ -229,7 +229,7 @@ def _panel(page, files, ids: list[str], ready: list[str], slot: str) -> str:
         if slot:
             raise ValueError(f"layout_guides: {src} has both prompts and an `action:` "
                              "button; the panel's Copy button is the page's action")
-        label = "The prompt this guide uses" if len(ids) == 1 else "The prompts this guide uses"
+        label = "The Prompt This Guide Uses" if len(ids) == 1 else "The Prompts This Guide Uses"
         rows = [_prompt_row(pid, i, ready[i] if i < len(ready) else None, page, files)
                 for i, pid in enumerate(ids)]
         directory = _url(DIRECTORY, page, files)

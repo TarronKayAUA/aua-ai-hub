@@ -51,9 +51,9 @@ All seven modules take <span data-learn-minutes="sum:1-7">about 75 minutes</span
 <div class="route-stage route-stage--pick" markdown>
 <p class="route-stage-head"><span class="route-stage-num">Stage 2</span><span class="route-stage-name">Your Work</span><span class="route-stage-note" data-learn-minutes="each:4-6">Pick what matches your role, 10 to 15 minutes each</span></p>
 
-- <span class="route-n">4</span> <span class="route-text">[Teaching and Assessment](teaching-assessment.md) <span class="route-for">For faculty</span></span> <span class="route-min">15 min</span>
-- <span class="route-n">5</span> <span class="route-text">[Research and Scholarship](research.md) <span class="route-for">For faculty and student researchers</span></span> <span class="route-min">10 min</span>
-- <span class="route-n">6</span> <span class="route-text">[Clinical Contexts](clinical.md) <span class="route-for">For students and clinical faculty</span></span> <span class="route-min">10 min</span>
+- <span class="route-n">4</span> <span class="route-text">[Teaching and Assessment](teaching-assessment.md) <span class="route-for">Faculty</span></span> <span class="route-min">15 min</span>
+- <span class="route-n">5</span> <span class="route-text">[Research and Scholarship](research.md) <span class="route-for">Faculty & Student Researchers</span></span> <span class="route-min">10 min</span>
+- <span class="route-n">6</span> <span class="route-text">[Clinical Contexts](clinical.md) <span class="route-for">Students & Clinical Faculty</span></span> <span class="route-min">10 min</span>
 
 </div>
 
@@ -74,7 +74,7 @@ All seven modules take <span data-learn-minutes="sum:1-7">about 75 minutes</span
 
 <div class="learn-shelf" markdown>
 
-## The reference shelf
+## The Reference Shelf
 
 Five pages that sit alongside the modules.
 
@@ -88,7 +88,7 @@ Five pages that sit alongside the modules.
 
 </div>
 
-## About this pathway
+## About This Pathway
 
 The university's [AI Responsible Use Policy](../governance/policy.md) commits AUA to providing training resources on responsible AI use. This pathway is the AI Hub's contribution to that commitment, maintained by the Associate Dean of AI in Medical Education.
 

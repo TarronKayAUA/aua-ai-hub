@@ -26,52 +26,52 @@ Each step-by-step guide walks one job end to end. Artificial intelligence (AI) c
 
 -   ## :material-school:{ .lg .middle } Teaching {: #teaching }
 
-    - <span class="row-tag">Start here</span> [Preparing a Lecture](playbooks/lecture-prep.md) <span class="row-sub">Objectives to a session plan</span>
+    - <span class="row-tag">Start Here</span> [Preparing a Lecture](playbooks/lecture-prep.md) <span class="row-sub">Objectives to a session plan</span>
     - [Writing and Vetting Exam Questions](playbooks/exam-items.md) <span class="row-sub">Multiple-choice questions (MCQs), drafted and flaw-checked</span>
     - [Your Syllabus AI Statement](playbooks/syllabus-statement.md) <span class="row-sub">Templates for what students may use</span>
     - [Feedback on Student Writing](playbooks/writing-feedback.md) <span class="row-sub">Rubric-grounded comments you send as your own</span>
-    - [Suspected AI use and detectors](basics/misconceptions.md#ai-detectors-can-reliably-catch-ai-generated-writing) <span class="row-sub">What a detector flag does and does not show</span>
     - [AI-Generated Images in Teaching](playbooks/ai-images.md) <span class="row-sub">Figures, and why generated anatomy misleads</span>
+    - [Suspected AI use and detectors](basics/misconceptions.md#ai-detectors-can-reliably-catch-ai-generated-writing) <span class="row-sub">What a detector flag does and does not show</span>
 
 -   ## :material-flask:{ .lg .middle } Research {: #research }
 
-    - <span class="row-tag">Start here</span> [Reviewing the Literature](playbooks/literature-reviews.md) <span class="row-sub">From question to appraised evidence</span>
+    - <span class="row-tag">Start Here</span> [Reviewing the Literature](playbooks/literature-reviews.md) <span class="row-sub">From question to appraised evidence</span>
     - [AI for Research](tools/research.md) <span class="row-sub">Tools by stage, and what AUA licenses</span>
     - [Where to disclose AI use in a manuscript](tools/research.md#judged-by-the-same-rulers) <span class="row-sub">Reporting standards and journal rules</span>
     - [Running Models Locally](tools/local.md) <span class="row-sub">AI on your own computer, for privacy</span>
     - [Module 5: Research and Scholarship](pathway/research.md) <span class="row-sub">Integrity, peer review, and participant data</span>
 
--   ## :material-briefcase:{ .lg .middle } Staff and administration {: #staff-and-administration }
+-   ## :material-briefcase:{ .lg .middle } Staff and Administration {: #staff-and-administration }
 
-    - <span class="row-tag">Start here</span> [Administrative Drafting](playbooks/admin-drafting.md) <span class="row-sub">Memos, minutes, and reports</span>
-    - [The policy in five minutes](pathway/rules.md) <span class="row-sub">Module 3: a short guide to the AI Responsible Use Policy</span>
+    - <span class="row-tag">Start Here</span> [Administrative Drafting](playbooks/admin-drafting.md) <span class="row-sub">Memos, minutes, and reports</span>
     - [Letters of recommendation](playbooks/residency-application.md#for-faculty-writing-letters) <span class="row-sub">Drafting with AI while you stay the author</span>
+    - [The policy in five minutes](pathway/rules.md) <span class="row-sub">Module 3: a short guide to the AI Responsible Use Policy</span>
 
 </div>
 
 <div class="grid cards hub-also" markdown>
 
--   ## Also on this site {: #also-on-this-site }
+-   ## Also on This Site {: #also-on-this-site }
 
     - [All step-by-step guides](playbooks/index.md)
-    - [AI Responsible Use Policy](governance/policy.md)
     - [Prompt Library](prompts/index.md)
     - [Tool Directory](tools/index.md)
     - [Request a tool review](governance/review-process.md)
+    - [AI Responsible Use Policy](governance/policy.md)
 
 </div>
 
-## Start with the basics
+## Start with the Basics
 
 The first four modules of the literacy pathway take about 45 minutes and cover the mechanism, the craft, and the policy: [How AI Works](pathway/how-ai-works.md), [Prompting Fundamentals](pathway/prompting.md), [The Policy in Practice](pathway/rules.md), and [Teaching and Assessment](pathway/teaching-assessment.md). The [full pathway](pathway/index.md) adds research, clinical, and agent modules.
 
-## Your work, your judgment {: #the-lines-that-never-move }
+## Your Work, Your Judgment {: #the-lines-that-never-move }
 
 Whatever a tool contributed, the work you sign is yours. Read AI-drafted teaching material as its content expert before students see it: models make confident errors, and students are the readers least placed to catch them.
 
 Most drafting needs no identifying details at all. A memo about a process, a vignette built from invented facts, or feedback on an essay with the author's name left off usually gives the model enough to help with structure and wording, and any specifics you add yourself at the end stay with you. The [AI Responsible Use Policy](governance/policy.md) is the reference for patient, student, and personnel information, and [Module 3: The Policy in Practice](pathway/rules.md) is a five-minute guide to it.
 
-## More ways to work
+## More Ways to Work
 
 ??? note "Team-based learning, exam statistics, slides, and more"
 
@@ -83,10 +83,10 @@ Most drafting needs no identifying details at all. A memo about a process, a vig
     - **A stack of your own documents:** [Gemini Notebook (formerly NotebookLM)](tools/gemini-notebook.md) gives cited answers from your uploads; it is reliable for retrieval and less so for summaries. See also [other tools that work from your documents](tools/index.md?task=own_documents).
     - **Better answers from any tool:** [Getting Better Answers](basics/better-answers.md) covers the three levers: context, memory, and standing instructions.
 
-## Staying current
+## Staying Current
 
 [This Week](news/this-week.md) rolls up the last seven days of curated news, videos, and podcasts. A weekly digest of highlights lands every Friday in the [archive](news/archive/index.md), and the [Benchmarks section](benchmarks.md) tracks how current models compare. The [Conferences](conferences.md) and [Opportunities](opportunities.md) pages carry verified dates for meetings and open calls.
 
-## Shape the site
+## Shape the Site
 
 The [Committee Work and Updates page](governance/updates.md) shows what the AI Committee is working on. More guides are planned; to request one, or to report anything wrong, missing, or confusing, use the [feedback form](https://forms.office.com/r/5a8RCi2YKP) (five questions, about two minutes). Prompts that work for you belong in the [Prompt Exchange](prompts/exchange.md), and contributions that hold up in testing can be promoted into the library with credit.

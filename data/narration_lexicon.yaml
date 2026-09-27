@@ -50,4 +50,11 @@ engines:
       PDFs: "P D F's"
 
   speechify:
-    terms: {}
+    terms:
+      # Heard wrong 2026-09-27, after headings moved to title case: in the
+      # misconceptions heading "If I Cannot Find a Good Diagram, I Can Have AI
+      # Generate One", the capital C made the voice stress "Can" so it came out
+      # as "can't" (a careful transcription heard "can't"; the sentence-case
+      # recording before it was heard as "can"), reversing the statement.
+      # Reading it in lower case restores the sentence-case stress.
+      "I Can Have": "I can have"

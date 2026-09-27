@@ -4,11 +4,11 @@ last_reviewed: 2026-09-01
 
 # AI Agents
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">The field guide; the hands-on pages are linked at the end</span>
+<span class="meta-chip">Everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">The field guide; the hands-on pages are linked at the end</span>
 
 An artificial intelligence (AI) chat assistant answers you. An agent acts for you: given a goal, it plans steps, uses tools (a browser, your files, a terminal, connected apps), checks its own progress, and keeps going until the task is done or it needs your input. That difference, from answering to acting, is a major shift in how these systems are used, and it changes both what you can delegate and what you must supervise.
 
-## How an agent works
+## How an Agent Works
 
 Under the hood an agent is the same kind of model you chat with, run in a loop with three additions: **tools** it may call (search the web, read a file, run code, click a button), **permissions** that define what it may touch, and a **stopping rule** for when to report back. The model proposes an action, the system executes it, the result feeds back in, and the loop continues. Nothing mystical is added; the capability and the failure modes are both the chat model's, amplified by the ability to act.
 
@@ -36,11 +36,11 @@ Under the hood an agent is the same kind of model you chat with, run in a loop w
 <figcaption>The same model you chat with, run in a loop with tools, permissions, and a stopping rule.</figcaption>
 </figure>
 
-## What they are good and bad at
+## What They Are Good and Bad At
 
 Agents shine on tasks that are tedious but verifiable: assembling a document from scattered sources, reformatting and cross-checking data, multi-step web research with a concrete deliverable, drafting and revising across many files. They remain weak where a wrong step is costly and hard to check: judgment calls, anything requiring genuine domain expertise to evaluate, and long chains where an early error compounds silently. The practical rule mirrors the rest of this site: delegate the assembly, keep the judgment.
 
-## What to watch for
+## What to Watch For
 
 Two risks matter more for agents than for chat:
 
@@ -49,7 +49,7 @@ Two risks matter more for agents than for chat:
 
 The installable version of the same problem is a skill: a file of instructions an agent follows with whatever access you have already granted, which is why the [Skills page](skills.md) explains how to judge a skill someone else wrote. You remain accountable for what an agent does on your behalf, and an agent can read whatever you give it access to, so scoping that access is the dependable protection: a folder holding only the files a task needs, looked through before you open it, keeps everything else out of reach, including anything the [AI Responsible Use Policy](../governance/policy.md#responsible-use) covers, such as patient information and student records.
 
-## The agents
+## The Agents
 
 The [Agents category in the tools directory](index.md#agents) carries every entry with its status and cost. Below, each agent gets its own section: what it is, where it lives, one verified video walkthrough (official-channel videos where they suit a first-time viewer), and its official starting documentation. Video links reviewed September 2026; tutorials in this space age within months, so check a video's date against the tool's current version.
 
@@ -111,7 +111,7 @@ A web browser with the agent built in, acting across your open tabs and signed-i
 
 More: [Comet](https://www.perplexity.ai/comet) and its [getting started guide](https://www.perplexity.ai/comet/gettingstarted).
 
-### OpenClaw (open source)
+### OpenClaw (Open Source)
 
 The self-hosted path: an open-source personal agent you run on your own hardware, connected to a model of your choice and reached through the messaging apps you already use. It gives you the most control on this page, and with it the setup work: its permissions are whatever you grant it, so choosing them is part of installing it. It suits people comfortable running their own software.
 
@@ -119,21 +119,13 @@ The self-hosted path: an open-source personal agent you run on your own hardware
 
 More: [OpenClaw](https://openclaw.ai) and its [documentation](https://docs.openclaw.ai).
 
-## Where to start
+## Where to Start
 
 If you have never used an agent, start with ChatGPT Work or Cowork on a task you can fully verify: assembling a comparison table from web sources, or reorganizing a folder of documents you know well. The [Your First Agent Session](first-session.md) walkthrough uses Claude Code or Codex instead, because both work in a folder you choose and show you each permission prompt; the same habits carry over to Cowork and ChatGPT Work. Watch what it does, note where it asks permission, and calibrate from there. The [Prompting Fundamentals module](../pathway/prompting.md) applies doubly here: agents reward precise goals, stated constraints, and explicit deliverables.
 
 This page is the field guide; the rest of the site carries the working layer:
 
 <div class="grid cards" markdown>
-
-- :material-compare:{ .lg .middle } __Choosing Your Interface__
-
-    ---
-
-    Compares chat, working sessions, and code agents, and explains the economics.
-
-    [Compare the rooms](interfaces.md){ .card-link }
 
 - :material-school:{ .lg .middle } __Working with Agents__
 
@@ -142,6 +134,14 @@ This page is the field guide; the rest of the site carries the working layer:
     Module 7 of the pathway: the 12-minute concept primer.
 
     [Read the module](../pathway/working-with-agents.md){ .card-link }
+
+- :material-compare:{ .lg .middle } __Choosing Your Interface__
+
+    ---
+
+    Compares chat, working sessions, and code agents, and explains the economics.
+
+    [Compare the rooms](interfaces.md){ .card-link }
 
 - :material-play-circle:{ .lg .middle } __Your First Agent Session__
 

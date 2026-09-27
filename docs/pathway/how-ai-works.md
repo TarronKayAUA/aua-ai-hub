@@ -4,15 +4,15 @@ last_reviewed: 2026-09-01
 
 # Module 1: How AI Works
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span>
+<span class="meta-chip">Everyone</span><span class="meta-chip">About 10 minutes</span>
 
-## What you will be able to do
+## What You Will Be Able to Do
 
 - Explain, in one sentence each, what a large language model (LLM) is and how it produces text.
 - Explain why these systems sometimes state false things confidently, and why that is a feature of how they work rather than an occasional glitch.
 - State two practical consequences of knowledge cutoffs and context windows for your own use.
 
-## The core idea
+## The Core Idea
 
 A large language model is a system trained on enormous amounts of text to do one thing: predict the next small piece of text, over and over, until an answer takes shape. Everything impressive (fluent explanations, working code, a differential diagnosis discussion) and everything that goes wrong (confident fabrication, invented citations) follows from that single mechanism. The model is not consulting a database of facts. It is producing the most plausible continuation of the conversation, and most of the time the most plausible continuation is also true. When it is not, the output looks exactly as confident.
 
@@ -46,7 +46,7 @@ Three consequences worth internalizing:
 <figcaption>Everything impressive and everything that goes wrong with these systems follows from the same mechanism.</figcaption>
 </figure>
 
-## Self-check
+## Self-Check
 
 ??? question "A colleague says their chatbot 'looked up' an answer in its database and so it must be right. What is wrong with that mental model?"
     The model did not look anything up (unless it explicitly ran a web search). It generated the most statistically plausible continuation of the conversation from patterns learned in training. Plausible usually overlaps with true, but nothing in the mechanism guarantees it, so the answer needs verification like any unsourced claim.
@@ -57,7 +57,7 @@ Three consequences worth internalizing:
 ??? question "When is the model's confident tone evidence that its answer is correct?"
     Never. Tone is a property of the text generation, not of the underlying accuracy. Treat confidence and correctness as fully independent until verified.
 
-## Going deeper
+## Going Deeper
 
 - [How LLMs Work](../basics/how-llms-work.md): the same mechanics, one level down (already linked above; it rewards a second pass).
 - [Common Misconceptions](../basics/misconceptions.md): calibrating trust by task.

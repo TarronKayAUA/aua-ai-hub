@@ -24,7 +24,7 @@
 #     beside the library's Copy button for readers who copy without opening
 #     the prompt. The build fails if the sentence is not in the notes.
 
-- title: Literature screening assistant
+- title: Literature Screening Assistant
   tagline: Second-screens titles and abstracts against your stated inclusion criteria
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -112,7 +112,7 @@
     - "recheck N": re-screen abstract N from scratch against the frozen
       rubric.
 
-- title: Single best answer item writer
+- title: Single Best Answer Item Writer
   tagline: Drafts exam-quality single best answer items from your learning objectives
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -234,7 +234,7 @@
     acute decompensated heart failure.
 
 # Added 2026-09-23; provenance in the note above Clinical reasoning partner.
-- title: Team-based learning session builder
+- title: Team-Based Learning Session Builder
   tagline: "Builds a team-based learning session: scratch-card readiness tests and application cases"
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -533,7 +533,7 @@
       or facilitator, with the current draft number, so the two copies can
       be matched.
 
-- title: NBME-style question tutor
+- title: NBME-Style Question Tutor
   tagline: Drills National Board of Medical Examiners (NBME) style questions built from your own course materials
   # featured, also_for and note_visible: added 2026-09-25 for owner
   # sign-off (layout plan decision 14, and the independent review's advice
@@ -757,7 +757,7 @@
     - "what objective is this?" mid-question: do not answer until I have
       committed to a letter.
 
-- title: Item flaw checker
+- title: Item Flaw Checker
   tagline: Audits draft exam items against standard technical flaw criteria
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -770,10 +770,10 @@
   last_reviewed: 2026-06-12
   notes: >-
     Built for draft items, while they are still open to revision. For
-    statistics on live exam items, the Post-exam item analysis reader works
+    statistics on live exam items, the Post-exam Item Analysis Reader works
     from numbers alone. Clinical accuracy sits outside these structural
     checks; the [VERIFY] list marks what to check. Readiness questions from
-    the Team-based learning session builder are recall by design; say so
+    the Team-Based Learning Session Builder are recall by design; say so
     when you paste them.
   prompt: |
     ROLE
@@ -861,7 +861,7 @@
       generic example, not my item.
 
 # Added 2026-09-23; provenance in the note above Clinical reasoning partner.
-- title: Post-exam item analysis reader
+- title: Post-exam Item Analysis Reader
   tagline: Flags post-exam item statistics for exam committee review, from numbers only
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -1170,7 +1170,7 @@
     - Write for colleagues on an exam committee: plain language, no
       verdicts.
 
-- title: Analysis plan reviewer
+- title: Analysis Plan Reviewer
   tagline: Reviews a study's analysis plan before you run the analysis
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -1261,7 +1261,7 @@
 # here takes learning objectives verbatim, and nothing helped faculty
 # tighten them first. It diagnoses and revises the faculty member's own
 # objectives; it does not write a curriculum.
-- title: Learning objective sharpener
+- title: Learning Objective Sharpener
   tagline: Tightens draft learning objectives so each can be taught and assessed
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -1273,7 +1273,7 @@
   status: draft
   last_reviewed: 2026-09-23
   notes: >-
-    The Lecture outline builder and the Single best answer item writer
+    The Lecture Outline Builder and the Single Best Answer Item Writer
     both take your objectives verbatim, so a vague objective weakens
     everything built on it. Paste the objectives you already have; this
     checks and tightens them, it does not write your curriculum, and
@@ -1353,7 +1353,7 @@
     - "why N": explain the flags on objective N in two or three
       sentences.
 
-- title: Lecture outline builder
+- title: Lecture Outline Builder
   tagline: Turns objectives into a session outline with active-learning checks
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -1435,7 +1435,7 @@
       and flag slide-heavy sections.
 
 # Added 2026-09-23; provenance in the note above Clinical reasoning partner.
-- title: Critical appraisal second reader
+- title: Critical Appraisal Second Reader
   tagline: Checks your own appraisal of a paper, item by item, against its text
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -1711,7 +1711,7 @@
       intake check, counts, and lists.
 
 # Added 2026-09-23; provenance in the note above Clinical reasoning partner.
-- title: Rubric feedback drafter
+- title: Rubric Feedback Drafter
   tagline: Drafts quote-anchored observations on de-identified student writing against your frozen rubric
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -1927,7 +1927,7 @@
       keep in my own voice, and disclose my AI use as my syllabus AI
       statement says.
 
-- title: Research question coach
+- title: Research Question Coach
   tagline: Sharpens a vague idea into an answerable research question
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -2022,7 +2022,7 @@
     - "committee": the three sharpest questions a proposal committee
       would ask about this question, no answers.
 
-- title: Pre-submission reviewer
+- title: Pre-submission Reviewer
   tagline: A skeptical peer review of your manuscript before you submit
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -2121,7 +2121,7 @@
     - "again": re-audit after my revisions and compare against the
       previous flags, naming what improved and what did not.
 
-- title: Reporting guideline auditor
+- title: Reporting Guideline Auditor
   tagline: Maps a manuscript against its reporting guideline, item by item
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -2205,7 +2205,7 @@
     - "abstract": audit the abstract against the guideline's abstract
       extension when one exists, and say when none does.
 
-- title: Score report study planner
+- title: Score Report Study Planner
   tagline: Turns an exam performance report into an honest, interleaved study plan
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -2223,7 +2223,7 @@
     categories, so exam questions are not needed. Works with an NBME
     INSIGHTS export or score report text, an in-house category
     breakdown, or a question-level report; for in-house block exams, the
-    Study schedule builder plans day by day from your syllabus and
+    Study Schedule Builder plans day by day from your syllabus and
     teaching calendar. The score reports playbook covers the full
     workflow, including writing your own read of the report before you
     run this.
@@ -2324,7 +2324,7 @@
     - Keep the plan inside my stated hours. A plan I cannot follow
       teaches me to ignore plans.
 
-- title: Study plan progress check
+- title: Study Plan Progress Check
   tagline: Compares two reports and says honestly whether the plan is working
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -2335,10 +2335,10 @@
   audience: students
   status: draft
   last_reviewed: 2026-07-14
-  notes: The follow-up to the score report study planner, for after your
+  notes: The follow-up to the Score Report Study Planner, for after your
     next assessment. Paste the plan you were following and both reports,
     de-identified. Honest comparison first, revision second. If the plan
-    came from the Study schedule builder, take this verdict back to that
+    came from the Study Schedule Builder, take this verdict back to that
     chat and say "revise".
   prompt: |
     ROLE
@@ -2396,7 +2396,7 @@
 # remedial and keep-up plans, which produced a plan that carried a repeating
 # student through a remedial; the confidential exam blueprint those used is
 # deliberately not referenced, and resource entitlements are not named.
-- title: Study schedule builder
+- title: Study Schedule Builder
   tagline: Builds a day-by-day schedule for a teaching block or a dated exam
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -2414,8 +2414,8 @@
     score reports from this block with your name and student number removed.
     It works in two modes, keeping up through a block as it is taught or
     counting down to one dated exam such as a remedial. For NBME score
-    reports, use the Score report study planner; after your next
-    assessment, the Study plan progress check revises the plan.
+    reports, use the Score Report Study Planner; after your next
+    assessment, the Study Plan Progress Check revises the plan.
   prompt: |
     ROLE
     You are a study planner for a medical student. You build a
@@ -2553,7 +2553,7 @@
 # grounded in the attached lecture only, time-capped, with an
 # anti-drift reset command).
 
-- title: Lecture tutor
+- title: Lecture Tutor
   tagline: Teaches an attached lecture one objective at a time, checking you as it goes
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -2596,7 +2596,7 @@
     hold your position unless they support me. If I say "back to the
     protocol", return to this exact format.
 
-- title: Daily review sheet builder
+- title: Daily Review Sheet Builder
   tagline: Builds a detail-preserving review sheet with self-test questions from one lecture
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -2614,7 +2614,7 @@
     has become the trap of producing materials instead of practicing
     recall. Use it daily by covering the sheet and answering the ten
     questions from memory. The recall is the work, not the rereading.
-    The Missed-question debrief produces the missed-concepts list.
+    The Missed-Question Debrief produces the missed-concepts list.
   prompt: |
     Using the attached lecture slides, build me a daily review sheet.
     Organize it by the lecture's learning objectives. For each
@@ -2645,7 +2645,7 @@
 # nothing helped a student learn from the questions they missed. The
 # debrief works from the student's own account of each miss, because
 # question-bank and exam questions are licensed or secure material.
-- title: Flashcard builder
+- title: Flashcard Builder
   tagline: Turns one lecture into spaced-repetition flashcards you can import
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -2703,13 +2703,13 @@
     - "fewer": cut to the cards that test what the slides emphasize most,
       and list what was cut.
 
-- title: Missed-question debrief
+- title: Missed-Question Debrief
   tagline: Sorts the questions you missed by why you missed them, with a fix for each
   # use: drafted 2026-09-25 for owner sign-off
   use:
     - 'After a practice block or quiz, write a line or two about each question you missed, in your own words.'
     - 'Put your notes where the prompt asks for them, then paste it into a new chat.'
-    - 'Work on the pattern it finds, and paste the missed concepts it lists into the Daily review sheet builder.'
+    - 'Work on the pattern it finds, and paste the missed concepts it lists into the Daily Review Sheet Builder.'
   category: study_strategy
   audience: students
   status: draft
@@ -2718,7 +2718,7 @@
     After a practice block or a quiz, write a line or two about each
     question you missed, in your own words, since restating it is part of
     the exercise. The missed concepts it lists are ready to paste into the
-    Daily review sheet builder.
+    Daily Review Sheet Builder.
   prompt: |
     ROLE
     You are a study coach helping a medical student learn from the
@@ -2783,7 +2783,7 @@
 # application cases higher on Bloom's taxonomy). Each was drafted, then
 # reviewed independently for education accuracy and for safety and
 # robustness, revised, and checked for consistency with the library.
-- title: Clinical reasoning partner
+- title: Clinical Reasoning Partner
   tagline: Practice differentials on invented cases or your own abstracted encounters, with reasoning feedback
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -3082,7 +3082,7 @@
     - "back to the protocol": re-read these instructions and return to
       their exact format.
 
-- title: Mock residency interview
+- title: Mock Residency Interview
   tagline: Rehearses residency interviews one question at a time, then debriefs from your answers
   # use: drafted 2026-09-25 for owner sign-off
   use:
@@ -3403,7 +3403,7 @@
     - Debriefs speak to me directly, in the second person. In voice mode,
       speak the debrief in the same order, one or two sentences per part.
 
-- title: Personal statement critic
+- title: Personal Statement Critic
   tagline: Critiques a personal statement you wrote, with questions instead of rewrites
   # use: drafted 2026-09-25 for owner sign-off
   use:

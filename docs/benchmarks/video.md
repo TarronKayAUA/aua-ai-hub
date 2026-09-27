@@ -15,7 +15,7 @@ What separates video models in practice, and what to look past the overall rank 
 
 Audio is the newest frontier, with some arenas now ranking with and without generated sound.
 
-## The leaderboards worth knowing
+## The Leaderboards Worth Knowing
 
 <div class="grid cards" markdown>
 
@@ -53,7 +53,7 @@ Audio is the newest frontier, with some arenas now ranking with and without gene
 
 </div>
 
-## A note on medical use
+## A Note on Medical Use
 
 Everything on the [image generation page about medical contexts](image.md#medical-images-are-a-different-question) applies with more force here: there is no public benchmark for clinically accurate generated video, preference scores say nothing about anatomical or procedural correctness, and a fluent clip of a procedure can be confidently wrong in ways a non-expert will not catch. It is worth checking a generated clip for anatomical and procedural accuracy, yourself or with a colleague who knows the procedure, before using it in teaching.
 

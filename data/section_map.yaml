@@ -8,7 +8,7 @@
 # run of pages that sit directly in a tab is a group named by `loose:` below
 # (in order; the tab's own title when there are more runs than names). A
 # subsection holding one page is folded into such a run, unless it is named
-# under `groups:` here (Tools & Prompts' "Find a tool" is a group of one).
+# under `groups:` here (Tools & Prompts' "Find a Tool" is a group of one).
 # This file only gives a tab, a group or a page its icon (a Material Design
 # icon name, checked at build time), a short line of text, and a kind.
 #
@@ -29,6 +29,13 @@
 # page it opens; a page with no kind (the hubs, About) stays uncolored.
 # `label` is the word in the color key shown wherever the colors appear.
 # Rose is defined in the palette and held in reserve.
+# The default order when pages of different kinds are listed together
+# (ordering principle, owner approved 2026-09-27): logical order first, and
+# where nothing says otherwise, guides, then lessons, then prompts, then
+# tools. Used by generated lists ("Where it is used" on prompt pages); the
+# kinds table's own order below sets the Color key lines and is unchanged.
+order: [guide, lesson, prompt, tool, benchmark, news, governance]
+
 kinds:
   tool:
     label: Tool
@@ -51,7 +58,7 @@ kinds:
     token: violet
     description: The three leaderboard pages
   news:
-    label: News and events
+    label: News and Events
     token: coral
     description: News, the archive, conferences, opportunities and announcements
   governance:
@@ -62,13 +69,13 @@ kinds:
 tabs:
   "For Students":
     icon: account-school
-    loose: ["Guides for students"]
+    loose: ["Guides for Students"]
   "For Faculty & Staff":
     icon: human-male-board
   "Learn":
     icon: school-outline
     kind: lesson
-    loose: ["The seven modules", "When you finish"]
+    loose: ["The Seven Modules", "When You Finish"]
   "Tools & Prompts":
     icon: toolbox
   "News & Events":
@@ -78,10 +85,10 @@ tabs:
   "Governance":
     icon: scale-balance
     kind: governance
-    loose: ["Policy and committee"]
+    loose: ["Policy and Committee"]
   "About & Contact":
     icon: information-outline
-    loose: ["This site"]
+    loose: ["This Site"]
 
 # Groups. `blurb` is the group's one line on the Tools & Prompts landing;
 # `tag` is a short qualifier shown beside the group's name wherever the
@@ -94,25 +101,25 @@ tabs:
 # own leads (the Tools & Prompts groups get one from their titles; the build
 # checks every anchor exists).
 groups:
-  "Guides for students": {icon: account-school, kind: guide, noun: guides}
+  "Guides for Students": {icon: account-school, kind: guide, noun: guides}
   "Step-by-Step Guides": {icon: format-list-numbered, kind: guide}
-  "The seven modules": {icon: map-marker-path, route: true, noun: modules}
+  "The Seven Modules": {icon: map-marker-path, route: true, noun: modules}
   "Quick Reference": {icon: book-open-variant, anchor: the-reference-shelf}
-  "When you finish": {icon: flag-checkered}
-  "Find a tool":
+  "When You Finish": {icon: flag-checkered}
+  "Find a Tool":
     icon: magnify
     kind: tool
     blurb: Search the directory by task, and see where AUA stands with each tool.
-  "Use a prompt":
+  "Use a Prompt":
     icon: text-box-multiple-outline
     kind: prompt
     blurb: Copy a ready-made prompt, learn the craft, or see what colleagues share.
-  "Work with sources":
+  "Work with Sources":
     icon: file-document-multiple-outline
     kind: guide
     noun: guides
     blurb: Ask questions of your own documents and of the published literature.
-  "Work with agents":
+  "Work with Agents":
     icon: robot-outline
     kind: guide
     noun: guides
@@ -120,12 +127,12 @@ groups:
     blurb: Hand a whole task to an assistant that plans, acts, and reports back.
     module: pathway/working-with-agents.md
     steps: 2
-  "Run models locally":
+  "Run Models Locally":
     icon: laptop
     kind: guide
     noun: guides
     blurb: Run a model on your own computer, so what you type stays on it.
-  "Compare models":
+  "Compare Models":
     icon: podium
     kind: benchmark
     noun: leaderboards
@@ -133,9 +140,9 @@ groups:
   "News": {icon: newspaper-variant-outline, anchor: more-news-and-events}
   "Events": {icon: calendar-star, anchor: coming-up}
   "Announcements": {icon: bullhorn-outline}
-  "Policy and committee": {icon: scale-balance}
-  "This site": {icon: information-outline}
-  "Project Write-ups": {icon: notebook-edit-outline}
+  "Policy and Committee": {icon: scale-balance}
+  "This Site": {icon: information-outline}
+  "Project Write-Ups": {icon: notebook-edit-outline}
 
 pages:
   # For Students

@@ -2,7 +2,7 @@
 last_reviewed: 2026-09-03
 ---
 
-# When a check stops checking
+# When a Check Stops Checking
 
 <span class="meta-chip">For anyone curious how this site works</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">A worked example. Every number here was measured from the repository, and the [repository is public](https://github.com/TarronKayAUA/aua-ai-hub).</span>
 
@@ -34,7 +34,7 @@ That is the characteristic failure of this project. Not bad code. Not crashes. A
 
 I want to describe the whole system, because it is the site you are currently reading and every claim below can be verified against it. But the check that quietly stopped checking is the thread worth pulling.
 
-## What this is, and who wrote it
+## What This Is, and Who Wrote It
 
 This site publishes curated artificial intelligence news six times a day, maintains a [directory of tools](../tools/index.md), a [literacy pathway](../pathway/index.md), a [governance section](../governance/index.md) and a [conference calendar](../conferences.md), and costs nothing to host. It has been running since June 9, 2026.
 
@@ -64,7 +64,7 @@ Effectively all of the code was written by an AI assistant across a great many s
 
 I put that on the table immediately because a reader who assumed I had hand-written a feed aggregator would be misled, and because the interesting question was never whether a non-programmer can produce working software. Obviously they can now. The question is whether they can be trusted to run it afterwards.
 
-## Writing the rules before there was anything to break
+## Writing the Rules Before There Was Anything to Break
 
 The very first commit contains no pipeline. It contains a 312-line specification, a working-rules document and an empty site skeleton for them to govern.
 
@@ -72,7 +72,7 @@ Both files still govern the project three months later. The rules document opens
 
 Writing the constraints before the code was the single highest-leverage decision in the project, and it cost an afternoon. Every subsequent argument about whether something was permitted had somewhere to be settled, rather than being relitigated from scratch by two parties with no shared memory.
 
-## The algorithm turned out to be an essay
+## The Algorithm Turned Out to Be an Essay
 
 The most consequential machinery on this site decides which news items get published. I assumed, without ever quite examining the assumption, that this was code.
 
@@ -86,7 +86,7 @@ Around that document sit the gates the model cannot touch: a lookback window, a 
 
 The lesson I did not expect is that the most important artifact in the system is a piece of prose, and it needs reviewing exactly as carefully as code, because it behaves exactly like code.
 
-## What the robots may and may not touch
+## What the Robots May and May Not Touch
 
 Four systems run unattended, watching things I would otherwise have to check by hand: conference dates, drift in the tool directory, open calls for papers, and pages overdue for review.
 
@@ -98,7 +98,7 @@ There is an honest footnote to all that careful engineering. **The auto-apply pa
 
 I built a carefully gated capability that has, to date, done absolutely nothing. Whether that is prudence or waste is genuinely unclear to me, and I would rather write it down than quietly not mention it.
 
-## The failure that keeps coming back
+## The Failure That Keeps Coming Back
 
 I expected the characteristic failure of AI-written software to be code that does the wrong thing. It has not been, not once. The recurring shape is a check that silently stopped checking, and here is the collection.
 
@@ -116,7 +116,7 @@ Every one of these is invisible while it is happening. That is the property they
 
 Twice, an audit built to catch the model's mistakes ended up convicting my own configuration instead. On one occasion I reviewed around 130 rejection decisions hunting for bad judgment, found none whatsoever, and discovered that the pipeline had been truncating the evidence it sent, so the model had been accurately reporting that it could not see enough to decide and I had been reading that as incompetence.
 
-## One change, start to finish
+## One Change, Start to Finish
 
 A recent example small enough to follow completely.
 
@@ -128,13 +128,13 @@ The best open-weights alternative was disqualified on paperwork rather than qual
 
 The change cost something, too. The build can no longer regenerate that audio, because the key is deliberately kept off the servers, which means a page edited without regenerating now serves **no player at all** rather than reading superseded words aloud in a confident voice. Silence is the better failure, and it took a while to be comfortable with that.
 
-## What it costs
+## What It Costs
 
 Hosting is free, on static pages published from the repository. The recurring cost is a few dollars a month in model usage.
 
 Ten workflows run on eight schedules, the busiest being the news refresh six times a day. That frequency is not a freshness preference, which surprises people. Scheduled runs on shared infrastructure are routinely delayed by five to eleven hours, so the schedule gave up trying to hit a particular time and simply blankets the day instead, on the assumption that some of them will land.
 
-## What transfers
+## What Transfers
 
 - Write the specification and the rules before the code. They are what later disagreements get resolved against, and they cost an afternoon.
 - Expect the prompt to be the algorithm. Review it like code, because it is one.
@@ -142,7 +142,7 @@ Ten workflows run on eight schedules, the busiest being the news refresh six tim
 - Assume any check can silently stop checking, and design so that a dead check fails loudly rather than passing quietly. Every failure above was invisible while it was happening.
 - Read the output, not only the logs. Two of the five were found by looking at the published page with my own eyes.
 
-## What this does not show
+## What This Does Not Show
 
 There is no test suite in this repository and never has been, and beyond an anonymous visit count, nothing measures whether anybody reads the site. I also cannot tell you what the pipeline has wrongly discarded, because rejected items are dropped before anything is written down.
 

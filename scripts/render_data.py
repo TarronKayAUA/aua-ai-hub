@@ -62,19 +62,19 @@ PROMPT_CATEGORY_LABELS = {
 PROMPT_AUDIENCE_LABELS = {
     "faculty": "Faculty",
     "students": "Students",
-    "both": "Faculty and students",
+    "both": "Faculty & Students",
 }
 
 # Chip text for the prompt library chooser (owner approved 2026-09-23):
-# short, sentence case, one per PROMPT_CATEGORY_LABELS key (checked at
+# short, title case (CLAUDE.md, published content style), one per PROMPT_CATEGORY_LABELS key (checked at
 # render time), since the section headings are too long for a pill.
 PROMPT_CATEGORY_CHIPS = {
     "research": "Research",
     "mcq_generation": "Write MCQs",
     "mcq_vetting": "Review MCQs",
-    "data_analysis": "Analyze data",
-    "content_generation": "Make teaching content",
-    "feedback": "Give feedback",
+    "data_analysis": "Analyze Data",
+    "content_generation": "Make Teaching Content",
+    "feedback": "Give Feedback",
     "study_strategy": "Study",
     "residency": "Residency",
 }
@@ -97,17 +97,17 @@ PROMPT_CATEGORY_LANDING = {
 # abbreviation a newcomer may not know (owner direction, 2026-09-26: "Write
 # exam questions"). The library and its chips keep their full terms.
 PROMPT_CATEGORY_LANDING_LABELS = {
-    "mcq_generation": "Write exam questions",
-    "mcq_vetting": "Review exam questions",
+    "mcq_generation": "Write Exam Questions",
+    "mcq_vetting": "Review Exam Questions",
 }
 
 # The quiet line under each library row and the meta line on each prompt
 # page (layout redesign, 2026-09-25): plain words, not badge pills, so a
 # status never looks like a button or an endorsement.
 PROMPT_AUDIENCE_META = {
-    "faculty": "For faculty",
-    "students": "For students",
-    "both": "For faculty and students",
+    "faculty": "Faculty",
+    "students": "Students",
+    "both": "Faculty & Students",
 }
 
 # Section order when the library is filtered to one audience (layout
@@ -143,7 +143,7 @@ PROMPT_STATUS_LABELS = {
 # what the roster badges (2026-08-19). The three values are the only
 # sources data/skills.yaml admits; see that file's header for why.
 SKILL_PROVENANCE_LABELS = {
-    "builtin": ("Built in", "badge-approved"),
+    "builtin": ("Built In", "badge-approved"),
     "anthropic": ("From Anthropic", "badge-reviewed"),
     "aua": ("Written at AUA", "badge-licensed"),
 }
@@ -215,10 +215,10 @@ CATEGORY_INTROS = {
 
 MODALITY_LABELS = {
     "language": "Language",
-    "image": "Image generation",
-    "video": "Video generation",
-    "audio": "Music and audio",
-    "data": "Tabular data",
+    "image": "Image Generation",
+    "video": "Video Generation",
+    "audio": "Music and Audio",
+    "data": "Tabular Data",
 }
 
 # Same idea for the open-weights modality subsections.
@@ -236,7 +236,7 @@ STATUS_LABELS = {
     "listed": ("Listed", "badge-listed"),
     "licensed": ("Licensed", "badge-licensed"),
     "reviewed": ("Reviewed", "badge-reviewed"),
-    "caution": ("Use with caution", "badge-caution"),
+    "caution": ("Use with Caution", "badge-caution"),
     "restricted": ("Restricted", "badge-restricted"),
 }
 
@@ -279,7 +279,7 @@ ACCESS_LINES = {
 # The label on the decision aid above a task's results. It is editorial,
 # drawn from each tool's own description and this site's guides, so it is
 # set apart from the status tags and says it is not an endorsement.
-START_LABEL = "Where to start"
+START_LABEL = "Where to Start"
 START_QUALIFIER = "suggestions, not endorsements"
 # One line under the label saying how the suggestions were chosen, so an
 # editorial pick is not read as a committee review (DRAFT wording for the
@@ -301,7 +301,7 @@ CHECKED_MEANS = ("the date this listing's details (link, description, and "
 TOOL_ACCESS_MARKER = "<!-- render:tool-access -->"
 
 FORMAT_LABELS = {
-    "in_person": "In person",
+    "in_person": "In Person",
     "hybrid": "Hybrid",
     "virtual": "Virtual",
 }
@@ -950,8 +950,8 @@ def _render_tools(config) -> str:
         by_category.setdefault(category, []).append(tool)
 
     # Not a "tool-" id: those are reserved for cards (_tool_anchor).
-    lines = [f'<p class="tool-browse" id="browse-by-category">Browse all {len(tools)} '
-             "tools by category</p>", ""]
+    lines = [f'<p class="tool-browse" id="browse-by-category">Browse All {len(tools)} '
+             "Tools by Category</p>", ""]
     rendered = 0
     notes_shown = 0
     access_shown: dict[str, int] = {}
@@ -2021,7 +2021,7 @@ def _render_opportunities(config) -> str:
     past.sort(key=lambda o: str(o.get("end_date") or o["deadline"]),
               reverse=True)
 
-    lines = ["## Open and upcoming", ""]
+    lines = ["## Open and Upcoming", ""]
     if open_now:
         lines.append(OPPORTUNITY_HEADER)
         lines.extend(_opportunity_row(o, today) for o in open_now)

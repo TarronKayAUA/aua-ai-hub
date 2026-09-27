@@ -360,9 +360,9 @@ def _coming_up_html(build: _Build, arg: str) -> str:
     # a raw HTML block ends at its closing tag, and anything after it on the
     # same line would be wrapped in a paragraph.
     blocks = [
-        _kicker("Open call for abstracts"),
+        _kicker("Open Call for Abstracts"),
         _group(call_rows, 1, built, "No open call for abstracts is listed right now."),
-        _kicker("Next event" if count == 1 else "Next events"),
+        _kicker("Next Event" if count == 1 else "Next Events"),
         _group(event_rows, count, built, "No upcoming events are listed right now."),
         f'<p class="timely-asof">Status as of {_long(today)}.</p>',
     ]
@@ -375,7 +375,7 @@ def _poll_html(build: _Build, arg: str) -> str:
     if arg.strip():
         raise ValueError(f"layout_home: timely:poll takes no argument, got {arg.strip()!r}")
     polls = build.polls()
-    head = _kicker("The AI Committee is asking")
+    head = _kicker("The AI Committee Is Asking")
     if not polls:
         return head + '\n\n<p class="timely-empty">No committee poll is open right now.</p>'
     rows = []

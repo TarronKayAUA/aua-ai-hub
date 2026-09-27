@@ -4,15 +4,15 @@ last_reviewed: 2026-09-01
 
 # Common Misconceptions
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 8 minutes</span>
+<span class="meta-chip">Everyone</span><span class="meta-chip">About 8 minutes</span>
 
 Frequent misunderstandings about artificial intelligence (AI) tools, and what is actually true. Each section is short and self-contained.
 
-## :material-database-off: "It looks up answers in a database"
+## :material-database-off: "It Looks Up Answers in a Database"
 
 A large language model (LLM) does not retrieve stored answers. It generates text word by word based on patterns learned during training. Nothing is "looked up" unless the specific tool adds a search or retrieval step, and most chat tools tell you when they do. This is why a model can describe a journal article that does not exist: it is composing plausible text, not consulting a catalog.
 
-## :material-account-voice: "If it sounds confident, it is probably correct"
+## :material-account-voice: "If It Sounds Confident, It Is Probably Correct"
 
 Fluency and accuracy are unrelated in these systems. The model produces equally polished prose whether it is right or wrong, because confidence in the writing style carries no information about the underlying facts. Calibrate your trust to the type of task: transformation of material you supplied is usually reliable, while specific facts, numbers, and citations pulled from the model's memory need verification.
 
@@ -42,31 +42,31 @@ Fluency and accuracy are unrelated in these systems. The model produces equally 
 <figcaption>Fluency is constant; reliability is not. Sort by where the content came from, not by how it sounds.</figcaption>
 </figure>
 
-## :material-keyboard-outline: "It is just fancy autocomplete, so it cannot do anything useful"
+## :material-keyboard-outline: "It Is Just Fancy Autocomplete, so It Cannot Do Anything Useful"
 
 The mechanism really is next-word prediction, but the conclusion does not follow. Predicting text well across the breadth of human writing required these models to internalize grammar, facts, reasoning patterns, and style. The practical capabilities (summarizing, drafting, translating, critiquing, tutoring) are real and measurable. Dismissing the technology outright is as much an error as trusting it blindly.
 
-## :material-sync-off: "The model learns from my conversations as we talk"
+## :material-sync-off: "The Model Learns from My Conversations as We Talk"
 
 Within one conversation the model can use what you said earlier, but its underlying knowledge is not updated by chatting. Training is a separate, offline process. A correction you make today does not change the model itself. If your assistant's memory feature is on, it may store a note about the correction and add it to future conversations, which is retrieval, not learning (see [Memory: what persists between conversations](better-answers.md#memory-what-persists-between-conversations)). Whether a vendor later uses your conversations as future training data is a separate privacy question, answered by the vendor's data policy, and most major assistants let you turn that use off in their settings.
 
-## :material-magnify-close: "AI detectors can reliably catch AI-generated writing"
+## :material-magnify-close: "AI Detectors Can Reliably Catch AI-Generated Writing"
 
 Current detection tools produce both false positives and false negatives at rates that make them unsafe as the sole basis for an academic integrity decision. They are particularly prone to flagging the writing of non-native English speakers. Assessment design that reduces the payoff of undisclosed AI use, plus clear policies about acceptable use, works better than detection after the fact. Module 4, [Teaching and Assessment](../pathway/teaching-assessment.md), covers assessment design and how to treat a detector flag.
 
-## :material-trophy-outline: "Newer and bigger always means better for my task"
+## :material-trophy-outline: "Newer and Bigger Always Means Better for My Task"
 
 Model rankings change monthly, but [a leaderboard measures general performance](../benchmarks.md#how-to-read-a-leaderboard), not your use case. A smaller, cheaper, or local model may be entirely adequate for summarizing lecture notes, while no current model may be adequate for unsupervised clinical decisions. Evaluate against your actual task, and remember that workflow fit, privacy, and cost matter as much as raw capability.
 
-## :material-stethoscope: "AI will replace physicians and educators"
+## :material-stethoscope: "AI Will Replace Physicians and Educators"
 
 The evidence so far supports a narrower claim: these tools shift how time is spent, automating drafting, summarization, and information triage, while judgment, accountability, examination skills, and the human relationship remain with people. The realistic near-term risk for professionals is not replacement; it is using the tools carelessly, or refusing to learn what they can and cannot do.
 
-## :material-image-off: "If I cannot find a good diagram, I can have AI generate one"
+## :material-image-off: "If I Cannot Find a Good Diagram, I Can Have AI Generate One"
 
 Verification works differently here. With text you can check a claim against a source; with a generated image there is no source it came from, and the errors are not the kind you catch by looking, because the wrong parts are rendered as confidently as the right ones.
 
-### Why the pictures come out wrong
+### Why the Pictures Come Out Wrong
 
 The numbers are not marginal. A 2025 study generated 1,500 images for hand surgery patient education and found fabricated anatomy in 99.8 percent of them, even though four of the six generators matched real patient-education materials on visual detail and clarity ([Duggan et al., 2025](https://pmc.ncbi.nlm.nih.gov/articles/PMC12547223/)). A 2024 study found that no generator tested could produce a skull, heart, or brain illustration that was both detailed and accurate ([Noel, 2024](https://doi.org/10.1002/ase.2336)). Across the evaluations collected in the [AI-Generated Images in Teaching](../playbooks/ai-images.md) playbook, foramina, suture lines, rib counts, and muscle attachments are among the structures most often wrong, which is to say the structures students are examined on.
 
@@ -76,7 +76,7 @@ Not every generated image is wrong, and the tools have improved between generati
 
 Why this matters more than an ordinary AI error: a wrong sentence is easy to overwrite, but a wrong picture studied during first exposure is memorable, and confident wrong beliefs are the hard ones to shift. In one study of medical students, an incorrect answer held with confidence was corrected only 35.8 percent of the time, against 61.4 percent when the student was unsure ([Versteeg et al., 2020](https://doi.org/10.1186/s12909-020-02166-6)). An image you generate on your own, with nobody checking it, can build exactly that kind of confident wrong belief.
 
-### What works better (students)
+### What Works Better (Students)
 
 - Use your atlas, your course materials, and any three-dimensional (3D) anatomy platform the library gives you access to (ask a librarian which ones). Those platforms render a fixed model that anatomists built and reviewed, so rotating the view just moves the camera around it. The anatomy is not re-invented for each new angle, which is precisely what an image generator does. They are different kinds of tool, even though both put a picture on your screen.
 - If the view you want seems not to exist, look harder before concluding it does not. Atlases often show a hidden structure by removing what covers it rather than by changing the angle, and the plate you need may be captioned in a way the index does not surface. Ask a faculty member or a librarian.
@@ -85,7 +85,7 @@ Why this matters more than an ordinary AI error: a wrong sentence is easy to ove
 
 Faculty: the teaching-side guidance, including the one workflow with evidence behind it, is the [AI-Generated Images in Teaching](../playbooks/ai-images.md) playbook.
 
-## :material-head-question-outline: "It understands me the way a person would"
+## :material-head-question-outline: "It Understands Me the Way a Person Would"
 
 A model has no beliefs, goals, or awareness of you. It maps your words to likely continuations. The conversational style invites us to attribute understanding and intent, and that attribution is precisely what makes confident errors persuasive. Keeping the mechanism in mind, prediction rather than comprehension, is the single most useful habit for working with these tools safely.
 

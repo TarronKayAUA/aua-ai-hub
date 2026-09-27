@@ -7,7 +7,7 @@ prompts:
 
 # AI and the Residency Application
 
-<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For students</span><span class="meta-chip">About 12 minutes</span>
+<span class="meta-chip">Step-by-Step Guide</span><span class="meta-chip">Students</span><span class="meta-chip">About 12 minutes</span>
 
 **Have ready:** the specialty and program type you are preparing for, the parts of your application to probe, and the question you most dread.
 {: .have-ready }
@@ -19,37 +19,37 @@ It deliberately stops short of application strategy. Which programs to apply to,
 !!! tip "The short version"
     The Association of American Medical Colleges (AAMC) permits AI for brainstorming, proofreading, and editing. The Educational Commission for Foreign Medical Graduates (ECFMG) advises against letting it write your statement. ERAS does not run AI detection on applications, but in the one published survey of program directors, a majority regarded any chatbot use in a personal statement as unethical, so the private standard you are judged against may be stricter than the published rule. Your EED clinical advisor owns strategy; this page covers the tools.
 
-## Where AI genuinely helps
+## Where AI Genuinely Helps
 
-### Interview practice, the strongest use on this list
+### Interview Practice, the Strongest Use on This List
 
 This is where AI earns its place in the application year, and it matters most for students who do not have a network of physicians to practice with. An assistant can run a mock interview that asks real follow-up questions, stays in role, and debriefs you afterward on what was vague, what was rehearsed-sounding, and what a program would probably probe.
 
-Ask for one question at a time, answer out loud before reading further, and have it push back rather than praise. Ask for the follow-up you would least like to be asked. Practicing the answer to "walk me through this gap in your record" ten times in private is worth more than any drafting the same tool could do for you. The [mock residency interview](../prompts/index.md#mock-residency-interview) prompt sets this up: it stays in role, asks one question at a time, and debriefs you from your own answers.
+Ask for one question at a time, answer out loud before reading further, and have it push back rather than praise. Ask for the follow-up you would least like to be asked. Practicing the answer to "walk me through this gap in your record" ten times in private is worth more than any drafting the same tool could do for you. The [Mock Residency Interview](../prompts/index.md#mock-residency-interview) prompt sets this up: it stays in role, asks one question at a time, and debriefs you from your own answers.
 
-### Program research and keeping track
+### Program Research and Keeping Track
 
 Assistants are useful for organizing: building the comparison sheet, summarizing what a program publishes about its curriculum, drafting the tracker that keeps deadlines and interview invitations straight.
 
 Check every program fact against the program's own page. Models state program details fluently and often get them wrong, including details that change every year, so AI is most useful for organizing what you gather rather than as the source of it.
 
-### Your own draft, interrogated
+### Your Own Draft, Interrogated
 
-The useful role on a personal statement is critic, not author. Once you have written a draft, ask an assistant what is missing, where you told the reader something instead of showing it, which paragraph is doing the least work, and what a program director would want to ask you after reading it. Then rewrite it yourself. The [personal statement critic](../prompts/index.md#personal-statement-critic) asks those questions, quoting your draft, and never rewrites it for you.
+The useful role on a personal statement is critic, not author. Once you have written a draft, ask an assistant what is missing, where you told the reader something instead of showing it, which paragraph is doing the least work, and what a program director would want to ask you after reading it. Then rewrite it yourself. The [Personal Statement Critic](../prompts/index.md#personal-statement-critic) asks those questions, quoting your draft, and never rewrites it for you.
 
 That order matters. A draft you wrote and had criticized reads like you. A draft the model wrote and you edited reads like the model, and it puts you inside ECFMG's advice against relying on AI to write it.
 
-### The other pieces
+### The Other Pieces
 
 Experience descriptions, thank-you notes, and scheduling correspondence carry far less of your voice and far less risk. Accuracy matters just as much in these, because every fact about you is one a program may ask you about.
 
-## Patient stories in your statement
+## Patient Stories in Your Statement
 
 Personal statements are often built around a patient encounter, and an assistant can critique how you tell that story. The version to work on is the de-identified one, which is also the one to submit: a patient story told without identifying details is the professional norm, and the story's force is in what you learned.
 
 Do what you already do on rotations: abstract first. An age band, a presentation pattern, no names, no dates, no institution, nothing that could identify a person. The story you tell in a statement should already be abstracted to that level anyway, because it is going to be read by strangers.
 
-## What the rules actually say
+## What the Rules Actually Say
 
 Three organizations matter here, and their positions are different from each other and from what circulates online.
 
@@ -70,7 +70,7 @@ Two corrections worth having, because both circulate widely:
 
     And the ERAS pipeline does **not** run AI detection on your application. The AAMC states that its platform does not use AI to analyze, sort, or evaluate applications, and that the interview platform it works with does not attempt to determine whether essays were written with AI tools, specifically to avoid biases that fall hardest on some applicants. ([AAMC on its own AI use](https://www.aamc.org/services/use-artificial-intelligence-aamc-service-programs))
 
-## The part worth thinking about before you decide
+## The Part Worth Thinking about Before You Decide
 
 Put those two facts together and the honest picture is uncomfortable but useful. Nobody is reliably detecting AI authorship, and studies consistently find that readers cannot tell AI-written statements from human ones. So the question is not whether you would be caught.
 
@@ -78,7 +78,7 @@ The question is what your reader believes. In the one published survey that aske
 
 The practical consequence has nothing to do with rules. A statement you did not write is one you cannot defend in an interview, in a room with someone who has read several thousand of them, and generic is the most common failure mode of AI prose. The strongest reason to write it yourself is that it works better.
 
-## For faculty writing letters
+## For Faculty Writing Letters
 
 The AAMC addresses writers of a letter of recommendation (LOR) directly and permissively: generative AI "has the potential to support your letter-writing process, including crafting initial drafts of the LOR and editing its content and tone. Regardless of how you use genAI, you remain the author of the letter and are responsible for its content, accuracy, and the assessment it conveys."
 

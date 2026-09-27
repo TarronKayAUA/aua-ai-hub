@@ -4,15 +4,15 @@ last_reviewed: 2026-09-26
 
 # Module 3: The Policy in Practice
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 5 minutes</span>
+<span class="meta-chip">Everyone</span><span class="meta-chip">About 5 minutes</span>
 
-## What you will be able to do
+## What You Will Be Able to Do
 
 - Find what the policy says on the questions that come up most, and where it says it.
 - Explain why its main expectations work in your favor.
 - Know where to take a question or a concern.
 
-## The core idea
+## The Core Idea
 
 AUA encourages artificial intelligence (AI) use where it helps you do your work. The [AI Responsible Use Policy](../governance/policy.md) is the one reference for how, and it is short enough to read in a sitting. This module is a guide to it rather than a substitute: it points to the parts that come up most, and explains why each one is worth doing for your own sake.
 
@@ -37,7 +37,7 @@ AUA encourages artificial intelligence (AI) use where it helps you do your work.
 
 If something goes wrong, such as a tool producing harmful or discriminatory output, or information reaching somewhere it should not, the [AI Committee page](../governance/committee.md) gives the contact. Raising it early is how a problem gets fixed for everyone, and the policy protects anyone who reports in good faith.
 
-## Self-check
+## Self-Check
 
 ??? question "A classmate asks you to run their case write-up through a chatbot for feedback. What would make that go well?"
     Take the patient details out first: feedback on the reasoning and the writing does not need them. And check that your classmate is happy for their draft to go into a tool, since it is their work.
@@ -48,7 +48,7 @@ If something goes wrong, such as a tool producing harmful or discriminatory outp
 ??? question "A tool in the directory is marked Listed. Does that mean the university has vetted it?"
     No. Listed means the tool is relevant and live, and nothing more. The directory's notes help you judge it; if a task involves information the policy's privacy section covers, [How Tools Are Reviewed](../governance/review-process.md) explains what a review can clear.
 
-## Going deeper
+## Going Deeper
 
 - [AI Responsible Use Policy](../governance/policy.md): the full text, and the reference for everything above.
 - [How Tools Are Reviewed](../governance/review-process.md): what the directory's status badges mean and how they are assigned.

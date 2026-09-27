@@ -8,12 +8,12 @@ last_reviewed: 2026-09-01
 
 [Choosing Your Interface](interfaces.md) explains why agents change what artificial intelligence (AI) can do for you; this page has you run one, once, on a folder that cannot be hurt. By the end you will have watched a model read files, ask your permission, run a tool, and hand back work with evidence you can check, and you will know which settings are worth changing, and when.
 
-## Before you start
+## Before You Start
 
 - Install an agent: the [Claude Code desktop app](https://claude.com/product/claude-code) or the [ChatGPT desktop app](https://learn.chatgpt.com/docs/app) (Codex is a mode inside it). Codex is included with every ChatGPT plan, including Free; Claude Code needs a paid Claude plan (Pro or above), so take the ChatGPT route if you have no subscription.
 - Optional but worthwhile: the [local toolkit](interfaces.md#equipping-the-machine), so document conversion works when you get ambitious later.
 
-## The walkthrough
+## The Walkthrough
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Twenty minutes, five beats</p>
@@ -41,7 +41,7 @@ last_reviewed: 2026-09-01
 
 If the agent says a tool is missing, it will name exactly what to install; that is normal, and it is how your machine gets [equipped](interfaces.md#equipping-the-machine) over time. Newly installed tools need the app restarted before the agent can see them.
 
-## The settings that matter
+## The Settings That Matter
 
 Both agents have a settings surface worth five minutes of your attention. Everything below was checked against the vendors' documentation in September 2026; treat exact names as subject to drift.
 
@@ -53,14 +53,14 @@ Both agents have a settings surface worth five minutes of your attention. Everyt
 - **Fast mode** (`/fast`) makes Opus up to 2.5 times faster at a higher cost per token, billed through usage credits rather than your subscription's included limits. Worth it for interactive back-and-forth where you are waiting on each response; wrong for long autonomous tasks where you are not watching. If you use it, enable it at the start of a session (first enablement mid-conversation charges the fast rate for the whole existing context).
 - **A folder brief** (`CLAUDE.md`) makes your preferences permanent; run `/init` and Claude drafts one from what it finds in the folder. See [Standing Setups](standing-setups.md).
 
-### Codex (ChatGPT desktop app)
+### Codex (ChatGPT Desktop App)
 
 - **Permission mode**: *Ask for approval* (the default) lets Codex read and edit within the workspace and run routine commands, asking before it touches the internet or anything beyond the folder. *Approve for me* has ChatGPT auto-review requests and only surface the ones it flags, and OpenAI's docs note the auto-reviewer can make mistakes. *Full access* removes approvals entirely, and OpenAI's docs warn that it can lead to data loss or leaks, for the same reason as bypass mode above.
 - **Model and effort** live on one slider: Sol, Terra, or Luna, each from light effort up through max, with *Ultra* above them all. On paid plans, the documented default pairing is Sol at medium effort (Free and Go plans run Terra, so the model choice does not appear there), and the docs' own advice matches this page's: start at the default and increase only when a task visibly needs deeper planning.
 - **Ultra mode** is the Codex counterpart of ultracode: it splits large tasks across parallel subagents and synthesizes the results. Same trade, same advice; OpenAI's docs say it plainly: "Most tasks do not need Max or Ultra." (If Ultra is missing from your slider, it enables under Settings, then Configuration.)
 - **A folder brief** (`AGENTS.md`) is read before any work begins, layered from a global file down to per-folder ones. See [Standing Setups](standing-setups.md).
 
-### The starting posture
+### The Starting Posture
 
 This site's recommendation, stated as a table so you can disagree with it precisely:
 
@@ -99,7 +99,7 @@ This site's recommendation, stated as a table so you can disagree with it precis
 <figcaption>Trust is granted to a proven workflow, one rung at a time; the no-prompt modes on the right are built for isolated machines rather than being the next rung.</figcaption>
 </figure>
 
-## Habits worth keeping
+## Habits Worth Keeping
 
 The folder you open is your main control over what the agent sees. Opening only the folder a task needs keeps the agent focused, makes its searches faster, and means you know everything it could read. Because the agent may read any file in that folder, everything in it is effectively shared with the model, not only the files the task is about; if a folder also holds something like a class roster, copy the files the task needs into a fresh folder instead. For a new kind of task, working on copies first is still worth the minute it takes: you see what the agent does before anything that matters is touched. The [AI Agents guide](agents.md) covers prompt injection and the rest of what is worth knowing once you are running sessions routinely.
 

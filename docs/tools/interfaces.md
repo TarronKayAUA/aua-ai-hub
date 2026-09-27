@@ -11,7 +11,7 @@ The same model behaves very differently depending on the room you put it in. A w
 !!! note "This page is not about running models locally"
     Everything here uses cloud models; what runs locally is the *tools* they call (file readers, document converters, compilers). Running the models themselves on your own hardware is a different topic with its own trade-offs: see [Running Models Locally](local.md).
 
-## Web chat, working session, or code agent
+## Web Chat, Working Session, or Code Agent
 
 **Web chat** (chatgpt.com, claude.ai) is a conversation. You paste or upload material, and the model mostly replies with text. It is the right tool for questions, drafting, and thinking out loud, and the wrong tool the moment the work involves files, revisions at scale, or verification.
 
@@ -28,7 +28,7 @@ The same model behaves very differently depending on the room you put it in. A w
 | Effort control | Limited | Model and effort selection on paid plans | Full effort dial |
 | Best for | Questions, drafts, exploration | Deliverables from your materials | Heavy, multi-step, verifiable work |
 
-## What a tool call is
+## What a Tool Call Is
 
 A tool call is the model pausing text generation to request an action: read this file, run this command, search this folder. The interface executes the action (asking your permission where it matters), returns the result, and the model continues with that result in hand. That loop, repeated, is what makes an agent an agent.
 
@@ -55,7 +55,7 @@ A tool call is the model pausing text generation to request an action: read this
 <figcaption>The permission check sits between the model's request and your machine; the rules are enforced by the interface, not by the model.</figcaption>
 </figure>
 
-## Why local tools save inference
+## Why Local Tools Save Inference
 
 Model output is the expensive part: every word a model generates is paid inference, whether by tokens or by your plan's usage limits. Tool calls move work off the meter in three ways.
 
@@ -67,13 +67,13 @@ Model output is the expensive part: every word a model generates is paid inferen
 
 The practical rule: the heavier and more file-bound the task, the further right you should move in the table above. A question costs the same everywhere; a hundred-file revision is affordable only where tools are.
 
-## Dialing effort
+## Dialing Effort
 
 Both vendors now expose how hard the model thinks as a setting, and it is the most direct cost and quality lever you have. Claude Code offers effort levels low, medium, high, xhigh, and max, plus a fast mode for quick turnarounds; high is the default on most models, but Claude Opus 5.5 starts at medium. The GPT-5.6 family exposes a range of effort settings up to max on paid plans. Both ecosystems also added orchestration above a single agent: ChatGPT's Ultra mode splits a task across parallel subagents, and Claude Code's ultracode setting has the model orchestrate multi-agent workflows.
 
 The heuristic: default effort for routine work; drop effort (or use fast mode) for mechanical batch tasks where the steps are obvious; raise it only for the genuinely hard steps: architecture decisions, subtle debugging, analysis where a wrong answer is expensive. Effort applies per task, so one session can dial down for the cleanup and up for the hard part. Paying maximum reasoning for routine file renames is the agent-era version of leaving the lights on.
 
-## The current lineups (September 2026)
+## The Current Lineups (September 2026)
 
 Model names go stale faster than anything else on this page; treat these as a snapshot, check the [Benchmarks section](../benchmarks.md) for standings, and expect the interfaces to outlive the models in them.
 
@@ -84,7 +84,7 @@ Model names go stale faster than anything else on this page; treat these as a sn
     - When Opus 5.5 or Fable 5.1 flags a request as biology or cybersecurity work, Claude Code re-runs it on an older Claude model and notes the switch in the transcript; researchers working with biomedical material should expect to see this.
 - **OpenAI:** the ChatGPT app runs the GPT-5.6 family, three tiers under one generation: Sol (flagship), Terra (the everyday mid-tier), Luna (fastest and cheapest). Free and Go plans get Terra; Plus, Pro, Business, and Enterprise plans choose the tier and set the effort level.
 
-## Equipping the machine
+## Equipping the Machine
 
 An agent is only as capable as the tools on the computer it works in. The pattern to know: **you do not need to guess what to install, because the agent will tell you.** Give it a task, and when it hits a missing tool it will name the exact package and the install command; install once and every future session benefits. A development task will have it request a compiler toolchain and software development kits; a document task will have it request the converters below.
 
@@ -103,7 +103,7 @@ This starter set covers most academic document work, and each item is something 
 
 All commands verified July 2026 (winget ships with Windows 11; [Homebrew](https://brew.sh) is the Mac equivalent). After installing, restart the terminal or app so the new tools are visible. On university-managed machines, installing software may need help from Information Technology (IT); on a personal machine you can install the toolkit yourself.
 
-## Choosing what the agent can see
+## Choosing What the Agent Can See
 
 An agent can read anything in the folder you open, so choosing the folder is how you decide what reaches the model. A folder scoped to the task keeps the agent's searches quick and its answers focused, and it means material the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps out of publicly available tools, such as patient or student records, is not read along the way. Consequential actions prompt for your approval, and that check is enforced by the interface software rather than left to the model's judgment. The [AI Agents guide](agents.md) covers the rest of what is worth knowing (actions that cannot be undone, and prompt injection) and profiles each agent and its maker. When you are ready to try one, [Your First Agent Session](first-session.md) walks you through twenty minutes on a folder of copies.
 

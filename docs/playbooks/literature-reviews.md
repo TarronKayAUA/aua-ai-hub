@@ -7,18 +7,18 @@ prompts:
 
 # Reviewing the Literature
 
-<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For faculty and graduate student researchers</span><span class="meta-chip">About 9 minutes</span>
+<span class="meta-chip">Step-by-Step Guide</span><span class="meta-chip">Faculty & Graduate Student Researchers</span><span class="meta-chip">About 9 minutes</span>
 
-**Have ready:** your research question (the [Research question coach](../prompts/index.md#research-question-coach) sharpens a vague one), and your inclusion and exclusion criteria, written as numbered lists before any artificial intelligence (AI) tool sees a single abstract.
+**Have ready:** your research question (the [Research Question Coach](../prompts/index.md#research-question-coach) sharpens a vague one), and your inclusion and exclusion criteria, written as numbered lists before any artificial intelligence (AI) tool sees a single abstract.
 {: .have-ready }
 
-## The workflow
+## The Workflow
 
 1. **Orient with Scopus AI.** Open [Scopus with AI](http://auamed.idm.oclc.org/login?url=https://www.scopus.com/pages/home) through your AUA credentials, ask its AI assistant your question plainly, and read the cited orientation summary, opening the citations rather than trusting the synthesis. You are mapping the conversation your question joins: the key authors, the recent reviews, the terms the field actually uses.
 2. **Run the real search.** Move from AI conversation to explicit database queries in Scopus and PubMed using the vocabulary step 1 surfaced. Save the exact query strings and dates; every serious review reports them. Name your review's ambition honestly before you start: an orientation for an introduction section, a scoping review, or a full systematic review. A systematic review needs a registered protocol and [Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)](https://www.prisma-statement.org/) documentation from the first search onward, not retrofitted at the end. For systematic work, this is the step to involve a librarian.
 3. **Grow the map from seeds.** Feed your strongest papers to ResearchRabbit or use Scopus citation chasing to find what your keyword queries missed: the papers your seeds cite, and the papers that cite your seeds.
-4. **Screen at scale, conservatively.** The [Literature screening assistant](../prompts/index.md#literature-screening-assistant) prompt applies your frozen criteria to titles and abstracts with an audit trail, defaulting to "unclear" whenever the abstract cannot support a decision. Borderline calls stay with you, and the screening output works best as a first pass that speeds your own decisions.
-5. **Appraise by hand.** This is the step your judgment carries. Read the methods sections of everything that survives screening and apply a structured instrument: the reporting checklist for each study's design as a completeness lens, and in medical education research, a rigor instrument such as the Medical Education Research Study Quality Instrument (MERSQI). AI can fetch and summarize; it cannot be accountable for your judgment that a study is worth building on. Once your own appraisal is written, the [critical appraisal second reader](../prompts/index.md#critical-appraisal-second-reader) is a second pair of eyes: it compares your appraisal with the paper and flags what you may have missed, and it will not appraise first.
+4. **Screen at scale, conservatively.** The [Literature Screening Assistant](../prompts/index.md#literature-screening-assistant) prompt applies your frozen criteria to titles and abstracts with an audit trail, defaulting to "unclear" whenever the abstract cannot support a decision. Borderline calls stay with you, and the screening output works best as a first pass that speeds your own decisions.
+5. **Appraise by hand.** This is the step your judgment carries. Read the methods sections of everything that survives screening and apply a structured instrument: the reporting checklist for each study's design as a completeness lens, and in medical education research, a rigor instrument such as the Medical Education Research Study Quality Instrument (MERSQI). AI can fetch and summarize; it cannot be accountable for your judgment that a study is worth building on. Once your own appraisal is written, the [Critical Appraisal Second Reader](../prompts/index.md#critical-appraisal-second-reader) is a second pair of eyes: it compares your appraisal with the paper and flags what you may have missed, and it will not appraise first.
 6. **Synthesize from your own set.** Load the appraised papers, your papers, not the open web, into [Gemini Notebook](../tools/gemini-notebook.md) or a Claude Project and draft the synthesis grounded in that set, with every claim traceable to a source you have read.
 7. **Verify every citation at the source.** Before a reference enters your manuscript, check that the paper exists, the authors and year are right, and it says what your sentence claims. References you feel sure of deserve the same check, because a confident memory is how a wrong year or a misattributed finding gets through. Until every reference is checked, the list is a set of leads rather than a reference list.
 
@@ -38,13 +38,13 @@ prompts:
 <figcaption>Speed where speed helps; judgment where judgment is the point.</figcaption>
 </figure>
 
-## Good practice for this task
+## Good Practice for This Task
 
 - Cite the papers themselves; an AI-generated summary is a map to them, not a source.
 - Manuscripts and grant applications you receive for peer review are confidential to the journal or funder, and reviewer terms generally bar putting them into AI tools unless the reviewer instructions provide or permit one ([Module 5: Research and Scholarship](../pathway/research.md) covers this).
 - Disclose AI assistance per your target venue's instructions; the International Committee of Medical Journal Editors (ICMJE) recommendations are the baseline: writing assistance in the acknowledgments, AI used in data collection or analysis in the methods, and responsibility for all of it stays with the authors.
 
-## Before you rely on it
+## Before You Rely on It
 
 - [ ] The search is reproducible: databases, query strings, dates, and counts are recorded.
 - [ ] Screening criteria were frozen before screening began, and every AI screening decision carries its evidence quote.
@@ -53,15 +53,15 @@ prompts:
 - [ ] The synthesis cites only papers in your appraised set.
 - [ ] AI assistance is disclosed per the venue's instructions.
 
-## About this task {: #the-task }
+## About This Task {: #the-task }
 
 AI has changed literature work as much as any research task: tools now find, screen, and summarize papers faster than any manual process. What has not changed is the standard your review will be judged by, and the failure that sinks manuscripts fastest, citations that do not check out, is a signature AI failure. This playbook walks the workflow that captures the speed without inheriting the risk. The [AI for Research guide](../tools/research.md) describes the tools themselves; this page is the discipline for using them in sequence.
 
-### Framing the question
+### Framing the Question
 
-If your research question is still an idea, the [Research question coach](../prompts/index.md#research-question-coach) prompt converts it into a PICO (population, intervention, comparison, outcome) structure, or its PICOT (PICO plus time frame) and SPIDER (sample, phenomenon of interest, design, evaluation, research type) variants, with a FINER (feasible, interesting, novel, ethical, relevant) screen, and hands you the novelty search to run.
+If your research question is still an idea, the [Research Question Coach](../prompts/index.md#research-question-coach) prompt converts it into a PICO (population, intervention, comparison, outcome) structure, or its PICOT (PICO plus time frame) and SPIDER (sample, phenomenon of interest, design, evaluation, research type) variants, with a FINER (feasible, interesting, novel, ethical, relevant) screen, and hands you the novelty search to run.
 
-### Where AI helps, and where it hurts
+### Where AI Helps, and Where It Hurts
 
 **Helps:** orientation in an unfamiliar literature (cited summaries in minutes instead of days), finding seed papers and chasing citations forward and backward, screening hundreds of titles and abstracts against your criteria, and first-pass synthesis across a paper set you supply.
 

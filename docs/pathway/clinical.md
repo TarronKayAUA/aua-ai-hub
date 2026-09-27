@@ -4,27 +4,27 @@ last_reviewed: 2026-09-26
 
 # Module 6: Clinical Contexts
 
-<span class="meta-chip">For students and clinical faculty</span><span class="meta-chip">About 10 minutes</span>
+<span class="meta-chip">Students & Clinical Faculty</span><span class="meta-chip">About 10 minutes</span>
 
-## What you will be able to do
+## What You Will Be Able to Do
 
 - Draw the line between AI as a study aid for clinical reasoning and AI in actual patient care.
 - Turn a real case into a teaching abstraction you can discuss freely, and explain why it makes the better exercise.
 - Find out what a clinical site expects before you use AI there.
 
-## The core idea
+## The Core Idea
 
 Two different kinds of work share the word "clinical," and each has its own expectations.
 
-### Learning clinical medicine with AI: encouraged, with discipline
+### Learning Clinical Medicine with AI: Encouraged, with Discipline
 
 Practicing differentials against an artificial intelligence (AI) case, asking for mechanism explanations, generating practice questions: these are legitimate and effective uses, and the [Medical Learning tools](../tools/index.md#medical-learning) section lists platforms built for exactly this. The discipline is remembering Module 1: fluent clinical-sounding text is not verified clinical knowledge. Check what it tells you against your course materials and the literature; the model is a practice partner, not a reference.
 
-### AI in patient care
+### AI in Patient Care
 
 In patient care, the reason for caution is the patient: a model has not examined them, cannot see what the chart leaves out, and carries none of the responsibility, which is why the [AI Responsible Use Policy](../governance/policy.md#responsible-use) asks for extreme caution in clinical contexts (section E). AI can inform a clinical decision; it cannot own one. As a student, that means your supervisor's judgment about a real patient comes first. If an AI suggestion makes you question a plan, take the question to your supervisor; that is a good use of what the tool showed you.
 
-### Patient information
+### Patient Information
 
 A real case makes a good study prompt, and the version that works best with an AI is the teaching abstraction: an age band, a presentation pattern, the findings, and nothing that could identify the patient. A rare combination of details can identify someone as surely as a name, and a photo of a chart or a recording of an encounter carries as much as the chart itself. The pattern is what you are practicing on, and invented variations of it show you what changes the differential. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information.
 
@@ -55,15 +55,15 @@ A real case makes a good study prompt, and the version that works best with an A
 <figcaption>Same word, different kinds of work: practice on the pattern, decide on the patient.</figcaption>
 </figure>
 
-### At clinical sites
+### At Clinical Sites
 
 Hospitals and clinics have their own AI policies, some covering specific tools (ambient scribes, documentation assistants) that the site has or has not sanctioned. On rotation, the site's policy applies alongside the university's, so a use has to fit both. Asking your supervisor what the site allows is the quickest way to find out, and it may turn up tools the site already provides.
 
-### Bias is a clinical issue here
+### Bias Is a Clinical Issue Here
 
 Models reflect their training data, and documented performance gaps across populations make uncritical clinical use an equity problem, not just an accuracy one. That is why the policy's attention to bias matters most exactly here: checking a suggestion against the patient in front of you is part of the reasoning.
 
-## Self-check
+## Self-Check
 
 ??? question "After a memorable encounter, you want to explore the differential with a chatbot tonight. What decides whether that is fine?"
     What you type in. A teaching abstraction (demographic band, presentation, findings pattern) is a legitimate and useful study exercise, and invented variations of it show you what changes the differential. Anything identifiable, including an unusual combination of details that could point to a real person, is patient information, and the [policy](../governance/policy.md#responsible-use) is the reference for that.
@@ -74,7 +74,7 @@ Models reflect their training data, and documented performance gaps across popul
 ??? question "An AI tool suggests a diagnosis your attending disagrees with. What does the policy say about whose call it is?"
     The clinician's. AI informs judgment; it does not arbitrate it. The tool's suggestion can prompt a question or a second look at the evidence, but clinical authority and accountability stay with the clinicians.
 
-## Going deeper
+## Going Deeper
 
 - [Medical Learning tools](../tools/index.md#medical-learning): the directory's category built for study and case practice.
 - [Image Generation Benchmarks](../benchmarks/image.md#medical-images-are-a-different-question): why general image models are not anatomy references.

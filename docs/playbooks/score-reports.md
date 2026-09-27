@@ -7,12 +7,12 @@ prompts:
 
 # Shelf and NBME Score Reports
 
-<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For students and their advisors</span><span class="meta-chip">About 15 minutes</span>
+<span class="meta-chip">Step-by-Step Guide</span><span class="meta-chip">Students & Their Advisors</span><span class="meta-chip">About 15 minutes</span>
 
 **Have ready:** your report as text, your next exam date and honest weekly study hours, the resources you actually have, and your own three takeaways, written first.
 {: .have-ready }
 
-## The workflow
+## The Workflow
 
 <figure class="figure figure--html hf">
 <p class="hf-title">The loop, closed at both ends</p>
@@ -31,12 +31,12 @@ prompts:
 
 1. **Get your data out.** Open [INSIGHTS](https://www.mynbme.org/), the National Board of Medical Examiners (NBME) dashboard ([what it holds](#what-you-already-have) is below), download the score report or export the tables, or collect your in-house report. Paste it into a text file and strip your name, student number, and any exam identifiers before any artificial intelligence (AI) tool sees it. The planner needs none of them, and stripping them takes a minute.
 2. **Write your own read.** Three takeaways, before any model sees anything. Two minutes that make everything after them work better ([why](#read-it-yourself-first)).
-3. **Run the [score report study planner](../prompts/index.md#score-report-study-planner).** It will ask for your report, your timeline, your honest hours (after classes, work, and everything else: honest, not aspirational), your resources (question bank, lecture notes, review materials, so the plan names real things), your own read, and your test-taking patterns, then produce an honest assessment, a deficit map, the quick wins (biostatistics, epidemiology, ethics, and communication, checked explicitly when your exam tests them, as Step 1 and the comprehensive exams built to its outline do), an interleaved week-by-week plan, test-taking drills for any strategy problems it finds, three questions for your advisor, and what to re-measure on your next assessment.
+3. **Run the [Score Report Study Planner](../prompts/index.md#score-report-study-planner).** It will ask for your report, your timeline, your honest hours (after classes, work, and everything else: honest, not aspirational), your resources (question bank, lecture notes, review materials, so the plan names real things), your own read, and your test-taking patterns, then produce an honest assessment, a deficit map, the quick wins (biostatistics, epidemiology, ethics, and communication, checked explicitly when your exam tests them, as Step 1 and the comprehensive exams built to its outline do), an interleaved week-by-week plan, test-taking drills for any strategy problems it finds, three questions for your advisor, and what to re-measure on your next assessment.
 4. **Sanity-check the plan.** Are the weekly hours ones you actually have? Does every week keep your strong areas warm rather than parking a month on one subject? Does every claim about your performance trace to something in your report?
 5. **Take it to your advisor.** The plan's advisor questions are the agenda. Advisors see patterns no model can: how this exam fits your trajectory, what worked for students in your exact position, and when the problem is not the studying at all.
-6. **Close the loop.** After your next assessment, run the [study plan progress check](../prompts/index.md#study-plan-progress-check) with the old plan and the new report. It will say honestly which of three things happened: the plan worked, the plan was not followed, or the plan was followed and did not work, and each has a different next move.
+6. **Close the loop.** After your next assessment, run the [Study Plan Progress Check](../prompts/index.md#study-plan-progress-check) with the old plan and the new report. It will say honestly which of three things happened: the plan worked, the plan was not followed, or the plan was followed and did not work, and each has a different next move.
 
-## Good practice for this task
+## Good Practice for This Task
 
 - **A classmate's report is theirs to share.** It is their education record. If a classmate wants help, send them this page so they can run the planner on their own report, or sit beside them while they do.
 - **Performance data, not questions.** The report's content-area descriptions are all the planner needs. NBME exam questions are copyrighted and confidential, so leave out any you remember from the exam; to dig into a concept you missed, work from your question bank or your notes instead.
@@ -46,7 +46,7 @@ prompts:
 !!! note "For advisors"
     Both prompts work in an advising meeting with the student driving on their own account and screen, which lets the student choose what to share and teaches the method at the same time. If you work with a student's report yourself, remove the name, student number, and exam identifiers first: the planner needs none of them. The planner's output ends with questions the data cannot answer; that section exists to make your meeting sharper, not to replace it.
 
-## Before you rely on it
+## Before You Rely on It
 
 - [ ] You wrote your own three takeaways first, and compared them with the model's read.
 - [ ] Every claim in the plan about your performance traces to the report; anything generic got cut.
@@ -54,11 +54,11 @@ prompts:
 - [ ] Strong areas appear in every week, not only the weak ones.
 - [ ] Your advisor has seen the plan, or the meeting is booked.
 
-## About this task {: #the-task }
+## About This Task {: #the-task }
 
 Turn an exam performance report (a comprehensive exam, a shelf exam, a self-assessment, or an in-house exam) into a study plan that is honest about where you stand, fits the hours you actually have, and gets tested against your next assessment instead of drifting. The report is not the hard part; most students receive more performance data than they ever use. The hard part is reading it without flinching, turning it into a plan that survives a bad week, and closing the loop.
 
-## What you already have
+## What You Already Have
 
 Before any AI enters the picture, know your data. If you have taken an NBME exam, you already have a dashboard: **INSIGHTS**, reached through the [MyNBME examinee portal](https://www.mynbme.org/). It collects your NBME self-assessments from the past two years and your subject and comprehensive exams from early 2024 onward, under the email address the exam was tied to. United States Medical Licensing Examination results are not included, and older score reports come from the school. INSIGHTS has four tabs: your exam list with downloadable score reports, per-exam results, question-level detail, and comparisons across multiple takes of the same exam type.
 
@@ -72,7 +72,7 @@ Before any AI enters the picture, know your data. If you have taken an NBME exam
     | NBME self-assessment | | | Time spent per question, the only NBME report with pacing data; if timing is your suspected problem, this is where the evidence lives |
     | In-house exam | | | Category and question-level reports through the exam platform; the same method above applies to them |
 
-    Most tables in INSIGHTS export to a spreadsheet. For an in-house block exam, the [study schedule builder](../prompts/index.md#study-schedule-builder) is the closer fit: it plans day by day from your syllabus and teaching calendar, where the planner above works week by week toward NBME exams.
+    Most tables in INSIGHTS export to a spreadsheet. For an in-house block exam, the [Study Schedule Builder](../prompts/index.md#study-schedule-builder) is the closer fit: it plans day by day from your syllabus and teaching calendar, where the planner above works week by week toward NBME exams.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">The shape of an INSIGHTS exam-results view</p>
@@ -98,11 +98,11 @@ Before any AI enters the picture, know your data. If you have taken an NBME exam
 
 See it for real before your first exam: NBME publishes an [interactive demo of INSIGHTS](https://www.nbme.org/insights-demo/) and an [official user guide](https://www.nbme.org/wp-content/uploads/2026/04/INSIGHTS_User_Guide.pdf) that walks every tab.
 
-## Read it yourself first
+## Read It Yourself First
 
 Before you run any prompt, open your report and write down your own three takeaways: where you think you stand, what you think went wrong, and what you would change. This is not a ritual. Reading your own performance data is a skill you will need on every future exam, every licensing step, and eventually on the audit of your own practice, and you do not build it by outsourcing the first read. Then run the prompt and compare. Where the AI's read matches yours, plan with confidence. Where it disagrees, that disagreement is the most useful thing either of you produced, and it is exactly what to bring to your advisor.
 
-## Where AI helps, and where it hurts
+## Where AI Helps, and Where It Hurts
 
 AI is strong at the layer most students skip: translating a wall of flags and percentages into an ordered plan, sizing that plan to the hours you actually have, keeping strong areas in rotation while you repair weak ones, and asking the test-taking questions (Did you change answers? Did you run out of time?) that separate strategy problems from content problems. For an advisor, it applies the same rigor to the twentieth report of the week as to the first.
 

@@ -7,13 +7,13 @@ action:
 
 # Worked Example: A Memo and Meeting Minutes
 
-<span class="meta-chip">For faculty and staff</span><span class="meta-chip">About 6 minutes</span>
+<span class="meta-chip">Faculty & Staff</span><span class="meta-chip">About 6 minutes</span>
 
 Two everyday drafting jobs, a schedule-change memo and the minutes of the meeting that agreed it, drafted from facts and notes, and the checking they need before they are sent.
 
 The facts and notes are invented for this example, and the people are roles rather than names. Claude's drafts are its real output, unedited. The same instruction can word things differently each time and in each tool, so yours may differ in the details.
 
-## What went in
+## What Went In
 
 One instruction, used twice in one conversation: first with the memo facts, then with the meeting notes.
 
@@ -44,7 +44,7 @@ One instruction, used twice in one conversation: first with the memo facts, then
 
 These facts and notes are invented and hold nothing confidential, so they are ordinary material for any capable artificial intelligence (AI) assistant. For a document about an individual, the guide shows how to draft with placeholders and add the specifics yourself. A placeholder removes a name, not the confidentiality of what the document says.
 
-## The prompt
+## The Prompt
 
 The Prompt Library has no memo prompt, so this uses the instruction from step 2 of [Administrative Drafting](../playbooks/admin-drafting.md#the-workflow), word for word:
 
@@ -52,7 +52,7 @@ The Prompt Library has no memo prompt, so this uses the instruction from step 2 
 
 For the minutes, the same sentence with "minutes from exactly these notes". Step 3 of the guide adds one of your own past memos, so the draft follows your structure and voice; this example leaves it out.
 
-## What came back
+## What Came Back
 
 !!! quote "Output from Claude, September 2026, unedited: the memo"
 
@@ -107,7 +107,7 @@ For the minutes, the same sentence with "minutes from exactly these notes". Step
 
     **Next meeting:** Wednesday, October 28, 12:00 to 1:00 pm.
 
-## What to check
+## What to Check
 
 Both drafts are close to ready, which is when a slip gets through. These are the lines a careful sender checks, and why.
 
@@ -119,7 +119,7 @@ Both drafts are close to ready, which is when a slip gets through. These are the
 6. **"The room for October 20 is still open..."** Shorthand carried over from the notes. In minutes it could mean the room is free; what is true is that no room is confirmed yet.
 7. **Every date and weekday.** All correct here for 2026: Wednesday, September 30; Friday, October 9; Thursday, October 15; Tuesday, October 20; Wednesday, October 28. A wrong weekday beside a right date is a common slip, and both documents are records, so check them against a calendar.
 
-## What we changed
+## What We Changed
 
 Our edits, after the checks above. Claude's drafts stay exactly as they came back; every "After" below is our revision.
 

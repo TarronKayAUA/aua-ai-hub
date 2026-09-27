@@ -2,9 +2,9 @@
 last_reviewed: 2026-09-03
 ---
 
-# The Neanderthal gene that explained nothing
+# The Neanderthal Gene That Explained Nothing
 
-<span class="meta-chip">For faculty and students</span><span class="meta-chip">About 11 minutes</span> <span class="meta-note">A worked example, on my own genotype file, with its limits set out at the end.</span>
+<span class="meta-chip">Faculty & Students</span><span class="meta-chip">About 11 minutes</span> <span class="meta-note">A worked example, on my own genotype file, with its limits set out at the end.</span>
 
 In August a paper landed that was, for me personally, almost too convenient to be believed.
 
@@ -14,7 +14,7 @@ I am South Asian. I have been visibly muscular my entire adult life without ever
 
 So the question assembled itself in about four seconds, and so did the mistake.
 
-## Why the answer was going to be no before I looked
+## Why the Answer Was Going to Be No Before I Looked
 
 Here is the trap, and it is worth naming before any results, because naming it afterwards would be too late to be honest.
 
@@ -32,7 +32,7 @@ A genome-wide association study establishes that a statistical relationship exis
 
 Everything that follows is an attempt to hold that line against a story I badly wanted to be true.
 
-## The file, and what I did with it
+## The File, and What I Did with It
 
 The raw download from a consumer genetics service is far less intimidating than its reputation. It is a text file of about sixteen megabytes, one variant per line, four columns:
 
@@ -48,7 +48,7 @@ Six hundred thousand rows or so. Completely unmanageable for a person scrolling,
 
 I built a panel of around 250 variants and ran it in two directions. Backward from traits I already knew I had, looking for the genetics underneath them. And forward from the genotype, for things that would never announce themselves in a mirror. Of the sixty-one variants that made the final report, fifty-five were recoverable from my chip (the genotyping array the testing service used, which reads a fixed set of positions rather than the whole genome). The other six simply were not on it, and are reported as absent rather than quietly guessed at.
 
-## The rules I wrote before I was allowed to look
+## The Rules I Wrote Before I Was Allowed to Look
 
 This is the part I would keep if I could keep only one, and every rule was fixed before a single lookup ran.
 
@@ -73,7 +73,7 @@ Tier C is the one doing the work, and it is the tier most consumer genetics quie
 
 That refusal was settled before the analysis began, not negotiated in the moment when a tempting number was already on the table. Refusals decided in advance are the only kind that hold.
 
-## Why the file never left my machine
+## Why the File Never Left My Machine
 
 Years ago I uploaded this same data to third-party interpretation sites, stripping the identifying headers off first, feeling rather clever about it.
 
@@ -81,7 +81,7 @@ That instinct was right and it could not possibly have worked. Genotype data *is
 
 Parsing locally narrows the problem rather than removing it. The file stayed in a folder on my machine, and only the lines each question needed were read. But the assistant doing the reasoning was a frontier model running in the cloud, so those lines did go to its provider. I made that call knowingly: the analysis needed more capability than anything I could run locally, and the data was mine to risk. It is not a choice I would make with anyone else's data, and it is not the only reasonable choice with your own. A model on your own machine keeps every line at home at the cost of weaker reasoning; a frontier model reasons better and sees whatever you show it. If you are weighing whether to upload your own data somewhere, that trade is the whole lesson.
 
-## What was actually in there
+## What Was Actually in There
 
 The variant the paper used as its marker was not on my chip. The other archaic change on the same inherited segment was, and I carry one copy of it. Because the two travel together on the inherited Neanderthal segment (the introgressed haplotype), one copy of the second is a strong indicator that I carry one copy of the whole thing. Confirming it properly would require sequencing rather than an array.
 
@@ -111,7 +111,7 @@ It is also about the weight of a large apple, set against a physique that differ
 
 The same pattern holds for the other trait it touches, incidentally. It associates with roughly three millimeters of additional height per copy. The paleoanthropologist John Hawks made exactly this point in [his commentary on the paper](https://www.johnhawks.net/p/how-neanderthal-ancestry-affects): three millimeters is not much for one person, and folk reasoning about archaic ancestry is a poor way to explain individual traits.
 
-## The correction, which was the most useful thing that happened
+## The Correction, Which Was the Most Useful Thing That Happened
 
 Somewhere in the middle of all this, discussing an association between this variant and jaw morphology reported in earlier work, the assistant framed things in a way that implied Neanderthal ancestry meant a more retruded jaw.
 
@@ -127,7 +127,7 @@ And I could only catch it because mandibular anatomy happens to be inside my tra
 
 In fairness to the paper, its authors read these findings the other way: they count the shorter mandibular ramus, the higher risk of overbite and the tendency toward shorter tooth roots seen in carriers among Neanderthal characteristics. My point is narrower, and concerns where the jaw sits.
 
-## What transfers
+## What Transfers
 
 - Put the deflating context on the table before you search, not after you find something. Afterwards is too late to be honest with yourself.
 - Grade every claim, and make sure your weakest grade says out loud that the finding is individually meaningless. Most consumer genetics omits that tier entirely, which is precisely how it sells.
@@ -135,7 +135,7 @@ In fairness to the paper, its authors read these findings the other way: they co
 - Genotype data cannot be anonymized by deleting a header. Parse it where it sits.
 - Press hard on something inside your own expertise. It is the only place you can referee, and what you learn there tells you how much to trust everything else.
 
-## Why only one result appears here
+## Why Only One Result Appears Here
 
 The analysis returned around sixty results, including pharmacogenomic findings and disease risk loci. Those are my medical record and they stay private.
 
@@ -143,6 +143,6 @@ The single variant discussed here is ancestry-informative rather than disease-pr
 
 Deciding which single result was safe to publish took considerably longer than running the analysis did.
 
-## What this does not show
+## What This Does Not Show
 
 One person, one array, no clinical outcome, nothing measured downstream. The variant call is indirect, inferred from a linked marker rather than the one the paper itself used, and unconfirmed by sequencing. This was a physician poking at his own data out of curiosity on a weekend. It is not a service, not a study, and not advice.

@@ -6,7 +6,7 @@
 
 The [tools directory](../tools/index.md) gives every entry a status describing the institution's relationship with the tool. Most entries are Listed, which is a catalog fact rather than a review outcome: the tool is relevant and live, and nothing more is claimed. This page describes the rubric applied when a tool is actually reviewed, so that process is visible rather than implied. Reviews are request-driven: a tool is examined when someone at the American University of Antigua College of Medicine (AUACOM) needs a decision about it, not on a rolling schedule across the whole directory.
 
-## What a review establishes
+## What a Review Establishes
 
 Consistent with the [AI Responsible Use Policy](policy.md), a Reviewed status is not a general endorsement. The policy keeps no approved list for tools in general use, so everyday work does not wait on a tool review. A review matters most for sensitive data, which the policy's privacy section covers: the AI Committee can vet and approve a tool for specific data, and a review record names exactly which data categories and uses it clears, if any.
 
@@ -32,11 +32,11 @@ Consistent with the [AI Responsible Use Policy](policy.md), a Reviewed status is
 <figcaption>Privacy is a gate, not a score; and review outcomes expire into annual re-review.</figcaption>
 </figure>
 
-## Step 1: Screening facts
+## Step 1: Screening Facts
 
 Before any scoring, the reviewer confirms from the vendor's published terms (not marketing copy): who operates the tool and where data is processed; whether user inputs are used for model training and whether that can be disabled; data retention and deletion rights; account requirements and minimum age; cost to students and faculty; accessibility claims; and the vendor's security posture. Undocumented claims count against the tool throughout.
 
-## Step 2: Scored domains
+## Step 2: Scored Domains
 
 Each criterion is scored at one of three levels: meets, partial (which includes unclear), or fails.
 

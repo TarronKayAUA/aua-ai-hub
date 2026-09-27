@@ -10,13 +10,13 @@ action:
 
 # Worked Example: Practice Questions from a Lecture
 
-<span class="meta-chip">For students</span><span class="meta-chip">About 7 minutes</span>
+<span class="meta-chip">Students</span><span class="meta-chip">About 7 minutes</span>
 
 What a session with the National Board of Medical Examiners (NBME)-style question tutor looks like, from pasting a lecture to the first explained answer, and what to check before you trust it.
 
 The lecture and the student's replies are invented for this example. Claude's messages are its real output, unedited. The same prompt can word things differently each time and in each tool, so your session may differ in the details.
 
-## What went in
+## What Went In
 
 The prompt, then five slides from a Year 1 renal physiology lecture, given to Claude together. In a course Project, the prompt goes in the instructions and the slides in the files. The intended workflow is the same there; check that the tutor lists the right objectives and works from the lecture you meant.
 
@@ -59,11 +59,11 @@ The prompt, then five slides from a Year 1 renal physiology lecture, given to Cl
 
 Your course slides and notes make the best source, since your in-house exams are written from them. Question-bank and NBME items are a different matter: they are licensed content, and the license may not allow this use (the policy's [intellectual property section](../governance/policy.md#intellectual-property-rights-and-copyright-issues) covers licensed material).
 
-## The prompt
+## The Prompt
 
-The [NBME-style question tutor](../prompts/index.md#nbme-style-question-tutor) from the Prompt Library, word for word, as it stood in September 2026. It lists your objectives and waits for you to confirm them, then asks one question at a time and explains only after you answer. "NBME-style" names the format it aims for; its questions are not written, reviewed, or endorsed by the NBME.
+The [NBME-Style Question Tutor](../prompts/index.md#nbme-style-question-tutor) from the Prompt Library, word for word, as it stood in September 2026. It lists your objectives and waits for you to confirm them, then asks one question at a time and explains only after you answer. "NBME-style" names the format it aims for; its questions are not written, reviewed, or endorsed by the NBME.
 
-## What came back
+## What Came Back
 
 **Output from Claude, September 2026, unedited; run on the corrected input.** An earlier draft of these slides had imprecise lines, listed under [What we changed](#what-we-changed); they were corrected and the session run again, so everything below comes from the slides as shown above. Three messages. The two short replies between them are the student's, and are invented.
 
@@ -114,7 +114,7 @@ The [NBME-style question tutor](../prompts/index.md#nbme-style-question-tutor) f
 
     Want one more question on this objective before we move on?
 
-## What to check
+## What to Check
 
 The tutor is told to work only from your slides. These are the lines a careful student checks, and why.
 
@@ -126,7 +126,7 @@ The tutor is told to work only from your slides. These are the lines a careful s
 6. **"Objective 2, 2nd order."** The order is the tutor's own label, counting linked steps; it does not measure difficulty. Here the stem's findings do decide the answer, but they are two facts from your slides, restated, so this is mostly linked recall. For application practice, ask for a question whose clinical or experimental findings have to be used to reach the answer, still from your slides only; if the slides cannot support one, the prompt tells the tutor to say so.
 7. **The percentages.** These match your slides. Published figures differ (the proximal tubule is often given as 65 to 70%, the distal convoluted tubule as 5 to 10%), so if a textbook disagrees with your slides, ask your instructor which figures the course expects.
 
-## What we changed
+## What We Changed
 
 **The slides, before this run.** A review found imprecise lines in the earlier draft. They were corrected and the session run again from the start; nothing in Claude's messages was edited.
 

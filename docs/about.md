@@ -14,7 +14,7 @@ For general feedback about the site, the [feedback form](https://forms.office.co
 
 The AUA AI Hub is a curated reference and news site on artificial intelligence (AI) for the faculty, staff, and students of AUACOM. It is maintained by the Associate Dean of AI in Medical Education, who also chairs the institution's AI Committee. The site favors accuracy and restraint over novelty: fewer items, verified, in plain language.
 
-## How content is selected {: #how-content-is-selected }
+## How Content Is Selected {: #how-content-is-selected }
 
 Most of this site is written and reviewed by people; the News, Videos, and Podcasts sections and the LiveBench table on the Benchmarks page are produced by an automated pipeline that runs several times a day. Here is exactly what it does:
 
@@ -68,7 +68,7 @@ Most of this site is written and reviewed by people; the News, Videos, and Podca
 ??? note "How automated changes are gated, in detail"
     A change is applied automatically only when every mechanical gate passes: it must be grounded in the item's own official page, the details must be coherent, and date changes must hold across two consecutive checks. Every automatic change lands in the public data files with a comment recording when and how it was verified, so the full audit trail is one click away in the site's repository. Tool governance statuses, prompt review statuses, the policy text, and all removals are never changed by automation, and anything that fails a gate is escalated to the maintainer instead of applied.
 
-## Governance note
+## Governance Note
 
 The university's [AI Responsible Use Policy](governance/policy.md) and the [AI Committee](governance/committee.md) are published in the Governance section. The [tools directory](tools/index.md) shows the institution's relationship with each tool, with committee review available on request, and the [prompt library](prompts/index.md) marks each prompt Draft or Reviewed, a status that is provisional until the committee ratifies its review process. The policy is the only institutional policy on this site. The playbooks, prompts, and other guidance are suggested practice, offered with the reasons they help; where a page summarizes the policy, the policy's own text governs.
 
@@ -80,7 +80,7 @@ This site sets no cookies and runs no advertising scripts. Page fonts load from 
 
 This site is informational. Summaries of news, videos, and podcasts are machine-written and can contain errors, so the linked sources are the reference. Listings on this site are not endorsements, and benchmark scores are not purchasing advice. Nothing here is clinical guidance or legal advice.
 
-## The maintainer
+## The Maintainer
 
 <div class="maintainer-card">
 <img class="maintainer-photo" src="../assets/profile.jpg" alt="Portrait of Dr. Tarron Kayalackakom">
@@ -89,7 +89,7 @@ This site is informational. Summaries of news, videos, and podcasts are machine-
 </div>
 </div>
 
-## Comments and feedback {: #comments-and-feedback }
+## Comments and Feedback {: #comments-and-feedback }
 
 The site's [accessibility statement](accessibility.md) describes what has been checked, what is known to be imperfect, and how to report a barrier.
 

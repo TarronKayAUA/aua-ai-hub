@@ -500,7 +500,7 @@
   last_reviewed: 2026-09-01
   blurb: Open-source speech-to-text model that transcribes audio recordings on your own computer.
 
-- name: Microsoft Teams transcription
+- name: Microsoft Teams Transcription
   vendor: Microsoft
   category: meetings_transcription
   url: https://support.microsoft.com/en-us/teams/meetings/start-stop-and-download-live-transcripts-in-microsoft-teams-meetings

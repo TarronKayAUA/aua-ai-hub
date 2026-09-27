@@ -2,7 +2,7 @@
 last_reviewed: 2026-09-03
 ---
 
-# I fixed software I cannot read
+# I Fixed Software I Cannot Read
 
 <span class="meta-chip">For anyone thinking of contributing to open source</span><span class="meta-chip">About 9 minutes</span> <span class="meta-note">A worked example, in someone else's codebase, with an ending I did not control.</span>
 
@@ -16,7 +16,7 @@ So in July 2026 I forked the official version myself and built an HDR capture pa
 
 This is an account of what that involved, and rather more usefully, of what it involved refusing.
 
-## The reading came first
+## The Reading Came First
 
 The first commit in my fork contains no code at all. It is a document, and its opening line describes itself as an "archaeology record completed before implementation".
 
@@ -37,7 +37,7 @@ I want to be precise about why that list exists, because it is the whole method.
 
 What I could do was decide the boundaries in advance, in language I understood perfectly well, and then hold them when it became inconvenient. Scope, defaults, fallbacks, and what happens on failure are all decidable without reading a line of anything.
 
-## What it does
+## What It Does
 
 Thirty-six commits over eight days. Display discovery for HDR-capable monitors, a capture path through the Windows desktop duplication interface, tone-mapping shaders (small programs on the graphics card that squeeze HDR brightness into a range any screen can show), and three files out of one capture: an ordinary image for normal use, a lossless file preserving the full high dynamic range data, and a modern format that displays correctly on both HDR and ordinary screens.
 
@@ -65,7 +65,7 @@ It works. I have been using it since July.
 <figcaption>The whole design, including the part I care most about. The dashed line is the only branch I was truly qualified to specify.</figcaption>
 </figure>
 
-## Four builds, each named after a defect
+## Four Builds, Each Named after a Defect
 
 The work is not really thirty-six commits. It is four successive builds, and their folder names on my machine are the clearest record of the method I have:
 
@@ -86,7 +86,7 @@ The fourth is about matching what the screen was actually presenting at the mome
 
 I want to be clear that I did not diagnose any of these in code. What I did was look at output, on real screens, and say that something was wrong before I knew why. Every one of these was found by looking, not by reading, which is the only diagnostic move available to me and turns out to be a surprisingly powerful one. Banding is invisible in a source file and obvious in a sky.
 
-## The part I am actually proud of
+## The Part I Am Actually Proud Of
 
 The last third of the project is not features at all.
 
@@ -100,7 +100,7 @@ Switching it off cost me a feature and cost my users convenience. It was still o
 
 Nobody asked me to do that. It is the part of the work I am most confident about, and it required no technical skill whatsoever, which I suspect is not a coincidence.
 
-## What I could not test
+## What I Could Not Test
 
 The plan document ends with a validation note that I have come to think of as the most honest thing in the repository.
 
@@ -119,7 +119,7 @@ The comment I left on that thread included four words:
 
 That was not modesty and it was not charm. It was the single most useful piece of information I could give somebody deciding whether to run an unsigned screenshot utility written by a stranger on the internet.
 
-## What happened eight days later
+## What Happened Eight Days Later
 
 The maintainer of the official project shipped HDR tone mapping into ShareX itself.
 
@@ -139,7 +139,7 @@ The receptions differed rather sharply. My post drew polite curiosity. His drew 
 
 I do not think my experience settles that argument, and I would be suspicious of anyone who claimed theirs did. But the norm both of us reached for independently (say that you used it, and say what you have not verified) seems close to the minimum. It cost neither of us anything, and it is the only reason either claim can be assessed at all.
 
-## What transfers
+## What Transfers
 
 - Do the archaeology before the implementation and write it down. Pin the exact starting point, so that later failures have somewhere to be attributed other than an argument.
 - Write your list of refusals while you still have no emotional investment in the feature. It is a completely different document if you write it afterwards.

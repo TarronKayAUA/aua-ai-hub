@@ -192,6 +192,11 @@ class Block:
             return "chrome"
         if t in PROSE:
             return "prose"
+        # A prompt page's side of "The prompt" (its length, the fill-in
+        # panel, its worked example): it introduces the prompt text, so it
+        # sits beside it as a paragraph would (layout_prompt_pages.py).
+        if t == "div" and "pp-side" in c:
+            return "prose"
         if t == "div" and len(re.findall(r"<h2\b", self.html)) >= 2 and not self._grid():
             return "terms"
         if t == "figure":

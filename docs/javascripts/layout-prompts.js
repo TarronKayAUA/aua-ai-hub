@@ -381,9 +381,89 @@
       }
     }
 
+    /* Prompt page: Fill In Your Details. Each field fills its blanks in
+       the prompt text as the reader types (the <mark>s the build put
+       round them); Copy with my answers copies the stored prompt with the
+       answers spliced into the exact places the build recorded, any empty
+       field's blank left as written; Clear empties them all. The answers
+       live only in these fields: nothing is stored or sent. Without
+       JavaScript the panel is a "Have ready" list instead. */
+    var fill = document.querySelector("[data-pp-fill]");
+    var fillSource = document.getElementById("prompt-fill-source");
+    var textSource = document.getElementById("prompt-text-source");
+    if (fill && fillSource && textSource) setupFill(fill, fillSource, textSource);
+
     /* Prompt page: layout-nav.js docks a copy of Copy prompt (a
        button.pp-copy, wired above like the others) while every Copy prompt
        on the page is out of view. */
+  }
+
+  function setupFill(panel, fillSource, textSource) {
+    var spec, original;
+    try {
+      spec = JSON.parse(fillSource.textContent);
+      original = JSON.parse(textSource.textContent);
+    } catch (err) {
+      return;
+    }
+    var inputs = Array.prototype.slice.call(panel.querySelectorAll("[data-fill]"));
+    var marks = {};
+    Array.prototype.forEach.call(document.querySelectorAll("mark.pp-blank"), function (m) {
+      var id = m.getAttribute("data-fill");
+      (marks[id] = marks[id] || []).push(m);
+      m.setAttribute("data-blank", m.textContent);
+    });
+    var status = panel.querySelector(".pp-fill__status");
+    var copy = panel.querySelector(".pp-fill-copy");
+    var clear = panel.querySelector(".pp-fill-clear");
+    var copyLabel = copy.textContent;
+
+    function paint(input) {
+      var value = input.value;
+      (marks[input.getAttribute("data-fill")] || []).forEach(function (m) {
+        var on = value.trim() !== "";
+        m.textContent = on ? value : m.getAttribute("data-blank");
+        m.classList.toggle("is-filled", on);
+      });
+    }
+    function filled() {
+      var byId = {};
+      inputs.forEach(function (i) { byId[i.getAttribute("data-fill")] = i.value; });
+      var cuts = [];
+      spec.forEach(function (field) {
+        var value = byId[String(field.id)];
+        if (!value || value.trim() === "") return;
+        field.spans.forEach(function (span) { cuts.push([span[0], span[1], value]); });
+      });
+      cuts.sort(function (a, b) { return b[0] - a[0]; });
+      var text = original;
+      cuts.forEach(function (c) { text = text.slice(0, c[0]) + c[2] + text.slice(c[1]); });
+      return text;
+    }
+    inputs.forEach(function (input) {
+      input.addEventListener("input", function () { paint(input); });
+    });
+    copy.addEventListener("click", function () {
+      writeClipboard(filled()).then(function (ok) { done(ok); }, function () { done(false); });
+    });
+    function done(ok) {
+      clearTimeout(copy._ppTimer);
+      copy.textContent = ok ? "Copied with your answers" : "Copy failed";
+      status.textContent = ok ? "Copied the prompt with your answers. Paste it into your assistant."
+                              : "Could not copy. Select the prompt text and copy it instead.";
+      copy._ppTimer = setTimeout(function () {
+        copy.textContent = copyLabel;
+        status.textContent = "";
+      }, 2400);
+    }
+    clear.addEventListener("click", function () {
+      inputs.forEach(function (input) { input.value = ""; paint(input); });
+      status.textContent = "Cleared.";
+      if (inputs[0]) inputs[0].focus();
+    });
+    var ready = panel.parentNode.querySelector(".pp-fill__ready");
+    if (ready) ready.hidden = true;
+    panel.hidden = false;
   }
 
   if (document.readyState === "loading") {

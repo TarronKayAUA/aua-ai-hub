@@ -4,7 +4,7 @@ last_reviewed: 2026-09-01
 
 # Running Models Locally
 
-<span class="meta-chip">For everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">A working local model by the end</span>
+<span class="meta-chip">Everyone</span><span class="meta-chip">About 10 minutes</span> <span class="meta-note">A working local model by the end</span>
 
 Every assistant in the [tools directory](index.md) runs in a vendor's cloud: what you type travels to their servers. There is another way. The [open-weights models](index.md#open-weights-models) at the bottom of the directory can be downloaded and run entirely on your own computer, where nothing you type leaves the machine. This page is a practical starting point.
 
@@ -36,7 +36,7 @@ Running a model locally takes the vendor out of the picture: nothing you type is
 <figcaption>Privacy is the headline reason to run locally: the middle lane is the only one where nothing leaves.</figcaption>
 </figure>
 
-## What you need
+## What You Need
 
 Memory is the main constraint. A model has to fit in your computer's memory (RAM), or better, in the video memory of a graphics card (a graphics processing unit, or GPU). Most local models are used in quantized form, meaning compressed versions that trade a small amount of quality for a much smaller size. Rough expectations:
 
@@ -47,25 +47,25 @@ Memory is the main constraint. A model has to fit in your computer's memory (RAM
 
 For the full picture (what tokens per second feels like, why video memory beats system memory, quantization trade-offs, mixture-of-experts models, and an interactive estimator for your own machine), see [Hardware for Local AI](hardware.md).
 
-## The simple path: a local chat assistant
+## The Simple Path: A Local Chat Assistant
 
 1. **Install a runner.** [LM Studio](https://lmstudio.ai) is the simplest start: a desktop application where you browse models, click download, and chat, no command line involved. [Ollama](https://ollama.com) works from the command line and also has its own desktop chat app, and it pairs with [Open WebUI](https://openwebui.com) if you want a browser chat interface on top. All three are free for local use and listed in the [directory](index.md).
 2. **Pick a small model first.** Start with something in the 4 billion parameter class (a small Gemma or Qwen variant), confirm it runs smoothly, then work upward to the largest model your memory allows. The [open-weights section](index.md#open-weights-models) lists the major families, the [Benchmarks page](../benchmarks.md) tracks how they currently rank, and both runners show curated, ready-to-download versions of all of them.
 3. **Calibrate expectations.** Replies stream more slowly than cloud assistants, knowledge cutoffs are real, and there is no web search unless you add one. Smaller local models make the same kinds of mistakes as cloud assistants, and more of them; the [misconceptions page](../basics/misconceptions.md) covers what to watch for.
 
-## Beyond chat: images, video, and voice
+## Beyond Chat: Images, Video, and Voice
 
 Text is the simple case. Open-weights models also exist for image generation, video generation, speech-to-text, and text-to-speech, and a different tool is standard there: [ComfyUI](https://www.comfy.org), a free, open-source application where you assemble model pipelines visually by connecting nodes on a canvas. It is the standard way to run the Stable Diffusion family and newer open image and video models locally. The learning curve is steeper than a chat runner, and image and video models generally want more video memory than text models, but the community templates make the first steps manageable.
 
 For voice, [Whisper](https://github.com/openai/whisper) (already in the directory) transcribes speech to text entirely on your machine, and open text-to-speech models are improving quickly.
 
-## When your machine cannot keep up: renting a GPU
+## When Your Machine Cannot Keep Up: Renting a GPU
 
 If a model you want will not fit in your hardware, you can rent the hardware instead: cloud providers such as Amazon Web Services (AWS) offer GPU instances by the hour, and GPU rental marketplaces like [RunPod](https://www.runpod.io) and [Vast.ai](https://vast.ai) make the same thing simpler and usually cheaper, with one-click templates for Ollama, Open WebUI, and ComfyUI. You get capability no laptop can match and pay only while the machine runs.
 
 The moment your model runs on rented hardware, your data leaves your machine, which was the headline reason to run locally in the first place. A rented GPU running an open-weights model is still more under your control than a consumer chatbot (you choose the model, nothing is retained to train on by default, and you can destroy the instance), but the data now sits in a provider's data center, so the [AI Responsible Use Policy](../governance/policy.md#responsible-use)'s section on sensitive information applies as it would to any hosted service. Add the practical frictions (per-hour billing that keeps running if you forget to shut down, and more setup than a desktop app) and the honest summary is: rent for capability and experiments, run truly locally for privacy, and use the directory's cloud tools for everyday work.
 
-## Watch: setting it up
+## Watch: Setting It Up
 
 Verified walkthroughs for two of the tools on this page. Links reviewed September 2026; check a video's date against the tool's current version.
 

@@ -4,16 +4,16 @@ last_reviewed: 2026-09-01
 
 # AI-Generated Images in Teaching
 
-<span class="meta-chip">Step-by-step guide</span><span class="meta-chip">For faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Anatomy, histology, pathology, and any teaching material where a picture carries the content</span>
+<span class="meta-chip">Step-by-Step Guide</span><span class="meta-chip">Faculty</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Anatomy, histology, pathology, and any teaching material where a picture carries the content</span>
 
 **The short version:** artificial intelligence (AI) image generators are not a reliable source of anatomical teaching figures, the failure is not visible to a reader who does not already know the anatomy, and the alternative you want is usually a resource you have not exhausted yet rather than a generated picture.
 {: .guide-lede }
 
-## The task
+## The Task
 
 You need a figure for a session, and the view you want does not turn up in the atlas or the slide bank. An image generator will produce something in seconds. This page is about whether to use it, what it costs when you do, and what to reach for instead.
 
-## Generated pictures and rendered models are not the same thing
+## Generated Pictures and Rendered Models Are Not the Same Thing
 
 This is the distinction most worth carrying away, because it resolves the original problem rather than just forbidding an approach.
 
@@ -23,7 +23,7 @@ A **three-dimensional (3D) anatomy platform** renders a fixed model that human e
 
 If your school or library licenses one of these platforms, it is the right answer to "I need a view no atlas shows." Check with the library rather than assuming access.
 
-## Look harder before you generate
+## Look Harder Before You Generate
 
 The situation that sends people to a generator is usually this one: every figure you can find of a structure is a section, and you want it from another direction. It is tempting to conclude the view does not exist.
 
@@ -33,11 +33,11 @@ The search failed, not the literature. There is also a cost to skipping past thi
 
 Places worth trying first: the atlas plate list and its captions rather than the index, a 3D platform if you have one, a colleague who teaches the region, a librarian, and the radiology literature for the corresponding imaging plane.
 
-## The one workflow with evidence behind it
+## The One Workflow with Evidence Behind It
 
 It is not generation. In a 2026 study, AI editing of an already accurate human-made illustration was ranked at or near the top by expert anatomy lecturers on accuracy and overall quality, while images generated from a text prompt were not ([Erolin, 2026](https://doi.org/10.1080/17453054.2026.2692359)). If you have a correct figure and need it adjusted, recolored, relabeled, or cropped, that is a different and better-supported use than asking for a structure to be drawn from nothing. Start from a figure you own or have the right to modify. Third-party licensed material, such as an atlas or textbook figure, needs one more step: its license terms may not cover uploading it to an AI tool, and the policy's [intellectual property section](../governance/policy.md#intellectual-property-rights-and-copyright-issues) covers licensed material. The correctness comes from the illustration you started with, so it still needs checking after the edit.
 
-## Using a flawed image on purpose
+## Using a Flawed Image on Purpose
 
 Asking students to find what is wrong with an inaccurate image is real pedagogy, and it is a reasonable instinct when you are looking at a figure you have already made. Several things are worth knowing before you build a session around it.
 
@@ -57,7 +57,7 @@ The evidence points to four conditions that give the format its best chance:
 
 Meeting all four is not a guarantee. The ophthalmic study already showed each flawed image beside its correct counterpart and gave immediate feedback naming every error, which is two of these four conditions, and still found no knowledge gain. One more point: the only outcomes that moved in that study were self-reported, and in the 2023 experiments where students generated and corrected their own errors, learners could not tell which condition had helped them, even after being tested. Positive student feedback is not evidence that the exercise taught the anatomy.
 
-## Before you rely on any of it
+## Before You Rely on Any of It
 
 - Whatever a tool contributed, the figure you show is yours, so it needs checking like anything else you put in front of students. For an anatomical figure, that means someone who knows the anatomy checking the anatomy; asking a colleague when you are unsure is also what the [AI Responsible Use Policy](../governance/policy.md) suggests.
 - Labels are the one failure you can check without knowing the structure. Typography in generated images has improved, but a legible word is not the same as the right word in the right place.
@@ -66,7 +66,7 @@ Meeting all four is not a guarantee. The ophthalmic study already showed each fl
 
 Students are meeting these tools too, and generating their own study figures. The student-facing version of this guidance is on the [Common Misconceptions](../basics/misconceptions.md) page.
 
-## Why a wrong picture is worse than no picture
+## Why a Wrong Picture Is Worse Than No Picture
 
 Two findings, from separate literatures, meet here.
 
@@ -76,7 +76,7 @@ Misunderstandings of core biomedical concepts then prove stubborn. In a two-tier
 
 No one has run the study that joins these two findings, but the prediction is not subtle. An inaccurate image shown at first exposure is memorable, it arrives with the authority of a teaching slide, and it produces the kind of confident belief that later correction struggles against.
 
-## What the evidence says about these tools
+## What the Evidence Says about These Tools
 
 Peer-reviewed evaluations are consistent, and specific enough to be useful:
 
@@ -94,4 +94,4 @@ Read those figures with one caveat. Published evaluations lag the products: the 
 !!! note "This is unreliability, not uniform failure"
     The same *Clinical Anatomy* comparison found that all four generators produced accurate gross brain reconstructions, two of the four produced anatomically correct hearts, and one produced a satisfactory hand skeleton and sternum while the other three misrendered them. Models have also improved measurably between generations. The problem is not that everything comes out wrong; it is that you cannot tell which parts did. General-purpose vendors describe their image models in terms of speed, resolution, and visual quality, never clinical correctness, and none documents medical or anatomical validation. Where a specialist tool does advertise anatomical accuracy, its own instructions still tell you to have a clinician review the output.
 
-**Related:** [Image Generation Benchmarks](../benchmarks/image.md) for how these models are ranked, and [Preparing a Lecture](lecture-prep.md) for the session the figure belongs to.
+**Related:** [Preparing a Lecture](lecture-prep.md) for the session the figure belongs to, and [Image Generation Benchmarks](../benchmarks/image.md) for how these models are ranked.

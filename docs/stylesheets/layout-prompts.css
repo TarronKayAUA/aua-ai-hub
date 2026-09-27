@@ -924,3 +924,156 @@
 .md-typeset h2#the-prompt {
   scroll-margin-top: 5rem;
 }
+
+/* --- Beside the prompt text (polish round, 2026-09-27) ----------------------
+   The track beside the prompt holds its length, the fill-in panel and the
+   worked example (layout_prompt_pages.py _side). On wide screens the side
+   stays in view while the long prompt beside it scrolls (a sticky grid
+   item within the leaf), capped at the screen's height so the fits-one-
+   screen check in layout-width.js never has to stack it. On narrow
+   screens it comes before the prompt, in reading order. */
+.md-typeset .pp-side__inner > * + * {
+  margin-top: 1rem;
+}
+
+.md-typeset .pp-side .pp-text-intro {
+  margin: 0;
+}
+
+@media screen and (min-width: 68.75em) {
+  .w-leaf > .w-leaf__side:has(> .pp-side) {
+    position: sticky;
+    top: 5.5rem;
+  }
+  .md-typeset .pp-side__inner {
+    max-height: calc(100vh - 8rem);
+    overflow-y: auto;
+  }
+}
+
+.md-typeset .pp-fill {
+  padding: 0.85rem 1rem 0.9rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.5rem;
+  background: var(--hub-quiet-bg);
+}
+
+.md-typeset .pp-fill h3 {
+  margin: 0 0 0.15rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.md-typeset .pp-fill__privacy {
+  margin: 0 0 0.75rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .pp-fill__lead {
+  margin: 0 0 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.md-typeset .pp-fill__ready ul {
+  margin: 0;
+  font-size: 0.72rem;
+}
+
+.md-typeset .pp-fill__label {
+  font-weight: 700;
+}
+
+.md-typeset .pp-fill__form[hidden],
+.md-typeset .pp-fill__ready[hidden] {
+  display: none;
+}
+
+.md-typeset .pp-fill__field {
+  margin: 0 0 0.7rem;
+}
+
+.md-typeset .pp-fill__field label {
+  display: block;
+  margin: 0 0 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.md-typeset .pp-fill__field :is(input, textarea) {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 2rem;
+  margin: 0;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-color);
+  font: inherit;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+.md-typeset .pp-fill__field textarea {
+  min-height: 4.4rem;
+  resize: vertical;
+}
+
+.md-typeset .pp-fill__field :is(input, textarea):focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 1px;
+}
+
+.md-typeset .pp-fill__hint {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.65rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+  overflow-wrap: anywhere;
+}
+
+.md-typeset .pp-fill__bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.md-typeset .pp-fill__bar .md-button {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+.md-typeset .pp-fill__status {
+  min-height: 1em;
+  margin: 0.4rem 0 0;
+  font-size: 0.68rem;
+}
+
+/* The blanks in the prompt text: marked with a dashed rule until filled,
+   then highlighted with the reader's words in place. */
+.md-typeset mark.pp-blank {
+  padding: 0;
+  border-bottom: 1px dashed currentColor;
+  background: none;
+  color: inherit;
+}
+
+.md-typeset mark.pp-blank.is-filled {
+  border-bottom-style: solid;
+  background: var(--md-typeset-mark-color);
+}
+
+.md-typeset .pp-example__lead {
+  margin: 0 0 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
