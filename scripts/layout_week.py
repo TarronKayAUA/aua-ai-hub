@@ -14,7 +14,8 @@ content (on_page_content), and so reaches every archived week too:
 
 1. THE BRIEF (This Week and the three feed pages). The lede stays, the
    continuation paragraphs move into a plain disclosure labelled "Read the
-   rest of this week's brief" directly under it, and the player (when its
+   rest of this week's brief" directly under it (ending in a "Hide the rest
+   of this week's brief" button that folds it again), and the player (when its
    audio exists) and the "The picture as of" line sit under that, outside
    the disclosure, so Listen is never hidden. A brief with no continuation
    gets no disclosure. Nothing is reworded; the narration reads the
@@ -35,6 +36,15 @@ content (on_page_content), and so reaches every archived week too:
    two columns. On This Week, the first ten videos show (two rows of five)
    and the rest stay behind "Show the other N videos", its count updated.
 
+4. THE FEED PAGES (week round, part 2). Each feed page's brief, chips and
+   items go in one news-hue panel on the full frame, the items in a grid
+   that fills the frame in rows (layout-news.css).
+
+Wherever a list runs in more than one column (the feed pages, a digest's
+wide feed), it is a grid: items line up across each row, read left to
+right then down, and every item has the same rule under it, the last
+row's clipped, so no column starts with a rule.
+
 Every page it touches is checked: removing the wrappers this hook inserted
 (and the horizontal rules it dropped between sections) gives back the
 content exactly, so no block is lost, duplicated or reordered. The build
@@ -50,6 +60,7 @@ WEEK = "news/this-week.md"
 DIGEST = re.compile(r"news/archive/\d{4}-w\d{2}\.md")
 FEED_PAGES = {"news/medical-education.md", "news/clinical-practice.md", "news/general-ai.md"}
 BRIEF_LABEL = "Read the rest of this week's brief"
+HIDE_LABEL = "Hide the rest of this week's brief"
 VISIBLE_VIDEOS = 10          # two rows of five across the frame
 
 _S: dict = {}
@@ -95,9 +106,14 @@ def _brief(html: str, src: str) -> str:
         fold = ""
         if paras:
             _S["folds"] += 1
+            # The way back sits at the end of the continuation. It ships
+            # hidden and layout-news.js reveals it, so without JavaScript
+            # there is no dead button (the native summary closes the fold).
             fold = ('<details class="section-brief-more">'
                     f'<summary data-search-exclude="">{BRIEF_LABEL}</summary>'
-                    + "\n".join(paras) + "</details>\n")
+                    + "\n".join(paras)
+                    + f'\n<button type="button" class="section-brief-hide" data-search-exclude="" hidden>'
+                    f"{HIDE_LABEL}</button></details>\n")
         return fold + "\n".join(listen + date)
     new, n = _BRIEF.subn(fix, html)
     if "section-brief-more" in html and not n:
@@ -251,6 +267,32 @@ def _arrange_body(html: str, src: str) -> str:
     return "".join(out)
 
 
+def _feed_page(html: str, src: str) -> str:
+    """A feed page's brief, chips and items in one news-hue panel on the
+    full frame (week round, part 2): everything from the brief to the end of
+    the list, the page's own "Show the other N" included, before the page's
+    ending."""
+    start = html.find('<div class="section-brief">')
+    if start == -1:
+        start = html.find('<div class="topic-chips"')
+    if start == -1:
+        start = html.find('<div class="news-list')
+    tail_m = _TAIL.search(html, max(start, 0))
+    end = tail_m.start() if tail_m else len(html)
+    if start == -1 or 'class="news-list' not in html[start:end]:
+        raise ValueError(f"layout_week: {src}: no feed to put in a panel")
+    h1 = re.search(r'<h1 id="([^"]+)"', html)
+    label = f' aria-labelledby="{h1.group(1)}"' if h1 else ""
+    nav = _nav()
+    kind = nav.kind_of(src) if nav else None
+    kattr = f' data-kind="{kind}"' if kind else ""
+    body = html[start:end].rstrip()
+    items = body.count('class="news-card"')
+    _S["pages"][src] = [f"feed panel, {items} items in rows"]
+    return (html[:start] + f'<section class="wk-feed wk-feed--page ne-card kind-block"{kattr}{label}>'
+            + body + "</section>\n" + html[end:])
+
+
 def _text(s: str) -> str:
     return re.sub(r"\s+", "", re.sub(r"<[^>]+>", "", _HR.sub("", s)))
 
@@ -282,11 +324,14 @@ def on_page_content(html, page, config, files):
     if src == WEEK or DIGEST.fullmatch(src):
         before, html = html, _arrange(html, src)
         _check_arrange(before, html, src)
+    if src in FEED_PAGES:
+        before, html = html, _feed_page(html, src)
+        _check_arrange(before, html, src)
     return html
 
 
 def on_post_build(config):
-    print("layout_week: This Week and the weekly digests")
+    print("layout_week: This Week, the weekly digests and the feed pages")
     print(f"  briefs restructured : {_S['briefs']} ({_S['folds']} with a continuation to fold)")
     print(f"  pages arranged      : {len(_S['pages'])}")
     for src, shapes in sorted(_S["pages"].items()):
@@ -294,3 +339,6 @@ def on_post_build(config):
     print(f"  videos moved up     : {_S['videos_moved']} (This Week shows {VISIBLE_VIDEOS})")
     if WEEK not in _S["pages"]:
         raise AssertionError("layout_week: This Week was not arranged")
+    missing = FEED_PAGES - set(_S["pages"])
+    if missing:
+        raise AssertionError(f"layout_week: feed pages not put in a panel: {sorted(missing)}")

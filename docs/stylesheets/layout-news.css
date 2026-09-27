@@ -117,8 +117,34 @@
     box-shadow: 0 1px 0 var(--hub-row-rule), 0 0.3rem 0.5rem -0.3rem rgba(0, 0, 0, 0.15);
   }
 
-  .md-content__inner:has(> .section-chips) > h2 {
+  .md-content__inner:has(> .section-chips) > h2,
+  .md-content__inner:has(> .section-chips) .wk-feed > h2 {
     scroll-margin-top: 3rem;
+  }
+}
+
+/* A feed chip's panel, for a moment after the chip is used
+   (layout-news.js): an outline that fades, or stays still and then goes
+   under reduced motion. The heading inside takes focus without a ring of
+   its own. */
+.md-typeset .wk-feed {
+  transition: outline-color 1.4s ease-out;
+  outline: 3px solid transparent;
+  outline-offset: 3px;
+}
+
+.md-typeset .wk-feed.is-picked {
+  outline-color: var(--hub-focus);
+  transition: none;
+}
+
+.md-typeset .wk-feed > h2[tabindex="-1"]:focus {
+  outline: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .wk-feed {
+    transition: none;
   }
 }
 
@@ -589,14 +615,31 @@
   .md-typeset .wk-feed--wide {
     grid-column: span 2;
   }
-  .md-typeset .wk-feed--wide .news-list {
-    display: block;
-    columns: 2;
-    column-gap: 1.6rem;
+  .md-typeset .wk-feed.wk-feed--wide .news-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .md-typeset .wk-feed--wide .news-card {
-    break-inside: avoid;
-  }
+}
+
+/* A list in more than one column (a digest's wide feed, the feed pages):
+   a grid, so items line up across each row and read left to right then
+   down. Every item has the same rule under it, none above; the list clips
+   its last pixel, which is the last row's rule, so no column starts or
+   ends with a stray line. A row's items stretch to its height, so the
+   rules of one row sit level. */
+.md-typeset .wk-feed.wk-feed--wide .news-list,
+.md-typeset .wk-feed.wk-feed--page .news-list {
+  display: grid;
+  column-gap: 1.6rem;
+  align-items: stretch;
+  clip-path: inset(0 0 1px 0);
+}
+
+.md-typeset .wk-feed--wide .news-list > .news-card,
+.md-typeset .wk-feed--page .news-list > .news-card,
+.md-typeset .wk-feed--wide .news-list > .news-card:first-child,
+.md-typeset .wk-feed--page .news-list > .news-card:first-child {
+  border-top: 0;
+  border-bottom: 1px solid var(--hub-row-rule);
 }
 
 .md-typeset .wk-feed.ne-card {
@@ -699,6 +742,37 @@
   margin: 0.6rem 0 0.2rem;
 }
 
+/* While a topic is chosen, the collapsed tier's matches carry on the list
+   (docs/javascripts/topics.js marks it .is-merged): no header, no box, no
+   gap, one separator rule between every two items and none above the first
+   match (.is-lead). */
+.md-typeset details.is-merged {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.md-typeset details.is-merged > summary {
+  display: none;
+}
+
+.md-typeset details.is-merged > p {
+  margin: 0;
+}
+
+.md-typeset details.is-merged .news-list {
+  margin-top: 0;
+}
+
+.md-typeset .wk-feed details.is-merged .news-list > .news-card:first-child {
+  border-top: 1px solid var(--hub-row-rule);
+}
+
+.md-typeset .wk-feed .news-list > .news-card.is-lead,
+.md-typeset .wk-feed details.is-merged .news-list > .news-card.is-lead {
+  border-top: 0;
+}
+
 /* --- The brief's fold (This Week and the feed pages) -------------------------
    The continuation is the same text carrying on: a quiet link-coloured
    summary, then plain paragraphs, no box. Listen and the date line follow,
@@ -737,8 +811,42 @@
   outline-offset: 2px;
 }
 
-.md-typeset .section-brief > details.section-brief-more[open] > summary {
+/* Opened, the label gives way so the continuation reads straight on from
+   the lede; the "Hide the rest" button at its end folds it again. Only when
+   that button works (layout-news.js adds .has-hide): without JavaScript the
+   label stays and closes the fold. */
+.md-typeset .section-brief > details.section-brief-more.has-hide[open] > summary {
   display: none;
+}
+
+.md-typeset .section-brief > details.section-brief-more > .section-brief-hide {
+  display: inline-block;
+  min-height: 1.6rem;
+  margin: 0 0 0.2rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--md-typeset-a-color);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.md-typeset .section-brief > details.section-brief-more > p[tabindex="-1"]:focus {
+  outline: none;
+}
+
+.md-typeset .section-brief > details.section-brief-more > .section-brief-hide[hidden] {
+  display: none;
+}
+
+.md-typeset .section-brief > details.section-brief-more > .section-brief-hide:hover {
+  text-decoration: underline;
+}
+
+.md-typeset .section-brief > details.section-brief-more > .section-brief-hide:focus-visible {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
 }
 
 .md-typeset .section-brief > details.section-brief-more > p {
@@ -898,4 +1006,53 @@
 .md-typeset:has(> .wk-feeds) > p,
 .md-typeset:has(> .wk-brief) > p {
   max-width: 44rem;
+}
+
+/* --- The feed pages (week round, part 2) -------------------------------------
+   Medical Education, Clinical Practice and General AI in the This Week
+   look: one news-hue panel on the full frame (scripts/layout_week.py), the
+   brief across its top (two columns once opened), the Topic chips, then the items as
+   a grid in rows: three across from 76em, two from 60em, one on phones. */
+.md-typeset:has(> .wk-feed--page) > p {
+  max-width: 44rem;
+}
+
+.md-typeset .wk-feed--page.ne-card {
+  margin: 0.4rem 0 1.6rem;
+  padding: 1rem 1.2rem 0.8rem;
+}
+
+.md-typeset .wk-feed.wk-feed--page .news-list {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .wk-feed.wk-feed--page .news-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* Closed, the brief is the lede at a reading measure with its fold
+     label under it; opened, the whole text runs in two columns across the
+     panel. */
+  .md-typeset .wk-feed--page .section-brief {
+    max-width: 48rem;
+  }
+  .md-typeset .wk-feed--page .section-brief:has(> details[open]) {
+    max-width: none;
+    columns: 2;
+    column-gap: 2.4rem;
+  }
+  .md-typeset .wk-feed--page .section-brief > .section-brief-lede,
+  .md-typeset .wk-feed--page .section-brief > details > p {
+    break-inside: avoid;
+  }
+  .md-typeset .wk-feed--page .section-brief > .listen,
+  .md-typeset .wk-feed--page .section-brief > .section-brief-date {
+    column-span: all;
+  }
+}
+
+@media screen and (min-width: 76em) {
+  .md-typeset .wk-feed.wk-feed--page .news-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }

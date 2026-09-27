@@ -1,4 +1,4 @@
-Week round: READY
+Week round: IN PROGRESS (part 2), five fixes built, running the full checks
 
 # Week Round Status (resume point)
 
