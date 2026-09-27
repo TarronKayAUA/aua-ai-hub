@@ -1685,6 +1685,22 @@
   color: var(--md-typeset-color);
 }
 
+/* A lesson row outside the Learn map (a hub's "Start with the Basics",
+   news round 2026-09-27): the same numbered, colored row, with the
+   explanation the page gives as its subtitle. */
+.md-typeset .route-stage--solo {
+  margin: 0.6rem 0 1rem;
+}
+
+.md-typeset .route-sub {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--md-default-fg-color--light);
+}
+
 .md-typeset .route-legend {
   margin: 0.2rem 0 1.4rem;
   font-size: 0.68rem;

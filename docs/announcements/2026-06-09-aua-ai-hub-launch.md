@@ -6,10 +6,14 @@ The AUA AI Hub is now live. This site gives the American University of Antigua C
 
 What is here today:
 
-- [AI Basics](../basics/how-llms-work.md): a plain-language primer on how large language models work, a full glossary, and a page addressing common misconceptions.
-- [Tools](../tools/index.md): a directory of AI tools with governance statuses. All statuses are provisional pending AI Committee ratification. *(Update, July 2026: the directory now uses statuses that describe the institution's relationship with each tool, and committee review is available on request; see [How Tools Are Reviewed](../governance/review-process.md).)*
-- [Learning](../learning/index.md): curated learning paths for faculty and students, from first steps to technical depth.
-- [Conferences](../conferences.md): a calendar of AI and medical education meetings with verified dates and deadlines.
+<div class="door-rows" markdown>
+
+- [AI Basics](../basics/how-llms-work.md) <span class="row-sub">A plain-language primer on how large language models work, a full glossary, and a page addressing common misconceptions.</span>
+- [Tools](../tools/index.md) <span class="row-sub">A directory of AI tools with governance statuses. All statuses are provisional pending AI Committee ratification. *(Update, July 2026: the directory now uses statuses that describe the institution's relationship with each tool, and committee review is available on request; see [How Tools Are Reviewed](../governance/review-process.md).)*</span>
+- [Learning](../learning/index.md) <span class="row-sub">Curated learning paths for faculty and students, from first steps to technical depth.</span>
+- [Conferences](../conferences.md) <span class="row-sub">A calendar of AI and medical education meetings with verified dates and deadlines.</span>
+
+</div>
 
 What is coming next: an automated news section covering general AI developments, medical education research, and clinical practice, refreshed nightly, plus a weekly highlights digest. *(Update, July 2026: both shipped. The [News section](../news/this-week.md) refreshes several times a day and the Friday digest is archived in the [news archive](../news/archive/index.md).)*
 

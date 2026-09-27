@@ -197,6 +197,10 @@ class Block:
         # sits beside it as a paragraph would (layout_prompt_pages.py).
         if t == "div" and "pp-side" in c:
             return "prose"
+        # A list of page links shown as rows (a module's Going Deeper): it is
+        # the list it was, so it is placed as the list was.
+        if t == "div" and "door-rows" in c:
+            return "prose"
         if t == "div" and len(re.findall(r"<h2\b", self.html)) >= 2 and not self._grid():
             return "terms"
         if t == "figure":

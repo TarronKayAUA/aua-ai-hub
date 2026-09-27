@@ -21,6 +21,15 @@ prefix that cannot stand alone (Pre-submission, Post-exam). A word with a
 capital after its first letter, or a digit, is taken as written (AI,
 ChatGPT, iOS, Qwen3).
 
+Row titles (title gap, 2026-09-27) are checked too: the link that titles
+a row in a hub card, door rows, the homepage routes, the Learn shelf, a
+route row or the hubs' jump chips, and every card's `card-link`. The
+section-map cards, page-foot cards, Tools & Prompts rows and prompt-page
+rows are already covered as card titles by their title classes. Left out
+by rule: a link to another site (its text is that publisher's own title,
+such as a course, a paper or a leaderboard), and a button-style link
+(`md-button`, `tp-go`: "Browse all 75 tools" stays sentence case).
+
 It reads each built page once (on_post_page, registered last so it sees
 the final HTML) and the data files and label tables once, prints counts per
 kind (CLAUDE.md rule 2) and fails the build on any violation, naming the
@@ -112,6 +121,17 @@ def _word(word: str, edge: bool) -> str:
     return lead + "-".join(done) + tail
 
 
+# Row blocks whose items are titled by their leading link (row titles).
+ROW_BLOCKS = re.compile(r'class="(?:[^"]*\s)?(?:door-rows|home-routes|learn-shelf|route-stage|hub-jobs|'
+                        r'grid cards)(?:[\s"])')
+_ROW_ITEM = re.compile(r'<li\b[^>]*>\s*(?:<span class="row-tag">[^<]*</span>\s*)?'
+                       r'(?:<span class="route-n[^"]*">[^<]*</span>\s*)?'
+                       r'(?:<span class="(?:route-text|row-pair)">)?<a\b([^>]*)>(.*?)</a>', re.S)
+_CARD_LINK = re.compile(r'<a\b([^>]*\bclass="(?:[^"]*\s)?card-link(?:\s[^"]*)?"[^>]*)>(.*?)</a>', re.S)
+# Not a row title by rule: another site's own title, or a button.
+_NOT_A_TITLE = re.compile(r'\bhref="(?:https?:)?//|\bclass="[^"]*\b(?:md-button|tp-go)\b')
+
+
 _SUBSPANS = re.compile(r'<span class="(?:secmap__here|secmap__sub|tp-row__sub|pp-rows__sub|secfoot__sub|'
                        r'secmap__tag|tp-short__who|secmap__sr|secfoot__dir|tp-tag|row-tag)">[^<]*</span>')
 
@@ -191,19 +211,7 @@ def on_post_page(output, page, config):
     # title (a group's "Optional, after the basics" tag is sentence case).
     art = _SUBSPANS.sub("", output[start:end])
     # Skip the text of figures and of names spelled by their owners.
-    spans = []
-    for m in SKIP_INSIDE.finditer(art):
-        tag_start = art.rfind("<", 0, m.start())
-        tag = re.match(r"<(\w+)", art[tag_start:])
-        if not tag:
-            continue
-        depth, pos, name = 0, tag_start, tag.group(1)
-        opener = re.compile(rf"<{name}\b|</{name}>")
-        for t in opener.finditer(art, tag_start):
-            depth += -1 if t.group(0).startswith("</") else 1
-            if depth == 0:
-                spans.append((tag_start, t.end()))
-                break
+    spans = _elements(art, SKIP_INSIDE)
     inside = lambda pos: any(a <= pos < b for a, b in spans)
     for kind, rx in _ITEM.items():
         for m in rx.finditer(art):
@@ -215,7 +223,37 @@ def on_post_page(output, page, config):
                 continue
             _S["seen"].add(key)
             _check(kind, src, text)
+    rows = _elements(art, ROW_BLOCKS)
+    in_rows = lambda pos: any(a <= pos < b for a, b in rows)
+    for rx, where in ((_ROW_ITEM, in_rows), (_CARD_LINK, lambda pos: True)):
+        for m in rx.finditer(art):
+            if inside(m.start()) or not where(m.start()) or _NOT_A_TITLE.search(m.group(1)):
+                continue
+            text = _text(m.group(2))
+            key = ("row titles", src, text)
+            if key in _S["seen"]:
+                continue
+            _S["seen"].add(key)
+            _check("row titles", src, text)
     return output
+
+
+def _elements(art: str, rx) -> list[tuple[int, int]]:
+    """The (start, end) of every element whose opening tag matches `rx`."""
+    spans = []
+    for m in rx.finditer(art):
+        tag_start = art.rfind("<", 0, m.start())
+        tag = re.match(r"<(\w+)", art[tag_start:])
+        if not tag:
+            continue
+        depth, name = 0, tag.group(1)
+        opener = re.compile(rf"<{name}\b|</{name}>")
+        for t in opener.finditer(art, tag_start):
+            depth += -1 if t.group(0).startswith("</") else 1
+            if depth == 0:
+                spans.append((tag_start, t.end()))
+                break
+    return spans
 
 
 def on_post_build(config):

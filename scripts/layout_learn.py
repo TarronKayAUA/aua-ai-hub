@@ -52,6 +52,8 @@ from pathlib import Path
 
 from mkdocs.utils import get_relative_url
 
+import title_case
+
 LANDING = "pathway/index.md"
 PREFIX = "pathway/"
 
@@ -385,6 +387,35 @@ def _mark_meta(html: str, src: str) -> str:
     return html[:j] + '<p class="learn-meta">' + html[j + 3:]
 
 
+_DEEPER = re.compile(r'(<h2 id="going-deeper">.*?</h2>\s*)<ul>(.*?)</ul>', re.S)
+_DEEPER_ITEM = re.compile(r'<li>(<a href="[^"]*">)([^<]*)</a>: (.+?)</li>', re.S)
+
+
+def _going_deeper_rows(html: str, src: str) -> str:
+    """A module's "Going Deeper" list as rows (news round, 2026-09-27): each
+    item is a page link and what it offers, so it takes the row style every
+    list of page links has, the link's kind coloring it (layout_nav.py) and
+    the explanation becoming the row's subtitle, word for word. A row title
+    is a label, so it takes title case ("Research prompts" reads "Research
+    Prompts"), letter case only. Done here, on the rendered page, because the
+    module's markdown is its narration text, which must not change."""
+    m = _DEEPER.search(html)
+    if not m:
+        raise ValueError(f"layout_learn: {src} has no Going Deeper list to present as rows")
+    items = _DEEPER_ITEM.findall(m.group(2))
+    if len(items) != m.group(2).count("<li>") or not items:
+        raise ValueError(f"layout_learn: {src}: a Going Deeper item is not a link and its "
+                         "explanation, so it cannot become a row")
+    rows = "".join(f'<li>{a}{title_case.expected(name)}</a> <span class="row-sub">{t[:1].upper() + t[1:]}</span></li>'
+                   for a, name, t in items)
+    recased = [name for _, name, _ in items if title_case.expected(name) != name]
+    assert all(title_case.expected(n).lower() == n.lower() for n in recased)
+    _S.setdefault("deeper_recased", []).extend(recased)
+    _S["deeper_rows"] = _S.get("deeper_rows", 0) + len(items)
+    _S["deeper_lists"] = _S.get("deeper_lists", 0) + 1
+    return html[:m.start()] + m.group(1) + f'<div class="door-rows"><ul>{rows}</ul></div>' + html[m.end():]
+
+
 def on_page_content(html, page, config, files):
     src = page.file.src_uri
     if src == LANDING and _S["modules"]:
@@ -398,6 +429,8 @@ def on_page_content(html, page, config, files):
         raise ValueError(f"layout_learn: {src} has no title to put the progress strip under")
     html = _mark_meta(html[:i + 5] + _strip(mod) + html[i + 5:], src)
     _S["strips"] += 1
+
+    html = _going_deeper_rows(html, src)
 
     found = list(_END_HTML.finditer(html))
     if len(found) != 1:
@@ -426,6 +459,11 @@ def on_post_build(config):
     print(f"  closing buttons : {len(_S['ends'])} of {total} ("
           + ", ".join(f"{v} {k}" for k, v in sorted(shapes.items())) + ")")
     print(f"  foot lines      : {_S['feet']} of {total}")
+    print(f"  going deeper    : {_S.get('deeper_lists', 0)} of {total} lists as rows "
+          f"({_S.get('deeper_rows', 0)} rows; titles recased to title case: "
+          f"{', '.join(_S.get('deeper_recased', [])) or 'none'})")
+    if _S.get("deeper_lists", 0) != total:
+        raise AssertionError("layout_learn: a module's Going Deeper list was not presented as rows")
     print("  footer Next     : follows the Next line"
           + (f" ({'; '.join(_S['footer_moved'])})" if _S["footer_moved"] else " (no change needed)"))
     print(f"  landing checked : {'yes' if _S['landing_checked'] else 'NO'}")

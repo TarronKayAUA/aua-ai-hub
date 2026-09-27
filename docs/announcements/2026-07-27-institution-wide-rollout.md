@@ -6,11 +6,15 @@ The AI Committee is pleased to open the AUA AI Hub to everyone at the American U
 
 Where to start, depending on what you need:
 
-- [The AI Literacy Pathway](../pathway/index.md): short plain-language modules, self-paced, no math. The core stages take about seventy minutes in total, and every module stands alone.
-- [For Students](../students.md) and [For Faculty & Staff](../faculty.md): a route into the site organized by what you actually do, from studying and score reports to lecture preparation, exam items, and administrative drafting.
-- [The Tool Directory](../tools/index.md): AI tools relevant to teaching, learning, research, and clinical education, each carrying a status that describes the institution's relationship with it. A listing is not an endorsement, and committee review of any tool can be requested.
-- [This Week](../news/this-week.md): curated AI news, videos, and podcasts from the last seven days, refreshed several times a day, with a highlights digest every Friday.
-- [Governance](../governance/index.md): the approved AI Responsible Use Policy in full, the committee behind it, and how a tool gets reviewed.
+<div class="door-rows" markdown>
+
+- [The AI Literacy Pathway](../pathway/index.md) <span class="row-sub">Short plain-language modules, self-paced, no math. The core stages take about seventy minutes in total, and every module stands alone.</span>
+- <span class="row-pair">[For Students](../students.md) and [For Faculty & Staff](../faculty.md)</span> <span class="row-sub">A route into the site organized by what you actually do, from studying and score reports to lecture preparation, exam items, and administrative drafting.</span>
+- [The Tool Directory](../tools/index.md) <span class="row-sub">AI tools relevant to teaching, learning, research, and clinical education, each carrying a status that describes the institution's relationship with it. A listing is not an endorsement, and committee review of any tool can be requested.</span>
+- [This Week](../news/this-week.md) <span class="row-sub">Curated AI news, videos, and podcasts from the last seven days, refreshed several times a day, with a highlights digest every Friday.</span>
+- [Governance](../governance/index.md) <span class="row-sub">The approved AI Responsible Use Policy in full, the committee behind it, and how a tool gets reviewed.</span>
+
+</div>
 
 Two rules apply everywhere, whatever the tool: patient information and student records never enter public AI tools. [The Policy in Practice](../pathway/rules.md), then called The Rules, covers those and the rest of the policy's expectations in about ten minutes. *(Update, September 2026: that sentence simplified the policy. The [AI Responsible Use Policy](../governance/policy.md) itself, in its own wording, is the reference for patient information and student records, and The Policy in Practice is now a short guide to it.)*
 

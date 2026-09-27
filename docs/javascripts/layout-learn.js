@@ -193,11 +193,28 @@
     markMap(modules, d);
   }
 
+  /* Lesson rows outside the Learn map (a hub's "Start with the Basics",
+     news round 2026-09-27) carry the same Opened or Finished mark. A
+     module's identifier is its page's folder name, so each row finds its
+     module from its own link; nothing is listed twice. */
+  function markRows(d) {
+    if (!d) return;
+    document.querySelectorAll(".route-stage--solo .route-text > a").forEach(function (a) {
+      var parts = new URL(a.getAttribute("href"), location.href).pathname.split("/").filter(Boolean);
+      var id = parts[parts.length - 1];
+      var state = d.done.indexOf(id) >= 0 ? "done" : d.seen.indexOf(id) >= 0 ? "seen" : "";
+      if (!state) return;
+      a.parentNode.insertBefore(el("span", "route-status route-status--" + state,
+        state === "done" ? "Finished" : "Opened"), a.nextSibling);
+    });
+  }
+
   var strip = document.querySelector("[data-learn-module]");
   if (strip) trackModule(strip);
   var slot = document.querySelector("[data-learn-continue]");
   var island = document.getElementById("learn-modules");
   if (slot && island) landing(slot, island);
+  if (document.querySelector(".route-stage--solo")) markRows(load());
 })();
 
 /* =========================================================================

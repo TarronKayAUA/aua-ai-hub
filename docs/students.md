@@ -17,9 +17,9 @@ Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use 
 <nav class="hub-jobs" aria-label="Jump to a card" markdown>
 
 - [:material-book-open-variant: Study with AI](#study-with-ai)
-- [:material-chart-line: After an exam](#after-an-exam)
-- [:material-stethoscope: On rotations](#on-rotations)
-- [:material-account-tie: Residency applications](#residency-applications)
+- [:material-chart-line: After an Exam](#after-an-exam)
+- [:material-stethoscope: On Rotations](#on-rotations)
+- [:material-account-tie: Residency Applications](#residency-applications)
 
 </nav>
 
@@ -29,7 +29,7 @@ Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use 
 
     Practice questions from your own slides, in three steps.
 
-    - <span class="row-tag">Start Here</span> [Practice questions from your slides](prompts/index.md#nbme-style-question-tutor) <span class="row-sub">National Board of Medical Examiners (NBME)-style question tutor</span>
+    - <span class="row-tag">Start Here</span> [Practice Questions from Your Slides](prompts/index.md#nbme-style-question-tutor) <span class="row-sub">National Board of Medical Examiners (NBME)-style question tutor</span>
 
     <!-- the three steps -->
 
@@ -39,12 +39,12 @@ Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use 
 
     <!-- more ways to study -->
 
-    - [See it done: practice questions from a lecture](examples/study-practice-questions.md) <span class="row-sub">A worked example with real output</span>
-    - [One notebook per course](tools/gemini-notebook.md) <span class="row-sub">Gemini Notebook (formerly NotebookLM)</span>
-    - [AI-generated anatomy images](basics/misconceptions.md#if-i-cannot-find-a-good-diagram-i-can-have-ai-generate-one) <span class="row-sub">How far to trust them</span>
-    - [Flashcards from one lecture](prompts/index.md#flashcard-builder) <span class="row-sub">Flashcard Builder</span>
-    - [All student prompts](prompts/index.md?for=students) <span class="row-sub">Prompt Library</span>
-    - [Study tools in the directory](tools/index.md?task=study) <span class="row-sub">Tool Directory</span>
+    - [See It Done: Practice Questions from a Lecture](examples/study-practice-questions.md) <span class="row-sub">A worked example with real output</span>
+    - [One Notebook per Course](tools/gemini-notebook.md) <span class="row-sub">Gemini Notebook (formerly NotebookLM)</span>
+    - [AI-Generated Anatomy Images](basics/misconceptions.md#if-i-cannot-find-a-good-diagram-i-can-have-ai-generate-one) <span class="row-sub">How far to trust them</span>
+    - [Flashcards from One Lecture](prompts/index.md#flashcard-builder) <span class="row-sub">Flashcard Builder</span>
+    - [All Student Prompts](prompts/index.md?for=students) <span class="row-sub">Prompt Library</span>
+    - [Study Tools in the Directory](tools/index.md?task=study) <span class="row-sub">Tool Directory</span>
 
 -   ## :material-chart-line:{ .lg .middle } After an Exam {: #after-an-exam }
 
@@ -75,9 +75,13 @@ Yes, you can use artificial intelligence (AI) to study: the [AI Responsible Use 
 
 The literacy pathway's first three modules are short, plain-language, and written for everyone:
 
-1. [How AI Works](pathway/how-ai-works.md) (about 10 minutes): why a chatbot's confident answer is not always a correct one.
-2. [Prompting Fundamentals](pathway/prompting.md) (about 15 minutes): the habits that most improve what you get back, starting with giving the model your actual materials.
-3. [The Policy in Practice](pathway/rules.md) (about 5 minutes): a short guide to the policy, and why its expectations work in your favor.
+<div class="route-stage route-stage--core route-stage--solo" markdown>
+
+- <span class="route-n">1</span> <span class="route-text">[How AI Works](pathway/how-ai-works.md) <span class="route-sub">Why a chatbot's confident answer is not always a correct one.</span></span> <span class="route-min">About <!-- timely:minutes pathway/how-ai-works.md --> minutes</span>
+- <span class="route-n">2</span> <span class="route-text">[Prompting Fundamentals](pathway/prompting.md) <span class="route-sub">The habits that most improve what you get back, starting with giving the model your actual materials.</span></span> <span class="route-min">About <!-- timely:minutes pathway/prompting.md --> minutes</span>
+- <span class="route-n">3</span> <span class="route-text">[The Policy in Practice](pathway/rules.md) <span class="route-sub">A short guide to the policy, and why its expectations work in your favor.</span></span> <span class="route-min">About <!-- timely:minutes pathway/rules.md --> minutes</span>
+
+</div>
 
 ## Using AI Well for Coursework {: #the-lines-that-never-move }
 

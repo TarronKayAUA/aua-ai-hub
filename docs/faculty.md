@@ -18,7 +18,7 @@ Each step-by-step guide walks one job end to end. Artificial intelligence (AI) c
 
 - [:material-school: Teaching](#teaching)
 - [:material-flask: Research](#research)
-- [:material-briefcase: Staff and administration](#staff-and-administration)
+- [:material-briefcase: Staff and Administration](#staff-and-administration)
 
 </nav>
 
@@ -31,21 +31,21 @@ Each step-by-step guide walks one job end to end. Artificial intelligence (AI) c
     - [Your Syllabus AI Statement](playbooks/syllabus-statement.md) <span class="row-sub">Templates for what students may use</span>
     - [Feedback on Student Writing](playbooks/writing-feedback.md) <span class="row-sub">Rubric-grounded comments you send as your own</span>
     - [AI-Generated Images in Teaching](playbooks/ai-images.md) <span class="row-sub">Figures, and why generated anatomy misleads</span>
-    - [Suspected AI use and detectors](basics/misconceptions.md#ai-detectors-can-reliably-catch-ai-generated-writing) <span class="row-sub">What a detector flag does and does not show</span>
+    - [Suspected AI Use and Detectors](basics/misconceptions.md#ai-detectors-can-reliably-catch-ai-generated-writing) <span class="row-sub">What a detector flag does and does not show</span>
 
 -   ## :material-flask:{ .lg .middle } Research {: #research }
 
     - <span class="row-tag">Start Here</span> [Reviewing the Literature](playbooks/literature-reviews.md) <span class="row-sub">From question to appraised evidence</span>
     - [AI for Research](tools/research.md) <span class="row-sub">Tools by stage, and what AUA licenses</span>
-    - [Where to disclose AI use in a manuscript](tools/research.md#judged-by-the-same-rulers) <span class="row-sub">Reporting standards and journal rules</span>
+    - [Where to Disclose AI Use in a Manuscript](tools/research.md#judged-by-the-same-rulers) <span class="row-sub">Reporting standards and journal rules</span>
     - [Running Models Locally](tools/local.md) <span class="row-sub">AI on your own computer, for privacy</span>
     - [Module 5: Research and Scholarship](pathway/research.md) <span class="row-sub">Integrity, peer review, and participant data</span>
 
 -   ## :material-briefcase:{ .lg .middle } Staff and Administration {: #staff-and-administration }
 
     - <span class="row-tag">Start Here</span> [Administrative Drafting](playbooks/admin-drafting.md) <span class="row-sub">Memos, minutes, and reports</span>
-    - [Letters of recommendation](playbooks/residency-application.md#for-faculty-writing-letters) <span class="row-sub">Drafting with AI while you stay the author</span>
-    - [The policy in five minutes](pathway/rules.md) <span class="row-sub">Module 3: a short guide to the AI Responsible Use Policy</span>
+    - [Letters of Recommendation](playbooks/residency-application.md#for-faculty-writing-letters) <span class="row-sub">Drafting with AI while you stay the author</span>
+    - [The Policy in Five Minutes](pathway/rules.md) <span class="row-sub">Module 3: a short guide to the AI Responsible Use Policy</span>
 
 </div>
 
@@ -53,10 +53,10 @@ Each step-by-step guide walks one job end to end. Artificial intelligence (AI) c
 
 -   ## Also on This Site {: #also-on-this-site }
 
-    - [All step-by-step guides](playbooks/index.md)
+    - [All Step-by-Step Guides](playbooks/index.md)
     - [Prompt Library](prompts/index.md)
     - [Tool Directory](tools/index.md)
-    - [Request a tool review](governance/review-process.md)
+    - [Request a Tool Review](governance/review-process.md)
     - [AI Responsible Use Policy](governance/policy.md)
 
 </div>

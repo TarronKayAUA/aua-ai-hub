@@ -1185,6 +1185,17 @@ def _decorate(art: str, page) -> tuple[list, list]:
         count = art.find('<p class="pl-results__count"')
         blocks.append((count if count != -1 else first, kinds))
 
+    # Cards a hook has already colored by the page they open (the News &
+    # Events and home cards, scripts/layout_home.py): each counts as a
+    # colored block, keyed above the grid that holds it (a `kind-group`).
+    for cm in re.finditer(r'<section class="[^"]*\bkind-block\b[^"]*" data-kind="([a-z]+)"', art):
+        pos = cm.start()
+        div = art.rfind("<div ", 0, pos)
+        if div != -1 and "kind-group" in art[div:art.find(">", div)] and "</div>" not in art[div:pos]:
+            pos = div
+        _S["rows"][cm.group(1)] = _S["rows"].get(cm.group(1), 0) + 1
+        blocks.append((pos, {cm.group(1)}))
+
     # A module's Next buttons, where they are still in the page (a door).
     for bm in _LEARN_BTN.finditer(art):
         kind = _kind_of_href(bm.group(3), page)

@@ -15,8 +15,8 @@ hide:
   field, the reader-side date check): docs/javascripts/layout-home.js.
 
   Nothing time-sensitive is typed here. The `timely:` markers are filled at
-  build time by scripts/layout_home.py from includes/latest.md,
-  data/conferences.yaml and data/polls.yaml, and `timely:minutes` reads the
+  build time by scripts/layout_home.py from the pipeline's feed pages,
+  data/conferences.yaml, data/opportunities.yaml and data/polls.yaml, and `timely:minutes` reads the
   "About N minutes" chip on each named page, so a time quoted here always
   matches the page it points to.
 
@@ -64,7 +64,7 @@ hide:
 
 <div class="home-routes" markdown>
 
-- [New to AI? The basics in <!-- timely:minutes pathway/how-ai-works.md pathway/prompting.md pathway/rules.md --> minutes](pathway/index.md) <span class="row-sub">Modules 1 to 3 of the AI Literacy Pathway</span>
+- [New to AI? The Basics in <!-- timely:minutes pathway/how-ai-works.md pathway/prompting.md pathway/rules.md --> Minutes](pathway/index.md) <span class="row-sub">Modules 1 to 3 of the AI Literacy Pathway</span>
 - [The AI Responsible Use Policy](governance/policy.md) <span class="row-sub">Short, readable, and the one reference</span>
 
 </div>
@@ -116,11 +116,11 @@ hide:
 
 <section class="timely-block" markdown>
 
-## Latest in Medical Education {: data-search-exclude="true" }
+## Latest News {: data-search-exclude="true" }
 
-<!-- timely:news 3 -->
+<!-- timely:feeds-mini 2 medical-education clinical-practice general-ai -->
 
-[All medical education news](news/medical-education.md){ .timely-more }
+[All News](news-and-events.md#latest-news){ .timely-more }
 
 </section>
 
@@ -128,13 +128,11 @@ hide:
 
 ## Coming Up {: data-search-exclude="true" }
 
-<!-- timely:coming-up 1 -->
+<!-- timely:events 1 -->
 
-[All conferences and events](conferences.md){ .timely-more }
+<!-- timely:calls 1 -->
 
-<!-- timely:poll -->
-
-[Announcements and Committee Polls](announcements/index.md){ .timely-more }
+<!-- timely:committee -->
 
 </section>
 

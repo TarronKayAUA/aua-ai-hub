@@ -427,6 +427,9 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
   font-size: 0.64rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  /* A long role ("Student Representative") wraps inside a two-column
+     phone card instead of pushing the page 2px sideways at 360px. */
+  white-space: normal;
 }
 
 /* --- Status in the meta line ----------------------------------------------

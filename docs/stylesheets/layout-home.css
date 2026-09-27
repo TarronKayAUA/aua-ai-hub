@@ -518,6 +518,34 @@ body[data-door] .md-content__inner {
   color: var(--md-default-fg-color--light);
 }
 
+/* A link inside a sub-label (an announcement's dated update note) sits
+   above the row's stretched link so it stays clickable. */
+.md-typeset .door-rows .row-sub a {
+  position: relative;
+  z-index: 1;
+}
+
+/* A row that names two pages ("For Students and For Faculty & Staff")
+   keeps both links clickable: neither is stretched, and no chevron
+   promises a single destination. */
+.md-typeset .door-rows .row-pair {
+  display: block;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.md-typeset .door-rows .row-pair a {
+  text-decoration: none;
+}
+
+.md-typeset .door-rows .row-pair a:hover {
+  text-decoration: underline;
+}
+
+.md-typeset .door-rows > ul > li:has(> .row-pair)::after {
+  content: none;
+}
+
 /* Material's light grey measured 4.48:1 on the routes' tint; one step
    darker clears 4.5:1 in both schemes. */
 .md-typeset .home-routes .row-sub {
@@ -529,8 +557,7 @@ body[data-door] .md-content__inner {
 }
 
 /* --- Timely blocks (home column and News & Events panels) ----------------- */
-.md-typeset .home-timely,
-.md-typeset .timely-panel {
+.md-typeset .home-timely {
   padding: 0.9rem 1rem 0.35rem;
   border: 1px solid var(--hub-row-rule);
   border-radius: 0.6rem;
@@ -541,12 +568,6 @@ body[data-door] .md-content__inner {
   margin-top: 0.8rem;
   padding-top: 0.9rem;
   border-top: 2px solid var(--hub-row-rule);
-}
-
-.md-typeset .timely-panel + .timely-panel {
-  margin-top: 0;
-  padding-top: 0.9rem;
-  border-top: 1px solid var(--hub-row-rule);
 }
 
 .md-typeset .timely-block > h2 {
@@ -666,19 +687,99 @@ body[data-door] .md-content__inner {
   color: var(--md-default-fg-color--light);
 }
 
-/* --- News & Events landing ---------------------------------------------------
-   Two panels side by side from 60em, stacked on phones; then the rows. */
-.md-typeset .ne-panels {
+/* --- News & Events landing (news round, 2026-09-27) --------------------------
+   Latest News: three columns, one per written feed; Coming Up: three
+   labeled cards; each three across from 60em and stacked below it. Every
+   card is one flat level: its heading, its list, its "All ..." link. The
+   cards wear the kind of the page their link opens (news, coral), and the
+   page's one Color key sits above the first of them (layout_nav.py). */
+.md-typeset :is(.ne-feeds, .ne-coming) {
   display: grid;
   gap: 1rem;
-  margin: 1.2rem 0 0.4rem;
+  margin: 0.6rem 0 1.4rem;
 }
 
 @media screen and (min-width: 60em) {
-  .md-typeset .ne-panels {
-    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-    align-items: start;
+  .md-typeset :is(.ne-feeds, .ne-coming) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
   }
+}
+
+.md-typeset .ne-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.85rem 1rem 0.35rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.6rem;
+  background: var(--md-default-bg-color);
+}
+
+.md-typeset .ne-card[data-kind] {
+  border-left: 4px solid var(--k);
+}
+
+/* One heading per card, the size of the timely blocks' own. */
+.md-typeset .ne-card > h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .ne-card > h3 .headerlink {
+  display: none;
+}
+
+/* The "All ..." link sits at the foot of every card, level across a row. */
+.md-typeset .ne-card > p:last-child {
+  margin-top: auto;
+}
+
+.md-typeset .timely-block + .ne-card,
+.md-typeset .ne-card + .ne-card {
+  margin-top: 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--hub-row-rule);
+}
+
+/* More News and Events: small labeled groups of rows. */
+.md-typeset .ne-groups {
+  display: grid;
+  gap: 0.2rem 1.4rem;
+  margin: 0.6rem 0 0.4rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .ne-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.md-typeset .ne-group__label {
+  margin: 0.6rem 0 0.35rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .ne-group .door-rows {
+  margin-top: 0;
+}
+
+/* The home page's column: the same cards, compact and stacked, inside the
+   column's own frame. */
+.md-typeset .home-timely .ne-card {
+  margin: 0.7rem 0 0;
+  padding: 0.7rem 0.8rem 0.2rem;
+}
+
+.md-typeset .home-timely .timely-block > h2 + .ne-card {
+  margin-top: 0.2rem;
 }
 
 body[data-door="news-events"] .md-typeset h1 {

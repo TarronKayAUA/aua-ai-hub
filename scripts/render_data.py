@@ -1978,6 +1978,25 @@ def _opportunity_sort_key(opp, today):
     return (1, date.max)
 
 
+def opportunity_state(opp, today) -> str:
+    """"open" (joinable), "in_progress" (running, no longer joinable) or
+    "past". One rule for the Opportunities page and the Open Calls card
+    (scripts/layout_home.py)."""
+    deadline, end = opp["deadline"], opp.get("end_date")
+    deadline_passed = (not isinstance(deadline, str)
+                       and deadline < today)
+    event_over = end is not None and not isinstance(end, str) \
+        and end < today
+    closed = str(deadline).lower() == "closed"
+    if event_over or closed or (deadline_passed and end is None):
+        return "past"
+    if deadline_passed:
+        # Still running, but no longer joinable (2026-09-22 audit:
+        # three such rows sat at the top of "Open and upcoming").
+        return "in_progress"
+    return "open"
+
+
 def _render_opportunities(config) -> str:
     opportunities = _load(_data_dir(config) / "opportunities.yaml")
     today = date.today()
@@ -2002,20 +2021,7 @@ def _render_opportunities(config) -> str:
                 f"render_data hook: unknown format {opp['format']!r} "
                 f"on {opp['name']!r}"
             )
-        deadline, end = opp["deadline"], opp.get("end_date")
-        deadline_passed = (not isinstance(deadline, str)
-                           and deadline < today)
-        event_over = end is not None and not isinstance(end, str) \
-            and end < today
-        closed = str(deadline).lower() == "closed"
-        if event_over or closed or (deadline_passed and end is None):
-            past.append(opp)
-        elif deadline_passed:
-            # Still running, but no longer joinable (2026-09-22 audit:
-            # three such rows sat at the top of "Open and upcoming").
-            in_progress.append(opp)
-        else:
-            open_now.append(opp)
+        {"past": past, "in_progress": in_progress, "open": open_now}[opportunity_state(opp, today)].append(opp)
 
     open_now.sort(key=lambda o: _opportunity_sort_key(o, today))
     past.sort(key=lambda o: str(o.get("end_date") or o["deadline"]),
