@@ -352,7 +352,7 @@ Each prompt page has a side panel, "Fill In Your Details" (`_side`), with one fi
   | Figures | HTML |
   | Stacked tables | labelled in the HTML |
 
-  `nav_check` in the design suite proves every sitemap page is reachable with JavaScript off.
+  The `nav` check in the design suite (scripts/design/nav.py) proves every sitemap page is reachable with JavaScript off.
 - **Keyboard.** Every control is reachable by Tab and works with Enter or Space. Disclosures use `<details>`/`<summary>` or `aria-expanded` with `aria-controls`. Focus never lands on something hidden.
 - **Targets** are at least 44px where they are primary (rows in cards, fold summaries at 2.2rem), and at least 1.6rem for compact in-panel controls such as the Listen buttons inside news panels.
 - **Screen readers.** Wrappers the layout hooks insert are plain `div`s or labelled `section`s (`aria-labelledby` pointing to the heading), so the reading order and the landmarks match the source.
