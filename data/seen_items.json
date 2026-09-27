@@ -1,147 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.theverge.com/policy/972850/xai-grok-minnesota-nudification-lawsuit",
-   "title_hash": "de5d64199e28d4e25fd71cbe7d1c61f5",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": false,
-   "reason": "duplicate of candidate 7; same legal case"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/07/who-wins-and-who-loses-after-us-bans-foreign-robots",
-   "title_hash": "5a70a67dd8012b81654f602196844f85",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; robotics policy unrelated to medical education or clinical AI"
-  },
-  {
-   "url": "https://ai.jmir.org/2026/1/e95565",
-   "title_hash": "15b9f34f947523dd99480ebd81b82751",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": true,
-   "title": "Evidence Use and Identifier-Conditioned Prior Knowledge in Large Language Model Classification of Oncology Trials Assessed Through Progressive Content Removal and Counterfactual Testing: Comparative Analysis",
-   "source": "JMIR AI",
-   "published": "2026-07-29T19:15:09+00:00",
-   "summary": "Study demonstrates that large language models may classify oncology trials accurately by relying on pretraining knowledge rather than the supplied text, raising concerns about grounding.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/29/ai-worming-through-word",
-   "title_hash": "0a92214cbf863bf67a3146c7de39b195",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": true,
-   "title": "AI Worming through Word",
-   "source": "Simon Willison's weblog",
-   "published": "2026-07-29T18:43:03+00:00",
-   "summary": "Researcher demonstrates prompt injection attack that escalates to self-replicating worms through Microsoft Word documents processed by Copilot.",
-   "category": "general_ai",
-   "score": 4.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/972709/openai-hardware-greg-brockman-interview",
-   "title_hash": "d08c75f0642357e8efb4e6e9793250c5",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": false,
-   "reason": "device rumor with no confirmed announcement or substantive detail"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e99639",
-   "title_hash": "af9e0c0a5e9f1878c146557b4c717073",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": true,
-   "title": "Effects of Model Choice, Corpus Context, and Post Hoc Correction on Layer-Level Embedding Degradation in Clinical Document Retrieval: Experimental Study",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-07-29T18:00:33+00:00",
-   "summary": "Experimental study identifies embedding model degradation in clinical retrieval-augmented generation and tests methods to detect and correct it.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical documentation"
-  },
-  {
-   "url": "https://arstechnica.com/tech-policy/2026/07/elon-musks-xai-is-trying-to-sue-its-way-out-of-a-grok-reckoning",
-   "title_hash": "cb5622190a43eb2e788b0e2b073f323a",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": false,
-   "reason": "drama and legal gossip with no substantive AI or medical education content"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42525286?fc=20260609215449&ff=20260729171324&v=2.20.0.post5+40e1b98",
-   "title_hash": "feffb4aa994164d7e6456757b1c39a84",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": false,
-   "reason": "opinion essay without evidence-based analysis or measurable findings"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42524542?fc=20260609215449&ff=20260729171324&v=2.20.0.post5+40e1b98",
-   "title_hash": "1d09ce3c8d2faa7a187f781bac3b7353",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": true,
-   "title": "Saudi Medical Students' Perceptions and Attitudes of Integrating Generative Artificial Intelligence Integration in Medical Education: A Cross-Sectional Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-29T10:00:00+00:00",
-   "summary": "Saudi medical students view generative AI as a complementary tool for basic sciences and simulation, not a replacement for human instruction.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42523801?fc=20260609215449&ff=20260729171324&v=2.20.0.post5+40e1b98",
-   "title_hash": "712f85b377728d280584e0f676320d8b",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": true,
-   "title": "AI literacy in undergraduate medical education: a competency-based interpretive framework for curriculum and assessment",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-29T10:00:00+00:00",
-   "summary": "Framework for defining and teaching artificial intelligence literacy as a bounded, observable competency in undergraduate medical education.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://micrologics.org/blog/sqlite-in-production-optimizing-wal-mode-concurrency-and-vfs-layers-for-low-latency-app-servers",
-   "title_hash": "8a29b3b8e321da146c65bb0f698acef6",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; database optimization unrelated to medical education or clinical AI"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v9h6y9/nvidia_is_expected_to_raise_geforce_rtx_gpu",
-   "title_hash": "d84420453622f1184070b092c2357d8b",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": false,
-   "reason": "hardware pricing rumor; minor community discussion"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt",
-   "title_hash": "0136d4b1a23050d772225bf5b20aa119",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": true,
-   "title": "Adding a custom MCP server to Claude and ChatGPT",
-   "source": "Simon Willison's weblog",
-   "published": "2026-07-29T00:13:18+00:00",
-   "summary": "Guide to connecting custom model context protocol servers to Claude and ChatGPT desktop interfaces.",
-   "category": "general_ai",
-   "score": 2.0,
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03045-y",
-   "title_hash": "56f286ca8936f3495e1af800b999fa6b",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": false,
-   "reason": "abstract metadata without substantive information"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=N80TzPCHbNg",
-   "title_hash": "18fa7edd3396c451a99df9aaa6d7c406",
-   "first_seen": "2026-07-29T21:13:24.166095+00:00",
-   "kept": false,
-   "reason": "speculation or rumor without identifiable subject matter; title is generic hype without concrete news"
-  },
-  {
    "url": "https://www.theverge.com/tech/972927/microsoft-copilot-super-app-confirmed",
    "title_hash": "b9c6ad18c789b6b7a6a2d98d0aaa3954",
    "first_seen": "2026-07-30T03:31:45.579839+00:00",
@@ -32726,6 +32585,34 @@
    "first_seen": "2026-09-27T19:46:32.294019+00:00",
    "kept": false,
    "reason": "general software engineering commentary with no substantive artificial intelligence content specific to this audience"
+  },
+  {
+   "url": "https://sebastianraschka.com/blog/2026/focusing-on-llm-post-training.html",
+   "title_hash": "f6339f5ff9b3696a59936665ab9adaa3",
+   "first_seen": "2026-09-27T23:04:54.399743+00:00",
+   "kept": true,
+   "title": "Focusing on Post-Training",
+   "source": "Ahead of AI",
+   "published": "2026-09-27T22:12:03+00:00",
+   "summary": "Analysis of post-training optimization for open-weight language models, using Fireworks' Ember-1 as an example of token-efficient reasoning.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://sebastianraschka.com/images/blog/2026/focusing-on-llm-post-training/ember-1-post-training.webp",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+   "title_hash": "06c280919076cab5e2765e4c4d2b7123",
+   "first_seen": "2026-09-27T23:04:54.399743+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience: music instrument product launch"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wmec1y/m5_ultra_mac_studio_review_the_dream_mac_for",
+   "title_hash": "b855295f0d3e9d5af6da84dcfa0b23ca",
+   "first_seen": "2026-09-27T23:04:54.399743+00:00",
+   "kept": false,
+   "reason": "hardware review with no AI significance beyond running local models"
   }
  ],
  "digests": [
