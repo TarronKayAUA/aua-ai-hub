@@ -412,6 +412,29 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) .w-page--door .w-cell > 
   .w-rows > .w-cell.w-stack {
     grid-column: 1 / -1;
   }
+  /* A stacked section whose text fits one screen in two columns is set
+     that way (layout-width.js adds .w-cols); its heading and any key run
+     across the top, and paragraphs and list items stay whole. */
+  .w-cols {
+    columns: 2;
+    column-gap: calc(2 * var(--w-pad));
+  }
+  .w-cols > :is(h2, h3, .kind-key) {
+    column-span: all;
+  }
+  .w-cols > *,
+  .w-cols li {
+    break-inside: avoid;
+  }
+  .w-cols > :is(ul, ol) {
+    break-inside: auto;
+  }
+  .md-typeset .w-cols > :first-child {
+    margin-top: 0;
+  }
+  .w-pair > .w-pair__side.w-cols:only-child {
+    grid-column: 1 / -1;
+  }
   .w-rows > .w-cell.w-stack > :is(p, ul, ol, dl, blockquote, h2, h3) {
     max-width: var(--w-measure);
   }
