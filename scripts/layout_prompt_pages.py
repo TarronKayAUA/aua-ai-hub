@@ -347,7 +347,7 @@ def _examples(files) -> dict[str, tuple]:
     return out
 
 
-def _side(entry: dict, slug: str, fields: list[dict], example) -> str:
+def _side(entry: dict, slug: str, fields: list[dict], example, notes: str = "") -> str:
     """The track beside the prompt text: its length, the fill-in panel (a
     "Have ready" list without JavaScript; fields that fill the prompt in
     place with it), and the prompt's worked example."""
@@ -355,6 +355,8 @@ def _side(entry: dict, slug: str, fields: list[dict], example) -> str:
     words = len(entry["prompt"].split())
     parts = [f'<p class="pp-text-intro">About {_round_words(words):,} words. '
              "Copy prompt copies all of it, word for word.</p>"]
+    if notes:
+        parts.append(notes)
     if fields:
         ready = "".join(f'<li><span class="pp-fill__label">{esc(f["label"])}</span>: {esc(f["hint"])}</li>'
                         for f in fields)
@@ -578,7 +580,20 @@ def on_page_content(html, page, config, files):
     side = SIDE_SLOT.format(slug=slug)
     if html.count(side) != 1:
         raise AssertionError(f"layout_prompt_pages: prompt side slot missing on {page.file.src_uri}")
-    html = html.replace(side, _side(entry, slug, fields, example))
+    notes = ""
+    if not fields and not example:
+        # With no fill-in panel and no worked example, the track beside the
+        # prompt text held one line; the prompt's notes move into it, word
+        # for word, under their own heading (space round, 2026-09-27). The
+        # #notes anchor is unchanged; the heading is one level down, under
+        # the prompt's.
+        m = re.search(r'<h2 id="notes">(.*?)</h2>(.*?)(?=<h2 id="the-prompt">)', html, re.DOTALL)
+        if m:
+            notes = (f'<section class="pp-notes"><h3 id="notes">{m.group(1)}</h3>'
+                     f'{m.group(2).strip()}</section>')
+            html = html[:m.start()] + html[m.end():]
+            _state["notes_moved"] = _state.get("notes_moved", 0) + 1
+    html = html.replace(side, _side(entry, slug, fields, example, notes))
     return html.replace(slot, _text_block(entry, fields))
 
 
@@ -782,5 +797,6 @@ def on_post_build(config):
           f"{_state.get('blanks_marked', 0)} blanks marked in the text")
     print(f"  no blanks         : {', '.join(sorted(s for s in side if s not in with_fields)) or 'none'}")
     print(f"  worked examples   : {', '.join(f'{s} ({e[1]})' for s, (_, e) in sorted(side.items()) if e) or 'none'}")
+    print(f"  notes beside text : {_state.get('notes_moved', 0)} (prompts with no fill-in panel or example)")
     for title, notes in sorted(_state["doubtful"].items()):
         print(f"  doubtful, {title}: " + "; ".join(notes[:4]) + (f" (+{len(notes) - 4} more)" if len(notes) > 4 else ""))

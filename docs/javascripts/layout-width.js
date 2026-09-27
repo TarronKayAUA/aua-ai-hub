@@ -36,8 +36,8 @@
   }
 
   function check() {
-    var all = page.querySelectorAll(".w-single, .w-stack");
-    Array.prototype.forEach.call(all, function (el) { el.classList.remove("w-single", "w-stack"); });
+    var all = page.querySelectorAll(".w-single, .w-stack, .w-cols");
+    Array.prototype.forEach.call(all, function (el) { el.classList.remove("w-single", "w-stack", "w-cols"); });
     if (!wide.matches) return;
     var room = avail();
     var flows = Array.prototype.filter.call(page.querySelectorAll(".w-flow"), function (f) {
@@ -54,6 +54,29 @@
     flows.forEach(function (f) { f.classList.add("w-single"); });
     sides.forEach(function (s) { s.classList.add("w-stack"); });
     rows.forEach(function (p) { p[0].classList.add("w-stack"); p[1].classList.add("w-stack"); });
+    // Space round (owner, 2026-09-27): a section stacked across the whole
+    // width left its right half empty. Each stacked section (a paired cell,
+    // or a side of lettered parts) now sets its own text in two columns
+    // when that brings it within one screen, so the rule above still holds;
+    // one taller than two screens stays one column.
+    var parts = [];
+    rows.forEach(function (p) { parts.push(p[0], p[1]); });
+    sides.forEach(function (s) {
+      if (s.classList.contains("w-pair")) Array.prototype.forEach.call(s.children, function (c) { parts.push(c); });
+      // A stacked leaf: its text side (not the figure, note or table side).
+      if (s.classList.contains("w-leaf")) Array.prototype.forEach.call(s.children, function (c) {
+        var first = c.firstElementChild;
+        if (first && !first.matches("figure, .admonition, details, .md-typeset__scrollwrap, table, .grid, [class*='-grid']")) parts.push(c);
+      });
+    });
+    // A lettered part left alone in its row (no partner of similar length)
+    // has the same empty half beside it.
+    Array.prototype.forEach.call(page.querySelectorAll(".w-pair > .w-pair__side:only-child"), function (c) {
+      parts.push(c);
+    });
+    parts.forEach(function (el) { el.classList.add("w-cols"); });
+    var tall = parts.filter(function (el) { return el.getBoundingClientRect().height > room; });
+    tall.forEach(function (el) { el.classList.remove("w-cols"); });
   }
 
   var timer = null;

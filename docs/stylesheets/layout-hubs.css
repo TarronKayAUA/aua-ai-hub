@@ -411,6 +411,11 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
   .md-typeset .grid.cards.gov-cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  /* Exactly four cards read as two rows of two, not three and one with an
+     empty two thirds of a row (space round, 2026-09-27). */
+  .md-typeset .grid.cards.gov-cards:has(> ul > li:nth-child(4):last-child) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .md-typeset .grid.cards > ul > li:has(a.card-link) p a:not(.card-link) {
@@ -552,4 +557,59 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
 
 .md-typeset .reader-map li > a:focus-visible {
   outline: none;
+}
+
+/* --- Project Write-Ups index (space round, 2026-09-27) ---------------------
+   The governance landing's whole-card links, two to a row, each card
+   keeping the table's two descriptions under small labels. */
+.md-typeset .wx-label {
+  display: block;
+  margin-bottom: 0.1rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hubs-tag);
+}
+
+.md-typeset .grid.cards.gov-cards.wx-cards > ul > li > p + p {
+  margin-top: 0.75rem;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .grid.cards.gov-cards.wx-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* --- Governance landing head (space round, level 3, for the owner's
+   decision) -----------------------------------------------------------------
+   The section's own banner, which no page used, beside the introduction
+   where the head left the right half empty. Decorative: empty alt, hidden
+   from assistive technology; it carries its own colors for both schemes. */
+.md-typeset .gov-head > p {
+  margin-top: 0;
+}
+
+.md-typeset .gov-head__art {
+  display: none;
+}
+
+@media screen and (min-width: 60em) {
+  .md-typeset .gov-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 2.4rem;
+    align-items: center;
+    margin: 0 0 1rem;
+  }
+  .md-typeset .gov-head > p {
+    margin: 0;
+  }
+  .md-typeset .gov-head__art {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
 }

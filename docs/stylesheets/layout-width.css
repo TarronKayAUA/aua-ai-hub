@@ -167,6 +167,27 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) .w-page--door .w-cell > 
   .md-typeset .w-cell[data-w-shape="wide"] > .admonition {
     max-width: calc(var(--w-measure) + 2 * var(--w-pad));
   }
+  /* Cards across a whole row fill it (three or more; a grid of one or two
+     sits beside its paragraph instead): no empty track at the end. */
+  .md-typeset .w-cell[data-w-shape="wide"] .video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    align-items: start;
+  }
+  /* A long quoted box whose body the hook set as two-column flows (space
+     round): the box takes the whole frame, and each column one measure. */
+  .md-typeset .w-cell[data-w-shape="wide"] > .admonition:has(> :is(.w-flow, .w-pair)) {
+    max-width: none;
+    padding-left: var(--w-pad);
+    padding-right: var(--w-pad);
+  }
+  .md-typeset .admonition > :is(.w-flow, .w-pair) {
+    column-gap: calc(2 * var(--w-pad));
+  }
+  .md-typeset .admonition > :is(.w-flow, .w-pair) + :is(.w-flow, .w-pair) {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--md-default-fg-color--lightest);
+  }
 
 
   /* --- The head ------------------------------------------------------------
@@ -391,6 +412,32 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) .w-page--door .w-cell > 
   .w-rows > .w-cell.w-stack {
     grid-column: 1 / -1;
   }
+  /* A stacked section whose text fits one screen in two columns is set
+     that way (layout-width.js adds .w-cols); its heading and any key run
+     across the top, and paragraphs and list items stay whole. */
+  .w-cols {
+    columns: 2;
+    column-gap: calc(2 * var(--w-pad));
+  }
+  .w-cols > :is(h2, h3, .kind-key) {
+    column-span: all;
+  }
+  .w-cols > *,
+  .w-cols li {
+    break-inside: avoid;
+  }
+  .w-cols > :is(ul, ol) {
+    break-inside: auto;
+  }
+  .md-typeset .w-cols > :first-child {
+    margin-top: 0;
+  }
+  .w-pair > .w-pair__side.w-cols:only-child {
+    grid-column: 1 / -1;
+  }
+  .md-typeset .w-cols > :is(p, ul, ol, dl, blockquote) {
+    max-width: none;
+  }
   .w-rows > .w-cell.w-stack > :is(p, ul, ol, dl, blockquote, h2, h3) {
     max-width: var(--w-measure);
   }
@@ -406,6 +453,14 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) .w-page--door .w-cell > 
   :is(.w-leaf, .w-pair).w-stack > :has(> :is(figure, table, .admonition, details)) {
     max-width: none;
     position: static;
+  }
+  /* A stacked side set in two columns takes the whole width; each column
+     is then about one measure (space round). */
+  :is(.w-leaf, .w-pair).w-stack > .w-cols {
+    max-width: none;
+  }
+  .md-typeset .w-cols > :is(ul, ol, dl, blockquote, .w-keep) {
+    max-width: none;
   }
 }
 @media screen and (min-width: 68.75em) and (max-height: 44em) {

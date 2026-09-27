@@ -12,12 +12,33 @@ Where the [AI Literacy Pathway](../pathway/index.md) teaches the foundations and
 
 They are here because the useful skill is turning out not to be generating things with AI. It is specifying a project, deciding what the system is not allowed to do, verifying output you cannot fully read, noticing when the model is confidently wrong, and knowing when to stop. Those are teachable, and they are easier to show than to describe.
 
-| Write-up | What it is | What it demonstrates |
-| --- | --- | --- |
-| [When a Check Stops Checking](this-site.md) | How this site is built, and the six weeks it displayed a product name that no longer existed | Specification before code, a selection algorithm that turned out to be an essay, and five ways a check went on reporting success from behind its own blind spot |
-| [I Fixed Software I Cannot Read](sharex-hdr.md) | Building high dynamic range (HDR) screenshot capture into ShareX, a free screenshot tool, in a language the author does not write | Deciding boundaries when you cannot review the code, refusing things on a maintainer's behalf, and an ending the author did not control |
-| [My Favorite Game Was Not a Game](recommender.md) | A media tracker and recommender for one family, built in three weeks without the author writing a line of it | Testing software you cannot read, six ways a check passes against broken code, and a measurement that flattered its way into the profile |
-| [The Neanderthal Gene That Explained Nothing](genome.md) | A widely reported genetics finding, tested against the author's own genotype | Declining a flattering conclusion the data cannot support, refusals agreed in advance, and catching a confident error inside your own expertise |
-
 !!! note "How to read these"
     Every claim in a worked example is meant to be traceable to something concrete: a file, a commit, a log, a published paper. Where a number was never measured, the text says so rather than estimating. Where something is unverified, it is labeled unverified. If you find a claim that does not meet that standard, the [feedback form](https://forms.office.com/r/5a8RCi2YKP) is the fastest way to tell the maintainer.
+
+<div class="grid cards gov-cards wx-cards" markdown>
+
+-   ## :material-magnify-scan:{ .lg .middle } [When a Check Stops Checking](this-site.md){ .card-link }
+
+    <span class="wx-label">What it is</span> How this site is built, and the six weeks it displayed a product name that no longer existed
+
+    <span class="wx-label">What it demonstrates</span> Specification before code, a selection algorithm that turned out to be an essay, and five ways a check went on reporting success from behind its own blind spot
+
+-   ## :material-monitor-screenshot:{ .lg .middle } [I Fixed Software I Cannot Read](sharex-hdr.md){ .card-link }
+
+    <span class="wx-label">What it is</span> Building high dynamic range (HDR) screenshot capture into ShareX, a free screenshot tool, in a language the author does not write
+
+    <span class="wx-label">What it demonstrates</span> Deciding boundaries when you cannot review the code, refusing things on a maintainer's behalf, and an ending the author did not control
+
+-   ## :material-gamepad-variant-outline:{ .lg .middle } [My Favorite Game Was Not a Game](recommender.md){ .card-link }
+
+    <span class="wx-label">What it is</span> A media tracker and recommender for one family, built in three weeks without the author writing a line of it
+
+    <span class="wx-label">What it demonstrates</span> Testing software you cannot read, six ways a check passes against broken code, and a measurement that flattered its way into the profile
+
+-   ## :material-dna:{ .lg .middle } [The Neanderthal Gene That Explained Nothing](genome.md){ .card-link }
+
+    <span class="wx-label">What it is</span> A widely reported genetics finding, tested against the author's own genotype
+
+    <span class="wx-label">What it demonstrates</span> Declining a flattering conclusion the data cannot support, refusals agreed in advance, and catching a confident error inside your own expertise
+
+</div>

@@ -523,7 +523,8 @@ body:not([data-page-type="lesson"]) .md-footer__inner {
 .md-copyright .footer-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.2rem 1.2rem;
+  justify-content: center;
+  gap: 0.2rem 2rem;
   list-style: none;
   margin: 0 0 0.4rem;
   padding: 0;
@@ -542,6 +543,7 @@ body:not([data-page-type="lesson"]) .md-footer__inner {
   .md-copyright .footer-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0.2rem 1.2rem;
   }
   .md-copyright .footer-links a {
     width: 100%;
@@ -606,6 +608,14 @@ html .md-typeset a:not(.md-button):is(:hover, :focus, :focus-visible, .focus-vis
    display rule outranked the plain class. */
 .md-copyright ul.footer-links:not([hidden]) {
   display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Centred over the lines below it: Material's list-item margins pushed the
+   row right, so the spacing is the gap alone. */
+.md-copyright ul.footer-links:not([hidden]) > li {
+  margin: 0;
 }
 
 @media screen and (max-width: 44.9375em) {

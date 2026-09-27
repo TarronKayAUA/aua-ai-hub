@@ -299,6 +299,7 @@ CHECKED_MEANS = ("the date this listing's details (link, description, and "
                  "cost) were last checked; not a review of the tool")
 
 TOOL_ACCESS_MARKER = "<!-- render:tool-access -->"
+DIRECTORY_TODAY_MARKER = "<!-- render:directory-today -->"
 
 FORMAT_LABELS = {
     "in_person": "In Person",
@@ -1068,6 +1069,41 @@ def _render_tools(config) -> str:
         raise AssertionError("render_data hook: What AUA provides lines do not "
                              "match data/tools.yaml")
     return out
+
+
+def _render_directory_today(config) -> str:
+    """"The Directory Today" beside the statuses explanation on
+    docs/tools/index.md (render:directory-today; space round, 2026-09-27):
+    how many tools the directory holds, how many carry each status (every
+    status shown, zeros included), and the span of the entries' check
+    dates, all counted from data/tools.yaml at build time."""
+    tools = _load(_data_dir(config) / "tools.yaml")
+    counts = {s: 0 for s in STATUS_LABELS}
+    for tool in tools:
+        status = tool.get("governance_status")
+        if status not in counts:
+            raise ValueError(f"render_data: tool {tool.get('name')!r} has unknown status {status!r}")
+        counts[status] += 1
+    if sum(counts.values()) != len(tools):
+        raise AssertionError("render_data: directory-today counts do not add up to the tools read")
+    dates = sorted(tool["last_reviewed"] for tool in tools if tool.get("last_reviewed"))
+    rows = "".join(
+        f'<li><span class="tool-status tool-status--{s}">{STATUS_LABELS[s][0]}</span>'
+        f'<span class="dir-today__n">{counts[s]}</span></li>' for s in STATUS_LABELS)
+    checked = ""
+    if dates:
+        span = (f"on {_long_date(dates[0])}" if dates[0] == dates[-1]
+                else f"between {_long_date(dates[0])} and {_long_date(dates[-1])}")
+        checked = (f'<p class="dir-today__note">Entries were last checked {span}'
+                   + ("" if len(dates) == len(tools) else f" ({len(dates)} of {len(tools)} carry a date)")
+                   + ".</p>")
+    print(f"render_data: directory today: {len(tools)} tools read, "
+          + ", ".join(f"{STATUS_LABELS[s][0]} {counts[s]}" for s in STATUS_LABELS)
+          + f" (sum {sum(counts.values())}), {len(dates)} check dates")
+    return ('<aside class="dir-today" aria-label="The directory today" data-search-exclude>'
+            '<p class="dir-today__title">The Directory Today</p>'
+            f'<p class="dir-today__total"><span class="dir-today__big">{len(tools)}</span> tools</p>'
+            f'<ul class="dir-today__counts">{rows}</ul>{checked}</aside>')
 
 
 def _render_tool_access(config) -> str:
@@ -2305,6 +2341,10 @@ def on_page_markdown(markdown, page, config, files):
                 )
         markdown = markdown.replace(TOOL_CHOOSER_MARKER, _render_tool_chooser(config))
         markdown = markdown.replace(TOOL_ACCESS_MARKER, _render_tool_access(config))
+        if DIRECTORY_TODAY_MARKER not in markdown:
+            raise AssertionError("render_data hook: tools/index.md is missing the "
+                                 f"{DIRECTORY_TODAY_MARKER} marker")
+        markdown = markdown.replace(DIRECTORY_TODAY_MARKER, _render_directory_today(config))
         markdown = markdown.replace(TOOLS_MARKER, _render_tools(config))
         return markdown.replace(OPEN_MODELS_MARKER, _render_open_models(config))
     if src == "tools/agents.md":

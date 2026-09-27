@@ -46,6 +46,10 @@ Each status describes where the institution stands with a tool, not a rating of 
 | <span class="tool-status tool-status--caution">Use with caution</span> | A specific concern, such as data handling, a consent requirement, or unresolved legal terms, is recorded in the entry's note. |
 | <span class="tool-status tool-status--restricted">Restricted</span> | Reviewed and found unsuitable for institutional use. |
 
+<div class="dir-about" markdown>
+
+<div class="dir-about__text" markdown>
+
 Where an entry has something specific worth knowing, such as an access condition, a consent requirement, or where the service is operated, it is printed on the card under the description. The word after each vendor's name shows cost: free, freemium (a free tier with paid upgrades), paid, institutional (needs an organization's license), or AUA-licensed (provided by AUA). The "Where to start" notes above a task's tools are suggestions drawn from each tool's own description and this site's guides; they are not statuses.
 
 <!-- render:tool-access -->
@@ -53,6 +57,12 @@ Where an entry has something specific worth knowing, such as an access condition
 A Listed or Licensed status describes AUA's relationship with a tool, not an approval for sensitive data; the [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information, student records, and other sensitive material.
 
 To suggest a tool, use the contact details on the [About page](../about.md). To request committee review, follow [How Tools Are Reviewed](../governance/review-process.md). Reviewed, Use with caution, and Restricted come from that review; Listed and Licensed reflect cataloging and procurement facts.
+
+</div>
+
+<!-- render:directory-today -->
+
+</div>
 
 </div>
 

@@ -47,7 +47,7 @@ screen reader's view is unchanged. Headings keep their ids.
 INVARIANTS, checked on every page. Deleting the tags this hook inserted
 gives back the article exactly as it was: no block is lost, duplicated or
 reordered, so reading order is source order (BRIEF rule 4). No h2 or h3 can
-sit above an earlier one: tiles hold no h3, flows and leaves hold no
+sit above an earlier one: a tile holds no heading but its own, flows and leaves hold no
 headings, a heading is always the first thing in its cell, and cells fill
 row by row. A page whose article cannot be split cleanly is left as it is
 and named in the verification block.
@@ -67,6 +67,7 @@ _COMMENT = re.compile(r"<!--.*?-->", re.S)
 # measure, about 79 to a line. They estimate height, never content.
 TILE_MAX = 2200          # a section this light can take half the width
 PAIR_RATIO, PAIR_SLACK = 1.5, 350   # tiles pair when heavier <= ratio * lighter + slack
+LONE_RATIO = 3.0         # a one-paragraph section pairs more freely than that
 CHUNK = 2400             # one piece of a spread: both columns fit a screen at 1440
 LIFT_MAX = 1400          # a first section this light can sit beside a bare head
 STEP_ITEMS, STEP_MEAN = 3, 200      # a numbered list of procedures becomes step cards
@@ -220,9 +221,27 @@ class Block:
     def _grid(self) -> bool:
         return "grid" in self.cls or any(x.endswith("-grid") for x in self.cls)
 
+    def _grid_items(self) -> int:
+        """How many cards a grid holds: its top-level children, or the items
+        of the one list it wraps."""
+        inner = self.html[self.html.index(">") + 1:self.html.rindex("</")]
+        kids = _Children(inner)
+        if not kids.ok():
+            return 99
+        spans = [s for s in kids.spans if s[2] not in ("script", "style")]
+        if len(spans) == 1 and spans[0][2] in ("ul", "ol"):
+            s, e = spans[0][0], spans[0][1]
+            sub = _Children(inner[s:e][inner[s:e].index(">") + 1:inner[s:e].rindex("</")])
+            return len(sub.spans) if sub.ok() else 99
+        return len(spans)
+
     def _wide(self) -> bool:
-        if self.role in ("cards", "terms"):
+        if self.role == "terms":
             return True
+        if self.role == "cards":
+            # One or two cards sit beside the paragraph that introduces them
+            # (space round: a lone video card had a full row to itself).
+            return self._grid_items() >= 3
         if self.role == "table":
             first = re.search(r"<tr\b.*?</tr>", self.html, re.S)
             return bool(first) and len(re.findall(r"<th\b", first.group(0))) >= 4
@@ -276,8 +295,23 @@ class Unit:
 
     @property
     def tileable(self) -> bool:
-        return (self.weight <= TILE_MAX and not self.has("h3")
+        # An h3 subsection's own heading does not stop it being a tile (the
+        # band shape exists so subsections can pair); an h3 nested inside a
+        # section does. Until the space round a subsection could never be a
+        # tile, so one-paragraph subsections each spanned the full width.
+        nested = self.blocks[1:] if self.level == 3 else self.blocks
+        return (self.weight <= TILE_MAX and not any(b.role == "h3" for b in nested)
                 and not any(b.wide or b.role == "terms" for b in self.blocks))
+
+
+def _one_column(u: Unit) -> bool:
+    """A section whose body is one piece of prose: across the whole width it
+    could only fill one of the two columns."""
+    groups = _glue(u.blocks)
+    if groups and _lead(groups[0]).role in ("h2", "h3"):
+        groups = groups[1:]
+    real = [g for g in groups if _lead(g).role not in ("key", "silent")]
+    return len(real) == 1 and _lead(real[0]).role == "prose"
 
 
 def _pairable(a: Unit, b: Unit) -> bool:
@@ -472,11 +506,25 @@ class Plan:
                     rows.append(("spread", [("flow", piece)]))
                 i += 2
                 continue
+            if what == "run" and nxt and nxt[0] == "wide" and len(gs) == 1 and _weight(gs) <= 700:
+                # A one-paragraph introduction shares its wide object's row
+                # (cards, a long table) instead of a half-empty panel of its
+                # own above it (space round).
+                rows.append(("wide", [_flat(gs), _flat(nxt[1])]))
+                i += 2
+                continue
             if what == "run":
                 for piece in _chunks(gs):
                     rows.append(("spread", [("flow", piece)]))
             elif what == "objs":
-                if len(gs) == 1 and not _lead(gs[0]).question:
+                if len(gs) == 1 and _long_note(_lead(gs[0])):
+                    # A long quoted box keeps its one box, and its contents
+                    # run in two columns a screen at a time (space round).
+                    g, lead = gs[0], _lead(gs[0])
+                    k = g.index(lead)
+                    rows.append(("wide", [x for x in ([g[:k]], ("noteflow", lead), [g[k + 1:]])
+                                          if not isinstance(x, list) or x[0]]))
+                elif len(gs) == 1 and not _lead(gs[0]).question:
                     rows.append(("wide", [_flat(gs)]))
                 else:
                     rows.append(("set", [("set", gs)]))
@@ -486,6 +534,33 @@ class Plan:
                 rows.append(("wide", [_flat(gs)]))
             i += 1
         return rows
+
+
+NOTE_FLOW_MIN = CHUNK        # a note this heavy runs in two columns inside its box
+
+
+def _note_body(b: Block):
+    """A note's inner blocks after its title, as (offset of inner html, blocks),
+    or None when it does not split cleanly."""
+    if b.role != "note":
+        return None
+    inner_start = b.html.index(">") + 1
+    inner_end = b.html.rindex("</")
+    kids = _Children(b.html[inner_start:inner_end])
+    if not kids.ok():
+        return None
+    inner = b.html[inner_start:inner_end]
+    blocks = [Block(s, e, tg, a, inner[s:e]) for s, e, tg, a in kids.spans]
+    body = [x for x in blocks if "admonition-title" not in x.cls]
+    return inner_start, inner_end, blocks, body
+
+
+def _long_note(b: Block) -> bool:
+    if b.role != "note" or b.weight < NOTE_FLOW_MIN:
+        return False
+    nb = _note_body(b)
+    return bool(nb) and sum(1 for x in nb[3] if x.role == "prose") >= 4 and all(
+        x.role in ("prose", "key", "silent") for x in nb[3])
 
 
 def _flat(groups: list[list[Block]]) -> list[Block]:
@@ -540,21 +615,34 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
     after_head: list[Block] = []
     for i, b in enumerate(rest):
         if b.wide:
+            # A color key keying the wide block goes with it, not into the
+            # head (space round: the write-ups' key sat above the wrong panel).
+            while i and rest[i - 1].role in ("key", "silent"):
+                i -= 1
             rest, after_head = rest[:i], rest[i:]
             break
     left, right, lifted = main, [], None
     if rest:
         groups = _glue(rest)
         best = None
-        for k in range(len(groups)):
+        # A bare title never takes a cell alone: with no meta line, at least
+        # the first group after the title stays with it (space round).
+        first_k = 0 if any(b.role == "chrome" for b in main) else 1
+        for k in range(first_k, len(groups)):
             wl = sum(b.weight for b in main) + _weight(groups[:k])
             wr = _weight(groups[k:])
             score = abs(wl - wr) - (150 if _lead(groups[k]).role != "prose" else 0)
             if best is None or score < best[0]:
                 best = (score, k)
-        k = best[1]
+        k = best[1] if best else len(groups)
         left, right = main + _flat(groups[:k]), _flat(groups[k:])
-    elif units and units[0].tileable and units[0].weight <= LIFT_MAX and not after_head:
+    elif (units and units[0].tileable and units[0].weight <= LIFT_MAX and not after_head
+          and any(b.role == "chrome" for b in main)):
+        # A section is lifted beside the head only when the head has more
+        # than its title (a meta line): an h1 never
+        # sits in a cell alone with a column-high gap under it (space round,
+        # owner, 2026-09-27). A bare title runs across the top and the
+        # sections pair below it.
         lifted = units.pop(0)
     how = "split" if right else "lifted" if lifted else "title only"
     _S["heads"][how] = _S["heads"].get(how, 0) + 1
@@ -586,7 +674,15 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
         deep_head = u.level == 2 and nxt is not None and nxt.level == 3
         nxt_deep = (nxt is not None and nxt.level == 2 and i + 2 < len(queue)
                     and queue[i + 2].level == 3)
-        if not deep_head and not nxt_deep and nxt and nxt.level == u.level and _pairable(u, nxt):
+        # A short section that would sit alone across the whole width with
+        # its text in one column pairs with its neighbour instead, even when
+        # their weights differ more than tiles usually allow (space round).
+        lone_pair = (nxt is not None and u.tileable and nxt.tileable and _one_column(u)
+                     and max(u.weight, nxt.weight) <= LONE_RATIO * min(u.weight, nxt.weight) + PAIR_SLACK)
+        if (not deep_head and not nxt_deep and nxt and nxt.level == u.level
+                and (_pairable(u, nxt) or lone_pair)):
+            if not _pairable(u, nxt):
+                _S["lone_paired"] = _S.get("lone_paired", 0) + 1
             plan.add("tile", 1, [u.blocks])
             plan.add("tile", 1, [nxt.blocks])
             i += 2
@@ -594,6 +690,8 @@ def _plan(blocks: list[Block], kind: str) -> tuple[Plan, list[Block], list[Block
         if deep_head and u.weight <= 800:
             plan.add("band", 2, [u.blocks])
         else:
+            if u.tileable and not deep_head and _one_column(u):
+                _S.setdefault("lone", []).append((_S.get("cur"), _text(u.blocks[0].html)[:40], u.weight))
             plan.full(u)
         i += 1
     return plan, left, right, lifted
@@ -687,8 +785,70 @@ def _wrap(article: str, page_type: str, src: str) -> str | None:
                 close()
             elif what == "terms":
                 _put_terms(part[1])
+            elif what == "noteflow":
+                _put_noteflow(part[1])
         else:
             put(part)
+
+    def _put_noteflow(b: Block):
+        """A long note: its title as it is, then its body in pieces, each a
+        two-column flow, a lead-in kept with what it introduces."""
+        nonlocal pos
+        inner_start, inner_end, blocks, body = _note_body(b)
+        inner = b.html[inner_start:inner_end]
+        out.append(article[pos:b.start])
+        out.append(b.html[:inner_start])
+        groups: list[list[Block]] = []
+        for x in body:
+            if groups and groups[-1][-1].leadin:
+                groups[-1].append(x)
+            else:
+                groups.append([x])
+        first_body = body[0].start
+        out.append(inner[:first_body])
+        ipos = first_body
+
+        def write(bs: list[Block]):
+            nonlocal ipos
+            out.append(inner[ipos:bs[-1].end])
+            ipos = bs[-1].end
+
+        # Parts that each open with a bold lead-in ("Section 2 (10 min...)")
+        # sit two to a row, read left, right, then down; otherwise the body
+        # runs as two-column flows a screen at a time.
+        subs: list[list[Block]] = []
+        for g in groups:
+            if g[0].leadin or not subs:
+                subs.append([])
+            subs[-1].extend(g)
+        if sum(1 for s in subs if s[0].leadin) >= 3:
+            for k in range(0, len(subs), 2):
+                open_('<div class="w-part w-pair">')
+                for side in subs[k:k + 2]:
+                    out.append(inner[ipos:side[0].start])
+                    ipos = side[0].start
+                    open_('<div class="w-part w-pair__side">')
+                    write(side)
+                    close()
+                close()
+        else:
+            for piece in _chunks(groups):
+                open_('<div class="w-part w-flow">')
+                for g in piece:
+                    keep = len(g) > 1 and g[0].leadin
+                    if keep:
+                        out.append(inner[ipos:g[0].start])
+                        ipos = g[0].start
+                        open_('<div class="w-part w-keep">')
+                    write(g)
+                    if keep:
+                        close()
+                close()
+        out.append(inner[ipos:])
+        out.append(b.html[inner_end:])
+        pos = b.end
+        used.append(b)
+        _S["noteflows"] = _S.get("noteflows", 0) + 1
 
     def _put_terms(group: list[Block]):
         """A div holding a run of h2 entries (the glossary): each entry
@@ -751,7 +911,7 @@ def _wrap(article: str, page_type: str, src: str) -> str | None:
     for shape, span, parts in plan.cells:
         classes = "w-cell" + (" w-span" if span == 2 else "")
         if shape in ("tile", "spread", "leaf") or (shape == "wide" and any(
-                isinstance(part, list) and any(b.role == "figure" for b in part) for part in parts)):
+                isinstance(part, list) and any(b.role in ("figure", "prose") for b in part) for part in parts)):
             classes += " w-panel"
         open_(f'<div class="{classes}" data-w-shape="{shape}">')
         for part in parts:
@@ -914,6 +1074,7 @@ def on_post_page(output, page, config):
     if page_type not in READING:
         return output
     _S["pages"] += 1
+    _S["cur"] = page.file.src_uri
     m = _ARTICLE.search(output)
     if not m:
         _S["left"].append((page.file.src_uri, "no article"))
@@ -938,6 +1099,10 @@ def on_post_build(config):
     print(f"  heads              : {fmt(_S['heads'])}")
     print(f"  cells by shape     : {fmt(_S['shapes'])}")
     print(f"  blocks read/written: {_S['blocks_in']} / {_S['blocks_out']}")
+    print(f"  short sections paired with an unequal neighbour: {_S.get('lone_paired', 0)}")
+    print(f"  long notes set in two columns inside their box: {_S.get('noteflows', 0)}")
+    print(f"  one-paragraph sections still alone across the width: {len(_S.get('lone', []))}"
+          + "".join(f"\n    {s}: {h!r} ({w})" for s, h, w in _S.get("lone", [])))
     print(f"  landing pages with prose rows: {_S.get('doors', 0)}")
     print(f"  left as they were  : {len(_S['left'])}" + "".join(f"\n    {s}: {why}" for s, why in _S["left"]))
     if _S["wrapped"] + len(_S["left"]) != _S["pages"] or _S["blocks_in"] != _S["blocks_out"]:

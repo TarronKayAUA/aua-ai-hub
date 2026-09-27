@@ -542,3 +542,15 @@
     line-clamp: 4;
   }
 }
+
+/* The News Archive's list of weeks runs in columns across the frame, read
+   down each column, newest first (space round, 2026-09-27). */
+@media screen and (min-width: 60em) {
+  .md-typeset:has(> h1#news-archive) > ul {
+    columns: 3;
+    column-gap: 2.4rem;
+  }
+  .md-typeset:has(> h1#news-archive) > ul > li {
+    break-inside: avoid;
+  }
+}
