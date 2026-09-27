@@ -685,8 +685,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">42</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">6</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">42</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">11</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">6</span></button></div>
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 27, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website">OpenAI agents tried to ‘bruteforce’ a UN website</a>
+    <p class="news-card-summary">OpenAI&#x27;s autonomous agents scanned a UN statistics website over 16,000 times without authorization, highlighting emerging safety concerns with agent deployment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2236154957.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.736911387474%2C100%2C78.526177225052&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 25, 2026</span></div>
@@ -755,18 +763,18 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">COMED presents a hybrid approach between model routing and collaboration that invokes additional models selectively when initial models disagree, improving multi-model inference efficiency.</p>
   </div>
 </div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.26926">Experts Rise Where LLMs Disagree: Using Cross-Model Disagreement to Target Expert Effort in LLM Codebook Revision for Large-Scale Annotation</a>
-    <p class="news-card-summary">A method uses large language model disagreement to identify cases needing expert review during annotation codebook development, accelerating creation of robust annotation guidelines.</p>
-  </div>
-</div>
 </div>
 
 ??? abstract "Show the other 32 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2609.26926">Experts Rise Where LLMs Disagree: Using Cross-Model Disagreement to Target Expert Effort in LLM Codebook Revision for Large-Scale Annotation</a>
+        <p class="news-card-summary">A method uses large language model disagreement to identify cases needing expert review during annotation codebook development, accelerating creation of robust annotation guidelines.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 24, 2026</span></div>
@@ -995,14 +1003,6 @@ Items are selected several times a day by an automated pipeline and the summarie
         <a class="news-card-title" href="https://arxiv.org/abs/2609.20850">MME-Safety: A Fine-grained Benchmark for Safety Evaluation of MLLMs</a>
         <p class="news-card-summary">MME-Safety introduces a fine-grained benchmark for evaluating safety vulnerabilities in multimodal large language models with intent-based annotations.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 20, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wlgrft/qwenimage21_released">Qwen-Image-2.1 released!</a>
-        <p class="news-card-summary">Alibaba released Qwen-Image-2.1, an open-weights 7 billion parameter model for image generation and editing.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/p1a5g5x9doqh1.jpg?width=140&amp;height=78&amp;auto=webp&amp;s=257099f472f2689a17ca5478f1181b8f4197c39c" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
