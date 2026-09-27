@@ -1,0 +1,1666 @@
+{
+ "about": "Design check baseline (DESIGN.md section 15). Refresh after an approved layout change: python scripts/design_check.py --only measure --update-baselines",
+ "updated": "2026-09-27",
+ "built_from": "5096938 (origin/main after the week round)",
+ "by_type": {
+  "door": {
+   "pages": 7,
+   "blank_1920": 0.173,
+   "blank_1440": 0.157,
+   "cpl_median": 96.75,
+   "cpl_max": 114
+  },
+  "reference": {
+   "pages": 31,
+   "blank_1920": 0.172,
+   "blank_1440": 0.19,
+   "cpl_median": 79.0,
+   "cpl_max": 92
+  },
+  "shelf": {
+   "pages": 17,
+   "blank_1920": 0.31,
+   "blank_1440": 0.331,
+   "cpl_median": 194.5,
+   "cpl_max": 212
+  },
+  "lesson": {
+   "pages": 7,
+   "blank_1920": 0.245,
+   "blank_1440": 0.235,
+   "cpl_median": 79,
+   "cpl_max": 88
+  },
+  "task": {
+   "pages": 33,
+   "blank_1920": 0.166,
+   "blank_1440": 0.166,
+   "cpl_median": 79.0,
+   "cpl_max": 89
+  },
+  "all": {
+   "pages": 95,
+   "blank_1920": 0.2,
+   "blank_1440": 0.207,
+   "cpl_median": 79.0,
+   "cpl_max": 212
+  }
+ },
+ "pages": {
+  "": {
+   "type": "door",
+   "1920": {
+    "blank": 0.092,
+    "worst": 0.142,
+    "height": 2093,
+    "cpl_median": null,
+    "cpl_max": null
+   },
+   "1440": {
+    "blank": 0.086,
+    "worst": 0.156,
+    "height": 1907,
+    "cpl_median": null,
+    "cpl_max": null
+   }
+  },
+  "about/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.161,
+    "worst": 0.309,
+    "height": 3851,
+    "cpl_median": 77,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.178,
+    "worst": 0.334,
+    "height": 3485,
+    "cpl_median": 77,
+    "cpl_max": 86
+   }
+  },
+  "accessibility/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.253,
+    "worst": 0.312,
+    "height": 1863,
+    "cpl_median": 78,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.292,
+    "worst": 0.34,
+    "height": 1676,
+    "cpl_median": 78,
+    "cpl_max": 82
+   }
+  },
+  "announcements/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.321,
+    "worst": 0.333,
+    "height": 1482,
+    "cpl_median": null,
+    "cpl_max": null
+   },
+   "1440": {
+    "blank": 0.276,
+    "worst": 0.368,
+    "height": 1349,
+    "cpl_median": null,
+    "cpl_max": null
+   }
+  },
+  "announcements/2026-06-09-aua-ai-hub-launch/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.448,
+    "worst": 0.485,
+    "height": 1503,
+    "cpl_median": 78.0,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.471,
+    "worst": 0.527,
+    "height": 1368,
+    "cpl_median": 78,
+    "cpl_max": 84
+   }
+  },
+  "announcements/2026-07-27-institution-wide-rollout/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.174,
+    "worst": 0.28,
+    "height": 1557,
+    "cpl_median": 81,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.193,
+    "worst": 0.316,
+    "height": 1436,
+    "cpl_median": 77.0,
+    "cpl_max": 83
+   }
+  },
+  "basics/better-answers/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.105,
+    "worst": 0.268,
+    "height": 5218,
+    "cpl_median": 78,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.097,
+    "worst": 0.217,
+    "height": 4748,
+    "cpl_median": 77,
+    "cpl_max": 85
+   }
+  },
+  "basics/glossary/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.056,
+    "worst": 0.27,
+    "height": 6425,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.062,
+    "worst": 0.19,
+    "height": 5854,
+    "cpl_median": 78,
+    "cpl_max": 87
+   }
+  },
+  "basics/how-llms-work/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.076,
+    "worst": 0.289,
+    "height": 4899,
+    "cpl_median": 79.0,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.145,
+    "worst": 0.304,
+    "height": 4439,
+    "cpl_median": 79.0,
+    "cpl_max": 86
+   }
+  },
+  "basics/misconceptions/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.113,
+    "worst": 0.266,
+    "height": 3929,
+    "cpl_median": 79,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.079,
+    "worst": 0.183,
+    "height": 3556,
+    "cpl_median": 79,
+    "cpl_max": 88
+   }
+  },
+  "benchmarks/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.207,
+    "worst": 0.43,
+    "height": 3877,
+    "cpl_median": 197.0,
+    "cpl_max": 202
+   },
+   "1440": {
+    "blank": 0.349,
+    "worst": 0.545,
+    "height": 3522,
+    "cpl_median": 179,
+    "cpl_max": 186
+   }
+  },
+  "benchmarks/image/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.314,
+    "worst": 0.486,
+    "height": 2577,
+    "cpl_median": 200.0,
+    "cpl_max": 205
+   },
+   "1440": {
+    "blank": 0.321,
+    "worst": 0.466,
+    "height": 2420,
+    "cpl_median": 179.5,
+    "cpl_max": 191
+   }
+  },
+  "benchmarks/video/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.325,
+    "worst": 0.334,
+    "height": 1968,
+    "cpl_median": 200.0,
+    "cpl_max": 205
+   },
+   "1440": {
+    "blank": 0.409,
+    "worst": 0.429,
+    "height": 1822,
+    "cpl_median": 182.0,
+    "cpl_max": 188
+   }
+  },
+  "conferences/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.363,
+    "worst": 0.366,
+    "height": 1572,
+    "cpl_median": 201.5,
+    "cpl_max": 212
+   },
+   "1440": {
+    "blank": 0.319,
+    "worst": 0.387,
+    "height": 1547,
+    "cpl_median": 180,
+    "cpl_max": 192
+   }
+  },
+  "examples/lecture-outline/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.276,
+    "worst": 0.474,
+    "height": 6917,
+    "cpl_median": 78.0,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.358,
+    "worst": 0.513,
+    "height": 7018,
+    "cpl_median": 78.0,
+    "cpl_max": 84
+   }
+  },
+  "examples/memo-and-minutes/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.165,
+    "worst": 0.342,
+    "height": 5076,
+    "cpl_median": 80,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.302,
+    "worst": 0.414,
+    "height": 4621,
+    "cpl_median": 80,
+    "cpl_max": 83
+   }
+  },
+  "examples/study-practice-questions/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.212,
+    "worst": 0.425,
+    "height": 6172,
+    "cpl_median": 77.0,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.21,
+    "worst": 0.585,
+    "height": 5576,
+    "cpl_median": 76.0,
+    "cpl_max": 85
+   }
+  },
+  "faculty/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.226,
+    "worst": 0.376,
+    "height": 3093,
+    "cpl_median": 99.0,
+    "cpl_max": 108
+   },
+   "1440": {
+    "blank": 0.23,
+    "worst": 0.442,
+    "height": 2866,
+    "cpl_median": 99.0,
+    "cpl_max": 108
+   }
+  },
+  "governance/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.317,
+    "worst": 0.37,
+    "height": 1223,
+    "cpl_median": 97.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.271,
+    "worst": 0.333,
+    "height": 1105,
+    "cpl_median": 94.0,
+    "cpl_max": 114
+   }
+  },
+  "governance/committee/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.196,
+    "worst": 0.277,
+    "height": 1797,
+    "cpl_median": 76.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.159,
+    "worst": 0.198,
+    "height": 1616,
+    "cpl_median": 76.0,
+    "cpl_max": 87
+   }
+  },
+  "governance/policy/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.154,
+    "worst": 0.308,
+    "height": 6351,
+    "cpl_median": 79.0,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.131,
+    "worst": 0.339,
+    "height": 5785,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   }
+  },
+  "governance/review-process/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.299,
+    "worst": 0.506,
+    "height": 3111,
+    "cpl_median": 79.0,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.267,
+    "worst": 0.49,
+    "height": 2835,
+    "cpl_median": 78.0,
+    "cpl_max": 85
+   }
+  },
+  "governance/updates/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.222,
+    "worst": 0.266,
+    "height": 1652,
+    "cpl_median": 78,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.197,
+    "worst": 0.209,
+    "height": 1484,
+    "cpl_median": 78,
+    "cpl_max": 83
+   }
+  },
+  "learning/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.166,
+    "worst": 0.29,
+    "height": 3189,
+    "cpl_median": 78.0,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.218,
+    "worst": 0.305,
+    "height": 2873,
+    "cpl_median": 78.5,
+    "cpl_max": 86
+   }
+  },
+  "news-and-events/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.109,
+    "worst": 0.2,
+    "height": 2502,
+    "cpl_median": 103.0,
+    "cpl_max": 104
+   },
+   "1440": {
+    "blank": 0.123,
+    "worst": 0.239,
+    "height": 2297,
+    "cpl_median": 103.0,
+    "cpl_max": 104
+   }
+  },
+  "news/archive/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.443,
+    "worst": 0.501,
+    "height": 1255,
+    "cpl_median": null,
+    "cpl_max": null
+   },
+   "1440": {
+    "blank": 0.446,
+    "worst": 0.479,
+    "height": 1137,
+    "cpl_median": null,
+    "cpl_max": null
+   }
+  },
+  "news/clinical-practice/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.31,
+    "worst": 0.367,
+    "height": 2521,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.351,
+    "worst": 0.43,
+    "height": 2344,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   }
+  },
+  "news/general-ai/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.378,
+    "worst": 0.472,
+    "height": 2485,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.34,
+    "worst": 0.393,
+    "height": 2285,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   }
+  },
+  "news/medical-education/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.338,
+    "worst": 0.476,
+    "height": 2618,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.3,
+    "worst": 0.39,
+    "height": 2407,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   }
+  },
+  "news/podcasts/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.173,
+    "worst": 0.288,
+    "height": 3236,
+    "cpl_median": 199.5,
+    "cpl_max": 200
+   },
+   "1440": {
+    "blank": 0.189,
+    "worst": 0.386,
+    "height": 3488,
+    "cpl_median": 179.5,
+    "cpl_max": 181
+   }
+  },
+  "news/this-week/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.243,
+    "worst": 0.473,
+    "height": 5643,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.28,
+    "worst": 0.492,
+    "height": 5300,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   }
+  },
+  "news/videos/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.182,
+    "worst": 0.337,
+    "height": 3895,
+    "cpl_median": 198.0,
+    "cpl_max": 199
+   },
+   "1440": {
+    "blank": 0.22,
+    "worst": 0.369,
+    "height": 3423,
+    "cpl_median": 181.0,
+    "cpl_max": 181
+   }
+  },
+  "opportunities/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.21,
+    "worst": 0.281,
+    "height": 1790,
+    "cpl_median": 202,
+    "cpl_max": 206
+   },
+   "1440": {
+    "blank": 0.23,
+    "worst": 0.275,
+    "height": 1677,
+    "cpl_median": 182.0,
+    "cpl_max": 182
+   }
+  },
+  "pathway/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.177,
+    "worst": 0.309,
+    "height": 2225,
+    "cpl_median": 79,
+    "cpl_max": 97
+   },
+   "1440": {
+    "blank": 0.151,
+    "worst": 0.322,
+    "height": 2024,
+    "cpl_median": 78,
+    "cpl_max": 97
+   }
+  },
+  "pathway/clinical/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.279,
+    "worst": 0.431,
+    "height": 3089,
+    "cpl_median": 80.0,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.272,
+    "worst": 0.471,
+    "height": 2810,
+    "cpl_median": 80,
+    "cpl_max": 86
+   }
+  },
+  "pathway/how-ai-works/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.187,
+    "worst": 0.39,
+    "height": 2832,
+    "cpl_median": 81.0,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.201,
+    "worst": 0.303,
+    "height": 2602,
+    "cpl_median": 79.0,
+    "cpl_max": 84
+   }
+  },
+  "pathway/prompting/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.208,
+    "worst": 0.382,
+    "height": 2626,
+    "cpl_median": 78.5,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.154,
+    "worst": 0.303,
+    "height": 2390,
+    "cpl_median": 78.5,
+    "cpl_max": 85
+   }
+  },
+  "pathway/research/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.313,
+    "worst": 0.431,
+    "height": 3003,
+    "cpl_median": 80.0,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.375,
+    "worst": 0.475,
+    "height": 2733,
+    "cpl_median": 80.0,
+    "cpl_max": 86
+   }
+  },
+  "pathway/rules/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.266,
+    "worst": 0.321,
+    "height": 3268,
+    "cpl_median": 76,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.243,
+    "worst": 0.326,
+    "height": 2973,
+    "cpl_median": 75,
+    "cpl_max": 85
+   }
+  },
+  "pathway/teaching-assessment/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.277,
+    "worst": 0.439,
+    "height": 3233,
+    "cpl_median": 79,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.199,
+    "worst": 0.331,
+    "height": 2942,
+    "cpl_median": 79,
+    "cpl_max": 84
+   }
+  },
+  "pathway/working-with-agents/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.184,
+    "worst": 0.421,
+    "height": 3400,
+    "cpl_median": 79,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.203,
+    "worst": 0.449,
+    "height": 3094,
+    "cpl_median": 79,
+    "cpl_max": 87
+   }
+  },
+  "playbooks/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.401,
+    "worst": 0.447,
+    "height": 1875,
+    "cpl_median": 105.0,
+    "cpl_max": 110
+   },
+   "1440": {
+    "blank": 0.429,
+    "worst": 0.464,
+    "height": 1734,
+    "cpl_median": 105.0,
+    "cpl_max": 110
+   }
+  },
+  "playbooks/admin-drafting/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.162,
+    "worst": 0.234,
+    "height": 2578,
+    "cpl_median": 80.5,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.247,
+    "worst": 0.335,
+    "height": 2325,
+    "cpl_median": 80.5,
+    "cpl_max": 89
+   }
+  },
+  "playbooks/ai-images/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.055,
+    "worst": 0.229,
+    "height": 5306,
+    "cpl_median": 79,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.082,
+    "worst": 0.234,
+    "height": 4833,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   }
+  },
+  "playbooks/exam-items/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.19,
+    "worst": 0.247,
+    "height": 2930,
+    "cpl_median": 80.0,
+    "cpl_max": 81
+   },
+   "1440": {
+    "blank": 0.173,
+    "worst": 0.258,
+    "height": 2626,
+    "cpl_median": 79.5,
+    "cpl_max": 80
+   }
+  },
+  "playbooks/lecture-prep/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.198,
+    "worst": 0.247,
+    "height": 3130,
+    "cpl_median": 83,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.156,
+    "worst": 0.232,
+    "height": 2724,
+    "cpl_median": 83,
+    "cpl_max": 84
+   }
+  },
+  "playbooks/literature-reviews/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.228,
+    "worst": 0.355,
+    "height": 4071,
+    "cpl_median": 77.5,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.204,
+    "worst": 0.4,
+    "height": 3684,
+    "cpl_median": 77,
+    "cpl_max": 86
+   }
+  },
+  "playbooks/residency-application/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.125,
+    "worst": 0.296,
+    "height": 4293,
+    "cpl_median": 80.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.092,
+    "worst": 0.295,
+    "height": 3909,
+    "cpl_median": 80.0,
+    "cpl_max": 87
+   }
+  },
+  "playbooks/score-reports/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.233,
+    "worst": 0.361,
+    "height": 4818,
+    "cpl_median": 79,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.244,
+    "worst": 0.383,
+    "height": 4363,
+    "cpl_median": 79,
+    "cpl_max": 87
+   }
+  },
+  "playbooks/syllabus-statement/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.132,
+    "worst": 0.248,
+    "height": 3488,
+    "cpl_median": 80.0,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.215,
+    "worst": 0.485,
+    "height": 3134,
+    "cpl_median": 79.0,
+    "cpl_max": 89
+   }
+  },
+  "playbooks/writing-feedback/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.127,
+    "worst": 0.247,
+    "height": 3489,
+    "cpl_median": 81,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.145,
+    "worst": 0.351,
+    "height": 3136,
+    "cpl_median": 81,
+    "cpl_max": 85
+   }
+  },
+  "prompts/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.169,
+    "worst": 0.508,
+    "height": 5728,
+    "cpl_median": 101.0,
+    "cpl_max": 108
+   },
+   "1440": {
+    "blank": 0.19,
+    "worst": 0.608,
+    "height": 5211,
+    "cpl_median": 101.0,
+    "cpl_max": 108
+   }
+  },
+  "prompts/analysis-plan-reviewer/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.209,
+    "worst": 0.352,
+    "height": 2606,
+    "cpl_median": 77.0,
+    "cpl_max": 79
+   },
+   "1440": {
+    "blank": 0.107,
+    "worst": 0.268,
+    "height": 2288,
+    "cpl_median": 77.0,
+    "cpl_max": 79
+   }
+  },
+  "prompts/clinical-reasoning-partner/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.168,
+    "worst": 0.236,
+    "height": 2879,
+    "cpl_median": 80,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.183,
+    "worst": 0.247,
+    "height": 2537,
+    "cpl_median": 79,
+    "cpl_max": 85
+   }
+  },
+  "prompts/critical-appraisal-second-reader/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.107,
+    "worst": 0.194,
+    "height": 2615,
+    "cpl_median": 80,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.156,
+    "worst": 0.247,
+    "height": 2379,
+    "cpl_median": 80,
+    "cpl_max": 83
+   }
+  },
+  "prompts/daily-review-sheet-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.281,
+    "worst": 0.331,
+    "height": 2224,
+    "cpl_median": 78,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.255,
+    "worst": 0.319,
+    "height": 2023,
+    "cpl_median": 78,
+    "cpl_max": 84
+   }
+  },
+  "prompts/exchange/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.456,
+    "worst": 0.517,
+    "height": 1199,
+    "cpl_median": 194.5,
+    "cpl_max": 197
+   },
+   "1440": {
+    "blank": 0.508,
+    "worst": 0.563,
+    "height": 1096,
+    "cpl_median": 179,
+    "cpl_max": 192
+   }
+  },
+  "prompts/flashcard-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.282,
+    "worst": 0.353,
+    "height": 2216,
+    "cpl_median": 78.5,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.254,
+    "worst": 0.348,
+    "height": 2015,
+    "cpl_median": 78.5,
+    "cpl_max": 82
+   }
+  },
+  "prompts/item-flaw-checker/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.172,
+    "worst": 0.355,
+    "height": 2145,
+    "cpl_median": 78.5,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.16,
+    "worst": 0.351,
+    "height": 1951,
+    "cpl_median": 77.5,
+    "cpl_max": 83
+   }
+  },
+  "prompts/learning-objective-sharpener/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.155,
+    "worst": 0.235,
+    "height": 2584,
+    "cpl_median": 81,
+    "cpl_max": 81
+   },
+   "1440": {
+    "blank": 0.163,
+    "worst": 0.248,
+    "height": 2350,
+    "cpl_median": 81,
+    "cpl_max": 81
+   }
+  },
+  "prompts/learning/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.251,
+    "worst": 0.267,
+    "height": 1833,
+    "cpl_median": 79.0,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.292,
+    "worst": 0.337,
+    "height": 1647,
+    "cpl_median": 79.0,
+    "cpl_max": 82
+   }
+  },
+  "prompts/lecture-outline-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.213,
+    "worst": 0.346,
+    "height": 2498,
+    "cpl_median": 76.5,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.096,
+    "worst": 0.235,
+    "height": 2214,
+    "cpl_median": 76.5,
+    "cpl_max": 83
+   }
+  },
+  "prompts/lecture-tutor/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.215,
+    "worst": 0.239,
+    "height": 2170,
+    "cpl_median": 80,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.271,
+    "worst": 0.347,
+    "height": 1974,
+    "cpl_median": 80,
+    "cpl_max": 86
+   }
+  },
+  "prompts/literature-screening-assistant/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.091,
+    "worst": 0.212,
+    "height": 2499,
+    "cpl_median": 75,
+    "cpl_max": 81
+   },
+   "1440": {
+    "blank": 0.083,
+    "worst": 0.191,
+    "height": 2320,
+    "cpl_median": 75,
+    "cpl_max": 81
+   }
+  },
+  "prompts/missed-question-debrief/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.133,
+    "worst": 0.224,
+    "height": 2434,
+    "cpl_median": 79.0,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.162,
+    "worst": 0.246,
+    "height": 2214,
+    "cpl_median": 79.0,
+    "cpl_max": 82
+   }
+  },
+  "prompts/mock-residency-interview/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.145,
+    "worst": 0.227,
+    "height": 2765,
+    "cpl_median": 79,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.158,
+    "worst": 0.19,
+    "height": 2433,
+    "cpl_median": 79,
+    "cpl_max": 87
+   }
+  },
+  "prompts/nbme-style-question-tutor/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.176,
+    "worst": 0.257,
+    "height": 2678,
+    "cpl_median": 78.5,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.216,
+    "worst": 0.383,
+    "height": 2436,
+    "cpl_median": 78.5,
+    "cpl_max": 83
+   }
+  },
+  "prompts/personal-statement-critic/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.164,
+    "worst": 0.237,
+    "height": 2768,
+    "cpl_median": 76.0,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.182,
+    "worst": 0.243,
+    "height": 2459,
+    "cpl_median": 76.0,
+    "cpl_max": 82
+   }
+  },
+  "prompts/post-exam-item-analysis-reader/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.144,
+    "worst": 0.237,
+    "height": 2735,
+    "cpl_median": 80,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.16,
+    "worst": 0.243,
+    "height": 2453,
+    "cpl_median": 80,
+    "cpl_max": 84
+   }
+  },
+  "prompts/pre-submission-reviewer/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.125,
+    "worst": 0.218,
+    "height": 2603,
+    "cpl_median": 80.0,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.109,
+    "worst": 0.185,
+    "height": 2368,
+    "cpl_median": 80.0,
+    "cpl_max": 83
+   }
+  },
+  "prompts/reporting-guideline-auditor/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.131,
+    "worst": 0.222,
+    "height": 2575,
+    "cpl_median": 78,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.147,
+    "worst": 0.197,
+    "height": 2366,
+    "cpl_median": 78,
+    "cpl_max": 84
+   }
+  },
+  "prompts/research-question-coach/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.121,
+    "worst": 0.214,
+    "height": 2521,
+    "cpl_median": 79.0,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.075,
+    "worst": 0.166,
+    "height": 2293,
+    "cpl_median": 79.0,
+    "cpl_max": 83
+   }
+  },
+  "prompts/rubric-feedback-drafter/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.102,
+    "worst": 0.214,
+    "height": 2587,
+    "cpl_median": 77.0,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.093,
+    "worst": 0.19,
+    "height": 2376,
+    "cpl_median": 77.0,
+    "cpl_max": 84
+   }
+  },
+  "prompts/score-report-study-planner/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.153,
+    "worst": 0.312,
+    "height": 2241,
+    "cpl_median": 76,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.124,
+    "worst": 0.313,
+    "height": 2039,
+    "cpl_median": 76,
+    "cpl_max": 83
+   }
+  },
+  "prompts/single-best-answer-item-writer/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.206,
+    "worst": 0.357,
+    "height": 2197,
+    "cpl_median": 76.0,
+    "cpl_max": 77
+   },
+   "1440": {
+    "blank": 0.176,
+    "worst": 0.356,
+    "height": 1998,
+    "cpl_median": 76.0,
+    "cpl_max": 77
+   }
+  },
+  "prompts/study-plan-progress-check/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.233,
+    "worst": 0.35,
+    "height": 2267,
+    "cpl_median": 76,
+    "cpl_max": 81
+   },
+   "1440": {
+    "blank": 0.213,
+    "worst": 0.351,
+    "height": 2062,
+    "cpl_median": 76,
+    "cpl_max": 81
+   }
+  },
+  "prompts/study-schedule-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.15,
+    "worst": 0.229,
+    "height": 2825,
+    "cpl_median": 81.0,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.192,
+    "worst": 0.236,
+    "height": 2511,
+    "cpl_median": 82.0,
+    "cpl_max": 83
+   }
+  },
+  "prompts/team-based-learning-session-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.144,
+    "worst": 0.219,
+    "height": 2758,
+    "cpl_median": 79.0,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.17,
+    "worst": 0.186,
+    "height": 2427,
+    "cpl_median": 79.0,
+    "cpl_max": 84
+   }
+  },
+  "students/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.141,
+    "worst": 0.398,
+    "height": 4961,
+    "cpl_median": 79.5,
+    "cpl_max": 105
+   },
+   "1440": {
+    "blank": 0.12,
+    "worst": 0.38,
+    "height": 4509,
+    "cpl_median": 78.0,
+    "cpl_max": 105
+   }
+  },
+  "tools-and-prompts/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.146,
+    "worst": 0.172,
+    "height": 2144,
+    "cpl_median": 96.0,
+    "cpl_max": 97
+   },
+   "1440": {
+    "blank": 0.115,
+    "worst": 0.195,
+    "height": 1973,
+    "cpl_median": 96.0,
+    "cpl_max": 97
+   }
+  },
+  "tools/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.438,
+    "worst": 0.602,
+    "height": 3820,
+    "cpl_median": 97.0,
+    "cpl_max": 103
+   },
+   "1440": {
+    "blank": 0.469,
+    "worst": 0.643,
+    "height": 3534,
+    "cpl_median": 97.0,
+    "cpl_max": 103
+   }
+  },
+  "tools/agents/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.226,
+    "worst": 0.485,
+    "height": 6424,
+    "cpl_median": 78.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.237,
+    "worst": 0.48,
+    "height": 5721,
+    "cpl_median": 78.0,
+    "cpl_max": 86
+   }
+  },
+  "tools/first-session/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.2,
+    "worst": 0.439,
+    "height": 5368,
+    "cpl_median": 78,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.221,
+    "worst": 0.436,
+    "height": 4883,
+    "cpl_median": 79,
+    "cpl_max": 88
+   }
+  },
+  "tools/gemini-notebook/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.089,
+    "worst": 0.219,
+    "height": 3924,
+    "cpl_median": 78,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.184,
+    "worst": 0.352,
+    "height": 3578,
+    "cpl_median": 78,
+    "cpl_max": 89
+   }
+  },
+  "tools/hardware/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.109,
+    "worst": 0.404,
+    "height": 6757,
+    "cpl_median": 79.0,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.154,
+    "worst": 0.469,
+    "height": 6156,
+    "cpl_median": 78,
+    "cpl_max": 87
+   }
+  },
+  "tools/interfaces/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.088,
+    "worst": 0.26,
+    "height": 4560,
+    "cpl_median": 79,
+    "cpl_max": 92
+   },
+   "1440": {
+    "blank": 0.099,
+    "worst": 0.252,
+    "height": 4216,
+    "cpl_median": 78.0,
+    "cpl_max": 92
+   }
+  },
+  "tools/local/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.134,
+    "worst": 0.223,
+    "height": 3324,
+    "cpl_median": 78,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.119,
+    "worst": 0.247,
+    "height": 3004,
+    "cpl_median": 78,
+    "cpl_max": 84
+   }
+  },
+  "tools/research/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.194,
+    "worst": 0.454,
+    "height": 5519,
+    "cpl_median": 79.0,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.253,
+    "worst": 0.487,
+    "height": 5001,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   }
+  },
+  "tools/skills/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.178,
+    "worst": 0.286,
+    "height": 4638,
+    "cpl_median": 81.0,
+    "cpl_max": 91
+   },
+   "1440": {
+    "blank": 0.221,
+    "worst": 0.345,
+    "height": 4232,
+    "cpl_median": 80.0,
+    "cpl_max": 89
+   }
+  },
+  "tools/standing-setups/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.106,
+    "worst": 0.266,
+    "height": 3771,
+    "cpl_median": 79.0,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.09,
+    "worst": 0.184,
+    "height": 3414,
+    "cpl_median": 79.0,
+    "cpl_max": 83
+   }
+  },
+  "worked-examples/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.168,
+    "worst": 0.196,
+    "height": 1634,
+    "cpl_median": 79,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.182,
+    "worst": 0.217,
+    "height": 1486,
+    "cpl_median": 79,
+    "cpl_max": 88
+   }
+  },
+  "worked-examples/genome/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.073,
+    "worst": 0.26,
+    "height": 5869,
+    "cpl_median": 80,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.096,
+    "worst": 0.191,
+    "height": 5339,
+    "cpl_median": 80,
+    "cpl_max": 88
+   }
+  },
+  "worked-examples/recommender/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.098,
+    "worst": 0.266,
+    "height": 7981,
+    "cpl_median": 79.0,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.073,
+    "worst": 0.184,
+    "height": 7261,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   }
+  },
+  "worked-examples/sharex-hdr/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.22,
+    "worst": 0.477,
+    "height": 6558,
+    "cpl_median": 79.5,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.205,
+    "worst": 0.572,
+    "height": 5989,
+    "cpl_median": 79,
+    "cpl_max": 88
+   }
+  },
+  "worked-examples/this-site/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.131,
+    "worst": 0.356,
+    "height": 5920,
+    "cpl_median": 80,
+    "cpl_max": 91
+   },
+   "1440": {
+    "blank": 0.09,
+    "worst": 0.27,
+    "height": 5387,
+    "cpl_median": 80,
+    "cpl_max": 91
+   }
+  }
+ }
+}

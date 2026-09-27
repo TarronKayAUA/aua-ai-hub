@@ -465,9 +465,37 @@ The layout_width build block also lists every one-paragraph section still alone 
 
 ## 15. Current measures (the baseline)
 
-These figures are from `scripts/design_check.py measure`, on the build of 5096938 (the week round, live). Blank share is the share of each screen (below the header) in a large empty region: at least 160px each way and 57,600px², with ink grown by 12px. Outlined panels count as used. CPL is characters per line of running text.
+These figures were measured with the measure check's method (the round tool it was ported from), on the build of 5096938 (the week round, live). Blank share is the share of each screen (below the header) in a large empty region: at least 160px each way and 57,600px², with ink grown by 12px. Outlined panels count as used. CPL is characters per line of running text.
 
-(The table is being recorded in this round; until it lands, the space round's figures in SPEC section 12 are the reference.)
+By page type (95 pages: the sitemap minus the weekly digests):
+
+| Page type | Pages | Blank 1920 | Blank 1440 | CPL median (1920) | CPL max (1920) |
+|---|---|---|---|---|---|
+| door | 7 | 17% | 16% | 96.75 | 114 |
+| task | 33 | 17% | 17% | 79.0 | 89 |
+| lesson | 7 | 24% | 24% | 79 | 88 |
+| reference | 31 | 17% | 19% | 79.0 | 92 |
+| shelf | 17 | 31% | 33% | 194.5 | 212 |
+| all | 95 | 20% | 21% | 79.0 | 212 |
+
+- Reading pages (task, lesson, reference) hold the measure: median 79 characters per line, and none over 92.
+- Shelves keep long lines by design: their widest "lines" are table rows, card grids and the tool chooser, not running prose. Their intro paragraphs are held to 44rem.
+- Lessons read higher on blank because a module's figures and self-checks leave some space beside the shorter side (section 14).
+
+The news pages:
+
+| News page | Height 1920 | Blank 1920 | Height 1440 | Blank 1440 |
+|---|---|---|---|---|
+| news/this-week | 5643 | 24% | 5300 | 28% |
+| news/medical-education | 2618 | 34% | 2407 | 30% |
+| news/clinical-practice | 2521 | 31% | 2344 | 35% |
+| news/general-ai | 2485 | 38% | 2285 | 34% |
+| news/archive | 1255 | 44% | 1137 | 45% |
+| news-and-events | 2502 | 11% | 2297 | 12% |
+| news/archive/2026-w39 (a digest) | 7966 | 21% | 7488 | 18% |
+| news/archive/2026-w38 (a digest) | 7657 | 20% | 7175 | 17% |
+
+The two digest rows come from the week round's measurement; the digests are not in the suite's page set. Before the week round, This Week was 10313px tall at 1920 with 39% blank.
 
 The same figures, per page, are in `scripts/design/baselines.json`. The suite compares against them (section 16).
 
