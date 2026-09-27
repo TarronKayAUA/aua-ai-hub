@@ -221,9 +221,27 @@ class Block:
     def _grid(self) -> bool:
         return "grid" in self.cls or any(x.endswith("-grid") for x in self.cls)
 
+    def _grid_items(self) -> int:
+        """How many cards a grid holds: its top-level children, or the items
+        of the one list it wraps."""
+        inner = self.html[self.html.index(">") + 1:self.html.rindex("</")]
+        kids = _Children(inner)
+        if not kids.ok():
+            return 99
+        spans = [s for s in kids.spans if s[2] not in ("script", "style")]
+        if len(spans) == 1 and spans[0][2] in ("ul", "ol"):
+            s, e = spans[0][0], spans[0][1]
+            sub = _Children(inner[s:e][inner[s:e].index(">") + 1:inner[s:e].rindex("</")])
+            return len(sub.spans) if sub.ok() else 99
+        return len(spans)
+
     def _wide(self) -> bool:
-        if self.role in ("cards", "terms"):
+        if self.role == "terms":
             return True
+        if self.role == "cards":
+            # One or two cards sit beside the paragraph that introduces them
+            # (space round: a lone video card had a full row to itself).
+            return self._grid_items() >= 3
         if self.role == "table":
             first = re.search(r"<tr\b.*?</tr>", self.html, re.S)
             return bool(first) and len(re.findall(r"<th\b", first.group(0))) >= 4
@@ -492,7 +510,14 @@ class Plan:
                 for piece in _chunks(gs):
                     rows.append(("spread", [("flow", piece)]))
             elif what == "objs":
-                if len(gs) == 1 and not _lead(gs[0]).question:
+                if len(gs) == 1 and _long_note(_lead(gs[0])):
+                    # A long quoted box keeps its one box, and its contents
+                    # run in two columns a screen at a time (space round).
+                    g, lead = gs[0], _lead(gs[0])
+                    k = g.index(lead)
+                    rows.append(("wide", [x for x in ([g[:k]], ("noteflow", lead), [g[k + 1:]])
+                                          if not isinstance(x, list) or x[0]]))
+                elif len(gs) == 1 and not _lead(gs[0]).question:
                     rows.append(("wide", [_flat(gs)]))
                 else:
                     rows.append(("set", [("set", gs)]))
@@ -502,6 +527,33 @@ class Plan:
                 rows.append(("wide", [_flat(gs)]))
             i += 1
         return rows
+
+
+NOTE_FLOW_MIN = CHUNK        # a note this heavy runs in two columns inside its box
+
+
+def _note_body(b: Block):
+    """A note's inner blocks after its title, as (offset of inner html, blocks),
+    or None when it does not split cleanly."""
+    if b.role != "note":
+        return None
+    inner_start = b.html.index(">") + 1
+    inner_end = b.html.rindex("</")
+    kids = _Children(b.html[inner_start:inner_end])
+    if not kids.ok():
+        return None
+    inner = b.html[inner_start:inner_end]
+    blocks = [Block(s, e, tg, a, inner[s:e]) for s, e, tg, a in kids.spans]
+    body = [x for x in blocks if "admonition-title" not in x.cls]
+    return inner_start, inner_end, blocks, body
+
+
+def _long_note(b: Block) -> bool:
+    if b.role != "note" or b.weight < NOTE_FLOW_MIN:
+        return False
+    nb = _note_body(b)
+    return bool(nb) and sum(1 for x in nb[3] if x.role == "prose") >= 4 and all(
+        x.role in ("prose", "key", "silent") for x in nb[3])
 
 
 def _flat(groups: list[list[Block]]) -> list[Block]:
@@ -722,8 +774,70 @@ def _wrap(article: str, page_type: str, src: str) -> str | None:
                 close()
             elif what == "terms":
                 _put_terms(part[1])
+            elif what == "noteflow":
+                _put_noteflow(part[1])
         else:
             put(part)
+
+    def _put_noteflow(b: Block):
+        """A long note: its title as it is, then its body in pieces, each a
+        two-column flow, a lead-in kept with what it introduces."""
+        nonlocal pos
+        inner_start, inner_end, blocks, body = _note_body(b)
+        inner = b.html[inner_start:inner_end]
+        out.append(article[pos:b.start])
+        out.append(b.html[:inner_start])
+        groups: list[list[Block]] = []
+        for x in body:
+            if groups and groups[-1][-1].leadin:
+                groups[-1].append(x)
+            else:
+                groups.append([x])
+        first_body = body[0].start
+        out.append(inner[:first_body])
+        ipos = first_body
+
+        def write(bs: list[Block]):
+            nonlocal ipos
+            out.append(inner[ipos:bs[-1].end])
+            ipos = bs[-1].end
+
+        # Parts that each open with a bold lead-in ("Section 2 (10 min...)")
+        # sit two to a row, read left, right, then down; otherwise the body
+        # runs as two-column flows a screen at a time.
+        subs: list[list[Block]] = []
+        for g in groups:
+            if g[0].leadin or not subs:
+                subs.append([])
+            subs[-1].extend(g)
+        if sum(1 for s in subs if s[0].leadin) >= 3:
+            for k in range(0, len(subs), 2):
+                open_('<div class="w-part w-pair">')
+                for side in subs[k:k + 2]:
+                    out.append(inner[ipos:side[0].start])
+                    ipos = side[0].start
+                    open_('<div class="w-part w-pair__side">')
+                    write(side)
+                    close()
+                close()
+        else:
+            for piece in _chunks(groups):
+                open_('<div class="w-part w-flow">')
+                for g in piece:
+                    keep = len(g) > 1 and g[0].leadin
+                    if keep:
+                        out.append(inner[ipos:g[0].start])
+                        ipos = g[0].start
+                        open_('<div class="w-part w-keep">')
+                    write(g)
+                    if keep:
+                        close()
+                close()
+        out.append(inner[ipos:])
+        out.append(b.html[inner_end:])
+        pos = b.end
+        used.append(b)
+        _S["noteflows"] = _S.get("noteflows", 0) + 1
 
     def _put_terms(group: list[Block]):
         """A div holding a run of h2 entries (the glossary): each entry
@@ -975,6 +1089,7 @@ def on_post_build(config):
     print(f"  cells by shape     : {fmt(_S['shapes'])}")
     print(f"  blocks read/written: {_S['blocks_in']} / {_S['blocks_out']}")
     print(f"  short sections paired with an unequal neighbour: {_S.get('lone_paired', 0)}")
+    print(f"  long notes set in two columns inside their box: {_S.get('noteflows', 0)}")
     print(f"  one-paragraph sections still alone across the width: {len(_S.get('lone', []))}"
           + "".join(f"\n    {s}: {h!r} ({w})" for s, h, w in _S.get("lone", [])))
     print(f"  landing pages with prose rows: {_S.get('doors', 0)}")
