@@ -59,7 +59,7 @@ A model can win on beauty and lose on every one of those.
 
     Blind head-to-head votes across text-to-image models, with proprietary and open-weights models ranked together.
 
-    [Visit the Image Arena](https://artificialanalysis.ai/image/arena)
+    [Visit the Image Arena](https://artificialanalysis.ai/image/arena){ .card-link }
 
 - :material-chart-bar:{ .lg .middle } __Artificial Analysis: Image Models__
 
@@ -67,7 +67,7 @@ A model can win on beauty and lose on every one of those.
 
     The companion model view, adding generation speed and price per image to the quality ratings.
 
-    [Visit Image Models](https://artificialanalysis.ai/image/models)
+    [Visit Image Models](https://artificialanalysis.ai/image/models){ .card-link }
 
 - :material-account-group:{ .lg .middle } __Arena: Text-to-Image__
 
@@ -75,7 +75,7 @@ A model can win on beauty and lose on every one of those.
 
     The arena that popularized blind-vote ranking, applied to image generation, run by the Arena team (formerly LMArena).
 
-    [Visit the leaderboard](https://arena.ai/leaderboard/text-to-image)
+    [Visit the leaderboard](https://arena.ai/leaderboard/text-to-image){ .card-link }
 
 </div>
 

@@ -862,7 +862,24 @@ BROWSE_ROW_CLOSE = ["", "</details>", "", "</div>", ""]
 RESERVED_TOOL_IDS = {"tool-directory", "tool-chooser", "tool-task-index"}
 
 
-def _tool_card(tool: dict, anchor: str) -> tuple[str, bool, str]:
+def _tool_hub_page(config, tool: dict) -> str:
+    """The tool's own page on the Hub, as a link from the directory, or "".
+    Derived, never listed: a tool has one when docs/tools/<its card slug>.md
+    exists and that page's title starts with the tool's name (Gemini
+    Notebook: tools/gemini-notebook.md, "# Gemini Notebook: Grounded in Your
+    Own Sources"). A guide that merely shares a word with a tool does not
+    qualify, because its title does not start with the tool's name."""
+    slug = _tool_anchor(tool["name"])[len("tool-"):]
+    page = Path(config["docs_dir"]) / "tools" / f"{slug}.md"
+    if not page.exists():
+        return ""
+    for line in page.read_text(encoding="utf-8").splitlines():
+        if line.startswith("# "):
+            return f"{slug}/" if line[2:].strip().startswith(tool["name"]) else ""
+    return ""
+
+
+def _tool_card(tool: dict, anchor: str, hub: str = "") -> tuple[str, bool, str]:
     """One tool card; returns (html, note shown, access line kind).
 
     The card's title is a real heading carrying the stable #tool-... id, so
@@ -872,7 +889,12 @@ def _tool_card(tool: dict, anchor: str) -> tuple[str, bool, str]:
     parser tracks excluded elements by tag name, so they must not contain a
     nested span), and they sit outside the heading so its name is the
     tool's name alone. The status tooltip keeps the note it has carried
-    since 2026-09-08, so nothing reachable before becomes unreachable."""
+    since 2026-09-08, so nothing reachable before becomes unreachable.
+
+    The whole card is one link (layout-tools.css stretches the title's
+    link over it): to the tool's own Hub page when it has one (`hub`),
+    with a Visit site button for the tool's website, otherwise to the
+    website as before."""
     esc = lambda s: html.escape(str(s), quote=False)
     status = tool["governance_status"]
     status_label = STATUS_LABELS[status][0]
@@ -880,7 +902,8 @@ def _tool_card(tool: dict, anchor: str) -> tuple[str, bool, str]:
     title = f' title="{html.escape(note)}"' if note else ""
     parts = [
         '<div class="tool-card">',
-        f'<h3 class="tool-card-title" id="{anchor}"><a href="{html.escape(tool["url"])}">'
+        f'<h3 class="tool-card-title" id="{anchor}"><a class="tool-card-link" '
+        f'href="{html.escape(hub or tool["url"])}">'
         f'{_favicon_img(tool["url"])}{esc(tool["name"])}</a></h3>',
         '<span class="tool-sr" data-search-exclude="">Status: </span>'
         f'<span class="tool-status tool-status--{status}" data-search-exclude=""'
@@ -900,6 +923,9 @@ def _tool_card(tool: dict, anchor: str) -> tuple[str, bool, str]:
         parts.append(f'<p class="tool-card-checked">Checked {_long_date(checked)}'
                      f'<span class="tool-card-checked__means" data-search-exclude="">: '
                      f"{CHECKED_MEANS}</span></p>")
+    if hub:
+        parts.append(f'<p class="tool-card-visit" data-search-exclude=""><a class="tool-visit" href="{html.escape(tool["url"])}" '
+                     f'aria-label="Visit site: {esc(tool["name"])}">Visit site</a></p>')
     parts.append("</div>")
     return "\n".join(parts), bool(note), access
 
@@ -932,6 +958,7 @@ def _render_tools(config) -> str:
     per_category_counts = {}
     standing_counts: dict[str, int] = {}
     anchors: set[str] = set()
+    hubs: list[str] = []
     for category, label in CATEGORY_LABELS.items():
         group = by_category.get(category, [])
         if not group:
@@ -972,7 +999,9 @@ def _render_tools(config) -> str:
                 raise ValueError(f"render_data hook: the card anchor {anchor!r} "
                                  "is taken by another tool or by the page itself")
             anchors.add(anchor)
-            card, noted, access = _tool_card(tool, anchor)
+            hub = _tool_hub_page(config, tool)
+            hubs.append(tool["name"]) if hub else None
+            card, noted, access = _tool_card(tool, anchor, hub)
             lines.append(card)
             notes_shown += noted
             if access:
@@ -1003,6 +1032,11 @@ def _render_tools(config) -> str:
     standings = ", ".join(f"{k} {v}" for k, v in sorted(standing_counts.items()))
     print(f"  standings       : {standings}")
     print(f"  rendered total  : {rendered} (cross-check ok)")
+    visits = out.count('class="tool-visit"')
+    print(f"  own Hub pages   : {len(hubs)} ({', '.join(hubs) or 'none'}), each with a Visit site "
+          f"button (cross-check {'ok' if visits == len(hubs) else 'MISMATCH'})")
+    if visits != len(hubs):
+        raise ValueError("render_data hook: Visit site buttons do not match the tools with Hub pages")
     print(f"  card headings   : {headings} with a #tool-... id (cross-check ok)")
     dated = sum(1 for t in tools if t.get("last_reviewed"))
     means = out.count('class="tool-card-checked__means"')
@@ -1122,7 +1156,7 @@ def _render_open_models(config) -> str:
                 # inside a closed row would show nothing. Search indexes
                 # the models under their modality row, which opens on
                 # arrival.
-                f'<p class="tool-card-title"><a href="{html.escape(entry["url"])}">'
+                f'<p class="tool-card-title"><a class="tool-card-link" href="{html.escape(entry["url"])}">'
                 f'{esc(entry["name"])}</a></p>',
                 f'<p class="tool-card-sub">{esc(entry["vendor"])}'
                 f'<span class="tool-card-license">{esc(entry["license"])}</span></p>',
@@ -1491,10 +1525,15 @@ def prompt_group_order(audience: str | None = None) -> list[str]:
 
 
 def _prompt_row(entry, slug: str, category: str, also: bool) -> str:
-    """One library row: the title links to the prompt's own page; Copy and
-    Save are buttons that docs/javascripts/layout-prompts.js reveals, so a
-    reader without JavaScript never meets a control that does nothing. The
-    #slug anchor sits on the row in the prompt's own category only."""
+    """One library row: the title links to the prompt's own page, and that
+    one link covers the whole colored row (a stretched link, layout-prompts.css).
+    Read the prompt is a plain link to the page's prompt section, present
+    without JavaScript; Copy and Save are buttons that
+    docs/javascripts/layout-prompts.js reveals, so a reader without
+    JavaScript never meets a control that does nothing. The three sit above
+    the stretched link, in the prompt page's own order: Copy, Read the
+    prompt, Save. The #slug anchor sits on the row in the prompt's own
+    category only."""
     title = html.escape(entry["title"])
     tagline = html.escape(" ".join(entry["tagline"].split()))
     status, _ = PROMPT_STATUS_LABELS[entry["status"]]
@@ -1516,8 +1555,10 @@ def _prompt_row(entry, slug: str, category: str, also: bool) -> str:
     if note:
         parts.append(f'<p class="pl-row__note">{html.escape(" ".join(note.split()))}</p>')
     copy = f'<button type="button" class="pl-copy" data-copy="{slug}" data-title="{title}" hidden>Copy</button>'
+    read = (f'<a class="pl-read" href="{slug}/#the-prompt" '
+            f'aria-label="Read the prompt: {title}">Read the prompt</a>')
     save = f'<button type="button" class="pl-save" data-save="{slug}" data-title="{title}" hidden>Save</button>'
-    parts += ['<div class="pl-row__actions">', copy, save, '</div>', '</div>']
+    parts += ['<div class="pl-row__actions">', copy, read, save, '</div>', '</div>']
     return "".join(parts)
 
 

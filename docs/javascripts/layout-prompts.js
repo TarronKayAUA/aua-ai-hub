@@ -355,6 +355,29 @@
             box.scrollIntoView({ block: "start" });
           }
         });
+        /* Arriving at #the-prompt (a library row's Read the prompt, this
+           page's own Read the prompt, or a hash change) opens the whole
+           prompt, as Show the whole prompt does, and brings the section's
+           start into view below the header (its scroll-margin, from
+           layout-prompts.css). Instant, so the same with reduced motion. */
+        var arrive = function () {
+          if (window.location.hash !== "#the-prompt") return;
+          setOpen(true);
+          var start = document.getElementById("the-prompt");
+          if (start) start.scrollIntoView({ block: "start" });
+        };
+        arrive();
+        window.addEventListener("hashchange", arrive);
+        // Already at #the-prompt, a click on the page's own link changes no
+        // hash: open it all the same.
+        document.querySelectorAll('a[href="#the-prompt"]').forEach(function (a) {
+          a.addEventListener("click", function () { window.setTimeout(arrive, 0); });
+        });
+        // Web fonts and late layout can move the heading after the first
+        // jump; settle once more when the page has loaded.
+        window.addEventListener("load", function () {
+          if (window.location.hash === "#the-prompt") arrive();
+        });
       }
     }
 

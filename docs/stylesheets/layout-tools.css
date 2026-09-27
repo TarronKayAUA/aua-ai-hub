@@ -496,16 +496,12 @@
   align-content: start;
   padding: 0.75rem 0.9rem 0.8rem;
   border-color: var(--tool-rule);
-  transition: none;
 }
 
-/* One destination is only the title link, so the card does not lift as if
-   it all were one (MA-2). */
-.md-typeset .tool-shelf .tool-card:hover {
-  transform: none;
-  box-shadow: none;
-  border-color: var(--md-default-fg-color--lighter);
-}
+/* The card no longer stays flat on hover (it did while only its title was
+   a link, MA-2): the whole card is now one link, so it lifts as the hub
+   cards do, from extra.css's .tool-card rules, and not with reduced
+   motion. */
 
 .md-typeset .tool-shelf .tool-card > * {
   grid-column: 1 / -1;
@@ -539,7 +535,8 @@
   text-underline-offset: 0.18em;
 }
 
-/* The title goes to the vendor's own site. */
+/* The title's mark says where the card goes: the external mark for the
+   vendor's own site, a chevron for the tool's page on the Hub. */
 .md-typeset .tool-card-title a::after {
   content: "\2197";
   content: "\2197" / "";
@@ -687,4 +684,80 @@
 .md-typeset .tool-card-title a {
   display: inline-block;
   padding-block: 0.1rem;
+}
+
+/* Whole-card links (owner, 2026-09-27): the title's link is the card's one
+   link and its hit area is stretched over the card (::before, since
+   ::after carries the destination mark). The status (its tooltip holds the
+   status note) and Visit site sit above it. Hover as on the hub cards: the
+   card lifts (extra.css .tool-card:hover) and the title is underlined while
+   the pointer is on the card's link; keyboard focus rings the card and
+   underlines the title. */
+.md-typeset .tool-card {
+  position: relative;
+}
+
+.md-typeset .tool-card-title a.tool-card-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.md-typeset .tool-card-title a.tool-card-link:not([href^="http"])::after {
+  content: "\203a";
+  content: "\203a" / "";
+  font-size: 1em;
+}
+
+.md-typeset .tool-card :is(.tool-status, .headerlink, .tool-card-visit) {
+  position: relative;
+  z-index: 1;
+}
+
+.md-typeset .tool-card:has(a.tool-card-link:is(:hover, :focus-visible)) a.tool-card-link {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.md-typeset .tool-card a.tool-card-link:is(:focus-visible, .focus-visible) {
+  outline: none;
+}
+
+.md-typeset .tool-card:has(a.tool-card-link:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+/* Visit site: the tool's own website, for a card that goes to the tool's
+   Hub page. Drawn like the library's Read the prompt. */
+.md-typeset .tool-card-visit {
+  margin: 0.5rem 0 0;
+}
+
+.md-typeset a.tool-visit {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 1.5rem;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid var(--hub-row-rule);
+  border-radius: 0.3rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-typeset-a-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.md-typeset a.tool-visit::after {
+  content: "\2197";
+  content: "\2197" / "";
+  font-size: 0.85em;
+  font-weight: 400;
+}
+
+.md-typeset a.tool-visit:hover {
+  border-color: var(--md-typeset-a-color);
+  background: var(--hub-quiet-bg);
 }

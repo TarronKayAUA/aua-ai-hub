@@ -688,3 +688,35 @@ body[data-door="news-events"] .md-typeset h1 {
 body[data-door="news-events"] .md-typeset h2#more-news-and-events {
   margin-top: 1.6rem;
 }
+
+/* Whole-item links (owner, 2026-09-27): each timely item is one link, its
+   title's, stretched over the item, with the destination mark after the
+   title (layout-news.css). Hover as on the hub cards: the item lifts
+   (extra.css) and its title is underlined; keyboard focus rings the item. */
+[dir] .md-typeset .timely-list > li.timely-item {
+  position: relative;
+  margin: 0 -0.4rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  border-radius: 0.3rem;
+}
+
+.md-typeset a.timely-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+}
+
+.md-typeset .timely-item:has(a.timely-title:hover) a.timely-title {
+  text-decoration: underline;
+}
+
+.md-typeset a.timely-title:is(:focus-visible, .focus-visible) {
+  outline: none;
+}
+
+.md-typeset .timely-item:has(a.timely-title:focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 1px;
+}

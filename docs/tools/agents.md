@@ -133,7 +133,7 @@ This page is the field guide; the rest of the site carries the working layer:
 
     Compares chat, working sessions, and code agents, and explains the economics.
 
-    [Compare the rooms](interfaces.md)
+    [Compare the rooms](interfaces.md){ .card-link }
 
 - :material-school:{ .lg .middle } __Working with Agents__
 
@@ -141,7 +141,7 @@ This page is the field guide; the rest of the site carries the working layer:
 
     Module 7 of the pathway: the 12-minute concept primer.
 
-    [Read the module](../pathway/working-with-agents.md)
+    [Read the module](../pathway/working-with-agents.md){ .card-link }
 
 - :material-play-circle:{ .lg .middle } __Your First Agent Session__
 
@@ -149,7 +149,7 @@ This page is the field guide; the rest of the site carries the working layer:
 
     Your first 20 minutes step by step, including the settings worth changing.
 
-    [Run one session](first-session.md)
+    [Run one session](first-session.md){ .card-link }
 
 - :material-briefcase:{ .lg .middle } __Standing Setups__
 
@@ -157,7 +157,7 @@ This page is the field guide; the rest of the site carries the working layer:
 
     Makes your preferences permanent once you are running sessions routinely.
 
-    [Set it up once](standing-setups.md)
+    [Set it up once](standing-setups.md){ .card-link }
 
 - :material-toolbox:{ .lg .middle } __Skills__
 
@@ -165,7 +165,7 @@ This page is the field guide; the rest of the site carries the working layer:
 
     The four document skills Claude users already have, how skills work, and how to judge one someone else wrote.
 
-    [Explore skills](skills.md)
+    [Explore skills](skills.md){ .card-link }
 
 </div>
 

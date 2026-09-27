@@ -25,7 +25,7 @@ Audio is the newest frontier, with some arenas now ranking with and without gene
 
     Blind-vote arena rankings for generating clips from written prompts, proprietary and open-weights models together.
 
-    [Visit Text-to-Video](https://artificialanalysis.ai/video/leaderboard/text-to-video)
+    [Visit Text-to-Video](https://artificialanalysis.ai/video/leaderboard/text-to-video){ .card-link }
 
 - :material-movie-open-outline:{ .lg .middle } __Artificial Analysis: Image-to-Video__
 
@@ -33,7 +33,7 @@ Audio is the newest frontier, with some arenas now ranking with and without gene
 
     Rankings for animating a supplied image, the task behind most practical video work, scored with and without audio.
 
-    [Visit Image-to-Video](https://artificialanalysis.ai/video/leaderboard/image-to-video)
+    [Visit Image-to-Video](https://artificialanalysis.ai/video/leaderboard/image-to-video){ .card-link }
 
 - :material-account-group:{ .lg .middle } __Arena: Text-to-Video__
 
@@ -41,7 +41,7 @@ Audio is the newest frontier, with some arenas now ranking with and without gene
 
     The Arena team's (formerly LMArena) blind-vote video arena, a useful second opinion on the same question.
 
-    [Visit the leaderboard](https://arena.ai/leaderboard/text-to-video)
+    [Visit the leaderboard](https://arena.ai/leaderboard/text-to-video){ .card-link }
 
 - :material-animation-play-outline:{ .lg .middle } __Arena: Image-to-Video__
 
@@ -49,7 +49,7 @@ Audio is the newest frontier, with some arenas now ranking with and without gene
 
     Arena's image-animation rankings, comparing how faithfully models bring a still to life.
 
-    [Visit the leaderboard](https://arena.ai/leaderboard/image-to-video)
+    [Visit the leaderboard](https://arena.ai/leaderboard/image-to-video){ .card-link }
 
 </div>
 

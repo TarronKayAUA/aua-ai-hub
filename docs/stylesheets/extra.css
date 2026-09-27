@@ -327,6 +327,22 @@
   box-shadow: var(--md-shadow-z2);
 }
 
+/* The same lift for the other whole-card links (2026-09-27, owner: the hub
+   cards' hover is the model): the Prompt Library's rows, news cards and
+   the homepage's timely items (tool and video cards already had it). */
+.md-typeset .pl-rows .pl-row,
+.md-typeset .news-card,
+.md-typeset .timely-list > li.timely-item {
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.md-typeset .pl-rows .pl-row:hover,
+.md-typeset .news-card:hover,
+.md-typeset .timely-list > li.timely-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--md-shadow-z2);
+}
+
 /* The homepage's nine doors fall as 4 + 4 + 1 in Material's auto-fit grid,
    leaving the last card alone beside three empty slots. Three columns make
    it three full rows and give each card more room for its text. Below the
@@ -735,6 +751,32 @@
   aspect-ratio: 16 / 9;
   object-fit: cover;
   background: var(--md-default-fg-color--lightest);
+}
+
+/* Video, podcast and course cards are already one link each (the card is
+   the <a>). As on the hub cards (2026-09-27): the title is underlined while
+   the pointer or keyboard focus is on the card, focus rings the card, and
+   the meta line ends with the destination mark. */
+/* Material's link transition (color, 0.125s) outranks .video-card's own,
+   which made the lift a jump; this keeps the hub cards' timing. */
+.md-typeset a.video-card {
+  transition: transform 0.15s, box-shadow 0.15s, color 0.125s;
+}
+
+.md-typeset a.video-card:is(:hover, :focus-visible) .video-card-title {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.md-typeset a.video-card:is(:focus-visible, .focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset a.video-card[href^="http"] .video-card-meta::after {
+  content: " \2197";
+  content: " \2197" / "";
+  opacity: 0.7;
 }
 
 .video-card-title {
@@ -1222,12 +1264,19 @@
   }
 
   .md-typeset .grid.cards > ul > li,
+  .md-typeset .pl-rows .pl-row,
+  .md-typeset .news-card,
+  .md-typeset .timely-list > li.timely-item,
+  .md-typeset a.video-card,
   .video-card,
   .tool-card {
     transition: none;
   }
 
   .md-typeset .grid.cards > ul > li:hover,
+  .md-typeset .pl-rows .pl-row:hover,
+  .md-typeset .news-card:hover,
+  .md-typeset .timely-list > li.timely-item:hover,
   .video-card:hover,
   .tool-card:hover {
     transform: none;

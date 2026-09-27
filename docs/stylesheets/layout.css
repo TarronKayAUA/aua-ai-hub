@@ -291,6 +291,48 @@ body[data-page-type="door"] .md-path {
   outline-offset: 2px;
 }
 
+/* A card whose one link is its closing call to action ("Visit LiveBench",
+   "Compare the rooms"; 2026-09-27): the link keeps the link colour, is
+   underlined while the pointer or focus is on the card, and ends with its
+   destination mark. */
+.md-typeset .grid.cards > ul > li > p > a.card-link {
+  color: var(--md-typeset-a-color);
+  font-weight: 700;
+}
+
+.md-typeset .grid.cards > ul > li:has(> p > a.card-link:is(:hover, :focus-visible)) > p > a.card-link {
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.md-typeset .grid.cards > ul > li > p > a.card-link:is(:focus-visible, .focus-visible) {
+  outline: none;
+}
+
+/* Its destination mark sits in the card's top right, as on the Governance
+   cards: the external mark for another website, a chevron for a Hub page. */
+.md-typeset .grid.cards > ul > li:has(> p > a.card-link) {
+  padding-right: 2.2rem;
+}
+
+.md-typeset .grid.cards > ul > li:has(> p > a.card-link)::after {
+  content: "\203a";
+  content: "\203a" / "";
+  position: absolute;
+  top: 0.68rem;
+  right: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: var(--md-typeset-a-color);
+  pointer-events: none;
+}
+
+.md-typeset .grid.cards > ul > li:has(> p > a.card-link[href^="http"])::after {
+  content: "\2197";
+  content: "\2197" / "";
+  font-size: 0.9rem;
+}
+
 .md-typeset .grid.cards > ul > li ul {
   list-style: none;
   margin: 0.5rem 0 0;

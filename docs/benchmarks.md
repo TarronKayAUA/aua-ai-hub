@@ -28,7 +28,7 @@ For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics
 
     Independent measurements of intelligence, speed, and price across providers, in a single view of cost against capability.
 
-    [Visit Artificial Analysis](https://artificialanalysis.ai/models)
+    [Visit Artificial Analysis](https://artificialanalysis.ai/models){ .card-link }
 
 - :material-flask-outline:{ .lg .middle } __LiveBench__
 
@@ -36,7 +36,7 @@ For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics
 
     An open, contamination-aware benchmark that refreshes its questions on a schedule. The table below is refreshed automatically from its published data.
 
-    [Visit LiveBench](https://livebench.ai/)
+    [Visit LiveBench](https://livebench.ai/){ .card-link }
 
 - :material-table-large:{ .lg .middle } __BenchLM__
 
@@ -44,7 +44,7 @@ For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics
 
     Aggregates scores from hundreds of public benchmarks into one comparable view, with sources cited per score.
 
-    [Visit BenchLM](https://benchlm.ai/)
+    [Visit BenchLM](https://benchlm.ai/){ .card-link }
 
 - :material-account-group:{ .lg .middle } __Arena (formerly LMArena)__
 
@@ -52,7 +52,7 @@ For the vocabulary, see [benchmark](basics/glossary.md#benchmark), [eval](basics
 
     Rankings from millions of blind head-to-head votes by real users, a measure of preference rather than test performance.
 
-    [Visit Arena](https://arena.ai/)
+    [Visit Arena](https://arena.ai/){ .card-link }
 
 </div>
 
