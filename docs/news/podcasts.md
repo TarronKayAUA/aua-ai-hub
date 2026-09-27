@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/ai-am-what-if-it-works-too-well-colluding-agents-200m-safety-orgs-virtual-cells-saturate-at-2" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/a007c8ec-ba59-11f1-bf89-c35bece7ca7f/image/5df3dbaddc06cae9dfc837cb5834699e.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI:AM: What If It Works Too Well? Colluding Agents, $200M Safety Orgs, Virtual Cells Saturate at 2%" loading="lazy">
+  <span class="video-card-title">AI:AM: What If It Works Too Well? Colluding Agents, $200M Safety Orgs, Virtual Cells Saturate at 2%</span>
+  <span class="video-card-meta">The Cognitive Revolution, September 27, 2026</span>
+  <span class="video-card-desc">Experts discuss emerging challenges in agent coordination, AI safety funding, and physical-world deployment, including unexpected agent collusion during training.</span>
+</a>
 <a class="video-card" href="https://share.transistor.fm/s/74934e48" target="_blank" rel="noopener">
   <img src="https://img.transistorcdn.com/HLUWV_-5iqNF7teb0qV3YGhmF6mbZoZm7o1RlqJSQDg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8xMzMx/MTE2MDQ4ZDI2MmNm/OTc4MWI4MDE1YjE4/NTdkOC5wbmc.jpg" alt="Podcast: From AGENTS.md to Enterprise Deployment" loading="lazy">
   <span class="video-card-title">From AGENTS.md to Enterprise Deployment</span>

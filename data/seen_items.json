@@ -1,335 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arxiv.org/abs/2607.24750",
-   "title_hash": "91dfeffd98ddbed9c155af8a2febcc6e",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow domain application without medical or educational significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.24765",
-   "title_hash": "d83b9b0654de532affb80745d5deb094",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "incremental fine-tuning study with limited audience relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.24841",
-   "title_hash": "98e5e2962e3b4aa636c958c9b05ac508",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow technical study on inference efficiency without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.24868",
-   "title_hash": "b1eef4eefe8eb48e79887fa38a48815a",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "mathematical research unrelated to language models or medical applications"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.24999",
-   "title_hash": "282a55a97efbebf6d82b496803c452f5",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": true,
-   "title": "CogArena: A Multimethod Evaluation of Cognitive Ability Structure in Large Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-29T04:00:00+00:00",
-   "summary": "CogArena is a multimethod benchmark of 13 paradigms designed to evaluate whether large language models' cognitive ability profiles converge across tasks and generalize beyond the models used to define them.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Benchmarks and evaluation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25069",
-   "title_hash": "a5835d54e664df885c09d31ef4c3abea",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow workshop paper on specialized claim verification task"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25094",
-   "title_hash": "5a7b3546c75daff823bae029d6c6a100",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow linguistic evaluation study without medical or educational application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25129",
-   "title_hash": "e191c814cfe97182260cb5049eac8463",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": true,
-   "title": "Deep Label-Wise Attentive Temporal Convolutional Networks Improve Medical Coding",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-29T04:00:00+00:00",
-   "summary": "Deep learning attention networks improve automated medical coding by better aggregating information from clinical notes and focusing on relevant sections for individual diagnosis and procedure codes.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Other"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25182",
-   "title_hash": "b949ac07fa24def09be894fc767ad09f",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow application to table retrieval ranking without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25184",
-   "title_hash": "ce73fe7f98e985a6be31bee1927ba94b",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "linguistic theory study without medical or educational application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25186",
-   "title_hash": "d1d11995506ebb334afd74cc15048b01",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": true,
-   "title": "MyoCardBench: A Real-World Data Benchmark for Evaluating Large Language Models in Clinically Authentic Cardiovascular Care Scenarios",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-29T04:00:00+00:00",
-   "summary": "MyoCardBench is a real-world benchmark for evaluating large language models in longitudinal, multimodal cardiovascular care scenarios beyond isolated examination tasks.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25202",
-   "title_hash": "7c34a3c7e7a73b2280d605c4ace23ce9",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow linguistic analysis of code-switching without medical or educational relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25228",
-   "title_hash": "53d63eb9f4f4ff3135743950b7a709ea",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow database task application without medical or educational significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25236",
-   "title_hash": "ca95c31ab60e93a92f3a3427be6d7561",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow robotics and planning application without medical or educational relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25270",
-   "title_hash": "252f6180dd6b98b1eb5ebaa95a2fe523",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "technical study on model internals without direct audience application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25291",
-   "title_hash": "57f985a36d8897aab847ac6de2c8dde3",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow inference optimization study without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25305",
-   "title_hash": "1aa78bdf32f89fb197ecb327bafcbefb",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "linguistic typology study without medical or educational application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25308",
-   "title_hash": "c46097398c7fdc9313ea548c2bcca21a",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow game-playing reinforcement learning study without medical or educational relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25335",
-   "title_hash": "089451b696ab0c42cace885b867d22a3",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow prompt compression optimization without broad audience significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25337",
-   "title_hash": "2bab8db3c0efbe7cd8e93702c832c7ec",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow robotics and planning research without medical or educational relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25375",
-   "title_hash": "cdf71893470e8bcf2f3eaba28fcd2400",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow domain application without demonstrated medical or educational significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25380",
-   "title_hash": "020d31b1e497cbb3508b5453d4ca82f0",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": true,
-   "title": "Memory for Large Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-29T04:00:00+00:00",
-   "summary": "A comprehensive survey examines memory as an architectural dimension in large language models, covering mechanisms from transient attention to parameter-efficient adaptations.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25507",
-   "title_hash": "a50370546a02ef081e24d33a95228387",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow theoretical analysis of rotary attention without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25579",
-   "title_hash": "b0b449cd511d5c9180ebc05a93c469f9",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow knowledge graph application without medical or educational relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.25581",
-   "title_hash": "4866ea343b1d7a0495b90a86429e531c",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "narrow linguistic evaluation study without medical or educational application"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03068-5",
-   "title_hash": "0c34d3d9e2da00eb0889bbaff66b8106",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": true,
-   "title": "An objective smartphone speech diagnostic aid for adolescent major depressive disorder",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-29T00:00:00+00:00",
-   "summary": "A smartphone speech analysis tool provides objective diagnostic support for adolescent major depressive disorder using voice-based markers.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42521959?fc=20260609215449&ff=20260729024626&v=2.20.0",
-   "title_hash": "24d83e7bb7dac6920764bfa9e0d649ae",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": true,
-   "title": "Artificial Intelligence in Psychiatric Graduate Medical Education",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-28T10:00:00+00:00",
-   "summary": "Responsible AI integration in psychiatry graduate medical education requires staged introduction, faculty engagement, human oversight, transparent communication, and prioritization of tools that deepen rather than replace human connection.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8tny9/sorry_but_did_dario_just_say_that_closedweights",
-   "title_hash": "459a867565066e0e82e1af49ed92ff66",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "community forum discussion without substantial news or analysis"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=9lSIHaXT1rU",
-   "title_hash": "904427c9b580235bf13018c46133216d",
-   "first_seen": "2026-07-29T06:46:26.353090+00:00",
-   "kept": false,
-   "reason": "drama and speculation coverage with no identifiable real event"
-  },
-  {
-   "url": "https://www.sensible-med.com/p/this-fortnight-in-medicine-xxxi",
-   "title_hash": "bb9230f24fa3678f8c1569187c45e2d6",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": false,
-   "reason": "clinical roundup with no artificial intelligence relevance"
-  },
-  {
-   "url": "https://www.technologyreview.com/2026/07/29/1140795/the-ai-hype-index-unsexy-ai",
-   "title_hash": "888785bd09b0c708c914c69db4873a9c",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": true,
-   "title": "The AI Hype Index: Unsexy AI",
-   "source": "MIT Technology Review AI",
-   "published": "2026-07-29T08:42:57+00:00",
-   "summary": "MIT Technology Review surveys recent developments in practical AI applications including robotics and domestic automation, covering both real capabilities and hype in near-term AI deployment.",
-   "category": "general_ai",
-   "score": 2.0,
-   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/07/JUL26-thumb.jpg?resize=1200,600",
-   "topic": "Industry and policy"
-  },
-  {
-   "url": "https://www.insidehighered.com/opinion/columns/call-action/2026/07/29/how-ai-shaping-higher-ed-communications",
-   "title_hash": "280357937cf46ccad1d9cac5b89d95e7",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": false,
-   "reason": "general higher education communications without substantive artificial intelligence content"
-  },
-  {
-   "url": "https://www.insidehighered.com/opinion/views/2026/07/29/end-learn-code-era-opinion",
-   "title_hash": "959b153e144ca04ebeb02bcfdaf247e9",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": false,
-   "reason": "general higher education commentary without substantive artificial intelligence content"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04555-8",
-   "title_hash": "577936e4ecd82fb880b63f8e3f0d6927",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": false,
-   "reason": "domain-specific biochemistry research with no artificial intelligence content"
-  },
-  {
-   "url": "https://github.com/FrigadeHQ/yap",
-   "title_hash": "f71398848e09e7b46675e395bff55593",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": false,
-   "reason": "minor tool release notes for local software utility"
-  },
-  {
-   "url": "https://abeljansma.nl/2026/07/10/truth-is-not-a-direction.html",
-   "title_hash": "9440d407d037f6b15b48d4a66a05f0d2",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": true,
-   "title": "Truth is not a direction: a Tarski attack on LLM probes",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-07-27T12:56:36+00:00",
-   "summary": "Research paper argues that mechanistic interpretability probes of large language models rest on flawed assumptions about how truth is represented, challenging a common evaluation approach.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=g192Vf0OjOk",
-   "title_hash": "9a8648e1ad95d367749527e2bd2e8a63",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": false,
-   "reason": "speculation about unreleased model, not confirmed release or capability change"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=WeP9VUf1OoE",
-   "title_hash": "16d662fa2bc27c611e32a80d0af1f944",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": true,
-   "title": "Introducing gpt-transcribe and gpt-live-transcribe",
-   "source": "OpenAI",
-   "published": "2026-07-28T21:49:18+00:00",
-   "summary": "OpenAI releases two transcription models for batch and live audio processing with custom vocabulary support, relevant for clinical documentation workflows.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i4.ytimg.com/vi/WeP9VUf1OoE/hqdefault.jpg",
-   "display_title": "OpenAI gpt-transcribe and gpt-live-transcribe models"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=lx41qvj80Jo",
-   "title_hash": "bc564ca1e193bbf49cc78d6ed760764f",
-   "first_seen": "2026-07-29T10:49:08.867757+00:00",
-   "kept": false,
-   "reason": "security incident coverage without clear educational relevance to medical AI"
-  },
-  {
    "url": "https://spectrum.ieee.org/siobahn-day-grady-ai-hbcu",
    "title_hash": "ad998b009b891bdf6fd207e697e56192",
    "first_seen": "2026-07-29T14:32:40.223393+00:00",
@@ -33069,6 +32740,108 @@
    "first_seen": "2026-09-27T05:21:53.112711+00:00",
    "kept": false,
    "reason": "forum thread with no authoritative information or instructive analysis beyond a user's enthusiasm"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42801128?fc=20260609215449&ff=20260927100055&v=2.20.1",
+   "title_hash": "e7fab083266407e92f5a4f9f0f2b2665",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": false,
+   "reason": "no abstract available; cannot assess content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wr5ylm/42x_faster_prompt_lookup_drafting_in_llamacpp",
+   "title_hash": "4ab8c4df589e51ca9570a00eb1f946bf",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": false,
+   "reason": "Reddit forum discussion; narrow optimization technique without broad significance"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42800561?fc=20260609215449&ff=20260927100055&v=2.20.1",
+   "title_hash": "7e49b411fd2d677391741dbb6d313112",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": false,
+   "reason": "no abstract available; cannot assess content"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42799750?fc=20260609215449&ff=20260927100055&v=2.20.1",
+   "title_hash": "51629bfbf7c3ef1b3b583816b5863170",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": true,
+   "title": "Diagnostic performance of large language models for discrepancy detection in non-English resident-authored abdominal CT and MRI reports: a Turkish-language evaluation",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-26T10:00:00+00:00",
+   "summary": "Large language models showed variable performance detecting discrepancies in Turkish radiology reports but require prospective multicenter validation before clinical deployment.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42799683?fc=20260609215449&ff=20260927100055&v=2.20.1",
+   "title_hash": "4bb95a3c88e8997e21e57dfdef6f598e",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": false,
+   "reason": "no abstract available; cannot assess content"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42799410?fc=20260609215449&ff=20260927100055&v=2.20.1",
+   "title_hash": "92913fc72386c910c4bda2f126a13563",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": false,
+   "reason": "correction notice; not substantive content"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42798711?fc=20260609215449&ff=20260927100055&v=2.20.1",
+   "title_hash": "2d9a38fd28aa473e45aa37b97cf3c515",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": true,
+   "title": "Cognitive reshaping and resurgence of humanness: restructuring the medical education continuum in the era of generative AI",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-26T10:00:00+00:00",
+   "summary": "Medical education should develop augmented clinicians with high AI literacy and humanistic skills rather than competing with algorithmic capabilities.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=6DjIjjE3doo",
+   "title_hash": "564d837e371a8113570b1f5bfb62b731",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": false,
+   "reason": "speculation and rumor about unreleased models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=nX0fgBL3sIM",
+   "title_hash": "a4904d982d18610c04ad81a7e8da8692",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": false,
+   "reason": "speculation and rumor about unreleased models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=kyJ1vd7yEPc",
+   "title_hash": "d30f4348e5ce1306ee19ba3d981b1755",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Rise-of-the-AI-Moderates-e3pet2d",
+   "title_hash": "71e8b0d71738752506f10da8d6a903bd",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": false,
+   "reason": "policy and risk commentary without substantive new information or analysis specific to medical education and practice"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/ai-am-what-if-it-works-too-well-colluding-agents-200m-safety-orgs-virtual-cells-saturate-at-2",
+   "title_hash": "af09d38b99f978772608d3a15ed4e813",
+   "first_seen": "2026-09-27T14:00:54.811804+00:00",
+   "kept": true,
+   "title": "AI:AM: What If It Works Too Well? Colluding Agents, $200M Safety Orgs, Virtual Cells Saturate at 2%",
+   "source": "The Cognitive Revolution",
+   "published": "2026-09-27T10:42:50+00:00",
+   "summary": "Experts discuss emerging challenges in agent coordination, AI safety funding, and physical-world deployment, including unexpected agent collusion during training.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://megaphone.imgix.net/podcasts/a007c8ec-ba59-11f1-bf89-c35bece7ca7f/image/5df3dbaddc06cae9dfc837cb5834699e.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
  ],
  "digests": [

@@ -6,7 +6,7 @@ comments: true
 
 # This Week
 
-<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">42</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">45</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">43</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">15</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">1</span></a></nav>
+<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">43</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">45</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">42</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">13</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">2</span></a></nav>
 
 Everything kept in the last seven days. Earlier weeks' highlights are in the [News Archive](archive/index.md).
 
@@ -25,7 +25,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">42</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">17</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">43</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">18</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">2</span></button></div>
 <div class="news-list">
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
@@ -64,6 +64,13 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42798711?fc=20260609215449&amp;ff=20260927100055&amp;v=2.20.1">Cognitive reshaping and resurgence of humanness: restructuring the medical education continuum in the era of generative AI</a>
+    <p class="news-card-summary">Medical education should develop augmented clinicians with high AI literacy and humanistic skills rather than competing with algorithmic capabilities.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42786480?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1">Application of an AI-enabled personalized medical education model for improving clinical thinking among cardiovascular surgery trainees</a>
     <p class="news-card-summary">An AI-enabled personalized learning model improved exam scores, critical thinking, and clinical interview performance in cardiovascular surgery trainees.</p>
@@ -90,18 +97,18 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Randomized trial shows AI assistance improves pharmacist and trainee medication verification accuracy but reveals automation bias risk, requiring model output validation training.</p>
   </div>
 </div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42788236?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">&quot;Acne in the Age of ChatGPT&quot;: an artificial intelligence-generated and evidence-based continuing medical education distance course for Italian physicians</a>
-    <p class="news-card-summary">Pilot continuing education course on acne was developed with ChatGPT assistance, translated to Italian, and evaluated for physician satisfaction with AI-generated content.</p>
-  </div>
-</div>
 </div>
 
-??? abstract "Show the other 32 items"
+??? abstract "Show the other 33 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42788236?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">&quot;Acne in the Age of ChatGPT&quot;: an artificial intelligence-generated and evidence-based continuing medical education distance course for Italian physicians</a>
+        <p class="news-card-summary">Pilot continuing education course on acne was developed with ChatGPT assistance, translated to Italian, and evaluated for physician satisfaction with AI-generated content.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
@@ -340,8 +347,15 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">45</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">13</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">13</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">13</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">6</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">45</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">14</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">13</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">12</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">6</span></button></div>
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42799750?fc=20260609215449&amp;ff=20260927100055&amp;v=2.20.1">Diagnostic performance of large language models for discrepancy detection in non-English resident-authored abdominal CT and MRI reports: a Turkish-language evaluation</a>
+    <p class="news-card-summary">Large language models showed variable performance detecting discrepancies in Turkish radiology reports but require prospective multicenter validation before clinical deployment.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-decision-support">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
@@ -406,18 +420,18 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Automated analysis of multi-sequence MRI data quantifies acute cervical spinal cord injury and generates 3D visualizations for clinical assessment.</p>
   </div>
 </div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03248-3">Large language models as judges for clinical generative AI evaluation</a>
-    <p class="news-card-summary">Study examines use of large language models as evaluators for assessing performance of clinical generative AI systems.</p>
-  </div>
-</div>
 </div>
 
 ??? abstract "Show the other 35 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 25, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03248-3">Large language models as judges for clinical generative AI evaluation</a>
+        <p class="news-card-summary">Study examines use of large language models as evaluators for assessing performance of clinical generative AI systems.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="imaging-and-diagnostics">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 25, 2026</span></div>
@@ -657,13 +671,6 @@ Items are selected several times a day by an automated pipeline and the summarie
         <p class="news-card-summary">Published research argues for regional networks to support responsible artificial intelligence deployment in health systems with limited resources.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 20, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42763426?fc=20260609215449&amp;ff=20260920090402&amp;v=2.20.1">An Artificial Intelligence-Based Preoperative Planning System for High Tibial Osteotomy Significantly Enhances Planning Speed With Comparable Accuracy to Surgeons</a>
-        <p class="news-card-summary">An AI system for preoperative planning of high tibial osteotomy achieved surgeon-comparable measurement accuracy while substantially reducing planning time.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -678,7 +685,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">43</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">11</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">6</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">42</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">6</span></button></div>
 <div class="news-list">
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
@@ -757,7 +764,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 </div>
 
-??? abstract "Show the other 33 items"
+??? abstract "Show the other 32 items"
 
     <div class="news-list news-list--more">
     <div class="news-card" data-topic="benchmarks-and-evaluation">
@@ -997,14 +1004,6 @@ Items are selected several times a day by an automated pipeline and the summarie
       </div>
       <img class="news-card-thumb" src="https://preview.redd.it/p1a5g5x9doqh1.jpg?width=140&amp;height=78&amp;auto=webp&amp;s=257099f472f2689a17ca5478f1181b8f4197c39c" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 18, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wjyn95/is_hf_starting_to_move_against_abliterated_models">Is HF starting to move against abliterated models?</a>
-        <p class="news-card-summary">Baseten, Hugging Face, and Goodfire AI launched safety evaluation and monitoring infrastructure for open-weight models amid debate over safeguard removal techniques.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/vu1xilKFWGWQWFTyUEb_KrJ_YASZ51MUq6Zu3Igivnw.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=e105aac55a352ece664ef1394cbb668a5fc961ec" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     <div class="news-card" data-topic="benchmarks-and-evaluation">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">September 16, 2026</span></div>
@@ -1057,7 +1056,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </a>
 </div>
 
-??? abstract "Show the other 9 videos"
+??? abstract "Show the other 7 videos"
 
     <div class="video-grid">
     <a class="video-card" href="https://www.youtube.com/watch?v=OWu2kjKrRTA" target="_blank" rel="noopener" title="Anthropic went CRAZY (Opus 5.5)">
@@ -1102,23 +1101,17 @@ Items are selected several times a day by an automated pipeline and the summarie
       <span class="video-card-meta">WorldofAI, September 21, 2026</span>
       <span class="video-card-desc">Roundup of recent model releases and updates including Anthropic Opus 5.5, Qwen 4, Kimi K3.1, MiniMax M3.1, and preview of OpenAI Step 5.</span>
     </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=jRMbbRdju7Q" target="_blank" rel="noopener" title="When Should AI Systems Use Super Agents?">
-      <img src="https://i3.ytimg.com/vi/jRMbbRdju7Q/hqdefault.jpg" alt="Video: When to use autonomous AI agent systems" loading="lazy">
-      <span class="video-card-title">When to use autonomous AI agent systems</span>
-      <span class="video-card-meta">IBM Technology, September 20, 2026</span>
-      <span class="video-card-desc">IBM researcher explains the tradeoffs and appropriate use cases for autonomous AI agent systems.</span>
-    </a>
-    <a class="video-card" href="https://www.youtube.com/watch?v=hygMRgnDD7w" target="_blank" rel="noopener" title="OpenAI hacked, Jev, Google’s RSI, Qwen 3.8 Omni, Bonsai 2, new Gemini Live: AI NEWS">
-      <img src="https://i1.ytimg.com/vi/hygMRgnDD7w/hqdefault.jpg" alt="Video: AI news roundup: recent model releases and updates" loading="lazy">
-      <span class="video-card-title">AI news roundup: recent model releases and updates</span>
-      <span class="video-card-meta">AI Search, September 20, 2026</span>
-      <span class="video-card-desc">News roundup covering multiple AI releases and updates including Qwen 3.8, Gemini Live, and other recent model announcements.</span>
-    </a>
     </div>
 
 ## Podcasts
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/ai-am-what-if-it-works-too-well-colluding-agents-200m-safety-orgs-virtual-cells-saturate-at-2" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/a007c8ec-ba59-11f1-bf89-c35bece7ca7f/image/5df3dbaddc06cae9dfc837cb5834699e.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI:AM: What If It Works Too Well? Colluding Agents, $200M Safety Orgs, Virtual Cells Saturate at 2%" loading="lazy">
+  <span class="video-card-title">AI:AM: What If It Works Too Well? Colluding Agents, $200M Safety Orgs, Virtual Cells Saturate at 2%</span>
+  <span class="video-card-meta">The Cognitive Revolution, September 27, 2026</span>
+  <span class="video-card-desc">Experts discuss emerging challenges in agent coordination, AI safety funding, and physical-world deployment, including unexpected agent collusion during training.</span>
+</a>
 <a class="video-card" href="https://share.transistor.fm/s/74934e48" target="_blank" rel="noopener">
   <img src="https://img.transistorcdn.com/HLUWV_-5iqNF7teb0qV3YGhmF6mbZoZm7o1RlqJSQDg/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8xMzMx/MTE2MDQ4ZDI2MmNm/OTc4MWI4MDE1YjE4/NTdkOC5wbmc.jpg" alt="Podcast: From AGENTS.md to Enterprise Deployment" loading="lazy">
   <span class="video-card-title">From AGENTS.md to Enterprise Deployment</span>
