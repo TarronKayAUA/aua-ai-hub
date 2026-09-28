@@ -12,13 +12,25 @@
 #
 # Each entry:
 #   page     the page's source path under docs/
-#   section  the id of the h2 whose section the scene sits beside
+#   section  the id of the h2 whose section the scene sits beside, or _head
+#            for a landing page's head (the scene beside the title and lede)
 #   piece    the subject drawn (a key in island-vignettes.js)
 #   kind     the page's kind (data/section_map.yaml `kinds:`), whose hue is
-#            the scene's one small accent
+#            the scene's one small accent; leave it out on a page with no
+#            kind (a hub), and the accent takes Island Night's own warm light
+#   aspect   optional: height / width of the picture (a wide head slot);
+#            without it the picture is as tall as the window allows
 
 slots:
   - page: examples/lecture-outline.md
     section: what-to-check
     piece: campus
     kind: guide
+
+  # The For Students landing's head, where the frame was empty beside the
+  # title (800x320 at 1920, the top of the page): Shirley Heights at dusk,
+  # from the owner's photographs (art round 2, 2026-09-27).
+  - page: students.md
+    section: _head
+    piece: shirley-heights
+    aspect: 0.42
