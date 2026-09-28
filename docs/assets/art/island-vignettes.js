@@ -1637,7 +1637,7 @@
     const ok = (a, b, c, d) => a > x0 && !clear.some(([p, q, r2, s2]) => a < r2 + pad && c > p - pad && b < s2 + pad && d > q - pad);
     return (withDefs ? extraDefs() : '')
       + `<g class="isl-a">${bands(W, y0, 89, ok)}</g><g class="isl-y">${clouds(W, y0, 211, ok)}</g>`
-      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, { sunset: withDefs ? '18:19' : '17:57' })}</g>`;
+      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, { sunset: withDefs ? '18:19' : '18:09' })}</g>`;
   };
 
   /* Each piece: its drawing; its world ('coast', the Curtain Bluff view with the far islands and
@@ -1884,8 +1884,9 @@
   // The Sun as the eye sees it low in the sky (owner, 2026-09-28: the first disc was "very stylized against
   // a softly shadowed landscape", and its size changed from picture to picture). One size on the screen in
   // every picture, set by the picture's width, not its scale; a soft disc, deeper and redder the nearer it
-  // is to the horizon, whose edge melts into its own bloom; low down, a veil of haze drawn across it; and a
-  // wide warm bloom lying along the horizon beneath it. At the horizon the air flattens the disc.
+  // is to the horizon, whose edge melts into its own bloom, and a wide warm bloom lying along the horizon
+  // beneath it, in a clear sky (a wisp of haze across it read as a stray cloud: owner, the same day). At
+  // the horizon the air flattens the disc.
   const sunR = (W) => clamp(W * 0.0115, 7, 9.5);
   const mixHex = (a, b, t) => '#' + [1, 3, 5].map((i) => Math.round(parseInt(a.slice(i, i + 2), 16) * (1 - t)
     + parseInt(b.slice(i, i + 2), 16) * t).toString(16).padStart(2, '0')).join('');
@@ -1900,18 +1901,6 @@
     s += `<ellipse cx="${F(x)}" cy="${F(Math.max(y, y0 - rr))}" rx="${F(rr * 18)}" ry="${F(rr * 5)}" fill="url(#islvsunlow)" opacity="${F(0.35 + 0.35 * (1 - k))}" clip-path="url(#islsky)"/>`
       + `<circle cx="${F(x)}" cy="${F(y)}" r="${F(rr * 4.5)}" fill="url(#islvsunlow)" opacity=".75" clip-path="url(#islsky)"/>`
       + `<g clip-path="url(#islsky)"><ellipse cx="${F(x)}" cy="${F(y)}" rx="${F(rr * 1.12)}" ry="${F(rr * 1.12 * flat)}" fill="url(#${id})" filter="url(#${id}f)"/></g>`;
-    if (alt < 4) {
-      // wisps of stratus, thin lenses tapering at both ends, softer than the disc
-      const r = rng(181);
-      let veil = '';
-      for (let i = 0; i < 2; i++) {
-        const vy = y + rr * (0.1 + i * 0.45 + r() * 0.1), vw = rr * (3.4 + r() * 2.6), vh = rr * (0.1 + r() * 0.06);
-        const x0 = x - vw / 2 + (r() - 0.5) * rr, xm = x0 + vw * (0.4 + r() * 0.2);
-        veil += `M${F(x0)} ${F(vy)}Q${F(xm)} ${F(vy - vh * 2)} ${F(x0 + vw)} ${F(vy)}Q${F(xm)} ${F(vy + vh * 2)} ${F(x0)} ${F(vy)}Z`;
-      }
-      s += `<defs><filter id="${id}v" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="${F(rr * 0.22)} ${F(rr * 0.08)}"/></filter></defs>`
-        + `<path class="isl-vsunveil" d="${veil}" filter="url(#${id}v)" clip-path="url(#islsky)"/>`;
-    }
     return s;
   }
   // The Sun's light on the water (owner, 2026-09-28: "so we can get a reflection of the sun on the water
