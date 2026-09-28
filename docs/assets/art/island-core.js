@@ -27,6 +27,9 @@
  *   faint ones. Drawn in seven steps of magnitude, the brighter ones tinted by colour index. Baked by
  *   geo/stars_dense.py in the art's source folder (Claude Projects/Hub art for the media tracker
  *   (2026-09-26)/island-hub-version). Stars that would sit behind the words are left out.
+ *   Where a picture is drawn at a large scale (the hero, the gutters) the catalogue cannot fill its sky
+ *   as densely as the small pictures', so faint uncatalogued field stars are painted in to make up the
+ *   difference (stars(), FIELD; owner, 2026-09-28). They are the one part of the sky that is not real.
  *   At night the fainter stars follow a few seconds later: 9,033 more from ESA's Hipparcos catalogue
  *   (V 6.5 to 8.0, docs/assets/art/island-deep.js, baked by geo/sky_deep.py; fetched by layout-art.js
  *   in the dark scheme only), after which every drawing redraws once (A.redraw).
@@ -218,8 +221,42 @@
         (deep[i + 2] < 73 ? d1 : d2).push(`M${F(x)} ${F(y)}h0`);
       }
     }
+    // Painted field stars (owner, 2026-09-28: the homepage sky looked thinner than the small pictures'). A
+    // picture drawn at a large scale spreads the catalogue's stars over more pixels (the hero at about
+    // 14 px per degree against 6 in the vignettes), so where the real stars fall short of the density
+    // the vignettes show (FIELD, stars per pixel of sky), faint dots are painted in to make it up:
+    // uncatalogued, a painter's licence like the rest of the dense sky. They thin toward the horizon,
+    // gather along the Milky Way at night, stay out of the afterglow, and keep clear of the words. The
+    // count is what is missing, so a sky already dense (most vignettes) gets none.
+    const FIELD = m === 'n' ? 0.0085 : 0.00045;
+    let have = d1.length + d2.length;
+    for (const k in g) have += g[k].length;
+    const skyArea = v.W * Math.max(0, v.y0 - 3), need = Math.floor(FIELD * skyArea) - have;
+    const f1 = [], f2 = [], f3 = [];
+    if (need > 0) {
+      const r = rng(7919 + (m === 'n' ? 1 : 2) + Math.round(v.W));
+      const sunX = v.x(SKY[m].sun[0]), gx = (m === 'd' ? 30 : 22) * v.ppd, gy = (m === 'd' ? 7 : 5) * v.ppd;
+      const mw = m === 'n' && SKY[m].mw ? SKY[m].mw : null, band = [];
+      if (mw) for (let i = 0; i < mw.length; i += 4) band.push([v.x(mw[i] / 10), v.y(mw[i + 1] / 10), (mw[i + 2] / 10) * v.ppd]);
+      let made = 0, guard = 0;
+      while (made < need && guard++ < need * 8) {
+        const x = 2 + r() * (v.W - 4), y = 2 + Math.pow(r(), 1.2) * (v.y0 - 6), q = r(), s = r();
+        if (Math.hypot((x - sunX) / gx, (v.y0 - y) / gy) < 1 && q < 0.7) continue;
+        if (band.length) {
+          let dmin = 1e9, bw = 1;
+          for (const [bx, by, w2] of band) { const d = Math.hypot(x - bx, y - by); if (d < dmin) { dmin = d; bw = w2; } }
+          if (q > 0.45 + 0.55 * Math.exp(-((dmin / (bw * 0.6)) ** 2))) continue;
+        }
+        if (hits(boxes, x, y, x, y, 6)) continue;
+        made++;
+        (s < 0.7 ? f1 : s < 0.95 ? f2 : f3).push(`M${F(x)} ${F(y)}h0`);
+      }
+    }
     const faint = (d1.length ? `<path class="s-star ${cls}" d="${d1.join('')}" stroke-width="0.85" stroke-opacity="0.38"/>` : '')
-      + (d2.length ? `<path class="s-star ${cls}" d="${d2.join('')}" stroke-width="0.72" stroke-opacity="0.27"/>` : '');
+      + (d2.length ? `<path class="s-star ${cls}" d="${d2.join('')}" stroke-width="0.72" stroke-opacity="0.27"/>` : '')
+      + (f1.length ? `<path class="s-star ${cls}" d="${f1.join('')}" stroke-width="0.75" stroke-opacity="0.32"/>` : '')
+      + (f2.length ? `<path class="s-star ${cls}" d="${f2.join('')}" stroke-width="0.9" stroke-opacity="0.44"/>` : '')
+      + (f3.length ? `<path class="s-star ${cls}" d="${f3.join('')}" stroke-width="1.1" stroke-opacity="0.6"/>` : '');
     return faint + (halo.length ? `<g class="${cls}">${halo.join('')}</g>` : '')
       + Object.keys(g).map((k) => {
         const i = +k[0];

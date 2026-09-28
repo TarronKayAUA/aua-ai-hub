@@ -169,7 +169,7 @@ Material's base size is 20px up to 100em. It is 22px from 100em (1600px) and 24p
 | Breakpoint | What changes | Where |
 |---|---|---|
 | `max-width: 30em` | Small phones: compact widgets | extra.css |
-| `max-width: 37.4375em` | The corner control shows "Browse section" instead of the section name | layout-nav.css, layout-nav.js |
+| `max-width: 37.4375em` | The corner control's buttons sit side by side with short labels, "Browse" and "This page", and no chevrons; below 22.4375em (360px) they also drop their round icons | layout-nav.css, layout-nav.js |
 | `max-width: 44.9375em` / `min-width: 45em` | Phone versus tablet. Registered wide tables stack into "Label: value" rows; section-chip arrows go; two-up card grids | layout-news.css, layout.css, layout-hubs.css, layout-home.css, layout-nav.css |
 | `max-width: 59.9375em` / `min-width: 60em` | Multi-column layouts start: This Week's three feed panels, digest rows, hub and landing grids, the sticky jump-chip row, the News Archive's three columns | layout-news.css and most layout-*.css |
 | `max-width: 68.7344em` / `min-width: 68.75em` | The reading grid (two tracks) starts; below it reading pages are one column | layout-width.css, layout-width.js |
