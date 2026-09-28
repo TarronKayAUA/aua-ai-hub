@@ -23,6 +23,12 @@ They are here because the useful skill is turning out not to be generating thing
 
     <span class="wx-label">What it demonstrates</span> Specification before code, a selection algorithm that turned out to be an essay, and five ways a check went on reporting success from behind its own blind spot
 
+-   ## :material-ruler-square-compass:{ .lg .middle } [When Every Design Passes](redesign.md){ .card-link }
+
+    <span class="wx-label">What it is</span> How this site was redesigned in four days by AI designers working in parallel, and how the scenery in its page headers is drawn in code
+
+    <span class="wx-label">What it demonstrates</span> Why a perfect test score cannot choose between designs, tasks held back from the designers, a second AI model as an adversarial reviewer, and tracing a real place from photographs
+
 -   ## :material-monitor-screenshot:{ .lg .middle } [I Fixed Software I Cannot Read](sharex-hdr.md){ .card-link }
 
     <span class="wx-label">What it is</span> Building high dynamic range (HDR) screenshot capture into ShareX, a free screenshot tool, in a language the author does not write

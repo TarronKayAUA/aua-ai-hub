@@ -580,4 +580,20 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
   .md-typeset .grid.cards.gov-cards.wx-cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  /* An odd number of write-ups: the last card takes the whole row, with What It Is and What It
+     Demonstrates side by side, instead of sitting beside an empty half row (2026-09-28, the fifth
+     write-up took the page's blank share from 17% to 25% at 1920). */
+  .md-typeset .grid.cards.gov-cards.wx-cards > ul > li:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2.4rem;
+    align-content: start;
+  }
+  .md-typeset .grid.cards.gov-cards.wx-cards > ul > li:last-child:nth-child(odd) > h2 {
+    grid-column: 1 / -1;
+  }
+  .md-typeset .grid.cards.gov-cards.wx-cards > ul > li:last-child:nth-child(odd) > p + p {
+    margin-top: 0;
+  }
 }

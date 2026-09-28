@@ -214,6 +214,7 @@ pages:
   accessibility.md: {icon: human, sub: "The accessibility statement"}
   worked-examples/index.md: {icon: notebook-edit-outline, sub: "Real projects, and the method behind them"}
   worked-examples/this-site.md: {icon: magnify-scan}
+  worked-examples/redesign.md: {icon: ruler-square-compass}
   worked-examples/sharex-hdr.md: {icon: monitor-screenshot}
   worked-examples/recommender.md: {icon: gamepad-variant-outline}
   worked-examples/genome.md: {icon: dna}
