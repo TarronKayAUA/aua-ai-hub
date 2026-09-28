@@ -34,3 +34,12 @@ slots:
     section: _head
     piece: shirley-heights
     aspect: 0.42
+
+  # The guides index's head (800x336 at 1920, the top of the page): the
+  # Pillars of Hercules, the landmark sailors steered by into English
+  # Harbour (art round 3, 2026-09-27).
+  - page: playbooks/index.md
+    section: _head
+    piece: pillars-of-hercules
+    kind: guide
+    aspect: 0.42

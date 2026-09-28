@@ -311,6 +311,14 @@
 .isl { --isl-vbay: #4f8fa3; }
 [data-md-color-scheme="slate"] .isl { --isl-vbay: #1d4760; }
 .isl .st-vbay { stop-color: var(--isl-vbay); }
+/* The Pillars of Hercules' limestone: its face in the last light, its strata and its hollows. */
+.isl { --isl-vstone: #a39a86; --isl-vstrata: #7f7765; }
+[data-md-color-scheme="slate"] .isl { --isl-vstone: #3b4049; --isl-vstrata: #2a2e36; }
+.isl .isl-vstone { fill: var(--isl-vstone); }
+.isl .isl-vstrata { stroke: var(--isl-vstrata); stroke-opacity: 0.8; fill: none; }
+.isl .st-vhol { stop-color: var(--isl-near); }
+.isl .isl-vpennant { fill: var(--k-line, var(--isl-rim)); }
+[data-md-color-scheme="slate"] .isl .isl-vpennant { fill: var(--k, var(--isl-rim)); }
 /* Galleon Beach's sand and the surf at the point: pale, catching the last light. */
 .isl { --isl-vsand: #d9cdb4; --isl-vsand-a: 0.7; --isl-vsurf: #eef3f7; --isl-vsurf-a: 0.55; }
 [data-md-color-scheme="slate"] .isl { --isl-vsand: #7d7666; --isl-vsand-a: 0.6; --isl-vsurf-a: 0.25; }

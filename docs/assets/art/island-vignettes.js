@@ -344,6 +344,103 @@
     return s;
   }
 
+  /* THE PILLARS OF HERCULES (the guides index's head): the limestone cliff at the east side of English
+     Harbour's mouth, below Shirley Heights, for centuries a landmark sailors steered by. Seen from the
+     water facing north, traced from the sea-level reference in the art's source folder
+     (references/web-pillars-of-hercules-sea): the cliff is its own mass, a scrub-capped dome sloping
+     down on the left and ending steeply on the right in fallen blocks; its face is finely layered in
+     thin, wavering strata; and along its foot the sea has worn tall hollows, narrow and rounded at the
+     top and flaring below, that leave the pillars standing between them like organ pipes. The rock
+     shelf, loose blocks and surf at the waterline; the harbour's far shore low on the left; the open
+     sea on the right; a pennant in the page's hue on the flagpole above the cliff. */
+  function pillars(W, H, v) {
+    const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(91);
+    const P = (pts) => pts.map(([x, y]) => [X(x), Y(y)]);
+    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
+    const scrub = (pts, n, s0, s1) => {
+      let d = '';
+      for (let i = 0; i < pts.length - 1; i++) {
+        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
+        for (let j = 0; j < n; j++) {
+          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
+          d += `M${F(x - rr)} ${F(y + rr * 0.4)}a${F(rr)} ${F(rr * 0.85)} 0 0 1 ${F(2 * rr)} 0Z`;
+        }
+      }
+      return d;
+    };
+    const lights = [];
+    let s = `<rect y="${F(y0)}" width="${F(W)}" height="${F(H - y0)}" fill="url(#islvbay)"/>`;
+    // The harbour's far shore, low on the left, with a few lit houses.
+    const far = P([[-0.02, 0.69], [0.02, 0.665], [0.06, 0.66], [0.1, 0.675], [0.12, 0.7], [-0.02, 0.7]]);
+    s += `<path class="f-far" d="${poly(far)}${scrub(far.slice(0, 4), 4, 0.7, 1.6)}"/>`;
+    for (let i = 0; i < 5; i++) lights.push([X(0.005 + r() * 0.1), Y(0.668 + r() * 0.02), 1]);
+    // 1. The cliff's outline: the scrub cap's dome, then the face down to the waterline.
+    const crest = [[0.04, 0.66], [0.08, 0.56], [0.13, 0.48], [0.19, 0.42], [0.26, 0.37], [0.33, 0.335], [0.4, 0.31],
+      [0.47, 0.295], [0.54, 0.29], [0.61, 0.3], [0.68, 0.32], [0.75, 0.35], [0.81, 0.39], [0.86, 0.43], [0.9, 0.48],
+      [0.93, 0.54], [0.955, 0.6], [0.965, 0.66]];
+    // the line where the scrub gives way to the bare face
+    const lip = [[0.1, 0.58], [0.16, 0.5], [0.22, 0.455], [0.3, 0.42], [0.38, 0.4], [0.46, 0.39], [0.54, 0.385],
+      [0.62, 0.39], [0.7, 0.405], [0.77, 0.43], [0.83, 0.465], [0.88, 0.51], [0.92, 0.57]];
+    const base = 0.72;
+    const face = P([...lip, [0.95, 0.63], [0.955, base], [0.08, base], [0.07, 0.66]]);
+    const cap = P([...crest, [0.955, 0.63], ...lip.slice().reverse(), [0.06, 0.67]]);
+    s += `<defs><clipPath id="islvface"><path d="${poly(face)}"/></clipPath></defs>`;
+    s += `<path class="isl-vstone" d="${poly(face)}"/>`;
+    // 2. The strata: many thin wavering bands across the face.
+    let strata = '';
+    for (let k = 0; k < 14; k++) {
+      const y = 0.4 + k * 0.023;
+      let d = '';
+      for (let x = 0.06; x <= 0.97; x += 0.015) d += `${d ? 'L' : 'M'}${F(X(x))} ${F(Y(y + Math.sin(x * 19 + k * 0.7) * 0.005 + (x - 0.5) * 0.02 * Math.sin(k)))}`;
+      strata += d;
+    }
+    s += `<g clip-path="url(#islvface)"><path class="isl-vstrata" d="${strata}" stroke-width="${F(Math.max(0.8, Y(0.0035)))}"/></g>`;
+    // 3. The pillars: hollows narrow and rounded at the top, flaring toward the foot, of uneven size.
+    let hollows = '';
+    const cols = [[0.15, 0.03, 0.62], [0.2, 0.024, 0.6], [0.255, 0.036, 0.57], [0.315, 0.03, 0.555], [0.37, 0.042, 0.535],
+      [0.43, 0.034, 0.55], [0.49, 0.046, 0.53], [0.555, 0.036, 0.545], [0.615, 0.044, 0.53], [0.68, 0.034, 0.55],
+      [0.74, 0.04, 0.545], [0.8, 0.03, 0.57], [0.85, 0.026, 0.6]];
+    // Each hollow is a pointed arch as wide at its foot as the spacing, so neighbours meet at the
+    // waterline and the stone between them stands as a column, broad where it joins the face above.
+    for (let i = 0; i < cols.length; i++) {
+      const [cx, , cf] = cols[i];
+      const gap = i + 1 < cols.length ? cols[i + 1][0] - cx : cx - cols[i - 1][0];
+      const x = X(cx + (r() - 0.5) * 0.004), wb = X(gap * 0.98), crown = Y(cf + (r() - 0.5) * 0.02), foot = Y(base);
+      const shoulder = crown + (foot - crown) * 0.42;
+      hollows += `M${F(x - wb / 2)} ${F(foot)}C${F(x - wb * 0.46)} ${F(shoulder)} ${F(x - wb * 0.2)} ${F(crown + (foot - crown) * 0.12)} ${F(x)} ${F(crown)}`
+        + `C${F(x + wb * 0.2)} ${F(crown + (foot - crown) * 0.12)} ${F(x + wb * 0.46)} ${F(shoulder)} ${F(x + wb / 2)} ${F(foot)}Z`;
+    }
+    s += `<path class="isl-vhollow" d="${hollows}" fill="url(#islvhol)"/>`;
+    // 4. The scrub cap over the face.
+    s += `<path class="f-near" d="${poly(cap)}${scrub(P(crest.slice(1, 16)), 7, 1.3, 3.2)}"/>`;
+    // 5. The flagpole on the dome, its pennant in the page's hue.
+    const fx = X(0.43), fy = Y(0.305);
+    s += `<path class="isl-vmast" d="M${F(fx)} ${F(fy)}V${F(fy - Y(0.16))}" stroke-width="1.3"/>`;
+    s += `<path class="isl-vpennant" d="M${F(fx)} ${F(fy - Y(0.16))}L${F(fx + X(0.028))} ${F(fy - Y(0.145))}L${F(fx)} ${F(fy - Y(0.13))}Z"/>`;
+    // 6. The foot: the rock shelf, fallen blocks at the right end, and the surf.
+    let blocks = '';
+    for (let i = 0; i < 14; i++) {
+      const x = X(0.07 + r() * 0.9), y = Y(base + 0.005 + r() * 0.02), rr = X(0.004 + r() * 0.009);
+      blocks += `M${F(x - rr)} ${F(y)}a${F(rr)} ${F(rr * 0.75)} 0 0 1 ${F(2 * rr)} 0Z`;
+    }
+    for (let i = 0; i < 8; i++) {
+      const x = X(0.93 + r() * 0.06), y = Y(0.66 + r() * 0.07), rr = X(0.007 + r() * 0.01);
+      blocks += `M${F(x - rr)} ${F(y)}a${F(rr)} ${F(rr * 0.8)} 0 0 1 ${F(2 * rr)} 0Z`;
+    }
+    const shelf = P([[0.05, base + 0.012], [0.1, base], [0.95, base], [0.98, base + 0.02], [0.9, base + 0.035], [0.1, base + 0.035]]);
+    s += `<path class="f-near" d="${poly(shelf)}"/><path class="isl-vstone" d="${blocks}"/>`;
+    let surf = '';
+    for (let i = 0; i < 18; i++) {
+      const x = 0.06 + r() * 0.9, len = 0.02 + r() * 0.05;
+      surf += `M${F(X(x))} ${F(Y(base + 0.04 + r() * 0.012))}h${F(X(len))}`;
+    }
+    s += `<path class="isl-vsurf" d="${surf}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`;
+    // The far shore's lights, in the one pass.
+    const d = lights.map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('');
+    s += `<path class="s-vlight isl-vwin isl-vlast" style="--i:2" d="${d}" stroke-width="1.5"/>`;
+    return s;
+  }
+
   /* Each piece: its drawing; its world ('coast', the Curtain Bluff view with the far islands and
      Antigua's land, or 'inland', its own hills); the bearing it faces; and its ground. */
   const PIECES = {
@@ -355,6 +452,15 @@
       face: 318,
       ground: (W, H, y0, sea) => ({ xr0: 0, xr1: 0, yL: y0 + sea * 0.42, yP: y0 + sea * 0.42 }),
       hills: (W, y0) => [[W * 0.92, W * 0.13, W * 0.16], [W * 1.1, W * 0.09, W * 0.22], [W * 0.66, W * 0.035, W * 0.1]],
+    },
+    'pillars-of-hercules': {
+      draw: pillars,
+      world: 'inland',
+      horizon: 0.7,
+      // From a boat in the harbour mouth, facing north at the cliff: the northern sky above, the last
+      // western light on its face.
+      face: 12,
+      ground: null,
     },
     'shirley-heights': {
       draw: heights,
@@ -373,6 +479,7 @@
       + '<linearGradient id="islvspill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".2"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvlamp"><stop offset="0" class="st-k" stop-opacity=".6"/><stop offset=".5" class="st-k" stop-opacity=".18"/><stop offset="1" class="st-k" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
+      + '<linearGradient id="islvhol" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vhol" stop-opacity=".78"/><stop offset=".6" class="st-vhol" stop-opacity=".5"/><stop offset="1" class="st-vhol" stop-opacity=".32"/></linearGradient>'
       + '<linearGradient id="islvbay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vbay" stop-opacity=".55"/><stop offset="1" class="st-vbay" stop-opacity=".35"/></linearGradient>'
       + '<linearGradient id="islvharb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-sea0" stop-opacity="0"/><stop offset=".45" class="st-sea0" stop-opacity=".5"/><stop offset="1" class="st-sea0" stop-opacity=".3"/></linearGradient>'
       + '<radialGradient id="islvbulb"><stop offset="0" class="st-g1" stop-opacity=".5"/><stop offset=".5" class="st-g1" stop-opacity=".14"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
