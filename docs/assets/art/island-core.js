@@ -122,7 +122,7 @@
   /* Antigua's coast and hills at true angles: farther ground paler, the ground within 900 m darker,
      both carrying a scrub canopy of rounded clumps about 20 m across, sized for their distance (at a
      few kilometres they are a pixel or two, a soft edge rather than a hard one). */
-  function land(v, x0, x1, seed, rims = []) {
+  function land(v, x0, x1, seed, rims = [], withFoot = true) {
     const r = rng(seed), foot = v.H + 2;
     const runs = [];
     let cur = null;
@@ -191,7 +191,7 @@
     }
     flushFoot();
     return (far ? `<path class="f-far" d="${far}"/>` : '') + (near ? `<path class="f-near" d="${near}"/>` : '') + rim
-      + (under ? `<path class="f-near" d="${under}"/>` : '');
+      + (under && withFoot ? `<path class="f-near" d="${under}"/>` : '');
   }
 
   /* ------------------------------------------------------------- the sky */
@@ -624,5 +624,5 @@
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(paint);
   };
   A.lib = { SKY, LAND, ISL, rel, view, islands, land, stars, ripples, defs, own, rng, F, clamp, TIP,
-    moon, planets, glowSky, glowSea, milkyWay };
+    moon, planets, glowSky, glowSea, milkyWay, BIRD };
 })();

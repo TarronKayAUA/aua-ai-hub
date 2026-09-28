@@ -445,6 +445,19 @@
     return s;
   }
 
+  /* CURTAIN BLUFF (the For Faculty & Staff landing's head): the homepage's view until the campus took
+     its place (owner, 2026-09-27), moved here as he asked. The view west from the tip of Curtain Bluff
+     at the same moment, drawn by the coast world (Montserrat, Redonda, Nevis and Guadeloupe on the
+     horizon and Antigua's own hills, at true bearings), with the sunset a third of the way in; this
+     adds the magnificent frigatebird, soaring in the east wind in the open sky right of the afterglow. */
+  function curtainBluff(W, H, v) {
+    const B = L.BIRD;
+    if (!B) return '';
+    const [bx0, by0, bx1, by1] = B.box, span = clamp(W * 0.1, 56, 100), k = span / (bx1 - bx0);
+    const x = W * 0.64, y = v.y0 * 0.34;
+    return `<g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g>`;
+  }
+
   /* THE HOMEPAGE HERO'S SCENE (owner, 2026-09-27): in the bold hero (desktop, from 68.75em) the campus
      stands on its lawn at the card's foot, in the sky's space right of the words, from x0 to x1, under
      the hero's own sky, which island-core.js draws as before; the far islands and Antigua's coast are
@@ -476,6 +489,15 @@
       face: 318,
       ground: (W, H, y0, sea) => ({ xr0: 0, xr1: 0, yL: y0 + sea * 0.42, yP: y0 + sea * 0.42 }),
       hills: (W, y0) => [[W * 0.92, W * 0.13, W * 0.16], [W * 1.1, W * 0.09, W * 0.22], [W * 0.66, W * 0.035, W * 0.1]],
+    },
+    'curtain-bluff': {
+      draw: curtainBluff,
+      world: 'coast',
+      horizon: 0.7,
+      // the Moon, about 24 degrees up, and Venus in the sky above the horizon
+      ppd: (W, H, y0) => Math.min(W / 62, y0 / 29),
+      under: false,
+      ground: null,
     },
     'pillars-of-hercules': {
       draw: pillars,
@@ -513,8 +535,11 @@
   function build(W, H, piece) {
     const P = PIECES[piece];
     if (!P || W < 200 || H < 200) return '';
-    const ppd = W / 62;
-    const y0 = Math.round(H * (P.horizon || 0.58));
+    // A piece may set its own scale (pixels per degree); the Curtain Bluff view needs a wider field
+    // for the Moon and Venus to sit in the sky, as in the homepage hero.
+    const y0g = Math.round(H * (P.horizon || 0.58));
+    const ppd = P.ppd ? P.ppd(W, H, y0g) : W / 62;
+    const y0 = y0g;
     // The anchor: a coast scene puts the sunset a third of the way in; an inland one faces P.face.
     const anchor = P.world === 'coast' ? rel(SKY.d.sun[0]) - (W * 0.3 - W / 2) / ppd : rel(P.face);
     const v = view(W / 2 - anchor * ppd, y0, ppd, W, H);
@@ -535,7 +560,7 @@
       + L.glowSea(v, 'd', 'isl-d', reflH) + L.glowSea(v, 'n', 'isl-n', reflH)
       + `<path class="s-hz" d="M0 ${y0 + 0.5}H${F(W)}" stroke-width="1"/>`
       + ripples(v, 0, W, H, [], 9, 0.8)
-      + (P.world === 'coast' ? land(v, 0, W, 13, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]]) : '')
+      + (P.world === 'coast' ? land(v, 0, W, 13, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]], P.under !== false) : '')
       + (P.hills ? hills(W, g.at(W / 2), P.hills(W, y0), 31) : '')
       + (g.d ? `<path class="f-near" d="${g.d}"/>` : '')
       + P.draw(W, H, v, g)
