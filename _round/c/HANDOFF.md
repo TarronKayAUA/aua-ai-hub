@@ -16,7 +16,7 @@ For the local session to fold into its notes. It is not merged. It holds what is
    - console encoding (the script calls `sys.stdout.reconfigure(encoding="utf-8")`);
    - the `.venv\Scripts\python.exe` build path. That path is the one figure_sheet.py already uses, so it should be fine.
 3. **Expect measure differences on the first laptop run.** The baseline was measured in the cloud with Inter from Google Fonts at 1920x1080 and 1440x900, in headless Chromium. Font hinting on Windows can move a line break or two, so a page's blank share may drift by a point. The tolerance is 5 points; a failure over that deserves a look, not a baseline refresh. If the first run is clean apart from noise, refresh the baseline on the laptop once (`--only measure --update-baselines`) so future comparisons are like for like, and commit it.
-4. A full run takes about 25 to 35 minutes: 95 pages are measured at two widths, and overflow loads 111 pages at 7 widths. For a single page, use `--page <address>/`, which takes seconds.
+4. A full run took 13 minutes in the cloud (measure and overflow about 5.5 each: 95 pages measured at two widths, 111 pages loaded at 7 widths); a laptop may take longer. For a single page, use `--page <address>/`, which takes seconds.
 
 ## Fragile spots (where a future change can break something quietly or loudly)
 

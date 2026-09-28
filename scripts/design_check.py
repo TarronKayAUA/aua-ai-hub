@@ -33,7 +33,7 @@ scripts/figure_sheet.py): Python 3.11+, the playwright package and its
 Chromium (`python -m playwright install chromium`, once). On the
 maintainer's Windows laptop the system Python 3.13 has them:
 
-    python scripts/design_check.py                     everything (about 20 to 30 minutes)
+    python scripts/design_check.py                     everything (about 15 minutes)
     python scripts/design_check.py --only news         one check (repeatable)
     python scripts/design_check.py --page tools/agents/ --page about/
                                                        overflow, links, nav and

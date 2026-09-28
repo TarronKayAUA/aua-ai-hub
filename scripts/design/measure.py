@@ -42,8 +42,10 @@ width:
     baseline;
   - a reading page (task, lesson, reference) sets a line of running text
     over CPL_MAX (95) characters;
-  - a heading sits above an earlier one (inversions), Material's sidebars
-    show, or the page scrolls sideways.
+  - it has more heading inversions (a heading sitting above an earlier
+    one) than its baseline (0 everywhere but the home page, whose two-column
+    top reads as inversions by design), Material's sidebars show, or the
+    page scrolls sideways.
 A page missing from the baseline is reported, not failed. After an approved
 change, refresh the baseline with `python scripts/design_check.py --only
 measure --update-baselines` and commit baselines.json with the change.
@@ -331,6 +333,7 @@ def slim(r):
     for w in ("1920", "1440"):
         v = r[w]
         out[w] = {"blank": v["blank_mean"], "worst": v["blank_worst"], "height": v["height"],
+                  "inversions": v["inversions"],
                   "cpl_median": (v["cpl"] or {}).get("median"), "cpl_max": (v["cpl"] or {}).get("max")}
     return out
 
@@ -369,7 +372,12 @@ def run(env, report, update=False, focus=False):
                              f"{name} {w}: blank {v['blank_mean']:.0%} (baseline {was:.0%})")
             if r["type"] in READING:
                 report.check(cpl <= CPL_MAX, f"{name} {w}: longest line {cpl} characters (limit {CPL_MAX})")
-            report.check(not v["inversions"], f"{name} {w}: {v['inversions']} heading inversions")
+            # A page whose layout reads out of order by the script's rule on
+            # purpose (the home page's two-column top) keeps its baseline
+            # count; any other page must have none, and none may gain one.
+            allowed = b[w].get("inversions", 0) if b is not None else 0
+            report.check(v["inversions"] <= allowed,
+                         f"{name} {w}: {v['inversions']} heading inversions (baseline {allowed})")
             report.check(not (v["sidebar_left"] or v["sidebar_right"]), f"{name} {w}: no Material sidebars")
             report.check(not v["overflow"], f"{name} {w}: no sideways scroll")
         if focus:
