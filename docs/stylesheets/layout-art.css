@@ -315,3 +315,11 @@
   .isl-vig.isl-vrun,
   .isl-vig.isl-vrun * { animation: none !important; }
 }
+
+/* Star colour (dense starfield, 2026-09-27): the brighter stars tinted by colour index, faintly, as
+   the eye sees them; the halo on the brightest takes the plain star colour. */
+.isl { --isl-star-b: #d7e4ff; --isl-star-y: #fff0cf; --isl-star-o: #ffd2a8; }
+.isl .st-star { stop-color: var(--isl-star); }
+.isl .s-star-b { stroke: var(--isl-star-b); }
+.isl .s-star-y { stroke: var(--isl-star-y); }
+.isl .s-star-o { stroke: var(--isl-star-o); }
