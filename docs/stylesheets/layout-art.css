@@ -323,3 +323,8 @@
 .isl .s-star-b { stroke: var(--isl-star-b); }
 .isl .s-star-y { stroke: var(--isl-star-y); }
 .isl .s-star-o { stroke: var(--isl-star-o); }
+
+/* The Milky Way (night only; the path from geo/sky_deep.py): a faint cool white, blurred in the drawing. */
+.isl { --isl-mw: #d3ddf3; }
+.isl .s-mw { stroke: var(--isl-mw); fill: none; }
+.isl .st-mw { stop-color: var(--isl-mw); }

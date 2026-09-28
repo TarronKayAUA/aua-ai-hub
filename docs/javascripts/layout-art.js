@@ -7,6 +7,9 @@
      overrides/main.html on every page) need island-core.js and
      island-sides.js, and only when a gutter is at least 80px wide. Phones never fetch either
      gutter file, and a page with neither mark fetches nothing.
+   - the fainter stars (docs/assets/art/island-deep.js, about 40 KB compressed) only in the dark scheme,
+     a few seconds after the page has loaded (or when the reader switches to dark), then every drawing
+     redraws once with them;
    - a vignette (a figure marked data-vignette, placed by scripts/layout_art.py from
      data/art_slots.yaml) needs island-core.js and island-vignettes.js, only once one is shown
      (from 68.75em; below that it is hidden and nothing is fetched).
@@ -58,6 +61,23 @@
   }
 
   run();
+  // The fainter stars: night only, after the page (and the hero's one pass) has settled.
+  function deepWanted() {
+    return document.body.getAttribute('data-md-color-scheme') === 'slate' && state['island-core.js'] === 'ready' &&
+      window.matchMedia('(min-width: 60em)').matches;   // phones: the small hero would not show them
+  }
+  function deep() {
+    if (!deepWanted() || state['island-deep.js']) return;
+    load('island-deep.js', function () {
+      var A = window.IslandArt;
+      (A && A.redraw || []).forEach(function (f) { f(); });
+    });
+  }
+  if (document.readyState === 'complete') setTimeout(deep, 4500);
+  else window.addEventListener('load', function () { setTimeout(deep, 4500); });
+  if ('MutationObserver' in window) {
+    new MutationObserver(deep).observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
+  }
   if (sides || vigs.length) {
     var t;
     window.addEventListener('resize', function () {

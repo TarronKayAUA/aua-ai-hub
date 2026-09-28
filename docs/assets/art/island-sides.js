@@ -13,7 +13,7 @@
   'use strict';
   const A = window.IslandArt;
   if (!A || !A.lib || A.sides) return;
-  const { view, islands, land, stars, ripples, defs, own, F, LAND, rel } = A.lib;
+  const { view, islands, land, stars, ripples, defs, own, F, LAND, rel, milkyWay } = A.lib;
   const PAINT = 440;           // the widest strip painted; beyond it a gutter stays page-coloured
   const MIN = 80;              // narrower gutters stay empty
 
@@ -44,6 +44,7 @@
     const sea = H - v.y0;
     const svg = `<svg class="isl-o isl-art" width="${P}" height="${H}" viewBox="0 0 ${P} ${H}">${defs(P, v.y0, H)}`
       + `<rect width="${P}" height="${v.y0 + 1}" fill="url(#islskyg)"/>`
+      + milkyWay(v, 'n', 'isl-n')
       + stars(v, 'n', [], 'isl-n')
       + `<rect y="${F(v.y0 - 2.4 * v.ppd)}" width="${P}" height="${F(2.4 * v.ppd)}" fill="url(#islhazeg)"/>`
       + islands(v, 'f-isl')
@@ -75,6 +76,7 @@
     };
     paint();
     A.onHero = paint;
+    (A.redraw = A.redraw || []).push(() => { last = ''; paint(); });
     let t;
     addEventListener('resize', () => { clearTimeout(t); t = setTimeout(paint, 200); });
   };

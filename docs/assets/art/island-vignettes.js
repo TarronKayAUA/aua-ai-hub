@@ -251,6 +251,7 @@
     const reflH = Math.min(sea - 1, 5.5 * ppd);
     const svg = `<svg class="isl-o isl-art" width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${defs(W, y0, H)}${extraDefs()}`
       + `<rect width="${F(W)}" height="${y0 + 1}" fill="url(#islskyg)"/>`
+      + L.milkyWay(v, 'n', 'isl-n')
       + `<rect y="${F(y0 - 2.4 * ppd)}" width="${F(W)}" height="${F(2.4 * ppd)}" fill="url(#islhazeg)"/>`
       + L.glowSky(v, 'd', 'isl-d') + L.glowSky(v, 'n', 'isl-n')
       + stars(v, 'd', [], 'isl-d') + stars(v, 'n', [], 'isl-n')
@@ -301,6 +302,7 @@
       }
     };
     paint();
+    (A.redraw = A.redraw || []).push(() => { last = ''; paint(); });
     let t;
     if ('ResizeObserver' in window) new ResizeObserver(() => { clearTimeout(t); t = setTimeout(paint, 150); }).observe(fig);
   };
