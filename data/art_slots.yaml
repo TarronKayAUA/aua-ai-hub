@@ -20,5 +20,5 @@
 slots:
   - page: examples/lecture-outline.md
     section: what-to-check
-    piece: lecture-hall
+    piece: campus
     kind: guide
