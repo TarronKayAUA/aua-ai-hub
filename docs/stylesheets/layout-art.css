@@ -119,14 +119,45 @@
   --isl-vbay: #45bcc0; --isl-vsand: #f1e4c2; --isl-vsand-a: 0.9; --isl-vsurf: #ffffff; --isl-vsurf-a: 0.85;
   --isl-vwall: #f5f7f9; --isl-vrail: rgba(52, 62, 72, 0.6);
   --isl-vstone: #cdbfa3; --isl-vstrata: #a99c80; --isl-vtown: #d9d2c3; --isl-vdark: #3a4d5c;
+  /* the campus in sunlight (the owner's photographs of AUA): cream walls, a terracotta ground floor,
+     red roofs, a pale drive; the harbour town's cream houses share the wall color */
+  --isl-vwallc: #efe5cf; --isl-vshade: #d3c4a6; --isl-vband: #b86a50; --isl-vroof2: #8f3a31; --isl-vdrive: #cdbf9e;
 }
 [data-md-color-scheme="default"] .isl[data-sky="day"] :is(.s-vlight, .s-vglow, .isl-vglow, .isl-vlamp, .isl-vlamps) { display: none; }
 /* Day details a piece draws only for daylight (houses where the night shows lights), and its vegetated
    land (`isl-land`) mottled with scrub, finer and fainter on the far hills. */
 .isl .isl-ydet { display: none; }
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-ydet { display: inline; }
-[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-land.f-far { fill: url(#islvvegf); }
-[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-land.f-near { fill: url(#islvvegn); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-land.f-far { fill: url(#islvvegf) var(--isl-far); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-land.f-near { fill: url(#islvvegn) var(--isl-near); }
+/* The homepage hero's skies (DRAFT, 2026-09-28): each version's sky deepened where the words sit, so
+   white text keeps at least 4.5:1 behind every line (measured on the rendered drawing, without the
+   text shadow); the network and its signal kept light on a daylight sky. */
+/* The phone and tablet hero (not bold) sets its words on the horizon itself, so there each light
+   version's horizon, haze and first of the sea are deepened. */
+[data-md-color-scheme="default"] .isl.isl-hero:not(.isl-bold)[data-sky="day"] {
+  --isl-sea0: #2f6f93; --isl-haze: #7fa9c4; --isl-sky3: #7fb0d4; --isl-hz: #9cc0d8;
+}
+[data-md-color-scheme="default"] .isl.isl-hero:not(.isl-bold)[data-sky="dawn"] {
+  --isl-sea0: #6a7596; --isl-haze: #a08aa6; --isl-sky3: #b08aa0; --isl-hz: #7d86a4;
+}
+[data-md-color-scheme="default"] .isl.isl-hero:not(.isl-bold)[data-sky="sunset"] {
+  --isl-sea0: #675e72; --isl-haze: #98797a; --isl-sky3: #b4876e; --isl-hz: #ad8466;
+}
+.isl .isl-shade2 { display: none; }
+[data-md-color-scheme="default"] .isl.isl-hero:is([data-sky="dawn"], [data-sky="day"], [data-sky="sunset"]) .isl-shade2 { display: inline; }
+[data-md-color-scheme="default"] .isl.isl-hero[data-sky="day"] {
+  --isl-sky0: #1d5a91; --isl-sky1: #2a68a0; --isl-sky2: #6aa3cf; --isl-sky3: #a9cde6; --isl-hz: #d9e8f0;
+  --isl-net: rgba(255, 255, 255, 0.42); --isl-node: rgba(255, 255, 255, 0.85);
+}
+/* the network's signal stays light on a daylight sky (the campus windows keep the Day's dark glass) */
+[data-md-color-scheme="default"] .isl.isl-hero[data-sky="day"] .isl-pulse { --isl-pulse: #fff1c8; }
+[data-md-color-scheme="default"] .isl.isl-hero[data-sky="dawn"] {
+  --isl-sky0: #283f6a; --isl-sky1: #445c8c; --isl-sky2: #9585ab; --isl-sky3: #e2b1ad;
+}
+[data-md-color-scheme="default"] .isl.isl-hero[data-sky="sunset"] {
+  --isl-sky0: #1a426c; --isl-sky1: #2d5b8a;
+}
 #islvvegf .isl-veg-b { fill: var(--isl-far); }
 #islvvegn .isl-veg-b { fill: var(--isl-near); }
 .isl .isl-veg-d { fill: var(--isl-veg-d, #2c4a2c); }

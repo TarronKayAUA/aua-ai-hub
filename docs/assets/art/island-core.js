@@ -548,7 +548,9 @@
       + `<stop offset="0" class="st-sky1" stop-opacity="${a}"/>${h}</linearGradient>`
       + `<linearGradient id="islwestv" gradientUnits="userSpaceOnUse" x1="0" y1="${F(y0 * 0.3)}" x2="0" y2="${F(y0 * 0.85)}">${m}</linearGradient>`
       + `<mask id="islwestm"><rect width="${F(v.W)}" height="${F(y0)}" fill="url(#islwestv)"/></mask></defs>`
-      + `<rect width="${F(v.W)}" height="${F(y0)}" fill="url(#islwest)" mask="url(#islwestm)"/>`;
+      + `<rect width="${F(v.W)}" height="${F(y0)}" fill="url(#islwest)" mask="url(#islwestm)"/>`
+      // drawn a second time under the words at Dawn, Day and Sunset, whose skies are brighter
+      + `<rect class="isl-shade2" width="${F(v.W)}" height="${F(y0)}" fill="url(#islwest)" mask="url(#islwestm)"/>`;
   }
   /* The bird is its own layer, so the one pass can glide it into place. */
   function birdLayer(p) {
@@ -603,9 +605,10 @@
       + `<rect y="${F(v.y0 - 2.4 * v.ppd)}" width="${F(W)}" height="${F(2.4 * v.ppd)}" fill="url(#islhazeg)"/>`
       + glowSky(v, 'd', 'isl-d') + glowSky(v, 'n', 'isl-n')
       + (bold ? shade(v, colOf(M)) : '')
-      + stars(v, 'd', clear, 'isl-d') + stars(v, 'n', clear, 'isl-n')
+      + stars(v, 'd', clear, 'isl-d isl-dstars') + stars(v, 'n', clear, 'isl-n')
       + planets(v, 'd', words, 'isl-d') + planets(v, 'n', words, 'isl-n')
       + moon(v, 'd', words, 'isl-d') + moon(v, 'n', words, 'isl-n')
+      + (A.heroSky ? A.heroSky(v, W, H, colOf(M) + 28, clear.concat(skyObjects(v, words)), !scene) : '')
       + (scene ? '' : islands(v, 'f-isl'))
       + `<rect y="${v.y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`
       + glowSea(v, 'd', 'isl-d', reflH) + glowSea(v, 'n', 'isl-n', reflH)
@@ -625,11 +628,23 @@
 
   /* ================================================================ mounting */
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
+  /* The version of the light scheme, by the visitor's own clock (owner, 2026-09-28): Dawn 5:00 to
+     8:59, Day 9:00 to 16:59, Sunset 17:00 to 18:59, Dusk otherwise; the dark scheme is always Night.
+     `?isl-sky=` picks one for review. */
+  A.pickSky = function () {
+    try {
+      const q = new URLSearchParams(location.search).get('isl-sky');
+      if (q === 'dawn' || q === 'day' || q === 'dusk' || q === 'sunset') return q;
+    } catch (e) { /* no query: the clock decides */ }
+    const h = new Date().getHours();
+    return h >= 5 && h < 9 ? 'dawn' : h >= 9 && h < 17 ? 'day' : h >= 17 && h < 19 ? 'sunset' : 'dusk';
+  };
   A.hero = function (host) {
     if (host._isl) return;
     const root = document.createElement('div');
     root.className = 'isl isl-hero';
     root.setAttribute('aria-hidden', 'true');
+    root.dataset.sky = A.pickSky();
     host.classList.add('isl-host');
     host.insertBefore(root, host.firstChild);
     host._isl = root;
@@ -650,6 +665,7 @@
       if (started && root.classList.contains('isl-run') && t0 && performance.now() - t0 > 900) still();
       const built = buildHero(M);
       root.innerHTML = built ? built.html : '';
+      root.classList.toggle('isl-bold', !!(built && built.v.bold));
       if (built) {
         A.heroView = { x0: built.v.x0, y0: built.v.y0, ppd: built.v.ppd, host };
         if (A.onHero) A.onHero();

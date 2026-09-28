@@ -1617,6 +1617,17 @@
     };
   };
 
+  /* The homepage hero's Dawn, Day and Sunset (island-core.js, buildHero): the section pictures' clouds
+     and Sun, the clouds kept right of the words' column and clear of every line, the network, the bird,
+     the Moon and Venus, so white text keeps its contrast against the sky. */
+  A.heroSky = function (v, W, H, x0, clear, withDefs) {
+    const y0 = v.y0, pad = 16;
+    const ok = (a, b, c, d) => a > x0 && !clear.some(([p, q, r2, s2]) => a < r2 + pad && c > p - pad && b < s2 + pad && d > q - pad);
+    return (withDefs ? extraDefs() : '')
+      + `<g class="isl-a">${bands(W, y0, 89, ok)}</g><g class="isl-y">${clouds(W, y0, 211, ok)}</g>`
+      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, {})}</g>`;
+  };
+
   /* Each piece: its drawing; its world ('coast', the Curtain Bluff view with the far islands and
      Antigua's land, or 'inland', its own hills); the bearing it faces; and its ground. */
   const PIECES = {
@@ -1788,7 +1799,7 @@
      Moon belong to Dusk and Night. What only Dawn and Day draw is here: the glow where the Sun is about
      to rise, when the view faces it, and trade-wind cumulus, the same clouds at both, lit pink at Dawn and
      white by Day. */
-  function clouds(W, y0, seed) {
+  function clouds(W, y0, seed, ok) {
     const r = rng(seed);
     let d = '', defs = '';
     const n = Math.round(clamp(W / 55, 8, 22));
@@ -1806,13 +1817,14 @@
         c += `M${F(px - pr)} ${F(py)}a${F(pr)} ${F(pr)} 0 1 0 ${F(2 * pr)} 0a${F(pr)} ${F(pr)} 0 1 0 ${F(-2 * pr)} 0Z`;
       }
       // the flat base: the puffs are cut at the level where the air condenses
+      if (ok && !ok(cx - w / 2 - h, base - h * 2.4, cx + w / 2 + h, base)) continue;
       defs += `<clipPath id="islvcb${i}"><rect x="${F(cx - w)}" y="${F(base - h * 3)}" width="${F(w * 2)}" height="${F(h * 3)}"/></clipPath>`;
       d += `<path d="${c}" fill="url(#islvcloud)" clip-path="url(#islvcb${i})" opacity="${F(0.45 + t * 0.45)}"/>`;
     }
     return `<defs>${defs}</defs>${d}`;
   }
   // Dawn's clouds are its own: long, low bands of stratocumulus, their tops catching the light first.
-  function bands(W, y0, seed) {
+  function bands(W, y0, seed, ok) {
     const r = rng(seed);
     let d = '';
     const n = Math.round(clamp(W / 110, 5, 10));
@@ -1826,6 +1838,7 @@
         const ry = h * (0.45 + Math.sin(u * Math.PI) * 0.6) * (0.7 + r() * 0.5);
         c += `M${F(cx - rx)} ${F(y)}a${F(rx)} ${F(ry)} 0 1 0 ${F(2 * rx)} 0a${F(rx)} ${F(ry)} 0 1 0 ${F(-2 * rx)} 0Z`;
       }
+      if (ok && !ok(x - w / 2 - w / k, y - h * 2, x + w / 2 + w / k, y + h * 1.2)) continue;
       d += `<path d="${c}" fill="url(#islvcloud)" opacity="${F(0.5 + t * 0.4)}"/>`;
     }
     return d;
@@ -1953,14 +1966,7 @@
   // Which light-scheme version a card shows, by the visitor's own clock (owner, 2026-09-28; SPEC section
   // 12): Dawn from 5:00, Day from 9:00, Sunset from 17:00, Dusk from 19:00. ?isl-sky=dawn|day|sunset|dusk
   // forces one, for review. The dark scheme is always Night, whatever this says.
-  function pickSky() {
-    try {
-      const q = new URLSearchParams(location.search).get('isl-sky');
-      if (q === 'dawn' || q === 'day' || q === 'dusk' || q === 'sunset') return q;
-    } catch (e) { /* no query: the clock decides */ }
-    const h = new Date().getHours();
-    return h >= 5 && h < 9 ? 'dawn' : h >= 9 && h < 17 ? 'day' : h >= 17 && h < 19 ? 'sunset' : 'dusk';
-  }
+  const pickSky = () => A.pickSky();
 
   A.vignette = function (fig) {
     if (fig._isl) return;
