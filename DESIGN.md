@@ -632,6 +632,10 @@ Cautions learned in review: lit and shaded planes (`facets`) must follow real fa
 
 Two traps from the rounds: `mkdocs serve` does not reload hook code (restart it after changing `scripts/layout_art.py`), and an image viewer may show a cached picture under an old file name.
 
-### 19.6 Budget
+### 19.6 Four times of day
+
+Every piece is made in the same four versions (owner, 2026-09-28; SPEC section 12, "The art in four times of day"): **Dawn**, **Day** and **Dusk** in the light scheme, chosen by the visitor's local time, and **Night** in the dark scheme. The versions' styles are shared, not per piece: one set of sky, sea, land and material tokens per version, the same rules for lights (on at Dusk and Night, off by Day), stars and grain (none by Day), and the Moon (Dusk and Night only). A piece draws its subject once; the version supplies the light. Its review sheet shows all four, and it is not finished until all four pass the review loop above.
+
+### 19.7 Budget
 
 island-vignettes.js is fetched only where a piece is shown (from 68.75em, never on phones) and draws in well under a frame; keep each piece a single function, no images, no network, and no new file per piece. Sizes today: island-vignettes.js about 80 KB, island-core.js about 124 KB (48 KB compressed), island-deep.js 107 KB (41 KB compressed, dark scheme only).

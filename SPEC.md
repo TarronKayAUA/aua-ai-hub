@@ -652,6 +652,18 @@ The owner asked for the redesign's method, including the art and the parallel cl
 - "When a Check Stops Checking" gets its table and chart brought up to September 28 (969 commits, 527 automated, 442 by the owner, 352 of those crediting an AI co-author, 498 news refreshes) with `python scripts/commit_chart.py --write`, an authoring script whose counting rules reproduce the article's first numbers exactly and whose drawing reproduces the original chart byte for byte; the table and captions are updated by hand from what it prints.
 - docs/announcements/2026-09-28-redesign.md, and a dismissible banner linking to it (overrides/main.html, set by `extra: announce` in mkdocs.yml), drawn only while the build date is on or before `until` (2026-10-12), so the several daily rebuilds retire it on its own.
 
+### The art in four times of day (owner direction 2026-09-28)
+
+After Dr. Bell, who prefers the light scheme, asked on a call why the site looks dark, the owner asked for dawn, daytime and dusk versions of the scenes, and for every piece of art to be produced with the same set of versions, so that their number and the style of each stay consistent across the site. The rule:
+
+- Every Island Night picture has four versions: Dawn, Day and Dusk in the light scheme, the visitor's local time choosing among them, and Night in the dark scheme. Proposed hours, to be settled with the first preview: Dawn from 5:00 to 8:59, Day from 9:00 to 16:59, Dusk from 17:00 to 4:59.
+- The Moon appears at Dusk and Night only (owner: "really only the nighttime ones, the daytime ones it can be absent from"; he had approved it in the dusk pictures).
+- Each version's style is defined once and shared by every piece: sky, sea, land and material colors, which lights are on, whether stars and grain show. A piece supplies its drawing; the version supplies the light.
+- A new piece is not finished until it has all four, and its review sheet shows all four.
+- The first piece is Shirley Heights, the hardest (the most land and water to color by day, a view people know, and the owner's own daylight photograph to check against), staged for review before the other pieces follow.
+
+The site itself follows each visitor's device setting (prefers-color-scheme) until the toggle is used, so a device in dark mode opens the site in the dark scheme; that default is unchanged.
+
 ### The design language is written down (2026-09-27)
 
 DESIGN.md at the repository root is the design reference every new page, section and data-driven list follows: principles, the hook pipeline and its integrity checks, page types, layout rules, breakpoints, components, color, type and case, ordering, motion and accessibility, the empty space policy, checklists, things not to do, gaps left on purpose and the measured baseline. `python scripts/design_check.py` (authoring only, not CI) builds the site and checks it against DESIGN.md in a browser; run it before a layout change ships. The dated decisions stay in this section; DESIGN.md describes what is.
