@@ -16,7 +16,7 @@ This is how the site you are reading was redesigned over four days in late Septe
 
 I do not write code, and I did not want to judge the navigation by how it felt to me, because I know where everything is. So the first pass used AI agents as stand-ins for people who do not: a first-semester student on a phone, a third-year student on rotation, a skeptical physiology lecturer, a faculty researcher, a course director and an administrator in the dean's office. Each worked through five tasks on a private copy of the site, reading only what a visitor would see.
 
-All 30 tasks succeeded. The friction was in how: the median task took four steps, and eight needed the search box. Six more agents read every hand-written page for length and estimated that about 18 percent of the visible words could go. That estimate was never applied wholesale; it guided individual cuts.
+All 30 tasks succeeded. The friction was in how: the median task took four steps, and eight needed the search box. Six more agents read every hand-written page for length and estimated that about 18 percent of the visible words could go. The records show individual cuts made since, but not whether the whole 18 percent was ever applied.
 
 ## Every Design Passed
 
@@ -44,21 +44,21 @@ The fix was to review from screenshots and measurements at phone, tablet and des
 
 ## Removing the Sidebars
 
-My own motivation for the whole exercise, which I only put into words partway through, was to get rid of the menu column down the left of every page and the contents column down the right. The goal was a site organized well enough not to need either.
+My own motivation for the whole exercise, which I only put into words partway through, was to get rid of the menu column down the left of most pages and the contents column down the right. The goal was a site organized well enough not to need either.
 
 Four complete sidebar-free versions of the site were built, each in its own isolated copy: tabs with a dock, a floating navigator, inline wayfinding, and one built to a specification Astra wrote. Each was crawled in a real browser and walked by fresh visitor agents on 20 new held-back tasks. All four completed all 20, at 1.2 to 1.4 clicks each. The visitors had hit the ceiling again.
 
-So the decision moved to the cost on the screen. A small script measured where reading could begin on every page of each prototype, and only the floating navigator took no reading space at all. Astra ranked it first, and ranked the design built to its own specification third, criticizing its own spec for giving navigation too much weight.
+So the decision moved to the cost on the screen. A small script measured where the text began on nine sample pages of each prototype, and only the floating navigator left it where it was, at both of the widths tested. Astra ranked it first, and ranked the design built to its own specification third, criticizing its own spec for giving navigation too much weight.
 
 Both models then recommended a restrained palette for the new design, and here I disagreed with both. If color can do what other signals cannot, it is worth using, provided it is consistent. The result is color by meaning: each color stands for one kind of page everywhere on the site (tools, prompts, guides, lessons and so on), with a small color key wherever colors appear. Retested on 20 more new tasks, the finished design completed all of them at 1.25 clicks.
 
 ## Three Designers at Once
 
-The next afternoon, looking at the new navigation on a large monitor, I asked why reading pages were so narrow. At 1920 pixels across, the screen was mostly empty gray. The measurement agreed: on the site's 69 reading pages, 51 percent of a typical desktop screen was blank, and 54 percent on a smaller laptop.
+The next afternoon, looking at the new navigation on a large monitor, I asked why reading pages were so narrow. At 1920 pixels across, the screen was mostly empty gray. The measurement agreed: across the site's 69 reading pages, an average of 51 percent of each desktop screen sat in large empty areas, and 54 percent on a smaller laptop screen.
 
 I was nearly out of my weekly allowance, but I had an unused $250 credit for Claude sessions that run on Anthropic's servers rather than my laptop. So three designers ran at the same time, in the cloud, each given one direction: sections side by side, a reading column with a companion column, or a different arrangement for each kind of page. They all started from the same kit: one brief with thirteen hard rules, one measuring script, and a recorded baseline.
 
-Two practical problems cost the first hour. The cloud sessions could not publish their work until I asked each one to add the repository to its own sources, and their browsers could not load the site's typeface, which silently inflated one of the measurements by six to thirty characters a line. That is why no cloud number was trusted until it reproduced the recorded baseline, and why every design was finally measured again on my own machine, with one script.
+Two practical problems complicated the setup. The cloud sessions could not publish their work until I asked each one to add the repository to its own sources, and their browsers could not load the site's typeface, which silently inflated one of the measurements by six to thirty characters a line. That is why no cloud number was trusted until it reproduced the recorded baseline, and why every design was finally measured again on my own machine, with one script.
 
 | Designer's direction | Blank at 1920 | Blank at 1440 |
 |---|---|---|
@@ -69,13 +69,13 @@ Two practical problems cost the first hour. The cloud sessions could not publish
 
 Astra reviewed screenshots of all three and ranked them C, A, B, saying that C "looks composed, rather than merely widened." It also found the most serious defect in the design with the best number: C had separated a policy heading from the provisions it introduced, and the blank-space measure had rewarded it for doing so. Astra's warning was that a density score can reward worse reading, which is exactly why it was not the only judge.
 
-I chose C with Astra's six fixes, and then overruled two of them. The fixes had removed the thin outlines around sections for a calmer look; putting them back kept blank space at 15 percent instead of 37, and I preferred the structure. They had also moved the navigation into a slim bar at the top of the page; I wanted it back in the bottom-left corner, where a first-time visitor can see it, folding after a few seconds into a small compass labeled "Navigate". Reading pages went live at 19 percent blank at 1920 and 18 percent at 1440.
+I chose C with Astra's six fixes, and then overruled two of them. The fixes had removed the thin outlines around sections for a calmer look. Putting them back kept the blank-space score at 15 percent instead of 37, because the script counts an outlined panel as used, which is a judgment about the measure rather than a saving of space; I kept them because I preferred the structure they give a page. They had also moved the navigation into a slim bar at the top of the page; I wanted it back in the bottom-left corner, where a first-time visitor can see it, folding after a few seconds into a small compass labeled "Navigate". Reading pages went live at 19 percent blank at 1920 and 18 percent at 1440.
 
-Designer C's cloud session then ran six follow-on rounds (whole-card links, a site-wide title-case pass, the news pages, the remaining empty space, the weekly page, and a final handoff), each from a written brief, each reporting back in a status file, each checked on my laptop and merged only when I said yes. Its last job, sent when the credit stood at $54, was to write down everything it had learned as a design reference and a checking script, so that the work could continue on the laptop. How much of the remaining $54 that job used was never recorded.
+Designer C's cloud session then ran six follow-on rounds (whole-card links, a site-wide title-case pass, the news pages, the remaining empty space, the weekly page, and a final handoff), each from a written brief, each reporting back in a status file, each checked on my laptop and merged only when I said yes. Its last job, sent when the credit stood at $54, was to write down everything it had learned as a design reference and a checking script, so that the work could continue on the laptop. The records I have do not show how much of the remaining $54 that job used.
 
 ## Scenery Drawn in Code
 
-The pictures in the page headers are not photographs or generated images. Each is drawn in code every time a page loads.
+The pictures in the page headers are not photographs or generated images. Each is drawn in code when a page loads, on screens wide enough to show it.
 
 The night sky is real. The stars are the whole Yale Bright Star Catalogue at their true positions over Antigua for a particular evening, 3,542 of them above the horizon at night, with 9,033 fainter ones from the European Space Agency's Hipparcos catalog and the true path of the Milky Way. The Moon and Venus are as they appeared that evening, and the islands on the horizon of the home page are traced from satellite elevation data at their true bearings. Where the art takes a liberty, the code says so: the islands are drawn 2.6 times their true height, the Moon several times its true size (and, over Shirley Heights, moved down into a sky too short to hold it), and a thin fill of painted stars is labeled as the one part of the sky that is not real.
 
@@ -87,7 +87,7 @@ The method that reached a standard I was happy with is written down in the site'
 
 ## What It Cost
 
-Between September 24 and the morning of September 28, the repository recorded 152 commits: 135 under my name, starting on the evening of the 25th (26 of them merging parallel work back together), and 17 automated news refreshes. On the site's main line, 166 files changed; leaving out the automatically generated news pages, 152 files, with about 29,700 lines added and 1,900 removed.
+Between September 24 and the morning of September 28, the repository recorded 152 commits: 135 under my name, starting on the evening of the 25th (26 of them merging parallel work back together), and 17 automated news refreshes. On the site's main line, 166 files changed; leaving out the files the news pipeline generates, 152 files, with about 29,700 lines added and 1,900 removed.
 
 The first navigation pass used 13 agents and the second 23 (about 3.9 million tokens); the layout audit used nine. The builds and prototypes that followed used more, but I do not have an exact total. The cloud credit went from $250 to $54 by the final handoff. Astra's reviews came out of my separate ChatGPT allowance, at about 22,000 tokens for its design and review in the second pass.
 
@@ -95,8 +95,8 @@ My own time was evenings and a very long weekend. I did not measure it.
 
 ## What Transfers
 
-- A success rate is a ceiling, not a measurement. When every design passes, the information is in the clicks, the backtracks and the screen space.
-- Hold back tasks the designers never see, and use fresh ones for every retest. A design that has seen the test will pass it.
+- When every design scores 100 percent, the success rate can no longer tell them apart. The information is in the clicks, the backtracks and the screen space.
+- Hold back tasks the designers never see, and use fresh ones for every retest. A design that has seen the test can simply learn it.
 - A reviewer that reads a page as text cannot see the page. Review layouts from screenshots at several widths.
 - Parallel designers need one kit: a shared brief with hard rules, one measuring script, a recorded baseline, and one machine that measures every candidate.
 - Any single number can be gamed, so pair it with a reviewer from a different model family, and write down why you overruled both of them when you do.
@@ -106,4 +106,4 @@ My own time was evenings and a very long weekend. I did not measure it.
 
 Every visitor in these tests was an AI agent, not a person. A test with about eight real students and faculty on their own phones was planned and has not yet been run, so nothing here shows that real people find things faster.
 
-Blank space is a proxy for a screen that is not wasted, not for understanding, and Astra's warning about it stands. Beyond an anonymous visit count, nothing measures whether the redesign changed how the site is used. And the art, however carefully sourced its stars, is a matter of taste: mine.
+Blank space is a proxy for a screen that is not wasted, not for understanding, and Astra's warning about it stands. Beyond an anonymous visit count, the site has no way to measure whether the redesign changed how it is used. And the art, however carefully sourced its stars, is a matter of taste: mine.
