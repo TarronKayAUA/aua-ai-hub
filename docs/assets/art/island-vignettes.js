@@ -625,13 +625,41 @@
       [0.7, 0.34], [0.76, 0.295], [0.82, 0.27], [0.88, 0.262], [0.94, 0.275], [1.02, 0.3]];
     s += `<path class="f-far" d="${poly(P([...crest, [1.02, 1.03]]))}${scrub(P(crest.slice(1, 13)), 8, 1, 2.8)}"/>`;
     s += `<path class="s-rim" d="M${P(crest.slice(1, 14)).map(([x, y]) => `${F(x)} ${F(y + 0.5)}`).join('L')}" stroke-width="1.2" stroke-opacity=".45"/>`;
-    // 3. The lookout at the summit: a ruined stone front with two arches, warm light inside.
-    const lx = X(0.875), lb = Y(0.268), lw = X(0.085), lh = Y(0.13);
-    s += halo(lx, lb - lh * 0.4, Y(0.16), 'islvwarm');
-    s += `<path class="isl-vstone" d="M${F(lx - lw / 2)} ${F(lb)}V${F(lb - lh)}H${F(lx - lw * 0.22)}V${F(lb - lh - Y(0.02))}H${F(lx - lw * 0.05)}V${F(lb - lh)}H${F(lx + lw * 0.2)}V${F(lb - lh - Y(0.028))}H${F(lx + lw / 2)}V${F(lb)}Z"/>`;
-    s += `<path class="isl-vpshade" d="M${F(lx + lw * 0.3)} ${F(lb)}V${F(lb - lh - Y(0.028))}H${F(lx + lw / 2)}V${F(lb)}Z"/>`;
-    const archAt = (x) => `M${F(x - lw * 0.1)} ${F(lb)}V${F(lb - lh * 0.5)}A${F(lw * 0.1)} ${F(lw * 0.1)} 0 0 1 ${F(x + lw * 0.1)} ${F(lb - lh * 0.5)}V${F(lb)}Z`;
-    s += `<path class="f-pulse isl-vwin" style="--i:6" d="${archAt(lx - lw * 0.22)}${archAt(lx + lw * 0.12)}"/>`;
+    // 3. The lookout at the summit: a two-storey stone guardhouse, part ruined, like those on the
+    //    heights above English Harbour: three arches below and two windows above, all lit from
+    //    within; a crenellated parapet; a corner turret; coursed stone; a broken wall stepping down
+    //    the slope. It lights last, after the top lantern.
+    const lx = X(0.878), lb = Y(0.272), lw = X(0.14), lh = Y(0.19), gx0 = lx - lw / 2, gx1 = lx + lw / 2, mid = lb - lh * 0.52;
+    const tw2 = lw * 0.2, th = lh * 1.22;                    // the turret, on the right-hand corner
+    let gh = `M${F(gx0)} ${F(lb)}V${F(lb - lh)}H${F(gx1 - tw2)}V${F(lb)}Z`;
+    gh += `M${F(gx1 - tw2)} ${F(lb)}V${F(lb - th)}H${F(gx1)}V${F(lb)}Z`;
+    for (let i = 0; i < 6; i++) {                            // merlons along the parapet
+      const mx = gx0 + i * (lw - tw2) / 6;
+      gh += `M${F(mx)} ${F(lb - lh)}h${F((lw - tw2) / 12)}v${F(-Y(0.022))}h${F(-(lw - tw2) / 12)}Z`;
+    }
+    for (let i = 0; i < 3; i++) {                            // and on the turret
+      const mx = gx1 - tw2 + i * tw2 / 3;
+      gh += `M${F(mx)} ${F(lb - th)}h${F(tw2 / 6)}v${F(-Y(0.02))}h${F(-tw2 / 6)}Z`;
+    }
+    // the broken wall stepping down the slope to the left
+    gh += `M${F(gx0 - lw * 0.32)} ${F(lb + Y(0.012))}V${F(lb - lh * 0.3)}H${F(gx0 - lw * 0.2)}V${F(lb - lh * 0.42)}H${F(gx0 - lw * 0.08)}V${F(lb - lh * 0.55)}H${F(gx0)}V${F(lb)}Z`;
+    s += halo(lx, lb - lh * 0.45, Y(0.24), 'islvwarm');
+    s += `<path class="isl-vstone" d="${gh}"/>`;
+    // the shaded turret face and the courses of stone
+    s += `<path class="isl-vpshade" d="M${F(gx1 - tw2 * 0.45)} ${F(lb)}V${F(lb - th - Y(0.02))}H${F(gx1)}V${F(lb)}Z"/>`;
+    let courses = '';
+    for (let y = lb - Y(0.02); y > lb - lh + Y(0.01); y -= Y(0.022)) courses += `M${F(gx0 + 1)} ${F(y)}H${F(gx1 - 1)}`;
+    s += `<path class="isl-vcourse" d="${courses}" stroke-width=".7"/>`;
+    s += `<path class="isl-vcourse" d="M${F(gx0)} ${F(mid)}H${F(gx1 - tw2)}" stroke-width="1.6"/>`;
+    // the openings, lit from within: three arches below, two windows above, a slit in the turret
+    const archAt = (x, w, top, bot) => `M${F(x - w / 2)} ${F(bot)}V${F(top + w / 2)}A${F(w / 2)} ${F(w / 2)} 0 0 1 ${F(x + w / 2)} ${F(top + w / 2)}V${F(bot)}Z`;
+    const bayW = (lw - tw2) / 3;
+    let lit = '';
+    for (let i = 0; i < 3; i++) lit += archAt(gx0 + bayW * (i + 0.5), bayW * 0.46, mid + Y(0.03), lb);
+    for (let i = 0; i < 2; i++) { const wx = gx0 + (lw - tw2) * (0.3 + i * 0.4); lit += `M${F(wx - bayW * 0.16)} ${F(lb - lh + Y(0.045))}h${F(bayW * 0.32)}v${F(Y(0.05))}h${F(-bayW * 0.32)}Z`; }
+    lit += `M${F(gx1 - tw2 / 2 - 1.5)} ${F(lb - th + Y(0.05))}h3v${F(Y(0.06))}h-3Z`;
+    // (placed below, after the lanterns, so it lights last)
+    const lookoutLit = lit;
     // 4. The steps, in profile: one staircase climbing the hillside to the lookout, a riser and a
     //    tread at a time, with two landings. The stone body under the treads, each tread's edge lit,
     //    each riser's face in shade.
@@ -651,7 +679,7 @@
     lanterns.push([x1 - X(0.018), yB]);
     const body = edge.concat(edge.slice().reverse().map(([ex, ey]) => [ex + X(0.02), ey + depth]));
     // the pools of light first, so the stones sit in them
-    s += lanterns.map(([lx2, ly2], i) => `<g class="isl-vwin" style="--i:${i}">${pool(lx2 + X(0.02), ly2 + Y(0.01), X(0.08), Y(0.06), 0.85)}</g>`).join('');
+    s += lanterns.map(([lx2, ly2], i) => `<g class="isl-vwin" style="--i:${i};--isl-vstep:.6s">${pool(lx2 + X(0.02), ly2 + Y(0.01), X(0.08), Y(0.06), 0.85)}</g>`).join('');
     s += `<path class="isl-vriser" d="${poly(body)}"/>`;
     s += `<path class="isl-vstep-edge" d="${treads}" stroke-width="${F(Math.max(1.6, Y(0.008)))}"/>`;
     s += `<path class="isl-vstep-rise" d="${risers}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>`;
@@ -675,11 +703,12 @@
     lanterns.forEach(([lx2, ly2], i) => {
       const top = i === lanterns.length - 1, ph = Y(0.1), lw2 = X(0.009), lh2 = Y(0.03);
       s += `<path class="isl-vpost" d="M${F(lx2 - 1.1)} ${F(ly2)}V${F(ly2 - ph)}H${F(lx2 + 1.1)}V${F(ly2)}Z"/>`;
-      s += `<g class="isl-vwin${top ? ' isl-vlast' : ''}" style="--i:${i}">`
+      s += `<g class="isl-vwin" style="--i:${i};--isl-vstep:.6s">`
         + halo(lx2, ly2 - ph - lh2 / 2, Y(top ? 0.1 : 0.085), top ? 'islvlamp' : 'islvbulb')
         + `<path class="${top ? 'isl-vlamp' : 'f-pulse'}" d="M${F(lx2 - lw2)} ${F(ly2 - ph)}V${F(ly2 - ph - lh2)}H${F(lx2 + lw2)}V${F(ly2 - ph)}Z"/></g>`;
       s += `<path class="isl-vpost" d="M${F(lx2 - lw2 * 1.5)} ${F(ly2 - ph - lh2)}L${F(lx2)} ${F(ly2 - ph - lh2 - Y(0.014))}L${F(lx2 + lw2 * 1.5)} ${F(ly2 - ph - lh2)}Z"/>`;
     });
+    s += `<path class="f-pulse isl-vwin isl-vlast" style="--i:${lanterns.length + 0.6};--isl-vstep:.6s" d="${lookoutLit}"/>`;
     return s;
   }
 
@@ -947,15 +976,22 @@
       // From the sea off English Harbour, west-south-west: Montserrat on the left, the sunset behind
       // the south coast's hills on the right.
       face: 258,
-      ppd: (W) => W / 80,
+      // wide enough that the Moon sits in the sky at dusk and at night (owner, 2026-09-28), a clear
+      // disc, above the open water between the fleet and the coast
+      ppd: (W, H, y0) => Math.min(W / 80, y0 / 36),
+      moonBig: 2.4,
+      moonX: 0.4,
       ground: null,
     },
     'lamp-steps': {
       draw: steps,
       world: 'inland',
       horizon: 0.6,
-      // From the harbour side, west toward the last light above the hill.
+      // From the harbour side, west toward the last light above the hill; the Moon in the sky.
       face: 262,
+      ppd: (W, H, y0) => Math.min(W / 62, y0 / 36),
+      moonBig: 2.4,
+      moonX: 0.42,
       ground: null,
     },
     'nelsons-dockyard': {
@@ -1019,7 +1055,9 @@
     const ppd = P.ppd ? P.ppd(W, H, y0g) : W / 62;
     const y0 = y0g;
     // The anchor: a coast scene puts the sunset a third of the way in; an inland one faces P.face.
-    const anchor = P.world === 'coast' ? rel(SKY.d.sun[0]) - (W * 0.3 - W / 2) / ppd : rel(P.face);
+    // A piece may instead put the Moon at a share of the width (`moonX`), turning to face it.
+    const anchor = P.world === 'coast' ? rel(SKY.d.sun[0]) - (W * 0.3 - W / 2) / ppd
+      : P.moonX != null ? rel((SKY.d.moon[0] + SKY.n.moon[0]) / 2) - (W * P.moonX - W / 2) / ppd : rel(P.face);
     const v = view(W / 2 - anchor * ppd, y0, ppd, W, H);
     const sea = H - y0;
     const k = P.ground ? P.ground(W, H, y0, sea) : null;
@@ -1032,7 +1070,7 @@
       + L.glowSky(v, 'd', 'isl-d') + L.glowSky(v, 'n', 'isl-n')
       + stars(v, 'd', [], 'isl-d') + stars(v, 'n', [], 'isl-n')
       + L.planets(v, 'd', [], 'isl-d') + L.planets(v, 'n', [], 'isl-n')
-      + L.moon(v, 'd', [], 'isl-d') + L.moon(v, 'n', [], 'isl-n')
+      + L.moon(v, 'd', [], 'isl-d', P.moonBig || 1) + L.moon(v, 'n', [], 'isl-n', P.moonBig || 1)
       + (P.world === 'coast' ? islands(v, 'f-isl') : '')
       + `<rect y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`
       + L.glowSea(v, 'd', 'isl-d', reflH) + L.glowSea(v, 'n', 'isl-n', reflH)

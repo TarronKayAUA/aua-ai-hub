@@ -364,6 +364,7 @@
 [data-md-color-scheme="slate"] .isl-vig .isl-grain { opacity: 0.6; }
 .isl .isl-vstep-edge { stroke: var(--isl-vstone); fill: none; stroke-linecap: round; }
 .isl .isl-vstep-rise { stroke: var(--isl-vriser); fill: none; }
+.isl .isl-vcourse { stroke: var(--isl-vriser); stroke-opacity: 0.45; fill: none; }
 .isl .isl-vpreflect { fill: var(--isl-vstone); fill-opacity: 0.22; }
 /* The Pillars of Hercules' limestone: its face in the last light, its strata and its hollows. */
 .isl { --isl-vstone: #a39a86; --isl-vstrata: #7f7765; }
@@ -397,7 +398,7 @@
 .isl-hero.isl-run .isl-vwin { animation: isl-vlight 0.9s ease-out both; animation-delay: calc(1.1s + var(--i, 0) * 0.2s); }
 .isl-hero.isl-run .isl-vglow,
 .isl-hero.isl-run .isl-vlamps { animation: isl-vlight 1.2s ease-out 1.4s both; }
-.isl-vig.isl-vrun .isl-vwin { animation: isl-vlight 0.9s ease-out both; animation-delay: calc(0.8s + var(--i, 0) * 0.22s); }
+.isl-vig.isl-vrun .isl-vwin { animation: isl-vlight 0.9s ease-out both; animation-delay: calc(0.8s + var(--i, 0) * var(--isl-vstep, 0.22s)); }
 .isl-vig.isl-vrun .isl-vglow,
 .isl-vig.isl-vrun .isl-vlamps,
 .isl-vig.isl-vrun .isl-vspill { animation: isl-vlight 1.2s ease-out 1.2s both; }
