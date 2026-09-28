@@ -180,6 +180,11 @@
 .isl .isl-vgrass { fill: var(--isl-vgrass, #1f6f78); fill-opacity: 0.35; }
 .isl .isl-vterrace { fill: var(--isl-vterrace, #d68c5e); }
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-palm { fill: var(--isl-vtree3); }
+/* Shrubs (the telescope's hill, the harbour town's trees): night silhouettes, leaf green by Day. */
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-shrub { fill: var(--isl-vtree3); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-shrubl { fill: var(--isl-vtree-l); fill-opacity: 0.8; }
+/* Iron (the fort's cannon, lamp posts) is drawn in the land's color at night; by Day it is dark iron. */
+[data-md-color-scheme="default"] .isl[data-sky="day"] :is(.isl-vcannon, .isl-vpost) { fill: #2c3338; }
 
 /* --- Paint ------------------------------------------------------------------ */
 .isl .st-sky0 { stop-color: var(--isl-sky0); }

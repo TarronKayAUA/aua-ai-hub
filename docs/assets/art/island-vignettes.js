@@ -964,7 +964,7 @@
       // the base, wound the same way as the circles (a base wound the other way cancels where they overlap)
       dark += `M${F(cx + sz * 0.9)} ${F(cy)}a${F(sz * 0.9)} ${F(sz * 0.42)} 0 0 0 ${F(-sz * 1.8)} 0Z`;
     }
-    return `<path class="isl-vlit" d="${lit}"/><path class="f-near" d="${dark}"/>`;
+    return `<path class="isl-vlit isl-shrubl" d="${lit}"/><path class="f-near isl-shrub" d="${dark}"/>`;
   }
   const polyD = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
   const lineD = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L');
