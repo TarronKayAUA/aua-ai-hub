@@ -44,6 +44,16 @@ slots:
     piece: curtain-bluff
     aspect: 0.42
 
+  # The News & Events landing's head (800x320 at 1920): St John's harbour at
+  # night from Fort James, the cruise ships lit up at the quay and the
+  # cathedral's towers above the town, where the island's news comes in by
+  # sea (art round 3, 2026-09-27).
+  - page: news-and-events.md
+    section: _head
+    piece: st-johns-harbour
+    kind: news
+    aspect: 0.42
+
   # The guides index's head (800x336 at 1920, the top of the page): the
   # Pillars of Hercules, the landmark sailors steered by into English
   # Harbour (art round 3, 2026-09-27).

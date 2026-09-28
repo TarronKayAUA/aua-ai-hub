@@ -311,6 +311,17 @@
 .isl { --isl-vbay: #4f8fa3; }
 [data-md-color-scheme="slate"] .isl { --isl-vbay: #1d4760; }
 .isl .st-vbay { stop-color: var(--isl-vbay); }
+/* St John's: the cruise ships, the town's walls and the floodlit cathedral. */
+.isl { --isl-vship: #c9d2dd; --isl-vship2: #a9b5c3; --isl-vcath: #cdbfa6; --isl-vtown: #7b8796; }
+[data-md-color-scheme="slate"] .isl { --isl-vship: #6f7f93; --isl-vship2: #56657a; --isl-vcath: #8a7f6c; --isl-vtown: #34445a; }
+.isl .isl-vship { fill: var(--isl-vship); }
+.isl .isl-vship2 { fill: var(--isl-vship2); }
+.isl .isl-vcath { fill: var(--isl-vcath); }
+.isl .isl-vcathwin { fill: var(--isl-pulse); fill-opacity: 0.8; }
+.isl .isl-vtown { fill: var(--isl-vtown); }
+.isl .isl-vhullband { fill: var(--isl-near); fill-opacity: 0.75; }
+.isl .isl-vdeck { stroke: var(--isl-near); stroke-opacity: 0.35; fill: none; }
+.isl .isl-vcannon { fill: var(--isl-near); }
 /* The Pillars of Hercules' limestone: its face in the last light, its strata and its hollows. */
 .isl { --isl-vstone: #a39a86; --isl-vstrata: #7f7765; }
 [data-md-color-scheme="slate"] .isl { --isl-vstone: #3b4049; --isl-vstrata: #2a2e36; }
