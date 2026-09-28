@@ -176,6 +176,8 @@
 .isl .isl-vgildline { stroke: var(--isl-gild, #ffbe8c); stroke-opacity: 0.85; fill: none; stroke-linecap: round; }
 .isl .isl-vsunrise { fill: #ffcf7a; }
 .isl .isl-vsunpath { stroke: #ffe6ad; fill: none; stroke-linecap: round; }
+/* A veil of haze across a low Sun, in the afterglow's mauve. */
+.isl .isl-vsunveil { fill: var(--isl-g3); fill-opacity: 0.55; }
 .isl .isl-vsunpath2 { stroke: #ffbd72; fill: none; stroke-linecap: round; }
 .isl .isl-vsunday { fill: #fffcee; }
 .isl .isl-sparkle { stroke: #ffffff; fill: none; }

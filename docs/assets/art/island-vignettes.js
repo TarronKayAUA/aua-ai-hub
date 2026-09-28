@@ -400,7 +400,7 @@
     // open sea (owner, 2026-09-28: "a reflection of the sun on the water too"); the headland covers it
     // where it stands between.
     s += `<clipPath id="islvbayclip"><path d="${poly(bay)}"/></clipPath>`
-      + `<g class="isl-s" clip-path="url(#islvbayclip)" opacity=".7">${sunWater(v, 's', W, v.y0, H, { sunset: 'early' })}</g>`;
+      + `<g class="isl-s" clip-path="url(#islvbayclip)" opacity=".7">${sunWater(v, 's', W, v.y0, H, PIECES['shirley-heights'])}</g>`;
     // 1. The far hills: the small distant point on the left, then the main range behind Falmouth.
     const point = P([[0.295, 0.233], [0.31, 0.222], [0.33, 0.214], [0.355, 0.219], [0.375, 0.228], [0.4, 0.224],
       [0.43, 0.207], [0.47, 0.192], [0.51, 0.2], [0.55, 0.205], [0.56, 0.233]]);
@@ -1637,7 +1637,7 @@
     const ok = (a, b, c, d) => a > x0 && !clear.some(([p, q, r2, s2]) => a < r2 + pad && c > p - pad && b < s2 + pad && d > q - pad);
     return (withDefs ? extraDefs() : '')
       + `<g class="isl-a">${bands(W, y0, 89, ok)}</g><g class="isl-y">${clouds(W, y0, 211, ok)}</g>`
-      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, { sunset: 'early' })}</g>`;
+      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, { sunset: withDefs ? '18:19' : '17:57' })}</g>`;
   };
 
   /* Each piece: its drawing; its world ('coast', the Curtain Bluff view with the far islands and
@@ -1655,8 +1655,8 @@
     'curtain-bluff': {
       draw: curtainBluff,
       world: 'coast',
-      // by 18:31 the Sun has gone behind the low point of land left of the bluff
-      sunset: 'early',
+      // the Sun sinking behind the tip of the low point of land left of the bluff, its path on the sea
+      sunset: '18:25',
       horizon: 0.7,
       // the Moon, about 24 degrees up, and Venus in the sky above the horizon
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 29),
@@ -1666,6 +1666,8 @@
     'sailing-week': {
       draw: regatta,
       world: 'inland',
+      // the Sun touching the sea between the yachts, its path running down between their reflections
+      sunset: '18:28',
       horizon: 0.6,
       // From the sea off English Harbour, west-south-west: Montserrat on the left, the sunset behind
       // the south coast's hills on the right.
@@ -1680,6 +1682,8 @@
     'lamp-steps': {
       draw: steps,
       world: 'inland',
+      // the Sun touching the sea where the stair's slope meets it, so the slope leads the eye to it
+      sunset: '18:28',
       horizon: 0.6,
       // From the harbour side, west toward the last light above the hill; the Moon in the sky.
       face: 262,
@@ -1691,8 +1695,8 @@
     'telescope': {
       draw: telescope,
       world: 'inland',
-      // the Sun is behind the far range at both of Sunset's moments
-      sunPath: false,
+      // the Sun resting on the summit of the far range, its path on the open sea below
+      sunset: '18:02',
       horizon: 0.62,
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
       moonBig: 2.4,
@@ -1702,6 +1706,8 @@
     'bettys-hope': {
       draw: bettysHope,
       world: 'inland',
+      // the Sun just touching the far hills, framed between the great house and the boiling house
+      sunset: '18:10',
       sunPath: false,
       horizon: 0.64,
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
@@ -1712,7 +1718,8 @@
     'court-house': {
       draw: courtHouse,
       world: 'inland',
-      sunset: 'early',
+      // the Sun resting on the rooftops down the street, between the palm and the lamp
+      sunset: '18:11',
       horizon: 0.62,
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
       moonBig: 2.4,
@@ -1751,7 +1758,8 @@
     'shirley-heights': {
       draw: heights,
       world: 'inland',
-      sunset: 'early',
+      // the Sun sinking behind the far hills, as in the owner's dusk photograph, its path across the harbour
+      sunset: '18:25',
       horizon: 0.3,
       // From the lookout west-north-west across English Harbour to Falmouth: in May the Sun sets behind
       // the range (the owner's dusk photograph), so the afterglow sits just left of its peaks.
@@ -1868,21 +1876,50 @@
   // would be visible ... please add them"): at the size the Moon is drawn, low and orange at the horizon,
   // its lower edge cut by the horizon, a glow around it and its light laid on the water below. Land and
   // buildings drawn after it cover it where they stand in front.
-  const sunAt = (m, P) => (m === 's' && P.sunset === 'early' ? SKY.se : SKY[m]).sun;
+  // The Sunset moment: a picture's own (`sunset: 'HH:MM'`), 18:31 by default. ?isl-sunat=HH:MM tries
+  // another minute in every picture, for review.
+  let sunatQ = null;
+  try { sunatQ = new URLSearchParams(location.search).get('isl-sunat'); } catch (e) { /* no query */ }
+  const sunAt = (m, P) => (m === 's' ? SKY.sunset[SKY.sunset[sunatQ] ? sunatQ : (P.sunset || '18:31')] : SKY[m].sun);
+  // The Sun as the eye sees it low in the sky (owner, 2026-09-28: the first disc was "very stylized against
+  // a softly shadowed landscape", and its size changed from picture to picture). One size on the screen in
+  // every picture, set by the picture's width, not its scale; a soft disc, deeper and redder the nearer it
+  // is to the horizon, whose edge melts into its own bloom; low down, a veil of haze drawn across it; and a
+  // wide warm bloom lying along the horizon beneath it. At the horizon the air flattens the disc.
+  const sunR = (W) => clamp(W * 0.0115, 7, 9.5);
+  const mixHex = (a, b, t) => '#' + [1, 3, 5].map((i) => Math.round(parseInt(a.slice(i, i + 2), 16) * (1 - t)
+    + parseInt(b.slice(i, i + 2), 16) * t).toString(16).padStart(2, '0')).join('');
   function sunDisc(v, m, W, y0, H, P) {
-    const [az, alt] = sunAt(m, P), x = v.x(az), y = v.y(alt), rr = 0.267 * 3 * (P.moonBig || 1) * v.ppd;
-    if (x < -rr || x > W + rr || y < -rr || y > y0 + rr) return '';
-    // at the horizon the air flattens the disc: refraction lifts its lower edge more than its upper
-    const flat = 0.84 + 0.16 * clamp(alt / 1.2, 0, 1);
-    return `<circle cx="${F(x)}" cy="${F(y)}" r="${F(rr * 9)}" fill="url(#islvsunlow)" clip-path="url(#islsky)"/>`
-      + `<ellipse cx="${F(x)}" cy="${F(y)}" rx="${F(rr)}" ry="${F(rr * flat)}" fill="url(#islvsundisc)" clip-path="url(#islsky)"/>`;
+    const [az, alt] = sunAt(m, P), x = v.x(az), y = v.y(alt), rr = sunR(W);
+    if (x < -rr * 3 || x > W + rr * 3 || y < -rr * 3 || y > y0 + rr) return '';
+    const k = clamp(alt / 10, 0, 1), flat = 0.84 + 0.16 * clamp(alt / 1.2, 0, 1);
+    const core = mixHex('#ffd49a', '#fff3d6', k), rim = mixHex('#ff9860', '#ffc978', k), id = `islvsd${m}${Math.round(alt * 10)}`;
+    let s = `<defs><radialGradient id="${id}"><stop offset="0" stop-color="${core}"/><stop offset=".55" stop-color="${mixHex(core, rim, 0.45)}"/>`
+      + `<stop offset=".8" stop-color="${rim}" stop-opacity=".92"/><stop offset="1" stop-color="${rim}" stop-opacity="0"/></radialGradient>`
+      + `<filter id="${id}f" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="${F(rr * 0.14)}"/></filter></defs>`;
+    s += `<ellipse cx="${F(x)}" cy="${F(Math.max(y, y0 - rr))}" rx="${F(rr * 18)}" ry="${F(rr * 5)}" fill="url(#islvsunlow)" opacity="${F(0.35 + 0.35 * (1 - k))}" clip-path="url(#islsky)"/>`
+      + `<circle cx="${F(x)}" cy="${F(y)}" r="${F(rr * 4.5)}" fill="url(#islvsunlow)" opacity=".75" clip-path="url(#islsky)"/>`
+      + `<g clip-path="url(#islsky)"><ellipse cx="${F(x)}" cy="${F(y)}" rx="${F(rr * 1.12)}" ry="${F(rr * 1.12 * flat)}" fill="url(#${id})" filter="url(#${id}f)"/></g>`;
+    if (alt < 4) {
+      // wisps of stratus, thin lenses tapering at both ends, softer than the disc
+      const r = rng(181);
+      let veil = '';
+      for (let i = 0; i < 2; i++) {
+        const vy = y + rr * (0.1 + i * 0.45 + r() * 0.1), vw = rr * (3.4 + r() * 2.6), vh = rr * (0.1 + r() * 0.06);
+        const x0 = x - vw / 2 + (r() - 0.5) * rr, xm = x0 + vw * (0.4 + r() * 0.2);
+        veil += `M${F(x0)} ${F(vy)}Q${F(xm)} ${F(vy - vh * 2)} ${F(x0 + vw)} ${F(vy)}Q${F(xm)} ${F(vy + vh * 2)} ${F(x0)} ${F(vy)}Z`;
+      }
+      s += `<defs><filter id="${id}v" x="-20%" y="-200%" width="140%" height="500%"><feGaussianBlur stdDeviation="${F(rr * 0.22)} ${F(rr * 0.08)}"/></filter></defs>`
+        + `<path class="isl-vsunveil" d="${veil}" filter="url(#${id}v)" clip-path="url(#islsky)"/>`;
+    }
+    return s;
   }
   // The Sun's light on the water (owner, 2026-09-28: "so we can get a reflection of the sun on the water
   // too"): just under the horizon a bright band where the disc's own reflection merges with it, then its
   // path of broken glitter straight toward the viewer, widening as it comes near, gold at the horizon and
   // orange and fainter nearer. Drawn over the sea and under the land, so every shore and hull covers it.
   function sunWater(v, m, W, y0, H, P) {
-    const [az, alt] = sunAt(m, P), x = v.x(az), rr = 0.267 * 3 * (P.moonBig || 1) * v.ppd;
+    const [az, alt] = sunAt(m, P), x = v.x(az), rr = sunR(W);
     // no path where land hides the Sun itself (`sunPath: false`): what hides the Sun from the viewer
     // hides it from the water in front of the viewer too
     if (P.sunPath === false || x < -rr * 6 || x > W + rr * 6 || alt > 12) return '';
@@ -1897,11 +1934,13 @@
         if (k < 0.12) d0 += seg; else if (k < 0.45) d1 += seg; else d2 += seg;
       }
     }
-    const sw = Math.max(1, rr * 0.08);
-    return `<ellipse cx="${F(x)}" cy="${F(y0 + 0.5)}" rx="${F(rr * 2.8)}" ry="${F(rr * 0.6)}" fill="url(#islvsunrefl)" clip-path="url(#islsea)" opacity="${F(lit)}"/>`
-      + `<path class="isl-vsunpath" d="${d0}" stroke-width="${F(sw * 1.3)}" stroke-opacity="${F(0.9 * lit)}"/>`
-      + `<path class="isl-vsunpath2" d="${d1}" stroke-width="${F(sw)}" stroke-opacity="${F(0.62 * lit)}"/>`
-      + `<path class="isl-vsunpath2" d="${d2}" stroke-width="${F(sw)}" stroke-opacity="${F(0.3 * lit)}"/>`;
+    const sw = Math.max(1, rr * 0.12);
+    // the glitter softened a little, as light broken on moving water is
+    return `<defs><filter id="islvswf${m}" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="${F(rr * 0.05)}"/></filter></defs>`
+      + `<ellipse cx="${F(x)}" cy="${F(y0 + 0.5)}" rx="${F(rr * 2.8)}" ry="${F(rr * 0.6)}" fill="url(#islvsunrefl)" clip-path="url(#islsea)" opacity="${F(lit * 0.85)}"/>`
+      + `<g filter="url(#islvswf${m})"><path class="isl-vsunpath" d="${d0}" stroke-width="${F(sw * 1.2)}" stroke-opacity="${F(0.8 * lit)}"/>`
+      + `<path class="isl-vsunpath2" d="${d1}" stroke-width="${F(sw)}" stroke-opacity="${F(0.55 * lit)}"/>`
+      + `<path class="isl-vsunpath2" d="${d2}" stroke-width="${F(sw)}" stroke-opacity="${F(0.28 * lit)}"/></g>`;
   }
   function dawnDay(v, W, y0, H, seed = 0) {
     const p = v.ppd, sx = v.x(SKY.a.sun[0]), r = rng(97);
