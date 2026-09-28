@@ -334,9 +334,36 @@
 [data-md-color-scheme="slate"] .isl { --isl-vsail: #8d9bad; --isl-vspin: #6c6282; }
 .isl .isl-vsail { fill: var(--isl-vsail); }
 .isl .isl-vspin { fill: var(--isl-vspin); }
+.isl { --isl-vspin2: #e6cf9c; }
+[data-md-color-scheme="slate"] .isl { --isl-vspin2: #857656; }
+.isl .isl-vspin2 { fill: var(--isl-vspin2); }
 .isl .isl-vspin-k { fill: var(--k-line, var(--isl-rim)); }
 [data-md-color-scheme="slate"] .isl .isl-vspin-k { fill: var(--k, var(--isl-rim)); }
 .isl .isl-vstep { fill: var(--isl-vstone); }
+/* The finish (2026-09-28): the water's ripples and columns of light, lit and shaded planes of the
+   land, the sails' shading and seams, navigation lights, the steps' risers and walls, lanterns, and
+   the print grain over the card. */
+.isl { --isl-vlit: #56708c; --isl-vshadow: #0c2034; --isl-vsail2: #b9c4d2; --isl-vwallc: #6d6a63; --isl-vriser: #3b4250; }
+[data-md-color-scheme="slate"] .isl { --isl-vlit: #1d3450; --isl-vshadow: #03080f; --isl-vsail2: #5d6b7f; --isl-vwallc: #2b3038; --isl-vriser: #161b24; }
+.isl .s-vrip { stroke: var(--isl-rip); fill: none; }
+.isl .s-vglow { stroke: var(--isl-pulse); fill: none; }
+.isl .s-vsailglint { stroke: var(--isl-vsail); fill: none; }
+.isl .isl-vlit { fill: var(--isl-vlit); fill-opacity: 0.35; }
+.isl .isl-vshadow { fill: var(--isl-vshadow); fill-opacity: 0.35; }
+.isl .st-vsail { stop-color: var(--isl-vsail); }
+.isl .st-vsail2 { stop-color: var(--isl-vsail2); }
+.isl .isl-vsheer { stroke: var(--isl-vsail); stroke-opacity: 0.6; fill: none; }
+.isl .isl-vseam { stroke: var(--isl-near); stroke-opacity: 0.25; fill: none; }
+.isl .isl-vnav-r { fill: #ff6b5e; }
+.isl .isl-vnav-g { fill: #6fe0a2; }
+.isl .isl-vnav-w { fill: var(--isl-planet); }
+.isl .isl-vriser { fill: var(--isl-vriser); }
+.isl .isl-vwall { fill: var(--isl-vwallc); }
+.isl .isl-vpost { fill: var(--isl-near); }
+.isl-vig .isl-grain { position: absolute; inset: 0; pointer-events: none; opacity: 0.32; }
+[data-md-color-scheme="slate"] .isl-vig .isl-grain { opacity: 0.6; }
+.isl .isl-vstep-edge { stroke: var(--isl-vstone); fill: none; stroke-linecap: round; }
+.isl .isl-vstep-rise { stroke: var(--isl-vriser); fill: none; }
 .isl .isl-vpreflect { fill: var(--isl-vstone); fill-opacity: 0.22; }
 /* The Pillars of Hercules' limestone: its face in the last light, its strata and its hollows. */
 .isl { --isl-vstone: #a39a86; --isl-vstrata: #7f7765; }
