@@ -7,7 +7,8 @@
      overrides/main.html on every page) need island-core.js and
      island-sides.js, and only when a gutter is at least 80px wide. Phones never fetch either
      gutter file, and a page with neither mark fetches nothing.
-   - the fainter stars (docs/assets/art/island-deep.js, about 40 KB compressed) only in the dark scheme,
+   - the fainter stars (docs/assets/art/island-deep.js, about 40 KB compressed) only at Night (a picture
+     whose clock says Night, or the dark scheme's gutters),
      a few seconds after the page has loaded (or when the reader switches to dark), then every drawing
      redraws once with them;
    - a vignette (a figure marked data-vignette, placed by scripts/layout_art.py from
@@ -76,9 +77,11 @@
   }
 
   run();
-  // The fainter stars: night only, after the page (and the hero's one pass) has settled.
+  // The fainter stars: night only (a picture whose clock says Night, or the dark scheme's gutters), after
+  // the page (and the hero's one pass) has settled.
   function deepWanted() {
-    return document.body.getAttribute('data-md-color-scheme') === 'slate' && state['island-core.js'] === 'ready' &&
+    var night = document.body.getAttribute('data-md-color-scheme') === 'slate' || !!document.querySelector('.isl[data-sky="night"]:not(.isl-ghost)');
+    return night && state['island-core.js'] === 'ready' &&
       window.matchMedia('(min-width: 60em)').matches;   // phones: the small hero would not show them
   }
   function deep() {
@@ -93,6 +96,8 @@
   if ('MutationObserver' in window) {
     new MutationObserver(deep).observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
   }
+  // a picture that turns to Night while the page is open (island-core.js, A.watchSky)
+  document.addEventListener('isl-sky', deep);
   if (sides || vigs.length) {
     var t;
     window.addEventListener('resize', function () {
