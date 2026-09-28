@@ -104,6 +104,6 @@ My own time was evenings and a very long weekend. I did not measure it.
 
 ## What This Does Not Show
 
-Every visitor in these tests was an AI agent, not a person. A test with about eight real students and faculty on their own phones was planned and has not yet been run, so nothing here shows that real people find things faster.
+Every visitor in these tests was an AI agent, not a person. A test with about eight students and faculty on their own phones was planned, and a kit for it was prepared, but I do not have the time to run one, so nothing here shows that real people find things faster.
 
 Blank space is a proxy for a screen that is not wasted, not for understanding, and Astra's warning about it stands. Beyond an anonymous visit count, the site has no way to measure whether the redesign changed how it is used. And the art, however carefully sourced its stars, is a matter of taste: mine.
