@@ -389,6 +389,11 @@
       + `<path class="isl-vshallow2" d="${line(beachLine)}" stroke-width="${F(Y(0.1))}" filter="url(#islvbayf)"/></g>`;
     s += `<g class="isl-ydet"><path class="isl-vshallow" d="${line(head.slice(18))}${line(town.slice(8))}${line(slope.slice(4, 18))}" `
       + `stroke-width="${F(Y(0.045))}" filter="url(#islvbayf)"/></g>`;
+    // At Sunset the Sun, just above the range, lays its path across the calm harbour, fainter than on the
+    // open sea (owner, 2026-09-28: "a reflection of the sun on the water too"); the headland covers it
+    // where it stands between.
+    s += `<clipPath id="islvbayclip"><path d="${poly(bay)}"/></clipPath>`
+      + `<g class="isl-s" clip-path="url(#islvbayclip)" opacity=".7">${sunWater(v, 's', W, v.y0, H, { sunset: 'early' })}</g>`;
     // 1. The far hills: the small distant point on the left, then the main range behind Falmouth.
     const point = P([[0.295, 0.233], [0.31, 0.222], [0.33, 0.214], [0.355, 0.219], [0.375, 0.228], [0.4, 0.224],
       [0.43, 0.207], [0.47, 0.192], [0.51, 0.2], [0.55, 0.205], [0.56, 0.233]]);
@@ -1625,7 +1630,7 @@
     const ok = (a, b, c, d) => a > x0 && !clear.some(([p, q, r2, s2]) => a < r2 + pad && c > p - pad && b < s2 + pad && d > q - pad);
     return (withDefs ? extraDefs() : '')
       + `<g class="isl-a">${bands(W, y0, 89, ok)}</g><g class="isl-y">${clouds(W, y0, 211, ok)}</g>`
-      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, {})}</g>`;
+      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, { sunset: 'early' })}</g>`;
   };
 
   /* Each piece: its drawing; its world ('coast', the Curtain Bluff view with the far islands and
@@ -1643,6 +1648,8 @@
     'curtain-bluff': {
       draw: curtainBluff,
       world: 'coast',
+      // by 18:31 the Sun has gone behind the low point of land left of the bluff
+      sunset: 'early',
       horizon: 0.7,
       // the Moon, about 24 degrees up, and Venus in the sky above the horizon
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 29),
@@ -1677,6 +1684,8 @@
     'telescope': {
       draw: telescope,
       world: 'inland',
+      // the Sun is behind the far range at both of Sunset's moments
+      sunPath: false,
       horizon: 0.62,
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
       moonBig: 2.4,
@@ -1686,6 +1695,7 @@
     'bettys-hope': {
       draw: bettysHope,
       world: 'inland',
+      sunPath: false,
       horizon: 0.64,
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
       moonBig: 2.2,
@@ -1695,6 +1705,7 @@
     'court-house': {
       draw: courtHouse,
       world: 'inland',
+      sunset: 'early',
       horizon: 0.62,
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
       moonBig: 2.4,
@@ -1712,6 +1723,7 @@
     'st-johns-harbour': {
       draw: harbour,
       world: 'inland',
+      sunPath: false,
       // The horizon is the quay, so the town is mirrored in the harbour; the view turns to put the
       // Moon over the hills, left of the cathedral.
       horizon: 0.6,
@@ -1732,6 +1744,7 @@
     'shirley-heights': {
       draw: heights,
       world: 'inland',
+      sunset: 'early',
       horizon: 0.3,
       // From the lookout west-north-west across English Harbour to Falmouth: in May the Sun sets behind
       // the range (the owner's dusk photograph), so the afterglow sits just left of its peaks.
@@ -1787,14 +1800,15 @@
       + '<radialGradient id="islvsun"><stop offset="0" stop-color="#fffdf0" stop-opacity=".95"/><stop offset=".1" stop-color="#fff8dc" stop-opacity=".6"/><stop offset=".4" stop-color="#ffffff" stop-opacity=".14"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvsundisc"><stop offset="0" stop-color="#fffbea"/><stop offset=".55" stop-color="#ffe29a"/><stop offset=".85" stop-color="#ffab52"/><stop offset="1" stop-color="#ff8a3d"/></radialGradient>'
       + '<radialGradient id="islvsunlow"><stop offset="0" stop-color="#ffd08a" stop-opacity=".85"/><stop offset=".12" stop-color="#ffb066" stop-opacity=".45"/><stop offset=".45" stop-color="#ff9a5a" stop-opacity=".14"/><stop offset="1" stop-color="#ff9a5a" stop-opacity="0"/></radialGradient>'
+      + '<radialGradient id="islvsunrefl"><stop offset="0" stop-color="#fff2c6" stop-opacity=".95"/><stop offset=".3" stop-color="#ffcf85" stop-opacity=".5"/><stop offset="1" stop-color="#ff9a5a" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvdawn"><stop offset="0" class="st-g1" stop-opacity=".9"/><stop offset=".45" class="st-g2" stop-opacity=".35"/><stop offset="1" class="st-g2" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvbulb"><stop offset="0" class="st-g1" stop-opacity=".5"/><stop offset=".5" class="st-g1" stop-opacity=".14"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '</defs>';
   }
 
-  /* THE FOUR TIMES OF DAY (owner, 2026-09-28): every picture has Dawn, Day and Dusk in the light scheme,
-     the visitor's local time choosing among them (the card's data-sky), and Night in the dark scheme. The
-     versions differ in light, not in drawing: the sky, sea, land and material colors are each version's
+  /* THE FIVE TIMES OF DAY (owner, 2026-09-28): every picture has Dawn, Day, Sunset, Dusk and Night, the
+     visitor's local time choosing among them in both schemes (the card's data-sky). The versions differ in
+     light, not in drawing: the sky, sea, land and material colors are each version's
      tokens (layout-art.css); lights are on at Dawn, Dusk and Night and off by Day; stars, grain and the
      Moon belong to Dusk and Night. What only Dawn and Day draw is here: the glow where the Sun is about
      to rise, when the view faces it, and trade-wind cumulus, the same clouds at both, lit pink at Dawn and
@@ -1847,13 +1861,40 @@
   // would be visible ... please add them"): at the size the Moon is drawn, low and orange at the horizon,
   // its lower edge cut by the horizon, a glow around it and its light laid on the water below. Land and
   // buildings drawn after it cover it where they stand in front.
+  const sunAt = (m, P) => (m === 's' && P.sunset === 'early' ? SKY.se : SKY[m]).sun;
   function sunDisc(v, m, W, y0, H, P) {
-    const [az, alt] = SKY[m].sun, x = v.x(az), y = v.y(alt), rr = 0.267 * 3 * (P.moonBig || 1) * v.ppd;
+    const [az, alt] = sunAt(m, P), x = v.x(az), y = v.y(alt), rr = 0.267 * 3 * (P.moonBig || 1) * v.ppd;
     if (x < -rr || x > W + rr || y < -rr || y > y0 + rr) return '';
-    const r = rng(173);
+    // at the horizon the air flattens the disc: refraction lifts its lower edge more than its upper
+    const flat = 0.84 + 0.16 * clamp(alt / 1.2, 0, 1);
     return `<circle cx="${F(x)}" cy="${F(y)}" r="${F(rr * 9)}" fill="url(#islvsunlow)" clip-path="url(#islsky)"/>`
-      + `<circle cx="${F(x)}" cy="${F(y)}" r="${F(rr)}" fill="url(#islvsundisc)" clip-path="url(#islsky)"/>`
-      + dashes(streakList(x, y0, H, r, 0.1, 0.09), 's-vglow', 1.4, [0.14, 0.28, 0.5]);
+      + `<ellipse cx="${F(x)}" cy="${F(y)}" rx="${F(rr)}" ry="${F(rr * flat)}" fill="url(#islvsundisc)" clip-path="url(#islsky)"/>`;
+  }
+  // The Sun's light on the water (owner, 2026-09-28: "so we can get a reflection of the sun on the water
+  // too"): just under the horizon a bright band where the disc's own reflection merges with it, then its
+  // path of broken glitter straight toward the viewer, widening as it comes near, gold at the horizon and
+  // orange and fainter nearer. Drawn over the sea and under the land, so every shore and hull covers it.
+  function sunWater(v, m, W, y0, H, P) {
+    const [az, alt] = sunAt(m, P), x = v.x(az), rr = 0.267 * 3 * (P.moonBig || 1) * v.ppd;
+    // no path where land hides the Sun itself (`sunPath: false`): what hides the Sun from the viewer
+    // hides it from the water in front of the viewer too
+    if (P.sunPath === false || x < -rr * 6 || x > W + rr * 6 || alt > 12) return '';
+    const r = rng(173), lit = clamp(1.15 - alt / 5, 0.45, 1);   // the lower the Sun, the brighter its path
+    let d0 = '', d1 = '', d2 = '';
+    for (let y = y0 + 1.2; y < H; y += 1.4 + (y - y0) * 0.028) {
+      const k = (y - y0) / (H - y0), half = rr * (0.55 + k * 4.2);
+      const n = 1 + Math.round(r() * 3 * (1 - k * 0.4));
+      for (let i = 0; i < n; i++) {
+        const cx = x + gauss(r) * half, len = Math.max(1.5, rr * (0.18 + r() * 0.7) * (1 + k * 2.6));
+        const seg = `M${F(cx - len / 2)} ${F(y)}h${F(len)}`;
+        if (k < 0.12) d0 += seg; else if (k < 0.45) d1 += seg; else d2 += seg;
+      }
+    }
+    const sw = Math.max(1, rr * 0.08);
+    return `<ellipse cx="${F(x)}" cy="${F(y0 + 0.5)}" rx="${F(rr * 2.8)}" ry="${F(rr * 0.6)}" fill="url(#islvsunrefl)" clip-path="url(#islsea)" opacity="${F(lit)}"/>`
+      + `<path class="isl-vsunpath" d="${d0}" stroke-width="${F(sw * 1.3)}" stroke-opacity="${F(0.9 * lit)}"/>`
+      + `<path class="isl-vsunpath2" d="${d1}" stroke-width="${F(sw)}" stroke-opacity="${F(0.62 * lit)}"/>`
+      + `<path class="isl-vsunpath2" d="${d2}" stroke-width="${F(sw)}" stroke-opacity="${F(0.3 * lit)}"/>`;
   }
   function dawnDay(v, W, y0, H, seed = 0) {
     const p = v.ppd, sx = v.x(SKY.a.sun[0]), r = rng(97);
@@ -1933,6 +1974,7 @@
       + gSea
       + `<path class="s-hz" d="M0 ${y0 + 0.5}H${F(W)}" stroke-width="1"/>`
       + ripples(v, 0, W, H, [], 9, 0.8)
+      + `<g class="isl-a">${sunWater(v, 'a', W, y0, H, P)}</g><g class="isl-s">${sunWater(v, 's', W, y0, H, P)}</g>`
       + (P.world === 'coast' ? land(v, 0, W, 13, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]], P.under !== false) : '')
       + (P.hills ? hills(W, g.at(W / 2), P.hills(W, y0), 31) : '')
       + (g.d ? `<path class="f-near" d="${g.d}"/>` : '')
@@ -1963,9 +2005,7 @@
     return GRAIN;
   }
 
-  // Which light-scheme version a card shows, by the visitor's own clock (owner, 2026-09-28; SPEC section
-  // 12): Dawn from 5:00, Day from 9:00, Sunset from 17:00, Dusk from 19:00. ?isl-sky=dawn|day|sunset|dusk
-  // forces one, for review. The dark scheme is always Night, whatever this says.
+  // Which version a card shows: the visitor's own clock, in both schemes (A.pickSky in island-core.js).
   const pickSky = () => A.pickSky();
 
   A.vignette = function (fig) {

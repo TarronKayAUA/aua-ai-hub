@@ -96,7 +96,7 @@
 .isl[data-sky="dawn"] {
   --isl-sky0: #34507f; --isl-sky1: #6078a6; --isl-sky2: #a891b4; --isl-sky3: #e6b4b0; --isl-hz: #8e9ab4;
   --isl-g1: #ffd9a8; --isl-g2: #f0a79a; --isl-g3: #9a86ad;
-  --isl-sea0: #9aa5bf; --isl-sea1: #56729a; --isl-sea2: #2f4d72; --isl-haze: #dcc8d2;
+  --isl-sea0: #c2a6b8; --isl-sea1: #5d7399; --isl-sea2: #2f4d72; --isl-haze: #e2c8cf;
   --isl-isl: #7d88a6; --isl-far: #3e5474; --isl-near: #273a53;
   --isl-rip: #dfe2ef; --isl-rip-a: 0.28; --isl-hzline: rgba(255, 228, 222, 0.4);
   --isl-rim: #f4c9c2; --isl-bird: #1d2b40;
@@ -175,6 +175,8 @@
 .isl .st-gild { stop-color: var(--isl-gild, #ffbe8c); }
 .isl .isl-vgildline { stroke: var(--isl-gild, #ffbe8c); stroke-opacity: 0.85; fill: none; stroke-linecap: round; }
 .isl .isl-vsunrise { fill: #ffcf7a; }
+.isl .isl-vsunpath { stroke: #ffe6ad; fill: none; stroke-linecap: round; }
+.isl .isl-vsunpath2 { stroke: #ffbd72; fill: none; stroke-linecap: round; }
 .isl .isl-vsunday { fill: #fffcee; }
 .isl .isl-sparkle { stroke: #ffffff; fill: none; }
 /* Day's features: trees, rock, shallows, the road (isl-ydet in each piece). */

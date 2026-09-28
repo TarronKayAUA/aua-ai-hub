@@ -96,7 +96,12 @@
   // for the Sunset preview of Dusk. PREVIEW: fold these into bake.py when the versions ship.
   SKY.a = { sun: [70.19, 2.55] };
   SKY.y = { sun: [79.63, 67.6] };
-  SKY.s = { sun: [289.96, 2.44] };
+  // Sunset has two true moments (geo/astro.py, the same day and place): 18:31 AST, the Sun half set on the
+  // sea (apparent altitude 0.11 degrees), for every view with open sea under it; and 18:19, for a view
+  // with land standing in front of the horizon (a range, a street, a building), which would hide it by
+  // 18:31 (a piece's `sunset: 'early'`).
+  SKY.s = { sun: [290.80, 0.11] };
+  SKY.se = { sun: [289.96, 2.44] };
   const ISL = ['M', 'R', 'N', 'K', 'G'].map((k) => pairs(D[k]));
   // Per bearing: [bearing, crest, far shore, crest distance m, near-ground crest, its distance m,
   // edge of the ground underfoot]; angles in degrees above the sea horizon, -99.999 for none.

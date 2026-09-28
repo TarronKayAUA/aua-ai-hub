@@ -13,9 +13,10 @@ What it does:
      same strict build and integrity lines as scripts/design_check.py;
   2. serves it to headless Chromium from disk (scripts/design/common.py);
   3. for every place in data/art_slots.yaml (or those chosen with --piece),
-     and for the homepage hero, renders the picture at 1920 and 1440 in the
-     light scheme (dusk) and the dark scheme (night), waiting for the late
-     fainter stars;
+     and for the homepage hero, renders the picture at 1920 and 1440 at Dusk
+     in the light scheme and at Night in the dark scheme (each forced with
+     ?isl-sky=, since the picture otherwise follows the visitor's clock in
+     both schemes), waiting for the late fainter stars;
   4. writes, per piece, a review sheet (the page at 1920 in context, then the
      picture at dusk and at night), a comparison sheet when --ref names
      reference photographs, and with --sequence a strip of the one pass;
@@ -29,8 +30,9 @@ What it does:
     python scripts/art_review.py --piece shirley-heights --times --ref shirley-heights-7-owner-day.webp
 
 --times renders the five versions every piece has (owner, 2026-09-28; DESIGN.md 19.6): Dawn, Day,
-Sunset and Dusk in the light scheme (forced with ?isl-sky=) and Night in the dark scheme, and writes a
-sheet of the five; with --ref it compares the photographs with the Day version.
+Sunset and Dusk in the light scheme and Night in the dark scheme, each forced with ?isl-sky= (the
+picture itself is the same in both schemes), and writes a sheet of the five; with --ref it compares the
+photographs with the Day version.
 
 References are read from --refs DIR (default: the art's source folder,
 Claude Projects/Hub art for the media tracker (2026-09-26)/island-hub-version/
@@ -94,7 +96,7 @@ def sequence(env, slot, out, frames=(900, 1500, 2100, 2700, 3300, 5000)):
     from PIL import Image
     ctx = env.context(1920, 1080, color_scheme="dark")
     page = ctx.new_page()
-    page.goto(BASE + slot["address"], wait_until="domcontentloaded")
+    page.goto(BASE + slot["address"] + "?isl-sky=night", wait_until="domcontentloaded")
     page.wait_for_selector(f"{slot['sel']} svg", timeout=20000)
     t0 = page.evaluate("performance.now()")
     box = page.evaluate(BOX_JS, slot["sel"])
@@ -221,7 +223,7 @@ def main() -> int:
                     for scheme in ("light", "dark"):
                         path = args.out / f"{key}_{w}_{scheme}.png"
                         ctx_path = args.out / f"{key}_page.png" if (w, scheme) == (1920, "dark") else None
-                        box, errors = shoot(env, slot, w, h, scheme, path, ctx_path)
+                        box, errors = shoot(env, slot, w, h, scheme, path, ctx_path, sky="dusk" if scheme == "light" else "night")
                         shots[(w, scheme)] = path
                         if errors:
                             failed = True
@@ -233,18 +235,18 @@ def main() -> int:
                 review_sheet(label, args.out / f"{key}_page.png", shots[(1920, "light")], shots[(1920, "dark")], args.out / f"review_{key}.png")
                 print(f"{key}: review sheet {args.out / f'review_{key}.png'}")
                 if args.times:
-                    four = {"night": shots[(1920, "dark")]}
+                    five = {"night": shots[(1920, "dark")]}
                     for w, h in ((1920, 1080), (1440, 900)):
                         for sky in ("dawn", "day", "sunset", "dusk"):
                             path = args.out / f"{key}_{w}_{sky}.png"
                             box, errors = shoot(env, slot, w, h, "light", path, sky=sky)
                             if w == 1920:
-                                four[sky] = path
+                                five[sky] = path
                             if errors or not box:
                                 failed = True
                                 print(f"  {key} {w} {sky}: {'script errors: ' + str(errors) if errors else 'the picture was not found'}")
-                    times_sheet(label, four, args.out / f"times_{key}.png")
-                    print(f"  four times of day {args.out / f'times_{key}.png'}")
+                    times_sheet(label, five, args.out / f"times_{key}.png")
+                    print(f"  five times of day {args.out / f'times_{key}.png'}")
                 if args.ref:
                     refs = [r if Path(r).is_file() else args.refs / r for r in args.ref]
                     missing = [str(r) for r in refs if not Path(r).is_file()]
