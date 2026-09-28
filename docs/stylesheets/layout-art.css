@@ -148,9 +148,15 @@
 .isl .isl-vrockshore { stroke: var(--isl-vrockshore, #d4b98f); fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .isl .isl-vfort { stroke: var(--isl-vstone); fill: none; stroke-linecap: round; }
 /* Shapes that are dark land at Dawn, Dusk and Night and show their daylight colors by Day. */
-.isl .isl-bhouse, .isl .isl-broof, .isl .isl-palm { fill: var(--isl-near); }
+.isl .isl-broof, .isl .isl-broofr, .isl .isl-palm, .isl .isl-bdock { fill: var(--isl-near); }
+.isl .isl-bhouse, .isl .isl-bstone { fill: var(--isl-far); }
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-bhouse { fill: var(--isl-vhouse); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-bstone { fill: var(--isl-vstone); }
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-broof { fill: var(--isl-vroofg); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-broofr { fill: var(--isl-vroof); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-bdock { fill: var(--isl-vdock, #dad3c2); }
+.isl .isl-vpool { fill: var(--isl-vpool, #54c9d1); }
+.isl .isl-vterrace { fill: var(--isl-vterrace, #d68c5e); }
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-palm { fill: var(--isl-vtree3); }
 
 /* --- Paint ------------------------------------------------------------------ */

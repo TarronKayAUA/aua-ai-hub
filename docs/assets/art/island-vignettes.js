@@ -310,14 +310,35 @@
       }
       return `<path class="isl-vshadow" d="${d}" filter="url(#islvbayf)"/>`;
     };
+    // THE BUILDINGS (owner, 2026-09-28: a building by Day should be the one whose windows are lit at night):
+    // one set drawn in every version. At Dawn, Dusk and Night they are dark shapes, a shade lighter than the
+    // land, with lit windows; by Day, white or stone walls under gray or red hipped roofs, the hip away from
+    // the Sun in shade, the windows as glass.
+    const bld = () => ({ walls: '', stone: '', grey: '', red: '', shade: '', win: '', halo: '' });
+    const house = (bb, x, base, w, opt = {}) => {
+      const h = w * (opt.tall ? 0.72 : 0.52), rh = w * 0.34, ov = w * 0.1, top = base - h;
+      bb[opt.stone ? 'stone' : 'walls'] += `M${F(x - w / 2)} ${F(base)}h${F(w)}v${F(-h)}h${F(-w)}Z`;
+      bb[opt.red ? 'red' : 'grey'] += `M${F(x - w / 2 - ov)} ${F(top + 0.3)}L${F(x - w * 0.22)} ${F(top - rh)}H${F(x + w * 0.22)}L${F(x + w / 2 + ov)} ${F(top + 0.3)}Z`;
+      bb.shade += `M${F(x - w * 0.22)} ${F(top - rh)}L${F(x - w / 2 - ov)} ${F(top + 0.3)}H${F(x - w * 0.3)}Z`;
+      const n = opt.win || (w > Y(0.03) ? 3 : w > Y(0.02) ? 2 : 1), ww = Math.max(1, w * 0.12), wh = Math.max(1.2, h * 0.3);
+      for (let k = 0; k < n; k++) {
+        const wx = x - w / 2 + (w * (k + 0.5)) / n - ww / 2;
+        bb.win += `M${F(wx)} ${F(base - h * 0.22)}h${F(ww)}v${F(-wh)}h${F(-ww)}Z`;
+        if (opt.tall) bb.win += `M${F(wx)} ${F(base - h * 0.62)}h${F(ww)}v${F(-wh)}h${F(-ww)}Z`;
+      }
+      bb.halo += halo(x, base - h * 0.5, w * 0.95);
+    };
+    const drawB = (bb, i) => `<path class="isl-bhouse" d="${bb.walls}"/><path class="isl-bstone" d="${bb.stone}"/>`
+      + `<path class="isl-broof" d="${bb.grey}"/><path class="isl-broofr" d="${bb.red}"/><path class="isl-vshadow" d="${bb.shade}"/>`
+      + `<g class="isl-vwin" style="--i:${i}">${bb.halo}<path class="f-pulse" d="${bb.win}"/></g>`;
     // The bay catches the last of the sky: its own water, a shade lighter and, at dusk, faintly teal.
     const bay = P([[0.19, 0.37], [0.3, 0.4], [0.45, 0.41], [0.6, 0.42], [0.72, 0.4], [0.8, 0.52], [0.78, 0.7],
       [0.66, 0.8], [0.3, 0.8], [0.2, 0.62]]);
     const town = P([[0.705, 0.45], [0.72, 0.432], [0.75, 0.418], [0.8, 0.412], [0.86, 0.418], [0.92, 0.41],
       [1.02, 0.402], [1.02, 1.02], [0.7, 1.02], [0.74, 0.74], [0.785, 0.66], [0.795, 0.6], [0.78, 0.56],
       [0.745, 0.54], [0.72, 0.52], [0.71, 0.48]]);
-    const head = P([[0.19, 0.378], [0.192, 0.366], [0.199, 0.352], [0.21, 0.341], [0.226, 0.331], [0.25, 0.318],
-      [0.28, 0.303], [0.31, 0.29], [0.34, 0.279], [0.37, 0.27], [0.4, 0.266], [0.43, 0.268], [0.46, 0.276], [0.5, 0.284], [0.54, 0.289],
+    const head = P([[0.19, 0.378], [0.194, 0.358], [0.203, 0.343], [0.212, 0.318], [0.224, 0.302], [0.258, 0.297],
+      [0.288, 0.297], [0.31, 0.29], [0.34, 0.279], [0.37, 0.27], [0.4, 0.266], [0.43, 0.268], [0.46, 0.276], [0.5, 0.284], [0.54, 0.289],
       [0.58, 0.295], [0.62, 0.31], [0.66, 0.33], [0.7, 0.37], [0.715, 0.41], [0.7, 0.425], [0.66, 0.432],
       [0.62, 0.436], [0.58, 0.44], [0.535, 0.442],
       // Fort Berkeley: a narrow rocky finger pointing into the bay
@@ -345,7 +366,7 @@
     s += `<g class="isl-adet"><path d="${poly(range)}" fill="url(#islvgild)"/><path class="isl-vgildline" d="${line(range.slice(1, -1))}" stroke-width="2.2" filter="url(#islvsoft)"/><path class="isl-vgildline" d="${line(range.slice(1, -1))}" stroke-width=".8"/></g>`;
     for (let i = 0; i < 30; i++) {             // villages on the range's lower slopes
       const x = 0.55 + r() * 0.47;
-      lights.push([X(x), Yp(0.25 + r() * 0.03), 3]);
+      lights.push([X(x), Yp(0.25 + r() * 0.03), 3, 'h']);
     }
     // 2. Falmouth Harbour (the sea's own water, left clear) and its big yachts' masts and lights.
     let masts = '';
@@ -354,14 +375,29 @@
       masts += `M${F(x)} ${F(foot)}V${F(top)}`;
       lights.push([x, top, 2]);
     }
-    for (let i = 0; i < 22; i++) lights.push([X(0.58 + r() * 0.42), Yp(0.29 + r() * 0.025), 2]);
+    for (let i = 0; i < 22; i++) lights.push([X(0.58 + r() * 0.42), Yp(0.29 + r() * 0.025), 2, 'h']);
     // the low land between the two harbours, and the town's slope on the right
     const between = P([[0.6, 0.326], [0.7, 0.32], [0.8, 0.325], [0.9, 0.318], [1.02, 0.318], [1.02, 0.358], [0.62, 0.358]]);
     s += `<path class="f-far isl-land" d="${poly(between)}"/>`;
     s += `<path class="f-near isl-land" d="${poly(town)}${scrub(town.slice(0, 7), 5, 0.9, 2.2)}"/>`;
     s += `<g class="isl-ydet">${trees(town, 110, Y(0.007), Y(0.016), 31)}`
       + `<path class="isl-vroad" d="M${F(X(1.02))} ${F(Yp(0.6))}C${F(X(0.93))} ${F(Yp(0.58))} ${F(X(0.9))} ${F(Yp(0.5))} ${F(X(0.84))} ${F(Yp(0.49))}S${F(X(0.78))} ${F(Yp(0.45))} ${F(X(0.75))} ${F(Yp(0.43))}" stroke-width="${F(Math.max(1, Y(0.006)))}"/></g>`;
-    for (let i = 0; i < 34; i++) lights.push([X(0.74 + r() * 0.27), Yp(0.43 + r() * 0.2), 3]);
+    // The houses on the slope and along Galleon Beach (owner, 2026-09-28), drawn in every version: the beach's
+    // cottages behind the sand, the two larger buildings above it, and houses up the hill, their windows the
+    // slope's lights at night. (The random draws the slope's old lights made are kept, so nothing else moves.)
+    for (let i = 0; i < 34; i++) { r(); r(); }
+    const hr = rng(509), homes = bld(), spots = [];
+    for (const [fx, fy, fw, win] of [[0.806, 0.575, 0.012, 2], [0.81, 0.598, 0.011, 2], [0.808, 0.622, 0.012, 2], [0.803, 0.645, 0.011, 1],
+      [0.824, 0.54, 0.024, 4], [0.85, 0.51, 0.02, 3]]) spots.push([X(fx), Yp(fy), X(fw), win]);
+    for (let tries = 0; spots.length < 30 && tries < 3000; tries++) {
+      const x = X(0.75 + hr() * 0.26), y = Yp(0.43 + hr() * 0.22), w = X(0.008 + hr() * 0.006);
+      if (!inPoly(x, y, town) || inPoly(x, y, slope)) continue;
+      if (spots.some(([sx, sy, sw]) => Math.abs(sx - x) < (sw + w) * 0.75 && Math.abs(sy - y) < Y(0.035))) continue;
+      spots.push([x, y, w, 0]);
+    }
+    spots.sort((p, q) => p[1] - q[1]);
+    for (const [x, y, w, win] of spots) house(homes, x, y, w, { red: hr() < 0.35, win: win || undefined });
+    s += drawB(homes, 6);
     // Galleon Beach: the pale curve of sand on the bay's right shore
     s += `<path class="isl-vsand" d="${line(P([[0.748, 0.545], [0.772, 0.558], [0.79, 0.585], [0.792, 0.615], [0.784, 0.655]]))}" stroke-width="${F(Math.max(1.5, Y(0.01)))}"/>`;
     // The inner harbour, running right from the dockyard behind a green spit, with its masts
@@ -374,19 +410,12 @@
     s += `<path class="f-near isl-land" d="${poly(head)}${scrub(head.slice(2, 17), 6, 0.9, 2.3)}"/>`;
     // by Day: the headland's shaded flank, its rock (the cliff at the point, Fort Berkeley's spur), its trees,
     // and the dockyard's buildings at its foot; at Dawn, the first light along its crest
-    const cliff = P([[0.19, 0.378], [0.192, 0.366], [0.199, 0.352], [0.21, 0.341], [0.226, 0.331], [0.233, 0.35], [0.229, 0.37], [0.22, 0.387], [0.2, 0.384]]);
+    const cliff = P([[0.19, 0.378], [0.194, 0.358], [0.203, 0.343], [0.212, 0.318], [0.224, 0.302], [0.234, 0.318], [0.238, 0.345], [0.23, 0.372], [0.22, 0.387], [0.2, 0.384]]);
     let strata = '';
-    for (let k = 1; k < 5; k++) strata += line(P([[0.192 + k * 0.004, 0.37 - k * 0.006], [0.228 - k * 0.002, 0.362 - k * 0.004]]));
-    let dock = '', dockRoofs = '';
-    for (let k = 0; k < 7; k++) {
-      const x = X(0.628 + k * 0.012), w = X(0.009 + (k % 3) * 0.002), h = Y(0.02 + (k % 2) * 0.008), foot = Yp(0.447);
-      dock += `M${F(x)} ${F(foot)}h${F(w)}v${F(-h)}h${F(-w)}Z`;
-      dockRoofs += `M${F(x - 1)} ${F(foot - h + 0.5)}L${F(x + w / 2)} ${F(foot - h - w * 0.35)}L${F(x + w + 1)} ${F(foot - h + 0.5)}Z`;
-    }
+    for (const [a, c] of [[[0.196, 0.36], [0.236, 0.356]], [[0.2, 0.348], [0.237, 0.343]], [[0.206, 0.336], [0.236, 0.331]], [[0.21, 0.324], [0.235, 0.32]], [[0.216, 0.312], [0.232, 0.31]]]) strata += line(P([a, c]));
     s += `<g class="isl-ydet">${flanks(head.slice(0, 18), Yp(0.42))}<path class="isl-vrock" d="${poly(cliff)}"/><path class="isl-vrockline" d="${strata}" stroke-width=".8"/>`
       + `<path class="isl-vrockline" d="${line(head.slice(25, 32))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`
-      + `${trees(head.slice(4, 25), 150, Y(0.006), Y(0.012), 37)}`
-      + `<path class="isl-vhouse" d="${dock}"/><path class="isl-vroof" d="${dockRoofs}"/></g>`;
+      + `${trees(head.slice(4, 25), 150, Y(0.006), Y(0.012), 37)}</g>`;
     s += `<g class="isl-adet"><path class="isl-vgildline" d="${line(head.slice(2, 17))}" stroke-width="2" filter="url(#islvsoft)"/><path class="isl-vgildline" d="${line(head.slice(2, 17))}" stroke-width=".7"/></g>`;
     // From the owner's day photographs (2026-09-28): by Day, dry grass on the headland's lower slopes and
     // a pale rocky strip along its shore, and Fort Berkeley's stone walls along the spur.
@@ -395,28 +424,48 @@
     s += `<g class="isl-ydet"><path class="isl-vdry" d="${dry.map(poly).join('')}" filter="url(#islvbayf)"/>`
       + `<path class="isl-vrockshore" d="${line(head.slice(33))}" stroke-width="${F(Math.max(1.4, Y(0.007)))}"/>`
       + `<path class="isl-vfort" d="${line(P([[0.512, 0.446], [0.506, 0.462], [0.498, 0.478], [0.49, 0.494]]))}M${F(X(0.484))} ${F(Yp(0.5))}h${F(X(0.02))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/></g>`;
-    // The house on the bluff, a third of the way along the headland (the owner: "there is actually a house on
-    // that bluff which could be lit up at night"): a dark shape with a lit window at Dawn, Dusk and Night,
-    // white walls and a gray roof by Day.
-    const bx = X(0.286), crestAt = (x) => {
-      const c = head.slice(0, 18);
-      for (let k = 0; k < c.length - 1; k++) if (x >= c[k][0] && x <= c[k + 1][0]) return c[k][1] + (c[k + 1][1] - c[k][1]) * (x - c[k][0]) / (c[k + 1][0] - c[k][0]);
-      return c[0][1];
-    };
-    const by = crestAt(bx) + Y(0.012), bw = X(0.014), bh = Y(0.022);
-    s += `<path class="isl-bhouse" d="M${F(bx - bw / 2)} ${F(by)}h${F(bw)}v${F(-bh)}h${F(-bw)}Z"/>`
-      + `<path class="isl-broof" d="M${F(bx - bw * 0.62)} ${F(by - bh + 0.4)}L${F(bx - bw * 0.1)} ${F(by - bh - bw * 0.3)}H${F(bx + bw * 0.12)}L${F(bx + bw * 0.62)} ${F(by - bh + 0.4)}Z"/>`
-      + `<g class="isl-vwin" style="--i:1">${halo(bx, by - bh * 0.5, Y(0.05))}<path class="f-pulse" d="M${F(bx - bw * 0.3)} ${F(by - bh * 0.3)}h${F(bw * 0.22)}v${F(-bh * 0.38)}h${F(-bw * 0.22)}ZM${F(bx + bw * 0.08)} ${F(by - bh * 0.3)}h${F(bw * 0.22)}v${F(-bh * 0.38)}h${F(-bw * 0.22)}Z"/></g>`;
+    // The compound on the bluff (owner, 2026-09-28, from satellite imagery and his photographs): several
+    // buildings under gray hipped roofs along the top of the knob, dark with lit windows at Dawn, Dusk and
+    // Night; by Day, with the trees around them, their pools and terrace and the driveway down the slope.
+    const bluff = bld();
+    for (const [fx, fy, fw, win] of [[0.237, 0.306, 0.009, 1], [0.25, 0.303, 0.013, 2], [0.266, 0.302, 0.016, 3],
+      [0.282, 0.302, 0.012, 2], [0.294, 0.304, 0.009, 1], [0.259, 0.31, 0.009, 1]]) house(bluff, X(fx), Yp(fy), X(fw), { win });
+    s += `<g class="isl-ydet">${trees(P([[0.228, 0.301], [0.3, 0.297], [0.312, 0.312], [0.236, 0.318]]), 16, Y(0.006), Y(0.01), 43)}</g>`;
+    s += drawB(bluff, 1);
+    s += `<g class="isl-ydet"><path class="isl-vpool" d="M${F(X(0.262))} ${F(Yp(0.315))}h${F(X(0.009))}v${F(-Y(0.006))}h${F(-X(0.009))}ZM${F(X(0.285))} ${F(Yp(0.312))}h${F(X(0.006))}v${F(-Y(0.005))}h${F(-X(0.006))}Z"/>`
+      + `<path class="isl-vterrace" d="M${F(X(0.273))} ${F(Yp(0.315))}h${F(X(0.008))}v${F(-Y(0.005))}h${F(-X(0.008))}Z"/>`
+      + `<path class="isl-vroad" d="${line(P([[0.298, 0.307], [0.308, 0.311], [0.316, 0.318], [0.33, 0.326]]))}" stroke-width="${F(Math.max(1, Y(0.005)))}"/></g>`;
     const shore = head.slice(18);
     s += `<path class="isl-vshore" d="${line(shore)}" stroke-width="1"/>`;
     s += `<path class="isl-vsurf" d="${line(P([[0.186, 0.366], [0.19, 0.38], [0.2, 0.388], [0.215, 0.39], [0.235, 0.396]]))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`;
-    // 4. Nelson's Dockyard, where the bay turns right: a quay of masts and the brightest lights.
+    // 4. Nelson's Dockyard (owner, 2026-09-28: "there is a dock jutting out into the bay, there is also a land
+    //    bridge which is occupied by buildings"): the land between the bay and the inner harbour, built over with
+    //    the dockyard's stone buildings, and a dock running out into the bay with yachts moored along it, the
+    //    same in every version. Its windows, the dock's lamps and the moored yachts' lights come on first.
+    const bridge = P([[0.688, 0.398], [0.708, 0.39], [0.728, 0.397], [0.745, 0.41], [0.752, 0.43], [0.738, 0.444], [0.718, 0.45], [0.698, 0.446], [0.684, 0.432]]);
+    s += `<path class="f-near isl-land" d="${poly(bridge)}"/>`;
+    const yard = bld();
+    for (const [fx, fy, fw, tall] of [[0.698, 0.428, 0.013, 1], [0.713, 0.424, 0.014, 0], [0.73, 0.43, 0.012, 1], [0.702, 0.443, 0.016, 0],
+      [0.72, 0.447, 0.017, 1], [0.738, 0.441, 0.012, 0]]) house(yard, X(fx), Yp(fy), X(fw), { stone: true, tall: !!tall, win: 3 });
+    s += drawB(yard, 0);
+    const d0 = [X(0.7), Yp(0.452)], d1 = [X(0.628), Yp(0.47)], dt = Y(0.008);
+    s += `<path class="isl-bdock" d="M${F(d0[0])} ${F(d0[1])}L${F(d1[0])} ${F(d1[1])}l0 ${F(dt)}L${F(d0[0])} ${F(d0[1] + dt)}Z"/>`;
+    for (let k = 0; k < 5; k++) {
+      const u = (k + 0.5) / 5;
+      lights.push([d0[0] + (d1[0] - d0[0]) * u, d0[1] + (d1[1] - d0[1]) * u - Y(0.006), 0]);
+    }
+    let moored = '';
     for (let i = 0; i < 11; i++) {
-      const x = X(0.625 + i * 0.008 + r() * 0.004), foot = Yp(0.445 + r() * 0.01), top = foot - Y(0.05 + r() * 0.035);
-      masts += `M${F(x)} ${F(foot)}V${F(top)}`;
+      const jx = r(), jf = r(), jt = r();        // the old quay's three draws per mast, so nothing else moves
+      if (i > 6) continue;
+      const u = (i + 0.4 + jx * 0.2) / 7, x = d0[0] + (d1[0] - d0[0]) * u, dy = d0[1] + (d1[1] - d0[1]) * u;
+      const foot = dy + dt + Y(0.012 + jf * 0.004), top = foot - Y(0.07 + jt * 0.04), hw = X(0.011);
+      moored += `M${F(x - hw)} ${F(foot - Y(0.008))}H${F(x + hw)}L${F(x + hw * 0.75)} ${F(foot)}H${F(x - hw * 0.8)}Z`;
+      masts += `M${F(x)} ${F(foot - Y(0.008))}V${F(top)}`;
       lights.push([x, top, 0]);
     }
-    for (let i = 0; i < 18; i++) lights.push([X(0.62 + r() * 0.1), Yp(0.425 + r() * 0.03), 0]);
+    s += `<path class="isl-vhull" d="${moored}"/>`;
+    for (let i = 0; i < 18; i++) { r(); r(); }   // the dockyard's old random lights; its windows give them now
     // 5. Yachts at anchor across the bay: white hulls, masts, masthead lights and their reflections.
     let hulls = '', refl = '';
     const boats = [[0.385, 0.62], [0.42, 0.6], [0.455, 0.605], [0.49, 0.61], [0.5, 0.57], [0.535, 0.56], [0.555, 0.64],
@@ -434,31 +483,23 @@
     s += `<g class="isl-vlamps">${refl}</g>`;
     // 6. The lookout: the slope on the left, the rocks and scrub in front, organ-pipe cactus, a lantern.
     s += `<path class="f-near isl-land" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
-    // Galleon Beach's palms along the back of the sand (every version: silhouettes by night, green by Day),
-    // and by Day the larger buildings on the slope above it
+    // Galleon Beach's palms along the back of the sand (every version: silhouettes by night, green by Day)
     let palms = '';
     [[0.752, 0.56, 0.07], [0.765, 0.575, 0.06], [0.776, 0.598, 0.075], [0.781, 0.625, 0.065], [0.779, 0.648, 0.07]].forEach(([fx, fy, fh], k) => {
       palms += palm(X(fx + 0.008), Yp(fy), Y(fh), 0.08 - k * 0.03, 301 + k);
     });
     s += `<path class="isl-palm" d="${palms}"/>`;
-    let big = '', bigRoofs = '';
-    for (const [fx, fy, fw] of [[0.8, 0.54, 0.03], [0.832, 0.505, 0.024], [0.87, 0.52, 0.02]]) {
-      const x = X(fx), y = Yp(fy), w = X(fw), h = Y(0.028);
-      big += `M${F(x)} ${F(y)}h${F(w)}v${F(-h)}h${F(-w)}Z`;
-      bigRoofs += `M${F(x - 1)} ${F(y - h + 0.4)}L${F(x + w * 0.2)} ${F(y - h - Y(0.012))}H${F(x + w * 0.8)}L${F(x + w + 1)} ${F(y - h + 0.4)}Z`;
-    }
-    s += `<g class="isl-ydet"><path class="isl-vhouse" d="${big}"/><path class="isl-vroofg" d="${bigRoofs}"/></g>`;
     // by Day, the lookout's own trees in front, the largest and brightest (the owner's photograph)
     s += `<g class="isl-ydet">${trees(slope, 120, Y(0.014), Y(0.045), 41)}</g>`;
     const lx = X(0.43), ly = Yp(0.772);
     s += `<path class="f-near" d="M${F(lx - 1)} ${F(ly + Y(0.02))}V${F(ly - Y(0.05))}H${F(lx + 1)}V${F(ly + Y(0.02))}Z"/>`;
     s += `<circle cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Y(0.055))}" fill="url(#islvlamp)"/>`;
     s += `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Math.max(1.5, Y(0.008)))}"/>`;
-    // By Day the lights on the slopes and along Falmouth's shore are houses: white walls, red and grey
-    // roofs, where the night shows their windows (the Day version shows these; the others do not).
+    // By Day the far lights that are houses (the villages on the range, Falmouth's shore) show as small
+    // houses; a masthead's light is never a house. The near buildings are drawn in every version above.
     let walls = '', roofsR = '', roofsG = '';
-    for (const [x, y, g] of lights) {
-      if (g < 2 || r() < 0.4) continue;
+    for (const [x, y, g, kind] of lights) {
+      if (kind !== 'h' || r() < 0.4) continue;
       const w = Y(0.008 + (g === 3 ? 0.004 : 0)), h = w * 0.62;
       walls += `M${F(x - w / 2)} ${F(y)}h${F(w)}v${F(-h)}h${F(-w)}Z`;
       const roof = `M${F(x - w * 0.62)} ${F(y - h + 0.3)}L${F(x)} ${F(y - h - w * 0.36)}L${F(x + w * 0.62)} ${F(y - h + 0.3)}Z`;
