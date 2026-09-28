@@ -21,9 +21,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">3</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802840?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Artificial Professionalism: An Evaluation of Six Large Language Models on the UK Multi-Specialty Recruitment Assessment Professional Dilemmas Paper</a>
+    <p class="news-card-summary">Six general-purpose large language models achieved roughly two-thirds of marks on a UK medical recruitment professional dilemmas assessment, performing less reliably on ranking tasks than on multiple-choice items.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802837?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Human-Governed Validation of Artificial Intelligence-Generated Medical Assessment Artifacts: A Technical Report</a>
+    <p class="news-card-summary">Generative AI can produce fluent medical assessment materials, but linguistic plausibility does not establish measurement validity, creating risks for clinical accuracy and assessment integrity.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802729?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Artificial Intelligence in Lifestyle Medicine: Advancing Clinical Practice, Education, and Whole-Person Care With Responsible Innovation</a>
+    <p class="news-card-summary">Artificial intelligence offers opportunities to enhance lifestyle medicine education, clinical care, and whole-person care through responsible innovation.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 27, 2026</span></div>
@@ -106,27 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42788236?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">&quot;Acne in the Age of ChatGPT&quot;: an artificial intelligence-generated and evidence-based continuing medical education distance course for Italian physicians</a>
     <p class="news-card-summary">Pilot continuing education course on acne was developed with ChatGPT assistance, translated to Italian, and evaluated for physician satisfaction with AI-generated content.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42787962?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">Artificial Intelligence and Psychiatric Training: Opportunities, Challenges, and the Future of Mental Health Education</a>
-    <p class="news-card-summary">Review examines how machine learning, natural language processing, and large language models are reshaping psychiatric clinical training and education delivery.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42789986?fc=20260609215449&amp;ff=20260926010308&amp;v=2.20.1">Why Manual Scheduling of Resident Rosters Fails: &quot;Schedule Gridlock&quot; and the Case for Combinatorial Optimization</a>
-    <p class="news-card-summary">Combinatorial optimization with expressive constraint languages solves resident scheduling by addressing local rigidity constraints that manual systems cannot overcome.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42791528?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">Ears for examinations: a multicentre quasi-experimental evaluation of AI-generated revision podcasts on learning outcomes and retention among medical students</a>
-    <p class="news-card-summary">Multicentre trial finds AI-generated revision podcasts improve immediate exam performance but distributed practice outperforms massed study for long-term retention.</p>
   </div>
 </div>
 </div>

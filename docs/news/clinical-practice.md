@@ -21,9 +21,24 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">September 28, 2026</span></div>
+    <a class="news-card-title" href="https://medicalfuturist.com/navigating-20-ai-use-cases-in-healthcare-from-hype-to-evidence">Navigating 20 AI Use Cases in Healthcare: From Hype to Evidence!</a>
+    <p class="news-card-summary">Analysis mapping 20 artificial intelligence use cases in healthcare from early-stage concepts to evidence-backed deployments ready for clinical practice.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2025/04/tmf_article_439.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 28, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03282-1">Automating clinical information retrieval from Finnish electronic health records using large language models</a>
+    <p class="news-card-summary">Large language models can automate retrieval of clinical information from Finnish electronic health records.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
@@ -114,21 +129,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 25, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03279-w">Artificial intelligence-mediated clinical communication between providers and patients or caregivers: scoping review and conceptual framework</a>
     <p class="news-card-summary">Scoping review and conceptual framework examine AI-mediated clinical communication between providers and patients or caregivers.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/09/24/radiology-ai-blurred-line-between-tech-development-clinical-practice">STAT+: In radiology, AI is blurring the line between technology development and clinical practice</a>
-    <p class="news-card-summary">Radiology practices increasingly develop and deploy AI in-house, marketing themselves as AI-native amid shifting boundaries between technology development and clinical practice.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_1146014200-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 24, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03294-x">A multicenter assessment of human oversight of generative AI outputs in simulated clinical decision making</a>
-    <p class="news-card-summary">Multicenter study assessed how clinicians oversee and validate generative AI outputs in simulated clinical decision-making scenarios.</p>
   </div>
 </div>
 </div>
