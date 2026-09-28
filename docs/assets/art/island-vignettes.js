@@ -1633,11 +1633,13 @@
      and Sun, the clouds kept right of the words' column and clear of every line, the network, the bird,
      the Moon and Venus, so white text keeps its contrast against the sky. */
   A.heroSky = function (v, W, H, x0, clear, withDefs) {
+    // the phone and tablet hero (no campus scene) sets its words on the horizon itself and never fetches this
+    // file: it keeps each version's light without clouds or a Sun, however it came to be drawn
+    if (withDefs) return extraDefs();
     const y0 = v.y0, pad = 16;
     const ok = (a, b, c, d) => a > x0 && !clear.some(([p, q, r2, s2]) => a < r2 + pad && c > p - pad && b < s2 + pad && d > q - pad);
-    return (withDefs ? extraDefs() : '')
-      + `<g class="isl-a">${bands(W, y0, 89, ok)}</g><g class="isl-y">${clouds(W, y0, 211, ok)}</g>`
-      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, { sunset: withDefs ? '18:19' : '18:11' })}</g>`;
+    return `<g class="isl-a">${bands(W, y0, 89, ok)}</g><g class="isl-y">${clouds(W, y0, 211, ok)}</g>`
+      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, { sunset: '18:11' })}</g>`;
   };
 
   /* Each piece: its drawing; its world ('coast', the Curtain Bluff view with the far islands and
@@ -1788,7 +1790,7 @@
       return `<path class="${cls}" d="${d}" fill-opacity="${alpha}"/>`;
     };
     return `<pattern id="${id}" patternUnits="userSpaceOnUse" width="${size}" height="${size}">`
-      + `<rect class="isl-veg-b" width="${size}" height="${size}"/>`
+      + `<rect class="isl-veg-b isl-veg-b${id.slice(-1)}" width="${size}" height="${size}"/>`
       + blobs('isl-veg-d', n, r0, r1) + blobs('isl-veg-l', Math.round(n * 0.75), r0, r1) + blobs('isl-veg-t', Math.round(n * 0.06), r0 * 1.2, r1 * 1.5)
       + '</pattern>';
   }
@@ -1863,7 +1865,7 @@
         const ry = h * (0.45 + Math.sin(u * Math.PI) * 0.6) * (0.7 + r() * 0.5);
         c += `M${F(cx - rx)} ${F(y)}a${F(rx)} ${F(ry)} 0 1 0 ${F(2 * rx)} 0a${F(rx)} ${F(ry)} 0 1 0 ${F(-2 * rx)} 0Z`;
       }
-      if (ok && !ok(x - w / 2 - w / k, y - h * 2, x + w / 2 + w / k, y + h * 1.2)) continue;
+      if (ok && !ok(x - w / 2 - 1.8 * w / k, y - h * 2, x + w / 2 + 1.8 * w / k, y + h * 1.4)) continue;
       d += `<path d="${c}" fill="url(#islvcloud)" opacity="${F(0.5 + t * 0.4)}"/>`;
     }
     return d;
@@ -2034,6 +2036,9 @@
     const card = document.createElement('div');
     card.className = 'isl isl-vig';
     card.dataset.sky = pickSky();
+    // its own scrub patterns for the Day land (ids renamed by own(svg, 'v'); a crossfade copy renames them again)
+    card.style.setProperty('--isl-vegf', 'url(#islvvegf)');
+    card.style.setProperty('--isl-vegn', 'url(#islvvegn)');
     A.watchSky(card);
     fig.appendChild(card);
     fig._isl = card;

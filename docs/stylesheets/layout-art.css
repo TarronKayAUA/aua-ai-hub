@@ -124,13 +124,13 @@
      red roofs, a pale drive; the harbour town's cream houses share the wall color */
   --isl-vwallc: #efe5cf; --isl-vshade: #d3c4a6; --isl-vband: #b86a50; --isl-vroof2: #8f3a31; --isl-vdrive: #cdbf9e;
 }
-.isl[data-sky="day"] :is(.s-vlight, .s-vglow, .isl-vglow, .isl-vlamp, .isl-vlamps) { display: none; }
+.isl[data-sky="day"] :is(.s-vlight, .s-vglow, .isl-vglow, .isl-vlamps, .isl-vnav-r, .isl-vnav-g, .isl-vnav-w) { display: none; }
 /* Day details a piece draws only for daylight (houses where the night shows lights), and its vegetated
    land (`isl-land`) mottled with scrub, finer and fainter on the far hills. */
 .isl .isl-ydet { display: none; }
 .isl[data-sky="day"] .isl-ydet { display: inline; }
-.isl[data-sky="day"] .isl-land.f-far { fill: url(#islvvegf) var(--isl-far); }
-.isl[data-sky="day"] .isl-land.f-near { fill: url(#islvvegn) var(--isl-near); }
+.isl[data-sky="day"] .isl-land.f-far { fill: var(--isl-vegf, url(#islvvegf)) var(--isl-far); }
+.isl[data-sky="day"] .isl-land.f-near { fill: var(--isl-vegn, url(#islvvegn)) var(--isl-near); }
 /* The homepage hero's skies (DRAFT, 2026-09-28): each version's sky deepened where the words sit, so
    white text keeps at least 4.5:1 behind every line (measured on the rendered drawing, without the
    text shadow); the network and its signal kept light on a daylight sky. */
@@ -159,8 +159,8 @@
 .isl.isl-hero[data-sky="sunset"] {
   --isl-sky0: #1a426c; --isl-sky1: #2d5b8a;
 }
-#islvvegf .isl-veg-b { fill: var(--isl-far); }
-#islvvegn .isl-veg-b { fill: var(--isl-near); }
+.isl .isl-veg-bf { fill: var(--isl-far); }
+.isl .isl-veg-bn { fill: var(--isl-near); }
 .isl .isl-veg-d { fill: var(--isl-veg-d, #2c4a2c); }
 .isl .isl-veg-l { fill: var(--isl-veg-l, #7a9a52); }
 .isl .isl-veg-t { fill: var(--isl-veg-t, #8f7f5a); }
@@ -434,6 +434,8 @@
 .isl .isl-vlamp { fill: var(--k-line, var(--isl-pulse)); }
 [data-md-color-scheme="slate"] .isl .st-k { stop-color: var(--k, var(--isl-rim)); }
 [data-md-color-scheme="slate"] .isl .isl-vlamp { fill: var(--k, var(--isl-pulse)); }
+/* By Day a lantern is unlit glass, as every window is (its halo and pool are already hidden). */
+.isl[data-sky="day"] .isl-vlamp { fill: var(--isl-vdark); }
 /* The campus's materials (from the owner's photographs of AUA): cream walls, a terracotta ground
    floor, red roofs and white verandas, as dusk shows them (light scheme) and as night does (dark). */
 .isl {
@@ -516,6 +518,7 @@
 .isl-vig[data-sky="night"] .isl-vgrain { opacity: 0.6; }
 .isl-vig .isl-vgrain--sea { opacity: 0.1; }
 .isl-vig[data-sky="night"] .isl-vgrain--sea { opacity: 0.2; }
+.isl-vig[data-sky="day"] .isl-vgrain--sea { display: none; }
 .isl .isl-vstep-edge { stroke: var(--isl-vstone); fill: none; stroke-linecap: round; }
 .isl .isl-vstep-rise { stroke: var(--isl-vriser); fill: none; }
 .isl .isl-vcourse { stroke: var(--isl-vriser); stroke-opacity: 0.45; fill: none; }

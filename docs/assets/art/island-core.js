@@ -652,6 +652,7 @@
     if (reduce.matches || document.hidden || !el.offsetWidth) { el.dataset.sky = s; return; }
     const ghost = el.cloneNode(false);
     ghost.innerHTML = el.innerHTML.replace(/(id="|url\(#)isl/g, '$1islx');
+    ghost.setAttribute('style', (el.getAttribute('style') || '').replace(/url\(#isl/g, 'url(#islx'));
     ghost.classList.remove('isl-run', 'isl-vrun');
     ghost.classList.add('isl-ghost');
     Object.assign(ghost.style, { position: 'absolute', left: `${el.offsetLeft}px`, top: `${el.offsetTop}px`,
@@ -684,6 +685,9 @@
     root.className = 'isl isl-hero';
     root.setAttribute('aria-hidden', 'true');
     root.dataset.sky = A.pickSky();
+    // its own scrub patterns for the Day land (ids renamed by own(svg, 'h'))
+    root.style.setProperty('--isl-vegf', 'url(#islhvegf)');
+    root.style.setProperty('--isl-vegn', 'url(#islhvegn)');
     A.watchSky(root);
     host.classList.add('isl-host');
     host.insertBefore(root, host.firstChild);

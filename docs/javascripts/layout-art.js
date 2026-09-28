@@ -80,7 +80,7 @@
   // The fainter stars: night only (a picture whose clock says Night, or the dark scheme's gutters), after
   // the page (and the hero's one pass) has settled.
   function deepWanted() {
-    var night = document.body.getAttribute('data-md-color-scheme') === 'slate' || !!document.querySelector('.isl[data-sky="night"]');
+    var night = document.body.getAttribute('data-md-color-scheme') === 'slate' || !!document.querySelector('.isl[data-sky="night"]:not(.isl-ghost)');
     return night && state['island-core.js'] === 'ready' &&
       window.matchMedia('(min-width: 60em)').matches;   // phones: the small hero would not show them
   }
