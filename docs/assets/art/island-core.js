@@ -628,16 +628,16 @@
 
   /* ================================================================ mounting */
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
-  /* The version of the light scheme, by the visitor's own clock (owner, 2026-09-28): Dawn 5:00 to
-     8:59, Day 9:00 to 16:59, Sunset 17:00 to 18:59, Dusk otherwise; the dark scheme is always Night.
-     `?isl-sky=` picks one for review. */
+  /* The version, by the visitor's own clock, in both schemes (owner, 2026-09-28): Dawn 5:00 to 8:59,
+     Day 9:00 to 16:59, Sunset 17:00 to 18:59, Dusk 19:00 to 20:59, Night 21:00 to 4:59. The scheme
+     toggle changes only the page. `?isl-sky=` picks one for review. */
   A.pickSky = function () {
     try {
       const q = new URLSearchParams(location.search).get('isl-sky');
-      if (q === 'dawn' || q === 'day' || q === 'dusk' || q === 'sunset') return q;
+      if (['dawn', 'day', 'sunset', 'dusk', 'night'].includes(q)) return q;
     } catch (e) { /* no query: the clock decides */ }
     const h = new Date().getHours();
-    return h >= 5 && h < 9 ? 'dawn' : h >= 9 && h < 17 ? 'day' : h >= 17 && h < 19 ? 'sunset' : 'dusk';
+    return h >= 5 && h < 9 ? 'dawn' : h >= 9 && h < 17 ? 'day' : h >= 17 && h < 19 ? 'sunset' : h >= 19 && h < 21 ? 'dusk' : 'night';
   };
   A.hero = function (host) {
     if (host._isl) return;
