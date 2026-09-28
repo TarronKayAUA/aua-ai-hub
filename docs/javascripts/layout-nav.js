@@ -4,7 +4,7 @@
  *
  *   [icon Browse Tools & Prompts ^]  [On this page ^]  [Filters 2]   [Copy prompt]
  *
- * 1. "Browse <section>" ("Browse section" on phones) opens the section as
+ * 1. "Browse <section>" ("Browse" on phones, beside "This page") opens the section as
  *    a map: groups of cards, the current page filled and marked in words,
  *    every sibling one click away, and a key naming the colors drawn. On a
  *    narrow screen its title bar also has the section's overview and a
@@ -96,7 +96,8 @@
   var hereGroup = foot.getAttribute("data-group") || "";
   // A landing page's foot can name the control differently: the homepage
   // browses "the site", whose groups are sections.
-  var shortName = foot.getAttribute("data-short") || "Browse section";
+  // Phones show the short label; "Browse" and "This page" fit side by side (owner, 2026-09-28).
+  var shortName = foot.getAttribute("data-short") || "Browse";
   var panelTitle = foot.getAttribute("data-title") || section;
   var unit = foot.getAttribute("data-unit") || "group";
   // The folded compass can carry a word (mkdocs.yml extra: nav_control_label).
@@ -227,7 +228,8 @@
       tocBtn.setAttribute("aria-label", "On this page: " + (tocCount || chips.length) + " " + tocNoun);
       tocBtn.title = "Jump to a section of this page";
       tocBtn.innerHTML = '<span class="secnav__icon secnav__icon--toc">' + icon("list") + "</span>" +
-        '<span class="secnav__label"><span class="secnav__always">On this page</span>' +
+        '<span class="secnav__label"><span class="secnav__always"><span class="secnav__long">On this page</span>' +
+        '<span class="secnav__short">This page</span></span>' +
         '<span class="secnav__now" aria-hidden="true"></span></span>' + icon("chevron", "secnav__chev");
       bar.appendChild(tocBtn);
 

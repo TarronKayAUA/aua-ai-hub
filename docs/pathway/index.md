@@ -8,11 +8,6 @@ action:
     link: pathway/how-ai-works.md
 ---
 
-<!-- The Learn plate: decorative art beside the title on wide screens
-(aria-hidden, takes no space). docs/javascripts/layout-learn.js draws it
-from docs/assets/art/; its styles are at the end of layout-learn.css. -->
-<div class="learn-plate" data-learn-plate aria-hidden="true"></div>
-
 # AI Literacy Pathway
 
 <span class="meta-chip">Seven modules</span><span class="meta-chip">Self-paced</span><span class="meta-chip" data-learn-minutes="sum:1-3">Modules 1 to 3 take about 30 minutes</span>

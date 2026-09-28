@@ -463,7 +463,8 @@
      schemes: ripples dense at the horizon and long near the viewer; a broken column of light on the
      water under every light, its dashes widening and scattering with distance; a faint mirrored
      reflection of the land; soft halos around lamps and pools of light on the ground; mist lying at the
-     foot of the land; and a print grain over the whole card (A.vignette adds it). Colours come from
+     foot of the land; and a print grain on the sky, fainter on the water and never on the land
+     (build() lays it under the land, so every hill, building and ship covers it). Colours come from
      classes, so dusk and night each get their own. */
   const gauss = (r) => (r() + r() + r() - 1.5) / 1.5;
   function hatchList(W, y0, H, r) {
@@ -712,6 +713,398 @@
     return s;
   }
 
+  /* Shared by the pieces below: a scrub edge along a line of points, and polygon paths. */
+  function scrubLine(pts, n, s0, s1, r) {
+    let d = '';
+    for (let i = 0; i < pts.length - 1; i++) {
+      const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
+      for (let j = 0; j < n; j++) {
+        const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
+        d += `M${F(x - rr)} ${F(y + rr * 0.45)}a${F(rr)} ${F(rr * 0.82)} 0 0 1 ${F(2 * rr)} 0Z`;
+      }
+    }
+    return d;
+  }
+  // Shrubs ([x, y, size], y at the foot): a rounded crown of overlapping circles, domed, over a
+  // broad base, its upper edge catching the light (a lighter crown under the dark one, which sits a
+  // little lower and to the right). Flat-bottomed humps scattered on a slope read as pebbles; these
+  // read as scrub once they are big enough to see.
+  function shrubs(list, r) {
+    let lit = '', dark = '';
+    const circ = (x, y, rr) => `M${F(x - rr)} ${F(y)}a${F(rr)} ${F(rr)} 0 1 0 ${F(2 * rr)} 0a${F(rr)} ${F(rr)} 0 1 0 ${F(-2 * rr)} 0Z`;
+    for (const [cx, cy, sz] of list) {
+      const n = 4 + Math.floor(r() * 3);
+      for (let i = 0; i < n; i++) {
+        const t = (i / (n - 1)) * 2 - 1, rr = sz * (0.3 + r() * 0.2);
+        const x = cx + t * sz * 0.72, y = cy - sz * (0.32 + (1 - t * t) * 0.42) + (r() - 0.5) * sz * 0.14;
+        lit += circ(x, y, rr);
+        dark += circ(x + rr * 0.16, y + rr * 0.2, rr);
+      }
+      // the base, wound the same way as the circles (a base wound the other way cancels where they overlap)
+      dark += `M${F(cx + sz * 0.9)} ${F(cy)}a${F(sz * 0.9)} ${F(sz * 0.42)} 0 0 0 ${F(-sz * 1.8)} 0Z`;
+    }
+    return `<path class="isl-vlit" d="${lit}"/><path class="f-near" d="${dark}"/>`;
+  }
+  const polyD = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
+  const lineD = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L');
+  const lightsD = (pts) => pts.map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('');
+
+  /* THE TELESCOPE (the Learn landing's head; the owner chose it, 2026-09-28): learning as looking
+     further. A brass telescope on its tripod at a hilltop lookout, trained on the night sky beside the
+     Moon; a low stone wall along the lookout's edge hides its feet, with a lantern in the lesson hue at
+     its end; a small stone guardhouse at the edge of the picture, its door and window lit; the hill
+     falls to the harbour in scrub, a footpath climbing it; below, boats at anchor and the far hills'
+     lights, each laying a column of light on the water; the Milky Way above at night. The picture fits
+     the height of the head's text, so everything is sized from the card's height and placed along
+     its width. The harbour's lights come on, then the guardhouse, then the lantern, last. */
+  function telescope(W, H, v) {
+    const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(311);
+    const lights = [];
+    let s = '';
+    // 1. The water: ripples, the far hills rimmed by the afterglow, their lights, mist at their foot.
+    s += dashes(hatchList(W * 0.62, y0, H, r), 's-vrip', 1, [0.1, 0.18, 0.28]);
+    const far = [[-0.02, 0.02], [0.06, 0.05], [0.13, 0.09], [0.2, 0.07], [0.27, 0.12], [0.34, 0.08], [0.42, 0.1], [0.5, 0.06], [0.58, 0.04], [0.66, 0]]
+      .map(([x, h]) => [X(x), y0 - Y(h)]);
+    const farLand = `<path class="f-isl" d="${polyD([[X(-0.02), y0 + 1], ...far, [X(0.66), y0 + 1]])}${scrubLine(far, 3, 0.6, 1.4, r)}"/>`;
+    s += farLand + `<path class="s-rim" d="${lineD(far.slice(0, 7).map(([x, y]) => [x, y + 0.5]))}" stroke-width="1" stroke-opacity=".3"/>`;
+    s += mirrored(y0, farLand, 0.18) + mist(X(-0.05), y0, X(0.66), Y(0.06), 0.5);
+    for (let i = 0; i < 18; i++) lights.push([X(0.02 + r() * 0.56), y0 - Y(0.004 + r() * 0.04)]);
+    for (const [x] of lights) if (r() < 0.6) s += dashes(streakList(x, y0, H, r, 0.04, 0.05), 's-vglow', 1, [0.06, 0.12, 0.22]);
+    // 2. Boats at anchor below: hulls, masts, masthead lights, their columns and their reflections.
+    let boats = '', masts = '';
+    const moor = [[0.08, 0.16, 1], [0.17, 0.28, 0.8], [0.27, 0.12, 1.3], [0.36, 0.22, 0.9], [0.44, 0.31, 1.1]];
+    for (const [fx, fy, k] of moor) {
+      const bx = X(fx), by = y0 + Y(fy), hw = Y(0.03) * k, mh = Y(0.09 + r() * 0.05) * k;
+      boats += `M${F(bx - hw)} ${F(by - Y(0.012))}H${F(bx + hw)}L${F(bx + hw * 0.75)} ${F(by)}H${F(bx - hw * 0.8)}Z`;
+      masts += `M${F(bx)} ${F(by - Y(0.012))}V${F(by - mh)}`;
+      lights.push([bx, by - mh]);
+      s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.08, 0.16, 0.3]);
+      s += `<g opacity=".15"><g transform="translate(0 ${F(2 * by)}) scale(1 -1)"><path class="isl-vhull" d="M${F(bx - hw)} ${F(by - Y(0.012))}H${F(bx + hw)}L${F(bx + hw * 0.75)} ${F(by)}H${F(bx - hw * 0.8)}Z"/><path class="isl-vmast" d="M${F(bx)} ${F(by)}V${F(by - mh)}" stroke-width=".8"/></g></g>`;
+    }
+    s += `<path class="isl-vhull" d="${boats}"/><path class="isl-vmast" d="${masts}" stroke-width=".8"/>`;
+    // 3. The hill, rising from the water to the level top where the lookout stands: mist at its foot,
+    //    its crest rimmed, a footpath climbing it, and scrub along the crest, on its face and at the
+    //    foot of the picture, darker than the hill.
+    const crest = [[0.5, 1.03], [0.53, 0.9], [0.57, 0.78], [0.62, 0.68], [0.67, 0.61], [0.72, 0.575], [0.78, 0.56], [0.86, 0.555], [1.02, 0.55]]
+      .map(([x, y]) => [X(x), Y(y)]);
+    s += mist(X(0.38), y0 + Y(0.12), X(0.22), Y(0.1), 0.45);
+    s += `<path class="f-far" d="${polyD([...crest, [X(1.02), H + 2]])}"/>`;
+    s += `<path class="s-rim" d="${lineD(crest.slice(1, 7).map(([x, y]) => [x, y + 0.5]))}" stroke-width="1.2" stroke-opacity=".45"/>`;
+    s += `<path class="isl-vtrack" d="M${F(X(0.62))} ${F(H + 2)}C${F(X(0.66))} ${F(Y(0.85))} ${F(X(0.64))} ${F(Y(0.72))} ${F(X(0.7))} ${F(Y(0.6))}L${F(X(0.725))} ${F(Y(0.585))}C${F(X(0.68))} ${F(Y(0.72))} ${F(X(0.7))} ${F(Y(0.86))} ${F(X(0.665))} ${F(H + 2)}Z"/>`;
+    // scrub on the crest's edge against the water, a few shrubs on the slope, and a bank of them along
+    // the foot of the picture, largest nearest
+    s += shrubs([[0.538, 0.9, 0.04], [0.562, 0.825, 0.035], [0.598, 0.75, 0.04], [0.64, 0.665, 0.03]].map(([x, y, k]) => [X(x), Y(y), Y(k)]), r);
+    s += shrubs([[0.595, 0.9, 0.07], [0.755, 0.78, 0.07], [0.86, 0.71, 0.06], [0.94, 0.86, 0.08]].map(([x, y, k]) => [X(x), Y(y), Y(k)]), r);
+    s += shrubs([[0.55, 1.08, 0.14], [0.75, 1.1, 0.13], [0.86, 1.08, 0.16], [0.99, 1.06, 0.15]].map(([x, y, k]) => [X(x), Y(y), Y(k)]), r);
+    // 4. The guardhouse at the lookout's far end: coursed stone, a hipped roof of old shingle, its
+    //    arched door and a small window lit from within.
+    const gx0 = X(0.905), gx1 = X(1.03), gTop = Y(0.33), gBase = Y(0.56);
+    s += `<g class="isl-vwin" style="--i:2">${halo(X(0.96), Y(0.46), Y(0.34), 'islvwarm')}</g>`;
+    s += `<path d="M${F(gx0)} ${F(gBase)}V${F(gTop)}H${F(gx1)}V${F(gBase)}Z" fill="url(#islvfacade)"/>`;
+    s += `<path class="isl-vwood-f" d="M${F(gx0 - Y(0.02))} ${F(gTop + 1)}L${F(gx0 + (gx1 - gx0) * 0.3)} ${F(gTop - Y(0.09))}H${F(gx1 + Y(0.1))}L${F(gx1 + Y(0.12))} ${F(gTop + 1)}Z"/>`;
+    let gc = '';
+    for (let y = gBase - Y(0.03); y > gTop + Y(0.01); y -= Y(0.03)) gc += `M${F(gx0)} ${F(y)}H${F(gx1)}`;
+    s += `<path class="isl-vcourse" d="${gc}" stroke-width=".7"/>`;
+    const dw = Y(0.05), dx = gx0 + (gx1 - gx0) * 0.55;
+    s += `<path class="f-pulse isl-vwin" style="--i:2" d="M${F(dx - dw / 2)} ${F(gBase)}V${F(gBase - Y(0.1))}a${F(dw / 2)} ${F(dw / 2)} 0 0 1 ${F(dw)} 0V${F(gBase)}ZM${F(gx0 + Y(0.035))} ${F(gTop + Y(0.06))}h${F(Y(0.03))}v${F(Y(0.04))}h${F(-Y(0.03))}Z"/>`;
+    // 5. The telescope on its tripod, trained on the sky (a telescope aimed level at a low Moon reads
+    //    as pointing at the harbour, so it looks up and to the left, toward the Moon's side of the sky).
+    const moonAt = [v.x((SKY.d.moon[0] + SKY.n.moon[0]) / 2), v.y((SKY.d.moon[1] + SKY.n.moon[1]) / 2)];
+    const tx = X(0.8), ty = Y(0.33), footY = Y(0.56), len = Y(0.34), d0 = Y(0.038), d1 = Y(0.024);
+    let ang = Math.atan2(moonAt[1] - ty, moonAt[0] - tx);
+    if (!(ang < -0.2 && ang > -2.9)) ang = -2.5;
+    const ux = Math.cos(ang), uy = Math.sin(ang), nx = -uy, ny = ux;
+    const fx = tx + ux * len * 0.62, fy = ty + uy * len * 0.62, bx2 = tx - ux * len * 0.38, by2 = ty - uy * len * 0.38;
+    s += `<path class="isl-vtripod" d="M${F(tx)} ${F(ty + Y(0.02))}L${F(tx - Y(0.12))} ${F(footY)}M${F(tx)} ${F(ty + Y(0.02))}L${F(tx + Y(0.11))} ${F(footY)}M${F(tx)} ${F(ty + Y(0.02))}L${F(tx + Y(0.015))} ${F(footY + 1)}M${F(tx - Y(0.06))} ${F(ty + Y(0.12))}L${F(tx + Y(0.06))} ${F(ty + Y(0.12))}" stroke-width="${F(Math.max(1.4, Y(0.008)))}"/>`;
+    const q = (x, y, w) => [[x + nx * w, y + ny * w], [x - nx * w, y - ny * w]];
+    const [a1, a2] = q(fx, fy, d0), [b1, b2] = q(bx2, by2, d1);
+    s += `<path d="${polyD([a1, b1, b2, a2])}" fill="url(#islvbrass)"/>`;
+    const sh = [fx - ux * len * 0.12, fy - uy * len * 0.12], [c1, c2] = q(sh[0], sh[1], d0 * 1.15), [e1, e2] = q(fx + ux * Y(0.01), fy + uy * Y(0.01), d0 * 1.15);
+    s += `<path class="isl-vbrass2" d="${polyD([c1, e1, e2, c2])}"/>`;
+    // the finder scope, riding on two brackets along the tube
+    const fd = [tx + nx * d0 * 1.6 + ux * len * 0.08, ty + ny * d0 * 1.6 + uy * len * 0.08];
+    let brk = '';
+    for (const k of [0.13, 0.28]) brk += `M${F(tx + ux * len * k + nx * d0 * 0.8)} ${F(ty + uy * len * k + ny * d0 * 0.8)}l${F(nx * d0 * 0.8)} ${F(ny * d0 * 0.8)}`;
+    s += `<path class="isl-vbrass2" d="${brk}" stroke-width="${F(Math.max(1, Y(0.006)))}"/>`;
+    s += `<path class="isl-vbrass2" d="M${F(fd[0])} ${F(fd[1])}l${F(ux * len * 0.25)} ${F(uy * len * 0.25)}" stroke-width="${F(Math.max(1.5, Y(0.012)))}" stroke-linecap="round"/>`;
+    s += `<path class="isl-vbrass2" d="M${F(bx2)} ${F(by2)}l${F(-ux * Y(0.03))} ${F(-uy * Y(0.03))}" stroke-width="${F(Math.max(2, Y(0.02)))}" stroke-linecap="round"/>`;
+    s += `<rect class="isl-vtripod-f" x="${F(tx - Y(0.015))}" y="${F(ty - Y(0.012))}" width="${F(Y(0.03))}" height="${F(Y(0.034))}"/>`;
+    s += `<circle class="isl-vlens" cx="${F(fx + ux * Y(0.012))}" cy="${F(fy + uy * Y(0.012))}" r="${F(Math.max(1.2, d0 * 0.55))}"/>`;
+    // 6. The low wall along the lookout's edge, in front of the tripod's feet: coursed stone under a
+    //    coping that catches the light, its foot following the crest.
+    const wx0 = X(0.685), wx1 = X(0.905), wTop = Y(0.5);
+    const foot = crest.filter(([x]) => x > wx0 && x < wx1).map(([x, y]) => [x, y + Y(0.03)]);
+    const wallPts = [[wx0, wTop], [wx1, wTop], [wx1, Y(0.585)], ...foot.reverse(), [wx0, Y(0.61)]];
+    s += `<path d="${polyD(wallPts)}" fill="url(#islvfacade)"/><path class="isl-vpshade" d="${polyD(wallPts)}"/>`;
+    s += `<path class="isl-vstone" d="M${F(wx0 - Y(0.008))} ${F(wTop + Y(0.018))}V${F(wTop)}H${F(wx1)}V${F(wTop + Y(0.018))}Z"/>`;
+    let wj = `M${F(wx0)} ${F(wTop + Y(0.045))}H${F(wx1)}`;
+    for (let x = wx0 + Y(0.05), k = 0; x < wx1; x += Y(0.05), k++) wj += `M${F(x + (k % 2) * Y(0.025))} ${F(wTop + Y(0.018))}v${F(Y(0.027))}`;
+    s += `<path class="isl-vcourse" d="${wj}" stroke-width=".7"/>`;
+    // 7. The lantern at the wall's end, over the path, in the page's hue: its pool, halo, and last.
+    const lx = wx0 + Y(0.02), ly = wTop;
+    s += `<g class="isl-vwin isl-vlast" style="--i:4">${pool(lx + Y(0.02), Y(0.62), Y(0.2), Y(0.06), 0.7)}${halo(lx, ly - Y(0.1), Y(0.17), 'islvlamp')}`
+      + `<path class="isl-vlamp" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.07))}V${F(ly - Y(0.13))}H${F(lx + Y(0.014))}V${F(ly - Y(0.07))}Z"/></g>`;
+    s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ly)}V${F(ly - Y(0.07))}H${F(lx + 1)}V${F(ly)}ZM${F(lx - Y(0.022))} ${F(ly - Y(0.13))}L${F(lx)} ${F(ly - Y(0.155))}L${F(lx + Y(0.022))} ${F(ly - Y(0.13))}Z"/>`;
+    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
+    return s;
+  }
+
+  /* BETTY'S HOPE (the Tools & Prompts landing's head; the owner chose it, 2026-09-28): the restored
+     sugar mill at Betty's Hope, a tool that turns wind into work, from the references studied (the art's
+     source folder README lists them): a tapered tower of coursed stone with an arched door, a boxy
+     wooden cap, four lattice sails and the long tail pole that turns the cap into the wind; its
+     roofless twin beside it; the estate's stone house with lit windows; cane drying racks; the fields
+     and far hills. In the one pass the sails turn a quarter as the lights come on, then rest; the lamp
+     by the mill door is last. Sized from the card's height: the head's text is short. */
+  function bettysHope(W, H, v) {
+    const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(223);
+    const lights = [[], []];
+    let s = '';
+    // 1. Far hills along the horizon, their lights, mist.
+    const far = [[-0.02, 0.03], [0.1, 0.07], [0.2, 0.05], [0.3, 0.09], [0.4, 0.06], [0.5, 0.04], [0.62, 0.08], [0.74, 0.05], [0.86, 0.07], [1.02, 0.04]]
+      .map(([x, h]) => [X(x), y0 - Y(h)]);
+    s += `<path class="f-isl" d="${polyD([[X(-0.02), y0 + Y(0.02)], ...far, [X(1.02), y0 + Y(0.02)]])}${scrubLine(far, 3, 0.6, 1.4, r)}"/>`;
+    for (let i = 0; i < 14; i++) lights[0].push([X(r()), y0 - Y(0.005 + r() * 0.04)]);
+    // 2. The fields: a rolling middle ground, rows of cane, darker toward the viewer; mist.
+    const field = [[-0.02, 0.76], [0.1, 0.74], [0.25, 0.75], [0.4, 0.73], [0.55, 0.74], [0.7, 0.72], [0.85, 0.73], [1.02, 0.71]].map(([x, y]) => [X(x), Y(y)]);
+    s += `<path class="f-far" d="${polyD([[X(-0.02), y0], [X(1.02), y0], ...field.slice().reverse()])}"/>`;
+    s += mist(X(-0.05), y0 + Y(0.03), X(1.1), Y(0.06), 0.45);
+    let cane = '';
+    for (let row = 0; row < 5; row++) {
+      const yy = y0 + Y(0.04 + row * 0.035), hh = Y(0.02 + row * 0.006);
+      for (let x = X(-0.01); x < X(1.01); x += Y(0.006 + r() * 0.014 + row * 0.002)) {
+        const h2 = hh * (0.55 + r() * 0.7), lean = (r() - 0.5) * h2 * 0.9;
+        cane += `M${F(x)} ${F(yy + r() * Y(0.01))}q${F(lean * 0.3)} ${F(-h2 * 0.6)} ${F(lean)} ${F(-h2)}`;
+      }
+    }
+    s += `<path class="isl-vcane" d="${cane}" stroke-width=".8" stroke-opacity=".75"/>`;
+    s += `<path class="f-near" d="${polyD([...field, [X(1.02), H + 2], [X(-0.02), H + 2]])}"/>`;
+    // 3. The estate house on the left: stone, a hipped roof, windows lit, a lamp by the door.
+    const hx0 = X(0.12), hw = Y(0.62), hTop = Y(0.6), hBot = Y(0.75), hRoof = Y(0.1);
+    s += `<path class="isl-vstone" d="M${F(hx0)} ${F(hBot)}V${F(hTop)}H${F(hx0 + hw)}V${F(hBot)}Z"/>`;
+    s += `<path class="isl-vwood-f" d="M${F(hx0 - Y(0.02))} ${F(hTop + 1)}L${F(hx0 + hw * 0.15)} ${F(hTop - hRoof)}H${F(hx0 + hw * 0.85)}L${F(hx0 + hw + Y(0.02))} ${F(hTop + 1)}Z"/>`;
+    let wins = '';
+    for (let i = 0; i < 5; i++) {
+      const wx = hx0 + hw * (0.12 + i * 0.19);
+      wins += i === 2 ? `M${F(wx - Y(0.018))} ${F(hBot)}V${F(hTop + Y(0.04))}h${F(Y(0.036))}V${F(hBot)}Z` : `M${F(wx - Y(0.014))} ${F(hTop + Y(0.035))}h${F(Y(0.028))}v${F(Y(0.05))}h${F(-Y(0.028))}Z`;
+    }
+    s += `<path class="f-pulse isl-vwin" style="--i:1" d="${wins}"/>`;
+    s += `<g class="isl-vwin" style="--i:1">${halo(hx0 + hw * 0.5, hTop + Y(0.07), Y(0.25), 'islvwarm')}</g>`;
+    // 3b. The boiling house, roofless: a stone wall with a broken gable and three arched openings, the
+    //     fields seen through them.
+    const bx0 = X(0.3), bx1 = X(0.43), bTop = Y(0.64), bBase = Y(0.748), bwid = bx1 - bx0;
+    let ruin = `M${F(bx0)} ${F(bBase)}V${F(bTop)}L${F(bx0 + bwid * 0.14)} ${F(Y(0.575))}L${F(bx0 + bwid * 0.26)} ${F(Y(0.615))}`;
+    for (let i = 3; i <= 10; i++) ruin += `L${F(bx0 + bwid * i / 10)} ${F(bTop + Y(0.004) + r() * Y(0.03))}`;
+    ruin += `V${F(bBase)}Z`;
+    for (let i = 0; i < 3; i++) {
+      const cx = bx0 + bwid * (0.24 + i * 0.26), ar = bwid * 0.075;
+      ruin += `M${F(cx - ar)} ${F(bBase)}V${F(bBase - Y(0.05))}A${F(ar)} ${F(ar)} 0 0 1 ${F(cx + ar)} ${F(bBase - Y(0.05))}V${F(bBase)}Z`;
+    }
+    s += `<path d="${ruin}" fill="url(#islvfacade)" fill-rule="evenodd"/>`;
+    let rc = '';
+    for (let y = bBase - Y(0.025); y > bTop; y -= Y(0.025)) rc += `M${F(bx0)} ${F(y)}H${F(bx1)}`;
+    s += `<path class="isl-vcourse" d="${rc}" stroke-width=".6"/>`;
+    // 4. The twin mill, roofless, a shorter tower with a broken top and a dark arched opening.
+    const tower = (cx, base, th, wb, wt, broken) => {
+      const top = base - th;
+      let d = `M${F(cx - wb / 2)} ${F(base)}L${F(cx - wt / 2)} ${F(top)}`;
+      if (broken) d += `L${F(cx - wt * 0.2)} ${F(top - Y(0.012))}L${F(cx + wt * 0.05)} ${F(top + Y(0.006))}L${F(cx + wt * 0.3)} ${F(top - Y(0.008))}`;
+      d += `L${F(cx + wt / 2)} ${F(top)}L${F(cx + wb / 2)} ${F(base)}Z`;
+      let c = '';
+      for (let y = base - Y(0.03); y > top + Y(0.01); y -= Y(0.028)) {
+        const k = (base - y) / th, half = (wb + (wt - wb) * k) / 2;
+        c += `M${F(cx - half)} ${F(y)}H${F(cx + half)}`;
+      }
+      return { d, c, top };
+    };
+    const twin = tower(X(0.5), Y(0.745), Y(0.4), Y(0.26), Y(0.18), true);
+    s += `<path class="isl-vstone" d="${twin.d}"/><path class="isl-vcourse" d="${twin.c}" stroke-width=".6"/>`;
+    s += `<path class="isl-vpshade" d="M${F(X(0.5) + Y(0.02))} ${F(Y(0.745))}L${F(X(0.5) + Y(0.02))} ${F(twin.top)}L${F(X(0.5) + Y(0.09))} ${F(twin.top)}L${F(X(0.5) + Y(0.13))} ${F(Y(0.745))}Z"/>`;
+    s += `<path class="isl-vdark" d="M${F(X(0.5) - Y(0.035))} ${F(Y(0.745))}V${F(Y(0.66))}a${F(Y(0.035))} ${F(Y(0.035))} 0 0 1 ${F(Y(0.07))} 0V${F(Y(0.745))}Z"/>`;
+    // 5. The restored mill: tower, cap, tail pole, the lit door; the sails in their own group.
+    const mx = X(0.74), mb = Y(0.75), mh = Y(0.42), mwb = Y(0.28), mwt = Y(0.19);
+    const mill = tower(mx, mb, mh, mwb, mwt, false);
+    const capY = mill.top, capW = mwt * 1.25, capH = Y(0.07);
+    s += `<path class="isl-vwood" d="M${F(mx + capW * 0.3)} ${F(capY - capH * 0.4)}L${F(mx + capW * 0.3 + Y(0.26))} ${F(mb - Y(0.01))}" stroke-width="${F(Math.max(1.4, Y(0.012)))}"/>`;
+    // the cart wheel at the tail pole's foot, by which the cap is turned into the wind
+    s += `<circle class="isl-vwood" cx="${F(mx + capW * 0.3 + Y(0.26))}" cy="${F(mb - Y(0.03))}" r="${F(Y(0.028))}" stroke-width="1"/>`;
+    s += `<path class="isl-vstone" d="${mill.d}"/><path class="isl-vcourse" d="${mill.c}" stroke-width=".6"/>`;
+    s += `<path class="isl-vpshade" d="M${F(mx + Y(0.03))} ${F(mb)}L${F(mx + Y(0.025))} ${F(capY)}L${F(mx + mwt / 2)} ${F(capY)}L${F(mx + mwb / 2)} ${F(mb)}Z"/>`;
+    s += `<path class="isl-vwood-f" d="M${F(mx - capW / 2)} ${F(capY + 1)}V${F(capY - capH)}H${F(mx + capW / 2)}V${F(capY + 1)}Z"/>`;
+    s += `<path class="isl-vwood-f" d="M${F(mx - capW / 2 - Y(0.01))} ${F(capY - capH + 1)}L${F(mx - capW * 0.3)} ${F(capY - capH - Y(0.035))}H${F(mx + capW * 0.3)}L${F(mx + capW / 2 + Y(0.01))} ${F(capY - capH + 1)}Z"/>`;
+    s += `<path class="isl-vwood" d="M${F(mx - capW / 2)} ${F(capY - capH * 0.5)}H${F(mx + capW / 2)}M${F(mx - capW * 0.3)} ${F(capY - capH - Y(0.02))}H${F(mx + capW * 0.3)}" stroke-width=".7"/>`;
+    // the door, lit; its light on the ground; the lamp beside it (last to light)
+    const door = `M${F(mx - Y(0.035))} ${F(mb)}V${F(mb - Y(0.1))}a${F(Y(0.035))} ${F(Y(0.035))} 0 0 1 ${F(Y(0.07))} 0V${F(mb)}Z`;
+    s += `<path class="f-pulse isl-vwin" style="--i:2" d="${door}"/>`;
+    s += `<g class="isl-vwin" style="--i:2">${pool(mx, mb + Y(0.02), Y(0.22), Y(0.05), 0.75)}</g>`;
+    const lx = mx - mwb / 2 - Y(0.06);
+    s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(mb + Y(0.01))}V${F(mb - Y(0.14))}H${F(lx + 1)}V${F(mb + Y(0.01))}Z"/>`;
+    s += `<g class="isl-vwin isl-vlast" style="--i:4">${halo(lx, mb - Y(0.155), Y(0.13), 'islvlamp')}<path class="isl-vlamp" d="M${F(lx - Y(0.011))} ${F(mb - Y(0.14))}V${F(mb - Y(0.175))}H${F(lx + Y(0.011))}V${F(mb - Y(0.14))}Z"/></g>`;
+    // cane drying racks by the mill
+    let racks = '';
+    for (let i = 0; i < 3; i++) {
+      const rx0 = mx + mwb / 2 + Y(0.08) + i * Y(0.1), ry = mb - Y(0.02) + i * Y(0.004);
+      racks += `M${F(rx0)} ${F(ry)}h${F(Y(0.085))}M${F(rx0)} ${F(ry - Y(0.02))}h${F(Y(0.085))}M${F(rx0 + Y(0.01))} ${F(ry + Y(0.005))}v${F(-Y(0.03))}M${F(rx0 + Y(0.075))} ${F(ry + Y(0.005))}v${F(-Y(0.03))}`;
+    }
+    s += `<path class="isl-vwood" d="${racks}" stroke-width="1"/>`;
+    // the sails: four lattice sails on stocks, from the hub at the cap's front; they turn in the pass
+    const hubX = mx - capW * 0.1, hubY = capY - capH * 0.5, sl = Y(0.3), sw2 = Y(0.055);
+    let stocks = '', lattice = '';
+    for (let k = 0; k < 4; k++) {
+      const a = (-58 + k * 90) * Math.PI / 180, ux = Math.cos(a), uy = Math.sin(a), nx = -uy, ny = ux;
+      stocks += `M${F(hubX)} ${F(hubY)}l${F(ux * sl)} ${F(uy * sl)}`;
+      const p0 = [hubX + ux * sl * 0.18, hubY + uy * sl * 0.18], p1 = [hubX + ux * sl, hubY + uy * sl];
+      lattice += `M${F(p0[0])} ${F(p0[1])}L${F(p1[0])} ${F(p1[1])}L${F(p1[0] + nx * sw2)} ${F(p1[1] + ny * sw2)}L${F(p0[0] + nx * sw2)} ${F(p0[1] + ny * sw2)}Z`;
+      for (let j = 1; j < 7; j++) {
+        const t = 0.18 + (j / 7) * 0.82, qx = hubX + ux * sl * t, qy = hubY + uy * sl * t;
+        lattice += `M${F(qx)} ${F(qy)}l${F(nx * sw2)} ${F(ny * sw2)}`;
+      }
+      lattice += `M${F(p0[0] + nx * sw2 * 0.5)} ${F(p0[1] + ny * sw2 * 0.5)}L${F(p1[0] + nx * sw2 * 0.5)} ${F(p1[1] + ny * sw2 * 0.5)}`;
+    }
+    s += `<g class="isl-vsails" style="transform-origin:${F(hubX)}px ${F(hubY)}px">`
+      + `<path class="isl-vlattice" d="${lattice}" stroke-width=".8"/><path class="isl-vwood" d="${stocks}" stroke-width="${F(Math.max(1.6, Y(0.014)))}"/>`
+      + `<circle class="isl-vwood-f" cx="${F(hubX)}" cy="${F(hubY)}" r="${F(Y(0.018))}"/></g>`;
+    // the dirt track from the foreground to the mill's door, and grass tufts
+    s += `<path class="isl-vtrack" d="M${F(X(0.46))} ${F(H + 2)}C${F(X(0.55))} ${F(Y(0.9))} ${F(mx - Y(0.3))} ${F(Y(0.8))} ${F(mx - Y(0.02))} ${F(mb + 1)}L${F(mx + Y(0.04))} ${F(mb + 1)}C${F(mx - Y(0.2))} ${F(Y(0.82))} ${F(X(0.62))} ${F(Y(0.92))} ${F(X(0.56))} ${F(H + 2)}Z"/>`;
+    let tufts = '';
+    for (let i = 0; i < 60; i++) { const gx = X(r()), gy = Y(0.8 + r() * 0.2), gh = Y(0.02 + r() * 0.03); tufts += `M${F(gx)} ${F(gy)}l${F(-gh * 0.3)} ${F(-gh)}M${F(gx)} ${F(gy)}l${F(gh * 0.05)} ${F(-gh * 1.2)}M${F(gx)} ${F(gy)}l${F(gh * 0.35)} ${F(-gh * 0.9)}`; }
+    s += `<path class="isl-vcane" d="${tufts}" stroke-width=".8"/>`;
+    // a few trees at the field's edge
+    s += `<path class="f-near" d="${palm(X(0.04), Y(0.76), Y(0.3), -0.06, 71)}${palm(X(0.95), Y(0.73), Y(0.26), 0.07, 73)}"/>`;
+    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights[0])}" stroke-width="1.3"/>`;
+    return s;
+  }
+
+  /* THE OLD COURT HOUSE (the Governance landing's head; the owner chose it, 2026-09-28): St John's
+     Court House of 1750, where the court sat downstairs and the Legislative Council met upstairs, now
+     the Museum of Antigua and Barbuda; drawn from the references studied (the art's source folder
+     README lists them). A two-storey Georgian block of stone, darker toward the cornice and warmer
+     where the lamps reach it: channelled rustication and tall round-arched windows with voussoirs and
+     keystones on the ground floor, sash windows with lintels and sills above, quoins at both corners,
+     a projecting cornice and parapet, a flagpole with a pennant in the governance hue; a lower wing
+     with an arched entrance; iron railings on a low wall; the lit windows' light spilling across the
+     pavement; Georgian lanterns with their halos and pools; the town's roofs behind. The street lamps
+     light first, then the entrance and the ground floor, then the council room upstairs, last. */
+  function courtHouse(W, H, v) {
+    const X = (f) => f * W, Y = (f) => f * H, r = rng(1750);
+    const street = Y(0.84);
+    let s = '';
+    // 1. The town behind: roofs hipped, gabled and flat, at different heights, a few lit windows.
+    let roofs = '', tw = '';
+    for (let x = X(-0.03); x < X(1.03);) {
+      const w = X(0.045 + r() * 0.04), eave = Y(0.56 + r() * 0.1), pitch = Y(0.03 + r() * 0.04), kind = r();
+      roofs += `M${F(x)} ${F(street)}V${F(eave)}`;
+      if (kind < 0.45) roofs += `L${F(x + w * 0.25)} ${F(eave - pitch)}H${F(x + w * 0.75)}L${F(x + w)} ${F(eave)}`;
+      else if (kind < 0.8) roofs += `L${F(x + w / 2)} ${F(eave - pitch * 1.2)}L${F(x + w)} ${F(eave)}`;
+      else roofs += `V${F(eave - pitch * 0.4)}H${F(x + w)}V${F(eave)}`;
+      roofs += `V${F(street)}Z`;
+      for (const f of [0.28, 0.62]) if (r() < 0.45) tw += `M${F(x + w * f)} ${F(eave + Y(0.03))}h${F(Y(0.016))}v${F(Y(0.026))}h${F(-Y(0.016))}Z`;
+      x += w + X(0.004 + r() * 0.01);
+    }
+    s += `<path class="f-far" d="${roofs}"/><path class="f-pulse isl-vwin" style="--i:0" d="${tw}" opacity=".7"/>`;
+    s += mist(X(-0.05), Y(0.7), X(1.1), Y(0.12), 0.3);
+    // 2. The lower wing, left, and the main block: stone darker toward the top, the side face in shade.
+    const x0 = X(0.44), x1 = X(0.84), sd = X(0.032), top = Y(0.3), mid = Y(0.58), bw = (x1 - x0) / 5;
+    const wx0 = X(0.26), wTop = Y(0.5);
+    s += `<path d="M${F(wx0)} ${F(street)}V${F(wTop)}H${F(x0)}V${F(street)}Z" fill="url(#islvfacade)"/>`;
+    s += `<path class="isl-vstone" d="M${F(wx0 - Y(0.01))} ${F(wTop + Y(0.015))}V${F(wTop - Y(0.035))}H${F(x0)}V${F(wTop + Y(0.015))}Z"/>`;
+    s += `<path class="isl-vpshade" d="M${F(wx0)} ${F(wTop + Y(0.015))}H${F(x0)}v${F(Y(0.018))}H${F(wx0)}Z"/>`;
+    s += `<path d="M${F(x0)} ${F(street)}V${F(top)}H${F(x1)}V${F(street)}Z" fill="url(#islvfacade)"/>`;
+    s += `<path d="M${F(x1)} ${F(street)}V${F(top)}H${F(x1 + sd)}V${F(street)}Z" fill="url(#islvfacade)"/>`;
+    s += `<path class="isl-vpshade" d="M${F(x1)} ${F(street)}V${F(top)}H${F(x1 + sd)}V${F(street)}ZM${F(x1)} ${F(street)}V${F(top)}H${F(x1 + sd)}V${F(street)}Z"/>`;
+    // the cornice, projecting, lit along its top; the shadow it casts; the parapet above
+    s += `<path class="isl-vstone" d="M${F(x0 - Y(0.014))} ${F(top + Y(0.03))}V${F(top)}H${F(x1 + sd + Y(0.014))}V${F(top + Y(0.03))}Z"/>`;
+    s += `<path class="isl-vpshade" d="M${F(x0)} ${F(top + Y(0.03))}H${F(x1 + sd)}v${F(Y(0.022))}H${F(x0)}Z"/>`;
+    s += `<path d="M${F(x0)} ${F(top + 1)}V${F(top - Y(0.055))}H${F(x1 + sd)}V${F(top + 1)}Z" fill="url(#islvfacade)"/>`;
+    s += `<path class="isl-vstone" d="M${F(x0 - Y(0.006))} ${F(top - Y(0.045))}V${F(top - Y(0.06))}H${F(x1 + sd + Y(0.006))}V${F(top - Y(0.045))}Z"/>`;
+    // the string course between the floors, and the stone: channelled joints below, fine courses above
+    let joints = `M${F(x0)} ${F(mid)}H${F(x1 + sd)}`;
+    for (let y = mid + Y(0.045); y < street - Y(0.01); y += Y(0.036)) joints += `M${F(x0)} ${F(y)}H${F(x1 + sd)}`;
+    let fine = '';
+    for (let y = top + Y(0.08); y < mid - Y(0.01); y += Y(0.03)) fine += `M${F(x0)} ${F(y)}H${F(x1 + sd)}`;
+    for (let y = wTop + Y(0.06); y < street - Y(0.01); y += Y(0.036)) joints += `M${F(wx0)} ${F(y)}H${F(x0)}`;
+    s += `<path class="isl-vstone" d="M${F(x0 - Y(0.006))} ${F(mid - Y(0.004))}H${F(x1 + sd + Y(0.006))}v${F(Y(0.02))}H${F(x0 - Y(0.006))}Z"/>`;
+    s += `<path class="isl-vcourse" d="${joints}" stroke-width="1.1"/><path class="isl-vcourse" d="${fine}" stroke-width=".6" stroke-opacity=".6"/>`;
+    // quoins: long and short blocks up both corners of the block, lighter than the stone about them
+    let quoins = '';
+    for (let k = 0, y = street; y > top + Y(0.04); y -= Y(0.036), k++) {
+      const qw = k % 2 ? Y(0.034) : Y(0.054), qh = Y(0.036) - 1.2;
+      quoins += `M${F(x0)} ${F(y)}h${F(qw)}v${F(-qh)}h${F(-qw)}ZM${F(x1)} ${F(y)}h${F(-qw)}v${F(-qh)}h${F(qw)}Z`;
+    }
+    s += `<path class="isl-vstone" d="${quoins}"/>`;
+    // 3. The windows. Warm light over the lower facade first, so the openings sit in it.
+    s += `<g class="isl-vwin" style="--i:3"><ellipse cx="${F((x0 + x1) / 2)}" cy="${F(street - Y(0.08))}" rx="${F((x1 - x0) * 0.62)}" ry="${F(Y(0.24))}" fill="url(#islvwarm)"/></g>`;
+    // the ground floor: five tall round-arched windows with voussoirs and a keystone; three lit, their
+    // light spilling out across the pavement
+    let arches = '', dark = '', vous = '', keys = '', spill = '';
+    for (let i = 0; i < 5; i++) {
+      const cx = x0 + bw * (i + 0.5), aw = bw * 0.42, aTop = mid + Y(0.07), aBot = street - Y(0.03), rr = aw / 2, cy = aTop + rr;
+      const d = `M${F(cx - rr)} ${F(aBot)}V${F(cy)}A${F(rr)} ${F(rr)} 0 0 1 ${F(cx + rr)} ${F(cy)}V${F(aBot)}Z`;
+      const lit = i === 1 || i === 3 || i === 4;
+      if (lit) {
+        arches += d;
+        spill += `M${F(cx - rr)} ${F(street)}H${F(cx + rr)}L${F(cx + rr * 1.8)} ${F(street + Y(0.09))}H${F(cx - rr * 1.8)}Z`;
+      } else dark += d;
+      for (let k = 0; k <= 6; k++) {
+        const a = Math.PI + (k / 6) * Math.PI, ro = rr + Y(0.028);
+        vous += `M${F(cx + Math.cos(a) * rr)} ${F(cy + Math.sin(a) * rr)}L${F(cx + Math.cos(a) * ro)} ${F(cy + Math.sin(a) * ro)}`;
+      }
+      keys += `M${F(cx - Y(0.012))} ${F(cy - rr - Y(0.03))}h${F(Y(0.024))}l${F(-Y(0.004))} ${F(Y(0.032))}h${F(-Y(0.016))}Z`;
+      vous += `M${F(cx - rr - Y(0.028))} ${F(cy)}A${F(rr + Y(0.028))} ${F(rr + Y(0.028))} 0 0 1 ${F(cx + rr + Y(0.028))} ${F(cy)}`;
+    }
+    s += `<path class="isl-vdark" d="${dark}"/><path class="f-pulse isl-vwin" style="--i:3" d="${arches}"/>`;
+    s += `<path class="isl-vmul" d="${arches}${dark}" stroke-width=".6" fill="none"/>`;
+    s += `<path class="isl-vcourse" d="${vous}" stroke-width="1.2"/><path class="isl-vstone" d="${keys}"/>`;
+    // the upper floor, the council room: five sash windows, lintels and sills, glazing bars; lit last
+    let sash = '', sashDark = '', trim = '', bars = '';
+    for (let i = 0; i < 5; i++) {
+      const cx = x0 + bw * (i + 0.5), sw = bw * 0.36, sTop = top + Y(0.085), sBot = mid - Y(0.045);
+      const d = `M${F(cx - sw / 2)} ${F(sBot)}V${F(sTop)}H${F(cx + sw / 2)}V${F(sBot)}Z`;
+      if (i === 4) sashDark += d; else sash += d;
+      trim += `M${F(cx - sw * 0.72)} ${F(sBot)}h${F(sw * 1.44)}v${F(Y(0.014))}h${F(-sw * 1.44)}Z`;
+      trim += `M${F(cx - sw * 0.62)} ${F(sTop)}l${F(-Y(0.006))} ${F(-Y(0.024))}h${F(sw * 1.24 + Y(0.012))}l${F(-Y(0.006))} ${F(Y(0.024))}Z`;
+      const third = (sBot - sTop) / 3;
+      bars += `M${F(cx)} ${F(sTop)}V${F(sBot)}M${F(cx - sw / 2)} ${F(sTop + third)}H${F(cx + sw / 2)}M${F(cx - sw / 2)} ${F(sTop + 2 * third)}H${F(cx + sw / 2)}`;
+    }
+    s += `<path class="isl-vdark" d="${sashDark}"/><path class="f-pulse isl-vwin isl-vlast" style="--i:5" d="${sash}"/>`;
+    s += `<path class="isl-vmul" d="${bars}" stroke-width=".9"/><path class="isl-vstone" d="${trim}"/>`;
+    // the wing's arched entrance, lit, with its voussoirs, and two small windows either side
+    const ex = (wx0 + x0) / 2, er = (x0 - wx0) * 0.13, eTop = wTop + Y(0.09);
+    s += `<path class="f-pulse isl-vwin" style="--i:2" d="M${F(ex - er)} ${F(street)}V${F(eTop + er)}A${F(er)} ${F(er)} 0 0 1 ${F(ex + er)} ${F(eTop + er)}V${F(street)}Z`
+      + `M${F(wx0 + (x0 - wx0) * 0.14)} ${F(wTop + Y(0.11))}h${F(Y(0.036))}v${F(Y(0.12))}h${F(-Y(0.036))}ZM${F(x0 - (x0 - wx0) * 0.14 - Y(0.036))} ${F(wTop + Y(0.11))}h${F(Y(0.036))}v${F(Y(0.12))}h${F(-Y(0.036))}Z"/>`;
+    s += `<path class="isl-vcourse" d="M${F(ex - er - Y(0.026))} ${F(eTop + er)}A${F(er + Y(0.026))} ${F(er + Y(0.026))} 0 0 1 ${F(ex + er + Y(0.026))} ${F(eTop + er)}" stroke-width="1.2"/>`;
+    s += `<g class="isl-vwin" style="--i:2"><path d="M${F(ex - er)} ${F(street)}H${F(ex + er)}L${F(ex + er * 1.8)} ${F(street + Y(0.09))}H${F(ex - er * 1.8)}Z" fill="url(#islvspill)" opacity=".8"/></g>`;
+    s += `<g class="isl-vwin" style="--i:3"><path d="${spill}" fill="url(#islvspill)" opacity=".8"/></g>`;
+    // the flagpole on the parapet, and its pennant in the page's hue
+    const fx = x0 + (x1 - x0) * 0.5, fTop = top - Y(0.24);
+    s += `<path class="isl-vmast" d="M${F(fx)} ${F(top - Y(0.06))}V${F(fTop)}" stroke-width="1.3"/>`;
+    s += `<path class="isl-vpennant" d="M${F(fx)} ${F(fTop)}Q${F(fx + Y(0.07))} ${F(fTop + Y(0.01))} ${F(fx + Y(0.13))} ${F(fTop + Y(0.04))}Q${F(fx + Y(0.07))} ${F(fTop + Y(0.06))} ${F(fx)} ${F(fTop + Y(0.08))}Z"/>`;
+    // 4. The low wall and its iron railings along the front, finials on the posts
+    const rx0 = wx0, rx1 = x1 + sd;
+    let rail = `M${F(rx0)} ${F(street - Y(0.07))}H${F(rx1)}M${F(rx0)} ${F(street - Y(0.03))}H${F(rx1)}`;
+    for (let x = rx0 + Y(0.01); x < rx1; x += Y(0.022)) rail += `M${F(x)} ${F(street - Y(0.018))}V${F(street - Y(0.085))}`;
+    s += `<path class="isl-vrailing" d="${rail}" stroke-width="1"/>`;
+    s += `<path d="M${F(rx0)} ${F(street + 1)}V${F(street - Y(0.018))}H${F(rx1)}V${F(street + 1)}Z" fill="url(#islvfacade)"/>`;
+    // 5. The street: the pavement and its kerb, the road's setts receding, lanterns on posts with their
+    //    halos and pools, palms at the edges
+    s += `<path class="isl-vtrack" d="M${F(-2)} ${F(street)}H${F(W + 2)}V${F(H + 2)}H${F(-2)}Z"/>`;
+    s += `<path class="isl-vstep-edge" d="M${F(-2)} ${F(street + Y(0.045))}H${F(W + 2)}" stroke-width="${F(Math.max(1, Y(0.006)))}" stroke-opacity=".6"/>`;
+    let setts = '';
+    for (let y = street + Y(0.07); y < H; y += Y(0.024) + (y - street) * 0.12) for (let x = -r() * 20; x < W; x += Y(0.03) + (y - street) * 0.5 + r() * 6) setts += `M${F(x)} ${F(y)}h${F(Y(0.016) + (y - street) * 0.3)}`;
+    s += `<path class="isl-vcourse" d="${setts}" stroke-width=".8" stroke-opacity=".5"/>`;
+    for (const lx of [X(0.19), X(0.925)]) {
+      const ph = Y(0.27), lw = Y(0.022), lh = Y(0.06);
+      s += `<g class="isl-vwin" style="--i:1">${pool(lx, street + Y(0.06), Y(0.3), Y(0.06), 0.8)}${halo(lx, street - ph - lh / 2, Y(0.2))}`
+        + `<path class="f-pulse" d="M${F(lx - lw)} ${F(street - ph)}V${F(street - ph - lh)}H${F(lx + lw)}V${F(street - ph)}Z"/></g>`;
+      s += `<path class="isl-vpost" d="M${F(lx - 1.3)} ${F(street + Y(0.03))}V${F(street - ph)}H${F(lx + 1.3)}V${F(street + Y(0.03))}Z`
+        + `M${F(lx - lw * 1.5)} ${F(street - ph - lh)}L${F(lx)} ${F(street - ph - lh - Y(0.035))}L${F(lx + lw * 1.5)} ${F(street - ph - lh)}Z`
+        + `M${F(lx - lw * 1.2)} ${F(street - ph + 1)}h${F(lw * 2.4)}v${F(Y(0.01))}h${F(-lw * 2.4)}Z"/>`;
+      s += `<path class="isl-vmul" d="M${F(lx)} ${F(street - ph)}V${F(street - ph - lh)}" stroke-width=".8"/>`;
+    }
+    s += `<path class="f-near" d="${palm(X(0.035), street + Y(0.03), Y(0.44), -0.05, 91)}${palm(X(0.978), street + Y(0.03), Y(0.4), 0.06, 93)}"/>`;
+    return s;
+  }
+
   /* NELSON'S DOCKYARD (beside the Lecture Outline's checks, where the campus stood until it moved to
      the homepage): the Georgian naval dockyard at English Harbour, a UNESCO World Heritage Site. In
      front, standing in the harbour, the Sail Loft's pillars: the capped stone columns that are all
@@ -799,132 +1192,178 @@
     return s;
   }
 
-  /* ST JOHN'S HARBOUR (the News & Events landing's head), where the island's news comes in by sea:
-     seen from Fort James's rampart at the harbour mouth, looking in across the water at night, from the
-     references in the art's source folder (references/web-st-johns-harbour-cruise-ships,
-     owner-st-johns-cruise-ship, web-fort-james-*): a cannon on the rampart in front, as it still
-     stands; two cruise ships lit up at the quay, broadside, their decks in rows of lit cabins; the
-     town behind them, red roofs and warm lights climbing the hill; and on the skyline the cathedral's
-     twin towers with their cupolas, floodlit, the mark of St John's; the hills beyond. The fort's lamp
-     takes the page's hue. Lights come on quay first, then the ships, then the town. */
+  /* ST JOHN'S HARBOUR (the About page, beside Contact and Purpose; redrawn to the section 19 finish on
+     2026-09-28, the owner: "do another pass of that art using your new art specs"). St John's, the
+     capital, seen from Fort James's rampart at the harbour mouth looking in, from the references in the
+     art's source folder (references/web-st-johns-harbour-cruise-ships, owner-st-johns-cruise-ship,
+     web-fort-james-*). In front, the fort's stone parapet with an embrasure, a cannon on its carriage
+     and the fort's lamp; two cruise ships at the quay, white hulls over a dark boot-top, lifeboats
+     slung along their sides, decks of lit cabins, a funnel and a masthead light; the town climbing the
+     hill behind in houses of different sizes, walls and roofs, trees between them, windows lit; the
+     cathedral's twin towers on the skyline; the hills beyond, the Moon above. On the water: ripples,
+     broken columns of light under the quay lamps and the ships, the town and the ships mirrored
+     faintly, mist along the quay, a launch with its riding light. Sizes come from one unit, so the
+     ships keep their shape whatever the card's proportions. The lights come on at the fort, then the
+     quay, the ships and the town, and the cathedral's floodlight last. */
   function harbour(W, H, v) {
     const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(57);
-    const P = (pts) => pts.map(([x, y]) => [X(x), Y(y)]);
-    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
-    const scrub = (pts, n, s0, s1) => {
-      let d = '';
+    const u = Math.min(W / 814, H / 527);
+    const at = (pts, x) => {
       for (let i = 0; i < pts.length - 1; i++) {
         const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
-        for (let j = 0; j < n; j++) {
-          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
-          d += `M${F(x - rr)} ${F(y + rr * 0.45)}a${F(rr)} ${F(rr * 0.82)} 0 0 1 ${F(2 * rr)} 0Z`;
-        }
+        if (x >= xa && x <= xb) return ya + (yb - ya) * (x - xa) / (xb - xa);
       }
-      return d;
+      return pts[pts.length - 1][1];
     };
-    const lights = [[], [], [], []];   // 0 quay, 1 ships, 2 town, 3 far hills
-    let s = `<rect y="${F(y0)}" width="${F(W)}" height="${F(H - y0)}" fill="url(#islvbay)"/>`;
-    // 1. The hills beyond the town, with a few far lights.
-    const hills = P([[-0.02, 0.5], [0.08, 0.44], [0.18, 0.4], [0.3, 0.37], [0.42, 0.36], [0.52, 0.33], [0.6, 0.29],
-      [0.68, 0.3], [0.76, 0.34], [0.86, 0.37], [0.95, 0.35], [1.02, 0.36], [1.02, 0.52], [-0.02, 0.52]]);
-    s += `<path class="f-isl" d="${poly(hills)}${scrub(hills.slice(0, 12), 4, 0.8, 1.8)}"/>`;
-    for (let i = 0; i < 18; i++) lights[3].push([X(r()), Y(0.4 + r() * 0.1)]);
-    // 2. The cathedral on its hill, floodlit: two towers with cupolas and small lanterns, the nave
-    //    between them under a gable.
-    const cx = X(0.71), tw = X(0.017), gap = X(0.03), foot = Y(0.37), tt = Y(0.215), lit = [];
-    let cath = `M${F(cx - gap / 2 - tw)} ${F(foot)}V${F(Y(0.31))}H${F(cx + gap / 2 + tw)}V${F(foot)}Z`;
-    cath += `M${F(cx - gap / 2)} ${F(Y(0.31))}L${F(cx)} ${F(Y(0.28))}L${F(cx + gap / 2)} ${F(Y(0.31))}Z`;
-    let domes = '';
+    const far = [], quayL = [];
+    let s = '';
+    // 1. The hills beyond, rimmed, their lights; the town's hillside in front of them.
+    const hills = [[-0.02, 0.4], [0.08, 0.36], [0.18, 0.33], [0.3, 0.31], [0.42, 0.3], [0.52, 0.27], [0.6, 0.24], [0.68, 0.25], [0.76, 0.28], [0.86, 0.31], [0.95, 0.29], [1.02, 0.3]]
+      .map(([x, y]) => [X(x), Y(y)]);
+    s += `<path class="f-isl" d="${polyD([...hills, [X(1.02), y0], [X(-0.02), y0]])}${scrubLine(hills, 4, 0.8, 1.8, r)}"/>`;
+    s += `<path class="s-rim" d="${lineD(hills.map(([x, y]) => [x, y + 0.5]))}" stroke-width="1" stroke-opacity=".3"/>`;
+    const town = [[-0.02, 0.45], [0.12, 0.43], [0.26, 0.42], [0.4, 0.405], [0.52, 0.385], [0.62, 0.36], [0.68, 0.355], [0.76, 0.37], [0.88, 0.4], [1.02, 0.42]]
+      .map(([x, y]) => [X(x), Y(y)]);
+    for (let i = 0; i < 26; i++) {
+      const x = X(r()), a = at(hills, x) + Y(0.012), b = at(town, x) - Y(0.006);
+      if (b > a) far.push([x, a + r() * (b - a)]);
+    }
+    s += `<path class="f-far" d="${polyD([...town, [X(1.02), y0 + 1], [X(-0.02), y0 + 1]])}"/>`;
+    // 2. The cathedral on the skyline: twin towers with cornices, cupolas and lanterns, belfry openings,
+    //    the nave's gable between them; its floodlight comes on last.
+    const cx = X(0.66), tw = 15 * u, gap = 25 * u, foot = at(town, cx) + Y(0.012), eave = foot - 32 * u, tt = foot - 82 * u;
+    let cath = `M${F(cx - gap / 2 - tw)} ${F(foot)}V${F(eave)}H${F(cx + gap / 2 + tw)}V${F(foot)}Z`
+      + `M${F(cx - gap / 2)} ${F(eave + 1)}L${F(cx)} ${F(eave - 14 * u)}L${F(cx + gap / 2)} ${F(eave + 1)}Z`;
+    let domes = '', belfry = '', cc = '';
     for (const sx of [-1, 1]) {
-      const x = cx + sx * (gap / 2 + tw / 2);
-      cath += `M${F(x - tw / 2)} ${F(Y(0.31))}V${F(tt)}H${F(x + tw / 2)}V${F(Y(0.31))}Z`;
-      cath += `M${F(x - tw * 0.62)} ${F(tt + 1)}H${F(x + tw * 0.62)}V${F(tt - Y(0.008))}H${F(x - tw * 0.62)}Z`;
-      domes += `M${F(x - tw * 0.48)} ${F(tt - Y(0.008))}A${F(tw * 0.48)} ${F(tw * 0.62)} 0 0 1 ${F(x + tw * 0.48)} ${F(tt - Y(0.008))}Z`;
-      domes += `M${F(x - tw * 0.1)} ${F(tt - Y(0.008) - tw * 0.6)}V${F(tt - Y(0.008) - tw * 1.05)}H${F(x + tw * 0.1)}V${F(tt - Y(0.008) - tw * 0.6)}Z`;
-      lit.push(`M${F(x - tw * 0.18)} ${F(Y(0.25))}h${F(tw * 0.36)}v${F(Y(0.028))}h${F(-tw * 0.36)}Z`);
+      const x = cx + sx * (gap / 2 + tw / 2), ct = tt - 4 * u;
+      cath += `M${F(x - tw / 2)} ${F(eave + 1)}V${F(tt)}H${F(x + tw / 2)}V${F(eave + 1)}Z`;
+      cath += `M${F(x - tw * 0.62)} ${F(tt + 1)}H${F(x + tw * 0.62)}V${F(ct)}H${F(x - tw * 0.62)}Z`;
+      domes += `M${F(x - tw * 0.48)} ${F(ct)}A${F(tw * 0.48)} ${F(tw * 0.62)} 0 0 1 ${F(x + tw * 0.48)} ${F(ct)}Z`;
+      domes += `M${F(x - tw * 0.1)} ${F(ct - tw * 0.58)}V${F(ct - tw * 1.05)}H${F(x + tw * 0.1)}V${F(ct - tw * 0.58)}Z`;
+      belfry += `M${F(x - tw * 0.2)} ${F(tt + 26 * u)}V${F(tt + 12 * u)}a${F(tw * 0.2)} ${F(tw * 0.2)} 0 0 1 ${F(tw * 0.4)} 0V${F(tt + 26 * u)}Z`;
+      cc += `M${F(x - tw / 2)} ${F(tt + 32 * u)}h${F(tw)}M${F(x - tw / 2)} ${F(eave - 14 * u)}h${F(tw)}`;
     }
-    s += `<ellipse cx="${F(cx)}" cy="${F(Y(0.29))}" rx="${F(X(0.06))}" ry="${F(Y(0.1))}" fill="url(#islvwarm)"/>`;
-    s += `<path class="isl-vcath" d="${cath}"/><path class="isl-vroof2" d="${domes}"/>`;
-    s += `<path class="isl-vcathwin" d="${lit.join('')}"/>`;
-    // 3. The town: rows of houses climbing the hill from the quay, red roofs, warm windows.
-    let roofs = '', walls = '';
-    const house = (x, rowY, w, h) => {
-      walls += `M${F(x)} ${F(rowY)}v${F(-h)}h${F(w)}v${F(h)}Z`;
-      roofs += `M${F(x - 1)} ${F(rowY - h)}L${F(x + w * 0.5)} ${F(rowY - h - Math.min(Y(0.016), w * 0.4))}L${F(x + w + 1)} ${F(rowY - h)}Z`;
-    };
-    const slope = P([[-0.02, 0.43], [0.1, 0.41], [0.25, 0.395], [0.4, 0.39], [0.55, 0.38], [0.66, 0.37], [0.76, 0.375],
-      [0.88, 0.395], [1.02, 0.4], [1.02, 0.6], [-0.02, 0.6]]);
-    s += `<path class="f-far" d="${poly(slope)}"/>`;
-    for (let row = 0; row < 6; row++) {
-      const rowY = Y(0.58 - row * 0.034), n = 40 - row * 4;
-      for (let i = 0; i < n; i++) {
-        const x = X(-0.01 + (i + r() * 0.6) * (1.02 / n)), w = X(0.013 + r() * 0.014), h = Y(0.014 + r() * 0.01);
-        if (row > 1 && Math.abs(x - cx) < X(0.05)) continue;          // the cathedral's close
-        house(x, rowY + Y((r() - 0.5) * 0.01), w, h);
-        if (r() < 0.7) lights[2].push([x + w * (0.25 + r() * 0.5), rowY - h * 0.45]);
+    belfry += `M${F(cx - 3 * u)} ${F(foot - 8 * u)}V${F(eave + 6 * u)}a${F(3 * u)} ${F(3 * u)} 0 0 1 ${F(6 * u)} 0V${F(foot - 8 * u)}Z`;
+    s += `<g class="isl-vwin isl-vlast" style="--i:5"><ellipse cx="${F(cx)}" cy="${F(foot - 40 * u)}" rx="${F(70 * u)}" ry="${F(62 * u)}" fill="url(#islvwarm)"/></g>`;
+    s += `<path class="isl-vcath" d="${cath}"/><path class="isl-vship2" d="${domes}"/><path class="isl-vcourse" d="${cc}" stroke-width=".8"/>`;
+    s += `<path class="isl-vcathwin isl-vwin isl-vlast" style="--i:5" d="${belfry}"/>`;
+    // 3. The town, from the cathedral's hill down to the quay: houses of different sizes, walls and
+    //    roofs, gabled and hipped, trees between them, windows lit, the nearer the larger; drawn far to
+    //    near so the nearer overlap. Kept apart so the harbour can mirror it.
+    const items = [];
+    for (let i = 0; i < 200; i++) {
+      const x = X(-0.03 + r() * 1.05), t0 = at(town, x) + Y(0.018), y = t0 + (y0 - Y(0.014) - t0) * Math.pow(r(), 0.7);
+      if (Math.abs(x - cx) < gap / 2 + tw * 1.7 && y < foot + Y(0.035)) continue;
+      items.push([y, x, r() < 0.22]);
+    }
+    items.sort((a, b) => a[0] - b[0]);
+    let tn = '';
+    for (const [y, x, tree] of items) {
+      const near = clamp((y - Y(0.36)) / (y0 - Y(0.36)), 0, 1), k = u * (0.6 + near * 0.75);
+      if (tree) { tn += shrubs([[x, y, 8 * k]], r); continue; }
+      const w = (12 + r() * 14) * k, h = (8 + r() * 6) * k, pitch = (4 + r() * 4) * k;
+      const wall = ['isl-vtown', 'isl-vwall', 'isl-vstone'][Math.floor(r() * 3)];
+      const roof = r() < 0.4 ? 'isl-vroof' : r() < 0.5 ? 'isl-vroof2' : 'isl-vriser';
+      tn += `<path class="${wall}" d="M${F(x)} ${F(y)}v${F(-h)}h${F(w)}v${F(h)}Z"/>`;
+      tn += `<path class="${roof}" d="M${F(x - k)} ${F(y - h + 0.5)}`
+        + (r() < 0.5 ? `L${F(x + w * 0.25)} ${F(y - h - pitch)}H${F(x + w * 0.75)}` : `L${F(x + w / 2)} ${F(y - h - pitch * 1.1)}`) + `L${F(x + w + k)} ${F(y - h + 0.5)}Z"/>`;
+      let lit = '', dark = '';
+      const nw = w > 18 * k ? 2 : 1;
+      for (let j = 0; j < nw; j++) {
+        const wx = x + w * (nw === 1 ? 0.38 : 0.2 + j * 0.44), d = `M${F(wx)} ${F(y - h * 0.78)}h${F(3.2 * k)}v${F(h * 0.42)}h${F(-3.2 * k)}Z`;
+        if (r() < 0.55) lit += d; else dark += d;
       }
+      if (dark) tn += `<path class="isl-vdark" d="${dark}"/>`;
+      if (lit) tn += `<path class="f-pulse isl-vwin" style="--i:3" d="${lit}"/>`;
     }
-    for (let i = 0; i < 26; i++) lights[2].push([X(r()), Y(0.33 + r() * 0.06)]);
-    s += `<path class="isl-vtown" d="${walls}"/><path class="isl-vroof" d="${roofs}"/>`;
-    // the quay's edge, with its lamps
-    s += `<path class="f-near" d="${poly(P([[-0.02, 0.585], [1.02, 0.585], [1.02, 0.6], [-0.02, 0.6]]))}"/>`;
-    for (let i = 0; i < 14; i++) lights[0].push([X(0.04 + i * 0.07 + r() * 0.02), Y(0.583)]);
-    // 4. Two cruise ships at the quay, broadside: a rounded stern on the left, the bow raked forward on
-    //    the right, the hull's sheer rising to the bow, a dark band at the waterline, decks stepping
-    //    back from the bow in rows of lit cabins, the funnel aft.
-    const ship = (x0, x1, wl, k) => {
-      const L = x1 - x0, hh = Y(0.06) * k, dh = Y(0.028) * k, decks = 5, deckTop = wl - hh - decks * dh;
-      let hull = `M${F(x0 + L * 0.03)} ${F(wl)}H${F(x1 - L * 0.07)}`
-        + `L${F(x1)} ${F(wl - hh * 1.18)}L${F(x0 + L * 0.02)} ${F(wl - hh * 0.98)}`
-        + `Q${F(x0 - L * 0.012)} ${F(wl - hh * 0.9)} ${F(x0 + L * 0.03)} ${F(wl)}Z`;
-      const band = `M${F(x0 + L * 0.03)} ${F(wl)}H${F(x1 - L * 0.07)}L${F(x1 - L * 0.062)} ${F(wl - hh * 0.2)}H${F(x0 + L * 0.018)}Z`;
-      let sup = '', lines = '';
-      for (let i = 0; i < decks; i++) {
-        const yb = wl - hh * 1.02 - i * dh, yt = yb - dh;
-        const a = x0 + L * (0.04 + i * 0.012), bb = x1 - L * (0.16 + i * 0.045);
-        sup += `M${F(a)} ${F(yb + 1)}V${F(yt)}H${F(bb)}L${F(bb + dh * 1.4)} ${F(yb + 1)}Z`;
-        lines += `M${F(a)} ${F(yt)}H${F(bb)}`;
-        for (let x = a + L * 0.012; x < bb; x += L * 0.0105) if (r() < 0.86) lights[1].push([x, yb - dh * 0.5]);
+    s += tn;
+    // the quay's stone edge, its lamps with their halos, and mist lying along it
+    const qe = `M${F(X(-0.02))} ${F(y0 - Y(0.012))}H${F(X(1.02))}V${F(y0 + 1)}H${F(X(-0.02))}Z`;
+    s += `<path class="isl-vstone" d="${qe}"/><path class="isl-vpshade" d="${qe}"/>`;
+    for (let i = 0; i < 15; i++) quayL.push([X(0.03 + i * 0.067 + r() * 0.02), y0 - Y(0.022)]);
+    s += `<g class="isl-vwin" style="--i:1">${quayL.map(([x, y]) => halo(x, y, 9 * u)).join('')}</g>`;
+    s += `<path class="s-vlight isl-vwin" style="--i:1" d="${lightsD(quayL)}" stroke-width="${F(Math.max(1.6, 2 * u))}"/>`;
+    // 4. The water: ripples dense toward the quay, the town mirrored faintly, mist, and a broken
+    //    column of light under each quay lamp.
+    s += dashes(hatchList(W, y0, H, r), 's-vrip', 1, [0.1, 0.18, 0.28]);
+    s += mirrored(y0, tn, 0.14) + mist(X(-0.05), y0 + Y(0.01), X(1.1), Y(0.05), 0.4);
+    for (const [x] of quayL) s += dashes(streakList(x, y0, H, r, 0.04, 0.05), 's-vglow', 1, [0.08, 0.16, 0.3]);
+    // 5. Two cruise ships at the quay, broadside, bow to the right: a white hull with a dark boot-top
+    //    at the waterline and its sheer rising to the raked bow, lifeboats slung along the side, decks
+    //    stepping back in rows of lit cabins, portholes along the hull, a funnel aft with its dark cap,
+    //    a masthead light; each with its reflection and columns of light under it.
+    const ship = (x0, x1, wl, cls, i) => {
+      const L = x1 - x0, hh = L * 0.085, dh = L * 0.03, decks = 5, cabins = [], ports = [];
+      const hull = `M${F(x0 + L * 0.03)} ${F(wl)}H${F(x1 - L * 0.07)}L${F(x1)} ${F(wl - hh * 1.18)}L${F(x0 + L * 0.02)} ${F(wl - hh * 0.98)}Q${F(x0 - L * 0.012)} ${F(wl - hh * 0.9)} ${F(x0 + L * 0.03)} ${F(wl)}Z`;
+      const boot = `M${F(x0 + L * 0.03)} ${F(wl)}H${F(x1 - L * 0.07)}L${F(x1 - L * 0.062)} ${F(wl - hh * 0.24)}H${F(x0 + L * 0.018)}Z`;
+      let sup = '', rails = '', boats = '';
+      for (let d = 0; d < decks; d++) {
+        const yb = wl - hh * 1.02 - d * dh, yt = yb - dh, a = x0 + L * (0.04 + d * 0.014), b = x1 - L * (0.15 + d * 0.05);
+        sup += `M${F(a)} ${F(yb + 1)}V${F(yt)}H${F(b)}L${F(b + dh * 1.3)} ${F(yb + 1)}Z`;
+        rails += `M${F(a)} ${F(yt + 0.5)}H${F(b + dh * 0.25)}`;
+        for (let x = a + L * 0.012; x < b; x += L * 0.011) if (r() < 0.8) cabins.push([x, yb - dh * 0.5]);
       }
-      const fx = x0 + L * 0.2;
-      sup += `M${F(fx)} ${F(deckTop + 1)}L${F(fx + L * 0.01)} ${F(deckTop - dh * 1.3)}H${F(fx + L * 0.075)}L${F(fx + L * 0.08)} ${F(deckTop + 1)}Z`;
-      for (let x = x0 + L * 0.05; x < x1 - L * 0.1; x += L * 0.022) lights[1].push([x, wl - hh * 0.5]);
-      return { hull, band, sup, lines };
+      for (let x = x0 + L * 0.1; x < x1 - L * 0.3; x += L * 0.05) {
+        const by = wl - hh * 1.02 + dh * 0.05, bl = L * 0.034;
+        boats += `M${F(x)} ${F(by)}h${F(bl)}q${F(-bl * 0.1)} ${F(dh * 0.62)} ${F(-bl * 0.25)} ${F(dh * 0.62)}h${F(-bl * 0.5)}q${F(-bl * 0.15)} 0 ${F(-bl * 0.25)} ${F(-dh * 0.62)}Z`;
+      }
+      for (let x = x0 + L * 0.06; x < x1 - L * 0.12; x += L * 0.018) ports.push([x, wl - hh * 0.5]);
+      const deckTop = wl - hh * 1.02 - decks * dh, fx = x0 + L * 0.2;
+      const funnel = `M${F(fx)} ${F(deckTop + 1)}L${F(fx + L * 0.012)} ${F(deckTop - dh * 1.5)}H${F(fx + L * 0.078)}L${F(fx + L * 0.085)} ${F(deckTop + 1)}Z`;
+      const cap = `M${F(fx + L * 0.012)} ${F(deckTop - dh * 1.5)}H${F(fx + L * 0.078)}L${F(fx + L * 0.08)} ${F(deckTop - dh * 1.05)}H${F(fx + L * 0.01)}Z`;
+      const mx = x1 - L * 0.3, mast = `M${F(mx)} ${F(deckTop + 1)}V${F(deckTop - dh * 2.6)}`;
+      const one = `<path class="${cls}" d="${hull}${sup}${funnel}"/><path class="isl-vhullband" d="${boot}${cap}"/>`
+        + `<path class="isl-vdeck" d="${rails}" stroke-width=".8"/><path class="isl-vspin2" d="${boats}"/><path class="isl-vmast" d="${mast}" stroke-width="1"/>`;
+      let o = `<g clip-path="url(#islsea)" opacity=".15"><g transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${one}</g></g>`;
+      for (let x = x0 + L * 0.08; x < x1 - L * 0.1; x += L * 0.07) o += dashes(streakList(x + (r() - 0.5) * L * 0.03, wl + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.06, 0.12, 0.24]);
+      o += one;
+      o += `<g class="isl-vwin" style="--i:${i}">${halo(mx, deckTop - dh * 2.6, 8 * u)}<circle class="isl-vnav-w" cx="${F(mx)}" cy="${F(deckTop - dh * 2.6)}" r="${F(Math.max(1.2, 1.4 * u))}"/></g>`;
+      o += `<path class="s-vlight isl-vwin" style="--i:${i}" d="${lightsD(cabins)}" stroke-width="${F(Math.max(1.2, 1.5 * u))}"/>`;
+      o += `<path class="s-vlight isl-vwin" style="--i:${i}" d="${lightsD(ports)}" stroke-width="${F(Math.max(1, 1.2 * u))}" stroke-opacity=".7"/>`;
+      return o;
     };
-    const far = ship(X(0.6), X(0.95), Y(0.635), 0.72), near = ship(X(0.24), X(0.7), Y(0.71), 1);
-    for (const [sh, cls] of [[far, 'isl-vship2'], [near, 'isl-vship']]) {
-      s += `<path class="${cls}" d="${sh.hull}${sh.sup}"/>`;
-      s += `<path class="isl-vhullband" d="${sh.band}"/>`;
-      s += `<path class="isl-vdeck" d="${sh.lines}" stroke-width="0.8"/>`;
-    }
-    // reflections of the ships' lights in the harbour
-    let refl = '';
-    for (let i = 0; i < 30; i++) {
-      const x = X(0.26 + r() * 0.68);
-      refl += `<rect x="${F(x - 0.7)}" y="${F(Y(0.715 + r() * 0.02))}" width="1.4" height="${F(Y(0.05 + r() * 0.06))}" fill="url(#islvrefl)"/>`;
-    }
-    s += `<g class="isl-vlamps">${refl}</g>`;
-    // 5. Fort James's rampart in front, and its cannon on its carriage pointing into the harbour.
-    const ramp = P([[-0.02, 0.8], [0.08, 0.795], [0.18, 0.81], [0.28, 0.84], [0.36, 0.88], [0.42, 0.94], [0.45, 1.03], [-0.02, 1.03]]);
-    s += `<path class="f-near" d="${poly(ramp)}${scrub(P([[-0.02, 0.8], [0.08, 0.795], [0.18, 0.81]]), 4, 1.2, 2.8)}"/>`;
-    const gx = X(0.105), gy = Y(0.755), bl = X(0.13), br = Y(0.026);
-    // barrel: tapering from breech to muzzle, raised a few degrees
-    s += `<g transform="rotate(-7 ${F(gx)} ${F(gy)})"><path class="isl-vcannon" d="M${F(gx - bl * 0.32)} ${F(gy - br * 1.05)}`
-      + `L${F(gx + bl * 0.68)} ${F(gy - br * 0.72)}V${F(gy - br * 0.18)}L${F(gx - bl * 0.32)} ${F(gy + br * 0.05)}Z`
-      + `M${F(gx - bl * 0.32)} ${F(gy - br * 0.5)}m${F(-br * 0.55)} 0a${F(br * 0.55)} ${F(br * 0.55)} 0 1 0 ${F(br * 1.1)} 0a${F(br * 0.55)} ${F(br * 0.55)} 0 1 0 ${F(-br * 1.1)} 0Z"/></g>`;
-    // carriage and wheels
-    s += `<path class="isl-vcannon" d="M${F(gx - bl * 0.3)} ${F(gy + br * 1.2)}L${F(gx - bl * 0.18)} ${F(gy - br * 0.2)}H${F(gx + bl * 0.16)}L${F(gx + bl * 0.26)} ${F(gy + br * 1.2)}Z"/>`;
-    for (const wx of [-0.2, 0.17]) s += `<circle class="isl-vcannon" cx="${F(gx + bl * wx)}" cy="${F(gy + br * 1.25)}" r="${F(br * 0.95)}"/>`;
-    // the fort's lamp, in the page's hue
-    const lx = X(0.028), ly = Y(0.73);
-    s += `<path class="f-near" d="M${F(lx - 1)} ${F(Y(0.8))}V${F(ly)}H${F(lx + 1)}V${F(Y(0.8))}Z"/>`;
-    s += `<circle cx="${F(lx)}" cy="${F(ly)}" r="${F(Y(0.06))}" fill="url(#islvlamp)"/>`;
-    s += `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly)}" r="${F(Math.max(1.5, Y(0.008)))}"/>`;
-    // The lights, grouped so they come on in turn.
-    const widths = [2.0, 1.25, 1.35, 1.1];
-    lights.forEach((pts, g) => {
-      if (pts.length) s += `<path class="s-vlight isl-vwin${g === 3 ? ' isl-vlast' : ''}" style="--i:${g * 2}" d="${pts.map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('')}" stroke-width="${widths[g]}"/>`;
-    });
+    s += ship(X(0.6), X(0.94), y0 + Y(0.035), 'isl-vship2', 2);
+    s += ship(X(0.28), X(0.7), y0 + Y(0.12), 'isl-vship', 2);
+    // a launch crossing toward the quay, its riding light and its column of light
+    const lx0 = X(0.82), ly0 = Y(0.9), ll = 40 * u;
+    s += dashes(streakList(lx0 + ll * 0.3, ly0 + 1, H, r, 0.05, 0.08), 's-vglow', 1, [0.1, 0.2, 0.34]);
+    const launch = `<path class="isl-vhull" d="M${F(lx0)} ${F(ly0 - 5 * u)}H${F(lx0 + ll)}L${F(lx0 + ll * 0.88)} ${F(ly0)}H${F(lx0 + ll * 0.06)}Z"/>`
+      + `<path class="isl-vship2" d="M${F(lx0 + ll * 0.2)} ${F(ly0 - 5 * u)}V${F(ly0 - 11 * u)}H${F(lx0 + ll * 0.55)}L${F(lx0 + ll * 0.62)} ${F(ly0 - 5 * u)}Z"/>`;
+    s += `<g opacity=".15"><g transform="translate(0 ${F(2 * ly0)}) scale(1 -1)">${launch}</g></g>` + launch;
+    s += `<g class="isl-vwin" style="--i:1">${halo(lx0 + ll * 0.35, ly0 - 15 * u, 10 * u)}<circle class="f-pulse" cx="${F(lx0 + ll * 0.35)}" cy="${F(ly0 - 15 * u)}" r="${F(Math.max(1.2, 1.5 * u))}"/></g>`;
+    s += `<path class="isl-vmast" d="M${F(lx0 + ll * 0.35)} ${F(ly0 - 11 * u)}V${F(ly0 - 14 * u)}" stroke-width="1"/>`;
+    // 6. Fort James in front: its low stone parapet with an embrasure and its coping, the rampart's
+    //    outer wall dropping into the water at its end, the floor in front, the fort's lamp's halo and
+    //    pool, and the cannon on its carriage on the floor, its barrel laid through the embrasure.
+    const pTop = Y(0.845), pFoot = Y(0.905), px1 = X(0.42), eX = X(0.2), eW = 22 * u, eD = 10 * u;
+    const par = [[X(-0.02), pTop], [eX - eW, pTop], [eX - eW * 0.6, pTop + eD], [eX + eW * 0.6, pTop + eD], [eX + eW, pTop], [px1, pTop], [px1, pFoot], [X(-0.02), pFoot]];
+    const outer = [[px1, pTop], [px1 + 12 * u, pTop + 4 * u], [px1 + X(0.05), H + 2], [px1, H + 2]];
+    s += `<g class="isl-vwin" style="--i:0">${halo(X(0.035), pTop - 22 * u, 40 * u, 'islvlamp')}</g>`;
+    s += `<path d="${polyD(outer)}" fill="url(#islvfacade)"/>`;
+    s += `<path d="${polyD(par)}" fill="url(#islvfacade)"/><path class="isl-vpshade" d="${polyD(par)}"/><path class="isl-vpshade" d="${polyD(par)}"/>`;
+    s += `<path d="${lineD(par.slice(0, 6))}" stroke-width="${F(Math.max(1.5, 3 * u))}" fill="none" style="stroke:var(--isl-vstone)"/>`;
+    let pj = '';
+    for (let y = pTop + 13 * u; y < pFoot - 2; y += 11 * u) pj += `M${F(X(-0.02))} ${F(y)}H${F(px1)}`;
+    for (let y = pTop + 16 * u; y < H; y += 12 * u) pj += `M${F(px1 + 1)} ${F(y)}L${F(px1 + 12 * u + (y - pTop) * (X(0.05) - 12 * u) / (H - pTop))} ${F(y)}`;
+    s += `<path class="isl-vcourse" d="${pj}" stroke-width=".7"/>`;
+    s += `<path class="f-near" d="${polyD([[X(-0.02), pFoot], [px1, pFoot], [px1, H + 2], [X(-0.02), H + 2]])}"/>`;
+    s += `<g class="isl-vwin" style="--i:0">${pool(X(0.07), pFoot + 12 * u, 80 * u, 16 * u, 0.8)}</g>`;
+    // the cannon: barrel tapering from breech to muzzle, its top edge catching the light; carriage and
+    // wheels on the floor
+    const bl = 70 * u, br = 8 * u, gx = eX - bl * 0.5, gy = pTop + eD - br * 0.2;
+    s += `<g transform="rotate(-5 ${F(gx)} ${F(gy)})"><path class="isl-vcannon" d="M${F(gx - bl * 0.32)} ${F(gy - br * 1.05)}L${F(gx + bl * 0.68)} ${F(gy - br * 0.72)}V${F(gy - br * 0.18)}L${F(gx - bl * 0.32)} ${F(gy + br * 0.05)}Z`
+      + `M${F(gx - bl * 0.32)} ${F(gy - br * 0.5)}m${F(-br * 0.55)} 0a${F(br * 0.55)} ${F(br * 0.55)} 0 1 0 ${F(br * 1.1)} 0a${F(br * 0.55)} ${F(br * 0.55)} 0 1 0 ${F(-br * 1.1)} 0Z"/>`
+      + `<path class="isl-vlit" d="M${F(gx - bl * 0.3)} ${F(gy - br * 1.02)}L${F(gx + bl * 0.66)} ${F(gy - br * 0.7)}v${F(br * 0.2)}L${F(gx - bl * 0.3)} ${F(gy - br * 0.78)}Z"/></g>`;
+    const wy = pFoot + 4 * u, wr = br * 1.25;
+    s += `<path class="isl-vcannon" d="M${F(gx - bl * 0.34)} ${F(wy)}L${F(gx - bl * 0.2)} ${F(gy - br * 0.1)}H${F(gx + bl * 0.14)}L${F(gx + bl * 0.24)} ${F(wy)}Z"/>`;
+    for (const wx of [-0.22, 0.16]) s += `<circle class="isl-vcannon" cx="${F(gx + bl * wx)}" cy="${F(wy)}" r="${F(wr)}"/><circle class="isl-vlit" cx="${F(gx + bl * wx)}" cy="${F(wy)}" r="${F(wr * 0.35)}"/>`;
+    // the fort's lamp on its post at the parapet's end
+    const flx = X(0.035), fly = pTop;
+    s += `<path class="isl-vpost" d="M${F(flx - 1.2)} ${F(fly)}V${F(fly - 16 * u)}H${F(flx + 1.2)}V${F(fly)}ZM${F(flx - 7 * u)} ${F(fly - 30 * u)}L${F(flx)} ${F(fly - 36 * u)}L${F(flx + 7 * u)} ${F(fly - 30 * u)}Z"/>`;
+    s += `<path class="isl-vlamp isl-vwin" style="--i:0" d="M${F(flx - 4.5 * u)} ${F(fly - 16 * u)}V${F(fly - 30 * u)}H${F(flx + 4.5 * u)}V${F(fly - 16 * u)}Z"/>`;
+    // The hills' lights, with the town's.
+    s += `<path class="s-vlight isl-vwin" style="--i:4" d="${lightsD(far)}" stroke-width="1.2"/>`;
     return s;
   }
 
@@ -994,6 +1433,33 @@
       moonX: 0.42,
       ground: null,
     },
+    'telescope': {
+      draw: telescope,
+      world: 'inland',
+      horizon: 0.62,
+      ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
+      moonBig: 2.4,
+      moonX: 0.32,
+      ground: null,
+    },
+    'bettys-hope': {
+      draw: bettysHope,
+      world: 'inland',
+      horizon: 0.64,
+      ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
+      moonBig: 2.2,
+      moonX: 0.3,
+      ground: null,
+    },
+    'court-house': {
+      draw: courtHouse,
+      world: 'inland',
+      horizon: 0.62,
+      ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
+      moonBig: 2.4,
+      moonX: 0.16,
+      ground: null,
+    },
     'nelsons-dockyard': {
       draw: dockyard,
       world: 'inland',
@@ -1005,9 +1471,12 @@
     'st-johns-harbour': {
       draw: harbour,
       world: 'inland',
-      horizon: 0.5,
-      // From Fort James, south-east into the harbour at the town.
-      face: 128,
+      // The horizon is the quay, so the town is mirrored in the harbour; the view turns to put the
+      // Moon over the hills, left of the cathedral.
+      horizon: 0.6,
+      ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
+      moonBig: 2.4,
+      moonX: 0.24,
       ground: null,
     },
     'pillars-of-hercules': {
@@ -1040,15 +1509,17 @@
       + '<radialGradient id="islvmist"><stop offset="0" class="st-haze" stop-opacity=".5"/><stop offset=".6" class="st-haze" stop-opacity=".16"/><stop offset="1" class="st-haze" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvpool"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset=".5" class="st-g1" stop-opacity=".18"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvsailg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" class="st-vsail" stop-opacity="1"/><stop offset="1" class="st-vsail2" stop-opacity="1"/></linearGradient>'
+      + '<linearGradient id="islvbrass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vbrass" stop-opacity="1"/><stop offset=".5" class="st-vbrass2" stop-opacity="1"/><stop offset="1" class="st-vbrass3" stop-opacity="1"/></linearGradient>'
       + '<linearGradient id="islvbay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vbay" stop-opacity=".55"/><stop offset="1" class="st-vbay" stop-opacity=".35"/></linearGradient>'
       + '<linearGradient id="islvharb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-sea0" stop-opacity="0"/><stop offset=".45" class="st-sea0" stop-opacity=".5"/><stop offset="1" class="st-sea0" stop-opacity=".3"/></linearGradient>'
+      + '<linearGradient id="islvfacade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vstrata" stop-opacity="1"/><stop offset="1" class="st-vstone" stop-opacity="1"/></linearGradient>'
       + '<radialGradient id="islvbulb"><stop offset="0" class="st-g1" stop-opacity=".5"/><stop offset=".5" class="st-g1" stop-opacity=".14"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '</defs>';
   }
 
   function build(W, H, piece) {
     const P = PIECES[piece];
-    if (!P || W < 200 || H < 200) return '';
+    if (!P || W < 200 || H < 100) return '';   // a head fitted to short text can be under 200px
     // A piece may set its own scale (pixels per degree); the Curtain Bluff view needs a wider field
     // for the Moon and Venus to sit in the sky, as in the homepage hero.
     const y0g = Math.round(H * (P.horizon || 0.58));
@@ -1063,7 +1534,13 @@
     const k = P.ground ? P.ground(W, H, y0, sea) : null;
     const g = k ? rise(W, H, k.xr0, k.xr1, k.yL, k.yP, 23) : { d: '', at: () => H };
     const reflH = Math.min(sea - 1, 5.5 * ppd);
-    const svg = `<svg class="isl-o isl-art" width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${defs(W, y0, H)}${extraDefs()}`
+    // The print grain: on the sky, and fainter on the water, laid before the land so the land covers
+    // it (owner, 2026-09-28: over the whole card, "on the land it reads as visual noise").
+    const grain = grainURL();
+    const gDef = grain ? `<defs><pattern id="islvgrain" patternUnits="userSpaceOnUse" width="160" height="160"><image href="${grain}" width="160" height="160"/></pattern></defs>` : '';
+    const gSky = grain ? `<rect class="isl-vgrain" width="${F(W)}" height="${y0 + 1}" fill="url(#islvgrain)"/>` : '';
+    const gSea = grain ? `<rect class="isl-vgrain isl-vgrain--sea" y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islvgrain)"/>` : '';
+    const svg = `<svg class="isl-o isl-art" width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${defs(W, y0, H)}${extraDefs()}${gDef}`
       + `<rect width="${F(W)}" height="${y0 + 1}" fill="url(#islskyg)"/>`
       + L.milkyWay(v, 'n', 'isl-n')
       + `<rect y="${F(y0 - 2.4 * ppd)}" width="${F(W)}" height="${F(2.4 * ppd)}" fill="url(#islhazeg)"/>`
@@ -1071,9 +1548,11 @@
       + stars(v, 'd', [], 'isl-d') + stars(v, 'n', [], 'isl-n')
       + L.planets(v, 'd', [], 'isl-d') + L.planets(v, 'n', [], 'isl-n')
       + L.moon(v, 'd', [], 'isl-d', P.moonBig || 1) + L.moon(v, 'n', [], 'isl-n', P.moonBig || 1)
+      + gSky
       + (P.world === 'coast' ? islands(v, 'f-isl') : '')
       + `<rect y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`
       + L.glowSea(v, 'd', 'isl-d', reflH) + L.glowSea(v, 'n', 'isl-n', reflH)
+      + gSea
       + `<path class="s-hz" d="M0 ${y0 + 0.5}H${F(W)}" stroke-width="1"/>`
       + ripples(v, 0, W, H, [], 9, 0.8)
       + (P.world === 'coast' ? land(v, 0, W, 13, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]], P.under !== false) : '')
@@ -1084,7 +1563,8 @@
     return own(svg, 'v');
   }
 
-  /* Print grain: drawn once into a small tile (a canvas), laid over every card, never animated. */
+  /* Print grain: drawn once into a small tile (a canvas), never animated; build() lays it on the sky
+     and, fainter, on the water, under the land. */
   let GRAIN = '';
   function grainURL() {
     if (GRAIN) return GRAIN;
@@ -1117,17 +1597,18 @@
       // layout-width.css), and never much taller than it is wide.
       const W = Math.floor(fig.clientWidth);
       const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 20;
-      // A slot with an aspect (a wide head slot) takes its own shape.
+      // A slot with an aspect (a wide head slot) takes its own shape; one set to fit the text is
+      // exactly as tall as the text beside it, so nothing on the page moves.
       const aspect = parseFloat(fig.dataset.aspect);
-      const H = aspect ? Math.floor(clamp(W * aspect, 180, 700))
-        : Math.floor(clamp(Math.min(W * 1.02, innerHeight - 5.5 * rem - 24), 320, 820));
+      const text = fig.dataset.fit === 'text' ? fig.parentElement.querySelector(':scope > .isl-head__text, :scope > .isl-stack__text') : null;
+      const H = text ? Math.floor(Math.max(120, text.getBoundingClientRect().height))
+        : aspect ? Math.floor(clamp(W * aspect, 180, 700))
+          : Math.floor(clamp(Math.min(W * 1.02, innerHeight - 5.5 * rem - 24), 320, 820));
       const key = W + 'x' + H;
       if (key === last) return;
       last = key;
       card.style.height = `${H}px`;
-      const grain = grainURL();
-      card.innerHTML = build(W, H, fig.dataset.vignette)
-        + (grain ? `<i class="isl-grain" style="background-image:url(${grain})"></i>` : '');
+      card.innerHTML = build(W, H, fig.dataset.vignette);
       if (!started) {
         started = true;
         if (!reduce.matches) {
@@ -1144,6 +1625,11 @@
     paint();
     (A.redraw = A.redraw || []).push(() => { last = ''; paint(); });
     let t;
-    if ('ResizeObserver' in window) new ResizeObserver(() => { clearTimeout(t); t = setTimeout(paint, 150); }).observe(fig);
+    if ('ResizeObserver' in window) {
+      const ro = new ResizeObserver(() => { clearTimeout(t); t = setTimeout(paint, 150); });
+      ro.observe(fig);
+      const text = fig.dataset.fit === 'text' && fig.parentElement.querySelector(':scope > .isl-head__text, :scope > .isl-stack__text');
+      if (text) ro.observe(text);
+    }
   };
 })();

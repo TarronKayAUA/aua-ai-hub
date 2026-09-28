@@ -918,7 +918,7 @@ def _door_foot(page, article_html: str) -> str:
         label, total, icon = f'Browse {_esc(tab["title"])}', len(tab["flat"]), tab["icon"]
     elif page.is_homepage:
         body, total, n = _site_map(page)
-        attrs = (f'data-section="the site" data-short="Browse site" data-title="The whole site" '
+        attrs = (f'data-section="the site" data-short="Browse" data-title="The whole site" '
                  f'data-unit="section" data-total="{total}" data-groups="{n}" '
                  f'data-where="on the home page" data-group=""')
         label, icon = "Browse the site", "sitemap-outline"

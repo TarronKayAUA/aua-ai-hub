@@ -42,7 +42,16 @@ _S = {"slots": [], "placed": [], "pages_seen": set()}
 # docs/stylesheets/layout-art.css sets the two side by side from 68.75em, the picture on the right
 # where the head left the frame empty. Below that the wrapper is an ordinary block and the figure is
 # hidden, so the page reads as before.
-HEAD_END = re.compile(r'<(h2\b|div class="grid|p class="kind-key)')
+HEAD_END = re.compile(r'<(h2\b|div class="grid|p class="kind-key|div class="learn-door|div data-tp-landing)')
+
+# STACKS (2026-09-28, the About page): `section: [first, last]` wraps the h2 sections from `first`
+# through `last` in `div.isl-stack` with the picture beside them. layout_width.py gives the stack
+# its own role and a full-width row, so the sections stack in one column and the picture takes the
+# other; below 68.75em it is an ordinary block and the figure is hidden.
+#
+# FIT (2026-09-28, the owner: "don't shift elements down, just fit it in to the small section of
+# text at the top"): `fit: text` makes the picture exactly as tall as the text beside it, so a head
+# or stack keeps the height it had; docs/assets/art/island-vignettes.js reads the text's height.
 
 
 def _load() -> list[dict]:
@@ -71,6 +80,22 @@ def on_page_content(html, page, config, files, **kwargs):
     for s in mine:
         kind = f' data-kind="{s["kind"]}"' if s.get("kind") else ""
         aspect = f' data-aspect="{float(s["aspect"]):.3f}"' if s.get("aspect") else ""
+        fit = ' data-fit="text"' if s.get("fit") == "text" else ""
+        aspect += fit
+        if isinstance(s["section"], list):
+            first, last = s["section"][0], s["section"][-1]
+            a = re.search(r'<h2\b[^>]*\bid="' + re.escape(first) + r'"[^>]*>', html)
+            b = re.search(r'<h2\b[^>]*\bid="' + re.escape(last) + r'"[^>]*>', html)
+            if not a or not b or b.start() < a.start():
+                raise SystemExit(f"layout_art: {src} has no h2 sections {first} to {last} in order (data/art_slots.yaml)")
+            nxt = re.compile(r"<h2\b").search(html, b.end())
+            end = nxt.start() if nxt else len(html)
+            fig = (f'<figure class="isl-vignette isl-vignette--stack" data-vignette="{s["piece"]}"{kind}{aspect}'
+                   f' aria-hidden="true"></figure>')
+            html = (html[:a.start()] + '<div class="isl-stack"><div class="isl-stack__text">' + html[a.start():end]
+                    + "</div>" + fig + "</div>\n" + html[end:])
+            _S["placed"].append(f'{src}#{first}..{last} ({s["piece"]})')
+            continue
         if s["section"] == "_head":
             h1 = re.search(r"<h1\b", html)
             end = HEAD_END.search(html, h1.end()) if h1 else None

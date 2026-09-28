@@ -703,11 +703,31 @@ body.has-secnav .md-content__inner {
   .secnav[data-mode="corner"] .secnav__action .secnav__long {
     display: none;
   }
-  /* The tray hugs its buttons: one under the other, as wide as the widest. */
+  /* The tray holds its buttons side by side in one row (owner, 2026-09-28: stacked, they covered too
+     much of the page): short labels ("Browse", "This page"), no chevrons, each button its own width. */
   .secnav[data-mode="corner"] .secnav__bar {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     align-items: stretch;
+    max-width: calc(100vw - max(44px, 2.4rem) - 2.4rem);
+  }
+  .secnav[data-mode="corner"] .secnav__bar > .secnav__btn {
+    flex: 0 1 auto;
+    min-width: 0;
+    gap: 0.35rem;
+    padding-right: 0.55rem;
+  }
+  .secnav[data-mode="corner"] .secnav__chev {
+    display: none;
+  }
+}
+/* The smallest phones (under 360px): the buttons drop their round icons, so both labels still fit whole. */
+@media screen and (max-width: 22.4375em) {
+  .secnav[data-mode="corner"] .secnav__bar > .secnav__btn .secnav__icon {
+    display: none;
+  }
+  .secnav[data-mode="corner"] .secnav__bar > .secnav__btn {
+    padding-left: 0.6rem;
   }
 }
 

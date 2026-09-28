@@ -786,23 +786,24 @@ body[data-page-type="lesson"] .md-typeset .learn-foot + .page-end {
    ART: the Learn plate (Specimen and Signal, added 2026-09-26).
    Everything above this line is the learn package and is unchanged.
    -------------------------------------------------------------------------
-   One decorative plate beside the Learn landing's title: a multipolar
+   One decorative plate under Module 1's title: a multipolar
    neuron and, across a dashed division, a small artificial network drawn
    as a diagram (circles and straight lines). The division keeps the
    comparison a metaphor: the network is modelled on the neuron, it is not
-   part of it. Markup: an empty, aria-hidden wrapper at the top of
-   docs/pathway/index.md; drawing: docs/assets/art/learn-plate.svg;
-   behaviour: the ART section at the end of layout-learn.js.
+   part of it. Markup: an empty, aria-hidden wrapper under the title of
+   docs/pathway/how-ai-works.md (Module 1, How AI Works); drawing:
+   docs/assets/art/learn-plate.svg; behaviour: the ART section at the end
+   of layout-learn.js. It stood beside the Learn landing's title until
+   2026-09-28, when that head took the telescope (data/art_slots.yaml).
 
-   Where it sits. The plate is exactly the reference shelf's column (21rem,
-   the .learn-door grid above) and stands over it, from the title's cap line
-   to the Start button's bottom edge. The head measures 8.63rem from the
-   title's top to the button's bottom at every width from 60em (checked at
-   960, 1024, 1280, 1440, 1920 and 2560px), so 0.566rem + 8.064rem lands
-   the plate's bottom on the button's. It is absolutely placed inside a
-   zero-height wrapper, so it takes no space and moves nothing. Below 60em
-   there is no room beside the title without pushing the Start button or
-   the introduction down, so the plate is neither drawn nor downloaded.
+   Where it sits. In the empty space under Module 1's title, meta line and
+   Listen control, beside the goals panel: the head's main column stretches
+   to the row, and the plate stands at its foot, 21rem wide, its bottom on
+   the goals panel's bottom edge and its height what the column leaves (at
+   most 8.064rem, with 1rem clear above; layout-learn.js measures it). It is
+   absolutely placed, so it takes no space and moves nothing. With less
+   than 5rem of room (narrow windows, where the head is one column), the
+   plate is neither drawn nor downloaded.
 
    Colour. The light palette is inspired by brightfield microscopy (ink on
    a pale plate), the dark one by darkfield (bright edges on navy). They are
@@ -849,19 +850,24 @@ body[data-md-color-scheme="slate"] .learn-plate {
 }
 
 @media screen and (min-width: 60em) {
-  .md-typeset .learn-plate {
-    display: block;
+  .md-typeset .w-head__main:has(> .learn-plate) {
     position: relative;
-    height: 0;
+    align-self: stretch;
+  }
+
+  .md-typeset .learn-plate[data-room] {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 21rem;
+    max-width: 100%;
     margin: 0;
   }
 
   .learn-plate__panel {
     position: absolute;
-    top: 0.566rem;
-    right: 0;
-    width: 21rem;
-    height: 8.064rem;
+    inset: 0;
     box-sizing: border-box;
     overflow: hidden;
     border: 1px solid var(--lp-rule);
