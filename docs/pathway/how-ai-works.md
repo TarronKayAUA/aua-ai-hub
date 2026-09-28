@@ -6,6 +6,8 @@ last_reviewed: 2026-09-01
 
 <span class="meta-chip">Everyone</span><span class="meta-chip">About 10 minutes</span>
 
+<div class="learn-plate" data-learn-plate aria-hidden="true"></div>
+
 ## What You Will Be Able to Do
 
 - Explain, in one sentence each, what a large language model (LLM) is and how it produces text.

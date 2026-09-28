@@ -189,7 +189,10 @@ class Block:
             return "silent"
         if t == "p" and (c & {"learn-progress", "learn-meta"} or 'class="meta-chip' in self.html[:400]):
             return "chrome"
-        if c & {"listen", "page-action"}:
+        # The Listen control, a page action, and the Learn plate's empty host
+        # under Module 1's title (layout-learn.js fills it; 2026-09-28) are
+        # the head's own furniture, not content to lay out.
+        if c & {"listen", "page-action", "learn-plate"}:
             return "chrome"
         if t in PROSE:
             return "prose"
@@ -202,6 +205,10 @@ class Block:
         # the list it was, so it is placed as the list was.
         if t == "div" and "door-rows" in c:
             return "prose"
+        # Sections stacked beside an Island Night picture (layout_art.py, the About page): one
+        # block, placed whole on a row of its own.
+        if t == "div" and "isl-stack" in c:
+            return "stack"
         if t == "div" and len(re.findall(r"<h2\b", self.html)) >= 2 and not self._grid():
             return "terms"
         if t == "figure":
@@ -236,7 +243,7 @@ class Block:
         return len(spans)
 
     def _wide(self) -> bool:
-        if self.role == "terms":
+        if self.role in ("terms", "stack"):
             return True
         if self.role == "cards":
             # One or two cards sit beside the paragraph that introduces them

@@ -62,3 +62,36 @@ slots:
     piece: lamp-steps
     kind: guide
     aspect: 0.42
+
+  # The main pages that had no Island Night art (owner, 2026-09-28): each
+  # picture fits the height of the text beside it, so nothing below moves.
+  # Learn: a telescope at a hilltop lookout under the Moon and the Milky Way
+  # (the neuron plate that was here moved to Module 1, How AI Works).
+  - page: pathway/index.md
+    section: _head
+    piece: telescope
+    kind: lesson
+    fit: text
+
+  # Tools & Prompts: the Betty's Hope sugar mill, a tool that turns wind
+  # into work ("just fit it in to the small section of text at the top").
+  - page: tools-and-prompts.md
+    section: _head
+    piece: bettys-hope
+    fit: text
+
+  # Governance: the Old Court House in St John's (1750), where the court sat
+  # and the Legislative Council met; replaces the old banner (archived in
+  # graphics/archive/).
+  - page: governance/index.md
+    section: _head
+    piece: court-house
+    kind: governance
+    fit: text
+
+  # About: Contact and Purpose stacked in one column, St John's harbour from
+  # Fort James beside them.
+  - page: about.md
+    section: [contact, purpose]
+    piece: st-johns-harbour
+    fit: text

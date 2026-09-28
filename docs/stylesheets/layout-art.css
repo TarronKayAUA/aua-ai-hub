@@ -342,7 +342,8 @@
 .isl .isl-vstep { fill: var(--isl-vstone); }
 /* The finish (2026-09-28): the water's ripples and columns of light, lit and shaded planes of the
    land, the sails' shading and seams, navigation lights, the steps' risers and walls, lanterns, and
-   the print grain over the card. */
+   the print grain on the sky and, fainter, on the water (never on the land: the owner, 2026-09-28,
+   "on the land it reads as visual noise"). */
 .isl { --isl-vlit: #56708c; --isl-vshadow: #0c2034; --isl-vsail2: #b9c4d2; --isl-vwallc: #6d6a63; --isl-vriser: #3b4250; }
 [data-md-color-scheme="slate"] .isl { --isl-vlit: #1d3450; --isl-vshadow: #03080f; --isl-vsail2: #5d6b7f; --isl-vwallc: #2b3038; --isl-vriser: #161b24; }
 .isl .s-vrip { stroke: var(--isl-rip); fill: none; }
@@ -360,16 +361,44 @@
 .isl .isl-vriser { fill: var(--isl-vriser); }
 .isl .isl-vwall { fill: var(--isl-vwallc); }
 .isl .isl-vpost { fill: var(--isl-near); }
-.isl-vig .isl-grain { position: absolute; inset: 0; pointer-events: none; opacity: 0.32; }
-[data-md-color-scheme="slate"] .isl-vig .isl-grain { opacity: 0.6; }
+.isl-vig .isl-vgrain { opacity: 0.32; }
+[data-md-color-scheme="slate"] .isl-vig .isl-vgrain { opacity: 0.6; }
+.isl-vig .isl-vgrain--sea { opacity: 0.1; }
+[data-md-color-scheme="slate"] .isl-vig .isl-vgrain--sea { opacity: 0.2; }
 .isl .isl-vstep-edge { stroke: var(--isl-vstone); fill: none; stroke-linecap: round; }
 .isl .isl-vstep-rise { stroke: var(--isl-vriser); fill: none; }
 .isl .isl-vcourse { stroke: var(--isl-vriser); stroke-opacity: 0.45; fill: none; }
+/* The telescope's brass; the mill's timber, lattice and the cane. */
+.isl { --isl-vbrass: #e2c27a; --isl-vbrass2: #b58a3c; --isl-vbrass3: #6e5222; --isl-vwoodc: #5a4634; --isl-vwoodf: #4a3a2c; --isl-vcane: #3e5f58; }
+[data-md-color-scheme="slate"] .isl { --isl-vbrass: #a88a4e; --isl-vbrass2: #7a5f2c; --isl-vbrass3: #3d2e14; --isl-vwoodc: #33291f; --isl-vwoodf: #2a2119; --isl-vcane: #1d302d; }
+.isl .st-vbrass { stop-color: var(--isl-vbrass); }
+.isl .st-vbrass2 { stop-color: var(--isl-vbrass2); }
+.isl .st-vbrass3 { stop-color: var(--isl-vbrass3); }
+.isl .isl-vbrass2 { fill: var(--isl-vbrass2); stroke: var(--isl-vbrass2); }
+.isl .isl-vtripod { stroke: var(--isl-vwoodc); fill: none; stroke-linecap: round; }
+.isl .isl-vtripod-f { fill: var(--isl-vbrass3); }
+.isl .isl-vlens { fill: var(--isl-moon); fill-opacity: 0.8; }
+.isl .isl-vwood { stroke: var(--isl-vwoodc); fill: none; stroke-linecap: round; }
+.isl .isl-vwood-f { fill: var(--isl-vwoodf); }
+.isl .isl-vlattice { fill: var(--isl-vsail); fill-opacity: 0.18; stroke: var(--isl-vwoodc); }
+.isl .isl-vcane { stroke: var(--isl-vcane); fill: none; stroke-linecap: round; }
+.isl { --isl-vtrack: #6f7a78; }
+[data-md-color-scheme="slate"] .isl { --isl-vtrack: #2c3437; }
+.isl .isl-vtrack { fill: var(--isl-vtrack); fill-opacity: 0.55; }
+.isl .isl-vbush { fill: var(--isl-vshadow); }
+.isl .isl-vrailing { stroke: var(--isl-near); fill: none; }
+/* The mill's sails turn a quarter in the one pass, then rest; still under reduced motion. */
+.isl .isl-vsails { transform-box: view-box; }
+.isl-vig.isl-vrun .isl-vsails { animation: isl-vturn 3.4s cubic-bezier(.2, .6, .3, 1) 0.4s both; }
+@keyframes isl-vturn { from { transform: rotate(-90deg); } to { transform: rotate(0deg); } }
 .isl .isl-vpreflect { fill: var(--isl-vstone); fill-opacity: 0.22; }
 /* The Pillars of Hercules' limestone: its face in the last light, its strata and its hollows. */
 .isl { --isl-vstone: #a39a86; --isl-vstrata: #7f7765; }
 [data-md-color-scheme="slate"] .isl { --isl-vstone: #3b4049; --isl-vstrata: #2a2e36; }
 .isl .isl-vstone { fill: var(--isl-vstone); }
+.isl .isl-vmul { stroke: var(--isl-vriser); stroke-opacity: 0.55; fill: none; }
+.isl .st-vstone { stop-color: var(--isl-vstone); }
+.isl .st-vstrata { stop-color: var(--isl-vstrata); }
 .isl .isl-vstrata { stroke: var(--isl-vstrata); stroke-opacity: 0.8; fill: none; }
 .isl .st-vhol { stop-color: var(--isl-near); }
 .isl .isl-vpennant { fill: var(--k-line, var(--isl-rim)); }
@@ -390,6 +419,21 @@
   }
   .md-typeset .isl-head__text > :last-child { margin-bottom: 0; }
   .md-typeset figure.isl-vignette--head { align-self: center; }
+  /* A picture that fits its text: the row is the text's height, the picture fills it. */
+  .md-typeset .isl-head:has(> figure[data-fit="text"]) { align-items: stretch; }
+  .md-typeset figure.isl-vignette[data-fit="text"] { align-self: stretch; }
+  /* Stacked sections beside a picture (the About page): the sections in one column at the reading
+     measure, the picture in the other, as tall as the sections. */
+  .md-typeset .isl-stack {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 2.4rem;
+    align-items: stretch;
+  }
+  .md-typeset .isl-stack__text > :first-child { margin-top: 0; }
+  .md-typeset .isl-stack__text > :last-child { margin-bottom: 0; }
+  .md-typeset .isl-stack__text > :is(p, ul, ol) { max-width: var(--w-measure, 31rem); }
+  .md-typeset figure.isl-vignette--stack { align-self: stretch; }
 }
 /* One pass: the card fades in, then the lit room's windows and the door light in turn. Opacity
    only; nothing under reduced motion (the script never starts the pass then). */

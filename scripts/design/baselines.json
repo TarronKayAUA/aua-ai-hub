@@ -12,8 +12,8 @@
   },
   "reference": {
    "pages": 31,
-   "blank_1920": 0.173,
-   "blank_1440": 0.191,
+   "blank_1920": 0.175,
+   "blank_1440": 0.192,
    "cpl_median": 78,
    "cpl_max": 92
   },
@@ -40,7 +40,7 @@
   },
   "all": {
    "pages": 95,
-   "blank_1920": 0.2,
+   "blank_1920": 0.201,
    "blank_1440": 0.208,
    "cpl_median": 79.0,
    "cpl_max": 212
@@ -69,17 +69,17 @@
   "about/": {
    "type": "reference",
    "1920": {
-    "blank": 0.161,
-    "worst": 0.309,
-    "height": 3851,
+    "blank": 0.225,
+    "worst": 0.328,
+    "height": 4056,
     "inversions": 0,
     "cpl_median": 77,
     "cpl_max": 87
    },
    "1440": {
-    "blank": 0.178,
-    "worst": 0.334,
-    "height": 3485,
+    "blank": 0.221,
+    "worst": 0.346,
+    "height": 3671,
     "inversions": 0,
     "cpl_median": 77,
     "cpl_max": 87

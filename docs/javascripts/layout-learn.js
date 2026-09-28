@@ -221,15 +221,16 @@
  * ART: the Learn plate (Specimen and Signal, added 2026-09-26).
  * Everything above this line is the learn package and is unchanged.
  * -------------------------------------------------------------------------
- * Draws the decorative plate beside the Learn landing's title (the empty
- * [data-learn-plate] wrapper in docs/pathway/index.md) from two generated
- * files in docs/assets/art/:
+ * Draws the decorative plate under Module 1's title (the empty
+ * [data-learn-plate] wrapper in docs/pathway/how-ai-works.md; it stood beside
+ * the Learn landing's title until 2026-09-28, when that head took the
+ * telescope) from two generated files in docs/assets/art/:
  *   learn-plate.svg   the drawing; its signal layer already rests on the
  *                     composed still (what reduced motion shows, and where
  *                     the motion ends)
  *   learn-plate.json  one pass of the signal: keyframes per signal element
- * Only at 60em and up, where layout-learn.css shows the plate, so phones
- * and narrow windows fetch neither file.
+ * Only at 60em and up, and only when the head leaves room (fit, below), so
+ * phones and narrow windows fetch neither file.
  *
  * The signal plays once (3.3 seconds; the length is in learn-plate.json)
  * with the Web Animations API, on transform and opacity only. It is skipped, and the still shows at once,
@@ -254,6 +255,33 @@
   var NS = "http://www.w3.org/2000/svg";
   var started = false;
   var anims = [];
+  var MAX_H = 8.064; /* rem: the plate's full height, as it was on the landing */
+  var MIN_H = 5; /* rem: less room than this and the plate is not drawn */
+
+  /* The plate fills the space the head's main column leaves under the title's
+     lines, beside the goals panel, down to that panel's bottom edge (the
+     column stretches to the row, layout-learn.css). This measures that space
+     and sets the plate's height; with too little room it stays hidden. */
+  function fit() {
+    var main = host.parentElement;
+    if (!main) return false;
+    var rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 16;
+    var box = main.getBoundingClientRect();
+    var used = box.top;
+    Array.prototype.forEach.call(main.children, function (c) {
+      if (c !== host) used = Math.max(used, c.getBoundingClientRect().bottom);
+    });
+    var h = Math.min(MAX_H * rem, box.bottom - used - rem);
+    var ok = WIDE.matches && h >= MIN_H * rem;
+    if (ok) {
+      host.style.height = h + "px";
+      host.setAttribute("data-room", "");
+    } else {
+      host.style.height = "";
+      host.removeAttribute("data-room");
+    }
+    return ok;
+  }
 
   function now() {
     return window.performance && performance.now ? performance.now() : LIMIT;
@@ -330,7 +358,7 @@
   }
 
   function mount() {
-    if (started || !WIDE.matches) return;
+    if (started || !fit()) return;
     started = true;
     var motion = quiet() ? null : fetch(MOTION_URL).then(function (r) {
       return r.ok ? r.json() : null;
@@ -372,6 +400,20 @@
   onChange(REDUCE, function () {
     if (REDUCE.matches) settle();
   });
-  onChange(WIDE, mount);
+  onChange(WIDE, function () {
+    if (fit()) mount();
+  });
+  /* The column, and everything in it: the Listen control settles to its
+     compact size only after listen.js runs, and the column does not change
+     size when it does. */
+  if (window.ResizeObserver) {
+    var ro = new ResizeObserver(function () {
+      if (fit()) mount();
+    });
+    ro.observe(host.parentElement);
+    Array.prototype.forEach.call(host.parentElement.children, function (c) {
+      if (c !== host) ro.observe(c);
+    });
+  }
   mount();
 })();

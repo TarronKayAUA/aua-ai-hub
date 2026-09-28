@@ -581,35 +581,3 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) > details > summary {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-
-/* --- Governance landing head (space round, level 3, for the owner's
-   decision) -----------------------------------------------------------------
-   The section's own banner, which no page used, beside the introduction
-   where the head left the right half empty. Decorative: empty alt, hidden
-   from assistive technology; it carries its own colors for both schemes. */
-.md-typeset .gov-head > p {
-  margin-top: 0;
-}
-
-.md-typeset .gov-head__art {
-  display: none;
-}
-
-@media screen and (min-width: 60em) {
-  .md-typeset .gov-head {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    column-gap: 2.4rem;
-    align-items: center;
-    margin: 0 0 1rem;
-  }
-  .md-typeset .gov-head > p {
-    margin: 0;
-  }
-  .md-typeset .gov-head__art {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: 0;
-  }
-}
