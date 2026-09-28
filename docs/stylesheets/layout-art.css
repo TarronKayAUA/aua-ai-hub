@@ -68,6 +68,60 @@
 [data-md-color-scheme="slate"] .isl .isl-n { display: inline; }
 [data-md-color-scheme="slate"] .isl .isl-d { display: none; }
 
+/* THE FOUR TIMES OF DAY (owner, 2026-09-28; SPEC section 12): in the light scheme a vignette shows Dawn,
+   Day or Dusk by the visitor's clock (its data-sky, island-vignettes.js); the dark scheme is always
+   Night. Each version is one set of tokens shared by every piece: the sky's gradient, the sea, the
+   land's three depths, the clouds, and the materials pieces draw with. Dawn keeps the lights on; by Day
+   they are off, the warm halos and pools go (--isl-g1 clear) and windows show as glass. */
+.isl .isl-a, .isl .isl-y { display: none; }
+[data-md-color-scheme="default"] .isl[data-sky="dawn"] .isl-a,
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-y { display: inline; }
+[data-md-color-scheme="default"] .isl:is([data-sky="dawn"], [data-sky="day"]) .isl-d { display: none; }
+.isl .st-cloud { stop-color: var(--isl-cloud, #ffffff); }
+.isl .st-cloud-s { stop-color: var(--isl-cloud-s, #c9d6e0); }
+/* DAWN: the Sun three degrees below the horizon behind a west-facing view, so the western sky shows
+   the pink band above the Earth's blue-gray shadow; the land still dim, the lamps still lit. */
+[data-md-color-scheme="default"] .isl[data-sky="dawn"] {
+  --isl-sky0: #34507f; --isl-sky1: #6078a6; --isl-sky2: #a891b4; --isl-sky3: #e6b4b0; --isl-hz: #8e9ab4;
+  --isl-g1: #ffd9a8; --isl-g2: #f0a79a; --isl-g3: #9a86ad;
+  --isl-sea0: #9aa5bf; --isl-sea1: #56729a; --isl-sea2: #2f4d72; --isl-haze: #dcc8d2;
+  --isl-isl: #7d88a6; --isl-far: #3e5474; --isl-near: #273a53;
+  --isl-rip: #dfe2ef; --isl-rip-a: 0.28; --isl-hzline: rgba(255, 228, 222, 0.4);
+  --isl-rim: #f4c9c2; --isl-bird: #1d2b40;
+  --isl-cloud: #f6d3cc; --isl-cloud-s: #8c93b3;
+  --isl-vbay: #7390b4; --isl-vsand: #dccbc6; --isl-vwall: #d8dce6; --isl-vrail: rgba(232, 236, 244, 0.55);
+}
+/* DAY: mid-morning, the Sun high behind a west-facing view: a blue sky paling to haze at the horizon,
+   trade-wind cumulus, a turquoise harbour, green hills. */
+[data-md-color-scheme="default"] .isl[data-sky="day"] {
+  --isl-sky0: #3b7db6; --isl-sky1: #5c9bcb; --isl-sky2: #8fbcdc; --isl-sky3: #bad6e8; --isl-hz: #dde8ee;
+  --isl-veg-d: #2d4a2f; --isl-veg-l: #86a35c; --isl-veg-t: #9a8660; --isl-vhouse: #f4f2ec; --isl-vroofg: #8a969c;
+  --isl-g1: rgba(255, 255, 255, 0); --isl-g2: rgba(255, 255, 255, 0); --isl-g3: rgba(255, 255, 255, 0);
+  --isl-sea0: #6fa3b8; --isl-sea1: #2f7ca1; --isl-sea2: #1e5f86; --isl-haze: #e6eff3;
+  --isl-isl: #9fb5b8; --isl-far: #6a8a68; --isl-near: #45663d;
+  --isl-rip: #eef7fa; --isl-rip-a: 0.35; --isl-hzline: rgba(255, 255, 255, 0.45);
+  --isl-rim: #f3efdf; --isl-bird: #2a3a44; --isl-pulse: #33495a;
+  --isl-cloud: #ffffff; --isl-cloud-s: #c3d0dc;
+  --isl-vbay: #63aeb1; --isl-vsand: #f1e4c2; --isl-vsand-a: 0.9; --isl-vsurf: #ffffff; --isl-vsurf-a: 0.85;
+  --isl-vwall: #f5f7f9; --isl-vrail: rgba(52, 62, 72, 0.6);
+  --isl-vstone: #cdbfa3; --isl-vstrata: #a99c80; --isl-vtown: #d9d2c3; --isl-vdark: #3a4d5c;
+}
+[data-md-color-scheme="default"] .isl[data-sky="day"] :is(.s-vlight, .s-vglow, .isl-vglow, .isl-vlamp, .isl-vlamps) { display: none; }
+/* Day details a piece draws only for daylight (houses where the night shows lights), and its vegetated
+   land (`isl-land`) mottled with scrub, finer and fainter on the far hills. */
+.isl .isl-ydet { display: none; }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-ydet { display: inline; }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-land.f-far { fill: url(#islvvegf); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-land.f-near { fill: url(#islvvegn); }
+#islvvegf .isl-veg-b { fill: var(--isl-far); }
+#islvvegn .isl-veg-b { fill: var(--isl-near); }
+.isl .isl-veg-d { fill: var(--isl-veg-d, #2c4a2c); }
+.isl .isl-veg-l { fill: var(--isl-veg-l, #7a9a52); }
+.isl .isl-veg-t { fill: var(--isl-veg-t, #8f7f5a); }
+.isl .isl-vhouse { fill: var(--isl-vhouse, #f2f0ea); }
+.isl .isl-vroofg { fill: var(--isl-vroofg, #7d8a90); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] [fill*="lamp)"] { display: none; }
+
 /* --- Paint ------------------------------------------------------------------ */
 .isl .st-sky0 { stop-color: var(--isl-sky0); }
 .isl .st-sky1 { stop-color: var(--isl-sky1); }

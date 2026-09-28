@@ -264,7 +264,7 @@
     const range = P([[0.45, 0.25], [0.46, 0.236], [0.475, 0.226], [0.49, 0.214], [0.51, 0.2], [0.53, 0.186], [0.56, 0.168], [0.585, 0.154], [0.61, 0.164],
       [0.645, 0.149], [0.67, 0.16], [0.7, 0.176], [0.73, 0.19], [0.76, 0.198], [0.8, 0.204], [0.85, 0.199],
       [0.9, 0.21], [0.95, 0.214], [1.02, 0.22], [1.02, 0.285]]);
-    s += `<path class="f-far" d="${poly(range)}${scrub(range.slice(1, -1), 4, 0.7, 1.8)}"/>`;
+    s += `<path class="f-far isl-land" d="${poly(range)}${scrub(range.slice(1, -1), 4, 0.7, 1.8)}"/>`;
     for (let i = 0; i < 30; i++) {             // villages on the range's lower slopes
       const x = 0.55 + r() * 0.47;
       lights.push([X(x), Yp(0.25 + r() * 0.03), 3]);
@@ -279,11 +279,11 @@
     for (let i = 0; i < 22; i++) lights.push([X(0.58 + r() * 0.42), Yp(0.29 + r() * 0.025), 2]);
     // the low land between the two harbours, and the town's slope on the right
     const between = P([[0.6, 0.326], [0.7, 0.32], [0.8, 0.325], [0.9, 0.318], [1.02, 0.318], [1.02, 0.358], [0.62, 0.358]]);
-    s += `<path class="f-far" d="${poly(between)}"/>`;
+    s += `<path class="f-far isl-land" d="${poly(between)}"/>`;
     const town = P([[0.705, 0.45], [0.72, 0.432], [0.75, 0.418], [0.8, 0.412], [0.86, 0.418], [0.92, 0.41],
       [1.02, 0.402], [1.02, 1.02], [0.7, 1.02], [0.74, 0.74], [0.785, 0.66], [0.795, 0.6], [0.78, 0.56],
       [0.745, 0.54], [0.72, 0.52], [0.71, 0.48]]);
-    s += `<path class="f-near" d="${poly(town)}${scrub(town.slice(0, 7), 5, 0.9, 2.2)}"/>`;
+    s += `<path class="f-near isl-land" d="${poly(town)}${scrub(town.slice(0, 7), 5, 0.9, 2.2)}"/>`;
     for (let i = 0; i < 34; i++) lights.push([X(0.74 + r() * 0.27), Yp(0.43 + r() * 0.2), 3]);
     // Galleon Beach: the pale curve of sand on the bay's right shore
     s += `<path class="isl-vsand" d="${line(P([[0.748, 0.545], [0.772, 0.558], [0.79, 0.585], [0.792, 0.615], [0.784, 0.655]]))}" stroke-width="${F(Math.max(1.5, Y(0.01)))}"/>`;
@@ -302,7 +302,7 @@
       [0.522, 0.458], [0.513, 0.482], [0.5, 0.5], [0.486, 0.508], [0.474, 0.5], [0.478, 0.482], [0.49, 0.462],
       [0.494, 0.445], [0.47, 0.434], [0.44, 0.422], [0.4, 0.415], [0.35, 0.41], [0.3, 0.404], [0.25, 0.392],
       [0.215, 0.386]]);
-    s += `<path class="f-near" d="${poly(head)}${scrub(head.slice(2, 17), 6, 0.9, 2.3)}"/>`;
+    s += `<path class="f-near isl-land" d="${poly(head)}${scrub(head.slice(2, 17), 6, 0.9, 2.3)}"/>`;
     const shore = head.slice(18);
     s += `<path class="isl-vshore" d="${line(shore)}" stroke-width="1"/>`;
     s += `<path class="isl-vsurf" d="${line(P([[0.186, 0.366], [0.19, 0.38], [0.2, 0.388], [0.215, 0.39], [0.235, 0.396]]))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`;
@@ -332,11 +332,22 @@
     const slope = P([[-0.02, 0.535], [0.05, 0.545], [0.1, 0.56], [0.15, 0.575], [0.19, 0.592], [0.22, 0.612],
       [0.245, 0.66], [0.26, 0.74], [0.3, 0.76], [0.36, 0.73], [0.42, 0.77], [0.5, 0.79], [0.58, 0.8], [0.64, 0.74],
       [0.68, 0.67], [0.73, 0.66], [0.8, 0.7], [0.88, 0.72], [1.02, 0.74], [1.02, 1.05], [-0.02, 1.05]]);
-    s += `<path class="f-near" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
+    s += `<path class="f-near isl-land" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
     const lx = X(0.43), ly = Yp(0.772);
     s += `<path class="f-near" d="M${F(lx - 1)} ${F(ly + Y(0.02))}V${F(ly - Y(0.05))}H${F(lx + 1)}V${F(ly + Y(0.02))}Z"/>`;
     s += `<circle cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Y(0.055))}" fill="url(#islvlamp)"/>`;
     s += `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Math.max(1.5, Y(0.008)))}"/>`;
+    // By Day the lights on the slopes and along Falmouth's shore are houses: white walls, red and grey
+    // roofs, where the night shows their windows (the Day version shows these; the others do not).
+    let walls = '', roofsR = '', roofsG = '';
+    for (const [x, y, g] of lights) {
+      if (g < 2 || r() < 0.4) continue;
+      const w = Y(0.008 + (g === 3 ? 0.004 : 0)), h = w * 0.62;
+      walls += `M${F(x - w / 2)} ${F(y)}h${F(w)}v${F(-h)}h${F(-w)}Z`;
+      const roof = `M${F(x - w * 0.62)} ${F(y - h + 0.3)}L${F(x)} ${F(y - h - w * 0.36)}L${F(x + w * 0.62)} ${F(y - h + 0.3)}Z`;
+      if (r() < 0.55) roofsR += roof; else roofsG += roof;
+    }
+    s += `<g class="isl-ydet"><path class="isl-vhouse" d="${walls}"/><path class="isl-vroof" d="${roofsR}"/><path class="isl-vroofg" d="${roofsG}"/></g>`;
     // The lights, grouped so they come on in turn: the dockyard, the boats, Falmouth, then the slopes.
     const groups = [[], [], [], []];
     for (const [x, y, g] of lights) groups[g].push(`M${F(x)} ${F(y)}h0`);
@@ -1502,8 +1513,31 @@
     },
   };
 
+  // Vegetated land by Day: a mottle of darker and lighter scrub and a few bare patches over the land's
+  // own color, finer and fainter with distance. Pieces mark vegetated land with `isl-land`; the Day
+  // version fills it with these (layout-art.css); every other version keeps the flat color.
+  function vegPattern(id, size, n, r0, r1, alpha, seed) {
+    const r = rng(seed);
+    const blobs = (cls, count, s0, s1) => {
+      let d = '';
+      for (let i = 0; i < count; i++) {
+        const x = r() * size, y = r() * size, rx = s0 + r() * (s1 - s0), ry = rx * (0.55 + r() * 0.3);
+        for (const [ox, oy] of [[0, 0], [size, 0], [-size, 0], [0, size], [0, -size]]) {
+          if (x + ox + rx < 0 || x + ox - rx > size || y + oy + ry < 0 || y + oy - ry > size) continue;
+          d += `M${F(x + ox - rx)} ${F(y + oy)}a${F(rx)} ${F(ry)} 0 1 0 ${F(2 * rx)} 0a${F(rx)} ${F(ry)} 0 1 0 ${F(-2 * rx)} 0Z`;
+        }
+      }
+      return `<path class="${cls}" d="${d}" fill-opacity="${alpha}"/>`;
+    };
+    return `<pattern id="${id}" patternUnits="userSpaceOnUse" width="${size}" height="${size}">`
+      + `<rect class="isl-veg-b" width="${size}" height="${size}"/>`
+      + blobs('isl-veg-d', n, r0, r1) + blobs('isl-veg-l', Math.round(n * 0.75), r0, r1) + blobs('isl-veg-t', Math.round(n * 0.06), r0 * 1.2, r1 * 1.5)
+      + '</pattern>';
+  }
+
   function extraDefs() {
     return '<defs>'
+      + vegPattern('islvegf', 53, 70, 0.45, 1.2, 0.24, 5) + vegPattern('islvegn', 131, 170, 0.7, 2.6, 0.32, 7)
       + '<radialGradient id="islvwarm"><stop offset="0" class="st-g1" stop-opacity=".26"/><stop offset=".6" class="st-g1" stop-opacity=".08"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvspill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".2"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvlamp"><stop offset="0" class="st-k" stop-opacity=".6"/><stop offset=".5" class="st-k" stop-opacity=".18"/><stop offset="1" class="st-k" stop-opacity="0"/></radialGradient>'
@@ -1516,8 +1550,47 @@
       + '<linearGradient id="islvbay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vbay" stop-opacity=".55"/><stop offset="1" class="st-vbay" stop-opacity=".35"/></linearGradient>'
       + '<linearGradient id="islvharb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-sea0" stop-opacity="0"/><stop offset=".45" class="st-sea0" stop-opacity=".5"/><stop offset="1" class="st-sea0" stop-opacity=".3"/></linearGradient>'
       + '<linearGradient id="islvfacade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vstrata" stop-opacity="1"/><stop offset="1" class="st-vstone" stop-opacity="1"/></linearGradient>'
+      + '<linearGradient id="islvcloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-cloud" stop-opacity="1"/><stop offset=".55" class="st-cloud" stop-opacity="1"/><stop offset="1" class="st-cloud-s" stop-opacity="1"/></linearGradient>'
+      + '<radialGradient id="islvdawn"><stop offset="0" class="st-g1" stop-opacity=".9"/><stop offset=".45" class="st-g2" stop-opacity=".35"/><stop offset="1" class="st-g2" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvbulb"><stop offset="0" class="st-g1" stop-opacity=".5"/><stop offset=".5" class="st-g1" stop-opacity=".14"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '</defs>';
+  }
+
+  /* THE FOUR TIMES OF DAY (owner, 2026-09-28): every picture has Dawn, Day and Dusk in the light scheme,
+     the visitor's local time choosing among them (the card's data-sky), and Night in the dark scheme. The
+     versions differ in light, not in drawing: the sky, sea, land and material colors are each version's
+     tokens (layout-art.css); lights are on at Dawn, Dusk and Night and off by Day; stars, grain and the
+     Moon belong to Dusk and Night. What only Dawn and Day draw is here: the glow where the Sun is about
+     to rise, when the view faces it, and trade-wind cumulus, the same clouds at both, lit pink at Dawn and
+     white by Day. */
+  function clouds(W, y0, seed) {
+    const r = rng(seed);
+    let d = '', defs = '';
+    const n = Math.round(clamp(W / 55, 8, 22));
+    for (let i = 0; i < n; i++) {
+      const t = Math.pow(r(), 1.8);                  // most clouds far off, low toward the horizon
+      const base = y0 * (0.94 - t * 0.5);            // the flat base's height: never near the top edge
+      const k = 0.3 + t * 0.8;                       // higher clouds are nearer, so larger
+      const w = W * (0.035 + r() * 0.05) * k, h = w * (0.2 + r() * 0.14);
+      const cx = r() * (W + w) - w / 2;
+      const puffs = 5 + Math.floor(r() * 5);
+      let c = '';
+      for (let j = 0; j < puffs; j++) {
+        const u = (j + 0.5) / puffs + (r() - 0.5) * 0.08, px = cx - w / 2 + u * w;
+        const pr = h * (0.28 + Math.sin(clamp(u, 0, 1) * Math.PI) * 0.55) * (0.75 + r() * 0.5), py = base - pr * (0.55 + r() * 0.3);
+        c += `M${F(px - pr)} ${F(py)}a${F(pr)} ${F(pr)} 0 1 0 ${F(2 * pr)} 0a${F(pr)} ${F(pr)} 0 1 0 ${F(-2 * pr)} 0Z`;
+      }
+      // the flat base: the puffs are cut at the level where the air condenses
+      defs += `<clipPath id="islvcb${i}"><rect x="${F(cx - w)}" y="${F(base - h * 3)}" width="${F(w * 2)}" height="${F(h * 3)}"/></clipPath>`;
+      d += `<path d="${c}" fill="url(#islvcloud)" clip-path="url(#islvcb${i})" opacity="${F(0.45 + t * 0.45)}"/>`;
+    }
+    return `<defs>${defs}</defs>${d}`;
+  }
+  function dawnDay(v, W, y0) {
+    const p = v.ppd, sx = v.x(SKY.a.sun[0]), cl = clouds(W, y0, 211);
+    const glow = sx > -W * 0.3 && sx < W * 1.3
+      ? `<ellipse cx="${F(sx)}" cy="${F(y0)}" rx="${F(40 * p)}" ry="${F(8 * p)}" fill="url(#islvdawn)" clip-path="url(#islsky)"/>` : '';
+    return `<g class="isl-a">${glow}${cl}</g><g class="isl-y">${cl}</g>`;
   }
 
   function build(W, H, piece) {
@@ -1560,9 +1633,9 @@
     // noisy"), so there it fades out toward the afterglow at the horizon; at night it reads as stars.
     const grain = grainURL();
     const gFade = `<linearGradient id="islvgfd" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="${F(y0)}"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#777"/><stop offset=".85" stop-color="#000"/></linearGradient>`;
-    const gMask = (m) => `<mask id="islvgm${m}"><rect width="${F(W)}" height="${y0 + 1}" fill="${m === 'd' ? 'url(#islvgfd)' : '#fff'}"/>${sky[m].hole}</mask>`;
-    const gDef = grain ? `<defs><pattern id="islvgrain" patternUnits="userSpaceOnUse" width="160" height="160"><image href="${grain}" width="160" height="160"/></pattern>${gFade}${gMask('d')}${gMask('n')}</defs>` : '';
-    const gSky = grain ? ['d', 'n'].map((m) => `<g class="isl-${m}"><rect class="isl-vgrain" width="${F(W)}" height="${y0 + 1}" fill="url(#islvgrain)" mask="url(#islvgm${m})"/></g>`).join('') : '';
+    const gMask = (m) => `<mask id="islvgm${m}"><rect width="${F(W)}" height="${y0 + 1}" fill="${m === 'n' ? '#fff' : 'url(#islvgfd)'}"/>${sky[m] ? sky[m].hole : ''}</mask>`;
+    const gDef = grain ? `<defs><pattern id="islvgrain" patternUnits="userSpaceOnUse" width="160" height="160"><image href="${grain}" width="160" height="160"/></pattern>${gFade}${gMask('d')}${gMask('n')}${gMask('a')}</defs>` : '';
+    const gSky = grain ? ['d', 'n', 'a'].map((m) => `<g class="isl-${m}"><rect class="isl-vgrain" width="${F(W)}" height="${y0 + 1}" fill="url(#islvgrain)" mask="url(#islvgm${m})"/></g>`).join('') : '';
     const gSea = grain ? `<rect class="isl-vgrain isl-vgrain--sea" y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islvgrain)"/>` : '';
     const svg = `<svg class="isl-o isl-art" width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${defs(W, y0, H)}${extraDefs()}${gDef}`
       + `<rect width="${F(W)}" height="${y0 + 1}" fill="url(#islskyg)"/>`
@@ -1573,6 +1646,7 @@
       + gSky
       + sky.d.planets + sky.n.planets
       + sky.d.moon + sky.n.moon
+      + dawnDay(v, W, y0)
       + (P.world === 'coast' ? islands(v, 'f-isl') : '')
       + `<rect y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`
       + L.glowSea(v, 'd', 'isl-d', reflH) + L.glowSea(v, 'n', 'isl-n', reflH)
@@ -1609,10 +1683,23 @@
     return GRAIN;
   }
 
+  // Which light-scheme version a card shows: Dawn from 5:00, Day from 9:00, Dusk from 17:00, by the
+  // visitor's own clock (the hours are the owner's to settle; SPEC section 12). ?isl-sky=dawn|day|dusk
+  // forces one, for review. The dark scheme is always Night, whatever this says.
+  function pickSky() {
+    try {
+      const q = new URLSearchParams(location.search).get('isl-sky');
+      if (q === 'dawn' || q === 'day' || q === 'dusk') return q;
+    } catch (e) { /* no query: the clock decides */ }
+    const h = new Date().getHours();
+    return h >= 5 && h < 9 ? 'dawn' : h >= 9 && h < 17 ? 'day' : 'dusk';
+  }
+
   A.vignette = function (fig) {
     if (fig._isl) return;
     const card = document.createElement('div');
     card.className = 'isl isl-vig';
+    card.dataset.sky = pickSky();
     fig.appendChild(card);
     fig._isl = card;
     let last = '', started = false;

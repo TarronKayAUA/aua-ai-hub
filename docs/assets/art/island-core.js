@@ -88,6 +88,12 @@
     return { sun: m.sun, moon: m.moon, pl: m.pl, st, t: m.t, mw: m.mw };
   };
   const SKY = { d: prep(D.d), n: prep(D.n) };
+  // The light scheme's other two times of day (owner, 2026-09-28: Dawn, Day, Dusk and Night for every
+  // picture): the Sun only, from the same ephemeris (geo/astro.py) on the same date, 18 May 2026, at dawn
+  // (05:25 AST, 2.9 degrees below the horizon, rising) and mid-morning (10:29 AST). No Moon, planets or
+  // stars are drawn at either. PREVIEW: fold these into bake.py when the versions ship.
+  SKY.a = { sun: [68.48, -2.93] };
+  SKY.y = { sun: [79.63, 67.6] };
   const ISL = ['M', 'R', 'N', 'K', 'G'].map((k) => pairs(D[k]));
   // Per bearing: [bearing, crest, far shore, crest distance m, near-ground crest, its distance m,
   // edge of the ground underfoot]; angles in degrees above the sea horizon, -99.999 for none.

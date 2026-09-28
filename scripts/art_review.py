@@ -26,6 +26,11 @@ What it does:
     python scripts/art_review.py --piece lamp-steps --sequence
     python scripts/art_review.py --piece shirley-heights --ref shirley-heights-2.webp --ref shirley-heights-6-owner-dusk.webp
     python scripts/art_review.py --site site/ --out C:/temp/art
+    python scripts/art_review.py --piece shirley-heights --times --ref shirley-heights-7-owner-day.webp
+
+--times renders the four versions every piece has (owner, 2026-09-28; DESIGN.md 19.6): Dawn, Day and
+Dusk in the light scheme (forced with ?isl-sky=) and Night in the dark scheme, and writes a sheet of
+the four; with --ref it compares the photographs with the Day version.
 
 References are read from --refs DIR (default: the art's source folder,
 Claude Projects/Hub art for the media tracker (2026-09-26)/island-hub-version/
@@ -64,13 +69,13 @@ def slots() -> list[dict]:
     return out
 
 
-def shoot(env, slot, width, height, scheme, path, context_path=None):
+def shoot(env, slot, width, height, scheme, path, context_path=None, sky=None):
     from design.common import BASE
     ctx = env.context(width, height, color_scheme=scheme)
     page = ctx.new_page()
     errors = []
     page.on("pageerror", lambda e: errors.append(str(e)))
-    page.goto(BASE + slot["address"], wait_until="load")
+    page.goto(BASE + slot["address"] + (f"?isl-sky={sky}" if sky else ""), wait_until="load")
     if slot.get("section") and slot["section"] != "_head":
         page.evaluate("(id) => { const h = document.getElementById(id); if (h) { h.scrollIntoView({block: 'start'}); window.scrollBy(0, -110); } }", slot["section"])
     page.wait_for_timeout(WAIT_MS)
@@ -129,6 +134,28 @@ def review_sheet(label, context, light, dark, out):
     sheet.save(out)
 
 
+def times_sheet(label, shots, out):
+    """The four versions at 1920: Dawn and Day above, Dusk and Night below."""
+    from PIL import Image, ImageDraw, ImageFont
+    try:
+        font, small = ImageFont.truetype("segoeuib.ttf", 26), ImageFont.truetype("segoeui.ttf", 20)
+    except OSError:
+        font = small = ImageFont.load_default()
+    ims = [(name, Image.open(shots[name])) for name in ("dawn", "day", "dusk", "night")]
+    k = 710 / ims[0][1].width
+    ims = [(name, im.resize((710, round(im.height * k)))) for name, im in ims]
+    h = ims[0][1].height
+    sheet = Image.new("RGB", (1440, 60 + 2 * (h + 54)), "#101418")
+    draw = ImageDraw.Draw(sheet)
+    draw.text((16, 14), label, fill="#f2f2f2", font=font)
+    titles = {"dawn": "Dawn (light theme)", "day": "Day (light theme)", "dusk": "Dusk (light theme)", "night": "Night (dark theme)"}
+    for i, (name, im) in enumerate(ims):
+        x, y = (i % 2) * 730, 60 + (i // 2) * (h + 54)
+        draw.text((x + 16, y), titles[name], fill="#cfd6de", font=small)
+        sheet.paste(im, (x, y + 34))
+    sheet.save(out)
+
+
 def compare_sheet(refs, light, dark, out):
     from PIL import Image
     d, l = Image.open(dark), Image.open(light)
@@ -157,6 +184,7 @@ def main() -> int:
     ap.add_argument("--sequence", action="store_true", help="also capture the one pass of lights, frame by frame")
     ap.add_argument("--site", type=Path, help="an existing build to use instead of building")
     ap.add_argument("--out", type=Path, default=Path(tempfile.gettempdir()) / "art-review", help="where the sheets go")
+    ap.add_argument("--times", action="store_true", help="render the four versions (Dawn, Day, Dusk, Night) and a sheet of them")
     args = ap.parse_args()
     try:
         from playwright.sync_api import sync_playwright
@@ -204,13 +232,27 @@ def main() -> int:
                 label = f"{slot['address'] or '(home)'}: {slot['piece']}"
                 review_sheet(label, args.out / f"{key}_page.png", shots[(1920, "light")], shots[(1920, "dark")], args.out / f"review_{key}.png")
                 print(f"{key}: review sheet {args.out / f'review_{key}.png'}")
+                if args.times:
+                    four = {"night": shots[(1920, "dark")]}
+                    for w, h in ((1920, 1080), (1440, 900)):
+                        for sky in ("dawn", "day", "dusk"):
+                            path = args.out / f"{key}_{w}_{sky}.png"
+                            box, errors = shoot(env, slot, w, h, "light", path, sky=sky)
+                            if w == 1920:
+                                four[sky] = path
+                            if errors or not box:
+                                failed = True
+                                print(f"  {key} {w} {sky}: {'script errors: ' + str(errors) if errors else 'the picture was not found'}")
+                    times_sheet(label, four, args.out / f"times_{key}.png")
+                    print(f"  four times of day {args.out / f'times_{key}.png'}")
                 if args.ref:
                     refs = [r if Path(r).is_file() else args.refs / r for r in args.ref]
                     missing = [str(r) for r in refs if not Path(r).is_file()]
                     if missing:
                         print("  reference not found:", ", ".join(missing))
                     else:
-                        compare_sheet(refs, shots[(1920, "light")], shots[(1920, "dark")], args.out / f"compare_{key}.png")
+                        first = args.out / f"{key}_1920_day.png" if args.times else shots[(1920, "light")]
+                        compare_sheet(refs, first, shots[(1920, "dark")], args.out / f"compare_{key}.png")
                         print(f"  comparison {args.out / f'compare_{key}.png'}")
                 if args.sequence:
                     sequence(env, slot, args.out / f"sequence_{key}.png")
