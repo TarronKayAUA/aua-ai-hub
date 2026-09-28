@@ -300,3 +300,17 @@
   support: "Organizer-stated: $20,250 in cash prizes, including two optional $1,000 featured path awards, plus optional $150 cloud compute grants for selected teams"
   relevance: "Online computer vision competition open globally; the techniques overlap with medical image analysis."
   verified: 2026-09-07
+
+# Auto-verified 2026-09-28 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed, open to AUA).
+- name: "Build With AI: Basics"
+  url: https://learn-ai-basics.devpost.com/
+  organizer: "Devpost"
+  type: buildathon
+  format: virtual
+  eligibility: "Individuals ages 18+ from all countries/territories, excluding standard exceptions"
+  deadline: 2026-10-26
+  start_date: 2026-09-22
+  end_date: 2026-10-26
+  support: "Organizer-stated: $2,500 total prize pool with $1,250 for first place, $750 for second, $500 for third, plus a Devpost Learn badge for eligible submissions"
+  relevance: "This is an online beginner-friendly hackathon run by Devpost that teaches participants to build an AI-assisted app prototype using structured planning skills, suited to students or faculty new to building with AI coding tools."
+  verified: 2026-09-28
