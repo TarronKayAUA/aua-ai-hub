@@ -307,6 +307,10 @@
 .isl .isl-vmast { stroke: var(--isl-vrail); fill: none; stroke-opacity: 0.6; }
 .isl .isl-vhull { fill: var(--isl-vwall); }
 .isl .isl-vshore { stroke: var(--isl-rip); stroke-opacity: 0.45; fill: none; }
+/* English Harbour's water: faintly teal at dusk, deep blue at night. */
+.isl { --isl-vbay: #4f8fa3; }
+[data-md-color-scheme="slate"] .isl { --isl-vbay: #1d4760; }
+.isl .st-vbay { stop-color: var(--isl-vbay); }
 /* A landing's head with a vignette beside it (layout_art.py, section: _head): the title, lede, search
    and jump links on the left, the picture on the right, from 68.75em; below that an ordinary block. */
 @media screen and (min-width: 68.75em) and (min-height: 44.0625em) {
