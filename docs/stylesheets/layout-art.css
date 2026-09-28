@@ -167,18 +167,13 @@
 .isl .isl-vhouse { fill: var(--isl-vhouse, #f2f0ea); }
 .isl .isl-vroofg { fill: var(--isl-vroofg, #7d8a90); }
 .isl[data-sky="day"] [fill*="lamp)"] { display: none; }
-/* Dawn's first light on the hilltops (isl-adet); the Sun for comparison (isl-sun, ?isl-sun=1). */
+/* Dawn's first light on the hilltops (isl-adet). */
 .isl .isl-adet { display: none; }
 .isl[data-sky="dawn"] .isl-adet { display: inline; }
-.isl[data-sky="dawn"][data-sun="1"] .isl-adet { display: none; }
-.isl:not([data-sun="1"]) .isl-sun { display: none; }
 .isl .st-gild { stop-color: var(--isl-gild, #ffbe8c); }
 .isl .isl-vgildline { stroke: var(--isl-gild, #ffbe8c); stroke-opacity: 0.85; fill: none; stroke-linecap: round; }
-.isl .isl-vsunrise { fill: #ffcf7a; }
 .isl .isl-vsunpath { stroke: #ffe6ad; fill: none; stroke-linecap: round; }
 .isl .isl-vsunpath2 { stroke: #ffbd72; fill: none; stroke-linecap: round; }
-.isl .isl-vsunday { fill: #fffcee; }
-.isl .isl-sparkle { stroke: #ffffff; fill: none; }
 /* Day's features: trees, rock, shallows, the road (isl-ydet in each piece). */
 .isl .isl-vtree { fill: var(--isl-vtree, #4d7a3a); }
 .isl .isl-vtree2 { fill: var(--isl-vtree2, #6a8f3e); }

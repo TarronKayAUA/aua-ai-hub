@@ -1793,8 +1793,6 @@
       + '</pattern>';
   }
 
-  A.pieces = PIECES;   // read by review tools (which way each picture looks, how much sky it holds)
-
   function extraDefs() {
     return '<defs>'
       + vegPattern('islvegf', 53, 70, 0.45, 1.2, 0.24, 5) + vegPattern('islvegn', 131, 170, 0.7, 2.6, 0.32, 7)
@@ -1812,8 +1810,6 @@
       + '<linearGradient id="islvfacade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vstrata" stop-opacity="1"/><stop offset="1" class="st-vstone" stop-opacity="1"/></linearGradient>'
       + '<linearGradient id="islvcloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-cloud" stop-opacity="1"/><stop offset=".55" class="st-cloud" stop-opacity="1"/><stop offset="1" class="st-cloud-s" stop-opacity="1"/></linearGradient>'
       + '<linearGradient id="islvgild" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-gild" stop-opacity=".6"/><stop offset=".55" class="st-gild" stop-opacity="0"/></linearGradient>'
-      + '<radialGradient id="islvsun"><stop offset="0" stop-color="#fffdf0" stop-opacity=".95"/><stop offset=".1" stop-color="#fff8dc" stop-opacity=".6"/><stop offset=".4" stop-color="#ffffff" stop-opacity=".14"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>'
-      + '<radialGradient id="islvsundisc"><stop offset="0" stop-color="#fffbea"/><stop offset=".55" stop-color="#ffe29a"/><stop offset=".85" stop-color="#ffab52"/><stop offset="1" stop-color="#ff8a3d"/></radialGradient>'
       + '<radialGradient id="islvsunlow"><stop offset="0" stop-color="#ffd08a" stop-opacity=".85"/><stop offset=".12" stop-color="#ffb066" stop-opacity=".45"/><stop offset=".45" stop-color="#ff9a5a" stop-opacity=".14"/><stop offset="1" stop-color="#ff9a5a" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvsunrefl"><stop offset="0" stop-color="#fff2c6" stop-opacity=".95"/><stop offset=".3" stop-color="#ffcf85" stop-opacity=".5"/><stop offset="1" stop-color="#ff9a5a" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvdawn"><stop offset="0" class="st-g1" stop-opacity=".9"/><stop offset=".45" class="st-g2" stop-opacity=".35"/><stop offset="1" class="st-g2" stop-opacity="0"/></radialGradient>'
@@ -1932,20 +1928,10 @@
       + `<path class="isl-vsunpath2" d="${d2}" stroke-width="${F(sw)}" stroke-opacity="${F(0.28 * lit)}"/></g>`;
   }
   function dawnDay(v, W, y0, H, seed = 0) {
-    const p = v.ppd, sx = v.x(SKY.a.sun[0]), r = rng(97);
+    const p = v.ppd, sx = v.x(SKY.a.sun[0]);
     const glow = sx > -W * 0.3 && sx < W * 1.3
       ? `<ellipse cx="${F(sx)}" cy="${F(y0)}" rx="${F(40 * p)}" ry="${F(8 * p)}" fill="url(#islvdawn)" clip-path="url(#islsky)"/>` : '';
-    // FOR COMPARISON (?isl-sun=1), the Sun placed by license: rising on the horizon at Dawn, high in the
-    // corner by Day, each with its light on the water.
-    const ds = clamp(H * 0.045, 9, 20), dx = W * 0.12;
-    const dawnSun = `<g class="isl-sun"><ellipse cx="${F(dx)}" cy="${F(y0)}" rx="${F(ds * 9)}" ry="${F(ds * 3)}" fill="url(#islvdawn)" clip-path="url(#islsky)"/>`
-      + `<circle class="isl-vsunrise" cx="${F(dx)}" cy="${F(y0 + ds * 0.35)}" r="${F(ds)}" clip-path="url(#islsky)"/>`
-      + dashes(streakList(dx, y0, H, r, 0.1, 0.09), 's-vglow', 1.4, [0.14, 0.28, 0.5]) + '</g>';
-    const ys = clamp(H * 0.035, 8, 16), yx = W * 0.1, yy = y0 * 0.3;
-    const daySun = `<g class="isl-sun"><circle cx="${F(yx)}" cy="${F(yy)}" r="${F(ys * 10)}" fill="url(#islvsun)" clip-path="url(#islsky)"/>`
-      + `<circle class="isl-vsunday" cx="${F(yx)}" cy="${F(yy)}" r="${F(ys)}"/>`
-      + dashes(streakList(yx, y0, H, r, 0.12, 0.1), 'isl-sparkle', 1.2, [0.18, 0.3, 0.5]) + '</g>';
-    return `<g class="isl-a">${glow}${bands(W, y0, 89 + seed)}${dawnSun}</g><g class="isl-y">${clouds(W, y0, 211 + seed)}${daySun}</g>`;
+    return `<g class="isl-a">${glow}${bands(W, y0, 89 + seed)}</g><g class="isl-y">${clouds(W, y0, 211 + seed)}</g>`;
   }
 
   function build(W, H, piece) {
@@ -2049,7 +2035,6 @@
     card.className = 'isl isl-vig';
     card.dataset.sky = pickSky();
     A.watchSky(card);
-    try { if (new URLSearchParams(location.search).get('isl-sun') === '1') card.dataset.sun = '1'; } catch (e) { /* no query */ }
     fig.appendChild(card);
     fig._isl = card;
     let last = '', started = false;
