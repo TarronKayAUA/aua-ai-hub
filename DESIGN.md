@@ -53,10 +53,11 @@ Hooks run in the order they are registered in `mkdocs.yml` under `hooks:`. For e
 | 5 | `scripts/layout_prompt_pages.py` | `on_files`, `on_page_content`, `on_post_page`, `on_post_build` | One virtual page per prompt at `prompts/<slug>/` (`on_files`), with the side panel "Fill In Your Details" (`_side`), "Where it is used" and related prompts. It checks every link and fragment it writes (`_check_links`), that Copy text matches the data, and that every prompt page is in sitemap.xml. |
 | 6 | `scripts/layout_news.py` | `on_page_markdown`, `on_page_content` | Takes weekly digests out of search, stacks registered wide tables into labelled rows on phones (`stack_tables`), and checks This Week's jump links (`check_jump_links`). |
 | 7 | `scripts/layout_week.py` | `on_page_content`, `on_post_build` | This Week, the weekly digests and the three feed pages: brief restructure (`_brief`), three feed panels and the rest of a digest (`_arrange`, `_arrange_body`, `_videos`, `_dominant`), and the feed-page panel (`_feed_page`). It checks itself (`_check_brief`, `_check_arrange`). Details are in section 4.2. |
-| 8 | `scripts/layout_learn.py` | `on_nav`, `on_page_markdown`, `on_page_content`, `on_post_build` | The seven modules: the "Module N of 7" strip (checked against the title), Next buttons (`_next_block`), the competency foot line, and "Going Deeper" as rows (`_going_deeper_rows`). Also the Learn landing. |
-| 9 | `scripts/layout_nav.py` | `on_nav`, `on_page_content`, `on_post_page`, `on_post_build` | The section model from the mkdocs.yml nav plus data/section_map.yaml. It builds the section map (`_site_map`, `_map`), the page foot (`_foot`, `_more`), the Tools & Prompts landing (`_landing`), color by kind (`kind_of`, `_color_page`, `_key`), prompt-link rewriting, and breadcrumbs (`_crumbs`). Every generated href is checked after the build. |
-| 10 | `scripts/layout_width.py` | `on_post_page`, `on_post_build` | Reading pages on two tracks: shapes, pairing, spreads and leaves (`_plan`, `_wrap`, `_chunks`). It also lays out landing-page prose (`_wrap_door`). Details are in section 4.1. |
-| 11 | `scripts/title_case.py` | `on_post_page`, `on_post_build` | Checks titles, headings, names and labels in the final HTML and fails the build on a violation (section 8). It runs last so it sees every page as served. |
+| 8 | `scripts/layout_art.py` | `on_config`, `on_page_content`, `on_post_build` | Island Night vignettes: for each place in data/art_slots.yaml, an empty decorative `figure.isl-vignette` at the end of the named h2 section, before any layout hook runs. It prints the slots read and placed, and fails the build if a listed page or section is missing. |
+| 9 | `scripts/layout_learn.py` | `on_nav`, `on_page_markdown`, `on_page_content`, `on_post_build` | The seven modules: the "Module N of 7" strip (checked against the title), Next buttons (`_next_block`), the competency foot line, and "Going Deeper" as rows (`_going_deeper_rows`). Also the Learn landing. |
+| 10 | `scripts/layout_nav.py` | `on_nav`, `on_page_content`, `on_post_page`, `on_post_build` | The section model from the mkdocs.yml nav plus data/section_map.yaml. It builds the section map (`_site_map`, `_map`), the page foot (`_foot`, `_more`), the Tools & Prompts landing (`_landing`), color by kind (`kind_of`, `_color_page`, `_key`), prompt-link rewriting, and breadcrumbs (`_crumbs`). Every generated href is checked after the build. |
+| 11 | `scripts/layout_width.py` | `on_post_page`, `on_post_build` | Reading pages on two tracks: shapes, pairing, spreads and leaves (`_plan`, `_wrap`, `_chunks`). It also lays out landing-page prose (`_wrap_door`). Details are in section 4.1. |
+| 12 | `scripts/title_case.py` | `on_post_page`, `on_post_build` | Checks titles, headings, names and labels in the final HTML and fails the build on a violation (section 8). It runs last so it sees every page as served. |
 
 **Where a change belongs.**
 
@@ -65,6 +66,7 @@ Hooks run in the order they are registered in `mkdocs.yml` under `hooks:`. For e
 - Anything about sections, feet, kinds, colors or the map belongs in layout_nav.
 - How a reading page uses the width belongs in layout_width.
 - News pages belong in layout_news and layout_week.
+- Where art goes belongs in data/art_slots.yaml (read by layout_art); what it draws belongs in docs/assets/art/.
 
 Styles live in one file per package (section 6). Scripts under `docs/javascripts/` add behaviour only. Everything they enhance works as plain HTML without them.
 
@@ -129,6 +131,7 @@ Every page has one of five types, set by `page_type()` in scripts/layout_frame.p
 7. **A long note stays one box.** A note of at least `NOTE_FLOW_MIN` weight runs in two columns inside its box. Bold-led parts sit two to a row.
 8. **Everything read "down the left, then the right" must fit one screen.** This covers a spread piece, lettered parts, text beside a figure, and a pair of sections. docs/javascripts/layout-width.js measures each one as laid out. When it is taller than the space below the header, it becomes one sequential column (`.w-single`, `.w-stack`). A stacked section then tries two columns (`.w-cols`) and keeps them only if they fit. Without JavaScript, a height media query does the same for short windows.
 9. **The Color key stays with the block it keys,** even when that block is wide.
+10. **A vignette sits beside its section's whole text** (`_vignette` in layout_width.py): it introduces nothing, so no paragraph is left above it, and a leaf whose side is only a vignette never stacks (layout-width.js), because the picture has nothing to read. The leaf's side is sticky, so the picture stays in view beside a long list.
 
 The build prints the shapes in use ("cells by shape"), how many short sections were paired, and every one-paragraph section still alone across the width. That list is advisory; each entry has a reason.
 
@@ -261,11 +264,14 @@ Each prompt page has a side panel, "Fill In Your Details" (`_side`), with one fi
 
 ### 6.9 Island Night scenery and section banners
 
-- **Island Night** is a dusk view from Curtain Bluff, drawn in code:
+- **Island Night** is a dusk view from Curtain Bluff, drawn in code, and the site's one art world:
   - docs/assets/art/island-core.js draws the home hero; island-sides.js draws the gutters beside the column on wide screens.
   - docs/javascripts/layout-art.js fetches them only where they are needed (the gutters when at least 80px wide; never on phones).
   - Colors are tokens in layout-art.css: dusk in the light scheme, night in the dark scheme.
-  - Only the home hero moves, once, within about 3 seconds, and reduced motion shows the still frame. The gutters never move.
+  - Only the home hero and the vignettes move, once each, within about 3.5 seconds, and reduced motion shows the still frame. The gutters never move.
+  - **The sky is dense and real** (the owner loves dense starfields): every star is a real one at its true place for the moment. At night: the whole Yale Bright Star Catalogue (3,542 above the horizon), then 9,033 fainter Hipparcos stars to V 8.0 (docs/assets/art/island-deep.js, fetched by layout-art.js only in the dark scheme from 60em, a few seconds after load, after which every drawing redraws once through `IslandArt.redraw`), and the Milky Way's true path as a soft band. At dusk: to V 4.5 (243 stars), no Milky Way. Stars are drawn in seven magnitude steps, the brighter ones tinted by colour index. This is a painter's licence, like the islands at 2.6 times their height, and it is written in island-core.js's header.
+  - **The data is baked outside the repository**, in the art's source folder `Claude Projects/Hub art for the media tracker (2026-09-26)/island-hub-version/geo/`: bake.py (skylines, land, the two moments), stars_dense.py (the Yale stars; `--inject <island-core.js>`), sky_deep.py (the Hipparcos stars and the Milky Way; `--deep <island-deep.js> --inject <island-core.js>`). Re-run a bake rather than editing the arrays by hand.
+- **Vignettes** are small scenes under the same sky, one subject each, in approved empty spaces (section 11): data/art_slots.yaml lists the places, scripts/layout_art.py puts the empty figure, and docs/assets/art/island-vignettes.js draws it (`PIECES`: each piece's drawing, its world, the bearing it faces and its ground). A scene set away from Curtain Bluff keeps the true sky (the island is small enough that it holds everywhere) and draws its own ground and hills instead of the far islands. Subjects are painted from photographs as lit silhouettes in the palette, with the page's kind hue (`--k`) as one small accent, and no words. The first is `campus`: the American University of Antigua at Coolidge, beside the Lecture Outline's checks, from the owner's photographs. Vignettes are hidden below 68.75em and in short windows, and their script is never fetched there.
   - Without JavaScript, the hero keeps its brand gradient.
 - **Section banners** (`.section-banner`, extra.css; SVGs in docs/assets/) are self-contained color, because an SVG in an `img` cannot read CSS variables. A banner is decorative (`alt=""`, `aria-hidden="true"`). The Governance landing shows its banner beside the introduction from 60em.
 
@@ -336,7 +342,7 @@ Each prompt page has a side panel, "Fill In Your Details" (`_side`), with one fi
 
 ## 10. Motion and accessibility
 
-- **Reduced motion is honoured everywhere.** It removes card lifts and transitions (extra.css) and makes the corner control's fold instant. The Island Night hero shows its still frame, the jump-chip outline is still, and smooth scrolling is off. Nothing carries meaning through motion.
+- **Reduced motion is honoured everywhere.** It removes card lifts and transitions (extra.css) and makes the corner control's fold instant. The Island Night hero and the vignettes show their still frames, the jump-chip outline is still, and smooth scrolling is off. Nothing carries meaning through motion.
 - **Focus after a jump or a fold:**
   - a feed jump chip focuses its panel's heading;
   - opening the brief moves focus to its first continuation paragraph, and Hide returns focus to the label;
@@ -367,7 +373,7 @@ When a layout leaves a large blank area, remedies apply in this order:
 
 1. **Rearrange.** Pair, lift or spread using the rules in section 4. Most gaps close here.
 2. **Something functional, from data.** Add a panel that earns its place and is computed from a data file. The model is "The Directory Today" on the Tool Directory (`_render_directory_today` in render_data.py): counts from data/tools.yaml, a printed verification line, and a build failure if the counts do not add up.
-3. **Art,** only where nothing useful fits. The art must be abstract and geometric, in the page's kind hue or the Island Night palette, with no words, and decorative (`alt=""`, `aria-hidden="true"`). It must be self-contained color if it is an SVG in an `img`, and it is hidden below the breakpoint where the gap exists. The Governance banner beside its introduction is the model.
+3. **Art,** only where nothing useful fits, and only in a place the owner has approved (data/art_slots.yaml). The owner's direction (2026-09-27): an Island Night vignette, one quiet subject per page set in the same world, painted from photographs where the subject is real, in Island Night's own palette (kept over the media tracker's indigo because it is closer to AUA's brand colours), with the page's kind hue as one small accent, no words, decorative (`aria-hidden="true"`), one gentle pass of motion and then still, and hidden below the breakpoint where the gap exists. The AUA campus beside the Lecture Outline's checks is the model. An existing section banner may also fill a landing's head (the Governance banner); a banner is abstract and self-contained colour because it is an SVG in an `img`.
 
 Never add words to fill space. Never invent content, and never hardcode numbers.
 
@@ -409,6 +415,14 @@ Never add words to fill space. Never invent content, and never hardcode numbers.
 4. Build, then open the landing and one inner page at 1920, 1440 and 390. Check the corner control's Browse map, the foot and the Color key.
 5. Run `python scripts/design_check.py`.
 
+### A new art piece
+
+1. Confirm the gap is real and that nothing functional fits (section 11); get the owner's yes for the place.
+2. Add the place to data/art_slots.yaml: the page, the h2 section's id, the piece's key and the page's kind.
+3. Draw the piece in docs/assets/art/island-vignettes.js: a function taking `(W, H, v, g)` and a `PIECES` entry with its world (`coast` or `inland`), the bearing it faces, its ground and any hills. Work from photographs; keep it a lit silhouette in the `--isl-*` palette with materials as `--isl-v*` tokens in both schemes; one accent in `--k`; lights as `.isl-vwin` with `--i` so they come on in turn, and one element marked `.isl-vlast`.
+4. Build, then look at it yourself at 1920 and 1440 in both schemes before showing the owner: the ground under every building, the horizon, the accent, and the one pass.
+5. Run `python scripts/design_check.py --page <address>/`, and check phones (hidden, not fetched) and reduced motion.
+
 ### A new data-driven list
 
 1. Put the data in `data/<name>.yaml`, owner-owned, with a comment block explaining the fields.
@@ -443,11 +457,10 @@ Never add words to fill space. Never invent content, and never hardcode numbers.
 
 ## 14. Known gaps left on purpose
 
-These blank areas remain, measured at 1920. Do not "fix" them blindly; each has a reason:
+These blank areas remain, measured at 1920. Do not "fix" them blindly; each has a reason. (The largest, beside the Lecture Outline's "What to Check" list, now holds the AUA campus vignette.)
 
 | Page | Where, size | Why it is left |
 |---|---|---|
-| examples/lecture-outline | "What to Check", right of a 10-item list, about 912x2272 | One list of long checks. It is taller than a screen even in two columns, so the fits-one-screen rule keeps it in one column. Splitting it would change its text. |
 | tools/ (index) | The 11 category rows, about 592x1888 | Two columns of rows would move a category when it opens, and would interact with the chooser's filters and Open All. For the owner to decide. |
 | examples/study-practice-questions, examples/memo-and-minutes | "What Went In", beside a long quoted input | A short paragraph beside long material; there is nothing to place beside it without rewording. |
 | benchmarks/ | Beside the LiveBench snapshot, about 592x1392 | The table is pipeline-generated (includes/livebench.md) and sets its own width. |
@@ -542,6 +555,8 @@ Places where a future change can break something, loudly or quietly (from the cl
 - **The corner control's real-movement guard** (section 6.5) must stay: without it, folding under a resting pointer reopens the control, and Escape then loops.
 - **design_check.py reads three build lines:** layout_width's "blocks read/written" and "left as they were", and title_case's total. If their print format changes, the build step reports a missing line as a failure; update the regexes in `build_site`.
 - **Two blank-space measures disagree by design.** `measure` (the baseline) counts an outlined panel as used; `gaps` counts the inside of an outline as blank. Use `measure` for regressions and `gaps` for finding places.
+- **The Island Night data sits in one JSON literal** (`const D = {...};` on one line of island-core.js). The bakes find it with a regular expression and rewrite it whole; keep it on one line.
+- **`IslandArt.redraw`** is how the late fainter stars reach every drawing. A new kind of drawing must register a redraw there, or it keeps the sky without them.
 - **News audio is built in CI only**, so a local build may have no `news-*` or `digest-*` MP3s; the news check then skips its Listen steps and says so. That is expected.
 
 ## 18. Ideas not built
