@@ -1637,7 +1637,7 @@
     const ok = (a, b, c, d) => a > x0 && !clear.some(([p, q, r2, s2]) => a < r2 + pad && c > p - pad && b < s2 + pad && d > q - pad);
     return (withDefs ? extraDefs() : '')
       + `<g class="isl-a">${bands(W, y0, 89, ok)}</g><g class="isl-y">${clouds(W, y0, 211, ok)}</g>`
-      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, { sunset: withDefs ? '18:19' : '18:09' })}</g>`;
+      + `<g class="isl-s">${sunDisc(v, 's', W, y0, H, { sunset: withDefs ? '18:19' : '18:11' })}</g>`;
   };
 
   /* Each piece: its drawing; its world ('coast', the Curtain Bluff view with the far islands and
