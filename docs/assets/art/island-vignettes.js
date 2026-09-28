@@ -25,28 +25,28 @@
   const { SKY, view, islands, land, stars, ripples, defs, own, rng, F, clamp, rel } = L;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
 
-  /* The ground the subject stands on: a low rise of the bluff from the right edge, darkest of all
-     (f-near), with a scrub edge. Returns the path and a function giving its top at x. */
-  function rise(W, H, x0, top, seed) {
+  /* The ground the subject stands on: the near bank of the bluff across the whole foreground, low
+     at the left (the sea shows above it) and rising to a level terrace from xr1 to the right edge,
+     darkest of all (f-near), with a scrub edge. Returns the path and a function giving its top at x. */
+  function rise(W, H, xr0, xr1, yL, yP, seed) {
     const r = rng(seed), pts = [];
-    for (let x = x0; x <= W + 4; x += 6) {
-      const t = clamp((x - x0) / Math.max(1, W * 0.18), 0, 1);
+    for (let x = -4; x <= W + 4; x += 6) {
+      const t = clamp((x - xr0) / Math.max(1, xr1 - xr0), 0, 1);
       const ease = t * t * (3 - 2 * t);
-      pts.push([x, H + 2 - (H + 2 - top) * ease + (r() - 0.5) * 1.6]);
+      const wob = x < xr1 ? (r() - 0.5) * 2.2 : (r() - 0.5) * 0.6;
+      pts.push([x, yL + (yP - yL) * ease + wob]);
     }
-    let d = `M${F(x0)} ${F(H + 2)}`;
+    let d = `M-4 ${F(H + 2)}`;
     for (const [x, y] of pts) d += `L${F(x)} ${F(y)}`;
     d += `L${F(W + 4)} ${F(H + 2)}Z`;
-    // scrub: small rounded clumps along the crest
-    for (let i = 2; i < pts.length; i += 1) {
-      if (r() < 0.3) continue;
-      const [x, y] = pts[i], rr = 1.6 + r() * 2.6;
+    for (let i = 1; i < pts.length; i += 1) {
+      if (r() < 0.32) continue;
+      const [x, y] = pts[i], rr = 1.5 + r() * 2.4;
       d += `M${F(x - rr)} ${F(y + rr * 0.4)}a${F(rr)} ${F(rr * 0.8)} 0 0 1 ${F(2 * rr)} 0Z`;
     }
     const at = (x) => {
-      let best = H + 2;
-      for (const [px, py] of pts) if (Math.abs(px - x) < 4) best = Math.min(best, py);
-      return best;
+      const t = clamp((x - xr0) / Math.max(1, xr1 - xr0), 0, 1);
+      return yL + (yP - yL) * t * t * (3 - 2 * t);
     };
     return { d, at };
   }
@@ -77,7 +77,7 @@
      west. */
   function lectureHall(W, H, v, g) {
     const bw = clamp(W * 0.5, 180, 440), bx = W - bw - W * 0.06, bay = bw / 7;
-    const base = g.at(bx + bw / 2) + 2;
+    const base = g.at(bx + bw / 2) + 1;
     const gH = bw * 0.2, uH = bw * 0.21, roofH = bw * 0.09, over = bw * 0.03;
     const course = base - gH, top = course - uH;
     const cx = bx + bw / 2;
@@ -86,7 +86,9 @@
     // the body, the hipped roof, the pediment and the cupola: one silhouette
     const pedW = bay * 3.2, pedH = roofH * 1.25;
     const cupW = bay * 0.7, cupH = roofH * 1.5, ridge = top - roofH;
-    s += `<path class="f-near" d="M${F(bx)} ${F(base)}V${F(top)}H${F(bx + bw)}V${F(base)}Z`
+    const plinth = gH * 0.08;
+    s += `<path class="f-near" d="M${F(bx - over * 1.6)} ${F(base + 2)}V${F(base - plinth)}H${F(bx + bw + over * 1.6)}V${F(base + 2)}Z`
+      + `M${F(bx)} ${F(base)}V${F(top)}H${F(bx + bw)}V${F(base)}Z`
       + `M${F(bx - over)} ${F(top + 1)}L${F(bx + bw * 0.1)} ${F(ridge)}H${F(bx + bw * 0.9)}L${F(bx + bw + over)} ${F(top + 1)}Z`
       + `M${F(cx - pedW / 2 - over)} ${F(top + 1)}L${F(cx)} ${F(top - pedH)}L${F(cx + pedW / 2 + over)} ${F(top + 1)}Z`
       + `M${F(cx - cupW / 2)} ${F(ridge + 1)}V${F(ridge - cupH)}H${F(cx + cupW / 2)}V${F(ridge + 1)}Z`
@@ -130,7 +132,16 @@
     return s;
   }
 
-  const PIECES = { 'lecture-hall': lectureHall };
+  /* Each piece: its drawing, and its ground (where the bank rises and where the terrace is level). */
+  const PIECES = {
+    'lecture-hall': {
+      draw: lectureHall,
+      ground: (W, H, y0, sea) => {
+        const bw = clamp(W * 0.5, 180, 440), bx = W - bw - W * 0.06;
+        return { xr0: bx - bw * 0.42, xr1: bx - bw * 0.04, yL: y0 + sea * 0.8, yP: y0 + sea * 0.4 };
+      },
+    },
+  };
 
   function extraDefs() {
     return '<defs>'
@@ -142,14 +153,15 @@
   }
 
   function build(W, H, piece) {
-    const draw = PIECES[piece];
-    if (!draw || W < 200 || H < 200) return '';
+    const P = PIECES[piece];
+    if (!P || W < 200 || H < 200) return '';
     const ppd = W / 62;
     const sunAz = SKY.d.sun[0];
     const y0 = Math.round(H * 0.58);
     const v = view(W * 0.3 - rel(sunAz) * ppd, y0, ppd, W, H);
     const sea = H - y0;
-    const g = rise(W, H, W * 0.38, y0 + sea * 0.42, 23);
+    const k = P.ground(W, H, y0, sea);
+    const g = rise(W, H, k.xr0, k.xr1, k.yL, k.yP, 23);
     const svg = `<svg class="isl-o isl-art" width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${defs(W, y0, H)}${extraDefs()}`
       + `<rect width="${F(W)}" height="${y0 + 1}" fill="url(#islskyg)"/>`
       + `<rect y="${F(y0 - 2.4 * ppd)}" width="${F(W)}" height="${F(2.4 * ppd)}" fill="url(#islhazeg)"/>`
@@ -164,7 +176,7 @@
       + ripples(v, 0, W, H, [], 9, 0.8)
       + land(v, 0, W, 13, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]])
       + `<path class="f-near" d="${g.d}"/>`
-      + draw(W, H, v, g)
+      + P.draw(W, H, v, g)
       + '</svg>';
     return own(svg, 'v');
   }
