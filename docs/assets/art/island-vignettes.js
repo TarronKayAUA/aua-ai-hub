@@ -458,6 +458,128 @@
     return `<g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g>`;
   }
 
+  /* SAILING WEEK (the News & Events landing's head; the owner chose it, 2026-09-28): Antigua Sailing
+     Week, the island's signature event, seen from the sea off English Harbour facing west at dusk.
+     Racing yachts heel under white mainsails and jibs, some flying spinnakers, one of them in the
+     page's hue; Antigua's south coast rises on the right against the afterglow, as in the owner's
+     own dusk photograph, with a few lights along it; Montserrat stands on the horizon to the left.
+     The yachts' navigation lights come on in the one pass. */
+  function regatta(W, H, v) {
+    const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(47);
+    const P = (pts) => pts.map(([x, y]) => [X(x), Y(y)]);
+    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
+    const scrub = (pts, n, s0, s1) => {
+      let d = '';
+      for (let i = 0; i < pts.length - 1; i++) {
+        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
+        for (let j = 0; j < n; j++) {
+          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
+          d += `M${F(x - rr)} ${F(y + rr * 0.45)}a${F(rr)} ${F(rr * 0.82)} 0 0 1 ${F(2 * rr)} 0Z`;
+        }
+      }
+      return d;
+    };
+    const lights = [[], []];      // 0 the yachts, 1 the coast
+    let s = '';
+    // 1. Montserrat on the horizon, the Soufriere Hills its highest point.
+    const mont = P([[0.02, 0.6], [0.05, 0.585], [0.08, 0.57], [0.11, 0.56], [0.13, 0.555], [0.15, 0.565], [0.18, 0.58], [0.21, 0.6]]);
+    s += `<path class="f-isl" d="${poly(mont)}"/>`;
+    // 2. Antigua's south coast on the right: the hills against the afterglow, a headland running out.
+    const coast = P([[0.5, 0.6], [0.56, 0.585], [0.6, 0.57], [0.64, 0.545], [0.68, 0.51], [0.72, 0.48], [0.76, 0.46], [0.8, 0.47],
+      [0.84, 0.44], [0.88, 0.42], [0.92, 0.43], [0.96, 0.41], [1.02, 0.4], [1.02, 0.605], [0.5, 0.605]]);
+    s += `<path class="f-far" d="${poly(coast)}${scrub(coast.slice(1, 13), 5, 0.8, 2)}"/>`;
+    for (let i = 0; i < 16; i++) lights[1].push([X(0.6 + r() * 0.4), Y(0.53 + r() * 0.06)]);
+    s += `<path class="isl-vshore" d="M${F(X(0.5))} ${F(Y(0.602))}H${F(X(1.02))}" stroke-width="1"/>`;
+    // 3. The yachts: a hull heeled to leeward, a tall mainsail, a jib, some a spinnaker ballooning
+    //    ahead; all sailing left, the nearer larger and lower in the frame.
+    let sails = '', spins = '', hulls = '', wakes = '', accent = '';
+    const yacht = (x, wl, L, heel, spin, hued) => {
+      const mh = L * 1.45, mx = x + L * 0.08, hh = L * 0.1;
+      let hull = `M${F(x - L * 0.5)} ${F(wl - hh)}H${F(x + L * 0.5)}L${F(x + L * 0.38)} ${F(wl)}H${F(x - L * 0.42)}Z`;
+      let main = `M${F(mx)} ${F(wl - hh - mh)}Q${F(mx + L * 0.18)} ${F(wl - hh - mh * 0.45)} ${F(mx + L * 0.46)} ${F(wl - hh * 1.4)}L${F(mx + L * 0.02)} ${F(wl - hh * 1.4)}Z`;
+      let jib = `M${F(mx - L * 0.02)} ${F(wl - hh - mh * 0.86)}L${F(x - L * 0.48)} ${F(wl - hh * 1.1)}L${F(mx - L * 0.04)} ${F(wl - hh * 1.2)}Z`;
+      let sp = spin ? `M${F(mx - L * 0.03)} ${F(wl - hh - mh * 0.92)}C${F(x - L * 0.95)} ${F(wl - hh - mh * 0.95)} ${F(x - L * 1.05)} ${F(wl - hh - mh * 0.25)} ${F(x - L * 0.62)} ${F(wl - hh * 1.6)}Q${F(x - L * 0.3)} ${F(wl - hh - mh * 0.2)} ${F(mx - L * 0.03)} ${F(wl - hh - mh * 0.92)}Z` : '';
+      const g = `transform="rotate(${F(heel)} ${F(x)} ${F(wl)})"`;
+      hulls += `<g ${g}><path d="${hull}"/></g>`;
+      sails += `<g ${g}><path d="${main}${spin ? '' : jib}"/></g>`;
+      if (spin) (hued ? (accent += `<g ${g}><path d="${sp}"/></g>`) : (spins += `<g ${g}><path d="${sp}"/></g>`));
+      wakes += `M${F(x + L * 0.45)} ${F(wl + 1)}h${F(L * 0.9)}M${F(x + L * 0.6)} ${F(wl + L * 0.05)}h${F(L * 0.55)}`;
+      lights[0].push([x - L * 0.48, wl - hh], [mx, wl - hh - mh]);
+    };
+    const fleet = [[0.62, 0.635, 0.035, -4, true, false], [0.47, 0.645, 0.045, -6, false, false], [0.78, 0.655, 0.05, -5, true, false],
+      [0.3, 0.68, 0.065, -7, true, true], [0.55, 0.72, 0.085, -8, false, false], [0.84, 0.76, 0.1, -6, true, false]];
+    for (const [fx, fy, fl, hd, sp, hu] of fleet) yacht(X(fx), Y(fy), X(fl), hd, sp, hu);
+    s += `<path class="isl-vsurf" d="${wakes}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>`;
+    s += `<g class="isl-vhull">${hulls}</g><g class="isl-vsail">${sails}</g><g class="isl-vspin">${spins}</g><g class="isl-vspin-k">${accent}</g>`;
+    // The lights, the yachts first.
+    lights.forEach((pts, gi) => {
+      s += `<path class="s-vlight isl-vwin${gi === 1 ? ' isl-vlast' : ''}" style="--i:${gi * 3}" d="${pts.map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('')}" stroke-width="${gi ? 1.4 : 1.6}"/>`;
+    });
+    return s;
+  }
+
+  /* LAMP-LIT STEPS (the Step-by-Step Guides index's head; the owner chose it, 2026-09-28): old stone
+     steps climbing a hillside in flights to a lookout at the top, the kind of path up to Shirley
+     Heights or Fort Berkeley, a lamp at every landing, the harbour below with a boat at anchor. In the
+     one pass the lamps light one by one from the bottom up, step by step; the lamp at the top takes
+     the page's hue. */
+  function steps(W, H, v) {
+    const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(61);
+    const P = (pts) => pts.map(([x, y]) => [X(x), Y(y)]);
+    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
+    const scrub = (pts, n, s0, s1) => {
+      let d = '';
+      for (let i = 0; i < pts.length - 1; i++) {
+        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
+        for (let j = 0; j < n; j++) {
+          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
+          d += `M${F(x - rr)} ${F(y + rr * 0.45)}a${F(rr)} ${F(rr * 0.82)} 0 0 1 ${F(2 * rr)} 0Z`;
+        }
+      }
+      return d;
+    };
+    let s = '';
+    // 1. The far shore across the harbour, low, with a few lights; a boat at anchor.
+    const far = P([[-0.02, 0.6], [0.06, 0.585], [0.14, 0.58], [0.22, 0.59], [0.3, 0.605], [0.3, 0.62], [-0.02, 0.62]]);
+    s += `<path class="f-isl" d="${poly(far)}${scrub(far.slice(0, 5), 4, 0.7, 1.6)}"/>`;
+    const boatX = X(0.2), boatY = Y(0.8);
+    s += `<path class="isl-vhull" d="M${F(boatX - X(0.03))} ${F(boatY - Y(0.012))}H${F(boatX + X(0.03))}L${F(boatX + X(0.022))} ${F(boatY)}H${F(boatX - X(0.024))}Z"/>`;
+    s += `<path class="isl-vmast" d="M${F(boatX)} ${F(boatY - Y(0.012))}V${F(boatY - Y(0.16))}" stroke-width="1"/>`;
+    s += `<rect x="${F(boatX - 0.7)}" y="${F(boatY + Y(0.004))}" width="1.4" height="${F(Y(0.09))}" fill="url(#islvrefl)"/>`;
+    // 2. The hillside: rising from the water on the left to the lookout at the top right.
+    const hill = P([[0.3, 1.03], [0.34, 0.9], [0.4, 0.78], [0.47, 0.66], [0.54, 0.55], [0.61, 0.45], [0.68, 0.36], [0.74, 0.29],
+      [0.8, 0.25], [0.86, 0.24], [0.92, 0.26], [0.97, 0.3], [1.02, 0.33], [1.02, 1.03]]);
+    s += `<path class="f-far" d="${poly(hill)}${scrub(hill.slice(1, 12), 7, 1, 2.6)}"/>`;
+    // 3. The lookout at the top: a small stone blockhouse with an arched opening, lit.
+    const lx = X(0.855), lb = Y(0.245), lw = X(0.07), lh = Y(0.1);
+    s += `<path class="isl-vstone" d="M${F(lx - lw / 2)} ${F(lb)}V${F(lb - lh)}H${F(lx + lw / 2)}V${F(lb)}Z"/>`;
+    s += `<path class="isl-vstone" d="${Array.from({ length: 4 }, (_, i) => `M${F(lx - lw / 2 + i * lw / 3.5)} ${F(lb - lh)}h${F(lw / 7)}v${F(-Y(0.02))}h${F(-lw / 7)}Z`).join('')}"/>`;
+    s += `<path class="f-pulse isl-vwin" style="--i:5" d="M${F(lx - lw * 0.14)} ${F(lb)}V${F(lb - lh * 0.45)}A${F(lw * 0.14)} ${F(lw * 0.14)} 0 0 1 ${F(lx + lw * 0.14)} ${F(lb - lh * 0.45)}V${F(lb)}Z"/>`;
+    // 4. The steps: three flights zigzagging up the slope, treads pale, risers dark; a lamp at the
+    //    foot, at each landing and at the top.
+    const flights = [[[0.37, 0.93], [0.52, 0.74]], [[0.52, 0.74], [0.6, 0.5]], [[0.6, 0.5], [0.8, 0.28]]];
+    let treads = '', lamps = [];
+    flights.forEach(([[xa, ya], [xb, yb]], fi) => {
+      const n = 9, sw = X(0.045) * (1 - fi * 0.18);
+      for (let i = 0; i < n; i++) {
+        const t2 = i / n, x = X(xa + (xb - xa) * t2), y = Y(ya + (yb - ya) * t2);
+        const dx = X((xb - xa) / n), dy = Y((yb - ya) / n);
+        treads += `M${F(x - sw / 2)} ${F(y)}L${F(x + sw / 2)} ${F(y)}L${F(x + sw / 2 + dx)} ${F(y + dy)}L${F(x - sw / 2 + dx)} ${F(y + dy)}Z`;
+      }
+      lamps.push([X(xa) - X(0.035), Y(ya)]);
+    });
+    lamps.push([X(0.8) - X(0.04), Y(0.28)]);
+    s += `<path class="isl-vstep" d="${treads}"/>`;
+    // the lamps: posts and glows; the top one in the page's hue
+    lamps.forEach(([x, y], i) => {
+      const top = i === lamps.length - 1, ph = Y(0.07);
+      s += `<path class="f-near" d="M${F(x - 1)} ${F(y)}V${F(y - ph)}H${F(x + 1)}V${F(y)}Z"/>`;
+      s += `<g class="isl-vwin${top ? ' isl-vlast' : ''}" style="--i:${i * 2}"><circle cx="${F(x)}" cy="${F(y - ph)}" r="${F(Y(top ? 0.075 : 0.06))}" fill="url(#${top ? 'islvlamp' : 'islvbulb'})"/>`
+        + `<circle class="${top ? 'isl-vlamp' : 'f-pulse'}" cx="${F(x)}" cy="${F(y - ph)}" r="${F(Math.max(1.6, Y(0.009)))}"/></g>`;
+    });
+    return s;
+  }
+
   /* NELSON'S DOCKYARD (beside the Lecture Outline's checks, where the campus stood until it moved to
      the homepage): the Georgian naval dockyard at English Harbour, a UNESCO World Heritage Site. In
      front, standing in the harbour, the Sail Loft's pillars: the capped stone columns that are all
@@ -713,6 +835,24 @@
       // the Moon, about 24 degrees up, and Venus in the sky above the horizon
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 29),
       under: false,
+      ground: null,
+    },
+    'sailing-week': {
+      draw: regatta,
+      world: 'inland',
+      horizon: 0.6,
+      // From the sea off English Harbour, west-south-west: Montserrat on the left, the sunset behind
+      // the south coast's hills on the right.
+      face: 258,
+      ppd: (W) => W / 80,
+      ground: null,
+    },
+    'lamp-steps': {
+      draw: steps,
+      world: 'inland',
+      horizon: 0.6,
+      // From the harbour side, west toward the last light above the hill.
+      face: 262,
       ground: null,
     },
     'nelsons-dockyard': {

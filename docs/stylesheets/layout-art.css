@@ -329,6 +329,14 @@
 .isl .isl-vbrick { fill: var(--isl-vbrick); }
 .isl .isl-vpshade { fill: var(--isl-near); fill-opacity: 0.3; }
 .isl .isl-vpback { fill: var(--isl-vstrata); }
+/* Sailing Week's sails and spinnakers (one in the page's hue), and the steps' stone treads. */
+.isl { --isl-vsail: #e9edf2; --isl-vspin: #b9a6c9; }
+[data-md-color-scheme="slate"] .isl { --isl-vsail: #8d9bad; --isl-vspin: #6c6282; }
+.isl .isl-vsail { fill: var(--isl-vsail); }
+.isl .isl-vspin { fill: var(--isl-vspin); }
+.isl .isl-vspin-k { fill: var(--k-line, var(--isl-rim)); }
+[data-md-color-scheme="slate"] .isl .isl-vspin-k { fill: var(--k, var(--isl-rim)); }
+.isl .isl-vstep { fill: var(--isl-vstone); }
 .isl .isl-vpreflect { fill: var(--isl-vstone); fill-opacity: 0.22; }
 /* The Pillars of Hercules' limestone: its face in the last light, its strata and its hollows. */
 .isl { --isl-vstone: #a39a86; --isl-vstrata: #7f7765; }

@@ -46,3 +46,19 @@ slots:
     section: _head
     piece: curtain-bluff
     aspect: 0.42
+
+  # The News & Events landing's head: Antigua Sailing Week, the island's
+  # signature event (the owner chose it, 2026-09-28).
+  - page: news-and-events.md
+    section: _head
+    piece: sailing-week
+    kind: news
+    aspect: 0.42
+
+  # The Step-by-Step Guides index's head: lamp-lit stone steps up to a
+  # lookout, lighting one by one (the owner chose it, 2026-09-28).
+  - page: playbooks/index.md
+    section: _head
+    piece: lamp-steps
+    kind: guide
+    aspect: 0.42
