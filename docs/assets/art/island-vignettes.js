@@ -273,8 +273,11 @@
       for (let k = 0, tries = 0; k < n && tries < n * 40; tries++) {
         const x = xa + rr() * (xb - xa), y = ya + rr() * (yb - ya);
         if (!inPoly(x, y, pts)) continue;
-        const near = (y - ya) / Math.max(1, yb - ya);
-        list.push([x, y, (s0 + (s1 - s0) * near) * (0.7 + rr() * 0.6)]);
+        const near = (y - ya) / Math.max(1, yb - ya), sz = (s0 + (s1 - s0) * near) * (0.7 + rr() * 0.6);
+        // the whole crown on the land, never overhanging the water (the owner, 2026-09-28: "one small tree
+        // in the water")
+        if (!inPoly(x - sz, y, pts) || !inPoly(x + sz, y, pts) || !inPoly(x, y + sz, pts)) continue;
+        list.push([x, y, sz]);
         k++;
       }
       list.sort((p, q) => p[1] - q[1]);
