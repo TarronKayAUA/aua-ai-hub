@@ -322,6 +322,14 @@
 .isl .isl-vhullband { fill: var(--isl-near); fill-opacity: 0.75; }
 .isl .isl-vdeck { stroke: var(--isl-near); stroke-opacity: 0.35; fill: none; }
 .isl .isl-vcannon { fill: var(--isl-near); }
+/* Nelson's Dockyard: the Copper and Lumber Store's brick; the Sail Loft pillars' shaded sides and
+   their reflections. */
+.isl { --isl-vbrick: #8a5a4c; }
+[data-md-color-scheme="slate"] .isl { --isl-vbrick: #4a3035; }
+.isl .isl-vbrick { fill: var(--isl-vbrick); }
+.isl .isl-vpshade { fill: var(--isl-near); fill-opacity: 0.3; }
+.isl .isl-vpback { fill: var(--isl-vstrata); }
+.isl .isl-vpreflect { fill: var(--isl-vstone); fill-opacity: 0.22; }
 /* The Pillars of Hercules' limestone: its face in the last light, its strata and its hollows. */
 .isl { --isl-vstone: #a39a86; --isl-vstrata: #7f7765; }
 [data-md-color-scheme="slate"] .isl { --isl-vstone: #3b4049; --isl-vstrata: #2a2e36; }

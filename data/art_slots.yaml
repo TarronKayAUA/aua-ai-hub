@@ -24,8 +24,10 @@
 slots:
   - page: examples/lecture-outline.md
     section: what-to-check
-    piece: campus
+    piece: nelsons-dockyard
     kind: guide
+    # (The AUA campus stood here first; it moved to the homepage's hero at
+    # the owner's suggestion, 2026-09-27.)
 
   # The For Students landing's head, where the frame was empty beside the
   # title (800x320 at 1920, the top of the page): Shirley Heights at dusk,

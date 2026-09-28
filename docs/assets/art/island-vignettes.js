@@ -458,6 +458,93 @@
     return `<g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g>`;
   }
 
+  /* NELSON'S DOCKYARD (beside the Lecture Outline's checks, where the campus stood until it moved to
+     the homepage): the Georgian naval dockyard at English Harbour, a UNESCO World Heritage Site. In
+     front, standing in the harbour, the Sail Loft's pillars: the capped stone columns that are all
+     that is left of the 1797 boat house and sail loft after the earthquake of 1871, with their
+     reflections. Behind them at the quay the Copper and Lumber Store of 1789, its arched ground floor
+     and upper windows lit; yachts' masts along the water to the right; above, the ridge of Shirley
+     Heights with the lookout's lights on its top. A lamp on the quay takes the page's hue. */
+  function dockyard(W, H, v) {
+    const X = (f) => f * W, Y = (f) => f * H, r = rng(83);
+    const P = (pts) => pts.map(([x, y]) => [X(x), Y(y)]);
+    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
+    const arch = (x, yTop, w, yBot) => `M${F(x - w / 2)} ${F(yBot)}V${F(yTop + w / 2)}A${F(w / 2)} ${F(w / 2)} 0 0 1 ${F(x + w / 2)} ${F(yTop + w / 2)}V${F(yBot)}Z`;
+    const scrub = (pts, n, s0, s1) => {
+      let d = '';
+      for (let i = 0; i < pts.length - 1; i++) {
+        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
+        for (let j = 0; j < n; j++) {
+          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
+          d += `M${F(x - rr)} ${F(y + rr * 0.45)}a${F(rr)} ${F(rr * 0.82)} 0 0 1 ${F(2 * rr)} 0Z`;
+        }
+      }
+      return d;
+    };
+    const lights = [[], [], []];      // 0 the Store, 1 the masts, 2 the ridge
+    const wl = Y(0.63);               // the quay's waterline
+    let s = `<rect y="${F(v.y0)}" width="${F(W)}" height="${F(H - v.y0)}" fill="url(#islvbay)"/>`;
+    // 1. The ridge of Shirley Heights, the lookout's lights on its top.
+    const ridge = P([[-0.02, 0.46], [0.1, 0.43], [0.22, 0.4], [0.34, 0.37], [0.46, 0.34], [0.56, 0.31], [0.64, 0.28],
+      [0.72, 0.27], [0.8, 0.29], [0.9, 0.33], [1.02, 0.36], [1.02, 0.6], [-0.02, 0.6]]);
+    s += `<path class="f-isl" d="${poly(ridge)}${scrub(ridge.slice(0, 11), 5, 0.9, 2.2)}"/>`;
+    for (let i = 0; i < 6; i++) lights[2].push([X(0.69 + i * 0.012), Y(0.268 + (r() - 0.5) * 0.006)]);
+    for (let i = 0; i < 10; i++) lights[2].push([X(0.1 + r() * 0.85), Y(0.42 + r() * 0.12)]);
+    // 2. The dockyard's ground at the quay.
+    s += `<path class="f-far" d="${poly(P([[-0.02, 0.56], [0.3, 0.55], [0.6, 0.56], [1.02, 0.57], [1.02, 0.635], [-0.02, 0.635]]))}"/>`;
+    // 3. The Copper and Lumber Store: two storeys of brick, a hipped roof, an arcade below.
+    const x0 = X(0.05), x1 = X(0.56), top = Y(0.475), mid = Y(0.555), bays = 9, bw = (x1 - x0) / bays;
+    s += `<rect class="isl-vglow" x="${F(x0)}" y="${F(top)}" width="${F(x1 - x0)}" height="${F(wl - top)}" fill="url(#islvwarm)"/>`;
+    s += `<path class="isl-vbrick" d="M${F(x0)} ${F(wl)}V${F(top)}H${F(x1)}V${F(wl)}Z"/>`;
+    s += `<path class="isl-vroof2" d="M${F(x0 - X(0.01))} ${F(top + 1)}L${F(x0 + X(0.04))} ${F(top - Y(0.04))}H${F(x1 - X(0.04))}L${F(x1 + X(0.01))} ${F(top + 1)}Z"/>`;
+    s += `<path class="s-hz" d="M${F(x0)} ${F(mid)}H${F(x1)}" stroke-width="1"/>`;
+    let arches = '', wins = '';
+    for (let i = 0; i < bays; i++) {
+      const x = x0 + (i + 0.5) * bw;
+      arches += arch(x, mid + Y(0.012), bw * 0.56, wl);
+      wins += `M${F(x - bw * 0.16)} ${F(top + Y(0.018))}h${F(bw * 0.32)}v${F(Y(0.045))}h${F(-bw * 0.32)}Z`;
+    }
+    s += `<path class="f-pulse isl-vwin" style="--i:0" d="${arches}"/>`;
+    s += `<path class="f-pulse isl-vwin" style="--i:1" d="${wins}"/>`;
+    // the quay lamp, in the page's hue
+    const lx = X(0.6), ly = Y(0.53);
+    s += `<path class="f-near" d="M${F(lx - 1)} ${F(wl)}V${F(ly)}H${F(lx + 1)}V${F(wl)}Z"/>`;
+    s += `<circle cx="${F(lx)}" cy="${F(ly)}" r="${F(Y(0.045))}" fill="url(#islvlamp)"/>`;
+    s += `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly)}" r="${F(Math.max(1.5, Y(0.006)))}"/>`;
+    // 4. Yachts along the quay to the right: masts, hulls, masthead lights, reflections.
+    let masts = '', hulls = '', refl = '';
+    for (let i = 0; i < 9; i++) {
+      const x = X(0.64 + i * 0.042 + (r() - 0.5) * 0.01), mh = Y(0.18 + r() * 0.1), hw = X(0.018);
+      masts += `M${F(x)} ${F(wl - Y(0.008))}V${F(wl - mh)}`;
+      hulls += `M${F(x - hw)} ${F(wl - Y(0.012))}H${F(x + hw)}L${F(x + hw * 0.8)} ${F(wl + Y(0.004))}H${F(x - hw * 0.8)}Z`;
+      lights[1].push([x, wl - mh]);
+      refl += `<rect x="${F(x - 0.6)}" y="${F(wl + Y(0.008))}" width="1.2" height="${F(Y(0.08))}" fill="url(#islvrefl)"/>`;
+    }
+    s += `<path class="isl-vmast" d="${masts}" stroke-width="0.9"/><path class="isl-vhull" d="${hulls}"/>`;
+    // 5. The Sail Loft's pillars in the harbour: a double row seen from the side, the nearer row large
+    //    and capped, the farther row showing between them.
+    const foot = Y(0.9), capTop = Y(0.66), pw = X(0.07);
+    let back = '', front = '', caps = '', shade = '', prefl = '';
+    const n = 6;
+    for (let i = 0; i < n; i++) {
+      const x = X(0.1 + i * 0.16), wv = pw * (0.92 + r() * 0.16), ct = capTop + Y((r() - 0.5) * 0.02);
+      back += `M${F(x + pw * 0.95)} ${F(foot - Y(0.05))}V${F(capTop + Y(0.03))}H${F(x + pw * 1.55)}V${F(foot - Y(0.05))}Z`;
+      front += `M${F(x)} ${F(foot)}V${F(ct)}H${F(x + wv)}V${F(foot)}Z`;
+      caps += `M${F(x - wv * 0.08)} ${F(ct + 1)}V${F(ct - Y(0.016))}H${F(x + wv * 1.08)}V${F(ct + 1)}Z`;
+      shade += `M${F(x + wv * 0.7)} ${F(foot)}V${F(ct)}H${F(x + wv)}V${F(foot)}Z`;
+      prefl += `M${F(x)} ${F(foot)}H${F(x + pw)}L${F(x + pw * 0.9)} ${F(Math.min(H, foot + Y(0.1)))}H${F(x + pw * 0.1)}Z`;
+    }
+    s += `<path class="isl-vpback" d="${back}"/>`;
+    s += `<path class="isl-vpreflect" d="${prefl}"/>`;
+    s += `<path class="isl-vstone" d="${front}${caps}"/><path class="isl-vpshade" d="${shade}"/>`;
+    s += `<g class="isl-vlamps">${refl}</g>`;
+    // The lights, the Store first, then the masts, then the ridge.
+    [[1, 1.7], [2, 1.5]].forEach(([g, sw], k) => {
+      s += `<path class="s-vlight isl-vwin${g === 2 ? ' isl-vlast' : ''}" style="--i:${2 + k * 2}" d="${lights[g].map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('')}" stroke-width="${sw}"/>`;
+    });
+    return s;
+  }
+
   /* ST JOHN'S HARBOUR (the News & Events landing's head), where the island's news comes in by sea:
      seen from Fort James's rampart at the harbour mouth, looking in across the water at night, from the
      references in the art's source folder (references/web-st-johns-harbour-cruise-ships,
@@ -626,6 +713,14 @@
       // the Moon, about 24 degrees up, and Venus in the sky above the horizon
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 29),
       under: false,
+      ground: null,
+    },
+    'nelsons-dockyard': {
+      draw: dockyard,
+      world: 'inland',
+      horizon: 0.6,
+      // From the harbour, east at the dockyard and Shirley Heights above it.
+      face: 95,
       ground: null,
     },
     'st-johns-harbour': {
