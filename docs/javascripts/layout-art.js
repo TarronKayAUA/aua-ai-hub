@@ -45,6 +45,20 @@
   function shownVigs() {
     return Array.prototype.filter.call(vigs, function (f) { return f.offsetWidth > 0; });
   }
+  // The bold homepage hero (desktop, from 68.75em) draws the campus, which lives in
+  // island-vignettes.js: that file is fetched before the hero paints, so the picture appears once,
+  // complete. If it fails, the hero paints the Curtain Bluff view as before.
+  var boldHero = hero && window.matchMedia('(min-width: 68.75em)').matches;
+  function then(name, done) {
+    if (state[name] === 'ready' || state[name] === 'failed') return done();
+    var s = document.createElement('script');
+    s.src = base + 'assets/art/' + name;
+    s.async = true;
+    state[name] = 'loading';
+    s.onload = function () { state[name] = 'ready'; done(); };
+    s.onerror = function () { state[name] = 'failed'; done(); };
+    document.head.appendChild(s);
+  }
   function run() {
     var wantSides = sides && wide();
     var wantVigs = shownVigs().length > 0;
@@ -52,7 +66,8 @@
     load('island-core.js', function () {
       var A = window.IslandArt;
       if (!A || !A.lib) return;
-      if (hero) A.hero(hero);
+      if (hero && boldHero) then('island-vignettes.js', function () { A.hero(hero); });
+      else if (hero) A.hero(hero);
       if (wantSides) load('island-sides.js', function () { if (A.sides) A.sides(sides); });
       if (wantVigs) load('island-vignettes.js', function () {
         if (A.vignette) shownVigs().forEach(A.vignette);

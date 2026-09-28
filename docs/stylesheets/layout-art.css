@@ -339,6 +339,10 @@
 /* One pass: the card fades in, then the lit room's windows and the door light in turn. Opacity
    only; nothing under reduced motion (the script never starts the pass then). */
 .isl-vig.isl-vrun { animation: isl-vfade 0.7s ease-out both; }
+/* The campus in the homepage hero lights up during the hero's own one pass. */
+.isl-hero.isl-run .isl-vwin { animation: isl-vlight 0.9s ease-out both; animation-delay: calc(1.1s + var(--i, 0) * 0.2s); }
+.isl-hero.isl-run .isl-vglow,
+.isl-hero.isl-run .isl-vlamps { animation: isl-vlight 1.2s ease-out 1.4s both; }
 .isl-vig.isl-vrun .isl-vwin { animation: isl-vlight 0.9s ease-out both; animation-delay: calc(0.8s + var(--i, 0) * 0.22s); }
 .isl-vig.isl-vrun .isl-vglow,
 .isl-vig.isl-vrun .isl-vlamps,

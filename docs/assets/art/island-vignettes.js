@@ -97,8 +97,8 @@
      - the drive's lawn in front, with lamp posts, one of them in the page's hue;
      - the sea behind (the north coast) and green hills to the east.
      Lights come on from the tower outward, wing by wing, in the one pass. */
-  function campus(W, H, v, g) {
-    const fw = W * 1.1, cx = W * 0.5, base = g.at(cx) + 1, u = fw / 100;
+  function campus(W, H, v, g, opt = {}) {
+    const fw = W * (opt.fw || 1.1), cx = W * 0.5, base = g.at(cx) + 1, u = fw / 100;
     const r = rng(41);
     let walls = '', shade = '', band = '', roofs = '', roofShade = '', dark = '', lit = '', rails = '';
     const litGroups = [];                     // [group, path] so the lights can come on in turn
@@ -183,10 +183,14 @@
     s += `<rect class="isl-vglow" x="${F(cx - 26 * u)}" y="${F(iTop - 2 * u)}" width="${F(52 * u)}" height="${F(base - iTop + 2 * u)}" fill="url(#islvwarm)"/>`;
 
     // The drive: the lawn's ring road in front, lamp posts along it, one in the page's hue.
-    const ey = base + (H - base) * 0.5, erx = W * 0.47, ery = (H - base) * 0.24;
-    s += `<ellipse class="isl-vdrive" cx="${F(cx)}" cy="${F(ey)}" rx="${F(erx)}" ry="${F(ery)}" fill="none" stroke-width="${F(Math.max(2, (H - base) * 0.03))}" stroke-opacity=".75"/>`;
-    // the planted bed in the middle of the lawn
-    s += `<path class="f-near" d="M${F(cx - 9 * u)} ${F(ey)}Q${F(cx)} ${F(ey - ery * 0.55)} ${F(cx + 9 * u)} ${F(ey)}Z"/>`;
+    // (In the homepage hero there is no room for the drive: the lamps stand along the lawn's edge.)
+    const lawn = !!opt.lawn;
+    const ey = lawn ? base + 1.2 * u : base + (H - base) * 0.5, erx = fw * 0.43, ery = lawn ? 0 : (H - base) * 0.24;
+    if (!lawn) {
+      s += `<ellipse class="isl-vdrive" cx="${F(cx)}" cy="${F(ey)}" rx="${F(erx)}" ry="${F(ery)}" fill="none" stroke-width="${F(Math.max(2, (H - base) * 0.03))}" stroke-opacity=".75"/>`;
+      // the planted bed in the middle of the lawn
+      s += `<path class="f-near" d="M${F(cx - 9 * u)} ${F(ey)}Q${F(cx)} ${F(ey - ery * 0.55)} ${F(cx + 9 * u)} ${F(ey)}Z"/>`;
+    }
     s += `<path class="isl-vspill" d="M${F(cx - 3.2 * u)} ${F(base)}H${F(cx + 3.2 * u)}L${F(cx + 9 * u)} ${F(Math.min(H, ey))}H${F(cx - 9 * u)}Z" fill="url(#islvspill)"/>`;
     const lampH = 6.2 * u;
     let postsD = '', glows = '';
@@ -440,6 +444,26 @@
     s += `<path class="s-vlight isl-vwin isl-vlast" style="--i:2" d="${d}" stroke-width="1.5"/>`;
     return s;
   }
+
+  /* THE HOMEPAGE HERO'S SCENE (owner, 2026-09-27): in the bold hero (desktop, from 68.75em) the campus
+     stands on its lawn at the card's foot, in the sky's space right of the words, from x0 to x1, under
+     the hero's own sky, which island-core.js draws as before; the far islands and Antigua's coast are
+     left out there, being untrue from Coolidge. Returns the drawing (ids unprefixed: the hero gives
+     every id its own prefix) and the box the frigatebird must keep clear of. Null when the space is too
+     narrow for the campus to read. */
+  A.heroScene = function (v, x0, x1, H) {
+    const Wr = x1 - x0;
+    if (Wr < 240) return null;
+    const base = H - Math.max(6, H * 0.02);
+    const g = { at: () => base - 1 };
+    const lawnG = rise(Wr, H, -Wr * 0.02, Wr * 0.1, H + 4, base, 29);
+    const inner = `<path class="f-near" d="${lawnG.d}"/>` + campus(Wr, H, v, g, { fw: 1.02, lawn: true });
+    const u = Wr * 1.02 / 100, top = base - 42 * u;
+    return {
+      svg: extraDefs() + `<g transform="translate(${F(x0)} 0)">${inner}</g>`,
+      box: [x0 + Wr * 0.02, top - 8, x1, H],
+    };
+  };
 
   /* Each piece: its drawing; its world ('coast', the Curtain Bluff view with the far islands and
      Antigua's land, or 'inland', its own hills); the bearing it faces; and its ground. */
