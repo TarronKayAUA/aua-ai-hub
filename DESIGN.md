@@ -632,9 +632,9 @@ Cautions learned in review: lit and shaded planes (`facets`) must follow real fa
 
 Two traps from the rounds: `mkdocs serve` does not reload hook code (restart it after changing `scripts/layout_art.py`), and an image viewer may show a cached picture under an old file name.
 
-### 19.6 Four times of day
+### 19.6 Five times of day
 
-Every piece is made in the same four versions (owner, 2026-09-28; SPEC section 12, "The art in four times of day"): **Dawn**, **Day** and **Dusk** in the light scheme, chosen by the visitor's local time, and **Night** in the dark scheme. The versions' styles are shared, not per piece: one set of sky, sea, land and material tokens per version, the same rules for lights (on at Dusk and Night, off by Day), stars and grain (none by Day), and the Moon (Dusk and Night only). A piece draws its subject once; the version supplies the light. Its review sheet shows all four, and it is not finished until all four pass the review loop above.
+Every piece is made in the same five versions (owner, 2026-09-28; SPEC section 12, "The art in four times of day"): **Dawn**, **Day**, **Sunset** and **Dusk** in the light scheme, chosen by the visitor's local time (from 5:00, 9:00, 17:00 and 19:00), and **Night** in the dark scheme. The versions' styles are shared, not per piece: one set of sky, sea, land and material tokens per version (layout-art.css), the same rules for lights (on at Dawn, Sunset, Dusk and Night, off by Day), stars (Dusk and Night), grain (none by Day), the Moon (Sunset, Dusk and Night) and the Sun (drawn by `sunDisc` only where it truly is in view: rising in east-facing views at Dawn, just above the horizon at Sunset, never by Day, when it is high behind every view). A piece draws its subject once; the version supplies the light. What only daylight shows is drawn in a Day-only layer (`isl-ydet`: flanks in shade, trees kept whole on the land, rock, shallows, roads), with the helpers in `makeKit`; vegetated land is marked `isl-land` so the Day version textures it; buildings come from `house`/`drawB`, drawn in every version, so their windows are the lights at night. Its review sheet (`art_review.py --times`) shows all five, and it is not finished until all five pass the review loop above.
 
 ### 19.7 Budget
 

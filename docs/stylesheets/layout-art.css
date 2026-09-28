@@ -74,8 +74,9 @@
    land's three depths, the clouds, and the materials pieces draw with. Dawn keeps the lights on; by Day
    they are off, the warm halos and pools go (--isl-g1 clear) and windows show as glass. */
 .isl .isl-a, .isl .isl-y, .isl .isl-s { display: none; }
-/* PREVIEW (?isl-sky=sunset): Dusk at the moment of sunset, the Sun on the horizon where the view shows it;
-   the sky brighter and warmer, and the first stars not yet out (Venus and the Moon stay). */
+/* SUNSET (owner, 2026-09-28: five versions): each picture's Dusk drawing a few minutes before sunset, the
+   Sun just above the horizon wherever the view truly shows it (sunDisc), the sky brighter and warmer, the
+   first stars not yet out; Venus and the Moon stay, the lights are coming on. */
 [data-md-color-scheme="default"] .isl[data-sky="sunset"] .isl-s { display: inline; }
 [data-md-color-scheme="default"] .isl[data-sky="sunset"] .isl-dstars { display: none; }
 [data-md-color-scheme="default"] .isl[data-sky="sunset"] {
@@ -108,7 +109,7 @@
   --isl-veg-d: #2d4a2f; --isl-veg-l: #86a35c; --isl-veg-t: #9a8660; --isl-vhouse: #f4f2ec; --isl-vroofg: #8a969c;
   --isl-vtree: #4b773a; --isl-vtree2: #6b8f3d; --isl-vtree3: #37602f; --isl-vtree-l: #9cbb5a; --isl-vtree-d: #1d3620; --isl-vshadow: #1d3620;
   --isl-vrock: #a47a5b; --isl-vrock-s: #6c4f3e; --isl-vshallow: #b6ece0; --isl-vroad: #dccfae;
-  --isl-vdry: #b59c6b; --isl-vrockshore: #d6bd93;
+  --isl-vdry: #b59c6b; --isl-vrockshore: #d6bd93; --isl-vriser: #9b927f; --isl-vroof: #b04a3c;
   --isl-g1: rgba(255, 255, 255, 0); --isl-g2: rgba(255, 255, 255, 0); --isl-g3: rgba(255, 255, 255, 0);
   --isl-sea0: #6fa3b8; --isl-sea1: #2f7ca1; --isl-sea2: #1e5f86; --isl-haze: #e6eff3;
   --isl-isl: #9fb5b8; --isl-far: #6a8a68; --isl-near: #45663d;
@@ -166,6 +167,14 @@
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-broofr { fill: var(--isl-vroof); }
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-bdock { fill: var(--isl-vdock, #dad3c2); }
 .isl .isl-vpool { fill: var(--isl-vpool, #54c9d1); }
+/* The Court House's town: the same dark shapes at Dawn, Sunset, Dusk and Night; pastel walls under red or
+   gray roofs by Day. */
+.isl .isl-tw0, .isl .isl-tw1, .isl .isl-tw2, .isl .isl-troof, .isl .isl-troofg { fill: var(--isl-far); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-tw0 { fill: #f2eee4; }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-tw1 { fill: #ecdca8; }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-tw2 { fill: #bfdad8; }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-troof { fill: var(--isl-vroof); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-troofg { fill: var(--isl-vroofg); }
 .isl .isl-vsandband { fill: var(--isl-vsand); fill-opacity: var(--isl-vsand-a, 0.7); }
 .isl .isl-vshallow2 { stroke: var(--isl-vshallow2, #cdf4ec); stroke-opacity: 0.8; fill: none; stroke-linejoin: round; }
 .isl .isl-vgrass { fill: var(--isl-vgrass, #1f6f78); fill-opacity: 0.35; }

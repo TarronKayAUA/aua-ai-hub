@@ -28,9 +28,9 @@ What it does:
     python scripts/art_review.py --site site/ --out C:/temp/art
     python scripts/art_review.py --piece shirley-heights --times --ref shirley-heights-7-owner-day.webp
 
---times renders the four versions every piece has (owner, 2026-09-28; DESIGN.md 19.6): Dawn, Day and
-Dusk in the light scheme (forced with ?isl-sky=) and Night in the dark scheme, and writes a sheet of
-the four; with --ref it compares the photographs with the Day version.
+--times renders the five versions every piece has (owner, 2026-09-28; DESIGN.md 19.6): Dawn, Day,
+Sunset and Dusk in the light scheme (forced with ?isl-sky=) and Night in the dark scheme, and writes a
+sheet of the five; with --ref it compares the photographs with the Day version.
 
 References are read from --refs DIR (default: the art's source folder,
 Claude Projects/Hub art for the media tracker (2026-09-26)/island-hub-version/
@@ -135,20 +135,20 @@ def review_sheet(label, context, light, dark, out):
 
 
 def times_sheet(label, shots, out):
-    """The four versions at 1920: Dawn and Day above, Dusk and Night below."""
+    """The five versions at 1920: Dawn and Day, Sunset and Dusk, then Night."""
     from PIL import Image, ImageDraw, ImageFont
     try:
         font, small = ImageFont.truetype("segoeuib.ttf", 26), ImageFont.truetype("segoeui.ttf", 20)
     except OSError:
         font = small = ImageFont.load_default()
-    ims = [(name, Image.open(shots[name])) for name in ("dawn", "day", "dusk", "night")]
+    ims = [(name, Image.open(shots[name])) for name in ("dawn", "day", "sunset", "dusk", "night")]
     k = 710 / ims[0][1].width
     ims = [(name, im.resize((710, round(im.height * k)))) for name, im in ims]
     h = ims[0][1].height
-    sheet = Image.new("RGB", (1440, 60 + 2 * (h + 54)), "#101418")
+    sheet = Image.new("RGB", (1440, 60 + 3 * (h + 54)), "#101418")
     draw = ImageDraw.Draw(sheet)
     draw.text((16, 14), label, fill="#f2f2f2", font=font)
-    titles = {"dawn": "Dawn (light theme)", "day": "Day (light theme)", "dusk": "Dusk (light theme)", "night": "Night (dark theme)"}
+    titles = {"dawn": "Dawn (light theme)", "day": "Day (light theme)", "sunset": "Sunset (light theme)", "dusk": "Dusk (light theme)", "night": "Night (dark theme)"}
     for i, (name, im) in enumerate(ims):
         x, y = (i % 2) * 730, 60 + (i // 2) * (h + 54)
         draw.text((x + 16, y), titles[name], fill="#cfd6de", font=small)
@@ -235,7 +235,7 @@ def main() -> int:
                 if args.times:
                     four = {"night": shots[(1920, "dark")]}
                     for w, h in ((1920, 1080), (1440, 900)):
-                        for sky in ("dawn", "day", "dusk"):
+                        for sky in ("dawn", "day", "sunset", "dusk"):
                             path = args.out / f"{key}_{w}_{sky}.png"
                             box, errors = shoot(env, slot, w, h, "light", path, sky=sky)
                             if w == 1920:

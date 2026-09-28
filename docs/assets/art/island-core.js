@@ -202,8 +202,9 @@
       if (x >= x0 - 8 && x <= x1 + 8 && p[6] > -90 && v.y0 - p[6] * v.ppd < v.H) run.push([x, p]); else flushFoot();
     }
     flushFoot();
-    return (far ? `<path class="f-far" d="${far}"/>` : '') + (near ? `<path class="f-near" d="${near}"/>` : '') + rim
-      + (under && withFoot ? `<path class="f-near" d="${under}"/>` : '');
+    // `isl-land`: vegetated land, which a vignette's Day version textures with scrub (island-vignettes.js)
+    return (far ? `<path class="f-far isl-land" d="${far}"/>` : '') + (near ? `<path class="f-near isl-land" d="${near}"/>` : '') + rim
+      + (under && withFoot ? `<path class="f-near isl-land" d="${under}"/>` : '');
   }
 
   /* ------------------------------------------------------------- the sky */

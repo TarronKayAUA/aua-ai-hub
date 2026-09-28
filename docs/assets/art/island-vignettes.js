@@ -230,34 +230,13 @@
      distant point at its left end; the town's slope on the right; the lookout's slope in front. Under
      the true sky facing west-north-west: in May the Sun sets behind the range, as in the owner's own
      dusk photograph. The lights come on dockyard first. */
-  function heights(W, H, v) {
-    const y0f = v.y0 / H, k = (1 - y0f) / (1 - 0.23), r = rng(73);
-    const X = (f) => f * W, Y = (f) => f * H;
-    // Land above the horizon at 1.7 times its height in the photograph (a wide card flattens the hills;
-    // the same licence as the islands in Island Night).
-    const Yp = (f) => H * (y0f + (f - 0.23) * k * (f < 0.23 ? 1.7 : 1));
-    const P = (pts) => pts.map(([x, y]) => [X(x), Yp(y)]);
-    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
-    const line = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L');
-    const scrub = (pts, n, s0, s1) => {
-      let d = '';
-      for (let i = 0; i < pts.length - 1; i++) {
-        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
-        for (let j = 0; j < n; j++) {
-          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
-          d += `M${F(x - rr)} ${F(y + rr * 0.45)}a${F(rr)} ${F(rr * 0.82)} 0 0 1 ${F(2 * rr)} 0Z`;
-        }
-      }
-      return d;
-    };
-    const lights = [];          // [x, y, group]: 0 the dockyard, 1 the boats, 2 Falmouth, 3 the slopes
-    let s = '';
-    // BY DAY (owner, 2026-09-28: "we need to render more features so the landscape doesn't look like green
-    // blobs"): what daylight shows and the other versions leave in shadow, drawn only for the Day version
-    // (isl-ydet): each hill's flank turned from the Sun in shade (at mid-morning the Sun is high, behind
-    // the lookout and to the right), tree crowns lit on their sunward side, larger and brighter nearer,
-    // the headland's rock, turquoise shallows along the shores, the dockyard's buildings and a road. At
-    // Dawn (isl-adet) the first light gilds the hilltops.
+  /* THE DAYLIGHT KIT (2026-09-28), first built for Shirley Heights and shared so every picture draws its
+     Day version to the same standard: a point-in-outline test, round shapes, tree crowns kept whole on the
+     land (lit on their sunward side, three greens, larger nearer), shaded flanks that follow the slopes,
+     and buildings drawn in every version (dark with lit windows at Dawn, Sunset, Dusk and Night; walls and
+     hipped roofs by Day), so a light at night is a building by Day. */
+  function makeKit(W, H) {
+    const Y = (f) => f * H;
     const inPoly = (x, y, pts) => {
       let c = false;
       for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
@@ -334,6 +313,52 @@
     const drawB = (bb, i) => `<path class="isl-bhouse" d="${bb.walls}"/><path class="isl-bstone" d="${bb.stone}"/>`
       + `<path class="isl-broof" d="${bb.grey}"/><path class="isl-broofr" d="${bb.red}"/><path class="isl-vshadow" d="${bb.shade}"/>`
       + `<g class="isl-vwin" style="--i:${i}">${bb.halo}<path class="f-pulse" d="${bb.win}"/></g>`;
+    // By Day, small houses where a picture's far lights stand on land (never at a masthead): white walls,
+    // red or gray roofs, sized for their distance.
+    const dayHouses = (pts, size, seed) => {
+      const rr = rng(seed);
+      let wl = '', rf = '', rg = '';
+      for (const [x, y] of pts) {
+        if (rr() < 0.3) continue;
+        const w = size * (0.8 + rr() * 0.5), h = w * 0.62;
+        wl += `M${F(x - w / 2)} ${F(y)}h${F(w)}v${F(-h)}h${F(-w)}Z`;
+        const roof = `M${F(x - w * 0.62)} ${F(y - h + 0.3)}L${F(x)} ${F(y - h - w * 0.36)}L${F(x + w * 0.62)} ${F(y - h + 0.3)}Z`;
+        if (rr() < 0.55) rf += roof; else rg += roof;
+      }
+      return `<g class="isl-ydet"><path class="isl-vhouse" d="${wl}"/><path class="isl-vroof" d="${rf}"/><path class="isl-vroofg" d="${rg}"/></g>`;
+    };
+    return { inPoly, circ, trees, flanks, bld, house, drawB, dayHouses };
+  }
+
+  function heights(W, H, v) {
+    const y0f = v.y0 / H, k = (1 - y0f) / (1 - 0.23), r = rng(73);
+    const X = (f) => f * W, Y = (f) => f * H;
+    // Land above the horizon at 1.7 times its height in the photograph (a wide card flattens the hills;
+    // the same licence as the islands in Island Night).
+    const Yp = (f) => H * (y0f + (f - 0.23) * k * (f < 0.23 ? 1.7 : 1));
+    const P = (pts) => pts.map(([x, y]) => [X(x), Yp(y)]);
+    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
+    const line = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L');
+    const scrub = (pts, n, s0, s1) => {
+      let d = '';
+      for (let i = 0; i < pts.length - 1; i++) {
+        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
+        for (let j = 0; j < n; j++) {
+          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
+          d += `M${F(x - rr)} ${F(y + rr * 0.45)}a${F(rr)} ${F(rr * 0.82)} 0 0 1 ${F(2 * rr)} 0Z`;
+        }
+      }
+      return d;
+    };
+    const lights = [];          // [x, y, group]: 0 the dockyard, 1 the boats, 2 Falmouth, 3 the slopes
+    let s = '';
+    // BY DAY (owner, 2026-09-28: "we need to render more features so the landscape doesn't look like green
+    // blobs"): what daylight shows and the other versions leave in shadow, drawn only for the Day version
+    // (isl-ydet): each hill's flank turned from the Sun in shade (at mid-morning the Sun is high, behind
+    // the lookout and to the right), tree crowns lit on their sunward side, larger and brighter nearer,
+    // the headland's rock, turquoise shallows along the shores, the dockyard's buildings and a road. At
+    // Dawn (isl-adet) the first light gilds the hilltops.
+    const { inPoly, circ, trees, flanks, bld, house, drawB } = makeKit(W, H);
     // The bay catches the last of the sky: its own water, a shade lighter and, at dusk, faintly teal.
     const bay = P([[0.19, 0.37], [0.3, 0.4], [0.45, 0.41], [0.6, 0.42], [0.72, 0.4], [0.8, 0.52], [0.78, 0.7],
       [0.66, 0.8], [0.3, 0.8], [0.2, 0.62]]);
@@ -723,10 +748,11 @@
     const range = P([[0.5, 0.6], [0.56, 0.57], [0.62, 0.535], [0.68, 0.49], [0.74, 0.455], [0.8, 0.43], [0.86, 0.41], [0.92, 0.395], [1.02, 0.38], [1.02, 0.6]]);
     land += `<path class="f-isl" d="${poly(range)}${scrub(range.slice(1, 9), 3, 0.6, 1.4)}"/>`;
     const hills = P([[0.58, 0.603], [0.62, 0.58], [0.66, 0.555], [0.7, 0.52], [0.74, 0.49], [0.78, 0.475], [0.82, 0.48], [0.86, 0.455], [0.9, 0.44], [0.95, 0.445], [1.02, 0.43], [1.02, 0.605], [0.58, 0.605]]);
-    land += `<path class="f-far" d="${poly(hills)}${scrub(hills.slice(0, 11), 6, 0.8, 2)}"/>`;
+    land += `<path class="f-far isl-land" d="${poly(hills)}${scrub(hills.slice(0, 11), 6, 0.8, 2)}"/>`;
     land += `<path class="s-rim" d="M${hills.slice(0, 11).map(([x, y]) => `${F(x)} ${F(y + 0.5)}`).join('L')}" stroke-width="1.2" stroke-opacity=".5"/>`;
     for (let i = 0; i < 18; i++) lights[1].push([X(0.62 + r() * 0.38), Y(0.54 + r() * 0.055)]);
-    s += land + mirrored(y0, land, 0.18);
+    const regattaHouses = makeKit(W, H).dayHouses(lights[1], Y(0.02), 61);
+    s += land + regattaHouses + mirrored(y0, land, 0.18);
     s += mist(X(0.5), Y(0.6), X(0.55), Y(0.05), 0.55) + mist(X(0.0), Y(0.603), X(0.3), Y(0.03), 0.35);
     for (const [x] of lights[1]) if (r() < 0.5) s += dashes(streakList(x, y0, H, r, 0.04, 0.05).filter(([, y]) => y < y0 + Y(0.18)), 's-vglow', 1, [0.08, 0.16, 0.3]);
     // 3. The yachts, all racing left: hull heeled to leeward, a sheer line of light, a tall shaded
@@ -799,6 +825,7 @@
     s += farLand + mirrored(y0, farLand, 0.2) + mist(X(-0.05), Y(0.6), X(0.42), Y(0.04), 0.5);
     const shoreLights = [];
     for (let i = 0; i < 12; i++) shoreLights.push([X(0.01 + r() * 0.3), Y(0.582 + r() * 0.014)]);
+    s += makeKit(W, H).dayHouses(shoreLights, Y(0.016), 67);
     for (const [x] of shoreLights) s += dashes(streakList(x, y0, H, r, 0.05, 0.05), 's-vglow', 1, [0.06, 0.13, 0.24]);
     // a yacht at anchor, its riding light and its column of light
     const bx = X(0.19), by = Y(0.8);
@@ -810,7 +837,7 @@
     // 2. The hillside rising to the summit, scrub along its crest and a rim of light.
     const crest = [[0.28, 1.03], [0.31, 0.93], [0.35, 0.84], [0.4, 0.74], [0.46, 0.64], [0.52, 0.55], [0.58, 0.47], [0.64, 0.4],
       [0.7, 0.34], [0.76, 0.295], [0.82, 0.27], [0.88, 0.262], [0.94, 0.275], [1.02, 0.3]];
-    s += `<path class="f-far" d="${poly(P([...crest, [1.02, 1.03]]))}${scrub(P(crest.slice(1, 13)), 8, 1, 2.8)}"/>`;
+    s += `<path class="f-far isl-land" d="${poly(P([...crest, [1.02, 1.03]]))}${scrub(P(crest.slice(1, 13)), 8, 1, 2.8)}"/>`;
     s += `<path class="s-rim" d="M${P(crest.slice(1, 14)).map(([x, y]) => `${F(x)} ${F(y + 0.5)}`).join('L')}" stroke-width="1.2" stroke-opacity=".45"/>`;
     // 3. The lookout at the summit: a two-storey stone guardhouse, part ruined, like those on the
     //    heights above English Harbour: three arches below and two windows above, all lit from
@@ -955,6 +982,7 @@
     s += farLand + `<path class="s-rim" d="${lineD(far.slice(0, 7).map(([x, y]) => [x, y + 0.5]))}" stroke-width="1" stroke-opacity=".3"/>`;
     s += mirrored(y0, farLand, 0.18) + mist(X(-0.05), y0, X(0.66), Y(0.06), 0.5);
     for (let i = 0; i < 18; i++) lights.push([X(0.02 + r() * 0.56), y0 - Y(0.004 + r() * 0.04)]);
+    s += makeKit(W, H).dayHouses(lights, Y(0.022), 71);
     for (const [x] of lights) if (r() < 0.6) s += dashes(streakList(x, y0, H, r, 0.04, 0.05), 's-vglow', 1, [0.06, 0.12, 0.22]);
     // 2. Boats at anchor below: hulls, masts, masthead lights, their columns and their reflections.
     let boats = '', masts = '';
@@ -974,7 +1002,7 @@
     const crest = [[0.5, 1.03], [0.53, 0.9], [0.57, 0.78], [0.62, 0.68], [0.67, 0.61], [0.72, 0.575], [0.78, 0.56], [0.86, 0.555], [1.02, 0.55]]
       .map(([x, y]) => [X(x), Y(y)]);
     s += mist(X(0.38), y0 + Y(0.12), X(0.22), Y(0.1), 0.45);
-    s += `<path class="f-far" d="${polyD([...crest, [X(1.02), H + 2]])}"/>`;
+    s += `<path class="f-far isl-land" d="${polyD([...crest, [X(1.02), H + 2]])}"/>`;
     s += `<path class="s-rim" d="${lineD(crest.slice(1, 7).map(([x, y]) => [x, y + 0.5]))}" stroke-width="1.2" stroke-opacity=".45"/>`;
     s += `<path class="isl-vtrack" d="M${F(X(0.62))} ${F(H + 2)}C${F(X(0.66))} ${F(Y(0.85))} ${F(X(0.64))} ${F(Y(0.72))} ${F(X(0.7))} ${F(Y(0.6))}L${F(X(0.725))} ${F(Y(0.585))}C${F(X(0.68))} ${F(Y(0.72))} ${F(X(0.7))} ${F(Y(0.86))} ${F(X(0.665))} ${F(H + 2)}Z"/>`;
     // scrub on the crest's edge against the water, a few shrubs on the slope, and a bank of them along
@@ -1051,9 +1079,10 @@
       .map(([x, h]) => [X(x), y0 - Y(h)]);
     s += `<path class="f-isl" d="${polyD([[X(-0.02), y0 + Y(0.02)], ...far, [X(1.02), y0 + Y(0.02)]])}${scrubLine(far, 3, 0.6, 1.4, r)}"/>`;
     for (let i = 0; i < 14; i++) lights[0].push([X(r()), y0 - Y(0.005 + r() * 0.04)]);
+    s += makeKit(W, H).dayHouses(lights[0], Y(0.028), 73);
     // 2. The fields: a rolling middle ground, rows of cane, darker toward the viewer; mist.
     const field = [[-0.02, 0.76], [0.1, 0.74], [0.25, 0.75], [0.4, 0.73], [0.55, 0.74], [0.7, 0.72], [0.85, 0.73], [1.02, 0.71]].map(([x, y]) => [X(x), Y(y)]);
-    s += `<path class="f-far" d="${polyD([[X(-0.02), y0], [X(1.02), y0], ...field.slice().reverse()])}"/>`;
+    s += `<path class="f-far isl-land" d="${polyD([[X(-0.02), y0], [X(1.02), y0], ...field.slice().reverse()])}"/>`;
     s += mist(X(-0.05), y0 + Y(0.03), X(1.1), Y(0.06), 0.45);
     let cane = '';
     for (let row = 0; row < 5; row++) {
@@ -1064,7 +1093,7 @@
       }
     }
     s += `<path class="isl-vcane" d="${cane}" stroke-width=".8" stroke-opacity=".75"/>`;
-    s += `<path class="f-near" d="${polyD([...field, [X(1.02), H + 2], [X(-0.02), H + 2]])}"/>`;
+    s += `<path class="f-near isl-land" d="${polyD([...field, [X(1.02), H + 2], [X(-0.02), H + 2]])}"/>`;
     // 3. The estate house on the left: stone, a hipped roof, windows lit, a lamp by the door.
     const hx0 = X(0.12), hw = Y(0.62), hTop = Y(0.6), hBot = Y(0.75), hRoof = Y(0.1);
     s += `<path class="isl-vstone" d="M${F(hx0)} ${F(hBot)}V${F(hTop)}H${F(hx0 + hw)}V${F(hBot)}Z"/>`;
@@ -1176,18 +1205,23 @@
     const street = Y(0.84);
     let s = '';
     // 1. The town behind: roofs hipped, gabled and flat, at different heights, a few lit windows.
-    let roofs = '', tw = '';
-    for (let x = X(-0.03); x < X(1.03);) {
+    // (by Day the town's houses show their walls in the island's pastels under red or gray roofs; at night
+    // they are the same dark shapes as before, windows lit)
+    const walls = ['', '', ''];
+    let roofsR = '', roofsG = '', tw = '', n = 0;
+    for (let x = X(-0.03); x < X(1.03); n++) {
       const w = X(0.045 + r() * 0.04), eave = Y(0.56 + r() * 0.1), pitch = Y(0.03 + r() * 0.04), kind = r();
-      roofs += `M${F(x)} ${F(street)}V${F(eave)}`;
-      if (kind < 0.45) roofs += `L${F(x + w * 0.25)} ${F(eave - pitch)}H${F(x + w * 0.75)}L${F(x + w)} ${F(eave)}`;
-      else if (kind < 0.8) roofs += `L${F(x + w / 2)} ${F(eave - pitch * 1.2)}L${F(x + w)} ${F(eave)}`;
-      else roofs += `V${F(eave - pitch * 0.4)}H${F(x + w)}V${F(eave)}`;
-      roofs += `V${F(street)}Z`;
+      walls[n % 3] += `M${F(x)} ${F(street)}V${F(eave)}H${F(x + w)}V${F(street)}Z`;
+      let roof = `M${F(x)} ${F(eave + 0.3)}`;
+      if (kind < 0.45) roof += `L${F(x + w * 0.25)} ${F(eave - pitch)}H${F(x + w * 0.75)}L${F(x + w)} ${F(eave + 0.3)}Z`;
+      else if (kind < 0.8) roof += `L${F(x + w / 2)} ${F(eave - pitch * 1.2)}L${F(x + w)} ${F(eave + 0.3)}Z`;
+      else roof += `V${F(eave - pitch * 0.4)}H${F(x + w)}V${F(eave + 0.3)}Z`;
+      if (n % 5 === 1 || n % 5 === 3) roofsG += roof; else roofsR += roof;
       for (const f of [0.28, 0.62]) if (r() < 0.45) tw += `M${F(x + w * f)} ${F(eave + Y(0.03))}h${F(Y(0.016))}v${F(Y(0.026))}h${F(-Y(0.016))}Z`;
       x += w + X(0.004 + r() * 0.01);
     }
-    s += `<path class="f-far" d="${roofs}"/><path class="f-pulse isl-vwin" style="--i:0" d="${tw}" opacity=".7"/>`;
+    s += walls.map((d, k) => `<path class="isl-tw${k}" d="${d}"/>`).join('') + `<path class="isl-troof" d="${roofsR}"/><path class="isl-troofg" d="${roofsG}"/>`
+      + `<path class="f-pulse isl-vwin" style="--i:0" d="${tw}" opacity=".7"/>`;
     s += mist(X(-0.05), Y(0.7), X(1.1), Y(0.12), 0.3);
     // 2. The lower wing, left, and the main block: stone darker toward the top, the side face in shade.
     const x0 = X(0.44), x1 = X(0.84), sd = X(0.032), top = Y(0.3), mid = Y(0.58), bw = (x1 - x0) / 5;
@@ -1414,7 +1448,8 @@
       const x = X(r()), a = at(hills, x) + Y(0.012), b = at(town, x) - Y(0.006);
       if (b > a) far.push([x, a + r() * (b - a)]);
     }
-    s += `<path class="f-far" d="${polyD([...town, [X(1.02), y0 + 1], [X(-0.02), y0 + 1]])}"/>`;
+    s += makeKit(W, H).dayHouses(far, Y(0.014), 79);
+    s += `<path class="f-far isl-land" d="${polyD([...town, [X(1.02), y0 + 1], [X(-0.02), y0 + 1]])}"/>`;
     // 2. The cathedral on the skyline: twin towers with cornices, cupolas and lanterns, belfry openings,
     //    the nave's gable between them; its floodlight comes on last.
     const cx = X(0.66), tw = 15 * u, gap = 25 * u, foot = at(town, cx) + Y(0.012), eave = foot - 32 * u, tt = foot - 82 * u;
@@ -1533,7 +1568,7 @@
     for (let y = pTop + 13 * u; y < pFoot - 2; y += 11 * u) pj += `M${F(X(-0.02))} ${F(y)}H${F(px1)}`;
     for (let y = pTop + 16 * u; y < H; y += 12 * u) pj += `M${F(px1 + 1)} ${F(y)}L${F(px1 + 12 * u + (y - pTop) * (X(0.05) - 12 * u) / (H - pTop))} ${F(y)}`;
     s += `<path class="isl-vcourse" d="${pj}" stroke-width=".7"/>`;
-    s += `<path class="f-near" d="${polyD([[X(-0.02), pFoot], [px1, pFoot], [px1, H + 2], [X(-0.02), H + 2]])}"/>`;
+    s += `<path class="f-near isl-land" d="${polyD([[X(-0.02), pFoot], [px1, pFoot], [px1, H + 2], [X(-0.02), H + 2]])}"/>`;
     s += `<g class="isl-vwin" style="--i:0">${pool(X(0.07), pFoot + 12 * u, 80 * u, 16 * u, 0.8)}</g>`;
     // the cannon: barrel tapering from breech to muzzle, its top edge catching the light; carriage and
     // wheels on the floor
@@ -1798,7 +1833,7 @@
       + `<circle cx="${F(x)}" cy="${F(y)}" r="${F(rr)}" fill="url(#islvsundisc)" clip-path="url(#islsky)"/>`
       + dashes(streakList(x, y0, H, r, 0.1, 0.09), 's-vglow', 1.4, [0.14, 0.28, 0.5]);
   }
-  function dawnDay(v, W, y0, H) {
+  function dawnDay(v, W, y0, H, seed = 0) {
     const p = v.ppd, sx = v.x(SKY.a.sun[0]), r = rng(97);
     const glow = sx > -W * 0.3 && sx < W * 1.3
       ? `<ellipse cx="${F(sx)}" cy="${F(y0)}" rx="${F(40 * p)}" ry="${F(8 * p)}" fill="url(#islvdawn)" clip-path="url(#islsky)"/>` : '';
@@ -1812,7 +1847,7 @@
     const daySun = `<g class="isl-sun"><circle cx="${F(yx)}" cy="${F(yy)}" r="${F(ys * 10)}" fill="url(#islvsun)" clip-path="url(#islsky)"/>`
       + `<circle class="isl-vsunday" cx="${F(yx)}" cy="${F(yy)}" r="${F(ys)}"/>`
       + dashes(streakList(yx, y0, H, r, 0.12, 0.1), 'isl-sparkle', 1.2, [0.18, 0.3, 0.5]) + '</g>';
-    return `<g class="isl-a">${glow}${bands(W, y0, 89)}${dawnSun}</g><g class="isl-y">${clouds(W, y0, 211)}${daySun}</g>`;
+    return `<g class="isl-a">${glow}${bands(W, y0, 89 + seed)}${dawnSun}</g><g class="isl-y">${clouds(W, y0, 211 + seed)}${daySun}</g>`;
   }
 
   function build(W, H, piece) {
@@ -1868,7 +1903,7 @@
       + gSky
       + sky.d.planets + sky.n.planets
       + sky.d.moon + sky.n.moon
-      + dawnDay(v, W, y0, H)
+      + dawnDay(v, W, y0, H, piece === 'shirley-heights' ? 0 : [...piece].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 997, 7))
       + `<g class="isl-a">${sunDisc(v, 'a', W, y0, H, P)}</g><g class="isl-s">${sunDisc(v, 's', W, y0, H, P)}</g>`
       + (P.world === 'coast' ? islands(v, 'f-isl') : '')
       + `<rect y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`
@@ -1906,8 +1941,8 @@
     return GRAIN;
   }
 
-  // Which light-scheme version a card shows: Dawn from 5:00, Day from 9:00, Dusk from 17:00, by the
-  // visitor's own clock (the hours are the owner's to settle; SPEC section 12). ?isl-sky=dawn|day|dusk
+  // Which light-scheme version a card shows, by the visitor's own clock (owner, 2026-09-28; SPEC section
+  // 12): Dawn from 5:00, Day from 9:00, Sunset from 17:00, Dusk from 19:00. ?isl-sky=dawn|day|sunset|dusk
   // forces one, for review. The dark scheme is always Night, whatever this says.
   function pickSky() {
     try {
@@ -1915,7 +1950,7 @@
       if (q === 'dawn' || q === 'day' || q === 'dusk' || q === 'sunset') return q;
     } catch (e) { /* no query: the clock decides */ }
     const h = new Date().getHours();
-    return h >= 5 && h < 9 ? 'dawn' : h >= 9 && h < 17 ? 'day' : 'dusk';
+    return h >= 5 && h < 9 ? 'dawn' : h >= 9 && h < 17 ? 'day' : h >= 17 && h < 19 ? 'sunset' : 'dusk';
   }
 
   A.vignette = function (fig) {
