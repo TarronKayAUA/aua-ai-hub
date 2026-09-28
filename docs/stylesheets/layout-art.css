@@ -214,6 +214,10 @@
 .isl .isl-vgrass { fill: var(--isl-vgrass, #1f6f78); fill-opacity: 0.35; }
 .isl .isl-vterrace { fill: var(--isl-vterrace, #d68c5e); }
 .isl[data-sky="day"] .isl-palm { fill: var(--isl-vtree3); }
+/* Palm trunks: part of the silhouette at night, brown by Day under the green fronds (owner, 2026-09-28). */
+.isl[data-sky="day"] .isl-ptrunk { fill: #7c5f42; }
+/* The Old Court House's iron railings: black iron by Day, not the land's green (owner, 2026-09-28). */
+.isl[data-sky="day"] .isl-vrailing { stroke: #23282c; }
 /* Shrubs (the telescope's hill, the harbour town's trees): night silhouettes, leaf green by Day. */
 .isl[data-sky="day"] .isl-shrub { fill: var(--isl-vtree3); }
 .isl[data-sky="day"] .isl-shrubl { fill: var(--isl-vtree-l); fill-opacity: 0.8; }

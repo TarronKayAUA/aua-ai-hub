@@ -47,12 +47,14 @@
   }
 
   /* A palm: a leaning trunk and a crown of drooping fronds, as one silhouette. */
-  function palm(x, y, h, lean, seed) {
+  function palm(x, y, h, lean, seed, part) {
     const r = rng(seed);
     const tx = x + lean * h, ty = y - h;
     const w0 = h * 0.035, w1 = h * 0.022;
     let d = `M${F(x - w0)} ${F(y)}Q${F(x + lean * h * 0.35 - w0)} ${F(y - h * 0.55)} ${F(tx - w1)} ${F(ty)}`
       + `L${F(tx + w1)} ${F(ty)}Q${F(x + lean * h * 0.35 + w0)} ${F(y - h * 0.55)} ${F(x + w0)} ${F(y)}Z`;
+    if (part === 'trunk') return d;
+    if (part === 'fronds') d = '';
     const n = 9;
     for (let i = 0; i < n; i++) {
       const a = (-170 + (i / (n - 1)) * 160 + (r() - 0.5) * 14) * Math.PI / 180;
@@ -64,6 +66,12 @@
     }
     return d;
   }
+
+  // Palms as two paths in one class, trunks and fronds: one silhouette at night, and by Day brown trunks
+  // under green fronds (owner, 2026-09-28: "the trunks of the trees should be brown to make them look
+  // like palm trees").
+  const palmsD = (list, cls) => `<path class="${cls} isl-ptrunk" d="${list.map((a) => palm(...a, 'trunk')).join('')}"/>`
+    + `<path class="${cls}" d="${list.map((a) => palm(...a, 'fronds')).join('')}"/>`;
 
   /* Low green hills behind a scene set inland: a soft crest with a scrub canopy (f-far). */
   function hills(W, y0, peaks, seed) {
@@ -209,12 +217,11 @@
     s += `<path class="isl-vdark" d="${postsD}"/>` + `<g class="isl-vlamps">${glows}</g>`;
 
     // Palms: two tall ones flanking the portico, smaller ones along the front.
-    let palms = '';
-    palms += palm(cx - 8.4 * u, base + 1, 25 * u, -0.05, 17) + palm(cx + 8.4 * u, base + 1, 24 * u, 0.06, 29);
+    const palms = [[cx - 8.4 * u, base + 1, 25 * u, -0.05, 17], [cx + 8.4 * u, base + 1, 24 * u, 0.06, 29]];
     [[-19, 12, -0.08], [19, 11, 0.07], [-36, 10, -0.05], [37, 11, 0.06], [-47, 8, 0.04]].forEach(([dx, h, lean], i) => {
-      palms += palm(cx + dx * u, base + 1, h * u, lean, 50 + i * 7);
+      palms.push([cx + dx * u, base + 1, h * u, lean, 50 + i * 7]);
     });
-    s += `<path class="f-near" d="${palms}"/>`;
+    s += palmsD(palms, 'f-near');
     return s;
   }
 
@@ -531,11 +538,9 @@
     // 6. The lookout: the slope on the left, the rocks and scrub in front, organ-pipe cactus, a lantern.
     s += `<path class="f-near isl-land" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
     // Galleon Beach's palms along the back of the sand (every version: silhouettes by night, green by Day)
-    let palms = '';
-    [[0.79, 0.556, 0.052], [0.803, 0.58, 0.048], [0.806, 0.604, 0.056], [0.805, 0.63, 0.05], [0.797, 0.655, 0.054]].forEach(([fx, fy, fh], k) => {
-      palms += palm(X(fx), Yp(fy), Y(fh), 0.06 - k * 0.025, 301 + k);
-    });
-    s += `<path class="isl-palm" d="${palms}"/>`;
+    const palms = [[0.79, 0.556, 0.052], [0.803, 0.58, 0.048], [0.806, 0.604, 0.056], [0.805, 0.63, 0.05], [0.797, 0.655, 0.054]]
+      .map(([fx, fy, fh], k) => [X(fx), Yp(fy), Y(fh), 0.06 - k * 0.025, 301 + k]);
+    s += palmsD(palms, 'isl-palm');
     // by Day, the lookout's own trees in front, the largest and brightest (the owner's photograph)
     s += `<g class="isl-ydet">${trees(slope, 120, Y(0.014), Y(0.045), 41)}</g>`;
     const lx = X(0.43), ly = Yp(0.772);
@@ -1199,7 +1204,7 @@
     for (let i = 0; i < 60; i++) { const gx = X(r()), gy = Y(0.8 + r() * 0.2), gh = Y(0.02 + r() * 0.03); tufts += `M${F(gx)} ${F(gy)}l${F(-gh * 0.3)} ${F(-gh)}M${F(gx)} ${F(gy)}l${F(gh * 0.05)} ${F(-gh * 1.2)}M${F(gx)} ${F(gy)}l${F(gh * 0.35)} ${F(-gh * 0.9)}`; }
     s += `<path class="isl-vcane" d="${tufts}" stroke-width=".8"/>`;
     // a few trees at the field's edge
-    s += `<path class="f-near" d="${palm(X(0.04), Y(0.76), Y(0.3), -0.06, 71)}${palm(X(0.95), Y(0.73), Y(0.26), 0.07, 73)}"/>`;
+    s += palmsD([[X(0.04), Y(0.76), Y(0.3), -0.06, 71], [X(0.95), Y(0.73), Y(0.26), 0.07, 73]], 'f-near');
     s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights[0])}" stroke-width="1.3"/>`;
     return s;
   }
@@ -1335,7 +1340,7 @@
         + `M${F(lx - lw * 1.2)} ${F(street - ph + 1)}h${F(lw * 2.4)}v${F(Y(0.01))}h${F(-lw * 2.4)}Z"/>`;
       s += `<path class="isl-vmul" d="M${F(lx)} ${F(street - ph)}V${F(street - ph - lh)}" stroke-width=".8"/>`;
     }
-    s += `<path class="f-near" d="${palm(X(0.035), street + Y(0.03), Y(0.44), -0.05, 91)}${palm(X(0.978), street + Y(0.03), Y(0.4), 0.06, 93)}"/>`;
+    s += palmsD([[X(0.035), street + Y(0.03), Y(0.44), -0.05, 91], [X(0.978), street + Y(0.03), Y(0.4), 0.06, 93]], 'f-near');
     return s;
   }
 
@@ -1613,11 +1618,13 @@
     if (Wr < 240) return null;
     const base = H - Math.max(6, H * 0.02);
     const g = { at: () => base - 1 };
-    const lawnG = rise(Wr, H, -Wr * 0.02, Wr * 0.1, H + 4, base, 29);
-    const inner = `<path class="f-near" d="${lawnG.d}"/>` + campus(Wr, H, v, g, { fw: 1.02, lawn: true });
+    // the lawn runs the hero's whole width, so no wing stands over the water (owner, 2026-09-28); AUA
+    // stands inland at Coolidge, so land end to end is the truer picture too
+    const lawnG = rise(x1 + 6, H, -8, -4, base, base, 29);
+    const inner = campus(Wr, H, v, g, { fw: 1.02, lawn: true });
     const u = Wr * 1.02 / 100, top = base - 42 * u;
     return {
-      svg: extraDefs() + `<g transform="translate(${F(x0)} 0)">${inner}</g>`,
+      svg: extraDefs() + `<path class="f-near isl-land" d="${lawnG.d}"/><g transform="translate(${F(x0)} 0)">${inner}</g>`,
       box: [x0 + Wr * 0.02, top - 8, x1, H],
     };
   };
