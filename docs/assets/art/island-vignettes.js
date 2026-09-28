@@ -220,11 +220,12 @@
      folder, references/shirley-heights-*): the open sea on the left out to the horizon; the big
      headland in the middle, its cliff point dropping to the sea on the left and Fort Berkeley's narrow
      spur reaching into the bay at the centre; English Harbour's round bay across the foreground, full
-     of white-hulled yachts; Nelson's Dockyard where the bay turns right; Falmouth Harbour's strip of
-     water beyond, crowded with the masts of big yachts; the range of hills behind it, a small distant
-     point at its left end; the town's slope on the right; and the lookout's slope, rocks and
-     organ-pipe cactus in front. Under the true sky, facing north-west, so the afterglow lies low over
-     the open sea on the left as in the owner's dusk photograph. The lights come on dockyard first. */
+     of white-hulled yachts and Galleon Beach's pale curve on its right shore; Nelson's Dockyard where
+     the bay turns right, and the inner harbour running on behind a green spit; Falmouth Harbour's
+     strip of water beyond, crowded with the masts of big yachts; the range of hills behind it, a small
+     distant point at its left end; the town's slope on the right; the lookout's slope in front. Under
+     the true sky facing west-north-west: in May the Sun sets behind the range, as in the owner's own
+     dusk photograph. The lights come on dockyard first. */
   function heights(W, H, v) {
     const y0f = v.y0 / H, k = (1 - y0f) / (1 - 0.23), r = rng(73);
     const X = (f) => f * W, Y = (f) => f * H;
@@ -273,13 +274,21 @@
     }
     for (let i = 0; i < 22; i++) lights.push([X(0.58 + r() * 0.42), Yp(0.29 + r() * 0.025), 2]);
     // the low land between the two harbours, and the town's slope on the right
-    const between = P([[0.6, 0.318], [0.7, 0.312], [0.8, 0.316], [0.9, 0.31], [1.02, 0.31], [1.02, 0.36], [0.62, 0.36]]);
+    const between = P([[0.6, 0.326], [0.7, 0.32], [0.8, 0.325], [0.9, 0.318], [1.02, 0.318], [1.02, 0.358], [0.62, 0.358]]);
     s += `<path class="f-far" d="${poly(between)}"/>`;
-    const town = P([[0.705, 0.45], [0.72, 0.425], [0.75, 0.405], [0.8, 0.395], [0.86, 0.405], [0.92, 0.398],
-      [1.02, 0.385], [1.02, 1.02], [0.7, 1.02], [0.74, 0.74], [0.785, 0.66], [0.795, 0.6], [0.78, 0.56],
+    const town = P([[0.705, 0.45], [0.72, 0.432], [0.75, 0.418], [0.8, 0.412], [0.86, 0.418], [0.92, 0.41],
+      [1.02, 0.402], [1.02, 1.02], [0.7, 1.02], [0.74, 0.74], [0.785, 0.66], [0.795, 0.6], [0.78, 0.56],
       [0.745, 0.54], [0.72, 0.52], [0.71, 0.48]]);
     s += `<path class="f-near" d="${poly(town)}${scrub(town.slice(0, 7), 5, 0.9, 2.2)}"/>`;
-    for (let i = 0; i < 34; i++) lights.push([X(0.74 + r() * 0.27), Yp(0.42 + r() * 0.2), 3]);
+    for (let i = 0; i < 34; i++) lights.push([X(0.74 + r() * 0.27), Yp(0.43 + r() * 0.2), 3]);
+    // Galleon Beach: the pale curve of sand on the bay's right shore
+    s += `<path class="isl-vsand" d="${line(P([[0.748, 0.545], [0.772, 0.558], [0.79, 0.585], [0.792, 0.615], [0.784, 0.655]]))}" stroke-width="${F(Math.max(1.5, Y(0.01)))}"/>`;
+    // The inner harbour, running right from the dockyard behind a green spit, with its masts
+    for (let i = 0; i < 12; i++) {
+      const x = X(0.73 + r() * 0.24), foot = Yp(0.395 + r() * 0.01), top = foot - Y(0.03 + r() * 0.03);
+      masts += `M${F(x)} ${F(foot)}V${F(top)}`;
+      lights.push([x, top, 0]);
+    }
     // 3. The headland: its cliff point on the left, its crest, and Fort Berkeley's spur into the bay.
     const head = P([[0.19, 0.378], [0.192, 0.366], [0.199, 0.352], [0.21, 0.341], [0.226, 0.331], [0.25, 0.318],
       [0.28, 0.303], [0.31, 0.29], [0.34, 0.279], [0.37, 0.27], [0.4, 0.266], [0.43, 0.268], [0.46, 0.276], [0.5, 0.284], [0.54, 0.289],
@@ -292,6 +301,7 @@
     s += `<path class="f-near" d="${poly(head)}${scrub(head.slice(2, 17), 6, 0.9, 2.3)}"/>`;
     const shore = head.slice(18);
     s += `<path class="isl-vshore" d="${line(shore)}" stroke-width="1"/>`;
+    s += `<path class="isl-vsurf" d="${line(P([[0.186, 0.366], [0.19, 0.38], [0.2, 0.388], [0.215, 0.39], [0.235, 0.396]]))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`;
     // 4. Nelson's Dockyard, where the bay turns right: a quay of masts and the brightest lights.
     for (let i = 0; i < 11; i++) {
       const x = X(0.625 + i * 0.008 + r() * 0.004), foot = Yp(0.445 + r() * 0.01), top = foot - Y(0.05 + r() * 0.035);
@@ -318,17 +328,7 @@
     const slope = P([[-0.02, 0.535], [0.05, 0.545], [0.1, 0.56], [0.15, 0.575], [0.19, 0.592], [0.22, 0.612],
       [0.245, 0.66], [0.26, 0.74], [0.3, 0.76], [0.36, 0.73], [0.42, 0.77], [0.5, 0.79], [0.58, 0.8], [0.64, 0.74],
       [0.68, 0.67], [0.73, 0.66], [0.8, 0.7], [0.88, 0.72], [1.02, 0.74], [1.02, 1.05], [-0.02, 1.05]]);
-    const cactus = (x, base, h) => {
-      const w = Math.max(1.5, h * 0.055);
-      let d = '';
-      for (const [dx, kk] of [[0, 1], [-1.2, 0.8], [1.2, 0.88], [-2.3, 0.6], [2.3, 0.68], [3.4, 0.45]]) {
-        const cx = x + dx * w, top = base - h * kk;
-        d += `M${F(cx - w / 2)} ${F(base)}V${F(top + w / 2)}a${F(w / 2)} ${F(w / 2)} 0 0 1 ${F(w)} 0V${F(base)}Z`;
-      }
-      return d;
-    };
-    s += `<path class="f-near" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}`
-      + `${cactus(X(0.268), Yp(0.752), Y(0.21))}${cactus(X(0.305), Yp(0.76), Y(0.16))}${cactus(X(0.338), Yp(0.74), Y(0.12))}"/>`;
+    s += `<path class="f-near" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
     const lx = X(0.43), ly = Yp(0.772);
     s += `<path class="f-near" d="M${F(lx - 1)} ${F(ly + Y(0.02))}V${F(ly - Y(0.05))}H${F(lx + 1)}V${F(ly + Y(0.02))}Z"/>`;
     s += `<circle cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Y(0.055))}" fill="url(#islvlamp)"/>`;
@@ -360,8 +360,9 @@
       draw: heights,
       world: 'inland',
       horizon: 0.3,
-      // From the lookout, north-west across English Harbour to Falmouth: the afterglow over the open sea.
-      face: 312,
+      // From the lookout west-north-west across English Harbour to Falmouth: in May the Sun sets behind
+      // the range (the owner's dusk photograph), so the afterglow sits just left of its peaks.
+      face: 294,
       ground: null,
     },
   };
