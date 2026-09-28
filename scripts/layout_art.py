@@ -5,12 +5,13 @@ there, then something functional from the data, and only where neither fits,
 art. The places that passed that test and that he approved are listed in
 data/art_slots.yaml; nothing here finds places on its own.
 
-For each listed place this hook adds one empty, decorative element at the end
-of the named h2 section, in the page's content (on_page_content), before any
-layout hook runs:
+For each listed place this hook adds one empty, decorative element, in the
+page's content (on_page_content), before any layout hook runs: at the end of
+the named h2 section, or, with `section: _head` on a landing page, beside the
+page's head (see HEADS below):
 
     <figure class="isl-vignette" data-vignette="<piece>" data-kind="<kind>"
-            aria-hidden="true"></figure>
+            [data-aspect="<height / width>"] aria-hidden="true"></figure>
 
 layout_width.py then treats it as the object that follows the section's last
 block, so it lands beside that block as a leaf, in the track that was empty.
@@ -35,11 +36,20 @@ DATA = ROOT / "data" / "art_slots.yaml"
 _S = {"slots": [], "placed": [], "pages_seen": set()}
 
 
+# HEADS (art round 2, 2026-09-27: the owner wants the pieces seen, not buried): on a landing page
+# the head is the title, the lede, the search field and the jump links, before the Color key and the
+# first card grid. `section: _head` wraps those blocks in `div.isl-head` with the figure after them;
+# docs/stylesheets/layout-art.css sets the two side by side from 68.75em, the picture on the right
+# where the head left the frame empty. Below that the wrapper is an ordinary block and the figure is
+# hidden, so the page reads as before.
+HEAD_END = re.compile(r'<(h2\b|div class="grid|p class="kind-key)')
+
+
 def _load() -> list[dict]:
     raw = yaml.safe_load(DATA.read_text(encoding="utf-8")) or {}
     slots = raw.get("slots") or []
     for s in slots:
-        missing = [k for k in ("page", "section", "piece", "kind") if not s.get(k)]
+        missing = [k for k in ("page", "section", "piece") if not s.get(k)]
         if missing:
             raise SystemExit(f"layout_art: {DATA.name} entry {s} lacks {', '.join(missing)}")
     return slots
@@ -59,14 +69,26 @@ def on_page_content(html, page, config, files, **kwargs):
         return html
     _S["pages_seen"].add(src)
     for s in mine:
-        m = re.search(r'<h2\b[^>]*\bid="' + re.escape(s["section"]) + r'"[^>]*>', html)
-        if not m:
-            raise SystemExit(f"layout_art: {src} has no h2 with id \"{s['section']}\" (data/art_slots.yaml)")
-        nxt = re.compile(r"<h2\b").search(html, m.end())
-        at = nxt.start() if nxt else len(html)
-        fig = (f'<figure class="isl-vignette" data-vignette="{s["piece"]}" data-kind="{s["kind"]}"'
-               f' aria-hidden="true"></figure>\n')
-        html = html[:at] + fig + html[at:]
+        kind = f' data-kind="{s["kind"]}"' if s.get("kind") else ""
+        aspect = f' data-aspect="{float(s["aspect"]):.3f}"' if s.get("aspect") else ""
+        if s["section"] == "_head":
+            h1 = re.search(r"<h1\b", html)
+            end = HEAD_END.search(html, h1.end()) if h1 else None
+            if not h1 or not end:
+                raise SystemExit(f"layout_art: {src} has no landing head to sit beside (data/art_slots.yaml)")
+            fig = (f'<figure class="isl-vignette isl-vignette--head" data-vignette="{s["piece"]}"{kind}{aspect}'
+                   f' aria-hidden="true"></figure>')
+            html = (html[:h1.start()] + '<div class="isl-head"><div class="isl-head__text">' + html[h1.start():end.start()]
+                    + "</div>" + fig + "</div>\n" + html[end.start():])
+        else:
+            m = re.search(r'<h2\b[^>]*\bid="' + re.escape(s["section"]) + r'"[^>]*>', html)
+            if not m:
+                raise SystemExit(f"layout_art: {src} has no h2 with id \"{s['section']}\" (data/art_slots.yaml)")
+            nxt = re.compile(r"<h2\b").search(html, m.end())
+            at = nxt.start() if nxt else len(html)
+            fig = (f'<figure class="isl-vignette" data-vignette="{s["piece"]}"{kind}{aspect}'
+                   f' aria-hidden="true"></figure>\n')
+            html = html[:at] + fig + html[at:]
         _S["placed"].append(f'{src}#{s["section"]} ({s["piece"]})')
     return html
 

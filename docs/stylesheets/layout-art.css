@@ -302,6 +302,32 @@
 .isl .isl-vrail { stroke: var(--isl-vrail); fill: none; }
 .isl .isl-vdrive { stroke: var(--isl-vdrive); }
 .isl .isl-vclock { fill: var(--isl-moon); fill-opacity: 0.78; }
+/* Harbour lights and masts (Shirley Heights). */
+.isl .s-vlight { stroke: var(--isl-pulse); stroke-linecap: round; fill: none; }
+.isl .isl-vmast { stroke: var(--isl-vrail); fill: none; stroke-opacity: 0.6; }
+.isl .isl-vhull { fill: var(--isl-vwall); }
+.isl .isl-vshore { stroke: var(--isl-rip); stroke-opacity: 0.45; fill: none; }
+/* English Harbour's water: faintly teal at dusk, deep blue at night. */
+.isl { --isl-vbay: #4f8fa3; }
+[data-md-color-scheme="slate"] .isl { --isl-vbay: #1d4760; }
+.isl .st-vbay { stop-color: var(--isl-vbay); }
+/* Galleon Beach's sand and the surf at the point: pale, catching the last light. */
+.isl { --isl-vsand: #d9cdb4; --isl-vsand-a: 0.7; --isl-vsurf: #eef3f7; --isl-vsurf-a: 0.55; }
+[data-md-color-scheme="slate"] .isl { --isl-vsand: #7d7666; --isl-vsand-a: 0.6; --isl-vsurf-a: 0.25; }
+.isl .isl-vsand { stroke: var(--isl-vsand); stroke-opacity: var(--isl-vsand-a); fill: none; stroke-linecap: round; }
+.isl .isl-vsurf { stroke: var(--isl-vsurf); stroke-opacity: var(--isl-vsurf-a); fill: none; stroke-linecap: round; }
+/* A landing's head with a vignette beside it (layout_art.py, section: _head): the title, lede, search
+   and jump links on the left, the picture on the right, from 68.75em; below that an ordinary block. */
+@media screen and (min-width: 68.75em) and (min-height: 44.0625em) {
+  .md-typeset .isl-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 2.4rem;
+    align-items: center;
+  }
+  .md-typeset .isl-head__text > :last-child { margin-bottom: 0; }
+  .md-typeset figure.isl-vignette--head { align-self: center; }
+}
 /* One pass: the card fades in, then the lit room's windows and the door light in turn. Opacity
    only; nothing under reduced motion (the script never starts the pass then). */
 .isl-vig.isl-vrun { animation: isl-vfade 0.7s ease-out both; }

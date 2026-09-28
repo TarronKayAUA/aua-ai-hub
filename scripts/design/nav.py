@@ -32,7 +32,10 @@ LINKS_JS = r"""
 STATE_JS = """() => {
   const all = document.querySelector('.secfoot__all');
   const more = document.querySelector('.secfoot__more');
+  const foot = document.querySelector('nav.secfoot');
   return { built: document.body.classList.contains('has-secmap'),
+           door: !!(foot && foot.classList.contains('secfoot--door')),
+           footShown: foot ? foot.checkVisibility() : null,
            browse: all ? all.checkVisibility() : null,
            more: more ? more.checkVisibility() : null };
 }"""
@@ -62,6 +65,13 @@ def run(env, report):
             if js:
                 report.check(st["built"] and not st["browse"] and not in_tree,
                              f"{tag} {path}: control built, foot's Browse hidden and out of the a11y tree")
+            elif st["door"]:
+                # A landing page's foot is written hidden (layout_nav._door_foot): the landing already
+                # is its section's map, so without JavaScript its own cards are the way round and the
+                # reachability sweep below proves every page is linked. Found 2026-09-27 when the check
+                # was first pointed at a landing (For Students) with --page.
+                report.check(not st["built"] and st["footShown"] is False,
+                             f"{tag} {path}: a landing page: its foot stays hidden (the page is its section's map)")
             else:
                 reached = opened = False
                 pg.evaluate("document.activeElement && document.activeElement.blur()")

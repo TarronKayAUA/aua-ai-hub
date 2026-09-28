@@ -214,6 +214,136 @@
     return s;
   }
 
+  /* SHIRLEY HEIGHTS (the For Students landing's head): the view west from the lookout over English
+     Harbour and Falmouth Harbour, one of the most photographed views in the Caribbean, so it is drawn
+     to be known at a glance. Its landforms are traced from the owner's photographs (the art's source
+     folder, references/shirley-heights-*): the open sea on the left out to the horizon; the big
+     headland in the middle, its cliff point dropping to the sea on the left and Fort Berkeley's narrow
+     spur reaching into the bay at the centre; English Harbour's round bay across the foreground, full
+     of white-hulled yachts and Galleon Beach's pale curve on its right shore; Nelson's Dockyard where
+     the bay turns right, and the inner harbour running on behind a green spit; Falmouth Harbour's
+     strip of water beyond, crowded with the masts of big yachts; the range of hills behind it, a small
+     distant point at its left end; the town's slope on the right; the lookout's slope in front. Under
+     the true sky facing west-north-west: in May the Sun sets behind the range, as in the owner's own
+     dusk photograph. The lights come on dockyard first. */
+  function heights(W, H, v) {
+    const y0f = v.y0 / H, k = (1 - y0f) / (1 - 0.23), r = rng(73);
+    const X = (f) => f * W, Y = (f) => f * H;
+    // Land above the horizon at 1.7 times its height in the photograph (a wide card flattens the hills;
+    // the same licence as the islands in Island Night).
+    const Yp = (f) => H * (y0f + (f - 0.23) * k * (f < 0.23 ? 1.7 : 1));
+    const P = (pts) => pts.map(([x, y]) => [X(x), Yp(y)]);
+    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
+    const line = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L');
+    const scrub = (pts, n, s0, s1) => {
+      let d = '';
+      for (let i = 0; i < pts.length - 1; i++) {
+        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
+        for (let j = 0; j < n; j++) {
+          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
+          d += `M${F(x - rr)} ${F(y + rr * 0.45)}a${F(rr)} ${F(rr * 0.82)} 0 0 1 ${F(2 * rr)} 0Z`;
+        }
+      }
+      return d;
+    };
+    const lights = [];          // [x, y, group]: 0 the dockyard, 1 the boats, 2 Falmouth, 3 the slopes
+    let s = '';
+    // The bay catches the last of the sky: its own water, a shade lighter and, at dusk, faintly teal.
+    const bay = P([[0.19, 0.37], [0.3, 0.4], [0.45, 0.41], [0.6, 0.42], [0.72, 0.4], [0.8, 0.52], [0.78, 0.7],
+      [0.66, 0.8], [0.3, 0.8], [0.2, 0.62]]);
+    s += `<defs><filter id="islvbayf" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="${F(W * 0.012)}"/></filter></defs>`
+      + `<path d="${poly(bay)}" fill="url(#islvbay)" filter="url(#islvbayf)"/>`;
+    // 1. The far hills: the small distant point on the left, then the main range behind Falmouth.
+    const point = P([[0.295, 0.233], [0.31, 0.222], [0.33, 0.214], [0.355, 0.219], [0.375, 0.228], [0.4, 0.224],
+      [0.43, 0.207], [0.47, 0.192], [0.51, 0.2], [0.55, 0.205], [0.56, 0.233]]);
+    s += `<path class="f-isl" d="${poly(point)}"/>`;
+    const range = P([[0.45, 0.25], [0.46, 0.236], [0.475, 0.226], [0.49, 0.214], [0.51, 0.2], [0.53, 0.186], [0.56, 0.168], [0.585, 0.154], [0.61, 0.164],
+      [0.645, 0.149], [0.67, 0.16], [0.7, 0.176], [0.73, 0.19], [0.76, 0.198], [0.8, 0.204], [0.85, 0.199],
+      [0.9, 0.21], [0.95, 0.214], [1.02, 0.22], [1.02, 0.285]]);
+    s += `<path class="f-far" d="${poly(range)}${scrub(range.slice(1, -1), 4, 0.7, 1.8)}"/>`;
+    for (let i = 0; i < 30; i++) {             // villages on the range's lower slopes
+      const x = 0.55 + r() * 0.47;
+      lights.push([X(x), Yp(0.25 + r() * 0.03), 3]);
+    }
+    // 2. Falmouth Harbour (the sea's own water, left clear) and its big yachts' masts and lights.
+    let masts = '';
+    for (let i = 0; i < 11; i++) {
+      const x = X(0.72 + r() * 0.26), foot = Yp(0.3 + r() * 0.012), top = foot - Y(0.035 + r() * 0.035);
+      masts += `M${F(x)} ${F(foot)}V${F(top)}`;
+      lights.push([x, top, 2]);
+    }
+    for (let i = 0; i < 22; i++) lights.push([X(0.58 + r() * 0.42), Yp(0.29 + r() * 0.025), 2]);
+    // the low land between the two harbours, and the town's slope on the right
+    const between = P([[0.6, 0.326], [0.7, 0.32], [0.8, 0.325], [0.9, 0.318], [1.02, 0.318], [1.02, 0.358], [0.62, 0.358]]);
+    s += `<path class="f-far" d="${poly(between)}"/>`;
+    const town = P([[0.705, 0.45], [0.72, 0.432], [0.75, 0.418], [0.8, 0.412], [0.86, 0.418], [0.92, 0.41],
+      [1.02, 0.402], [1.02, 1.02], [0.7, 1.02], [0.74, 0.74], [0.785, 0.66], [0.795, 0.6], [0.78, 0.56],
+      [0.745, 0.54], [0.72, 0.52], [0.71, 0.48]]);
+    s += `<path class="f-near" d="${poly(town)}${scrub(town.slice(0, 7), 5, 0.9, 2.2)}"/>`;
+    for (let i = 0; i < 34; i++) lights.push([X(0.74 + r() * 0.27), Yp(0.43 + r() * 0.2), 3]);
+    // Galleon Beach: the pale curve of sand on the bay's right shore
+    s += `<path class="isl-vsand" d="${line(P([[0.748, 0.545], [0.772, 0.558], [0.79, 0.585], [0.792, 0.615], [0.784, 0.655]]))}" stroke-width="${F(Math.max(1.5, Y(0.01)))}"/>`;
+    // The inner harbour, running right from the dockyard behind a green spit, with its masts
+    for (let i = 0; i < 12; i++) {
+      const x = X(0.73 + r() * 0.24), foot = Yp(0.395 + r() * 0.01), top = foot - Y(0.03 + r() * 0.03);
+      masts += `M${F(x)} ${F(foot)}V${F(top)}`;
+      lights.push([x, top, 0]);
+    }
+    // 3. The headland: its cliff point on the left, its crest, and Fort Berkeley's spur into the bay.
+    const head = P([[0.19, 0.378], [0.192, 0.366], [0.199, 0.352], [0.21, 0.341], [0.226, 0.331], [0.25, 0.318],
+      [0.28, 0.303], [0.31, 0.29], [0.34, 0.279], [0.37, 0.27], [0.4, 0.266], [0.43, 0.268], [0.46, 0.276], [0.5, 0.284], [0.54, 0.289],
+      [0.58, 0.295], [0.62, 0.31], [0.66, 0.33], [0.7, 0.37], [0.715, 0.41], [0.7, 0.425], [0.66, 0.432],
+      [0.62, 0.436], [0.58, 0.44], [0.535, 0.442],
+      // Fort Berkeley: a narrow rocky finger pointing into the bay
+      [0.522, 0.458], [0.513, 0.482], [0.5, 0.5], [0.486, 0.508], [0.474, 0.5], [0.478, 0.482], [0.49, 0.462],
+      [0.494, 0.445], [0.47, 0.434], [0.44, 0.422], [0.4, 0.415], [0.35, 0.41], [0.3, 0.404], [0.25, 0.392],
+      [0.215, 0.386]]);
+    s += `<path class="f-near" d="${poly(head)}${scrub(head.slice(2, 17), 6, 0.9, 2.3)}"/>`;
+    const shore = head.slice(18);
+    s += `<path class="isl-vshore" d="${line(shore)}" stroke-width="1"/>`;
+    s += `<path class="isl-vsurf" d="${line(P([[0.186, 0.366], [0.19, 0.38], [0.2, 0.388], [0.215, 0.39], [0.235, 0.396]]))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`;
+    // 4. Nelson's Dockyard, where the bay turns right: a quay of masts and the brightest lights.
+    for (let i = 0; i < 11; i++) {
+      const x = X(0.625 + i * 0.008 + r() * 0.004), foot = Yp(0.445 + r() * 0.01), top = foot - Y(0.05 + r() * 0.035);
+      masts += `M${F(x)} ${F(foot)}V${F(top)}`;
+      lights.push([x, top, 0]);
+    }
+    for (let i = 0; i < 18; i++) lights.push([X(0.62 + r() * 0.1), Yp(0.425 + r() * 0.03), 0]);
+    // 5. Yachts at anchor across the bay: white hulls, masts, masthead lights and their reflections.
+    let hulls = '', refl = '';
+    const boats = [[0.385, 0.62], [0.42, 0.6], [0.455, 0.605], [0.49, 0.61], [0.5, 0.57], [0.535, 0.56], [0.555, 0.64],
+      [0.58, 0.6], [0.605, 0.55], [0.62, 0.53], [0.635, 0.585], [0.655, 0.59], [0.67, 0.56], [0.685, 0.55],
+      [0.62, 0.68], [0.55, 0.52], [0.45, 0.68], [0.52, 0.66], [0.7, 0.6], [0.4, 0.55]];
+    boats.forEach(([fx, fy], i) => {
+      const x = X(fx), y = Yp(fy), hw = X(0.008), mh = Y(0.05 + (i % 4) * 0.008);
+      hulls += `M${F(x - hw)} ${F(y)}L${F(x + hw)} ${F(y)}L${F(x + hw * 0.7)} ${F(y + Y(0.009))}L${F(x - hw * 0.7)} ${F(y + Y(0.009))}Z`;
+      masts += `M${F(x)} ${F(y)}V${F(y - mh)}`;
+      lights.push([x, y - mh, 1]);
+      refl += `<rect x="${F(x - 0.6)}" y="${F(y + Y(0.011))}" width="1.2" height="${F(Y(0.05))}" fill="url(#islvrefl)"/>`;
+    });
+    s += `<path class="isl-vmast" d="${masts}" stroke-width="0.7"/>`;
+    s += `<path class="isl-vhull" d="${hulls}"/>`;
+    s += `<g class="isl-vlamps">${refl}</g>`;
+    // 6. The lookout: the slope on the left, the rocks and scrub in front, organ-pipe cactus, a lantern.
+    const slope = P([[-0.02, 0.535], [0.05, 0.545], [0.1, 0.56], [0.15, 0.575], [0.19, 0.592], [0.22, 0.612],
+      [0.245, 0.66], [0.26, 0.74], [0.3, 0.76], [0.36, 0.73], [0.42, 0.77], [0.5, 0.79], [0.58, 0.8], [0.64, 0.74],
+      [0.68, 0.67], [0.73, 0.66], [0.8, 0.7], [0.88, 0.72], [1.02, 0.74], [1.02, 1.05], [-0.02, 1.05]]);
+    s += `<path class="f-near" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
+    const lx = X(0.43), ly = Yp(0.772);
+    s += `<path class="f-near" d="M${F(lx - 1)} ${F(ly + Y(0.02))}V${F(ly - Y(0.05))}H${F(lx + 1)}V${F(ly + Y(0.02))}Z"/>`;
+    s += `<circle cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Y(0.055))}" fill="url(#islvlamp)"/>`;
+    s += `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Math.max(1.5, Y(0.008)))}"/>`;
+    // The lights, grouped so they come on in turn: the dockyard, the boats, Falmouth, then the slopes.
+    const groups = [[], [], [], []];
+    for (const [x, y, g] of lights) groups[g].push(`M${F(x)} ${F(y)}h0`);
+    const widths = [2.2, 1.6, 1.5, 1.25];
+    groups.forEach((d, g) => {
+      if (d.length) s += `<path class="s-vlight isl-vwin${g === 3 ? ' isl-vlast' : ''}" style="--i:${g * 2}" d="${d.join('')}" stroke-width="${widths[g]}"/>`;
+    });
+    s += `<ellipse class="isl-vglow" cx="${F(X(0.67))}" cy="${F(Yp(0.43))}" rx="${F(X(0.07))}" ry="${F(Y(0.06))}" fill="url(#islvwarm)"/>`;
+    return s;
+  }
+
   /* Each piece: its drawing; its world ('coast', the Curtain Bluff view with the far islands and
      Antigua's land, or 'inland', its own hills); the bearing it faces; and its ground. */
   const PIECES = {
@@ -226,6 +356,15 @@
       ground: (W, H, y0, sea) => ({ xr0: 0, xr1: 0, yL: y0 + sea * 0.42, yP: y0 + sea * 0.42 }),
       hills: (W, y0) => [[W * 0.92, W * 0.13, W * 0.16], [W * 1.1, W * 0.09, W * 0.22], [W * 0.66, W * 0.035, W * 0.1]],
     },
+    'shirley-heights': {
+      draw: heights,
+      world: 'inland',
+      horizon: 0.3,
+      // From the lookout west-north-west across English Harbour to Falmouth: in May the Sun sets behind
+      // the range (the owner's dusk photograph), so the afterglow sits just left of its peaks.
+      face: 294,
+      ground: null,
+    },
   };
 
   function extraDefs() {
@@ -233,6 +372,9 @@
       + '<radialGradient id="islvwarm"><stop offset="0" class="st-g1" stop-opacity=".26"/><stop offset=".6" class="st-g1" stop-opacity=".08"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvspill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".2"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvlamp"><stop offset="0" class="st-k" stop-opacity=".6"/><stop offset=".5" class="st-k" stop-opacity=".18"/><stop offset="1" class="st-k" stop-opacity="0"/></radialGradient>'
+      + '<linearGradient id="islvrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
+      + '<linearGradient id="islvbay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vbay" stop-opacity=".55"/><stop offset="1" class="st-vbay" stop-opacity=".35"/></linearGradient>'
+      + '<linearGradient id="islvharb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-sea0" stop-opacity="0"/><stop offset=".45" class="st-sea0" stop-opacity=".5"/><stop offset="1" class="st-sea0" stop-opacity=".3"/></linearGradient>'
       + '<radialGradient id="islvbulb"><stop offset="0" class="st-g1" stop-opacity=".5"/><stop offset=".5" class="st-g1" stop-opacity=".14"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '</defs>';
   }
@@ -246,8 +388,8 @@
     const anchor = P.world === 'coast' ? rel(SKY.d.sun[0]) - (W * 0.3 - W / 2) / ppd : rel(P.face);
     const v = view(W / 2 - anchor * ppd, y0, ppd, W, H);
     const sea = H - y0;
-    const k = P.ground(W, H, y0, sea);
-    const g = rise(W, H, k.xr0, k.xr1, k.yL, k.yP, 23);
+    const k = P.ground ? P.ground(W, H, y0, sea) : null;
+    const g = k ? rise(W, H, k.xr0, k.xr1, k.yL, k.yP, 23) : { d: '', at: () => H };
     const reflH = Math.min(sea - 1, 5.5 * ppd);
     const svg = `<svg class="isl-o isl-art" width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${defs(W, y0, H)}${extraDefs()}`
       + `<rect width="${F(W)}" height="${y0 + 1}" fill="url(#islskyg)"/>`
@@ -264,7 +406,7 @@
       + ripples(v, 0, W, H, [], 9, 0.8)
       + (P.world === 'coast' ? land(v, 0, W, 13, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]]) : '')
       + (P.hills ? hills(W, g.at(W / 2), P.hills(W, y0), 31) : '')
-      + `<path class="f-near" d="${g.d}"/>`
+      + (g.d ? `<path class="f-near" d="${g.d}"/>` : '')
       + P.draw(W, H, v, g)
       + '</svg>';
     return own(svg, 'v');
@@ -282,7 +424,10 @@
       // layout-width.css), and never much taller than it is wide.
       const W = Math.floor(fig.clientWidth);
       const rem = parseFloat(getComputedStyle(document.documentElement).fontSize) || 20;
-      const H = Math.floor(clamp(Math.min(W * 1.02, innerHeight - 5.5 * rem - 24), 320, 820));
+      // A slot with an aspect (a wide head slot) takes its own shape.
+      const aspect = parseFloat(fig.dataset.aspect);
+      const H = aspect ? Math.floor(clamp(W * aspect, 180, 700))
+        : Math.floor(clamp(Math.min(W * 1.02, innerHeight - 5.5 * rem - 24), 320, 820));
       const key = W + 'x' + H;
       if (key === last) return;
       last = key;
