@@ -247,3 +247,84 @@
     display: none !important;
   }
 }
+
+/* --- Vignettes (art round, 2026-09-27) ----------------------------------------------
+   Small scenes from the same view in owner-approved empty spaces (data/art_slots.yaml, placed by
+   scripts/layout_art.py, drawn by docs/assets/art/island-vignettes.js). The figure is the object
+   layout_width.py sets beside the section's last block; it exists only where that track does
+   (from 68.75em), and the card inside it stays in view while the text beside it scrolls. */
+.md-typeset figure.isl-vignette {
+  display: none;
+  margin: 0;
+}
+@media screen and (min-width: 68.75em) {
+  .md-typeset figure.isl-vignette {
+    display: block;
+    width: 100%;
+  }
+}
+/* A short window sets every leaf as one column (layout-width.css); a picture under the text would
+   then be a block to scroll past, so it is not shown there. */
+@media screen and (min-width: 68.75em) and (max-height: 44em) {
+  .md-typeset figure.isl-vignette {
+    display: none;
+  }
+}
+/* The leaf's side is already sticky beside taller text (layout-width.css), so the card only clips. */
+.isl-vig {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  box-shadow: inset 0 0 0 1px var(--nav-line, rgba(16, 48, 77, 0.14));
+}
+/* The accent: the page's kind hue (--k from [data-kind]); the paler line in the light scheme reads
+   as a lamp against dusk, the text-strength hue in the dark scheme reads as one against night. */
+.isl .st-k { stop-color: var(--k-line, var(--isl-rim)); }
+.isl .isl-vlamp { fill: var(--k-line, var(--isl-pulse)); }
+[data-md-color-scheme="slate"] .isl .st-k { stop-color: var(--k, var(--isl-rim)); }
+[data-md-color-scheme="slate"] .isl .isl-vlamp { fill: var(--k, var(--isl-pulse)); }
+/* The campus's materials (from the owner's photographs of AUA): cream walls, a terracotta ground
+   floor, red roofs and white verandas, as dusk shows them (light scheme) and as night does (dark). */
+.isl {
+  --isl-vwall: #8b97a6; --isl-vshade: #707d8e; --isl-vband: #7b5a5a; --isl-vroof: #8e3d47;
+  --isl-vroof2: #74323d; --isl-vdark: #34475d; --isl-vdrive: #17324c; --isl-vrail: rgba(236, 239, 243, 0.55);
+}
+[data-md-color-scheme="slate"] .isl {
+  --isl-vwall: #2f3f54; --isl-vshade: #253449; --isl-vband: #3b2c36; --isl-vroof: #4e2533;
+  --isl-vroof2: #3e1d2a; --isl-vdark: #17243a; --isl-vdrive: #0d1b2d; --isl-vrail: rgba(200, 212, 228, 0.3);
+}
+.isl .isl-vwall { fill: var(--isl-vwall); }
+.isl .isl-vshade { fill: var(--isl-vshade); }
+.isl .isl-vband { fill: var(--isl-vband); }
+.isl .isl-vroof { fill: var(--isl-vroof); }
+.isl .isl-vroof2 { fill: var(--isl-vroof2); }
+.isl .isl-vdark { fill: var(--isl-vdark); }
+.isl .isl-vrail { stroke: var(--isl-vrail); fill: none; }
+.isl .isl-vdrive { stroke: var(--isl-vdrive); }
+.isl .isl-vclock { fill: var(--isl-moon); fill-opacity: 0.78; }
+/* One pass: the card fades in, then the lit room's windows and the door light in turn. Opacity
+   only; nothing under reduced motion (the script never starts the pass then). */
+.isl-vig.isl-vrun { animation: isl-vfade 0.7s ease-out both; }
+.isl-vig.isl-vrun .isl-vwin { animation: isl-vlight 0.9s ease-out both; animation-delay: calc(0.8s + var(--i, 0) * 0.22s); }
+.isl-vig.isl-vrun .isl-vglow,
+.isl-vig.isl-vrun .isl-vlamps,
+.isl-vig.isl-vrun .isl-vspill { animation: isl-vlight 1.2s ease-out 1.2s both; }
+@keyframes isl-vfade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes isl-vlight { from { opacity: 0.12; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .isl-vig.isl-vrun,
+  .isl-vig.isl-vrun * { animation: none !important; }
+}
+
+/* Star colour (dense starfield, 2026-09-27): the brighter stars tinted by colour index, faintly, as
+   the eye sees them; the halo on the brightest takes the plain star colour. */
+.isl { --isl-star-b: #d7e4ff; --isl-star-y: #fff0cf; --isl-star-o: #ffd2a8; }
+.isl .st-star { stop-color: var(--isl-star); }
+.isl .s-star-b { stroke: var(--isl-star-b); }
+.isl .s-star-y { stroke: var(--isl-star-y); }
+.isl .s-star-o { stroke: var(--isl-star-o); }
+
+/* The Milky Way (night only; the path from geo/sky_deep.py): a faint cool white, blurred in the drawing. */
+.isl { --isl-mw: #d3ddf3; }
+.isl .s-mw { stroke: var(--isl-mw); fill: none; }
+.isl .st-mw { stop-color: var(--isl-mw); }
