@@ -156,6 +156,9 @@
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-broofr { fill: var(--isl-vroof); }
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-bdock { fill: var(--isl-vdock, #dad3c2); }
 .isl .isl-vpool { fill: var(--isl-vpool, #54c9d1); }
+.isl .isl-vsandband { fill: var(--isl-vsand); fill-opacity: var(--isl-vsand-a, 0.7); }
+.isl .isl-vshallow2 { stroke: var(--isl-vshallow2, #cdf4ec); stroke-opacity: 0.8; fill: none; stroke-linejoin: round; }
+.isl .isl-vgrass { fill: var(--isl-vgrass, #1f6f78); fill-opacity: 0.35; }
 .isl .isl-vterrace { fill: var(--isl-vterrace, #d68c5e); }
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-palm { fill: var(--isl-vtree3); }
 

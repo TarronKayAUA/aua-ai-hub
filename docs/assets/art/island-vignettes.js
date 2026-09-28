@@ -352,6 +352,13 @@
       + `<filter id="islvsoft" x="-5%" y="-50%" width="110%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter></defs>`
       + `<path d="${poly(bay)}" fill="url(#islvbay)" filter="url(#islvbayf)"/>`;
     // by Day, turquoise shallows along the bay's shores, under the land that covers their inner half
+    // by Day, Galleon Beach's water: palest close to the sand, with darker patches of seagrass further out
+    // (the owner, 2026-09-28: "the water near the beach itself can be a little lighter than the water a
+    // little further out")
+    const beachLine = P([[0.748, 0.545], [0.772, 0.558], [0.79, 0.585], [0.792, 0.615], [0.784, 0.655]]);
+    s += `<g class="isl-ydet"><path class="isl-vgrass" d="${[[0.66, 0.6, 0.03, 0.014], [0.6, 0.665, 0.035, 0.012], [0.71, 0.655, 0.022, 0.012], [0.55, 0.61, 0.025, 0.01]]
+      .map(([fx, fy, rx, ry]) => `M${F(X(fx - rx))} ${F(Yp(fy))}a${F(X(rx))} ${F(Y(ry))} 0 1 0 ${F(X(2 * rx))} 0a${F(X(rx))} ${F(Y(ry))} 0 1 0 ${F(-X(2 * rx))} 0Z`).join('')}" filter="url(#islvbayf)"/>`
+      + `<path class="isl-vshallow2" d="${line(beachLine)}" stroke-width="${F(Y(0.1))}" filter="url(#islvbayf)"/></g>`;
     s += `<g class="isl-ydet"><path class="isl-vshallow" d="${line(head.slice(18))}${line(town.slice(8))}${line(slope.slice(4, 18))}" `
       + `stroke-width="${F(Y(0.045))}" filter="url(#islvbayf)"/></g>`;
     // 1. The far hills: the small distant point on the left, then the main range behind Falmouth.
@@ -387,7 +394,7 @@
     // slope's lights at night. (The random draws the slope's old lights made are kept, so nothing else moves.)
     for (let i = 0; i < 34; i++) { r(); r(); }
     const hr = rng(509), homes = bld(), spots = [];
-    for (const [fx, fy, fw, win] of [[0.806, 0.575, 0.012, 2], [0.81, 0.598, 0.011, 2], [0.808, 0.622, 0.012, 2], [0.803, 0.645, 0.011, 1],
+    for (const [fx, fy, fw, win] of [[0.817, 0.577, 0.012, 2], [0.821, 0.6, 0.011, 2], [0.819, 0.624, 0.012, 2], [0.814, 0.647, 0.011, 1],
       [0.824, 0.54, 0.024, 4], [0.85, 0.51, 0.02, 3]]) spots.push([X(fx), Yp(fy), X(fw), win]);
     for (let tries = 0; spots.length < 30 && tries < 3000; tries++) {
       const x = X(0.75 + hr() * 0.26), y = Yp(0.43 + hr() * 0.22), w = X(0.008 + hr() * 0.006);
@@ -399,7 +406,14 @@
     for (const [x, y, w, win] of spots) house(homes, x, y, w, { red: hr() < 0.35, win: win || undefined });
     s += drawB(homes, 6);
     // Galleon Beach: the pale curve of sand on the bay's right shore
-    s += `<path class="isl-vsand" d="${line(P([[0.748, 0.545], [0.772, 0.558], [0.79, 0.585], [0.792, 0.615], [0.784, 0.655]]))}" stroke-width="${F(Math.max(1.5, Y(0.01)))}"/>`;
+    // the beach as a band of sand along the water's edge, and its small pier out into the bay (the owner's
+    // photograph), with a light at the pier's end
+    const sandBand = [...beachLine, ...P([[0.79, 0.66], [0.799, 0.615], [0.798, 0.583], [0.779, 0.552], [0.754, 0.54]])];
+    s += `<path class="isl-vsandband" d="${poly(sandBand)}"/>`;
+    s += `<path class="isl-vsand" d="${line(beachLine)}" stroke-width="${F(Math.max(1, Y(0.005)))}"/>`;
+    const pier0 = P([[0.776, 0.566]])[0], pier1 = P([[0.742, 0.575]])[0], pt = Y(0.005);
+    s += `<path class="isl-bdock" d="M${F(pier0[0])} ${F(pier0[1])}L${F(pier1[0])} ${F(pier1[1])}l0 ${F(pt)}L${F(pier0[0])} ${F(pier0[1] + pt)}Z"/>`;
+    lights.push([pier1[0] + 1, pier1[1] - Y(0.008), 1]);
     // The inner harbour, running right from the dockyard behind a green spit, with its masts
     for (let i = 0; i < 12; i++) {
       const x = X(0.73 + r() * 0.24), foot = Yp(0.395 + r() * 0.01), top = foot - Y(0.03 + r() * 0.03);
@@ -485,8 +499,8 @@
     s += `<path class="f-near isl-land" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
     // Galleon Beach's palms along the back of the sand (every version: silhouettes by night, green by Day)
     let palms = '';
-    [[0.752, 0.56, 0.07], [0.765, 0.575, 0.06], [0.776, 0.598, 0.075], [0.781, 0.625, 0.065], [0.779, 0.648, 0.07]].forEach(([fx, fy, fh], k) => {
-      palms += palm(X(fx + 0.008), Yp(fy), Y(fh), 0.08 - k * 0.03, 301 + k);
+    [[0.79, 0.556, 0.052], [0.803, 0.58, 0.048], [0.806, 0.604, 0.056], [0.805, 0.63, 0.05], [0.797, 0.655, 0.054]].forEach(([fx, fy, fh], k) => {
+      palms += palm(X(fx), Yp(fy), Y(fh), 0.06 - k * 0.025, 301 + k);
     });
     s += `<path class="isl-palm" d="${palms}"/>`;
     // by Day, the lookout's own trees in front, the largest and brightest (the owner's photograph)
