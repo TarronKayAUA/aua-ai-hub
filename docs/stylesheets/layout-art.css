@@ -311,6 +311,33 @@
 .isl { --isl-vbay: #4f8fa3; }
 [data-md-color-scheme="slate"] .isl { --isl-vbay: #1d4760; }
 .isl .st-vbay { stop-color: var(--isl-vbay); }
+/* St John's: the cruise ships, the town's walls and the floodlit cathedral. */
+.isl { --isl-vship: #c9d2dd; --isl-vship2: #a9b5c3; --isl-vcath: #cdbfa6; --isl-vtown: #7b8796; }
+[data-md-color-scheme="slate"] .isl { --isl-vship: #6f7f93; --isl-vship2: #56657a; --isl-vcath: #8a7f6c; --isl-vtown: #34445a; }
+.isl .isl-vship { fill: var(--isl-vship); }
+.isl .isl-vship2 { fill: var(--isl-vship2); }
+.isl .isl-vcath { fill: var(--isl-vcath); }
+.isl .isl-vcathwin { fill: var(--isl-pulse); fill-opacity: 0.8; }
+.isl .isl-vtown { fill: var(--isl-vtown); }
+.isl .isl-vhullband { fill: var(--isl-near); fill-opacity: 0.75; }
+.isl .isl-vdeck { stroke: var(--isl-near); stroke-opacity: 0.35; fill: none; }
+.isl .isl-vcannon { fill: var(--isl-near); }
+/* Nelson's Dockyard: the Copper and Lumber Store's brick; the Sail Loft pillars' shaded sides and
+   their reflections. */
+.isl { --isl-vbrick: #8a5a4c; }
+[data-md-color-scheme="slate"] .isl { --isl-vbrick: #4a3035; }
+.isl .isl-vbrick { fill: var(--isl-vbrick); }
+.isl .isl-vpshade { fill: var(--isl-near); fill-opacity: 0.3; }
+.isl .isl-vpback { fill: var(--isl-vstrata); }
+.isl .isl-vpreflect { fill: var(--isl-vstone); fill-opacity: 0.22; }
+/* The Pillars of Hercules' limestone: its face in the last light, its strata and its hollows. */
+.isl { --isl-vstone: #a39a86; --isl-vstrata: #7f7765; }
+[data-md-color-scheme="slate"] .isl { --isl-vstone: #3b4049; --isl-vstrata: #2a2e36; }
+.isl .isl-vstone { fill: var(--isl-vstone); }
+.isl .isl-vstrata { stroke: var(--isl-vstrata); stroke-opacity: 0.8; fill: none; }
+.isl .st-vhol { stop-color: var(--isl-near); }
+.isl .isl-vpennant { fill: var(--k-line, var(--isl-rim)); }
+[data-md-color-scheme="slate"] .isl .isl-vpennant { fill: var(--k, var(--isl-rim)); }
 /* Galleon Beach's sand and the surf at the point: pale, catching the last light. */
 .isl { --isl-vsand: #d9cdb4; --isl-vsand-a: 0.7; --isl-vsurf: #eef3f7; --isl-vsurf-a: 0.55; }
 [data-md-color-scheme="slate"] .isl { --isl-vsand: #7d7666; --isl-vsand-a: 0.6; --isl-vsurf-a: 0.25; }
@@ -331,6 +358,10 @@
 /* One pass: the card fades in, then the lit room's windows and the door light in turn. Opacity
    only; nothing under reduced motion (the script never starts the pass then). */
 .isl-vig.isl-vrun { animation: isl-vfade 0.7s ease-out both; }
+/* The campus in the homepage hero lights up during the hero's own one pass. */
+.isl-hero.isl-run .isl-vwin { animation: isl-vlight 0.9s ease-out both; animation-delay: calc(1.1s + var(--i, 0) * 0.2s); }
+.isl-hero.isl-run .isl-vglow,
+.isl-hero.isl-run .isl-vlamps { animation: isl-vlight 1.2s ease-out 1.4s both; }
 .isl-vig.isl-vrun .isl-vwin { animation: isl-vlight 0.9s ease-out both; animation-delay: calc(0.8s + var(--i, 0) * 0.22s); }
 .isl-vig.isl-vrun .isl-vglow,
 .isl-vig.isl-vrun .isl-vlamps,

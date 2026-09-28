@@ -122,7 +122,7 @@
   /* Antigua's coast and hills at true angles: farther ground paler, the ground within 900 m darker,
      both carrying a scrub canopy of rounded clumps about 20 m across, sized for their distance (at a
      few kilometres they are a pixel or two, a soft edge rather than a hard one). */
-  function land(v, x0, x1, seed, rims = []) {
+  function land(v, x0, x1, seed, rims = [], withFoot = true) {
     const r = rng(seed), foot = v.H + 2;
     const runs = [];
     let cur = null;
@@ -191,7 +191,7 @@
     }
     flushFoot();
     return (far ? `<path class="f-far" d="${far}"/>` : '') + (near ? `<path class="f-near" d="${near}"/>` : '') + rim
-      + (under ? `<path class="f-near" d="${under}"/>` : '');
+      + (under && withFoot ? `<path class="f-near" d="${under}"/>` : '');
   }
 
   /* ------------------------------------------------------------- the sky */
@@ -541,8 +541,11 @@
     const net = nb ? network(nb, phone || nb[2] < 170 ? [2, 3, 2, 1] : [3, 4, 3, 1], 7, phone ? 1.6 : 2) : null;
     // The frigatebird, in the bold hero only: about 5.6 degrees of wing at this scale. No star shows
     // through it, where it rests or along its short glide (layout-art.css, isl-glide).
+    // The campus (owner, 2026-09-27): in the bold hero, when island-vignettes.js has arrived, the
+    // American University of Antigua stands right of the words in place of the Curtain Bluff coast.
+    const scene = bold && A.heroScene ? A.heroScene(v, colOf(M) + 28, W - 6, H) : null;
     const bird = bold && BIRD
-      ? birdPlace(v, colOf(M), words.concat(net ? [net.box] : [], skyObjects(v, words)), clamp(5.6 * v.ppd, 56, 100)) : null;
+      ? birdPlace(v, colOf(M), words.concat(net ? [net.box] : [], skyObjects(v, words), scene ? [scene.box] : []), clamp(5.6 * v.ppd, 56, 100)) : null;
     const clear = words.concat(net ? [net.box] : [], bird ? [[bird.x - 16, bird.y, bird.x + bird.w, bird.y + bird.h + 5]] : []);
     const reflH = Math.min(sea - 1, phone ? 14 : 5.5 * v.ppd);
     const svg = `<svg class="isl-o isl-art" width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${defs(W, v.y0, H)}`
@@ -554,12 +557,12 @@
       + stars(v, 'd', clear, 'isl-d') + stars(v, 'n', clear, 'isl-n')
       + planets(v, 'd', words, 'isl-d') + planets(v, 'n', words, 'isl-n')
       + moon(v, 'd', words, 'isl-d') + moon(v, 'n', words, 'isl-n')
-      + islands(v, 'f-isl')
+      + (scene ? '' : islands(v, 'f-isl'))
       + `<rect y="${v.y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`
       + glowSea(v, 'd', 'isl-d', reflH) + glowSea(v, 'n', 'isl-n', reflH)
       + `<path class="s-hz" d="M0 ${v.y0 + 0.5}H${F(W)}" stroke-width="1"/>`
       + ripples(v, 0, W, phone ? Math.min(H, v.y0 + 20) : H, words, 5, phone ? 0.5 : 0.9)
-      + land(v, 0, W, 11, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]])
+      + (scene ? scene.svg : land(v, 0, W, 11, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]]))
       + '</svg>';
     let html = own(svg, 'h');
     if (net) {
@@ -621,5 +624,5 @@
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(paint);
   };
   A.lib = { SKY, LAND, ISL, rel, view, islands, land, stars, ripples, defs, own, rng, F, clamp, TIP,
-    moon, planets, glowSky, glowSea, milkyWay };
+    moon, planets, glowSky, glowSea, milkyWay, BIRD };
 })();
