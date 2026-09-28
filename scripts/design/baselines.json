@@ -1,0 +1,1856 @@
+{
+ "about": "Design check baseline (DESIGN.md section 15). Refresh after an approved layout change: python scripts/design_check.py --only measure --update-baselines",
+ "updated": "2026-09-27",
+ "built_from": "5096938's site (the week round, live), re-measured on the maintainer's laptop (Windows 11, Playwright Chromium, Inter from Google Fonts) after the cloud measure",
+ "by_type": {
+  "door": {
+   "pages": 7,
+   "blank_1920": 0.173,
+   "blank_1440": 0.158,
+   "cpl_median": 96.75,
+   "cpl_max": 114
+  },
+  "reference": {
+   "pages": 31,
+   "blank_1920": 0.173,
+   "blank_1440": 0.191,
+   "cpl_median": 78,
+   "cpl_max": 92
+  },
+  "shelf": {
+   "pages": 17,
+   "blank_1920": 0.314,
+   "blank_1440": 0.334,
+   "cpl_median": 194.5,
+   "cpl_max": 212
+  },
+  "lesson": {
+   "pages": 7,
+   "blank_1920": 0.245,
+   "blank_1440": 0.236,
+   "cpl_median": 79.0,
+   "cpl_max": 89
+  },
+  "task": {
+   "pages": 33,
+   "blank_1920": 0.167,
+   "blank_1440": 0.167,
+   "cpl_median": 79.0,
+   "cpl_max": 89
+  },
+  "all": {
+   "pages": 95,
+   "blank_1920": 0.202,
+   "blank_1440": 0.209,
+   "cpl_median": 79.0,
+   "cpl_max": 212
+  }
+ },
+ "pages": {
+  "": {
+   "type": "door",
+   "1920": {
+    "blank": 0.092,
+    "worst": 0.142,
+    "height": 2093,
+    "inversions": 21,
+    "cpl_median": null,
+    "cpl_max": null
+   },
+   "1440": {
+    "blank": 0.086,
+    "worst": 0.156,
+    "height": 1907,
+    "inversions": 21,
+    "cpl_median": null,
+    "cpl_max": null
+   }
+  },
+  "about/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.161,
+    "worst": 0.309,
+    "height": 3851,
+    "inversions": 0,
+    "cpl_median": 77,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.178,
+    "worst": 0.334,
+    "height": 3485,
+    "inversions": 0,
+    "cpl_median": 77,
+    "cpl_max": 87
+   }
+  },
+  "accessibility/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.252,
+    "worst": 0.311,
+    "height": 1863,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.292,
+    "worst": 0.339,
+    "height": 1676,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 82
+   }
+  },
+  "announcements/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.321,
+    "worst": 0.333,
+    "height": 1482,
+    "inversions": 0,
+    "cpl_median": null,
+    "cpl_max": null
+   },
+   "1440": {
+    "blank": 0.276,
+    "worst": 0.368,
+    "height": 1349,
+    "inversions": 0,
+    "cpl_median": null,
+    "cpl_max": null
+   }
+  },
+  "announcements/2026-06-09-aua-ai-hub-launch/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.452,
+    "worst": 0.491,
+    "height": 1525,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.472,
+    "worst": 0.527,
+    "height": 1368,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 84
+   }
+  },
+  "announcements/2026-07-27-institution-wide-rollout/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.184,
+    "worst": 0.298,
+    "height": 1579,
+    "inversions": 0,
+    "cpl_median": 77.0,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.192,
+    "worst": 0.316,
+    "height": 1436,
+    "inversions": 0,
+    "cpl_median": 77.0,
+    "cpl_max": 83
+   }
+  },
+  "basics/better-answers/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.105,
+    "worst": 0.268,
+    "height": 5218,
+    "inversions": 0,
+    "cpl_median": 77,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.097,
+    "worst": 0.217,
+    "height": 4748,
+    "inversions": 0,
+    "cpl_median": 77,
+    "cpl_max": 85
+   }
+  },
+  "basics/glossary/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.056,
+    "worst": 0.27,
+    "height": 6453,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.062,
+    "worst": 0.19,
+    "height": 5854,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 87
+   }
+  },
+  "basics/how-llms-work/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.076,
+    "worst": 0.289,
+    "height": 4899,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.145,
+    "worst": 0.304,
+    "height": 4439,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 86
+   }
+  },
+  "basics/misconceptions/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.113,
+    "worst": 0.265,
+    "height": 3929,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.079,
+    "worst": 0.183,
+    "height": 3556,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 88
+   }
+  },
+  "benchmarks/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.208,
+    "worst": 0.427,
+    "height": 3877,
+    "inversions": 0,
+    "cpl_median": 197.0,
+    "cpl_max": 202
+   },
+   "1440": {
+    "blank": 0.341,
+    "worst": 0.546,
+    "height": 3522,
+    "inversions": 0,
+    "cpl_median": 179,
+    "cpl_max": 186
+   }
+  },
+  "benchmarks/image/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.306,
+    "worst": 0.486,
+    "height": 2577,
+    "inversions": 0,
+    "cpl_median": 200.0,
+    "cpl_max": 205
+   },
+   "1440": {
+    "blank": 0.322,
+    "worst": 0.467,
+    "height": 2420,
+    "inversions": 0,
+    "cpl_median": 179.5,
+    "cpl_max": 191
+   }
+  },
+  "benchmarks/video/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.325,
+    "worst": 0.334,
+    "height": 1968,
+    "inversions": 0,
+    "cpl_median": 200.0,
+    "cpl_max": 205
+   },
+   "1440": {
+    "blank": 0.41,
+    "worst": 0.43,
+    "height": 1822,
+    "inversions": 0,
+    "cpl_median": 182.0,
+    "cpl_max": 188
+   }
+  },
+  "conferences/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.355,
+    "worst": 0.362,
+    "height": 1593,
+    "inversions": 0,
+    "cpl_median": 201.5,
+    "cpl_max": 212
+   },
+   "1440": {
+    "blank": 0.275,
+    "worst": 0.387,
+    "height": 1547,
+    "inversions": 0,
+    "cpl_median": 180,
+    "cpl_max": 192
+   }
+  },
+  "examples/lecture-outline/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.283,
+    "worst": 0.474,
+    "height": 6917,
+    "inversions": 0,
+    "cpl_median": 78.0,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.358,
+    "worst": 0.512,
+    "height": 7018,
+    "inversions": 0,
+    "cpl_median": 78.0,
+    "cpl_max": 84
+   }
+  },
+  "examples/memo-and-minutes/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.174,
+    "worst": 0.341,
+    "height": 5098,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.314,
+    "worst": 0.415,
+    "height": 4598,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 83
+   }
+  },
+  "examples/study-practice-questions/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.213,
+    "worst": 0.425,
+    "height": 6172,
+    "inversions": 0,
+    "cpl_median": 77.0,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.21,
+    "worst": 0.584,
+    "height": 5576,
+    "inversions": 0,
+    "cpl_median": 77.0,
+    "cpl_max": 85
+   }
+  },
+  "faculty/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.226,
+    "worst": 0.375,
+    "height": 3093,
+    "inversions": 0,
+    "cpl_median": 99.0,
+    "cpl_max": 108
+   },
+   "1440": {
+    "blank": 0.23,
+    "worst": 0.443,
+    "height": 2866,
+    "inversions": 0,
+    "cpl_median": 99.0,
+    "cpl_max": 108
+   }
+  },
+  "governance/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.317,
+    "worst": 0.37,
+    "height": 1223,
+    "inversions": 0,
+    "cpl_median": 97.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.283,
+    "worst": 0.356,
+    "height": 1105,
+    "inversions": 0,
+    "cpl_median": 94.0,
+    "cpl_max": 114
+   }
+  },
+  "governance/committee/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.196,
+    "worst": 0.277,
+    "height": 1797,
+    "inversions": 0,
+    "cpl_median": 76.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.159,
+    "worst": 0.198,
+    "height": 1616,
+    "inversions": 0,
+    "cpl_median": 76.0,
+    "cpl_max": 87
+   }
+  },
+  "governance/policy/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.156,
+    "worst": 0.307,
+    "height": 6379,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.131,
+    "worst": 0.339,
+    "height": 5785,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   }
+  },
+  "governance/review-process/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.299,
+    "worst": 0.505,
+    "height": 3111,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.262,
+    "worst": 0.49,
+    "height": 2812,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 85
+   }
+  },
+  "governance/updates/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.222,
+    "worst": 0.266,
+    "height": 1652,
+    "inversions": 0,
+    "cpl_median": 77,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.197,
+    "worst": 0.21,
+    "height": 1484,
+    "inversions": 0,
+    "cpl_median": 77,
+    "cpl_max": 83
+   }
+  },
+  "learning/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.166,
+    "worst": 0.289,
+    "height": 3189,
+    "inversions": 0,
+    "cpl_median": 78.0,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.218,
+    "worst": 0.306,
+    "height": 2873,
+    "inversions": 0,
+    "cpl_median": 78.0,
+    "cpl_max": 86
+   }
+  },
+  "news-and-events/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.109,
+    "worst": 0.199,
+    "height": 2502,
+    "inversions": 0,
+    "cpl_median": 103.0,
+    "cpl_max": 104
+   },
+   "1440": {
+    "blank": 0.123,
+    "worst": 0.239,
+    "height": 2297,
+    "inversions": 0,
+    "cpl_median": 103.0,
+    "cpl_max": 104
+   }
+  },
+  "news/archive/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.443,
+    "worst": 0.5,
+    "height": 1255,
+    "inversions": 0,
+    "cpl_median": null,
+    "cpl_max": null
+   },
+   "1440": {
+    "blank": 0.449,
+    "worst": 0.481,
+    "height": 1137,
+    "inversions": 0,
+    "cpl_median": null,
+    "cpl_max": null
+   }
+  },
+  "news/clinical-practice/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.372,
+    "worst": 0.484,
+    "height": 2505,
+    "inversions": 0,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.356,
+    "worst": 0.465,
+    "height": 2342,
+    "inversions": 0,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   }
+  },
+  "news/general-ai/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.39,
+    "worst": 0.488,
+    "height": 2508,
+    "inversions": 0,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.352,
+    "worst": 0.427,
+    "height": 2285,
+    "inversions": 0,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   }
+  },
+  "news/medical-education/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.329,
+    "worst": 0.476,
+    "height": 2598,
+    "inversions": 0,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.31,
+    "worst": 0.411,
+    "height": 2407,
+    "inversions": 0,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   }
+  },
+  "news/podcasts/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.18,
+    "worst": 0.287,
+    "height": 3236,
+    "inversions": 0,
+    "cpl_median": 195.5,
+    "cpl_max": 199
+   },
+   "1440": {
+    "blank": 0.234,
+    "worst": 0.488,
+    "height": 3488,
+    "inversions": 0,
+    "cpl_median": 179.5,
+    "cpl_max": 181
+   }
+  },
+  "news/this-week/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.24,
+    "worst": 0.407,
+    "height": 5543,
+    "inversions": 0,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   },
+   "1440": {
+    "blank": 0.306,
+    "worst": 0.486,
+    "height": 5209,
+    "inversions": 0,
+    "cpl_median": 109.5,
+    "cpl_max": 114
+   }
+  },
+  "news/videos/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.182,
+    "worst": 0.336,
+    "height": 3895,
+    "inversions": 0,
+    "cpl_median": 198.0,
+    "cpl_max": 199
+   },
+   "1440": {
+    "blank": 0.264,
+    "worst": 0.473,
+    "height": 3423,
+    "inversions": 0,
+    "cpl_median": 181.0,
+    "cpl_max": 181
+   }
+  },
+  "opportunities/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.218,
+    "worst": 0.297,
+    "height": 1812,
+    "inversions": 0,
+    "cpl_median": 202,
+    "cpl_max": 206
+   },
+   "1440": {
+    "blank": 0.179,
+    "worst": 0.185,
+    "height": 1677,
+    "inversions": 0,
+    "cpl_median": 183.5,
+    "cpl_max": 195
+   }
+  },
+  "pathway/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.177,
+    "worst": 0.308,
+    "height": 2225,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 97
+   },
+   "1440": {
+    "blank": 0.151,
+    "worst": 0.323,
+    "height": 2024,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 97
+   }
+  },
+  "pathway/clinical/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.279,
+    "worst": 0.432,
+    "height": 3089,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.273,
+    "worst": 0.473,
+    "height": 2810,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 89
+   }
+  },
+  "pathway/how-ai-works/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.187,
+    "worst": 0.39,
+    "height": 2832,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.201,
+    "worst": 0.303,
+    "height": 2602,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 84
+   }
+  },
+  "pathway/prompting/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.208,
+    "worst": 0.382,
+    "height": 2626,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.154,
+    "worst": 0.303,
+    "height": 2390,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 85
+   }
+  },
+  "pathway/research/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.313,
+    "worst": 0.431,
+    "height": 3003,
+    "inversions": 0,
+    "cpl_median": 80.0,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.375,
+    "worst": 0.475,
+    "height": 2733,
+    "inversions": 0,
+    "cpl_median": 80.0,
+    "cpl_max": 86
+   }
+  },
+  "pathway/rules/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.266,
+    "worst": 0.321,
+    "height": 3268,
+    "inversions": 0,
+    "cpl_median": 76,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.243,
+    "worst": 0.327,
+    "height": 2973,
+    "inversions": 0,
+    "cpl_median": 76,
+    "cpl_max": 88
+   }
+  },
+  "pathway/teaching-assessment/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.28,
+    "worst": 0.439,
+    "height": 3209,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.199,
+    "worst": 0.332,
+    "height": 2942,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 84
+   }
+  },
+  "pathway/working-with-agents/": {
+   "type": "lesson",
+   "1920": {
+    "blank": 0.184,
+    "worst": 0.421,
+    "height": 3400,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.204,
+    "worst": 0.449,
+    "height": 3094,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   }
+  },
+  "playbooks/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.402,
+    "worst": 0.446,
+    "height": 1875,
+    "inversions": 0,
+    "cpl_median": 105.0,
+    "cpl_max": 110
+   },
+   "1440": {
+    "blank": 0.428,
+    "worst": 0.464,
+    "height": 1734,
+    "inversions": 0,
+    "cpl_median": 105.0,
+    "cpl_max": 110
+   }
+  },
+  "playbooks/admin-drafting/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.169,
+    "worst": 0.256,
+    "height": 2599,
+    "inversions": 0,
+    "cpl_median": 80.5,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.248,
+    "worst": 0.339,
+    "height": 2325,
+    "inversions": 0,
+    "cpl_median": 80.5,
+    "cpl_max": 89
+   }
+  },
+  "playbooks/ai-images/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.059,
+    "worst": 0.252,
+    "height": 5327,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.08,
+    "worst": 0.234,
+    "height": 4807,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 87
+   }
+  },
+  "playbooks/exam-items/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.19,
+    "worst": 0.247,
+    "height": 2930,
+    "inversions": 0,
+    "cpl_median": 80.0,
+    "cpl_max": 81
+   },
+   "1440": {
+    "blank": 0.173,
+    "worst": 0.258,
+    "height": 2626,
+    "inversions": 0,
+    "cpl_median": 80.0,
+    "cpl_max": 81
+   }
+  },
+  "playbooks/lecture-prep/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.198,
+    "worst": 0.247,
+    "height": 3130,
+    "inversions": 0,
+    "cpl_median": 83,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.156,
+    "worst": 0.232,
+    "height": 2724,
+    "inversions": 0,
+    "cpl_median": 83,
+    "cpl_max": 84
+   }
+  },
+  "playbooks/literature-reviews/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.237,
+    "worst": 0.355,
+    "height": 4093,
+    "inversions": 0,
+    "cpl_median": 77,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.204,
+    "worst": 0.4,
+    "height": 3684,
+    "inversions": 0,
+    "cpl_median": 77,
+    "cpl_max": 86
+   }
+  },
+  "playbooks/residency-application/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.126,
+    "worst": 0.296,
+    "height": 4318,
+    "inversions": 0,
+    "cpl_median": 80.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.092,
+    "worst": 0.295,
+    "height": 3909,
+    "inversions": 0,
+    "cpl_median": 80.0,
+    "cpl_max": 87
+   }
+  },
+  "playbooks/score-reports/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.233,
+    "worst": 0.359,
+    "height": 4818,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.245,
+    "worst": 0.385,
+    "height": 4363,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 87
+   }
+  },
+  "playbooks/syllabus-statement/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.132,
+    "worst": 0.248,
+    "height": 3488,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.215,
+    "worst": 0.486,
+    "height": 3134,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   }
+  },
+  "playbooks/writing-feedback/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.127,
+    "worst": 0.247,
+    "height": 3489,
+    "inversions": 0,
+    "cpl_median": 81,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.145,
+    "worst": 0.354,
+    "height": 3136,
+    "inversions": 0,
+    "cpl_median": 81,
+    "cpl_max": 85
+   }
+  },
+  "prompts/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.169,
+    "worst": 0.507,
+    "height": 5728,
+    "inversions": 0,
+    "cpl_median": 101.0,
+    "cpl_max": 108
+   },
+   "1440": {
+    "blank": 0.191,
+    "worst": 0.609,
+    "height": 5211,
+    "inversions": 0,
+    "cpl_median": 101.0,
+    "cpl_max": 108
+   }
+  },
+  "prompts/analysis-plan-reviewer/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.209,
+    "worst": 0.352,
+    "height": 2606,
+    "inversions": 0,
+    "cpl_median": 77.0,
+    "cpl_max": 79
+   },
+   "1440": {
+    "blank": 0.108,
+    "worst": 0.269,
+    "height": 2288,
+    "inversions": 0,
+    "cpl_median": 77.0,
+    "cpl_max": 79
+   }
+  },
+  "prompts/clinical-reasoning-partner/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.169,
+    "worst": 0.236,
+    "height": 2879,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 85
+   },
+   "1440": {
+    "blank": 0.183,
+    "worst": 0.247,
+    "height": 2537,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 85
+   }
+  },
+  "prompts/critical-appraisal-second-reader/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.107,
+    "worst": 0.194,
+    "height": 2615,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.157,
+    "worst": 0.247,
+    "height": 2379,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 87
+   }
+  },
+  "prompts/daily-review-sheet-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.281,
+    "worst": 0.331,
+    "height": 2224,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.255,
+    "worst": 0.32,
+    "height": 2023,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 84
+   }
+  },
+  "prompts/exchange/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.455,
+    "worst": 0.516,
+    "height": 1199,
+    "inversions": 0,
+    "cpl_median": 194.5,
+    "cpl_max": 197
+   },
+   "1440": {
+    "blank": 0.509,
+    "worst": 0.563,
+    "height": 1097,
+    "inversions": 0,
+    "cpl_median": 179,
+    "cpl_max": 192
+   }
+  },
+  "prompts/flashcard-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.283,
+    "worst": 0.354,
+    "height": 2216,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.254,
+    "worst": 0.348,
+    "height": 2015,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 82
+   }
+  },
+  "prompts/item-flaw-checker/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.171,
+    "worst": 0.354,
+    "height": 2145,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.158,
+    "worst": 0.349,
+    "height": 1951,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 88
+   }
+  },
+  "prompts/learning-objective-sharpener/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.171,
+    "worst": 0.235,
+    "height": 2559,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 81
+   },
+   "1440": {
+    "blank": 0.163,
+    "worst": 0.248,
+    "height": 2350,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 81
+   }
+  },
+  "prompts/learning/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.251,
+    "worst": 0.267,
+    "height": 1833,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.292,
+    "worst": 0.337,
+    "height": 1648,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 82
+   }
+  },
+  "prompts/lecture-outline-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.212,
+    "worst": 0.345,
+    "height": 2498,
+    "inversions": 0,
+    "cpl_median": 76.5,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.096,
+    "worst": 0.235,
+    "height": 2214,
+    "inversions": 0,
+    "cpl_median": 76.5,
+    "cpl_max": 83
+   }
+  },
+  "prompts/lecture-tutor/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.212,
+    "worst": 0.238,
+    "height": 2144,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 86
+   },
+   "1440": {
+    "blank": 0.27,
+    "worst": 0.346,
+    "height": 1974,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 86
+   }
+  },
+  "prompts/literature-screening-assistant/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.092,
+    "worst": 0.213,
+    "height": 2499,
+    "inversions": 0,
+    "cpl_median": 75,
+    "cpl_max": 81
+   },
+   "1440": {
+    "blank": 0.084,
+    "worst": 0.192,
+    "height": 2320,
+    "inversions": 0,
+    "cpl_median": 75,
+    "cpl_max": 81
+   }
+  },
+  "prompts/missed-question-debrief/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.133,
+    "worst": 0.224,
+    "height": 2434,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.162,
+    "worst": 0.246,
+    "height": 2214,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 82
+   }
+  },
+  "prompts/mock-residency-interview/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.146,
+    "worst": 0.227,
+    "height": 2765,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.158,
+    "worst": 0.191,
+    "height": 2433,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 87
+   }
+  },
+  "prompts/nbme-style-question-tutor/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.175,
+    "worst": 0.256,
+    "height": 2678,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.216,
+    "worst": 0.383,
+    "height": 2436,
+    "inversions": 0,
+    "cpl_median": 78.5,
+    "cpl_max": 83
+   }
+  },
+  "prompts/personal-statement-critic/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.165,
+    "worst": 0.236,
+    "height": 2768,
+    "inversions": 0,
+    "cpl_median": 76.0,
+    "cpl_max": 82
+   },
+   "1440": {
+    "blank": 0.182,
+    "worst": 0.243,
+    "height": 2459,
+    "inversions": 0,
+    "cpl_median": 76.0,
+    "cpl_max": 82
+   }
+  },
+  "prompts/post-exam-item-analysis-reader/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.144,
+    "worst": 0.236,
+    "height": 2735,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.161,
+    "worst": 0.244,
+    "height": 2453,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 84
+   }
+  },
+  "prompts/pre-submission-reviewer/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.126,
+    "worst": 0.217,
+    "height": 2603,
+    "inversions": 0,
+    "cpl_median": 80.0,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.11,
+    "worst": 0.185,
+    "height": 2368,
+    "inversions": 0,
+    "cpl_median": 80.0,
+    "cpl_max": 83
+   }
+  },
+  "prompts/reporting-guideline-auditor/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.135,
+    "worst": 0.222,
+    "height": 2575,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.161,
+    "worst": 0.207,
+    "height": 2389,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 84
+   }
+  },
+  "prompts/research-question-coach/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.121,
+    "worst": 0.213,
+    "height": 2521,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.075,
+    "worst": 0.166,
+    "height": 2293,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 83
+   }
+  },
+  "prompts/rubric-feedback-drafter/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.101,
+    "worst": 0.214,
+    "height": 2587,
+    "inversions": 0,
+    "cpl_median": 77.0,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.111,
+    "worst": 0.19,
+    "height": 2376,
+    "inversions": 0,
+    "cpl_median": 77.0,
+    "cpl_max": 84
+   }
+  },
+  "prompts/score-report-study-planner/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.153,
+    "worst": 0.312,
+    "height": 2241,
+    "inversions": 0,
+    "cpl_median": 76,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.124,
+    "worst": 0.313,
+    "height": 2039,
+    "inversions": 0,
+    "cpl_median": 76,
+    "cpl_max": 83
+   }
+  },
+  "prompts/single-best-answer-item-writer/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.206,
+    "worst": 0.357,
+    "height": 2197,
+    "inversions": 0,
+    "cpl_median": 76.0,
+    "cpl_max": 77
+   },
+   "1440": {
+    "blank": 0.176,
+    "worst": 0.356,
+    "height": 1998,
+    "inversions": 0,
+    "cpl_median": 76.0,
+    "cpl_max": 77
+   }
+  },
+  "prompts/study-plan-progress-check/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.239,
+    "worst": 0.351,
+    "height": 2267,
+    "inversions": 0,
+    "cpl_median": 76,
+    "cpl_max": 81
+   },
+   "1440": {
+    "blank": 0.213,
+    "worst": 0.351,
+    "height": 2062,
+    "inversions": 0,
+    "cpl_median": 76,
+    "cpl_max": 81
+   }
+  },
+  "prompts/study-schedule-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.15,
+    "worst": 0.229,
+    "height": 2825,
+    "inversions": 0,
+    "cpl_median": 82.0,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.192,
+    "worst": 0.236,
+    "height": 2511,
+    "inversions": 0,
+    "cpl_median": 82.0,
+    "cpl_max": 83
+   }
+  },
+  "prompts/team-based-learning-session-builder/": {
+   "type": "task",
+   "1920": {
+    "blank": 0.143,
+    "worst": 0.219,
+    "height": 2758,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.17,
+    "worst": 0.186,
+    "height": 2427,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 84
+   }
+  },
+  "students/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.142,
+    "worst": 0.398,
+    "height": 4922,
+    "inversions": 0,
+    "cpl_median": 78.0,
+    "cpl_max": 105
+   },
+   "1440": {
+    "blank": 0.12,
+    "worst": 0.38,
+    "height": 4509,
+    "inversions": 0,
+    "cpl_median": 78.0,
+    "cpl_max": 105
+   }
+  },
+  "tools-and-prompts/": {
+   "type": "door",
+   "1920": {
+    "blank": 0.146,
+    "worst": 0.172,
+    "height": 2144,
+    "inversions": 0,
+    "cpl_median": 96.0,
+    "cpl_max": 97
+   },
+   "1440": {
+    "blank": 0.115,
+    "worst": 0.196,
+    "height": 1973,
+    "inversions": 0,
+    "cpl_median": 96.0,
+    "cpl_max": 97
+   }
+  },
+  "tools/": {
+   "type": "shelf",
+   "1920": {
+    "blank": 0.437,
+    "worst": 0.602,
+    "height": 3820,
+    "inversions": 0,
+    "cpl_median": 97.0,
+    "cpl_max": 103
+   },
+   "1440": {
+    "blank": 0.47,
+    "worst": 0.644,
+    "height": 3534,
+    "inversions": 0,
+    "cpl_median": 97.0,
+    "cpl_max": 103
+   }
+  },
+  "tools/agents/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.226,
+    "worst": 0.485,
+    "height": 6424,
+    "inversions": 0,
+    "cpl_median": 78.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.241,
+    "worst": 0.48,
+    "height": 5679,
+    "inversions": 0,
+    "cpl_median": 78.0,
+    "cpl_max": 87
+   }
+  },
+  "tools/first-session/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.203,
+    "worst": 0.439,
+    "height": 5389,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.221,
+    "worst": 0.437,
+    "height": 4883,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 88
+   }
+  },
+  "tools/gemini-notebook/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.089,
+    "worst": 0.218,
+    "height": 3953,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.186,
+    "worst": 0.353,
+    "height": 3596,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 89
+   }
+  },
+  "tools/hardware/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.109,
+    "worst": 0.403,
+    "height": 6785,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.156,
+    "worst": 0.47,
+    "height": 6175,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 87
+   }
+  },
+  "tools/interfaces/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.091,
+    "worst": 0.276,
+    "height": 4582,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 92
+   },
+   "1440": {
+    "blank": 0.101,
+    "worst": 0.253,
+    "height": 4190,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 92
+   }
+  },
+  "tools/local/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.134,
+    "worst": 0.222,
+    "height": 3324,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 84
+   },
+   "1440": {
+    "blank": 0.122,
+    "worst": 0.247,
+    "height": 3023,
+    "inversions": 0,
+    "cpl_median": 78,
+    "cpl_max": 84
+   }
+  },
+  "tools/research/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.194,
+    "worst": 0.453,
+    "height": 5519,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.252,
+    "worst": 0.492,
+    "height": 5020,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 88
+   }
+  },
+  "tools/skills/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.181,
+    "worst": 0.286,
+    "height": 4659,
+    "inversions": 0,
+    "cpl_median": 81,
+    "cpl_max": 89
+   },
+   "1440": {
+    "blank": 0.222,
+    "worst": 0.347,
+    "height": 4232,
+    "inversions": 0,
+    "cpl_median": 80.5,
+    "cpl_max": 89
+   }
+  },
+  "tools/standing-setups/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.106,
+    "worst": 0.265,
+    "height": 3771,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 83
+   },
+   "1440": {
+    "blank": 0.105,
+    "worst": 0.184,
+    "height": 3414,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 83
+   }
+  },
+  "worked-examples/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.167,
+    "worst": 0.195,
+    "height": 1634,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.182,
+    "worst": 0.217,
+    "height": 1486,
+    "inversions": 0,
+    "cpl_median": 79,
+    "cpl_max": 88
+   }
+  },
+  "worked-examples/genome/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.073,
+    "worst": 0.259,
+    "height": 5869,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.096,
+    "worst": 0.19,
+    "height": 5321,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 88
+   }
+  },
+  "worked-examples/recommender/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.098,
+    "worst": 0.265,
+    "height": 7981,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   },
+   "1440": {
+    "blank": 0.073,
+    "worst": 0.184,
+    "height": 7261,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 87
+   }
+  },
+  "worked-examples/sharex-hdr/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.218,
+    "worst": 0.476,
+    "height": 6558,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 88
+   },
+   "1440": {
+    "blank": 0.206,
+    "worst": 0.574,
+    "height": 5988,
+    "inversions": 0,
+    "cpl_median": 79.0,
+    "cpl_max": 88
+   }
+  },
+  "worked-examples/this-site/": {
+   "type": "reference",
+   "1920": {
+    "blank": 0.125,
+    "worst": 0.323,
+    "height": 5920,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 91
+   },
+   "1440": {
+    "blank": 0.09,
+    "worst": 0.27,
+    "height": 5387,
+    "inversions": 0,
+    "cpl_median": 80,
+    "cpl_max": 91
+   }
+  }
+ }
+}
