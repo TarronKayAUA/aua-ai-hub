@@ -22,12 +22,13 @@
 #            without it the picture is as tall as the window allows
 
 slots:
-  - page: examples/lecture-outline.md
-    section: what-to-check
-    piece: nelsons-dockyard
-    kind: guide
-    # (The AUA campus stood here first; it moved to the homepage's hero at
-    # the owner's suggestion, 2026-09-27.)
+  # Owner's review, 2026-09-28: the campus moved to the homepage hero (drawn by
+  # island-core.js, no slot here) and the Curtain Bluff view to For Faculty &
+  # Staff were approved. The pieces staged for News & Events (st-johns-harbour),
+  # the guides index (pillars-of-hercules) and the Lecture Outline
+  # (nelsons-dockyard) were not: news and the guides should have art about
+  # what they are, and art on one example page but not the others reads oddly.
+  # Those three drawings are kept in island-vignettes.js, unplaced, for later.
 
   # The For Students landing's head, where the frame was empty beside the
   # title (800x320 at 1920, the top of the page): Shirley Heights at dusk,
@@ -44,23 +45,4 @@ slots:
   - page: faculty.md
     section: _head
     piece: curtain-bluff
-    aspect: 0.42
-
-  # The News & Events landing's head (800x320 at 1920): St John's harbour at
-  # night from Fort James, the cruise ships lit up at the quay and the
-  # cathedral's towers above the town, where the island's news comes in by
-  # sea (art round 3, 2026-09-27).
-  - page: news-and-events.md
-    section: _head
-    piece: st-johns-harbour
-    kind: news
-    aspect: 0.42
-
-  # The guides index's head (800x336 at 1920, the top of the page): the
-  # Pillars of Hercules, the landmark sailors steered by into English
-  # Harbour (art round 3, 2026-09-27).
-  - page: playbooks/index.md
-    section: _head
-    piece: pillars-of-hercules
-    kind: guide
     aspect: 0.42
