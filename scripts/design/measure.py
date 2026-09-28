@@ -408,6 +408,8 @@ def run(env, report, update=False, focus=False):
             "about": "Design check baseline (DESIGN.md section 15). Refresh after an approved layout change: "
                      "python scripts/design_check.py --only measure --update-baselines",
             "updated": date.today().isoformat(),
+            # where the baseline was measured (a note kept by hand across refreshes)
+            **({"built_from": base["built_from"]} if base.get("built_from") else {}),
             "by_type": by_type(merged),
             "pages": dict(sorted(merged.items())),
         }, indent=1) + "\n", encoding="utf-8")
