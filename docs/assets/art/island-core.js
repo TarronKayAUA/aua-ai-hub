@@ -663,5 +663,5 @@
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(paint);
   };
   A.lib = { SKY, LAND, ISL, rel, view, islands, land, stars, ripples, defs, own, rng, F, clamp, TIP,
-    moon, planets, glowSky, glowSea, milkyWay, BIRD };
+    moon, moonBox, planets, glowSky, glowSea, milkyWay, BIRD };
 })();

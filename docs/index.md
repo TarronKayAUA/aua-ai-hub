@@ -146,7 +146,7 @@ hide:
 
 - [Module 1: How AI Works](pathway/how-ai-works.md) <span class="row-sub">How AI works, in <!-- timely:minutes pathway/how-ai-works.md --> minutes</span>
 - [Common Misconceptions](basics/misconceptions.md) <span class="row-sub">What AI can and cannot do, in <!-- timely:minutes basics/misconceptions.md --> minutes</span>
-- [Glossary](basics/glossary.md) <span class="row-sub">A word you do not know</span>
+- [Glossary](basics/glossary.md) <span class="row-sub">AI terms, one paragraph each</span>
 
 </div>
 

@@ -636,7 +636,7 @@ def _toc(article_html: str, page) -> str:
     n = len(heads)
     return (f'<details class="secfoot__toc" data-sectoc data-count="{n}" data-noun="{noun}"><summary>'
             f'<span class="secfoot__sicon secfoot__sicon--toc">{_icon("format-list-bulleted")}</span>'
-            f'<span class="secfoot__stext">On this page</span>'
+            f'<span class="secfoot__stext">On This Page</span>'
             f'<span class="secfoot__scount">{n} {noun}</span></summary>'
             f'<div class="secfoot__body">{body}</div></details>')
 
@@ -918,10 +918,12 @@ def _door_foot(page, article_html: str) -> str:
         label, total, icon = f'Browse {_esc(tab["title"])}', len(tab["flat"]), tab["icon"]
     elif page.is_homepage:
         body, total, n = _site_map(page)
-        attrs = (f'data-section="the site" data-short="Browse" data-title="The whole site" '
+        # The control's labels are title case (owner, 2026-09-28); data-section stays lower case
+        # because the control also uses it inside sentences ("every page in the site").
+        attrs = (f'data-section="the site" data-name="the Site" data-short="Browse" data-title="The Whole Site" '
                  f'data-unit="section" data-total="{total}" data-groups="{n}" '
                  f'data-where="on the home page" data-group=""')
-        label, icon = "Browse the site", "sitemap-outline"
+        label, icon = "Browse the Site", "sitemap-outline"
     else:
         return ""
     summary = (f'<summary><span class="secfoot__sicon">{_icon(icon)}</span>'

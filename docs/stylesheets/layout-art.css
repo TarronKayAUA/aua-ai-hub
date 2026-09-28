@@ -361,7 +361,7 @@
 .isl .isl-vriser { fill: var(--isl-vriser); }
 .isl .isl-vwall { fill: var(--isl-vwallc); }
 .isl .isl-vpost { fill: var(--isl-near); }
-.isl-vig .isl-vgrain { opacity: 0.32; }
+.isl-vig .isl-vgrain { opacity: 0.22; }
 [data-md-color-scheme="slate"] .isl-vig .isl-vgrain { opacity: 0.6; }
 .isl-vig .isl-vgrain--sea { opacity: 0.1; }
 [data-md-color-scheme="slate"] .isl-vig .isl-vgrain--sea { opacity: 0.2; }

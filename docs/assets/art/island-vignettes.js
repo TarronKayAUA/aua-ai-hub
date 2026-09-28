@@ -1495,6 +1495,9 @@
       // From the lookout west-north-west across English Harbour to Falmouth: in May the Sun sets behind
       // the range (the owner's dusk photograph), so the afterglow sits just left of its peaks.
       face: 294,
+      // The Moon's true place is above this short sky, so it is set in the open sky over the afterglow
+      // (owner, 2026-09-28: "Feel free to add the moon to the image on the student page").
+      moonAt: [0.2, 0.11],
       ground: null,
     },
   };
@@ -1534,21 +1537,42 @@
     const k = P.ground ? P.ground(W, H, y0, sea) : null;
     const g = k ? rise(W, H, k.xr0, k.xr1, k.yL, k.yP, 23) : { d: '', at: () => H };
     const reflH = Math.min(sea - 1, 5.5 * ppd);
+    // The Moon and Venus, in each scheme. A piece whose sky is too short for the Moon's true place may
+    // put it at `moonAt` ([x, y], shares of the width and height): the true phase and tilt, the place
+    // a painter's licence, Venus keeping its true offset (Shirley Heights; owner, 2026-09-28: "Feel
+    // free to add the moon"). The stars leave the Moon's disc clear, as in the hero: its dark side
+    // is only faintly opaque, and stars showed through it (owner, the same day).
+    const big = P.moonBig || 1, sky = {};
+    for (const m of ['d', 'n']) {
+      const vm = P.moonAt ? view(W * P.moonAt[0] - rel(SKY[m].moon[0]) * ppd, H * P.moonAt[1] + SKY[m].moon[1] * ppd, ppd, W, H) : v;
+      const cls = m === 'd' ? 'isl-d' : 'isl-n', drawn = L.moon(vm, m, [], cls, big), [mx, my, mr] = L.moonBox(vm, m, big);
+      sky[m] = {
+        moon: drawn,
+        planets: L.planets(vm, m, [], cls),
+        box: drawn ? [[mx - mr, my - mr, mx + mr, my + mr]] : [],
+        hole: drawn ? `<circle cx="${F(mx)}" cy="${F(my)}" r="${F(mr + 1)}" fill="#000"/>` : '',
+      };
+    }
     // The print grain: on the sky, and fainter on the water, laid before the land so the land covers
-    // it (owner, 2026-09-28: over the whole card, "on the land it reads as visual noise").
+    // it (owner, 2026-09-28: over the whole card, "on the land it reads as visual noise"), and before
+    // Venus and the Moon, with a hole where each scheme's Moon stands, so neither is speckled. At
+    // dusk the grain's dark specks show against the bright sky (owner, 2026-09-28: "reads a little
+    // noisy"), so there it fades out toward the afterglow at the horizon; at night it reads as stars.
     const grain = grainURL();
-    const gDef = grain ? `<defs><pattern id="islvgrain" patternUnits="userSpaceOnUse" width="160" height="160"><image href="${grain}" width="160" height="160"/></pattern></defs>` : '';
-    const gSky = grain ? `<rect class="isl-vgrain" width="${F(W)}" height="${y0 + 1}" fill="url(#islvgrain)"/>` : '';
+    const gFade = `<linearGradient id="islvgfd" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="${F(y0)}"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#777"/><stop offset=".85" stop-color="#000"/></linearGradient>`;
+    const gMask = (m) => `<mask id="islvgm${m}"><rect width="${F(W)}" height="${y0 + 1}" fill="${m === 'd' ? 'url(#islvgfd)' : '#fff'}"/>${sky[m].hole}</mask>`;
+    const gDef = grain ? `<defs><pattern id="islvgrain" patternUnits="userSpaceOnUse" width="160" height="160"><image href="${grain}" width="160" height="160"/></pattern>${gFade}${gMask('d')}${gMask('n')}</defs>` : '';
+    const gSky = grain ? ['d', 'n'].map((m) => `<g class="isl-${m}"><rect class="isl-vgrain" width="${F(W)}" height="${y0 + 1}" fill="url(#islvgrain)" mask="url(#islvgm${m})"/></g>`).join('') : '';
     const gSea = grain ? `<rect class="isl-vgrain isl-vgrain--sea" y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islvgrain)"/>` : '';
     const svg = `<svg class="isl-o isl-art" width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${defs(W, y0, H)}${extraDefs()}${gDef}`
       + `<rect width="${F(W)}" height="${y0 + 1}" fill="url(#islskyg)"/>`
       + L.milkyWay(v, 'n', 'isl-n')
       + `<rect y="${F(y0 - 2.4 * ppd)}" width="${F(W)}" height="${F(2.4 * ppd)}" fill="url(#islhazeg)"/>`
       + L.glowSky(v, 'd', 'isl-d') + L.glowSky(v, 'n', 'isl-n')
-      + stars(v, 'd', [], 'isl-d') + stars(v, 'n', [], 'isl-n')
-      + L.planets(v, 'd', [], 'isl-d') + L.planets(v, 'n', [], 'isl-n')
-      + L.moon(v, 'd', [], 'isl-d', P.moonBig || 1) + L.moon(v, 'n', [], 'isl-n', P.moonBig || 1)
+      + stars(v, 'd', sky.d.box, 'isl-d') + stars(v, 'n', sky.n.box, 'isl-n')
       + gSky
+      + sky.d.planets + sky.n.planets
+      + sky.d.moon + sky.n.moon
       + (P.world === 'coast' ? islands(v, 'f-isl') : '')
       + `<rect y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`
       + L.glowSea(v, 'd', 'isl-d', reflH) + L.glowSea(v, 'n', 'isl-n', reflH)

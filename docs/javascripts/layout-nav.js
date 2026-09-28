@@ -2,14 +2,14 @@
  *
  * Two controls replace both sidebars, and each says what it does in words:
  *
- *   [icon Browse Tools & Prompts ^]  [On this page ^]  [Filters 2]   [Copy prompt]
+ *   [icon Browse Tools & Prompts ^]  [On This Page ^]  [Filters 2]   [Copy prompt]
  *
- * 1. "Browse <section>" ("Browse" on phones, beside "This page") opens the section as
+ * 1. "Browse <section>" ("Browse" on phones, beside "This Page") opens the section as
  *    a map: groups of cards, the current page filled and marked in words,
  *    every sibling one click away, and a key naming the colors drawn. On a
  *    narrow screen its title bar also has the section's overview and a
  *    "Jump to group" row, since the map opens at the reader's own group.
- * 2. "On this page" opens the page's sections as short chips, the one you
+ * 2. "On This Page" opens the page's sections as short chips, the one you
  *    are reading filled (on the glossary, its A to Z instead).
  * 3. On a shelf, Filters brings the shelf's filter band back into view from
  *    far down the list, and shows how many filters are on.
@@ -95,8 +95,11 @@
   var where = foot.getAttribute("data-where") || "";
   var hereGroup = foot.getAttribute("data-group") || "";
   // A landing page's foot can name the control differently: the homepage
-  // browses "the site", whose groups are sections.
-  // Phones show the short label; "Browse" and "This page" fit side by side (owner, 2026-09-28).
+  // browses "the site", whose groups are sections. The button's labels are title
+  // case (owner, 2026-09-28): `data-name` is the name as the button shows it
+  // ("the Site"), `section` the name as a sentence uses it ("every page in the site").
+  // Phones show the short label; "Browse" and "This Page" fit side by side (owner, 2026-09-28).
+  var name = foot.getAttribute("data-name") || section;
   var shortName = foot.getAttribute("data-short") || "Browse";
   var panelTitle = foot.getAttribute("data-title") || section;
   var unit = foot.getAttribute("data-unit") || "group";
@@ -128,7 +131,7 @@
     '<span class="secnav__label"><span class="secnav__long"><span class="secnav__lead">Browse</span> ' +
     '<span class="secnav__name"></span></span><span class="secnav__short"></span></span>' +
     icon("chevron", "secnav__chev");
-  mapBtn.querySelector(".secnav__name").textContent = section;
+  mapBtn.querySelector(".secnav__name").textContent = name;
   mapBtn.querySelector(".secnav__short").textContent = shortName;
   mapBtn.title = "Browse every page in " + section;
   bar.appendChild(mapBtn);
@@ -225,11 +228,11 @@
       tocBtn.type = "button";
       tocBtn.setAttribute("aria-expanded", "false");
       tocBtn.setAttribute("aria-controls", "secnav-toc");
-      tocBtn.setAttribute("aria-label", "On this page: " + (tocCount || chips.length) + " " + tocNoun);
+      tocBtn.setAttribute("aria-label", "On This Page: " + (tocCount || chips.length) + " " + tocNoun);
       tocBtn.title = "Jump to a section of this page";
       tocBtn.innerHTML = '<span class="secnav__icon secnav__icon--toc">' + icon("list") + "</span>" +
-        '<span class="secnav__label"><span class="secnav__always"><span class="secnav__long">On this page</span>' +
-        '<span class="secnav__short">This page</span></span>' +
+        '<span class="secnav__label"><span class="secnav__always"><span class="secnav__long">On This Page</span>' +
+        '<span class="secnav__short">This Page</span></span>' +
         '<span class="secnav__now" aria-hidden="true"></span></span>' + icon("chevron", "secnav__chev");
       bar.appendChild(tocBtn);
 
@@ -238,12 +241,12 @@
       tocPanel.hidden = true;
       tocPanel.tabIndex = -1;
       tocPanel.setAttribute("role", "region");
-      tocPanel.setAttribute("aria-label", "On this page");
+      tocPanel.setAttribute("aria-label", "On This Page");
       var th = el("div", "secnav__phead");
-      th.innerHTML = '<span class="secnav__ptext"><span class="secnav__ptitle">On this page</span> ' +
+      th.innerHTML = '<span class="secnav__ptext"><span class="secnav__ptitle">On This Page</span> ' +
         '<span class="secnav__pmeta"></span></span>';
       th.querySelector(".secnav__pmeta").textContent = (tocCount || chips.length) + " " + tocNoun;
-      tocClose = closeButton("On this page");
+      tocClose = closeButton("On This Page");
       th.appendChild(tocClose);
       tocPanel.appendChild(th);
       var tb = el("div", "secnav__pbody");
@@ -407,8 +410,8 @@
   toggle.type = "button";
   bar.id = "secnav-bar";
   toggle.setAttribute("aria-controls", "secnav-bar");
-  toggle.setAttribute("aria-label", "Page navigation: Browse " + section +
-    (tocBtn ? ", On this page" : "") + (filtersBtn ? ", Filters" : ""));
+  toggle.setAttribute("aria-label", "Page navigation: Browse " + name +
+    (tocBtn ? ", On This Page" : "") + (filtersBtn ? ", Filters" : ""));
   if (foldLabel) {
     // The alternative the owner can switch on: a word beside the folded
     // compass. The accessible name stays the button's aria-label.
@@ -626,7 +629,7 @@
     nav.style.top = "";
     var short = phone.matches;
     mapBtn.setAttribute("aria-label", short && !foot.hasAttribute("data-short") ? shortName + ": " + section
-      : "Browse " + section + ", all " + total + " pages");
+      : "Browse " + name + ", all " + total + " pages");
     reserve();
     update();
     if (openPair) place(openPair);
@@ -848,7 +851,7 @@
       if (nowEl && nowEl.textContent !== now) {
         nowEl.textContent = now;
         // The accessible name follows the visible second line.
-        tocBtn.setAttribute("aria-label", "On this page: " + now);
+        tocBtn.setAttribute("aria-label", "On This Page: " + now);
       }
       chips.forEach(function (c, j) {
         if (j === at) c.setAttribute("aria-current", "location");

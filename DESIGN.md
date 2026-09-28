@@ -169,7 +169,7 @@ Material's base size is 20px up to 100em. It is 22px from 100em (1600px) and 24p
 | Breakpoint | What changes | Where |
 |---|---|---|
 | `max-width: 30em` | Small phones: compact widgets | extra.css |
-| `max-width: 37.4375em` | The corner control's buttons sit side by side with short labels, "Browse" and "This page", and no chevrons; below 22.4375em (360px) they also drop their round icons | layout-nav.css, layout-nav.js |
+| `max-width: 37.4375em` | The corner control's buttons sit side by side with short labels, "Browse" and "This Page", and no chevrons; below 22.4375em (360px) they also drop their round icons | layout-nav.css, layout-nav.js |
 | `max-width: 44.9375em` / `min-width: 45em` | Phone versus tablet. Registered wide tables stack into "Label: value" rows; section-chip arrows go; two-up card grids | layout-news.css, layout.css, layout-hubs.css, layout-home.css, layout-nav.css |
 | `max-width: 59.9375em` / `min-width: 60em` | Multi-column layouts start: This Week's three feed panels, digest rows, hub and landing grids, the sticky jump-chip row, the News Archive's three columns | layout-news.css and most layout-*.css |
 | `max-width: 68.7344em` / `min-width: 68.75em` | The reading grid (two tracks) starts; below it reading pages are one column | layout-width.css, layout-width.js |
@@ -216,7 +216,7 @@ Every inner page ends with a foot written by layout_nav `_foot`:
 
 ### 6.5 The corner control (docs/javascripts/layout-nav.js, layout-nav.css)
 
-- **What it holds.** Bottom left, on every page with content (landings included; not the 404 page): "Browse <section>" and "On this page", plus any Filters, Next or Copy prompt that is out of view.
+- **What it holds.** Bottom left, on every page with content (landings included; not the 404 page): "Browse <section>" and "On This Page", plus any Filters, Next or Copy prompt that is out of view.
 - **Folding.**
   - It folds after 4 seconds (`foldSoon(4000)`) into a round compass button.
   - The fold is animated: the tray shrinks and fades into the compass over 300ms (`FOLD_MS`), using transform and opacity only.
@@ -324,7 +324,7 @@ Each prompt page has a side panel, "Fill In Your Details" (`_side`), with one fi
 
   Nothing a reader must read is under 11px (the figure rule).
 - **Title case** (Chicago style) applies to page titles, nav labels, section headings h2 to h4, card and row titles, prompt titles, category names, short labels, group names and audience tags ("Faculty", "Students", "Faculty & Students", "Everyone").
-- **Sentence case** applies to buttons, body text, descriptions, taglines, subtitles and figure titles.
+- **Sentence case** applies to buttons, body text, descriptions, taglines, subtitles and figure titles. One exception: the corner navigation control's labels are title case ("Browse the Site", "Browse Tools & Prompts", "On This Page", and "Browse" and "This Page" on phones), and so are its panels' titles (the owner, 2026-09-28). The homepage's foot carries both forms of the site's name: `data-name="the Site"` for the button, `data-section="the site"` for the sentences the control builds ("Browse every page in the site").
 - **Excluded from title case:** the verbatim policy page, pipeline-generated pages and includes, news headlines, and publishers' own names. The rules are in CLAUDE.md.
 - **Enforced by scripts/title_case.py.** It checks the final HTML (row and card link titles included; external and button-style links are left out by rule) and the data files, and fails the build on a violation.
   - `ALWAYS_LOWER` lists the small words.
@@ -357,7 +357,7 @@ Each prompt page has a side panel, "Fill In Your Details" (`_side`), with one fi
   |---|---|
   | Topic chips | the row stays hidden, and the full list shows |
   | The brief | the fold's label opens and closes it |
-  | Navigation | the foot's Browse and On this page disclosures |
+  | Navigation | the foot's Browse and On This Page disclosures |
   | Copy buttons | links to the text |
   | Figures | HTML |
   | Stacked tables | labelled in the HTML |
