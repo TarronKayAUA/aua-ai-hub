@@ -22,6 +22,8 @@ Contents:
 14. Known gaps left on purpose
 15. Current measures (the baseline)
 16. The design check suite
+17. Fragile spots
+18. Ideas not built
 
 ---
 
@@ -497,7 +499,7 @@ The news pages:
 
 The two digest rows come from the week round's measurement; the digests are not in the suite's page set. Before the week round, This Week was 10313px tall at 1920 with 39% blank.
 
-The same figures, per page, are in `scripts/design/baselines.json`. The suite compares against them (section 16).
+The same figures, per page, are in `scripts/design/baselines.json`. The suite compares against them (section 16). The tables above are the cloud measurement; baselines.json was re-recorded on the maintainer's Windows laptop the same day, where font rendering moves a page's blank share by about a point, so future runs compare like with like.
 
 ---
 
@@ -520,7 +522,34 @@ The checks live in `scripts/design/`, one module each:
 | `links` | Every internal link and `#fragment` in the built site resolves. |
 | `nav` | The foot's Browse disclosure works with and without JavaScript, and every sitemap page is reachable by keyboard with JavaScript off. |
 | `news` | This Week and a digest: jump chips, Topic chips (every chip, both tiers, back to All), every "Show the other N", the brief's fold (open, Hide, focus), Listen with `preload="none"`, feed chips marking their own panel, rows aligned in multi-column lists (w24 onwards and the feed pages), and the no-JavaScript reading. |
-| `measure` | Blank share and characters per line per page at 1920 and 1440, compared with `scripts/design/baselines.json`. |
+| `measure` | Blank share and characters per line per page at 1920 and 1440, compared with `scripts/design/baselines.json`. A page fails if its blank share rises more than 5 points. The news pages (`news/`) are the exception: the pipeline rewrites them several times a day, so their blank share is reported, not failed, while their line length, headings and sideways scroll are still checked. |
 | `gaps` | An optional report of every blank region, largest first, with where it is. Not a pass/fail check. |
 
 It needs Python 3.11+ with `playwright` installed and Chromium available (`python -m playwright install chromium` once). On the owner's laptop that is the system Python 3.13, as for figure_sheet.py; the site build itself uses mkdocs from the repo's `.venv` when it exists. See the module docstring of scripts/design_check.py for options (one check, one page, keeping the build, refreshing the baselines).
+
+---
+
+## 17. Fragile spots
+
+Places where a future change can break something, loudly or quietly (from the cloud rounds' handoff, 2026-09-27):
+
+- **layout_week.py depends on the pipeline's markup.** It reads the brief as `render_brief_html` in scripts/aggregate.py writes it (`<details class="note section-brief-more">`), the digests' section titles ("Conference calendar updates", "New opportunities"), the section ids (`videos`, `podcasts`, `also-this-week`, `the-week-in-brief`) and the "Show the other N videos" wording. If aggregate.py changes any of them the build fails loudly (`_check_brief`, `_check_arrange`, or "a brief could not be read"); update the regexes at the top of layout_week.py. A new digest section with an unknown title is not an error: it is left unwrapped, full width.
+- **`_TAIL` in layout_week.py** splits off the page ending by the classes `page-end` and `page-reviewed`, which layout_frame writes. Renaming them puts the foot back inside the last news section.
+- **The Color key's placement** (layout_nav `_color_page`) looks for a `div.kind-group` directly around a `section.kind-block`; layout_week relies on it for the news panels. A wrapper added between them moves the key.
+- **The last-row rule on grid lists** is hidden by `clip-path: inset(0 0 1px 0)` on the list (layout-news.css), which works because each card's rule is its bottom border at the list's bottom edge. Padding on the list, or a card with a bottom margin, brings the rule back.
+- **The merged Topic tier** (`.is-merged`) restyles Material's `details.abstract`, the site-wide "Show the N ..." row style in layout.css. A change to that shared style needs a look at This Week with a topic chosen.
+- **`scroll-margin-top: 4.6rem`** on the feed panels' headings is tuned to the sticky jump-chip row's height. If the row grows (a sixth chip wrapping it to two lines), recheck with the news check, which asserts the panel clears the row.
+- **The corner control's real-movement guard** (section 6.5) must stay: without it, folding under a resting pointer reopens the control, and Escape then loops.
+- **design_check.py reads three build lines:** layout_width's "blocks read/written" and "left as they were", and title_case's total. If their print format changes, the build step reports a missing line as a failure; update the regexes in `build_site`.
+- **Two blank-space measures disagree by design.** `measure` (the baseline) counts an outlined panel as used; `gaps` counts the inside of an outline as blank. Use `measure` for regressions and `gaps` for finding places.
+- **News audio is built in CI only**, so a local build may have no `news-*` or `digest-*` MP3s; the news check then skips its Listen steps and says so. That is expected.
+
+## 18. Ideas not built
+
+Candidates, none promised:
+
+- **"Also this week" as a grid of topic groups** (each a small panel, three across), which would bring the last CSS-columns list into line with section 4.2, at the cost of uneven group heights.
+- **The Tool Directory's category rows in two columns from 76em.** Left because opening a category would move its neighbour, and because of the chooser's filters and Open All; a version where an open category spans both columns (`grid-column: 1 / -1`) would avoid the jump. Untested.
+- **Door pages' card text** runs to 114 characters a line at 1920. A max-width on the card body, or three cards across where there are two, would bring it near the measure.
+- **figure_sheet.py as a check in the suite.** Kept separate because it needs Pillow and writes contact sheets.
+- **A "new page" scaffold command** (markdown with front matter, the nav line, a section_map entry). Not built, because where a page goes in the nav is a judgement call.

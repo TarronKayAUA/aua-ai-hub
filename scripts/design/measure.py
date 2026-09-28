@@ -53,6 +53,7 @@ measure --update-baselines` and commit baselines.json with the change.
 from __future__ import annotations
 
 import json
+import re
 import statistics
 from datetime import date
 from pathlib import Path
@@ -62,6 +63,12 @@ from .common import BASE
 BASELINES = Path(__file__).with_name("baselines.json")
 VIEWS = [(1920, 1080, "dark"), (1440, 900, "light")]
 BLANK_TOLERANCE = 0.05
+# Pages the news pipeline rewrites several times a day (docs/news/**): their blank share follows
+# the day's items and the comments widget, not the layout, so it is reported against the
+# baseline and never failed (found on the first laptop run, 2026-09-27: news/clinical-practice
+# read 37% against a cloud baseline of 31% with its layout intact). Their line length, headings,
+# sidebars and sideways scroll are still checked, and the news check covers their layout.
+VARIES = re.compile(r"news/")
 CPL_MAX = 95
 READING = ("task", "lesson", "reference")
 
@@ -368,8 +375,11 @@ def run(env, report, update=False, focus=False):
             cpl = (v["cpl"] or {}).get("max") or 0
             if b is not None:
                 was = b[w]["blank"]
-                report.check(v["blank_mean"] <= was + BLANK_TOLERANCE,
-                             f"{name} {w}: blank {v['blank_mean']:.0%} (baseline {was:.0%})")
+                said = f"{name} {w}: blank {v['blank_mean']:.0%} (baseline {was:.0%})"
+                if VARIES.match(path):
+                    report.note(said + ", a news page: reported, not checked")
+                else:
+                    report.check(v["blank_mean"] <= was + BLANK_TOLERANCE, said)
             if r["type"] in READING:
                 report.check(cpl <= CPL_MAX, f"{name} {w}: longest line {cpl} characters (limit {CPL_MAX})")
             # A page whose layout reads out of order by the script's rule on

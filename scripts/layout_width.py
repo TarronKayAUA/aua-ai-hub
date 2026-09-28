@@ -69,7 +69,7 @@ TILE_MAX = 2200          # a section this light can take half the width
 PAIR_RATIO, PAIR_SLACK = 1.5, 350   # tiles pair when heavier <= ratio * lighter + slack
 LONE_RATIO = 3.0         # a one-paragraph section pairs more freely than that
 CHUNK = 2400             # one piece of a spread: both columns fit a screen at 1440
-LIFT_MAX = 1400          # a first section this light can sit beside a bare head
+LIFT_MAX = 1400          # a first section this light can sit beside a head with a meta line
 STEP_ITEMS, STEP_MEAN = 3, 200      # a numbered list of procedures becomes step cards
 
 _S = {"pages": 0, "wrapped": 0, "left": [], "kinds": {}, "shapes": {}, "heads": {},
