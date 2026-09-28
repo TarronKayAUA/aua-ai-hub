@@ -1,7 +1,6 @@
 {
  "about": "Design check baseline (DESIGN.md section 15). Refresh after an approved layout change: python scripts/design_check.py --only measure --update-baselines",
  "updated": "2026-09-27",
- "built_from": "5096938's site (the week round, live), re-measured on the maintainer's laptop (Windows 11, Playwright Chromium, Inter from Google Fonts) after the cloud measure",
  "by_type": {
   "door": {
    "pages": 7,
@@ -13,7 +12,7 @@
   "reference": {
    "pages": 31,
    "blank_1920": 0.173,
-   "blank_1440": 0.191,
+   "blank_1440": 0.188,
    "cpl_median": 78,
    "cpl_max": 92
   },
@@ -40,8 +39,8 @@
   },
   "all": {
    "pages": 95,
-   "blank_1920": 0.202,
-   "blank_1440": 0.209,
+   "blank_1920": 0.201,
+   "blank_1440": 0.208,
    "cpl_median": 79.0,
    "cpl_max": 212
   }
@@ -316,17 +315,17 @@
   "examples/lecture-outline/": {
    "type": "reference",
    "1920": {
-    "blank": 0.283,
+    "blank": 0.269,
     "worst": 0.474,
-    "height": 6917,
+    "height": 7700,
     "inversions": 0,
     "cpl_median": 78.0,
     "cpl_max": 84
    },
    "1440": {
-    "blank": 0.358,
-    "worst": 0.512,
-    "height": 7018,
+    "blank": 0.29,
+    "worst": 0.465,
+    "height": 6966,
     "inversions": 0,
     "cpl_median": 78.0,
     "cpl_max": 84
