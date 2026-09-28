@@ -4,8 +4,8 @@
  "by_type": {
   "door": {
    "pages": 7,
-   "blank_1920": 0.173,
-   "blank_1440": 0.158,
+   "blank_1920": 0.17,
+   "blank_1440": 0.157,
    "cpl_median": 96.75,
    "cpl_max": 114
   },
@@ -1531,20 +1531,20 @@
   "students/": {
    "type": "door",
    "1920": {
-    "blank": 0.142,
-    "worst": 0.398,
-    "height": 4922,
+    "blank": 0.123,
+    "worst": 0.395,
+    "height": 5039,
     "inversions": 0,
     "cpl_median": 78.0,
-    "cpl_max": 105
+    "cpl_max": 102
    },
    "1440": {
-    "blank": 0.12,
-    "worst": 0.38,
-    "height": 4509,
+    "blank": 0.114,
+    "worst": 0.313,
+    "height": 4589,
     "inversions": 0,
     "cpl_median": 78.0,
-    "cpl_max": 105
+    "cpl_max": 87
    }
   },
   "tools-and-prompts/": {
