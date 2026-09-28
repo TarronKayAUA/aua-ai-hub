@@ -418,7 +418,7 @@ Never add words to fill space. Never invent content, and never hardcode numbers.
 
 ### A new art piece
 
-1. Confirm the gap is real and that nothing functional fits (section 11); get the owner's yes for the place. The owner wants the pieces seen, not buried: page heads are the most visible places (an inventory of every page's blank regions, with their depth down the page, found them).
+1. Confirm the gap is real and that nothing functional fits (section 11); get the owner's yes for the place. The owner wants the pieces seen, not buried: page heads are the most visible places. `python scripts/design_check.py --only gaps` lists every blank region with its size, the heading above it and its `y` position (how far down the page it starts); prefer places within the first screen.
 2. Add the place to data/art_slots.yaml: the page, the h2 section's id (or `_head` on a landing), the piece's key, the page's kind (none on a hub) and, for a wide slot, its `aspect`.
 3. Draw the piece following section 19 (composition, the finish, the pass, the review loop), in docs/assets/art/island-vignettes.js: a function taking `(W, H, v, g)` and a `PIECES` entry with its world (`coast` or `inland`), the bearing it faces, its ground and any hills. Work from photographs; keep it a lit silhouette in the `--isl-*` palette with materials as `--isl-v*` tokens in both schemes; one accent in `--k`; lights as `.isl-vwin` with `--i` so they come on in turn, and one element marked `.isl-vlast`.
 4. A real place must be recognisable at a glance (the owner, of Shirley Heights: "a very photographed and iconic view that is known worldwide"). Trace its landforms from a reference photograph (x as a fraction of the width, y mapped from the photo's horizon into the card), face the sky to the place's true bearing (it decides where the afterglow falls, and a local will notice), and exaggerate land above the horizon when a wide card flattens it (Shirley Heights: 1.7 times, as Island Night draws its islands 2.6 times their height). Put the render beside the photograph and compare them before showing the owner. Details that do not read when stylised (the lookout's cacti) are better left out.
@@ -578,7 +578,7 @@ The owner's bar for every picture on the site is the scenery of his media tracke
 
 ### 19.1 Before drawing
 
-- **Place and subject first** (section 11 and the checklist in section 12): the place must be approved, visible (page heads are best), and the subject must be about what the page is (Sailing Week for news and events, steps for step-by-step guides). A page type gets art on all its pages or none.
+- **Place and subject first** (section 11 and the checklist in section 12): the place must be approved, visible (page heads are best; `design_check.py --only gaps` finds candidates with their depth), and the subject must be about what the page is (Sailing Week for news and events, steps for step-by-step guides). A page type gets art on all its pages or none.
 - **Photographs for anything real.** The owner's own photographs are the best references (he knows the view; Shirley Heights was only right once drawn from his). Keep every reference in the art's source folder, `island-hub-version/references/`, and add it to that folder's README with whose it is. Web photographs are for study only and are never published.
 - **The palette is Island Night's** (the `--isl-*` tokens in layout-art.css), never a new one; the page's kind hue appears once, small (a lamp, a pennant, a spinnaker).
 
