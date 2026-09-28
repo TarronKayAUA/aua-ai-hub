@@ -666,7 +666,14 @@
     if (!B) return '';
     const [bx0, by0, bx1, by1] = B.box, span = clamp(W * 0.1, 56, 100), k = span / (bx1 - bx0);
     const x = W * 0.64, y = v.y0 * 0.34;
-    return `<g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g>`;
+    let yachts = '';
+    for (const [fx, fy, s0] of [[0.2, 0.09, 1], [0.34, 0.16, 1.3], [0.12, 0.3, 1.7], [0.47, 0.06, 0.8]]) {
+      const bx = W * fx, by = v.y0 + (H - v.y0) * fy, L = Math.max(8, W * 0.014 * s0), mh = L * 1.3;
+      yachts += `<path class="isl-vhull" d="M${F(bx - L / 2)} ${F(by - L * 0.1)}H${F(bx + L / 2)}L${F(bx + L * 0.36)} ${F(by)}H${F(bx - L * 0.4)}Z"/>`
+        + `<path class="isl-vsail" d="M${F(bx)} ${F(by - L * 0.12)}V${F(by - mh)}L${F(bx + L * 0.42)} ${F(by - L * 0.14)}ZM${F(bx - L * 0.04)} ${F(by - mh * 0.85)}L${F(bx - L * 0.45)} ${F(by - L * 0.14)}H${F(bx - L * 0.04)}Z"/>`;
+    }
+    return `<g class="isl-ydet">${yachts}</g>`
+      + `<g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g>`;
   }
 
   /* THE FINISH (owner, 2026-09-28: the art should reach the quality of his media tracker's scenes).
@@ -838,6 +845,7 @@
     const crest = [[0.28, 1.03], [0.31, 0.93], [0.35, 0.84], [0.4, 0.74], [0.46, 0.64], [0.52, 0.55], [0.58, 0.47], [0.64, 0.4],
       [0.7, 0.34], [0.76, 0.295], [0.82, 0.27], [0.88, 0.262], [0.94, 0.275], [1.02, 0.3]];
     s += `<path class="f-far isl-land" d="${poly(P([...crest, [1.02, 1.03]]))}${scrub(P(crest.slice(1, 13)), 8, 1, 2.8)}"/>`;
+    s += `<g class="isl-ydet">${makeKit(W, H).trees(P([...crest, [1.02, 1.03]]), 80, Y(0.012), Y(0.032), 83)}</g>`;
     s += `<path class="s-rim" d="M${P(crest.slice(1, 14)).map(([x, y]) => `${F(x)} ${F(y + 0.5)}`).join('L')}" stroke-width="1.2" stroke-opacity=".45"/>`;
     // 3. The lookout at the summit: a two-storey stone guardhouse, part ruined, like those on the
     //    heights above English Harbour: three arches below and two windows above, all lit from
@@ -1003,6 +1011,7 @@
       .map(([x, y]) => [X(x), Y(y)]);
     s += mist(X(0.38), y0 + Y(0.12), X(0.22), Y(0.1), 0.45);
     s += `<path class="f-far isl-land" d="${polyD([...crest, [X(1.02), H + 2]])}"/>`;
+    s += `<g class="isl-ydet">${makeKit(W, H).trees([...crest, [X(1.02), H + 2]], 50, Y(0.012), Y(0.03), 89)}</g>`;
     s += `<path class="s-rim" d="${lineD(crest.slice(1, 7).map(([x, y]) => [x, y + 0.5]))}" stroke-width="1.2" stroke-opacity=".45"/>`;
     s += `<path class="isl-vtrack" d="M${F(X(0.62))} ${F(H + 2)}C${F(X(0.66))} ${F(Y(0.85))} ${F(X(0.64))} ${F(Y(0.72))} ${F(X(0.7))} ${F(Y(0.6))}L${F(X(0.725))} ${F(Y(0.585))}C${F(X(0.68))} ${F(Y(0.72))} ${F(X(0.7))} ${F(Y(0.86))} ${F(X(0.665))} ${F(H + 2)}Z"/>`;
     // scrub on the crest's edge against the water, a few shrubs on the slope, and a bank of them along
