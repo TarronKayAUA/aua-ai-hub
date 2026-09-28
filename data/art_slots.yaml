@@ -1,0 +1,24 @@
+# Island Night vignettes: the places on reading pages where a small scene fills
+# a space nothing useful fits (owner direction, 2026-09-27). Owner-owned: a
+# place is listed only once the owner has approved it. scripts/layout_art.py
+# reads this file, puts an empty, decorative <figure> at the end of the named
+# section, and fails the build if a page or section here no longer exists.
+# docs/assets/art/island-vignettes.js draws each scene from Island Night's own
+# data and palette (docs/assets/art/island-core.js, the --isl-* tokens in
+# docs/stylesheets/layout-art.css), only where the space exists (from 68.75em).
+#
+# The order of preference for any empty space stays: rearrange what is there,
+# then something functional from the data, and art only where neither fits.
+#
+# Each entry:
+#   page     the page's source path under docs/
+#   section  the id of the h2 whose section the scene sits beside
+#   piece    the subject drawn (a key in island-vignettes.js)
+#   kind     the page's kind (data/section_map.yaml `kinds:`), whose hue is
+#            the scene's one small accent
+
+slots:
+  - page: examples/lecture-outline.md
+    section: what-to-check
+    piece: lecture-hall
+    kind: guide

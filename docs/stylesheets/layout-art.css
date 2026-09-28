@@ -247,3 +247,53 @@
     display: none !important;
   }
 }
+
+/* --- Vignettes (art round, 2026-09-27) ----------------------------------------------
+   Small scenes from the same view in owner-approved empty spaces (data/art_slots.yaml, placed by
+   scripts/layout_art.py, drawn by docs/assets/art/island-vignettes.js). The figure is the object
+   layout_width.py sets beside the section's last block; it exists only where that track does
+   (from 68.75em), and the card inside it stays in view while the text beside it scrolls. */
+.md-typeset figure.isl-vignette {
+  display: none;
+  margin: 0;
+}
+@media screen and (min-width: 68.75em) {
+  .md-typeset figure.isl-vignette {
+    display: block;
+    width: 100%;
+  }
+}
+/* A short window sets every leaf as one column (layout-width.css); a picture under the text would
+   then be a block to scroll past, so it is not shown there. */
+@media screen and (min-width: 68.75em) and (max-height: 44em) {
+  .md-typeset figure.isl-vignette {
+    display: none;
+  }
+}
+/* The leaf's side is already sticky beside taller text (layout-width.css), so the card only clips. */
+.isl-vig {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  box-shadow: inset 0 0 0 1px var(--nav-line, rgba(16, 48, 77, 0.14));
+}
+/* The accent: the page's kind hue (--k from [data-kind]); the paler line in the light scheme reads
+   as a lamp against dusk, the text-strength hue in the dark scheme reads as one against night. */
+.isl .st-k { stop-color: var(--k-line, var(--isl-rim)); }
+.isl .isl-vlamp { fill: var(--k-line, var(--isl-pulse)); }
+[data-md-color-scheme="slate"] .isl .st-k { stop-color: var(--k, var(--isl-rim)); }
+[data-md-color-scheme="slate"] .isl .isl-vlamp { fill: var(--k, var(--isl-pulse)); }
+.isl .isl-vmul { stroke: var(--isl-near); fill: none; stroke-opacity: 0.85; }
+/* One pass: the card fades in, then the lit room's windows and the door light in turn. Opacity
+   only; nothing under reduced motion (the script never starts the pass then). */
+.isl-vig.isl-vrun { animation: isl-vfade 0.7s ease-out both; }
+.isl-vig.isl-vrun .isl-vwin { animation: isl-vlight 0.9s ease-out both; animation-delay: calc(0.8s + var(--i, 0) * 0.22s); }
+.isl-vig.isl-vrun .isl-vglow,
+.isl-vig.isl-vrun .isl-varc,
+.isl-vig.isl-vrun .isl-vspill { animation: isl-vlight 1.2s ease-out 1.2s both; }
+@keyframes isl-vfade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes isl-vlight { from { opacity: 0.12; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .isl-vig.isl-vrun,
+  .isl-vig.isl-vrun * { animation: none !important; }
+}

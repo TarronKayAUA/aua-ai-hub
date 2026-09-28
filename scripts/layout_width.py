@@ -485,6 +485,11 @@ class Plan:
                 # object is the taller, the prose that follows it wraps in
                 # under its introduction (the object spans both rows).
                 lead, beside = gs[:-1], gs[-1:]
+                if _vignette(nxt[1]):
+                    # An Island Night vignette (art round, 2026-09-27; scripts/layout_art.py)
+                    # introduces nothing, so the whole run sits beside it: no paragraph is
+                    # left alone in a half-empty row above.
+                    lead, beside = [], gs
                 for piece in (_chunks(lead) if lead else []):
                     rows.append(("spread", [("flow", piece)]))
                 under: list = []
@@ -537,6 +542,12 @@ class Plan:
 
 
 NOTE_FLOW_MIN = CHUNK        # a note this heavy runs in two columns inside its box
+
+
+def _vignette(groups: list[list[Block]]) -> bool:
+    """True when the object groups are one Island Night vignette (layout_art.py)."""
+    blocks = [b for g in groups for b in g]
+    return len(blocks) == 1 and 'class="isl-vignette"' in blocks[0].html
 
 
 def _note_body(b: Block):

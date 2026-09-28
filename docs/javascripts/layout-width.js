@@ -43,9 +43,11 @@
     var flows = Array.prototype.filter.call(page.querySelectorAll(".w-flow"), function (f) {
       return f.getBoundingClientRect().height > room;
     });
+    // A leaf whose side is only a vignette (art round, 2026-09-27) never stacks: the picture has
+    // nothing to read, so the text beside it can run past a screen while the picture stays in view.
     var sides = Array.prototype.filter.call(page.querySelectorAll(".w-leaf, .w-pair"), function (s) {
       return s.firstElementChild && s.firstElementChild.getBoundingClientRect().height > room &&
-        s.children.length > 1;
+        s.children.length > 1 && !s.querySelector(":scope > .w-leaf__side > figure.isl-vignette:only-child");
     });
     var rows = pairs().filter(function (p) {
       return p[0].getBoundingClientRect().height > room;

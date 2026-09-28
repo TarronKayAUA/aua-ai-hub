@@ -175,6 +175,9 @@ hooks:
   # Week round, designer C (2026-09-27): This Week and the weekly digests in
   # three columns, the brief's continuation folded under its lede, at render time.
   - scripts/layout_week.py
+  # Art round (2026-09-27): Island Night vignettes in the owner-approved empty
+  # spaces of data/art_slots.yaml, placed before layout_width arranges the page.
+  - scripts/layout_art.py
   - scripts/layout_learn.py
   # Navigation synthesis (2026-09-26): the section model, page feet, the
   # Tools & Prompts landing, colored link rows and the color key. Last, so
