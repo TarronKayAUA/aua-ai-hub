@@ -13,12 +13,25 @@
   every page until dismissed there too (owner-reported 2026-07-09).
 #}
 {#
-  Retired 2026-09-25 (owner decision 7 of the navigation redesign): the
-  institution-wide rollout it announced finished on 2026-07-27, and the
-  home page's own button keeps the beginner route. Leave the block empty;
-  filling it again brings the bar back on every page.
+  The launch bar was retired 2026-09-25 (owner decision 7 of the navigation
+  redesign): the institution-wide rollout it announced finished on
+  2026-07-27.
+
+  The redesign bar (owner, 2026-09-28: a banner for first visits that shows
+  for two weeks). It appears only while mkdocs.yml `extra: announce` is set
+  and the build date is on or before its `until` date; the news refresh
+  rebuilds the site several times a day, so it retires itself within hours
+  of that date. Dismissible like the launch bar, and the same rule holds:
+  keep its content identical on every page (config.site_url for links),
+  because the dismissal is keyed to a hash of it. The whitespace control
+  keeps the block truly empty when it is off, so no bar is drawn.
 #}
-{% block announce %}{% endblock %}
+{% block announce -%}
+  {%- set a = config.extra.announce -%}
+  {%- if a and a.until and build_date_utc.strftime("%Y-%m-%d") <= a.until -%}
+    {{ a.text }} <a href="{{ config.site_url }}{{ a.link }}"><strong>{{ a.link_text }}</strong></a>
+  {%- endif -%}
+{%- endblock %}
 
 {#
   Island Night (2026-09-26): the mount for the scenery in the gutters beside

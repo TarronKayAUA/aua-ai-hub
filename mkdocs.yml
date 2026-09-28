@@ -27,6 +27,17 @@ extra:
   # docs/javascripts/layout-nav.js): false shows the compass alone; true adds the
   # word "Navigate" beside it, as a small pill. Owner's choice (width round, 2026-09-27).
   nav_control_label: true
+  # The redesign banner (owner, 2026-09-28: a banner for first visits that shows for
+  # two weeks). overrides/main.html draws it on every page until a visitor closes it,
+  # and only while the build date is on or before `until`; the news refresh rebuilds
+  # the site several times a day, so it retires itself within hours of that date.
+  # `link` is the address-bar path under the site root (trailing slash), as for the
+  # footer links. Delete this block once `until` has passed.
+  announce:
+    until: "2026-10-12"
+    text: "The AUA AI Hub has a new design, tested against everyday tasks."
+    link: "announcements/2026-09-28-redesign/"
+    link_text: "What changed and why"
   # Footer links, rendered by overrides/partials/copyright.html and NOT by
   # the copyright string above. They used to be raw HTML inside that string,
   # but MkDocs inserts `copyright` verbatim and never rewrites a relative
@@ -317,6 +328,7 @@ nav:
       - Project Write-Ups:
           - worked-examples/index.md
           - When a Check Stops Checking: worked-examples/this-site.md
+          - When Every Design Passes: worked-examples/redesign.md
           - I Fixed Software I Cannot Read: worked-examples/sharex-hdr.md
           - My Favorite Game Was Not a Game: worked-examples/recommender.md
           - The Neanderthal Gene That Explained Nothing: worked-examples/genome.md
