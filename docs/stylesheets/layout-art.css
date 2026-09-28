@@ -97,14 +97,15 @@
   --isl-sky0: #3b7db6; --isl-sky1: #5c9bcb; --isl-sky2: #8fbcdc; --isl-sky3: #bad6e8; --isl-hz: #dde8ee;
   --isl-veg-d: #2d4a2f; --isl-veg-l: #86a35c; --isl-veg-t: #9a8660; --isl-vhouse: #f4f2ec; --isl-vroofg: #8a969c;
   --isl-vtree: #4b773a; --isl-vtree2: #6b8f3d; --isl-vtree3: #37602f; --isl-vtree-l: #9cbb5a; --isl-vtree-d: #1d3620; --isl-vshadow: #1d3620;
-  --isl-vrock: #a47a5b; --isl-vrock-s: #6c4f3e; --isl-vshallow: #a9e2d8; --isl-vroad: #dccfae;
+  --isl-vrock: #a47a5b; --isl-vrock-s: #6c4f3e; --isl-vshallow: #b6ece0; --isl-vroad: #dccfae;
+  --isl-vdry: #b59c6b; --isl-vrockshore: #d6bd93;
   --isl-g1: rgba(255, 255, 255, 0); --isl-g2: rgba(255, 255, 255, 0); --isl-g3: rgba(255, 255, 255, 0);
   --isl-sea0: #6fa3b8; --isl-sea1: #2f7ca1; --isl-sea2: #1e5f86; --isl-haze: #e6eff3;
   --isl-isl: #9fb5b8; --isl-far: #6a8a68; --isl-near: #45663d;
   --isl-rip: #eef7fa; --isl-rip-a: 0.35; --isl-hzline: rgba(255, 255, 255, 0.45);
   --isl-rim: #f3efdf; --isl-bird: #2a3a44; --isl-pulse: #33495a;
   --isl-cloud: #ffffff; --isl-cloud-s: #c3d0dc;
-  --isl-vbay: #63aeb1; --isl-vsand: #f1e4c2; --isl-vsand-a: 0.9; --isl-vsurf: #ffffff; --isl-vsurf-a: 0.85;
+  --isl-vbay: #45bcc0; --isl-vsand: #f1e4c2; --isl-vsand-a: 0.9; --isl-vsurf: #ffffff; --isl-vsurf-a: 0.85;
   --isl-vwall: #f5f7f9; --isl-vrail: rgba(52, 62, 72, 0.6);
   --isl-vstone: #cdbfa3; --isl-vstrata: #a99c80; --isl-vtown: #d9d2c3; --isl-vdark: #3a4d5c;
 }
@@ -143,6 +144,14 @@
 .isl .isl-vrockline { stroke: var(--isl-vrock-s, #6f5241); fill: none; stroke-linecap: round; }
 .isl .isl-vshallow { stroke: var(--isl-vshallow, #a6e0d6); stroke-opacity: 0.75; fill: none; stroke-linejoin: round; }
 .isl .isl-vroad { stroke: var(--isl-vroad, #d9ccab); fill: none; stroke-linecap: round; }
+.isl .isl-vdry { fill: var(--isl-vdry, #b59c6b); fill-opacity: 0.55; }
+.isl .isl-vrockshore { stroke: var(--isl-vrockshore, #d4b98f); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.isl .isl-vfort { stroke: var(--isl-vstone); fill: none; stroke-linecap: round; }
+/* Shapes that are dark land at Dawn, Dusk and Night and show their daylight colors by Day. */
+.isl .isl-bhouse, .isl .isl-broof, .isl .isl-palm { fill: var(--isl-near); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-bhouse { fill: var(--isl-vhouse); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-broof { fill: var(--isl-vroofg); }
+[data-md-color-scheme="default"] .isl[data-sky="day"] .isl-palm { fill: var(--isl-vtree3); }
 
 /* --- Paint ------------------------------------------------------------------ */
 .isl .st-sky0 { stop-color: var(--isl-sky0); }

@@ -388,6 +388,25 @@
       + `${trees(head.slice(4, 25), 150, Y(0.006), Y(0.012), 37)}`
       + `<path class="isl-vhouse" d="${dock}"/><path class="isl-vroof" d="${dockRoofs}"/></g>`;
     s += `<g class="isl-adet"><path class="isl-vgildline" d="${line(head.slice(2, 17))}" stroke-width="2" filter="url(#islvsoft)"/><path class="isl-vgildline" d="${line(head.slice(2, 17))}" stroke-width=".7"/></g>`;
+    // From the owner's day photographs (2026-09-28): by Day, dry grass on the headland's lower slopes and
+    // a pale rocky strip along its shore, and Fort Berkeley's stone walls along the spur.
+    const dry = [P([[0.2, 0.37], [0.24, 0.345], [0.3, 0.33], [0.36, 0.33], [0.4, 0.36], [0.36, 0.395], [0.3, 0.4], [0.24, 0.39]]),
+      P([[0.42, 0.37], [0.47, 0.36], [0.53, 0.37], [0.56, 0.4], [0.5, 0.415], [0.44, 0.41]])];
+    s += `<g class="isl-ydet"><path class="isl-vdry" d="${dry.map(poly).join('')}" filter="url(#islvbayf)"/>`
+      + `<path class="isl-vrockshore" d="${line(head.slice(33))}" stroke-width="${F(Math.max(1.4, Y(0.007)))}"/>`
+      + `<path class="isl-vfort" d="${line(P([[0.512, 0.446], [0.506, 0.462], [0.498, 0.478], [0.49, 0.494]]))}M${F(X(0.484))} ${F(Yp(0.5))}h${F(X(0.02))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/></g>`;
+    // The house on the bluff, a third of the way along the headland (the owner: "there is actually a house on
+    // that bluff which could be lit up at night"): a dark shape with a lit window at Dawn, Dusk and Night,
+    // white walls and a gray roof by Day.
+    const bx = X(0.286), crestAt = (x) => {
+      const c = head.slice(0, 18);
+      for (let k = 0; k < c.length - 1; k++) if (x >= c[k][0] && x <= c[k + 1][0]) return c[k][1] + (c[k + 1][1] - c[k][1]) * (x - c[k][0]) / (c[k + 1][0] - c[k][0]);
+      return c[0][1];
+    };
+    const by = crestAt(bx) + Y(0.012), bw = X(0.014), bh = Y(0.022);
+    s += `<path class="isl-bhouse" d="M${F(bx - bw / 2)} ${F(by)}h${F(bw)}v${F(-bh)}h${F(-bw)}Z"/>`
+      + `<path class="isl-broof" d="M${F(bx - bw * 0.62)} ${F(by - bh + 0.4)}L${F(bx - bw * 0.1)} ${F(by - bh - bw * 0.3)}H${F(bx + bw * 0.12)}L${F(bx + bw * 0.62)} ${F(by - bh + 0.4)}Z"/>`
+      + `<g class="isl-vwin" style="--i:1">${halo(bx, by - bh * 0.5, Y(0.05))}<path class="f-pulse" d="M${F(bx - bw * 0.3)} ${F(by - bh * 0.3)}h${F(bw * 0.22)}v${F(-bh * 0.38)}h${F(-bw * 0.22)}ZM${F(bx + bw * 0.08)} ${F(by - bh * 0.3)}h${F(bw * 0.22)}v${F(-bh * 0.38)}h${F(-bw * 0.22)}Z"/></g>`;
     const shore = head.slice(18);
     s += `<path class="isl-vshore" d="${line(shore)}" stroke-width="1"/>`;
     s += `<path class="isl-vsurf" d="${line(P([[0.186, 0.366], [0.19, 0.38], [0.2, 0.388], [0.215, 0.39], [0.235, 0.396]]))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`;
@@ -415,6 +434,20 @@
     s += `<g class="isl-vlamps">${refl}</g>`;
     // 6. The lookout: the slope on the left, the rocks and scrub in front, organ-pipe cactus, a lantern.
     s += `<path class="f-near isl-land" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
+    // Galleon Beach's palms along the back of the sand (every version: silhouettes by night, green by Day),
+    // and by Day the larger buildings on the slope above it
+    let palms = '';
+    [[0.752, 0.56, 0.07], [0.765, 0.575, 0.06], [0.776, 0.598, 0.075], [0.781, 0.625, 0.065], [0.779, 0.648, 0.07]].forEach(([fx, fy, fh], k) => {
+      palms += palm(X(fx + 0.008), Yp(fy), Y(fh), 0.08 - k * 0.03, 301 + k);
+    });
+    s += `<path class="isl-palm" d="${palms}"/>`;
+    let big = '', bigRoofs = '';
+    for (const [fx, fy, fw] of [[0.8, 0.54, 0.03], [0.832, 0.505, 0.024], [0.87, 0.52, 0.02]]) {
+      const x = X(fx), y = Yp(fy), w = X(fw), h = Y(0.028);
+      big += `M${F(x)} ${F(y)}h${F(w)}v${F(-h)}h${F(-w)}Z`;
+      bigRoofs += `M${F(x - 1)} ${F(y - h + 0.4)}L${F(x + w * 0.2)} ${F(y - h - Y(0.012))}H${F(x + w * 0.8)}L${F(x + w + 1)} ${F(y - h + 0.4)}Z`;
+    }
+    s += `<g class="isl-ydet"><path class="isl-vhouse" d="${big}"/><path class="isl-vroofg" d="${bigRoofs}"/></g>`;
     // by Day, the lookout's own trees in front, the largest and brightest (the owner's photograph)
     s += `<g class="isl-ydet">${trees(slope, 120, Y(0.014), Y(0.045), 41)}</g>`;
     const lx = X(0.43), ly = Yp(0.772);
