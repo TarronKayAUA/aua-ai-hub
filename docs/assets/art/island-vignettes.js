@@ -1710,6 +1710,8 @@
       + '</pattern>';
   }
 
+  A.pieces = PIECES;   // read by review tools (which way each picture looks, how much sky it holds)
+
   function extraDefs() {
     return '<defs>'
       + vegPattern('islvegf', 53, 70, 0.45, 1.2, 0.24, 5) + vegPattern('islvegn', 131, 170, 0.7, 2.6, 0.32, 7)
@@ -1728,6 +1730,8 @@
       + '<linearGradient id="islvcloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-cloud" stop-opacity="1"/><stop offset=".55" class="st-cloud" stop-opacity="1"/><stop offset="1" class="st-cloud-s" stop-opacity="1"/></linearGradient>'
       + '<linearGradient id="islvgild" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-gild" stop-opacity=".6"/><stop offset=".55" class="st-gild" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvsun"><stop offset="0" stop-color="#fffdf0" stop-opacity=".95"/><stop offset=".1" stop-color="#fff8dc" stop-opacity=".6"/><stop offset=".4" stop-color="#ffffff" stop-opacity=".14"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>'
+      + '<radialGradient id="islvsundisc"><stop offset="0" stop-color="#fffbea"/><stop offset=".55" stop-color="#ffe29a"/><stop offset=".85" stop-color="#ffab52"/><stop offset="1" stop-color="#ff8a3d"/></radialGradient>'
+      + '<radialGradient id="islvsunlow"><stop offset="0" stop-color="#ffd08a" stop-opacity=".85"/><stop offset=".12" stop-color="#ffb066" stop-opacity=".45"/><stop offset=".45" stop-color="#ff9a5a" stop-opacity=".14"/><stop offset="1" stop-color="#ff9a5a" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvdawn"><stop offset="0" class="st-g1" stop-opacity=".9"/><stop offset=".45" class="st-g2" stop-opacity=".35"/><stop offset="1" class="st-g2" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvbulb"><stop offset="0" class="st-g1" stop-opacity=".5"/><stop offset=".5" class="st-g1" stop-opacity=".14"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '</defs>';
@@ -1781,6 +1785,18 @@
       d += `<path d="${c}" fill="url(#islvcloud)" opacity="${F(0.5 + t * 0.4)}"/>`;
     }
     return d;
+  }
+  // The Sun, drawn only where it truly is in view at a version's moment (owner, 2026-09-28: "if the sun
+  // would be visible ... please add them"): at the size the Moon is drawn, low and orange at the horizon,
+  // its lower edge cut by the horizon, a glow around it and its light laid on the water below. Land and
+  // buildings drawn after it cover it where they stand in front.
+  function sunDisc(v, m, W, y0, H, P) {
+    const [az, alt] = SKY[m].sun, x = v.x(az), y = v.y(alt), rr = 0.267 * 3 * (P.moonBig || 1) * v.ppd;
+    if (x < -rr || x > W + rr || y < -rr || y > y0 + rr) return '';
+    const r = rng(173);
+    return `<circle cx="${F(x)}" cy="${F(y)}" r="${F(rr * 9)}" fill="url(#islvsunlow)" clip-path="url(#islsky)"/>`
+      + `<circle cx="${F(x)}" cy="${F(y)}" r="${F(rr)}" fill="url(#islvsundisc)" clip-path="url(#islsky)"/>`
+      + dashes(streakList(x, y0, H, r, 0.1, 0.09), 's-vglow', 1.4, [0.14, 0.28, 0.5]);
   }
   function dawnDay(v, W, y0, H) {
     const p = v.ppd, sx = v.x(SKY.a.sun[0]), r = rng(97);
@@ -1848,11 +1864,12 @@
       + L.milkyWay(v, 'n', 'isl-n')
       + `<rect y="${F(y0 - 2.4 * ppd)}" width="${F(W)}" height="${F(2.4 * ppd)}" fill="url(#islhazeg)"/>`
       + L.glowSky(v, 'd', 'isl-d') + L.glowSky(v, 'n', 'isl-n')
-      + stars(v, 'd', sky.d.box, 'isl-d') + stars(v, 'n', sky.n.box, 'isl-n')
+      + stars(v, 'd', sky.d.box, 'isl-d isl-dstars') + stars(v, 'n', sky.n.box, 'isl-n')
       + gSky
       + sky.d.planets + sky.n.planets
       + sky.d.moon + sky.n.moon
       + dawnDay(v, W, y0, H)
+      + `<g class="isl-a">${sunDisc(v, 'a', W, y0, H, P)}</g><g class="isl-s">${sunDisc(v, 's', W, y0, H, P)}</g>`
       + (P.world === 'coast' ? islands(v, 'f-isl') : '')
       + `<rect y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`
       + L.glowSea(v, 'd', 'isl-d', reflH) + L.glowSea(v, 'n', 'isl-n', reflH)
@@ -1895,7 +1912,7 @@
   function pickSky() {
     try {
       const q = new URLSearchParams(location.search).get('isl-sky');
-      if (q === 'dawn' || q === 'day' || q === 'dusk') return q;
+      if (q === 'dawn' || q === 'day' || q === 'dusk' || q === 'sunset') return q;
     } catch (e) { /* no query: the clock decides */ }
     const h = new Date().getHours();
     return h >= 5 && h < 9 ? 'dawn' : h >= 9 && h < 17 ? 'day' : 'dusk';

@@ -73,7 +73,17 @@
    Night. Each version is one set of tokens shared by every piece: the sky's gradient, the sea, the
    land's three depths, the clouds, and the materials pieces draw with. Dawn keeps the lights on; by Day
    they are off, the warm halos and pools go (--isl-g1 clear) and windows show as glass. */
-.isl .isl-a, .isl .isl-y { display: none; }
+.isl .isl-a, .isl .isl-y, .isl .isl-s { display: none; }
+/* PREVIEW (?isl-sky=sunset): Dusk at the moment of sunset, the Sun on the horizon where the view shows it;
+   the sky brighter and warmer, and the first stars not yet out (Venus and the Moon stay). */
+[data-md-color-scheme="default"] .isl[data-sky="sunset"] .isl-s { display: inline; }
+[data-md-color-scheme="default"] .isl[data-sky="sunset"] .isl-dstars { display: none; }
+[data-md-color-scheme="default"] .isl[data-sky="sunset"] {
+  --isl-sky0: #22507f; --isl-sky1: #3f6e9e; --isl-sky2: #8a9fc0; --isl-sky3: #f0c190; --isl-hz: #ffc98a;
+  --isl-g1: #ffe0a8; --isl-g2: #f7a46e; --isl-g3: #b58aa6;
+  --isl-sea0: #b9a492; --isl-sea1: #3d6a8e; --isl-sea2: #1d4466; --isl-haze: #f2d8c0;
+  --isl-isl: #6d7fa0; --isl-far: #24466b; --isl-near: #14304f;
+}
 [data-md-color-scheme="default"] .isl[data-sky="dawn"] .isl-a,
 [data-md-color-scheme="default"] .isl[data-sky="day"] .isl-y { display: inline; }
 [data-md-color-scheme="default"] .isl:is([data-sky="dawn"], [data-sky="day"]) .isl-d { display: none; }
