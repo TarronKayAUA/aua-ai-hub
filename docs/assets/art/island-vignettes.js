@@ -252,11 +252,87 @@
     };
     const lights = [];          // [x, y, group]: 0 the dockyard, 1 the boats, 2 Falmouth, 3 the slopes
     let s = '';
+    // BY DAY (owner, 2026-09-28: "we need to render more features so the landscape doesn't look like green
+    // blobs"): what daylight shows and the other versions leave in shadow, drawn only for the Day version
+    // (isl-ydet): each hill's flank turned from the Sun in shade (at mid-morning the Sun is high, behind
+    // the lookout and to the right), tree crowns lit on their sunward side, larger and brighter nearer,
+    // the headland's rock, turquoise shallows along the shores, the dockyard's buildings and a road. At
+    // Dawn (isl-adet) the first light gilds the hilltops.
+    const inPoly = (x, y, pts) => {
+      let c = false;
+      for (let i = 0, j = pts.length - 1; i < pts.length; j = i++) {
+        const [xi, yi] = pts[i], [xj, yj] = pts[j];
+        if ((yi > y) !== (yj > y) && x < (xj - xi) * (y - yi) / (yj - yi) + xi) c = !c;
+      }
+      return c;
+    };
+    const circ = (x, y, rr) => `M${F(x - rr)} ${F(y)}a${F(rr)} ${F(rr)} 0 1 0 ${F(2 * rr)} 0a${F(rr)} ${F(rr)} 0 1 0 ${F(-2 * rr)} 0Z`;
+    const trees = (pts, n, s0, s1, seed) => {
+      const rr = rng(seed), xs = pts.map((q) => q[0]), ys = pts.map((q) => q[1]);
+      const xa = Math.min(...xs), xb = Math.max(...xs), ya = Math.min(...ys), yb = Math.max(...ys), list = [];
+      for (let k = 0, tries = 0; k < n && tries < n * 40; tries++) {
+        const x = xa + rr() * (xb - xa), y = ya + rr() * (yb - ya);
+        if (!inPoly(x, y, pts)) continue;
+        const near = (y - ya) / Math.max(1, yb - ya);
+        list.push([x, y, (s0 + (s1 - s0) * near) * (0.7 + rr() * 0.6)]);
+        k++;
+      }
+      list.sort((p, q) => p[1] - q[1]);
+      // each crown a cluster of leaf masses, not a ball: its shade to the lower left, three greens, and a
+      // few small sunlit masses on the upper right (the Sun is high, behind the lookout, to the right)
+      let out = '';
+      const tones = ['isl-vtree', 'isl-vtree2', 'isl-vtree3'];
+      for (const [x, y, sz] of list) {
+        let crown = '', shade = '', lit = '';
+        const k = 3 + Math.floor(rr() * 4);
+        for (let j = 0; j < k; j++) {
+          const a = rr() * Math.PI * 2, dist = sz * 0.45 * rr(), cr = sz * (0.42 + rr() * 0.3);
+          const cx = x + Math.cos(a) * dist, cy = y + Math.sin(a) * dist * 0.8;
+          crown += circ(cx, cy, cr);
+          shade += circ(cx - sz * 0.22, cy + sz * 0.18, cr);
+          if (rr() < 0.55) lit += circ(cx + cr * 0.35, cy - cr * 0.35, cr * (0.28 + rr() * 0.18));
+        }
+        out += `<path class="isl-vtree-d" d="${shade}"/><path class="${tones[Math.floor(rr() * 3)]}" d="${crown}"/><path class="isl-vtree-l" d="${lit}"/>`;
+      }
+      return out;
+    };
+    const flanks = (crest, baseY) => {          // shade each peak's left flank, down to the land's foot
+      let d = '';
+      for (let i = 1; i < crest.length - 1; i++) {
+        const [x, y] = crest[i];
+        if (!(y < crest[i - 1][1] && y <= crest[i + 1][1])) continue;
+        let j = i;
+        while (j > 0 && crest[j - 1][1] > crest[j][1]) j--;
+        const pts = crest.slice(j, i + 1), xv = pts[0][0];
+        // the shaded flank: from the valley up the crest to the peak, then down the spur that runs from the
+        // peak toward the lower left, so the shade follows the slope instead of dropping straight down
+        d += 'M' + pts.map(([px, py]) => `${F(px)} ${F(py)}`).join('L') + `L${F(x - (x - xv) * 0.35)} ${F(baseY)}L${F(xv - (x - xv) * 0.25)} ${F(baseY)}Z`;
+      }
+      return `<path class="isl-vshadow" d="${d}" filter="url(#islvbayf)"/>`;
+    };
     // The bay catches the last of the sky: its own water, a shade lighter and, at dusk, faintly teal.
     const bay = P([[0.19, 0.37], [0.3, 0.4], [0.45, 0.41], [0.6, 0.42], [0.72, 0.4], [0.8, 0.52], [0.78, 0.7],
       [0.66, 0.8], [0.3, 0.8], [0.2, 0.62]]);
-    s += `<defs><filter id="islvbayf" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="${F(W * 0.012)}"/></filter></defs>`
+    const town = P([[0.705, 0.45], [0.72, 0.432], [0.75, 0.418], [0.8, 0.412], [0.86, 0.418], [0.92, 0.41],
+      [1.02, 0.402], [1.02, 1.02], [0.7, 1.02], [0.74, 0.74], [0.785, 0.66], [0.795, 0.6], [0.78, 0.56],
+      [0.745, 0.54], [0.72, 0.52], [0.71, 0.48]]);
+    const head = P([[0.19, 0.378], [0.192, 0.366], [0.199, 0.352], [0.21, 0.341], [0.226, 0.331], [0.25, 0.318],
+      [0.28, 0.303], [0.31, 0.29], [0.34, 0.279], [0.37, 0.27], [0.4, 0.266], [0.43, 0.268], [0.46, 0.276], [0.5, 0.284], [0.54, 0.289],
+      [0.58, 0.295], [0.62, 0.31], [0.66, 0.33], [0.7, 0.37], [0.715, 0.41], [0.7, 0.425], [0.66, 0.432],
+      [0.62, 0.436], [0.58, 0.44], [0.535, 0.442],
+      // Fort Berkeley: a narrow rocky finger pointing into the bay
+      [0.522, 0.458], [0.513, 0.482], [0.5, 0.5], [0.486, 0.508], [0.474, 0.5], [0.478, 0.482], [0.49, 0.462],
+      [0.494, 0.445], [0.47, 0.434], [0.44, 0.422], [0.4, 0.415], [0.35, 0.41], [0.3, 0.404], [0.25, 0.392],
+      [0.215, 0.386]]);
+    const slope = P([[-0.02, 0.535], [0.05, 0.545], [0.1, 0.56], [0.15, 0.575], [0.19, 0.592], [0.22, 0.612],
+      [0.245, 0.66], [0.26, 0.74], [0.3, 0.76], [0.36, 0.73], [0.42, 0.77], [0.5, 0.79], [0.58, 0.8], [0.64, 0.74],
+      [0.68, 0.67], [0.73, 0.66], [0.8, 0.7], [0.88, 0.72], [1.02, 0.74], [1.02, 1.05], [-0.02, 1.05]]);
+    s += `<defs><filter id="islvbayf" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="${F(W * 0.012)}"/></filter>`
+      + `<filter id="islvsoft" x="-5%" y="-50%" width="110%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter></defs>`
       + `<path d="${poly(bay)}" fill="url(#islvbay)" filter="url(#islvbayf)"/>`;
+    // by Day, turquoise shallows along the bay's shores, under the land that covers their inner half
+    s += `<g class="isl-ydet"><path class="isl-vshallow" d="${line(head.slice(18))}${line(town.slice(8))}${line(slope.slice(4, 18))}" `
+      + `stroke-width="${F(Y(0.045))}" filter="url(#islvbayf)"/></g>`;
     // 1. The far hills: the small distant point on the left, then the main range behind Falmouth.
     const point = P([[0.295, 0.233], [0.31, 0.222], [0.33, 0.214], [0.355, 0.219], [0.375, 0.228], [0.4, 0.224],
       [0.43, 0.207], [0.47, 0.192], [0.51, 0.2], [0.55, 0.205], [0.56, 0.233]]);
@@ -265,6 +341,8 @@
       [0.645, 0.149], [0.67, 0.16], [0.7, 0.176], [0.73, 0.19], [0.76, 0.198], [0.8, 0.204], [0.85, 0.199],
       [0.9, 0.21], [0.95, 0.214], [1.02, 0.22], [1.02, 0.285]]);
     s += `<path class="f-far isl-land" d="${poly(range)}${scrub(range.slice(1, -1), 4, 0.7, 1.8)}"/>`;
+    s += `<g class="isl-ydet">${flanks(range.slice(0, -1), Yp(0.28))}</g>`;
+    s += `<g class="isl-adet"><path d="${poly(range)}" fill="url(#islvgild)"/><path class="isl-vgildline" d="${line(range.slice(1, -1))}" stroke-width="2.2" filter="url(#islvsoft)"/><path class="isl-vgildline" d="${line(range.slice(1, -1))}" stroke-width=".8"/></g>`;
     for (let i = 0; i < 30; i++) {             // villages on the range's lower slopes
       const x = 0.55 + r() * 0.47;
       lights.push([X(x), Yp(0.25 + r() * 0.03), 3]);
@@ -280,10 +358,9 @@
     // the low land between the two harbours, and the town's slope on the right
     const between = P([[0.6, 0.326], [0.7, 0.32], [0.8, 0.325], [0.9, 0.318], [1.02, 0.318], [1.02, 0.358], [0.62, 0.358]]);
     s += `<path class="f-far isl-land" d="${poly(between)}"/>`;
-    const town = P([[0.705, 0.45], [0.72, 0.432], [0.75, 0.418], [0.8, 0.412], [0.86, 0.418], [0.92, 0.41],
-      [1.02, 0.402], [1.02, 1.02], [0.7, 1.02], [0.74, 0.74], [0.785, 0.66], [0.795, 0.6], [0.78, 0.56],
-      [0.745, 0.54], [0.72, 0.52], [0.71, 0.48]]);
     s += `<path class="f-near isl-land" d="${poly(town)}${scrub(town.slice(0, 7), 5, 0.9, 2.2)}"/>`;
+    s += `<g class="isl-ydet">${trees(town, 110, Y(0.007), Y(0.016), 31)}`
+      + `<path class="isl-vroad" d="M${F(X(1.02))} ${F(Yp(0.6))}C${F(X(0.93))} ${F(Yp(0.58))} ${F(X(0.9))} ${F(Yp(0.5))} ${F(X(0.84))} ${F(Yp(0.49))}S${F(X(0.78))} ${F(Yp(0.45))} ${F(X(0.75))} ${F(Yp(0.43))}" stroke-width="${F(Math.max(1, Y(0.006)))}"/></g>`;
     for (let i = 0; i < 34; i++) lights.push([X(0.74 + r() * 0.27), Yp(0.43 + r() * 0.2), 3]);
     // Galleon Beach: the pale curve of sand on the bay's right shore
     s += `<path class="isl-vsand" d="${line(P([[0.748, 0.545], [0.772, 0.558], [0.79, 0.585], [0.792, 0.615], [0.784, 0.655]]))}" stroke-width="${F(Math.max(1.5, Y(0.01)))}"/>`;
@@ -294,15 +371,23 @@
       lights.push([x, top, 0]);
     }
     // 3. The headland: its cliff point on the left, its crest, and Fort Berkeley's spur into the bay.
-    const head = P([[0.19, 0.378], [0.192, 0.366], [0.199, 0.352], [0.21, 0.341], [0.226, 0.331], [0.25, 0.318],
-      [0.28, 0.303], [0.31, 0.29], [0.34, 0.279], [0.37, 0.27], [0.4, 0.266], [0.43, 0.268], [0.46, 0.276], [0.5, 0.284], [0.54, 0.289],
-      [0.58, 0.295], [0.62, 0.31], [0.66, 0.33], [0.7, 0.37], [0.715, 0.41], [0.7, 0.425], [0.66, 0.432],
-      [0.62, 0.436], [0.58, 0.44], [0.535, 0.442],
-      // Fort Berkeley: a narrow rocky finger pointing into the bay
-      [0.522, 0.458], [0.513, 0.482], [0.5, 0.5], [0.486, 0.508], [0.474, 0.5], [0.478, 0.482], [0.49, 0.462],
-      [0.494, 0.445], [0.47, 0.434], [0.44, 0.422], [0.4, 0.415], [0.35, 0.41], [0.3, 0.404], [0.25, 0.392],
-      [0.215, 0.386]]);
     s += `<path class="f-near isl-land" d="${poly(head)}${scrub(head.slice(2, 17), 6, 0.9, 2.3)}"/>`;
+    // by Day: the headland's shaded flank, its rock (the cliff at the point, Fort Berkeley's spur), its trees,
+    // and the dockyard's buildings at its foot; at Dawn, the first light along its crest
+    const cliff = P([[0.19, 0.378], [0.192, 0.366], [0.199, 0.352], [0.21, 0.341], [0.226, 0.331], [0.233, 0.35], [0.229, 0.37], [0.22, 0.387], [0.2, 0.384]]);
+    let strata = '';
+    for (let k = 1; k < 5; k++) strata += line(P([[0.192 + k * 0.004, 0.37 - k * 0.006], [0.228 - k * 0.002, 0.362 - k * 0.004]]));
+    let dock = '', dockRoofs = '';
+    for (let k = 0; k < 7; k++) {
+      const x = X(0.628 + k * 0.012), w = X(0.009 + (k % 3) * 0.002), h = Y(0.02 + (k % 2) * 0.008), foot = Yp(0.447);
+      dock += `M${F(x)} ${F(foot)}h${F(w)}v${F(-h)}h${F(-w)}Z`;
+      dockRoofs += `M${F(x - 1)} ${F(foot - h + 0.5)}L${F(x + w / 2)} ${F(foot - h - w * 0.35)}L${F(x + w + 1)} ${F(foot - h + 0.5)}Z`;
+    }
+    s += `<g class="isl-ydet">${flanks(head.slice(0, 18), Yp(0.42))}<path class="isl-vrock" d="${poly(cliff)}"/><path class="isl-vrockline" d="${strata}" stroke-width=".8"/>`
+      + `<path class="isl-vrockline" d="${line(head.slice(25, 32))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`
+      + `${trees(head.slice(4, 25), 150, Y(0.006), Y(0.012), 37)}`
+      + `<path class="isl-vhouse" d="${dock}"/><path class="isl-vroof" d="${dockRoofs}"/></g>`;
+    s += `<g class="isl-adet"><path class="isl-vgildline" d="${line(head.slice(2, 17))}" stroke-width="2" filter="url(#islvsoft)"/><path class="isl-vgildline" d="${line(head.slice(2, 17))}" stroke-width=".7"/></g>`;
     const shore = head.slice(18);
     s += `<path class="isl-vshore" d="${line(shore)}" stroke-width="1"/>`;
     s += `<path class="isl-vsurf" d="${line(P([[0.186, 0.366], [0.19, 0.38], [0.2, 0.388], [0.215, 0.39], [0.235, 0.396]]))}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`;
@@ -329,10 +414,9 @@
     s += `<path class="isl-vhull" d="${hulls}"/>`;
     s += `<g class="isl-vlamps">${refl}</g>`;
     // 6. The lookout: the slope on the left, the rocks and scrub in front, organ-pipe cactus, a lantern.
-    const slope = P([[-0.02, 0.535], [0.05, 0.545], [0.1, 0.56], [0.15, 0.575], [0.19, 0.592], [0.22, 0.612],
-      [0.245, 0.66], [0.26, 0.74], [0.3, 0.76], [0.36, 0.73], [0.42, 0.77], [0.5, 0.79], [0.58, 0.8], [0.64, 0.74],
-      [0.68, 0.67], [0.73, 0.66], [0.8, 0.7], [0.88, 0.72], [1.02, 0.74], [1.02, 1.05], [-0.02, 1.05]]);
     s += `<path class="f-near isl-land" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
+    // by Day, the lookout's own trees in front, the largest and brightest (the owner's photograph)
+    s += `<g class="isl-ydet">${trees(slope, 120, Y(0.014), Y(0.045), 41)}</g>`;
     const lx = X(0.43), ly = Yp(0.772);
     s += `<path class="f-near" d="M${F(lx - 1)} ${F(ly + Y(0.02))}V${F(ly - Y(0.05))}H${F(lx + 1)}V${F(ly + Y(0.02))}Z"/>`;
     s += `<circle cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Y(0.055))}" fill="url(#islvlamp)"/>`;
@@ -1551,6 +1635,8 @@
       + '<linearGradient id="islvharb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-sea0" stop-opacity="0"/><stop offset=".45" class="st-sea0" stop-opacity=".5"/><stop offset="1" class="st-sea0" stop-opacity=".3"/></linearGradient>'
       + '<linearGradient id="islvfacade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vstrata" stop-opacity="1"/><stop offset="1" class="st-vstone" stop-opacity="1"/></linearGradient>'
       + '<linearGradient id="islvcloud" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-cloud" stop-opacity="1"/><stop offset=".55" class="st-cloud" stop-opacity="1"/><stop offset="1" class="st-cloud-s" stop-opacity="1"/></linearGradient>'
+      + '<linearGradient id="islvgild" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-gild" stop-opacity=".6"/><stop offset=".55" class="st-gild" stop-opacity="0"/></linearGradient>'
+      + '<radialGradient id="islvsun"><stop offset="0" stop-color="#fffdf0" stop-opacity=".95"/><stop offset=".1" stop-color="#fff8dc" stop-opacity=".6"/><stop offset=".4" stop-color="#ffffff" stop-opacity=".14"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvdawn"><stop offset="0" class="st-g1" stop-opacity=".9"/><stop offset=".45" class="st-g2" stop-opacity=".35"/><stop offset="1" class="st-g2" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvbulb"><stop offset="0" class="st-g1" stop-opacity=".5"/><stop offset=".5" class="st-g1" stop-opacity=".14"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '</defs>';
@@ -1586,11 +1672,40 @@
     }
     return `<defs>${defs}</defs>${d}`;
   }
-  function dawnDay(v, W, y0) {
-    const p = v.ppd, sx = v.x(SKY.a.sun[0]), cl = clouds(W, y0, 211);
+  // Dawn's clouds are its own: long, low bands of stratocumulus, their tops catching the light first.
+  function bands(W, y0, seed) {
+    const r = rng(seed);
+    let d = '';
+    const n = Math.round(clamp(W / 110, 5, 10));
+    for (let i = 0; i < n; i++) {
+      const t = Math.pow(r(), 1.3), y = y0 * (0.9 - t * 0.5);
+      const w = W * (0.1 + r() * 0.2) * (0.5 + t), h = Math.max(1.6, y0 * (0.01 + r() * 0.016) * (0.6 + t));
+      const x = r() * (W + w) - w / 2, k = 5 + Math.floor(r() * 5);
+      let c = '';
+      for (let j = 0; j < k; j++) {
+        const u = j / (k - 1), cx = x - w / 2 + u * w, rx = (w / k) * (0.9 + r() * 0.8);
+        const ry = h * (0.45 + Math.sin(u * Math.PI) * 0.6) * (0.7 + r() * 0.5);
+        c += `M${F(cx - rx)} ${F(y)}a${F(rx)} ${F(ry)} 0 1 0 ${F(2 * rx)} 0a${F(rx)} ${F(ry)} 0 1 0 ${F(-2 * rx)} 0Z`;
+      }
+      d += `<path d="${c}" fill="url(#islvcloud)" opacity="${F(0.5 + t * 0.4)}"/>`;
+    }
+    return d;
+  }
+  function dawnDay(v, W, y0, H) {
+    const p = v.ppd, sx = v.x(SKY.a.sun[0]), r = rng(97);
     const glow = sx > -W * 0.3 && sx < W * 1.3
       ? `<ellipse cx="${F(sx)}" cy="${F(y0)}" rx="${F(40 * p)}" ry="${F(8 * p)}" fill="url(#islvdawn)" clip-path="url(#islsky)"/>` : '';
-    return `<g class="isl-a">${glow}${cl}</g><g class="isl-y">${cl}</g>`;
+    // FOR COMPARISON (?isl-sun=1), the Sun placed by license: rising on the horizon at Dawn, high in the
+    // corner by Day, each with its light on the water.
+    const ds = clamp(H * 0.045, 9, 20), dx = W * 0.12;
+    const dawnSun = `<g class="isl-sun"><ellipse cx="${F(dx)}" cy="${F(y0)}" rx="${F(ds * 9)}" ry="${F(ds * 3)}" fill="url(#islvdawn)" clip-path="url(#islsky)"/>`
+      + `<circle class="isl-vsunrise" cx="${F(dx)}" cy="${F(y0 + ds * 0.35)}" r="${F(ds)}" clip-path="url(#islsky)"/>`
+      + dashes(streakList(dx, y0, H, r, 0.1, 0.09), 's-vglow', 1.4, [0.14, 0.28, 0.5]) + '</g>';
+    const ys = clamp(H * 0.035, 8, 16), yx = W * 0.1, yy = y0 * 0.3;
+    const daySun = `<g class="isl-sun"><circle cx="${F(yx)}" cy="${F(yy)}" r="${F(ys * 10)}" fill="url(#islvsun)" clip-path="url(#islsky)"/>`
+      + `<circle class="isl-vsunday" cx="${F(yx)}" cy="${F(yy)}" r="${F(ys)}"/>`
+      + dashes(streakList(yx, y0, H, r, 0.12, 0.1), 'isl-sparkle', 1.2, [0.18, 0.3, 0.5]) + '</g>';
+    return `<g class="isl-a">${glow}${bands(W, y0, 89)}${dawnSun}</g><g class="isl-y">${clouds(W, y0, 211)}${daySun}</g>`;
   }
 
   function build(W, H, piece) {
@@ -1646,7 +1761,7 @@
       + gSky
       + sky.d.planets + sky.n.planets
       + sky.d.moon + sky.n.moon
-      + dawnDay(v, W, y0)
+      + dawnDay(v, W, y0, H)
       + (P.world === 'coast' ? islands(v, 'f-isl') : '')
       + `<rect y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`
       + L.glowSea(v, 'd', 'isl-d', reflH) + L.glowSea(v, 'n', 'isl-n', reflH)
@@ -1700,6 +1815,7 @@
     const card = document.createElement('div');
     card.className = 'isl isl-vig';
     card.dataset.sky = pickSky();
+    try { if (new URLSearchParams(location.search).get('isl-sun') === '1') card.dataset.sun = '1'; } catch (e) { /* no query */ }
     fig.appendChild(card);
     fig._isl = card;
     let last = '', started = false;

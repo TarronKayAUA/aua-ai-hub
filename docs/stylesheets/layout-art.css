@@ -88,7 +88,7 @@
   --isl-isl: #7d88a6; --isl-far: #3e5474; --isl-near: #273a53;
   --isl-rip: #dfe2ef; --isl-rip-a: 0.28; --isl-hzline: rgba(255, 228, 222, 0.4);
   --isl-rim: #f4c9c2; --isl-bird: #1d2b40;
-  --isl-cloud: #f6d3cc; --isl-cloud-s: #8c93b3;
+  --isl-cloud: #ffd7b4; --isl-cloud-s: #8a90b0; --isl-gild: #ffbe8c;
   --isl-vbay: #7390b4; --isl-vsand: #dccbc6; --isl-vwall: #d8dce6; --isl-vrail: rgba(232, 236, 244, 0.55);
 }
 /* DAY: mid-morning, the Sun high behind a west-facing view: a blue sky paling to haze at the horizon,
@@ -96,6 +96,8 @@
 [data-md-color-scheme="default"] .isl[data-sky="day"] {
   --isl-sky0: #3b7db6; --isl-sky1: #5c9bcb; --isl-sky2: #8fbcdc; --isl-sky3: #bad6e8; --isl-hz: #dde8ee;
   --isl-veg-d: #2d4a2f; --isl-veg-l: #86a35c; --isl-veg-t: #9a8660; --isl-vhouse: #f4f2ec; --isl-vroofg: #8a969c;
+  --isl-vtree: #4b773a; --isl-vtree2: #6b8f3d; --isl-vtree3: #37602f; --isl-vtree-l: #9cbb5a; --isl-vtree-d: #1d3620; --isl-vshadow: #1d3620;
+  --isl-vrock: #a47a5b; --isl-vrock-s: #6c4f3e; --isl-vshallow: #a9e2d8; --isl-vroad: #dccfae;
   --isl-g1: rgba(255, 255, 255, 0); --isl-g2: rgba(255, 255, 255, 0); --isl-g3: rgba(255, 255, 255, 0);
   --isl-sea0: #6fa3b8; --isl-sea1: #2f7ca1; --isl-sea2: #1e5f86; --isl-haze: #e6eff3;
   --isl-isl: #9fb5b8; --isl-far: #6a8a68; --isl-near: #45663d;
@@ -121,6 +123,26 @@
 .isl .isl-vhouse { fill: var(--isl-vhouse, #f2f0ea); }
 .isl .isl-vroofg { fill: var(--isl-vroofg, #7d8a90); }
 [data-md-color-scheme="default"] .isl[data-sky="day"] [fill*="lamp)"] { display: none; }
+/* Dawn's first light on the hilltops (isl-adet); the Sun for comparison (isl-sun, ?isl-sun=1). */
+.isl .isl-adet { display: none; }
+[data-md-color-scheme="default"] .isl[data-sky="dawn"] .isl-adet { display: inline; }
+[data-md-color-scheme="default"] .isl[data-sky="dawn"][data-sun="1"] .isl-adet { display: none; }
+[data-md-color-scheme="default"] .isl:not([data-sun="1"]) .isl-sun { display: none; }
+.isl .st-gild { stop-color: var(--isl-gild, #ffbe8c); }
+.isl .isl-vgildline { stroke: var(--isl-gild, #ffbe8c); stroke-opacity: 0.85; fill: none; stroke-linecap: round; }
+.isl .isl-vsunrise { fill: #ffcf7a; }
+.isl .isl-vsunday { fill: #fffcee; }
+.isl .isl-sparkle { stroke: #ffffff; fill: none; }
+/* Day's features: trees, rock, shallows, the road (isl-ydet in each piece). */
+.isl .isl-vtree { fill: var(--isl-vtree, #4d7a3a); }
+.isl .isl-vtree2 { fill: var(--isl-vtree2, #6a8f3e); }
+.isl .isl-vtree3 { fill: var(--isl-vtree3, #3a6231); }
+.isl .isl-vtree-l { fill: var(--isl-vtree-l, #a3c160); fill-opacity: 0.75; }
+.isl .isl-vtree-d { fill: var(--isl-vtree-d, #213b20); fill-opacity: 0.45; }
+.isl .isl-vrock { fill: var(--isl-vrock, #a67b5c); }
+.isl .isl-vrockline { stroke: var(--isl-vrock-s, #6f5241); fill: none; stroke-linecap: round; }
+.isl .isl-vshallow { stroke: var(--isl-vshallow, #a6e0d6); stroke-opacity: 0.75; fill: none; stroke-linejoin: round; }
+.isl .isl-vroad { stroke: var(--isl-vroad, #d9ccab); fill: none; stroke-linecap: round; }
 
 /* --- Paint ------------------------------------------------------------------ */
 .isl .st-sky0 { stop-color: var(--isl-sky0); }
