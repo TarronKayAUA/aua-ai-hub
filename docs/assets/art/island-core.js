@@ -643,12 +643,51 @@
     const h = new Date().getHours();
     return h >= 5 && h < 9 ? 'dawn' : h >= 9 && h < 17 ? 'day' : h >= 17 && h < 19 ? 'sunset' : h >= 19 && h < 21 ? 'dusk' : 'night';
   };
+  /* The version keeps following the clock while the page stays open (owner, 2026-09-28): checked once a
+     minute and whenever the tab comes back into view, so a sleeping laptop or a throttled background tab
+     catches up. At a change each picture crossfades over about 1.6 s: a copy of it in the old version,
+     its ids renamed so its gradients stay its own, lies on top and fades away while the picture beneath
+     has already turned. Where motion is reduced, or no one can see the tab, it switches at once. Every
+     version is already drawn, so nothing is rebuilt; the Night's fainter stars load when first needed
+     (layout-art.js listens for isl-sky). */
+  const skyEls = [];
+  function turnSky(el, s) {
+    if (reduce.matches || document.hidden || !el.offsetWidth) { el.dataset.sky = s; return; }
+    const ghost = el.cloneNode(false);
+    ghost.innerHTML = el.innerHTML.replace(/(id="|url\(#)isl/g, '$1islx');
+    ghost.classList.remove('isl-run', 'isl-vrun');
+    ghost.classList.add('isl-ghost');
+    Object.assign(ghost.style, { position: 'absolute', left: `${el.offsetLeft}px`, top: `${el.offsetTop}px`,
+      width: `${el.offsetWidth}px`, height: `${el.offsetHeight}px`, margin: '0', pointerEvents: 'none' });
+    el.parentNode.insertBefore(ghost, el.nextSibling);
+    el.dataset.sky = s;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      ghost.style.transition = 'opacity 1.6s ease-in-out';
+      ghost.style.opacity = '0';
+    }));
+    setTimeout(() => ghost.remove(), 2000);
+  }
+  function checkSky() {
+    const s = A.pickSky();
+    let turned = false;
+    for (const el of skyEls) {
+      if (el.isConnected && el.dataset.sky !== s) { turnSky(el, s); turned = true; }
+    }
+    if (turned) document.dispatchEvent(new CustomEvent('isl-sky', { detail: s }));
+  }
+  A.watchSky = function (el) {
+    skyEls.push(el);
+    if (skyEls.length > 1) return;
+    setInterval(checkSky, 60000);
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) checkSky(); });
+  };
   A.hero = function (host) {
     if (host._isl) return;
     const root = document.createElement('div');
     root.className = 'isl isl-hero';
     root.setAttribute('aria-hidden', 'true');
     root.dataset.sky = A.pickSky();
+    A.watchSky(root);
     host.classList.add('isl-host');
     host.insertBefore(root, host.firstChild);
     host._isl = root;

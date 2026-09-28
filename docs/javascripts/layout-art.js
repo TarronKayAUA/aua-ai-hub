@@ -96,6 +96,8 @@
   if ('MutationObserver' in window) {
     new MutationObserver(deep).observe(document.body, { attributes: true, attributeFilter: ['data-md-color-scheme'] });
   }
+  // a picture that turns to Night while the page is open (island-core.js, A.watchSky)
+  document.addEventListener('isl-sky', deep);
   if (sides || vigs.length) {
     var t;
     window.addEventListener('resize', function () {

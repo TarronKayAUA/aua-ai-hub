@@ -2048,6 +2048,7 @@
     const card = document.createElement('div');
     card.className = 'isl isl-vig';
     card.dataset.sky = pickSky();
+    A.watchSky(card);
     try { if (new URLSearchParams(location.search).get('isl-sun') === '1') card.dataset.sun = '1'; } catch (e) { /* no query */ }
     fig.appendChild(card);
     fig._isl = card;
