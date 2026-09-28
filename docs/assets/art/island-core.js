@@ -263,12 +263,14 @@
       + `<radialGradient id="islmwc"><stop offset="0" class="st-mw" stop-opacity=".22"/><stop offset=".55" class="st-mw" stop-opacity=".07"/><stop offset="1" class="st-mw" stop-opacity="0"/></radialGradient></defs>`
       + `<g class="${cls}" clip-path="url(#islsky)"><g filter="url(#islmwf)">${band}${clouds}</g></g>`;
   }
-  function moonBox(v, m) {
-    const [az, alt, , , sd] = SKY[m].moon, r = sd * MOON_X * v.ppd;
+  // `big`: a vignette may draw the Moon larger than the hero's 3 times its true size (the media
+  // tracker's scenes give it a clear disc; owner, 2026-09-28).
+  function moonBox(v, m, big = 1) {
+    const [az, alt, , , sd] = SKY[m].moon, r = sd * MOON_X * big * v.ppd;
     return [v.x(az), v.y(alt), r];
   }
-  function moon(v, m, boxes, cls) {
-    const [x, y, r] = moonBox(v, m), [, , k, limb] = SKY[m].moon;
+  function moon(v, m, boxes, cls, big = 1) {
+    const [x, y, r] = moonBox(v, m, big), [, , k, limb] = SKY[m].moon;
     if (x - r < 6 || x + r > v.W - 6 || y - r < 5 || y + r > v.y0 - 8 || hits(boxes, x - r, y - r, x + r, y + r, 9)) return '';
     const L = limb * Math.PI / 180, rot = Math.atan2(-Math.cos(L), -Math.sin(L)) * 180 / Math.PI, b = r * (1 - 2 * k);
     return `<g class="${cls}"><circle cx="${F(x)}" cy="${F(y)}" r="${F(r * 5)}" fill="url(#islhalo)"/>`

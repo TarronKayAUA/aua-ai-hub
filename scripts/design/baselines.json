@@ -5,9 +5,9 @@
  "by_type": {
   "door": {
    "pages": 7,
-   "blank_1920": 0.17,
-   "blank_1440": 0.157,
-   "cpl_median": 96.75,
+   "blank_1920": 0.163,
+   "blank_1440": 0.15,
+   "cpl_median": 94.5,
    "cpl_max": 114
   },
   "reference": {
@@ -19,8 +19,8 @@
   },
   "shelf": {
    "pages": 17,
-   "blank_1920": 0.314,
-   "blank_1440": 0.334,
+   "blank_1920": 0.31,
+   "blank_1440": 0.331,
    "cpl_median": 194.5,
    "cpl_max": 212
   },
@@ -40,8 +40,8 @@
   },
   "all": {
    "pages": 95,
-   "blank_1920": 0.201,
-   "blank_1440": 0.209,
+   "blank_1920": 0.2,
+   "blank_1440": 0.208,
    "cpl_median": 79.0,
    "cpl_max": 212
   }
@@ -373,20 +373,20 @@
   "faculty/": {
    "type": "door",
    "1920": {
-    "blank": 0.226,
-    "worst": 0.375,
-    "height": 3093,
+    "blank": 0.176,
+    "worst": 0.369,
+    "height": 3237,
     "inversions": 0,
-    "cpl_median": 99.0,
-    "cpl_max": 108
+    "cpl_median": 98,
+    "cpl_max": 106
    },
    "1440": {
-    "blank": 0.23,
-    "worst": 0.443,
-    "height": 2866,
+    "blank": 0.178,
+    "worst": 0.338,
+    "height": 2972,
     "inversions": 0,
-    "cpl_median": 99.0,
-    "cpl_max": 108
+    "cpl_median": 94,
+    "cpl_max": 106
    }
   },
   "governance/": {
@@ -507,19 +507,19 @@
    "type": "door",
    "1920": {
     "blank": 0.109,
-    "worst": 0.199,
-    "height": 2502,
+    "worst": 0.201,
+    "height": 2692,
     "inversions": 0,
-    "cpl_median": 103.0,
-    "cpl_max": 104
+    "cpl_median": 93.0,
+    "cpl_max": 94
    },
    "1440": {
-    "blank": 0.123,
-    "worst": 0.239,
-    "height": 2297,
+    "blank": 0.126,
+    "worst": 0.246,
+    "height": 2444,
     "inversions": 0,
-    "cpl_median": 103.0,
-    "cpl_max": 104
+    "cpl_median": 86.0,
+    "cpl_max": 92
    }
   },
   "news/archive/": {
@@ -829,20 +829,20 @@
   "playbooks/": {
    "type": "shelf",
    "1920": {
-    "blank": 0.402,
+    "blank": 0.348,
     "worst": 0.446,
-    "height": 1875,
+    "height": 2033,
     "inversions": 0,
-    "cpl_median": 105.0,
-    "cpl_max": 110
+    "cpl_median": 97.5,
+    "cpl_max": 101
    },
    "1440": {
-    "blank": 0.428,
-    "worst": 0.464,
-    "height": 1734,
+    "blank": 0.386,
+    "worst": 0.531,
+    "height": 1853,
     "inversions": 0,
-    "cpl_median": 105.0,
-    "cpl_max": 110
+    "cpl_median": 87.5,
+    "cpl_max": 88
    }
   },
   "playbooks/admin-drafting/": {

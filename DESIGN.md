@@ -24,6 +24,7 @@ Contents:
 16. The design check suite
 17. Fragile spots
 18. Ideas not built
+19. Making art at the site's standard
 
 ---
 
@@ -271,7 +272,7 @@ Each prompt page has a side panel, "Fill In Your Details" (`_side`), with one fi
   - Only the home hero and the vignettes move, once each, within about 3.5 seconds, and reduced motion shows the still frame. The gutters never move.
   - **The sky is dense and real** (the owner loves dense starfields): every star is a real one at its true place for the moment. At night: the whole Yale Bright Star Catalogue (3,542 above the horizon), then 9,033 fainter Hipparcos stars to V 8.0 (docs/assets/art/island-deep.js, fetched by layout-art.js only in the dark scheme from 60em, a few seconds after load, after which every drawing redraws once through `IslandArt.redraw`), and the Milky Way's true path as a soft band. At dusk: to V 4.5 (243 stars), no Milky Way. Stars are drawn in seven magnitude steps, the brighter ones tinted by colour index. This is a painter's licence, like the islands at 2.6 times their height, and it is written in island-core.js's header.
   - **The data is baked outside the repository**, in the art's source folder `Claude Projects/Hub art for the media tracker (2026-09-26)/island-hub-version/geo/`: bake.py (skylines, land, the two moments), stars_dense.py (the Yale stars; `--inject <island-core.js>`), sky_deep.py (the Hipparcos stars and the Milky Way; `--deep <island-deep.js> --inject <island-core.js>`). Re-run a bake rather than editing the arrays by hand.
-- **Vignettes** are small scenes under the same sky, one subject each, in approved empty spaces (section 11): data/art_slots.yaml lists the places, scripts/layout_art.py puts the empty figure, and docs/assets/art/island-vignettes.js draws it (`PIECES`: each piece's drawing, its world, the bearing it faces and its ground). A scene set away from Curtain Bluff keeps the true sky (the island is small enough that it holds everywhere) and draws its own ground and hills instead of the far islands. Subjects are painted from photographs as lit silhouettes in the palette, with the page's kind hue (`--k`) as one small accent, and no words. The pieces in place: `campus`, the American University of Antigua at Coolidge, in the homepage hero; `shirley-heights`, the view west over English Harbour and Falmouth Harbour, beside the For Students head; and `curtain-bluff`, the homepage's former view with its frigatebird, beside the For Faculty & Staff head. Drawn and kept, not placed (the owner, 2026-09-28: art should be about what its page is, and art on one example page but not the others reads oddly): `st-johns-harbour` (the cruise ships and the cathedral's towers from Fort James), `pillars-of-hercules` (the limestone cliff at English Harbour's mouth) and `nelsons-dockyard` (the Sail Loft pillars and the Copper and Lumber Store). A piece should fit what its page is about, and a page type gets art on all its pages or none. They are painted from photographs where there were any (the owner's own, AUA's, and web references for study only), kept in the art's source folder (`island-hub-version/references/`, with a README saying whose each is); the dockyard is drawn from published descriptions. A piece may set its own scale (`ppd`) and leave out the ground at the viewer's feet (`under: false`). A place is either the end of an h2 section (the figure sits beside the section's text) or, with `section: _head` on a landing page, the page's head: layout_art wraps the title, lede, search and jump links in `div.isl-head` with the picture beside them from 68.75em, where the head left the frame empty. A slot's `aspect` (height over width) gives a wide head slot its own shape; `kind` is left out on a hub, whose accent then takes Island Night's warm light. Vignettes are hidden below 68.75em and in short windows, and their script is never fetched there.
+- **Vignettes** are small scenes under the same sky, one subject each, in approved empty spaces (section 11): data/art_slots.yaml lists the places, scripts/layout_art.py puts the empty figure, and docs/assets/art/island-vignettes.js draws it (`PIECES`: each piece's drawing, its world, the bearing it faces and its ground). A scene set away from Curtain Bluff keeps the true sky (the island is small enough that it holds everywhere) and draws its own ground and hills instead of the far islands. Subjects are painted from photographs as lit silhouettes in the palette, with the page's kind hue (`--k`) as one small accent, and no words. The pieces in place: `campus`, the American University of Antigua at Coolidge, in the homepage hero; `shirley-heights`, the view west over English Harbour and Falmouth Harbour, beside the For Students head; `curtain-bluff`, the homepage's former view with its frigatebird, beside the For Faculty & Staff head; `sailing-week`, Antigua Sailing Week at dusk, beside the News & Events head; and `lamp-steps`, lanterns lighting a stair to a stone lookout, beside the Step-by-Step Guides head. Drawn and kept, not placed (the owner, 2026-09-28: art should be about what its page is, and art on one example page but not the others reads oddly): `st-johns-harbour` (the cruise ships and the cathedral's towers from Fort James), `pillars-of-hercules` (the limestone cliff at English Harbour's mouth) and `nelsons-dockyard` (the Sail Loft pillars and the Copper and Lumber Store). A piece should fit what its page is about, and a page type gets art on all its pages or none. They are painted from photographs where there were any (the owner's own, AUA's, and web references for study only), kept in the art's source folder (`island-hub-version/references/`, with a README saying whose each is); the dockyard is drawn from published descriptions. A piece may set its own scale (`ppd`) and leave out the ground at the viewer's feet (`under: false`). A place is either the end of an h2 section (the figure sits beside the section's text) or, with `section: _head` on a landing page, the page's head: layout_art wraps the title, lede, search and jump links in `div.isl-head` with the picture beside them from 68.75em, where the head left the frame empty. A slot's `aspect` (height over width) gives a wide head slot its own shape; `kind` is left out on a hub, whose accent then takes Island Night's warm light. Vignettes are hidden below 68.75em and in short windows, and their script is never fetched there.
   - Without JavaScript, the hero keeps its brand gradient.
 - **Section banners** (`.section-banner`, extra.css; SVGs in docs/assets/) are self-contained color, because an SVG in an `img` cannot read CSS variables. A banner is decorative (`alt=""`, `aria-hidden="true"`). The Governance landing shows its banner beside the introduction from 60em.
 
@@ -373,7 +374,7 @@ When a layout leaves a large blank area, remedies apply in this order:
 
 1. **Rearrange.** Pair, lift or spread using the rules in section 4. Most gaps close here.
 2. **Something functional, from data.** Add a panel that earns its place and is computed from a data file. The model is "The Directory Today" on the Tool Directory (`_render_directory_today` in render_data.py): counts from data/tools.yaml, a printed verification line, and a build failure if the counts do not add up.
-3. **Art,** only where nothing useful fits, and only in a place the owner has approved (data/art_slots.yaml). The owner's direction (2026-09-27): an Island Night vignette, one quiet subject per page set in the same world, painted from photographs where the subject is real, in Island Night's own palette (kept over the media tracker's indigo because it is closer to AUA's brand colours), with the page's kind hue as one small accent, no words, decorative (`aria-hidden="true"`), one gentle pass of motion and then still, and hidden below the breakpoint where the gap exists. The pieces in section 6.9 are the models. An existing section banner may also fill a landing's head (the Governance banner); a banner is abstract and self-contained colour because it is an SVG in an `img`.
+3. **Art,** only where nothing useful fits, and only in a place the owner has approved (data/art_slots.yaml). The owner's direction (2026-09-27): an Island Night vignette, one quiet subject per page set in the same world, painted from photographs where the subject is real, in Island Night's own palette (kept over the media tracker's indigo because it is closer to AUA's brand colours), with the page's kind hue as one small accent, no words, decorative (`aria-hidden="true"`), one gentle pass of motion and then still, and hidden below the breakpoint where the gap exists. The pieces in section 6.9 are the models, and section 19 is how they are made. An existing section banner may also fill a landing's head (the Governance banner); a banner is abstract and self-contained colour because it is an SVG in an `img`.
 
 Never add words to fill space. Never invent content, and never hardcode numbers.
 
@@ -417,11 +418,11 @@ Never add words to fill space. Never invent content, and never hardcode numbers.
 
 ### A new art piece
 
-1. Confirm the gap is real and that nothing functional fits (section 11); get the owner's yes for the place. The owner wants the pieces seen, not buried: page heads are the most visible places (an inventory of every page's blank regions, with their depth down the page, found them).
+1. Confirm the gap is real and that nothing functional fits (section 11); get the owner's yes for the place. The owner wants the pieces seen, not buried: page heads are the most visible places. `python scripts/design_check.py --only gaps` lists every blank region with its size, the heading above it and its `y` position (how far down the page it starts); prefer places within the first screen.
 2. Add the place to data/art_slots.yaml: the page, the h2 section's id (or `_head` on a landing), the piece's key, the page's kind (none on a hub) and, for a wide slot, its `aspect`.
-3. Draw the piece in docs/assets/art/island-vignettes.js: a function taking `(W, H, v, g)` and a `PIECES` entry with its world (`coast` or `inland`), the bearing it faces, its ground and any hills. Work from photographs; keep it a lit silhouette in the `--isl-*` palette with materials as `--isl-v*` tokens in both schemes; one accent in `--k`; lights as `.isl-vwin` with `--i` so they come on in turn, and one element marked `.isl-vlast`.
+3. Draw the piece following section 19 (composition, the finish, the pass, the review loop), in docs/assets/art/island-vignettes.js: a function taking `(W, H, v, g)` and a `PIECES` entry with its world (`coast` or `inland`), the bearing it faces, its ground and any hills. Work from photographs; keep it a lit silhouette in the `--isl-*` palette with materials as `--isl-v*` tokens in both schemes; one accent in `--k`; lights as `.isl-vwin` with `--i` so they come on in turn, and one element marked `.isl-vlast`.
 4. A real place must be recognisable at a glance (the owner, of Shirley Heights: "a very photographed and iconic view that is known worldwide"). Trace its landforms from a reference photograph (x as a fraction of the width, y mapped from the photo's horizon into the card), face the sky to the place's true bearing (it decides where the afterglow falls, and a local will notice), and exaggerate land above the horizon when a wide card flattens it (Shirley Heights: 1.7 times, as Island Night draws its islands 2.6 times their height). Put the render beside the photograph and compare them before showing the owner. Details that do not read when stylised (the lookout's cacti) are better left out.
-5. Build, then look at it yourself at 1920 and 1440 in both schemes before showing the owner: the ground under every building, the horizon, the accent, and the one pass.
+5. Render it with `python scripts/art_review.py --piece <key> --sequence` (and `--ref` for a real place) and look at it yourself before showing the owner: the ground under every building, the horizon, the Moon, the accent, and the one pass.
 6. Run `python scripts/design_check.py --page <address>/`, and check phones (hidden, not fetched) and reduced motion.
 
 ### A new data-driven list
@@ -570,3 +571,60 @@ Candidates, none promised:
 - **Door pages' card text** runs to 114 characters a line at 1920. A max-width on the card body, or three cards across where there are two, would bring it near the measure.
 - **figure_sheet.py as a check in the suite.** Kept separate because it needs Pillow and writes contact sheets.
 - **A "new page" scaffold command** (markdown with front matter, the nav line, a section_map entry). Not built, because where a page goes in the nav is a judgement call.
+
+## 19. Making art at the site's standard
+
+The owner's bar for every picture on the site is the scenery of his media tracker (a separate project on his laptop, `Claude Projects/Media Suggestion Website`: `public/lib/scenekit.js` and `public/scenes/*.js`; read it, never change it). What makes those scenes good is not one trick but many small finishes on a simple composition. This section is the method that reached that standard for the Hub's pieces (Sailing Week and the lamp-lit steps, approved 2026-09-28: "Both look excellent"). Follow it for every new piece.
+
+### 19.1 Before drawing
+
+- **Place and subject first** (section 11 and the checklist in section 12): the place must be approved, visible (page heads are best; `design_check.py --only gaps` finds candidates with their depth), and the subject must be about what the page is (Sailing Week for news and events, steps for step-by-step guides). A page type gets art on all its pages or none.
+- **Photographs for anything real.** The owner's own photographs are the best references (he knows the view; Shirley Heights was only right once drawn from his). Keep every reference in the art's source folder, `island-hub-version/references/`, and add it to that folder's README with whose it is. Web photographs are for study only and are never published.
+- **The palette is Island Night's** (the `--isl-*` tokens in layout-art.css), never a new one; the page's kind hue appears once, small (a lamp, a pennant, a spinnaker).
+
+### 19.2 Composition
+
+- **One subject, clearly placed**, off centre, with open sky beside it.
+- **Three depths**: a far layer (distant islands or hills in `f-isl`, pale and hazy), a middle layer (the land or water the subject stands on, `f-far`), and a near layer (the subject and the ground at the viewer's feet, `f-near`). Nearer is darker at night.
+- **The sky is part of the picture.** Face the piece so the Moon sits in open sky: set `moonX` (a share of the width) on the piece and draw it larger with `moonBig` (2.4 on the approved pieces); Venus comes with it, the Milky Way appears at night on its own, and the sunset's afterglow falls where the true bearing puts it. The owner wants the Moon in the sky in every picture, at dusk and at night.
+- **A real place is traced, not remembered**: landforms as fractions of the width and heights mapped from the photograph's horizon into the card; the true bearing for the sky; hills above the horizon exaggerated when a wide card flattens them (Shirley Heights 1.7 times). It must be recognisable at a glance.
+- **Scale that reads**: the first drafts that failed were too simple and too big (one flat cliff with arches, a ship as a white box). Keep forms at the size they would have in the view and give them structure.
+
+### 19.3 The finish (the helpers in island-vignettes.js, "THE FINISH")
+
+Apply all of these that the scene has a place for; together they are what makes a flat drawing look painted:
+
+| Technique | Helper | Where |
+|---|---|---|
+| Water that recedes: short ripples, dense at the horizon, long and sparse near the viewer | `hatchList` with `dashes(..., 's-vrip', ...)` | every sea or harbour |
+| A broken column of light on the water under every light (lamp, window, masthead, the afterglow itself), widening and scattering with distance | `streakList` with `dashes(..., 's-vglow', ...)` | under every light over water |
+| Reflections of land, boats and sails, faint and kept to the water | `mirrored(y0, drawing, 0.15 to 0.2)`, or a mirror about each boat's own waterline | land at the waterline, every hull and sail |
+| A soft halo around every light | `halo(x, y, r)` (warm), or `islvlamp` for the kind-hue lamp | every lantern, lamp, window cluster |
+| A pool of light on the ground under a lamp | `pool(x, y, rx, ry)` | lamps over ground or steps |
+| Mist lying at the foot of the land | `mist(x, y, w, h)` | where land meets water |
+| A rim of afterglow along crests facing the light | `s-rim` stroke along the crest | hills, roofs, headlands |
+| Materials in both schemes | a pair of `--isl-v*` tokens, dusk and night, in layout-art.css | stone, brick, sails, hulls, sand |
+| Structure on large forms | courses of stone, arches, battlements, mullions, sail seams, deck lines | anything big enough to read |
+| Print grain over the whole card | automatic (`grainURL` in `A.vignette`); lighter at dusk | every vignette |
+
+Two cautions learned in review: lit and shaded planes (`facets`) must follow real faces of the form, or they read as stray patches (they were removed from Sailing Week's coast); and a detail that does not read when stylised is left out (the owner, of the Shirley Heights cacti).
+
+### 19.4 Lights and the one pass
+
+- **Every light is a set**: the light itself (`f-pulse` or a nav colour), its halo, and its column on the water or pool on the ground.
+- **The pass tells a small story**, then everything is still: group lights in the order a viewer would see them come on (`class="isl-vwin"` with `--i`), slow the steps where the order matters (`--isl-vstep`, 0.6s on the lamp-lit steps), and let the focal light come last (`isl-vlast`). The owner's example: the lanterns light from the foot of the steps to the top, then the lookout's windows.
+- **Motion budget**: opacity and transform only, one pass, nothing looping; with reduced motion the still frame at once.
+
+### 19.5 The review loop (never show the owner a first draft)
+
+1. Draw, then render: `python scripts/art_review.py --piece <key>` (it builds the site; at 1920 and 1440, dusk and night, with the page in context).
+2. Compare with the photographs: `--ref <file>` for each reference.
+3. Check the pass: `--sequence` captures the lights frame by frame; confirm the order.
+4. Look yourself for what the owner will see: ground under every building, nothing hanging over water, the Moon in the sky, the accent present, no stray shapes, detail at the size of the picture. Fix and render again (a renamed output avoids an image viewer's cache).
+5. Show the owner the review sheet; list any new label. Merge only after his yes, then run `python scripts/design_check.py` and refresh a page's baseline when an approved piece changes its measure.
+
+Two traps from the rounds: `mkdocs serve` does not reload hook code (restart it after changing `scripts/layout_art.py`), and an image viewer may show a cached picture under an old file name.
+
+### 19.6 Budget
+
+island-vignettes.js is fetched only where a piece is shown (from 68.75em, never on phones) and draws in well under a frame; keep each piece a single function, no images, no network, and no new file per piece. Sizes today: island-vignettes.js about 80 KB, island-core.js about 124 KB (48 KB compressed), island-deep.js 107 KB (41 KB compressed, dark scheme only).
