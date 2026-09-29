@@ -124,6 +124,18 @@ slots:
     kind: lesson
     fit: text
 
+  # Courses and Resources: the telescope at a hilltop lookout, learning as
+  # looking further, which stood at the head of Learn until the library took
+  # that place; it replaces the section banner (archived in graphics/archive/),
+  # as the Old Court House replaced Governance's (owner, 2026-09-29: "I
+  # actually want to place it somewhere now because it is beautiful"). No
+  # caption: it is not a particular place.
+  - page: learning/index.md
+    section: _head
+    piece: telescope
+    kind: lesson
+    fit: text
+
   # Tools & Prompts: the Betty's Hope sugar mill, a tool that turns wind
   # into work ("just fit it in to the small section of text at the top").
   - page: tools-and-prompts.md
