@@ -29,7 +29,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-import aggregate  # noqa: E402
+import aggregate
 
 REPO = Path(__file__).resolve().parent.parent
 FIXTURE = REPO / "scripts" / "backtest" / "curation_2026-09.json"
