@@ -421,6 +421,23 @@
     display: none;
   }
 }
+/* The caption (owner, 2026-09-29): one quiet line under the picture saying what it shows, then the
+   time of day it is drawn at, linked (layout_art.py writes the words, island-vignettes.js adds the
+   time). The picture gives up the caption's height, so the figure keeps its size: the top stays level
+   with the title and nothing below moves. Left-aligned on the picture's edge; shown only once the
+   picture is drawn, so without JavaScript nothing captions an empty space. */
+.md-typeset figure.isl-vignette > figcaption.isl-cap {
+  max-width: none;
+  margin: 0.35rem 0 0;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  font-style: normal;
+  text-align: left;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset figure.isl-vignette:not(:has(> .isl-vig)) > figcaption.isl-cap {
+  display: none;
+}
 /* The leaf's side is already sticky beside taller text (layout-width.css), so the card only clips. */
 .isl-vig {
   position: relative;
@@ -589,9 +606,14 @@
   body:not([data-page-type="door"]):not([data-crumbs="none"]) .md-content:has(> .md-path) .isl-head > figure.isl-vignette--head:not([data-fit="text"]) {
     margin-top: -1.86rem;
   }
-  /* A picture that fits its text: the row is the text's height, the picture fills it. */
+  /* A picture that fits its text: the row is the text's height, the picture fills it. The text keeps
+     its own height rather than stretching with the row, because it is what the picture measures: a
+     caption that wraps late (a web font arriving) could otherwise grow the row and be measured as
+     text, and the page below would stay moved. */
   .md-typeset .isl-head:has(> figure[data-fit="text"]) { align-items: stretch; }
   .md-typeset figure.isl-vignette[data-fit="text"] { align-self: stretch; }
+  .md-typeset .isl-head:has(> figure[data-fit="text"]) > .isl-head__text,
+  .md-typeset .isl-stack > .isl-stack__text { align-self: start; }
   /* Stacked sections beside a picture (the About page): the sections in one column at the reading
      measure, the picture in the other, as tall as the sections. A stack that starts at the title
      (section: [_title, ...]) has the title at its top, so the picture's top is level with it. */

@@ -2031,17 +2031,52 @@
   // Which version a card shows: the visitor's own clock, in both schemes (A.pickSky in island-core.js).
   const pickSky = () => A.pickSky();
 
+  /* The caption (owner, 2026-09-29): scripts/layout_art.py writes what the picture shows
+     (data/art_slots.yaml); this adds the time of day the picture is drawn at, in the words the data
+     gives (data-when), linked to the write-up on the five versions (data-about), and keeps it in step
+     when the picture turns with the clock. */
+  function caption(cap, sky) {
+    if (!cap) return;
+    if (!cap._isl) {
+      let when = {};
+      try { when = JSON.parse(cap.dataset.when || '{}'); } catch (e) { /* the words alone */ }
+      const a = document.createElement('a');
+      a.href = cap.dataset.about || '';
+      cap.append(', ', a, '.');
+      cap._isl = { a, when };
+    }
+    const { a, when } = cap._isl;
+    a.textContent = when[sky] || sky;
+    a.setAttribute('aria-label', `${a.textContent}, about the five times of day`);
+  }
+
   A.vignette = function (fig) {
     if (fig._isl) return;
     const card = document.createElement('div');
     card.className = 'isl isl-vig';
     card.dataset.sky = pickSky();
+    // The drawing is decorative; the caption beneath it says what it shows.
+    card.setAttribute('aria-hidden', 'true');
     // its own scrub patterns for the Day land (ids renamed by own(svg, 'v'); a crossfade copy renames them again)
     card.style.setProperty('--isl-vegf', 'url(#islvvegf)');
     card.style.setProperty('--isl-vegn', 'url(#islvvegn)');
     A.watchSky(card);
-    fig.appendChild(card);
+    const cap = fig.querySelector(':scope > figcaption');
+    caption(cap, card.dataset.sky);
+    fig.insertBefore(card, fig.firstChild);
     fig._isl = card;
+    // The caption's own height, which the picture gives up so the figure keeps the height it had. Its
+    // gap above is topped up to a whole pixel, so the two add up exactly and nothing shifts by a fraction.
+    const capH = () => {
+      if (!cap || !cap.offsetHeight) return 0;
+      cap.style.marginTop = '';   // the stylesheet's gap, in rem, at the page's current type size
+      const cs = getComputedStyle(cap);
+      const gap = parseFloat(cs.marginTop);
+      const raw = cap.getBoundingClientRect().height + gap + parseFloat(cs.marginBottom);
+      const c = Math.ceil(raw - 0.01);
+      cap.style.marginTop = `${gap + c - raw}px`;
+      return c;
+    };
     let last = '', started = false;
     const paint = () => {
       // As tall as the window allows below the sticky offset of the leaf's side (5.5rem,
@@ -2052,12 +2087,18 @@
       // exactly as tall as the text beside it, so nothing on the page moves.
       const aspect = parseFloat(fig.dataset.aspect);
       const text = fig.dataset.fit === 'text' ? fig.parentElement.querySelector(':scope > .isl-head__text, :scope > .isl-stack__text') : null;
-      const H = text ? Math.floor(Math.max(120, text.getBoundingClientRect().height))
-        : aspect ? Math.floor(clamp(W * aspect, 180, 700))
-          : Math.floor(clamp(Math.min(W * 1.02, innerHeight - 5.5 * rem - 24), 320, 820));
+      // The caption beneath takes its line from the picture, so nothing beside or below it moves.
+      const c = capH();
+      const H = text ? Math.floor(Math.max(120, text.getBoundingClientRect().height)) - c
+        : aspect ? Math.floor(clamp(W * aspect, 180, 700)) - c
+          : Math.floor(clamp(Math.min(W * 1.02, innerHeight - 5.5 * rem - 24), 320, 820)) - c;
       const key = W + 'x' + H;
       if (key === last) return;
       last = key;
+      // A crossfade copy (island-core.js turnSky) keeps the old size, so it would overlap the caption:
+      // at a new size the picture switches at once instead.
+      const ghost = card.nextElementSibling;
+      if (ghost && ghost.classList.contains('isl-ghost')) ghost.remove();
       card.style.height = `${H}px`;
       card.innerHTML = build(W, H, fig.dataset.vignette);
       if (!started) {
@@ -2074,6 +2115,11 @@
       }
     };
     paint();
+    // At a change of version the caption's words change, and with them perhaps its line count: the
+    // picture is re-measured in the same moment, so nothing below moves even for a frame.
+    document.addEventListener('isl-sky', () => { caption(cap, card.dataset.sky); paint(); });
+    // The caption's line breaks can change when the page's web font arrives: measure again then.
+    if (cap && document.fonts && document.fonts.ready) document.fonts.ready.then(paint);
     (A.redraw = A.redraw || []).push(() => { last = ''; paint(); });
     let t;
     if ('ResizeObserver' in window) {
@@ -2081,6 +2127,8 @@
       ro.observe(fig);
       const text = fig.dataset.fit === 'text' && fig.parentElement.querySelector(':scope > .isl-head__text, :scope > .isl-stack__text');
       if (text) ro.observe(text);
+      // A caption that wraps to a second line (a narrow window, a longer time of day) gives up that line too.
+      if (cap) ro.observe(cap);
     }
   };
 })();
