@@ -137,6 +137,8 @@ The first navigation pass used 13 agents and the second 23 (about 3.9 million to
 
 The five times of day came later, on September 28: 20 commits over about seven and a half hours, adding 802 lines and removing 100 across seven files.
 
+The captions, the library and tonight's sky followed on September 29: nine commits over about five hours, adding about 900 lines and removing about 70 across 13 files.
+
 My own time was evenings and a very long weekend. I did not measure it.
 
 ## What Transfers
