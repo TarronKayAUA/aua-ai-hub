@@ -101,6 +101,7 @@
   SKY.d.moon0 = SKY.d.moon.slice();
   SKY.n.moon0 = SKY.n.moon.slice();
   SKY.moonUp = true;
+  SKY.plUp = null;
   /* THE MOON TONIGHT (owner, 2026-09-29: "match the image of the moon to its lunar phase"; the same
      crescent in every night picture "cheapens it a little and somewhat hints at a hidden meaning"). The
      stars and the Moon's place in each picture stay those of the baked evening (a painter's licence),
@@ -145,6 +146,46 @@
     const refr = top > -2 ? 1.02 / Math.tan((top + 10.3 / (top + 5.11)) * R) / 60 : 0;
     return { alt: top + refr, k: (1 + cs(inc)) / 2, limb: nm(chi - q), sd: as(1737.4 / rm) };
   }
+  // Venus and Jupiter tonight (owner, 2026-09-29: "treat Jupiter and Venus the same way as the moon"):
+  // drawn only when they are really up and clear of the Sun's glare, at their baked places. JPL's
+  // "Keplerian Elements for Approximate Positions of the Major Planets" (E. M. Standish), table 1 (valid
+  // 1800 to 2050, a few arcminutes; slowly less exact after), as geo/planets.py uses for the bake:
+  // a (au), e, I, L, long. perihelion, long. node, then their rates per Julian century.
+  const PEL = {
+    V: [0.72333566, 0.00677672, 3.39467605, 181.9790995, 131.60246718, 76.67984255, 0.0000039, -0.00004107, -0.0007889, 58517.81538729, 0.00268329, -0.27769418],
+    E: [1.00000261, 0.01671123, -0.00001531, 100.46457166, 102.93768193, 0, 0.00000562, -0.00004392, -0.01294668, 35999.37244981, 0.32327364, 0],
+    J: [5.202887, 0.04838624, 1.30439695, 34.39644051, 14.72847983, 100.47390909, -0.00011607, -0.00013253, -0.00183714, 3034.74612775, 0.21252668, 0.20469106],
+  };
+  function planetAt(name, ms) {
+    const R = Math.PI / 180, sn = (x) => Math.sin(x * R), cs = (x) => Math.cos(x * R), nm = (x) => ((x % 360) + 360) % 360;
+    const jd = ms / 86400000 + 2440587.5, T = (jd + 69 / 86400 - 2451545) / 36525;
+    const helio = (p, t) => {
+      const q = PEL[p], [a, e, I, L, wb, Om] = [0, 1, 2, 3, 4, 5].map((i) => q[i] + q[i + 6] * t), w = wb - Om;
+      const M = ((L - wb + 180) % 360 + 360) % 360 - 180;
+      let E = M + e / R * sn(M);
+      for (let i = 0; i < 20; i++) { const dE = (M - (E - e / R * sn(E))) / (1 - e * cs(E)); E += dE; if (Math.abs(dE) < 1e-9) break; }
+      const xp = a * (cs(E) - e), yp = a * Math.sqrt(1 - e * e) * sn(E);
+      return [(cs(w) * cs(Om) - sn(w) * sn(Om) * cs(I)) * xp + (-sn(w) * cs(Om) - cs(w) * sn(Om) * cs(I)) * yp,
+        (cs(w) * sn(Om) + sn(w) * cs(Om) * cs(I)) * xp + (-sn(w) * sn(Om) + cs(w) * cs(Om) * cs(I)) * yp,
+        (sn(w) * sn(I)) * xp + (cs(w) * sn(I)) * yp];
+    };
+    const e = helio('E', T);
+    let d = [0, 0, 0], dist = 0, tau = 0;
+    for (let i = 0; i < 3; i++) {
+      const p = helio(name, T - tau / 36525);
+      d = [p[0] - e[0], p[1] - e[1], p[2] - e[2]]; dist = Math.hypot(...d); tau = 0.0057755183 * dist;
+    }
+    const lam = Math.atan2(d[1], d[0]) / R + 5029.0966 / 3600 * T, bet = Math.asin(d[2] / dist) / R;
+    const eps = 23.4392911 - 0.0130042 * T;
+    const ra = nm(Math.atan2(sn(lam) * cs(eps) - Math.tan(bet * R) * sn(eps), cs(lam)) / R);
+    const dec = Math.asin(sn(bet) * cs(eps) + cs(bet) * sn(eps) * sn(lam)) / R;
+    const H = nm(280.46061837 + 360.98564736629 * (jd - 2451545) + SITE[1] - ra), lat = SITE[0];
+    const alt = Math.asin(sn(lat) * sn(dec) + cs(lat) * cs(dec) * cs(H)) / R;
+    const refr = alt > -2 ? 1.02 / Math.tan((alt + 10.3 / (alt + 5.11)) * R) / 60 : 0;
+    // elongation: the angle at the Earth between the planet and the Sun
+    const re = Math.hypot(...e), cosEl = -(d[0] * e[0] + d[1] * e[1] + d[2] * e[2]) / (dist * re);
+    return { alt: alt + refr, elong: Math.acos(Math.max(-1, Math.min(1, cosEl))) / R };
+  }
   // The moment: the visitor's local date and time, read as Antigua's (UTC-4, no daylight saving).
   function moonMoment() {
     let q = null;
@@ -154,17 +195,21 @@
     const t = f ? [+f[1], f[2] - 1, +f[3], +f[4], +f[5]] : (() => { const n = new Date(); return [n.getFullYear(), n.getMonth(), n.getDate(), n.getHours(), n.getMinutes()]; })();
     return Date.UTC(t[0], t[1], t[2], t[3], t[4]) + 4 * 3600e3;
   }
-  // Sets the phase and size of both schemes' Moon (its place and tilt stay the baked ones) and whether it
-  // is shown at all; true when anything a drawing shows has changed (checked each minute with the clock).
+  // Sets the phase and size of both schemes' Moon (its place and tilt stay the baked ones) and whether it,
+  // Venus and Jupiter are shown at all: up, and clear of the Sun's glare (Venus 10 degrees from it,
+  // Jupiter 12); true when anything a drawing shows has changed (checked each minute with the clock).
+  const skyNow = () => SKY.moonUp + ':' + Math.round(SKY.d.moon[2] * 50) + ':' + JSON.stringify(SKY.plUp);
   function tonight() {
     const ms = moonMoment();
-    const was = SKY.moonUp + ':' + Math.round(SKY.d.moon[2] * 50);
+    const was = skyNow();
     if (ms !== null) {
       const o = moonAt(ms);
       for (const m of ['d', 'n']) SKY[m].moon = [SKY[m].moon0[0], SKY[m].moon0[1], o.k, SKY[m].moon0[3], o.sd];
       SKY.moonUp = o.alt > 0.5 && o.k > 0.03;
+      const v = planetAt('V', ms), j = planetAt('J', ms);
+      SKY.plUp = { V: v.alt > 1 && v.elong > 10, J: j.alt > 1 && j.elong > 12 };
     }
-    return was !== SKY.moonUp + ':' + Math.round(SKY.d.moon[2] * 50);
+    return was !== skyNow();
   }
   tonight();
   const ISL = ['M', 'R', 'N', 'K', 'G'].map((k) => pairs(D[k]));
@@ -420,6 +465,7 @@
   function planets(v, m, boxes, cls) {
     let out = '';
     for (const [name, az, alt] of SKY[m].pl) {
+      if (SKY.plUp && SKY.plUp[name] === false) continue;   // not up tonight (tonight(), above)
       const x = v.x(az), y = v.y(alt), venus = name === 'V';
       if (x < 8 || x > v.W - 8 || y < 6 || y > v.y0 - 8 || hits(boxes, x - 4, y - 4, x + 4, y + 4, 7)) continue;
       out += `<circle cx="${F(x)}" cy="${F(y)}" r="${venus ? 10 : 6}" fill="url(#islplanet)" opacity="${venus ? 1 : 0.6}"/>`
