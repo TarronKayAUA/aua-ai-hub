@@ -159,7 +159,10 @@ PAGE_JS = r"""
   // same width and today's pages already run it past 95.
   const cpl = [], cplSmall = [];
   const range = document.createRange();
-  const base = parseFloat(getComputedStyle(document.querySelector('.md-typeset') || document.body).fontSize);
+  // Body size is the article's: the first .md-typeset in the document is an
+  // announcement banner's when one shows, whose smaller text made the next-token
+  // demo's small-print disclaimer count as a 97-character body line (2026-09-28).
+  const base = parseFloat(getComputedStyle(root.querySelector('.md-typeset') || root).fontSize);
   for (const p of root.querySelectorAll('p')) {
     if (!vis(p) || p.closest('table, nav, .secnav, .md-footer')) continue;
     const t = p.textContent.replace(/\s+/g, ' ').trim();

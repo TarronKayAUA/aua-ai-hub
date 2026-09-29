@@ -17,10 +17,16 @@
   if (!page) return;
   var wide = window.matchMedia("(min-width: 68.75em)");
 
+  // The room a reader has while reading a piece: the window below the sticky
+  // header. Its height, not where its bottom edge sits now: at the top of the
+  // page an announcement banner sits above the header and scrolls away, and
+  // header.autohide moves it while scrolling. Reading the edge let the redesign
+  // banner (2026-09-28) take ~50px from the room and stack every prompt's text
+  // under its "Fill In Your Details" form, leaving half the panel empty.
   function avail() {
     var header = document.querySelector(".md-header");
-    var top = header ? header.getBoundingClientRect().bottom : 0;
-    return window.innerHeight - Math.max(0, top) - 24;
+    var top = header ? header.getBoundingClientRect().height : 0;
+    return window.innerHeight - top - 24;
   }
 
   // Two cells read side by side in the grid: neither spans both tracks.
