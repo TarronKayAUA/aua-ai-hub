@@ -249,6 +249,13 @@ content-watch workflow with its `review_page` input (e.g.
 `tools/hardware.md`), or locally:
 `python scripts/content_watch.py --no-bump --review-page tools/hardware.md`
 (claim verdicts print in the log).
+When `link-health` reports a dead link on a past opportunity (a 404 or
+410, and no copy in the Internet Archive), record it instead of deleting
+the entry: add `link_gone: <date checked>` to it in
+`data/opportunities.yaml` with a comment saying what the link returned.
+The page then shows the name unlinked with a note, and the link check
+skips it. The build refuses the field on an opportunity that has not
+passed, because a live opportunity with a dead link needs a human.
 Nightly `refresh` and push-triggered `deploy` failures arrive as Actions
 failure notifications; the run log's verification block says what happened.
 

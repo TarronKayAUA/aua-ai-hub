@@ -1989,8 +1989,17 @@ def _opportunity_row(opp, today) -> str:
     detail = " ".join(str(opp["relevance"]).split())
     if opp.get("support"):
         detail += " " + " ".join(str(opp["support"]).split())
+    gone = opp.get("link_gone")
+    if gone:
+        # A past opportunity whose official page has gone (owner, 2026-09-29):
+        # kept as a record, unlinked, with a note saying why and when.
+        name = opp["name"]
+        detail += (f" Link removed: the organizer's page was taken down after the "
+                   f"opportunity closed (checked {gone.strftime('%B')} {gone.day}, {gone.year}).")
+    else:
+        name = f"[{opp['name']}]({opp['url']})"
     name_cell = (
-        f"[{opp['name']}]({opp['url']})<br>"
+        f"{name}<br>"
         f"<small>{opp['organizer']}. {detail}</small>"
     )
     start, end = opp.get("start_date"), opp.get("end_date")
@@ -2057,7 +2066,22 @@ def _render_opportunities(config) -> str:
                 f"render_data hook: unknown format {opp['format']!r} "
                 f"on {opp['name']!r}"
             )
-        {"past": past, "in_progress": in_progress, "open": open_now}[opportunity_state(opp, today)].append(opp)
+        state = opportunity_state(opp, today)
+        if opp.get("link_gone") is not None:
+            # A recorded dead link is for a past opportunity only: a live one
+            # with a dead link needs a human, not a note.
+            if not isinstance(opp["link_gone"], date):
+                raise ValueError(
+                    f"render_data hook: link_gone on {opp['name']!r} must be a "
+                    f"date (YYYY-MM-DD), got {opp['link_gone']!r}"
+                )
+            if state != "past":
+                raise ValueError(
+                    f"render_data hook: {opp['name']!r} is marked link_gone but "
+                    f"has not passed ({state}); a live opportunity with a dead "
+                    f"link needs a human"
+                )
+        {"past": past, "in_progress": in_progress, "open": open_now}[state].append(opp)
 
     open_now.sort(key=lambda o: _opportunity_sort_key(o, today))
     past.sort(key=lambda o: str(o.get("end_date") or o["deadline"]),

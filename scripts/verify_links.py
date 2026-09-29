@@ -201,6 +201,9 @@ for _md, _want in LINK_CONTROLS:
 URL_FIELDS = {"url": None, "thumbnail": "image/"}
 
 
+RECORDED_GONE: list[str] = []
+
+
 def collect() -> list[tuple[str, str, str | None]]:
     """Return (source, url, expected Content-Type prefix or None) triples."""
     pairs = []
@@ -221,6 +224,13 @@ def collect() -> list[tuple[str, str, str | None]]:
         entries = yaml.safe_load(path.read_text(encoding="utf-8")) or []
         for entry in entries:
             label = entry.get("name") or entry.get("title", "?")
+            # A past opportunity whose page has gone is a recorded dead link
+            # (link_gone, owner 2026-09-29): the site no longer links it, so it
+            # is counted, not checked. Opportunities only, the one renderer
+            # that honours the field.
+            if yaml_rel == "data/opportunities.yaml" and entry.get("link_gone"):
+                RECORDED_GONE.append(f"{yaml_rel}:{label}")
+                continue
             for field, expect in URL_FIELDS.items():
                 url = entry.get(field, "")
                 if url and url != "TBD":
@@ -708,6 +718,8 @@ def main() -> int:
           f"{canaries} soft-404 canaries)")
     print(f"passed        : {checks - len(failures)}")
     print(f"failed        : {len(failures)}")
+    if RECORDED_GONE:
+        print(f"recorded gone : {len(RECORDED_GONE)} (past opportunities marked link_gone, not checked)")
     if canaries:
         print(f"soft 404      : {canaries} shape"
               f"{'' if canaries == 1 else 's'} engaged, "

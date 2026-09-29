@@ -54,7 +54,11 @@ Owner's instruction for this run: $ARGUMENTS
 - **Feed and link health items**: follow the README playbook section
   "When automation emails you". A site that blocks scripted clients but
   is live in a browser belongs in the MANUALLY_VERIFIED allowlist in
-  scripts/verify_links.py with a dated comment.
+  scripts/verify_links.py with a dated comment. A dead link on a PAST
+  opportunity (404 or 410, no Internet Archive copy) is recorded, never
+  deleted: add `link_gone: <date checked>` to the entry in
+  data/opportunities.yaml with a comment saying what the link returned
+  (owner direction 2026-09-29; the header documents the field).
 
 ## After edits
 

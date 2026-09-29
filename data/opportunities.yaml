@@ -40,6 +40,12 @@
 #   support      optional one line, organizer-stated prizes or support
 #   relevance    one line, why this belongs in front of this audience
 #   verified     date the official page was last checked by a human
+#   link_gone    optional date: the official page has gone (a 404 or 410,
+#                no archived copy) and the opportunity has passed (owner
+#                direction 2026-09-29). The entry stays as a record: its
+#                name renders unlinked with a note, and the link check
+#                skips it. Past entries only; a live opportunity with a
+#                dead link needs a human, and the build refuses it.
 
 # Verified 2026-07-07 on the Devpost page: submissions May 19 to
 # August 17, 2026; US$2,000,000 organizer-stated prize pool; free entry.
@@ -142,6 +148,9 @@
   support: "Organizer-stated: $1,500+ in cash prizes (1st $1,000, 2nd $400, 3rd $100, plus certificates for other placements)"
   relevance: Online AI challenge for students, open internationally, with a machine learning focus.
   verified: 2026-07-27
+  # Link gone 2026-09-29: the Devpost page answers HTTP 410 (Gone) and the
+  # Internet Archive holds no copy; the challenge ended July 30.
+  link_gone: 2026-09-29
 
 # Auto-verified 2026-08-04 from the official page (managed platform; gates: current, organizer named, free entry, deadline confirmed).
 - name: "Agentic Cinema: The Blockbuster Hackathon"
