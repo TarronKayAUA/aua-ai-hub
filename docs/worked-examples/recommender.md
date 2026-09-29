@@ -16,7 +16,7 @@ That single screen is the most useful thing that happened in this project, and e
 
 ## What I Built, and What I Did Not Do
 
-In August 2026 I built a media tracker for my family. It follows films, television, games and books across six people in four countries, tells you the day the thing you are waiting for actually arrives, and answers the question that ruins more evenings than any other: what should we watch tonight, for whoever happens to be in the room.
+In August 2026 I built a media tracker for my family. It follows films, television, games and books across six people in two countries, tells you the day the thing you are waiting for actually arrives, and answers the question that ruins more evenings than any other: what should we watch tonight, for whoever happens to be in the room.
 
 It has been in real use since August. It costs about seven and a half dollars a month to run, five for the hosting plan and about two and a half for the AI, plus about six cents each time it thinks hard about a recommendation.
 
@@ -35,7 +35,7 @@ I did not write any of it. Not a line. Across some sixteen hundred messages I ne
 | Design and rationale documents | About 7,900 lines, in 16 documents |
 | Lines of code I wrote | Zero |
 
-The row I want you to look at twice is not the last one. It is the pair in the middle. For most of this project there was more code checking the system than there was system. Today, counting only the logic and leaving out the code that draws the pictures and styles the pages, the two are within three percent of each other, and that closeness is not an accident of enthusiasm. It is the entire reason I am able to tell you anything about whether the thing works.
+The row I want you to look at twice is not the last one. It is the pair in the middle. Counting only the logic, and leaving out the code that draws the pictures and styles the pages, the code checking this system is now within three percent of the size of the system itself, and it has been catching up the whole way: in late August it was less than half. That is not an accident of enthusiasm. It is the entire reason I am able to tell you anything about whether the thing works.
 
 ## The Failures That Do Not Announce Themselves
 
@@ -163,11 +163,11 @@ So both were raced on the one instrument I do trust: 118 films and shows that ha
 | Opus 5.5, low | 3.50 of 5 | 9.43¢ | 1,378 | −0.60 (−0.97 to −0.23) |
 | Opus 5.5, high (estimate) | Not tested | About 12¢ (11 to 14¢) | About 2,700 | Not run |
 
-All six are Anthropic's Claude models. Prices are per pick, computed from the token counts returned with each call. The Sonnet 5 and Opus rows were run five days earlier, on the same titles with the same prompt code. Opus 5.5 at high effort was estimated rather than run, because high effort had not helped Sonnet. The whole effort race cost $1.88.
+All three models are Anthropic's Claude models. Prices are per pick, computed from the token counts returned with each call. The Sonnet 5 and Opus rows were run five days earlier, on the same titles with the same prompt code. Opus 5.5 at high effort was estimated rather than run, because high effort had not helped Sonnet. The whole effort race cost $1.88.
 
-Thinking harder made it worse. High effort never beat low effort in a single round, cost a fifth more, and took twice as long. The biggest model came last, at more than twice the price. The one change that helped was a newer version of the same mid-sized model, which was also the cheapest line in the table.
+Thinking harder did not help. High effort never beat low effort in a single round, cost a fifth more, and took twice as long. The biggest model came last, at more than twice the price. The best line in the table, and the cheapest, was simply the newer version of the same mid-sized model, though its lead over the old one is small enough that chance could explain it.
 
-The smaller finding mattered more to me than the table. Run twice on the same titles, the same model agrees on about four of its five picks. Nobody had ever measured that, and it means any gap of a few tenths is noise. Without that one number I would have read every difference in the table as a result.
+The smaller finding mattered more to me than the table. Run twice on the same titles, the same model agrees on about four of its five picks. I had never measured that, and it means any gap of a few tenths is noise. Without that one number I would have read every difference in the table as a result.
 
 ## What I Never Handed Over
 
