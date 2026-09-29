@@ -141,7 +141,7 @@
   # getting-started page returns a plain product description to scripts
   # ("AI-powered answer engine ... backed by citations you can verify"),
   # so verification points there rather than skipping (probed 2026-08-26).
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-09-29
   verify_url: https://www.perplexity.ai/hub/getting-started
   blurb: Search-centered assistant that answers questions with citations to live web sources, useful when you need traceable answers rather than open-ended chat.
 
@@ -171,7 +171,7 @@
   url: https://claude.com/product/claude-code
   cost: paid
   governance_status: listed
-  last_reviewed: 2026-08-25
+  last_reviewed: 2026-09-29
   blurb: Anthropic's agent for software work, available in the terminal, in code editor extensions, in a desktop app, and in the browser. Plans and executes multi-step tasks against your own files; included with paid Claude plans.
 
 - name: Cowork
@@ -212,7 +212,7 @@
   url: https://openai.com/chatgpt-work/
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-08-25
+  last_reviewed: 2026-09-29
   # Blurb and cost updated 2026-07-28 (issue #28, owner approved): the
   # successor-to-Agent-Mode framing no longer appears on any official
   # page (the renamed-from comment above preserves that history), the
@@ -268,7 +268,7 @@
   url: https://www.perplexity.ai/hub/products/computer-for-windows
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-08-25
+  last_reviewed: 2026-09-29
   blurb: Perplexity's desktop agent, which orchestrates multiple models across local files, native applications, and the web from a single request. Generally available in the Mac app; rolling out to Pro and Max subscribers on Windows.
 
 - name: OpenClaw
@@ -287,7 +287,7 @@
   url: https://elicit.com
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-08-25
+  last_reviewed: 2026-09-29
   blurb: Literature research assistant that finds papers and extracts key findings into structured tables.
 
 - name: Consensus
@@ -308,7 +308,7 @@
   url: https://scite.ai
   cost: paid
   governance_status: listed
-  last_reviewed: 2026-08-25
+  last_reviewed: 2026-09-29
   blurb: Citation analysis tool that shows whether later papers support or dispute a given study's claims.
 
 # Renamed 2026-08-26: Google announced "NotebookLM is now Gemini Notebook"
@@ -372,7 +372,7 @@
   url: https://www.semanticscholar.org
   cost: free
   governance_status: listed
-  last_reviewed: 2026-08-25
+  last_reviewed: 2026-09-29
   blurb: Free academic search engine with paper summaries, citation graphs, and author pages across scientific fields.
 
 - name: Claude Science
@@ -980,7 +980,7 @@
   url: https://www.covidence.org/
   cost: paid
   governance_status: listed
-  last_reviewed: 2026-08-18
+  last_reviewed: 2026-09-29
   blurb: Web platform for managing systematic reviews with a team, covering screening, data extraction, and reporting aligned to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) standard. Artificial intelligence features sort records by predicted relevance, tag randomized controlled trials, and suggest data extraction values that reviewers accept or reject one at a time.
 
 - name: BioRender
@@ -991,7 +991,7 @@
   cost: freemium
   governance_status: listed
   status_note: The free tier is for educational use only and grants no publication rights; check your plan before a figure goes into a manuscript.
-  last_reviewed: 2026-08-18
+  last_reviewed: 2026-09-29
   blurb: Web-based tool for building scientific figures, slides, and posters from a library of biomedical icons and templates. Its artificial intelligence features convert uploaded images to the platform's style, edit icons from text prompts, and draft flowcharts, protocols, and timelines from written descriptions.
 
 - name: Adobe Podcast
