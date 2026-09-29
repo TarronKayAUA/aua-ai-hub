@@ -36,10 +36,19 @@ What it measures, per page, at 1920x1080 and 1440x900:
 Pages: the ones chosen with --page, or every page in the sitemap except the
 weekly digests (which repeat one layout; the news check covers them).
 
+An announcement banner (mkdocs.yml `extra: announce`) is closed first, with
+its own button, as a visitor who closed it (Material remembers that for the
+whole site). A banner shifts every page down by its height at the top and
+scrolls away, so measured with it the screens fall in different places and a
+page's blank share moves with nothing changed (playbooks/writing-feedback, 14%
+to 21% at 1440, on 2026-09-28; owner). A page whose banner stays open after
+that is reported as not measured, never measured with it.
+
 Compared with scripts/design/baselines.json. A page FAILS when, at either
 width:
   - its blank share rises more than BLANK_TOLERANCE (5 points) above its
-    baseline;
+    baseline (pages the pipeline rewrites, news/ and opportunities/, are
+    reported, not failed: see VARIES);
   - a reading page (task, lesson, reference) sets a line of running text
     over CPL_MAX (95) characters;
   - it has more heading inversions (a heading sitting above an earlier
@@ -68,7 +77,10 @@ BLANK_TOLERANCE = 0.05
 # baseline and never failed (found on the first laptop run, 2026-09-27: news/clinical-practice
 # read 37% against a cloud baseline of 31% with its layout intact). Their line length, headings,
 # sidebars and sideways scroll are still checked, and the news check covers their layout.
-VARIES = re.compile(r"news/")
+# Opportunities joined them on 2026-09-28 (owner): the opportunity watch adds listings on its
+# own, and one new row took the table past the 60%-of-a-screen limit for a box to count as
+# used, so the page read 43% at 1440 against a baseline of 18% with its layout unchanged.
+VARIES = re.compile(r"news/|opportunities/")
 CPL_MAX = 95
 READING = ("task", "lesson", "reference")
 
@@ -260,10 +272,27 @@ def quantiles(xs):
     return {"n": len(xs), "median": statistics.median(xs), "p10": pick(0.1), "p90": pick(0.9), "max": xs[-1]}
 
 
+BANNER = '[data-md-component="announce"]'
+BANNER_SHOWN_JS = f"() => {{ const b = document.querySelector('{BANNER}'); return !!(b && b.checkVisibility()); }}"
+
+
+def close_banner(pg, path) -> bool:
+    """Close an open announcement banner with its own button, then load the
+    page again so the layout is set without it. True when one was closed."""
+    if not pg.evaluate(BANNER_SHOWN_JS):
+        return False
+    pg.click(f"{BANNER} .md-banner__button")
+    pg.goto(BASE + path, wait_until="load")
+    if pg.evaluate(BANNER_SHOWN_JS):
+        raise RuntimeError("the announcement banner stayed open after its close button")
+    return True
+
+
 def measure_view(pg, path, w, h, scheme):
     pg.set_viewport_size({"width": w, "height": h})
     pg.emulate_media(color_scheme=scheme, reduced_motion="reduce")
     pg.goto(BASE + path, wait_until="load")
+    closed = close_banner(pg, path)
     pg.wait_for_timeout(700)
     info = pg.evaluate(PAGE_JS)
     total = pg.evaluate("document.documentElement.scrollHeight")
@@ -285,7 +314,7 @@ def measure_view(pg, path, w, h, scheme):
         "cpl": quantiles(info["cpl"]), "cpl_small": quantiles(info["cplSmall"]),
         "inversions": info["inversionCount"], "inversion_examples": info["inversions"],
         "sidebar_left": info["left"], "sidebar_right": info["right"],
-        "overflow": overflow, "height": total, "type": info["type"],
+        "overflow": overflow, "height": total, "type": info["type"], "banner_closed": closed,
     }
 
 
@@ -380,7 +409,7 @@ def run(env, report, update=False, focus=False):
                 was = b[w]["blank"]
                 said = f"{name} {w}: blank {v['blank_mean']:.0%} (baseline {was:.0%})"
                 if VARIES.match(path):
-                    report.note(said + ", a news page: reported, not checked")
+                    report.note(said + ", rewritten by the pipeline: reported, not checked")
                 else:
                     report.check(v["blank_mean"] <= was + BLANK_TOLERANCE, said)
             if r["type"] in READING:
@@ -398,6 +427,9 @@ def run(env, report, update=False, focus=False):
             report.check(not hidden, f"{name}: {hidden} focus stops fully hidden")
         if b is None:
             report.note(f"{name}: not in the baseline yet (refresh it with --update-baselines)")
+    if any(r[w].get("banner_closed") for r in results.values() if "error" not in r for w in ("1920", "1440")):
+        report.note("an announcement banner was open: closed with its own button before measuring, "
+                    "as a visitor who closed it")
     measured = {p: slim(r) for p, r in results.items() if "error" not in r}
     table = by_type(measured) if measured else {}
     print("  by page type (mean blank per screen 1920 / 1440, median and max characters per line at 1920):")
