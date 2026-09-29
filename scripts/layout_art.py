@@ -55,7 +55,11 @@ TIMES = ("dawn", "day", "sunset", "dusk", "night")
 # docs/stylesheets/layout-art.css sets the two side by side from 68.75em, the picture on the right
 # where the head left the frame empty. Below that the wrapper is an ordinary block and the figure is
 # hidden, so the page reads as before.
-HEAD_END = re.compile(r'<(h2\b|div class="grid|p class="kind-key|div class="learn-door|div data-tp-landing)')
+# A head ends at the first thing that is not the title and its lede: a section, a door's cards or rows,
+# a shelf (the Tool Directory's, whose first h2 is inside it), a news page's brief, or a grid of
+# resource cards (Learning to Prompt, which has no h2) (2026-09-29).
+HEAD_END = re.compile(r'<(h2\b|div class="grid|p class="kind-key|div class="learn-door|div data-tp-landing'
+                      r'|div class="shelf|div class="door-rows|div class="section-brief|div class="video-grid)')
 
 # STACKS (2026-09-28, the About page): `section: [first, last]` wraps the h2 sections from `first`
 # through `last` in `div.isl-stack` with the picture beside them. `first` may be `_title` (owner,
