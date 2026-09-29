@@ -25,10 +25,16 @@ report (issues #31 and #45).
 
 Recovery counts as actionable only inside GitHub Actions. From an ordinary
 network these feeds pass, which is normal and says nothing about the block.
+
+A failure that can pass on its own (a server error, a rate limit, a timeout
+or a dropped connection) is tried twice more, 5 and then 15 seconds later,
+before it counts. The output says how many attempts a feed took, so a flaky
+feed stays visible even when it passes.
 """
 
 import os
 import sys
+import time
 from pathlib import Path
 
 import feedparser
@@ -41,6 +47,13 @@ HEADERS = {
     "User-Agent": "AUA-AI-Hub feed checker (github.com/TarronKayAUA/aua-ai-hub)"
 }
 TIMEOUT = 20
+# Retry what can pass on its own (2026-09-29): hnrss.org answered 502 for
+# seconds at a time, from everywhere, and a single 502 made the Ubuntu canary
+# report the Hacker News feed as a new failure for a human to act on. A 403
+# or 404 is not retried: a block or a missing feed does not change in
+# seconds, and the tolerated Substack blocks would only slow the run.
+RETRY_WAITS = (5, 15)   # seconds before the second and the third attempt
+RETRY_STATUS = {429} | set(range(500, 600))
 
 
 def collect() -> list[tuple[str, str, bool, str | None]]:
@@ -77,22 +90,38 @@ def check(url: str, browser_ua: bool = False) -> tuple[bool, str]:
                                  "AppleWebKit/537.36 (KHTML, like Gecko) "
                                  "Chrome/126.0.0.0 Safari/537.36 "
                                  "(AUA-AI-Hub feed checker)")
-    try:
-        resp = requests.get(url, headers=headers, timeout=TIMEOUT)
-        if resp.status_code >= 400:
-            return False, f"HTTP {resp.status_code}"
-    except requests.RequestException as exc:
-        return False, type(exc).__name__
+    errors: list[str] = []
+    while True:
+        try:
+            resp = requests.get(url, headers=headers, timeout=TIMEOUT)
+            error = f"HTTP {resp.status_code}" if resp.status_code >= 400 else None
+            transient = resp.status_code in RETRY_STATUS
+        except (requests.Timeout, requests.ConnectionError) as exc:
+            error, transient = type(exc).__name__, True
+        except requests.RequestException as exc:
+            error, transient = type(exc).__name__, False
+        if error is None:
+            # Say what the earlier attempts got, so a flaky feed stays visible.
+            tried = f" ({len(errors) + 1} attempts, after {', '.join(errors)})" if errors else ""
+            break
+        errors.append(error)
+        if not transient or len(errors) > len(RETRY_WAITS):
+            if len(errors) == 1:
+                return False, error
+            if len(set(errors)) == 1:
+                return False, f"{error} ({len(errors)} attempts)"
+            return False, f"{error} ({len(errors)} attempts: {', '.join(errors)})"
+        time.sleep(RETRY_WAITS[len(errors) - 1])
     parsed = feedparser.parse(resp.content)
     entries = len(parsed.entries)
     if entries == 0:
         detail = "parsed but 0 entries"
         if parsed.bozo:
             detail += f" (bozo: {parsed.bozo_exception})"
-        return False, detail
+        return False, detail + tried
     title = (parsed.feed.get("title") or "?").strip()[:40]
     newest = parsed.entries[0].get("published", parsed.entries[0].get("updated", "?"))
-    return True, f"{entries} entries | {title!r} | newest: {newest}"
+    return True, f"{entries} entries | {title!r} | newest: {newest}{tried}"
 
 
 def main() -> int:
