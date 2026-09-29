@@ -64,7 +64,13 @@
 }
 
 /* Night's layers (its stars, Milky Way, Moon and afterglow) show in a picture whose clock says Night, and
-   in the dark scheme's gutters, which have no clock; Dusk's show otherwise. */
+   in the dark scheme's gutters, which have no clock; Dusk's show otherwise. After midnight (data-late,
+   island-core.js: midnight to 4:59 by the visitor's clock) the evening's glow is gone (owner, 2026-09-29:
+   "the fade out after midnight"): the afterglow over the sunset point, its reflection, the glitter it lays
+   on the water and the rims it catches on the crests fade out over 1.6 seconds, and stay out until Dawn. */
+.isl :is(.isl-nglow, .isl-aglow, .s-rim) { transition: opacity 1.6s ease-in-out; }
+.isl[data-sky="night"][data-late] :is(.isl-nglow, .isl-aglow, .s-rim) { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .isl :is(.isl-nglow, .isl-aglow, .s-rim) { transition: none; } }
 .isl .isl-n { display: none; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-n, .isl[data-sky="night"] .isl-n { display: inline; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-d, .isl[data-sky="night"] .isl-d { display: none; }
@@ -77,14 +83,26 @@
 .isl .isl-a, .isl .isl-y, .isl .isl-s { display: none; }
 /* SUNSET (owner, 2026-09-28: five versions): each picture's Dusk drawing a few minutes before sunset, the
    Sun just above the horizon wherever the view truly shows it (sunDisc), the sky brighter and warmer, the
-   first stars not yet out; Venus and the Moon stay, the lights are coming on. */
+   first stars not yet out; Venus and the Moon stay, the lights are coming on. Reddish throughout (owner,
+   2026-09-29: "sunset consistently reddish", Dawn "consistently purplish", Night, Day and Dusk blue; then,
+   from a mock-up beside Dawn, "yes to the redder sunset"): wine overhead, crimson through the middle,
+   red-orange at the horizon, so it is never taken for Dawn's violet and pink. */
 .isl[data-sky="sunset"] .isl-s { display: inline; }
 .isl[data-sky="sunset"] .isl-dstars { display: none; }
 .isl[data-sky="sunset"] {
-  --isl-sky0: #22507f; --isl-sky1: #3f6e9e; --isl-sky2: #8a9fc0; --isl-sky3: #f0c190; --isl-hz: #ffc98a;
-  --isl-g1: #ffe0a8; --isl-g2: #f7a46e; --isl-g3: #b58aa6;
-  --isl-sea0: #b9a492; --isl-sea1: #3d6a8e; --isl-sea2: #1d4466; --isl-haze: #f2d8c0;
-  --isl-isl: #6d7fa0; --isl-far: #24466b; --isl-near: #14304f;
+  --isl-sky0: #2e2150; --isl-sky1: #6a2c4e; --isl-sky2: #b8434a; --isl-sky3: #ec6a3c; --isl-hz: #ff9152;
+  --isl-g1: #ffc27e; --isl-g2: #f0603e; --isl-g3: #a8395a;
+  --isl-sea0: #c86a55; --isl-sea1: #4a3f6e; --isl-sea2: #22284f; --isl-haze: #f0a07c;
+  --isl-isl: #4d3558; --isl-far: #24466b; --isl-near: #14304f;
+}
+/* DUSK (owner, 2026-09-29: "dusk should be a little darker across"): from 19:00 the Sun is already well
+   below the horizon in Antigua and the last glow fades by about 19:30, so Dusk is nearly night: a deep
+   navy sky, a low glow in the west, the land darker. The frigatebird darkens with it, so it still reads
+   against the sky. */
+.isl[data-sky="dusk"] {
+  --isl-sky0: #061a30; --isl-sky1: #0a2d4f; --isl-sky2: #154268; --isl-sky3: #3a6488; --isl-hz: #7a93aa;
+  --isl-sea0: #3b5b76; --isl-sea1: #173955; --isl-sea2: #08223b; --isl-haze: #7f93a8;
+  --isl-isl: #1b3450; --isl-far: #102a44; --isl-near: #07182a; --isl-bird: #020912;
 }
 .isl[data-sky="dawn"] .isl-a,
 .isl[data-sky="day"] .isl-y { display: inline; }
@@ -92,16 +110,17 @@
 .isl .st-cloud { stop-color: var(--isl-cloud, #ffffff); }
 .isl .st-cloud-s { stop-color: var(--isl-cloud-s, #c9d6e0); }
 /* DAWN: the Sun three degrees below the horizon behind a west-facing view, so the western sky shows
-   the pink band above the Earth's blue-gray shadow; the land still dim, the lamps still lit. */
+   the pink band above the Earth's blue-gray shadow; the land still dim, the lamps still lit. Purplish
+   throughout (owner, 2026-09-29): violet overhead through lavender to pink at the horizon. */
 .isl[data-sky="dawn"] {
-  --isl-sky0: #34507f; --isl-sky1: #6078a6; --isl-sky2: #a891b4; --isl-sky3: #e6b4b0; --isl-hz: #8e9ab4;
-  --isl-g1: #ffd9a8; --isl-g2: #f0a79a; --isl-g3: #9a86ad;
-  --isl-sea0: #c2a6b8; --isl-sea1: #5d7399; --isl-sea2: #2f4d72; --isl-haze: #e2c8cf;
-  --isl-isl: #7d88a6; --isl-far: #3e5474; --isl-near: #273a53;
-  --isl-rip: #dfe2ef; --isl-rip-a: 0.28; --isl-hzline: rgba(255, 228, 222, 0.4);
-  --isl-rim: #f4c9c2; --isl-bird: #1d2b40;
-  --isl-cloud: #ffd7b4; --isl-cloud-s: #8a90b0; --isl-gild: #ffbe8c;
-  --isl-vbay: #7390b4; --isl-vsand: #dccbc6; --isl-vwall: #d8dce6; --isl-vrail: rgba(232, 236, 244, 0.55);
+  --isl-sky0: #37417a; --isl-sky1: #685f9e; --isl-sky2: #a58cbf; --isl-sky3: #d9a8c6; --isl-hz: #a898c0;
+  --isl-g1: #ffd6d4; --isl-g2: #dfa0c4; --isl-g3: #9a86c4;
+  --isl-sea0: #b9a2c8; --isl-sea1: #5c6a9e; --isl-sea2: #2e4070; --isl-haze: #dcc4e2;
+  --isl-isl: #8a86ae; --isl-far: #434e78; --isl-near: #2a3456;
+  --isl-rip: #e2dff0; --isl-rip-a: 0.28; --isl-hzline: rgba(246, 226, 240, 0.4);
+  --isl-rim: #f0c4dc; --isl-bird: #1f2442;
+  --isl-cloud: #f6cfe2; --isl-cloud-s: #8c88b8; --isl-gild: #f6b6cc;
+  --isl-vbay: #7b88b8; --isl-vsand: #dccbd6; --isl-vwall: #d8d6ea; --isl-vrail: rgba(236, 232, 246, 0.55);
 }
 /* DAY: mid-morning, the Sun high behind a west-facing view: a blue sky paling to haze at the horizon,
    trade-wind cumulus, a turquoise harbour, green hills. */
@@ -140,10 +159,10 @@
   --isl-sea0: #2f6f93; --isl-haze: #7fa9c4; --isl-sky3: #7fb0d4; --isl-hz: #9cc0d8;
 }
 .isl.isl-hero:not(.isl-bold)[data-sky="dawn"] {
-  --isl-sea0: #6a7596; --isl-haze: #a08aa6; --isl-sky3: #b08aa0; --isl-hz: #7d86a4;
+  --isl-sea0: #6b6a98; --isl-haze: #9c86ae; --isl-sky3: #a886ac; --isl-hz: #827ca8;
 }
 .isl.isl-hero:not(.isl-bold)[data-sky="sunset"] {
-  --isl-sea0: #675e72; --isl-haze: #98797a; --isl-sky3: #b4876e; --isl-hz: #ad8466;
+  --isl-sea0: #5e4760; --isl-haze: #8f5a5e; --isl-sky3: #a8524a; --isl-hz: #a4553f;
 }
 .isl .isl-shade2 { display: none; }
 .isl.isl-hero:is([data-sky="dawn"], [data-sky="day"], [data-sky="sunset"]) .isl-shade2 { display: inline; }
@@ -154,10 +173,10 @@
 /* the network's signal stays light on a daylight sky (the campus windows keep the Day's dark glass) */
 .isl.isl-hero[data-sky="day"] .isl-pulse { --isl-pulse: #fff1c8; }
 .isl.isl-hero[data-sky="dawn"] {
-  --isl-sky0: #283f6a; --isl-sky1: #445c8c; --isl-sky2: #9585ab; --isl-sky3: #e2b1ad;
+  --isl-sky0: #2b3166; --isl-sky1: #4b4988; --isl-sky2: #8f7cb2; --isl-sky3: #d4a4c2;
 }
 .isl.isl-hero[data-sky="sunset"] {
-  --isl-sky0: #1a426c; --isl-sky1: #2d5b8a;
+  --isl-sky0: #2a1d48; --isl-sky1: #56264a;
 }
 .isl .isl-veg-bf { fill: var(--isl-far); }
 .isl .isl-veg-bn { fill: var(--isl-near); }
@@ -238,6 +257,9 @@
 .isl .f-far { fill: var(--isl-far); }
 .isl .f-near { fill: var(--isl-near); }
 .isl .f-moon { fill: var(--isl-moon); }
+/* the Moon's seas and its limb (island-core.js, moon()): a quiet grey, never a hard edge */
+.isl .f-maria { fill: #8f8c80; fill-opacity: 0.42; }
+.isl .st-mlimb { stop-color: #8a826c; }
 .isl .f-earth { fill: var(--isl-earth); }
 .isl .f-planet { fill: var(--isl-planet); }
 .isl .f-pulse { fill: var(--isl-pulse); }
@@ -421,6 +443,144 @@
     display: none;
   }
 }
+/* The library (the Learn landing's head, 2026-09-29, from AUA's photographs): the study hall's
+   materials in each version. Dusk is the photograph's hour, the room dim and warm where the lamps
+   reach it; Night darker still; Day the cream walls, pale tiles and cherry wood in full light, the
+   ceiling panels lit and the lamps off; Dawn cool and pinkish, Sunset warm. The shades' lit glow is
+   the same green in every version the lamps are on. */
+.isl {
+  --isl-lwall0: #6f7179; --isl-lwall1: #a39d92; --isl-lside: #1b2230; --isl-lceil: #62656d; --isl-lgrid: #4e5159;
+  --isl-lpanel: #72767e; --isl-lfloor: #7c7468; --isl-lgrout: #665f55; --isl-lframe: #c9ccd1; --isl-lbase: #5a554e;
+  --isl-lwood: #7a3a24; --isl-lwood2: #4f2416; --isl-lchair: #7d8185; --isl-lchair2: #5c6064;
+  --isl-lred: #a8453a; --isl-lred2: #8e8f94; --isl-lalu: #b7bcc2; --isl-lsign: #2d5f9e;
+  --isl-lshade: #1e5a3a; --isl-lglow0: #3aa866; --isl-lglow1: #c4f7d0; --isl-lbronze: #4a3b2c;
+  --isl-lbk1: #7d3b35; --isl-lbk2: #34506e; --isl-lbk3: #8a7440; --isl-lcase: #4a3526; --isl-lcase2: #3a291d;
+  --isl-lpage: #e8e0cc; --isl-llap: #b9bcc1; --isl-lbottle: #b3302b;
+}
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
+  --isl-lwall0: #23252b; --isl-lwall1: #4d4a45; --isl-lside: #05070b; --isl-lceil: #1f2126; --isl-lgrid: #17191d;
+  --isl-lpanel: #25272c; --isl-lfloor: #3a352f; --isl-lgrout: #2c2823; --isl-lframe: #5a5e66; --isl-lbase: #2a2724;
+  --isl-lwood: #5a2618; --isl-lwood2: #34150c; --isl-lchair: #45484c; --isl-lchair2: #303235;
+  --isl-lred: #6e2a24; --isl-lred2: #4a4b50; --isl-lalu: #6c7178; --isl-lsign: #1f3f6a;
+  --isl-lshade: #143d27; --isl-lbronze: #2e251c;
+  --isl-lbk1: #4d2522; --isl-lbk2: #1f3044; --isl-lbk3: #54482a; --isl-lcase: #2c2017; --isl-lcase2: #1f160f;
+  --isl-lpage: #a79f8c; --isl-llap: #6e7176; --isl-lbottle: #7a211d;
+}
+.isl[data-sky="day"] {
+  --isl-lwall0: #e3ddd0; --isl-lwall1: #f1ece2; --isl-lside: #6a5f4c; --isl-lceil: #f0efea; --isl-lgrid: #d6d3cb;
+  --isl-lpanel: #fdfdf9; --isl-lfloor: #d7cdbb; --isl-lgrout: #c2b6a0; --isl-lframe: #fafafa; --isl-lbase: #b8ab96;
+  --isl-lwood: #9b4a2c; --isl-lwood2: #6a2e1a; --isl-lchair: #b3b7b9; --isl-lchair2: #8e9396;
+  --isl-lred: #cf5a43; --isl-lred2: #a9adb3; --isl-lalu: #d5d9de; --isl-lsign: #2f67ad;
+  --isl-lshade: #1f6b44; --isl-lbronze: #6b5842;
+  --isl-lbk1: #9c4b40; --isl-lbk2: #3f6b92; --isl-lbk3: #b3964f; --isl-lcase: #7a5a3e; --isl-lcase2: #5e4430;
+  --isl-lpage: #fbf6ea; --isl-llap: #d7dadf; --isl-lbottle: #d1392f;
+}
+.isl[data-sky="dawn"] {
+  --isl-lwall0: #8d8b9e; --isl-lwall1: #c3b8b8; --isl-lside: #2a2a40; --isl-lceil: #8f8ea0; --isl-lgrid: #7a7a8c;
+  --isl-lpanel: #979aab; --isl-lfloor: #a69a95; --isl-lgrout: #928680; --isl-lframe: #dcdbe6; --isl-lbase: #7d7474;
+  --isl-lwood: #7c3d2d; --isl-lwood2: #542719; --isl-lchair: #9a9ca8; --isl-lchair2: #7c7e8a;
+  --isl-lred: #b0524a; --isl-lred2: #9d9ea8; --isl-lalu: #c5c8d2; --isl-lsign: #37609a;
+  --isl-lshade: #1f5e3e; --isl-lbronze: #574636;
+  --isl-lbk1: #8a4540; --isl-lbk2: #3d5a7a; --isl-lbk3: #9a8350; --isl-lcase: #5e4535; --isl-lcase2: #4a3629;
+  --isl-lpage: #efe4dc; --isl-llap: #c4c5cf; --isl-lbottle: #bf3a33;
+}
+.isl[data-sky="sunset"] {
+  --isl-lwall0: #a88f7c; --isl-lwall1: #dcc3a4; --isl-lside: #3a2616; --isl-lceil: #a38e7e; --isl-lgrid: #8c7868;
+  --isl-lpanel: #ab9584; --isl-lfloor: #b89f86; --isl-lgrout: #a08a72; --isl-lframe: #efe0cc; --isl-lbase: #8c7560;
+  --isl-lwood: #86402a; --isl-lwood2: #5a2717; --isl-lchair: #a7a29e; --isl-lchair2: #87827d;
+  --isl-lred: #bf5540; --isl-lred2: #a39c96; --isl-lalu: #d3cabf; --isl-lsign: #3a5f94;
+  --isl-lshade: #1f5f3c; --isl-lbronze: #5e4a37;
+  --isl-lbk1: #904a3c; --isl-lbk2: #43607c; --isl-lbk3: #a88a4c; --isl-lcase: #684a33; --isl-lcase2: #523a28;
+  --isl-lpage: #f5e6cf; --isl-llap: #cfc7bf; --isl-lbottle: #c83f2e;
+}
+.isl .st-lwall0 { stop-color: var(--isl-lwall0); }
+.isl .st-lwall1 { stop-color: var(--isl-lwall1); }
+.isl .st-lglow0 { stop-color: var(--isl-lglow0); stop-opacity: 0.9; }
+.isl .st-lglow1 { stop-color: var(--isl-lglow1); stop-opacity: 0.95; }
+.isl .isl-lsidew { fill: var(--isl-lside); fill-opacity: 0.18; }
+.isl[data-sky="day"] .isl-lsidew { fill-opacity: 0.1; }
+.isl .isl-lceil { fill: var(--isl-lceil); }
+.isl .isl-lgrid { stroke: var(--isl-lgrid); fill: none; }
+.isl .isl-lpanel { fill: var(--isl-lpanel); }
+.isl .isl-lfloor { fill: var(--isl-lfloor); }
+.isl .isl-lgrout { stroke: var(--isl-lgrout); fill: none; }
+.isl .isl-lbase { stroke: var(--isl-lbase); fill: none; }
+.isl .isl-lframe { stroke: var(--isl-lframe); fill: none; stroke-linejoin: round; }
+.isl .isl-lsill { fill: var(--isl-lframe); }
+.isl .isl-lsun { fill: #fffcf2; fill-opacity: 0.4; }
+.isl .isl-lcase { fill: var(--isl-lcase); }
+.isl .isl-lcase2 { stroke: var(--isl-lcase2); fill: none; stroke-linecap: round; }
+.isl .isl-lbk1 { fill: var(--isl-lbk1); }
+.isl .isl-lbk2 { fill: var(--isl-lbk2); }
+.isl .isl-lbk3 { fill: var(--isl-lbk3); }
+.isl .isl-lwood { fill: var(--isl-lwood); }
+.isl .isl-lwood2 { fill: var(--isl-lwood2); }
+.isl .isl-lchair { fill: var(--isl-lchair); }
+.isl .isl-lchairdot { fill: var(--isl-lchair2); }
+.isl .isl-lchairleg { stroke: var(--isl-lchair2); fill: none; stroke-linecap: round; }
+.isl .isl-lred { fill: var(--isl-lred); }
+.isl .isl-lred2 { fill: var(--isl-lred2); }
+.isl .isl-lalu { fill: var(--isl-lalu); }
+.isl .isl-lsign { fill: var(--isl-lsign); }
+.isl .isl-lshade { fill: var(--isl-lshade); }
+.isl .isl-lbronze { fill: var(--isl-lbronze); }
+.isl .isl-lrim { stroke: var(--isl-lglow1); fill: none; stroke-linecap: round; }
+.isl .isl-lpage { fill: var(--isl-lpage); }
+.isl .isl-llap { fill: var(--isl-llap); }
+.isl .isl-lbottle { fill: var(--isl-lbottle); }
+.isl .isl-lredsh { fill: var(--isl-lside); fill-opacity: 0.12; }
+.isl .isl-lshadehi { stroke: #ffffff; stroke-opacity: 0.22; fill: none; stroke-linecap: round; }
+/* The library's things on the tables (owner, 2026-09-29): each group shows only in the versions its
+   data-q names (a Dawn, y Day, s Sunset, d Dusk), so the hall is in use by Day, has a few early arrivals
+   at Dawn, winds down at Sunset, keeps only its own stacked books at Dusk and is empty at Night. */
+.isl .isl-lq { display: none; }
+.isl[data-sky="dawn"] .isl-lq[data-q*="a"],
+.isl[data-sky="day"] .isl-lq[data-q*="y"],
+.isl[data-sky="sunset"] .isl-lq[data-q*="s"],
+.isl[data-sky="dusk"] .isl-lq[data-q*="d"] { display: inline; }
+.isl {
+  --isl-lscreen: #9fc2e4; --isl-lbezel: #2a2d33; --isl-lmug: #e6e2da; --isl-lbottle2: #3d6fa8;
+  --isl-lbag1: #2d3b57; --isl-lbag2: #3a3b40; --isl-lbag3: #7a3330;
+}
+.isl[data-sky="day"] {
+  --isl-lscreen: #dcebf7; --isl-lmug: #f6f3ee; --isl-lbottle2: #3f7cc0;
+  --isl-lbag1: #34466a; --isl-lbag2: #45464c; --isl-lbag3: #93403b;
+}
+.isl[data-sky="dawn"] { --isl-lscreen: #b9cdf0; --isl-lbag1: #334062; --isl-lbag2: #44434e; --isl-lbag3: #86403f; }
+.isl[data-sky="sunset"] { --isl-lscreen: #c3d6ee; --isl-lbag1: #33405f; --isl-lbag2: #45423f; --isl-lbag3: #8b3c34; }
+.isl .isl-ltext { stroke: #6f6a60; stroke-opacity: 0.35; fill: none; }
+.isl .isl-lpageedge { fill: var(--isl-lpage); fill-opacity: 0.85; }
+.isl .isl-llogo { fill: #ffffff; fill-opacity: 0.35; }
+.isl .isl-lbezel { fill: var(--isl-lbezel); }
+.isl .isl-lscreen { fill: var(--isl-lscreen); }
+.isl .isl-lmug { fill: var(--isl-lmug); }
+.isl .isl-lmugh { stroke: var(--isl-lmug); fill: none; }
+.isl .isl-lbottle2 { fill: var(--isl-lbottle2); }
+.isl .isl-lbag1 { fill: var(--isl-lbag1); }
+.isl .isl-lbag2 { fill: var(--isl-lbag2); }
+.isl .isl-lbag3 { fill: var(--isl-lbag3); }
+.isl .isl-lbagp { fill: #ffffff; fill-opacity: 0.1; }
+.isl .isl-lbagh { stroke: var(--isl-lbag2); fill: none; stroke-linecap: round; }
+.isl .isl-ledge { stroke: #ffe2c4; stroke-opacity: 0.28; fill: none; }
+.isl .isl-llap2 { fill: var(--isl-lchair2); }
+.isl .isl-lgutter { stroke: var(--isl-lchair2); stroke-opacity: 0.6; fill: none; }
+/* The caption (owner, 2026-09-29): one quiet line under the picture saying what it shows, then the
+   time of day it is drawn at, linked (layout_art.py writes the words, island-vignettes.js adds the
+   time). The picture gives up the caption's height, so the figure keeps its size: the top stays level
+   with the title and nothing below moves. Left-aligned on the picture's edge; shown only once the
+   picture is drawn, so without JavaScript nothing captions an empty space. */
+.md-typeset figure.isl-vignette > figcaption.isl-cap {
+  max-width: none;
+  margin: 0.35rem 0 0;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  font-style: normal;
+  text-align: left;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset figure.isl-vignette:not(:has(> .isl-vig)) > figcaption.isl-cap {
+  display: none;
+}
 /* The leaf's side is already sticky beside taller text (layout-width.css), so the card only clips. */
 .isl-vig {
   position: relative;
@@ -589,9 +749,14 @@
   body:not([data-page-type="door"]):not([data-crumbs="none"]) .md-content:has(> .md-path) .isl-head > figure.isl-vignette--head:not([data-fit="text"]) {
     margin-top: -1.86rem;
   }
-  /* A picture that fits its text: the row is the text's height, the picture fills it. */
+  /* A picture that fits its text: the row is the text's height, the picture fills it. The text keeps
+     its own height rather than stretching with the row, because it is what the picture measures: a
+     caption that wraps late (a web font arriving) could otherwise grow the row and be measured as
+     text, and the page below would stay moved. */
   .md-typeset .isl-head:has(> figure[data-fit="text"]) { align-items: stretch; }
   .md-typeset figure.isl-vignette[data-fit="text"] { align-self: stretch; }
+  .md-typeset .isl-head:has(> figure[data-fit="text"]) > .isl-head__text,
+  .md-typeset .isl-stack > .isl-stack__text { align-self: start; }
   /* Stacked sections beside a picture (the About page): the sections in one column at the reading
      measure, the picture in the other, as tall as the sections. A stack that starts at the title
      (section: [_title, ...]) has the title at its top, so the picture's top is level with it. */

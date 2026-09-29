@@ -22,6 +22,49 @@
 #            kind (a hub), and the accent takes Island Night's own warm light
 #   aspect   optional: height / width of the picture (a wide head slot);
 #            without it the picture is as tall as the window allows
+#   fit      optional: `text` makes the picture exactly as tall as the text
+#            beside it, so the head keeps the height it had
+#   caption  optional: what the picture shows, in sentence case, with no
+#            final period. It is shown under the picture as one quiet line,
+#            followed by the time of day the picture is drawn at (the
+#            `captions` block below), so write it to read well before "at
+#            dusk" or "by day". Give one only where it names something
+#            specific: a picture that is not of a particular place (the
+#            guides' steps, the Learn telescope) has none, since its caption
+#            would only describe what is already evident (owner, 2026-09-29).
+
+# Captions (owner, 2026-09-29: "beneath the picture is fine as long as it
+# doesn't take too much space and displace other elements"; "a time of day
+# addition is a great idea"): every picture says what it shows, then the time
+# of day it is drawn at, which follows the visitor's clock with the picture.
+# The picture gives up exactly the caption's height, so its top stays level
+# with the title and nothing below it moves. The time words link to the
+# write-up that explains the five versions (`about`, a docs page and its
+# heading's id; the build fails if either is gone), and hovering them shows
+# `hover` (owner: "About the pictures shows on hover"). The home page's hero
+# has no caption.
+#
+# The captions' facts were checked 2026-09-29, twice, independently: Shirley
+# Heights overlooks both harbours (visitantiguabarbuda.com), but the view runs
+# west-northwest to northwest (measured bearings 283 to 313 degrees), so the
+# caption gives no compass word; Montserrat is in view from Curtain Bluff
+# (curtainbluff.com/about) and lies southwest of it, not west; one of Betty's
+# Hope's two mills is restored (antiguamuseums.net/bettys-hope-trust); the
+# Museum of Antigua and Barbuda occupies the former courthouse, which sources
+# date to 1747 or 1750, so the caption gives no date
+# (antiguamuseums.net/portfolios/about-the-museum); Fort James stands at the
+# harbour's entrance with its walls and guns (discoverantiguabarbuda.com/
+# forts-of-antigua). Antigua Sailing Week races by day, so its picture is
+# captioned by the place, which stays true at every hour.
+captions:
+  times:
+    dawn: at dawn
+    day: by day
+    sunset: at sunset
+    dusk: at dusk
+    night: at night
+  about: worked-examples/redesign.md#the-same-place-at-five-times-of-day
+  hover: About the pictures
 
 slots:
   # Owner's review, 2026-09-28: the campus moved to the homepage hero (drawn by
@@ -38,6 +81,7 @@ slots:
   - page: students.md
     section: _head
     piece: shirley-heights
+    caption: "Shirley Heights, looking over English Harbour and Falmouth Harbour"
     aspect: 0.42
 
   # The For Faculty & Staff landing's head (800x304 at 1920): the Curtain
@@ -47,6 +91,7 @@ slots:
   - page: faculty.md
     section: _head
     piece: curtain-bluff
+    caption: "The view from Curtain Bluff, with Montserrat on the horizon"
     aspect: 0.42
 
   # The News & Events landing's head: Antigua Sailing Week, the island's
@@ -54,6 +99,7 @@ slots:
   - page: news-and-events.md
     section: _head
     piece: sailing-week
+    caption: "Yachts under sail off English Harbour"
     kind: news
     aspect: 0.42
 
@@ -67,11 +113,14 @@ slots:
 
   # The main pages that had no Island Night art (owner, 2026-09-28): each
   # picture fits the height of the text beside it, so nothing below moves.
-  # Learn: a telescope at a hilltop lookout under the Moon and the Milky Way
-  # (the neuron plate that was here moved to Module 1, How AI Works).
+  # Learn: the AUA library's study hall (owner, 2026-09-29: art that relates
+  # to Antigua and AUA, drawn from AUA's photographs of the library; the
+  # telescope it replaced is kept in island-vignettes.js to be placed
+  # elsewhere). The neuron plate that was here earlier moved to Module 1.
   - page: pathway/index.md
     section: _head
-    piece: telescope
+    piece: library
+    caption: "The library at the American University of Antigua"
     kind: lesson
     fit: text
 
@@ -80,6 +129,7 @@ slots:
   - page: tools-and-prompts.md
     section: _head
     piece: bettys-hope
+    caption: "The restored sugar mill at Betty's Hope"
     fit: text
 
   # Governance: the Old Court House in St John's (1750), where the court sat
@@ -88,6 +138,7 @@ slots:
   - page: governance/index.md
     section: _head
     piece: court-house
+    caption: "The former courthouse in St John's, now the Museum of Antigua and Barbuda"
     kind: governance
     fit: text
 
@@ -97,4 +148,5 @@ slots:
   - page: about.md
     section: [_title, purpose]
     piece: st-johns-harbour
+    caption: "The harbor at St John's, from the walls of Fort James"
     fit: text

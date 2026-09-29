@@ -756,7 +756,7 @@
     // The water: finer ripples, and the afterglow's glitter under the sunset.
     const sunX = v.x(SKY.d.sun[0]);
     s += dashes(hatchList(W, y0, H, r), 's-vrip', 1, [0.1, 0.18, 0.28]);
-    if (sunX > -W * 0.2 && sunX < W * 1.2) s += dashes(streakList(Math.min(W - 10, sunX), y0, H, r, 0.14, 0.1), 's-vglow', 1.3, [0.12, 0.24, 0.42]);
+    if (sunX > -W * 0.2 && sunX < W * 1.2) s += dashes(streakList(Math.min(W - 10, sunX), y0, H, r, 0.14, 0.1), 's-vglow isl-aglow', 1.3, [0.12, 0.24, 0.42]);
     // 1. Montserrat on the horizon, the Soufriere Hills its peak, its western flank rimmed.
     const mont = P([[0.02, 0.6], [0.05, 0.58], [0.075, 0.558], [0.1, 0.535], [0.12, 0.522], [0.14, 0.53], [0.165, 0.552], [0.2, 0.578], [0.23, 0.6]]);
     land += `<path class="f-isl" d="${poly(mont)}"/>`;
@@ -1607,6 +1607,302 @@
     return s;
   }
 
+  /* THE LIBRARY (the Learn landing's head; the owner chose it, 2026-09-29, from AUA's photographs of its
+     library, in the art's source folder as references/aua-library-*): the study hall seen along its
+     length, with no one in it and a painter's licence on its layout. A row of windows in the far wall
+     and one in the right-hand wall carry the time of day: the campus's trees and palms outside, a
+     red-roofed block with its windows, the sky, and at night the stars and the Moon. Long cherry tables
+     with the hall's double banker's lamps (green shades on bronze stands), grey perforated chairs, the
+     red study carrels with aluminium frames and blue number plates at the right, a bookcase along the
+     left-hand wall, a dropped ceiling and pale tiles. By Day the lamps are off and the sun lies on the
+     floor under the windows; at Dawn, Sunset, Dusk and Night they are lit, each with its glow, the light
+     it spills and its pool on the table. In the one pass the far tables' lamps come on, then the near
+     table's, left to right, the last glowing in the page's hue. Built in metres and projected (one-point
+     perspective, the eye 1.9 m up and 12 m from the far wall), so it keeps its proportions as the card
+     changes shape. */
+  // The hall's frame, shared by the drawing and the Moon's pane: the far wall's top and foot, its ends,
+  // the vanishing point (left of centre, so the right-hand wall shows its window) and the windows. It is
+  // sized from the card's width, as a picture about four times as wide as it is tall; a taller card (the
+  // Learn head grows when the "Continue where you left off" panel is shown; owner, 2026-09-29) shows
+  // more of the same hall, more ceiling above and more floor below, rather than a larger room.
+  function libraryFrame(W, H) {
+    const Hs = Math.min(H, W / 4.17), oy = (H - Hs) * 0.38, Ys = (f) => oy + f * Hs;
+    const bL = W * 0.08, bR = W * 0.8, yC = Ys(0.1), yF = Ys(0.56), m = (yF - yC) / 3;
+    const ww = (bR - bL) * 0.17, gap = (bR - bL - 4 * ww) / 5;
+    return { Hs, oy, Ys, vx: W * 0.42, vy: Ys(0.28), bL, bR, yC, yF, m, ww, wT: yF - 2.5 * m, wB: yF - 0.62 * m,
+      wins: [0, 1, 2, 3].map((i) => bL + gap + i * (ww + gap)) };
+  }
+  function library(W, H, v) {
+    const X = (f) => f * W, r = rng(419);
+    const { Hs, Ys, vx, vy, bL, bR, yC, yF, m, ww, wT, wB, wins } = libraryFrame(W, H), S = (f) => f * Hs, D = 12;
+    const sc = (z) => D / (D - z);
+    const pt = (lx, h, z) => { const k = sc(z); return [vx + (lx - vx) * k, vy + (yF - h * m - vy) * k]; };
+    const lxAt = (x, z) => vx + (x - vx) / sc(z);
+    const along = (bx, by, x) => vy + (by - vy) * (x - vx) / (bx - vx);
+    const quad = (...p) => polyD(p);
+    const wd = (w) => F(Math.max(0.6, w));
+    // The windows: four in the far wall (narrow, wide and narrow panes, as in the photograph), one in
+    // the right-hand wall.
+    const sx0 = X(0.86), sx1 = X(0.965);
+    const rwin = [[sx0, along(bR, wT, sx0)], [sx1, along(bR, wT, sx1)], [sx1, along(bR, wB, sx1)], [sx0, along(bR, wB, sx0)]];
+    let s = '<defs><linearGradient id="isllwallg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lwall0"/><stop offset="1" class="st-lwall1"/></linearGradient>'
+      + '<linearGradient id="isllshadeg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lglow0"/><stop offset="1" class="st-lglow1"/></linearGradient></defs>';
+    // 1. Outside, through the windows: palms and a two-storey block with a red roof behind the campus's
+    //    trees, lights along the drive. The trees cover the sea build() lays below the horizon.
+    const bx0 = wins[0] + ww * 0.1, bx1 = wins[0] + ww * 0.78, bTop = Ys(0.3), bBot = Ys(0.4);
+    s += `<path class="isl-bhouse" d="${rect(bx0, bTop, bx1 - bx0, bBot - bTop)}"/>`;
+    s += `<path class="isl-broofr" d="${polyD([[bx0 - m * 0.1, bTop + 0.5], [bx0 + m * 0.35, bTop - m * 0.22], [bx1 - m * 0.35, bTop - m * 0.22], [bx1 + m * 0.1, bTop + 0.5]])}"/>`;
+    let bw = '';
+    for (let row = 0; row < 2; row++) for (let x = bx0 + m * 0.15; x < bx1 - m * 0.2; x += m * 0.32) bw += rect(x, bTop + m * (0.12 + row * 0.26), m * 0.14, m * 0.13);
+    s += `<path class="f-pulse isl-vwin" style="--i:0" d="${bw}"/>`;
+    s += palmsD([[wins[1] + ww * 0.9, Ys(0.43), S(0.2), -0.1, 7], [wins[2] + ww * 0.28, Ys(0.43), S(0.17), 0.12, 11],
+      [wins[3] + ww * 0.78, Ys(0.43), S(0.15), -0.06, 5], [X(0.925), Ys(0.48), S(0.27), -0.12, 13]], 'isl-palm');
+    const tops = [];
+    for (let x = -6, i = 0; x <= W + 12; x += m * 0.8, i++) tops.push([x, Ys(0.36) + Math.sin(i * 1.7) * m * 0.12 + (r() - 0.5) * m * 0.2]);
+    s += `<path class="f-far isl-land" d="${polyD([[-6, H + 2], ...tops, [W + 12, H + 2]])}${scrubLine(tops, 4, m * 0.2, m * 0.45, r)}"/>`;
+    const out = [];
+    for (let i = 0; i < 9; i++) out.push([X(0.1 + r() * 0.88), Ys(0.385) + r() * m * 0.15]);
+    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(out)}" stroke-width="1.2"/>`;
+    // 2. The hall: ceiling, walls (the side walls a shade darker), the window openings, the floor.
+    const cl = along(bL, yC, -2), cr = along(bR, yC, W + 2), fl = along(bL, yF, -2), fr = along(bR, yF, W + 2);
+    const lw = [[-2, cl], [bL, yC], [bL, yF], [-2, fl]], rw = [[bR, yC], [W + 2, cr], [W + 2, fr], [bR, yF]];
+    s += `<path class="isl-lceil" d="${polyD([[-2, -2], [W + 2, -2], [W + 2, cr], [bR, yC], [bL, yC], [-2, cl]])}"/>`;
+    s += `<path fill="url(#isllwallg)" fill-rule="evenodd" d="${rect(bL, yC, bR - bL, yF - yC)}${wins.map((x) => rect(x, wT, ww, wB - wT)).join('')}"/>`;
+    s += `<path fill="url(#isllwallg)" fill-rule="evenodd" d="${polyD(lw)}${polyD(rw)}${polyD(rwin)}"/>`;
+    s += `<path class="isl-lsidew" fill-rule="evenodd" d="${polyD(lw)}${polyD(rw)}${polyD(rwin)}"/>`;
+    s += `<path class="isl-lfloor" d="${polyD([[-2, fl], [bL, yF], [bR, yF], [W + 2, fr], [W + 2, H + 2], [-2, H + 2]])}"/>`;
+    // the dropped ceiling's grid and its light panels, lit by Day
+    let g = '';
+    const sTop = (vy + 2) / (vy - yC);
+    for (let k = 1; k < 8; k++) { const lx = bL + (bR - bL) * k / 8; g += `M${F(lx)} ${F(yC)}L${F(vx + (lx - vx) * sTop)} -2`; }
+    for (let z = 1.4; z < D - 0.5; z += 1.6) {
+      const k = sc(z), y = vy + (yC - vy) * k;
+      if (y < -1) break;
+      g += `M${F(Math.max(-2, vx + (bL - vx) * k))} ${F(y)}H${F(Math.min(W + 2, vx + (bR - vx) * k))}`;
+    }
+    s += `<path class="isl-lgrid" d="${g}" stroke-width=".7"/>`;
+    // light panels in the grid, row after row toward the viewer, as far as the ceiling shows
+    let pn = '';
+    for (let row = 0, z = 0.25; z < D - 1.5; row++, z += 2.2) {
+      if (pt(bL, 3, z + 0.9)[1] < -2) break;
+      for (const k of row % 2 ? [2, 4, 6] : [1, 3, 5]) {
+        const l0 = bL + (bR - bL) * (k + 0.15) / 8, l1 = bL + (bR - bL) * (k + 0.85) / 8;
+        pn += quad(pt(l0, 3, z), pt(l1, 3, z), pt(l1, 3, z + 0.9), pt(l0, 3, z + 0.9));
+      }
+    }
+    s += `<path class="isl-lpanel" d="${pn}"/>`;
+    // the floor's tiles, 0.8 m, and the skirting
+    let fg = '';
+    const sBot = (H + 2 - vy) / (yF - vy), tile = 0.8 * m, nT = Math.round((bR - bL) / tile);
+    for (let k = 1; k < nT; k++) { const lx = bL + (bR - bL) * k / nT; fg += `M${F(lx)} ${F(yF)}L${F(vx + (lx - vx) * sBot)} ${F(H + 2)}`; }
+    for (let z = 0.8; z < D; z += 0.8) {
+      const k = sc(z), y = vy + (yF - vy) * k;
+      if (y > H + 2) break;
+      fg += `M${F(Math.max(-2, vx + (bL - vx) * k))} ${F(y)}H${F(Math.min(W + 2, vx + (bR - vx) * k))}`;
+    }
+    s += `<path class="isl-lgrout" d="${fg}" stroke-width=".6"/>`;
+    s += `<path class="isl-lbase" d="M-2 ${F(fl)}L${F(bL)} ${F(yF)}H${F(bR)}L${F(W + 2)} ${F(fr)}" stroke-width="${wd(m * 0.06)}"/>`;
+    // window frames, mullions and sills
+    let wf = '', mul = '', sill = '';
+    for (const x of wins) {
+      wf += rect(x, wT, ww, wB - wT);
+      mul += `M${F(x + ww * 0.27)} ${F(wT)}V${F(wB)}M${F(x + ww * 0.73)} ${F(wT)}V${F(wB)}`;
+      sill += rect(x - m * 0.08, wB, ww + m * 0.16, m * 0.07);
+    }
+    const smx = (sx0 + sx1) / 2;
+    mul += `M${F(smx)} ${F(along(bR, wT, smx))}L${F(smx)} ${F(along(bR, wB, smx))}`;
+    s += `<path class="isl-lframe" d="${wf}${polyD(rwin)}" stroke-width="${wd(m * 0.07)}"/><path class="isl-lframe" d="${mul}" stroke-width="${wd(m * 0.05)}"/><path class="isl-lsill" d="${sill}"/>`;
+    // By Day the sun lies on the floor under the far windows.
+    let sun = '';
+    for (const x of wins) sun += quad(pt(x - m * 0.2, 0, 0.12), pt(x + ww - m * 0.2, 0, 0.12), pt(x + ww - m * 1.6, 0, 3.4), pt(x - m * 1.6, 0, 3.4));
+    s += `<path class="isl-ydet isl-lsun" d="${sun}"/>`;
+    // 3. The bookcase along the left-hand wall: five shelves of books in three colours.
+    const cx = bL + m * 0.35, z0 = 0.3, z1 = 2.6, shelves = [0.1, 0.55, 1, 1.45, 1.9];
+    s += `<path class="isl-lcase" d="${quad(pt(cx, 0, z0), pt(cx, 2.05, z0), pt(cx, 2.05, z1), pt(cx, 0, z1))}"/>`;
+    const books = ['', '', ''];
+    for (let i = 0; i < shelves.length - 1; i++) {
+      for (let z = z0 + 0.05; z < z1 - 0.06;) {
+        const t = 0.05 + r() * 0.04, bh = 0.26 + r() * 0.13;
+        books[Math.floor(r() * 3)] += quad(pt(cx, shelves[i], z), pt(cx, shelves[i] + bh, z), pt(cx, shelves[i] + bh, z + t), pt(cx, shelves[i], z + t));
+        z += t + (r() < 0.12 ? 0.08 : 0.004);
+      }
+    }
+    s += books.map((d, i) => `<path class="isl-lbk${i + 1}" d="${d}"/>`).join('');
+    s += `<path class="isl-lcase2" d="${shelves.map((h) => `M${F(pt(cx, h, z0)[0])} ${F(pt(cx, h, z0)[1])}L${F(pt(cx, h, z1)[0])} ${F(pt(cx, h, z1)[1])}`).join('')}" stroke-width="${wd(m * 0.05)}"/>`;
+    // 4. Furniture, drawn far to near. A double lamp: a round base, a pole, a crossbar, two conical
+    //    shades; lit, each shade glows green and spills its light onto the table as a pool.
+    const lamp = (lx, z, i, last) => {
+      const k = sc(z), [bx, by] = pt(lx, 0.75, z), [, py] = pt(lx, 1.23, z), arm = 0.2 * m * k;
+      let o = `<ellipse class="isl-lbronze" cx="${F(bx)}" cy="${F(by)}" rx="${F(0.09 * m * k)}" ry="${F(0.025 * m * k)}"/>`
+        + `<path class="isl-lbronze" d="${rect(bx - Math.max(0.5, 0.012 * m * k), py, Math.max(1, 0.024 * m * k), by - py)}${rect(bx - arm, py, 2 * arm, Math.max(1, 0.02 * m * k))}"/>`;
+      let lit = '', shade = '', hi = '', cap = '';
+      for (const sx of [bx - arm, bx + arm]) {
+        const [, t0] = pt(lx, 1.22, z), [, t1] = pt(lx, 1.08, z), rt = 0.04 * m * k, rb = 0.13 * m * k, e = 0.03 * m * k;
+        const cone = `M${F(sx - rt)} ${F(t0)}H${F(sx + rt)}L${F(sx + rb)} ${F(t1)}Q${F(sx)} ${F(t1 + e)} ${F(sx - rb)} ${F(t1)}Z`;
+        shade += cone;
+        hi += `M${F(sx - rt * 0.6)} ${F(t0 + (t1 - t0) * 0.08)}L${F(sx - rb * 0.62)} ${F(t1 - (t1 - t0) * 0.12)}`;
+        cap += rect(sx - rt * 0.7, t0 - Math.max(1, 0.02 * m * k), rt * 1.4, Math.max(1, 0.02 * m * k));
+        const [, ty] = pt(lx, 0.75, z);
+        lit += `<path d="${polyD([[sx - rb * 0.9, t1], [sx + rb * 0.9, t1], [sx + rb * 2.1, ty], [sx - rb * 2.1, ty]])}" fill="url(#islvspill)"/>`
+          + pool(sx, ty + 0.02 * m * k, rb * 3, rb * 0.55, 0.85)
+          + halo(sx, (t0 + t1) / 2, rb * 3.2, last ? 'islvlamp' : 'islvbulb')
+          + `<path d="${cone}" fill="url(#isllshadeg)"/>`
+          + `<path class="isl-lrim" d="M${F(sx - rb)} ${F(t1)}Q${F(sx)} ${F(t1 + e)} ${F(sx + rb)} ${F(t1)}" stroke-width="${wd(0.012 * m * k)}"/>`;
+      }
+      return o + `<path class="isl-lshade" d="${shade}"/><path class="isl-lshadehi" d="${hi}" stroke-width="${wd(0.02 * m * k)}"/><path class="isl-lbronze" d="${cap}"/>` + `<g class="isl-vlamps isl-vwin${last ? ' isl-vlast' : ''}" style="--i:${i}">${lit}</g>`;
+    };
+    // A table: its top, its front edge, and legs at the near corners.
+    const table = (lx0, lx1, za, zb) => {
+      const a = pt(lx0, 0.75, za), b = pt(lx1, 0.75, za), c = pt(lx1, 0.75, zb), d = pt(lx0, 0.75, zb);
+      const c2 = pt(lx1, 0.7, zb), d2 = pt(lx0, 0.7, zb);
+      let legs = '';
+      for (const lx of [lx0 + 0.06 * m, lx1 - 0.12 * m]) legs += quad(pt(lx, 0.7, zb - 0.06), pt(lx + 0.06 * m, 0.7, zb - 0.06), pt(lx + 0.06 * m, 0, zb - 0.06), pt(lx, 0, zb - 0.06));
+      return `<path class="isl-lwood2" d="${legs}"/><path class="isl-lwood" d="${quad(a, b, c, d)}"/><path class="isl-lwood2" d="${quad(d, c, c2, d2)}"/>`
+        + `<path class="isl-ledge" d="M${F(a[0])} ${F(a[1])}L${F(b[0])} ${F(b[1])}" stroke-width="${wd(0.015 * m * sc(za))}"/>`;
+    };
+    // A shell chair, perforated, seen from the front or the back: its backrest, seat and legs.
+    const chair = (lx, z) => {
+      const k = sc(z), w = 0.22 * m * k, [cxp, top] = pt(lx, 0.9, z), [, seat] = pt(lx, 0.47, z), [, foot] = pt(lx, 0, z);
+      let dots = '';
+      for (let row = 0; row < 3; row++) for (let col = -2; col <= 2; col++) {
+        const dx = cxp + col * w * 0.32, dy = top + (seat - top) * (0.22 + row * 0.22);
+        dots += `M${F(dx - 0.012 * m * k)} ${F(dy)}a${F(0.012 * m * k)} ${F(0.012 * m * k)} 0 1 0 ${F(0.024 * m * k)} 0a${F(0.012 * m * k)} ${F(0.012 * m * k)} 0 1 0 ${F(-0.024 * m * k)} 0Z`;
+      }
+      return `<path class="isl-lchairleg" d="M${F(cxp - w * 0.8)} ${F(seat)}L${F(cxp - w * 0.9)} ${F(foot)}M${F(cxp + w * 0.8)} ${F(seat)}L${F(cxp + w * 0.9)} ${F(foot)}" stroke-width="${wd(0.02 * m * k)}"/>`
+        + `<path class="isl-lchair" d="M${F(cxp - w)} ${F(seat)}V${F(top + w * 0.35)}Q${F(cxp - w)} ${F(top)} ${F(cxp - w * 0.6)} ${F(top)}H${F(cxp + w * 0.6)}Q${F(cxp + w)} ${F(top)} ${F(cxp + w)} ${F(top + w * 0.35)}V${F(seat)}Z`
+        + `M${F(cxp - w * 1.05)} ${F(seat)}h${F(w * 2.1)}v${F(Math.max(1, 0.04 * m * k))}h${F(-w * 2.1)}Z"/><path class="isl-lchairdot" d="${dots}"/>`;
+    };
+    // Things left on the tables (owner, 2026-09-29: "less sterile"): the hall in use by Day, a few early
+    // arrivals at Dawn, winding down at Sunset, back to the library's own stacks at Dusk, and empty at
+    // Night with its lamps still lit. Each item carries the versions it shows in (data-q: a Dawn, y Day,
+    // s Sunset, d Dusk; layout-art.css).
+    const Q = {};
+    const put = (q, svg) => { Q[q] = (Q[q] || '') + svg; };
+    const flush = () => { const o = Object.keys(Q).map((q) => `<g class="isl-lq" data-q="${q}">${Q[q]}</g>`).join(''); for (const q in Q) delete Q[q]; return o; };
+    const hw = (z) => Math.max(0.5, 0.012 * m * sc(z));
+    const onT = (lx, dx, h, z) => pt(lx + dx * m, h, z);
+    const openBook = (lx, z, cover) => {
+      const pg = (s1) => quad(onT(lx, 0.19 * s1, 0.758, z - 0.12), onT(lx, 0, 0.775, z - 0.135), onT(lx, 0, 0.775, z + 0.125), onT(lx, 0.19 * s1, 0.758, z + 0.135));
+      let lines = '';
+      for (const s1 of [-1, 1]) for (let i = 0; i < 4; i++) {
+        const zz = z - 0.08 + i * 0.05, [ax, ay] = onT(lx, 0.03 * s1, 0.772, zz), [bx2, by2] = onT(lx, 0.16 * s1, 0.76, zz + 0.01);
+        lines += `M${F(ax)} ${F(ay)}L${F(bx2)} ${F(by2)}`;
+      }
+      const [g0x, g0y] = onT(lx, 0, 0.775, z - 0.135), [g1x, g1y] = onT(lx, 0, 0.775, z + 0.125);
+      return `<path class="${cover}" d="${quad(onT(lx, -0.2, 0.752, z - 0.14), onT(lx, 0.2, 0.752, z - 0.14), onT(lx, 0.2, 0.752, z + 0.14), onT(lx, -0.2, 0.752, z + 0.14))}"/>`
+        + `<path class="isl-lpage" d="${pg(-1)}${pg(1)}"/><path class="isl-ltext" d="${lines}" stroke-width="${F(hw(z) * 0.6)}"/>`
+        + `<path class="isl-lgutter" d="M${F(g0x)} ${F(g0y)}L${F(g1x)} ${F(g1y)}" stroke-width="${F(hw(z))}"/>`;
+    };
+    const stack = (lx, z, n, i0) => {
+      let o = '';
+      for (let i = 0; i < n; i++) {
+        const h0 = 0.75 + i * 0.045, h1 = h0 + 0.042, w = 0.13 - (i % 2) * 0.02, d = 0.1 - (i % 3) * 0.01, dx = (i % 2 ? 0.015 : -0.01);
+        const cls = `isl-lbk${((i0 + i) % 3) + 1}`;
+        o += `<path class="${cls}" d="${quad(onT(lx, dx - w, h1, z - d), onT(lx, dx + w, h1, z - d), onT(lx, dx + w, h1, z + d), onT(lx, dx - w, h1, z + d))}"/>`
+          + `<path class="${cls}" d="${quad(onT(lx, dx - w, h0, z + d), onT(lx, dx + w, h0, z + d), onT(lx, dx + w, h1, z + d), onT(lx, dx - w, h1, z + d))}"/>`
+          + `<path class="isl-lpageedge" d="${quad(onT(lx, dx - w + 0.01, h0 + 0.006, z + d), onT(lx, dx + w - 0.01, h0 + 0.006, z + d), onT(lx, dx + w - 0.01, h1 - 0.006, z + d), onT(lx, dx - w + 0.01, h1 - 0.006, z + d))}"/>`;
+      }
+      return o;
+    };
+    // a laptop seen from behind its lid (a seat on the far side of the table) or from the front
+    const lapBack = (lx, z) => {
+      const [cx, cy] = onT(lx, 0, 0.865, z + 0.025);
+      return `<path class="isl-llap" d="${quad(onT(lx, -0.16, 0.752, z), onT(lx, 0.16, 0.752, z), onT(lx, 0.16, 0.975, z + 0.05), onT(lx, -0.16, 0.975, z + 0.05))}"/>`
+        + `<circle class="isl-llogo" cx="${F(cx)}" cy="${F(cy)}" r="${F(hw(z) * 1.3)}"/>`;
+    };
+    const lapFront = (lx, z) => `<path class="isl-llap" d="${quad(onT(lx, -0.16, 0.752, z), onT(lx, 0.16, 0.752, z), onT(lx, 0.16, 0.752, z + 0.22), onT(lx, -0.16, 0.752, z + 0.22))}"/>`
+      + `<path class="isl-lbezel" d="${quad(onT(lx, -0.16, 0.754, z), onT(lx, 0.16, 0.754, z), onT(lx, 0.16, 0.975, z - 0.05), onT(lx, -0.16, 0.975, z - 0.05))}"/>`
+      + `<path class="isl-lscreen" d="${quad(onT(lx, -0.145, 0.77, z - 0.004), onT(lx, 0.145, 0.77, z - 0.004), onT(lx, 0.145, 0.96, z - 0.046), onT(lx, -0.145, 0.96, z - 0.046))}"/>`;
+    const bottle = (lx, z, cls) => {
+      const [bx2, by2] = onT(lx, 0, 0.75, z), [, bt] = onT(lx, 0, 0.99, z), bw = 0.035 * m * sc(z);
+      return `<path class="${cls}" d="M${F(bx2 - bw)} ${F(by2)}V${F(bt + bw)}Q${F(bx2 - bw)} ${F(bt)} ${F(bx2)} ${F(bt)}Q${F(bx2 + bw)} ${F(bt)} ${F(bx2 + bw)} ${F(bt + bw)}V${F(by2)}Z"/>`
+        + `<path class="isl-lalu" d="${rect(bx2 - bw * 0.7, bt - bw * 0.9, bw * 1.4, bw * 1.1)}"/>`;
+    };
+    const mug = (lx, z) => {
+      const [mx, my] = onT(lx, 0, 0.75, z), [, mt] = onT(lx, 0, 0.85, z), mw = 0.045 * m * sc(z);
+      return `<path class="isl-lmug" d="M${F(mx - mw)} ${F(my)}V${F(mt)}H${F(mx + mw)}V${F(my)}Z"/><path class="isl-lmugh" d="M${F(mx + mw)} ${F(mt + (my - mt) * 0.25)}q${F(mw * 0.8)} ${F((my - mt) * 0.25)} 0 ${F((my - mt) * 0.5)}" stroke-width="${F(hw(z) * 1.2)}"/>`;
+    };
+    const note = (lx, z) => `<path class="isl-lpage" d="${quad(onT(lx, -0.11, 0.752, z - 0.1), onT(lx, 0.1, 0.752, z - 0.12), onT(lx, 0.13, 0.752, z + 0.1), onT(lx, -0.08, 0.752, z + 0.12))}"/>`;
+    // a backpack hung on the back of a chair that faces away from the viewer
+    const bag = (lx, z, cls) => {
+      const k = sc(z + 0.12), w = 0.15 * m * k, [bx2, top] = pt(lx, 0.86, z + 0.12), [, bot] = pt(lx, 0.46, z + 0.12), rr = w * 0.45;
+      return `<path class="${cls}" d="M${F(bx2 - w)} ${F(bot)}V${F(top + rr)}Q${F(bx2 - w)} ${F(top)} ${F(bx2 - w + rr)} ${F(top)}H${F(bx2 + w - rr)}Q${F(bx2 + w)} ${F(top)} ${F(bx2 + w)} ${F(top + rr)}V${F(bot)}Z"/>`
+        + `<path class="isl-lbagp" d="${rect(bx2 - w * 0.62, top + (bot - top) * 0.52, w * 1.24, (bot - top) * 0.4)}"/>`
+        + `<path class="isl-lbagh" d="M${F(bx2 - w * 0.35)} ${F(top)}q${F(w * 0.35)} ${F(-w * 0.5)} ${F(w * 0.7)} 0" stroke-width="${F(Math.max(0.8, 0.02 * m * k))}"/>`;
+    };
+    // The far row: two tables before the windows, their lamps against the glass, chairs drawn up.
+    const f0 = bL + 0.8 * m, f1 = bL + 5.8 * m, f2 = bL + 6.8 * m, f3 = bL + 11.8 * m;
+    s += table(f0, f1, 1, 1.8) + table(f2, f3, 1, 1.8);
+    const farSeats = [f0 + (f1 - f0) * 0.12, f0 + (f1 - f0) * 0.5, f0 + (f1 - f0) * 0.9, f2 + (f3 - f2) * 0.12, f2 + (f3 - f2) * 0.5, f2 + (f3 - f2) * 0.9];
+    ['y', 'ys', 'y', 'y', 'ys', 'y'].forEach((q, i) => put(q, openBook(farSeats[i], 1.6, `isl-lbk${(i % 3) + 1}`) + (i % 2 ? note(farSeats[i] + 0.3 * m, 1.55) : '')));
+    s += flush();
+    let li = 0;
+    for (const lx of [f0 + (f1 - f0) * 0.3, f0 + (f1 - f0) * 0.72, f2 + (f3 - f2) * 0.3, f2 + (f3 - f2) * 0.72]) s += lamp(lx, 1.4, li++, false);
+    for (const lx of farSeats) s += chair(lx, 2.3);
+    put('y', bag(farSeats[0], 2.3, 'isl-lbag1') + bag(farSeats[3], 2.3, 'isl-lbag3'));
+    put('ys', bag(farSeats[4], 2.3, 'isl-lbag2'));
+    s += flush();
+    // The carrels: a row along the right, red panels over grey with aluminium posts and rails, a blue
+    // number plate on each post, their dividers' top edges running off to the right, the row's end
+    // panel toward the viewer (the photographs' rows of carrels, turned to run with the hall).
+    const cz = [2.2, 3.3, 4.4, 5.5, 6.6], lc = lxAt(X(0.78), 6.6), lc1 = lc + 1.4 * m;
+    let red = '', grey = '', alu = '', sign = '';
+    for (let k = 0; k < cz.length - 1; k++) {
+      const a = cz[k], b = cz[k + 1];
+      red += quad(pt(lc, 0.78, a), pt(lc, 1.42, a), pt(lc, 1.42, b), pt(lc, 0.78, b));
+      grey += quad(pt(lc, 0.08, a), pt(lc, 0.78, a), pt(lc, 0.78, b), pt(lc, 0.08, b));
+    }
+    red += quad(pt(lc, 0.78, 6.6), pt(lc1, 0.78, 6.6), pt(lc1, 1.42, 6.6), pt(lc, 1.42, 6.6));
+    grey += quad(pt(lc, 0.08, 6.6), pt(lc1, 0.08, 6.6), pt(lc1, 0.78, 6.6), pt(lc, 0.78, 6.6));
+    alu += quad(pt(lc, 1.42, cz[0]), pt(lc, 1.47, cz[0]), pt(lc, 1.47, 6.6), pt(lc, 1.42, 6.6)) + quad(pt(lc, 0.76, cz[0]), pt(lc, 0.8, cz[0]), pt(lc, 0.8, 6.6), pt(lc, 0.76, 6.6));
+    alu += quad(pt(lc, 1.42, 6.6), pt(lc1, 1.42, 6.6), pt(lc1, 1.47, 6.6), pt(lc, 1.47, 6.6)) + quad(pt(lc, 0.76, 6.6), pt(lc1, 0.76, 6.6), pt(lc1, 0.8, 6.6), pt(lc, 0.8, 6.6));
+    for (const z of cz) {
+      alu += quad(pt(lc, 0, z - 0.03), pt(lc, 1.47, z - 0.03), pt(lc, 1.47, z + 0.03), pt(lc, 0, z + 0.03));
+      const [ax, ay] = pt(lc, 1.47, z), [bx2, by2] = pt(lc + 1.1 * m, 1.47, z);
+      alu += `M${F(ax)} ${F(ay - 0.5)}L${F(bx2)} ${F(by2 - 0.5)}L${F(bx2)} ${F(by2 + Math.max(1, 0.03 * m * sc(z)))}L${F(ax)} ${F(ay + Math.max(1, 0.03 * m * sc(z)))}Z`;
+      if (z < 6.6) sign += quad(pt(lc, 1.24, z + 0.05), pt(lc, 1.36, z + 0.05), pt(lc, 1.36, z + 0.3), pt(lc, 1.24, z + 0.3));
+    }
+    sign += quad(pt(lc + 0.08 * m, 1.24, 6.6), pt(lc + 0.36 * m, 1.24, 6.6), pt(lc + 0.36 * m, 1.36, 6.6), pt(lc + 0.08 * m, 1.36, 6.6));
+    for (const x of [lc, lc1]) alu += quad(pt(x - 0.03 * m, 0, 6.6), pt(x + 0.03 * m, 0, 6.6), pt(x + 0.03 * m, 1.47, 6.6), pt(x - 0.03 * m, 1.47, 6.6));
+    s += `<path class="isl-lred2" d="${grey}"/><path class="isl-lred" d="${red}"/><path class="isl-lredsh" d="${red}"/><path class="isl-lalu" d="${alu}"/><path class="isl-lsign" d="${sign}"/>`;
+    // The middle row: a table with two lamps, chairs on its far side.
+    const m0 = lxAt(X(0.03), 5.4), m1 = lxAt(X(0.56), 5.4);
+    for (const q of [0.12, 0.42, 0.7, 0.93]) s += chair(m0 + (m1 - m0) * q, 4.2);
+    s += table(m0, m1, 4.6, 5.4);
+    const mid = (q) => m0 + (m1 - m0) * q;
+    put('y', openBook(mid(0.12), 4.85, 'isl-lbk2') + openBook(mid(0.7), 4.85, 'isl-lbk1') + bottle(mid(0.76), 4.75, 'isl-lbottle2'));
+    put('ys', lapBack(mid(0.42), 4.8) + note(mid(0.46), 4.9));
+    put('ysa', openBook(mid(0.93), 4.85, 'isl-lbk3'));
+    put('yasd', stack(mid(0.56), 4.8, 2, 1));
+    s += flush();
+    s += lamp(m0 + (m1 - m0) * 0.28, 5, 4, false) + lamp(m0 + (m1 - m0) * 0.72, 5, 5, false);
+    // The near table across the foot of the picture, its far edge and three lamps in full view: chairs
+    // drawn up on its far side, a closed laptop, a pair of books, an open book, a red water bottle.
+    const n0 = lxAt(X(-0.04), 9.4), n1 = lxAt(X(0.62), 9.4);
+    for (const q of [0.06, 0.33, 0.66, 0.93]) s += chair(n0 + (n1 - n0) * q, 8);
+    s += table(n0, n1, 8.4, 9.6);
+    const near = (q) => n0 + (n1 - n0) * q;
+    // seats on the far side, their things near the far edge
+    put('yas', openBook(near(0.06), 8.72, 'isl-lbk1') + note(near(0.11), 8.66) + bottle(near(0.02), 8.6, 'isl-lbottle'));
+    put('y', lapBack(near(0.33), 8.62) + openBook(near(0.38), 8.72, 'isl-lbk3'));
+    put('ys', openBook(near(0.64), 8.72, 'isl-lbk2') + stack(near(0.7), 8.66, 2, 2));
+    put('ys', lapBack(near(0.93), 8.62) + bottle(near(0.97), 8.7, 'isl-lbottle2'));
+    // the library's own reference books, left stacked: the hall's baseline, gone only at Night
+    put('yasd', stack(near(0.43), 8.62, 3, 0));
+    // seats on the near side, their things near the near edge
+    put('ys', lapFront(near(0.22), 9.28) + mug(near(0.27), 9.3));
+    put('y', openBook(near(0.55), 9.34, 'isl-lbk1') + note(near(0.6), 9.3));
+    put('ya', openBook(near(0.86), 9.34, 'isl-lbk2') + bottle(near(0.91), 9.3, 'isl-lbottle'));
+    s += flush();
+    for (const [q, i] of [[0.2, 6], [0.5, 7], [0.8, 8]]) s += lamp(n0 + (n1 - n0) * q, 8.9, i, i === 8);
+    for (const q of [0.22, 0.55, 0.86]) s += chair(near(q), 10);
+    put('ys', bag(near(0.22), 10, 'isl-lbag1'));
+    put('y', bag(near(0.55), 10, 'isl-lbag2'));
+    put('ya', bag(near(0.86), 10, 'isl-lbag3'));
+    s += flush();
+    return `<g style="--isl-vstep:.32s">${s}</g>`;
+  }
+
   /* THE HOMEPAGE HERO'S SCENE (owner, 2026-09-27): in the bold hero (desktop, from 68.75em) the campus
      stands on its lawn at the card's foot, in the sky's space right of the words, from x0 to x1, under
      the hero's own sky, which island-core.js draws as before; the far islands and Antigua's coast are
@@ -1755,6 +2051,21 @@
       // From a boat in the harbour mouth, facing north at the cliff: the northern sky above, the last
       // western light on its face.
       face: 12,
+      ground: null,
+    },
+    'library': {
+      draw: library,
+      world: 'inland',
+      // An interior: the windows face east of the evening sky, so no Sun is in them at Sunset; the
+      // horizon sits under the campus's trees, and the Moon is set in a pane of the second window
+      // (its true phase and tilt, the place a painter's licence, as at Shirley Heights).
+      horizon: (W, H) => libraryFrame(W, H).wB / H,
+      face: 100,
+      sunPath: false,
+      ppd: (W) => W / 62,
+      // the middle pane of the second window, its disc clear of the wall above
+      moonAt: (W, H) => { const f = libraryFrame(W, H); return [(f.wins[1] + f.ww / 2) / W, (f.wT + (f.wB - f.wT) * 0.36) / H]; },
+      moonBig: 1.5,
       ground: null,
     },
     'shirley-heights': {
@@ -1941,7 +2252,8 @@
     if (!P || W < 200 || H < 100) return '';   // a head fitted to short text can be under 200px
     // A piece may set its own scale (pixels per degree); the Curtain Bluff view needs a wider field
     // for the Moon and Venus to sit in the sky, as in the homepage hero.
-    const y0g = Math.round(H * (P.horizon || 0.58));
+    const y0g = Math.round(H * ((typeof P.horizon === 'function' ? P.horizon(W, H) : P.horizon) || 0.58));
+    const moonAt = typeof P.moonAt === 'function' ? P.moonAt(W, H) : P.moonAt;
     const ppd = P.ppd ? P.ppd(W, H, y0g) : W / 62;
     const y0 = y0g;
     // The anchor: a coast scene puts the sunset a third of the way in; an inland one faces P.face.
@@ -1960,7 +2272,7 @@
     // is only faintly opaque, and stars showed through it (owner, the same day).
     const big = P.moonBig || 1, sky = {};
     for (const m of ['d', 'n']) {
-      const vm = P.moonAt ? view(W * P.moonAt[0] - rel(SKY[m].moon[0]) * ppd, H * P.moonAt[1] + SKY[m].moon[1] * ppd, ppd, W, H) : v;
+      const vm = moonAt ? view(W * moonAt[0] - rel(SKY[m].moon[0]) * ppd, H * moonAt[1] + SKY[m].moon[1] * ppd, ppd, W, H) : v;
       const cls = m === 'd' ? 'isl-d' : 'isl-n', drawn = L.moon(vm, m, [], cls, big), [mx, my, mr] = L.moonBox(vm, m, big);
       sky[m] = {
         moon: drawn,
@@ -2031,17 +2343,53 @@
   // Which version a card shows: the visitor's own clock, in both schemes (A.pickSky in island-core.js).
   const pickSky = () => A.pickSky();
 
+  /* The caption (owner, 2026-09-29): scripts/layout_art.py writes what the picture shows
+     (data/art_slots.yaml); this adds the time of day the picture is drawn at, in the words the data
+     gives (data-when), linked to the write-up on the five versions (data-about), and keeps it in step
+     when the picture turns with the clock. */
+  function caption(cap, sky) {
+    if (!cap) return;
+    if (!cap._isl) {
+      let when = {};
+      try { when = JSON.parse(cap.dataset.when || '{}'); } catch (e) { /* the words alone */ }
+      const a = document.createElement('a');
+      a.href = cap.dataset.about || '';
+      // Where the link goes, shown on hover (owner, 2026-09-29) and read as the link's description.
+      if (cap.dataset.hover) a.title = cap.dataset.hover;
+      cap.append(', ', a, '.');
+      cap._isl = { a, when };
+    }
+    const { a, when } = cap._isl;
+    a.textContent = when[sky] || sky;
+  }
+
   A.vignette = function (fig) {
     if (fig._isl) return;
     const card = document.createElement('div');
     card.className = 'isl isl-vig';
     card.dataset.sky = pickSky();
+    // The drawing is decorative; the caption beneath it says what it shows.
+    card.setAttribute('aria-hidden', 'true');
     // its own scrub patterns for the Day land (ids renamed by own(svg, 'v'); a crossfade copy renames them again)
     card.style.setProperty('--isl-vegf', 'url(#islvvegf)');
     card.style.setProperty('--isl-vegn', 'url(#islvvegn)');
     A.watchSky(card);
-    fig.appendChild(card);
+    const cap = fig.querySelector(':scope > figcaption');
+    caption(cap, card.dataset.sky);
+    fig.insertBefore(card, fig.firstChild);
     fig._isl = card;
+    // The caption's own height, which the picture gives up so the figure keeps the height it had. Its
+    // gap above is topped up to a whole pixel, so the two add up exactly and nothing shifts by a fraction.
+    const capH = () => {
+      if (!cap || !cap.offsetHeight) return 0;
+      cap.style.marginTop = '';   // the stylesheet's gap, in rem, at the page's current type size
+      const cs = getComputedStyle(cap);
+      const gap = parseFloat(cs.marginTop);
+      const raw = cap.getBoundingClientRect().height + gap + parseFloat(cs.marginBottom);
+      const c = Math.ceil(raw - 0.01);
+      cap.style.marginTop = `${gap + c - raw}px`;
+      return c;
+    };
     let last = '', started = false;
     const paint = () => {
       // As tall as the window allows below the sticky offset of the leaf's side (5.5rem,
@@ -2052,12 +2400,18 @@
       // exactly as tall as the text beside it, so nothing on the page moves.
       const aspect = parseFloat(fig.dataset.aspect);
       const text = fig.dataset.fit === 'text' ? fig.parentElement.querySelector(':scope > .isl-head__text, :scope > .isl-stack__text') : null;
-      const H = text ? Math.floor(Math.max(120, text.getBoundingClientRect().height))
-        : aspect ? Math.floor(clamp(W * aspect, 180, 700))
-          : Math.floor(clamp(Math.min(W * 1.02, innerHeight - 5.5 * rem - 24), 320, 820));
+      // The caption beneath takes its line from the picture, so nothing beside or below it moves.
+      const c = capH();
+      const H = text ? Math.floor(Math.max(120, text.getBoundingClientRect().height)) - c
+        : aspect ? Math.floor(clamp(W * aspect, 180, 700)) - c
+          : Math.floor(clamp(Math.min(W * 1.02, innerHeight - 5.5 * rem - 24), 320, 820)) - c;
       const key = W + 'x' + H;
       if (key === last) return;
       last = key;
+      // A crossfade copy (island-core.js turnSky) keeps the old size, so it would overlap the caption:
+      // at a new size the picture switches at once instead.
+      const ghost = card.nextElementSibling;
+      if (ghost && ghost.classList.contains('isl-ghost')) ghost.remove();
       card.style.height = `${H}px`;
       card.innerHTML = build(W, H, fig.dataset.vignette);
       if (!started) {
@@ -2074,6 +2428,11 @@
       }
     };
     paint();
+    // At a change of version the caption's words change, and with them perhaps its line count: the
+    // picture is re-measured in the same moment, so nothing below moves even for a frame.
+    document.addEventListener('isl-sky', () => { caption(cap, card.dataset.sky); paint(); });
+    // The caption's line breaks can change when the page's web font arrives: measure again then.
+    if (cap && document.fonts && document.fonts.ready) document.fonts.ready.then(paint);
     (A.redraw = A.redraw || []).push(() => { last = ''; paint(); });
     let t;
     if ('ResizeObserver' in window) {
@@ -2081,6 +2440,8 @@
       ro.observe(fig);
       const text = fig.dataset.fit === 'text' && fig.parentElement.querySelector(':scope > .isl-head__text, :scope > .isl-stack__text');
       if (text) ro.observe(text);
+      // A caption that wraps to a second line (a narrow window, a longer time of day) gives up that line too.
+      if (cap) ro.observe(cap);
     }
   };
 })();
