@@ -25,6 +25,12 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">Bijan Bowen, September 28, 2026</span>
   <span class="video-card-desc">Hands-on testing of Claude Sonnet 5.5 including technical capabilities, browser operation, and C++ game development tasks.</span>
 </a>
+<a class="video-card" href="https://www.youtube.com/watch?v=W9m9S-At4FQ" target="_blank" rel="noopener" title="GPT-6 Luna First Test, Is OpenAI’s CHEAPEST Model Actually Good?">
+  <img src="https://i4.ytimg.com/vi/W9m9S-At4FQ/hqdefault.jpg" alt="Video: Hands-on testing of GPT-6 Luna on coding tasks" loading="lazy">
+  <span class="video-card-title">Hands-on testing of GPT-6 Luna on coding tasks</span>
+  <span class="video-card-meta">Bijan Bowen, September 28, 2026</span>
+  <span class="video-card-desc">An independent hands-on test of the GPT-6 Luna model using coding tasks such as a browser-based operating system and a C++ game, showing how the lower-cost model performs.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=DqoLv_3kNZ8" target="_blank" rel="noopener" title="Cline Desktop Hands-On, Can OPEN Models Match Fable 5.1?">
   <img src="https://i1.ytimg.com/vi/DqoLv_3kNZ8/hqdefault.jpg" alt="Video: Cline Desktop tested against Claude Fable 5.1" loading="lazy">
   <span class="video-card-title">Cline Desktop tested against Claude Fable 5.1</span>
@@ -127,17 +133,17 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">Wes Roth, September 17, 2026</span>
   <span class="video-card-desc">Google researchers use a technique called Dream-RSI to help AI agents learn from past experiments and improve decision-making in novel situations.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=J3ljHm57yU0" target="_blank" rel="noopener" title="What AI Researchers Saw, Before Their Demand to ‘Pace’ AI">
-  <img src="https://i3.ytimg.com/vi/J3ljHm57yU0/hqdefault.jpg" alt="Video: AI safety warnings and researcher calls to pace development" loading="lazy">
-  <span class="video-card-title">AI safety warnings and researcher calls to pace development</span>
-  <span class="video-card-meta">AI Explained, September 16, 2026</span>
-  <span class="video-card-desc">Analysis of recent safety warnings and calls to slow AI development from leading researchers and lab leaders.</span>
-</a>
 </div>
 
 ## Medical AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=9ur6K26Drro" target="_blank" rel="noopener" title="AIMI Symposium 2026 Highlights">
+  <img src="https://i2.ytimg.com/vi/9ur6K26Drro/hqdefault.jpg" alt="Video: Highlights from the 2026 Stanford AIMI Symposium on AI in medicine" loading="lazy">
+  <span class="video-card-title">Highlights from the 2026 Stanford AIMI Symposium on AI in medicine</span>
+  <span class="video-card-meta">Stanford AIMI, September 29, 2026</span>
+  <span class="video-card-desc">Highlights from the 2026 Stanford AIMI Symposium, a hybrid conference on artificial intelligence in medicine and imaging, giving viewers a condensed look at the research and discussions presented.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=GRPVRtYqcyw" target="_blank" rel="noopener" title="MedAI #165: AgentDS-BUS: An Agentic Framework for Breast Ultrasound Malignancy Cx. | Pengze Li">
   <img src="https://i4.ytimg.com/vi/GRPVRtYqcyw/hqdefault.jpg" alt="Video: AgentDS-BUS framework for breast ultrasound classification" loading="lazy">
   <span class="video-card-title">AgentDS-BUS framework for breast ultrasound classification</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI for publication versus improved patient outcomes</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
   <span class="video-card-desc">Panel discussion on the tensions between using AI to advance academic publication versus directly improving patient outcomes in pediatrics.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=WiK924ZLarE" target="_blank" rel="noopener" title="Lightning Talks: Sharper Images, Smarter Insights: AI for Pediatric Diagnostics | #AIMI26">
-  <img src="https://i4.ytimg.com/vi/WiK924ZLarE/hqdefault.jpg" alt="Video: AI for pediatric diagnostics and imaging" loading="lazy">
-  <span class="video-card-title">AI for pediatric diagnostics and imaging</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Lightning talks on artificial intelligence applications in pediatric radiology and diagnostic imaging, featuring clinical experts.</span>
 </a>
 </div>
 

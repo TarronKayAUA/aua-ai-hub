@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Build-Team-Agents-e3pj5qj" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: How to Build Team Agents" loading="lazy">
+  <span class="video-card-title">How to Build Team Agents</span>
+  <span class="video-card-meta">The AI Daily Brief, September 29, 2026</span>
+  <span class="video-card-desc">Nufar Gaspar discusses how to build AI agents shared across a whole team, moving from individual AI use to collaborative, shared agents for team workflows.</span>
+</a>
 <a class="video-card" href="https://www.cognitiverevolution.ai/obsolete-or-irreplaceable-garrison-lovely-on-stopping-the-race-to-replace-human-labor" target="_blank" rel="noopener">
   <img src="https://megaphone.imgix.net/podcasts/64b1209a-bbc6-11f1-b1ee-4f4a1de857ab/image/9eb2ec5d4bac34a4b9ce3ed3764379ec.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Obsolete or Irreplaceable? Garrison Lovely on Stopping the Race to Replace Human Labor" loading="lazy">
   <span class="video-card-title">Obsolete or Irreplaceable? Garrison Lovely on Stopping the Race to Replace Human Labor</span>
@@ -34,6 +40,12 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">From AGENTS.md to Enterprise Deployment</span>
   <span class="video-card-meta">Practical AI, September 24, 2026</span>
   <span class="video-card-desc">Discussion of deploying AI agents in enterprise environments, covering security, compliance, scalability, and reliability considerations beyond prototype stages.</span>
+</a>
+<a class="video-card" href="https://aipodcast.education/dr-phil-cummins-the-tide-is-in-ai-is-here" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Dr Phil Cummins: The Tide Is In, AI Is Here" loading="lazy">
+  <span class="video-card-title">Dr Phil Cummins: The Tide Is In, AI Is Here</span>
+  <span class="video-card-meta">AI in Education Podcast, September 17, 2026</span>
+  <span class="video-card-desc">Hosts Dan and Ray interview Dr Phil Cummins of the University of Sydney, who argues that AI is already changing education and that trying to hold it back is futile.</span>
 </a>
 <a class="video-card" href="https://ai-podcast.nejm.org/e/beyond-the-hype-dr-xiao-liu-on-evaluating-medical-ai" target="_blank" rel="noopener">
   <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Beyond the Hype: Dr. Xiao Liu on Evaluating Medical AI" loading="lazy">
