@@ -31839,13 +31839,6 @@
    "reason": "community discussion on model development priorities"
   },
   {
-   "url": "https://www.youtube.com/watch?v=W9m9S-At4FQ",
-   "title_hash": "f6aa64b4d3d10ae29c724c8e6782853d",
-   "first_seen": "2026-09-28T16:46:40.521132+00:00",
-   "kept": false,
-   "reason": "speculation about unreleased model; candidate describes a test of non-existent GPT-6 Luna"
-  },
-  {
    "url": "https://www.youtube.com/watch?v=3jDhHA9JGUE",
    "title_hash": "84cff20e810a49aac0b7f4aa18eaa4c5",
    "first_seen": "2026-09-28T16:46:40.521132+00:00",
@@ -32466,13 +32459,6 @@
    "first_seen": "2026-09-29T18:06:29.572556+00:00",
    "kept": false,
    "reason": "existential risk speculation and extinction claims without substantive analysis for medical educators"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor",
-   "title_hash": "864bab7b8217985420a2df3481b3b1ad",
-   "first_seen": "2026-09-29T18:06:29.572556+00:00",
-   "kept": false,
-   "reason": "vendor marketing announcement of product launch without independent evaluation"
   },
   {
    "url": "https://www.theverge.com/ai-artificial-intelligence/1002201/openai-sam-altman-openai-devday-protests-ice-data-centers",
