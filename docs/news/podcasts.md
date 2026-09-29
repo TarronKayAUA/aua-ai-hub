@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Real-Risks-of-AI-Agents-e3pgsvg" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Real Risks of AI Agents" loading="lazy">
+  <span class="video-card-title">The Real Risks of AI Agents</span>
+  <span class="video-card-meta">The AI Daily Brief, September 28, 2026</span>
+  <span class="video-card-desc">Episode examines security risks and systemic disruption from AI agents, including recent OpenAI incidents and the implications of agent capabilities for systems designed with human friction.</span>
+</a>
 <a class="video-card" href="https://www.cognitiverevolution.ai/ai-am-what-if-it-works-too-well-colluding-agents-200m-safety-orgs-virtual-cells-saturate-at-2" target="_blank" rel="noopener">
   <img src="https://megaphone.imgix.net/podcasts/a007c8ec-ba59-11f1-bf89-c35bece7ca7f/image/5df3dbaddc06cae9dfc837cb5834699e.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI:AM: What If It Works Too Well? Colluding Agents, $200M Safety Orgs, Virtual Cells Saturate at 2%" loading="lazy">
   <span class="video-card-title">AI:AM: What If It Works Too Well? Colluding Agents, $200M Safety Orgs, Virtual Cells Saturate at 2%</span>

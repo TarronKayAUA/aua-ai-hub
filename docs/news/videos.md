@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=ENWVpqtOdRI" target="_blank" rel="noopener" title="Claude Sonnet 5.5 Is INSANE, Seriously, This Model Is Ridiculous!">
+  <img src="https://i2.ytimg.com/vi/ENWVpqtOdRI/hqdefault.jpg" alt="Video: Claude Sonnet 5.5 hands-on testing and capabilities" loading="lazy">
+  <span class="video-card-title">Claude Sonnet 5.5 hands-on testing and capabilities</span>
+  <span class="video-card-meta">Bijan Bowen, September 28, 2026</span>
+  <span class="video-card-desc">Hands-on testing of Claude Sonnet 5.5 including technical capabilities, browser operation, and C++ game development tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=DqoLv_3kNZ8" target="_blank" rel="noopener" title="Cline Desktop Hands-On, Can OPEN Models Match Fable 5.1?">
   <img src="https://i1.ytimg.com/vi/DqoLv_3kNZ8/hqdefault.jpg" alt="Video: Cline Desktop tested against Claude Fable 5.1" loading="lazy">
   <span class="video-card-title">Cline Desktop tested against Claude Fable 5.1</span>
@@ -127,17 +133,17 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">Two Minute Papers, September 15, 2026</span>
   <span class="video-card-desc">Claude model analysis reveals that the model leaves detectable statistical patterns in its output text, with implications for authenticity and detection.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=ArKnoMPSO_k" target="_blank" rel="noopener" title="Cognition SWE-2 First Test, Is THIS a Better Kimi K3?">
-  <img src="https://i2.ytimg.com/vi/ArKnoMPSO_k/hqdefault.jpg" alt="Video: Cognition SWE-2 hands-on test and comparison with Kimi K3" loading="lazy">
-  <span class="video-card-title">Cognition SWE-2 hands-on test and comparison with Kimi K3</span>
-  <span class="video-card-meta">Bijan Bowen, September 14, 2026</span>
-  <span class="video-card-desc">Hands-on test of Cognition SWE-2 agent across multiple coding and software tasks, compared with Kimi K3.</span>
-</a>
 </div>
 
 ## Medical AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=GRPVRtYqcyw" target="_blank" rel="noopener" title="MedAI #165: AgentDS-BUS: An Agentic Framework for Breast Ultrasound Malignancy Cx. | Pengze Li">
+  <img src="https://i4.ytimg.com/vi/GRPVRtYqcyw/hqdefault.jpg" alt="Video: AgentDS-BUS framework for breast ultrasound classification" loading="lazy">
+  <span class="video-card-title">AgentDS-BUS framework for breast ultrasound classification</span>
+  <span class="video-card-meta">Stanford MedAI, September 28, 2026</span>
+  <span class="video-card-desc">Seminar on AgentDS-BUS, an agent-based framework for automated breast ultrasound malignancy classification without fine-tuning.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=fjyB3B-nLJM" target="_blank" rel="noopener" title="AIMI Grand Rounds: AI in the Loop: From Clinical Intelligence to Clinical Action - Maya Yiadom, MD">
   <img src="https://i3.ytimg.com/vi/fjyB3B-nLJM/hqdefault.jpg" alt="Video: AI in clinical workflows: intelligence to action" loading="lazy">
   <span class="video-card-title">AI in clinical workflows: intelligence to action</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI for pediatric diagnostics and imaging</span>
   <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
   <span class="video-card-desc">Lightning talks on artificial intelligence applications in pediatric radiology and diagnostic imaging, featuring clinical experts.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=yEXbXbESX4w" target="_blank" rel="noopener" title="Lightning Talks: Fit for Kids? Adapting and Validating AI Models for Pediatric Use | #AIMI26">
-  <img src="https://i2.ytimg.com/vi/yEXbXbESX4w/hqdefault.jpg" alt="Video: Adapting and validating AI models for pediatric use" loading="lazy">
-  <span class="video-card-title">Adapting and validating AI models for pediatric use</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Lightning talks on adapting and validating AI models specifically for pediatric clinical use, covering translational challenges.</span>
 </a>
 </div>
 

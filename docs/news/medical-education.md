@@ -12,12 +12,12 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">A new synthesis of generative AI competency domains aims to guide medical faculty on what they must teach as AI becomes embedded in clinical and educational settings <a href="https://pubmed.ncbi.nlm.nih.gov/42802081?fc=20260609215449&amp;ff=20260928012759&amp;v=2.20.1" aria-label="Source 1: PubMed AI in medical education, Synthesising Generative Artificial Intelligence Competency Domains for Medical Education Faculty">[1]</a>. That guidance arrives alongside evidence that AI tools are already reshaping training: a personalized learning model boosted clinical thinking among cardiovascular surgery trainees <a href="https://pubmed.ncbi.nlm.nih.gov/42786480?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1" aria-label="Source 8: PubMed AI in medical education, Application of an AI-enabled personalized medical education model for improving clinical thinking among cardiovascular surgery trainees">[8]</a>, and a hybrid natural language processing system graded radiology short-answer assessments with accuracy matching human graders <a href="https://pubmed.ncbi.nlm.nih.gov/42788947?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1" aria-label="Source 10: PubMed AI in medical education, Automated grading of short-answer image-based assessments using a hybrid natural language processing-AI framework: validation in radiology education">[10]</a>.</p>
+<p class="section-brief-lede">A new technical report finds that generative AI can produce fluent medical assessment materials, but linguistic polish does not guarantee measurement validity, raising concerns about clinical accuracy and integrity <a href="https://pubmed.ncbi.nlm.nih.gov/42802837?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1" aria-label="Source 2: PubMed AI in medical education, Human-Governed Validation of Artificial Intelligence-Generated Medical Assessment Artifacts: A Technical Report">[2]</a>. A UK study reinforces that caution: six general-purpose large language models scored about two-thirds on a multi-specialty recruitment exam, faltering on ranking items despite strong multiple-choice performance <a href="https://pubmed.ncbi.nlm.nih.gov/42802840?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1" aria-label="Source 1: PubMed AI in medical education, Artificial Professionalism: An Evaluation of Six Large Language Models on the UK Multi-Specialty Recruitment Assessment Professional Dilemmas Paper">[1]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Yet a randomized trial of medication order verification found that AI assistance raised accuracy but also introduced automation bias, underscoring the need for training on validating AI outputs <a href="https://pubmed.ncbi.nlm.nih.gov/42788619?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1" aria-label="Source 11: PubMed AI in medical education, Impact of AI assistance on pharmacist and pharmacy trainee accuracy and automation bias during medication order verification: A randomized simulation trial">[11]</a>.</p>
-<p>Also this week: eight items address teaching and curriculum design, from restructuring the education continuum around AI literacy to using combinatorial optimization for resident scheduling, four cover assessment and feedback such as AI-generated revision podcasts and MCQ item recognition, and three explore attitudes and adoption among cardiologists, mental health professionals, and psychiatric trainees.</p>
-<p class="section-brief-date">The picture as of September 28, 2026; numbered links go to the items below.</p>
+<p>Medical students at a German university likewise could not reliably distinguish AI-generated multiple-choice questions from human-written ones, suggesting AI drafting works only within structured human review <a href="https://pubmed.ncbi.nlm.nih.gov/42786477?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1" aria-label="Source 14: PubMed AI in medical education, Can students identify AI? - A cross-sectional quantitative study about AI recognition in tablet-based MCQ assessment among fifth-year undergraduate medical students at Saarland University, Germany">[14]</a>. A related set of competency domains urges faculty to build the AI literacy needed to address these same validity questions <a href="https://pubmed.ncbi.nlm.nih.gov/42802081?fc=20260609215449&amp;ff=20260928012759&amp;v=2.20.1" aria-label="Source 6: PubMed AI in medical education, Synthesising Generative Artificial Intelligence Competency Domains for Medical Education Faculty">[6]</a>.</p>
+<p>Also this week: the section covers six items on teaching and curriculum, including AI-enabled personalized learning models for cardiovascular surgery trainees, alongside five pieces on assessment and feedback such as automated grading in radiology education. Three additional items examine attitudes and adoption among cardiologists, mental health professionals, and medical students in China.</p>
+<p class="section-brief-date">The picture as of September 29, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
@@ -43,6 +43,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802729?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Artificial Intelligence in Lifestyle Medicine: Advancing Clinical Practice, Education, and Whole-Person Care With Responsible Innovation</a>
     <p class="news-card-summary">Artificial intelligence offers opportunities to enhance lifestyle medicine education, clinical care, and whole-person care through responsible innovation.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42804350?fc=20260609215449&amp;ff=20260928202318&amp;v=2.20.1">Critical Thinking, Human Judgment, and Artificial Intelligence in Combat Casualty Care: Implications for Military Medical Education and Practice</a>
+    <p class="news-card-summary">Military medical educators discuss implications of AI for combat casualty care, balancing machine learning diagnostic support with human judgment and critical thinking in tactical settings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42803982?fc=20260609215449&amp;ff=20260928202318&amp;v=2.20.1">Automating Clavien-Dindo classification with large language models in percutaneous nephrolithotomy: an exploratory study</a>
+    <p class="news-card-summary">Study found large language models faster and more accurate than physicians at automated Clavien-Dindo surgical complication classification, with authors recommending prospective validation and ethical review.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -113,20 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42788947?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">Automated grading of short-answer image-based assessments using a hybrid natural language processing-AI framework: validation in radiology education</a>
     <p class="news-card-summary">Hybrid natural language processing and AI system accurately grades short-answer image-based assessments in radiology education with strong concordance to human grading.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42788619?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">Impact of AI assistance on pharmacist and pharmacy trainee accuracy and automation bias during medication order verification: A randomized simulation trial</a>
-    <p class="news-card-summary">Randomized trial shows AI assistance improves pharmacist and trainee medication verification accuracy but reveals automation bias risk, requiring model output validation training.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42788236?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">&quot;Acne in the Age of ChatGPT&quot;: an artificial intelligence-generated and evidence-based continuing medical education distance course for Italian physicians</a>
-    <p class="news-card-summary">Pilot continuing education course on acne was developed with ChatGPT assistance, translated to Italian, and evaluated for physician satisfaction with AI-generated content.</p>
   </div>
 </div>
 </div>
