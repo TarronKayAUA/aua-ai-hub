@@ -77,14 +77,16 @@
 .isl .isl-a, .isl .isl-y, .isl .isl-s { display: none; }
 /* SUNSET (owner, 2026-09-28: five versions): each picture's Dusk drawing a few minutes before sunset, the
    Sun just above the horizon wherever the view truly shows it (sunDisc), the sky brighter and warmer, the
-   first stars not yet out; Venus and the Moon stay, the lights are coming on. */
+   first stars not yet out; Venus and the Moon stay, the lights are coming on. Reddish throughout (owner,
+   2026-09-29: "sunset consistently reddish", Dawn "consistently purplish", Night, Day and Dusk blue):
+   indigo overhead through violet and rose to red-orange at the horizon. */
 .isl[data-sky="sunset"] .isl-s { display: inline; }
 .isl[data-sky="sunset"] .isl-dstars { display: none; }
 .isl[data-sky="sunset"] {
-  --isl-sky0: #22507f; --isl-sky1: #3f6e9e; --isl-sky2: #8a9fc0; --isl-sky3: #f0c190; --isl-hz: #ffc98a;
-  --isl-g1: #ffe0a8; --isl-g2: #f7a46e; --isl-g3: #b58aa6;
-  --isl-sea0: #b9a492; --isl-sea1: #3d6a8e; --isl-sea2: #1d4466; --isl-haze: #f2d8c0;
-  --isl-isl: #6d7fa0; --isl-far: #24466b; --isl-near: #14304f;
+  --isl-sky0: #283d74; --isl-sky1: #5b5690; --isl-sky2: #b86e82; --isl-sky3: #ec8a62; --isl-hz: #ff9e6a;
+  --isl-g1: #ffc996; --isl-g2: #f27c58; --isl-g3: #b25f7c;
+  --isl-sea0: #c4806c; --isl-sea1: #3e5987; --isl-sea2: #1d3a62; --isl-haze: #f2b597;
+  --isl-isl: #74708f; --isl-far: #24466b; --isl-near: #14304f;
 }
 .isl[data-sky="dawn"] .isl-a,
 .isl[data-sky="day"] .isl-y { display: inline; }
@@ -92,16 +94,17 @@
 .isl .st-cloud { stop-color: var(--isl-cloud, #ffffff); }
 .isl .st-cloud-s { stop-color: var(--isl-cloud-s, #c9d6e0); }
 /* DAWN: the Sun three degrees below the horizon behind a west-facing view, so the western sky shows
-   the pink band above the Earth's blue-gray shadow; the land still dim, the lamps still lit. */
+   the pink band above the Earth's blue-gray shadow; the land still dim, the lamps still lit. Purplish
+   throughout (owner, 2026-09-29): violet overhead through lavender to pink at the horizon. */
 .isl[data-sky="dawn"] {
-  --isl-sky0: #34507f; --isl-sky1: #6078a6; --isl-sky2: #a891b4; --isl-sky3: #e6b4b0; --isl-hz: #8e9ab4;
-  --isl-g1: #ffd9a8; --isl-g2: #f0a79a; --isl-g3: #9a86ad;
-  --isl-sea0: #c2a6b8; --isl-sea1: #5d7399; --isl-sea2: #2f4d72; --isl-haze: #e2c8cf;
-  --isl-isl: #7d88a6; --isl-far: #3e5474; --isl-near: #273a53;
-  --isl-rip: #dfe2ef; --isl-rip-a: 0.28; --isl-hzline: rgba(255, 228, 222, 0.4);
-  --isl-rim: #f4c9c2; --isl-bird: #1d2b40;
-  --isl-cloud: #ffd7b4; --isl-cloud-s: #8a90b0; --isl-gild: #ffbe8c;
-  --isl-vbay: #7390b4; --isl-vsand: #dccbc6; --isl-vwall: #d8dce6; --isl-vrail: rgba(232, 236, 244, 0.55);
+  --isl-sky0: #37417a; --isl-sky1: #685f9e; --isl-sky2: #a58cbf; --isl-sky3: #d9a8c6; --isl-hz: #a898c0;
+  --isl-g1: #ffd6d4; --isl-g2: #dfa0c4; --isl-g3: #9a86c4;
+  --isl-sea0: #b9a2c8; --isl-sea1: #5c6a9e; --isl-sea2: #2e4070; --isl-haze: #dcc4e2;
+  --isl-isl: #8a86ae; --isl-far: #434e78; --isl-near: #2a3456;
+  --isl-rip: #e2dff0; --isl-rip-a: 0.28; --isl-hzline: rgba(246, 226, 240, 0.4);
+  --isl-rim: #f0c4dc; --isl-bird: #1f2442;
+  --isl-cloud: #f6cfe2; --isl-cloud-s: #8c88b8; --isl-gild: #f6b6cc;
+  --isl-vbay: #7b88b8; --isl-vsand: #dccbd6; --isl-vwall: #d8d6ea; --isl-vrail: rgba(236, 232, 246, 0.55);
 }
 /* DAY: mid-morning, the Sun high behind a west-facing view: a blue sky paling to haze at the horizon,
    trade-wind cumulus, a turquoise harbour, green hills. */
@@ -140,10 +143,10 @@
   --isl-sea0: #2f6f93; --isl-haze: #7fa9c4; --isl-sky3: #7fb0d4; --isl-hz: #9cc0d8;
 }
 .isl.isl-hero:not(.isl-bold)[data-sky="dawn"] {
-  --isl-sea0: #6a7596; --isl-haze: #a08aa6; --isl-sky3: #b08aa0; --isl-hz: #7d86a4;
+  --isl-sea0: #6b6a98; --isl-haze: #9c86ae; --isl-sky3: #a886ac; --isl-hz: #827ca8;
 }
 .isl.isl-hero:not(.isl-bold)[data-sky="sunset"] {
-  --isl-sea0: #675e72; --isl-haze: #98797a; --isl-sky3: #b4876e; --isl-hz: #ad8466;
+  --isl-sea0: #66566e; --isl-haze: #976a6e; --isl-sky3: #b06f66; --isl-hz: #a96a5a;
 }
 .isl .isl-shade2 { display: none; }
 .isl.isl-hero:is([data-sky="dawn"], [data-sky="day"], [data-sky="sunset"]) .isl-shade2 { display: inline; }
@@ -154,10 +157,10 @@
 /* the network's signal stays light on a daylight sky (the campus windows keep the Day's dark glass) */
 .isl.isl-hero[data-sky="day"] .isl-pulse { --isl-pulse: #fff1c8; }
 .isl.isl-hero[data-sky="dawn"] {
-  --isl-sky0: #283f6a; --isl-sky1: #445c8c; --isl-sky2: #9585ab; --isl-sky3: #e2b1ad;
+  --isl-sky0: #2b3166; --isl-sky1: #4b4988; --isl-sky2: #8f7cb2; --isl-sky3: #d4a4c2;
 }
 .isl.isl-hero[data-sky="sunset"] {
-  --isl-sky0: #1a426c; --isl-sky1: #2d5b8a;
+  --isl-sky0: #222f62; --isl-sky1: #463f78;
 }
 .isl .isl-veg-bf { fill: var(--isl-far); }
 .isl .isl-veg-bn { fill: var(--isl-near); }
@@ -238,6 +241,9 @@
 .isl .f-far { fill: var(--isl-far); }
 .isl .f-near { fill: var(--isl-near); }
 .isl .f-moon { fill: var(--isl-moon); }
+/* the Moon's seas and its limb (island-core.js, moon()): a quiet grey, never a hard edge */
+.isl .f-maria { fill: #8f8c80; fill-opacity: 0.42; }
+.isl .st-mlimb { stop-color: #8a826c; }
 .isl .f-earth { fill: var(--isl-earth); }
 .isl .f-planet { fill: var(--isl-planet); }
 .isl .f-pulse { fill: var(--isl-pulse); }
@@ -508,6 +514,37 @@
 .isl .isl-lbottle { fill: var(--isl-lbottle); }
 .isl .isl-lredsh { fill: var(--isl-lside); fill-opacity: 0.12; }
 .isl .isl-lshadehi { stroke: #ffffff; stroke-opacity: 0.22; fill: none; stroke-linecap: round; }
+/* The library's things on the tables (owner, 2026-09-29): each group shows only in the versions its
+   data-q names (a Dawn, y Day, s Sunset, d Dusk), so the hall is in use by Day, has a few early arrivals
+   at Dawn, winds down at Sunset, keeps only its own stacked books at Dusk and is empty at Night. */
+.isl .isl-lq { display: none; }
+.isl[data-sky="dawn"] .isl-lq[data-q*="a"],
+.isl[data-sky="day"] .isl-lq[data-q*="y"],
+.isl[data-sky="sunset"] .isl-lq[data-q*="s"],
+.isl[data-sky="dusk"] .isl-lq[data-q*="d"] { display: inline; }
+.isl {
+  --isl-lscreen: #9fc2e4; --isl-lbezel: #2a2d33; --isl-lmug: #e6e2da; --isl-lbottle2: #3d6fa8;
+  --isl-lbag1: #2d3b57; --isl-lbag2: #3a3b40; --isl-lbag3: #7a3330;
+}
+.isl[data-sky="day"] {
+  --isl-lscreen: #dcebf7; --isl-lmug: #f6f3ee; --isl-lbottle2: #3f7cc0;
+  --isl-lbag1: #34466a; --isl-lbag2: #45464c; --isl-lbag3: #93403b;
+}
+.isl[data-sky="dawn"] { --isl-lscreen: #b9cdf0; --isl-lbag1: #334062; --isl-lbag2: #44434e; --isl-lbag3: #86403f; }
+.isl[data-sky="sunset"] { --isl-lscreen: #c3d6ee; --isl-lbag1: #33405f; --isl-lbag2: #45423f; --isl-lbag3: #8b3c34; }
+.isl .isl-ltext { stroke: #6f6a60; stroke-opacity: 0.35; fill: none; }
+.isl .isl-lpageedge { fill: var(--isl-lpage); fill-opacity: 0.85; }
+.isl .isl-llogo { fill: #ffffff; fill-opacity: 0.35; }
+.isl .isl-lbezel { fill: var(--isl-lbezel); }
+.isl .isl-lscreen { fill: var(--isl-lscreen); }
+.isl .isl-lmug { fill: var(--isl-lmug); }
+.isl .isl-lmugh { stroke: var(--isl-lmug); fill: none; }
+.isl .isl-lbottle2 { fill: var(--isl-lbottle2); }
+.isl .isl-lbag1 { fill: var(--isl-lbag1); }
+.isl .isl-lbag2 { fill: var(--isl-lbag2); }
+.isl .isl-lbag3 { fill: var(--isl-lbag3); }
+.isl .isl-lbagp { fill: #ffffff; fill-opacity: 0.1; }
+.isl .isl-lbagh { stroke: var(--isl-lbag2); fill: none; stroke-linecap: round; }
 .isl .isl-ledge { stroke: #ffe2c4; stroke-opacity: 0.28; fill: none; }
 .isl .isl-llap2 { fill: var(--isl-lchair2); }
 .isl .isl-lgutter { stroke: var(--isl-lchair2); stroke-opacity: 0.6; fill: none; }
