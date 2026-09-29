@@ -21,14 +21,77 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e101393">Machine Learning to Prioritize High-Severity Patient Safety Events for Institutional Investigation: Algorithm Development and Validation Study</a>
+    <p class="news-card-summary">Machine learning model prioritizes high-severity patient safety events for investigation, helping allocate limited resources to incidents most likely to cause harm.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e100805">Implementation Readiness and Adoption of AI-Enabled Voice Electronic Medical Records in Resource-Constrained African Health Systems: Multisite Qualitative Study</a>
+    <p class="news-card-summary">Qualitative study of healthcare workers in sub-Saharan Africa reveals perceived benefits and concerns about AI voice-enabled electronic medical records in resource-limited settings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93018">A Multi-Model, Pixel-Native Framework for Automated Computed Tomography Series Labeling and Characterization: Proof-of-Concept Study</a>
+    <p class="news-card-summary">Multi-model framework using image pixels rather than inconsistent metadata automatically labels and characterizes computed tomography series to improve clinical workflow management.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 29, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.31629">ChestPheNoT: Deployable, Auditable Label-Status-Evidence Extraction from Radiology Reports</a>
     <p class="news-card-summary">A deployable system extracts structured phenotypes and supporting evidence from radiology reports using local inference with auditable predictions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03277-y">Blind spots in AI-assisted healthcare evidence search: multiplatform evaluation of clinical retrieval gaps and risk-of-bias</a>
+    <p class="news-card-summary">Multiplatform evaluation reveals systematic gaps and bias risks when AI tools search healthcare evidence, affecting clinical decision support reliability.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03334-6">Strabismus-Net mobile application for nine-gaze photograph-based strabismus diagnosis using dual-stream cross-attention and adaptive feature aggregation</a>
+    <p class="news-card-summary">Mobile application using dual-stream attention networks diagnoses strabismus from nine-gaze photographs, enabling accessible eye movement disorder detection.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03257-2">Generalizable CT vision-language modeling for population health and disease risk</a>
+    <p class="news-card-summary">Vision-language model trained on computed tomography scans predicts population health risks and disease outcomes from imaging data.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03297-8">Development and validation of a machine learning model for the preoperative prediction of intractable hypoxemia in repeat lung surgery</a>
+    <p class="news-card-summary">Machine learning model predicts severe hypoxemia risk in patients undergoing repeat lung surgery, supporting preoperative clinical decision-making.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03236-7">DentalGEN: a large-scale controllable generative AI framework for automated dental crown restoration</a>
+    <p class="news-card-summary">Large-scale generative framework automates design of dental crown restorations with user control, accelerating prosthodontic treatment planning.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03137-9">Fundamental kinematic indicators predict surgical expertise and clinical outcomes in robot-assisted surgery</a>
+    <p class="news-card-summary">Kinematic data from robot-assisted surgery predicts surgeon expertise and patient outcomes, offering objective measures for skill assessment and quality monitoring.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -65,70 +128,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03258-1">Development and validation of a parsimonious AI-based mortality risk score for heart failure</a>
     <p class="news-card-summary">Development and validation of a parsimonious AI mortality risk score for heart failure patients published in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03276-z">Quantifying the plausibility gap in generative AI for surgical video generation with expert assessment</a>
-    <p class="news-card-summary">Expert assessment quantifies the gap between plausible and realistic surgical video generation from generative AI models.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03309-7">Large language model, assisted preoperative communication reduces patient anxiety and physician workload in prostate cancer: a prospective randomized phase II trial</a>
-    <p class="news-card-summary">Randomized trial shows large language model assisted preoperative communication for prostate cancer reduces patient anxiety and physician workload.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e78202">SAFE_DTx: Safety-First Framework for AI-Driven Personalization in Digital Therapeutics</a>
-    <p class="news-card-summary">Safety-first architectural framework for AI-driven personalization in digital therapeutics integrates predictive modeling principles to address unpredictable model behaviors.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e90854">Cloud-Based and Locally Deployed Language Models in Nursing and Health Care: An AI Act, Aligned Framework</a>
-    <p class="news-card-summary">Framework for evaluating cloud and locally deployed language models in healthcare aligned with European Union AI Act requirements before educational and clinical deployment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e85047">Acceptance of Machine Learning for Medication Selection in Epilepsy to Inform Clinical Trial Design: Co-Design Survey Study</a>
-    <p class="news-card-summary">Co-design survey assesses patient and clinician acceptance of machine learning for personalized antiseizure medication selection to inform epilepsy treatment trials.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment">Trump admin using AI to deny medical care for seniors in disastrous experiment</a>
-    <p class="news-card-summary">A US healthcare system pilot using AI to automate insurance claim denials for seniors prompted concerns about algorithmic incentives and patient access to care.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2295026360-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42787094?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1">Large Language Models for Preoperative Microvascular Invasion Prediction in Hepatocellular Carcinoma: A Multicenter Comparison with Radiologists and Treatment Outcomes</a>
-    <p class="news-card-summary">Multicenter study comparing large language models including DeepSeek-R1 and GPT-4o to radiologist performance for predicting microvascular invasion in hepatocellular carcinoma.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03250-9">Automated multi-sequence MRI quantitative assessment and 3D visualization of acute cervical spinal cord injury</a>
-    <p class="news-card-summary">Automated analysis of multi-sequence MRI data quantifies acute cervical spinal cord injury and generates 3D visualizations for clinical assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 25, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03248-3">Large language models as judges for clinical generative AI evaluation</a>
-    <p class="news-card-summary">Study examines use of large language models as evaluators for assessing performance of clinical generative AI systems.</p>
   </div>
 </div>
 </div>
