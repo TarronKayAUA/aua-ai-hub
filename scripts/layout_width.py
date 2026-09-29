@@ -726,7 +726,9 @@ def _wrap(article: str, page_type: str, src: str) -> str | None:
     while tail_at and blocks[tail_at - 1].role in ("tail", "silent"):
         tail_at -= 1
     body = blocks[:tail_at]
-    if not body or not any(b.role == "h1" for b in body[:3]):
+    # The title is an h1, or sits at the top of a picture's stack (layout_art.py, `_title`: the About
+    # page, owner 2026-09-29).
+    if not body or not any(b.role == "h1" or (b.role == "stack" and "<h1" in b.html) for b in body[:3]):
         return None
     kind = _kind(page_type, body)
     plan, left, right, lifted = _plan(body, kind)
@@ -907,11 +909,16 @@ def _wrap(article: str, page_type: str, src: str) -> str | None:
     out.append(page_open)
 
     head_cls = "w-head w-head--split" if right else "w-head w-head--lifted" if lifted else "w-head"
-    open_(f'<div class="{head_cls}">')
-    open_('<div class="w-head__main">')
-    put(left)
-    close()
-    if right:
+    # A title held in a picture's stack leaves the head row with nothing in it: it is left out.
+    headless = not left and not right and not lifted
+    if not headless:
+        open_(f'<div class="{head_cls}">')
+        open_('<div class="w-head__main">')
+        put(left)
+        close()
+    if headless:
+        pass
+    elif right:
         # A side that opens with something boxed of its own (a guide's prompt
         # panel, a note, a table) stays open: no box around a box.
         first = next(b for b in right if b.role not in ("key", "silent"))
@@ -923,7 +930,8 @@ def _wrap(article: str, page_type: str, src: str) -> str | None:
         open_('<div class="w-head__side w-panel" data-w-shape="tile">')
         put(lifted.blocks)
         close()
-    close()
+    if not headless:
+        close()
 
     open_('<div class="w-rows">')
     for shape, span, parts in plan.cells:

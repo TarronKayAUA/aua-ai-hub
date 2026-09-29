@@ -182,6 +182,17 @@ def on_page_content(html, page, config, files):
 _REVIEWED_P = re.compile(r'<p class="page-reviewed">.*?</p>', re.S)
 
 
+def _first_of_tab(page) -> bool:
+    """The first page of a top-level section (a tab). Its breadcrumb would name only the section the
+    reader is already in: the About page, since every other section starts with a landing (door)."""
+    parent = getattr(page, "parent", None)
+    if parent is None or getattr(parent, "parent", None) is not None:
+        return False
+    children = getattr(parent, "children", None) or []
+    return bool(children) and children[0] is page
+
+
 def on_post_page(output, page, config):
     kind = page.meta.get("page_type") or page_type(page)
-    return output.replace("<body ", f'<body data-page-type="{kind}" ', 1)
+    crumbs = ' data-crumbs="none"' if _first_of_tab(page) else ""
+    return output.replace("<body ", f'<body data-page-type="{kind}"{crumbs} ', 1)

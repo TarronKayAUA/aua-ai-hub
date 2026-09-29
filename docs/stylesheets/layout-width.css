@@ -107,6 +107,10 @@ body[data-page-type="door"] .md-typeset:has(.hub-cards) .w-page--door .w-cell > 
     align-items: stretch;
     margin-top: var(--w-gap);
   }
+  /* No head row (the title sits in a picture's stack, layout_art.py `_title`): no gap above the rows. */
+  .w-page > .w-rows:first-child {
+    margin-top: 0;
+  }
   .w-head > .w-head__main:only-child,
   .w-cell.w-span {
     grid-column: 1 / -1;
