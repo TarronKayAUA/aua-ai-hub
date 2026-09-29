@@ -852,6 +852,14 @@
 .isl-vig.isl-vrun .isl-vglow,
 .isl-vig.isl-vrun .isl-vlamps,
 .isl-vig.isl-vrun .isl-vspill { animation: isl-vlight 1.2s ease-out 1.2s both; }
+/* A window waiting its turn is dark glass, then warms to its light (owner, 2026-09-29: before they lit the
+   windows were "yellowish ... in contrast to the actual unlit windows", and "the church looks like it has
+   no windows or doors"): faded up from nearly nothing, a lit window let the wall show through it. A filled
+   window now keeps its full opacity and changes color from the version's unlit glass (--isl-vdark, as the
+   windows that never light) to its light; halos, pools, spill and points of light still fade in. Placed
+   before the Day rule below, which takes precedence and leaves daylight windows still. */
+.isl-hero.isl-run .isl-vwin:is(.f-pulse, .isl-vcathwin),
+.isl-vig.isl-vrun .isl-vwin:is(.f-pulse, .isl-vcathwin) { animation-name: isl-vlit; }
 /* By Day no light comes on (owner, 2026-09-29: the windows "pop in" by day, "which doesn't quite make
    sense"): the windows are daylight glass, the lamps unlit, so the lights' part of the pass is left out and
    they are simply there. The card's fade and Betty's Hope's sails still move. */
@@ -859,6 +867,7 @@
 .isl-vig.isl-vrun[data-sky="day"] :is(.isl-vwin, .isl-vglow, .isl-vlamps, .isl-vspill) { animation: none; }
 @keyframes isl-vfade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes isl-vlight { from { opacity: 0.12; } to { opacity: 1; } }
+@keyframes isl-vlit { from { fill: var(--isl-vdark, #34475d); } }
 @media (prefers-reduced-motion: reduce) {
   .isl-vig.isl-vrun,
   .isl-vig.isl-vrun * { animation: none !important; }
