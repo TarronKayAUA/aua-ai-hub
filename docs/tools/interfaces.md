@@ -69,7 +69,7 @@ The practical rule: the heavier and more file-bound the task, the further right 
 
 ## Dialing Effort
 
-Both vendors now expose how hard the model thinks as a setting, and it is the most direct cost and quality lever you have. Claude Code offers effort levels low, medium, high, xhigh, and max, plus a fast mode for quick turnarounds; high is the default on most models, but Claude Opus 5.5 starts at medium. The GPT-5.6 family exposes a range of effort settings up to max on paid plans. Both ecosystems also added orchestration above a single agent: ChatGPT's Ultra mode splits a task across parallel subagents, and Claude Code's ultracode setting has the model orchestrate multi-agent workflows.
+Both vendors now expose how hard the model thinks as a setting, and it is the most direct cost and quality lever you have. Claude Code offers effort levels low, medium, high, xhigh, and max, plus a fast mode for quick turnarounds; high is the default on most models, but Claude Opus 5.5 starts at medium. In ChatGPT, paid plans set how hard the model thinks with a Thinking slider from Instant to Extra High, and in ChatGPT Work and Codex each model offers its own reasoning levels, from Light up to Max. Both ecosystems also added orchestration above a single agent: Ultra mode in Work and Codex splits a task across parallel subagents, and Claude Code's ultracode setting has the model orchestrate multi-agent workflows.
 
 The heuristic: default effort for routine work; drop effort (or use fast mode) for mechanical batch tasks where the steps are obvious; raise it only for the genuinely hard steps: architecture decisions, subtle debugging, analysis where a wrong answer is expensive. Effort applies per task, so one session can dial down for the cleanup and up for the hard part. Paying maximum reasoning for routine file renames is the agent-era version of leaving the lights on.
 
@@ -82,7 +82,9 @@ Model names go stale faster than anything else on this page; treat these as a sn
     - **Claude Fable 5.1** (released September 1, 2026) remains Anthropic's model for demanding reasoning and long-running agent work. It is available on every paid plan but never the default: you select it explicitly (in Claude Code with `/model`); Max plans include it for up to half of weekly usage, and on Pro plans it draws on usage credits.
     - **Claude Sonnet 5** is the faster, lower-cost tier; Anthropic says Sonnet 5.5 and Haiku 5.5 will follow in the coming weeks.
     - When Opus 5.5 or Fable 5.1 flags a request as biology or cybersecurity work, Claude Code re-runs it on an older Claude model and notes the switch in the transcript; researchers working with biomedical material should expect to see this.
-- **OpenAI:** the ChatGPT app runs the GPT-5.6 family, three tiers under one generation: Sol (flagship), Terra (the everyday mid-tier), Luna (fastest and cheapest). Free and Go plans get Terra; Plus, Pro, Business, and Enterprise plans choose the tier and set the effort level.
+- **OpenAI:** ChatGPT runs two model generations side by side, and which one you meet depends on which part of ChatGPT you use.
+    - **Chat**, the everyday conversation view, runs GPT-5.6. Paid plans get GPT-5.6 Sol under a Thinking slider (Instant, Medium, and High; Pro, Business, and Enterprise plans add Extra High and a Pro option, which includes GPT-6 Pro, powered by GPT-6 Astra). Free and Go plans get GPT-5.6 Luna, the fastest and lowest-cost model.
+    - **Work and Codex**, the agent views, add the GPT-6 generation on paid plans: GPT-6 Astra (released September 3, 2026), OpenAI's most capable model, included on Plus and Pro plans; GPT-6 Sol and GPT-6 Luna (September 22); and GPT-6.1 Sol (September 29, still rolling out), which OpenAI describes as near-Astra performance at a lower cost. Free and Go plans get a smaller model in Codex: GPT-5.6 Terra, with GPT-6 Luna rolling out.
 
 ## Equipping the Machine
 
