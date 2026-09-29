@@ -4,13 +4,13 @@ last_reviewed: 2026-09-28
 
 # When Every Design Passes
 
-<span class="meta-chip">For anyone curious how this site works</span><span class="meta-chip">About 13 minutes</span> <span class="meta-note">A worked example. Every number here comes from the [public repository](https://github.com/TarronKayAUA/aua-ai-hub) or from the working records the design rounds kept on my laptop, and each was checked against its source before publishing.</span>
+<span class="meta-chip">For anyone curious how this site works</span><span class="meta-chip">About 18 minutes</span> <span class="meta-note">A worked example. Every number here comes from the [public repository](https://github.com/TarronKayAUA/aua-ai-hub) or from the working records the design rounds kept on my laptop, and each was checked against its source before publishing.</span>
 
 Six artificial intelligence (AI) visitors, each playing a different member of this school, tried 30 ordinary tasks on this site. They succeeded at all 30.
 
 That is the result that told me the navigation needed rebuilding. Not because anything failed, but because a perfect score was hiding the cost: a median of four steps per task, fourteen of the thirty taking five or more, and one navigation tab holding 26 of the site's 64 menu entries under a label all six visitors independently found unclear.
 
-This is how the site you are reading was redesigned over four days in late September 2026: what was measured, how several AI designers were set against each other, where an independent second model changed the outcome, where I overruled both of them, and how the scenery in the page headers was drawn. The system underneath (the news pipeline, the checks, and how they fail) is the subject of [When a Check Stops Checking](this-site.md). This piece is about the surface.
+This is how the site you are reading was redesigned over four days in late September 2026: what was measured, how several AI designers were set against each other, where an independent second model changed the outcome, where I overruled both of them, and how the scenery in the page headers was drawn, then redrawn for every time of day. The system underneath (the news pipeline, the checks, and how they fail) is the subject of [When a Check Stops Checking](this-site.md). This piece is about the surface.
 
 ## The Visitors
 
@@ -83,13 +83,46 @@ Each page's picture is one subject, drawn from photographs, several of them my o
 
 The corrections came from looking. The first piece, a lecture hall, appeared to hang over the water. The grain added to make the pictures look printed read as noise on the land. When I said the home page's sky looked sparse, the stars per million pixels were measured instead of guessed (1,030 on the home page against about 9,500 in the smaller pictures), which pointed to scale rather than the star catalog as the cause. And when five placements were drawn one night while I slept, I approved two and declined three, because a picture should be about the page it sits on. The declined drawings were kept, and one of them, St John's Harbour, is now on the About page.
 
-The method that reached a standard I was happy with is written down in the site's design reference, along with a script that renders a piece at two screen sizes, in its dusk and night colors, beside the page it belongs to and the photographs it was drawn from. The rule it encodes is simple: nobody sees a first draft.
+The method that reached a standard I was happy with is written down in the site's design reference, along with a script that renders a piece at two screen sizes and in each of its five versions, beside the page it belongs to and the photographs it was drawn from. The rule it encodes is simple: nobody sees a first draft.
+
+## The Same Place at Five Times of Day
+
+After the redesign went live, a colleague who prefers light mode asked on a call why the site looks so dark. The answer was the toggle, but the question stayed with me: every picture was drawn at dusk or at night, so even a light page opened onto a dark window.
+
+So every picture now comes in five versions, Dawn, Day, Sunset, Dusk and Night, and the visitor's own clock chooses among them: Dawn from 5 in the morning, Day from 9, Sunset from 5 in the afternoon, Dusk from 7 and Night from 9. The light and dark toggle now changes only the page, not the picture. A page left open follows the clock too, crossfading to the next version when the hour turns.
+
+<figure class="figure">
+<img src="../../assets/worked-examples/art-five-versions.jpg" alt="The same view over English Harbour and Falmouth Harbour drawn five times: at dawn under pink clouds, by day in green and turquoise with houses and yachts, at sunset with the Sun above the far hills, at dusk under a crescent Moon, and at night with lit windows under a starry sky.">
+<figcaption>Shirley Heights, on the For Students page, in its five versions: Dawn, Day and Sunset above, Dusk and Night below. The drawing is the same in all five; the light is what changes.</figcaption>
+</figure>
+
+Each picture is drawn once, and the light is what changes. A version is a set of colors for the sky, sea, land, stone and roofs, shared by every picture, plus a few rules: the lights are on except by day, stars and grain belong to dusk and night, and the Moon appears only from sunset on. Daylight, though, shows what the dark had hidden, so Day needed new drawing. Shirley Heights was the test piece, drawn from my own photographs of the view: the house compound on its knob above the bluff, Nelson's Dockyard on its land bridge with its dock and moored yachts, and Galleon Beach with its sand, its pier and the palms behind it. Buildings are drawn in every version, so a lit window at night is a house by day.
+
+The Sun follows the same rule as the stars. It appears only where it truly is, taken from the same ephemeris (the table of true positions) for the same date. At dawn it rises behind every view but one. By day it is high overhead, out of every picture, so Day has none. At sunset it is in view in most pictures, but a single moment would hide it behind land in some and leave it floating in open sky in others. So each picture takes its own true minute of the sunset hour, chosen from a sheet showing it at eight minutes between 5:40 and 6:31 in the evening. On the Learn page it rests on the summit of the far hills; on News & Events it touches the sea between the yachts. Where land stands in front of the Sun, it lays no path of light on the water, because what hides it from the viewer hides it from the water in front too.
+
+<figure class="figure">
+<img src="../../assets/worked-examples/art-sun-moments.jpg" alt="Four versions of the same sea view with far hills: the Sun high above the hills, resting on their summit, half hidden behind them, and gone below them with only a glow left.">
+<figcaption>The Learn page's view at four true minutes: 5:50, 6:02, 6:08 and 6:15 p.m. Each is where the Sun really was; 6:02, with the Sun resting on the summit, is the one the page uses.</figcaption>
+</figure>
+
+The finish came from somewhere else. My other project, the media tracker behind [My Favorite Game Was Not a Game](recommender.md), draws its own night scenes with a small toolkit, and those scenes set the standard. Some of its code was ported nearly line for line: ripples on the water, dense at the horizon and long near the viewer; broken columns of light under lamps and the Sun; the print grain; and a seeded random sequence, so that a picture draws the same way every time. Other techniques came over as ideas: mirrored reflections, halos and pools of lamplight, mist, motion limited to what a browser can animate smoothly (and switched off for anyone who asks their device for less motion), and one shared world with a single subject on each page. Some things stayed behind. The tracker's indigo palette is lovely, but I kept the navy and teal here because they sit closer to the school's own colors. Its grain covers everything; here it stays on the sky and water, because on the land it read as noise. Its scenes move continuously, while these play one gentle pass and then hold still. And the tracker draws no daylight at all. The influence ran both ways: the tracker's own island scene began as a port of this site's first art study.
+
+<figure class="figure">
+<img src="../../assets/worked-examples/art-home-day-night.jpg" alt="The American University of Antigua campus from the home page, by day with cream walls, red roofs and palms under a blue sky with small clouds, and at night as a silhouette with lit windows under stars, Venus and a crescent Moon.">
+<figcaption>The campus on the home page, by day and at night. The white headline beside it keeps a contrast of at least 4.5 to 1 in every version.</figcaption>
+</figure>
+
+The tools were the ones used for the layout. A headless browser rendered every version of every picture at several screen widths in both color schemes. The white headline on the home page was measured against the picture behind it, with the words hidden, and kept a contrast of at least 4.5 to 1 in every version. A test with a faked clock carried each page across all five boundaries to check that the pictures turned. Before the work was merged, two reviewer agents read the changes without editing anything and found eight small defects, among them lanterns that lost their glass by day and boats that kept their navigation lights on.
+
+The rest came from looking again. Across that day I caught a tree standing in the water, black lines drawn through the beach, a reflection under a Sun already set behind the land, a wisp of haze that read as a stray cloud, green palm trunks, a green iron fence, and the school hanging off the edge of its lawn. The first Sun was also a crisp, bright disc that sat oddly against the softly shaded land, and a different size in every picture. It is now soft, deeper and redder near the horizon, and the same size everywhere.
 
 ## What It Cost
 
 Between September 24 and the morning of September 28, the repository recorded 152 commits: 135 under my name, starting on the evening of the 25th (26 of them merging parallel work back together), and 17 automated news refreshes. On the site's main line, 166 files changed; leaving out the files the news pipeline generates, 152 files, with about 29,700 lines added and 1,900 removed.
 
 The first navigation pass used 13 agents and the second 23 (about 3.9 million tokens); the layout audit used nine. The builds and prototypes that followed used more, but I do not have an exact total. The cloud credit went from $250 to $54 by the final handoff. Astra's reviews came out of my separate ChatGPT allowance, at about 22,000 tokens for its design and review in the second pass.
+
+The five times of day came later, on September 28: 20 commits over about seven and a half hours, adding 802 lines and removing 100 across seven files.
 
 My own time was evenings and a very long weekend. I did not measure it.
 
@@ -101,9 +134,12 @@ My own time was evenings and a very long weekend. I did not measure it.
 - Parallel designers need one kit: a shared brief with hard rules, one measuring script, a recorded baseline, and one machine that measures every candidate.
 - Any single number can be gamed, so pair it with a reviewer from a different model family, and write down why you overruled both of them when you do.
 - For a real place, trace it from a photograph. Memory draws a generic hill.
+- Draw a scene once and make the light the variable. Five times of day cost a set of colors each, not five drawings.
+- Where accuracy matters, choose among true moments rather than inventing one. The Sun sits where the ephemeris puts it, at the minute that composes best.
+- Test anything that depends on the time of day with a faked clock, and measure contrast on the rendered picture, not on the colors you meant to use.
 
 ## What This Does Not Show
 
 Every visitor in these tests was an AI agent, not a person. A test with about eight students and faculty on their own phones was planned, and a kit for it was prepared, but I do not have the time to run one, so nothing here shows that real people find things faster.
 
-Blank space is a proxy for a screen that is not wasted, not for understanding, and Astra's warning about it stands. Beyond an anonymous visit count, the site has no way to measure whether the redesign changed how it is used. And the art, however carefully sourced its stars, is a matter of taste: mine.
+Blank space is a proxy for a screen that is not wasted, not for understanding, and Astra's warning about it stands. Beyond an anonymous visit count, the site has no way to measure whether the redesign changed how it is used. The sky is also one evening in May: the pictures follow the hour of the visitor's day but not the date or the season, so the Moon is always the same crescent. And the art, however carefully sourced its stars, is a matter of taste: mine.
