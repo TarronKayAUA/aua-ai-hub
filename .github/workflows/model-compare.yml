@@ -27,14 +27,16 @@ on:
       task:
         description: "Which prompt to compare on"
         type: choice
-        options: [briefs, narrative]
+        options: [briefs, narrative, curation]
         default: briefs
       models:
         description: "Space-separated provider:model pairs (blank uses the task's defaults)"
         required: false
         # Kept in step with DEFAULT_MODELS in scripts/compare_brief_models.py.
         # For the narrative task, leave this at the default text or blank to
-        # use DEFAULT_MODELS in scripts/compare_narrative_models.py.
+        # use DEFAULT_MODELS in scripts/compare_narrative_models.py. The
+        # curation task ignores it: its versions are defined in
+        # scripts/compare_curation_models.py (arms_from).
         default: "anthropic:claude-sonnet-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5"
       category:
         description: "Briefs only: limit to one category key (blank runs all three)"
@@ -44,6 +46,10 @@ on:
         description: "Samples per model per category"
         required: false
         default: "1"
+      arms:
+        description: "Curation only: space-separated versions to run (blank runs the default four)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -55,8 +61,10 @@ jobs:
     # Generous: a six-model, three-sample sweep is 54 sequential calls, and
     # Fable-class models are slow because thinking runs before the answer.
     # A 10-minute ceiling cancelled such a run after one category on
-    # 2026-07-25, losing the end-of-run summary with it.
-    timeout-minutes: 30
+    # 2026-07-25, losing the end-of-run summary with it. The curation
+    # backtest is the longest: four versions, three samples, 25 batches is
+    # 300 calls, run six at a time.
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -93,3 +101,29 @@ jobs:
             ARGS="$ARGS --models $MODELS"
           fi
           python scripts/compare_narrative_models.py $ARGS
+      # The curation backtest, added 2026-09-29 after the curator dropped real
+      # September launches as "speculation about unreleased model". It replays
+      # a fixed set of past candidates (scripts/backtest/curation_2026-09.json)
+      # through each curator version and uploads every decision with its token
+      # usage, so the report can score them against fact-checked labels and
+      # price them. Every call is paid: four versions at three samples cost
+      # roughly $3 to $5. The same run answers the Haiku 5.5 question when it
+      # ships (add it as an arm).
+      - name: Replay curation on the backtest set
+        if: inputs.task == 'curation'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ARMS: ${{ inputs.arms }}
+        run: |
+          ARGS="--repeat ${{ inputs.repeat }} --out curation-backtest.json"
+          if [ -n "$ARMS" ]; then
+            ARGS="$ARGS --arms $ARMS"
+          fi
+          python scripts/compare_curation_models.py $ARGS
+      - name: Upload the backtest decisions
+        if: always() && inputs.task == 'curation'
+        uses: actions/upload-artifact@v7
+        with:
+          name: curation-backtest
+          path: curation-backtest.json
+          if-no-files-found: warn

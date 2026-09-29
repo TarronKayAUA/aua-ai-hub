@@ -1,0 +1,3245 @@
+{
+ "description": "Ground truth for scripts/backtest/curation_2026-09.json, made 2026-09-29. Set A (89 items, including x3536 and a B-set x3613 checked with them): each named model, product or event was looked up on the web for when it became public, by an agent whose answer a second agent tried to refute; 8 disputes were settled by hand, and 9 items labelled twice independently agreed on false_premise 9 of 9 and on should_keep 7 of 9. Set B (120): labelled by hand. false_premise: the recorded drop reason asserts something factually wrong (a released model called unreleased, an on-record report called rumor, a news outlet called vendor marketing). should_keep: keep, drop or borderline under the rules. Set C has no labels: it is scored by agreement with the production decision.",
+ "labels": {
+  "1825": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "independent creator's news video on OpenAI cutting Cursor's model access after SpaceX bought Cursor",
+   "rationale": "There was a real event: OpenAI announced it on the record, and CNBC and others reported it. So 'speculation without substantive underlying event' is factually wrong. Keep or drop is still a split call: the story comes wrapped in the OpenAI-versus-Musk feud, and a coding tool losing model access matters little to medical educators.",
+   "rule": "Drop a video only when the speculation, promotion, or drama IS the content",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI decision to end Cursor's access to OpenAI models (shutoff 2026-11-12)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-08-28",
+     "evidence": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/ ; https://www.cnbc.com/2026/08/29/openai-cursor-spacex-model-access.html ; https://devops.com/openai-cuts-off-cursors-model-access-after-spacex-acquisition/"
+    },
+    {
+     "name": "SpaceX acquisition of Cursor (Anysphere)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-08-14",
+     "evidence": "https://www.mindstudio.ai/blog/openai-bans-cursor-spacex ; https://www.pymnts.com/news/artificial-intelligence/2026/openai-cancels-cursor-partnership-citing-distrust-of-elon-musk/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "1838": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "hands-on test of a newly released model (Claude Fable 5.1), framed against OpenAI's announced Astra",
+   "rationale": "Anthropic released Fable 5.1 the day before the drop, and OpenAI had announced Astra officially. The video builds working projects with the new model, which is exactly the hands-on testing the rules protect. Calling it 'pure speculation and drama' is wrong on the facts, and it judges the title rather than the content.",
+   "rule": "Substantive hands-on tests, comparisons ... of notable model releases are core content",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Claude Fable 5.1",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-01",
+     "evidence": "verified anchor; https://www.anthropic.com/claude-fable-and-mythos-5-1 ; https://www.macrumors.com/2026/09/01/anthropic-claude-fable-5-1/"
+    },
+    {
+     "name": "Claude Mythos 5.1 (trusted-access version)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-01",
+     "evidence": "https://www.anthropic.com/claude-fable-and-mythos-5-1 ; https://www.siliconrepublic.com/machines/anthropic-launches-claude-fable-5-1-and-mythos-5-1"
+    },
+    {
+     "name": "OpenAI Astra (Path to Astra preview)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-01",
+     "evidence": "https://openai.com/index/path-to-astra/ ; https://nationalcioreview.com/articles-insights/extra-bytes/openais-astra-model-reaches-critical-cybersecurity-level/ ; released 2026-09-03 per verified anchor"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "1891": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "recognized expert's short technical explainer (Sebastian Raschka) on looped transformers, prompted by reporting on OpenAI Astra",
+   "rationale": "The post is Raschka's own analysis (about 700 words): it explains looped transformers and deflates the hype around Astra. It is not a listicle. Astra had been officially announced, the architecture claim came from The Information, and OpenAI's chief scientist answered it on the record, so 'rumor' is wrong. The technical depth for this audience is the only argument against keeping it.",
+   "rule": "explainers from ... recognized experts are keeps when they teach this audience something",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI Astra",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-01",
+     "evidence": "https://openai.com/index/path-to-astra/ ; https://nationalcioreview.com/articles-insights/extra-bytes/openais-astra-model-reaches-critical-cybersecurity-level/"
+    },
+    {
+     "name": "Astra's reported recurrent-depth / looped-transformer reasoning technique (The Information report)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-01",
+     "evidence": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/ ; https://fortune.com/2026/09/03/reports-openais-astra-model-uses-a-new-more-efficient-ai-architecture-alarms-ai-safety-experts-who-worry-the-method-makes-models-harder-to-control/"
+    },
+    {
+     "name": "Nanbeige4.2-3B (open-weight looped model)",
+     "status_on_drop_date": "released",
+     "public_date": "",
+     "evidence": "https://arxiv.org/pdf/2607.22083 ; https://huggingface.co/Nanbeige/Nanbeige4.2-3B (July 2026)"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "1893": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "forum thread speculating about unidentified models on the Arena leaderboard",
+   "rationale": "The post is a screenshot and a guess ('Gemma 5 or something else?') about anonymous Arena entries. No Gemma release or announcement matches it: Google's release notes end at Gemma 4 12B Unified in June. The drop reason describes genuine speculation accurately.",
+   "rule": "Never keep ... rumors about unreleased models",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Unidentified new Gemma models on Arena (poster asks 'Gemma 5 or something else?')",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-02",
+     "evidence": "https://arena.ai/company/leaderboard-changelog (no Gemma entries Aug-Sep 2026) ; https://ai.google.dev/gemma/docs/releases (latest Gemma release 2026-06-03, no Gemma 5)"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "1901": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "item_nature": "news report by an established outlet on AI-safety concerns about OpenAI's announced Astra model",
+   "rationale": "verifier right: on 09-02 Astra was announced but unreleased, and the recurrence claim was reported, not confirmed; safety news of real weight",
+   "rule": "Prefer: ... clinical deployment, safety, and regulatory news",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI Astra",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-01",
+     "evidence": "https://openai.com/index/path-to-astra/ ; released 2026-09-03 per verified anchor"
+    },
+    {
+     "name": "Reported recurrent-depth reasoning in Astra and researchers' monitoring concerns",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-01",
+     "evidence": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/ ; https://www.bundle.app/en/technology/researchers-fear-safety-disaster-ahead-of-openais-astra-release-6A438A97-1764-4A3D-93BC-83338570E869"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier; dispute settled by hand"
+  },
+  "1932": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "forum thread relaying Meta CEO's on-record X post that Muse Spark open weights are coming soon",
+   "rationale": "The release is not a rumor: Meta's CEO announced it himself on X, and The Register covered it. Keep or drop is a split call. Open-weights news is on the preferred list, but this is a thin Reddit pointer to an undated 'soon' promise, and a proper news source would be better.",
+   "rule": "Keep a forum thread ... only when it carries significant news",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Muse Spark open-weights release (promised 'soon' by Mark Zuckerberg)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-02",
+     "evidence": "https://www.theregister.com/ai-and-ml/2026/09/02/zucks-muse-to-spark-joy-with-open-weights-release-soon/5294093 ; thread links x.com/finkd/status/2095232032896946311"
+    },
+    {
+     "name": "Muse Spark 1.3",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-02",
+     "evidence": "https://www.theregister.com/ai-and-ml/2026/09/02/zucks-muse-to-spark-joy-with-open-weights-release-soon/5294093"
+    },
+    {
+     "name": "Muse Glimmer (open weights)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-08-10",
+     "evidence": "https://www.cnbc.com/2026/08/10/meta-muse-glimmer-open-weight-ai.html"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "1933": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "forum opinion post speculating that a future Qwen 4 will lead open models",
+   "rationale": "This is a zero-comment Discussion post in which the poster says they are optimistic about a Qwen 4 that had not yet been released or announced. There is no news in it. The drop reason describes genuine speculation accurately.",
+   "rule": "Never keep ... community meta-discussion, or rumors about unreleased models",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Qwen 4",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-22",
+     "evidence": "https://cellcog.ai/blog/qwen-4-release-date/ ; https://www.versely.studio/blog/qwen-4-announced-at-apsara-2026 (Alibaba first confirmed Qwen 4 in training on 2026-09-22); thread text via api.pullpush.io id 1w53ti8 says 'Qwen 4 hasn't even been released yet'"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "1998": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "keep",
+   "item_nature": "independent creator's hands-on test of GPT-6 Astra on its release day (sponsor read in description)",
+   "rationale": "the reason (speculative title, a sponsor) is wrong in kind, judging the packaging, but asserts no false fact; keep agreed by both",
+   "rule": "Substantive hands-on tests ... of notable model releases are core content",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor; https://openai.com/index/gpt-6-astra/ ; https://www.axios.com/2026/09/03/openai-astra-gpt-6-agi-brockman"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier; dispute settled by hand"
+  },
+  "2010": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "arXiv preprint on a speculative-decoding inference optimization",
+   "rationale": "It is a throughput optimization for LLM serving, and it has no broad significance for medical educators. The drop reason is accurate: 'speculative' here is the technical term, not a claim about rumor.",
+   "rule": "Preprint bar: ... Drop narrow domain applications, incremental ... studies",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "AdaptiveSpec (training-free per-step lossy speculative decoding method)",
+     "status_on_drop_date": "not_a_product",
+     "public_date": "2026-07-03",
+     "evidence": "https://arxiv.org/abs/2609.02897 (arXiv API published 2026-07-03)"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2031": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "forum thread about Nvidia's announced acquisition of Hugging Face (title unrecoverable)",
+   "rationale": "Nvidia announced the deal on 2026-09-03, and TechCrunch, Bloomberg and CNBC reported it, so 'rumor ... no underlying real event' is false. Keep or drop is a split call. A confirmed takeover of the main open-model hub is real industry news, but the candidate is a Reddit thread with no recoverable title or text, and an authoritative outlet would be the better keep.",
+   "rule": "Keep a forum thread ... only when it carries significant news",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Nvidia acquisition of Hugging Face ($12.93B)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-03",
+     "evidence": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/ ; https://techcrunch.com/2026/09/03/nvidia-confirms-it-will-buy-hugging-face-for-12-9-billion/ ; https://www.sec.gov/Archives/edgar/data/1045810/000104581026000078/nvda-20260902.htm"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2053": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "recognized expert's analysis post (Simon Willison) on the researcher report of OpenAI agents using public wikis",
+   "rationale": "both agree 'speculation' was wrong; a Willison analysis beside two news reports of the same incident in that run is a split call",
+   "rule": "near-duplicates ... (keep the most authoritative source); expert commentary keeps when instructive",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI agents' DSEwiki / public-wiki incident (researcher report on collusion.wiki)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-04",
+     "evidence": "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis ; https://www.theregister.com/ai-and-ml/2026/09/04/rogue-openai-agents-used-dead-german-web-site-to-communicate-in-may-months-before-hugging-face-incident/5294554 ; OpenAI confirmed 2026-09-05: https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/"
+    },
+    {
+     "name": "Earlier OpenAI-Hugging Face agent incident (context)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-07-21",
+     "evidence": "https://openai.com/index/hugging-face-model-evaluation-security-incident/ ; https://fortune.com/2026/08/26/openai-publishes-technical-report-on-how-its-agents-hacked-hugging-face-here-are-the-main-takeaways-and-what-openai-left-out/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier; dispute settled by hand"
+  },
+  "2057": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "news report by an established outlet on OpenAI agents coordinating on a German wiki, with OpenAI's on-record denial",
+   "rationale": "The incident was credibly reported, and OpenAI commented on record, so 'drama and speculation about unconfirmed incidents' is wrong. The story itself merits a keep. Whether The Verge or Ars Technica (2062) is the one to keep is a coin flip, and dropping this one as a duplicate is defensible only if another version of the story is kept.",
+   "rule": "near-duplicates of stories already covered by another candidate (keep the most authoritative source)",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI agents' DSEwiki incident",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-04",
+     "evidence": "https://mobilesyrup.com/2026/09/04/rogue-openai-agents-may-have-organized-another-attack-using-german-wiki/ ; https://cybernews.com/security/openai-agents-hijacked-german-website/ (quotes OpenAI spokesperson to The Verge) ; confirmed by OpenAI 2026-09-05: https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2062": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "news report by an established outlet (Ars Technica security desk) on OpenAI agents discussing sandbox escape on a public wiki",
+   "rationale": "This is a factual report of a documented misalignment incident involving a major lab's agents, drawn from a published researcher dataset and Reuters. OpenAI confirmed it the next day. It is significant safety news, not speculation. Of the three same-run versions it is the most complete factual report, so it is the natural keep.",
+   "rule": "Prefer: ... safety, and regulatory news; keep the most authoritative source",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI agents' DSEwiki incident (3,700 agent names, 18,000 messages)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-04",
+     "evidence": "https://www.businessstory.org/2026/09/04/openai-agents-discussed-ways-to-escape-their-sandbox-on-public-wiki/ ; https://thehackernews.com/2026/09/thousands-of-openai-agents-quietly.html ; OpenAI confirmed 2026-09-05: https://techcrunch.com/2026/09/05/openai-confirms-wiki-incident-says-its-working-on-a-framework-for-more-disclosure/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2086": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent creator's hands-on test of GPT-6 Astra two days after release",
+   "rationale": "The reason calls Astra unreleased with no confirmed release, but OpenAI launched it on 2026-09-03, two days before the drop. The video is a timestamped, 38-minute set of coding and agentic tests: a textbook keep.",
+   "rule": "Substantive hands-on tests ... of notable model releases are core content",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor; https://openai.com/index/gpt-6-astra/ ; https://www.cnbc.com/2026/09/03/open-ai-astra-gpt-6-cyber.html"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2090": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "drop",
+   "item_nature": "forum thread linking Senator Sanders' official summary of the proposed Ban Artificial Superintelligence Act, with editorializing",
+   "rationale": "real bill announcement, but a Reddit repost under a misstated title; the forum bar and 'keep the most authoritative source' drop it",
+   "rule": "Keep a forum thread ... only when it carries significant news; prefer ... regulatory news",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Ban Artificial Superintelligence Act (Sanders and Casar)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-03",
+     "evidence": "https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/ ; thread url https://www.sanders.senate.gov/wp-content/uploads/Ban-Artificial-Superintelligence-Act-Release-Summary.pdf (via api.pullpush.io id 1w6egid); formally introduced ~2026-09-23: https://www.nbcnews.com/politics/congress/bernie-sanders-greg-casar-propose-ai-superintelligence-ban-20-year-jai-rcna599460"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier; dispute settled by hand"
+  },
+  "2092": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "news roundup video from an independent channel covering several released models and research releases",
+   "rationale": "Every headline model in the roundup had shipped days before the drop (Astra 09-03, Fable 5.1 09-01, Gemini 3.8 Flash and Muse Spark 1.3 09-02), so 'unreleased models without confirmed developments' is factually wrong. A roundup of real releases is a keep.",
+   "rule": "News roundup videos from these channels are core content",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "Claude Fable 5.1",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-01",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "Gemini 3.8 Flash",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-02",
+     "evidence": "https://9to5google.com/2026/09/02/gemini-3-8-flash-launch/ ; https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+    },
+    {
+     "name": "Muse Spark 1.3 (Meta)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-02",
+     "evidence": "https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2093": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "hands-on test of a released model (long agentic 3D-world, game and Blender projects with GPT-6 Astra)",
+   "rationale": "Astra had been released three days before; the chapters describe a real multi-hour hands-on project with the model, not speculation. The hype in the title is packaging, not grounds to drop.",
+   "rule": "Substantive hands-on tests ... of notable model releases are core content",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor; video publishDate 2026-09-05 from https://www.youtube.com/watch?v=aHy7cNj-W2I"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2094": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "podcast highlights episode discussing released models, a documented AI safety incident and an industry-pacing policy debate",
+   "rationale": "The reason calls two released models unreleased and a publicly disclosed, jointly acknowledged incident unconfirmed. The episode covers the week's two biggest releases plus a substantive pacing and verification debate, which makes it a standout. The only caveat is that it is a compilation of live-show segments.",
+   "rule": "Keep episodes ... discussions of AI policy or deployment",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Claude Fable 5.1",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-01",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "OpenAI-Hugging Face incident",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-07-16",
+     "evidence": "https://en.wikipedia.org/wiki/OpenAI%E2%80%93HuggingFace_incident ; https://community.openai.com/t/the-hugging-face-incident-and-the-road-ahead/1393041"
+    },
+    {
+     "name": "AI:AM Highlights episode",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-05",
+     "evidence": "https://www.cognitiverevolution.ai/ai-am-highlights-welcome-to-the-agi-era"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2110": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent creator's showcase of use cases and demos of a released model",
+   "rationale": "Astra was released, so 'unreleased model' is wrong. Channel boilerplate is not vendor marketing. The video compiles real demos (computer use, Blender and Unity, an anatomy visualization), and the rules lean toward keeping it, although it is a weaker treatment than first-hand tests.",
+   "rule": "An independent channel demonstrating or testing a commercial tool is a tool demonstration, not vendor marketing",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor; video publishDate 2026-09-05 from https://www.youtube.com/watch?v=slpv4sVUN5o"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2142": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "recognized expert's commentary on two on-record OpenAI publications (research-acceleration data and the chief scientist's essay)",
+   "rationale": "Both pieces are official OpenAI publications with published data, so 'without confirmed details' is wrong. Simon Willison's reading of OpenAI's AI-spend chart and its recursive self-improvement framing is instructive commentary on a major lab development.",
+   "rule": "Accessible commentary and explainers from ... recognized experts are keeps",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI 'Research acceleration: The view inside OpenAI'",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-06",
+     "evidence": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai"
+    },
+    {
+     "name": "Jakub Pachocki essay 'An Alien Mind'",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-06",
+     "evidence": "https://openai.com/index/an-alien-mind/ ; https://x.com/merettm/status/2096630018495377464 ; https://www.unite.ai/in-an-alien-mind-openais-jakub-pachocki-urges-shared-safety-bars/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2146": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "hands-on review of a released model (demos, specs, benchmarks, availability)",
+   "rationale": "Astra had shipped four days earlier, and the chapters show a full review including specs, leaderboards and availability, so 'no underlying real event' is false. It is core content.",
+   "rule": "Substantive hands-on tests, comparisons, and benchmark analyses of notable model releases are core content",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor; video links https://openai.com/index/gpt-6-astra"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2159": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "head-to-head comparison test of two released frontier models",
+   "rationale": "Both models were generally available before 09-07, so 'unconfirmed model names' is a knowledge-cutoff error. A long multi-task comparison by an independent tester is exactly what the video rules protect.",
+   "rule": "a solid model-comparison video is a keep",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "Claude Fable 5.1",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-01",
+     "evidence": "verified anchor"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2161": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "explainer video on the OpenAI chief scientist's on-record essay and related published lab safety research",
+   "rationale": "The video explains an official essay and published OpenAI and Anthropic research, citing primary sources. There is no feud, so 'speculation and drama coverage' mislabels an on-record development. As a safety explainer it teaches this audience something.",
+   "rule": "Educational explainers and concept tutorials are also core content",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Jakub Pachocki essay 'An Alien Mind'",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-06",
+     "evidence": "https://openai.com/index/an-alien-mind/ ; https://www.unite.ai/in-an-alien-mind-openais-jakub-pachocki-urges-shared-safety-bars/"
+    },
+    {
+     "name": "OpenAI 'Research acceleration: The view inside OpenAI'",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-06",
+     "evidence": "https://simonwillison.net/2026/Sep/6/research-acceleration-the-view-inside-openai"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2169": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "short quote post by a recognized expert excerpting the OpenAI chief scientist's on-record essay",
+   "rationale": "The quote comes from a published essay by OpenAI's chief scientist, so calling it 'rather than verifiable news' is wrong. Editors would split on a bare quote post with no analysis that repeats an essay the same blog covered hours earlier (item 2142).",
+   "rule": "Drop a commentary piece only when it carries neither new information nor instructive analysis",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Jakub Pachocki essay 'An Alien Mind'",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-06",
+     "evidence": "https://simonwillison.net/2026/Sep/7/jakub-pachocki ; https://openai.com/index/an-alien-mind/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2187": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "educational channel's video on early demos of a released model, plus a graphics research paper",
+   "rationale": "Both halves of the reason are wrong: Astra was released on 09-03, and Two Minute Papers is an independent educational channel (a sponsor read does not make it vendor marketing). It explains a notable release.",
+   "rule": "Independent reviewers, educators, and news channels are never vendor marketing",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor; https://ai-tldr.dev/releases/two-minute-papers-gpt-6-astra-sep8/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2188": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "item_nature": "leak-led AI news video, mostly rumors about upcoming models with two or three real items",
+   "rationale": "Four of the six listed topics were genuine leaks or rumors on 09-08, so the reason is broadly accurate, though 'no underlying event' overlooks Musk's on-record Grok 4.7 announcement and the real MiniCPM5-2B release. Editors would split on whether one or two real items make it a roundup rather than a rumor video.",
+   "rule": "a roundup that covers several real developments is a keep ... Drop ... rumor videos with no underlying real event",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Grok 4.7",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-02",
+     "evidence": "https://tech.yahoo.com/ai/claude/articles/elon-musk-says-grok-4-043326597.html ; https://evolink.ai/blog/grok-4-7-release-date (shipped 2026-09-21)"
+    },
+    {
+     "name": "Claude Fable 5.2",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-05",
+     "evidence": "https://cellcog.ai/blog/fable-5-2-release-date/ ; https://pasqualepillitteri.it/en/news/15205/claude-fable-5-2-leak-new-pretrain-october"
+    },
+    {
+     "name": "OpenAI post-Astra model",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "video description topics (https://www.youtube.com/watch?v=zHRX8pURCho); GPT-6.1 Sol not launched until 2026-09-29 (verified anchor)"
+    },
+    {
+     "name": "Gemini 4 Pro delay",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://www.geeky-gadgets.com/gemini-4-delay-fable-5/ ; https://cellcog.ai/blog/gemini-4-release-date/"
+    },
+    {
+     "name": "MiniCPM5-2B",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-07",
+     "evidence": "https://www.marktechpost.com/2026/09/07/openbmb-releases-minicpm5-2b-a-2-52b-dense-model-averaging-53-9-across-34-benchmarks-and-built-to-run-on-device/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2197": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "drop",
+   "item_nature": "forum thread (title only) about a named mathematician's on-record allegation against OpenAI in the Navier-Stokes credit dispute",
+   "rationale": "The allegation was on-record from a named NYU mathematician and reported by TechCrunch the same day, so 'rumor ... without confirmed event' is wrong. The drop is still right: a title-only Reddit thread about a credit feud is the weakest source for a story better carried by major outlets. Matching the thread to this story is inferred from its title and timing, because Reddit blocks automated access.",
+   "rule": "Keep a forum thread ... only when it carries significant news ... (keep the most authoritative source)",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Tristan Buckmaster allegation against OpenAI (Navier-Stokes)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-08",
+     "evidence": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/ ; https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy"
+    },
+    {
+     "name": "OpenAI Navier-Stokes announcement",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-08",
+     "evidence": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2255": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "single-topic analysis episode of a daily AI news podcast on a released model's reception and evaluation",
+   "rationale": "Astra had shipped six days before, so 'unreleased model' is false, and the episode is a focused analysis of why the model is hard to evaluate, not a daily recap. It qualifies as a standout episode on a major release.",
+   "rule": "For daily news shows, keep only standout episodes, not every day's recap",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor; episode page https://aidailybrief.ai/e/2026-09-08"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2262": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "item_nature": "major-outlet news report of an on-record resignation and public AI-risk warnings from named Anthropic researchers",
+   "rationale": "The event is real and on-record. The reason calls the risk forecasts speculative without denying the event happened, so it is a judgment call rather than a factual error. Editors would split between significant lab-safety news covered by every major outlet and a sensational doom headline with little policy substance.",
+   "rule": "Prefer: ... safety, and regulatory news / Drop: ... drama",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Jacob Coxon resignation and Evan Hubinger statement",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-08",
+     "evidence": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/ ; https://www.cnbc.com/2026/09/09/anthropic-researcher-quits-ai-safety.html"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2277": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "explainer video on OpenAI's on-record Navier-Stokes claim, its Lean formalization, and the credit dispute",
+   "rationale": "OpenAI publicly announced the result with Lean formalizations the day before, so 'speculation without verified underlying event' is wrong, even though the model was internal and Clay had not ruled. The video explains the math, the verification and both sides of the dispute, which makes it an explainer rather than pure feud coverage.",
+   "rule": "Keep videos that explain a development clearly",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI Navier-Stokes announcement",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-08",
+     "evidence": "https://simonwillison.net/2026/Sep/8/on-navier-stokes/ ; https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy ; https://github.com/openai/NavierStokesAndEuler (cited in item)"
+    },
+    {
+     "name": "Buckmaster/Alpöge credit dispute",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-08",
+     "evidence": "https://techcrunch.com/2026/09/08/openai-fought-dirty-on-career-making-math-problem-says-nyu-mathematician/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2281": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "item_nature": "news report (Ars Technica) of an on-record researcher resignation and extinction-risk warning, with a named Anthropic lead's public estimate",
+   "rationale": "The event is real and on the record, and TechCrunch, CNBC, Forbes and NBC all covered it, with policy context (a proposed Ban Artificial Superintelligence Act). Editors could fairly split on whether a resignation over existential risk is safety and policy news or drama for this audience. The reason calls the risk estimate speculation, which it is, but it does not call the event a rumor, so there is no factual error.",
+   "rule": "Prefer: ... safety, and regulatory news / Drop: ... gossip",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Jacob Coxon resignation from Anthropic with public warning",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-08",
+     "evidence": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/ ; https://www.cnbc.com/2026/09/09/anthropic-researcher-quits-ai-safety.html"
+    },
+    {
+     "name": "Evan Hubinger (Anthropic Alignment Science Lead) '>10% within the next decade' statement",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-09",
+     "evidence": "https://www.forbes.com/sites/siladityaray/2026/09/09/anthropic-alignment-lead-warns-ai-could-kill-all-humans-as-researcher-quits/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2301": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent creator's commentary video on OpenAI's Navier-Stokes proof claim and the Buckmaster priority dispute (subject inferred from the description's links)",
+   "rationale": "The full description links Buckmaster's statement plus fluid-dynamics sources, so the video covers a real, on-record event announced on 2026-09-08. 'Without identified underlying event' is therefore wrong. The curator only saw boilerplate and a title that names nothing, which explains the miss. Content is inferred from the links because there was no transcript.",
+   "rule": "Keep videos that explain a development clearly ... cover notable model releases",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI Navier-Stokes Millennium Prize proof announcement",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-08",
+     "evidence": "https://openai.com/index/navier-stokes-solution/ ; https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/"
+    },
+    {
+     "name": "Tristan Buckmaster public statement on the Navier-Stokes result and priority",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-08",
+     "evidence": "https://cims.nyu.edu/~tristanb/statement.pdf ; https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_priority_controversy"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2311": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "expert analytical newsletter (Sebastian Raschka) on a released model and looped-transformer research",
+   "rationale": "Astra shipped on 2026-09-03. The author used it and cites OpenAI's benchmarks, so 'unreleased models' is false. The piece is a substantive, carefully hedged explainer of recurrent-depth architectures. It is technical but instructive.",
+   "rule": "commentary and explainers from ... recognized experts are keeps when they teach this audience something",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "Reported use of looped transformers in Astra (The Information report cited by the author as unverified)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "",
+     "evidence": "https://magazine.sebastianraschka.com/p/gpt-6-astra-looped-transformers-and"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2319": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "arXiv preprint on a training method for speculative-decoding drafter models",
+   "rationale": "This is an incremental inference-efficiency method with gains in acceptance length. It lacks broad significance for medical educators, so the drop reason is accurate apart from calling it a 'domain application'.",
+   "rule": "Preprint bar: keep ... only when it has broad significance",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Osprey (arXiv 2609.09338)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-08",
+     "evidence": "https://arxiv.org/abs/2609.09338"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2364": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "educational explainer video (Two Minute Papers) on OpenAI's announced Navier-Stokes proof",
+   "rationale": "The description links OpenAI's official paper. The development was an on-record announcement covered by Quanta, not a rumor, although mathematicians were still checking the proof. An established explainer channel covering a major AI-in-science result is a clear keep.",
+   "rule": "Educational explainers and concept tutorials are also core content",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "OpenAI Navier-Stokes Millennium Prize proof announcement",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-08",
+     "evidence": "https://openai.com/index/navier-stokes-solution/ ; https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2365": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "news roundup video led by a genuine leak (GPT-7 Bel) but covering several real developments",
+   "rationale": "Only the Bel headline is a rumor. Images 2.5, the Navier-Stokes announcement, Anthropic's economic model and the Coxon resignation were all real and confirmed, so 'without confirmed releases' is false.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "GPT-7 'Bel'",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-08-25",
+     "evidence": "https://www.pluralsight.com/resources/blog/ai-and-data/gpt-7 (anonymous X leak, unconfirmed by OpenAI)"
+    },
+    {
+     "name": "ChatGPT Images 2.5",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-08",
+     "evidence": "https://openai.com/index/introducing-chatgpt-images-2-5/ ; https://9to5mac.com/2026/09/08/openai-releases-chatgpt-images-2-5-with-sharper-details-and-more-precise-editing/"
+    },
+    {
+     "name": "OpenAI Navier-Stokes proof (10,000-agent run)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-08",
+     "evidence": "https://openai.com/index/navier-stokes-solution/"
+    },
+    {
+     "name": "Anthropic Econ Scenario Explorer ('Anthropic's new model')",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-09",
+     "evidence": "https://www.anthropic.com/institute/econ-scenarios ; https://www.npr.org/2026/09/09/nx-s1-5961443/ai-anthropic-economy"
+    },
+    {
+     "name": "Jacob Coxon resignation",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-08",
+     "evidence": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/"
+    },
+    {
+     "name": "DeepSeek domestic IPO report",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-09",
+     "evidence": "https://www.reuters.com/world/chinas-deepseek-taps-citic-securities-domestic-ipo-sources-say-2026-09-09/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2377": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "Reddit thread on a named mathematician's on-record accusation that OpenAI used his ChatGPT conversations (title unrecoverable; identified from the URL slug and date)",
+   "rationale": "The allegation is real and on the record, but it is unproven and disputed, and the item is a forum thread rather than the Quartz report. Calling it an 'unconfirmed allegation' is accurate. The topic (research data in AI tools) does matter to faculty, so a primary-source report would have been a stronger candidate.",
+   "rule": "Keep a forum thread ... only when it carries significant news or a genuinely instructive analysis",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Andreas Thom accusation against OpenAI over training data (non-sofic groups result)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-10",
+     "evidence": "https://qz.com/openai-mathematician-training-data-dishonesty-andreas-thom-091026 ; https://mathstodon.xyz/@andreasthom/117240535270608201"
+    },
+    {
+     "name": "Tristan Buckmaster dispute with OpenAI (the earlier researcher)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-08",
+     "evidence": "https://cims.nyu.edu/~tristanb/statement.pdf"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2410": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "daily news podcast episode analyzing on-record extinction-risk statements by Anthropic staff and the resulting policy debate",
+   "rationale": "the episode covers the Sanders/Casar bill in depth, so 'rather than policy news' is wrong; daily-show standout rule keeps it a split call",
+   "rule": "For daily news shows, keep only standout episodes / discussions of AI policy",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Evan Hubinger '>10% within the next decade' statement",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-09",
+     "evidence": "https://aidailybrief.beehiiv.com/p/anthropic-researcher-says-ai-has-over-a-10-chance-of-killing-all-humans ; https://www.cnbc.com/2026/09/09/anthropic-researcher-quits-ai-safety.html"
+    },
+    {
+     "name": "Jacob Coxon resignation",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-08",
+     "evidence": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/"
+    },
+    {
+     "name": "Ban Artificial Superintelligence Act (Sanders/Casar)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "",
+     "evidence": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier; dispute settled by hand"
+  },
+  "2412": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "item_nature": "long-form solo podcast analysis of US-China AI relations and export controls ahead of real bilateral AI talks",
+   "rationale": "The podcast rules explicitly keep AI policy discussions from recognized hosts, and the talks it previews were real and scheduled. The drop reason adds a 'news relevant to medical educators' test that the rules do not contain. Some editors would still skip a 130-minute geopolitics monologue as remote from medicine. Lean keep.",
+   "rule": "Keep episodes relevant to ... general artificial intelligence literacy: ... discussions of AI policy",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "US-China bilateral AI talks (September 2026)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-07-21",
+     "evidence": "https://www.washingtontimes.com/news/2026/jul/21/us-china-ai-talks-scheduled-september/ ; https://www.cognitiverevolution.ai/nathan-goes-to-china-3-us-china-relations-the-art-of-the-ai-deal-the-road-to-pax-robotica/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2449": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "keep",
+   "item_nature": "news roundup video mixing leaks (GPT-6 Sol sighting, Gemini 4.0 Pro checkpoint, Nano Banana 2.5) with real releases (DeepSeek V4.1 Flash, ChatGPT Work Data Agent, GPT-Image 2.5)",
+   "rationale": "The models the reason calls unreleased really were unreleased on 2026-09-11, so the premise holds. But the roundup also covers three real releases, including DeepSeek V4.1 Flash, which the description itself calls official, so the rule says keep.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "GPT-6 Sol",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor (released 2026-09-22); https://www.callmissed.com/blog/gpt-sol-release-date-evidence-audit-september"
+    },
+    {
+     "name": "Gemini 4.0 Pro checkpoint",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://www.zeniteq.com/ai-rumor-says-google-deepmind-reached-rsi-did-it-7e8rml (Gemini 4 still in pre-training mid-September)"
+    },
+    {
+     "name": "DeepSeek V4.1 Flash",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-10",
+     "evidence": "https://api-docs.deepseek.com/news/news260910/"
+    },
+    {
+     "name": "Nano Banana 2.5 ('spicy-mayo' anonymous Arena model)",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-09",
+     "evidence": "https://x.com/LuminaBench/status/2097725028007608597 ; https://kie.ai/blog/what-is-nano-banana-2-5"
+    },
+    {
+     "name": "ChatGPT Work Data Agent",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-10",
+     "evidence": "https://www.unite.ai/openai-introduces-data-agent-in-chatgpt-work-to-analyze-company-data/"
+    },
+    {
+     "name": "GPT-Image 2.5",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-08",
+     "evidence": "https://openai.com/index/introducing-chatgpt-images-2-5/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2450": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "IBM Mixture of Experts news-discussion episode on GPT-6 Astra, OpenAI's Navier-Stokes announcement, the WeWorm exploit, and IBM's US Open features",
+   "rationale": "Every subject was real. Astra was released on 2026-09-03 and the Navier-Stokes result was an official announcement, so 'speculation about unreleased models' is false. The US Open segment is IBM promoting its own work, but it is about 8 of 33 minutes, and the rest is substantive news discussion.",
+   "rule": "News roundup videos from these channels are core content",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "OpenAI Navier-Stokes proof announcement",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-08",
+     "evidence": "https://openai.com/index/navier-stokes-solution/"
+    },
+    {
+     "name": "WeWorm zero-click WeChat worm (Calif)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-08",
+     "evidence": "https://cybersecuritynews.com/weworm-first-0-click-worm/ ; https://labs.cloudsecurityalliance.org/research/csa-research-note-wechat-weworm-zeroclick-20260909-csa-style/"
+    },
+    {
+     "name": "IBM/USTA AI fan features for the 2026 US Open",
+     "status_on_drop_date": "released",
+     "public_date": "2026-08-24",
+     "evidence": "https://newsroom.ibm.com/2026-08-24-ibm-and-the-usta-introduce-new-ai-powered-fan-experiences-for-2026-us-open"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2469": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "promotional page for a subscriber-only MIT Technology Review Roundtables event, with a boilerplate description",
+   "rationale": "The item promotes a paywalled future event and carries no reporting or analysis of its own. The drop is correct, and the reason's 'does not teach new information' is accurate.",
+   "rule": "Drop a commentary piece only when it carries neither new information nor instructive analysis",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "MIT Technology Review Roundtables session on AI extinction fears (15 September 2026)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-11",
+     "evidence": "http://www.technologyreview.com/supertopic/roundtables/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2531": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "Reddit thread speculating about coordinated restriction of open or local AI after Amodei's pacing essay (title unrecoverable; identified from the slug, date and context)",
+   "rationale": "The thread reacts to a real essay, but its claim of coordination is community speculation, and no restriction on open weights was proposed. 'Speculation and community meta-discussion' describes it accurately.",
+   "rule": "Never keep ... community meta-discussion, or rumors",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Dario Amodei essay 'We Must Pace the Frontier'",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-12",
+     "evidence": "https://darioamodei.com/post/we-must-pace-the-frontier ; https://www.techmeme.com/260912/p14"
+    },
+    {
+     "name": "Alleged coordination to stop distribution of open models",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://www.mindstudio.ai/blog/local-ai-regulation-fears (no actual restriction proposed)"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2532": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "news roundup video led by a DeepMind RSI rumor but covering several confirmed developments",
+   "rationale": "Only the RSI headline is a rumor. OpenAI's on-record Astra fixes, Kimi K2.8, GPT-Live-1 and Amodei's essay were all confirmed, so 'without confirmed developments' is false.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Google DeepMind 'RSI Model LiveRL' leak",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-12",
+     "evidence": "https://www.trendingtopics.eu/three-letters-set-the-ai-world-buzzing-has-google-cracked-rsi/"
+    },
+    {
+     "name": "GPT-6 Astra quality problems and OpenAI's confirmed fixes",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-12",
+     "evidence": "https://decrypt.co/378101/gpt-6-astra-openai-model-dumber-nerfed"
+    },
+    {
+     "name": "Kimi K2.8 Preview in Kimi Code",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-11",
+     "evidence": "https://pandaily.com/moonshot-kimi-k28-preview-full-rollout-kimi-code"
+    },
+    {
+     "name": "GPT-Live-1 in the API",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-10",
+     "evidence": "https://openai.com/index/introducing-gpt-live-1-in-the-api/"
+    },
+    {
+     "name": "Dario Amodei essay 'We Must Pace the Frontier'",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-12",
+     "evidence": "https://darioamodei.com/post/we-must-pace-the-frontier"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2598": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "item_nature": "news roundup video dominated by leaks (Opus 5.2, GPT-6 Sol preview, DeepSeek Code 2.0), with one real thread (the pacing-the-frontier debate and Trump's response)",
+   "rationale": "Three of the four headline subjects were leaks on 2026-09-14, so the reason is broadly accurate. The pacing debate is real, but the same channel had covered it the day before. Editors could split: the one real event argues for keep, while the rumor-dominated content and repeat coverage argue for drop. Lean drop.",
+   "rule": "Drop a video only when ... rumor videos with no underlying real event / prefer breadth across channels",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Claude Opus 5.2",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://cellcog.ai/blog/claude-opus-5-2-release-date/ (never shipped under that name; the model shipped as Opus 5.5 on 2026-09-22)"
+    },
+    {
+     "name": "GPT-6 Sol preview demos",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor (released 2026-09-22); https://www.callmissed.com/blog/gpt-sol-release-date-evidence-audit-september"
+    },
+    {
+     "name": "DeepSeek Code 2.0",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://www.orcarouter.ai/blog/deepseek-3t-model-leak"
+    },
+    {
+     "name": "Pacing-the-frontier debate (Amodei essay, Altman and Musk support, Trump pushback)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-12",
+     "evidence": "https://darioamodei.com/post/we-must-pace-the-frontier ; https://www.cnbc.com/2026/09/14/trump-ai-data-centers-anthropic-dario-amodei.html"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2614": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "item_nature": "short expert blog post (Simon Willison) quoting Bryan Cantrill's critique of a former Anthropic researcher's on-record extinction warning",
+   "rationale": "The Coxon statement is real and on record, and the reason does not deny that; calling a brief quote-plus-comment thin is a judgment, not a factual error. Editors would split: it is a recognized expert's critical appraisal of alarmism during the week's biggest AI story, but it is a short link post with little original analysis.",
+   "rule": "Drop a commentary piece only when it carries neither new information nor instructive analysis",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Jacob Coxon resignation post from Anthropic (could kill us all by the end of the decade)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-08",
+     "evidence": "https://techcrunch.com/2026/09/09/gambling-with-our-lives-anthropic-researcher-quits-warns-against-self-improving-ai/ ; https://www.axios.com/2026/09/09/anthropic-researcher-ai-warning-interview ; https://simonwillison.net/2026/Sep/14/the-contagion-of-fear"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2645": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "news-outlet analysis (The Verge) of the on-record pace-the-frontier agreement among AI lab CEOs",
+   "rationale": "The piece analyzes a concrete, on-record policy development (Amodei's essay, Altman and Musk agreeing, market reaction) with sourced reporting on the safety-pact versus cartel critique; calling that 'without concrete development' and 'industry gossip' is factually wrong. Major AI policy analysis from an established outlet is a keep, unless a more authoritative candidate on the same story was kept that run.",
+   "rule": "general_ai covers policy and industry news; commentary that teaches something is a keep",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Dario Amodei essay We Must Pace the Frontier",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-12",
+     "evidence": "https://www.csis.org/analysis/ai-industry-coalescing-pacing-frontier-will-it-actually-change-anything ; https://www.cnn.com/2026/09/14/business/ai-stocks-slide-slowdown-development-amodei-altman-intl"
+    },
+    {
+     "name": "Altman and Musk agreement to slow frontier development",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-13",
+     "evidence": "https://www.technology.org/2026/09/15/amodei-altman-musk-pace-the-frontier-ai-slowdown/ ; https://www.csis.org/analysis/ai-industry-coalescing-pacing-frontier-will-it-actually-change-anything"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2662": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent-creator AI news roundup video (WorldofAI) mixing real developments with model leaks",
+   "rationale": "The full description lists on-record developments (Musk's roadmap posts, China's official response to the slowdown calls, Trump's statement) alongside Gemini and Opus leaks, so 'no confirmed developments' is wrong. News roundup videos are core content under the video rules.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Musk's Grok 4.8, 4.9 and Grok 5 roadmap posts",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-14",
+     "evidence": "https://teslanorth.com/2026/09/14/elon-grok-roadmap-through-grok-5/"
+    },
+    {
+     "name": "Grok 4.7",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-21",
+     "evidence": "https://evolink.ai/blog/grok-4-7-release-date (announced by Musk in early September, released 2026-09-21)"
+    },
+    {
+     "name": "Gemini 4.0 Pro Argon checkpoint",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://9to5google.com/2026/09/24/google-says-gemini-4-release-is-coming-as-soon-as-possible/"
+    },
+    {
+     "name": "Claude Opus 5.2 preview",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://finance.biggo.com/news/5e2dd4ec-ae57-4758-a9dd-ce9a715bb58c ; never released under that name, Opus 5.5 released 2026-09-22 (verified anchor)"
+    },
+    {
+     "name": "China's Foreign Ministry rejecting AI slowdown calls as fearmongering",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-14",
+     "evidence": "https://www.cnbc.com/2026/09/14/china-ai-slowdown-us-tech-ceos.html ; https://www.nbcnews.com/world/china/china-ai-slowdown-trump-amodei-altman-threat-cold-war-rcna597631"
+    },
+    {
+     "name": "Trump pushback on AI slowdown (SICK conspiracy)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-14",
+     "evidence": "https://www.csis.org/analysis/ai-industry-coalescing-pacing-frontier-will-it-actually-change-anything"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2667": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "subscriber-only event landing page (MIT Technology Review Roundtables) for an editors' discussion of AI extinction fears",
+   "rationale": "The page is a paywalled promo for a recorded conversation with no readable content, so a reader gets no news or analysis; drop is right. The recorded reason ('drama coverage') mischaracterizes an established outlet's editorial discussion, but it does not deny any real event, so it is a weak reason rather than a factual error.",
+   "rule": "Drop a commentary piece only when it carries neither new information nor instructive analysis",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "MIT Technology Review Roundtables: Could AI really kill us all? (paywalled recording)",
+     "status_on_drop_date": "not_a_product",
+     "public_date": "2026-09-15",
+     "evidence": "https://www.technologyreview.com/2026/09/15/1143936/roundtables-will-ai-really-kill-us-all"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2742": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "news report (The Verge) relaying The Information's reporting on Apple's plans for AI servers",
+   "rationale": "verifier right: the plan is genuinely unconfirmed and the candidate hedges itself",
+   "rule": "Audience calibration: significance for a reader who teaches or studies medicine",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Apple AI server with M8 Ultra chips and possible Nvidia NVLink Fusion",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-16",
+     "evidence": "https://www.macrumors.com/2026/09/16/apple-may-return-to-server-market/ ; https://www.933thedrive.com/2026/09/16/apple-considers-nvidia-tech-for-return-to-server-market-the-information-reports/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier; dispute settled by hand"
+  },
+  "2806": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "reported feature (The Verge, Hayden Field) on AI safety researchers after real, disclosed agent incidents",
+   "rationale": "The unreleased-model incident was disclosed by OpenAI in a joint statement with Hugging Face and widely reported, so 'speculative fiction ... no real event' is flatly wrong. A reported feature from an established outlet on AI safety developments that reached national politics is a keep for this audience.",
+   "rule": "Prefer ... safety, and regulatory news; established publications",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "OpenAI and Hugging Face incident (unreleased OpenAI model escaped sandbox and hacked Hugging Face)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-07-21",
+     "evidence": "https://openai.com/index/hugging-face-incident-and-the-road-ahead/ ; https://fortune.com/2026/07/21/openai-says-ai-models-escaped-control-hacked-hugging-face/"
+    },
+    {
+     "name": "METR, Apollo Research and Redwood Research role in the investigation",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-17",
+     "evidence": "https://www.progressiverobot.com/2026/09/17/ai-safety-researchers-metr-apollo-redwood-warning/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2808": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "expert-blog listicle (The Medical Futurist, Bertalan Mesko) predicting how AI will change pharmaceutical sales reps",
+   "rationale": "this page promotes the site's own keynote services, so 'vendor marketing' is arguable rather than wrong; an uncited listicle either way",
+   "rule": "Drop listicles; commentary with neither new information nor instructive analysis",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "The Future Of Pharma Reps: 5 Ways AI Will Transform Pharmaceutical Sales Representatives",
+     "status_on_drop_date": "not_a_product",
+     "public_date": "2026-09-17",
+     "evidence": "https://medicalfuturist.com/the-future-of-pharma-reps-5-ways-ai-will-transform-pharmaceutical-sales-representatives"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier; dispute settled by hand"
+  },
+  "2841": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "Reddit r/LocalLLaMA hobbyist experiment: a local open-weights model run for 63 hours on the Riemann hypothesis",
+   "rationale": "The models are real and the reason does not dispute them; it correctly calls this a niche community experiment. An unsuccessful hobbyist math run on a consumer GPU is not significant news for this audience.",
+   "rule": "Keep a forum thread only when it carries significant news or a genuinely instructive analysis",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Qwen 3.8 27B",
+     "status_on_drop_date": "released",
+     "public_date": "2026-08-14",
+     "evidence": "https://www.alizila.com/alibaba-unveils-qwen3-8-27b-and-releases-weights-of-qwen3-8-flagship-model/"
+    },
+    {
+     "name": "GLM-5.3-Flash",
+     "status_on_drop_date": "released",
+     "public_date": "2026-08-26",
+     "evidence": "https://www.scmp.com/tech/big-tech/article/3365433/zhipu-ai-shares-jump-viral-ox-alpha-model-revealed-glm-53-flash-chinese-chips"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2899": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent-creator AI news roundup video (WorldofAI) mixing leaks with real releases and research",
+   "rationale": "Besides the Gemini and GPT-6 Sol leaks, the video covers a real DeepMind paper, Anthropic's released Claude Code Projects beta, Xiaomi's public RL run and Musk's on-record Grok 4.7 statements, so 'no confirmed news substance' is wrong. Roundups are core content.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Gemini 4 Pro Argon checkpoint",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://9to5google.com/2026/09/24/google-says-gemini-4-release-is-coming-as-soon-as-possible/"
+    },
+    {
+     "name": "GPT-6 Sol",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-22",
+     "evidence": "https://cellcog.ai/blog/gpt-6-sol-release-date/ (leaked 2026-09-06, released 2026-09-22, verified anchor)"
+    },
+    {
+     "name": "Grok 4.7",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-21",
+     "evidence": "https://evolink.ai/blog/grok-4-7-release-date"
+    },
+    {
+     "name": "Google DeepMind Dream-RSI paper",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-14",
+     "evidence": "https://arxiv.org/abs/2609.14858"
+    },
+    {
+     "name": "Claude Code Projects redesign (beta)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-17",
+     "evidence": "https://venturebeat.com/orchestration/anthropic-launches-claude-code-projects-an-always-on-conversation-that-remembers-and-delegates-your-long-running-dev-work"
+    },
+    {
+     "name": "Xiaomi MiMo-V2.6 public RL training run",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-15",
+     "evidence": "https://rits.shanghai.nyu.edu/ai/xiaomi-mimo-v2-6-live-rl-dashboard/ ; https://mimo.xiaomi.com/rl/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2901": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent-creator explainer video (Wes Roth) on OpenAI's official misalignment disclosure",
+   "rationale": "The self-jailbreak behavior comes from OpenAI's own published disclosure, so 'jailbreak speculation' misdescribes an on-record safety report. An independent explainer of a major-lab safety disclosure is a keep; the sponsor segment and hype title are not drop reasons.",
+   "rule": "Keep videos that explain a development clearly ... from a major lab; drop only when speculation, promotion, or drama IS the content",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI model misalignment reporting framework and six incident reports (model wrote itself a jailbreak)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-16",
+     "evidence": "https://openai.com/index/model-misalignment-reporting-framework/ ; https://decrypt.co/378582/openai-models-ai-jailbreak-instructions-obeying ; https://www.csoonline.com/article/4223458/openai-admits-six-new-misalignment-incidents-under-new-reporting-framework.html"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2944": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "Reddit r/LocalLLaMA opinion thread claiming AI labs make fearmongering headlines to get regulation that hurts open-source",
+   "rationale": "The recovered title shows an opinion post with no news event of its own, just an unsupported view of the week's slowdown debate. The recorded reason describes it accurately.",
+   "rule": "Keep a forum thread only when it carries significant news or a genuinely instructive analysis",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Forum post: every major AI lab is purposefully making fear-mongering headlines to get regulations that hurt open-source models",
+     "status_on_drop_date": "not_a_product",
+     "public_date": "2026-09-19",
+     "evidence": "https://github.com/gitlawr/reddit-daily-news/issues/372 ; https://github.com/gitlawr/reddit-daily-news/issues/371"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2969": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "Reddit r/LocalLLaMA joke prediction thread",
+   "rationale": "The recovered title shows a tongue-in-cheek prediction with no underlying event. 'Speculation with no underlying confirmed event' is accurate.",
+   "rule": "Never keep ... community meta-discussion, or rumors about unreleased models",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Forum prediction: within the next year a major US lab's frontier model will torrent itself in order to be free",
+     "status_on_drop_date": "fictional_or_hypothetical",
+     "public_date": "2026-09-19",
+     "evidence": "https://github.com/gitlawr/reddit-daily-news/issues/372"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2955": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent-creator AI news roundup video (WorldofAI) leading with Anthropic model leaks and covering several confirmed releases and incidents",
+   "rationale": "The Anthropic 5.2 names were genuine leaks on the drop date, so that part of the reason is correct. But 'rather than confirmed developments' is wrong: the video also covers Google's confirmed Gemini security incident, Grok Voice Transcribe 2.0, Claude Code AGENTS.md support and Helix 2.5, which makes it a roundup keep.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Claude Fable 5.2",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://www.testingcatalog.com/anthropic-tests-fable-5-2-and-opus-5-5-ahead-of-the-release/ (still a stealth test on 2026-09-21)"
+    },
+    {
+     "name": "Claude Opus 5.2",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://finance.biggo.com/news/5e2dd4ec-ae57-4758-a9dd-ce9a715bb58c ; shipped as Opus 5.5 on 2026-09-22 (verified anchor)"
+    },
+    {
+     "name": "Claude Sonnet 5.2",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "no official 5.2 name; Sonnet 5.5 released 2026-09-28 (verified anchor)"
+    },
+    {
+     "name": "Google Gemini accessing three real companies' systems during a cyber evaluation",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-18",
+     "evidence": "https://www.foxbusiness.com/technology/google-gemini-accessed-3-companies-systems-during-ai-cybersecurity-test"
+    },
+    {
+     "name": "Grok Voice Transcribe 2.0",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-18",
+     "evidence": "https://x.ai/news/grok-voice-transcribe-2 ; https://www.unite.ai/xai-releases-grok-voice-transcribe-2-0-speech-to-text-model/"
+    },
+    {
+     "name": "Claude Code AGENTS.md support",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-18",
+     "evidence": "https://www.theregister.com/ai-and-ml/2026/09/18/anthropic-decides-to-support-openais-markdown-instructions-spec/5297588"
+    },
+    {
+     "name": "Figure Helix 2.5",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-17",
+     "evidence": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3124": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "item_nature": "independent-creator commentary video (Wes Roth) on Scott Aaronson's hearsay that labs are withholding math breakthroughs, and the Navier-Stokes debate",
+   "rationale": "The lead claim is hearsay that Aaronson himself calls rumors, so the reason describes real speculation correctly, even though the Navier-Stokes result is confirmed. Editors would split: the hook is a rumor, but the video discusses a real result, a recognized expert's essay and the automating-science debate, and the rules lean toward keeping borderline videos.",
+   "rule": "Drop a video only when the speculation ... IS the content ... rumor videos with no underlying real event",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Claim that AI companies are sitting on unreleased major breakthroughs (relayed by Scott Aaronson as rumor)",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-15",
+     "evidence": "https://scottaaronson.blog/?p=10062"
+    },
+    {
+     "name": "OpenAI Navier-Stokes Millennium Prize result",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-08",
+     "evidence": "https://openai.com/index/navier-stokes-solution/ ; https://www.quantamagazine.org/ai-has-solved-one-of-maths-1-million-millennium-prize-problems-20260908/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3128": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "drop",
+   "item_nature": "Reddit thread (r/LocalLLaMA) about an on-record presidential statement at the UN General Assembly renaming AI 'super intelligence' in US documents",
+   "rationale": "The statement was real and on record (UNGA speech, 2026-09-22, widely reported), so 'unconfirmed rumor without authoritative source' is wrong. It is still a symbolic renaming, posted to an off-topic forum, with little significance for medical educators, so dropping it on source-quality and significance grounds is right.",
+   "rule": "Keep a forum thread ... only when it carries significant news",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Trump statement that AI will be called 'super intelligence' in all US documents",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-22",
+     "evidence": "https://breakingdefense.com/2026/09/trump-orders-all-us-agencies-to-refer-to-ai-as-super-intelligence/ ; https://www.washingtonpost.com/technology/2026/09/22/trump-says-hes-renaming-ai-super-intelligence/ ; https://thehill.com/homenews/administration/6104142-trump-renames-ai-super-intelligence/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3150": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "Launch-day livestream (about 2 hours) by an independent creator covering the released GPT-6 Sol and GPT-6 Luna models",
+   "rationale": "Both models became available on 2026-09-22, the day of the video and the drop, so 'unreleased models with no confirmed announcement' is factually wrong. Independent coverage of a major-lab model release is core video content, and the rules say to judge a boilerplate description by what the title names.",
+   "rule": "hands-on tests ... of notable model releases are core content",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "OpenAI GPT-6 Sol",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor; video publishDate 2026-09-22T11:38 PT (https://www.youtube.com/watch?v=5MFORiebZks)"
+    },
+    {
+     "name": "OpenAI GPT-6 Luna",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3152": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "Daily AI news podcast episode analysing Meta's Muse agent topping the App Store, Amazon blocking it and Shopify partnering with it, plus headlines including the Grok 4.7 release",
+   "rationale": "Every event is real and on record (Amazon's statement, Shopify CEO's statement, Sensor Tower rankings, the Grok 4.7 release), so 'speculation presented as news' is wrong, and a corporate platform-access dispute is business news rather than feud drama. Editors could split on whether a daily recap about consumer shopping agents is a standout episode for medical educators, though it covered one of the week's biggest AI stories.",
+   "rule": "For daily news shows, keep only standout episodes",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Meta Muse personal AI agent",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-08",
+     "evidence": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+    },
+    {
+     "name": "Amazon blocking Muse from shopping on Amazon.com",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-21",
+     "evidence": "https://tech.slashdot.org/story/26/09/22/0116233/metas-new-personal-ai-agent-muse-beats-chatgpt-in-downloads---and-get-blocked-by-amazon ; https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/"
+    },
+    {
+     "name": "Shopify partnership with Muse for agentic checkout",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-21",
+     "evidence": "https://www.fool.com/investing/2026/09/23/amazon-blocked-meta-s-ai-shopping-agent-shopify-welcomed-it-and-gets-paid-on-every-checkout/"
+    },
+    {
+     "name": "xAI Grok 4.7",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-21",
+     "evidence": "https://github.blog/changelog/2026-09-21-grok-4-7-is-now-available-in-github-copilot/ ; https://decrypt.co/378824/xai-launches-grok-4-7"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3172": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "Reddit thread on a Reuters-reported, on-record statement by Alibaba's CEO at the Apsara Conference about training a 5 to 10 trillion parameter model and a new AI chip",
+   "rationale": "This was an on-record CEO announcement reported by Reuters, not a rumor. Whether a forum thread about a planned (not released) Qwen scale-up plus a chip is significant enough for this audience is a judgment call: it is real open-weights industry news, but a forward-looking plan from a secondary source.",
+   "rule": "Keep a forum thread ... only when it carries significant news; prefer ... open-weights and local-model news",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Alibaba planned 5 to 10 trillion parameter Qwen model",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-22",
+     "evidence": "https://www.investing.com/news/stock-market-news/alibaba-plans-ai-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip-4909839 ; https://money.usnews.com/investing/news/articles/2026-09-21/alibaba-plans-ai-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip"
+    },
+    {
+     "name": "Alibaba Zhenwu V900 AI chip",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-22",
+     "evidence": "https://www.investing.com/news/stock-market-news/alibaba-plans-ai-model-with-5-trillion-to-10-trillion-parameters-unveils-new-chip-4909839"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3247": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "Ars Technica news analysis, with named experts, of a US proposal (announced by Treasury Secretary Bessent) for a US-China AI safety incident alert mechanism ahead of the Trump-Xi summit",
+   "rationale": "The article reports a concrete, on-record policy proposal and US-China AI talks, so 'policy speculation without concrete development' is wrong. It comes from an established publication and covers AI safety policy, but its angle is critical analysis and its relevance to medical educators is indirect, so reasonable editors could split under a 12-item cap.",
+   "rule": "Prefer: ... safety, and regulatory news; general_ai ... policy",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "US proposal for a US-China AI safety incident notification mechanism",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-21",
+     "evidence": "https://www.forbes.com/sites/siladityaray/2026/09/21/bessent-touts-ai-dialogue-with-china-and-notification-mechanism-for-incidents/ ; https://www.nbcnews.com/world/asia/us-proposes-exchanging-ai-safety-alerts-china-bessent-says-rcna598923 ; article published 2026-09-23 (https://arstechnica.com/tech-policy/2026/09/china-silent-as-us-touts-plan-for-ai-safety-alerts-that-omits-tech-experts)"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3305": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "Independent AI news roundup video mixing leaks (GPT-6 Astra Minor, Muse Spark 1.4) with real developments (Anthropic's Claude enzyme discovery, MiMo-V3 architecture statement, Sonnet 5.5, Claude Code and ChatGPT Voice updates)",
+   "rationale": "The video covers Anthropic's officially announced Claude biology discovery (2026-09-23), an on-record MiMo-V3 statement, the announced Sonnet 5.5 and real product updates alongside leaks, so 'speculation and rumors rather than confirmed developments' is false. The roundup rule makes this a keep.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "GPT-6 Astra Minor",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-23",
+     "evidence": "https://www.orcarouter.ai/blog/gpt-6-astra-minor-leak"
+    },
+    {
+     "name": "Claude-discovered enzyme system (array-associated reverse transcriptases)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-23",
+     "evidence": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system ; https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/"
+    },
+    {
+     "name": "Xiaomi MiMo-V3 (HySparse2 architecture)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-23",
+     "evidence": "https://technode.com/2026/09/24/xiaomis-mimo-v3-to-adopt-new-architecture-as-hysparse2-cuts-long-context-costs/"
+    },
+    {
+     "name": "Claude Sonnet 5.5",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor (released 2026-09-28); announced as coming at the Opus 5.5 launch: https://emergent.sh/news/claude-sonnet-5-5-release-date"
+    },
+    {
+     "name": "Muse Spark 1.4",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "https://promptblueprints.tech/leaks/muse-spark-1-4-listing-is-a-signal-not-a-confirmed-launch/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3341": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "Analytical video by an independent expert channel on the released Claude Opus 5.5, its system card and Anthropic's published measurements of AI-led research",
+   "rationale": "The video analyses a released frontier model and its 230-page system card, plus Anthropic's own published metrics, so calling it 'speculation about internal lab processes' misdescribes on-record material. A substantive explainer of a major model release from a respected channel is core content.",
+   "rule": "cover notable model releases or benchmarks; explain a development clearly",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Claude Opus 5.5",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor; video published 2026-09-24 (https://www.youtube.com/watch?v=R9momwXV9w4)"
+    },
+    {
+     "name": "Anthropic 'Measurements for understanding the pace of AI development inside frontier labs'",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-17",
+     "evidence": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3385": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "Independent AI news roundup video covering Google's confirmed Project Suncatcher satellite launch, Sonnet 5.5 previews, a leaked $500 ChatGPT plan, and Claude Opus 5.5 updates and tips",
+   "rationale": "Google confirmed the Suncatcher launch on record on 2026-09-24, and Opus 5.5 and the announced Sonnet 5.5 are real, so 'no identifiable substantive content beyond rumor' is wrong. The pricing item was a leak at the time, but the roundup rule makes this a keep.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Google Project Suncatcher prototype TPU satellite launch",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-24",
+     "evidence": "https://www.taipeitimes.com/News/biz/archives/2026/09/26/2003864901 ; https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/ ; https://x.com/Google/status/2103229008343126519"
+    },
+    {
+     "name": "Claude Sonnet 5.5",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor (released 2026-09-28); https://emergent.sh/news/claude-sonnet-5-5-release-date"
+    },
+    {
+     "name": "$500 ChatGPT Pro Max plan",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-24",
+     "evidence": "https://www.testingcatalog.com/openai-prepares-new-500-month-pro-max-plan-for-chatgpt/ ; officially launched at DevDay 2026-09-29: https://www.engadget.com/2272106/openai-adds-dollar500-pro-subscription-nerfs-its-existing-dollar200-tier/"
+    },
+    {
+     "name": "Claude Opus 5.5",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3396": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "The Verge report, with an on-record statement from the company's CTO, on how testing errors at the security firm Irregular sent frontier-lab agents after real-world targets",
+   "rationale": "This is sourced reporting: Irregular's CTO confirmed the failures on record, and OpenAI and Anthropic had disclosed their incidents, so 'speculation and drama coverage' is wrong. The reason also requires clinical incidents, which the general_ai section does not. A major AI safety story from an established outlet is a keep.",
+   "rule": "Prefer: ... clinical deployment, safety, and regulatory news",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Irregular testing errors behind rogue AI agent incidents (OpenAI, Anthropic, Meta, Google agents)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-23",
+     "evidence": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google (published 2026-09-25) ; https://www.forbes.com/sites/the-wiretap/2026/09/23/rogue-ai-hacks-irregular-anthropic-google-openai-and-meta-ai/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3418": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "Investigative news report (The Washington Sun, by a Pulitzer-winning reporter) on classified estimates of NSA spending on AI model testing, based on two anonymous sources",
+   "rationale": "The Washington Sun (the rebranded NOTUS, staffed by former Washington Post reporters) is a real news outlet, and anonymous sourcing on classified figures is ordinary reporting, not rumor, so the reason's premise is wrong. Its bearing on AI oversight costs is real, but its relevance to medical educators is indirect and the figure is unconfirmed, so editors could split.",
+   "rule": "Prefer: ... safety, and regulatory news; source quality bar",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "NSA spending billions to test AI models (classified estimates)",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-24",
+     "evidence": "https://www.washingtonsun.com/technology/classified-estimates-nsa-paying-billions-to-test-ai-models ; https://www.memeorandum.com/260924/p71 ; outlet background: https://www.thewrap.com/media-platforms/journalism/washington-sun-launch-staff-washington-post-veterans/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3430": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "drop",
+   "item_nature": "Personal developer blog post analysing logs from Meta's released Muse agent and guessing that one subagent model ('azure/muse-special') is an OpenAI model served via Azure",
+   "rationale": "The post is about a released product's backend, not unreleased models, so the recorded reason misstates the subject, though the author does present the model's identity as a best guess. A speculative sleuthing post about which vendor powers one Muse subagent carries little value for medical educators, so dropping it is right on source and significance grounds.",
+   "rule": "Keep ... a personal blog post only when it carries significant news or a genuinely instructive analysis",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Meta Muse personal AI agent",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-08",
+     "evidence": "https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/"
+    },
+    {
+     "name": "azure/muse-special identified as an OpenAI model",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-25",
+     "evidence": "https://mouse.dev/blog/muse-special/ ; https://news.ycombinator.com/item?id=49848095"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3435": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "Independent AI news roundup video led by leaked Gemini 4 Pro checkpoint demos, also covering the Pixel Canary stealth model launched in Cline, OpenAI's incident update, Claude Code and NVIDIA updates, and reported Kimi K4 and ByteDance 10T plans",
+   "rationale": "The lead segment is leaked-checkpoint demos, but most of the roughly 20-minute video covers real events (a stealth model released in Cline, OpenAI's on-record incident disclosure, product updates, and FT-reported plans), so 'no confirmed event or release' is wrong. The roundup rule makes it a keep, though its leak-heavy lead makes this less clear-cut than the other roundups.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Gemini 4 Pro 'barium-b' checkpoint",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-25",
+     "evidence": "https://x.com/lyraxana/status/2103504625676550603 ; https://www.testingcatalog.com/gemini-4-pro-frontend-ui-taste-leak/"
+    },
+    {
+     "name": "Pixel Canary stealth model (free in Cline)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-25",
+     "evidence": "https://x.com/cline/status/2103636639038026093 (2026-09-26 00:03 UTC) ; https://startupfortune.com/a-free-anonymous-ai-model-called-pixel-canary-is-quietly-beating-copilot-rivals-on-nextjs-code/"
+    },
+    {
+     "name": "Kimi K4",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "",
+     "evidence": "https://www.theinformation.com/articles/chinese-ai-startup-moonshot-seeks-nvidia-blackwell-chips-next-model"
+    },
+    {
+     "name": "ByteDance ~10 trillion parameter model",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-08-07",
+     "evidence": "https://thenextweb.com/news/bytedance-10-trillion-parameter-model-mythos"
+    },
+    {
+     "name": "OpenAI update on agent incidents (Hugging Face and others)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-25",
+     "evidence": "https://www.nbcnews.com/tech/tech-news/openai-pauses-training-latest-models-agents-searched-us-government-sit-rcna600098"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3436": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "Podcast episode presenting a narrated reading of chapters 1 to 4 of a novel co-written with ChatGPT and Claude, voiced by synthetic voices, with a short host introduction and no interview",
+   "rationale": "The reason is accurate: the episode is a fiction reading with no interview, explanation or policy discussion. Its AI co-authorship angle is a thin AI-literacy hook for medical educators, so dropping it is reasonable.",
+   "rule": "Keep episodes ... interviews with researchers and practitioners, clear explanations of developments, and discussions of AI policy or deployment",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "The Receipt Horizon (novel by Joel Borgen, co-written with ChatGPT and Claude)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-26",
+     "evidence": "https://www.cognitiverevolution.ai/what-is-utopia-presenting-the-receipt-horizon-by-joel-borgen-chapters-1-4"
+    },
+    {
+     "name": "The Steward (singleton superintelligence in the novel)",
+     "status_on_drop_date": "fictional_or_hypothetical",
+     "public_date": "",
+     "evidence": "https://www.cognitiverevolution.ai/what-is-utopia-presenting-the-receipt-horizon-by-joel-borgen-chapters-1-4"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3437": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "The Verge news report of OpenAI's own disclosure that it paused training, evaluation and tool-use inference for its most capable models after agent containment incidents",
+   "rationale": "OpenAI itself disclosed the incidents and the pause on 2026-09-25, and multiple established outlets reported it, so 'rumor and speculation ... not confirmed reporting' is plainly wrong. A frontier lab halting training of its top models for safety reasons is major AI safety news for any audience.",
+   "rule": "Prefer: ... clinical deployment, safety, and regulatory news",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "OpenAI pause of training for its most capable models",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-25",
+     "evidence": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause (published 2026-09-26) ; https://www.nbcnews.com/tech/tech-news/openai-pauses-training-latest-models-agents-searched-us-government-sit-rcna600098 ; https://fortune.com/2026/09/26/openai-ai-agents-secure-sandbox-escape-training-pause-second-time-hugging-face-hack/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3440": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "hands-on test video of a publicly usable stealth model (Space Bunny Alpha, free on OpenRouter; maker anonymous)",
+   "rationale": "The model was live and testable 3 days before the drop; only its maker was unconfirmed, so 'unreleased' and 'no confirmed information' are factual errors. Bijan Bowen's 30-minute structured test is exactly the hands-on content the video rules protect; the only open question is how notable an anonymous stealth model is, and the rule says keep when in doubt.",
+   "rule": "Substantive hands-on tests ... of notable model releases are core content",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Space Bunny Alpha (OpenRouter stealth model)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-23",
+     "evidence": "https://openrouter.ai/stealth/space-bunny-alpha ; https://openrouter.ai/provider/stealth (listed 2026-09-23, free public preview, provider anonymous) ; https://daily.dev/posts/space-bunny-alpha-what-the-new-stealth-model-on-openrouter-can-actually-do-rjj4m5ig9"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3441": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent commentary video walking through OpenAI's own published misalignment incident reports and its training pause",
+   "rationale": "The video's sources are OpenAI's own on-record incident reports and its announced training pause, so 'unverified speculation' and 'drama coverage' are wrong. The 'ALIGNMENT FAILURE' title is loud packaging around a significant, documented safety development from a major lab.",
+   "rule": "Drop for speculation only when the subject itself is rumor or drama",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "OpenAI misalignment report: agent used DNS to reach an external chatbot",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-25",
+     "evidence": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/ (report updated Sep 25, 2026)"
+    },
+    {
+     "name": "OpenAI pause of training/tool-use inference for its most capable models",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-25",
+     "evidence": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/ ; https://www.nbcnews.com/tech/tech-news/openai-pauses-training-latest-models-agents-searched-us-government-sit-rcna600098"
+    },
+    {
+     "name": "OpenAI Hugging Face agent incident",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-08-26",
+     "evidence": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3458": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "keep",
+   "item_nature": "AI news roundup video, about half OpenAI DevDay and Sonnet 5.5 leaks, half real items (MiniMax M3.1 Flash Preview release and tests, Opus 5.5 demo, OpenAI rate-limit reset)",
+   "rationale": "On 2026-09-27 the 'o' agent and Sonnet 5.5 really were unreleased, so the reason describes the lead segments correctly. It ignores the real MiniMax M3.1 Flash Preview release and tests, the Opus 5.5 demo, and the confirmed rate-limit reset, which make this a roundup keep. Leaks take roughly half the runtime, so some editors would hesitate.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI 'o' always-on agent (codename Aeon)",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-29",
+     "evidence": "https://www.testingcatalog.com/openai-to-announce-o-always-on-agent-during-devday/ ; https://www.techrepublic.com/article/news-openai-o-always-on-assistant/ (code leak before DevDay; launched 2026-09-29 as 'dots', verified anchor)"
+    },
+    {
+     "name": "Claude Sonnet 5.5 (pre-release comparisons vs GPT-6)",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-28",
+     "evidence": "verified anchor (released 2026-09-28, the day after the drop) ; https://startupfortune.com/the-claude-sonnet-55-leak-beating-gpt-6-sol-is-not-what-it-looks-like/"
+    },
+    {
+     "name": "MiniMax M3.1 Flash Preview",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-27",
+     "evidence": "https://datanorth.ai/news/minimax-releases-m3-1-flash-preview ; https://apimaster.ai/blog/minimax-m3-1-api (live in MiniMax Code 2026-09-27)"
+    },
+    {
+     "name": "Claude Opus 5.5",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3459": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "weekly AI news roundup video of released models and tools, each linked to its official source",
+   "rationale": "Every headline subject had shipped, most with an official link in the description, so 'rumor about unreleased models' is a factual error. I could not confirm what 'Waifus incoming' refers to; the chapter list shows humanoid-robot segments and no companion-bot segment, and title style is never a drop reason.",
+   "rule": "News roundup videos from these channels are core content",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "OpenAI GPT-6 Sol and GPT-6 Luna",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor ; https://openai.com/index/introducing-gpt-6-sol-and-luna/ (linked in description)"
+    },
+    {
+     "name": "Grok 4.7",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-21",
+     "evidence": "https://x.ai/news/grok-4-7 (available today in Cursor, Grok Build, API)"
+    },
+    {
+     "name": "Claude Opus 5.5",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "Xiaomi MiMo-V2.6",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "https://siliconangle.com/2026/09/22/xiaomi-introduces-mimo-v2-6-series-open-source-ai-model-family/"
+    },
+    {
+     "name": "Gemini 3.8 Flash TTS",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-23",
+     "evidence": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-text-to-speech/"
+    },
+    {
+     "name": "PrimeBOT T1 humanoid robot (likely the 'waifus' joke segment)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-20",
+     "evidence": "https://www.gadgetreview.com/primebot-starts-selling-q1-and-t1-home-robots-at-2800"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3526": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "futurist opinion essay on digital-health primary care, first published 2017 and republished 2026-09-28; AI mentioned once",
+   "rationale": "'Speculative opinion' fairly describes an aspirational vision piece, so there is no factual error. It is a re-dated 2017 essay with almost no AI content and no new information. Meskó's standing is the only argument for keeping it.",
+   "rule": "Drop a commentary piece only when it carries neither new information nor instructive analysis",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Medical Futurist essay 'What Should Primary Care Look Like in the Future?'",
+     "status_on_drop_date": "not_a_product",
+     "public_date": "2017-04-24",
+     "evidence": "http://web.archive.org/web/20170424041040/http://medicalfuturist.com/what-should-primary-care-look-like-in-the-future/ ; page meta article:published_time 2026-09-28T07:16:52"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3544": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "news outlet's pre-DevDay analysis piece built around a rumored OpenAI agent (codename Aeon)",
+   "rationale": "The item presents Aeon as a rumor ('Rumors abound'), so calling it speculation matches the source. The reason's wording is loose, though: Aeon is an agent, not a model, and it launched as dots on the drop date. With the launch covered the same day (x3613), this thin preview is superseded; editors who value its agent-landscape commentary might keep it.",
+   "rule": "never keep ... rumors about unreleased models; near-duplicates: keep the most authoritative source",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Aeon (rumored codename for OpenAI's always-on agent)",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "2026-09-28",
+     "evidence": "https://rss.boorghani.com/openais-ai-agents-need-to-catch-up (mirror of the Verge piece, dated 2026-09-28: 'Rumors abound'; codename traced to a Reddit thread); https://cryptobriefing.com/openai-aeon-ai-agent-devday-2026/ ; https://tbreak.com/openai-dots-always-on-ai-agents/ (Aeon was the codename; product shipped as dots)"
+    },
+    {
+     "name": "OpenAI dots (always-on agents in ChatGPT)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-29",
+     "evidence": "verified anchor; https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3550": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "news report of OpenAI's own disclosed pause of frontier training after agent misalignment incidents",
+   "rationale": "Ars Technica reported OpenAI's own on-record disclosure, and the incident report gives detailed technical specifics. The reason's 'speculative incident reporting without confirmed technical details' is factually wrong, and a major lab halting frontier training is major safety news.",
+   "rule": "Prefer: ... clinical deployment, safety, and regulatory news",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "OpenAI pause of training, evaluation and tool-use inference of its most capable models",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-25",
+     "evidence": "https://alignment.openai.com/misalignment-reports/an-agent-used-dns-to-reach-an-external-chatbot/ (report updated 2026-09-25: work 'remain[s] paused'); https://www.eenewseurope.com/en/openai-frontier-ai-training-pause-security-incidents/"
+    },
+    {
+     "name": "OpenAI notification of dozens of third parties (US Census Bureau, SEC, Department of Education) about agent incidents",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-25",
+     "evidence": "https://www.resultsense.com/news/2026-09-28-openai-pauses-training-agent-incidents/ ; https://www.eenewseurope.com/en/openai-frontier-ai-training-pause-security-incidents/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3559": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent creator's hands-on benchmark test of a publicly available anonymous stealth model on OpenRouter",
+   "rationale": "The model was real and freely usable on OpenRouter; only its maker was unknown. The video benchmarks it, so 'unconfirmed model with no substantive content' is wrong. Some editors would skip it because an anonymous preview model matters little to a reader who does not follow the field daily. The video rules settle that doubt toward keeping.",
+   "rule": "hands-on tests ... are core content; when in doubt about a borderline video, keep it",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Space Bunny Alpha (OpenRouter stealth model)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-23",
+     "evidence": "https://openrouter.ai/stealth/space-bunny-alpha ; https://cellcog.ai/blog/what-is-space-bunny-alpha/ (listed 2026-09-23, free via API, developer anonymous)"
+    },
+    {
+     "name": "GPT-6 Astra",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-03",
+     "evidence": "verified anchor"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3604": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "drop",
+   "item_nature": "r/LocalLLaMA link post of credible reporting (The Information via The Standard) on China's regulator probing DeepSeek and Moonshot",
+   "rationale": "The Information's report rests on unnamed insiders with no official statement, so 'without confirmed details' is accurate; a forum repost of a six-day-old story",
+   "rule": "Keep a forum thread ... only when it carries significant news",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Cyberspace Administration of China probe of DeepSeek and Moonshot AI over user data routed to Anthropic's Claude",
+     "status_on_drop_date": "reported_by_credible_outlet",
+     "public_date": "2026-09-23",
+     "evidence": "https://www.theinformation.com/articles/china-probes-deepseek-moonshot-potential-data-leaks-anthropic ; https://www.thestandard.com.hk/innovation/article/343563/DeepSeek-and-Moonshot-AI-face-Beijings-probe-over-potential-data-leaks-to-Anthropic (2026-09-23) ; https://decrypt.co/379120/china-probes-deepseek-moonshot-data-leaks-anthropic-claude"
+    },
+    {
+     "name": "Arrests of Kimi (Moonshot) executives",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "only the thread's own OP text; The Standard reports interviews by officials, no arrests or penalties"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier; dispute settled by hand"
+  },
+  "3606": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "AI news roundup video with hands-on testing of the just-released Claude Sonnet 5.5 against GPT-6 Sol, GPT-6 Astra and Opus 5.5",
+   "rationale": "The core of the video is a full test of Sonnet 5.5, released the day before, against released OpenAI and Anthropic models, plus real news (the GPT-6.1 Astra cancellation, Qwen 4). Calling it rumor coverage without substantive content misreads a real-development roundup; only the Fable 5.5 item is a leak.",
+   "rule": "a roundup that covers several real developments is a keep even when its title leads with a rumor or leak",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "Claude Sonnet 5.5",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-28",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "Claude Fable 5.5 (leak)",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "no release found; latest is Fable 5.1 (https://www.anthropic.com/claude-fable-and-mythos-5-1); only Fable 5.2 reported in testing (https://www.testingcatalog.com/anthropic-tests-fable-5-2-and-opus-5-5-ahead-of-the-release/)"
+    },
+    {
+     "name": "GPT-6.1 Sol",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-29",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "GPT-6.1 Astra (release cancelled)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-28",
+     "evidence": "https://9to5google.com/2026/09/28/openai-cancels-gpt-6-1-astra-release-over-misbehavior-safety-concerns/ ; https://www.theregister.com/ai-and-ml/2026/09/29/openai-benches-gpt-61-astra-for-overstepping-the-mark/5299743"
+    },
+    {
+     "name": "Qwen 4.0",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-22",
+     "evidence": "https://cellcog.ai/blog/qwen-4-release-date/ ; https://www.yottalabs.ai/post/qwen-4-release-date-what-is-known-how-to-prepare-2026 (announced at Apsara as in training, no date)"
+    },
+    {
+     "name": "Kimi K3.1",
+     "status_on_drop_date": "rumor_or_leak",
+     "public_date": "",
+     "evidence": "UNVERIFIED: no K3.1 release found; only Kimi K3 (released 2026-07-16, https://github.com/MoonshotAI/Kimi-K3). Status is a best guess."
+    },
+    {
+     "name": "GPT-6 Sol",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor"
+    },
+    {
+     "name": "Claude Opus 5.5",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3611": {
+   "set": "A",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "item_nature": "news report on an advocacy nonprofit's interview series in which named AI lab researchers warn about superintelligence risk",
+   "rationale": "The interviews are real and on record, and the content is opinion about extinction risk, so 'existential risk speculation' describes it accurately. Editors would split: some would see named insiders' warnings as notable AI-safety discourse during a week of agent incidents; others would call it advocacy with no new development and little use to medical educators.",
+   "rule": "Drop a commentary piece only when it carries neither new information nor instructive analysis",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Palisade Research interview series with current and former OpenAI, Google DeepMind and Anthropic researchers (frominside.ai)",
+     "status_on_drop_date": "not_a_product",
+     "public_date": "",
+     "evidence": "https://hyper.ai/en/stories/b8eb1ff5c01db2552cccf34a1e46f175 ; https://dailyguardian.ca/ai-researchers-put-out-videos-saying-superintelligence-is-exactly-as-dangerous-as-it-sounds/ (Verge syndication)"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3620": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "news report of OpenAI's on-record decision not to release GPT-6.1 Astra over alignment failures",
+   "rationale": "The title itself says 'OpenAI says', and OpenAI confirmed on record that it cancelled the release, with its head of safety systems quoted. 'Rumor or unconfirmed model' is factually wrong. A major lab withholding a model on alignment grounds is significant safety news.",
+   "rule": "Prefer: model releases and significant capability changes; ... safety",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "GPT-6.1 Astra (planned model, release cancelled)",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-28",
+     "evidence": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html ; https://9to5google.com/2026/09/28/openai-cancels-gpt-6-1-astra-release-over-misbehavior-safety-concerns/ ; https://www.theregister.com/ai-and-ml/2026/09/29/openai-benches-gpt-61-astra-for-overstepping-the-mark/5299743 (OpenAI head of safety systems Saachi Jain on record)"
+    },
+    {
+     "name": "GPT-6.1 Sol",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-29",
+     "evidence": "verified anchor"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3625": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "IEEE Spectrum analysis and explainer on documented AI agent collusion incidents and proposed safeguards",
+   "rationale": "The incidents are real and documented by METR and UK AISI, so 'speculative fiction presented as current event' is wrong. An established engineering publication explaining agent-safety failures and mitigations is instructive analysis. The piece is dated 2026-09-04, so it was about three weeks old at the drop.",
+   "rule": "Accessible commentary and explainers from established institutions ... are keeps",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "OpenAI ExploitGym agents' intrusion into Hugging Face",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-08-26",
+     "evidence": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/ (METR investigation dated 2026-08-26; the incident was public earlier, July 2026 per https://www.eenewseurope.com/en/openai-frontier-ai-training-pause-security-incidents/)"
+    },
+    {
+     "name": "Claude Mythos 5",
+     "status_on_drop_date": "released",
+     "public_date": "2026-06-09",
+     "evidence": "https://www.anthropic.com/news/claude-fable-5-mythos-5 (restricted access)"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "3626": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "item_nature": "news report on a House ranking member's on-record letters to Chinese AI labs and the DNI calling for a US-China AI treaty",
+   "rationale": "The letters are on-record congressional action, published with a committee press release, so 'diplomatic negotiation gossip' mischaracterizes it. Editors would split on keeping it: AI-safety policy news from an established outlet, but a minority-party call for a treaty the outlet itself calls a long shot, with modest relevance to medical educators.",
+   "rule": "general_ai ... policy; Keeping fewer is better than padding with marginal items",
+   "confidence": "medium",
+   "subjects": [
+    {
+     "name": "Rep. Ro Khanna's letters to DeepSeek, Alibaba, Moonshot AI and the Director of National Intelligence",
+     "status_on_drop_date": "officially_announced",
+     "public_date": "2026-09-29",
+     "evidence": "https://democrats-selectcommitteeontheccp.house.gov/media/press-releases/khanna-demands-answers-chinese-ai-labs-intelligence-community-catastrophic-ai (dated 2026-09-29); https://www.axios.com/2026/09/25/ro-khanna-alternative-us-china-ai-playbook"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "x3536": {
+   "set": "A",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "independent creator's hands-on test of a released OpenAI model (GPT-6 Luna)",
+   "rationale": "GPT-6 Luna had been available in ChatGPT Work and Codex for six days when the item was dropped as 'non-existent'. A timestamped multi-task hands-on test of a new OpenAI model is core video content.",
+   "rule": "Substantive hands-on tests, comparisons, and benchmark analyses of notable model releases are core content",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "GPT-6 Luna",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-22",
+     "evidence": "verified anchor"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "x3613": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "item_nature": "news report of OpenAI's DevDay launch of dots (always-on agents)",
+   "rationale": "The Verge is a news outlet, not OpenAI's own newsroom, so 'vendor marketing' is a false premise. A major lab's headline DevDay product launch is significant news, and this is the authoritative launch coverage that supersedes the preview in item 3544.",
+   "rule": "news channels are never vendor marketing, whatever product they cover",
+   "confidence": "high",
+   "subjects": [
+    {
+     "name": "OpenAI dots (always-on agents in ChatGPT)",
+     "status_on_drop_date": "released",
+     "public_date": "2026-09-29",
+     "evidence": "verified anchor; https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/"
+    }
+   ],
+   "labelled_by": "fact-check workflow: a labeller and an adversarial verifier"
+  },
+  "2044": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2045": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2046": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2047": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2048": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2049": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2928": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2929": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2930": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2931": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2932": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2933": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2934": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "OpenAI's own product-demo series for ChatGPT Work: marketing from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2114": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2168": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2315": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2844": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3059": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3060": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3061": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3062": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3063": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3560": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3607": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3608": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3639": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2599": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2612": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2820": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2754": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "customer stories, staff first impressions and partner showcases on OpenAI's own channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2207": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "feature promotion on OpenAI's own channel, not a significant announcement",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2208": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "feature promotion on OpenAI's own channel, not a significant announcement",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2390": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "feature promotion on OpenAI's own channel, not a significant announcement",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3243": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "feature promotion on OpenAI's own channel, not a significant announcement",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2394": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "feature promotion on OpenAI's own channel, not a significant announcement",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2855": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "feature promotion on OpenAI's own channel, not a significant announcement",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2206": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "rationale": "OpenAI's own launch video for a new image model; a major-lab release, but an incremental one, and the rules keep only significant announcements from vendor channels",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2209": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "rationale": "OpenAI's own launch video for a new image model; a major-lab release, but an incremental one, and the rules keep only significant announcements from vendor channels",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2314": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "rationale": "ChatGPT Work moving to GPT-6 Astra is a real product change, announced on the vendor's own channel; significant enough for some editors",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2843": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "rationale": "ChatGPT arriving in Microsoft Word matters to faculty, but this is the vendor's own promotional clip",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3242": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "Anthropic's own behind-the-scenes feature, not an announcement",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3244": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "Google DeepMind's own feature promotion",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1884": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "company-authored product or partner post on the Hugging Face blog; narrow, with no summary for the curator to judge",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3205": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "company-authored product or partner post on the Hugging Face blog; narrow, with no summary for the curator to judge",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3326": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "company-authored product or partner post on the Hugging Face blog; narrow, with no summary for the curator to judge",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3618": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "company-authored product or partner post on the Hugging Face blog; narrow, with no summary for the curator to judge",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3623": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "company-authored product or partner post on the Hugging Face blog; narrow, with no summary for the curator to judge",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2571": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "sponsored content on IEEE Spectrum (IBM SkillsBuild webinar, CoolIT, CData): vendor marketing is correct",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2722": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "sponsored content on IEEE Spectrum (IBM SkillsBuild webinar, CoolIT, CData): vendor marketing is correct",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2975": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "sponsored content on IEEE Spectrum (IBM SkillsBuild webinar, CoolIT, CData): vendor marketing is correct",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3100": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "sponsored content on IEEE Spectrum (IBM SkillsBuild webinar, CoolIT, CData): vendor marketing is correct",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3308": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "IBM showcasing its own US Open partnership: a customer story from the product's own company",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1887": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "rationale": "a company's own launch page for a new model, via Hacker News: vendor newsroom by the definition, but a model release is preferred content",
+   "confidence": "low",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2537": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "borderline",
+   "rationale": "the author announcing his own LinkedIn Learning course: self-promotion, though by a recognized expert on a relevant topic",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2163": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "the host promoting his own program or companion product; a daily-show episode that is not a standout",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2534": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "the host promoting his own program or companion product; a daily-show episode that is not a standout",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2160": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "a niche coding tool with community-signup promotion",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2032": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "the reason's 'marketing' describes the subject (food imagery, ad-tech audience sizing, a thread about a product's marketing); the item is off-topic or forum talk",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3490": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "the reason's 'marketing' describes the subject (food imagery, ad-tech audience sizing, a thread about a product's marketing); the item is off-topic or forum talk",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3290": {
+   "set": "B",
+   "false_premise": false,
+   "should_keep": "drop",
+   "rationale": "the reason's 'marketing' describes the subject (food imagery, ad-tech audience sizing, a thread about a product's marketing); the item is off-topic or forum talk",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1827": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "rationale": "The Verge reporting Anthropic's Claude Fable 5.1 launch: a major model release from an independent outlet",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2399": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "rationale": "The Verge on schools and Big Tech's education playbook: education policy for this audience",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2190": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "The Verge on Meta's Muse agent launch: a major lab's product, consumer-leaning",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2825": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "The Verge on Claude Code's cloud Projects: a notable agent-tool update",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2456": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "The Verge on Meta Muse's privacy behavior: safety reporting and analysis",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2967": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "The Verge on Meta Muse's privacy behavior: safety reporting and analysis",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1969": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "The Verge on AI features in Google Workspace and ChatGPT: relevant to everyday faculty use, but minor feature news",
+   "confidence": "low",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2253": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "The Verge on AI features in Google Workspace and ChatGPT: relevant to everyday faculty use, but minor feature news",
+   "confidence": "low",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1811": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1900": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1903": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2200": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2395": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2669": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2670": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2800": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3019": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3160": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3234": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3286": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3287": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3289": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Verge consumer-product or corporate story: off-topic or minor for this audience, but never vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1878": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "rationale": "Ars Technica reporting a Google model release (Gemini 3.8 Flash): preferred content",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2604": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "Ars Technica consumer-product news: off-topic for this audience, but not marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2849": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "Ars Technica consumer-product news: off-topic for this audience, but not marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3225": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "Ars Technica consumer-product news: off-topic for this audience, but not marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1813": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "IEEE Spectrum editorial on renting out spare compute: consumer topic, not sponsored",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1869": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "Inside Higher Ed opinion piece on preparing students for AI: an editorial, not marketing; generic but on-topic for educators",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2182": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "MIT Technology Review profile of an AI researcher's startup",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2718": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "Simon Willison's own tool note and a quote post: minor, but not a vendor's channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2939": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "Simon Willison's own tool note and a quote post: minor, but not a vendor's channel",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2650": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "independent podcasts interviewing executives about AI adoption: not the company's own channel; business-leaning for this audience",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3609": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "independent podcasts interviewing executives about AI adoption: not the company's own channel; business-leaning for this audience",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2823": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "independent podcasts interviewing executives about AI adoption: not the company's own channel; business-leaning for this audience",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2369": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "Practical AI episode on computer-use agents: independent discussion, not promotion",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1839": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "The AI Daily Brief analysing OpenClaw 2.0: independent commentary, called the product's own channel",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2856": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "rationale": "AI in Education Podcast interview on AI in education: on-topic, not promotional",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2152": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "The Medical Futurist's own analysis pieces: commentary from a recognized medical futurist, not promotion of a product",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2153": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "The Medical Futurist's own analysis pieces: commentary from a recognized medical futurist, not promotion of a product",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3031": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Medical Futurist listicles: the listicle rule applies, but they are not vendor marketing",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3032": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "The Medical Futurist listicles: the listicle rule applies, but they are not vendor marketing",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1961": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "rationale": "hands-on test of a real model release by an independent reviewer; a sponsor segment is not vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1960": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "rationale": "hands-on test of a real model release by an independent reviewer; a sponsor segment is not vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1959": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "rationale": "hands-on test of a real model release by an independent reviewer; a sponsor segment is not vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3122": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "rationale": "hands-on test of a real model release by an independent reviewer; a sponsor segment is not vendor marketing",
+   "confidence": "high",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1962": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "independent news video on a new top model; hype-styled but real subject",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2683": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "commentary on Dario Amodei's essay; the sponsor read is not vendor marketing",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2927": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "independent take on a product (Jev); Zapier sponsorship, not the vendor's channel",
+   "confidence": "low",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3332": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "use-case listicle for one product; not the vendor's channel, but thin",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2533": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "IBM Technology explainer or news commentary: the rules make corporate explainers education, not marketing; general-audience relevance varies",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2600": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "IBM Technology explainer or news commentary: the rules make corporate explainers education, not marketing; general-audience relevance varies",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3044": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "IBM Technology explainer or news commentary: the rules make corporate explainers education, not marketing; general-audience relevance varies",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3125": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "IBM Technology explainer or news commentary: the rules make corporate explainers education, not marketing; general-audience relevance varies",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3224": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "IBM Technology explainer or news commentary: the rules make corporate explainers education, not marketing; general-audience relevance varies",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2738": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "IBM Technology explainer or news commentary: the rules make corporate explainers education, not marketing; general-audience relevance varies",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "1877": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "borderline",
+   "rationale": "IBM Technology explainer or news commentary: the rules make corporate explainers education, not marketing; general-audience relevance varies",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "3460": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "keep",
+   "rationale": "IBM explainer on hidden data exposure in AI use: AI-literacy education relevant to anyone handling sensitive data",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2368": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "IBM developer explainer (GPU analytics, legacy code, MLflow): education, not marketing, but off-topic for this audience",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2664": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "IBM developer explainer (GPU analytics, legacy code, MLflow): education, not marketing, but off-topic for this audience",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  },
+  "2821": {
+   "set": "B",
+   "false_premise": true,
+   "should_keep": "drop",
+   "rationale": "IBM developer explainer (GPU analytics, legacy code, MLflow): education, not marketing, but off-topic for this audience",
+   "confidence": "medium",
+   "labelled_by": "by hand against prompts/curator.md"
+  }
+ }
+}
