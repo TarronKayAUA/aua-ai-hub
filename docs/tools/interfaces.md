@@ -80,7 +80,7 @@ Model names go stale faster than anything else on this page; treat these as a sn
 - **Anthropic:** Claude Code and Cowork run the Claude family.
     - **Claude Opus 5.5** (released September 22, 2026) is Anthropic's recommended starting point for most work and Claude Code's default model on paid plans; Anthropic reports it matches Claude Fable 5.1 on most work at a lower price.
     - **Claude Fable 5.1** (released September 1, 2026) remains Anthropic's model for demanding reasoning and long-running agent work. It is available on every paid plan but never the default: you select it explicitly (in Claude Code with `/model`); Max plans include it for up to half of weekly usage, and on Pro plans it draws on usage credits.
-    - **Claude Sonnet 5** is the faster, lower-cost tier; Anthropic says Sonnet 5.5 and Haiku 5.5 will follow in the coming weeks.
+    - **Claude Sonnet 5.5** (released September 28, 2026) is the faster, lower-cost tier, succeeding Sonnet 5; Anthropic says Haiku 5.5 will follow.
     - When Opus 5.5 or Fable 5.1 flags a request as biology or cybersecurity work, Claude Code re-runs it on an older Claude model and notes the switch in the transcript; researchers working with biomedical material should expect to see this.
 - **OpenAI:** ChatGPT runs two model generations side by side, and which one you meet depends on which part of ChatGPT you use.
     - **Chat**, the everyday conversation view, runs GPT-5.6. Paid plans get GPT-5.6 Sol under a Thinking slider (Instant, Medium, and High; Pro, Business, and Enterprise plans add Extra High and a Pro option, which includes GPT-6 Pro, powered by GPT-6 Astra). Free and Go plans get GPT-5.6 Luna, the fastest and lowest-cost model.
