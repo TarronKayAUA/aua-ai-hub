@@ -1422,6 +1422,11 @@ def call_anthropic(system: str, user: str, cfg: dict, timeout: int) -> str:
     if cfg.get("fallback_model"):
         headers["anthropic-beta"] = "server-side-fallback-2026-06-01"
         body["fallbacks"] = [{"model": cfg["fallback_model"]}]
+    # Effort level for models that take one (Claude 5 generation), set per
+    # task in feeds.yaml: thinking and replies draw on max_tokens together,
+    # so a low level keeps a structured task quick and its bill small.
+    if cfg.get("effort"):
+        body["output_config"] = {"effort": cfg["effort"]}
     resp = requests.post(cfg["endpoint"], headers=headers, json=body,
                          timeout=timeout)
     resp.raise_for_status()
@@ -1476,7 +1481,8 @@ def resolve_task_llm(config: dict, task: str):
             and os.environ.get("ANTHROPIC_API_KEY")):
         cfg = dict(llm_cfg["anthropic"])
         for key in ("model", "fallback_model", "max_tokens",
-                    "refusal_fallback_models"):
+                    "refusal_fallback_models", "effort",
+                    "request_timeout_seconds"):
             if spec.get(key):
                 cfg[key] = spec[key]
         return "anthropic", call_anthropic, cfg
@@ -1599,12 +1605,12 @@ def curate_llm(fresh: list, config: dict, verbose: bool):
     or None when the LLM path failed and keyword mode should run instead."""
     llm_cfg = config["llm"]
     categories = {k: v["label"] for k, v in config["categories"].items()}
-    timeout = llm_cfg["request_timeout_seconds"]
 
     system = CURATOR_PROMPT_PATH.read_text(encoding="utf-8")
     provider, call, cfg = resolve_task_llm(config, "curation")
     if call is None:
         return None
+    timeout = cfg.get("request_timeout_seconds", llm_cfg["request_timeout_seconds"])
 
     ordered = sorted(fresh, key=lambda i: -i.score)[: llm_cfg["max_candidates"]]
     # Topic vocabularies ride in the payload so the curator can tag each
@@ -1708,11 +1714,11 @@ def curate_llm_media(fresh_media: list, media_label: str, max_keep: int,
     (keyword fallback)."""
     llm_cfg = config["llm"]
     categories = {k: v["label"] for k, v in config["categories"].items()}
-    timeout = llm_cfg["request_timeout_seconds"]
     system = CURATOR_PROMPT_PATH.read_text(encoding="utf-8")
     provider, call, cfg = resolve_task_llm(config, "curation")
     if call is None:
         return None
+    timeout = cfg.get("request_timeout_seconds", llm_cfg["request_timeout_seconds"])
 
     ordered = sorted(fresh_media, key=lambda i: -i.published.timestamp())[:60]
     by_id, payload = _pack_candidates(

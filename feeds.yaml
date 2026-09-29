@@ -87,9 +87,30 @@ llm:
   # payload; dry-run curation against the incumbent on the same
   # candidates; and dispatch model-compare.yml for the briefs.
   tasks:
+    # Curation moved to Sonnet 5.5 at low effort on 2026-09-29, a stopgap
+    # until Haiku 5.5 ships (owner approved). A backtest replayed 278 real
+    # September candidates through five curator versions, three samples
+    # each, and scored them against fact-checked labels
+    # (scripts/compare_curation_models.py, model-compare.yml task
+    # curation). Haiku 4.5, whose knowledge ends in February 2025, kept 35%
+    # of the items that should have been kept and repeated a false
+    # "unreleased model" premise in 44% of its drops, and neither a
+    # knowledge-cutoff rule in the prompt, longer video text, nor the run
+    # date with the names this site tracks brought it past 39%. Sonnet 5.5
+    # kept 92%, repeated the premise in 10%, and made no refusals or
+    # truncations in 75 calls. Measured cost at September's volume: about
+    # $3.76 a month against $1.31 (its tokenizer counts about 40% more
+    # tokens for the same text, so it is 2.9x, not 2x). When Haiku 5.5
+    # ships, add it as an arm, rerun the backtest, and switch back if it
+    # matches. max_tokens is explicit because thinking draws on it; the
+    # timeout covers a rare 120-candidate catch-up run (calls averaged
+    # about 5 seconds in the backtest).
     curation:
       provider: anthropic
-      model: claude-haiku-4-5
+      model: claude-sonnet-5-5
+      effort: low
+      max_tokens: 16000
+      request_timeout_seconds: 180
     # Weekly digest selection: picks the week's highlights for the emailed
     # digest, one call per week, so the Sonnet premium costs pennies a
     # month. claude-sonnet-5 pricing re-verified against the live docs
