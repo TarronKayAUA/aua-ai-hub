@@ -205,9 +205,10 @@ class Block:
         # the list it was, so it is placed as the list was.
         if t == "div" and "door-rows" in c:
             return "prose"
-        # Sections stacked beside an Island Night picture (layout_art.py, the About page): one
-        # block, placed whole on a row of its own.
-        if t == "div" and "isl-stack" in c:
+        # Sections stacked beside an Island Night picture (layout_art.py, the About page), or a
+        # reading page's title and lede beside one (`section: _head`, Courses and Resources since
+        # 2026-09-29): one block, placed whole on a row of its own.
+        if t == "div" and c & {"isl-stack", "isl-head"}:
             return "stack"
         if t == "div" and len(re.findall(r"<h2\b", self.html)) >= 2 and not self._grid():
             return "terms"

@@ -2402,7 +2402,9 @@
       const text = fig.dataset.fit === 'text' ? fig.parentElement.querySelector(':scope > .isl-head__text, :scope > .isl-stack__text') : null;
       // The caption beneath takes its line from the picture, so nothing beside or below it moves.
       const c = capH();
-      const H = text ? Math.floor(Math.max(120, text.getBoundingClientRect().height)) - c
+      // A fitted picture raised to a breadcrumb above the title (layout-art.css) grows by that height.
+      const lift = text ? Math.max(0, -parseFloat(getComputedStyle(fig).marginTop) || 0) : 0;
+      const H = text ? Math.floor(Math.max(120, text.getBoundingClientRect().height + lift)) - c
         : aspect ? Math.floor(clamp(W * aspect, 180, 700)) - c
           : Math.floor(clamp(Math.min(W * 1.02, innerHeight - 5.5 * rem - 24), 320, 820)) - c;
       const key = W + 'x' + H;
