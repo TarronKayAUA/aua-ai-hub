@@ -13,6 +13,10 @@ Versions ("arms"), all on the same candidates in the same batches:
   incumbent-long  as incumbent-new, with 400 characters of each video description instead of the 150 the
                   pipeline's video normalizer keeps
   sonnet55-low    claude-sonnet-5-5 at low effort, with prompts/curator.md
+  incumbent-dated (only when named with --arms) as incumbent-new, with the context the production payload lacks:
+                  the run date, each candidate's date, and the model and tool names the site already tracks
+                  (the LiveBench table, data/open_models.yaml, data/tools.yaml), so the model need not assume
+                  that "now" is its training cutoff
 
 Fidelity: candidates are packed by the pipeline's own _pack_candidates with the feeds.yaml limits, news calls
 carry the topic vocabularies as in curate_llm, answers go through the production parse_curator_json with the
@@ -33,6 +37,7 @@ import hashlib
 import json
 import os
 import random
+import re
 import sys
 import threading
 import time
@@ -58,6 +63,7 @@ PRICES = {"claude-haiku-4-5": (1.0, 5.0), "claude-sonnet-5-5": (2.0, 10.0)}
 BATCH = {"news": 12, "videos": 12, "podcasts": 8}
 RETRYABLE = {429, 500, 502, 503, 504, 529}
 ABORT = threading.Event()
+TRACKED: list = []
 
 
 def load_prompts() -> dict:
@@ -80,7 +86,27 @@ def arms_from(config: dict) -> dict:
         "incumbent-long": dict(model=incumbent, prompt="new", video_chars=400),
         "sonnet55-low": dict(model="claude-sonnet-5-5", prompt="new", video_chars=150, effort="low",
                              max_tokens=16000),
+        "incumbent-dated": dict(model=incumbent, prompt="new", video_chars=150, dated=True),
     }
+
+
+DEFAULT_ARMS = ["incumbent-old", "incumbent-new", "incumbent-long", "sonnet55-low"]
+
+
+def tracked_names() -> list:
+    """Model and tool names the site already tracks, read from its own data at run time."""
+    names = []
+    lb = REPO / "includes" / "livebench.md"
+    if lb.exists():
+        for line in lb.read_text(encoding="utf-8").splitlines():
+            m = re.match(r"\|\s*\d+\s*\|\s*([^|]+?)\s*\|", line)
+            if m:
+                names.append(m.group(1))
+    for rel in ("data/open_models.yaml", "data/tools.yaml"):
+        for entry in yaml.safe_load((REPO / rel).read_text(encoding="utf-8")) or []:
+            if isinstance(entry, dict) and entry.get("name"):
+                names.append(entry["name"])
+    return sorted(set(names), key=str.lower)
 
 
 def batches_of(items: list, seed: int) -> list:
@@ -93,7 +119,7 @@ def batches_of(items: list, seed: int) -> list:
     return out
 
 
-def build_payload(batch: list, media: str, video_chars: int, config: dict):
+def build_payload(batch: list, media: str, video_chars: int, config: dict, dated: bool = False):
     acfg = config["llm"]["anthropic"]
     objs = []
     for it in batch:
@@ -110,6 +136,15 @@ def build_payload(batch: list, media: str, video_chars: int, config: dict):
     if media == "news" and config.get("topics"):
         obj = json.loads(payload)
         obj["topic_vocabularies"] = config["topics"]
+        payload = json.dumps(obj, ensure_ascii=False)
+    if dated:
+        obj = json.loads(payload)
+        for k, entry in enumerate(obj["candidates"]):
+            entry["published"] = batch[k]["first_seen"][:10]
+        obj = {"run_date": max(i["first_seen"][:10] for i in batch),
+               "note": "These candidates are recent. Many name models and products released after your training "
+                       "data ends; tracked_names lists ones this site already tracks as real.",
+               "tracked_names": TRACKED, **obj}
         payload = json.dumps(obj, ensure_ascii=False)
     pos_to_id = {str(k): it["id"] for k, it in enumerate(batch)}
     return payload, pos_to_id
@@ -149,7 +184,8 @@ def call(arm: dict, system: str, user: str, config: dict) -> dict:
 
 def run_job(job: dict, prompts: dict, config: dict, categories: dict) -> dict:
     arm = job["arm_cfg"]
-    payload, pos_to_id = build_payload(job["batch"], job["media"], arm["video_chars"], config)
+    payload, pos_to_id = build_payload(job["batch"], job["media"], arm["video_chars"], config,
+                                       dated=arm.get("dated", False))
     system = prompts[arm["prompt"]]
     rec = {"arm": job["arm"], "rep": job["rep"], "batch": job["bidx"], "media": job["media"], "model": arm["model"],
            "n": len(pos_to_id), "attempts": [], "decisions": []}
@@ -193,7 +229,7 @@ def cost_of(model: str, usage: dict) -> float:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n", 1)[0])
-    ap.add_argument("--arms", nargs="*", help="arm names (default: all)")
+    ap.add_argument("--arms", nargs="*", help="arm names (default: " + " ".join(DEFAULT_ARMS) + ")")
     ap.add_argument("--repeat", type=int, default=1)
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--limit", type=int, default=0, help="only the first N batches (smoke test)")
@@ -206,7 +242,8 @@ def main() -> int:
     items = fixture["items"]
     prompts = load_prompts()
     arms = arms_from(config)
-    chosen = args.arms or list(arms)
+    TRACKED[:] = tracked_names()
+    chosen = args.arms or DEFAULT_ARMS
     unknown = [a for a in chosen if a not in arms]
     if unknown:
         raise SystemExit(f"unknown arms: {unknown}; known: {list(arms)}")

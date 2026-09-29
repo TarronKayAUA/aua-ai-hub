@@ -46,6 +46,10 @@ on:
         description: "Samples per model per category"
         required: false
         default: "1"
+      arms:
+        description: "Curation only: space-separated versions to run (blank runs the default four)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -109,7 +113,13 @@ jobs:
         if: inputs.task == 'curation'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/compare_curation_models.py --repeat ${{ inputs.repeat }} --out curation-backtest.json
+          ARMS: ${{ inputs.arms }}
+        run: |
+          ARGS="--repeat ${{ inputs.repeat }} --out curation-backtest.json"
+          if [ -n "$ARMS" ]; then
+            ARGS="$ARGS --arms $ARMS"
+          fi
+          python scripts/compare_curation_models.py $ARGS
       - name: Upload the backtest decisions
         if: always() && inputs.task == 'curation'
         uses: actions/upload-artifact@v7

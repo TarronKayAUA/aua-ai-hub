@@ -1,5 +1,5 @@
 {
- "description": "September 2026 curation candidates: set A, drops blamed on speculation or unreleased subjects (87); set B, drops blamed on marketing (120); set C, controls (40 kept, 40 other drops, seeded draw). Built 2026-09-29 from data/seen_items.json at main f91cee2; text recovered from each item's own feed where it still carried it, else its page; exact_title means the title's hash equals the ledger's stored title_hash.",
+ "description": "September 2026 curation candidates: set A, drops blamed on speculation or unreleased subjects (87); set B, drops blamed on marketing (120); set C, controls (40 kept, 40 other drops, seeded draw). Plus x3536 and x3613, the two items un-seen that day (added after the first run). Built 2026-09-29 from data/seen_items.json at main f91cee2; text recovered from each item's own feed where it still carried it, else its page; exact_title means the title's hash equals the ledger's stored title_hash.",
  "seed": 20260929,
  "items": [
   {
@@ -982,7 +982,7 @@
    "id": "3418",
    "set": "A",
    "media": "news",
-   "source": "washingtonsun.com",
+   "source": "Hacker News (LLM, 100+ points)",
    "feed_category": "general_ai",
    "title": "Classified Estimates Show the NSA Is Paying Billions to Test AI Models",
    "summary": "The price tag is significantly higher than previously known.",
@@ -992,13 +992,14 @@
    "orig_kept": false,
    "orig_reason": "rumor and classified speculation without substantive reporting",
    "exact_title": true,
-   "recovery": "page"
+   "recovery": "page",
+   "note": "Hacker News item; hnrss.org returned 502 during recovery, so the summary is the linked page's description, not the HN item text the curator saw"
   },
   {
    "id": "3430",
    "set": "A",
    "media": "news",
-   "source": "mouse.dev",
+   "source": "Hacker News (LLM, 100+ points)",
    "feed_category": "general_ai",
    "title": "Is Meta’s Muse secretly running an OpenAI model? | Mouse",
    "summary": "While Muse was building my website, one subagent ran on a model called azure/muse-special. So I dug through the filesystem again.",
@@ -1008,7 +1009,8 @@
    "orig_kept": false,
    "orig_reason": "rumors about unreleased models",
    "exact_title": false,
-   "recovery": "page"
+   "recovery": "page",
+   "note": "Hacker News item; hnrss.org returned 502 during recovery, so the summary is the linked page's description, not the HN item text the curator saw"
   },
   {
    "id": "3435",
@@ -1414,7 +1416,7 @@
    "id": "1887",
    "set": "B",
    "media": "news",
-   "source": "multiversecomputing.com",
+   "source": "Hacker News (LLM, 100+ points)",
    "feed_category": "general_ai",
    "title": "Introducing Quasar 438B: Europe's Leading AI Model",
    "summary": "Quasar sets a new benchmark for European AI, outperforming comparable European models on seven of eight selected Artificial Analysis evaluations. ...",
@@ -1424,7 +1426,8 @@
    "orig_kept": false,
    "orig_reason": "vendor marketing; Hacker News forum discussion of company announcement",
    "exact_title": false,
-   "recovery": "page"
+   "recovery": "page",
+   "note": "Hacker News item; hnrss.org returned 502 during recovery, so the summary is the linked page's description, not the HN item text the curator saw"
   },
   {
    "id": "1900",
@@ -3484,7 +3487,7 @@
    "id": "3339",
    "set": "C",
    "media": "news",
-   "source": "artificialanalysis.ai",
+   "source": "Hacker News (LLM, 100+ points)",
    "feed_category": "general_ai",
    "title": "Mercury 2.5 - Intelligence, Performance & Price Analysis | Artificial Analysis",
    "summary": "Analysis of Inception's Mercury 2.5 and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more.",
@@ -3494,7 +3497,8 @@
    "orig_kept": true,
    "orig_reason": "",
    "exact_title": false,
-   "recovery": "page"
+   "recovery": "page",
+   "note": "Hacker News item; hnrss.org returned 502 during recovery, so the summary is the linked page's description, not the HN item text the curator saw"
   },
   {
    "id": "3164",
@@ -4081,7 +4085,7 @@
    "id": "2254",
    "set": "C",
    "media": "news",
-   "source": "ishamf.dev",
+   "source": "Hacker News (LLM, 100+ points)",
    "feed_category": "general_ai",
    "title": "LLM Attention Visualization",
    "summary": "A visualization of the attention mechanism in LLMs.",
@@ -4091,7 +4095,8 @@
    "orig_kept": false,
    "orig_reason": "tool demonstration without significant news or substantive analysis for this audience",
    "exact_title": false,
-   "recovery": "page"
+   "recovery": "page",
+   "note": "Hacker News item; hnrss.org returned 502 during recovery, so the summary is the linked page's description, not the HN item text the curator saw"
   },
   {
    "id": "2426",
@@ -4242,7 +4247,7 @@
    "id": "2581",
    "set": "C",
    "media": "news",
-   "source": "github.com",
+   "source": "Hacker News (LLM, 100+ points)",
    "feed_category": "general_ai",
    "title": "GitHub - anuj0456/OpenArch: PyTorch implementations of modern open-source LLM architectures (Llama, Qwen, DeepSeek, Gemma, GPT-OSS, Kimi, and more), written from scratch for readability and learning, based on Sebastian Raschka's LLM Architecture Gallery.",
    "summary": "PyTorch implementations of modern open-source LLM architectures (Llama, Qwen, DeepSeek, Gemma, GPT-OSS, Kimi, and more), written from scratch for readability and learning, based on Sebastian Rasch...",
@@ -4252,7 +4257,8 @@
    "orig_kept": false,
    "orig_reason": "minor open-source repository announcement without medical education significance",
    "exact_title": false,
-   "recovery": "page"
+   "recovery": "page",
+   "note": "Hacker News item; hnrss.org returned 502 during recovery, so the summary is the linked page's description, not the HN item text the curator saw"
   },
   {
    "id": "2346",
@@ -4307,7 +4313,7 @@
    "id": "3218",
    "set": "C",
    "media": "news",
-   "source": "interconnects.ai",
+   "source": "Hacker News (LLM, 100+ points)",
    "feed_category": "general_ai",
    "title": "The current balance of power in open models",
    "summary": "The expanded form of a testimony I prepared for Congress.",
@@ -4317,7 +4323,8 @@
    "orig_kept": false,
    "orig_reason": "forum linkpost without accessible content; reference to external article only",
    "exact_title": true,
-   "recovery": "page"
+   "recovery": "page",
+   "note": "Hacker News item; hnrss.org returned 502 during recovery, so the summary is the linked page's description, not the HN item text the curator saw"
   },
   {
    "id": "3581",
@@ -4464,6 +4471,40 @@
    "orig_reason": "daily news recap without specific expert analysis or instructive depth for medical educators",
    "exact_title": true,
    "recovery": "feed"
+  },
+  {
+   "id": "x3536",
+   "set": "A",
+   "media": "videos",
+   "source": "Bijan Bowen",
+   "feed_category": "videos",
+   "title": "GPT-6 Luna First Test, Is OpenAI’s CHEAPEST Model Actually Good?",
+   "summary": "Timestamps: 00:00 - Intro 00:52 - First Look 01:36 - Technical Look 02:19 - Test Setup Info 03:12 - Browser OS Test 06:36 - C++ Skate Test 09:41 -…",
+   "raw": "Timestamps:\n\n00:00 - Intro\n00:52 - First Look\n01:36 - Technical Look\n02:19 - Test Setup Info\n03:12 - Browser OS Test\n06:36 - C++ Skate Test\n09:41 - Subway FPS Test\n12:45 - Robot Arm Test\n14:22 - Blender & Godot Wrestling Test\n16:10 - Watch Website Test\n18:40 - C++ Rally Test\n20:30 - Usage Overview\n21:17 - Results Overview\n23:50 - Closing Thoughts\n\nJoin the Discord: https://discord.gg/hfaR2exy7S\n\nIn this video, we take a hands-on look at GPT-6 Luna, testing how OpenAI’s cheapest model performs across a range of practical coding and agentic tasks.\n\nWe test browser-based workflows, C++ game devel",
+   "url": "https://www.youtube.com/watch?v=W9m9S-At4FQ",
+   "first_seen": "2026-09-28T16:46:40.521132+00:00",
+   "orig_kept": false,
+   "orig_reason": "speculation about unreleased model; candidate describes a test of non-existent GPT-6 Luna",
+   "exact_title": true,
+   "recovery": "page",
+   "note": "un-seen from the ledger 2026-09-29 (former index 3536) so the live pipeline re-offers it; not in the first backtest run"
+  },
+  {
+   "id": "x3613",
+   "set": "B",
+   "media": "news",
+   "source": "The Verge AI",
+   "feed_category": "general_ai",
+   "title": "OpenAI launches Dots, its Muse competitor",
+   "summary": "Dots are OpenAI’s answer to Meta’s Muse.",
+   "raw": "Dots are OpenAI’s answer to Meta’s Muse.",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor",
+   "first_seen": "2026-09-29T18:06:29.572556+00:00",
+   "orig_kept": false,
+   "orig_reason": "vendor marketing announcement of product launch without independent evaluation",
+   "exact_title": true,
+   "recovery": "page",
+   "note": "un-seen from the ledger 2026-09-29 (former index 3613); not in the first backtest run; summary is the page's og:description"
   }
  ],
  "excluded": [
