@@ -64,7 +64,13 @@
 }
 
 /* Night's layers (its stars, Milky Way, Moon and afterglow) show in a picture whose clock says Night, and
-   in the dark scheme's gutters, which have no clock; Dusk's show otherwise. */
+   in the dark scheme's gutters, which have no clock; Dusk's show otherwise. After midnight (data-late,
+   island-core.js: midnight to 4:59 by the visitor's clock) the evening's glow is gone (owner, 2026-09-29:
+   "the fade out after midnight"): the afterglow over the sunset point, its reflection, the glitter it lays
+   on the water and the rims it catches on the crests fade out over 1.6 seconds, and stay out until Dawn. */
+.isl :is(.isl-nglow, .isl-aglow, .s-rim) { transition: opacity 1.6s ease-in-out; }
+.isl[data-sky="night"][data-late] :is(.isl-nglow, .isl-aglow, .s-rim) { opacity: 0; }
+@media (prefers-reduced-motion: reduce) { .isl :is(.isl-nglow, .isl-aglow, .s-rim) { transition: none; } }
 .isl .isl-n { display: none; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-n, .isl[data-sky="night"] .isl-n { display: inline; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-d, .isl[data-sky="night"] .isl-d { display: none; }
@@ -78,15 +84,25 @@
 /* SUNSET (owner, 2026-09-28: five versions): each picture's Dusk drawing a few minutes before sunset, the
    Sun just above the horizon wherever the view truly shows it (sunDisc), the sky brighter and warmer, the
    first stars not yet out; Venus and the Moon stay, the lights are coming on. Reddish throughout (owner,
-   2026-09-29: "sunset consistently reddish", Dawn "consistently purplish", Night, Day and Dusk blue):
-   indigo overhead through violet and rose to red-orange at the horizon. */
+   2026-09-29: "sunset consistently reddish", Dawn "consistently purplish", Night, Day and Dusk blue; then,
+   from a mock-up beside Dawn, "yes to the redder sunset"): wine overhead, crimson through the middle,
+   red-orange at the horizon, so it is never taken for Dawn's violet and pink. */
 .isl[data-sky="sunset"] .isl-s { display: inline; }
 .isl[data-sky="sunset"] .isl-dstars { display: none; }
 .isl[data-sky="sunset"] {
-  --isl-sky0: #283d74; --isl-sky1: #5b5690; --isl-sky2: #b86e82; --isl-sky3: #ec8a62; --isl-hz: #ff9e6a;
-  --isl-g1: #ffc996; --isl-g2: #f27c58; --isl-g3: #b25f7c;
-  --isl-sea0: #c4806c; --isl-sea1: #3e5987; --isl-sea2: #1d3a62; --isl-haze: #f2b597;
-  --isl-isl: #74708f; --isl-far: #24466b; --isl-near: #14304f;
+  --isl-sky0: #2e2150; --isl-sky1: #6a2c4e; --isl-sky2: #b8434a; --isl-sky3: #ec6a3c; --isl-hz: #ff9152;
+  --isl-g1: #ffc27e; --isl-g2: #f0603e; --isl-g3: #a8395a;
+  --isl-sea0: #c86a55; --isl-sea1: #4a3f6e; --isl-sea2: #22284f; --isl-haze: #f0a07c;
+  --isl-isl: #4d3558; --isl-far: #24466b; --isl-near: #14304f;
+}
+/* DUSK (owner, 2026-09-29: "dusk should be a little darker across"): from 19:00 the Sun is already well
+   below the horizon in Antigua and the last glow fades by about 19:30, so Dusk is nearly night: a deep
+   navy sky, a low glow in the west, the land darker. The frigatebird darkens with it, so it still reads
+   against the sky. */
+.isl[data-sky="dusk"] {
+  --isl-sky0: #061a30; --isl-sky1: #0a2d4f; --isl-sky2: #154268; --isl-sky3: #3a6488; --isl-hz: #7a93aa;
+  --isl-sea0: #3b5b76; --isl-sea1: #173955; --isl-sea2: #08223b; --isl-haze: #7f93a8;
+  --isl-isl: #1b3450; --isl-far: #102a44; --isl-near: #07182a; --isl-bird: #020912;
 }
 .isl[data-sky="dawn"] .isl-a,
 .isl[data-sky="day"] .isl-y { display: inline; }
@@ -146,7 +162,7 @@
   --isl-sea0: #6b6a98; --isl-haze: #9c86ae; --isl-sky3: #a886ac; --isl-hz: #827ca8;
 }
 .isl.isl-hero:not(.isl-bold)[data-sky="sunset"] {
-  --isl-sea0: #66566e; --isl-haze: #976a6e; --isl-sky3: #b06f66; --isl-hz: #a96a5a;
+  --isl-sea0: #5e4760; --isl-haze: #8f5a5e; --isl-sky3: #a8524a; --isl-hz: #a4553f;
 }
 .isl .isl-shade2 { display: none; }
 .isl.isl-hero:is([data-sky="dawn"], [data-sky="day"], [data-sky="sunset"]) .isl-shade2 { display: inline; }
@@ -160,7 +176,7 @@
   --isl-sky0: #2b3166; --isl-sky1: #4b4988; --isl-sky2: #8f7cb2; --isl-sky3: #d4a4c2;
 }
 .isl.isl-hero[data-sky="sunset"] {
-  --isl-sky0: #222f62; --isl-sky1: #463f78;
+  --isl-sky0: #2a1d48; --isl-sky1: #56264a;
 }
 .isl .isl-veg-bf { fill: var(--isl-far); }
 .isl .isl-veg-bn { fill: var(--isl-near); }

@@ -209,6 +209,7 @@
       const v = planetAt('V', ms), j = planetAt('J', ms);
       SKY.plUp = { V: v.alt > 1 && v.elong > 10, J: j.alt > 1 && j.elong > 12 };
     }
+    SKY.late = ms !== null && new Date(ms - 4 * 3600e3).getUTCHours() < 5;
     return was !== skyNow();
   }
   tonight();
@@ -475,11 +476,13 @@
   }
   /* The afterglow over the sunset point (sky only) and its reflection (water only). */
   function glowSky(v, m, cls) {
+    if (m === 'n') cls += ' isl-nglow';   // gone after midnight (data-late, layout-art.css)
     const [az] = SKY[m].sun, x = v.x(az), p = v.ppd, dusk = m === 'd';
     return `<ellipse class="${cls}" cx="${F(x)}" cy="${F(v.y0)}" rx="${F((dusk ? 75 : 55) * p)}" ry="${F((dusk ? 10 : 6.5) * p)}" fill="url(#islband${m})" clip-path="url(#islsky)"/>`
       + `<ellipse class="${cls}" cx="${F(x)}" cy="${F(v.y0)}" rx="${F((dusk ? 26 : 17) * p)}" ry="${F((dusk ? 6 : 3.6) * p)}" fill="url(#islglow${m})" clip-path="url(#islsky)"/>`;
   }
   function glowSea(v, m, cls, h) {
+    if (m === 'n') cls += ' isl-nglow';
     const [az] = SKY[m].sun, x = v.x(az), p = v.ppd;
     return h > 3 ? `<ellipse class="${cls}" cx="${F(x)}" cy="${F(v.y0)}" rx="${F((m === 'd' ? 16 : 11) * p)}" ry="${F(h)}" fill="url(#islrefl${m})" clip-path="url(#islsea)"/>` : '';
   }
@@ -805,6 +808,7 @@
   }
   function checkSky() {
     if (tonight()) (A.redraw || []).forEach((f) => f());
+    for (const el of skyEls) el.toggleAttribute('data-late', !!SKY.late);
     const s = A.pickSky();
     let turned = false;
     for (const el of skyEls) {
@@ -813,6 +817,7 @@
     if (turned) document.dispatchEvent(new CustomEvent('isl-sky', { detail: s }));
   }
   A.watchSky = function (el) {
+    el.toggleAttribute('data-late', !!SKY.late);
     skyEls.push(el);
     if (skyEls.length > 1) return;
     setInterval(checkSky, 60000);

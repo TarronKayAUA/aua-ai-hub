@@ -127,7 +127,7 @@ The Learn page's picture became the American University of Antigua's own library
 <figcaption>The library on the Learn page by day, in use, and at night, empty but for its lamps. The Moon in the window is the one drawn for a night in October; on another night it has another phase, or is not there at all.</figcaption>
 </figure>
 
-The last thing that was not true was the sky. Every night picture showed the same crescent Moon from that one evening in May, and one shape repeated across eight pages starts to look like a symbol. The Moon now shows its real phase for the visitor's date and appears only when it is actually up over Antigua at that hour, so on a moonless night there is none; Venus and Jupiter follow the same rule. Each still sits where its picture places it, with the Moon's lit side toward that picture's sunset, and the Moon now shows its darker seas, faintly. The positions come from published astronomical formulas, the same ones used for the rest of the sky, and are worked out in the visitor's browser, with nothing to download or update. Before trusting that code, I had it checked against the separate program that computed the rest of the sky, at 400 moments over four years: the two agreed to within a hundredth of a degree, and every time on whether each body was in the sky. Sunset was also made redder and dawn more purple, so the two are not mistaken for each other.
+The last thing that was not true was the sky. Every night picture showed the same crescent Moon from that one evening in May, and one shape repeated across eight pages starts to look like a symbol. The Moon now shows its real phase for the visitor's date and appears only when it is actually up over Antigua at that hour, so on a moonless night there is none; Venus and Jupiter follow the same rule. Each still sits where its picture places it, with the Moon's lit side toward that picture's sunset, and the Moon now shows its darker seas, faintly. The positions come from published astronomical formulas, the same ones used for the rest of the sky, and are worked out in the visitor's browser, with nothing to download or update. Before trusting that code, I had it checked against the separate program that computed the rest of the sky, at 400 moments over four years: the two agreed to within a hundredth of a degree, and every time on whether each body was in the sky. Sunset was also made redder and dawn more purple, so the two are not mistaken for each other; dusk became darker, closer to the real sky at that hour; and after midnight the last of the evening's glow is gone.
 
 ## What It Cost
 
@@ -137,7 +137,7 @@ The first navigation pass used 13 agents and the second 23 (about 3.9 million to
 
 The five times of day came later, on September 28: 20 commits over about seven and a half hours, adding 802 lines and removing 100 across seven files.
 
-The captions, the library and tonight's sky followed on September 29: nine commits over about five hours, adding about 900 lines and removing about 70 across 13 files.
+The captions, the library and tonight's sky followed on September 29: ten commits over about five and a half hours, adding about 940 lines and removing about 75 across 13 files.
 
 My own time was evenings and a very long weekend. I did not measure it.
 

@@ -756,7 +756,7 @@
     // The water: finer ripples, and the afterglow's glitter under the sunset.
     const sunX = v.x(SKY.d.sun[0]);
     s += dashes(hatchList(W, y0, H, r), 's-vrip', 1, [0.1, 0.18, 0.28]);
-    if (sunX > -W * 0.2 && sunX < W * 1.2) s += dashes(streakList(Math.min(W - 10, sunX), y0, H, r, 0.14, 0.1), 's-vglow', 1.3, [0.12, 0.24, 0.42]);
+    if (sunX > -W * 0.2 && sunX < W * 1.2) s += dashes(streakList(Math.min(W - 10, sunX), y0, H, r, 0.14, 0.1), 's-vglow isl-aglow', 1.3, [0.12, 0.24, 0.42]);
     // 1. Montserrat on the horizon, the Soufriere Hills its peak, its western flank rimmed.
     const mont = P([[0.02, 0.6], [0.05, 0.58], [0.075, 0.558], [0.1, 0.535], [0.12, 0.522], [0.14, 0.53], [0.165, 0.552], [0.2, 0.578], [0.23, 0.6]]);
     land += `<path class="f-isl" d="${poly(mont)}"/>`;
