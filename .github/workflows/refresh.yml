@@ -32,6 +32,8 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 35
+    outputs:
+      narration: ${{ steps.narrate.outcome }}
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
@@ -63,7 +65,7 @@ jobs:
             echo "No content changes; skipping commit."
           fi
       - name: Cache narration model
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.cache/aua-narration
           key: narration-model-v1
@@ -71,14 +73,20 @@ jobs:
       # restored last run's stale pathway MP3s over the freshly checked-out
       # committed ones (found 2026-09-02, the live audio lagged a commit).
       - name: Cache generated narration audio
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: |
             docs/assets/audio/news-*
             docs/assets/audio/digest-*
           key: narration-audio-${{ github.run_id }}
           restore-keys: narration-audio-
+      # A narration failure (the Kokoro engine or its install) must not stop
+      # the build: the site deploys with no player on the new briefs, as any
+      # build without news audio does, and the run is failed afterwards by
+      # the narration-failed job so the failure is still reported.
       - name: Narrate news briefs and digest
+        id: narrate
+        continue-on-error: true
         run: |
           pip install -r requirements-narration.txt
           python scripts/narrate.py --check || true
@@ -122,3 +130,18 @@ jobs:
       - id: deployment_final
         if: steps.deployment_retry.outcome == 'failure'
         uses: actions/deploy-pages@v5
+
+  # Runs after the deploy, and only when the news narration step failed: the
+  # site is already live without the new audio, and this fails the run so
+  # the failure is emailed rather than hidden (added 2026-09-28, before the
+  # ubuntu-latest move to Ubuntu 26.04 on 2026-10-19 to 11-19, where the
+  # narration code had never run).
+  narration-failed:
+    needs: [refresh, deploy]
+    if: always() && needs.refresh.outputs.narration == 'failure'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - run: |
+          echo "::error title=News narration failed::The site was built and deployed without new news audio. See the 'Narrate news briefs and digest' step of the refresh job."
+          exit 1

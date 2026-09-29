@@ -1,0 +1,50 @@
+name: Ubuntu 26.04 canary
+
+# A one-off check before GitHub moves the ubuntu-latest label to Ubuntu 26.04
+# (a gradual rollout from 2026-10-19, to finish by 2026-11-19;
+# actions/runner-images#14748). Every other workflow here runs on
+# ubuntu-latest and pins Python 3.13, which 26.04 still carries, but the
+# news narration (Kokoro via onnxruntime, espeak-ng and libsndfile bundled
+# in wheels) had never run there, and 26.04's OpenSSL 3.5 may change how
+# some feed hosts answer. This runs the build half of refresh.yml and
+# deploy.yml on ubuntu-26.04 and, for comparison, on ubuntu-24.04: both
+# requirement files, the news narration, a strict build, and every feed.
+# It commits nothing, deploys nothing, reads no secrets and makes no paid
+# model calls. Manual only (Actions tab, or gh workflow run); delete it
+# once the move is done.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  canary:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-26.04, ubuntu-24.04]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+          cache: pip
+      - run: pip install -r requirements.txt
+      # Restore only: the canary never writes the shared narration caches.
+      - name: Restore narration model
+        uses: actions/cache/restore@v6
+        with:
+          path: ~/.cache/aua-narration
+          key: narration-model-v1
+      - name: Narrate news briefs and digest
+        run: |
+          pip install -r requirements-narration.txt
+          python scripts/narrate.py --only news
+          ls -l docs/assets/audio/news-* docs/assets/audio/digest-* | head -20
+      - run: mkdocs build --strict
+      - name: Check every feed
+        run: python scripts/verify_feeds.py
