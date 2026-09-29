@@ -1,10 +1,10 @@
 ---
-last_reviewed: 2026-09-03
+last_reviewed: 2026-09-29
 ---
 
 # My Favorite Game Was Not a Game
 
-<span class="meta-chip">For anyone evaluating an AI-built system</span><span class="meta-chip">About 14 minutes</span> <span class="meta-note">A worked example from outside medicine, kept here because the measurement problems are the same ones clinical data poses.</span>
+<span class="meta-chip">For anyone evaluating an AI-built system</span><span class="meta-chip">About 18 minutes</span> <span class="meta-note">A worked example from outside medicine, kept here because the measurement problems are the same ones clinical data poses.</span>
 
 The fourth-favorite game of my life, according to software I had commissioned and paid for and was rather proud of, was a frame rate counter.
 
@@ -16,9 +16,9 @@ That single screen is the most useful thing that happened in this project, and e
 
 ## What I Built, and What I Did Not Do
 
-In August 2026 I built a media tracker for my family. It follows films, television, games and books across six people in four countries, tells you the day the thing you are waiting for actually arrives, and answers the question that ruins more evenings than any other: what should we watch tonight, for whoever happens to be in the room.
+In August 2026 I built a media tracker for my family. It follows films, television, games and books across six people in two countries, tells you the day the thing you are waiting for actually arrives, and answers the question that ruins more evenings than any other: what should we watch tonight, for whoever happens to be in the room.
 
-It has been in real use since August. It cost about five dollars a month to run, plus roughly three cents each time it thinks hard about a recommendation.
+It has been in real use since August. It costs about seven and a half dollars a month to run, five for the hosting plan and about two and a half for the AI, plus about six cents each time it thinks hard about a recommendation.
 
 <figure class="figure">
 <img src="../../assets/worked-examples/tracker-pick.jpg" alt="A recommendation for the film Yojimbo, marked Strong match 92, with a written explanation connecting it to films the reader already likes">
@@ -29,13 +29,13 @@ I did not write any of it. Not a line. Across some sixteen hundred messages I ne
 
 | Measure | Value |
 |---|---|
-| Commits in 21 days | 509, with a peak of 60 in a single day |
-| Application code | About 31,000 lines |
-| Test code | About 31,100 lines, 61 suites, 4,795 individual checks |
-| Design and rationale document | 2,849 lines |
+| Commits in 47 days | 732, with a peak of 60 in a single day |
+| Application code | About 64,600 lines: 52,500 of logic, 6,900 drawing the art, 5,100 of styling |
+| Test code | About 51,000 lines, 117 suites, 8,378 individual checks |
+| Design and rationale documents | About 7,900 lines, in 16 documents |
 | Lines of code I wrote | Zero |
 
-The row I want you to look at twice is not the last one. It is the pair in the middle. There is slightly more code checking this system than there is system, and that inversion is not an accident of enthusiasm. It is the entire reason I am able to tell you anything about whether the thing works.
+The row I want you to look at twice is not the last one. It is the pair in the middle. Counting only the logic, and leaving out the code that draws the pictures and styles the pages, the code checking this system is now within three percent of the size of the system itself, and it has been catching up the whole way: in late August it was less than half. That is not an accident of enthusiasm. It is the entire reason I am able to tell you anything about whether the thing works.
 
 ## The Failures That Do Not Announce Themselves
 
@@ -101,7 +101,7 @@ None of these were bugs. That is the part I want to be clear about. Every one of
 
 The most interesting defect in the system turned out to be me.
 
-| Instrument | Negative responses |
+| Instrument | Negative responses (as of early September 2026) |
 |---|---|
 | 935 ratings | Exactly one below the dislike threshold |
 | 575 answers to "want more like this?" | Zero |
@@ -148,6 +148,27 @@ Elsewhere, a feature that blended the model's ranking with the statistical one l
 
 Twice I was convinced the AI prompt was bloated and expensive. Twice a fair race showed the cheaper version was worse. The only saving I ever actually found came from reading the bill instead of reasoning about it: a caching feature designed to make repeated questions cheap had spent 42 cents to save rather less than half a penny, because it turns out every night's question is about a different night.
 
+## What the Benchmarks Could Not Tell Me
+
+In the last week of September two claims arrived at once: a bigger model had come out, and the benchmarks said that letting a model think harder was the sweet spot. Both are claims about an average task. Mine is not an average task, and I had just spent a month learning what happens when I take a flattering number on trust.
+
+So both were raced on the one instrument I do trust: 118 films and shows that had not been released yet, which I had rated "would I watch this?" before any model saw them. Every contender got the same forty titles per round, over ten rounds, and was scored on how many of its top five I had said yes to. The rule for switching was written down first: a gain counts only if chance cannot explain it.
+
+| Model, effort | Top five I would watch | Price per pick | Output tokens | Against Sonnet 5.5, low (95% range) |
+|---|---|---|---|---|
+| Sonnet 5.5, low | 4.10 of 5 | 4.32¢ | 981 | Baseline |
+| Sonnet 5.5, medium | 3.90 of 5 | 4.41¢ | 1,069 | −0.20 (−0.86 to +0.46) |
+| Sonnet 5.5, high | 3.60 of 5 | 5.25¢ | 1,912 | −0.50 (−1.01 to +0.01) |
+| Sonnet 5, low | 3.80 of 5 | 4.96¢ | 1,625 | −0.30 (−0.65 to +0.05) |
+| Opus 5.5, low | 3.50 of 5 | 9.43¢ | 1,378 | −0.60 (−0.97 to −0.23) |
+| Opus 5.5, high (estimate) | Not tested | About 12¢ (11 to 14¢) | About 2,700 | Not run |
+
+All three models are Anthropic's Claude models. Prices are per pick, computed from the token counts returned with each call. The Sonnet 5 and Opus rows were run five days earlier, on the same titles with the same prompt code. Opus 5.5 at high effort was estimated rather than run, because high effort had not helped Sonnet. The whole effort race cost $1.88.
+
+Thinking harder did not help. High effort never beat low effort in a single round, cost a fifth more, and took twice as long. The biggest model came last, at more than twice the price. The best line in the table, and the cheapest, was simply the newer version of the same mid-sized model, though its lead over the old one is small enough that chance could explain it.
+
+The smaller finding mattered more to me than the table. Run twice on the same titles, the same model agrees on about four of its five picks. I had never measured that, and it means any gap of a few tenths is noise. Without that one number I would have read every difference in the table as a result.
+
 ## What I Never Handed Over
 
 Nearly everything technical was delegated. The database, the deployment, the statistics, the tests, the styling, the choice of platform, the wording of every prompt.
@@ -163,6 +184,17 @@ Where a failure lands stayed with me. Asked once to raise an image size limit te
 And what the family is asked to do stayed with me, mostly because I kept watching them not do it. My father, an engineer in his seventies, clicked straight through the onboarding without reading a word of it, then took an uncomfortably long time to find the button I was verbally telling him to press. I am also, obviously, the worst possible judge of whether any of it is intuitive, having helped build the thing.
 
 Last, and least comfortably: the facts about myself that invalidate the data. That I only watch things I have already researched, so my ratings bunch up at the top of the scale. That I essentially never rewatch anything, which makes "would you watch it again" a useless question to ask me. No amount of analysis would have recovered either of those. They had to be confessed.
+
+## The Pictures Were Written, Not Generated
+
+The tracker's margins carry seven night scenes: a harbor, a city bridge, a snowbound cabin, rain over rooftops, a night train, an abstract field of starlight, and one that began as a study drawn for this very website, the view from Antigua's west coast toward Montserrat. None of them came out of an image generator. Every line is code an agent wrote, and the page draws the picture fresh for your screen, the hour, and tonight's actual moon.
+
+<figure class="figure">
+<img src="../../assets/worked-examples/tracker-scene-island.jpg" alt="A night seascape from a headland on Antigua's west coast, looking over a calm sea to the dark outlines of Montserrat, Redonda and Nevis, under a bright moon and stars.">
+<figcaption>Not an image model: every line of this is code an agent wrote, drawn fresh for the viewer's screen, the hour, and tonight's real moon.</figcaption>
+</figure>
+
+That was not an aesthetic choice. A generated image is a claim you can only look at. Code can be checked: the big changes to the scenes were tested by drawing every scene before and after and comparing the results byte for byte, 3,408 drawings in one review. And one drawing serves every screen size, every hour and every phase of the moon, where a generated picture would need a new file for each. The Hub's [AI-Generated Images in Teaching](../playbooks/ai-images.md) playbook covers the same question for teaching figures.
 
 ## What Transfers
 
