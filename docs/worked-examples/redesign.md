@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-28
+last_reviewed: 2026-09-29
 ---
 
 # When Every Design Passes
