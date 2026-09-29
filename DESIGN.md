@@ -622,6 +622,7 @@ Cautions learned in review: lit and shaded planes (`facets`) must follow real fa
 - **Every light is a set**: the light itself (`f-pulse` or a nav colour), its halo, and its column on the water or pool on the ground.
 - **The pass tells a small story**, then everything is still: group lights in the order a viewer would see them come on (`class="isl-vwin"` with `--i`), slow the steps where the order matters (`--isl-vstep`, 0.6s on the lamp-lit steps), and let the focal light come last (`isl-vlast`). The owner's example: the lanterns light from the foot of the steps to the top, then the lookout's windows.
 - **Motion budget**: opacity and transform only, one pass, nothing looping; with reduced motion the still frame at once.
+- **By Day no light comes on** (owner, 2026-09-29: windows that "pop in" by day make no sense): the lights' part of the pass is skipped when the version is Day (layout-art.css), so daylight windows and unlit lamps are simply there; motion that is not light, such as Betty's Hope's sails, still plays.
 
 ### 19.5 The review loop (never show the owner a first draft)
 

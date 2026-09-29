@@ -561,6 +561,10 @@
 .isl .isl-lbag3 { fill: var(--isl-lbag3); }
 .isl .isl-lbagp { fill: #ffffff; fill-opacity: 0.1; }
 .isl .isl-lbagh { stroke: var(--isl-lbag2); fill: none; stroke-linecap: round; }
+.isl :is(.isl-lbag1s, .isl-lbag2s, .isl-lbag3s) { fill: none; stroke-linecap: round; }
+.isl .isl-lbag1s { stroke: var(--isl-lbag1); }
+.isl .isl-lbag2s { stroke: var(--isl-lbag2); }
+.isl .isl-lbag3s { stroke: var(--isl-lbag3); }
 .isl .isl-ledge { stroke: #ffe2c4; stroke-opacity: 0.28; fill: none; }
 .isl .isl-llap2 { fill: var(--isl-lchair2); }
 .isl .isl-lgutter { stroke: var(--isl-lchair2); stroke-opacity: 0.6; fill: none; }
@@ -785,6 +789,11 @@
 .isl-vig.isl-vrun .isl-vglow,
 .isl-vig.isl-vrun .isl-vlamps,
 .isl-vig.isl-vrun .isl-vspill { animation: isl-vlight 1.2s ease-out 1.2s both; }
+/* By Day no light comes on (owner, 2026-09-29: the windows "pop in" by day, "which doesn't quite make
+   sense"): the windows are daylight glass, the lamps unlit, so the lights' part of the pass is left out and
+   they are simply there. The card's fade and Betty's Hope's sails still move. */
+.isl-hero.isl-run[data-sky="day"] :is(.isl-vwin, .isl-vglow, .isl-vlamps),
+.isl-vig.isl-vrun[data-sky="day"] :is(.isl-vwin, .isl-vglow, .isl-vlamps, .isl-vspill) { animation: none; }
 @keyframes isl-vfade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes isl-vlight { from { opacity: 0.12; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) {
