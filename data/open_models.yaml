@@ -27,6 +27,25 @@
   last_reviewed: 2026-09-01
   blurb: IBM's open-weight family, built for tool calling and agent work at sizes that run on ordinary hardware. The 4.2 release comes in 3 billion, 8 billion, and 30 billion parameter versions under Apache 2.0, with quantized builds published alongside for lower-memory machines.
 
+# Added 2026-09-29 (tool discovery issue #52, owner approved). License
+# apache-2.0 read via the Hugging Face API that day from the card tags on
+# allenai/Olmo-3-7B-Instruct (created 2025-11-19) and
+# allenai/Olmo-3.1-32B-Instruct (created 2025-12-10); both cards add that
+# the models are "intended for research and educational use in accordance
+# with Ai2's Responsible Use Guidelines". Sizes from allenai.org/olmo the
+# same day: Base, Think, and Instruct at 7B and 32B, the 32B chat and
+# reasoning models refreshed as Olmo 3.1 in December 2025. No newer Olmo
+# language family is published under the allenai org (Olmo-Hybrid-7B,
+# January 2026, is a research variant). Ai2 spells the name "Olmo" since
+# Olmo 3; "a Seattle based non-profit AI research institute" is from
+# allenai.org/about. The tracing tool is OlmoTrace, listed on the Olmo page.
+- name: Olmo 3
+  vendor: Allen Institute for AI (Ai2)
+  url: https://allenai.org/olmo
+  license: Apache 2.0
+  last_reviewed: 2026-09-29
+  blurb: A fully open language model family from the Allen Institute for AI (Ai2), a Seattle nonprofit, which publishes the training data, training code, and intermediate checkpoints alongside the weights, so researchers can study how the model was built and trace its output back to the training data. Released in 7 billion and 32 billion parameter versions, each with a chat (Instruct) and a step-by-step reasoning (Think) variant, under Apache 2.0.
+
 - name: Llama 4
   vendor: Meta
   url: https://www.llama.com
@@ -190,15 +209,36 @@
   last_reviewed: 2026-06-12
   blurb: Tencent's open-weight video model, designed for natural motion and physics such as fluids, cloth, and object interactions.
 
-# License verified 2026-07-15 from the LTX-2 model card tag
-# (ltx-2-community-license-agreement).
+# License first verified 2026-07-15 from the LTX-2 model card tag
+# (ltx-2-community-license-agreement). Updated 2026-09-29 (tool discovery
+# issue #52, owner approved), all read that day via the Hugging Face API and
+# the Lightricks/LTX-2 GitHub repo. Link moved from Lightricks/LTX-2 to
+# Lightricks/LTX-2.3 (created 2026-03-04, ungated; the LTX-2 card's own
+# new_version field points to it). The 2.3 card tag is unchanged: license
+# other, license_name ltx-2-community-license-agreement, linked to
+# LICENSE-2 (dated January 5, 2026), so the license field stays. The repo's
+# LICENSE index says that license covers "all LTX-2 versions released since
+# January 5, 2026, including LTX-2.3 until August 11, 2026". LTX-2.5
+# (created 2026-07-23, the current flagship) was NOT linked: its card tag is
+# a different license, ltx-2.x-community-license-agreement (LICENSE-2_x,
+# dated August 11, 2026), and it is gated behind a Hugging Face sign-in
+# whose "Agree and Access" text includes consent to offers and personalized
+# advertising. The old "free for academic use" was wrong: neither license
+# mentions academic or educational use. LICENSE-2 section 2: "Entities with
+# annual revenues of at least $10,000,000 ... are required to obtain a paid
+# commercial use license", with revenue counted across subsidiaries and
+# affiliates. LICENSE-2_x keeps the threshold but lets larger organizations
+# use it unpaid "solely for a Non-Commercial Purpose" (testing, evaluation,
+# or non-commercial research in a non-production environment). The 22B
+# size is from the 2.3 checkpoint names (ltx-2.3-22b-dev); the LTX-Video
+# sentence was dropped because a 22B model does not fit "modest hardware".
 - name: LTX-2
   vendor: Lightricks
-  url: https://huggingface.co/Lightricks/LTX-2
+  url: https://huggingface.co/Lightricks/LTX-2.3
   license: LTX-2 Community License
   modality: video
-  last_reviewed: 2026-07-15
-  blurb: Open-weight video family generating synchronized audio and video, free for academic use under its community license. Succeeds the earlier LTX-Video model known for running on modest hardware.
+  last_reviewed: 2026-09-29
+  blurb: Lightricks' open-weight family that generates video with synchronized sound in a single model; the version linked, LTX-2.3, has 22 billion parameters and runs locally in ComfyUI. Free under its community license for organizations with annual revenue under US$10 million, counted together with affiliated companies; larger organizations need a paid license from Lightricks, and the license makes no exception for academic use. The newer LTX-2.5 uses a separate license with the same revenue threshold and requires signing in to Hugging Face to download.
 
 # --- Music and audio (owner approved 2026-06-12) ----------------------------
 
@@ -220,13 +260,67 @@
   last_reviewed: 2026-07-15
   blurb: Generates music, sound effects, and production elements from text, with structured compositions up to several minutes. The small and medium weights are open on Hugging Face; the largest model is not released.
 
+# Updated 2026-09-29 (tool discovery issue #52, owner approved), read that
+# day via the Hugging Face and GitHub APIs. Moved from ACE-Step v1 3.5B
+# (ACE-Step/ACE-Step-v1-3.5B, created 2025-04-28, card tag apache-2.0, 0
+# downloads in the last 30 days) to ACE-Step 1.5 (ACE-Step/Ace-Step1.5,
+# created 2026-01-23). The license changed with the version: the 1.5 card
+# tag is mit, as are the 1.5 XL (4B, 2026-04-02) and 5Hz language-model
+# repos, and the GitHub repo ace-step/ACE-Step-1.5 is MIT. Blurb facts from
+# the 1.5 card: "Runs locally with less than 4GB of VRAM", "50+ languages",
+# "short loops to 10-minute compositions". The training-data statement
+# (licensed, royalty-free, and synthetic music) is the developers' own
+# claim, attributed as such and not independently verified.
 - name: ACE-Step
   vendor: ACE Studio and StepFun
-  url: https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B
+  url: https://huggingface.co/ACE-Step/Ace-Step1.5
+  license: MIT
+  modality: audio
+  last_reviewed: 2026-09-29
+  blurb: Open-weight song generation model producing full tracks with vocals, from short loops to compositions of up to 10 minutes, and following prompts in more than 50 languages. Version 1.5 runs on a graphics card with less than 4 gigabytes of memory, under the MIT license; its developers say it was trained on licensed, royalty-free, and synthetic music.
+
+# Added 2026-09-29 (tool discovery issue #52, owner approved). The Hugging
+# Face card tag (read via the API that day) is "other" with license_name
+# health-ai-developer-foundations, linked to
+# developers.google.com/health-ai-developer-foundations/terms: the same
+# terms and label as the MedGemma entry, so it is named the same way. These
+# are Google's terms of use, not an open-source license. The repo is gated
+# (auto), so facts come from Google's public model card, read the same day:
+# Conformer architecture, 105M parameters, version 1.0.0 created December
+# 18, 2025, about 5,000 hours of de-identified physician dictation, "All
+# training data is in English", most speakers had English as a first
+# language and were raised in the United States, and outputs "may include
+# transcription errors and are not intended to directly inform clinical
+# diagnosis".
+- name: MedASR
+  vendor: Google
+  url: https://huggingface.co/google/medasr
+  license: Health AI Developer Foundations
+  modality: audio
+  last_reviewed: 2026-09-29
+  blurb: Google's open-weight speech recognition model for medical dictation, which turns recorded speech into text. It has 105 million parameters and was trained on about 5,000 hours of de-identified physician dictation in radiology, internal medicine, family medicine, and other specialties. English only, and most training speakers were native English speakers raised in the United States, so accuracy may be lower for other accents. Downloading requires accepting Google's Health AI Developer Foundations terms, and its model card says outputs may contain transcription errors and are not intended to directly inform clinical decisions.
+
+# Added 2026-09-29 (tool discovery issue #52, owner approved). License
+# apache-2.0 read via the Hugging Face API that day from the
+# hexgrad/Kokoro-82M card tag (base model yl4579/StyleTTS2-LJSpeech); the
+# GitHub repo hexgrad/kokoro is also Apache-2.0. The card's release table
+# gives v1.0, published 2025 Jan 27, "8 & 54" languages and voices, and it
+# is still the current release (the only later hexgrad repo is the
+# Chinese-focused Kokoro-82M-v1.1-zh of 2025-02-27). VOICES.md lists 28 of
+# the 54 voices as American or British English and says "Support for
+# non-English languages may be absent or thin". Training data per the card:
+# "exclusively on permissive/non-copyrighted audio data" (public domain,
+# permissively licensed, and synthetic audio). This site's news narration
+# runs on Kokoro (feeds.yaml narration block); that is recorded here for
+# transparency only and is deliberately absent from the blurb, so the
+# listing reads like any other and is not an endorsement.
+- name: Kokoro
+  vendor: hexgrad (independent developer)
+  url: https://huggingface.co/hexgrad/Kokoro-82M
   license: Apache 2.0
   modality: audio
-  last_reviewed: 2026-06-12
-  blurb: Open-weight song generation model producing full tracks with vocals across many languages, under a fully permissive license.
+  last_reviewed: 2026-09-29
+  blurb: A small text-to-speech model, 82 million parameters, that reads text aloud in 54 preset voices across eight languages and is small enough to run on a personal computer, under Apache 2.0. More than half of its voices are American or British English, and its voice list notes that support for other languages may be thin. Version 1.0, from January 2025, is the current release; its developer says it was trained only on public domain, permissively licensed, or synthetic audio.
 
 # Discovery survey additions (owner-directed open-weights audit,
 # 2026-07-15): licenses read verbatim from each Hugging Face model card

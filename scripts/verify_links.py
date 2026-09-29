@@ -50,6 +50,10 @@ TIMEOUT = 15
 # Re-verify in a browser when touching an entry that uses one.
 MANUALLY_VERIFIED = {
     "gamma.app": "2026-06-09",
+    # Every page 403s scripted clients and headless browsers (a Cloudflare
+    # challenge); the UpToDate Expert AI product page confirmed live in the
+    # app's browser 2026-09-29 (tool discovery issue #52, owner approved).
+    "wolterskluwer.com": "2026-09-29",
     # Began 403ing scripted clients in July 2026 (conference watch and
     # link check, 2026-07-17 to 07-21); owner confirmed live in a
     # browser 2026-07-21, page still showing SAIL 2026, May 5-8,
