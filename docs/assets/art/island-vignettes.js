@@ -2042,12 +2042,13 @@
       try { when = JSON.parse(cap.dataset.when || '{}'); } catch (e) { /* the words alone */ }
       const a = document.createElement('a');
       a.href = cap.dataset.about || '';
+      // Where the link goes, shown on hover (owner, 2026-09-29) and read as the link's description.
+      if (cap.dataset.hover) a.title = cap.dataset.hover;
       cap.append(', ', a, '.');
       cap._isl = { a, when };
     }
     const { a, when } = cap._isl;
     a.textContent = when[sky] || sky;
-    a.setAttribute('aria-label', `${a.textContent}, about the five times of day`);
   }
 
   A.vignette = function (fig) {

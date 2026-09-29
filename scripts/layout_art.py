@@ -20,10 +20,12 @@ docs/javascripts/layout-art.js draws it (docs/assets/art/island-vignettes.js)
 only where it is shown, from 68.75em; below that it is hidden and nothing is
 fetched. Without JavaScript it stays empty, which is the space as it was.
 
-The element holds one line of text, its caption (owner, 2026-09-29): what the
-picture shows, from the slot's `caption`, in a figcaption that island-vignettes.js
+Where the slot has a `caption`, the element holds one line of text (owner,
+2026-09-29): what the picture shows, in a figcaption that island-vignettes.js
 completes with the time of day the picture is drawn at, linked to the write-up
-that explains the five versions (the `captions` block). The drawing itself stays
+that explains the five versions, with `captions.hover` as the link's hover text
+(the `captions` block). A picture that is not of a particular place has no
+caption and no figcaption. The drawing itself stays
 decorative (aria-hidden); the caption is read. The narration reads markdown and
 the title-case check leaves captions alone (they are sentence case), so both are
 unchanged. The build fails if a listed page or section is missing, so a renamed
@@ -82,10 +84,11 @@ def _load() -> tuple[list[dict], dict]:
     raw = yaml.safe_load(DATA.read_text(encoding="utf-8")) or {}
     slots = raw.get("slots") or []
     for s in slots:
-        missing = [k for k in ("page", "section", "piece", "caption") if not s.get(k)]
+        missing = [k for k in ("page", "section", "piece") if not s.get(k)]
         if missing:
             raise SystemExit(f"layout_art: {DATA.name} entry {s} lacks {', '.join(missing)}")
-        _caption_ok(f"{s['page']} caption", s["caption"])
+        if "caption" in s:
+            _caption_ok(f"{s['page']} caption", s["caption"])
     caps = raw.get("captions") or {}
     times = caps.get("times") or {}
     if sorted(times) != sorted(TIMES):
@@ -95,7 +98,8 @@ def _load() -> tuple[list[dict], dict]:
     about = caps.get("about") or ""
     if about.count("#") != 1 or not about.split("#")[0].endswith(".md") or not about.split("#")[1]:
         raise SystemExit(f"layout_art: {DATA.name} captions.about must be <page>.md#<heading id>, got {about!r}")
-    return slots, {"times": {k: times[k] for k in TIMES}, "about": about}
+    _caption_ok("captions.hover", caps.get("hover"))
+    return slots, {"times": {k: times[k] for k in TIMES}, "about": about, "hover": caps["hover"]}
 
 
 def on_config(config, **kwargs):
@@ -107,7 +111,10 @@ def on_config(config, **kwargs):
 
 
 def _figcaption(s: dict, page, files) -> str:
-    """The caption line: the slot's words now; island-vignettes.js adds the time of day, linked."""
+    """The caption line: the slot's words now; island-vignettes.js adds the time of day, linked.
+    Nothing for a slot without a caption."""
+    if not s.get("caption"):
+        return ""
     path, anchor = _S["captions"]["about"].split("#")
     target = files.get_file_from_path(path)
     if target is None:
@@ -115,7 +122,9 @@ def _figcaption(s: dict, page, files) -> str:
     href = get_relative_url(target.url, page.url) + "#" + anchor
     when = _html.escape(json.dumps(_S["captions"]["times"]), quote=True)
     _S["captioned"] += 1
-    return (f'<figcaption class="isl-cap" data-when="{when}" data-about="{_html.escape(href, quote=True)}">'
+    hover = _html.escape(_S["captions"]["hover"], quote=True)
+    return (f'<figcaption class="isl-cap" data-when="{when}" data-about="{_html.escape(href, quote=True)}"'
+            f' data-hover="{hover}">'
             f'{_html.escape(s["caption"], quote=False)}</figcaption>')
 
 
@@ -131,6 +140,9 @@ def on_page_content(html, page, config, files, **kwargs):
         fit = ' data-fit="text"' if s.get("fit") == "text" else ""
         aspect += fit
         cap = _figcaption(s, page, files)
+        # Without a caption the whole figure is decoration, hidden from screen readers as before.
+        if not cap:
+            aspect += ' aria-hidden="true"'
         if isinstance(s["section"], list):
             first, last = s["section"][0], s["section"][-1]
             a = (re.search(r"<h1\b", html) if first == "_title"
@@ -181,10 +193,12 @@ def on_post_build(config, **kwargs):
         raise SystemExit(f"layout_art: listed pages not built: {', '.join(unseen)}")
     if len(placed) != len(slots):
         raise SystemExit(f"layout_art: {len(slots)} slots read but {len(placed)} placed")
-    # Every picture has its caption, and the write-up its time words link to still has that heading.
-    print(f"  captioned    : {_S['captioned']}")
-    if _S["captioned"] != len(placed):
-        raise SystemExit(f"layout_art: {len(placed)} placed but {_S['captioned']} captioned")
+    # Every slot with a caption has it on the page, and the write-up its time words link to still has
+    # that heading.
+    want = sum(1 for s in slots if s.get("caption"))
+    print(f"  captioned    : {_S['captioned']} of {want} with a caption ({len(placed) - want} without, by design)")
+    if _S["captioned"] != want:
+        raise SystemExit(f"layout_art: {want} slots have a caption but {_S['captioned']} were captioned")
     path, anchor = _S["captions"]["about"].split("#")
     stem = path[:-len("index.md")] if path.endswith("index.md") else path[:-3] + "/"
     built = Path(config["site_dir"]) / stem / "index.html"
