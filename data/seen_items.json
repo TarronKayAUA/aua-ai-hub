@@ -25770,13 +25770,6 @@
    "reason": "marketing from the product's own company"
   },
   {
-   "url": "https://aipodcast.education/dr-phil-cummins-the-tide-is-in-ai-is-here",
-   "title_hash": "3653035e846b206d6143adff070c45ae",
-   "first_seen": "2026-09-17T22:51:58.002892+00:00",
-   "kept": false,
-   "reason": "promotional episode or generic commentary without substantive analysis or news"
-  },
-  {
    "url": "https://arxiv.org/abs/2609.19148",
    "title_hash": "74a3d1609e2ee0becba7dbfe7ccc22b7",
    "first_seen": "2026-09-18T04:47:43.501832+00:00",
@@ -30599,13 +30592,6 @@
    "reason": "music copyright litigation without AI policy or healthcare implications"
   },
   {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1000644/irregular-rogue-ai-cyberattacks-hacking-openai-meta-anthropic-google",
-   "title_hash": "3ffc21bbb2a6ddddf5d75a408fa9797c",
-   "first_seen": "2026-09-25T20:01:55.804081+00:00",
-   "kept": false,
-   "reason": "AI safety speculation and drama coverage without verified clinical or educational incidents"
-  },
-  {
    "url": "https://ai.jmir.org/2026/1/e85047",
    "title_hash": "c90b0d6114eeada19ad38a9120221b25",
    "first_seen": "2026-09-25T20:01:55.804081+00:00",
@@ -30999,13 +30985,6 @@
    "first_seen": "2026-09-26T13:08:38.350204+00:00",
    "kept": false,
    "reason": "fiction narration and speculative content without relevance to medical education, clinical practice, or AI literacy for educators"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
-   "title_hash": "ce092081d1a53ef1b0e829b92d492663",
-   "first_seen": "2026-09-26T19:14:06.310103+00:00",
-   "kept": false,
-   "reason": "rumor and speculation about model safety incidents, not confirmed reporting or established policy development"
   },
   {
    "url": "https://www.theverge.com/podcast/1000344/cloudflare-matthew-prince-google-zero-ai-web-advertising",
@@ -31964,13 +31943,6 @@
    "reason": "industry drama and announcement mismanagement without technical development news"
   },
   {
-   "url": "https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents",
-   "title_hash": "a6a1a807995d5951d48679051c0cf2e9",
-   "first_seen": "2026-09-29T00:23:18.189654+00:00",
-   "kept": false,
-   "reason": "speculative incident reporting without confirmed technical details or substantive analysis"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsiepp/finally_found_a_model_my_hardware_can_run_at_full",
    "title_hash": "8183eefdd06beb538ddd7ec80b5365cd",
    "first_seen": "2026-09-29T00:23:18.189654+00:00",
@@ -32535,13 +32507,6 @@
    "reason": "off-topic forum thread about hardware specifications and pricing"
   },
   {
-   "url": "https://arstechnica.com/ai/2026/09/openai-says-planned-gpt-6-1-is-too-insecure-to-release",
-   "title_hash": "98a9f67ec68e223a56abf4ded90d83f0",
-   "first_seen": "2026-09-29T18:06:29.572556+00:00",
-   "kept": false,
-   "reason": "rumor or unconfirmed model"
-  },
-  {
    "url": "https://arstechnica.com/ai/2026/09/anthropics-ipo-pitch-includes-a-warning-about-human-extinction",
    "title_hash": "9c0e372b1f8261400be936a070ccb44d",
    "first_seen": "2026-09-29T18:06:29.572556+00:00",
@@ -32568,13 +32533,6 @@
    "first_seen": "2026-09-29T18:06:29.572556+00:00",
    "kept": false,
    "reason": "off-topic browser news unrelated to AI or medicine"
-  },
-  {
-   "url": "https://spectrum.ieee.org/ai-agent-security",
-   "title_hash": "411e414b19781d75d58709b356bdf01b",
-   "first_seen": "2026-09-29T18:06:29.572556+00:00",
-   "kept": false,
-   "reason": "speculative fiction presented as current event"
   },
   {
    "url": "https://www.theverge.com/policy/1001767/khanna-ai-safety-china-treaty",
