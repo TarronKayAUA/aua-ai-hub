@@ -421,6 +421,96 @@
     display: none;
   }
 }
+/* The library (the Learn landing's head, 2026-09-29, from AUA's photographs): the study hall's
+   materials in each version. Dusk is the photograph's hour, the room dim and warm where the lamps
+   reach it; Night darker still; Day the cream walls, pale tiles and cherry wood in full light, the
+   ceiling panels lit and the lamps off; Dawn cool and pinkish, Sunset warm. The shades' lit glow is
+   the same green in every version the lamps are on. */
+.isl {
+  --isl-lwall0: #6f7179; --isl-lwall1: #a39d92; --isl-lside: #1b2230; --isl-lceil: #62656d; --isl-lgrid: #4e5159;
+  --isl-lpanel: #72767e; --isl-lfloor: #7c7468; --isl-lgrout: #665f55; --isl-lframe: #c9ccd1; --isl-lbase: #5a554e;
+  --isl-lwood: #7a3a24; --isl-lwood2: #4f2416; --isl-lchair: #7d8185; --isl-lchair2: #5c6064;
+  --isl-lred: #a8453a; --isl-lred2: #8e8f94; --isl-lalu: #b7bcc2; --isl-lsign: #2d5f9e;
+  --isl-lshade: #1e5a3a; --isl-lglow0: #3aa866; --isl-lglow1: #c4f7d0; --isl-lbronze: #4a3b2c;
+  --isl-lbk1: #7d3b35; --isl-lbk2: #34506e; --isl-lbk3: #8a7440; --isl-lcase: #4a3526; --isl-lcase2: #3a291d;
+  --isl-lpage: #e8e0cc; --isl-llap: #b9bcc1; --isl-lbottle: #b3302b;
+}
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
+  --isl-lwall0: #23252b; --isl-lwall1: #4d4a45; --isl-lside: #05070b; --isl-lceil: #1f2126; --isl-lgrid: #17191d;
+  --isl-lpanel: #25272c; --isl-lfloor: #3a352f; --isl-lgrout: #2c2823; --isl-lframe: #5a5e66; --isl-lbase: #2a2724;
+  --isl-lwood: #5a2618; --isl-lwood2: #34150c; --isl-lchair: #45484c; --isl-lchair2: #303235;
+  --isl-lred: #6e2a24; --isl-lred2: #4a4b50; --isl-lalu: #6c7178; --isl-lsign: #1f3f6a;
+  --isl-lshade: #143d27; --isl-lbronze: #2e251c;
+  --isl-lbk1: #4d2522; --isl-lbk2: #1f3044; --isl-lbk3: #54482a; --isl-lcase: #2c2017; --isl-lcase2: #1f160f;
+  --isl-lpage: #a79f8c; --isl-llap: #6e7176; --isl-lbottle: #7a211d;
+}
+.isl[data-sky="day"] {
+  --isl-lwall0: #e3ddd0; --isl-lwall1: #f1ece2; --isl-lside: #6a5f4c; --isl-lceil: #f0efea; --isl-lgrid: #d6d3cb;
+  --isl-lpanel: #fdfdf9; --isl-lfloor: #d7cdbb; --isl-lgrout: #c2b6a0; --isl-lframe: #fafafa; --isl-lbase: #b8ab96;
+  --isl-lwood: #9b4a2c; --isl-lwood2: #6a2e1a; --isl-lchair: #b3b7b9; --isl-lchair2: #8e9396;
+  --isl-lred: #cf5a43; --isl-lred2: #a9adb3; --isl-lalu: #d5d9de; --isl-lsign: #2f67ad;
+  --isl-lshade: #1f6b44; --isl-lbronze: #6b5842;
+  --isl-lbk1: #9c4b40; --isl-lbk2: #3f6b92; --isl-lbk3: #b3964f; --isl-lcase: #7a5a3e; --isl-lcase2: #5e4430;
+  --isl-lpage: #fbf6ea; --isl-llap: #d7dadf; --isl-lbottle: #d1392f;
+}
+.isl[data-sky="dawn"] {
+  --isl-lwall0: #8d8b9e; --isl-lwall1: #c3b8b8; --isl-lside: #2a2a40; --isl-lceil: #8f8ea0; --isl-lgrid: #7a7a8c;
+  --isl-lpanel: #979aab; --isl-lfloor: #a69a95; --isl-lgrout: #928680; --isl-lframe: #dcdbe6; --isl-lbase: #7d7474;
+  --isl-lwood: #7c3d2d; --isl-lwood2: #542719; --isl-lchair: #9a9ca8; --isl-lchair2: #7c7e8a;
+  --isl-lred: #b0524a; --isl-lred2: #9d9ea8; --isl-lalu: #c5c8d2; --isl-lsign: #37609a;
+  --isl-lshade: #1f5e3e; --isl-lbronze: #574636;
+  --isl-lbk1: #8a4540; --isl-lbk2: #3d5a7a; --isl-lbk3: #9a8350; --isl-lcase: #5e4535; --isl-lcase2: #4a3629;
+  --isl-lpage: #efe4dc; --isl-llap: #c4c5cf; --isl-lbottle: #bf3a33;
+}
+.isl[data-sky="sunset"] {
+  --isl-lwall0: #a88f7c; --isl-lwall1: #dcc3a4; --isl-lside: #3a2616; --isl-lceil: #a38e7e; --isl-lgrid: #8c7868;
+  --isl-lpanel: #ab9584; --isl-lfloor: #b89f86; --isl-lgrout: #a08a72; --isl-lframe: #efe0cc; --isl-lbase: #8c7560;
+  --isl-lwood: #86402a; --isl-lwood2: #5a2717; --isl-lchair: #a7a29e; --isl-lchair2: #87827d;
+  --isl-lred: #bf5540; --isl-lred2: #a39c96; --isl-lalu: #d3cabf; --isl-lsign: #3a5f94;
+  --isl-lshade: #1f5f3c; --isl-lbronze: #5e4a37;
+  --isl-lbk1: #904a3c; --isl-lbk2: #43607c; --isl-lbk3: #a88a4c; --isl-lcase: #684a33; --isl-lcase2: #523a28;
+  --isl-lpage: #f5e6cf; --isl-llap: #cfc7bf; --isl-lbottle: #c83f2e;
+}
+.isl .st-lwall0 { stop-color: var(--isl-lwall0); }
+.isl .st-lwall1 { stop-color: var(--isl-lwall1); }
+.isl .st-lglow0 { stop-color: var(--isl-lglow0); stop-opacity: 0.9; }
+.isl .st-lglow1 { stop-color: var(--isl-lglow1); stop-opacity: 0.95; }
+.isl .isl-lsidew { fill: var(--isl-lside); fill-opacity: 0.18; }
+.isl[data-sky="day"] .isl-lsidew { fill-opacity: 0.1; }
+.isl .isl-lceil { fill: var(--isl-lceil); }
+.isl .isl-lgrid { stroke: var(--isl-lgrid); fill: none; }
+.isl .isl-lpanel { fill: var(--isl-lpanel); }
+.isl .isl-lfloor { fill: var(--isl-lfloor); }
+.isl .isl-lgrout { stroke: var(--isl-lgrout); fill: none; }
+.isl .isl-lbase { stroke: var(--isl-lbase); fill: none; }
+.isl .isl-lframe { stroke: var(--isl-lframe); fill: none; stroke-linejoin: round; }
+.isl .isl-lsill { fill: var(--isl-lframe); }
+.isl .isl-lsun { fill: #fffcf2; fill-opacity: 0.4; }
+.isl .isl-lcase { fill: var(--isl-lcase); }
+.isl .isl-lcase2 { stroke: var(--isl-lcase2); fill: none; stroke-linecap: round; }
+.isl .isl-lbk1 { fill: var(--isl-lbk1); }
+.isl .isl-lbk2 { fill: var(--isl-lbk2); }
+.isl .isl-lbk3 { fill: var(--isl-lbk3); }
+.isl .isl-lwood { fill: var(--isl-lwood); }
+.isl .isl-lwood2 { fill: var(--isl-lwood2); }
+.isl .isl-lchair { fill: var(--isl-lchair); }
+.isl .isl-lchairdot { fill: var(--isl-lchair2); }
+.isl .isl-lchairleg { stroke: var(--isl-lchair2); fill: none; stroke-linecap: round; }
+.isl .isl-lred { fill: var(--isl-lred); }
+.isl .isl-lred2 { fill: var(--isl-lred2); }
+.isl .isl-lalu { fill: var(--isl-lalu); }
+.isl .isl-lsign { fill: var(--isl-lsign); }
+.isl .isl-lshade { fill: var(--isl-lshade); }
+.isl .isl-lbronze { fill: var(--isl-lbronze); }
+.isl .isl-lrim { stroke: var(--isl-lglow1); fill: none; stroke-linecap: round; }
+.isl .isl-lpage { fill: var(--isl-lpage); }
+.isl .isl-llap { fill: var(--isl-llap); }
+.isl .isl-lbottle { fill: var(--isl-lbottle); }
+.isl .isl-lredsh { fill: var(--isl-lside); fill-opacity: 0.12; }
+.isl .isl-lshadehi { stroke: #ffffff; stroke-opacity: 0.22; fill: none; stroke-linecap: round; }
+.isl .isl-ledge { stroke: #ffe2c4; stroke-opacity: 0.28; fill: none; }
+.isl .isl-llap2 { fill: var(--isl-lchair2); }
+.isl .isl-lgutter { stroke: var(--isl-lchair2); stroke-opacity: 0.6; fill: none; }
 /* The caption (owner, 2026-09-29): one quiet line under the picture saying what it shows, then the
    time of day it is drawn at, linked (layout_art.py writes the words, island-vignettes.js adds the
    time). The picture gives up the caption's height, so the figure keeps its size: the top stays level

@@ -113,11 +113,14 @@ slots:
 
   # The main pages that had no Island Night art (owner, 2026-09-28): each
   # picture fits the height of the text beside it, so nothing below moves.
-  # Learn: a telescope at a hilltop lookout under the Moon and the Milky Way
-  # (the neuron plate that was here moved to Module 1, How AI Works).
+  # Learn: the AUA library's study hall (owner, 2026-09-29: art that relates
+  # to Antigua and AUA, drawn from AUA's photographs of the library; the
+  # telescope it replaced is kept in island-vignettes.js to be placed
+  # elsewhere). The neuron plate that was here earlier moved to Module 1.
   - page: pathway/index.md
     section: _head
-    piece: telescope
+    piece: library
+    caption: "The library at the American University of Antigua"
     kind: lesson
     fit: text
 
