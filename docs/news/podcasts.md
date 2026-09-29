@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/obsolete-or-irreplaceable-garrison-lovely-on-stopping-the-race-to-replace-human-labor" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/64b1209a-bbc6-11f1-b1ee-4f4a1de857ab/image/9eb2ec5d4bac34a4b9ce3ed3764379ec.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Obsolete or Irreplaceable? Garrison Lovely on Stopping the Race to Replace Human Labor" loading="lazy">
+  <span class="video-card-title">Obsolete or Irreplaceable? Garrison Lovely on Stopping the Race to Replace Human Labor</span>
+  <span class="video-card-meta">The Cognitive Revolution, September 29, 2026</span>
+  <span class="video-card-desc">Author Garrison Lovely discusses motivations of AGI developers and distinguishes between domain-specific AI applications like AlphaFold and efforts to automate all human labor.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Real-Risks-of-AI-Agents-e3pgsvg" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Real Risks of AI Agents" loading="lazy">
   <span class="video-card-title">The Real Risks of AI Agents</span>

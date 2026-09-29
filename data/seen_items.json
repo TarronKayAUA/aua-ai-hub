@@ -1,358 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.nature.com/articles/s41746-026-03042-1",
-   "title_hash": "5b40268bfd0a7072634de65c0e3174ab",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": true,
-   "title": "Health professions education (HPE) in the age of generative AI",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-31T00:00:00+00:00",
-   "summary": "Peer-reviewed perspective on health professions education in the context of generative artificial intelligence.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/30/luna-price-drop",
-   "title_hash": "ce5c30b913255889581c0b099ebdc9fd",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": true,
-   "title": "Advancing the price-performance frontier with GPT‑5.6",
-   "source": "Simon Willison's weblog",
-   "published": "2026-07-30T23:58:42+00:00",
-   "summary": "OpenAI announces significant price reductions for GPT-5.6 models, with an 80 percent reduction for Luna through improved inference optimization.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "New models"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/30/three-real-world-incidents",
-   "title_hash": "1e1d55ecd9ca47ec349c6b516f076e24",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": true,
-   "title": "Investigating three real-world incidents in our cybersecurity evaluations",
-   "source": "Simon Willison's weblog",
-   "published": "2026-07-30T23:41:29+00:00",
-   "summary": "Analysis of three real-world security incidents discovered in AI model evaluations, including model escapes from sandboxed environments.",
-   "category": "general_ai",
-   "score": 4.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/30/llm-rc2",
-   "title_hash": "ba66f58f2b04e1b666ce94f110f897c9",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://www.theverge.com/tech/973552/apple-ceo-tim-cook-icloud-plus-ai",
-   "title_hash": "3b6aa63b0e90403bf6d2974b7e404abb",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": false,
-   "reason": "vendor marketing and off-topic for this audience"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/973467/ai-bet-situational-awareness-oops-stonks",
-   "title_hash": "9451eedd2675335a2528d7155c847f3b",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/973384/linkedin-seems-like-ai-slop-button",
-   "title_hash": "8364d2f6e207a522769b6dd8f35ee705",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server",
-   "title_hash": "ce2c00156ce9a9ee77fd401572f3a9e2",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/30/llm-rc1",
-   "title_hash": "42555fdd04f72af71bce1bcbf8792229",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42531148?fc=20260609215449&ff=20260730235219&v=2.20.0.post5+40e1b98",
-   "title_hash": "5389e57ae30e6aa43deb66a858215413",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": true,
-   "title": "Advancing Radiology Education with Artificial Intelligence: Curriculum Planning, Implementation, and Evaluation",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-30T10:00:00+00:00",
-   "summary": "Peer-reviewed review of how artificial intelligence can enhance radiology education through curriculum planning, implementation, and evaluation.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42531043?fc=20260609215449&ff=20260730235219&v=2.20.0.post5+40e1b98",
-   "title_hash": "197f88a20e792a86fd36a7d19640637f",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": true,
-   "title": "Artificial intelligence tools in dermatology education: A scoping review on their application, efficacy, and limitations",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-30T10:00:00+00:00",
-   "summary": "Scoping review of artificial intelligence tools in dermatology education, identifying gaps in methodological rigor and need for standardized evaluation frameworks.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=wAPDmc8e22U",
-   "title_hash": "8be9f63989dc2dc599e3ccba73f2d0cf",
-   "first_seen": "2026-07-31T03:52:19.435381+00:00",
-   "kept": false,
-   "reason": "marketing content with promotional offer embedded in video description"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27210",
-   "title_hash": "b12088c39f118a30cd0ef741249bdc39",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27228",
-   "title_hash": "be9f3389aef7cdf74859dbd9ae64c79f",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27232",
-   "title_hash": "3763752d81febf87e3e982942b5057f8",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27353",
-   "title_hash": "509be27de2681dc65d3b519054f1040f",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": true,
-   "title": "LayerRAG-Bench: A Cross-Layer Reliability Benchmark for Agentic Retrieval-Augmented Generation",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-31T04:00:00+00:00",
-   "summary": "LayerRAG-Bench is a cross-layer reliability benchmark for agentic retrieval-augmented generation covering evidence, tool-contract, authorization, and session-state faults across enterprise domains.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Benchmarks and evaluation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27366",
-   "title_hash": "8db02288a8dd98684d8e8116bbe28a2c",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27379",
-   "title_hash": "b702b4680a9f1f2958b31a30dd209a02",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27384",
-   "title_hash": "27f7cc9edf9559002d73b70bdeaf6521",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": true,
-   "title": "Same Facts, Different Diagnosis: Measuring and Mitigating Narrative Anchoring in Clinical Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-31T04:00:00+00:00",
-   "summary": "Study identifies and measures narrative anchoring, where clinical language models produce different diagnoses for identical facts expressed in different linguistic registers, affecting diagnostic reliability.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27393",
-   "title_hash": "04d369fa5df2014faba2202ed4c5169f",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27405",
-   "title_hash": "0fdc26f40df84a1f690f41989a8adefc",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": true,
-   "title": "Benchmarking LLM Competence on Logical Inference over Probability Operators",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-31T04:00:00+00:00",
-   "summary": "Benchmark evaluates large language model competence on logical inference over probability operators, relevant to high-stakes domains including medicine.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Benchmarks and evaluation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27421",
-   "title_hash": "fc9f3b7599d52cdec93d14968f4ed8f9",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": true,
-   "title": "Selecting Open-Weight Language Models for Zero-Shot Intent Classification: A Systematic Evaluation of 41 Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-31T04:00:00+00:00",
-   "summary": "Systematic evaluation of 41 open-weight language models for zero-shot intent classification provides guidance for practitioners selecting models under compute, latency, and robustness constraints.",
-   "category": "general_ai",
-   "score": 2.0,
-   "topic": "Benchmarks and evaluation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27497",
-   "title_hash": "2555d9907b6db2a3eb7ff57e488d61cc",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27506",
-   "title_hash": "fbc325d5539dce37a2ea7a6802623563",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": true,
-   "title": "Models for minimalist RAG: B1ade 335M Embedding and 1B Parameter Small Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-07-31T04:00:00+00:00",
-   "summary": "B1ade is an efficient retrieval-augmented generation architecture combining a 335M parameter embedding model with a 1B parameter small language model for resource-constrained deployment.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "New models"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27512",
-   "title_hash": "6b8920cfab890c048269abf2e22a03ce",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow theoretical application; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27557",
-   "title_hash": "5a97a38fb4b511ba166add709835c339",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27595",
-   "title_hash": "3c39fa5f3a5c5fc5f796557686d1a166",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27611",
-   "title_hash": "ffd38de96951712ddbc6300296391164",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27614",
-   "title_hash": "1a86f65d09400b40411699055e060a13",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27652",
-   "title_hash": "1407fea65fa1599d1b515241e0b5ecdf",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27654",
-   "title_hash": "bded13bc0d080d0f6d0519ecb340a382",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27671",
-   "title_hash": "50e8e2609196802818156d92c4af7bbc",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27692",
-   "title_hash": "9ed65240d28ef2e5e14adc9b2beb2d8c",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow technical optimization; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27735",
-   "title_hash": "86ea0fd62a637bd51f5f4037cbf29f4f",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow technical optimization; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27747",
-   "title_hash": "50a09713dc8bf2b83ec707f98dbeea79",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27766",
-   "title_hash": "ddbe928f04f48800994e8e78feb7e22a",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow technical application; off-topic for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.27773",
-   "title_hash": "8987643ff180b4e78b00ed716791aa24",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "narrow application domain; off-topic for medical educators"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02933-7",
-   "title_hash": "03e67c44e86fdbd432db9e4e52eb2f9b",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": true,
-   "title": "Benchmarking and developing large language models using one million clinical trials",
-   "source": "npj Digital Medicine",
-   "published": "2026-07-31T00:00:00+00:00",
-   "summary": "Peer-reviewed study benchmarks and develops large language models using one million clinical trials to evaluate performance on clinical tasks.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42533269?fc=20260609215449&ff=20260731031517&v=2.20.0.post5+40e1b98",
-   "title_hash": "aba2418208b165772c00dd952520ebb6",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; curriculum description without AI focus"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42532980?fc=20260609215449&ff=20260731031517&v=2.20.0.post5+40e1b98",
-   "title_hash": "cf1b53863c348c191287e5de1efdb27d",
-   "first_seen": "2026-07-31T07:15:17.808166+00:00",
-   "kept": true,
-   "title": "Sentence-Level Provenance for AI Medical Record Summarization: Formative Usability Evaluation of a Click-to-Inspect Interface",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-30T10:00:00+00:00",
-   "summary": "Usability study evaluates sentence-level provenance in AI medical record summarization, allowing clinicians to inspect individual claims and reducing verification burden in clinical workflows.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical documentation"
-  },
-  {
    "url": "https://www.sensible-med.com/p/six-things-i-love-about-being-a-general",
    "title_hash": "ccd405d3fa9123cf001654a5fab8bed4",
    "first_seen": "2026-07-31T11:00:23.648930+00:00",
@@ -32671,6 +32319,380 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://event.on24.com/wcc/r/5507421/A45CEFBA43BC7B2A43F265520AFDBA32",
+   "title_hash": "350b240aadfb72d4e27548f3118674e4",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "semiconductor design autonomy; off-topic for this audience"
+  },
+  {
+   "url": "https://icenet.blog/2026/09/29/book-review-the-reverse-centaurs-guide-to-life-after-a-i-by-cory-doctorow",
+   "title_hash": "ebef2eea029afa79e81a438516711d8b",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "commentary on a book rather than news; no instructive analysis for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31629",
+   "title_hash": "ead38d1bf93036a8e83155131ec83509",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": true,
+   "title": "ChestPheNoT: Deployable, Auditable Label-Status-Evidence Extraction from Radiology Reports",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-29T04:00:00+00:00",
+   "summary": "A deployable system extracts structured phenotypes and supporting evidence from radiology reports using local inference with auditable predictions.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31650",
+   "title_hash": "1b2ae4d6ed97b39ea0995313bd0ee293",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "materials science application; narrow domain outside medical context"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31653",
+   "title_hash": "8b25307ef1c9b6aa1e21b9dc2651b867",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "narrow domain application unrelated to medicine or medical education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31660",
+   "title_hash": "40a495fd1cf732b60946018deb788f9d",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "RAG pipeline study on regulatory documents; narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31663",
+   "title_hash": "d889c4f2680e4b463e5e928e055c9274",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "knowledge graph construction on industrial text; narrow domain application"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31664",
+   "title_hash": "1f586ade6d291e0486646430f7c04c51",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "safety research on language model jailbreaks; off-topic unless directly relevant to medical deployment"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31666",
+   "title_hash": "b6b9dc71c37aef4fcf23e9330dc7c10c",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "handwriting reconstruction with digital pen; off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31676",
+   "title_hash": "a387497a28969e78d532e270ed4bf662",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": true,
+   "title": "An Evaluation of AI-Supported Evidence-Based Learning for Public Speaking Skill Development",
+   "source": "arXiv cs.CL",
+   "published": "2026-09-29T04:00:00+00:00",
+   "summary": "A study evaluates an AI-supported public speaking coaching system that provides context-specific feedback and model speeches, showing potential for medical education.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31684",
+   "title_hash": "27e3ffc4fd304b2caf3e05e72b9ec8b8",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "narrow technical study of diffusion models; not significant for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31687",
+   "title_hash": "22be67e3914d5020a8d39b73e6033b29",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "software verification using LLMs; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31688",
+   "title_hash": "6ac5235c804f77637419d060ac291bb4",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "fine-tuning method for math and coding; narrow technical contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31727",
+   "title_hash": "c61f319b072555deaae0e5cc9de0bca2",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "machine translation benchmark; no significance for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31847",
+   "title_hash": "f999dbf3c564627d5a365ca8f65fa82a",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "agent multimodal capabilities research; general AI but not significant for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31876",
+   "title_hash": "92a4ffa08e5a9120c93119bf285985d4",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "AI detection evasion research; policy-relevant but not instructive for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31956",
+   "title_hash": "0d35f192f566948a41a7e0751ac65342",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "transformer internals analysis; technical research without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31967",
+   "title_hash": "92655cce03082aad9df58937176613c5",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "speech agent benchmark for Indian languages; off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31974",
+   "title_hash": "84b509c844b3dbdd7c748b02c2574bbb",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "narrow domain application; clinical information extraction is handled by PubMed feeds"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31976",
+   "title_hash": "a1763722326e63a27e47aa56b52dc12a",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "psychometric modeling study; narrow application unrelated to AI in medicine or education"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31989",
+   "title_hash": "da0c3a0bdbab4685090afa67481d4275",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "communication between LLMs; narrow technical study"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.31995",
+   "title_hash": "d7a1b2fbe04698dbb1a733ee5b078d5b",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "coding agent optimization; narrow technical contribution"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.32042",
+   "title_hash": "61ebd6eb8c0273a324da7fadece20bcb",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "narrow tool-use benchmark in Polish; not significant for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.32082",
+   "title_hash": "f46b30b33689c2dccf5d34ae9999c797",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "speech recognition benchmark for banking agents; off-topic for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.32119",
+   "title_hash": "b9d2e14f81e4c022b6fe630cb2b309c8",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "psycholinguistic modeling; off-topic for medical educators"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.32160",
+   "title_hash": "b772cdcc634c9d3264bc04d67a1ab2d9",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "dated publication (September 2026 date in abstract is anomalous); no clear significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.32189",
+   "title_hash": "686a3ae3a7e88c15bc2bb76b881ccc20",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "instruction-following optimization; narrow technical contribution"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/governance/executive-leadership/2026/09/29/dartmouth-provosts-ai-dependency-sparks-backlash",
+   "title_hash": "a5430f4356665c74d9c9bba3b5d639b6",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "campus controversy unrelated to AI in medicine or education; drama coverage"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/views/2026/09/29/ai-slop-coming-university-library-near-you-opinion",
+   "title_hash": "3caba4df4ddb7e09faa66182b68728ec",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "opinion piece on AI-generated content in libraries; no instructive analysis for medical educators"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04693-z",
+   "title_hash": "a39b23d054c03d65ca10f219c546a21e",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "clinical trial not related to AI; belongs in general medical journals not this feed"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04651-9",
+   "title_hash": "64c6521c384038fe59462c89bd27620c",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "clinical trial not related to AI; belongs in general medical journals not this feed"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04657-3",
+   "title_hash": "9a32a067d4e20d37f59a9f60ac50cd81",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "clinical trial not related to AI; belongs in general medical journals not this feed"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04667-1",
+   "title_hash": "f529642977c4ae5a0e11c8ef66e344f4",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "reproducibility review not focused on AI; general research methods"
+  },
+  {
+   "url": "https://robotsguide.com/learn/a-day-in-the-life-of-a-roboticist-charlie-kemp",
+   "title_hash": "cff913379bbc85104ec4b93a655d1752",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "profile of a roboticist; off-topic for this audience"
+  },
+  {
+   "url": "https://github.com/Low-Zi-Hong/ESP32s3-LLM-Cluster",
+   "title_hash": "e04ca1b198e8f48955735679068ae4d6",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "implementation detail; minor technical tinkering thread"
+  },
+  {
+   "url": "https://github.com/firelex/jeff",
+   "title_hash": "1abd363752f49df1a43e41c1d9bbafa3",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "minor tool release; niche software version announcement"
+  },
+  {
+   "url": "https://stateofutopia.com/experiments/microllmlab",
+   "title_hash": "fa8739210989ea391bbc3d6c6dda36c5",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "minor tool release; browser demo of existing models"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42806126?fc=20260609215449&ff=20260929064307&v=2.20.1",
+   "title_hash": "981f8f717305e31155824e4f01e48777",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": true,
+   "title": "Diagnostic Accuracy of Multimodal Large Language Models (LLMs) for Detecting Tuberous Breast Deformity from Standardized Photographs: A Descriptive in Silico Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-28T10:00:00+00:00",
+   "summary": "A study evaluates multimodal large language models for detecting tuberous breast deformity in photographs and generating operative plans, finding GPT-4o most accurate with potential for resident education under expert oversight.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://thecivilian.co.nz/2026/09/27/ai-companies-in-fierce-arms-race-to-demonstrate-their-model-is-the-most-existentially-threatening-to-humanity",
+   "title_hash": "95034b77ebb6e54347e6e3ab82219f0e",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "satire or opinion piece without substantive news content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wqs2t8/2400cc_inference_racer_dual_rtx_3090_motors",
+   "title_hash": "7bc9bfc4d8aedc442bb62797345bbbe9",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "personal hardware project; community meta-discussion and hobbyist engineering"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wol7zc/using_uncensored_models_makes_working_less_of_a",
+   "title_hash": "21d284ddec39c7cacbc3b3d57f4eb0e1",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "forum discussion of model behavior; no significant news or analysis"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wof9kk/introducing_support_for_local_ai_models_in_the",
+   "title_hash": "bdbd0b2978bde5b657a177d81d6fd614",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "minor SDK feature announcement from community member"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wnv85k/deepseek_and_moonshot_ai_face_beijings_probe_over",
+   "title_hash": "718efb23843d671731248f452a18e6ee",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "rumor and speculation without confirmed details"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=T-E7rmD6rh4",
+   "title_hash": "43159ce9bc4fe26032dd62e382977038",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": true,
+   "title": "Sonnet 5.5 Is Here. Look What It Can Build.",
+   "source": "Matthew Berman",
+   "published": "2026-09-29T05:04:38+00:00",
+   "summary": "Hands-on demonstration of Claude Sonnet 5.5 capabilities and what it can build.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/T-E7rmD6rh4/hqdefault.jpg",
+   "display_title": "Claude Sonnet 5.5 capabilities demonstration"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WzoDOZnHbCk",
+   "title_hash": "e7d62e94f6b1eef954595d2edabf9e83",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "speculation and rumor coverage without substantive content"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=a75xDflRooI",
+   "title_hash": "59a5208aa4e51ac07e815274a9af04c6",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=zoohZ1BiHs0",
+   "title_hash": "1e1d5ddd5edbcffadb397fb4f34f0144",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company"
+  },
+  {
+   "url": "https://sloanreview.mit.edu/audio-series/me-myself-and-ai",
+   "title_hash": "b35bfd1fd6259f670040343a284ea548",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": false,
+   "reason": "vendor marketing from the company's own channel"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/obsolete-or-irreplaceable-garrison-lovely-on-stopping-the-race-to-replace-human-labor",
+   "title_hash": "0568b15e7dbf282f9c7eaec913b8f744",
+   "first_seen": "2026-09-29T10:43:07.601473+00:00",
+   "kept": true,
+   "title": "Obsolete or Irreplaceable? Garrison Lovely on Stopping the Race to Replace Human Labor",
+   "source": "The Cognitive Revolution",
+   "published": "2026-09-29T06:42:35+00:00",
+   "summary": "Author Garrison Lovely discusses motivations of AGI developers and distinguishes between domain-specific AI applications like AlphaFold and efforts to automate all human labor.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://megaphone.imgix.net/podcasts/64b1209a-bbc6-11f1-b1ee-4f4a1de857ab/image/9eb2ec5d4bac34a4b9ce3ed3764379ec.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
  ],
  "digests": [

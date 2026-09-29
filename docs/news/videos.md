@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=T-E7rmD6rh4" target="_blank" rel="noopener" title="Sonnet 5.5 Is Here. Look What It Can Build.">
+  <img src="https://i1.ytimg.com/vi/T-E7rmD6rh4/hqdefault.jpg" alt="Video: Claude Sonnet 5.5 capabilities demonstration" loading="lazy">
+  <span class="video-card-title">Claude Sonnet 5.5 capabilities demonstration</span>
+  <span class="video-card-meta">Matthew Berman, September 29, 2026</span>
+  <span class="video-card-desc">Hands-on demonstration of Claude Sonnet 5.5 capabilities and what it can build.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=ENWVpqtOdRI" target="_blank" rel="noopener" title="Claude Sonnet 5.5 Is INSANE, Seriously, This Model Is Ridiculous!">
   <img src="https://i2.ytimg.com/vi/ENWVpqtOdRI/hqdefault.jpg" alt="Video: Claude Sonnet 5.5 hands-on testing and capabilities" loading="lazy">
   <span class="video-card-title">Claude Sonnet 5.5 hands-on testing and capabilities</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI safety warnings and researcher calls to pace development</span>
   <span class="video-card-meta">AI Explained, September 16, 2026</span>
   <span class="video-card-desc">Analysis of recent safety warnings and calls to slow AI development from leading researchers and lab leaders.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=YoEWjZSwoys" target="_blank" rel="noopener" title="Claude Is Now Leaving Invisible Fingerprints In Its Text">
-  <img src="https://i2.ytimg.com/vi/YoEWjZSwoys/hqdefault.jpg" alt="Video: Statistical fingerprints in Claude model outputs" loading="lazy">
-  <span class="video-card-title">Statistical fingerprints in Claude model outputs</span>
-  <span class="video-card-meta">Two Minute Papers, September 15, 2026</span>
-  <span class="video-card-desc">Claude model analysis reveals that the model leaves detectable statistical patterns in its output text, with implications for authenticity and detection.</span>
 </a>
 </div>
 
