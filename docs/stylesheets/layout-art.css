@@ -568,6 +568,75 @@
 .isl .isl-ledge { stroke: #ffe2c4; stroke-opacity: 0.28; fill: none; }
 .isl .isl-llap2 { fill: var(--isl-lchair2); }
 .isl .isl-lgutter { stroke: var(--isl-lchair2); stroke-opacity: 0.6; fill: none; }
+/* The tool wall (the Tool Directory's head, 2026-09-29): the room shares the library's wall, wood,
+   aluminium and frame tokens, so the two interiors take the same light in each version; its own are
+   the pegboard, the painted outlines on it, and the cast iron. The hammer hangs in its outline only
+   at Night (isl-tqn); in every other version it lies on the bench (an isl-lq group, above). */
+.isl {
+  --isl-tboard: #86826d; --isl-tsil: #3d3b32; --isl-tpeg: #5d5a4b; --isl-tiron: #3a3e45; --isl-tbulb: #fff4d6;
+}
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
+  --isl-tboard: #3a392f; --isl-tsil: #1b1a16; --isl-tpeg: #2b2a23; --isl-tiron: #1d2024;
+}
+.isl[data-sky="day"] { --isl-tboard: #d8d1b2; --isl-tsil: #4a4638; --isl-tpeg: #aea68a; --isl-tiron: #4b535c; }
+.isl[data-sky="dawn"] { --isl-tboard: #aca5a2; --isl-tsil: #47414d; --isl-tpeg: #8a8387; --isl-tiron: #4a4e5c; }
+.isl[data-sky="sunset"] { --isl-tboard: #bfa684; --isl-tsil: #4a392b; --isl-tpeg: #9a8264; --isl-tiron: #474341; }
+.isl .isl-tboard { fill: var(--isl-tboard); }
+.isl .isl-tpeg { fill: var(--isl-tpeg); fill-opacity: 0.7; }
+.isl .isl-tsil { fill: var(--isl-tsil); stroke: var(--isl-tsil); fill-opacity: 0.85; stroke-opacity: 0.85; }
+.isl .isl-thook { stroke: var(--isl-tiron); fill: none; }
+.isl .isl-tiron { fill: var(--isl-tiron); }
+.isl .isl-tjaw { stroke: var(--isl-lalu); stroke-opacity: 0.6; fill: none; }
+.isl .isl-tteeth { stroke: var(--isl-tiron); stroke-opacity: 0.55; fill: none; }
+.isl .isl-tflute { stroke: #000000; stroke-opacity: 0.18; fill: none; }
+.isl .isl-tunder { fill: var(--isl-lside); fill-opacity: 0.55; }
+.isl .isl-tgrain { stroke: #000000; stroke-opacity: 0.12; fill: none; }
+.isl .isl-tshave { stroke: var(--isl-lbk3); stroke-opacity: 0.8; fill: none; stroke-linecap: round; }
+.isl .isl-tshade { fill: var(--isl-lshade); }
+.isl .isl-thandle { stroke: var(--isl-lwood2); fill: none; }
+.isl .isl-thandle2 { stroke: var(--isl-tiron); fill: none; }
+.isl .isl-tlid { stroke: #000000; stroke-opacity: 0.25; fill: none; }
+.isl .isl-tcord { stroke: var(--isl-tsil); fill: none; }
+.isl .isl-tdrop { fill: var(--isl-lside); fill-opacity: 0.22; }
+/* The prompting desk (Learning to Prompt's head, 2026-09-29): the room shares the library's and the
+   tool wall's tokens; the ribbon of light, the bubbles and the orb take the page's hue (the kind line
+   in the light scheme, the kind color in the dark), the one accent, and keep their own light by Day. */
+.isl .isl-tarm { stroke: var(--isl-tiron); fill: none; stroke-linecap: round; }
+.isl .isl-pribbon { fill: none; stroke-linecap: round; }
+.isl .isl-pword { stroke: #fff8e6; stroke-opacity: 0.85; fill: none; stroke-linecap: round; }
+.isl .isl-pbubble { fill: #fffdf6; fill-opacity: 0.9; stroke: var(--k-line, var(--isl-rim)); stroke-opacity: 0.55; stroke-width: 1.2; }
+.isl .isl-pline { stroke: var(--k-line, var(--isl-rim)); stroke-opacity: 0.55; fill: none; stroke-linecap: round; }
+.isl .isl-pdot { stroke: var(--k-line, var(--isl-rim)); fill: none; stroke-linecap: round; }
+.isl .isl-pring { stroke: var(--k-line, var(--isl-rim)); stroke-opacity: 0.5; fill: none; }
+.isl .isl-pspark { stroke: #ffffff; stroke-opacity: 0.8; fill: none; stroke-linecap: round; }
+.isl .isl-pruled { stroke: #6f93c2; stroke-opacity: 0.35; fill: none; }
+.isl .isl-phand { stroke: #2b3550; stroke-opacity: 0.7; fill: none; stroke-linecap: round; }
+.isl .isl-pcoil { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; }
+/* The bell tower (the Announcements page's head, 2026-09-29): the town and roofs are the Court House's
+   (dark shapes at Dawn, Sunset, Dusk and Night, pastel walls under red roofs by Day); the tower's stone
+   and the bell's bronze are the shared stone and brass; its own are the rings of sound, the birds, the
+   notice board's cork and its pinned notes. */
+.isl { --isl-bcork: #7a5c3e; }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] { --isl-bcork: #3a2c1f; }
+.isl[data-sky="day"] { --isl-bcork: #b88a5a; }
+.isl[data-sky="dawn"] { --isl-bcork: #8c6a5a; }
+.isl[data-sky="sunset"] { --isl-bcork: #9a6a44; }
+.isl .isl-vsill { stroke: var(--isl-vstone); fill: none; }
+.isl .isl-vbeam { stroke: var(--isl-tiron); fill: none; stroke-linecap: round; }
+.isl .isl-vvane { fill: var(--isl-tiron); }
+.isl .isl-bsound { stroke: #fff4d6; fill: none; stroke-linecap: round; }
+.isl[data-sky="day"] .isl-bsound { stroke: #ffffff; }
+.isl .isl-bbird { stroke: var(--isl-bird); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.isl .isl-bcork { fill: var(--isl-bcork); }
+.isl .isl-bnote { fill: var(--isl-lpage); }
+.isl .isl-bink { stroke: #3a3f4a; stroke-opacity: 0.45; fill: none; }
+.isl .isl-bpin { stroke: var(--isl-lbottle); fill: none; stroke-linecap: round; }
+[data-md-color-scheme="slate"] .isl :is(.isl-pbubble, .isl-pline, .isl-pdot, .isl-pring) { stroke: var(--k, var(--isl-rim)); }
+[data-md-color-scheme="slate"] .isl .isl-pbubble { fill: #e9ecf5; fill-opacity: 0.82; }
+.isl .isl-tbulb { fill: var(--isl-tbulb); }
+.isl .isl-tqn { display: none; }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-tqn,
+.isl[data-sky="night"] .isl-tqn { display: inline; }
 /* The caption (owner, 2026-09-29): one quiet line under the picture saying what it shows, then the
    time of day it is drawn at, linked (layout_art.py writes the words, island-vignettes.js adds the
    time). The picture gives up the caption's height, so the figure keeps its size: the top stays level
@@ -639,13 +708,8 @@
 .isl .isl-vhullband { fill: var(--isl-near); fill-opacity: 0.75; }
 .isl .isl-vdeck { stroke: var(--isl-near); stroke-opacity: 0.35; fill: none; }
 .isl .isl-vcannon { fill: var(--isl-near); }
-/* Nelson's Dockyard: the Copper and Lumber Store's brick; the Sail Loft pillars' shaded sides and
-   their reflections. */
-.isl { --isl-vbrick: #8a5a4c; }
-[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] { --isl-vbrick: #4a3035; }
-.isl .isl-vbrick { fill: var(--isl-vbrick); }
+/* The shaded side of stonework (the telescope's wall, the bell tower's shaft). */
 .isl .isl-vpshade { fill: var(--isl-near); fill-opacity: 0.3; }
-.isl .isl-vpback { fill: var(--isl-vstrata); }
 /* Sailing Week's sails and spinnakers (one in the page's hue), and the steps' stone treads. */
 .isl { --isl-vsail: #e9edf2; --isl-vspin: #b9a6c9; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] { --isl-vsail: #8d9bad; --isl-vspin: #6c6282; }
@@ -709,16 +773,15 @@
 .isl .isl-vsails { transform-box: view-box; }
 .isl-vig.isl-vrun .isl-vsails { animation: isl-vturn 3.4s cubic-bezier(.2, .6, .3, 1) 0.4s both; }
 @keyframes isl-vturn { from { transform: rotate(-90deg); } to { transform: rotate(0deg); } }
-.isl .isl-vpreflect { fill: var(--isl-vstone); fill-opacity: 0.22; }
-/* The Pillars of Hercules' limestone: its face in the last light, its strata and its hollows. */
+/* Stone: the pale limestone and its darker courses, shared by every building's facade gradient
+   (islvfacade), its quoins and its mullions (the Pillars of Hercules that first used it was retired,
+   2026-09-29). */
 .isl { --isl-vstone: #a39a86; --isl-vstrata: #7f7765; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] { --isl-vstone: #3b4049; --isl-vstrata: #2a2e36; }
 .isl .isl-vstone { fill: var(--isl-vstone); }
 .isl .isl-vmul { stroke: var(--isl-vriser); stroke-opacity: 0.55; fill: none; }
 .isl .st-vstone { stop-color: var(--isl-vstone); }
 .isl .st-vstrata { stop-color: var(--isl-vstrata); }
-.isl .isl-vstrata { stroke: var(--isl-vstrata); stroke-opacity: 0.8; fill: none; }
-.isl .st-vhol { stop-color: var(--isl-near); }
 .isl .isl-vpennant { fill: var(--k-line, var(--isl-rim)); }
 [data-md-color-scheme="slate"] .isl .isl-vpennant { fill: var(--k, var(--isl-rim)); }
 /* Galleon Beach's sand and the surf at the point: pale, catching the last light. */

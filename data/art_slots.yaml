@@ -73,7 +73,15 @@ slots:
   # the guides index (pillars-of-hercules) and the Lecture Outline
   # (nelsons-dockyard) were not: news and the guides should have art about
   # what they are, and art on one example page but not the others reads oddly.
-  # Those three drawings are kept in island-vignettes.js, unplaced, for later.
+  # St John's Harbour later took the About page. The other two were retired on
+  # 2026-09-29 (owner: the Pillars "probably not quite up to the same level of
+  # quality"; "retire both"), since every page with art downloads the drawings.
+  #
+  # Art round 7 (owner, 2026-09-29): pictures for the pages with an empty space
+  # beside the title, each tied to the page's title at a glance ("I want someone
+  # to look at the image and immediately be able to tie it to the title of the
+  # page"); not necessarily Antigua or a real place, and "fantastical or sci-fi"
+  # where that fits better; still in five times of day wherever sky shows.
 
   # The For Students landing's head, where the frame was empty beside the
   # title (800x320 at 1920, the top of the page): Shirley Heights at dusk,
@@ -134,6 +142,33 @@ slots:
     section: _head
     piece: telescope
     kind: lesson
+    fit: text
+
+  # The Tool Directory's head: the tool wall, a workshop's shadow board with every tool in its painted
+  # outline (owner, 2026-09-29: art that ties to the page's title at a glance; "it doesn't have to be a
+  # location"). Not a particular place, so no caption.
+  - page: tools/index.md
+    section: _head
+    piece: tool-wall
+    kind: tool
+    fit: text
+
+  # Learning to Prompt's head: the prompting desk, a notebook's handwriting lifting off the page as a
+  # ribbon of light into a speech bubble, answered by a glowing orb (owner, 2026-09-29: art tied to the
+  # title at a glance, "fantastical or sci-fi" where it fits better). Not a place, so no caption.
+  - page: prompts/learning.md
+    section: _head
+    piece: prompt-desk
+    kind: prompt
+    fit: text
+
+  # The Announcements page's head: the bell tower, its bell mid-swing and rings of sound spreading, a
+  # notice board of pinned notes at its foot (owner, 2026-09-29: art tied to the title at a glance).
+  # Not a particular place, so no caption.
+  - page: announcements/index.md
+    section: _head
+    piece: bell-tower
+    kind: news
     fit: text
 
   # Tools & Prompts: the Betty's Hope sugar mill, a tool that turns wind

@@ -569,103 +569,6 @@
     return s;
   }
 
-  /* THE PILLARS OF HERCULES (the guides index's head): the limestone cliff at the east side of English
-     Harbour's mouth, below Shirley Heights, for centuries a landmark sailors steered by. Seen from the
-     water facing north, traced from the sea-level reference in the art's source folder
-     (references/web-pillars-of-hercules-sea): the cliff is its own mass, a scrub-capped dome sloping
-     down on the left and ending steeply on the right in fallen blocks; its face is finely layered in
-     thin, wavering strata; and along its foot the sea has worn tall hollows, narrow and rounded at the
-     top and flaring below, that leave the pillars standing between them like organ pipes. The rock
-     shelf, loose blocks and surf at the waterline; the harbour's far shore low on the left; the open
-     sea on the right; a pennant in the page's hue on the flagpole above the cliff. */
-  function pillars(W, H, v) {
-    const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(91);
-    const P = (pts) => pts.map(([x, y]) => [X(x), Y(y)]);
-    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
-    const scrub = (pts, n, s0, s1) => {
-      let d = '';
-      for (let i = 0; i < pts.length - 1; i++) {
-        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
-        for (let j = 0; j < n; j++) {
-          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
-          d += `M${F(x - rr)} ${F(y + rr * 0.4)}a${F(rr)} ${F(rr * 0.85)} 0 0 1 ${F(2 * rr)} 0Z`;
-        }
-      }
-      return d;
-    };
-    const lights = [];
-    let s = `<rect y="${F(y0)}" width="${F(W)}" height="${F(H - y0)}" fill="url(#islvbay)"/>`;
-    // The harbour's far shore, low on the left, with a few lit houses.
-    const far = P([[-0.02, 0.69], [0.02, 0.665], [0.06, 0.66], [0.1, 0.675], [0.12, 0.7], [-0.02, 0.7]]);
-    s += `<path class="f-far" d="${poly(far)}${scrub(far.slice(0, 4), 4, 0.7, 1.6)}"/>`;
-    for (let i = 0; i < 5; i++) lights.push([X(0.005 + r() * 0.1), Y(0.668 + r() * 0.02), 1]);
-    // 1. The cliff's outline: the scrub cap's dome, then the face down to the waterline.
-    const crest = [[0.04, 0.66], [0.08, 0.56], [0.13, 0.48], [0.19, 0.42], [0.26, 0.37], [0.33, 0.335], [0.4, 0.31],
-      [0.47, 0.295], [0.54, 0.29], [0.61, 0.3], [0.68, 0.32], [0.75, 0.35], [0.81, 0.39], [0.86, 0.43], [0.9, 0.48],
-      [0.93, 0.54], [0.955, 0.6], [0.965, 0.66]];
-    // the line where the scrub gives way to the bare face
-    const lip = [[0.1, 0.58], [0.16, 0.5], [0.22, 0.455], [0.3, 0.42], [0.38, 0.4], [0.46, 0.39], [0.54, 0.385],
-      [0.62, 0.39], [0.7, 0.405], [0.77, 0.43], [0.83, 0.465], [0.88, 0.51], [0.92, 0.57]];
-    const base = 0.72;
-    const face = P([...lip, [0.95, 0.63], [0.955, base], [0.08, base], [0.07, 0.66]]);
-    const cap = P([...crest, [0.955, 0.63], ...lip.slice().reverse(), [0.06, 0.67]]);
-    s += `<defs><clipPath id="islvface"><path d="${poly(face)}"/></clipPath></defs>`;
-    s += `<path class="isl-vstone" d="${poly(face)}"/>`;
-    // 2. The strata: many thin wavering bands across the face.
-    let strata = '';
-    for (let k = 0; k < 14; k++) {
-      const y = 0.4 + k * 0.023;
-      let d = '';
-      for (let x = 0.06; x <= 0.97; x += 0.015) d += `${d ? 'L' : 'M'}${F(X(x))} ${F(Y(y + Math.sin(x * 19 + k * 0.7) * 0.005 + (x - 0.5) * 0.02 * Math.sin(k)))}`;
-      strata += d;
-    }
-    s += `<g clip-path="url(#islvface)"><path class="isl-vstrata" d="${strata}" stroke-width="${F(Math.max(0.8, Y(0.0035)))}"/></g>`;
-    // 3. The pillars: hollows narrow and rounded at the top, flaring toward the foot, of uneven size.
-    let hollows = '';
-    const cols = [[0.15, 0.03, 0.62], [0.2, 0.024, 0.6], [0.255, 0.036, 0.57], [0.315, 0.03, 0.555], [0.37, 0.042, 0.535],
-      [0.43, 0.034, 0.55], [0.49, 0.046, 0.53], [0.555, 0.036, 0.545], [0.615, 0.044, 0.53], [0.68, 0.034, 0.55],
-      [0.74, 0.04, 0.545], [0.8, 0.03, 0.57], [0.85, 0.026, 0.6]];
-    // Each hollow is a pointed arch as wide at its foot as the spacing, so neighbours meet at the
-    // waterline and the stone between them stands as a column, broad where it joins the face above.
-    for (let i = 0; i < cols.length; i++) {
-      const [cx, , cf] = cols[i];
-      const gap = i + 1 < cols.length ? cols[i + 1][0] - cx : cx - cols[i - 1][0];
-      const x = X(cx + (r() - 0.5) * 0.004), wb = X(gap * 0.98), crown = Y(cf + (r() - 0.5) * 0.02), foot = Y(base);
-      const shoulder = crown + (foot - crown) * 0.42;
-      hollows += `M${F(x - wb / 2)} ${F(foot)}C${F(x - wb * 0.46)} ${F(shoulder)} ${F(x - wb * 0.2)} ${F(crown + (foot - crown) * 0.12)} ${F(x)} ${F(crown)}`
-        + `C${F(x + wb * 0.2)} ${F(crown + (foot - crown) * 0.12)} ${F(x + wb * 0.46)} ${F(shoulder)} ${F(x + wb / 2)} ${F(foot)}Z`;
-    }
-    s += `<path class="isl-vhollow" d="${hollows}" fill="url(#islvhol)"/>`;
-    // 4. The scrub cap over the face.
-    s += `<path class="f-near" d="${poly(cap)}${scrub(P(crest.slice(1, 16)), 7, 1.3, 3.2)}"/>`;
-    // 5. The flagpole on the dome, its pennant in the page's hue.
-    const fx = X(0.43), fy = Y(0.305);
-    s += `<path class="isl-vmast" d="M${F(fx)} ${F(fy)}V${F(fy - Y(0.16))}" stroke-width="1.3"/>`;
-    s += `<path class="isl-vpennant" d="M${F(fx)} ${F(fy - Y(0.16))}L${F(fx + X(0.028))} ${F(fy - Y(0.145))}L${F(fx)} ${F(fy - Y(0.13))}Z"/>`;
-    // 6. The foot: the rock shelf, fallen blocks at the right end, and the surf.
-    let blocks = '';
-    for (let i = 0; i < 14; i++) {
-      const x = X(0.07 + r() * 0.9), y = Y(base + 0.005 + r() * 0.02), rr = X(0.004 + r() * 0.009);
-      blocks += `M${F(x - rr)} ${F(y)}a${F(rr)} ${F(rr * 0.75)} 0 0 1 ${F(2 * rr)} 0Z`;
-    }
-    for (let i = 0; i < 8; i++) {
-      const x = X(0.93 + r() * 0.06), y = Y(0.66 + r() * 0.07), rr = X(0.007 + r() * 0.01);
-      blocks += `M${F(x - rr)} ${F(y)}a${F(rr)} ${F(rr * 0.8)} 0 0 1 ${F(2 * rr)} 0Z`;
-    }
-    const shelf = P([[0.05, base + 0.012], [0.1, base], [0.95, base], [0.98, base + 0.02], [0.9, base + 0.035], [0.1, base + 0.035]]);
-    s += `<path class="f-near" d="${poly(shelf)}"/><path class="isl-vstone" d="${blocks}"/>`;
-    let surf = '';
-    for (let i = 0; i < 18; i++) {
-      const x = 0.06 + r() * 0.9, len = 0.02 + r() * 0.05;
-      surf += `M${F(X(x))} ${F(Y(base + 0.04 + r() * 0.012))}h${F(X(len))}`;
-    }
-    s += `<path class="isl-vsurf" d="${surf}" stroke-width="${F(Math.max(1.2, Y(0.006)))}"/>`;
-    // The far shore's lights, in the one pass.
-    const d = lights.map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('');
-    s += `<path class="s-vlight isl-vwin isl-vlast" style="--i:2" d="${d}" stroke-width="1.5"/>`;
-    return s;
-  }
-
   /* CURTAIN BLUFF (the For Faculty & Staff landing's head): the homepage's view until the campus took
      its place (owner, 2026-09-27), moved here as he asked. The view west from the tip of Curtain Bluff
      at the same moment, drawn by the coast world (Montserrat, Redonda, Nevis and Guadeloupe on the
@@ -1344,93 +1247,6 @@
     return s;
   }
 
-  /* NELSON'S DOCKYARD (beside the Lecture Outline's checks, where the campus stood until it moved to
-     the homepage): the Georgian naval dockyard at English Harbour, a UNESCO World Heritage Site. In
-     front, standing in the harbour, the Sail Loft's pillars: the capped stone columns that are all
-     that is left of the 1797 boat house and sail loft after the earthquake of 1871, with their
-     reflections. Behind them at the quay the Copper and Lumber Store of 1789, its arched ground floor
-     and upper windows lit; yachts' masts along the water to the right; above, the ridge of Shirley
-     Heights with the lookout's lights on its top. A lamp on the quay takes the page's hue. */
-  function dockyard(W, H, v) {
-    const X = (f) => f * W, Y = (f) => f * H, r = rng(83);
-    const P = (pts) => pts.map(([x, y]) => [X(x), Y(y)]);
-    const poly = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
-    const arch = (x, yTop, w, yBot) => `M${F(x - w / 2)} ${F(yBot)}V${F(yTop + w / 2)}A${F(w / 2)} ${F(w / 2)} 0 0 1 ${F(x + w / 2)} ${F(yTop + w / 2)}V${F(yBot)}Z`;
-    const scrub = (pts, n, s0, s1) => {
-      let d = '';
-      for (let i = 0; i < pts.length - 1; i++) {
-        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
-        for (let j = 0; j < n; j++) {
-          const t2 = r(), x = xa + (xb - xa) * t2, y = ya + (yb - ya) * t2, rr = s0 + r() * (s1 - s0);
-          d += `M${F(x - rr)} ${F(y + rr * 0.45)}a${F(rr)} ${F(rr * 0.82)} 0 0 1 ${F(2 * rr)} 0Z`;
-        }
-      }
-      return d;
-    };
-    const lights = [[], [], []];      // 0 the Store, 1 the masts, 2 the ridge
-    const wl = Y(0.63);               // the quay's waterline
-    let s = `<rect y="${F(v.y0)}" width="${F(W)}" height="${F(H - v.y0)}" fill="url(#islvbay)"/>`;
-    // 1. The ridge of Shirley Heights, the lookout's lights on its top.
-    const ridge = P([[-0.02, 0.46], [0.1, 0.43], [0.22, 0.4], [0.34, 0.37], [0.46, 0.34], [0.56, 0.31], [0.64, 0.28],
-      [0.72, 0.27], [0.8, 0.29], [0.9, 0.33], [1.02, 0.36], [1.02, 0.6], [-0.02, 0.6]]);
-    s += `<path class="f-isl" d="${poly(ridge)}${scrub(ridge.slice(0, 11), 5, 0.9, 2.2)}"/>`;
-    for (let i = 0; i < 6; i++) lights[2].push([X(0.69 + i * 0.012), Y(0.268 + (r() - 0.5) * 0.006)]);
-    for (let i = 0; i < 10; i++) lights[2].push([X(0.1 + r() * 0.85), Y(0.42 + r() * 0.12)]);
-    // 2. The dockyard's ground at the quay.
-    s += `<path class="f-far" d="${poly(P([[-0.02, 0.56], [0.3, 0.55], [0.6, 0.56], [1.02, 0.57], [1.02, 0.635], [-0.02, 0.635]]))}"/>`;
-    // 3. The Copper and Lumber Store: two storeys of brick, a hipped roof, an arcade below.
-    const x0 = X(0.05), x1 = X(0.56), top = Y(0.475), mid = Y(0.555), bays = 9, bw = (x1 - x0) / bays;
-    s += `<rect class="isl-vglow" x="${F(x0)}" y="${F(top)}" width="${F(x1 - x0)}" height="${F(wl - top)}" fill="url(#islvwarm)"/>`;
-    s += `<path class="isl-vbrick" d="M${F(x0)} ${F(wl)}V${F(top)}H${F(x1)}V${F(wl)}Z"/>`;
-    s += `<path class="isl-vroof2" d="M${F(x0 - X(0.01))} ${F(top + 1)}L${F(x0 + X(0.04))} ${F(top - Y(0.04))}H${F(x1 - X(0.04))}L${F(x1 + X(0.01))} ${F(top + 1)}Z"/>`;
-    s += `<path class="s-hz" d="M${F(x0)} ${F(mid)}H${F(x1)}" stroke-width="1"/>`;
-    let arches = '', wins = '';
-    for (let i = 0; i < bays; i++) {
-      const x = x0 + (i + 0.5) * bw;
-      arches += arch(x, mid + Y(0.012), bw * 0.56, wl);
-      wins += `M${F(x - bw * 0.16)} ${F(top + Y(0.018))}h${F(bw * 0.32)}v${F(Y(0.045))}h${F(-bw * 0.32)}Z`;
-    }
-    s += `<path class="f-pulse isl-vwin" style="--i:0" d="${arches}"/>`;
-    s += `<path class="f-pulse isl-vwin" style="--i:1" d="${wins}"/>`;
-    // the quay lamp, in the page's hue
-    const lx = X(0.6), ly = Y(0.53);
-    s += `<path class="f-near" d="M${F(lx - 1)} ${F(wl)}V${F(ly)}H${F(lx + 1)}V${F(wl)}Z"/>`;
-    s += `<circle cx="${F(lx)}" cy="${F(ly)}" r="${F(Y(0.045))}" fill="url(#islvlamp)"/>`;
-    s += `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly)}" r="${F(Math.max(1.5, Y(0.006)))}"/>`;
-    // 4. Yachts along the quay to the right: masts, hulls, masthead lights, reflections.
-    let masts = '', hulls = '', refl = '';
-    for (let i = 0; i < 9; i++) {
-      const x = X(0.64 + i * 0.042 + (r() - 0.5) * 0.01), mh = Y(0.18 + r() * 0.1), hw = X(0.018);
-      masts += `M${F(x)} ${F(wl - Y(0.008))}V${F(wl - mh)}`;
-      hulls += `M${F(x - hw)} ${F(wl - Y(0.012))}H${F(x + hw)}L${F(x + hw * 0.8)} ${F(wl + Y(0.004))}H${F(x - hw * 0.8)}Z`;
-      lights[1].push([x, wl - mh]);
-      refl += `<rect x="${F(x - 0.6)}" y="${F(wl + Y(0.008))}" width="1.2" height="${F(Y(0.08))}" fill="url(#islvrefl)"/>`;
-    }
-    s += `<path class="isl-vmast" d="${masts}" stroke-width="0.9"/><path class="isl-vhull" d="${hulls}"/>`;
-    // 5. The Sail Loft's pillars in the harbour: a double row seen from the side, the nearer row large
-    //    and capped, the farther row showing between them.
-    const foot = Y(0.9), capTop = Y(0.66), pw = X(0.07);
-    let back = '', front = '', caps = '', shade = '', prefl = '';
-    const n = 6;
-    for (let i = 0; i < n; i++) {
-      const x = X(0.1 + i * 0.16), wv = pw * (0.92 + r() * 0.16), ct = capTop + Y((r() - 0.5) * 0.02);
-      back += `M${F(x + pw * 0.95)} ${F(foot - Y(0.05))}V${F(capTop + Y(0.03))}H${F(x + pw * 1.55)}V${F(foot - Y(0.05))}Z`;
-      front += `M${F(x)} ${F(foot)}V${F(ct)}H${F(x + wv)}V${F(foot)}Z`;
-      caps += `M${F(x - wv * 0.08)} ${F(ct + 1)}V${F(ct - Y(0.016))}H${F(x + wv * 1.08)}V${F(ct + 1)}Z`;
-      shade += `M${F(x + wv * 0.7)} ${F(foot)}V${F(ct)}H${F(x + wv)}V${F(foot)}Z`;
-      prefl += `M${F(x)} ${F(foot)}H${F(x + pw)}L${F(x + pw * 0.9)} ${F(Math.min(H, foot + Y(0.1)))}H${F(x + pw * 0.1)}Z`;
-    }
-    s += `<path class="isl-vpback" d="${back}"/>`;
-    s += `<path class="isl-vpreflect" d="${prefl}"/>`;
-    s += `<path class="isl-vstone" d="${front}${caps}"/><path class="isl-vpshade" d="${shade}"/>`;
-    s += `<g class="isl-vlamps">${refl}</g>`;
-    // The lights, the Store first, then the masts, then the ridge.
-    [[1, 1.7], [2, 1.5]].forEach(([g, sw], k) => {
-      s += `<path class="s-vlight isl-vwin${g === 2 ? ' isl-vlast' : ''}" style="--i:${2 + k * 2}" d="${lights[g].map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('')}" stroke-width="${sw}"/>`;
-    });
-    return s;
-  }
-
   /* ST JOHN'S HARBOUR (the About page, beside Contact and Purpose; redrawn to the section 19 finish on
      2026-09-28, the owner: "do another pass of that art using your new art specs"). St John's, the
      capital, seen from Fort James's rampart at the harbour mouth looking in, from the references in the
@@ -1908,6 +1724,444 @@
     return `<g style="--isl-vstep:.32s">${s}</g>`;
   }
 
+  /* THE TOOL WALL (the Tool Directory's head; owner, 2026-09-29: art that ties to the page's title at a
+     glance): a workshop's shadow board, every tool hanging in its own painted outline, which is what a
+     directory of tools looks like on a wall. By day the hammer is out on the bench and its outline is
+     empty; at Night it is back in place and the board is complete. A workbench below with a vise, a
+     block plane and its shavings; a lamp hanging between the board and the window, lit in the page's
+     hue; the window onto a harbour, boats at anchor, facing the Sun's setting bearing so the Sun sets in
+     it at Sunset. Drawn face on, the tools sized from the board so they keep their shapes as the head's
+     text changes the card's height. The harbour's lights come on, then the lamp, last. */
+  function toolFrame(W, H) {
+    const ww = clamp(H * 1.1, W * 0.2, W * 0.3), wx1 = W * 0.955, wx0 = wx1 - ww;
+    return { wx0, wx1, ww, wT: H * 0.1, wB: H * 0.62, hz: H * 0.46 };
+  }
+  // The shadow board's tools, each drawn hanging from its hook at (0, 0), s the tool scale: its painted
+  // outline (the same shape, grown by a stroke), and its parts by material.
+  const TOOLS = {
+    saw: (s) => {
+      const blade = polyD([[-0.06 * s, 0.17 * s], [0.1 * s, 0.17 * s], [0.045 * s, 0.84 * s], [-0.035 * s, 0.84 * s]]);
+      let teeth = '';
+      for (let t = 0; t < 1; t += 0.06) {
+        const x = 0.1 * s + (0.045 - 0.1) * s * t, y = 0.18 * s + 0.66 * s * t;
+        teeth += `M${F(x)} ${F(y)}l${F(0.02 * s)} ${F(0.018 * s)}l${F(-0.02 * s)} ${F(0.02 * s)}`;
+      }
+      const grip = `M${F(-0.09 * s)} ${F(0.2 * s)}V${F(0.05 * s)}Q${F(-0.09 * s)} 0 ${F(-0.04 * s)} 0H${F(0.05 * s)}Q${F(0.11 * s)} 0 ${F(0.11 * s)} ${F(0.06 * s)}V${F(0.2 * s)}Z`;
+      const hole = `M${F(-0.05 * s)} ${F(0.13 * s)}V${F(0.07 * s)}Q${F(-0.05 * s)} ${F(0.04 * s)} ${F(-0.02 * s)} ${F(0.04 * s)}H${F(0.05 * s)}Q${F(0.07 * s)} ${F(0.04 * s)} ${F(0.07 * s)} ${F(0.07 * s)}V${F(0.13 * s)}Z`;
+      return { sil: blade + grip, parts: [['isl-lalu', blade], ['isl-tteeth', teeth, 0.012 * s], ['isl-lwood', grip + hole, 0, 'evenodd']] };
+    },
+    hammer: (s) => {
+      const head = `M${F(-0.1 * s)} ${F(0.012 * s)}H${F(0.02 * s)}Q${F(0.1 * s)} ${F(0.01 * s)} ${F(0.13 * s)} ${F(0.07 * s)}Q${F(0.08 * s)} ${F(0.045 * s)} ${F(0.02 * s)} ${F(0.07 * s)}H${F(-0.1 * s)}Z`;
+      const face = rect(-0.12 * s, 0, 0.035 * s, 0.085 * s);
+      const handle = `M${F(-0.025 * s)} ${F(0.07 * s)}H${F(0.02 * s)}L${F(0.028 * s)} ${F(0.58 * s)}Q${F(0 * s)} ${F(0.63 * s)} ${F(-0.03 * s)} ${F(0.58 * s)}Z`;
+      return { sil: head + face + handle, parts: [['isl-lbk3', handle], ['isl-tiron', head + face]] };
+    },
+    wrench: (s) => {
+      const jaw = `M${F(-0.075 * s)} ${F(0.17 * s)}V${F(0.045 * s)}Q${F(-0.075 * s)} 0 ${F(-0.035 * s)} 0H${F(-0.016 * s)}V${F(0.085 * s)}H${F(0.016 * s)}V0H${F(0.035 * s)}Q${F(0.075 * s)} 0 ${F(0.075 * s)} ${F(0.045 * s)}V${F(0.17 * s)}Z`;
+      const bar = `M${F(-0.034 * s)} ${F(0.16 * s)}H${F(0.034 * s)}L${F(0.03 * s)} ${F(0.66 * s)}Q${F(0.03 * s)} ${F(0.7 * s)} ${F(0 * s)} ${F(0.7 * s)}Q${F(-0.03 * s)} ${F(0.7 * s)} ${F(-0.03 * s)} ${F(0.66 * s)}Z`;
+      const hole = `M${F(-0.012 * s)} ${F(0.64 * s)}a${F(0.012 * s)} ${F(0.012 * s)} 0 1 0 ${F(0.024 * s)} 0a${F(0.012 * s)} ${F(0.012 * s)} 0 1 0 ${F(-0.024 * s)} 0Z`;
+      return { sil: jaw + bar, parts: [['isl-lalu', jaw + bar + hole, 0, 'evenodd']] };
+    },
+    drivers: (s) => {
+      let sil = '';
+      const parts = [];
+      [[-0.1, 0.62, 'isl-lbottle'], [0, 0.52, 'isl-lbottle2'], [0.1, 0.44, 'isl-lbk3']].forEach(([dx, len, cls]) => {
+        const x = dx * s, grip = `M${F(x - 0.03 * s)} ${F(0.2 * s)}V${F(0.03 * s)}Q${F(x - 0.03 * s)} 0 ${F(x)} 0Q${F(x + 0.03 * s)} 0 ${F(x + 0.03 * s)} ${F(0.03 * s)}V${F(0.2 * s)}Z`;
+        const shaft = rect(x - 0.008 * s, 0.2 * s, 0.016 * s, (len - 0.2) * s);
+        const fer = rect(x - 0.018 * s, 0.195 * s, 0.036 * s, 0.03 * s);
+        sil += grip + shaft;
+        parts.push([cls, grip], ['isl-lalu', shaft + fer], ['isl-tflute', `M${F(x - 0.012 * s)} ${F(0.04 * s)}V${F(0.18 * s)}M${F(x + 0.012 * s)} ${F(0.04 * s)}V${F(0.18 * s)}`, 0.008 * s]);
+      });
+      return { sil, parts };
+    },
+    pliers: (s) => {
+      const arm = (sg) => `M${F(sg * 0.012 * s)} ${F(0.44 * s)}L${F(sg * 0.075 * s)} ${F(0.03 * s)}Q${F(sg * 0.068 * s)} 0 ${F(sg * 0.05 * s)} ${F(0.01 * s)}L${F(-sg * 0.012 * s)} ${F(0.42 * s)}Z`;
+      const grip = (sg) => `M${F(sg * 0.075 * s)} ${F(0.03 * s)}Q${F(sg * 0.068 * s)} 0 ${F(sg * 0.05 * s)} ${F(0.01 * s)}L${F(sg * 0.03 * s)} ${F(0.24 * s)}L${F(sg * 0.052 * s)} ${F(0.25 * s)}Z`;
+      const jaws = `M${F(-0.03 * s)} ${F(0.44 * s)}H${F(0.03 * s)}L${F(0.012 * s)} ${F(0.66 * s)}H${F(-0.012 * s)}Z`;
+      const pivot = `M${F(-0.02 * s)} ${F(0.43 * s)}a${F(0.02 * s)} ${F(0.02 * s)} 0 1 0 ${F(0.04 * s)} 0a${F(0.02 * s)} ${F(0.02 * s)} 0 1 0 ${F(-0.04 * s)} 0Z`;
+      return { sil: arm(-1) + arm(1) + jaws, parts: [['isl-lalu', arm(-1) + arm(1) + jaws], ['isl-lbottle', grip(-1) + grip(1)], ['isl-tiron', pivot]] };
+    },
+    chisels: (s) => {
+      let sil = '';
+      const parts = [];
+      [-0.09, 0, 0.09].forEach((dx, i) => {
+        const x = dx * s, w = (0.022 - i * 0.004) * s;
+        const grip = `M${F(x - 0.026 * s)} ${F(0.15 * s)}V${F(0.025 * s)}Q${F(x - 0.026 * s)} 0 ${F(x)} 0Q${F(x + 0.026 * s)} 0 ${F(x + 0.026 * s)} ${F(0.025 * s)}V${F(0.15 * s)}Z`;
+        const blade = `M${F(x - w)} ${F(0.16 * s)}H${F(x + w)}V${F(0.34 * s)}L${F(x - w)} ${F(0.37 * s)}Z`;
+        sil += grip + blade;
+        parts.push(['isl-lwood', grip], ['isl-tiron', rect(x - 0.02 * s, 0.145 * s, 0.04 * s, 0.022 * s)], ['isl-lalu', blade]);
+      });
+      return { sil, parts };
+    },
+    // chisels on top and, under them, a tape measure hung by its clip
+    chiseltape: (s) => {
+      const c = TOOLS.chisels(s), cy = 0.53 * s, R = 0.085 * s;
+      const tape = `M${F(-R)} ${F(cy)}a${F(R)} ${F(R)} 0 1 0 ${F(2 * R)} 0a${F(R)} ${F(R)} 0 1 0 ${F(-2 * R)} 0Z`;
+      const tab = rect(R * 0.55, cy + R * 0.5, R * 0.75, R * 0.28);
+      const clip = rect(-R * 0.18, cy - R * 1.2, R * 0.36, R * 0.3);
+      const hub = `M${F(-R * 0.32)} ${F(cy)}a${F(R * 0.32)} ${F(R * 0.32)} 0 1 0 ${F(R * 0.64)} 0a${F(R * 0.32)} ${F(R * 0.32)} 0 1 0 ${F(-R * 0.64)} 0Z`;
+      return { sil: c.sil + tape + tab, parts: [...c.parts, ['isl-lbk3', tape], ['isl-tiron', hub + clip], ['isl-lalu', tab]] };
+    },
+    square: (s) => {
+      const L = polyD([[0, 0], [0.045 * s, 0], [0.045 * s, 0.5 * s], [0.3 * s, 0.5 * s], [0.3 * s, 0.545 * s], [0, 0.545 * s]]);
+      let ticks = '';
+      for (let t = 0.04; t < 0.49; t += 0.03) ticks += `M${F(0.045 * s)} ${F(t * s)}h${F((Math.round(t / 0.03) % 5 ? -0.012 : -0.022) * s)}`;
+      for (let t = 0.07; t < 0.29; t += 0.03) ticks += `M${F(t * s)} ${F(0.5 * s)}v${F((Math.round(t / 0.03) % 5 ? 0.012 : 0.022) * s)}`;
+      return { sil: L, parts: [['isl-lalu', L], ['isl-tteeth', ticks, 0.006 * s]] };
+    },
+  };
+  function toolWall(W, H, v) {
+    const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(523);
+    const { wx0, wx1, ww, wT, wB } = toolFrame(W, H);
+    const lights = [];
+    let s = '<defs><linearGradient id="isltwallg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lwall0"/><stop offset="1" class="st-lwall1"/></linearGradient></defs>';
+    // 1. Through the window: the far side of the harbour, its hills on the horizon rimmed by the
+    //    afterglow, mist at their foot; boats at anchor with their masts and masthead lights, each light
+    //    laying its column on the water, and the boats' faint reflections.
+    const hill = [[0, 0.01], [0.12, 0.05], [0.26, 0.085], [0.38, 0.07], [0.5, 0.045], [0.66, 0.06], [0.8, 0.035], [1, 0.015]]
+      .map(([x, h]) => [wx0 + ww * x, y0 - Y(h)]);
+    const farLand = `<path class="f-isl" d="${polyD([[wx0 - 2, y0 + 1], ...hill, [wx1 + 2, y0 + 1]])}${scrubLine(hill, 2, 0.5, 1.1, r)}"/>`;
+    s += farLand + `<path class="s-rim" d="${lineD(hill.map(([x, y]) => [x, y + 0.5]))}" stroke-width="1" stroke-opacity=".3"/>`;
+    s += mirrored(y0, farLand, 0.16) + mist(wx0, y0, ww, Y(0.05), 0.45);
+    for (let i = 0; i < 7; i++) lights.push([wx0 + ww * (0.05 + r() * 0.9), y0 - Y(0.006 + r() * 0.03)]);
+    let hulls = '', masts = '';
+    for (const [fx, fy, k] of [[0.2, 0.1, 0.9], [0.5, 0.06, 0.7], [0.78, 0.13, 1.1]]) {
+      const bx = wx0 + ww * fx, by = y0 + Y(fy), hw = Y(0.045) * k, mh = Y(0.24) * k;
+      const hull = `M${F(bx - hw)} ${F(by - Y(0.016) * k)}H${F(bx + hw)}L${F(bx + hw * 0.72)} ${F(by)}H${F(bx - hw * 0.78)}Z`;
+      hulls += hull;
+      masts += `M${F(bx)} ${F(by - Y(0.016) * k)}V${F(by - mh)}M${F(bx)} ${F(by - mh * 0.85)}L${F(bx + hw * 0.9)} ${F(by - Y(0.02) * k)}`;
+      lights.push([bx, by - mh]);
+      s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.08, 0.16, 0.3]);
+      s += `<g opacity=".15"><g transform="translate(0 ${F(2 * by)}) scale(1 -1)"><path class="isl-vhull" d="${hull}"/><path class="isl-vmast" d="M${F(bx)} ${F(by)}V${F(by - mh)}" stroke-width=".8"/></g></g>`;
+    }
+    s += `<path class="isl-vhull" d="${hulls}"/><path class="isl-vmast" d="${masts}" stroke-width=".8"/>`;
+    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
+    // 2. The wall with the window cut out of it, the reveal's shadow on its left and sill sides, the
+    //    frame, one mullion and one transom, and the sill.
+    s += `<path fill="url(#isltwallg)" fill-rule="evenodd" d="${rect(-2, -2, W + 4, H + 4)}${rect(wx0, wT, ww, wB - wT)}"/>`;
+    const rv = Math.max(2, Y(0.025));
+    s += `<path class="isl-lsidew" d="${polyD([[wx0, wT], [wx0 + rv, wT + rv], [wx0 + rv, wB], [wx0, wB]])}${rect(wx0, wB - rv, ww, rv)}"/>`;
+    s += `<path class="isl-lframe" d="${rect(wx0, wT, ww, wB - wT)}" stroke-width="${F(Math.max(1.5, Y(0.018)))}"/>`
+      + `<path class="isl-lframe" d="M${F(wx0 + ww * 0.5)} ${F(wT)}V${F(wB)}M${F(wx0)} ${F(wT + (wB - wT) * 0.42)}H${F(wx1)}" stroke-width="${F(Math.max(1, Y(0.011)))}"/>`
+      + `<path class="isl-lsill" d="${rect(wx0 - Y(0.02), wB, ww + Y(0.04), Math.max(2, Y(0.022)))}"/>`;
+    // 3. The shadow board: a pegboard in a wooden frame, its holes in rows, each tool in its painted
+    //    outline on a hook.
+    const lampGap = clamp(H * 0.42, W * 0.08, W * 0.14);
+    const bx0 = X(0.035), bx1 = wx0 - lampGap, bT = Y(0.07), bB = Y(0.66), bw = bx1 - bx0, bh = bB - bT;
+    s += `<path class="isl-tdrop" d="${rect(bx0 + Y(0.01), bT + Y(0.02), bw + Y(0.012), bh + Y(0.01))}"/>`;
+    s += `<path class="isl-tboard" d="${rect(bx0, bT, bw, bh)}"/>`;
+    let holes = '';
+    const hs = Math.max(5, bh * 0.07), hr = Math.max(0.45, bh * 0.006);
+    for (let y = bT + hs * 0.6; y < bB - hs * 0.3; y += hs) for (let x = bx0 + hs * 0.6; x < bx1 - hs * 0.3; x += hs) holes += `M${F(x - hr)} ${F(y)}a${F(hr)} ${F(hr)} 0 1 0 ${F(2 * hr)} 0a${F(hr)} ${F(hr)} 0 1 0 ${F(-2 * hr)} 0Z`;
+    s += `<path class="isl-tpeg" d="${holes}"/>`;
+    s += `<path class="isl-lwood2" fill-rule="evenodd" d="${rect(bx0 - Y(0.018), bT - Y(0.018), bw + Y(0.036), bh + Y(0.036))}${rect(bx0, bT, bw, bh)}"/>`;
+    const order = [['saw', 0.22], ['hammer', 0.25], ['wrench', 0.15], ['drivers', 0.26], ['pliers', 0.15], ['chiseltape', 0.24], ['square', 0.3]];
+    const tw = order.reduce((a, [, w]) => a + w, 0), ts = Math.min(bh * 0.95, bw / (tw + 0.5)), gap = (bw - tw * ts) / (order.length + 1);
+    let x = bx0 + gap, sil = '', hooks = '', board = '', hammerX = 0;
+    for (const [k, w] of order) {
+      const cx = k === 'square' ? x + 0.02 * ts : x + (w * ts) / 2, top = bT + bh * 0.1;
+      const t = TOOLS[k](ts);
+      const at = `translate(${F(cx)} ${F(top)})`;
+      sil += `<path transform="${at}" d="${t.sil}"/>`;
+      hooks += `M${F(cx + (k === 'square' ? 0.02 * ts : 0))} ${F(top - bh * 0.035)}v${F(bh * 0.05)}`;
+      const drawn = t.parts.map(([cls, d, sw, rule]) => sw
+        ? `<path class="${cls}" d="${d}" stroke-width="${F(Math.max(0.5, sw))}"/>`
+        : `<path class="${cls}" d="${d}"${rule ? ` fill-rule="${rule}"` : ''}/>`).join('');
+      if (k === 'hammer') { hammerX = cx; board += `<g class="isl-tqn" transform="${at}">${drawn}</g>`; }
+      else board += `<g transform="${at}">${drawn}</g>`;
+      x += w * ts + gap;
+    }
+    s += `<g class="isl-tsil" stroke-width="${F(Math.max(1.2, ts * 0.03))}" stroke-linejoin="round">${sil}</g>`;
+    s += `<path class="isl-thook" d="${hooks}" stroke-width="${F(Math.max(1, ts * 0.018))}" stroke-linecap="round"/>` + board;
+    // 4. The bench: its top seen a little from above, its front, its legs, and the dark beneath it; a
+    //    vise at its left end. By day the hammer lies on it under its empty outline, with a block plane
+    //    and a curl of shavings; at Night it is cleared.
+    const tTop = Y(0.705), tFront = Y(0.74), tFoot = Y(0.84), bench1 = wx1 + Y(0.1);
+    s += `<path class="isl-tunder" d="${rect(-2, tFoot, bench1 + 2, H - tFoot + 2)}"/>`;
+    let legs = '';
+    for (const lx of [X(0.03), (bench1 + X(0.03)) / 2, bench1 - Y(0.09)]) legs += rect(lx, tFoot, Y(0.05), H - tFoot + 2);
+    s += `<path class="isl-lwood2" d="${legs}"/>`;
+    s += `<path class="isl-lwood" d="${rect(-2, tTop, bench1 + 2, tFront - tTop)}"/><path class="isl-lwood2" d="${rect(-2, tFront, bench1 + 2, tFoot - tFront)}"/>`;
+    s += `<path class="isl-ledge" d="M-2 ${F(tFront)}H${F(bench1)}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+    let grain = '';
+    for (let i = 0; i < 4; i++) { const gy = tFront + (tFoot - tFront) * (0.2 + i * 0.2); grain += `M${F(X(0.02 + r() * 0.1))} ${F(gy)}H${F(X(0.3 + r() * 0.5))}`; }
+    s += `<path class="isl-tgrain" d="${grain}" stroke-width=".6"/>`;
+    // the vise at the bench's end: the fixed jaw bolted to the top, the moving jaw a little apart, the
+    // screw between them and its bar hanging through the end
+    const u = ts, vx = X(0.012), jw = u * 0.11, jh = u * 0.2, vT = tTop - jh;
+    s += `<path class="isl-tiron" d="${rect(vx + u * 0.16, vT, jw, jh + 0.5)}${rect(vx + u * 0.02, vT, jw, jh * 0.85)}${rect(vx, tTop - u * 0.02, u * 0.33, u * 0.025)}"/>`
+      + `<path class="isl-tjaw" d="M${F(vx + u * 0.02)} ${F(vT + 0.5)}h${F(jw)}M${F(vx + u * 0.16)} ${F(vT + 0.5)}h${F(jw)}" stroke-width="${F(Math.max(1, u * 0.014))}"/>`
+      + `<path class="isl-lalu" d="${rect(vx + u * 0.005, vT + jh * 0.45, u * 0.26, u * 0.018)}${rect(vx - u * 0.005, vT + jh * 0.05, u * 0.016, jh * 0.95)}"/>`;
+    // By day, in use: the hammer lying on the bench under its empty outline, a block plane with a curl
+    // of shavings, and an open toolbox with handles showing (Dawn, Day, Sunset, Dusk; cleared at Night).
+    const hx = hammerX - u * 0.26;
+    const hammerFlat = `<path class="isl-lbk3" d="M${F(hx)} ${F(tTop - u * 0.055)}H${F(hx + u * 0.5)}V${F(tTop + 0.5)}H${F(hx + u * 0.02)}Q${F(hx - u * 0.02)} ${F(tTop - u * 0.025)} ${F(hx)} ${F(tTop - u * 0.055)}Z"/>`
+      + `<path class="isl-tiron" d="M${F(hx + u * 0.49)} ${F(tTop + 0.5)}V${F(tTop - u * 0.2)}H${F(hx + u * 0.575)}V${F(tTop - u * 0.12)}Q${F(hx + u * 0.64)} ${F(tTop - u * 0.06)} ${F(hx + u * 0.62)} ${F(tTop + 0.5)}Z"/>`;
+    const px = bx0 + bw * 0.62, pw = u * 0.36, ph = u * 0.1;
+    const plane = `<path class="isl-tiron" d="M${F(px)} ${F(tTop + 0.5)}V${F(tTop - ph * 0.55)}L${F(px + pw * 0.1)} ${F(tTop - ph)}H${F(px + pw * 0.95)}L${F(px + pw)} ${F(tTop - ph * 0.6)}V${F(tTop + 0.5)}Z"/>`
+      + `<path class="isl-lwood" d="M${F(px + pw * 0.16)} ${F(tTop - ph)}a${F(pw * 0.08)} ${F(pw * 0.08)} 0 1 1 ${F(pw * 0.16)} 0ZM${F(px + pw * 0.62)} ${F(tTop - ph)}q${F(pw * 0.02)} ${F(-ph * 1.4)} ${F(pw * 0.24)} ${F(-ph * 1.1)}l${F(pw * 0.04)} ${F(ph * 1.1)}Z"/>`;
+    let shav = '';
+    for (let i = 0; i < 5; i++) { const sx2 = px + pw + u * (0.05 + i * 0.07), rr = u * (0.022 + r() * 0.018); shav += `M${F(sx2)} ${F(tTop)}a${F(rr)} ${F(rr)} 0 1 1 ${F(rr * 1.5)} ${F(-rr * 0.3)}a${F(rr * 0.6)} ${F(rr * 0.6)} 0 1 1 ${F(-rr * 0.8)} ${F(rr * 0.2)}`; }
+    const bxW = u * 0.62, bxT = (bx1 + wx0) / 2 - bxW / 2, bxH = u * 0.2, lid = u * 0.05;
+    const box = `<ellipse class="isl-tdrop" cx="${F(bxT + bxW * 0.55)}" cy="${F(tTop + u * 0.005)}" rx="${F(bxW * 0.56)}" ry="${F(u * 0.018)}"/>`
+      + `<path class="isl-lred" d="${rect(bxT, tTop - bxH, bxW, bxH + 0.5)}"/>`
+      + `<path class="isl-tlid" d="M${F(bxT - u * 0.01)} ${F(tTop - bxH + lid)}H${F(bxT + bxW + u * 0.01)}" stroke-width="${F(Math.max(1, u * 0.014))}"/>`
+      + `<path class="isl-lalu" d="${rect(bxT + bxW * 0.46, tTop - bxH + lid * 0.4, bxW * 0.08, lid * 1.2)}"/>`
+      + `<path class="isl-tiron" d="${rect(bxT + bxW * 0.3, tTop - bxH - u * 0.018, u * 0.02, u * 0.02)}${rect(bxT + bxW * 0.7 - u * 0.02, tTop - bxH - u * 0.018, u * 0.02, u * 0.02)}"/>`
+      + `<path class="isl-thandle2" d="M${F(bxT + bxW * 0.3 + u * 0.01)} ${F(tTop - bxH - u * 0.012)}V${F(tTop - bxH - u * 0.07)}H${F(bxT + bxW * 0.7 - u * 0.01)}V${F(tTop - bxH - u * 0.012)}" stroke-width="${F(Math.max(1.2, u * 0.022))}" stroke-linejoin="round"/>`
+      + `<path class="isl-lredsh" d="${rect(bxT + bxW * 0.8, tTop - bxH, bxW * 0.2, bxH + 0.5)}"/>`;
+    s += `<g class="isl-lq" data-q="aysd">${hammerFlat}${plane}<path class="isl-tshave" d="${shav}" stroke-width="${F(Math.max(0.8, u * 0.012))}"/>${box}</g>`;
+    // a pencil (the window faces west, so no sun lies on the bench by day; only the setting Sun reaches it)
+    s += `<path class="isl-lbk3" d="M${F(bx0 + bw * 0.43)} ${F(tTop - u * 0.02)}h${F(u * 0.26)}l${F(u * 0.04)} ${F(u * 0.01)}l${F(-u * 0.04)} ${F(u * 0.01)}h${F(-u * 0.26)}Z"/>`;
+    // 5. The lamp: its cord from the ceiling, an enamel shade, and lit, the bulb under it, its halo in the
+    //    page's hue, the light it spills down onto the bench and its pool there; the last light on.
+    const lx = (bx1 + wx0) / 2, lT = Y(0.08), lB = Y(0.19), rt = Y(0.022), rb = Y(0.1);
+    s += `<path class="isl-tcord" d="M${F(lx)} -2V${F(lT)}" stroke-width="${F(Math.max(1.4, Y(0.009)))}"/>`;
+    s += `<g class="isl-vlamps isl-vwin isl-vlast" style="--i:1">`
+      + `<path d="${polyD([[lx - rb * 0.9, lB], [lx + rb * 0.9, lB], [lx + rb * 2.6, tTop], [lx - rb * 2.6, tTop]])}" fill="url(#islvspill)"/>`
+      + pool(lx, tTop + Y(0.012), rb * 3.2, Y(0.03), 0.85) + halo(lx, lB, rb * 2.8, 'islvlamp')
+      + `<ellipse class="isl-tbulb" cx="${F(lx)}" cy="${F(lB + Y(0.008))}" rx="${F(rb * 0.45)}" ry="${F(Y(0.018))}"/></g>`;
+    s += `<path class="isl-tshade" d="M${F(lx - rt)} ${F(lT)}H${F(lx + rt)}L${F(lx + rb)} ${F(lB)}Q${F(lx)} ${F(lB + Y(0.02))} ${F(lx - rb)} ${F(lB)}Z"/>`
+      + `<path class="isl-lshadehi" d="M${F(lx - rt * 0.4)} ${F(lT + Y(0.01))}L${F(lx - rb * 0.6)} ${F(lB - Y(0.012))}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
+    return `<g style="--isl-vstep:.5s">${s}</g>`;
+  }
+
+  /* THE PROMPTING DESK (Learning to Prompt's head; owner, 2026-09-29: art tied to the title at a glance,
+     and "fantastical or sci-fi" where it fits better): a study desk by a window. The open notebook's
+     handwritten lines lift off the page as a ribbon of light that curls up into a speech bubble, and a
+     softly glowing orb, the model, answers with a small bubble of its own: writing to an AI, and learning
+     to. A desk lamp over the notebook, a stack of books and a mug; the window, at the left, faces east,
+     so the Sun rises in it at Dawn, and the Moon stands in its upper pane at night (a painter's licence,
+     as in the library). By Day the lamp is off; the ribbon, bubbles and orb keep their own light. In the
+     one pass the lamp comes on, the ribbon and its bubble light, and the orb glows last, in the page's
+     hue. Face on, sized from the card's height. */
+  function promptFrame(W, H) {
+    const ww = clamp(H * 1.0, W * 0.2, W * 0.27), wx0 = W * 0.04;
+    return { wx0, wx1: wx0 + ww, ww, wT: H * 0.1, wB: H * 0.6, hz: H * 0.45 };
+  }
+  function promptDesk(W, H, v) {
+    const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(613);
+    const { wx0, wx1, ww, wT, wB } = promptFrame(W, H), u = H;
+    const lights = [];
+    let s = '<defs><linearGradient id="islpwallg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lwall0"/><stop offset="1" class="st-lwall1"/></linearGradient>'
+      + '<radialGradient id="islporb" cx=".42" cy=".38" r=".62"><stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset=".35" class="st-k" stop-opacity=".9"/><stop offset="1" class="st-k" stop-opacity=".55"/></radialGradient>'
+      + '<radialGradient id="islporbh"><stop offset="0" class="st-k" stop-opacity=".45"/><stop offset=".5" class="st-k" stop-opacity=".12"/><stop offset="1" class="st-k" stop-opacity="0"/></radialGradient>'
+      + '<linearGradient id="islpribbon" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#fff4d6" stop-opacity=".15"/><stop offset=".5" stop-color="#fff4d6" stop-opacity=".75"/><stop offset="1" class="st-k" stop-opacity=".9"/></linearGradient></defs>';
+    // 1. Through the window: open sea to the east, a low cay on the horizon with a light, a boat
+    //    under sail far out, the water's ripples (build()); the Sun rises here at Dawn.
+    const cay = [[0.52, 0], [0.58, 0.02], [0.66, 0.03], [0.74, 0.022], [0.8, 0]].map(([x, h]) => [wx0 + ww * x, y0 - Y(h)]);
+    const cayD = `<path class="f-isl" d="${polyD([[wx0 + ww * 0.5, y0 + 1], ...cay, [wx0 + ww * 0.82, y0 + 1]])}"/>`;
+    s += cayD + mirrored(y0, cayD, 0.16) + mist(wx0 + ww * 0.45, y0, ww * 0.45, Y(0.04), 0.4);
+    lights.push([wx0 + ww * 0.66, y0 - Y(0.04)]);
+    s += dashes(streakList(wx0 + ww * 0.66, y0 + 1, H, r, 0.04, 0.05), 's-vglow', 1, [0.08, 0.16, 0.3]);
+    const sb = wx0 + ww * 0.25, sy = y0 + Y(0.04);
+    s += `<path class="isl-vhull" d="M${F(sb - Y(0.03))} ${F(sy - Y(0.01))}H${F(sb + Y(0.03))}L${F(sb + Y(0.022))} ${F(sy)}H${F(sb - Y(0.024))}Z"/>`
+      + `<path class="isl-vsail" d="M${F(sb)} ${F(sy - Y(0.012))}V${F(sy - Y(0.1))}L${F(sb + Y(0.034))} ${F(sy - Y(0.016))}Z"/>`;
+    lights.push([sb, sy - Y(0.1)]);
+    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
+    // 2. The wall, the window cut out of it, its reveal, frame and sill; a shelf of books above the desk.
+    s += `<path fill="url(#islpwallg)" fill-rule="evenodd" d="${rect(-2, -2, W + 4, H + 4)}${rect(wx0, wT, ww, wB - wT)}"/>`;
+    const rv = Math.max(2, Y(0.025));
+    s += `<path class="isl-lsidew" d="${polyD([[wx1, wT], [wx1 - rv, wT + rv], [wx1 - rv, wB], [wx1, wB]])}${rect(wx0, wB - rv, ww, rv)}"/>`;
+    s += `<path class="isl-lframe" d="${rect(wx0, wT, ww, wB - wT)}" stroke-width="${F(Math.max(1.5, Y(0.018)))}"/>`
+      + `<path class="isl-lframe" d="M${F(wx0 + ww * 0.5)} ${F(wT)}V${F(wB)}M${F(wx0)} ${F(wT + (wB - wT) * 0.42)}H${F(wx1)}" stroke-width="${F(Math.max(1, Y(0.011)))}"/>`
+      + `<path class="isl-lsill" d="${rect(wx0 - Y(0.02), wB, ww + Y(0.04), Math.max(2, Y(0.022)))}"/>`;
+    // 3. The desk: its top a little from above, its front with a drawer and its pull, its legs.
+    const dTop = Y(0.72), dFront = Y(0.755), dFoot = Y(0.87), d0 = X(0.02), d1 = X(0.98);
+    s += `<path class="isl-tunder" d="${rect(d0, dFoot, d1 - d0, H - dFoot + 2)}"/>`;
+    s += `<path class="isl-lwood2" d="${rect(d0 + Y(0.03), dFoot, Y(0.05), H - dFoot + 2)}${rect(d1 - Y(0.08), dFoot, Y(0.05), H - dFoot + 2)}"/>`;
+    s += `<path class="isl-lwood" d="${rect(d0, dTop, d1 - d0, dFront - dTop)}"/><path class="isl-lwood2" d="${rect(d0, dFront, d1 - d0, dFoot - dFront)}"/>`;
+    s += `<path class="isl-ledge" d="M${F(d0)} ${F(dFront)}H${F(d1)}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+    const drw = X(0.44), dw = X(0.16);
+    s += `<path class="isl-tgrain" d="${rect(drw, dFront + Y(0.018), dw, dFoot - dFront - Y(0.036))}" stroke-width=".8"/>`
+      + `<path class="isl-lbronze" d="${rect(drw + dw / 2 - Y(0.03), dFront + (dFoot - dFront) / 2 - Y(0.008), Y(0.06), Y(0.016))}"/>`;
+    // 4. The notebook: spiral-bound, open on a slanted writing stand so its pages face the viewer, ruled
+    //    and written on; the right page's writing stops where its last line lifts off as the ribbon. A
+    //    pen lies on the desk beside the stand.
+    const nx = X(0.47), nH = Y(0.3), nW = Y(0.5), nB = dTop - Y(0.025), nT = nB - nH;
+    s += `<path class="isl-lwood2" d="${polyD([[nx - nW * 0.56, dTop], [nx + nW * 0.56, dTop], [nx + nW * 0.5, nT - Y(0.02)], [nx - nW * 0.5, nT - Y(0.02)]])}"/>`;
+    const pg = (sd) => polyD([[nx, nB], [nx + sd * nW * 0.49, nB - Y(0.004)], [nx + sd * nW * 0.47, nT + Y(0.006)], [nx, nT]]);
+    s += `<path class="isl-lbk2" d="${polyD([[nx - nW * 0.51, nB + 1], [nx + nW * 0.51, nB + 1], [nx + nW * 0.49, nT - Y(0.006)], [nx - nW * 0.49, nT - Y(0.006)]])}"/>`
+      + `<path class="isl-lpage" d="${pg(-1)}${pg(1)}"/>`;
+    s += `<path class="isl-lwood" d="${rect(nx - nW * 0.58, nB - Y(0.004), nW * 1.16, Y(0.028))}"/>`;
+    let ruled = '', hw = '', coil = '';
+    const rows = 7, rowY = (i) => nT + (nB - nT) * i / (rows + 1);
+    for (let i = 1; i <= rows; i++) {
+      const y = rowY(i);
+      ruled += `M${F(nx - nW * 0.45)} ${F(y)}H${F(nx - nW * 0.05)}M${F(nx + nW * 0.05)} ${F(y)}H${F(nx + nW * 0.44)}`;
+      for (const sd of [-1, 1]) {
+        if (sd === 1 && i > 5) continue;
+        const x0 = nx + sd * nW * 0.07, len = nW * (i === 5 && sd === 1 ? 0.2 : 0.36 - r() * 0.12);
+        hw += `M${F(x0)} ${F(y - Y(0.005))}q${F(sd * len * 0.25)} ${F(-Y(0.009))} ${F(sd * len * 0.5)} 0t${F(sd * len * 0.5)} 0`;
+      }
+    }
+    for (let y = nT + Y(0.016); y < nB - Y(0.008); y += Y(0.026)) coil += `M${F(nx - Y(0.013))} ${F(y)}a${F(Y(0.013))} ${F(Y(0.008))} 0 1 1 ${F(Y(0.026))} 0`;
+    s += `<path class="isl-pruled" d="${ruled}" stroke-width=".7"/><path class="isl-phand" d="${hw}" stroke-width="${F(Math.max(0.8, Y(0.005)))}"/>`
+      + `<path class="isl-pcoil" d="${coil}" stroke-width="${F(Math.max(0.9, Y(0.006)))}"/>`;
+    const lift = [nx + nW * 0.28, rowY(5) - Y(0.005)];
+    const pen = `M${F(nx + nW * 0.66)} ${F(dTop - Y(0.006))}l${F(Y(0.2))} ${F(-Y(0.03))}l${F(Y(0.014))} ${F(Y(0.006))}l${F(-Y(0.2))} ${F(Y(0.03))}Z`;
+    s += `<path class="isl-lbk1" d="${pen}"/>`;
+    // 5. The books and the mug at the right, the lamp at the left over the notebook.
+    const bkx = X(0.925);
+    let o = '';
+    [[0.16, 0.05, 'isl-lbk1'], [0.15, 0.045, 'isl-lbk3'], [0.17, 0.05, 'isl-lbk2'], [0.14, 0.04, 'isl-lbk1']].reduce((y, [w, h, cls]) => {
+      o += `<path class="${cls}" d="${rect(bkx - Y(w) / 2 + (r() - 0.5) * Y(0.02), y - Y(h), Y(w), Y(h))}"/><path class="isl-lpageedge" d="${rect(bkx - Y(w) / 2 + Y(0.01), y - Y(h) + Y(0.008), Y(w) - Y(0.02), Y(h) - Y(0.016))}"/>`;
+      return y - Y(h);
+    }, dTop);
+    s += o;
+    const mx = X(0.845), mw = Y(0.035), mt = dTop - Y(0.09);
+    s += `<path class="isl-lmug" d="M${F(mx - mw)} ${F(dTop)}V${F(mt)}H${F(mx + mw)}V${F(dTop)}Z"/><path class="isl-lmugh" d="M${F(mx + mw)} ${F(mt + Y(0.02))}q${F(mw * 0.9)} ${F(Y(0.025))} 0 ${F(Y(0.05))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    // the lamp: a weighted base, two arms, a shade tilted down at the notebook; lit, its bulb, halo, the
+    // light spilling onto the pages and a warm pool on them
+    const lb = wx1 + Y(0.07), la = [lb, dTop - Y(0.02)], lj = [lb + Y(0.03), dTop - Y(0.44)], lh = [nx - nW * 0.4, nT - Y(0.1)];
+    s += `<path class="isl-tiron" d="${rect(lb - Y(0.06), dTop - Y(0.025), Y(0.12), Y(0.025))}"/>`
+      + `<path class="isl-tarm" d="M${F(la[0])} ${F(la[1])}L${F(lj[0])} ${F(lj[1])}L${F(lh[0])} ${F(lh[1])}" stroke-width="${F(Math.max(1.4, Y(0.012)))}" stroke-linejoin="round"/>`;
+    const sh = (a) => { const c = Math.cos(a), si = Math.sin(a); return (x, y) => [lh[0] + x * c - y * si, lh[1] + x * si + y * c]; };
+    const R = sh(-0.45), shade = [R(-Y(0.02), -Y(0.02)), R(Y(0.02), -Y(0.02)), R(Y(0.07), Y(0.07)), R(-Y(0.07), Y(0.07))];
+    const [bxl, byl] = R(0, Y(0.075));
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1"><path d="${polyD([R(-Y(0.06), Y(0.07)), R(Y(0.06), Y(0.07)), [nx + nW * 0.25, nB], [nx - nW * 0.5, nB]])}" fill="url(#islvspill)"/>`
+      + pool(nx - nW * 0.12, nT + nH * 0.55, nW * 0.45, nH * 0.5, 0.55) + halo(bxl, byl, Y(0.16), 'islvbulb')
+      + `<circle class="isl-tbulb" cx="${F(bxl)}" cy="${F(byl)}" r="${F(Y(0.018))}"/></g>`;
+    s += `<path class="isl-tshade" d="${polyD(shade)}"/>`;
+    // 6. The ribbon: the right page's last line lifts off and rises as a band of light, dashes like
+    //    words riding along it, curling up into the speech bubble; the orb, right, answers.
+    const ox = X(0.8), oy = Y(0.4), orr = Y(0.12);
+    const bx2 = X(0.64), by2 = Y(0.19), bwid = Y(0.42), bht = Y(0.2);
+    const p0 = lift, p1 = [bx2 - bwid * 0.32, by2 + bht * 0.85];
+    const c1 = [p0[0] + Y(0.3), p0[1] + Y(0.06)], c2 = [p1[0] - Y(0.1), p1[1] + Y(0.3)];
+    const rib = `M${F(p0[0])} ${F(p0[1])}C${F(c1[0])} ${F(c1[1])} ${F(c2[0])} ${F(c2[1])} ${F(p1[0])} ${F(p1[1])}`;
+    const bez = (t, i) => { const q = 1 - t; return q ** 3 * p0[i] + 3 * q * q * t * c1[i] + 3 * q * t * t * c2[i] + t ** 3 * p1[i]; };
+    const der = (t, i) => { const q = 1 - t; return 3 * q * q * (c1[i] - p0[i]) + 6 * q * t * (c2[i] - c1[i]) + 3 * t * t * (p1[i] - c2[i]); };
+    let words = '';
+    for (let t = 0.1; t < 0.93; t += 0.085) {
+      const x = bez(t, 0), y = bez(t, 1), dx = der(t, 0), dy = der(t, 1), d = Math.hypot(dx, dy) || 1, len = Y(0.014 + r() * 0.014);
+      words += `M${F(x - (dx / d) * len / 2)} ${F(y - (dy / d) * len / 2)}l${F((dx / d) * len)} ${F((dy / d) * len)}`;
+    }
+    const bubble = `M${F(bx2 - bwid / 2 + bht * 0.3)} ${F(by2 - bht / 2)}H${F(bx2 + bwid / 2 - bht * 0.3)}Q${F(bx2 + bwid / 2)} ${F(by2 - bht / 2)} ${F(bx2 + bwid / 2)} ${F(by2 - bht * 0.2)}V${F(by2 + bht * 0.2)}Q${F(bx2 + bwid / 2)} ${F(by2 + bht / 2)} ${F(bx2 + bwid / 2 - bht * 0.3)} ${F(by2 + bht / 2)}`
+      + `H${F(bx2 - bwid * 0.18)}L${F(bx2 - bwid * 0.32)} ${F(by2 + bht * 0.85)}L${F(bx2 - bwid * 0.26)} ${F(by2 + bht / 2)}H${F(bx2 - bwid / 2 + bht * 0.3)}Q${F(bx2 - bwid / 2)} ${F(by2 + bht / 2)} ${F(bx2 - bwid / 2)} ${F(by2 + bht * 0.2)}V${F(by2 - bht * 0.2)}Q${F(bx2 - bwid / 2)} ${F(by2 - bht / 2)} ${F(bx2 - bwid / 2 + bht * 0.3)} ${F(by2 - bht / 2)}Z`;
+    let lines = '';
+    [[0.72, -0.2], [0.6, 0.02], [0.45, 0.22]].forEach(([len, dy]) => { lines += `M${F(bx2 - bwid * 0.36)} ${F(by2 + bht * dy)}h${F(bwid * len)}`; });
+    s += `<g class="isl-vwin" style="--i:2"><path class="isl-pribbon" d="${rib}" stroke="url(#islpribbon)" stroke-width="${F(Math.max(2.5, Y(0.035)))}"/>`
+      + `<path class="isl-pword" d="${words}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`
+      + `<path class="isl-pbubble" d="${bubble}"/><path class="isl-pline" d="${lines}" stroke-width="${F(Math.max(1, Y(0.013)))}"/></g>`;
+    // the orb, its halo and two faint rings; its reply, a small bubble of three dots above it
+    let spark = '';
+    for (let i = 0; i < 8; i++) { const a = r() * Math.PI * 2, d = orr * (1.5 + r() * 0.9); spark += `M${F(ox + Math.cos(a) * d)} ${F(oy + Math.sin(a) * d * 0.7)}h0`; }
+    const rw2 = Y(0.19), rh2 = Y(0.1), rx2 = Math.min(W - rw2 * 0.6, ox + orr * 1.6), ry2 = oy - orr * 1.75;
+    s += `<g class="isl-vwin isl-vlast" style="--i:3">${halo(ox, oy, orr * 3, 'islporbh')}`
+      + `<ellipse class="isl-pring" cx="${F(ox)}" cy="${F(oy)}" rx="${F(orr * 1.7)}" ry="${F(orr * 0.45)}" transform="rotate(-14 ${F(ox)} ${F(oy)})" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
+      + `<ellipse class="isl-pring" cx="${F(ox)}" cy="${F(oy)}" rx="${F(orr * 1.35)}" ry="${F(orr * 0.3)}" transform="rotate(22 ${F(ox)} ${F(oy)})" stroke-width="${F(Math.max(0.6, Y(0.004)))}"/>`
+      + `<circle cx="${F(ox)}" cy="${F(oy)}" r="${F(orr)}" fill="url(#islporb)"/>`
+      + `<path class="isl-pspark" d="${spark}" stroke-width="${F(Math.max(1.4, Y(0.012)))}"/>`
+      + `<path class="isl-pbubble" d="M${F(rx2 - rw2 / 2 + rh2 * 0.4)} ${F(ry2 - rh2 / 2)}H${F(rx2 + rw2 / 2 - rh2 * 0.4)}A${F(rh2 / 2)} ${F(rh2 / 2)} 0 0 1 ${F(rx2 + rw2 / 2 - rh2 * 0.4)} ${F(ry2 + rh2 / 2)}H${F(rx2 - rw2 * 0.1)}L${F(rx2 - rw2 * 0.3)} ${F(ry2 + rh2 * 1.05)}L${F(rx2 - rw2 * 0.25)} ${F(ry2 + rh2 / 2)}H${F(rx2 - rw2 / 2 + rh2 * 0.4)}A${F(rh2 / 2)} ${F(rh2 / 2)} 0 0 1 ${F(rx2 - rw2 / 2 + rh2 * 0.4)} ${F(ry2 - rh2 / 2)}Z"/>`
+      + `<path class="isl-pdot" d="M${F(rx2 - rw2 * 0.2)} ${F(ry2)}h0M${F(rx2)} ${F(ry2)}h0M${F(rx2 + rw2 * 0.2)} ${F(ry2)}h0" stroke-width="${F(Math.max(2, Y(0.024)))}"/></g>`;
+    return `<g style="--isl-vstep:.45s">${s}</g>`;
+  }
+
+  /* THE BELL TOWER (the Announcements page's head; owner, 2026-09-29: art tied to the title at a glance):
+     how a town once announced its news. A stone bell tower at the right, its bell mid-swing in the open
+     belfry, rings of sound spreading from it and a few birds lifting off the roof; at its foot a notice
+     board of pinned notes under a little roof, and a lantern in the page's hue; a town's roofs and a
+     palm along the left, the sea beyond, the Moon in the open sky. Sized from the card's height and
+     laid along its width. In the one pass the town's windows light, the rings spread one after
+     another, and the lantern comes on last. */
+  function bellTower(W, H, v) {
+    const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(719);
+    const lights = [];
+    let s = '';
+    // 1. The sea beyond the town: a far headland on the horizon at the left, rimmed, mist at its foot.
+    const head = [[-0.02, 0.02], [0.05, 0.06], [0.12, 0.08], [0.2, 0.06], [0.27, 0.03], [0.33, 0]].map(([x, h]) => [X(x), y0 - Y(h)]);
+    const farLand = `<path class="f-isl" d="${polyD([[X(-0.02), y0 + 1], ...head, [X(0.34), y0 + 1]])}${scrubLine(head, 2, 0.5, 1.1, r)}"/>`;
+    s += farLand + `<path class="s-rim" d="${lineD(head.map(([x, y]) => [x, y + 0.5]))}" stroke-width="1" stroke-opacity=".3"/>` + mist(X(-0.03), y0, X(0.4), Y(0.05), 0.45);
+    // 2. The town: roofs of different heights stepping down toward the sea, gables and a hip or two,
+    //    walls with small windows, lit from Dawn to Night.
+    const ground = Y(0.86);
+    const walls = ['', '', ''];
+    let roofs = '', wins = '';
+    let x = X(0.3);
+    const houses = [];
+    while (x < X(0.66)) {
+      const w = Y(0.22 + r() * 0.16), h = Y(0.12 + r() * 0.1), top = ground - h - Y(0.02 + r() * 0.05);
+      houses.push([x, w, top]);
+      x += w + Y(0.01);
+    }
+    houses.forEach(([hx, w, top], i) => {
+      walls[i % 3] += rect(hx, top, w, ground - top + 1);
+      const pk = top - Y(0.06 + r() * 0.03);
+      roofs += polyD([[hx - Y(0.015), top + 0.5], [hx + w / 2, pk], [hx + w + Y(0.015), top + 0.5]]);
+      for (let k = 0; k < Math.max(1, Math.round(w / Y(0.09))); k++) {
+        const wx = hx + Y(0.03) + k * Y(0.08);
+        if (wx + Y(0.03) > hx + w - Y(0.02)) break;
+        wins += rect(wx, top + Y(0.035), Y(0.03), Y(0.045));
+      }
+    });
+    s += walls.map((d, i) => `<path class="isl-tw${i}" d="${d}"/>`).join('') + `<path class="isl-troof" d="${roofs}"/><path class="f-pulse isl-vwin" style="--i:0" d="${wins}"/>`;
+    s += palmsD([[X(0.29), ground, Y(0.46), 0.14, 17], [X(0.26), ground, Y(0.34), -0.12, 9]], 'isl-palm');
+    // 3. The ground: a square's paving along the foot of the picture.
+    s += `<path class="f-near" d="${rect(-2, ground, W + 4, H - ground + 2)}"/>`;
+    let pav = '';
+    for (let px = X(0.02); px < W; px += Y(0.12)) pav += `M${F(px)} ${F(ground + Y(0.03))}l${F(Y(0.03))} ${F(Y(0.11))}`;
+    s += `<path class="isl-vcourse" d="${pav}" stroke-width=".6"/>`;
+    // 4. The bell tower: a square stone shaft with quoins and string courses, the belfry's arched
+    //    opening, a pyramid roof and a vane.
+    const tc = X(0.81), tw = Y(0.34), tTop = Y(0.43), bel = Y(0.3), roofTop = Y(0.005);
+    const t0 = tc - tw / 2, t1 = tc + tw / 2;
+    s += `<path d="${rect(t0, tTop, tw, ground - tTop + 1)}" fill="url(#islvfacade)"/><path class="isl-vpshade" d="${rect(tc + tw * 0.2, tTop, tw * 0.3, ground - tTop + 1)}"/>`;
+    let cr = '', qn = '';
+    for (let y = tTop + Y(0.05); y < ground; y += Y(0.05)) cr += `M${F(t0)} ${F(y)}H${F(t1)}`;
+    for (let y = tTop, k = 0; y < ground - Y(0.02); y += Y(0.045), k++) qn += rect(k % 2 ? t0 : t0 - Y(0.004), y, Y(0.05 + (k % 2) * 0.02), Y(0.04)) + rect(k % 2 ? t1 - Y(0.05) : t1 - Y(0.066), y, Y(0.05 + (k % 2) * 0.016), Y(0.04));
+    s += `<path class="isl-vcourse" d="${cr}" stroke-width=".7"/><path class="isl-vstone" d="${qn}" fill-opacity=".45"/>`;
+    // the belfry: its stage, wider, with a cornice under and over; the arched opening shows the sky
+    const b0 = t0 - Y(0.02), b1 = t1 + Y(0.02), bTop = tTop - bel;
+    s += `<path d="${rect(b0, bTop, b1 - b0, bel)}${arch(tc, bTop + Y(0.03), tw * 0.64, tTop - Y(0.02))}" fill="url(#islvfacade)" fill-rule="evenodd"/>`;
+    s += `<path class="isl-vstone" d="${rect(b0 - Y(0.015), tTop - Y(0.012), b1 - b0 + Y(0.03), Y(0.024))}${rect(b0 - Y(0.015), bTop - Y(0.02), b1 - b0 + Y(0.03), Y(0.024))}"/>`;
+    s += `<path class="isl-vsill" d="M${F(tc - tw * 0.33)} ${F(tTop - Y(0.02))}H${F(tc + tw * 0.33)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    // the bell, mid-swing on its yoke across the opening, its clapper hanging to the low side
+    const yokeY = bTop + Y(0.07), ang = -22;
+    s += `<path class="isl-vbeam" d="M${F(tc - tw * 0.34)} ${F(yokeY)}H${F(tc + tw * 0.34)}" stroke-width="${F(Math.max(1.5, Y(0.016)))}"/>`;
+    const bh2 = Y(0.16), bwid = Y(0.086);
+    const bellD = `M${F(-bwid * 0.28)} ${F(Y(0.012))}C${F(-bwid * 0.3)} ${F(bh2 * 0.35)} ${F(-bwid * 0.55)} ${F(bh2 * 0.7)} ${F(-bwid)} ${F(bh2)}H${F(bwid)}C${F(bwid * 0.55)} ${F(bh2 * 0.7)} ${F(bwid * 0.3)} ${F(bh2 * 0.35)} ${F(bwid * 0.28)} ${F(Y(0.012))}Q0 ${F(-Y(0.008))} ${F(-bwid * 0.28)} ${F(Y(0.012))}Z`;
+    s += `<g transform="translate(${F(tc)} ${F(yokeY)}) rotate(${ang})"><path d="M0 0V${F(Y(0.014))}" class="isl-vbeam" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`
+      + `<path d="${bellD}" fill="url(#islvbrass)"/><path class="isl-vbrass2" d="M${F(-bwid * 1.02)} ${F(bh2 - Y(0.012))}H${F(bwid * 1.02)}V${F(bh2)}H${F(-bwid * 1.02)}Z"/>`
+      + `<path class="isl-vbeam" d="M0 ${F(bh2 * 0.5)}L${F(-bwid * 0.35)} ${F(bh2 + Y(0.02))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><circle class="isl-vbrass2" cx="${F(-bwid * 0.36)}" cy="${F(bh2 + Y(0.024))}" r="${F(Y(0.012))}"/></g>`;
+    // the pyramid roof and its vane
+    s += `<path class="isl-troof" d="${polyD([[b0 - Y(0.03), bTop - Y(0.018)], [tc, roofTop + Y(0.04)], [b1 + Y(0.03), bTop - Y(0.018)]])}"/>`
+      + `<path class="isl-vrail" d="M${F(tc)} ${F(roofTop + Y(0.045))}V${F(roofTop - Y(0.03))}M${F(tc - Y(0.025))} ${F(roofTop - Y(0.005))}H${F(tc + Y(0.03))}" stroke-width="${F(Math.max(1, Y(0.008)))}"/>`
+      + `<path class="isl-vvane" d="M${F(tc)} ${F(roofTop - Y(0.03))}h${F(Y(0.05))}l${F(-Y(0.012))} ${F(Y(0.014))}h${F(-Y(0.038))}Z"/>`;
+    // 5. The rings of sound, spreading from the bell to the left, each in turn; birds lift off the roof.
+    const scx = tc - Y(0.02), scy = yokeY + bh2 * 0.6;
+    for (let k = 0; k < 3; k++) {
+      const rr = Y(0.17 + k * 0.12), a0 = Math.PI * (0.76 + k * 0.01), a1 = Math.PI * 1.26;
+      s += `<path class="isl-bsound isl-vwin" style="--i:${1 + k}" d="M${F(scx + Math.cos(a0) * rr)} ${F(scy + Math.sin(a0) * rr)}A${F(rr)} ${F(rr)} 0 0 1 ${F(scx + Math.cos(a1) * rr)} ${F(scy + Math.sin(a1) * rr)}" stroke-width="${F(Math.max(1.2, Y(0.014) * (1 - k * 0.2)))}" stroke-opacity="${(0.7 - k * 0.18).toFixed(2)}"/>`;
+    }
+    let birds = '';
+    for (const [bx, by, sz] of [[0.64, 0.16, 0.034], [0.69, 0.09, 0.028], [0.6, 0.26, 0.026]]) {
+      const cx = X(bx), cy = Y(by), w = Y(sz);
+      birds += `M${F(cx - w)} ${F(cy - w * 0.2)}Q${F(cx - w * 0.5)} ${F(cy - w * 0.6)} ${F(cx)} ${F(cy)}Q${F(cx + w * 0.5)} ${F(cy - w * 0.6)} ${F(cx + w)} ${F(cy - w * 0.2)}`;
+    }
+    s += `<path class="isl-bbird" d="${birds}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`;
+    // 6. The notice board at the tower's foot: two posts, a board in a frame under a little roof, its
+    //    pinned notes; beside it the lantern on its post, in the page's hue, last.
+    const nb0 = X(0.61), nb1 = nb0 + Y(0.4), nbT = Y(0.55), nbB = Y(0.78);
+    s += `<path class="isl-vpost" d="${rect(nb0 + Y(0.02), nbB, Y(0.018), ground - nbB + 1)}${rect(nb1 - Y(0.038), nbB, Y(0.018), ground - nbB + 1)}"/>`;
+    s += `<path class="isl-lwood2" d="${rect(nb0, nbT, nb1 - nb0, nbB - nbT)}"/><path class="isl-bcork" d="${rect(nb0 + Y(0.012), nbT + Y(0.012), nb1 - nb0 - Y(0.024), nbB - nbT - Y(0.024))}"/>`;
+    s += `<path class="isl-troof" d="${polyD([[nb0 - Y(0.02), nbT + Y(0.004)], [(nb0 + nb1) / 2, nbT - Y(0.045)], [nb1 + Y(0.02), nbT + Y(0.004)]])}"/>`;
+    let notes = '', pins = '', ink = '';
+    // each note: its place across the board and down it (shares), its size (of the card's height), a tilt
+    [[0.14, 0.42, 0.075, 0.1, -4], [0.34, 0.48, 0.085, 0.12, 3], [0.53, 0.4, 0.075, 0.09, -2], [0.71, 0.5, 0.09, 0.11, 5], [0.88, 0.44, 0.065, 0.085, -3]].forEach(([fx, fy, w, h, rot]) => {
+      const cx = nb0 + (nb1 - nb0) * fx, cy = nbT + (nbB - nbT) * fy;
+      notes += `<rect x="${F(cx - Y(w) / 2)}" y="${F(cy - Y(h) / 2)}" width="${F(Y(w))}" height="${F(Y(h))}" transform="rotate(${rot} ${F(cx)} ${F(cy)})"/>`;
+      pins += `M${F(cx)} ${F(cy - Y(h) / 2 + Y(0.012))}h0`;
+      for (let l = 0; l < 3; l++) ink += `M${F(cx - Y(w) * 0.32)} ${F(cy - Y(h) * 0.12 + l * Y(h) * 0.22)}h${F(Y(w) * (0.64 - l * 0.12))}`;
+    });
+    s += `<g class="isl-bnote">${notes}</g><path class="isl-bink" d="${ink}" stroke-width="${F(Math.max(0.6, Y(0.005)))}"/><path class="isl-bpin" d="${pins}" stroke-width="${F(Math.max(1.5, Y(0.014)))}"/>`;
+    const lx = nb0 - Y(0.1), ly = Y(0.56);
+    s += `<g class="isl-vwin isl-vlast" style="--i:4">${pool(lx, ground + Y(0.03), Y(0.2), Y(0.04), 0.7)}${halo(lx, ly - Y(0.06), Y(0.16), 'islvlamp')}`
+      + `<path class="isl-vlamp" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.03))}V${F(ly - Y(0.09))}H${F(lx + Y(0.014))}V${F(ly - Y(0.03))}Z"/></g>`;
+    s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ground)}V${F(ly - Y(0.03))}H${F(lx + 1)}V${F(ground)}ZM${F(lx - Y(0.022))} ${F(ly - Y(0.09))}L${F(lx)} ${F(ly - Y(0.115))}L${F(lx + Y(0.022))} ${F(ly - Y(0.09))}Z"/>`;
+    return `<g style="--isl-vstep:.4s">${s}</g>`;
+  }
+
   /* THE HOMEPAGE HERO'S SCENE (owner, 2026-09-27): in the bold hero (desktop, from 68.75em) the campus
      stands on its lawn at the card's foot, in the sky's space right of the words, from x0 to x1, under
      the hero's own sky, which island-core.js draws as before; the far islands and Antigua's coast are
@@ -2029,14 +2283,6 @@
       moonX: 0.16,
       ground: null,
     },
-    'nelsons-dockyard': {
-      draw: dockyard,
-      world: 'inland',
-      horizon: 0.6,
-      // From the harbour, east at the dockyard and Shirley Heights above it.
-      face: 95,
-      ground: null,
-    },
     'st-johns-harbour': {
       draw: harbour,
       world: 'inland',
@@ -2047,15 +2293,6 @@
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
       moonBig: 2.4,
       moonX: 0.24,
-      ground: null,
-    },
-    'pillars-of-hercules': {
-      draw: pillars,
-      world: 'inland',
-      horizon: 0.7,
-      // From a boat in the harbour mouth, facing north at the cliff: the northern sky above, the last
-      // western light on its face.
-      face: 12,
       ground: null,
     },
     'library': {
@@ -2071,6 +2308,45 @@
       // the middle pane of the second window, its disc clear of the wall above
       moonAt: (W, H) => { const f = libraryFrame(W, H); return [(f.wins[1] + f.ww / 2) / W, (f.wT + (f.wB - f.wT) * 0.36) / H]; },
       moonBig: 1.5,
+      ground: null,
+    },
+    'tool-wall': {
+      draw: toolWall,
+      world: 'inland',
+      // An interior: the window faces the Sun's setting bearing, the view turned so the Sun half set
+      // stands in the window's right-hand pane at Sunset, its path on the harbour below; the horizon
+      // is the window's; the Moon in the window's upper left pane (its true phase and tilt, the place a
+      // painter's licence, as in the library).
+      horizon: (W, H) => toolFrame(W, H).hz / H,
+      face: (W, H) => { const f = toolFrame(W, H); return 290.8 - ((f.wx0 + f.ww * 0.7) / W - 0.5) * 62; },
+      ppd: (W) => W / 62,
+      moonAt: (W, H) => { const f = toolFrame(W, H); return [(f.wx0 + f.ww * 0.26) / W, (f.wT + (f.hz - f.wT) * 0.38) / H]; },
+      moonBig: 1.2,
+      ground: null,
+    },
+    'prompt-desk': {
+      draw: promptDesk,
+      world: 'inland',
+      // An interior: the window faces east, the view turned so the rising Sun stands in its right-hand
+      // pane at Dawn, its path on the sea; at Sunset the Sun is behind the viewer, and the sky alone
+      // turns red. The Moon in the upper right pane (a painter's licence, as in the library).
+      horizon: (W, H) => promptFrame(W, H).hz / H,
+      face: (W, H) => { const f = promptFrame(W, H); return SKY.a.sun[0] - ((f.wx0 + f.ww * 0.62) / W - 0.5) * 62; },
+      ppd: (W) => W / 62,
+      moonAt: (W, H) => { const f = promptFrame(W, H); return [(f.wx0 + f.ww * 0.76) / W, (f.wT + (f.hz - f.wT) * 0.38) / H]; },
+      moonBig: 1.2,
+      ground: null,
+    },
+    'bell-tower': {
+      draw: bellTower,
+      world: 'inland',
+      // Facing west over the town to the sea, the afterglow behind the roofs; the Moon in the open sky
+      // between the headland and the tower.
+      sunset: '18:24',
+      horizon: 0.72,
+      ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
+      moonBig: 2.2,
+      moonX: 0.42,
       ground: null,
     },
     'shirley-heights': {
@@ -2118,7 +2394,6 @@
       + '<linearGradient id="islvspill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".2"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvlamp"><stop offset="0" class="st-k" stop-opacity=".6"/><stop offset=".5" class="st-k" stop-opacity=".18"/><stop offset="1" class="st-k" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
-      + '<linearGradient id="islvhol" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vhol" stop-opacity=".78"/><stop offset=".6" class="st-vhol" stop-opacity=".5"/><stop offset="1" class="st-vhol" stop-opacity=".32"/></linearGradient>'
       + '<radialGradient id="islvmist"><stop offset="0" class="st-haze" stop-opacity=".5"/><stop offset=".6" class="st-haze" stop-opacity=".16"/><stop offset="1" class="st-haze" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvpool"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset=".5" class="st-g1" stop-opacity=".18"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvsailg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" class="st-vsail" stop-opacity="1"/><stop offset="1" class="st-vsail2" stop-opacity="1"/></linearGradient>'
@@ -2264,7 +2539,8 @@
     // The anchor: a coast scene puts the sunset a third of the way in; an inland one faces P.face.
     // A piece may instead put the Moon at a share of the width (`moonX`), turning to face it.
     const anchor = P.world === 'coast' ? rel(SKY.d.sun[0]) - (W * 0.3 - W / 2) / ppd
-      : P.moonX != null ? rel((SKY.d.moon[0] + SKY.n.moon[0]) / 2) - (W * P.moonX - W / 2) / ppd : rel(P.face);
+      : P.moonX != null ? rel((SKY.d.moon[0] + SKY.n.moon[0]) / 2) - (W * P.moonX - W / 2) / ppd
+      : rel(typeof P.face === 'function' ? P.face(W, H) : P.face);
     const v = view(W / 2 - anchor * ppd, y0, ppd, W, H);
     const sea = H - y0;
     const k = P.ground ? P.ground(W, H, y0, sea) : null;
