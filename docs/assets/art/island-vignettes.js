@@ -1823,10 +1823,14 @@
       return `<path class="isl-lmug" d="M${F(mx - mw)} ${F(my)}V${F(mt)}H${F(mx + mw)}V${F(my)}Z"/><path class="isl-lmugh" d="M${F(mx + mw)} ${F(mt + (my - mt) * 0.25)}q${F(mw * 0.8)} ${F((my - mt) * 0.25)} 0 ${F((my - mt) * 0.5)}" stroke-width="${F(hw(z) * 1.2)}"/>`;
     };
     const note = (lx, z) => `<path class="isl-lpage" d="${quad(onT(lx, -0.11, 0.752, z - 0.1), onT(lx, 0.1, 0.752, z - 0.12), onT(lx, 0.13, 0.752, z + 0.1), onT(lx, -0.08, 0.752, z + 0.12))}"/>`;
-    // a backpack hung on the back of a chair that faces away from the viewer
+    // a backpack hung on the back of a chair that faces away from the viewer: its two shoulder straps,
+    // in its own color, hooked over the top of the chair's back (owner, 2026-09-29)
     const bag = (lx, z, cls) => {
       const k = sc(z + 0.12), w = 0.15 * m * k, [bx2, top] = pt(lx, 0.86, z + 0.12), [, bot] = pt(lx, 0.46, z + 0.12), rr = w * 0.45;
-      return `<path class="${cls}" d="M${F(bx2 - w)} ${F(bot)}V${F(top + rr)}Q${F(bx2 - w)} ${F(top)} ${F(bx2 - w + rr)} ${F(top)}H${F(bx2 + w - rr)}Q${F(bx2 + w)} ${F(top)} ${F(bx2 + w)} ${F(top + rr)}V${F(bot)}Z"/>`
+      // each strap's rounded end just over the chair back's top edge, as a strap hooked over it
+      const sw = Math.max(1, 0.035 * m * k), [, ctop] = pt(lx, 0.9, z);
+      const straps = [-1, 1].map((s) => `M${F(bx2 + s * w * 0.46)} ${F(top + rr * 0.6)}L${F(bx2 + s * w * 0.44)} ${F(ctop + sw * 0.35)}`).join('');
+      return `<path class="${cls}s" d="${straps}" stroke-width="${F(sw)}"/><path class="${cls}" d="M${F(bx2 - w)} ${F(bot)}V${F(top + rr)}Q${F(bx2 - w)} ${F(top)} ${F(bx2 - w + rr)} ${F(top)}H${F(bx2 + w - rr)}Q${F(bx2 + w)} ${F(top)} ${F(bx2 + w)} ${F(top + rr)}V${F(bot)}Z"/>`
         + `<path class="isl-lbagp" d="${rect(bx2 - w * 0.62, top + (bot - top) * 0.52, w * 1.24, (bot - top) * 0.4)}"/>`
         + `<path class="isl-lbagh" d="M${F(bx2 - w * 0.35)} ${F(top)}q${F(w * 0.35)} ${F(-w * 0.5)} ${F(w * 0.7)} 0" stroke-width="${F(Math.max(0.8, 0.02 * m * k))}"/>`;
     };
@@ -1890,7 +1894,8 @@
     // the library's own reference books, left stacked: the hall's baseline, gone only at Night
     put('yasd', stack(near(0.43), 8.62, 3, 0));
     // seats on the near side, their things near the near edge
-    put('ys', lapFront(near(0.22), 9.28) + mug(near(0.27), 9.3));
+    // clear of the first lamp's stand, which would otherwise stand in front of the screen (owner, 2026-09-29)
+    put('ys', lapFront(near(0.34), 9.28) + mug(near(0.4), 9.3));
     put('y', openBook(near(0.55), 9.34, 'isl-lbk1') + note(near(0.6), 9.3));
     put('ya', openBook(near(0.86), 9.34, 'isl-lbk2') + bottle(near(0.91), 9.3, 'isl-lbottle'));
     s += flush();
