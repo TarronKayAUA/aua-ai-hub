@@ -563,21 +563,30 @@
 .isl .isl-vsand { stroke: var(--isl-vsand); stroke-opacity: var(--isl-vsand-a); fill: none; stroke-linecap: round; }
 .isl .isl-vsurf { stroke: var(--isl-vsurf); stroke-opacity: var(--isl-vsurf-a); fill: none; stroke-linecap: round; }
 /* A landing's head with a vignette beside it (layout_art.py, section: _head): the title, lede, search
-   and jump links on the left, the picture on the right, from 68.75em; below that an ordinary block. */
+   and jump links on the left, the picture on the right, from 68.75em; below that an ordinary block.
+   Both start at the top, so every page's picture sits level with its title (owner, 2026-09-29: "can we
+   have all images align at their top? ... align the top of the image with the title"); centred, each
+   picture sat at a height set by its page's text. */
 @media screen and (min-width: 68.75em) and (min-height: 44.0625em) {
   .md-typeset .isl-head {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     column-gap: 2.4rem;
-    align-items: center;
+    align-items: start;
   }
   .md-typeset .isl-head__text > :last-child { margin-bottom: 0; }
-  .md-typeset figure.isl-vignette--head { align-self: center; }
+  .md-typeset figure.isl-vignette--head { align-self: start; }
+  /* News & Events shares the home page's tighter top (body[data-door], layout-home.css); with a picture
+     in its head it takes the other landings' top, Material's own spacing, so every section page's title
+     and picture sit at the same height (owner, 2026-09-29). The home page keeps its own. */
+  body[data-door]:has(.isl-head) .md-main__inner { margin-top: 1.5rem; }
+  body[data-door]:has(.isl-head) .md-content__inner { padding-top: 0.6rem; }
   /* A picture that fits its text: the row is the text's height, the picture fills it. */
   .md-typeset .isl-head:has(> figure[data-fit="text"]) { align-items: stretch; }
   .md-typeset figure.isl-vignette[data-fit="text"] { align-self: stretch; }
   /* Stacked sections beside a picture (the About page): the sections in one column at the reading
-     measure, the picture in the other, as tall as the sections. */
+     measure, the picture in the other, as tall as the sections. A stack that starts at the title
+     (section: [_title, ...]) has the title at its top, so the picture's top is level with it. */
   .md-typeset .isl-stack {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);

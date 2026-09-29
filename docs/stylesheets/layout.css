@@ -192,7 +192,8 @@ body[data-page-type="door"] .md-typeset > ol {
   max-width: 40rem;
 }
 
-body[data-page-type="door"] .md-path {
+body[data-page-type="door"] .md-path,
+body[data-crumbs="none"] .md-path {
   display: none;
 }
 

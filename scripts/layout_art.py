@@ -45,7 +45,9 @@ _S = {"slots": [], "placed": [], "pages_seen": set()}
 HEAD_END = re.compile(r'<(h2\b|div class="grid|p class="kind-key|div class="learn-door|div data-tp-landing)')
 
 # STACKS (2026-09-28, the About page): `section: [first, last]` wraps the h2 sections from `first`
-# through `last` in `div.isl-stack` with the picture beside them. layout_width.py gives the stack
+# through `last` in `div.isl-stack` with the picture beside them. `first` may be `_title` (owner,
+# 2026-09-29): the stack then starts at the page's h1, so the picture's top is level with the title,
+# as on the landings; layout_width.py finds the title inside the stack. layout_width.py gives the stack
 # its own role and a full-width row, so the sections stack in one column and the picture takes the
 # other; below 68.75em it is an ordinary block and the figure is hidden.
 #
@@ -84,7 +86,8 @@ def on_page_content(html, page, config, files, **kwargs):
         aspect += fit
         if isinstance(s["section"], list):
             first, last = s["section"][0], s["section"][-1]
-            a = re.search(r'<h2\b[^>]*\bid="' + re.escape(first) + r'"[^>]*>', html)
+            a = (re.search(r"<h1\b", html) if first == "_title"
+                 else re.search(r'<h2\b[^>]*\bid="' + re.escape(first) + r'"[^>]*>', html))
             b = re.search(r'<h2\b[^>]*\bid="' + re.escape(last) + r'"[^>]*>', html)
             if not a or not b or b.start() < a.start():
                 raise SystemExit(f"layout_art: {src} has no h2 sections {first} to {last} in order (data/art_slots.yaml)")

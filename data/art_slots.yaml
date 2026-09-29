@@ -13,7 +13,9 @@
 # Each entry:
 #   page     the page's source path under docs/
 #   section  the id of the h2 whose section the scene sits beside, or _head
-#            for a landing page's head (the scene beside the title and lede)
+#            for a landing page's head (the scene beside the title and lede),
+#            or [first, last] for sections stacked beside it, where first may
+#            be _title to start the stack at the page's title (the About page)
 #   piece    the subject drawn (a key in island-vignettes.js)
 #   kind     the page's kind (data/section_map.yaml `kinds:`), whose hue is
 #            the scene's one small accent; leave it out on a page with no
@@ -89,9 +91,10 @@ slots:
     kind: governance
     fit: text
 
-  # About: Contact and Purpose stacked in one column, St John's harbour from
-  # Fort James beside them.
+  # About: the title, Contact and Purpose stacked in one column, St John's
+  # harbour from Fort James beside them, its top level with the title as on
+  # the landings (owner, 2026-09-29).
   - page: about.md
-    section: [contact, purpose]
+    section: [_title, purpose]
     piece: st-johns-harbour
     fit: text
