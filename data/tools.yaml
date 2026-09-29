@@ -189,14 +189,19 @@
 # ChatGPT plan including Free, so the paid-only framing was stale. CLI
 # releases remain active (0.145.0, 2026-07-21) and Codex cloud has its
 # own live docs, so the multi-surface framing stays.
+# Blurb updated 2026-09-29 (OpenAI DevDay review, owner approved; settles the
+# Codex item of issue #53): help.openai.com article 11369540, read in the
+# app's browser that day, says Codex "is included across ChatGPT plans,
+# including Free and Go", while Codex Cloud "is not included with Free or
+# Go". Cost stays freemium.
 - name: Codex
   vendor: OpenAI
   category: agents
   url: https://openai.com/codex/
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-08-25
-  blurb: OpenAI's coding agent, part of the ChatGPT desktop app since the July 2026 merge, alongside a command-line tool, a code editor extension, and a cloud service. Works with local folders, repositories, and terminals; included with every ChatGPT plan, including Free.
+  last_reviewed: 2026-09-29
+  blurb: OpenAI's coding agent, part of the ChatGPT desktop app since the July 2026 merge, alongside a command-line tool, a code editor extension, and a cloud service. Works with local folders, repositories, and terminals. Included with every ChatGPT plan, including Free; the cloud service, which keeps tasks running while your computer sleeps, needs Plus or higher.
 
 # Renamed from "ChatGPT Agent Mode" 2026-07-13: Agent Mode was
 # consolidated into ChatGPT Work in the 2026-07-09 desktop app merge.

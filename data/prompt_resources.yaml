@@ -72,13 +72,18 @@
     built on a four-part pattern of persona, task, context, and format. The
     gentlest starting point on this list.
 
-- title: GPT-5 prompting guide
+# Replaced 2026-09-29 (OpenAI DevDay review, owner approved): the GPT-5
+# prompting guide no longer described OpenAI's current models. This guide is
+# maintained with each release; that day it carried best practices for GPT-6
+# Astra. Thumbnail is the page's own og:image, fetched live the same day.
+- title: Prompt engineering guide
   source: OpenAI
   type: guide
   category: general
-  url: https://developers.openai.com/cookbook/examples/gpt-5/gpt-5_prompting_guide
-  thumbnail: https://developers.openai.com/open-graph.png
-  blurb: OpenAI's technical guide to prompting its current models. The most
+  url: https://developers.openai.com/api/docs/guides/prompt-engineering
+  thumbnail: https://developers.openai.com/og/api/docs/guides/prompt-engineering.png
+  blurb: OpenAI's guide to prompting its models, kept current with each
+    release, including best practices for its latest model. The most
     developer-oriented item here, useful when you need precise control over
     agentic behavior and output format.
 

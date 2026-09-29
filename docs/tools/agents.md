@@ -81,7 +81,7 @@ More: [Cowork](https://claude.com/product/cowork).
 
 ### Codex (OpenAI)
 
-OpenAI's coding agent. Since the July 2026 merge it is part of the ChatGPT desktop app, working with local folders, repositories, and terminals, alongside a command-line tool, an IDE extension, and a cloud service. Like Claude Code it is developer-oriented. The official onboarding below is the most thorough video on this page, but it dates from January 2026, before Codex moved into the ChatGPT desktop app, so its app screens will differ from yours; the command-line and editor sections still apply. Included with every ChatGPT plan, including Free.
+OpenAI's coding agent. Since the July 2026 merge it is part of the ChatGPT desktop app, working with local folders, repositories, and terminals, alongside a command-line tool, an IDE extension, and a cloud service. Like Claude Code it is developer-oriented. The official onboarding below is the most thorough video on this page, but it dates from January 2026, before Codex moved into the ChatGPT desktop app, so its app screens will differ from yours; the command-line and editor sections still apply. Included with every ChatGPT plan, including Free; the cloud service needs Plus or higher.
 
 <!-- render:guide-videos:agents:codex -->
 
