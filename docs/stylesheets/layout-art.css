@@ -581,6 +581,14 @@
      and picture sit at the same height (owner, 2026-09-29). The home page keeps its own. */
   body[data-door]:has(.isl-head) .md-main__inner { margin-top: 1.5rem; }
   body[data-door]:has(.isl-head) .md-content__inner { padding-top: 0.6rem; }
+  /* A head under a visible breadcrumb (a deeper page: the guides index): the breadcrumb is the page's
+     topmost line, so the picture's top is level with it rather than with the title below it (owner,
+     2026-09-29: "align the image with the breadcrumb on pages where those are the topmost element").
+     Its line sits 1.86rem above the title at every width the art shows (41 px at 1920 and 1680, 37 px
+     at 1440, 1280 and 1120, measured). A picture fitted to its text keeps the title's top. */
+  body:not([data-page-type="door"]):not([data-crumbs="none"]) .md-content:has(> .md-path) .isl-head > figure.isl-vignette--head:not([data-fit="text"]) {
+    margin-top: -1.86rem;
+  }
   /* A picture that fits its text: the row is the text's height, the picture fills it. */
   .md-typeset .isl-head:has(> figure[data-fit="text"]) { align-items: stretch; }
   .md-typeset figure.isl-vignette[data-fit="text"] { align-self: stretch; }
