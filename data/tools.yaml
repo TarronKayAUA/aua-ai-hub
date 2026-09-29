@@ -566,24 +566,58 @@
   # A claim that this is off by default on Enterprise plans until an admin
   # enables it was NOT included: the Help Center article it was sourced to
   # returns 404 and it could not be confirmed from an Anthropic page.
-  status_note: Beta on paid Claude plans, used at claude.ai/design or from within Claude Code.
-  last_reviewed: 2026-09-08
+  # Updated 2026-09-29 (tool discovery issue #52, owner approved) after
+  # Anthropic folded Claude Design into ordinary conversations on
+  # 2026-09-16 (Help Center release notes: "Claude Design works inside
+  # your conversations with all of its features" and "Claude Slides gives
+  # presentations their own starting point"). Read the same day:
+  # - Product page FAQ: "You can now use Claude Design in any conversation
+  #   with Claude, including in Claude Code and the Artifacts tab";
+  #   "Import from your codebase, or DOCX, PPTX, and XLSX files. Export to
+  #   PPTX, PDF, or HTML"; "Claude Design is included in all paid plans.
+  #   Admins must turn it on in Organization settings." Canva is among the
+  #   send-to connectors.
+  # - Help Center, Get started with Claude Design: "available in beta on
+  #   Pro, Max, Team, and Enterprise plans ... On Enterprise plans, it's off
+  #   by default until an owner turns it on"; the standalone claude.ai/design
+  #   "keeps working".
+  # - Help Center, Claude Design admin guide: "Presentations now have their
+  #   own tool, Claude Slides."
+  # - Help Center, What are artifacts: "Templates (Claude Design, Claude
+  #   Slides, and Claude Docs) are in beta on paid plans only", which keeps
+  #   cost at paid although the 2026-09-16 release note says artifacts are
+  #   "available on every plan, including Free".
+  # Two things refused on 2026-09-08 now hold: the Enterprise off-by-default
+  # claim (its source article then returned 404) and Word and Excel import
+  # (now named on the product page as DOCX and XLSX).
+  status_note: Beta on paid Claude plans, used in any Claude conversation, in Claude Code, or at claude.ai/design; on Enterprise plans an administrator turns it on first.
+  last_reviewed: 2026-09-29
   # "from Anthropic Labs" dropped 2026-09-08: the word Labs no longer appears
   # anywhere on the product page. The export clause is left as it stands,
   # since PowerPoint, PDF and Canva are all still named there. A suggestion
   # to widen the import clause to "PowerPoint, Word, and Excel" was NOT
   # taken: neither Word nor Excel appears on the page, so it would have
   # published an unverified claim.
-  blurb: Design tool from Anthropic that turns prompts and uploaded files into slides, one-pagers, and graphics. Imports PowerPoint files and exports finished work back to PowerPoint, PDF, or Canva.
+  blurb: Design feature in Claude, from Anthropic, that turns prompts and uploaded Word, PowerPoint, or Excel files into one-pagers, interactive prototypes, and other visual work inside a Claude conversation. Exports to PowerPoint, PDF, or web page (HTML) files, or sends work to tools such as Canva; for slide decks, Anthropic now points to Claude Slides, a separate feature of the same app.
 
 - name: PowerPoint Design Suggestions
   vendor: Microsoft
   category: presentations_design
-  url: https://support.microsoft.com/en-us/office/create-professional-slide-layouts-with-designer-53c77d7b-dc40-45c2-b684-81415eac0617
+  # Updated 2026-09-29 (tool discovery issue #52, owner approved). The old
+  # support URL (/en-us/office/create-professional-slide-layouts-with-
+  # designer-53c77d7b-dc40-45c2-b684-81415eac0617) now answers 301 to the
+  # path below, which answers 200. That page says "On the Design tab, select
+  # Design Suggestions", "Designer is referred to as Design Suggestions and
+  # can be found on the Home or Design tabs", and "This is a subscriber-only,
+  # Microsoft 365 feature". It mentions Copilot only in "For Copilot users,
+  # Designer is now referred to as Design Suggestions", so the earlier
+  # "delivers it through Copilot" was dropped as unsupported. No retirement
+  # notice on the page.
+  url: https://support.microsoft.com/en-us/powerpoint/create-professional-slide-layouts-with-designer
   cost: institutional
   governance_status: listed
-  last_reviewed: 2026-09-08
-  blurb: Built into PowerPoint under the institutional Microsoft 365 license, where Microsoft now calls the feature Design Suggestions and delivers it through Copilot. Suggests layouts, imagery, and design treatments for the slide being edited, so an existing deck improves one slide at a time without leaving the file.
+  last_reviewed: 2026-09-29
+  blurb: Built into PowerPoint under the institutional Microsoft 365 license, where the feature, also called Designer, appears as Design Suggestions on the Design or Home tab. Suggests layouts, imagery, and design treatments for the slide being edited, so an existing deck improves one slide at a time without leaving the file.
 
 - name: Canva
   vendor: Canva
@@ -811,6 +845,28 @@
   last_reviewed: 2026-09-15
   blurb: Chat assistant from the French lab Mistral, renamed from Le Chat in June 2026. Combines a conversational mode with work and coding agent modes that connect to tools such as email, calendar, and code repositories.
 
+# Added 2026-09-29 from tool-discovery issue #52 (owner approved). Verified
+# 2026-09-29 from Proton's own pages: proton.me/lumo and /lumo/pricing
+# (Free plan usable "without even creating a Proton account"; Lumo Plus
+# paid), the Lumo privacy support article, and /lumo/security. Operator
+# Proton AG, Geneva; Swiss law (Lumo privacy policy 2026-09-17, Lumo terms
+# 2026-08-19). The privacy policy says saved chat history is encrypted with
+# zero-access encryption "(meaning we as a provider are not able to decrypt
+# it anymore)"; the security page says "The server decrypts the message
+# temporarily to process it"; the support article says Lumo does not train
+# on chats "except with your express permission in giving anonymized
+# feedback for Apertus 1.5". Models run "exclusively on servers Proton
+# controls".
+- name: Lumo
+  vendor: Proton
+  category: assistants
+  url: https://proton.me/lumo
+  cost: freemium
+  governance_status: listed
+  status_note: Operated from Switzerland on servers Proton controls. Proton's pages say saved chats are stored with zero-access encryption that Proton cannot read and are not used to train models, apart from feedback you choose to send; each message is still decrypted on Proton's servers while the reply is generated.
+  last_reviewed: 2026-09-29
+  blurb: Chat assistant from Proton, the Swiss company behind Proton Mail, running openly published models on Proton's own servers, with optional web search, file uploads, and image generation. Free to use, even without an account, with lower limits on messages, chat history, and image generation than the paid Plus plan.
+
 - name: Antigravity
   vendor: Google
   category: agents
@@ -924,6 +980,41 @@
   last_reviewed: 2026-08-01
   blurb: Study platform that turns uploaded course materials (slides, PDFs, recordings) into flashcards, quizzes, and practice tests, with an AI tutor that answers from what you upload. Free plan with limits; paid plans lift them.
 
+# Added 2026-09-29 from tool-discovery issue #52 (owner approved). Verified
+# 2026-09-29 from app.simchat.ai (home, medical-education, pricing, FAQ);
+# simchat.ai 302-redirects there. "Developed by the team at Geeky Medics";
+# Free plan GBP 0 with up to 5 users, 2 staff accounts, 50 conversations a
+# month, 2 custom scenarios, text simulations, and a one-time 30-minute
+# voice and 20-minute video trial. Scenario libraries (800+ OSCE cases
+# "Mapped to the UK Medical Licensing Assessment", 200+ GP cases aligned to
+# the RCGP SCA) are included with Enterprise and an add-on for Starter and
+# Team.
+- name: SimChat
+  vendor: Geeky Medics
+  category: medical_learning
+  url: https://app.simchat.ai/
+  cost: freemium
+  governance_status: listed
+  last_reviewed: 2026-09-29
+  blurb: Virtual patient platform from the Geeky Medics team in which educators turn their own patient scripts, objective structured clinical examination (OSCE) checklists, or case vignettes into artificial intelligence patients that learners interview by text, voice, or video avatar, with feedback against the educator's own marking criteria. The free plan covers up to five learners and two custom scenarios in text, with a one-time voice and video trial; ready-made case libraries, available on paid plans, are mapped to United Kingdom exams.
+
+# Added 2026-09-29 from tool-discovery issue #52 (owner approved). Verified
+# 2026-09-29 from aquifer.org (Aquifer AI page, student pricing, and the
+# news post of 2026-07-17 announcing 23 Virtual Patient Encounters). The AI
+# features are live products, not pilots: summary statement feedback
+# ("Since launching in 2023 ... over a million feedback interactions") and
+# AI-enabled Virtual Patient Encounters. The individual yearly plan ($125)
+# lists "Instant summary statement feedback from Aquifer AI" but does not
+# mention Virtual Patient Encounters, so the blurb does not claim them for it.
+- name: Aquifer
+  vendor: Aquifer
+  category: medical_learning
+  url: https://aquifer.org/aquifer-ai
+  cost: paid
+  governance_status: listed
+  last_reviewed: 2026-09-29
+  blurb: Library of more than 250 virtual patient cases across core clinical disciplines such as family medicine, internal medicine, and pediatrics. Artificial intelligence gives immediate feedback on the summary statements students write in the cases, and a growing set of Virtual Patient Encounters lets learners interview a simulated patient and get feedback on their history taking and diagnostic reasoning. Schools subscribe for their students, and individuals can buy a yearly plan that includes the summary statement feedback.
+
 - name: Otter
   vendor: Otter.ai
   category: meetings_transcription
@@ -949,8 +1040,16 @@
   url: https://www.napkin.ai
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-22
-  blurb: Generates editable diagrams, flowcharts, and infographics from pasted or imported text, a quick way to add visuals to lectures and handouts. Exports to PowerPoint, image, and PDF formats; the free plan places a small watermark on exported visuals.
+  # Blurb corrected 2026-09-29 (tool discovery issue #52, owner approved)
+  # from the pricing page (napkin.ai/pricing) read that day: Free ($0,
+  # "Forever") lists "Unlimited PNG & PDF export" and "Napkin branding on
+  # visuals"; Plus ($9) adds "Unlimited PPT & SVG export" and "Remove Napkin
+  # branding". The old wording implied the free plan exports to PowerPoint.
+  # The same page's FAQ says "Napkin will not use your data to train our
+  # models if you opt out of data sharing"; no status note was added for it
+  # (the privacy policy, effective 2026-08-31, does not address training).
+  last_reviewed: 2026-09-29
+  blurb: Generates editable diagrams, flowcharts, and infographics from pasted or imported text, a quick way to add visuals to lectures and handouts. The free plan exports images and PDFs with Napkin branding on the visuals; PowerPoint export requires a paid plan.
 
 - name: Jan
   vendor: Jan (open source)
@@ -982,6 +1081,49 @@
   governance_status: listed
   last_reviewed: 2026-09-29
   blurb: Web platform for managing systematic reviews with a team, covering screening, data extraction, and reporting aligned to the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) standard. Artificial intelligence features sort records by predicted relevance, tag randomized controlled trials, and suggest data extraction values that reviewers accept or reject one at a time.
+
+# Added 2026-09-29 from tool-discovery issue #52 (owner approved). Verified
+# 2026-09-29 from Wolters Kluwer's own pages (product page, Pro Plus and
+# trainee pages, press release of 2025-09-24), read in headless Chromium:
+# answers draw "exclusively" on UpToDate content with stated assumptions,
+# reasoning, topic links, and Lexidrug drug information; access is "through
+# participating institutional subscriptions or individual purchase
+# subscriptions", and the personal trainee and Pro Plus plans that include
+# it are "currently available in the United States or Canada". The product
+# page, re-read in the app's browser the same day, says "currently available
+# in select markets"; the blurb follows that page.
+- name: UpToDate Expert AI
+  vendor: Wolters Kluwer
+  category: research
+  url: https://www.wolterskluwer.com/en/solutions/uptodate/uptodate-expert-ai
+  # Every wolterskluwer.com page 403s scripted clients, browser user agent
+  # included, and uptodate.com/expert-ai redirects to a login page (probed
+  # 2026-09-29), so there is nothing for the weekly verifier to read. The
+  # product page renders in a real browser. Owner-reviewed.
+  verify: skip
+  cost: paid
+  governance_status: listed
+  last_reviewed: 2026-09-29
+  blurb: Conversational tool inside UpToDate that answers clinical questions using only UpToDate's expert-written content, showing the assumptions and reasoning behind each answer, with links to the supporting UpToDate topics and drug information. Offered in select markets through participating institutional UpToDate subscriptions and individual subscriptions, so access through a school's UpToDate license depends on that license.
+
+# Added 2026-09-29 from tool-discovery issue #52 (owner approved). Verified
+# 2026-09-29 from the Google Scholar blog: launched 2025-11-18 as an
+# experimental feature for a limited number of users with a waitlist; the
+# 2026-06-03 update says it "is available for all logged in users and
+# supports questions in all languages". No paid tier.
+- name: Google Scholar Labs
+  vendor: Google
+  category: research
+  url: https://scholar.google.com/scholar_labs/search
+  # Signed-out visitors are redirected to Google sign-in, so the product URL
+  # gives the verifier only a login page (1,050 characters, probed
+  # 2026-09-29). The June 2026 update post describes the feature and its
+  # availability (3,800 characters through strip_page, same day).
+  verify_url: https://scholar.googleblog.com/2026/06/scholar-labs-update-search-10x-faster.html
+  cost: free
+  governance_status: listed
+  last_reviewed: 2026-09-29
+  blurb: Artificial intelligence search mode in Google Scholar for detailed research questions. It identifies a question's key topics, searches Scholar, and lists papers that address it, each with a short note on how the paper helps, and it takes follow-up questions. Free with a Google account sign-in.
 
 - name: BioRender
   vendor: BioRender

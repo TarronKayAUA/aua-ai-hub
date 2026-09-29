@@ -226,7 +226,7 @@ MODALITY_DESCRIPTORS = {
     "language": "Chat, reasoning, and coding model families, from laptop-sized models to data-center scale.",
     "image": "Image generators for local or self-hosted pipelines.",
     "video": "Video generators for local or self-hosted pipelines, generally needing more video memory than image models.",
-    "audio": "Music and sound generation models.",
+    "audio": "Speech, music, and sound models.",
     "data": "Models for tabular and structured data.",
 }
 
