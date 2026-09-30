@@ -171,6 +171,29 @@ slots:
     kind: news
     fit: text
 
+  # The news pages (wave 2): one family, each tied to its title at a glance
+  # (owner, 2026-09-29, all nine subjects approved). Not places, so no captions.
+  - page: news/general-ai.md
+    section: _head
+    piece: dish-net
+    kind: news
+    fit: text
+  - page: news/medical-education.md
+    section: _head
+    piece: lecture-hall
+    kind: news
+    fit: text
+  - page: news/clinical-practice.md
+    section: _head
+    piece: hospital-room
+    kind: news
+    fit: text
+  - page: news/this-week.md
+    section: _head
+    piece: week-calendar
+    kind: news
+    fit: text
+
   # Tools & Prompts: the Betty's Hope sugar mill, a tool that turns wind
   # into work ("just fit it in to the small section of text at the top").
   - page: tools-and-prompts.md

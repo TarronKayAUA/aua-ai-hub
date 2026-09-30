@@ -30,7 +30,7 @@
 
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
   /* NIGHT, the hero in the dark scheme: the afterglow nearly gone, many more stars out. */
-  --isl-sky0: #030a17; --isl-sky1: #071830; --isl-sky2: #0d2847; --isl-sky3: #1a3a5c; --isl-hz: #2e4b69;
+  --isl-sky0: #030a17; --isl-sky1: #071830; --isl-sky2: #0c2440; --isl-sky3: #142f4c; --isl-hz: #203853;
   --isl-g1: #ffb574; --isl-g2: #b85e50; --isl-g3: #3e376f;
   --isl-sea0: #1b3653; --isl-sea1: #0a1c32; --isl-sea2: #030b16; --isl-haze: #3a5372;
   --isl-isl: #122841; --isl-far: #0b1a2e; --isl-near: #040b16;
@@ -63,17 +63,24 @@
   --isl-rip-a: 0.2; --isl-hzline: rgba(110, 135, 160, 0.2);
 }
 
-/* Night's layers (its stars, Milky Way, Moon and afterglow) show in a picture whose clock says Night, and
-   in the dark scheme's gutters, which have no clock; Dusk's show otherwise. After midnight (data-late,
-   island-core.js: midnight to 4:59 by the visitor's clock) the evening's glow is gone (owner, 2026-09-29:
-   "the fade out after midnight"): the afterglow over the sunset point, its reflection, the glitter it lays
-   on the water and the rims it catches on the crests fade out over 1.6 seconds, and stay out until Dawn. */
-.isl :is(.isl-nglow, .isl-aglow, .s-rim) { transition: opacity 1.6s ease-in-out; }
-.isl[data-sky="night"][data-late] :is(.isl-nglow, .isl-aglow, .s-rim) { opacity: 0; }
-@media (prefers-reduced-motion: reduce) { .isl :is(.isl-nglow, .isl-aglow, .s-rim) { transition: none; } }
+/* Night's layers (its stars, Milky Way and Moon) show in a picture whose clock says Night, and in the dark
+   scheme's gutters, which have no clock; Dusk's show otherwise. */
 .isl .isl-n { display: none; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-n, .isl[data-sky="night"] .isl-n { display: inline; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-d, .isl[data-sky="night"] .isl-d { display: none; }
+/* Night is dark (owner, 2026-09-29: "night should be dark"; "typically night shortly after sunset there is
+   no glow at all"): from 21:00 there is no afterglow over the sunset point, no reflection of it, no glitter
+   on the water and no rim of light on the crests, in every picture, the homepage hero and the dark
+   scheme's gutters; the stars, the Milky Way, the Moon and the lights remain. (Until then these faded
+   only after midnight, marked data-late, which is retired.)
+   After the rule above, which shows Night's layers, since the glow carries both classes. */
+.isl[data-sky="night"] :is(.isl-nglow, .isl-aglow, .s-rim),
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) :is(.isl-nglow, .isl-aglow, .s-rim) { display: none; }
+/* Dusk is nearly dark, with a subtle glow on the horizon that tells it from Night (owner, 2026-09-29: "dusk
+   should be approaching dark with a subtle glow on the horizon that makes it clearly distinguishable from
+   night"): the glow Sunset shows over the sunset point is drawn at Dusk at half strength and pressed down
+   toward the horizon, its reflection with it. Sunset's own glow is unchanged. */
+.isl[data-sky="dusk"] .isl-dglow { opacity: 0.5; transform: scaleY(0.55); transform-box: fill-box; transform-origin: center; }
 
 /* THE FIVE TIMES OF DAY (owner, 2026-09-28; SPEC section 12): every picture, the homepage hero
    included, shows Dawn, Day, Sunset, Dusk or Night by the visitor's clock (its data-sky, A.pickSky in
@@ -100,9 +107,11 @@
    navy sky, a low glow in the west, the land darker. The frigatebird darkens with it, so it still reads
    against the sky. */
 .isl[data-sky="dusk"] {
-  --isl-sky0: #061a30; --isl-sky1: #0a2d4f; --isl-sky2: #154268; --isl-sky3: #3a6488; --isl-hz: #7a93aa;
-  --isl-sea0: #3b5b76; --isl-sea1: #173955; --isl-sea2: #08223b; --isl-haze: #7f93a8;
-  --isl-isl: #1b3450; --isl-far: #102a44; --isl-near: #07182a; --isl-bird: #020912;
+  /* nearer dark again (owner, 2026-09-29, above): the horizon a dim blue, the glow deeper and redder */
+  --isl-sky0: #05172b; --isl-sky1: #092845; --isl-sky2: #10365a; --isl-sky3: #22486b; --isl-hz: #3d5c7a;
+  --isl-g1: #e6ab7c; --isl-g2: #b0634f; --isl-g3: #413a68; --isl-rim: #c99774;
+  --isl-sea0: #274660; --isl-sea1: #12314b; --isl-sea2: #061b31; --isl-haze: #3f5a76;
+  --isl-isl: #15293f; --isl-far: #0c2138; --isl-near: #05131f; --isl-bird: #020912;
 }
 .isl[data-sky="dawn"] .isl-a,
 .isl[data-sky="day"] .isl-y { display: inline; }
@@ -449,8 +458,8 @@
    ceiling panels lit and the lamps off; Dawn cool and pinkish, Sunset warm. The shades' lit glow is
    the same green in every version the lamps are on. */
 .isl {
-  --isl-lwall0: #6f7179; --isl-lwall1: #a39d92; --isl-lside: #1b2230; --isl-lceil: #62656d; --isl-lgrid: #4e5159;
-  --isl-lpanel: #72767e; --isl-lfloor: #7c7468; --isl-lgrout: #665f55; --isl-lframe: #c9ccd1; --isl-lbase: #5a554e;
+  --isl-lwall0: #4f5159; --isl-lwall1: #7a756b; --isl-lside: #141a26; --isl-lceil: #474a52; --isl-lgrid: #383b42;
+  --isl-lpanel: #52565e; --isl-lfloor: #5c554b; --isl-lgrout: #4b453d; --isl-lframe: #a3a7ae; --isl-lbase: #45413b;
   --isl-lwood: #7a3a24; --isl-lwood2: #4f2416; --isl-lchair: #7d8185; --isl-lchair2: #5c6064;
   --isl-lred: #a8453a; --isl-lred2: #8e8f94; --isl-lalu: #b7bcc2; --isl-lsign: #2d5f9e;
   --isl-lshade: #1e5a3a; --isl-lglow0: #3aa866; --isl-lglow1: #c4f7d0; --isl-lbronze: #4a3b2c;
@@ -573,7 +582,7 @@
    the pegboard, the painted outlines on it, and the cast iron. The hammer hangs in its outline only
    at Night (isl-tqn); in every other version it lies on the bench (an isl-lq group, above). */
 .isl {
-  --isl-tboard: #86826d; --isl-tsil: #3d3b32; --isl-tpeg: #5d5a4b; --isl-tiron: #3a3e45; --isl-tbulb: #fff4d6;
+  --isl-tboard: #6d6a59; --isl-tsil: #33312a; --isl-tpeg: #4d4a3e; --isl-tiron: #3a3e45; --isl-tbulb: #fff4d6;
 }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
   --isl-tboard: #3a392f; --isl-tsil: #1b1a16; --isl-tpeg: #2b2a23; --isl-tiron: #1d2024;
@@ -631,6 +640,53 @@
 .isl .isl-bnote { fill: var(--isl-lpage); }
 .isl .isl-bink { stroke: #3a3f4a; stroke-opacity: 0.45; fill: none; }
 .isl .isl-bpin { stroke: var(--isl-lbottle); fill: none; stroke-linecap: round; }
+/* The news pages (round 7, wave 2, 2026-09-29): the interiors share the library's tokens; their own are
+   the hospital's curtain and blanket, the skeleton's bone, the lecture theatre's seats and lit screen.
+   Each picture's one accent is in the page's hue (the kind line in the light scheme, the kind color in
+   the dark): the calendar's ring, the monitor's trace, the heart on the screen, the network's output. */
+.isl {
+  --isl-hcurt: #577270; --isl-hblank: #6e87a1; --isl-bone: #b8b09c; --isl-mseat: #2e3245; --isl-mscr: #e9edf2;
+}
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
+  --isl-hcurt: #2e3d3c; --isl-hblank: #34465a; --isl-bone: #8a8474; --isl-mseat: #151823; --isl-mscr: #c9d3df;
+}
+.isl[data-sky="day"] { --isl-hcurt: #a9d0cb; --isl-hblank: #b9d3ec; --isl-bone: #efe8d6; --isl-mseat: #4f5b86; --isl-mscr: #fbfcfd; }
+.isl[data-sky="dawn"] { --isl-hcurt: #8e99a6; --isl-hblank: #a3adc9; --isl-bone: #d6cdcc; --isl-mseat: #464a66; }
+.isl[data-sky="sunset"] { --isl-hcurt: #a39a85; --isl-hblank: #b5a9b4; --isl-bone: #e3d0b3; --isl-mseat: #4f4456; }
+.isl :is(.isl-cring, .isl-hecg, .isl-mheart, .isl-mheart2) { stroke: var(--k-line, var(--isl-rim)); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+[data-md-color-scheme="slate"] .isl :is(.isl-cring, .isl-hecg, .isl-mheart, .isl-mheart2) { stroke: var(--k, var(--isl-rim)); }
+.isl .isl-mheart { fill: var(--k-line, var(--isl-rim)); fill-opacity: 0.18; }
+[data-md-color-scheme="slate"] .isl .isl-mheart { fill: var(--k, var(--isl-rim)); }
+.isl .isl-cband { fill: var(--isl-lbk2); }
+.isl .isl-cgrid { stroke: #6b6f78; stroke-opacity: 0.45; fill: none; }
+.isl .isl-cmark { stroke: #3a3f4a; stroke-opacity: 0.7; fill: none; stroke-linecap: round; }
+.isl .isl-chand { stroke: #2b2f38; fill: none; stroke-linecap: round; }
+.isl .isl-cshade { fill: var(--isl-lbronze); }
+.isl .isl-hslat { fill: var(--isl-lframe); fill-opacity: 0.92; }
+.isl .isl-hcord { stroke: #8d939c; fill: none; }
+.isl .isl-hrail { stroke: var(--isl-lalu); fill: none; }
+.isl .isl-hcurtain { fill: var(--isl-hcurt); }
+.isl .isl-hfold { stroke: #000000; stroke-opacity: 0.16; fill: none; stroke-linecap: round; }
+.isl .isl-hframe { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; }
+.isl .isl-hmat { fill: var(--isl-lpage); }
+.isl .isl-hblanket { fill: var(--isl-hblank); }
+.isl .isl-hbag { fill: #e8f2f7; fill-opacity: 0.55; stroke: var(--isl-lalu); stroke-width: 0.8; }
+.isl .isl-hfluid { fill: #f3ecc4; fill-opacity: 0.8; }
+.isl .isl-hscreen { fill: #0c1822; }
+.isl .isl-hread { fill: #5fd3a8; fill-opacity: 0.85; }
+.isl .isl-hread2 { stroke: #6fb8e0; fill: none; }
+.isl .isl-mscreen { fill: var(--isl-mscr); }
+.isl .isl-mnote { stroke: #7f8794; stroke-opacity: 0.6; fill: none; stroke-linecap: round; }
+.isl .isl-mstand { stroke: var(--isl-tiron); fill: none; stroke-linecap: round; }
+.isl .isl-mbone { stroke: var(--isl-bone); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.isl .isl-mbonef { fill: var(--isl-bone); }
+.isl .isl-mhole { stroke: #3a3730; fill: none; stroke-linecap: round; }
+.isl .isl-mseat { fill: var(--isl-mseat); }
+.isl .isl-mseat2 { fill: var(--isl-mseat); filter: brightness(0.82); }
+.isl .isl-dtruss { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; }
+.isl .isl-ddish { fill: var(--isl-lframe); }
+.isl .isl-ddish2 { stroke: var(--isl-lalu); fill: none; }
+.isl .isl-nnode { fill: var(--isl-node); }
 [data-md-color-scheme="slate"] .isl :is(.isl-pbubble, .isl-pline, .isl-pdot, .isl-pring) { stroke: var(--k, var(--isl-rim)); }
 [data-md-color-scheme="slate"] .isl .isl-pbubble { fill: #e9ecf5; fill-opacity: 0.82; }
 .isl .isl-tbulb { fill: var(--isl-tbulb); }

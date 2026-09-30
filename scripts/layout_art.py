@@ -56,10 +56,19 @@ TIMES = ("dawn", "day", "sunset", "dusk", "night")
 # where the head left the frame empty. Below that the wrapper is an ordinary block and the figure is
 # hidden, so the page reads as before.
 # A head ends at the first thing that is not the title and its lede: a section, a door's cards or rows,
-# a shelf (the Tool Directory's, whose first h2 is inside it), a news page's brief, or a grid of
+# a shelf (the Tool Directory's, whose first h2 is inside it), a news page's brief or the feed panel
+# layout_week has already wrapped it in (a <section>, which the head must never split), or a grid of
 # resource cards (Learning to Prompt, which has no h2) (2026-09-29).
-HEAD_END = re.compile(r'<(h2\b|div class="grid|p class="kind-key|div class="learn-door|div data-tp-landing'
-                      r'|div class="shelf|div class="door-rows|div class="section-brief|div class="video-grid)')
+HEAD_END = re.compile(r'<(h2\b|section\b|div class="grid|p class="kind-key|div class="learn-door|div data-tp-landing'
+                      r'|div class="shelf|div class="door-rows|div class="section-brief|div class="video-grid'
+                      r'|div class="wk-feeds)')
+
+
+def _balanced(fragment: str) -> bool:
+    """A head must hold whole elements: every div and section it opens it also closes (2026-09-29, after two
+    news pages lost their layout when the head swallowed the opening tag of a wrapper an earlier hook had
+    added). The build fails instead of shipping a broken page."""
+    return all(len(re.findall(rf"<{t}\b", fragment)) == len(re.findall(rf"</{t}>", fragment)) for t in ("div", "section"))
 
 # STACKS (2026-09-28, the About page): `section: [first, last]` wraps the h2 sections from `first`
 # through `last` in `div.isl-stack` with the picture beside them. `first` may be `_title` (owner,
@@ -167,6 +176,9 @@ def on_page_content(html, page, config, files, **kwargs):
             end = HEAD_END.search(html, h1.end()) if h1 else None
             if not h1 or not end:
                 raise SystemExit(f"layout_art: {src} has no landing head to sit beside (data/art_slots.yaml)")
+            if not _balanced(html[h1.start():end.start()]):
+                raise SystemExit(f"layout_art: {src}: the head would split an element (an unclosed div or section "
+                                 "before its end); add that element's opening to HEAD_END")
             fig = (f'<figure class="isl-vignette isl-vignette--head" data-vignette="{s["piece"]}"{kind}{aspect}'
                    f'>{cap}</figure>')
             html = (html[:h1.start()] + '<div class="isl-head"><div class="isl-head__text">' + html[h1.start():end.start()]
