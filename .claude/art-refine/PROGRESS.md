@@ -101,13 +101,13 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### tool-wall
 
-- [ ] #13 fix v4 `tool-wall-1`: The middle boat hides behind the window's mullion
-- [ ] #32 fix v3 `tool-wall-5`: The hammer on the bench: the outline's hammer, resting on its claw
-- [ ] #44 fix v3 `tool-wall-3`: The transom bar crosses the top of the setting Sun
-- [ ] #73 fix v2 `tool-wall-2`: The window's reveal is on the wrong jamb
-- [ ] #78 fix v2 `tool-wall-7`: The vise reads as a small window
-- [ ] #80 fix v2 `tool-wall-6`: The evening planet sits half under the window frame
-- [ ] #107 add v2 `tool-wall-4`: A rack for the screwdrivers and chisels, a peg for the tape
+- [x] #13 fix v4 `tool-wall-1`: The middle boat hides behind the window's mullion
+- [x] #32 fix v3 `tool-wall-5`: The hammer on the bench: the outline's hammer, resting on its claw
+- [x] #44 fix v3 `tool-wall-3`: The transom bar crosses the top of the setting Sun
+- [x] #73 fix v2 `tool-wall-2`: The window's reveal is on the wrong jamb
+- [x] #78 fix v2 `tool-wall-7`: The vise reads as a small window
+- [x] #80 fix v2 `tool-wall-6`: The evening planet sits half under the window frame
+- [x] #107 add v2 `tool-wall-4`: A rack for the screwdrivers and chisels, a peg for the tape
 
 ### prompt-desk
 

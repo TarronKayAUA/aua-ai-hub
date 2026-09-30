@@ -2093,7 +2093,9 @@
     s += mirrored(y0, farLand, 0.16) + mist(wx0, y0, ww, Y(0.05), 0.45);
     for (let i = 0; i < 7; i++) lights.push([wx0 + ww * (0.05 + r() * 0.9), y0 - Y(0.006 + r() * 0.03)]);
     let hulls = '', masts = '';
-    for (const [fx, fy, k] of [[0.2, 0.1, 0.9], [0.5, 0.06, 0.7], [0.78, 0.13, 1.1]]) {
+    // (the middle boat in the left pane's open water: on the mullion, its mast and light were hidden over
+    // their column of light)
+    for (const [fx, fy, k] of [[0.2, 0.1, 0.9], [0.4, 0.06, 0.7], [0.78, 0.13, 1.1]]) {
       const bx = wx0 + ww * fx, by = y0 + Y(fy), hw = Y(0.045) * k, mh = Y(0.24) * k;
       const hull = `M${F(bx - hw)} ${F(by - Y(0.016) * k)}H${F(bx + hw)}L${F(bx + hw * 0.72)} ${F(by)}H${F(bx - hw * 0.78)}Z`;
       hulls += hull;
@@ -2104,11 +2106,12 @@
     }
     s += `<path class="isl-vhull" d="${hulls}"/><path class="isl-vmast" d="${masts}" stroke-width=".8"/>`;
     s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
-    // 2. The wall with the window cut out of it, the reveal's shadow on its left and sill sides, the
+    // 2. The wall with the window cut out of it, the reveal's shadow on its right jamb (the one the viewer,
+    //    to the window's left, can see) and its sill, the
     //    frame, one mullion and one transom, and the sill.
     s += `<path fill="url(#isltwallg)" fill-rule="evenodd" d="${rect(-2, -2, W + 4, H + 4)}${rect(wx0, wT, ww, wB - wT)}"/>`;
     const rv = Math.max(2, Y(0.025));
-    s += `<path class="isl-lsidew" d="${polyD([[wx0, wT], [wx0 + rv, wT + rv], [wx0 + rv, wB], [wx0, wB]])}${rect(wx0, wB - rv, ww, rv)}"/>`;
+    s += `<path class="isl-lsidew" d="${polyD([[wx1, wT], [wx1 - rv, wT + rv], [wx1 - rv, wB], [wx1, wB]])}${rect(wx0, wB - rv, ww, rv)}"/>`;
     s += `<path class="isl-lframe" d="${rect(wx0, wT, ww, wB - wT)}" stroke-width="${F(Math.max(1.5, Y(0.018)))}"/>`
       + `<path class="isl-lframe" d="M${F(wx0 + ww * 0.5)} ${F(wT)}V${F(wB)}M${F(wx0)} ${F(wT + (wB - wT) * 0.42)}H${F(wx1)}" stroke-width="${F(Math.max(1, Y(0.011)))}"/>`
       + `<path class="isl-lsill" d="${rect(wx0 - Y(0.02), wB, ww + Y(0.04), Math.max(2, Y(0.022)))}"/>`;
@@ -2131,12 +2134,17 @@
       const t = TOOLS[k](ts);
       const at = `translate(${F(cx)} ${F(top)})`;
       sil += `<path transform="${at}" d="${t.sil}"/>`;
-      hooks += `M${F(cx + (k === 'square' ? 0.02 * ts : 0))} ${F(top - bh * 0.035)}v${F(bh * 0.05)}`;
+      // (screwdrivers and chisels hang in a wooden rack across their group, just under the ferrules, as on a
+      // real shadow board, and the tape measure hangs by its clip from its own peg)
+      const rack = { drivers: [0.225, 0.14], chiseltape: [0.168, 0.125] }[k];
+      if (!rack) hooks += `M${F(cx + (k === 'square' ? 0.02 * ts : 0))} ${F(top - bh * 0.035)}v${F(bh * 0.05)}`;
+      if (k === 'chiseltape') hooks += `M${F(cx)} ${F(top + 0.39 * ts)}v${F(0.05 * ts)}`;
       const drawn = t.parts.map(([cls, d, sw, rule]) => sw
         ? `<path class="${cls}" d="${d}" stroke-width="${F(Math.max(0.5, sw))}"/>`
         : `<path class="${cls}" d="${d}"${rule ? ` fill-rule="${rule}"` : ''}/>`).join('');
       if (k === 'hammer') { hammerX = cx; board += `<g class="isl-tqn" transform="${at}">${drawn}</g>`; }
       else board += `<g transform="${at}">${drawn}</g>`;
+      if (rack) board += `<path class="isl-lwood" transform="${at}" d="${rect(-rack[1] * ts, rack[0] * ts, 2 * rack[1] * ts, 0.03 * ts)}"/>`;
       x += w * ts + gap;
     }
     s += `<g class="isl-tsil" stroke-width="${F(Math.max(1.2, ts * 0.03))}" stroke-linejoin="round">${sil}</g>`;
@@ -2157,14 +2165,17 @@
     // the vise at the bench's end: the fixed jaw bolted to the top, the moving jaw a little apart, the
     // screw between them and its bar hanging through the end
     const u = ts, vx = X(0.012), jw = u * 0.11, jh = u * 0.2, vT = tTop - jh;
-    s += `<path class="isl-tiron" d="${rect(vx + u * 0.16, vT, jw, jh + 0.5)}${rect(vx + u * 0.02, vT, jw, jh * 0.85)}${rect(vx, tTop - u * 0.02, u * 0.33, u * 0.025)}"/>`
+    // (the screw passes behind the jaws, its bar in front: drawn over them, a light cross had read as a window)
+    s += `<path class="isl-lalu" d="${rect(vx + u * 0.005, vT + jh * 0.45, u * 0.26, u * 0.018)}"/>`
+      + `<path class="isl-tiron" d="${rect(vx + u * 0.16, vT, jw, jh + 0.5)}${rect(vx + u * 0.02, vT, jw, jh * 0.85)}${rect(vx, tTop - u * 0.02, u * 0.33, u * 0.025)}"/>`
       + `<path class="isl-tjaw" d="M${F(vx + u * 0.02)} ${F(vT + 0.5)}h${F(jw)}M${F(vx + u * 0.16)} ${F(vT + 0.5)}h${F(jw)}" stroke-width="${F(Math.max(1, u * 0.014))}"/>`
-      + `<path class="isl-lalu" d="${rect(vx + u * 0.005, vT + jh * 0.45, u * 0.26, u * 0.018)}${rect(vx - u * 0.005, vT + jh * 0.05, u * 0.016, jh * 0.95)}"/>`;
+      + `<path class="isl-lalu" d="${rect(vx - u * 0.005, vT + jh * 0.05, u * 0.016, jh * 0.95)}"/>`;
     // By day, in use: the hammer lying on the bench under its empty outline, a block plane with a curl
     // of shavings, and an open toolbox with handles showing (Dawn, Day, Sunset, Dusk; cleared at Night).
-    const hx = hammerX - u * 0.26;
-    const hammerFlat = `<path class="isl-lbk3" d="M${F(hx)} ${F(tTop - u * 0.055)}H${F(hx + u * 0.5)}V${F(tTop + 0.5)}H${F(hx + u * 0.02)}Q${F(hx - u * 0.02)} ${F(tTop - u * 0.025)} ${F(hx)} ${F(tTop - u * 0.055)}Z"/>`
-      + `<path class="isl-tiron" d="M${F(hx + u * 0.49)} ${F(tTop + 0.5)}V${F(tTop - u * 0.2)}H${F(hx + u * 0.575)}V${F(tTop - u * 0.12)}Q${F(hx + u * 0.64)} ${F(tTop - u * 0.06)} ${F(hx + u * 0.62)} ${F(tTop + 0.5)}Z"/>`;
+    // (the board's own hammer, set down: it rests on its claw's tip and its handle's butt, face up, the
+    // handle sloping to the bench; drawn as a flat handle into an upright head, it had read as a boot)
+    const hm = TOOLS.hammer(u);
+    const hammerFlat = `<g transform="translate(${F(hammerX + u * 0.32)} ${F(tTop - u * 0.141)}) rotate(78.7)">${hm.parts.map(([c, d]) => `<path class="${c}" d="${d}"/>`).join('')}</g>`;
     const px = bx0 + bw * 0.62, pw = u * 0.36, ph = u * 0.1;
     const plane = `<path class="isl-tiron" d="M${F(px)} ${F(tTop + 0.5)}V${F(tTop - ph * 0.55)}L${F(px + pw * 0.1)} ${F(tTop - ph)}H${F(px + pw * 0.95)}L${F(px + pw)} ${F(tTop - ph * 0.6)}V${F(tTop + 0.5)}Z"/>`
       + `<path class="isl-lwood" d="M${F(px + pw * 0.16)} ${F(tTop - ph)}a${F(pw * 0.08)} ${F(pw * 0.08)} 0 1 1 ${F(pw * 0.16)} 0ZM${F(px + pw * 0.62)} ${F(tTop - ph)}q${F(pw * 0.02)} ${F(-ph * 1.4)} ${F(pw * 0.24)} ${F(-ph * 1.1)}l${F(pw * 0.04)} ${F(ph * 1.1)}Z"/>`;
@@ -3237,10 +3248,17 @@
       // far hill in the window's right-hand pane at Sunset, its path on the harbour below; the horizon
       // is the window's; the Moon in the window's upper left pane (its true phase and tilt, the place a
       // painter's licence, as in the library). At the default minute the hill hid the whole disc while its
-      // path still showed on the water, so every window piece sets at 18:23 (review, 2026-09-30).
-      sunset: '18:23',
+      // path still showed on the water, so every window piece sets at 18:23 (review, 2026-09-30); here the
+      // transom crossed the disc at 18:23, so this one sets at 18:26, the view turned so the Sun stands at
+      // 0.86 of the window, where the hill is low enough to hold it just under the bar (review, 2026-09-30).
+      sunset: '18:26',
       horizon: (W, H) => toolFrame(W, H).hz / H,
-      face: (W, H) => { const f = toolFrame(W, H); return 290.8 - ((f.wx0 + f.ww * 0.7) / W - 0.5) * 62; },
+      face: (W, H) => { const f = toolFrame(W, H); return 290.8 - ((f.wx0 + f.ww * 0.86) / W - 0.5) * 62; },
+      // the window's bars: a planet that would stand half behind one is left out, as the wall would hide it
+      bars: (W, H) => {
+        const f = toolFrame(W, H), t = H * 0.012, tr = f.wT + (f.wB - f.wT) * 0.42, mx = f.wx0 + f.ww / 2;
+        return [[f.wx0, f.wT - t, f.wx1, f.wT + t], [f.wx0, tr - t, f.wx1, tr + t], [mx - t, f.wT, mx + t, f.wB], [f.wx0 - t, f.wT, f.wx0 + t, f.wB], [f.wx1 - t, f.wT, f.wx1 + t, f.wB]];
+      },
       ppd: (W) => W / 62,
       moonAt: (W, H) => { const f = toolFrame(W, H); return [(f.wx0 + f.ww * 0.26) / W, (f.wT + (f.hz - f.wT) * 0.38) / H]; },
       moonBig: 1.2,
@@ -3591,7 +3609,7 @@
       const cls = m === 'd' ? 'isl-d' : 'isl-n', drawn = L.moon(vm, m, [], cls, big), [mx, my, mr] = L.moonBox(vm, m, big);
       sky[m] = {
         moon: drawn,
-        planets: L.planets(vm, m, [], cls),
+        planets: L.planets(vm, m, P.bars ? P.bars(W, H) : [], cls),   // (clear of a window's bars)
         box: drawn ? [[mx - mr, my - mr, mx + mr, my + mr]] : [],
         hole: drawn ? `<circle cx="${F(mx)}" cy="${F(my)}" r="${F(mr + 1)}" fill="#000"/>` : '',
       };
