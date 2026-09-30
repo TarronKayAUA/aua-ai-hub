@@ -149,13 +149,13 @@
         win(grp, arch(x, base - 3.5 * u, 1.3 * u, base - 0.3 * u), r() < 0.45);
       }
     }
-    // The tower: shaft, the open lookout, cornice, pyramid roof; the clock.
+    // The tower: shaft, the open lookout, cornice, pyramid roof; the clock. Seen straight on, so no side of
+    // it shows: no shaded strip down the shaft and no darker half to the roof, which had read as a turned
+    // tower under a straight-on lookout, cornice and clock (owner, 2026-09-30: "it looks subtly off").
     const tw = 9 * u, tx0 = cx - tw / 2, shaftTop = base - 30 * u, lookH = 4.4 * u;
     walls += rect(tx0, shaftTop, tw, base - shaftTop);
-    shade += rect(tx0 + tw - 1.2 * u, shaftTop, 1.2 * u, base - shaftTop);
     walls += rect(tx0 - 0.6 * u, shaftTop - lookH - 0.9 * u, tw + 1.2 * u, 0.9 * u);      // cornice
     roofs += `M${F(tx0 - 1.4 * u)} ${F(shaftTop - lookH - 0.8 * u)}L${F(cx)} ${F(shaftTop - lookH - 5.6 * u)}L${F(tx0 + tw + 1.4 * u)} ${F(shaftTop - lookH - 0.8 * u)}Z`;
-    roofShade += `M${F(cx)} ${F(shaftTop - lookH - 0.8 * u)}L${F(cx)} ${F(shaftTop - lookH - 5.6 * u)}L${F(tx0 + tw + 1.4 * u)} ${F(shaftTop - lookH - 0.8 * u)}Z`;
     let posts = '';
     for (let i = 0; i <= 6; i++) posts += rect(tx0 + (i / 6) * (tw - 0.7 * u), shaftTop - lookH, 0.7 * u, lookH);
     const lookout = rect(tx0, shaftTop - lookH, tw, lookH);
@@ -1071,7 +1071,9 @@
     const twin = tower(X(0.5), Y(0.745), Y(0.4), Y(0.26), Y(0.18), true);
     s += `<path class="isl-vstone" d="${twin.d}"/><path class="isl-vcourse" d="${twin.c}" stroke-width=".6"/>`;
     s += `<path class="isl-vpshade" d="M${F(X(0.5) + Y(0.02))} ${F(Y(0.745))}L${F(X(0.5) + Y(0.02))} ${F(twin.top)}L${F(X(0.5) + Y(0.09))} ${F(twin.top)}L${F(X(0.5) + Y(0.13))} ${F(Y(0.745))}Z"/>`;
-    s += `<path class="isl-vdark" d="M${F(X(0.5) - Y(0.035))} ${F(Y(0.745))}V${F(Y(0.66))}a${F(Y(0.035))} ${F(Y(0.035))} 0 0 1 ${F(Y(0.07))} 0V${F(Y(0.745))}Z"/>`;
+    // its opening in the middle of its lit face, left of the edge where the shaded face turns away
+    // (owner, 2026-09-30: a door on that edge did not match the drawing's corner)
+    s += `<path class="isl-vdark" d="M${F(X(0.5) - Y(0.088))} ${F(Y(0.745))}V${F(Y(0.66))}a${F(Y(0.035))} ${F(Y(0.035))} 0 0 1 ${F(Y(0.07))} 0V${F(Y(0.745))}Z"/>`;
     // 5. The restored mill: tower, cap, tail pole, the lit door; the sails in their own group.
     const mx = X(0.74), mb = Y(0.75), mh = Y(0.42), mwb = Y(0.28), mwt = Y(0.19);
     const mill = tower(mx, mb, mh, mwb, mwt, false);
@@ -1084,10 +1086,12 @@
     s += `<path class="isl-vwood-f" d="M${F(mx - capW / 2)} ${F(capY + 1)}V${F(capY - capH)}H${F(mx + capW / 2)}V${F(capY + 1)}Z"/>`;
     s += `<path class="isl-vwood-f" d="M${F(mx - capW / 2 - Y(0.01))} ${F(capY - capH + 1)}L${F(mx - capW * 0.3)} ${F(capY - capH - Y(0.035))}H${F(mx + capW * 0.3)}L${F(mx + capW / 2 + Y(0.01))} ${F(capY - capH + 1)}Z"/>`;
     s += `<path class="isl-vwood" d="M${F(mx - capW / 2)} ${F(capY - capH * 0.5)}H${F(mx + capW / 2)}M${F(mx - capW * 0.3)} ${F(capY - capH - Y(0.02))}H${F(mx + capW * 0.3)}" stroke-width=".7"/>`;
-    // the door, lit; its light on the ground; the lamp beside it (last to light)
-    const door = `M${F(mx - Y(0.035))} ${F(mb)}V${F(mb - Y(0.1))}a${F(Y(0.035))} ${F(Y(0.035))} 0 0 1 ${F(Y(0.07))} 0V${F(mb)}Z`;
+    // the door, lit, in the middle of the lit face (as the twin's opening); its light on the ground; the
+    // lamp beside it (last to light)
+    const dcx = mx - Y(0.052);
+    const door = `M${F(dcx - Y(0.035))} ${F(mb)}V${F(mb - Y(0.1))}a${F(Y(0.035))} ${F(Y(0.035))} 0 0 1 ${F(Y(0.07))} 0V${F(mb)}Z`;
     s += `<path class="f-pulse isl-vwin" style="--i:2" d="${door}"/>`;
-    s += `<g class="isl-vwin" style="--i:2">${pool(mx, mb + Y(0.02), Y(0.22), Y(0.05), 0.75)}</g>`;
+    s += `<g class="isl-vwin" style="--i:2">${pool(dcx, mb + Y(0.02), Y(0.22), Y(0.05), 0.75)}</g>`;
     const lx = mx - mwb / 2 - Y(0.06);
     s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(mb + Y(0.01))}V${F(mb - Y(0.14))}H${F(lx + 1)}V${F(mb + Y(0.01))}Z"/>`;
     s += `<g class="isl-vwin isl-vlast" style="--i:4">${halo(lx, mb - Y(0.155), Y(0.13), 'islvlamp')}<path class="isl-vlamp" d="M${F(lx - Y(0.011))} ${F(mb - Y(0.14))}V${F(mb - Y(0.175))}H${F(lx + Y(0.011))}V${F(mb - Y(0.14))}Z"/></g>`;
@@ -1116,7 +1120,7 @@
       + `<path class="isl-vlattice" d="${lattice}" stroke-width=".8"/><path class="isl-vwood" d="${stocks}" stroke-width="${F(Math.max(1.6, Y(0.014)))}"/>`
       + `<circle class="isl-vwood-f" cx="${F(hubX)}" cy="${F(hubY)}" r="${F(Y(0.018))}"/></g>`;
     // the dirt track from the foreground to the mill's door, and grass tufts
-    s += `<path class="isl-vtrack" d="M${F(X(0.46))} ${F(H + 2)}C${F(X(0.55))} ${F(Y(0.9))} ${F(mx - Y(0.3))} ${F(Y(0.8))} ${F(mx - Y(0.02))} ${F(mb + 1)}L${F(mx + Y(0.04))} ${F(mb + 1)}C${F(mx - Y(0.2))} ${F(Y(0.82))} ${F(X(0.62))} ${F(Y(0.92))} ${F(X(0.56))} ${F(H + 2)}Z"/>`;
+    s += `<path class="isl-vtrack" d="M${F(X(0.46))} ${F(H + 2)}C${F(X(0.55))} ${F(Y(0.9))} ${F(dcx - Y(0.3))} ${F(Y(0.8))} ${F(dcx - Y(0.03))} ${F(mb + 1)}L${F(dcx + Y(0.03))} ${F(mb + 1)}C${F(dcx - Y(0.2))} ${F(Y(0.82))} ${F(X(0.62))} ${F(Y(0.92))} ${F(X(0.56))} ${F(H + 2)}Z"/>`;
     let tufts = '';
     for (let i = 0; i < 60; i++) { const gx = X(r()), gy = Y(0.8 + r() * 0.2), gh = Y(0.02 + r() * 0.03); tufts += `M${F(gx)} ${F(gy)}l${F(-gh * 0.3)} ${F(-gh)}M${F(gx)} ${F(gy)}l${F(gh * 0.05)} ${F(-gh * 1.2)}M${F(gx)} ${F(gy)}l${F(gh * 0.35)} ${F(-gh * 0.9)}`; }
     s += `<path class="isl-vcane" d="${tufts}" stroke-width=".8"/>`;
@@ -1173,6 +1177,11 @@
     s += `<path class="isl-vpshade" d="M${F(x0)} ${F(top + Y(0.03))}H${F(x1 + sd)}v${F(Y(0.022))}H${F(x0)}Z"/>`;
     s += `<path d="M${F(x0)} ${F(top + 1)}V${F(top - Y(0.055))}H${F(x1 + sd)}V${F(top + 1)}Z" fill="url(#islvfacade)"/>`;
     s += `<path class="isl-vstone" d="M${F(x0 - Y(0.006))} ${F(top - Y(0.045))}V${F(top - Y(0.06))}H${F(x1 + sd + Y(0.006))}V${F(top - Y(0.045))}Z"/>`;
+    // the corner carried up: the parapet, the cornice and the coping turn with the wall, so their share of
+    // the side face is in the same shade (owner, 2026-09-30); the projecting courses turn at their own
+    // corner, just beyond the wall's
+    const turn = (a, b, o) => `M${F(x1 + o)} ${F(b)}V${F(a)}H${F(x1 + sd + o)}V${F(b)}Z`;
+    s += `<path class="isl-vpshade" d="${turn(top - Y(0.045), top, 0) + turn(top, top + Y(0.03), Y(0.014)) + turn(top - Y(0.06), top - Y(0.045), Y(0.006))}"/>`;
     // the string course between the floors, and the stone: channelled joints below, fine courses above
     let joints = `M${F(x0)} ${F(mid)}H${F(x1 + sd)}`;
     for (let y = mid + Y(0.045); y < street - Y(0.01); y += Y(0.036)) joints += `M${F(x0)} ${F(y)}H${F(x1 + sd)}`;
@@ -1365,7 +1374,10 @@
     //    a masthead light; each with its reflection and columns of light under it.
     const ship = (x0, x1, wl, cls, i) => {
       const L = x1 - x0, hh = L * 0.085, dh = L * 0.03, decks = 5, cabins = [], ports = [];
-      const hull = `M${F(x0 + L * 0.03)} ${F(wl)}H${F(x1 - L * 0.07)}L${F(x1)} ${F(wl - hh * 1.18)}L${F(x0 + L * 0.02)} ${F(wl - hh * 0.98)}Q${F(x0 - L * 0.012)} ${F(wl - hh * 0.9)} ${F(x0 + L * 0.03)} ${F(wl)}Z`;
+      // (the hull is wound the same way round as the decks it shares a path with: wound the other way,
+      // the sliver where the bottom deck overlaps the rising sheer cancelled out and the sea showed
+      // through it, owner, 2026-09-30)
+      const hull = `M${F(x0 + L * 0.03)} ${F(wl)}Q${F(x0 - L * 0.012)} ${F(wl - hh * 0.9)} ${F(x0 + L * 0.02)} ${F(wl - hh * 0.98)}L${F(x1)} ${F(wl - hh * 1.18)}L${F(x1 - L * 0.07)} ${F(wl)}Z`;
       const boot = `M${F(x0 + L * 0.03)} ${F(wl)}H${F(x1 - L * 0.07)}L${F(x1 - L * 0.062)} ${F(wl - hh * 0.24)}H${F(x0 + L * 0.018)}Z`;
       let sup = '', rails = '', boats = '';
       for (let d = 0; d < decks; d++) {
