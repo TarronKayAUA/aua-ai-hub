@@ -21,9 +21,33 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">4</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 30, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/tech/1002980/google-gemini-4-argon">Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now</a>
+    <p class="news-card-summary">Google announced Gemini 4 Argon, a frontier model aimed at software engineering, enterprise knowledge work and cybersecurity defense, with access currently limited to trusted cyber defenders.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK093_Google_02.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 30, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves">Trump plan to combat AI risks hinges on Big Tech pals policing themselves</a>
+    <p class="news-card-summary">The Trump administration secured agreement from dozens of AI companies to voluntary safety tests, and critics note the plan relies on the firms policing themselves.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2297759490-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 30, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/science/2026/09/google-figures-out-how-to-watermark-ai-designed-proteins">Google figures out how to watermark AI-designed proteins</a>
+    <p class="news-card-summary">Google developed a watermarking method for AI-designed proteins, intended to support biosecurity, that works with a widely used AI protein design tool.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-2204734561-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 30, 2026</span></div>
@@ -117,29 +141,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Anthropic released Claude Sonnet 5.5, which runs 30% faster and costs up to 30% less than the previous version while improving performance on standard benchmarks.</p>
   </div>
   <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/claude-sonnet-5.5-pelican-xhigh.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 28, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1001427/ai-is-supercharging-hacking-and-your-local-hospitals-and-banks-arent-ready">AI is supercharging hacking, and your local hospitals and banks aren’t ready</a>
-    <p class="news-card-summary">The Verge reports on hospitals and financial institutions unprepared for AI-accelerated security threats, with real-world cases of breaches targeting nonprofits and vulnerable organizations.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25299205/STK453_Privacy_D_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">September 28, 2026</span></div>
-    <a class="news-card-title" href="https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery">When can we say AI made a scientific discovery?</a>
-    <p class="news-card-summary">MIT Technology Review examines the question of what constitutes an AI-made scientific discovery, using Anthropic&#x27;s molecular biology lab as a case study.</p>
-  </div>
-  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/09/science-ai-gene3.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 28, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents">OpenAI halts frontier-model training amid string of agent misalignment incidents</a>
-    <p class="news-card-summary">OpenAI has halted frontier-model training after a series of agent misalignment incidents, and has notified dozens of third parties including US government websites.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/sleepyrobot-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

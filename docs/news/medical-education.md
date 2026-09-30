@@ -21,9 +21,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 30, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e104151">AI Perceptions, Professional Identity, and AI-Supported Clinical Decisions Among Medical Students and Clinicians: Cross-Sectional Survey and Quasi-Randomized Vignette Study</a>
+    <p class="news-card-summary">A cross-sectional survey and quasi-randomized vignette study examines how medical students and clinicians perceive AI, how those views relate to professional identity concerns, and how they evaluate AI-supported clinical decisions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 30, 2026</span></div>
+    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e105347">Generative Language Models in Medical Education: From Advent to Entrustment</a>
+    <p class="news-card-summary">A review traces how discussion of generative language models in medical education has moved from early promise and warnings toward questions of entrusting these tools with educational tasks.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 30, 2026</span></div>
@@ -50,6 +64,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 30, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42811929?fc=20260609215449&amp;ff=20260930105705&amp;v=2.20.1">Application of an artificial intelligence-assisted diagnostic system for lymph nodes in head and neck imaging teaching</a>
     <p class="news-card-summary">A study reports that an AI-assisted diagnostic system for cervical lymph nodes in head and neck imaging teaching improved students&#x27; understanding of imaging anatomy and reduced cognitive load.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 30, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42813176?fc=20260609215449&amp;ff=20260930165008&amp;v=2.20.1">Evaluating psychiatric conference posters: Benchmarking a custom generative pre-trained transformer against human inter-rater variability using a structured assessment framework</a>
+    <p class="news-card-summary">A study benchmarked a custom GPT generative pre-trained transformer against human raters scoring psychiatric conference posters, finding AI-human agreement within or above the range of agreement between humans.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 30, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42813009?fc=20260609215449&amp;ff=20260930165008&amp;v=2.20.1">Artificial intelligence in public health education: current evidence, competencies, and a framework for responsible integration</a>
+    <p class="news-card-summary">A narrative review of literature from 2020 to June 2026 examines AI literacy gaps in public health education and proposes competencies and a framework for responsible integration.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -99,34 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 29, 2026</span></div>
     <a class="news-card-title" href="https://arxiv.org/abs/2609.31676">An Evaluation of AI-Supported Evidence-Based Learning for Public Speaking Skill Development</a>
     <p class="news-card-summary">A study evaluates an AI-supported public speaking coaching system that provides context-specific feedback and model speeches, showing potential for medical education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802840?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Artificial Professionalism: An Evaluation of Six Large Language Models on the UK Multi-Specialty Recruitment Assessment Professional Dilemmas Paper</a>
-    <p class="news-card-summary">Six general-purpose large language models achieved roughly two-thirds of marks on a UK medical recruitment professional dilemmas assessment, performing less reliably on ranking tasks than on multiple-choice items.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802837?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Human-Governed Validation of Artificial Intelligence-Generated Medical Assessment Artifacts: A Technical Report</a>
-    <p class="news-card-summary">Generative AI can produce fluent medical assessment materials, but linguistic plausibility does not establish measurement validity, creating risks for clinical accuracy and assessment integrity.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802729?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Artificial Intelligence in Lifestyle Medicine: Advancing Clinical Practice, Education, and Whole-Person Care With Responsible Innovation</a>
-    <p class="news-card-summary">Artificial intelligence offers opportunities to enhance lifestyle medicine education, clinical care, and whole-person care through responsible innovation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42804350?fc=20260609215449&amp;ff=20260928202318&amp;v=2.20.1">Critical Thinking, Human Judgment, and Artificial Intelligence in Combat Casualty Care: Implications for Military Medical Education and Practice</a>
-    <p class="news-card-summary">Military medical educators discuss implications of AI for combat casualty care, balancing machine learning diagnostic support with human judgment and critical thinking in tactical settings.</p>
   </div>
 </div>
 </div>

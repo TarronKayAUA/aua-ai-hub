@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Most-Important-New-AI-Tools-from-OpenAI-DevDay-e3pl7uv" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Most Important New AI Tools from OpenAI DevDay" loading="lazy">
+  <span class="video-card-title">The Most Important New AI Tools from OpenAI DevDay</span>
+  <span class="video-card-meta">The AI Daily Brief, September 30, 2026</span>
+  <span class="video-card-desc">Host NLW reviews the main announcements from OpenAI DevDay, including agent products, a shared workspace, cheaper models, and new ways to use a ChatGPT subscription in other apps, along with early reactions.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Build-Team-Agents-e3pj5qj" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: How to Build Team Agents" loading="lazy">
   <span class="video-card-title">How to Build Team Agents</span>
