@@ -91,6 +91,8 @@ After the redesign went live, a colleague who prefers light mode asked on a call
 
 So every picture now comes in five versions, Dawn, Day, Sunset, Dusk and Night, and the visitor's own clock chooses among them: Dawn from 5 in the morning, Day from 9, Sunset from 5 in the afternoon, Dusk from 7 and Night from 9. The light and dark toggle now changes only the page, not the picture. A page left open follows the clock too, crossfading to the next version when the hour turns.
 
+The clock on the American University of Antigua's tower keeps Antigua's time, Atlantic Standard Time, wherever you are reading from, while the sky follows your own clock. For a reader in Antigua the two agree; for anyone elsewhere, the tower shows what time it is on campus.
+
 <figure class="figure">
 <img src="../../assets/worked-examples/art-five-versions.jpg" alt="The same view over English Harbour and Falmouth Harbour drawn five times: at dawn under pink clouds, by day in green and turquoise with houses and yachts, at sunset with the Sun above the far hills, at dusk under a crescent Moon, and at night with lit windows under a starry sky.">
 <figcaption>Shirley Heights, on the For Students page, in its five versions: Dawn, Day and Sunset above, Dusk and Night below. The drawing is the same in all five; the light is what changes.</figcaption>

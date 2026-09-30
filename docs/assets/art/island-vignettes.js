@@ -98,7 +98,7 @@
   /* THE CAMPUS (Lecture Outline, beside "What to Check"), from the owner's photographs of the
      American University of Antigua at Coolidge, seen from the front across the circular drive:
      - the clock tower in the middle, square and white, an open lookout at the top (lit from within
-       at night) under a red pyramid roof, a plain disc for the clock;
+       at night) under a red pyramid roof, and its clock showing the time in Antigua;
      - the entrance portico at its foot, an arch under a small red gable, two tall palms either side;
      - three-storey blocks either side with red hipped roofs and a terracotta ground floor;
      - long two-storey outer wings, red hipped roofs, arched ground floor, a veranda above;
@@ -149,7 +149,7 @@
         win(grp, arch(x, base - 3.5 * u, 1.3 * u, base - 0.3 * u), r() < 0.45);
       }
     }
-    // The tower: shaft, the open lookout, cornice, pyramid roof; the clock as a plain disc.
+    // The tower: shaft, the open lookout, cornice, pyramid roof; the clock.
     const tw = 9 * u, tx0 = cx - tw / 2, shaftTop = base - 30 * u, lookH = 4.4 * u;
     walls += rect(tx0, shaftTop, tw, base - shaftTop);
     shade += rect(tx0 + tw - 1.2 * u, shaftTop, 1.2 * u, base - shaftTop);
@@ -159,7 +159,18 @@
     let posts = '';
     for (let i = 0; i <= 6; i++) posts += rect(tx0 + (i / 6) * (tw - 0.7 * u), shaftTop - lookH, 0.7 * u, lookH);
     const lookout = rect(tx0, shaftTop - lookH, tw, lookH);
-    const clock = `<circle class="isl-vclock" cx="${F(cx)}" cy="${F(shaftTop + 6.4 * u)}" r="${F(1.9 * u)}"/>`;
+    // The clock (owner, 2026-09-30): its face 58% of the shaft's width, as a real tower's is, so it reads
+    // at the homepage's size; quarter marks; hour and minute hands keeping Antigua's time (clockAngles(),
+    // below), turned each minute by tickClocks().
+    const ccy = shaftTop + 6.4 * u, cr = 2.6 * u, [ha, ma] = clockAngles();
+    const hand = (cls, deg, len, w) => `<path class="isl-vhand ${cls}" data-c="${F(cx)} ${F(ccy)}" d="M${F(cx)} ${F(ccy + 0.16 * cr)}V${F(ccy - len)}"`
+      + ` transform="rotate(${F(deg)} ${F(cx)} ${F(ccy)})" stroke-width="${F(w)}"/>`;
+    let marks = '';
+    for (let k = 0; k < 4; k++) { const a = k * Math.PI / 2; marks += `M${F(cx + Math.sin(a) * cr * 0.74)} ${F(ccy - Math.cos(a) * cr * 0.74)}L${F(cx + Math.sin(a) * cr * 0.9)} ${F(ccy - Math.cos(a) * cr * 0.9)}`; }
+    const clock = `<circle class="isl-vclock" cx="${F(cx)}" cy="${F(ccy)}" r="${F(cr)}"/>`
+      + `<path class="isl-vmark" d="${marks}" stroke-width="${F(Math.max(0.8, cr * 0.07))}"/>`
+      + hand('isl-vhand-h', ha, cr * 0.5, Math.max(1.3, cr * 0.15)) + hand('isl-vhand-m', ma, cr * 0.78, Math.max(1, cr * 0.09))
+      + `<circle class="isl-vpin" cx="${F(cx)}" cy="${F(ccy)}" r="${F(Math.max(0.8, cr * 0.09))}"/>`;
     win(0, rect(cx - 1 * u, shaftTop + 11 * u, 2 * u, 3 * u), true);
     // The portico: an arch under a small red gable.
     const pw = 11 * u, pTop = base - 8.6 * u;
@@ -216,8 +227,9 @@
     });
     s += `<path class="isl-vdark" d="${postsD}"/>` + `<g class="isl-vlamps">${glows}</g>`;
 
-    // Palms: two tall ones flanking the portico, smaller ones along the front.
-    const palms = [[cx - 8.4 * u, base + 1, 25 * u, -0.05, 17], [cx + 8.4 * u, base + 1, 24 * u, 0.06, 29]];
+    // Palms: two tall ones flanking the portico, smaller ones along the front. The tall two stand far
+    // enough out, and low enough, that their fronds keep clear of the clock's face (2026-09-30).
+    const palms = [[cx - 10.8 * u, base + 1, 23 * u, -0.05, 17], [cx + 10.8 * u, base + 1, 22 * u, 0.06, 29]];
     [[-19, 12, -0.08], [19, 11, 0.07], [-36, 10, -0.05], [37, 11, 0.06], [-47, 8, 0.04]].forEach(([dx, h, lean], i) => {
       palms.push([cx + dx * u, base + 1, h * u, lean, 50 + i * 7]);
     });
@@ -3197,6 +3209,35 @@
   // another minute in every picture, for review.
   let sunatQ = null;
   try { sunatQ = new URLSearchParams(location.search).get('isl-sunat'); } catch (e) { /* no query */ }
+  // The campus clock keeps Antigua's time (owner, 2026-09-30: "fixed to antigua time"): Atlantic Standard
+  // Time, UTC-4 all year, since Antigua keeps no daylight saving, worked out from the visitor's own clock,
+  // so it is right wherever the page is read. (The sky follows the visitor's own time of day, so a reader
+  // abroad sees what time it is on campus; the owner chose that, and the art write-up says so.)
+  // ?isl-clock=HH:MM sets it, for review.
+  let clockQ = null;
+  try {
+    const q = new URLSearchParams(location.search).get('isl-clock');
+    if (/^\d{1,2}:\d{2}$/.test(q || '')) clockQ = q.split(':').map(Number);
+  } catch (e) { /* no query */ }
+  const antiguaNow = () => {
+    if (clockQ) return clockQ;
+    const d = new Date(Date.now() - 4 * 3600e3);
+    return [d.getUTCHours(), d.getUTCMinutes()];
+  };
+  const clockAngles = () => { const [h, m] = antiguaNow(); return [((h % 12) + m / 60) * 30, m * 6]; };
+  // Every drawn clock's hands turn at each minute's turn and when a hidden tab returns; only their angle
+  // changes, nothing is redrawn and nothing else moves.
+  function tickClocks() {
+    const [ha, ma] = clockAngles();
+    for (const e of document.querySelectorAll('.isl-vhand')) {
+      e.setAttribute('transform', `rotate(${F(e.classList.contains('isl-vhand-h') ? ha : ma)} ${e.getAttribute('data-c')})`);
+    }
+  }
+  if (!clockQ) {
+    const next = () => setTimeout(() => { tickClocks(); next(); }, 60000 - (Date.now() % 60000) + 50);
+    next();
+    document.addEventListener('visibilitychange', () => { if (!document.hidden) tickClocks(); });
+  }
   const sunAt = (m, P) => (m === 's' ? SKY.sunset[SKY.sunset[sunatQ] ? sunatQ : (P.sunset || '18:31')] : SKY[m].sun);
   // The Sun as the eye sees it low in the sky (owner, 2026-09-28: the first disc was "very stylized against
   // a softly shadowed landscape", and its size changed from picture to picture). One size on the screen in

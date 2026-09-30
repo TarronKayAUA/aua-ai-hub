@@ -251,10 +251,13 @@ body[data-door] .md-content__inner {
     align-content: end;
     min-height: min(22rem, 100vh - 25rem);
   }
+  /* The words' column, a little narrower than it was (30rem, 62%) so the campus beside it, and the clock
+     on its tower, can be drawn a little larger, while the sky stays the larger part (owner, 2026-09-30:
+     "this has to be balanced carefully"). The paragraph keeps three lines at 1920 and 1440. */
   .md-typeset .home-hero__tagline,
   .md-typeset .home-hero__sub,
   .md-typeset .home-search {
-    max-width: min(30rem, 62%);
+    max-width: min(27rem, 56%);
   }
   .md-typeset .home-hero__tagline {
     text-wrap: balance;
