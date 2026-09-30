@@ -181,12 +181,12 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### bettys-hope
 
-- [ ] #6 fix v4 `bettys-hope-1`: Boiling-house arches break through the broken wall top
-- [ ] #37 fix v3 `bettys-hope-6`: Tail-pole wheel tangled in the drying racks
-- [ ] #85 add v2 `bettys-hope-4`: Estate house: shadow under the eaves
-- [ ] #88 add v2 `bettys-hope-3`: Complete the mill lamp: a pool on the ground and a cap
-- [ ] #99 add v2 `bettys-hope-2`: The mill cap turns the corner with the tower
-- [ ] #114 fix v1 `bettys-hope-5`: Twin tower's shade stops short of its broken crown
+- [x] #6 fix v4 `bettys-hope-1`: Boiling-house arches break through the broken wall top
+- [x] #37 fix v3 `bettys-hope-6`: Tail-pole wheel tangled in the drying racks
+- [x] #85 add v2 `bettys-hope-4`: Estate house: shadow under the eaves
+- [x] #88 add v2 `bettys-hope-3`: Complete the mill lamp: a pool on the ground and a cap
+- [x] #99 add v2 `bettys-hope-2`: The mill cap turns the corner with the tower
+- [x] #114 fix v1 `bettys-hope-5`: Twin tower's shade stops short of its broken crown
 
 ### court-house
 

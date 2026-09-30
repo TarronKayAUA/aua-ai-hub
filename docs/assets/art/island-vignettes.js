@@ -1178,26 +1178,33 @@
     const hx0 = X(0.12), hw = Y(0.62), hTop = Y(0.6), hBot = Y(0.75), hRoof = Y(0.1);
     s += `<path class="isl-vstone" d="M${F(hx0)} ${F(hBot)}V${F(hTop)}H${F(hx0 + hw)}V${F(hBot)}Z"/>`;
     s += `<path class="isl-vwood-f" d="M${F(hx0 - Y(0.02))} ${F(hTop + 1)}L${F(hx0 + hw * 0.15)} ${F(hTop - hRoof)}H${F(hx0 + hw * 0.85)}L${F(hx0 + hw + Y(0.02))} ${F(hTop + 1)}Z"/>`;
+    s += `<path class="isl-vpshade" d="M${F(hx0)} ${F(hTop + 1)}H${F(hx0 + hw)}v${F(Y(0.016))}H${F(hx0)}Z"/>`;   // the eaves' shadow
     let wins = '';
     for (let i = 0; i < 5; i++) {
       const wx = hx0 + hw * (0.12 + i * 0.19);
       wins += i === 2 ? `M${F(wx - Y(0.018))} ${F(hBot)}V${F(hTop + Y(0.04))}h${F(Y(0.036))}V${F(hBot)}Z` : `M${F(wx - Y(0.014))} ${F(hTop + Y(0.035))}h${F(Y(0.028))}v${F(Y(0.05))}h${F(-Y(0.028))}Z`;
     }
     s += `<path class="f-pulse isl-vwin" style="--i:1" d="${wins}"/>`;
-    s += `<g class="isl-vwin" style="--i:1">${halo(hx0 + hw * 0.5, hTop + Y(0.07), Y(0.25), 'islvwarm')}</g>`;
+    s += `<g class="isl-vwin" style="--i:1">${halo(hx0 + hw * 0.5, hTop + Y(0.07), Y(0.25), 'islvwarm')}${pool(hx0 + hw * 0.5, hBot + Y(0.02), Y(0.13), Y(0.035), 0.6)}</g>`;
     // 3b. The boiling house, roofless: a stone wall with a broken gable and three arched openings, the
     //     fields seen through them.
     const bx0 = X(0.3), bx1 = X(0.43), bTop = Y(0.64), bBase = Y(0.748), bwid = bx1 - bx0;
-    let ruin = `M${F(bx0)} ${F(bBase)}V${F(bTop)}L${F(bx0 + bwid * 0.14)} ${F(Y(0.575))}L${F(bx0 + bwid * 0.26)} ${F(Y(0.615))}`;
-    for (let i = 3; i <= 10; i++) ruin += `L${F(bx0 + bwid * i / 10)} ${F(bTop + Y(0.004) + r() * Y(0.03))}`;
+    // (the broken top stands a little higher and the arches a little lower, so stone runs over every arch:
+    // their crowns had broken through it as little domes; review, 2026-09-30)
+    let ruin = `M${F(bx0)} ${F(bBase)}V${F(bTop)}L${F(bx0 + bwid * 0.14)} ${F(Y(0.545))}L${F(bx0 + bwid * 0.26)} ${F(Y(0.585))}`;
+    for (let i = 3; i <= 10; i++) ruin += `L${F(bx0 + bwid * i / 10)} ${F(bTop - Y(0.03) + r() * Y(0.03))}`;
     ruin += `V${F(bBase)}Z`;
-    for (let i = 0; i < 3; i++) {
-      const cx = bx0 + bwid * (0.24 + i * 0.26), ar = bwid * 0.075;
-      ruin += `M${F(cx - ar)} ${F(bBase)}V${F(bBase - Y(0.05))}A${F(ar)} ${F(ar)} 0 0 1 ${F(cx + ar)} ${F(bBase - Y(0.05))}V${F(bBase)}Z`;
-    }
+    const ar = bwid * 0.065, spring = bBase - Y(0.04), acx = [0, 1, 2].map((i) => bx0 + bwid * (0.24 + i * 0.26));
+    for (const cx of acx) ruin += `M${F(cx - ar)} ${F(bBase)}V${F(spring)}A${F(ar)} ${F(ar)} 0 0 1 ${F(cx + ar)} ${F(spring)}V${F(bBase)}Z`;
     s += `<path d="${ruin}" fill="url(#islvfacade)" fill-rule="evenodd"/>`;
+    // the courses of stone, broken at the openings (they had run across the fields seen through them)
     let rc = '';
-    for (let y = bBase - Y(0.025); y > bTop; y -= Y(0.025)) rc += `M${F(bx0)} ${F(y)}H${F(bx1)}`;
+    for (let y = bBase - Y(0.025); y > bTop; y -= Y(0.025)) {
+      const half = y >= spring ? ar : y > spring - ar ? Math.sqrt(ar * ar - (spring - y) * (spring - y)) : 0;
+      let x = bx0;
+      for (const cx of acx) { if (half > 0) { rc += `M${F(x)} ${F(y)}H${F(cx - half)}`; x = cx + half; } }
+      rc += `M${F(x)} ${F(y)}H${F(bx1)}`;
+    }
     s += `<path class="isl-vcourse" d="${rc}" stroke-width=".6"/>`;
     // 4. The twin mill, roofless, a shorter tower with a broken top and a dark arched opening.
     const tower = (cx, base, th, wb, wt, broken) => {
@@ -1214,7 +1221,7 @@
     };
     const twin = tower(X(0.5), Y(0.745), Y(0.4), Y(0.26), Y(0.18), true);
     s += `<path class="isl-vstone" d="${twin.d}"/><path class="isl-vcourse" d="${twin.c}" stroke-width=".6"/>`;
-    s += `<path class="isl-vpshade" d="M${F(X(0.5) + Y(0.02))} ${F(Y(0.745))}L${F(X(0.5) + Y(0.02))} ${F(twin.top)}L${F(X(0.5) + Y(0.09))} ${F(twin.top)}L${F(X(0.5) + Y(0.13))} ${F(Y(0.745))}Z"/>`;
+    s += `<path class="isl-vpshade" d="M${F(X(0.5) + Y(0.02))} ${F(Y(0.745))}L${F(X(0.5) + Y(0.02))} ${F(twin.top + Y(0.003))}L${F(X(0.5) + Y(0.054))} ${F(twin.top - Y(0.008))}L${F(X(0.5) + Y(0.09))} ${F(twin.top)}L${F(X(0.5) + Y(0.13))} ${F(Y(0.745))}Z"/>`;
     // its opening in the middle of its lit face, left of the edge where the shaded face turns away
     // (owner, 2026-09-30: a door on that edge did not match the drawing's corner)
     s += `<path class="isl-vdark" d="M${F(X(0.5) - Y(0.088))} ${F(Y(0.745))}V${F(Y(0.66))}a${F(Y(0.035))} ${F(Y(0.035))} 0 0 1 ${F(Y(0.07))} 0V${F(Y(0.745))}Z"/>`;
@@ -1227,8 +1234,13 @@
     s += `<circle class="isl-vwood" cx="${F(mx + capW * 0.3 + Y(0.26))}" cy="${F(mb - Y(0.03))}" r="${F(Y(0.028))}" stroke-width="1"/>`;
     s += `<path class="isl-vstone" d="${mill.d}"/><path class="isl-vcourse" d="${mill.c}" stroke-width=".6"/>`;
     s += `<path class="isl-vpshade" d="M${F(mx + Y(0.03))} ${F(mb)}L${F(mx + Y(0.025))} ${F(capY)}L${F(mx + mwt / 2)} ${F(capY)}L${F(mx + mwb / 2)} ${F(mb)}Z"/>`;
+    s += `<path class="isl-vpshade" d="M${F(mx - mwt / 2)} ${F(capY + 1)}h${F(mwt)}v${F(Y(0.016))}h${F(-mwt)}Z"/>`;   // the cap's shadow
     s += `<path class="isl-vwood-f" d="M${F(mx - capW / 2)} ${F(capY + 1)}V${F(capY - capH)}H${F(mx + capW / 2)}V${F(capY + 1)}Z"/>`;
     s += `<path class="isl-vwood-f" d="M${F(mx - capW / 2 - Y(0.01))} ${F(capY - capH + 1)}L${F(mx - capW * 0.3)} ${F(capY - capH - Y(0.035))}H${F(mx + capW * 0.3)}L${F(mx + capW / 2 + Y(0.01))} ${F(capY - capH + 1)}Z"/>`;
+    // the cap turns the corner with the tower: its side in the same shade, and the hip end of its roof
+    // (owner's Court House corner, 2026-09-30; review)
+    s += `<path class="isl-vpshade" d="M${F(mx + Y(0.025))} ${F(capY + 1)}V${F(capY - capH)}H${F(mx + capW / 2)}V${F(capY + 1)}Z`
+      + `M${F(mx + Y(0.025))} ${F(capY - capH + 1)}L${F(mx + capW * 0.3)} ${F(capY - capH - Y(0.035))}L${F(mx + capW / 2 + Y(0.01))} ${F(capY - capH + 1)}Z"/>`;
     s += `<path class="isl-vwood" d="M${F(mx - capW / 2)} ${F(capY - capH * 0.5)}H${F(mx + capW / 2)}M${F(mx - capW * 0.3)} ${F(capY - capH - Y(0.02))}H${F(mx + capW * 0.3)}" stroke-width=".7"/>`;
     // the door, lit, in the middle of the lit face (as the twin's opening); its light on the ground; the
     // lamp beside it (last to light)
@@ -1238,11 +1250,12 @@
     s += `<g class="isl-vwin" style="--i:2">${pool(dcx, mb + Y(0.02), Y(0.22), Y(0.05), 0.75)}</g>`;
     const lx = mx - mwb / 2 - Y(0.06);
     s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(mb + Y(0.01))}V${F(mb - Y(0.14))}H${F(lx + 1)}V${F(mb + Y(0.01))}Z"/>`;
-    s += `<g class="isl-vwin isl-vlast" style="--i:4">${halo(lx, mb - Y(0.155), Y(0.13), 'islvlamp')}<path class="isl-vlamp" d="M${F(lx - Y(0.011))} ${F(mb - Y(0.14))}V${F(mb - Y(0.175))}H${F(lx + Y(0.011))}V${F(mb - Y(0.14))}Z"/></g>`;
-    // cane drying racks by the mill
+    s += `<g class="isl-vwin isl-vlast" style="--i:4">${pool(lx, mb + Y(0.015), Y(0.1), Y(0.03), 0.6)}${halo(lx, mb - Y(0.155), Y(0.13), 'islvlamp')}<path class="isl-vlamp" d="M${F(lx - Y(0.011))} ${F(mb - Y(0.14))}V${F(mb - Y(0.175))}H${F(lx + Y(0.011))}V${F(mb - Y(0.14))}Z"/></g>`;
+    s += `<path class="isl-vpost" d="M${F(lx - Y(0.018))} ${F(mb - Y(0.175))}L${F(lx)} ${F(mb - Y(0.197))}L${F(lx + Y(0.018))} ${F(mb - Y(0.175))}Z"/>`;   // its cap
+    // cane drying racks by the mill, beyond the tail pole's wheel (they had tangled with it)
     let racks = '';
     for (let i = 0; i < 3; i++) {
-      const rx0 = mx + mwb / 2 + Y(0.08) + i * Y(0.1), ry = mb - Y(0.02) + i * Y(0.004);
+      const rx0 = mx + capW * 0.3 + Y(0.26) + Y(0.05) + i * Y(0.1), ry = mb - Y(0.02) + i * Y(0.004);
       racks += `M${F(rx0)} ${F(ry)}h${F(Y(0.085))}M${F(rx0)} ${F(ry - Y(0.02))}h${F(Y(0.085))}M${F(rx0 + Y(0.01))} ${F(ry + Y(0.005))}v${F(-Y(0.03))}M${F(rx0 + Y(0.075))} ${F(ry + Y(0.005))}v${F(-Y(0.03))}`;
     }
     s += `<path class="isl-vwood" d="${racks}" stroke-width="1"/>`;
