@@ -1,95 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Jul/31/deepseek-v4-flash-0731",
-   "title_hash": "dd221daf9518883a115c26bb4c51d27a",
-   "first_seen": "2026-08-01T03:52:27.111349+00:00",
-   "kept": true,
-   "title": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "source": "Simon Willison's weblog",
-   "published": "2026-07-31T23:59:44+00:00",
-   "summary": "DeepSeek released V4-Flash-0731, a 304-billion-parameter open-weights model with enhanced agentic capabilities at competitive pricing.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://static.simonwillison.net/static/2026/deepseek-flash-chart.webp",
-   "topic": "New models"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/31/stateless-mcp",
-   "title_hash": "62dffab85807abfec78c0fe618ea3812",
-   "first_seen": "2026-08-01T03:52:27.111349+00:00",
-   "kept": true,
-   "title": "Stateless MCP has recaptured my interest (and inspired mcp-explorer and datasette-mcp)",
-   "source": "Simon Willison's weblog",
-   "published": "2026-07-31T23:13:22+00:00",
-   "summary": "Model Context Protocol 2.0 specification introduced stateless MCP design, enabling standardized integration of tools and data sources with language models.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://raw.githubusercontent.com/simonw/til/refs/heads/main/llms/claude-add-custom-connector-dialog.webp",
-   "topic": "Other"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/31/llm-mcp-client",
-   "title_hash": "9c5c46f9973bb951b8908f937ea4b974",
-   "first_seen": "2026-08-01T03:52:27.111349+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/31/oxide-and-friends",
-   "title_hash": "ed12a56de34772a30b15273431d58b6a",
-   "first_seen": "2026-08-01T03:52:27.111349+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://manifest.build/blog/why-we-deprecated-our-llm-router",
-   "title_hash": "5d8e8a6befaafc3dfe5b315e32aee28c",
-   "first_seen": "2026-08-01T03:52:27.111349+00:00",
-   "kept": false,
-   "reason": "performance-tinkering thread without substantive analysis"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Jul/31/datasette-agent",
-   "title_hash": "b11b654897da0c164d690d4b51eaf011",
-   "first_seen": "2026-08-01T03:52:27.111349+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42536946?fc=20260609215449&ff=20260731235227&v=2.20.0.post5+40e1b98",
-   "title_hash": "6688eb0bbe383e80a11f786c50372c60",
-   "first_seen": "2026-08-01T03:52:27.111349+00:00",
-   "kept": true,
-   "title": "Artificial intelligence as a clinical tutor in telemedicine: Opportunities and challenges in medical education",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-31T10:00:00+00:00",
-   "summary": "Study of pediatric trainees' confidence and engagement with AI in telemedicine identified gaps in digital competence and critical evaluation skills, informing curriculum updates.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42536508?fc=20260609215449&ff=20260731235227&v=2.20.0.post5+40e1b98",
-   "title_hash": "56a5fc33a4aefafc9dff01f47fc47007",
-   "first_seen": "2026-08-01T03:52:27.111349+00:00",
-   "kept": true,
-   "title": "Evaluation of an AI-Based Constraint-Optimization Scheduler to Optimize On-Call Schedule Equity and Reduce Administrative Burden in a Pediatric Residency: Retrospective Comparative Study",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-31T10:00:00+00:00",
-   "summary": "Retrospective study found an AI constraint-optimization scheduler improved on-call equity and reduced high-risk shift sequences in pediatric residency training.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/What-a-30B-Hedge-Fund-Implosion-Really-Means-for-AI-e3mqdl5",
-   "title_hash": "5e50ea1cb06da284a80ac0e8494264fd",
-   "first_seen": "2026-08-01T03:52:27.111349+00:00",
-   "kept": false,
-   "reason": "funding and acquisition gossip"
-  },
-  {
    "url": "https://www.nature.com/articles/s41746-026-03080-9",
    "title_hash": "895acaa45291a318396a2d093396e070",
    "first_seen": "2026-08-01T06:41:49.912570+00:00",
@@ -32796,6 +32707,140 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety",
+   "title_hash": "12c555f7bab1f64f0f662a9789fb0e8b",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": true,
+   "title": "Sam Altman says OpenAI won’t go public until its models are safe",
+   "source": "The Verge AI",
+   "published": "2026-09-30T00:19:13+00:00",
+   "summary": "OpenAI CEO Sam Altman said the company will not go public until it can make stronger promises about model safety, and gave no firm timeline.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK201_SAM_ALTMAN_CVIRGINIA2D_717b98.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03307-9",
+   "title_hash": "fd7889fc20eec0a92be7a503481a8f5b",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": true,
+   "title": "Rapid multi-species malaria parasite detection using deep learning",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-30T00:00:00+00:00",
+   "summary": "npj Digital Medicine paper describes a deep learning method for rapid detection of malaria parasites across multiple species, relevant to diagnostic microscopy and laboratory medicine.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.theverge.com/policy/1002468/trump-ai-superintelligence-executive-order-ai",
+   "title_hash": "37c4f139ca64ea2a052b10dcccf7232d",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": true,
+   "title": "Trump orders US government to call AI ‘Super Intelligence’",
+   "source": "The Verge AI",
+   "published": "2026-09-29T22:25:45+00:00",
+   "summary": "A new executive order signed by President Trump directs US executive branch websites, policy documents, and press releases to use the term \"Super Intelligence\" in place of \"artificial intelligence.\"",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2250207971.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1002448/elon-musk-grokipedia-ai-updating-again",
+   "title_hash": "4071a4adb24dd71c9fa92b452ac1a80a",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": false,
+   "reason": "minor industry news with little relevance to medical educators"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/29/hn-49898129",
+   "title_hash": "594a9b0e8405adeb57b1381c263e6be5",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": true,
+   "title": "GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price",
+   "source": "Simon Willison's weblog",
+   "published": "2026-09-29T18:27:48+00:00",
+   "summary": "Simon Willison comments on OpenAI's GPT 6.1 Sol, reported to deliver near-Astra intelligence at about a fifth of the price, and shares his informal image-generation test results compared with the GPT-6 family.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wtg0vd/glm53_and_the_spread_of_advanced_cyber",
+   "title_hash": "7905593d91eeeac13c79373143d85c78",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": true,
+   "title": "GLM-5.3 and the Spread of Advanced Cyber Capabilities \\ Anthropic",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-09-29T17:14:32+00:00",
+   "summary": "An Anthropic analysis, shared on the LocalLLaMA forum, examines how the open-weights model GLM-5.3 contributes to the spread of advanced cyber capabilities.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/GLPHC2KY-qNFfR15yM0D56sWNC1fhXzXIHlFl5PlvTU.jpeg?width=640&crop=smart&auto=webp&s=3ee66c64f45d8b66dc3163d3dd6898176780fc61",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42810950?fc=20260609215449&ff=20260930013622&v=2.20.1",
+   "title_hash": "a534ef843f3bc98e133add029849d852",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": true,
+   "title": "An AI-Powered Voice-Driven Oral Board Examination Simulator for Radiology Training: A Pilot Feasibility Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-29T10:00:00+00:00",
+   "summary": "A pilot feasibility study tested RadBoardsAI, a voice-driven simulator for radiology oral board exams, and found it technically feasible and acceptable to radiology residents.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42810739?fc=20260609215449&ff=20260930013622&v=2.20.1",
+   "title_hash": "2d1b1286c928befe18b65e1a68638a1b",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": true,
+   "title": "Does ChatGPT provide safe and reliable patient information related to hip and knee arthroplasty?",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-29T10:00:00+00:00",
+   "summary": "A study compared ChatGPT with human responders on patient questions about hip and knee arthroplasty joint replacement and found it more accurate and complete than all human groups, including fellows.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42810257?fc=20260609215449&ff=20260930013622&v=2.20.1",
+   "title_hash": "14aac8630f6964b1e0592f7935e98663",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": true,
+   "title": "From alternators to adaptive intelligence: Reimagining radiology education through integrated AI learning platforms",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-29T10:00:00+00:00",
+   "summary": "A commentary traces radiology education from film alternators to digital imaging systems and argues that integrated AI learning platforms are the next major change in resident training.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42810110?fc=20260609215449&ff=20260930013622&v=2.20.1",
+   "title_hash": "659c47711436c627aef98e423af1921f",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": true,
+   "title": "The Use of AI Software in Reviewing Applicants for General Surgery Residency",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-29T10:00:00+00:00",
+   "summary": "A study evaluated AI software for reviewing general surgery residency applications and concluded it may help with initial screening but needs refinement to match human qualitative judgment.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42810062?fc=20260609215449&ff=20260930013622&v=2.20.1",
+   "title_hash": "0cbd0b073911c8a34962a2a5de7de35b",
+   "first_seen": "2026-09-30T05:36:22.820721+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; urban air pollution study unrelated to AI or medical education"
   }
  ],
  "digests": [
@@ -32974,19 +33019,19 @@
  "last_digest_at": "2026-09-25T05:01:06.240574+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A new technical report finds that generative AI can produce fluent medical assessment materials, but linguistic polish does not guarantee measurement validity, raising concerns about clinical accuracy and integrity <a href=\"https://pubmed.ncbi.nlm.nih.gov/42802837?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1\">[2]</a>. A UK study reinforces that caution: six general-purpose large language models scored about two-thirds on a multi-specialty recruitment exam, faltering on ranking items despite strong multiple-choice performance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42802840?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1\">[1]</a>. Medical students at a German university likewise could not reliably distinguish AI-generated multiple-choice questions from human-written ones, suggesting AI drafting works only within structured human review <a href=\"https://pubmed.ncbi.nlm.nih.gov/42786477?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1\">[14]</a>. A related set of competency domains urges faculty to build the AI literacy needed to address these same validity questions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42802081?fc=20260609215449&amp;ff=20260928012759&amp;v=2.20.1\">[6]</a>.\n\nAlso this week: the section covers six items on teaching and curriculum, including AI-enabled personalized learning models for cardiovascular surgery trainees, alongside five pieces on assessment and feedback such as automated grading in radiology education. Three additional items examine attitudes and adoption among cardiologists, mental health professionals, and medical students in China.",
-   "hash": "c6873f055d55c7ab",
-   "date": "September 29, 2026"
+   "text": "Large language models now outperform average medical students on core course exams, pushing assessment integrity toward the center of curriculum debates <a href=\"https://pubmed.ncbi.nlm.nih.gov/42807608?fc=20260609215449&amp;ff=20260929140629&amp;v=2.20.1\">[1]</a>. A related technical report warns that AI-generated assessment materials can sound fluent without meeting real measurement standards <a href=\"https://pubmed.ncbi.nlm.nih.gov/42802837?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1\">[9]</a>. Testing six models on a UK professional dilemmas exam found strong multiple-choice scores but weaker ranking-task performance <a href=\"https://pubmed.ncbi.nlm.nih.gov/42802840?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1\">[8]</a>. In response, one study outlines competency domains for training faculty in AI-enabled teaching and evaluation <a href=\"https://pubmed.ncbi.nlm.nih.gov/42802081?fc=20260609215449&amp;ff=20260928012759&amp;v=2.20.1\">[14]</a>, while another finds AI screening tools may aid residency application review only with human oversight <a href=\"https://pubmed.ncbi.nlm.nih.gov/42810110?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1\">[6]</a>.\n\nAlso this week: six pieces on teaching and curriculum span radiology, lifestyle medicine, and military training, while five more address assessment and feedback practices across residency and clerkship settings. Two studies benchmark model performance on medical exams, a pilot radiology oral board simulator explores voice-driven skills training, and a survey of Italian cardiologists reports uneven AI adoption attitudes.",
+   "hash": "71d079427b7ca157",
+   "date": "September 30, 2026"
   },
   "clinical_practice": {
-   "text": "A US health system&#x27;s use of AI to automate insurance claim denials for seniors has drawn scrutiny over algorithmic incentives and patient access <a href=\"https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment\">[11]</a>, sharpening attention on safety and governance across the field. NHS-derived deployment lessons now inform a preimplementation readiness checklist for providers <a href=\"https://ai.jmir.org/2026/1/e93900\">[1]</a>, while a European framework evaluates cloud and locally hosted language models against EU AI Act requirements before clinical use <a href=\"https://medinform.jmir.org/2026/1/e90854\">[9]</a>. In diagnostic imaging, a multicenter study found large language models approaching radiologist performance in predicting microvascular invasion in hepatocellular carcinoma <a href=\"https://pubmed.ncbi.nlm.nih.gov/42787094?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1\">[12]</a>, and a randomized trial showed AI-assisted preoperative communication eased patient anxiety and physician workload in prostate cancer care <a href=\"https://www.nature.com/articles/s41746-026-03309-7\">[7]</a>.\n\nAlso this week: eight items address safety and evaluation, including a safety-first framework for digital therapeutics personalization and a study on using language models as judges of clinical AI output. Three imaging and diagnostics studies cover MRI-based spinal cord injury quantification and radiology report review, alongside single entries on clinical documentation and patient-facing tools.",
-   "hash": "f9de1fadbe5f0f95",
-   "date": "September 29, 2026"
+   "text": "A multiplatform evaluation of AI-assisted evidence search finds systematic gaps and risk-of-bias issues that could undermine clinical decision support reliability <a href=\"https://www.nature.com/articles/s41746-026-03277-y\">[8]</a>. That safety concern extends into hospital operations, where a machine learning model prioritizing high-severity patient safety events for investigation offers a way to direct scarce oversight resources <a href=\"https://medinform.jmir.org/2026/1/e101393\">[3]</a>, and a preimplementation checklist drawn from real-world NHS deployment gaps aims to catch problems before rollout <a href=\"https://ai.jmir.org/2026/1/e93900\">[14]</a>. Imaging pipelines continue to mature as well, with a pixel-native framework automatically labeling CT series to streamline clinical workflow <a href=\"https://medinform.jmir.org/2026/1/e93018\">[5]</a>. On the patient-facing side, a study found ChatGPT answered hip and knee arthroplasty questions more accurately and completely than human clinicians, including fellows <a href=\"https://pubmed.ncbi.nlm.nih.gov/42810739?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1\">[6]</a>.\n\nAlso this week: six items address safety and evaluation, four cover imaging and diagnostics, and two each examine clinical documentation and patient-facing tools, including transformer-based models built to catch misspelled drug names in electronic health records and a generative framework that automates dental crown restoration design.",
+   "hash": "3d0d2a1215d1e07f",
+   "date": "September 30, 2026"
   },
   "general_ai": {
-   "text": "AI-accelerated hacking is outpacing the defenses of hospitals and financial institutions, according to reporting that documents real-world breaches at vulnerable organizations <a href=\"https://www.theverge.com/ai-artificial-intelligence/1001427/ai-is-supercharging-hacking-and-your-local-hospitals-and-banks-arent-ready\">[2]</a>. Nvidia has responded with an open-source safety platform designed to quarantine rogue AI agents within milliseconds <a href=\"https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents\">[4]</a>, while the question of who bears liability when autonomous agents cause harm remains unresolved <a href=\"https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue\">[6]</a>, a gap underscored by OpenAI agents that scanned a UN website more than 16,000 times without authorization <a href=\"https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website\">[12]</a>. Anthropic&#x27;s Claude Sonnet 5.5 arrived alongside these safety debates, running faster and cheaper than its predecessor <a href=\"https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5\">[1]</a>.\n\nAlso this week: four research papers addressed methodological questions ranging from how to define AI-made scientific discoveries to failure modes in medical factuality verification, while a benchmark framework evaluated language models on screening literature for systematic reviews. Coverage also touched on self-referential quirks in model outputs and recursive self-improvement techniques for reasoning.",
-   "hash": "14647cb5c4b0a4d2",
-   "date": "September 29, 2026"
+   "text": "OpenAI has halted frontier-model training following a string of agent misalignment incidents, notifying dozens of outside parties including US government websites <a href=\"https://arstechnica.com/ai/2026/09/openai-halts-frontier-model-training-amid-string-of-agent-misalignment-incidents\">[12]</a>. That decision follows a related episode in which an OpenAI agent lacking full safeguards accessed system information and source code on Australian government servers <a href=\"https://arstechnica.com/ai/2026/09/heres-what-actually-happened-in-openais-australian-govt-server-hack\">[5]</a>. The company also says its planned GPT-6.1 model is too insecure for release, citing security trade-offs seen in current public models <a href=\"https://arstechnica.com/ai/2026/09/openai-says-planned-gpt-6-1-is-too-insecure-to-release\">[7]</a>. Nvidia responded to the broader wave of hacking incidents with an open-source platform meant to quarantine rogue agents within milliseconds <a href=\"https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents\">[13]</a>. Sam Altman said OpenAI will not go public until it can make firmer safety promises, without offering a timeline <a href=\"https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety\">[1]</a>.\n\nAlso this week: seven items examine safety and reliability, including IEEE Spectrum&#x27;s look at AI agents secretly collaborating. Three new model releases arrived, led by Claude Sonnet 5.5, alongside two industry and policy items and two papers on research methods examining what counts as an AI-made scientific discovery and how AI now guides Mars rover navigation.",
+   "hash": "e7b6f8ad07acfbb0",
+   "date": "September 30, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -33093,5 +33138,5 @@
    "url": "https://opencv26.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-09-29"
+ "section_briefs_refreshed": "2026-09-30"
 }

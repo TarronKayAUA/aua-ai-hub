@@ -12,16 +12,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">A new technical report finds that generative AI can produce fluent medical assessment materials, but linguistic polish does not guarantee measurement validity, raising concerns about clinical accuracy and integrity <a href="https://pubmed.ncbi.nlm.nih.gov/42802837?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1" aria-label="Source 2: PubMed AI in medical education, Human-Governed Validation of Artificial Intelligence-Generated Medical Assessment Artifacts: A Technical Report">[2]</a>. A UK study reinforces that caution: six general-purpose large language models scored about two-thirds on a multi-specialty recruitment exam, faltering on ranking items despite strong multiple-choice performance <a href="https://pubmed.ncbi.nlm.nih.gov/42802840?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1" aria-label="Source 1: PubMed AI in medical education, Artificial Professionalism: An Evaluation of Six Large Language Models on the UK Multi-Specialty Recruitment Assessment Professional Dilemmas Paper">[1]</a>.</p>
+<p class="section-brief-lede">Large language models now outperform average medical students on core course exams, pushing assessment integrity toward the center of curriculum debates <a href="https://pubmed.ncbi.nlm.nih.gov/42807608?fc=20260609215449&amp;ff=20260929140629&amp;v=2.20.1" aria-label="Source 1: PubMed AI in medical education, Comprehensive Evaluation of Large Language Models on Four Core Medical School Courses: A Cross-Sectional Comparative Study">[1]</a>. A related technical report warns that AI-generated assessment materials can sound fluent without meeting real measurement standards <a href="https://pubmed.ncbi.nlm.nih.gov/42802837?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1" aria-label="Source 9: PubMed AI in medical education, Human-Governed Validation of Artificial Intelligence-Generated Medical Assessment Artifacts: A Technical Report">[9]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Medical students at a German university likewise could not reliably distinguish AI-generated multiple-choice questions from human-written ones, suggesting AI drafting works only within structured human review <a href="https://pubmed.ncbi.nlm.nih.gov/42786477?fc=20260609215449&amp;ff=20260925095058&amp;v=2.20.1" aria-label="Source 14: PubMed AI in medical education, Can students identify AI? - A cross-sectional quantitative study about AI recognition in tablet-based MCQ assessment among fifth-year undergraduate medical students at Saarland University, Germany">[14]</a>. A related set of competency domains urges faculty to build the AI literacy needed to address these same validity questions <a href="https://pubmed.ncbi.nlm.nih.gov/42802081?fc=20260609215449&amp;ff=20260928012759&amp;v=2.20.1" aria-label="Source 6: PubMed AI in medical education, Synthesising Generative Artificial Intelligence Competency Domains for Medical Education Faculty">[6]</a>.</p>
-<p>Also this week: the section covers six items on teaching and curriculum, including AI-enabled personalized learning models for cardiovascular surgery trainees, alongside five pieces on assessment and feedback such as automated grading in radiology education. Three additional items examine attitudes and adoption among cardiologists, mental health professionals, and medical students in China.</p>
-<p class="section-brief-date">The picture as of September 29, 2026; numbered links go to the items below.</p>
+<p>Testing six models on a UK professional dilemmas exam found strong multiple-choice scores but weaker ranking-task performance <a href="https://pubmed.ncbi.nlm.nih.gov/42802840?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1" aria-label="Source 8: PubMed AI in medical education, Artificial Professionalism: An Evaluation of Six Large Language Models on the UK Multi-Specialty Recruitment Assessment Professional Dilemmas Paper">[8]</a>. In response, one study outlines competency domains for training faculty in AI-enabled teaching and evaluation <a href="https://pubmed.ncbi.nlm.nih.gov/42802081?fc=20260609215449&amp;ff=20260928012759&amp;v=2.20.1" aria-label="Source 14: PubMed AI in medical education, Synthesising Generative Artificial Intelligence Competency Domains for Medical Education Faculty">[14]</a>, while another finds AI screening tools may aid residency application review only with human oversight <a href="https://pubmed.ncbi.nlm.nih.gov/42810110?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1" aria-label="Source 6: PubMed AI in medical education, The Use of AI Software in Reviewing Applicants for General Surgery Residency">[6]</a>.</p>
+<p>Also this week: six pieces on teaching and curriculum span radiology, lifestyle medicine, and military training, while five more address assessment and feedback practices across residency and clerkship settings. Two studies benchmark model performance on medical exams, a pilot radiology oral board simulator explores voice-driven skills training, and a survey of Italian cardiologists reports uneven AI adoption attitudes.</p>
+<p class="section-brief-date">The picture as of September 30, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -43,6 +43,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 29, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42809787?fc=20260609215449&amp;ff=20260929194441&amp;v=2.20.1">Impact and Future Outlook of Artificial Intelligence in Universities and Medical Education</a>
     <p class="news-card-summary">A narrative literature review examines how artificial intelligence has changed teaching, research, assessment, and administration in universities and medical education, and outlines directions for future use.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42810950?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1">An AI-Powered Voice-Driven Oral Board Examination Simulator for Radiology Training: A Pilot Feasibility Study</a>
+    <p class="news-card-summary">A pilot feasibility study tested RadBoardsAI, a voice-driven simulator for radiology oral board exams, and found it technically feasible and acceptable to radiology residents.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42810257?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1">From alternators to adaptive intelligence: Reimagining radiology education through integrated AI learning platforms</a>
+    <p class="news-card-summary">A commentary traces radiology education from film alternators to digital imaging systems and argues that integrated AI learning platforms are the next major change in resident training.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42810110?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1">The Use of AI Software in Reviewing Applicants for General Surgery Residency</a>
+    <p class="news-card-summary">A study evaluated AI software for reviewing general surgery residency applications and concluded it may help with initial screening but needs refinement to match human qualitative judgment.</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -106,27 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42795823?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">A Survey on Perspectives Toward Artificial Intelligence Among Italian Interventional Cardiologists</a>
     <p class="news-card-summary">Survey of Italian interventional cardiologists reveals heterogeneous adoption of AI for image analysis, procedural planning, and workflow optimization.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42794969?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">AI-Assisted Scoring Improves Interobserver Agreement in Breast Cancer Biomarker Evaluation</a>
-    <p class="news-card-summary">AI-assisted scoring of breast cancer biomarkers improves agreement between pathologists in evaluating estrogen receptor, progesterone receptor, Ki67, and HER2 status.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42792493?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">Generative Artificial Intelligence Use and Learning Engagement Among Medical Undergraduates: Statistical Indirect and Configurational Associations Involving Basic Psychological Need Satisfaction</a>
-    <p class="news-card-summary">Survey of 498 medical undergraduates shows generative AI use correlates with learning engagement through satisfaction of basic psychological needs for autonomy, competence, and relatedness.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42792422?fc=20260609215449&amp;ff=20260926090838&amp;v=2.20.1">Between Awareness and Readiness: Perceptions of Artificial Intelligence Among Indonesian Mental Health Professionals</a>
-    <p class="news-card-summary">Indonesian mental health professionals report positive perception of AI with widespread awareness and use, but gap between adoption and formal training exists.</p>
   </div>
 </div>
 </div>

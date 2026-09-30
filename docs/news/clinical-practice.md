@@ -12,18 +12,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">A US health system&#x27;s use of AI to automate insurance claim denials for seniors has drawn scrutiny over algorithmic incentives and patient access <a href="https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment" aria-label="Source 11: Ars Technica AI, Trump admin using AI to deny medical care for seniors in disastrous experiment">[11]</a>, sharpening attention on safety and governance across the field. NHS-derived deployment lessons now inform a preimplementation readiness checklist for providers <a href="https://ai.jmir.org/2026/1/e93900" aria-label="Source 1: JMIR AI, Translating Real-World Safety and Implementation Gaps Into a Deployment-Derived AI Readiness Preimplementation Checklist for NHS Health Care Providers: Checklist Development Study">[1]</a>, while a European framework evaluates cloud and locally hosted language models against EU AI Act requirements before clinical use <a href="https://medinform.jmir.org/2026/1/e90854" aria-label="Source 9: JMIR Medical Informatics, Cloud-Based and Locally Deployed Language Models in Nursing and Health Care: An AI Act, Aligned Framework">[9]</a>.</p>
+<p class="section-brief-lede">A multiplatform evaluation of AI-assisted evidence search finds systematic gaps and risk-of-bias issues that could undermine clinical decision support reliability <a href="https://www.nature.com/articles/s41746-026-03277-y" aria-label="Source 8: npj Digital Medicine, Blind spots in AI-assisted healthcare evidence search: multiplatform evaluation of clinical retrieval gaps and risk-of-bias">[8]</a>. That safety concern extends into hospital operations, where a machine learning model prioritizing high-severity patient safety events for investigation offers a way to direct scarce oversight resources <a href="https://medinform.jmir.org/2026/1/e101393" aria-label="Source 3: JMIR Medical Informatics, Machine Learning to Prioritize High-Severity Patient Safety Events for Institutional Investigation: Algorithm Development and Validation Study">[3]</a>, and a preimplementation checklist drawn from real-world NHS deployment gaps aims to catch problems before rollout <a href="https://ai.jmir.org/2026/1/e93900" aria-label="Source 14: JMIR AI, Translating Real-World Safety and Implementation Gaps Into a Deployment-Derived AI Readiness Preimplementation Checklist for NHS Health Care Providers: Checklist Development Study">[14]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>In diagnostic imaging, a multicenter study found large language models approaching radiologist performance in predicting microvascular invasion in hepatocellular carcinoma <a href="https://pubmed.ncbi.nlm.nih.gov/42787094?fc=20260609215449&amp;ff=20260925160156&amp;v=2.20.1" aria-label="Source 12: PubMed AI in medical education, Large Language Models for Preoperative Microvascular Invasion Prediction in Hepatocellular Carcinoma: A Multicenter Comparison with Radiologists and Treatment Outcomes">[12]</a>, and a randomized trial showed AI-assisted preoperative communication eased patient anxiety and physician workload in prostate cancer care <a href="https://www.nature.com/articles/s41746-026-03309-7" aria-label="Source 7: npj Digital Medicine, Large language model, assisted preoperative communication reduces patient anxiety and physician workload in prostate cancer: a prospective randomized phase II trial">[7]</a>.</p>
-<p>Also this week: eight items address safety and evaluation, including a safety-first framework for digital therapeutics personalization and a study on using language models as judges of clinical AI output. Three imaging and diagnostics studies cover MRI-based spinal cord injury quantification and radiology report review, alongside single entries on clinical documentation and patient-facing tools.</p>
-<p class="section-brief-date">The picture as of September 29, 2026; numbered links go to the items below.</p>
+<p>Imaging pipelines continue to mature as well, with a pixel-native framework automatically labeling CT series to streamline clinical workflow <a href="https://medinform.jmir.org/2026/1/e93018" aria-label="Source 5: JMIR Medical Informatics, A Multi-Model, Pixel-Native Framework for Automated Computed Tomography Series Labeling and Characterization: Proof-of-Concept Study">[5]</a>. On the patient-facing side, a study found ChatGPT answered hip and knee arthroplasty questions more accurately and completely than human clinicians, including fellows <a href="https://pubmed.ncbi.nlm.nih.gov/42810739?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1" aria-label="Source 6: PubMed AI in medical education, Does ChatGPT provide safe and reliable patient information related to hip and knee arthroplasty?">[6]</a>.</p>
+<p>Also this week: six items address safety and evaluation, four cover imaging and diagnostics, and two each examine clinical documentation and patient-facing tools, including transformer-based models built to catch misspelled drug names in electronic health records and a generative framework that automates dental crown restoration design.</p>
+<p class="section-brief-date">The picture as of September 30, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 30, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03307-9">Rapid multi-species malaria parasite detection using deep learning</a>
+    <p class="news-card-summary">npj Digital Medicine paper describes a deep learning method for rapid detection of malaria parasites across multiple species, relevant to diagnostic microscopy and laboratory medicine.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 29, 2026</span></div>
@@ -50,6 +57,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 29, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93018">A Multi-Model, Pixel-Native Framework for Automated Computed Tomography Series Labeling and Characterization: Proof-of-Concept Study</a>
     <p class="news-card-summary">Multi-model framework using image pixels rather than inconsistent metadata automatically labels and characterizes computed tomography series to improve clinical workflow management.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 29, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42810739?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1">Does ChatGPT provide safe and reliable patient information related to hip and knee arthroplasty?</a>
+    <p class="news-card-summary">A study compared ChatGPT with human responders on patient questions about hip and knee arthroplasty joint replacement and found it more accurate and complete than all human groups, including fellows.</p>
   </div>
 </div>
 <div class="news-card" data-topic="clinical-documentation">
@@ -115,19 +129,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Analysis mapping 20 artificial intelligence use cases in healthcare from early-stage concepts to evidence-backed deployments ready for clinical practice.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2025/04/tmf_article_439.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 28, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03282-1">Automating clinical information retrieval from Finnish electronic health records using large language models</a>
-    <p class="news-card-summary">Large language models can automate retrieval of clinical information from Finnish electronic health records.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42799750?fc=20260609215449&amp;ff=20260927100055&amp;v=2.20.1">Diagnostic performance of large language models for discrepancy detection in non-English resident-authored abdominal CT and MRI reports: a Turkish-language evaluation</a>
-    <p class="news-card-summary">Large language models showed variable performance detecting discrepancies in Turkish radiology reports but require prospective multicenter validation before clinical deployment.</p>
-  </div>
 </div>
 </div>
