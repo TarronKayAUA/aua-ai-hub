@@ -149,13 +149,13 @@
         win(grp, arch(x, base - 3.5 * u, 1.3 * u, base - 0.3 * u), r() < 0.45);
       }
     }
-    // The tower: shaft, the open lookout, cornice, pyramid roof; the clock.
+    // The tower: shaft, the open lookout, cornice, pyramid roof; the clock. Seen straight on, so no side of
+    // it shows: no shaded strip down the shaft and no darker half to the roof, which had read as a turned
+    // tower under a straight-on lookout, cornice and clock (owner, 2026-09-30: "it looks subtly off").
     const tw = 9 * u, tx0 = cx - tw / 2, shaftTop = base - 30 * u, lookH = 4.4 * u;
     walls += rect(tx0, shaftTop, tw, base - shaftTop);
-    shade += rect(tx0 + tw - 1.2 * u, shaftTop, 1.2 * u, base - shaftTop);
     walls += rect(tx0 - 0.6 * u, shaftTop - lookH - 0.9 * u, tw + 1.2 * u, 0.9 * u);      // cornice
     roofs += `M${F(tx0 - 1.4 * u)} ${F(shaftTop - lookH - 0.8 * u)}L${F(cx)} ${F(shaftTop - lookH - 5.6 * u)}L${F(tx0 + tw + 1.4 * u)} ${F(shaftTop - lookH - 0.8 * u)}Z`;
-    roofShade += `M${F(cx)} ${F(shaftTop - lookH - 0.8 * u)}L${F(cx)} ${F(shaftTop - lookH - 5.6 * u)}L${F(tx0 + tw + 1.4 * u)} ${F(shaftTop - lookH - 0.8 * u)}Z`;
     let posts = '';
     for (let i = 0; i <= 6; i++) posts += rect(tx0 + (i / 6) * (tw - 0.7 * u), shaftTop - lookH, 0.7 * u, lookH);
     const lookout = rect(tx0, shaftTop - lookH, tw, lookH);
