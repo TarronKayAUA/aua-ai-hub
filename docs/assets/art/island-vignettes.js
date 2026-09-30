@@ -584,23 +584,102 @@
   }
 
   /* CURTAIN BLUFF (the For Faculty & Staff landing's head): the homepage's view until the campus took
-     its place (owner, 2026-09-27), moved here as he asked. The view west from the tip of Curtain Bluff
-     at the same moment, drawn by the coast world (Montserrat, Redonda, Nevis and Guadeloupe on the
-     horizon and Antigua's own hills, at true bearings), with the sunset a third of the way in; this
-     adds the magnificent frigatebird, soaring in the east wind in the open sky right of the afterglow. */
+     its place (owner, 2026-09-27), moved here as he asked. The view from the tip of Curtain Bluff, drawn
+     by the coast world at true bearings: turned south-west on 2026-09-30 (the owner, who sees the whole
+     of Montserrat from Turtle Bay on clear days, liked it with Montserrat and Nevis), so Montserrat
+     lies on the left, Redonda's rock and Nevis toward the middle, the sunset right of them and
+     Antigua's own coast running in on the right. By Day, the cloud that almost always caps Nevis Peak,
+     turquoise shallows and a line of surf along Antigua's shore, and yachts with their reflections; in
+     every version ripples dense toward the horizon and mist at the coast's foot. After dark a few faint
+     lights: Antigua's shore first, each laying a thin column on the water, then Nevis, then Montserrat,
+     where only the north is lived in (the south is the volcano's exclusion zone), and none on
+     uninhabited Redonda. The magnificent frigatebird soars in the east wind in the open sky. */
   function curtainBluff(W, H, v) {
     const B = L.BIRD;
     if (!B) return '';
+    const r = rng(1917), y0 = v.y0, ppd = v.ppd, VEX = L.VEX || 2.6;
     const [bx0, by0, bx1, by1] = B.box, span = clamp(W * 0.1, 56, 100), k = span / (bx1 - bx0);
-    const x = W * 0.64, y = v.y0 * 0.34;
-    let yachts = '';
-    for (const [fx, fy, s0] of [[0.2, 0.09, 1], [0.34, 0.16, 1.3], [0.12, 0.3, 1.7], [0.47, 0.06, 0.8]]) {
-      const bx = W * fx, by = v.y0 + (H - v.y0) * fy, L = Math.max(8, W * 0.014 * s0), mh = L * 1.3;
-      yachts += `<path class="isl-vhull" d="M${F(bx - L / 2)} ${F(by - L * 0.1)}H${F(bx + L / 2)}L${F(bx + L * 0.36)} ${F(by)}H${F(bx - L * 0.4)}Z"/>`
-        + `<path class="isl-vsail" d="M${F(bx)} ${F(by - L * 0.12)}V${F(by - mh)}L${F(bx + L * 0.42)} ${F(by - L * 0.14)}ZM${F(bx - L * 0.04)} ${F(by - mh * 0.85)}L${F(bx - L * 0.45)} ${F(by - L * 0.14)}H${F(bx - L * 0.04)}Z"/>`;
+    const x = W * 0.64, y = y0 * 0.34;
+    let s = '';
+    // The sea's finish: ripples dense toward the horizon, long and sparse near the viewer.
+    s += dashes(hatchList(W, y0, H, r), 's-vrip', 1, [0.1, 0.18, 0.28]);
+    // The islands' outlines in this view, as island-core.js draws them, and the height of one at x.
+    const isle = (i) => L.ISL[i].map(([az, h]) => [v.x(az), y0 - h * VEX * ppd]);
+    const mont = isle(0), nevis = isle(2);
+    const topAt = (pts, px) => {
+      for (let i = 0; i < pts.length - 1; i++) {
+        const [xa, ya] = pts[i], [xb, yb] = pts[i + 1];
+        if (px >= xa && px <= xb) return ya + (yb - ya) * (px - xa) / ((xb - xa) || 1);
+      }
+      return y0;
+    };
+    // Antigua's shore in the view: where each bearing's shore meets the sea ([x, shore y, the top of the
+    // ground nearest the viewer there: the near point's crest where it stands in front, else the far crest]).
+    const shore = [];
+    for (const q of L.LAND) {
+      const px = v.x(q[0]);
+      if (px < -6 || px > W + 6 || q[1] < -90 || q[2] < -90) continue;
+      shore.push([px, y0 - q[2] * ppd + 0.5, y0 - (q[4] > -90 ? q[4] : q[1]) * ppd]);
     }
-    return `<g class="isl-ydet">${yachts}</g>`
-      + `<g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g>`;
+    shore.sort((a, b) => a[0] - b[0]);
+    const shoreD = shore.length > 1 ? 'M' + shore.map(([px, py]) => `${F(px)} ${F(py)}`).join('L') : '';
+    if (shore.length > 1) {
+      const xs = shore[0][0], ys = shore.reduce((m, q) => m + q[1], 0) / shore.length;
+      s += mist(xs - W * 0.02, ys, W - xs + W * 0.04, Math.max(6, H * 0.03), 0.45);
+    }
+    // By Day: the cloud cap on Nevis Peak, the shallows and surf along the shore, the yachts.
+    let day = '';
+    if (nevis.length > 2) {
+      let [sx, sy] = nevis[0];
+      for (const [px, py] of nevis) if (py < sy) { sx = px; sy = py; }
+      const nw = nevis[nevis.length - 1][0] - nevis[0][0];
+      if (sx > 0 && sx < W && nw > 6) {
+        const cw = Math.max(9, nw * 0.62), ch = cw * 0.34, base = sy + ch * 0.45;
+        let cap = '';
+        for (let j = 0; j < 5; j++) {
+          const u = (j + 0.5) / 5, px = sx - cw / 2 + u * cw, pr = ch * (0.45 + Math.sin(u * Math.PI) * 0.55);
+          cap += `M${F(px - pr)} ${F(base - pr * 0.5)}a${F(pr)} ${F(pr)} 0 1 0 ${F(2 * pr)} 0a${F(pr)} ${F(pr)} 0 1 0 ${F(-2 * pr)} 0Z`;
+        }
+        day += `<clipPath id="islvnevcap"><rect x="${F(sx - cw)}" y="${F(base - ch * 3)}" width="${F(cw * 2)}" height="${F(ch * 3)}"/></clipPath>`
+          + `<path d="${cap}" fill="url(#islvcloud)" clip-path="url(#islvnevcap)" opacity=".92"/>`;
+      }
+    }
+    if (shoreD) {
+      day += `<path class="isl-vshallow" d="${shoreD}" transform="translate(0 ${F(Math.max(1.2, ppd * 0.22))})" stroke-width="${F(Math.max(1.8, ppd * 0.36))}"/>`
+        + `<path class="isl-vsurf" d="${shoreD}" stroke-width="${F(Math.max(1, ppd * 0.13))}"/>`;
+    }
+    // (the yachts keep clear of the islands, and each has its reflection)
+    for (const [fx, fy, s0] of [[0.33, 0.09, 1], [0.5, 0.15, 1.3], [0.2, 0.32, 1.7], [0.68, 0.06, 0.8]]) {
+      const bx = W * fx, by = y0 + (H - y0) * fy, L = Math.max(8, W * 0.014 * s0), mh = L * 1.3;
+      const boat = `<path class="isl-vhull" d="M${F(bx - L / 2)} ${F(by - L * 0.1)}H${F(bx + L / 2)}L${F(bx + L * 0.36)} ${F(by)}H${F(bx - L * 0.4)}Z"/>`
+        + `<path class="isl-vsail" d="M${F(bx)} ${F(by - L * 0.12)}V${F(by - mh)}L${F(bx + L * 0.42)} ${F(by - L * 0.14)}ZM${F(bx - L * 0.04)} ${F(by - mh * 0.85)}L${F(bx - L * 0.45)} ${F(by - L * 0.14)}H${F(bx - L * 0.04)}Z"/>`;
+      day += `<g opacity=".16" transform="translate(0 ${F(2 * by)}) scale(1 -1)">${boat}</g>` + boat;
+    }
+    s += `<g class="isl-ydet">${day}</g>`;
+    // After dark: a few faint lights, nearest first. Antigua's shore, each with a thin column on the water.
+    const lightsOn = (pts, i, w, op, last) => (pts.length
+      ? `<path class="s-vlight isl-vwin${last ? ' isl-vlast' : ''}" style="--i:${i}" d="${pts.map(([px, py]) => `M${F(px)} ${F(py)}h0`).join('')}" stroke-width="${F(w)}" stroke-opacity="${op}"/>`
+      : '');
+    const ant = [];
+    const open = shore.filter((q) => q[1] - q[2] > 2);
+    for (let i = 0; i < 12 && open.length; i++) {
+      const q = open[Math.floor(r() * open.length)];
+      ant.push([q[0], q[1] - (q[1] - q[2]) * (0.06 + r() * 0.3)]);
+    }
+    let cols = '';
+    for (const [px] of ant) if (r() < 0.5) cols += dashes(streakList(px, y0, H, r, 0.03, 0.04).filter(([, py]) => py < y0 + (H - y0) * 0.35), 's-vglow', 1, [0.05, 0.1, 0.16]);
+    // Nevis: a few along its foot. Montserrat: its lived-in north only.
+    const onIsle = (pts, a0, a1, n) => {
+      const out = [];
+      for (let i = 0; i < n; i++) {
+        const px = v.x(a0 + r() * (a1 - a0)), top = topAt(pts, px);
+        if (y0 - top > 1.5) out.push([px, y0 - 0.6 - (y0 - top) * (0.08 + r() * 0.3)]);
+      }
+      return out;
+    };
+    const nev = onIsle(nevis, 280.2, 282.7, 5), mon = onIsle(mont, 233.6, 240.6, 7);
+    s += `<g class="isl-vwin" style="--i:1">${cols}</g>` + lightsOn(ant, 1, 1.2, 0.75) + lightsOn(nev, 2, 0.95, 0.6) + lightsOn(mon, 3, 1, 0.6, true);
+    return s + `<g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g>`;
   }
 
   /* THE FINISH (owner, 2026-09-28: the art should reach the quality of his media tracker's scenes).
@@ -2947,6 +3026,8 @@
     'curtain-bluff': {
       draw: curtainBluff,
       world: 'coast',
+      // turned south-west so Montserrat and Nevis are in view (owner, 2026-09-30): the sunset 72% of the way in
+      sunAt: 0.72,
       // the Sun sinking behind the tip of the low point of land left of the bluff, its path on the sea
       sunset: '18:25',
       horizon: 0.7,
@@ -3384,9 +3465,10 @@
     const moonAt = typeof P.moonAt === 'function' ? P.moonAt(W, H) : P.moonAt;
     const ppd = P.ppd ? P.ppd(W, H, y0g) : W / 62;
     const y0 = y0g;
-    // The anchor: a coast scene puts the sunset a third of the way in; an inland one faces P.face.
+    // The anchor: a coast scene puts the sunset a third of the way in (or at `sunAt`, a share of the
+    // width); an inland one faces P.face.
     // A piece may instead put the Moon at a share of the width (`moonX`), turning to face it.
-    const anchor = P.world === 'coast' ? rel(SKY.d.sun[0]) - (W * 0.3 - W / 2) / ppd
+    const anchor = P.world === 'coast' ? rel(SKY.d.sun[0]) - (W * (P.sunAt || 0.3) - W / 2) / ppd
       : P.moonX != null ? rel((SKY.d.moon[0] + SKY.n.moon[0]) / 2) - (W * P.moonX - W / 2) / ppd
       : rel(typeof P.face === 'function' ? P.face(W, H) : P.face);
     const v = view(W / 2 - anchor * ppd, y0, ppd, W, H);

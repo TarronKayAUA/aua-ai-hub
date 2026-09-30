@@ -53,12 +53,14 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### curtain-bluff
 
-- [ ] #18 fix v4 `curtain-bluff-1`: The caption names Montserrat, but the island drawn is Nevis (HOLD: owner decision, see above)
-- [ ] #39 fix v3 `curtain-bluff-2`: A Day yacht's sail hides Nevis
-- [ ] #60 add v3 `curtain-bluff-4`: Water hatch dense at the horizon
-- [ ] #101 add v2 `curtain-bluff-3`: Mist at the coast's foot, and optionally its reflection
-- [ ] #102 add v2 `curtain-bluff-6`: Reflections under the Day yachts
-- [ ] #113 add v2 `curtain-bluff-5`: Shore lights low along the near coast, with their columns
+- [x] (owner, 2026-09-30) by Day: the cloud cap on Nevis Peak, turquoise shallows and surf along Antigua's shore
+- [x] (owner, 2026-09-30) after dark: faint lights on Antigua's shore, Nevis, and Montserrat's lived-in north
+- [x] #18 fix v4 `curtain-bluff-1` (resolved: the view turned to Montserrat and Nevis, owner 2026-09-30; the caption is true again, unchanged): The caption names Montserrat, but the island drawn is Nevis (HOLD: owner decision, see above)
+- [x] #39 fix v3 `curtain-bluff-2`: A Day yacht's sail hides Nevis
+- [x] #60 add v3 `curtain-bluff-4`: Water hatch dense at the horizon
+- [x] #101 add v2 `curtain-bluff-3`: Mist at the coast's foot, and optionally its reflection
+- [x] #102 add v2 `curtain-bluff-6`: Reflections under the Day yachts
+- [x] #113 add v2 `curtain-bluff-5`: Shore lights low along the near coast, with their columns
 
 ### sailing-week
 

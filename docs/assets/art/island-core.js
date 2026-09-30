@@ -818,6 +818,6 @@
     if ('ResizeObserver' in window) new ResizeObserver(() => { clearTimeout(t); t = setTimeout(paint, 150); }).observe(host);
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(paint);
   };
-  A.lib = { SKY, LAND, ISL, rel, view, islands, land, stars, ripples, defs, own, rng, F, clamp, TIP,
+  A.lib = { SKY, LAND, ISL, VEX, rel, view, islands, land, stars, ripples, defs, own, rng, F, clamp, TIP,
     moon, moonBox, planets, glowSky, glowSea, milkyWay, BIRD };
 })();
