@@ -55,7 +55,7 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 - [x] (owner, 2026-09-30) by Day: the cloud cap on Nevis Peak, turquoise shallows and surf along Antigua's shore
 - [x] (owner, 2026-09-30) after dark: faint lights on Antigua's shore, Nevis, and Montserrat's lived-in north
-- [x] #18 fix v4 `curtain-bluff-1` (resolved: the view turned to Montserrat and Nevis, owner 2026-09-30; the caption is true again, unchanged): The caption names Montserrat, but the island drawn is Nevis (owner chose D, 2026-09-30)
+- [x] #18 fix v4 `curtain-bluff-1` (resolved: the view turned to Montserrat and Nevis, owner 2026-09-30; the caption is true again, unchanged): The caption names Montserrat, but the island drawn is Nevis
 - [x] #39 fix v3 `curtain-bluff-2`: A Day yacht's sail hides Nevis
 - [x] #60 add v3 `curtain-bluff-4`: Water hatch dense at the horizon
 - [x] #101 add v2 `curtain-bluff-3`: Mist at the coast's foot, and optionally its reflection
@@ -199,8 +199,8 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### st-johns-harbour
 
-- [ ] #8 fix v4 `st-johns-harbour-1`: Far houses and lights sit between and on the cathedral's towers
-- [ ] #23 fix v3 `st-johns-harbour-6`: The ships' masts stand on nothing, a deck above the ship
-- [ ] #55 add v3 `st-johns-harbour-2`: Rows of balcony glass along the ships' decks
-- [ ] #97 add v2 `st-johns-harbour-5`: Contact shadow under the cannon's carriage
-- [ ] #115 add v1 `st-johns-harbour-3`: The fort's coping turns the corner onto the outer wall
+- [x] #8 fix v4 `st-johns-harbour-1`: Far houses and lights sit between and on the cathedral's towers
+- [x] #23 fix v3 `st-johns-harbour-6`: The ships' masts stand on nothing, a deck above the ship
+- [x] #55 add v3 `st-johns-harbour-2`: Rows of balcony glass along the ships' decks
+- [x] #97 add v2 `st-johns-harbour-5`: Contact shadow under the cannon's carriage
+- [x] #115 add v1 `st-johns-harbour-3`: The fort's coping turns the corner onto the outer wall
