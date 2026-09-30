@@ -2391,11 +2391,14 @@
     });
     s += walls.map((d, i) => `<path class="isl-tw${i}" d="${d}"/>`).join('') + `<path class="isl-troof" d="${roofs}"/><path class="f-pulse isl-vwin" style="--i:0" d="${wins}"/>`;
     s += palmsD([[X(0.29), ground, Y(0.46), 0.14, 17], [X(0.26), ground, Y(0.34), -0.12, 9]], 'isl-palm');
-    // 3. The ground: a square's paving along the foot of the picture.
-    s += `<path class="f-near" d="${rect(-2, ground, W + 4, H - ground + 2)}"/>`;
+    // 3. The ground: the square's paving along the foot of the picture, in perspective as the Way In
+    //    picture's: stone, its joints widening toward the viewer and converging on the horizon (it had been
+    //    grass crossed by parallel slanting strokes, which read as rain at night; review, 2026-09-30).
+    s += `<path class="isl-apave" d="${rect(-2, ground, W + 4, H - ground + 2)}"/>`;
     let pav = '';
-    for (let px = X(0.02); px < W; px += Y(0.12)) pav += `M${F(px)} ${F(ground + Y(0.03))}l${F(Y(0.03))} ${F(Y(0.11))}`;
-    s += `<path class="isl-vcourse" d="${pav}" stroke-width=".6"/>`;
+    for (let y = ground + Y(0.035); y < H; y += Y(0.04) + (y - ground) * 0.2) pav += `M-2 ${F(y)}H${F(W + 2)}`;
+    for (let px = X(0.01); px < W; px += Y(0.09)) pav += `M${F(px)} ${F(ground)}l${F((px - W * 0.5) * 0.08)} ${F(H - ground)}`;
+    s += `<path class="isl-vcourse" d="${pav}" stroke-width=".7" stroke-opacity=".5"/>`;
     // 4. The bell tower: a square stone shaft with quoins and string courses, the belfry's arched
     //    opening, a pyramid roof and a vane.
     const tc = X(0.81), tw = Y(0.34), tTop = Y(0.43), bel = Y(0.3), roofTop = Y(0.005);

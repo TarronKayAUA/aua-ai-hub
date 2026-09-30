@@ -126,7 +126,7 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 - [x] #65 fix v2 `bell-tower-4`: The weather vane is drawn above the picture
 - [x] #67 fix v2 `bell-tower-6`: The notice board's little roof merges with the house roofs behind it
 - [x] #103 add v2 `bell-tower-5`: Give the sea its finish: horizon hatch and the headland's reflection
-- [ ] #112 add v2 `bell-tower-7`: Pave the square in perspective, as the Way In picture does
+- [x] #112 add v2 `bell-tower-7`: Pave the square in perspective, as the Way In picture does
 
 ### dish-net
 
