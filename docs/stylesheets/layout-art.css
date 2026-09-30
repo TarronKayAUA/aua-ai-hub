@@ -775,6 +775,14 @@
 .isl .isl-vrail { stroke: var(--isl-vrail); fill: none; }
 .isl .isl-vdrive { stroke: var(--isl-vdrive); }
 .isl .isl-vclock { fill: var(--isl-moon); fill-opacity: 0.78; }
+/* The campus clock's hands and quarter marks (2026-09-30): dark on the pale face in every version. */
+.isl .isl-vhand { stroke: #262a33; fill: none; stroke-linecap: round; }
+.isl .isl-vmark { stroke: #262a33; stroke-opacity: 0.5; fill: none; stroke-linecap: round; }
+.isl .isl-vpin { fill: #262a33; }
+/* Its face stands out from the tower (owner, 2026-09-30: by Day "the clock fades into the clocktower"): a dark
+   bezel in every version, and by Day a white face on the cream stone. */
+.isl .isl-vbezel { stroke: #3a3f48; stroke-opacity: 0.85; fill: none; }
+.isl[data-sky="day"] .isl-vclock { fill: #ffffff; fill-opacity: 1; }
 /* Harbour lights and masts (Shirley Heights). */
 .isl .s-vlight { stroke: var(--isl-pulse); stroke-linecap: round; fill: none; }
 .isl .isl-vmast { stroke: var(--isl-vrail); fill: none; stroke-opacity: 0.6; }
