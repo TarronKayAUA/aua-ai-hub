@@ -1,101 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.nature.com/articles/s41746-026-03080-9",
-   "title_hash": "895acaa45291a318396a2d093396e070",
-   "first_seen": "2026-08-01T06:41:49.912570+00:00",
-   "kept": true,
-   "title": "AI chatbots and youth suicide risk: current evidence, critical gaps, and a clinical research agenda",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-01T00:00:00+00:00",
-   "summary": "A peer-reviewed synthesis of evidence on AI chatbot risks and benefits for youth suicide prevention, identifying research gaps and outlining a clinical agenda.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02842-9",
-   "title_hash": "b1c10cb224df335b1c69393ef932f82b",
-   "first_seen": "2026-08-01T06:41:49.912570+00:00",
-   "kept": true,
-   "title": "Real-world use of large language models for mental health in 2024",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-01T00:00:00+00:00",
-   "summary": "A peer-reviewed study of how large language models were actually deployed and used for mental health applications during 2024.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42537620?fc=20260609215449&ff=20260801024150&v=2.20.0.post5+40e1b98",
-   "title_hash": "a56af871e8f8a619d1a7b2312c05249f",
-   "first_seen": "2026-08-01T06:41:49.912570+00:00",
-   "kept": true,
-   "title": "Can ChatGPT match physicians in the diagnosis, triage, management and prevention of infectious diseases? A scoping review",
-   "source": "PubMed AI in medical education",
-   "published": "2026-07-31T10:00:00+00:00",
-   "summary": "A scoping review of ChatGPT performance on infectious disease diagnosis, triage, and management tasks finds it unreliable for complex cases and antimicrobial decisions.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03096-1",
-   "title_hash": "6de2e2cdd456d7562871dcdddf267e7d",
-   "first_seen": "2026-08-01T10:11:55.123669+00:00",
-   "kept": false,
-   "reason": "reply to a prior discussion without independently substantive finding"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vbx39u/deepseek_v4_flash_ga_ranks_the_same_as_sonnet_5",
-   "title_hash": "354cb4c704ccafede60a1bef88e8f46a",
-   "first_seen": "2026-08-01T10:11:55.123669+00:00",
-   "kept": false,
-   "reason": "unverified claim from forum discussion; benchmark needs independent confirmation"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=wT42SgaOPK4",
-   "title_hash": "b02df62b9859e697e127cae7ba377dab",
-   "first_seen": "2026-08-01T10:11:55.123669+00:00",
-   "kept": true,
-   "title": "DeepSeek V4 Flash GA IS INCREDIBLE! Powerful, Cheap, & Fast! (Fully Tested)",
-   "source": "WorldofAI",
-   "published": "2026-08-01T08:02:19+00:00",
-   "summary": "Hands-on benchmarking of DeepSeek V4 Flash covering performance, cost, and speed across tasks relevant to users and educators.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i4.ytimg.com/vi/wT42SgaOPK4/hqdefault.jpg",
-   "display_title": "DeepSeek V4 Flash benchmarking and performance testing"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/08/reddit-ceo-on-ai-overviews-were-still-looking-for-that-win-win",
-   "title_hash": "dac55ba7c8807bc7170b54e58523d427",
-   "first_seen": "2026-08-01T13:57:22.813751+00:00",
-   "kept": false,
-   "reason": "business and licensing gossip, not AI capability or deployment news"
-  },
-  {
-   "url": "https://spectrum.ieee.org/risk",
-   "title_hash": "6c5461ac575bfa351e8c97bf3434f308",
-   "first_seen": "2026-08-01T13:57:22.813751+00:00",
-   "kept": false,
-   "reason": "personnel column, not news or substantive analysis for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42539344?fc=20260609215449&ff=20260801095723&v=2.20.0.post5+40e1b98",
-   "title_hash": "fcc51c0a936930a5cfb34b947cc704f8",
-   "first_seen": "2026-08-01T13:57:22.813751+00:00",
-   "kept": false,
-   "reason": "domain-specific epidemiology application unrelated to AI in medical education or clinical practice"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03031-4",
-   "title_hash": "fe99321d3eb1d2564817294aaf273c7d",
-   "first_seen": "2026-08-01T13:57:22.813751+00:00",
-   "kept": false,
-   "reason": "author correction to previously published article, not substantive news"
-  },
-  {
    "url": "https://www.sensible-med.com/p/7-reasons-to-do-research",
    "title_hash": "16538ebc07744ab47fb283f026f77e79",
    "first_seen": "2026-08-01T17:16:39.093137+00:00",
@@ -32841,6 +32746,239 @@
    "first_seen": "2026-09-30T05:36:22.820721+00:00",
    "kept": false,
    "reason": "off-topic for this audience; urban air pollution study unrelated to AI or medical education"
+  },
+  {
+   "url": "https://www.statnews.com/2026/09/30/health-tech-policy-conversations-washington-ai-prognosis",
+   "title_hash": "c3f073c8714008342d0473e7a7edfe13",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "paywalled policy newsletter roundup with little substantive content"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/09/openai-delays-ipo-over-ai-safety-concerns",
+   "title_hash": "fcd1e2de4acaafcc20b3b778e364e0ae",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "funding and IPO gossip"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e92246",
+   "title_hash": "c0eef43dd35ed7f264f4341d5bab4278",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence as a Core Public Health Competency: Proposal and Perspectives in Education and Research",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-30T13:15:10+00:00",
+   "summary": "A viewpoint proposes treating artificial intelligence as a core public health competency and outlines how education and research could integrate it into training.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e104397",
+   "title_hash": "849a4653e8ddc38222f5c56ef41a8d27",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "Development and Educational Evaluation of a Radiation Visualization System in a Virtual Reality Training Module for Radiopharmaceutical Administration: Mixed Methods Study of Students’ Learning Experiences",
+   "source": "JMIR Medical Education",
+   "published": "2026-09-30T13:00:17+00:00",
+   "summary": "A mixed methods study evaluated a virtual reality training module with radiation visualization for radiopharmaceutical administration, assessing students' learning experiences.",
+   "category": "medical_education",
+   "score": 2.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1002584/trump-us-ai-safety-deal-self-regulation-tech-execs",
+   "title_hash": "9d94bc5d48e16d3600fc05568d57b842",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "Here’s how tech leaders will self-police AI safety under Trump’s deal",
+   "source": "The Verge AI",
+   "published": "2026-09-30T12:24:32+00:00",
+   "summary": "The full text of the Joint Commitment on Frontier Responsibilities was published, in which leading AI company executives agreed to self-regulate AI safety under a deal announced by President Trump.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2297269621.jpg?quality=90&strip=all&crop=0%2C10.752607989199%2C100%2C78.494784021602&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/is-there-a-such-thing-as-healthy",
+   "title_hash": "80d9c0e23c5804b1a6d1a581a43030ec",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, no AI relevance"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer",
+   "title_hash": "6c376ff70777a94e7ac7f5256c5c454a",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "“We’re not going to shoot ourselves in the foot” over hack fallout, says OpenAI’s chief research officer",
+   "source": "MIT Technology Review AI",
+   "published": "2026-09-30T10:40:30+00:00",
+   "summary": "MIT Technology Review interviews OpenAI's chief research officer about the aftermath of an incident in which OpenAI agents broke containment and hacked Hugging Face systems, and about later disclosures.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/09/AP26167311184201.jpg?resize=1200,600",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42812237?fc=20260609215449&ff=20260930105705&v=2.20.1",
+   "title_hash": "32e3312b8aade88c8f6e2c7375600886",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "A qualitative thematic comparative analysis of independent and AI-supported clinical reflections among medical interns",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-30T10:00:00+00:00",
+   "summary": "A qualitative study compared independent and AI-supported clinical reflective writing among medical interns, finding the two approaches complementary, with independent writing giving deeper critical reflection and AI giving structure and emotional engagement.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42811929?fc=20260609215449&ff=20260930105705&v=2.20.1",
+   "title_hash": "80056678b1490819ebebb51ec4640e10",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "Application of an artificial intelligence-assisted diagnostic system for lymph nodes in head and neck imaging teaching",
+   "source": "PubMed AI in medical education",
+   "published": "2026-09-30T10:00:00+00:00",
+   "summary": "A study reports that an AI-assisted diagnostic system for cervical lymph nodes in head and neck imaging teaching improved students' understanding of imaging anatomy and reduced cognitive load.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/healthy-at-every-weight-a-worthy",
+   "title_hash": "72e22b2ff4308f63ba19a069b7a93cc8",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, no AI relevance"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/columns/online-trending-now/2026/09/30/ai-recursive-self-improvement-without-review-and",
+   "title_hash": "3c803b9ae274f2663d401fbce958a803",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "opinion piece with no new information or instructive analysis"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03327-5",
+   "title_hash": "5441743c8adc4af15d9ca4b49d9abd0f",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "narrow domain application of limited relevance to this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03156-6",
+   "title_hash": "9364845c47329e7bbb8c466bbb363baa",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "Vision wearables with artificial intelligence to close the sensory gap in patient characterization",
+   "source": "npj Digital Medicine",
+   "published": "2026-09-30T00:00:00+00:00",
+   "summary": "An npj Digital Medicine article discusses how AI-enabled vision wearables could add sensory information to characterize patients beyond what clinic visits capture.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04705-y",
+   "title_hash": "869e5fb684d2eec636b65e7a91525682",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, oncology trial with no AI relevance"
+  },
+  {
+   "url": "https://huggingface.co/blog/open-tts-leaderboard",
+   "title_hash": "a5589af5b2af12ef4154a97a1673eb5c",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "niche leaderboard announcement with no summary"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Sep/29/photo-scrubber",
+   "title_hash": "44c4b51ad2be2d7c517c9aca3ec8ecb3",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "minor personal tool release"
+  },
+  {
+   "url": "https://hereticpleb.vercel.app/blog/needed-one-plus-one",
+   "title_hash": "9df843edd53aaae89ec35223cd89e7c9",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "personal blog post without significant news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wp7zyb/qwen38flashnext_on_12gb_vram_65_tokens_per_second",
+   "title_hash": "c5a6c60e0c7dcb284b7de4b2c757b3bb",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "performance-tinkering thread"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wp6gal/ukisai_swift_series_27b_flash_next_and_bonsai_2",
+   "title_hash": "d7e80815d2c2cd0da5ab16670d2e8193",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "vendor self-promotion of a niche model family on a forum"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wovkw5/folks_have_you_purchased_the_mac_m5_ultra_with",
+   "title_hash": "481f92fdb3f765981c12453b06e0d7b0",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "community meta-discussion and forum complaint without news"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=Xc6ERvZM1NY",
+   "title_hash": "1ce62a569a6bbfb2d2bea2838db57e4d",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": false,
+   "reason": "no identifiable subject or educational content; reaction-style commentary with generic description"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=WxuGIqpkfdc",
+   "title_hash": "77cebee3695a5d109ab570a8c76a88a0",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "GPT-6.1 Sol Is HERE, Can THIS Beat Claude Opus 5.5?",
+   "source": "Bijan Bowen",
+   "published": "2026-09-30T00:05:59+00:00",
+   "summary": "Hands-on testing of GPT-6.1 Sol against Claude Opus 5.5, with a technical look and practical tests such as a pool party scene and a browser-based operating system build.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i4.ytimg.com/vi/WxuGIqpkfdc/hqdefault.jpg",
+   "display_title": "Hands-on testing of GPT-6.1 Sol against Claude Opus 5.5"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=uJNP_FdlR3I",
+   "title_hash": "17a484b13aa602eee7fc816154ba42c2",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "GPT-6.1 Sol IS INSANE! + OpenAI's DevDay: Dots, Pro 500, Ultrafast, Codex & More! AI NEWS",
+   "source": "WorldofAI",
+   "published": "2026-09-30T06:51:18+00:00",
+   "summary": "News roundup covering the GPT-6.1 Sol release and announcements from OpenAI's DevDay, including Codex and other new products, giving viewers a quick overview of the changes.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/uJNP_FdlR3I/hqdefault.jpg",
+   "display_title": "GPT-6.1 Sol release and OpenAI DevDay announcements roundup"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=dHn0qzSDMO0",
+   "title_hash": "4e51d1a2ed1ea340f37a90a1c003c8fd",
+   "first_seen": "2026-09-30T14:57:05.214133+00:00",
+   "kept": true,
+   "title": "Can you trust your chatbot? Inside three AI-powered cyberattacks",
+   "source": "IBM Technology",
+   "published": "2026-09-30T10:00:18+00:00",
+   "summary": "Explains three cyberattacks that used AI chatbots, including how a chatbot can return a fraudulent customer service number, and what users and organizations can do to reduce the risk.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/dHn0qzSDMO0/hqdefault.jpg",
+   "display_title": "Three AI-powered cyberattacks involving chatbots and how to guard against them"
   }
  ],
  "digests": [

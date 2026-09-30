@@ -13,6 +13,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=dHn0qzSDMO0" target="_blank" rel="noopener" title="Can you trust your chatbot? Inside three AI-powered cyberattacks">
+  <img src="https://i1.ytimg.com/vi/dHn0qzSDMO0/hqdefault.jpg" alt="Video: Three AI-powered cyberattacks involving chatbots and how to guard against them" loading="lazy">
+  <span class="video-card-title">Three AI-powered cyberattacks involving chatbots and how to guard against them</span>
+  <span class="video-card-meta">IBM Technology, September 30, 2026</span>
+  <span class="video-card-desc">Explains three cyberattacks that used AI chatbots, including how a chatbot can return a fraudulent customer service number, and what users and organizations can do to reduce the risk.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=uJNP_FdlR3I" target="_blank" rel="noopener" title="GPT-6.1 Sol IS INSANE! + OpenAI&#x27;s DevDay: Dots, Pro 500, Ultrafast, Codex &amp; More! AI NEWS">
+  <img src="https://i2.ytimg.com/vi/uJNP_FdlR3I/hqdefault.jpg" alt="Video: GPT-6.1 Sol release and OpenAI DevDay announcements roundup" loading="lazy">
+  <span class="video-card-title">GPT-6.1 Sol release and OpenAI DevDay announcements roundup</span>
+  <span class="video-card-meta">WorldofAI, September 30, 2026</span>
+  <span class="video-card-desc">News roundup covering the GPT-6.1 Sol release and announcements from OpenAI&#x27;s DevDay, including Codex and other new products, giving viewers a quick overview of the changes.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=WxuGIqpkfdc" target="_blank" rel="noopener" title="GPT-6.1 Sol Is HERE, Can THIS Beat Claude Opus 5.5?">
+  <img src="https://i4.ytimg.com/vi/WxuGIqpkfdc/hqdefault.jpg" alt="Video: Hands-on testing of GPT-6.1 Sol against Claude Opus 5.5" loading="lazy">
+  <span class="video-card-title">Hands-on testing of GPT-6.1 Sol against Claude Opus 5.5</span>
+  <span class="video-card-meta">Bijan Bowen, September 30, 2026</span>
+  <span class="video-card-desc">Hands-on testing of GPT-6.1 Sol against Claude Opus 5.5, with a technical look and practical tests such as a pool party scene and a browser-based operating system build.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=T-E7rmD6rh4" target="_blank" rel="noopener" title="Sonnet 5.5 Is Here. Look What It Can Build.">
   <img src="https://i1.ytimg.com/vi/T-E7rmD6rh4/hqdefault.jpg" alt="Video: Claude Sonnet 5.5 capabilities demonstration" loading="lazy">
   <span class="video-card-title">Claude Sonnet 5.5 capabilities demonstration</span>
@@ -114,24 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">AI news roundup: recent model releases and updates</span>
   <span class="video-card-meta">AI Search, September 20, 2026</span>
   <span class="video-card-desc">News roundup covering multiple AI releases and updates including Qwen 3.8, Gemini Live, and other recent model announcements.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=vIHw_2VjSUw" target="_blank" rel="noopener" title="DeepSeek’s Insane New Architecture">
-  <img src="https://i3.ytimg.com/vi/vIHw_2VjSUw/hqdefault.jpg" alt="Video: DeepSeek V4.1 Flash architecture explained" loading="lazy">
-  <span class="video-card-title">DeepSeek V4.1 Flash architecture explained</span>
-  <span class="video-card-meta">Two Minute Papers, September 18, 2026</span>
-  <span class="video-card-desc">Technical breakdown of DeepSeek V4.1 Flash&#x27;s architecture and capabilities.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=OA5cICIzD-c" target="_blank" rel="noopener" title="Bonsai 2 27B First Test, Is THIS the BEST Single-GPU AI Model?">
-  <img src="https://i4.ytimg.com/vi/OA5cICIzD-c/hqdefault.jpg" alt="Video: Bonsai 2 27B model testing and performance review" loading="lazy">
-  <span class="video-card-title">Bonsai 2 27B model testing and performance review</span>
-  <span class="video-card-meta">Bijan Bowen, September 18, 2026</span>
-  <span class="video-card-desc">Hands-on testing and evaluation of the Bonsai 2 27B language model on single-GPU systems.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=thR9_VYJiQo" target="_blank" rel="noopener" title="Google is SO back...">
-  <img src="https://i1.ytimg.com/vi/thR9_VYJiQo/hqdefault.jpg" alt="Video: Dream-RSI: using past experiments to improve AI agent reasoning" loading="lazy">
-  <span class="video-card-title">Dream-RSI: using past experiments to improve AI agent reasoning</span>
-  <span class="video-card-meta">Wes Roth, September 17, 2026</span>
-  <span class="video-card-desc">Google researchers use a technique called Dream-RSI to help AI agents learn from past experiments and improve decision-making in novel situations.</span>
 </a>
 </div>
 
