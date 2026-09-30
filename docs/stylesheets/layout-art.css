@@ -693,6 +693,54 @@
 .isl .isl-tqn { display: none; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-tqn,
 .isl[data-sky="night"] .isl-tqn { display: inline; }
+/* Round 7, wave 3 (2026-09-30). The committee room shares the library's tokens; its own are the project
+   board and its notes, the name cards' fold, the glasses and jug, the easel's legs, the agenda's heading
+   and boxes (neutral ink, so only the ticks carry the page's hue: they are the calendar ring's class), and
+   a chair a step darker at Dawn and Sunset, when the library's chair nearly matched this room's wall. The
+   way in shares the stone, the lamps and the library's sign blue; its own are the concrete ramp, the
+   square's paving (solid, so the sea's ripples and glitter stop at the wall), the door's frame (darker than
+   the handrails, so the lit doorway never reads as barred), the handrails (brushed metal, darker by Day so
+   they read against sunlit stone) and the white symbol of access, dimmed at Night as a lit sign is. */
+.isl {
+  --isl-kboard: #d8d9d6; --isl-knote: #cdb462; --isl-apave: #3f4c55; --isl-aframe: #4a5058;
+}
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
+  --isl-kboard: #7d8084; --isl-knote: #6f6236; --isl-apave: #1b2229; --isl-aframe: #2a2f36;
+}
+.isl[data-sky="day"] { --isl-kboard: #f7f8f6; --isl-knote: #f3d86c; --isl-apave: #b9b2a3; --isl-aframe: #4b535c; }
+.isl[data-sky="dawn"] { --isl-kboard: #d6d4de; --isl-knote: #cdb77e; --isl-apave: #6e6c85; --isl-aframe: #4d4b60; --isl-kchair: #7d7f8e; }
+.isl[data-sky="sunset"] { --isl-kboard: #eadfd3; --isl-knote: #ddb566; --isl-apave: #7d6c70; --isl-aframe: #4f4747; --isl-kchair: #8a837d; }
+.isl .isl-kboard { fill: var(--isl-kboard); }
+.isl .isl-knote { fill: var(--isl-knote); }
+.isl .isl-kchair { fill: var(--isl-kchair, var(--isl-lchair)); }
+.isl .isl-kring { stroke: var(--isl-lwood2); stroke-opacity: 0.45; fill: none; }
+.isl .isl-apave { fill: var(--isl-apave); }
+.isl .isl-aframe { stroke: var(--isl-aframe); fill: none; stroke-linecap: round; }
+.isl .isl-kchairs { fill: var(--isl-lchair2); }
+.isl .isl-krug { fill: var(--isl-lbk1); fill-opacity: 0.2; }
+.isl .isl-krugb { stroke: var(--isl-lbk3); stroke-opacity: 0.35; fill: none; }
+.isl .isl-kcard { fill: var(--isl-lpage); }
+.isl .isl-kcardtop { stroke: #000000; stroke-opacity: 0.2; fill: none; }
+.isl .isl-kglass { fill: #dbe8f0; fill-opacity: 0.45; stroke: var(--isl-lalu); stroke-opacity: 0.6; stroke-width: 0.6; }
+.isl .isl-kglassh { stroke: var(--isl-lalu); stroke-opacity: 0.7; fill: none; stroke-linecap: round; }
+.isl .isl-kleg { stroke: var(--isl-lwood2); fill: none; stroke-linecap: round; }
+.isl .isl-khead { stroke: #3a3f4a; stroke-opacity: 0.75; fill: none; stroke-linecap: round; }
+.isl .isl-kbox { stroke: #3a3f4a; stroke-opacity: 0.6; fill: none; }
+.isl .isl-kpad { fill: #000000; fill-opacity: 0.12; }
+.isl .isl-kwains { fill: var(--isl-lside); fill-opacity: 0.1; }
+.isl .isl-kpanel { stroke: var(--isl-lbase); stroke-opacity: 0.6; fill: none; }
+.isl { --isl-aramp: #7e8690; }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] { --isl-aramp: #2c323b; }
+.isl[data-sky="day"] { --isl-aramp: #c3c8cd; }
+.isl[data-sky="dawn"] { --isl-aramp: #8f8fa6; }
+.isl[data-sky="sunset"] { --isl-aramp: #a0949a; }
+.isl .isl-aramp { fill: var(--isl-aramp); }
+.isl .isl-arail { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.isl[data-sky="day"] .isl-arail { stroke: #7d858e; }
+.isl .isl-asym { stroke: #f4f6f9; fill: none; stroke-linecap: round; }
+.isl .isl-asymf { fill: #f4f6f9; }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-asym, .isl[data-sky="night"] .isl-asym { stroke: #c9d1db; }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-asymf, .isl[data-sky="night"] .isl-asymf { fill: #c9d1db; }
 /* The caption (owner, 2026-09-29): one quiet line under the picture saying what it shows, then the
    time of day it is drawn at, linked (layout_art.py writes the words, island-vignettes.js adds the
    time). The picture gives up the caption's height, so the figure keeps its size: the top stays level
@@ -916,6 +964,9 @@
    before the Day rule below, which takes precedence and leaves daylight windows still. */
 .isl-hero.isl-run .isl-vwin:is(.f-pulse, .isl-vcathwin),
 .isl-vig.isl-vrun .isl-vwin:is(.f-pulse, .isl-vcathwin) { animation-name: isl-vlit; }
+/* A mark that appears in its turn, not a light (the committee room's ticks, 2026-09-30): hidden until then,
+   not faint, so the agenda is not seen done before it is ticked off. By Day it is simply there, as below. */
+.isl-vig.isl-vrun .isl-vwin.isl-vtick { animation-name: isl-vtick; }
 /* By Day no light comes on (owner, 2026-09-29: the windows "pop in" by day, "which doesn't quite make
    sense"): the windows are daylight glass, the lamps unlit, so the lights' part of the pass is left out and
    they are simply there. The card's fade and Betty's Hope's sails still move. */
@@ -924,6 +975,7 @@
 @keyframes isl-vfade { from { opacity: 0; } to { opacity: 1; } }
 @keyframes isl-vlight { from { opacity: 0.12; } to { opacity: 1; } }
 @keyframes isl-vlit { from { fill: var(--isl-vdark, #34475d); } }
+@keyframes isl-vtick { from { opacity: 0; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) {
   .isl-vig.isl-vrun,
   .isl-vig.isl-vrun * { animation: none !important; }
