@@ -43,13 +43,13 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### shirley-heights
 
-- [ ] #17 fix v4 `shirley-heights-1`: Day blurs cut into boxes; flank shade spills off the land
-- [ ] #36 fix v3 `shirley-heights-2`: A pale vertical curtain across the harbour mouth
-- [ ] #56 add v3 `shirley-heights-6`: Surf on the reef at the harbour mouth
-- [ ] #57 add v3 `shirley-heights-5`: Light columns under the dockyard's lamps and moored yachts
-- [ ] #75 fix v2 `shirley-heights-7`: The lookout lantern's post is land-green by Day
-- [ ] #92 add v2 `shirley-heights-3`: The lookout lantern: a pool of light, and last in the sequence
-- [ ] #100 add v2 `shirley-heights-4`: Afterglow rim on the range's crest beside the Sun
+- [x] #17 fix v4 `shirley-heights-1`: Day blurs cut into boxes; flank shade spills off the land
+- [x] #36 fix v3 `shirley-heights-2`: A pale vertical curtain across the harbour mouth
+- [x] #56 add v3 `shirley-heights-6`: Surf on the reef at the harbour mouth
+- [x] #57 add v3 `shirley-heights-5`: Light columns under the dockyard's lamps and moored yachts
+- [x] #75 fix v2 `shirley-heights-7`: The lookout lantern's post is land-green by Day
+- [x] #92 add v2 `shirley-heights-3`: The lookout lantern: a pool of light, and last in the sequence
+- [x] #100 add v2 `shirley-heights-4`: Afterglow rim on the range's crest beside the Sun
 
 ### curtain-bluff
 
