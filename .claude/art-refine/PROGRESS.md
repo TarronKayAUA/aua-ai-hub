@@ -31,15 +31,15 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### campus-hero
 
-- [ ] #1 fix v4 `campus-hero-1`: Close the gap beside the portico where the sea shows through
-- [ ] #2 fix v3 `campus-hero-2`: Campus shade is lighter than its walls at Dawn, Sunset and Dusk
-- [ ] #19 add v4 `campus-hero-3`: The red pent roof across each inner block
-- [ ] #20 fix v3 `campus-hero-4`: Drive lamps: heads by Day
-- [ ] #21 fix v3 `campus-hero-8`: Inner blocks and outer wings overlap in a muddle
-- [ ] #49 fix v3 `campus-hero-9`: The tower's roof: a low hipped roof with white cresting, not a tall pyramid (HOLD: owner decision, see above)
-- [ ] #51 add v3 `campus-hero-6`: The white-trimmed gablet in the portico roof
-- [ ] #79 fix v2 `campus-hero-7`: Hipped roofs split down the middle beside the now-uniform tower roof (HOLD: owner decision, see above)
-- [ ] #95 add v2 `campus-hero-5`: A ledge and low balustrade at the foot of the lookout
+- [x] #1 fix v4 `campus-hero-1`: Close the gap beside the portico where the sea shows through
+- [x] #2 fix v3 `campus-hero-2`: Campus shade is lighter than its walls at Dawn, Sunset and Dusk
+- [x] #19 add v4 `campus-hero-3`: The red pent roof across each inner block
+- [x] #20 fix v3 `campus-hero-4`: Drive lamps: heads by Day
+- [x] #21 fix v3 `campus-hero-8`: Inner blocks and outer wings overlap in a muddle
+- [x] #49 fix v3 `campus-hero-9`: The tower's roof: a low hipped roof with white cresting, not a tall pyramid (owner chose D, 2026-09-30)
+- [x] #51 add v3 `campus-hero-6`: The white-trimmed gablet in the portico roof
+- [x] #79 fix v2 `campus-hero-7`: Hipped roofs split down the middle beside the now-uniform tower roof (owner chose D, 2026-09-30)
+- [x] #95 add v2 `campus-hero-5`: A ledge and low balustrade at the foot of the lookout
 
 ### shirley-heights
 
@@ -55,7 +55,7 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 - [x] (owner, 2026-09-30) by Day: the cloud cap on Nevis Peak, turquoise shallows and surf along Antigua's shore
 - [x] (owner, 2026-09-30) after dark: faint lights on Antigua's shore, Nevis, and Montserrat's lived-in north
-- [x] #18 fix v4 `curtain-bluff-1` (resolved: the view turned to Montserrat and Nevis, owner 2026-09-30; the caption is true again, unchanged): The caption names Montserrat, but the island drawn is Nevis (HOLD: owner decision, see above)
+- [x] #18 fix v4 `curtain-bluff-1` (resolved: the view turned to Montserrat and Nevis, owner 2026-09-30; the caption is true again, unchanged): The caption names Montserrat, but the island drawn is Nevis (owner chose D, 2026-09-30)
 - [x] #39 fix v3 `curtain-bluff-2`: A Day yacht's sail hides Nevis
 - [x] #60 add v3 `curtain-bluff-4`: Water hatch dense at the horizon
 - [x] #101 add v2 `curtain-bluff-3`: Mist at the coast's foot, and optionally its reflection

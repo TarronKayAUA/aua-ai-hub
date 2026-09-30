@@ -108,7 +108,7 @@
   function campus(W, H, v, g, opt = {}) {
     const fw = W * (opt.fw || 1.1), cx = W * 0.5, base = g.at(cx) + 1, u = fw / 100;
     const r = rng(41);
-    let walls = '', shade = '', band = '', roofs = '', roofShade = '', dark = '', lit = '', rails = '';
+    let walls = '', shade = '', band = '', roofs = '', dark = '', lit = '', rails = '', eaves = '', tiles = '';
     const litGroups = [];                     // [group, path] so the lights can come on in turn
     const win = (group, d, on) => { if (on) litGroups.push([group, d]); else dark += d; };
 
@@ -116,8 +116,13 @@
     const block = (x0, x1, wallTop, roofH, hip, over) => {
       walls += rect(x0, wallTop, x1 - x0, base - wallTop);
       roofs += `M${F(x0 - over)} ${F(wallTop + 0.5)}L${F(x0 + hip)} ${F(wallTop - roofH)}H${F(x1 - hip)}L${F(x1 + over)} ${F(wallTop + 0.5)}Z`;
-      // the slope facing the viewer's right catches less light
-      roofShade += `M${F((x0 + x1) / 2)} ${F(wallTop + 0.5)}L${F((x0 + x1) / 2)} ${F(wallTop - roofH)}H${F(x1 - hip)}L${F(x1 + over)} ${F(wallTop + 0.5)}Z`;
+      // Seen straight on, a hipped roof shows only its front slope (its hips are edge-on), so it is one plane,
+      // as the tower's is; courses of tiles and the shadow under the eave give it depth (owner, 2026-09-30).
+      eaves += rect(x0, wallTop, x1 - x0, 0.7 * u);
+      for (const t of [0.34, 0.68]) {
+        const a = (x0 - over) + (hip + over) * t, b = (x1 + over) - (hip + over) * t, y = wallTop + 0.5 - (roofH + 0.5) * t;
+        tiles += rect(a, y - 0.11 * u, b - a, 0.22 * u);
+      }
     };
 
     // Outer wings: two storeys, long hipped roofs; arcade below, veranda above.
@@ -130,17 +135,25 @@
       const n = Math.floor((x1 - x0) / (2.35 * u));
       for (let i = 0; i < n; i++) {
         const x = x0 + (i + 0.5) * (x1 - x0) / n, grp = 5 + Math.round(Math.abs(x - cx) / (9 * u));
-        win(grp, rect(x - 0.55 * u, oTop + 1.2 * u, 1.1 * u, 1.9 * u), r() < 0.62);
-        win(grp, arch(x, oTop + 4.9 * u, 1.3 * u, base - 0.3 * u), r() < 0.28);
+        const up = r() < 0.62, down = r() < 0.28;   // (drawn either way, so the other windows keep their lights)
+        if (Math.abs(x - cx) < 25.1 * u) continue;   // hidden behind the inner block, which stands in front
+        win(grp, rect(x - 0.55 * u, oTop + 1.2 * u, 1.1 * u, 1.9 * u), up);
+        win(grp, arch(x, oTop + 4.9 * u, 1.3 * u, base - 0.3 * u), down);
       }
     }
+    // The outer wings stand behind the inner blocks, as on the campus: their walls, roofs and rails are
+    // drawn first (they had crossed the inner blocks' ends).
+    const back = { walls, roofs, rails, eaves, tiles };
+    walls = roofs = rails = eaves = tiles = '';
     // Inner blocks: three storeys, hipped roofs; terracotta ground floor with arched openings.
     const iTop = base - 13.6 * u;
     for (const s of [-1, 1]) {
       const a = cx + s * 6.8 * u, b = cx + s * 24.5 * u, x0 = Math.min(a, b), x1 = Math.max(a, b);
       block(x0, x1, iTop, 5.6 * u, 4.4 * u, 1 * u);
       band += rect(x0, base - 4.3 * u, x1 - x0, 4.3 * u);
-      rails += `M${F(x0 + 0.8 * u)} ${F(iTop + 3.5 * u)}H${F(x1 - 0.8 * u)}M${F(x0 + 0.8 * u)} ${F(iTop + 7.6 * u)}H${F(x1 - 0.8 * u)}`;
+      // the red pent roof across the block between its upper floors, as on the campus (in place of a rail)
+      roofs += `M${F(x0 - 0.6 * u)} ${F(iTop + 4.5 * u)}L${F(x0 + 0.2 * u)} ${F(iTop + 3.3 * u)}H${F(x1 - 0.2 * u)}L${F(x1 + 0.6 * u)} ${F(iTop + 4.5 * u)}Z`;
+      rails += `M${F(x0 + 0.8 * u)} ${F(iTop + 7.6 * u)}H${F(x1 - 0.8 * u)}`;
       const n = 7;
       for (let i = 0; i < n; i++) {
         const x = x0 + (i + 0.5) * (x1 - x0) / n, grp = 1 + Math.round(Math.abs(x - cx) / (6 * u));
@@ -149,15 +162,24 @@
         win(grp, arch(x, base - 3.5 * u, 1.3 * u, base - 0.3 * u), r() < 0.45);
       }
     }
-    // The tower: shaft, the open lookout, cornice, pyramid roof; the clock. Seen straight on, so no side of
+    // The tower: shaft, the open lookout, cornice, a low hipped roof with its cresting; the clock. Seen straight on, so no side of
     // it shows: no shaded strip down the shaft and no darker half to the roof, which had read as a turned
     // tower under a straight-on lookout, cornice and clock (owner, 2026-09-30: "it looks subtly off").
     const tw = 9 * u, tx0 = cx - tw / 2, shaftTop = base - 30 * u, lookH = 4.4 * u;
     walls += rect(tx0, shaftTop, tw, base - shaftTop);
     walls += rect(tx0 - 0.6 * u, shaftTop - lookH - 0.9 * u, tw + 1.2 * u, 0.9 * u);      // cornice
-    roofs += `M${F(tx0 - 1.4 * u)} ${F(shaftTop - lookH - 0.8 * u)}L${F(cx)} ${F(shaftTop - lookH - 5.6 * u)}L${F(tx0 + tw + 1.4 * u)} ${F(shaftTop - lookH - 0.8 * u)}Z`;
-    let posts = '';
+    // (its roof as every photograph shows it: low and hipped, a white cresting along the ridge, where a
+    // tall pyramid had stood; owner, 2026-09-30)
+    const te = shaftTop - lookH - 0.8 * u;
+    roofs += `M${F(tx0 - 1.4 * u)} ${F(te)}L${F(tx0 + 1.8 * u)} ${F(te - 2.1 * u)}H${F(tx0 + tw - 1.8 * u)}L${F(tx0 + tw + 1.4 * u)} ${F(te)}Z`;
+    for (const f of [0.34, 0.68]) {
+      const a = tx0 - 1.4 * u + 3.2 * u * f, b = tx0 + tw + 1.4 * u - 3.2 * u * f;
+      tiles += rect(a, te - 2.1 * u * f - 0.11 * u, b - a, 0.22 * u);
+    }
+    let posts = rect(tx0 + 1.8 * u, te - 2.55 * u, tw - 3.6 * u, 0.5 * u);
     for (let i = 0; i <= 6; i++) posts += rect(tx0 + (i / 6) * (tw - 0.7 * u), shaftTop - lookH, 0.7 * u, lookH);
+    // a ledge at the lookout's foot and a low rail across its posts, both in front of its glow
+    posts += rect(tx0 - 0.4 * u, shaftTop - 0.25 * u, tw + 0.8 * u, 0.65 * u) + rect(tx0, shaftTop - 1.4 * u, tw, Math.max(1, 0.35 * u));
     const lookout = rect(tx0, shaftTop - lookH, tw, lookH);
     // The clock (owner, 2026-09-30): its face 58% of the shaft's width, as a real tower's is, so it reads
     // at the homepage's size; quarter marks; hour and minute hands keeping Antigua's time (clockAngles(),
@@ -181,12 +203,20 @@
     const door = arch(cx, pTop + 1.6 * u, 6.4 * u, base);
 
     let s = '';
+    const railW = F(Math.max(1, 0.28 * u));
+    // the outer wings, behind: walls, shaded end walls, roofs, eaves, tiles, rails
+    s += `<path class="isl-vwall" d="${back.walls}"/><path class="isl-vshade" d="${shade}"/><path class="isl-vroof" d="${back.roofs}"/>`
+      + `<path class="isl-vshade" d="${back.eaves}"/><path class="isl-vroof2" d="${back.tiles}"/><path class="isl-vrail" d="${back.rails}" stroke-width="${railW}"/>`;
+    // the set-back wall joining the tower to the inner blocks, in shade (the sea had shown between them)
+    s += `<path class="isl-vshade" d="${rect(cx - 6.9 * u, iTop + 0.5 * u, 13.8 * u, base - iTop - 0.5 * u)}"/>`;
     s += `<path class="isl-vwall" d="${walls}"/>`;
-    s += `<path class="isl-vshade" d="${shade}"/>`;
     s += `<path class="isl-vband" d="${band}"/>`;
     s += `<path class="isl-vroof" d="${roofs}"/>`;
-    s += `<path class="isl-vroof2" d="${roofShade}"/>`;
-    s += `<path class="isl-vrail" d="${rails}" stroke-width="${F(Math.max(1, 0.28 * u))}"/>`;
+    // the white gablet in the portico's roof, as on the campus
+    s += `<path class="isl-vwall" d="${polyD([[cx - 1.7 * u, pTop + 0.15 * u], [cx, pTop - 1.05 * u], [cx + 1.7 * u, pTop + 0.15 * u]])}"/>`
+      + `<path class="isl-vroof2" d="${polyD([[cx - 1.15 * u, pTop - 0.05 * u], [cx, pTop - 0.75 * u], [cx + 1.15 * u, pTop - 0.05 * u]])}"/>`;
+    s += `<path class="isl-vshade" d="${eaves}"/><path class="isl-vroof2" d="${tiles}"/>`;
+    s += `<path class="isl-vrail" d="${rails}" stroke-width="${railW}"/>`;
     s += `<path class="isl-vdark" d="${dark}"/>`;
     // the lookout glows; its posts stand in front of the glow
     s += `<path class="f-pulse isl-vwin" style="--i:0" d="${lookout}"/>`;
@@ -214,11 +244,14 @@
     }
     s += `<path class="isl-vspill" d="M${F(cx - 3.2 * u)} ${F(base)}H${F(cx + 3.2 * u)}L${F(cx + 9 * u)} ${F(Math.min(H, ey))}H${F(cx - 9 * u)}Z" fill="url(#islvspill)"/>`;
     const lampH = 6.2 * u;
-    let postsD = '', glows = '';
+    let postsD = '', glows = '', heads = '';
     const lamps = [-0.93, -0.62, 0.62, 0.93];
     lamps.forEach((f, i) => {
       const lx = cx + f * erx, ly = ey - ery * Math.sqrt(Math.max(0, 1 - f * f)) - 1.2 * u;
-      postsD += rect(lx - 0.22 * u, ly - lampH, 0.44 * u, lampH);
+      postsD += rect(lx - 0.22 * u, ly - lampH, 0.44 * u, lampH)
+        + `M${F(lx - 0.8 * u)} ${F(ly - lampH - 0.45 * u)}L${F(lx)} ${F(ly - lampH - 1.1 * u)}L${F(lx + 0.8 * u)} ${F(ly - lampH - 0.45 * u)}Z`;
+      const hr = (i === 1 ? 0.75 : 0.6) * u;   // (by Day the lamp's head, unlit, where its bulb shows after dark)
+      heads += `M${F(lx - hr)} ${F(ly - lampH)}a${F(hr)} ${F(hr)} 0 1 0 ${F(2 * hr)} 0a${F(hr)} ${F(hr)} 0 1 0 ${F(-2 * hr)} 0Z`;
       if (i === 1) {
         glows += `<circle cx="${F(lx)}" cy="${F(ly - lampH)}" r="${F(3.4 * u)}" fill="url(#islvlamp)"/>`
           + `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly - lampH)}" r="${F(0.75 * u)}"/>`;
@@ -227,7 +260,7 @@
           + `<circle class="f-pulse" cx="${F(lx)}" cy="${F(ly - lampH)}" r="${F(0.6 * u)}"/>`;
       }
     });
-    s += `<path class="isl-vdark" d="${postsD}"/>` + `<g class="isl-vlamps">${glows}</g>`;
+    s += `<path class="isl-vdark" d="${postsD}"/>` + `<g class="isl-vlamps">${glows}</g>` + `<g class="isl-ydet"><path class="isl-vdark" d="${heads}"/></g>`;
 
     // Palms: two tall ones flanking the portico, smaller ones along the front. The tall two stand far
     // enough out, and low enough, that their fronds keep clear of the clock's face (2026-09-30).

@@ -759,11 +759,11 @@
 /* The campus's materials (from the owner's photographs of AUA): cream walls, a terracotta ground
    floor, red roofs and white verandas, as dusk shows them (light scheme) and as night does (dark). */
 .isl {
-  --isl-vwall: #8b97a6; --isl-vshade: #707d8e; --isl-vband: #7b5a5a; --isl-vroof: #8e3d47;
+  --isl-vwall: #8b97a6; --isl-vshade: #55524d; --isl-vband: #7b5a5a; --isl-vroof: #8e3d47;
   --isl-vroof2: #74323d; --isl-vdark: #34475d; --isl-vdrive: #17324c; --isl-vrail: rgba(236, 239, 243, 0.55);
 }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
-  --isl-vwall: #2f3f54; --isl-vshade: #253449; --isl-vband: #3b2c36; --isl-vroof: #4e2533;
+  --isl-vwall: #2f3f54; --isl-vshade: #20242b; --isl-vband: #3b2c36; --isl-vroof: #4e2533;
   --isl-vroof2: #3e1d2a; --isl-vdark: #17243a; --isl-vdrive: #0d1b2d; --isl-vrail: rgba(200, 212, 228, 0.3);
 }
 .isl .isl-vwall { fill: var(--isl-vwall); }
