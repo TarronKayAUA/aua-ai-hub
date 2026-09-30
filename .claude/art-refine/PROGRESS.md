@@ -155,7 +155,7 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### week-calendar
 
-- [ ] #4 fix v4 `week-calendar-1`: The Sunset clock shows two hour hands
+- [x] #4 fix v4 `week-calendar-1`: The Sunset clock shows two hour hands
 - [ ] #30 fix v3 `week-calendar-3`: Event dots collide with a crossed-off day and the ring
 - [ ] #33 fix v3 `week-calendar-2`: The potted plant is drawn in the landscape's night colour
 - [ ] #40 fix v3 `week-calendar-7`: The mug keeps its evening white at Night
@@ -187,7 +187,7 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### court-house
 
-- [ ] #3 fix v4 `court-house-1`: String course crosses the shaded side face lit
+- [x] #3 fix v4 `court-house-1`: String course crosses the shaded side face lit
 - [ ] #7 fix v4 `court-house-4`: The sea shows between the town houses down to the street
 - [ ] #38 fix v3 `court-house-3`: The railing bars the lit entrance
 - [ ] #54 add v3 `court-house-2`: Quoins returning round the corner onto the side face

@@ -1221,6 +1221,8 @@
     s += `<path class="isl-vmul" d="${arches}${dark}" stroke-width=".6" fill="none"/>`;
     s += `<path class="isl-vcourse" d="${vous}" stroke-width="1.2"/><path class="isl-vstone" d="${keys}"/>`;
     // the upper floor, the council room: five sash windows, lintels and sills, glazing bars; lit last
+    // the string course turns the corner too, like the cornice and parapet above it
+    s += `<path class="isl-vpshade" d="${turn(mid - Y(0.004), mid + Y(0.016), Y(0.006))}"/>`;
     let sash = '', sashDark = '', trim = '', bars = '';
     for (let i = 0; i < 5; i++) {
       const cx = x0 + bw * (i + 0.5), sw = bw * 0.36, sTop = top + Y(0.085), sBot = mid - Y(0.045);
@@ -2273,7 +2275,9 @@
     const hand = (h, m) => { const ah = ((h % 12) + m / 60) / 12 * Math.PI * 2, am = m / 60 * Math.PI * 2;
       return `M${F(kx)} ${F(ky)}L${F(kx + Math.sin(ah) * kr * 0.42)} ${F(ky - Math.cos(ah) * kr * 0.42)}M${F(kx)} ${F(ky)}L${F(kx + Math.sin(am) * kr * 0.64)} ${F(ky - Math.cos(am) * kr * 0.64)}`; };
     for (const [cls, h, m] of [['isl-a', 6, 5], ['isl-y', 10, 30], ['isl-s', 18, 30], ['isl-d', 19, 30], ['isl-n', 22, 0]]) {
-      s += `<path class="${cls} isl-chand" d="${hand(h, m)}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
+      const dusk = cls === 'isl-d';
+      const p = `<path class="${dusk ? 'isl-chand' : cls + ' isl-chand'}" d="${hand(h, m)}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
+      s += dusk ? `<g class="isl-lq" data-q="d">${p}</g>` : p;
     }
     s += `<circle class="isl-tiron" cx="${F(kx)}" cy="${F(ky)}" r="${F(Math.max(1, Y(0.01)))}"/>`;
     // 3. The shelf's things: the week's paper, folded, its headline and columns; a cup; a small plant.
@@ -2304,6 +2308,8 @@
     const f = newsFrame(W, H, 1);
     let s = windowView(W, H, f, y0, r, 1) + windowWall(W, H, f, 'islhwallg', 1);
     // the blinds, lowered over the window's upper half, slats and cords
+    // (the dusk hand hangs in its own version group: isl-d is hidden only at Dawn, Day and Night, so at
+    // Sunset it showed beside the sunset hand and the clock had two hour hands, owner's review 2026-09-30)
     let slats = '';
     for (let y = f.wT + Y(0.02); y < f.wT + (f.wB - f.wT) * 0.4; y += Y(0.024)) slats += rect(f.wx0 + Y(0.01), y, f.ww - Y(0.02), Y(0.014));
     s += `<path class="isl-hslat" d="${slats}"/><path class="isl-hcord" d="M${F(f.wx0 + f.ww * 0.2)} ${F(f.wT)}V${F(f.wT + (f.wB - f.wT) * 0.5)}M${F(f.wx0 + f.ww * 0.8)} ${F(f.wT)}V${F(f.wT + (f.wB - f.wT) * 0.46)}" stroke-width="${F(Math.max(0.6, Y(0.004)))}"/>`;
