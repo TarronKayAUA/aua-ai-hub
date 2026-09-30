@@ -177,10 +177,7 @@
 .isl.isl-hero:is([data-sky="dawn"], [data-sky="day"], [data-sky="sunset"]) .isl-shade2 { display: inline; }
 .isl.isl-hero[data-sky="day"] {
   --isl-sky0: #1d5a91; --isl-sky1: #2a68a0; --isl-sky2: #6aa3cf; --isl-sky3: #a9cde6; --isl-hz: #d9e8f0;
-  --isl-net: rgba(255, 255, 255, 0.42); --isl-node: rgba(255, 255, 255, 0.85);
 }
-/* the network's signal stays light on a daylight sky (the campus windows keep the Day's dark glass) */
-.isl.isl-hero[data-sky="day"] .isl-pulse { --isl-pulse: #fff1c8; }
 .isl.isl-hero[data-sky="dawn"] {
   --isl-sky0: #2b3166; --isl-sky1: #4b4988; --isl-sky2: #8f7cb2; --isl-sky3: #d4a4c2;
 }
@@ -278,7 +275,6 @@
 .isl .s-hz { stroke: var(--isl-hzline); fill: none; }
 .isl .s-net { stroke: var(--isl-net); fill: none; }
 .isl .s-node { stroke: var(--isl-node); fill: none; }
-.isl .s-pulse { stroke: var(--isl-pulse); fill: none; }
 .isl .s-rim { stroke: var(--isl-rim); fill: none; stroke-linecap: round; }
 
 /* --- The hero ----------------------------------------------------------------
@@ -374,20 +370,12 @@
 }
 
 /* --- Motion: one pass on the home page ------------------------------------------ */
-.isl-hero .isl-pulse {
-  opacity: 0;
-}
-
 .isl-hero.isl-run {
   animation: isl-in 0.5s ease-out both;
 }
 
-.isl-hero.isl-run .isl-pulse {
-  animation: isl-pulse 0.8s ease-in-out calc(1s + var(--i, 0) * 0.32s) 1 both;
-}
-
 /* The frigatebird (the bold desktop hero only) glides a few pixels into place on the east wind and
-   stops, its wings held still: frigatebirds soar. It lands before the signal's last layer fades,
+   stops, its wings held still: frigatebirds soar. It lands before the campus's last windows light,
    so the still frame that follows is the bird's resting place. */
 .isl-hero .isl-bird {
   transform-origin: 50% 50%;
@@ -405,11 +393,6 @@
   from { transform: translate(-14px, 4px) rotate(-3deg); }
 }
 
-@keyframes isl-pulse {
-  0% { opacity: 0; }
-  35% { opacity: 1; }
-  100% { opacity: 0; }
-}
 
 .isl.isl-paused,
 .isl.isl-paused * {

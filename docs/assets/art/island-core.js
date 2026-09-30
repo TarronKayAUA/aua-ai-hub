@@ -37,8 +37,9 @@
  *   north-west horizon to 27 degrees in the west-south-west and down to the south-south-east, drawn as a
  *   soft blurred band whose width and brightness follow the real galaxy, mottled along its length.
  *   Another painter's licence: at the end of nautical twilight the eye would not see it.
- * - The network is a drawn figure, not stars. Its one pulse after the page loads is a signal passing
- *   forward through it, layer by layer.
+ * - (A network of points and lines, with one signal pulse passing through it, stood in the hero's sky
+ *   until 2026-09-30, when the owner archived it: everything else had become a real place under a real
+ *   sky. See buildHero.)
  *
  * TWO HEROES FROM ONE VIEW (2026-09-26: bold where visitors arrive, calm where they work)
  * - Quiet, on phones and tablets: the view as described above, laid behind the full-width words.
@@ -323,15 +324,13 @@
   }
 
   /* ------------------------------------------------------------- the sky */
-  // `near` (optional): a test for the points a drawing keeps clear that are not boxes, such as the homepage
-  // network's nodes and lines, so stars keep off the drawing itself rather than a rectangle round it.
-  function stars(v, m, boxes, cls, near) {
+  function stars(v, m, boxes, cls) {
     // Seven steps of magnitude, from the brightest (a soft halo too) to the naked-eye limit; stars
     // brighter than 3.5 show their colour (B-V: blue-white, white, pale yellow, orange), as the eye sees
     // colour only in the brighter ones.
     const w = [3.0, 2.4, 1.9, 1.55, 1.3, 1.1, 0.95], a = [1, 0.97, 0.9, 0.8, 0.68, 0.56, 0.46];
     const g = {}, halo = [];
-    const off = (x, y) => hits(boxes, x, y, x, y, 6) || (near && near(x, y));
+    const off = (x, y) => hits(boxes, x, y, x, y, 6);
     for (const [az, alt, mag, bv] of SKY[m].st) {
       const x = v.x(az), y = v.y(alt);
       if (x < 2 || x > v.W - 2 || y < 2 || y > v.y0 - 3 || off(x, y)) continue;
@@ -526,77 +525,6 @@
   /* Give every id in a drawing its own prefix, so several drawings can share a page. */
   const own = (s, key) => s.replace(/id="isl/g, `id="isl${key}`).replace(/url\(#isl/g, `url(#isl${key}`);
 
-  /* ------------------------------------------------------------- the network
-     Points in layers, each joined only to the next layer, drawn in empty sky. The pulse layers (one per
-     layer) light in turn, once, after the page loads. */
-  function network(box, sizes, seed, ring) {
-    const [bx, by, bw, bh] = box, L = sizes.length, r = rng(seed);
-    const layers = sizes.map((n, li) => Array.from({ length: n }, (_, j) => {
-      const s = (j + 0.5) / n + (r() - 0.5) * (0.55 / n), a = li / (L - 1) + (r() - 0.5) * (0.3 / L);
-      return [bx + clamp(a, 0, 1) * bw, by + clamp(s, 0.05, 0.95) * bh];
-    }).sort((p, q) => p[1] - q[1]));
-    const edges = [];
-    for (let li = 0; li < L - 1; li++) {
-      const P = layers[li], Q = layers[li + 1], list = [];
-      const map = (i) => (P.length === 1 ? (Q.length - 1) / 2 : i * (Q.length - 1) / (P.length - 1));
-      P.forEach((_, i) => {
-        const f = map(i), j = Math.round(f), k = f > j ? j + 1 : j - 1;
-        list.push([i, j]);
-        if (k >= 0 && k < Q.length && Math.abs(f - j) > 0.2) list.push([i, k]);
-      });
-      Q.forEach((_, j) => {
-        if (list.some(([, b]) => b === j)) return;
-        let best = 0, bd = 1e9;
-        P.forEach((_, i) => { const d = Math.abs(map(i) - j); if (d < bd) { bd = d; best = i; } });
-        list.push([best, j]);
-      });
-      edges.push([...new Map(list.map((e) => [e.join(','), e])).values()].map(([i, j]) => [P[i], Q[j]]));
-    }
-    const seg = (list) => list.map(([a, b]) => `M${F(a[0])} ${F(a[1])}L${F(b[0])} ${F(b[1])}`).join('');
-    const rings = (list, rr) => list.map(([x, y]) => `M${F(x - rr)} ${F(y)}a${rr} ${rr} 0 1 0 ${F(2 * rr)} 0a${rr} ${rr} 0 1 0 ${F(-2 * rr)} 0`).join('');
-    // What the stars keep clear of: a little room round each node and along each line, so no star is
-    // taken for a node or strung on a line; elsewhere the sky runs on through the network (owner,
-    // 2026-09-30: its whole box had been left without stars, a dark rectangle in the sky).
-    const nodes = layers.flat(), lines = edges.flat(), nodeR = ring + 7, lineR = 3.5;
-    const toSeg = (x, y, [a, b]) => {
-      const dx = b[0] - a[0], dy = b[1] - a[1], t = clamp(((x - a[0]) * dx + (y - a[1]) * dy) / (dx * dx + dy * dy || 1), 0, 1);
-      return Math.hypot(x - a[0] - t * dx, y - a[1] - t * dy);
-    };
-    const near = (x, y) => nodes.some(([nx, ny]) => Math.hypot(x - nx, y - ny) < nodeR) || lines.some((l) => toSeg(x, y, l) < lineR);
-    return {
-      near,
-      base: `<path class="s-net" d="${seg(edges.flat())}" stroke-width=".8"/><path class="s-node" d="${rings(layers.flat(), ring)}" stroke-width="1"/>`,
-      pulses: layers.map((list, li) => (li ? `<path class="s-pulse" d="${seg(edges[li - 1])}" stroke-width="1.3"/>` : '')
-        + `<path class="f-pulse" d="${rings(list, ring + 1.2)}"/>`),
-      box: [bx - 10, by - 10, bx + bw + 10, by + bh + 10],
-    };
-  }
-  /* Room for the network: the widest window in a band of sky holding the fewest bright real stars
-     or planets (in either scheme). */
-  function netPlace(v, band, boxes) {
-    const [x0, y0, x1, y1] = band;
-    if (x1 - x0 < 90 || y1 - y0 < 26) return null;
-    const bright = [];
-    for (const m of ['d', 'n']) {
-      for (const [az, alt, mag] of SKY[m].st) if (mag < 2.8) bright.push([v.x(az), v.y(alt)]);
-      for (const [, az, alt] of SKY[m].pl) bright.push([v.x(az), v.y(alt)]);
-      const [mx, my, mr] = moonBox(v, m); bright.push([mx, my, mr]);
-    }
-    let best = null;
-    for (let w = Math.min(300, x1 - x0); w >= 90; w -= 15) {
-      const h = Math.min(y1 - y0, Math.max(26, w * 0.28)), y = y0 + (y1 - y0 - h) / 2;
-      for (let x = x0; x + w <= x1; x += 8) {
-        if (hits(boxes, x, y, x + w, y + h, 10)) continue;
-        const lt = landTop(v, x - 10, x + w + 10);
-        if (lt !== null && y + h > lt - 12) continue;
-        const n = bright.filter(([sx, sy, sr = 0]) => sx > x - 12 - sr && sx < x + w + 12 + sr && sy > y - 12 - sr && sy < y + h + 12 + sr).length;
-        const score = w / 50 - n * 5 - Math.abs(x + w / 2 - (x0 + x1) / 2) / 500;
-        if (!best || score > best.score) best = { score, box: [x, y, w, h] };
-      }
-    }
-    return best && best.box;
-  }
-
   /* ================================================================== HERO */
   function measure(host) {
     const hb = host.getBoundingClientRect();
@@ -673,8 +601,8 @@
     return best ? best.v : null;
   }
 
-  /* The frigatebird's place: open sky right of the words, clear of the Moon, the planets and the
-     network in both schemes and at least 34 px above the hills; of the places that qualify, the one
+  /* The frigatebird's place: open sky right of the words, clear of the Moon and the planets in both
+     schemes and at least 34 px above the hills; of the places that qualify, the one
      nearest two thirds of the way across that sky and a little under half way up. */
   function birdPlace(v, col, avoid, span) {
     const [bx0, by0, bx1, by1] = BIRD.box, w = span, h = (by1 - by0) * (span / (bx1 - bx0));
@@ -736,18 +664,10 @@
     // A bold card as narrow as 596 px (1100 px windows) is still drawn as a desktop card, not a band.
     const v = solve(M), bold = !!v.bold, phone = !bold && banded(M), sea = H - v.y0;
     const words = M.lines.concat(M.word ? [M.word] : [], M.search ? [M.search] : []);
-    // the network: in the sky beside the wordmark, clear of the Moon, Venus and the coast
-    let right = W - (phone ? 72 : 24);
-    const shown = (x, y) => x > 0 && x < W && y > 0 && y < v.y0;
-    for (const m of ['d', 'n']) {
-      const [mx, my, mr] = moonBox(v, m);
-      if (shown(mx, my)) right = Math.min(right, mx - mr - 36);
-      for (const [, az, alt] of SKY[m].pl) if (shown(v.x(az), v.y(alt))) right = Math.min(right, v.x(az) - 30);
-    }
-    const top = M.lines.reduce((a, b) => Math.min(a, b[1]), v.y0);
-    const band = [(M.word ? M.word[2] : 0) + (phone ? 18 : 30), phone ? 6 : 10, right, Math.min(top, v.y0) - (phone ? 20 : 14)];
-    const nb = netPlace(v, band, words);
-    const net = nb ? network(nb, phone || nb[2] < 170 ? [2, 3, 2, 1] : [3, 4, 3, 1], 7, phone ? 1.6 : 2) : null;
+    // (The network of points and lines that stood in the sky beside the wordmark, with its one signal
+    // pulse, was archived on 2026-09-30, the owner: once everything else was a real place under a real
+    // sky, it "does seem somewhat out of place now". It is in git history before that date, network() and
+    // netPlace(); DESIGN.md 19.6 records it. The open sky beside the words is now simply sky.)
     // The frigatebird, in the bold hero only: about 5.6 degrees of wing at this scale. Its silhouette is
     // solid, so the stars behind it are simply covered, where it rests and along its short glide
     // (layout-art.css, isl-glide), as they are behind the Curtain Bluff bird; the sky is not cleared
@@ -756,8 +676,9 @@
     // American University of Antigua stands right of the words in place of the Curtain Bluff coast.
     const scene = bold && A.heroScene ? A.heroScene(v, colOf(M) + 28, W - 6, H) : null;
     const bird = bold && BIRD
-      ? birdPlace(v, colOf(M), words.concat(net ? [net.box] : [], skyObjects(v, words), scene ? [scene.box] : []), clamp(5.6 * v.ppd, 56, 100)) : null;
-    const clear = words.concat(net ? [net.box] : [], bird ? [[bird.x - 16, bird.y, bird.x + bird.w, bird.y + bird.h + 5]] : []);
+      ? birdPlace(v, colOf(M), words.concat(skyObjects(v, words), scene ? [scene.box] : []), clamp(5.6 * v.ppd, 56, 100)) : null;
+    // what Dawn's and Day's clouds keep clear of: the words and the bird
+    const clear = words.concat(bird ? [[bird.x - 16, bird.y, bird.x + bird.w, bird.y + bird.h + 5]] : []);
     const reflH = Math.min(sea - 1, phone ? 14 : 5.5 * v.ppd);
     const svg = `<svg class="isl-o isl-art" width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${defs(W, v.y0, H)}`
       + `<rect width="${F(W)}" height="${v.y0 + 1}" fill="url(#islskyg)"/>`
@@ -765,8 +686,8 @@
       + `<rect y="${F(v.y0 - 2.4 * v.ppd)}" width="${F(W)}" height="${F(2.4 * v.ppd)}" fill="url(#islhazeg)"/>`
       + glowSky(v, 'd', 'isl-d') + glowSky(v, 'n', 'isl-n')
       + (bold ? shade(v, colOf(M)) : '')
-      // the stars keep clear of the words (for their contrast) and of the network's nodes and lines only
-      + stars(v, 'd', words, 'isl-d isl-dstars', net && net.near) + stars(v, 'n', words, 'isl-n', net && net.near)
+      // the stars keep clear of the words only, for their contrast
+      + stars(v, 'd', words, 'isl-d isl-dstars') + stars(v, 'n', words, 'isl-n')
       + planets(v, 'd', words, 'isl-d') + planets(v, 'n', words, 'isl-n')
       + moon(v, 'd', words, 'isl-d') + moon(v, 'n', words, 'isl-n')
       + (A.heroSky ? A.heroSky(v, W, H, colOf(M) + 28, clear.concat(skyObjects(v, words)), !scene) : '')
@@ -778,11 +699,6 @@
       + (scene ? scene.svg : land(v, 0, W, 11, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]]))
       + '</svg>';
     let html = own(svg, 'h');
-    if (net) {
-      const layer = (inner, cls, style = '') => `<svg class="isl-o ${cls}"${style} width="${F(W)}" height="${F(H)}" viewBox="0 0 ${F(W)} ${F(H)}">${inner}</svg>`;
-      html += layer(net.base, 'isl-net');
-      net.pulses.forEach((p, i, all) => { html += layer(p, `isl-pulse${i === all.length - 1 ? ' isl-last' : ''}`, ` style="--i:${i}"`); });
-    }
     if (bird) html += birdLayer(bird);
     return { html, v };
   }
@@ -855,13 +771,18 @@
     host._isl = root;
     let last = '', started = false, t0 = 0;
     // The pass runs once. A repaint once it is under way (a resize, fonts arriving late), or anything
-    // after it ends, shows the still frame instead of starting the signal again.
+    // after it ends, shows the still frame instead of starting the pass again.
     const still = () => { root.classList.remove('isl-run'); root.classList.add('isl-still'); };
     const paused = () => {
       root.classList.toggle('isl-paused', document.hidden);
       if (!document.hidden && !t0) t0 = performance.now();
     };
-    root.addEventListener('animationend', (e) => { if (e.target.classList.contains('isl-last')) still(); });
+    // It ends when its last light has come on (the campus's last windows, isl-vlast), or by Day, when no
+    // light comes on, when the frigatebird has glided into place; a timer ends it in any case (below).
+    root.addEventListener('animationend', (e) => {
+      const c = e.target.classList;
+      if (c.contains('isl-vlast') || (root.dataset.sky === 'day' && c.contains('isl-bird'))) still();
+    });
     const paint = () => {
       const M = measure(host);
       const key = [M.W, M.H, M.bold ? 1 : 0].concat(M.lines.flat(), M.search || []).map(Math.round).join(',');
@@ -876,13 +797,17 @@
         if (A.onHero) A.onHero();
       }
       if (!started) {
-        // One pass: the picture fades in and one signal crosses the network (in the bold hero the
-        // frigatebird glides into place meanwhile), done about 3.5 s after the page loads. With
-        // motion reduced, or if the script arrived late, the still frame at once.
+        // One pass: the picture fades in; in the bold hero the frigatebird glides into place and the
+        // campus's windows light in turn, done about 4 s after the page loads (the campus arrives with
+        // island-vignettes.js, usually within the pass). With motion reduced, or if the script arrived
+        // late, the still frame at once.
         started = true;
         const late = performance.now() > 1900 && !document.hidden;
-        if (reduce.matches || late || !root.querySelector('.isl-pulse')) still();
-        else root.classList.add('isl-run');
+        if (reduce.matches || late || !built) still();
+        else {
+          root.classList.add('isl-run');
+          setTimeout(() => { if (root.classList.contains('isl-run')) still(); }, built.v.bold ? 5000 : 800);
+        }
       }
     };
     paused();
