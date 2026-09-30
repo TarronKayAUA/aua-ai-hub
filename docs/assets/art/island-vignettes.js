@@ -2389,7 +2389,7 @@
 
   /* THE DISH AND THE NETWORK (the General AI page's head; owner, 2026-09-29: art tied to the title at a
      glance, "fantastical or sci-fi" where it fits better): a radio dish on a headland over the sea, turned
-     to the sky, where a constellation drawn as a neural network (the homepage hero's own network) receives
+     to the sky, where a constellation drawn as a neural network (as the homepage hero's was, until 2026-09-30) receives
      its beam; the network's nodes light layer by layer, the output last, in the page's hue. A small
      station with lit windows at the dish's foot. Sized from the card's height. */
   function dishNet(W, H, v) {
@@ -2831,7 +2831,7 @@
   };
 
   /* The homepage hero's Dawn, Day and Sunset (island-core.js, buildHero): the section pictures' clouds
-     and Sun, the clouds kept right of the words' column and clear of every line, the network, the bird,
+     and Sun, the clouds kept right of the words' column and clear of every line, the bird,
      the Moon and Venus, so white text keeps its contrast against the sky. */
   A.heroSky = function (v, W, H, x0, clear, withDefs) {
     // the phone and tablet hero (no campus scene) sets its words on the horizon itself and never fetches this
