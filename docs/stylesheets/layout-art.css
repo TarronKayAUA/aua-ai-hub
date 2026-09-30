@@ -631,6 +631,53 @@
 .isl .isl-bnote { fill: var(--isl-lpage); }
 .isl .isl-bink { stroke: #3a3f4a; stroke-opacity: 0.45; fill: none; }
 .isl .isl-bpin { stroke: var(--isl-lbottle); fill: none; stroke-linecap: round; }
+/* The news pages (round 7, wave 2, 2026-09-29): the interiors share the library's tokens; their own are
+   the hospital's curtain and blanket, the skeleton's bone, the lecture theatre's seats and lit screen.
+   Each picture's one accent is in the page's hue (the kind line in the light scheme, the kind color in
+   the dark): the calendar's ring, the monitor's trace, the heart on the screen, the network's output. */
+.isl {
+  --isl-hcurt: #6f8f8c; --isl-hblank: #8aa6c2; --isl-bone: #cfc7b3; --isl-mseat: #3a3f55; --isl-mscr: #eef2f6;
+}
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
+  --isl-hcurt: #2e3d3c; --isl-hblank: #34465a; --isl-bone: #8a8474; --isl-mseat: #151823; --isl-mscr: #c9d3df;
+}
+.isl[data-sky="day"] { --isl-hcurt: #a9d0cb; --isl-hblank: #b9d3ec; --isl-bone: #efe8d6; --isl-mseat: #4f5b86; --isl-mscr: #fbfcfd; }
+.isl[data-sky="dawn"] { --isl-hcurt: #8e99a6; --isl-hblank: #a3adc9; --isl-bone: #d6cdcc; --isl-mseat: #464a66; }
+.isl[data-sky="sunset"] { --isl-hcurt: #a39a85; --isl-hblank: #b5a9b4; --isl-bone: #e3d0b3; --isl-mseat: #4f4456; }
+.isl :is(.isl-cring, .isl-hecg, .isl-mheart, .isl-mheart2) { stroke: var(--k-line, var(--isl-rim)); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+[data-md-color-scheme="slate"] .isl :is(.isl-cring, .isl-hecg, .isl-mheart, .isl-mheart2) { stroke: var(--k, var(--isl-rim)); }
+.isl .isl-mheart { fill: var(--k-line, var(--isl-rim)); fill-opacity: 0.18; }
+[data-md-color-scheme="slate"] .isl .isl-mheart { fill: var(--k, var(--isl-rim)); }
+.isl .isl-cband { fill: var(--isl-lbk2); }
+.isl .isl-cgrid { stroke: #6b6f78; stroke-opacity: 0.45; fill: none; }
+.isl .isl-cmark { stroke: #3a3f4a; stroke-opacity: 0.7; fill: none; stroke-linecap: round; }
+.isl .isl-chand { stroke: #2b2f38; fill: none; stroke-linecap: round; }
+.isl .isl-cshade { fill: var(--isl-lbronze); }
+.isl .isl-hslat { fill: var(--isl-lframe); fill-opacity: 0.92; }
+.isl .isl-hcord { stroke: #8d939c; fill: none; }
+.isl .isl-hrail { stroke: var(--isl-lalu); fill: none; }
+.isl .isl-hcurtain { fill: var(--isl-hcurt); }
+.isl .isl-hfold { stroke: #000000; stroke-opacity: 0.16; fill: none; stroke-linecap: round; }
+.isl .isl-hframe { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; }
+.isl .isl-hmat { fill: var(--isl-lpage); }
+.isl .isl-hblanket { fill: var(--isl-hblank); }
+.isl .isl-hbag { fill: #e8f2f7; fill-opacity: 0.55; stroke: var(--isl-lalu); stroke-width: 0.8; }
+.isl .isl-hfluid { fill: #f3ecc4; fill-opacity: 0.8; }
+.isl .isl-hscreen { fill: #0c1822; }
+.isl .isl-hread { fill: #5fd3a8; fill-opacity: 0.85; }
+.isl .isl-hread2 { stroke: #6fb8e0; fill: none; }
+.isl .isl-mscreen { fill: var(--isl-mscr); }
+.isl .isl-mnote { stroke: #7f8794; stroke-opacity: 0.6; fill: none; stroke-linecap: round; }
+.isl .isl-mstand { stroke: var(--isl-tiron); fill: none; stroke-linecap: round; }
+.isl .isl-mbone { stroke: var(--isl-bone); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.isl .isl-mbonef { fill: var(--isl-bone); }
+.isl .isl-mhole { stroke: #3a3730; fill: none; stroke-linecap: round; }
+.isl .isl-mseat { fill: var(--isl-mseat); }
+.isl .isl-mseat2 { fill: var(--isl-mseat); filter: brightness(0.82); }
+.isl .isl-dtruss { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; }
+.isl .isl-ddish { fill: var(--isl-lframe); }
+.isl .isl-ddish2 { stroke: var(--isl-lalu); fill: none; }
+.isl .isl-nnode { fill: var(--isl-node); }
 [data-md-color-scheme="slate"] .isl :is(.isl-pbubble, .isl-pline, .isl-pdot, .isl-pring) { stroke: var(--k, var(--isl-rim)); }
 [data-md-color-scheme="slate"] .isl .isl-pbubble { fill: #e9ecf5; fill-opacity: 0.82; }
 .isl .isl-tbulb { fill: var(--isl-tbulb); }

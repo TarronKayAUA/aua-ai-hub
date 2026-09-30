@@ -2162,6 +2162,283 @@
     return `<g style="--isl-vstep:.4s">${s}</g>`;
   }
 
+  /* Shared by the news pages' interiors (round 7, wave 2): the room's wall with one window cut out of it,
+     so build()'s sky and whatever the piece draws outside show through; the reveal's shadow on the side
+     `side` (-1 left, 1 right), the frame with one mullion and one transom, and the sill. `grad` is the
+     id of the piece's wall gradient (the library's wall tokens). */
+  function windowWall(W, H, f, grad, side = -1) {
+    const { wx0, wx1, ww, wT, wB } = f, rv = Math.max(2, H * 0.025), jx = side < 0 ? wx0 : wx1;
+    return `<defs><linearGradient id="${grad}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lwall0"/><stop offset="1" class="st-lwall1"/></linearGradient></defs>`
+      + `<path fill="url(#${grad})" fill-rule="evenodd" d="${rect(-2, -2, W + 4, H + 4)}${rect(wx0, wT, ww, wB - wT)}"/>`
+      + `<path class="isl-lsidew" d="${polyD([[jx, wT], [jx - side * rv, wT + rv], [jx - side * rv, wB], [jx, wB]])}${rect(wx0, wB - rv, ww, rv)}"/>`
+      + `<path class="isl-lframe" d="${rect(wx0, wT, ww, wB - wT)}" stroke-width="${F(Math.max(1.5, H * 0.018))}"/>`
+      + `<path class="isl-lframe" d="M${F(wx0 + ww * 0.5)} ${F(wT)}V${F(wB)}M${F(wx0)} ${F(wT + (wB - wT) * 0.42)}H${F(wx1)}" stroke-width="${F(Math.max(1, H * 0.011))}"/>`
+      + `<path class="isl-lsill" d="${rect(wx0 - H * 0.02, wB, ww + H * 0.04, Math.max(2, H * 0.022))}"/>`;
+  }
+  // The view out of a round-7 window: far hills on the horizon rimmed by the afterglow, mist at their
+  // foot, a few lights on them with their columns on the water, and a boat or two at anchor.
+  function windowView(W, H, f, y0, r, boats = 2) {
+    const { wx0, ww } = f, Y = (k) => k * H, lights = [];
+    const hill = [[0, 0.012], [0.16, 0.05], [0.3, 0.075], [0.44, 0.05], [0.6, 0.066], [0.78, 0.03], [1, 0.012]].map(([x, h]) => [wx0 + ww * x, y0 - Y(h)]);
+    const farLand = `<path class="f-isl" d="${polyD([[wx0 - 2, y0 + 1], ...hill, [wx0 + ww + 2, y0 + 1]])}${scrubLine(hill, 2, 0.5, 1.1, r)}"/>`;
+    let s = farLand + `<path class="s-rim" d="${lineD(hill.map(([x, y]) => [x, y + 0.5]))}" stroke-width="1" stroke-opacity=".3"/>` + mirrored(y0, farLand, 0.16) + mist(wx0, y0, ww, Y(0.05), 0.45);
+    for (let i = 0; i < 6; i++) lights.push([wx0 + ww * (0.06 + r() * 0.88), y0 - Y(0.006 + r() * 0.03)]);
+    let hulls = '', masts = '';
+    for (const [fx, fy, k] of [[0.3, 0.08, 0.8], [0.72, 0.12, 1]].slice(0, boats)) {
+      const bx = wx0 + ww * fx, by = y0 + Y(fy), hw = Y(0.04) * k, mh = Y(0.22) * k;
+      hulls += `M${F(bx - hw)} ${F(by - Y(0.015) * k)}H${F(bx + hw)}L${F(bx + hw * 0.72)} ${F(by)}H${F(bx - hw * 0.78)}Z`;
+      masts += `M${F(bx)} ${F(by - Y(0.015) * k)}V${F(by - mh)}`;
+      lights.push([bx, by - mh]);
+      s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.08, 0.16, 0.3]);
+    }
+    s += `<path class="isl-vhull" d="${hulls}"/><path class="isl-vmast" d="${masts}" stroke-width=".8"/>`;
+    return s + `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
+  }
+  const newsFrame = (W, H, side = 1) => {
+    const ww = clamp(H * 0.95, W * 0.18, W * 0.26), wx0 = side > 0 ? W * 0.955 - ww : W * 0.045;
+    return { wx0, wx1: wx0 + ww, ww, wT: H * 0.1, wB: H * 0.6, hz: H * 0.45 };
+  };
+
+  /* THIS WEEK'S CALENDAR (the This Week page's head; owner, 2026-09-29: art tied to the title at a
+     glance): a wall calendar with this week's row ringed in the page's hue, its past days crossed off and
+     today circled; a wall clock beside it showing the hour of the version (a little after six at Dawn,
+     half past ten by Day, half past six at Sunset, half past seven at Dusk, ten at Night); a shelf with the
+     week's paper folded on it and a cup; a sconce, lit from Dawn to Night; the window at the right onto
+     the harbour, facing the Sun's setting bearing. Face on, sized from the card's height. The harbour's
+     lights come on, then the sconce, and the ring is drawn last. */
+  function weekCalendar(W, H, v) {
+    const y0 = v.y0, X = (k) => k * W, Y = (k) => k * H, r = rng(811);
+    const f = newsFrame(W, H, 1);
+    let s = windowView(W, H, f, y0, r, 2) + windowWall(W, H, f, 'islcwallg', 1);
+    // the shelf along the foot of the wall, its bracket shadows
+    const sh = Y(0.8), sh1 = f.wx0 - Y(0.06);
+    s += `<path class="isl-tdrop" d="${rect(X(0.03), sh + Y(0.03), sh1 - X(0.03), Y(0.03))}"/><path class="isl-lwood" d="${rect(X(0.03), sh, sh1 - X(0.03), Y(0.032))}"/>`
+      + `<path class="isl-lwood2" d="${rect(X(0.08), sh + Y(0.032), Y(0.02), Y(0.08))}${rect(sh1 - X(0.05), sh + Y(0.032), Y(0.02), Y(0.08))}"/>`;
+    // 1. The calendar: hung from a nail by its cord; a binding bar, a band where its month's picture
+    //    would be, a row of day initials (ticks), and the month's grid, seven days by five weeks.
+    const cw = Y(0.86), cx0 = X(0.44) - cw / 2, cT = Y(0.1), cB = Y(0.74), gT = cT + Y(0.2);
+    s += `<path class="isl-tdrop" d="${rect(cx0 + Y(0.012), cT + Y(0.02), cw, cB - cT)}"/>`
+      + `<path class="isl-bink" d="M${F(cx0 + cw * 0.3)} ${F(cT)}L${F(cx0 + cw / 2)} ${F(cT - Y(0.07))}L${F(cx0 + cw * 0.7)} ${F(cT)}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
+      + `<circle class="isl-tiron" cx="${F(cx0 + cw / 2)}" cy="${F(cT - Y(0.07))}" r="${F(Math.max(1.2, Y(0.01)))}"/>`
+      + `<path class="isl-lpage" d="${rect(cx0, cT, cw, cB - cT)}"/>`
+      + `<path class="isl-cband" d="${rect(cx0, cT, cw, Y(0.12))}"/><path class="isl-tiron" d="${rect(cx0 - Y(0.006), cT - Y(0.012), cw + Y(0.012), Y(0.02))}"/>`;
+    const cols = 7, rows = 5, gw = (cw - Y(0.06)) / cols, gh = (cB - gT - Y(0.03)) / rows, gx0 = cx0 + Y(0.03);
+    let grid = '', ticks = '', dots = '';
+    for (let c = 0; c < cols; c++) ticks += `M${F(gx0 + (c + 0.35) * gw)} ${F(gT - Y(0.03))}h${F(gw * 0.3)}`;
+    for (let c = 0; c <= cols; c++) grid += `M${F(gx0 + c * gw)} ${F(gT)}V${F(gT + rows * gh)}`;
+    for (let rr = 0; rr <= rows; rr++) grid += `M${F(gx0)} ${F(gT + rr * gh)}H${F(gx0 + cols * gw)}`;
+    for (const [c, rr, cls] of [[1, 0, 'isl-lbk2'], [4, 1, 'isl-lbk3'], [2, 2, 'isl-lbk1'], [5, 3, 'isl-lbk2'], [0, 4, 'isl-lbk3'], [6, 1, 'isl-lbk1']]) {
+      dots += `<circle class="${cls}" cx="${F(gx0 + (c + 0.72) * gw)}" cy="${F(gT + (rr + 0.3) * gh)}" r="${F(Math.max(1, gh * 0.11))}"/>`;
+    }
+    s += `<path class="isl-bink" d="${ticks}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><path class="isl-cgrid" d="${grid}" stroke-width=".8"/>${dots}`;
+    // this week: the third row; its first days crossed off, today circled
+    const wk = 2, wy = gT + wk * gh;
+    let cross = '';
+    for (let c = 0; c < 3; c++) { const x = gx0 + c * gw; cross += `M${F(x + gw * 0.22)} ${F(wy + gh * 0.22)}L${F(x + gw * 0.78)} ${F(wy + gh * 0.78)}M${F(x + gw * 0.78)} ${F(wy + gh * 0.22)}L${F(x + gw * 0.22)} ${F(wy + gh * 0.78)}`; }
+    s += `<path class="isl-cmark" d="${cross}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`
+      + `<circle class="isl-cmark" cx="${F(gx0 + 3.5 * gw)}" cy="${F(wy + gh / 2)}" r="${F(gh * 0.36)}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`;
+    s += `<g class="isl-vwin isl-vlast" style="--i:3"><rect class="isl-cring" x="${F(gx0 - Y(0.012))}" y="${F(wy - Y(0.012))}" width="${F(cols * gw + Y(0.024))}" height="${F(gh + Y(0.024))}" rx="${F(gh * 0.35)}" stroke-width="${F(Math.max(1.6, Y(0.016)))}"/></g>`;
+    // 2. The clock, left of the calendar, its hands at each version's hour.
+    const kx = X(0.15), ky = Y(0.3), kr = Y(0.14);
+    s += `<circle class="isl-tdrop" cx="${F(kx + Y(0.01))}" cy="${F(ky + Y(0.014))}" r="${F(kr)}"/><circle class="isl-lwood2" cx="${F(kx)}" cy="${F(ky)}" r="${F(kr)}"/><circle class="isl-lpage" cx="${F(kx)}" cy="${F(ky)}" r="${F(kr * 0.84)}"/>`;
+    let marks = '';
+    for (let i = 0; i < 12; i++) { const a = (i / 12) * Math.PI * 2; marks += `M${F(kx + Math.sin(a) * kr * 0.7)} ${F(ky - Math.cos(a) * kr * 0.7)}L${F(kx + Math.sin(a) * kr * 0.78)} ${F(ky - Math.cos(a) * kr * 0.78)}`; }
+    s += `<path class="isl-bink" d="${marks}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/>`;
+    const hand = (h, m) => { const ah = ((h % 12) + m / 60) / 12 * Math.PI * 2, am = m / 60 * Math.PI * 2;
+      return `M${F(kx)} ${F(ky)}L${F(kx + Math.sin(ah) * kr * 0.42)} ${F(ky - Math.cos(ah) * kr * 0.42)}M${F(kx)} ${F(ky)}L${F(kx + Math.sin(am) * kr * 0.64)} ${F(ky - Math.cos(am) * kr * 0.64)}`; };
+    for (const [cls, h, m] of [['isl-a', 6, 5], ['isl-y', 10, 30], ['isl-s', 18, 30], ['isl-d', 19, 30], ['isl-n', 22, 0]]) {
+      s += `<path class="${cls} isl-chand" d="${hand(h, m)}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
+    }
+    s += `<circle class="isl-tiron" cx="${F(kx)}" cy="${F(ky)}" r="${F(Math.max(1, Y(0.01)))}"/>`;
+    // 3. The shelf's things: the week's paper, folded, its headline and columns; a cup; a small plant.
+    const px = X(0.08), pw = Y(0.44), ph = Y(0.1);
+    s += `<path class="isl-lpage" d="${polyD([[px, sh], [px + pw, sh], [px + pw * 0.97, sh - ph], [px + pw * 0.03, sh - ph]])}"/>`
+      + `<path class="isl-bink" d="M${F(px + pw * 0.1)} ${F(sh - ph * 0.72)}h${F(pw * 0.7)}" stroke-width="${F(Math.max(1.2, Y(0.014)))}"/>`
+      + `<path class="isl-ltext" d="M${F(px + pw * 0.1)} ${F(sh - ph * 0.38)}h${F(pw * 0.35)}M${F(px + pw * 0.52)} ${F(sh - ph * 0.38)}h${F(pw * 0.36)}M${F(px + pw * 0.1)} ${F(sh - ph * 0.18)}h${F(pw * 0.33)}M${F(px + pw * 0.52)} ${F(sh - ph * 0.18)}h${F(pw * 0.3)}" stroke-width="${F(Math.max(0.6, Y(0.006)))}"/>`;
+    const mx = px + pw + Y(0.1), mw = Y(0.035), mt = sh - Y(0.09);
+    s += `<path class="isl-lmug" d="M${F(mx - mw)} ${F(sh)}V${F(mt)}H${F(mx + mw)}V${F(sh)}Z"/><path class="isl-lmugh" d="M${F(mx + mw)} ${F(mt + Y(0.02))}q${F(mw * 0.9)} ${F(Y(0.025))} 0 ${F(Y(0.05))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    const tx = sh1 - Y(0.12);
+    s += `<path class="isl-lred" d="M${F(tx - Y(0.04))} ${F(sh)}L${F(tx - Y(0.05))} ${F(sh - Y(0.07))}H${F(tx + Y(0.05))}L${F(tx + Y(0.04))} ${F(sh)}Z"/>`
+      + shrubs([[tx - Y(0.02), sh - Y(0.07), Y(0.045)], [tx + Y(0.025), sh - Y(0.075), Y(0.04)], [tx, sh - Y(0.1), Y(0.04)]], r);
+    // 4. The sconce between the calendar and the window, lit from Dawn to Night.
+    const lx = (cx0 + cw + f.wx0) / 2, ly = Y(0.22);
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.04), Y(0.22), 'islvbulb')}<path d="${polyD([[lx - Y(0.03), ly + Y(0.06)], [lx + Y(0.03), ly + Y(0.06)], [lx + Y(0.12), Y(0.62)], [lx - Y(0.12), Y(0.62)]])}" fill="url(#islvspill)"/></g>`;
+    s += `<path class="isl-lbronze" d="${rect(lx - Y(0.012), ly - Y(0.04), Y(0.024), Y(0.05))}"/><path class="isl-cshade" d="M${F(lx - Y(0.035))} ${F(ly)}H${F(lx + Y(0.035))}L${F(lx + Y(0.03))} ${F(ly + Y(0.07))}H${F(lx - Y(0.03))}Z"/>`;
+    return `<g style="--isl-vstep:.5s">${s}</g>`;
+  }
+
+  /* THE HOSPITAL ROOM (the Clinical Practice page's head; owner, 2026-09-29: art tied to the title at a
+     glance): a hospital room, the bed with its head raised, pillow and blanket, a drip stand with its bag
+     and line, a monitor on its arm tracing a heartbeat in the page's hue, the curtain gathered on its track,
+     a chair by the window, the blinds half down. The monitor is always on; a reading lamp over the bed is
+     lit from Dawn to Night. Face on, sized from the card's height. The harbour's lights come on, then the
+     lamp, and the monitor's trace last. */
+  function hospitalRoom(W, H, v) {
+    const y0 = v.y0, X = (k) => k * W, Y = (k) => k * H, r = rng(907);
+    const f = newsFrame(W, H, 1);
+    let s = windowView(W, H, f, y0, r, 1) + windowWall(W, H, f, 'islhwallg', 1);
+    // the blinds, lowered over the window's upper half, slats and cords
+    let slats = '';
+    for (let y = f.wT + Y(0.02); y < f.wT + (f.wB - f.wT) * 0.4; y += Y(0.024)) slats += rect(f.wx0 + Y(0.01), y, f.ww - Y(0.02), Y(0.014));
+    s += `<path class="isl-hslat" d="${slats}"/><path class="isl-hcord" d="M${F(f.wx0 + f.ww * 0.2)} ${F(f.wT)}V${F(f.wT + (f.wB - f.wT) * 0.5)}M${F(f.wx0 + f.ww * 0.8)} ${F(f.wT)}V${F(f.wT + (f.wB - f.wT) * 0.46)}" stroke-width="${F(Math.max(0.6, Y(0.004)))}"/>`;
+    // the floor and the skirting
+    const fl = Y(0.9);
+    s += `<path class="isl-lfloor" d="${rect(-2, fl, W + 4, H - fl + 2)}"/><path class="isl-lbase" d="M-2 ${F(fl)}H${F(W + 2)}" stroke-width="${F(Math.max(1, Y(0.012)))}"/>`;
+    // 1. The curtain, gathered at the left on its ceiling track.
+    const cx1 = X(0.1);
+    s += `<path class="isl-hrail" d="M-2 ${F(Y(0.04))}H${F(X(0.46))}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
+    let folds = '';
+    for (let x = X(0.005); x < cx1; x += Y(0.035)) folds += `M${F(x)} ${F(Y(0.05))}Q${F(x + Y(0.012))} ${F(Y(0.45))} ${F(x - Y(0.004))} ${F(fl - Y(0.04))}`;
+    s += `<path class="isl-hcurtain" d="M-2 ${F(Y(0.045))}H${F(cx1)}Q${F(cx1 + Y(0.03))} ${F(Y(0.5))} ${F(cx1 - Y(0.01))} ${F(fl - Y(0.035))}H-2Z"/><path class="isl-hfold" d="${folds}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
+    // 2. The bed: its frame on wheels, the mattress, the head raised, the pillow, the blanket, a rail.
+    const b0 = X(0.2), b1 = X(0.62), bTop = Y(0.64), bMid = Y(0.7), bLeg = Y(0.8);
+    const hx = b0 + (b1 - b0) * 0.28;
+    s += `<path class="isl-hframe" d="${rect(b0, bMid, b1 - b0, Y(0.028))}M${F(b0 + Y(0.03))} ${F(bMid)}V${F(bLeg)}M${F(b1 - Y(0.03))} ${F(bMid)}V${F(bLeg)}" stroke-width="${F(Math.max(1.2, Y(0.014)))}"/>`;
+    for (const wx of [b0 + Y(0.03), b1 - Y(0.03)]) s += `<circle class="isl-tiron" cx="${F(wx)}" cy="${F(bLeg + Y(0.03))}" r="${F(Y(0.03))}"/>`;
+    s += `<path class="isl-hframe" d="M${F(b1)} ${F(bMid + Y(0.02))}V${F(bTop - Y(0.12))}M${F(b0)} ${F(bMid + Y(0.02))}V${F(bTop - Y(0.3))}" stroke-width="${F(Math.max(1.4, Y(0.016)))}"/>`;
+    s += `<path class="isl-hmat" d="${polyD([[b0 + Y(0.01), bMid], [b1 - Y(0.01), bMid], [b1 - Y(0.01), bTop], [hx, bTop], [b0 + Y(0.05), bTop - Y(0.22)], [b0 + Y(0.01), bTop - Y(0.2)]])}"/>`;
+    s += `<path class="isl-lpage" d="M${F(b0 + Y(0.04))} ${F(bTop - Y(0.2))}Q${F(b0 + Y(0.14))} ${F(bTop - Y(0.3))} ${F(b0 + Y(0.2))} ${F(bTop - Y(0.12))}Q${F(b0 + Y(0.12))} ${F(bTop - Y(0.06))} ${F(b0 + Y(0.06))} ${F(bTop - Y(0.1))}Z"/>`;
+    s += `<path class="isl-hblanket" d="M${F(hx - Y(0.05))} ${F(bTop - Y(0.035))}Q${F(hx + (b1 - hx) * 0.4)} ${F(bTop - Y(0.07))} ${F(b1 - Y(0.005))} ${F(bTop - Y(0.03))}V${F(bMid + Y(0.035))}H${F(hx - Y(0.07))}Z"/>`
+      + `<path class="isl-hfold" d="M${F(hx - Y(0.05))} ${F(bTop - Y(0.03))}H${F(hx + Y(0.08))}" stroke-width="${F(Math.max(1.4, Y(0.016)))}" stroke-opacity=".4"/>`;
+    s += `<path class="isl-hframe" d="${rect(hx + Y(0.06), bTop - Y(0.08), (b1 - hx) * 0.45, Y(0.012))}M${F(hx + Y(0.07))} ${F(bTop - Y(0.07))}V${F(bTop)}M${F(hx + (b1 - hx) * 0.45)} ${F(bTop - Y(0.07))}V${F(bTop)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    // 3. The drip stand at the bed's head: pole, hooks, the bag with its fluid level, the line.
+    const ix = b0 - Y(0.1), iT = Y(0.12);
+    s += `<path class="isl-hframe" d="M${F(ix)} ${F(fl - Y(0.02))}V${F(iT)}M${F(ix - Y(0.05))} ${F(iT + Y(0.01))}H${F(ix + Y(0.05))}M${F(ix - Y(0.07))} ${F(fl - Y(0.02))}H${F(ix + Y(0.07))}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
+    const bagT = iT + Y(0.03), bagB = iT + Y(0.2);
+    s += `<path class="isl-hbag" d="M${F(ix + Y(0.02))} ${F(bagT)}H${F(ix + Y(0.08))}V${F(bagB - Y(0.02))}Q${F(ix + Y(0.05))} ${F(bagB + Y(0.01))} ${F(ix + Y(0.02))} ${F(bagB - Y(0.02))}Z"/>`
+      + `<path class="isl-hfluid" d="M${F(ix + Y(0.02))} ${F(bagT + Y(0.07))}H${F(ix + Y(0.08))}V${F(bagB - Y(0.02))}Q${F(ix + Y(0.05))} ${F(bagB + Y(0.01))} ${F(ix + Y(0.02))} ${F(bagB - Y(0.02))}Z"/>`
+      + `<path class="isl-hcord" d="M${F(ix + Y(0.05))} ${F(bagB)}C${F(ix + Y(0.06))} ${F(Y(0.55))} ${F(b0 + Y(0.1))} ${F(Y(0.5))} ${F(b0 + Y(0.16))} ${F(bTop - Y(0.08))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+    // 4. The monitor on its wall arm above the bed's head: its screen, a heartbeat trace in the page's hue,
+    //    two readings as bars.
+    const mx0 = b0 + Y(0.1), mT = Y(0.12), mw = Y(0.36), mh = Y(0.24);
+    s += `<path class="isl-hframe" d="M${F(mx0 - Y(0.05))} ${F(mT + mh * 0.5)}H${F(mx0)}" stroke-width="${F(Math.max(1.6, Y(0.02)))}"/>`
+      + `<path class="isl-tiron" d="${rect(mx0, mT, mw, mh)}"/><path class="isl-hscreen" d="${rect(mx0 + Y(0.015), mT + Y(0.015), mw - Y(0.03), mh - Y(0.03))}"/>`;
+    const ey = mT + mh * 0.42, ex0 = mx0 + Y(0.03), ew = mw * 0.62;
+    const ecg = `M${F(ex0)} ${F(ey)}h${F(ew * 0.18)}l${F(ew * 0.04)} ${F(-mh * 0.08)}l${F(ew * 0.04)} ${F(mh * 0.08)}h${F(ew * 0.06)}l${F(ew * 0.03)} ${F(mh * 0.06)}l${F(ew * 0.04)} ${F(-mh * 0.3)}l${F(ew * 0.04)} ${F(mh * 0.36)}l${F(ew * 0.03)} ${F(-mh * 0.12)}h${F(ew * 0.12)}l${F(ew * 0.05)} ${F(-mh * 0.06)}l${F(ew * 0.05)} ${F(mh * 0.06)}h${F(ew * 0.28)}`;
+    s += `<g class="isl-vwin isl-vlast" style="--i:3"><path class="isl-hecg" d="${ecg}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/></g>`;
+    s += `<path class="isl-hread" d="${rect(mx0 + mw * 0.72, mT + mh * 0.22, mw * 0.16, mh * 0.12)}${rect(mx0 + mw * 0.72, mT + mh * 0.52, mw * 0.12, mh * 0.1)}"/>`
+      + `<path class="isl-hread2" d="M${F(ex0)} ${F(mT + mh * 0.75)}h${F(ew * 0.8)}" stroke-width="${F(Math.max(0.8, Y(0.008)))}" stroke-dasharray="${F(Y(0.02))} ${F(Y(0.012))}"/>`;
+    // 5. The reading lamp over the bed, lit from Dawn to Night; the chair by the window.
+    const lx = b0 + (b1 - b0) * 0.62, ly = Y(0.2);
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.03), Y(0.2), 'islvbulb')}<path d="${polyD([[lx - Y(0.05), ly + Y(0.04)], [lx + Y(0.05), ly + Y(0.04)], [lx + Y(0.18), bTop - Y(0.04)], [lx - Y(0.18), bTop - Y(0.04)]])}" fill="url(#islvspill)"/></g>`
+      + `<path class="isl-lbronze" d="${rect(lx - Y(0.07), ly - Y(0.015), Y(0.14), Y(0.03))}"/><path class="isl-cshade" d="M${F(lx - Y(0.06))} ${F(ly + Y(0.015))}H${F(lx + Y(0.06))}V${F(ly + Y(0.04))}H${F(lx - Y(0.06))}Z"/>`;
+    const chx = f.wx0 - Y(0.12);
+    s += `<path class="isl-lchair" d="M${F(chx - Y(0.08))} ${F(Y(0.72))}H${F(chx + Y(0.08))}V${F(Y(0.76))}H${F(chx - Y(0.08))}ZM${F(chx + Y(0.05))} ${F(Y(0.72))}V${F(Y(0.52))}H${F(chx + Y(0.08))}V${F(Y(0.72))}Z"/>`
+      + `<path class="isl-lchairleg" d="M${F(chx - Y(0.07))} ${F(Y(0.76))}V${F(fl)}M${F(chx + Y(0.07))} ${F(Y(0.76))}V${F(fl)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    return `<g style="--isl-vstep:.5s">${s}</g>`;
+  }
+
+  /* THE LECTURE THEATRE (the Medical Education page's head; owner, 2026-09-29: art tied to the title at a
+     glance): a lecture theatre seen from the back rows. The screen shows a heart in the page's hue, its
+     chambers and great vessels, and the notes beside it; the lectern with its reading lamp and a laptop;
+     an articulated skeleton on its stand beside it; high windows along the front wall carry the sky; the
+     rows of seats step down toward the front. The projector's light and the screen are always on; the
+     lectern's lamp is lit from Dawn to Night. The windows' lights, then the lamp, then the heart. */
+  function lectureHall(W, H, v) {
+    const y0 = v.y0, X = (k) => k * W, Y = (k) => k * H, r = rng(1013);
+    // the high windows: three, along the top of the front wall; the view is sky and a far line of hills
+    const wins = [0.12, 0.32, 0.52].map((k) => X(k)), ww = Y(0.36), wT = Y(0.08), wB = Y(0.3);
+    let s = '';
+    const hill = [];
+    for (let x = -4, i = 0; x < W + 8; x += Y(0.12), i++) hill.push([x, y0 - Y(0.01 + (Math.sin(i * 0.9) + 1) * 0.012)]);
+    s += `<path class="f-isl" d="${polyD([[-4, y0 + 1], ...hill, [W + 8, y0 + 1]])}"/>`;
+    let wallD = rect(-2, -2, W + 4, H + 4);
+    for (const x of wins) wallD += rect(x, wT, ww, wB - wT);
+    s += `<defs><linearGradient id="isllwallg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lwall0"/><stop offset="1" class="st-lwall1"/></linearGradient></defs><path fill="url(#isllwallg2)" fill-rule="evenodd" d="${wallD}"/>`;
+    let fr = '', mul = '';
+    for (const x of wins) { fr += rect(x, wT, ww, wB - wT); mul += `M${F(x + ww / 3)} ${F(wT)}V${F(wB)}M${F(x + (2 * ww) / 3)} ${F(wT)}V${F(wB)}`; }
+    s += `<path class="isl-lframe" d="${fr}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-lframe" d="${mul}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
+    // 1. The screen at the right of the front wall, lit: the heart and its notes; the projector's beam.
+    const sx0 = X(0.62), sx1 = X(0.97), sT = Y(0.08), sB = Y(0.6), scx = sx0 + (sx1 - sx0) * 0.34, scy = (sT + sB) / 2;
+    s += `<path d="${polyD([[X(0.8) - Y(0.02), -2], [X(0.8) + Y(0.02), -2], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#islvspill)" opacity=".5"/>`;
+    s += `<path class="isl-tiron" d="${rect(sx0 - Y(0.012), sT - Y(0.012), sx1 - sx0 + Y(0.024), sB - sT + Y(0.024))}"/><path class="isl-mscreen" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}"/>`;
+    const hr = Math.min((sB - sT) * 0.36, (sx1 - sx0) * 0.2);
+    const heart = `M${F(scx)} ${F(scy + hr * 0.95)}C${F(scx - hr * 1.2)} ${F(scy + hr * 0.2)} ${F(scx - hr * 1.1)} ${F(scy - hr * 0.7)} ${F(scx - hr * 0.35)} ${F(scy - hr * 0.62)}C${F(scx - hr * 0.1)} ${F(scy - hr * 0.6)} ${F(scx)} ${F(scy - hr * 0.4)} ${F(scx)} ${F(scy - hr * 0.3)}C${F(scx + hr * 0.1)} ${F(scy - hr * 0.6)} ${F(scx + hr * 0.9)} ${F(scy - hr * 0.8)} ${F(scx + hr * 0.95)} ${F(scy - hr * 0.1)}C${F(scx + hr * 0.95)} ${F(scy + hr * 0.4)} ${F(scx + hr * 0.4)} ${F(scy + hr * 0.7)} ${F(scx)} ${F(scy + hr * 0.95)}Z`;
+    const vessels = `M${F(scx - hr * 0.15)} ${F(scy - hr * 0.45)}C${F(scx - hr * 0.2)} ${F(scy - hr * 1.1)} ${F(scx + hr * 0.5)} ${F(scy - hr * 1.15)} ${F(scx + hr * 0.55)} ${F(scy - hr * 0.7)}M${F(scx + hr * 0.2)} ${F(scy - hr * 0.95)}V${F(scy - hr * 1.2)}M${F(scx + hr * 0.38)} ${F(scy - hr * 1.02)}L${F(scx + hr * 0.45)} ${F(scy - hr * 1.25)}M${F(scx - hr * 0.45)} ${F(scy - hr * 0.55)}L${F(scx - hr * 0.6)} ${F(scy - hr * 0.95)}`;
+    const septum = `M${F(scx - hr * 0.05)} ${F(scy - hr * 0.25)}Q${F(scx + hr * 0.1)} ${F(scy + hr * 0.3)} ${F(scx - hr * 0.02)} ${F(scy + hr * 0.8)}M${F(scx - hr * 0.8)} ${F(scy - hr * 0.1)}Q${F(scx - hr * 0.2)} ${F(scy)} ${F(scx + hr * 0.85)} ${F(scy - hr * 0.2)}`;
+    s += `<g class="isl-vwin isl-vlast" style="--i:3"><path class="isl-mheart" d="${heart}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${vessels}${septum}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/></g>`;
+    let notes = '';
+    for (let i = 0; i < 4; i++) notes += `M${F(sx0 + (sx1 - sx0) * 0.66)} ${F(sT + (sB - sT) * (0.28 + i * 0.14))}h${F((sx1 - sx0) * (0.26 - (i % 2) * 0.08))}`;
+    s += `<path class="isl-mnote" d="${notes}" stroke-width="${F(Math.max(1, Y(0.012)))}"/>`;
+    // 2. The lectern with its lamp and a laptop; the skeleton on its stand beside it.
+    const lx = X(0.44), lT = Y(0.56), lB = Y(0.84);
+    s += `<path class="isl-lwood" d="${polyD([[lx - Y(0.1), lT], [lx + Y(0.1), lT], [lx + Y(0.08), lB], [lx - Y(0.08), lB]])}"/><path class="isl-lwood2" d="${rect(lx - Y(0.12), lT - Y(0.02), Y(0.24), Y(0.025))}"/>`
+      + `<path class="isl-llap" d="${polyD([[lx - Y(0.07), lT - Y(0.02)], [lx + Y(0.02), lT - Y(0.02)], [lx + Y(0.04), lT - Y(0.1)], [lx - Y(0.05), lT - Y(0.1)]])}"/>`;
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx + Y(0.07), lT - Y(0.07), Y(0.14), 'islvbulb')}</g>`
+      + `<path class="isl-tarm" d="M${F(lx + Y(0.07))} ${F(lT - Y(0.02))}Q${F(lx + Y(0.1))} ${F(lT - Y(0.1))} ${F(lx + Y(0.06))} ${F(lT - Y(0.08))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><path class="isl-tshade" d="${rect(lx + Y(0.03), lT - Y(0.09), Y(0.06), Y(0.02))}"/>`;
+    // the skeleton: skull and jaw, the spine, the rib cage, the pelvis, arms and legs, on a stand
+    const kx = X(0.53), top = Y(0.24), u = Y(0.05);
+    let bones = `M${F(kx)} ${F(top + u * 1.4)}V${F(top + u * 5.6)}`;
+    for (let i = 0; i < 5; i++) { const ry = top + u * (1.9 + i * 0.55), rw = u * (1.05 - Math.abs(i - 1.6) * 0.12); bones += `M${F(kx - rw)} ${F(ry + u * 0.25)}Q${F(kx - rw)} ${F(ry - u * 0.2)} ${F(kx)} ${F(ry)}Q${F(kx + rw)} ${F(ry - u * 0.2)} ${F(kx + rw)} ${F(ry + u * 0.25)}`; }
+    bones += `M${F(kx - u * 1.1)} ${F(top + u * 1.7)}L${F(kx - u * 1.5)} ${F(top + u * 3.4)}L${F(kx - u * 1.6)} ${F(top + u * 5.0)}M${F(kx + u * 1.1)} ${F(top + u * 1.7)}L${F(kx + u * 1.45)} ${F(top + u * 3.4)}L${F(kx + u * 1.3)} ${F(top + u * 5.0)}`;
+    bones += `M${F(kx - u * 0.6)} ${F(top + u * 6.2)}L${F(kx - u * 0.75)} ${F(top + u * 8.2)}L${F(kx - u * 0.7)} ${F(top + u * 10.2)}M${F(kx + u * 0.6)} ${F(top + u * 6.2)}L${F(kx + u * 0.72)} ${F(top + u * 8.2)}L${F(kx + u * 0.65)} ${F(top + u * 10.2)}`;
+    s += `<path class="isl-mstand" d="M${F(kx)} ${F(top - u * 0.6)}V${F(top)}M${F(kx)} ${F(top + u * 10.3)}V${F(lB)}M${F(kx - u * 1.3)} ${F(lB)}H${F(kx + u * 1.3)}" stroke-width="${F(Math.max(1.2, u * 0.2))}"/>`
+      + `<path class="isl-mbone" d="${bones}" stroke-width="${F(Math.max(1, u * 0.2))}"/>`
+      + `<path class="isl-mbonef" d="M${F(kx - u * 0.6)} ${F(top + u * 0.6)}a${F(u * 0.6)} ${F(u * 0.62)} 0 1 1 ${F(u * 1.2)} 0q0 ${F(u * 0.5)} ${F(-u * 0.25)} ${F(u * 0.7)}h${F(-u * 0.7)}q${F(-u * 0.25)} ${F(-u * 0.2)} ${F(-u * 0.25)} ${F(-u * 0.7)}Z`
+      + `M${F(kx - u * 0.9)} ${F(top + u * 5.6)}Q${F(kx)} ${F(top + u * 5.1)} ${F(kx + u * 0.9)} ${F(top + u * 5.6)}L${F(kx + u * 0.6)} ${F(top + u * 6.4)}Q${F(kx)} ${F(top + u * 6.8)} ${F(kx - u * 0.6)} ${F(top + u * 6.4)}Z"/>`
+      + `<path class="isl-mhole" d="M${F(kx - u * 0.32)} ${F(top + u * 0.62)}h0M${F(kx + u * 0.32)} ${F(top + u * 0.62)}h0" stroke-width="${F(Math.max(1.4, u * 0.28))}"/>`;
+    // 3. The rows of seats, stepping down toward the front: two rows of seat backs across the foot of the
+    //    picture, the nearer larger and lower, and the desk rail in front of each.
+    for (const [yt, sz, cls] of [[0.8, 0.13, 'isl-mseat'], [0.9, 0.18, 'isl-mseat2']]) {
+      let seats = '';
+      for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) seats += `M${F(x)} ${F(H + 2)}V${F(Y(yt) + Y(sz) * 0.3)}Q${F(x)} ${F(Y(yt))} ${F(x + Y(sz) * 0.3)} ${F(Y(yt))}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz))} ${F(Y(yt))} ${F(x + Y(sz))} ${F(Y(yt) + Y(sz) * 0.3)}V${F(H + 2)}Z`;
+      s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/><path class="${cls}" d="${seats}"/>`;
+    }
+    return `<g style="--isl-vstep:.5s">${s}</g>`;
+  }
+
+  /* THE DISH AND THE NETWORK (the General AI page's head; owner, 2026-09-29: art tied to the title at a
+     glance, "fantastical or sci-fi" where it fits better): a radio dish on a headland over the sea, turned
+     to the sky, where a constellation drawn as a neural network (the homepage hero's own network) receives
+     its beam; the network's nodes light layer by layer, the output last, in the page's hue. A small
+     station with lit windows at the dish's foot. Sized from the card's height. */
+  function dishNet(W, H, v) {
+    const y0 = v.y0, X = (k) => k * W, Y = (k) => k * H, r = rng(1123);
+    let s = '';
+    // 1. The headland at the right, rising from the sea, rimmed; mist at its foot; scrub on its crest.
+    const crest = [[0.52, 1.02], [0.56, 0.9], [0.61, 0.8], [0.67, 0.72], [0.74, 0.68], [0.84, 0.66], [0.94, 0.67], [1.02, 0.68]].map(([x, y]) => [X(x), Y(y)]);
+    s += mist(X(0.4), y0 + Y(0.04), X(0.2), Y(0.08), 0.45);
+    s += `<path class="f-far isl-land" d="${polyD([...crest, [X(1.02), H + 2]])}"/>`;
+    s += `<path class="s-rim" d="${lineD(crest.slice(1, 6).map(([x, y]) => [x, y + 0.5]))}" stroke-width="1.2" stroke-opacity=".45"/>`;
+    s += shrubs([[0.585, 0.86, 0.05], [0.64, 0.77, 0.045], [0.9, 0.7, 0.05], [0.98, 0.75, 0.06]].map(([x, y, k]) => [X(x), Y(y), Y(k)]), r);
+    // 2. The station: a low block with lit windows beside the dish's foot.
+    const bx = X(0.64), bT = Y(0.58), bw = Y(0.36);
+    s += `<path class="isl-tw0" d="${rect(bx, bT, bw, Y(0.14))}"/><path class="isl-troof" d="${rect(bx - Y(0.01), bT - Y(0.015), bw + Y(0.02), Y(0.02))}"/>`
+      + `<path class="f-pulse isl-vwin" style="--i:0" d="${rect(bx + Y(0.04), bT + Y(0.04), Y(0.05), Y(0.04))}${rect(bx + Y(0.13), bT + Y(0.04), Y(0.05), Y(0.04))}${rect(bx + Y(0.22), bT + Y(0.04), Y(0.04), Y(0.06))}"/>`;
+    // 3. The dish: a lattice pedestal, the yoke, the bowl turned up and to the left, the feed on its legs.
+    const dx = X(0.85), footY = Y(0.68), pivY = Y(0.32), R = Y(0.38), ang = -2.35;
+    const ux = Math.cos(ang), uy = Math.sin(ang), nx = -uy, ny = ux;
+    s += `<path class="isl-dtruss" d="M${F(dx - Y(0.08))} ${F(footY)}L${F(dx - Y(0.02))} ${F(pivY + Y(0.06))}M${F(dx + Y(0.08))} ${F(footY)}L${F(dx + Y(0.02))} ${F(pivY + Y(0.06))}M${F(dx - Y(0.06))} ${F(footY - Y(0.1))}H${F(dx + Y(0.06))}M${F(dx - Y(0.04))} ${F(footY - Y(0.2))}H${F(dx + Y(0.04))}M${F(dx - Y(0.06))} ${F(footY - Y(0.1))}L${F(dx + Y(0.04))} ${F(footY - Y(0.2))}M${F(dx + Y(0.06))} ${F(footY - Y(0.1))}L${F(dx - Y(0.04))} ${F(footY - Y(0.2))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    const rimA = [dx + nx * R, pivY + ny * R], rimB = [dx - nx * R, pivY - ny * R], depth = R * 0.42;
+    const back = [dx - ux * depth, pivY - uy * depth];
+    s += `<path class="isl-ddish" d="M${F(rimA[0])} ${F(rimA[1])}Q${F(back[0] - ux * depth)} ${F(back[1] - uy * depth)} ${F(rimB[0])} ${F(rimB[1])}Z"/>`
+      + `<path class="isl-ddish2" d="M${F(rimA[0])} ${F(rimA[1])}Q${F(dx + ux * R * 0.14)} ${F(pivY + uy * R * 0.14)} ${F(rimB[0])} ${F(rimB[1])}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/>`;
+    const focus = [dx + ux * R * 0.85, pivY + uy * R * 0.85];
+    s += `<path class="isl-dtruss" d="M${F(rimA[0] + (focus[0] - rimA[0]) * 0.05)} ${F(rimA[1] + (focus[1] - rimA[1]) * 0.05)}L${F(focus[0])} ${F(focus[1])}L${F(rimB[0] + (focus[0] - rimB[0]) * 0.05)} ${F(rimB[1] + (focus[1] - rimB[1]) * 0.05)}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/>`
+      + `<circle class="isl-tiron" cx="${F(focus[0])}" cy="${F(focus[1])}" r="${F(Math.max(1.5, Y(0.016)))}"/>`;
+    // 4. The network in the sky: three layers of nodes joined layer to layer, the output node at the right
+    //    nearest the dish; the beam from the dish's feed to it; the nodes light layer by layer.
+    const layers = [[0.14, [0.18, 0.4, 0.62]], [0.3, [0.12, 0.3, 0.48, 0.66]], [0.46, [0.26, 0.5]], [0.6, [0.36]]]
+      .map(([x, ys]) => ys.map((yy) => [X(x), Y(yy)]));
+    let links = '';
+    for (let l = 0; l < layers.length - 1; l++) for (const a of layers[l]) for (const b of layers[l + 1]) links += `M${F(a[0])} ${F(a[1])}L${F(b[0])} ${F(b[1])}`;
+    const out = layers[layers.length - 1][0];
+    s += `<path d="${polyD([[focus[0] - Y(0.01), focus[1]], [focus[0] + Y(0.01), focus[1] + Y(0.01)], [out[0] + Y(0.02), out[1] + Y(0.03)], [out[0] - Y(0.01), out[1] - Y(0.03)]])}" fill="url(#islnbeam)"/>`;
+    s += `<defs><linearGradient id="islnbeam" gradientUnits="userSpaceOnUse" x1="${F(focus[0])}" y1="${F(focus[1])}" x2="${F(out[0])}" y2="${F(out[1])}"><stop offset="0" class="st-k" stop-opacity=".05"/><stop offset="1" class="st-k" stop-opacity=".35"/></linearGradient></defs>`;
+    s += `<path class="s-net" d="${links}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+    layers.forEach((ly, l) => {
+      const last = l === layers.length - 1;
+      s += `<g class="isl-vwin${last ? ' isl-vlast' : ''}" style="--i:${l + 1}">`
+        + ly.map(([x, y]) => (last ? halo(x, y, Y(0.12), 'islvlamp') + `<circle class="isl-vlamp" cx="${F(x)}" cy="${F(y)}" r="${F(Math.max(2, Y(0.022)))}"/>`
+          : `<circle class="s-node isl-nnode" cx="${F(x)}" cy="${F(y)}" r="${F(Math.max(1.6, Y(0.016)))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`)).join('') + '</g>';
+    });
+    // signals along the beam, a few short bright dashes
+    let sig = '';
+    for (const t of [0.25, 0.5, 0.75]) { const x = focus[0] + (out[0] - focus[0]) * t, y = focus[1] + (out[1] - focus[1]) * t; sig += `M${F(x)} ${F(y)}l${F((out[0] - focus[0]) * 0.03)} ${F((out[1] - focus[1]) * 0.03)}`; }
+    s += `<path class="isl-bsound isl-vwin" style="--i:4" d="${sig}" stroke-width="${F(Math.max(1.4, Y(0.012)))}"/>`;
+    return `<g style="--isl-vstep:.45s">${s}</g>`;
+  }
+
   /* THE HOMEPAGE HERO'S SCENE (owner, 2026-09-27): in the bold hero (desktop, from 68.75em) the campus
      stands on its lawn at the card's foot, in the sky's space right of the words, from x0 to x1, under
      the hero's own sky, which island-core.js draws as before; the far islands and Antigua's coast are
@@ -2347,6 +2624,51 @@
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
       moonBig: 2.2,
       moonX: 0.42,
+      ground: null,
+    },
+    // The news pages (round 7, wave 2): interiors whose windows face the Sun's setting bearing, so the
+    // Sun sets in them at Sunset, and the Moon in an upper pane; the lecture theatre's high windows show
+    // sky and a line of far hills; the dish stands on a headland with the Moon in the open sky.
+    'week-calendar': {
+      draw: weekCalendar,
+      world: 'inland',
+      horizon: (W, H) => newsFrame(W, H, 1).hz / H,
+      face: (W, H) => { const f = newsFrame(W, H, 1); return 290.8 - ((f.wx0 + f.ww * 0.7) / W - 0.5) * 62; },
+      ppd: (W) => W / 62,
+      moonAt: (W, H) => { const f = newsFrame(W, H, 1); return [(f.wx0 + f.ww * 0.26) / W, (f.wT + (f.hz - f.wT) * 0.38) / H]; },
+      moonBig: 1.2,
+      ground: null,
+    },
+    'hospital-room': {
+      draw: hospitalRoom,
+      world: 'inland',
+      horizon: (W, H) => newsFrame(W, H, 1).hz / H,
+      face: (W, H) => { const f = newsFrame(W, H, 1); return 290.8 - ((f.wx0 + f.ww * 0.7) / W - 0.5) * 62; },
+      ppd: (W) => W / 62,
+      // below the blinds, in the window's lower left pane
+      moonAt: (W, H) => { const f = newsFrame(W, H, 1); return [(f.wx0 + f.ww * 0.26) / W, (f.wT + (f.hz - f.wT) * 0.72) / H]; },
+      moonBig: 1.1,
+      ground: null,
+    },
+    'lecture-hall': {
+      draw: lectureHall,
+      world: 'inland',
+      sunPath: false,
+      horizon: 0.27,
+      face: 262,
+      ppd: (W) => W / 62,
+      moonAt: (W, H) => [(W * 0.32 + H * 0.18) / W, 0.15],
+      moonBig: 1,
+      ground: null,
+    },
+    'dish-net': {
+      draw: dishNet,
+      world: 'inland',
+      sunset: '18:26',
+      horizon: 0.8,
+      ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
+      moonBig: 2,
+      moonX: 0.08,
       ground: null,
     },
     'shirley-heights': {
