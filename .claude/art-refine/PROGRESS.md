@@ -62,13 +62,14 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### sailing-week
 
-- [ ] #5 fix v4 `sailing-week-1`: Masthead and bow lights do not follow the heeled rig
-- [ ] #24 fix v3 `sailing-week-2`: Glitter under an empty western sky at Dawn
-- [ ] #25 fix v3 `sailing-week-3`: Bow waves float free ahead of the bows
-- [ ] #26 fix v3 `sailing-week-5`: The coast rim runs across the land and into the water
-- [ ] #68 fix v2 `sailing-week-7`: Day houses stand on the pale far range
-- [ ] #81 fix v2 `sailing-week-4`: The tipped hull lifts its stern out of the water
-- [ ] #93 add v2 `sailing-week-6`: A boom under each mainsail
+- [x] (found in review of #5) the shore's lights were drawn over the sails; now behind the fleet
+- [x] #5 fix v4 `sailing-week-1`: Masthead and bow lights do not follow the heeled rig
+- [x] #24 fix v3 `sailing-week-2`: Glitter under an empty western sky at Dawn
+- [x] #25 fix v3 `sailing-week-3`: Bow waves float free ahead of the bows
+- [x] #26 fix v3 `sailing-week-5`: The coast rim runs across the land and into the water
+- [x] #68 fix v2 `sailing-week-7`: Day houses stand on the pale far range
+- [x] #81 fix v2 `sailing-week-4`: The tipped hull lifts its stern out of the water
+- [x] #93 add v2 `sailing-week-6`: A boom under each mainsail
 
 ### lamp-steps
 

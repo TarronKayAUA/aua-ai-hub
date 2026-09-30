@@ -673,58 +673,90 @@
     // The water: finer ripples, and the afterglow's glitter under the sunset.
     const sunX = v.x(SKY.d.sun[0]);
     s += dashes(hatchList(W, y0, H, r), 's-vrip', 1, [0.1, 0.18, 0.28]);
-    if (sunX > -W * 0.2 && sunX < W * 1.2) s += dashes(streakList(Math.min(W - 10, sunX), y0, H, r, 0.14, 0.1), 's-vglow isl-aglow', 1.3, [0.12, 0.24, 0.42]);
-    // 1. Montserrat on the horizon, the Soufriere Hills its peak, its western flank rimmed.
+    // (the glitter only while the afterglow is there, at Sunset and Dusk: at Dawn the western sky is empty)
+    if (sunX > -W * 0.2 && sunX < W * 1.2) s += dashes(streakList(Math.min(W - 10, sunX), y0, H, r, 0.14, 0.1), 's-vglow isl-aglow isl-d', 1.3, [0.12, 0.24, 0.42]);
+    // 1. Montserrat on the horizon, the Soufriere Hills its peak, its western flank rimmed. (The rims
+    //    are kept out of the land's reflection: the water mirrors the hills, not a line of light.)
     const mont = P([[0.02, 0.6], [0.05, 0.58], [0.075, 0.558], [0.1, 0.535], [0.12, 0.522], [0.14, 0.53], [0.165, 0.552], [0.2, 0.578], [0.23, 0.6]]);
     land += `<path class="f-isl" d="${poly(mont)}"/>`;
-    land += `<path class="s-rim" d="M${mont.slice(4, 8).map(([x, y]) => `${F(x)} ${F(y + 0.5)}`).join('L')}" stroke-width="1" stroke-opacity=".35"/>`;
+    let rims = `<path class="s-rim" d="M${mont.slice(4, 8).map(([x, y]) => `${F(x)} ${F(y + 0.5)}`).join('L')}" stroke-width="1" stroke-opacity=".35"/>`;
     // 2. Antigua's south coast: a far range, then the near hills in planes, the crest rimmed.
     const range = P([[0.5, 0.6], [0.56, 0.57], [0.62, 0.535], [0.68, 0.49], [0.74, 0.455], [0.8, 0.43], [0.86, 0.41], [0.92, 0.395], [1.02, 0.38], [1.02, 0.6]]);
     land += `<path class="f-isl" d="${poly(range)}${scrub(range.slice(1, 9), 3, 0.6, 1.4)}"/>`;
     const hills = P([[0.58, 0.603], [0.62, 0.58], [0.66, 0.555], [0.7, 0.52], [0.74, 0.49], [0.78, 0.475], [0.82, 0.48], [0.86, 0.455], [0.9, 0.44], [0.95, 0.445], [1.02, 0.43], [1.02, 0.605], [0.58, 0.605]]);
     land += `<path class="f-far isl-land" d="${poly(hills)}${scrub(hills.slice(0, 11), 6, 0.8, 2)}"/>`;
-    land += `<path class="s-rim" d="M${hills.slice(0, 11).map(([x, y]) => `${F(x)} ${F(y + 0.5)}`).join('L')}" stroke-width="1.2" stroke-opacity=".5"/>`;
-    for (let i = 0; i < 18; i++) lights[1].push([X(0.62 + r() * 0.38), Y(0.54 + r() * 0.055)]);
+    // the afterglow rims the true skyline, the far range's crest (it had run along the near hills, across
+    // the land and down into the water: review, 2026-09-30)
+    rims += `<path class="s-rim" d="M${range.slice(1, 9).map(([x, y]) => `${F(x)} ${F(y + 0.5)}`).join('L')}" stroke-width="1.2" stroke-opacity=".45"/>`;
+    // the shore's lights, and so its houses by Day, stay on the near hills, below their crest
+    const crestY = (x) => {
+      for (let i = 0; i < 10; i++) {
+        const [xa, ya] = hills[i], [xb, yb] = hills[i + 1];
+        if (x >= xa && x <= xb) return ya + (yb - ya) * (x - xa) / (xb - xa);
+      }
+      return Y(0.43);
+    };
+    for (let i = 0; i < 18; i++) {
+      const x = X(0.62 + r() * 0.38), y = Y(0.54 + r() * 0.055);
+      lights[1].push([x, Math.max(y, crestY(x) + Y(0.015))]);
+    }
     const regattaHouses = makeKit(W, H).dayHouses(lights[1], Y(0.02), 61);
-    s += land + regattaHouses + mirrored(y0, land, 0.18);
+    s += land + rims + regattaHouses + mirrored(y0, land, 0.18);
     s += mist(X(0.5), Y(0.6), X(0.55), Y(0.05), 0.55) + mist(X(0.0), Y(0.603), X(0.3), Y(0.03), 0.35);
     for (const [x] of lights[1]) if (r() < 0.5) s += dashes(streakList(x, y0, H, r, 0.04, 0.05).filter(([, y]) => y < y0 + Y(0.18)), 's-vglow', 1, [0.08, 0.16, 0.3]);
     // 3. The yachts, all racing left: hull heeled to leeward, a sheer line of light, a tall shaded
     //    mainsail, a jib or a spinnaker with its seams, a bow wave, and a reflection on the water.
-    let fleet = '', rf = '', sprays = '';
+    let fleet = '', rf = '', sprays = '', clips = '', yi = 0;
     const yacht = (x, wl, L, heel, spin, hued) => {
-      const mh = L * 1.45, mx = x + L * 0.08, hh = L * 0.1;
-      const hull = `M${F(x - L * 0.5)} ${F(wl - hh)}H${F(x + L * 0.5)}L${F(x + L * 0.38)} ${F(wl)}H${F(x - L * 0.42)}Z`;
+      const mh = L * 1.45, mx = x + L * 0.08, hh = L * 0.1, id = `islvwl${yi++}`;
+      // Heel shows in the rig's lean; the hull tilts by half as much, since a whole hull tipped in the
+      // picture's plane reads as pitching bow-down rather than heeling (review, 2026-09-30).
+      const turn = (deg) => { const a = deg * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a);
+        return (px, py) => [x + (px - x) * ca - (py - wl) * sa, wl + (px - x) * sa + (py - wl) * ca]; };
+      const rot = turn(heel), rotH = turn(heel / 2);
+      // The hull runs on below the waterline and is cut off there, outside its heel, so a heeled boat
+      // sits in the water along its whole length instead of lifting its stern clear (review, 2026-09-30).
+      const hull = `M${F(x - L * 0.5)} ${F(wl - hh)}H${F(x + L * 0.5)}L${F(x + L * 0.42)} ${F(wl + L * 0.12)}H${F(x - L * 0.44)}Z`;
       const sheer = `M${F(x - L * 0.5)} ${F(wl - hh)}H${F(x + L * 0.5)}`;
       const main = `M${F(mx)} ${F(wl - hh - mh)}Q${F(mx + L * 0.18)} ${F(wl - hh - mh * 0.45)} ${F(mx + L * 0.46)} ${F(wl - hh * 1.4)}L${F(mx + L * 0.02)} ${F(wl - hh * 1.4)}Z`;
       const jib = `M${F(mx - L * 0.02)} ${F(wl - hh - mh * 0.86)}L${F(x - L * 0.48)} ${F(wl - hh * 1.1)}L${F(mx - L * 0.04)} ${F(wl - hh * 1.2)}Z`;
       const sp = `M${F(mx - L * 0.03)} ${F(wl - hh - mh * 0.92)}C${F(x - L * 0.95)} ${F(wl - hh - mh * 0.95)} ${F(x - L * 1.05)} ${F(wl - hh - mh * 0.25)} ${F(x - L * 0.62)} ${F(wl - hh * 1.6)}Q${F(x - L * 0.3)} ${F(wl - hh - mh * 0.2)} ${F(mx - L * 0.03)} ${F(wl - hh - mh * 0.92)}Z`;
       const seams = [0.3, 0.55, 0.78].map((k) => `M${F(mx - L * 0.03)} ${F(wl - hh - mh * 0.92)}Q${F(x - L * (0.2 + k * 0.7))} ${F(wl - hh - mh * (0.9 - k * 0.3))} ${F(x - L * (0.62 + 0.25 * Math.sin(k * 3)))} ${F(wl - hh - mh * (0.62 - k * 0.55))}`).join('');
       const mast = `M${F(mx)} ${F(wl - hh)}V${F(wl - hh - mh * 1.02)}`;
-      const g = `transform="rotate(${F(heel)} ${F(x)} ${F(wl)})"`;
-      let one = `<path class="isl-vhull" d="${hull}"/><path class="isl-vsheer" d="${sheer}" stroke-width="${F(Math.max(0.8, L * 0.012))}"/>`
-        + `<path class="isl-vmast" d="${mast}" stroke-width="${F(Math.max(0.7, L * 0.01))}"/>`
-        + `<path d="${main}" fill="url(#islvsailg)"/>`
-        + (spin ? `<path class="${hued ? 'isl-vspin-k' : spin === 2 ? 'isl-vspin2' : 'isl-vspin'}" d="${sp}"/><path class="isl-vseam" d="${seams}" stroke-width=".8"/>` : `<path d="${jib}" fill="url(#islvsailg)"/>`);
-      fleet += `<g ${g}>${one}</g>`;
-      // its reflection, mirrored about its own waterline
-      rf += `<g transform="translate(0 ${F(2 * wl)}) scale(1 -1)"><g ${g}>${one}</g></g>`;
-      sprays += `M${F(x - L * 0.55)} ${F(wl)}q${F(-L * 0.12)} ${F(-hh * 0.8)} ${F(-L * 0.22)} ${F(hh * 0.2)}M${F(x + L * 0.4)} ${F(wl + 1)}h${F(L * 0.9)}M${F(x + L * 0.55)} ${F(wl + L * 0.05)}h${F(L * 0.6)}`;
-      lights[0].push([x - L * 0.5, wl - hh, 'r'], [x - L * 0.46, wl - hh, 'g'], [mx, wl - hh - mh * 1.02, 'w']);
+      const boom = `M${F(mx)} ${F(wl - hh * 1.4)}H${F(mx + L * 0.48)}`;   // along the mainsail's foot
+      const g = `transform="rotate(${F(heel)} ${F(x)} ${F(wl)})"`, gH = `transform="rotate(${F(heel / 2)} ${F(x)} ${F(wl)})"`;
+      clips += `<clipPath id="${id}"><rect x="${F(x - L)}" y="${F(wl - H)}" width="${F(2 * L)}" height="${F(H)}"/></clipPath>`;
+      const one = `<g clip-path="url(#${id})"><g ${gH}><path class="isl-vhull" d="${hull}"/><path class="isl-vsheer" d="${sheer}" stroke-width="${F(Math.max(0.8, L * 0.012))}"/></g></g>`
+        + `<g ${g}><path class="isl-vmast" d="${mast}" stroke-width="${F(Math.max(0.7, L * 0.01))}"/>`
+        + `<path d="${main}" fill="url(#islvsailg)"/><path class="isl-vmast" d="${boom}" stroke-width="${F(Math.max(0.8, L * 0.014))}"/>`
+        + (spin ? `<path class="${hued ? 'isl-vspin-k' : spin === 2 ? 'isl-vspin2' : 'isl-vspin'}" d="${sp}"/><path class="isl-vseam" d="${seams}" stroke-width=".8"/>` : `<path d="${jib}" fill="url(#islvsailg)"/>`)
+        + '</g>';
+      fleet += one;
+      // its reflection, mirrored about its own waterline (the hull's cut mirrors with it)
+      rf += `<g transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${one}</g>`;
+      // the bow wave climbs from where the stem meets the water, with foam running aft along the hull
+      const [p1x, p1y] = rotH(x - L * 0.5, wl - hh), [p2x, p2y] = rotH(x - L * 0.44, wl + L * 0.12);
+      const sx = p1x + (p2x - p1x) * (wl - p1y) / (p2y - p1y);
+      sprays += `M${F(sx)} ${F(wl)}q${F(-L * 0.05)} ${F(-hh * 0.9)} ${F(-L * 0.15)} ${F(-hh * 0.1)}M${F(sx)} ${F(wl + 0.5)}H${F(x - L * 0.25)}`
+        + `M${F(x + L * 0.4)} ${F(wl + 1)}h${F(L * 0.9)}M${F(x + L * 0.55)} ${F(wl + L * 0.05)}h${F(L * 0.6)}`;
+      // its lights turn with it: the masthead light on the masthead, the port sidelight on the bow. Racing
+      // left, it shows the viewer its port side, so no green (owner, 2026-09-30: "an important accuracy change").
+      lights[0].push([...rotH(x - L * 0.5, wl - hh), 'r'], [...rot(mx, wl - hh - mh * 1.02), 'w']);
       s += dashes(streakList(x, wl + 1, Math.min(H, wl + L * 1.2), r, 0.06, 0.05), 's-vsailglint', 1, [0.06, 0.12, 0.2]);
     };
     const racers = [[0.62, 0.635, 0.035, -4, true, false], [0.47, 0.645, 0.045, -6, false, false], [0.79, 0.655, 0.05, -5, true, false],
       [0.3, 0.685, 0.066, -7, true, true], [0.56, 0.725, 0.085, -8, false, false], [0.86, 0.77, 0.1, -6, 2, false]];
     for (const [fx, fy, fl, hd, sp, hu] of racers) yacht(X(fx), Y(fy), X(fl), hd, sp, hu);
     // the fleet's reflections, broken by the water
-    s += `<g clip-path="url(#islsea)" opacity=".14">${rf}</g>`;
+    s += clips + `<g clip-path="url(#islsea)" opacity=".14">${rf}</g>`;
     s += `<path class="isl-vsurf" d="${sprays}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>`;
+    // the shore's lights, behind the yachts (drawn after them, they had shown on the sails)
+    s += `<path class="s-vlight isl-vwin isl-vlast" style="--i:3" d="${lights[1].map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('')}" stroke-width="1.4"/>`;
     s += fleet;
-    // The lights, the yachts first: port red, starboard green, masthead white, each with a halo.
+    // The lights, the yachts first: port red and masthead white, each with a halo.
     let yl = '';
     for (const [x, y, c] of lights[0]) yl += `<circle class="isl-vnav-${c}" cx="${F(x)}" cy="${F(y)}" r="1.3"/>`;
     s += `<g class="isl-vwin" style="--i:0">${lights[0].map(([x, y]) => halo(x, y, 6)).join('')}${yl}</g>`;
-    s += `<path class="s-vlight isl-vwin isl-vlast" style="--i:3" d="${lights[1].map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('')}" stroke-width="1.4"/>`;
     return s;
   }
 
@@ -1189,6 +1221,8 @@
     for (let y = top + Y(0.08); y < mid - Y(0.01); y += Y(0.03)) fine += `M${F(x0)} ${F(y)}H${F(x1 + sd)}`;
     for (let y = wTop + Y(0.06); y < street - Y(0.01); y += Y(0.036)) joints += `M${F(wx0)} ${F(y)}H${F(x0)}`;
     s += `<path class="isl-vstone" d="M${F(x0 - Y(0.006))} ${F(mid - Y(0.004))}H${F(x1 + sd + Y(0.006))}v${F(Y(0.02))}H${F(x0 - Y(0.006))}Z"/>`;
+    // the string course turns the corner too, like the cornice and parapet above it
+    s += `<path class="isl-vpshade" d="${turn(mid - Y(0.004), mid + Y(0.016), Y(0.006))}"/>`;
     s += `<path class="isl-vcourse" d="${joints}" stroke-width="1.1"/><path class="isl-vcourse" d="${fine}" stroke-width=".6" stroke-opacity=".6"/>`;
     // quoins: long and short blocks up both corners of the block, lighter than the stone about them
     let quoins = '';
@@ -1221,8 +1255,6 @@
     s += `<path class="isl-vmul" d="${arches}${dark}" stroke-width=".6" fill="none"/>`;
     s += `<path class="isl-vcourse" d="${vous}" stroke-width="1.2"/><path class="isl-vstone" d="${keys}"/>`;
     // the upper floor, the council room: five sash windows, lintels and sills, glazing bars; lit last
-    // the string course turns the corner too, like the cornice and parapet above it
-    s += `<path class="isl-vpshade" d="${turn(mid - Y(0.004), mid + Y(0.016), Y(0.006))}"/>`;
     let sash = '', sashDark = '', trim = '', bars = '';
     for (let i = 0; i < 5; i++) {
       const cx = x0 + bw * (i + 0.5), sw = bw * 0.36, sTop = top + Y(0.085), sBot = mid - Y(0.045);
@@ -2274,6 +2306,8 @@
     s += `<path class="isl-bink" d="${marks}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/>`;
     const hand = (h, m) => { const ah = ((h % 12) + m / 60) / 12 * Math.PI * 2, am = m / 60 * Math.PI * 2;
       return `M${F(kx)} ${F(ky)}L${F(kx + Math.sin(ah) * kr * 0.42)} ${F(ky - Math.cos(ah) * kr * 0.42)}M${F(kx)} ${F(ky)}L${F(kx + Math.sin(am) * kr * 0.64)} ${F(ky - Math.cos(am) * kr * 0.64)}`; };
+    // (the dusk hand hangs in its own version group: isl-d is hidden only at Dawn, Day and Night, so at
+    // Sunset it showed beside the sunset hand and the clock had two hour hands, owner's review 2026-09-30)
     for (const [cls, h, m] of [['isl-a', 6, 5], ['isl-y', 10, 30], ['isl-s', 18, 30], ['isl-d', 19, 30], ['isl-n', 22, 0]]) {
       const dusk = cls === 'isl-d';
       const p = `<path class="${dusk ? 'isl-chand' : cls + ' isl-chand'}" d="${hand(h, m)}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
@@ -2308,8 +2342,6 @@
     const f = newsFrame(W, H, 1);
     let s = windowView(W, H, f, y0, r, 1) + windowWall(W, H, f, 'islhwallg', 1);
     // the blinds, lowered over the window's upper half, slats and cords
-    // (the dusk hand hangs in its own version group: isl-d is hidden only at Dawn, Day and Night, so at
-    // Sunset it showed beside the sunset hand and the clock had two hour hands, owner's review 2026-09-30)
     let slats = '';
     for (let y = f.wT + Y(0.02); y < f.wT + (f.wB - f.wT) * 0.4; y += Y(0.024)) slats += rect(f.wx0 + Y(0.01), y, f.ww - Y(0.02), Y(0.014));
     s += `<path class="isl-hslat" d="${slats}"/><path class="isl-hcord" d="M${F(f.wx0 + f.ww * 0.2)} ${F(f.wT)}V${F(f.wT + (f.wB - f.wT) * 0.5)}M${F(f.wx0 + f.ww * 0.8)} ${F(f.wT)}V${F(f.wT + (f.wB - f.wT) * 0.46)}" stroke-width="${F(Math.max(0.6, Y(0.004)))}"/>`;
