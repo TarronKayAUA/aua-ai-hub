@@ -323,15 +323,18 @@
   }
 
   /* ------------------------------------------------------------- the sky */
-  function stars(v, m, boxes, cls) {
+  // `near` (optional): a test for the points a drawing keeps clear that are not boxes, such as the homepage
+  // network's nodes and lines, so stars keep off the drawing itself rather than a rectangle round it.
+  function stars(v, m, boxes, cls, near) {
     // Seven steps of magnitude, from the brightest (a soft halo too) to the naked-eye limit; stars
     // brighter than 3.5 show their colour (B-V: blue-white, white, pale yellow, orange), as the eye sees
     // colour only in the brighter ones.
     const w = [3.0, 2.4, 1.9, 1.55, 1.3, 1.1, 0.95], a = [1, 0.97, 0.9, 0.8, 0.68, 0.56, 0.46];
     const g = {}, halo = [];
+    const off = (x, y) => hits(boxes, x, y, x, y, 6) || (near && near(x, y));
     for (const [az, alt, mag, bv] of SKY[m].st) {
       const x = v.x(az), y = v.y(alt);
-      if (x < 2 || x > v.W - 2 || y < 2 || y > v.y0 - 3 || hits(boxes, x, y, x, y, 6)) continue;
+      if (x < 2 || x > v.W - 2 || y < 2 || y > v.y0 - 3 || off(x, y)) continue;
       const i = mag < 0.5 ? 0 : mag < 1.5 ? 1 : mag < 2.5 ? 2 : mag < 3.5 ? 3 : mag < 4.5 ? 4 : mag < 5.3 ? 5 : 6;
       const tint = i > 3 ? '' : bv < -0.02 ? ' s-star-b' : bv < 0.58 ? '' : bv < 1.15 ? ' s-star-y' : ' s-star-o';
       (g[i + tint] = g[i + tint] || []).push(`M${F(x)} ${F(y)}h0`);
@@ -342,7 +345,7 @@
     if (deep) {
       for (let i = 0; i < deep.length; i += 3) {
         const x = v.x(deep[i] / 10), y = v.y(deep[i + 1] / 10);
-        if (x < 2 || x > v.W - 2 || y < 2 || y > v.y0 - 3 || hits(boxes, x, y, x, y, 6)) continue;
+        if (x < 2 || x > v.W - 2 || y < 2 || y > v.y0 - 3 || off(x, y)) continue;
         (deep[i + 2] < 73 ? d1 : d2).push(`M${F(x)} ${F(y)}h0`);
       }
     }
@@ -351,8 +354,10 @@
     // 14 px per degree against 6 in the vignettes), so where the real stars fall short of the density
     // the vignettes show (FIELD, stars per pixel of sky), faint dots are painted in to make it up:
     // uncatalogued, a painter's licence like the rest of the dense sky. They thin toward the horizon,
-    // gather along the Milky Way at night, stay out of the afterglow, and keep clear of the words. The
-    // count is what is missing, so a sky already dense (most vignettes) gets none.
+    // gather along the Milky Way at night, stay out of the afterglow at Dusk (Night has none since
+    // 2026-09-29, and keeping them out of it there left a starless band over the homepage's campus:
+    // owner, 2026-09-30), and keep clear of the words. The count is what is missing, so a sky already
+    // dense (most vignettes) gets none.
     const FIELD = m === 'n' ? 0.0085 : 0.00045;
     let have = d1.length + d2.length;
     for (const k in g) have += g[k].length;
@@ -366,13 +371,13 @@
       let made = 0, guard = 0;
       while (made < need && guard++ < need * 8) {
         const x = 2 + r() * (v.W - 4), y = 2 + Math.pow(r(), 1.2) * (v.y0 - 6), q = r(), s = r();
-        if (Math.hypot((x - sunX) / gx, (v.y0 - y) / gy) < 1 && q < 0.7) continue;
+        if (m === 'd' && Math.hypot((x - sunX) / gx, (v.y0 - y) / gy) < 1 && q < 0.7) continue;
         if (band.length) {
           let dmin = 1e9, bw = 1;
           for (const [bx, by, w2] of band) { const d = Math.hypot(x - bx, y - by); if (d < dmin) { dmin = d; bw = w2; } }
           if (q > 0.45 + 0.55 * Math.exp(-((dmin / (bw * 0.6)) ** 2))) continue;
         }
-        if (hits(boxes, x, y, x, y, 6)) continue;
+        if (off(x, y)) continue;
         made++;
         (s < 0.7 ? f1 : s < 0.95 ? f2 : f3).push(`M${F(x)} ${F(y)}h0`);
       }
@@ -549,7 +554,17 @@
     }
     const seg = (list) => list.map(([a, b]) => `M${F(a[0])} ${F(a[1])}L${F(b[0])} ${F(b[1])}`).join('');
     const rings = (list, rr) => list.map(([x, y]) => `M${F(x - rr)} ${F(y)}a${rr} ${rr} 0 1 0 ${F(2 * rr)} 0a${rr} ${rr} 0 1 0 ${F(-2 * rr)} 0`).join('');
+    // What the stars keep clear of: a little room round each node and along each line, so no star is
+    // taken for a node or strung on a line; elsewhere the sky runs on through the network (owner,
+    // 2026-09-30: its whole box had been left without stars, a dark rectangle in the sky).
+    const nodes = layers.flat(), lines = edges.flat(), nodeR = ring + 7, lineR = 3.5;
+    const toSeg = (x, y, [a, b]) => {
+      const dx = b[0] - a[0], dy = b[1] - a[1], t = clamp(((x - a[0]) * dx + (y - a[1]) * dy) / (dx * dx + dy * dy || 1), 0, 1);
+      return Math.hypot(x - a[0] - t * dx, y - a[1] - t * dy);
+    };
+    const near = (x, y) => nodes.some(([nx, ny]) => Math.hypot(x - nx, y - ny) < nodeR) || lines.some((l) => toSeg(x, y, l) < lineR);
     return {
+      near,
       base: `<path class="s-net" d="${seg(edges.flat())}" stroke-width=".8"/><path class="s-node" d="${rings(layers.flat(), ring)}" stroke-width="1"/>`,
       pulses: layers.map((list, li) => (li ? `<path class="s-pulse" d="${seg(edges[li - 1])}" stroke-width="1.3"/>` : '')
         + `<path class="f-pulse" d="${rings(list, ring + 1.2)}"/>`),
@@ -733,8 +748,10 @@
     const band = [(M.word ? M.word[2] : 0) + (phone ? 18 : 30), phone ? 6 : 10, right, Math.min(top, v.y0) - (phone ? 20 : 14)];
     const nb = netPlace(v, band, words);
     const net = nb ? network(nb, phone || nb[2] < 170 ? [2, 3, 2, 1] : [3, 4, 3, 1], 7, phone ? 1.6 : 2) : null;
-    // The frigatebird, in the bold hero only: about 5.6 degrees of wing at this scale. No star shows
-    // through it, where it rests or along its short glide (layout-art.css, isl-glide).
+    // The frigatebird, in the bold hero only: about 5.6 degrees of wing at this scale. Its silhouette is
+    // solid, so the stars behind it are simply covered, where it rests and along its short glide
+    // (layout-art.css, isl-glide), as they are behind the Curtain Bluff bird; the sky is not cleared
+    // round it (owner, 2026-09-30: a cleared box read as a starless rectangle).
     // The campus (owner, 2026-09-27): in the bold hero, when island-vignettes.js has arrived, the
     // American University of Antigua stands right of the words in place of the Curtain Bluff coast.
     const scene = bold && A.heroScene ? A.heroScene(v, colOf(M) + 28, W - 6, H) : null;
@@ -748,7 +765,8 @@
       + `<rect y="${F(v.y0 - 2.4 * v.ppd)}" width="${F(W)}" height="${F(2.4 * v.ppd)}" fill="url(#islhazeg)"/>`
       + glowSky(v, 'd', 'isl-d') + glowSky(v, 'n', 'isl-n')
       + (bold ? shade(v, colOf(M)) : '')
-      + stars(v, 'd', clear, 'isl-d isl-dstars') + stars(v, 'n', clear, 'isl-n')
+      // the stars keep clear of the words (for their contrast) and of the network's nodes and lines only
+      + stars(v, 'd', words, 'isl-d isl-dstars', net && net.near) + stars(v, 'n', words, 'isl-n', net && net.near)
       + planets(v, 'd', words, 'isl-d') + planets(v, 'n', words, 'isl-n')
       + moon(v, 'd', words, 'isl-d') + moon(v, 'n', words, 'isl-n')
       + (A.heroSky ? A.heroSky(v, W, H, colOf(M) + 28, clear.concat(skyObjects(v, words)), !scene) : '')
