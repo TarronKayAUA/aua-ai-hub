@@ -120,12 +120,12 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### bell-tower
 
-- [ ] #16 fix v4 `bell-tower-2`: Quoins stick out of the tower as see-through blocks and are out of step
-- [ ] #27 fix v3 `bell-tower-1`: Slivers of sea and sky show between the town's houses
-- [ ] #35 fix v3 `bell-tower-3`: The shaft shows a side face the belfry and roof do not have
-- [ ] #65 fix v2 `bell-tower-4`: The weather vane is drawn above the picture
-- [ ] #67 fix v2 `bell-tower-6`: The notice board's little roof merges with the house roofs behind it
-- [ ] #103 add v2 `bell-tower-5`: Give the sea its finish: horizon hatch and the headland's reflection
+- [x] #16 fix v4 `bell-tower-2`: Quoins stick out of the tower as see-through blocks and are out of step
+- [x] #27 fix v3 `bell-tower-1`: Slivers of sea and sky show between the town's houses
+- [x] #35 fix v3 `bell-tower-3`: The shaft shows a side face the belfry and roof do not have
+- [x] #65 fix v2 `bell-tower-4`: The weather vane is drawn above the picture
+- [x] #67 fix v2 `bell-tower-6`: The notice board's little roof merges with the house roofs behind it
+- [x] #103 add v2 `bell-tower-5`: Give the sea its finish: horizon hatch and the headland's reflection
 - [ ] #112 add v2 `bell-tower-7`: Pave the square in perspective, as the Way In picture does
 
 ### dish-net

@@ -2367,6 +2367,9 @@
     // 2. The town: roofs of different heights stepping down toward the sea, gables and a hip or two,
     //    walls with small windows, lit from Dawn to Night.
     const ground = Y(0.86);
+    // (the sea's finish: ripples dense toward the horizon and the headland's faint reflection, drawn with
+    // their own random stream so the houses keep their sizes)
+    s += dashes(hatchList(W, y0, ground, rng(733)), 's-vrip', 1, [0.1, 0.18, 0.28]) + mirrored(y0, farLand, 0.18);
     const walls = ['', '', ''];
     let roofs = '', wins = '';
     let x = X(0.3);
@@ -2377,7 +2380,7 @@
       x += w + Y(0.01);
     }
     houses.forEach(([hx, w, top], i) => {
-      walls[i % 3] += rect(hx, top, w, ground - top + 1);
+      walls[i % 3] += rect(hx, top, w + Y(0.01) + 0.5, ground - top + 1);   // (a terrace: no seam of sea between)
       const pk = top - Y(0.06 + r() * 0.03);
       roofs += polyD([[hx - Y(0.015), top + 0.5], [hx + w / 2, pk], [hx + w + Y(0.015), top + 0.5]]);
       for (let k = 0; k < Math.max(1, Math.round(w / Y(0.09))); k++) {
@@ -2397,15 +2400,22 @@
     //    opening, a pyramid roof and a vane.
     const tc = X(0.81), tw = Y(0.34), tTop = Y(0.43), bel = Y(0.3), roofTop = Y(0.005);
     const t0 = tc - tw / 2, t1 = tc + tw / 2;
-    s += `<path d="${rect(t0, tTop, tw, ground - tTop + 1)}" fill="url(#islvfacade)"/><path class="isl-vpshade" d="${rect(tc + tw * 0.2, tTop, tw * 0.3, ground - tTop + 1)}"/>`;
+    // (seen straight on, as the campus clock tower: the shaft had a side face that the belfry and roof above
+    // it did not have; its depth is the shadow under the belfry's cornice, below)
+    s += `<path d="${rect(t0, tTop, tw, ground - tTop + 1)}" fill="url(#islvfacade)"/>`;
     let cr = '', qn = '';
     for (let y = tTop + Y(0.05); y < ground; y += Y(0.05)) cr += `M${F(t0)} ${F(y)}H${F(t1)}`;
-    for (let y = tTop, k = 0; y < ground - Y(0.02); y += Y(0.045), k++) qn += rect(k % 2 ? t0 : t0 - Y(0.004), y, Y(0.05 + (k % 2) * 0.02), Y(0.04)) + rect(k % 2 ? t1 - Y(0.05) : t1 - Y(0.066), y, Y(0.05 + (k % 2) * 0.016), Y(0.04));
+    // (the quoins one course tall, on the courses, long and short in turn and flush with both corners: they had
+    // overshot the right corner as see-through blocks and drifted off the courses; a plinth at the foot)
+    const cs = Y(0.05);
+    for (let y = tTop, k = 0; y + cs <= ground + 0.5; y += cs, k++) { const qw = Y(k % 2 ? 0.07 : 0.05); qn += rect(t0, y + 0.6, qw, cs - 1.2) + rect(t1 - qw, y + 0.6, qw, cs - 1.2); }
     s += `<path class="isl-vcourse" d="${cr}" stroke-width=".7"/><path class="isl-vstone" d="${qn}" fill-opacity=".45"/>`;
+    s += `<path class="isl-vstone" d="${rect(t0 - Y(0.012), ground - Y(0.03), tw + Y(0.024), Y(0.03) + 1)}"/>`;
     // the belfry: its stage, wider, with a cornice under and over; the arched opening shows the sky
     const b0 = t0 - Y(0.02), b1 = t1 + Y(0.02), bTop = tTop - bel;
     s += `<path d="${rect(b0, bTop, b1 - b0, bel)}${arch(tc, bTop + Y(0.03), tw * 0.64, tTop - Y(0.02))}" fill="url(#islvfacade)" fill-rule="evenodd"/>`;
     s += `<path class="isl-vstone" d="${rect(b0 - Y(0.015), tTop - Y(0.012), b1 - b0 + Y(0.03), Y(0.024))}${rect(b0 - Y(0.015), bTop - Y(0.02), b1 - b0 + Y(0.03), Y(0.024))}"/>`;
+    s += `<path class="isl-vpshade" d="${rect(t0, tTop + Y(0.012), tw, Y(0.03))}"/>`;   // the cornice's shadow on the shaft
     s += `<path class="isl-vsill" d="M${F(tc - tw * 0.33)} ${F(tTop - Y(0.02))}H${F(tc + tw * 0.33)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     // the bell, mid-swing on its yoke across the opening, its clapper hanging to the low side
     const yokeY = bTop + Y(0.07), ang = -22;
@@ -2417,8 +2427,9 @@
       + `<path class="isl-vbeam" d="M0 ${F(bh2 * 0.5)}L${F(-bwid * 0.35)} ${F(bh2 + Y(0.02))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><circle class="isl-vbrass2" cx="${F(-bwid * 0.36)}" cy="${F(bh2 + Y(0.024))}" r="${F(Y(0.012))}"/></g>`;
     // the pyramid roof and its vane
     s += `<path class="isl-troof" d="${polyD([[b0 - Y(0.03), bTop - Y(0.018)], [tc, roofTop + Y(0.04)], [b1 + Y(0.03), bTop - Y(0.018)]])}"/>`
-      + `<path class="isl-vrail" d="M${F(tc)} ${F(roofTop + Y(0.045))}V${F(roofTop - Y(0.03))}M${F(tc - Y(0.025))} ${F(roofTop - Y(0.005))}H${F(tc + Y(0.03))}" stroke-width="${F(Math.max(1, Y(0.008)))}"/>`
-      + `<path class="isl-vvane" d="M${F(tc)} ${F(roofTop - Y(0.03))}h${F(Y(0.05))}l${F(-Y(0.012))} ${F(Y(0.014))}h${F(-Y(0.038))}Z"/>`;
+      // (the vane whole inside the picture, on a short rod above the apex: it had been drawn above the frame)
+      + `<path class="isl-vrail" d="M${F(tc)} ${F(roofTop + Y(0.045))}V${F(Y(0.012))}" stroke-width="${F(Math.max(1, Y(0.008)))}"/>`
+      + `<path class="isl-vvane" d="M${F(tc)} ${F(Y(0.012))}h${F(Y(0.04))}l${F(-Y(0.01))} ${F(Y(0.013))}h${F(-Y(0.03))}Z"/>`;
     // 5. The rings of sound, spreading from the bell to the left, each in turn; birds lift off the roof.
     const scx = tc - Y(0.02), scy = yokeY + bh2 * 0.6;
     for (let k = 0; k < 3; k++) {
@@ -2436,7 +2447,7 @@
     const nb0 = X(0.61), nb1 = nb0 + Y(0.4), nbT = Y(0.55), nbB = Y(0.78);
     s += `<path class="isl-vpost" d="${rect(nb0 + Y(0.02), nbB, Y(0.018), ground - nbB + 1)}${rect(nb1 - Y(0.038), nbB, Y(0.018), ground - nbB + 1)}"/>`;
     s += `<path class="isl-lwood2" d="${rect(nb0, nbT, nb1 - nb0, nbB - nbT)}"/><path class="isl-bcork" d="${rect(nb0 + Y(0.012), nbT + Y(0.012), nb1 - nb0 - Y(0.024), nbB - nbT - Y(0.024))}"/>`;
-    s += `<path class="isl-troof" d="${polyD([[nb0 - Y(0.02), nbT + Y(0.004)], [(nb0 + nb1) / 2, nbT - Y(0.045)], [nb1 + Y(0.02), nbT + Y(0.004)]])}"/>`;
+    s += `<path class="isl-lwood2" d="${polyD([[nb0 - Y(0.02), nbT + Y(0.004)], [(nb0 + nb1) / 2, nbT - Y(0.045)], [nb1 + Y(0.02), nbT + Y(0.004)]])}"/>`;   // (the board's own wood)
     let notes = '', pins = '', ink = '';
     // each note: its place across the board and down it (shares), its size (of the card's height), a tilt
     [[0.14, 0.42, 0.075, 0.1, -4], [0.34, 0.48, 0.085, 0.12, 3], [0.53, 0.4, 0.075, 0.09, -2], [0.71, 0.5, 0.09, 0.11, 5], [0.88, 0.44, 0.065, 0.085, -3]].forEach(([fx, fy, w, h, rot]) => {
