@@ -75,14 +75,14 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### lamp-steps
 
-- [ ] #15 fix v4 `lamp-steps-1`: The far shore's lights are missing; only their columns are drawn
-- [ ] #29 fix v3 `lamp-steps-8`: The yacht's masthead light sits exactly on the horizon
-- [ ] #34 fix v3 `lamp-steps-2`: The turret's slit sits on the edge between its faces; its shade spills into the sky
-- [ ] #69 fix v2 `lamp-steps-3`: The century plant is in front of the stairs but behind the lantern on them
-- [ ] #70 fix v2 `lamp-steps-7`: The scrub beside the steps reads as pebbles; make it shrubs
-- [ ] #76 fix v2 `lamp-steps-6`: The lookout's warm halo is on before its windows light
-- [ ] #94 add v2 `lamp-steps-4`: The anchored yacht's reflection, and a furled mainsail on a boom
-- [ ] #98 add v2 `lamp-steps-5`: Carry the stone courses up the turret and across the broken wall
+- [x] #15 fix v4 `lamp-steps-1`: The far shore's lights are missing; only their columns are drawn
+- [x] #29 fix v3 `lamp-steps-8`: The yacht's masthead light sits exactly on the horizon
+- [x] #34 fix v3 `lamp-steps-2`: The turret's slit sits on the edge between its faces; its shade spills into the sky
+- [x] #69 fix v2 `lamp-steps-3`: The century plant is in front of the stairs but behind the lantern on them
+- [x] #70 fix v2 `lamp-steps-7`: The scrub beside the steps reads as pebbles; make it shrubs
+- [x] #76 fix v2 `lamp-steps-6`: The lookout's warm halo is on before its windows light
+- [x] #94 add v2 `lamp-steps-4`: The anchored yacht's reflection, and a furled mainsail on a boom
+- [x] #98 add v2 `lamp-steps-5`: Carry the stone courses up the turret and across the broken wall
 
 ### library
 

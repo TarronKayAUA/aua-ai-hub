@@ -902,16 +902,23 @@
     const farLand = `<path class="f-isl" d="${poly(farShore)}${scrub(farShore.slice(0, 6), 4, 0.7, 1.6)}"/>`;
     s += farLand + mirrored(y0, farLand, 0.2) + mist(X(-0.05), Y(0.6), X(0.42), Y(0.04), 0.5);
     const shoreLights = [];
-    for (let i = 0; i < 12; i++) shoreLights.push([X(0.01 + r() * 0.3), Y(0.582 + r() * 0.014)]);
+    for (let i = 0; i < 12; i++) {
+      const lx0 = X(0.01 + r() * 0.3), tp = topAt(lx0);
+      shoreLights.push([lx0, tp + (Y(0.6) - tp) * (0.25 + r() * 0.5)]);
+    }
     s += makeKit(W, H).dayHouses(shoreLights, Y(0.016), 67);
     for (const [x] of shoreLights) s += dashes(streakList(x, y0, H, r, 0.05, 0.05), 's-vglow', 1, [0.06, 0.13, 0.24]);
     // a yacht at anchor, its riding light and its column of light
     const bx = X(0.19), by = Y(0.8);
     s += dashes(streakList(bx, by + 2, H, r, 0.05, 0.08), 's-vglow', 1.1, [0.1, 0.2, 0.34]);
-    s += `<g class="isl-vwin" style="--i:0">${halo(bx, by - Y(0.2), Y(0.045))}<circle class="f-pulse" cx="${F(bx)}" cy="${F(by - Y(0.2))}" r="1.4"/></g>`;
-    s += `<path class="isl-vhull" d="M${F(bx - X(0.035))} ${F(by - Y(0.014))}H${F(bx + X(0.035))}L${F(bx + X(0.026))} ${F(by)}H${F(bx - X(0.028))}Z"/>`
+    // (its mast stands clear above the far shore, where its riding light had sat on the horizon like one more
+    // shore light; a boom carries the furled mainsail; the yacht has its reflection, as every hull does)
+    s += `<g class="isl-vwin" style="--i:0">${halo(bx, by - Y(0.25), Y(0.045))}<circle class="f-pulse" cx="${F(bx)}" cy="${F(by - Y(0.25))}" r="1.4"/></g>`;
+    const yacht = `<path class="isl-vhull" d="M${F(bx - X(0.035))} ${F(by - Y(0.014))}H${F(bx + X(0.035))}L${F(bx + X(0.026))} ${F(by)}H${F(bx - X(0.028))}Z"/>`
       + `<path class="isl-vsheer" d="M${F(bx - X(0.035))} ${F(by - Y(0.014))}H${F(bx + X(0.035))}" stroke-width="1"/>`
-      + `<path class="isl-vmast" d="M${F(bx)} ${F(by - Y(0.014))}V${F(by - Y(0.2))}M${F(bx)} ${F(by - Y(0.19))}L${F(bx + X(0.03))} ${F(by - Y(0.018))}M${F(bx)} ${F(by - Y(0.19))}L${F(bx - X(0.03))} ${F(by - Y(0.018))}" stroke-width=".9"/>`;
+      + `<path class="isl-vmast" d="M${F(bx)} ${F(by - Y(0.014))}V${F(by - Y(0.25))}M${F(bx)} ${F(by - Y(0.24))}L${F(bx + X(0.03))} ${F(by - Y(0.018))}M${F(bx)} ${F(by - Y(0.24))}L${F(bx - X(0.03))} ${F(by - Y(0.018))}" stroke-width=".9"/>`
+      + `<path class="isl-vsheer" d="M${F(bx)} ${F(by - Y(0.05))}L${F(bx - X(0.026))} ${F(by - Y(0.042))}" stroke-width="${F(Math.max(2, Y(0.008)))}" stroke-linecap="round"/>`;
+    s += `<g clip-path="url(#islsea)" opacity=".15"><g transform="translate(0 ${F(2 * by)}) scale(1 -1)">${yacht}</g></g>` + yacht;
     // 2. The hillside rising to the summit, scrub along its crest and a rim of light.
     const crest = [[0.28, 1.03], [0.31, 0.93], [0.35, 0.84], [0.4, 0.74], [0.46, 0.64], [0.52, 0.55], [0.58, 0.47], [0.64, 0.4],
       [0.7, 0.34], [0.76, 0.295], [0.82, 0.27], [0.88, 0.262], [0.94, 0.275], [1.02, 0.3]];
@@ -926,31 +933,49 @@
     const tw2 = lw * 0.2, th = lh * 1.22;                    // the turret, on the right-hand corner
     let gh = `M${F(gx0)} ${F(lb)}V${F(lb - lh)}H${F(gx1 - tw2)}V${F(lb)}Z`;
     gh += `M${F(gx1 - tw2)} ${F(lb)}V${F(lb - th)}H${F(gx1)}V${F(lb)}Z`;
+    // the shore's lights, each a share of the way down the land at its x, so the lights (and the houses by
+    // Day) sit on the land; the same two draws each, so nothing else moves
+    const topAt = (px) => {
+      for (let i = 0; i < 5; i++) {
+        const [xa, ya] = farShore[i], [xb, yb] = farShore[i + 1];
+        if (px >= xa && px <= xb) return ya + (yb - ya) * (px - xa) / (xb - xa);
+      }
+      return Y(0.6);
+    };
     for (let i = 0; i < 6; i++) {                            // merlons along the parapet
       const mx = gx0 + i * (lw - tw2) / 6;
       gh += `M${F(mx)} ${F(lb - lh)}h${F((lw - tw2) / 12)}v${F(-Y(0.022))}h${F(-(lw - tw2) / 12)}Z`;
     }
-    for (let i = 0; i < 3; i++) {                            // and on the turret
-      const mx = gx1 - tw2 + i * tw2 / 3;
-      gh += `M${F(mx)} ${F(lb - th)}h${F(tw2 / 6)}v${F(-Y(0.02))}h${F(-tw2 / 6)}Z`;
-    }
+    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(shoreLights)}" stroke-width="1.3"/>`;
+    const tmw = tw2 / 5, tm = [0, 1, 2].map((i) => gx1 - tw2 + i * (tw2 - tmw) / 2);
+    for (const mx of tm) gh += `M${F(mx)} ${F(lb - th)}h${F(tmw)}v${F(-Y(0.02))}h${F(-tmw)}Z`;   // and on the turret, one on each corner
     // the broken wall stepping down the slope to the left
     gh += `M${F(gx0 - lw * 0.32)} ${F(lb + Y(0.012))}V${F(lb - lh * 0.3)}H${F(gx0 - lw * 0.2)}V${F(lb - lh * 0.42)}H${F(gx0 - lw * 0.08)}V${F(lb - lh * 0.55)}H${F(gx0)}V${F(lb)}Z`;
-    s += halo(lx, lb - lh * 0.45, Y(0.24), 'islvwarm');
+    const lookI = 4.6;   // the lookout lights after the four lanterns (lanterns.length + 0.6), its glow with it
+    s += `<g class="isl-vwin isl-vlast" style="--i:${lookI};--isl-vstep:.6s">${halo(lx, lb - lh * 0.45, Y(0.24), 'islvwarm')}</g>`;
     s += `<path class="isl-vstone" d="${gh}"/>`;
     // the shaded turret face and the courses of stone
-    s += `<path class="isl-vpshade" d="M${F(gx1 - tw2 * 0.45)} ${F(lb)}V${F(lb - th - Y(0.02))}H${F(gx1)}V${F(lb)}Z"/>`;
+    // (only the stone: the shade had filled the gaps between the merlons, over the sky)
+    const tsx = gx1 - tw2 * 0.45;
+    let tsh = `M${F(tsx)} ${F(lb)}V${F(lb - th)}H${F(gx1)}V${F(lb)}Z`;
+    for (const mx of tm) { const a = Math.max(mx, tsx); if (mx + tmw > a) tsh += rect(a, lb - th - Y(0.02), mx + tmw - a, Y(0.02)); }
+    s += `<path class="isl-vpshade" d="${tsh}"/>`;
     let courses = '';
-    for (let y = lb - Y(0.02); y > lb - lh + Y(0.01); y -= Y(0.022)) courses += `M${F(gx0 + 1)} ${F(y)}H${F(gx1 - 1)}`;
+    // (carried up the turret and across the broken wall, which had been plain blocks beside the coursed house)
+    const edgeAt = (yy) => (yy > lb - lh * 0.3 + 1 ? gx0 - lw * 0.32 : yy > lb - lh * 0.42 + 1 ? gx0 - lw * 0.2 : yy > lb - lh * 0.55 + 1 ? gx0 - lw * 0.08 : gx0);
+    for (let y = lb - Y(0.02); y > lb - th + Y(0.01); y -= Y(0.022)) {
+      const xa = y > lb - lh + Y(0.01) ? edgeAt(y) : gx1 - tw2;
+      courses += `M${F(xa + 1)} ${F(y)}H${F(gx1 - 1)}`;
+    }
     s += `<path class="isl-vcourse" d="${courses}" stroke-width=".7"/>`;
-    s += `<path class="isl-vcourse" d="M${F(gx0)} ${F(mid)}H${F(gx1 - tw2)}" stroke-width="1.6"/>`;
+    s += `<path class="isl-vcourse" d="M${F(gx0)} ${F(mid)}H${F(gx1)}" stroke-width="1.6"/>`;
     // the openings, lit from within: three arches below, two windows above, a slit in the turret
     const archAt = (x, w, top, bot) => `M${F(x - w / 2)} ${F(bot)}V${F(top + w / 2)}A${F(w / 2)} ${F(w / 2)} 0 0 1 ${F(x + w / 2)} ${F(top + w / 2)}V${F(bot)}Z`;
     const bayW = (lw - tw2) / 3;
     let lit = '';
     for (let i = 0; i < 3; i++) lit += archAt(gx0 + bayW * (i + 0.5), bayW * 0.46, mid + Y(0.03), lb);
     for (let i = 0; i < 2; i++) { const wx = gx0 + (lw - tw2) * (0.3 + i * 0.4); lit += `M${F(wx - bayW * 0.16)} ${F(lb - lh + Y(0.045))}h${F(bayW * 0.32)}v${F(Y(0.05))}h${F(-bayW * 0.32)}Z`; }
-    lit += `M${F(gx1 - tw2 / 2 - 1.5)} ${F(lb - th + Y(0.05))}h3v${F(Y(0.06))}h-3Z`;
+    lit += `M${F(gx1 - tw2 * 0.725 - 1.5)} ${F(lb - th + Y(0.05))}h3v${F(Y(0.06))}h-3Z`;   // mid lit face, clear of the edge
     // (placed below, after the lanterns, so it lights last)
     const lookoutLit = lit;
     // 4. The steps, in profile: one staircase climbing the hillside to the lookout, a riser and a
@@ -977,7 +1002,7 @@
     s += `<path class="isl-vstep-edge" d="${treads}" stroke-width="${F(Math.max(1.6, Y(0.008)))}"/>`;
     s += `<path class="isl-vstep-rise" d="${risers}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>`;
     // a century plant on the slope, its rosette and its tall flowering stalk, and scrub by the steps
-    const cpx = X(0.66), cpy = Y(0.66);
+    const cpx = X(0.69), cpy = Y(0.66);   // (clear of the landing's lantern, which it had stood behind)
     let cp = '';
     for (const [ang, len] of [[-160, 0.045], [-145, 0.06], [-128, 0.07], [-110, 0.075], [-92, 0.078], [-74, 0.075], [-56, 0.07], [-38, 0.06], [-22, 0.045]]) {
       const rad = ang * Math.PI / 180, ex = cpx + Math.cos(rad) * X(len), ey = cpy + Math.sin(rad) * Y(len * 1.5);
@@ -990,7 +1015,7 @@
       for (const sd of [-1, 1]) cp += `M${F(bx2)} ${F(by2)}q${F(sd * bl * 0.5)} ${F(-Y(0.012))} ${F(sd * bl)} ${F(-Y(0.004))}q${F(-sd * bl * 0.1)} ${F(Y(0.01))} ${F(-sd * bl)} ${F(Y(0.006))}Z`;
     }
     s += `<path class="f-near" d="${cp}"/>`;
-    s += `<path class="f-near" d="${scrub(P([[0.37, 0.99], [0.47, 0.84], [0.56, 0.68], [0.7, 0.5], [0.78, 0.36]]).map(([ex, ey]) => [ex + X(0.035), ey + Y(0.06)]), 5, 1.4, 3.2)}"/>`;
+    s += shrubs(P([[0.41, 0.915], [0.49, 0.82], [0.57, 0.72], [0.76, 0.42]]).map(([ex, ey]) => [ex, ey, Y(0.036)]), r);
     // 5. The lanterns: a post, a glazed lantern with its cap, a halo; the top one in the page's hue,
     //    and the last to light.
     lanterns.forEach(([lx2, ly2], i) => {
@@ -1001,7 +1026,7 @@
         + `<path class="${top ? 'isl-vlamp' : 'f-pulse'}" d="M${F(lx2 - lw2)} ${F(ly2 - ph)}V${F(ly2 - ph - lh2)}H${F(lx2 + lw2)}V${F(ly2 - ph)}Z"/></g>`;
       s += `<path class="isl-vpost" d="M${F(lx2 - lw2 * 1.5)} ${F(ly2 - ph - lh2)}L${F(lx2)} ${F(ly2 - ph - lh2 - Y(0.014))}L${F(lx2 + lw2 * 1.5)} ${F(ly2 - ph - lh2)}Z"/>`;
     });
-    s += `<path class="f-pulse isl-vwin isl-vlast" style="--i:${lanterns.length + 0.6};--isl-vstep:.6s" d="${lookoutLit}"/>`;
+    s += `<path class="f-pulse isl-vwin isl-vlast" style="--i:${lookI};--isl-vstep:.6s" d="${lookoutLit}"/>`;
     return s;
   }
 
