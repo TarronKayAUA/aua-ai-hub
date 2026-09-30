@@ -1192,6 +1192,10 @@
       for (const f of [0.28, 0.62]) if (r() < 0.45) tw += `M${F(x + w * f)} ${F(eave + Y(0.03))}h${F(Y(0.016))}v${F(Y(0.026))}h${F(-Y(0.016))}Z`;
       x += w + X(0.004 + r() * 0.01);
     }
+    // the next row back, in shade, behind the whole street: without it the harbour showed between the houses
+    // right down to the pavement and put the courthouse on the waterfront (review, 2026-09-30)
+    const back = `M${F(X(-0.03))} ${F(street)}V${F(v.y0 - Y(0.012))}H${F(X(1.03))}V${F(street)}Z`;
+    s += `<path class="isl-tw0" d="${back}"/><path class="isl-vpshade" d="${back}"/>`;
     s += walls.map((d, k) => `<path class="isl-tw${k}" d="${d}"/>`).join('') + `<path class="isl-troof" d="${roofsR}"/><path class="isl-troofg" d="${roofsG}"/>`
       + `<path class="f-pulse isl-vwin" style="--i:0" d="${tw}" opacity=".7"/>`;
     s += mist(X(-0.05), Y(0.7), X(1.1), Y(0.12), 0.3);
@@ -1223,6 +1227,9 @@
     s += `<path class="isl-vstone" d="M${F(x0 - Y(0.006))} ${F(mid - Y(0.004))}H${F(x1 + sd + Y(0.006))}v${F(Y(0.02))}H${F(x0 - Y(0.006))}Z"/>`;
     // the string course turns the corner too, like the cornice and parapet above it
     s += `<path class="isl-vpshade" d="${turn(mid - Y(0.004), mid + Y(0.016), Y(0.006))}"/>`;
+    // and casts its shadow under it on both faces, as the cornice does, so it still reads on the shaded side by
+    // Day, where the stone and the wall come to the same tone in shade (owner, 2026-09-30)
+    s += `<path class="isl-vpshade" d="M${F(x0)} ${F(mid + Y(0.016))}H${F(x1 + sd)}v${F(Y(0.009))}H${F(x0)}Z"/>`;
     s += `<path class="isl-vcourse" d="${joints}" stroke-width="1.1"/><path class="isl-vcourse" d="${fine}" stroke-width=".6" stroke-opacity=".6"/>`;
     // quoins: long and short blocks up both corners of the block, lighter than the stone about them
     let quoins = '';
@@ -1231,6 +1238,14 @@
       quoins += `M${F(x0)} ${F(y)}h${F(qw)}v${F(-qh)}h${F(-qw)}ZM${F(x1)} ${F(y)}h${F(-qw)}v${F(-qh)}h${F(qw)}Z`;
     }
     s += `<path class="isl-vstone" d="${quoins}"/>`;
+    // the right-hand quoins return round the corner onto the side face, in its shade: each stone shows on both
+    // faces, short where the front is long and long where it is short, foreshortened like the side (owner, 2026-09-30)
+    let qret = '';
+    for (let k = 0, y = street; y > top + Y(0.04); y -= Y(0.036), k++) {
+      const rw = k % 2 ? Y(0.022) : Y(0.014), qh = Y(0.036) - 1.2;
+      qret += `M${F(x1)} ${F(y)}h${F(rw)}v${F(-qh)}h${F(-rw)}Z`;
+    }
+    s += `<path class="isl-vstone" d="${qret}"/><path class="isl-vpshade" d="${qret}"/>`;
     // 3. The windows. Warm light over the lower facade first, so the openings sit in it.
     s += `<g class="isl-vwin" style="--i:3"><ellipse cx="${F((x0 + x1) / 2)}" cy="${F(street - Y(0.08))}" rx="${F((x1 - x0) * 0.62)}" ry="${F(Y(0.24))}" fill="url(#islvwarm)"/></g>`;
     // the ground floor: five tall round-arched windows with voussoirs and a keystone; three lit, their
@@ -1271,7 +1286,13 @@
     const ex = (wx0 + x0) / 2, er = (x0 - wx0) * 0.13, eTop = wTop + Y(0.09);
     s += `<path class="f-pulse isl-vwin" style="--i:2" d="M${F(ex - er)} ${F(street)}V${F(eTop + er)}A${F(er)} ${F(er)} 0 0 1 ${F(ex + er)} ${F(eTop + er)}V${F(street)}Z`
       + `M${F(wx0 + (x0 - wx0) * 0.14)} ${F(wTop + Y(0.11))}h${F(Y(0.036))}v${F(Y(0.12))}h${F(-Y(0.036))}ZM${F(x0 - (x0 - wx0) * 0.14 - Y(0.036))} ${F(wTop + Y(0.11))}h${F(Y(0.036))}v${F(Y(0.12))}h${F(-Y(0.036))}Z"/>`;
-    s += `<path class="isl-vcourse" d="M${F(ex - er - Y(0.026))} ${F(eTop + er)}A${F(er + Y(0.026))} ${F(er + Y(0.026))} 0 0 1 ${F(ex + er + Y(0.026))} ${F(eTop + er)}" stroke-width="1.2"/>`;
+    let ev = `M${F(ex - er - Y(0.026))} ${F(eTop + er)}A${F(er + Y(0.026))} ${F(er + Y(0.026))} 0 0 1 ${F(ex + er + Y(0.026))} ${F(eTop + er)}`;
+    for (let k = 0; k <= 6; k++) {
+      const a = Math.PI + (k / 6) * Math.PI, ro = er + Y(0.026);
+      ev += `M${F(ex + Math.cos(a) * er)} ${F(eTop + er + Math.sin(a) * er)}L${F(ex + Math.cos(a) * ro)} ${F(eTop + er + Math.sin(a) * ro)}`;
+    }
+    s += `<path class="isl-vcourse" d="${ev}" stroke-width="1.2"/>`;
+    s += `<path class="isl-vstone" d="M${F(ex - Y(0.012))} ${F(eTop - Y(0.028))}h${F(Y(0.024))}l${F(-Y(0.004))} ${F(Y(0.032))}h${F(-Y(0.016))}Z"/>`;
     s += `<g class="isl-vwin" style="--i:2"><path d="M${F(ex - er)} ${F(street)}H${F(ex + er)}L${F(ex + er * 1.8)} ${F(street + Y(0.09))}H${F(ex - er * 1.8)}Z" fill="url(#islvspill)" opacity=".8"/></g>`;
     s += `<g class="isl-vwin" style="--i:3"><path d="${spill}" fill="url(#islvspill)" opacity=".8"/></g>`;
     // the flagpole on the parapet, and its pennant in the page's hue
@@ -1280,10 +1301,14 @@
     s += `<path class="isl-vpennant" d="M${F(fx)} ${F(fTop)}Q${F(fx + Y(0.07))} ${F(fTop + Y(0.01))} ${F(fx + Y(0.13))} ${F(fTop + Y(0.04))}Q${F(fx + Y(0.07))} ${F(fTop + Y(0.06))} ${F(fx)} ${F(fTop + Y(0.08))}Z"/>`;
     // 4. The low wall and its iron railings along the front, finials on the posts
     const rx0 = wx0, rx1 = x1 + sd;
-    let rail = `M${F(rx0)} ${F(street - Y(0.07))}H${F(rx1)}M${F(rx0)} ${F(street - Y(0.03))}H${F(rx1)}`;
-    for (let x = rx0 + Y(0.01); x < rx1; x += Y(0.022)) rail += `M${F(x)} ${F(street - Y(0.018))}V${F(street - Y(0.085))}`;
+    // (open in front of the wing's lit entrance, which the bars had crossed; each run ends on a heavier post)
+    const gl = ex - er - Y(0.02), gr = ex + er + Y(0.02);
+    let rail = '';
+    for (const yy of [street - Y(0.07), street - Y(0.03)]) rail += `M${F(rx0)} ${F(yy)}H${F(gl)}M${F(gr)} ${F(yy)}H${F(rx1)}`;
+    for (let x = rx0 + Y(0.01); x < rx1; x += Y(0.022)) if (x < gl - 1 || x > gr + 1) rail += `M${F(x)} ${F(street - Y(0.018))}V${F(street - Y(0.085))}`;
     s += `<path class="isl-vrailing" d="${rail}" stroke-width="1"/>`;
-    s += `<path d="M${F(rx0)} ${F(street + 1)}V${F(street - Y(0.018))}H${F(rx1)}V${F(street + 1)}Z" fill="url(#islvfacade)"/>`;
+    s += `<path class="isl-vrailing" d="M${F(gl)} ${F(street + 1)}V${F(street - Y(0.09))}M${F(gr)} ${F(street + 1)}V${F(street - Y(0.09))}" stroke-width="1.8"/>`;
+    s += `<path d="M${F(rx0)} ${F(street + 1)}V${F(street - Y(0.018))}H${F(gl)}V${F(street + 1)}ZM${F(gr)} ${F(street + 1)}V${F(street - Y(0.018))}H${F(rx1)}V${F(street + 1)}Z" fill="url(#islvfacade)"/>`;
     // 5. The street: the pavement and its kerb, the road's setts receding, lanterns on posts with their
     //    halos and pools, palms at the edges
     s += `<path class="isl-vtrack" d="M${F(-2)} ${F(street)}H${F(W + 2)}V${F(H + 2)}H${F(-2)}Z"/>`;

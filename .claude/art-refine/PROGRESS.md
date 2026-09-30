@@ -188,11 +188,12 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### court-house
 
+- [x] (owner, 2026-09-30) the string course's shadow on both faces, so the band reads on the shaded side by Day
 - [x] #3 fix v4 `court-house-1`: String course crosses the shaded side face lit
-- [ ] #7 fix v4 `court-house-4`: The sea shows between the town houses down to the street
-- [ ] #38 fix v3 `court-house-3`: The railing bars the lit entrance
-- [ ] #54 add v3 `court-house-2`: Quoins returning round the corner onto the side face
-- [ ] #96 add v2 `court-house-5`: Voussoirs and keystone on the wing's entrance arch
+- [x] #7 fix v4 `court-house-4`: The sea shows between the town houses down to the street
+- [x] #38 fix v3 `court-house-3`: The railing bars the lit entrance
+- [x] #54 add v3 `court-house-2`: Quoins returning round the corner onto the side face
+- [x] #96 add v2 `court-house-5`: Voussoirs and keystone on the wing's entrance arch
 
 ### st-johns-harbour
 
