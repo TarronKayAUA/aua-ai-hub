@@ -167,7 +167,9 @@
       + ` transform="rotate(${F(deg)} ${F(cx)} ${F(ccy)})" stroke-width="${F(w)}"/>`;
     let marks = '';
     for (let k = 0; k < 4; k++) { const a = k * Math.PI / 2; marks += `M${F(cx + Math.sin(a) * cr * 0.74)} ${F(ccy - Math.cos(a) * cr * 0.74)}L${F(cx + Math.sin(a) * cr * 0.9)} ${F(ccy - Math.cos(a) * cr * 0.9)}`; }
+    // (a dark bezel round the face, so it stands out from the tower's pale stone by Day: owner, 2026-09-30)
     const clock = `<circle class="isl-vclock" cx="${F(cx)}" cy="${F(ccy)}" r="${F(cr)}"/>`
+      + `<circle class="isl-vbezel" cx="${F(cx)}" cy="${F(ccy)}" r="${F(cr)}" stroke-width="${F(Math.max(1, cr * 0.12))}"/>`
       + `<path class="isl-vmark" d="${marks}" stroke-width="${F(Math.max(0.8, cr * 0.07))}"/>`
       + hand('isl-vhand-h', ha, cr * 0.5, Math.max(1.3, cr * 0.15)) + hand('isl-vhand-m', ma, cr * 0.78, Math.max(1, cr * 0.09))
       + `<circle class="isl-vpin" cx="${F(cx)}" cy="${F(ccy)}" r="${F(Math.max(0.8, cr * 0.09))}"/>`;
