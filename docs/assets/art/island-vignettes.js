@@ -2439,6 +2439,375 @@
     return `<g style="--isl-vstep:.45s">${s}</g>`;
   }
 
+  /* THE COMMITTEE ROOM (the Committee Work and Updates page's head; owner, 2026-09-29: art tied to the
+     title at a glance): the committee's room with its work in progress, seen from the near side of the
+     table, the viewer's own place, where the open folder of minutes lies. A round table, chairs round the
+     far side and the ends, a place at each with its papers, a folded name card and a glass, the folders
+     of minutes stacked in the middle beside a jug of water; a lamp hanging low over the table, lit from
+     Dawn to Night; on the back wall the committee's project board, notes moving from to do through under
+     way to done; a flip chart on its easel with the agenda, its items ticked off in the page's hue; the
+     window at the left onto the harbour, facing the Sun's setting bearing. The room is one true
+     perspective (owner, 2026-09-30: the far chairs looked "very tall or floating" and "the chairs all look
+     different sizes" when each was sized by hand): the eye is at a seated height and its horizon is the
+     sea's horizon in the window, so everything farther is smaller and higher, the floorboards meet on that
+     horizon, and every foot stands on the floor at its own depth. Face on, sized from the card's height.
+     The harbour's lights come on, then the lamp, and the agenda's ticks one by one, the last of them last
+     (reviewed 2026-09-30 by blind "which page is this?" tests and a craft and five-versions check before
+     the owner saw it). */
+  function committeeRoom(W, H, v) {
+    const y0 = v.y0, X = (k) => k * W, Y = (k) => k * H, r = rng(1307);
+    const f = newsFrame(W, H, -1);
+    let s = windowView(W, H, f, y0, r, 2) + windowWall(W, H, f, 'islkwallg', -1);
+    // The camera, in metres: the eye 1.2 m above the floor (seated), looking level, so its horizon is the
+    // window's (f.hz); the table's centre 2.88 m ahead (far enough that the table lies flat, not looming),
+    // the table 2.5 m across and 0.75 m high; the back wall 5 m away. fc is the focal length in pixels, set so the table fills the same share of the card
+    // at every width. P(x, d, h) is the place of a point x across, d ahead and h up.
+    const R = 1.25, D = 2.88, E = 1.2, dW = 5.0, hz = f.hz;
+    const fc = Math.min(Y(0.6), X(0.18)) * D / R;
+    const tx = Math.max(X(0.56), f.wx1 + Y(0.05) + fc * 1.85 / D);
+    const P = (x, d, h) => [tx + fc * x / d, hz + fc * (E - h) / d], sc = (d) => fc / d;
+    const ring = (cx, cd, rad, h, t0 = 0, t1 = 2 * Math.PI, n = 48) => {
+      const out = [];
+      for (let i = 0; i <= n; i++) { const t = t0 + (t1 - t0) * i / n; out.push(P(cx + rad * Math.cos(t), cd + rad * Math.sin(t), h)); }
+      return out;
+    };
+    const box = (pts) => { const xs = pts.map((p) => p[0]), ys = pts.map((p) => p[1]); return [(Math.min(...xs) + Math.max(...xs)) / 2, (Math.min(...ys) + Math.max(...ys)) / 2, (Math.max(...xs) - Math.min(...xs)) / 2, (Math.max(...ys) - Math.min(...ys)) / 2]; };
+    // 0. The room: the floor from the back wall's foot (wb) to the card's edge, its boards running toward
+    //    the viewer and meeting on the horizon; a skirting board; a rug under the table and chairs.
+    const wb = P(0, dW, 0)[1], dNear = fc * E / (H - hz);
+    s += `<path class="isl-lfloor" d="${rect(-2, wb, W + 4, H - wb + 2)}"/>`;
+    let planks = '';
+    for (let x = -14; x <= 14; x += 0.3) {
+      const [xa, ya] = P(x, dW, 0), [xb, yb] = P(x, dNear, 0);
+      if (Math.max(xa, xb) > -4 && Math.min(xa, xb) < W + 4) planks += `M${F(xa)} ${F(ya)}L${F(xb)} ${F(yb)}`;
+    }
+    s += `<path class="isl-lgrout" d="${planks}" stroke-width=".7" stroke-opacity=".5"/>`
+      + `<path class="isl-lwood2" d="${rect(-2, wb - 0.1 * sc(dW), W + 4, 0.1 * sc(dW))}"/>`
+      + `<path class="isl-lbase" d="M-2 ${F(wb)}H${F(W + 2)}" stroke-width="${F(Math.max(1, Y(0.008)))}"/>`;
+    s += `<path class="isl-krug" d="${polyD(ring(0, D, 1.95, 0))}"/><path class="isl-krugb" d="${polyD(ring(0, D, 1.8, 0))}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
+    // 1. The project board on the back wall between the window and the lamp, 1.35 to 2.15 m up: a whiteboard
+    //    in its frame, three columns (to do, under way, done) under their headings, the notes in each, the
+    //    last column fullest. (It is the picture's clearest sign of work in progress, so it is as wide as the
+    //    wall allows.)
+    const reg0 = f.wx1 + Y(0.06), reg1 = tx - Y(0.19), bw = Math.min(2.2 * sc(dW), reg1 - reg0);
+    if (bw > Y(0.24)) {
+      const bx0 = (reg0 + reg1) / 2 - bw / 2, bT = P(0, dW, 2.15)[1], bh = 0.8 * sc(dW), cw = bw / 3, ns = Math.min(bh * 0.24, cw * 0.36);
+      s += `<path class="isl-tdrop" d="${rect(bx0 + Y(0.01), bT + Y(0.013), bw, bh)}"/><path class="isl-lalu" d="${rect(bx0, bT, bw, bh)}"/>`
+        + `<path class="isl-kboard" d="${rect(bx0 + Y(0.008), bT + Y(0.008), bw - Y(0.016), bh - Y(0.016))}"/>`
+        + `<path class="isl-kbox" d="M${F(bx0 + cw)} ${F(bT + bh * 0.1)}V${F(bT + bh - Y(0.016))}M${F(bx0 + 2 * cw)} ${F(bT + bh * 0.1)}V${F(bT + bh - Y(0.016))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+      let heads = '';
+      for (let c = 0; c < 3; c++) heads += `M${F(bx0 + c * cw + cw * 0.25)} ${F(bT + bh * 0.16)}h${F(cw * 0.5)}`;
+      s += `<path class="isl-khead" d="${heads}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
+      // each note: its column, its place across and down the column, its color and a small tilt
+      let ink = '';
+      for (const [c, fx, row, cls, rot] of [[0, 0.5, 0, 'isl-knote', -4], [0, 0.5, 1, 'isl-lbk2', 3], [1, 0.5, 0, 'isl-knote', 2], [1, 0.5, 1, 'isl-lbk1', -3],
+        [2, 0.3, 0, 'isl-knote', 3], [2, 0.72, 0, 'isl-lbk2', -2], [2, 0.5, 1, 'isl-knote', -3]]) {
+        const cx = bx0 + c * cw + cw * fx, cy = bT + bh * (0.4 + row * 0.32);
+        s += `<rect class="${cls}" x="${F(cx - ns / 2)}" y="${F(cy - ns / 2)}" width="${F(ns)}" height="${F(ns)}" transform="rotate(${rot} ${F(cx)} ${F(cy)})"/>`;
+        ink += `M${F(cx - ns * 0.3)} ${F(cy - ns * 0.1)}h${F(ns * 0.6)}M${F(cx - ns * 0.3)} ${F(cy + ns * 0.15)}h${F(ns * 0.4)}`;
+      }
+      s += `<path class="isl-bink" d="${ink}" stroke-width="${F(Math.max(0.6, Y(0.005)))}"/>`;
+    }
+    // 2. The flip chart on its easel near the back wall at the right, 4.5 m away: two front legs to the
+    //    floor and one behind, the pad (0.9 m wide, 0.85 to 1.95 m up) clamped at the top with its used
+    //    sheets rolled over the clamp, the agenda: a heading and four items, each with its box; the first
+    //    three ticked in the page's hue, one after another.
+    const eD = 4.5, pwS = 0.9 * sc(eD), pcx = Math.min(X(0.9), W - pwS * 0.7), ex = (pcx - tx) / sc(eD);
+    const [p0, pT] = P(ex - 0.45, eD, 1.95), [p1, pB] = P(ex + 0.45, eD, 0.85), pw = p1 - p0, ps = sc(eD);
+    const [fl0x, fl0y] = P(ex - 0.55, eD - 0.15, 0), [fl1x, fl1y] = P(ex + 0.55, eD - 0.15, 0), [bkx, bky] = P(ex, eD + 0.3, 0), [bkx2, bky2] = P(ex, eD + 0.05, 1.85);
+    const [esx, esy, esr, esq] = box(ring(ex, eD, 0.55, 0));
+    s += `<ellipse class="isl-tdrop" cx="${F(esx)}" cy="${F(esy)}" rx="${F(esr)}" ry="${F(esq)}"/>`
+      + `<path class="isl-kleg" d="M${F(bkx2)} ${F(bky2)}L${F(bkx)} ${F(bky)}" stroke-width="${F(Math.max(1.1, 0.035 * ps))}" stroke-opacity=".7"/>`
+      + `<path class="isl-kleg" d="M${F(p0 + 0.08 * ps)} ${F(pT)}L${F(fl0x)} ${F(fl0y)}M${F(p1 - 0.08 * ps)} ${F(pT)}L${F(fl1x)} ${F(fl1y)}" stroke-width="${F(Math.max(1.3, 0.045 * ps))}"/>`;
+    s += `<path class="isl-tdrop" d="${rect(p0 + Y(0.01), pT + Y(0.013), pw, pB - pT)}"/><path class="isl-lpage" d="${rect(p0, pT, pw, pB - pT)}"/>`
+      + `<path class="isl-lpageedge" d="${rect(p0 - 0.025 * ps, pT, 0.025 * ps, 0.15 * ps)}${rect(p1, pT, 0.025 * ps, 0.12 * ps)}"/>`
+      + `<rect class="isl-lpage" x="${F(p0 - 0.02 * ps)}" y="${F(pT - 0.08 * ps)}" width="${F(pw + 0.04 * ps)}" height="${F(0.065 * ps)}" rx="${F(0.032 * ps)}"/>`
+      + `<path class="isl-tdrop" d="${rect(p0 - 0.02 * ps, pT - 0.025 * ps, pw + 0.04 * ps, 0.015 * ps)}"/>`
+      + `<path class="isl-tiron" d="${rect(p0 - 0.035 * ps, pT - 0.02 * ps, pw + 0.07 * ps, 0.05 * ps)}"/>`
+      + `<path class="isl-kleg" d="M${F(p0 + 0.05 * ps)} ${F(pB)}H${F(p1 - 0.05 * ps)}" stroke-width="${F(Math.max(1.3, 0.045 * ps))}"/>`;
+    const ix0 = p0 + pw * 0.12, bs = 0.13 * ps, itemY = (i) => pT + (0.36 + i * 0.2) * ps;
+    let boxes = '', text = '';
+    for (let i = 0; i < 4; i++) {
+      const y = itemY(i);
+      boxes += rect(ix0, y - bs / 2, bs, bs);
+      text += `M${F(ix0 + bs * 1.6)} ${F(y)}h${F(pw * [0.52, 0.4, 0.48, 0.34][i])}`;
+    }
+    s += `<path class="isl-bink" d="${text}" stroke-width="${F(Math.max(1, 0.026 * ps))}"/>`
+      + `<path class="isl-khead" d="M${F(ix0)} ${F(pT + 0.2 * ps)}h${F(pw * 0.6)}" stroke-width="${F(Math.max(1.4, 0.045 * ps))}"/>`
+      + `<path class="isl-kbox" d="${boxes}" stroke-width="${F(Math.max(0.8, 0.02 * ps))}"/>`;
+    // the ticks: hidden, not faint, until their turn (isl-vtick), so the agenda is not seen done early
+    for (let i = 0; i < 3; i++) {
+      const y = itemY(i), tick = `M${F(ix0 + bs * 0.18)} ${F(y)}L${F(ix0 + bs * 0.45)} ${F(y + bs * 0.32)}L${F(ix0 + bs * 1.05)} ${F(y - bs * 0.62)}`;
+      s += `<g class="isl-vwin isl-vtick${i === 2 ? ' isl-vlast' : ''}" style="--i:${2 + i}"><path class="isl-cring" d="${tick}" stroke-width="${F(Math.max(2, 0.055 * ps))}"/></g>`;
+    }
+    // 3. The chairs: one chair, drawn in the camera wherever it stands round the table, facing its centre:
+    //    a padded back 0.42 m wide on a slight lean, up to 0.96 m, a seat at 0.45 m, four legs; its shadow
+    //    on the floor under it; its parts drawn from the farthest to the nearest.
+    const chair = (a) => {
+      const ar = a * Math.PI / 180, cx = 1.55 * Math.cos(ar), cd = D + 1.55 * Math.sin(ar);
+      const ux = -Math.cos(ar), ud = -Math.sin(ar), vx = -ud, vd = ux;          // u toward the table, v across the seat
+      const Q = (u, vv, h) => P(cx + u * ux + vv * vx, cd + u * ud + vv * vd, h), dOf = (u, vv) => cd + u * ud + vv * vd;
+      const [shx, shy, shr, shq] = box(ring(cx, cd, 0.32, 0));
+      const parts = [];
+      for (const [lu, lv] of [[-0.18, -0.19], [-0.18, 0.19], [0.18, -0.19], [0.18, 0.19]]) {
+        const [x0, y1a] = Q(lu, lv, 0.42), [x1, y1b] = Q(lu, lv, 0);
+        parts.push([dOf(lu, lv), `<path class="isl-lchairleg" d="M${F(x0)} ${F(y1a)}L${F(x1)} ${F(y1b)}" stroke-width="${F(Math.max(1, 0.035 * sc(cd)))}"/>`]);
+      }
+      // the seat: its sides, then its top
+      const sq = [[-0.2, -0.22], [0.22, -0.22], [0.22, 0.22], [-0.2, 0.22]];
+      let sides = '';
+      for (let i = 0; i < 4; i++) {
+        const [ua, va] = sq[i], [ub, vb] = sq[(i + 1) % 4];
+        sides += polyD([Q(ua, va, 0.42), Q(ub, vb, 0.42), Q(ub, vb, 0.48), Q(ua, va, 0.48)]);
+      }
+      parts.push([dOf(0.01, 0), `<path class="isl-kchairs" d="${sides}"/><path class="isl-kchair" d="${polyD(sq.map(([u, vv]) => Q(u, vv, 0.48)))}"/>`]);
+      // the back: a rounded panel with depth, its far face, the band between its faces, its near face and
+      // the padding on it
+      const h0 = 0.48, h1 = 0.96, rr = 0.09, vL = -0.21, vR = 0.21, outline = [[vL, h0]];
+      for (let i = 0; i <= 4; i++) { const t = Math.PI - (i / 4) * Math.PI / 2; outline.push([vL + rr + Math.cos(t) * rr, h1 - rr + Math.sin(t) * rr]); }
+      for (let i = 0; i <= 4; i++) { const t = Math.PI / 2 - (i / 4) * Math.PI / 2; outline.push([vR - rr + Math.cos(t) * rr, h1 - rr + Math.sin(t) * rr]); }
+      outline.push([vR, h0]);
+      const lean = (h) => -0.07 * (h - h0) / (h1 - h0);
+      const face = (u, k2 = 1, lo = h0, hi = h1) => outline.map(([vv, h]) => { const hm = lo + (h - h0) * (hi - lo) / (h1 - h0); return Q(u + lean(hm), vv * k2, hm); });
+      const fa = face(-0.25), fb = face(-0.19), aFar = dOf(-0.25, 0) > dOf(-0.19, 0);
+      const [far, near, uNear] = aFar ? [fa, fb, -0.19] : [fb, fa, -0.25];
+      let band = '';
+      for (let i = 0; i < outline.length - 1; i++) band += polyD([fa[i], fa[i + 1], fb[i + 1], fb[i]]);
+      parts.push([dOf(-0.22, 0), `<path class="isl-kchair" d="${polyD(far)}"/><path class="isl-kchairs" d="${band}"/>`
+        + `<path class="isl-kchair" d="${polyD(near)}"/><path class="isl-kpad" d="${polyD(face(uNear, 0.72, 0.56, 0.9))}"/>`]);
+      parts.sort((p, q) => q[0] - p[0]);
+      return `<ellipse class="isl-tdrop" cx="${F(shx)}" cy="${F(shy)}" rx="${F(shr)}" ry="${F(shq)}"/>` + parts.map((p) => p[1]).join('');
+    };
+    // round the far side and at the ends, from the farthest; the near side is the viewer's place
+    for (const a of [90, 138, 42, 180, 0]) s += chair(a);
+    // 4. The table: its shadow on the floor, the pedestal and its foot, the rim's near half (darker), the
+    //    top with an inset band and a little grain, the lamp's light pooled on it, the near edge catching it.
+    const [tsx, tsy, tsr, tsq] = box(ring(0, D, 1.05, 0));
+    s += `<ellipse class="isl-tdrop" cx="${F(tsx)}" cy="${F(tsy)}" rx="${F(tsr)}" ry="${F(tsq)}"/>`
+      + `<path class="isl-lwood2" d="${polyD([P(-0.09, D, 0.68), P(0.09, D, 0.68), P(0.07, D, 0.04), P(-0.07, D, 0.04)])}${polyD(ring(0, D, 0.42, 0.04))}"/>`;
+    const top = ring(0, D, R, 0.75), nearTop = ring(0, D, R, 0.75, Math.PI, 2 * Math.PI), nearBot = ring(0, D, R, 0.68, Math.PI, 2 * Math.PI);
+    s += `<path class="isl-lwood2" d="${polyD([...nearTop, ...nearBot.reverse()])}"/><path class="isl-lwood" d="${polyD(top)}"/>`
+      + `<path class="isl-kring" d="${polyD(ring(0, D, R * 0.9, 0.751))}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
+    let grain = '';
+    for (const [gr, t0, t1] of [[0.72, 0.35, 2.8], [0.5, 3.6, 5.7]]) grain += 'M' + ring(0, D, R * gr, 0.751, t0, t1, 16).map(([x, y]) => `${F(x)} ${F(y)}`).join('L');
+    const [plx, ply, plr, plq] = box(ring(0, D, 0.85, 0.75));
+    s += `<path class="isl-tgrain" d="${grain}" stroke-width="${F(Math.max(0.6, Y(0.005)))}"/>`
+      + `<g class="isl-vlamps isl-vwin" style="--i:1">${pool(plx, ply, plr, plq, 0.55)}</g>`
+      + `<path class="isl-ledge" d="M${nearTop.map(([x, y]) => `${F(x)} ${F(y)}`).join('L')}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+    // 5. The places at the chairs: a sheet of paper lying on the table, a folded name card standing between
+    //    it and the table's middle, facing the others, and a glass beside it; all in the camera, so the far
+    //    places are smaller.
+    let paper = '', cards = '', cardTop = '', glass = '';
+    for (const a of [138, 90, 42, 180, 0]) {
+      const ar = a * Math.PI / 180, ux = -Math.cos(ar), ud = -Math.sin(ar), vx = -ud, vd = ux;
+      const at = (rad, u, vv) => [rad * Math.cos(ar) + u * ux + vv * vx, D + rad * Math.sin(ar) + u * ud + vv * vd];
+      const pt = (rad, u, vv, h) => { const [x, d] = at(rad, u, vv); return P(x, d, h); };
+      paper += polyD([pt(0.95, -0.15, -0.105, 0.752), pt(0.95, -0.15, 0.105, 0.752), pt(0.95, 0.15, 0.105, 0.752), pt(0.95, 0.15, -0.105, 0.752)]);
+      const card = [pt(0.66, 0, -0.1, 0.75), pt(0.66, 0, 0.1, 0.75), pt(0.66, 0, 0.1, 0.83), pt(0.66, 0, -0.1, 0.83)];
+      cards += polyD(card);
+      cardTop += `M${F(card[3][0])} ${F(card[3][1])}L${F(card[2][0])} ${F(card[2][1])}`;
+      const [gx, gd] = at(0.98, 0, 0.24), [gbx, gby] = P(gx, gd, 0.75), [, gty] = P(gx, gd, 0.87), gw = 0.036 * sc(gd);
+      glass += `M${F(gbx - gw)} ${F(gby)}L${F(gbx - gw * 1.2)} ${F(gty)}H${F(gbx + gw * 1.2)}L${F(gbx + gw)} ${F(gby)}Z`;
+    }
+    s += `<path class="isl-lpage" d="${paper}"/><path class="isl-kcard" d="${cards}"/><path class="isl-kcardtop" d="${cardTop}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/><path class="isl-kglass" d="${glass}"/>`;
+    // the minutes: three closed folders stacked toward the back, each with its tab on the far edge
+    for (const [kk, cls] of [[0, 'isl-lbk2'], [1, 'isl-lbk3'], [2, 'isl-lred']]) {
+      const h = 0.752 + kk * 0.022, fx = -0.34 + (kk - 1) * 0.015, fd = D + 0.1;
+      const q = [P(fx - 0.17, fd - 0.12, h + 0.02), P(fx + 0.17, fd - 0.12, h + 0.02), P(fx + 0.17, fd + 0.12, h + 0.02), P(fx - 0.17, fd + 0.12, h + 0.02)];
+      s += `<path class="${cls}" d="${polyD([P(fx - 0.17, fd - 0.12, h), P(fx + 0.17, fd - 0.12, h), q[1], q[0]])}"/><path class="isl-tdrop" d="${polyD([P(fx - 0.17, fd - 0.12, h), P(fx + 0.17, fd - 0.12, h), q[1], q[0]])}"/>`
+        + `<path class="${cls}" d="${polyD(q)}${polyD([P(fx + 0.02, fd + 0.12, h + 0.02), P(fx + 0.09, fd + 0.12, h + 0.02), P(fx + 0.09, fd + 0.15, h + 0.02), P(fx + 0.02, fd + 0.15, h + 0.02)])}"/>`;
+    }
+    // the jug of water beside them
+    {
+      const jd = D + 0.12, [jx, jy] = P(0.42, jd, 0.75), js = sc(jd);
+      s += `<path class="isl-kglass" d="M${F(jx - 0.065 * js)} ${F(jy)}L${F(jx - 0.075 * js)} ${F(jy - 0.2 * js)}Q${F(jx)} ${F(jy - 0.25 * js)} ${F(jx + 0.09 * js)} ${F(jy - 0.235 * js)}L${F(jx + 0.075 * js)} ${F(jy - 0.2 * js)}L${F(jx + 0.065 * js)} ${F(jy)}Z"/>`
+        + `<path class="isl-kglassh" d="M${F(jx + 0.075 * js)} ${F(jy - 0.18 * js)}q${F(0.08 * js)} ${F(0.025 * js)} ${F(0.01 * js)} ${F(0.13 * js)}" stroke-width="${F(Math.max(1, 0.022 * js))}"/>`;
+    }
+    // the open folder at the viewer's own place, the near side: its two leaves, the minutes on the right,
+    // their lines, and a pen
+    {
+      const od = D - 0.72, q = (x, dd) => P(x, od + dd, 0.753);
+      s += `<path class="isl-lbk3" d="${polyD([q(-0.23, -0.16), q(0.23, -0.16), q(0.23, 0.16), q(-0.23, 0.16)])}"/>`
+        + `<path class="isl-lpage" d="${polyD([q(0.01, -0.145), q(0.215, -0.145), q(0.215, 0.145), q(0.01, 0.145)])}"/>`;
+      let lines = '';
+      for (let l = 0; l < 5; l++) { const dd = 0.11 - l * 0.055, [xa, ya] = q(0.04, dd), [xb] = q(0.04 + 0.15 - (l % 2) * 0.05, dd); lines += `M${F(xa)} ${F(ya)}H${F(xb)}`; }
+      const [pa, pb] = [q(-0.18, -0.03), q(-0.02, 0.02)];
+      s += `<path class="isl-ltext" d="${lines}" stroke-width="${F(Math.max(0.7, Y(0.006)))}" stroke-opacity=".7"/>`
+        + `<path class="isl-tiron" d="M${F(pa[0])} ${F(pa[1])}L${F(pb[0])} ${F(pb[1])}" stroke-width="${F(Math.max(1.2, 0.012 * sc(od)))}" stroke-linecap="round"/>`;
+    }
+    // 6. The lamp over the table, its rim 1.7 m up: a wide shade on its rod from the ceiling, whose lit
+    //    underside (seen from below, the eye being lower), halo and cone of light show from Dawn to Night,
+    //    its light falling on the table.
+    const [lcx, lTop] = P(0, D, 1.9), [, lBot] = P(0, D, 1.7), lt = 0.08 * sc(D), lb = 0.28 * sc(D);
+    const under = ring(0, D, 0.27, 1.7);
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lcx, lBot, 0.5 * sc(D), 'islvbulb')}<path d="${polyD([[lcx - lb, lBot], [lcx + lb, lBot], ...ring(0, D, 0.95, 0.75, 2 * Math.PI, Math.PI, 12)])}" fill="url(#islvspill)" opacity=".6"/></g>`;
+    s += `<path class="isl-tiron" d="${rect(lcx - 1, -2, 2, lTop + 2)}"/>`
+      + `<path class="isl-cshade" d="M${F(lcx - lt)} ${F(lTop)}H${F(lcx + lt)}L${F(lcx + lb)} ${F(lBot)}H${F(lcx - lb)}Z"/>`
+      + `<path class="isl-lbronze" d="${rect(lcx - lb, lBot - Y(0.008), 2 * lb, Y(0.008))}"/>`
+      + `<g class="isl-vlamps isl-vwin" style="--i:1"><path class="isl-tbulb" d="${polyD(under)}"/></g>`;
+    return `<g style="--isl-vstep:.45s">${s}</g>`;
+  }
+
+  /* THE WAY IN (the Accessibility page's head; owner, 2026-09-29: art tied to the title at a glance): a
+     building's entrance with a way in for everyone. A wide glazed double door under a canopy, lit from
+     within, its light on the landing in front of it; steps climbing to the landing from the right and,
+     from the left, a long gentle ramp at 1 in 12 along the front of the building, its handrail carried on
+     level past its foot and open in front of the door; small lights set in the ramp's side; the blue sign
+     with the symbol of access hung high on the street lamp at the ramp's foot, clear of anyone passing;
+     the building's windows in bays centred on the door; palms, a planter; the sea and a far headland
+     beyond the low wall at the left, where the Sun sets, the Moon in the sky above. The page has no kind,
+     so no page hue. In the one pass the street lamp lights, then the ramp's lights from its foot to the
+     landing, the windows, the lanterns by the door, and the doorway last (reviewed 2026-09-30 by blind
+     "which page is this?" tests and a craft and five-versions check before the owner saw it). */
+  const WAYIN_SUN = '18:26', WAYIN_HZ = 0.62;
+  function wayIn(W, H, v) {
+    const y0 = v.y0, X = (k) => k * W, Y = (k) => k * H, r = rng(2310);
+    let s = '';
+    const street = Y(0.86);
+    // 1. Beyond: a far headland on the horizon at the left, mist at its foot, a few lights on its slopes
+    //    (each below the crest at its place).
+    const head = [[-0.02, 0.015], [0.06, 0.05], [0.13, 0.075], [0.2, 0.06], [0.27, 0.03], [0.34, 0.01], [0.4, 0]].map(([x, h]) => [X(x), y0 - Y(h)]);
+    const crestAt = (x) => { for (let i = 0; i < head.length - 1; i++) { const [xa, ya] = head[i], [xb, yb] = head[i + 1]; if (x >= xa && x <= xb) return y0 - (ya + (yb - ya) * (x - xa) / (xb - xa)); } return 0; };
+    const farLand = `<path class="f-isl" d="${polyD([[X(-0.02), y0 + 1], ...head, [X(0.4), y0 + 1]])}${scrubLine(head, 2, 0.5, 1.1, r)}"/>`;
+    s += farLand + `<path class="s-rim" d="${lineD(head.map(([x, y]) => [x, y + 0.5]))}" stroke-width="1" stroke-opacity=".3"/>` + mirrored(y0, farLand, 0.16) + mist(X(-0.03), y0, X(0.44), Y(0.05), 0.45);
+    const far = [];
+    for (let i = 0; i < 5; i++) { const x = X(0.02 + r() * 0.3); far.push([x, y0 - crestAt(x) * (0.2 + r() * 0.55)]); }
+    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(far)}" stroke-width="1.3"/>`;
+    for (const [x] of far) s += dashes(streakList(x, y0 + 1, H, r, 0.05, 0.05), 's-vglow', 1, [0.06, 0.12, 0.22]);
+    // 2. The low sea wall along the back of the square, its coping lit; the square's paving, solid ground.
+    const wT = Y(0.77);
+    s += `<path d="${rect(-2, wT, W + 4, street - wT + 1)}" fill="url(#islvfacade)"/><path class="isl-vstone" d="${rect(-2, wT - Y(0.012), W + 4, Y(0.016))}"/>`;
+    let wj = '';
+    for (let x = X(0.01); x < W; x += Y(0.11)) wj += `M${F(x)} ${F(wT + Y(0.004))}V${F(street)}`;
+    s += `<path class="isl-vcourse" d="${wj}M-2 ${F(wT + Y(0.045))}H${F(W + 2)}" stroke-width=".7"/>`;
+    s += `<path class="isl-apave" d="${rect(-2, street, W + 4, H - street + 2)}"/>`;
+    let pav = '';
+    for (let y = street + Y(0.035); y < H; y += Y(0.04) + (y - street) * 0.2) pav += `M-2 ${F(y)}H${F(W + 2)}`;
+    for (let x = -r() * 10; x < W; x += Y(0.09)) pav += `M${F(x)} ${F(street)}l${F((x - W * 0.5) * 0.08)} ${F(H - street)}`;
+    s += `<path class="isl-vcourse" d="${pav}" stroke-width=".7" stroke-opacity=".5"/>`;
+    // 3. The building: two storeys of stone at the right, its ground floor rusticated and finer courses
+    //    above, quoins up the exposed corner, a string course, the parapet's coping catching the last
+    //    light, the side of the building in shade at its left end.
+    const b0 = X(0.4), bTop = Y(0.14), mid = Y(0.4), land = street - Y(0.09);
+    s += `<path d="${rect(b0, bTop, W - b0 + 2, street - bTop + 1)}" fill="url(#islvfacade)"/><path class="isl-vpshade" d="${rect(b0, bTop, Y(0.035), street - bTop + 1)}"/>`;
+    let rust = '', fine = '';
+    for (let y = mid + Y(0.05); y < street - Y(0.01); y += Y(0.05)) rust += `M${F(b0 + Y(0.035))} ${F(y)}H${F(W + 2)}`;
+    for (let y = bTop + Y(0.06); y < mid - Y(0.01); y += Y(0.035)) fine += `M${F(b0 + Y(0.035))} ${F(y)}H${F(W + 2)}`;
+    s += `<path class="isl-vcourse" d="${rust}" stroke-width=".8"/><path class="isl-vcourse" d="${fine}" stroke-width=".5" stroke-opacity=".3"/>`;
+    let quoins = '';
+    for (let k = 0, y = street; y > bTop + Y(0.04); y -= Y(0.045), k++) quoins += rect(b0 + Y(0.035), y - Y(0.045) + 1.2, k % 2 ? Y(0.04) : Y(0.065), Y(0.045) - 1.2);
+    s += `<path class="isl-vstone" d="${quoins}"/>`
+      + `<path class="isl-vstone" d="${rect(b0 - Y(0.012), bTop - Y(0.03), W - b0 + 14, Y(0.03))}${rect(b0, mid - Y(0.008), W - b0 + 2, Y(0.018))}"/>`
+      + `<path class="isl-vpshade" d="${rect(b0, bTop, W - b0 + 2, Y(0.02))}"/>`
+      + `<path class="s-rim" d="M${F(b0 - Y(0.012))} ${F(bTop - Y(0.03) + 0.5)}H${F(W + 2)}" stroke-width="1.2" stroke-opacity=".45"/>`;
+    // the door's bay: the entrance at the middle of the landing, which runs from lx0 to lx1; the windows
+    // in bays measured out from the door, so one stands centred over it; on the ground floor tall windows
+    // from the door's head nearly to the floor, either side of the door
+    const lx0 = X(0.56), lx1 = Math.min(X(0.76), lx0 + Y(0.78)), dx = (lx0 + lx1) / 2, dw = Y(0.22), dT = land - Y(0.25);
+    const pitch = Y(0.3), ww = Y(0.14), bays = [];
+    for (let k = -9; k <= 9; k++) { const x = dx + k * pitch - ww / 2; if (x > b0 + Y(0.1) && x + ww < W - Y(0.02)) bays.push([k, x]); }
+    let lit = '', dark = '', bars = '', heads = '', sills = '';
+    for (const [k, x] of bays) {
+      const d = rect(x, bTop + Y(0.05), ww, Y(0.16));
+      if ((k + 9) % 3 === 1) dark += d; else lit += d;
+      bars += `M${F(x + ww / 2)} ${F(bTop + Y(0.05))}v${F(Y(0.16))}`;
+      heads += rect(x, bTop + Y(0.05), ww, Y(0.014));
+      sills += rect(x - Y(0.012), bTop + Y(0.21), ww + Y(0.024), Y(0.014));
+      if (x + ww < dx - dw / 2 - Y(0.12) || x > dx + dw / 2 + Y(0.12)) {
+        const g = rect(x, dT, ww, land - Y(0.03) - dT);
+        if ((k + 9) % 4 === 3) dark += g; else lit += g;
+        bars += `M${F(x + ww / 2)} ${F(dT)}V${F(land - Y(0.03))}M${F(x)} ${F(dT + Y(0.06))}h${F(ww)}`;
+        heads += rect(x, dT, ww, Y(0.016));
+        sills += rect(x - Y(0.012), land - Y(0.03), ww + Y(0.024), Y(0.014));
+      }
+    }
+    s += `<path class="isl-vdark" d="${dark}"/><path class="f-pulse isl-vwin" style="--i:5" d="${lit}"/><path class="isl-vmul" d="${bars}" stroke-width=".9"/>`
+      + `<path class="isl-vpshade" d="${heads}"/><path class="isl-vstone" d="${sills}"/>`;
+    // 4. The entrance: a canopy on two tie rods over a wide glazed double door; the door lit within, its
+    //    darker frame, the meeting stiles and a pull handle on each leaf; a lantern either side under the
+    //    canopy; the canopy's underside lit by the door (shaded by Day).
+    const c0 = dx - dw / 2 - Y(0.08), c1 = dx + dw / 2 + Y(0.08), cT = dT - Y(0.045);
+    // (the door's glass is its own lit element, so while it waits its turn it is dark glass, not a faint
+    // glow; its wash on the wall and the canopy's lit underside come on with it)
+    s += `<g class="isl-vwin" style="--i:7"><ellipse cx="${F(dx)}" cy="${F(land - Y(0.1))}" rx="${F(Y(0.55))}" ry="${F(Y(0.26))}" fill="url(#islvwarm)"/>`
+      + `<path d="${rect(c0, cT + Y(0.03), c1 - c0, Y(0.05))}" fill="url(#islvspill)"/></g>`
+      + `<path class="f-pulse isl-vwin isl-vlast" style="--i:7" d="${rect(dx - dw / 2, dT, dw, land - dT)}"/>`;
+    s += `<path class="isl-aframe" d="${rect(dx - dw / 2, dT, dw, land - dT)}M${F(dx)} ${F(dT)}V${F(land)}M${F(dx - dw / 2)} ${F(dT + Y(0.045))}H${F(dx + dw / 2)}" stroke-width="${F(Math.max(1.4, Y(0.013)))}"/>`
+      + `<path class="isl-aframe" d="M${F(dx - Y(0.02))} ${F(dT + Y(0.11))}v${F(Y(0.08))}M${F(dx + Y(0.02))} ${F(dT + Y(0.11))}v${F(Y(0.08))}" stroke-width="${F(Math.max(1.4, Y(0.013)))}"/>`;
+    s += `<path class="isl-arail" d="M${F(c0 + Y(0.012))} ${F(cT)}L${F(c0 + Y(0.07))} ${F(cT - Y(0.07))}M${F(c1 - Y(0.012))} ${F(cT)}L${F(c1 - Y(0.07))} ${F(cT - Y(0.07))}" stroke-width="1"/>`
+      + `<path class="isl-vstone" d="${rect(c0, cT, c1 - c0, Y(0.03))}"/><path class="isl-vpshade isl-ydet" d="${rect(c0, cT + Y(0.03), c1 - c0, Y(0.016))}"/>`;
+    for (const sd of [-1, 1]) {
+      const lx = dx + sd * (dw / 2 + Y(0.045)), lyy = dT + Y(0.05);
+      s += `<g class="isl-vwin" style="--i:6">${halo(lx, lyy, Y(0.11))}<path class="f-pulse" d="${rect(lx - Y(0.013), lyy - Y(0.028), Y(0.026), Y(0.046))}"/></g>`
+        + `<path class="isl-vpost" d="${rect(lx - Y(0.019), lyy - Y(0.037), Y(0.038), Y(0.011))}${rect(lx - Y(0.017), lyy + Y(0.018), Y(0.034), Y(0.009))}"/>`;
+    }
+    // the door's light on the square below the landing
+    s += `<g class="isl-vwin" style="--i:7"><path d="${polyD([[dx - dw * 0.8, street], [dx + dw * 0.8, street], [dx + dw * 1.6, street + Y(0.12)], [dx - dw * 1.6, street + Y(0.12)]])}" fill="url(#islvspill)" opacity=".8"/></g>`;
+    // 5. The landing, the steps up to it from the right and the ramp from the left: one poured concrete
+    //    form, cooler than the building's stone so it reads against the wall; each tread's edge lit, each
+    //    riser in shade, the ramp's edge lit; a shadow line where it meets the square.
+    const nSt = 4, rise = (street - land) / nSt, run = Y(0.06);
+    let body = [[lx0, land], [lx1, land]], treads = `M${F(lx0)} ${F(land)}H${F(lx1)}`, risers = '';
+    let x = lx1, y = land;
+    for (let i = 0; i < nSt; i++) {
+      risers += `M${F(x)} ${F(y)}V${F(y + rise)}`;
+      y += rise; body.push([x, y]);
+      treads += `M${F(x)} ${F(y)}H${F(x + run)}`;
+      x += run; body.push([x, y]);
+    }
+    const sx1 = x;
+    // the ramp rises the landing's height over twelve times its length (1 in 12, a ramp's usual slope),
+    // shortened only where a narrow card leaves no room
+    const rx0 = Math.max(X(0.12), lx0 - (street - land) * 12), slope = (land - street) / (lx0 - rx0);
+    body = [[rx0, street], ...body, [sx1, street]];
+    s += `<path class="isl-aramp" d="${polyD(body)}"/><path class="isl-vpshade" d="${rect(rx0, street - Y(0.008), sx1 - rx0, Y(0.01))}"/>`;
+    s += `<path class="isl-vstep-edge" d="${treads}M${F(rx0)} ${F(street)}L${F(lx0)} ${F(land)}" stroke-width="${F(Math.max(1.6, Y(0.01)))}"/>`
+      + `<path class="isl-vstep-rise" d="${risers}" stroke-width="${F(Math.max(1, Y(0.005)))}"/>`
+      + `<g class="isl-vwin" style="--i:7"><path class="s-vglow" d="M${F(lx0)} ${F(land + 0.5)}H${F(lx1)}" stroke-width="${F(Math.max(1.2, Y(0.008)))}" stroke-opacity=".6"/></g>`;
+    // 6. The handrail: one rail along the ramp, across the landing's edge to the posts beside the door,
+    //    open in front of the door, on from there down the steps, carried on level past the ramp's foot and
+    //    the steps' foot; posts along it. Small lights set in the ramp's side at its posts, lighting from
+    //    its foot to the landing.
+    const hr = Y(0.115), ext = Y(0.07), dl = dx - dw / 2 - Y(0.07), dr = dx + dw / 2 + Y(0.07);
+    const nP = Math.max(3, Math.round((lx0 - rx0) / Y(0.3)));
+    let posts = '';
+    for (let i = 0; i <= nP; i++) { const px2 = rx0 + (lx0 - rx0) * i / nP, py = street + (px2 - rx0) * slope; posts += `M${F(px2)} ${F(py)}V${F(py - hr)}`; }
+    for (const px2 of [dl, dr, lx1]) posts += `M${F(px2)} ${F(land)}V${F(land - hr)}`;
+    posts += `M${F(sx1)} ${F(street)}V${F(street - hr)}M${F(rx0 - ext)} ${F(street)}V${F(street - hr)}M${F(sx1 + ext)} ${F(street)}V${F(street - hr)}`;
+    const rail = `M${F(rx0 - ext)} ${F(street - hr)}H${F(rx0)}L${F(lx0)} ${F(land - hr)}H${F(dl)}M${F(dr)} ${F(land - hr)}H${F(lx1)}L${F(sx1)} ${F(street - hr)}H${F(sx1 + ext)}`;
+    for (let i = 1; i < nP; i++) {
+      const qx = rx0 + (lx0 - rx0) * i / nP + Y(0.03), qy = street + (qx - rx0) * slope;
+      s += `<g class="isl-vwin" style="--i:${i}">${pool(qx, street + Y(0.015), Y(0.07), Y(0.016), 0.6)}<path class="f-pulse" d="${rect(qx - Y(0.012), qy + Y(0.012), Y(0.024), Y(0.009))}"/></g>`;
+    }
+    s += `<path class="isl-arail" d="${posts}" stroke-width="${F(Math.max(1, Y(0.008)))}"/><path class="isl-arail" d="${rail}" stroke-width="${F(Math.max(1.2, Y(0.01)))}"/>`;
+    // 7. The planter by the steps and its palm; the street lamp at the ramp's foot, kept clear of the card's
+    //    edge, and the left palm only where it clears the lamp; the sign hung on the lamp's post under the
+    //    lantern, above head height and against the sky: a blue panel with the symbol of access, a person
+    //    in a wheelchair, and an arrow toward the ramp.
+    const pl0 = sx1 + ext + Y(0.05), ph = Y(0.5), ss = Y(0.15);
+    const px = Math.max(ss * 0.8 + Y(0.03), rx0 - ext - Y(0.2));
+    s += palmsD([[px - Y(0.42), street + Y(0.02), Y(0.72), 0.06, 23], [pl0 + Y(0.3), street - Y(0.05), Y(0.7), -0.1, 29]].filter(([x2], i) => (i === 0 ? x2 > -Y(0.1) : x2 < W - Y(0.05))), 'isl-palm');
+    s += `<path class="isl-vstone" d="${rect(pl0, street - Y(0.06), W, Y(0.06))}"/>`
+      + shrubs([[pl0 + Y(0.08), street - Y(0.06), Y(0.07)], [pl0 + Y(0.24), street - Y(0.06), Y(0.08)], [pl0 + Y(0.4), street - Y(0.06), Y(0.07)]].filter(([x2]) => x2 < W + Y(0.05)), r);
+    s += `<g class="isl-vwin" style="--i:0">${pool(px, street + Y(0.05), Y(0.3), Y(0.06), 0.8)}${halo(px, street - ph - Y(0.03), Y(0.2))}`
+      + `<path class="f-pulse" d="${rect(px - Y(0.02), street - ph - Y(0.06), Y(0.04), Y(0.055))}"/></g>`
+      + `<path class="isl-vpost" d="M${F(px - 1.3)} ${F(street + Y(0.02))}V${F(street - ph)}H${F(px + 1.3)}V${F(street + Y(0.02))}Z`
+      + `M${F(px - Y(0.03))} ${F(street - ph - Y(0.06))}L${F(px)} ${F(street - ph - Y(0.095))}L${F(px + Y(0.03))} ${F(street - ph - Y(0.06))}Z`
+      + `M${F(px - Y(0.026))} ${F(street - ph + 1)}h${F(Y(0.052))}v${F(Y(0.012))}h${F(-Y(0.052))}Z"/>`;
+    const sx = px - ss * 0.75, sy = street - ph + Y(0.035);
+    const P = (a, b) => `${F(sx + a * ss)} ${F(sy + b * ss)}`;
+    s += `<path class="isl-vpost" d="${rect(px - Y(0.03), sy - Y(0.008), Y(0.06), Y(0.01))}"/>`
+      + `<path class="isl-lsign" d="${rect(sx, sy, ss * 1.5, ss)}"/>`
+      + `<path class="isl-asym" d="${rect(sx + ss * 0.05, sy + ss * 0.05, ss * 1.4, ss * 0.9)}" stroke-width="${F(Math.max(0.7, ss * 0.03))}"/>`
+      + `<circle class="isl-asymf" cx="${F(sx + 0.47 * ss)}" cy="${F(sy + 0.19 * ss)}" r="${F(ss * 0.075)}"/>`
+      // the figure: the back, the thigh forward along the seat, the lower leg down to the footrest, the arm
+      // forward; the wheel an open ring round the seat; then the arrow toward the ramp
+      + `<path class="isl-asym" d="M${P(0.43, 0.3)}L${P(0.45, 0.58)}L${P(0.66, 0.58)}L${P(0.76, 0.82)}M${P(0.44, 0.42)}L${P(0.62, 0.42)}" stroke-width="${F(Math.max(1.2, ss * 0.075))}" stroke-linejoin="round"/>`
+      + `<path class="isl-asym" d="M${P(0.28, 0.46)}A${F(ss * 0.2)} ${F(ss * 0.2)} 0 1 0 ${P(0.62, 0.74)}" stroke-width="${F(Math.max(1.2, ss * 0.07))}"/>`
+      + `<path class="isl-asym" d="M${P(0.95, 0.5)}L${P(1.3, 0.5)}M${P(1.2, 0.4)}L${P(1.3, 0.5)}L${P(1.2, 0.6)}" stroke-width="${F(Math.max(1.2, ss * 0.07))}" stroke-linejoin="round"/>`;
+    return `<g style="--isl-vstep:.35s">${s}</g>`;
+  }
+
   /* THE HOMEPAGE HERO'S SCENE (owner, 2026-09-27): in the bold hero (desktop, from 68.75em) the campus
      stands on its lawn at the card's foot, in the sky's space right of the words, from x0 to x1, under
      the hero's own sky, which island-core.js draws as before; the far islands and Antigua's coast are
@@ -2590,10 +2959,12 @@
     'tool-wall': {
       draw: toolWall,
       world: 'inland',
-      // An interior: the window faces the Sun's setting bearing, the view turned so the Sun half set
-      // stands in the window's right-hand pane at Sunset, its path on the harbour below; the horizon
+      // An interior: the window faces the Sun's setting bearing, the view turned so the Sun stands on the
+      // far hill in the window's right-hand pane at Sunset, its path on the harbour below; the horizon
       // is the window's; the Moon in the window's upper left pane (its true phase and tilt, the place a
-      // painter's licence, as in the library).
+      // painter's licence, as in the library). At the default minute the hill hid the whole disc while its
+      // path still showed on the water, so every window piece sets at 18:23 (review, 2026-09-30).
+      sunset: '18:23',
       horizon: (W, H) => toolFrame(W, H).hz / H,
       face: (W, H) => { const f = toolFrame(W, H); return 290.8 - ((f.wx0 + f.ww * 0.7) / W - 0.5) * 62; },
       ppd: (W) => W / 62,
@@ -2627,11 +2998,13 @@
       ground: null,
     },
     // The news pages (round 7, wave 2): interiors whose windows face the Sun's setting bearing, so the
-    // Sun sets in them at Sunset, and the Moon in an upper pane; the lecture theatre's high windows show
-    // sky and a line of far hills; the dish stands on a headland with the Moon in the open sky.
+    // Sun sets in them at Sunset (18:23, standing on the far hill, as in the tool wall), and the Moon in an
+    // upper pane; the lecture theatre's high windows show sky and a line of far hills; the dish stands on a
+    // headland with the Moon in the open sky.
     'week-calendar': {
       draw: weekCalendar,
       world: 'inland',
+      sunset: '18:23',
       horizon: (W, H) => newsFrame(W, H, 1).hz / H,
       face: (W, H) => { const f = newsFrame(W, H, 1); return 290.8 - ((f.wx0 + f.ww * 0.7) / W - 0.5) * 62; },
       ppd: (W) => W / 62,
@@ -2642,6 +3015,7 @@
     'hospital-room': {
       draw: hospitalRoom,
       world: 'inland',
+      sunset: '18:23',
       horizon: (W, H) => newsFrame(W, H, 1).hz / H,
       face: (W, H) => { const f = newsFrame(W, H, 1); return 290.8 - ((f.wx0 + f.ww * 0.7) / W - 0.5) * 62; },
       ppd: (W) => W / 62,
@@ -2669,6 +3043,38 @@
       ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
       moonBig: 2,
       moonX: 0.08,
+      ground: null,
+    },
+    // Round 7, wave 3: the committee room, its window at the left facing the Sun's setting bearing as the
+    // news interiors' do (the Sun at 18:23 on the far hill), the Moon in its upper left pane; the way in,
+    // facing west over the sea wall with the Moon in the open sky at the left. The Accessibility page has
+    // no kind, so the way in has no page hue.
+    'committee-room': {
+      draw: committeeRoom,
+      world: 'inland',
+      sunset: '18:23',
+      horizon: (W, H) => newsFrame(W, H, -1).hz / H,
+      face: (W, H) => { const f = newsFrame(W, H, -1); return 290.8 - ((f.wx0 + f.ww * 0.7) / W - 0.5) * 62; },
+      ppd: (W) => W / 62,
+      moonAt: (W, H) => { const f = newsFrame(W, H, -1); return [(f.wx0 + f.ww * 0.26) / W, (f.wT + (f.hz - f.wT) * 0.38) / H]; },
+      moonBig: 1.2,
+      ground: null,
+    },
+    'way-in': {
+      draw: wayIn,
+      world: 'inland',
+      // the view turned so the Sun sets in the open sky between the lamp and the building, on the far
+      // headland's slope, its path on the sea beyond the wall; the Moon set high in the same open sky,
+      // clear of the lamp (its true phase and tilt, the place a painter's licence, as in the library); the turn uses the
+      // same minute, horizon and scale as build(), so the Sun keeps its place at every card width. Day's
+      // and Dawn's clouds keep clear of the building's corner, where they piled up like steam.
+      sunset: WAYIN_SUN,
+      horizon: WAYIN_HZ,
+      ppd: (W, H, y0) => Math.min(W / 62, y0 / 30),
+      face: (W, H) => SKY.sunset[WAYIN_SUN][0] + 0.2 * W / Math.min(W / 62, Math.round(H * WAYIN_HZ) / 30),
+      moonAt: [0.26, 0.17],
+      moonBig: 2.2,
+      cloudOk: (W) => (x0, y0, x1) => x1 < W * 0.37 || x0 > W * 0.41,
       ground: null,
     },
     'shirley-heights': {
@@ -2842,11 +3248,13 @@
       + `<path class="isl-vsunpath2" d="${d1}" stroke-width="${F(sw)}" stroke-opacity="${F(0.55 * lit)}"/>`
       + `<path class="isl-vsunpath2" d="${d2}" stroke-width="${F(sw)}" stroke-opacity="${F(0.28 * lit)}"/></g>`;
   }
-  function dawnDay(v, W, y0, H, seed = 0) {
+  // `ok`, a piece's own keep-clear test (PIECES `cloudOk`), leaves out a band or cloud that would sit where
+  // the piece does not want one; the others keep their places.
+  function dawnDay(v, W, y0, H, seed = 0, ok) {
     const p = v.ppd, sx = v.x(SKY.a.sun[0]);
     const glow = sx > -W * 0.3 && sx < W * 1.3
       ? `<ellipse cx="${F(sx)}" cy="${F(y0)}" rx="${F(40 * p)}" ry="${F(8 * p)}" fill="url(#islvdawn)" clip-path="url(#islsky)"/>` : '';
-    return `<g class="isl-a">${glow}${bands(W, y0, 89 + seed)}</g><g class="isl-y">${clouds(W, y0, 211 + seed)}</g>`;
+    return `<g class="isl-a">${glow}${bands(W, y0, 89 + seed, ok)}</g><g class="isl-y">${clouds(W, y0, 211 + seed, ok)}</g>`;
   }
 
   function build(W, H, piece) {
@@ -2904,7 +3312,7 @@
       + gSky
       + sky.d.planets + sky.n.planets
       + sky.d.moon + sky.n.moon
-      + dawnDay(v, W, y0, H, piece === 'shirley-heights' ? 0 : [...piece].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 997, 7))
+      + dawnDay(v, W, y0, H, piece === 'shirley-heights' ? 0 : [...piece].reduce((a, c) => (a * 31 + c.charCodeAt(0)) % 997, 7), P.cloudOk ? P.cloudOk(W, H) : undefined)
       + `<g class="isl-a">${sunDisc(v, 'a', W, y0, H, P)}</g><g class="isl-s">${sunDisc(v, 's', W, y0, H, P)}</g>`
       + (P.world === 'coast' ? islands(v, 'f-isl') : '')
       + `<rect y="${y0}" width="${F(W)}" height="${F(sea + 1)}" fill="url(#islseag)"/>`

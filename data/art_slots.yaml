@@ -194,6 +194,20 @@ slots:
     kind: news
     fit: text
 
+  # Wave 3 (owner, 2026-09-29, subjects approved with the nine): a committee room
+  # for Committee Work and Updates, its agenda ticked off in the governance hue,
+  # and a way in for everyone for Accessibility, a ramp beside the steps to a
+  # lit door. Not places, so no captions.
+  - page: governance/updates.md
+    section: _head
+    piece: committee-room
+    kind: governance
+    fit: text
+  - page: accessibility.md
+    section: _head
+    piece: way-in
+    fit: text
+
   # Tools & Prompts: the Betty's Hope sugar mill, a tool that turns wind
   # into work ("just fit it in to the small section of text at the top").
   - page: tools-and-prompts.md
