@@ -2234,16 +2234,21 @@
     lights.push([wx0 + ww * 0.66, y0 - Y(0.04)]);
     s += dashes(streakList(wx0 + ww * 0.66, y0 + 1, H, r, 0.04, 0.05), 's-vglow', 1, [0.08, 0.16, 0.3]);
     const sb = wx0 + ww * 0.25, sy = y0 + Y(0.04);
-    s += `<path class="isl-vhull" d="M${F(sb - Y(0.03))} ${F(sy - Y(0.01))}H${F(sb + Y(0.03))}L${F(sb + Y(0.022))} ${F(sy)}H${F(sb - Y(0.024))}Z"/>`
+    const boat = `<path class="isl-vhull" d="M${F(sb - Y(0.03))} ${F(sy - Y(0.01))}H${F(sb + Y(0.03))}L${F(sb + Y(0.022))} ${F(sy)}H${F(sb - Y(0.024))}Z"/>`
       + `<path class="isl-vsail" d="M${F(sb)} ${F(sy - Y(0.012))}V${F(sy - Y(0.1))}L${F(sb + Y(0.034))} ${F(sy - Y(0.016))}Z"/>`;
+    // (its masthead light's column on the water and its faint reflection, as the cay's light and the cay have)
+    s += dashes(streakList(sb, sy + 1, H, rng(617), 0.04, 0.05), 's-vglow', 1, [0.08, 0.16, 0.3])
+      + `<g opacity=".15"><g transform="translate(0 ${F(2 * sy)}) scale(1 -1)">${boat}</g></g>` + boat;
     lights.push([sb, sy - Y(0.1)]);
     s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
     // 2. The wall, the window cut out of it, its reveal, frame and sill; a shelf of books above the desk.
     s += `<path fill="url(#islpwallg)" fill-rule="evenodd" d="${rect(-2, -2, W + 4, H + 4)}${rect(wx0, wT, ww, wB - wT)}"/>`;
     const rv = Math.max(2, Y(0.025));
-    s += `<path class="isl-lsidew" d="${polyD([[wx1, wT], [wx1 - rv, wT + rv], [wx1 - rv, wB], [wx1, wB]])}${rect(wx0, wB - rv, ww, rv)}"/>`;
+    // (the reveal on the left jamb, the one the viewer, to the window's right, can see; the transom high, a
+    // top light over tall lower panes, so the rising Sun stands whole below it: at 0.42 it cut the disc in two)
+    s += `<path class="isl-lsidew" d="${polyD([[wx0, wT], [wx0 + rv, wT + rv], [wx0 + rv, wB], [wx0, wB]])}${rect(wx0, wB - rv, ww, rv)}"/>`;
     s += `<path class="isl-lframe" d="${rect(wx0, wT, ww, wB - wT)}" stroke-width="${F(Math.max(1.5, Y(0.018)))}"/>`
-      + `<path class="isl-lframe" d="M${F(wx0 + ww * 0.5)} ${F(wT)}V${F(wB)}M${F(wx0)} ${F(wT + (wB - wT) * 0.42)}H${F(wx1)}" stroke-width="${F(Math.max(1, Y(0.011)))}"/>`
+      + `<path class="isl-lframe" d="M${F(wx0 + ww * 0.5)} ${F(wT)}V${F(wB)}M${F(wx0)} ${F(wT + (wB - wT) * 0.3)}H${F(wx1)}" stroke-width="${F(Math.max(1, Y(0.011)))}"/>`
       + `<path class="isl-lsill" d="${rect(wx0 - Y(0.02), wB, ww + Y(0.04), Math.max(2, Y(0.022)))}"/>`;
     // 3. The desk: its top a little from above, its front with a drawer and its pull, its legs.
     const dTop = Y(0.72), dFront = Y(0.755), dFoot = Y(0.87), d0 = X(0.02), d1 = X(0.98);
@@ -2278,8 +2283,9 @@
     s += `<path class="isl-pruled" d="${ruled}" stroke-width=".7"/><path class="isl-phand" d="${hw}" stroke-width="${F(Math.max(0.8, Y(0.005)))}"/>`
       + `<path class="isl-pcoil" d="${coil}" stroke-width="${F(Math.max(0.9, Y(0.006)))}"/>`;
     const lift = [nx + nW * 0.28, rowY(5) - Y(0.005)];
-    const pen = `M${F(nx + nW * 0.66)} ${F(dTop - Y(0.006))}l${F(Y(0.2))} ${F(-Y(0.03))}l${F(Y(0.014))} ${F(Y(0.006))}l${F(-Y(0.2))} ${F(Y(0.03))}Z`;
-    s += `<path class="isl-lbk1" d="${pen}"/>`;
+    // (it lies on the desk's top, its slant read as depth; above the back edge it had floated against the wall)
+    const pen = `M${F(nx + nW * 0.66)} ${F(dTop + Y(0.026))}l${F(Y(0.2))} ${F(-Y(0.02))}l${F(Y(0.014))} ${F(Y(0.005))}l${F(-Y(0.2))} ${F(Y(0.02))}Z`;
+    s += `<path class="isl-lbk2" d="${pen}"/>`;
     // 5. The books and the mug at the right, the lamp at the left over the notebook.
     const bkx = X(0.925);
     let o = '';
@@ -2289,7 +2295,12 @@
     }, dTop);
     s += o;
     const mx = X(0.845), mw = Y(0.035), mt = dTop - Y(0.09);
-    s += `<path class="isl-lmug" d="M${F(mx - mw)} ${F(dTop)}V${F(mt)}H${F(mx + mw)}V${F(dTop)}Z"/><path class="isl-lmugh" d="M${F(mx + mw)} ${F(mt + Y(0.02))}q${F(mw * 0.9)} ${F(Y(0.025))} 0 ${F(Y(0.05))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    s += `<path class="isl-lmug" d="M${F(mx - mw)} ${F(dTop)}V${F(mt)}H${F(mx + mw)}V${F(dTop)}Z"/>`
+      // (seen a little from above, its opening and the coffee in it; its side away from the window in shade:
+      // by Day a plain pale block had vanished against the cream wall)
+      + `<path class="isl-lredsh" d="${rect(mx + mw * 0.35, mt, mw * 0.65, dTop - mt)}"/>`
+      + `<ellipse class="isl-lmug" cx="${F(mx)}" cy="${F(mt)}" rx="${F(mw)}" ry="${F(Y(0.008))}"/><ellipse class="isl-lbronze" cx="${F(mx)}" cy="${F(mt + 0.5)}" rx="${F(mw * 0.8)}" ry="${F(Y(0.0055))}"/>`
+      + `<path class="isl-lmugh" d="M${F(mx + mw)} ${F(mt + Y(0.02))}q${F(mw * 0.9)} ${F(Y(0.025))} 0 ${F(Y(0.05))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     // the lamp: a weighted base, two arms, a shade tilted down at the notebook; lit, its bulb, halo, the
     // light spilling onto the pages and a warm pool on them
     const lb = wx1 + Y(0.07), la = [lb, dTop - Y(0.02)], lj = [lb + Y(0.03), dTop - Y(0.44)], lh = [nx - nW * 0.4, nT - Y(0.1)];
@@ -2327,6 +2338,7 @@
     let spark = '';
     for (let i = 0; i < 8; i++) { const a = r() * Math.PI * 2, d = orr * (1.5 + r() * 0.9); spark += `M${F(ox + Math.cos(a) * d)} ${F(oy + Math.sin(a) * d * 0.7)}h0`; }
     const rw2 = Y(0.19), rh2 = Y(0.1), rx2 = Math.min(W - rw2 * 0.6, ox + orr * 1.6), ry2 = oy - orr * 1.75;
+    s += `<g class="isl-vlamps isl-vwin isl-vlast" style="--i:3"><ellipse cx="${F(ox)}" cy="${F(dTop + Y(0.014))}" rx="${F(orr * 1.6)}" ry="${F(Y(0.016))}" fill="url(#islporbh)" opacity=".55"/></g>`;   // its light on the desk
     s += `<g class="isl-vwin isl-vlast" style="--i:3">${halo(ox, oy, orr * 3, 'islporbh')}`
       + `<ellipse class="isl-pring" cx="${F(ox)}" cy="${F(oy)}" rx="${F(orr * 1.7)}" ry="${F(orr * 0.45)}" transform="rotate(-14 ${F(ox)} ${F(oy)})" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
       + `<ellipse class="isl-pring" cx="${F(ox)}" cy="${F(oy)}" rx="${F(orr * 1.35)}" ry="${F(orr * 0.3)}" transform="rotate(22 ${F(ox)} ${F(oy)})" stroke-width="${F(Math.max(0.6, Y(0.004)))}"/>`
@@ -3273,7 +3285,11 @@
       horizon: (W, H) => promptFrame(W, H).hz / H,
       face: (W, H) => { const f = promptFrame(W, H); return SKY.a.sun[0] - ((f.wx0 + f.ww * 0.62) / W - 0.5) * 62; },
       ppd: (W) => W / 62,
-      moonAt: (W, H) => { const f = promptFrame(W, H); return [(f.wx0 + f.ww * 0.76) / W, (f.wT + (f.hz - f.wT) * 0.38) / H]; },
+      moonAt: (W, H) => { const f = promptFrame(W, H); return [(f.wx0 + f.ww * 0.76) / W, (f.wT + (f.hz - f.wT) * 0.22) / H]; },
+      bars: (W, H) => {
+        const f = promptFrame(W, H), t = H * 0.012, tr = f.wT + (f.wB - f.wT) * 0.3, mx = f.wx0 + f.ww / 2;
+        return [[f.wx0, f.wT - t, f.wx1, f.wT + t], [f.wx0, tr - t, f.wx1, tr + t], [mx - t, f.wT, mx + t, f.wB], [f.wx0 - t, f.wT, f.wx0 + t, f.wB], [f.wx1 - t, f.wT, f.wx1 + t, f.wB]];
+      },
       moonBig: 1.2,
       ground: null,
     },

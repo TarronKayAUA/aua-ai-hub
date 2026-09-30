@@ -111,12 +111,12 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### prompt-desk
 
-- [ ] #14 fix v4 `prompt-desk-1`: The transom cuts the rising Sun in half at Dawn
-- [ ] #43 fix v3 `prompt-desk-3`: The sailing boat's light has no column and the boat no reflection
-- [ ] #63 fix v2 `prompt-desk-4`: The pen floats above the desk's back edge
-- [ ] #74 fix v2 `prompt-desk-2`: The window's reveal is on the wrong jamb
-- [ ] #84 add v2 `prompt-desk-5`: Coffee in the mug, and its shaded side, so it reads by Day
-- [ ] #91 add v2 `prompt-desk-6`: The orb's glow laid on the desk beneath it
+- [x] #14 fix v4 `prompt-desk-1`: The transom cuts the rising Sun in half at Dawn
+- [x] #43 fix v3 `prompt-desk-3`: The sailing boat's light has no column and the boat no reflection
+- [x] #63 fix v2 `prompt-desk-4`: The pen floats above the desk's back edge
+- [x] #74 fix v2 `prompt-desk-2`: The window's reveal is on the wrong jamb
+- [x] #84 add v2 `prompt-desk-5`: Coffee in the mug, and its shaded side, so it reads by Day
+- [x] #91 add v2 `prompt-desk-6`: The orb's glow laid on the desk beneath it
 
 ### bell-tower
 
