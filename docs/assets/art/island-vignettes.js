@@ -1792,7 +1792,10 @@
       o += `<path class="s-vlight isl-vwin" style="--i:${i}" d="${lightsD(ports)}" stroke-width="${F(Math.max(1, 1.2 * u))}" stroke-opacity=".7"/>`;
       return o;
     };
-    s += ship(X(0.6), X(0.94), y0 + Y(0.035), 'isl-vship2', 2);
+    // (the far ship in port at Dawn, by Day and at Sunset, and gone from Dusk: cruise ships call at St John's for
+    // the day and sail in the late afternoon, and one staying into the evening, the near one, is ordinary; the
+    // owner, 2026-10-01, and art-audit wave 2, by version. The town and the quay drawn under her fill the berth)
+    s += `<g class="isl-lq" data-q="ays">` + ship(X(0.6), X(0.94), y0 + Y(0.035), 'isl-vship2', 2) + '</g>';
     s += ship(X(0.28), X(0.7), y0 + Y(0.12), 'isl-vship', 2);
     // a launch crossing toward the quay, its riding light and its column of light
     const lx0 = X(0.82), ly0 = Y(0.9), ll = 40 * u;
