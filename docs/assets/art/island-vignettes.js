@@ -3333,9 +3333,10 @@
     s += `<path class="isl-vcourse" d="${pav}" stroke-width=".7" stroke-opacity=".5"/>`;
     // 3. The building: two storeys of stone at the right, its ground floor rusticated and finer courses
     //    above, quoins up the exposed corner, a string course, the parapet's coping catching the last
-    //    light, the side of the building in shade at its left end.
+    //    light. Seen straight on, it shows no side: its quoins make the corner (art-audit wave 1, 2026-10-01: a
+    //    shaded strip of side had shown at its left end, against the ruling for buildings seen straight on).
     const b0 = X(0.4), bTop = Y(0.14), mid = Y(0.4), land = street - Y(0.09);
-    s += `<path d="${rect(b0, bTop, W - b0 + 2, street - bTop + 1)}" fill="url(#islvfacade)"/><path class="isl-vpshade" d="${rect(b0, bTop, Y(0.035), street - bTop + 1)}"/>`;
+    s += `<path d="${rect(b0, bTop, W - b0 + 2, street - bTop + 1)}" fill="url(#islvfacade)"/>`;
     let rust = '', fine = '';
     for (let y = mid + Y(0.05); y < street - Y(0.01); y += Y(0.05)) rust += `M${F(b0 + Y(0.035))} ${F(y)}H${F(W + 2)}`;
     for (let y = bTop + Y(0.06); y < mid - Y(0.01); y += Y(0.035)) fine += `M${F(b0 + Y(0.035))} ${F(y)}H${F(W + 2)}`;
@@ -3345,9 +3346,6 @@
     s += `<path class="isl-vstone" d="${quoins}"/>`
       + `<path class="isl-vstone" d="${rect(b0 - Y(0.012), bTop - Y(0.03), W - b0 + 14, Y(0.03))}${rect(b0, mid - Y(0.008), W - b0 + 2, Y(0.018))}"/>`
       + `<path class="isl-vpshade" d="${rect(b0, bTop, W - b0 + 2, Y(0.02))}"/>`
-      // (the side face's shade carried up through the coping, which turns at its own corner, and the string
-      // course, as on the Court House: both had crossed the shaded side face in light)
-      + `<path class="isl-vpshade" d="${rect(b0 - Y(0.012), bTop - Y(0.03), Y(0.035), Y(0.03))}${rect(b0, mid - Y(0.008), Y(0.035), Y(0.018))}"/>`
       + `<path class="s-rim" d="M${F(b0 - Y(0.012))} ${F(bTop - Y(0.03) + 0.5)}H${F(W + 2)}" stroke-width="1.2" stroke-opacity=".45"/>`;
     // the door's bay: the entrance at the middle of the landing, which runs from lx0 to lx1; the windows
     // in bays measured out from the door, so one stands centred over it; on the ground floor tall windows
