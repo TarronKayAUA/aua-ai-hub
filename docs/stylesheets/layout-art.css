@@ -663,6 +663,8 @@
 .isl .isl-mstand { stroke: var(--isl-tiron); fill: none; stroke-linecap: round; }
 .isl .isl-mbone { stroke: var(--isl-bone); fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .isl .isl-mbonef { fill: var(--isl-bone); }
+/* the skeleton's shadow on the wall just behind it, so its bones read against a wall of nearly their colour */
+.isl .isl-mbshadow { stroke: var(--isl-lside); stroke-opacity: 0.22; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .isl .isl-mhole { stroke: #3a3730; fill: none; stroke-linecap: round; }
 .isl .isl-mseat { fill: var(--isl-mseat); }
 .isl .isl-mseat2 { fill: var(--isl-mseat); filter: brightness(0.82); }

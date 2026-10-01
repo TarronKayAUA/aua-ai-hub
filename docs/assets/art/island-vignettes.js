@@ -2646,7 +2646,8 @@
   function lectureHall(W, H, v) {
     const y0 = v.y0, X = (k) => k * W, Y = (k) => k * H, r = rng(1013);
     // the high windows: three, along the top of the front wall; the view is sky and a far line of hills
-    const wins = [0.12, 0.32, 0.52].map((k) => X(k)), ww = Y(0.36), wT = Y(0.08), wB = Y(0.3);
+    // (spaced evenly from X(0.12) to a margin short of the screen: at fixed places the third ran under it)
+    const ww = Y(0.36), wT = Y(0.08), wB = Y(0.3), wL = X(0.12), wR = X(0.62) - Y(0.07) - ww, wins = [wL, (wL + wR) / 2, wR];
     let s = '';
     const hill = [];
     for (let x = -4, i = 0; x < W + 8; x += Y(0.12), i++) hill.push([x, y0 - Y(0.01 + (Math.sin(i * 0.9) + 1) * 0.012)]);
@@ -2656,10 +2657,22 @@
     s += `<defs><linearGradient id="isllwallg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lwall0"/><stop offset="1" class="st-lwall1"/></linearGradient></defs><path fill="url(#isllwallg2)" fill-rule="evenodd" d="${wallD}"/>`;
     let fr = '', mul = '';
     for (const x of wins) { fr += rect(x, wT, ww, wB - wT); mul += `M${F(x + ww / 3)} ${F(wT)}V${F(wB)}M${F(x + (2 * ww) / 3)} ${F(wT)}V${F(wB)}`; }
+    // (the wall's thickness: each head's soffit, seen from below, under the frame; a sill and its shadow)
+    let sills = '', sillSh = '', heads = '';
+    for (const x of wins) {
+      sills += rect(x - Y(0.015), wB, ww + Y(0.03), Math.max(2, Y(0.018)));
+      sillSh += rect(x - Y(0.015), wB + Math.max(2, Y(0.018)), ww + Y(0.03), Math.max(1.2, Y(0.01)));
+      heads += rect(x, wT, ww, Math.max(1.5, Y(0.015)));
+    }
+    s += `<path class="isl-lsidew" d="${heads}"/>`;
     s += `<path class="isl-lframe" d="${fr}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-lframe" d="${mul}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
+    s += `<path class="isl-tdrop" d="${sillSh}"/><path class="isl-lsill" d="${sills}"/>`;
     // 1. The screen at the right of the front wall, lit: the heart and its notes; the projector's beam.
     const sx0 = X(0.62), sx1 = X(0.97), sT = Y(0.08), sB = Y(0.6), scx = sx0 + (sx1 - sx0) * 0.34, scy = (sT + sB) / 2;
-    s += `<path d="${polyD([[X(0.8) - Y(0.02), -2], [X(0.8) + Y(0.02), -2], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#islvspill)" opacity=".5"/>`;
+    // (from a projector hung from the ceiling: the beam had come from nowhere at the top edge)
+    const pjx = X(0.8), pjy = Y(0.035);
+    s += `<path d="${polyD([[pjx - Y(0.015), pjy], [pjx + Y(0.015), pjy], [sx1, sT], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#islvspill)" opacity=".5"/>`;
+    s += `<path class="isl-tiron" d="${rect(pjx - 1, -2, 2, Y(0.014) + 2)}${rect(pjx - Y(0.055), Y(0.012), Y(0.11), Y(0.028))}"/>`;
     s += `<path class="isl-tiron" d="${rect(sx0 - Y(0.012), sT - Y(0.012), sx1 - sx0 + Y(0.024), sB - sT + Y(0.024))}"/><path class="isl-mscreen" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}"/>`;
     const hr = Math.min((sB - sT) * 0.36, (sx1 - sx0) * 0.2);
     const heart = `M${F(scx)} ${F(scy + hr * 0.95)}C${F(scx - hr * 1.2)} ${F(scy + hr * 0.2)} ${F(scx - hr * 1.1)} ${F(scy - hr * 0.7)} ${F(scx - hr * 0.35)} ${F(scy - hr * 0.62)}C${F(scx - hr * 0.1)} ${F(scy - hr * 0.6)} ${F(scx)} ${F(scy - hr * 0.4)} ${F(scx)} ${F(scy - hr * 0.3)}C${F(scx + hr * 0.1)} ${F(scy - hr * 0.6)} ${F(scx + hr * 0.9)} ${F(scy - hr * 0.8)} ${F(scx + hr * 0.95)} ${F(scy - hr * 0.1)}C${F(scx + hr * 0.95)} ${F(scy + hr * 0.4)} ${F(scx + hr * 0.4)} ${F(scy + hr * 0.7)} ${F(scx)} ${F(scy + hr * 0.95)}Z`;
@@ -2681,13 +2694,23 @@
     for (let i = 0; i < 5; i++) { const ry = top + u * (1.9 + i * 0.55), rw = u * (1.05 - Math.abs(i - 1.6) * 0.12); bones += `M${F(kx - rw)} ${F(ry + u * 0.25)}Q${F(kx - rw)} ${F(ry - u * 0.2)} ${F(kx)} ${F(ry)}Q${F(kx + rw)} ${F(ry - u * 0.2)} ${F(kx + rw)} ${F(ry + u * 0.25)}`; }
     bones += `M${F(kx - u * 1.1)} ${F(top + u * 1.7)}L${F(kx - u * 1.5)} ${F(top + u * 3.4)}L${F(kx - u * 1.6)} ${F(top + u * 5.0)}M${F(kx + u * 1.1)} ${F(top + u * 1.7)}L${F(kx + u * 1.45)} ${F(top + u * 3.4)}L${F(kx + u * 1.3)} ${F(top + u * 5.0)}`;
     bones += `M${F(kx - u * 0.6)} ${F(top + u * 6.2)}L${F(kx - u * 0.75)} ${F(top + u * 8.2)}L${F(kx - u * 0.7)} ${F(top + u * 10.2)}M${F(kx + u * 0.6)} ${F(top + u * 6.2)}L${F(kx + u * 0.72)} ${F(top + u * 8.2)}L${F(kx + u * 0.65)} ${F(top + u * 10.2)}`;
+    // its collarbones, from the top of the breastbone out to each shoulder (the arms had hung unattached)
+    bones += `M${F(kx - u * 1.1)} ${F(top + u * 1.7)}Q${F(kx - u * 0.55)} ${F(top + u * 1.35)} ${F(kx)} ${F(top + u * 1.55)}Q${F(kx + u * 0.55)} ${F(top + u * 1.35)} ${F(kx + u * 1.1)} ${F(top + u * 1.7)}`;
+    const bonesF = `M${F(kx - u * 0.6)} ${F(top + u * 0.6)}a${F(u * 0.6)} ${F(u * 0.62)} 0 1 1 ${F(u * 1.2)} 0q0 ${F(u * 0.5)} ${F(-u * 0.25)} ${F(u * 0.7)}h${F(-u * 0.7)}q${F(-u * 0.25)} ${F(-u * 0.2)} ${F(-u * 0.25)} ${F(-u * 0.7)}Z`
+      + `M${F(kx - u * 0.9)} ${F(top + u * 5.6)}Q${F(kx)} ${F(top + u * 5.1)} ${F(kx + u * 0.9)} ${F(top + u * 5.6)}L${F(kx + u * 0.6)} ${F(top + u * 6.4)}Q${F(kx)} ${F(top + u * 6.8)} ${F(kx - u * 0.6)} ${F(top + u * 6.4)}Z`;
+    // (its shadow on the wall just behind it, so its bones read against a wall of nearly their own colour;
+    // offset a little, a thin shaded edge on each bone rather than a ghost copy)
+    s += `<g transform="translate(${F(Y(0.005))} ${F(Y(0.007))})"><path class="isl-mbshadow" d="${bones}" stroke-width="${F(Math.max(1, u * 0.2))}"/><path class="isl-tdrop" d="${bonesF}"/></g>`;
     s += `<path class="isl-mstand" d="M${F(kx)} ${F(top - u * 0.6)}V${F(top)}M${F(kx)} ${F(top + u * 10.3)}V${F(lB)}M${F(kx - u * 1.3)} ${F(lB)}H${F(kx + u * 1.3)}" stroke-width="${F(Math.max(1.2, u * 0.2))}"/>`
       + `<path class="isl-mbone" d="${bones}" stroke-width="${F(Math.max(1, u * 0.2))}"/>`
-      + `<path class="isl-mbonef" d="M${F(kx - u * 0.6)} ${F(top + u * 0.6)}a${F(u * 0.6)} ${F(u * 0.62)} 0 1 1 ${F(u * 1.2)} 0q0 ${F(u * 0.5)} ${F(-u * 0.25)} ${F(u * 0.7)}h${F(-u * 0.7)}q${F(-u * 0.25)} ${F(-u * 0.2)} ${F(-u * 0.25)} ${F(-u * 0.7)}Z`
-      + `M${F(kx - u * 0.9)} ${F(top + u * 5.6)}Q${F(kx)} ${F(top + u * 5.1)} ${F(kx + u * 0.9)} ${F(top + u * 5.6)}L${F(kx + u * 0.6)} ${F(top + u * 6.4)}Q${F(kx)} ${F(top + u * 6.8)} ${F(kx - u * 0.6)} ${F(top + u * 6.4)}Z"/>`
+      + `<path class="isl-mbonef" d="${bonesF}"/>`
       + `<path class="isl-mhole" d="M${F(kx - u * 0.32)} ${F(top + u * 0.62)}h0M${F(kx + u * 0.32)} ${F(top + u * 0.62)}h0" stroke-width="${F(Math.max(1.4, u * 0.28))}"/>`;
     // 3. The rows of seats, stepping down toward the front: two rows of seat backs across the foot of the
     //    picture, the nearer larger and lower, and the desk rail in front of each.
+    // (the tiers in shade behind the seats: the pale wall had shown between them down to the foot, and the
+    // lectern's and the stand's feet below the rail)
+    const tier = rect(-2, Y(0.78), W + 4, H - Y(0.78) + 2);
+    s += `<path class="isl-lfloor" d="${tier}"/><path class="isl-tdrop" d="${tier}"/>`;
     for (const [yt, sz, cls] of [[0.8, 0.13, 'isl-mseat'], [0.9, 0.18, 'isl-mseat2']]) {
       let seats = '';
       for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) seats += `M${F(x)} ${F(H + 2)}V${F(Y(yt) + Y(sz) * 0.3)}Q${F(x)} ${F(Y(yt))} ${F(x + Y(sz) * 0.3)} ${F(Y(yt))}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz))} ${F(Y(yt))} ${F(x + Y(sz))} ${F(Y(yt) + Y(sz) * 0.3)}V${F(H + 2)}Z`;
@@ -3365,7 +3388,7 @@
       horizon: 0.27,
       face: 262,
       ppd: (W) => W / 62,
-      moonAt: (W, H) => [(W * 0.32 + H * 0.18) / W, 0.15],
+      moonAt: (W, H) => [(W * 0.37 - H * 0.035) / W, 0.15],   // (the middle window's centre, as it is spaced now)
       moonBig: 1,
       ground: null,
     },

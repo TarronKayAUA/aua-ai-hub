@@ -139,12 +139,12 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### lecture-hall
 
-- [ ] #9 fix v4 `lecture-hall-1`: The third high window runs under the screen
-- [ ] #22 fix v3 `lecture-hall-3`: Collarbones to join the skeleton's arms to its body
-- [ ] #28 fix v3 `lecture-hall-2`: The front wall shows through the seats to the picture's foot
-- [ ] #50 add v3 `lecture-hall-5`: The skeleton's shadow on the wall
-- [ ] #83 add v2 `lecture-hall-4`: The projector the beam comes from
-- [ ] #108 add v2 `lecture-hall-6`: Sills and head reveals for the high windows
+- [x] #9 fix v4 `lecture-hall-1`: The third high window runs under the screen
+- [x] #22 fix v3 `lecture-hall-3`: Collarbones to join the skeleton's arms to its body
+- [x] #28 fix v3 `lecture-hall-2`: The front wall shows through the seats to the picture's foot
+- [x] #50 add v3 `lecture-hall-5`: The skeleton's shadow on the wall
+- [x] #83 add v2 `lecture-hall-4`: The projector the beam comes from
+- [x] #108 add v2 `lecture-hall-6`: Sills and head reveals for the high windows
 
 ### hospital-room
 
