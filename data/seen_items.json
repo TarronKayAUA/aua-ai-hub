@@ -1,169 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Aug/2/open-letters",
-   "title_hash": "07a17c00531841786c3e6895a61fba1d",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": true,
-   "title": "Open letters about AI development",
-   "source": "Simon Willison's weblog",
-   "published": "2026-08-02T04:16:52+00:00",
-   "summary": "An open letter signed by 235 companies including NVIDIA, Amazon, and OpenAI advocates for open-weights AI models and American AI leadership.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Industry and policy"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/2/july-newsletter",
-   "title_hash": "62fa20812cde5a72d291536e5e40df73",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": false,
-   "reason": "newsletter digest; mechanical link list without substantive analysis"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42541051?fc=20260609215449&ff=20260802024637&v=2.20.0.post5+40e1b98",
-   "title_hash": "a9d40d81850c7d74a0d83c3042c7ed65",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": false,
-   "reason": "administrative data and prediction modeling; off-topic for medical education and clinical AI"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42540791?fc=20260609215449&ff=20260802024637&v=2.20.0.post5+40e1b98",
-   "title_hash": "55694043f32aeca3e951bfb016d41c60",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": true,
-   "title": "Feasibility and Perceived Impact of an AI-Assisted Pre-Matriculation Study Strategies Curriculum for Incoming Medical Students",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-01T10:00:00+00:00",
-   "summary": "A study evaluated an AI-assisted curriculum teaching incoming medical students evidence-based study strategies like retrieval practice and spaced repetition before matriculation.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42540747?fc=20260609215449&ff=20260802024637&v=2.20.0.post5+40e1b98",
-   "title_hash": "8e28a4e2c53f72d172ee8d1dce772e01",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": false,
-   "reason": "administrative data and prediction modeling; off-topic for medical education and clinical AI"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42540122?fc=20260609215449&ff=20260802024637&v=2.20.0.post5+40e1b98",
-   "title_hash": "1cd27d9c53ee0564e627961bc82abbb5",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": false,
-   "reason": "virtual simulation without AI focus; off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42539916?fc=20260609215449&ff=20260802024637&v=2.20.0.post5+40e1b98",
-   "title_hash": "e835d01a309846cd5ecea42f00c117ea",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": true,
-   "title": "A primer on artificial intelligence for palliative care educators",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-01T10:00:00+00:00",
-   "summary": "A narrative primer on artificial intelligence for palliative care educators addresses the field's relational, prognostic, and cultural sensitivities overlooked in general health professions education primers.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42539788?fc=20260609215449&ff=20260802024637&v=2.20.0.post5+40e1b98",
-   "title_hash": "30442774cdb4d8284fe0254b1bc83813",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": false,
-   "reason": "narrow domain application; machine learning for hypertension screening without AI education focus"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42539756?fc=20260609215449&ff=20260802024637&v=2.20.0.post5+40e1b98",
-   "title_hash": "6087f168dd18f87ae9e21c2b2f400d57",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": true,
-   "title": "Retrieval-augmented clinical decision support for structured hip-joint disease assessment",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-01T10:00:00+00:00",
-   "summary": "A retrieval-augmented system for hip-joint disease assessment showed feasible retrospective performance but lower accuracy in complex cases, warranting caution and prospective workflow evaluation.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=1RGc6gOAb5E",
-   "title_hash": "17c28fed9afbd225a6748c65905369b3",
-   "first_seen": "2026-08-02T06:46:36.808534+00:00",
-   "kept": false,
-   "reason": "marketing without educational payload"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vcav6l/me_worn_out_from_all_the_new_model_drops_this",
-   "title_hash": "dec837ed0e2545e4c4462e670cd2dfa9",
-   "first_seen": "2026-08-02T10:09:30.337049+00:00",
-   "kept": false,
-   "reason": "forum post with no substantive analysis; lists model names without context or evaluation"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=TjUxBdiut1k",
-   "title_hash": "065119f8a31ab6827dc6abf691b46c3a",
-   "first_seen": "2026-08-02T10:09:30.337049+00:00",
-   "kept": false,
-   "reason": "speculation and drama coverage without substantive content"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/974018/pippa-seedance-artist-royalties",
-   "title_hash": "e5453ed24b937a79547942a7ed3dc1c6",
-   "first_seen": "2026-08-02T13:58:08.107635+00:00",
-   "kept": false,
-   "reason": "industry gossip about artist compensation and AI training; not relevant to medical educators or medical AI"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42542720?fc=20260609215449&ff=20260802095808&v=2.20.0.post5+40e1b98",
-   "title_hash": "dc7391a85b0b83e10e9d6e129ffb4445",
-   "first_seen": "2026-08-02T13:58:08.107635+00:00",
-   "kept": false,
-   "reason": "narrow domain application without evidence of broad significance for AI in medical education"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1va0rce/first_kimi_k3_results_on_home_lab_4ts",
-   "title_hash": "f063e559acece0c2f158b453530b12ba",
-   "first_seen": "2026-08-02T13:58:08.107635+00:00",
-   "kept": false,
-   "reason": "performance-tinkering thread from community forum, not a model release or significant capability development"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=1nf7VqduM3Y",
-   "title_hash": "6d4a437fe8d6280bb04f42d93a8f8295",
-   "first_seen": "2026-08-02T13:58:08.107635+00:00",
-   "kept": false,
-   "reason": "speculation about unreleased model; no confirmed OpenAI product named GPT-5.6 Luna exists"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=bNRhppHct54",
-   "title_hash": "aafceee1013b38bf15b83767c951811a",
-   "first_seen": "2026-08-02T13:58:08.107635+00:00",
-   "kept": true,
-   "title": "Understanding AI Agent Hallucination in AI Systems",
-   "source": "IBM Technology",
-   "published": "2026-08-02T11:00:16+00:00",
-   "summary": "IBM explainer on how large language models generate confident but false answers and why hallucination occurs in AI systems.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i3.ytimg.com/vi/bNRhppHct54/hqdefault.jpg",
-   "display_title": "Understanding AI agent hallucination in AI systems"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Everything-You-Need-to-Know-About-AI-Tokens-e3mrtg1",
-   "title_hash": "2a1aa345b40f53d9370839d23d82bd8b",
-   "first_seen": "2026-08-02T13:58:08.107635+00:00",
-   "kept": true,
-   "title": "Everything You Need to Know About AI Tokens",
-   "source": "The AI Daily Brief",
-   "published": "2026-08-02T12:17:43+00:00",
-   "summary": "Nufar Gaspar explains how AI tokens work, why agentic workflows inflate costs, and how to measure cost-effectiveness of model deployments.",
-   "category": "podcasts",
-   "score": 2.0,
-   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vdcgpm/setting_up_of_a_16xgb10_dgx_spark_cluster",
    "title_hash": "762cbe9d8136eb7ed68f188d13ed1c33",
    "first_seen": "2026-08-02T17:17:14.958369+00:00",
@@ -33385,6 +33222,245 @@
    "first_seen": "2026-10-01T06:00:09.483356+00:00",
    "kept": false,
    "reason": "narrow clinical domain application"
+  },
+  {
+   "url": "https://huggingface.co/blog/allenai/olmocore3",
+   "title_hash": "9629fe25cb462f467dd9727dca2c16e6",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "niche training infrastructure release with little relevance to this audience"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
+   "title_hash": "42c52868564ee3c0f7db8d3e8e9a9caf",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "OpenAI’s new agent is a shot at Meta, but can it compete with free?",
+   "source": "The Verge AI",
+   "published": "2026-10-01T14:36:50+00:00",
+   "summary": "At its DevDay conference, OpenAI announced Dots, an agent powered by GPT-6 Astra, positioned against Meta's Muse agent platform, according to The Verge.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2297767958.jpg?quality=90&strip=all&crop=0%2C10.754010807628%2C100%2C78.491978384743&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.aipolicyperspectives.com/p/the-maths-behind-ai",
+   "title_hash": "2618d12d6ba852e35c1fa17ddbb4ba8b",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "The Maths Behind AI",
+   "source": "AI Policy Perspectives",
+   "published": "2026-10-01T14:35:09+00:00",
+   "summary": "An explainer from AI Policy Perspectives describes the mathematics underlying modern artificial intelligence systems for readers who are not comfortable with numbers.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://substackcdn.com/image/fetch/$s_!gRoh!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9b8c421d-31b6-41ad-98ca-9db7eb371d35_1024x514.png",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash",
+   "title_hash": "d1fc701ce35a28a3925fa2a82999ce21",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "investigative story on a data center project, marginal for this audience"
+  },
+  {
+   "url": "https://www.oneusefulthing.org/p/the-dot-and-the-swarm",
+   "title_hash": "db8a9a59fc8af7bbffa8b5a0da658d13",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "The Dot and the Swarm",
+   "source": "One Useful Thing",
+   "published": "2026-10-01T10:54:12+00:00",
+   "summary": "Ethan Mollick's newsletter discusses how the Bitter Lesson, the idea that general methods with more computation outperform hand-built approaches, applies to using AI agents and swarms of them.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://substackcdn.com/image/fetch/$s_!Narw!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe3014425-47c2-47aa-848b-3528f4dc9517_2912x1632.png",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&ff=20261001112835&v=2.20.1",
+   "title_hash": "0f79105bfe5a120f68efa9b193fc6bf6",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "Trust without verification: generation Z, generative artificial intelligence and the calibration paradox in medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-01T10:00:00+00:00",
+   "summary": "A paper examines how Generation Z medical learners trust generative artificial intelligence without verifying its output, and the resulting gap between confidence and accuracy in medical education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42817234?fc=20260609215449&ff=20261001112835&v=2.20.1",
+   "title_hash": "887e585c65cc753670630941e53ddc7c",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "Using a Programme-Level Approach to Developing Reflective Practice in Health Professions Education in the Age of AI",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-01T10:00:00+00:00",
+   "summary": "The paper proposes a programme-level approach to developing and assessing reflective practice in health professions education, addressing the challenge that generative artificial intelligence poses to reflective assignments.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/frequently-asked-questions",
+   "title_hash": "daa2e1c876574609e8c287faa8f6d6c7",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, no AI content"
+  },
+  {
+   "url": "https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics",
+   "title_hash": "77bb9e92bd71431e896659a8cb92e277",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "Opinion: Claude analyzed my genome in 30 minutes. Now we need standards for the results",
+   "source": "STAT News AI",
+   "published": "2026-10-01T08:30:00+00:00",
+   "summary": "Cardiologist Euan Ashley writes that Claude analyzed a whole genome in 30 minutes for about $5, a task that once took 30 people nearly a year, and argues for standards for such results.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_2094749636_Editorial_Use_Only-645x645.jpeg",
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/1/matthew-green",
+   "title_hash": "ccea2c18318e7581d8018852d6df25ad",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "short quotation fragment from a personal blog without full analysis"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03245-6",
+   "title_hash": "8e0a2045561fe7b633325bb5b297ad17",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "Beyond the sycophantic vs. cold divide: towards flexible, emotionally intelligent agents to foster healthier human-AI interactions",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-01T00:00:00+00:00",
+   "summary": "A npj Digital Medicine paper discusses psychological distress linked to sycophantic language model responses and argues for flexible, emotionally intelligent agents instead of either sycophantic or cold ones.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03361-3",
+   "title_hash": "8e130e5d6591789f47374fe5cb2fd06b",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "Influence of physician and consumer demographics on AI-use penalties in primary care: a vignette-based study",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-01T00:00:00+00:00",
+   "summary": "A vignette-based study examines how physician and consumer demographics influence the penalty patients apply to primary care physicians who use artificial intelligence.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04677-z",
+   "title_hash": "6a09b8dbc4c81f50e78cdbef56d6b6d5",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "oncology trial with no AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04674-2",
+   "title_hash": "8e70fc561b9ef6c291cbb9f4608fc921",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "diabetes trial with no AI relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wuk9so/least_to_most_expensive_somewhat_modern_gpus_with",
+   "title_hash": "6d674e8d73209e38b1bd780500c4b6c9",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "hardware price listing thread, performance-tinkering content"
+  },
+  {
+   "url": "https://www.insidehighered.com/podcasts/key-podcast/2026/09/30/ep-215-how-faculty-can-be-agents-change",
+   "title_hash": "207f70387534663a7ee5457bd95b2fda",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "podcast-style interview about academic leadership with no clear AI content"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42816703?fc=20260609215449&ff=20261001112835&v=2.20.1",
+   "title_hash": "43544dac95ecfbc62a40e7f336922f9b",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "narrow domain study on waveform annotation, off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wtp9x4/are_you_worried_about_a_potential_ban_of_chinese",
+   "title_hash": "7b70fc8d15297656974b3f3ad5627957",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "forum thread speculating about a possible ban, no significant news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wq672b/i_ran_the_actual_breakeven_math_on_buying_vs",
+   "title_hash": "a7cdb0ec069abc4273240bbbb9129121",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": false,
+   "reason": "forum cost-calculation thread without significant news"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=RMTWayrwYkQ",
+   "title_hash": "7818f7cce5c2f543f46ac9a0d63e716c",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "Gemini 4 Argon Is Google’s Most Powerful AI Model + Early Tests!",
+   "source": "WorldofAI",
+   "published": "2026-09-30T21:53:48+00:00",
+   "summary": "An independent reviewer presents early benchmark tests of Google's Gemini 4 Argon using his own testing tool, showing how the model performs on various tasks.",
+   "category": "videos",
+   "score": 4.0,
+   "thumbnail": "https://i3.ytimg.com/vi/RMTWayrwYkQ/hqdefault.jpg",
+   "display_title": "Early benchmark tests of Google's Gemini 4 Argon model"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=YGgNBcIgI4s",
+   "title_hash": "152e6980bddc9473d1b307188f9b078b",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "What Is Jev? The AI Model That Doesn't Generate Text",
+   "source": "IBM Technology",
+   "published": "2026-10-01T11:00:23+00:00",
+   "summary": "Martin Keen of IBM explains an AI model called Jev that does not generate text, describing how its approach differs from conventional language models, as an introduction to this model type.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/YGgNBcIgI4s/hqdefault.jpg",
+   "display_title": "IBM explainer on Jev, an AI model that does not generate text"
+  },
+  {
+   "url": "https://share.transistor.fm/s/217445d3",
+   "title_hash": "0ddba9f089defd0a0d6e662903240d42",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "Open models and the future of Physical AI with NVIDIA",
+   "source": "Practical AI",
+   "published": "2026-10-01T09:00:00+00:00",
+   "summary": "Hosts Daniel and Chris interview Ming-Yu Liu of NVIDIA about open models, world models, and simulation as AI moves from the cloud into robots, vehicles, and other physical systems.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://img.transistorcdn.com/eCWUByFmqf6c-CPoKKoKapWXBhORL2fD3MFeYczK1fY/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8xYzc1/MTYzZGM1Y2Y4ZmJl/YWUzMDg1MWFjYTQ0/MzllZi5wbmc.jpg"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/ai-am-was-trump-xi-anything-what-counts-as-utopia-aws-gpus-cost-3x-ai-diagnoses-rare-diseases",
+   "title_hash": "3c4b47cc633d2c570f0a5cb52c78dcc3",
+   "first_seen": "2026-10-01T15:28:35.530681+00:00",
+   "kept": true,
+   "title": "AI:AM: Was Trump-Xi Anything? What Counts as Utopia? + AWS GPUs Cost 3X & AI Diagnoses Rare Diseases",
+   "source": "The Cognitive Revolution",
+   "published": "2026-10-01T14:52:22+00:00",
+   "summary": "Hosts Nathan Labenz and Prakash Narayanan discuss US-China AI incident communication, what GPU rental pricing reveals about the market, and AI-assisted diagnosis of rare diseases, with several guests including Jeremie and Edouard Harris.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://megaphone.imgix.net/podcasts/cf9391d0-bd9d-11f1-9163-8f19ef22f336/image/7bd7448078f6f42f7c56fdd2cf568735.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
  ],
  "digests": [

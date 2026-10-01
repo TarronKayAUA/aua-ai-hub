@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=YGgNBcIgI4s" target="_blank" rel="noopener" title="What Is Jev? The AI Model That Doesn&#x27;t Generate Text">
+  <img src="https://i2.ytimg.com/vi/YGgNBcIgI4s/hqdefault.jpg" alt="Video: IBM explainer on Jev, an AI model that does not generate text" loading="lazy">
+  <span class="video-card-title">IBM explainer on Jev, an AI model that does not generate text</span>
+  <span class="video-card-meta">IBM Technology, October 1, 2026</span>
+  <span class="video-card-desc">Martin Keen of IBM explains an AI model called Jev that does not generate text, describing how its approach differs from conventional language models, as an introduction to this model type.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=RMTWayrwYkQ" target="_blank" rel="noopener" title="Gemini 4 Argon Is Google’s Most Powerful AI Model + Early Tests!">
+  <img src="https://i3.ytimg.com/vi/RMTWayrwYkQ/hqdefault.jpg" alt="Video: Early benchmark tests of Google&#x27;s Gemini 4 Argon model" loading="lazy">
+  <span class="video-card-title">Early benchmark tests of Google&#x27;s Gemini 4 Argon model</span>
+  <span class="video-card-meta">WorldofAI, September 30, 2026</span>
+  <span class="video-card-desc">An independent reviewer presents early benchmark tests of Google&#x27;s Gemini 4 Argon using his own testing tool, showing how the model performs on various tasks.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=dHn0qzSDMO0" target="_blank" rel="noopener" title="Can you trust your chatbot? Inside three AI-powered cyberattacks">
   <img src="https://i1.ytimg.com/vi/dHn0qzSDMO0/hqdefault.jpg" alt="Video: Three AI-powered cyberattacks involving chatbots and how to guard against them" loading="lazy">
   <span class="video-card-title">Three AI-powered cyberattacks involving chatbots and how to guard against them</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others</span>
   <span class="video-card-meta">WorldofAI, September 21, 2026</span>
   <span class="video-card-desc">Roundup of recent model releases and updates including Anthropic Opus 5.5, Qwen 4, Kimi K3.1, MiniMax M3.1, and preview of OpenAI Step 5.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=jRMbbRdju7Q" target="_blank" rel="noopener" title="When Should AI Systems Use Super Agents?">
-  <img src="https://i3.ytimg.com/vi/jRMbbRdju7Q/hqdefault.jpg" alt="Video: When to use autonomous AI agent systems" loading="lazy">
-  <span class="video-card-title">When to use autonomous AI agent systems</span>
-  <span class="video-card-meta">IBM Technology, September 20, 2026</span>
-  <span class="video-card-desc">IBM researcher explains the tradeoffs and appropriate use cases for autonomous AI agent systems.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=hygMRgnDD7w" target="_blank" rel="noopener" title="OpenAI hacked, Jev, Google’s RSI, Qwen 3.8 Omni, Bonsai 2, new Gemini Live: AI NEWS">
-  <img src="https://i1.ytimg.com/vi/hygMRgnDD7w/hqdefault.jpg" alt="Video: AI news roundup: recent model releases and updates" loading="lazy">
-  <span class="video-card-title">AI news roundup: recent model releases and updates</span>
-  <span class="video-card-meta">AI Search, September 20, 2026</span>
-  <span class="video-card-desc">News roundup covering multiple AI releases and updates including Qwen 3.8, Gemini Live, and other recent model announcements.</span>
 </a>
 </div>
 

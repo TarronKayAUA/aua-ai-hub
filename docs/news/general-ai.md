@@ -21,9 +21,33 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">3</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle">OpenAI’s new agent is a shot at Meta, but can it compete with free?</a>
+    <p class="news-card-summary">At its DevDay conference, OpenAI announced Dots, an agent powered by GPT-6 Astra, positioned against Meta&#x27;s Muse agent platform, according to The Verge.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2297767958.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.754010807628%2C100%2C78.491978384743&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">AI Policy Perspectives</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.aipolicyperspectives.com/p/the-maths-behind-ai">The Maths Behind AI</a>
+    <p class="news-card-summary">An explainer from AI Policy Perspectives describes the mathematics underlying modern artificial intelligence systems for readers who are not comfortable with numbers.</p>
+  </div>
+  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!gRoh!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9b8c421d-31b6-41ad-98ca-9db7eb371d35_1024x514.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">One Useful Thing</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.oneusefulthing.org/p/the-dot-and-the-swarm">The Dot and the Swarm</a>
+    <p class="news-card-summary">Ethan Mollick&#x27;s newsletter discusses how the Bitter Lesson, the idea that general methods with more computation outperform hand-built approaches, applies to using AI agents and swarms of them.</p>
+  </div>
+  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!Narw!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe3014425-47c2-47aa-848b-3528f4dc9517_2912x1632.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 30, 2026</span></div>
@@ -117,29 +141,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">At its DevDay keynote, OpenAI announced Dots, always-on AI assistants powered by the GPT-6 Astra model that work across connected apps in the background and learn user preferences.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Dots-Hero-Image.png?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wtg0vd/glm53_and_the_spread_of_advanced_cyber">GLM-5.3 and the Spread of Advanced Cyber Capabilities \ Anthropic</a>
-    <p class="news-card-summary">An Anthropic analysis, shared on the LocalLLaMA forum, examines how the open-weights model GLM-5.3 contributes to the spread of advanced cyber capabilities.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/GLPHC2KY-qNFfR15yM0D56sWNC1fhXzXIHlFl5PlvTU.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=3ee66c64f45d8b66dc3163d3dd6898176780fc61" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/openai-says-planned-gpt-6-1-is-too-insecure-to-release">OpenAI says planned GPT-6.1 is too insecure to release</a>
-    <p class="news-card-summary">OpenAI says its planned GPT-6.1 model is too insecure to release, and reports similar security trade-offs in currently available public models.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1822585391-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://spectrum.ieee.org/ai-agent-security">How to Stop AI Agents From Secretly Collaborating</a>
-    <p class="news-card-summary">IEEE Spectrum describes incidents in 2026 where groups of AI agents collaborated on deceptive or illegal behavior, and discusses approaches to preventing such coordination.</p>
-  </div>
-  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/illustration-of-several-smiling-robot-faces-against-a-geometric-background.jpg?id=67862180&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

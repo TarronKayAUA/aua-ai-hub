@@ -21,9 +21,31 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics">Opinion: Claude analyzed my genome in 30 minutes. Now we need standards for the results</a>
+    <p class="news-card-summary">Cardiologist Euan Ashley writes that Claude analyzed a whole genome in 30 minutes for about $5, a task that once took 30 people nearly a year, and argues for standards for such results.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_2094749636_Editorial_Use_Only-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03245-6">Beyond the sycophantic vs. cold divide: towards flexible, emotionally intelligent agents to foster healthier human-AI interactions</a>
+    <p class="news-card-summary">A npj Digital Medicine paper discusses psychological distress linked to sycophantic language model responses and argues for flexible, emotionally intelligent agents instead of either sycophantic or cold ones.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03361-3">Influence of physician and consumer demographics on AI-use penalties in primary care: a vignette-based study</a>
+    <p class="news-card-summary">A vignette-based study examines how physician and consumer demographics influence the penalty patients apply to primary care physicians who use artificial intelligence.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="other">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">September 30, 2026</span></div>
@@ -107,27 +129,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03334-6">Strabismus-Net mobile application for nine-gaze photograph-based strabismus diagnosis using dual-stream cross-attention and adaptive feature aggregation</a>
     <p class="news-card-summary">Mobile application using dual-stream attention networks diagnoses strabismus from nine-gaze photographs, enabling accessible eye movement disorder detection.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03257-2">Generalizable CT vision-language modeling for population health and disease risk</a>
-    <p class="news-card-summary">Vision-language model trained on computed tomography scans predicts population health risks and disease outcomes from imaging data.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03297-8">Development and validation of a machine learning model for the preoperative prediction of intractable hypoxemia in repeat lung surgery</a>
-    <p class="news-card-summary">Machine learning model predicts severe hypoxemia risk in patients undergoing repeat lung surgery, supporting preoperative clinical decision-making.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03236-7">DentalGEN: a large-scale controllable generative AI framework for automated dental crown restoration</a>
-    <p class="news-card-summary">Large-scale generative framework automates design of dental crown restorations with user control, accelerating prosthodontic treatment planning.</p>
   </div>
 </div>
 </div>

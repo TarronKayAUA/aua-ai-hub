@@ -21,9 +21,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1">Trust without verification: generation Z, generative artificial intelligence and the calibration paradox in medical education</a>
+    <p class="news-card-summary">A paper examines how Generation Z medical learners trust generative artificial intelligence without verifying its output, and the resulting gap between confidence and accuracy in medical education.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42817234?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1">Using a Programme-Level Approach to Developing Reflective Practice in Health Professions Education in the Age of AI</a>
+    <p class="news-card-summary">The paper proposes a programme-level approach to developing and assessing reflective practice in health professions education, addressing the challenge that generative artificial intelligence poses to reflective assignments.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 30, 2026</span></div>
@@ -113,20 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 29, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42809787?fc=20260609215449&amp;ff=20260929194441&amp;v=2.20.1">Impact and Future Outlook of Artificial Intelligence in Universities and Medical Education</a>
     <p class="news-card-summary">A narrative literature review examines how artificial intelligence has changed teaching, research, assessment, and administration in universities and medical education, and outlines directions for future use.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42810950?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1">An AI-Powered Voice-Driven Oral Board Examination Simulator for Radiology Training: A Pilot Feasibility Study</a>
-    <p class="news-card-summary">A pilot feasibility study tested RadBoardsAI, a voice-driven simulator for radiology oral board exams, and found it technically feasible and acceptable to radiology residents.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42810257?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1">From alternators to adaptive intelligence: Reimagining radiology education through integrated AI learning platforms</a>
-    <p class="news-card-summary">A commentary traces radiology education from film alternators to digital imaging systems and argues that integrated AI learning platforms are the next major change in resident training.</p>
   </div>
 </div>
 </div>

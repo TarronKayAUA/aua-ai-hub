@@ -11,6 +11,18 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/ai-am-was-trump-xi-anything-what-counts-as-utopia-aws-gpus-cost-3x-ai-diagnoses-rare-diseases" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/cf9391d0-bd9d-11f1-9163-8f19ef22f336/image/7bd7448078f6f42f7c56fdd2cf568735.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI:AM: Was Trump-Xi Anything? What Counts as Utopia? + AWS GPUs Cost 3X &amp; AI Diagnoses Rare Diseases" loading="lazy">
+  <span class="video-card-title">AI:AM: Was Trump-Xi Anything? What Counts as Utopia? + AWS GPUs Cost 3X &amp; AI Diagnoses Rare Diseases</span>
+  <span class="video-card-meta">The Cognitive Revolution, October 1, 2026</span>
+  <span class="video-card-desc">Hosts Nathan Labenz and Prakash Narayanan discuss US-China AI incident communication, what GPU rental pricing reveals about the market, and AI-assisted diagnosis of rare diseases, with several guests including Jeremie and Edouard Harris.</span>
+</a>
+<a class="video-card" href="https://share.transistor.fm/s/217445d3" target="_blank" rel="noopener">
+  <img src="https://img.transistorcdn.com/eCWUByFmqf6c-CPoKKoKapWXBhORL2fD3MFeYczK1fY/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS8xYzc1/MTYzZGM1Y2Y4ZmJl/YWUzMDg1MWFjYTQ0/MzllZi5wbmc.jpg" alt="Podcast: Open models and the future of Physical AI with NVIDIA" loading="lazy">
+  <span class="video-card-title">Open models and the future of Physical AI with NVIDIA</span>
+  <span class="video-card-meta">Practical AI, October 1, 2026</span>
+  <span class="video-card-desc">Hosts Daniel and Chris interview Ming-Yu Liu of NVIDIA about open models, world models, and simulation as AI moves from the cloud into robots, vehicles, and other physical systems.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Most-Important-New-AI-Tools-from-OpenAI-DevDay-e3pl7uv" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Most Important New AI Tools from OpenAI DevDay" loading="lazy">
   <span class="video-card-title">The Most Important New AI Tools from OpenAI DevDay</span>
@@ -166,12 +178,6 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics</span>
   <span class="video-card-meta">The Cognitive Revolution, August 2, 2026</span>
   <span class="video-card-desc">Nathan reports from China on AI safety practices and governance, examining whether American policy arguments about futility of safety obligations hold up against current Chinese model safeguards.</span>
-</a>
-<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Everything-You-Need-to-Know-About-AI-Tokens-e3mrtg1" target="_blank" rel="noopener">
-  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Everything You Need to Know About AI Tokens" loading="lazy">
-  <span class="video-card-title">Everything You Need to Know About AI Tokens</span>
-  <span class="video-card-meta">The AI Daily Brief, August 2, 2026</span>
-  <span class="video-card-desc">Nufar Gaspar explains how AI tokens work, why agentic workflows inflate costs, and how to measure cost-effectiveness of model deployments.</span>
 </a>
 <a class="video-card" href="https://www.cognitiverevolution.ai/is-offense-or-defense-dominant-far-ai-s-adam-gleave-on-the-ai-security-leaderboard" target="_blank" rel="noopener">
   <img src="https://megaphone.imgix.net/podcasts/17fab7ca-8c55-11f1-9f1b-3f3ff7360962/image/a7386c3e3837d9aa954f64ad28a1be30.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Is Offense or Defense Dominant? FAR.AI&#x27;s Adam Gleave on the AI Security Leaderboard" loading="lazy">
