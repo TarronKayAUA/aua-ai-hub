@@ -2985,14 +2985,45 @@
     {
       const b0 = wins[0] + ww * 0.1, b1 = wins[1] + ww * 0.6, bT = Y(0.37), bB = Y(0.6), bw = b1 - b0, bh = bB - bT;
       const fx = (k) => b0 + bw * k, fy = (k) => bT + bh * k, cw = Math.max(0.9, Y(0.007));
-      let chalk = `M${F(fx(0.47))} ${F(fy(0.42))}h${F(bw * 0.06)}v${F(bh * 0.2)}h${F(-bw * 0.06)}Z`;   // the heart, a box
-      chalk += `M${F(fx(0.47))} ${F(fy(0.47))}C${F(fx(0.36))} ${F(fy(0.47))} ${F(fx(0.22))} ${F(fy(0.4))} ${F(fx(0.22))} ${F(fy(0.52))}C${F(fx(0.22))} ${F(fy(0.64))} ${F(fx(0.36))} ${F(fy(0.58))} ${F(fx(0.47))} ${F(fy(0.58))}`;   // the lungs' loop
-      chalk += `M${F(fx(0.53))} ${F(fy(0.47))}C${F(fx(0.7))} ${F(fy(0.4))} ${F(fx(0.86))} ${F(fy(0.3))} ${F(fx(0.86))} ${F(fy(0.52))}C${F(fx(0.86))} ${F(fy(0.76))} ${F(fx(0.7))} ${F(fy(0.66))} ${F(fx(0.53))} ${F(fy(0.58))}`;   // the body's loop
-      chalk += `M${F(fx(0.27))} ${F(fy(0.4))}l${F(bw * 0.03)} ${F(bh * 0.03)}l${F(-bw * 0.03)} ${F(bh * 0.04)}M${F(fx(0.8))} ${F(fy(0.65))}l${F(-bw * 0.03)} ${F(bh * 0.03)}l${F(bw * 0.03)} ${F(bh * 0.04)}`;   // arrows
-      chalk += `M${F(fx(0.12))} ${F(fy(0.8))}h${F(bw * 0.2)}M${F(fx(0.12))} ${F(fy(0.88))}h${F(bw * 0.13)}`;   // a note, as lines
+      // What is on the board answers the hour's lecture (the owner, 2026-10-01: a different subject for each
+      // professor; the writing stylised so it reads as notes without words): Dawn's histology, a cell and its
+      // nucleus; Day's circulation; Sunset's radiology, the lungs and a checklist; Dusk's neuroanatomy, a
+      // neuron and its myelinated axon, left on the board through the Night.
+      const rs = rng(1301);
+      const scrib = (x0, y0, w) => {   // a line of chalk handwriting: loops of varied height, gaps between words
+        let d = `M${F(x0)} ${F(y0)}`, x = x0;
+        while (x < x0 + w) {
+          const dx = Y(0.007) + rs() * Y(0.007), h = (rs() < 0.25 ? 1.9 : 1) * Y(0.007);
+          d += `q${F(dx / 2)} ${F(-h)} ${F(dx)} 0`; x += dx;
+          if (rs() < 0.16) { d += `m${F(Y(0.009))} 0`; x += Y(0.009); }
+        }
+        return d;
+      };
+      let circ = `M${F(fx(0.47))} ${F(fy(0.42))}h${F(bw * 0.06)}v${F(bh * 0.2)}h${F(-bw * 0.06)}Z`   // the heart, a box
+        + `M${F(fx(0.47))} ${F(fy(0.47))}C${F(fx(0.36))} ${F(fy(0.47))} ${F(fx(0.22))} ${F(fy(0.4))} ${F(fx(0.22))} ${F(fy(0.52))}C${F(fx(0.22))} ${F(fy(0.64))} ${F(fx(0.36))} ${F(fy(0.58))} ${F(fx(0.47))} ${F(fy(0.58))}`   // the lungs' loop
+        + `M${F(fx(0.53))} ${F(fy(0.47))}C${F(fx(0.7))} ${F(fy(0.4))} ${F(fx(0.86))} ${F(fy(0.3))} ${F(fx(0.86))} ${F(fy(0.52))}C${F(fx(0.86))} ${F(fy(0.76))} ${F(fx(0.7))} ${F(fy(0.66))} ${F(fx(0.53))} ${F(fy(0.58))}`   // the body's loop
+        + `M${F(fx(0.27))} ${F(fy(0.4))}l${F(bw * 0.03)} ${F(bh * 0.03)}l${F(-bw * 0.03)} ${F(bh * 0.04)}M${F(fx(0.8))} ${F(fy(0.65))}l${F(-bw * 0.03)} ${F(bh * 0.03)}l${F(bw * 0.03)} ${F(bh * 0.04)}`   // arrows
+        + `M${F(fx(0.12))} ${F(fy(0.8))}h${F(bw * 0.2)}M${F(fx(0.12))} ${F(fy(0.88))}h${F(bw * 0.13)}`   // a note, as lines
+      circ += scrib(fx(0.12), fy(0.8), bw * 0.24) + scrib(fx(0.12), fy(0.9), bw * 0.16);
+      const cellR = bw * 0.11;
+      const cell = `M${F(fx(0.27) - cellR)} ${F(fy(0.5))}a${F(cellR)} ${F(cellR * 0.85)} 0 1 0 ${F(2 * cellR)} 0a${F(cellR)} ${F(cellR * 0.85)} 0 1 0 ${F(-2 * cellR)} 0Z`
+        + `M${F(fx(0.27) - cellR * 0.36)} ${F(fy(0.5))}a${F(cellR * 0.36)} ${F(cellR * 0.32)} 0 1 0 ${F(cellR * 0.72)} 0a${F(cellR * 0.36)} ${F(cellR * 0.32)} 0 1 0 ${F(-cellR * 0.72)} 0Z`
+        + `M${F(fx(0.21))} ${F(fy(0.62))}h0M${F(fx(0.34))} ${F(fy(0.4))}h0M${F(fx(0.33))} ${F(fy(0.6))}h0M${F(fx(0.2))} ${F(fy(0.42))}h0`
+        + `M${F(fx(0.38))} ${F(fy(0.45))}L${F(fx(0.5))} ${F(fy(0.32))}` + scrib(fx(0.52), fy(0.33), bw * 0.3) + scrib(fx(0.52), fy(0.47), bw * 0.36) + scrib(fx(0.52), fy(0.61), bw * 0.26)
+        + scrib(fx(0.1), fy(0.16), bw * 0.34);
+      const lungs = `M${F(fx(0.25))} ${F(fy(0.22))}C${F(fx(0.12))} ${F(fy(0.3))} ${F(fx(0.1))} ${F(fy(0.7))} ${F(fx(0.18))} ${F(fy(0.78))}C${F(fx(0.24))} ${F(fy(0.8))} ${F(fx(0.27))} ${F(fy(0.6))} ${F(fx(0.27))} ${F(fy(0.24))}Z`
+        + `M${F(fx(0.33))} ${F(fy(0.22))}C${F(fx(0.46))} ${F(fy(0.3))} ${F(fx(0.48))} ${F(fy(0.7))} ${F(fx(0.4))} ${F(fy(0.78))}C${F(fx(0.34))} ${F(fy(0.8))} ${F(fx(0.31))} ${F(fy(0.6))} ${F(fx(0.31))} ${F(fy(0.24))}Z`
+        + `M${F(fx(0.29))} ${F(fy(0.08))}V${F(fy(0.3))}M${F(fx(0.29))} ${F(fy(0.3))}L${F(fx(0.25))} ${F(fy(0.4))}M${F(fx(0.29))} ${F(fy(0.3))}L${F(fx(0.33))} ${F(fy(0.4))}`
+        + [0.22, 0.38, 0.54, 0.7].map((k2) => `M${F(fx(0.56))} ${F(fy(k2))}l${F(bw * 0.012)} ${F(bh * 0.04)}l${F(bw * 0.024)} ${F(-bh * 0.08)}` + scrib(fx(0.62), fy(k2), bw * (0.18 + rs() * 0.14))).join('');
+      const neuron = `M${F(fx(0.22) - bw * 0.05)} ${F(fy(0.52))}a${F(bw * 0.05)} ${F(bw * 0.045)} 0 1 0 ${F(bw * 0.1)} 0a${F(bw * 0.05)} ${F(bw * 0.045)} 0 1 0 ${F(-bw * 0.1)} 0Z`
+        + `M${F(fx(0.17))} ${F(fy(0.47))}L${F(fx(0.1))} ${F(fy(0.32))}M${F(fx(0.13))} ${F(fy(0.39))}L${F(fx(0.07))} ${F(fy(0.4))}M${F(fx(0.18))} ${F(fy(0.58))}L${F(fx(0.09))} ${F(fy(0.72))}M${F(fx(0.22))} ${F(fy(0.45))}L${F(fx(0.24))} ${F(fy(0.27))}M${F(fx(0.24))} ${F(fy(0.33))}L${F(fx(0.29))} ${F(fy(0.25))}`
+        + `M${F(fx(0.27))} ${F(fy(0.52))}H${F(fx(0.78))}` + [0.33, 0.43, 0.53, 0.63].map((k2) => `M${F(fx(k2))} ${F(fy(0.48))}h${F(bw * 0.07)}v${F(bh * 0.08)}h${F(-bw * 0.07)}Z`).join('')
+        + `M${F(fx(0.78))} ${F(fy(0.52))}L${F(fx(0.86))} ${F(fy(0.4))}M${F(fx(0.78))} ${F(fy(0.52))}L${F(fx(0.87))} ${F(fy(0.52))}M${F(fx(0.78))} ${F(fy(0.52))}L${F(fx(0.86))} ${F(fy(0.64))}`
+        + scrib(fx(0.1), fy(0.14), bw * 0.4) + scrib(fx(0.12), fy(0.84), bw * 0.3);
+      const board = (d) => `<path class="isl-mchalk" d="${d}" stroke-width="${F(cw)}"/>`;
       s += `<g class="isl-mroom"><path class="isl-lalu" d="${rect(b0 - Y(0.008), bT - Y(0.008), bw + Y(0.016), bh + Y(0.016))}"/><path class="isl-mboard" d="${rect(b0, bT, bw, bh)}"/>`
-        + `<ellipse class="isl-mchalk" cx="${F(fx(0.18))}" cy="${F(fy(0.22))}" rx="${F(bw * 0.12)}" ry="${F(bh * 0.1)}" fill-opacity=".1" stroke="none"/>`   // a half-wiped smudge
-        + `<path class="isl-mchalk" d="${chalk}" stroke-width="${F(cw)}"/>`
+        + `<ellipse class="isl-mchalk" cx="${F(fx(0.18))}" cy="${F(fy(0.22))}" rx="${F(bw * 0.12)}" ry="${F(bh * 0.1)}" style="stroke:none;fill-opacity:.1"/>`   // a half-wiped smudge (inline style: the class's stroke had drawn it as a hard oval)
+        + `<g class="isl-lq" data-q="a">${board(cell)}</g><g class="isl-lq" data-q="y">${board(circ)}</g><g class="isl-lq" data-q="s">${board(lungs)}</g><g class="isl-lq" data-q="dn">${board(neuron)}</g>`
         + `<path class="isl-lalu" d="${rect(b0, bB + Y(0.006), bw, Math.max(1.5, Y(0.012)))}"/>`   // the tray
         + `<path class="isl-mchalkf" d="${rect(fx(0.3), bB + Y(0.002), bw * 0.05, Math.max(1, Y(0.006)))}${rect(fx(0.38), bB + Y(0.002), bw * 0.035, Math.max(1, Y(0.006)))}"/>`
         + `<path class="isl-lwood2" d="${rect(fx(0.7), bB - Y(0.004), bw * 0.08, Math.max(1.5, Y(0.012)))}"/><path class="isl-mchalkf" d="${rect(fx(0.7), bB + Y(0.004), bw * 0.08, Math.max(0.8, Y(0.004)))}"/></g>`;
@@ -3016,8 +3047,12 @@
       s += `<g class="isl-mroom"><path class="isl-lalu" d="${rect(e0 - Y(0.01), eT - Y(0.01), ew + Y(0.02), eB - eT + Y(0.01))}"/>`
         + `<path fill="#66707a" d="${rect(e0, eT, ew, eB - eT)}"/><path fill="#8fa2b3" d="${rect(e0 + ew * 0.62, eT + Y(0.06), ew * 0.16, Y(0.16))}"/>`
         + `<path class="isl-lalu" d="${rect(e0 + ew * 0.1, eT + Y(0.3), ew * 0.8, Math.max(1.5, Y(0.014)))}"/></g>`;
+      const exitGlow = `<ellipse cx="${F(g0 + gw / 2)}" cy="${F(gT + gh / 2)}" rx="${F(gw * 1.3)}" ry="${F(gh * 2.2)}" fill="url(#isllexitg)"/>`;
       s += `<defs><radialGradient id="isllexitg"><stop offset="0" stop-color="#3ad07c" stop-opacity=".45"/><stop offset="1" stop-color="#3ad07c" stop-opacity="0"/></radialGradient></defs>`
-        + `<g class="isl-vlamps"><ellipse cx="${F(g0 + gw / 2)}" cy="${F(gT + gh / 2)}" rx="${F(gw * 1.3)}" ry="${F(gh * 2.2)}" fill="url(#isllexitg)"/></g>`;
+        + `<g class="isl-lq" data-q="aysd"><g class="isl-vlamps">${exitGlow}</g></g>`
+        // (at Night, with the projector off, the glow is the last light in the pass: the pass ends on an
+        // isl-vlast's animationend, and without one the card stayed running and replayed on every redraw)
+        + `<g class="isl-lq" data-q="n"><g class="isl-vlamps isl-vlast">${exitGlow}</g></g>`;
       const fx = (k) => g0 + gw * k, fy = (k) => gT + gh * k, sw = Math.max(0.8, gh * 0.09);
       s += `<path fill="#178a4a" d="${rect(g0, gT, gw, gh)}"/>`
         + `<path stroke="#f1fff6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="${F(sw)}" d="`
@@ -3027,17 +3062,19 @@
         + `M${F(fx(0.74))} ${F(fy(0.5))}H${F(fx(0.92))}M${F(fx(0.86))} ${F(fy(0.38))}L${F(fx(0.92))} ${F(fy(0.5))}L${F(fx(0.86))} ${F(fy(0.62))}"/>`   // the arrow
         + `<circle fill="#f1fff6" cx="${F(fx(0.33))}" cy="${F(fy(0.2))}" r="${F(gh * 0.1)}"/>`;
     }
-    // 1. The screen at the right of the front wall, lit: the heart and its notes; the projector's beam.
+    // 1. The screen at the right of the front wall, lit from Dawn to Dusk with the hour's slide and its notes,
+    //    the projector's beam; at Night the hall is closed and the projector off, the screen blank and dark.
     const sx0 = X(0.62), sx1 = X(0.97), sT = Y(0.08), sB = Y(0.6), scx = sx0 + (sx1 - sx0) * 0.34, scy = (sT + sB) / 2;
     // (from a projector hung from the ceiling: the beam had come from nowhere at the top edge)
     const pjx = X(0.8), pjy = Y(0.035);
-    // (the beam is the projector's own cool white, faint, seen in the dark hall's air; not by Day)
+    // (the beam is the projector's own cool white, faint, seen in the dark hall's air; not by Day, and none at
+    // Night, the projector off)
     s += `<defs><linearGradient id="isllbeam" gradientUnits="userSpaceOnUse" x1="${F(pjx)}" y1="${F(pjy)}" x2="${F(pjx)}" y2="${F(sB)}"><stop offset="0" class="st-vcool" stop-opacity=".2"/><stop offset="1" class="st-vcool" stop-opacity=".04"/></linearGradient></defs>`
-      + `<path class="isl-mbeam" d="${polyD([[pjx - Y(0.015), pjy], [pjx + Y(0.015), pjy], [sx1, sT], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#isllbeam)"/>`;
+      + `<g class="isl-lq" data-q="aysd"><path class="isl-mbeam" d="${polyD([[pjx - Y(0.015), pjy], [pjx + Y(0.015), pjy], [sx1, sT], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#isllbeam)"/></g>`;
     s += `<path class="isl-tiron" d="${rect(pjx - 1, -2, 2, Y(0.014) + 2)}${rect(pjx - Y(0.055), Y(0.012), Y(0.11), Y(0.028))}"/>`;
     s += `<path class="isl-tiron" d="${rect(sx0 - Y(0.012), sT - Y(0.012), sx1 - sx0 + Y(0.024), sB - sT + Y(0.024))}"/><path class="isl-mscreen" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}"/>`
       + `<defs><radialGradient id="isllscrv" cx=".5" cy=".45" r=".75"><stop offset=".35" stop-color="#0b1a2b" stop-opacity="0"/><stop offset="1" stop-color="#0b1a2b" stop-opacity=".24"/></radialGradient></defs>`
-      + `<path class="isl-mscrv" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}" fill="url(#isllscrv)"/>`;   // its falloff (first audit)
+      + `<g class="isl-lq" data-q="aysd"><path class="isl-mscrv" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}" fill="url(#isllscrv)"/></g>`;   // its falloff (first audit; none at Night, the screen off)
     // The heart as an anatomy slide shows it, from the front (first audit, 2026-10-01: it had read as a
     // Valentine tied with string): the right atrium bulging at the viewer's left, the apex down and to the
     // right, the superior vena cava coming down into the atrium, the aorta rising and arching to the right
@@ -3056,37 +3093,104 @@
       + `M${P(0.42, -0.42)}Q${P(0.6, -0.5)} ${P(0.68, -0.36)}`;   // the left auricle
     const septum = `M${P(0.22, -0.4)}C${P(0.3, 0)} ${P(0.38, 0.45)} ${P(0.52, 0.86)}`   // the groove between the ventricles
       + `M${P(-0.5, -0.3)}C${P(-0.3, -0.16)} ${P(-0.02, -0.2)} ${P(0.18, -0.38)}`;   // and between atrium and ventricle
-    s += `<g class="isl-vwin isl-vlast" style="--i:3"><path class="isl-mheart" d="${heart}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${vessels}${septum}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`;
+    // The slide answers the hour's lecture too (the owner, 2026-10-01: "relevant medical school topics depending
+    // on the professor"): Dawn's histology, a stained section in a round microscope field (pink tissue, purple
+    // nuclei, a gland's lumen ringed by its cells); by Day the heart; Sunset's radiology, a chest X-ray (dark
+    // lungs, pale ribs, spine, clavicles, the heart's shadow and the diaphragm); Dusk's neuroanatomy, the brain
+    // from the side (its lobes' sulci, the cerebellum, the brainstem). At Night the hall is closed and the
+    // projector off. Each lights last in the pass.
+    const slide = (q, inner) => `<g class="isl-lq" data-q="${q}"><g class="isl-vwin isl-vlast" style="--i:3">${inner}</g></g>`;
     let notes = '';
     const nx = sx0 + (sx1 - sx0) * 0.66, ny = (i) => sT + (sB - sT) * (0.28 + i * 0.14);
     for (let i = 0; i < 4; i++) notes += `M${F(nx)} ${F(ny(i))}h${F((sx1 - sx0) * (0.26 - (i % 2) * 0.08))}`;
-    // (two leader lines, from the aorta's arch and the left ventricle to the first two notes)
-    notes += `M${P(0.52, -1.05)}L${F(nx - Y(0.012))} ${F(ny(0))}M${P(0.9, 0.2)}L${F(nx - Y(0.012))} ${F(ny(1))}`;
-    s += `<path class="isl-mnote" d="${notes}" stroke-width="${F(Math.max(1, Y(0.012)))}"/>`;
+    // (the heart's two leader lines, from the aorta's arch and the left ventricle to the first two notes)
+    const leaders = `M${P(0.52, -1.05)}L${F(nx - Y(0.012))} ${F(ny(0))}M${P(0.9, 0.2)}L${F(nx - Y(0.012))} ${F(ny(1))}`;
+    s += slide('y', `<path class="isl-mheart" d="${heart}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${vessels}${septum}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`
+      + `<path class="isl-mnote" d="${leaders}" stroke-width="${F(Math.max(1, Y(0.012)))}"/>`);
+    {
+      const rh = rng(1303), R = k * 1.05, cyM = scy;
+      let nuc = '';
+      for (let i = 0; i < 46; i++) {
+        const a2 = rh() * Math.PI * 2, rr = Math.sqrt(rh()) * R * 0.92, x = scx + Math.cos(a2) * rr, y = cyM + Math.sin(a2) * rr;
+        if (Math.hypot(x - (scx - R * 0.15), y - cyM) < R * 0.34) continue;   // (clear of the gland's lumen)
+        nuc += `<ellipse cx="${F(x)}" cy="${F(y)}" rx="${F(R * 0.045)}" ry="${F(R * 0.032)}" transform="rotate(${F(rh() * 180)} ${F(x)} ${F(y)})"/>`;
+      }
+      for (let i = 0; i < 16; i++) {   // the gland's own cells ringing its lumen
+        const a2 = (i / 16) * Math.PI * 2, x = scx - R * 0.15 + Math.cos(a2) * R * 0.3, y = cyM + Math.sin(a2) * R * 0.26;
+        nuc += `<ellipse cx="${F(x)}" cy="${F(y)}" rx="${F(R * 0.04)}" ry="${F(R * 0.028)}" transform="rotate(${F(a2 * 180 / Math.PI)} ${F(x)} ${F(y)})"/>`;
+      }
+      s += slide('a', `<circle cx="${F(scx)}" cy="${F(cyM)}" r="${F(R)}" fill="#e7a6bd"/>`
+        + `<ellipse cx="${F(scx + R * 0.35)}" cy="${F(cyM - R * 0.35)}" rx="${F(R * 0.35)}" ry="${F(R * 0.22)}" fill="#f3cbd8"/><ellipse cx="${F(scx + R * 0.2)}" cy="${F(cyM + R * 0.5)}" rx="${F(R * 0.4)}" ry="${F(R * 0.18)}" fill="#f3cbd8"/>`
+        + `<ellipse cx="${F(scx - R * 0.15)}" cy="${F(cyM)}" rx="${F(R * 0.2)}" ry="${F(R * 0.15)}" fill="#fbeef2"/>`
+        + `<g fill="#5b3a8c">${nuc}</g><circle cx="${F(scx)}" cy="${F(cyM)}" r="${F(R)}" fill="none" stroke="#2f2a35" stroke-width="${F(Math.max(1.2, Y(0.01)))}"/>`);
+    }
+    {
+      const xw = k * 1.0, xT = sT + (sB - sT) * 0.07, xB = sB - (sB - sT) * 0.07, xh = xB - xT, X0 = scx - xw;
+      const xr = (fxx, fyy) => `${F(scx + fxx * xw)} ${F(xT + fyy * xh)}`;
+      let ribs = '';
+      for (let i = 0; i < 6; i++) {
+        const yy = 0.24 + i * 0.1;
+        ribs += `M${xr(-0.06, yy)}C${xr(-0.5, yy - 0.06)} ${xr(-0.86, yy + 0.02)} ${xr(-0.8, yy + 0.12)}M${xr(0.06, yy)}C${xr(0.5, yy - 0.06)} ${xr(0.86, yy + 0.02)} ${xr(0.8, yy + 0.12)}`;
+      }
+      s += slide('s', `<path fill="#2b3137" d="${rect(X0, xT, 2 * xw, xh)}"/>`
+        + `<path fill="#0e1215" d="M${xr(-0.1, 0.18)}C${xr(-0.55, 0.16)} ${xr(-0.8, 0.45)} ${xr(-0.74, 0.82)}C${xr(-0.5, 0.78)} ${xr(-0.25, 0.8)} ${xr(-0.1, 0.84)}ZM${xr(0.1, 0.18)}C${xr(0.55, 0.16)} ${xr(0.8, 0.45)} ${xr(0.74, 0.82)}C${xr(0.5, 0.78)} ${xr(0.25, 0.8)} ${xr(0.1, 0.84)}Z"/>`   // the lungs
+        + `<path fill="#9aa2a9" fill-opacity=".85" d="M${xr(-0.08, 0.5)}C${xr(-0.12, 0.66)} ${xr(0.02, 0.86)} ${xr(0.42, 0.82)}C${xr(0.5, 0.66)} ${xr(0.3, 0.5)} ${xr(0.06, 0.48)}Z"/>`   // the heart's shadow (to the patient's left)
+        + `<path fill="#8a9299" d="${rect(scx - xw * 0.07, xT + xh * 0.06, xw * 0.14, xh * 0.86)}"/>`   // the spine
+        + `<path fill="none" stroke="#c4cad0" stroke-opacity=".75" stroke-width="${F(Math.max(0.8, Y(0.006)))}" d="${ribs}M${xr(-0.08, 0.14)}L${xr(-0.62, 0.11)}M${xr(0.08, 0.14)}L${xr(0.62, 0.11)}"/>`   // ribs, clavicles
+        + `<path fill="#b6bdc3" d="M${xr(-0.8, 0.86)}C${xr(-0.5, 0.74)} ${xr(-0.2, 0.8)} ${xr(0, 0.86)}C${xr(0.25, 0.76)} ${xr(0.55, 0.76)} ${xr(0.8, 0.86)}V${xr(0.8, 0.98).split(' ')[1]}H${F(scx - 0.8 * xw)}Z"/>`);   // the diaphragm and abdomen
+    }
+    {
+      const B2 = (x, y) => `${F(scx + x * k)} ${F(scy + y * k)}`;
+      const brain = `M${B2(-0.95, 0.1)}C${B2(-1.0, -0.45)} ${B2(-0.55, -0.85)} ${B2(0, -0.85)}C${B2(0.55, -0.85)} ${B2(0.95, -0.5)} ${B2(0.95, -0.05)}C${B2(0.95, 0.25)} ${B2(0.75, 0.35)} ${B2(0.55, 0.32)}`
+        + `C${B2(0.35, 0.3)} ${B2(0.2, 0.42)} ${B2(-0.05, 0.38)}C${B2(-0.35, 0.36)} ${B2(-0.55, 0.45)} ${B2(-0.72, 0.34)}C${B2(-0.86, 0.27)} ${B2(-0.92, 0.22)} ${B2(-0.95, 0.1)}Z`;
+      const cbl = `M${B2(0.42, 0.36)}C${B2(0.48, 0.64)} ${B2(0.86, 0.62)} ${B2(0.88, 0.38)}C${B2(0.8, 0.3)} ${B2(0.6, 0.3)} ${B2(0.42, 0.36)}Z`;
+      const lines = `M${B2(-0.58, 0.1)}C${B2(-0.3, 0)} ${B2(0, -0.06)} ${B2(0.32, -0.12)}`   // the lateral sulcus
+        + `M${B2(0.05, -0.85)}C${B2(0, -0.6)} ${B2(0.12, -0.4)} ${B2(0.04, -0.14)}`   // the central sulcus
+        + `M${B2(-0.55, -0.55)}C${B2(-0.4, -0.45)} ${B2(-0.5, -0.3)} ${B2(-0.3, -0.2)}M${B2(0.35, -0.6)}C${B2(0.45, -0.4)} ${B2(0.3, -0.25)} ${B2(0.5, -0.12)}M${B2(-0.4, 0.22)}C${B2(-0.2, 0.18)} ${B2(0, 0.24)} ${B2(0.15, 0.2)}`
+        + `M${B2(0.55, 0.42)}C${B2(0.65, 0.4)} ${B2(0.75, 0.44)} ${B2(0.82, 0.42)}M${B2(0.5, 0.5)}C${B2(0.62, 0.48)} ${B2(0.72, 0.52)} ${B2(0.8, 0.5)}`   // the cerebellum's folia
+        + `M${B2(0.26, 0.38)}C${B2(0.3, 0.6)} ${B2(0.3, 0.8)} ${B2(0.26, 0.98)}M${B2(0.4, 0.4)}C${B2(0.42, 0.6)} ${B2(0.4, 0.8)} ${B2(0.38, 0.98)}`;   // the brainstem
+      s += slide('d', `<path class="isl-mheart" d="${brain}${cbl}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${lines}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`);
+    }
+    s += `<g class="isl-lq" data-q="aysd"><path class="isl-mnote" d="${notes}" stroke-width="${F(Math.max(1, Y(0.012)))}"/></g>`;
     // 2. The lectern with its lamp and a laptop; the skeleton on its stand beside it.
     const lx = X(0.44), lT = Y(0.56), lB = Y(0.84);
     // The lecturer behind the lectern, facing the hall in a white coat over a pale shirt, the laptop in front
-    // of their chest; the lectern's lamp, at their left, lights that side from Dawn to Night. (art-audit wave
+    // of their chest; the lectern's lamp, at their left, lights that side from Dawn to Dusk. (art-audit wave
     // 1, 2026-10-01: the lamp had had nothing to light)
     {
+      // A different professor at each hour, with the hour's lecture (the owner, 2026-10-01): at Dawn the
+      // histologist in a green cardigan, by Day the anatomist in a white coat, at Sunset the radiologist, grey
+      // and in glasses and a navy jacket, at Dusk the neuroanatomist in burgundy. At Night no one: the hall is
+      // closed (the owner, 2026-10-01), the lamp off and the laptop gone home with its professor.
       const px = lx - Y(0.015), hy = Y(0.39), hr = Y(0.031), sh = Y(0.45);
-      const coat = `M${F(px - Y(0.08))} ${F(lT + 1)}L${F(px - Y(0.078))} ${F(sh + Y(0.02))}Q${F(px - Y(0.074))} ${F(sh)} ${F(px - Y(0.04))} ${F(sh - Y(0.006))}H${F(px + Y(0.04))}Q${F(px + Y(0.074))} ${F(sh)} ${F(px + Y(0.078))} ${F(sh + Y(0.02))}L${F(px + Y(0.08))} ${F(lT + 1)}Z`;
-      s += '<g class="isl-lq" data-q="aysd">';   // (the lecturer from Dawn to Dusk; gone home at Night, art-audit by version)
-      s += `<g class="isl-mroom"><path fill="#efeee9" d="${coat}"/>`
-        + `<path fill="#a9bdd3" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}Z"/>`   // the shirt in the coat's V
-        + `<path stroke="#bdbab2" fill="none" stroke-width="${F(Math.max(0.7, Y(0.005)))}" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}M${F(px - Y(0.03))} ${F(sh + Y(0.02))}L${F(px - Y(0.012))} ${F(sh + Y(0.07))}M${F(px + Y(0.03))} ${F(sh + Y(0.02))}L${F(px + Y(0.012))} ${F(sh + Y(0.07))}"/>`   // the lapels
-        + `<path fill="#7a4b30" d="${rect(px - Y(0.012), hy + hr * 0.6, Y(0.024), sh - hy - hr * 0.5)}"/><circle fill="#7a4b30" cx="${F(px)}" cy="${F(hy)}" r="${F(hr)}"/>`   // neck and face
-        + `<path fill="#1b1715" d="M${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}A${F(hr * 1.02)} ${F(hr * 1.06)} 0 0 1 ${F(px + hr * 1.02)} ${F(hy + hr * 0.1)}Q${F(px + hr * 0.5)} ${F(hy - hr * 0.45)} ${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}Z"/></g>`;   // the hair
+      const prof = ({ coat, shirt, skin, hair, style, glasses = false, lapels = true }) => {
+        const body = `M${F(px - Y(0.08))} ${F(lT + 1)}L${F(px - Y(0.078))} ${F(sh + Y(0.02))}Q${F(px - Y(0.074))} ${F(sh)} ${F(px - Y(0.04))} ${F(sh - Y(0.006))}H${F(px + Y(0.04))}Q${F(px + Y(0.074))} ${F(sh)} ${F(px + Y(0.078))} ${F(sh + Y(0.02))}L${F(px + Y(0.08))} ${F(lT + 1)}Z`;
+        let o = `<path fill="${coat}" d="${body}"/>`;
+        if (lapels) o += `<path fill="${shirt}" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}Z"/>`
+          + `<path stroke="#000" stroke-opacity=".18" fill="none" stroke-width="${F(Math.max(0.7, Y(0.005)))}" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}M${F(px - Y(0.03))} ${F(sh + Y(0.02))}L${F(px - Y(0.012))} ${F(sh + Y(0.07))}M${F(px + Y(0.03))} ${F(sh + Y(0.02))}L${F(px + Y(0.012))} ${F(sh + Y(0.07))}"/>`;
+        else o += `<path fill="${shirt}" d="M${F(px - Y(0.018))} ${F(sh - Y(0.006))}Q${F(px)} ${F(sh + Y(0.025))} ${F(px + Y(0.018))} ${F(sh - Y(0.006))}Z"/>`;   // a round neckline
+        o += `<path fill="${skin}" d="${rect(px - Y(0.012), hy + hr * 0.6, Y(0.024), sh - hy - hr * 0.5)}"/><circle fill="${skin}" cx="${F(px)}" cy="${F(hy)}" r="${F(hr)}"/>`;
+        const cap = `M${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}A${F(hr * 1.02)} ${F(hr * 1.06)} 0 0 1 ${F(px + hr * 1.02)} ${F(hy + hr * 0.1)}Q${F(px + hr * 0.5)} ${F(hy - hr * 0.45)} ${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}Z`;
+        o += `<path fill="${hair}" d="${cap}${style === 'long' ? `M${F(px - hr * 1.05)} ${F(hy)}V${F(sh + Y(0.03))}H${F(px - hr * 0.6)}V${F(hy + hr * 0.4)}ZM${F(px + hr * 1.05)} ${F(hy)}V${F(sh + Y(0.03))}H${F(px + hr * 0.6)}V${F(hy + hr * 0.4)}Z` : ''}"/>`;
+        if (style === 'bun') o += `<circle fill="${hair}" cx="${F(px + hr * 0.2)}" cy="${F(hy - hr * 1.05)}" r="${F(hr * 0.45)}"/>`;
+        if (glasses) o += `<path fill="none" stroke="#1d1916" stroke-width="${F(Math.max(0.7, Y(0.004)))}" d="M${F(px - hr * 0.72)} ${F(hy + hr * 0.05)}h${F(hr * 0.56)}M${F(px + hr * 0.16)} ${F(hy + hr * 0.05)}h${F(hr * 0.56)}M${F(px - hr * 0.16)} ${F(hy + hr * 0.05)}h${F(hr * 0.32)}"/>`;
+        return `<g class="isl-mroom">${o}</g>`;
+      };
+      s += '<g class="isl-lq" data-q="aysd">';   // (a professor from Dawn to Dusk; gone home at Night)
+      s += `<g class="isl-lq" data-q="a">${prof({ coat: '#3f6650', shirt: '#efe6d2', skin: '#b07a55', hair: '#2a1d16', style: 'bun', lapels: false })}</g>`
+        + `<g class="isl-lq" data-q="y">${prof({ coat: '#efeee9', shirt: '#a9bdd3', skin: '#7a4b30', hair: '#1b1715', style: 'short' })}</g>`
+        + `<g class="isl-lq" data-q="s">${prof({ coat: '#2f3d5c', shirt: '#f2f2ee', skin: '#c89b78', hair: '#b9b6b0', style: 'short', glasses: true })}</g>`
+        + `<g class="isl-lq" data-q="d">${prof({ coat: '#7a2f3e', shirt: '#5a3825', skin: '#5a3825', hair: '#141110', style: 'long', lapels: false })}</g>`;
       s += `<g class="isl-vlamps isl-vwin" style="--i:1"><path class="isl-mlit" d="M${F(px + hr * 0.75)} ${F(hy - hr * 0.55)}A${F(hr)} ${F(hr)} 0 0 1 ${F(px + hr * 0.85)} ${F(hy + hr * 0.5)}M${F(px + Y(0.062))} ${F(sh - Y(0.003))}Q${F(px + Y(0.077))} ${F(sh + Y(0.01))} ${F(px + Y(0.079))} ${F(lT)}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/></g>`;
       s += '</g>';
     }
     s += `<path class="isl-lwood" d="${polyD([[lx - Y(0.1), lT], [lx + Y(0.1), lT], [lx + Y(0.08), lB], [lx - Y(0.08), lB]])}"/><path class="isl-lwood2" d="${rect(lx - Y(0.12), lT - Y(0.02), Y(0.24), Y(0.025))}"/>`
       + `<path class="isl-lwood2" fill-opacity=".55" d="${polyD([[lx - Y(0.07), lT + Y(0.03)], [lx + Y(0.07), lT + Y(0.03)], [lx + Y(0.058), lB - Y(0.03)], [lx - Y(0.058), lB - Y(0.03)]])}"/>`   // its front panel
       + `<path class="isl-tgrain" d="M${F(lx - Y(0.04))} ${F(lT + Y(0.05))}L${F(lx - Y(0.034))} ${F(lB - Y(0.05))}M${F(lx)} ${F(lT + Y(0.05))}V${F(lB - Y(0.05))}M${F(lx + Y(0.04))} ${F(lT + Y(0.05))}L${F(lx + Y(0.034))} ${F(lB - Y(0.05))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
-      + `<path class="isl-llap" d="${polyD([[lx - Y(0.07), lT - Y(0.02)], [lx + Y(0.02), lT - Y(0.02)], [lx + Y(0.04), lT - Y(0.1)], [lx - Y(0.05), lT - Y(0.1)]])}"/>`;
-    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx + Y(0.07), lT - Y(0.07), Y(0.14), 'islvbulb')}</g>`
+      + `<g class="isl-lq" data-q="aysd"><path class="isl-llap" d="${polyD([[lx - Y(0.07), lT - Y(0.02)], [lx + Y(0.02), lT - Y(0.02)], [lx + Y(0.04), lT - Y(0.1)], [lx - Y(0.05), lT - Y(0.1)]])}"/></g>`;
+    s += `<g class="isl-lq" data-q="aysd"><g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx + Y(0.07), lT - Y(0.07), Y(0.14), 'islvbulb')}</g></g>`
       + `<path class="isl-tarm" d="M${F(lx + Y(0.07))} ${F(lT - Y(0.02))}Q${F(lx + Y(0.1))} ${F(lT - Y(0.1))} ${F(lx + Y(0.06))} ${F(lT - Y(0.08))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><path class="isl-tshade" d="${rect(lx + Y(0.03), lT - Y(0.09), Y(0.06), Y(0.02))}"/>`
-      + `<g class="isl-vlamps isl-vwin" style="--i:1"><ellipse class="isl-tbulb" cx="${F(lx + Y(0.06))}" cy="${F(lT - Y(0.069))}" rx="${F(Y(0.026))}" ry="${F(Y(0.005))}"/>${pool(lx + Y(0.05), lT - Y(0.018), Y(0.07), Y(0.008), 0.6)}</g>`;   // its lit mouth, its pool on the top
+      + `<g class="isl-lq" data-q="aysd"><g class="isl-vlamps isl-vwin" style="--i:1"><ellipse class="isl-tbulb" cx="${F(lx + Y(0.06))}" cy="${F(lT - Y(0.069))}" rx="${F(Y(0.026))}" ry="${F(Y(0.005))}"/>${pool(lx + Y(0.05), lT - Y(0.018), Y(0.07), Y(0.008), 0.6)}</g></g>`;   // its lit mouth, its pool on the top (off at Night)
     // the skeleton: skull and jaw, the spine, the rib cage, the pelvis, arms and legs, on a stand
     // (its skull had sat on the third window's sill and the figure was oversize: lower and smaller, its feet
     // now behind the first row's desk rail; first audit, 2026-10-01)
@@ -3116,16 +3220,17 @@
       let seats = '';
       for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) seats += `M${F(x)} ${F(H + 2)}V${F(Y(yt) + Y(sz) * 0.3)}Q${F(x)} ${F(Y(yt))} ${F(x + Y(sz) * 0.3)} ${F(Y(yt))}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz))} ${F(Y(yt))} ${F(x + Y(sz))} ${F(Y(yt) + Y(sz) * 0.3)}V${F(H + 2)}Z`;
       // (an armrest between each pair of seats: the backs had been bare slabs; and each back's top edge caught
-      // by the screen's light at Dusk and Night, strongest nearest the screen; first audit, 2026-10-01)
+      // by the screen's light at Dusk, strongest nearest the screen; first audit, 2026-10-01; at Night the
+      // projector is off)
       let arms = '';
       const rims = ['', '', ''], scrX = (sx0 + sx1) / 2;
       // Students in the rows, seen from behind: heads and shoulders above the seat backs (one in a white coat,
-      // one lit by a laptop's cool glow from Dawn to Night), drawn behind the backs (art-audit wave 1,
+      // one lit by a laptop's cool glow at Dawn, by Day and at Dusk), drawn behind the backs (art-audit wave 1,
       // 2026-10-01: the hall had been an empty room of seats).
       // Who is in the hall at each hour (art-audit wave 1, by version; the owner, 2026-10-01: what is drawn
       // may change between versions with a reason): a few early students at Dawn, nearly full by Day, thinning
-      // at Sunset as classes end, four staying for an evening review at Dusk, and at Night one student studying
-      // late by a laptop's cool light. Each version's people are their own isl-lq group.
+      // at Sunset as classes end, four staying for an evening review at Dusk, and at Night no one: halls are
+      // closed to students after hours (the owner, 2026-10-01). Each version's people are their own isl-lq group.
       const C = { coat: '#efeee9', navy: '#2f3d5c', maroon: '#6b2e33', teal: '#3d6466', olive: '#5c5e3e', grey: '#6c6f75', plum: '#5a3d5c', sand: '#8a7a5c' };
       const ROSTER = yt < 0.85 ? {
         a: [[3, 'coat', 'short'], [9, 'maroon', 'bun']],
@@ -3137,8 +3242,7 @@
         a: [[7, 'navy', 'bun', true]],
         y: [[2, 'teal', 'short'], [4, 'grey', 'long'], [7, 'navy', 'bun', true], [9, 'maroon', 'short'], [12, 'olive', 'bun']],
         s: [[2, 'teal', 'short'], [9, 'maroon', 'short']],
-        d: [[7, 'navy', 'bun', true], [12, 'olive', 'bun']],
-        n: [[7, 'navy', 'bun', true]],
+        d: [[7, 'navy', 'bun', true], [12, 'olive', 'bun']],   // (and no one at Night)
       };
       const byQ = {};
       for (const q of Object.keys(ROSTER)) {
@@ -3164,7 +3268,7 @@
         rims[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.22)}Q${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.3)} ${F(Y(yt) + Y(sz) * 0.02)}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.22)}`;
       }
       s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/>${Object.keys(byQ).map((q) => `<g class="isl-lq" data-q="${q}"><g class="isl-vlamps">${byQ[q].glow}</g><g class="isl-mroom">${byQ[q].ppl}</g></g>`).join('')}<path class="${cls}" d="${seats}"/><path class="isl-lwood2" d="${arms}"/>`
-        + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('')
+        + '<g class="isl-lq" data-q="aysd">' + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('') + '</g>'
         + Object.keys(byQ).map((q) => `<g class="isl-lq" data-q="${q}">` + byQ[q].pr.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('') + '</g>').join('');
     }
     return `<g style="--isl-vstep:.5s">${s}</g>`;
