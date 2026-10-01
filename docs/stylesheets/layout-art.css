@@ -875,7 +875,17 @@
 .isl .isl-vseam { stroke: var(--isl-near); stroke-opacity: 0.25; fill: none; }
 .isl .isl-vnav-r { fill: #ff6b5e; }
 .isl .isl-vnav-g { fill: #6fe0a2; }
-.isl .isl-vnav-w { fill: var(--isl-planet); }
+/* The second light (art audit, 2026-10-01): lights on boats, anchor, masthead and riding lights (LED on a
+   modern yacht or ship), are a cool white beside the tungsten ashore; their halos (islvcool), columns on
+   the water and reflections with them. By Day they are off, as the lights ashore are. */
+.isl { --isl-vcool: #e4eeff; }
+.isl .isl-vnav-w { fill: var(--isl-vcool); }
+.isl .s-vcool { stroke: var(--isl-vcool); stroke-linecap: round; fill: none; }
+.isl .s-vcoolglow { stroke: var(--isl-vcool); fill: none; }
+.isl .st-vcool { stop-color: var(--isl-vcool); }
+.isl .f-vcool { fill: var(--isl-vcool); }
+.isl[data-sky="day"] .f-vcool { fill: var(--isl-pulse); }
+.isl[data-sky="day"] :is(.s-vcool, .s-vcoolglow, [fill*="vcool"]) { display: none; }
 .isl .isl-vriser { fill: var(--isl-vriser); }
 .isl .isl-vwall { fill: var(--isl-vwallc); }
 /* the campus flags: their own colours by Day, veiled toward night as the walls darken (owner, 2026-10-01) */

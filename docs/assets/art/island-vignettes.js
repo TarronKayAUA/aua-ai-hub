@@ -527,7 +527,7 @@
     for (let i = 0; i < 11; i++) {
       const x = X(0.72 + r() * 0.26), foot = Yp(0.3 + r() * 0.012), top = foot - Y(0.035 + r() * 0.035);
       masts += `M${F(x)} ${F(foot)}V${F(top)}`;
-      lights.push([x, top, 2]);
+      lights.push([x, top, 2, 'm']);
     }
     for (let i = 0; i < 22; i++) lights.push([X(0.58 + r() * 0.42), Yp(0.29 + r() * 0.025), 2, 'h']);
     // the low land between the two harbours, and the town's slope on the right
@@ -565,7 +565,7 @@
     for (let i = 0; i < 12; i++) {
       const x = X(0.73 + r() * 0.24), foot = Yp(0.395 + r() * 0.01), top = foot - Y(0.03 + r() * 0.03);
       masts += `M${F(x)} ${F(foot)}V${F(top)}`;
-      lights.push([x, top, 0]);
+      lights.push([x, top, 0, 'm']);
     }
     // 3. The headland: its cliff point on the left, its crest, and Fort Berkeley's spur into the bay.
     s += `<path class="f-near isl-land" d="${poly(head)}${scrub(head.slice(2, 17), 6, 0.9, 2.3)}"/>`;
@@ -638,9 +638,9 @@
       const u = (i + 0.4 + jx * 0.2) / 7, x = d0[0] + (d1[0] - d0[0]) * u, dy = d0[1] + (d1[1] - d0[1]) * u;
       const foot = dy + dt + Y(0.012 + jf * 0.004), top = foot - Y(0.07 + jt * 0.04), hw = X(0.011);
       moored += `M${F(x - hw)} ${F(foot - Y(0.008))}H${F(x + hw)}L${F(x + hw * 0.75)} ${F(foot)}H${F(x - hw * 0.8)}Z`;
-      mrefl += `<rect x="${F(x - 0.6)}" y="${F(foot + Y(0.002))}" width="1.2" height="${F(Y(0.05))}" fill="url(#islvrefl)"/>`;
+      mrefl += `<rect x="${F(x - 0.6)}" y="${F(foot + Y(0.002))}" width="1.2" height="${F(Y(0.05))}" fill="url(#islvcoolrefl)"/>`;
       masts += `M${F(x)} ${F(foot - Y(0.008))}V${F(top)}`;
-      lights.push([x, top, 0]);
+      lights.push([x, top, 0, 'm']);
     }
     s += `<path class="isl-vhull" d="${moored}"/><g class="isl-vlamps">${mrefl}</g>`;
     for (let i = 0; i < 18; i++) { r(); r(); }   // the dockyard's old random lights; its windows give them now
@@ -653,8 +653,8 @@
       const x = X(fx), y = Yp(fy), hw = X(0.008), mh = Y(0.05 + (i % 4) * 0.008);
       hulls += `M${F(x - hw)} ${F(y)}L${F(x + hw)} ${F(y)}L${F(x + hw * 0.7)} ${F(y + Y(0.009))}L${F(x - hw * 0.7)} ${F(y + Y(0.009))}Z`;
       masts += `M${F(x)} ${F(y)}V${F(y - mh)}`;
-      lights.push([x, y - mh, 1]);
-      refl += `<rect x="${F(x - 0.6)}" y="${F(y + Y(0.011))}" width="1.2" height="${F(Y(0.05))}" fill="url(#islvrefl)"/>`;
+      lights.push([x, y - mh, 1, 'm']);
+      refl += `<rect x="${F(x - 0.6)}" y="${F(y + Y(0.011))}" width="1.2" height="${F(Y(0.05))}" fill="url(#islvcoolrefl)"/>`;
     });
     s += `<path class="isl-vmast" d="${masts}" stroke-width="0.7"/>`;
     s += `<path class="isl-vhull" d="${hulls}"/>`;
@@ -691,11 +691,13 @@
     }
     s += `<g class="isl-ydet"><path class="isl-vhouse" d="${walls}"/><path class="isl-vroof" d="${roofsR}"/><path class="isl-vroofg" d="${roofsG}"/></g>`;
     // The lights, grouped so they come on in turn: the dockyard, the boats, Falmouth, then the slopes.
-    const groups = [[], [], [], []];
-    for (const [x, y, g] of lights) groups[g].push(`M${F(x)} ${F(y)}h0`);
+    // (the masthead lights, kind 'm', in the boats' cool white, the second light, each in its group's turn)
+    const groups = [[], [], [], []], cool = [[], [], [], []];
+    for (const [x, y, g, kind] of lights) (kind === 'm' ? cool : groups)[g].push(`M${F(x)} ${F(y)}h0`);
     const widths = [2.2, 1.6, 1.5, 1.25];
     groups.forEach((d, g) => {
       if (d.length) s += `<path class="s-vlight isl-vwin" style="--i:${g * 2}" d="${d.join('')}" stroke-width="${widths[g]}"/>`;
+      if (cool[g].length) s += `<path class="s-vcool isl-vwin" style="--i:${g * 2}" d="${cool[g].join('')}" stroke-width="${widths[g]}"/>`;
     });
     s += `<ellipse class="isl-vglow" cx="${F(X(0.67))}" cy="${F(Yp(0.43))}" rx="${F(X(0.07))}" ry="${F(Y(0.06))}" fill="url(#islvwarm)"/>`;
     return s;
@@ -963,7 +965,7 @@
     // The lights, the yachts first: port red and masthead white, each with a halo.
     let yl = '';
     for (const [x, y, c] of lights[0]) yl += `<circle class="isl-vnav-${c}" cx="${F(x)}" cy="${F(y)}" r="1.3"/>`;
-    s += `<g class="isl-vwin" style="--i:0">${lights[0].map(([x, y]) => halo(x, y, 6)).join('')}${yl}</g>`;
+    s += `<g class="isl-vwin" style="--i:0">${lights[0].map(([x, y, c]) => halo(x, y, 6, c === 'w' ? 'islvcool' : 'islvbulb')).join('')}${yl}</g>`;
     return s;
   }
 
@@ -1015,10 +1017,10 @@
     s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(shoreLights)}" stroke-width="1.3"/>`;
     // a yacht at anchor, its riding light and its column of light
     const bx = X(0.19), by = Y(0.8);
-    s += dashes(streakList(bx, by + 2, H, r, 0.05, 0.08), 's-vglow', 1.1, [0.1, 0.2, 0.34]);
+    s += dashes(streakList(bx, by + 2, H, r, 0.05, 0.08), 's-vcoolglow', 1.1, [0.1, 0.2, 0.34]);
     // (its mast stands clear above the far shore, where its riding light had sat on the horizon like one more
     // shore light; a boom carries the furled mainsail; the yacht has its reflection, as every hull does)
-    s += `<g class="isl-vwin" style="--i:0">${halo(bx, by - Y(0.25), Y(0.045))}<circle class="f-pulse" cx="${F(bx)}" cy="${F(by - Y(0.25))}" r="1.4"/></g>`;
+    s += `<g class="isl-vwin" style="--i:0">${halo(bx, by - Y(0.25), Y(0.045), 'islvcool')}<circle class="f-pulse f-vcool" cx="${F(bx)}" cy="${F(by - Y(0.25))}" r="1.4"/></g>`;
     const yacht = `<path class="isl-vhull" d="M${F(bx - X(0.035))} ${F(by - Y(0.014))}H${F(bx + X(0.035))}L${F(bx + X(0.026))} ${F(by)}H${F(bx - X(0.028))}Z"/>`
       + `<path class="isl-vsheer" d="M${F(bx - X(0.035))} ${F(by - Y(0.014))}H${F(bx + X(0.035))}" stroke-width="1"/>`
       + `<path class="isl-vmast" d="M${F(bx)} ${F(by - Y(0.014))}V${F(by - Y(0.25))}M${F(bx)} ${F(by - Y(0.24))}L${F(bx + X(0.03))} ${F(by - Y(0.018))}M${F(bx)} ${F(by - Y(0.24))}L${F(bx - X(0.03))} ${F(by - Y(0.018))}" stroke-width=".9"/>`
@@ -1161,6 +1163,14 @@
   const polyD = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L') + 'Z';
   const lineD = (pts) => 'M' + pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L');
   const lightsD = (pts) => pts.map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('');
+  // Lights as points: ashore in tungsten (s-vlight), and on a boat (a point marked 'b') in a cool white
+  // (s-vcool), as a modern yacht's or ship's anchor and masthead lights are LED (art audit, 2026-10-01:
+  // the set had one light temperature; the second is the one true to the place).
+  const lightsPaths = (pts, i = 0, w = 1.4) => {
+    const shore = pts.filter((p) => p[2] !== 'b'), boat = pts.filter((p) => p[2] === 'b');
+    return (shore.length ? `<path class="s-vlight isl-vwin" style="--i:${i}" d="${lightsD(shore)}" stroke-width="${w}"/>` : '')
+      + (boat.length ? `<path class="s-vcool isl-vwin" style="--i:${i}" d="${lightsD(boat)}" stroke-width="${w}"/>` : '');
+  };
 
   /* THE TELESCOPE (the Learn landing's head; the owner chose it, 2026-09-28): learning as looking
      further. A brass telescope on its tripod at a hilltop lookout, trained on the night sky beside the
@@ -1191,8 +1201,8 @@
       const bx = X(fx), by = y0 + Y(fy), hw = Y(0.03) * k, mh = Y(0.09 + r() * 0.05) * k;
       boats += `M${F(bx - hw)} ${F(by - Y(0.012))}H${F(bx + hw)}L${F(bx + hw * 0.75)} ${F(by)}H${F(bx - hw * 0.8)}Z`;
       masts += `M${F(bx)} ${F(by - Y(0.012))}V${F(by - mh)}`;
-      lights.push([bx, by - mh]);
-      s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.08, 0.16, 0.3]);
+      lights.push([bx, by - mh, 'b']);
+      s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vcoolglow', 1, [0.08, 0.16, 0.3]);
       s += `<g opacity=".15"><g transform="translate(0 ${F(2 * by)}) scale(1 -1)"><path class="isl-vhull" d="M${F(bx - hw)} ${F(by - Y(0.012))}H${F(bx + hw)}L${F(bx + hw * 0.75)} ${F(by)}H${F(bx - hw * 0.8)}Z"/><path class="isl-vmast" d="M${F(bx)} ${F(by)}V${F(by - mh)}" stroke-width=".8"/></g></g>`;
     }
     s += `<path class="isl-vhull" d="${boats}"/><path class="isl-vmast" d="${masts}" stroke-width=".8"/>`;
@@ -1280,7 +1290,7 @@
       + `<path class="isl-vlamp isl-ltframe" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.07))}V${F(ly - Y(0.13))}H${F(lx + Y(0.014))}V${F(ly - Y(0.07))}Z"/></g>`
       + panes(lx - Y(0.014), ly - Y(0.13), Y(0.028), Y(0.06));
     s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ly)}V${F(ly - Y(0.07))}H${F(lx + 1)}V${F(ly)}Z"/><path class="isl-vpost isl-lcap" d="M${F(lx - Y(0.022))} ${F(ly - Y(0.13))}L${F(lx)} ${F(ly - Y(0.155))}L${F(lx + Y(0.022))} ${F(ly - Y(0.13))}Z"/>`;
-    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
+    s += lightsPaths(lights);
     return s;
   }
 
@@ -1732,7 +1742,7 @@
       let o = `<g clip-path="url(#islsea)" opacity=".15"><g transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${one}</g></g>`;
       for (let x = x0 + L * 0.08; x < x1 - L * 0.1; x += L * 0.07) o += dashes(streakList(x + (r() - 0.5) * L * 0.03, wl + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.06, 0.12, 0.24]);
       o += one;
-      o += `<g class="isl-vwin" style="--i:${i}">${halo(mx, deckTop - dh * 2.6, 8 * u)}<circle class="isl-vnav-w" cx="${F(mx)}" cy="${F(deckTop - dh * 2.6)}" r="${F(Math.max(1.2, 1.4 * u))}"/></g>`;
+      o += `<g class="isl-vwin" style="--i:${i}">${halo(mx, deckTop - dh * 2.6, 8 * u, 'islvcool')}<circle class="isl-vnav-w" cx="${F(mx)}" cy="${F(deckTop - dh * 2.6)}" r="${F(Math.max(1.2, 1.4 * u))}"/></g>`;
       o += `<path class="s-vlight isl-vwin" style="--i:${i}" d="${lightsD(cabins)}" stroke-width="${F(Math.max(1.2, 1.5 * u))}"/>`;
       o += `<path class="s-vlight isl-vwin" style="--i:${i}" d="${lightsD(ports)}" stroke-width="${F(Math.max(1, 1.2 * u))}" stroke-opacity=".7"/>`;
       return o;
@@ -1741,11 +1751,11 @@
     s += ship(X(0.28), X(0.7), y0 + Y(0.12), 'isl-vship', 2);
     // a launch crossing toward the quay, its riding light and its column of light
     const lx0 = X(0.82), ly0 = Y(0.9), ll = 40 * u;
-    s += dashes(streakList(lx0 + ll * 0.3, ly0 + 1, H, r, 0.05, 0.08), 's-vglow', 1, [0.1, 0.2, 0.34]);
+    s += dashes(streakList(lx0 + ll * 0.3, ly0 + 1, H, r, 0.05, 0.08), 's-vcoolglow', 1, [0.1, 0.2, 0.34]);
     const launch = `<path class="isl-vhull" d="M${F(lx0)} ${F(ly0 - 5 * u)}H${F(lx0 + ll)}L${F(lx0 + ll * 0.88)} ${F(ly0)}H${F(lx0 + ll * 0.06)}Z"/>`
       + `<path class="isl-vship2" d="M${F(lx0 + ll * 0.2)} ${F(ly0 - 5 * u)}V${F(ly0 - 11 * u)}H${F(lx0 + ll * 0.55)}L${F(lx0 + ll * 0.62)} ${F(ly0 - 5 * u)}Z"/>`;
     s += `<g opacity=".15"><g transform="translate(0 ${F(2 * ly0)}) scale(1 -1)">${launch}</g></g>` + launch;
-    s += `<g class="isl-vwin" style="--i:1">${halo(lx0 + ll * 0.35, ly0 - 15 * u, 10 * u)}<circle class="f-pulse" cx="${F(lx0 + ll * 0.35)}" cy="${F(ly0 - 15 * u)}" r="${F(Math.max(1.2, 1.5 * u))}"/></g>`;
+    s += `<g class="isl-vwin" style="--i:1">${halo(lx0 + ll * 0.35, ly0 - 15 * u, 10 * u, 'islvcool')}<circle class="f-pulse f-vcool" cx="${F(lx0 + ll * 0.35)}" cy="${F(ly0 - 15 * u)}" r="${F(Math.max(1.2, 1.5 * u))}"/></g>`;
     s += `<path class="isl-vmast" d="M${F(lx0 + ll * 0.35)} ${F(ly0 - 11 * u)}V${F(ly0 - 14 * u)}" stroke-width="1"/>`;
     // 6. Fort James in front: its low stone parapet with an embrasure and its coping, the rampart's
     //    outer wall dropping into the water at its end, the floor in front, the fort's lamp's halo and
@@ -2210,12 +2220,12 @@
       const hull = `M${F(bx - hw)} ${F(by - Y(0.016) * k)}H${F(bx + hw)}L${F(bx + hw * 0.72)} ${F(by)}H${F(bx - hw * 0.78)}Z`;
       hulls += hull;
       masts += `M${F(bx)} ${F(by - Y(0.016) * k)}V${F(by - mh)}M${F(bx)} ${F(by - mh * 0.85)}L${F(bx + hw * 0.9)} ${F(by - Y(0.02) * k)}`;
-      lights.push([bx, by - mh]);
-      s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.08, 0.16, 0.3]);
+      lights.push([bx, by - mh, 'b']);
+      s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vcoolglow', 1, [0.08, 0.16, 0.3]);
       s += `<g opacity=".15"><g transform="translate(0 ${F(2 * by)}) scale(1 -1)"><path class="isl-vhull" d="${hull}"/><path class="isl-vmast" d="M${F(bx)} ${F(by)}V${F(by - mh)}" stroke-width=".8"/></g></g>`;
     }
     s += `<path class="isl-vhull" d="${hulls}"/><path class="isl-vmast" d="${masts}" stroke-width=".8"/>`;
-    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
+    s += lightsPaths(lights);
     // 2. The wall with the window cut out of it, the reveal's shadow on its right jamb (the one the viewer,
     //    to the window's left, can see) and its sill, the
     //    frame, one mullion and one transom, and the sill.
@@ -2347,10 +2357,10 @@
     const boat = `<path class="isl-vhull" d="M${F(sb - Y(0.03))} ${F(sy - Y(0.01))}H${F(sb + Y(0.03))}L${F(sb + Y(0.022))} ${F(sy)}H${F(sb - Y(0.024))}Z"/>`
       + `<path class="isl-vsail" d="M${F(sb)} ${F(sy - Y(0.012))}V${F(sy - Y(0.1))}L${F(sb + Y(0.034))} ${F(sy - Y(0.016))}Z"/>`;
     // (its masthead light's column on the water and its faint reflection, as the cay's light and the cay have)
-    s += dashes(streakList(sb, sy + 1, H, rng(617), 0.04, 0.05), 's-vglow', 1, [0.08, 0.16, 0.3])
+    s += dashes(streakList(sb, sy + 1, H, rng(617), 0.04, 0.05), 's-vcoolglow', 1, [0.08, 0.16, 0.3])
       + `<g opacity=".15"><g transform="translate(0 ${F(2 * sy)}) scale(1 -1)">${boat}</g></g>` + boat;
-    lights.push([sb, sy - Y(0.1)]);
-    s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
+    lights.push([sb, sy - Y(0.1), 'b']);
+    s += lightsPaths(lights);
     // 2. The wall, the window cut out of it, its reveal, frame and sill; a shelf of books above the desk.
     s += `<path fill="url(#islpwallg)" fill-rule="evenodd" d="${rect(-2, -2, W + 4, H + 4)}${rect(wx0, wT, ww, wB - wT)}"/>`;
     const rv = Math.max(2, Y(0.025));
@@ -2610,11 +2620,11 @@
       s += `<g transform="translate(0 ${F(2 * by)}) scale(1 -1)" opacity=".18"><path class="isl-vhull" d="${hd}"/><path class="isl-vmast" d="${md}" stroke-width=".8"/></g>`;   // its reflection
       hulls += hd;
       masts += md;
-      lights.push([bx, by - mh]);
-      s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.08, 0.16, 0.3]);
+      lights.push([bx, by - mh, 'b']);
+      s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vcoolglow', 1, [0.08, 0.16, 0.3]);
     }
     s += `<path class="isl-vhull" d="${hulls}"/><path class="isl-vmast" d="${masts}" stroke-width=".8"/>`;
-    return s + `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
+    return s + lightsPaths(lights);
   }
   const newsFrame = (W, H, side = 1) => {
     const ww = clamp(H * 0.95, W * 0.18, W * 0.26), wx0 = side > 0 ? W * 0.955 - ww : W * 0.045;
@@ -3641,6 +3651,9 @@
       + '<linearGradient id="islvspill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".2"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvlamp"><stop offset="0" class="st-k" stop-opacity=".6"/><stop offset=".5" class="st-k" stop-opacity=".18"/><stop offset="1" class="st-k" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
+      // (a boat's light: its cool halo and its reflection, as the warm ones above; the second light)
+      + '<radialGradient id="islvcool"><stop offset="0" class="st-vcool" stop-opacity=".5"/><stop offset=".5" class="st-vcool" stop-opacity=".14"/><stop offset="1" class="st-vcool" stop-opacity="0"/></radialGradient>'
+      + '<linearGradient id="islvcoolrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vcool" stop-opacity=".55"/><stop offset="1" class="st-vcool" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvmist"><stop offset="0" class="st-haze" stop-opacity=".5"/><stop offset=".6" class="st-haze" stop-opacity=".16"/><stop offset="1" class="st-haze" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvpool"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset=".5" class="st-g1" stop-opacity=".18"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvsailg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" class="st-vsail" stop-opacity="1"/><stop offset="1" class="st-vsail2" stop-opacity="1"/></linearGradient>'
