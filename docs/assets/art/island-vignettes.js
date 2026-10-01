@@ -1143,12 +1143,25 @@
     // 4. The guardhouse at the lookout's far end: coursed stone, a hipped roof of old shingle, its
     //    arched door and a small window lit from within.
     const gx0 = X(0.905), gx1 = X(1.03), gTop = Y(0.33), gBase = Y(0.56);
-    s += `<g class="isl-vwin" style="--i:2">${halo(X(0.96), Y(0.46), Y(0.34), 'islvwarm')}</g>`;
+    s += `<g class="isl-vwin" style="--i:2">${halo(X(0.96), Y(0.46), Y(0.34), 'islvwarm')}${pool(gx0 + (gx1 - gx0) * 0.55, gBase + Y(0.015), Y(0.1), Y(0.025), 0.6)}</g>`;
     s += `<path d="M${F(gx0)} ${F(gBase)}V${F(gTop)}H${F(gx1)}V${F(gBase)}Z" fill="url(#islvfacade)"/>`;
     s += `<path class="isl-vwood-f" d="M${F(gx0 - Y(0.02))} ${F(gTop + 1)}L${F(gx0 + (gx1 - gx0) * 0.3)} ${F(gTop - Y(0.09))}H${F(gx1 + Y(0.1))}L${F(gx1 + Y(0.12))} ${F(gTop + 1)}Z"/>`;
-    let gc = '';
+    // its roof's courses of shingle, and the eave's shadow on the wall under it
+    let shg = '';
+    for (let k = 1; k <= 3; k++) {
+      const tt = k / 4, sy = gTop + 1 - tt * (Y(0.09) + 1), sxl = (gx0 - Y(0.02)) + tt * ((gx0 + (gx1 - gx0) * 0.3) - (gx0 - Y(0.02)));
+      shg += `M${F(sxl)} ${F(sy)}H${F(gx1 + Y(0.1))}`;
+    }
+    s += `<path class="isl-vcourse" d="${shg}" stroke-width=".7"/><path class="isl-vpshade" d="${rect(gx0, gTop + 1, X(1.03) - gx0, Y(0.03))}"/>`;
+    // (its stone in running bond and quoins up its corner: with full-width lines only it had read as
+    // weatherboard; the door and window, drawn after, cover the joints behind them)
+    let gc = '', gq = '';
     for (let y = gBase - Y(0.03); y > gTop + Y(0.01); y -= Y(0.03)) gc += `M${F(gx0)} ${F(y)}H${F(gx1)}`;
-    s += `<path class="isl-vcourse" d="${gc}" stroke-width=".7"/>`;
+    for (let y = gBase, j = 0; y - Y(0.03) > gTop + Y(0.005); y -= Y(0.03), j++) {
+      for (let x = gx0 + Y(0.06) - (j % 2) * Y(0.03); x < W; x += Y(0.06)) gc += `M${F(x)} ${F(y - Y(0.03))}v${F(Y(0.03))}`;
+      gq += rect(gx0, y - Y(0.03) + 0.6, Y(j % 2 ? 0.014 : 0.022), Y(0.03) - 1.2);
+    }
+    s += `<path class="isl-vcourse" d="${gc}" stroke-width=".7"/><path class="isl-vstone" d="${gq}" fill-opacity=".45"/>`;
     const dw = Y(0.05), dx = gx0 + (gx1 - gx0) * 0.55;
     s += `<path class="f-pulse isl-vwin" style="--i:2" d="M${F(dx - dw / 2)} ${F(gBase)}V${F(gBase - Y(0.1))}a${F(dw / 2)} ${F(dw / 2)} 0 0 1 ${F(dw)} 0V${F(gBase)}ZM${F(gx0 + Y(0.035))} ${F(gTop + Y(0.06))}h${F(Y(0.03))}v${F(Y(0.04))}h${F(-Y(0.03))}Z"/>`;
     // 5. The telescope on its tripod, trained on the sky (a telescope aimed level at a low Moon reads
@@ -1173,7 +1186,9 @@
     s += `<path class="isl-vbrass2" d="M${F(fd[0])} ${F(fd[1])}l${F(ux * len * 0.25)} ${F(uy * len * 0.25)}" stroke-width="${F(Math.max(1.5, Y(0.012)))}" stroke-linecap="round"/>`;
     s += `<path class="isl-vbrass2" d="M${F(bx2)} ${F(by2)}l${F(-ux * Y(0.03))} ${F(-uy * Y(0.03))}" stroke-width="${F(Math.max(2, Y(0.02)))}" stroke-linecap="round"/>`;
     s += `<rect class="isl-vtripod-f" x="${F(tx - Y(0.015))}" y="${F(ty - Y(0.012))}" width="${F(Y(0.03))}" height="${F(Y(0.034))}"/>`;
-    s += `<circle class="isl-vlens" cx="${F(fx + ux * Y(0.012))}" cy="${F(fy + uy * Y(0.012))}" r="${F(Math.max(1.2, d0 * 0.55))}"/>`;
+    // (the objective's glass in the dew shield's mouth, seen nearly edge-on: a disc off its end read as a small Moon)
+    const lcx = fx + ux * Y(0.01), lcy = fy + uy * Y(0.01);
+    s += `<ellipse class="isl-vlens" cx="${F(lcx)}" cy="${F(lcy)}" rx="${F(Math.max(1, d0 * 0.3))}" ry="${F(d0)}" transform="rotate(${F(ang * 180 / Math.PI)} ${F(lcx)} ${F(lcy)})"/>`;
     // 6. The low wall along the lookout's edge, in front of the tripod's feet: coursed stone under a
     //    coping that catches the light, its foot following the crest.
     const wx0 = X(0.685), wx1 = X(0.905), wTop = Y(0.5);
@@ -1182,7 +1197,11 @@
     s += `<path d="${polyD(wallPts)}" fill="url(#islvfacade)"/><path class="isl-vpshade" d="${polyD(wallPts)}"/>`;
     s += `<path class="isl-vstone" d="M${F(wx0 - Y(0.008))} ${F(wTop + Y(0.018))}V${F(wTop)}H${F(wx1)}V${F(wTop + Y(0.018))}Z"/>`;
     let wj = `M${F(wx0)} ${F(wTop + Y(0.045))}H${F(wx1)}`;
-    for (let x = wx0 + Y(0.05), k = 0; x < wx1; x += Y(0.05), k++) wj += `M${F(x + (k % 2) * Y(0.025))} ${F(wTop + Y(0.018))}v${F(Y(0.027))}`;
+    // (two rows in a true bond, none past the wall's ends: in one row the joints had come in pairs, and at 1440
+    // the last one stood on the guardhouse)
+    for (let row = 0; row < 2; row++) {
+      for (let x = wx0 + Y(0.05) - row * Y(0.025); x < wx1 - 1; x += Y(0.05)) if (x > wx0 + 1) wj += `M${F(x)} ${F(wTop + Y(row ? 0.045 : 0.018))}v${F(Y(row ? 0.035 : 0.027))}`;
+    }
     s += `<path class="isl-vcourse" d="${wj}" stroke-width=".7"/>`;
     // 7. The lantern at the wall's end, over the path, in the page's hue: its pool, halo, and last.
     const lx = wx0 + Y(0.02), ly = wTop;

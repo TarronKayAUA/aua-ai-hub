@@ -93,11 +93,11 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### telescope
 
-- [ ] #45 fix v3 `telescope-1`: Wall joints in uneven pairs, one row only, one spilling onto the guardhouse
-- [ ] #59 add v3 `telescope-3`: Make the guardhouse read as stone: staggered joints and quoins
-- [ ] #66 fix v2 `telescope-5`: The lens reads as a pale ball stuck on the end of the tube
-- [ ] #86 add v2 `telescope-4`: A shadow under the guardhouse's eave
-- [ ] #89 add v2 `telescope-6`: The lit doorway lays a pool of light on the ground
+- [x] #45 fix v3 `telescope-1`: Wall joints in uneven pairs, one row only, one spilling onto the guardhouse
+- [x] #59 add v3 `telescope-3`: Make the guardhouse read as stone: staggered joints and quoins
+- [x] #66 fix v2 `telescope-5`: The lens reads as a pale ball stuck on the end of the tube
+- [x] #86 add v2 `telescope-4`: A shadow under the guardhouse's eave
+- [x] #89 add v2 `telescope-6`: The lit doorway lays a pool of light on the ground
 
 ### tool-wall
 
