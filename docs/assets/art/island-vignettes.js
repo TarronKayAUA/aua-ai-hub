@@ -1201,6 +1201,16 @@
       s += `<path class="isl-vpost isl-lcap" d="M${F(lx2 - lw2 * 1.5)} ${F(ly2 - ph - lh2)}L${F(lx2)} ${F(ly2 - ph - lh2 - Y(0.014))}L${F(lx2 + lw2 * 1.5)} ${F(ly2 - ph - lh2)}Z"/>`;
     });
     s += `<path class="f-pulse isl-vwin isl-vlast" style="--i:${lookI};--isl-vstep:.6s" d="${lookoutLit}"/>`;
+    // The lookout by the hour (art-audit wave 1, by version; the owner, 2026-10-01): people climb to a lookout to
+    // watch the sunset and go home after dark. One early walker at Dawn; two visitors by Day before the middle
+    // arch, one pointing out to sea; four at Sunset, dark against the lit arches; no one at Dusk or Night.
+    {
+      const ph = Y(0.052), at = (k) => gx0 + bayW * k;
+      const P2 = (x, o) => person(x, lb, ph, o);
+      s += `<g class="isl-bfig"><g class="isl-lq" data-q="a">${P2(at(0.5), { shirt: '#c9b79a' })}</g>`
+        + `<g class="isl-lq" data-q="y">${P2(at(1.3), { shirt: '#e8e2d4', reach: [at(1.3) - ph * 0.42, lb - ph * 0.86] })}${P2(at(1.68), { shirt: '#9ec0d6', legs: '#5a5148' })}</g>`
+        + `<g class="isl-lq" data-q="s">${P2(at(0.32), { shirt: '#7d4a52' })}${P2(at(0.7), { shirt: '#3d6466' })}${P2(at(1.45), { shirt: '#b8573f' })}${P2(at(2.2), { shirt: '#5c5e3e' })}</g></g>`;
+    }
     return s;
   }
 
