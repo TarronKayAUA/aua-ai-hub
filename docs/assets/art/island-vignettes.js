@@ -2597,10 +2597,19 @@
     const cx1 = X(0.1);
     s += `<path class="isl-hrail" d="M-2 ${F(Y(0.04))}H${F(X(0.46))}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
     let folds = '';
-    for (let x = X(0.005); x < cx1; x += Y(0.035)) folds += `M${F(x)} ${F(Y(0.05))}Q${F(x + Y(0.012))} ${F(Y(0.45))} ${F(x - Y(0.004))} ${F(fl - Y(0.04))}`;
-    s += `<path class="isl-hcurtain" d="M-2 ${F(Y(0.045))}H${F(cx1)}Q${F(cx1 + Y(0.03))} ${F(Y(0.5))} ${F(cx1 - Y(0.01))} ${F(fl - Y(0.035))}H-2Z"/><path class="isl-hfold" d="${folds}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
+    // (its top band an open mesh, as a cubicle curtain's is, the wall showing through it, a seam at its foot)
+    const mB = Y(0.13);
+    let mesh = '';
+    for (let x = X(0.005); x < cx1; x += Y(0.018)) mesh += `M${F(x)} ${F(Y(0.045))}V${F(mB)}`;
+    for (let y = Y(0.06); y < mB; y += Y(0.018)) mesh += `M-2 ${F(y)}H${F(cx1 + Y(0.004))}`;
+    s += `<path class="isl-hcurtain" fill-opacity=".35" d="${rect(-2, Y(0.045), cx1 + 2 + Y(0.004), mB - Y(0.045))}"/><path class="isl-hfold" d="${mesh}" stroke-width=".6"/>`;
+    for (let x = X(0.005); x < cx1; x += Y(0.035)) folds += `M${F(x)} ${F(mB)}Q${F(x + Y(0.012))} ${F(Y(0.45))} ${F(x - Y(0.004))} ${F(fl - Y(0.04))}`;
+    s += `<path class="isl-hfold" d="M-2 ${F(mB)}H${F(cx1 + Y(0.004))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    s += `<path class="isl-hcurtain" d="M-2 ${F(mB)}H${F(cx1)}Q${F(cx1 + Y(0.03))} ${F(Y(0.5))} ${F(cx1 - Y(0.01))} ${F(fl - Y(0.035))}H-2Z"/><path class="isl-hfold" d="${folds}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
     // 2. The bed: its frame on wheels, the mattress, the head raised, the pillow, the blanket, a rail.
-    const b0 = X(0.2), b1 = X(0.62), bTop = Y(0.64), bMid = Y(0.7), bLeg = Y(0.8);
+    // (its wheels on the floor in front of the wall, with its shadow: it had hung above the floor line)
+    const b0 = X(0.2), b1 = X(0.62), bTop = Y(0.64), bMid = Y(0.7), bLeg = Y(0.87);
+    s += `<ellipse class="isl-tdrop" cx="${F((b0 + b1) / 2)}" cy="${F(Y(0.93))}" rx="${F((b1 - b0) / 2 + Y(0.02))}" ry="${F(Y(0.012))}"/>`;
     const hx = b0 + (b1 - b0) * 0.28;
     s += `<path class="isl-hframe" d="${rect(b0, bMid, b1 - b0, Y(0.028))}M${F(b0 + Y(0.03))} ${F(bMid)}V${F(bLeg)}M${F(b1 - Y(0.03))} ${F(bMid)}V${F(bLeg)}" stroke-width="${F(Math.max(1.2, Y(0.014)))}"/>`;
     for (const wx of [b0 + Y(0.03), b1 - Y(0.03)]) s += `<circle class="isl-tiron" cx="${F(wx)}" cy="${F(bLeg + Y(0.03))}" r="${F(Y(0.03))}"/>`;
@@ -2612,15 +2621,20 @@
     s += `<path class="isl-hframe" d="${rect(hx + Y(0.06), bTop - Y(0.08), (b1 - hx) * 0.45, Y(0.012))}M${F(hx + Y(0.07))} ${F(bTop - Y(0.07))}V${F(bTop)}M${F(hx + (b1 - hx) * 0.45)} ${F(bTop - Y(0.07))}V${F(bTop)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     // 3. The drip stand at the bed's head: pole, hooks, the bag with its fluid level, the line.
     const ix = b0 - Y(0.1), iT = Y(0.12);
-    s += `<path class="isl-hframe" d="M${F(ix)} ${F(fl - Y(0.02))}V${F(iT)}M${F(ix - Y(0.05))} ${F(iT + Y(0.01))}H${F(ix + Y(0.05))}M${F(ix - Y(0.07))} ${F(fl - Y(0.02))}H${F(ix + Y(0.07))}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
+    s += `<ellipse class="isl-tdrop" cx="${F(ix)}" cy="${F(fl + Y(0.025))}" rx="${F(Y(0.08))}" ry="${F(Y(0.008))}"/>`;
+    s += `<path class="isl-hframe" d="M${F(ix)} ${F(fl + Y(0.025))}V${F(iT)}M${F(ix - Y(0.05))} ${F(iT + Y(0.01))}H${F(ix + Y(0.05))}M${F(ix - Y(0.07))} ${F(fl + Y(0.025))}H${F(ix + Y(0.07))}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
+    // (the bag hangs from the hook on a short hanger; a drip chamber under it, the line leaving from that)
+    s += `<path class="isl-hframe" d="M${F(ix + Y(0.05))} ${F(iT + Y(0.01))}V${F(iT + Y(0.034))}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/>`;
     const bagT = iT + Y(0.03), bagB = iT + Y(0.2);
     s += `<path class="isl-hbag" d="M${F(ix + Y(0.02))} ${F(bagT)}H${F(ix + Y(0.08))}V${F(bagB - Y(0.02))}Q${F(ix + Y(0.05))} ${F(bagB + Y(0.01))} ${F(ix + Y(0.02))} ${F(bagB - Y(0.02))}Z"/>`
       + `<path class="isl-hfluid" d="M${F(ix + Y(0.02))} ${F(bagT + Y(0.07))}H${F(ix + Y(0.08))}V${F(bagB - Y(0.02))}Q${F(ix + Y(0.05))} ${F(bagB + Y(0.01))} ${F(ix + Y(0.02))} ${F(bagB - Y(0.02))}Z"/>`
-      + `<path class="isl-hcord" d="M${F(ix + Y(0.05))} ${F(bagB)}C${F(ix + Y(0.06))} ${F(Y(0.55))} ${F(b0 + Y(0.1))} ${F(Y(0.5))} ${F(b0 + Y(0.16))} ${F(bTop - Y(0.08))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+      + `<path class="isl-hbag" d="${rect(ix + Y(0.043), bagB - Y(0.006), Y(0.014), Y(0.036))}"/>`
+      + `<path class="isl-hcord" d="M${F(ix + Y(0.05))} ${F(bagB + Y(0.03))}C${F(ix + Y(0.06))} ${F(Y(0.55))} ${F(b0 + Y(0.1))} ${F(Y(0.5))} ${F(b0 + Y(0.16))} ${F(bTop - Y(0.08))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
     // 4. The monitor on its wall arm above the bed's head: its screen, a heartbeat trace in the page's hue,
     //    two readings as bars.
     const mx0 = b0 + Y(0.1), mT = Y(0.12), mw = Y(0.36), mh = Y(0.24);
     s += `<path class="isl-hframe" d="M${F(mx0 - Y(0.05))} ${F(mT + mh * 0.5)}H${F(mx0)}" stroke-width="${F(Math.max(1.6, Y(0.02)))}"/>`
+      + `<path class="isl-lalu" d="${rect(mx0 - Y(0.066), mT + mh * 0.5 - Y(0.035), Y(0.018), Y(0.07))}"/>`   // its wall plate
       + `<path class="isl-tiron" d="${rect(mx0, mT, mw, mh)}"/><path class="isl-hscreen" d="${rect(mx0 + Y(0.015), mT + Y(0.015), mw - Y(0.03), mh - Y(0.03))}"/>`;
     const ey = mT + mh * 0.42, ex0 = mx0 + Y(0.03), ew = mw * 0.62;
     const ecg = `M${F(ex0)} ${F(ey)}h${F(ew * 0.18)}l${F(ew * 0.04)} ${F(-mh * 0.08)}l${F(ew * 0.04)} ${F(mh * 0.08)}h${F(ew * 0.06)}l${F(ew * 0.03)} ${F(mh * 0.06)}l${F(ew * 0.04)} ${F(-mh * 0.3)}l${F(ew * 0.04)} ${F(mh * 0.36)}l${F(ew * 0.03)} ${F(-mh * 0.12)}h${F(ew * 0.12)}l${F(ew * 0.05)} ${F(-mh * 0.06)}l${F(ew * 0.05)} ${F(mh * 0.06)}h${F(ew * 0.28)}`;
@@ -2629,11 +2643,15 @@
       + `<path class="isl-hread2" d="M${F(ex0)} ${F(mT + mh * 0.75)}h${F(ew * 0.8)}" stroke-width="${F(Math.max(0.8, Y(0.008)))}" stroke-dasharray="${F(Y(0.02))} ${F(Y(0.012))}"/>`;
     // 5. The reading lamp over the bed, lit from Dawn to Night; the chair by the window.
     const lx = b0 + (b1 - b0) * 0.62, ly = Y(0.2);
-    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.03), Y(0.2), 'islvbulb')}<path d="${polyD([[lx - Y(0.05), ly + Y(0.04)], [lx + Y(0.05), ly + Y(0.04)], [lx + Y(0.18), bTop - Y(0.04)], [lx - Y(0.18), bTop - Y(0.04)]])}" fill="url(#islvspill)"/></g>`
-      + `<path class="isl-lbronze" d="${rect(lx - Y(0.07), ly - Y(0.015), Y(0.14), Y(0.03))}"/><path class="isl-cshade" d="M${F(lx - Y(0.06))} ${F(ly + Y(0.015))}H${F(lx + Y(0.06))}V${F(ly + Y(0.04))}H${F(lx - Y(0.06))}Z"/>`;
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.03), Y(0.2), 'islvbulb')}<path d="${polyD([[lx - Y(0.05), ly + Y(0.04)], [lx + Y(0.05), ly + Y(0.04)], [lx + Y(0.18), bTop - Y(0.04)], [lx - Y(0.18), bTop - Y(0.04)]])}" fill="url(#islvspill)"/>${pool(lx, bTop - Y(0.01), Y(0.19), Y(0.04), 0.45)}</g>`
+      + `<path class="isl-lbronze" d="${rect(lx - Y(0.07), ly - Y(0.015), Y(0.14), Y(0.03))}"/><path class="isl-cshade" d="M${F(lx - Y(0.06))} ${F(ly + Y(0.015))}H${F(lx + Y(0.06))}V${F(ly + Y(0.04))}H${F(lx - Y(0.06))}Z"/>`
+      // (its open underside, seen from below: dark by Day, lit from Dawn to Night where the cone begins)
+      + `<ellipse class="isl-cshade" cx="${F(lx)}" cy="${F(ly + Y(0.04))}" rx="${F(Y(0.058))}" ry="${F(Y(0.01))}"/><ellipse class="isl-tdrop" cx="${F(lx)}" cy="${F(ly + Y(0.04))}" rx="${F(Y(0.058))}" ry="${F(Y(0.01))}"/>`
+      + `<g class="isl-vlamps isl-vwin" style="--i:1"><ellipse class="isl-tbulb" cx="${F(lx)}" cy="${F(ly + Y(0.04))}" rx="${F(Y(0.058))}" ry="${F(Y(0.01))}"/></g>`;
     const chx = f.wx0 - Y(0.12);
+    s += `<ellipse class="isl-tdrop" cx="${F(chx)}" cy="${F(fl + Y(0.012))}" rx="${F(Y(0.09))}" ry="${F(Y(0.008))}"/>`;
     s += `<path class="isl-lchair" d="M${F(chx - Y(0.08))} ${F(Y(0.72))}H${F(chx + Y(0.08))}V${F(Y(0.76))}H${F(chx - Y(0.08))}ZM${F(chx + Y(0.05))} ${F(Y(0.72))}V${F(Y(0.52))}H${F(chx + Y(0.08))}V${F(Y(0.72))}Z"/>`
-      + `<path class="isl-lchairleg" d="M${F(chx - Y(0.07))} ${F(Y(0.76))}V${F(fl)}M${F(chx + Y(0.07))} ${F(Y(0.76))}V${F(fl)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+      + `<path class="isl-lchairleg" d="M${F(chx - Y(0.07))} ${F(Y(0.76))}V${F(fl + Y(0.012))}M${F(chx + Y(0.07))} ${F(Y(0.76))}V${F(fl + Y(0.012))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     return `<g style="--isl-vstep:.5s">${s}</g>`;
   }
 

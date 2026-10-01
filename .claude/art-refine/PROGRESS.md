@@ -148,13 +148,13 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### hospital-room
 
-- [ ] #10 fix v4 `hospital-room-1`: Stand the bed and drip stand on the floor
-- [ ] #42 fix v3 `hospital-room-2`: Hang the drip bag from its hook, with a drip chamber
-- [ ] #52 add v3 `hospital-room-8`: The reading lamp's lit underside
-- [ ] #62 fix v2 `hospital-room-3`: A wall plate for the monitor's arm
+- [x] #10 fix v4 `hospital-room-1`: Stand the bed and drip stand on the floor
+- [x] #42 fix v3 `hospital-room-2`: Hang the drip bag from its hook, with a drip chamber
+- [x] #52 add v3 `hospital-room-8`: The reading lamp's lit underside
+- [x] #62 fix v2 `hospital-room-3`: A wall plate for the monitor's arm
 - [ ] #77 fix v2 `hospital-room-4`: Columns on the water under the window's hill lights
-- [ ] #90 add v2 `hospital-room-5`: The reading lamp's light landing on the bed
-- [ ] #109 add v2 `hospital-room-6`: The mesh band at the top of the privacy curtain
+- [x] #90 add v2 `hospital-room-5`: The reading lamp's light landing on the bed
+- [x] #109 add v2 `hospital-room-6`: The mesh band at the top of the privacy curtain
 
 ### week-calendar
 
