@@ -113,6 +113,30 @@
   --isl-sea0: #274660; --isl-sea1: #12314b; --isl-sea2: #061b31; --isl-haze: #3f5a76;
   --isl-isl: #15293f; --isl-far: #0c2138; --isl-near: #05131f; --isl-bird: #020912;
 }
+/* DUSK's materials (art audit, 2026-10-01): the outdoor materials Dusk had shared with Sunset kept a
+   near-daylight value under Dusk's nearly dark sky. Each is set 50% of the way from its Sunset value
+   to its Night value; the floodlit cathedral (--isl-vcath) and every light keep theirs, and the
+   interiors already have Dusk values of their own. */
+.isl[data-sky="dusk"] {
+  /* the campus */
+  --isl-vwall: #5d6b7d; --isl-vshade: #3a3b3c; --isl-vband: #5b4348; --isl-vroof: #6e313d;
+  --isl-vroof2: #592834; --isl-vdark: #26364c; --isl-vrail: rgba(218, 226, 236, 0.43);
+  /* the harbour, the bay and the town */
+  --isl-vbay: #366b82; --isl-vship: #9ca8b8; --isl-vship2: #808d9e; --isl-vtown: #586678; --isl-vsand: #aba28d;
+  /* sails and spinnakers */
+  --isl-vsail: #bbc4d0; --isl-vsail2: #8b98a8; --isl-vspin: #9284a6; --isl-vspin2: #b6a279;
+  /* lit faces, walls and risers */
+  --isl-vlit: #3a526e; --isl-vwallc: #4c4d4e; --isl-vriser: #282e3a;
+  /* brass and wood (the telescope) */
+  --isl-vbrass: #c5a664; --isl-vbrass2: #987434; --isl-vbrass3: #56401b; --isl-vwoodc: #46382a;
+  --isl-vwoodf: #3a2e22;
+  /* Betty's Hope's cane and track */
+  --isl-vcane: #2e4842; --isl-vtrack: #4e5758;
+  /* stone */
+  --isl-vstone: #6f6d68; --isl-vstrata: #54524e;
+  /* the lecture screen */
+  --isl-mscr: #d9e0e8;
+}
 .isl[data-sky="dawn"] .isl-a,
 .isl[data-sky="day"] .isl-y { display: inline; }
 .isl:is([data-sky="dawn"], [data-sky="day"]) .isl-d { display: none; }
@@ -760,6 +784,14 @@
 [data-md-color-scheme="slate"] .isl .isl-vlamp { fill: var(--k, var(--isl-pulse)); }
 /* By Day a lantern is unlit glass, as every window is (its halo and pool are already hidden). */
 .isl[data-sky="day"] .isl-vlamp { fill: var(--isl-vdark); }
+/* An unlit lamp by Day is three materials, not one dark shape (owner, 2026-10-01): an iron post, a bronze cap
+   and a frosted glass globe shaded on its underside. */
+.isl[data-sky="day"] .isl-lpost { fill: #2f3940; }
+.isl[data-sky="day"] .isl-lcap { fill: #6e5638; }
+.isl .isl-lglass { fill: #eef3f2; }
+.isl .isl-lglass2 { fill: #aebdc2; fill-opacity: 0.75; }
+/* Every lantern by Day: its lit pane turns iron and frames two panes of glass (panes() in the art). */
+.isl[data-sky="day"] .isl-ltframe { fill: #2f3940; }
 /* The campus's materials (from the owner's photographs of AUA): cream walls, a terracotta ground
    floor, red roofs and white verandas, as dusk shows them (light scheme) and as night does (dark). */
 .isl {
@@ -809,6 +841,12 @@
 .isl .isl-vcannon { fill: var(--isl-near); }
 /* The shaded side of stonework (the telescope's wall, the bell tower's shaft). */
 .isl .isl-vpshade { fill: var(--isl-near); fill-opacity: 0.3; }
+/* By Day the near land's colour is green, so a shadow on stone took an olive cast; under a blue sky a
+   shadow is lit by the sky and goes cool. Every other version's --isl-near is already a cool blue. */
+.isl[data-sky="day"] .isl-vpshade { fill: #2a3d4f; }
+/* The Moon's path on the water (moonWater() in the art): cool white glitter, at Dusk and Night only. */
+.isl .isl-vmoonpath { stroke: #e6edf5; fill: none; stroke-linecap: round; }
+.isl[data-sky="sunset"] .isl-vmoonw { display: none; }
 /* Sailing Week's sails and spinnakers (one in the page's hue), and the steps' stone treads. */
 .isl { --isl-vsail: #e9edf2; --isl-vspin: #b9a6c9; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] { --isl-vsail: #8d9bad; --isl-vspin: #6c6282; }
@@ -837,7 +875,17 @@
 .isl .isl-vseam { stroke: var(--isl-near); stroke-opacity: 0.25; fill: none; }
 .isl .isl-vnav-r { fill: #ff6b5e; }
 .isl .isl-vnav-g { fill: #6fe0a2; }
-.isl .isl-vnav-w { fill: var(--isl-planet); }
+/* The second light (art audit, 2026-10-01): lights on boats, anchor, masthead and riding lights (LED on a
+   modern yacht or ship), are a cool white beside the tungsten ashore; their halos (islvcool), columns on
+   the water and reflections with them. By Day they are off, as the lights ashore are. */
+.isl { --isl-vcool: #e4eeff; }
+.isl .isl-vnav-w { fill: var(--isl-vcool); }
+.isl .s-vcool { stroke: var(--isl-vcool); stroke-linecap: round; fill: none; }
+.isl .s-vcoolglow { stroke: var(--isl-vcool); fill: none; }
+.isl .st-vcool { stop-color: var(--isl-vcool); }
+.isl .f-vcool { fill: var(--isl-vcool); }
+.isl[data-sky="day"] .f-vcool { fill: var(--isl-pulse); }
+.isl[data-sky="day"] :is(.s-vcool, .s-vcoolglow, [fill*="vcool"]) { display: none; }
 .isl .isl-vriser { fill: var(--isl-vriser); }
 .isl .isl-vwall { fill: var(--isl-vwallc); }
 /* the campus flags: their own colours by Day, veiled toward night as the walls darken (owner, 2026-10-01) */
