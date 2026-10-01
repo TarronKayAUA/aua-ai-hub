@@ -2605,6 +2605,24 @@
       + `<path class="isl-vlamp isl-ltframe" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.03))}V${F(ly - Y(0.09))}H${F(lx + Y(0.014))}V${F(ly - Y(0.03))}Z"/></g>`
       + panes(lx - Y(0.014), ly - Y(0.09), Y(0.028), Y(0.06));
     s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ground)}V${F(ly - Y(0.03))}H${F(lx + 1)}V${F(ground)}Z"/><path class="isl-vpost isl-lcap" d="M${F(lx - Y(0.022))} ${F(ly - Y(0.09))}L${F(lx)} ${F(ly - Y(0.115))}L${F(lx + Y(0.022))} ${F(ly - Y(0.09))}Z"/>`;
+    // Someone reading the notices, seen from behind in front of the board's left end, and a slatted bench on
+    // iron ends in the lantern's pool beside it; the lantern's warm light on the reader's near side and the
+    // bench's top edges from Dawn to Night (art-audit wave 1, 2026-10-01: the square had no one in it).
+    {
+      const fx = nb0 + Y(0.075), fb = ground + Y(0.035), fh = Y(0.28), hr = fh * 0.075, sw = fh * 0.13;
+      const ft = fb - fh, hy = ft + hr;
+      let fig = `<path fill="#2f3a4a" d="M${F(fx - sw * 0.85)} ${F(fb)}L${F(fx - sw * 0.75)} ${F(ft + fh * 0.5)}H${F(fx + sw * 0.75)}L${F(fx + sw * 0.85)} ${F(fb)}H${F(fx + sw * 0.1)}L${F(fx)} ${F(ft + fh * 0.62)}L${F(fx - sw * 0.1)} ${F(fb)}Z"/>`;   // trousers
+      fig += `<path fill="#c7d6e3" d="M${F(fx - sw * 0.82)} ${F(ft + fh * 0.53)}L${F(fx - sw)} ${F(ft + fh * 0.22)}Q${F(fx - sw)} ${F(ft + fh * 0.16)} ${F(fx - sw * 0.6)} ${F(ft + fh * 0.15)}H${F(fx + sw * 0.6)}Q${F(fx + sw)} ${F(ft + fh * 0.16)} ${F(fx + sw)} ${F(ft + fh * 0.22)}L${F(fx + sw * 0.82)} ${F(ft + fh * 0.53)}Z"/>`;   // shirt
+      fig += `<path fill="#c7d6e3" d="${rect(fx - sw * 1.05, ft + fh * 0.2, sw * 0.24, fh * 0.3)}${rect(fx + sw * 0.81, ft + fh * 0.2, sw * 0.24, fh * 0.3)}"/>`;   // sleeves
+      fig += `<path fill="#6b4630" d="${rect(fx - sw * 1.02, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx + sw * 0.84, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx - hr * 0.45, hy + hr * 0.6, hr * 0.9, fh * 0.07)}"/>`;   // hands, neck
+      fig += `<circle fill="#1d1916" cx="${F(fx)}" cy="${F(hy)}" r="${F(hr)}"/>`;   // the head, from behind
+      fig += `<path fill="#3a2e24" d="${rect(fx - sw * 0.85, fb - fh * 0.02, sw * 0.7, fh * 0.03)}${rect(fx + sw * 0.15, fb - fh * 0.02, sw * 0.7, fh * 0.03)}"/>`;   // shoes
+      const b0 = lx - Y(0.21), b1 = lx - Y(0.05), sy = ground + Y(0.005), bh = Y(0.07);
+      let bench = `<path class="isl-vpost" d="${rect(b0 + Y(0.008), sy - bh * 0.95, Y(0.008), bh * 0.95 + Y(0.02))}${rect(b1 - Y(0.016), sy - bh * 0.95, Y(0.008), bh * 0.95 + Y(0.02))}"/>`;   // iron ends
+      bench += `<path class="isl-bbench" d="${rect(b0, sy - Y(0.004), b1 - b0, Y(0.012))}${rect(b0, sy - bh * 0.62, b1 - b0, Y(0.011))}${rect(b0, sy - bh * 0.9, b1 - b0, Y(0.011))}"/>`;   // seat and back slats
+      s += `<g class="isl-bfig">${bench}${fig}</g>`;
+      s += `<g class="isl-vlamps isl-vwin" style="--i:4"><path class="isl-mlit" d="M${F(fx - sw * 1.04)} ${F(ft + fh * 0.21)}V${F(ft + fh * 0.5)}M${F(fx - hr * 0.95)} ${F(hy - hr * 0.3)}A${F(hr)} ${F(hr)} 0 0 0 ${F(fx - hr * 0.7)} ${F(hy + hr * 0.7)}M${F(b0)} ${F(sy - Y(0.004))}H${F(b1)}M${F(b0)} ${F(sy - bh * 0.9)}H${F(b1)}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/></g>`;
+    }
     return `<g style="--isl-vstep:.4s">${s}</g>`;
   }
 
