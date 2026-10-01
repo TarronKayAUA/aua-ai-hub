@@ -694,6 +694,23 @@
 .isl .isl-mhole { stroke: #3a3730; fill: none; stroke-linecap: round; }
 .isl .isl-mseat { fill: var(--isl-mseat); }
 .isl .isl-mseat2 { fill: var(--isl-mseat); filter: brightness(0.82); }
+/* The Lecture Hall (first audit, 2026-10-01): the screen's falloff (weaker in the lit hall by Day), the
+   projector's cool beam (not by Day), and the screen's light on the seat backs' top edges at Dusk and Night. */
+.isl[data-sky="day"] .isl-mscrv { opacity: 0.45; }
+.isl[data-sky="day"] .isl-mbeam { display: none; }
+.isl .isl-mrim { stroke: #cfdbea; fill: none; stroke-linecap: round; display: none; }
+.isl:is([data-sky="dusk"], [data-sky="night"]) .isl-mrim, [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-mrim { display: inline; }
+/* The hall's people and its chalkboard (art-audit wave 1, 2026-10-01): one set of colours, dimmed with the
+   hall's light by version as its seats are; the lamp's warm light on the lecturer (isl-mlit, Dawn to Night). */
+.isl[data-sky="dawn"] .isl-mroom { filter: brightness(0.82); }
+.isl[data-sky="sunset"] .isl-mroom { filter: brightness(0.86); }
+.isl[data-sky="dusk"] .isl-mroom { filter: brightness(0.6); }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-mroom, .isl[data-sky="night"] .isl-mroom { filter: brightness(0.4); }
+.isl .isl-mlit { stroke: #ffcf8a; stroke-opacity: 0.75; fill: none; stroke-linecap: round; }
+.isl .isl-mboard { fill: #34463f; }
+.isl .isl-mchalk { stroke: #e9ede6; stroke-opacity: 0.75; fill: #e9ede6; fill-opacity: 0; stroke-linecap: round; stroke-linejoin: round; }
+.isl .isl-mchalkf { fill: #f1f2ec; }
+.isl .isl-mclockf { fill: var(--isl-lpage); }
 .isl .isl-dtruss { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; }
 .isl .isl-ddish { fill: var(--isl-lframe); }
 .isl .isl-ddish2 { stroke: var(--isl-lalu); fill: none; }
@@ -792,6 +809,21 @@
 .isl .isl-lglass2 { fill: #aebdc2; fill-opacity: 0.75; }
 /* Every lantern by Day: its lit pane turns iron and frames two panes of glass (panes() in the art). */
 .isl[data-sky="day"] .isl-ltframe { fill: #2f3940; }
+.isl .isl-ltbar { stroke: #1c252d; stroke-opacity: 0.8; fill: none; }
+/* The Bell Tower (art-audit wave 1, 2026-10-01): its birds roost at Night; the bell's rope; the tower's door. */
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-noct, .isl[data-sky="night"] .isl-noct { display: none; }
+.isl .isl-brope { stroke: #a68d63; fill: none; stroke-linecap: round; }
+/* The square's reader and bench, one set of colours dimmed with the light by version (the lantern's
+   warm light on them is isl-mlit, Dawn to Night). */
+.isl .isl-bbench { fill: #8a6a4a; }
+.isl[data-sky="dawn"] .isl-bfig { filter: brightness(0.8); }
+.isl[data-sky="sunset"] .isl-bfig { filter: brightness(0.72); }
+.isl[data-sky="dusk"] .isl-bfig { filter: brightness(0.5); }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-bfig, .isl[data-sky="night"] .isl-bfig { filter: brightness(0.35); }
+.isl[data-sky="night"] .isl-brope { stroke: #5a4c37; }
+.isl .isl-tdoor { fill: #4a3a2a; }
+.isl[data-sky="night"] .isl-tdoor, [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-tdoor { fill: #1f1912; }
+.isl[data-sky="day"] .isl-ltlit { display: none; }
 /* The campus's materials (from the owner's photographs of AUA): cream walls, a terracotta ground
    floor, red roofs and white verandas, as dusk shows them (light scheme) and as night does (dark). */
 .isl {
@@ -883,6 +915,8 @@
 .isl .s-vcool { stroke: var(--isl-vcool); stroke-linecap: round; fill: none; }
 .isl .s-vcoolglow { stroke: var(--isl-vcool); fill: none; }
 .isl .st-vcool { stop-color: var(--isl-vcool); }
+.isl .st-vred { stop-color: #ff6b5e; }   /* a red sidelight's halo (Sailing Week, Curtain Bluff) */
+.isl[data-sky="day"] [fill*="vred"] { display: none; }
 .isl .f-vcool { fill: var(--isl-vcool); }
 .isl[data-sky="day"] .f-vcool { fill: var(--isl-pulse); }
 .isl[data-sky="day"] :is(.s-vcool, .s-vcoolglow, [fill*="vcool"]) { display: none; }

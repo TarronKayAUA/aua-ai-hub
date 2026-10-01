@@ -719,7 +719,9 @@
     if (!B) return '';
     const r = rng(1917), y0 = v.y0, ppd = v.ppd, VEX = L.VEX || 2.6;
     const [bx0, by0, bx1, by1] = B.box, span = clamp(W * 0.1, 56, 100), k = span / (bx1 - bx0);
-    const x = W * 0.64, y = y0 * 0.34;
+    // (left of the Moon's place: at 0.64 its right wingtip lay on the night Moon's disc at every width; first
+    // audit's mechanical sweep, measured 2026-10-01)
+    const x = W * 0.58, y = y0 * 0.34;
     let s = '';
     // The sea's finish: ripples dense toward the horizon, long and sparse near the viewer.
     s += dashes(hatchList(W, y0, H, r), 's-vrip', 1, [0.1, 0.18, 0.28]);
@@ -768,14 +770,22 @@
       day += `<path class="isl-vshallow" d="${shoreD}" transform="translate(0 ${F(Math.max(1.2, ppd * 0.22))})" stroke-width="${F(Math.max(1.8, ppd * 0.36))}"/>`
         + `<path class="isl-vsurf" d="${shoreD}" stroke-width="${F(Math.max(1, ppd * 0.13))}"/>`;
     }
-    // (the yachts keep clear of the islands, and each has its reflection)
+    // (the yachts keep clear of the islands, and each has its reflection; drawn in every version, with the
+    // red port sidelight a yacht under sail shows, at the bow (their jibs point left, so we see their port
+    // side), and its faint column on the water after dark: they had sailed off at Dawn and come back by Day;
+    // art-audit wave 1, and the owner, 2026-10-01: no white masthead light under sail)
+    let yachts = '', ylit = '';
+    const yr = rng(1931);
     for (const [fx, fy, s0] of [[0.33, 0.09, 1], [0.5, 0.15, 1.3], [0.2, 0.32, 1.7], [0.68, 0.06, 0.8]]) {
       const bx = W * fx, by = y0 + (H - y0) * fy, L = Math.max(8, W * 0.014 * s0), mh = L * 1.3;
       const boat = `<path class="isl-vhull" d="M${F(bx - L / 2)} ${F(by - L * 0.1)}H${F(bx + L / 2)}L${F(bx + L * 0.36)} ${F(by)}H${F(bx - L * 0.4)}Z"/>`
         + `<path class="isl-vsail" d="M${F(bx)} ${F(by - L * 0.12)}V${F(by - mh)}L${F(bx + L * 0.42)} ${F(by - L * 0.14)}ZM${F(bx - L * 0.04)} ${F(by - mh * 0.85)}L${F(bx - L * 0.45)} ${F(by - L * 0.14)}H${F(bx - L * 0.04)}Z"/>`;
-      day += `<g opacity=".16" transform="translate(0 ${F(2 * by)}) scale(1 -1)">${boat}</g>` + boat;
+      yachts += `<g opacity=".16" transform="translate(0 ${F(2 * by)}) scale(1 -1)">${boat}</g>` + boat;
+      const sx = bx - L * 0.44, sy = by - L * 0.08;
+      ylit += halo(sx, sy, Math.max(2.5, L * 0.3), 'islvred') + dashes(streakList(sx, by + 1, by + (H - y0) * 0.25, yr, 0.03, 0.04), 's-vglow', 1, [0.04, 0.08, 0.12])
+        + `<circle class="isl-vnav-r" cx="${F(sx)}" cy="${F(sy)}" r="${F(Math.max(1, L * 0.07))}"/>`;
     }
-    s += `<g class="isl-ydet">${day}</g>`;
+    s += `<g class="isl-ydet">${day}</g>` + yachts + `<g class="isl-vwin" style="--i:1">${ylit}</g>`;
     // After dark: a few faint lights, nearest first. Antigua's shore, each with a thin column on the water.
     const lightsOn = (pts, i, w, op, last) => (pts.length
       ? `<path class="s-vlight isl-vwin${last ? ' isl-vlast' : ''}" style="--i:${i}" d="${pts.map(([px, py]) => `M${F(px)} ${F(py)}h0`).join('')}" stroke-width="${F(w)}" stroke-opacity="${op}"/>`
@@ -848,7 +858,11 @@
     if (pw < 0.4 || ph < 0.4) return '';
     let d = '', sh = '';
     for (const x of [x0 + t, x0 + t + pw + g]) { d += rect(x, y0 + t, pw, ph); sh += rect(x, y0 + t + ph * 0.55, pw, ph * 0.45); }
-    return `<g class="isl-ydet"><path class="isl-lglass" d="${d}"/><path class="isl-lglass2" d="${sh}"/></g>`;
+    // (lit, from Dawn to Night, the same frame and bar across the glow: a lit lantern had become one glowing
+    // box; art-audit wave 1, 2026-10-01, found by three judges on three pictures)
+    return `<g class="isl-ydet"><path class="isl-lglass" d="${d}"/><path class="isl-lglass2" d="${sh}"/></g>`
+      + `<g class="isl-ltlit"><path class="isl-ltbar" d="M${F(x0 + t / 2)} ${F(y0 + t / 2)}h${F(w - t)}v${F(h - t)}h${F(t - w)}Z" stroke-width="${F(t)}"/>`
+      + `<path class="isl-ltbar" d="M${F(x0 + w / 2)} ${F(y0 + t)}V${F(y0 + h - t)}" stroke-width="${F(g)}"/></g>`;
   };
   // Planes of a landform: its silhouette, the faces turned to the light, the faces in shadow, and a
   // rim of light along the crest where the afterglow catches it.
@@ -950,7 +964,9 @@
         + `M${F(x + L * 0.4)} ${F(wl + 1)}h${F(L * 0.9)}M${F(x + L * 0.55)} ${F(wl + L * 0.05)}h${F(L * 0.6)}`;
       // its lights turn with it: the masthead light on the masthead, the port sidelight on the bow. Racing
       // left, it shows the viewer its port side, so no green (owner, 2026-09-30: "an important accuracy change").
-      lights[0].push([...rotH(x - L * 0.5, wl - hh), 'r'], [...rot(mx, wl - hh - mh * 1.02), 'w']);
+      // (the port sidelight at the bow only: a white masthead light marks a yacht under engine, not one
+      // racing under sail; owner, 2026-10-01)
+      lights[0].push([...rotH(x - L * 0.5, wl - hh), 'r']);
       s += dashes(streakList(x, wl + 1, Math.min(H, wl + L * 1.2), r, 0.06, 0.05), 's-vsailglint', 1, [0.06, 0.12, 0.2]);
     };
     const racers = [[0.62, 0.635, 0.035, -4, true, false], [0.47, 0.645, 0.045, -6, false, false], [0.79, 0.655, 0.05, -5, true, false],
@@ -965,7 +981,7 @@
     // The lights, the yachts first: port red and masthead white, each with a halo.
     let yl = '';
     for (const [x, y, c] of lights[0]) yl += `<circle class="isl-vnav-${c}" cx="${F(x)}" cy="${F(y)}" r="1.3"/>`;
-    s += `<g class="isl-vwin" style="--i:0">${lights[0].map(([x, y, c]) => halo(x, y, 6, c === 'w' ? 'islvcool' : 'islvbulb')).join('')}${yl}</g>`;
+    s += `<g class="isl-vwin" style="--i:0">${lights[0].map(([x, y]) => halo(x, y, 6, 'islvred')).join('')}${yl}</g>`;
     return s;
   }
 
@@ -1047,7 +1063,8 @@
     const tmw = tw2 / 5, tm = [0, 1, 2].map((i) => gx1 - tw2 + i * (tw2 - tmw) / 2);
     for (const mx of tm) gh += `M${F(mx)} ${F(lb - th)}h${F(tmw)}v${F(-Y(0.02))}h${F(-tmw)}Z`;   // and on the turret, one on each corner
     // the broken wall stepping down the slope to the left
-    gh += `M${F(gx0 - lw * 0.32)} ${F(lb + Y(0.012))}V${F(lb - lh * 0.3)}H${F(gx0 - lw * 0.2)}V${F(lb - lh * 0.42)}H${F(gx0 - lw * 0.08)}V${F(lb - lh * 0.55)}H${F(gx0)}V${F(lb)}Z`;
+    // (its foot buried in the hill: it had stood on a sliver of sky where the slope falls away; art-audit wave 1)
+    gh += `M${F(gx0 - lw * 0.32)} ${F(lb + Y(0.03))}V${F(lb - lh * 0.3)}H${F(gx0 - lw * 0.2)}V${F(lb - lh * 0.42)}H${F(gx0 - lw * 0.08)}V${F(lb - lh * 0.55)}H${F(gx0)}V${F(lb)}Z`;
     const lookI = 4.6;   // the lookout lights after the four lanterns (lanterns.length + 0.6), its glow with it
     s += `<g class="isl-vwin isl-vlast" style="--i:${lookI};--isl-vstep:.6s">${halo(lx, lb - lh * 0.45, Y(0.24), 'islvwarm')}</g>`;
     s += `<path class="isl-vstone" d="${gh}"/>`;
@@ -1092,7 +1109,9 @@
       if (landAt.includes(i + 1)) lanterns.push([x - land * 0.5, y]);
     }
     lanterns.push([x1 - X(0.018), yB]);
-    const body = edge.concat(edge.slice().reverse().map(([ex, ey]) => [ex + X(0.02), ey + depth]));
+    // (the body's offset copy kept short of the top's end: it had stuck out under the lookout as a wedge;
+    // art-audit wave 1, 2026-10-01)
+    const body = edge.concat(edge.slice().reverse().map(([ex, ey]) => [Math.min(ex + X(0.02), x1), ey + depth]));
     // the pools of light first, so the stones sit in them
     s += lanterns.map(([lx2, ly2], i) => `<g class="isl-vwin" style="--i:${i};--isl-vstep:.6s">${pool(lx2 + X(0.02), ly2 + Y(0.01), X(0.08), Y(0.06), 0.85)}</g>`).join('');
     s += `<path class="isl-vriser" d="${poly(body)}"/>`;
@@ -1113,6 +1132,9 @@
     }
     s += `<path class="f-near" d="${cp}"/>`;
     s += shrubs(P([[0.41, 0.915], [0.49, 0.82], [0.57, 0.72], [0.76, 0.42]]).map(([ex, ey]) => [ex, ey, Y(0.036)]), r);
+    // (each lantern's light on the stone it stands on, in its own turn: its pool had been drawn under the stair,
+    // so only the grass beside it was lit; art-audit wave 1, 2026-10-01)
+    s += lanterns.map(([lx2, ly2], i) => `<g class="isl-vwin" style="--i:${i};--isl-vstep:.6s">${pool(lx2, ly2 + Y(0.006), X(0.05), Y(0.016), 0.6)}</g>`).join('');
     // 5. The lanterns: a post, a glazed lantern with its cap, a halo; the top one in the page's hue,
     //    and the last to light.
     lanterns.forEach(([lx2, ly2], i) => {
@@ -2541,13 +2563,19 @@
     s += `<path class="isl-vpshade" d="${rect(t0, tTop + Y(0.012), tw, Y(0.03))}"/>`;   // the cornice's shadow on the shaft
     s += `<path class="isl-vsill" d="M${F(tc - tw * 0.33)} ${F(tTop - Y(0.02))}H${F(tc + tw * 0.33)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     // the bell, mid-swing on its yoke across the opening, its clapper hanging to the low side
-    const yokeY = bTop + Y(0.07), ang = -22;
+    // (a smaller swing: at -22 degrees the rim crossed about 6px onto the stone beside the opening; art-audit
+    // wave 1, 2026-10-01)
+    const yokeY = bTop + Y(0.07), ang = -15;
     s += `<path class="isl-vbeam" d="M${F(tc - tw * 0.34)} ${F(yokeY)}H${F(tc + tw * 0.34)}" stroke-width="${F(Math.max(1.5, Y(0.016)))}"/>`;
     const bh2 = Y(0.16), bwid = Y(0.086);
     const bellD = `M${F(-bwid * 0.28)} ${F(Y(0.012))}C${F(-bwid * 0.3)} ${F(bh2 * 0.35)} ${F(-bwid * 0.55)} ${F(bh2 * 0.7)} ${F(-bwid)} ${F(bh2)}H${F(bwid)}C${F(bwid * 0.55)} ${F(bh2 * 0.7)} ${F(bwid * 0.3)} ${F(bh2 * 0.35)} ${F(bwid * 0.28)} ${F(Y(0.012))}Q0 ${F(-Y(0.008))} ${F(-bwid * 0.28)} ${F(Y(0.012))}Z`;
     s += `<g transform="translate(${F(tc)} ${F(yokeY)}) rotate(${ang})"><path d="M0 0V${F(Y(0.014))}" class="isl-vbeam" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`
       + `<path d="${bellD}" fill="url(#islvbrass)"/><path class="isl-vbrass2" d="M${F(-bwid * 1.02)} ${F(bh2 - Y(0.012))}H${F(bwid * 1.02)}V${F(bh2)}H${F(-bwid * 1.02)}Z"/>`
       + `<path class="isl-vbeam" d="M0 ${F(bh2 * 0.5)}L${F(-bwid * 0.35)} ${F(bh2 + Y(0.02))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><circle class="isl-vbrass2" cx="${F(-bwid * 0.36)}" cy="${F(bh2 + Y(0.024))}" r="${F(Y(0.012))}"/></g>`;
+    // the bell's rope, from its headstock down through the belfry floor to whoever rings it, on the side the
+    // bell has swung away from
+    // (art-audit wave 1: the bell swung with nothing to ring it)
+    s += `<path class="isl-brope" d="M${F(tc - Y(0.04))} ${F(yokeY + Y(0.004))}Q${F(tc - Y(0.075))} ${F((yokeY + tTop) / 2)} ${F(tc - Y(0.085))} ${F(tTop - Y(0.02))}" stroke-width="${F(Math.max(0.9, Y(0.007)))}"/>`;
     // the pyramid roof and its vane
     s += `<path class="isl-troof" d="${polyD([[b0 - Y(0.03), bTop - Y(0.018)], [tc, roofTop + Y(0.04)], [b1 + Y(0.03), bTop - Y(0.018)]])}"/>`
       // (the vane whole inside the picture, on a short rod above the apex: it had been drawn above the frame)
@@ -2556,7 +2584,8 @@
     // 5. The rings of sound, spreading from the bell to the left, each in turn; birds lift off the roof.
     const scx = tc - Y(0.02), scy = yokeY + bh2 * 0.6;
     for (let k = 0; k < 3; k++) {
-      const rr = Y(0.17 + k * 0.12), a0 = Math.PI * (0.76 + k * 0.01), a1 = Math.PI * 1.26;
+      // (from just outside the belfry: the inner ring had lain wholly on the pier beside the opening)
+      const rr = Y(0.26 + k * 0.11), a0 = Math.PI * (0.8 + k * 0.01), a1 = Math.PI * 1.22;
       s += `<path class="isl-bsound isl-vwin" style="--i:${1 + k}" d="M${F(scx + Math.cos(a0) * rr)} ${F(scy + Math.sin(a0) * rr)}A${F(rr)} ${F(rr)} 0 0 1 ${F(scx + Math.cos(a1) * rr)} ${F(scy + Math.sin(a1) * rr)}" stroke-width="${F(Math.max(1.2, Y(0.014) * (1 - k * 0.2)))}" stroke-opacity="${(0.7 - k * 0.18).toFixed(2)}"/>`;
     }
     let birds = '';
@@ -2564,7 +2593,14 @@
       const cx = X(bx), cy = Y(by), w = Y(sz);
       birds += `M${F(cx - w)} ${F(cy - w * 0.2)}Q${F(cx - w * 0.5)} ${F(cy - w * 0.6)} ${F(cx)} ${F(cy)}Q${F(cx + w * 0.5)} ${F(cy - w * 0.6)} ${F(cx + w)} ${F(cy - w * 0.2)}`;
     }
-    s += `<path class="isl-bbird" d="${birds}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`;
+    // (not at Night: birds roost after dark; art-audit wave 1)
+    s += `<g class="isl-noct"><path class="isl-bbird" d="${birds}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`;
+    // the tower's door, arched, in the middle of its base (art-audit wave 1: it had no way in)
+    {
+      const dw = Y(0.075), dT = ground - Y(0.03) - Y(0.15);
+      s += `<path class="isl-vstone" d="${arch(tc, dT - Y(0.012), dw + Y(0.024), ground - Y(0.03))}"/><path class="isl-tdoor" d="${arch(tc, dT, dw, ground - Y(0.03))}"/>`
+        + `<path class="isl-vcourse" d="M${F(tc)} ${F(dT + dw * 0.45)}V${F(ground - Y(0.03))}" stroke-width=".7"/>`;
+    }
     // 6. The notice board at the tower's foot: two posts, a board in a frame under a little roof, its
     //    pinned notes; beside it the lantern on its post, in the page's hue, last.
     const nb0 = X(0.61), nb1 = nb0 + Y(0.4), nbT = Y(0.55), nbB = Y(0.78);
@@ -2585,6 +2621,24 @@
       + `<path class="isl-vlamp isl-ltframe" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.03))}V${F(ly - Y(0.09))}H${F(lx + Y(0.014))}V${F(ly - Y(0.03))}Z"/></g>`
       + panes(lx - Y(0.014), ly - Y(0.09), Y(0.028), Y(0.06));
     s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ground)}V${F(ly - Y(0.03))}H${F(lx + 1)}V${F(ground)}Z"/><path class="isl-vpost isl-lcap" d="M${F(lx - Y(0.022))} ${F(ly - Y(0.09))}L${F(lx)} ${F(ly - Y(0.115))}L${F(lx + Y(0.022))} ${F(ly - Y(0.09))}Z"/>`;
+    // Someone reading the notices, seen from behind in front of the board's left end, and a slatted bench on
+    // iron ends in the lantern's pool beside it; the lantern's warm light on the reader's near side and the
+    // bench's top edges from Dawn to Night (art-audit wave 1, 2026-10-01: the square had no one in it).
+    {
+      const fx = nb0 + Y(0.075), fb = ground + Y(0.035), fh = Y(0.28), hr = fh * 0.075, sw = fh * 0.13;
+      const ft = fb - fh, hy = ft + hr;
+      let fig = `<path fill="#2f3a4a" d="M${F(fx - sw * 0.85)} ${F(fb)}L${F(fx - sw * 0.75)} ${F(ft + fh * 0.5)}H${F(fx + sw * 0.75)}L${F(fx + sw * 0.85)} ${F(fb)}H${F(fx + sw * 0.1)}L${F(fx)} ${F(ft + fh * 0.62)}L${F(fx - sw * 0.1)} ${F(fb)}Z"/>`;   // trousers
+      fig += `<path fill="#c7d6e3" d="M${F(fx - sw * 0.82)} ${F(ft + fh * 0.53)}L${F(fx - sw)} ${F(ft + fh * 0.22)}Q${F(fx - sw)} ${F(ft + fh * 0.16)} ${F(fx - sw * 0.6)} ${F(ft + fh * 0.15)}H${F(fx + sw * 0.6)}Q${F(fx + sw)} ${F(ft + fh * 0.16)} ${F(fx + sw)} ${F(ft + fh * 0.22)}L${F(fx + sw * 0.82)} ${F(ft + fh * 0.53)}Z"/>`;   // shirt
+      fig += `<path fill="#c7d6e3" d="${rect(fx - sw * 1.05, ft + fh * 0.2, sw * 0.24, fh * 0.3)}${rect(fx + sw * 0.81, ft + fh * 0.2, sw * 0.24, fh * 0.3)}"/>`;   // sleeves
+      fig += `<path fill="#6b4630" d="${rect(fx - sw * 1.02, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx + sw * 0.84, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx - hr * 0.45, hy + hr * 0.6, hr * 0.9, fh * 0.07)}"/>`;   // hands, neck
+      fig += `<circle fill="#1d1916" cx="${F(fx)}" cy="${F(hy)}" r="${F(hr)}"/>`;   // the head, from behind
+      fig += `<path fill="#3a2e24" d="${rect(fx - sw * 0.85, fb - fh * 0.02, sw * 0.7, fh * 0.03)}${rect(fx + sw * 0.15, fb - fh * 0.02, sw * 0.7, fh * 0.03)}"/>`;   // shoes
+      const b0 = lx - Y(0.21), b1 = lx - Y(0.05), sy = ground + Y(0.005), bh = Y(0.07);
+      let bench = `<path class="isl-vpost" d="${rect(b0 + Y(0.008), sy - bh * 0.95, Y(0.008), bh * 0.95 + Y(0.02))}${rect(b1 - Y(0.016), sy - bh * 0.95, Y(0.008), bh * 0.95 + Y(0.02))}"/>`;   // iron ends
+      bench += `<path class="isl-bbench" d="${rect(b0, sy - Y(0.004), b1 - b0, Y(0.012))}${rect(b0, sy - bh * 0.62, b1 - b0, Y(0.011))}${rect(b0, sy - bh * 0.9, b1 - b0, Y(0.011))}"/>`;   // seat and back slats
+      s += `<g class="isl-bfig">${bench}${fig}</g>`;
+      s += `<g class="isl-vlamps isl-vwin" style="--i:4"><path class="isl-mlit" d="M${F(fx - sw * 1.04)} ${F(ft + fh * 0.21)}V${F(ft + fh * 0.5)}M${F(fx - hr * 0.95)} ${F(hy - hr * 0.3)}A${F(hr)} ${F(hr)} 0 0 0 ${F(fx - hr * 0.7)} ${F(hy + hr * 0.7)}M${F(b0)} ${F(sy - Y(0.004))}H${F(b1)}M${F(b0)} ${F(sy - bh * 0.9)}H${F(b1)}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/></g>`;
+    }
     return `<g style="--isl-vstep:.4s">${s}</g>`;
   }
 
@@ -2820,29 +2874,118 @@
     s += `<path class="isl-lsidew" d="${heads}"/>`;
     s += `<path class="isl-lframe" d="${fr}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-lframe" d="${mul}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
     s += `<path class="isl-tdrop" d="${sillSh}"/><path class="isl-lsill" d="${sills}"/>`;
+    // The chalkboard under the first two windows (the left of the wall had been bare): a slate in an
+    // aluminium frame, a wordless sketch of the circulation (the heart, the lungs' small loop and the body's
+    // large one, arrows), a half-wiped smudge, and in its tray two sticks of chalk and a duster. And a wall
+    // clock between those windows keeping Antigua's time, as the campus tower's does (clockAngles(),
+    // turned each minute by tickClocks()). (art-audit wave 1, 2026-10-01)
+    {
+      const b0 = wins[0] + ww * 0.1, b1 = wins[1] + ww * 0.6, bT = Y(0.37), bB = Y(0.6), bw = b1 - b0, bh = bB - bT;
+      const fx = (k) => b0 + bw * k, fy = (k) => bT + bh * k, cw = Math.max(0.9, Y(0.007));
+      let chalk = `M${F(fx(0.47))} ${F(fy(0.42))}h${F(bw * 0.06)}v${F(bh * 0.2)}h${F(-bw * 0.06)}Z`;   // the heart, a box
+      chalk += `M${F(fx(0.47))} ${F(fy(0.47))}C${F(fx(0.36))} ${F(fy(0.47))} ${F(fx(0.22))} ${F(fy(0.4))} ${F(fx(0.22))} ${F(fy(0.52))}C${F(fx(0.22))} ${F(fy(0.64))} ${F(fx(0.36))} ${F(fy(0.58))} ${F(fx(0.47))} ${F(fy(0.58))}`;   // the lungs' loop
+      chalk += `M${F(fx(0.53))} ${F(fy(0.47))}C${F(fx(0.7))} ${F(fy(0.4))} ${F(fx(0.86))} ${F(fy(0.3))} ${F(fx(0.86))} ${F(fy(0.52))}C${F(fx(0.86))} ${F(fy(0.76))} ${F(fx(0.7))} ${F(fy(0.66))} ${F(fx(0.53))} ${F(fy(0.58))}`;   // the body's loop
+      chalk += `M${F(fx(0.27))} ${F(fy(0.4))}l${F(bw * 0.03)} ${F(bh * 0.03)}l${F(-bw * 0.03)} ${F(bh * 0.04)}M${F(fx(0.8))} ${F(fy(0.65))}l${F(-bw * 0.03)} ${F(bh * 0.03)}l${F(bw * 0.03)} ${F(bh * 0.04)}`;   // arrows
+      chalk += `M${F(fx(0.12))} ${F(fy(0.8))}h${F(bw * 0.2)}M${F(fx(0.12))} ${F(fy(0.88))}h${F(bw * 0.13)}`;   // a note, as lines
+      s += `<g class="isl-mroom"><path class="isl-lalu" d="${rect(b0 - Y(0.008), bT - Y(0.008), bw + Y(0.016), bh + Y(0.016))}"/><path class="isl-mboard" d="${rect(b0, bT, bw, bh)}"/>`
+        + `<ellipse class="isl-mchalk" cx="${F(fx(0.18))}" cy="${F(fy(0.22))}" rx="${F(bw * 0.12)}" ry="${F(bh * 0.1)}" fill-opacity=".1" stroke="none"/>`   // a half-wiped smudge
+        + `<path class="isl-mchalk" d="${chalk}" stroke-width="${F(cw)}"/>`
+        + `<path class="isl-lalu" d="${rect(b0, bB + Y(0.006), bw, Math.max(1.5, Y(0.012)))}"/>`   // the tray
+        + `<path class="isl-mchalkf" d="${rect(fx(0.3), bB + Y(0.002), bw * 0.05, Math.max(1, Y(0.006)))}${rect(fx(0.38), bB + Y(0.002), bw * 0.035, Math.max(1, Y(0.006)))}"/>`
+        + `<path class="isl-lwood2" d="${rect(fx(0.7), bB - Y(0.004), bw * 0.08, Math.max(1.5, Y(0.012)))}"/><path class="isl-mchalkf" d="${rect(fx(0.7), bB + Y(0.004), bw * 0.08, Math.max(0.8, Y(0.004)))}"/></g>`;
+      const ccx = (wins[0] + ww + wins[1]) / 2, ccy = Y(0.17), cr = Y(0.045), [ha, ma] = clockAngles();
+      const hand = (cls, deg, len, w) => `<path class="isl-vhand ${cls}" data-c="${F(ccx)} ${F(ccy)}" d="M${F(ccx)} ${F(ccy + 0.16 * cr)}V${F(ccy - len)}" transform="rotate(${F(deg)} ${F(ccx)} ${F(ccy)})" stroke-width="${F(w)}"/>`;
+      let marks = '';
+      for (let i = 0; i < 12; i++) { const a = i * Math.PI / 6, r0 = cr * (i % 3 ? 0.84 : 0.74); marks += `M${F(ccx + Math.sin(a) * r0)} ${F(ccy - Math.cos(a) * r0)}L${F(ccx + Math.sin(a) * cr * 0.92)} ${F(ccy - Math.cos(a) * cr * 0.92)}`; }
+      s += `<ellipse class="isl-tdrop" cx="${F(ccx + Y(0.004))}" cy="${F(ccy + Y(0.006))}" rx="${F(cr * 1.12)}" ry="${F(cr * 1.12)}"/>`   // its shadow on the wall
+        + `<circle class="isl-tiron" cx="${F(ccx)}" cy="${F(ccy)}" r="${F(cr * 1.12)}"/><circle class="isl-mclockf" cx="${F(ccx)}" cy="${F(ccy)}" r="${F(cr)}"/>`
+        + `<path class="isl-vmark" d="${marks}" stroke-width="${F(Math.max(0.6, cr * 0.06))}"/>`
+        + hand('isl-vhand-h', ha, cr * 0.5, Math.max(1.1, cr * 0.13)) + hand('isl-vhand-m', ma, cr * 0.78, Math.max(0.9, cr * 0.08))
+        + `<circle class="isl-vpin" cx="${F(ccx)}" cy="${F(ccy)}" r="${F(Math.max(0.7, cr * 0.09))}"/>`;
+    }
+    // The exit door near the left end of the front wall: a steel door in its frame, a narrow vision panel and
+    // a push bar, and over it the lit green sign with its running figure (no words), which stays lit at every
+    // hour as an exit sign does, its glow on the door head from Dawn to Night (art-audit wave 1; the owner,
+    // 2026-10-01: exit signs are green).
+    {
+      const e0 = X(0.02), e1 = X(0.08), eT = Y(0.27), eB = Y(0.84), ew = e1 - e0;
+      const g0 = e0 + ew * 0.16, gT = eT - Y(0.075), gw = ew * 0.68, gh = Y(0.05);
+      s += `<g class="isl-mroom"><path class="isl-lalu" d="${rect(e0 - Y(0.01), eT - Y(0.01), ew + Y(0.02), eB - eT + Y(0.01))}"/>`
+        + `<path fill="#66707a" d="${rect(e0, eT, ew, eB - eT)}"/><path fill="#8fa2b3" d="${rect(e0 + ew * 0.62, eT + Y(0.06), ew * 0.16, Y(0.16))}"/>`
+        + `<path class="isl-lalu" d="${rect(e0 + ew * 0.1, eT + Y(0.3), ew * 0.8, Math.max(1.5, Y(0.014)))}"/></g>`;
+      s += `<defs><radialGradient id="isllexitg"><stop offset="0" stop-color="#3ad07c" stop-opacity=".45"/><stop offset="1" stop-color="#3ad07c" stop-opacity="0"/></radialGradient></defs>`
+        + `<g class="isl-vlamps"><ellipse cx="${F(g0 + gw / 2)}" cy="${F(gT + gh / 2)}" rx="${F(gw * 1.3)}" ry="${F(gh * 2.2)}" fill="url(#isllexitg)"/></g>`;
+      const fx = (k) => g0 + gw * k, fy = (k) => gT + gh * k, sw = Math.max(0.8, gh * 0.09);
+      s += `<path fill="#178a4a" d="${rect(g0, gT, gw, gh)}"/>`
+        + `<path stroke="#f1fff6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="${F(sw)}" d="`
+        + `M${F(fx(0.3))} ${F(fy(0.32))}L${F(fx(0.27))} ${F(fy(0.6))}L${F(fx(0.18))} ${F(fy(0.82))}M${F(fx(0.27))} ${F(fy(0.6))}L${F(fx(0.38))} ${F(fy(0.82))}`   // body, legs
+        + `M${F(fx(0.18))} ${F(fy(0.42))}L${F(fx(0.29))} ${F(fy(0.38))}L${F(fx(0.4))} ${F(fy(0.48))}`   // arms
+        + `M${F(fx(0.52))} ${F(fy(0.2))}V${F(fy(0.82))}H${F(fx(0.68))}V${F(fy(0.2))}Z`   // the doorway
+        + `M${F(fx(0.74))} ${F(fy(0.5))}H${F(fx(0.92))}M${F(fx(0.86))} ${F(fy(0.38))}L${F(fx(0.92))} ${F(fy(0.5))}L${F(fx(0.86))} ${F(fy(0.62))}"/>`   // the arrow
+        + `<circle fill="#f1fff6" cx="${F(fx(0.33))}" cy="${F(fy(0.2))}" r="${F(gh * 0.1)}"/>`;
+    }
     // 1. The screen at the right of the front wall, lit: the heart and its notes; the projector's beam.
     const sx0 = X(0.62), sx1 = X(0.97), sT = Y(0.08), sB = Y(0.6), scx = sx0 + (sx1 - sx0) * 0.34, scy = (sT + sB) / 2;
     // (from a projector hung from the ceiling: the beam had come from nowhere at the top edge)
     const pjx = X(0.8), pjy = Y(0.035);
-    s += `<path d="${polyD([[pjx - Y(0.015), pjy], [pjx + Y(0.015), pjy], [sx1, sT], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#islvspill)" opacity=".5"/>`;
+    // (the beam is the projector's own cool white, faint, seen in the dark hall's air; not by Day)
+    s += `<defs><linearGradient id="isllbeam" gradientUnits="userSpaceOnUse" x1="${F(pjx)}" y1="${F(pjy)}" x2="${F(pjx)}" y2="${F(sB)}"><stop offset="0" class="st-vcool" stop-opacity=".2"/><stop offset="1" class="st-vcool" stop-opacity=".04"/></linearGradient></defs>`
+      + `<path class="isl-mbeam" d="${polyD([[pjx - Y(0.015), pjy], [pjx + Y(0.015), pjy], [sx1, sT], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#isllbeam)"/>`;
     s += `<path class="isl-tiron" d="${rect(pjx - 1, -2, 2, Y(0.014) + 2)}${rect(pjx - Y(0.055), Y(0.012), Y(0.11), Y(0.028))}"/>`;
-    s += `<path class="isl-tiron" d="${rect(sx0 - Y(0.012), sT - Y(0.012), sx1 - sx0 + Y(0.024), sB - sT + Y(0.024))}"/><path class="isl-mscreen" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}"/>`;
-    const hr = Math.min((sB - sT) * 0.36, (sx1 - sx0) * 0.2);
-    const heart = `M${F(scx)} ${F(scy + hr * 0.95)}C${F(scx - hr * 1.2)} ${F(scy + hr * 0.2)} ${F(scx - hr * 1.1)} ${F(scy - hr * 0.7)} ${F(scx - hr * 0.35)} ${F(scy - hr * 0.62)}C${F(scx - hr * 0.1)} ${F(scy - hr * 0.6)} ${F(scx)} ${F(scy - hr * 0.4)} ${F(scx)} ${F(scy - hr * 0.3)}C${F(scx + hr * 0.1)} ${F(scy - hr * 0.6)} ${F(scx + hr * 0.9)} ${F(scy - hr * 0.8)} ${F(scx + hr * 0.95)} ${F(scy - hr * 0.1)}C${F(scx + hr * 0.95)} ${F(scy + hr * 0.4)} ${F(scx + hr * 0.4)} ${F(scy + hr * 0.7)} ${F(scx)} ${F(scy + hr * 0.95)}Z`;
-    const vessels = `M${F(scx - hr * 0.15)} ${F(scy - hr * 0.45)}C${F(scx - hr * 0.2)} ${F(scy - hr * 1.1)} ${F(scx + hr * 0.5)} ${F(scy - hr * 1.15)} ${F(scx + hr * 0.55)} ${F(scy - hr * 0.7)}M${F(scx + hr * 0.2)} ${F(scy - hr * 0.95)}V${F(scy - hr * 1.2)}M${F(scx + hr * 0.38)} ${F(scy - hr * 1.02)}L${F(scx + hr * 0.45)} ${F(scy - hr * 1.25)}M${F(scx - hr * 0.45)} ${F(scy - hr * 0.55)}L${F(scx - hr * 0.6)} ${F(scy - hr * 0.95)}`;
-    const septum = `M${F(scx - hr * 0.05)} ${F(scy - hr * 0.25)}Q${F(scx + hr * 0.1)} ${F(scy + hr * 0.3)} ${F(scx - hr * 0.02)} ${F(scy + hr * 0.8)}M${F(scx - hr * 0.8)} ${F(scy - hr * 0.1)}Q${F(scx - hr * 0.2)} ${F(scy)} ${F(scx + hr * 0.85)} ${F(scy - hr * 0.2)}`;
-    s += `<g class="isl-vwin isl-vlast" style="--i:3"><path class="isl-mheart" d="${heart}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${vessels}${septum}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/></g>`;
+    s += `<path class="isl-tiron" d="${rect(sx0 - Y(0.012), sT - Y(0.012), sx1 - sx0 + Y(0.024), sB - sT + Y(0.024))}"/><path class="isl-mscreen" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}"/>`
+      + `<defs><radialGradient id="isllscrv" cx=".5" cy=".45" r=".75"><stop offset=".35" stop-color="#0b1a2b" stop-opacity="0"/><stop offset="1" stop-color="#0b1a2b" stop-opacity=".24"/></radialGradient></defs>`
+      + `<path class="isl-mscrv" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}" fill="url(#isllscrv)"/>`;   // its falloff (first audit)
+    // The heart as an anatomy slide shows it, from the front (first audit, 2026-10-01: it had read as a
+    // Valentine tied with string): the right atrium bulging at the viewer's left, the apex down and to the
+    // right, the superior vena cava coming down into the atrium, the aorta rising and arching to the right
+    // with its three branches, the pulmonary trunk in front of it running up to the right, and the groove
+    // between the ventricles running down to the apex; leader lines to the notes. (k: the heart's unit)
+    const k = Math.min((sB - sT) * 0.36, (sx1 - sx0) * 0.2), hcy = scy + k * 0.27;
+    const P = (x, y) => `${F(scx + x * k)} ${F(hcy + y * k)}`;
+    const heart = `M${P(-0.52, -0.42)}C${P(-0.85, -0.3)} ${P(-0.9, 0.15)} ${P(-0.62, 0.38)}C${P(-0.3, 0.62)} ${P(0.25, 0.86)} ${P(0.55, 0.92)}`
+      + `C${P(0.82, 0.7)} ${P(0.95, 0.2)} ${P(0.82, -0.12)}C${P(0.72, -0.38)} ${P(0.5, -0.48)} ${P(0.3, -0.44)}C${P(0.05, -0.5)} ${P(-0.3, -0.5)} ${P(-0.52, -0.42)}Z`;
+    const vessels = `M${P(-0.62, -0.4)}V${F(hcy - 0.98 * k)}M${P(-0.42, -0.44)}V${F(hcy - 0.98 * k)}`   // the superior vena cava
+      + `M${P(-0.28, -0.46)}V${F(hcy - 0.92 * k)}C${P(-0.28, -1.34)} ${P(0.52, -1.34)} ${P(0.52, -0.86)}`   // the aorta: ascending, the arch
+      + `M${P(-0.05, -0.46)}V${F(hcy - 0.86 * k)}C${P(-0.05, -1.04)} ${P(0.3, -1.04)} ${P(0.3, -0.82)}`
+      + `M${P(-0.08, -1.13)}V${F(hcy - 1.42 * k)}M${P(0.1, -1.18)}V${F(hcy - 1.46 * k)}M${P(0.28, -1.14)}L${P(0.34, -1.4)}`   // its three branches
+      + `M${P(0.02, -0.44)}C${P(0.04, -0.7)} ${P(0.16, -0.82)} ${P(0.32, -0.86)}L${P(0.72, -0.88)}`   // the pulmonary trunk, in front
+      + `M${P(0.26, -0.44)}C${P(0.31, -0.6)} ${P(0.43, -0.7)} ${P(0.58, -0.72)}L${P(0.72, -0.74)}`
+      + `M${P(0.42, -0.42)}Q${P(0.6, -0.5)} ${P(0.68, -0.36)}`;   // the left auricle
+    const septum = `M${P(0.22, -0.4)}C${P(0.3, 0)} ${P(0.38, 0.45)} ${P(0.52, 0.86)}`   // the groove between the ventricles
+      + `M${P(-0.5, -0.3)}C${P(-0.3, -0.16)} ${P(-0.02, -0.2)} ${P(0.18, -0.38)}`;   // and between atrium and ventricle
+    s += `<g class="isl-vwin isl-vlast" style="--i:3"><path class="isl-mheart" d="${heart}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${vessels}${septum}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`;
     let notes = '';
-    for (let i = 0; i < 4; i++) notes += `M${F(sx0 + (sx1 - sx0) * 0.66)} ${F(sT + (sB - sT) * (0.28 + i * 0.14))}h${F((sx1 - sx0) * (0.26 - (i % 2) * 0.08))}`;
+    const nx = sx0 + (sx1 - sx0) * 0.66, ny = (i) => sT + (sB - sT) * (0.28 + i * 0.14);
+    for (let i = 0; i < 4; i++) notes += `M${F(nx)} ${F(ny(i))}h${F((sx1 - sx0) * (0.26 - (i % 2) * 0.08))}`;
+    // (two leader lines, from the aorta's arch and the left ventricle to the first two notes)
+    notes += `M${P(0.52, -1.05)}L${F(nx - Y(0.012))} ${F(ny(0))}M${P(0.9, 0.2)}L${F(nx - Y(0.012))} ${F(ny(1))}`;
     s += `<path class="isl-mnote" d="${notes}" stroke-width="${F(Math.max(1, Y(0.012)))}"/>`;
     // 2. The lectern with its lamp and a laptop; the skeleton on its stand beside it.
     const lx = X(0.44), lT = Y(0.56), lB = Y(0.84);
+    // The lecturer behind the lectern, facing the hall in a white coat over a pale shirt, the laptop in front
+    // of their chest; the lectern's lamp, at their left, lights that side from Dawn to Night. (art-audit wave
+    // 1, 2026-10-01: the lamp had had nothing to light)
+    {
+      const px = lx - Y(0.015), hy = Y(0.39), hr = Y(0.031), sh = Y(0.45);
+      const coat = `M${F(px - Y(0.08))} ${F(lT + 1)}L${F(px - Y(0.078))} ${F(sh + Y(0.02))}Q${F(px - Y(0.074))} ${F(sh)} ${F(px - Y(0.04))} ${F(sh - Y(0.006))}H${F(px + Y(0.04))}Q${F(px + Y(0.074))} ${F(sh)} ${F(px + Y(0.078))} ${F(sh + Y(0.02))}L${F(px + Y(0.08))} ${F(lT + 1)}Z`;
+      s += `<g class="isl-mroom"><path fill="#efeee9" d="${coat}"/>`
+        + `<path fill="#a9bdd3" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}Z"/>`   // the shirt in the coat's V
+        + `<path stroke="#bdbab2" fill="none" stroke-width="${F(Math.max(0.7, Y(0.005)))}" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}M${F(px - Y(0.03))} ${F(sh + Y(0.02))}L${F(px - Y(0.012))} ${F(sh + Y(0.07))}M${F(px + Y(0.03))} ${F(sh + Y(0.02))}L${F(px + Y(0.012))} ${F(sh + Y(0.07))}"/>`   // the lapels
+        + `<path fill="#7a4b30" d="${rect(px - Y(0.012), hy + hr * 0.6, Y(0.024), sh - hy - hr * 0.5)}"/><circle fill="#7a4b30" cx="${F(px)}" cy="${F(hy)}" r="${F(hr)}"/>`   // neck and face
+        + `<path fill="#1b1715" d="M${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}A${F(hr * 1.02)} ${F(hr * 1.06)} 0 0 1 ${F(px + hr * 1.02)} ${F(hy + hr * 0.1)}Q${F(px + hr * 0.5)} ${F(hy - hr * 0.45)} ${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}Z"/></g>`;   // the hair
+      s += `<g class="isl-vlamps isl-vwin" style="--i:1"><path class="isl-mlit" d="M${F(px + hr * 0.75)} ${F(hy - hr * 0.55)}A${F(hr)} ${F(hr)} 0 0 1 ${F(px + hr * 0.85)} ${F(hy + hr * 0.5)}M${F(px + Y(0.062))} ${F(sh - Y(0.003))}Q${F(px + Y(0.077))} ${F(sh + Y(0.01))} ${F(px + Y(0.079))} ${F(lT)}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/></g>`;
+    }
     s += `<path class="isl-lwood" d="${polyD([[lx - Y(0.1), lT], [lx + Y(0.1), lT], [lx + Y(0.08), lB], [lx - Y(0.08), lB]])}"/><path class="isl-lwood2" d="${rect(lx - Y(0.12), lT - Y(0.02), Y(0.24), Y(0.025))}"/>`
+      + `<path class="isl-lwood2" fill-opacity=".55" d="${polyD([[lx - Y(0.07), lT + Y(0.03)], [lx + Y(0.07), lT + Y(0.03)], [lx + Y(0.058), lB - Y(0.03)], [lx - Y(0.058), lB - Y(0.03)]])}"/>`   // its front panel
+      + `<path class="isl-tgrain" d="M${F(lx - Y(0.04))} ${F(lT + Y(0.05))}L${F(lx - Y(0.034))} ${F(lB - Y(0.05))}M${F(lx)} ${F(lT + Y(0.05))}V${F(lB - Y(0.05))}M${F(lx + Y(0.04))} ${F(lT + Y(0.05))}L${F(lx + Y(0.034))} ${F(lB - Y(0.05))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
       + `<path class="isl-llap" d="${polyD([[lx - Y(0.07), lT - Y(0.02)], [lx + Y(0.02), lT - Y(0.02)], [lx + Y(0.04), lT - Y(0.1)], [lx - Y(0.05), lT - Y(0.1)]])}"/>`;
     s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx + Y(0.07), lT - Y(0.07), Y(0.14), 'islvbulb')}</g>`
-      + `<path class="isl-tarm" d="M${F(lx + Y(0.07))} ${F(lT - Y(0.02))}Q${F(lx + Y(0.1))} ${F(lT - Y(0.1))} ${F(lx + Y(0.06))} ${F(lT - Y(0.08))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><path class="isl-tshade" d="${rect(lx + Y(0.03), lT - Y(0.09), Y(0.06), Y(0.02))}"/>`;
+      + `<path class="isl-tarm" d="M${F(lx + Y(0.07))} ${F(lT - Y(0.02))}Q${F(lx + Y(0.1))} ${F(lT - Y(0.1))} ${F(lx + Y(0.06))} ${F(lT - Y(0.08))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><path class="isl-tshade" d="${rect(lx + Y(0.03), lT - Y(0.09), Y(0.06), Y(0.02))}"/>`
+      + `<g class="isl-vlamps isl-vwin" style="--i:1"><ellipse class="isl-tbulb" cx="${F(lx + Y(0.06))}" cy="${F(lT - Y(0.069))}" rx="${F(Y(0.026))}" ry="${F(Y(0.005))}"/>${pool(lx + Y(0.05), lT - Y(0.018), Y(0.07), Y(0.008), 0.6)}</g>`;   // its lit mouth, its pool on the top
     // the skeleton: skull and jaw, the spine, the rib cage, the pelvis, arms and legs, on a stand
-    const kx = X(0.53), top = Y(0.24), u = Y(0.05);
+    // (its skull had sat on the third window's sill and the figure was oversize: lower and smaller, its feet
+    // now behind the first row's desk rail; first audit, 2026-10-01)
+    const kx = X(0.53), top = Y(0.36), u = Y(0.043);
     let bones = `M${F(kx)} ${F(top + u * 1.4)}V${F(top + u * 5.6)}`;
     for (let i = 0; i < 5; i++) { const ry = top + u * (1.9 + i * 0.55), rw = u * (1.05 - Math.abs(i - 1.6) * 0.12); bones += `M${F(kx - rw)} ${F(ry + u * 0.25)}Q${F(kx - rw)} ${F(ry - u * 0.2)} ${F(kx)} ${F(ry)}Q${F(kx + rw)} ${F(ry - u * 0.2)} ${F(kx + rw)} ${F(ry + u * 0.25)}`; }
     bones += `M${F(kx - u * 1.1)} ${F(top + u * 1.7)}L${F(kx - u * 1.5)} ${F(top + u * 3.4)}L${F(kx - u * 1.6)} ${F(top + u * 5.0)}M${F(kx + u * 1.1)} ${F(top + u * 1.7)}L${F(kx + u * 1.45)} ${F(top + u * 3.4)}L${F(kx + u * 1.3)} ${F(top + u * 5.0)}`;
@@ -2867,7 +3010,35 @@
     for (const [yt, sz, cls] of [[0.8, 0.13, 'isl-mseat'], [0.9, 0.18, 'isl-mseat2']]) {
       let seats = '';
       for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) seats += `M${F(x)} ${F(H + 2)}V${F(Y(yt) + Y(sz) * 0.3)}Q${F(x)} ${F(Y(yt))} ${F(x + Y(sz) * 0.3)} ${F(Y(yt))}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz))} ${F(Y(yt))} ${F(x + Y(sz))} ${F(Y(yt) + Y(sz) * 0.3)}V${F(H + 2)}Z`;
-      s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/><path class="${cls}" d="${seats}"/>`;
+      // (an armrest between each pair of seats: the backs had been bare slabs; and each back's top edge caught
+      // by the screen's light at Dusk and Night, strongest nearest the screen; first audit, 2026-10-01)
+      let arms = '';
+      const rims = ['', '', ''], scrX = (sx0 + sx1) / 2;
+      // Students in the rows, seen from behind: heads and shoulders above the seat backs (one in a white coat,
+      // one lit by a laptop's cool glow from Dawn to Night), drawn behind the backs (art-audit wave 1,
+      // 2026-10-01: the hall had been an empty room of seats).
+      const who = yt < 0.85 ? [[3, '#efeee9', 'short'], [4, '#2f3d5c', 'long'], [9, '#6b2e33', 'bun'], [13, '#3d6466', 'short'], [14, '#5c5e3e', 'long']]
+        : [[2, '#3d6466', 'short'], [7, '#2f3d5c', 'bun', true]];
+      let ppl = '', glow = '';
+      for (const [i, cloth, hair, lap] of who) {
+        const z = Y(sz), cx = -z * 0.3 + i * z * 1.15 + z * 0.5, top = Y(yt), hr = z * 0.17, hy = top - z * 0.34;
+        ppl += `<path fill="${cloth}" d="M${F(cx - z * 0.44)} ${F(top + z * 0.4)}L${F(cx - z * 0.42)} ${F(top - z * 0.02)}Q${F(cx - z * 0.4)} ${F(top - z * 0.15)} ${F(cx - z * 0.14)} ${F(top - z * 0.16)}H${F(cx + z * 0.14)}Q${F(cx + z * 0.4)} ${F(top - z * 0.15)} ${F(cx + z * 0.42)} ${F(top - z * 0.02)}L${F(cx + z * 0.44)} ${F(top + z * 0.4)}Z"/>`
+          + `<path fill="#6e4a33" d="${rect(cx - hr * 0.42, hy + hr * 0.6, hr * 0.84, z * 0.12)}"/>`
+          + `<circle fill="#1d1916" cx="${F(cx)}" cy="${F(hy)}" r="${F(hr)}"/>`
+          + (hair === 'long' ? `<path fill="#1d1916" d="M${F(cx - hr)} ${F(hy)}V${F(top - z * 0.1)}H${F(cx + hr)}V${F(hy)}Z"/>` : '')
+          + (hair === 'bun' ? `<circle fill="#1d1916" cx="${F(cx + hr * 0.15)}" cy="${F(hy - hr * 1.05)}" r="${F(hr * 0.45)}"/>` : '');
+        if (lap) glow += halo(cx, hy + hr, z * 0.55, 'islvcool');
+        const near = 1 - Math.min(1, Math.abs(cx - (sx0 + sx1) / 2) / (W * 0.75));
+        rims[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(cx - z * 0.38)} ${F(top - z * 0.06)}Q${F(cx - z * 0.36)} ${F(top - z * 0.15)} ${F(cx - z * 0.12)} ${F(top - z * 0.155)}H${F(cx + z * 0.12)}Q${F(cx + z * 0.36)} ${F(top - z * 0.15)} ${F(cx + z * 0.38)} ${F(top - z * 0.06)}`;
+      }
+      for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) {
+        const ax = x + Y(sz) * 1.075;
+        arms += rect(ax - Y(sz) * 0.035, Y(yt) + Y(sz) * 0.42, Y(sz) * 0.07, H + 2 - Y(yt) - Y(sz) * 0.42) + rect(ax - Y(sz) * 0.07, Y(yt) + Y(sz) * 0.4, Y(sz) * 0.14, Y(sz) * 0.05);
+        const near = 1 - Math.min(1, Math.abs(x + Y(sz) * 0.5 - scrX) / (W * 0.75));
+        rims[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.22)}Q${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.3)} ${F(Y(yt) + Y(sz) * 0.02)}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.22)}`;
+      }
+      s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/><g class="isl-vlamps">${glow}</g><g class="isl-mroom">${ppl}</g><path class="${cls}" d="${seats}"/><path class="isl-lwood2" d="${arms}"/>`
+        + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('');
     }
     return `<g style="--isl-vstep:.5s">${s}</g>`;
   }
@@ -3193,9 +3364,10 @@
     s += `<path class="isl-vcourse" d="${pav}" stroke-width=".7" stroke-opacity=".5"/>`;
     // 3. The building: two storeys of stone at the right, its ground floor rusticated and finer courses
     //    above, quoins up the exposed corner, a string course, the parapet's coping catching the last
-    //    light, the side of the building in shade at its left end.
+    //    light. Seen straight on, it shows no side: its quoins make the corner (art-audit wave 1, 2026-10-01: a
+    //    shaded strip of side had shown at its left end, against the ruling for buildings seen straight on).
     const b0 = X(0.4), bTop = Y(0.14), mid = Y(0.4), land = street - Y(0.09);
-    s += `<path d="${rect(b0, bTop, W - b0 + 2, street - bTop + 1)}" fill="url(#islvfacade)"/><path class="isl-vpshade" d="${rect(b0, bTop, Y(0.035), street - bTop + 1)}"/>`;
+    s += `<path d="${rect(b0, bTop, W - b0 + 2, street - bTop + 1)}" fill="url(#islvfacade)"/>`;
     let rust = '', fine = '';
     for (let y = mid + Y(0.05); y < street - Y(0.01); y += Y(0.05)) rust += `M${F(b0 + Y(0.035))} ${F(y)}H${F(W + 2)}`;
     for (let y = bTop + Y(0.06); y < mid - Y(0.01); y += Y(0.035)) fine += `M${F(b0 + Y(0.035))} ${F(y)}H${F(W + 2)}`;
@@ -3205,9 +3377,6 @@
     s += `<path class="isl-vstone" d="${quoins}"/>`
       + `<path class="isl-vstone" d="${rect(b0 - Y(0.012), bTop - Y(0.03), W - b0 + 14, Y(0.03))}${rect(b0, mid - Y(0.008), W - b0 + 2, Y(0.018))}"/>`
       + `<path class="isl-vpshade" d="${rect(b0, bTop, W - b0 + 2, Y(0.02))}"/>`
-      // (the side face's shade carried up through the coping, which turns at its own corner, and the string
-      // course, as on the Court House: both had crossed the shaded side face in light)
-      + `<path class="isl-vpshade" d="${rect(b0 - Y(0.012), bTop - Y(0.03), Y(0.035), Y(0.03))}${rect(b0, mid - Y(0.008), Y(0.035), Y(0.018))}"/>`
       + `<path class="s-rim" d="M${F(b0 - Y(0.012))} ${F(bTop - Y(0.03) + 0.5)}H${F(W + 2)}" stroke-width="1.2" stroke-opacity=".45"/>`;
     // the door's bay: the entrance at the middle of the landing, which runs from lx0 to lx1; the windows
     // in bays measured out from the door, so one stands centred over it; on the ground floor tall windows
@@ -3652,6 +3821,7 @@
       + '<radialGradient id="islvlamp"><stop offset="0" class="st-k" stop-opacity=".6"/><stop offset=".5" class="st-k" stop-opacity=".18"/><stop offset="1" class="st-k" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
       // (a boat's light: its cool halo and its reflection, as the warm ones above; the second light)
+      + '<radialGradient id="islvred"><stop offset="0" class="st-vred" stop-opacity=".45"/><stop offset=".5" class="st-vred" stop-opacity=".12"/><stop offset="1" class="st-vred" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvcool"><stop offset="0" class="st-vcool" stop-opacity=".5"/><stop offset=".5" class="st-vcool" stop-opacity=".14"/><stop offset="1" class="st-vcool" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvcoolrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vcool" stop-opacity=".55"/><stop offset="1" class="st-vcool" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvmist"><stop offset="0" class="st-haze" stop-opacity=".5"/><stop offset=".6" class="st-haze" stop-opacity=".16"/><stop offset="1" class="st-haze" stop-opacity="0"/></radialGradient>'
@@ -4024,8 +4194,11 @@
             if (e.target.classList.contains('isl-vlast')) card.classList.replace('isl-vrun', 'isl-vstill');
           });
         }
-      } else {
-        card.classList.remove('isl-vrun');
+      } else if (!card.classList.contains('isl-vrun')) {
+        // A redraw after the pass has ended (or under reduced motion) shows the finished frame. One that comes
+        // while the pass is still running (the web font arriving re-measures the picture beside text that
+        // grew: This Week and About lost their pass to it; first audit, 2026-10-01) leaves it running: the
+        // redrawn picture's elements are new, so its pass starts again on them.
         card.classList.add('isl-vstill');
       }
     };
