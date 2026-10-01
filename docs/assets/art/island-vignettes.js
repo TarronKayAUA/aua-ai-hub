@@ -770,9 +770,10 @@
       day += `<path class="isl-vshallow" d="${shoreD}" transform="translate(0 ${F(Math.max(1.2, ppd * 0.22))})" stroke-width="${F(Math.max(1.8, ppd * 0.36))}"/>`
         + `<path class="isl-vsurf" d="${shoreD}" stroke-width="${F(Math.max(1, ppd * 0.13))}"/>`;
     }
-    // (the yachts keep clear of the islands, and each has its reflection; drawn in every version, as objects
-    // are, with a small cool white masthead light and its column on the water after dark: they had sailed
-    // off at Dawn and come back by Day, and empty seas at night lacked the cool note; art-audit wave 1)
+    // (the yachts keep clear of the islands, and each has its reflection; drawn in every version, with the
+    // red port sidelight a yacht under sail shows, at the bow (their jibs point left, so we see their port
+    // side), and its faint column on the water after dark: they had sailed off at Dawn and come back by Day;
+    // art-audit wave 1, and the owner, 2026-10-01: no white masthead light under sail)
     let yachts = '', ylit = '';
     const yr = rng(1931);
     for (const [fx, fy, s0] of [[0.33, 0.09, 1], [0.5, 0.15, 1.3], [0.2, 0.32, 1.7], [0.68, 0.06, 0.8]]) {
@@ -780,8 +781,9 @@
       const boat = `<path class="isl-vhull" d="M${F(bx - L / 2)} ${F(by - L * 0.1)}H${F(bx + L / 2)}L${F(bx + L * 0.36)} ${F(by)}H${F(bx - L * 0.4)}Z"/>`
         + `<path class="isl-vsail" d="M${F(bx)} ${F(by - L * 0.12)}V${F(by - mh)}L${F(bx + L * 0.42)} ${F(by - L * 0.14)}ZM${F(bx - L * 0.04)} ${F(by - mh * 0.85)}L${F(bx - L * 0.45)} ${F(by - L * 0.14)}H${F(bx - L * 0.04)}Z"/>`;
       yachts += `<g opacity=".16" transform="translate(0 ${F(2 * by)}) scale(1 -1)">${boat}</g>` + boat;
-      ylit += halo(bx, by - mh, Math.max(2.5, L * 0.3), 'islvcool') + dashes(streakList(bx, by + 1, by + (H - y0) * 0.3, yr, 0.03, 0.04), 's-vcoolglow', 1, [0.05, 0.1, 0.16])
-        + `<path class="s-vcool" d="M${F(bx)} ${F(by - mh)}h0" stroke-width="${F(Math.max(1.4, L * 0.12))}"/>`;
+      const sx = bx - L * 0.44, sy = by - L * 0.08;
+      ylit += halo(sx, sy, Math.max(2.5, L * 0.3), 'islvred') + dashes(streakList(sx, by + 1, by + (H - y0) * 0.25, yr, 0.03, 0.04), 's-vglow', 1, [0.04, 0.08, 0.12])
+        + `<circle class="isl-vnav-r" cx="${F(sx)}" cy="${F(sy)}" r="${F(Math.max(1, L * 0.07))}"/>`;
     }
     s += `<g class="isl-ydet">${day}</g>` + yachts + `<g class="isl-vwin" style="--i:1">${ylit}</g>`;
     // After dark: a few faint lights, nearest first. Antigua's shore, each with a thin column on the water.
@@ -962,7 +964,9 @@
         + `M${F(x + L * 0.4)} ${F(wl + 1)}h${F(L * 0.9)}M${F(x + L * 0.55)} ${F(wl + L * 0.05)}h${F(L * 0.6)}`;
       // its lights turn with it: the masthead light on the masthead, the port sidelight on the bow. Racing
       // left, it shows the viewer its port side, so no green (owner, 2026-09-30: "an important accuracy change").
-      lights[0].push([...rotH(x - L * 0.5, wl - hh), 'r'], [...rot(mx, wl - hh - mh * 1.02), 'w']);
+      // (the port sidelight at the bow only: a white masthead light marks a yacht under engine, not one
+      // racing under sail; owner, 2026-10-01)
+      lights[0].push([...rotH(x - L * 0.5, wl - hh), 'r']);
       s += dashes(streakList(x, wl + 1, Math.min(H, wl + L * 1.2), r, 0.06, 0.05), 's-vsailglint', 1, [0.06, 0.12, 0.2]);
     };
     const racers = [[0.62, 0.635, 0.035, -4, true, false], [0.47, 0.645, 0.045, -6, false, false], [0.79, 0.655, 0.05, -5, true, false],
@@ -977,7 +981,7 @@
     // The lights, the yachts first: port red and masthead white, each with a halo.
     let yl = '';
     for (const [x, y, c] of lights[0]) yl += `<circle class="isl-vnav-${c}" cx="${F(x)}" cy="${F(y)}" r="1.3"/>`;
-    s += `<g class="isl-vwin" style="--i:0">${lights[0].map(([x, y, c]) => halo(x, y, 6, c === 'w' ? 'islvcool' : 'islvbulb')).join('')}${yl}</g>`;
+    s += `<g class="isl-vwin" style="--i:0">${lights[0].map(([x, y]) => halo(x, y, 6, 'islvred')).join('')}${yl}</g>`;
     return s;
   }
 
@@ -2899,6 +2903,27 @@
         + hand('isl-vhand-h', ha, cr * 0.5, Math.max(1.1, cr * 0.13)) + hand('isl-vhand-m', ma, cr * 0.78, Math.max(0.9, cr * 0.08))
         + `<circle class="isl-vpin" cx="${F(ccx)}" cy="${F(ccy)}" r="${F(Math.max(0.7, cr * 0.09))}"/>`;
     }
+    // The exit door near the left end of the front wall: a steel door in its frame, a narrow vision panel and
+    // a push bar, and over it the lit green sign with its running figure (no words), which stays lit at every
+    // hour as an exit sign does, its glow on the door head from Dawn to Night (art-audit wave 1; the owner,
+    // 2026-10-01: exit signs are green).
+    {
+      const e0 = X(0.02), e1 = X(0.08), eT = Y(0.27), eB = Y(0.84), ew = e1 - e0;
+      const g0 = e0 + ew * 0.16, gT = eT - Y(0.075), gw = ew * 0.68, gh = Y(0.05);
+      s += `<g class="isl-mroom"><path class="isl-lalu" d="${rect(e0 - Y(0.01), eT - Y(0.01), ew + Y(0.02), eB - eT + Y(0.01))}"/>`
+        + `<path fill="#66707a" d="${rect(e0, eT, ew, eB - eT)}"/><path fill="#8fa2b3" d="${rect(e0 + ew * 0.62, eT + Y(0.06), ew * 0.16, Y(0.16))}"/>`
+        + `<path class="isl-lalu" d="${rect(e0 + ew * 0.1, eT + Y(0.3), ew * 0.8, Math.max(1.5, Y(0.014)))}"/></g>`;
+      s += `<defs><radialGradient id="isllexitg"><stop offset="0" stop-color="#3ad07c" stop-opacity=".45"/><stop offset="1" stop-color="#3ad07c" stop-opacity="0"/></radialGradient></defs>`
+        + `<g class="isl-vlamps"><ellipse cx="${F(g0 + gw / 2)}" cy="${F(gT + gh / 2)}" rx="${F(gw * 1.3)}" ry="${F(gh * 2.2)}" fill="url(#isllexitg)"/></g>`;
+      const fx = (k) => g0 + gw * k, fy = (k) => gT + gh * k, sw = Math.max(0.8, gh * 0.09);
+      s += `<path fill="#178a4a" d="${rect(g0, gT, gw, gh)}"/>`
+        + `<path stroke="#f1fff6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="${F(sw)}" d="`
+        + `M${F(fx(0.3))} ${F(fy(0.32))}L${F(fx(0.27))} ${F(fy(0.6))}L${F(fx(0.18))} ${F(fy(0.82))}M${F(fx(0.27))} ${F(fy(0.6))}L${F(fx(0.38))} ${F(fy(0.82))}`   // body, legs
+        + `M${F(fx(0.18))} ${F(fy(0.42))}L${F(fx(0.29))} ${F(fy(0.38))}L${F(fx(0.4))} ${F(fy(0.48))}`   // arms
+        + `M${F(fx(0.52))} ${F(fy(0.2))}V${F(fy(0.82))}H${F(fx(0.68))}V${F(fy(0.2))}Z`   // the doorway
+        + `M${F(fx(0.74))} ${F(fy(0.5))}H${F(fx(0.92))}M${F(fx(0.86))} ${F(fy(0.38))}L${F(fx(0.92))} ${F(fy(0.5))}L${F(fx(0.86))} ${F(fy(0.62))}"/>`   // the arrow
+        + `<circle fill="#f1fff6" cx="${F(fx(0.33))}" cy="${F(fy(0.2))}" r="${F(gh * 0.1)}"/>`;
+    }
     // 1. The screen at the right of the front wall, lit: the heart and its notes; the projector's beam.
     const sx0 = X(0.62), sx1 = X(0.97), sT = Y(0.08), sB = Y(0.6), scx = sx0 + (sx1 - sx0) * 0.34, scy = (sT + sB) / 2;
     // (from a projector hung from the ceiling: the beam had come from nowhere at the top edge)
@@ -3796,6 +3821,7 @@
       + '<radialGradient id="islvlamp"><stop offset="0" class="st-k" stop-opacity=".6"/><stop offset=".5" class="st-k" stop-opacity=".18"/><stop offset="1" class="st-k" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset="1" class="st-g1" stop-opacity="0"/></linearGradient>'
       // (a boat's light: its cool halo and its reflection, as the warm ones above; the second light)
+      + '<radialGradient id="islvred"><stop offset="0" class="st-vred" stop-opacity=".45"/><stop offset=".5" class="st-vred" stop-opacity=".12"/><stop offset="1" class="st-vred" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvcool"><stop offset="0" class="st-vcool" stop-opacity=".5"/><stop offset=".5" class="st-vcool" stop-opacity=".14"/><stop offset="1" class="st-vcool" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvcoolrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vcool" stop-opacity=".55"/><stop offset="1" class="st-vcool" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvmist"><stop offset="0" class="st-haze" stop-opacity=".5"/><stop offset=".6" class="st-haze" stop-opacity=".16"/><stop offset="1" class="st-haze" stop-opacity="0"/></radialGradient>'

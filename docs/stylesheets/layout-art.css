@@ -915,6 +915,8 @@
 .isl .s-vcool { stroke: var(--isl-vcool); stroke-linecap: round; fill: none; }
 .isl .s-vcoolglow { stroke: var(--isl-vcool); fill: none; }
 .isl .st-vcool { stop-color: var(--isl-vcool); }
+.isl .st-vred { stop-color: #ff6b5e; }   /* a red sidelight's halo (Sailing Week, Curtain Bluff) */
+.isl[data-sky="day"] [fill*="vred"] { display: none; }
 .isl .f-vcool { fill: var(--isl-vcool); }
 .isl[data-sky="day"] .f-vcool { fill: var(--isl-pulse); }
 .isl[data-sky="day"] :is(.s-vcool, .s-vcoolglow, [fill*="vcool"]) { display: none; }
