@@ -853,6 +853,37 @@
   // By Day an unlit lantern is glass in an iron frame, not one dark shape (owner, 2026-10-01): two panes
   // of pale glass, shaded below, inset in the lantern's lit pane, which by Day turns iron (isl-ltframe)
   // and shows round them as the frame. Drawn only by Day, so the lit versions are unchanged.
+  // People (art-audit, 2026-10-01: pictures with no one in them read as empty sets). person(): a standing figure,
+  // feet at (x, fy), h tall, seen from behind or facing us (front), in the caller's colours; `reach`, a point
+  // its right hand reaches up to (a notice, a door's handle). chairUser(): a wheelchair user facing right, the
+  // rear wheel's contact point at the origin, u the height to the head's top; the caller places and turns it.
+  // Both are drawn in literal colours: the piece dims them by version (isl-bfig).
+  const person = (x, fy, h, { shirt = '#c7d6e3', legs = '#2f3a4a', skin = '#6b4630', hair = '#1d1916', front = false, reach = null } = {}) => {
+    const sw = h * 0.13, hr = h * 0.075, ft = fy - h, hy = ft + hr;
+    let o = `<path fill="${legs}" d="M${F(x - sw * 0.85)} ${F(fy)}L${F(x - sw * 0.75)} ${F(ft + h * 0.5)}H${F(x + sw * 0.75)}L${F(x + sw * 0.85)} ${F(fy)}H${F(x + sw * 0.1)}L${F(x)} ${F(ft + h * 0.62)}L${F(x - sw * 0.1)} ${F(fy)}Z"/>`;
+    o += `<path fill="${shirt}" d="M${F(x - sw * 0.82)} ${F(ft + h * 0.53)}L${F(x - sw)} ${F(ft + h * 0.22)}Q${F(x - sw)} ${F(ft + h * 0.16)} ${F(x - sw * 0.6)} ${F(ft + h * 0.15)}H${F(x + sw * 0.6)}Q${F(x + sw)} ${F(ft + h * 0.16)} ${F(x + sw)} ${F(ft + h * 0.22)}L${F(x + sw * 0.82)} ${F(ft + h * 0.53)}Z`
+      + rect(x - sw * 1.05, ft + h * 0.2, sw * 0.24, h * 0.3)
+      + (reach ? `M${F(x + sw * 0.78)} ${F(ft + h * 0.18)}L${F(x + sw * 1.02)} ${F(ft + h * 0.16)}L${F(reach[0] + sw * 0.12)} ${F(reach[1])}L${F(reach[0] - sw * 0.12)} ${F(reach[1])}Z`
+        : rect(x + sw * 0.81, ft + h * 0.2, sw * 0.24, h * 0.3)) + '"/>';
+    o += `<path fill="${skin}" d="${rect(x - sw * 1.02, ft + h * 0.48, sw * 0.18, h * 0.07)}${reach ? rect(reach[0] - sw * 0.12, reach[1] - h * 0.05, sw * 0.24, h * 0.06) : rect(x + sw * 0.84, ft + h * 0.48, sw * 0.18, h * 0.07)}${rect(x - hr * 0.45, hy + hr * 0.6, hr * 0.9, h * 0.07)}"/>`;
+    o += front ? `<circle fill="${skin}" cx="${F(x)}" cy="${F(hy)}" r="${F(hr)}"/><path fill="${hair}" d="M${F(x - hr * 1.02)} ${F(hy + hr * 0.1)}A${F(hr * 1.02)} ${F(hr * 1.06)} 0 0 1 ${F(x + hr * 1.02)} ${F(hy + hr * 0.1)}Q${F(x + hr * 0.5)} ${F(hy - hr * 0.45)} ${F(x - hr * 1.02)} ${F(hy + hr * 0.1)}Z"/>`
+      : `<circle fill="${hair}" cx="${F(x)}" cy="${F(hy)}" r="${F(hr)}"/>`;
+    o += `<path fill="#3a2e24" d="${rect(x - sw * 0.85, fy - h * 0.02, sw * 0.7, h * 0.03)}${rect(x + sw * 0.15, fy - h * 0.02, sw * 0.7, h * 0.03)}"/>`;
+    return o;
+  };
+  const chairUser = (u, { shirt = '#b8573f', legs = '#3a3f4a', skin = '#8d5a3b', hair = '#1d1916' } = {}) => {
+    const sw = Math.max(0.8, u * 0.025);
+    let o = `<circle cx="0" cy="${F(-u * 0.22)}" r="${F(u * 0.22)}" fill="none" stroke="#2a2f36" stroke-width="${F(u * 0.035)}"/>`   // the rear wheel
+      + `<circle cx="0" cy="${F(-u * 0.22)}" r="${F(u * 0.17)}" fill="none" stroke="#9aa3ad" stroke-width="${F(sw * 0.6)}"/>`   // its hand rim
+      + `<circle cx="${F(u * 0.44)}" cy="${F(-u * 0.055)}" r="${F(u * 0.055)}" fill="#2a2f36"/>`   // the front caster
+      + `<path fill="none" stroke="#7e8690" stroke-width="${F(sw)}" stroke-linejoin="round" d="M${F(-u * 0.1)} ${F(-u * 0.72)}L${F(-u * 0.04)} ${F(-u * 0.38)}H${F(u * 0.34)}L${F(u * 0.44)} ${F(-u * 0.11)}M${F(u * 0.38)} ${F(-u * 0.08)}h${F(u * 0.1)}"/>`;   // backrest, seat, footrest
+    o += `<path fill="${legs}" d="M${F(-u * 0.02)} ${F(-u * 0.38)}L${F(u * 0.34)} ${F(-u * 0.39)}L${F(u * 0.43)} ${F(-u * 0.12)}H${F(u * 0.34)}L${F(u * 0.28)} ${F(-u * 0.3)}L${F(-u * 0.02)} ${F(-u * 0.28)}Z"/>`;   // thighs and shins
+    o += `<path fill="${shirt}" d="M${F(-u * 0.06)} ${F(-u * 0.36)}L${F(-u * 0.05)} ${F(-u * 0.72)}Q${F(u * 0.03)} ${F(-u * 0.8)} ${F(u * 0.12)} ${F(-u * 0.72)}L${F(u * 0.13)} ${F(-u * 0.36)}Z"/>`;   // torso
+    o += `<path fill="none" stroke="${shirt}" stroke-width="${F(u * 0.07)}" stroke-linecap="round" d="M${F(u * 0.06)} ${F(-u * 0.68)}L${F(u * 0.1)} ${F(-u * 0.45)}L${F(u * 0.04)} ${F(-u * 0.32)}"/>`;   // the arm to the hand rim
+    o += `<circle fill="${skin}" cx="${F(u * 0.04)}" cy="${F(-u * 0.31)}" r="${F(u * 0.035)}"/>`;   // the hand
+    o += `<circle fill="${skin}" cx="${F(u * 0.05)}" cy="${F(-u * 0.88)}" r="${F(u * 0.09)}"/><path fill="${hair}" d="M${F(u * 0.05 - u * 0.092)} ${F(-u * 0.87)}A${F(u * 0.092)} ${F(u * 0.095)} 0 0 1 ${F(u * 0.05 + u * 0.092)} ${F(-u * 0.87)}Q${F(u * 0.05)} ${F(-u * 0.93)} ${F(u * 0.05 - u * 0.092)} ${F(-u * 0.87)}Z"/>`;
+    return o;
+  };
   const panes = (x0, y0, w, h) => {
     const t = Math.max(0.6, w * 0.16), g = Math.max(0.5, t * 0.7), pw = (w - 2 * t - g) / 2, ph = h - 2 * t;
     if (pw < 0.4 || ph < 0.4) return '';
@@ -929,8 +960,14 @@
     for (const [x] of lights[1]) if (r() < 0.5) s += dashes(streakList(x, y0, H, r, 0.04, 0.05).filter(([, y]) => y < y0 + Y(0.18)), 's-vglow', 1, [0.08, 0.16, 0.3]);
     // 3. The yachts, all racing left: hull heeled to leeward, a sheer line of light, a tall shaded
     //    mainsail, a jib or a spinnaker with its seams, a bow wave, and a reflection on the water.
-    let fleet = '', rf = '', sprays = '', clips = '', yi = 0;
-    const yacht = (x, wl, L, heel, spin, hued) => {
+    // (each version's fleet in its own bucket, drawn as that version's isl-lq group below)
+    let clips = '', yi = 0;
+    const B = {}, bk = (q) => (B[q] = B[q] || { fleet: '', rf: '', spD: '', spEls: '', glint: '', lights: [] });
+    // dir 1 races left (the port side toward us), -1 heads right, mirrored about x (the starboard side);
+    // q, the versions it shows in; rr, its random stream
+    const yacht = (x, wl, L, heel, spin, hued, dir = 1, q = 'y', rr = r) => {
+      const b = bk(q), m0 = dir < 0 ? `<g transform="translate(${F(2 * x)} 0) scale(-1 1)">` : '', m1 = dir < 0 ? '</g>' : '';
+      const sg = dir < 0 ? 'islvsailgm' : 'islvsailg';   // (mirrored, the sails keep their lit edge to the Sun's side)
       const mh = L * 1.45, mx = x + L * 0.08, hh = L * 0.1, id = `islvwl${yi++}`;
       // Heel shows in the rig's lean; the hull tilts by half as much, since a whole hull tipped in the
       // picture's plane reads as pitching bow-down rather than heeling (review, 2026-09-30).
@@ -951,37 +988,54 @@
       clips += `<clipPath id="${id}"><rect x="${F(x - L)}" y="${F(wl - H)}" width="${F(2 * L)}" height="${F(H)}"/></clipPath>`;
       const one = `<g clip-path="url(#${id})"><g ${gH}><path class="isl-vhull" d="${hull}"/><path class="isl-vsheer" d="${sheer}" stroke-width="${F(Math.max(0.8, L * 0.012))}"/></g></g>`
         + `<g ${g}><path class="isl-vmast" d="${mast}" stroke-width="${F(Math.max(0.7, L * 0.01))}"/>`
-        + `<path d="${main}" fill="url(#islvsailg)"/><path class="isl-vmast" d="${boom}" stroke-width="${F(Math.max(0.8, L * 0.014))}"/>`
-        + (spin ? `<path class="${hued ? 'isl-vspin-k' : spin === 2 ? 'isl-vspin2' : 'isl-vspin'}" d="${sp}"/><path class="isl-vseam" d="${seams}" stroke-width=".8"/>` : `<path d="${jib}" fill="url(#islvsailg)"/>`)
+        + `<path d="${main}" fill="url(#${sg})"/><path class="isl-vmast" d="${boom}" stroke-width="${F(Math.max(0.8, L * 0.014))}"/>`
+        + (spin ? `<path class="${hued ? 'isl-vspin-k' : spin === 2 ? 'isl-vspin2' : 'isl-vspin'}" d="${sp}"/><path class="isl-vseam" d="${seams}" stroke-width=".8"/>` : `<path d="${jib}" fill="url(#${sg})"/>`)
         + '</g>';
-      fleet += one;
+      b.fleet += m0 + one + m1;
       // its reflection, mirrored about its own waterline (the hull's cut mirrors with it)
-      rf += `<g transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${one}</g>`;
+      b.rf += `<g transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${m0}${one}${m1}</g>`;
       // the bow wave climbs from where the stem meets the water, with foam running aft along the hull
       const [p1x, p1y] = rotH(x - L * 0.5, wl - hh), [p2x, p2y] = rotH(x - L * 0.44, wl + L * 0.12);
       const sx = p1x + (p2x - p1x) * (wl - p1y) / (p2y - p1y);
-      sprays += `M${F(sx)} ${F(wl)}q${F(-L * 0.05)} ${F(-hh * 0.9)} ${F(-L * 0.15)} ${F(-hh * 0.1)}M${F(sx)} ${F(wl + 0.5)}H${F(x - L * 0.25)}`
+      const spr = `M${F(sx)} ${F(wl)}q${F(-L * 0.05)} ${F(-hh * 0.9)} ${F(-L * 0.15)} ${F(-hh * 0.1)}M${F(sx)} ${F(wl + 0.5)}H${F(x - L * 0.25)}`
         + `M${F(x + L * 0.4)} ${F(wl + 1)}h${F(L * 0.9)}M${F(x + L * 0.55)} ${F(wl + L * 0.05)}h${F(L * 0.6)}`;
+      if (dir < 0) b.spEls += `<path class="isl-vsurf" transform="translate(${F(2 * x)} 0) scale(-1 1)" d="${spr}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>`;
+      else b.spD += spr;
       // its lights turn with it: the masthead light on the masthead, the port sidelight on the bow. Racing
       // left, it shows the viewer its port side, so no green (owner, 2026-09-30: "an important accuracy change").
       // (the port sidelight at the bow only: a white masthead light marks a yacht under engine, not one
       // racing under sail; owner, 2026-10-01)
-      lights[0].push([...rotH(x - L * 0.5, wl - hh), 'r']);
-      s += dashes(streakList(x, wl + 1, Math.min(H, wl + L * 1.2), r, 0.06, 0.05), 's-vsailglint', 1, [0.06, 0.12, 0.2]);
+      { const [lx, ly] = rotH(x - L * 0.5, wl - hh); b.lights.push(dir < 0 ? [2 * x - lx, ly, 'g'] : [lx, ly, 'r']); }   // (heading right: green)
+      b.glint += dashes(streakList(x, wl + 1, Math.min(H, wl + L * 1.2), rr, 0.06, 0.05), 's-vsailglint', 1, [0.06, 0.12, 0.2]);
     };
     const racers = [[0.62, 0.635, 0.035, -4, true, false], [0.47, 0.645, 0.045, -6, false, false], [0.79, 0.655, 0.05, -5, true, false],
       [0.3, 0.685, 0.066, -7, true, true], [0.56, 0.725, 0.085, -8, false, false], [0.86, 0.77, 0.1, -6, 2, false]];
     for (const [fx, fy, fl, hd, sp, hu] of racers) yacht(X(fx), Y(fy), X(fl), hd, sp, hu);
+    // The fleet by the hour (owner, 2026-10-01: what is drawn may change between versions with a reason;
+    // art-audit wave 1, by version). Sailing Week races by day: today's six above race left by Day. At Dawn
+    // the fleet is only just out of Falmouth and English Harbour, bunched toward the coast under jibs (the
+    // coral boat already flying its spinnaker on the reach out). From Sunset it turns for home, heading right
+    // so we see the boats' starboard sides and green sidelights: all six at Sunset (the coral clear of the
+    // Sun's path), four at Dusk nearer the coast, the last two at Night. Their own random stream, so the
+    // Day picture is drawn exactly as before.
+    const r2 = rng(53);
+    for (const [fx, fy, fl, hd, sp, hu] of [[0.56, 0.63, 0.035, -3, false, false], [0.65, 0.64, 0.045, -4, false, false], [0.83, 0.65, 0.05, -4, false, false],
+      [0.45, 0.665, 0.06, -5, true, true], [0.73, 0.695, 0.08, -5, false, false], [0.92, 0.725, 0.09, -4, false, false]]) yacht(X(fx), Y(fy), X(fl), hd, sp, hu, 1, 'a', r2);
+    for (const [fx, fy, fl, hd, sp, hu] of [[0.62, 0.635, 0.035, -4, true, false], [0.47, 0.645, 0.045, -6, false, false], [0.79, 0.655, 0.05, -5, true, false],
+      [0.22, 0.685, 0.066, -7, true, true], [0.56, 0.725, 0.085, -8, false, false], [0.86, 0.77, 0.1, -6, 2, false]]) yacht(X(fx), Y(fy), X(fl), hd, sp, hu, -1, 's', r2);
+    for (const [fx, fy, fl, hd, sp, hu] of [[0.83, 0.655, 0.05, -5, true, false], [0.26, 0.685, 0.066, -7, true, true], [0.6, 0.725, 0.085, -8, false, false],
+      [0.9, 0.77, 0.1, -6, 2, false]]) yacht(X(fx), Y(fy), X(fl), hd, sp, hu, -1, 'd', r2);
+    for (const [fx, fy, fl, hd, sp, hu] of [[0.3, 0.685, 0.066, -6, true, true], [0.92, 0.77, 0.1, -5, 2, false]]) yacht(X(fx), Y(fy), X(fl), hd, sp, hu, -1, 'n', r2);
+    const QS = ['y', 'a', 's', 'd', 'n'];
     // the fleet's reflections, broken by the water
-    s += clips + `<g clip-path="url(#islsea)" opacity=".14">${rf}</g>`;
-    s += `<path class="isl-vsurf" d="${sprays}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>`;
+    s += clips + QS.filter((q) => B[q]).map((q) => `<g class="isl-lq" data-q="${q}">${B[q].glint}<g clip-path="url(#islsea)" opacity=".14">${B[q].rf}</g>`
+      + (B[q].spD ? `<path class="isl-vsurf" d="${B[q].spD}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>` : '') + B[q].spEls + '</g>').join('');
     // the shore's lights, behind the yachts (drawn after them, they had shown on the sails)
     s += `<path class="s-vlight isl-vwin isl-vlast" style="--i:3" d="${lights[1].map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('')}" stroke-width="1.4"/>`;
-    s += fleet;
-    // The lights, the yachts first: port red and masthead white, each with a halo.
-    let yl = '';
-    for (const [x, y, c] of lights[0]) yl += `<circle class="isl-vnav-${c}" cx="${F(x)}" cy="${F(y)}" r="1.3"/>`;
-    s += `<g class="isl-vwin" style="--i:0">${lights[0].map(([x, y]) => halo(x, y, 6, 'islvred')).join('')}${yl}</g>`;
+    // Each version's fleet, and its sidelights: red to port racing left, green to starboard heading home.
+    s += QS.filter((q) => B[q]).map((q) => `<g class="isl-lq" data-q="${q}">${B[q].fleet}<g class="isl-vwin" style="--i:0">`
+      + B[q].lights.map(([x, y, c]) => halo(x, y, 6, c === 'g' ? 'islvgreen' : 'islvred')).join('')
+      + B[q].lights.map(([x, y, c]) => `<circle class="isl-vnav-${c}" cx="${F(x)}" cy="${F(y)}" r="1.3"/>`).join('') + '</g></g>').join('');
     return s;
   }
 
@@ -1147,6 +1201,16 @@
       s += `<path class="isl-vpost isl-lcap" d="M${F(lx2 - lw2 * 1.5)} ${F(ly2 - ph - lh2)}L${F(lx2)} ${F(ly2 - ph - lh2 - Y(0.014))}L${F(lx2 + lw2 * 1.5)} ${F(ly2 - ph - lh2)}Z"/>`;
     });
     s += `<path class="f-pulse isl-vwin isl-vlast" style="--i:${lookI};--isl-vstep:.6s" d="${lookoutLit}"/>`;
+    // The lookout by the hour (art-audit wave 1, by version; the owner, 2026-10-01): people climb to a lookout to
+    // watch the sunset and go home after dark. One early walker at Dawn; two visitors by Day before the middle
+    // arch, one pointing out to sea; four at Sunset, dark against the lit arches; no one at Dusk or Night.
+    {
+      const ph = Y(0.052), at = (k) => gx0 + bayW * k;
+      const P2 = (x, o) => person(x, lb, ph, o);
+      s += `<g class="isl-bfig"><g class="isl-lq" data-q="a">${P2(at(0.5), { shirt: '#c9b79a' })}</g>`
+        + `<g class="isl-lq" data-q="y">${P2(at(1.3), { shirt: '#e8e2d4', reach: [at(1.3) - ph * 0.42, lb - ph * 0.86] })}${P2(at(1.68), { shirt: '#9ec0d6', legs: '#5a5148' })}</g>`
+        + `<g class="isl-lq" data-q="s">${P2(at(0.32), { shirt: '#7d4a52' })}${P2(at(0.7), { shirt: '#3d6466' })}${P2(at(1.45), { shirt: '#b8573f' })}${P2(at(2.2), { shirt: '#5c5e3e' })}</g></g>`;
+    }
     return s;
   }
 
@@ -1769,7 +1833,10 @@
       o += `<path class="s-vlight isl-vwin" style="--i:${i}" d="${lightsD(ports)}" stroke-width="${F(Math.max(1, 1.2 * u))}" stroke-opacity=".7"/>`;
       return o;
     };
-    s += ship(X(0.6), X(0.94), y0 + Y(0.035), 'isl-vship2', 2);
+    // (the far ship in port at Dawn, by Day and at Sunset, and gone from Dusk: cruise ships call at St John's for
+    // the day and sail in the late afternoon, and one staying into the evening, the near one, is ordinary; the
+    // owner, 2026-10-01, and art-audit wave 2, by version. The town and the quay drawn under her fill the berth)
+    s += `<g class="isl-lq" data-q="ays">` + ship(X(0.6), X(0.94), y0 + Y(0.035), 'isl-vship2', 2) + '</g>';
     s += ship(X(0.28), X(0.7), y0 + Y(0.12), 'isl-vship', 2);
     // a launch crossing toward the quay, its riding light and its column of light
     const lx0 = X(0.82), ly0 = Y(0.9), ll = 40 * u;
@@ -2338,6 +2405,9 @@
     //    page's hue, the light it spills down onto the bench and its pool there; the last light on.
     const lx = (bx1 + wx0) / 2, lT = Y(0.08), lB = Y(0.19), rt = Y(0.022), rb = Y(0.1);
     s += `<path class="isl-tcord" d="M${F(lx)} -2V${F(lT)}" stroke-width="${F(Math.max(1.4, Y(0.009)))}"/>`;
+    // (its bulb, unlit frosted glass in every version, the lit bulb over it from Dawn to Night: by Day the lamp
+    // had had no glass; art-audit wave 2)
+    s += `<ellipse class="isl-lglass" cx="${F(lx)}" cy="${F(lB + Y(0.008))}" rx="${F(rb * 0.45)}" ry="${F(Y(0.018))}"/>`;
     s += `<g class="isl-vlamps isl-vwin isl-vlast" style="--i:1">`
       + `<path d="${polyD([[lx - rb * 0.9, lB], [lx + rb * 0.9, lB], [lx + rb * 2.6, tTop], [lx - rb * 2.6, tTop]])}" fill="url(#islvspill)"/>`
       + pool(lx, tTop + Y(0.012), rb * 3.2, Y(0.03), 0.85) + halo(lx, lB, rb * 2.8, 'islvlamp')
@@ -2569,13 +2639,19 @@
     s += `<path class="isl-vbeam" d="M${F(tc - tw * 0.34)} ${F(yokeY)}H${F(tc + tw * 0.34)}" stroke-width="${F(Math.max(1.5, Y(0.016)))}"/>`;
     const bh2 = Y(0.16), bwid = Y(0.086);
     const bellD = `M${F(-bwid * 0.28)} ${F(Y(0.012))}C${F(-bwid * 0.3)} ${F(bh2 * 0.35)} ${F(-bwid * 0.55)} ${F(bh2 * 0.7)} ${F(-bwid)} ${F(bh2)}H${F(bwid)}C${F(bwid * 0.55)} ${F(bh2 * 0.7)} ${F(bwid * 0.3)} ${F(bh2 * 0.35)} ${F(bwid * 0.28)} ${F(Y(0.012))}Q0 ${F(-Y(0.008))} ${F(-bwid * 0.28)} ${F(Y(0.012))}Z`;
-    s += `<g transform="translate(${F(tc)} ${F(yokeY)}) rotate(${ang})"><path d="M0 0V${F(Y(0.014))}" class="isl-vbeam" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`
+    // (the bell rings at Dawn, by Day and at Sunset, swung on its yoke, and hangs at rest at Dusk and Night, its
+    // clapper down and its rope straight: bells are rung at set hours of the day, never in the night; art-audit
+    // wave 1, by version)
+    const bellG = (a, cl) => `<g transform="translate(${F(tc)} ${F(yokeY)}) rotate(${a})"><path d="M0 0V${F(Y(0.014))}" class="isl-vbeam" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`
       + `<path d="${bellD}" fill="url(#islvbrass)"/><path class="isl-vbrass2" d="M${F(-bwid * 1.02)} ${F(bh2 - Y(0.012))}H${F(bwid * 1.02)}V${F(bh2)}H${F(-bwid * 1.02)}Z"/>`
-      + `<path class="isl-vbeam" d="M0 ${F(bh2 * 0.5)}L${F(-bwid * 0.35)} ${F(bh2 + Y(0.02))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><circle class="isl-vbrass2" cx="${F(-bwid * 0.36)}" cy="${F(bh2 + Y(0.024))}" r="${F(Y(0.012))}"/></g>`;
+      + `<path class="isl-vbeam" d="M0 ${F(bh2 * 0.5)}L${F(cl)} ${F(bh2 + Y(0.02))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><circle class="isl-vbrass2" cx="${F(cl - bwid * 0.01)}" cy="${F(bh2 + Y(0.024))}" r="${F(Y(0.012))}"/></g>`;
+    s += '<g class="isl-lq" data-q="ays">' + bellG(ang, -bwid * 0.35);
     // the bell's rope, from its headstock down through the belfry floor to whoever rings it, on the side the
     // bell has swung away from
     // (art-audit wave 1: the bell swung with nothing to ring it)
-    s += `<path class="isl-brope" d="M${F(tc - Y(0.04))} ${F(yokeY + Y(0.004))}Q${F(tc - Y(0.075))} ${F((yokeY + tTop) / 2)} ${F(tc - Y(0.085))} ${F(tTop - Y(0.02))}" stroke-width="${F(Math.max(0.9, Y(0.007)))}"/>`;
+    s += `<path class="isl-brope" d="M${F(tc - Y(0.04))} ${F(yokeY + Y(0.004))}Q${F(tc - Y(0.075))} ${F((yokeY + tTop) / 2)} ${F(tc - Y(0.085))} ${F(tTop - Y(0.02))}" stroke-width="${F(Math.max(0.9, Y(0.007)))}"/></g>`;
+    s += '<g class="isl-lq" data-q="dn">' + bellG(0, 0)
+      + `<path class="isl-brope" d="M${F(tc - Y(0.04))} ${F(yokeY + Y(0.004))}V${F(tTop - Y(0.02))}" stroke-width="${F(Math.max(0.9, Y(0.007)))}"/></g>`;
     // the pyramid roof and its vane
     s += `<path class="isl-troof" d="${polyD([[b0 - Y(0.03), bTop - Y(0.018)], [tc, roofTop + Y(0.04)], [b1 + Y(0.03), bTop - Y(0.018)]])}"/>`
       // (the vane whole inside the picture, on a short rod above the apex: it had been drawn above the frame)
@@ -2583,18 +2659,35 @@
       + `<path class="isl-vvane" d="M${F(tc)} ${F(Y(0.012))}h${F(Y(0.04))}l${F(-Y(0.01))} ${F(Y(0.013))}h${F(-Y(0.03))}Z"/>`;
     // 5. The rings of sound, spreading from the bell to the left, each in turn; birds lift off the roof.
     const scx = tc - Y(0.02), scy = yokeY + bh2 * 0.6;
+    s += '<g class="isl-lq" data-q="ays">';   // (only while it rings)
     for (let k = 0; k < 3; k++) {
       // (from just outside the belfry: the inner ring had lain wholly on the pier beside the opening)
       const rr = Y(0.26 + k * 0.11), a0 = Math.PI * (0.8 + k * 0.01), a1 = Math.PI * 1.22;
       s += `<path class="isl-bsound isl-vwin" style="--i:${1 + k}" d="M${F(scx + Math.cos(a0) * rr)} ${F(scy + Math.sin(a0) * rr)}A${F(rr)} ${F(rr)} 0 0 1 ${F(scx + Math.cos(a1) * rr)} ${F(scy + Math.sin(a1) * rr)}" stroke-width="${F(Math.max(1.2, Y(0.014) * (1 - k * 0.2)))}" stroke-opacity="${(0.7 - k * 0.18).toFixed(2)}"/>`;
     }
+    s += '</g>';
     let birds = '';
     for (const [bx, by, sz] of [[0.64, 0.16, 0.034], [0.69, 0.09, 0.028], [0.6, 0.26, 0.026]]) {
       const cx = X(bx), cy = Y(by), w = Y(sz);
       birds += `M${F(cx - w)} ${F(cy - w * 0.2)}Q${F(cx - w * 0.5)} ${F(cy - w * 0.6)} ${F(cx)} ${F(cy)}Q${F(cx + w * 0.5)} ${F(cy - w * 0.6)} ${F(cx + w)} ${F(cy - w * 0.2)}`;
     }
-    // (not at Night: birds roost after dark; art-audit wave 1)
-    s += `<g class="isl-noct"><path class="isl-bbird" d="${birds}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`;
+    // (the birds fly off as the bell rings at Dawn, by Day and at Sunset, glide in to roost at Dusk, nearer the
+    // tower and lower with flatter wings, and at Night two doves sit on the belfry's sill under the resting bell;
+    // art-audit wave 1, by version)
+    let glide = '';
+    for (const [bx, by, sz] of [[0.72, 0.2, 0.03], [0.75, 0.27, 0.026], [0.69, 0.31, 0.024]]) {
+      const cx = X(bx), cy = Y(by), w = Y(sz);
+      glide += `M${F(cx - w)} ${F(cy)}Q${F(cx - w * 0.5)} ${F(cy - w * 0.25)} ${F(cx)} ${F(cy)}Q${F(cx + w * 0.5)} ${F(cy - w * 0.25)} ${F(cx + w)} ${F(cy)}`;
+    }
+    let doves = '';
+    for (const [dx, dir] of [[-Y(0.065), 1], [Y(0.06), -1]]) {
+      const cx = tc + dx, cy = tTop - Y(0.02) - Y(0.008);
+      doves += `<ellipse cx="${F(cx)}" cy="${F(cy)}" rx="${F(Y(0.015))}" ry="${F(Y(0.008))}"/><circle cx="${F(cx + dir * Y(0.013))}" cy="${F(cy - Y(0.007))}" r="${F(Y(0.006))}"/>`
+        + `<path d="M${F(cx - dir * Y(0.012))} ${F(cy - Y(0.002))}l${F(-dir * Y(0.012))} ${F(Y(0.004))}l${F(dir * Y(0.004))} ${F(-Y(0.006))}Z"/>`;
+    }
+    s += `<g class="isl-lq" data-q="ays"><path class="isl-bbird" d="${birds}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`
+      + `<g class="isl-lq" data-q="d"><path class="isl-bbird" d="${glide}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`
+      + `<g class="isl-lq" data-q="n"><g class="isl-bdove">${doves}</g></g>`;
     // the tower's door, arched, in the middle of its base (art-audit wave 1: it had no way in)
     {
       const dw = Y(0.075), dT = ground - Y(0.03) - Y(0.15);
@@ -2621,23 +2714,33 @@
       + `<path class="isl-vlamp isl-ltframe" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.03))}V${F(ly - Y(0.09))}H${F(lx + Y(0.014))}V${F(ly - Y(0.03))}Z"/></g>`
       + panes(lx - Y(0.014), ly - Y(0.09), Y(0.028), Y(0.06));
     s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ground)}V${F(ly - Y(0.03))}H${F(lx + 1)}V${F(ground)}Z"/><path class="isl-vpost isl-lcap" d="M${F(lx - Y(0.022))} ${F(ly - Y(0.09))}L${F(lx)} ${F(ly - Y(0.115))}L${F(lx + Y(0.022))} ${F(ly - Y(0.09))}Z"/>`;
-    // Someone reading the notices, seen from behind in front of the board's left end, and a slatted bench on
-    // iron ends in the lantern's pool beside it; the lantern's warm light on the reader's near side and the
-    // bench's top edges from Dawn to Night (art-audit wave 1, 2026-10-01: the square had no one in it).
+    // Someone at the notice board, seen from behind in front of its left end, and a slatted bench on iron ends
+    // in the lantern's pool beside it; the lantern's warm light on the person's near side and the bench's top
+    // edges from Dawn to Night (art-audit wave 1, 2026-10-01: the square had no one in it). Who is there
+    // answers the hour (by version): at Dawn someone pins up the day's notice, by Day and at Sunset someone
+    // reads them, and after dark the square is empty; the bench stays.
     {
       const fx = nb0 + Y(0.075), fb = ground + Y(0.035), fh = Y(0.28), hr = fh * 0.075, sw = fh * 0.13;
       const ft = fb - fh, hy = ft + hr;
       let fig = `<path fill="#2f3a4a" d="M${F(fx - sw * 0.85)} ${F(fb)}L${F(fx - sw * 0.75)} ${F(ft + fh * 0.5)}H${F(fx + sw * 0.75)}L${F(fx + sw * 0.85)} ${F(fb)}H${F(fx + sw * 0.1)}L${F(fx)} ${F(ft + fh * 0.62)}L${F(fx - sw * 0.1)} ${F(fb)}Z"/>`;   // trousers
       fig += `<path fill="#c7d6e3" d="M${F(fx - sw * 0.82)} ${F(ft + fh * 0.53)}L${F(fx - sw)} ${F(ft + fh * 0.22)}Q${F(fx - sw)} ${F(ft + fh * 0.16)} ${F(fx - sw * 0.6)} ${F(ft + fh * 0.15)}H${F(fx + sw * 0.6)}Q${F(fx + sw)} ${F(ft + fh * 0.16)} ${F(fx + sw)} ${F(ft + fh * 0.22)}L${F(fx + sw * 0.82)} ${F(ft + fh * 0.53)}Z"/>`;   // shirt
+      // (the pinner, at Dawn, has the right arm raised to the board, a hand flat on a new note, and the day's
+      // other notices folded in the left hand)
+      let pin = fig + `<path fill="#c7d6e3" d="${rect(fx - sw * 1.05, ft + fh * 0.2, sw * 0.24, fh * 0.3)}M${F(fx + sw * 0.78)} ${F(ft + fh * 0.18)}L${F(fx + sw * 1.02)} ${F(ft + fh * 0.16)}L${F(fx + sw * 1.12)} ${F(ft - fh * 0.04)}L${F(fx + sw * 0.9)} ${F(ft - fh * 0.04)}Z"/>`
+        + `<path fill="#6b4630" d="${rect(fx - sw * 1.02, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx + sw * 0.88, ft - fh * 0.1, sw * 0.24, fh * 0.07)}${rect(fx - hr * 0.45, hy + hr * 0.6, hr * 0.9, fh * 0.07)}"/>`
+        + `<path fill="#fbf6ea" d="${rect(fx - sw * 1.18, ft + fh * 0.5, sw * 0.32, fh * 0.1)}"/>`;
       fig += `<path fill="#c7d6e3" d="${rect(fx - sw * 1.05, ft + fh * 0.2, sw * 0.24, fh * 0.3)}${rect(fx + sw * 0.81, ft + fh * 0.2, sw * 0.24, fh * 0.3)}"/>`;   // sleeves
       fig += `<path fill="#6b4630" d="${rect(fx - sw * 1.02, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx + sw * 0.84, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx - hr * 0.45, hy + hr * 0.6, hr * 0.9, fh * 0.07)}"/>`;   // hands, neck
-      fig += `<circle fill="#1d1916" cx="${F(fx)}" cy="${F(hy)}" r="${F(hr)}"/>`;   // the head, from behind
-      fig += `<path fill="#3a2e24" d="${rect(fx - sw * 0.85, fb - fh * 0.02, sw * 0.7, fh * 0.03)}${rect(fx + sw * 0.15, fb - fh * 0.02, sw * 0.7, fh * 0.03)}"/>`;   // shoes
+      const headShoes = `<circle fill="#1d1916" cx="${F(fx)}" cy="${F(hy)}" r="${F(hr)}"/>`   // the head, from behind
+        + `<path fill="#3a2e24" d="${rect(fx - sw * 0.85, fb - fh * 0.02, sw * 0.7, fh * 0.03)}${rect(fx + sw * 0.15, fb - fh * 0.02, sw * 0.7, fh * 0.03)}"/>`;   // shoes
+      fig += headShoes; pin += headShoes;
       const b0 = lx - Y(0.21), b1 = lx - Y(0.05), sy = ground + Y(0.005), bh = Y(0.07);
       let bench = `<path class="isl-vpost" d="${rect(b0 + Y(0.008), sy - bh * 0.95, Y(0.008), bh * 0.95 + Y(0.02))}${rect(b1 - Y(0.016), sy - bh * 0.95, Y(0.008), bh * 0.95 + Y(0.02))}"/>`;   // iron ends
       bench += `<path class="isl-bbench" d="${rect(b0, sy - Y(0.004), b1 - b0, Y(0.012))}${rect(b0, sy - bh * 0.62, b1 - b0, Y(0.011))}${rect(b0, sy - bh * 0.9, b1 - b0, Y(0.011))}"/>`;   // seat and back slats
-      s += `<g class="isl-bfig">${bench}${fig}</g>`;
-      s += `<g class="isl-vlamps isl-vwin" style="--i:4"><path class="isl-mlit" d="M${F(fx - sw * 1.04)} ${F(ft + fh * 0.21)}V${F(ft + fh * 0.5)}M${F(fx - hr * 0.95)} ${F(hy - hr * 0.3)}A${F(hr)} ${F(hr)} 0 0 0 ${F(fx - hr * 0.7)} ${F(hy + hr * 0.7)}M${F(b0)} ${F(sy - Y(0.004))}H${F(b1)}M${F(b0)} ${F(sy - bh * 0.9)}H${F(b1)}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/></g>`;
+      s += `<g class="isl-bfig">${bench}<g class="isl-lq" data-q="a">${pin}</g><g class="isl-lq" data-q="ys">${fig}</g></g>`;
+      const sw2 = F(Math.max(0.8, Y(0.006)));
+      s += `<g class="isl-vlamps isl-vwin" style="--i:4"><path class="isl-mlit" d="M${F(b0)} ${F(sy - Y(0.004))}H${F(b1)}M${F(b0)} ${F(sy - bh * 0.9)}H${F(b1)}" stroke-width="${sw2}"/>`
+        + `<g class="isl-lq" data-q="ays"><path class="isl-mlit" d="M${F(fx - sw * 1.04)} ${F(ft + fh * 0.21)}V${F(ft + fh * 0.5)}M${F(fx - hr * 0.95)} ${F(hy - hr * 0.3)}A${F(hr)} ${F(hr)} 0 0 0 ${F(fx - hr * 0.7)} ${F(hy + hr * 0.7)}" stroke-width="${sw2}"/></g></g>`;
     }
     return `<g style="--isl-vstep:.4s">${s}</g>`;
   }
@@ -2968,12 +3071,14 @@
     {
       const px = lx - Y(0.015), hy = Y(0.39), hr = Y(0.031), sh = Y(0.45);
       const coat = `M${F(px - Y(0.08))} ${F(lT + 1)}L${F(px - Y(0.078))} ${F(sh + Y(0.02))}Q${F(px - Y(0.074))} ${F(sh)} ${F(px - Y(0.04))} ${F(sh - Y(0.006))}H${F(px + Y(0.04))}Q${F(px + Y(0.074))} ${F(sh)} ${F(px + Y(0.078))} ${F(sh + Y(0.02))}L${F(px + Y(0.08))} ${F(lT + 1)}Z`;
+      s += '<g class="isl-lq" data-q="aysd">';   // (the lecturer from Dawn to Dusk; gone home at Night, art-audit by version)
       s += `<g class="isl-mroom"><path fill="#efeee9" d="${coat}"/>`
         + `<path fill="#a9bdd3" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}Z"/>`   // the shirt in the coat's V
         + `<path stroke="#bdbab2" fill="none" stroke-width="${F(Math.max(0.7, Y(0.005)))}" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}M${F(px - Y(0.03))} ${F(sh + Y(0.02))}L${F(px - Y(0.012))} ${F(sh + Y(0.07))}M${F(px + Y(0.03))} ${F(sh + Y(0.02))}L${F(px + Y(0.012))} ${F(sh + Y(0.07))}"/>`   // the lapels
         + `<path fill="#7a4b30" d="${rect(px - Y(0.012), hy + hr * 0.6, Y(0.024), sh - hy - hr * 0.5)}"/><circle fill="#7a4b30" cx="${F(px)}" cy="${F(hy)}" r="${F(hr)}"/>`   // neck and face
         + `<path fill="#1b1715" d="M${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}A${F(hr * 1.02)} ${F(hr * 1.06)} 0 0 1 ${F(px + hr * 1.02)} ${F(hy + hr * 0.1)}Q${F(px + hr * 0.5)} ${F(hy - hr * 0.45)} ${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}Z"/></g>`;   // the hair
       s += `<g class="isl-vlamps isl-vwin" style="--i:1"><path class="isl-mlit" d="M${F(px + hr * 0.75)} ${F(hy - hr * 0.55)}A${F(hr)} ${F(hr)} 0 0 1 ${F(px + hr * 0.85)} ${F(hy + hr * 0.5)}M${F(px + Y(0.062))} ${F(sh - Y(0.003))}Q${F(px + Y(0.077))} ${F(sh + Y(0.01))} ${F(px + Y(0.079))} ${F(lT)}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/></g>`;
+      s += '</g>';
     }
     s += `<path class="isl-lwood" d="${polyD([[lx - Y(0.1), lT], [lx + Y(0.1), lT], [lx + Y(0.08), lB], [lx - Y(0.08), lB]])}"/><path class="isl-lwood2" d="${rect(lx - Y(0.12), lT - Y(0.02), Y(0.24), Y(0.025))}"/>`
       + `<path class="isl-lwood2" fill-opacity=".55" d="${polyD([[lx - Y(0.07), lT + Y(0.03)], [lx + Y(0.07), lT + Y(0.03)], [lx + Y(0.058), lB - Y(0.03)], [lx - Y(0.058), lB - Y(0.03)]])}"/>`   // its front panel
@@ -3017,19 +3122,40 @@
       // Students in the rows, seen from behind: heads and shoulders above the seat backs (one in a white coat,
       // one lit by a laptop's cool glow from Dawn to Night), drawn behind the backs (art-audit wave 1,
       // 2026-10-01: the hall had been an empty room of seats).
-      const who = yt < 0.85 ? [[3, '#efeee9', 'short'], [4, '#2f3d5c', 'long'], [9, '#6b2e33', 'bun'], [13, '#3d6466', 'short'], [14, '#5c5e3e', 'long']]
-        : [[2, '#3d6466', 'short'], [7, '#2f3d5c', 'bun', true]];
-      let ppl = '', glow = '';
-      for (const [i, cloth, hair, lap] of who) {
-        const z = Y(sz), cx = -z * 0.3 + i * z * 1.15 + z * 0.5, top = Y(yt), hr = z * 0.17, hy = top - z * 0.34;
-        ppl += `<path fill="${cloth}" d="M${F(cx - z * 0.44)} ${F(top + z * 0.4)}L${F(cx - z * 0.42)} ${F(top - z * 0.02)}Q${F(cx - z * 0.4)} ${F(top - z * 0.15)} ${F(cx - z * 0.14)} ${F(top - z * 0.16)}H${F(cx + z * 0.14)}Q${F(cx + z * 0.4)} ${F(top - z * 0.15)} ${F(cx + z * 0.42)} ${F(top - z * 0.02)}L${F(cx + z * 0.44)} ${F(top + z * 0.4)}Z"/>`
-          + `<path fill="#6e4a33" d="${rect(cx - hr * 0.42, hy + hr * 0.6, hr * 0.84, z * 0.12)}"/>`
-          + `<circle fill="#1d1916" cx="${F(cx)}" cy="${F(hy)}" r="${F(hr)}"/>`
-          + (hair === 'long' ? `<path fill="#1d1916" d="M${F(cx - hr)} ${F(hy)}V${F(top - z * 0.1)}H${F(cx + hr)}V${F(hy)}Z"/>` : '')
-          + (hair === 'bun' ? `<circle fill="#1d1916" cx="${F(cx + hr * 0.15)}" cy="${F(hy - hr * 1.05)}" r="${F(hr * 0.45)}"/>` : '');
-        if (lap) glow += halo(cx, hy + hr, z * 0.55, 'islvcool');
-        const near = 1 - Math.min(1, Math.abs(cx - (sx0 + sx1) / 2) / (W * 0.75));
-        rims[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(cx - z * 0.38)} ${F(top - z * 0.06)}Q${F(cx - z * 0.36)} ${F(top - z * 0.15)} ${F(cx - z * 0.12)} ${F(top - z * 0.155)}H${F(cx + z * 0.12)}Q${F(cx + z * 0.36)} ${F(top - z * 0.15)} ${F(cx + z * 0.38)} ${F(top - z * 0.06)}`;
+      // Who is in the hall at each hour (art-audit wave 1, by version; the owner, 2026-10-01: what is drawn
+      // may change between versions with a reason): a few early students at Dawn, nearly full by Day, thinning
+      // at Sunset as classes end, four staying for an evening review at Dusk, and at Night one student studying
+      // late by a laptop's cool light. Each version's people are their own isl-lq group.
+      const C = { coat: '#efeee9', navy: '#2f3d5c', maroon: '#6b2e33', teal: '#3d6466', olive: '#5c5e3e', grey: '#6c6f75', plum: '#5a3d5c', sand: '#8a7a5c' };
+      const ROSTER = yt < 0.85 ? {
+        a: [[3, 'coat', 'short'], [9, 'maroon', 'bun']],
+        y: [[1, 'navy', 'short'], [2, 'coat', 'long'], [3, 'coat', 'short'], [4, 'navy', 'long'], [6, 'grey', 'bun'], [7, 'teal', 'short'], [9, 'maroon', 'bun'],
+          [10, 'sand', 'short'], [12, 'plum', 'long'], [13, 'teal', 'short'], [14, 'olive', 'long'], [16, 'coat', 'short'], [18, 'navy', 'bun']],
+        s: [[4, 'navy', 'long'], [10, 'sand', 'short'], [13, 'teal', 'short'], [16, 'coat', 'short']],
+        d: [[3, 'coat', 'short'], [4, 'navy', 'long']],
+      } : {
+        a: [[7, 'navy', 'bun', true]],
+        y: [[2, 'teal', 'short'], [4, 'grey', 'long'], [7, 'navy', 'bun', true], [9, 'maroon', 'short'], [12, 'olive', 'bun']],
+        s: [[2, 'teal', 'short'], [9, 'maroon', 'short']],
+        d: [[7, 'navy', 'bun', true], [12, 'olive', 'bun']],
+        n: [[7, 'navy', 'bun', true]],
+      };
+      const byQ = {};
+      for (const q of Object.keys(ROSTER)) {
+        let ppl = '', glow = '';
+        const pr = ['', '', ''];
+        for (const [i, cl, hair, lap] of ROSTER[q]) {
+          const z = Y(sz), cx = -z * 0.3 + i * z * 1.15 + z * 0.5, top = Y(yt), hr = z * 0.17, hy = top - z * 0.34;
+          ppl += `<path fill="${C[cl]}" d="M${F(cx - z * 0.44)} ${F(top + z * 0.4)}L${F(cx - z * 0.42)} ${F(top - z * 0.02)}Q${F(cx - z * 0.4)} ${F(top - z * 0.15)} ${F(cx - z * 0.14)} ${F(top - z * 0.16)}H${F(cx + z * 0.14)}Q${F(cx + z * 0.4)} ${F(top - z * 0.15)} ${F(cx + z * 0.42)} ${F(top - z * 0.02)}L${F(cx + z * 0.44)} ${F(top + z * 0.4)}Z"/>`
+            + `<path fill="#6e4a33" d="${rect(cx - hr * 0.42, hy + hr * 0.6, hr * 0.84, z * 0.12)}"/>`
+            + `<circle fill="#1d1916" cx="${F(cx)}" cy="${F(hy)}" r="${F(hr)}"/>`
+            + (hair === 'long' ? `<path fill="#1d1916" d="M${F(cx - hr)} ${F(hy)}V${F(top - z * 0.1)}H${F(cx + hr)}V${F(hy)}Z"/>` : '')
+            + (hair === 'bun' ? `<circle fill="#1d1916" cx="${F(cx + hr * 0.15)}" cy="${F(hy - hr * 1.05)}" r="${F(hr * 0.45)}"/>` : '');
+          if (lap) glow += halo(cx, hy + hr, z * 0.55, 'islvcool');
+          const near = 1 - Math.min(1, Math.abs(cx - (sx0 + sx1) / 2) / (W * 0.75));
+          pr[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(cx - z * 0.38)} ${F(top - z * 0.06)}Q${F(cx - z * 0.36)} ${F(top - z * 0.15)} ${F(cx - z * 0.12)} ${F(top - z * 0.155)}H${F(cx + z * 0.12)}Q${F(cx + z * 0.36)} ${F(top - z * 0.15)} ${F(cx + z * 0.38)} ${F(top - z * 0.06)}`;
+        }
+        byQ[q] = { ppl, glow, pr };
       }
       for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) {
         const ax = x + Y(sz) * 1.075;
@@ -3037,8 +3163,9 @@
         const near = 1 - Math.min(1, Math.abs(x + Y(sz) * 0.5 - scrX) / (W * 0.75));
         rims[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.22)}Q${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.3)} ${F(Y(yt) + Y(sz) * 0.02)}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.22)}`;
       }
-      s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/><g class="isl-vlamps">${glow}</g><g class="isl-mroom">${ppl}</g><path class="${cls}" d="${seats}"/><path class="isl-lwood2" d="${arms}"/>`
-        + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('');
+      s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/>${Object.keys(byQ).map((q) => `<g class="isl-lq" data-q="${q}"><g class="isl-vlamps">${byQ[q].glow}</g><g class="isl-mroom">${byQ[q].ppl}</g></g>`).join('')}<path class="${cls}" d="${seats}"/><path class="isl-lwood2" d="${arms}"/>`
+        + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('')
+        + Object.keys(byQ).map((q) => `<g class="isl-lq" data-q="${q}">` + byQ[q].pr.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('') + '</g>').join('');
     }
     return `<g style="--isl-vstep:.5s">${s}</g>`;
   }
@@ -3458,6 +3585,18 @@
       const qx = rx0 + (lx0 - rx0) * i / nP + Y(0.03), qy = street + (qx - rx0) * slope;
       s += `<g class="isl-vwin" style="--i:${i}">${pool(qx, street + Y(0.015), Y(0.07), Y(0.016), 0.6)}<path class="f-pulse" d="${rect(qx - Y(0.012), qy + Y(0.012), Y(0.024), Y(0.009))}"/></g>`;
     }
+    // The ramp by the hour (art-audit wave 1, by version; the owner, 2026-10-01: what is drawn may change between
+    // versions with a reason): at Dawn someone opening up, a hand on the door's handle; by Day a wheelchair user
+    // going up the ramp; at Sunset going home, down it; after hours, at Dusk and Night, no one. Drawn before the
+    // rail, so the near rail crosses in front of them.
+    {
+      const at = (t) => { const qx = rx0 + (lx0 - rx0) * t; return [qx, street + (qx - rx0) * slope]; };
+      const ang = Math.atan(slope) * 180 / Math.PI, u = Y(0.16);
+      const [ux, uy] = at(0.45), [dx2, dy2] = at(0.18);
+      s += `<g class="isl-bfig"><g class="isl-lq" data-q="y"><g transform="translate(${F(ux)} ${F(uy)}) rotate(${F(ang)})">${chairUser(u)}</g></g>`
+        + `<g class="isl-lq" data-q="s"><g transform="translate(${F(dx2)} ${F(dy2)}) rotate(${F(ang)}) scale(-1 1)">${chairUser(u)}</g></g>`
+        + `<g class="isl-lq" data-q="a">${person(dx - dw * 0.22, land, Y(0.21), { shirt: '#e8e2d4', legs: '#2f3a4a', reach: [dx - Y(0.02), dT + Y(0.15)] })}</g></g>`;
+    }
     s += `<path class="isl-arail" d="${posts}" stroke-width="${F(Math.max(1, Y(0.008)))}"/><path class="isl-arail" d="${rail}" stroke-width="${F(Math.max(1.2, Y(0.01)))}"/>`;
     // 7. The planter by the steps and its palm; the street lamp at the ramp's foot, kept clear of the card's
     //    edge, and the left palm only where it clears the lamp; the sign hung on the lamp's post under the
@@ -3826,6 +3965,8 @@
       + '<linearGradient id="islvcoolrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vcool" stop-opacity=".55"/><stop offset="1" class="st-vcool" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvmist"><stop offset="0" class="st-haze" stop-opacity=".5"/><stop offset=".6" class="st-haze" stop-opacity=".16"/><stop offset="1" class="st-haze" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvpool"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset=".5" class="st-g1" stop-opacity=".18"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
+      + '<linearGradient id="islvsailgm" x1="1" y1="0" x2="0" y2="0"><stop offset="0" class="st-vsail" stop-opacity="1"/><stop offset="1" class="st-vsail2" stop-opacity="1"/></linearGradient>'
+      + '<radialGradient id="islvgreen"><stop offset="0" class="st-vgreen" stop-opacity=".45"/><stop offset=".5" class="st-vgreen" stop-opacity=".12"/><stop offset="1" class="st-vgreen" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvsailg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" class="st-vsail" stop-opacity="1"/><stop offset="1" class="st-vsail2" stop-opacity="1"/></linearGradient>'
       + '<linearGradient id="islvbrass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vbrass" stop-opacity="1"/><stop offset=".5" class="st-vbrass2" stop-opacity="1"/><stop offset="1" class="st-vbrass3" stop-opacity="1"/></linearGradient>'
       + '<linearGradient id="islvbay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vbay" stop-opacity=".55"/><stop offset="1" class="st-vbay" stop-opacity=".35"/></linearGradient>'
