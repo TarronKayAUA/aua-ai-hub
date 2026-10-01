@@ -3091,6 +3091,8 @@
     const far = [];
     for (let i = 0; i < 5; i++) { const x = X(0.02 + r() * 0.3); far.push([x, y0 - crestAt(x) * (0.2 + r() * 0.55)]); }
     s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(far)}" stroke-width="1.3"/>`;
+    // by Day, the houses those lights belong to, where a roof stays under the headland's crest
+    s += makeKit(W, H).dayHouses(far.filter(([x, y]) => crestAt(x) - (y0 - y) > Y(0.017)), Y(0.012), 97);
     for (const [x] of far) s += dashes(streakList(x, y0 + 1, H, r, 0.05, 0.05), 's-vglow', 1, [0.06, 0.12, 0.22]);
     // 2. The low sea wall along the back of the square, its coping lit; the square's paving, solid ground.
     const wT = Y(0.77);
@@ -3117,6 +3119,9 @@
     s += `<path class="isl-vstone" d="${quoins}"/>`
       + `<path class="isl-vstone" d="${rect(b0 - Y(0.012), bTop - Y(0.03), W - b0 + 14, Y(0.03))}${rect(b0, mid - Y(0.008), W - b0 + 2, Y(0.018))}"/>`
       + `<path class="isl-vpshade" d="${rect(b0, bTop, W - b0 + 2, Y(0.02))}"/>`
+      // (the side face's shade carried up through the coping, which turns at its own corner, and the string
+      // course, as on the Court House: both had crossed the shaded side face in light)
+      + `<path class="isl-vpshade" d="${rect(b0 - Y(0.012), bTop - Y(0.03), Y(0.035), Y(0.03))}${rect(b0, mid - Y(0.008), Y(0.035), Y(0.018))}"/>`
       + `<path class="s-rim" d="M${F(b0 - Y(0.012))} ${F(bTop - Y(0.03) + 0.5)}H${F(W + 2)}" stroke-width="1.2" stroke-opacity=".45"/>`;
     // the door's bay: the entrance at the middle of the landing, which runs from lx0 to lx1; the windows
     // in bays measured out from the door, so one stands centred over it; on the ground floor tall windows
@@ -3205,7 +3210,10 @@
     const pl0 = sx1 + ext + Y(0.05), ph = Y(0.5), ss = Y(0.15);
     const px = Math.max(ss * 0.8 + Y(0.03), rx0 - ext - Y(0.2));
     s += palmsD([[px - Y(0.42), street + Y(0.02), Y(0.72), 0.06, 23], [pl0 + Y(0.3), street - Y(0.05), Y(0.7), -0.1, 29]].filter(([x2], i) => (i === 0 ? x2 > -Y(0.1) : x2 < W - Y(0.05))), 'isl-palm');
-    s += `<path class="isl-vstone" d="${rect(pl0, street - Y(0.06), W, Y(0.06))}"/>`
+    // (the planter poured in the entrance's concrete, its lip lit and its foot in shadow: in the wall's own
+    // stone it had no edge, and the shrubs had seemed to sit on a ledge of the building)
+    s += `<path class="isl-aramp" d="${rect(pl0, street - Y(0.06), W, Y(0.06))}"/>`
+      + `<path class="isl-vstep-edge" d="M${F(pl0)} ${F(street - Y(0.06))}H${F(W + 2)}" stroke-width="${F(Math.max(1.6, Y(0.01)))}"/><path class="isl-vpshade" d="${rect(pl0, street - Y(0.008), W, Y(0.01))}"/>`
       + shrubs([[pl0 + Y(0.08), street - Y(0.06), Y(0.07)], [pl0 + Y(0.24), street - Y(0.06), Y(0.08)], [pl0 + Y(0.4), street - Y(0.06), Y(0.07)]].filter(([x2]) => x2 < W + Y(0.05)), r);
     s += `<g class="isl-vwin" style="--i:0">${pool(px, street + Y(0.05), Y(0.3), Y(0.06), 0.8)}${halo(px, street - ph - Y(0.03), Y(0.2))}`
       + `<path class="f-pulse" d="${rect(px - Y(0.02), street - ph - Y(0.06), Y(0.04), Y(0.055))}"/></g>`

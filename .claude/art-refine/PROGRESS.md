@@ -175,9 +175,9 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### way-in
 
-- [ ] #11 fix v4 `way-in-1`: Turn the corner: shade the coping and string course over the side face
-- [ ] #48 fix v3 `way-in-3`: Let the planter read: pour it in the ramp's concrete with a lit lip
-- [ ] #111 add v2 `way-in-6`: By Day, small houses where the headland's lights stand at night
+- [x] #11 fix v4 `way-in-1`: Turn the corner: shade the coping and string course over the side face
+- [x] #48 fix v3 `way-in-3`: Let the planter read: pour it in the ramp's concrete with a lit lip
+- [x] #111 add v2 `way-in-6`: By Day, small houses where the headland's lights stand at night
 
 ### bettys-hope
 
