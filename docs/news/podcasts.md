@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Gemini-4-Argon--Sonnet-5-5-and-What-Matters-with-AI-Models-e3pnj53" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Gemini 4 Argon, Sonnet 5.5 and What Matters with AI Models" loading="lazy">
+  <span class="video-card-title">Gemini 4 Argon, Sonnet 5.5 and What Matters with AI Models</span>
+  <span class="video-card-meta">The AI Daily Brief, October 1, 2026</span>
+  <span class="video-card-desc">NLW discusses Google&#x27;s Gemini 4 Argon benchmark results and Claude Sonnet 5.5, and considers how users should choose among AI tools, plus headlines on US AI policy and an FTC investigation.</span>
+</a>
 <a class="video-card" href="https://www.cognitiverevolution.ai/ai-am-was-trump-xi-anything-what-counts-as-utopia-aws-gpus-cost-3x-ai-diagnoses-rare-diseases" target="_blank" rel="noopener">
   <img src="https://megaphone.imgix.net/podcasts/cf9391d0-bd9d-11f1-9163-8f19ef22f336/image/7bd7448078f6f42f7c56fdd2cf568735.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI:AM: Was Trump-Xi Anything? What Counts as Utopia? + AWS GPUs Cost 3X &amp; AI Diagnoses Rare Diseases" loading="lazy">
   <span class="video-card-title">AI:AM: Was Trump-Xi Anything? What Counts as Utopia? + AWS GPUs Cost 3X &amp; AI Diagnoses Rare Diseases</span>

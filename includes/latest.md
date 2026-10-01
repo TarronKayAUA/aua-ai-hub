@@ -2,6 +2,6 @@
 
 - [Trust without verification: generation Z, generative artificial intelligence and the calibration paradox in medical education](https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&ff=20261001112835&v=2.20.1) (PubMed AI in medical education, October 1, 2026)
 - [Using a Programme-Level Approach to Developing Reflective Practice in Health Professions Education in the Age of AI](https://pubmed.ncbi.nlm.nih.gov/42817234?fc=20260609215449&ff=20261001112835&v=2.20.1) (PubMed AI in medical education, October 1, 2026)
+- [Awareness, attitudes, and utilization of large language models among healthcare students in Saudi Arabia: a cross-sectional analysis](https://pubmed.ncbi.nlm.nih.gov/42818604?fc=20260609215449&ff=20261001170308&v=2.20.1) (PubMed AI in medical education, October 1, 2026)
 - [AI-Mediated Assessment of Continuing Medical Education: The Case-based Learning Intelligence Credit System (CLICS) Framework](https://mededu.jmir.org/2026/1/e99520) (JMIR Medical Education, September 30, 2026)
 - [AI Perceptions, Professional Identity, and AI-Supported Clinical Decisions Among Medical Students and Clinicians: Cross-Sectional Survey and Quasi-Randomized Vignette Study](https://mededu.jmir.org/2026/1/e104151) (JMIR Medical Education, September 30, 2026)
-- [Generative Language Models in Medical Education: From Advent to Entrustment](https://mededu.jmir.org/2026/1/e105347) (JMIR Medical Education, September 30, 2026)

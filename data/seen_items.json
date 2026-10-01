@@ -1,20 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vdcgpm/setting_up_of_a_16xgb10_dgx_spark_cluster",
-   "title_hash": "762cbe9d8136eb7ed68f188d13ed1c33",
-   "first_seen": "2026-08-02T17:17:14.958369+00:00",
-   "kept": false,
-   "reason": "community meta-discussion about personal infrastructure setup, not a development or capability change significant to this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=8B05cy3UuSE",
-   "title_hash": "9ff24cd0f674fb36d5b0c2e751274f84",
-   "first_seen": "2026-08-02T17:17:14.958369+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
    "url": "https://www.theverge.com/ai-artificial-intelligence/974265/fender-ceo-bud-cole-ai-music",
    "title_hash": "efa2f16be58ba9d7d211a41db58ff424",
    "first_seen": "2026-08-02T21:11:17.956856+00:00",
@@ -33461,6 +33447,164 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://megaphone.imgix.net/podcasts/cf9391d0-bd9d-11f1-9163-8f19ef22f336/image/7bd7448078f6f42f7c56fdd2cf568735.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+  },
+  {
+   "url": "https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge",
+   "title_hash": "044978193f1912159a0d7e07bb8e148d",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": true,
+   "title": "Judge dismisses Chegg and Penske antitrust lawsuits targeting Google AI search",
+   "source": "Ars Technica AI",
+   "published": "2026-10-01T20:11:55+00:00",
+   "summary": "A federal judge dismissed antitrust lawsuits by Chegg and Penske Media that accused Google of harming web traffic through AI search features, finding the claims were not an antitrust issue.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2025/05/Google-sign-IO-500x500-1748638352.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1003756/google-gemini-live-guided-vision",
+   "title_hash": "214245cbe908b98834a038a6d40633b9",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": false,
+   "reason": "minor consumer feature release, low relevance to this audience"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1003589/google-ai-overviews-chegg-penske-lawsuits-dismissed",
+   "title_hash": "92166de357da4e0e7449d20d3869282f",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate"
+  },
+  {
+   "url": "https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety",
+   "title_hash": "309c1551132478d2f251044254cd1814",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": true,
+   "title": "A big-tent or small-tent AI safety movement?",
+   "source": "AI as Normal Technology",
+   "published": "2026-10-01T16:34:51+00:00",
+   "summary": "An essay in the AI as Normal Technology newsletter examines an unstated disagreement underlying debates about AI safety and whether the safety movement should take a broad or narrow approach.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://substackcdn.com/image/fetch/$s_!LgrS!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11d1c529-6f8d-4df3-acb6-f291eaa271f2_1024x559.jpeg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget",
+   "title_hash": "5a615a81eb8ff8e341e46e0adf7a42ce",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": true,
+   "title": "With most information hidden, the game Stratego had stumped AI, until now",
+   "source": "Ars Technica AI",
+   "published": "2026-10-01T16:28:04+00:00",
+   "summary": "Researchers improved AI play in the hidden-information game Stratego by adding a second neural network that estimates the identities of the opponent's concealed pieces.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1864707238-500x500.jpg",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42818604?fc=20260609215449&ff=20261001170308&v=2.20.1",
+   "title_hash": "28f0b63f5c195a4b556cc282d057a1b0",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": true,
+   "title": "Awareness, attitudes, and utilization of large language models among healthcare students in Saudi Arabia: a cross-sectional analysis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-01T10:00:00+00:00",
+   "summary": "A cross-sectional study surveys healthcare students in Saudi Arabia on their awareness, attitudes, and use of large language models such as ChatGPT in their education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03338-2",
+   "title_hash": "b486f3b3c8da66f1b9fc93769f7d842c",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": true,
+   "title": "Healthcare professionals’ perceptions on AI-assisted decision-making in clinical practice: a qualitative meta-synthesis",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-01T00:00:00+00:00",
+   "summary": "A qualitative meta-synthesis in npj Digital Medicine pools existing studies to describe how healthcare professionals perceive artificial intelligence assistance in clinical decision-making.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsuqmb/nvidianvidianemotronlabs3competitivecoding550ba55b",
+   "title_hash": "21919f3824f0fd7831b70d6fbfa063a9",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": true,
+   "title": "nvidia/NVIDIA-Nemotron-Labs-3-Competitive-Coding-550B-A55B-NVFP4 · Hugging Face",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-09-28T23:45:33+00:00",
+   "summary": "NVIDIA published Nemotron-Labs-3-Competitive-Coding-550B-A55B-NVFP4 on Hugging Face, an open-weights competitive-programming model fine-tuned from NVIDIA-Nemotron-3-Ultra-550B-A55B.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/5XWU-EJClPOrAG-rnghIGG9_kb0lIvhzEYN4V-5shZQ.png?width=640&crop=smart&auto=webp&s=1eef5c18f9cea669f484c4cf7690150596e49b2f",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wsq6r5/qwen_next_38_and_38_27b_vs_sonnet_55_low_and",
+   "title_hash": "3a3e1a4a3781c78616df36f24860affc",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": false,
+   "reason": "community forum thread with anecdotal comparison, no primary benchmark data"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wq56pf/swift15qwen38flashnext_is_phenomenal_vs_base",
+   "title_hash": "4d778180a540eaeb9075bc50e03f018c",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": false,
+   "reason": "personal forum post about a community fine-tune, niche tinkering"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=pYH8x-Nbhbc",
+   "title_hash": "dfac0c4a631522a8a027654fcf40e85e",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": true,
+   "title": "GPT-6.1 Sol vs Claude Sonnet 5.5, This Was NOT Even CLOSE!",
+   "source": "Bijan Bowen",
+   "published": "2026-10-01T17:11:46+00:00",
+   "summary": "An independent reviewer runs a hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5 using a demo derby coding prompt, with timestamps showing testing setup and each model's result.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/pYH8x-Nbhbc/hqdefault.jpg",
+   "display_title": "Hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=fHEIw5CcN5U",
+   "title_hash": "2fbc45ac9a9fa2247cd98963d4234b39",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": false,
+   "reason": "product demo from the product's own company, marketing"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=HIUzrxQxTtw",
+   "title_hash": "8476af0d3e549c7b25f96fa7b63ef6c5",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": true,
+   "title": "From deepfakes to DNA: the science of watermarking AI",
+   "source": "Google DeepMind",
+   "published": "2026-10-01T16:37:46+00:00",
+   "summary": "Hannah Fry interviews Google DeepMind scientists Pushmeet Kohli and Jeremy Ratcliffe about watermarking AI-generated content, from deepfake images to biological sequences, and how provenance can be verified.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/HIUzrxQxTtw/hqdefault.jpg",
+   "display_title": "Watermarking AI-generated content, from deepfakes to DNA, with DeepMind researchers"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Gemini-4-Argon--Sonnet-5-5-and-What-Matters-with-AI-Models-e3pnj53",
+   "title_hash": "ecc258d20b0defe633d4bbad2ab65497",
+   "first_seen": "2026-10-01T21:03:08.188528+00:00",
+   "kept": true,
+   "title": "Gemini 4 Argon, Sonnet 5.5 and What Matters with AI Models",
+   "source": "The AI Daily Brief",
+   "published": "2026-10-01T20:42:00+00:00",
+   "summary": "NLW discusses Google's Gemini 4 Argon benchmark results and Claude Sonnet 5.5, and considers how users should choose among AI tools, plus headlines on US AI policy and an FTC investigation.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
   }
  ],
  "digests": [

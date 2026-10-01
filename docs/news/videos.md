@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=pYH8x-Nbhbc" target="_blank" rel="noopener" title="GPT-6.1 Sol vs Claude Sonnet 5.5, This Was NOT Even CLOSE!">
+  <img src="https://i1.ytimg.com/vi/pYH8x-Nbhbc/hqdefault.jpg" alt="Video: Hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5" loading="lazy">
+  <span class="video-card-title">Hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5</span>
+  <span class="video-card-meta">Bijan Bowen, October 1, 2026</span>
+  <span class="video-card-desc">An independent reviewer runs a hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5 using a demo derby coding prompt, with timestamps showing testing setup and each model&#x27;s result.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=HIUzrxQxTtw" target="_blank" rel="noopener" title="From deepfakes to DNA: the science of watermarking AI">
+  <img src="https://i1.ytimg.com/vi/HIUzrxQxTtw/hqdefault.jpg" alt="Video: Watermarking AI-generated content, from deepfakes to DNA, with DeepMind researchers" loading="lazy">
+  <span class="video-card-title">Watermarking AI-generated content, from deepfakes to DNA, with DeepMind researchers</span>
+  <span class="video-card-meta">Google DeepMind, October 1, 2026</span>
+  <span class="video-card-desc">Hannah Fry interviews Google DeepMind scientists Pushmeet Kohli and Jeremy Ratcliffe about watermarking AI-generated content, from deepfake images to biological sequences, and how provenance can be verified.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=YGgNBcIgI4s" target="_blank" rel="noopener" title="What Is Jev? The AI Model That Doesn&#x27;t Generate Text">
   <img src="https://i2.ytimg.com/vi/YGgNBcIgI4s/hqdefault.jpg" alt="Video: IBM explainer on Jev, an AI model that does not generate text" loading="lazy">
   <span class="video-card-title">IBM explainer on Jev, an AI model that does not generate text</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Qwen Image 2.1 open-source image generator review and setup</span>
   <span class="video-card-meta">AI Search, September 22, 2026</span>
   <span class="video-card-desc">Hands-on review and setup guide for Qwen Image 2.1 open-source image generation model with local execution instructions.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=MJllZbpvrAc" target="_blank" rel="noopener" title="Did Elon catch up? (Grok 4.7 is here)">
-  <img src="https://i2.ytimg.com/vi/MJllZbpvrAc/hqdefault.jpg" alt="Video: Grok 4.7 model testing and capability comparison" loading="lazy">
-  <span class="video-card-title">Grok 4.7 model testing and capability comparison</span>
-  <span class="video-card-meta">Matthew Berman, September 22, 2026</span>
-  <span class="video-card-desc">Testing and review of Grok 4.7 release, comparing capabilities and performance against other frontier models.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=i00isgmGgGg" target="_blank" rel="noopener" title="HUGE Opus 5.5 LEAKS + Cheaper? Qwen 4, Kimi K3.1, MiniMax M3.1 &amp; Step 5 Preview! AI NEWS">
-  <img src="https://i2.ytimg.com/vi/i00isgmGgGg/hqdefault.jpg" alt="Video: Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others" loading="lazy">
-  <span class="video-card-title">Model releases roundup: Opus 5.5, Qwen 4, Kimi K3.1, and others</span>
-  <span class="video-card-meta">WorldofAI, September 21, 2026</span>
-  <span class="video-card-desc">Roundup of recent model releases and updates including Anthropic Opus 5.5, Qwen 4, Kimi K3.1, MiniMax M3.1, and preview of OpenAI Step 5.</span>
 </a>
 </div>
 

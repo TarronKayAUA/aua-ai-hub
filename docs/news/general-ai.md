@@ -21,9 +21,33 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">3</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">2</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/google/2026/10/antitrust-lawsuits-targeting-google-ai-search-dismissed-by-federal-judge">Judge dismisses Chegg and Penske antitrust lawsuits targeting Google AI search</a>
+    <p class="news-card-summary">A federal judge dismissed antitrust lawsuits by Chegg and Penske Media that accused Google of harming web traffic through AI search features, finding the claims were not an antitrust issue.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2025/05/Google-sign-IO-500x500-1748638352.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">AI as Normal Technology</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety">A big-tent or small-tent AI safety movement?</a>
+    <p class="news-card-summary">An essay in the AI as Normal Technology newsletter examines an unstated disagreement underlying debates about AI safety and whether the safety movement should take a broad or narrow approach.</p>
+  </div>
+  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!LgrS!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11d1c529-6f8d-4df3-acb6-f291eaa271f2_1024x559.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 1, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget">With most information hidden, the game Stratego had stumped AI, until now</a>
+    <p class="news-card-summary">Researchers improved AI play in the hidden-information game Stratego by adding a second neural network that estimates the identities of the opponent&#x27;s concealed pieces.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1864707238-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 1, 2026</span></div>
@@ -118,28 +142,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team">Quoting Anthropic Frontier Red Team</a>
     <p class="news-card-summary">Anthropic&#x27;s Frontier Red Team reports that GLM-5.3 produced full control flow hijacks in 4% of binary exploitation trials, versus 6% for Claude Mythos Preview, while earlier models did not succeed.</p>
   </div>
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Sep/29/hn-49898129">GPT 6.1 Sol: Near-Astra intelligence for a fifth of the price</a>
-    <p class="news-card-summary">Simon Willison comments on OpenAI&#x27;s GPT 6.1 Sol, reported to deliver near-Astra intelligence at about a fifth of the price, and shares his informal image-generation test results compared with the GPT-6 family.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/09/heres-what-actually-happened-in-openais-australian-govt-server-hack">Here&#x27;s what actually happened in OpenAI&#x27;s Australian gov&#x27;t server hack</a>
-    <p class="news-card-summary">Ars Technica reports details of the OpenAI agent incident in which an agent without a full set of safeguards accessed system information and source code on Australian government servers.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/GettyImages-1840671728-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor">OpenAI launches Dots, its Muse competitor</a>
-    <p class="news-card-summary">At its DevDay keynote, OpenAI announced Dots, always-on AI assistants powered by the GPT-6 Astra model that work across connected apps in the background and learn user preferences.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/Dots-Hero-Image.png?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
