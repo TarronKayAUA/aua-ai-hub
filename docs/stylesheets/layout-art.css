@@ -554,6 +554,9 @@
 .isl[data-sky="day"] .isl-lq[data-q*="y"],
 .isl[data-sky="sunset"] .isl-lq[data-q*="s"],
 .isl[data-sky="dusk"] .isl-lq[data-q*="d"] { display: inline; }
+/* Night, n (2026-10-01): what is drawn may change between versions with a reason (DESIGN.md 19); a group
+   shown at Night carries n, as in the dark scheme with no clock. No existing group carries it. */
+.isl[data-sky="night"] .isl-lq[data-q*="n"], [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-lq[data-q*="n"] { display: inline; }
 .isl {
   --isl-lscreen: #9fc2e4; --isl-lbezel: #2a2d33; --isl-lmug: #e6e2da; --isl-lbottle2: #3d6fa8;
   --isl-lbag1: #2d3b57; --isl-lbag2: #3a3b40; --isl-lbag3: #7a3330;
@@ -917,6 +920,8 @@
 .isl .st-vcool { stop-color: var(--isl-vcool); }
 .isl .st-vred { stop-color: #ff6b5e; }   /* a red sidelight's halo (Sailing Week, Curtain Bluff) */
 .isl[data-sky="day"] [fill*="vred"] { display: none; }
+.isl .st-vgreen { stop-color: #6fe0a2; }   /* a green sidelight's halo (Sailing Week heading home) */
+.isl[data-sky="day"] [fill*="vgreen"] { display: none; }
 .isl .f-vcool { fill: var(--isl-vcool); }
 .isl[data-sky="day"] .f-vcool { fill: var(--isl-pulse); }
 .isl[data-sky="day"] :is(.s-vcool, .s-vcoolglow, [fill*="vcool"]) { display: none; }

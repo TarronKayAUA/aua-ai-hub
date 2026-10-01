@@ -929,8 +929,14 @@
     for (const [x] of lights[1]) if (r() < 0.5) s += dashes(streakList(x, y0, H, r, 0.04, 0.05).filter(([, y]) => y < y0 + Y(0.18)), 's-vglow', 1, [0.08, 0.16, 0.3]);
     // 3. The yachts, all racing left: hull heeled to leeward, a sheer line of light, a tall shaded
     //    mainsail, a jib or a spinnaker with its seams, a bow wave, and a reflection on the water.
-    let fleet = '', rf = '', sprays = '', clips = '', yi = 0;
-    const yacht = (x, wl, L, heel, spin, hued) => {
+    // (each version's fleet in its own bucket, drawn as that version's isl-lq group below)
+    let clips = '', yi = 0;
+    const B = {}, bk = (q) => (B[q] = B[q] || { fleet: '', rf: '', spD: '', spEls: '', glint: '', lights: [] });
+    // dir 1 races left (the port side toward us), -1 heads right, mirrored about x (the starboard side);
+    // q, the versions it shows in; rr, its random stream
+    const yacht = (x, wl, L, heel, spin, hued, dir = 1, q = 'y', rr = r) => {
+      const b = bk(q), m0 = dir < 0 ? `<g transform="translate(${F(2 * x)} 0) scale(-1 1)">` : '', m1 = dir < 0 ? '</g>' : '';
+      const sg = dir < 0 ? 'islvsailgm' : 'islvsailg';   // (mirrored, the sails keep their lit edge to the Sun's side)
       const mh = L * 1.45, mx = x + L * 0.08, hh = L * 0.1, id = `islvwl${yi++}`;
       // Heel shows in the rig's lean; the hull tilts by half as much, since a whole hull tipped in the
       // picture's plane reads as pitching bow-down rather than heeling (review, 2026-09-30).
@@ -951,37 +957,54 @@
       clips += `<clipPath id="${id}"><rect x="${F(x - L)}" y="${F(wl - H)}" width="${F(2 * L)}" height="${F(H)}"/></clipPath>`;
       const one = `<g clip-path="url(#${id})"><g ${gH}><path class="isl-vhull" d="${hull}"/><path class="isl-vsheer" d="${sheer}" stroke-width="${F(Math.max(0.8, L * 0.012))}"/></g></g>`
         + `<g ${g}><path class="isl-vmast" d="${mast}" stroke-width="${F(Math.max(0.7, L * 0.01))}"/>`
-        + `<path d="${main}" fill="url(#islvsailg)"/><path class="isl-vmast" d="${boom}" stroke-width="${F(Math.max(0.8, L * 0.014))}"/>`
-        + (spin ? `<path class="${hued ? 'isl-vspin-k' : spin === 2 ? 'isl-vspin2' : 'isl-vspin'}" d="${sp}"/><path class="isl-vseam" d="${seams}" stroke-width=".8"/>` : `<path d="${jib}" fill="url(#islvsailg)"/>`)
+        + `<path d="${main}" fill="url(#${sg})"/><path class="isl-vmast" d="${boom}" stroke-width="${F(Math.max(0.8, L * 0.014))}"/>`
+        + (spin ? `<path class="${hued ? 'isl-vspin-k' : spin === 2 ? 'isl-vspin2' : 'isl-vspin'}" d="${sp}"/><path class="isl-vseam" d="${seams}" stroke-width=".8"/>` : `<path d="${jib}" fill="url(#${sg})"/>`)
         + '</g>';
-      fleet += one;
+      b.fleet += m0 + one + m1;
       // its reflection, mirrored about its own waterline (the hull's cut mirrors with it)
-      rf += `<g transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${one}</g>`;
+      b.rf += `<g transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${m0}${one}${m1}</g>`;
       // the bow wave climbs from where the stem meets the water, with foam running aft along the hull
       const [p1x, p1y] = rotH(x - L * 0.5, wl - hh), [p2x, p2y] = rotH(x - L * 0.44, wl + L * 0.12);
       const sx = p1x + (p2x - p1x) * (wl - p1y) / (p2y - p1y);
-      sprays += `M${F(sx)} ${F(wl)}q${F(-L * 0.05)} ${F(-hh * 0.9)} ${F(-L * 0.15)} ${F(-hh * 0.1)}M${F(sx)} ${F(wl + 0.5)}H${F(x - L * 0.25)}`
+      const spr = `M${F(sx)} ${F(wl)}q${F(-L * 0.05)} ${F(-hh * 0.9)} ${F(-L * 0.15)} ${F(-hh * 0.1)}M${F(sx)} ${F(wl + 0.5)}H${F(x - L * 0.25)}`
         + `M${F(x + L * 0.4)} ${F(wl + 1)}h${F(L * 0.9)}M${F(x + L * 0.55)} ${F(wl + L * 0.05)}h${F(L * 0.6)}`;
+      if (dir < 0) b.spEls += `<path class="isl-vsurf" transform="translate(${F(2 * x)} 0) scale(-1 1)" d="${spr}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>`;
+      else b.spD += spr;
       // its lights turn with it: the masthead light on the masthead, the port sidelight on the bow. Racing
       // left, it shows the viewer its port side, so no green (owner, 2026-09-30: "an important accuracy change").
       // (the port sidelight at the bow only: a white masthead light marks a yacht under engine, not one
       // racing under sail; owner, 2026-10-01)
-      lights[0].push([...rotH(x - L * 0.5, wl - hh), 'r']);
-      s += dashes(streakList(x, wl + 1, Math.min(H, wl + L * 1.2), r, 0.06, 0.05), 's-vsailglint', 1, [0.06, 0.12, 0.2]);
+      { const [lx, ly] = rotH(x - L * 0.5, wl - hh); b.lights.push(dir < 0 ? [2 * x - lx, ly, 'g'] : [lx, ly, 'r']); }   // (heading right: green)
+      b.glint += dashes(streakList(x, wl + 1, Math.min(H, wl + L * 1.2), rr, 0.06, 0.05), 's-vsailglint', 1, [0.06, 0.12, 0.2]);
     };
     const racers = [[0.62, 0.635, 0.035, -4, true, false], [0.47, 0.645, 0.045, -6, false, false], [0.79, 0.655, 0.05, -5, true, false],
       [0.3, 0.685, 0.066, -7, true, true], [0.56, 0.725, 0.085, -8, false, false], [0.86, 0.77, 0.1, -6, 2, false]];
     for (const [fx, fy, fl, hd, sp, hu] of racers) yacht(X(fx), Y(fy), X(fl), hd, sp, hu);
+    // The fleet by the hour (owner, 2026-10-01: what is drawn may change between versions with a reason;
+    // art-audit wave 1, by version). Sailing Week races by day: today's six above race left by Day. At Dawn
+    // the fleet is only just out of Falmouth and English Harbour, bunched toward the coast under jibs (the
+    // coral boat already flying its spinnaker on the reach out). From Sunset it turns for home, heading right
+    // so we see the boats' starboard sides and green sidelights: all six at Sunset (the coral clear of the
+    // Sun's path), four at Dusk nearer the coast, the last two at Night. Their own random stream, so the
+    // Day picture is drawn exactly as before.
+    const r2 = rng(53);
+    for (const [fx, fy, fl, hd, sp, hu] of [[0.56, 0.63, 0.035, -3, false, false], [0.65, 0.64, 0.045, -4, false, false], [0.83, 0.65, 0.05, -4, false, false],
+      [0.45, 0.665, 0.06, -5, true, true], [0.73, 0.695, 0.08, -5, false, false], [0.92, 0.725, 0.09, -4, false, false]]) yacht(X(fx), Y(fy), X(fl), hd, sp, hu, 1, 'a', r2);
+    for (const [fx, fy, fl, hd, sp, hu] of [[0.62, 0.635, 0.035, -4, true, false], [0.47, 0.645, 0.045, -6, false, false], [0.79, 0.655, 0.05, -5, true, false],
+      [0.22, 0.685, 0.066, -7, true, true], [0.56, 0.725, 0.085, -8, false, false], [0.86, 0.77, 0.1, -6, 2, false]]) yacht(X(fx), Y(fy), X(fl), hd, sp, hu, -1, 's', r2);
+    for (const [fx, fy, fl, hd, sp, hu] of [[0.83, 0.655, 0.05, -5, true, false], [0.26, 0.685, 0.066, -7, true, true], [0.6, 0.725, 0.085, -8, false, false],
+      [0.9, 0.77, 0.1, -6, 2, false]]) yacht(X(fx), Y(fy), X(fl), hd, sp, hu, -1, 'd', r2);
+    for (const [fx, fy, fl, hd, sp, hu] of [[0.3, 0.685, 0.066, -6, true, true], [0.92, 0.77, 0.1, -5, 2, false]]) yacht(X(fx), Y(fy), X(fl), hd, sp, hu, -1, 'n', r2);
+    const QS = ['y', 'a', 's', 'd', 'n'];
     // the fleet's reflections, broken by the water
-    s += clips + `<g clip-path="url(#islsea)" opacity=".14">${rf}</g>`;
-    s += `<path class="isl-vsurf" d="${sprays}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>`;
+    s += clips + QS.filter((q) => B[q]).map((q) => `<g class="isl-lq" data-q="${q}">${B[q].glint}<g clip-path="url(#islsea)" opacity=".14">${B[q].rf}</g>`
+      + (B[q].spD ? `<path class="isl-vsurf" d="${B[q].spD}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>` : '') + B[q].spEls + '</g>').join('');
     // the shore's lights, behind the yachts (drawn after them, they had shown on the sails)
     s += `<path class="s-vlight isl-vwin isl-vlast" style="--i:3" d="${lights[1].map(([x, y]) => `M${F(x)} ${F(y)}h0`).join('')}" stroke-width="1.4"/>`;
-    s += fleet;
-    // The lights, the yachts first: port red and masthead white, each with a halo.
-    let yl = '';
-    for (const [x, y, c] of lights[0]) yl += `<circle class="isl-vnav-${c}" cx="${F(x)}" cy="${F(y)}" r="1.3"/>`;
-    s += `<g class="isl-vwin" style="--i:0">${lights[0].map(([x, y]) => halo(x, y, 6, 'islvred')).join('')}${yl}</g>`;
+    // Each version's fleet, and its sidelights: red to port racing left, green to starboard heading home.
+    s += QS.filter((q) => B[q]).map((q) => `<g class="isl-lq" data-q="${q}">${B[q].fleet}<g class="isl-vwin" style="--i:0">`
+      + B[q].lights.map(([x, y, c]) => halo(x, y, 6, c === 'g' ? 'islvgreen' : 'islvred')).join('')
+      + B[q].lights.map(([x, y, c]) => `<circle class="isl-vnav-${c}" cx="${F(x)}" cy="${F(y)}" r="1.3"/>`).join('') + '</g></g>').join('');
     return s;
   }
 
@@ -3826,6 +3849,8 @@
       + '<linearGradient id="islvcoolrefl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vcool" stop-opacity=".55"/><stop offset="1" class="st-vcool" stop-opacity="0"/></linearGradient>'
       + '<radialGradient id="islvmist"><stop offset="0" class="st-haze" stop-opacity=".5"/><stop offset=".6" class="st-haze" stop-opacity=".16"/><stop offset="1" class="st-haze" stop-opacity="0"/></radialGradient>'
       + '<radialGradient id="islvpool"><stop offset="0" class="st-g1" stop-opacity=".55"/><stop offset=".5" class="st-g1" stop-opacity=".18"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
+      + '<linearGradient id="islvsailgm" x1="1" y1="0" x2="0" y2="0"><stop offset="0" class="st-vsail" stop-opacity="1"/><stop offset="1" class="st-vsail2" stop-opacity="1"/></linearGradient>'
+      + '<radialGradient id="islvgreen"><stop offset="0" class="st-vgreen" stop-opacity=".45"/><stop offset=".5" class="st-vgreen" stop-opacity=".12"/><stop offset="1" class="st-vgreen" stop-opacity="0"/></radialGradient>'
       + '<linearGradient id="islvsailg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" class="st-vsail" stop-opacity="1"/><stop offset="1" class="st-vsail2" stop-opacity="1"/></linearGradient>'
       + '<linearGradient id="islvbrass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vbrass" stop-opacity="1"/><stop offset=".5" class="st-vbrass2" stop-opacity="1"/><stop offset="1" class="st-vbrass3" stop-opacity="1"/></linearGradient>'
       + '<linearGradient id="islvbay" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-vbay" stop-opacity=".55"/><stop offset="1" class="st-vbay" stop-opacity=".35"/></linearGradient>'
