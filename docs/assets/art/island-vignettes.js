@@ -2547,13 +2547,19 @@
     s += `<path class="isl-vpshade" d="${rect(t0, tTop + Y(0.012), tw, Y(0.03))}"/>`;   // the cornice's shadow on the shaft
     s += `<path class="isl-vsill" d="M${F(tc - tw * 0.33)} ${F(tTop - Y(0.02))}H${F(tc + tw * 0.33)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     // the bell, mid-swing on its yoke across the opening, its clapper hanging to the low side
-    const yokeY = bTop + Y(0.07), ang = -22;
+    // (a smaller swing: at -22 degrees the rim crossed about 6px onto the stone beside the opening; art-audit
+    // wave 1, 2026-10-01)
+    const yokeY = bTop + Y(0.07), ang = -15;
     s += `<path class="isl-vbeam" d="M${F(tc - tw * 0.34)} ${F(yokeY)}H${F(tc + tw * 0.34)}" stroke-width="${F(Math.max(1.5, Y(0.016)))}"/>`;
     const bh2 = Y(0.16), bwid = Y(0.086);
     const bellD = `M${F(-bwid * 0.28)} ${F(Y(0.012))}C${F(-bwid * 0.3)} ${F(bh2 * 0.35)} ${F(-bwid * 0.55)} ${F(bh2 * 0.7)} ${F(-bwid)} ${F(bh2)}H${F(bwid)}C${F(bwid * 0.55)} ${F(bh2 * 0.7)} ${F(bwid * 0.3)} ${F(bh2 * 0.35)} ${F(bwid * 0.28)} ${F(Y(0.012))}Q0 ${F(-Y(0.008))} ${F(-bwid * 0.28)} ${F(Y(0.012))}Z`;
     s += `<g transform="translate(${F(tc)} ${F(yokeY)}) rotate(${ang})"><path d="M0 0V${F(Y(0.014))}" class="isl-vbeam" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`
       + `<path d="${bellD}" fill="url(#islvbrass)"/><path class="isl-vbrass2" d="M${F(-bwid * 1.02)} ${F(bh2 - Y(0.012))}H${F(bwid * 1.02)}V${F(bh2)}H${F(-bwid * 1.02)}Z"/>`
       + `<path class="isl-vbeam" d="M0 ${F(bh2 * 0.5)}L${F(-bwid * 0.35)} ${F(bh2 + Y(0.02))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><circle class="isl-vbrass2" cx="${F(-bwid * 0.36)}" cy="${F(bh2 + Y(0.024))}" r="${F(Y(0.012))}"/></g>`;
+    // the bell's rope, from its headstock down through the belfry floor to whoever rings it, on the side the
+    // bell has swung away from
+    // (art-audit wave 1: the bell swung with nothing to ring it)
+    s += `<path class="isl-brope" d="M${F(tc - Y(0.04))} ${F(yokeY + Y(0.004))}Q${F(tc - Y(0.075))} ${F((yokeY + tTop) / 2)} ${F(tc - Y(0.085))} ${F(tTop - Y(0.02))}" stroke-width="${F(Math.max(0.9, Y(0.007)))}"/>`;
     // the pyramid roof and its vane
     s += `<path class="isl-troof" d="${polyD([[b0 - Y(0.03), bTop - Y(0.018)], [tc, roofTop + Y(0.04)], [b1 + Y(0.03), bTop - Y(0.018)]])}"/>`
       // (the vane whole inside the picture, on a short rod above the apex: it had been drawn above the frame)
@@ -2562,7 +2568,8 @@
     // 5. The rings of sound, spreading from the bell to the left, each in turn; birds lift off the roof.
     const scx = tc - Y(0.02), scy = yokeY + bh2 * 0.6;
     for (let k = 0; k < 3; k++) {
-      const rr = Y(0.17 + k * 0.12), a0 = Math.PI * (0.76 + k * 0.01), a1 = Math.PI * 1.26;
+      // (from just outside the belfry: the inner ring had lain wholly on the pier beside the opening)
+      const rr = Y(0.26 + k * 0.11), a0 = Math.PI * (0.8 + k * 0.01), a1 = Math.PI * 1.22;
       s += `<path class="isl-bsound isl-vwin" style="--i:${1 + k}" d="M${F(scx + Math.cos(a0) * rr)} ${F(scy + Math.sin(a0) * rr)}A${F(rr)} ${F(rr)} 0 0 1 ${F(scx + Math.cos(a1) * rr)} ${F(scy + Math.sin(a1) * rr)}" stroke-width="${F(Math.max(1.2, Y(0.014) * (1 - k * 0.2)))}" stroke-opacity="${(0.7 - k * 0.18).toFixed(2)}"/>`;
     }
     let birds = '';
@@ -2570,7 +2577,14 @@
       const cx = X(bx), cy = Y(by), w = Y(sz);
       birds += `M${F(cx - w)} ${F(cy - w * 0.2)}Q${F(cx - w * 0.5)} ${F(cy - w * 0.6)} ${F(cx)} ${F(cy)}Q${F(cx + w * 0.5)} ${F(cy - w * 0.6)} ${F(cx + w)} ${F(cy - w * 0.2)}`;
     }
-    s += `<path class="isl-bbird" d="${birds}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`;
+    // (not at Night: birds roost after dark; art-audit wave 1)
+    s += `<g class="isl-noct"><path class="isl-bbird" d="${birds}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`;
+    // the tower's door, arched, in the middle of its base (art-audit wave 1: it had no way in)
+    {
+      const dw = Y(0.075), dT = ground - Y(0.03) - Y(0.15);
+      s += `<path class="isl-vstone" d="${arch(tc, dT - Y(0.012), dw + Y(0.024), ground - Y(0.03))}"/><path class="isl-tdoor" d="${arch(tc, dT, dw, ground - Y(0.03))}"/>`
+        + `<path class="isl-vcourse" d="M${F(tc)} ${F(dT + dw * 0.45)}V${F(ground - Y(0.03))}" stroke-width=".7"/>`;
+    }
     // 6. The notice board at the tower's foot: two posts, a board in a frame under a little roof, its
     //    pinned notes; beside it the lantern on its post, in the page's hue, last.
     const nb0 = X(0.61), nb1 = nb0 + Y(0.4), nbT = Y(0.55), nbB = Y(0.78);
