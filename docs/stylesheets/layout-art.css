@@ -540,6 +540,8 @@
 }
 .isl[data-sky="dawn"] { --isl-lscreen: #b9cdf0; --isl-lbag1: #334062; --isl-lbag2: #44434e; --isl-lbag3: #86403f; }
 .isl[data-sky="sunset"] { --isl-lscreen: #c3d6ee; --isl-lbag1: #33405f; --isl-lbag2: #45423f; --isl-lbag3: #8b3c34; }
+/* the mug takes the night's light as the paper beside it does (it had kept its evening white and read as lit) */
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] { --isl-lmug: #a7a399; }
 .isl .isl-ltext { stroke: #6f6a60; stroke-opacity: 0.35; fill: none; }
 .isl .isl-lpageedge { fill: var(--isl-lpage); fill-opacity: 0.85; }
 .isl .isl-llogo { fill: #ffffff; fill-opacity: 0.35; }

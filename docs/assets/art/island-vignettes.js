@@ -2488,11 +2488,16 @@
     const farLand = `<path class="f-isl" d="${polyD([[wx0 - 2, y0 + 1], ...hill, [wx0 + ww + 2, y0 + 1]])}${scrubLine(hill, 2, 0.5, 1.1, r)}"/>`;
     let s = farLand + `<path class="s-rim" d="${lineD(hill.map(([x, y]) => [x, y + 0.5]))}" stroke-width="1" stroke-opacity=".3"/>` + mirrored(y0, farLand, 0.16) + mist(wx0, y0, ww, Y(0.05), 0.45);
     for (let i = 0; i < 6; i++) lights.push([wx0 + ww * (0.06 + r() * 0.88), y0 - Y(0.006 + r() * 0.03)]);
+    // (a short, faint column on the water under each of the hills' lights, as the windowView promised)
+    const rl = rng(4057);
+    for (const [lx] of lights) s += dashes(streakList(lx, y0 + 1, H, rl, 0.03, 0.025), 's-vglow', 1, [0.05, 0.1, 0.18]);
     let hulls = '', masts = '';
     for (const [fx, fy, k] of [[0.3, 0.08, 0.8], [0.72, 0.12, 1]].slice(0, boats)) {
       const bx = wx0 + ww * fx, by = y0 + Y(fy), hw = Y(0.04) * k, mh = Y(0.22) * k;
-      hulls += `M${F(bx - hw)} ${F(by - Y(0.015) * k)}H${F(bx + hw)}L${F(bx + hw * 0.72)} ${F(by)}H${F(bx - hw * 0.78)}Z`;
-      masts += `M${F(bx)} ${F(by - Y(0.015) * k)}V${F(by - mh)}`;
+      const hd = `M${F(bx - hw)} ${F(by - Y(0.015) * k)}H${F(bx + hw)}L${F(bx + hw * 0.72)} ${F(by)}H${F(bx - hw * 0.78)}Z`, md = `M${F(bx)} ${F(by - Y(0.015) * k)}V${F(by - mh)}`;
+      s += `<g transform="translate(0 ${F(2 * by)}) scale(1 -1)" opacity=".18"><path class="isl-vhull" d="${hd}"/><path class="isl-vmast" d="${md}" stroke-width=".8"/></g>`;   // its reflection
+      hulls += hd;
+      masts += md;
       lights.push([bx, by - mh]);
       s += dashes(streakList(bx, by + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.08, 0.16, 0.3]);
     }
@@ -2522,7 +2527,8 @@
     // 1. The calendar: hung from a nail by its cord; a binding bar, a band where its month's picture
     //    would be, a row of day initials (ticks), and the month's grid, seven days by five weeks.
     const cw = Y(0.86), cx0 = X(0.44) - cw / 2, cT = Y(0.1), cB = Y(0.74), gT = cT + Y(0.2);
-    s += `<path class="isl-tdrop" d="${rect(cx0 + Y(0.012), cT + Y(0.02), cw, cB - cT)}"/>`
+    // (its shadow falls down and to the left, away from the window and the sconce, the room's lights)
+    s += `<path class="isl-tdrop" d="${rect(cx0 - Y(0.012), cT + Y(0.02), cw, cB - cT)}"/>`
       + `<path class="isl-bink" d="M${F(cx0 + cw * 0.3)} ${F(cT)}L${F(cx0 + cw / 2)} ${F(cT - Y(0.07))}L${F(cx0 + cw * 0.7)} ${F(cT)}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
       + `<circle class="isl-tiron" cx="${F(cx0 + cw / 2)}" cy="${F(cT - Y(0.07))}" r="${F(Math.max(1.2, Y(0.01)))}"/>`
       + `<path class="isl-lpage" d="${rect(cx0, cT, cw, cB - cT)}"/>`
@@ -2532,7 +2538,8 @@
     for (let c = 0; c < cols; c++) ticks += `M${F(gx0 + (c + 0.35) * gw)} ${F(gT - Y(0.03))}h${F(gw * 0.3)}`;
     for (let c = 0; c <= cols; c++) grid += `M${F(gx0 + c * gw)} ${F(gT)}V${F(gT + rows * gh)}`;
     for (let rr = 0; rr <= rows; rr++) grid += `M${F(gx0)} ${F(gT + rr * gh)}H${F(gx0 + cols * gw)}`;
-    for (const [c, rr, cls] of [[1, 0, 'isl-lbk2'], [4, 1, 'isl-lbk3'], [2, 2, 'isl-lbk1'], [5, 3, 'isl-lbk2'], [0, 4, 'isl-lbk3'], [6, 1, 'isl-lbk1']]) {
+    // (an event later this week, inside the ring after today; none under a crossed-off day or the ring's edge)
+    for (const [c, rr, cls] of [[1, 0, 'isl-lbk2'], [4, 1, 'isl-lbk3'], [5, 2, 'isl-lbk1'], [5, 4, 'isl-lbk2'], [0, 4, 'isl-lbk3'], [6, 1, 'isl-lbk1']]) {
       dots += `<circle class="${cls}" cx="${F(gx0 + (c + 0.72) * gw)}" cy="${F(gT + (rr + 0.3) * gh)}" r="${F(Math.max(1, gh * 0.11))}"/>`;
     }
     s += `<path class="isl-bink" d="${ticks}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><path class="isl-cgrid" d="${grid}" stroke-width=".8"/>${dots}`;
@@ -2545,7 +2552,7 @@
     s += `<g class="isl-vwin isl-vlast" style="--i:3"><rect class="isl-cring" x="${F(gx0 - Y(0.012))}" y="${F(wy - Y(0.012))}" width="${F(cols * gw + Y(0.024))}" height="${F(gh + Y(0.024))}" rx="${F(gh * 0.35)}" stroke-width="${F(Math.max(1.6, Y(0.016)))}"/></g>`;
     // 2. The clock, left of the calendar, its hands at each version's hour.
     const kx = X(0.15), ky = Y(0.3), kr = Y(0.14);
-    s += `<circle class="isl-tdrop" cx="${F(kx + Y(0.01))}" cy="${F(ky + Y(0.014))}" r="${F(kr)}"/><circle class="isl-lwood2" cx="${F(kx)}" cy="${F(ky)}" r="${F(kr)}"/><circle class="isl-lpage" cx="${F(kx)}" cy="${F(ky)}" r="${F(kr * 0.84)}"/>`;
+    s += `<circle class="isl-tdrop" cx="${F(kx - Y(0.01))}" cy="${F(ky + Y(0.014))}" r="${F(kr)}"/><circle class="isl-lwood2" cx="${F(kx)}" cy="${F(ky)}" r="${F(kr)}"/><circle class="isl-lpage" cx="${F(kx)}" cy="${F(ky)}" r="${F(kr * 0.84)}"/>`;
     let marks = '';
     for (let i = 0; i < 12; i++) { const a = (i / 12) * Math.PI * 2; marks += `M${F(kx + Math.sin(a) * kr * 0.7)} ${F(ky - Math.cos(a) * kr * 0.7)}L${F(kx + Math.sin(a) * kr * 0.78)} ${F(ky - Math.cos(a) * kr * 0.78)}`; }
     s += `<path class="isl-bink" d="${marks}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/>`;
@@ -2565,13 +2572,19 @@
       + `<path class="isl-bink" d="M${F(px + pw * 0.1)} ${F(sh - ph * 0.72)}h${F(pw * 0.7)}" stroke-width="${F(Math.max(1.2, Y(0.014)))}"/>`
       + `<path class="isl-ltext" d="M${F(px + pw * 0.1)} ${F(sh - ph * 0.38)}h${F(pw * 0.35)}M${F(px + pw * 0.52)} ${F(sh - ph * 0.38)}h${F(pw * 0.36)}M${F(px + pw * 0.1)} ${F(sh - ph * 0.18)}h${F(pw * 0.33)}M${F(px + pw * 0.52)} ${F(sh - ph * 0.18)}h${F(pw * 0.3)}" stroke-width="${F(Math.max(0.6, Y(0.006)))}"/>`;
     const mx = px + pw + Y(0.1), mw = Y(0.035), mt = sh - Y(0.09);
-    s += `<path class="isl-lmug" d="M${F(mx - mw)} ${F(sh)}V${F(mt)}H${F(mx + mw)}V${F(sh)}Z"/><path class="isl-lmugh" d="M${F(mx + mw)} ${F(mt + Y(0.02))}q${F(mw * 0.9)} ${F(Y(0.025))} 0 ${F(Y(0.05))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    s += `<path class="isl-lmug" d="M${F(mx - mw)} ${F(sh)}V${F(mt)}H${F(mx + mw)}V${F(sh)}Z"/>`
+      + `<path class="isl-lredsh" d="${rect(mx - mw, mt, mw * 0.65, sh - mt)}"/>`   // (its side away from the lights)
+      + `<ellipse class="isl-lmug" cx="${F(mx)}" cy="${F(mt)}" rx="${F(mw)}" ry="${F(Y(0.008))}"/><ellipse class="isl-lbronze" cx="${F(mx)}" cy="${F(mt + 0.5)}" rx="${F(mw * 0.8)}" ry="${F(Y(0.0055))}"/>`
+      + `<path class="isl-lmugh" d="M${F(mx + mw)} ${F(mt + Y(0.02))}q${F(mw * 0.9)} ${F(Y(0.025))} 0 ${F(Y(0.05))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     const tx = sh1 - Y(0.12);
     s += `<path class="isl-lred" d="M${F(tx - Y(0.04))} ${F(sh)}L${F(tx - Y(0.05))} ${F(sh - Y(0.07))}H${F(tx + Y(0.05))}L${F(tx + Y(0.04))} ${F(sh)}Z"/>`
-      + shrubs([[tx - Y(0.02), sh - Y(0.07), Y(0.045)], [tx + Y(0.025), sh - Y(0.075), Y(0.04)], [tx, sh - Y(0.1), Y(0.04)]], r);
+      // (a room's green in every version: as the hill's scrub it took the landscape's night colour indoors)
+      + shrubs([[tx - Y(0.02), sh - Y(0.07), Y(0.045)], [tx + Y(0.025), sh - Y(0.075), Y(0.04)], [tx, sh - Y(0.1), Y(0.04)]], r).replace('f-near isl-shrub', 'isl-tshade isl-shrub');
     // 4. The sconce between the calendar and the window, lit from Dawn to Night.
     const lx = (cx0 + cw + f.wx0) / 2, ly = Y(0.22);
-    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.04), Y(0.22), 'islvbulb')}<path d="${polyD([[lx - Y(0.03), ly + Y(0.06)], [lx + Y(0.03), ly + Y(0.06)], [lx + Y(0.12), Y(0.62)], [lx - Y(0.12), Y(0.62)]])}" fill="url(#islvspill)"/></g>`;
+    // (its lit mouth under the shade, and its cone kept on the wall, between the calendar and the window)
+    const cf = Math.min(Y(0.12), (f.wx0 - (cx0 + cw)) / 2 - Y(0.012));
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.04), Y(0.22), 'islvbulb')}<ellipse class="isl-tbulb" cx="${F(lx)}" cy="${F(ly + Y(0.07))}" rx="${F(Y(0.026))}" ry="${F(Y(0.008))}"/><path d="${polyD([[lx - Y(0.03), ly + Y(0.06)], [lx + Y(0.03), ly + Y(0.06)], [lx + cf, Y(0.62)], [lx - cf, Y(0.62)]])}" fill="url(#islvspill)"/></g>`;
     s += `<path class="isl-lbronze" d="${rect(lx - Y(0.012), ly - Y(0.04), Y(0.024), Y(0.05))}"/><path class="isl-cshade" d="M${F(lx - Y(0.035))} ${F(ly)}H${F(lx + Y(0.035))}L${F(lx + Y(0.03))} ${F(ly + Y(0.07))}H${F(lx - Y(0.03))}Z"/>`;
     return `<g style="--isl-vstep:.5s">${s}</g>`;
   }

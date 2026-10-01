@@ -152,24 +152,24 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 - [x] #42 fix v3 `hospital-room-2`: Hang the drip bag from its hook, with a drip chamber
 - [x] #52 add v3 `hospital-room-8`: The reading lamp's lit underside
 - [x] #62 fix v2 `hospital-room-3`: A wall plate for the monitor's arm
-- [ ] #77 fix v2 `hospital-room-4`: Columns on the water under the window's hill lights
+- [x] #77 fix v2 `hospital-room-4`: Columns on the water under the window's hill lights
 - [x] #90 add v2 `hospital-room-5`: The reading lamp's light landing on the bed
 - [x] #109 add v2 `hospital-room-6`: The mesh band at the top of the privacy curtain
 
 ### week-calendar
 
 - [x] #4 fix v4 `week-calendar-1`: The Sunset clock shows two hour hands
-- [ ] #30 fix v3 `week-calendar-3`: Event dots collide with a crossed-off day and the ring
-- [ ] #33 fix v3 `week-calendar-2`: The potted plant is drawn in the landscape's night colour
-- [ ] #40 fix v3 `week-calendar-7`: The mug keeps its evening white at Night
-- [ ] #53 add v3 `week-calendar-5`: The sconce's own light: the lit mouth under its shade
-- [ ] #71 fix v2 `week-calendar-4`: Calendar and clock shadows fall toward the lights
+- [x] #30 fix v3 `week-calendar-3`: Event dots collide with a crossed-off day and the ring
+- [x] #33 fix v3 `week-calendar-2`: The potted plant is drawn in the landscape's night colour
+- [x] #40 fix v3 `week-calendar-7`: The mug keeps its evening white at Night
+- [x] #53 add v3 `week-calendar-5`: The sconce's own light: the lit mouth under its shade
+- [x] #71 fix v2 `week-calendar-4`: Calendar and clock shadows fall toward the lights
 
 ### committee-room
 
 - [ ] #31 fix v3 `committee-room-1`: The water jug's handle is on its spout side
 - [ ] #41 fix v3 `committee-room-2`: The lampshade's underside is missing by Day
-- [ ] #82 add v2 `week-calendar-6+committee-room-5`: The boats' reflections in the window view
+- [x] #82 add v2 `week-calendar-6+committee-room-5`: The boats' reflections in the window view
 - [ ] #87 add v2 `committee-room-4`: A shadow under the window sill
 - [ ] #110 add v2 `committee-room-3`: A marker tray under the project board
 
