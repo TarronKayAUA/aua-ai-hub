@@ -540,6 +540,8 @@
 }
 .isl[data-sky="dawn"] { --isl-lscreen: #b9cdf0; --isl-lbag1: #334062; --isl-lbag2: #44434e; --isl-lbag3: #86403f; }
 .isl[data-sky="sunset"] { --isl-lscreen: #c3d6ee; --isl-lbag1: #33405f; --isl-lbag2: #45423f; --isl-lbag3: #8b3c34; }
+/* the mug takes the night's light as the paper beside it does (it had kept its evening white and read as lit) */
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] { --isl-lmug: #a7a399; }
 .isl .isl-ltext { stroke: #6f6a60; stroke-opacity: 0.35; fill: none; }
 .isl .isl-lpageedge { fill: var(--isl-lpage); fill-opacity: 0.85; }
 .isl .isl-llogo { fill: #ffffff; fill-opacity: 0.35; }
@@ -663,6 +665,8 @@
 .isl .isl-mstand { stroke: var(--isl-tiron); fill: none; stroke-linecap: round; }
 .isl .isl-mbone { stroke: var(--isl-bone); fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .isl .isl-mbonef { fill: var(--isl-bone); }
+/* the skeleton's shadow on the wall just behind it, so its bones read against a wall of nearly their colour */
+.isl .isl-mbshadow { stroke: var(--isl-lside); stroke-opacity: 0.22; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 .isl .isl-mhole { stroke: #3a3730; fill: none; stroke-linecap: round; }
 .isl .isl-mseat { fill: var(--isl-mseat); }
 .isl .isl-mseat2 { fill: var(--isl-mseat); filter: brightness(0.82); }
@@ -759,11 +763,11 @@
 /* The campus's materials (from the owner's photographs of AUA): cream walls, a terracotta ground
    floor, red roofs and white verandas, as dusk shows them (light scheme) and as night does (dark). */
 .isl {
-  --isl-vwall: #8b97a6; --isl-vshade: #707d8e; --isl-vband: #7b5a5a; --isl-vroof: #8e3d47;
+  --isl-vwall: #8b97a6; --isl-vshade: #55524d; --isl-vband: #7b5a5a; --isl-vroof: #8e3d47;
   --isl-vroof2: #74323d; --isl-vdark: #34475d; --isl-vdrive: #17324c; --isl-vrail: rgba(236, 239, 243, 0.55);
 }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
-  --isl-vwall: #2f3f54; --isl-vshade: #253449; --isl-vband: #3b2c36; --isl-vroof: #4e2533;
+  --isl-vwall: #2f3f54; --isl-vshade: #20242b; --isl-vband: #3b2c36; --isl-vroof: #4e2533;
   --isl-vroof2: #3e1d2a; --isl-vdark: #17243a; --isl-vdrive: #0d1b2d; --isl-vrail: rgba(200, 212, 228, 0.3);
 }
 .isl .isl-vwall { fill: var(--isl-vwall); }
