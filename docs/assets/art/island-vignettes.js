@@ -1770,8 +1770,17 @@
     const cl = along(bL, yC, -2), cr = along(bR, yC, W + 2), fl = along(bL, yF, -2), fr = along(bR, yF, W + 2);
     const lw = [[-2, cl], [bL, yC], [bL, yF], [-2, fl]], rw = [[bR, yC], [W + 2, cr], [W + 2, fr], [bR, yF]];
     s += `<path class="isl-lceil" d="${polyD([[-2, -2], [W + 2, -2], [W + 2, cr], [bR, yC], [bL, yC], [-2, cl]])}"/>`;
-    s += `<path fill="url(#isllwallg)" fill-rule="evenodd" d="${rect(bL, yC, bR - bL, yF - yC)}${wins.map((x) => rect(x, wT, ww, wB - wT)).join('')}"/>`;
-    s += `<path fill="url(#isllwallg)" fill-rule="evenodd" d="${polyD(lw)}${polyD(rw)}${polyD(rwin)}"/>`;
+    // (each opening shows the wall's thickness, 0.25 m, on the side that faces the camera: the far windows
+    // left of the vanishing point their left jamb, those right of it their right; the side window its far
+    // jamb. A jamb inside a hole fills again under evenodd. The frames sit back in the reveal, below.)
+    const ko = D / (D + 0.25), rec = (x, y) => [vx + (x - vx) * ko, vy + (y - vy) * ko];
+    const jamb = (x) => polyD([[x, wT], rec(x, wT), rec(x, wB), [x, wB]]);
+    const jambs = wins.map((x) => (x + ww / 2 < vx ? jamb(x) : jamb(x + ww))).join('');
+    const kz = (sx0 - vx) / (bR - vx), rjw = 0.25 * m * kz;
+    const rj = polyD([[sx0, along(bR, wT, sx0)], [sx0 + rjw, along(bR, wT, sx0 + rjw)], [sx0 + rjw, along(bR, wB, sx0 + rjw)], [sx0, along(bR, wB, sx0)]]);
+    s += `<path fill="url(#isllwallg)" fill-rule="evenodd" d="${rect(bL, yC, bR - bL, yF - yC)}${wins.map((x) => rect(x, wT, ww, wB - wT)).join('')}${jambs}"/>`;
+    s += `<path class="isl-lsidew" d="${jambs}"/>`;
+    s += `<path fill="url(#isllwallg)" fill-rule="evenodd" d="${polyD(lw)}${polyD(rw)}${polyD(rwin)}${rj}"/>`;
     s += `<path class="isl-lsidew" fill-rule="evenodd" d="${polyD(lw)}${polyD(rw)}${polyD(rwin)}"/>`;
     s += `<path class="isl-lfloor" d="${polyD([[-2, fl], [bL, yF], [bR, yF], [W + 2, fr], [W + 2, H + 2], [-2, H + 2]])}"/>`;
     // the dropped ceiling's grid and its light panels, lit by Day
@@ -1808,13 +1817,18 @@
     // window frames, mullions and sills
     let wf = '', mul = '', sill = '';
     for (const x of wins) {
-      wf += rect(x, wT, ww, wB - wT);
-      mul += `M${F(x + ww * 0.27)} ${F(wT)}V${F(wB)}M${F(x + ww * 0.73)} ${F(wT)}V${F(wB)}`;
+      const [fx0, fy0] = rec(x, wT), [fx1, fy1] = rec(x + ww, wB);   // the frame, set back in the reveal
+      wf += rect(fx0, fy0, fx1 - fx0, fy1 - fy0);
+      mul += `M${F(fx0 + (fx1 - fx0) * 0.27)} ${F(fy0)}V${F(fy1)}M${F(fx0 + (fx1 - fx0) * 0.73)} ${F(fy0)}V${F(fy1)}`;
       sill += rect(x - m * 0.08, wB, ww + m * 0.16, m * 0.07);
     }
-    const smx = (sx0 + sx1) / 2;
+    const sxr = sx0 + rjw, smx = (sxr + sx1) / 2;
+    const rwinF = [[sxr, along(bR, wT, sxr)], [sx1, along(bR, wT, sx1)], [sx1, along(bR, wB, sx1)], [sxr, along(bR, wB, sxr)]];
     mul += `M${F(smx)} ${F(along(bR, wT, smx))}L${F(smx)} ${F(along(bR, wB, smx))}`;
-    s += `<path class="isl-lframe" d="${wf}${polyD(rwin)}" stroke-width="${wd(m * 0.07)}"/><path class="isl-lframe" d="${mul}" stroke-width="${wd(m * 0.05)}"/><path class="isl-lsill" d="${sill}"/>`;
+    // #72: the side window's sill, in perspective, a little longer than the opening, thicker toward the viewer
+    const kxw = (x) => (x - vx) / (bR - vx), sa = sx0 - m * 0.08 * kxw(sx0), sb = sx1 + m * 0.08 * kxw(sx1);
+    sill += polyD([[sa, along(bR, wB, sa)], [sb, along(bR, wB, sb)], [sb, along(bR, wB, sb) + m * 0.07 * kxw(sb)], [sa, along(bR, wB, sa) + m * 0.07 * kxw(sa)]]);
+    s += `<path class="isl-lframe" d="${wf}${polyD(rwinF)}" stroke-width="${wd(m * 0.07)}"/><path class="isl-lframe" d="${mul}" stroke-width="${wd(m * 0.05)}"/><path class="isl-lsill" d="${sill}"/>`;
     // By Day the sun lies on the floor under the far windows.
     let sun = '';
     for (const x of wins) sun += quad(pt(x - m * 0.2, 0, 0.12), pt(x + ww - m * 0.2, 0, 0.12), pt(x + ww - m * 1.6, 0, 3.4), pt(x - m * 1.6, 0, 3.4));
@@ -1854,12 +1868,12 @@
       }
       return o + `<path class="isl-lshade" d="${shade}"/><path class="isl-lshadehi" d="${hi}" stroke-width="${wd(0.02 * m * k)}"/><path class="isl-lbronze" d="${cap}"/>` + `<g class="isl-vlamps isl-vwin${last ? ' isl-vlast' : ''}" style="--i:${i}">${lit}</g>`;
     };
-    // A table: its top, its front edge, and legs at the near corners.
+    // A table: its top, its front edge, and its four legs (the far pair first, behind the near).
     const table = (lx0, lx1, za, zb) => {
       const a = pt(lx0, 0.75, za), b = pt(lx1, 0.75, za), c = pt(lx1, 0.75, zb), d = pt(lx0, 0.75, zb);
       const c2 = pt(lx1, 0.7, zb), d2 = pt(lx0, 0.7, zb);
       let legs = '';
-      for (const lx of [lx0 + 0.06 * m, lx1 - 0.12 * m]) legs += quad(pt(lx, 0.7, zb - 0.06), pt(lx + 0.06 * m, 0.7, zb - 0.06), pt(lx + 0.06 * m, 0, zb - 0.06), pt(lx, 0, zb - 0.06));
+      for (const z of [za + 0.06, zb - 0.06]) for (const lx of [lx0 + 0.06 * m, lx1 - 0.12 * m]) legs += quad(pt(lx, 0.7, z), pt(lx + 0.06 * m, 0.7, z), pt(lx + 0.06 * m, 0, z), pt(lx, 0, z));
       return `<path class="isl-lwood2" d="${legs}"/><path class="isl-lwood" d="${quad(a, b, c, d)}"/><path class="isl-lwood2" d="${quad(d, c, c2, d2)}"/>`
         + `<path class="isl-ledge" d="M${F(a[0])} ${F(a[1])}L${F(b[0])} ${F(b[1])}" stroke-width="${wd(0.015 * m * sc(za))}"/>`;
     };
@@ -1962,7 +1976,9 @@
     red += quad(pt(lc, 0.78, 6.6), pt(lc1, 0.78, 6.6), pt(lc1, 1.42, 6.6), pt(lc, 1.42, 6.6));
     grey += quad(pt(lc, 0.08, 6.6), pt(lc1, 0.08, 6.6), pt(lc1, 0.78, 6.6), pt(lc, 0.78, 6.6));
     alu += quad(pt(lc, 1.42, cz[0]), pt(lc, 1.47, cz[0]), pt(lc, 1.47, 6.6), pt(lc, 1.42, 6.6)) + quad(pt(lc, 0.76, cz[0]), pt(lc, 0.8, cz[0]), pt(lc, 0.8, 6.6), pt(lc, 0.76, 6.6));
-    alu += quad(pt(lc, 1.42, 6.6), pt(lc1, 1.42, 6.6), pt(lc1, 1.47, 6.6), pt(lc, 1.47, 6.6)) + quad(pt(lc, 0.76, 6.6), pt(lc1, 0.76, 6.6), pt(lc1, 0.8, 6.6), pt(lc, 0.8, 6.6));
+    // (the end's rails and posts wound as the long side's, so where they overlap the fill holds: wound the
+    // other way the nearest post and rails had shown as hollow outlines)
+    alu += quad(pt(lc, 1.42, 6.6), pt(lc, 1.47, 6.6), pt(lc1, 1.47, 6.6), pt(lc1, 1.42, 6.6)) + quad(pt(lc, 0.76, 6.6), pt(lc, 0.8, 6.6), pt(lc1, 0.8, 6.6), pt(lc1, 0.76, 6.6));
     for (const z of cz) {
       alu += quad(pt(lc, 0, z - 0.03), pt(lc, 1.47, z - 0.03), pt(lc, 1.47, z + 0.03), pt(lc, 0, z + 0.03));
       const [ax, ay] = pt(lc, 1.47, z), [bx2, by2] = pt(lc + 1.1 * m, 1.47, z);
@@ -1970,7 +1986,7 @@
       if (z < 6.6) sign += quad(pt(lc, 1.24, z + 0.05), pt(lc, 1.36, z + 0.05), pt(lc, 1.36, z + 0.3), pt(lc, 1.24, z + 0.3));
     }
     sign += quad(pt(lc + 0.08 * m, 1.24, 6.6), pt(lc + 0.36 * m, 1.24, 6.6), pt(lc + 0.36 * m, 1.36, 6.6), pt(lc + 0.08 * m, 1.36, 6.6));
-    for (const x of [lc, lc1]) alu += quad(pt(x - 0.03 * m, 0, 6.6), pt(x + 0.03 * m, 0, 6.6), pt(x + 0.03 * m, 1.47, 6.6), pt(x - 0.03 * m, 1.47, 6.6));
+    for (const x of [lc, lc1]) alu += quad(pt(x - 0.03 * m, 0, 6.6), pt(x - 0.03 * m, 1.47, 6.6), pt(x + 0.03 * m, 1.47, 6.6), pt(x + 0.03 * m, 0, 6.6));
     s += `<path class="isl-lred2" d="${grey}"/><path class="isl-lred" d="${red}"/><path class="isl-lredsh" d="${red}"/><path class="isl-lalu" d="${alu}"/><path class="isl-lsign" d="${sign}"/>`;
     // The middle row: a table with two lamps, chairs on its far side.
     const m0 = lxAt(X(0.03), 5.4), m1 = lxAt(X(0.56), 5.4);

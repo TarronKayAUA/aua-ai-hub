@@ -86,10 +86,10 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### library
 
-- [ ] #12 fix v4 `library-1`: The carrel row's nearest corner post and rails are see-through
-- [ ] #61 add v3 `library-3`: Window reveals: the wall's thickness turning into each opening
-- [ ] #64 fix v2 `library-2`: Tables stand on two legs: add the far legs
-- [ ] #72 fix v2 `library-4`: The right-hand wall's window has no sill
+- [x] #12 fix v4 `library-1`: The carrel row's nearest corner post and rails are see-through
+- [x] #61 add v3 `library-3`: Window reveals: the wall's thickness turning into each opening
+- [x] #64 fix v2 `library-2`: Tables stand on two legs: add the far legs
+- [x] #72 fix v2 `library-4`: The right-hand wall's window has no sill
 
 ### telescope
 
