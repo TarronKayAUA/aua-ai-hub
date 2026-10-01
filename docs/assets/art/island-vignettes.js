@@ -3047,8 +3047,12 @@
       s += `<g class="isl-mroom"><path class="isl-lalu" d="${rect(e0 - Y(0.01), eT - Y(0.01), ew + Y(0.02), eB - eT + Y(0.01))}"/>`
         + `<path fill="#66707a" d="${rect(e0, eT, ew, eB - eT)}"/><path fill="#8fa2b3" d="${rect(e0 + ew * 0.62, eT + Y(0.06), ew * 0.16, Y(0.16))}"/>`
         + `<path class="isl-lalu" d="${rect(e0 + ew * 0.1, eT + Y(0.3), ew * 0.8, Math.max(1.5, Y(0.014)))}"/></g>`;
+      const exitGlow = `<ellipse cx="${F(g0 + gw / 2)}" cy="${F(gT + gh / 2)}" rx="${F(gw * 1.3)}" ry="${F(gh * 2.2)}" fill="url(#isllexitg)"/>`;
       s += `<defs><radialGradient id="isllexitg"><stop offset="0" stop-color="#3ad07c" stop-opacity=".45"/><stop offset="1" stop-color="#3ad07c" stop-opacity="0"/></radialGradient></defs>`
-        + `<g class="isl-vlamps"><ellipse cx="${F(g0 + gw / 2)}" cy="${F(gT + gh / 2)}" rx="${F(gw * 1.3)}" ry="${F(gh * 2.2)}" fill="url(#isllexitg)"/></g>`;
+        + `<g class="isl-lq" data-q="aysd"><g class="isl-vlamps">${exitGlow}</g></g>`
+        // (at Night, with the projector off, the glow is the last light in the pass: the pass ends on an
+        // isl-vlast's animationend, and without one the card stayed running and replayed on every redraw)
+        + `<g class="isl-lq" data-q="n"><g class="isl-vlamps isl-vlast">${exitGlow}</g></g>`;
       const fx = (k) => g0 + gw * k, fy = (k) => gT + gh * k, sw = Math.max(0.8, gh * 0.09);
       s += `<path fill="#178a4a" d="${rect(g0, gT, gw, gh)}"/>`
         + `<path stroke="#f1fff6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="${F(sw)}" d="`
@@ -3058,17 +3062,19 @@
         + `M${F(fx(0.74))} ${F(fy(0.5))}H${F(fx(0.92))}M${F(fx(0.86))} ${F(fy(0.38))}L${F(fx(0.92))} ${F(fy(0.5))}L${F(fx(0.86))} ${F(fy(0.62))}"/>`   // the arrow
         + `<circle fill="#f1fff6" cx="${F(fx(0.33))}" cy="${F(fy(0.2))}" r="${F(gh * 0.1)}"/>`;
     }
-    // 1. The screen at the right of the front wall, lit: the heart and its notes; the projector's beam.
+    // 1. The screen at the right of the front wall, lit from Dawn to Dusk with the hour's slide and its notes,
+    //    the projector's beam; at Night the hall is closed and the projector off, the screen blank and dark.
     const sx0 = X(0.62), sx1 = X(0.97), sT = Y(0.08), sB = Y(0.6), scx = sx0 + (sx1 - sx0) * 0.34, scy = (sT + sB) / 2;
     // (from a projector hung from the ceiling: the beam had come from nowhere at the top edge)
     const pjx = X(0.8), pjy = Y(0.035);
-    // (the beam is the projector's own cool white, faint, seen in the dark hall's air; not by Day)
+    // (the beam is the projector's own cool white, faint, seen in the dark hall's air; not by Day, and none at
+    // Night, the projector off)
     s += `<defs><linearGradient id="isllbeam" gradientUnits="userSpaceOnUse" x1="${F(pjx)}" y1="${F(pjy)}" x2="${F(pjx)}" y2="${F(sB)}"><stop offset="0" class="st-vcool" stop-opacity=".2"/><stop offset="1" class="st-vcool" stop-opacity=".04"/></linearGradient></defs>`
-      + `<path class="isl-mbeam" d="${polyD([[pjx - Y(0.015), pjy], [pjx + Y(0.015), pjy], [sx1, sT], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#isllbeam)"/>`;
+      + `<g class="isl-lq" data-q="aysd"><path class="isl-mbeam" d="${polyD([[pjx - Y(0.015), pjy], [pjx + Y(0.015), pjy], [sx1, sT], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#isllbeam)"/></g>`;
     s += `<path class="isl-tiron" d="${rect(pjx - 1, -2, 2, Y(0.014) + 2)}${rect(pjx - Y(0.055), Y(0.012), Y(0.11), Y(0.028))}"/>`;
     s += `<path class="isl-tiron" d="${rect(sx0 - Y(0.012), sT - Y(0.012), sx1 - sx0 + Y(0.024), sB - sT + Y(0.024))}"/><path class="isl-mscreen" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}"/>`
       + `<defs><radialGradient id="isllscrv" cx=".5" cy=".45" r=".75"><stop offset=".35" stop-color="#0b1a2b" stop-opacity="0"/><stop offset="1" stop-color="#0b1a2b" stop-opacity=".24"/></radialGradient></defs>`
-      + `<path class="isl-mscrv" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}" fill="url(#isllscrv)"/>`;   // its falloff (first audit)
+      + `<g class="isl-lq" data-q="aysd"><path class="isl-mscrv" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}" fill="url(#isllscrv)"/></g>`;   // its falloff (first audit; none at Night, the screen off)
     // The heart as an anatomy slide shows it, from the front (first audit, 2026-10-01: it had read as a
     // Valentine tied with string): the right atrium bulging at the viewer's left, the apex down and to the
     // right, the superior vena cava coming down into the atrium, the aorta rising and arching to the right
@@ -3091,15 +3097,15 @@
     // on the professor"): Dawn's histology, a stained section in a round microscope field (pink tissue, purple
     // nuclei, a gland's lumen ringed by its cells); by Day the heart; Sunset's radiology, a chest X-ray (dark
     // lungs, pale ribs, spine, clavicles, the heart's shadow and the diaphragm); Dusk's neuroanatomy, the brain
-    // from the side (its lobes' sulci, the cerebellum, the brainstem). At Night the student reviews the day's
-    // heart. Each lights last in the pass.
+    // from the side (its lobes' sulci, the cerebellum, the brainstem). At Night the hall is closed and the
+    // projector off. Each lights last in the pass.
     const slide = (q, inner) => `<g class="isl-lq" data-q="${q}"><g class="isl-vwin isl-vlast" style="--i:3">${inner}</g></g>`;
     let notes = '';
     const nx = sx0 + (sx1 - sx0) * 0.66, ny = (i) => sT + (sB - sT) * (0.28 + i * 0.14);
     for (let i = 0; i < 4; i++) notes += `M${F(nx)} ${F(ny(i))}h${F((sx1 - sx0) * (0.26 - (i % 2) * 0.08))}`;
     // (the heart's two leader lines, from the aorta's arch and the left ventricle to the first two notes)
     const leaders = `M${P(0.52, -1.05)}L${F(nx - Y(0.012))} ${F(ny(0))}M${P(0.9, 0.2)}L${F(nx - Y(0.012))} ${F(ny(1))}`;
-    s += slide('yn', `<path class="isl-mheart" d="${heart}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${vessels}${septum}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`
+    s += slide('y', `<path class="isl-mheart" d="${heart}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${vessels}${septum}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`
       + `<path class="isl-mnote" d="${leaders}" stroke-width="${F(Math.max(1, Y(0.012)))}"/>`);
     {
       const rh = rng(1303), R = k * 1.05, cyM = scy;
@@ -3145,17 +3151,17 @@
         + `M${B2(0.26, 0.38)}C${B2(0.3, 0.6)} ${B2(0.3, 0.8)} ${B2(0.26, 0.98)}M${B2(0.4, 0.4)}C${B2(0.42, 0.6)} ${B2(0.4, 0.8)} ${B2(0.38, 0.98)}`;   // the brainstem
       s += slide('d', `<path class="isl-mheart" d="${brain}${cbl}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${lines}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`);
     }
-    s += `<path class="isl-mnote" d="${notes}" stroke-width="${F(Math.max(1, Y(0.012)))}"/>`;
+    s += `<g class="isl-lq" data-q="aysd"><path class="isl-mnote" d="${notes}" stroke-width="${F(Math.max(1, Y(0.012)))}"/></g>`;
     // 2. The lectern with its lamp and a laptop; the skeleton on its stand beside it.
     const lx = X(0.44), lT = Y(0.56), lB = Y(0.84);
     // The lecturer behind the lectern, facing the hall in a white coat over a pale shirt, the laptop in front
-    // of their chest; the lectern's lamp, at their left, lights that side from Dawn to Night. (art-audit wave
+    // of their chest; the lectern's lamp, at their left, lights that side from Dawn to Dusk. (art-audit wave
     // 1, 2026-10-01: the lamp had had nothing to light)
     {
       // A different professor at each hour, with the hour's lecture (the owner, 2026-10-01): at Dawn the
       // histologist in a green cardigan, by Day the anatomist in a white coat, at Sunset the radiologist, grey
-      // and in glasses and a navy jacket, at Dusk the neuroanatomist in burgundy. At Night no one: the lamp
-      // stays lit for the student reviewing the day's lecture.
+      // and in glasses and a navy jacket, at Dusk the neuroanatomist in burgundy. At Night no one: the hall is
+      // closed (the owner, 2026-10-01), the lamp off and the laptop gone home with its professor.
       const px = lx - Y(0.015), hy = Y(0.39), hr = Y(0.031), sh = Y(0.45);
       const prof = ({ coat, shirt, skin, hair, style, glasses = false, lapels = true }) => {
         const body = `M${F(px - Y(0.08))} ${F(lT + 1)}L${F(px - Y(0.078))} ${F(sh + Y(0.02))}Q${F(px - Y(0.074))} ${F(sh)} ${F(px - Y(0.04))} ${F(sh - Y(0.006))}H${F(px + Y(0.04))}Q${F(px + Y(0.074))} ${F(sh)} ${F(px + Y(0.078))} ${F(sh + Y(0.02))}L${F(px + Y(0.08))} ${F(lT + 1)}Z`;
@@ -3181,10 +3187,10 @@
     s += `<path class="isl-lwood" d="${polyD([[lx - Y(0.1), lT], [lx + Y(0.1), lT], [lx + Y(0.08), lB], [lx - Y(0.08), lB]])}"/><path class="isl-lwood2" d="${rect(lx - Y(0.12), lT - Y(0.02), Y(0.24), Y(0.025))}"/>`
       + `<path class="isl-lwood2" fill-opacity=".55" d="${polyD([[lx - Y(0.07), lT + Y(0.03)], [lx + Y(0.07), lT + Y(0.03)], [lx + Y(0.058), lB - Y(0.03)], [lx - Y(0.058), lB - Y(0.03)]])}"/>`   // its front panel
       + `<path class="isl-tgrain" d="M${F(lx - Y(0.04))} ${F(lT + Y(0.05))}L${F(lx - Y(0.034))} ${F(lB - Y(0.05))}M${F(lx)} ${F(lT + Y(0.05))}V${F(lB - Y(0.05))}M${F(lx + Y(0.04))} ${F(lT + Y(0.05))}L${F(lx + Y(0.034))} ${F(lB - Y(0.05))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
-      + `<path class="isl-llap" d="${polyD([[lx - Y(0.07), lT - Y(0.02)], [lx + Y(0.02), lT - Y(0.02)], [lx + Y(0.04), lT - Y(0.1)], [lx - Y(0.05), lT - Y(0.1)]])}"/>`;
-    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx + Y(0.07), lT - Y(0.07), Y(0.14), 'islvbulb')}</g>`
+      + `<g class="isl-lq" data-q="aysd"><path class="isl-llap" d="${polyD([[lx - Y(0.07), lT - Y(0.02)], [lx + Y(0.02), lT - Y(0.02)], [lx + Y(0.04), lT - Y(0.1)], [lx - Y(0.05), lT - Y(0.1)]])}"/></g>`;
+    s += `<g class="isl-lq" data-q="aysd"><g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx + Y(0.07), lT - Y(0.07), Y(0.14), 'islvbulb')}</g></g>`
       + `<path class="isl-tarm" d="M${F(lx + Y(0.07))} ${F(lT - Y(0.02))}Q${F(lx + Y(0.1))} ${F(lT - Y(0.1))} ${F(lx + Y(0.06))} ${F(lT - Y(0.08))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><path class="isl-tshade" d="${rect(lx + Y(0.03), lT - Y(0.09), Y(0.06), Y(0.02))}"/>`
-      + `<g class="isl-vlamps isl-vwin" style="--i:1"><ellipse class="isl-tbulb" cx="${F(lx + Y(0.06))}" cy="${F(lT - Y(0.069))}" rx="${F(Y(0.026))}" ry="${F(Y(0.005))}"/>${pool(lx + Y(0.05), lT - Y(0.018), Y(0.07), Y(0.008), 0.6)}</g>`;   // its lit mouth, its pool on the top
+      + `<g class="isl-lq" data-q="aysd"><g class="isl-vlamps isl-vwin" style="--i:1"><ellipse class="isl-tbulb" cx="${F(lx + Y(0.06))}" cy="${F(lT - Y(0.069))}" rx="${F(Y(0.026))}" ry="${F(Y(0.005))}"/>${pool(lx + Y(0.05), lT - Y(0.018), Y(0.07), Y(0.008), 0.6)}</g></g>`;   // its lit mouth, its pool on the top (off at Night)
     // the skeleton: skull and jaw, the spine, the rib cage, the pelvis, arms and legs, on a stand
     // (its skull had sat on the third window's sill and the figure was oversize: lower and smaller, its feet
     // now behind the first row's desk rail; first audit, 2026-10-01)
@@ -3214,16 +3220,17 @@
       let seats = '';
       for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) seats += `M${F(x)} ${F(H + 2)}V${F(Y(yt) + Y(sz) * 0.3)}Q${F(x)} ${F(Y(yt))} ${F(x + Y(sz) * 0.3)} ${F(Y(yt))}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz))} ${F(Y(yt))} ${F(x + Y(sz))} ${F(Y(yt) + Y(sz) * 0.3)}V${F(H + 2)}Z`;
       // (an armrest between each pair of seats: the backs had been bare slabs; and each back's top edge caught
-      // by the screen's light at Dusk and Night, strongest nearest the screen; first audit, 2026-10-01)
+      // by the screen's light at Dusk, strongest nearest the screen; first audit, 2026-10-01; at Night the
+      // projector is off)
       let arms = '';
       const rims = ['', '', ''], scrX = (sx0 + sx1) / 2;
       // Students in the rows, seen from behind: heads and shoulders above the seat backs (one in a white coat,
-      // one lit by a laptop's cool glow from Dawn to Night), drawn behind the backs (art-audit wave 1,
+      // one lit by a laptop's cool glow at Dawn, by Day and at Dusk), drawn behind the backs (art-audit wave 1,
       // 2026-10-01: the hall had been an empty room of seats).
       // Who is in the hall at each hour (art-audit wave 1, by version; the owner, 2026-10-01: what is drawn
       // may change between versions with a reason): a few early students at Dawn, nearly full by Day, thinning
-      // at Sunset as classes end, four staying for an evening review at Dusk, and at Night one student studying
-      // late by a laptop's cool light. Each version's people are their own isl-lq group.
+      // at Sunset as classes end, four staying for an evening review at Dusk, and at Night no one: halls are
+      // closed to students after hours (the owner, 2026-10-01). Each version's people are their own isl-lq group.
       const C = { coat: '#efeee9', navy: '#2f3d5c', maroon: '#6b2e33', teal: '#3d6466', olive: '#5c5e3e', grey: '#6c6f75', plum: '#5a3d5c', sand: '#8a7a5c' };
       const ROSTER = yt < 0.85 ? {
         a: [[3, 'coat', 'short'], [9, 'maroon', 'bun']],
@@ -3235,8 +3242,7 @@
         a: [[7, 'navy', 'bun', true]],
         y: [[2, 'teal', 'short'], [4, 'grey', 'long'], [7, 'navy', 'bun', true], [9, 'maroon', 'short'], [12, 'olive', 'bun']],
         s: [[2, 'teal', 'short'], [9, 'maroon', 'short']],
-        d: [[7, 'navy', 'bun', true], [12, 'olive', 'bun']],
-        n: [[7, 'navy', 'bun', true]],
+        d: [[7, 'navy', 'bun', true], [12, 'olive', 'bun']],   // (and no one at Night)
       };
       const byQ = {};
       for (const q of Object.keys(ROSTER)) {
@@ -3262,7 +3268,7 @@
         rims[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.22)}Q${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.3)} ${F(Y(yt) + Y(sz) * 0.02)}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.22)}`;
       }
       s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/>${Object.keys(byQ).map((q) => `<g class="isl-lq" data-q="${q}"><g class="isl-vlamps">${byQ[q].glow}</g><g class="isl-mroom">${byQ[q].ppl}</g></g>`).join('')}<path class="${cls}" d="${seats}"/><path class="isl-lwood2" d="${arms}"/>`
-        + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('')
+        + '<g class="isl-lq" data-q="aysd">' + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('') + '</g>'
         + Object.keys(byQ).map((q) => `<g class="isl-lq" data-q="${q}">` + byQ[q].pr.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('') + '</g>').join('');
     }
     return `<g style="--isl-vstep:.5s">${s}</g>`;
