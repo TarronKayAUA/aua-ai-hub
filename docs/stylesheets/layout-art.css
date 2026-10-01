@@ -814,7 +814,7 @@
 .isl[data-sky="day"] .isl-ltframe { fill: #2f3940; }
 .isl .isl-ltbar { stroke: #1c252d; stroke-opacity: 0.8; fill: none; }
 /* The Bell Tower (art-audit wave 1, 2026-10-01): its birds roost at Night; the bell's rope; the tower's door. */
-[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-noct, .isl[data-sky="night"] .isl-noct { display: none; }
+.isl .isl-bdove { fill: #a4adb8; }   /* the doves roosting on the belfry sill at Night, pale against the dark */
 .isl .isl-brope { stroke: #a68d63; fill: none; stroke-linecap: round; }
 /* The square's reader and bench, one set of colours dimmed with the light by version (the lantern's
    warm light on them is isl-mlit, Dawn to Night). */

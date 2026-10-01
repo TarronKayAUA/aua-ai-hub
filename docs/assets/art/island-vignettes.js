@@ -2595,13 +2595,19 @@
     s += `<path class="isl-vbeam" d="M${F(tc - tw * 0.34)} ${F(yokeY)}H${F(tc + tw * 0.34)}" stroke-width="${F(Math.max(1.5, Y(0.016)))}"/>`;
     const bh2 = Y(0.16), bwid = Y(0.086);
     const bellD = `M${F(-bwid * 0.28)} ${F(Y(0.012))}C${F(-bwid * 0.3)} ${F(bh2 * 0.35)} ${F(-bwid * 0.55)} ${F(bh2 * 0.7)} ${F(-bwid)} ${F(bh2)}H${F(bwid)}C${F(bwid * 0.55)} ${F(bh2 * 0.7)} ${F(bwid * 0.3)} ${F(bh2 * 0.35)} ${F(bwid * 0.28)} ${F(Y(0.012))}Q0 ${F(-Y(0.008))} ${F(-bwid * 0.28)} ${F(Y(0.012))}Z`;
-    s += `<g transform="translate(${F(tc)} ${F(yokeY)}) rotate(${ang})"><path d="M0 0V${F(Y(0.014))}" class="isl-vbeam" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`
+    // (the bell rings at Dawn, by Day and at Sunset, swung on its yoke, and hangs at rest at Dusk and Night, its
+    // clapper down and its rope straight: bells are rung at set hours of the day, never in the night; art-audit
+    // wave 1, by version)
+    const bellG = (a, cl) => `<g transform="translate(${F(tc)} ${F(yokeY)}) rotate(${a})"><path d="M0 0V${F(Y(0.014))}" class="isl-vbeam" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`
       + `<path d="${bellD}" fill="url(#islvbrass)"/><path class="isl-vbrass2" d="M${F(-bwid * 1.02)} ${F(bh2 - Y(0.012))}H${F(bwid * 1.02)}V${F(bh2)}H${F(-bwid * 1.02)}Z"/>`
-      + `<path class="isl-vbeam" d="M0 ${F(bh2 * 0.5)}L${F(-bwid * 0.35)} ${F(bh2 + Y(0.02))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><circle class="isl-vbrass2" cx="${F(-bwid * 0.36)}" cy="${F(bh2 + Y(0.024))}" r="${F(Y(0.012))}"/></g>`;
+      + `<path class="isl-vbeam" d="M0 ${F(bh2 * 0.5)}L${F(cl)} ${F(bh2 + Y(0.02))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><circle class="isl-vbrass2" cx="${F(cl - bwid * 0.01)}" cy="${F(bh2 + Y(0.024))}" r="${F(Y(0.012))}"/></g>`;
+    s += '<g class="isl-lq" data-q="ays">' + bellG(ang, -bwid * 0.35);
     // the bell's rope, from its headstock down through the belfry floor to whoever rings it, on the side the
     // bell has swung away from
     // (art-audit wave 1: the bell swung with nothing to ring it)
-    s += `<path class="isl-brope" d="M${F(tc - Y(0.04))} ${F(yokeY + Y(0.004))}Q${F(tc - Y(0.075))} ${F((yokeY + tTop) / 2)} ${F(tc - Y(0.085))} ${F(tTop - Y(0.02))}" stroke-width="${F(Math.max(0.9, Y(0.007)))}"/>`;
+    s += `<path class="isl-brope" d="M${F(tc - Y(0.04))} ${F(yokeY + Y(0.004))}Q${F(tc - Y(0.075))} ${F((yokeY + tTop) / 2)} ${F(tc - Y(0.085))} ${F(tTop - Y(0.02))}" stroke-width="${F(Math.max(0.9, Y(0.007)))}"/></g>`;
+    s += '<g class="isl-lq" data-q="dn">' + bellG(0, 0)
+      + `<path class="isl-brope" d="M${F(tc - Y(0.04))} ${F(yokeY + Y(0.004))}V${F(tTop - Y(0.02))}" stroke-width="${F(Math.max(0.9, Y(0.007)))}"/></g>`;
     // the pyramid roof and its vane
     s += `<path class="isl-troof" d="${polyD([[b0 - Y(0.03), bTop - Y(0.018)], [tc, roofTop + Y(0.04)], [b1 + Y(0.03), bTop - Y(0.018)]])}"/>`
       // (the vane whole inside the picture, on a short rod above the apex: it had been drawn above the frame)
@@ -2609,18 +2615,35 @@
       + `<path class="isl-vvane" d="M${F(tc)} ${F(Y(0.012))}h${F(Y(0.04))}l${F(-Y(0.01))} ${F(Y(0.013))}h${F(-Y(0.03))}Z"/>`;
     // 5. The rings of sound, spreading from the bell to the left, each in turn; birds lift off the roof.
     const scx = tc - Y(0.02), scy = yokeY + bh2 * 0.6;
+    s += '<g class="isl-lq" data-q="ays">';   // (only while it rings)
     for (let k = 0; k < 3; k++) {
       // (from just outside the belfry: the inner ring had lain wholly on the pier beside the opening)
       const rr = Y(0.26 + k * 0.11), a0 = Math.PI * (0.8 + k * 0.01), a1 = Math.PI * 1.22;
       s += `<path class="isl-bsound isl-vwin" style="--i:${1 + k}" d="M${F(scx + Math.cos(a0) * rr)} ${F(scy + Math.sin(a0) * rr)}A${F(rr)} ${F(rr)} 0 0 1 ${F(scx + Math.cos(a1) * rr)} ${F(scy + Math.sin(a1) * rr)}" stroke-width="${F(Math.max(1.2, Y(0.014) * (1 - k * 0.2)))}" stroke-opacity="${(0.7 - k * 0.18).toFixed(2)}"/>`;
     }
+    s += '</g>';
     let birds = '';
     for (const [bx, by, sz] of [[0.64, 0.16, 0.034], [0.69, 0.09, 0.028], [0.6, 0.26, 0.026]]) {
       const cx = X(bx), cy = Y(by), w = Y(sz);
       birds += `M${F(cx - w)} ${F(cy - w * 0.2)}Q${F(cx - w * 0.5)} ${F(cy - w * 0.6)} ${F(cx)} ${F(cy)}Q${F(cx + w * 0.5)} ${F(cy - w * 0.6)} ${F(cx + w)} ${F(cy - w * 0.2)}`;
     }
-    // (not at Night: birds roost after dark; art-audit wave 1)
-    s += `<g class="isl-noct"><path class="isl-bbird" d="${birds}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`;
+    // (the birds fly off as the bell rings at Dawn, by Day and at Sunset, glide in to roost at Dusk, nearer the
+    // tower and lower with flatter wings, and at Night two doves sit on the belfry's sill under the resting bell;
+    // art-audit wave 1, by version)
+    let glide = '';
+    for (const [bx, by, sz] of [[0.72, 0.2, 0.03], [0.75, 0.27, 0.026], [0.69, 0.31, 0.024]]) {
+      const cx = X(bx), cy = Y(by), w = Y(sz);
+      glide += `M${F(cx - w)} ${F(cy)}Q${F(cx - w * 0.5)} ${F(cy - w * 0.25)} ${F(cx)} ${F(cy)}Q${F(cx + w * 0.5)} ${F(cy - w * 0.25)} ${F(cx + w)} ${F(cy)}`;
+    }
+    let doves = '';
+    for (const [dx, dir] of [[-Y(0.065), 1], [Y(0.06), -1]]) {
+      const cx = tc + dx, cy = tTop - Y(0.02) - Y(0.008);
+      doves += `<ellipse cx="${F(cx)}" cy="${F(cy)}" rx="${F(Y(0.015))}" ry="${F(Y(0.008))}"/><circle cx="${F(cx + dir * Y(0.013))}" cy="${F(cy - Y(0.007))}" r="${F(Y(0.006))}"/>`
+        + `<path d="M${F(cx - dir * Y(0.012))} ${F(cy - Y(0.002))}l${F(-dir * Y(0.012))} ${F(Y(0.004))}l${F(dir * Y(0.004))} ${F(-Y(0.006))}Z"/>`;
+    }
+    s += `<g class="isl-lq" data-q="ays"><path class="isl-bbird" d="${birds}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`
+      + `<g class="isl-lq" data-q="d"><path class="isl-bbird" d="${glide}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`
+      + `<g class="isl-lq" data-q="n"><g class="isl-bdove">${doves}</g></g>`;
     // the tower's door, arched, in the middle of its base (art-audit wave 1: it had no way in)
     {
       const dw = Y(0.075), dT = ground - Y(0.03) - Y(0.15);
@@ -2647,23 +2670,33 @@
       + `<path class="isl-vlamp isl-ltframe" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.03))}V${F(ly - Y(0.09))}H${F(lx + Y(0.014))}V${F(ly - Y(0.03))}Z"/></g>`
       + panes(lx - Y(0.014), ly - Y(0.09), Y(0.028), Y(0.06));
     s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ground)}V${F(ly - Y(0.03))}H${F(lx + 1)}V${F(ground)}Z"/><path class="isl-vpost isl-lcap" d="M${F(lx - Y(0.022))} ${F(ly - Y(0.09))}L${F(lx)} ${F(ly - Y(0.115))}L${F(lx + Y(0.022))} ${F(ly - Y(0.09))}Z"/>`;
-    // Someone reading the notices, seen from behind in front of the board's left end, and a slatted bench on
-    // iron ends in the lantern's pool beside it; the lantern's warm light on the reader's near side and the
-    // bench's top edges from Dawn to Night (art-audit wave 1, 2026-10-01: the square had no one in it).
+    // Someone at the notice board, seen from behind in front of its left end, and a slatted bench on iron ends
+    // in the lantern's pool beside it; the lantern's warm light on the person's near side and the bench's top
+    // edges from Dawn to Night (art-audit wave 1, 2026-10-01: the square had no one in it). Who is there
+    // answers the hour (by version): at Dawn someone pins up the day's notice, by Day and at Sunset someone
+    // reads them, and after dark the square is empty; the bench stays.
     {
       const fx = nb0 + Y(0.075), fb = ground + Y(0.035), fh = Y(0.28), hr = fh * 0.075, sw = fh * 0.13;
       const ft = fb - fh, hy = ft + hr;
       let fig = `<path fill="#2f3a4a" d="M${F(fx - sw * 0.85)} ${F(fb)}L${F(fx - sw * 0.75)} ${F(ft + fh * 0.5)}H${F(fx + sw * 0.75)}L${F(fx + sw * 0.85)} ${F(fb)}H${F(fx + sw * 0.1)}L${F(fx)} ${F(ft + fh * 0.62)}L${F(fx - sw * 0.1)} ${F(fb)}Z"/>`;   // trousers
       fig += `<path fill="#c7d6e3" d="M${F(fx - sw * 0.82)} ${F(ft + fh * 0.53)}L${F(fx - sw)} ${F(ft + fh * 0.22)}Q${F(fx - sw)} ${F(ft + fh * 0.16)} ${F(fx - sw * 0.6)} ${F(ft + fh * 0.15)}H${F(fx + sw * 0.6)}Q${F(fx + sw)} ${F(ft + fh * 0.16)} ${F(fx + sw)} ${F(ft + fh * 0.22)}L${F(fx + sw * 0.82)} ${F(ft + fh * 0.53)}Z"/>`;   // shirt
+      // (the pinner, at Dawn, has the right arm raised to the board, a hand flat on a new note, and the day's
+      // other notices folded in the left hand)
+      let pin = fig + `<path fill="#c7d6e3" d="${rect(fx - sw * 1.05, ft + fh * 0.2, sw * 0.24, fh * 0.3)}M${F(fx + sw * 0.78)} ${F(ft + fh * 0.18)}L${F(fx + sw * 1.02)} ${F(ft + fh * 0.16)}L${F(fx + sw * 1.12)} ${F(ft - fh * 0.04)}L${F(fx + sw * 0.9)} ${F(ft - fh * 0.04)}Z"/>`
+        + `<path fill="#6b4630" d="${rect(fx - sw * 1.02, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx + sw * 0.88, ft - fh * 0.1, sw * 0.24, fh * 0.07)}${rect(fx - hr * 0.45, hy + hr * 0.6, hr * 0.9, fh * 0.07)}"/>`
+        + `<path fill="#fbf6ea" d="${rect(fx - sw * 1.18, ft + fh * 0.5, sw * 0.32, fh * 0.1)}"/>`;
       fig += `<path fill="#c7d6e3" d="${rect(fx - sw * 1.05, ft + fh * 0.2, sw * 0.24, fh * 0.3)}${rect(fx + sw * 0.81, ft + fh * 0.2, sw * 0.24, fh * 0.3)}"/>`;   // sleeves
       fig += `<path fill="#6b4630" d="${rect(fx - sw * 1.02, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx + sw * 0.84, ft + fh * 0.48, sw * 0.18, fh * 0.07)}${rect(fx - hr * 0.45, hy + hr * 0.6, hr * 0.9, fh * 0.07)}"/>`;   // hands, neck
-      fig += `<circle fill="#1d1916" cx="${F(fx)}" cy="${F(hy)}" r="${F(hr)}"/>`;   // the head, from behind
-      fig += `<path fill="#3a2e24" d="${rect(fx - sw * 0.85, fb - fh * 0.02, sw * 0.7, fh * 0.03)}${rect(fx + sw * 0.15, fb - fh * 0.02, sw * 0.7, fh * 0.03)}"/>`;   // shoes
+      const headShoes = `<circle fill="#1d1916" cx="${F(fx)}" cy="${F(hy)}" r="${F(hr)}"/>`   // the head, from behind
+        + `<path fill="#3a2e24" d="${rect(fx - sw * 0.85, fb - fh * 0.02, sw * 0.7, fh * 0.03)}${rect(fx + sw * 0.15, fb - fh * 0.02, sw * 0.7, fh * 0.03)}"/>`;   // shoes
+      fig += headShoes; pin += headShoes;
       const b0 = lx - Y(0.21), b1 = lx - Y(0.05), sy = ground + Y(0.005), bh = Y(0.07);
       let bench = `<path class="isl-vpost" d="${rect(b0 + Y(0.008), sy - bh * 0.95, Y(0.008), bh * 0.95 + Y(0.02))}${rect(b1 - Y(0.016), sy - bh * 0.95, Y(0.008), bh * 0.95 + Y(0.02))}"/>`;   // iron ends
       bench += `<path class="isl-bbench" d="${rect(b0, sy - Y(0.004), b1 - b0, Y(0.012))}${rect(b0, sy - bh * 0.62, b1 - b0, Y(0.011))}${rect(b0, sy - bh * 0.9, b1 - b0, Y(0.011))}"/>`;   // seat and back slats
-      s += `<g class="isl-bfig">${bench}${fig}</g>`;
-      s += `<g class="isl-vlamps isl-vwin" style="--i:4"><path class="isl-mlit" d="M${F(fx - sw * 1.04)} ${F(ft + fh * 0.21)}V${F(ft + fh * 0.5)}M${F(fx - hr * 0.95)} ${F(hy - hr * 0.3)}A${F(hr)} ${F(hr)} 0 0 0 ${F(fx - hr * 0.7)} ${F(hy + hr * 0.7)}M${F(b0)} ${F(sy - Y(0.004))}H${F(b1)}M${F(b0)} ${F(sy - bh * 0.9)}H${F(b1)}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/></g>`;
+      s += `<g class="isl-bfig">${bench}<g class="isl-lq" data-q="a">${pin}</g><g class="isl-lq" data-q="ys">${fig}</g></g>`;
+      const sw2 = F(Math.max(0.8, Y(0.006)));
+      s += `<g class="isl-vlamps isl-vwin" style="--i:4"><path class="isl-mlit" d="M${F(b0)} ${F(sy - Y(0.004))}H${F(b1)}M${F(b0)} ${F(sy - bh * 0.9)}H${F(b1)}" stroke-width="${sw2}"/>`
+        + `<g class="isl-lq" data-q="ays"><path class="isl-mlit" d="M${F(fx - sw * 1.04)} ${F(ft + fh * 0.21)}V${F(ft + fh * 0.5)}M${F(fx - hr * 0.95)} ${F(hy - hr * 0.3)}A${F(hr)} ${F(hr)} 0 0 0 ${F(fx - hr * 0.7)} ${F(hy + hr * 0.7)}" stroke-width="${sw2}"/></g></g>`;
     }
     return `<g style="--isl-vstep:.4s">${s}</g>`;
   }
