@@ -760,6 +760,14 @@
 [data-md-color-scheme="slate"] .isl .isl-vlamp { fill: var(--k, var(--isl-pulse)); }
 /* By Day a lantern is unlit glass, as every window is (its halo and pool are already hidden). */
 .isl[data-sky="day"] .isl-vlamp { fill: var(--isl-vdark); }
+/* An unlit lamp by Day is three materials, not one dark shape (owner, 2026-10-01): an iron post, a bronze cap
+   and a frosted glass globe shaded on its underside. */
+.isl[data-sky="day"] .isl-lpost { fill: #2f3940; }
+.isl[data-sky="day"] .isl-lcap { fill: #6e5638; }
+.isl .isl-lglass { fill: #eef3f2; }
+.isl .isl-lglass2 { fill: #aebdc2; fill-opacity: 0.75; }
+/* Every lantern by Day: its lit pane turns iron and frames two panes of glass (panes() in the art). */
+.isl[data-sky="day"] .isl-ltframe { fill: #2f3940; }
 /* The campus's materials (from the owner's photographs of AUA): cream walls, a terracotta ground
    floor, red roofs and white verandas, as dusk shows them (light scheme) and as night does (dark). */
 .isl {

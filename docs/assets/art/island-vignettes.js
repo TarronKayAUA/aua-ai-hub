@@ -249,23 +249,30 @@
     }
     s += `<path class="isl-vspill" d="M${F(cx - 3.2 * u)} ${F(base)}H${F(cx + 3.2 * u)}L${F(cx + 9 * u)} ${F(Math.min(H, ey))}H${F(cx - 9 * u)}Z" fill="url(#islvspill)"/>`;
     const lampH = 6.2 * u;
-    let postsD = '', glows = '', heads = '';
+    let postsD = '', capsD = '', glows = '', heads = '', glassSh = '', collars = '';
     const lamps = [-0.93, -0.62, 0.62, 0.93];
     lamps.forEach((f, i) => {
       const lx = cx + f * erx, ly = ey - ery * Math.sqrt(Math.max(0, 1 - f * f)) - 1.2 * u;
-      postsD += rect(lx - 0.22 * u, ly - lampH, 0.44 * u, lampH)
-        + `M${F(lx - 0.8 * u)} ${F(ly - lampH - 0.45 * u)}L${F(lx)} ${F(ly - lampH - 1.1 * u)}L${F(lx + 0.8 * u)} ${F(ly - lampH - 0.45 * u)}Z`;
-      const hr = (i === 1 ? 0.75 : 0.6) * u;   // (by Day the lamp's head, unlit, where its bulb shows after dark)
-      heads += `M${F(lx - hr)} ${F(ly - lampH)}a${F(hr)} ${F(hr)} 0 1 0 ${F(2 * hr)} 0a${F(hr)} ${F(hr)} 0 1 0 ${F(-2 * hr)} 0Z`;
+      postsD += rect(lx - 0.22 * u, ly - lampH, 0.44 * u, lampH);
+      capsD += `M${F(lx - 0.8 * u)} ${F(ly - lampH - 0.45 * u)}L${F(lx)} ${F(ly - lampH - 1.1 * u)}L${F(lx + 0.8 * u)} ${F(ly - lampH - 0.45 * u)}Z`;
+      // by Day the lamp's head, unlit: a frosted glass globe, shaded on its underside, on an iron collar
+      const hr = 0.6 * u, gy = ly - lampH;   // (every lamp the same model and size: they stand at one distance)
+      heads += `M${F(lx - hr)} ${F(gy)}a${F(hr)} ${F(hr)} 0 1 0 ${F(2 * hr)} 0a${F(hr)} ${F(hr)} 0 1 0 ${F(-2 * hr)} 0Z`;
+      glassSh += `M${F(lx + hr)} ${F(gy)}A${F(hr)} ${F(hr)} 0 0 1 ${F(lx - hr)} ${F(gy)}A${F(hr)} ${F(hr * 0.55)} 0 0 0 ${F(lx + hr)} ${F(gy)}Z`;
+      collars += rect(lx - 0.34 * u, gy + hr * 0.82, 0.68 * u, 0.32 * u);
       if (i === 1) {
-        glows += `<circle cx="${F(lx)}" cy="${F(ly - lampH)}" r="${F(3.4 * u)}" fill="url(#islvlamp)"/>`
-          + `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly - lampH)}" r="${F(0.75 * u)}"/>`;
+        glows += `<circle cx="${F(lx)}" cy="${F(ly - lampH)}" r="${F(3 * u)}" fill="url(#islvlamp)"/>`
+          + `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly - lampH)}" r="${F(0.6 * u)}"/>`;
       } else {
         glows += `<circle cx="${F(lx)}" cy="${F(ly - lampH)}" r="${F(3 * u)}" fill="url(#islvbulb)"/>`
           + `<circle class="f-pulse" cx="${F(lx)}" cy="${F(ly - lampH)}" r="${F(0.6 * u)}"/>`;
       }
     });
-    s += `<path class="isl-vdark" d="${postsD}"/>` + `<g class="isl-vlamps">${glows}</g>` + `<g class="isl-ydet"><path class="isl-vdark" d="${heads}"/></g>`;
+    // (the post, the cap and, by Day, the glass and its collar each in their own colour: by Day the post is
+    // iron, the cap bronze and the globe frosted glass; after dark the post and cap stay the silhouette they were)
+    s += `<path class="isl-vdark isl-lpost" d="${postsD}"/><path class="isl-vdark isl-lcap" d="${capsD}"/>` + `<g class="isl-vlamps">${glows}</g>`
+      + `<g class="isl-ydet"><path class="isl-lglass" d="${heads}"/><path class="isl-lglass2" d="${glassSh}"/>`
+      + `<path class="isl-lpost" d="${collars}"/><path class="isl-lcap" d="${capsD}"/></g>`;
 
     // The four flags on their poles in front of the building, as in the owner's photographs: from the left
     // Antigua and Barbuda, Canada, India and the United States (owner, 2026-10-01: "pretty iconic"). They fly to
@@ -666,6 +673,12 @@
     s += `<g class="isl-vwin isl-vlast" style="--i:8">${pool(lx, ly + Y(0.02), Y(0.05), Y(0.011), 0.6)}`
       + `<circle cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Y(0.055))}" fill="url(#islvlamp)"/>`
       + `<circle class="isl-vlamp" cx="${F(lx)}" cy="${F(ly - Y(0.06))}" r="${F(Math.max(1.5, Y(0.008)))}"/></g>`;
+    {
+      // (by Day its globe is frosted glass, shaded on its underside, as the campus's lamps)
+      const gr = Math.max(1.5, Y(0.008)), gy = ly - Y(0.06);
+      s += `<g class="isl-ydet"><circle class="isl-lglass" cx="${F(lx)}" cy="${F(gy)}" r="${F(gr)}"/>`
+        + `<path class="isl-lglass2" d="M${F(lx + gr)} ${F(gy)}A${F(gr)} ${F(gr)} 0 0 1 ${F(lx - gr)} ${F(gy)}A${F(gr)} ${F(gr * 0.55)} 0 0 0 ${F(lx + gr)} ${F(gy)}Z"/></g>`;
+    }
     // By Day the far lights that are houses (the villages on the range, Falmouth's shore) show as small
     // houses; a masthead's light is never a house. The near buildings are drawn in every version above.
     let walls = '', roofsR = '', roofsG = '';
@@ -825,6 +838,16 @@
   // A lamp's halo, and the light it lays on the ground below it.
   const halo = (x, y, rr, grad = 'islvbulb') => `<circle cx="${F(x)}" cy="${F(y)}" r="${F(rr)}" fill="url(#${grad})"/>`;
   const pool = (x, y, rx, ry, op = 0.5) => `<ellipse cx="${F(x)}" cy="${F(y)}" rx="${F(rx)}" ry="${F(ry)}" fill="url(#islvpool)" opacity="${op}"/>`;
+  // By Day an unlit lantern is glass in an iron frame, not one dark shape (owner, 2026-10-01): two panes
+  // of pale glass, shaded below, inset in the lantern's lit pane, which by Day turns iron (isl-ltframe)
+  // and shows round them as the frame. Drawn only by Day, so the lit versions are unchanged.
+  const panes = (x0, y0, w, h) => {
+    const t = Math.max(0.6, w * 0.16), g = Math.max(0.5, t * 0.7), pw = (w - 2 * t - g) / 2, ph = h - 2 * t;
+    if (pw < 0.4 || ph < 0.4) return '';
+    let d = '', sh = '';
+    for (const x of [x0 + t, x0 + t + pw + g]) { d += rect(x, y0 + t, pw, ph); sh += rect(x, y0 + t + ph * 0.55, pw, ph * 0.45); }
+    return `<g class="isl-ydet"><path class="isl-lglass" d="${d}"/><path class="isl-lglass2" d="${sh}"/></g>`;
+  };
   // Planes of a landform: its silhouette, the faces turned to the light, the faces in shadow, and a
   // rim of light along the crest where the afterglow catches it.
   const facets = (poly, lit, dark) => `<path class="isl-vlit" d="${lit.map(poly).join('')}"/><path class="isl-vshadow" d="${dark.map(poly).join('')}"/>`;
@@ -1095,8 +1118,9 @@
       s += `<path class="isl-vpost" d="M${F(lx2 - 1.1)} ${F(ly2)}V${F(ly2 - ph)}H${F(lx2 + 1.1)}V${F(ly2)}Z"/>`;
       s += `<g class="isl-vwin" style="--i:${i};--isl-vstep:.6s">`
         + halo(lx2, ly2 - ph - lh2 / 2, Y(top ? 0.1 : 0.085), top ? 'islvlamp' : 'islvbulb')
-        + `<path class="${top ? 'isl-vlamp' : 'f-pulse'}" d="M${F(lx2 - lw2)} ${F(ly2 - ph)}V${F(ly2 - ph - lh2)}H${F(lx2 + lw2)}V${F(ly2 - ph)}Z"/></g>`;
-      s += `<path class="isl-vpost" d="M${F(lx2 - lw2 * 1.5)} ${F(ly2 - ph - lh2)}L${F(lx2)} ${F(ly2 - ph - lh2 - Y(0.014))}L${F(lx2 + lw2 * 1.5)} ${F(ly2 - ph - lh2)}Z"/>`;
+        + `<path class="${top ? 'isl-vlamp' : 'f-pulse'} isl-ltframe" d="M${F(lx2 - lw2)} ${F(ly2 - ph)}V${F(ly2 - ph - lh2)}H${F(lx2 + lw2)}V${F(ly2 - ph)}Z"/></g>`
+        + panes(lx2 - lw2, ly2 - ph - lh2, 2 * lw2, lh2);
+      s += `<path class="isl-vpost isl-lcap" d="M${F(lx2 - lw2 * 1.5)} ${F(ly2 - ph - lh2)}L${F(lx2)} ${F(ly2 - ph - lh2 - Y(0.014))}L${F(lx2 + lw2 * 1.5)} ${F(ly2 - ph - lh2)}Z"/>`;
     });
     s += `<path class="f-pulse isl-vwin isl-vlast" style="--i:${lookI};--isl-vstep:.6s" d="${lookoutLit}"/>`;
     return s;
@@ -1253,8 +1277,9 @@
     // 7. The lantern at the wall's end, over the path, in the page's hue: its pool, halo, and last.
     const lx = wx0 + Y(0.02), ly = wTop;
     s += `<g class="isl-vwin isl-vlast" style="--i:4">${pool(lx + Y(0.02), Y(0.62), Y(0.2), Y(0.06), 0.7)}${halo(lx, ly - Y(0.1), Y(0.17), 'islvlamp')}`
-      + `<path class="isl-vlamp" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.07))}V${F(ly - Y(0.13))}H${F(lx + Y(0.014))}V${F(ly - Y(0.07))}Z"/></g>`;
-    s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ly)}V${F(ly - Y(0.07))}H${F(lx + 1)}V${F(ly)}ZM${F(lx - Y(0.022))} ${F(ly - Y(0.13))}L${F(lx)} ${F(ly - Y(0.155))}L${F(lx + Y(0.022))} ${F(ly - Y(0.13))}Z"/>`;
+      + `<path class="isl-vlamp isl-ltframe" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.07))}V${F(ly - Y(0.13))}H${F(lx + Y(0.014))}V${F(ly - Y(0.07))}Z"/></g>`
+      + panes(lx - Y(0.014), ly - Y(0.13), Y(0.028), Y(0.06));
+    s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ly)}V${F(ly - Y(0.07))}H${F(lx + 1)}V${F(ly)}Z"/><path class="isl-vpost isl-lcap" d="M${F(lx - Y(0.022))} ${F(ly - Y(0.13))}L${F(lx)} ${F(ly - Y(0.155))}L${F(lx + Y(0.022))} ${F(ly - Y(0.13))}Z"/>`;
     s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights)}" stroke-width="1.4"/>`;
     return s;
   }
@@ -1366,8 +1391,9 @@
     s += `<g class="isl-vwin" style="--i:2">${pool(dcx, mb + Y(0.02), Y(0.22), Y(0.05), 0.75)}</g>`;
     const lx = mx - mwb / 2 - Y(0.06);
     s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(mb + Y(0.01))}V${F(mb - Y(0.14))}H${F(lx + 1)}V${F(mb + Y(0.01))}Z"/>`;
-    s += `<g class="isl-vwin isl-vlast" style="--i:4">${pool(lx, mb + Y(0.015), Y(0.1), Y(0.03), 0.6)}${halo(lx, mb - Y(0.155), Y(0.13), 'islvlamp')}<path class="isl-vlamp" d="M${F(lx - Y(0.011))} ${F(mb - Y(0.14))}V${F(mb - Y(0.175))}H${F(lx + Y(0.011))}V${F(mb - Y(0.14))}Z"/></g>`;
-    s += `<path class="isl-vpost" d="M${F(lx - Y(0.018))} ${F(mb - Y(0.175))}L${F(lx)} ${F(mb - Y(0.197))}L${F(lx + Y(0.018))} ${F(mb - Y(0.175))}Z"/>`;   // its cap
+    s += `<g class="isl-vwin isl-vlast" style="--i:4">${pool(lx, mb + Y(0.015), Y(0.1), Y(0.03), 0.6)}${halo(lx, mb - Y(0.155), Y(0.13), 'islvlamp')}<path class="isl-vlamp isl-ltframe" d="M${F(lx - Y(0.011))} ${F(mb - Y(0.14))}V${F(mb - Y(0.175))}H${F(lx + Y(0.011))}V${F(mb - Y(0.14))}Z"/></g>`;
+    s += `<path class="isl-vpost isl-lcap" d="M${F(lx - Y(0.018))} ${F(mb - Y(0.175))}L${F(lx)} ${F(mb - Y(0.197))}L${F(lx + Y(0.018))} ${F(mb - Y(0.175))}Z"/>`   // its cap
+      + panes(lx - Y(0.011), mb - Y(0.175), Y(0.022), Y(0.035));
     // cane drying racks by the mill, beyond the tail pole's wheel (they had tangled with it)
     let racks = '';
     for (let i = 0; i < 3; i++) {
@@ -1560,10 +1586,11 @@
     for (const lx of [X(0.19), X(0.925)]) {
       const ph = Y(0.27), lw = Y(0.022), lh = Y(0.06);
       s += `<g class="isl-vwin" style="--i:1">${pool(lx, street + Y(0.06), Y(0.3), Y(0.06), 0.8)}${halo(lx, street - ph - lh / 2, Y(0.2))}`
-        + `<path class="f-pulse" d="M${F(lx - lw)} ${F(street - ph)}V${F(street - ph - lh)}H${F(lx + lw)}V${F(street - ph)}Z"/></g>`;
+        + `<path class="f-pulse isl-ltframe" d="M${F(lx - lw)} ${F(street - ph)}V${F(street - ph - lh)}H${F(lx + lw)}V${F(street - ph)}Z"/></g>`
+        + panes(lx - lw, street - ph - lh, 2 * lw, lh);
       s += `<path class="isl-vpost" d="M${F(lx - 1.3)} ${F(street + Y(0.03))}V${F(street - ph)}H${F(lx + 1.3)}V${F(street + Y(0.03))}Z`
-        + `M${F(lx - lw * 1.5)} ${F(street - ph - lh)}L${F(lx)} ${F(street - ph - lh - Y(0.035))}L${F(lx + lw * 1.5)} ${F(street - ph - lh)}Z`
-        + `M${F(lx - lw * 1.2)} ${F(street - ph + 1)}h${F(lw * 2.4)}v${F(Y(0.01))}h${F(-lw * 2.4)}Z"/>`;
+        + `M${F(lx - lw * 1.2)} ${F(street - ph + 1)}h${F(lw * 2.4)}v${F(Y(0.01))}h${F(-lw * 2.4)}Z"/>`
+        + `<path class="isl-vpost isl-lcap" d="M${F(lx - lw * 1.5)} ${F(street - ph - lh)}L${F(lx)} ${F(street - ph - lh - Y(0.035))}L${F(lx + lw * 1.5)} ${F(street - ph - lh)}Z"/>`;
       s += `<path class="isl-vmul" d="M${F(lx)} ${F(street - ph)}V${F(street - ph - lh)}" stroke-width=".8"/>`;
     }
     s += palmsD([[X(0.035), street + Y(0.03), Y(0.44), -0.05, 91], [X(0.978), street + Y(0.03), Y(0.4), 0.06, 93]], 'f-near');
@@ -1750,8 +1777,9 @@
     for (const wx of [-0.22, 0.16]) s += `<circle class="isl-vcannon" cx="${F(gx + bl * wx)}" cy="${F(wy)}" r="${F(wr)}"/><circle class="isl-vlit" cx="${F(gx + bl * wx)}" cy="${F(wy)}" r="${F(wr * 0.35)}"/>`;
     // the fort's lamp on its post at the parapet's end
     const flx = X(0.035), fly = pTop;
-    s += `<path class="isl-vpost" d="M${F(flx - 1.2)} ${F(fly)}V${F(fly - 16 * u)}H${F(flx + 1.2)}V${F(fly)}ZM${F(flx - 7 * u)} ${F(fly - 30 * u)}L${F(flx)} ${F(fly - 36 * u)}L${F(flx + 7 * u)} ${F(fly - 30 * u)}Z"/>`;
-    s += `<path class="isl-vlamp isl-vwin" style="--i:0" d="M${F(flx - 4.5 * u)} ${F(fly - 16 * u)}V${F(fly - 30 * u)}H${F(flx + 4.5 * u)}V${F(fly - 16 * u)}Z"/>`;
+    s += `<path class="isl-vpost" d="M${F(flx - 1.2)} ${F(fly)}V${F(fly - 16 * u)}H${F(flx + 1.2)}V${F(fly)}Z"/><path class="isl-vpost isl-lcap" d="M${F(flx - 7 * u)} ${F(fly - 30 * u)}L${F(flx)} ${F(fly - 36 * u)}L${F(flx + 7 * u)} ${F(fly - 30 * u)}Z"/>`;
+    s += `<path class="isl-vlamp isl-vwin isl-ltframe" style="--i:0" d="M${F(flx - 4.5 * u)} ${F(fly - 16 * u)}V${F(fly - 30 * u)}H${F(flx + 4.5 * u)}V${F(fly - 16 * u)}Z"/>`
+      + panes(flx - 4.5 * u, fly - 30 * u, 9 * u, 14 * u);
     // The hills' lights, with the town's.
     s += `<path class="s-vlight isl-vwin" style="--i:4" d="${lightsD(far)}" stroke-width="1.2"/>`;
     return s;
@@ -2544,8 +2572,9 @@
     s += `<g class="isl-bnote">${notes}</g><path class="isl-bink" d="${ink}" stroke-width="${F(Math.max(0.6, Y(0.005)))}"/><path class="isl-bpin" d="${pins}" stroke-width="${F(Math.max(1.5, Y(0.014)))}"/>`;
     const lx = nb0 - Y(0.1), ly = Y(0.56);
     s += `<g class="isl-vwin isl-vlast" style="--i:4">${pool(lx, ground + Y(0.03), Y(0.2), Y(0.04), 0.7)}${halo(lx, ly - Y(0.06), Y(0.16), 'islvlamp')}`
-      + `<path class="isl-vlamp" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.03))}V${F(ly - Y(0.09))}H${F(lx + Y(0.014))}V${F(ly - Y(0.03))}Z"/></g>`;
-    s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ground)}V${F(ly - Y(0.03))}H${F(lx + 1)}V${F(ground)}ZM${F(lx - Y(0.022))} ${F(ly - Y(0.09))}L${F(lx)} ${F(ly - Y(0.115))}L${F(lx + Y(0.022))} ${F(ly - Y(0.09))}Z"/>`;
+      + `<path class="isl-vlamp isl-ltframe" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.03))}V${F(ly - Y(0.09))}H${F(lx + Y(0.014))}V${F(ly - Y(0.03))}Z"/></g>`
+      + panes(lx - Y(0.014), ly - Y(0.09), Y(0.028), Y(0.06));
+    s += `<path class="isl-vpost" d="M${F(lx - 1)} ${F(ground)}V${F(ly - Y(0.03))}H${F(lx + 1)}V${F(ground)}Z"/><path class="isl-vpost isl-lcap" d="M${F(lx - Y(0.022))} ${F(ly - Y(0.09))}L${F(lx)} ${F(ly - Y(0.115))}L${F(lx + Y(0.022))} ${F(ly - Y(0.09))}Z"/>`;
     return `<g style="--isl-vstep:.4s">${s}</g>`;
   }
 
@@ -3208,8 +3237,9 @@
       + `<path class="isl-vstone" d="${rect(c0, cT, c1 - c0, Y(0.03))}"/><path class="isl-vpshade isl-ydet" d="${rect(c0, cT + Y(0.03), c1 - c0, Y(0.016))}"/>`;
     for (const sd of [-1, 1]) {
       const lx = dx + sd * (dw / 2 + Y(0.045)), lyy = dT + Y(0.05);
-      s += `<g class="isl-vwin" style="--i:6">${halo(lx, lyy, Y(0.11))}<path class="f-pulse" d="${rect(lx - Y(0.013), lyy - Y(0.028), Y(0.026), Y(0.046))}"/></g>`
-        + `<path class="isl-vpost" d="${rect(lx - Y(0.019), lyy - Y(0.037), Y(0.038), Y(0.011))}${rect(lx - Y(0.017), lyy + Y(0.018), Y(0.034), Y(0.009))}"/>`;
+      s += `<g class="isl-vwin" style="--i:6">${halo(lx, lyy, Y(0.11))}<path class="f-pulse isl-ltframe" d="${rect(lx - Y(0.013), lyy - Y(0.028), Y(0.026), Y(0.046))}"/></g>`
+        + panes(lx - Y(0.013), lyy - Y(0.028), Y(0.026), Y(0.046))
+        + `<path class="isl-vpost isl-lcap" d="${rect(lx - Y(0.019), lyy - Y(0.037), Y(0.038), Y(0.011))}"/><path class="isl-vpost" d="${rect(lx - Y(0.017), lyy + Y(0.018), Y(0.034), Y(0.009))}"/>`;
     }
     // the door's light on the square below the landing
     s += `<g class="isl-vwin" style="--i:7"><path d="${polyD([[dx - dw * 0.8, street], [dx + dw * 0.8, street], [dx + dw * 1.6, street + Y(0.12)], [dx - dw * 1.6, street + Y(0.12)]])}" fill="url(#islvspill)" opacity=".8"/></g>`;
@@ -3263,10 +3293,11 @@
       + `<path class="isl-vstep-edge" d="M${F(pl0)} ${F(street - Y(0.06))}H${F(W + 2)}" stroke-width="${F(Math.max(1.6, Y(0.01)))}"/><path class="isl-vpshade" d="${rect(pl0, street - Y(0.008), W, Y(0.01))}"/>`
       + shrubs([[pl0 + Y(0.08), street - Y(0.06), Y(0.07)], [pl0 + Y(0.24), street - Y(0.06), Y(0.08)], [pl0 + Y(0.4), street - Y(0.06), Y(0.07)]].filter(([x2]) => x2 < W + Y(0.05)), r);
     s += `<g class="isl-vwin" style="--i:0">${pool(px, street + Y(0.05), Y(0.3), Y(0.06), 0.8)}${halo(px, street - ph - Y(0.03), Y(0.2))}`
-      + `<path class="f-pulse" d="${rect(px - Y(0.02), street - ph - Y(0.06), Y(0.04), Y(0.055))}"/></g>`
+      + `<path class="f-pulse isl-ltframe" d="${rect(px - Y(0.02), street - ph - Y(0.06), Y(0.04), Y(0.055))}"/></g>`
+      + panes(px - Y(0.02), street - ph - Y(0.06), Y(0.04), Y(0.055))
       + `<path class="isl-vpost" d="M${F(px - 1.3)} ${F(street + Y(0.02))}V${F(street - ph)}H${F(px + 1.3)}V${F(street + Y(0.02))}Z`
-      + `M${F(px - Y(0.03))} ${F(street - ph - Y(0.06))}L${F(px)} ${F(street - ph - Y(0.095))}L${F(px + Y(0.03))} ${F(street - ph - Y(0.06))}Z`
-      + `M${F(px - Y(0.026))} ${F(street - ph + 1)}h${F(Y(0.052))}v${F(Y(0.012))}h${F(-Y(0.052))}Z"/>`;
+      + `M${F(px - Y(0.026))} ${F(street - ph + 1)}h${F(Y(0.052))}v${F(Y(0.012))}h${F(-Y(0.052))}Z"/>`
+      + `<path class="isl-vpost isl-lcap" d="M${F(px - Y(0.03))} ${F(street - ph - Y(0.06))}L${F(px)} ${F(street - ph - Y(0.095))}L${F(px + Y(0.03))} ${F(street - ph - Y(0.06))}Z"/>`;
     const sx = px - ss * 0.75, sy = street - ph + Y(0.035);
     const P = (a, b) => `${F(sx + a * ss)} ${F(sy + b * ss)}`;
     s += `<path class="isl-vpost" d="${rect(px - Y(0.03), sy - Y(0.008), Y(0.06), Y(0.01))}"/>`
