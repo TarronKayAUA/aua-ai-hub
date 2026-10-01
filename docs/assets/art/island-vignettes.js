@@ -1053,7 +1053,8 @@
     const tmw = tw2 / 5, tm = [0, 1, 2].map((i) => gx1 - tw2 + i * (tw2 - tmw) / 2);
     for (const mx of tm) gh += `M${F(mx)} ${F(lb - th)}h${F(tmw)}v${F(-Y(0.02))}h${F(-tmw)}Z`;   // and on the turret, one on each corner
     // the broken wall stepping down the slope to the left
-    gh += `M${F(gx0 - lw * 0.32)} ${F(lb + Y(0.012))}V${F(lb - lh * 0.3)}H${F(gx0 - lw * 0.2)}V${F(lb - lh * 0.42)}H${F(gx0 - lw * 0.08)}V${F(lb - lh * 0.55)}H${F(gx0)}V${F(lb)}Z`;
+    // (its foot buried in the hill: it had stood on a sliver of sky where the slope falls away; art-audit wave 1)
+    gh += `M${F(gx0 - lw * 0.32)} ${F(lb + Y(0.03))}V${F(lb - lh * 0.3)}H${F(gx0 - lw * 0.2)}V${F(lb - lh * 0.42)}H${F(gx0 - lw * 0.08)}V${F(lb - lh * 0.55)}H${F(gx0)}V${F(lb)}Z`;
     const lookI = 4.6;   // the lookout lights after the four lanterns (lanterns.length + 0.6), its glow with it
     s += `<g class="isl-vwin isl-vlast" style="--i:${lookI};--isl-vstep:.6s">${halo(lx, lb - lh * 0.45, Y(0.24), 'islvwarm')}</g>`;
     s += `<path class="isl-vstone" d="${gh}"/>`;
@@ -1098,7 +1099,9 @@
       if (landAt.includes(i + 1)) lanterns.push([x - land * 0.5, y]);
     }
     lanterns.push([x1 - X(0.018), yB]);
-    const body = edge.concat(edge.slice().reverse().map(([ex, ey]) => [ex + X(0.02), ey + depth]));
+    // (the body's offset copy kept short of the top's end: it had stuck out under the lookout as a wedge;
+    // art-audit wave 1, 2026-10-01)
+    const body = edge.concat(edge.slice().reverse().map(([ex, ey]) => [Math.min(ex + X(0.02), x1), ey + depth]));
     // the pools of light first, so the stones sit in them
     s += lanterns.map(([lx2, ly2], i) => `<g class="isl-vwin" style="--i:${i};--isl-vstep:.6s">${pool(lx2 + X(0.02), ly2 + Y(0.01), X(0.08), Y(0.06), 0.85)}</g>`).join('');
     s += `<path class="isl-vriser" d="${poly(body)}"/>`;
