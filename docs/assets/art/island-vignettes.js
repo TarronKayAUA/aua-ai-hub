@@ -222,6 +222,11 @@
     s += `<path class="f-pulse isl-vwin" style="--i:0" d="${lookout}"/>`;
     s += `<path class="isl-vwall" d="${posts}"/>`;
     s += clock;
+    // the band under the lookout carries the university's name in capitals, its seal beneath (owner, 2026-10-01;
+    // at the homepage's size the letters are about two pixels tall, so they read as an inscription, not as words)
+    s += `<text class="isl-vdark isl-vinscr" x="${F(cx)}" y="${F(shaftTop + 1.45 * u)}" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif"`
+      + ` font-size="${F(0.95 * u)}" textLength="${F(tw - 1 * u)}" lengthAdjust="spacingAndGlyphs">AMERICAN UNIVERSITY OF ANTIGUA</text>`
+      + `<circle class="isl-vdark" cx="${F(cx)}" cy="${F(shaftTop + 2.55 * u)}" r="${F(0.55 * u)}"/>`;
     const byGroup = {};
     for (const [grp, d] of litGroups) byGroup[grp] = (byGroup[grp] || '') + d;
     const groups = Object.keys(byGroup).map(Number).sort((a, b) => a - b);
@@ -261,6 +266,48 @@
       }
     });
     s += `<path class="isl-vdark" d="${postsD}"/>` + `<g class="isl-vlamps">${glows}</g>` + `<g class="isl-ydet"><path class="isl-vdark" d="${heads}"/></g>`;
+
+    // The four flags on their poles in front of the building, as in the owner's photographs: from the left
+    // Antigua and Barbuda, Canada, India and the United States (owner, 2026-10-01: "pretty iconic"). They fly to
+    // the right, sagging a little toward the fly, above the roofs against the sky; each flag in its own colours,
+    // veiled toward night (isl-vflagveil), the poles in the walls' cream.
+    const flag = (px, top, fh, kind) => {
+      const w = fh * { ag: 1.5, ca: 2, in: 1.5, us: 1.9 }[kind], h = fh, a = Math.atan2(0.22 * u, w) * 180 / Math.PI;
+      const box = (x, y, bw, bh, fill) => `<path fill="${fill}" d="${rect(x, y, bw, bh)}"/>`;
+      let d = '';
+      if (kind === 'ag') {        // red, with the inverted triangle: black (the rising sun in it), blue, white
+        const band = (y1, y2, fill) => `<path fill="${fill}" d="${polyD([[w / 2 * y1 / h, y1], [w - w / 2 * y1 / h, y1], [w - w / 2 * y2 / h, y2], [w / 2 * y2 / h, y2]])}"/>`;
+        d = box(0, 0, w, h, '#ce1126') + band(0, 0.42 * h, '#000000') + band(0.42 * h, 0.6 * h, '#0072c6') + band(0.6 * h, h, '#ffffff')
+          + `<path fill="#fcd116" d="M${F(w / 2 - 0.2 * h)} ${F(0.42 * h)}a${F(0.2 * h)} ${F(0.2 * h)} 0 0 1 ${F(0.4 * h)} 0Z"/>`;
+      } else if (kind === 'ca') {   // red, white, red, the maple leaf at the centre
+        const L = [[0, -0.5], [0.08, -0.33], [0.2, -0.38], [0.16, -0.15], [0.38, -0.25], [0.33, -0.12], [0.48, -0.06], [0.3, 0.08], [0.34, 0.18], [0.06, 0.14], [0.04, 0.4],
+          [-0.04, 0.4], [-0.06, 0.14], [-0.34, 0.18], [-0.3, 0.08], [-0.48, -0.06], [-0.33, -0.12], [-0.38, -0.25], [-0.16, -0.15], [-0.2, -0.38], [-0.08, -0.33]];
+        d = box(0, 0, w, h, '#ffffff') + box(0, 0, w / 4, h, '#d52b1e') + box(w * 3 / 4, 0, w / 4, h, '#d52b1e')
+          + `<path fill="#d52b1e" d="${polyD(L.map(([x, y]) => [w / 2 + x * 0.62 * h, h / 2 + y * 0.62 * h]))}"/>`;
+      } else if (kind === 'in') {   // saffron, white, green, the navy wheel at the centre
+        d = box(0, 0, w, h / 3, '#ff9933') + box(0, h / 3, w, h / 3, '#ffffff') + box(0, 2 * h / 3, w, h / 3 + 0.01, '#138808')
+          + `<circle cx="${F(w / 2)}" cy="${F(h / 2)}" r="${F(0.13 * h)}" fill="none" stroke="#000080" stroke-width="${F(Math.max(0.5, 0.04 * h))}"/>`;
+      } else {                     // thirteen stripes, the blue canton with its stars
+        let red = '';
+        for (let k = 0; k < 13; k += 2) red += rect(0, k * h / 13, w, h / 13);
+        let stars = '';
+        for (let r2 = 0; r2 < 5; r2++) for (let c2 = 0; c2 < 6; c2++) stars += `M${F((c2 + 0.5) * 0.4 * w / 6)} ${F((r2 + 0.5) * (7 * h / 13) / 5)}h0`;
+        d = box(0, 0, w, h, '#ffffff') + `<path fill="#b22234" d="${red}"/>` + box(0, 0, 0.4 * w, 7 * h / 13, '#3c3b6e')
+          + `<path d="${stars}" stroke="#ffffff" stroke-linecap="round" stroke-width="${F(Math.max(0.5, 0.045 * h))}"/>`;
+      }
+      // a soft ripple across the cloth, then the veil the evening draws over it
+      d += `<path fill="#000000" fill-opacity=".1" d="${rect(0.34 * w, 0, 0.16 * w, h)}"/><path fill="#ffffff" fill-opacity=".1" d="${rect(0.6 * w, 0, 0.14 * w, h)}"/>`
+        + `<path class="isl-vflagveil" d="${rect(0, 0, w, h)}"/>`;
+      return `<g transform="translate(${F(px + 0.15 * u)} ${F(top + 0.35 * u)}) skewY(${F(a)})">${d}</g>`;
+    };
+    let poles = '', cloth = '';
+    for (const [dx, kind] of [[-24, 'ag'], [-14.5, 'ca'], [14.5, 'in'], [24, 'us']]) {
+      const px = cx + dx * u, top = base - 30.6 * u, pw2 = Math.max(1, 0.3 * u);
+      poles += rect(px - pw2 / 2, top, pw2, base + 0.6 * u - top)
+        + `M${F(px - 0.32 * u)} ${F(top - 0.2 * u)}a${F(0.32 * u)} ${F(0.32 * u)} 0 1 0 ${F(0.64 * u)} 0a${F(0.32 * u)} ${F(0.32 * u)} 0 1 0 ${F(-0.64 * u)} 0Z`;
+      cloth += flag(px, top, 2.6 * u, kind);
+    }
+    s += `<path class="isl-vwall" d="${poles}"/>${cloth}`;
 
     // Palms: two tall ones flanking the portico, smaller ones along the front. The tall two stand far
     // enough out, and low enough, that their fronds keep clear of the clock's face (2026-09-30).
