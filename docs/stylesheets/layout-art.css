@@ -809,6 +809,8 @@
 .isl .isl-lglass2 { fill: #aebdc2; fill-opacity: 0.75; }
 /* Every lantern by Day: its lit pane turns iron and frames two panes of glass (panes() in the art). */
 .isl[data-sky="day"] .isl-ltframe { fill: #2f3940; }
+.isl .isl-ltbar { stroke: #1c252d; stroke-opacity: 0.8; fill: none; }
+.isl[data-sky="day"] .isl-ltlit { display: none; }
 /* The campus's materials (from the owner's photographs of AUA): cream walls, a terracotta ground
    floor, red roofs and white verandas, as dusk shows them (light scheme) and as night does (dark). */
 .isl {

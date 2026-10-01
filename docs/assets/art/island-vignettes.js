@@ -850,7 +850,11 @@
     if (pw < 0.4 || ph < 0.4) return '';
     let d = '', sh = '';
     for (const x of [x0 + t, x0 + t + pw + g]) { d += rect(x, y0 + t, pw, ph); sh += rect(x, y0 + t + ph * 0.55, pw, ph * 0.45); }
-    return `<g class="isl-ydet"><path class="isl-lglass" d="${d}"/><path class="isl-lglass2" d="${sh}"/></g>`;
+    // (lit, from Dawn to Night, the same frame and bar across the glow: a lit lantern had become one glowing
+    // box; art-audit wave 1, 2026-10-01, found by three judges on three pictures)
+    return `<g class="isl-ydet"><path class="isl-lglass" d="${d}"/><path class="isl-lglass2" d="${sh}"/></g>`
+      + `<g class="isl-ltlit"><path class="isl-ltbar" d="M${F(x0 + t / 2)} ${F(y0 + t / 2)}h${F(w - t)}v${F(h - t)}h${F(t - w)}Z" stroke-width="${F(t)}"/>`
+      + `<path class="isl-ltbar" d="M${F(x0 + w / 2)} ${F(y0 + t)}V${F(y0 + h - t)}" stroke-width="${F(g)}"/></g>`;
   };
   // Planes of a landform: its silhouette, the faces turned to the light, the faces in shadow, and a
   // rim of light along the crest where the afterglow catches it.
