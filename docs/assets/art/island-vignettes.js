@@ -1122,6 +1122,9 @@
     }
     s += `<path class="f-near" d="${cp}"/>`;
     s += shrubs(P([[0.41, 0.915], [0.49, 0.82], [0.57, 0.72], [0.76, 0.42]]).map(([ex, ey]) => [ex, ey, Y(0.036)]), r);
+    // (each lantern's light on the stone it stands on, in its own turn: its pool had been drawn under the stair,
+    // so only the grass beside it was lit; art-audit wave 1, 2026-10-01)
+    s += lanterns.map(([lx2, ly2], i) => `<g class="isl-vwin" style="--i:${i};--isl-vstep:.6s">${pool(lx2, ly2 + Y(0.006), X(0.05), Y(0.016), 0.6)}</g>`).join('');
     // 5. The lanterns: a post, a glazed lantern with its cap, a halo; the top one in the page's hue,
     //    and the last to light.
     lanterns.forEach(([lx2, ly2], i) => {
