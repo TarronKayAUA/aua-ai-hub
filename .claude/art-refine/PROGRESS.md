@@ -167,11 +167,11 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### committee-room
 
-- [ ] #31 fix v3 `committee-room-1`: The water jug's handle is on its spout side
-- [ ] #41 fix v3 `committee-room-2`: The lampshade's underside is missing by Day
+- [x] #31 fix v3 `committee-room-1`: The water jug's handle is on its spout side
+- [x] #41 fix v3 `committee-room-2`: The lampshade's underside is missing by Day
 - [x] #82 add v2 `week-calendar-6+committee-room-5`: The boats' reflections in the window view
-- [ ] #87 add v2 `committee-room-4`: A shadow under the window sill
-- [ ] #110 add v2 `committee-room-3`: A marker tray under the project board
+- [x] #87 add v2 `committee-room-4`: A shadow under the window sill
+- [x] #110 add v2 `committee-room-3`: A marker tray under the project board
 
 ### way-in
 

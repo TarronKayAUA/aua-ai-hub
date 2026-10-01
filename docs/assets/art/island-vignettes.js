@@ -2478,7 +2478,8 @@
       + `<path class="isl-lsidew" d="${polyD([[jx, wT], [jx - side * rv, wT + rv], [jx - side * rv, wB], [jx, wB]])}${rect(wx0, wB - rv, ww, rv)}"/>`
       + `<path class="isl-lframe" d="${rect(wx0, wT, ww, wB - wT)}" stroke-width="${F(Math.max(1.5, H * 0.018))}"/>`
       + `<path class="isl-lframe" d="M${F(wx0 + ww * 0.5)} ${F(wT)}V${F(wB)}M${F(wx0)} ${F(wT + (wB - wT) * 0.42)}H${F(wx1)}" stroke-width="${F(Math.max(1, H * 0.011))}"/>`
-      + `<path class="isl-lsill" d="${rect(wx0 - H * 0.02, wB, ww + H * 0.04, Math.max(2, H * 0.022))}"/>`;
+      + `<path class="isl-lsill" d="${rect(wx0 - H * 0.02, wB, ww + H * 0.04, Math.max(2, H * 0.022))}"/>`
+      + `<path class="isl-tdrop" d="${rect(wx0 - H * 0.02, wB + Math.max(2, H * 0.022), ww + H * 0.04, Math.max(1.5, H * 0.012))}"/>`;   // the sill's shadow
   }
   // The view out of a round-7 window: far hills on the horizon rimmed by the afterglow, mist at their
   // foot, a few lights on them with their columns on the water, and a boat or two at anchor.
@@ -2870,6 +2871,10 @@
       s += `<path class="isl-tdrop" d="${rect(bx0 + Y(0.01), bT + Y(0.013), bw, bh)}"/><path class="isl-lalu" d="${rect(bx0, bT, bw, bh)}"/>`
         + `<path class="isl-kboard" d="${rect(bx0 + Y(0.008), bT + Y(0.008), bw - Y(0.016), bh - Y(0.016))}"/>`
         + `<path class="isl-kbox" d="M${F(bx0 + cw)} ${F(bT + bh * 0.1)}V${F(bT + bh - Y(0.016))}M${F(bx0 + 2 * cw)} ${F(bT + bh * 0.1)}V${F(bT + bh - Y(0.016))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+      // its pen ledge along the foot, with its shadow and a marker lying on it
+      const ty0 = bT + bh, th = Math.max(2, 0.035 * sc(dW)), mkh = Math.max(1.5, 0.02 * sc(dW));
+      s += `<path class="isl-tdrop" d="${rect(bx0 + bw * 0.08 + Y(0.006), ty0 + Y(0.008), bw * 0.84, th)}"/><path class="isl-lalu" d="${rect(bx0 + bw * 0.08, ty0, bw * 0.84, th)}"/>`
+        + `<path class="isl-tiron" d="${rect(bx0 + bw * 0.62, ty0 - mkh, 0.13 * sc(dW), mkh)}"/>`;
       let heads = '';
       for (let c = 0; c < 3; c++) heads += `M${F(bx0 + c * cw + cw * 0.25)} ${F(bT + bh * 0.16)}h${F(cw * 0.5)}`;
       s += `<path class="isl-khead" d="${heads}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/>`;
@@ -2996,7 +3001,8 @@
     {
       const jd = D + 0.12, [jx, jy] = P(0.42, jd, 0.75), js = sc(jd);
       s += `<path class="isl-kglass" d="M${F(jx - 0.065 * js)} ${F(jy)}L${F(jx - 0.075 * js)} ${F(jy - 0.2 * js)}Q${F(jx)} ${F(jy - 0.25 * js)} ${F(jx + 0.09 * js)} ${F(jy - 0.235 * js)}L${F(jx + 0.075 * js)} ${F(jy - 0.2 * js)}L${F(jx + 0.065 * js)} ${F(jy)}Z"/>`
-        + `<path class="isl-kglassh" d="M${F(jx + 0.075 * js)} ${F(jy - 0.18 * js)}q${F(0.08 * js)} ${F(0.025 * js)} ${F(0.01 * js)} ${F(0.13 * js)}" stroke-width="${F(Math.max(1, 0.022 * js))}"/>`;
+        // (its handle opposite its spout; both had been on the right)
+        + `<path class="isl-kglassh" d="M${F(jx - 0.075 * js)} ${F(jy - 0.18 * js)}q${F(-0.08 * js)} ${F(0.025 * js)} ${F(-0.01 * js)} ${F(0.13 * js)}" stroke-width="${F(Math.max(1, 0.022 * js))}"/>`;
     }
     // the open folder at the viewer's own place, the near side: its two leaves, the minutes on the right,
     // their lines, and a pen
@@ -3019,6 +3025,8 @@
     s += `<path class="isl-tiron" d="${rect(lcx - 1, -2, 2, lTop + 2)}"/>`
       + `<path class="isl-cshade" d="M${F(lcx - lt)} ${F(lTop)}H${F(lcx + lt)}L${F(lcx + lb)} ${F(lBot)}H${F(lcx - lb)}Z"/>`
       + `<path class="isl-lbronze" d="${rect(lcx - lb, lBot - Y(0.008), 2 * lb, Y(0.008))}"/>`
+      // (its opening, seen from below as the camera requires, dark by Day; lit from Dawn to Night over it)
+      + `<path class="isl-cshade" d="${polyD(under)}"/><path class="isl-tdrop" d="${polyD(under)}"/>`
       + `<g class="isl-vlamps isl-vwin" style="--i:1"><path class="isl-tbulb" d="${polyD(under)}"/></g>`;
     return `<g style="--isl-vstep:.45s">${s}</g>`;
   }
