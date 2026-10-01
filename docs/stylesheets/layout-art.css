@@ -694,6 +694,12 @@
 .isl .isl-mhole { stroke: #3a3730; fill: none; stroke-linecap: round; }
 .isl .isl-mseat { fill: var(--isl-mseat); }
 .isl .isl-mseat2 { fill: var(--isl-mseat); filter: brightness(0.82); }
+/* The Lecture Hall (first audit, 2026-10-01): the screen's falloff (weaker in the lit hall by Day), the
+   projector's cool beam (not by Day), and the screen's light on the seat backs' top edges at Dusk and Night. */
+.isl[data-sky="day"] .isl-mscrv { opacity: 0.45; }
+.isl[data-sky="day"] .isl-mbeam { display: none; }
+.isl .isl-mrim { stroke: #cfdbea; fill: none; stroke-linecap: round; display: none; }
+.isl:is([data-sky="dusk"], [data-sky="night"]) .isl-mrim, [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-mrim { display: inline; }
 .isl .isl-dtruss { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; }
 .isl .isl-ddish { fill: var(--isl-lframe); }
 .isl .isl-ddish2 { stroke: var(--isl-lalu); fill: none; }

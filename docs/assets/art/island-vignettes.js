@@ -2824,25 +2824,51 @@
     const sx0 = X(0.62), sx1 = X(0.97), sT = Y(0.08), sB = Y(0.6), scx = sx0 + (sx1 - sx0) * 0.34, scy = (sT + sB) / 2;
     // (from a projector hung from the ceiling: the beam had come from nowhere at the top edge)
     const pjx = X(0.8), pjy = Y(0.035);
-    s += `<path d="${polyD([[pjx - Y(0.015), pjy], [pjx + Y(0.015), pjy], [sx1, sT], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#islvspill)" opacity=".5"/>`;
+    // (the beam is the projector's own cool white, faint, seen in the dark hall's air; not by Day)
+    s += `<defs><linearGradient id="isllbeam" gradientUnits="userSpaceOnUse" x1="${F(pjx)}" y1="${F(pjy)}" x2="${F(pjx)}" y2="${F(sB)}"><stop offset="0" class="st-vcool" stop-opacity=".2"/><stop offset="1" class="st-vcool" stop-opacity=".04"/></linearGradient></defs>`
+      + `<path class="isl-mbeam" d="${polyD([[pjx - Y(0.015), pjy], [pjx + Y(0.015), pjy], [sx1, sT], [sx1, sB], [sx0, sB], [sx0, sT]])}" fill="url(#isllbeam)"/>`;
     s += `<path class="isl-tiron" d="${rect(pjx - 1, -2, 2, Y(0.014) + 2)}${rect(pjx - Y(0.055), Y(0.012), Y(0.11), Y(0.028))}"/>`;
-    s += `<path class="isl-tiron" d="${rect(sx0 - Y(0.012), sT - Y(0.012), sx1 - sx0 + Y(0.024), sB - sT + Y(0.024))}"/><path class="isl-mscreen" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}"/>`;
-    const hr = Math.min((sB - sT) * 0.36, (sx1 - sx0) * 0.2);
-    const heart = `M${F(scx)} ${F(scy + hr * 0.95)}C${F(scx - hr * 1.2)} ${F(scy + hr * 0.2)} ${F(scx - hr * 1.1)} ${F(scy - hr * 0.7)} ${F(scx - hr * 0.35)} ${F(scy - hr * 0.62)}C${F(scx - hr * 0.1)} ${F(scy - hr * 0.6)} ${F(scx)} ${F(scy - hr * 0.4)} ${F(scx)} ${F(scy - hr * 0.3)}C${F(scx + hr * 0.1)} ${F(scy - hr * 0.6)} ${F(scx + hr * 0.9)} ${F(scy - hr * 0.8)} ${F(scx + hr * 0.95)} ${F(scy - hr * 0.1)}C${F(scx + hr * 0.95)} ${F(scy + hr * 0.4)} ${F(scx + hr * 0.4)} ${F(scy + hr * 0.7)} ${F(scx)} ${F(scy + hr * 0.95)}Z`;
-    const vessels = `M${F(scx - hr * 0.15)} ${F(scy - hr * 0.45)}C${F(scx - hr * 0.2)} ${F(scy - hr * 1.1)} ${F(scx + hr * 0.5)} ${F(scy - hr * 1.15)} ${F(scx + hr * 0.55)} ${F(scy - hr * 0.7)}M${F(scx + hr * 0.2)} ${F(scy - hr * 0.95)}V${F(scy - hr * 1.2)}M${F(scx + hr * 0.38)} ${F(scy - hr * 1.02)}L${F(scx + hr * 0.45)} ${F(scy - hr * 1.25)}M${F(scx - hr * 0.45)} ${F(scy - hr * 0.55)}L${F(scx - hr * 0.6)} ${F(scy - hr * 0.95)}`;
-    const septum = `M${F(scx - hr * 0.05)} ${F(scy - hr * 0.25)}Q${F(scx + hr * 0.1)} ${F(scy + hr * 0.3)} ${F(scx - hr * 0.02)} ${F(scy + hr * 0.8)}M${F(scx - hr * 0.8)} ${F(scy - hr * 0.1)}Q${F(scx - hr * 0.2)} ${F(scy)} ${F(scx + hr * 0.85)} ${F(scy - hr * 0.2)}`;
-    s += `<g class="isl-vwin isl-vlast" style="--i:3"><path class="isl-mheart" d="${heart}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${vessels}${septum}" stroke-width="${F(Math.max(1.2, Y(0.012)))}"/></g>`;
+    s += `<path class="isl-tiron" d="${rect(sx0 - Y(0.012), sT - Y(0.012), sx1 - sx0 + Y(0.024), sB - sT + Y(0.024))}"/><path class="isl-mscreen" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}"/>`
+      + `<defs><radialGradient id="isllscrv" cx=".5" cy=".45" r=".75"><stop offset=".35" stop-color="#0b1a2b" stop-opacity="0"/><stop offset="1" stop-color="#0b1a2b" stop-opacity=".24"/></radialGradient></defs>`
+      + `<path class="isl-mscrv" d="${rect(sx0, sT, sx1 - sx0, sB - sT)}" fill="url(#isllscrv)"/>`;   // its falloff (first audit)
+    // The heart as an anatomy slide shows it, from the front (first audit, 2026-10-01: it had read as a
+    // Valentine tied with string): the right atrium bulging at the viewer's left, the apex down and to the
+    // right, the superior vena cava coming down into the atrium, the aorta rising and arching to the right
+    // with its three branches, the pulmonary trunk in front of it running up to the right, and the groove
+    // between the ventricles running down to the apex; leader lines to the notes. (k: the heart's unit)
+    const k = Math.min((sB - sT) * 0.36, (sx1 - sx0) * 0.2), hcy = scy + k * 0.27;
+    const P = (x, y) => `${F(scx + x * k)} ${F(hcy + y * k)}`;
+    const heart = `M${P(-0.52, -0.42)}C${P(-0.85, -0.3)} ${P(-0.9, 0.15)} ${P(-0.62, 0.38)}C${P(-0.3, 0.62)} ${P(0.25, 0.86)} ${P(0.55, 0.92)}`
+      + `C${P(0.82, 0.7)} ${P(0.95, 0.2)} ${P(0.82, -0.12)}C${P(0.72, -0.38)} ${P(0.5, -0.48)} ${P(0.3, -0.44)}C${P(0.05, -0.5)} ${P(-0.3, -0.5)} ${P(-0.52, -0.42)}Z`;
+    const vessels = `M${P(-0.62, -0.4)}V${F(hcy - 0.98 * k)}M${P(-0.42, -0.44)}V${F(hcy - 0.98 * k)}`   // the superior vena cava
+      + `M${P(-0.28, -0.46)}V${F(hcy - 0.92 * k)}C${P(-0.28, -1.34)} ${P(0.52, -1.34)} ${P(0.52, -0.86)}`   // the aorta: ascending, the arch
+      + `M${P(-0.05, -0.46)}V${F(hcy - 0.86 * k)}C${P(-0.05, -1.04)} ${P(0.3, -1.04)} ${P(0.3, -0.82)}`
+      + `M${P(-0.08, -1.13)}V${F(hcy - 1.42 * k)}M${P(0.1, -1.18)}V${F(hcy - 1.46 * k)}M${P(0.28, -1.14)}L${P(0.34, -1.4)}`   // its three branches
+      + `M${P(0.02, -0.44)}C${P(0.04, -0.7)} ${P(0.16, -0.82)} ${P(0.32, -0.86)}L${P(0.72, -0.88)}`   // the pulmonary trunk, in front
+      + `M${P(0.26, -0.44)}C${P(0.31, -0.6)} ${P(0.43, -0.7)} ${P(0.58, -0.72)}L${P(0.72, -0.74)}`
+      + `M${P(0.42, -0.42)}Q${P(0.6, -0.5)} ${P(0.68, -0.36)}`;   // the left auricle
+    const septum = `M${P(0.22, -0.4)}C${P(0.3, 0)} ${P(0.38, 0.45)} ${P(0.52, 0.86)}`   // the groove between the ventricles
+      + `M${P(-0.5, -0.3)}C${P(-0.3, -0.16)} ${P(-0.02, -0.2)} ${P(0.18, -0.38)}`;   // and between atrium and ventricle
+    s += `<g class="isl-vwin isl-vlast" style="--i:3"><path class="isl-mheart" d="${heart}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/><path class="isl-mheart2" d="${vessels}${septum}" stroke-width="${F(Math.max(1, Y(0.009)))}"/></g>`;
     let notes = '';
-    for (let i = 0; i < 4; i++) notes += `M${F(sx0 + (sx1 - sx0) * 0.66)} ${F(sT + (sB - sT) * (0.28 + i * 0.14))}h${F((sx1 - sx0) * (0.26 - (i % 2) * 0.08))}`;
+    const nx = sx0 + (sx1 - sx0) * 0.66, ny = (i) => sT + (sB - sT) * (0.28 + i * 0.14);
+    for (let i = 0; i < 4; i++) notes += `M${F(nx)} ${F(ny(i))}h${F((sx1 - sx0) * (0.26 - (i % 2) * 0.08))}`;
+    // (two leader lines, from the aorta's arch and the left ventricle to the first two notes)
+    notes += `M${P(0.52, -1.05)}L${F(nx - Y(0.012))} ${F(ny(0))}M${P(0.9, 0.2)}L${F(nx - Y(0.012))} ${F(ny(1))}`;
     s += `<path class="isl-mnote" d="${notes}" stroke-width="${F(Math.max(1, Y(0.012)))}"/>`;
     // 2. The lectern with its lamp and a laptop; the skeleton on its stand beside it.
     const lx = X(0.44), lT = Y(0.56), lB = Y(0.84);
     s += `<path class="isl-lwood" d="${polyD([[lx - Y(0.1), lT], [lx + Y(0.1), lT], [lx + Y(0.08), lB], [lx - Y(0.08), lB]])}"/><path class="isl-lwood2" d="${rect(lx - Y(0.12), lT - Y(0.02), Y(0.24), Y(0.025))}"/>`
+      + `<path class="isl-lwood2" fill-opacity=".55" d="${polyD([[lx - Y(0.07), lT + Y(0.03)], [lx + Y(0.07), lT + Y(0.03)], [lx + Y(0.058), lB - Y(0.03)], [lx - Y(0.058), lB - Y(0.03)]])}"/>`   // its front panel
+      + `<path class="isl-tgrain" d="M${F(lx - Y(0.04))} ${F(lT + Y(0.05))}L${F(lx - Y(0.034))} ${F(lB - Y(0.05))}M${F(lx)} ${F(lT + Y(0.05))}V${F(lB - Y(0.05))}M${F(lx + Y(0.04))} ${F(lT + Y(0.05))}L${F(lx + Y(0.034))} ${F(lB - Y(0.05))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
       + `<path class="isl-llap" d="${polyD([[lx - Y(0.07), lT - Y(0.02)], [lx + Y(0.02), lT - Y(0.02)], [lx + Y(0.04), lT - Y(0.1)], [lx - Y(0.05), lT - Y(0.1)]])}"/>`;
     s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx + Y(0.07), lT - Y(0.07), Y(0.14), 'islvbulb')}</g>`
-      + `<path class="isl-tarm" d="M${F(lx + Y(0.07))} ${F(lT - Y(0.02))}Q${F(lx + Y(0.1))} ${F(lT - Y(0.1))} ${F(lx + Y(0.06))} ${F(lT - Y(0.08))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><path class="isl-tshade" d="${rect(lx + Y(0.03), lT - Y(0.09), Y(0.06), Y(0.02))}"/>`;
+      + `<path class="isl-tarm" d="M${F(lx + Y(0.07))} ${F(lT - Y(0.02))}Q${F(lx + Y(0.1))} ${F(lT - Y(0.1))} ${F(lx + Y(0.06))} ${F(lT - Y(0.08))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/><path class="isl-tshade" d="${rect(lx + Y(0.03), lT - Y(0.09), Y(0.06), Y(0.02))}"/>`
+      + `<g class="isl-vlamps isl-vwin" style="--i:1"><ellipse class="isl-tbulb" cx="${F(lx + Y(0.06))}" cy="${F(lT - Y(0.069))}" rx="${F(Y(0.026))}" ry="${F(Y(0.005))}"/>${pool(lx + Y(0.05), lT - Y(0.018), Y(0.07), Y(0.008), 0.6)}</g>`;   // its lit mouth, its pool on the top
     // the skeleton: skull and jaw, the spine, the rib cage, the pelvis, arms and legs, on a stand
-    const kx = X(0.53), top = Y(0.24), u = Y(0.05);
+    // (its skull had sat on the third window's sill and the figure was oversize: lower and smaller, its feet
+    // now behind the first row's desk rail; first audit, 2026-10-01)
+    const kx = X(0.53), top = Y(0.36), u = Y(0.043);
     let bones = `M${F(kx)} ${F(top + u * 1.4)}V${F(top + u * 5.6)}`;
     for (let i = 0; i < 5; i++) { const ry = top + u * (1.9 + i * 0.55), rw = u * (1.05 - Math.abs(i - 1.6) * 0.12); bones += `M${F(kx - rw)} ${F(ry + u * 0.25)}Q${F(kx - rw)} ${F(ry - u * 0.2)} ${F(kx)} ${F(ry)}Q${F(kx + rw)} ${F(ry - u * 0.2)} ${F(kx + rw)} ${F(ry + u * 0.25)}`; }
     bones += `M${F(kx - u * 1.1)} ${F(top + u * 1.7)}L${F(kx - u * 1.5)} ${F(top + u * 3.4)}L${F(kx - u * 1.6)} ${F(top + u * 5.0)}M${F(kx + u * 1.1)} ${F(top + u * 1.7)}L${F(kx + u * 1.45)} ${F(top + u * 3.4)}L${F(kx + u * 1.3)} ${F(top + u * 5.0)}`;
@@ -2867,7 +2893,18 @@
     for (const [yt, sz, cls] of [[0.8, 0.13, 'isl-mseat'], [0.9, 0.18, 'isl-mseat2']]) {
       let seats = '';
       for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) seats += `M${F(x)} ${F(H + 2)}V${F(Y(yt) + Y(sz) * 0.3)}Q${F(x)} ${F(Y(yt))} ${F(x + Y(sz) * 0.3)} ${F(Y(yt))}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz))} ${F(Y(yt))} ${F(x + Y(sz))} ${F(Y(yt) + Y(sz) * 0.3)}V${F(H + 2)}Z`;
-      s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/><path class="${cls}" d="${seats}"/>`;
+      // (an armrest between each pair of seats: the backs had been bare slabs; and each back's top edge caught
+      // by the screen's light at Dusk and Night, strongest nearest the screen; first audit, 2026-10-01)
+      let arms = '';
+      const rims = ['', '', ''], scrX = (sx0 + sx1) / 2;
+      for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) {
+        const ax = x + Y(sz) * 1.075;
+        arms += rect(ax - Y(sz) * 0.035, Y(yt) + Y(sz) * 0.42, Y(sz) * 0.07, H + 2 - Y(yt) - Y(sz) * 0.42) + rect(ax - Y(sz) * 0.07, Y(yt) + Y(sz) * 0.4, Y(sz) * 0.14, Y(sz) * 0.05);
+        const near = 1 - Math.min(1, Math.abs(x + Y(sz) * 0.5 - scrX) / (W * 0.75));
+        rims[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.22)}Q${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.3)} ${F(Y(yt) + Y(sz) * 0.02)}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.22)}`;
+      }
+      s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/><path class="${cls}" d="${seats}"/><path class="isl-lwood2" d="${arms}"/>`
+        + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('');
     }
     return `<g style="--isl-vstep:.5s">${s}</g>`;
   }
