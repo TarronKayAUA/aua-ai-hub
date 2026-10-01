@@ -770,14 +770,20 @@
       day += `<path class="isl-vshallow" d="${shoreD}" transform="translate(0 ${F(Math.max(1.2, ppd * 0.22))})" stroke-width="${F(Math.max(1.8, ppd * 0.36))}"/>`
         + `<path class="isl-vsurf" d="${shoreD}" stroke-width="${F(Math.max(1, ppd * 0.13))}"/>`;
     }
-    // (the yachts keep clear of the islands, and each has its reflection)
+    // (the yachts keep clear of the islands, and each has its reflection; drawn in every version, as objects
+    // are, with a small cool white masthead light and its column on the water after dark: they had sailed
+    // off at Dawn and come back by Day, and empty seas at night lacked the cool note; art-audit wave 1)
+    let yachts = '', ylit = '';
+    const yr = rng(1931);
     for (const [fx, fy, s0] of [[0.33, 0.09, 1], [0.5, 0.15, 1.3], [0.2, 0.32, 1.7], [0.68, 0.06, 0.8]]) {
       const bx = W * fx, by = y0 + (H - y0) * fy, L = Math.max(8, W * 0.014 * s0), mh = L * 1.3;
       const boat = `<path class="isl-vhull" d="M${F(bx - L / 2)} ${F(by - L * 0.1)}H${F(bx + L / 2)}L${F(bx + L * 0.36)} ${F(by)}H${F(bx - L * 0.4)}Z"/>`
         + `<path class="isl-vsail" d="M${F(bx)} ${F(by - L * 0.12)}V${F(by - mh)}L${F(bx + L * 0.42)} ${F(by - L * 0.14)}ZM${F(bx - L * 0.04)} ${F(by - mh * 0.85)}L${F(bx - L * 0.45)} ${F(by - L * 0.14)}H${F(bx - L * 0.04)}Z"/>`;
-      day += `<g opacity=".16" transform="translate(0 ${F(2 * by)}) scale(1 -1)">${boat}</g>` + boat;
+      yachts += `<g opacity=".16" transform="translate(0 ${F(2 * by)}) scale(1 -1)">${boat}</g>` + boat;
+      ylit += halo(bx, by - mh, Math.max(2.5, L * 0.3), 'islvcool') + dashes(streakList(bx, by + 1, by + (H - y0) * 0.3, yr, 0.03, 0.04), 's-vcoolglow', 1, [0.05, 0.1, 0.16])
+        + `<path class="s-vcool" d="M${F(bx)} ${F(by - mh)}h0" stroke-width="${F(Math.max(1.4, L * 0.12))}"/>`;
     }
-    s += `<g class="isl-ydet">${day}</g>`;
+    s += `<g class="isl-ydet">${day}</g>` + yachts + `<g class="isl-vwin" style="--i:1">${ylit}</g>`;
     // After dark: a few faint lights, nearest first. Antigua's shore, each with a thin column on the water.
     const lightsOn = (pts, i, w, op, last) => (pts.length
       ? `<path class="s-vlight isl-vwin${last ? ' isl-vlast' : ''}" style="--i:${i}" d="${pts.map(([px, py]) => `M${F(px)} ${F(py)}h0`).join('')}" stroke-width="${F(w)}" stroke-opacity="${op}"/>`
