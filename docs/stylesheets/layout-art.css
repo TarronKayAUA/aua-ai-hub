@@ -817,6 +817,9 @@
 .isl .isl-vcannon { fill: var(--isl-near); }
 /* The shaded side of stonework (the telescope's wall, the bell tower's shaft). */
 .isl .isl-vpshade { fill: var(--isl-near); fill-opacity: 0.3; }
+/* By Day the near land's colour is green, so a shadow on stone took an olive cast; under a blue sky a
+   shadow is lit by the sky and goes cool. Every other version's --isl-near is already a cool blue. */
+.isl[data-sky="day"] .isl-vpshade { fill: #2a3d4f; }
 /* Sailing Week's sails and spinnakers (one in the page's hue), and the steps' stone treads. */
 .isl { --isl-vsail: #e9edf2; --isl-vspin: #b9a6c9; }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] { --isl-vsail: #8d9bad; --isl-vspin: #6c6282; }
