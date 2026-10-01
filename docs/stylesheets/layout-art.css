@@ -480,7 +480,7 @@
   --isl-lred: #6e2a24; --isl-lred2: #4a4b50; --isl-lalu: #6c7178; --isl-lsign: #1f3f6a;
   --isl-lshade: #143d27; --isl-lbronze: #2e251c;
   --isl-lbk1: #4d2522; --isl-lbk2: #1f3044; --isl-lbk3: #54482a; --isl-lcase: #2c2017; --isl-lcase2: #1f160f;
-  --isl-lpage: #a79f8c; --isl-llap: #6e7176; --isl-lbottle: #7a211d;
+  --isl-lpage: #a79f8c; --isl-llap: #6e7176; --isl-lbottle: #7a211d; --isl-lbottle2: #24426a;
 }
 .isl[data-sky="day"] {
   --isl-lwall0: #e3ddd0; --isl-lwall1: #f1ece2; --isl-lside: #6a5f4c; --isl-lceil: #f0efea; --isl-lgrid: #d6d3cb;
@@ -872,6 +872,7 @@
 .isl .isl-vcathwin { fill: var(--isl-pulse); fill-opacity: 0.8; }
 .isl .isl-vtown { fill: var(--isl-vtown); }
 .isl .isl-vhullband { fill: var(--isl-near); fill-opacity: 0.75; }
+.isl[data-sky="day"] .isl-vhullband { fill: #1d2c3d; }   /* (by Day --isl-near is the land's green: a ship's boot-top and funnel cap are dark navy; art-audit wave 2) */
 .isl .isl-vdeck { stroke: var(--isl-near); stroke-opacity: 0.35; fill: none; }
 .isl .isl-vcannon { fill: var(--isl-near); }
 /* The shaded side of stonework (the telescope's wall, the bell tower's shaft). */

@@ -2364,6 +2364,9 @@
     //    page's hue, the light it spills down onto the bench and its pool there; the last light on.
     const lx = (bx1 + wx0) / 2, lT = Y(0.08), lB = Y(0.19), rt = Y(0.022), rb = Y(0.1);
     s += `<path class="isl-tcord" d="M${F(lx)} -2V${F(lT)}" stroke-width="${F(Math.max(1.4, Y(0.009)))}"/>`;
+    // (its bulb, unlit frosted glass in every version, the lit bulb over it from Dawn to Night: by Day the lamp
+    // had had no glass; art-audit wave 2)
+    s += `<ellipse class="isl-lglass" cx="${F(lx)}" cy="${F(lB + Y(0.008))}" rx="${F(rb * 0.45)}" ry="${F(Y(0.018))}"/>`;
     s += `<g class="isl-vlamps isl-vwin isl-vlast" style="--i:1">`
       + `<path d="${polyD([[lx - rb * 0.9, lB], [lx + rb * 0.9, lB], [lx + rb * 2.6, tTop], [lx - rb * 2.6, tTop]])}" fill="url(#islvspill)"/>`
       + pool(lx, tTop + Y(0.012), rb * 3.2, Y(0.03), 0.85) + halo(lx, lB, rb * 2.8, 'islvlamp')
