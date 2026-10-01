@@ -2994,12 +2994,14 @@
     {
       const px = lx - Y(0.015), hy = Y(0.39), hr = Y(0.031), sh = Y(0.45);
       const coat = `M${F(px - Y(0.08))} ${F(lT + 1)}L${F(px - Y(0.078))} ${F(sh + Y(0.02))}Q${F(px - Y(0.074))} ${F(sh)} ${F(px - Y(0.04))} ${F(sh - Y(0.006))}H${F(px + Y(0.04))}Q${F(px + Y(0.074))} ${F(sh)} ${F(px + Y(0.078))} ${F(sh + Y(0.02))}L${F(px + Y(0.08))} ${F(lT + 1)}Z`;
+      s += '<g class="isl-lq" data-q="aysd">';   // (the lecturer from Dawn to Dusk; gone home at Night, art-audit by version)
       s += `<g class="isl-mroom"><path fill="#efeee9" d="${coat}"/>`
         + `<path fill="#a9bdd3" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}Z"/>`   // the shirt in the coat's V
         + `<path stroke="#bdbab2" fill="none" stroke-width="${F(Math.max(0.7, Y(0.005)))}" d="M${F(px - Y(0.022))} ${F(sh - Y(0.005))}L${F(px)} ${F(sh + Y(0.06))}L${F(px + Y(0.022))} ${F(sh - Y(0.005))}M${F(px - Y(0.03))} ${F(sh + Y(0.02))}L${F(px - Y(0.012))} ${F(sh + Y(0.07))}M${F(px + Y(0.03))} ${F(sh + Y(0.02))}L${F(px + Y(0.012))} ${F(sh + Y(0.07))}"/>`   // the lapels
         + `<path fill="#7a4b30" d="${rect(px - Y(0.012), hy + hr * 0.6, Y(0.024), sh - hy - hr * 0.5)}"/><circle fill="#7a4b30" cx="${F(px)}" cy="${F(hy)}" r="${F(hr)}"/>`   // neck and face
         + `<path fill="#1b1715" d="M${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}A${F(hr * 1.02)} ${F(hr * 1.06)} 0 0 1 ${F(px + hr * 1.02)} ${F(hy + hr * 0.1)}Q${F(px + hr * 0.5)} ${F(hy - hr * 0.45)} ${F(px - hr * 1.02)} ${F(hy + hr * 0.1)}Z"/></g>`;   // the hair
       s += `<g class="isl-vlamps isl-vwin" style="--i:1"><path class="isl-mlit" d="M${F(px + hr * 0.75)} ${F(hy - hr * 0.55)}A${F(hr)} ${F(hr)} 0 0 1 ${F(px + hr * 0.85)} ${F(hy + hr * 0.5)}M${F(px + Y(0.062))} ${F(sh - Y(0.003))}Q${F(px + Y(0.077))} ${F(sh + Y(0.01))} ${F(px + Y(0.079))} ${F(lT)}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/></g>`;
+      s += '</g>';
     }
     s += `<path class="isl-lwood" d="${polyD([[lx - Y(0.1), lT], [lx + Y(0.1), lT], [lx + Y(0.08), lB], [lx - Y(0.08), lB]])}"/><path class="isl-lwood2" d="${rect(lx - Y(0.12), lT - Y(0.02), Y(0.24), Y(0.025))}"/>`
       + `<path class="isl-lwood2" fill-opacity=".55" d="${polyD([[lx - Y(0.07), lT + Y(0.03)], [lx + Y(0.07), lT + Y(0.03)], [lx + Y(0.058), lB - Y(0.03)], [lx - Y(0.058), lB - Y(0.03)]])}"/>`   // its front panel
@@ -3043,19 +3045,40 @@
       // Students in the rows, seen from behind: heads and shoulders above the seat backs (one in a white coat,
       // one lit by a laptop's cool glow from Dawn to Night), drawn behind the backs (art-audit wave 1,
       // 2026-10-01: the hall had been an empty room of seats).
-      const who = yt < 0.85 ? [[3, '#efeee9', 'short'], [4, '#2f3d5c', 'long'], [9, '#6b2e33', 'bun'], [13, '#3d6466', 'short'], [14, '#5c5e3e', 'long']]
-        : [[2, '#3d6466', 'short'], [7, '#2f3d5c', 'bun', true]];
-      let ppl = '', glow = '';
-      for (const [i, cloth, hair, lap] of who) {
-        const z = Y(sz), cx = -z * 0.3 + i * z * 1.15 + z * 0.5, top = Y(yt), hr = z * 0.17, hy = top - z * 0.34;
-        ppl += `<path fill="${cloth}" d="M${F(cx - z * 0.44)} ${F(top + z * 0.4)}L${F(cx - z * 0.42)} ${F(top - z * 0.02)}Q${F(cx - z * 0.4)} ${F(top - z * 0.15)} ${F(cx - z * 0.14)} ${F(top - z * 0.16)}H${F(cx + z * 0.14)}Q${F(cx + z * 0.4)} ${F(top - z * 0.15)} ${F(cx + z * 0.42)} ${F(top - z * 0.02)}L${F(cx + z * 0.44)} ${F(top + z * 0.4)}Z"/>`
-          + `<path fill="#6e4a33" d="${rect(cx - hr * 0.42, hy + hr * 0.6, hr * 0.84, z * 0.12)}"/>`
-          + `<circle fill="#1d1916" cx="${F(cx)}" cy="${F(hy)}" r="${F(hr)}"/>`
-          + (hair === 'long' ? `<path fill="#1d1916" d="M${F(cx - hr)} ${F(hy)}V${F(top - z * 0.1)}H${F(cx + hr)}V${F(hy)}Z"/>` : '')
-          + (hair === 'bun' ? `<circle fill="#1d1916" cx="${F(cx + hr * 0.15)}" cy="${F(hy - hr * 1.05)}" r="${F(hr * 0.45)}"/>` : '');
-        if (lap) glow += halo(cx, hy + hr, z * 0.55, 'islvcool');
-        const near = 1 - Math.min(1, Math.abs(cx - (sx0 + sx1) / 2) / (W * 0.75));
-        rims[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(cx - z * 0.38)} ${F(top - z * 0.06)}Q${F(cx - z * 0.36)} ${F(top - z * 0.15)} ${F(cx - z * 0.12)} ${F(top - z * 0.155)}H${F(cx + z * 0.12)}Q${F(cx + z * 0.36)} ${F(top - z * 0.15)} ${F(cx + z * 0.38)} ${F(top - z * 0.06)}`;
+      // Who is in the hall at each hour (art-audit wave 1, by version; the owner, 2026-10-01: what is drawn
+      // may change between versions with a reason): a few early students at Dawn, nearly full by Day, thinning
+      // at Sunset as classes end, four staying for an evening review at Dusk, and at Night one student studying
+      // late by a laptop's cool light. Each version's people are their own isl-lq group.
+      const C = { coat: '#efeee9', navy: '#2f3d5c', maroon: '#6b2e33', teal: '#3d6466', olive: '#5c5e3e', grey: '#6c6f75', plum: '#5a3d5c', sand: '#8a7a5c' };
+      const ROSTER = yt < 0.85 ? {
+        a: [[3, 'coat', 'short'], [9, 'maroon', 'bun']],
+        y: [[1, 'navy', 'short'], [2, 'coat', 'long'], [3, 'coat', 'short'], [4, 'navy', 'long'], [6, 'grey', 'bun'], [7, 'teal', 'short'], [9, 'maroon', 'bun'],
+          [10, 'sand', 'short'], [12, 'plum', 'long'], [13, 'teal', 'short'], [14, 'olive', 'long'], [16, 'coat', 'short'], [18, 'navy', 'bun']],
+        s: [[4, 'navy', 'long'], [10, 'sand', 'short'], [13, 'teal', 'short'], [16, 'coat', 'short']],
+        d: [[3, 'coat', 'short'], [4, 'navy', 'long']],
+      } : {
+        a: [[7, 'navy', 'bun', true]],
+        y: [[2, 'teal', 'short'], [4, 'grey', 'long'], [7, 'navy', 'bun', true], [9, 'maroon', 'short'], [12, 'olive', 'bun']],
+        s: [[2, 'teal', 'short'], [9, 'maroon', 'short']],
+        d: [[7, 'navy', 'bun', true], [12, 'olive', 'bun']],
+        n: [[7, 'navy', 'bun', true]],
+      };
+      const byQ = {};
+      for (const q of Object.keys(ROSTER)) {
+        let ppl = '', glow = '';
+        const pr = ['', '', ''];
+        for (const [i, cl, hair, lap] of ROSTER[q]) {
+          const z = Y(sz), cx = -z * 0.3 + i * z * 1.15 + z * 0.5, top = Y(yt), hr = z * 0.17, hy = top - z * 0.34;
+          ppl += `<path fill="${C[cl]}" d="M${F(cx - z * 0.44)} ${F(top + z * 0.4)}L${F(cx - z * 0.42)} ${F(top - z * 0.02)}Q${F(cx - z * 0.4)} ${F(top - z * 0.15)} ${F(cx - z * 0.14)} ${F(top - z * 0.16)}H${F(cx + z * 0.14)}Q${F(cx + z * 0.4)} ${F(top - z * 0.15)} ${F(cx + z * 0.42)} ${F(top - z * 0.02)}L${F(cx + z * 0.44)} ${F(top + z * 0.4)}Z"/>`
+            + `<path fill="#6e4a33" d="${rect(cx - hr * 0.42, hy + hr * 0.6, hr * 0.84, z * 0.12)}"/>`
+            + `<circle fill="#1d1916" cx="${F(cx)}" cy="${F(hy)}" r="${F(hr)}"/>`
+            + (hair === 'long' ? `<path fill="#1d1916" d="M${F(cx - hr)} ${F(hy)}V${F(top - z * 0.1)}H${F(cx + hr)}V${F(hy)}Z"/>` : '')
+            + (hair === 'bun' ? `<circle fill="#1d1916" cx="${F(cx + hr * 0.15)}" cy="${F(hy - hr * 1.05)}" r="${F(hr * 0.45)}"/>` : '');
+          if (lap) glow += halo(cx, hy + hr, z * 0.55, 'islvcool');
+          const near = 1 - Math.min(1, Math.abs(cx - (sx0 + sx1) / 2) / (W * 0.75));
+          pr[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(cx - z * 0.38)} ${F(top - z * 0.06)}Q${F(cx - z * 0.36)} ${F(top - z * 0.15)} ${F(cx - z * 0.12)} ${F(top - z * 0.155)}H${F(cx + z * 0.12)}Q${F(cx + z * 0.36)} ${F(top - z * 0.15)} ${F(cx + z * 0.38)} ${F(top - z * 0.06)}`;
+        }
+        byQ[q] = { ppl, glow, pr };
       }
       for (let x = -Y(sz) * 0.3; x < W + Y(sz); x += Y(sz) * 1.15) {
         const ax = x + Y(sz) * 1.075;
@@ -3063,8 +3086,9 @@
         const near = 1 - Math.min(1, Math.abs(x + Y(sz) * 0.5 - scrX) / (W * 0.75));
         rims[near > 0.66 ? 2 : near > 0.33 ? 1 : 0] += `M${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.22)}Q${F(x + Y(sz) * 0.06)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.3)} ${F(Y(yt) + Y(sz) * 0.02)}H${F(x + Y(sz) * 0.7)}Q${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.02)} ${F(x + Y(sz) * 0.94)} ${F(Y(yt) + Y(sz) * 0.22)}`;
       }
-      s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/><g class="isl-vlamps">${glow}</g><g class="isl-mroom">${ppl}</g><path class="${cls}" d="${seats}"/><path class="isl-lwood2" d="${arms}"/>`
-        + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('');
+      s += `<path class="isl-lwood2" d="${rect(-2, Y(yt) - Y(0.035), W + 4, Y(0.03))}"/>${Object.keys(byQ).map((q) => `<g class="isl-lq" data-q="${q}"><g class="isl-vlamps">${byQ[q].glow}</g><g class="isl-mroom">${byQ[q].ppl}</g></g>`).join('')}<path class="${cls}" d="${seats}"/><path class="isl-lwood2" d="${arms}"/>`
+        + rims.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('')
+        + Object.keys(byQ).map((q) => `<g class="isl-lq" data-q="${q}">` + byQ[q].pr.map((d, i) => (d ? `<path class="isl-mrim" d="${d}" stroke-width="${F(Math.max(1, Y(0.008)))}" stroke-opacity="${[0.12, 0.24, 0.38][i]}"/>` : '')).join('') + '</g>').join('');
     }
     return `<g style="--isl-vstep:.5s">${s}</g>`;
   }
