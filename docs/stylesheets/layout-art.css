@@ -660,7 +660,8 @@
   --isl-hcurt: #577270; --isl-hblank: #6e87a1; --isl-bone: #b8b09c; --isl-mseat: #2e3245; --isl-mscr: #e9edf2;
 }
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])), .isl[data-sky="night"] {
-  --isl-hcurt: #2e3d3c; --isl-hblank: #34465a; --isl-bone: #8a8474; --isl-mseat: #151823;
+  --isl-hcurt: #2e3d3c; --isl-hblank: #34465a; --isl-mseat: #151823;
+  --isl-bone: #787365;   /* a little dimmer since the hall closed at Night (owner, 2026-10-01): no lamp lights it now */
   --isl-mscr: #4a4f57;   /* the hall closed at Night (owner, 2026-10-01): the projector off, the bare screen a pale cloth in the dark */
 }
 .isl[data-sky="day"] { --isl-hcurt: #a9d0cb; --isl-hblank: #b9d3ec; --isl-bone: #efe8d6; --isl-mseat: #4f5b86; --isl-mscr: #fbfcfd; }
