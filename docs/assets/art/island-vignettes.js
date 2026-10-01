@@ -853,6 +853,37 @@
   // By Day an unlit lantern is glass in an iron frame, not one dark shape (owner, 2026-10-01): two panes
   // of pale glass, shaded below, inset in the lantern's lit pane, which by Day turns iron (isl-ltframe)
   // and shows round them as the frame. Drawn only by Day, so the lit versions are unchanged.
+  // People (art-audit, 2026-10-01: pictures with no one in them read as empty sets). person(): a standing figure,
+  // feet at (x, fy), h tall, seen from behind or facing us (front), in the caller's colours; `reach`, a point
+  // its right hand reaches up to (a notice, a door's handle). chairUser(): a wheelchair user facing right, the
+  // rear wheel's contact point at the origin, u the height to the head's top; the caller places and turns it.
+  // Both are drawn in literal colours: the piece dims them by version (isl-bfig).
+  const person = (x, fy, h, { shirt = '#c7d6e3', legs = '#2f3a4a', skin = '#6b4630', hair = '#1d1916', front = false, reach = null } = {}) => {
+    const sw = h * 0.13, hr = h * 0.075, ft = fy - h, hy = ft + hr;
+    let o = `<path fill="${legs}" d="M${F(x - sw * 0.85)} ${F(fy)}L${F(x - sw * 0.75)} ${F(ft + h * 0.5)}H${F(x + sw * 0.75)}L${F(x + sw * 0.85)} ${F(fy)}H${F(x + sw * 0.1)}L${F(x)} ${F(ft + h * 0.62)}L${F(x - sw * 0.1)} ${F(fy)}Z"/>`;
+    o += `<path fill="${shirt}" d="M${F(x - sw * 0.82)} ${F(ft + h * 0.53)}L${F(x - sw)} ${F(ft + h * 0.22)}Q${F(x - sw)} ${F(ft + h * 0.16)} ${F(x - sw * 0.6)} ${F(ft + h * 0.15)}H${F(x + sw * 0.6)}Q${F(x + sw)} ${F(ft + h * 0.16)} ${F(x + sw)} ${F(ft + h * 0.22)}L${F(x + sw * 0.82)} ${F(ft + h * 0.53)}Z`
+      + rect(x - sw * 1.05, ft + h * 0.2, sw * 0.24, h * 0.3)
+      + (reach ? `M${F(x + sw * 0.78)} ${F(ft + h * 0.18)}L${F(x + sw * 1.02)} ${F(ft + h * 0.16)}L${F(reach[0] + sw * 0.12)} ${F(reach[1])}L${F(reach[0] - sw * 0.12)} ${F(reach[1])}Z`
+        : rect(x + sw * 0.81, ft + h * 0.2, sw * 0.24, h * 0.3)) + '"/>';
+    o += `<path fill="${skin}" d="${rect(x - sw * 1.02, ft + h * 0.48, sw * 0.18, h * 0.07)}${reach ? rect(reach[0] - sw * 0.12, reach[1] - h * 0.05, sw * 0.24, h * 0.06) : rect(x + sw * 0.84, ft + h * 0.48, sw * 0.18, h * 0.07)}${rect(x - hr * 0.45, hy + hr * 0.6, hr * 0.9, h * 0.07)}"/>`;
+    o += front ? `<circle fill="${skin}" cx="${F(x)}" cy="${F(hy)}" r="${F(hr)}"/><path fill="${hair}" d="M${F(x - hr * 1.02)} ${F(hy + hr * 0.1)}A${F(hr * 1.02)} ${F(hr * 1.06)} 0 0 1 ${F(x + hr * 1.02)} ${F(hy + hr * 0.1)}Q${F(x + hr * 0.5)} ${F(hy - hr * 0.45)} ${F(x - hr * 1.02)} ${F(hy + hr * 0.1)}Z"/>`
+      : `<circle fill="${hair}" cx="${F(x)}" cy="${F(hy)}" r="${F(hr)}"/>`;
+    o += `<path fill="#3a2e24" d="${rect(x - sw * 0.85, fy - h * 0.02, sw * 0.7, h * 0.03)}${rect(x + sw * 0.15, fy - h * 0.02, sw * 0.7, h * 0.03)}"/>`;
+    return o;
+  };
+  const chairUser = (u, { shirt = '#b8573f', legs = '#3a3f4a', skin = '#8d5a3b', hair = '#1d1916' } = {}) => {
+    const sw = Math.max(0.8, u * 0.025);
+    let o = `<circle cx="0" cy="${F(-u * 0.22)}" r="${F(u * 0.22)}" fill="none" stroke="#2a2f36" stroke-width="${F(u * 0.035)}"/>`   // the rear wheel
+      + `<circle cx="0" cy="${F(-u * 0.22)}" r="${F(u * 0.17)}" fill="none" stroke="#9aa3ad" stroke-width="${F(sw * 0.6)}"/>`   // its hand rim
+      + `<circle cx="${F(u * 0.44)}" cy="${F(-u * 0.055)}" r="${F(u * 0.055)}" fill="#2a2f36"/>`   // the front caster
+      + `<path fill="none" stroke="#7e8690" stroke-width="${F(sw)}" stroke-linejoin="round" d="M${F(-u * 0.1)} ${F(-u * 0.72)}L${F(-u * 0.04)} ${F(-u * 0.38)}H${F(u * 0.34)}L${F(u * 0.44)} ${F(-u * 0.11)}M${F(u * 0.38)} ${F(-u * 0.08)}h${F(u * 0.1)}"/>`;   // backrest, seat, footrest
+    o += `<path fill="${legs}" d="M${F(-u * 0.02)} ${F(-u * 0.38)}L${F(u * 0.34)} ${F(-u * 0.39)}L${F(u * 0.43)} ${F(-u * 0.12)}H${F(u * 0.34)}L${F(u * 0.28)} ${F(-u * 0.3)}L${F(-u * 0.02)} ${F(-u * 0.28)}Z"/>`;   // thighs and shins
+    o += `<path fill="${shirt}" d="M${F(-u * 0.06)} ${F(-u * 0.36)}L${F(-u * 0.05)} ${F(-u * 0.72)}Q${F(u * 0.03)} ${F(-u * 0.8)} ${F(u * 0.12)} ${F(-u * 0.72)}L${F(u * 0.13)} ${F(-u * 0.36)}Z"/>`;   // torso
+    o += `<path fill="none" stroke="${shirt}" stroke-width="${F(u * 0.07)}" stroke-linecap="round" d="M${F(u * 0.06)} ${F(-u * 0.68)}L${F(u * 0.1)} ${F(-u * 0.45)}L${F(u * 0.04)} ${F(-u * 0.32)}"/>`;   // the arm to the hand rim
+    o += `<circle fill="${skin}" cx="${F(u * 0.04)}" cy="${F(-u * 0.31)}" r="${F(u * 0.035)}"/>`;   // the hand
+    o += `<circle fill="${skin}" cx="${F(u * 0.05)}" cy="${F(-u * 0.88)}" r="${F(u * 0.09)}"/><path fill="${hair}" d="M${F(u * 0.05 - u * 0.092)} ${F(-u * 0.87)}A${F(u * 0.092)} ${F(u * 0.095)} 0 0 1 ${F(u * 0.05 + u * 0.092)} ${F(-u * 0.87)}Q${F(u * 0.05)} ${F(-u * 0.93)} ${F(u * 0.05 - u * 0.092)} ${F(-u * 0.87)}Z"/>`;
+    return o;
+  };
   const panes = (x0, y0, w, h) => {
     const t = Math.max(0.6, w * 0.16), g = Math.max(0.5, t * 0.7), pw = (w - 2 * t - g) / 2, ph = h - 2 * t;
     if (pw < 0.4 || ph < 0.4) return '';
@@ -3543,6 +3574,18 @@
     for (let i = 1; i < nP; i++) {
       const qx = rx0 + (lx0 - rx0) * i / nP + Y(0.03), qy = street + (qx - rx0) * slope;
       s += `<g class="isl-vwin" style="--i:${i}">${pool(qx, street + Y(0.015), Y(0.07), Y(0.016), 0.6)}<path class="f-pulse" d="${rect(qx - Y(0.012), qy + Y(0.012), Y(0.024), Y(0.009))}"/></g>`;
+    }
+    // The ramp by the hour (art-audit wave 1, by version; the owner, 2026-10-01: what is drawn may change between
+    // versions with a reason): at Dawn someone opening up, a hand on the door's handle; by Day a wheelchair user
+    // going up the ramp; at Sunset going home, down it; after hours, at Dusk and Night, no one. Drawn before the
+    // rail, so the near rail crosses in front of them.
+    {
+      const at = (t) => { const qx = rx0 + (lx0 - rx0) * t; return [qx, street + (qx - rx0) * slope]; };
+      const ang = Math.atan(slope) * 180 / Math.PI, u = Y(0.16);
+      const [ux, uy] = at(0.45), [dx2, dy2] = at(0.18);
+      s += `<g class="isl-bfig"><g class="isl-lq" data-q="y"><g transform="translate(${F(ux)} ${F(uy)}) rotate(${F(ang)})">${chairUser(u)}</g></g>`
+        + `<g class="isl-lq" data-q="s"><g transform="translate(${F(dx2)} ${F(dy2)}) rotate(${F(ang)}) scale(-1 1)">${chairUser(u)}</g></g>`
+        + `<g class="isl-lq" data-q="a">${person(dx - dw * 0.22, land, Y(0.21), { shirt: '#e8e2d4', legs: '#2f3a4a', reach: [dx - Y(0.02), dT + Y(0.15)] })}</g></g>`;
     }
     s += `<path class="isl-arail" d="${posts}" stroke-width="${F(Math.max(1, Y(0.008)))}"/><path class="isl-arail" d="${rail}" stroke-width="${F(Math.max(1.2, Y(0.01)))}"/>`;
     // 7. The planter by the steps and its palm; the street lamp at the ramp's foot, kept clear of the card's
