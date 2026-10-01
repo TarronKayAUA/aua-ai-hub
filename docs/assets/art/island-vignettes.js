@@ -719,7 +719,9 @@
     if (!B) return '';
     const r = rng(1917), y0 = v.y0, ppd = v.ppd, VEX = L.VEX || 2.6;
     const [bx0, by0, bx1, by1] = B.box, span = clamp(W * 0.1, 56, 100), k = span / (bx1 - bx0);
-    const x = W * 0.64, y = y0 * 0.34;
+    // (left of the Moon's place: at 0.64 its right wingtip lay on the night Moon's disc at every width; first
+    // audit's mechanical sweep, measured 2026-10-01)
+    const x = W * 0.58, y = y0 * 0.34;
     let s = '';
     // The sea's finish: ripples dense toward the horizon, long and sparse near the viewer.
     s += dashes(hatchList(W, y0, H, r), 's-vrip', 1, [0.1, 0.18, 0.28]);
