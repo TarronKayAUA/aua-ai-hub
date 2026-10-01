@@ -2707,20 +2707,32 @@
     // 1. The headland at the right, rising from the sea, rimmed; mist at its foot; scrub on its crest.
     const crest = [[0.52, 1.02], [0.56, 0.9], [0.61, 0.8], [0.67, 0.72], [0.74, 0.68], [0.84, 0.66], [0.94, 0.67], [1.02, 0.68]].map(([x, y]) => [X(x), Y(y)]);
     s += mist(X(0.4), y0 + Y(0.04), X(0.2), Y(0.08), 0.45);
+    // (the station's concrete footing, carried down under its downhill end: its floor had hung over the falling
+    // slope, sky showing beneath; drawn before the land, which covers it wherever the ground is higher)
+    const bx = X(0.64), bT = Y(0.58), bw = Y(0.36);
+    s += `<path class="isl-aramp" d="${rect(bx, bT + Y(0.14) - 1, bw, Y(0.08))}"/>`;
     s += `<path class="f-far isl-land" d="${polyD([...crest, [X(1.02), H + 2]])}"/>`;
     s += `<path class="s-rim" d="${lineD(crest.slice(1, 6).map(([x, y]) => [x, y + 0.5]))}" stroke-width="1.2" stroke-opacity=".45"/>`;
     s += shrubs([[0.585, 0.86, 0.05], [0.64, 0.77, 0.045], [0.9, 0.7, 0.05], [0.98, 0.75, 0.06]].map(([x, y, k]) => [X(x), Y(y), Y(k)]), r);
     // 2. The station: a low block with lit windows beside the dish's foot.
-    const bx = X(0.64), bT = Y(0.58), bw = Y(0.36);
+    //    (its lit windows' glow, its roof edge catching the last light, a door in its right bay with its pool,
+    //    and a concrete base course, so it stands off the hill after dark, when wall and hill share a tone)
     s += `<path class="isl-tw0" d="${rect(bx, bT, bw, Y(0.14))}"/><path class="isl-troof" d="${rect(bx - Y(0.01), bT - Y(0.015), bw + Y(0.02), Y(0.02))}"/>`
-      + `<path class="f-pulse isl-vwin" style="--i:0" d="${rect(bx + Y(0.04), bT + Y(0.04), Y(0.05), Y(0.04))}${rect(bx + Y(0.13), bT + Y(0.04), Y(0.05), Y(0.04))}${rect(bx + Y(0.22), bT + Y(0.04), Y(0.04), Y(0.06))}"/>`;
+      + `<g class="isl-vwin" style="--i:0">${halo(bx + Y(0.15), bT + Y(0.065), Y(0.2), 'islvwarm')}${pool(bx + Y(0.3125), bT + Y(0.155), Y(0.07), Y(0.014), 0.6)}</g>`
+      + `<path class="s-rim" d="M${F(bx - Y(0.01))} ${F(bT - Y(0.015) + 0.5)}H${F(bx + bw + Y(0.01))}" stroke-width="1" stroke-opacity=".4"/>`
+      + `<path class="f-pulse isl-vwin" style="--i:0" d="${rect(bx + Y(0.04), bT + Y(0.04), Y(0.05), Y(0.04))}${rect(bx + Y(0.13), bT + Y(0.04), Y(0.05), Y(0.04))}${rect(bx + Y(0.22), bT + Y(0.04), Y(0.04), Y(0.06))}${rect(bx + Y(0.295), bT + Y(0.04), Y(0.035), Y(0.086))}"/>`
+      + `<path class="isl-aramp" d="${rect(bx - Y(0.004), bT + Y(0.126), bw + Y(0.008), Y(0.014))}"/>`;
     // 3. The dish: a lattice pedestal, the yoke, the bowl turned up and to the left, the feed on its legs.
     const dx = X(0.85), footY = Y(0.68), pivY = Y(0.32), R = Y(0.38), ang = -2.35;
     const ux = Math.cos(ang), uy = Math.sin(ang), nx = -uy, ny = ux;
     s += `<path class="isl-dtruss" d="M${F(dx - Y(0.08))} ${F(footY)}L${F(dx - Y(0.02))} ${F(pivY + Y(0.06))}M${F(dx + Y(0.08))} ${F(footY)}L${F(dx + Y(0.02))} ${F(pivY + Y(0.06))}M${F(dx - Y(0.06))} ${F(footY - Y(0.1))}H${F(dx + Y(0.06))}M${F(dx - Y(0.04))} ${F(footY - Y(0.2))}H${F(dx + Y(0.04))}M${F(dx - Y(0.06))} ${F(footY - Y(0.1))}L${F(dx + Y(0.04))} ${F(footY - Y(0.2))}M${F(dx + Y(0.06))} ${F(footY - Y(0.1))}L${F(dx - Y(0.04))} ${F(footY - Y(0.2))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    // the pedestal set into a concrete plinth, over its shadow (its legs had ended as bare lines on the grass)
+    s += `<ellipse class="isl-tdrop" cx="${F(dx)}" cy="${F(footY + Y(0.01))}" rx="${F(Y(0.115))}" ry="${F(Y(0.016))}"/><path class="isl-aramp" d="${rect(dx - Y(0.1), footY - Y(0.012), Y(0.2), Y(0.024))}"/>`;
     const rimA = [dx + nx * R, pivY + ny * R], rimB = [dx - nx * R, pivY - ny * R], depth = R * 0.42;
     const back = [dx - ux * depth, pivY - uy * depth];
     s += `<path class="isl-ddish" d="M${F(rimA[0])} ${F(rimA[1])}Q${F(back[0] - ux * depth)} ${F(back[1] - uy * depth)} ${F(rimB[0])} ${F(rimB[1])}Z"/>`
+      // (its roundness: a shaded band along the back of the shell, widest at its apex, tapering to the rim)
+      + `<path class="isl-lsidew" d="M${F(rimA[0])} ${F(rimA[1])}Q${F(dx - 2 * ux * depth)} ${F(pivY - 2 * uy * depth)} ${F(rimB[0])} ${F(rimB[1])}Q${F(dx - 1.2 * ux * depth)} ${F(pivY - 1.2 * uy * depth)} ${F(rimA[0])} ${F(rimA[1])}Z"/>`
       + `<path class="isl-ddish2" d="M${F(rimA[0])} ${F(rimA[1])}Q${F(dx + ux * R * 0.14)} ${F(pivY + uy * R * 0.14)} ${F(rimB[0])} ${F(rimB[1])}" stroke-width="${F(Math.max(1.4, Y(0.014)))}"/>`;
     const focus = [dx + ux * R * 0.85, pivY + uy * R * 0.85];
     s += `<path class="isl-dtruss" d="M${F(rimA[0] + (focus[0] - rimA[0]) * 0.05)} ${F(rimA[1] + (focus[1] - rimA[1]) * 0.05)}L${F(focus[0])} ${F(focus[1])}L${F(rimB[0] + (focus[0] - rimB[0]) * 0.05)} ${F(rimB[1] + (focus[1] - rimB[1]) * 0.05)}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/>`

@@ -130,12 +130,12 @@ Branch `art-refine`, started 2026-09-30. Delete this folder (`.claude/art-refine
 
 ### dish-net
 
-- [ ] #46 fix v3 `dish-net-1`: The station's left end hangs over the falling slope
-- [ ] #47 fix v3 `dish-net-7`: A concrete base course so the station stands off the hill after dark
-- [ ] #58 add v3 `dish-net-2`: A halo round the station's lit windows, and a rim on its roof edge
-- [ ] #104 add v2 `dish-net-6`: Give the bowl its roundness: a shaded band along its back
-- [ ] #105 add v2 `dish-net-4`: A concrete plinth and contact shadow under the dish's pedestal
-- [ ] #106 add v2 `dish-net-3`: A door in the station's empty right-hand bay
+- [x] #46 fix v3 `dish-net-1`: The station's left end hangs over the falling slope
+- [x] #47 fix v3 `dish-net-7`: A concrete base course so the station stands off the hill after dark
+- [x] #58 add v3 `dish-net-2`: A halo round the station's lit windows, and a rim on its roof edge
+- [x] #104 add v2 `dish-net-6`: Give the bowl its roundness: a shaded band along its back
+- [x] #105 add v2 `dish-net-4`: A concrete plinth and contact shadow under the dish's pedestal
+- [x] #106 add v2 `dish-net-3`: A door in the station's empty right-hand bay
 
 ### lecture-hall
 
