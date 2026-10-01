@@ -3415,6 +3415,7 @@
     'bettys-hope': {
       draw: bettysHope,
       world: 'inland',
+      moonPath: false,   // (inland: no water under the Moon)
       // the Sun just touching the far hills, framed between the great house and the boiling house
       sunset: '18:10',
       sunPath: false,
@@ -3427,6 +3428,7 @@
     'court-house': {
       draw: courtHouse,
       world: 'inland',
+      moonPath: false,   // (no water under the Moon: the street lies over the base sea, which shows through it)
       // the Sun resting on the rooftops down the street, between the palm and the lamp
       sunset: '18:11',
       horizon: 0.62,
@@ -3794,6 +3796,31 @@
       + `<path class="isl-vsunpath2" d="${d1}" stroke-width="${F(sw)}" stroke-opacity="${F(0.55 * lit)}"/>`
       + `<path class="isl-vsunpath2" d="${d2}" stroke-width="${F(sw)}" stroke-opacity="${F(0.28 * lit)}"/></g>`;
   }
+  // The Moon's path on the water (art audit, 2026-10-01): broken glitter straight down from under the
+  // painted Moon toward the viewer, cool white, widening as it comes near, as bright as the Moon is full.
+  // Drawn before the land, which covers it wherever the Moon stands over land, and shown at Dusk and
+  // Night only (at Sunset the water is the Sun's). `at` is the drawn Moon's [x, y, r], or null. A piece
+  // with no water under its Moon says `moonPath: false`.
+  function moonWater(m, at, W, y0, H) {
+    if (!at || !SKY.moonUp) return '';
+    const [x, , mr] = at, k = SKY[m].moon[2];
+    if (x < -mr * 4 || x > W + mr * 4) return '';
+    const r = rng(m === 'n' ? 181 : 179), lit = clamp(0.25 + k * 0.75, 0, 1);
+    let d0 = '', d1 = '', d2 = '';
+    for (let y = y0 + 1.5; y < H; y += 1.5 + (y - y0) * 0.03) {
+      const t = (y - y0) / (H - y0), half = mr * (0.5 + t * 3.2);
+      const n = 1 + Math.round(r() * 2.4 * (1 - t * 0.3));
+      for (let i = 0; i < n; i++) {
+        const cx = x + gauss(r) * half, len = Math.max(1.2, mr * (0.2 + r() * 0.6) * (1 + t * 2));
+        const seg = `M${F(cx - len / 2)} ${F(y)}h${F(len)}`;
+        if (t < 0.12) d0 += seg; else if (t < 0.45) d1 += seg; else d2 += seg;
+      }
+    }
+    const sw = Math.max(0.8, mr * 0.1);
+    return `<g class="isl-vmoonw" clip-path="url(#islsea)"><path class="isl-vmoonpath" d="${d0}" stroke-width="${F(sw)}" stroke-opacity="${F(0.35 * lit)}"/>`
+      + `<path class="isl-vmoonpath" d="${d1}" stroke-width="${F(sw)}" stroke-opacity="${F(0.5 * lit)}"/>`
+      + `<path class="isl-vmoonpath" d="${d2}" stroke-width="${F(sw)}" stroke-opacity="${F(0.32 * lit)}"/></g>`;
+  }
   // `ok`, a piece's own keep-clear test (PIECES `cloudOk`), leaves out a band or cloud that would sit where
   // the piece does not want one; the others keep their places.
   function dawnDay(v, W, y0, H, seed = 0, ok) {
@@ -3837,6 +3864,7 @@
         planets: L.planets(vm, m, P.bars ? P.bars(W, H) : [], cls),   // (clear of a window's bars)
         box: drawn ? [[mx - mr, my - mr, mx + mr, my + mr]] : [],
         hole: drawn ? `<circle cx="${F(mx)}" cy="${F(my)}" r="${F(mr + 1)}" fill="#000"/>` : '',
+        at: drawn ? [mx, my, mr] : null,   // (for its path on the water)
       };
     }
     // The print grain: on the sky, and fainter on the water, laid before the land so the land covers
@@ -3868,6 +3896,7 @@
       + `<path class="s-hz" d="M0 ${y0 + 0.5}H${F(W)}" stroke-width="1"/>`
       + ripples(v, 0, W, H, [], 9, 0.8)
       + `<g class="isl-a">${sunWater(v, 'a', W, y0, H, P)}</g><g class="isl-s">${sunWater(v, 's', W, y0, H, P)}</g>`
+      + (P.moonPath === false ? '' : `<g class="isl-d">${moonWater('d', sky.d.at, W, y0, H)}</g><g class="isl-n">${moonWater('n', sky.n.at, W, y0, H)}</g>`)
       + (P.world === 'coast' ? land(v, 0, W, 13, [['d', 'isl-d', 1], ['n', 'isl-n', 0.6]], P.under !== false) : '')
       + (P.hills ? hills(W, g.at(W / 2), P.hills(W, y0), 31) : '')
       + (g.d ? `<path class="f-near" d="${g.d}"/>` : '')
