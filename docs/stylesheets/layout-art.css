@@ -700,6 +700,17 @@
 .isl[data-sky="day"] .isl-mbeam { display: none; }
 .isl .isl-mrim { stroke: #cfdbea; fill: none; stroke-linecap: round; display: none; }
 .isl:is([data-sky="dusk"], [data-sky="night"]) .isl-mrim, [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-mrim { display: inline; }
+/* The hall's people and its chalkboard (art-audit wave 1, 2026-10-01): one set of colours, dimmed with the
+   hall's light by version as its seats are; the lamp's warm light on the lecturer (isl-mlit, Dawn to Night). */
+.isl[data-sky="dawn"] .isl-mroom { filter: brightness(0.82); }
+.isl[data-sky="sunset"] .isl-mroom { filter: brightness(0.86); }
+.isl[data-sky="dusk"] .isl-mroom { filter: brightness(0.6); }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-mroom, .isl[data-sky="night"] .isl-mroom { filter: brightness(0.4); }
+.isl .isl-mlit { stroke: #ffcf8a; stroke-opacity: 0.75; fill: none; stroke-linecap: round; }
+.isl .isl-mboard { fill: #34463f; }
+.isl .isl-mchalk { stroke: #e9ede6; stroke-opacity: 0.75; fill: #e9ede6; fill-opacity: 0; stroke-linecap: round; stroke-linejoin: round; }
+.isl .isl-mchalkf { fill: #f1f2ec; }
+.isl .isl-mclockf { fill: var(--isl-lpage); }
 .isl .isl-dtruss { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; }
 .isl .isl-ddish { fill: var(--isl-lframe); }
 .isl .isl-ddish2 { stroke: var(--isl-lalu); fill: none; }
