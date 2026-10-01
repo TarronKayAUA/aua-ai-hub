@@ -4063,8 +4063,11 @@
             if (e.target.classList.contains('isl-vlast')) card.classList.replace('isl-vrun', 'isl-vstill');
           });
         }
-      } else {
-        card.classList.remove('isl-vrun');
+      } else if (!card.classList.contains('isl-vrun')) {
+        // A redraw after the pass has ended (or under reduced motion) shows the finished frame. One that comes
+        // while the pass is still running (the web font arriving re-measures the picture beside text that
+        // grew: This Week and About lost their pass to it; first audit, 2026-10-01) leaves it running: the
+        // redrawn picture's elements are new, so its pass starts again on them.
         card.classList.add('isl-vstill');
       }
     };
