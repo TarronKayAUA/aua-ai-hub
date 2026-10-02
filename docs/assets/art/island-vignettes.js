@@ -1130,11 +1130,67 @@
     // (its mast stands clear above the far shore, where its riding light had sat on the horizon like one more
     // shore light; a boom carries the furled mainsail; the yacht has its reflection, as every hull does)
     s += `<g class="isl-vwin" style="--i:0">${halo(bx, by - Y(0.25), Y(0.045), 'islvcool')}<circle class="f-pulse f-vcool" cx="${F(bx)}" cy="${F(by - Y(0.25))}" r="1.4"/></g>`;
+    // Where her crew is (art-audit pass 4, lamp-steps-V2, by version; the owner, 2026-10-01: what is drawn may
+    // change between versions with a reason). A crew rows ashore in the morning, climbs to watch the sunset, comes
+    // down after dusk and rows back aboard for the night. So by Day, at Sunset and at Dusk their dinghy is drawn
+    // up at the foot of the steps (data-q "ysd", below and in section 4), and at Night and Dawn it rides astern on
+    // a slack painter with her portholes lit, because they are aboard ("an"). Her riding light stays on in every
+    // lit version, as an anchor light does. Her coachroof, which carries the portholes, is in every version and
+    // in her own drawing, so her reflection carries it (it takes up wave 1's lamp-steps-A2).
+    const deck = by - Y(0.014), crA = bx - X(0.021), crF = bx + X(0.007), crH = Y(0.009);
+    const coach = `M${F(crA)} ${F(deck)}L${F(crA + X(0.0015))} ${F(deck - crH)}H${F(crF - X(0.004))}L${F(crF)} ${F(deck)}Z`;
+    const portsD = [0.24, 0.56].map((k) => rect(crA + (crF - crA) * k, deck - crH * 0.68, X(0.0036), crH * 0.4)).join('');
+    const portX = crA + (crF - crA) * 0.42, portY = deck - crH * 0.48;
+    // the portholes' light on the water: a short, faint warm column beside the riding light's cool one, about
+    // half its strength, from its own random stream so nothing else moves
+    s += `<g class="isl-lq" data-q="an"><g class="isl-vwin" style="--i:0">`
+      + dashes(streakList(portX, by + 1, H, rng(6101), 0.04, 0.05).filter(([, yy]) => yy < by + Y(0.13)), 's-vglow', 1, [0.05, 0.1, 0.17]) + '</g></g>';
     const yacht = `<path class="isl-vhull" d="M${F(bx - X(0.035))} ${F(by - Y(0.014))}H${F(bx + X(0.035))}L${F(bx + X(0.026))} ${F(by)}H${F(bx - X(0.028))}Z"/>`
+      // the coachroof: low, aft of the mast with the mast stepped on its forward end, a shade darker than the
+      // hull, its top edge lit and its two portholes dark glass until someone is aboard
+      + `<path class="isl-vhull" d="${coach}"/><path class="isl-vpshade" d="${coach}"/><path class="isl-vdark" d="${portsD}"/>`
+      + `<path class="isl-vsheer" d="M${F(crA + X(0.0015))} ${F(deck - crH)}H${F(crF - X(0.004))}" stroke-width=".8"/>`
       + `<path class="isl-vsheer" d="M${F(bx - X(0.035))} ${F(by - Y(0.014))}H${F(bx + X(0.035))}" stroke-width="1"/>`
       + `<path class="isl-vmast" d="M${F(bx)} ${F(by - Y(0.014))}V${F(by - Y(0.25))}M${F(bx)} ${F(by - Y(0.24))}L${F(bx + X(0.03))} ${F(by - Y(0.018))}M${F(bx)} ${F(by - Y(0.24))}L${F(bx - X(0.03))} ${F(by - Y(0.018))}" stroke-width=".9"/>`
       + `<path class="isl-vsheer" d="M${F(bx)} ${F(by - Y(0.05))}L${F(bx - X(0.026))} ${F(by - Y(0.042))}" stroke-width="${F(Math.max(2, Y(0.008)))}" stroke-linecap="round"/>`;
     s += `<g clip-path="url(#islsea)" opacity=".15"><g transform="translate(0 ${F(2 * by)}) scale(1 -1)">${yacht}</g></g>` + yacht;
+    // her portholes lit, with a small halo (a cabin lamp's, well under the riding light's), at Night and Dawn
+    // only, when her crew is aboard
+    s += `<g class="isl-lq" data-q="an"><g class="isl-vwin" style="--i:0">${halo(portX, portY, Y(0.021))}</g><path class="f-pulse isl-vwin" style="--i:0" d="${portsD}"/></g>`;
+    // The dinghy (lamp-steps-V2; wave 1's lamp-steps-A3): a short rowing hull, its sheer rising to the bow at the
+    // right, the inside seen over the near gunwale and darker, a thwart across it and an oar laid along it on the
+    // thwart. (x, wl) is the middle of its waterline and L its length. It is drawn smaller astern of the yacht than
+    // at the steps because it is farther off there: the yacht's waterline is about half as far below the horizon
+    // as the steps' foot, so the same boat is about half the size.
+    const dinghy = (x, wl, L) => {
+      const hh = L * 0.17, sx = x - L * 0.5, sy = wl - hh, fx = x + L * 0.5, fy = wl - hh * 1.4, cy = wl - hh * 0.85;
+      const nearD = `M${F(sx)} ${F(sy)}Q${F(x)} ${F(cy)} ${F(fx)} ${F(fy)}`;
+      const hull = nearD + `Q${F(x + L * 0.44)} ${F(wl - hh * 0.3)} ${F(x + L * 0.34)} ${F(wl)}H${F(x - L * 0.46)}Z`;
+      const farD = `M${F(fx)} ${F(fy)}Q${F(x)} ${F(wl - hh * 1.75)} ${F(sx + L * 0.03)} ${F(sy - hh * 0.55)}`;
+      const inside = nearD + farD.replace(/^M[^Q]*/, '') + 'Z';
+      const xt = x - L * 0.06, ow = Math.max(0.6, L * 0.03);
+      // the near gunwale's forward part, from a third of the way along to the bow (the quadratic's own tail), where
+      // a lantern's light catches it
+      const t0 = 0.35, pt = (a, b, c) => (1 - t0) * (1 - t0) * a + 2 * t0 * (1 - t0) * b + t0 * t0 * c;
+      const rim = `M${F(pt(sx, x, fx))} ${F(pt(sy, cy, fy))}Q${F((1 - t0) * x + t0 * fx)} ${F((1 - t0) * cy + t0 * fy)} ${F(fx)} ${F(fy)}`;
+      const boat = `<path class="isl-vhull" d="${hull}"/><path class="isl-vhull" d="${inside}"/><path class="isl-vpshade" d="${inside}"/><path class="isl-vpshade" d="${inside}"/>`
+        + `<path class="isl-vwood-f" d="${rect(xt - L * 0.035, wl - hh * 1.6, L * 0.07, hh * 0.6)}"/>`
+        + `<path class="isl-vwood" d="M${F(x - L * 0.34)} ${F(wl - hh * 1.3)}L${F(x + L * 0.3)} ${F(wl - hh * 1.36)}" stroke-width="${F(ow)}"/>`
+        + `<path class="isl-vwood" d="M${F(x - L * 0.36)} ${F(wl - hh * 1.3)}h${F(L * 0.13)}" stroke-width="${F(ow * 2.4)}"/>`
+        + `<path class="isl-vsheer" d="${farD}" stroke-width="${F(ow)}"/><path class="isl-vsheer" d="${nearD}" stroke-width="${F(Math.max(0.8, L * 0.04))}"/>`;
+      return { boat, fx, fy, rim, L };
+    };
+    // at Night and Dawn it rides astern, its painter slack and just clear of the water, from its bow to her stern
+    {
+      const d = dinghy(bx - X(0.0635), by, X(0.017)), sx2 = bx - X(0.034), sy2 = deck + 1;
+      s += `<g class="isl-lq" data-q="an">${mirrored(by, d.boat, 0.15)}${d.boat}`
+        + `<path class="isl-vmast" d="M${F(d.fx)} ${F(d.fy)}Q${F((d.fx + sx2) / 2)} ${F(by + Y(0.004))} ${F(sx2)} ${F(sy2)}" stroke-width=".6"/></g>`;
+    }
+    // by Day, at Sunset and at Dusk it is drawn up at the foot of the steps, its stem on the hill's edge (the hill
+    // meets the water along (0.28, 1.03) to (0.31, 0.93)); its reflection here, under the hill, so the land covers
+    // what would fall on it, and the boat itself in section 4, over the hill
+    const dShore = dinghy(X(0.2876), Y(0.975), X(0.032));
+    s += `<g class="isl-lq" data-q="ysd">${mirrored(Y(0.975), dShore.boat, 0.15)}</g>`;
     // 2. The hillside rising to the summit, scrub along its crest and a rim of light.
     const crest = [[0.28, 1.03], [0.31, 0.93], [0.35, 0.84], [0.4, 0.74], [0.46, 0.64], [0.52, 0.55], [0.58, 0.47], [0.64, 0.4],
       [0.7, 0.34], [0.76, 0.295], [0.82, 0.27], [0.88, 0.262], [0.94, 0.275], [1.02, 0.3]];
@@ -1205,6 +1261,16 @@
     // (the body's offset copy kept short of the top's end: it had stuck out under the lookout as a wedge;
     // art-audit wave 1, 2026-10-01)
     const body = edge.concat(edge.slice().reverse().map(([ex, ey]) => [Math.min(ex + X(0.02), x1), ey + depth]));
+    // The yacht's dinghy drawn up at the steps' foot by Day, at Sunset and at Dusk, while her crew is ashore
+    // (lamp-steps-V2; the reason is beside the yacht in section 1): over the hill, so its stem rests on the shore,
+    // and before the bottom lantern's pool, which lies over it once lit. Its painter runs slack to the lantern's
+    // post, whose foot covers the knot; the lantern's light catches the gunwale on its side once it is lit.
+    {
+      const [px0, py0] = lanterns[0], tx = px0 - 1.1, ty = py0 - Y(0.012);
+      s += `<g class="isl-lq" data-q="ysd">${dShore.boat}`
+        + `<path class="isl-vmast" d="M${F(dShore.fx)} ${F(dShore.fy)}Q${F((dShore.fx + tx) / 2)} ${F(Math.max(dShore.fy, ty) + Y(0.007))} ${F(tx)} ${F(ty)}" stroke-width=".7"/>`
+        + `<g class="isl-vlamps isl-vwin" style="--i:0;--isl-vstep:.6s"><g opacity=".8"><path class="isl-mlit" d="${dShore.rim}" stroke-width="${F(Math.max(0.8, dShore.L * 0.04))}"/></g></g></g>`;
+    }
     // the pools of light first, so the stones sit in them
     s += lanterns.map(([lx2, ly2], i) => `<g class="isl-vwin" style="--i:${i};--isl-vstep:.6s">${pool(lx2 + X(0.02), ly2 + Y(0.01), X(0.08), Y(0.06), 0.85)}</g>`).join('');
     s += `<path class="isl-vriser" d="${poly(body)}"/>`;
