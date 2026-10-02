@@ -1178,3 +1178,38 @@
   governance_status: listed
   last_reviewed: 2026-07-21
   blurb: Web tool from Adobe for cleaning up and editing spoken audio. Its Enhance Speech filter removes background noise and echo from voice recordings, and can separate speech, background noise, and music into layers that are adjusted independently.
+
+# Added 2026-10-02 from tool-discovery issue #52 (owner approved; AUA students
+# have used it). Verified 2026-10-02 from mentimeter.com/ai-presentations:
+# "Enter a prompt or paste your agenda or outline" for a meeting, workshop,
+# lesson, quiz, or survey, and "Paste a topic or document to instantly get a
+# quiz with questions and answer options"; no beta label. The plans page the
+# same day: Free includes Menti AI, with "Unlimited participants once per
+# month"; Basic $11.99 and Pro $24.99 a month billed yearly; Enterprise priced
+# on request; discounted offers for educators.
+- name: Mentimeter
+  vendor: Mentimeter
+  category: presentations_design
+  url: https://www.mentimeter.com
+  cost: freemium
+  governance_status: listed
+  last_reviewed: 2026-10-02
+  blurb: Interactive presentation tool for live polls, quizzes, word clouds, and anonymous questions that the audience answers from their own devices. Its artificial intelligence features draft a whole interactive session from a prompt or pasted outline, and turn a topic or pasted document into quiz questions.
+
+# Added 2026-10-02 from tool-discovery issue #52 (owner approved; he has used
+# it). Verified 2026-10-02 in the app's browser, since openai.com refuses
+# scripted fetches: the product page calls it "a free, AI-first, LaTeX editor
+# and scientific workspace that integrates ChatGPT and Codex", with unlimited
+# collaborators, projects, and compile time, proofreading, citations,
+# literature search, and Zotero sync; the launch post (2026-01-27) says it "is
+# available today to anyone with a ChatGPT personal account" and "will be
+# available soon to organizations using ChatGPT Business, Enterprise, and
+# Education plans". No paid tier on either page.
+- name: Prism
+  vendor: OpenAI
+  category: research
+  url: https://openai.com/prism/
+  cost: free
+  governance_status: listed
+  last_reviewed: 2026-10-02
+  blurb: Free online LaTeX editor and writing workspace for scientific papers, with ChatGPT built in for drafting, proofreading, citations, and literature search, and unlimited collaborators. Requires a personal ChatGPT account.
