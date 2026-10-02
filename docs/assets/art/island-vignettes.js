@@ -951,22 +951,25 @@
     // at anchor, the size a yacht of about 12 m has at the near point's distance (from the view's own scale,
     // so it keeps its size beside the point at every width): a hull with its low coachroof, a bare mast with
     // its forestay and backstay (without them a mast alone read as a post), the mainsail furled on its boom,
-    // lying head to the trade wind like every boat there (bows to the left), its reflection, and the anchor
-    // light at the masthead with its column on the water
+    // lying head to the trade wind like every boat there, its reflection, and the anchor light at the masthead
+    // with its column on the water. The wind blows from the east, behind the viewer in this view to the south-
+    // west, so a boat lying head to it points toward us and to the right: drawn bows right, mirrored about its
+    // middle (bows left, as first drawn, it had lain stern to the wind; pass 4 review, 2026-10-02)
     const aL = Math.max(7, ppd * 1.35);
     const ax0 = (nearX.length ? Math.min(...nearX) : W * 0.84) + aL * 0.8, ax1 = W - 20;
     const atAnchor = (f) => {
       const ax = ax0 + (ax1 - ax0) * f, wl = shoreAt(ax) + 2 + ar() * 2, L = aL * (0.92 + ar() * 0.16);
-      const mx = ax - L * 0.1, mh = L * 1.3, dk = wl - L * 0.13;
+      const mx = ax - L * 0.1, mh = L * 1.3, dk = wl - L * 0.13, lx = 2 * ax - mx;   // (lx: the masthead, mirrored)
       const boat = `<path class="isl-vhull" d="M${F(ax - L / 2)} ${F(dk)}H${F(ax + L / 2)}L${F(ax + L * 0.38)} ${F(wl)}H${F(ax - L * 0.4)}Z`
         + `M${F(ax - L * 0.16)} ${F(dk + 0.2)}V${F(dk - L * 0.07)}H${F(ax + L * 0.2)}V${F(dk + 0.2)}Z"/>`
         + `<path class="isl-vmast" d="M${F(mx)} ${F(dk)}V${F(wl - mh)}" stroke-width=".8"/>`
         + `<g opacity=".5"><path class="isl-vmast" d="M${F(mx)} ${F(wl - mh)}L${F(ax - L * 0.48)} ${F(dk)}M${F(mx)} ${F(wl - mh)}L${F(ax + L * 0.47)} ${F(dk)}" stroke-width=".5"/></g>`
         + `<path class="isl-vsheer" d="M${F(mx)} ${F(wl - L * 0.3)}L${F(ax + L * 0.32)} ${F(wl - L * 0.28)}" stroke-width="${F(Math.max(1.2, L * 0.13))}" stroke-linecap="round"/>`;
-      return `<g opacity=".16" transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${boat}</g>` + boat
-        + `<g class="isl-vwin" style="--i:1">${halo(mx, wl - mh, 3, 'islvcool')}`
-        + dashes(streakList(mx, wl + 1, wl + 30, ar, 0.02, 0.03), 's-vcool', 1, [0.08, 0.16, 0.3])
-        + `<circle class="isl-vnav-w" cx="${F(mx)}" cy="${F(wl - mh)}" r="1"/></g>`;
+      const drawn = `<g transform="translate(${F(2 * ax)} 0) scale(-1 1)">${boat}</g>`;
+      return `<g opacity=".16" transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${drawn}</g>` + drawn
+        + `<g class="isl-vwin" style="--i:1">${halo(lx, wl - mh, 3, 'islvcool')}`
+        + dashes(streakList(lx, wl + 1, wl + 30, ar, 0.02, 0.03), 's-vcool', 1, [0.08, 0.16, 0.3])
+        + `<circle class="isl-vnav-w" cx="${F(lx)}" cy="${F(wl - mh)}" r="1"/></g>`;
     };
     // Sunset: all four heading home, the three farther out a little nearer the anchorage than they sailed by
     // Day; the 0.68 one stays beside the Sun's path on the water.
@@ -3216,21 +3219,32 @@
     s += cayD + mirrored(y0, cayD, 0.16) + mist(wx0 + ww * 0.45, y0, ww * 0.45, Y(0.04), 0.4);
     lights.push([wx0 + ww * 0.66, y0 - Y(0.04)]);
     s += dashes(streakList(wx0 + ww * 0.66, y0 + 1, H, r, 0.04, 0.05), 's-vglow', 1, [0.08, 0.16, 0.3]);
+    // The yacht's day out (art-audit pass 4, prompt-desk-V1; the owner, 2026-10-01: what is drawn may change
+    // between versions with a reason): a day sail, out in the morning and home in the evening. At Dawn she heads
+    // out, bow left, her boom to the right, showing the red port sidelight a yacht under sail carries at the bow
+    // (she had carried a white masthead light, which marks a yacht under engine: prompt-desk-C1, the owner's
+    // rule, as at Curtain Bluff); by Day she is farther out and smaller, unlit; at Sunset she heads home, bow
+    // right, so her starboard side and its green sidelight face us; at Dusk and Night she lies at anchor with her
+    // sail furled on the boom, and the white light at her masthead is now her true anchor light. Each has its
+    // own faint reflection, as the cay has, and each light its halo and a short faint column on the water, lit
+    // in the pass with the cay's light. (Built in review, 2026-10-02: the builder had declined it as against the
+    // owner's rule, which it follows.) The columns draw from rng(617) in turn, Dawn's first, as before.
     const sb = wx0 + ww * 0.25, sy = y0 + Y(0.04);
-    const boat = `<path class="isl-vhull" d="M${F(sb - Y(0.03))} ${F(sy - Y(0.01))}H${F(sb + Y(0.03))}L${F(sb + Y(0.022))} ${F(sy)}H${F(sb - Y(0.024))}Z"/>`
-      + `<path class="isl-vsail" d="M${F(sb)} ${F(sy - Y(0.012))}V${F(sy - Y(0.1))}L${F(sb + Y(0.034))} ${F(sy - Y(0.016))}Z"/>`;
-    // (its faint reflection, as the cay has)
-    s += `<g opacity=".15"><g transform="translate(0 ${F(2 * sy)}) scale(1 -1)">${boat}</g></g>` + boat;
-    // (her light is the red port sidelight a yacht under sail shows, at the bow: her boom points right, so she
-    // heads left and shows her port side to us, looking east; with its halo and a short faint column on the
-    // water, lit in the pass with the cay's light. Not drawn by Day (isl-lq, every version but y), when no light
-    // is on: its point and column are hidden then anyway, and its halo would have stayed as a pink smudge. She
-    // had carried a white masthead light, which marks a yacht under engine; art-audit pass 4, 2026-10-01, the
-    // owner's rule, as at Curtain Bluff)
-    const sx0 = sb - Y(0.026), sy0 = sy - Y(0.007);
-    s += `<g class="isl-lq" data-q="asdn"><g class="isl-vwin" style="--i:0">${halo(sx0, sy0, Math.max(2.5, Y(0.012)), 'islvred')}`
-      + dashes(streakList(sx0, sy + 1, H, rng(617), 0.03, 0.04), 's-vglow', 1, [0.04, 0.08, 0.12])
-      + `<circle class="isl-vnav-r" cx="${F(sx0)}" cy="${F(sy0)}" r="${F(Math.max(1, Y(0.005)))}"/></g></g>`;
+    const hull = (x, y, k) => `<path class="isl-vhull" d="M${F(x - Y(0.03) * k)} ${F(y - Y(0.01) * k)}H${F(x + Y(0.03) * k)}L${F(x + Y(0.022) * k)} ${F(y)}H${F(x - Y(0.024) * k)}Z"/>`;
+    const sail = (x, y, k) => `<path class="isl-vsail" d="M${F(x)} ${F(y - Y(0.012) * k)}V${F(y - Y(0.1) * k)}L${F(x + Y(0.034) * k)} ${F(y - Y(0.016) * k)}Z"/>`;
+    const withRefl = (y, d) => `<g opacity=".15"><g transform="translate(0 ${F(2 * y)}) scale(1 -1)">${d}</g></g>` + d;
+    const mir = (x, d) => `<g transform="translate(${F(2 * x)} 0) scale(-1 1)">${d}</g>`;
+    const rs = rng(617);
+    const lit = (x, y, cls, grad, col) => `<g class="isl-vwin" style="--i:0">${halo(x, y, Math.max(2.5, Y(0.012)), grad)}`
+      + dashes(streakList(x, sy + 1, H, rs, 0.03, 0.04), col, 1, [0.04, 0.08, 0.12])
+      + `<circle class="${cls}" cx="${F(x)}" cy="${F(y)}" r="${F(Math.max(1, Y(0.005)))}"/></g>`;
+    const bowL = sb - Y(0.026), bowY = sy - Y(0.007), dX = wx0 + ww * 0.12, dY = y0 + Y(0.022);
+    s += `<g class="isl-lq" data-q="a">${withRefl(sy, hull(sb, sy, 1) + sail(sb, sy, 1))}${lit(bowL, bowY, 'isl-vnav-r', 'islvred', 's-vglow')}</g>`
+      + `<g class="isl-lq" data-q="y">${withRefl(dY, hull(dX, dY, 0.75) + sail(dX, dY, 0.75))}</g>`
+      + `<g class="isl-lq" data-q="s">${withRefl(sy, mir(sb, hull(sb, sy, 1) + sail(sb, sy, 1)))}${lit(2 * sb - bowL, bowY, 'isl-vnav-g', 'islvgreen', 's-vglow')}</g>`
+      + `<g class="isl-lq" data-q="dn">${withRefl(sy, hull(sb, sy, 1) + `<path class="isl-vmast" d="M${F(sb)} ${F(sy - Y(0.012))}V${F(sy - Y(0.1))}" stroke-width=".8"/>`
+        + `<path class="isl-vsheer" d="M${F(sb)} ${F(sy - Y(0.019))}L${F(sb + Y(0.03))} ${F(sy - Y(0.017))}" stroke-width="${F(Math.max(1.2, Y(0.008)))}" stroke-linecap="round"/>`)}`
+      + `${lit(sb, sy - Y(0.1), 'isl-vnav-w', 'islvcool', 's-vcoolglow')}</g>`;
     s += lightsPaths(lights);
     // 2. The wall, the window cut out of it, its reveal, frame and sill; a shelf of books above the desk.
     s += `<path fill="url(#islpwallg)" fill-rule="evenodd" d="${rect(-2, -2, W + 4, H + 4)}${rect(wx0, wT, ww, wB - wT)}"/>`;
@@ -3312,8 +3326,10 @@
           for (const fc of faces) {
             const gx = (fc[0][0] + fc[1][0] + fc[2][0]) / 3, gy = (fc[0][1] + fc[1][1] + fc[2][1]) / 3;
             const tone = ((gx - cx) + (gy - cy)) / rr + (dr() - 0.5) * 0.8, tri = polyD(fc);
-            if (tone > -0.25) sh1 += tri;
-            if (tone > 0.45) sh2 += tri;
+            // (shade on the lower right faces only, as the mug's shaded side is: with more than half in shade, at
+            // Night the balls had read as grey stones; pass 4 review, 2026-10-02)
+            if (tone > 0.15) sh1 += tri;
+            if (tone > 0.7) sh2 += tri;
           }
           if (dr() < 0.4) cr += `M${F(near[i][0])} ${F(near[i][1])}L${F(pp[0])} ${F(pp[1])}`;
         });
@@ -4342,7 +4358,12 @@
       // Sunset: walking left along the crest, halfway from the plinth to the door, seen side on in mid-stride;
       // the near hand carries the toolbox, the far arm swings forward; the feet on the line from the plinth's
       // foot to the threshold (or, on a narrow card, setting off from in front of the plinth).
-      const wx = open ? (dcx + dx - Y(0.1)) / 2 : dx + Y(0.01), wy = open ? (thr + footY + Y(0.005)) / 2 : footY + Y(0.022);
+      // (on the crest, kept clear of the dish rim's lower tip: halfway along, at 1920 and 1440 the tip had stood
+      // over the hard hat and the feed leg's line seemed to run on into it; pass 4 review, 2026-10-02)
+      const tipX = ny > 0 ? dx + nx * R : dx - nx * R, cx1 = dx - Y(0.1), cy1 = footY + Y(0.005);
+      let wf = 0.5;
+      if (Math.abs(dcx + (cx1 - dcx) * wf - tipX) < 0.6 * hu) wf = (Math.max(tipX - 0.6 * hu, dcx + 0.5 * hu) - dcx) / (cx1 - dcx);
+      const wx = open ? dcx + (cx1 - dcx) * wf : dx + Y(0.01), wy = open ? thr + (cy1 - thr) * wf : footY + Y(0.022);
       const W2 = (px, py) => [wx + px * hu, wy - py * hu];   // a point px across (forward is left, negative) and py up, in heights
       const leg = (fx, sh) => `<path fill="${sh}" d="${polyD([W2(-0.04, 0.5), W2(0.04, 0.5), W2(fx + 0.03, 0.03), W2(fx - 0.03, 0.03)])}"/>`
         + `<path fill="#3a2e24" d="${polyD([W2(fx - 0.075, 0), W2(fx + 0.035, 0), W2(fx + 0.035, 0.035), W2(fx - 0.06, 0.035)])}"/>`;
@@ -4567,10 +4588,18 @@
         };
         const top = arc(rr + 0.025), crest = [...top, ...arc(rr + 0.008).reverse()];
         const hang = [[-0.22, 0.42], [-0.3, 0.5], [-0.3, 0.8], ...top, [0.3, 0.8], [0.3, 0.5], [0.22, 0.42]];
-        const fold = [...top, [0.245, 0.79], [0.16, 0.835], [0.075, 0.885], [0, 0.855], [-0.075, 0.885], [-0.16, 0.835], [-0.245, 0.79]];
+        // (the fold's edge with one lapel's V off the middle, and both sleeves hanging down past the back's sides
+        // toward the seat, a little splayed, so the jacket breaks the chair's outline: with a symmetric notched
+        // edge and the sleeves hidden behind the back, at 1920 it had read as a navy chair back; pass 4 review,
+        // 2026-10-02)
+        const fold = [...top, [0.245, 0.79], [0.08, 0.84], [0.03, 0.80], [-0.02, 0.86], [-0.245, 0.80]];
+        const sleeve = [[0.2, 0.87], [0.29, 0.86], [0.31, 0.5], [0.23, 0.49]], sleeveL = sleeve.map(([vv, h]) => [-vv, h]);
+        // (and the jacket's lining, a warm tan, showing inside the fold between its two fronts, down to the lapel's
+        // V: its inside is what the seat side sees, and the lining is what says garment, not upholstery)
+        const lining = [[0.17, 0.885], [0.03, 0.80], [-0.02, 0.86], [-0.17, 0.885], [-0.12, 0.905], [0.12, 0.905]];
         const uB = -0.26, uF = -0.175;
         parts.push([dOf(uB, 0), `<g class="isl-lq" data-q="${coat}"><path class="isl-lbag1" d="${J(uB, hang)}"/><path class="isl-tdrop" d="${J(uB, hang)}"/></g>`]);
-        parts.push([dOf(uF, 0), `<g class="isl-lq" data-q="${coat}"><path class="isl-lbag1" d="${J(uF, fold)}"/><path class="isl-lbagp" d="${J(uF, crest)}"/></g>`]);
+        parts.push([dOf(uF, 0), `<g class="isl-lq" data-q="${coat}"><path class="isl-lbag1" d="${J(uF - 0.01, sleeve)}${J(uF - 0.01, sleeveL)}"/><path class="isl-lbag1" d="${J(uF, fold)}"/><path fill="#a88a5e" d="${J(uF + 0.003, lining)}"/><path class="isl-lbagp" d="${J(uF, crest)}"/></g>`]);
       }
       parts.sort((p, q) => q[0] - p[0]);
       return `<ellipse class="isl-tdrop" cx="${F(shx)}" cy="${F(shy)}" rx="${F(shr)}" ry="${F(shq)}"/>` + parts.map((p) => p[1]).join('');
@@ -4588,11 +4617,14 @@
     // round the far side and at the ends, from the farthest; the near side is the viewer's place. By Day the
     // chairs at the far corners are pulled out and turned, as their members left them for a moment (25 cm
     // out and 20 degrees round: at 12 degrees, behind the table, they had read as set straight); at Sunset the
-    // one at the left end is left pushed back, and a jacket hangs over the far right one.
+    // one at the left end is left pushed well back, so that it stands in front of the window, its back across
+    // the sill (pushed out a little less, its back had grazed the frame's edge or the sill's line at one width
+    // or another, and turned toward the viewer it showed edge on: pass 4 review, 2026-10-02), and a jacket
+    // hangs over the far right one.
     s += chair(90);
     put('asdn', chair(138)); put('y', chair(138, 1.8, 20)); s += flush();
     put('asdn', chair(42, 1.55, 0, 's')); put('y', chair(42, 1.8, -20)); s += flush();
-    put('aydn', chair(180)); put('s', chair(180, 1.85, 15)); s += flush();
+    put('aydn', chair(180)); put('s', chair(180, 2.3, 15)); s += flush();
     s += chair(0);
     // 4. The table: its shadow on the floor, the pedestal and its foot, the rim's near half (darker), the
     //    top with an inset band and a little grain, the lamp's light pooled on it, the near edge catching it.
