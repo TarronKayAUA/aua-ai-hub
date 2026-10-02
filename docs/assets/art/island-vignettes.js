@@ -1871,7 +1871,17 @@
       return pts[pts.length - 1][1];
     };
     const far = [], quayL = [];
-    let s = '';
+    // (art-audit pass 4, 2026-10-01) The liners' hulls deepen toward the boot-top (islsjhull) and toward the stem
+    // as the bow turns away (islsjbow), and the floodlit cathedral's stone is warmest at its foot, where the
+    // floodlight stands, and a step darker toward its cupolas (islsjcath; its darkening is put out by Day, when
+    // the Sun lights the stone evenly, layout-art.css).
+    let s = '<defs><linearGradient id="islsjhull" x1="0" y1="0" x2="0" y2="1"><stop offset=".15" class="st-sjshade" stop-opacity="0"/>'
+      + '<stop offset=".8" class="st-sjshade" stop-opacity=".3"/></linearGradient>'
+      + '<linearGradient id="islsjbow" x1="0" y1="0" x2="1" y2="0"><stop offset="0" class="st-sjshade" stop-opacity="0"/>'
+      + '<stop offset="1" class="st-sjshade" stop-opacity=".3"/></linearGradient>'
+      + '<linearGradient id="islsjcath" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-sjshade st-sjcath" stop-opacity=".22"/>'
+      + '<stop offset=".45" class="st-sjshade st-sjcath" stop-opacity="0"/><stop offset=".55" class="st-g1" stop-opacity="0"/>'
+      + '<stop offset="1" class="st-g1" stop-opacity=".34"/></linearGradient></defs>';
     // 1. The hills beyond, rimmed, their lights; the town's hillside in front of them.
     const hills = [[-0.02, 0.4], [0.08, 0.36], [0.18, 0.33], [0.3, 0.31], [0.42, 0.3], [0.52, 0.27], [0.6, 0.24], [0.68, 0.25], [0.76, 0.28], [0.86, 0.31], [0.95, 0.29], [1.02, 0.3]]
       .map(([x, y]) => [X(x), Y(y)]);
@@ -1892,6 +1902,11 @@
     const cx = X(0.66), tw = 15 * u, gap = 25 * u, foot = at(town, cx) + Y(0.012), eave = foot - 32 * u, tt = foot - 82 * u;
     let cath = `M${F(cx - gap / 2 - tw)} ${F(foot)}V${F(eave)}H${F(cx + gap / 2 + tw)}V${F(foot)}Z`
       + `M${F(cx - gap / 2)} ${F(eave + 1)}L${F(cx)} ${F(eave - 14 * u)}L${F(cx + gap / 2)} ${F(eave + 1)}Z`;
+    // (art-audit pass 4, 2026-10-01: the picture's last and brightest light was one flat cream shape that laid
+    // no light round it) A shadow lies under each tower's cornice and under its string course, where hairlines
+    // were, in every version; the floodlight warms the stone at the foot and leaves the cupolas a step darker
+    // (islsjcath), and lays a pool of its light on the ground at the foot, both coming on with it; its column
+    // on the harbour is drawn with the quay lamps' columns, below.
     let domes = '', belfry = '', cc = '';
     for (const sx of [-1, 1]) {
       const x = cx + sx * (gap / 2 + tw / 2), ct = tt - 4 * u;
@@ -1900,11 +1915,12 @@
       domes += `M${F(x - tw * 0.48)} ${F(ct)}A${F(tw * 0.48)} ${F(tw * 0.62)} 0 0 1 ${F(x + tw * 0.48)} ${F(ct)}Z`;
       domes += `M${F(x - tw * 0.1)} ${F(ct - tw * 0.58)}V${F(ct - tw * 1.05)}H${F(x + tw * 0.1)}V${F(ct - tw * 0.58)}Z`;
       belfry += `M${F(x - tw * 0.2)} ${F(tt + 26 * u)}V${F(tt + 12 * u)}a${F(tw * 0.2)} ${F(tw * 0.2)} 0 0 1 ${F(tw * 0.4)} 0V${F(tt + 26 * u)}Z`;
-      cc += `M${F(x - tw / 2)} ${F(tt + 32 * u)}h${F(tw)}M${F(x - tw / 2)} ${F(eave - 14 * u)}h${F(tw)}`;
+      cc += rect(x - tw / 2, tt + 1, tw, 2.4 * u) + rect(x - tw / 2, tt + 32 * u, tw, 1.2 * u) + rect(x - tw / 2, eave - 14 * u, tw, 2 * u);
     }
     belfry += `M${F(cx - 3 * u)} ${F(foot - 8 * u)}V${F(eave + 6 * u)}a${F(3 * u)} ${F(3 * u)} 0 0 1 ${F(6 * u)} 0V${F(foot - 8 * u)}Z`;
-    s += `<g class="isl-vwin isl-vlast" style="--i:5"><ellipse cx="${F(cx)}" cy="${F(foot - 40 * u)}" rx="${F(70 * u)}" ry="${F(62 * u)}" fill="url(#islvwarm)"/></g>`;
-    s += `<path class="isl-vcath" d="${cath}"/><path class="isl-vship2" d="${domes}"/><path class="isl-vcourse" d="${cc}" stroke-width=".8"/>`;
+    s += `<g class="isl-vwin isl-vlast" style="--i:5"><ellipse cx="${F(cx)}" cy="${F(foot - 40 * u)}" rx="${F(70 * u)}" ry="${F(62 * u)}" fill="url(#islvwarm)"/>${pool(cx, foot, 45 * u, 6 * u)}</g>`;
+    s += `<path class="isl-vcath" d="${cath}"/><g class="isl-vwin" style="--i:5"><path d="${cath}" fill="url(#islsjcath)"/></g>`;
+    s += `<path class="isl-vpshade" d="${cc}"/><path class="isl-vship2" d="${domes}"/>`;
     s += `<path class="isl-vcathwin isl-vwin isl-vlast" style="--i:5" d="${belfry}"/>`;
     // 3. The town, from the cathedral's hill down to the quay: houses of different sizes, walls and
     //    roofs, gabled and hipped, trees between them, windows lit, the nearer the larger; drawn far to
@@ -1947,6 +1963,12 @@
     s += dashes(hatchList(W, y0, H, r), 's-vrip', 1, [0.1, 0.18, 0.28]);
     s += mirrored(y0, tn, 0.14) + mist(X(-0.05), y0 + Y(0.01), X(1.1), Y(0.05), 0.4);
     for (const [x] of quayL) s += dashes(streakList(x, y0, H, r, 0.04, 0.05), 's-vglow', 1, [0.08, 0.16, 0.3]);
+    // the floodlit cathedral's broken column, as wide as its facade (one under each tower and one under the
+    // door; art-audit pass 4, 2026-10-01: every quay lamp laid one and the brightest light laid none), coming
+    // on with the floodlight; from its own stream, so the town keeps its layout. The liners, drawn next, cover
+    // its middle.
+    const rc = rng(59);
+    s += `<g class="isl-vwin" style="--i:5">${[-1, 0, 1].map((k) => dashes(streakList(cx + k * 14 * u, y0, H, rc, 0.05, 0.1), 's-vglow', 1.3, [0.1, 0.22, 0.4])).join('')}</g>`;
     // 5. Two cruise ships at the quay, broadside, bow to the right: a white hull with a dark boot-top
     //    at the waterline and its sheer rising to the raked bow, lifeboats slung along the side, decks
     //    stepping back in rows of lit cabins, portholes along the hull, a funnel aft with its dark cap,
@@ -1958,15 +1980,24 @@
       // through it, owner, 2026-09-30)
       const hull = `M${F(x0 + L * 0.03)} ${F(wl)}Q${F(x0 - L * 0.012)} ${F(wl - hh * 0.9)} ${F(x0 + L * 0.02)} ${F(wl - hh * 0.98)}L${F(x1)} ${F(wl - hh * 1.18)}L${F(x1 - L * 0.07)} ${F(wl)}Z`;
       const boot = `M${F(x0 + L * 0.03)} ${F(wl)}H${F(x1 - L * 0.07)}L${F(x1 - L * 0.062)} ${F(wl - hh * 0.24)}H${F(x0 + L * 0.018)}Z`;
-      let sup = '', rails = '', boats = '', glass = '';
+      let sup = '', rails = '', boats = '', glass = '', shade = '', rake = '';
       for (let d = 0; d < decks; d++) {
         const yb = wl - hh * 1.02 - d * dh, yt = yb - dh, a = x0 + L * (0.04 + d * 0.014), b = x1 - L * (0.15 + d * 0.05);
         sup += `M${F(a)} ${F(yb + 1)}V${F(yt)}H${F(b)}L${F(b + dh * 1.3)} ${F(yb + 1)}Z`;
         // each deck's row of balcony glass, as on the owner's photograph of a cruise ship at the quay
         glass += `M${F(a + L * 0.01)} ${F(yb - dh * 0.66)}H${F(b - L * 0.004)}v${F(dh * 0.3)}H${F(a + L * 0.01)}Z`;
         rails += `M${F(a)} ${F(yt + 0.5)}H${F(b + dh * 0.25)}`;
+        // (art-audit pass 4, 2026-10-01: each liner was one flat colour, a cut-out beside the fort's lit and
+        // shaded stone) the shadow of the deck above along the top of this one, under its rail, and its
+        // sloping forward end, turned away from the light, a step darker; no random draws, so the cabins keep
+        // their places
+        shade += rect(a, yt + 0.5, b - a, dh * 0.18);
+        rake += `M${F(b)} ${F(yt + 0.5)}L${F(b + dh * 1.3)} ${F(yb + 1)}H${F(b)}Z`;
         for (let x = a + L * 0.012; x < b; x += L * 0.011) if (r() < 0.8) cabins.push([x, yb - dh * 0.5]);
       }
+      // the raked bow, its plating turning away toward the stem, darkening toward it (islsjbow)
+      const sheer = (x) => wl - hh * (0.98 + 0.2 * (x - x0 - L * 0.02) / (L * 0.98)), bwx = x1 - L * 0.12;
+      const bow = `M${F(bwx)} ${F(sheer(bwx))}L${F(x1)} ${F(wl - hh * 1.18)}L${F(x1 - L * 0.07)} ${F(wl)}H${F(bwx - L * 0.03)}Z`;
       for (let x = x0 + L * 0.1; x < x1 - L * 0.3; x += L * 0.05) {
         const by = wl - hh * 1.02 + dh * 0.05, bl = L * 0.034;
         boats += `M${F(x)} ${F(by)}h${F(bl)}q${F(-bl * 0.1)} ${F(dh * 0.62)} ${F(-bl * 0.25)} ${F(dh * 0.62)}h${F(-bl * 0.5)}q${F(-bl * 0.15)} 0 ${F(-bl * 0.25)} ${F(-dh * 0.62)}Z`;
@@ -1977,7 +2008,10 @@
       const cap = `M${F(fx + L * 0.012)} ${F(deckTop - dh * 1.5)}H${F(fx + L * 0.078)}L${F(fx + L * 0.08)} ${F(deckTop - dh * 1.05)}H${F(fx + L * 0.01)}Z`;
       // (the mast stands on the top deck, just back from its forward end; at 0.3L it had stood on nothing)
       const mx = x1 - L * 0.38, mast = `M${F(mx)} ${F(deckTop + 1)}V${F(deckTop - dh * 2.6)}`;
-      const one = `<path class="${cls}" d="${hull}${sup}${funnel}"/><path class="isl-vdark" d="${glass}" fill-opacity=".55"/><path class="isl-vhullband" d="${boot}${cap}"/>`
+      // (the hull's darkening, islsjhull, is laid over the hull alone, so the decks above keep the ship's colour)
+      const one = `<path class="${cls}" d="${hull}${sup}${funnel}"/><path d="${hull}" fill="url(#islsjhull)"/>`
+        + `<path d="${bow}" fill="url(#islsjbow)"/><path class="isl-vpshade" d="${shade}"/><path class="isl-vpshade" d="${rake}" opacity=".6"/>`
+        + `<path class="isl-vdark" d="${glass}" fill-opacity=".55"/><path class="isl-vhullband" d="${boot}${cap}"/>`
         + `<path class="isl-vdeck" d="${rails}" stroke-width=".8"/><path class="isl-vspin2" d="${boats}"/><path class="isl-vmast" d="${mast}" stroke-width="1"/>`;
       let o = `<g clip-path="url(#islsea)" opacity=".15"><g transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${one}</g></g>`;
       for (let x = x0 + L * 0.08; x < x1 - L * 0.1; x += L * 0.07) o += dashes(streakList(x + (r() - 0.5) * L * 0.03, wl + 1, H, r, 0.05, 0.06), 's-vglow', 1, [0.06, 0.12, 0.24]);
@@ -1990,8 +2024,32 @@
     // (the far ship in port at Dawn, by Day and at Sunset, and gone from Dusk: cruise ships call at St John's for
     // the day and sail in the late afternoon, and one staying into the evening, the near one, is ordinary; the
     // owner, 2026-10-01, and art-audit wave 2, by version. The town and the quay drawn under her fill the berth)
-    s += `<g class="isl-lq" data-q="ays">` + ship(X(0.6), X(0.94), y0 + Y(0.035), 'isl-vship2', 2) + '</g>';
-    s += ship(X(0.28), X(0.7), y0 + Y(0.12), 'isl-vship', 2);
+    // Both ships made fast (art-audit pass 4, 2026-10-01: with nothing holding her the near ship read as anchored
+    // mid-harbour): lines from fairleads at the stem and the stern down to bollards, each sagging a little, as in
+    // the owner's photograph of a ship at the cruise berth. A spring line would run along her side toward the
+    // pier, behind her hull, so only the lines leading past her bow and stern show. No random draws, so the
+    // town and the ships keep their layout.
+    const fair = (x0, x1, wl) => { const L = x1 - x0, hh = L * 0.085; return { L, bow: [x1 - L * 0.02, wl - hh * 0.9], stern: [x0 + L * 0.012, wl - hh * 0.85] }; };
+    const rope = (p, q) => `M${F(p[0])} ${F(p[1])}Q${F((p[0] + q[0]) / 2)} ${F((p[1] + q[1]) / 2 + 1.2 * u)} ${F(q[0])} ${F(q[1])}`;
+    const bw = Math.max(1.2, 1.8 * u), bollard = (x, y) => rect(x - bw / 2, y - bw * 1.3, bw, bw * 1.3) + rect(x - bw * 0.75, y - bw * 1.55, bw * 1.5, bw * 0.4);
+    // the far ship's two lines to bollards on the quay's edge; the bollards stay when she has sailed
+    const fx0 = X(0.6), fx1 = X(0.94), fwl = y0 + Y(0.035), ff = fair(fx0, fx1, fwl), qy = y0 - Y(0.012), fB = [fx0 - 10 * u, fx1 + 14 * u];
+    s += `<path class="isl-vcannon" d="${bollard(fB[0], qy)}${bollard(fB[1], qy)}"/>`;
+    s += `<g class="isl-lq" data-q="ays">` + ship(fx0, fx1, fwl, 'isl-vship2', 2)
+      + `<path class="isl-vmast" d="${rope(ff.stern, [fB[0], qy - bw])}${rope(ff.bow, [fB[1], qy - bw])}" stroke-width=".8"/></g>`;
+    // The pier the near ship lies along, as in the same photograph: a low concrete deck on her far side, its
+    // face in shade, its ends showing past her stern and her bow with dark bollards on them, mirrored faintly;
+    // her hull, drawn next, covers its middle. Her lines go to two bollards at each end, a third standing free.
+    const nx0 = X(0.28), nx1 = X(0.7), nwl = y0 + Y(0.12), nf = fair(nx0, nx1, nwl);
+    const pw = nwl - 0.5 * u, pe = pw - 4.5 * u, pt = pe - 1.8 * u;   // the pier's foot at the water, its edge, its far side
+    let pier = '', pface = '', pbol = '';
+    for (const [a, b] of [[nx0 - 30 * u, nx0 + nf.L * 0.05], [nx1 - nf.L * 0.07, nx1 + 35 * u]]) { pier += rect(a, pt, b - a, pw - pt); pface += rect(a, pe, b - a, pw - pe); }
+    const nB = [nx0 - 9 * u, nx0 - 19 * u, nx0 - 27 * u, nx1 + 11 * u, nx1 + 22 * u, nx1 + 32 * u];
+    for (const x of nB) pbol += bollard(x, pe);
+    const pierD = `<path class="isl-vstone" d="${pier}"/><path class="isl-vpshade" d="${pface}"/><path class="isl-vcannon" d="${pbol}"/>`;
+    s += mirrored(pw, pierD, 0.14) + pierD;
+    s += ship(nx0, nx1, nwl, 'isl-vship', 2);
+    s += `<path class="isl-vmast" d="${rope(nf.stern, [nB[0], pe - bw])}${rope(nf.stern, [nB[1], pe - bw])}${rope(nf.bow, [nB[3], pe - bw])}${rope(nf.bow, [nB[4], pe - bw])}" stroke-width=".8"/>`;
     // a launch crossing toward the quay, its riding light and its column of light
     const lx0 = X(0.82), ly0 = Y(0.9), ll = 40 * u;
     s += dashes(streakList(lx0 + ll * 0.3, ly0 + 1, H, r, 0.05, 0.08), 's-vcoolglow', 1, [0.1, 0.2, 0.34]);
@@ -2017,6 +2075,54 @@
     s += `<path class="isl-vcourse" d="${pj}" stroke-width=".7"/>`;
     s += `<path class="f-near isl-land" d="${polyD([[X(-0.02), pFoot], [px1, pFoot], [px1, H + 2], [X(-0.02), H + 2]])}"/>`;
     s += `<g class="isl-vwin" style="--i:0">${pool(X(0.07), pFoot + 12 * u, 80 * u, 16 * u, 0.8)}</g>`;
+    // Visitors at the parapet, seen from behind, heads and shoulders against the water (art-audit pass 4,
+    // 2026-10-01: the fort had no one in it). Who is there answers the hour (by version): by Day a passenger
+    // up from the ships, in a sun hat, holds up a phone to photograph them; at Sunset and at Dusk a couple lean
+    // on the coping, one pointing at the ships, as people come to the fort for the sunset and to see the ships
+    // sail; before dawn and after dark the fort is empty. Sized from the parapet (a person about one and a half
+    // times its height above the floor they stand on), so they keep their place at it whatever the card's
+    // shape; in their own colours, dimmed as the light goes (isl-sjfig), with no light of their own (the
+    // fort's lamp is too far along the wall to reach them).
+    {
+      const fy = pFoot + 12 * u, fh = (fy - pTop) * 1.55, sw = fh * 0.13, hr = fh * 0.075, ft = fy - fh, hy = ft + hr, sh = ft + fh * 0.18;
+      const limb = (pts, col, w = sw * 0.3) => `<path d="M${pts.map(([x, y]) => `${F(x)} ${F(y)}`).join('L')}" fill="none" stroke="${col}" stroke-width="${F(w)}" stroke-linecap="round" stroke-linejoin="round"/>`;
+      // o: shirt, legs (trousers) or skirt or shorts with bare legs, skin, hair (long to the shoulders or not),
+      // hat; arms: 'lean' (both forearms on the coping), 'point' (the right arm at the ships), 'phone'
+      const visitor = (x, o) => {
+        const skin = o.skin, sl = [x - sw * 0.85, sh + sw * 0.12], sr = [x + sw * 0.85, sh + sw * 0.12];
+        let g = `<ellipse class="isl-vcannon" cx="${F(x)}" cy="${F(fy + 0.5 * u)}" rx="${F(sw * 1.5)}" ry="${F(Math.max(1, 2 * u))}" fill-opacity=".3"/>`;   // its shadow on the floor
+        if (o.legs) g += `<path fill="${o.legs}" d="M${F(x - sw * 0.85)} ${F(fy)}L${F(x - sw * 0.75)} ${F(ft + fh * 0.5)}H${F(x + sw * 0.75)}L${F(x + sw * 0.85)} ${F(fy)}H${F(x + sw * 0.1)}L${F(x)} ${F(ft + fh * 0.62)}L${F(x - sw * 0.1)} ${F(fy)}Z"/>`;
+        else g += `<path fill="${skin}" d="${rect(x - sw * 0.7, ft + fh * 0.6, sw * 0.48, fy - ft - fh * 0.6)}${rect(x + sw * 0.22, ft + fh * 0.6, sw * 0.48, fy - ft - fh * 0.6)}"/>`;
+        if (o.shorts) g += `<path fill="${o.shorts}" d="M${F(x - sw * 0.8)} ${F(ft + fh * 0.5)}L${F(x - sw * 0.86)} ${F(ft + fh * 0.7)}H${F(x + sw * 0.86)}L${F(x + sw * 0.8)} ${F(ft + fh * 0.5)}Z"/>`;
+        if (o.skirt) g += `<path fill="${o.skirt}" d="M${F(x - sw * 0.78)} ${F(ft + fh * 0.48)}L${F(x - sw * 1.08)} ${F(ft + fh * 0.8)}H${F(x + sw * 1.08)}L${F(x + sw * 0.78)} ${F(ft + fh * 0.48)}Z"/>`;
+        // the arms, drawn before the body so it covers where they meet it: the upper arm in the sleeve, the
+        // forearm bare
+        const arm = (s0, el, hand) => limb([s0, el], o.shirt) + limb([el, hand], skin);
+        if (o.arms === 'phone') {
+          // both hands up in front, above the hat, holding the phone level, its screen toward her and so toward us
+          const px = x + hr * 0.3, py = hy - hr * 2.4;
+          g += arm(sl, [x - sw * 1.25, sh - fh * 0.06], [px - hr * 1.1, py + hr * 0.4]) + arm(sr, [x + sw * 1.3, sh - fh * 0.06], [px + hr * 1.1, py + hr * 0.4]);
+          g += `<path fill="#22262b" d="${rect(px - hr * 1.2, py - hr * 0.55, hr * 2.4, hr * 1.4)}"/><path fill="#cfe2ea" d="${rect(px - hr * 1.02, py - hr * 0.4, hr * 2.04, hr * 1.1)}"/>`;
+        } else {
+          // forearms on the coping: the elbows on it, the forearms reaching forward along it out of sight
+          g += arm(sl, [x - sw * 1.35, pTop + 0.6 * u], [x - sw * 0.7, pTop + 0.2 * u]);
+          g += o.arms === 'point'
+            ? arm(sr, [x + sw * 1.45, sh - fh * 0.08], [x + sw * 2.3, sh - fh * 0.17]) + limb([[x + sw * 2.3, sh - fh * 0.17], [x + sw * 2.62, sh - fh * 0.2]], skin, sw * 0.13)
+            : arm(sr, [x + sw * 1.35, pTop + 0.6 * u], [x + sw * 0.7, pTop + 0.2 * u]);
+        }
+        g += `<path fill="${o.shirt}" d="M${F(x - sw * 0.82)} ${F(ft + fh * 0.53)}L${F(x - sw)} ${F(ft + fh * 0.22)}Q${F(x - sw)} ${F(ft + fh * 0.16)} ${F(x - sw * 0.6)} ${F(ft + fh * 0.15)}H${F(x + sw * 0.6)}Q${F(x + sw)} ${F(ft + fh * 0.16)} ${F(x + sw)} ${F(ft + fh * 0.22)}L${F(x + sw * 0.82)} ${F(ft + fh * 0.53)}Z"/>`;   // the back
+        g += `<path fill="${skin}" d="${rect(x - hr * 0.45, hy + hr * 0.6, hr * 0.9, fh * 0.07)}"/><circle fill="${o.hair}" cx="${F(x)}" cy="${F(hy)}" r="${F(hr)}"/>`;   // neck, the head from behind
+        if (o.long) g += `<path fill="${o.hair}" d="M${F(x - hr)} ${F(hy)}V${F(ft + fh * 0.22)}Q${F(x)} ${F(ft + fh * 0.25)} ${F(x + hr)} ${F(ft + fh * 0.22)}V${F(hy)}Z"/>`;
+        if (o.hat) g += `<ellipse fill="${o.hat}" cx="${F(x)}" cy="${F(hy - hr * 0.15)}" rx="${F(hr * 1.9)}" ry="${F(hr * 0.5)}"/><path fill="${o.hat}" d="M${F(x - hr * 0.9)} ${F(hy - hr * 0.1)}A${F(hr * 0.9)} ${F(hr * 0.95)} 0 0 1 ${F(x + hr * 0.9)} ${F(hy - hr * 0.1)}Z"/>`
+          + `<path fill="#7a4a2e" d="${rect(x - hr * 0.9, hy - hr * 0.42, hr * 1.8, hr * 0.28)}"/>`;
+        g += `<path fill="#3a2e24" d="${rect(x - sw * 0.85, fy - fh * 0.02, sw * 0.7, fh * 0.03)}${rect(x + sw * 0.15, fy - fh * 0.02, sw * 0.7, fh * 0.03)}"/>`;   // shoes
+        return g;
+      };
+      const vx = X(0.325);
+      s += `<g class="isl-sjfig"><g class="isl-lq" data-q="y">${visitor(vx, { shirt: '#d8735a', shorts: '#c2ab7f', skin: '#8d5a3b', hair: '#2a211b', hat: '#dcc690', arms: 'phone' })}</g>`
+        + `<g class="isl-lq" data-q="sd">${visitor(vx - sw * 1.6, { shirt: '#3d8a8f', skirt: '#3d8a8f', skin: '#6b4630', hair: '#1d1916', long: true, arms: 'lean' })}`
+        + `${visitor(vx + sw * 1.6, { shirt: '#e8e4da', legs: '#2f3a4a', skin: '#a8714f', hair: '#2a211b', arms: 'point' })}</g></g>`;
+    }
     // the cannon: barrel tapering from breech to muzzle, its top edge catching the light; carriage and
     // wheels on the floor
     const bl = 70 * u, br = 8 * u, gx = eX - bl * 0.5, gy = pTop + eD - br * 0.2;

@@ -906,6 +906,15 @@
 .isl[data-sky="day"] .isl-vhullband { fill: #1d2c3d; }   /* (by Day --isl-near is the land's green: a ship's boot-top and funnel cap are dark navy; art-audit wave 2) */
 .isl .isl-vdeck { stroke: var(--isl-near); stroke-opacity: 0.35; fill: none; }
 .isl .isl-vcannon { fill: var(--isl-near); }
+/* (art-audit pass 4, 2026-10-01) The shade the liners' hulls deepen into toward the waterline and the floodlit
+   cathedral's stone into toward its cupolas: cool by Day, as isl-vpshade's is; the cathedral's darkening is put
+   out by Day, when the Sun lights the stone evenly. The visitors at the fort's parapet, in their own colours,
+   dimmed as the light goes (they are there by Day, at Sunset and at Dusk). */
+.isl .st-sjshade { stop-color: var(--isl-near); }
+.isl[data-sky="day"] .st-sjshade { stop-color: #2a3d4f; }
+.isl[data-sky="day"] .st-sjcath { stop-opacity: 0; }
+.isl[data-sky="sunset"] .isl-sjfig { filter: brightness(0.72); }
+.isl[data-sky="dusk"] .isl-sjfig { filter: brightness(0.5); }
 /* The shaded side of stonework (the telescope's wall, the bell tower's shaft). */
 .isl .isl-vpshade { fill: var(--isl-near); fill-opacity: 0.3; }
 /* By Day the near land's colour is green, so a shadow on stone took an olive cast; under a blue sky a
