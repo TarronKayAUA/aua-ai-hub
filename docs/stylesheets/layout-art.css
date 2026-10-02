@@ -614,8 +614,9 @@
 .isl .isl-lgutter { stroke: var(--isl-lchair2); stroke-opacity: 0.6; fill: none; }
 /* The tool wall (the Tool Directory's head, 2026-09-29): the room shares the library's wall, wood,
    aluminium and frame tokens, so the two interiors take the same light in each version; its own are
-   the pegboard, the painted outlines on it, and the cast iron. The hammer hangs in its outline only
-   at Night (isl-tqn); in every other version it lies on the bench (an isl-lq group, above). */
+   the pegboard, the painted outlines on it, and the cast iron. The hammer hangs in its outline at Dawn,
+   Dusk and Night and lies on the bench by Day and at Sunset (isl-lq groups, above: art-audit pass 4,
+   2026-10-01, the working day; its isl-tqn rule, Night only, is retired). */
 .isl {
   --isl-tboard: #6d6a59; --isl-tsil: #33312a; --isl-tpeg: #4d4a3e; --isl-tiron: #3a3e45; --isl-tbulb: #fff4d6;
 }
@@ -748,9 +749,6 @@
 [data-md-color-scheme="slate"] .isl :is(.isl-pbubble, .isl-pline, .isl-pdot, .isl-pring) { stroke: var(--k, var(--isl-rim)); }
 [data-md-color-scheme="slate"] .isl .isl-pbubble { fill: #e9ecf5; fill-opacity: 0.82; }
 .isl .isl-tbulb { fill: var(--isl-tbulb); }
-.isl .isl-tqn { display: none; }
-[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-tqn,
-.isl[data-sky="night"] .isl-tqn { display: inline; }
 /* Round 7, wave 3 (2026-09-30). The committee room shares the library's tokens; its own are the project
    board and its notes, the name cards' fold, the glasses and jug, the easel's legs, the agenda's heading
    and boxes (neutral ink, so only the ticks carry the page's hue: they are the calendar ring's class), and
