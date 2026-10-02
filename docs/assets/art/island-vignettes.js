@@ -688,16 +688,90 @@
     const boats = [[0.385, 0.62], [0.42, 0.6], [0.455, 0.605], [0.49, 0.61], [0.5, 0.57], [0.535, 0.56], [0.555, 0.64],
       [0.58, 0.6], [0.605, 0.55], [0.62, 0.53], [0.635, 0.585], [0.655, 0.59], [0.67, 0.56], [0.685, 0.55],
       [0.62, 0.68], [0.55, 0.52], [0.45, 0.68], [0.52, 0.66], [0.7, 0.6], [0.4, 0.55]];
+    // (boats 0 and 19, the two nearest the harbour's mouth, come and go by the hour: each is kept aside here
+    // and drawn below, at anchor only in the versions it is home; art-audit pass 4, 2026-10-01)
+    const roving = {};
     boats.forEach(([fx, fy], i) => {
       const x = X(fx), y = Yp(fy), hw = X(0.008), mh = Y(0.05 + (i % 4) * 0.008);
-      hulls += `M${F(x - hw)} ${F(y)}L${F(x + hw)} ${F(y)}L${F(x + hw * 0.7)} ${F(y + Y(0.009))}L${F(x - hw * 0.7)} ${F(y + Y(0.009))}Z`;
+      const hull = `M${F(x - hw)} ${F(y)}L${F(x + hw)} ${F(y)}L${F(x + hw * 0.7)} ${F(y + Y(0.009))}L${F(x - hw * 0.7)} ${F(y + Y(0.009))}Z`;
+      const rf = `<rect x="${F(x - 0.6)}" y="${F(y + Y(0.011))}" width="1.2" height="${F(Y(0.05))}" fill="url(#islvcoolrefl)"/>`;
+      if (i === 0 || i === 19) { roving[i] = { x, y, hw, mh, hull, rf }; return; }
+      hulls += hull;
       masts += `M${F(x)} ${F(y)}V${F(y - mh)}`;
       lights.push([x, y - mh, 1, 'm']);
-      refl += `<rect x="${F(x - 0.6)}" y="${F(y + Y(0.011))}" width="1.2" height="${F(Y(0.05))}" fill="url(#islvcoolrefl)"/>`;
+      refl += rf;
     });
     s += `<path class="isl-vmast" d="${masts}" stroke-width="0.7"/>`;
     s += `<path class="isl-vhull" d="${hulls}"/>`;
     s += `<g class="isl-vlamps">${refl}</g>`;
+    {
+      // THE ANCHORAGE BY THE HOUR (art-audit pass 4, 2026-10-01; by version): boats leave English Harbour early
+      // for a day's sail or a passage and come back in the evening, so the two boats nearest the mouth come and
+      // go, and their places in the bay stand empty while they are out. At Dawn boat 19 motors out through the
+      // mouth, bow to the open sea, its sail still furled on the boom; by Day it and boat 0 sail on the open sea
+      // beyond the headland's point; at Sunset boat 19 motors home, boat 0 already back at anchor; from Dusk both
+      // lie at anchor again. Each boat keeps its own mast's height, so it is the same boat out as at anchor.
+      // Their lights follow the rules of the road (the owner, 2026-10-01: under sail the red port sidelight and
+      // no masthead light; at anchor an anchor light): at anchor the all-round light at the masthead, as every
+      // boat in the bay; under engine the masthead (steaming) light on the mast's forward face, part way up as
+      // a yacht carries it, and the sidelight on the side we see, red to port heading out and green to
+      // starboard coming in; by Day, under sail, none. Their own random stream (229), so nothing else moves.
+      const ur = rng(229), hh = Y(0.009), sw = F(Math.max(1, Y(0.004)));
+      // at anchor, drawn as the rest of the bay's boats are; the anchor lights of those at anchor in one path (Chrome
+      // draws a lone round point a shade differently from the same point in a longer path, so Dusk and Night, with
+      // both home, stay pixel for pixel as they were)
+      const atAnchor = (list) => list.map(({ x, y, mh, hull }) => `<path class="isl-vmast" d="M${F(x)} ${F(y)}V${F(y - mh)}" stroke-width="0.7"/>`
+        + `<path class="isl-vhull" d="${hull}"/>`).join('') + `<g class="isl-vlamps">${list.map((b) => b.rf).join('')}</g>`
+        + `<path class="s-vcool isl-vwin" style="--i:2" d="${list.map(({ x, y, mh }) => `M${F(x)} ${F(y - mh)}h0`).join('')}" stroke-width="1.6"/>`;
+      // a yacht's hull with its bow toward f (1 right, -1 left): a raked stem, a near-upright transom
+      const hullD = (x, y, hw, f, h) => `M${F(x + f * hw)} ${F(y)}L${F(x - f * hw * 0.94)} ${F(y)}L${F(x - f * hw * 0.8)} ${F(y + h)}`
+        + `L${F(x + f * hw * 0.6)} ${F(y + h)}Z`;
+      // white water as lines on the sea, faded astern by a soft mask from the stern (x0) to where it has gone
+      // (x1), so a wake trails off instead of ending square; ahead of x0 it is at full strength
+      let wakes = 0;
+      const wake = (x0, x1, lines) => {
+        const id = `islvhwake${wakes++}`, d = lines.map(([ax, ay, bx, by]) => `M${F(ax)} ${F(ay)}L${F(bx)} ${F(by)}`).join('');
+        return `<linearGradient id="${id}g" gradientUnits="userSpaceOnUse" x1="${F(x0)}" y1="0" x2="${F(x1)}" y2="0">`
+          + `<stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>`
+          + `<mask id="${id}" maskUnits="userSpaceOnUse" x="0" y="0" width="${F(W)}" height="${F(H)}"><rect width="${F(W)}" height="${F(H)}" fill="url(#${id}g)"/></mask>`
+          + `<path class="isl-vsurf" d="${d}" stroke-width="${sw}" mask="url(#${id})"/>`;
+      };
+      // Under engine, bow toward f: the sail furled on the boom (a roll along it in the sails' shaded tone, fullest
+      // at the mast), the wake (the bow wave's arms opening from the stem, the far one hidden by the hull until the
+      // stern, and the propeller's wash straight astern), the steaming light's column on the water, the sidelight.
+      const motoring = ({ hw, mh }, fx, fy, f) => {
+        // (the boom low over the deck, so the roll on it sits on the hull's line: higher, with water showing under
+        // it, it read as a flag flying from the mast; review, 2026-10-01)
+        const x = X(fx), y = Yp(fy), wl = y + hh, ft = Math.max(1, Y(0.005)), by = y - 0.3;
+        let o = `<path class="isl-vmast" d="M${F(x)} ${F(y)}V${F(y - mh)}M${F(x)} ${F(by)}H${F(x - f * hw * 0.92)}" stroke-width="0.7"/>`
+          + `<path class="isl-vfurl" d="M${F(x)} ${F(by + 0.2)}V${F(by - ft)}L${F(x - f * hw * 0.82)} ${F(by - ft * 0.75)}V${F(by + 0.2)}Z"/>`
+          + `<path class="isl-vhull" d="${hullD(x, y, hw, f, hh)}"/>`;
+        const st = x + f * hw * 0.6, sx = x - f * hw * 0.86, len = hw * 2.6 * (0.9 + ur() * 0.2), lw = hw * 1.5 * (0.9 + ur() * 0.2);
+        o += wake(sx, sx - f * len, [[st, wl + 0.3, sx - f * len, wl + Y(0.011)], [sx, wl - 0.2, sx - f * len, wl - Y(0.006)], [sx, wl + 0.2, sx - f * lw, wl + 0.5]]);
+        const lx = x + f * hw * 0.9, ly = y - Y(0.003), c = f < 0 ? 'r' : 'g';
+        o += `<g class="isl-vlamps"><rect x="${F(x - 0.6)}" y="${F(wl + Y(0.002))}" width="1.2" height="${F(Y(0.05))}" fill="url(#islvcoolrefl)"/></g>`
+          + `<g class="isl-vwin" style="--i:2">${halo(lx, ly, Math.max(3, Y(0.014)), f < 0 ? 'islvred' : 'islvgreen')}`
+          + `<circle class="isl-vnav-${c}" cx="${F(lx)}" cy="${F(ly)}" r="${F(Math.max(0.9, Y(0.0035)))}"/>`
+          + `<path class="s-vcool" d="M${F(x + f * 0.5)} ${F(y - mh * 0.62)}h0" stroke-width="1.6"/></g>`;
+        return o;
+      };
+      // Under sail on the open sea, heading out (bow left, the port side toward us), smaller with the distance
+      // (sc): a mainsail and a jib, a short wake, and a faint reflection about the waterline.
+      const sailing = ({ hw, mh }, fx, fy, sc) => {
+        const x = X(fx), wl = Yp(fy), h = hh * sc, y = wl - h, w = hw * sc, m = mh * sc;
+        const boat = `<path class="isl-vmast" d="M${F(x)} ${F(y)}V${F(y - m)}" stroke-width="0.7"/>`
+          + `<path class="isl-vsail" d="M${F(x + 0.4)} ${F(y - m)}L${F(x + w * 0.88)} ${F(y - m * 0.12)}H${F(x + 0.4)}Z`
+          + `M${F(x - 0.4)} ${F(y - m * 0.86)}L${F(x - w * 0.92)} ${F(y - m * 0.06)}H${F(x - 0.4)}Z"/>`
+          + `<path class="isl-vhull" d="${hullD(x, y, w, -1, h)}"/>`;
+        const wx = x + w * 0.8, wn = wx + w * 2.2 * (0.9 + ur() * 0.2);
+        return `<g opacity=".16" transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${boat}</g>${boat}` + wake(wx, wn, [[wx, wl + 0.2, wn, wl + 0.4]]);
+      };
+      // (by Day the taller-masted boat 19 is the nearer of the two, so the farther boat is the smaller)
+      s += `<g class="isl-lq" data-q="as">${atAnchor([roving[0]])}</g><g class="isl-lq" data-q="dn">${atAnchor([roving[0], roving[19]])}</g>`
+        + `<g class="isl-lq" data-q="a">${motoring(roving[19], 0.23, 0.53, -1)}</g>`
+        + `<g class="isl-lq" data-q="y">${sailing(roving[0], 0.07, 0.37, 0.8)}${sailing(roving[19], 0.13, 0.405, 0.85)}</g>`
+        + `<g class="isl-lq" data-q="s">${motoring(roving[19], 0.25, 0.54, 1)}</g>`;
+    }
     // 6. The lookout: the slope on the left, the rocks and scrub in front, organ-pipe cactus, a lantern.
     s += `<path class="f-near isl-land" d="${poly(slope)}${scrub(slope.slice(0, 19), 6, 1.2, 3.4)}"/>`;
     // Galleon Beach's palms along the back of the sand (every version: silhouettes by night, green by Day)
