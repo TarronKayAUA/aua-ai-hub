@@ -208,6 +208,20 @@
 .isl.isl-hero[data-sky="sunset"] {
   --isl-sky0: #2a1d48; --isl-sky1: #56264a;
 }
+/* The homepage campus at Dawn and at Sunset (art-audit pass 4, 2026-10-01): the two had painted its walls
+   and roofs in one shared set (the walls read --isl-vwallc, so Dawn's --isl-vwall never reached them),
+   though the light on the front is opposite. The hero looks west, into the sunset, so the campus's front
+   faces east, toward the viewer: at Dawn it faces the brightening eastern sky, so walls and roofs are
+   lighter and cooler, lit by that sky; at Sunset the Sun is behind it, so the front is backlit, in a
+   deeper and warmer shade. Dusk has its own set above. */
+.isl.isl-hero[data-sky="dawn"] {
+  --isl-vwallc: #9a95a8; --isl-vshade: #7a758e; --isl-vband: #93707d; --isl-vroof: #984a5d;
+  --isl-vroof2: #7f3d51; --isl-vdark: #3d4a6c;
+}
+.isl.isl-hero[data-sky="sunset"] {
+  --isl-vwallc: #5e5350; --isl-vshade: #483e3d; --isl-vband: #6c4847; --isl-vroof: #7c3241;
+  --isl-vroof2: #652a37; --isl-vdark: #2e3a50;
+}
 .isl .isl-veg-bf { fill: var(--isl-far); }
 .isl .isl-veg-bn { fill: var(--isl-near); }
 .isl .isl-veg-d { fill: var(--isl-veg-d, #2c4a2c); }
@@ -415,6 +429,15 @@
 
 @keyframes isl-glide {
   from { transform: translate(-14px, 4px) rotate(-3deg); }
+}
+
+/* The frigatebird goes to roost after dark (art-audit pass 4, 2026-10-01; by version): frigatebirds settle
+   for the night soon after sunset and do not fly in the dark, and Dusk begins at 19:00, well after
+   Antigua's sunset, so it soars at Dawn, Day and Sunset only. Its place (birdPlace()) and the clouds'
+   clearance round it are unchanged; at Dusk and Night the pass ends on the campus's last windows
+   (isl-vlast), as it already did. */
+.isl-hero:is([data-sky="dusk"], [data-sky="night"]) .isl-bird {
+  display: none;
 }
 
 
