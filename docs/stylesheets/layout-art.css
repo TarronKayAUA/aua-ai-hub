@@ -208,6 +208,20 @@
 .isl.isl-hero[data-sky="sunset"] {
   --isl-sky0: #2a1d48; --isl-sky1: #56264a;
 }
+/* The homepage campus at Dawn and at Sunset (art-audit pass 4, 2026-10-01): the two had painted its walls
+   and roofs in one shared set (the walls read --isl-vwallc, so Dawn's --isl-vwall never reached them),
+   though the light on the front is opposite. The hero looks west, into the sunset, so the campus's front
+   faces east, toward the viewer: at Dawn it faces the brightening eastern sky, so walls and roofs are
+   lighter and cooler, lit by that sky; at Sunset the Sun is behind it, so the front is backlit, in a
+   deeper and warmer shade. Dusk has its own set above. */
+.isl.isl-hero[data-sky="dawn"] {
+  --isl-vwallc: #9a95a8; --isl-vshade: #7a758e; --isl-vband: #93707d; --isl-vroof: #984a5d;
+  --isl-vroof2: #7f3d51; --isl-vdark: #3d4a6c;
+}
+.isl.isl-hero[data-sky="sunset"] {
+  --isl-vwallc: #5e5350; --isl-vshade: #483e3d; --isl-vband: #6c4847; --isl-vroof: #7c3241;
+  --isl-vroof2: #652a37; --isl-vdark: #2e3a50;
+}
 .isl .isl-veg-bf { fill: var(--isl-far); }
 .isl .isl-veg-bn { fill: var(--isl-near); }
 .isl .isl-veg-d { fill: var(--isl-veg-d, #2c4a2c); }
@@ -262,6 +276,12 @@
 .isl[data-sky="day"] .isl-ptrunk { fill: #7c5f42; }
 /* The Old Court House's iron railings: black iron by Day, not the land's green (owner, 2026-09-28). */
 .isl[data-sky="day"] .isl-vrailing { stroke: #23282c; }
+/* The Old Court House's street: an opaque road under the track, so the base sea no longer shows through it (art-audit
+   pass 4, 2026-10-01: by Day the street had read as harbour water). By Day the stone's darker course; in the lit
+   versions the near ground's own tone, darker at night, since the stone's course made the street as light as the
+   Court House's walls at Dusk and Night. */
+.isl .isl-vstreet { fill: var(--isl-near); }
+.isl[data-sky="day"] .isl-vstreet { fill: var(--isl-vstrata); }
 /* Shrubs (the telescope's hill, the harbour town's trees): night silhouettes, leaf green by Day. */
 .isl[data-sky="day"] .isl-shrub { fill: var(--isl-vtree3); }
 .isl[data-sky="day"] .isl-shrubl { fill: var(--isl-vtree-l); fill-opacity: 0.8; }
@@ -417,6 +437,16 @@
   from { transform: translate(-14px, 4px) rotate(-3deg); }
 }
 
+/* The frigatebird goes to roost after dark (art-audit pass 4, 2026-10-01; by version): frigatebirds settle
+   for the night soon after sunset and do not fly in the dark, and Dusk begins at 19:00, well after
+   Antigua's sunset, so it soars at Dawn, Day and Sunset only. Its place (birdPlace()) and the clouds'
+   clearance round it are unchanged; at Dusk and Night the pass ends on the campus's last windows
+   (isl-vlast), as it already did. */
+.isl-hero:is([data-sky="dusk"], [data-sky="night"]) .isl-bird,
+[data-md-color-scheme="slate"] .isl-hero:where(:not([data-sky])) .isl-bird {
+  display: none;
+}
+
 
 .isl.isl-paused,
 .isl.isl-paused * {
@@ -548,7 +578,9 @@
 .isl .isl-lshadehi { stroke: #ffffff; stroke-opacity: 0.22; fill: none; stroke-linecap: round; }
 /* The library's things on the tables (owner, 2026-09-29): each group shows only in the versions its
    data-q names (a Dawn, y Day, s Sunset, d Dusk), so the hall is in use by Day, has a few early arrivals
-   at Dawn, winds down at Sunset, keeps only its own stacked books at Dusk and is empty at Night. */
+   at Dawn, winds down at Sunset, is in use again at Dusk by a few students under the lit lamps, as in the
+   owner's photograph of it at that hour (art-audit pass 4, 2026-10-01; it had kept only its own stacked
+   books), and is empty at Night. */
 .isl .isl-lq { display: none; }
 .isl[data-sky="dawn"] .isl-lq[data-q*="a"],
 .isl[data-sky="day"] .isl-lq[data-q*="y"],
@@ -589,10 +621,29 @@
 .isl .isl-ledge { stroke: #ffe2c4; stroke-opacity: 0.28; fill: none; }
 .isl .isl-llap2 { fill: var(--isl-lchair2); }
 .isl .isl-lgutter { stroke: var(--isl-lchair2); stroke-opacity: 0.6; fill: none; }
+/* The library, art-audit pass 4 (2026-10-01). The furniture's shadows on the floor (isl-ldrop, one softened
+   group, so where two meet they do not darken twice): deepest where only the lamps light the hall, faint in
+   daylight. The dimming of its right side at Dusk and Night, away from the lamps (st-lfall). And at Dusk its
+   carrels and window frames a step toward Night, on the library alone (isl-lhall): at the photograph's hour
+   no lamp reaches them, and the default values, which the other interiors share at Dusk, kept them near
+   daylight, louder than the lamp-lit tables. */
+.isl .isl-ldrop { fill: var(--isl-lside); opacity: 0.45; }
+.isl[data-sky="day"] .isl-ldrop { opacity: 0.25; }
+.isl:is([data-sky="dawn"], [data-sky="sunset"]) .isl-ldrop { opacity: 0.32; }
+.isl .st-lfall { stop-color: var(--isl-lside); }
+.isl[data-sky="dusk"] .isl-lhall { --isl-lred: #8a3730; --isl-lred2: #6c6d72; --isl-lalu: #8f949a; --isl-lframe: #7e828a;
+  --isl-lscreen: #d6e8fa; }
+/* Its evening things at Dusk (the same pass), from the owner's photograph of the hall at that hour: the
+   laptops' screens lit, bright in the dim hall (--isl-lscreen, just above); clear water bottles; headphones;
+   a charger's white cable. */
+.isl .isl-lclear { fill: #dbe6ee; fill-opacity: 0.75; }
+.isl .isl-lphones { stroke: var(--isl-lbezel); fill: none; stroke-linecap: round; }
+.isl .isl-lcord { stroke: #e2ded6; stroke-opacity: 0.75; fill: none; stroke-linecap: round; }
 /* The tool wall (the Tool Directory's head, 2026-09-29): the room shares the library's wall, wood,
    aluminium and frame tokens, so the two interiors take the same light in each version; its own are
-   the pegboard, the painted outlines on it, and the cast iron. The hammer hangs in its outline only
-   at Night (isl-tqn); in every other version it lies on the bench (an isl-lq group, above). */
+   the pegboard, the painted outlines on it, and the cast iron. The hammer hangs in its outline at Dawn,
+   Dusk and Night and lies on the bench by Day and at Sunset (isl-lq groups, above: art-audit pass 4,
+   2026-10-01, the working day; its isl-tqn rule, Night only, is retired). */
 .isl {
   --isl-tboard: #6d6a59; --isl-tsil: #33312a; --isl-tpeg: #4d4a3e; --isl-tiron: #3a3e45; --isl-tbulb: #fff4d6;
 }
@@ -676,6 +727,18 @@
 .isl .isl-cmark { stroke: #3a3f4a; stroke-opacity: 0.7; fill: none; stroke-linecap: round; }
 .isl .isl-chand { stroke: #2b2f38; fill: none; stroke-linecap: round; }
 .isl .isl-cshade { fill: var(--isl-lbronze); }
+/* This Week's calendar (art-audit pass 4, 2026-10-01): its page darkens toward its left edge, away from the
+   sconce and the window (st-cpage, the left stop: most at Night, where the flat page was the loudest area,
+   least by Day); the sconce's shade is cream fabric with a bronze trim, apart from its brass stem. */
+.isl .st-cpage { stop-color: var(--isl-lside); stop-opacity: 0.2; }
+.isl .st-cpage0 { stop-color: var(--isl-lside); stop-opacity: 0; }
+.isl[data-sky="day"] .st-cpage { stop-opacity: 0.08; }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .st-cpage, .isl[data-sky="night"] .st-cpage { stop-opacity: 0.3; }
+.isl .isl-cfab { fill: var(--isl-lpage); fill-opacity: 0.9; stroke: var(--isl-lbronze); stroke-opacity: 0.6; stroke-linejoin: round; }
+/* the pen's string: the ink's grey, a lighter grey at Night, where the dark one vanished on the calendar's
+   shadow and left the pen hanging from nothing */
+.isl .isl-cstring { stroke: #3a3f4a; stroke-opacity: 0.5; fill: none; }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-cstring, .isl[data-sky="night"] .isl-cstring { stroke: #7d828b; stroke-opacity: 0.6; }
 .isl .isl-hslat { fill: var(--isl-lframe); fill-opacity: 0.92; }
 .isl .isl-hcord { stroke: #8d939c; fill: none; }
 .isl .isl-hrail { stroke: var(--isl-lalu); fill: none; }
@@ -725,9 +788,6 @@
 [data-md-color-scheme="slate"] .isl :is(.isl-pbubble, .isl-pline, .isl-pdot, .isl-pring) { stroke: var(--k, var(--isl-rim)); }
 [data-md-color-scheme="slate"] .isl .isl-pbubble { fill: #e9ecf5; fill-opacity: 0.82; }
 .isl .isl-tbulb { fill: var(--isl-tbulb); }
-.isl .isl-tqn { display: none; }
-[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-tqn,
-.isl[data-sky="night"] .isl-tqn { display: inline; }
 /* Round 7, wave 3 (2026-09-30). The committee room shares the library's tokens; its own are the project
    board and its notes, the name cards' fold, the glasses and jug, the easel's legs, the agenda's heading
    and boxes (neutral ink, so only the ticks carry the page's hue: they are the calendar ring's class), and
@@ -879,6 +939,15 @@
 .isl[data-sky="day"] .isl-vhullband { fill: #1d2c3d; }   /* (by Day --isl-near is the land's green: a ship's boot-top and funnel cap are dark navy; art-audit wave 2) */
 .isl .isl-vdeck { stroke: var(--isl-near); stroke-opacity: 0.35; fill: none; }
 .isl .isl-vcannon { fill: var(--isl-near); }
+/* (art-audit pass 4, 2026-10-01) The shade the liners' hulls deepen into toward the waterline and the floodlit
+   cathedral's stone into toward its cupolas: cool by Day, as isl-vpshade's is; the cathedral's darkening is put
+   out by Day, when the Sun lights the stone evenly. The visitors at the fort's parapet, in their own colours,
+   dimmed as the light goes (they are there by Day, at Sunset and at Dusk). */
+.isl .st-sjshade { stop-color: var(--isl-near); }
+.isl[data-sky="day"] .st-sjshade { stop-color: #2a3d4f; }
+.isl[data-sky="day"] .st-sjcath { stop-opacity: 0; }
+.isl[data-sky="sunset"] .isl-sjfig { filter: brightness(0.72); }
+.isl[data-sky="dusk"] .isl-sjfig { filter: brightness(0.5); }
 /* The shaded side of stonework (the telescope's wall, the bell tower's shaft). */
 .isl .isl-vpshade { fill: var(--isl-near); fill-opacity: 0.3; }
 /* By Day the near land's colour is green, so a shadow on stone took an olive cast; under a blue sky a
