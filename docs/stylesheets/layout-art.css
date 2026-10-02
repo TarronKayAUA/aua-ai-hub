@@ -1017,6 +1017,9 @@
 [data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-vflagveil, .isl[data-sky="night"] .isl-vflagveil { opacity: 0.7; }
 .isl .isl-vinscr { letter-spacing: 0; font-weight: 400; }
 .isl .isl-vpost { fill: var(--isl-near); }
+/* the lamp steps' iron handrail, as dark as the lanterns' posts (the owner, 2026-10-02) */
+.isl .isl-vhandrail { stroke: var(--isl-near); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.isl[data-sky="day"] .isl-vhandrail { stroke: #2c3338; }
 .isl-vig .isl-vgrain { opacity: 0.22; }
 .isl-vig[data-sky="night"] .isl-vgrain { opacity: 0.6; }
 .isl-vig .isl-vgrain--sea { opacity: 0.1; }

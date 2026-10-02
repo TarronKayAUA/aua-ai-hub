@@ -1012,7 +1012,9 @@
     // (art-audit pass 4, 2026-10-01: the anchored masts stand before the near point and its lights; by Day those
     // lights are off, so the Day picture is unchanged).
     s += flush();
-    return s + `<g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g>`;
+    // The frigatebird goes to roost after dark (the owner, 2026-10-02, as the homepage hero's does): frigatebirds
+    // settle for the night soon after sunset and do not fly in the dark, so it soars at Dawn, Day and Sunset only.
+    return s + `<g class="isl-lq" data-q="ays"><g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g></g>`;
   }
 
   /* THE FINISH (owner, 2026-09-28: the art should reach the quality of his media tracker's scenes).
@@ -1407,16 +1409,19 @@
     const lookoutLit = lit;
     // 4. The steps, in profile: one staircase climbing the hillside to the lookout, a riser and a
     //    tread at a time, with two landings. The stone body under the treads, each tread's edge lit,
-    //    each riser's face in shade.
-    const x0 = X(0.33), yA = Y(0.97), x1 = X(0.8), yB = Y(0.272), nSteps = 21, landAt = [7, 14], land = X(0.035);
-    const dx = (x1 - x0 - land * landAt.length) / nSteps, dy = (yA - yB) / nSteps, depth = Y(0.07);
+    //    each riser's face in shade. (The owner, 2026-10-02: rescaled from 21 steps to 63, in three flights
+    //    as before, so a step is a step beside a person: at 21, each riser came to a walker's hips.)
+    const x0 = X(0.33), yA = Y(0.97), x1 = X(0.8), yB = Y(0.272), nSteps = 63, landAt = [21, 42], land = X(0.035);
+    // (and a short landing at the top, where the top lantern stands: with the finer steps, the last one had
+    // been too narrow for it, and its post had stood over the stair below)
+    const topLand = X(0.03), dx = (x1 - x0 - land * landAt.length - topLand) / nSteps, dy = (yA - yB) / nSteps, depth = Y(0.07);
     let edge = [[x0, yA]], treads = '', risers = '';
     const lanterns = [[x0 - X(0.012), yA]];
     let x = x0, y = yA;
     for (let i = 0; i < nSteps; i++) {
       risers += `M${F(x)} ${F(y)}V${F(y - dy)}`;
       y -= dy; edge.push([x, y]);
-      const run = dx + (landAt.includes(i + 1) ? land : 0);
+      const run = dx + (landAt.includes(i + 1) ? land : 0) + (i === nSteps - 1 ? topLand : 0);
       treads += `M${F(x)} ${F(y)}H${F(x + run)}`;
       x += run; edge.push([x, y]);
       if (landAt.includes(i + 1)) lanterns.push([x - land * 0.5, y]);
@@ -1438,8 +1443,70 @@
     // the pools of light first, so the stones sit in them
     s += lanterns.map(([lx2, ly2], i) => `<g class="isl-vwin" style="--i:${i};--isl-vstep:.6s">${pool(lx2 + X(0.02), ly2 + Y(0.01), X(0.08), Y(0.06), 0.85)}</g>`).join('');
     s += `<path class="isl-vriser" d="${poly(body)}"/>`;
-    s += `<path class="isl-vstep-edge" d="${treads}" stroke-width="${F(Math.max(1.6, Y(0.008)))}"/>`;
-    s += `<path class="isl-vstep-rise" d="${risers}" stroke-width="${F(Math.max(1, Y(0.004)))}"/>`;
+    // (the lines scaled to the step, so the finer steps' lit edges do not run together into a band)
+    s += `<path class="isl-vstep-edge" d="${treads}" stroke-width="${F(Math.max(0.7, Math.min(Y(0.008), dy * 0.42)))}"/>`;
+    s += `<path class="isl-vstep-rise" d="${risers}" stroke-width="${F(Math.max(0.5, Math.min(Y(0.004), dy * 0.25)))}"/>`;
+    // People on the steps by the hour (lamp-steps-V3; the owner, 2026-10-02; DESIGN.md 19.6, what is drawn may
+    // change between versions with a reason): walkers climb early, before the heat, rest on the way up by day and
+    // come down after the sunset. So a climber near the top at Dawn; two resting on the first landing by Day,
+    // looking out over the harbour; two coming down past the second landing's lantern at Dusk, its light on their
+    // backs; no one on the steps at Sunset, when everyone is at the top, or at Night. Seen side on, the size of the
+    // lookout's people (Y(0.052)), each standing on a tread of the stair, the leading foot a step up or down where
+    // walking. Drawn before the handrail, which crosses in front of them, and dimmed by version (isl-bfig).
+    {
+      const wh = Y(0.052);
+      // the tread above riser i: its back (where the riser meets it), its length and its height
+      const tr = (i) => ({ x: edge[2 * i + 1][0], len: edge[2 * i + 2][0] - edge[2 * i + 1][0], y: edge[2 * i + 1][1] });
+      // a figure side on, facing left (dir 1) or right (dir -1, mirrored), feet on the tread at (x, fy); lead, the
+      // leading foot's rise above (or, negative, drop below) the back foot, in pixels; stride 0 for standing
+      const walker = (x, fy, dir, { shirt, legs = '#2f3a4a', skin = '#6b4630', hair = '#1d1916', lead = 0, stride = 1, rim = false }) => {
+        const h = wh, W2 = (px, py) => [x + px * h, fy - py * h], ld = lead / h;
+        const leg = (fx, sh, up) => `<path fill="${sh}" d="${polyD([W2(-0.04, 0.5), W2(0.04, 0.5), W2(fx + 0.03, 0.03 + up), W2(fx - 0.03, 0.03 + up)])}"/>`
+          + `<path fill="#3a2e24" d="${polyD([W2(fx - 0.075, up), W2(fx + 0.035, up), W2(fx + 0.035, 0.035 + up), W2(fx - 0.06, 0.035 + up)])}"/>`;
+        const head = W2(-0.02, 0.915), face = W2(-0.045, 0.905);
+        let o = `<path fill="none" stroke="${shirt}" stroke-opacity=".75" stroke-width="${F(0.06 * h)}" stroke-linecap="round" d="${lineD(stride ? [W2(-0.01, 0.79), W2(-0.07, 0.64), W2(-0.1, 0.53)] : [W2(-0.01, 0.79), W2(-0.025, 0.62), W2(-0.02, 0.5)])}"/>`;   // the far arm
+        o += leg(0.1 * stride, '#283041', ld < 0 ? -ld : 0) + leg(-0.11 * stride, legs, ld > 0 ? ld : 0);   // the far leg behind, the near leg leading
+        o += `<path fill="${shirt}" d="${polyD([W2(-0.065, 0.48), W2(-0.075, 0.66), W2(-0.06, 0.8), W2(-0.02, 0.825), W2(0.04, 0.81), W2(0.065, 0.7), W2(0.06, 0.48)])}"/>`;   // the body
+        o += `<path fill="${skin}" d="${rect(head[0] - 0.02 * h, fy - 0.86 * h, 0.035 * h, 0.05 * h)}"/>`   // the neck
+          + `<circle fill="${hair}" cx="${F(head[0] + 0.012 * h)}" cy="${F(head[1])}" r="${F(0.072 * h)}"/><circle fill="${skin}" cx="${F(face[0])}" cy="${F(face[1])}" r="${F(0.052 * h)}"/>`;
+        o += `<path fill="none" stroke="${shirt}" stroke-width="${F(0.065 * h)}" stroke-linecap="round" d="${lineD(stride ? [W2(0.01, 0.78), W2(0.06, 0.64), W2(0.07, 0.52)] : [W2(0.01, 0.78), W2(0.025, 0.62), W2(0.02, 0.5)])}"/>`;   // the near arm
+        // (a warm rim of a lantern's light down the back of the head and body, lit with the lanterns)
+        const lit = rim ? `<g class="isl-vlamps isl-vwin" style="--i:2;--isl-vstep:.6s"><path class="isl-mlit" d="${lineD([W2(0.045, 0.94), W2(0.07, 0.86)])}M${F(W2(0.045, 0.8)[0])} ${F(W2(0.045, 0.8)[1])}L${F(W2(0.068, 0.7)[0])} ${F(W2(0.068, 0.7)[1])}L${F(W2(0.062, 0.5)[0])} ${F(W2(0.062, 0.5)[1])}" stroke-width="${F(Math.max(0.6, 0.03 * h))}"/></g>` : '';
+        const all = `<g class="isl-bfig">${o}</g>` + lit;
+        return dir > 0 ? all : `<g transform="translate(${F(2 * x)} 0) scale(-1 1)">${all}</g>`;
+      };
+      const [l1, l2] = landAt, up = tr(l2 + Math.round((nSteps - l2) * 0.62)), land1 = tr(l1 - 1);
+      const dn1 = tr(l2 - 3), dn2 = tr(l2 - 3 - Math.max(3, Math.round(3 * 1.6)));
+      s += `<g class="isl-lq" data-q="a">${walker(up.x + up.len * 0.45, up.y, -1, { shirt: '#5a7d9a', legs: '#3a3f4a', skin: '#8d5a3b', lead: dy })}</g>`
+        + `<g class="isl-lq" data-q="y">${walker(land1.x + land1.len * 0.16, land1.y, 1, { shirt: '#e8e2d4', legs: '#34405a', stride: 0 })}`
+        + `${walker(land1.x + land1.len * 0.36, land1.y, 1, { shirt: '#b8573f', legs: '#3a3f4a', skin: '#8d5a3b', hair: '#2a1d16', stride: 0 })}</g>`
+        + `<g class="isl-lq" data-q="d">${walker(dn1.x + dn1.len * 0.55, dn1.y, 1, { shirt: '#3d6466', lead: -dy, rim: true })}`
+        + `${walker(dn2.x + dn2.len * 0.55, dn2.y, 1, { shirt: '#7d4a52', skin: '#8d5a3b', lead: -dy, rim: true })}</g>`;
+    }
+    // The handrail (the owner, 2026-10-02): an iron rail on the near side of the stair, as dark as the lanterns'
+    // posts, a little over half a person's height above the nosings, sloping with each flight and level over each
+    // landing, from the foot to the top; a post at each end of a flight and every few steps between, standing on
+    // the treads. It crosses in front of the walkers, as a near rail does.
+    {
+      const hR = Y(0.029), nose = (i) => edge[2 * i + 1];
+      const flights = [[0, landAt[0] - 1], [landAt[0], landAt[1] - 1], [landAt[1], nSteps - 1]];
+      const pts = [];
+      flights.forEach(([a, b], fi) => {
+        const [xa, ya] = nose(a), [xb, yb] = nose(b);
+        pts.push([xa - dx, ya + dy - hR], [xb, yb - hR]);
+        if (fi === flights.length - 1) pts.push([x1 - X(0.006), yb - hR]);   // (on across the top landing)
+      });
+      let posts = '';
+      const every = Math.max(4, Math.round(3 * 2));
+      flights.forEach(([a, b]) => {
+        for (let i = a; i <= b; i += every) { const [px, py] = nose(i); posts += `M${F(px + dx * 0.5)} ${F(py)}V${F(py - hR)}`; }
+        const [px, py] = nose(b); posts += `M${F(px + dx * 0.5)} ${F(py)}V${F(py - hR)}`;
+      });
+      const [fx0, fy0] = pts[0]; posts += `M${F(fx0)} ${F(fy0 + hR)}V${F(fy0)}`;
+      const [ex, ey] = pts[pts.length - 1]; posts += `M${F(ex)} ${F(ey + hR)}V${F(ey)}`;
+      s += `<path class="isl-vhandrail" d="${posts}" stroke-width="${F(Math.max(0.7, Y(0.0035)))}"/>`
+        + `<path class="isl-vhandrail" d="${lineD(pts)}" stroke-width="${F(Math.max(1, Y(0.005)))}"/>`;
+    }
     // a century plant on the slope, its rosette and its tall flowering stalk, and scrub by the steps
     const cpx = X(0.69), cpy = Y(0.66);   // (clear of the landing's lantern, which it had stood behind)
     let cp = '';
