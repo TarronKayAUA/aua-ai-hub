@@ -785,6 +785,9 @@
 .isl .isl-ddish { fill: var(--isl-lframe); }
 .isl .isl-ddish2 { stroke: var(--isl-lalu); fill: none; }
 .isl .isl-nnode { fill: var(--isl-node); }
+/* The dish's beam in the network's pale colour, brightest at the feed (art-audit pass 4, 2026-10-01): the
+   page's hue stays on the output node alone. */
+.isl .st-node { stop-color: var(--isl-node); }
 [data-md-color-scheme="slate"] .isl :is(.isl-pbubble, .isl-pline, .isl-pdot, .isl-pring) { stroke: var(--k, var(--isl-rim)); }
 [data-md-color-scheme="slate"] .isl .isl-pbubble { fill: #e9ecf5; fill-opacity: 0.82; }
 .isl .isl-tbulb { fill: var(--isl-tbulb); }

@@ -3902,7 +3902,8 @@
      glance, "fantastical or sci-fi" where it fits better): a radio dish on a headland over the sea, turned
      to the sky, where a constellation drawn as a neural network (as the homepage hero's was, until 2026-09-30) receives
      its beam; the network's nodes light layer by layer, the output last, in the page's hue. A small
-     station with lit windows at the dish's foot. Sized from the card's height. */
+     station with lit windows at the dish's foot, and its keeper, somewhere different at each hour (art-audit
+     pass 4, 2026-10-01). Sized from the card's height. */
   function dishNet(W, H, v) {
     const y0 = v.y0, X = (k) => k * W, Y = (k) => k * H, r = rng(1123);
     let s = '';
@@ -3930,6 +3931,66 @@
     s += `<path class="isl-dtruss" d="M${F(dx - Y(0.08))} ${F(footY)}L${F(dx - Y(0.02))} ${F(pivY + Y(0.06))}M${F(dx + Y(0.08))} ${F(footY)}L${F(dx + Y(0.02))} ${F(pivY + Y(0.06))}M${F(dx - Y(0.06))} ${F(footY - Y(0.1))}H${F(dx + Y(0.06))}M${F(dx - Y(0.04))} ${F(footY - Y(0.2))}H${F(dx + Y(0.04))}M${F(dx - Y(0.06))} ${F(footY - Y(0.1))}L${F(dx + Y(0.04))} ${F(footY - Y(0.2))}M${F(dx + Y(0.06))} ${F(footY - Y(0.1))}L${F(dx - Y(0.04))} ${F(footY - Y(0.2))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     // the pedestal set into a concrete plinth, over its shadow (its legs had ended as bare lines on the grass)
     s += `<ellipse class="isl-tdrop" cx="${F(dx)}" cy="${F(footY + Y(0.01))}" rx="${F(Y(0.115))}" ry="${F(Y(0.016))}"/><path class="isl-aramp" d="${rect(dx - Y(0.1), footY - Y(0.012), Y(0.2), Y(0.024))}"/>`;
+    // The station's keeper (art-audit pass 4, 2026-10-01: nothing said anyone worked here). One person, in a
+    // different place at each hour (by version), because the dish is serviced in daylight and observes after
+    // dark, so the keeper works outside by day and at the console at night: at Dawn in the lit doorway with the
+    // shift's first coffee, a dark figure against the light with the mug pale at the chest; by Day at the dish's
+    // foot in a white shirt and a hard hat, the toolbox set down beside them; at Sunset walking back along the
+    // crest to the door, toolbox in hand, the low Sun rimming their front; at Dusk and Night seated at the
+    // console, head and shoulders dark in the tall third window, a screen beyond them edging them in its cool
+    // light (lit with the windows). Sized from the door, Y(0.086) tall, so about 2.1 m: a standing adult is
+    // Y(0.074), about 17 css px at 1920 (the station's own scale allows no more). Drawn after the pedestal, so
+    // that where a narrower card brings the dish up against the station (from about 1280 down) the keeper can
+    // stand on the ground in front of the plinth, between its legs, instead of on the open crest beside it.
+    // Placed by hand, so no draws are taken; literal colours, dimmed by version (isl-bfig).
+    {
+      const hu = Y(0.074), m = hu / 1.8, sw = hu * 0.13, hr = hu * 0.075, Q = {};
+      const put = (q, svg) => { Q[q] = (Q[q] || '') + svg; };
+      const open = dx - bx - bw >= Y(0.2);   // room on the crest between the station and the plinth
+      const toolbox = (cx, gy) => `<path fill="#3d6290" d="${rect(cx - 0.14 * hu, gy - 0.13 * hu, 0.28 * hu, 0.13 * hu)}"/>`
+        + `<path fill="#2b4669" d="${rect(cx - 0.145 * hu, gy - 0.13 * hu, 0.29 * hu, 0.035 * hu)}"/>`
+        + `<path fill="none" stroke="#2a2f36" stroke-width="${F(Math.max(0.6, 0.025 * hu))}" d="M${F(cx - 0.06 * hu)} ${F(gy - 0.13 * hu)}V${F(gy - 0.175 * hu)}H${F(cx + 0.06 * hu)}V${F(gy - 0.13 * hu)}"/>`;
+      const drop = (cx, gy, w) => `<ellipse class="isl-tdrop" cx="${F(cx)}" cy="${F(gy)}" rx="${F(w)}" ry="${F(0.035 * hu)}"/>`;
+      // Dawn: in the doorway, on its threshold (the base course), facing out, the mug held at the chest.
+      const dcx = bx + Y(0.3125), thr = bT + Y(0.126), mug = [dcx + sw * 0.2, thr - hu * 0.6];
+      put('a', `<g class="isl-bfig">${person(dcx, thr, hu, { shirt: '#3b4352', legs: '#262b33', skin: '#4a3024', hair: '#17140f', front: true, reach: mug })}`
+        + `<path class="isl-lmug" d="${rect(mug[0] - 0.04 * hu, mug[1] - 0.08 * hu, 0.08 * hu, 0.09 * hu)}"/></g>`);
+      // Day: on the grass left of the plinth, facing us, the toolbox at their side (or, on a narrow card, in
+      // front of the plinth's middle, under the dish, with the toolbox at its foot).
+      const ax = open ? dx - Y(0.14) : dx, ay = open ? footY + Y(0.005) : footY + Y(0.022), ahy = ay - hu + hr;
+      const tbx = open ? ax - 0.33 * hu : ax + 0.34 * hu;
+      put('y', `<g class="isl-bfig">${drop(ax, ay, 0.2 * hu)}${drop(tbx, ay, 0.18 * hu)}${toolbox(tbx, ay)}`
+        + person(ax, ay, hu, { shirt: '#f1eee6', legs: '#34405a', skin: '#8d5a3b', hair: '#1d1916', front: true })
+        + `<path fill="#e5b437" d="M${F(ax - hr * 1.1)} ${F(ahy - hr * 0.05)}A${F(hr * 1.1)} ${F(hr * 1.15)} 0 0 1 ${F(ax + hr * 1.1)} ${F(ahy - hr * 0.05)}Z${rect(ax - hr * 1.45, ahy - hr * 0.2, hr * 2.9, hr * 0.32)}"/></g>`);
+      // Sunset: walking left along the crest, halfway from the plinth to the door, seen side on in mid-stride;
+      // the near hand carries the toolbox, the far arm swings forward; the feet on the line from the plinth's
+      // foot to the threshold (or, on a narrow card, setting off from in front of the plinth).
+      const wx = open ? (dcx + dx - Y(0.1)) / 2 : dx + Y(0.01), wy = open ? (thr + footY + Y(0.005)) / 2 : footY + Y(0.022);
+      const W2 = (px, py) => [wx + px * hu, wy - py * hu];   // a point px across (forward is left, negative) and py up, in heights
+      const leg = (fx, sh) => `<path fill="${sh}" d="${polyD([W2(-0.04, 0.5), W2(0.04, 0.5), W2(fx + 0.03, 0.03), W2(fx - 0.03, 0.03)])}"/>`
+        + `<path fill="#3a2e24" d="${polyD([W2(fx - 0.075, 0), W2(fx + 0.035, 0), W2(fx + 0.035, 0.035), W2(fx - 0.06, 0.035)])}"/>`;
+      const hand = W2(0.015, 0.46), head = W2(-0.035, 0.915), face = W2(-0.055, 0.905);
+      let walk = `<path fill="none" stroke="#c4c0b6" stroke-width="${F(0.06 * hu)}" stroke-linecap="round" d="${lineD([W2(-0.01, 0.79), W2(-0.07, 0.64), W2(-0.12, 0.53)])}"/>`;   // the far arm, forward
+      walk += leg(0.12, '#283041') + leg(-0.13, '#34405a');   // the far leg trailing, the near leg leading
+      walk += `<path fill="#f1eee6" d="${polyD([W2(-0.065, 0.48), W2(-0.075, 0.66), W2(-0.06, 0.8), W2(-0.02, 0.825), W2(0.04, 0.81), W2(0.065, 0.7), W2(0.06, 0.48)])}"/>`;   // the day's white shirt
+      walk += `<path fill="#8d5a3b" d="${rect(head[0] - 0.02 * hu, wy - 0.86 * hu, 0.035 * hu, 0.05 * hu)}"/>`   // the neck
+        + `<circle fill="#1d1916" cx="${F(head[0] + 0.012 * hu)}" cy="${F(head[1])}" r="${F(0.072 * hu)}"/><circle fill="#8d5a3b" cx="${F(face[0])}" cy="${F(face[1])}" r="${F(0.052 * hu)}"/>`   // hair behind, the face forward
+        + `<path fill="#e5b437" d="M${F(head[0] - 0.07 * hu)} ${F(head[1] - 0.02 * hu)}A${F(0.075 * hu)} ${F(0.075 * hu)} 0 0 1 ${F(head[0] + 0.08 * hu)} ${F(head[1] - 0.02 * hu)}Z${rect(head[0] - 0.115 * hu, head[1] - 0.035 * hu, 0.2 * hu, 0.025 * hu)}"/>`;   // the hard hat, its brim forward
+      walk += `<path fill="none" stroke="#d9d4c9" stroke-width="${F(0.065 * hu)}" stroke-linecap="round" d="${lineD([W2(0, 0.78), hand])}"/><circle fill="#8d5a3b" cx="${F(hand[0])}" cy="${F(hand[1])}" r="${F(0.032 * hu)}"/>`;   // the near arm, down to the toolbox
+      put('s', `<g class="isl-bfig">${drop(wx, wy, 0.22 * hu)}${walk}${toolbox(hand[0], wy - 0.29 * hu)}</g>`
+        + `<path class="s-rim" d="${lineD([W2(-0.06, 0.8), W2(-0.075, 0.66), W2(-0.065, 0.5)])}M${F(face[0] - 0.045 * hu)} ${F(face[1] - 0.03 * hu)}l${F(-0.005 * hu)} ${F(0.05 * hu)}" stroke-width="${F(Math.max(0.6, Y(0.003)))}" stroke-opacity=".7"/>`);
+      // Dusk and Night: seated at the console in the tall third window, seen from behind, the window's sill
+      // cutting them at the chest; the screen beyond, on the desk at their right, edges their head and
+      // shoulder on that side.
+      const w0 = bx + Y(0.22), ww = Y(0.04), sill = bT + Y(0.1), kx = w0 + ww * 0.36, khy = thr - 1.17 * m, ksh = thr - 0.98 * m;
+      const scr = [w0 + ww * 0.5, thr - 1.13 * m, ww * 0.42, 0.3 * m];
+      put('dn', `<path class="isl-lbezel" d="${rect(scr[0] - 0.4, scr[1] - 0.4, scr[2] + 0.8, scr[3] + 0.8)}"/>`
+        + `<g class="isl-vwin" style="--i:0"><path class="isl-lscreen" d="${rect(...scr)}"/></g>`
+        + `<g class="isl-bfig"><path fill="#252b35" d="M${F(kx - sw)} ${F(sill)}V${F(ksh + sw * 0.35)}Q${F(kx - sw)} ${F(ksh)} ${F(kx - sw * 0.45)} ${F(ksh)}H${F(kx + sw * 0.45)}Q${F(kx + sw)} ${F(ksh)} ${F(kx + sw)} ${F(ksh + sw * 0.35)}V${F(sill)}Z"/>`
+        + `<path fill="#1a1d22" d="${rect(kx - hr * 0.5, khy, hr, ksh - khy + 0.5)}"/><circle fill="#15181d" cx="${F(kx)}" cy="${F(khy)}" r="${F(hr)}"/></g>`
+        + `<g class="isl-vwin" style="--i:0"><path class="s-vcool" d="M${F(kx + hr * 0.2)} ${F(khy - hr * 0.95)}A${F(hr)} ${F(hr)} 0 0 1 ${F(kx + hr * 0.7)} ${F(khy + hr * 0.7)}M${F(kx + sw * 0.55)} ${F(ksh)}Q${F(kx + sw)} ${F(ksh)} ${F(kx + sw)} ${F(ksh + sw * 0.6)}" stroke-width="${F(Math.max(0.5, 0.025 * hu))}" stroke-opacity=".85"/></g>`);
+      s += Object.keys(Q).map((q) => `<g class="isl-lq" data-q="${q}">${Q[q]}</g>`).join('');
+    }
     const rimA = [dx + nx * R, pivY + ny * R], rimB = [dx - nx * R, pivY - ny * R], depth = R * 0.42;
     const back = [dx - ux * depth, pivY - uy * depth];
     s += `<path class="isl-ddish" d="M${F(rimA[0])} ${F(rimA[1])}Q${F(back[0] - ux * depth)} ${F(back[1] - uy * depth)} ${F(rimB[0])} ${F(rimB[1])}Z"/>`
@@ -3947,7 +4008,11 @@
     for (let l = 0; l < layers.length - 1; l++) for (const a of layers[l]) for (const b of layers[l + 1]) links += `M${F(a[0])} ${F(a[1])}L${F(b[0])} ${F(b[1])}`;
     const out = layers[layers.length - 1][0];
     s += `<path d="${polyD([[focus[0] - Y(0.01), focus[1]], [focus[0] + Y(0.01), focus[1] + Y(0.01)], [out[0] + Y(0.02), out[1] + Y(0.03)], [out[0] - Y(0.01), out[1] - Y(0.03)]])}" fill="url(#islnbeam)"/>`;
-    s += `<defs><linearGradient id="islnbeam" gradientUnits="userSpaceOnUse" x1="${F(focus[0])}" y1="${F(focus[1])}" x2="${F(out[0])}" y2="${F(out[1])}"><stop offset="0" class="st-k" stop-opacity=".05"/><stop offset="1" class="st-k" stop-opacity=".35"/></linearGradient></defs>`;
+    // (the beam leaves the feed brightest and fades as it spreads toward the node, in the network's own pale
+    // colour (st-node), so the page's hue stays on the node and its halo alone: art-audit pass 4, 2026-10-01;
+    // it had brightened toward the node in the page's hue, so it read as a comet falling and spread the one
+    // accent across a wedge of sky)
+    s += `<defs><linearGradient id="islnbeam" gradientUnits="userSpaceOnUse" x1="${F(focus[0])}" y1="${F(focus[1])}" x2="${F(out[0])}" y2="${F(out[1])}"><stop offset="0" class="st-node" stop-opacity=".3"/><stop offset="1" class="st-node" stop-opacity=".06"/></linearGradient></defs>`;
     s += `<path class="s-net" d="${links}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
     layers.forEach((ly, l) => {
       const last = l === layers.length - 1;
@@ -3959,6 +4024,9 @@
     let sig = '';
     for (const t of [0.25, 0.5, 0.75]) { const x = focus[0] + (out[0] - focus[0]) * t, y = focus[1] + (out[1] - focus[1]) * t; sig += `M${F(x)} ${F(y)}l${F((out[0] - focus[0]) * 0.03)} ${F((out[1] - focus[1]) * 0.03)}`; }
     s += `<path class="isl-bsound isl-vwin" style="--i:4" d="${sig}" stroke-width="${F(Math.max(1.4, Y(0.012)))}"/>`;
+    // a small pale halo at the feed, where the beam leaves the dish, lit with the signals (art-audit pass 4,
+    // 2026-10-01); a glow, so not by Day (isl-vlamps), when the beam and its dashes still show
+    s += `<g class="isl-vwin" style="--i:4"><g class="isl-vlamps">${halo(focus[0], focus[1], Y(0.055), 'islvcool')}</g></g>`;
     return `<g style="--isl-vstep:.45s">${s}</g>`;
   }
 
