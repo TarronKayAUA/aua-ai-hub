@@ -12,18 +12,32 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">Large language models now match or exceed average medical student scores on core course exams, raising concerns about the integrity of current assessment methods <a href="https://pubmed.ncbi.nlm.nih.gov/42807608?fc=20260609215449&amp;ff=20260929140629&amp;v=2.20.1" aria-label="Source 11: PubMed AI in medical education, Comprehensive Evaluation of Large Language Models on Four Core Medical School Courses: A Cross-Sectional Comparative Study">[11]</a>. That concern connects to a broader shift in evaluation: one proposed framework would let AI assess case-based learning in continuing medical education by tracking clinical reasoning rather than time spent <a href="https://mededu.jmir.org/2026/1/e99520" aria-label="Source 1: JMIR Medical Education, AI-Mediated Assessment of Continuing Medical Education: The Case-based Learning Intelligence Credit System (CLICS) Framework">[1]</a>, while a review traces the field&#x27;s movement from early caution about generative language models toward trusting them with defined educational tasks <a href="https://mededu.jmir.org/2026/1/e105347" aria-label="Source 3: JMIR Medical Education, Generative Language Models in Medical Education: From Advent to Entrustment">[3]</a>.</p>
+<p class="section-brief-lede">A new benchmarking study finds five large language models, including ChatGPT-5 and Gemini 2.5 Pro, matching or approaching medical students on clinically oriented anatomy questions at the Apply and Analyze levels of Bloom&#x27;s Taxonomy <a href="https://pubmed.ncbi.nlm.nih.gov/42823828?fc=20260609215449&amp;ff=20261002104535&amp;v=2.20.1" aria-label="Source 1: PubMed AI in medical education, Benchmarking Large Language Models (LLMs) Against Medical Students Using Psychometrically Evaluated Authentic Clinically Oriented Anatomy Multiple-Choice Questions (MCQs) at the Apply and Analyze Levels of Bloom&#x27;s Taxonomy">[1]</a>. That performance raises stakes for a separate concern: surveys of Generation Z learners describe a calibration paradox in which students trust generative AI output without verifying it, a pattern echoed in Pakistani trainees&#x27; limited hallucination awareness <a href="https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1" aria-label="Source 3: PubMed AI in medical education, Trust without verification: generation Z, generative artificial intelligence and the calibration paradox in medical education">[3]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Separately, benchmarking work found custom GPT models scoring psychiatric conference posters within the range of human rater agreement <a href="https://pubmed.ncbi.nlm.nih.gov/42813176?fc=20260609215449&amp;ff=20260930165008&amp;v=2.20.1" aria-label="Source 8: PubMed AI in medical education, Evaluating psychiatric conference posters: Benchmarking a custom generative pre-trained transformer against human inter-rater variability using a structured assessment framework">[8]</a>.</p>
-<p>Also this week: six items address teaching and curriculum design, four cover assessment and feedback, and three explore simulation and skills training, including a virtual reality module for radiopharmaceutical administration and an AI-assisted diagnostic system for head and neck imaging. One study examines attitudes toward AI adoption among clinicians and students, and one benchmarks exam performance.</p>
-<p class="section-brief-date">The picture as of October 1, 2026; numbered links go to the items below.</p>
+<p>Educators are responding on two fronts: testing AI-supported virtual reality training that raised dental students&#x27; operative scores <a href="https://pubmed.ncbi.nlm.nih.gov/42821990?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1" aria-label="Source 6: PubMed AI in medical education, Effects of Generative AI-Supported Virtual Reality Dental Skill Training on Learning Performance, Visual Behavior, and Cortical Activation Among Dental Students: Stratified Randomized Controlled Trial">[6]</a>, and designing programme-level approaches meant to protect reflective practice assignments from AI-generated shortcuts <a href="https://pubmed.ncbi.nlm.nih.gov/42817234?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1" aria-label="Source 4: PubMed AI in medical education, Using a Programme-Level Approach to Developing Reflective Practice in Health Professions Education in the Age of AI">[4]</a>.</p>
+<p>Also this week: five surveys and viewpoints address attitudes and adoption of AI among students and clinicians, while four pieces on teaching and curriculum explore instructional design and public health competency. Three papers examine assessment and feedback, including a proposed credit system called CLICS, and two cover simulation and skills training beyond the dental VR trial.</p>
+<p class="section-brief-date">The picture as of October 2, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42823828?fc=20260609215449&amp;ff=20261002104535&amp;v=2.20.1">Benchmarking Large Language Models (LLMs) Against Medical Students Using Psychometrically Evaluated Authentic Clinically Oriented Anatomy Multiple-Choice Questions (MCQs) at the Apply and Analyze Levels of Bloom&#x27;s Taxonomy</a>
+    <p class="news-card-summary">A study compares five large language models, including ChatGPT-5 and Gemini 2.5 Pro, with medical students on clinically oriented anatomy multiple-choice questions at the Apply and Analyze levels of Bloom&#x27;s Taxonomy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 2, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42823707?fc=20260609215449&amp;ff=20261002104535&amp;v=2.20.1">INSPIRE: a healthcare-specialized instructional design methodology for high-stakes e-learning in the era of artificial intelligence</a>
+    <p class="news-card-summary">The paper proposes INSPIRE, a conceptual instructional design method for healthcare e-learning that combines phased governance, quality assurance, and human-in-the-loop use of artificial intelligence; empirical validation is still pending.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="attitudes-and-adoption">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 1, 2026</span></div>
@@ -113,20 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 30, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42811929?fc=20260609215449&amp;ff=20260930105705&amp;v=2.20.1">Application of an artificial intelligence-assisted diagnostic system for lymph nodes in head and neck imaging teaching</a>
     <p class="news-card-summary">A study reports that an AI-assisted diagnostic system for cervical lymph nodes in head and neck imaging teaching improved students&#x27; understanding of imaging anatomy and reduced cognitive load.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42813176?fc=20260609215449&amp;ff=20260930165008&amp;v=2.20.1">Evaluating psychiatric conference posters: Benchmarking a custom generative pre-trained transformer against human inter-rater variability using a structured assessment framework</a>
-    <p class="news-card-summary">A study benchmarked a custom GPT generative pre-trained transformer against human raters scoring psychiatric conference posters, finding AI-human agreement within or above the range of agreement between humans.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 30, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42813009?fc=20260609215449&amp;ff=20260930165008&amp;v=2.20.1">Artificial intelligence in public health education: current evidence, competencies, and a framework for responsible integration</a>
-    <p class="news-card-summary">A narrative review of literature from 2020 to June 2026 examines AI literacy gaps in public health education and proposes competencies and a framework for responsible integration.</p>
   </div>
 </div>
 </div>

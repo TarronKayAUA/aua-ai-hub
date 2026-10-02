@@ -12,18 +12,34 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">A cardiologist&#x27;s account of Claude analyzing a whole genome in 30 minutes for about $5, a task once requiring 30 people nearly a year, has sharpened calls for standards governing such AI-generated clinical results <a href="https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics" aria-label="Source 2: STAT News AI, Opinion: Claude analyzed my genome in 30 minutes. Now we need standards for the results">[2]</a>. The Department of Health and Human Services separately announced new efforts to speed and expand clinical trials using AI, citing international competition <a href="https://www.statnews.com/2026/09/30/hhs-arpa-h-clinical-trials-artificial-intelligence-surpass-program" aria-label="Source 6: STAT News AI, STAT+: HHS announces new efforts to speed up, expand clinical trials with AI">[6]</a>.</p>
+<p class="section-brief-lede">The US Department of Health and Human Services announced new efforts to speed up and expand clinical trials using artificial intelligence, citing competition with countries such as China <a href="https://www.statnews.com/2026/09/30/hhs-arpa-h-clinical-trials-artificial-intelligence-surpass-program" aria-label="Source 8: STAT News AI, STAT+: HHS announces new efforts to speed up, expand clinical trials with AI">[8]</a>. Separately, a STAT News opinion piece reports that Claude analyzed a whole genome in 30 minutes for about $5, a task that once took 30 people nearly a year, and calls for standards to interpret such results <a href="https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics" aria-label="Source 4: STAT News AI, Opinion: Claude analyzed my genome in 30 minutes. Now we need standards for the results">[4]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>On patient-facing tools, a study found ChatGPT more accurate and complete than human responders, including fellows, on hip and knee arthroplasty questions <a href="https://pubmed.ncbi.nlm.nih.gov/42810739?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1" aria-label="Source 14: PubMed AI in medical education, Does ChatGPT provide safe and reliable patient information related to hip and knee arthroplasty?">[14]</a>, even as a npj Digital Medicine paper warned that sycophantic language model responses can cause psychological distress and urged more emotionally flexible agents <a href="https://www.nature.com/articles/s41746-026-03245-6" aria-label="Source 3: npj Digital Medicine, Beyond the sycophantic vs. cold divide: towards flexible, emotionally intelligent agents to foster healthier human-AI interactions">[3]</a>.</p>
-<p>Also this week: six items examine safety and evaluation, three cover patient-facing tools, and one addresses clinical decision support. Two items address imaging and diagnostics, including a deep learning method for rapid multi-species malaria parasite detection, and two more focus on clinical documentation, such as transformer-based detection of misspelled drug names in electronic health records.</p>
+<p>A Nature Medicine commentary examines trust in agentic AI that uses on-premise agents to refer uncertain cases, noting that what happens after referral remains untested <a href="https://www.nature.com/articles/s41591-026-04658-2" aria-label="Source 2: Nature Medicine, The missing links in agentic AI autonomy">[2]</a>. Another paper warns that sycophantic chatbot responses can cause psychological distress and argues for more emotionally intelligent alternatives <a href="https://www.nature.com/articles/s41746-026-03245-6" aria-label="Source 5: npj Digital Medicine, Beyond the sycophantic vs. cold divide: towards flexible, emotionally intelligent agents to foster healthier human-AI interactions">[5]</a>.</p>
+<p>Also this week: the section adds seven items on safety and evaluation, two each on imaging and diagnostics and on patient-facing tools, and one each on clinical decision support and clinical documentation. Specific entries include a qualitative meta-synthesis of clinician perceptions of AI-assisted decision-making and a deep learning method for rapid malaria parasite detection across multiple species.</p>
 <p class="section-brief-date">The picture as of October 2, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">2</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="other">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">October 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.sensible-med.com/p/things-you-should-be-doing-because">Things you should be doing because of AI</a>
+    <p class="news-card-summary">A Sensible Medicine commentary argues that clinicians should respond to artificial intelligence by focusing on personalized patient care, inquiry that improves practice, and training the next generation of physicians.</p>
+  </div>
+  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!dsY4!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F12daf67a-6ec0-4247-903e-42e92095b8c3_720x540.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 2, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04658-2">The missing links in agentic AI autonomy</a>
+    <p class="news-card-summary">A Nature Medicine commentary examines trust in agentic artificial intelligence using on-premise agents and consistency-based gating to refer uncertain cases, noting that what happens after referral remains untested.</p>
+  </div>
+  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04658-2/MediaObjects/41591_2026_4658_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 1, 2026</span></div>
@@ -115,20 +131,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 29, 2026</span></div>
     <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93018">A Multi-Model, Pixel-Native Framework for Automated Computed Tomography Series Labeling and Characterization: Proof-of-Concept Study</a>
     <p class="news-card-summary">Multi-model framework using image pixels rather than inconsistent metadata automatically labels and characterizes computed tomography series to improve clinical workflow management.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42810739?fc=20260609215449&amp;ff=20260930013622&amp;v=2.20.1">Does ChatGPT provide safe and reliable patient information related to hip and knee arthroplasty?</a>
-    <p class="news-card-summary">A study compared ChatGPT with human responders on patient questions about hip and knee arthroplasty joint replacement and found it more accurate and complete than all human groups, including fellows.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2609.31629">ChestPheNoT: Deployable, Auditable Label-Status-Evidence Extraction from Radiology Reports</a>
-    <p class="news-card-summary">A deployable system extracts structured phenotypes and supporting evidence from radiology reports using local inference with auditable predictions.</p>
   </div>
 </div>
 </div>

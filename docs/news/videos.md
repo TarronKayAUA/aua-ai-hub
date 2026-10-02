@@ -13,6 +13,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=oBdLhD5nPYw" target="_blank" rel="noopener" title="OpenAI cancels Astra release, Sonnet 5.5 &amp; what Meta Muse means for work">
+  <img src="https://i4.ytimg.com/vi/oBdLhD5nPYw/hqdefault.jpg" alt="Video: Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse" loading="lazy">
+  <span class="video-card-title">Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse</span>
+  <span class="video-card-meta">IBM Technology, October 2, 2026</span>
+  <span class="video-card-desc">A panel discussion from IBM&#x27;s Mixture of Experts podcast on why a company would cancel a model release, plus the Sonnet 5.5 release and Meta Muse&#x27;s implications for work.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=9zVYS00N6mg" target="_blank" rel="noopener" title="MiniMax M3.1 Flash IS REALLY GOOD! INSANELY FAST &amp; FREE! (Fully Tested)">
+  <img src="https://i2.ytimg.com/vi/9zVYS00N6mg/hqdefault.jpg" alt="Video: Hands-on testing of MiniMax M3.1 Flash Preview speed and free access" loading="lazy">
+  <span class="video-card-title">Hands-on testing of MiniMax M3.1 Flash Preview speed and free access</span>
+  <span class="video-card-meta">WorldofAI, October 2, 2026</span>
+  <span class="video-card-desc">An independent reviewer runs hands-on tests of the MiniMax M3.1 Flash Preview model, covering its speed and free access through MiniMax Code, so viewers can judge its practical performance.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=_rtp1XzaP6Q" target="_blank" rel="noopener" title="OpenAI Security: Controlling Models is Now ‘Hell’">
+  <img src="https://i4.ytimg.com/vi/_rtp1XzaP6Q/hqdefault.jpg" alt="Video: AI news digest on OpenAI security, Gemini 4 Argon, and a self-improvement paper" loading="lazy">
+  <span class="video-card-title">AI news digest on OpenAI security, Gemini 4 Argon, and a self-improvement paper</span>
+  <span class="video-card-meta">AI Explained, October 1, 2026</span>
+  <span class="video-card-desc">An expert-run digest of recent AI developments, including an OpenAI security warning, a cracked cipher, Gemini 4 Argon, and a paper on recursive self-improvement co-authored by many leading researchers.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=pYH8x-Nbhbc" target="_blank" rel="noopener" title="GPT-6.1 Sol vs Claude Sonnet 5.5, This Was NOT Even CLOSE!">
   <img src="https://i1.ytimg.com/vi/pYH8x-Nbhbc/hqdefault.jpg" alt="Video: Hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5" loading="lazy">
   <span class="video-card-title">Hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5</span>
@@ -114,24 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Hands-on testing of Claude Opus 5.5</span>
   <span class="video-card-meta">Bijan Bowen, September 22, 2026</span>
   <span class="video-card-desc">Hands-on testing and technical evaluation of Anthropic&#x27;s Claude Opus 5.5 model across multiple capability areas.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=rFCaGc7owT8" target="_blank" rel="noopener" title="Claude Opus 5.5 IS THE Greatest AI Model EVER! Cheaper, Fast, &amp; Powerful! (FULLY TESTED)">
-  <img src="https://i3.ytimg.com/vi/rFCaGc7owT8/hqdefault.jpg" alt="Video: Claude Opus 5.5 benchmarking and performance testing" loading="lazy">
-  <span class="video-card-title">Claude Opus 5.5 benchmarking and performance testing</span>
-  <span class="video-card-meta">WorldofAI, September 22, 2026</span>
-  <span class="video-card-desc">Hands-on benchmark testing of Claude Opus 5.5 across multiple performance dimensions with detailed cost and speed comparisons.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=qBBRRsH0rQc" target="_blank" rel="noopener" title="Yes, Jev Is Insane, But There&#x27;s A Catch">
-  <img src="https://i2.ytimg.com/vi/qBBRRsH0rQc/hqdefault.jpg" alt="Video: Jev model architecture analysis and capabilities" loading="lazy">
-  <span class="video-card-title">Jev model architecture analysis and capabilities</span>
-  <span class="video-card-meta">Two Minute Papers, September 22, 2026</span>
-  <span class="video-card-desc">Overview of Jev, a new model architecture, with technical analysis and performance discussion relevant to open-source development.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=BaE6UBfNdQk" target="_blank" rel="noopener" title="Finally! New best local AI image editor is here">
-  <img src="https://i3.ytimg.com/vi/BaE6UBfNdQk/hqdefault.jpg" alt="Video: Qwen Image 2.1 open-source image generator review and setup" loading="lazy">
-  <span class="video-card-title">Qwen Image 2.1 open-source image generator review and setup</span>
-  <span class="video-card-meta">AI Search, September 22, 2026</span>
-  <span class="video-card-desc">Hands-on review and setup guide for Qwen Image 2.1 open-source image generation model with local execution instructions.</span>
 </a>
 </div>
 
