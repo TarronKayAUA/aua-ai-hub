@@ -191,6 +191,23 @@
   last_reviewed: 2026-06-12
   blurb: Image generation and editing model under a fully permissive license, notably strong at rendering legible text inside images.
 
+# Added 2026-10-02 (tool discovery issue #52, owner approved; he runs it
+# locally). License apache-2.0 read that day via the Hugging Face API from the
+# card tag and cardData on Tongyi-MAI/Z-Image-Turbo (created 2025-11-25) and
+# Tongyi-MAI/Z-Image, the base model (created 2026-01-23); both ungated. From
+# the Turbo card the same day: "an image generation model family with 6B
+# parameters", Turbo "fits comfortably within 16G VRAM consumer devices",
+# "bilingual text rendering (English & Chinese)", 8 function evaluations; the
+# base model is described as "well-suited for ... fine-tuning". Made by
+# Alibaba's Tongyi Lab, as Qwen-Image is made by Alibaba's Qwen team.
+- name: Z-Image
+  vendor: Alibaba
+  url: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+  license: Apache 2.0
+  modality: image
+  last_reviewed: 2026-10-02
+  blurb: Alibaba's 6 billion parameter image generation family, sized to run on a computer with a 16 gigabyte graphics card. The fast Turbo version renders English and Chinese text inside images, and the base version is published for fine-tuning, both under a fully permissive license.
+
 # --- Video generation (owner approved 2026-06-12) ---------------------------
 
 - name: Wan
