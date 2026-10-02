@@ -276,6 +276,12 @@
 .isl[data-sky="day"] .isl-ptrunk { fill: #7c5f42; }
 /* The Old Court House's iron railings: black iron by Day, not the land's green (owner, 2026-09-28). */
 .isl[data-sky="day"] .isl-vrailing { stroke: #23282c; }
+/* The Old Court House's street: an opaque road under the track, so the base sea no longer shows through it (art-audit
+   pass 4, 2026-10-01: by Day the street had read as harbour water). By Day the stone's darker course; in the lit
+   versions the near ground's own tone, darker at night, since the stone's course made the street as light as the
+   Court House's walls at Dusk and Night. */
+.isl .isl-vstreet { fill: var(--isl-near); }
+.isl[data-sky="day"] .isl-vstreet { fill: var(--isl-vstrata); }
 /* Shrubs (the telescope's hill, the harbour town's trees): night silhouettes, leaf green by Day. */
 .isl[data-sky="day"] .isl-shrub { fill: var(--isl-vtree3); }
 .isl[data-sky="day"] .isl-shrubl { fill: var(--isl-vtree-l); fill-opacity: 0.8; }
