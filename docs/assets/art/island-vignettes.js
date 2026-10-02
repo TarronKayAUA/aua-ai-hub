@@ -1370,6 +1370,31 @@
     s += `<path class="isl-vcourse" d="${gc}" stroke-width=".7"/><path class="isl-vstone" d="${gq}" fill-opacity=".45"/>`;
     const dw = Y(0.05), dx = gx0 + (gx1 - gx0) * 0.55;
     s += `<path class="f-pulse isl-vwin" style="--i:2" d="M${F(dx - dw / 2)} ${F(gBase)}V${F(gBase - Y(0.1))}a${F(dw / 2)} ${F(dw / 2)} 0 0 1 ${F(dw)} 0V${F(gBase)}ZM${F(gx0 + Y(0.035))} ${F(gTop + Y(0.06))}h${F(Y(0.03))}v${F(Y(0.04))}h${F(-Y(0.03))}Z"/>`;
+    // The lookout's people (art-audit pass 4, 2026-10-01: the telescope stood ready and no one ever came). side():
+    // someone seen from the side, facing left (to the bay, the sunset, the eyepiece), feet at (x, fy), h tall, in
+    // literal colours the piece dims by version (isl-bfig, as the bell tower's reader); `lean` tips the body forward
+    // from the hips and `nod` tips the head back (radians); `hand` is the point the near hand goes to, bending the arm
+    // at an elbow that falls down and back (else the arm hangs). It returns the drawing, the eye, and the front edge of
+    // the head and chest for a rim of light. No faces in detail: the face is a disc of skin, the hair behind and above.
+    const side = (x, fy, h, { shirt, legs = '#2f3a4a', skin = '#6b4630', hair = '#1d1916', lean = 0, nod = 0, hand = null }) => {
+      const turn = (o, a, px, py) => [o[0] + (px * Math.cos(a) + py * Math.sin(a)) * h, o[1] + (py * Math.cos(a) - px * Math.sin(a)) * h];
+      const hip = [x, fy - h * 0.5], T = (px, py) => turn(hip, lean, px, py), nk = T(0.005, -0.335), Hd = (px, py) => turn(nk, lean - nod, px, py);
+      let o = `<path fill="${legs}" d="${polyD([[-0.065, 0], [-0.05, 0.24], [-0.045, 0.47], [0.035, 0.47], [0.05, 0.24], [0.075, 0]].map(([px, py]) => [x + px * h, hip[1] + py * h]))}"/>`;
+      o += `<path fill="#3a2e24" d="${polyD([[x + h * 0.04, fy - h * 0.03], [x + h * 0.04, fy], [x - h * 0.11, fy], [x - h * 0.1, fy - h * 0.025]])}"/>`;   // the shoe, its toe forward
+      o += `<path fill="${skin}" d="${polyD([T(-0.02, -0.3), T(-0.015, -0.36), T(0.025, -0.36), T(0.03, -0.3)])}"/>`;   // the neck
+      const chest = [T(-0.07, 0.02), T(-0.075, -0.12), T(-0.085, -0.24), T(-0.06, -0.31)];
+      o += `<path fill="${shirt}" d="${polyD([...chest, T(0, -0.335), T(0.06, -0.31), T(0.07, -0.2), T(0.065, -0.08), T(0.08, 0.02)])}"/>`;
+      const hc = Hd(-0.012, -0.075), fc = Hd(-0.03, -0.068);
+      o += `<circle fill="${hair}" cx="${F(hc[0])}" cy="${F(hc[1])}" r="${F(h * 0.072)}"/><circle fill="${skin}" cx="${F(fc[0])}" cy="${F(fc[1])}" r="${F(h * 0.052)}"/>`;
+      const sp = T(0, -0.285), ua = h * 0.17, fa = h * 0.16, want = hand || [sp[0] - h * 0.01, sp[1] + h * 0.31];
+      const dd = Math.min(Math.max(Math.hypot(want[0] - sp[0], want[1] - sp[1]), h * 0.05), (ua + fa) * 0.995), a0 = Math.atan2(want[1] - sp[1], want[0] - sp[0]);
+      const al = Math.acos(Math.min(1, Math.max(-1, (ua * ua + dd * dd - fa * fa) / (2 * ua * dd))));
+      const [ea, eb] = [a0 + al, a0 - al].map((a) => [sp[0] + ua * Math.cos(a), sp[1] + ua * Math.sin(a)]), el = ea[1] + ea[0] * 0.5 > eb[1] + eb[0] * 0.5 ? ea : eb;
+      const hn = [sp[0] + dd * Math.cos(a0), sp[1] + dd * Math.sin(a0)];
+      o += `<path fill="none" stroke="${shirt}" stroke-width="${F(h * 0.065)}" stroke-linecap="round" stroke-linejoin="round" d="${lineD([sp, el, hn])}"/><circle fill="${skin}" cx="${F(hn[0])}" cy="${F(hn[1])}" r="${F(h * 0.03)}"/>`;
+      const brow = [235, 205, 180, 155, 135].map((dg) => Hd(-0.012 + 0.072 * Math.cos(dg * Math.PI / 180), -0.075 + 0.072 * Math.sin(dg * Math.PI / 180)));
+      return { d: o, eye: Hd(-0.072, -0.087), rim: lineD(brow) + lineD(chest.slice().reverse()) };
+    };
     // 5. The telescope on its tripod, trained on the sky (a telescope aimed level at a low Moon reads
     //    as pointing at the harbour, so it looks up and to the left, toward the Moon's side of the sky).
     const moonAt = [v.x((SKY.d.moon[0] + SKY.n.moon[0]) / 2), v.y((SKY.d.moon[1] + SKY.n.moon[1]) / 2)];
@@ -1378,6 +1403,20 @@
     if (!(ang < -0.2 && ang > -2.9)) ang = -2.5;
     const ux = Math.cos(ang), uy = Math.sin(ang), nx = -uy, ny = ux;
     const fx = tx + ux * len * 0.62, fy = ty + uy * len * 0.62, bx2 = tx - ux * len * 0.38, by2 = ty - uy * len * 0.38;
+    // Someone at the eyepiece after dark (art-audit pass 4, 2026-10-01; by version: stargazers come out once it is
+    // dark, so at Dusk and Night only, and by Day and at Dawn the telescope stands alone). Drawn before the telescope,
+    // so the eyepiece crosses the face, and before the wall, which hides the legs as it hides the tripod's feet:
+    // leaning in, the head tipped back along the tube, the eye just past the eyepiece's end and the near hand up at
+    // its barrel. No taller than the guardhouse's door (the eyepiece is at the door's height, so the feet stand on a
+    // low step, behind the wall). The lantern's warm light catches the face and chest on its side (isl-mlit, lit with
+    // the lantern in the one pass), as it does the bell tower's reader.
+    {
+      const ew = Math.max(2, Y(0.02)), tip = [bx2 - ux * Y(0.03), by2 - uy * Y(0.03)];
+      const eye = [tip[0] - ux * (ew / 2 + 0.6), tip[1] - uy * (ew / 2 + 0.6)];
+      const gaze = { shirt: '#d6cfbf', legs: '#2f3a4a', skin: '#8d5a3b', lean: 0.22, nod: 0.85, hand: [bx2 - ux * Y(0.022) - nx * ew * 0.45, by2 - uy * Y(0.022) - ny * ew * 0.45] };
+      const k = side(0, 0, Y(0.12), gaze).eye, who = side(eye[0] - k[0], Math.min(footY, eye[1] - k[1]), Y(0.12), gaze);
+      s += `<g class="isl-lq" data-q="dn"><g class="isl-bfig">${who.d}</g><g class="isl-vlamps isl-vwin" style="--i:4"><g opacity=".6"><path class="isl-mlit" d="${who.rim}" stroke-width="${F(Math.max(0.7, Y(0.003)))}"/></g></g></g>`;
+    }
     s += `<path class="isl-vtripod" d="M${F(tx)} ${F(ty + Y(0.02))}L${F(tx - Y(0.12))} ${F(footY)}M${F(tx)} ${F(ty + Y(0.02))}L${F(tx + Y(0.11))} ${F(footY)}M${F(tx)} ${F(ty + Y(0.02))}L${F(tx + Y(0.015))} ${F(footY + 1)}M${F(tx - Y(0.06))} ${F(ty + Y(0.12))}L${F(tx + Y(0.06))} ${F(ty + Y(0.12))}" stroke-width="${F(Math.max(1.4, Y(0.008)))}"/>`;
     const q = (x, y, w) => [[x + nx * w, y + ny * w], [x - nx * w, y - ny * w]];
     const [a1, a2] = q(fx, fy, d0), [b1, b2] = q(bx2, by2, d1);
@@ -1398,8 +1437,33 @@
     // 6. The low wall along the lookout's edge, in front of the tripod's feet: coursed stone under a
     //    coping that catches the light, its foot following the crest.
     const wx0 = X(0.685), wx1 = X(0.905), wTop = Y(0.5);
+    const lx = wx0 + Y(0.02), ly = wTop;   // (the lantern's post, drawn in 7; here so the visitors below keep clear of it)
     const foot = crest.filter(([x]) => x > wx0 && x < wx1).map(([x, y]) => [x, y + Y(0.03)]);
     const wallPts = [[wx0, wTop], [wx1, wTop], [wx1, Y(0.585)], ...foot.reverse(), [wx0, Y(0.61)]];
+    // The lookout's visitors through the day (art-audit pass 4, 2026-10-01; by version: people walk early before the
+    // heat, look at the bay by day and gather at a lookout for the sunset; after dark only the stargazer above is
+    // there). At Dawn an early walker going up the footpath, seen from behind in mid-stride: the leading foot set
+    // down a stride further up the path, so higher, the trailing heel lifted to show its sole, the near arm swung
+    // forward (so shorter) and the other back. By Day one visitor leaning on the coping just left of the tripod's
+    // left leg, a hand braced on the stone, looking down at the bay. At Sunset two at the wall between the lantern and that
+    // leg, facing the setting Sun, the wall hiding them below the waist, their sunward edges rimmed by the low light
+    // (s-rim). Sized as the stargazer, the walker larger as nearer; all drawn before the wall.
+    {
+      const wx = X(0.671), wf = Y(0.81), wh = Y(0.15), ws = wh * 0.13, wt = wf - wh, whr = wh * 0.075;
+      let walk = `<path fill="#3b4049" d="${polyD([[wx - ws * 0.8, wt + wh * 0.5], [wx - ws * 0.62, wf - wh * 0.11], [wx - ws * 0.1, wf - wh * 0.11], [wx + ws * 0.05, wt + wh * 0.5]])}`
+        + `${polyD([[wx - ws * 0.02, wt + wh * 0.5], [wx + ws * 0.18, wf - wh * 0.025], [wx + ws * 0.78, wf - wh * 0.025], [wx + ws * 0.8, wt + wh * 0.5]])}"/>`;   // the legs
+      walk += `<path fill="#3a2e24" d="${rect(wx - ws * 0.66, wf - wh * 0.125, ws * 0.62, wh * 0.03)}${rect(wx + ws * 0.15, wf - wh * 0.04, ws * 0.66, wh * 0.03)}"/>`   // the shoes
+        + `<path fill="#cfc6b6" d="${rect(wx + ws * 0.18, wf - wh * 0.014, ws * 0.6, wh * 0.018)}"/>`;   // the lifted heel's sole
+      walk += `<path fill="#c97b63" d="M${F(wx - ws * 0.82)} ${F(wt + wh * 0.53)}L${F(wx - ws)} ${F(wt + wh * 0.22)}Q${F(wx - ws)} ${F(wt + wh * 0.16)} ${F(wx - ws * 0.6)} ${F(wt + wh * 0.15)}H${F(wx + ws * 0.6)}Q${F(wx + ws)} ${F(wt + wh * 0.16)} ${F(wx + ws)} ${F(wt + wh * 0.22)}L${F(wx + ws * 0.82)} ${F(wt + wh * 0.53)}Z`
+        + `${rect(wx - ws * 1.05, wt + wh * 0.2, ws * 0.24, wh * 0.21)}M${F(wx + ws * 0.8)} ${F(wt + wh * 0.19)}L${F(wx + ws * 1.04)} ${F(wt + wh * 0.2)}L${F(wx + ws * 1.3)} ${F(wt + wh * 0.47)}L${F(wx + ws * 1.08)} ${F(wt + wh * 0.49)}Z"/>`;   // the shirt and the swinging arms
+      walk += `<path fill="#5a3825" d="${rect(wx - ws * 1.02, wt + wh * 0.39, ws * 0.18, wh * 0.05)}${rect(wx + ws * 1.08, wt + wh * 0.46, ws * 0.2, wh * 0.06)}${rect(wx - whr * 0.45, wt + whr * 1.6, whr * 0.9, wh * 0.07)}"/>`   // hands, neck
+        + `<circle fill="#1d1916" cx="${F(wx)}" cy="${F(wt + whr)}" r="${F(whr)}"/>`;   // the head, from behind
+      const legX = (y) => tx - Y(0.12) * (y - ty - Y(0.02)) / (footY - ty - Y(0.02)), lg = legX(wTop);   // the tripod's left leg, where it crosses y
+      const byDay = side(lg - Y(0.04), footY, Y(0.12), { shirt: '#b8573f', skin: '#5a3825', lean: 0.26, nod: -0.3, hand: [lg - Y(0.04) - Y(0.036), wTop - Y(0.004)] });
+      const mid = (lx + lg) / 2, p1 = side(mid - Y(0.016), footY, Y(0.118), { shirt: '#e8e2d4', skin: '#c89b78', hair: '#3a2a20' }), p2 = side(mid + Y(0.016), footY, Y(0.11), { shirt: '#3d6466', skin: '#6b4630' });
+      s += `<g class="isl-bfig"><g class="isl-lq" data-q="a">${walk}</g><g class="isl-lq" data-q="y">${byDay.d}</g><g class="isl-lq" data-q="s">${p2.d}${p1.d}</g></g>`
+        + `<g class="isl-lq" data-q="s"><path class="s-rim" d="${p1.rim}${p2.rim}" stroke-width="${F(Math.max(0.7, Y(0.003)))}" stroke-opacity=".7"/></g>`;
+    }
     s += `<path d="${polyD(wallPts)}" fill="url(#islvfacade)"/><path class="isl-vpshade" d="${polyD(wallPts)}"/>`;
     s += `<path class="isl-vstone" d="M${F(wx0 - Y(0.008))} ${F(wTop + Y(0.018))}V${F(wTop)}H${F(wx1)}V${F(wTop + Y(0.018))}Z"/>`;
     let wj = `M${F(wx0)} ${F(wTop + Y(0.045))}H${F(wx1)}`;
@@ -1410,7 +1474,6 @@
     }
     s += `<path class="isl-vcourse" d="${wj}" stroke-width=".7"/>`;
     // 7. The lantern at the wall's end, over the path, in the page's hue: its pool, halo, and last.
-    const lx = wx0 + Y(0.02), ly = wTop;
     s += `<g class="isl-vwin isl-vlast" style="--i:4">${pool(lx + Y(0.02), Y(0.62), Y(0.2), Y(0.06), 0.7)}${halo(lx, ly - Y(0.1), Y(0.17), 'islvlamp')}`
       + `<path class="isl-vlamp isl-ltframe" d="M${F(lx - Y(0.014))} ${F(ly - Y(0.07))}V${F(ly - Y(0.13))}H${F(lx + Y(0.014))}V${F(ly - Y(0.07))}Z"/></g>`
       + panes(lx - Y(0.014), ly - Y(0.13), Y(0.028), Y(0.06));
