@@ -2183,7 +2183,12 @@
     const sx0 = X(0.86), sx1 = X(0.965);
     const rwin = [[sx0, along(bR, wT, sx0)], [sx1, along(bR, wT, sx1)], [sx1, along(bR, wB, sx1)], [sx0, along(bR, wB, sx0)]];
     let s = '<defs><linearGradient id="isllwallg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lwall0"/><stop offset="1" class="st-lwall1"/></linearGradient>'
-      + '<linearGradient id="isllshadeg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lglow0"/><stop offset="1" class="st-lglow1"/></linearGradient></defs>';
+      + '<linearGradient id="isllshadeg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lglow0"/><stop offset="1" class="st-lglow1"/></linearGradient>'
+      // (2026-10-01, art-audit pass 4) the blur that softens the furniture's shadows on the floor (its region
+      // the whole card, so it never cuts a thin shadow into a box), and the dimming of the hall's right side
+      // where no lamp reaches, from nothing at 0.55 of the width to the side wall's shade at the right edge
+      + `<filter id="isllsoft" filterUnits="userSpaceOnUse" x="0" y="0" width="${F(W)}" height="${F(H)}"><feGaussianBlur stdDeviation="${F(Math.max(0.6, Hs * 0.005))}"/></filter>`
+      + `<linearGradient id="isllfall" gradientUnits="userSpaceOnUse" x1="${F(X(0.55))}" y1="0" x2="${F(W)}" y2="0"><stop offset="0" class="st-lfall" stop-opacity="0"/><stop offset=".55" class="st-lfall" stop-opacity=".22"/><stop offset="1" class="st-lfall" stop-opacity=".4"/></linearGradient></defs>`;
     // 1. Outside, through the windows: palms and a two-storey block with a red roof behind the campus's
     //    trees, lights along the drive. The trees cover the sea build() lays below the horizon.
     const bx0 = wins[0] + ww * 0.1, bx1 = wins[0] + ww * 0.78, bTop = Ys(0.3), bBot = Ys(0.4);
@@ -2267,8 +2272,16 @@
     let sun = '';
     for (const x of wins) sun += quad(pt(x - m * 0.2, 0, 0.12), pt(x + ww - m * 0.2, 0, 0.12), pt(x + ww - m * 1.6, 0, 3.4), pt(x - m * 1.6, 0, 3.4));
     s += `<path class="isl-ydet isl-lsun" d="${sun}"/>`;
+    // (2026-10-01, art-audit pass 4) Every piece of furniture's shadow on the floor, so the tables, chairs,
+    // bookcase and carrels stand on the tiles instead of floating over them, in all five versions. They are
+    // collected as each piece is drawn and laid here, on the floor and over the Day sun (so its patches are
+    // cut where the far tables and chairs stand) but under all the furniture, in one softened group whose
+    // opacity is the version's (layout-art.css, isl-ldrop), so where two shadows meet they do not darken twice.
+    const dropAt = s.length, drop = [];
+    const floorQ = (lx0, lx1, za, zb) => drop.push(`<path d="${quad(pt(lx0, 0, za), pt(lx1, 0, za), pt(lx1, 0, zb), pt(lx0, 0, zb))}"/>`);
     // 3. The bookcase along the left-hand wall: five shelves of books in three colours.
     const cx = bL + m * 0.35, z0 = 0.3, z1 = 2.6, shelves = [0.1, 0.55, 1, 1.45, 1.9];
+    floorQ(cx, cx + 0.22 * m, z0, z1);   // (its shadow, a strip along its foot)
     s += `<path class="isl-lcase" d="${quad(pt(cx, 0, z0), pt(cx, 2.05, z0), pt(cx, 2.05, z1), pt(cx, 0, z1))}"/>`;
     const books = ['', '', ''];
     for (let i = 0; i < shelves.length - 1; i++) {
@@ -2304,6 +2317,7 @@
     };
     // A table: its top, its front edge, and its four legs (the far pair first, behind the near).
     const table = (lx0, lx1, za, zb) => {
+      floorQ(lx0 + 0.04 * m, lx1 - 0.04 * m, za + 0.04, zb - 0.02);   // (its shadow, under its top; 2026-10-01)
       const a = pt(lx0, 0.75, za), b = pt(lx1, 0.75, za), c = pt(lx1, 0.75, zb), d = pt(lx0, 0.75, zb);
       const c2 = pt(lx1, 0.7, zb), d2 = pt(lx0, 0.7, zb);
       let legs = '';
@@ -2314,6 +2328,9 @@
     // A shell chair, perforated, seen from the front or the back: its backrest, seat and legs.
     const chair = (lx, z) => {
       const k = sc(z), w = 0.22 * m * k, [cxp, top] = pt(lx, 0.9, z), [, seat] = pt(lx, 0.47, z), [, foot] = pt(lx, 0, z);
+      // (its shadow, an ellipse round its feet as deep as the seat; 2026-10-01)
+      const [, fa] = pt(lx, 0, z - 0.25), [, fb] = pt(lx, 0, z + 0.25);
+      drop.push(`<ellipse cx="${F(cxp)}" cy="${F((fa + fb) / 2)}" rx="${F(w * 1.05)}" ry="${F(Math.max(0.6, (fb - fa) / 2))}"/>`);
       let dots = '';
       for (let row = 0; row < 3; row++) for (let col = -2; col <= 2; col++) {
         const dx = cxp + col * w * 0.32, dy = top + (seat - top) * (0.22 + row * 0.22);
@@ -2324,9 +2341,11 @@
         + `M${F(cxp - w * 1.05)} ${F(seat)}h${F(w * 2.1)}v${F(Math.max(1, 0.04 * m * k))}h${F(-w * 2.1)}Z"/><path class="isl-lchairdot" d="${dots}"/>`;
     };
     // Things left on the tables (owner, 2026-09-29: "less sterile"): the hall in use by Day, a few early
-    // arrivals at Dawn, winding down at Sunset, back to the library's own stacks at Dusk, and empty at
-    // Night with its lamps still lit. Each item carries the versions it shows in (data-q: a Dawn, y Day,
-    // s Sunset, d Dusk; layout-art.css).
+    // arrivals at Dawn, winding down at Sunset, in use again at Dusk by a few students working under the lit
+    // lamps, and empty at Night with its lamps still lit. (Dusk had kept only the library's own stacks; since
+    // 2026-10-01, art-audit pass 4, it follows the owner's photograph of this hall at that hour, full under
+    // the green lamps: medical students study into the evening.) Each item carries the versions it shows in
+    // (data-q: a Dawn, y Day, s Sunset, d Dusk; layout-art.css).
     const Q = {};
     const put = (q, svg) => { Q[q] = (Q[q] || '') + svg; };
     const flush = () => { const o = Object.keys(Q).map((q) => `<g class="isl-lq" data-q="${q}">${Q[q]}</g>`).join(''); for (const q in Q) delete Q[q]; return o; };
@@ -2374,6 +2393,35 @@
       return `<path class="isl-lmug" d="M${F(mx - mw)} ${F(my)}V${F(mt)}H${F(mx + mw)}V${F(my)}Z"/><path class="isl-lmugh" d="M${F(mx + mw)} ${F(mt + (my - mt) * 0.25)}q${F(mw * 0.8)} ${F((my - mt) * 0.25)} 0 ${F((my - mt) * 0.5)}" stroke-width="${F(hw(z) * 1.2)}"/>`;
     };
     const note = (lx, z) => `<path class="isl-lpage" d="${quad(onT(lx, -0.11, 0.752, z - 0.1), onT(lx, 0.1, 0.752, z - 0.12), onT(lx, 0.13, 0.752, z + 0.1), onT(lx, -0.08, 0.752, z + 0.12))}"/>`;
+    // (2026-10-01, art-audit pass 4) The evening's things, from the owner's photograph of this hall at Dusk
+    // (references/aua-library-1-study-hall-dusk): a laptop's screen lit toward the viewer, its cool glow and
+    // the faint cool wash it lays on the cherry in front of it (isl-vlamps, so it is a light like the lamps');
+    // headphones set down on their ear cups; a charger's cable run from a laptop to the socket in the nearest
+    // lamp's base (the lamp, drawn after, covers its end); and a takeaway box.
+    const screenGlow = (lx, z) => {
+      const k = sc(z), [gx, gy] = onT(lx, 0, 0.865, z - 0.025), [wx, wy] = onT(lx, 0, 0.752, z + 0.17);
+      const [, w0] = onT(lx, 0, 0.752, z + 0.02), [, w1] = onT(lx, 0, 0.752, z + 0.32);
+      return `<g class="isl-vlamps">${halo(gx, gy, 0.4 * m * k, 'islvcool')}<ellipse cx="${F(wx)}" cy="${F(wy)}" rx="${F(0.34 * m * k)}" ry="${F((w1 - w0) / 2)}" fill="url(#islvcool)" opacity=".7"/></g>`;
+    };
+    const phones = (lx, z) => {
+      const k = sc(z), [hx, hy] = onT(lx, 0, 0.75, z), [, top] = onT(lx, 0, 0.92, z), sp = 0.075 * m * k, pr = 0.03 * m * k, ph = 0.06 * m * k;
+      return `<path class="isl-lphones" d="M${F(hx - sp)} ${F(hy - ph * 0.8)}C${F(hx - sp)} ${F(top)} ${F(hx + sp)} ${F(top)} ${F(hx + sp)} ${F(hy - ph * 0.8)}" stroke-width="${F(Math.max(0.8, 0.018 * m * k))}"/>`
+        + [-1, 1].map((sg) => `<ellipse class="isl-lbezel" cx="${F(hx + sg * sp)}" cy="${F(hy - ph / 2)}" rx="${F(pr)}" ry="${F(ph / 2)}"/>`).join('');
+    };
+    // (a clear water bottle, its blue label round the middle, as the photograph's are)
+    const water = (lx, z) => {
+      const [bx2, b0] = onT(lx, 0, 0.83, z), [, b1] = onT(lx, 0, 0.88, z), bw = 0.035 * m * sc(z);
+      return bottle(lx, z, 'isl-lclear') + `<path class="isl-lsign" d="${rect(bx2 - bw, b1, 2 * bw, b0 - b1)}"/>`;
+    };
+    const cord = (a, b, sag, z) => `<path class="isl-lcord" d="M${F(a[0])} ${F(a[1])}Q${F((a[0] + b[0]) / 2)} ${F(Math.max(a[1], b[1]) + sag)} ${F(b[0])} ${F(b[1])}" stroke-width="${F(Math.max(0.7, 0.01 * m * sc(z)))}"/>`;
+    // (the takeaway box as the photograph's: a clear tub, narrower at its foot, under a red lid; drawn as a
+    // plain white box it had read as a ream of paper)
+    const takeaway = (lx, z) => {
+      const body = quad(onT(lx, -0.08, 0.75, z + 0.065), onT(lx, 0.08, 0.75, z + 0.065), onT(lx, 0.095, 0.81, z + 0.075), onT(lx, -0.095, 0.81, z + 0.075));
+      const lid = quad(onT(lx, -0.1, 0.825, z - 0.08), onT(lx, 0.1, 0.825, z - 0.08), onT(lx, 0.1, 0.825, z + 0.08), onT(lx, -0.1, 0.825, z + 0.08));
+      const rim = quad(onT(lx, -0.1, 0.808, z + 0.08), onT(lx, 0.1, 0.808, z + 0.08), onT(lx, 0.1, 0.825, z + 0.08), onT(lx, -0.1, 0.825, z + 0.08));
+      return `<path class="isl-lbox" d="${body}"/><path class="isl-lbottle" d="${lid}${rim}"/><path class="isl-lredsh" d="${rim}"/>`;
+    };
     // a backpack hung on the back of a chair that faces away from the viewer: its two shoulder straps,
     // in its own color, hooked over the top of the chair's back (owner, 2026-09-29)
     const bag = (lx, z, cls) => {
@@ -2422,13 +2470,30 @@
     sign += quad(pt(lc + 0.08 * m, 1.24, 6.6), pt(lc + 0.36 * m, 1.24, 6.6), pt(lc + 0.36 * m, 1.36, 6.6), pt(lc + 0.08 * m, 1.36, 6.6));
     for (const x of [lc, lc1]) alu += quad(pt(x - 0.03 * m, 0, 6.6), pt(x - 0.03 * m, 1.47, 6.6), pt(x + 0.03 * m, 1.47, 6.6), pt(x + 0.03 * m, 0, 6.6));
     s += `<path class="isl-lred2" d="${grey}"/><path class="isl-lred" d="${red}"/><path class="isl-lredsh" d="${red}"/><path class="isl-lalu" d="${alu}"/><path class="isl-lsign" d="${sign}"/>`;
+    // (their shadow, the row's footprint a little wider, seen along its side and under the panels' foot)
+    floorQ(lc - 0.12 * m, lc1 + 0.04 * m, cz[0] - 0.04, 6.72);
+    // (2026-10-01, art-audit pass 4) At Dusk and Night the lamps light only the tables, which all stand left
+    // of the middle, so the hall falls into dimness away from them: a falloff over the right-hand floor,
+    // carrels, walls and ceiling, from nothing at 0.55 of the width to the side wall's shade at the right
+    // edge. The window openings are left out of it, since the view outside is not the room's light, except
+    // where the carrels stand in front of them (a mask: the card, less the openings, plus the carrels; cut
+    // out as plain holes, the openings had left a bright box on the row's end where it crosses the side
+    // window). By Day, Dawn and Sunset the daylight through the windows fills the room evenly, so it is not
+    // drawn there.
+    const fx = X(0.55), fwin = wins.filter((x) => x + ww > fx).map((x) => rect(x, wT, ww, wB - wT)).join('');
+    s += `<g class="isl-lq" data-q="dn"><defs><mask id="isllfallm" maskUnits="userSpaceOnUse" x="0" y="0" width="${F(W)}" height="${F(H)}">`
+      + `<path fill="#fff" d="${rect(fx, -2, W + 2 - fx, H + 4)}"/><path fill="#000" d="${fwin}${polyD(rwin)}"/>`
+      + [grey, red, alu, sign].map((d) => `<path fill="#fff" d="${d}"/>`).join('') + '</mask></defs>'
+      + `<path fill="url(#isllfall)" mask="url(#isllfallm)" d="${rect(fx, -2, W + 2 - fx, H + 4)}"/></g>`;
     // The middle row: a table with two lamps, chairs on its far side.
     const m0 = lxAt(X(0.03), 5.4), m1 = lxAt(X(0.56), 5.4);
     for (const q of [0.12, 0.42, 0.7, 0.93]) s += chair(m0 + (m1 - m0) * q, 4.2);
     s += table(m0, m1, 4.6, 5.4);
     const mid = (q) => m0 + (m1 - m0) * q;
     put('y', openBook(mid(0.12), 4.85, 'isl-lbk2') + openBook(mid(0.7), 4.85, 'isl-lbk1') + bottle(mid(0.76), 4.75, 'isl-lbottle2'));
-    put('ys', lapBack(mid(0.42), 4.8) + note(mid(0.46), 4.9));
+    // (d: in use at Dusk, as in the owner's photograph, with a clear water bottle beside the laptop; 2026-10-01)
+    put('ysd', lapBack(mid(0.42), 4.8) + note(mid(0.46), 4.9));
+    put('d', water(mid(0.35), 4.75));
     put('ysa', openBook(mid(0.93), 4.85, 'isl-lbk3'));
     put('yasd', stack(mid(0.56), 4.8, 2, 1));
     s += flush();
@@ -2442,23 +2507,44 @@
     // seats on the far side, their things near the far edge
     put('yas', openBook(near(0.06), 8.72, 'isl-lbk1') + note(near(0.11), 8.66) + bottle(near(0.02), 8.6, 'isl-lbottle'));
     put('y', lapBack(near(0.33), 8.62) + openBook(near(0.38), 8.72, 'isl-lbk3'));
-    put('ys', openBook(near(0.64), 8.72, 'isl-lbk2') + stack(near(0.7), 8.66, 2, 2));
+    // (d: this seat in use at Dusk, with a clear water bottle; 2026-10-01)
+    put('ysd', openBook(near(0.64), 8.72, 'isl-lbk2') + stack(near(0.7), 8.66, 2, 2));
+    put('d', water(near(0.565), 8.55));
     put('ys', lapBack(near(0.93), 8.62) + bottle(near(0.97), 8.7, 'isl-lbottle2'));
     // the library's own reference books, left stacked: the hall's baseline, gone only at Night
     put('yasd', stack(near(0.43), 8.62, 3, 0));
     // seats on the near side, their things near the near edge
     // clear of the first lamp's stand, which would otherwise stand in front of the screen (owner, 2026-09-29)
     put('ys', lapFront(near(0.34), 9.28) + mug(near(0.4), 9.3));
+    // (d: this seat in use at Dusk, its headphones set down beside it and its charger run to the second
+    // lamp's base, as in the owner's photograph; its laptop and mug follow the lamps, below; 2026-10-01)
+    put('d', phones(near(0.39), 8.95)
+      + cord(onT(near(0.34), 0.17, 0.752, 9.36), pt(near(0.5) - 0.06 * m, 0.75, 8.9), 0.05 * m * sc(9.2), 9.2));
     put('y', openBook(near(0.55), 9.34, 'isl-lbk1') + note(near(0.6), 9.3));
     put('ya', openBook(near(0.86), 9.34, 'isl-lbk2') + bottle(near(0.91), 9.3, 'isl-lbottle'));
+    // (d: a second student at Dusk, at the near seat on the right, its charger run to the third lamp's base;
+    // and someone's takeaway box left at the empty end of the table, clear of the seats' things, where among
+    // them it had read as more books; 2026-10-01)
+    put('d', cord(onT(near(0.9), -0.17, 0.752, 9.36), pt(near(0.8) + 0.06 * m, 0.75, 8.9), 0.05 * m * sc(9.2), 9.2)
+      + takeaway(near(0.1), 8.85));
     s += flush();
     for (const [q, i] of [[0.2, 6], [0.5, 7], [0.8, 8]]) s += lamp(n0 + (n1 - n0) * q, 8.9, i, i === 8);
-    for (const q of [0.22, 0.55, 0.86]) s += chair(near(q), 10);
-    put('ys', bag(near(0.22), 10, 'isl-lbag1'));
-    put('y', bag(near(0.55), 10, 'isl-lbag2'));
-    put('ya', bag(near(0.86), 10, 'isl-lbag3'));
+    // (d: Dusk's two laptops, lit, with the first seat's mug and the second's clear water bottle. They stand
+    // nearer than the lamps, so they are drawn after them: drawn before, the lamps' warm pools and spill had
+    // run across the lit screens; 2026-10-01)
+    put('d', lapFront(near(0.34), 9.28) + mug(near(0.4), 9.3) + screenGlow(near(0.34), 9.28)
+      + lapFront(near(0.9), 9.28) + screenGlow(near(0.9), 9.28) + water(near(0.96), 9.3));
     s += flush();
-    return `<g style="--isl-vstep:.32s">${s}</g>`;
+    for (const q of [0.22, 0.55, 0.86]) s += chair(near(q), 10);
+    // (each Dusk seat's bag shows with its things, so the reasons hold seat by seat; 2026-10-01)
+    put('ysd', bag(near(0.22), 10, 'isl-lbag1'));
+    put('y', bag(near(0.55), 10, 'isl-lbag2'));
+    put('yad', bag(near(0.86), 10, 'isl-lbag3'));
+    s += flush();
+    // (the furniture's shadows, laid on the floor where it was drawn, before the bookcase; see dropAt)
+    s = s.slice(0, dropAt) + `<g class="isl-ldrop" filter="url(#isllsoft)">${drop.join('')}</g>` + s.slice(dropAt);
+    // (isl-lhall carries the library's own Dusk values for the carrels and window frames, layout-art.css)
+    return `<g class="isl-lhall" style="--isl-vstep:.32s">${s}</g>`;
   }
 
   /* THE TOOL WALL (the Tool Directory's head; owner, 2026-09-29: art that ties to the page's title at a
