@@ -1488,7 +1488,8 @@
      source folder README lists them): a tapered tower of coursed stone with an arched door, a boxy
      wooden cap, four lattice sails and the long tail pole that turns the cap into the wind; its
      roofless twin beside it; the estate's stone house with lit windows; cane drying racks; the fields
-     and far hills. In the one pass the sails turn a quarter as the lights come on, then rest; the lamp
+     and far hills. By Day a guide at the tail pole's wheel and two visitors on the track, who walk back
+     down it at Sunset (art-audit pass 4, 2026-10-01). In the one pass the sails turn a quarter as the lights come on, then rest; the lamp
      by the mill door is last. Sized from the card's height: the head's text is short. */
   function bettysHope(W, H, v) {
     const y0 = v.y0, X = (f) => f * W, Y = (f) => f * H, r = rng(223);
@@ -1600,6 +1601,23 @@
       racks += `M${F(rx0)} ${F(ry)}h${F(Y(0.085))}M${F(rx0)} ${F(ry - Y(0.02))}h${F(Y(0.085))}M${F(rx0 + Y(0.01))} ${F(ry + Y(0.005))}v${F(-Y(0.03))}M${F(rx0 + Y(0.075))} ${F(ry + Y(0.005))}v${F(-Y(0.03))}`;
     }
     s += `<path class="isl-vwood" d="${racks}" stroke-width="1"/>`;
+    // People at the estate (art-audit pass 4, 2026-10-01: no one was there in any version). tall(): a standing
+    // adult's height where their feet are, the head just under the horizon, as for a viewer standing in the
+    // field; by the mill that is about seven tenths of its door (a door of about 2.4 m), and on the track,
+    // nearer us, more (about 15 px by the mill and 22 to 28 px on the track at 1920). Drawn with person() in
+    // literal colours the piece dims by version (isl-bfig), and with no draws, so nothing else moves.
+    const tall = (fy) => (fy - y0) * 0.88;
+    // The guide at the tail pole (by version: the heritage site is open by day, so the guide is there by Day
+    // only): beside the wheel by which the cap is turned, a hand on its rim, so the tool is seen being worked,
+    // and turned to the visitors on the track. On the wheel's far side from the pole, which crosses every
+    // place in front of the wheel at chest or head height (there it ran into the guide's shoulder), and in
+    // front of the first cane rack, whose rails show behind the legs. Mirrored, so the reaching hand is the
+    // one nearer the wheel.
+    {
+      const wx = mx + capW * 0.3 + Y(0.26), wy = mb - Y(0.03), wr = Y(0.028), gf = mb + Y(0.004), gx = wx + Y(0.048), a = -0.5;
+      s += `<g class="isl-lq" data-q="y"><g transform="translate(${F(gx)} ${F(gf)}) scale(-1 1)"><g class="isl-bfig">`
+        + `${person(0, 0, tall(gf), { shirt: '#e8e2d4', legs: '#3a3f4a', skin: '#5a3825', hair: '#121010', front: true, reach: [gx - wx - wr * Math.cos(a), wy + wr * Math.sin(a) - gf] })}</g></g></g>`;
+    }
     // the sails: four lattice sails on stocks, from the hub at the cap's front; they turn in the pass
     const hubX = mx - capW * 0.1, hubY = capY - capH * 0.5, sl = Y(0.3), sw2 = Y(0.055);
     let stocks = '', lattice = '';
@@ -1617,11 +1635,50 @@
     s += `<g class="isl-vsails" style="transform-origin:${F(hubX)}px ${F(hubY)}px">`
       + `<path class="isl-vlattice" d="${lattice}" stroke-width=".8"/><path class="isl-vwood" d="${stocks}" stroke-width="${F(Math.max(1.6, Y(0.014)))}"/>`
       + `<circle class="isl-vwood-f" cx="${F(hubX)}" cy="${F(hubY)}" r="${F(Y(0.018))}"/></g>`;
-    // the dirt track from the foreground to the mill's door, and grass tufts
-    s += `<path class="isl-vtrack" d="M${F(X(0.46))} ${F(H + 2)}C${F(X(0.55))} ${F(Y(0.9))} ${F(dcx - Y(0.3))} ${F(Y(0.8))} ${F(dcx - Y(0.03))} ${F(mb + 1)}L${F(dcx + Y(0.03))} ${F(mb + 1)}C${F(dcx - Y(0.2))} ${F(Y(0.82))} ${F(X(0.62))} ${F(Y(0.92))} ${F(X(0.56))} ${F(H + 2)}Z"/>`;
+    // the dirt track from the foreground to the mill's door, and grass tufts (its two edges named, as cubic
+    // curves, so the visitors below can stand on it at any card's shape; the path drawn is unchanged)
+    const trackL = [[X(0.46), H + 2], [X(0.55), Y(0.9)], [dcx - Y(0.3), Y(0.8)], [dcx - Y(0.03), mb + 1]];
+    const trackR = [[dcx + Y(0.03), mb + 1], [dcx - Y(0.2), Y(0.82)], [X(0.62), Y(0.92)], [X(0.56), H + 2]];
+    const tp = ([x, y]) => `${F(x)} ${F(y)}`;
+    s += `<path class="isl-vtrack" d="M${tp(trackL[0])}C${trackL.slice(1).map(tp).join(' ')}L${tp(trackR[0])}C${trackR.slice(1).map(tp).join(' ')}Z"/>`;
     let tufts = '';
     for (let i = 0; i < 60; i++) { const gx = X(r()), gy = Y(0.8 + r() * 0.2), gh = Y(0.02 + r() * 0.03); tufts += `M${F(gx)} ${F(gy)}l${F(-gh * 0.3)} ${F(-gh)}M${F(gx)} ${F(gy)}l${F(gh * 0.05)} ${F(-gh * 1.2)}M${F(gx)} ${F(gy)}l${F(gh * 0.35)} ${F(-gh * 0.9)}`; }
     s += `<path class="isl-vcane" d="${tufts}" stroke-width=".8"/>`;
+    // Visitors on the track (by version: the heritage site is open by day and its last visitors leave as the
+    // Sun sets, so no one is there at Dawn, Dusk or Night). By Day two walk up toward the mill, seen from behind,
+    // one a step ahead; at Sunset the same two come back down toward us, facing us with the low Sun behind them,
+    // its warm light on their sunward (left) edges (s-rim, outside the dimming). onTrack(fy, k): the point a share
+    // k across the track where it crosses fy (each edge runs one way in y, so halving its curve's t finds it).
+    // After the tufts, so they stand on the grass; sized by tall(), so about 20 px and more at 1920.
+    {
+      const onTrack = (fy, k) => {
+        const at = (E) => {
+          const c = (t, i) => { const u = 1 - t; return u * u * u * E[0][i] + 3 * u * u * t * E[1][i] + 3 * u * t * t * E[2][i] + t * t * t * E[3][i]; };
+          const rises = E[0][1] > E[3][1];
+          let lo = 0, hi = 1;
+          for (let n = 0; n < 40; n++) { const m = (lo + hi) / 2; if ((c(m, 1) > fy) === rises) lo = m; else hi = m; }
+          return c((lo + hi) / 2, 0);
+        };
+        const a = at(trackL), b = at(trackR);
+        return a + (b - a) * k;
+      };
+      const pair = [{ shirt: '#c96f4a', legs: '#3b4a5c', skin: '#c89b78', hair: '#4a3426' }, { shirt: '#9fbad0', legs: '#b9a882', skin: '#8d5a3b', hair: '#1d1916' }];
+      const fig = (fy, k, h, o, front) => { const x = onTrack(fy, k); return { x, fy, h, d: person(x, fy, h, { ...o, front }) }; };
+      const up = [fig(Y(0.812), 0.56, tall(Y(0.812)), pair[0], false), fig(Y(0.83), 0.36, tall(Y(0.83)) * 0.94, pair[1], false)];
+      const down = [fig(Y(0.852), 0.7, tall(Y(0.852)), pair[0], true), fig(Y(0.862), 0.38, tall(Y(0.862)) * 0.94, pair[1], true)];
+      // the low Sun's rim on each (person()'s own proportions): round the head's sunward side, over the
+      // shoulder and down the outer arm, set half its width inside the edge (centred on it, it stood off the
+      // head like a halo)
+      const rw = Math.max(0.7, Y(0.004));
+      let rim = '';
+      for (const { x, fy, h } of down) {
+        const sw = h * 0.13, hr = h * 0.075, ft = fy - h, hy = ft + hr, ri = hr - rw / 2, ax = x - sw * 1.05 + rw / 2;
+        rim += lineD([-100, -125, -150, -175, 160].map((dg) => [x + ri * Math.cos(dg * Math.PI / 180), hy + ri * Math.sin(dg * Math.PI / 180)]))
+          + lineD([[x - sw * 0.55, ft + h * 0.15 + rw / 2], [x - sw * 0.9, ft + h * 0.165 + rw / 2], [ax, ft + h * 0.21], [ax, ft + h * 0.46]]);
+      }
+      s += `<g class="isl-bfig"><g class="isl-lq" data-q="y">${up[0].d}${up[1].d}</g><g class="isl-lq" data-q="s">${down[0].d}${down[1].d}</g></g>`
+        + `<g class="isl-lq" data-q="s"><path class="s-rim" d="${rim}" stroke-width="${F(rw)}" stroke-opacity=".7"/></g>`;
+    }
     // a few trees at the field's edge
     s += palmsD([[X(0.04), Y(0.76), Y(0.3), -0.06, 71], [X(0.95), Y(0.73), Y(0.26), 0.07, 73]], 'f-near');
     s += `<path class="s-vlight isl-vwin" style="--i:0" d="${lightsD(lights[0])}" stroke-width="1.3"/>`;
