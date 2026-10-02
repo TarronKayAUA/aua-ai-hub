@@ -4239,22 +4239,42 @@
     const lx0 = X(0.56), lx1 = Math.min(X(0.76), lx0 + Y(0.78)), dx = (lx0 + lx1) / 2, dw = Y(0.22), dT = land - Y(0.25);
     const pitch = Y(0.3), ww = Y(0.14), bays = [];
     for (let k = -9; k <= 9; k++) { const x = dx + k * pitch - ww / 2; if (x > b0 + Y(0.1) && x + ww < W - Y(0.02)) bays.push([k, x]); }
-    let lit = '', dark = '', bars = '', heads = '', sills = '';
+    // The offices by the hour (art-audit pass 4, 2026-10-01, by version; the owner, 2026-10-01: what is drawn may
+    // change between versions with a reason). The same rooms had been lit at Dawn, at Sunset, at Dusk and at ten
+    // at night, so the front never told the hour; now lights go on as people arrive and off as they go home.
+    // Every opening is glass first (isl-vdark), so a room left dark in a version still shows its window, and by
+    // Day every opening is one daylight glass, as the door is. Then each room is lit in the versions someone is
+    // in it, counted from the door (k), so at a narrower card, with fewer bays, the end rooms keep their parts:
+    // '*' the hall over the door and the ground-floor office at the right-hand end (the security office), which
+    // stay lit all night, so they are the Night set, drawn in every version and keeping Night dark; 'as' the top
+    // floor's right-hand end room, the first the cleaner opens at Dawn, still lit at Sunset; 'sd' the room left
+    // of the hall and the one beyond the empty room right of it, people working late; 's' the rooms further left
+    // upstairs and every ground-floor room left of the door, lit only at Sunset, the end of the working day; ''
+    // the room right of the hall and the other ground-floor rooms right of the door, empty, dark in every
+    // version. At 1920 Dawn has three lit, Sunset seven of nine, Dusk four, Night two.
+    const gnd = (x) => x + ww < dx - dw / 2 - Y(0.12) || x > dx + dw / 2 + Y(0.12);
+    const kTop = bays[bays.length - 1][0], kGnd = Math.max(...bays.filter(([, x]) => gnd(x)).map(([k]) => k));
+    const upQ = (k) => (k === 0 ? '*' : k === kTop ? 'as' : k === 1 ? '' : k < -1 ? 's' : 'sd');
+    const gQ = (k) => (k === kGnd ? '*' : k < 0 ? 's' : '');
+    const Q = {};
+    let lit = '', glass = '', bars = '', heads = '', sills = '';
+    const put = (q, d) => { glass += d; if (q === '*') lit += d; else if (q) Q[q] = (Q[q] || '') + d; };
     for (const [k, x] of bays) {
-      const d = rect(x, bTop + Y(0.05), ww, Y(0.16));
-      if ((k + 9) % 3 === 1) dark += d; else lit += d;
+      put(upQ(k), rect(x, bTop + Y(0.05), ww, Y(0.16)));
       bars += `M${F(x + ww / 2)} ${F(bTop + Y(0.05))}v${F(Y(0.16))}`;
       heads += rect(x, bTop + Y(0.05), ww, Y(0.014));
       sills += rect(x - Y(0.012), bTop + Y(0.21), ww + Y(0.024), Y(0.014));
-      if (x + ww < dx - dw / 2 - Y(0.12) || x > dx + dw / 2 + Y(0.12)) {
-        const g = rect(x, dT, ww, land - Y(0.03) - dT);
-        if ((k + 9) % 4 === 3) dark += g; else lit += g;
+      if (gnd(x)) {
+        put(gQ(k), rect(x, dT, ww, land - Y(0.03) - dT));
         bars += `M${F(x + ww / 2)} ${F(dT)}V${F(land - Y(0.03))}M${F(x)} ${F(dT + Y(0.06))}h${F(ww)}`;
         heads += rect(x, dT, ww, Y(0.016));
         sills += rect(x - Y(0.012), land - Y(0.03), ww + Y(0.024), Y(0.014));
       }
     }
-    s += `<path class="isl-vdark" d="${dark}"/><path class="f-pulse isl-vwin" style="--i:5" d="${lit}"/><path class="isl-vmul" d="${bars}" stroke-width=".9"/>`
+    s += `<path class="isl-vdark" d="${glass}"/><g class="isl-lq" data-q="y"><path class="f-pulse" d="${glass}"/></g>`
+      + `<path class="f-pulse isl-vwin" style="--i:5" d="${lit}"/>`
+      + Object.entries(Q).map(([q, d]) => `<g class="isl-lq" data-q="${q}"><path class="f-pulse isl-vwin" style="--i:5" d="${d}"/></g>`).join('')
+      + `<path class="isl-vmul" d="${bars}" stroke-width=".9"/>`
       + `<path class="isl-vpshade" d="${heads}"/><path class="isl-vstone" d="${sills}"/>`;
     // 4. The entrance: a canopy on two tie rods over a wide glazed double door; the door lit within, its
     //    darker frame, the meeting stiles and a pull handle on each leaf; a lantern either side under the
@@ -4339,8 +4359,85 @@
       + `<path class="isl-vstep-edge" d="M${F(pl0)} ${F(street - Y(0.06))}H${F(W + 2)}" stroke-width="${F(Math.max(1.6, Y(0.01)))}"/><path class="isl-vpshade" d="${rect(pl0, street - Y(0.008), W, Y(0.01))}"/>`
       + shrubs([[pl0 + Y(0.08), street - Y(0.06), Y(0.07)], [pl0 + Y(0.24), street - Y(0.06), Y(0.08)], [pl0 + Y(0.4), street - Y(0.06), Y(0.07)]].filter(([x2]) => x2 < W + Y(0.05)), r);
     s += `<g class="isl-vwin" style="--i:0">${pool(px, street + Y(0.05), Y(0.3), Y(0.06), 0.8)}${halo(px, street - ph - Y(0.03), Y(0.2))}`
-      + `<path class="f-pulse isl-ltframe" d="${rect(px - Y(0.02), street - ph - Y(0.06), Y(0.04), Y(0.055))}"/></g>`
-      + panes(px - Y(0.02), street - ph - Y(0.06), Y(0.04), Y(0.055))
+      + `<path class="f-pulse isl-ltframe" d="${rect(px - Y(0.02), street - ph - Y(0.06), Y(0.04), Y(0.055))}"/></g>`;
+    // The bench by the sea wall, and who is there by the hour (art-audit pass 4, 2026-10-01; the owner, 2026-10-01:
+    // what is drawn may change between versions with a reason). The square by the sea had been empty at every hour.
+    // A slatted bench on two iron ends stands on the paving at the wall's foot, in the street lamp's pool between
+    // the left palm and the lamp, its back to the viewer, so whoever sits on it faces the sea; it is there in all
+    // five, left out only where a narrow card puts the lamp near its edge and leaves no room for the bench whole
+    // (in a window 1280 or 1120 px wide, for example). Who is there answers the hour (by version): at Sunset two people sit on it
+    // watching the Sun go down, one leaning toward the other, and they stay on under the lamp at Dusk; at Dawn a
+    // walker passes before the heat; by Day nobody sits in the full sun, and at Night the waterfront is empty.
+    // Drawn after the lamp's pool, so it stands in it, and before the post. The people are at the scale of the
+    // person at the door (a standing adult Y(0.21), person()'s proportions), a sitter's crown at the wheelchair
+    // user's height (chairUser's u, Y(0.16)); person() has no seated or side-on pose, so they are drawn here, in
+    // literal colours dimmed by version (isl-bfig). The lamp's warm light (isl-mlit) falls on the bench's top
+    // edges and on each person's side toward it from Dawn to Night, not by Day, when the lamp is out. No random
+    // draws, so nothing else moves.
+    {
+      const gy = street + Y(0.02), b0 = px - Y(0.3), b1 = px - Y(0.08), h = Y(0.21), hr = h * 0.075, sw = h * 0.13;
+      const seat = gy - Y(0.055), sT = gy - Y(0.106), sl = Y(0.009), sg = Y(0.0055), ir = Math.max(1, Y(0.008));
+      const lw = F(Math.max(0.8, Y(0.005))), lamp = (d) => `<g class="isl-vlamps isl-vwin" style="--i:0"><path class="isl-mlit" d="${d}" stroke-width="${lw}"/></g>`;
+      // A sitter seen from behind (x the middle, the lamp to the right): the lower legs under the seat, then the
+      // body sitting on it (the shirt to the seat, the upper arms hanging to the elbows, the neck, the head), then
+      // the seat slat across the body's foot, so it sits on the seat and a leaning body is cut cleanly there, then
+      // the bench's back across it, so the head and shoulders show above the top slat against the sea and the shirt
+      // between the slats. `lean` turns the body about the seat, the lamp's light on it turned with it.
+      const sitter = (x, { shirt, legs, skin, hair, lean = 0 }) => {
+        const ct = seat - h * 0.52, hy = ct + hr, rot = (o) => (lean ? `<g transform="rotate(${lean} ${F(x)} ${F(seat)})">${o}</g>` : o);
+        return {
+          legs: `<path fill="${legs}" d="${rect(x - sw * 0.62, seat, sw * 0.5, gy - seat - h * 0.02)}${rect(x + sw * 0.12, seat, sw * 0.5, gy - seat - h * 0.02)}"/>`
+            + `<path fill="#3a2e24" d="${rect(x - sw * 0.68, gy - h * 0.03, sw * 0.62, h * 0.03)}${rect(x + sw * 0.06, gy - h * 0.03, sw * 0.62, h * 0.03)}"/>`,
+          body: rot(`<path fill="${shirt}" d="M${F(x - sw * 0.88)} ${F(seat + h * 0.015)}L${F(x - sw)} ${F(ct + h * 0.22)}Q${F(x - sw)} ${F(ct + h * 0.16)} ${F(x - sw * 0.6)} ${F(ct + h * 0.15)}H${F(x + sw * 0.6)}Q${F(x + sw)} ${F(ct + h * 0.16)} ${F(x + sw)} ${F(ct + h * 0.22)}L${F(x + sw * 0.88)} ${F(seat + h * 0.015)}Z`
+            + `${rect(x - sw * 1.05, ct + h * 0.2, sw * 0.24, h * 0.2)}${rect(x + sw * 0.81, ct + h * 0.2, sw * 0.24, h * 0.2)}"/>`
+            + `<path fill="${skin}" d="${rect(x - hr * 0.45, hy + hr * 0.6, hr * 0.9, h * 0.07)}"/><circle fill="${hair}" cx="${F(x)}" cy="${F(hy)}" r="${F(hr)}"/>`),
+          rim: rot(lamp(`M${F(x + hr * 0.15)} ${F(hy - hr * 0.99)}A${F(hr)} ${F(hr)} 0 0 1 ${F(x + hr * 0.97)} ${F(hy + hr * 0.25)}`
+            + `M${F(x + sw * 0.6)} ${F(ct + h * 0.15)}Q${F(x + sw * 1.05)} ${F(ct + h * 0.16)} ${F(x + sw * 1.05)} ${F(ct + h * 0.22)}V${F(sT - Y(0.004))}`)),
+        };
+      };
+      if (b0 >= Y(0.02)) {
+        // the two at Sunset and Dusk, a little apart on the bench, the one nearer the lamp leaning toward the other
+        const pr = [sitter(b0 + (b1 - b0) * 0.33, { shirt: '#d8cdb6', legs: '#3a3f4a', skin: '#6b4630', hair: '#1d1916' }),
+          sitter(b0 + (b1 - b0) * 0.65, { shirt: '#7d9bb8', legs: '#4a3f3a', skin: '#a06a48', hair: '#3b2a20', lean: -10 })];
+        let back = '';
+        for (let i = 0; i < 3; i++) back += rect(b0, sT + i * (sl + sg), b1 - b0, sl);   // the back's three slats
+        let ends = '';
+        for (const xe of [b0 + Y(0.014), b1 - Y(0.014)]) ends += rect(xe - ir / 2, sT - Y(0.004), ir, gy - sT + Y(0.004)) + rect(xe - ir * 1.4, gy - Y(0.005), ir * 2.8, Y(0.005));   // an iron end and its foot
+        s += `<ellipse class="isl-vpshade" cx="${F((b0 + b1) / 2)}" cy="${F(gy)}" rx="${F((b1 - b0) / 2 + Y(0.012))}" ry="${F(Y(0.007))}"/>`   // its shadow on the paving
+          + `<g class="isl-bfig"><g class="isl-lq" data-q="sd">${pr[0].legs}${pr[1].legs}${pr[0].body}${pr[1].body}</g><path class="isl-bbench" d="${rect(b0 + Y(0.004), seat, b1 - b0 - Y(0.008), Y(0.008))}"/></g>`
+          + lamp(`M${F(b0 + Y(0.004))} ${F(seat)}H${F(b1 - Y(0.004))}`)   // (the seat's lit edge)
+          + `<g class="isl-bfig"><path class="isl-bbench" d="${back}"/><path class="isl-vpost" d="${ends}"/></g>`
+          + lamp(`M${F(b0)} ${F(sT)}H${F(b1)}`)
+          + `<g class="isl-lq" data-q="sd">${pr[0].rim}${pr[1].rim}</g>`;
+      }
+      // The walker at Dawn, side on, in mid-stride toward the right, in the middle of the paving between the lamp
+      // and the rail's level end (where the narrowest card leaves no room there, on the lamp's other side): the far
+      // arm and leg first, a shade darker, then the shirt, the shorts, the near leg forward and the near arm back,
+      // the head, the trainers; a contact shadow under the feet.
+      const re = rx0 - ext, wx = re - px >= Y(0.14) ? (px + re) / 2 : px - Y(0.09), wy = street + Y(0.025);
+      const cx = wx + h * 0.012, cy = wy - h + hr, sd = wx > px ? -1 : 1, hip = [wx, wy - h * 0.47], sh = [wx + h * 0.005, wy - h * 0.8];
+      const limb = (pts, col, wd) => `<path fill="none" stroke="${col}" stroke-width="${F(wd)}" stroke-linecap="round" stroke-linejoin="round" d="M${pts.map(([a, b]) => `${F(a)} ${F(b)}`).join('L')}"/>`;
+      const fLeg = [hip, [wx - h * 0.06, wy - h * 0.25], [wx - h * 0.14, wy - h * 0.065]], nLeg = [hip, [wx + h * 0.075, wy - h * 0.25], [wx + h * 0.15, wy - h * 0.04]];
+      const fArm = [sh, [wx + h * 0.063, wy - h * 0.64], [wx + h * 0.155, wy - h * 0.53]], nArm = [sh, [wx - h * 0.067, wy - h * 0.646], [wx - h * 0.105, wy - h * 0.5]];
+      const along = (p, q, t) => [p[0] + (q[0] - p[0]) * t, p[1] + (q[1] - p[1]) * t];
+      let wk = `<ellipse class="isl-vpshade" cx="${F(wx)}" cy="${F(wy)}" rx="${F(h * 0.2)}" ry="${F(Y(0.006))}"/><g class="isl-bfig">`;
+      wk += limb(fArm, '#6e4430', h * 0.042) + limb([sh, along(sh, fArm[1], 0.55)], '#2b6b66', h * 0.06)   // the far arm, forward, its sleeve
+        + limb(fLeg, '#6e4430', h * 0.05) + limb([hip, along(hip, fLeg[1], 0.7)], '#232c39', h * 0.075)   // the far leg, back, its shorts
+        + limb([[wx - h * 0.165, wy - h * 0.06], [wx - h * 0.1, wy - h * 0.008]], '#b9bec4', h * 0.035);   // its trainer, toe down
+      wk += `<path fill="#3a8c86" d="M${F(wx - h * 0.06)} ${F(wy - h * 0.46)}L${F(wx - h * 0.055)} ${F(wy - h * 0.8)}Q${F(wx)} ${F(wy - h * 0.87)} ${F(wx + h * 0.065)} ${F(wy - h * 0.8)}L${F(wx + h * 0.05)} ${F(wy - h * 0.46)}Z"/>`;   // the shirt
+      wk += limb(nLeg, '#8d5a3b', h * 0.052) + limb([[wx - h * 0.02, wy - h * 0.48], hip, along(hip, nLeg[1], 0.7)], '#2f3a4a', h * 0.08)   // the near leg, forward, the shorts
+        + limb([[wx + h * 0.135, wy - h * 0.01], [wx + h * 0.215, wy - h * 0.03]], '#dfe3e8', h * 0.035)   // its trainer, heel down
+        + limb(nArm, '#8d5a3b', h * 0.045) + limb([sh, along(sh, nArm[1], 0.55)], '#3a8c86', h * 0.065);   // the near arm, back, its sleeve
+      wk += `<path fill="#8d5a3b" d="${rect(wx - h * 0.018, wy - h * 0.88, h * 0.04, h * 0.05)}"/><circle fill="#8d5a3b" cx="${F(cx)}" cy="${F(cy)}" r="${F(hr)}"/>`
+        + `<path fill="#1d1916" d="M${F(cx + hr * 0.64)} ${F(cy - hr * 0.77)}A${F(hr)} ${F(hr)} 0 0 0 ${F(cx - hr * 0.64)} ${F(cy + hr * 0.77)}L${F(cx - hr * 0.22)} ${F(cy + hr * 0.42)}Q${F(cx + hr * 0.05)} ${F(cy - hr * 0.42)} ${F(cx + hr * 0.64)} ${F(cy - hr * 0.77)}Z"/></g>`;   // the hair over the crown and the back of the head, the face's side left bare
+      // (the lamp's light on the side turned to it: the back of the head and the shirt's back, broken where the
+      // near arm swings across it, or the head's and the shirt's front)
+      wk += lamp(`M${F(cx + sd * hr * 0.3)} ${F(cy - hr * 0.95)}A${F(hr)} ${F(hr)} 0 0 ${sd > 0 ? 1 : 0} ${F(cx + sd * hr * 0.97)} ${F(cy + hr * 0.2)}`
+        + (sd < 0 ? `M${F(wx - h * 0.052)} ${F(wy - h * 0.79)}L${F(wx - h * 0.055)} ${F(wy - h * 0.72)}M${F(wx - h * 0.057)} ${F(wy - h * 0.62)}L${F(wx - h * 0.06)} ${F(wy - h * 0.49)}`
+          : `M${F(wx + h * 0.065)} ${F(wy - h * 0.8)}L${F(wx + h * 0.05)} ${F(wy - h * 0.5)}`));
+      s += `<g class="isl-lq" data-q="a">${wk}</g>`;
+    }
+    s += panes(px - Y(0.02), street - ph - Y(0.06), Y(0.04), Y(0.055))
       + `<path class="isl-vpost" d="M${F(px - 1.3)} ${F(street + Y(0.02))}V${F(street - ph)}H${F(px + 1.3)}V${F(street + Y(0.02))}Z`
       + `M${F(px - Y(0.026))} ${F(street - ph + 1)}h${F(Y(0.052))}v${F(Y(0.012))}h${F(-Y(0.052))}Z"/>`
       + `<path class="isl-vpost isl-lcap" d="M${F(px - Y(0.03))} ${F(street - ph - Y(0.06))}L${F(px)} ${F(street - ph - Y(0.095))}L${F(px + Y(0.03))} ${F(street - ph - Y(0.06))}Z"/>`;
