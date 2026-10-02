@@ -2203,11 +2203,12 @@
 
   /* THE TOOL WALL (the Tool Directory's head; owner, 2026-09-29: art that ties to the page's title at a
      glance): a workshop's shadow board, every tool hanging in its own painted outline, which is what a
-     directory of tools looks like on a wall. By day the hammer is out on the bench and its outline is
-     empty; at Night it is back in place and the board is complete. A workbench below with a vise, a
-     block plane and its shavings; a lamp hanging between the board and the window, lit in the page's
-     hue; the window onto a harbour, boats at anchor, facing the Sun's setting bearing so the Sun sets in
-     it at Sunset. Drawn face on, the tools sized from the board so they keep their shapes as the head's
+     directory of tools looks like on a wall. By Day and at Sunset the hammer is out on the bench and its
+     outline is empty; at Dawn, before work starts, and from Dusk, once the bench is tidied, it is back in
+     place and the board is complete (art-audit pass 4, 2026-10-01). A workbench below with a vise, a
+     block plane on a plank and its shavings; a lamp hanging between the board and the window, lit in
+     the page's hue; the window onto a harbour, boats at anchor, facing the Sun's setting bearing so the
+     Sun sets in it at Sunset. Drawn face on, the tools sized from the board so they keep their shapes as the head's
      text changes the card's height. The harbour's lights come on, then the lamp, last. */
   function toolFrame(W, H) {
     const ww = clamp(H * 1.1, W * 0.2, W * 0.3), wx1 = W * 0.955, wx0 = wx1 - ww;
@@ -2328,6 +2329,8 @@
     //    outline on a hook.
     const lampGap = clamp(H * 0.42, W * 0.08, W * 0.14);
     const bx0 = X(0.035), bx1 = wx0 - lampGap, bT = Y(0.07), bB = Y(0.66), bw = bx1 - bx0, bh = bB - bT;
+    // (the lamp's place, drawn in section 5, set here since its light falls on the board: art-audit pass 4)
+    const lx = (bx1 + wx0) / 2, lT = Y(0.08), lB = Y(0.19), rt = Y(0.022), rb = Y(0.1);
     s += `<path class="isl-tdrop" d="${rect(bx0 + Y(0.01), bT + Y(0.02), bw + Y(0.012), bh + Y(0.01))}"/>`;
     s += `<path class="isl-tboard" d="${rect(bx0, bT, bw, bh)}"/>`;
     let holes = '';
@@ -2337,7 +2340,7 @@
     s += `<path class="isl-lwood2" fill-rule="evenodd" d="${rect(bx0 - Y(0.018), bT - Y(0.018), bw + Y(0.036), bh + Y(0.036))}${rect(bx0, bT, bw, bh)}"/>`;
     const order = [['saw', 0.22], ['hammer', 0.25], ['wrench', 0.15], ['drivers', 0.26], ['pliers', 0.15], ['chiseltape', 0.24], ['square', 0.3]];
     const tw = order.reduce((a, [, w]) => a + w, 0), ts = Math.min(bh * 0.95, bw / (tw + 0.5)), gap = (bw - tw * ts) / (order.length + 1);
-    let x = bx0 + gap, sil = '', hooks = '', board = '', hammerX = 0;
+    let x = bx0 + gap, sil = '', cast = '', hooks = '', board = '', hammerX = 0;
     for (const [k, w] of order) {
       const cx = k === 'square' ? x + 0.02 * ts : x + (w * ts) / 2, top = bT + bh * 0.1;
       const t = TOOLS[k](ts);
@@ -2348,19 +2351,46 @@
       const rack = { drivers: [0.225, 0.14], chiseltape: [0.168, 0.125] }[k];
       if (!rack) hooks += `M${F(cx + (k === 'square' ? 0.02 * ts : 0))} ${F(top - bh * 0.035)}v${F(bh * 0.05)}`;
       if (k === 'chiseltape') hooks += `M${F(cx)} ${F(top + 0.39 * ts)}v${F(0.05 * ts)}`;
+      // (each tool's shadow on the board, its own shape again with its rack's, drawn below; the hammer's only
+      // while it hangs, in its group's versions: art-audit pass 4, 2026-10-01)
+      const shape = `<path transform="${at}" d="${t.sil}${rack ? rect(-rack[1] * ts, rack[0] * ts, 2 * rack[1] * ts, 0.03 * ts) : ''}"/>`;
+      cast += k === 'hammer' ? `<g class="isl-lq" data-q="adn">${shape}</g>` : shape;
       const drawn = t.parts.map(([cls, d, sw, rule]) => sw
         ? `<path class="${cls}" d="${d}" stroke-width="${F(Math.max(0.5, sw))}"/>`
-        : `<path class="${cls}" d="${d}"${rule ? ` fill-rule="${rule}"` : ''}/>`).join('');
-      if (k === 'hammer') { hammerX = cx; board += `<g class="isl-tqn" transform="${at}">${drawn}</g>`; }
-      else board += `<g transform="${at}">${drawn}</g>`;
+        : `<path class="${cls}" d="${d}"${rule ? ` fill-rule="${rule}"` : ''}/>`);
+      // (the bare steel's edges on the lamp's side, which is also the window's, catch the light: the saw's
+      // toothed edge, the wrench's bar, the square's inner edges and its stock's end; laid over the metal,
+      // under the teeth and the ticks; art-audit pass 4, 2026-10-01)
+      const hi = {
+        saw: `M${F(0.087 * ts)} ${F(0.19 * ts)}L${F(0.035 * ts)} ${F(0.82 * ts)}`,
+        wrench: `M${F(0.024 * ts)} ${F(0.18 * ts)}L${F(0.021 * ts)} ${F(0.65 * ts)}`,
+        square: `M${F(0.039 * ts)} ${F(0.012 * ts)}V${F(0.506 * ts)}H${F(0.294 * ts)}V${F(0.539 * ts)}`,
+      }[k];
+      if (hi) drawn.splice(1, 0, `<path class="isl-lshadehi" d="${hi}" stroke-width="${F(Math.max(0.7, ts * 0.01))}" stroke-linejoin="round"/>`);
+      // (the hammer hangs in its outline at Dawn, before work starts, and at Dusk and Night, once the bench is
+      // tidied; by Day and at Sunset it is out on the bench, section 4: art-audit pass 4, 2026-10-01)
+      if (k === 'hammer') { hammerX = cx; board += `<g class="isl-lq" data-q="adn" transform="${at}">${drawn.join('')}</g>`; }
+      else board += `<g transform="${at}">${drawn.join('')}</g>`;
       if (rack) board += `<path class="isl-lwood" transform="${at}" d="${rect(-rack[1] * ts, rack[0] * ts, 2 * rack[1] * ts, 0.03 * ts)}"/>`;
       x += w * ts + gap;
     }
     s += `<g class="isl-tsil" stroke-width="${F(Math.max(1.2, ts * 0.03))}" stroke-linejoin="round">${sil}</g>`;
+    // The lamp's light on the board (art-audit pass 4, 2026-10-01: the board beside the lamp had taken none of
+    // it): warm, strongest at the board's lamp end and falling off across it, centred below the bulb since the
+    // shade keeps it off the wall above; with the lamp (Dawn to Night, not by Day), over the board and its
+    // painted outlines and under the tools' shadows, which it does not reach. Then the shadows: soft, cast
+    // down and to the left, away from the lamp and the window.
+    const fcy = (lB + bB) / 2;
+    s += `<defs><radialGradient id="isltfall" gradientUnits="userSpaceOnUse" cx="${F(lx)}" cy="${F(fcy)}" r="${F(Math.hypot(lx - bx0, bB - fcy))}">`
+      + '<stop offset="0" class="st-g1" stop-opacity=".22"/><stop offset=".12" class="st-g1" stop-opacity=".15"/><stop offset=".35" class="st-g1" stop-opacity=".055"/>'
+      + '<stop offset=".7" class="st-g1" stop-opacity=".015"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
+      + `<filter id="isltsoft" filterUnits="userSpaceOnUse" x="0" y="0" width="${F(W)}" height="${F(H)}"><feGaussianBlur stdDeviation="${F(Y(0.005))}"/></filter></defs>`;
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1"><path d="${rect(bx0, bT, bw, bh)}" fill="url(#isltfall)"/></g>`;
+    s += `<g class="isl-tdrop" filter="url(#isltsoft)" transform="translate(${F(-Y(0.014))} ${F(Y(0.022))})">${cast}</g>`;
     s += `<path class="isl-thook" d="${hooks}" stroke-width="${F(Math.max(1, ts * 0.018))}" stroke-linecap="round"/>` + board;
     // 4. The bench: its top seen a little from above, its front, its legs, and the dark beneath it; a
-    //    vise at its left end. By day the hammer lies on it under its empty outline, with a block plane
-    //    and a curl of shavings; at Night it is cleared.
+    //    vise at its left end. By Day and at Sunset the hammer lies on it under its empty outline, with a
+    //    block plane on a plank and a curl of shavings; at Night it is cleared but for the plank.
     const tTop = Y(0.705), tFront = Y(0.74), tFoot = Y(0.84), bench1 = wx1 + Y(0.1);
     s += `<path class="isl-tunder" d="${rect(-2, tFoot, bench1 + 2, H - tFoot + 2)}"/>`;
     let legs = '';
@@ -2379,18 +2409,56 @@
       + `<path class="isl-tiron" d="${rect(vx + u * 0.16, vT, jw, jh + 0.5)}${rect(vx + u * 0.02, vT, jw, jh * 0.85)}${rect(vx, tTop - u * 0.02, u * 0.33, u * 0.025)}"/>`
       + `<path class="isl-tjaw" d="M${F(vx + u * 0.02)} ${F(vT + 0.5)}h${F(jw)}M${F(vx + u * 0.16)} ${F(vT + 0.5)}h${F(jw)}" stroke-width="${F(Math.max(1, u * 0.014))}"/>`
       + `<path class="isl-lalu" d="${rect(vx - u * 0.005, vT + jh * 0.05, u * 0.016, jh * 0.95)}"/>`;
-    // By day, in use: the hammer lying on the bench under its empty outline, a block plane with a curl
-    // of shavings, and an open toolbox with handles showing (Dawn, Day, Sunset, Dusk; cleared at Night).
+    // The working day, by version (art-audit pass 4, 2026-10-01; DESIGN.md 19.6: what is drawn may change with
+    // a visible reason). At Dawn the job is laid out, the plank under the plane, but the hammer still hangs and
+    // no shavings are down yet; by Day and at Sunset the work is in hand, the hammer down on the bench under its
+    // empty outline and the shavings curling off the plank's end; at Dusk the bench is being tidied, the hammer
+    // back on its hook, the shavings swept into one small heap and the plank set aside at the back of the bench
+    // for tomorrow, the plane and the open toolbox still out; at Night all is put away but the set-aside plank.
     // (the board's own hammer, set down: it rests on its claw's tip and its handle's butt, face up, the
     // handle sloping to the bench; drawn as a flat handle into an upright head, it had read as a boot)
     const hm = TOOLS.hammer(u);
     const hammerFlat = `<g transform="translate(${F(hammerX + u * 0.32)} ${F(tTop - u * 0.141)}) rotate(78.7)">${hm.parts.map(([c, d]) => `<path class="${c}" d="${d}"/>`).join('')}</g>`;
     const px = bx0 + bw * 0.62, pw = u * 0.36, ph = u * 0.1;
-    const plane = `<path class="isl-tiron" d="M${F(px)} ${F(tTop + 0.5)}V${F(tTop - ph * 0.55)}L${F(px + pw * 0.1)} ${F(tTop - ph)}H${F(px + pw * 0.95)}L${F(px + pw)} ${F(tTop - ph * 0.6)}V${F(tTop + 0.5)}Z"/>`
-      + `<path class="isl-lwood" d="M${F(px + pw * 0.16)} ${F(tTop - ph)}a${F(pw * 0.08)} ${F(pw * 0.08)} 0 1 1 ${F(pw * 0.16)} 0ZM${F(px + pw * 0.62)} ${F(tTop - ph)}q${F(pw * 0.02)} ${F(-ph * 1.4)} ${F(pw * 0.24)} ${F(-ph * 1.1)}l${F(pw * 0.04)} ${F(ph * 1.1)}Z"/>`;
+    // (the toolbox's place and the pencil's, below, set here: the plank and its shavings keep between them)
+    const bxW = u * 0.62, bxT = (bx1 + wx0) / 2 - bxW / 2, bxH = u * 0.2, lid = u * 0.05, pen0 = bx0 + bw * 0.43;
+    // (the plane standing at b: on the plank while the job is out, on the bench itself at Dusk)
+    const plane = (b) => `<path class="isl-tiron" d="M${F(px)} ${F(b + 0.5)}V${F(b - ph * 0.55)}L${F(px + pw * 0.1)} ${F(b - ph)}H${F(px + pw * 0.95)}L${F(px + pw)} ${F(b - ph * 0.6)}V${F(b + 0.5)}Z"/>`
+      + `<path class="isl-lwood" d="M${F(px + pw * 0.16)} ${F(b - ph)}a${F(pw * 0.08)} ${F(pw * 0.08)} 0 1 1 ${F(pw * 0.16)} 0ZM${F(px + pw * 0.62)} ${F(b - ph)}q${F(pw * 0.02)} ${F(-ph * 1.4)} ${F(pw * 0.24)} ${F(-ph * 1.1)}l${F(pw * 0.04)} ${F(ph * 1.1)}Z"/>`;
+    // The plank the plane is working (art-audit pass 4, 2026-10-01: the plane and its shavings had had nothing
+    // to plane): pale wood, the shavings' own colour, lying on the bench a little out from the wall; its planed
+    // top face, its front edge a shade darker with the grain along it, and its sawn end, which the viewer, to
+    // its right, just sees, darker still; a thin shadow where it meets the bench. Its own random stream (the
+    // grain), so the approved layout does not move. It runs from a little behind the plane to well past it,
+    // clear of the pencil, and leaves room for the shavings before the toolbox: in a narrow card (at 1120) it is
+    // shorter past the plane and the curls lie closer together.
+    const shEnd = bxT - u * 0.04, pk0 = Math.max(px - u * 0.15, pen0 + u * 0.34);
+    const pkR = clamp(shEnd - px - pw - u * 0.36, u * 0.12, u * 0.4);
+    const rp = rng(5241), pkL = px + pw + pkR - pk0, pkT = u * 0.034, pkD = u * 0.018, pkS = pkD * 0.7;
+    const pkG = [[0.35, rp(), rp()], [0.7, rp(), rp()]];   // (its grain, drawn once: one plank wherever it lies)
+    const plank = (x0, yb) => {
+      const x1 = x0 + pkL, yt = yb - pkT, yk = yt - pkD, end = polyD([[x1, yb], [x1, yt], [x1 + pkS, yk], [x1 + pkS, yk + pkT]]);
+      let g = '';
+      for (const [f, a, b] of pkG) g += `M${F(x0 + pkL * (0.03 + a * 0.1))} ${F(yt + pkT * f)}H${F(x1 - pkL * (0.04 + b * 0.25))}`;
+      return `<path class="isl-tdrop" d="${rect(x0 - u * 0.01, yb - 0.5, pkL + pkS + u * 0.02, Math.max(1, u * 0.009))}"/>`
+        + `<path class="isl-lbk3" d="${polyD([[x0, yb], [x0, yt], [x0 + pkS, yk], [x1 + pkS, yk], [x1 + pkS, yk + pkT], [x1, yb]])}"/>`
+        // (one shade over the front edge and the end, a second over the end)
+        + `<path class="isl-tdrop" d="${rect(x0, yt, pkL, pkT)}${end}"/><path class="isl-tdrop" d="${end}"/>`
+        + `<path class="isl-tgrain" d="${g}" stroke-width=".5"/>`;
+    };
+    const pkB = tTop + (tFront - tTop) * 0.45, pk1 = pk0 + pkL + pkS, shStep = clamp((shEnd - pk1 - u * 0.08) / 4, u * 0.035, u * 0.07);
+    // (the shavings curl off the plank's end onto the bench; the same draws as before, only moved there)
     let shav = '';
-    for (let i = 0; i < 5; i++) { const sx2 = px + pw + u * (0.05 + i * 0.07), rr = u * (0.022 + r() * 0.018); shav += `M${F(sx2)} ${F(tTop)}a${F(rr)} ${F(rr)} 0 1 1 ${F(rr * 1.5)} ${F(-rr * 0.3)}a${F(rr * 0.6)} ${F(rr * 0.6)} 0 1 1 ${F(-rr * 0.8)} ${F(rr * 0.2)}`; }
-    const bxW = u * 0.62, bxT = (bx1 + wx0) / 2 - bxW / 2, bxH = u * 0.2, lid = u * 0.05;
+    for (let i = 0; i < 5; i++) { const sx2 = pk1 + u * 0.01 + i * shStep, rr = u * (0.022 + r() * 0.018); shav += `M${F(sx2)} ${F(pkB)}a${F(rr)} ${F(rr)} 0 1 1 ${F(rr * 1.5)} ${F(-rr * 0.3)}a${F(rr * 0.6)} ${F(rr * 0.6)} 0 1 1 ${F(-rr * 0.8)} ${F(rr * 0.2)}`; }
+    // (at Dusk, the shavings swept into one small heap beside the plane: a few curls bunched on a low mound of
+    // fine ones; its own random stream)
+    const rh = rng(5243), hx = px + pw + u * 0.19;
+    let heap = '';
+    for (const [dx, dy, k] of [[-0.06, 0, 1], [-0.008, 0.002, 1], [0.048, 0, 1], [-0.034, -0.022, 0.85], [0.02, -0.022, 0.85], [-0.006, -0.04, 0.7]]) {
+      const rr = u * (0.017 + rh() * 0.008) * k, sx2 = hx + u * dx - rr * 0.7, sy = tTop + u * dy;
+      heap += `M${F(sx2)} ${F(sy)}a${F(rr)} ${F(rr)} 0 1 1 ${F(rr * 1.5)} ${F(-rr * 0.3)}a${F(rr * 0.6)} ${F(rr * 0.6)} 0 1 1 ${F(-rr * 0.8)} ${F(rr * 0.2)}`;
+    }
+    const mound = `<path class="isl-lbk3" opacity=".7" d="M${F(hx - u * 0.1)} ${F(tTop + 0.5)}C${F(hx - u * 0.07)} ${F(tTop - u * 0.06)} ${F(hx + u * 0.05)} ${F(tTop - u * 0.065)} ${F(hx + u * 0.09)} ${F(tTop + 0.5)}Z"/>`;
     const box = `<ellipse class="isl-tdrop" cx="${F(bxT + bxW * 0.55)}" cy="${F(tTop + u * 0.005)}" rx="${F(bxW * 0.56)}" ry="${F(u * 0.018)}"/>`
       + `<path class="isl-lred" d="${rect(bxT, tTop - bxH, bxW, bxH + 0.5)}"/>`
       + `<path class="isl-tlid" d="M${F(bxT - u * 0.01)} ${F(tTop - bxH + lid)}H${F(bxT + bxW + u * 0.01)}" stroke-width="${F(Math.max(1, u * 0.014))}"/>`
@@ -2398,12 +2466,19 @@
       + `<path class="isl-tiron" d="${rect(bxT + bxW * 0.3, tTop - bxH - u * 0.018, u * 0.02, u * 0.02)}${rect(bxT + bxW * 0.7 - u * 0.02, tTop - bxH - u * 0.018, u * 0.02, u * 0.02)}"/>`
       + `<path class="isl-thandle2" d="M${F(bxT + bxW * 0.3 + u * 0.01)} ${F(tTop - bxH - u * 0.012)}V${F(tTop - bxH - u * 0.07)}H${F(bxT + bxW * 0.7 - u * 0.01)}V${F(tTop - bxH - u * 0.012)}" stroke-width="${F(Math.max(1.2, u * 0.022))}" stroke-linejoin="round"/>`
       + `<path class="isl-lredsh" d="${rect(bxT + bxW * 0.8, tTop - bxH, bxW * 0.2, bxH + 0.5)}"/>`;
-    s += `<g class="isl-lq" data-q="aysd">${hammerFlat}${plane}<path class="isl-tshave" d="${shav}" stroke-width="${F(Math.max(0.8, u * 0.012))}"/>${box}</g>`;
+    const shw = F(Math.max(0.8, u * 0.012));
+    // (set aside at the back, under the board, midway between the vise and the pencil: its far edge on the
+    // bench's back line, against the wall)
+    s += `<g class="isl-lq" data-q="dn">${plank((vx + u * 0.33 + pen0 - pkL) / 2, tTop + pkD)}</g>`
+      + `<g class="isl-lq" data-q="ays">${plank(pk0, pkB)}${plane(pkB - pkT - pkD * 0.5)}</g>`
+      + `<g class="isl-lq" data-q="ys">${hammerFlat}<path class="isl-tshave" d="${shav}" stroke-width="${shw}"/></g>`
+      + `<g class="isl-lq" data-q="d">${plane(tTop)}${mound}<path class="isl-tshave" d="${heap}" stroke-width="${shw}"/></g>`
+      + `<g class="isl-lq" data-q="aysd">${box}</g>`;
     // a pencil (the window faces west, so no sun lies on the bench by day; only the setting Sun reaches it)
-    s += `<path class="isl-lbk3" d="M${F(bx0 + bw * 0.43)} ${F(tTop - u * 0.02)}h${F(u * 0.26)}l${F(u * 0.04)} ${F(u * 0.01)}l${F(-u * 0.04)} ${F(u * 0.01)}h${F(-u * 0.26)}Z"/>`;
+    s += `<path class="isl-lbk3" d="M${F(pen0)} ${F(tTop - u * 0.02)}h${F(u * 0.26)}l${F(u * 0.04)} ${F(u * 0.01)}l${F(-u * 0.04)} ${F(u * 0.01)}h${F(-u * 0.26)}Z"/>`;
     // 5. The lamp: its cord from the ceiling, an enamel shade, and lit, the bulb under it, its halo in the
     //    page's hue, the light it spills down onto the bench and its pool there; the last light on.
-    const lx = (bx1 + wx0) / 2, lT = Y(0.08), lB = Y(0.19), rt = Y(0.022), rb = Y(0.1);
+    //    (its place, lx to rb, is set with the board's, section 3)
     s += `<path class="isl-tcord" d="M${F(lx)} -2V${F(lT)}" stroke-width="${F(Math.max(1.4, Y(0.009)))}"/>`;
     // (its bulb, unlit frosted glass in every version, the lit bulb over it from Dawn to Night: by Day the lamp
     // had had no glass; art-audit wave 2)
