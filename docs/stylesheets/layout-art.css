@@ -674,7 +674,6 @@
    tool wall's tokens; the ribbon of light, the bubbles and the orb take the page's hue (the kind line
    in the light scheme, the kind color in the dark), the one accent, and keep their own light by Day. */
 .isl .isl-tarm { stroke: var(--isl-tiron); fill: none; stroke-linecap: round; }
-.isl .isl-pribbon { fill: none; stroke-linecap: round; }
 .isl .isl-pword { stroke: #fff8e6; stroke-opacity: 0.85; fill: none; stroke-linecap: round; }
 .isl .isl-pbubble { fill: #fffdf6; fill-opacity: 0.9; stroke: var(--k-line, var(--isl-rim)); stroke-opacity: 0.55; stroke-width: 1.2; }
 .isl .isl-pline { stroke: var(--k-line, var(--isl-rim)); stroke-opacity: 0.55; fill: none; stroke-linecap: round; }
@@ -684,6 +683,8 @@
 .isl .isl-pruled { stroke: #6f93c2; stroke-opacity: 0.35; fill: none; }
 .isl .isl-phand { stroke: #2b3550; stroke-opacity: 0.7; fill: none; stroke-linecap: round; }
 .isl .isl-pcoil { stroke: var(--isl-lalu); fill: none; stroke-linecap: round; }
+/* the brightest flecks riding inside the ribbon, white so they show on its cream (art-audit pass 4, 2026-10-01) */
+.isl .isl-pfleck { stroke: #ffffff; fill: none; stroke-linecap: round; }
 /* The bell tower (the Announcements page's head, 2026-09-29): the town and roofs are the Court House's
    (dark shapes at Dawn, Sunset, Dusk and Night, pastel walls under red roofs by Day); the tower's stone
    and the bell's bronze are the shared stone and brass; its own are the rings of sound, the birds, the
