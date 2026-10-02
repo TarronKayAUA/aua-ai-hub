@@ -676,6 +676,18 @@
 .isl .isl-cmark { stroke: #3a3f4a; stroke-opacity: 0.7; fill: none; stroke-linecap: round; }
 .isl .isl-chand { stroke: #2b2f38; fill: none; stroke-linecap: round; }
 .isl .isl-cshade { fill: var(--isl-lbronze); }
+/* This Week's calendar (art-audit pass 4, 2026-10-01): its page darkens toward its left edge, away from the
+   sconce and the window (st-cpage, the left stop: most at Night, where the flat page was the loudest area,
+   least by Day); the sconce's shade is cream fabric with a bronze trim, apart from its brass stem. */
+.isl .st-cpage { stop-color: var(--isl-lside); stop-opacity: 0.2; }
+.isl .st-cpage0 { stop-color: var(--isl-lside); stop-opacity: 0; }
+.isl[data-sky="day"] .st-cpage { stop-opacity: 0.08; }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .st-cpage, .isl[data-sky="night"] .st-cpage { stop-opacity: 0.3; }
+.isl .isl-cfab { fill: var(--isl-lpage); fill-opacity: 0.9; stroke: var(--isl-lbronze); stroke-opacity: 0.6; stroke-linejoin: round; }
+/* the pen's string: the ink's grey, a lighter grey at Night, where the dark one vanished on the calendar's
+   shadow and left the pen hanging from nothing */
+.isl .isl-cstring { stroke: #3a3f4a; stroke-opacity: 0.5; fill: none; }
+[data-md-color-scheme="slate"] .isl:where(:not([data-sky])) .isl-cstring, .isl[data-sky="night"] .isl-cstring { stroke: #7d828b; stroke-opacity: 0.6; }
 .isl .isl-hslat { fill: var(--isl-lframe); fill-opacity: 0.92; }
 .isl .isl-hcord { stroke: #8d939c; fill: none; }
 .isl .isl-hrail { stroke: var(--isl-lalu); fill: none; }
