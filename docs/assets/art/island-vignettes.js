@@ -2869,11 +2869,12 @@
   }
 
   /* THE HOSPITAL ROOM (the Clinical Practice page's head; owner, 2026-09-29: art tied to the title at a
-     glance): a hospital room, the bed with its head raised, pillow and blanket, a drip stand with its bag
-     and line, a monitor on its arm tracing a heartbeat in the page's hue, the curtain gathered on its track,
-     a chair by the window, the blinds half down. The monitor is always on; a reading lamp over the bed is
-     lit from Dawn to Night. Face on, sized from the card's height. The harbour's lights come on, then the
-     lamp, and the monitor's trace last. */
+     glance): a hospital room, the bed with its head raised and a patient resting in it under the blanket, a
+     drip stand with its bag and line, a monitor on its arm tracing a heartbeat in the page's hue, the curtain
+     gathered on its track, a chair by the window (a visitor in it at Sunset, their cardigan on it by Day;
+     art-audit pass 4, 2026-10-01), the blinds half down. The monitor is always on; a reading lamp over the
+     bed is lit from Dawn to Night. Face on, sized from the card's height. The harbour's lights come on, then
+     the lamp, and the monitor's trace last. */
   function hospitalRoom(W, H, v) {
     const y0 = v.y0, X = (k) => k * W, Y = (k) => k * H, r = rng(907);
     const f = newsFrame(W, H, 1);
@@ -2908,8 +2909,69 @@
     s += `<path class="isl-hframe" d="M${F(b1)} ${F(bMid + Y(0.02))}V${F(bTop - Y(0.12))}M${F(b0)} ${F(bMid + Y(0.02))}V${F(bTop - Y(0.3))}" stroke-width="${F(Math.max(1.4, Y(0.016)))}"/>`;
     s += `<path class="isl-hmat" d="${polyD([[b0 + Y(0.01), bMid], [b1 - Y(0.01), bMid], [b1 - Y(0.01), bTop], [hx, bTop], [b0 + Y(0.05), bTop - Y(0.22)], [b0 + Y(0.01), bTop - Y(0.2)]])}"/>`;
     s += `<path class="isl-lpage" d="M${F(b0 + Y(0.04))} ${F(bTop - Y(0.2))}Q${F(b0 + Y(0.14))} ${F(bTop - Y(0.3))} ${F(b0 + Y(0.2))} ${F(bTop - Y(0.12))}Q${F(b0 + Y(0.12))} ${F(bTop - Y(0.06))} ${F(b0 + Y(0.06))} ${F(bTop - Y(0.1))}Z"/>`;
-    s += `<path class="isl-hblanket" d="M${F(hx - Y(0.05))} ${F(bTop - Y(0.035))}Q${F(hx + (b1 - hx) * 0.4)} ${F(bTop - Y(0.07))} ${F(b1 - Y(0.005))} ${F(bTop - Y(0.03))}V${F(bMid + Y(0.035))}H${F(hx - Y(0.07))}Z"/>`
-      + `<path class="isl-hfold" d="M${F(hx - Y(0.05))} ${F(bTop - Y(0.03))}H${F(hx + Y(0.08))}" stroke-width="${F(Math.max(1.4, Y(0.016)))}" stroke-opacity=".4"/>`;
+    // The patient (art-audit pass 4, 2026-10-01, hospital-room-A1, which also settles C1; the owner chose it):
+    // the monitor traced a heartbeat and the drip ran into the pillow of an empty bed. Someone now rests under
+    // the blanket, a plain head on the pillow turned to the window, no face drawn, one arm out over the
+    // blanket with the drip's cannula on its forearm. The same in all five versions (the monitor reads them at
+    // every hour, so they never leave), dimmed with the room's light by version as the Lecture Hall's people
+    // are (isl-mroom). Placed along the mattress: on(s, w) is the point s along its surface from the top of
+    // the raised head, down the slope to the bend at hx and on along the flat, and w above it.
+    const pA = [b0 + Y(0.05), bTop - Y(0.22)], pL = Math.hypot(hx - pA[0], bTop - pA[1]);
+    const pd = [(hx - pA[0]) / pL, (bTop - pA[1]) / pL], pn = [pd[1], -pd[0]];
+    const on = (sd, w) => (sd <= pL ? [pA[0] + pd[0] * sd + pn[0] * w, pA[1] + pd[1] * sd + pn[1] * w] : [hx + sd - pL, bTop - w]);
+    const P = (p) => `${F(p[0])} ${F(p[1])}`;
+    const crD = (p) => `M${P(p[0])}` + p.slice(1).map((c, i) => {   // a smooth line through the points
+      const a = p[Math.max(0, i - 1)], b = p[i], d = p[Math.min(p.length - 1, i + 2)];
+      return `C${F(b[0] + (c[0] - a[0]) / 6)} ${F(b[1] + (c[1] - a[1]) / 6)} ${F(c[0] - (d[0] - b[0]) / 6)} ${F(c[1] - (d[1] - b[1]) / 6)} ${P(c)}`;
+    }).join('');
+    const crZ = (p) => `M${P(p[0])}` + p.map((b, i) => {   // the same, closed round on itself
+      const n = p.length, a = p[(i + n - 1) % n], c = p[(i + 1) % n], d = p[(i + 2) % n];
+      return `C${F(b[0] + (c[0] - a[0]) / 6)} ${F(b[1] + (c[1] - a[1]) / 6)} ${F(c[0] - (d[0] - b[0]) / 6)} ${F(c[1] - (d[1] - b[1]) / 6)} ${P(c)}`;
+    }).join('') + 'Z';
+    const pSkin = '#8a5a3c', pHair = '#231c18', pGown = '#a9c2bb';
+    // (the head in profile, its back in the pillow, its face to the window: the skull, jaw and chin in skin, no
+    // features, the hair over its crown and back. hp(a, b) is a point a head radii toward the face, b toward
+    // the crown; the neck runs down toward the shoulders)
+    const hr = Y(0.045), hc = on(Y(0.11), Y(0.058));
+    const fl0 = Math.hypot(pn[0] + 0.9, pn[1]), fv = [(pn[0] + 0.9) / fl0, pn[1] / fl0], cv = [fv[1], -fv[0]];
+    const hp = (a, b) => [hc[0] + (fv[0] * a + cv[0] * b) * hr, hc[1] + (fv[1] * a + cv[1] * b) * hr];
+    const nk = (p) => [p[0] + pd[0] * Y(0.045), p[1] + pd[1] * Y(0.045)];
+    let pt = `<path fill="${pSkin}" d="${polyD([hp(-0.6, -0.55), hp(0.15, -0.85), nk(hp(0.15, -0.85)), nk(hp(-0.6, -0.55))])}"/>`   // the neck
+      + `<path fill="${pSkin}" d="${crZ([[-0.2, 1], [0.55, 0.85], [0.95, 0.3], [1, -0.2], [0.72, -0.95], [0.2, -0.97], [-0.2, -0.75], [-0.75, -0.55], [-1, 0.1], [-0.75, 0.75]].map(([a, b]) => hp(a, b)))}"/>`
+      + `<path fill="${pHair}" d="${crZ([[0.5, 0.9], [-0.2, 1.08], [-0.83, 0.8], [-1.08, 0.1], [-0.8, -0.6], [-0.35, -0.35], [-0.1, 0.15], [0.28, 0.52]].map(([a, b]) => hp(a, b)))}"/>`;
+    // (the gown at the shoulder, between the neck and the blanket's turned-down edge)
+    const sE = Y(0.21), wE = Y(0.095);
+    pt += `<path fill="${pGown}" d="M${P(on(sE + Y(0.006), -Y(0.004)))}L${P(on(sE + Y(0.006), wE - Y(0.008)))}Q${P(on(Y(0.172), Y(0.098)))} ${P(on(Y(0.152), Y(0.062)))}L${P(on(Y(0.145), Y(0.01)))}Z"/>`;
+    s += `<g class="isl-mroom">${pt}</g>`;
+    // The blanket over them (C1/A1): a long low mound from the chest, down the raised head and over the hips,
+    // a rise at the knees and a small tent at the feet, then flat to the foot of the bed. Along the raised
+    // head it lies on the mattress; from the hips it hangs over the bed's side as before. The bed is drawn
+    // long, so the legs take more of it than a body's proportions would.
+    const sHip = Y(0.42), xHip = on(sHip, 0)[0], xFt = xHip + Math.max(Y(0.38), (b1 - xHip) * 0.7);
+    const lg = (k, w) => [xHip + (xFt - xHip) * k, bTop - w];
+    // (the legs kept below the side rail's bar, so the rail reads as standing clear of them)
+    const sil = [[sE, wE], [Y(0.27), Y(0.1)], [Y(0.34), Y(0.09)], [sHip, Y(0.074)]]
+      .filter(([sd]) => sd < pL - Y(0.03) || sd > pL + Y(0.03)).map(([sd, w]) => on(sd, w))   // (none in the bend itself)
+      .concat([lg(0.22, Y(0.056)), lg(0.48, Y(0.058)), lg(0.76, Y(0.047)), [xFt - Y(0.09), bTop - Y(0.048)], [xFt - Y(0.03), bTop - Y(0.07)], [xFt, bTop - Y(0.084)],
+        [xFt + Y(0.04), bTop - Y(0.066)], [xFt + Y(0.12), bTop - Y(0.036)], [b1 - Y(0.005), bTop - Y(0.03)]]);
+    s += `<path class="isl-hblanket" d="${crD(sil)}V${F(bMid + Y(0.035))}H${F(hx - Y(0.07))}L${P(on(pL - Y(0.06), -Y(0.004)))}L${P(on(sE, -Y(0.004)))}Z"/>`;
+    // (its top turned down across the chest, the sheet's colour, with the fold's shadow under it; this replaces
+    // the short dash that had stood for the turned-down edge on the empty bed and read as a stray mark)
+    const sB = sE + Y(0.035);
+    s += `<path class="isl-lpage" d="${polyD([on(sE, -Y(0.004)), on(sE, wE + Y(0.004)), on(sB, Y(0.103)), on(sB, -Y(0.004))])}"/>`
+      + `<path class="isl-hfold" d="M${P(on(sB, 0))}L${P(on(sB, Y(0.1)))}" stroke-width="${F(Math.max(0.8, Y(0.008)))}"/>`;
+    // (the near arm out over the blanket: the gown's short sleeve down the side, the elbow bent, the forearm
+    // across to the belly and the hand resting there, kept clear of the side rail; where the card is narrower
+    // the raised head is steeper and shorter, and the arm lies straighter along the side. The cannula, taped
+    // on the forearm, is where the drip's line now ends)
+    const aSh = Y(0.185), aEnd = Math.min(Y(0.39), pL + Y(0.025)), aK = clamp((aEnd - aSh - Y(0.15)) / Y(0.055), 0, 1);
+    const aS = on(aSh, Y(0.05)), aE = on(aSh + (aEnd - aSh) * 0.6, Y(0.035)), aH = on(aEnd, Y(0.04) + Y(0.035) * aK);
+    const aw = Y(0.026), mid = (p, q, k) => [p[0] + (q[0] - p[0]) * k, p[1] + (q[1] - p[1]) * k], aC = mid(aE, aH, 0.55);
+    const al = Math.hypot(aH[0] - aE[0], aH[1] - aE[1]), au = [(aH[0] - aE[0]) / al, (aH[1] - aE[1]) / al];
+    s += `<path class="isl-hfold" d="M${F(aE[0])} ${F(aE[1] + Y(0.012))}L${F(aH[0] + au[0] * Y(0.018))} ${F(aH[1] + au[1] * Y(0.018) + Y(0.012))}" stroke-width="${F(aw * 0.8)}"/>`;   // its shadow on the blanket
+    s += `<g class="isl-mroom"><path fill="none" stroke="${pSkin}" stroke-width="${F(aw)}" stroke-linecap="round" stroke-linejoin="round" d="M${P(aS)}L${P(aE)}L${P(aH)}"/>`
+      + `<path fill="none" stroke="${pSkin}" stroke-width="${F(aw * 1.1)}" stroke-linecap="round" d="M${P(aH)}l${F(au[0] * Y(0.018))} ${F(au[1] * Y(0.018))}"/>`   // the hand
+      + `<path fill="none" stroke="${pGown}" stroke-width="${F(aw * 1.25)}" stroke-linecap="round" d="M${P(aS)}L${P(mid(aS, aE, 0.35))}"/></g>`;
     s += `<path class="isl-hframe" d="${rect(hx + Y(0.06), bTop - Y(0.08), (b1 - hx) * 0.45, Y(0.012))}M${F(hx + Y(0.07))} ${F(bTop - Y(0.07))}V${F(bTop)}M${F(hx + (b1 - hx) * 0.45)} ${F(bTop - Y(0.07))}V${F(bTop)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     // 3. The drip stand at the bed's head: pole, hooks, the bag with its fluid level, the line.
     const ix = b0 - Y(0.1), iT = Y(0.12);
@@ -2921,7 +2983,10 @@
     s += `<path class="isl-hbag" d="M${F(ix + Y(0.02))} ${F(bagT)}H${F(ix + Y(0.08))}V${F(bagB - Y(0.02))}Q${F(ix + Y(0.05))} ${F(bagB + Y(0.01))} ${F(ix + Y(0.02))} ${F(bagB - Y(0.02))}Z"/>`
       + `<path class="isl-hfluid" d="M${F(ix + Y(0.02))} ${F(bagT + Y(0.07))}H${F(ix + Y(0.08))}V${F(bagB - Y(0.02))}Q${F(ix + Y(0.05))} ${F(bagB + Y(0.01))} ${F(ix + Y(0.02))} ${F(bagB - Y(0.02))}Z"/>`
       + `<path class="isl-hbag" d="${rect(ix + Y(0.043), bagB - Y(0.006), Y(0.014), Y(0.036))}"/>`
-      + `<path class="isl-hcord" d="M${F(ix + Y(0.05))} ${F(bagB + Y(0.03))}C${F(ix + Y(0.06))} ${F(Y(0.55))} ${F(b0 + Y(0.1))} ${F(Y(0.5))} ${F(b0 + Y(0.16))} ${F(bTop - Y(0.08))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+      // (the line runs to the cannula on the patient's forearm, art-audit pass 4, 2026-10-01: it had ended on the
+      // pillow; the tape over it drawn last, so the line tucks under it)
+      + `<path class="isl-hcord" d="M${F(ix + Y(0.05))} ${F(bagB + Y(0.03))}C${F(ix + Y(0.06))} ${F(Y(0.55))} ${F(aC[0] - Y(0.12))} ${F(bTop - Y(0.02))} ${F(aC[0])} ${F(aC[1])}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
+      + `<g class="isl-mroom"><path fill="#eef0ec" d="${rect(aC[0] - Y(0.008), aC[1] - Y(0.007), Y(0.016), Y(0.014))}"/></g>`;
     // 4. The monitor on its wall arm above the bed's head: its screen, a heartbeat trace in the page's hue,
     //    two readings as bars.
     const mx0 = b0 + Y(0.1), mT = Y(0.12), mw = Y(0.36), mh = Y(0.24);
@@ -2944,6 +3009,38 @@
     s += `<ellipse class="isl-tdrop" cx="${F(chx)}" cy="${F(fl + Y(0.012))}" rx="${F(Y(0.09))}" ry="${F(Y(0.008))}"/>`;
     s += `<path class="isl-lchair" d="M${F(chx - Y(0.08))} ${F(Y(0.72))}H${F(chx + Y(0.08))}V${F(Y(0.76))}H${F(chx - Y(0.08))}ZM${F(chx + Y(0.05))} ${F(Y(0.72))}V${F(Y(0.52))}H${F(chx + Y(0.08))}V${F(Y(0.72))}Z"/>`
       + `<path class="isl-lchairleg" d="M${F(chx - Y(0.07))} ${F(Y(0.76))}V${F(fl + Y(0.012))}M${F(chx + Y(0.07))} ${F(Y(0.76))}V${F(fl + Y(0.012))}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    // 6. The visitor (art-audit pass 4, 2026-10-01, hospital-room-V1). Who is in the chair answers the hour
+    //    (by version), for evening visiting hours: at Sunset a visitor sits with the patient, facing the bed,
+    //    the low Sun through the window warming their back; by Day they have stepped out and left their
+    //    cardigan over the chair's back; at Dawn, Dusk and Night visiting is over and the chair is empty.
+    //    Dimmed with the room's light (isl-mroom); the Sun's warm rim is light, so it is not.
+    {
+      const at = (dx, dy) => [chx + Y(dx), Y(0.72) + Y(dy)];   // from the seat's top above the chair's middle
+      const vSkin = '#6b4630', vHair = '#1d1916', vCard = '#7f5a76', fk = (fl + Y(0.012)) / H - 0.72;   // (fk: the floor where the chair stands)
+      // (where the card is narrower the chair stands nearer the bed's foot, and the feet are tucked back under
+      // the seat, clear of the bed's wheel)
+      const ax = Math.max(-0.118, (b1 - chx) / H + 0.03);
+      let v = `<path fill="#2f3a4a" d="${polyD([[0.048, 0.002], [0.048, -0.05], [0.02, -0.062], [-0.105, -0.055], [-0.122, -0.035], [ax, fk - 0.015], [ax + 0.03, fk - 0.015], [-0.09, 0.002]].map(([a, b]) => at(a, b)))}"/>`   // trousers: the thigh on the seat, the shin to the floor
+        + `<path fill="#3a2e24" d="${polyD([at(ax - 0.019, fk - 0.017), at(ax + 0.041, fk - 0.017), at(ax + 0.041, fk), at(ax - 0.019, fk)])}"/>`;   // the shoe
+      v += `<path fill="${vCard}" d="M${P(at(0.048, -0.04))}L${P(at(0.05, -0.2))}Q${P(at(0.046, -0.232))} ${P(at(0.008, -0.232))}Q${P(at(-0.028, -0.23))} ${P(at(-0.032, -0.195))}L${P(at(-0.036, -0.06))}Q${P(at(-0.03, -0.045))} ${P(at(-0.01, -0.045))}Z"/>`   // the torso, in the cardigan
+        + `<path fill="#e8e2d4" d="${polyD([at(-0.028, -0.212), at(-0.012, -0.226), at(-0.02, -0.12), at(-0.033, -0.12)])}"/>`;   // the shirt at its open front
+      // (the head in profile facing the bed, as the patient's is drawn, mirrored: no features)
+      const vr = Y(0.042), vc = at(0.004, -0.29), vf = [-0.995, 0.1], vu = [-0.1, -0.995];
+      const vp = (a, b) => [vc[0] + (vf[0] * a + vu[0] * b) * vr, vc[1] + (vf[1] * a + vu[1] * b) * vr];
+      v += `<path fill="${vSkin}" d="${rect(chx - Y(0.009), Y(0.72) - Y(0.262), Y(0.022), Y(0.04))}"/>`   // the neck
+        + `<path fill="${vSkin}" d="${crZ([[-0.2, 1], [0.55, 0.85], [0.95, 0.3], [1, -0.2], [0.72, -0.95], [0.2, -0.97], [-0.2, -0.75], [-0.75, -0.55], [-1, 0.1], [-0.75, 0.75]].map(([a, b]) => vp(a, b)))}"/>`
+        + `<path fill="${vHair}" d="${crZ([[0.5, 0.9], [-0.2, 1.08], [-0.83, 0.8], [-1.08, 0.1], [-0.8, -0.6], [-0.35, -0.35], [-0.1, 0.15], [0.28, 0.52]].map(([a, b]) => vp(a, b)))}"/>`;
+      // (the near arm down the side and the forearm forward, the hands together in the lap)
+      v += `<path fill="none" stroke="${vCard}" stroke-width="${F(Y(0.028))}" stroke-linecap="round" stroke-linejoin="round" d="M${P(at(0.02, -0.205))}L${P(at(0.012, -0.095))}L${P(at(-0.05, -0.075))}"/>`
+        + `<path fill="none" stroke="${vSkin}" stroke-width="${F(Y(0.026))}" stroke-linecap="round" d="M${P(at(-0.055, -0.074))}L${P(at(-0.075, -0.07))}"/>`;
+      const rim = `<path class="isl-mlit" d="M${P(at(0.051, -0.05))}L${P(at(0.052, -0.198))}M${P(vp(-0.55, 0.88))}Q${P(vp(-1.12, 0.45))} ${P(vp(-0.95, -0.4))}" stroke-width="${F(Math.max(0.8, Y(0.007)))}"/>`;
+      // (the cardigan by Day, folded over the top of the chair's back, a sleeve hanging on each side, its folds
+      // in shadow)
+      const card = `<path fill="${vCard}" d="M${P(at(0.032, -0.085))}L${P(at(0.037, -0.19))}Q${P(at(0.064, -0.232))} ${P(at(0.093, -0.19))}L${P(at(0.1, -0.1))}Q${P(at(0.09, -0.092))} ${P(at(0.08, -0.1))}L${P(at(0.05, -0.094))}Q${P(at(0.042, -0.08))} ${P(at(0.032, -0.085))}Z"/>`
+        + `<path fill="none" stroke="${vCard}" stroke-width="${F(Y(0.018))}" stroke-linecap="round" d="M${P(at(0.04, -0.17))}L${P(at(0.03, -0.035))}M${P(at(0.092, -0.165))}L${P(at(0.104, -0.05))}"/>`
+        + `<path class="isl-hfold" d="M${P(at(0.042, -0.192))}Q${P(at(0.064, -0.218))} ${P(at(0.088, -0.192))}M${P(at(0.041, -0.15))}L${P(at(0.034, -0.04))}M${P(at(0.091, -0.15))}L${P(at(0.1, -0.055))}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`;
+      s += `<g class="isl-lq" data-q="s"><g class="isl-mroom">${v}</g>${rim}</g><g class="isl-lq" data-q="y"><g class="isl-mroom">${card}</g></g>`;
+    }
     return `<g style="--isl-vstep:.5s">${s}</g>`;
   }
 
