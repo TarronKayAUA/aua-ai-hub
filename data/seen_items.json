@@ -1,149 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.quantamagazine.org/why-the-legendary-erdos-problems-are-falling-to-ai-20260803",
-   "title_hash": "2a3c2610df0de88c75d0ab7fa6449481",
-   "first_seen": "2026-08-03T15:18:34.973235+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://jack-clark.net/2026/08/03/import-ai-467-self-sustaining-ai-viruses-pacing-ai-progress-confusion-about-ai-and-creativity",
-   "title_hash": "059c59c9b21b9a229f510bffaff2b0dd",
-   "first_seen": "2026-08-03T15:18:34.973235+00:00",
-   "kept": true,
-   "title": "Import AI 467: Self-sustaining AI viruses; pacing AI progress; confusion about AI and creativity",
-   "source": "Import AI",
-   "published": "2026-08-03T13:31:22+00:00",
-   "summary": "Researchers demonstrated a prototype self-replicating AI virus using open-weight language models, raising concerns about persistent autonomous threats.",
-   "category": "general_ai",
-   "score": 4.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://www.sensible-med.com/p/lessons-from-the-hepa-filter-rct",
-   "title_hash": "49c32b9a588474a6ceacd8b849282f3a",
-   "first_seen": "2026-08-03T15:18:34.973235+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/974342/alibaba-qwen-max-open-weight-ai",
-   "title_hash": "9b619640e694456dddad907461722189",
-   "first_seen": "2026-08-03T15:18:34.973235+00:00",
-   "kept": true,
-   "title": "China’s Alibaba takes another swipe at America’s AI supremacy",
-   "source": "The Verge AI",
-   "published": "2026-08-03T11:01:11+00:00",
-   "summary": "Alibaba released Qwen3.8-Max, claiming performance comparable to frontier models from Anthropic, OpenAI, and Moonshot AI.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/gettyimages-2266883826.jpg?quality=90&strip=all&crop=0%2C10.737892056687%2C100%2C78.524215886627&w=1200",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03063-w",
-   "title_hash": "381c799247d587154c8f9f051f01fe87",
-   "first_seen": "2026-08-03T15:18:34.973235+00:00",
-   "kept": true,
-   "title": "Patient engagement, acceptability, and preference of artificial intelligence versus human coaching for diabetes prevention",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-03T00:00:00+00:00",
-   "summary": "A study compares patient engagement and preference between AI coaching and human coaching for diabetes prevention.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02813-0",
-   "title_hash": "09422875b448c939c47622711203e9c6",
-   "first_seen": "2026-08-03T15:18:34.973235+00:00",
-   "kept": true,
-   "title": "Interpreting the clinical utility and generalizability of a multitask perioperative prediction model",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-03T00:00:00+00:00",
-   "summary": "A multitask model for perioperative prediction is evaluated for clinical utility and generalizability across patient populations and settings.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04560-x",
-   "title_hash": "080d9fb37f4b673cab56e722ff22bf34",
-   "first_seen": "2026-08-03T15:18:34.973235+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=jz2wF4m7YWE",
-   "title_hash": "a0b80f6a696e99b142077a242c7216d4",
-   "first_seen": "2026-08-03T15:18:34.973235+00:00",
-   "kept": false,
-   "reason": "minor tool release notes and performance-tinkering analysis, not a significant capability announcement or benchmark movement"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/974571/eu-ai-act-transparency-labels-rules-deepfakes",
-   "title_hash": "54a339355e65171fea1e1f02a0de214d",
-   "first_seen": "2026-08-03T18:08:09.029881+00:00",
-   "kept": true,
-   "title": "Europe’s AI labeling and transparency rules are now in effect",
-   "source": "The Verge AI",
-   "published": "2026-08-03T17:38:45+00:00",
-   "summary": "European Union AI Act transparency rules now require companies to disclose when people interact with AI models and when content is AI-generated deepfakes.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/EU-AI-label-icons-hero.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-   "topic": "Industry and policy"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/3/david-crawshaw",
-   "title_hash": "9658ab05fb25d792984bdec06aea2073",
-   "first_seen": "2026-08-03T18:08:09.029881+00:00",
-   "kept": false,
-   "reason": "minor tool release notes and personal blog example, not significant enough for medical education audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev",
-   "title_hash": "94c463594fc3a6d852377106273b8772",
-   "first_seen": "2026-08-03T18:08:09.029881+00:00",
-   "kept": false,
-   "reason": "philosophical discussion about open source software, not a development or finding relevant to this audience"
-  },
-  {
-   "url": "https://research.jfrog.com/post/sqlite-critical-cves-or-llm-slops",
-   "title_hash": "2fb8fe7feb3ca62e29d66cdec10870ad",
-   "first_seen": "2026-08-03T18:08:09.029881+00:00",
-   "kept": false,
-   "reason": "software security vulnerability analysis unrelated to medical AI or education"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42545563?fc=20260609215449&ff=20260803140809&v=2.20.0.post5+40e1b98",
-   "title_hash": "fda01e586da149d1a8dc5391cac36c86",
-   "first_seen": "2026-08-03T18:08:09.029881+00:00",
-   "kept": true,
-   "title": "Diagnostic performance with sensitivity/specificity optimized computer-aided detection to detect common abnormalities in chest radiography",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-03T10:00:00+00:00",
-   "summary": "Study comparing sensitivity-optimized and specificity-optimized computer-aided detection for chest radiography found that specificity-prioritized systems improved specificity without significantly reducing sensitivity.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://ankursethi.com/blog/prevent-cognitive-debt-by-manually-retyping-llm-generated-code",
-   "title_hash": "cdc5205aba9280ac3db5b2559bc4641f",
-   "first_seen": "2026-08-03T18:08:09.029881+00:00",
-   "kept": false,
-   "reason": "general software development practice discussion, not medical AI or education content"
-  },
-  {
-   "url": "https://octanejs.dev/",
-   "title_hash": "7eaa1c41e4125a7058db0bf7a39be71d",
-   "first_seen": "2026-08-03T18:08:09.029881+00:00",
-   "kept": false,
-   "reason": "web framework development release, off-topic for medical education audience"
-  },
-  {
    "url": "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it",
    "title_hash": "69174e1c2a53ca8df6fca9a3fdc123e2",
    "first_seen": "2026-08-03T21:31:11.729074+00:00",
@@ -33792,6 +33649,142 @@
    "score": 3.0,
    "thumbnail": "https://i4.ytimg.com/vi/oBdLhD5nPYw/hqdefault.jpg",
    "display_title": "Panel discussion on OpenAI's cancelled Astra release, Sonnet 5.5, and Meta Muse"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/10/amazons-1b-plan-to-combat-data-center-backlash-draws-more-backlash",
+   "title_hash": "51e8a8ae413f2e7c3da1c83b322e48d6",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "data center business and local politics, marginal for this audience"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e94109",
+   "title_hash": "e6ee1e4684d22baf6f4ed26d9a77cdce",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": true,
+   "title": "Machine Learning for Human-Autonomy Teaming in Surgical Skill Assessment: Scoping Review",
+   "source": "JMIR AI",
+   "published": "2026-10-02T20:30:02+00:00",
+   "summary": "A scoping review maps machine learning methods for assessing surgical skill, aiming to support adaptive, real-time guidance in partnerships between surgeons and intelligent systems.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://arstechnica.com/tech-policy/2026/10/us-arrests-tech-ceo-accused-of-smuggling-300m-in-nvidia-chips-into-china",
+   "title_hash": "fa818e00c6f2f7b9e6f97c53cf20b9b0",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "enforcement and trade news of marginal relevance to this audience"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e98818",
+   "title_hash": "85877524219642eeaa3e9273baa81f1b",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "narrow regional dashboard development, not AI-focused"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvz1ex/i_made_my_iphone_a_second_gpu_for_my_24_gb",
+   "title_hash": "1c3a2c5550b2aa31d4ae7fe70dc7e159",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "performance-tinkering thread"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvxl4n/qwen3827bhumanlikechat_20_texts_like_a_human_now",
+   "title_hash": "0a79fae72a8bb92093b3a08713c6d5da",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "niche community model release, personal fine-tune"
+  },
+  {
+   "url": "https://huggingface.co/blog/allenai/astabrief",
+   "title_hash": "46098b70a1f1cf9f5e89f917ac5cec02",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "niche tool release with no content or significance shown"
+  },
+  {
+   "url": "https://arstechnica.com/gadgets/2026/10/the-7-year-old-nvidia-shield-tv-is-now-100-more-expensive-thanks-to-ai",
+   "title_hash": "faf85c148f7502ceb8f6939367f0b5de",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "consumer hardware pricing, off-topic for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wvv6im/new_in_llamacpp_decision_models",
+   "title_hash": "a64da842c3a14c9b8e45207828931d9d",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "minor tool release notes for niche software"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42824845?fc=20260609215449&ff=20261002164649&v=2.20.1",
+   "title_hash": "4b8cae818ad535ba88d285b7bff9ebf0",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence in Orthopaedic Education Across the Career Continuum: Moving from Benchmark Performance to Continuing Professional Development",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-02T10:00:00+00:00",
+   "summary": "A review of how artificial intelligence is entering orthopaedic education, noting most evidence comes from trainee settings and arguing for continuing professional development that supports safe adoption by practising surgeons.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42824394?fc=20260609215449&ff=20261002164649&v=2.20.1",
+   "title_hash": "b9eaef91de69373744dd7188b70090c4",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": true,
+   "title": "A Pilot Study of Junior Medical Officers in Sydney, Australia: Knowledge and Attitudes Towards Artificial Intelligence",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-02T10:00:00+00:00",
+   "summary": "A pilot survey of junior medical officers in Northern Sydney examines their knowledge of and attitudes toward artificial intelligence in healthcare.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Attitudes and adoption"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03261-6",
+   "title_hash": "33ae31d845a0250d254cfec10019ad70",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "narrow predictive model application with no broad significance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03320-y",
+   "title_hash": "a160277c3b218c7d0a5587ea16671dcc",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": true,
+   "title": "Clinician-centered evaluation of large language model-generated discharge summaries for longer hospitalizations",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-02T00:00:00+00:00",
+   "summary": "A peer-reviewed study has clinicians evaluate discharge summaries generated by large language models for longer hospital stays.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03328-4",
+   "title_hash": "8fa99776b5260e4374358328acd0bc9a",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "narrow study of limited relevance to this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03302-0",
+   "title_hash": "665f007fc149776becd21f5bc7afab51",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "narrow survey instrument validation, not AI-focused"
+  },
+  {
+   "url": "https://news.ycombinator.com/item?id=49911500",
+   "title_hash": "3ea1fe51a9ef9a56d075211c780a030b",
+   "first_seen": "2026-10-02T20:46:49.008235+00:00",
+   "kept": false,
+   "reason": "niche developer tool release"
   }
  ],
  "digests": [
