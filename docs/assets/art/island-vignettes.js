@@ -3293,10 +3293,36 @@
     // (its shadow falls down and to the left, away from the window and the sconce, the room's lights)
     s += `<path class="isl-tdrop" d="${rect(cx0 - Y(0.012), cT + Y(0.02), cw, cB - cT)}"/>`
       + `<path class="isl-bink" d="M${F(cx0 + cw * 0.3)} ${F(cT)}L${F(cx0 + cw / 2)} ${F(cT - Y(0.07))}L${F(cx0 + cw * 0.7)} ${F(cT)}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/>`
-      + `<circle class="isl-tiron" cx="${F(cx0 + cw / 2)}" cy="${F(cT - Y(0.07))}" r="${F(Math.max(1.2, Y(0.01)))}"/>`
-      + `<path class="isl-lpage" d="${rect(cx0, cT, cw, cB - cT)}"/>`
-      + `<path class="isl-cband" d="${rect(cx0, cT, cw, Y(0.12))}"/><path class="isl-tiron" d="${rect(cx0 - Y(0.006), cT - Y(0.012), cw + Y(0.012), Y(0.02))}"/>`;
+      + `<circle class="isl-tiron" cx="${F(cx0 + cw / 2)}" cy="${F(cT - Y(0.07))}" r="${F(Math.max(1.2, Y(0.01)))}"/>`;
+    // (art-audit pass 4, 2026-10-01: the edges of the months beneath show at the page's foot, each a pixel
+    // lower and a step darker than the one above it, so the calendar reads as a pad of pages, not one card)
+    const pe = Math.max(1, Y(0.0035));
+    s += `<path class="isl-lpage" d="${rect(cx0, cB - 1, cw, 1 + 3 * pe)}"/>`;
+    for (let i = 0; i < 3; i++) s += `<path class="isl-tdrop" d="${rect(cx0, cB + i * pe, cw, (3 - i) * pe)}"/>`;
+    s += `<path class="isl-lpage" d="${rect(cx0, cT, cw, cB - cT)}"/><path class="isl-cband" d="${rect(cx0, cT, cw, Y(0.12))}"/>`
+      // (art-audit pass 4, 2026-10-01: the sheet had one flat fill, the loudest area at Night; the sconce and the
+      // window are both at its right, so it darkens toward its left edge, by how much set per version in
+      // layout-art.css, st-cpage: most at Night, least by Day, the pages' edges under it too; then the binding
+      // bar's shadow along the band)
+      + `<defs><linearGradient id="islcpageg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" class="st-cpage"/><stop offset="1" class="st-cpage0"/></linearGradient></defs>`
+      + `<path fill="url(#islcpageg)" d="${rect(cx0, cT, cw, cB - cT + 3 * pe)}"/><path class="isl-tdrop" d="${rect(cx0, cT + Y(0.008), cw, Math.max(1, Y(0.005)))}"/>`
+      + `<path class="isl-tiron" d="${rect(cx0 - Y(0.006), cT - Y(0.012), cw + Y(0.012), Y(0.02))}"/>`;
     const cols = 7, rows = 5, gw = (cw - Y(0.06)) / cols, gh = (cB - gT - Y(0.03)) / rows, gx0 = cx0 + Y(0.03);
+    // A1 (art-audit pass 4, 2026-10-01): the pen that crosses the days off, tied by a string round the binding
+    // bar's left end and hanging down the calendar's edge beside the crossed-off days, a little off plumb. It
+    // hangs on the page's edge, clear of the ring; a marker about one and a half times the cup's height, so it
+    // reads at the picture's size. Its shadow falls down and to the left as the calendar's does, and a pale
+    // line down its lit side (the sconce and the window are to the right) keeps its round barrel reading
+    // against the dark wall at Night. Drawn upright about its top, then turned.
+    const penX = cx0 - Y(0.004), penT = gT + 2 * gh, penL = Y(0.14), penW = Y(0.018), penA = 5;
+    const penD = polyD([[-penW / 2, 0], [penW / 2, 0], [penW / 2, penL * 0.86], [penW * 0.1, penL], [-penW * 0.1, penL], [-penW / 2, penL * 0.86]]);
+    s += `<path class="isl-cstring" d="M${F(penX)} ${F(cT - Y(0.012))}V${F(cT + Y(0.012))}Q${F(penX - Y(0.004))} ${F((cT + penT) / 2)} ${F(penX)} ${F(penT)}" stroke-width="${F(Math.max(0.7, Y(0.003)))}"/>`
+      + `<g transform="translate(${F(penX - Y(0.012))} ${F(penT + Y(0.02))}) rotate(${penA})"><path class="isl-tdrop" d="${penD}"/></g>`
+      + `<g transform="translate(${F(penX)} ${F(penT)}) rotate(${penA})">`
+      + `<rect class="isl-lbk2" x="${F(-penW / 2)}" y="0" width="${F(penW)}" height="${F(penL * 0.87)}" rx="${F(penW * 0.35)}"/>`
+      + `<path class="isl-lalu" d="${polyD([[-penW * 0.42, penL * 0.86], [penW * 0.42, penL * 0.86], [penW * 0.1, penL], [-penW * 0.1, penL]])}"/>`   // its pale tip
+      + `<path class="isl-tiron" d="${rect(-penW / 2, penL * 0.38, penW, penL * 0.05)}${rect(-penW * 0.14, penL * 0.03, penW * 0.28, penL * 0.33)}"/>`   // the cap's band and its clip
+      + `<path class="isl-lshadehi" d="M${F(penW * 0.3)} ${F(penL * 0.46)}V${F(penL * 0.82)}" stroke-width="${F(Math.max(0.6, penW * 0.16))}"/></g>`;
     let grid = '', ticks = '', dots = '';
     for (let c = 0; c < cols; c++) ticks += `M${F(gx0 + (c + 0.35) * gw)} ${F(gT - Y(0.03))}h${F(gw * 0.3)}`;
     for (let c = 0; c <= cols; c++) grid += `M${F(gx0 + c * gw)} ${F(gT)}V${F(gT + rows * gh)}`;
@@ -3347,8 +3373,20 @@
     const lx = (cx0 + cw + f.wx0) / 2, ly = Y(0.22);
     // (its lit mouth under the shade, and its cone kept on the wall, between the calendar and the window)
     const cf = Math.min(Y(0.12), (f.wx0 - (cx0 + cw)) / 2 - Y(0.012));
-    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.04), Y(0.22), 'islvbulb')}<ellipse class="isl-tbulb" cx="${F(lx)}" cy="${F(ly + Y(0.07))}" rx="${F(Y(0.026))}" ry="${F(Y(0.008))}"/><path d="${polyD([[lx - Y(0.03), ly + Y(0.06)], [lx + Y(0.03), ly + Y(0.06)], [lx + cf, Y(0.62)], [lx - cf, Y(0.62)]])}" fill="url(#islvspill)"/></g>`;
-    s += `<path class="isl-lbronze" d="${rect(lx - Y(0.012), ly - Y(0.04), Y(0.024), Y(0.05))}"/><path class="isl-cshade" d="M${F(lx - Y(0.035))} ${F(ly)}H${F(lx + Y(0.035))}L${F(lx + Y(0.03))} ${F(ly + Y(0.07))}H${F(lx - Y(0.03))}Z"/>`;
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.04), Y(0.22), 'islvbulb')}<path d="${polyD([[lx - Y(0.03), ly + Y(0.06)], [lx + Y(0.03), ly + Y(0.06)], [lx + cf, Y(0.62)], [lx - cf, Y(0.62)]])}" fill="url(#islvspill)"/></g>`;
+    // C1 (art-audit pass 4, 2026-10-01): the stem and the shade were one brown, a broad neck on a body narrowing
+    // downward, with no plate and no mouth, so by Day the sconce read as a bottle on the wall. Now an iron plate
+    // on the wall, a thin brass rod from its knuckle, and a cream fabric shade with a bronze trim (isl-cfab),
+    // flared toward its foot as a lampshade is, its side away from the window in shade; its open mouth seen
+    // from below in every version, dark inside by Day and lit over it from Dawn to Night, as the hospital
+    // room's lamp does. It keeps the old one's width, since at 1440 it stands close to the window's frame.
+    const st = Y(0.021), sb = Y(0.035), sm = ly + Y(0.07), mry = Y(0.01), tw = F(Math.max(0.8, Y(0.003)));
+    s += `<rect class="isl-tiron" x="${F(lx - Y(0.013))}" y="${F(ly - Y(0.076))}" width="${F(Y(0.026))}" height="${F(Y(0.054))}" rx="${F(Y(0.009))}"/>`
+      + `<path class="isl-lbronze" d="${rect(lx - Y(0.005), ly - Y(0.049), Y(0.01), Y(0.051))}"/><circle class="isl-lbronze" cx="${F(lx)}" cy="${F(ly - Y(0.049))}" r="${F(Y(0.008))}"/>`
+      + `<path class="isl-cfab" d="M${F(lx - st)} ${F(ly)}H${F(lx + st)}L${F(lx + sb)} ${F(sm)}H${F(lx - sb)}Z" stroke-width="${tw}"/>`
+      + `<path class="isl-lredsh" d="${polyD([[lx - st, ly], [lx - st * 0.25, ly], [lx - sb * 0.25, sm], [lx - sb, sm]])}"/>`
+      + `<ellipse class="isl-cfab" cx="${F(lx)}" cy="${F(sm)}" rx="${F(sb)}" ry="${F(mry)}" stroke-width="${tw}"/><ellipse class="isl-tunder" cx="${F(lx)}" cy="${F(sm)}" rx="${F(sb)}" ry="${F(mry)}"/>`
+      + `<g class="isl-vlamps isl-vwin" style="--i:1"><ellipse class="isl-tbulb" cx="${F(lx)}" cy="${F(sm)}" rx="${F(sb - Y(0.003))}" ry="${F(mry - Y(0.002))}"/></g>`;
     return `<g style="--isl-vstep:.5s">${s}</g>`;
   }
 
