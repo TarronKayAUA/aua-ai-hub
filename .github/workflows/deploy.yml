@@ -21,7 +21,11 @@ jobs:
     outputs:
       narration: ${{ steps.narrate.outcome }}
     steps:
+      # Full history: scripts/page_dates.py dates each page in sitemap.xml from
+      # git log, and a shallow clone would leave every page on the build date.
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: "3.13"

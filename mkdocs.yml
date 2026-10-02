@@ -177,6 +177,11 @@ plugins:
 
 hooks:
   - scripts/render_data.py
+  # Discoverability (2026-10-02): each page's meta description from its own
+  # opening paragraph, read after render_data and before the layout hooks.
+  - scripts/page_descriptions.py
+  # and each page's sitemap date from the git history of its sources.
+  - scripts/page_dates.py
   # Layout redesign (2026-09-25): page types, action slot, page ending.
   - scripts/layout_frame.py
   - scripts/layout_home.py
