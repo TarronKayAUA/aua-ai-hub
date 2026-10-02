@@ -81,6 +81,12 @@
   <meta name="twitter:description" content="{{ og_desc }}">
   <meta name="twitter:image" content="{{ config.site_url }}assets/social-card.png">
 
+  {# Google Search Console's HTML-tag verification (2026-10-02), on the home
+     page only, where Google looks; the code is mkdocs.yml extra.google_site_verification. #}
+  {% if config.extra.google_site_verification and page and page.is_homepage %}
+  <meta name="google-site-verification" content="{{ config.extra.google_site_verification }}">
+  {% endif %}
+
   {#
     Feed autodiscovery for the weekly digest. Without this the generated
     digest.xml is unreachable: no page linked it and no reader could find

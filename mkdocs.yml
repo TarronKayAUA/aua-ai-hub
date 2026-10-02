@@ -27,6 +27,11 @@ extra:
   # docs/javascripts/layout-nav.js): false shows the compass alone; true adds the
   # word "Navigate" beside it, as a small pill. Owner's choice (width round, 2026-09-27).
   nav_control_label: true
+  # Google Search Console ownership, by HTML tag (owner, 2026-10-02): a backup to
+  # the verification file docs/google78918ccefa582835.html, so the property stays
+  # verified if either is lost. overrides/main.html puts it on the home page only,
+  # where Google looks. Public by design; never remove it while the property exists.
+  google_site_verification: CjqW4eiI_MpDkC6d_jw-vSMRjPgEPHrgIjqPzSv3XIo
   # The redesign banner (owner, 2026-09-28: a banner for first visits that shows for
   # two weeks). overrides/main.html draws it on every page until a visitor closes it,
   # and only while the build date is on or before `until`; the news refresh rebuilds
