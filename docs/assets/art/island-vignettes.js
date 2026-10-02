@@ -1413,7 +1413,8 @@
     {
       const ew = Math.max(2, Y(0.02)), tip = [bx2 - ux * Y(0.03), by2 - uy * Y(0.03)];
       const eye = [tip[0] - ux * (ew / 2 + 0.6), tip[1] - uy * (ew / 2 + 0.6)];
-      const gaze = { shirt: '#d6cfbf', legs: '#2f3a4a', skin: '#8d5a3b', lean: 0.22, nod: 0.85, hand: [bx2 - ux * Y(0.022) - nx * ew * 0.45, by2 - uy * Y(0.022) - ny * ew * 0.45] };
+      // (hair a shade lighter than the default near-black: dimmed for Night, the head had gone into the sky)
+      const gaze = { shirt: '#d6cfbf', legs: '#2f3a4a', skin: '#8d5a3b', hair: '#3a2e26', lean: 0.22, nod: 0.85, hand: [bx2 - ux * Y(0.022) - nx * ew * 0.45, by2 - uy * Y(0.022) - ny * ew * 0.45] };
       const k = side(0, 0, Y(0.12), gaze).eye, who = side(eye[0] - k[0], Math.min(footY, eye[1] - k[1]), Y(0.12), gaze);
       s += `<g class="isl-lq" data-q="dn"><g class="isl-bfig">${who.d}</g><g class="isl-vlamps isl-vwin" style="--i:4"><g opacity=".6"><path class="isl-mlit" d="${who.rim}" stroke-width="${F(Math.max(0.7, Y(0.003)))}"/></g></g></g>`;
     }
@@ -2460,7 +2461,7 @@
     // (references/aua-library-1-study-hall-dusk): a laptop's screen lit toward the viewer, its cool glow and
     // the faint cool wash it lays on the cherry in front of it (isl-vlamps, so it is a light like the lamps');
     // headphones set down on their ear cups; a charger's cable run from a laptop to the socket in the nearest
-    // lamp's base (the lamp, drawn after, covers its end); and a takeaway box.
+    // lamp's base (the lamp, drawn after, covers its end).
     const screenGlow = (lx, z) => {
       const k = sc(z), [gx, gy] = onT(lx, 0, 0.865, z - 0.025), [wx, wy] = onT(lx, 0, 0.752, z + 0.17);
       const [, w0] = onT(lx, 0, 0.752, z + 0.02), [, w1] = onT(lx, 0, 0.752, z + 0.32);
@@ -2477,14 +2478,6 @@
       return bottle(lx, z, 'isl-lclear') + `<path class="isl-lsign" d="${rect(bx2 - bw, b1, 2 * bw, b0 - b1)}"/>`;
     };
     const cord = (a, b, sag, z) => `<path class="isl-lcord" d="M${F(a[0])} ${F(a[1])}Q${F((a[0] + b[0]) / 2)} ${F(Math.max(a[1], b[1]) + sag)} ${F(b[0])} ${F(b[1])}" stroke-width="${F(Math.max(0.7, 0.01 * m * sc(z)))}"/>`;
-    // (the takeaway box as the photograph's: a clear tub, narrower at its foot, under a red lid; drawn as a
-    // plain white box it had read as a ream of paper)
-    const takeaway = (lx, z) => {
-      const body = quad(onT(lx, -0.08, 0.75, z + 0.065), onT(lx, 0.08, 0.75, z + 0.065), onT(lx, 0.095, 0.81, z + 0.075), onT(lx, -0.095, 0.81, z + 0.075));
-      const lid = quad(onT(lx, -0.1, 0.825, z - 0.08), onT(lx, 0.1, 0.825, z - 0.08), onT(lx, 0.1, 0.825, z + 0.08), onT(lx, -0.1, 0.825, z + 0.08));
-      const rim = quad(onT(lx, -0.1, 0.808, z + 0.08), onT(lx, 0.1, 0.808, z + 0.08), onT(lx, 0.1, 0.825, z + 0.08), onT(lx, -0.1, 0.825, z + 0.08));
-      return `<path class="isl-lbox" d="${body}"/><path class="isl-lbottle" d="${lid}${rim}"/><path class="isl-lredsh" d="${rim}"/>`;
-    };
     // a backpack hung on the back of a chair that faces away from the viewer: its two shoulder straps,
     // in its own color, hooked over the top of the chair's back (owner, 2026-09-29)
     const bag = (lx, z, cls) => {
@@ -2586,10 +2579,9 @@
     put('y', openBook(near(0.55), 9.34, 'isl-lbk1') + note(near(0.6), 9.3));
     put('ya', openBook(near(0.86), 9.34, 'isl-lbk2') + bottle(near(0.91), 9.3, 'isl-lbottle'));
     // (d: a second student at Dusk, at the near seat on the right, its charger run to the third lamp's base;
-    // and someone's takeaway box left at the empty end of the table, clear of the seats' things, where among
-    // them it had read as more books; 2026-10-01)
-    put('d', cord(onT(near(0.9), -0.17, 0.752, 9.36), pt(near(0.8) + 0.06 * m, 0.75, 8.9), 0.05 * m * sc(9.2), 9.2)
-      + takeaway(near(0.1), 8.85));
+    // 2026-10-01. A takeaway box at the table's empty end was left out: at 1920 its red lid on a pale tub read
+    // as a book, pass 4 review)
+    put('d', cord(onT(near(0.9), -0.17, 0.752, 9.36), pt(near(0.8) + 0.06 * m, 0.75, 8.9), 0.05 * m * sc(9.2), 9.2));
     s += flush();
     for (const [q, i] of [[0.2, 6], [0.5, 7], [0.8, 8]]) s += lamp(n0 + (n1 - n0) * q, 8.9, i, i === 8);
     // (d: Dusk's two laptops, lit, with the first seat's mug and the second's clear water bottle. They stand
@@ -2738,8 +2730,9 @@
     //    outline on a hook.
     const lampGap = clamp(H * 0.42, W * 0.08, W * 0.14);
     const bx0 = X(0.035), bx1 = wx0 - lampGap, bT = Y(0.07), bB = Y(0.66), bw = bx1 - bx0, bh = bB - bT;
-    // (the lamp's place, drawn in section 5, set here since its light falls on the board: art-audit pass 4)
-    const lx = (bx1 + wx0) / 2, lT = Y(0.08), lB = Y(0.19), rt = Y(0.022), rb = Y(0.1);
+    // (the lamp's place, drawn in section 5, and the bench's top, section 4, set here since the lamp's light
+    // falls on the board and the wall down to the bench: art-audit pass 4)
+    const lx = (bx1 + wx0) / 2, lT = Y(0.08), lB = Y(0.19), rt = Y(0.022), rb = Y(0.1), tTop = Y(0.705);
     s += `<path class="isl-tdrop" d="${rect(bx0 + Y(0.01), bT + Y(0.02), bw + Y(0.012), bh + Y(0.01))}"/>`;
     s += `<path class="isl-tboard" d="${rect(bx0, bT, bw, bh)}"/>`;
     let holes = '';
@@ -2787,20 +2780,25 @@
     // The lamp's light on the board (art-audit pass 4, 2026-10-01: the board beside the lamp had taken none of
     // it): warm, strongest at the board's lamp end and falling off across it, centred below the bulb since the
     // shade keeps it off the wall above; with the lamp (Dawn to Night, not by Day), over the board and its
-    // painted outlines and under the tools' shadows, which it does not reach. Then the shadows: soft, cast
+    // painted outlines and under the tools' shadows, which it does not reach; and over the wall round it, the
+    // window's frame and the wall beside the lamp, down to the bench (laid over the board alone, the warmth had
+    // stopped dead at its frame while the wall nearest the bulb stayed grey: pass 4 review). Above the shade's
+    // rim it fades out, softly, since the shade keeps the light off the wall above. Then the shadows: soft, cast
     // down and to the left, away from the lamp and the window.
     const fcy = (lB + bB) / 2;
     s += `<defs><radialGradient id="isltfall" gradientUnits="userSpaceOnUse" cx="${F(lx)}" cy="${F(fcy)}" r="${F(Math.hypot(lx - bx0, bB - fcy))}">`
       + '<stop offset="0" class="st-g1" stop-opacity=".22"/><stop offset=".12" class="st-g1" stop-opacity=".15"/><stop offset=".35" class="st-g1" stop-opacity=".055"/>'
       + '<stop offset=".7" class="st-g1" stop-opacity=".015"/><stop offset="1" class="st-g1" stop-opacity="0"/></radialGradient>'
+      + `<linearGradient id="isltfallv" gradientUnits="userSpaceOnUse" x1="0" y1="${F(lT + (lB - lT) * 0.4)}" x2="0" y2="${F(lB + Y(0.06))}"><stop offset="0" stop-color="#000"/><stop offset="1" stop-color="#fff"/></linearGradient>`
+      + `<mask id="isltfallm" maskUnits="userSpaceOnUse" x="0" y="0" width="${F(W)}" height="${F(H)}"><rect width="${F(W)}" height="${F(H)}" fill="url(#isltfallv)"/></mask>`
       + `<filter id="isltsoft" filterUnits="userSpaceOnUse" x="0" y="0" width="${F(W)}" height="${F(H)}"><feGaussianBlur stdDeviation="${F(Y(0.005))}"/></filter></defs>`;
-    s += `<g class="isl-vlamps isl-vwin" style="--i:1"><path d="${rect(bx0, bT, bw, bh)}" fill="url(#isltfall)"/></g>`;
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1"><path fill-rule="evenodd" mask="url(#isltfallm)" d="${rect(-2, -2, W + 4, tTop + 2)}${rect(wx0, wT, ww, wB - wT)}" fill="url(#isltfall)"/></g>`;
     s += `<g class="isl-tdrop" filter="url(#isltsoft)" transform="translate(${F(-Y(0.014))} ${F(Y(0.022))})">${cast}</g>`;
     s += `<path class="isl-thook" d="${hooks}" stroke-width="${F(Math.max(1, ts * 0.018))}" stroke-linecap="round"/>` + board;
     // 4. The bench: its top seen a little from above, its front, its legs, and the dark beneath it; a
     //    vise at its left end. By Day and at Sunset the hammer lies on it under its empty outline, with a
     //    block plane on a plank and a curl of shavings; at Night it is cleared but for the plank.
-    const tTop = Y(0.705), tFront = Y(0.74), tFoot = Y(0.84), bench1 = wx1 + Y(0.1);
+    const tFront = Y(0.74), tFoot = Y(0.84), bench1 = wx1 + Y(0.1);   // (tTop with the lamp's place, above)
     s += `<path class="isl-tunder" d="${rect(-2, tFoot, bench1 + 2, H - tFoot + 2)}"/>`;
     let legs = '';
     for (const lx of [X(0.03), (bench1 + X(0.03)) / 2, bench1 - Y(0.09)]) legs += rect(lx, tFoot, Y(0.05), H - tFoot + 2);
@@ -2835,7 +2833,7 @@
     const plane = (b) => `<path class="isl-tiron" d="M${F(px)} ${F(b + 0.5)}V${F(b - ph * 0.55)}L${F(px + pw * 0.1)} ${F(b - ph)}H${F(px + pw * 0.95)}L${F(px + pw)} ${F(b - ph * 0.6)}V${F(b + 0.5)}Z"/>`
       + `<path class="isl-lwood" d="M${F(px + pw * 0.16)} ${F(b - ph)}a${F(pw * 0.08)} ${F(pw * 0.08)} 0 1 1 ${F(pw * 0.16)} 0ZM${F(px + pw * 0.62)} ${F(b - ph)}q${F(pw * 0.02)} ${F(-ph * 1.4)} ${F(pw * 0.24)} ${F(-ph * 1.1)}l${F(pw * 0.04)} ${F(ph * 1.1)}Z"/>`;
     // The plank the plane is working (art-audit pass 4, 2026-10-01: the plane and its shavings had had nothing
-    // to plane): pale wood, the shavings' own colour, lying on the bench a little out from the wall; its planed
+    // to plane): pale wood, lying on the bench a little out from the wall; its planed
     // top face, its front edge a shade darker with the grain along it, and its sawn end, which the viewer, to
     // its right, just sees, darker still; a thin shadow where it meets the bench. Its own random stream (the
     // grain), so the approved layout does not move. It runs from a little behind the plane to well past it,
@@ -2843,7 +2841,9 @@
     // shorter past the plane and the curls lie closer together.
     const shEnd = bxT - u * 0.04, pk0 = Math.max(px - u * 0.15, pen0 + u * 0.34);
     const pkR = clamp(shEnd - px - pw - u * 0.36, u * 0.12, u * 0.4);
-    const rp = rng(5241), pkL = px + pw + pkR - pk0, pkT = u * 0.034, pkD = u * 0.018, pkS = pkD * 0.7;
+    // (a board's thickness and a planed top paler than its edges: thinner and in the pencil's ochre, set aside at
+    // Dusk it had read as a longer pencil; pass 4 review)
+    const rp = rng(5241), pkL = px + pw + pkR - pk0, pkT = u * 0.05, pkD = u * 0.028, pkS = pkD * 0.7;
     const pkG = [[0.35, rp(), rp()], [0.7, rp(), rp()]];   // (its grain, drawn once: one plank wherever it lies)
     const plank = (x0, yb) => {
       const x1 = x0 + pkL, yt = yb - pkT, yk = yt - pkD, end = polyD([[x1, yb], [x1, yt], [x1 + pkS, yk], [x1 + pkS, yk + pkT]]);
@@ -2851,6 +2851,7 @@
       for (const [f, a, b] of pkG) g += `M${F(x0 + pkL * (0.03 + a * 0.1))} ${F(yt + pkT * f)}H${F(x1 - pkL * (0.04 + b * 0.25))}`;
       return `<path class="isl-tdrop" d="${rect(x0 - u * 0.01, yb - 0.5, pkL + pkS + u * 0.02, Math.max(1, u * 0.009))}"/>`
         + `<path class="isl-lbk3" d="${polyD([[x0, yb], [x0, yt], [x0 + pkS, yk], [x1 + pkS, yk], [x1 + pkS, yk + pkT], [x1, yb]])}"/>`
+        + `<path class="isl-lpage" opacity=".4" d="${polyD([[x0, yt], [x0 + pkS, yk], [x1 + pkS, yk], [x1, yt]])}"/>`   // (the planed top, pale)
         // (one shade over the front edge and the end, a second over the end)
         + `<path class="isl-tdrop" d="${rect(x0, yt, pkL, pkT)}${end}"/><path class="isl-tdrop" d="${end}"/>`
         + `<path class="isl-tgrain" d="${g}" stroke-width=".5"/>`;
@@ -3373,20 +3374,21 @@
     const lx = (cx0 + cw + f.wx0) / 2, ly = Y(0.22);
     // (its lit mouth under the shade, and its cone kept on the wall, between the calendar and the window)
     const cf = Math.min(Y(0.12), (f.wx0 - (cx0 + cw)) / 2 - Y(0.012));
-    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.04), Y(0.22), 'islvbulb')}<path d="${polyD([[lx - Y(0.03), ly + Y(0.06)], [lx + Y(0.03), ly + Y(0.06)], [lx + cf, Y(0.62)], [lx - cf, Y(0.62)]])}" fill="url(#islvspill)"/></g>`;
+    const st = Y(0.021), sb = Y(0.035), sm = ly + Y(0.07), mry = Y(0.01), tw = F(Math.max(0.8, Y(0.003)));
+    s += `<g class="isl-vlamps isl-vwin" style="--i:1">${halo(lx, ly + Y(0.04), Y(0.22), 'islvbulb')}<path d="${polyD([[lx - sb, sm], [lx + sb, sm], [lx + cf, Y(0.62)], [lx - cf, Y(0.62)]])}" fill="url(#islvspill)"/></g>`;   // (from the shade's mouth)
     // C1 (art-audit pass 4, 2026-10-01): the stem and the shade were one brown, a broad neck on a body narrowing
     // downward, with no plate and no mouth, so by Day the sconce read as a bottle on the wall. Now an iron plate
     // on the wall, a thin brass rod from its knuckle, and a cream fabric shade with a bronze trim (isl-cfab),
     // flared toward its foot as a lampshade is, its side away from the window in shade; its open mouth seen
     // from below in every version, dark inside by Day and lit over it from Dawn to Night, as the hospital
     // room's lamp does. It keeps the old one's width, since at 1440 it stands close to the window's frame.
-    const st = Y(0.021), sb = Y(0.035), sm = ly + Y(0.07), mry = Y(0.01), tw = F(Math.max(0.8, Y(0.003)));
     s += `<rect class="isl-tiron" x="${F(lx - Y(0.013))}" y="${F(ly - Y(0.076))}" width="${F(Y(0.026))}" height="${F(Y(0.054))}" rx="${F(Y(0.009))}"/>`
       + `<path class="isl-lbronze" d="${rect(lx - Y(0.005), ly - Y(0.049), Y(0.01), Y(0.051))}"/><circle class="isl-lbronze" cx="${F(lx)}" cy="${F(ly - Y(0.049))}" r="${F(Y(0.008))}"/>`
       + `<path class="isl-cfab" d="M${F(lx - st)} ${F(ly)}H${F(lx + st)}L${F(lx + sb)} ${F(sm)}H${F(lx - sb)}Z" stroke-width="${tw}"/>`
       + `<path class="isl-lredsh" d="${polyD([[lx - st, ly], [lx - st * 0.25, ly], [lx - sb * 0.25, sm], [lx - sb, sm]])}"/>`
       + `<ellipse class="isl-cfab" cx="${F(lx)}" cy="${F(sm)}" rx="${F(sb)}" ry="${F(mry)}" stroke-width="${tw}"/><ellipse class="isl-tunder" cx="${F(lx)}" cy="${F(sm)}" rx="${F(sb)}" ry="${F(mry)}"/>`
-      + `<g class="isl-vlamps isl-vwin" style="--i:1"><ellipse class="isl-tbulb" cx="${F(lx)}" cy="${F(sm)}" rx="${F(sb - Y(0.003))}" ry="${F(mry - Y(0.002))}"/></g>`;
+      // (lit, the fabric glows with the bulb inside it: lit only at its mouth it had read as metal; pass 4 review)
+      + `<g class="isl-vlamps isl-vwin" style="--i:1"><path class="isl-tbulb" opacity=".3" d="M${F(lx - st)} ${F(ly)}H${F(lx + st)}L${F(lx + sb)} ${F(sm)}H${F(lx - sb)}Z"/><ellipse class="isl-tbulb" cx="${F(lx)}" cy="${F(sm)}" rx="${F(sb - Y(0.003))}" ry="${F(mry - Y(0.002))}"/></g>`;
     return `<g style="--isl-vstep:.5s">${s}</g>`;
   }
 
@@ -3467,9 +3469,10 @@
     s += `<g class="isl-mroom">${pt}</g>`;
     // The blanket over them (C1/A1): a long low mound from the chest, down the raised head and over the hips,
     // a rise at the knees and a small tent at the feet, then flat to the foot of the bed. Along the raised
-    // head it lies on the mattress; from the hips it hangs over the bed's side as before. The bed is drawn
-    // long, so the legs take more of it than a body's proportions would.
-    const sHip = Y(0.42), xHip = on(sHip, 0)[0], xFt = xHip + Math.max(Y(0.38), (b1 - xHip) * 0.7);
+    // head it lies on the mattress; from the hips it hangs over the bed's side as before. The legs keep a
+    // body's proportions at every width (stretched to fill the long bed, at 1920 they had been twice a
+    // person's: pass 4 review); past the feet the blanket lies flat to the foot of the bed, as it does.
+    const sHip = Y(0.42), xHip = on(sHip, 0)[0], xFt = xHip + Y(0.38);
     const lg = (k, w) => [xHip + (xFt - xHip) * k, bTop - w];
     // (the legs kept below the side rail's bar, so the rail reads as standing clear of them)
     const sil = [[sE, wE], [Y(0.27), Y(0.1)], [Y(0.34), Y(0.09)], [sHip, Y(0.074)]]
@@ -3494,7 +3497,9 @@
     s += `<g class="isl-mroom"><path fill="none" stroke="${pSkin}" stroke-width="${F(aw)}" stroke-linecap="round" stroke-linejoin="round" d="M${P(aS)}L${P(aE)}L${P(aH)}"/>`
       + `<path fill="none" stroke="${pSkin}" stroke-width="${F(aw * 1.1)}" stroke-linecap="round" d="M${P(aH)}l${F(au[0] * Y(0.018))} ${F(au[1] * Y(0.018))}"/>`   // the hand
       + `<path fill="none" stroke="${pGown}" stroke-width="${F(aw * 1.25)}" stroke-linecap="round" d="M${P(aS)}L${P(mid(aS, aE, 0.35))}"/></g>`;
-    s += `<path class="isl-hframe" d="${rect(hx + Y(0.06), bTop - Y(0.08), (b1 - hx) * 0.45, Y(0.012))}M${F(hx + Y(0.07))} ${F(bTop - Y(0.07))}V${F(bTop)}M${F(hx + (b1 - hx) * 0.45)} ${F(bTop - Y(0.07))}V${F(bTop)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
+    // (the side rail at the bed's head end, a third of its length, as a hospital bed's head rails are: half its
+    // length, at 1920 its end post had stood on the patient's feet; pass 4 review)
+    s += `<path class="isl-hframe" d="${rect(hx + Y(0.06), bTop - Y(0.08), (b1 - hx) * 0.32, Y(0.012))}M${F(hx + Y(0.07))} ${F(bTop - Y(0.07))}V${F(bTop)}M${F(hx + (b1 - hx) * 0.32)} ${F(bTop - Y(0.07))}V${F(bTop)}" stroke-width="${F(Math.max(1, Y(0.01)))}"/>`;
     // 3. The drip stand at the bed's head: pole, hooks, the bag with its fluid level, the line.
     const ix = b0 - Y(0.1), iT = Y(0.12);
     s += `<ellipse class="isl-tdrop" cx="${F(ix)}" cy="${F(fl + Y(0.025))}" rx="${F(Y(0.08))}" ry="${F(Y(0.008))}"/>`;

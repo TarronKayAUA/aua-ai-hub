@@ -442,7 +442,8 @@
    Antigua's sunset, so it soars at Dawn, Day and Sunset only. Its place (birdPlace()) and the clouds'
    clearance round it are unchanged; at Dusk and Night the pass ends on the campus's last windows
    (isl-vlast), as it already did. */
-.isl-hero:is([data-sky="dusk"], [data-sky="night"]) .isl-bird {
+.isl-hero:is([data-sky="dusk"], [data-sky="night"]) .isl-bird,
+[data-md-color-scheme="slate"] .isl-hero:where(:not([data-sky])) .isl-bird {
   display: none;
 }
 
@@ -634,11 +635,10 @@
   --isl-lscreen: #d6e8fa; }
 /* Its evening things at Dusk (the same pass), from the owner's photograph of the hall at that hour: the
    laptops' screens lit, bright in the dim hall (--isl-lscreen, just above); clear water bottles; headphones;
-   a charger's white cable; a takeaway box, a clear tub under a red lid (the red bottle's colour). */
+   a charger's white cable. */
 .isl .isl-lclear { fill: #dbe6ee; fill-opacity: 0.75; }
 .isl .isl-lphones { stroke: var(--isl-lbezel); fill: none; stroke-linecap: round; }
 .isl .isl-lcord { stroke: #e2ded6; stroke-opacity: 0.75; fill: none; stroke-linecap: round; }
-.isl .isl-lbox { fill: #e9e2d4; fill-opacity: 0.8; }
 /* The tool wall (the Tool Directory's head, 2026-09-29): the room shares the library's wall, wood,
    aluminium and frame tokens, so the two interiors take the same light in each version; its own are
    the pegboard, the painted outlines on it, and the cast iron. The hammer hangs in its outline at Dawn,
