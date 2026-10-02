@@ -248,6 +248,45 @@
       s += `<path class="f-near" d="M${F(cx - 9 * u)} ${F(ey)}Q${F(cx)} ${F(ey - ery * 0.55)} ${F(cx + 9 * u)} ${F(ey)}Z"/>`;
     }
     s += `<path class="isl-vspill" d="M${F(cx - 3.2 * u)} ${F(base)}H${F(cx + 3.2 * u)}L${F(cx + 9 * u)} ${F(Math.min(H, ey))}H${F(cx - 9 * u)}Z" fill="url(#islvspill)"/>`;
+    // People at the entrance by the hour (art-audit pass 4, 2026-10-01; by version): the campus had stood
+    // empty in all five versions, so nothing said a medical school was in use. They come and go as the
+    // library's readers do: one early arrival with a backpack walks in toward the lit door at Dawn; three
+    // stand by the portico by Day, two of them in white coats; two leave to the left at Sunset, one with a
+    // white coat over the arm; one late leaver stands in the lit doorway at Dusk; and no one is there at
+    // Night, as the library is empty then. Each 2.1u tall (about 11 px at 1920), a person's size beside the
+    // three-storey blocks, a shade generous so they still read as people at the hero's scale; standing at the
+    // building's foot, clear of the door's middle, the palms' trunks, the flagpoles and the lamps; dimmed with
+    // the light by version (isl-bfig), as the bell tower's reader is. Placed by hand, so no draws are taken
+    // from r and the approved layout does not move. (The same in the Lecture Outline's campus, which no page
+    // shows now.)
+    {
+      const ph = 2.1 * u, fy = base + 0.45 * u, sw = ph * 0.13, white = '#f2f1ec';
+      const at = (dx, dy) => [cx + dx * u, fy + dy * u];
+      const P = (dx, dy, o) => person(...at(dx, dy), ph, o);
+      // a white coat: person()'s shirt and sleeves in white, and the coat's skirt hanging to the knee over the trousers
+      const coat = (dx, dy, o) => {
+        const [x, y] = at(dx, dy), ft = y - ph;
+        return P(dx, dy, { ...o, shirt: white }) + `<path fill="${white}" d="${polyD([[x - sw * 0.84, ft + ph * 0.5], [x + sw * 0.84, ft + ph * 0.5], [x + sw * 0.96, ft + ph * 0.76], [x - sw * 0.96, ft + ph * 0.76]])}"/>`;
+      };
+      // Dawn: seen from behind a pace out from the door, a backpack over the shirt
+      const [wx, wy] = at(-1.5, 0.5);
+      const dawn = P(-1.5, 0.5, { shirt: '#c9b79a', legs: '#2f3a4a', hair: '#2a1d16' })
+        + `<path fill="#34405a" d="${rect(wx - sw * 0.72, wy - ph + ph * 0.18, sw * 1.44, ph * 0.29)}"/>`;
+      // Day: a student in a pale shirt left of the portico; two in white coats talking right of it
+      const day = P(-8, 0, { shirt: '#a9c7de', legs: '#34445e', skin: '#b07a55', hair: '#2a1d16', front: true })
+        + coat(7.5, 0.1, { legs: '#3a3f4a', skin: '#6b4630', front: true }) + coat(8.7, 0, { legs: '#4a4f5a', skin: '#c89b78', hair: '#4a3020' });
+      // Sunset: two walking out to the left along the front, side by side before one of the left block's lit
+      // ground-floor arches (the backlit front is too dark to show them against), the outer one with a white
+      // coat over the arm
+      const [sx, sy] = at(-21.05, -0.25);
+      const sunset = P(-20.4, -0.15, { shirt: '#3d6466', legs: '#2f3a4a', skin: '#8d5a3b', front: true })
+        + P(-21.05, -0.25, { shirt: '#7d4a52', legs: '#3a3f4a', skin: '#c89b78', hair: '#1d1916', front: true })
+        + `<path fill="${white}" d="${rect(sx - sw * 1.32, sy - ph + ph * 0.4, sw * 0.7, ph * 0.28)}"/>`;
+      // Dusk: on the threshold, dark against the lit door
+      const dusk = person(cx + 1.1 * u, base, ph, { shirt: '#2b303b', legs: '#1d2129', skin: '#3b2b22', hair: '#121010', front: true });
+      s += `<g class="isl-bfig"><g class="isl-lq" data-q="a">${dawn}</g><g class="isl-lq" data-q="y">${day}</g>`
+        + `<g class="isl-lq" data-q="s">${sunset}</g><g class="isl-lq" data-q="d">${dusk}</g></g>`;
+    }
     const lampH = 6.2 * u;
     let postsD = '', capsD = '', glows = '', heads = '', glassSh = '', collars = '';
     const lamps = [-0.93, -0.62, 0.62, 0.93];
