@@ -1539,6 +1539,11 @@
     const X = (f) => f * W, Y = (f) => f * H, r = rng(1750);
     const street = Y(0.84);
     let s = '';
+    // The road's own ground, opaque, laid first so the windows' spill of light still falls on it: the street had been
+    // only the track at .55 over the base sea, so by Day it turned harbour teal and at Night took the sea's navy, and
+    // the Court House read as standing on the waterfront again (art-audit pass 4, 2026-10-01).
+    const road = `M${F(-2)} ${F(street)}H${F(W + 2)}V${F(H + 2)}H${F(-2)}Z`;
+    s += `<path class="isl-vstreet" d="${road}"/>`;
     // 1. The town behind: roofs hipped, gabled and flat, at different heights, a few lit windows.
     // (by Day the town's houses show their walls in the island's pastels under red or gray roofs; at night
     // they are the same dark shapes as before, windows lit)
@@ -1613,7 +1618,7 @@
     s += `<g class="isl-vwin" style="--i:3"><ellipse cx="${F((x0 + x1) / 2)}" cy="${F(street - Y(0.08))}" rx="${F((x1 - x0) * 0.62)}" ry="${F(Y(0.24))}" fill="url(#islvwarm)"/></g>`;
     // the ground floor: five tall round-arched windows with voussoirs and a keystone; three lit, their
     // light spilling out across the pavement
-    let arches = '', dark = '', vous = '', keys = '', spill = '';
+    let arches = '', dark = '', vous = '', keys = '', spill = '', glaze = '';
     for (let i = 0; i < 5; i++) {
       const cx = x0 + bw * (i + 0.5), aw = bw * 0.42, aTop = mid + Y(0.07), aBot = street - Y(0.03), rr = aw / 2, cy = aTop + rr;
       const d = `M${F(cx - rr)} ${F(aBot)}V${F(cy)}A${F(rr)} ${F(rr)} 0 0 1 ${F(cx + rr)} ${F(cy)}V${F(aBot)}Z`;
@@ -1622,6 +1627,11 @@
         arches += d;
         spill += `M${F(cx - rr)} ${F(street)}H${F(cx + rr)}L${F(cx + rr * 1.8)} ${F(street + Y(0.09))}H${F(cx - rr * 1.8)}Z`;
       } else dark += d;
+      // each arch glazed, lit or dark: a mullion up the middle, a transom at the spring of the arch and a fanlight of
+      // four spokes from the transom's middle (art-audit pass 4, 2026-10-01: bare openings read as doorways, and lit
+      // they were the largest flat bright shapes in the picture)
+      glaze += `M${F(cx - rr)} ${F(cy)}H${F(cx + rr)}M${F(cx)} ${F(cy)}V${F(aBot)}`;
+      for (let k = 1; k <= 4; k++) glaze += `M${F(cx)} ${F(cy)}L${F(cx + Math.cos(Math.PI * (1 + k / 5)) * rr)} ${F(cy + Math.sin(Math.PI * (1 + k / 5)) * rr)}`;
       for (let k = 0; k <= 6; k++) {
         const a = Math.PI + (k / 6) * Math.PI, ro = rr + Y(0.028);
         vous += `M${F(cx + Math.cos(a) * rr)} ${F(cy + Math.sin(a) * rr)}L${F(cx + Math.cos(a) * ro)} ${F(cy + Math.sin(a) * ro)}`;
@@ -1631,6 +1641,7 @@
     }
     s += `<path class="isl-vdark" d="${dark}"/><path class="f-pulse isl-vwin" style="--i:3" d="${arches}"/>`;
     s += `<path class="isl-vmul" d="${arches}${dark}" stroke-width=".6" fill="none"/>`;
+    s += `<path class="isl-vmul" d="${glaze}" stroke-width=".9"/>`;
     s += `<path class="isl-vcourse" d="${vous}" stroke-width="1.2"/><path class="isl-vstone" d="${keys}"/>`;
     // the upper floor, the council room: five sash windows, lintels and sills, glazing bars; lit last
     let sash = '', sashDark = '', trim = '', bars = '';
@@ -1674,14 +1685,118 @@
     s += `<path d="M${F(rx0)} ${F(street + 1)}V${F(street - Y(0.018))}H${F(gl)}V${F(street + 1)}ZM${F(gr)} ${F(street + 1)}V${F(street - Y(0.018))}H${F(rx1)}V${F(street + 1)}Z" fill="url(#islvfacade)"/>`;
     // 5. The street: the pavement and its kerb, the road's setts receding, lanterns on posts with their
     //    halos and pools, palms at the edges
-    s += `<path class="isl-vtrack" d="M${F(-2)} ${F(street)}H${F(W + 2)}V${F(H + 2)}H${F(-2)}Z"/>`;
+    s += `<path class="isl-vtrack" d="${road}"/>`;
     s += `<path class="isl-vstep-edge" d="M${F(-2)} ${F(street + Y(0.045))}H${F(W + 2)}" stroke-width="${F(Math.max(1, Y(0.006)))}" stroke-opacity=".6"/>`;
-    let setts = '';
-    for (let y = street + Y(0.07); y < H; y += Y(0.024) + (y - street) * 0.12) for (let x = -r() * 20; x < W; x += Y(0.03) + (y - street) * 0.5 + r() * 6) setts += `M${F(x)} ${F(y)}h${F(Y(0.016) + (y - street) * 0.3)}`;
-    s += `<path class="isl-vcourse" d="${setts}" stroke-width=".8" stroke-opacity=".5"/>`;
+    // the road's setts as blocks (art-audit pass 4, 2026-10-01: drawn as short dashes they read as ripples, and with
+    // the sea showing through, the street as a harbour's edge): rows from the kerb that deepen toward the viewer, each
+    // sett a little paler than the joints round it, its length varied so the joints stagger row to row. Their own
+    // random stream (the old dashes were the last draws from r, so nothing else moves).
+    const sr = rng(1752);
+    let settA = '', settB = '';
+    for (let y = street + Y(0.05), row = 0; y < H; row++) {
+      const rh = Y(0.014) + (y - street) * 0.12, g = Math.max(0.8, rh * 0.13), sl = rh * 2.2;
+      for (let x = -sl * (row % 2 ? 0.5 : 0) - sr() * sl * 0.3; x < W + 2;) {
+        const w = sl * (0.8 + sr() * 0.4), d = rect(x + g / 2, y + g / 2, w - g, rh - g);
+        if (sr() < 0.5) settA += d; else settB += d;
+        x += w;
+      }
+      y += rh;
+    }
+    s += `<path class="isl-vstone" d="${settA}" fill-opacity=".2"/><path class="isl-vstone" d="${settB}" fill-opacity=".3"/>`;
+    // (each lantern's pool laid before the people, who stand in its light; the lanterns themselves after them)
+    for (const lx of [X(0.19), X(0.925)]) s += `<g class="isl-vwin" style="--i:1">${pool(lx, street + Y(0.06), Y(0.3), Y(0.06), 0.8)}</g>`;
+    // 6. People on the pavement by the hour (art-audit pass 4, by version; 2026-10-01: the street was empty in every
+    //    version, so nothing showed that anyone was there). The town is busy by day and empties by night: a sweeper
+    //    starts early by the left lantern at Dawn; by Day a visitor steps into the museum's entrance and two people
+    //    pass along the railings, one with her shopping; at Sunset a couple walk home; at Dusk one person waits under
+    //    the left lantern, in its light; at Night the street is empty. One set of colours, dimmed with the light by
+    //    version (isl-bfig); their clothes from their own random stream, so nothing else moves.
+    {
+      // (fh: a person of 1.7 m beside the lantern posts, about 4.3 m, and the storeys, about 4 m)
+      const pr = rng(1751), fh = Y(0.105), fy = street + Y(0.02);
+      const pick = (a) => a[Math.floor(pr() * a.length)];
+      const who = (o = {}) => ({ shirt: pick(['#c7d6e3', '#e8e2d4', '#9ec0d6', '#b8573f', '#7d4a52', '#3d6466', '#5c5e3e', '#d9a441']),
+        legs: pick(['#2f3a4a', '#5a5148', '#3a3f4a', '#4a4038']), skin: pick(['#6b4630', '#8d5a3b', '#4f3424', '#7a4e33']), hair: '#1d1916', ...o });
+      // a colour darkened, for the far leg and arm, which are in their own shade
+      const dim = (hex, k = 0.72) => '#' + [1, 3, 5].map((i) => Math.round(parseInt(hex.slice(i, i + 2), 16) * k).toString(16).padStart(2, '0')).join('');
+      // drawing in units of a figure's height h, its feet at the origin, facing right (the caller mirrors it)
+      const kit = (h) => ({
+        P: (a, b) => `${F(a * h)} ${F(b * h)}`,
+        R: (a, b, w, hh) => rect(a * h, b * h, w * h, hh * h),
+        limb: (pts, col, wd) => `<path fill="none" stroke="${col}" stroke-width="${F(Math.max(0.7, wd * h))}" stroke-linecap="round" stroke-linejoin="round" d="M${pts.map(([a, b]) => `${F(a * h)} ${F(b * h)}`).join('L')}"/>`,
+      });
+      const shoe = '#3a2e24';
+      // A figure in profile, facing `dir` (1 right, -1 left), feet at (x, y), h tall, in person()'s proportions and
+      // colours: a passer-by needs a stride, and person() stands still, facing us or turned away. The far leg and arm
+      // in shade; `dress` a skirt to the knee, `bag` a market bag hanging from the near hand, `rim` the Sunset's light
+      // along whichever edge faces the Sun, on the left (sunset: '18:11', between the palm and the lamp).
+      const walker = (x, y, h, dir, c, { dress = false, bag = null, rim = false } = {}) => {
+        const { P, R, limb } = kit(h), hr = 0.075, hx = 0.025, hy = -1 + hr, lc = dress ? c.skin : c.legs;
+        const farArm = [[0.01, -0.79], [0.055, -0.66], [0.1, -0.555]];
+        const nearArm = bag ? [[-0.005, -0.79], [-0.03, -0.66], [-0.035, -0.535]] : [[-0.005, -0.79], [-0.05, -0.66], [-0.085, -0.555]];
+        // the far arm swinging forward and the far leg trailing, both in shade; then the near leg striding forward
+        let o = limb(farArm.slice(0, 2), dim(c.shirt), 0.06) + limb(farArm.slice(1), dim(c.skin), 0.045);
+        o += `<path fill="${dim(lc)}" d="M${P(-0.04, -0.5)}L${P(0.03, -0.5)}L${P(-0.1, -0.025)}L${P(-0.155, -0.025)}Z"/><path fill="${shoe}" d="${R(-0.17, -0.03, 0.08, 0.03)}"/>`;
+        o += `<path fill="${lc}" d="M${P(-0.035, -0.5)}L${P(0.04, -0.5)}L${P(0.155, -0.025)}L${P(0.1, -0.025)}Z"/><path fill="${shoe}" d="${R(0.095, -0.03, 0.09, 0.03)}"/>`;
+        // the body: a shirt to the hips, or a dress to the knee
+        const hem = dress ? [[-0.11, -0.27], [0.115, -0.27]] : [[-0.075, -0.49], [0.07, -0.49]];
+        o += `<path fill="${c.shirt}" d="M${P(...hem[0])}L${P(-0.085, -0.79)}Q${P(-0.08, -0.85)} ${P(-0.03, -0.855)}H${F(0.045 * h)}Q${P(0.085, -0.85)} ${P(0.085, -0.79)}L${P(...hem[1])}Z"/>`;
+        if (bag) o += `<path fill="none" stroke="${bag}" stroke-width="${F(Math.max(0.6, 0.015 * h))}" d="M${P(-0.085, -0.43)}L${P(-0.035, -0.53)}L${P(0.025, -0.43)}"/>`
+          + `<path fill="${bag}" d="${R(-0.1, -0.43, 0.14, 0.17)}"/><path fill="${dim(bag)}" d="${R(-0.1, -0.31, 0.14, 0.05)}"/>`;
+        o += limb(nearArm.slice(0, 2), c.shirt, 0.06) + limb(nearArm.slice(1), c.skin, 0.045);
+        // the neck, the head, and the hair over its back and crown
+        o += `<path fill="${c.skin}" d="${R(-0.02, -0.885, 0.04, 0.04)}"/><circle fill="${c.skin}" cx="${F(hx * h)}" cy="${F(hy * h)}" r="${F(hr * h)}"/>`
+          + `<path fill="${c.hair}" d="M${P(hx - hr * 1.02, hy + hr * 0.4)}A${F(hr * 1.03 * h)} ${F(hr * 1.05 * h)} 0 0 1 ${P(hx + hr * 0.8, hy - hr * 0.65)}Q${P(hx - hr * 0.05, hy - hr * 0.3)} ${P(hx - hr * 1.02, hy + hr * 0.4)}Z"/>`;
+        let lit = '';
+        if (rim) {
+          // the edge toward the Sun, outside the dimming: the back when walking right, the face and front when left
+          const sd = dir > 0 ? -1 : 1, body = dress ? [[0.085, -0.79], [0.11, -0.3]] : [[0.085, -0.79], [0.072, -0.52]];
+          const leg = sd < 0 ? [[-0.045, dress ? -0.27 : -0.49], [-0.155, -0.035]] : [[0.045, dress ? -0.27 : -0.49], [0.155, -0.035]];
+          lit = `<path class="s-rim" stroke-width="${F(Math.max(0.8, 0.025 * h))}" stroke-opacity=".75" d="M${P(hx + sd * hr * 0.55, hy - hr * 0.85)}A${F(hr * h)} ${F(hr * h)} 0 0 ${sd > 0 ? 1 : 0} ${P(hx + sd * hr * 0.75, hy + hr * 0.65)}`
+            + `M${P(sd * body[0][0], body[0][1])}L${P(sd * body[1][0], body[1][1])}M${P(...leg[0])}L${P(...leg[1])}"/>`;
+        }
+        return `<g transform="translate(${F(x)} ${F(y)}) scale(${dir} 1)"><g class="isl-bfig">${o}</g>${lit}</g>`;
+      };
+      let ppl = '';
+      // Dawn: the sweeper in a straw hat, bent over a long broom, working along toward the left lantern
+      {
+        const h = fh, c = who({ shirt: '#d9a441' }), { P, R, limb } = kit(h), hr = 0.075, hx = 0.27, hy = -0.875;
+        // the broom: its handle down through both hands to the head on the ground ahead, the bristles splayed
+        let o = limb([[0.17, -0.72], [0.5, -0.05]], '#8a6a4a', 0.028);
+        o += `<path fill="#b8945a" d="M${P(0.44, -0.075)}L${P(0.55, -0.075)}L${P(0.63, 0)}L${P(0.39, 0)}Z"/>`
+          + `<path fill="none" stroke="#7a6038" stroke-width="${F(Math.max(0.5, 0.01 * h))}" d="M${P(0.46, -0.06)}L${P(0.43, 0)}M${P(0.5, -0.06)}L${P(0.5, 0)}M${P(0.54, -0.06)}L${P(0.58, 0)}"/>`;
+        // the far arm to the upper hand, and the far leg, in shade; the near leg a step ahead
+        o += limb([[0.19, -0.78], [0.175, -0.66]], dim(c.shirt), 0.06) + limb([[0.175, -0.66], [0.236, -0.584]], dim(c.skin), 0.045);
+        o += `<path fill="${dim(c.legs)}" d="M${P(-0.05, -0.5)}L${P(0.03, -0.5)}L${P(-0.06, -0.025)}L${P(-0.12, -0.025)}Z"/><path fill="${shoe}" d="${R(-0.135, -0.03, 0.08, 0.03)}"/>`;
+        o += `<path fill="${c.legs}" d="M${P(-0.03, -0.5)}L${P(0.05, -0.5)}L${P(0.135, -0.025)}L${P(0.075, -0.025)}Z"/><path fill="${shoe}" d="${R(0.07, -0.03, 0.09, 0.03)}"/>`;
+        // the back bent forward from the hips, the near arm down to the lower hand, the head low over the work
+        o += `<path fill="${c.shirt}" d="M${P(-0.07, -0.47)}L${P(0.13, -0.81)}Q${P(0.17, -0.865)} ${P(0.225, -0.825)}L${P(0.27, -0.75)}L${P(0.075, -0.44)}Z"/>`;
+        o += limb([[0.215, -0.78], [0.29, -0.63]], c.shirt, 0.06) + limb([[0.29, -0.63], [0.318, -0.414]], c.skin, 0.045);
+        o += `<circle fill="${c.skin}" cx="${F(hx * h)}" cy="${F(hy * h)}" r="${F(hr * h)}"/>`;
+        o += `<path fill="#c9b07a" d="M${P(hx - hr * 0.9, hy - hr * 0.25)}A${F(hr * 0.92 * h)} ${F(hr * 0.92 * h)} 0 0 1 ${P(hx + hr * 0.9, hy - hr * 0.25)}Z"/>`
+          + `<path fill="none" stroke="#c9b07a" stroke-linecap="round" stroke-width="${F(Math.max(0.7, 0.02 * h))}" d="M${P(hx - hr * 1.7, hy - hr * 0.15)}L${P(hx + hr * 1.8, hy - hr * 0.3)}"/>`;
+        ppl += `<g class="isl-lq" data-q="a"><g transform="translate(${F(X(0.23))} ${F(fy)}) scale(-1 1)"><g class="isl-bfig">${o}</g></g></g>`;
+      }
+      // Day: a visitor seen from behind stepping into the museum's entrance (its threshold the building's line, so a
+      // little smaller than those on the pavement), a passer-by going left, a woman with her market bag going right
+      ppl += `<g class="isl-lq" data-q="y"><g class="isl-bfig">${person((wx0 + x0) / 2, street + Y(0.004), fh * 0.94, who({ legs: '#8a7a5e' }))}</g>`
+        + walker(X(0.53), fy, fh, -1, who()) + walker(X(0.76), fy + Y(0.006), fh * 0.97, 1, who(), { dress: true, bag: '#b08a52' }) + '</g>';
+      // Sunset: a couple walking home side by side, the Sun's last light along their backs (the farther one first)
+      ppl += `<g class="isl-lq" data-q="s">${walker(X(0.66) + fh * 0.13, fy - Y(0.006), fh * 0.97, 1, who(), { rim: true })}`
+        + `${walker(X(0.66), fy + Y(0.004), fh, 1, who(), { dress: true, rim: true })}</g>`;
+      // Dusk: one person waiting under the left lantern, facing us, its light on the lantern side (isl-mlit, in the
+      // lantern's turn of the pass)
+      {
+        const x = X(0.205), ft = fy - fh, hr = fh * 0.075, sw = fh * 0.13, hy = ft + hr, sw2 = F(Math.max(0.8, Y(0.006)));
+        ppl += `<g class="isl-lq" data-q="d"><g class="isl-bfig">${person(x, fy, fh, who({ front: true }))}</g>`
+          + `<g class="isl-vlamps isl-vwin" style="--i:1"><path class="isl-mlit" d="M${F(x - sw * 1.04)} ${F(ft + fh * 0.21)}V${F(ft + fh * 0.5)}M${F(x - hr * 0.95)} ${F(hy - hr * 0.3)}A${F(hr)} ${F(hr)} 0 0 0 ${F(x - hr * 0.7)} ${F(hy + hr * 0.7)}" stroke-width="${sw2}"/></g></g>`;
+      }
+      s += ppl;
+    }
+    // the lanterns, after the people, so a post stands in front of anyone beside it
     for (const lx of [X(0.19), X(0.925)]) {
       const ph = Y(0.27), lw = Y(0.022), lh = Y(0.06);
-      s += `<g class="isl-vwin" style="--i:1">${pool(lx, street + Y(0.06), Y(0.3), Y(0.06), 0.8)}${halo(lx, street - ph - lh / 2, Y(0.2))}`
+      s += `<g class="isl-vwin" style="--i:1">${halo(lx, street - ph - lh / 2, Y(0.2))}`
         + `<path class="f-pulse isl-ltframe" d="M${F(lx - lw)} ${F(street - ph)}V${F(street - ph - lh)}H${F(lx + lw)}V${F(street - ph)}Z"/></g>`
         + panes(lx - lw, street - ph - lh, 2 * lw, lh);
       s += `<path class="isl-vpost" d="M${F(lx - 1.3)} ${F(street + Y(0.03))}V${F(street - ph)}H${F(lx + 1.3)}V${F(street + Y(0.03))}Z`
@@ -3850,7 +3965,7 @@
     'court-house': {
       draw: courtHouse,
       world: 'inland',
-      moonPath: false,   // (no water under the Moon: the street lies over the base sea, which shows through it)
+      moonPath: false,   // (no water under the Moon: the street covers the base sea, opaque since art-audit pass 4, 2026-10-01)
       // the Sun resting on the rooftops down the street, between the palm and the lamp
       sunset: '18:11',
       horizon: 0.62,
