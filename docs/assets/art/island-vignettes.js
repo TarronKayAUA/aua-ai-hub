@@ -3974,6 +3974,8 @@
      different sizes" when each was sized by hand): the eye is at a seated height and its horizon is the
      sea's horizon in the window, so everything farther is smaller and higher, the floorboards meet on that
      horizon, and every foot stands on the floor at its own depth. Face on, sized from the card's height.
+     By Day the meeting is under way and at Sunset it has just ended, shown by the members' things rather
+     than the members (art-audit pass 4, 2026-10-01; see the chairs and the places, below).
      The harbour's lights come on, then the lamp, and the agenda's ticks one by one, the last of them last
      (reviewed 2026-09-30 by blind "which page is this?" tests and a craft and five-versions check before
      the owner saw it). */
@@ -4069,10 +4071,14 @@
     }
     // 3. The chairs: one chair, drawn in the camera wherever it stands round the table, facing its centre:
     //    a padded back 0.42 m wide on a slight lean, up to 0.96 m, a seat at 0.45 m, four legs; its shadow
-    //    on the floor under it; its parts drawn from the farthest to the nearest.
-    const chair = (a) => {
-      const ar = a * Math.PI / 180, cx = 1.55 * Math.cos(ar), cd = D + 1.55 * Math.sin(ar);
-      const ux = -Math.cos(ar), ud = -Math.sin(ar), vx = -ud, vd = ux;          // u toward the table, v across the seat
+    //    on the floor under it; its parts drawn from the farthest to the nearest. (2026-10-01, art-audit pass 4:
+    //    it stands rad metres from the table's centre, 1.55 when set at the table, and is turned yaw degrees
+    //    from facing the centre, since a chair pulled out or pushed back is rarely left square to the table;
+    //    coat, when given, names the versions in which a jacket hangs over its back. Set at the table and
+    //    square, it is drawn exactly as before.)
+    const chair = (a, rad = 1.55, yaw = 0, coat = '') => {
+      const ar = a * Math.PI / 180, cx = rad * Math.cos(ar), cd = D + rad * Math.sin(ar), at = ar + yaw * Math.PI / 180;
+      const ux = -Math.cos(at), ud = -Math.sin(at), vx = -ud, vd = ux;          // u the way it faces (the table, when square), v across the seat
       const Q = (u, vv, h) => P(cx + u * ux + vv * vx, cd + u * ud + vv * vd, h), dOf = (u, vv) => cd + u * ud + vv * vd;
       const [shx, shy, shr, shq] = box(ring(cx, cd, 0.32, 0));
       const parts = [];
@@ -4102,11 +4108,47 @@
       for (let i = 0; i < outline.length - 1; i++) band += polyD([fa[i], fa[i + 1], fb[i + 1], fb[i]]);
       parts.push([dOf(-0.22, 0), `<path class="isl-kchair" d="${polyD(far)}"/><path class="isl-kchairs" d="${band}"/>`
         + `<path class="isl-kchair" d="${polyD(near)}"/><path class="isl-kpad" d="${polyD(face(uNear, 0.72, 0.56, 0.9))}"/>`]);
+      // (2026-10-01, art-audit pass 4) A jacket left over the back: its body hangs down behind the back and its
+      // sleeves beside it, showing past its sides in the back's shade, and its collar and shoulders fold over
+      // the top toward the seat. Its two parts sort with the chair's own, so the back stands between them.
+      if (coat) {
+        const J = (u, pts) => polyD(pts.map(([vv, h]) => Q(u + lean(h), vv, h)));
+        // (its shoulders round the back's corners, rr2 out from the back's own; the crest of the fold catches
+        // the light; the collar's notch at the middle of the fold's edge)
+        const arc = (rr2) => {
+          const l = [];
+          for (let i = 0; i <= 6; i++) { const t = Math.PI - (i / 6) * Math.PI / 2; l.push([vL + rr + Math.cos(t) * rr2, h1 - rr + Math.sin(t) * rr2]); }
+          return [...l, ...l.map(([vv, h]) => [-vv, h]).reverse()];
+        };
+        const top = arc(rr + 0.025), crest = [...top, ...arc(rr + 0.008).reverse()];
+        const hang = [[-0.22, 0.42], [-0.3, 0.5], [-0.3, 0.8], ...top, [0.3, 0.8], [0.3, 0.5], [0.22, 0.42]];
+        const fold = [...top, [0.245, 0.79], [0.16, 0.835], [0.075, 0.885], [0, 0.855], [-0.075, 0.885], [-0.16, 0.835], [-0.245, 0.79]];
+        const uB = -0.26, uF = -0.175;
+        parts.push([dOf(uB, 0), `<g class="isl-lq" data-q="${coat}"><path class="isl-lbag1" d="${J(uB, hang)}"/><path class="isl-tdrop" d="${J(uB, hang)}"/></g>`]);
+        parts.push([dOf(uF, 0), `<g class="isl-lq" data-q="${coat}"><path class="isl-lbag1" d="${J(uF, fold)}"/><path class="isl-lbagp" d="${J(uF, crest)}"/></g>`]);
+      }
       parts.sort((p, q) => q[0] - p[0]);
       return `<ellipse class="isl-tdrop" cx="${F(shx)}" cy="${F(shy)}" rx="${F(shr)}" ry="${F(shq)}"/>` + parts.map((p) => p[1]).join('');
     };
-    // round the far side and at the ends, from the farthest; the near side is the viewer's place
-    for (const a of [90, 138, 42, 180, 0]) s += chair(a);
+    // (2026-10-01, art-audit pass 4) The room changes with the hour, as the library's tables do (DESIGN.md
+    // 19.6): by Day the meeting is under way, so two chairs are pulled out and turned and the members' things
+    // are spread on the table (a laptop, coffee, papers); at Sunset it has just ended, so one chair is left
+    // pushed back, a cup is left behind and a jacket hangs over a chair; at Dawn, Dusk and Night the room is
+    // tidy, set for the next meeting, as it had been in all five. The members themselves are not drawn: their
+    // things keep the picture about the committee's work (the blind test, round 7). Each group carries the
+    // versions it shows in (data-q: a Dawn, y Day, s Sunset, d Dusk, n Night; layout-art.css).
+    const QS = {};
+    const put = (q, svg) => { QS[q] = (QS[q] || '') + svg; };
+    const flush = () => { const o = Object.keys(QS).map((q) => `<g class="isl-lq" data-q="${q}">${QS[q]}</g>`).join(''); for (const q in QS) delete QS[q]; return o; };
+    // round the far side and at the ends, from the farthest; the near side is the viewer's place. By Day the
+    // chairs at the far corners are pulled out and turned, as their members left them for a moment (25 cm
+    // out and 20 degrees round: at 12 degrees, behind the table, they had read as set straight); at Sunset the
+    // one at the left end is left pushed back, and a jacket hangs over the far right one.
+    s += chair(90);
+    put('asdn', chair(138)); put('y', chair(138, 1.8, 20)); s += flush();
+    put('asdn', chair(42, 1.55, 0, 's')); put('y', chair(42, 1.8, -20)); s += flush();
+    put('aydn', chair(180)); put('s', chair(180, 1.85, 15)); s += flush();
+    s += chair(0);
     // 4. The table: its shadow on the floor, the pedestal and its foot, the rim's near half (darker), the
     //    top with an inset band and a little grain, the lamp's light pooled on it, the near edge catching it.
     const [tsx, tsy, tsr, tsq] = box(ring(0, D, 1.05, 0));
@@ -4136,7 +4178,47 @@
       const [gx, gd] = at(0.98, 0, 0.24), [gbx, gby] = P(gx, gd, 0.75), [, gty] = P(gx, gd, 0.87), gw = 0.036 * sc(gd);
       glass += `M${F(gbx - gw)} ${F(gby)}L${F(gbx - gw * 1.2)} ${F(gty)}H${F(gbx + gw * 1.2)}L${F(gbx + gw)} ${F(gby)}Z`;
     }
-    s += `<path class="isl-lpage" d="${paper}"/><path class="isl-kcard" d="${cards}"/><path class="isl-kcardtop" d="${cardTop}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/><path class="isl-kglass" d="${glass}"/>`;
+    // (2026-10-01, art-audit pass 4) The members' things, by version (see the chairs, above). A place's
+    // frame, as in the loop: rad from the table's centre toward the place, u toward the centre, v across.
+    const place = (a) => {
+      const ar = a * Math.PI / 180, ux = -Math.cos(ar), ud = -Math.sin(ar), vx = -ud, vd = ux;
+      const at = (rad, u, vv) => [rad * Math.cos(ar) + u * ux + vv * vx, D + rad * Math.sin(ar) + u * ud + vv * vd];
+      return { at, pt: (rad, u, vv, h) => { const [x, d] = at(rad, u, vv); return P(x, d, h); } };
+    };
+    // By Day the paper at the far right place is fanned into three sheets, the two added ones under the
+    // first and a shade duller, each sheet's edge marked by a thin shadow on the one below it (paper on paper
+    // is otherwise one white shape).
+    {
+      const { pt } = place(42), sheet = (t, du, dv) => {
+        const c = Math.cos(t * Math.PI / 180), sn = Math.sin(t * Math.PI / 180);
+        return [[-0.15, -0.105], [-0.15, 0.105], [0.15, 0.105], [0.15, -0.105]].map(([u, vv]) => pt(0.95, u * c - vv * sn + du, u * sn + vv * c + dv, 0.752));
+      };
+      const lift = (pts) => polyD(pts.map(([x, y]) => [x + Math.max(0.4, Y(0.003)), y + Math.max(0.5, Y(0.004))]));
+      const a1 = sheet(-18, 0.02, -0.17), a2 = sheet(14, -0.03, 0.16), a0 = sheet(0, 0, 0);
+      put('y', `<path class="isl-lpageedge" d="${polyD(a1)}"/><path class="isl-tdrop" d="${lift(a2)}"/><path class="isl-lpageedge" d="${polyD(a2)}"/><path class="isl-tdrop" d="${lift(a0)}"/>`);
+    }
+    s += flush() + `<path class="isl-lpage" d="${paper}"/>`;
+    // By Day a laptop open at the far place, seen from behind its lid, which leans back toward the viewer
+    // from its hinge: the base on the table under it, the lid's back with its logo. Set left of the place's
+    // middle, so the chair behind it still shows; under that place's name card, which stands nearer.
+    {
+      const { pt } = place(90), lv = -0.1, [, ld] = place(90).at(0.78, 0, lv), q4 = (r0, h0, r1, h1, w) => polyD([pt(r0, 0, lv - w, h0), pt(r0, 0, lv + w, h0), pt(r1, 0, lv + w, h1), pt(r1, 0, lv - w, h1)]);
+      const [gx, gy] = pt(0.785, 0, lv, 0.87);
+      put('y', `<path class="isl-lalu" d="${polyD([pt(0.82, 0, lv - 0.16, 0.765), pt(0.82, 0, lv + 0.16, 0.765), pt(1.04, 0, lv + 0.16, 0.765), pt(1.04, 0, lv - 0.16, 0.765)])}${q4(0.82, 0.751, 0.82, 0.765, 0.16)}"/>`
+        + `<path class="isl-lbezel" d="${q4(0.82, 0.765, 0.745, 0.975, 0.155)}"/><circle class="isl-llogo" cx="${F(gx)}" cy="${F(gy)}" r="${F(Math.max(0.6, 0.014 * sc(ld)))}"/>`);
+    }
+    s += flush() + `<path class="isl-kcard" d="${cards}"/><path class="isl-kcardtop" d="${cardTop}" stroke-width="${F(Math.max(0.8, Y(0.006)))}"/><path class="isl-kglass" d="${glass}"/>`;
+    // Coffee: by Day a cup at the far left place and one at the right end; at Sunset the far left one is
+    // left behind. Each a small cylinder with its handle, sized by its depth, its shadow on the table.
+    const cup = (a, rad, vv, hs) => {
+      const [x, d] = place(a).at(rad, 0, vv), [mx, my] = P(x, d, 0.75), [, mt] = P(x, d, 0.84), mw = 0.04 * sc(d), mh = my - mt;
+      return `<ellipse class="isl-tdrop" cx="${F(mx + hs * mw * 0.5)}" cy="${F(my)}" rx="${F(mw * 1.6)}" ry="${F(Math.max(0.6, mw * 0.35))}"/>`
+        + `<path class="isl-lmug" d="M${F(mx - mw)} ${F(my)}V${F(mt)}H${F(mx + mw)}V${F(my)}Z"/>`
+        + `<path class="isl-lmugh" d="M${F(mx + hs * mw)} ${F(mt + mh * 0.22)}q${F(hs * mw * 0.85)} ${F(mh * 0.22)} 0 ${F(mh * 0.5)}" stroke-width="${F(Math.max(0.7, 0.014 * sc(d)))}"/>`;
+    };
+    put('ys', cup(138, 0.92, -0.26, -1));
+    put('y', cup(0, 0.92, -0.25, 1));
+    s += flush();
     // the minutes: three closed folders stacked toward the back, each with its tab on the far edge
     for (const [kk, cls] of [[0, 'isl-lbk2'], [1, 'isl-lbk3'], [2, 'isl-lred']]) {
       const h = 0.752 + kk * 0.022, fx = -0.34 + (kk - 1) * 0.015, fd = D + 0.1;
