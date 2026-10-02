@@ -2922,7 +2922,9 @@
     let s = '<defs><linearGradient id="islpwallg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="st-lwall0"/><stop offset="1" class="st-lwall1"/></linearGradient>'
       + '<radialGradient id="islporb" cx=".42" cy=".38" r=".62"><stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset=".35" class="st-k" stop-opacity=".9"/><stop offset="1" class="st-k" stop-opacity=".55"/></radialGradient>'
       + '<radialGradient id="islporbh"><stop offset="0" class="st-k" stop-opacity=".45"/><stop offset=".5" class="st-k" stop-opacity=".12"/><stop offset="1" class="st-k" stop-opacity="0"/></radialGradient>'
-      + '<linearGradient id="islpribbon" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#fff4d6" stop-opacity=".15"/><stop offset=".5" stop-color="#fff4d6" stop-opacity=".75"/><stop offset="1" class="st-k" stop-opacity=".9"/></linearGradient></defs>';
+      + '<linearGradient id="islpribbon" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#fff4d6" stop-opacity=".15"/><stop offset=".5" stop-color="#fff4d6" stop-opacity=".75"/><stop offset="1" class="st-k" stop-opacity=".9"/></linearGradient>'
+      // (the ribbon's glow, its hues at a quarter strength; art-audit pass 4, 2026-10-01)
+      + '<linearGradient id="islpribbong" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#fff4d6" stop-opacity=".08"/><stop offset=".5" stop-color="#fff4d6" stop-opacity=".22"/><stop offset="1" class="st-k" stop-opacity=".25"/></linearGradient></defs>';
     // 1. Through the window: open sea to the east, a low cay on the horizon with a light, a boat
     //    under sail far out, the water's ripples (build()); the Sun rises here at Dawn.
     const cay = [[0.52, 0], [0.58, 0.02], [0.66, 0.03], [0.74, 0.022], [0.8, 0]].map(([x, h]) => [wx0 + ww * x, y0 - Y(h)]);
@@ -2933,10 +2935,18 @@
     const sb = wx0 + ww * 0.25, sy = y0 + Y(0.04);
     const boat = `<path class="isl-vhull" d="M${F(sb - Y(0.03))} ${F(sy - Y(0.01))}H${F(sb + Y(0.03))}L${F(sb + Y(0.022))} ${F(sy)}H${F(sb - Y(0.024))}Z"/>`
       + `<path class="isl-vsail" d="M${F(sb)} ${F(sy - Y(0.012))}V${F(sy - Y(0.1))}L${F(sb + Y(0.034))} ${F(sy - Y(0.016))}Z"/>`;
-    // (its masthead light's column on the water and its faint reflection, as the cay's light and the cay have)
-    s += dashes(streakList(sb, sy + 1, H, rng(617), 0.04, 0.05), 's-vcoolglow', 1, [0.08, 0.16, 0.3])
-      + `<g opacity=".15"><g transform="translate(0 ${F(2 * sy)}) scale(1 -1)">${boat}</g></g>` + boat;
-    lights.push([sb, sy - Y(0.1), 'b']);
+    // (its faint reflection, as the cay has)
+    s += `<g opacity=".15"><g transform="translate(0 ${F(2 * sy)}) scale(1 -1)">${boat}</g></g>` + boat;
+    // (her light is the red port sidelight a yacht under sail shows, at the bow: her boom points right, so she
+    // heads left and shows her port side to us, looking east; with its halo and a short faint column on the
+    // water, lit in the pass with the cay's light. Not drawn by Day (isl-lq, every version but y), when no light
+    // is on: its point and column are hidden then anyway, and its halo would have stayed as a pink smudge. She
+    // had carried a white masthead light, which marks a yacht under engine; art-audit pass 4, 2026-10-01, the
+    // owner's rule, as at Curtain Bluff)
+    const sx0 = sb - Y(0.026), sy0 = sy - Y(0.007);
+    s += `<g class="isl-lq" data-q="asdn"><g class="isl-vwin" style="--i:0">${halo(sx0, sy0, Math.max(2.5, Y(0.012)), 'islvred')}`
+      + dashes(streakList(sx0, sy + 1, H, rng(617), 0.03, 0.04), 's-vglow', 1, [0.04, 0.08, 0.12])
+      + `<circle class="isl-vnav-r" cx="${F(sx0)}" cy="${F(sy0)}" r="${F(Math.max(1, Y(0.005)))}"/></g></g>`;
     s += lightsPaths(lights);
     // 2. The wall, the window cut out of it, its reveal, frame and sill; a shelf of books above the desk.
     s += `<path fill="url(#islpwallg)" fill-rule="evenodd" d="${rect(-2, -2, W + 4, H + 4)}${rect(wx0, wT, ww, wB - wT)}"/>`;
@@ -2983,6 +2993,51 @@
     // (it lies on the desk's top, its slant read as depth; above the back edge it had floated against the wall)
     const pen = `M${F(nx + nW * 0.66)} ${F(dTop + Y(0.026))}l${F(Y(0.2))} ${F(-Y(0.02))}l${F(Y(0.014))} ${F(Y(0.005))}l${F(-Y(0.2))} ${F(Y(0.02))}Z`;
     s += `<path class="isl-lbk2" d="${pen}"/>`;
+    // Crumpled drafts on the desk to the right of the pen: learning to prompt is mostly rewriting the prompt
+    // until it works. Each a balled-up page, its outline irregular, a few creases, its side away from the window
+    // in shade (as the mug's), on its own small shadow. By version: the attempts pile up as the prompt is
+    // rewritten through the day, and each morning starts fresh, so none at Dawn, one by Day, two at Sunset,
+    // three at Dusk and four at Night, the last a little behind the others (art-audit pass 4, 2026-10-01; their
+    // own random stream, so nothing else moves). Placed from the pen's far end, which at narrow cards lies
+    // further right, and clear of the mug.
+    {
+      const dr = rng(631), pe = nx + nW * 0.66 + Y(0.214);
+      // [distance past the pen's end, how far forward of the desk's back edge it rests, size, versions], drawn
+      // from the back of the desk forward
+      const balls = [[0.14, 0.006, 0.9, 'n'], [0.105, 0.018, 0.94, 'sdn'], [0.05, 0.026, 1, 'ysdn'], [0.175, 0.03, 1.04, 'dn']];
+      for (const [dx, back, sz, q] of balls) {
+        // (about the mug's width, as a sheet of the notebook balled up would be)
+        const cx = pe + Y(dx), rr = Y(0.034) * sz, by = dTop + Y(back), cy = by - rr * 0.92;
+        // its outline: ten corners at uneven angles and distances, as a balled-up sheet's are, one or two
+        // of them (never the ones it rests on) a corner of the sheet poking out
+        const pts = [];
+        for (let i = 0; i < 10; i++) {
+          const a = (i + (dr() - 0.5) * 0.6) / 10 * Math.PI * 2, d = rr * (Math.sin(a) < 0.3 && dr() < 0.22 ? 1.2 : 0.8 + dr() * 0.3);
+          pts.push([cx + Math.cos(a) * d, cy + Math.sin(a) * d * 0.94]);
+        }
+        // its facets: two points inside it where folds meet, one up and to the left (toward the window and
+        // the lamp), one down and to the right, each corner folded in to the nearer; facets lower and to the
+        // right in shade, some deeper, with a little chance in it; the fold between the two points and a few
+        // others drawn as creases
+        const fA = [cx - rr * (0.2 + dr() * 0.15), cy - rr * (0.15 + dr() * 0.15)], fB = [cx + rr * (0.12 + dr() * 0.15), cy + rr * (0.08 + dr() * 0.15)];
+        const near = pts.map(([px, py]) => (Math.hypot(px - fA[0], py - fA[1]) <= Math.hypot(px - fB[0], py - fB[1]) ? fA : fB));
+        let sh1 = '', sh2 = '', cr = `M${F(fA[0])} ${F(fA[1])}L${F(fB[0])} ${F(fB[1])}`;
+        pts.forEach((pp, i) => {
+          const j = (i + 1) % 10, faces = [[near[i], pp, pts[j]]];
+          if (near[i] !== near[j]) faces.push([near[i], pts[j], near[j]]);
+          for (const fc of faces) {
+            const gx = (fc[0][0] + fc[1][0] + fc[2][0]) / 3, gy = (fc[0][1] + fc[1][1] + fc[2][1]) / 3;
+            const tone = ((gx - cx) + (gy - cy)) / rr + (dr() - 0.5) * 0.8, tri = polyD(fc);
+            if (tone > -0.25) sh1 += tri;
+            if (tone > 0.45) sh2 += tri;
+          }
+          if (dr() < 0.4) cr += `M${F(near[i][0])} ${F(near[i][1])}L${F(pp[0])} ${F(pp[1])}`;
+        });
+        s += `<g class="isl-lq" data-q="${q}"><ellipse class="isl-tdrop" cx="${F(cx + rr * 0.15)}" cy="${F(by)}" rx="${F(rr * 1.05)}" ry="${F(Math.max(1, rr * 0.22))}"/>`
+          + `<path class="isl-lpage" d="${polyD(pts)}"/><path class="isl-lredsh" d="${sh1}"/><path class="isl-lredsh" d="${sh2}"/>`
+          + `<path class="isl-ltext" d="${cr}" stroke-width="${F(Math.max(0.5, Y(0.003)))}"/></g>`;
+      }
+    }
     // 5. The books and the mug at the right, the lamp at the left over the notebook.
     const bkx = X(0.925);
     let o = '';
@@ -3010,26 +3065,64 @@
       + pool(nx - nW * 0.12, nT + nH * 0.55, nW * 0.45, nH * 0.5, 0.55) + halo(bxl, byl, Y(0.16), 'islvbulb')
       + `<circle class="isl-tbulb" cx="${F(bxl)}" cy="${F(byl)}" r="${F(Y(0.018))}"/></g>`;
     s += `<path class="isl-tshade" d="${polyD(shade)}"/>`;
-    // 6. The ribbon: the right page's last line lifts off and rises as a band of light, dashes like
-    //    words riding along it, curling up into the speech bubble; the orb, right, answers.
+    // 6. The ribbon: the right page's last line lifts off and rises as a band of light, widening as it
+    //    goes, flecks like words riding along it, curling up into the speech bubble; the orb, right, answers.
     const ox = X(0.8), oy = Y(0.4), orr = Y(0.12);
     const bx2 = X(0.64), by2 = Y(0.19), bwid = Y(0.42), bht = Y(0.2);
     const p0 = lift, p1 = [bx2 - bwid * 0.32, by2 + bht * 0.85];
     const c1 = [p0[0] + Y(0.3), p0[1] + Y(0.06)], c2 = [p1[0] - Y(0.1), p1[1] + Y(0.3)];
-    const rib = `M${F(p0[0])} ${F(p0[1])}C${F(c1[0])} ${F(c1[1])} ${F(c2[0])} ${F(c2[1])} ${F(p1[0])} ${F(p1[1])}`;
     const bez = (t, i) => { const q = 1 - t; return q ** 3 * p0[i] + 3 * q * q * t * c1[i] + 3 * q * t * t * c2[i] + t ** 3 * p1[i]; };
     const der = (t, i) => { const q = 1 - t; return 3 * q * q * (c1[i] - p0[i]) + 6 * q * t * (c2[i] - c1[i]) + 3 * t * t * (p1[i] - c2[i]); };
-    let words = '';
-    for (let t = 0.1; t < 0.93; t += 0.085) {
+    // (a filled band that tapers up from the written line, its half-width growing from half a pixel where the
+    // line lifts off to Y(0.018) where it meets the bubble, over a soft glow three times as wide: it had been an
+    // even tube with round ends and a dashed centre line, which read as a bendy straw plugged into the bubble's
+    // tail. Now the band is the bubble's tail: it runs on straight past where the tail's tip was and into the
+    // bubble, whose outline opens where the band comes in, so the light flows into the speech bubble rather than
+    // being plugged into it; art-audit pass 4, 2026-10-01)
+    const hwAt = (t) => 0.5 + (Y(0.018) - 0.5) * t;
+    const bB = by2 + bht / 2, tl = Math.hypot(der(1, 0), der(1, 1)) || 1, tx = der(1, 0) / tl, ty = der(1, 1) / tl;
+    // where one edge of the band (sg 1 or -1, its half-width w), run on straight, reaches the height y
+    const edgeAt = (sg, w, y) => { const run = (y - p1[1] - tx * w * sg) / ty; return [p1[0] - ty * w * sg + tx * run, y]; };
+    const band = (k) => {
+      const lt = [], rt = [];
+      for (let i = 0; i <= 48; i++) {
+        const t = i / 48, x = bez(t, 0), y = bez(t, 1), dx = der(t, 0), dy = der(t, 1), d = Math.hypot(dx, dy) || 1, w = hwAt(t) * k;
+        lt.push([x - (dy / d) * w, y + (dx / d) * w]); rt.push([x + (dy / d) * w, y - (dx / d) * w]);
+      }
+      // (cut level with the bubble's lower edge, half a pixel under it: run on further, its end showed through
+      // the bubble's fill)
+      lt.push(edgeAt(1, hwAt(1) * k, bB - 0.5)); rt.push(edgeAt(-1, hwAt(1) * k, bB - 0.5));
+      return polyD([...lt, ...rt.reverse()]);
+    };
+    // where the band's two edges cross the bubble's lower edge: the gap left in its outline
+    const gx0 = Math.min(edgeAt(1, hwAt(1), bB)[0], edgeAt(-1, hwAt(1), bB)[0]) + 0.3;
+    const gx1 = Math.max(edgeAt(1, hwAt(1), bB)[0], edgeAt(-1, hwAt(1), bB)[0]) - 0.3;
+    // the words riding it: flecks of light of varying length and strength, scattered across the band, and two
+    // or three drifting off its edges (they keep the old dashes' draws on r, so the orb's sparks stay put; what
+    // varies takes its own stream)
+    const fr = rng(641);
+    let words = '', wi = 0;
+    for (let t = 0.1; t < 0.93; t += 0.085, wi++) {
       const x = bez(t, 0), y = bez(t, 1), dx = der(t, 0), dy = der(t, 1), d = Math.hypot(dx, dy) || 1, len = Y(0.014 + r() * 0.014);
-      words += `M${F(x - (dx / d) * len / 2)} ${F(y - (dy / d) * len / 2)}l${F((dx / d) * len)} ${F((dy / d) * len)}`;
+      const w = hwAt(t), drift = wi === 4 || wi === 7 || wi === 9, sd = wi === 7 ? -1 : 1;
+      const off = drift ? sd * (w + Y(0.009) + fr() * Y(0.008)) : (fr() - 0.5) * w * 0.9;
+      const a = drift ? sd * (0.35 + fr() * 0.25) : (fr() - 0.5) * 0.2, ca = Math.cos(a), sa = Math.sin(a);
+      const ux = (dx / d) * ca - (dy / d) * sa, uy = (dx / d) * sa + (dy / d) * ca;
+      const cx = x - (dy / d) * off, cy = y + (dx / d) * off, ln = len * (drift ? 0.6 : 0.6 + t * 0.7);
+      const op = drift ? 0.45 + fr() * 0.25 : 0.6 + fr() * 0.4, sw = Math.max(0.8, Math.min(Y(0.008), w * (drift ? 0.55 : 0.6)));
+      if (t < 0.3) continue;   // (the first stretch is the written line itself, thinner than a fleck)
+      // (those inside the band white, as the cream ones vanished on its cream; those that drift off keep the cream)
+      words += `<path class="${drift ? 'isl-pword' : 'isl-pfleck'}" d="M${F(cx - ux * ln / 2)} ${F(cy - uy * ln / 2)}l${F(ux * ln)} ${F(uy * ln)}" stroke-width="${F(sw)}" opacity="${op.toFixed(2)}"/>`;
     }
-    const bubble = `M${F(bx2 - bwid / 2 + bht * 0.3)} ${F(by2 - bht / 2)}H${F(bx2 + bwid / 2 - bht * 0.3)}Q${F(bx2 + bwid / 2)} ${F(by2 - bht / 2)} ${F(bx2 + bwid / 2)} ${F(by2 - bht * 0.2)}V${F(by2 + bht * 0.2)}Q${F(bx2 + bwid / 2)} ${F(by2 + bht / 2)} ${F(bx2 + bwid / 2 - bht * 0.3)} ${F(by2 + bht / 2)}`
-      + `H${F(bx2 - bwid * 0.18)}L${F(bx2 - bwid * 0.32)} ${F(by2 + bht * 0.85)}L${F(bx2 - bwid * 0.26)} ${F(by2 + bht / 2)}H${F(bx2 - bwid / 2 + bht * 0.3)}Q${F(bx2 - bwid / 2)} ${F(by2 + bht / 2)} ${F(bx2 - bwid / 2)} ${F(by2 + bht * 0.2)}V${F(by2 - bht * 0.2)}Q${F(bx2 - bwid / 2)} ${F(by2 - bht / 2)} ${F(bx2 - bwid / 2 + bht * 0.3)} ${F(by2 - bht / 2)}Z`;
+    // (the bubble drawn from one side of the band round to the other and left open there: its fill still closes
+    // across the gap, over the band's end, but its outline does not cross the band)
+    const bL = bx2 - bwid / 2, bR = bx2 + bwid / 2, bT = by2 - bht / 2, bc = bht * 0.3, bv = bht * 0.2;
+    const bubble = `M${F(gx1)} ${F(bB)}H${F(bR - bc)}Q${F(bR)} ${F(bB)} ${F(bR)} ${F(by2 + bv)}V${F(by2 - bv)}Q${F(bR)} ${F(bT)} ${F(bR - bc)} ${F(bT)}`
+      + `H${F(bL + bc)}Q${F(bL)} ${F(bT)} ${F(bL)} ${F(by2 - bv)}V${F(by2 + bv)}Q${F(bL)} ${F(bB)} ${F(bL + bc)} ${F(bB)}H${F(gx0)}`;
     let lines = '';
     [[0.72, -0.2], [0.6, 0.02], [0.45, 0.22]].forEach(([len, dy]) => { lines += `M${F(bx2 - bwid * 0.36)} ${F(by2 + bht * dy)}h${F(bwid * len)}`; });
-    s += `<g class="isl-vwin" style="--i:2"><path class="isl-pribbon" d="${rib}" stroke="url(#islpribbon)" stroke-width="${F(Math.max(2.5, Y(0.035)))}"/>`
-      + `<path class="isl-pword" d="${words}" stroke-width="${F(Math.max(1, Y(0.009)))}"/>`
+    s += `<defs><filter id="islpglowf" filterUnits="userSpaceOnUse" x="0" y="0" width="${F(W)}" height="${F(H)}"><feGaussianBlur stdDeviation="${F(Math.max(1, Y(0.01)))}"/></filter></defs>`
+      + `<g class="isl-vwin" style="--i:2"><path d="${band(3)}" fill="url(#islpribbong)" filter="url(#islpglowf)"/><path d="${band(1)}" fill="url(#islpribbon)"/>${words}`
       + `<path class="isl-pbubble" d="${bubble}"/><path class="isl-pline" d="${lines}" stroke-width="${F(Math.max(1, Y(0.013)))}"/></g>`;
     // the orb, its halo and two faint rings; its reply, a small bubble of three dots above it
     let spark = '';
