@@ -748,8 +748,10 @@
      of Montserrat from Turtle Bay on clear days, liked it with Montserrat and Nevis), so Montserrat
      lies on the left, Redonda's rock and Nevis toward the middle, the sunset right of them and
      Antigua's own coast running in on the right. By Day, the cloud that almost always caps Nevis Peak,
-     turquoise shallows and a line of surf along Antigua's shore, and yachts with their reflections; in
-     every version ripples dense toward the horizon and mist at the coast's foot. After dark a few faint
+     turquoise shallows and a line of surf along Antigua's shore, and yachts with their reflections (the
+     same four keep a sailor's day: home at Sunset, at anchor under the near point overnight, the first out
+     again at Dawn; art-audit pass 4, 2026-10-01); in every version ripples dense toward the horizon and
+     mist at the coast's foot. After dark a few faint
      lights: Antigua's shore first, each laying a thin column on the water, then Nevis, then Montserrat,
      where only the north is lived in (the south is the volcano's exclusion zone), and none on
      uninhabited Redonda. The magnificent frigatebird soars in the east wind in the open sky. */
@@ -809,22 +811,103 @@
       day += `<path class="isl-vshallow" d="${shoreD}" transform="translate(0 ${F(Math.max(1.2, ppd * 0.22))})" stroke-width="${F(Math.max(1.8, ppd * 0.36))}"/>`
         + `<path class="isl-vsurf" d="${shoreD}" stroke-width="${F(Math.max(1, ppd * 0.13))}"/>`;
     }
-    // (the yachts keep clear of the islands, and each has its reflection; drawn in every version, with the
-    // red port sidelight a yacht under sail shows, at the bow (their jibs point left, so we see their port
-    // side), and its faint column on the water after dark: they had sailed off at Dawn and come back by Day;
-    // art-audit wave 1, and the owner, 2026-10-01: no white masthead light under sail)
+    // (the yachts keep clear of the islands, and each has its reflection, with the red port sidelight a yacht
+    // under sail shows, at the bow (their jibs point left, so we see their port side), and its faint column on
+    // the water; art-audit wave 1, and the owner, 2026-10-01: no white masthead light under sail. Since
+    // art-audit pass 4, 2026-10-01, these four are the Day picture only, drawn exactly as before; the other
+    // versions follow the same four through the day, below.)
+    // Each version's yachts gather in their own isl-lq group (data-q: a Dawn, y Day, s Sunset, d Dusk, n Night;
+    // layout-art.css), as the library's things on the tables do.
+    const Q = {};
+    const put = (q, svg) => { Q[q] = (Q[q] || '') + svg; };
+    const flush = () => { const o = Object.keys(Q).map((q) => `<g class="isl-lq" data-q="${q}">${Q[q]}</g>`).join(''); for (const q in Q) delete Q[q]; return o; };
+    // a yacht under sail, bow to the left: its hull, mainsail aft of the mast and jib forward of it
+    const underSail = (bx, by, L) => {
+      const mh = L * 1.3;
+      return `<path class="isl-vhull" d="M${F(bx - L / 2)} ${F(by - L * 0.1)}H${F(bx + L / 2)}L${F(bx + L * 0.36)} ${F(by)}H${F(bx - L * 0.4)}Z"/>`
+        + `<path class="isl-vsail" d="M${F(bx)} ${F(by - L * 0.12)}V${F(by - mh)}L${F(bx + L * 0.42)} ${F(by - L * 0.14)}ZM${F(bx - L * 0.04)} ${F(by - mh * 0.85)}L${F(bx - L * 0.45)} ${F(by - L * 0.14)}H${F(bx - L * 0.04)}Z"/>`;
+    };
     let yachts = '', ylit = '';
     const yr = rng(1931);
     for (const [fx, fy, s0] of [[0.33, 0.09, 1], [0.5, 0.15, 1.3], [0.2, 0.32, 1.7], [0.68, 0.06, 0.8]]) {
-      const bx = W * fx, by = y0 + (H - y0) * fy, L = Math.max(8, W * 0.014 * s0), mh = L * 1.3;
-      const boat = `<path class="isl-vhull" d="M${F(bx - L / 2)} ${F(by - L * 0.1)}H${F(bx + L / 2)}L${F(bx + L * 0.36)} ${F(by)}H${F(bx - L * 0.4)}Z"/>`
-        + `<path class="isl-vsail" d="M${F(bx)} ${F(by - L * 0.12)}V${F(by - mh)}L${F(bx + L * 0.42)} ${F(by - L * 0.14)}ZM${F(bx - L * 0.04)} ${F(by - mh * 0.85)}L${F(bx - L * 0.45)} ${F(by - L * 0.14)}H${F(bx - L * 0.04)}Z"/>`;
+      const bx = W * fx, by = y0 + (H - y0) * fy, L = Math.max(8, W * 0.014 * s0);
+      const boat = underSail(bx, by, L);
       yachts += `<g opacity=".16" transform="translate(0 ${F(2 * by)}) scale(1 -1)">${boat}</g>` + boat;
       const sx = bx - L * 0.44, sy = by - L * 0.08;
       ylit += halo(sx, sy, Math.max(2.5, L * 0.3), 'islvred') + dashes(streakList(sx, by + 1, by + (H - y0) * 0.25, yr, 0.03, 0.04), 's-vglow', 1, [0.04, 0.08, 0.12])
         + `<circle class="isl-vnav-r" cx="${F(sx)}" cy="${F(sy)}" r="${F(Math.max(1, L * 0.07))}"/>`;
     }
-    s += `<g class="isl-ydet">${day}</g>` + yachts + `<g class="isl-vwin" style="--i:1">${ylit}</g>`;
+    s += `<g class="isl-ydet">${day}</g>`;
+    put('y', yachts + `<g class="isl-vwin" style="--i:1">${ylit}</g>`);
+    // The yachts by the hour (art-audit pass 4, 2026-10-01; the owner, 2026-10-01: what is drawn may change
+    // between versions with a visible reason). Yachts sail by day and lie at anchor overnight, so the same
+    // four keep a sailor's day: by Day they sail out as above; at Sunset they have turned for the anchorage
+    // under the near point on the right, heading right, so we see their starboard sides and green starboard
+    // sidelights; at Dusk the two that were nearest it are in and anchored while the other two still sail in;
+    // at Night all four lie at anchor; at Dawn the first is already out, sailing left with its red sidelight,
+    // and three still lie at anchor. A yacht at anchor shows the one all-round white anchor light at its
+    // masthead (it is not under way, so it carries no sidelights; the owner's rule of no white masthead light
+    // is for a yacht under sail, 2026-10-01). Their own random stream, so nothing approved moves.
+    const ar = rng(1933);
+    // under sail: dir 1 heading left (as by Day), -1 heading right, mirrored about its mast so the bow, and the
+    // sidelight on it, lead to the right
+    const sailing = (fx, fy, s0, dir) => {
+      const bx = W * fx, by = y0 + (H - y0) * fy, L = Math.max(8, W * 0.014 * s0);
+      const boat = dir < 0 ? `<g transform="translate(${F(2 * bx)} 0) scale(-1 1)">${underSail(bx, by, L)}</g>` : underSail(bx, by, L);
+      const sx = bx - dir * L * 0.44, sy = by - L * 0.08;
+      return `<g opacity=".16" transform="translate(0 ${F(2 * by)}) scale(1 -1)">${boat}</g>` + boat
+        + `<g class="isl-vwin" style="--i:1">${halo(sx, sy, Math.max(2.5, L * 0.3), dir < 0 ? 'islvgreen' : 'islvred')}`
+        + dashes(streakList(sx, by + 1, by + (H - y0) * 0.25, ar, 0.03, 0.04), 's-vglow', 1, [0.04, 0.08, 0.12])
+        + `<circle class="isl-vnav-${dir < 0 ? 'g' : 'r'}" cx="${F(sx)}" cy="${F(sy)}" r="${F(Math.max(1, L * 0.07))}"/></g>`;
+    };
+    // The anchorage: the water just off the near point's shore (where the ground within 900 m stands in front
+    // of the far shore, as land() in island-core.js draws it), from its left end to the card's right edge.
+    const nearX = [];
+    for (const q of L.LAND) {
+      const px = v.x(q[0]);
+      if (px >= 0 && px <= W && q[2] > -90 && q[4] > -90 && q[4] > q[2]) nearX.push(px);
+    }
+    const shoreAt = (px) => {
+      for (let i = 0; i < shore.length - 1; i++) {
+        const [xa, ya] = shore[i], [xb, yb] = shore[i + 1];
+        if (px >= xa && px <= xb) return ya + (yb - ya) * (px - xa) / ((xb - xa) || 1);
+      }
+      return y0 + 1;
+    };
+    // at anchor, the size a yacht of about 12 m has at the near point's distance (from the view's own scale,
+    // so it keeps its size beside the point at every width): a hull with its low coachroof, a bare mast with
+    // its forestay and backstay (without them a mast alone read as a post), the mainsail furled on its boom,
+    // lying head to the trade wind like every boat there (bows to the left), its reflection, and the anchor
+    // light at the masthead with its column on the water
+    const aL = Math.max(7, ppd * 1.35);
+    const ax0 = (nearX.length ? Math.min(...nearX) : W * 0.84) + aL * 0.8, ax1 = W - 20;
+    const atAnchor = (f) => {
+      const ax = ax0 + (ax1 - ax0) * f, wl = shoreAt(ax) + 2 + ar() * 2, L = aL * (0.92 + ar() * 0.16);
+      const mx = ax - L * 0.1, mh = L * 1.3, dk = wl - L * 0.13;
+      const boat = `<path class="isl-vhull" d="M${F(ax - L / 2)} ${F(dk)}H${F(ax + L / 2)}L${F(ax + L * 0.38)} ${F(wl)}H${F(ax - L * 0.4)}Z`
+        + `M${F(ax - L * 0.16)} ${F(dk + 0.2)}V${F(dk - L * 0.07)}H${F(ax + L * 0.2)}V${F(dk + 0.2)}Z"/>`
+        + `<path class="isl-vmast" d="M${F(mx)} ${F(dk)}V${F(wl - mh)}" stroke-width=".8"/>`
+        + `<g opacity=".5"><path class="isl-vmast" d="M${F(mx)} ${F(wl - mh)}L${F(ax - L * 0.48)} ${F(dk)}M${F(mx)} ${F(wl - mh)}L${F(ax + L * 0.47)} ${F(dk)}" stroke-width=".5"/></g>`
+        + `<path class="isl-vsheer" d="M${F(mx)} ${F(wl - L * 0.3)}L${F(ax + L * 0.32)} ${F(wl - L * 0.28)}" stroke-width="${F(Math.max(1.2, L * 0.13))}" stroke-linecap="round"/>`;
+      return `<g opacity=".16" transform="translate(0 ${F(2 * wl)}) scale(1 -1)">${boat}</g>` + boat
+        + `<g class="isl-vwin" style="--i:1">${halo(mx, wl - mh, 3, 'islvcool')}`
+        + dashes(streakList(mx, wl + 1, wl + 30, ar, 0.02, 0.03), 's-vcool', 1, [0.08, 0.16, 0.3])
+        + `<circle class="isl-vnav-w" cx="${F(mx)}" cy="${F(wl - mh)}" r="1"/></g>`;
+    };
+    // Sunset: all four heading home, the three farther out a little nearer the anchorage than they sailed by
+    // Day; the 0.68 one stays beside the Sun's path on the water.
+    for (const [fx, fy, s0] of [[0.37, 0.09, 1], [0.54, 0.15, 1.3], [0.24, 0.32, 1.7], [0.68, 0.06, 0.8]]) put('s', sailing(fx, fy, s0, -1));
+    // Dusk: the two from the left still sailing in, nearer again
+    for (const [fx, fy, s0] of [[0.41, 0.09, 1], [0.28, 0.32, 1.7]]) put('d', sailing(fx, fy, s0, -1));
+    // At anchor, each in its own berth from the outside in: the two in first at Dusk lie innermost and stay
+    // through Night and Dawn; the 0.33 one beside them at Night and Dawn; the 0.2 one, outermost, at Night only,
+    // since it is the first out at Dawn.
+    put('n', atAnchor(0.05));
+    put('na', atAnchor(0.3));
+    put('dna', atAnchor(0.61) + atAnchor(0.89));
+    // Dawn: the first boat out, sailing left past the bluff with its red port sidelight (near enough that its
+    // sail stays below the horizon, and a little left of Nevis, so the island never stands on its masthead)
+    put('a', sailing(0.56, 0.2, 1.15, 1));
     // After dark: a few faint lights, nearest first. Antigua's shore, each with a thin column on the water.
     const lightsOn = (pts, i, w, op, last) => (pts.length
       ? `<path class="s-vlight isl-vwin${last ? ' isl-vlast' : ''}" style="--i:${i}" d="${pts.map(([px, py]) => `M${F(px)} ${F(py)}h0`).join('')}" stroke-width="${F(w)}" stroke-opacity="${op}"/>`
@@ -848,6 +931,10 @@
     };
     const nev = onIsle(nevis, 280.2, 282.7, 5), mon = onIsle(mont, 233.6, 240.6, 7);
     s += `<g class="isl-vwin" style="--i:1">${cols}</g>` + lightsOn(ant, 1, 1.2, 0.75) + lightsOn(nev, 2, 0.95, 0.6) + lightsOn(mon, 3, 1, 0.6, true);
+    // The yachts, each version's own, in front of the shore's lights and their columns, which lie behind them
+    // (art-audit pass 4, 2026-10-01: the anchored masts stand before the near point and its lights; by Day those
+    // lights are off, so the Day picture is unchanged).
+    s += flush();
     return s + `<g transform="translate(${F(x - bx0 * k)} ${F(y - by0 * k)}) scale(${F(k * 1000) / 1000})"><path class="f-bird" d="${B.d}"/></g>`;
   }
 
