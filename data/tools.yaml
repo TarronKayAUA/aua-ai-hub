@@ -36,11 +36,20 @@
 - name: Claude
   vendor: Anthropic
   category: assistants
+  # Claude Slides added 2026-10-02 (tool discovery issue #52, owner approved:
+  # decks point to Claude Slides). It is a feature of Claude, not a separate
+  # product, so it sits in this entry (issue #51 declined a card of its own on
+  # 2026-09-22). Read 2026-10-02: claude.com/features/artifacts, "Claude
+  # Design, Claude Slides and Claude Docs are available in beta on paid plans"
+  # and "You can export your deck to PowerPoint and PDF"; Help Center, Claude
+  # Design admin guide, "Make on-brand decks from notes, reports, or an
+  # existing conversation, and export them to PowerPoint or PDF".
+  also_for: [slides]
   url: https://claude.com
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-22
-  blurb: General-purpose artificial intelligence assistant for writing, analysis, coding, and answering questions through a chat interface.
+  last_reviewed: 2026-10-02
+  blurb: General-purpose artificial intelligence assistant for writing, analysis, coding, and answering questions through a chat interface. On paid plans, its Claude Slides feature (in beta) builds a presentation from notes, a report, or a conversation and exports it to PowerPoint or PDF.
 
 - name: ChatGPT
   vendor: OpenAI
@@ -66,15 +75,30 @@
 - name: Microsoft 365 Copilot
   vendor: Microsoft
   category: assistants
-  also_for: [slides]
+  # Cowork and Word's transcription folded in 2026-10-02 (tool discovery issue
+  # #52, owner approved, in place of new cards). Read that day:
+  # microsoft.com/en-us/microsoft-365-copilot/cowork, "Cowork plans the steps,
+  # picks the right skills and apps, pauses for your approval at key
+  # checkpoints, and returns finished artifacts", "sensitive steps, like
+  # sending an email or updating a record, pause for your approval", "available
+  # to Microsoft Copilot customers with usage-based billing", "Admins can
+  # enable Cowork in the Microsoft 365 admin center". Support page "Transcribe
+  # your recordings" (Word for Microsoft 365, Word for the web, OneNote):
+  # "converts speech to a text transcript with each speaker individually
+  # separated"; .wav, .mp4, .m4a, .mp3; "maximum of 300 minutes of uploaded
+  # audio per month" with a Microsoft 365 subscription, 30,000 with a Copilot
+  # license; recordings go to a Transcribed Files folder on OneDrive. The
+  # transcription needs only Microsoft 365, so the blurb does not tie it to
+  # Copilot.
+  also_for: [slides, agents, transcribe]
   url: https://www.microsoft.com/en-us/microsoft-365-copilot
   # Owner confirmed 2026-09-26: AUA licenses Copilot for a small number of
   # faculty (the owner among them); students are unlikely to have access.
   cost: AUA-licensed
   governance_status: licensed
   status_note: "AUA licenses Copilot for a small number of faculty; students are unlikely to have access through AUA."
-  last_reviewed: 2026-09-26
-  blurb: Artificial intelligence assistant built into Word, PowerPoint, Outlook, and Teams under an institutional Microsoft 365 license.
+  last_reviewed: 2026-10-02
+  blurb: Artificial intelligence assistant built into Word, PowerPoint, Outlook, and Teams under an institutional Microsoft 365 license. Its Cowork agent carries out multi-step tasks across email, meetings, and files and returns a finished deck, report, or email, pausing for approval before steps such as sending a message; an administrator turns it on. Word itself transcribes a recording or an uploaded audio file with each speaker separated, up to 300 minutes of uploaded audio a month on a standard Microsoft 365 license.
 
 - name: DeepSeek
   vendor: DeepSeek

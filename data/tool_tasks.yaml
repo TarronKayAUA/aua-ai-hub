@@ -126,18 +126,24 @@
   group: task
   landing: true
   guide: >-
-    To improve an existing PowerPoint deck, start with tools that work on
-    the .pptx file itself. In Claude, four document [skills](skills.md)
-    also build decks and documents directly.
+    To start a new deck, Claude Slides builds one from your notes or a
+    conversation. To improve an existing PowerPoint deck, start with tools
+    that work on the .pptx file itself. In Claude, four document
+    [skills](skills.md) also build decks and documents directly.
   # DRAFT for owner sign-off. Source: the Presentations and Design intro
-  # in scripts/render_data.py (CATEGORY_INTROS).
+  # in scripts/render_data.py (CATEGORY_INTROS). New decks point to Claude
+  # Slides since 2026-10-02 (tool discovery issue #52, owner approved;
+  # sources beside the Claude entry in data/tools.yaml). start_with holds at
+  # most two items, so the earlier "Improve a deck you already have" and
+  # "Restyle a deck and keep it in PowerPoint" rows are one row now, with
+  # the same three tools.
   start_with:
-    - need: Improve a deck you already have
-      tools: [PowerPoint Design Suggestions]
-      why: It works inside the .pptx file itself, so nothing is rebuilt.
-    - need: Restyle a deck and keep it in PowerPoint
-      tools: [Canva, Claude Design]
-      why: Both import a PowerPoint deck and export the result back to one.
+    - need: Make a new deck
+      tools: [Claude]
+      why: Its Claude Slides feature (in beta, on paid plans) drafts the deck from notes, a report, or a conversation and exports it to PowerPoint or PDF.
+    - need: Improve or restyle a deck you already have
+      tools: [PowerPoint Design Suggestions, Canva, Claude Design]
+      why: Design Suggestions works inside the .pptx file itself; Canva and Claude Design import the deck and export the result back to PowerPoint.
 
 - id: writing
   label: Polish Writing
