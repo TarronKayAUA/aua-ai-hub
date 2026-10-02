@@ -182,6 +182,8 @@ hooks:
   - scripts/page_descriptions.py
   # and each page's sitemap date from the git history of its sources.
   - scripts/page_dates.py
+  # and llms.txt, the nav with those descriptions, for AI systems.
+  - scripts/llms_txt.py
   # Layout redesign (2026-09-25): page types, action slot, page ending.
   - scripts/layout_frame.py
   - scripts/layout_home.py

@@ -673,6 +673,19 @@ The site itself follows each visitor's device setting (prefers-color-scheme) unt
 
 DESIGN.md at the repository root is the design reference every new page, section and data-driven list follows: principles, the hook pipeline and its integrity checks, page types, layout rules, breakpoints, components, color, type and case, ordering, motion and accessibility, the empty space policy, checklists, things not to do, gaps left on purpose and the measured baseline. `python scripts/design_check.py` (authoring only, not CI) builds the site and checks it against DESIGN.md in a browser; run it before a layout change ships. The dated decisions stay in this section; DESIGN.md describes what is.
 
+### Discoverability (owner approved 2026-10-02)
+
+Search engines and AI systems can find the site and tell its pages apart, with nothing that needs the college's IT department:
+
+- Structured data: a JSON-LD graph in overrides/main.html says the Hub is a website maintained by the Associate Dean of AI in Medical Education, who works for the American University of Antigua College of Medicine, and points to auamed.org's own Organization node (`https://www.auamed.org/#organization`) instead of defining a second one. The college is not named as publisher. A sameAs link to the maintainer's auamed.org faculty profile waits until that profile shows the current title.
+- Each page's meta description, and its og and twitter descriptions, is its own lede or opening paragraph trimmed to about 160 characters (scripts/page_descriptions.py). No new wording; `description:` in a page's front matter overrides it, and the home page keeps the site description.
+- sitemap.xml dates each page by the newest commit among its sources (scripts/page_dates.py), so the deploy and refresh workflows check out full history. The home page and News & Events print today's date, so they keep the build date.
+- llms.txt (https://llmstxt.org), a map of the site for AI systems, is generated from the nav and those descriptions (scripts/llms_txt.py).
+- IndexNow: after each deploy, the pages whose sitemap date changed are sent to api.indexnow.org, which shares them with Bing and the other participating engines (scripts/indexnow.py; the key file is docs/a495c2e3e04c409b58ea0e50a0337cc8.txt).
+- docs/google78918ccefa582835.html verifies the owner's Google Search Console property; Bing Webmaster Tools imported it. Neither it nor the IndexNow key file may be deleted or renamed.
+- robots.txt and a redirect for the bare host address live in a separate repository, TarronKayAUA/TarronKayAUA.github.io, because crawlers read robots.txt only at the host root. It allows everything and names the sitemap; a Disallow line there would hide Hub pages from search.
+- The repository's About panel links the site and carries topics.
+
 ## 13. Out of scope
 
 - The Power Automate flow itself (owner builds it in the institutional M365 tenant; this repo only guarantees the stable `digest.xml` contract).

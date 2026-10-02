@@ -20,6 +20,7 @@ jobs:
     timeout-minutes: 30
     outputs:
       narration: ${{ steps.narrate.outcome }}
+      indexnow: ${{ steps.indexnow.outputs.payload }}
     steps:
       # Full history: scripts/page_dates.py dates each page in sitemap.xml from
       # git log, and a shallow clone would leave every page on the build date.
@@ -59,6 +60,12 @@ jobs:
           python scripts/narrate.py --check || true
           python scripts/narrate.py --only news
       - run: mkdocs build --strict
+      # IndexNow (2026-10-02): the pages this deploy adds, redates or removes,
+      # read against the live sitemap before it is replaced. The deploy job
+      # sends the notice; a failure here only means no notice this time.
+      - id: indexnow
+        continue-on-error: true
+        run: python scripts/indexnow.py site/sitemap.xml >> "$GITHUB_OUTPUT"
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site
@@ -91,6 +98,25 @@ jobs:
       - id: deployment_final
         if: steps.deployment_retry.outcome == 'failure'
         uses: actions/deploy-pages@v5
+      # Once the new pages are live, tell the IndexNow search engines (Bing and
+      # the others that share api.indexnow.org) which ones changed. 200 is
+      # accepted, 202 accepted with the key still being checked; anything else
+      # marks this step failed without failing the run (scripts/indexnow.py).
+      - name: Notify search engines (IndexNow)
+        if: >-
+          !cancelled() && needs.build.outputs.indexnow != '' &&
+          (steps.deployment.outcome == 'success' || steps.deployment_retry.outcome == 'success' ||
+          steps.deployment_final.outcome == 'success')
+        continue-on-error: true
+        env:
+          PAYLOAD: ${{ needs.build.outputs.indexnow }}
+        run: |
+          code=$(curl -sS -o response.txt -w '%{http_code}' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' --data "$PAYLOAD")
+          n=$(python3 -c 'import json, os; print(len(json.loads(os.environ["PAYLOAD"])["urlList"]))')
+          echo "IndexNow answered HTTP $code for $n URLs"
+          cat response.txt 2>/dev/null || true
+          case "$code" in 200|202) ;; *) exit 1 ;; esac
 
   # Runs after the deploy, and only when the news narration step failed: the
   # site is already live without the new audio, and this fails the run so
