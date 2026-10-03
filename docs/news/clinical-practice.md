@@ -21,7 +21,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">2</span></button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -36,6 +36,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03272-3">Interpretable multimodal retrieval augmented diagnosis for breast ultrasound with multinational clinical validation and reader study</a>
     <p class="news-card-summary">Researchers report an interpretable multimodal retrieval-augmented diagnostic system for breast ultrasound, validated across multiple countries and compared against human readers in a reader study.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 3, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03324-8">Shapley value explanations for clinical prediction models: a scoping review and guide</a>
+    <p class="news-card-summary">A scoping review in npj Digital Medicine examines how Shapley value explanations a method for attributing a model&#x27;s prediction to its input features are used in clinical prediction models and offers a practical guide.</p>
   </div>
 </div>
 <div class="news-card" data-topic="other">
@@ -124,13 +131,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 30, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03156-6">Vision wearables with artificial intelligence to close the sensory gap in patient characterization</a>
     <p class="news-card-summary">An npj Digital Medicine article discusses how AI-enabled vision wearables could add sensory information to characterize patients beyond what clinic visits capture.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">September 29, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e91151">Detecting Misspelled Drug Names Using Transformer-Based Language Models: Model Development and External Validation</a>
-    <p class="news-card-summary">Researchers developed and externally validated transformer-based language models to detect misspelled drug names in electronic health record data, aiming to reduce false positives of dictionary-based methods.</p>
   </div>
 </div>
 </div>
