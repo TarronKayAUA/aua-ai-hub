@@ -2333,8 +2333,11 @@ def select_digest_highlights(candidates: list[dict], config: dict,
             ordered, cfg.get("max_payload_chars", 22000))
         system = DIGEST_PROMPT_PATH.read_text(encoding="utf-8")
         try:
+            # The task's own timeout when feeds.yaml sets one (2026-10-03,
+            # with its max_tokens made explicit), as curation does.
             raw = call(system, budgets + "\n\n" + payload, cfg,
-                       llm_cfg["request_timeout_seconds"])
+                       cfg.get("request_timeout_seconds",
+                               llm_cfg["request_timeout_seconds"]))
             ids = [str(i) for i in parse_llm_json(raw)["highlights"]]
             valid = [i for i in ids if i in by_id]
             if valid:

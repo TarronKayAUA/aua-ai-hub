@@ -9,7 +9,7 @@ Usage (needs GITHUB_TOKEN for github models, ANTHROPIC_API_KEY for claude):
 
     python scripts/compare_brief_models.py
     python scripts/compare_brief_models.py --models anthropic:claude-opus-5-5 \
-        anthropic:claude-sonnet-5 --category general_ai
+        anthropic:claude-sonnet-5-5 --category general_ai
 
 Each candidate is scored against the same contract the pipeline enforces
 (word bounds, reference count and validity, two-paragraph structure), so a
@@ -31,8 +31,10 @@ import aggregate  # noqa: E402
 # Updated 2026-09-22: github:openai/gpt-4.1 was dropped because GitHub
 # Models was retired on 2026-07-30, so that default failed every run, and
 # Sonnet 5 took its place as the model the briefs actually run on.
+# Updated 2026-10-03: the briefs moved to Sonnet 5.5 (owner directive, no
+# Sonnet 5 anywhere), so the incumbent here moved with them.
 DEFAULT_MODELS = [
-    "anthropic:claude-sonnet-5",
+    "anthropic:claude-sonnet-5-5",
     "anthropic:claude-haiku-4-5",
     "anthropic:claude-opus-5-5",
 ]

@@ -86,6 +86,29 @@ llm:
   # whether the new model's safety classifiers can refuse a medical
   # payload; dry-run curation against the incumbent on the same
   # candidates; and dispatch model-compare.yml for the briefs.
+  # Sonnet half done 2026-10-03 (owner directive: no task runs on Sonnet 5,
+  # a legacy model since Sonnet 5.5 shipped on 2026-09-28). Every Sonnet 5
+  # task moved to claude-sonnet-5-5 after the checks above, verified from
+  # the platform docs that day: same price ($2/$10 per million) and
+  # tokenizer, same default effort (high, left at the default), knowledge
+  # to June 2026 (Sonnet 5: January 2026), retirement not before
+  # 2027-09-28. Its breaking changes concern tools and multi-turn thinking,
+  # which no task here uses. It declines in more categories than Sonnet 5
+  # ("bio" and "general_harms" among them), but 15 curation runs on the
+  # same medical news since 2026-09-29 had no refusal, every swapped task
+  # already fails safe (briefs keep the last good text, digest selection
+  # falls back to score order, a watch leaves a proposal or reports an
+  # error), and content_watch keeps its client-side refusal chain. No
+  # server-side fallback was added: a named fallback must be on the
+  # model's allowed_fallback_models list (Models API, not checked here),
+  # and an unlisted one makes the API reject every request. The briefs
+  # check the same day (model-compare.yml run 37147042696, Sonnet 5.5
+  # alone, two samples per category on the live payload) passed the brief
+  # contract 6 of 6 at about 150 words, with no refusal on the Clinical
+  # Practice payload and current model names kept as written. The Haiku 4.5
+  # tasks move to Haiku 5.5 when it ships (owner, same day); Haiku 4.5 is
+  # active with no deprecation notice, and retirement needs 60 days'
+  # notice.
   tasks:
     # Curation moved to Sonnet 5.5 at low effort on 2026-09-29, a stopgap
     # until Haiku 5.5 ships (owner approved). A backtest replayed 278 real
@@ -119,9 +142,15 @@ llm:
     # docs, verified 2026-08-12, so no September increase).
     # Owner approved 2026-07-02; curation stays on Haiku pending
     # a week of drop-reason logs.
+    # Sonnet 5.5 since 2026-10-03 (same price). max_tokens is explicit
+    # since then (thinking draws on it; the 4000 default had sufficed on
+    # Sonnet 5), with a timeout long enough to reach it, which
+    # scripts/aggregate.py honors for this task since the same day.
     digest_selection:
       provider: anthropic
-      model: claude-sonnet-5
+      model: claude-sonnet-5-5
+      max_tokens: 8000
+      request_timeout_seconds: 180
     conference_watch:
       provider: anthropic
       model: claude-haiku-4-5
@@ -135,9 +164,10 @@ llm:
     # plus a week of news) let it eat the 4000-token default, truncating
     # the JSON reply (issues #20 and #27). A ceiling costs nothing unless
     # used; worst case at 16000 is about 16 cents for the weekly call.
+    # Sonnet 5.5 since 2026-10-03, same price (review note above).
     content_watch:
       provider: anthropic
-      model: claude-sonnet-5
+      model: claude-sonnet-5-5
       max_tokens: 16000
       # Refusal chain (owner approved 2026-08-04, issue #33): Sonnet 5's
       # safety classifier declined the weekly synthesis payload twice in
@@ -162,9 +192,10 @@ llm:
     # passes); at most three small calls per night, well under a dollar
     # a month. max_tokens set consciously: thinking shares the response
     # budget on Claude 5 generation models (issues #20 and #27).
+    # Sonnet 5.5 since 2026-10-03, same price (review note above).
     section_briefs:
       provider: anthropic
-      model: claude-sonnet-5
+      model: claude-sonnet-5-5
       max_tokens: 8000
     content_verify:
       provider: anthropic
@@ -178,17 +209,20 @@ llm:
     # structured checklist extraction from fetched official pages before
     # any automatic application. Sonnet for instruction-following
     # fidelity; a handful of small calls per week, well under a dollar
-    # a month.
+    # a month. Sonnet 5.5 since 2026-10-03, same price, with max_tokens
+    # explicit from then (thinking draws on it).
     gate_verify:
       provider: anthropic
-      model: claude-sonnet-5
+      model: claude-sonnet-5-5
+      max_tokens: 8000
     # Weekly prose page review (owner approved 2026-07-08): claims check
     # of due evergreen pages against fetched tool pages. A wrong drift
     # call costs an owner email, so this rides the same verification
     # tier as gate_verify. A few pages per week, pennies per month.
+    # Sonnet 5.5 since 2026-10-03, same price (review note above).
     page_review:
       provider: anthropic
-      model: claude-sonnet-5
+      model: claude-sonnet-5-5
       # 16000, not the 4000 default (2026-09-01, issue #44): reviewing a
       # claim-heavy page against several fetched tool pages spends more
       # on thinking than the default allows, and Claude 5 thinking draws

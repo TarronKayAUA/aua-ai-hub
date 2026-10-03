@@ -37,7 +37,7 @@ on:
         # use DEFAULT_MODELS in scripts/compare_narrative_models.py. The
         # curation task ignores it: its versions are defined in
         # scripts/compare_curation_models.py (arms_from).
-        default: "anthropic:claude-sonnet-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5"
+        default: "anthropic:claude-sonnet-5-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5"
       category:
         description: "Briefs only: limit to one category key (blank runs all three)"
         required: false
@@ -97,7 +97,7 @@ jobs:
           # The brief defaults include a Haiku candidate that is no part of
           # this question, so the brief default string means "use the
           # narrative harness's own defaults".
-          if [ -n "$MODELS" ] && [ "$MODELS" != "anthropic:claude-sonnet-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5" ]; then
+          if [ -n "$MODELS" ] && [ "$MODELS" != "anthropic:claude-sonnet-5-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5" ]; then
             ARGS="$ARGS --models $MODELS"
           fi
           python scripts/compare_narrative_models.py $ARGS
