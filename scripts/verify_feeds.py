@@ -30,9 +30,17 @@ A failure that can pass on its own (a server error, a rate limit, a timeout
 or a dropped connection) is tried twice more, 5 and then 15 seconds later,
 before it counts. The output says how many attempts a feed took, so a flaky
 feed stays visible even when it passes.
+
+An empty feed passes when the feed itself says it does not publish on the day
+it was built (the RSS skipDays element, days in GMT, against the feed's own
+lastBuildDate or pubDate). arXiv's listings are empty on Saturday and Sunday
+and declare it; the monthly check fell on a Saturday on 2026-10-03 and
+reported arXiv cs.CL as a new failure (issue #54). An empty feed on any other
+day still fails.
 """
 
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -54,6 +62,24 @@ TIMEOUT = 20
 # seconds, and the tolerated Substack blocks would only slow the run.
 RETRY_WAITS = (5, 15)   # seconds before the second and the third attempt
 RETRY_STATUS = {429} | set(range(500, 600))
+# The RSS skipDays element: the days a feed says it does not publish.
+SKIP_DAYS = re.compile(rb"<skipDays>(.*?)</skipDays>", re.DOTALL | re.IGNORECASE)
+SKIP_DAY = re.compile(rb"<day>\s*([A-Za-z]+)\s*</day>", re.IGNORECASE)
+WEEKDAYS = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+
+
+def declared_rest_day(content: bytes, feed) -> str | None:
+    """The weekday (GMT) the feed was built on, if the feed lists that day in
+    its own skipDays; otherwise None. The build date is the feed's
+    lastBuildDate or pubDate, so a check made after midnight but before the
+    feed's next build still judges the feed by the day it describes."""
+    block = SKIP_DAYS.search(content)
+    if not block:
+        return None
+    days = {d.decode().capitalize() for d in SKIP_DAY.findall(block.group(1))}
+    stamp = feed.get("updated_parsed") or feed.get("published_parsed") or time.gmtime()
+    day = WEEKDAYS[stamp.tm_wday]
+    return day if day in days else None
 
 
 def collect() -> list[tuple[str, str, bool, str | None]]:
@@ -115,6 +141,10 @@ def check(url: str, browser_ua: bool = False) -> tuple[bool, str]:
     parsed = feedparser.parse(resp.content)
     entries = len(parsed.entries)
     if entries == 0:
+        rest = None if parsed.bozo else declared_rest_day(resp.content, parsed.feed)
+        if rest:
+            return True, (f"0 entries, built on {rest}, a day the feed says it does "
+                          f"not publish (skipDays){tried}")
         detail = "parsed but 0 entries"
         if parsed.bozo:
             detail += f" (bozo: {parsed.bozo_exception})"
