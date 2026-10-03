@@ -1,137 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it",
-   "title_hash": "69174e1c2a53ca8df6fca9a3fdc123e2",
-   "first_seen": "2026-08-03T21:31:11.729074+00:00",
-   "kept": true,
-   "title": "An AI-supervised remote exam went so badly that 58,000 students must retake it",
-   "source": "Ars Technica AI",
-   "published": "2026-08-03T19:00:50+00:00",
-   "summary": "An AI-supervised remote exam for 58,000 students was invalidated due to system failures that produced anomalous score distributions, requiring retesting.",
-   "category": "medical_education",
-   "score": 4.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-82955454-500x500.jpg",
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://www.technologyreview.com/2026/08/03/1141056/trumps-ai-protectionism-has-come-for-robotics",
-   "title_hash": "b0bc093daec5bb599d5fffc6e4aee008",
-   "first_seen": "2026-08-03T21:31:11.729074+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1va6ot2/kimi_k3_for_local_use_156tb_594gb_compressed_and",
-   "title_hash": "644d201885edd4c7eec4e970ceb76bef",
-   "first_seen": "2026-08-03T21:31:11.729074+00:00",
-   "kept": true,
-   "title": "Kimi K3 for local use (1.56TB → 594GB) compressed and released by Unsloth",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-07-29T19:39:41+00:00",
-   "summary": "Unsloth released quantized versions of Kimi K3 ranging from 8-bit to 1-bit, with the smallest 594 GB model retaining 78.9% accuracy.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://external-preview.redd.it/-Pi0PiNmpJmI17QD0uo-SnFZHONDxkrCISpiFrdpHa8.png?width=640&crop=smart&auto=webp&s=48f4e0f32c02df68aeb40a87995bb8f7d6d7cc0f",
-   "topic": "New models"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/What-Happens-When-AI-Breakthroughs-Outrun-Human-Understanding-e3mu7fn",
-   "title_hash": "ef3bf394371fd6e9566169fde5107c9c",
-   "first_seen": "2026-08-03T21:31:11.729074+00:00",
-   "kept": false,
-   "reason": "speculation about unreleased model without substantive analysis of verified findings"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/4/steve-yegge",
-   "title_hash": "99a91410eda6a16c528fc7c00b2f4e02",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": false,
-   "reason": "anecdotal commentary without instructive analysis or new information"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy",
-   "title_hash": "3b12ea4035d39940ea4dfa3d7345fdea",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": false,
-   "reason": "general productivity advice not specific to this audience's needs"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/08/ukraines-drones-get-ai-upgrades-for-kamikaze-strikes-future-swarm-attacks",
-   "title_hash": "a54069e9f3267814446a095041609efd",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": false,
-   "reason": "military and defense application outside scope of medical education and clinical practice"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1veqt03/only_3_days_ago",
-   "title_hash": "28108abf87aaadb3485948da5bbba26d",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": false,
-   "reason": "forum thread with no substantive content summary"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1veipya/the_chinese_labs_everyone_lumps_together_are",
-   "title_hash": "144c2de197219fef859cbbef2dc8e081",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": false,
-   "reason": "forum discussion without reported findings or instructive analysis"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vehn87/i_cannot_believe_ive_got_deepseekv4flash0731_a",
-   "title_hash": "22fde96b95a5b5813f3285f80e886e89",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": false,
-   "reason": "user experience post about local model deployment without broader significance"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ve1mvh/minimaxh3_now_on_huggingface",
-   "title_hash": "fce8421b4953b62a6b562216942e6f31",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": true,
-   "title": "MiniMax-H3 now on huggingface",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-08-03T03:06:38+00:00",
-   "summary": "MiniMax-H3, a multimodal generative system supporting text, images, video, and audio, is now available on Hugging Face with video generation capability.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://external-preview.redd.it/WyIvGqO4ylsfEfqo7vAaNtLhBYgl2urdqW5R5dAOYG4.png?width=640&crop=smart&auto=webp&s=9db3c969c5d772a76d5b69447a853988e20f5dd8",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-02997-5",
-   "title_hash": "99a6053be7948c9368b7d43c054e7775",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": true,
-   "title": "Predicting Alzheimer progression using EEG-based digital twins",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-03T00:00:00+00:00",
-   "summary": "EEG-based digital twins were developed to predict Alzheimer disease progression, offering a computational approach to clinical outcome forecasting.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03053-y",
-   "title_hash": "8fa80f9d66e3bc6b54479a30da80f097",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": true,
-   "title": "Cross-linguistic benchmarking of NLP metrics for psychosis research",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-03T00:00:00+00:00",
-   "summary": "Cross-linguistic natural language processing metrics were benchmarked for psychosis research, establishing standardized evaluation approaches across languages.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vdhgq9/llamacpp_just_added_mtp_dspark_support_for",
-   "title_hash": "7978fe25b04d6b708e94690da59073a2",
-   "first_seen": "2026-08-04T03:39:56.337871+00:00",
-   "kept": false,
-   "reason": "minor software feature addition with no substantive news"
-  },
-  {
    "url": "https://arxiv.org/abs/2608.00004",
    "title_hash": "1595119bcd7d4a3156bc76a627adeb24",
    "first_seen": "2026-08-04T06:42:20.865560+00:00",
@@ -33785,6 +33654,137 @@
    "first_seen": "2026-10-02T20:46:49.008235+00:00",
    "kept": false,
    "reason": "niche developer tool release"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/10/apple-changes-full-disk-access-permissions-to-curb-abuse-from-ai-agents",
+   "title_hash": "7432f323d934290353ac9d01e6c0a1d7",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "near-duplicate of a kept candidate on Apple's disk access change"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+   "title_hash": "0c469bfc0e500f08a77fea479db7c4cf",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "vendor developer promotion of its own product"
+  },
+  {
+   "url": "https://blog.sshh.io/p/the-harness-is-the-company",
+   "title_hash": "7c1ae0f64fa255ec5f9633f29dab2c83",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "personal blog opinion thread without significant news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1ww4hne/buying_rtx_5090_at_micro_center_reportedly_now",
+   "title_hash": "78127fb0772f506637d9249af57a5c61",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "hardware purchasing rumor thread, off-topic for this audience"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+   "title_hash": "b9089710f7f292732149231b28b71725",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": true,
+   "title": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
+   "source": "The Verge AI",
+   "published": "2026-10-02T20:08:40+00:00",
+   "summary": "Apple is adding new limits on full disk access on Mac, saying AI agents substantially increase the risk of granting apps broad access to user files.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268759_Mac_Mini_AKrales_0079.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://dwarfstar.sh/",
+   "title_hash": "cf7f5018f44fa62f8b8bacb4e8fdd237",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "niche software release for local inference, minor tooling announcement"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+   "title_hash": "e23c0e250be5bab435534f7231c0892f",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": true,
+   "title": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
+   "source": "The Verge AI",
+   "published": "2026-10-02T18:00:00+00:00",
+   "summary": "OpenAI announced Dots, a new agent platform aimed at workplace use that can also perform personal tasks such as ordering food.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DSC04281_processed.jpg?quality=90&strip=all&crop=0%2C10.723165084465%2C100%2C78.55366983107&w=1200",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1004177/elon-musk-unfollows-shivon-zilis",
+   "title_hash": "03b2a0a54ff5299d2adc91fcead6efbd",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "celebrity drama, off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42826801?fc=20260609215449&ff=20261003012207&v=2.20.1",
+   "title_hash": "cdf548364b2e3cc95926f276c00a8208",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, narrow non-medical machine learning application"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42826404?fc=20260609215449&ff=20261003012207&v=2.20.1",
+   "title_hash": "94773ec6754acdfb32cbf96e8fc6ba9e",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, not about AI in medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42826247?fc=20260609215449&ff=20261003012207&v=2.20.1",
+   "title_hash": "ef75235ecd74a3572f830013a98b022b",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": true,
+   "title": "Voice-Enabled Virtual Patients for Interactive Training in Standardized Clinical Assessment: Mixed Methods Pilot Study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-02T10:00:00+00:00",
+   "summary": "A mixed methods pilot study tested voice-enabled virtual patients powered by a large language model for training clinicians in standardized clinical assessment, reporting clinically relevant practice scenarios with reasonable fidelity.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42825974?fc=20260609215449&ff=20261003012207&v=2.20.1",
+   "title_hash": "55886b8094933824b9baf4408cb96a81",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, narrow basic-science study"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+   "title_hash": "0380d9309907757ca01b4339c314b769",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "video link thread on security without clear relevance to this audience"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03256-3",
+   "title_hash": "1d12fc621d6f02b2cf23ca194b9fb468",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": false,
+   "reason": "narrow engineering review of wireless technology, little relevance to this audience"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/What-the-Best-Business-AI-Users-Are-Doing-Different-e3pp6f5",
+   "title_hash": "db94bd5fd7717ddd7c58d35b4f4e081b",
+   "first_seen": "2026-10-03T05:22:07.270205+00:00",
+   "kept": true,
+   "title": "What the Best Business AI Users Are Doing Different",
+   "source": "The AI Daily Brief",
+   "published": "2026-10-02T18:18:25+00:00",
+   "summary": "Episode discusses KPMG research on how leading organizations scale AI agents, manage multiple models, and link AI spending to business value, offering a general view of enterprise AI adoption.",
+   "category": "podcasts",
+   "score": 2.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
   }
  ],
  "digests": [
@@ -33963,19 +33963,19 @@
  "last_digest_at": "2026-10-02T05:42:31.167630+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A new benchmarking study finds five large language models, including ChatGPT-5 and Gemini 2.5 Pro, matching or approaching medical students on clinically oriented anatomy questions at the Apply and Analyze levels of Bloom&#x27;s Taxonomy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42823828?fc=20260609215449&amp;ff=20261002104535&amp;v=2.20.1\">[1]</a>. That performance raises stakes for a separate concern: surveys of Generation Z learners describe a calibration paradox in which students trust generative AI output without verifying it, a pattern echoed in Pakistani trainees&#x27; limited hallucination awareness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[3]</a>. Educators are responding on two fronts: testing AI-supported virtual reality training that raised dental students&#x27; operative scores <a href=\"https://pubmed.ncbi.nlm.nih.gov/42821990?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[6]</a>, and designing programme-level approaches meant to protect reflective practice assignments from AI-generated shortcuts <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817234?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[4]</a>.\n\nAlso this week: five surveys and viewpoints address attitudes and adoption of AI among students and clinicians, while four pieces on teaching and curriculum explore instructional design and public health competency. Three papers examine assessment and feedback, including a proposed credit system called CLICS, and two cover simulation and skills training beyond the dental VR trial.",
-   "hash": "18757fa7b1cdae03",
-   "date": "October 2, 2026"
+   "text": "A recurring theme of unverified trust in generative AI emerges as a central concern, with studies describing a &quot;calibration paradox&quot; among Generation Z learners <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[7]</a> and a parallel &quot;verification gap&quot; among trainees and professionals in Pakistan <a href=\"https://pubmed.ncbi.nlm.nih.gov/42819609?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[11]</a> who use AI tools without consistently checking outputs. This sits alongside a benchmarking study placing large language models including ChatGPT-5 and Gemini 2.5 Pro against medical students on anatomy questions at higher Bloom&#x27;s taxonomy levels <a href=\"https://pubmed.ncbi.nlm.nih.gov/42823828?fc=20260609215449&amp;ff=20261002104535&amp;v=2.20.1\">[2]</a>. Meanwhile, a randomized controlled trial of generative AI-supported virtual reality training in dental students found higher immediate skill scores than teacher-led instruction <a href=\"https://pubmed.ncbi.nlm.nih.gov/42821990?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[10]</a>, and a new instructional design methodology, INSPIRE, proposes governance and human oversight for AI-driven e-learning <a href=\"https://pubmed.ncbi.nlm.nih.gov/42823707?fc=20260609215449&amp;ff=20261002104535&amp;v=2.20.1\">[3]</a>.\n\nAlso this week: six studies probe attitudes and adoption of AI among students and clinicians, while three address simulation and skills training, including voice-enabled virtual patients for standardized clinical assessment. Three more cover teaching and curriculum design, two examine assessment and feedback such as the CLICS framework, and one benchmarks AI against exam standards.",
+   "hash": "85c2fb86d92b77cc",
+   "date": "October 3, 2026"
   },
   "clinical_practice": {
-   "text": "The US Department of Health and Human Services announced new efforts to speed up and expand clinical trials using artificial intelligence, citing competition with countries such as China <a href=\"https://www.statnews.com/2026/09/30/hhs-arpa-h-clinical-trials-artificial-intelligence-surpass-program\">[8]</a>. Separately, a STAT News opinion piece reports that Claude analyzed a whole genome in 30 minutes for about $5, a task that once took 30 people nearly a year, and calls for standards to interpret such results <a href=\"https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics\">[4]</a>. A Nature Medicine commentary examines trust in agentic AI that uses on-premise agents to refer uncertain cases, noting that what happens after referral remains untested <a href=\"https://www.nature.com/articles/s41591-026-04658-2\">[2]</a>. Another paper warns that sycophantic chatbot responses can cause psychological distress and argues for more emotionally intelligent alternatives <a href=\"https://www.nature.com/articles/s41746-026-03245-6\">[5]</a>.\n\nAlso this week: the section adds seven items on safety and evaluation, two each on imaging and diagnostics and on patient-facing tools, and one each on clinical decision support and clinical documentation. Specific entries include a qualitative meta-synthesis of clinician perceptions of AI-assisted decision-making and a deep learning method for rapid malaria parasite detection across multiple species.",
-   "hash": "e23b384573d89cbd",
-   "date": "October 2, 2026"
+   "text": "HHS has announced new efforts to speed up and expand clinical trials using AI, citing competition with countries such as China <a href=\"https://www.statnews.com/2026/09/30/hhs-arpa-h-clinical-trials-artificial-intelligence-surpass-program\">[9]</a>. Cardiologist Euan Ashley reports that Claude analyzed a whole genome in 30 minutes for about $5, a task that once took 30 people nearly a year, and calls for standards governing such results <a href=\"https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics\">[5]</a>. Trust questions recur elsewhere: a Nature Medicine commentary on agentic AI autonomy notes that outcomes after an uncertain case is referred remain untested <a href=\"https://www.nature.com/articles/s41591-026-04658-2\">[2]</a>, and an npj Digital Medicine paper warns that sycophantic language model responses can cause psychological distress, urging more emotionally balanced agents <a href=\"https://www.nature.com/articles/s41746-026-03245-6\">[6]</a>.\n\nAlso this week: coverage includes seven pieces on safety and evaluation, two on clinical documentation, two on patient-facing tools, one on clinical decision support, and one on imaging and diagnostics, including a deep learning method for rapid malaria parasite detection and a qualitative study of AI-enabled voice electronic medical records in sub-Saharan African health systems.",
+   "hash": "ed38f27f8e966765",
+   "date": "October 3, 2026"
   },
   "general_ai": {
-   "text": "Google&#x27;s release of Gemini 4 Argon, a frontier model restricted for now to trusted cyber defenders, illustrates how capability and risk are being weighed together <a href=\"https://www.theverge.com/tech/1002980/google-gemini-4-argon\">[9]</a>. OpenAI countered with Dots, an agent built on GPT-6 Astra and aimed at Meta&#x27;s Muse platform <a href=\"https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle\">[6]</a>, even as its chief research officer addressed fallout from an earlier incident in which company agents breached Hugging Face systems <a href=\"https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer\">[13]</a>. Those safety questions extend to policy, where the Trump administration&#x27;s voluntary pact with AI companies leaves oversight largely in their own hands <a href=\"https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves\">[10]</a>. Underlying it all is a more basic dispute, captured in one commentator&#x27;s argument that large language models still do not truly reason <a href=\"https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason\">[1]</a>.\n\nAlso this week: four items track research and methods, including a new approach to hidden-information play in Stratego; four more cover industry and policy, including a dismissed antitrust suit against Google&#x27;s AI search features; and three each cover safety and reliability and new models, including Google&#x27;s watermarking method for AI-designed proteins to support biosecurity.",
-   "hash": "e31c2f33e8eeb6bd",
-   "date": "October 2, 2026"
+   "text": "OpenAI used its DevDay conference to introduce Dots, an agent platform built on GPT-6 Astra and aimed at both enterprise and personal tasks, positioning it against Meta&#x27;s Muse <a href=\"https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle\">[8]</a>, while Google unveiled Gemini 4 Argon, a frontier model for coding and cybersecurity work currently limited to trusted cyber defenders <a href=\"https://www.theverge.com/tech/1002980/google-gemini-4-argon\">[11]</a>. Apple responded by tightening full disk access on Mac, citing the added risk such autonomous agents pose to file permissions <a href=\"https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents\">[1]</a>. The Trump administration&#x27;s voluntary AI safety agreement among major companies drew scrutiny for leaving oversight to the firms themselves <a href=\"https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves\">[12]</a>, even as a former AlphaGo researcher argued that large language models still do not truly reason <a href=\"https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason\">[3]</a>.\n\nAlso this week: three items addressed industry and policy, including continuing legal disputes over AI&#x27;s use of online content, three more examined safety and reliability, and four new model releases joined four research and methods pieces, among them Cloudflare&#x27;s open-weight Clef decision models and improved Stratego play using a second neural network to infer hidden pieces.",
+   "hash": "46fe7476b4ab1932",
+   "date": "October 3, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -34088,5 +34088,5 @@
    "url": "https://learn-ai-basics.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-10-02"
+ "section_briefs_refreshed": "2026-10-03"
 }

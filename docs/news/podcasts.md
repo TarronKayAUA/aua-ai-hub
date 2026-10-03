@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/What-the-Best-Business-AI-Users-Are-Doing-Different-e3pp6f5" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: What the Best Business AI Users Are Doing Different" loading="lazy">
+  <span class="video-card-title">What the Best Business AI Users Are Doing Different</span>
+  <span class="video-card-meta">The AI Daily Brief, October 2, 2026</span>
+  <span class="video-card-desc">Episode discusses KPMG research on how leading organizations scale AI agents, manage multiple models, and link AI spending to business value, offering a general view of enterprise AI adoption.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/andrew-fuller-on-ai-neurodiversity-and-personalised-learning" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Andrew Fuller on AI, neurodiversity and personalised learning" loading="lazy">
   <span class="video-card-title">Andrew Fuller on AI, neurodiversity and personalised learning</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">Why AI Washing Won’t Work Much Longer</span>
   <span class="video-card-meta">The AI Daily Brief, August 4, 2026</span>
   <span class="video-card-desc">Discussion of how open models and organizational sophistication are raising scrutiny of corporate AI claims and shallow implementations.</span>
-</a>
-<a class="video-card" href="https://www.cognitiverevolution.ai/nathan-goes-to-china-part-2-ai-safety-with-chinese-characteristics" target="_blank" rel="noopener">
-  <img src="https://megaphone.imgix.net/podcasts/0fb6bad0-8eaf-11f1-956a-e372f562a84d/image/6b3cba9b590d7a751f2dace1adbca55d.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics" loading="lazy">
-  <span class="video-card-title">Nathan Goes to China, Part 2: AI Safety with Chinese Characteristics</span>
-  <span class="video-card-meta">The Cognitive Revolution, August 2, 2026</span>
-  <span class="video-card-desc">Nathan reports from China on AI safety practices and governance, examining whether American policy arguments about futility of safety obligations hold up against current Chinese model safeguards.</span>
 </a>
 </div>
