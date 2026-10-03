@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=N3REfH4N9Dg" target="_blank" rel="noopener" title="HUGE Fable 5.5 LEAK + First Preview, Gemini 4 Argon, Claude Code Update, FREE Model, &amp; More! AI NEWS">
+  <img src="https://i3.ytimg.com/vi/N3REfH4N9Dg/hqdefault.jpg" alt="Video: AI news roundup: Fable 5.5 preview, Gemini 4 Argon, Claude Code update" loading="lazy">
+  <span class="video-card-title">AI news roundup: Fable 5.5 preview, Gemini 4 Argon, Claude Code update</span>
+  <span class="video-card-meta">WorldofAI, October 3, 2026</span>
+  <span class="video-card-desc">A news roundup covering several AI developments, including a reported preview of Fable 5.5, Gemini 4 Argon, a Claude Code update, and a free model, so viewers get a quick overview of recent releases.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=oBdLhD5nPYw" target="_blank" rel="noopener" title="OpenAI cancels Astra release, Sonnet 5.5 &amp; what Meta Muse means for work">
   <img src="https://i4.ytimg.com/vi/oBdLhD5nPYw/hqdefault.jpg" alt="Video: Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse" loading="lazy">
   <span class="video-card-title">Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Testing and analysis of Anthropic Opus 5.5</span>
   <span class="video-card-meta">Matthew Berman, September 23, 2026</span>
   <span class="video-card-desc">Hands-on testing and analysis of Anthropic&#x27;s Opus 5.5 model release.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=ux6Lafw7en0" target="_blank" rel="noopener" title="Claude Opus 5.5 Is INSANE, Hands-On With the BEST Model Yet!">
-  <img src="https://i2.ytimg.com/vi/ux6Lafw7en0/hqdefault.jpg" alt="Video: Hands-on testing of Claude Opus 5.5" loading="lazy">
-  <span class="video-card-title">Hands-on testing of Claude Opus 5.5</span>
-  <span class="video-card-meta">Bijan Bowen, September 22, 2026</span>
-  <span class="video-card-desc">Hands-on testing and technical evaluation of Anthropic&#x27;s Claude Opus 5.5 model across multiple capability areas.</span>
 </a>
 </div>
 
