@@ -6,7 +6,7 @@ comments: true
 
 # This Week
 
-<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">37</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">33</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">44</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">16</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">12</span></a></nav>
+<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">37</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">31</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">44</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">16</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">12</span></a></nav>
 
 Everything kept in the last seven days. Earlier weeks' highlights are in the [News Archive](archive/index.md).
 
@@ -305,7 +305,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">33</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">14</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">31</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">13</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">2</span></button></div>
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
@@ -382,7 +382,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 </div>
 
-??? abstract "Show the other 23 items"
+??? abstract "Show the other 21 items"
 
     <div class="news-list news-list--more">
     <div class="news-card" data-topic="clinical-decision-support">
@@ -532,20 +532,6 @@ Items are selected several times a day by an automated pipeline and the summarie
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 26, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42799750?fc=20260609215449&amp;ff=20260927100055&amp;v=2.20.1">Diagnostic performance of large language models for discrepancy detection in non-English resident-authored abdominal CT and MRI reports: a Turkish-language evaluation</a>
         <p class="news-card-summary">Large language models showed variable performance detecting discrepancies in Turkish radiology reports but require prospective multicenter validation before clinical deployment.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03276-z">Quantifying the plausibility gap in generative AI for surgical video generation with expert assessment</a>
-        <p class="news-card-summary">Expert assessment quantifies the gap between plausible and realistic surgical video generation from generative AI models.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="patient-facing-tools">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 26, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03309-7">Large language model, assisted preoperative communication reduces patient anxiety and physician workload in prostate cancer: a prospective randomized phase II trial</a>
-        <p class="news-card-summary">Randomized trial shows large language model assisted preoperative communication for prostate cancer reduces patient anxiety and physician workload.</p>
       </div>
     </div>
     </div>
