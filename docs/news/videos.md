@@ -13,6 +13,18 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=83HMZrhL_Uw" target="_blank" rel="noopener" title="AI &amp; Music: How AI Is Changing Music Creation &amp; Creativity">
+  <img src="https://i1.ytimg.com/vi/83HMZrhL_Uw/hqdefault.jpg" alt="Video: Explainer on how AI is changing music creation and creativity" loading="lazy">
+  <span class="video-card-title">Explainer on how AI is changing music creation and creativity</span>
+  <span class="video-card-meta">IBM Technology, October 4, 2026</span>
+  <span class="video-card-desc">IBM&#x27;s Jeff Crume discusses whether AI generates original music or recombines existing work, giving viewers a conceptual explanation of how AI music tools work and the creativity questions they raise.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=lHmZoRHMZyM" target="_blank" rel="noopener" title="Gemini 4, GPT 6.1, Dots, Claude Sonnet 5.5, Ideogram 4.5, Flux 3: AI NEWS">
+  <img src="https://i1.ytimg.com/vi/lHmZoRHMZyM/hqdefault.jpg" alt="Video: Roundup of recent AI model releases including Gemini 4, GPT 6.1 and Claude Sonnet 5.5" loading="lazy">
+  <span class="video-card-title">Roundup of recent AI model releases including Gemini 4, GPT 6.1 and Claude Sonnet 5.5</span>
+  <span class="video-card-meta">AI Search, October 4, 2026</span>
+  <span class="video-card-desc">A news roundup covering several reported model and tool releases, including Gemini 4, GPT 6.1, Claude Sonnet 5.5, Flux 3 and ElevenLabs V4, useful for a quick overview of recent developments.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=N3REfH4N9Dg" target="_blank" rel="noopener" title="HUGE Fable 5.5 LEAK + First Preview, Gemini 4 Argon, Claude Code Update, FREE Model, &amp; More! AI NEWS">
   <img src="https://i3.ytimg.com/vi/N3REfH4N9Dg/hqdefault.jpg" alt="Video: AI news roundup: Fable 5.5 preview, Gemini 4 Argon, Claude Code update" loading="lazy">
   <span class="video-card-title">AI news roundup: Fable 5.5 preview, Gemini 4 Argon, Claude Code update</span>
@@ -120,18 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">GPT-6 Sol testing and comparison with Claude Opus</span>
   <span class="video-card-meta">Bijan Bowen, September 23, 2026</span>
   <span class="video-card-desc">Hands-on testing and comparison of GPT-6 Sol against Claude Opus, covering technical capabilities and practical performance across multiple tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=GJIkBVSoxUw" target="_blank" rel="noopener" title="HUGE AI NEWS: GPT-6 Sol &amp; Luna, Opus 5.5, Sonnet 5.5, Haiku 5.5, Qwen 4.0, &amp; Trump To Change AI!">
-  <img src="https://i4.ytimg.com/vi/GJIkBVSoxUw/hqdefault.jpg" alt="Video: Benchmark comparison of Opus 5.5, Sonnet 5.5, Haiku 5.5, and Qwen 4.0" loading="lazy">
-  <span class="video-card-title">Benchmark comparison of Opus 5.5, Sonnet 5.5, Haiku 5.5, and Qwen 4.0</span>
-  <span class="video-card-meta">WorldofAI, September 23, 2026</span>
-  <span class="video-card-desc">Benchmark comparison of recent model releases including Anthropic Opus 5.5, Sonnet 5.5, Haiku 5.5, Qwen 4.0, and other systems.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=OWu2kjKrRTA" target="_blank" rel="noopener" title="Anthropic went CRAZY (Opus 5.5)">
-  <img src="https://i4.ytimg.com/vi/OWu2kjKrRTA/hqdefault.jpg" alt="Video: Testing and analysis of Anthropic Opus 5.5" loading="lazy">
-  <span class="video-card-title">Testing and analysis of Anthropic Opus 5.5</span>
-  <span class="video-card-meta">Matthew Berman, September 23, 2026</span>
-  <span class="video-card-desc">Hands-on testing and analysis of Anthropic&#x27;s Opus 5.5 model release.</span>
 </a>
 </div>
 

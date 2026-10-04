@@ -21,9 +21,23 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42829683?fc=20260609215449&amp;ff=20261004100559&amp;v=2.20.1">Exploring the impact of artificial intelligence on dental education: Benefits, challenges, and future directions - A systematic review of the literature</a>
+    <p class="news-card-summary">A systematic review examines the benefits, challenges, and future directions of artificial intelligence in dental education, including its effects on efficiency and learning opportunities.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 4, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42829668?fc=20260609215449&amp;ff=20261004100559&amp;v=2.20.1">AI-Enhanced Virtual Simulation as an Adjunct to Skills Laboratory and Clinical Training in Radiography Education: A Commentary from Somalia and Other Resource-Constrained Settin</a>
+    <p class="news-card-summary">A commentary from Somalia argues that AI-enhanced virtual simulation can supplement skills laboratory and clinical training in radiography education in resource-constrained settings, and that evidence for virtual reality, digital simulation, and AI simulation should be.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 3, 2026</span></div>
@@ -113,20 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 1, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42819609?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1">The Verification Gap: Artificial Intelligence Adoption, Hallucination Awareness, and Verification Practices Among Medical Trainees and Professionals in Pakistan</a>
     <p class="news-card-summary">Survey of medical trainees and professionals in Pakistan examined AI adoption, awareness of hallucinations fabricated outputs , and verification and disclosure habits when using AI tools.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42819437?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1">Artificial Intelligence in Medical Education: A Cross-Sectional Study of Usage Patterns and Perceptions Among Medical Students at a Brazilian Public University</a>
-    <p class="news-card-summary">Cross-sectional survey of medical students at a Brazilian public university found frequent AI use alongside perceived benefits and concerns about dependence, without establishing effects on learning.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Education</span><span class="news-card-date">September 30, 2026</span></div>
-    <a class="news-card-title" href="https://mededu.jmir.org/2026/1/e99520">AI-Mediated Assessment of Continuing Medical Education: The Case-based Learning Intelligence Credit System (CLICS) Framework</a>
-    <p class="news-card-summary">A framework called CLICS proposes using AI to assess case-based learning in continuing medical education, replacing time-based credit with evidence of clinical reasoning and meaningful learning.</p>
   </div>
 </div>
 </div>

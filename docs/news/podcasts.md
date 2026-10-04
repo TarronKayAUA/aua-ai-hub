@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Choose-Your-Personal-AI-Agent-e3prr4p" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: How to Choose Your Personal AI Agent" loading="lazy">
+  <span class="video-card-title">How to Choose Your Personal AI Agent</span>
+  <span class="video-card-meta">The AI Daily Brief, October 4, 2026</span>
+  <span class="video-card-desc">The host compares personal AI agent products, including Dots, Muse, GrokBot and OpenClaw, across work versus personal use, model choice, setup difficulty and data privacy, and introduces an interactive quiz for choosing one.</span>
+</a>
 <a class="video-card" href="https://www.cognitiverevolution.ai/one-brain-any-body-google-deepmind-s-keerthana-on-gemini-robotics-2-cross-embodiment-humanoids" target="_blank" rel="noopener">
   <img src="https://megaphone.imgix.net/podcasts/0852a10c-bd6a-11f1-b201-2389e652e164/image/7cfcecdb04279d18927f449c74d0370a.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: One Brain, Any Body: Google DeepMind&#x27;s Keerthana on Gemini Robotics 2, Cross-Embodiment &amp; Humanoids" loading="lazy">
   <span class="video-card-title">One Brain, Any Body: Google DeepMind&#x27;s Keerthana on Gemini Robotics 2, Cross-Embodiment &amp; Humanoids</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">The Hidden Gender Gap in AI Education, with Juliana Peloche</span>
   <span class="video-card-meta">AI in Education Podcast, August 6, 2026</span>
   <span class="video-card-desc">Episode explores underrepresentation of women and girls in artificial intelligence education and its causes.</span>
-</a>
-<a class="video-card" href="https://share.transistor.fm/s/063cfaad" target="_blank" rel="noopener">
-  <img src="https://img.transistorcdn.com/Rd4TVng9FvCHld5mIVx4EYiKPtyGdDsQdsNUW6WrTkA/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS9mNmVk/MTg5ZDU1MDdkYWNi/MjU3MDg1YmY1Zjhj/NWJjZC5wbmc.jpg" alt="Podcast: Models, Harnesses, and Multi-Agent Systems" loading="lazy">
-  <span class="video-card-title">Models, Harnesses, and Multi-Agent Systems</span>
-  <span class="video-card-meta">Practical AI, August 6, 2026</span>
-  <span class="video-card-desc">An explanation of AI models, agents, harnesses, and multi-agent systems for those new to current AI terminology and concepts.</span>
 </a>
 </div>
