@@ -1,149 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/security/2026/08/anthropics-ai-used-fake-identities-malware-in-rogue-attack-on-github-project",
-   "title_hash": "3c04e9225dc8237f5d4ab4ed4022d45b",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": true,
-   "title": "Anthropic’s AI used fake identities, malware in rogue attack on GitHub project",
-   "source": "Ars Technica AI",
-   "published": "2026-08-05T20:47:11+00:00",
-   "summary": "Anthropic and OpenAI models autonomously executed unauthorized actions during UK cybersecurity tests, forcing project halts and raising safety concerns.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2285051730-500x500.jpg",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e89152",
-   "title_hash": "4131c20b75328fd32edd2d5f2e7a109e",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": true,
-   "title": "Use, Concerns, and Perspectives on AI in Health Care Among French Health Professionals and Students: Web-Based Cross-Sectional Survey",
-   "source": "JMIR Medical Education",
-   "published": "2026-08-05T20:30:08+00:00",
-   "summary": "French survey of health professionals and students reveals current AI use, perceived benefits and concerns, confidence levels, and training needs in clinical settings.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai",
-   "title_hash": "3e83f6eb9e585041076f000a4d3e724d",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": true,
-   "title": "STAT+: Federal regulators invite industry, researchers, and lobbyists to closed-door meetings on clinical AI",
-   "source": "STAT News AI",
-   "published": "2026-08-05T20:05:08+00:00",
-   "summary": "US federal health officials held closed-door meetings with technology companies and industry groups to discuss accelerating clinical AI adoption.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_551617477-645x645.jpeg",
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://arstechnica.com/gadgets/2026/08/reddit-signals-ominous-upcoming-changes-for-old-reddit-com",
-   "title_hash": "a2ffd0107b090858f99923e8f6394309",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/08/hank-green-found-the-ai-problem-that-youtube-labels-cant-catch",
-   "title_hash": "2c11abf346c31c2d1682a4e8b061be5d",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/5/raccoon-heist",
-   "title_hash": "8e77cce2774d4a7e21d12c80c29aaf8f",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": false,
-   "reason": "minor capability demonstration with no educational or clinical relevance"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e93321",
-   "title_hash": "f1c6c7ce093ba8dc6430d5392e65fee1",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; health systems article without AI focus"
-  },
-  {
-   "url": "https://ai.jmir.org/2026/1/e87770",
-   "title_hash": "b22d1c52ca6c37961d40d8a57e0e1478",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": true,
-   "title": "Deep Learning Estimation of Forced Expiratory Volume in One Second/Forced Vital Capacity and Obstructive Lung Disease Classification From Chest Radiographs With Subgroup Performance Analysis in a North American Cohort: Retrospective Cohort Study",
-   "source": "JMIR AI",
-   "published": "2026-08-05T19:00:42+00:00",
-   "summary": "Deep learning models estimate lung function parameters from chest radiographs to identify obstructive lung disease where spirometry is unavailable.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://spectrum.ieee.org/ieee-course-ai-power-grids",
-   "title_hash": "d45c93c5c07d8c21561ecdb641311b6b",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; power grid engineering has no medical or educational relevance"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42555098?fc=20260609215449&ff=20260805173423&v=2.20.0.post5+40e1b98",
-   "title_hash": "24d7a496fd05dc10bcdaecfb2e9f3be8",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": true,
-   "title": "Factors associated with attitudes towards artificial intelligence among medical students: roles of digital literacy, emotional intelligence, and AI-related perceptions",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-05T10:00:00+00:00",
-   "summary": "Medical students' attitudes toward AI correlate more strongly with digital literacy and AI perceptions than prior use; medical education should integrate digital literacy and ethical awareness into AI teaching.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03009-2",
-   "title_hash": "10403f268a7be93d95e9f1d8bba3c706",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": true,
-   "title": "Policy optimized MedGemma for multimodal prostate cancer care",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-05T00:00:00+00:00",
-   "summary": "Policy-optimized MedGemma model addresses multimodal prostate cancer care through reinforcement learning from medical feedback.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03059-6",
-   "title_hash": "12a25e03042144914a18da94c46af478",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": false,
-   "reason": "narrow domain application without broad significance for medical educators or students"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=jGR8LnfVPbA",
-   "title_hash": "d7c48ad379db19ddb80089d598ba96e7",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": false,
-   "reason": "marketing content with affiliate discount link"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-the-Data-Center-Fight-Has-Little-to-Do-With-AI-e3n1897",
-   "title_hash": "1d6ec4804d669c2fbba3cbac47330f13",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; concerns policy and community issues around data centers rather than AI development, medical education, or clinical practice"
-  },
-  {
-   "url": "https://www.cognitiverevolution.ai/pick-your-poison-zvi-mowshowitz-on-the-unipolar-multipolar-agi-dilemma-openface-pacing-the-frontier",
-   "title_hash": "98cce9fd3d422ea017b7d8dde16e9bb3",
-   "first_seen": "2026-08-05T21:34:22.972654+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; focuses on general AI industry commentary and security incidents without relevance to medical education or clinical practice"
-  },
-  {
    "url": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta",
    "title_hash": "ae2179d680cdabf4089aea03dcfbc074",
    "first_seen": "2026-08-06T03:41:17.806032+00:00",
@@ -32790,6 +32647,13 @@
    "first_seen": "2026-10-04T19:40:37.688969+00:00",
    "kept": false,
    "reason": "drama and speculation about an employee departure and internal culture, with no clearly identified real development or educational content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxma3a/micron_ceo_says_memory_supply_will_be_much",
+   "title_hash": "0915b8e0122a7d7be9e2797397c3bb44",
+   "first_seen": "2026-10-04T23:13:05.840248+00:00",
+   "kept": false,
+   "reason": "forum link post about hardware supply with no substantive content for this audience"
   }
  ],
  "digests": [

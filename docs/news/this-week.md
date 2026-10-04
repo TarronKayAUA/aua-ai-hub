@@ -6,7 +6,7 @@ comments: true
 
 # This Week
 
-<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">40</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">31</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">46</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">18</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">12</span></a></nav>
+<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">40</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">31</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">44</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">18</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">12</span></a></nav>
 
 Everything kept in the last seven days. Earlier weeks' highlights are in the [News Archive](archive/index.md).
 
@@ -569,7 +569,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">46</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">19</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">44</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">18</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">2</span></button></div>
 <div class="news-list">
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
@@ -652,7 +652,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 </div>
 
-??? abstract "Show the other 36 items"
+??? abstract "Show the other 34 items"
 
     <div class="news-list news-list--more">
     <div class="news-card" data-topic="new-models">
@@ -911,22 +911,6 @@ Items are selected several times a day by an automated pipeline and the summarie
         <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wrzpzg/ft_corporate_america_rejects_overpriced_frontier">FT: Corporate America rejects overpriced frontier, embraces open models</a>
         <p class="news-card-summary">Corporate adoption increasingly favors open-source AI models over expensive proprietary frontier models.</p>
       </div>
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">Ahead of AI</span><span class="news-card-date">September 27, 2026</span></div>
-        <a class="news-card-title" href="https://sebastianraschka.com/blog/2026/focusing-on-llm-post-training.html">Focusing on Post-Training</a>
-        <p class="news-card-summary">Analysis of post-training optimization for open-weight language models, using Fireworks&#x27; Ember-1 as an example of token-efficient reasoning.</p>
-      </div>
-      <img class="news-card-thumb" src="https://sebastianraschka.com/images/blog/2026/focusing-on-llm-post-training/ember-1-post-training.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 27, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1001178/openai-agents-bruteforce-un-website">OpenAI agents tried to ‘bruteforce’ a UN website</a>
-        <p class="news-card-summary">OpenAI&#x27;s autonomous agents scanned a UN statistics website over 16,000 times without authorization, highlighting emerging safety concerns with agent deployment.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/gettyimages-2236154957.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.736911387474%2C100%2C78.526177225052&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
     <div class="news-card" data-topic="research-and-methods">
       <div class="news-card-body">
