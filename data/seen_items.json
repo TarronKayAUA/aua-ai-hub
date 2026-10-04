@@ -1,89 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Aug/4/new-release-of-llm",
-   "title_hash": "bb94e0a7823789b750121bce16e6aad8",
-   "first_seen": "2026-08-05T03:34:43.599044+00:00",
-   "kept": true,
-   "title": "New release of LLM adds support for reasoning traces, OpenAI Responses, server-side tools, and smarter logging",
-   "source": "Simon Willison's weblog",
-   "published": "2026-08-04T23:58:24+00:00",
-   "summary": "LLM 0.32 adds reasoning trace visibility, server-side tools, and integration with OpenAI's Responses API for improved model interaction logging.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://static.simonwillison.net/static/2026/best-thing-pelicans-card.jpg",
-   "topic": "New models"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/4/llm-anthropic",
-   "title_hash": "05ea3f6513744bf071547905e88022e8",
-   "first_seen": "2026-08-05T03:34:43.599044+00:00",
-   "kept": false,
-   "reason": "minor release notes, duplicate of kept candidate 0"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfl525/kimi_k3_full_model_running_on_16x_gb10_cluster_at",
-   "title_hash": "b9f0757673eab21ec0fca2f063c7087a",
-   "first_seen": "2026-08-05T03:34:43.599044+00:00",
-   "kept": false,
-   "reason": "performance-tinkering thread, not significant benchmark or capability news"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfj3q7/hugging_face_ceo_says_china_is_winning_the_ai",
-   "title_hash": "b520b011d136881128d9e65fb86f17a6",
-   "first_seen": "2026-08-05T03:34:43.599044+00:00",
-   "kept": false,
-   "reason": "industry gossip and geopolitical commentary, not actionable development news"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/4/llm",
-   "title_hash": "63c5b9104cd96889c505f748f7270e9d",
-   "first_seen": "2026-08-05T03:34:43.599044+00:00",
-   "kept": false,
-   "reason": "minor release notes, duplicate of kept candidate 0"
-  },
-  {
-   "url": "https://mistral.ai/news/shieldstral",
-   "title_hash": "70791d59b953caf44dc90839754eefdb",
-   "first_seen": "2026-08-05T03:34:43.599044+00:00",
-   "kept": true,
-   "title": "Mistral's Shieldstral: 3B open-weights model for multimodal moderation",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-08-04T16:36:05+00:00",
-   "summary": "Mistral released Shieldstral, a 3 billion parameter open-weights model for multimodal content moderation.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://mistral.ai/cms-media/api/media/file/Thumbnail-Model%3DShieldstral.jpg",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://github.com/MakazhanAlpamys/Soup",
-   "title_hash": "c6fb770a89eaba084ac4241f2de1f96d",
-   "first_seen": "2026-08-05T03:34:43.599044+00:00",
-   "kept": false,
-   "reason": "minor tool release notes"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42550613?fc=20260609215449&ff=20260804233443&v=2.20.0.post5+40e1b98",
-   "title_hash": "90d898de2c89907d264c761667937c9d",
-   "first_seen": "2026-08-05T03:34:43.599044+00:00",
-   "kept": true,
-   "title": "Survey Authentication Challenges During a Geriatrics Knowledge Assessment Pilot",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-04T10:00:00+00:00",
-   "summary": "A multi-institutional geriatrics knowledge assessment pilot detected inauthentic survey responses from financially incentivized participants, highlighting the need for security measures in educational research.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/3/condense-json",
-   "title_hash": "d6afb1da16420948ebc4b8294acbbe12",
-   "first_seen": "2026-08-05T03:34:43.599044+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
    "url": "https://arxiv.org/abs/2608.02609",
    "title_hash": "5e3e2bd1f6967e02abf891d787266c4c",
    "first_seen": "2026-08-05T06:43:21.022496+00:00",
@@ -33350,6 +33267,65 @@
    "first_seen": "2026-10-03T23:06:17.220633+00:00",
    "kept": false,
    "reason": "community meta-discussion in a forum thread"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps",
+   "title_hash": "beacffdd529ac3f269b5be7b54a2a719",
+   "first_seen": "2026-10-04T05:58:19.391617+00:00",
+   "kept": true,
+   "title": "We're going to need default hard budget caps on pretty much everything",
+   "source": "Simon Willison's weblog",
+   "published": "2026-10-03T23:34:02+00:00",
+   "summary": "Simon Willison argues that pay-by-usage services and APIs need default hard spending caps that cut off access, because coding agents and automated tools can run up unexpected costs quickly.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42828385?fc=20260609215449&ff=20261004015819&v=2.20.1",
+   "title_hash": "8a764717239f0df5382958b050ab5a89",
+   "first_seen": "2026-10-04T05:58:19.391617+00:00",
+   "kept": true,
+   "title": "Governing Generative Artificial Intelligence in Anatomy Education: A Proposed Risk-Tiered Framework for Donor-Derived Material, Anatomical Fidelity, and Assessment",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-03T10:00:00+00:00",
+   "summary": "A proposed risk-tiered framework guides anatomy educators on using generative AI, covering entry of donor-derived material into external systems, anatomical accuracy of outputs, and assessment design.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42827797?fc=20260609215449&ff=20261004015819&v=2.20.1",
+   "title_hash": "858d81b4024494dad4712c1a6ae26503",
+   "first_seen": "2026-10-04T05:58:19.391617+00:00",
+   "kept": true,
+   "title": "Real-world feasibility of privacy-preserving, non-wearable AI for real-time fall detection with disease-specific video classification in parkinsonian syndromes: a proof-of-concept clinical study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-03T10:00:00+00:00",
+   "summary": "A proof-of-concept clinical study found that privacy-preserving depth-camera AI detected falls in people with parkinsonian syndromes that routine facility reporting missed, though disease-specific patterns need validation in larger groups.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42827695?fc=20260609215449&ff=20261004015819&v=2.20.1",
+   "title_hash": "c9e7720b1ea19e1f7157e2b2d8c8eaa0",
+   "first_seen": "2026-10-04T05:58:19.391617+00:00",
+   "kept": true,
+   "title": "Effect of AI-driven simulation integrated with virtual case-based training on diagnostic and therapeutic reasoning homogenization among junior ophthalmologists: a prospective cohort study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-03T10:00:00+00:00",
+   "summary": "A prospective cohort study found that AI-driven simulation combined with virtual case training was associated with more consistent diagnostic reasoning and greater confidence among junior ophthalmologists managing diabetic retinopathy.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42827629?fc=20260609215449&ff=20261004015819&v=2.20.1",
+   "title_hash": "17b85d60598e5ae40d4b732e23b32487",
+   "first_seen": "2026-10-04T05:58:19.391617+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience; environmental epidemiology with no AI or education content"
   }
  ],
  "digests": [
@@ -33528,19 +33504,19 @@
  "last_digest_at": "2026-10-02T05:42:31.167630+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A recurring theme of unverified trust in generative AI emerges as a central concern, with studies describing a &quot;calibration paradox&quot; among Generation Z learners <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[7]</a> and a parallel &quot;verification gap&quot; among trainees and professionals in Pakistan <a href=\"https://pubmed.ncbi.nlm.nih.gov/42819609?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[11]</a> who use AI tools without consistently checking outputs. This sits alongside a benchmarking study placing large language models including ChatGPT-5 and Gemini 2.5 Pro against medical students on anatomy questions at higher Bloom&#x27;s taxonomy levels <a href=\"https://pubmed.ncbi.nlm.nih.gov/42823828?fc=20260609215449&amp;ff=20261002104535&amp;v=2.20.1\">[2]</a>. Meanwhile, a randomized controlled trial of generative AI-supported virtual reality training in dental students found higher immediate skill scores than teacher-led instruction <a href=\"https://pubmed.ncbi.nlm.nih.gov/42821990?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[10]</a>, and a new instructional design methodology, INSPIRE, proposes governance and human oversight for AI-driven e-learning <a href=\"https://pubmed.ncbi.nlm.nih.gov/42823707?fc=20260609215449&amp;ff=20261002104535&amp;v=2.20.1\">[3]</a>.\n\nAlso this week: six studies probe attitudes and adoption of AI among students and clinicians, while three address simulation and skills training, including voice-enabled virtual patients for standardized clinical assessment. Three more cover teaching and curriculum design, two examine assessment and feedback such as the CLICS framework, and one benchmarks AI against exam standards.",
-   "hash": "85c2fb86d92b77cc",
-   "date": "October 3, 2026"
+   "text": "A randomized trial in dental students found that generative AI-supported virtual reality skill training produced higher immediate operative scores than teacher-led instruction, though other findings were exploratory <a href=\"https://pubmed.ncbi.nlm.nih.gov/42821990?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[12]</a>. A prospective cohort of junior ophthalmologists linked AI-driven simulation with virtual case training to more consistent diagnostic reasoning in diabetic retinopathy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42827695?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[2]</a>. Alongside these gains, surveys point to a verification problem: a Pakistan survey examined hallucination awareness and verification habits among trainees and professionals <a href=\"https://pubmed.ncbi.nlm.nih.gov/42819609?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[13]</a>, and a paper describes Generation Z learners trusting generative AI without checking it <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[9]</a>. Educators are responding with governance proposals, including a risk-tiered framework for anatomy that addresses donor-derived material entering external systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42828385?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: the section holds five items on attitudes and adoption, including a pilot survey of junior medical officers in Sydney, and four on simulation and skills, such as a scoping review of machine learning for surgical skill assessment. Three cover teaching and curriculum, two address assessment and feedback, and one covers exams and benchmarks.",
+   "hash": "0d9b0c952899ab92",
+   "date": "October 4, 2026"
   },
   "clinical_practice": {
-   "text": "HHS has announced new efforts to speed up and expand clinical trials using AI, citing competition with countries such as China <a href=\"https://www.statnews.com/2026/09/30/hhs-arpa-h-clinical-trials-artificial-intelligence-surpass-program\">[9]</a>. Cardiologist Euan Ashley reports that Claude analyzed a whole genome in 30 minutes for about $5, a task that once took 30 people nearly a year, and calls for standards governing such results <a href=\"https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics\">[5]</a>. Trust questions recur elsewhere: a Nature Medicine commentary on agentic AI autonomy notes that outcomes after an uncertain case is referred remain untested <a href=\"https://www.nature.com/articles/s41591-026-04658-2\">[2]</a>, and an npj Digital Medicine paper warns that sycophantic language model responses can cause psychological distress, urging more emotionally balanced agents <a href=\"https://www.nature.com/articles/s41746-026-03245-6\">[6]</a>.\n\nAlso this week: coverage includes seven pieces on safety and evaluation, two on clinical documentation, two on patient-facing tools, one on clinical decision support, and one on imaging and diagnostics, including a deep learning method for rapid malaria parasite detection and a qualitative study of AI-enabled voice electronic medical records in sub-Saharan African health systems.",
-   "hash": "ed38f27f8e966765",
-   "date": "October 3, 2026"
+   "text": "An interpretable retrieval-augmented diagnostic system for breast ultrasound was validated across multiple countries and compared with human readers in a reader study <a href=\"https://www.nature.com/articles/s41746-026-03272-3\">[3]</a>. Evaluation work runs through the rest of the section. Clinicians assessed large language model-generated discharge summaries for longer hospitalizations <a href=\"https://www.nature.com/articles/s41746-026-03320-y\">[7]</a>, and a Nature Medicine commentary on agentic AI notes that what happens after uncertain cases are referred remains untested <a href=\"https://www.nature.com/articles/s41591-026-04658-2\">[6]</a>. On the policy side, a pediatric statement sets recommendations for generative AI in decision support, documentation, and education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42827276?fc=20260609215449&amp;ff=20261003092545&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: the list includes seven items on safety and evaluation, two each on imaging and diagnostics and on clinical decision support, and one each on clinical documentation and patient facing tools. Among them are a survey of anaesthesia professionals in India and a proof-of-concept study of depth-camera fall detection in parkinsonian syndromes.",
+   "hash": "bb0629ccffd87e59",
+   "date": "October 4, 2026"
   },
   "general_ai": {
-   "text": "OpenAI used its DevDay conference to introduce Dots, an agent platform built on GPT-6 Astra and aimed at both enterprise and personal tasks, positioning it against Meta&#x27;s Muse <a href=\"https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle\">[8]</a>, while Google unveiled Gemini 4 Argon, a frontier model for coding and cybersecurity work currently limited to trusted cyber defenders <a href=\"https://www.theverge.com/tech/1002980/google-gemini-4-argon\">[11]</a>. Apple responded by tightening full disk access on Mac, citing the added risk such autonomous agents pose to file permissions <a href=\"https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents\">[1]</a>. The Trump administration&#x27;s voluntary AI safety agreement among major companies drew scrutiny for leaving oversight to the firms themselves <a href=\"https://arstechnica.com/tech-policy/2026/09/trump-plan-to-combat-ai-risks-hinges-on-big-tech-pals-policing-themselves\">[12]</a>, even as a former AlphaGo researcher argued that large language models still do not truly reason <a href=\"https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason\">[3]</a>.\n\nAlso this week: three items addressed industry and policy, including continuing legal disputes over AI&#x27;s use of online content, three more examined safety and reliability, and four new model releases joined four research and methods pieces, among them Cloudflare&#x27;s open-weight Clef decision models and improved Stratego play using a second neural network to infer hidden pieces.",
-   "hash": "46fe7476b4ab1932",
-   "date": "October 3, 2026"
+   "text": "Google announced Gemini 4 Argon, a frontier model for software engineering and cybersecurity defense, with access currently limited to trusted cyber defenders <a href=\"https://www.theverge.com/tech/1002980/google-gemini-4-argon\">[13]</a>. OpenAI announced Dots, an agent platform for workplace use that can also handle personal tasks such as ordering food <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent\">[4]</a>. Agents are already prompting protective responses. Apple is limiting full disk access on Mac, citing the added risk from AI agents <a href=\"https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents\">[3]</a>, and Simon Willison argues that usage-priced services need default hard spending caps <a href=\"https://simonwillison.net/2026/Oct/3/default-hard-budget-caps\">[1]</a>. David Robinson, who wrote OpenAI&#x27;s safety reports for major model releases, resigned and published safety concerns in The Atlantic <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm\">[2]</a>.\n\nAlso this week: the section holds four items on new models, including Cloudflare&#x27;s open-weight Clef, four on research and methods, and four on safety and reliability. Two cover industry and policy, among them a federal judge&#x27;s dismissal of the Chegg and Penske antitrust lawsuits against Google over AI search.",
+   "hash": "386ad721fb894480",
+   "date": "October 4, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -33653,5 +33629,5 @@
    "url": "https://learn-ai-basics.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-10-03"
+ "section_briefs_refreshed": "2026-10-04"
 }
