@@ -6,7 +6,7 @@ comments: true
 
 # This Week
 
-<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">40</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">31</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">39</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">18</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">12</span></a></nav>
+<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">38</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">34</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">36</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">21</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">12</span></a></nav>
 
 Everything kept in the last seven days. Earlier weeks' highlights are in the [News Archive](archive/index.md).
 
@@ -25,8 +25,15 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">40</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">13</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">3</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">38</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">12</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">2</span></button></div>
 <div class="news-list">
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42831612?fc=20260609215449&amp;ff=20261005131023&amp;v=2.20.1">AI-Powered Virtual Patients in Health Professions Education: Learner Engagement and Knowledge Application</a>
+    <p class="news-card-summary">A study of AI-powered virtual patients in early dental education supports feasibility and perceived value for learner engagement, and calls for controlled studies of effects on learning outcomes and skills.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 4, 2026</span></div>
@@ -90,18 +97,18 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">A review of how artificial intelligence is entering orthopaedic education, noting most evidence comes from trainee settings and arguing for continuing professional development that supports safe adoption by practising surgeons.</p>
   </div>
 </div>
-<div class="news-card" data-topic="attitudes-and-adoption">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 2, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42824394?fc=20260609215449&amp;ff=20261002164649&amp;v=2.20.1">A Pilot Study of Junior Medical Officers in Sydney, Australia: Knowledge and Attitudes Towards Artificial Intelligence</a>
-    <p class="news-card-summary">A pilot survey of junior medical officers in Northern Sydney examines their knowledge of and attitudes toward artificial intelligence in healthcare.</p>
-  </div>
-</div>
 </div>
 
-??? abstract "Show the other 30 items"
+??? abstract "Show the other 28 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="attitudes-and-adoption">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 2, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42824394?fc=20260609215449&amp;ff=20261002164649&amp;v=2.20.1">A Pilot Study of Junior Medical Officers in Sydney, Australia: Knowledge and Attitudes Towards Artificial Intelligence</a>
+        <p class="news-card-summary">A pilot survey of junior medical officers in Northern Sydney examines their knowledge of and attitudes toward artificial intelligence in healthcare.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 2, 2026</span></div>
@@ -270,27 +277,6 @@ Items are selected several times a day by an automated pipeline and the summarie
         <p class="news-card-summary">A study evaluates an AI-supported public speaking coaching system that provides context-specific feedback and model speeches, showing potential for medical education.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="exams-and-benchmarks">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802840?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Artificial Professionalism: An Evaluation of Six Large Language Models on the UK Multi-Specialty Recruitment Assessment Professional Dilemmas Paper</a>
-        <p class="news-card-summary">Six general-purpose large language models achieved roughly two-thirds of marks on a UK medical recruitment professional dilemmas assessment, performing less reliably on ranking tasks than on multiple-choice items.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="assessment-and-feedback">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802837?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Human-Governed Validation of Artificial Intelligence-Generated Medical Assessment Artifacts: A Technical Report</a>
-        <p class="news-card-summary">Generative AI can produce fluent medical assessment materials, but linguistic plausibility does not establish measurement validity, creating risks for clinical accuracy and assessment integrity.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42802729?fc=20260609215449&amp;ff=20260928124640&amp;v=2.20.1">Artificial Intelligence in Lifestyle Medicine: Advancing Clinical Practice, Education, and Whole-Person Care With Responsible Innovation</a>
-        <p class="news-card-summary">Artificial intelligence offers opportunities to enhance lifestyle medicine education, clinical care, and whole-person care through responsible innovation.</p>
-      </div>
-    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">September 28, 2026</span></div>
@@ -326,8 +312,45 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">31</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">13</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">34</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">14</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">3</span></button></div>
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors">STAT+: Utah plows ahead with more health AI pilots for prescriptions, women’s health</a>
+    <p class="news-card-summary">Utah plans to let an AI product evaluate patients and write new drug prescriptions without prior human review, expanding its health AI pilot programs to include women&#x27;s health.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/10/AdobeStock_581923002-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="other">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/10/05/could-ai-win-nobel-prize-medicine">Opinion: Will Claude ever win a Nobel Prize for medicine?</a>
+    <p class="news-card-summary">Physician Jeffrey Flier asks in an opinion piece whether Nobel Prizes in medicine could one day go to AI systems such as Claude or ChatGPT rather than human scientists.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/10/AdobeStock_1946111074_Editorial_Use_Only-1-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03232-x">Standardized pre-consultation by a large language model agent vs ophthalmology residents: a randomized clinical trial</a>
+    <p class="news-card-summary">A randomized clinical trial compared a large language model agent with ophthalmology residents for standardized pre-consultation, assessing how well the AI collects patient history before the visit.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03356-0">Availability of performance evidence of approved AI diagnostic software in pathology and hematology morphology</a>
+    <p class="news-card-summary">A study examines how much performance evidence is publicly available for approved AI diagnostic software in pathology and hematology morphology.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03332-8">EyeSeek: a large language model for screening and improving health literacy in primary eye care</a>
+    <p class="news-card-summary">EyeSeek is a large language model developed for screening and improving health literacy in primary eye care, described in npj Digital Medicine.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 3, 2026</span></div>
@@ -364,48 +387,48 @@ Items are selected several times a day by an automated pipeline and the summarie
   </div>
   <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!dsY4!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F12daf67a-6ec0-4247-903e-42e92095b8c3_720x540.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04658-2">The missing links in agentic AI autonomy</a>
-    <p class="news-card-summary">A Nature Medicine commentary examines trust in agentic artificial intelligence using on-premise agents and consistency-based gating to refer uncertain cases, noting that what happens after referral remains untested.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04658-2/MediaObjects/41591_2026_4658_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03320-y">Clinician-centered evaluation of large language model-generated discharge summaries for longer hospitalizations</a>
-    <p class="news-card-summary">A peer-reviewed study has clinicians evaluate discharge summaries generated by large language models for longer hospital stays.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42819605?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1">Ethical readiness and trust in artificial intelligence-assisted anaesthesia: A cross-sectional survey study among anaesthesia professionals in India</a>
-    <p class="news-card-summary">Survey of anaesthesia professionals in India found moderate AI knowledge and trust but limited institutional readiness, with ethical readiness and transparency driving preparedness.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics">Opinion: Claude analyzed my genome in 30 minutes. Now we need standards for the results</a>
-    <p class="news-card-summary">Cardiologist Euan Ashley writes that Claude analyzed a whole genome in 30 minutes for about $5, a task that once took 30 people nearly a year, and argues for standards for such results.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_2094749636_Editorial_Use_Only-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03245-6">Beyond the sycophantic vs. cold divide: towards flexible, emotionally intelligent agents to foster healthier human-AI interactions</a>
-    <p class="news-card-summary">A npj Digital Medicine paper discusses psychological distress linked to sycophantic language model responses and argues for flexible, emotionally intelligent agents instead of either sycophantic or cold ones.</p>
-  </div>
-</div>
 </div>
 
-??? abstract "Show the other 21 items"
+??? abstract "Show the other 24 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 2, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04658-2">The missing links in agentic AI autonomy</a>
+        <p class="news-card-summary">A Nature Medicine commentary examines trust in agentic artificial intelligence using on-premise agents and consistency-based gating to refer uncertain cases, noting that what happens after referral remains untested.</p>
+      </div>
+      <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04658-2/MediaObjects/41591_2026_4658_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="clinical-documentation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 2, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03320-y">Clinician-centered evaluation of large language model-generated discharge summaries for longer hospitalizations</a>
+        <p class="news-card-summary">A peer-reviewed study has clinicians evaluate discharge summaries generated by large language models for longer hospital stays.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 1, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42819605?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1">Ethical readiness and trust in artificial intelligence-assisted anaesthesia: A cross-sectional survey study among anaesthesia professionals in India</a>
+        <p class="news-card-summary">Survey of anaesthesia professionals in India found moderate AI knowledge and trust but limited institutional readiness, with ethical readiness and transparency driving preparedness.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 1, 2026</span></div>
+        <a class="news-card-title" href="https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics">Opinion: Claude analyzed my genome in 30 minutes. Now we need standards for the results</a>
+        <p class="news-card-summary">Cardiologist Euan Ashley writes that Claude analyzed a whole genome in 30 minutes for about $5, a task that once took 30 people nearly a year, and argues for standards for such results.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_2094749636_Editorial_Use_Only-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 1, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03245-6">Beyond the sycophantic vs. cold divide: towards flexible, emotionally intelligent agents to foster healthier human-AI interactions</a>
+        <p class="news-card-summary">A npj Digital Medicine paper discusses psychological distress linked to sycophantic language model responses and argues for flexible, emotionally intelligent agents instead of either sycophantic or cold ones.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 1, 2026</span></div>
@@ -540,21 +563,6 @@ Items are selected several times a day by an automated pipeline and the summarie
         <p class="news-card-summary">Researchers developed a preimplementation checklist for NHS providers based on real-world safety and implementation gaps encountered during AI system deployment.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-evaluation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://medicalfuturist.com/navigating-20-ai-use-cases-in-healthcare-from-hype-to-evidence">Navigating 20 AI Use Cases in Healthcare: From Hype to Evidence!</a>
-        <p class="news-card-summary">Analysis mapping 20 artificial intelligence use cases in healthcare from early-stage concepts to evidence-backed deployments ready for clinical practice.</p>
-      </div>
-      <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2025/04/tmf_article_439.png" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03282-1">Automating clinical information retrieval from Finnish electronic health records using large language models</a>
-        <p class="news-card-summary">Large language models can automate retrieval of clinical information from Finnish electronic health records.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -569,8 +577,24 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">39</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">16</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">36</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">14</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://spectrum.ieee.org/agentic-ai-humans-in-loop">Attempts to Keep Humans in the AI Loop May Actually Push Them Out</a>
+    <p class="news-card-summary">Three AI ethics researchers argue that human-in-the-loop safeguards for autonomous AI agents will fail unless designers and users change practices, because current review processes effectively push people out of the loop.</p>
+  </div>
+  <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/conceptual-illustration-of-a-tiny-human-walking-through-a-large-gridded-digital-landscape.jpg?id=67960251&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Import AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://jack-clark.net/2026/10/05/import-ai-475-swarm-scaling-google-deepmind-watermarks-biology-and-the-ai-science-economy">Import AI 475: Swarm scaling; Google DeepMind watermarks biology; and the AI science economy</a>
+    <p class="news-card-summary">Import AI issue 475, an expert-written digest, covers swarm scaling of AI agents, Google DeepMind&#x27;s watermarking of biological AI outputs, and the economics of AI-driven science.</p>
+  </div>
+  <img class="news-card-thumb" src="https://i0.wp.com/jack-clark.net/wp-content/uploads/2026/10/https3A2F2Fsubstack-post-media.s3.amazonaws.com2Fpublic2Fimages2Fd6d17996-2bef-40a4-abe3-be72a0e8a227_258x258-icWL54.png?fit=258%2C258&amp;ssl=1" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="benchmarks-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 4, 2026</span></div>
@@ -634,27 +658,27 @@ Items are selected several times a day by an automated pipeline and the summarie
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2025/05/Google-sign-IO-500x500-1748638352.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">AI as Normal Technology</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety">A big-tent or small-tent AI safety movement?</a>
-    <p class="news-card-summary">An essay in the AI as Normal Technology newsletter examines an unstated disagreement underlying debates about AI safety and whether the safety movement should take a broad or narrow approach.</p>
-  </div>
-  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!LgrS!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11d1c529-6f8d-4df3-acb6-f291eaa271f2_1024x559.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget">With most information hidden, the game Stratego had stumped AI, until now</a>
-    <p class="news-card-summary">Researchers improved AI play in the hidden-information game Stratego by adding a second neural network that estimates the identities of the opponent&#x27;s concealed pieces.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1864707238-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
-??? abstract "Show the other 29 items"
+??? abstract "Show the other 26 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">AI as Normal Technology</span><span class="news-card-date">October 1, 2026</span></div>
+        <a class="news-card-title" href="https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety">A big-tent or small-tent AI safety movement?</a>
+        <p class="news-card-summary">An essay in the AI as Normal Technology newsletter examines an unstated disagreement underlying debates about AI safety and whether the safety movement should take a broad or narrow approach.</p>
+      </div>
+      <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!LgrS!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11d1c529-6f8d-4df3-acb6-f291eaa271f2_1024x559.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="research-and-methods">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 1, 2026</span></div>
+        <a class="news-card-title" href="https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget">With most information hidden, the game Stratego had stumped AI, until now</a>
+        <p class="news-card-summary">Researchers improved AI play in the hidden-information game Stratego by adding a second neural network that estimates the identities of the opponent&#x27;s concealed pieces.</p>
+      </div>
+      <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1864707238-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="new-models">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">October 1, 2026</span></div>
@@ -845,45 +869,6 @@ Items are selected several times a day by an automated pipeline and the summarie
       </div>
       <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/sleepyrobot-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/tech/1001287/nvidia-ai-safety-platform-rogue-agents">Nvidia says its new AI safety platform can contain rogue agents within ‘milliseconds’</a>
-        <p class="news-card-summary">NVIDIA announced an open-source agent safety platform designed to quarantine rogue AI agents within milliseconds in response to recent hacking incidents.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25728971/STK083_NVIDIA_2_D.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="research-and-methods">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://spectrum.ieee.org/generative-ai-in-space-exploration">Generative AI Gives Spacecraft the Autonomy Engineers Once Feared</a>
-        <p class="news-card-summary">NASA&#x27;s Jet Propulsion Laboratory deployed Anthropic&#x27;s Claude models to plan Mars rover drives, with compressed models also tested in space for autonomous spacecraft navigation.</p>
-      </div>
-      <img class="news-card-thumb" src="https://spectrum.ieee.org/media-library/a-small-mecha-style-robot-featuring-scara-arms-equipped-with-two-finger-grippers.jpg?id=67860199&amp;width=980" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1ws9ydg/nvidia_shipped_openshell_an_open_source_sandbox">NVIDIA shipped OpenShell, an open source sandbox that gives local and open agents real runtime limits instead of prompt rules. Over 100 firms joined the safety stack. OpenAI did not.</a>
-        <p class="news-card-summary">NVIDIA released OpenShell, an open-source safety sandbox for AI agents with runtime enforcement, joined by over 100 firms in a safety stack initiative.</p>
-      </div>
-      <img class="news-card-thumb" src="https://preview.redd.it/nuzy27pac8sh1.jpeg?width=640&amp;crop=smart&amp;auto=webp&amp;s=278da8d407af4508b4c836cdea904295498336b2" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue">Who’s liable when AI agents go rogue?</a>
-        <p class="news-card-summary">Liability frameworks for AI agents that cause harm remain unclear as cyberattacks by autonomous AI systems increase in frequency.</p>
-      </div>
-      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/09/260915_AIagentsGoingRogue.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="industry-and-policy">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">September 28, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wrzpzg/ft_corporate_america_rejects_overpriced_frontier">FT: Corporate America rejects overpriced frontier, embraces open models</a>
-        <p class="news-card-summary">Corporate adoption increasingly favors open-source AI models over expensive proprietary frontier models.</p>
-      </div>
-    </div>
     </div>
 
 ---
@@ -891,6 +876,24 @@ Items are selected several times a day by an automated pipeline and the summarie
 ## Videos
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=9uyxtJDd_j0" target="_blank" rel="noopener" title="Ling 3.1 Flash First Test, Is THIS Really a DeepSeek Competitor?">
+  <img src="https://i2.ytimg.com/vi/9uyxtJDd_j0/hqdefault.jpg" alt="Video: First hands-on tests of Ling 3.1 Flash against DeepSeek" loading="lazy">
+  <span class="video-card-title">First hands-on tests of Ling 3.1 Flash against DeepSeek</span>
+  <span class="video-card-meta">Bijan Bowen, October 5, 2026</span>
+  <span class="video-card-desc">An independent reviewer runs first hands-on tests of the Ling 3.1 Flash model, including a browser operating system build and a C++ game, and compares it with DeepSeek.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=5RtmQSKKQo8" target="_blank" rel="noopener" title="IDE vs CLI: What Every DevOps Engineer Should Know">
+  <img src="https://i2.ytimg.com/vi/5RtmQSKKQo8/hqdefault.jpg" alt="Video: Comparison of IDE and CLI tools for developers" loading="lazy">
+  <span class="video-card-title">Comparison of IDE and CLI tools for developers</span>
+  <span class="video-card-meta">IBM Technology, October 5, 2026</span>
+  <span class="video-card-desc">An IBM explainer contrasting integrated development environments with command-line interfaces, describing what each does and when developers use AI-assisted versions of both, useful for readers learning how AI coding tools work.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=ZHVNTTKu9fU" target="_blank" rel="noopener" title="The Billion Dollar AI Advantage Is Disappearing">
+  <img src="https://i3.ytimg.com/vi/ZHVNTTKu9fU/hqdefault.jpg" alt="Video: Sonnet 5.5 and the narrowing gap between frontier and cheaper AI models" loading="lazy">
+  <span class="video-card-title">Sonnet 5.5 and the narrowing gap between frontier and cheaper AI models</span>
+  <span class="video-card-meta">Two Minute Papers, October 5, 2026</span>
+  <span class="video-card-desc">A research-news channel discusses Anthropic&#x27;s Sonnet 5.5 release and how the performance gap between expensive frontier models and cheaper ones is narrowing, with links to the source material.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=83HMZrhL_Uw" target="_blank" rel="noopener" title="AI &amp; Music: How AI Is Changing Music Creation &amp; Creativity">
   <img src="https://i1.ytimg.com/vi/83HMZrhL_Uw/hqdefault.jpg" alt="Video: Explainer on how AI is changing music creation and creativity" loading="lazy">
   <span class="video-card-title">Explainer on how AI is changing music creation and creativity</span>
@@ -909,29 +912,29 @@ Items are selected several times a day by an automated pipeline and the summarie
   <span class="video-card-meta">WorldofAI, October 3, 2026</span>
   <span class="video-card-desc">A news roundup covering several AI developments, including a reported preview of Fable 5.5, Gemini 4 Argon, a Claude Code update, and a free model, so viewers get a quick overview of recent releases.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=oBdLhD5nPYw" target="_blank" rel="noopener" title="OpenAI cancels Astra release, Sonnet 5.5 &amp; what Meta Muse means for work">
-  <img src="https://i4.ytimg.com/vi/oBdLhD5nPYw/hqdefault.jpg" alt="Video: Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse" loading="lazy">
-  <span class="video-card-title">Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse</span>
-  <span class="video-card-meta">IBM Technology, October 2, 2026</span>
-  <span class="video-card-desc">A panel discussion from IBM&#x27;s Mixture of Experts podcast on why a company would cancel a model release, plus the Sonnet 5.5 release and Meta Muse&#x27;s implications for work.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=9zVYS00N6mg" target="_blank" rel="noopener" title="MiniMax M3.1 Flash IS REALLY GOOD! INSANELY FAST &amp; FREE! (Fully Tested)">
-  <img src="https://i2.ytimg.com/vi/9zVYS00N6mg/hqdefault.jpg" alt="Video: Hands-on testing of MiniMax M3.1 Flash Preview speed and free access" loading="lazy">
-  <span class="video-card-title">Hands-on testing of MiniMax M3.1 Flash Preview speed and free access</span>
-  <span class="video-card-meta">WorldofAI, October 2, 2026</span>
-  <span class="video-card-desc">An independent reviewer runs hands-on tests of the MiniMax M3.1 Flash Preview model, covering its speed and free access through MiniMax Code, so viewers can judge its practical performance.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=_rtp1XzaP6Q" target="_blank" rel="noopener" title="OpenAI Security: Controlling Models is Now ‘Hell’">
-  <img src="https://i4.ytimg.com/vi/_rtp1XzaP6Q/hqdefault.jpg" alt="Video: AI news digest on OpenAI security, Gemini 4 Argon, and a self-improvement paper" loading="lazy">
-  <span class="video-card-title">AI news digest on OpenAI security, Gemini 4 Argon, and a self-improvement paper</span>
-  <span class="video-card-meta">AI Explained, October 1, 2026</span>
-  <span class="video-card-desc">An expert-run digest of recent AI developments, including an OpenAI security warning, a cracked cipher, Gemini 4 Argon, and a paper on recursive self-improvement co-authored by many leading researchers.</span>
-</a>
 </div>
 
-??? abstract "Show the other 12 videos"
+??? abstract "Show the other 15 videos"
 
     <div class="video-grid">
+    <a class="video-card" href="https://www.youtube.com/watch?v=oBdLhD5nPYw" target="_blank" rel="noopener" title="OpenAI cancels Astra release, Sonnet 5.5 &amp; what Meta Muse means for work">
+      <img src="https://i4.ytimg.com/vi/oBdLhD5nPYw/hqdefault.jpg" alt="Video: Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse" loading="lazy">
+      <span class="video-card-title">Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse</span>
+      <span class="video-card-meta">IBM Technology, October 2, 2026</span>
+      <span class="video-card-desc">A panel discussion from IBM&#x27;s Mixture of Experts podcast on why a company would cancel a model release, plus the Sonnet 5.5 release and Meta Muse&#x27;s implications for work.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=9zVYS00N6mg" target="_blank" rel="noopener" title="MiniMax M3.1 Flash IS REALLY GOOD! INSANELY FAST &amp; FREE! (Fully Tested)">
+      <img src="https://i2.ytimg.com/vi/9zVYS00N6mg/hqdefault.jpg" alt="Video: Hands-on testing of MiniMax M3.1 Flash Preview speed and free access" loading="lazy">
+      <span class="video-card-title">Hands-on testing of MiniMax M3.1 Flash Preview speed and free access</span>
+      <span class="video-card-meta">WorldofAI, October 2, 2026</span>
+      <span class="video-card-desc">An independent reviewer runs hands-on tests of the MiniMax M3.1 Flash Preview model, covering its speed and free access through MiniMax Code, so viewers can judge its practical performance.</span>
+    </a>
+    <a class="video-card" href="https://www.youtube.com/watch?v=_rtp1XzaP6Q" target="_blank" rel="noopener" title="OpenAI Security: Controlling Models is Now ‘Hell’">
+      <img src="https://i4.ytimg.com/vi/_rtp1XzaP6Q/hqdefault.jpg" alt="Video: AI news digest on OpenAI security, Gemini 4 Argon, and a self-improvement paper" loading="lazy">
+      <span class="video-card-title">AI news digest on OpenAI security, Gemini 4 Argon, and a self-improvement paper</span>
+      <span class="video-card-meta">AI Explained, October 1, 2026</span>
+      <span class="video-card-desc">An expert-run digest of recent AI developments, including an OpenAI security warning, a cracked cipher, Gemini 4 Argon, and a paper on recursive self-improvement co-authored by many leading researchers.</span>
+    </a>
     <a class="video-card" href="https://www.youtube.com/watch?v=pYH8x-Nbhbc" target="_blank" rel="noopener" title="GPT-6.1 Sol vs Claude Sonnet 5.5, This Was NOT Even CLOSE!">
       <img src="https://i1.ytimg.com/vi/pYH8x-Nbhbc/hqdefault.jpg" alt="Video: Hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5" loading="lazy">
       <span class="video-card-title">Hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5</span>

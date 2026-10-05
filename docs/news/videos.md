@@ -13,6 +13,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=9uyxtJDd_j0" target="_blank" rel="noopener" title="Ling 3.1 Flash First Test, Is THIS Really a DeepSeek Competitor?">
+  <img src="https://i2.ytimg.com/vi/9uyxtJDd_j0/hqdefault.jpg" alt="Video: First hands-on tests of Ling 3.1 Flash against DeepSeek" loading="lazy">
+  <span class="video-card-title">First hands-on tests of Ling 3.1 Flash against DeepSeek</span>
+  <span class="video-card-meta">Bijan Bowen, October 5, 2026</span>
+  <span class="video-card-desc">An independent reviewer runs first hands-on tests of the Ling 3.1 Flash model, including a browser operating system build and a C++ game, and compares it with DeepSeek.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=5RtmQSKKQo8" target="_blank" rel="noopener" title="IDE vs CLI: What Every DevOps Engineer Should Know">
+  <img src="https://i2.ytimg.com/vi/5RtmQSKKQo8/hqdefault.jpg" alt="Video: Comparison of IDE and CLI tools for developers" loading="lazy">
+  <span class="video-card-title">Comparison of IDE and CLI tools for developers</span>
+  <span class="video-card-meta">IBM Technology, October 5, 2026</span>
+  <span class="video-card-desc">An IBM explainer contrasting integrated development environments with command-line interfaces, describing what each does and when developers use AI-assisted versions of both, useful for readers learning how AI coding tools work.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=ZHVNTTKu9fU" target="_blank" rel="noopener" title="The Billion Dollar AI Advantage Is Disappearing">
+  <img src="https://i3.ytimg.com/vi/ZHVNTTKu9fU/hqdefault.jpg" alt="Video: Sonnet 5.5 and the narrowing gap between frontier and cheaper AI models" loading="lazy">
+  <span class="video-card-title">Sonnet 5.5 and the narrowing gap between frontier and cheaper AI models</span>
+  <span class="video-card-meta">Two Minute Papers, October 5, 2026</span>
+  <span class="video-card-desc">A research-news channel discusses Anthropic&#x27;s Sonnet 5.5 release and how the performance gap between expensive frontier models and cheaper ones is narrowing, with links to the source material.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=83HMZrhL_Uw" target="_blank" rel="noopener" title="AI &amp; Music: How AI Is Changing Music Creation &amp; Creativity">
   <img src="https://i1.ytimg.com/vi/83HMZrhL_Uw/hqdefault.jpg" alt="Video: Explainer on how AI is changing music creation and creativity" loading="lazy">
   <span class="video-card-title">Explainer on how AI is changing music creation and creativity</span>
@@ -114,24 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Cline Desktop tested against Claude Fable 5.1</span>
   <span class="video-card-meta">Bijan Bowen, September 24, 2026</span>
   <span class="video-card-desc">Hands-on comparison of Cline Desktop against Claude Fable 5.1 to assess whether open-weight models can match closed commercial alternatives.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=SA9kdAX2Zj0" target="_blank" rel="noopener" title="Claude Opus 5.5 AI: An Incredible Leap Forward">
-  <img src="https://i4.ytimg.com/vi/SA9kdAX2Zj0/hqdefault.jpg" alt="Video: Claude Opus 5.5 capabilities overview" loading="lazy">
-  <span class="video-card-title">Claude Opus 5.5 capabilities overview</span>
-  <span class="video-card-meta">Two Minute Papers, September 24, 2026</span>
-  <span class="video-card-desc">Overview of Claude Opus 5.5 capabilities and performance improvements from Anthropic&#x27;s latest model release.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=H7KruLVX2Rk" target="_blank" rel="noopener" title="Claude JUST found hidden DNA...">
-  <img src="https://i1.ytimg.com/vi/H7KruLVX2Rk/hqdefault.jpg" alt="Video: Claude agents in autonomous biological discovery" loading="lazy">
-  <span class="video-card-title">Claude agents in autonomous biological discovery</span>
-  <span class="video-card-meta">Wes Roth, September 24, 2026</span>
-  <span class="video-card-desc">Demonstration of Claude agents discovering a previously unknown biological system, showing capability in autonomous scientific discovery.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=LrUCo_7jor4" target="_blank" rel="noopener" title="GPT-6 Sol Is VERY GOOD, Is THIS an Opus 5.5 Competitor?">
-  <img src="https://i1.ytimg.com/vi/LrUCo_7jor4/hqdefault.jpg" alt="Video: GPT-6 Sol testing and comparison with Claude Opus" loading="lazy">
-  <span class="video-card-title">GPT-6 Sol testing and comparison with Claude Opus</span>
-  <span class="video-card-meta">Bijan Bowen, September 23, 2026</span>
-  <span class="video-card-desc">Hands-on testing and comparison of GPT-6 Sol against Claude Opus, covering technical capabilities and practical performance across multiple tasks.</span>
 </a>
 </div>
 
