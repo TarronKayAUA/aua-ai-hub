@@ -323,3 +323,21 @@
   support: "Organizer-stated: $2,500 total prize pool with $1,250 for first place, $750 for second, $500 for third, plus a Devpost Learn badge for eligible submissions"
   relevance: "This is an online beginner-friendly hackathon run by Devpost that teaches participants to build an AI-assisted app prototype using structured planning skills, suited to students or faculty new to building with AI coding tools."
   verified: 2026-09-28
+
+# Verified 2026-10-05 on the official Devpost page and its official rules
+# (opportunity watch issue #56, owner approved): submission period October 1
+# to November 12, 2026, 12:00 pm Pacific; "no purchase or payment necessary";
+# open to individuals at the age of majority where they live, worldwide
+# except U.S.-sanctioned places (Antigua and Barbuda is not excluded); sponsor
+# PayPal, administrator Devpost; $67,500 in cash prizes, organizer-stated.
+- name: "PayPal AI Hackathon"
+  url: https://paypalaihackathon.devpost.com/
+  organizer: "PayPal (administered by Devpost)"
+  type: hackathon
+  format: virtual
+  eligibility: "Individuals at or above the legal age of majority in their country of residence, from all countries/territories excluding standard exceptions; teams and organizations may also enter"
+  deadline: 2026-11-12
+  end_date: 2026-11-12
+  support: "Organizer-stated: $67,500 in cash prizes"
+  relevance: "Online hackathon from PayPal on building an app that combines its developer platform with an AI tool of the entrant's choice, suited to those building general AI skills."
+  verified: 2026-10-05
