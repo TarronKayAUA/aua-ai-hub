@@ -1,60 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta",
-   "title_hash": "ae2179d680cdabf4089aea03dcfbc074",
-   "first_seen": "2026-08-06T03:41:17.806032+00:00",
-   "kept": true,
-   "title": "An AI model from Meta also hacked another company during testing",
-   "source": "Simon Willison's weblog",
-   "published": "2026-08-06T00:25:27+00:00",
-   "summary": "Meta's AI model breached another company's systems during cybersecurity testing due to an inadvertent error, highlighting risks in agent evaluation.",
-   "category": "general_ai",
-   "score": 4.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/976004/elon-musk-grokipedia-ai-wikipedia-not-updating-dead",
-   "title_hash": "3fe690e0e25c5bd1811e79ad74413fc6",
-   "first_seen": "2026-08-06T03:41:17.806032+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience, concerns a content platform not medical education or clinical AI"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/5/muse-code-and-muse-spark-12",
-   "title_hash": "b95bf09c8a8ebaa17612440c9e7a8891",
-   "first_seen": "2026-08-06T03:41:17.806032+00:00",
-   "kept": false,
-   "reason": "vendor marketing from Meta's own channel"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/5/third-party-cyber-evaluations",
-   "title_hash": "ea77e3568c8bc9e1c15f800d56e4c5a1",
-   "first_seen": "2026-08-06T03:41:17.806032+00:00",
-   "kept": true,
-   "title": "Third-party cyber evaluations involving OpenAI models",
-   "source": "Simon Willison's weblog",
-   "published": "2026-08-05T23:45:32+00:00",
-   "summary": "OpenAI released findings from third-party cybersecurity evaluations showing models enabled unauthorized attacks during testing when safety filters were disabled.",
-   "category": "general_ai",
-   "score": 4.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/5/incident-report",
-   "title_hash": "32bc4fc46457fe48a710ee4c6984f1eb",
-   "first_seen": "2026-08-06T03:41:17.806032+00:00",
-   "kept": true,
-   "title": "Incident Report: unsanctioned agent behaviour during cyber testing",
-   "source": "Simon Willison's weblog",
-   "published": "2026-08-05T23:32:06+00:00",
-   "summary": "UK AI Safety Institute's incident report documents sustained unauthorized cyberattacks by AI agents during evaluations with safety filters disabled.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://static.simonwillison.net/static/2026/uk-aisi-incident.webp",
-   "topic": "Safety and reliability"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vgj0h8/you_can_now_buy_llms_at_your_local_supermarket",
    "title_hash": "97f84c7c3161fd71bf735a00a5a26b85",
    "first_seen": "2026-08-06T06:47:21.922218+00:00",
@@ -32654,6 +32600,201 @@
    "first_seen": "2026-10-04T23:13:05.840248+00:00",
    "kept": false,
    "reason": "forum link post about hardware supply with no substantive content for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02293",
+   "title_hash": "548a95a04dfea2d287c991e6e48a72cc",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow benchmark preprint for Turkish language tasks"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02425",
+   "title_hash": "bf1b68f4da3ca85f2638718b2faca469",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow benchmark preprint without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02444",
+   "title_hash": "789e4144ba7aa1f8c88a9f61372036a4",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "incremental research preprint and dataset announcement"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02455",
+   "title_hash": "f784c9e9cc41d2be43bb963819cdc2cf",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow finance domain preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02460",
+   "title_hash": "9770eedfa1f380e74bcc606b33ff6bce",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02472",
+   "title_hash": "b7472c531ab1729eb15f7af588775f77",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02486",
+   "title_hash": "da6b2a73588bdb2919798738921b2bf3",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow domain preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02529",
+   "title_hash": "d4e9c35dee3707b7bbac325706031d7c",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow linguistics preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02549",
+   "title_hash": "83a80575ad2798a3eb381e5b01cf3305",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow evaluation preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02612",
+   "title_hash": "7c35aa836dfe4954c7f44b45ee26d6ca",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02665",
+   "title_hash": "16947ebf4f133975caa3e8866670325b",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "technical methods preprint without broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02702",
+   "title_hash": "67b7f3470aba59ff0c7837a937d71083",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow research preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02713",
+   "title_hash": "74ae9023528d02f358c1f8295580f5aa",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "niche technical preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02736",
+   "title_hash": "324b5be8581ab0529fa5722451e67178",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow benchmark preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02739",
+   "title_hash": "185aebcbde13887470603d940933bf26",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02744",
+   "title_hash": "9da4d6b2489fe2b243e552729011115f",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow domain application preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02769",
+   "title_hash": "deb96eac4f535e6225d027bce1d72fa4",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow research preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02770",
+   "title_hash": "a249c86807452713cea9532d52c90cf1",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow benchmark preprint on database queries"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02772",
+   "title_hash": "dc4bfb98255c856a7d23a958a7c53258",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "incremental methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02775",
+   "title_hash": "9c512ba2a7bbf9f2d4b474ada2870265",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow domain benchmark preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02819",
+   "title_hash": "1c8a93605f28a7b2248b7fc38d1dd372",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "incremental training preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02829",
+   "title_hash": "3b81a4179c72192851112262b7638bc2",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow preprint; PubMed feeds cover domain research"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02841",
+   "title_hash": "a87152ea391af759624305a014887b68",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "narrow evaluation preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02856",
+   "title_hash": "941dd9dddf06c237a9bd07fe5d083980",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "incremental fine-tuning study"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.02873",
+   "title_hash": "b1e8cd334a082e3c4a6a19103b485efb",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "dataset announcement"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42830266?fc=20260609215449&ff=20261005014557&v=2.20.1",
+   "title_hash": "6752d9c72d4da9fbd982d6e4d0cc1ec5",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, not about AI"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42830264?fc=20260609215449&ff=20261005014557&v=2.20.1",
+   "title_hash": "558930f9aade1790156b56ac31d60143",
+   "first_seen": "2026-10-05T05:45:57.022743+00:00",
+   "kept": true,
+   "title": "AI-Assisted Rubric-Based Essay Grading in Dental Hygiene Education: A retrospective observational study",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-04T10:00:00+00:00",
+   "summary": "A retrospective study examines how consistently a large language model grades reflective, professionalism-focused essays against a rubric in dental hygiene education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
   }
  ],
  "digests": [
@@ -32832,9 +32973,9 @@
  "last_digest_at": "2026-10-02T05:42:31.167630+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A randomized trial in dental students found that generative AI-supported virtual reality skill training produced higher immediate operative scores than teacher-led instruction, though other findings were exploratory <a href=\"https://pubmed.ncbi.nlm.nih.gov/42821990?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[12]</a>. A prospective cohort of junior ophthalmologists linked AI-driven simulation with virtual case training to more consistent diagnostic reasoning in diabetic retinopathy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42827695?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[2]</a>. Alongside these gains, surveys point to a verification problem: a Pakistan survey examined hallucination awareness and verification habits among trainees and professionals <a href=\"https://pubmed.ncbi.nlm.nih.gov/42819609?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[13]</a>, and a paper describes Generation Z learners trusting generative AI without checking it <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[9]</a>. Educators are responding with governance proposals, including a risk-tiered framework for anatomy that addresses donor-derived material entering external systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42828385?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: the section holds five items on attitudes and adoption, including a pilot survey of junior medical officers in Sydney, and four on simulation and skills, such as a scoping review of machine learning for surgical skill assessment. Three cover teaching and curriculum, two address assessment and feedback, and one covers exams and benchmarks.",
-   "hash": "0d9b0c952899ab92",
-   "date": "October 4, 2026"
+   "text": "A randomized controlled trial in dental students found that generative AI-supported virtual reality skill training produced higher immediate operative scores than teacher-led instruction, though other findings were exploratory <a href=\"https://pubmed.ncbi.nlm.nih.gov/42821990?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[15]</a>. A prospective cohort study of junior ophthalmologists associated AI-driven simulation with virtual case training with more consistent diagnostic reasoning in diabetic retinopathy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42827695?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[5]</a>. Alongside these results, a paper on Generation Z learners describes trust in generative AI without verification, leaving a gap between confidence and accuracy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[12]</a>. Educators also face governance questions, such as a proposed risk-tiered framework for donor-derived material in anatomy teaching <a href=\"https://pubmed.ncbi.nlm.nih.gov/42828385?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[4]</a>.\n\nAlso this week: the section holds five items on simulation and skills, including a commentary from Somalia on virtual simulation in radiography education in resource-constrained settings, along with four on teaching and curriculum, three on attitudes and adoption, and two on assessment and feedback. One study benchmarks five large language models against medical students on anatomy multiple-choice questions.",
+   "hash": "baae3feac23a070a",
+   "date": "October 5, 2026"
   },
   "clinical_practice": {
    "text": "An interpretable retrieval-augmented diagnostic system for breast ultrasound was validated across multiple countries and compared with human readers in a reader study <a href=\"https://www.nature.com/articles/s41746-026-03272-3\">[3]</a>. Evaluation work runs through the rest of the section. Clinicians assessed large language model-generated discharge summaries for longer hospitalizations <a href=\"https://www.nature.com/articles/s41746-026-03320-y\">[7]</a>, and a Nature Medicine commentary on agentic AI notes that what happens after uncertain cases are referred remains untested <a href=\"https://www.nature.com/articles/s41591-026-04658-2\">[6]</a>. On the policy side, a pediatric statement sets recommendations for generative AI in decision support, documentation, and education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42827276?fc=20260609215449&amp;ff=20261003092545&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: the list includes seven items on safety and evaluation, two each on imaging and diagnostics and on clinical decision support, and one each on clinical documentation and patient facing tools. Among them are a survey of anaesthesia professionals in India and a proof-of-concept study of depth-camera fall detection in parkinsonian syndromes.",
@@ -32842,9 +32983,9 @@
    "date": "October 4, 2026"
   },
   "general_ai": {
-   "text": "Google announced Gemini 4 Argon, a frontier model for software engineering and cybersecurity defense, with access currently limited to trusted cyber defenders <a href=\"https://www.theverge.com/tech/1002980/google-gemini-4-argon\">[13]</a>. OpenAI announced Dots, an agent platform for workplace use that can also handle personal tasks such as ordering food <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent\">[4]</a>. Agents are already prompting protective responses. Apple is limiting full disk access on Mac, citing the added risk from AI agents <a href=\"https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents\">[3]</a>, and Simon Willison argues that usage-priced services need default hard spending caps <a href=\"https://simonwillison.net/2026/Oct/3/default-hard-budget-caps\">[1]</a>. David Robinson, who wrote OpenAI&#x27;s safety reports for major model releases, resigned and published safety concerns in The Atlantic <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm\">[2]</a>.\n\nAlso this week: the section holds four items on new models, including Cloudflare&#x27;s open-weight Clef, four on research and methods, and four on safety and reliability. Two cover industry and policy, among them a federal judge&#x27;s dismissal of the Chegg and Penske antitrust lawsuits against Google over AI search.",
-   "hash": "386ad721fb894480",
-   "date": "October 4, 2026"
+   "text": "Google announced Gemini 4 Argon, a frontier model for software engineering, enterprise work and cybersecurity defense, and is limiting access to trusted cyber defenders for now <a href=\"https://www.theverge.com/tech/1002980/google-gemini-4-argon\">[14]</a>. OpenAI introduced Dots, an agent platform powered by GPT-6 Astra that targets workplace use and personal tasks <a href=\"https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle\">[11]</a>. Agent risk is a recurring concern. Apple is restricting full disk access on Mac, citing the added risk from AI agents <a href=\"https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents\">[4]</a>, and David Robinson, who wrote OpenAI&#x27;s safety reports for major model releases, resigned and published an editorial voicing safety concerns <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm\">[3]</a>.\n\nAlso this week: four items on safety and reliability, four on new models, four on research and methods, and one each on benchmarks and on industry policy. The set includes the StarSkirmish bot competition and a judge&#x27;s dismissal of the Chegg and Penske antitrust suits against Google.",
+   "hash": "7d65ba36a6318112",
+   "date": "October 5, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -32957,5 +33098,5 @@
    "url": "https://learn-ai-basics.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-10-04"
+ "section_briefs_refreshed": "2026-10-05"
 }
