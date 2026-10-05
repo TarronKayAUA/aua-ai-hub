@@ -98,6 +98,13 @@ MANUALLY_VERIFIED = {
     # 200 to the checker's own user agent from residential IPs (probed
     # the same day), the deeplearning.ai pattern.
     "icmje.org": "2026-08-05",
+    # Google Scholar Labs (data/tools.yaml, the only scholar.google.com link
+    # on the site). 403 from the Actions runner (issue #55, 2026-10-05);
+    # from residential IPs the checker gets 200, because signed-out visitors
+    # are redirected to Google sign-in, which is how the product works (the
+    # bare /scholar_labs path is a 404, so /search is the right link). The
+    # deeplearning.ai pattern: the block is datacenter-IP based and recurs.
+    "scholar.google.com": "2026-10-05",
     # ahli.cc was allowlisted 2026-07-06 when its /ml4h/ subpath began
     # 403ing scripted clients; removed 2026-07-09 when the listing moved
     # to the dedicated ml4h.ahli.cc site, which serves scripts normally
@@ -606,6 +613,22 @@ def check(url: str, retries: int = 2,
                 time.sleep(3)
     else:
         return False, last_exc
+    # eLife (elifesciences.org, behind Varnish) answers 406 Not Acceptable to
+    # any browser user agent sent by a client that is not a browser, and
+    # serves the article to one that names itself honestly (issue #55,
+    # probed 2026-10-05: 406 for Chrome/126 and Chrome/141 with any Accept
+    # header, 200 for the python-requests and curl defaults). So a 406 earns
+    # one retry without the browser disguise, and a page that answers it is
+    # judged by that answer below, which checks the page itself rather than
+    # allowlisting the host.
+    plain_retry = False
+    if resp.status_code == 406:
+        try:
+            plain = requests.get(url, timeout=TIMEOUT, allow_redirects=True)
+            if plain.status_code < 400:
+                resp, plain_retry = plain, True
+        except requests.RequestException:
+            pass
     if resp.status_code in BOT_BLOCK_STATUSES:
         host = re.sub(r"^https?://(www\.)?", "", url).split("/")[0]
         if host in MANUALLY_VERIFIED:
@@ -652,6 +675,8 @@ def check(url: str, retries: int = 2,
         # Say it survived the retries, so the monthly issue distinguishes a
         # host that is genuinely down from one that blinked.
         return ok, f"HTTP {resp.status_code} after {retries} retries"
+    if plain_retry:
+        return ok, f"HTTP {resp.status_code} (406 to a browser user agent)"
     return ok, f"HTTP {resp.status_code}"
 
 
