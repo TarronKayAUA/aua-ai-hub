@@ -205,7 +205,7 @@
   url: https://claude.com/product/cowork
   cost: paid
   governance_status: listed
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: Anthropic's desktop agent for non-coding knowledge work. Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
 
 # Cost and blurb updated 2026-07-28 (issue #28, owner approved): the
@@ -271,7 +271,7 @@
   # contradictory tail ("Independent again since August 2026 ... will soon
   # resume operating as an independent company"). Removed 2026-09-08.
   status_note: Independent again since August 2026 after Chinese regulators blocked Meta's acquisition; existing accounts may have changed during the separation.
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: General-purpose autonomous agent that breaks a goal into steps and executes them in a cloud workspace, producing research, documents, slides, and simple applications.
 
 - name: Comet
@@ -355,7 +355,7 @@
   verify_url: https://support.google.com/gemininotebook/
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-08-26
+  last_reviewed: 2026-10-06
   blurb: Research notebook that answers questions and generates summaries from documents you upload, with citations back to the passage; optional features can add web sources. Formerly NotebookLM.
 
 - name: OpenEvidence
@@ -375,7 +375,7 @@
   # so they are body copy now and the expand-on-first-use rule applies. The
   # acronym appears nowhere else in this page's prose.
   status_note: Verification requires US credentials, either a National Provider Identifier (NPI) or enrollment at a US medical school; withdrew from the United Kingdom and European Union in spring 2026.
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: Clinical question-answering tool for verified health professionals, with answers cited to the medical literature.
 
 # Verified 2026-07-08: AUA's institution-wide Scopus license (arranged
@@ -392,7 +392,7 @@
   cost: AUA-licensed
   governance_status: licensed
   status_note: "Licensed institution-wide through the AUA Library (2026) and reviewed ahead of procurement. Sign in with AUA credentials via the library link."
-  last_reviewed: 2026-08-25
+  last_reviewed: 2026-10-06
   blurb: Elsevier's Scopus citation database with its Scopus AI layer, answering plain-language questions with cited summaries, concept maps, and an agentic Deep Research mode, grounded in the abstracts of the indexed peer-reviewed literature.
 
 - name: Semantic Scholar
@@ -437,7 +437,7 @@
   url: https://www.neuralconsult.com
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: Study platform for medical, nursing, and physician assistant students with flashcard generation from your own materials, board-style questions, and simulated patient encounters for clinical exam practice.
 
 - name: Thea
@@ -446,7 +446,7 @@
   url: https://www.theastudy.com
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: Study app that builds flashcards, practice tests, and summaries with spaced repetition from uploaded readings or lecture notes.
 
 - name: Medical Student AI
@@ -455,7 +455,7 @@
   url: https://medicalstudent.ai
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: Tutoring app with a question bank in the style of the United States Medical Licensing Examination (USMLE), cited explanations, and custom quizzes built from uploaded study materials.
 
 - name: Nabu Tutor
@@ -515,7 +515,7 @@
   url: https://www.grammarly.com
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: Writing assistant that checks grammar, clarity, and tone in documents, email, and browser text fields.
 
 - name: Whisper
@@ -526,7 +526,7 @@
   cost: free
   governance_status: listed
   status_note: Runs locally; audio never leaves your computer.
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: Open-source speech-to-text model that transcribes audio recordings on your own computer.
 
 - name: Microsoft Teams Transcription
@@ -535,7 +535,7 @@
   url: https://support.microsoft.com/en-us/teams/meetings/start-stop-and-download-live-transcripts-in-microsoft-teams-meetings
   cost: institutional
   governance_status: listed
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: Built-in live transcription for Teams meetings under the institutional Microsoft 365 license.
 
 - name: Ollama
@@ -561,7 +561,7 @@
   url: https://lmstudio.ai
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-01
+  last_reviewed: 2026-10-06
   blurb: Desktop application with a graphical interface for downloading and chatting with local language models, which remains a free download. The vendor's lead product is now LM Studio Bionic, an agent for open models with free local use and optional paid cloud models.
 
 - name: Open WebUI
