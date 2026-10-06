@@ -21,9 +21,31 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research">Opinion: I’m a doctor. Here’s what I want the public to know about AI tools and health care costs</a>
+    <p class="news-card-summary">A physician argues in an opinion piece that honest documentation aided by AI tools can still inflate hospital bills, and describes what the public should understand about AI and health care costs.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/10/AdobeStock_274628745-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04706-x">MAGIC: an international network for evaluating generative artificial intelligence in global health</a>
+    <p class="news-card-summary">Nature Medicine describes MAGIC, an international network formed to evaluate generative artificial intelligence tools in global health settings.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="imaging-and-diagnostics">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04626-w">An open vision-language model for diverse medical applications</a>
+    <p class="news-card-summary">Nature Medicine publishes MedGemma, an open collection of medical vision-language models based on Gemma 3 that outperform similarly sized generative models on medical image and text tasks.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 5, 2026</span></div>
@@ -109,29 +131,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 3, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03324-8">Shapley value explanations for clinical prediction models: a scoping review and guide</a>
     <p class="news-card-summary">A scoping review in npj Digital Medicine examines how Shapley value explanations a method for attributing a model&#x27;s prediction to its input features are used in clinical prediction models and offers a practical guide.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="other">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Sensible Medicine</span><span class="news-card-date">October 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.sensible-med.com/p/things-you-should-be-doing-because">Things you should be doing because of AI</a>
-    <p class="news-card-summary">A Sensible Medicine commentary argues that clinicians should respond to artificial intelligence by focusing on personalized patient care, inquiry that improves practice, and training the next generation of physicians.</p>
-  </div>
-  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!dsY4!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F12daf67a-6ec0-4247-903e-42e92095b8c3_720x540.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04658-2">The missing links in agentic AI autonomy</a>
-    <p class="news-card-summary">A Nature Medicine commentary examines trust in agentic artificial intelligence using on-premise agents and consistency-based gating to refer uncertain cases, noting that what happens after referral remains untested.</p>
-  </div>
-  <img class="news-card-thumb" src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04658-2/MediaObjects/41591_2026_4658_Fig1_HTML.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03320-y">Clinician-centered evaluation of large language model-generated discharge summaries for longer hospitalizations</a>
-    <p class="news-card-summary">A peer-reviewed study has clinicians evaluate discharge summaries generated by large language models for longer hospital stays.</p>
   </div>
 </div>
 </div>

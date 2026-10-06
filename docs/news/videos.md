@@ -13,6 +13,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=qZBibWYcKH4" target="_blank" rel="noopener" title="How AI Models Scale Beyond a Single GPU Across LLM Workloads">
+  <img src="https://i2.ytimg.com/vi/qZBibWYcKH4/hqdefault.jpg" alt="Video: Explainer on distributing large AI models across multiple GPUs" loading="lazy">
+  <span class="video-card-title">Explainer on distributing large AI models across multiple GPUs</span>
+  <span class="video-card-meta">IBM Technology, October 6, 2026</span>
+  <span class="video-card-desc">An IBM presenter explains why the largest AI models cannot fit on one graphics processing unit GPU and how work is distributed across multiple GPUs, giving a conceptual overview of scaling.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=PQw0TRzpCkk" target="_blank" rel="noopener" title="MYSTERIOUS GPT-Next Model LEAKED, Fable 5.5 TODAY? Gemini 4 Argon + RSI Update &amp; More! AI NEWS">
+  <img src="https://i1.ytimg.com/vi/PQw0TRzpCkk/hqdefault.jpg" alt="Video: AI news roundup on GPT-Next, Fable 5.5, Gemini 4 Argon" loading="lazy">
+  <span class="video-card-title">AI news roundup on GPT-Next, Fable 5.5, Gemini 4 Argon</span>
+  <span class="video-card-meta">WorldofAI, October 6, 2026</span>
+  <span class="video-card-desc">A news roundup covering several reported model developments, including a leaked GPT-Next model, Fable 5.5, Gemini 4 Argon, and a recursive self-improvement update, useful as a quick survey of current releases.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=h5zkzon0gM4" target="_blank" rel="noopener" title="The AI unlock has begun">
+  <img src="https://i1.ytimg.com/vi/h5zkzon0gM4/hqdefault.jpg" alt="Video: Using AI and Claude Opus 5.5 to mod video games" loading="lazy">
+  <span class="video-card-title">Using AI and Claude Opus 5.5 to mod video games</span>
+  <span class="video-card-meta">AI Search, October 6, 2026</span>
+  <span class="video-card-desc">Shows how AI tools, including Claude Opus 5.5, are used to modify video games, covering pass-through mods, rebuilding in Rust, and porting mechanics, as a practical demonstration of AI-assisted coding.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=9uyxtJDd_j0" target="_blank" rel="noopener" title="Ling 3.1 Flash First Test, Is THIS Really a DeepSeek Competitor?">
   <img src="https://i2.ytimg.com/vi/9uyxtJDd_j0/hqdefault.jpg" alt="Video: First hands-on tests of Ling 3.1 Flash against DeepSeek" loading="lazy">
   <span class="video-card-title">First hands-on tests of Ling 3.1 Flash against DeepSeek</span>
@@ -114,24 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Claude Sonnet 5.5 capabilities demonstration</span>
   <span class="video-card-meta">Matthew Berman, September 29, 2026</span>
   <span class="video-card-desc">Hands-on demonstration of Claude Sonnet 5.5 capabilities and what it can build.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=ENWVpqtOdRI" target="_blank" rel="noopener" title="Claude Sonnet 5.5 Is INSANE, Seriously, This Model Is Ridiculous!">
-  <img src="https://i2.ytimg.com/vi/ENWVpqtOdRI/hqdefault.jpg" alt="Video: Claude Sonnet 5.5 hands-on testing and capabilities" loading="lazy">
-  <span class="video-card-title">Claude Sonnet 5.5 hands-on testing and capabilities</span>
-  <span class="video-card-meta">Bijan Bowen, September 28, 2026</span>
-  <span class="video-card-desc">Hands-on testing of Claude Sonnet 5.5 including technical capabilities, browser operation, and C++ game development tasks.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=W9m9S-At4FQ" target="_blank" rel="noopener" title="GPT-6 Luna First Test, Is OpenAI’s CHEAPEST Model Actually Good?">
-  <img src="https://i4.ytimg.com/vi/W9m9S-At4FQ/hqdefault.jpg" alt="Video: Hands-on testing of GPT-6 Luna on coding tasks" loading="lazy">
-  <span class="video-card-title">Hands-on testing of GPT-6 Luna on coding tasks</span>
-  <span class="video-card-meta">Bijan Bowen, September 28, 2026</span>
-  <span class="video-card-desc">An independent hands-on test of the GPT-6 Luna model using coding tasks such as a browser-based operating system and a C++ game, showing how the lower-cost model performs.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=DqoLv_3kNZ8" target="_blank" rel="noopener" title="Cline Desktop Hands-On, Can OPEN Models Match Fable 5.1?">
-  <img src="https://i1.ytimg.com/vi/DqoLv_3kNZ8/hqdefault.jpg" alt="Video: Cline Desktop tested against Claude Fable 5.1" loading="lazy">
-  <span class="video-card-title">Cline Desktop tested against Claude Fable 5.1</span>
-  <span class="video-card-meta">Bijan Bowen, September 24, 2026</span>
-  <span class="video-card-desc">Hands-on comparison of Cline Desktop against Claude Fable 5.1 to assess whether open-weight models can match closed commercial alternatives.</span>
 </a>
 </div>
 

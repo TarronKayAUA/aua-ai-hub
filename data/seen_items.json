@@ -1,344 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arxiv.org/abs/2608.05151",
-   "title_hash": "7d6dad544cf7bc65ecb025454fab3696",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "narrow domain application in wastewater treatment without medical or educational significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05152",
-   "title_hash": "d6197a2b4b7e8f60af47ceef8dcf5903",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on theoretical LLM reasoning without broad significance for medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05153",
-   "title_hash": "ec42bc34582bd37197522767df19826b",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on retrieval-augmented generation technical comparison, narrow significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05154",
-   "title_hash": "62e6c764fe8daaab0a84d2b050d1b202",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on positional encoding architecture, narrow technical contribution"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05155",
-   "title_hash": "a34553a0c0f3578106bc02a430708f28",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on political discourse analysis, off-topic for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05156",
-   "title_hash": "8842a21c233855d4491c064549e7ba6f",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on training methodology without demonstrated significance for medical applications"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05157",
-   "title_hash": "8a5f5a14a6af3188b40947569c3f1779",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": true,
-   "title": "Large Language Models Threaten Double-blind Review",
-   "source": "arXiv cs.CL",
-   "published": "2026-08-07T04:00:00+00:00",
-   "summary": "Study shows large language models can reliably identify authorship of anonymized manuscripts, threatening double-blind peer review.",
-   "category": "general_ai",
-   "score": 4.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05158",
-   "title_hash": "fe9edadb825ed32aa654286629537483",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on LLM self-evolution and safety constraints, narrow technical focus"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05161",
-   "title_hash": "54638ffb88a4e6e2e739ef43436835c1",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on instruction tuning adaptation technique without demonstrated significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05162",
-   "title_hash": "37e7dd92afa7df8d6941d5b33e646d99",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "narrow technical benchmark of limited significance to medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05163",
-   "title_hash": "66f85508a7c191ba2ca2d5f3c3c8f27f",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on privacy risk in multilingual RAG, narrow technical audit"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05164",
-   "title_hash": "3ce4819411c8742f02082107535a53fd",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on steering transfer across model architectures, narrow research contribution"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05165",
-   "title_hash": "1d94e2c8bc9a1d9da9cb75c2e473f330",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on speech emotion recognition in Persian, narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05166",
-   "title_hash": "4ab42f236f48ecb9111d02ad8a4748ad",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on cognitive bias in LLMs, narrow application without medical or educational significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05167",
-   "title_hash": "8e8af2f9b955bf41a93f5ccc18f58fbe",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on Chinese character embeddings, narrow linguistic technical contribution"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05169",
-   "title_hash": "e48e6c40a208a7ba810eabf0442e1781",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on long-form story generation consistency, off-topic for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05170",
-   "title_hash": "b5d8fe19e93d91340232d2fbfb60a22c",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on role-playing agents, off-topic for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05188",
-   "title_hash": "2aa2b36ed7cb6798687374a82746e240",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint position paper on LLM self-consistency without demonstrated methods or results"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05232",
-   "title_hash": "0f34054fc23ae390ed2e8b070b3c9d68",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on numerical localization in LLM translation, narrow technical application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05254",
-   "title_hash": "9668632df014fe4d73be023fc45fc6a7",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on mathematical problem solving prompting, narrow domain application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05353",
-   "title_hash": "b77a91c1be937e1c64435092cedcb222",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on LLM-as-judge evaluation methodology, narrow technical study"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05364",
-   "title_hash": "42edad5a38b9daf783147562387ac0ad",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "off-topic; linguistics chapter on Mandarin intonation, no AI relevance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05409",
-   "title_hash": "f2a6d44c1b8b32e477602c592d3ea038",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on safety alignment jailbreaks through syntactic variation, narrow security study"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05447",
-   "title_hash": "3927a147308a7428e3ee197014dbd323",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on document-level text simplification, narrow NLP application"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.05448",
-   "title_hash": "b9ada7c8fe9994b0ea46dfd8bedcb9f8",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "preprint on speculative decoding optimization, narrow inference technique"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vhmyje/friday_humor",
-   "title_hash": "09786e319f2ec0aa76aaaf4702799cf2",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "community meta-discussion, not substantive content"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03087-2",
-   "title_hash": "46a2a8c4c98264e6349732e18dfc86bf",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": true,
-   "title": "Randomized controlled trial of GenAI coach feedback efficacy, acceptability and mechanisms in anxiety worry logs",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-07T00:00:00+00:00",
-   "summary": "Randomized controlled trial shows generative AI coach feedback in anxiety worry logs is efficacious and acceptable to users.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03074-7",
-   "title_hash": "911b2a36f1103c6fdccb53550ac92e4b",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": true,
-   "title": "Prehospital Injury Severity Estimate (PHISE) matches in-hospital trauma scores when embedded in AI models",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-07T00:00:00+00:00",
-   "summary": "Prehospital injury severity estimates embedded in AI models match in-hospital trauma assessment scores in prospective evaluation.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://spectrum.ieee.org/hugging-face-openai-cyberattack",
-   "title_hash": "2f58dc7c7ddebbecd04f64babfcb7bf9",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": true,
-   "title": "AI Safety Regulations in the U.S. Could Give Hackers an Edge",
-   "source": "IEEE Spectrum AI",
-   "published": "2026-08-06T19:25:39+00:00",
-   "summary": "IEEE analysis of how AI safety regulation may constrain transparency and create security vulnerabilities for AI infrastructure.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://spectrum.ieee.org/media-library/illustration-of-hugging-faces-smiley-face-logo-holding-up-scales-of-justice-against-a-background-of-binary-code.jpg?id=67583759&width=980",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42562591?fc=20260609215449&ff=20260807015150&v=2.20.1",
-   "title_hash": "49f3ac37adef9bd9f09e2c7eb80784b5",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": true,
-   "title": "Large language models in paediatric medical education: equity must come first",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-06T10:00:00+00:00",
-   "summary": "Peer-reviewed perspective on equity considerations for large language model deployment in pediatric medical education.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42561794?fc=20260609215449&ff=20260807015150&v=2.20.1",
-   "title_hash": "fe9136c55f76ae8413e078b270e61e99",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; forensic chemistry application mistagged in medical education feed"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42561514?fc=20260609215449&ff=20260807015150&v=2.20.1",
-   "title_hash": "c26695b5954c86a14258ba08f398062d",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; environmental public health application not related to AI in medical education or clinical practice"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=LVepOOCtjnQ",
-   "title_hash": "f9ed6c78445c3756ed54b2b2c66db7ef",
-   "first_seen": "2026-08-07T05:51:50.627344+00:00",
-   "kept": false,
-   "reason": "speculation and drama coverage with no substantive development"
-  },
-  {
-   "url": "https://www.sensible-med.com/p/advice-for-a-student-entering-medical",
-   "title_hash": "11cb39904ce474c29627faf01814bd2d",
-   "first_seen": "2026-08-07T09:16:33.282050+00:00",
-   "kept": false,
-   "reason": "general advice article with no AI relevance"
-  },
-  {
-   "url": "https://www.statnews.com/2026/08/07/why-did-this-boston-entrepreneur-found-his-biotech-startup-in-california",
-   "title_hash": "0f9434287a83d0a67682767c50ce0f80",
-   "first_seen": "2026-08-07T09:16:33.282050+00:00",
-   "kept": false,
-   "reason": "business and real estate commentary, not medical AI news"
-  },
-  {
-   "url": "https://www.statnews.com/2026/08/07/medical-ai-doctors-autonomy",
-   "title_hash": "31a606b7498aa810122375a44f4564ef",
-   "first_seen": "2026-08-07T09:16:33.282050+00:00",
-   "kept": true,
-   "title": "Opinion: AI won’t enhance physician autonomy. It will further diminish it",
-   "source": "STAT News AI",
-   "published": "2026-08-07T08:30:00+00:00",
-   "summary": "A former surgeon argues that AI systems in medicine reflect and amplify existing diminishment of physician autonomy rather than representing a novel threat.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/08/AdobeStock_442937982-645x645.jpeg",
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/08/07/will-data-center-bring-risk-or-reward-fisk",
-   "title_hash": "e3b4cc86bbb7b9a0e4315c1a25058961",
-   "first_seen": "2026-08-07T09:16:33.282050+00:00",
-   "kept": false,
-   "reason": "infrastructure and real estate debate, not medical AI education"
-  },
-  {
-   "url": "https://www.aleksagordic.com/blog/vllm",
-   "title_hash": "599554782fc6f24745a53263e9e57031",
-   "first_seen": "2026-08-07T09:16:33.282050+00:00",
-   "kept": true,
-   "title": "Inside vLLM: Anatomy of a High-Throughput LLM Inference System (2025)",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-08-06T21:30:21+00:00",
-   "summary": "Technical analysis of vLLM's design and optimization strategies for high-throughput language model inference systems.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://www.aleksagordic.com/blog/vllm/engine_constructor.png",
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://arxiv.org/abs/2607.29377",
-   "title_hash": "b70519a354e51c37cd23bc5a46021caf",
-   "first_seen": "2026-08-07T09:16:33.282050+00:00",
-   "kept": true,
-   "title": "Zero-Mem: Zero-Token Memory Operations for LLM Agents",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-08-05T04:36:44+00:00",
-   "summary": "A method to reduce memory overhead in language model agents by eliminating redundant token operations during inference.",
-   "category": "general_ai",
-   "score": 2.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=vO6SWG-jxvE",
-   "title_hash": "cf8431c90c4354fe0892750d4fdc91f2",
-   "first_seen": "2026-08-07T09:16:33.282050+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company and minor release notes"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=E2T_jZC1QC8",
-   "title_hash": "b5c0d14d5327f3038e0eecde8b5bcaf1",
-   "first_seen": "2026-08-07T09:16:33.282050+00:00",
-   "kept": false,
-   "reason": "rumor and speculation with no confirmed event"
-  },
-  {
    "url": "https://arstechnica.com/ai/2026/08/bytedance-trains-massive-ai-model-in-bid-to-rival-anthropic",
    "title_hash": "5221bf83fc309070bddd072093818856",
    "first_seen": "2026-08-07T13:40:57.630922+00:00",
@@ -32811,6 +32473,345 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1005342/amazon-alexa-plus-keeps-creepily-singing-lalala-for-minutes-on-end",
+   "title_hash": "d589b5e7d5472e956b785574be62c973",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "minor consumer product bug"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834438?fc=20260609215449&ff=20261006071832&v=2.20.1",
+   "title_hash": "3357709eaedbfdc3fbee9281611aa4b0",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": true,
+   "title": "Mapping AI Ethics Integration in Postgraduate Health Professions Education: A Scoping Review Through the Lenses of Principlism and Transformative Learning",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-06T10:00:00+00:00",
+   "summary": "A scoping review finds that artificial intelligence ethics teaching in postgraduate health professions education is conceptually rich but pedagogically underdeveloped, and recommends structured, theory-based, interprofessional curricula.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834391?fc=20260609215449&ff=20261006071832&v=2.20.1",
+   "title_hash": "37e949b5737a3b4967d89f0c89a20e2d",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, addiction rehabilitation review with little AI content"
+  },
+  {
+   "url": "https://www.statnews.com/2026/10/06/ai-tools-health-care-costs-bcbs-research",
+   "title_hash": "4a9155deeb6a8443d6a24a85c584f513",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": true,
+   "title": "Opinion: I’m a doctor. Here’s what I want the public to know about AI tools and health care costs",
+   "source": "STAT News AI",
+   "published": "2026-10-06T08:30:00+00:00",
+   "summary": "A physician argues in an opinion piece that honest documentation aided by AI tools can still inflate hospital bills, and describes what the public should understand about AI and health care costs.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/10/AdobeStock_274628745-645x645.jpeg",
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://huggingface.co/blog/tiiuae/falcon-emirati",
+   "title_hash": "28158e4708e4fc65f639bb69d4d2e428",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "no substantive content given, regional model post of limited relevance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.03802",
+   "title_hash": "3ddf4acad55ea69d66d44aaf081afbe0",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.03825",
+   "title_hash": "672691c16745b0f1deae753b14b54e07",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint on benchmark methodology without broad significance"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.03827",
+   "title_hash": "e3e9fac0533d9317faf911b5e59b1bbd",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.03829",
+   "title_hash": "a63293113c64dc988d7e7cbf6a94ea2b",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow domain preprint, PubMed feeds cover peer-reviewed domain research"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.03839",
+   "title_hash": "3e12dba9a0e54aa266ab7c2ee27093e4",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.03902",
+   "title_hash": "260e49882b6506d67a98076b4cc83d41",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.03935",
+   "title_hash": "6dee817254df6fd19d81004fb9f0697b",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint without broad significance for this audience"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.03940",
+   "title_hash": "f5141628675bb698b573e05d2bea9ee1",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.03962",
+   "title_hash": "c63431a9425560e6921b489ee96c91b9",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow shared-task preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04002",
+   "title_hash": "7a70a16f8743e8d781f52c9d52287b44",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04047",
+   "title_hash": "f8df8c3b945e7deb2927d5a059244136",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04074",
+   "title_hash": "cc44f58b662dc1174b7e2a637ccb0af6",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04098",
+   "title_hash": "14cb91647cef009eaadf5a2c6c5b43b6",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04118",
+   "title_hash": "549c82c879857b17f4bf0c9e511578a8",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow benchmark preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04119",
+   "title_hash": "63a1f6f33b93ed26ec06ad5db284fa38",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow interpretability preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04125",
+   "title_hash": "4e42d5c5fec966fd6c22893fb41035be",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04132",
+   "title_hash": "85146495f4679496236e624f52dacbd8",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04156",
+   "title_hash": "a903c84a35e0b77cc9e4d23192d64061",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow domain application preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04210",
+   "title_hash": "f638d77a613df75a588dd3f0d1b25313",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04239",
+   "title_hash": "11cdc8d0f550d1e6cb075a48afff92b6",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow methods preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04261",
+   "title_hash": "6c4b1f47e1c876fff56b70b306cf1640",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04267",
+   "title_hash": "a5b93c939a522c4bb243864e9223bd36",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": true,
+   "title": "AI-Enabled Quality Assurance for Multiple-Choice Assessment Items",
+   "source": "arXiv cs.CL",
+   "published": "2026-10-06T04:00:00+00:00",
+   "summary": "A narrative review of fourteen studies on automated tools that detect item-writing flaws, revise questions, and screen psychometrically, to establish the quality of AI-generated multiple-choice exam questions.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04304",
+   "title_hash": "03fc4c25cd0ea7c41099d04de5045322",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04347",
+   "title_hash": "f94941653422f1680c4981aec24d63ca",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.04370",
+   "title_hash": "ad1775bc1f228061a7cfb009258c6efe",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://www.insidehighered.com/news/quick-takes/2026/10/06/free-community-college-part-amazons-1b-data-center-plan",
+   "title_hash": "20322ad23fca4543892a9503c99031e0",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "funding and corporate plan news, off-topic"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04706-x",
+   "title_hash": "9f9a1dad94456b5a23b15d83e8ba120f",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": true,
+   "title": "MAGIC: an international network for evaluating generative artificial intelligence in global health",
+   "source": "Nature Medicine",
+   "published": "2026-10-06T00:00:00+00:00",
+   "summary": "Nature Medicine describes MAGIC, an international network formed to evaluate generative artificial intelligence tools in global health settings.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04626-w",
+   "title_hash": "a42585fd5af2c12cf9016e8a38295592",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": true,
+   "title": "An open vision-language model for diverse medical applications",
+   "source": "Nature Medicine",
+   "published": "2026-10-06T00:00:00+00:00",
+   "summary": "Nature Medicine publishes MedGemma, an open collection of medical vision-language models based on Gemma 3 that outperform similarly sized generative models on medical image and text tasks.",
+   "category": "clinical_practice",
+   "score": 5.0,
+   "topic": "Imaging and diagnostics"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04704-z",
+   "title_hash": "fe2a79f044e8cb36cc7b5f5614d1923c",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, oncology trial without AI content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyjuh0/when_redditors_come_in_here_and_ask_why_we_run",
+   "title_hash": "3a392c76e530ad938dd9edc7052bce60",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "community forum discussion without significant news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyea30/make_no_mistake_selling_64_gb_dgx_spark_variants",
+   "title_hash": "46501c3d61c55814640e6340f7127880",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "community meta-discussion about hardware pricing"
+  },
+  {
+   "url": "https://www.insidehighered.com/podcasts/campus/2026/10/05/how-ai-affecting-open-research",
+   "title_hash": "fe9b5590d672f5b9fce3d1687e5a333d",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "low-information commentary teaser, no instructive analysis shown"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wy0jrc/reflection_ai_is_about_to_release_a_us_openweight",
+   "title_hash": "e33de3967d3036eaddf34dd8b5b202f8",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": false,
+   "reason": "rumor about an unreleased model, sourced from a forum thread"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=PQw0TRzpCkk",
+   "title_hash": "4e12d1647f0b5014defb02f11702feb4",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": true,
+   "title": "MYSTERIOUS GPT-Next Model LEAKED, Fable 5.5 TODAY? Gemini 4 Argon + RSI Update & More! AI NEWS",
+   "source": "WorldofAI",
+   "published": "2026-10-06T06:51:19+00:00",
+   "summary": "A news roundup covering several reported model developments, including a leaked GPT-Next model, Fable 5.5, Gemini 4 Argon, and a recursive self-improvement update, useful as a quick survey of current releases.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i1.ytimg.com/vi/PQw0TRzpCkk/hqdefault.jpg",
+   "display_title": "AI news roundup on GPT-Next, Fable 5.5, Gemini 4 Argon"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=h5zkzon0gM4",
+   "title_hash": "6fc3e38e1c15ba0c5d0315169af8de5a",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": true,
+   "title": "The AI unlock has begun",
+   "source": "AI Search",
+   "published": "2026-10-06T03:36:24+00:00",
+   "summary": "Shows how AI tools, including Claude Opus 5.5, are used to modify video games, covering pass-through mods, rebuilding in Rust, and porting mechanics, as a practical demonstration of AI-assisted coding.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i1.ytimg.com/vi/h5zkzon0gM4/hqdefault.jpg",
+   "display_title": "Using AI and Claude Opus 5.5 to mod video games"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=qZBibWYcKH4",
+   "title_hash": "9495963cab5f1a4bdc39ff2650cd45de",
+   "first_seen": "2026-10-06T11:18:32.333204+00:00",
+   "kept": true,
+   "title": "How AI Models Scale Beyond a Single GPU Across LLM Workloads",
+   "source": "IBM Technology",
+   "published": "2026-10-06T11:00:06+00:00",
+   "summary": "An IBM presenter explains why the largest AI models cannot fit on one graphics processing unit GPU and how work is distributed across multiple GPUs, giving a conceptual overview of scaling.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/qZBibWYcKH4/hqdefault.jpg",
+   "display_title": "Explainer on distributing large AI models across multiple GPUs"
   }
  ],
  "digests": [
