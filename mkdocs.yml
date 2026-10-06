@@ -32,6 +32,18 @@ extra:
   # verified if either is lost. overrides/main.html puts it on the home page only,
   # where Google looks. Public by design; never remove it while the property exists.
   google_site_verification: CjqW4eiI_MpDkC6d_jw-vSMRjPgEPHrgIjqPzSv3XIo
+  # The maintainer's own profiles, listed as sameAs on his Person node in the
+  # structured data (overrides/main.html), so search engines connect the Hub
+  # to his name (owner, 2026-10-06). Only profiles he supplies; never guessed.
+  # Canonical public addresses, without tracking or language parameters. ORCID
+  # iD checked against the public ORCID API (valid checksum, record in his
+  # name); ResearchGate and Google Scholar refuse scripted checks, so those two
+  # are as he supplied them. The auamed.org faculty profile joins once it shows
+  # his current title.
+  maintainer_profiles:
+    - https://www.researchgate.net/profile/Tarron-Kayalackakom
+    - https://orcid.org/0000-0002-4062-2539
+    - https://scholar.google.com/citations?user=bJ7gfLwAAAAJ
   # The redesign banner (owner, 2026-09-28: a banner for first visits that shows for
   # two weeks). overrides/main.html draws it on every page until a visitor closes it,
   # and only while the build date is on or before `until`; the news refresh rebuilds
