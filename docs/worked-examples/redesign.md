@@ -1,10 +1,11 @@
 ---
 last_reviewed: 2026-09-29
+author: Tarron Kayalackakom
 ---
 
 # When Every Design Passes
 
-<span class="meta-chip">For anyone curious how this site works</span><span class="meta-chip">About 21 minutes</span> <span class="meta-note">A worked example. Every number here comes from the [public repository](https://github.com/TarronKayAUA/aua-ai-hub) or from the working records the design rounds kept on my laptop, and each was checked against its source before publishing.</span>
+<span class="meta-chip">For anyone curious how this site works</span><span class="meta-chip">About 21 minutes</span> <span class="meta-note">By Tarron Kayalackakom. A worked example. Every number here comes from the [public repository](https://github.com/TarronKayAUA/aua-ai-hub) or from the working records the design rounds kept on my laptop, and each was checked against its source before publishing.</span>
 
 Six artificial intelligence (AI) visitors, each playing a different member of this school, tried 30 ordinary tasks on this site. They succeeded at all 30.
 

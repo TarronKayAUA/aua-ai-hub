@@ -1,10 +1,11 @@
 ---
 last_reviewed: 2026-09-29
+author: Tarron Kayalackakom
 ---
 
 # My Favorite Game Was Not a Game
 
-<span class="meta-chip">For anyone evaluating an AI-built system</span><span class="meta-chip">About 18 minutes</span> <span class="meta-note">A worked example from outside medicine, kept here because the measurement problems are the same ones clinical data poses.</span>
+<span class="meta-chip">For anyone evaluating an AI-built system</span><span class="meta-chip">About 18 minutes</span> <span class="meta-note">By Tarron Kayalackakom. A worked example from outside medicine, kept here because the measurement problems are the same ones clinical data poses.</span>
 
 The fourth-favorite game of my life, according to software I had commissioned and paid for and was rather proud of, was a frame rate counter.
 

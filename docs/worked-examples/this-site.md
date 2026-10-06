@@ -1,10 +1,11 @@
 ---
 last_reviewed: 2026-09-28
+author: Tarron Kayalackakom
 ---
 
 # When a Check Stops Checking
 
-<span class="meta-chip">For anyone curious how this site works</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">A worked example. Every number here was measured from the repository, and the [repository is public](https://github.com/TarronKayAUA/aua-ai-hub).</span>
+<span class="meta-chip">For anyone curious how this site works</span><span class="meta-chip">About 12 minutes</span> <span class="meta-note">By Tarron Kayalackakom. A worked example. Every number here was measured from the repository, and the [repository is public](https://github.com/TarronKayAUA/aua-ai-hub).</span>
 
 For roughly six weeks, this site confidently told visitors about a Google product using a name Google had stopped using.
 

@@ -1,10 +1,11 @@
 ---
 last_reviewed: 2026-09-03
+author: Tarron Kayalackakom
 ---
 
 # I Fixed Software I Cannot Read
 
-<span class="meta-chip">For anyone thinking of contributing to open source</span><span class="meta-chip">About 9 minutes</span> <span class="meta-note">A worked example, in someone else's codebase, with an ending I did not control.</span>
+<span class="meta-chip">For anyone thinking of contributing to open source</span><span class="meta-chip">About 9 minutes</span> <span class="meta-note">By Tarron Kayalackakom. A worked example, in someone else's codebase, with an ending I did not control.</span>
 
 ShareX is a screenshot tool that several million people use. On a monitor capable of high dynamic range (HDR), which is now most decent monitors, it produced washed out and slightly gray screenshots, and the accepted workaround was to turn HDR off before every single capture and turn it back on afterwards.
 

@@ -80,6 +80,10 @@
   <meta name="twitter:title" content="{{ og_title }}">
   <meta name="twitter:description" content="{{ og_desc }}">
   <meta name="twitter:image" content="{{ config.site_url }}assets/social-card.png">
+  {# Lets search engines show a large image preview beside a result, where
+     they choose to show one (2026-10-06, owner request); it allows, it does
+     not request. #}
+  <meta name="robots" content="max-image-preview:large">
 
   {# Google Search Console's HTML-tag verification (2026-10-02), on the home
      page only, where Google looks; the code is mkdocs.yml extra.google_site_verification. #}
@@ -111,6 +115,14 @@
     until that profile shows the current title (it still read "Assistant
     Dean" on 2026-10-02).
   #}
+  {#
+    Pages with `author:` in their front matter (the worked examples, since
+    2026-10-06, owner request) also get an Article node, which ties the byline
+    to the maintainer's identifier when the author is the maintainer, so search
+    engines connect the write-ups to his name. Material already writes the
+    author meta tag from the same field.
+  #}
+  {% set maintainer_name = "Tarron Kayalackakom" %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -129,7 +141,7 @@
       {
         "@type": "Person",
         "@id": "{{ config.site_url }}#maintainer",
-        "name": "Tarron Kayalackakom",
+        "name": "{{ maintainer_name }}",
         "honorificPrefix": "Dr.",
         "jobTitle": "Associate Dean of AI in Medical Education",
         "worksFor": { "@id": "https://www.auamed.org/#organization" }
@@ -139,7 +151,17 @@
         "@id": "https://www.auamed.org/#organization",
         "name": "American University of Antigua College of Medicine",
         "url": "https://www.auamed.org/"
-      }
+      }{% if page and page.meta and page.meta.author %},
+      {
+        "@type": "Article",
+        "@id": "{{ page.canonical_url }}#article",
+        "headline": {{ page.title | tojson }},
+        "url": "{{ page.canonical_url }}",
+        {% if page.update_date %}"dateModified": "{{ page.update_date }}",
+        {% endif %}"inLanguage": "en",
+        "isPartOf": { "@id": "{{ config.site_url }}#website" },
+        "author": {% if page.meta.author == maintainer_name %}{ "@id": "{{ config.site_url }}#maintainer" }{% else %}{ "@type": "Person", "name": {{ page.meta.author | tojson }} }{% endif %}
+      }{% endif %}
     ]
   }
   </script>
