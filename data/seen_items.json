@@ -1,109 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/976801/fenix-flexin-rubberz-ai-song-treblo",
-   "title_hash": "83c4d2fcf396825ac33be708cddc3e7c",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": false,
-   "reason": "entertainment and music industry coverage, off-topic for this audience"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/7/moonlight-mayhem",
-   "title_hash": "a7fd382eb830e4dc8564107b261fc9ed",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": false,
-   "reason": "personal blog post about game development, not significant for medical educators"
-  },
-  {
-   "url": "https://www.theverge.com/entertainment/976939/roku-fairground-ai-fast-channel",
-   "title_hash": "929edd3f63018612f0fb8ec5bdbc24dc",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": false,
-   "reason": "streaming entertainment product coverage, off-topic for medical educators"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities",
-   "title_hash": "44b08605bbaa6493c66c8bf244620190",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": true,
-   "title": "OpenAI puts the brakes on a new model because it’s supposedly too powerful",
-   "source": "The Verge AI",
-   "published": "2026-08-07T18:40:34+00:00",
-   "summary": "OpenAI paused development of model Astra due to unmet security standards following recent disclosure of accidental model security breaches.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/04/STK155_OPEN_AI_CVirginia_C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://huggingface.co/blog/allenai/tutormoments",
-   "title_hash": "d0df251dee0f9e3322b9507f1d2401fa",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": true,
-   "title": "TutorMoments: Do AI tutors know when to help and when to hold back?",
-   "source": "Hugging Face blog",
-   "published": "2026-08-07T17:53:32+00:00",
-   "summary": "Study examines whether AI tutoring systems appropriately calibrate help provision, balancing scaffolding with student independence.",
-   "category": "medical_education",
-   "score": 3.0,
-   "thumbnail": "https://cdn-uploads.huggingface.co/production/uploads/638e39b249de7ae552d977b5/j9L73K19mkz-n8Rr8ZI_B.png",
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive",
-   "title_hash": "660d9acd07b2788f3c1428d02fd7ab87",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": false,
-   "reason": "hardware product design gossip, not significant for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vhwilp/an_openweight_model_too_moonshot_joins_the_race",
-   "title_hash": "50b3936ab9e4dafe8c12bbb0eb34c05e",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": true,
-   "title": "An open-weight model too, Moonshot joins the race (gently this time)",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-08-07T10:08:58+00:00",
-   "summary": "Moonshot released Kimi K3, an open-weight Chinese AI model, following earlier containment bypass reports.",
-   "category": "general_ai",
-   "score": 2.0,
-   "thumbnail": "https://preview.redd.it/6i806mqxexhh1.jpeg?width=640&crop=smart&auto=webp&s=f2bd9e1ac62690d2068ec7710964ce3806b28cc5",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03101-7",
-   "title_hash": "d716c068d2d74be601908e4cb067c2e1",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": true,
-   "title": "Review of open foundation models and datasets for ECG and PPG waveforms",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-07T00:00:00+00:00",
-   "summary": "Systematic review of open foundation models and datasets for electrocardiogram and photoplethysmogram analysis.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03076-5",
-   "title_hash": "7208c02881782a7554b2703380e3ba18",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": true,
-   "title": "Does timing matter, meta-analysis and systematic review of digital cognitive behavioral therapy in the perinatal period",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-07T00:00:00+00:00",
-   "summary": "Meta-analysis examining timing effects of digital cognitive behavioral therapy interventions during pregnancy and postpartum periods.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Right-Way-to-Worry-About-AI-e3n47nc",
-   "title_hash": "3d7c19a7a1343b608090551b6ca36c25",
-   "first_seen": "2026-08-07T21:00:38.695470+00:00",
-   "kept": false,
-   "reason": "daily news show recap with no standout episode distinction or substantive expert analysis beyond general risk framing"
-  },
-  {
    "url": "https://simonwillison.net/2026/Aug/8/john-gruber",
    "title_hash": "4a55b24675b2fe2f1842ab8a1e2f6839",
    "first_seen": "2026-08-08T02:22:57.280192+00:00",
@@ -32873,6 +32770,158 @@
    "first_seen": "2026-10-06T18:24:46.343491+00:00",
    "kept": false,
    "reason": "dataset announcement with narrow application"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github",
+   "title_hash": "5594f187293f0db60effb1e383cebccc",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": true,
+   "title": "OpenAI drops another batch of mathematical breakthroughs",
+   "source": "The Verge AI",
+   "published": "2026-10-06T23:26:38+00:00",
+   "summary": "OpenAI published 722 manuscripts with solutions to long-standing mathematics problems produced by an unreleased frontier model, prompting both interest and questions about research ethics in the mathematical community.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2297765991.jpg?quality=90&strip=all&crop=0%2C10.744316765259%2C100%2C78.511366469482&w=1200",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/6/llm-mistral",
+   "title_hash": "f9c5b5cc84587924d184fdef00a266f3",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "minor release notes for niche software"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu",
+   "title_hash": "4560e0ebb997efe9429766074d976d48",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": true,
+   "title": "OpenAI will watermark ChatGPT outputs by default, but only in the EU",
+   "source": "Ars Technica AI",
+   "published": "2026-10-06T20:50:32+00:00",
+   "summary": "OpenAI will watermark ChatGPT outputs by default in the European Union only, though the method is not highly reliable and can be circumvented.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/09/chatgpt-icon-500x500-1789154135.jpg",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/6/hn-49983751",
+   "title_hash": "94a523ca8f1b728efbe8ee714fe72856",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate; personal blog comment"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/6/le-chonk",
+   "title_hash": "0839f727fc1c4657d7a4873b749cb7b3",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": true,
+   "title": "Introducing Mistral Large 4: Le chonk",
+   "source": "Simon Willison's weblog",
+   "published": "2026-10-06T20:18:19+00:00",
+   "summary": "Mistral released a preview of Mistral Large 4, a 1 trillion parameter model with 49 billion active parameters, available through its API, with open weights promised for the end of the month.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://static.simonwillison.net/static/2026-10-06/mistral-large-4-pelican.webp",
+   "topic": "New models"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/6/datasette-parseable-opentelemetry",
+   "title_hash": "a9de39799b75947e463a0385053d3583",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "niche tooling tinkering post"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e95123",
+   "title_hash": "50214e84f4b1db75addb4d6d3e181c64",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "narrow framework proposal with limited significance for this audience"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e93588",
+   "title_hash": "f9b3633a1557d9e47ed45cf59bf0833c",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": true,
+   "title": "Business Associates’ Involvement in US Health Care Data Breaches: Longitudinal Analysis",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-10-06T19:00:18+00:00",
+   "summary": "A longitudinal analysis examines how business associates, the outside vendors handling protected health information, have been involved in US health care data breaches over time.",
+   "category": "clinical_practice",
+   "score": 2.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/6/hn-49982139",
+   "title_hash": "0e0cc1ff7b2e2a507a06c500949f41a2",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "duplicate of a kept candidate; forum comment with little new information"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/6/datasette-atom",
+   "title_hash": "4772dfe1fb9b6e668409cc7b66ed6251",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "minor release notes for niche software"
+  },
+  {
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+   "title_hash": "38ec7c9aa0908b82c4c617e0abd3858c",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": true,
+   "title": "EmbeddingGemma 2: An open, lightweight multimodal embedding model",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-10-06T16:03:49+00:00",
+   "summary": "Google released EmbeddingGemma 2, an open, lightweight multimodal embedding model that converts text and other inputs into numerical vectors for search and comparison, under the Apache 2.0 license.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/embeddinggemma2-banner_169.width-1300.png",
+   "topic": "New models"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz5b30/woman_used_claude_as_her_diary_and_got_reported",
+   "title_hash": "5bbfe2cf1b4aa455cb9ec6f61c35e49e",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "forum post without verified substance for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz1pqn/qwen_4_apparently_coming_out_at_the_end_of_october",
+   "title_hash": "37fa50d2c1871ed84b571b3d4d61819a",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "rumor about an unreleased model"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03268-z",
+   "title_hash": "698fa6969f0cc84ca1c3921b3b700da1",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "narrow study of limited relevance to this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=FB6oCmrIj-Y",
+   "title_hash": "c53a47fea8f7ce50aae97af6855bfd31",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": false,
+   "reason": "product announcement from the vendor's own channel with no educational payload for this audience"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Point-Counterpoint-Consumers-Will-Never-Pay-for-AI-e3q16j9",
+   "title_hash": "0442d9b28789357b037fbbd2aac60027",
+   "first_seen": "2026-10-06T23:50:39.025551+00:00",
+   "kept": true,
+   "title": "Point-Counterpoint: Consumers Will Never Pay for AI",
+   "source": "The AI Daily Brief",
+   "published": "2026-10-06T20:19:59+00:00",
+   "summary": "Host NLW weighs arguments for and against consumers paying for AI, citing that about 98% of US households have no AI subscription, and covers power-user spending, entertainment, and advertising.",
+   "category": "podcasts",
+   "score": 2.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
   }
  ],
  "digests": [

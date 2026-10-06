@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Point-Counterpoint-Consumers-Will-Never-Pay-for-AI-e3q16j9" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Point-Counterpoint: Consumers Will Never Pay for AI" loading="lazy">
+  <span class="video-card-title">Point-Counterpoint: Consumers Will Never Pay for AI</span>
+  <span class="video-card-meta">The AI Daily Brief, October 6, 2026</span>
+  <span class="video-card-desc">Host NLW weighs arguments for and against consumers paying for AI, citing that about 98% of US households have no AI subscription, and covers power-user spending, entertainment, and advertising.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Companies-Want-AI-They-Can-Own-e3pv4le" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Why Companies Want AI They Can Own" loading="lazy">
   <span class="video-card-title">Why Companies Want AI They Can Own</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">Is AI Helping Students Perform, or Actually Learn?</span>
   <span class="video-card-meta">AI in Education Podcast, August 13, 2026</span>
   <span class="video-card-desc">Discussion of whether AI improves student performance versus learning, EU transparency requirements, and AI watermarking for detection reliability.</span>
-</a>
-<a class="video-card" href="https://www.cognitiverevolution.ai/thinking-in-silico-goodfire-cto-dan-balsam-on-concept-manifolds-a-1000-month-ml-research-agent" target="_blank" rel="noopener">
-  <img src="https://megaphone.imgix.net/podcasts/425d0b1a-9364-11f1-89b7-8f18e1951ec7/image/a013bf9d538b3f904596d5dc68137112.jpg?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent" loading="lazy">
-  <span class="video-card-title">Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent</span>
-  <span class="video-card-meta">The Cognitive Revolution, August 8, 2026</span>
-  <span class="video-card-desc">Goodfire CTO discusses interpretability research advances and a research platform using concept manifolds to guide language model development.</span>
 </a>
 </div>

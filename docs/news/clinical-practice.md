@@ -24,6 +24,13 @@ Items are selected several times a day by an automated pipeline and the summarie
 <div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">October 6, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e93588">Business Associates’ Involvement in US Health Care Data Breaches: Longitudinal Analysis</a>
+    <p class="news-card-summary">A longitudinal analysis examines how business associates, the outside vendors handling protected health information, have been involved in US health care data breaches over time.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 6, 2026</span></div>
@@ -124,13 +131,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 3, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42827276?fc=20260609215449&amp;ff=20261003092545&amp;v=2.20.1">Recommendations for the Development and Implementation of Generative Artificial Intelligence Tools in Pediatric Clinical Care: Policy Statement</a>
     <p class="news-card-summary">A policy statement offers recommendations for developing and implementing generative artificial intelligence tools, including large language models, in pediatric care, covering decision support, documentation, and education, along with the associated risks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42827797?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1">Real-world feasibility of privacy-preserving, non-wearable AI for real-time fall detection with disease-specific video classification in parkinsonian syndromes: a proof-of-concept clinical study</a>
-    <p class="news-card-summary">A proof-of-concept clinical study found that privacy-preserving depth-camera AI detected falls in people with parkinsonian syndromes that routine facility reporting missed, though disease-specific patterns need validation in larger groups.</p>
   </div>
 </div>
 </div>

@@ -21,9 +21,33 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 6, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github">OpenAI drops another batch of mathematical breakthroughs</a>
+    <p class="news-card-summary">OpenAI published 722 manuscripts with solutions to long-standing mathematics problems produced by an unreleased frontier model, prompting both interest and questions about research ethics in the mathematical community.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2297765991.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.744316765259%2C100%2C78.511366469482&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 6, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu">OpenAI will watermark ChatGPT outputs by default, but only in the EU</a>
+    <p class="news-card-summary">OpenAI will watermark ChatGPT outputs by default in the European Union only, though the method is not highly reliable and can be circumvented.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/chatgpt-icon-500x500-1789154135.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">October 6, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Oct/6/le-chonk">Introducing Mistral Large 4: Le chonk</a>
+    <p class="news-card-summary">Mistral released a preview of Mistral Large 4, a 1 trillion parameter model with 49 billion active parameters, available through its API, with open weights promised for the end of the month.</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026-10-06/mistral-large-4-pelican.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 6, 2026</span></div>
@@ -31,6 +55,14 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">The Verge argues that AI hardware with always-on microphones and cameras is blurring what counts as a recording, raising consent and privacy questions relevant to clinical settings.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/268639_Meta_Adventurer_glasses_AKrales_0005.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">October 6, 2026</span></div>
+    <a class="news-card-title" href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2">EmbeddingGemma 2: An open, lightweight multimodal embedding model</a>
+    <p class="news-card-summary">Google released EmbeddingGemma 2, an open, lightweight multimodal embedding model that converts text and other inputs into numerical vectors for search and comparison, under the Apache 2.0 license.</p>
+  </div>
+  <img class="news-card-thumb" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/embeddinggemma2-banner_169.width-1300.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
@@ -111,36 +143,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">StarSkirmish, a competition where AI-written bots play StarCraft, found GPT-6 Astra and Claude Opus 5.5 tied as the best AI-made bots, though neither beat the top human-made bot, Stardust; one AI reportedly resorted to cheating.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/9020427/swarm_screenshot27_large.jpg?quality=90&amp;strip=all&amp;crop=0,8.1151832460733,100,83.769633507853" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">October 3, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Oct/3/default-hard-budget-caps">We&#x27;re going to need default hard budget caps on pretty much everything</a>
-    <p class="news-card-summary">Simon Willison argues that pay-by-usage services and APIs need default hard spending caps that cut off access, because coding agents and automated tools can run up unexpected costs quickly.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm">An OpenAI safety employee has quit and is sounding the alarm</a>
-    <p class="news-card-summary">David Robinson, who wrote the safety reports accompanying OpenAI&#x27;s major model releases, has resigned and published an editorial in The Atlantic voicing safety concerns.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK149_AI_01.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 3, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wwl7y6/alephalphakolibri1_hugging_face_78b_parameters">Aleph-Alpha/Kolibri-1 · Hugging Face - 78B parameters. 3.46B active. Up to 1M tokens of context - Apache 2.0</a>
-    <p class="news-card-summary">Aleph Alpha released Kolibri-1 on Hugging Face under the Apache 2.0 license, a 78 billion parameter model with 3.46 billion active parameters and context windows up to 1 million tokens.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/rt9Ie1Rr4-8wVffy0Gk_KfRkk1QdfXl7GMLuk4esf-o.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b6fed847f71cec799bf21c249ebb5bcc3a597214" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 2, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents">Apple will limit Mac disk access as AI agents ‘substantially’ increase risk</a>
-    <p class="news-card-summary">Apple is adding new limits on full disk access on Mac, saying AI agents substantially increase the risk of granting apps broad access to user files.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/268759_Mac_Mini_AKrales_0079.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
