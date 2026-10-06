@@ -80,7 +80,7 @@ This site sets no cookies and runs no advertising scripts. Page fonts load from 
 
 This site is informational. Summaries of news, videos, and podcasts are machine-written and can contain errors, so the linked sources are the reference. Listings on this site are not endorsements, and benchmark scores are not purchasing advice. Nothing here is clinical guidance or legal advice.
 
-## The Maintainer
+## The Maintainer: Dr. Tarron Kayalackakom {: #the-maintainer }
 
 <div class="maintainer-card">
 <img class="maintainer-photo" src="../assets/profile.jpg" alt="Portrait of Dr. Tarron Kayalackakom">
