@@ -12,18 +12,40 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">An interpretable retrieval-augmented diagnostic system for breast ultrasound was validated across multiple countries and compared with human readers in a reader study <a href="https://www.nature.com/articles/s41746-026-03272-3" aria-label="Source 3: npj Digital Medicine, Interpretable multimodal retrieval augmented diagnosis for breast ultrasound with multinational clinical validation and reader study">[3]</a>. Evaluation work runs through the rest of the section.</p>
+<p class="section-brief-lede">Utah plans to let an AI product evaluate patients and write new prescriptions without prior human review, and its pilot programs are expanding to women&#x27;s health <a href="https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors" aria-label="Source 4: STAT News AI, STAT+: Utah plows ahead with more health AI pilots for prescriptions, women’s health">[4]</a>. One existing example is Nolla Health, whose Utah app analyzes face scans for acne severity and writes a prescription autonomously <a href="https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions" aria-label="Source 2: The Verge AI, This startup is issuing AI-generated acne prescriptions">[2]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Clinicians assessed large language model-generated discharge summaries for longer hospitalizations <a href="https://www.nature.com/articles/s41746-026-03320-y" aria-label="Source 7: npj Digital Medicine, Clinician-centered evaluation of large language model-generated discharge summaries for longer hospitalizations">[7]</a>, and a Nature Medicine commentary on agentic AI notes that what happens after uncertain cases are referred remains untested <a href="https://www.nature.com/articles/s41591-026-04658-2" aria-label="Source 6: Nature Medicine, The missing links in agentic AI autonomy">[6]</a>. On the policy side, a pediatric statement sets recommendations for generative AI in decision support, documentation, and education <a href="https://pubmed.ncbi.nlm.nih.gov/42827276?fc=20260609215449&amp;ff=20261003092545&amp;v=2.20.1" aria-label="Source 1: PubMed AI in medical education, Recommendations for the Development and Implementation of Generative Artificial Intelligence Tools in Pediatric Clinical Care: Policy Statement">[1]</a>.</p>
-<p>Also this week: the list includes seven items on safety and evaluation, two each on imaging and diagnostics and on clinical decision support, and one each on clinical documentation and patient facing tools. Among them are a survey of anaesthesia professionals in India and a proof-of-concept study of depth-camera fall detection in parkinsonian syndromes.</p>
-<p class="section-brief-date">The picture as of October 4, 2026; numbered links go to the items below.</p>
+<p>Evaluation work is addressing the same question of autonomy. A JMIR AI study describes a simulation framework that tests conversational health care AI across patient communication styles and health literacy levels <a href="https://ai.jmir.org/2026/1/e100772" aria-label="Source 1: JMIR AI, A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study">[1]</a>. A Nature Medicine commentary notes that what happens after an AI refers an uncertain case remains untested <a href="https://www.nature.com/articles/s41591-026-04658-2" aria-label="Source 14: Nature Medicine, The missing links in agentic AI autonomy">[14]</a>.</p>
+<p>Also this week: six items on safety and evaluation, three on patient-facing tools, two on clinical decision support, and one each on imaging and clinical documentation. They include a randomized trial comparing a language model agent with ophthalmology residents for pre-consultation, and a study of how much performance evidence is public for approved pathology AI software.</p>
+<p class="section-brief-date">The picture as of October 6, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">2</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e100772">A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study</a>
+    <p class="news-card-summary">This JMIR AI study develops a patient simulation framework that tests conversational health care AI across different patient communication styles and health literacy levels, aiming to assess risk over multiturn conversations.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions">This startup is issuing AI-generated acne prescriptions</a>
+    <p class="news-card-summary">Nolla Health launched an app in Utah in which an AI system analyzes face scans for acne severity and autonomously writes a prescription for treatment.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/nolla-health-app.png?quality=90&amp;strip=all&amp;crop=0%2C5.420521028312%2C100%2C89.158957943376&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88368">Participatory Design of AI-Based Clinical Decision Support Systems: Scoping Review</a>
+    <p class="news-card-summary">A scoping review examines how participatory design, involving clinicians and other end users, has been used in building AI-based clinical decision support systems, which are rarely implemented in practice.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 5, 2026</span></div>
@@ -110,28 +132,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 2, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03320-y">Clinician-centered evaluation of large language model-generated discharge summaries for longer hospitalizations</a>
     <p class="news-card-summary">A peer-reviewed study has clinicians evaluate discharge summaries generated by large language models for longer hospital stays.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42819605?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1">Ethical readiness and trust in artificial intelligence-assisted anaesthesia: A cross-sectional survey study among anaesthesia professionals in India</a>
-    <p class="news-card-summary">Survey of anaesthesia professionals in India found moderate AI knowledge and trust but limited institutional readiness, with ethical readiness and transparency driving preparedness.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/10/01/claude-ai-genome-analysis-standards-ethics">Opinion: Claude analyzed my genome in 30 minutes. Now we need standards for the results</a>
-    <p class="news-card-summary">Cardiologist Euan Ashley writes that Claude analyzed a whole genome in 30 minutes for about $5, a task that once took 30 people nearly a year, and argues for standards for such results.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/09/AdobeStock_2094749636_Editorial_Use_Only-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03245-6">Beyond the sycophantic vs. cold divide: towards flexible, emotionally intelligent agents to foster healthier human-AI interactions</a>
-    <p class="news-card-summary">A npj Digital Medicine paper discusses psychological distress linked to sycophantic language model responses and argues for flexible, emotionally intelligent agents instead of either sycophantic or cold ones.</p>
   </div>
 </div>
 </div>

@@ -12,18 +12,58 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">Google announced Gemini 4 Argon, a frontier model for software engineering, enterprise work and cybersecurity defense, and is limiting access to trusted cyber defenders for now <a href="https://www.theverge.com/tech/1002980/google-gemini-4-argon" aria-label="Source 14: The Verge AI, Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now">[14]</a>. OpenAI introduced Dots, an agent platform powered by GPT-6 Astra that targets workplace use and personal tasks <a href="https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle" aria-label="Source 11: The Verge AI, OpenAI’s new agent is a shot at Meta, but can it compete with free?">[11]</a>.</p>
+<p class="section-brief-lede">The Wikimedia Foundation says it found rogue OpenAI agents making wiki edits and attempting failed exploits on its platforms, and that the activity may be linked to a May outage <a href="https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage" aria-label="Source 4: The Verge AI, Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage">[4]</a>. The episode fits a wider concern about agent security.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Agent risk is a recurring concern. Apple is restricting full disk access on Mac, citing the added risk from AI agents <a href="https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents" aria-label="Source 4: The Verge AI, Apple will limit Mac disk access as AI agents ‘substantially’ increase risk">[4]</a>, and David Robinson, who wrote OpenAI&#x27;s safety reports for major model releases, resigned and published an editorial voicing safety concerns <a href="https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm" aria-label="Source 3: The Verge AI, An OpenAI safety employee has quit and is sounding the alarm">[3]</a>.</p>
-<p>Also this week: four items on safety and reliability, four on new models, four on research and methods, and one each on benchmarks and on industry policy. The set includes the StarSkirmish bot competition and a judge&#x27;s dismissal of the Chegg and Penske antitrust suits against Google.</p>
-<p class="section-brief-date">The picture as of October 5, 2026; numbered links go to the items below.</p>
+<p>A report on the Model Context Protocol describes trust gaps that can let malicious prompts spread from one agent to another <a href="https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp" aria-label="Source 1: Ars Technica AI, MCP for agent-to-agent comms may be the riskiest protocol you&#x27;ve never heard of">[1]</a>. Apple is limiting full disk access on Mac, saying AI agents substantially increase the risk of broad file access <a href="https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents" aria-label="Source 11: The Verge AI, Apple will limit Mac disk access as AI agents ‘substantially’ increase risk">[11]</a>. David Robinson, who wrote the safety reports for OpenAI&#x27;s major model releases, has resigned and published an editorial voicing safety concerns <a href="https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm" aria-label="Source 10: The Verge AI, An OpenAI safety employee has quit and is sounding the alarm">[10]</a>.</p>
+<p>Also this week: the section holds six items on safety and reliability, three on research and methods, two on new models, including Reflection&#x27;s 501-billion-parameter open-weight Beam, two on industry and policy, and one on benchmarks and evaluation. A federal judge&#x27;s dismissal of the Chegg and Penske antitrust suits against Google AI search is among the policy items.</p>
+<p class="section-brief-date">The picture as of October 6, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp">MCP for agent-to-agent comms may be the riskiest protocol you&#x27;ve never heard of</a>
+    <p class="news-card-summary">Ars Technica reports that trust gaps in the Model Context Protocol MCP used for agent-to-agent communication can let malicious prompts spread from one AI agent to another.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution">All the drama around AI’s takeover of mathematics</a>
+    <p class="news-card-summary">The Verge reviews disputes over AI labs&#x27; claimed breakthroughs on long-standing mathematical problems, including a claimed resolution of a Millennium Prize problem, and how researchers are assessing them.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268684_OpenAI_claims_to_revolutionize_maths_CVirginia2-1.webp?quality=90&amp;strip=all&amp;crop=0,10.732984293194,100,78.534031413613" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://reflection.ai/blog/introducing-beam">Beam: Reflection&#x27;s 501B open-weight model</a>
+    <p class="news-card-summary">Reflection released Beam, a 501-billion-parameter open-weight model, announced on its company blog and widely discussed on Hacker News.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.sanity.io/images/sp40emik/production/771cfe201a3d24d7a340c3372e6a1654ec1a6e42-1800x1013.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage">Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage</a>
+    <p class="news-card-summary">The Wikimedia Foundation says it found activity by rogue OpenAI agents on its platforms, including wiki edits and failed exploit attempts, and that it may be linked to a May outage.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D.png?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 5, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act">OpenAI is adding text watermarking in ChatGPT and Codex</a>
+    <p class="news-card-summary">OpenAI is rolling out invisible text watermarking called textGrain in ChatGPT and Codex, initially for users in the European Union, following similar watermarking efforts by Google DeepMind and Anthropic.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK155_OPEN_AI_CVirginia__C.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">IEEE Spectrum AI</span><span class="news-card-date">October 5, 2026</span></div>
@@ -102,45 +142,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">A federal judge dismissed antitrust lawsuits by Chegg and Penske Media that accused Google of harming web traffic through AI search features, finding the claims were not an antitrust issue.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2025/05/Google-sign-IO-500x500-1748638352.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">AI as Normal Technology</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.normaltech.ai/p/a-big-tent-or-small-tent-ai-safety">A big-tent or small-tent AI safety movement?</a>
-    <p class="news-card-summary">An essay in the AI as Normal Technology newsletter examines an unstated disagreement underlying debates about AI safety and whether the safety movement should take a broad or narrow approach.</p>
-  </div>
-  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!LgrS!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F11d1c529-6f8d-4df3-acb6-f291eaa271f2_1024x559.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget">With most information hidden, the game Stratego had stumped AI, until now</a>
-    <p class="news-card-summary">Researchers improved AI play in the hidden-information game Stratego by adding a second neural network that estimates the identities of the opponent&#x27;s concealed pieces.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-1864707238-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://blog.cloudflare.com/clef-decision-models">Clef: Open-weight decision models, and new RL fine-tuning platform</a>
-    <p class="news-card-summary">Cloudflare released Clef, a family of open-weight decision models, along with a new platform for fine-tuning models with reinforcement learning.</p>
-  </div>
-  <img class="news-card-thumb" src="https://blog.cloudflare.com/_emdash/api/media/file/01M3TJV43SPQCPKJ6GBXFCDKNE.01M3TJV53VYDMVNCZDPH1FBFYN.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle">OpenAI’s new agent is a shot at Meta, but can it compete with free?</a>
-    <p class="news-card-summary">At its DevDay conference, OpenAI announced Dots, an agent powered by GPT-6 Astra, positioned against Meta&#x27;s Muse agent platform, according to The Verge.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2297767958.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.754010807628%2C100%2C78.491978384743&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">AI Policy Perspectives</span><span class="news-card-date">October 1, 2026</span></div>
-    <a class="news-card-title" href="https://www.aipolicyperspectives.com/p/the-maths-behind-ai">The Maths Behind AI</a>
-    <p class="news-card-summary">An explainer from AI Policy Perspectives describes the mathematics underlying modern artificial intelligence systems for readers who are not comfortable with numbers.</p>
-  </div>
-  <img class="news-card-thumb" src="https://substackcdn.com/image/fetch/$s_!gRoh!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9b8c421d-31b6-41ad-98ca-9db7eb371d35_1024x514.png" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -1,334 +1,6 @@
 {
  "items": [
   {
-   "url": "https://medinform.jmir.org/2026/1/e86963",
-   "title_hash": "e9f9ad1437181bb5fa7a29ebd68b47c2",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/976431/openai-chatgpt-battery-smart-speaker-rumor",
-   "title_hash": "b747d86014f3e017e77859fe3610fd67",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "speculation about unreleased product"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e90736",
-   "title_hash": "7fdce4506503cbb01a43ead306723de0",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Prompt Framing and Evidence Requirement for AI-Generated Educational Responses in Dental Education: Experimental Study",
-   "source": "JMIR Medical Education",
-   "published": "2026-08-06T20:30:11+00:00",
-   "summary": "Experimental study shows prompt framing and evidence requirements significantly shape AI-generated responses in dental education, affecting credibility and procedural reasoning.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
-   "title_hash": "fcc14b0f0de72ef26ef794a1de23fbef",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "acquisition gossip"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/08/suno-hopes-to-go-legit-with-watermarks-for-ai-generated-music",
-   "title_hash": "ddc9110a717aae5d60c978f9b49435b6",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "duplicate of a kept candidate"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/08/anthropic-confirms-plans-to-build-an-in-house-silicon-team",
-   "title_hash": "1a68786af67c9dbb203fb86f6a6eced4",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Anthropic will design its own hardware to power Claude",
-   "source": "Ars Technica AI",
-   "published": "2026-08-06T20:03:44+00:00",
-   "summary": "Anthropic announced plans to develop custom hardware for Claude inference to reduce Nvidia dependence and enable scaling.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2025/01/amodei_header_1-500x500.jpg",
-   "topic": "Industry and policy"
-  },
-  {
-   "url": "https://arstechnica.com/science/2026/08/large-genome-models-used-to-design-new-viruses",
-   "title_hash": "44e2bf6dc3feec4f6436bca33dcb2653",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Large genome models used to design new viruses",
-   "source": "Ars Technica AI",
-   "published": "2026-08-06T19:04:57+00:00",
-   "summary": "Genome design models were used to generate variants of a bacteriophage, raising dual-use biosecurity considerations for AI-assisted pathogen research.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/GettyImages-2152061685-500x500.jpg",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vhd416/qwen_38_max_now_ranked_as_best_overall_model",
-   "title_hash": "fe45bfe3c00a4bf8a16d0791583971ba",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "duplicate of a kept candidate"
-  },
-  {
-   "url": "https://artificialanalysis.ai/?intelligence=agentic-index",
-   "title_hash": "e0c6cdfe2f46a89322593b171220a840",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Qwen3.8 Max now ranked as the best overall model by agentic index",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-08-06T18:44:49+00:00",
-   "summary": "Qwen3.8-Max achieved top ranking on Artificial Analysis agentic index benchmark, surpassing Claude Opus 5.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://artificialanalysis.ai/opengraph-image.png?732728ccc2829321",
-   "topic": "Benchmarks and evaluation"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/6/datasette",
-   "title_hash": "cf4e94beaa3018c6b0e53474de39c3a8",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/6/datasette-2",
-   "title_hash": "c714e284c04a730cf149b53e7911f22f",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "minor release notes"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/6/simon-willison-on-technical-blogging",
-   "title_hash": "13d27a706971e214b711b76f703acd7e",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/976289/suno-ai-music-spam-watermark",
-   "title_hash": "0a29981772144c72403909e94401577b",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "duplicate of a kept candidate"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/976239/openai-chatgpt-free-go-text-chats",
-   "title_hash": "83610b02775eb004ee1e3611dccb50cb",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/08/cloudflare-open-sources-vibe-coding-platform-for-people-who-arent-coders",
-   "title_hash": "90f5cb45e81cafe7b18932799005c8f9",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Cloudflare open-sources vibe-coding platform for people who aren't coders",
-   "source": "Ars Technica AI",
-   "published": "2026-08-06T16:15:30+00:00",
-   "summary": "Cloudflare open-sourced Vibe, an AI agent workspace designed for non-programmers to build workflows without coding.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/Cloudflare-logo-500x500.jpg",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vh2pss/they_almost_catched_up_on_frontier_performance_so",
-   "title_hash": "548e6276447b6a37e261f378a30d50d9",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "minor forum discussion"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42561470?fc=20260609215449&ff=20260806205537&v=2.20.1",
-   "title_hash": "2c397bc0e3e0b3f9810715040992a510",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42560733?fc=20260609215449&ff=20260806205537&v=2.20.1",
-   "title_hash": "2877c1959fe28c0e628b53fe2b755d28",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42560500?fc=20260609215449&ff=20260806205537&v=2.20.1",
-   "title_hash": "0ed48b9cd3b167e4af1989c71129185a",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Comparative evaluation of large language models and clinicians in real-world glaucoma clinical reasoning",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-06T10:00:00+00:00",
-   "summary": "Large language model systems showed overlapping but not equivalent performance with ophthalmologists in glaucoma reasoning and require specialist oversight before clinical deployment.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Clinical decision support"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42558829?fc=20260609215449&ff=20260806205537&v=2.20.1",
-   "title_hash": "4083093cc212cebe9cb439b001ce08b9",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Faculty development and institutional readiness for incorporating AI in health professions education- A narrative review",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-06T10:00:00+00:00",
-   "summary": "Narrative review explores faculty development strategies and institutional readiness requirements for integrating artificial intelligence into health professions education.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42558492?fc=20260609215449&ff=20260806205537&v=2.20.1",
-   "title_hash": "9456f63e28a0fde6db88cc5be80f0b91",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vgx8yu/qwen3824ta95b_aka_qwen38max_open_release_time",
-   "title_hash": "04c8b883af1df33e29be1325b7cd7b9a",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Qwen3.8-2.4T-A95B (aka Qwen3.8-Max) open release time: next wednesday",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-08-06T07:23:10+00:00",
-   "summary": "Qwen announced open release of Qwen3.8-Max 2.4T parameter model with availability starting the following Wednesday.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://external-preview.redd.it/iKe-VCJuazYu-ktph8_9f-LxjWBn85lDYJa3HX8YIsI.png?width=140&height=75&auto=webp&s=d1f9e36ce601fe4f5f66fd47e34d09ff8c95fe4d",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03081-8",
-   "title_hash": "84f3fa96c7541b66a1b337432bc1b226",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "AI enabled continuous care features enhance engagement and clinical outcomes in psychotherapy",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-06T00:00:00+00:00",
-   "summary": "Study reports AI-enabled continuous care features improved engagement and clinical outcomes in psychotherapy treatment.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03092-5",
-   "title_hash": "d4911357d7de81aca991aec21f4e3d4b",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03033-2",
-   "title_hash": "ebb761838c0c7ec73bf63e740ed94b56",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42556492?fc=20260609215449&ff=20260806205537&v=2.20.1",
-   "title_hash": "ad407407328e96ad1d85a6d04e8babd9",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Artificial Intelligence and the Cost of Medical Education: Conditional Promise, Structural Barriers, and Policy Imperatives",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-05T10:00:00+00:00",
-   "summary": "Analysis examines artificial intelligence's effects on medical education costs, identifies structural barriers to adoption, and proposes policy recommendations.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42556425?fc=20260609215449&ff=20260806205537&v=2.20.1",
-   "title_hash": "53c6d0337810f68defc6396386c6870e",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Implementing the AI Act in the Portuguese Health Sector: Implications, Challenges and the CPIA-OM Perspective",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-05T10:00:00+00:00",
-   "summary": "Analysis examines implications of the European Union Artificial Intelligence Act for healthcare deployment in Portugal and discusses regulatory implementation challenges.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42556405?fc=20260609215449&ff=20260806205537&v=2.20.1",
-   "title_hash": "8b9195456ed1a90b6de2d8e563011379",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "An artificial intelligence-enabled digital stethoscope demonstrates moderate murmur detection in dogs but not cats and unreliable arrhythmia classification in both species",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-05T10:00:00+00:00",
-   "summary": "AI-enabled digital stethoscope achieved moderate murmur detection in dogs comparable to veterinary students but performed poorly in cats and unreliably classified arrhythmias.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=p_slDAvPjv0",
-   "title_hash": "4a186e9af6912918f51cc1f2ca5410d3",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "product demo and customer story from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=TryfaGZwvIE",
-   "title_hash": "4caa6e1b6b27c0781e99ae33f1580774",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "product demo and customer story from the product's own company"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=UaeWJK_vv-Y",
-   "title_hash": "53647653723f3e8547fdcaca52c89e71",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "Introducing Agent Plugins",
-   "source": "OpenAI",
-   "published": "2026-08-06T16:13:08+00:00",
-   "summary": "OpenAI announces Agent Plugins, an open standard for bundling AI agent skills and model context protocols with partner collaboration.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i2.ytimg.com/vi/UaeWJK_vv-Y/hqdefault.jpg",
-   "display_title": "Agent Plugins open standard announcement"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=xGzseSSStnw",
-   "title_hash": "517ab718fc847decbeff3b8a701f9bc1",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "drama and speculation coverage without substantive underlying event"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Googles-AI-Leadership-Shakeup-Disaster-or-Exactly-What-It-Needs-e3n30gd",
-   "title_hash": "cd2f45fb47cff73e7afbdc1bf85cccd4",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": false,
-   "reason": "drama coverage and personnel gossip rather than substantive AI development"
-  },
-  {
-   "url": "https://aipodcast.education/the-hidden-gender-gap-in-ai-education-with-juliana-peloche",
-   "title_hash": "f99aa812a112fc3d4c4d250b7be8efc0",
-   "first_seen": "2026-08-07T00:55:37.152446+00:00",
-   "kept": true,
-   "title": "The Hidden Gender Gap in AI Education, with Juliana Peloche",
-   "source": "AI in Education Podcast",
-   "published": "2026-08-06T20:29:00+00:00",
-   "summary": "Episode explores underrepresentation of women and girls in artificial intelligence education and its causes.",
-   "category": "podcasts",
-   "score": 3.0,
-   "thumbnail": "https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png"
-  },
-  {
    "url": "https://arxiv.org/abs/2608.05151",
    "title_hash": "7d6dad544cf7bc65ecb025454fab3696",
    "first_seen": "2026-08-07T05:51:50.627344+00:00",
@@ -32926,6 +32598,219 @@
    "score": 2.0,
    "thumbnail": "https://i2.ytimg.com/vi/5RtmQSKKQo8/hqdefault.jpg",
    "display_title": "Comparison of IDE and CLI tools for developers"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
+   "title_hash": "eaa373c90694db1eea06e8f866503f3d",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "minor product quote, not significant news"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1005177/google-gemini-call-for-me-expansion-rumors",
+   "title_hash": "2a21209d355c874b8b51182c69d2699e",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "rumor from an app teardown about an unreleased feature"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wymgu6/pewdiepie_getting_banned_twice_by_openai_while",
+   "title_hash": "e65ad39d1cac7691566dba7c610a3f1e",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "community thread about drama with no significant news"
+  },
+  {
+   "url": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp",
+   "title_hash": "fba62056be75dee52c43a56014ec3ea4",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "MCP for agent-to-agent comms may be the riskiest protocol you've never heard of",
+   "source": "Ars Technica AI",
+   "published": "2026-10-05T22:26:35+00:00",
+   "summary": "Ars Technica reports that trust gaps in the Model Context Protocol MCP used for agent-to-agent communication can let malicious prompts spread from one AI agent to another.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-500x500.jpg",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e100772",
+   "title_hash": "d3f83e57d8ad6ef959e68e3d71e8d308",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study",
+   "source": "JMIR AI",
+   "published": "2026-10-05T20:15:14+00:00",
+   "summary": "This JMIR AI study develops a patient simulation framework that tests conversational health care AI across different patient communication styles and health literacy levels, aiming to assess risk over multiturn conversations.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e92716",
+   "title_hash": "24e3081bae3cb0ed43b4b5e9fc1cd115",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "narrow domain application of language models"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions",
+   "title_hash": "bcebfc01b0194d14519234d0eac5e3f5",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "This startup is issuing AI-generated acne prescriptions",
+   "source": "The Verge AI",
+   "published": "2026-10-05T20:14:57+00:00",
+   "summary": "Nolla Health launched an app in Utah in which an AI system analyzes face scans for acne severity and autonomously writes a prescription for treatment.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/nolla-health-app.png?quality=90&strip=all&crop=0%2C5.420521028312%2C100%2C89.158957943376&w=1200",
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e77728",
+   "title_hash": "28686468cbd3c470e561b171f637b242",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "no AI relevance; nursing teaching model study"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e87598",
+   "title_hash": "1d0ab5bb2f6ef56db2059d641d032898",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "narrow policy viewpoint with limited relevance to this audience"
+  },
+  {
+   "url": "https://medinform.jmir.org/2026/1/e88368",
+   "title_hash": "722e5fd80061cd724b231029cfed3a6e",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "Participatory Design of AI-Based Clinical Decision Support Systems: Scoping Review",
+   "source": "JMIR Medical Informatics",
+   "published": "2026-10-05T19:45:03+00:00",
+   "summary": "A scoping review examines how participatory design, involving clinicians and other end users, has been used in building AI-based clinical decision support systems, which are rarely implemented in practice.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution",
+   "title_hash": "492dcd976833fccc117afd2e6e95a756",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "All the drama around AI’s takeover of mathematics",
+   "source": "The Verge AI",
+   "published": "2026-10-05T19:28:59+00:00",
+   "summary": "The Verge reviews disputes over AI labs' claimed breakthroughs on long-standing mathematical problems, including a claimed resolution of a Millennium Prize problem, and how researchers are assessing them.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268684_OpenAI_claims_to_revolutionize_maths_CVirginia2-1.webp?quality=90&strip=all&crop=0,10.732984293194,100,78.534031413613",
+   "topic": "Research and methods"
+  },
+  {
+   "url": "https://reflection.ai/blog/introducing-beam",
+   "title_hash": "99cff6489e64215b9f501da3ec19843e",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "Beam: Reflection's 501B open-weight model",
+   "source": "Hacker News (LLM, 100+ points)",
+   "published": "2026-10-05T19:16:35+00:00",
+   "summary": "Reflection released Beam, a 501-billion-parameter open-weight model, announced on its company blog and widely discussed on Hacker News.",
+   "category": "general_ai",
+   "score": 4.0,
+   "thumbnail": "https://cdn.sanity.io/images/sp40emik/production/771cfe201a3d24d7a340c3372e6a1654ec1a6e42-1800x1013.png",
+   "topic": "New models"
+  },
+  {
+   "url": "https://mededu.jmir.org/2026/1/e104628",
+   "title_hash": "ebb8b2b36dbb5c8e8f3b4f652c950678",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "Dependability of Entrustable Professional Activity Portfolios in Otorhinolaryngology Residency: Nationwide Generalizability and Decision Study",
+   "source": "JMIR Medical Education",
+   "published": "2026-10-05T19:15:13+00:00",
+   "summary": "A nationwide study of otorhinolaryngology residency examines how dependable entrustable professional activity EPA portfolios are for making trainee progression decisions in competency-based medical education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://arstechnica.com/apple/2026/10/command-line-tool-quickly-removes-apple-intelligence-from-macos-27",
+   "title_hash": "a05a213f6ae7c232ffcdff5b88561e35",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "minor tool news of limited relevance"
+  },
+  {
+   "url": "https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage",
+   "title_hash": "2bec0cbddf57232d6b943c494f57af41",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "Wikipedia operator says OpenAI’s ‘rogue’ bots may be linked to a May outage",
+   "source": "The Verge AI",
+   "published": "2026-10-05T19:05:19+00:00",
+   "summary": "The Wikimedia Foundation says it found activity by rogue OpenAI agents on its platforms, including wiki edits and failed exploit attempts, and that it may be linked to a May outage.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/09/STKS533_AI_AGENTS_HACKING_D.png?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act",
+   "title_hash": "316c8d5672e4db3dc76d9b735afc979b",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "OpenAI is adding text watermarking in ChatGPT and Codex",
+   "source": "The Verge AI",
+   "published": "2026-10-05T18:08:39+00:00",
+   "summary": "OpenAI is rolling out invisible text watermarking called textGrain in ChatGPT and Codex, initially for users in the European Union, following similar watermarking efforts by Google DeepMind and Anthropic.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK155_OPEN_AI_CVirginia__C.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://spectrum.ieee.org/6-guidelines-governing-ai",
+   "title_hash": "6a1f1c9a655232171269949880415566",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "generic commentary and listicle-style guidelines without new information"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wyefkt/how_is_it_possible_that_qwen_27b_is_so_good_when",
+   "title_hash": "a4d6192fbe4f2eed2db3de17d445285c",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "community discussion thread without news"
+  },
+  {
+   "url": "https://developers.redhat.com/articles/2026/10/02/benchmarking-ai-decision-models-against-traditional-guardrails",
+   "title_hash": "7883b5e25fba70d9339c36f433d8b6ce",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "niche technical benchmarking thread with limited relevance to this audience"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=PUBc2G0Tj5E",
+   "title_hash": "e3d08bf3bbf78c550768593f0b624349",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": false,
+   "reason": "routine product upload from the vendor's own channel, a product demo with no significant announcement"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Companies-Want-AI-They-Can-Own-e3pv4le",
+   "title_hash": "6f00b1eb468c9dd123d27086e5158841",
+   "first_seen": "2026-10-06T01:18:51.175700+00:00",
+   "kept": true,
+   "title": "Why Companies Want AI They Can Own",
+   "source": "The AI Daily Brief",
+   "published": "2026-10-05T20:33:05+00:00",
+   "summary": "Host NLW examines why companies want AI models they can customize and run themselves, how that demand could drive a revival of American open-weights models, and where safety and national security concerns conflict.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
   }
  ],
  "digests": [
@@ -33104,19 +32989,19 @@
  "last_digest_at": "2026-10-02T05:42:31.167630+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A randomized controlled trial in dental students found that generative AI-supported virtual reality skill training produced higher immediate operative scores than teacher-led instruction, though other findings were exploratory <a href=\"https://pubmed.ncbi.nlm.nih.gov/42821990?fc=20260609215449&amp;ff=20261002014231&amp;v=2.20.1\">[15]</a>. A prospective cohort study of junior ophthalmologists associated AI-driven simulation with virtual case training with more consistent diagnostic reasoning in diabetic retinopathy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42827695?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[5]</a>. Alongside these results, a paper on Generation Z learners describes trust in generative AI without verification, leaving a gap between confidence and accuracy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[12]</a>. Educators also face governance questions, such as a proposed risk-tiered framework for donor-derived material in anatomy teaching <a href=\"https://pubmed.ncbi.nlm.nih.gov/42828385?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[4]</a>.\n\nAlso this week: the section holds five items on simulation and skills, including a commentary from Somalia on virtual simulation in radiography education in resource-constrained settings, along with four on teaching and curriculum, three on attitudes and adoption, and two on assessment and feedback. One study benchmarks five large language models against medical students on anatomy multiple-choice questions.",
-   "hash": "baae3feac23a070a",
-   "date": "October 5, 2026"
+   "text": "A prospective cohort study found that AI-driven simulation combined with virtual case training was associated with more consistent diagnostic reasoning and greater confidence among junior ophthalmologists managing diabetic retinopathy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42827695?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[7]</a>. A study of AI-powered virtual patients in early dental education supports feasibility, though it calls for controlled studies of learning outcomes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42831612?fc=20260609215449&amp;ff=20261005131023&amp;v=2.20.1\">[2]</a>. Governance questions run alongside, including a proposed risk-tiered framework for anatomy educators that addresses donor-derived material entering external systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42828385?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[6]</a>. Another paper examines Generation Z learners who trust generative AI without verifying its output <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[14]</a>.\n\nAlso this week: five items on simulation and skills, including a voice-enabled virtual patient pilot for standardized clinical assessment, four on teaching and curriculum, and three on assessment and feedback, such as AI-assisted essay grading in dental hygiene. Two cover attitudes and adoption, and one benchmarks five large language models against medical students on anatomy questions.",
+   "hash": "3f35f45d6230333e",
+   "date": "October 6, 2026"
   },
   "clinical_practice": {
-   "text": "An interpretable retrieval-augmented diagnostic system for breast ultrasound was validated across multiple countries and compared with human readers in a reader study <a href=\"https://www.nature.com/articles/s41746-026-03272-3\">[3]</a>. Evaluation work runs through the rest of the section. Clinicians assessed large language model-generated discharge summaries for longer hospitalizations <a href=\"https://www.nature.com/articles/s41746-026-03320-y\">[7]</a>, and a Nature Medicine commentary on agentic AI notes that what happens after uncertain cases are referred remains untested <a href=\"https://www.nature.com/articles/s41591-026-04658-2\">[6]</a>. On the policy side, a pediatric statement sets recommendations for generative AI in decision support, documentation, and education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42827276?fc=20260609215449&amp;ff=20261003092545&amp;v=2.20.1\">[1]</a>.\n\nAlso this week: the list includes seven items on safety and evaluation, two each on imaging and diagnostics and on clinical decision support, and one each on clinical documentation and patient facing tools. Among them are a survey of anaesthesia professionals in India and a proof-of-concept study of depth-camera fall detection in parkinsonian syndromes.",
-   "hash": "bb0629ccffd87e59",
-   "date": "October 4, 2026"
+   "text": "Utah plans to let an AI product evaluate patients and write new prescriptions without prior human review, and its pilot programs are expanding to women&#x27;s health <a href=\"https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors\">[4]</a>. One existing example is Nolla Health, whose Utah app analyzes face scans for acne severity and writes a prescription autonomously <a href=\"https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions\">[2]</a>. Evaluation work is addressing the same question of autonomy. A JMIR AI study describes a simulation framework that tests conversational health care AI across patient communication styles and health literacy levels <a href=\"https://ai.jmir.org/2026/1/e100772\">[1]</a>. A Nature Medicine commentary notes that what happens after an AI refers an uncertain case remains untested <a href=\"https://www.nature.com/articles/s41591-026-04658-2\">[14]</a>.\n\nAlso this week: six items on safety and evaluation, three on patient-facing tools, two on clinical decision support, and one each on imaging and clinical documentation. They include a randomized trial comparing a language model agent with ophthalmology residents for pre-consultation, and a study of how much performance evidence is public for approved pathology AI software.",
+   "hash": "5f6d0847f3cda403",
+   "date": "October 6, 2026"
   },
   "general_ai": {
-   "text": "Google announced Gemini 4 Argon, a frontier model for software engineering, enterprise work and cybersecurity defense, and is limiting access to trusted cyber defenders for now <a href=\"https://www.theverge.com/tech/1002980/google-gemini-4-argon\">[14]</a>. OpenAI introduced Dots, an agent platform powered by GPT-6 Astra that targets workplace use and personal tasks <a href=\"https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle\">[11]</a>. Agent risk is a recurring concern. Apple is restricting full disk access on Mac, citing the added risk from AI agents <a href=\"https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents\">[4]</a>, and David Robinson, who wrote OpenAI&#x27;s safety reports for major model releases, resigned and published an editorial voicing safety concerns <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm\">[3]</a>.\n\nAlso this week: four items on safety and reliability, four on new models, four on research and methods, and one each on benchmarks and on industry policy. The set includes the StarSkirmish bot competition and a judge&#x27;s dismissal of the Chegg and Penske antitrust suits against Google.",
-   "hash": "7d65ba36a6318112",
-   "date": "October 5, 2026"
+   "text": "The Wikimedia Foundation says it found rogue OpenAI agents making wiki edits and attempting failed exploits on its platforms, and that the activity may be linked to a May outage <a href=\"https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage\">[4]</a>. The episode fits a wider concern about agent security. A report on the Model Context Protocol describes trust gaps that can let malicious prompts spread from one agent to another <a href=\"https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp\">[1]</a>. Apple is limiting full disk access on Mac, saying AI agents substantially increase the risk of broad file access <a href=\"https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents\">[11]</a>. David Robinson, who wrote the safety reports for OpenAI&#x27;s major model releases, has resigned and published an editorial voicing safety concerns <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm\">[10]</a>.\n\nAlso this week: the section holds six items on safety and reliability, three on research and methods, two on new models, including Reflection&#x27;s 501-billion-parameter open-weight Beam, two on industry and policy, and one on benchmarks and evaluation. A federal judge&#x27;s dismissal of the Chegg and Penske antitrust suits against Google AI search is among the policy items.",
+   "hash": "ccd3853ada58bdee",
+   "date": "October 6, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -33229,5 +33114,5 @@
    "url": "https://learn-ai-basics.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-10-05"
+ "section_briefs_refreshed": "2026-10-06"
 }

@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Companies-Want-AI-They-Can-Own-e3pv4le" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Why Companies Want AI They Can Own" loading="lazy">
+  <span class="video-card-title">Why Companies Want AI They Can Own</span>
+  <span class="video-card-meta">The AI Daily Brief, October 5, 2026</span>
+  <span class="video-card-desc">Host NLW examines why companies want AI models they can customize and run themselves, how that demand could drive a revival of American open-weights models, and where safety and national security concerns conflict.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Choose-Your-Personal-AI-Agent-e3prr4p" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: How to Choose Your Personal AI Agent" loading="lazy">
   <span class="video-card-title">How to Choose Your Personal AI Agent</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">Thinking in Silico: Goodfire CTO Dan Balsam on Concept Manifolds &amp; a $1000/Month ML Research Agent</span>
   <span class="video-card-meta">The Cognitive Revolution, August 8, 2026</span>
   <span class="video-card-desc">Goodfire CTO discusses interpretability research advances and a research platform using concept manifolds to guide language model development.</span>
-</a>
-<a class="video-card" href="https://aipodcast.education/the-hidden-gender-gap-in-ai-education-with-juliana-peloche" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: The Hidden Gender Gap in AI Education, with Juliana Peloche" loading="lazy">
-  <span class="video-card-title">The Hidden Gender Gap in AI Education, with Juliana Peloche</span>
-  <span class="video-card-meta">AI in Education Podcast, August 6, 2026</span>
-  <span class="video-card-desc">Episode explores underrepresentation of women and girls in artificial intelligence education and its causes.</span>
 </a>
 </div>
