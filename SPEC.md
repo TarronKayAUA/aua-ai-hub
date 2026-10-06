@@ -685,6 +685,7 @@ Search engines and AI systems can find the site and tell its pages apart, with n
 - docs/google78918ccefa582835.html verifies the owner's Google Search Console property; Bing Webmaster Tools imported it. Neither it nor the IndexNow key file may be deleted or renamed.
 - robots.txt and a redirect for the bare host address live in a separate repository, TarronKayAUA/TarronKayAUA.github.io, because crawlers read robots.txt only at the host root. It allows everything and names the sitemap; a Disallow line there would hide Hub pages from search.
 - The repository's About panel links the site and carries topics.
+- Name association (owner request, 2026-10-06), so searches for the maintainer's name find the Hub: the five worked examples (his own first-person accounts) open their subtitle with a byline linking to the About page's maintainer section and set `author:` in front matter, which gives an author meta tag and an Article node crediting him in the JSON-LD. His Person node carries his About-page portrait and section, and his ResearchGate, ORCID and Google Scholar profiles as sameAs, all from mkdocs.yml `extra.maintainer_profiles` (profiles he supplies only), which also renders the visible "Profiles:" line in the maintainer card; the link check covers them. Every page allows large image previews. Google reads a site's icon and site name from the home page of the whole host, so the root repository's page declares the Hub's icon and the name "AUA AI Hub", and carries the Search Console verification for the root property.
 
 ## 13. Out of scope
 

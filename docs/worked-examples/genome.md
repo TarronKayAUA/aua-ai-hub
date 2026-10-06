@@ -5,7 +5,7 @@ author: Tarron Kayalackakom
 
 # The Neanderthal Gene That Explained Nothing
 
-<span class="meta-chip">Faculty & Students</span><span class="meta-chip">About 11 minutes</span> <span class="meta-note">By Tarron Kayalackakom. A worked example, on my own genotype file, with its limits set out at the end.</span>
+<span class="meta-chip">Faculty & Students</span><span class="meta-chip">About 11 minutes</span> <span class="meta-note">By [Tarron Kayalackakom](../about.md#the-maintainer). A worked example, on my own genotype file, with its limits set out at the end.</span>
 
 In August a paper landed that was, for me personally, almost too convenient to be believed.
 

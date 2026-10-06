@@ -666,6 +666,12 @@
   margin: 0;
 }
 
+/* The maintainer's profile links (2026-10-06), a quiet line under the bio. */
+.md-typeset .maintainer-bio p.maintainer-profiles {
+  margin-top: 0.6rem;
+  color: var(--md-default-fg-color--light);
+}
+
 @media screen and (max-width: 480px) {
   .maintainer-card {
     flex-direction: column;

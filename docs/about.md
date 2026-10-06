@@ -86,6 +86,7 @@ This site is informational. Summaries of news, videos, and podcasts are machine-
 <img class="maintainer-photo" src="../assets/profile.jpg" alt="Portrait of Dr. Tarron Kayalackakom">
 <div class="maintainer-bio">
 <p>The AUA AI Hub is curated and maintained by <strong>Dr. Tarron Kayalackakom</strong>, Associate Dean of Artificial Intelligence in Medical Education and Assistant Professor in the Education Enhancement Department at the American University of Antigua College of Medicine, and chair of the university's <a href="../governance/committee/">AI Committee</a>. Dr. Kayalackakom built this site to give the AUACOM community one reliable, plainly written place to follow a fast-moving field, and keeps its sources, tool entries, and guidance current on an ongoing basis.</p>
+<!-- render:maintainer-profiles -->
 </div>
 </div>
 

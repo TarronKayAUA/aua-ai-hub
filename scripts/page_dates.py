@@ -53,6 +53,7 @@ RENDER_SOURCES = {
     "learning-resources": ["data/learning_resources.yaml"],
     "guide-videos": ["data/guide_videos.yaml"],
     "glossary-az": [],   # built from the page's own entries
+    "maintainer-profiles": ["mkdocs.yml"],   # extra.maintainer_profiles
 }
 GENERATED_SOURCES = {re.compile(r"prompts/[\w-]+\.md"): ["data/prompts.yaml"]}
 
@@ -79,8 +80,10 @@ def _history(root: Path) -> tuple[dict[str, str] | None, str]:
         return None, "not a git checkout"
     if shallow.strip() == "true":
         return None, "shallow clone (the workflow checkout needs fetch-depth: 0)"
+    # mkdocs.yml too: the About page renders the maintainer's profile links
+    # from it (RENDER_SOURCES); only pages that name it as a source use its date.
     log = _git(root, "log", "--format=%x00%ct", "--name-only", "--no-renames",
-               "--", "docs", "data", "includes")
+               "--", "docs", "data", "includes", "mkdocs.yml")
     if log is None:
         return None, "git log failed"
     dates: dict[str, str] = {}
@@ -91,7 +94,7 @@ def _history(root: Path) -> tuple[dict[str, str] | None, str]:
         elif line and current and line not in dates:
             dates[line] = current
     status = _git(root, "status", "--porcelain", "--no-renames", "--untracked-files=all",
-                  "--", "docs", "data", "includes") or ""
+                  "--", "docs", "data", "includes", "mkdocs.yml") or ""
     today = get_build_date()
     for line in status.splitlines():
         dates[line[3:].strip('"')] = today

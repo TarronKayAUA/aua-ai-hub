@@ -12,6 +12,10 @@ Markers:
     <!-- render:last-updated -->  in docs/index.md (build date stamp; stays
                                   current because the site rebuilds nightly
                                   once the Phase 2 pipeline is live)
+    <!-- render:maintainer-profiles -->  in docs/about.md (the maintainer's
+                                  profile links, from mkdocs.yml
+                                  extra.maintainer_profiles, the same list the
+                                  structured data's sameAs uses)
 
 Verification counts are printed on every build and the hook raises (failing
 the build) if totals do not cross-check (CLAUDE.md working rule 2).
@@ -43,6 +47,7 @@ HARDWARE_ESTIMATOR_MARKER = "<!-- render:hardware-estimator -->"
 NEXT_TOKEN_MARKER = "<!-- render:next-token-demo -->"
 TOOL_CHOOSER_MARKER = "<!-- render:tool-chooser -->"
 GLOSSARY_AZ_MARKER = "<!-- render:glossary-az -->"
+MAINTAINER_PROFILES_MARKER = "<!-- render:maintainer-profiles -->"
 DIGEST_PAGE_RE = re.compile(r"news/archive/(\d{4})-w(\d{2})\.md")
 
 PROMPT_CATEGORY_LABELS = {
@@ -505,6 +510,27 @@ def _digest_page(src: str, markdown: str, config) -> str:
         raise AssertionError(f"render_data hook: {src} H1 is not the first block")
     markdown = markdown[:h1.end()] + "\n\n" + nav + "\n" + markdown[h1.end():]
     return markdown.rstrip("\n") + "\n\n" + nav + "\n"
+
+
+def _render_maintainer_profiles(config) -> str:
+    """The maintainer's profile links for the About page's maintainer card
+    (owner request 2026-10-06), from mkdocs.yml extra.maintainer_profiles: the
+    same list overrides/main.html writes as sameAs in the structured data, so
+    the visible links and the markup cannot drift apart. Raw HTML, because the
+    marker sits inside the card's HTML block. No entries, no line."""
+    profiles = (config.get("extra") or {}).get("maintainer_profiles") or []
+    links = []
+    for p in profiles:
+        label, url = p.get("label"), p.get("url")
+        if not label or not str(url).startswith("https://"):
+            raise AssertionError(
+                "render_data hook: every extra.maintainer_profiles entry in "
+                f"mkdocs.yml needs a label and an https url, got {p!r}")
+        links.append(f'<a href="{html.escape(url, quote=True)}">{html.escape(label)}</a>')
+    print(f"render_data: maintainer profiles on the About page: {len(links)}")
+    if not links:
+        return ""
+    return '<p class="maintainer-profiles">Profiles: ' + " · ".join(links) + "</p>"
 
 
 def _render_glossary_az(markdown: str) -> str:
@@ -2397,6 +2423,15 @@ def on_page_markdown(markdown, page, config, files):
         # 2026-09-26, sidebar-free navigation round). Same remedy as the weekly
         # pages: leave the comment out of the rendered page, keep the source.
         return re.sub(r"\A\s*<!-- GENERATED[^\n]*-->[ \t]*\n", "", markdown)
+    if src == "about.md":
+        if MAINTAINER_PROFILES_MARKER not in markdown:
+            raise AssertionError(
+                "render_data hook: about.md is missing the "
+                f"{MAINTAINER_PROFILES_MARKER} marker"
+            )
+        return markdown.replace(
+            MAINTAINER_PROFILES_MARKER, _render_maintainer_profiles(config)
+        )
     if src == "basics/glossary.md":
         if GLOSSARY_AZ_MARKER not in markdown:
             raise AssertionError(

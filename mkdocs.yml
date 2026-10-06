@@ -39,11 +39,16 @@ extra:
   # iD checked against the public ORCID API (valid checksum, record in his
   # name); ResearchGate and Google Scholar refuse scripted checks, so those two
   # are as he supplied them. The auamed.org faculty profile joins once it shows
-  # his current title.
+  # his current title. The same list renders the visible "Profiles:" line in
+  # the About page's maintainer card (scripts/render_data.py), so the markup
+  # and the page say the same thing; the link checker covers these URLs too.
   maintainer_profiles:
-    - https://www.researchgate.net/profile/Tarron-Kayalackakom
-    - https://orcid.org/0000-0002-4062-2539
-    - https://scholar.google.com/citations?user=bJ7gfLwAAAAJ
+    - label: ResearchGate
+      url: https://www.researchgate.net/profile/Tarron-Kayalackakom
+    - label: ORCID
+      url: https://orcid.org/0000-0002-4062-2539
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=bJ7gfLwAAAAJ
   # The redesign banner (owner, 2026-09-28: a banner for first visits that shows for
   # two weeks). overrides/main.html draws it on every page until a visitor closes it,
   # and only while the build date is on or before `until`; the news refresh rebuilds

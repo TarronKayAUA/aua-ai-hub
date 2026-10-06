@@ -143,8 +143,10 @@
         "@id": "{{ config.site_url }}#maintainer",
         "name": "{{ maintainer_name }}",
         "honorificPrefix": "Dr.",
-        "jobTitle": "Associate Dean of AI in Medical Education",{% if config.extra.maintainer_profiles %}
-        "sameAs": {{ config.extra.maintainer_profiles | tojson }},{% endif %}
+        "jobTitle": "Associate Dean of AI in Medical Education",
+        "url": "{{ config.site_url }}about/#the-maintainer",
+        "image": "{{ config.site_url }}assets/profile.jpg",{% if config.extra.maintainer_profiles %}
+        "sameAs": {{ config.extra.maintainer_profiles | map(attribute="url") | list | tojson }},{% endif %}
         "worksFor": { "@id": "https://www.auamed.org/#organization" }
       },
       {

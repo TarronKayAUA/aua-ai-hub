@@ -105,6 +105,11 @@ MANUALLY_VERIFIED = {
     # bare /scholar_labs path is a 404, so /search is the right link). The
     # deeplearning.ai pattern: the block is datacenter-IP based and recurs.
     "scholar.google.com": "2026-10-05",
+    # The maintainer's ResearchGate profile (mkdocs.yml maintainer_profiles,
+    # shown on the About page). 403s every scripted client behind a bot check;
+    # the profile is his own, supplied by him 2026-10-06, and Google Scholar's
+    # sibling entry above covers his Scholar profile the same way.
+    "researchgate.net": "2026-10-06",
     # ahli.cc was allowlisted 2026-07-06 when its /ml4h/ subpath began
     # 403ing scripted clients; removed 2026-07-09 when the listing moved
     # to the dedicated ml4h.ahli.cc site, which serves scripts normally
@@ -247,6 +252,17 @@ def collect() -> list[tuple[str, str, str | None]]:
                 if url and url != "TBD":
                     suffix = "" if field == "url" else f" [{field}]"
                     pairs.append((f"{yaml_rel}:{label}{suffix}", url, expect))
+    # The maintainer's profile links (2026-10-06): rendered on the About page
+    # and written into the structured data from mkdocs.yml, so they are site
+    # links like any other. mkdocs.yml carries !!python/name tags a safe loader
+    # rejects, so those are read as nothing.
+    loader = type("_MkdocsLoader", (yaml.SafeLoader,), {})
+    loader.add_multi_constructor("tag:yaml.org,2002:python/",
+                                 lambda _l, _suffix, _node: None)
+    mk = yaml.load((REPO / "mkdocs.yml").read_text(encoding="utf-8"), Loader=loader)
+    for prof in (mk.get("extra") or {}).get("maintainer_profiles") or []:
+        pairs.append((f"mkdocs.yml:maintainer_profiles:{prof.get('label', '?')}",
+                      prof.get("url", ""), None))
     md_paths = []
     if "--all-docs" in sys.argv[1:]:
         # Skip generated trees and the Exchange mirror: news rotates nightly
