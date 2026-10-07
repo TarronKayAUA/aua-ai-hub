@@ -53,3 +53,22 @@
   description: How a large language model produces an answer, why it can state a guess as confidently as a fact, and three consequences for your own use.
   # Speechify wyatt_32, the Hub's static-page narrator (added 2026-10-07).
   voice: ai
+
+- page: pathway/prompting.md
+  # Verified 2026-10-07 from YouTube: public, embeddable (playableInEmbed),
+  # 145 seconds, uploaded 2026-10-07T16:45:07-07:00, English caption track
+  # uploaded by the owner (vssId .en, beside the automatic a.en); oEmbed
+  # title and channel as written below. Poster: the film's Four Habits
+  # spread at 0:50.85, after "improvising" and before the takeaway line, so
+  # the play button sits on open paper at desktop widths and on phones.
+  url: https://www.youtube.com/watch?v=wkqQgVuZRGc
+  title: Module 2 - Prompting Fundamentals
+  channel: Dr. Tarron Kay
+  seconds: 145
+  uploaded: "2026-10-07T16:45:07-07:00"
+  poster: module2-prompting-fundamentals.jpg
+  label: The Two-Minute Version
+  caption: A narrated, animated walk through the core idea, with captions. The quiz and the answers in it are made up.
+  description: "How to brief an AI assistant the way you would brief a capable new colleague: four habits for a better first draft, asking for reasoning you can check, and matching the check to the stakes."
+  # Speechify wyatt_32, the Hub's static-page narrator.
+  voice: ai

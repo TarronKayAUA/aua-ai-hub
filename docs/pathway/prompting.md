@@ -14,6 +14,8 @@ last_reviewed: 2026-09-01
 
 ## The Core Idea
 
+<!-- render:explainer-video -->
+
 The quality of what you get is mostly determined by what you give. Modern assistants do not need magic words; they need what any capable new colleague would need: context, your materials, a clear task, and a description of the output you want. Four habits cover most of it:
 
 1. **Give it your materials.** The single biggest upgrade. Paste your learning objectives, your draft, your criteria, your data description. A model working from your actual material is grounded; a model working from a blank page is improvising.
