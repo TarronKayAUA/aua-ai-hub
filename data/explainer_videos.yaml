@@ -1,0 +1,48 @@
+# Narrated explainer videos made for the Hub's own pages (pilot, owner
+# approved 2026-10-07): each one is hosted on the owner's YouTube channel
+# and shown on its page by scripts/render_data.py at the page's
+# <!-- render:explainer-video --> marker. The build fails if an entry's
+# page has no marker, if a page has the marker but no entry, or if the
+# poster file is missing. Edit this file only; never the pages.
+#
+# How it shows: a still from the film (the poster, served from
+# docs/assets/video/, so nothing loads from YouTube until a reader presses
+# play) with a play button. Pressing it swaps in YouTube's player from
+# youtube-nocookie.com (docs/javascripts/explainer-video.js); without
+# JavaScript the same button opens the video on YouTube. The page's
+# VideoObject structured data (overrides/main.html) comes from the same
+# entry. The block is added at build time, never written into the page's
+# text, so a narrated page's recording stays current (checked 2026-10-07:
+# the marker line leaves the spoken text unchanged).
+#
+# Every entry is verified before commit: the video public and embeddable,
+# title and channel from YouTube's oEmbed API, length and upload time from
+# the watch page, and the caption track the uploaded one (not automatic).
+#
+# Fields:
+#   page         the page's source, relative to docs/
+#   url          the YouTube watch URL (canonical form, ?v=<id>)
+#   title        the video's title as it stands on YouTube
+#   channel      the channel's name as it stands on YouTube
+#   seconds      the running time; the displayed length (2:06) and the
+#                structured data's duration (PT2M6S) are derived from it
+#   uploaded     upload time from the watch page (ISO 8601 with offset)
+#   poster       a still from the film, under docs/assets/video/ (16:9)
+#   label        title case, shown above the poster
+#   caption      sentence case, shown under it
+#   description  one sentence for the structured data, sentence case
+
+- page: pathway/how-ai-works.md
+  # Verified 2026-10-07 from YouTube: public, embeddable (playableInEmbed),
+  # 126 seconds, uploaded 2026-10-07T11:04:48-07:00, English caption track
+  # uploaded by the owner (vssId .en, not an automatic a.en track); oEmbed
+  # title and channel as written below.
+  url: https://www.youtube.com/watch?v=8nCyGX1H1Zo
+  title: Module 1 - How AI Works
+  channel: Dr. Tarron Kay
+  seconds: 126
+  uploaded: "2026-10-07T11:04:48-07:00"
+  poster: module1-how-ai-works.jpg
+  label: The Two-Minute Version
+  caption: A narrated, animated walk through the core idea, with captions. The trial in it is made up, and so are its numbers.
+  description: How a large language model produces an answer, why it can state a guess as confidently as a fact, and three consequences for your own use.

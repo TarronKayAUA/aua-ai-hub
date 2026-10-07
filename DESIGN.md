@@ -277,6 +277,13 @@ Each prompt page has a side panel, "Fill In Your Details" (`_side`), with one fi
 - **Section banners** (`.section-banner`, extra.css; SVGs in docs/assets/) are self-contained color, because an SVG in an `img` cannot read CSS variables. A banner is decorative (`alt=""`, `aria-hidden="true"`). Language Model Benchmarks keeps its own; the Governance landing's was archived on 2026-09-28 (graphics/archive/section-governance.svg), when its head took the Old Court House, and Courses and Resources' on 2026-09-29 (graphics/archive/section-learning.svg), when its head took the telescope.
 - **The Learn plate** (Specimen and Signal, 2026-09-26): a neuron whose axon terminals become a small artificial network, with one pass of a signal (docs/assets/art/learn-plate.svg and learn-plate.json, drawn by the ART section of layout-learn.js). It stood beside the Learn landing's title until 2026-09-28 and now sits under Module 1's title, in the space beside the goals panel: the head's main column stretches to the row, and the plate fills what the title's lines leave, its bottom on the goals panel's bottom edge (at most 8.064rem tall, 1rem clear above; with under 5rem of room it is neither drawn nor fetched). layout_width reads its empty host as head chrome.
 
+### 6.10 Explainer videos (data/explainer_videos.yaml, docs/javascripts/explainer-video.js)
+
+- One per page, at a `<!-- render:explainer-video -->` marker at the start of the section the film covers. scripts/layout_width.py places it as a figure: beside that section's opening paragraph from 1100px, above it on narrower screens.
+- A title-case label, then a 16:9 still from the film (1280 by 720, served from docs/assets/video/) with a play button low in the frame, never over the film's own title; under it a muted line with the length and "Plays from YouTube when you press play.", then the caption, upright and left-aligned.
+- Nothing loads from YouTube until the press. The player then replaces the still in the same box and takes keyboard focus; without JavaScript the still is a link to the watch page.
+- The play button is neutral ink, not a kind color: color on this site means a kind of page.
+
 ---
 
 ## 7. Color

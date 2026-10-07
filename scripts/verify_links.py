@@ -229,6 +229,7 @@ def collect() -> list[tuple[str, str, str | None]]:
         "data/prompt_resources.yaml",
         "data/open_models.yaml",
         "data/guide_videos.yaml",
+        "data/explainer_videos.yaml",
         "data/learning_resources.yaml",
         "data/committee_work.yaml",
         "data/opportunities.yaml",

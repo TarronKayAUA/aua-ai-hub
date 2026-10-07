@@ -157,6 +157,7 @@ extra_javascript:
   - javascripts/better-answers.js
   - javascripts/listen.js
   - javascripts/next-token.js
+  - javascripts/explainer-video.js
   - javascripts/tools-chooser.js
   - javascripts/prompt-chooser.js
   - javascripts/layout.js

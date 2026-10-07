@@ -24,7 +24,7 @@ the build) if totals do not cross-check (CLAUDE.md working rule 2).
 import html
 import json
 import re
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -48,6 +48,7 @@ NEXT_TOKEN_MARKER = "<!-- render:next-token-demo -->"
 TOOL_CHOOSER_MARKER = "<!-- render:tool-chooser -->"
 GLOSSARY_AZ_MARKER = "<!-- render:glossary-az -->"
 MAINTAINER_PROFILES_MARKER = "<!-- render:maintainer-profiles -->"
+EXPLAINER_VIDEO_MARKER = "<!-- render:explainer-video -->"
 DIGEST_PAGE_RE = re.compile(r"news/archive/(\d{4})-w(\d{2})\.md")
 
 PROMPT_CATEGORY_LABELS = {
@@ -1416,6 +1417,119 @@ def _render_guide_videos_per_tool(config, markdown: str) -> str:
     return markdown
 
 
+# --- explainer videos -----------------------------------------------------------
+# The Hub's own narrated explainers (pilot 2026-10-07), one per page, from
+# data/explainer_videos.yaml. Unlike the guide videos above, these play on
+# the page: a poster from the film with a play button that loads YouTube's
+# player only when pressed (docs/javascripts/explainer-video.js).
+
+EXPLAINER_FIELDS = ("page", "url", "title", "channel", "seconds", "uploaded",
+                    "poster", "label", "caption", "description")
+_EXPLAINERS: dict = {}
+
+
+def _load_explainer_videos(config) -> dict:
+    """The whole file, checked on every build and keyed by page: every field
+    present, a canonical watch URL, one entry per page, a poster file that
+    exists, an upload time with its offset, no em dash in the site's own
+    words, and the marker in place on the entry's page. A marker without an
+    entry is caught where the page renders (_inject_explainer_video)."""
+    path = _data_dir(config) / "explainer_videos.yaml"
+    docs = Path(config["docs_dir"])
+    by_page = {}
+    for e in _load(path):
+        where = f"render_data hook: data/explainer_videos.yaml entry {e.get('page')!r}"
+        missing = [f for f in EXPLAINER_FIELDS if e.get(f) in (None, "")]
+        if missing:
+            raise ValueError(f"{where} is missing {', '.join(missing)}")
+        if not re.fullmatch(r"https://www\.youtube\.com/watch\?v=[\w-]{11}", e["url"]):
+            raise ValueError(f"{where}: url must be a canonical watch URL "
+                             f"(https://www.youtube.com/watch?v=<11-character id>), got {e['url']!r}")
+        if e["page"] in by_page:
+            raise ValueError(f"{where} appears twice; one video per page")
+        if not (docs / "assets" / "video" / e["poster"]).is_file():
+            raise FileNotFoundError(f"{where}: poster docs/assets/video/{e['poster']} does not exist")
+        stamp = datetime.fromisoformat(str(e["uploaded"]))
+        if stamp.tzinfo is None:
+            raise ValueError(f"{where}: uploaded needs its UTC offset, as the watch page gives it")
+        if not isinstance(e["seconds"], int) or e["seconds"] <= 0:
+            raise ValueError(f"{where}: seconds must be a whole number above zero")
+        for field in ("label", "caption", "description"):
+            if "—" in e[field]:
+                raise ValueError(f"{where}: {field} contains an em dash (site style)")
+        src = docs / e["page"]
+        if not src.is_file() or EXPLAINER_VIDEO_MARKER not in src.read_text(encoding="utf-8"):
+            raise AssertionError(f"{where}: docs/{e['page']} has no {EXPLAINER_VIDEO_MARKER} marker")
+        by_page[e["page"]] = e
+    return by_page
+
+
+def _clock(seconds: int) -> str:
+    return f"{seconds // 60}:{seconds % 60:02d}"
+
+
+def _iso_duration(seconds: int) -> str:
+    minutes, secs = divmod(seconds, 60)
+    return f"PT{minutes}M{secs}S" if minutes else f"PT{secs}S"
+
+
+def _page_root(src: str) -> str:
+    """The page-relative path to the site root, for raw HTML (which MkDocs
+    does not rewrite): docs/pathway/how-ai-works.md serves from
+    /pathway/how-ai-works/, two levels down; an index page serves from its
+    folder, one level fewer."""
+    depth = src.count("/") + (0 if src.endswith("index.md") else 1)
+    return "../" * depth
+
+
+def _render_explainer_video(entry: dict, src: str) -> str:
+    vid = _youtube_id(entry["url"])
+    esc = lambda s: html.escape(str(s), quote=True)  # noqa: E731
+    length = _clock(entry["seconds"])
+    poster = f"{_page_root(src)}assets/video/{entry['poster']}"
+    # One line per element and no blank line inside: Python-Markdown keeps a
+    # raw <figure> block whole only while it is unbroken.
+    return "\n".join([
+        '<figure class="ev" data-ev>',
+        f'<p class="ev-label">{esc(entry["label"])}</p>',
+        f'<a class="ev-frame" href="{esc(entry["url"])}" target="_blank" rel="noopener" '
+        f'data-ev-id="{esc(vid)}" data-ev-title="{esc(entry["title"])}" '
+        f'aria-label="Play the video: {esc(entry["label"])}, {length}. It plays from YouTube.">',
+        f'<img src="{esc(poster)}" alt="" width="1280" height="720" loading="lazy" decoding="async">',
+        '<span class="ev-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30">'
+        '<path d="M8.5 5.6v12.8L18.7 12z" fill="currentColor"/></svg></span>',
+        '</a>',
+        f'<figcaption><span class="ev-note">{length} · Plays from YouTube when you press play.</span>'
+        f'<span class="ev-cap">{esc(entry["caption"])}</span></figcaption>',
+        '</figure>',
+    ])
+
+
+def _inject_explainer_video(src: str, markdown: str, page, config) -> str:
+    """Put the page's video at its marker, and hand overrides/main.html the
+    facts for the page's VideoObject structured data. A marker with no
+    entry fails the build rather than rendering nothing."""
+    entry, count = _EXPLAINERS.get(src), markdown.count(EXPLAINER_VIDEO_MARKER)
+    if not entry and not count:
+        return markdown
+    if not entry:
+        raise AssertionError(f"render_data hook: {src} has the {EXPLAINER_VIDEO_MARKER} marker "
+                             f"but no entry in data/explainer_videos.yaml")
+    if count != 1:
+        raise AssertionError(f"render_data hook: {src} has {count} {EXPLAINER_VIDEO_MARKER} "
+                             f"markers; the entry needs exactly one")
+    page.meta["explainer_video"] = {
+        "name": entry["title"],
+        "description": entry["description"],
+        "thumbnail": f"{config['site_url']}assets/video/{entry['poster']}",
+        "uploaded": str(entry["uploaded"]),
+        "duration": _iso_duration(entry["seconds"]),
+        "embed": f"https://www.youtube.com/embed/{_youtube_id(entry['url'])}",
+        "watch": entry["url"],
+    }
+    return markdown.replace(EXPLAINER_VIDEO_MARKER, "\n" + _render_explainer_video(entry, src) + "\n")
+
+
 # --- prompt resources ---------------------------------------------------------
 
 
@@ -2353,6 +2467,14 @@ def on_config(config):
     print(f"  links configured: {len(links)} "
           f"({sum(1 for x in links if '://' in x['url'])} external, "
           f"{sum(1 for x in links if '://' not in x['url'])} internal)")
+    # The explainer videos, checked whole once per build (and per rebuild
+    # under mkdocs serve, which calls on_config again).
+    _EXPLAINERS.clear()
+    _EXPLAINERS.update(_load_explainer_videos(config))
+    print("render_data: explainer videos verification")
+    print(f"  entries read : {len(_EXPLAINERS)} (each with its page marker and poster in place)")
+    for src, e in sorted(_EXPLAINERS.items()):
+        print(f"  {src}: {_clock(e['seconds'])}, {e['url']}")
     return config
 
 
@@ -2380,6 +2502,7 @@ def on_page_markdown(markdown, page, config, files):
     _check_task_links(src, markdown, config)
     markdown += _reviewed_footer(page.meta, src)
     markdown = _inject_narration(src, markdown)
+    markdown = _inject_explainer_video(src, markdown, page, config)
     if src == "tools/index.md":
         for marker in (TOOLS_MARKER, OPEN_MODELS_MARKER):
             if marker not in markdown:

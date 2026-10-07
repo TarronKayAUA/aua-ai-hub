@@ -193,6 +193,10 @@ def on_config(config):
     for tab in (deco.get("tabs") or {}).values():
         for name in (tab or {}).get("loose") or []:
             _check("card titles", "data/section_map.yaml loose", name)
+    # An explainer video's label is the site's own title (its `title` is
+    # YouTube's, spelled as the channel wrote it, and is left out).
+    for video in yaml.safe_load((root / "data" / "explainer_videos.yaml").read_text(encoding="utf-8")) or []:
+        _check("card titles", "data/explainer_videos.yaml label", video["label"])
     return config
 
 

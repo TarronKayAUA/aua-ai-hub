@@ -3409,3 +3409,98 @@
 .md-typeset .glossary h2 {
   scroll-margin-top: 5rem;
 }
+
+/* Explainer videos (owner approved 2026-10-07; scripts/render_data.py and
+   docs/javascripts/explainer-video.js): a still from the film with a play
+   button, and YouTube's player in the same 16:9 box once pressed. The
+   button sits low, over the audience, so it never covers the film's title.
+   It is neutral ink, not a kind color: color on this site means a kind of
+   page. */
+.md-typeset figure.ev {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+  text-align: left;
+}
+
+.md-typeset .ev-label {
+  margin: 0 0 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.md-typeset a.ev-frame,
+.md-typeset .ev-player {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset a.ev-frame {
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .ev-player {
+  border: 0;
+}
+
+.md-typeset a.ev-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.md-typeset .ev-play {
+  position: absolute;
+  left: 50%;
+  top: 77%;
+  display: grid;
+  place-items: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  background: rgba(20, 28, 34, 0.82);
+  color: #fff;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.35);
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s, background-color 0.15s;
+}
+
+.md-typeset a.ev-frame:is(:hover, :focus-visible) .ev-play {
+  background: rgba(20, 28, 34, 0.96);
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.md-typeset a.ev-frame:is(:focus-visible, .focus-visible) {
+  outline: 2px solid var(--hub-focus);
+  outline-offset: 2px;
+}
+
+.md-typeset figure.ev figcaption {
+  max-width: none;
+  margin: 0.5rem 0 0;
+  font-size: 0.7rem;
+  font-style: normal;
+  text-align: left;
+}
+
+.md-typeset .ev-note {
+  display: block;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .ev-cap {
+  display: block;
+  margin-top: 0.15rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset .ev-play {
+    transition: none;
+  }
+}

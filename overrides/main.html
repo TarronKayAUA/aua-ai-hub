@@ -164,6 +164,21 @@
         {% endif %}"inLanguage": "en",
         "isPartOf": { "@id": "{{ config.site_url }}#website" },
         "author": {% if page.meta.author == maintainer_name %}{ "@id": "{{ config.site_url }}#maintainer" }{% else %}{ "@type": "Person", "name": {{ page.meta.author | tojson }} }{% endif %}
+      }{% endif %}{% if page and page.meta and page.meta.explainer_video %}{% set ev = page.meta.explainer_video %},
+      {
+        "@type": "VideoObject",
+        "@id": "{{ page.canonical_url }}#video",
+        "name": {{ ev.name | tojson }},
+        "description": {{ ev.description | tojson }},
+        "thumbnailUrl": {{ ev.thumbnail | tojson }},
+        "uploadDate": {{ ev.uploaded | tojson }},
+        "duration": {{ ev.duration | tojson }},
+        "embedUrl": {{ ev.embed | tojson }},
+        "url": {{ ev.watch | tojson }},
+        "inLanguage": "en",
+        "creator": { "@id": "{{ config.site_url }}#maintainer" },
+        "isPartOf": { "@id": "{{ config.site_url }}#website" },
+        "mainEntityOfPage": "{{ page.canonical_url }}"
       }{% endif %}
     ]
   }

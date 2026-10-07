@@ -16,6 +16,8 @@ last_reviewed: 2026-09-01
 
 ## The Core Idea
 
+<!-- render:explainer-video -->
+
 A large language model is a system trained on enormous amounts of text to do one thing: predict the next small piece of text, over and over, until an answer takes shape. Everything impressive (fluent explanations, working code, a differential diagnosis discussion) and everything that goes wrong (confident fabrication, invented citations) follows from that single mechanism. The model is not consulting a database of facts. It is producing the most plausible continuation of the conversation, and most of the time the most plausible continuation is also true. When it is not, the output looks exactly as confident.
 
 For the diagrams behind this module, read [How LLMs Work](../basics/how-llms-work.md), a ten-minute plain-language tour of the prediction loop, the context window, how training works, and why hallucination happens. Read it now or after the self-check; this module stands on its own.

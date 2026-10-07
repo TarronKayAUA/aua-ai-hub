@@ -54,6 +54,7 @@ RENDER_SOURCES = {
     "guide-videos": ["data/guide_videos.yaml"],
     "glossary-az": [],   # built from the page's own entries
     "maintainer-profiles": ["mkdocs.yml"],   # extra.maintainer_profiles
+    "explainer-video": ["data/explainer_videos.yaml"],
 }
 GENERATED_SOURCES = {re.compile(r"prompts/[\w-]+\.md"): ["data/prompts.yaml"]}
 

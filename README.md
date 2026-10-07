@@ -153,6 +153,14 @@ are per engine.
 channel/title) and note duration and upload date; one entry per tool,
 official channels preferred; build strict, commit.
 
+**Add an explainer video** — upload it to the owner's channel with its
+caption file, then add an entry to `data/explainer_videos.yaml` (every field
+is documented in its header): the watch URL, the title and channel as
+YouTube shows them, the length in seconds and the upload time from the
+watch page, and a 16:9 still from the film under `docs/assets/video/`. Put
+`<!-- render:explainer-video -->` on its own line where the video belongs
+(the start of the section it covers); build strict, check the page, commit.
+
 **Run a poll** — create it in Microsoft Forms (restricted to the AUA
 organization), then add question/url/closes to the `active` list in
 `data/polls.yaml`; on close, move it to `closed` with a one-line
