@@ -21,9 +21,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e104856">Safety-Filter Fallback on Consumer Health Questions During the Initial Claude Fable 5 Deployment: Observational Study</a>
+    <p class="news-card-summary">An observational study examines how a safety filter in Claude Fable 5 rerouted consumer health questions to the fallback model Claude Opus 4.8 during the initial deployment, including safe questions that were declined.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 7, 2026</span></div>
@@ -59,6 +66,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03335-5">Participant-reported minimum acceptable sensitivity and specificity for artificial intelligence-based disease detection</a>
     <p class="news-card-summary">An npj Digital Medicine study reports the minimum sensitivity and specificity that participants consider acceptable for AI-based disease detection.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03317-7">Large language models for digital mental health: an HCI-centered scoping review</a>
+    <p class="news-card-summary">A scoping review examines how large language models are used in digital mental health, analyzed from a human-computer interaction HCI perspective.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03330-w">Real-world user interactions with large language models for explaining home electrocardiogram reports</a>
+    <p class="news-card-summary">A study analyzes real-world user interactions with large language models that explain home electrocardiogram ECG reports to patients.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -110,28 +131,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://ai.jmir.org/2026/1/e100772">A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study</a>
     <p class="news-card-summary">This JMIR AI study develops a patient simulation framework that tests conversational health care AI across different patient communication styles and health literacy levels, aiming to assess risk over multiturn conversations.</p>
   </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions">This startup is issuing AI-generated acne prescriptions</a>
-    <p class="news-card-summary">Nolla Health launched an app in Utah in which an AI system analyzes face scans for acne severity and autonomously writes a prescription for treatment.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/nolla-health-app.png?quality=90&amp;strip=all&amp;crop=0%2C5.420521028312%2C100%2C89.158957943376&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="clinical-decision-support">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e88368">Participatory Design of AI-Based Clinical Decision Support Systems: Scoping Review</a>
-    <p class="news-card-summary">A scoping review examines how participatory design, involving clinicians and other end users, has been used in building AI-based clinical decision support systems, which are rarely implemented in practice.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors">STAT+: Utah plows ahead with more health AI pilots for prescriptions, women’s health</a>
-    <p class="news-card-summary">Utah plans to let an AI product evaluate patients and write new drug prescriptions without prior human review, expanding its health AI pilot programs to include women&#x27;s health.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/10/AdobeStock_581923002-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

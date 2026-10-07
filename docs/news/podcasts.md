@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Best-Way-to-Test-New-AI-Models-e3q3meu" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Best Way to Test New AI Models" loading="lazy">
+  <span class="video-card-title">The Best Way to Test New AI Models</span>
+  <span class="video-card-meta">The AI Daily Brief, October 7, 2026</span>
+  <span class="video-card-desc">Nufar Gaspar explains a repeatable method for testing new AI models on your own tasks, comparing output quality, speed, and cost to decide which models belong in your workflow.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/Point-Counterpoint-Consumers-Will-Never-Pay-for-AI-e3q16j9" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: Point-Counterpoint: Consumers Will Never Pay for AI" loading="lazy">
   <span class="video-card-title">Point-Counterpoint: Consumers Will Never Pay for AI</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">Dr. Suchi Saria on Building AI That Changes Care</span>
   <span class="video-card-meta">NEJM AI Grand Rounds, August 19, 2026</span>
   <span class="video-card-desc">Suchi Saria, Johns Hopkins faculty and Bayesian Health CEO, discusses building AI systems to detect early warning signals of patient deterioration buried in electronic health records.</span>
-</a>
-<a class="video-card" href="https://aipodcast.education/is-ai-helping-students-perform-or-actually-learn" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Is AI Helping Students Perform, or Actually Learn?" loading="lazy">
-  <span class="video-card-title">Is AI Helping Students Perform, or Actually Learn?</span>
-  <span class="video-card-meta">AI in Education Podcast, August 13, 2026</span>
-  <span class="video-card-desc">Discussion of whether AI improves student performance versus learning, EU transparency requirements, and AI watermarking for detection reliability.</span>
 </a>
 </div>

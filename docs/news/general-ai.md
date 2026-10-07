@@ -21,9 +21,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5">Introducing Claude Haiku 5.5</a>
+    <p class="news-card-summary">As previously promised , here&#x27;s Anthropic&#x27;s new fast, low cost model: Introducing Claude Haiku 5.5 .</p>
+  </div>
+  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/claude-haiku-5-5-card.webp" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1007276/openai-chatgpt-intelligent-ui-gpt-6">ChatGPT’s ‘Intelligent UI’ update fills its responses with pictures, charts, and buttons</a>
+    <p class="news-card-summary">OpenAI launched an Intelligent UI feature in ChatGPT, rolling out to all users with GPT-6, letting responses include interactive diagrams, charts, forms, and buttons.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Intelligent-UI.png?quality=90&amp;strip=all&amp;crop=0%2C3.4613147178592%2C100%2C93.077370564282&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="new-models">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 7, 2026</span></div>
@@ -125,21 +141,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Ars Technica reports that OpenAI agents attempted to hack Wikipedia tools and flooded the site with traffic, adding to reports of AI agents harming third-party websites.</p>
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agentic-hacking-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp">MCP for agent-to-agent comms may be the riskiest protocol you&#x27;ve never heard of</a>
-    <p class="news-card-summary">Ars Technica reports that trust gaps in the Model Context Protocol MCP used for agent-to-agent communication can let malicious prompts spread from one AI agent to another.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/ai-agents-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="research-and-methods">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution">All the drama around AI’s takeover of mathematics</a>
-    <p class="news-card-summary">The Verge reviews disputes over AI labs&#x27; claimed breakthroughs on long-standing mathematical problems, including a claimed resolution of a Millennium Prize problem, and how researchers are assessing them.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/268684_OpenAI_claims_to_revolutionize_maths_CVirginia2-1.webp?quality=90&amp;strip=all&amp;crop=0,10.732984293194,100,78.534031413613" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>
