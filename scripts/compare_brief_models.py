@@ -33,9 +33,10 @@ import aggregate  # noqa: E402
 # Sonnet 5 took its place as the model the briefs actually run on.
 # Updated 2026-10-03: the briefs moved to Sonnet 5.5 (owner directive, no
 # Sonnet 5 anywhere), so the incumbent here moved with them.
+# Updated 2026-10-07: the cheapest tier is Haiku 5.5, the day it shipped.
 DEFAULT_MODELS = [
     "anthropic:claude-sonnet-5-5",
-    "anthropic:claude-haiku-4-5",
+    "anthropic:claude-haiku-5-5",
     "anthropic:claude-opus-5-5",
 ]
 

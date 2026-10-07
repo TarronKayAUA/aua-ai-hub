@@ -13,6 +13,9 @@ Versions ("arms"), all on the same candidates in the same batches:
   incumbent-long  as incumbent-new, with 400 characters of each video description instead of the 150 the
                   pipeline's video normalizer keeps
   sonnet55-low    claude-sonnet-5-5 at low effort, with prompts/curator.md
+  haiku55         (only when named with --arms) claude-haiku-5-5 at its default effort (medium), with
+                  prompts/curator.md: the arm that decides whether curation moves back to Haiku (added 2026-10-07)
+  haiku55-low     (only when named with --arms) as haiku55, at low effort
   incumbent-dated (only when named with --arms) as incumbent-new, with the context the production payload lacks:
                   the run date, each candidate's date, and the model and tool names the site already tracks
                   (the LiveBench table, data/open_models.yaml, data/tools.yaml), so the model need not assume
@@ -59,7 +62,11 @@ OLD_PROMPT_SHA256 = "e5665f0d52d9e36bbb5dabd5e749d76addf506dce19371744768c76e2e4
 NEW_RULE_PREFIX = "- Your knowledge of models and products has a cutoff"
 # US dollars per million input and output tokens, from
 # https://platform.claude.com/docs/en/about-claude/pricing (verified 2026-09-29). Thinking bills as output.
-PRICES = {"claude-haiku-4-5": (1.0, 5.0), "claude-sonnet-5-5": (2.0, 10.0)}
+PRICES = {"claude-haiku-4-5": (1.0, 5.0), "claude-sonnet-5-5": (2.0, 10.0),
+          # Haiku 5.5 (verified 2026-10-07 from the model's own page): the base rate holds for prompts up
+          # to 100,000 tokens and LONG_PROMPT's rate applies above, to input and output alike.
+          "claude-haiku-5-5": (0.10, 0.50)}
+LONG_PROMPT = {"claude-haiku-5-5": (100_000, 0.50, 2.50)}
 BATCH = {"news": 12, "videos": 12, "podcasts": 8}
 RETRYABLE = {429, 500, 502, 503, 504, 529}
 ABORT = threading.Event()
@@ -86,6 +93,9 @@ def arms_from(config: dict) -> dict:
         "incumbent-long": dict(model=incumbent, prompt="new", video_chars=400),
         "sonnet55-low": dict(model="claude-sonnet-5-5", prompt="new", video_chars=150, effort="low",
                              max_tokens=16000),
+        "haiku55": dict(model="claude-haiku-5-5", prompt="new", video_chars=150, max_tokens=16000),
+        "haiku55-low": dict(model="claude-haiku-5-5", prompt="new", video_chars=150, effort="low",
+                            max_tokens=16000),
         "incumbent-dated": dict(model=incumbent, prompt="new", video_chars=150, dated=True),
     }
 
@@ -224,6 +234,9 @@ def cost_of(model: str, usage: dict) -> float:
     pin, pout = PRICES[model]
     tokens_in = (usage.get("input_tokens") or 0) + (usage.get("cache_creation_input_tokens") or 0) * 1.25 \
         + (usage.get("cache_read_input_tokens") or 0) * 0.1
+    prompt = sum(usage.get(k) or 0 for k in ("input_tokens", "cache_creation_input_tokens", "cache_read_input_tokens"))
+    if model in LONG_PROMPT and prompt > LONG_PROMPT[model][0]:
+        pin, pout = LONG_PROMPT[model][1:]
     return (tokens_in * pin + (usage.get("output_tokens") or 0) * pout) / 1e6
 
 

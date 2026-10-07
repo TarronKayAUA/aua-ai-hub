@@ -37,7 +37,7 @@ on:
         # use DEFAULT_MODELS in scripts/compare_narrative_models.py. The
         # curation task ignores it: its versions are defined in
         # scripts/compare_curation_models.py (arms_from).
-        default: "anthropic:claude-sonnet-5-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5"
+        default: "anthropic:claude-sonnet-5-5 anthropic:claude-haiku-5-5 anthropic:claude-opus-5-5"
       category:
         description: "Briefs only: limit to one category key (blank runs all three)"
         required: false
@@ -97,7 +97,7 @@ jobs:
           # The brief defaults include a Haiku candidate that is no part of
           # this question, so the brief default string means "use the
           # narrative harness's own defaults".
-          if [ -n "$MODELS" ] && [ "$MODELS" != "anthropic:claude-sonnet-5-5 anthropic:claude-haiku-4-5 anthropic:claude-opus-5-5" ]; then
+          if [ -n "$MODELS" ] && [ "$MODELS" != "anthropic:claude-sonnet-5-5 anthropic:claude-haiku-5-5 anthropic:claude-opus-5-5" ]; then
             ARGS="$ARGS --models $MODELS"
           fi
           python scripts/compare_narrative_models.py $ARGS
@@ -107,8 +107,8 @@ jobs:
       # through each curator version and uploads every decision with its token
       # usage, so the report can score them against fact-checked labels and
       # price them. Every call is paid: four versions at three samples cost
-      # roughly $3 to $5. The same run answers the Haiku 5.5 question when it
-      # ships (add it as an arm).
+      # roughly $3 to $5. The Haiku 5.5 question has its own arms since
+      # 2026-10-07 (arms: haiku55 haiku55-low), at a tenth of Haiku 4.5's price.
       - name: Replay curation on the backtest set
         if: inputs.task == 'curation'
         env:

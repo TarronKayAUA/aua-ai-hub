@@ -31,7 +31,9 @@ llm:
     max_payload_chars: 22000
   anthropic:
     endpoint: https://api.anthropic.com/v1/messages
-    model: claude-haiku-4-5
+    # The default for a task that names anthropic without a model (none
+    # does today). claude-haiku-5-5 since 2026-10-07 (review note below).
+    model: claude-haiku-5-5
     api_version: "2023-06-01"
     max_payload_chars: 600000
     # Per-candidate truncation for curation payloads. The 140/100
@@ -109,6 +111,29 @@ llm:
   # tasks move to Haiku 5.5 when it ships (owner, same day); Haiku 4.5 is
   # active with no deprecation notice, and retirement needs 60 days'
   # notice.
+  # Haiku half done 2026-10-07 (owner directive, the day Haiku 5.5 shipped):
+  # conference_watch, content_verify, opportunity_watch and the default
+  # above moved from claude-haiku-4-5 to claude-haiku-5-5. Verified from the
+  # platform docs that day (models overview, the Haiku 5.5 page and its
+  # migration guide): id claude-haiku-5-5 (dateless, its own snapshot);
+  # $0.10/$0.50 per million tokens for prompts up to 100,000 tokens and
+  # $0.50/$2.50 above (Haiku 4.5: $1/$5), with the newer tokenizer counting
+  # about 30% more tokens for the same text, so about 7.7x cheaper per call
+  # here, where every Haiku payload is a few thousand tokens; adaptive
+  # thinking on by default, drawing on max_tokens, default effort medium
+  # (left at the default); knowledge to June 2026 (Haiku 4.5: February
+  # 2025, the cutoff behind the "Opus 3.5" rewrite); retirement not before
+  # 2027-10-07; Haiku 4.5 now listed as legacy. Its breaking changes were
+  # checked against call_anthropic: it sends no temperature, top_p or
+  # top_k (a non-default value is a 400 on Haiku 5.5), never ends on an
+  # assistant prefill (also a 400), joins text blocks by type rather than
+  # reading the first block (thinking blocks now lead the reply), and
+  # treats stop_reason "refusal" as an empty, rejected reply. Haiku 5.5
+  # runs safety classifiers with no server-side fallback, and every
+  # swapped task already fails safe (a watch leaves a proposal or reports
+  # an error; nothing is written from an empty reply). max_tokens is
+  # explicit on each, sized to fit the caller's request timeout.
+  # LIVE CHECK: pending.
   tasks:
     # Curation moved to Sonnet 5.5 at low effort on 2026-09-29, a stopgap
     # until Haiku 5.5 ships (owner approved). A backtest replayed 278 real
@@ -151,9 +176,14 @@ llm:
       model: claude-sonnet-5-5
       max_tokens: 8000
       request_timeout_seconds: 180
+    # Date extraction from each conference's official page, every second
+    # day. claude-haiku-5-5 since 2026-10-07; 8000, not 16000, because
+    # conference_watch.py gives each call 90 seconds and a ceiling the
+    # timeout cuts off first is no ceiling at all.
     conference_watch:
       provider: anthropic
-      model: claude-haiku-4-5
+      model: claude-haiku-5-5
+      max_tokens: 8000
     # Weekly content-watch synthesis: judgment call over the week's news
     # against the rosters. claude-sonnet-5 verified against the model docs
     # 2026-07-01 at $2/$10 per MTok (then billed as introductory
@@ -197,14 +227,22 @@ llm:
       provider: anthropic
       model: claude-sonnet-5-5
       max_tokens: 8000
+    # Weekly check of the twelve least recently reviewed tool entries
+    # against their fetched pages. claude-haiku-5-5 since 2026-10-07; the
+    # 8000 ceiling leaves room for thinking (it draws on max_tokens) well
+    # inside content_watch.call_task's 300-second timeout.
     content_verify:
       provider: anthropic
-      model: claude-haiku-4-5
+      model: claude-haiku-5-5
+      max_tokens: 8000
     # Weekly opportunity screen: small candidate list, strict JSON
     # contract, relevance and eligibility filter. Pennies per run.
+    # claude-haiku-5-5 since 2026-10-07; 8000 fits the caller's
+    # 120-second timeout at Haiku speed.
     opportunity_watch:
       provider: anthropic
-      model: claude-haiku-4-5
+      model: claude-haiku-5-5
+      max_tokens: 8000
     # Gate verification for tiered autonomy (owner approved 2026-07-08):
     # structured checklist extraction from fetched official pages before
     # any automatic application. Sonnet for instruction-following
