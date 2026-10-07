@@ -133,7 +133,24 @@ llm:
   # swapped task already fails safe (a watch leaves a proposal or reports
   # an error; nothing is written from an empty reply). max_tokens is
   # explicit on each, sized to fit the caller's request timeout.
-  # LIVE CHECK: pending.
+  # Live check the same day (a temporary workflow on branch
+  # models/haiku-5-5, run 37667347368): the three tasks on real current
+  # inputs in their write-nothing modes, once on Haiku 5.5 and once on
+  # Haiku 4.5 from a restored checkout. Haiku 5.5: 14 calls, every one
+  # end_turn, no refusal, no max_tokens stop, slowest 12.7 seconds; cost
+  # per run $0.0047 for the conference watch (12 pages; Haiku 4.5
+  # $0.0216), $0.0034 for content_verify ($0.0159) and $0.0013 for the
+  # opportunity screen ($0.0038). It judges differently in three ways,
+  # all reviewed with the owner before the switch: the conference watch
+  # read next-edition dates Haiku 4.5 missed (AMEE 2027 in Helsinki, SAIL
+  # 2027), which in auto mode would have redated "AMEE 2026" to 2027, so
+  # conference_watch.coherent now keeps a start in another year than the
+  # entry's name as a proposal; content_verify marks a blurb "unknown"
+  # more often where the vendor's page does not show what it claims (six
+  # verify items against one); and the opportunity screen keeps a little
+  # more widely (ten against eight, the two extras general developer
+  # hackathons with an AI theme). Curation is not a Haiku task and stays
+  # on Sonnet 5.5: see the backtest note at the curation task.
   tasks:
     # Curation moved to Sonnet 5.5 at low effort on 2026-09-29, a stopgap
     # until Haiku 5.5 ships (owner approved). A backtest replayed 278 real
@@ -153,6 +170,17 @@ llm:
     # matches. max_tokens is explicit because thinking draws on it; the
     # timeout covers a rare 120-candidate catch-up run (calls averaged
     # about 5 seconds in the backtest).
+    # Haiku 5.5 backtested 2026-10-07, the day it shipped (model-compare.yml
+    # run 37667348487, arms haiku55 and haiku55-low, three samples each,
+    # scored with the September run on the same 278 items): at low effort
+    # it kept 81% of the should-keeps in the speculation set (Sonnet 5.5
+    # 92%, Haiku 4.5 35%), repeated the false premise in 15% (Sonnet 10%),
+    # dropped 98% of the should-drops, made no refusals or truncations in
+    # 75 calls, and projects to about $0.29 a month against $3.69. At its
+    # default effort: 79%, 16%, $0.36. It does not match on the failure
+    # that moved curation off Haiku, so curation stays on Sonnet 5.5 unless
+    # the owner decides the saving is worth one real launch in about nine
+    # more being dropped.
     curation:
       provider: anthropic
       model: claude-sonnet-5-5
@@ -602,9 +630,11 @@ opportunity_watch:
       url: https://grand-challenge.org/api/v1/challenges/
 
 # same value was extracted on stability_runs consecutive runs. Gate failures
-# become issue proposals; new conferences are always propose-only. Set mode
-# to propose to turn all writing off. Roughly 2 to 3 cents per run on the
-# claude-haiku-4-5 task above.
+# become issue proposals; new conferences are always propose-only, and so
+# (since 2026-10-07) is a new edition of a listed one: a start in another
+# year than the entry's name. Set mode to propose to turn all writing off.
+# About half a cent per run on the claude-haiku-5-5 task above (measured
+# 2026-10-07, 12 pages: $0.0047; it was 2 to 3 cents on Haiku 4.5).
 conference_watch:
   mode: auto
   stability_runs: 2

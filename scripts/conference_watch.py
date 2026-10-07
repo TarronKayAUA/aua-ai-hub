@@ -129,6 +129,17 @@ def coherent(conf: dict, changes: dict, today_iso: str) -> str:
     if (ISO_DATE.match(deadline) and ISO_DATE.match(start)
             and deadline >= start):
         return f"deadline {deadline} not before start {start}"
+    # A different edition (2026-10-07, found in the Haiku 5.5 live check,
+    # where AMEE's page announced 2027 in Helsinki): a name that carries a
+    # year names one edition, so a new start in another year is the next
+    # edition, not a correction. Applying it would show "AMEE 2026" with
+    # 2027 dates; it needs the entry renamed and redated by hand, so it
+    # stays a proposal. Names without a year still update automatically.
+    years = re.findall(r"\b(20\d\d)\b", str(conf.get("name", "")))
+    if ("start_date" in changes and years and ISO_DATE.match(start)
+            and start[:4] not in years):
+        return (f"start {start} is a different edition from {conf.get('name')!r}; "
+                f"rename and redate the entry by hand")
     return ""
 
 
