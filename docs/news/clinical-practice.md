@@ -12,18 +12,32 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">Utah plans to let an AI product evaluate patients and write new prescriptions without prior human review, and its pilot programs are expanding to women&#x27;s health <a href="https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors" aria-label="Source 4: STAT News AI, STAT+: Utah plows ahead with more health AI pilots for prescriptions, women’s health">[4]</a>. One existing example is Nolla Health, whose Utah app analyzes face scans for acne severity and writes a prescription autonomously <a href="https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions" aria-label="Source 2: The Verge AI, This startup is issuing AI-generated acne prescriptions">[2]</a>.</p>
+<p class="section-brief-lede">Utah plans to let an AI product evaluate patients and write new drug prescriptions without prior human review, expanding its health AI pilots to women&#x27;s health <a href="https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors" aria-label="Source 12: STAT News AI, STAT+: Utah plows ahead with more health AI pilots for prescriptions, women’s health">[12]</a>. Nolla Health&#x27;s Utah app already analyzes face scans for acne severity and writes a prescription autonomously <a href="https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions" aria-label="Source 10: The Verge AI, This startup is issuing AI-generated acne prescriptions">[10]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Evaluation work is addressing the same question of autonomy. A JMIR AI study describes a simulation framework that tests conversational health care AI across patient communication styles and health literacy levels <a href="https://ai.jmir.org/2026/1/e100772" aria-label="Source 1: JMIR AI, A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study">[1]</a>. A Nature Medicine commentary notes that what happens after an AI refers an uncertain case remains untested <a href="https://www.nature.com/articles/s41591-026-04658-2" aria-label="Source 14: Nature Medicine, The missing links in agentic AI autonomy">[14]</a>.</p>
-<p>Also this week: six items on safety and evaluation, three on patient-facing tools, two on clinical decision support, and one each on imaging and clinical documentation. They include a randomized trial comparing a language model agent with ophthalmology residents for pre-consultation, and a study of how much performance evidence is public for approved pathology AI software.</p>
-<p class="section-brief-date">The picture as of October 6, 2026; numbered links go to the items below.</p>
+<p>Evaluation research addresses the risk side: a JMIR AI study built a patient simulation framework that tests conversational tools across communication styles and health literacy levels <a href="https://ai.jmir.org/2026/1/e100772" aria-label="Source 9: JMIR AI, A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study">[9]</a>, and Nature Medicine described MAGIC, an international network for evaluating generative AI in global health <a href="https://www.nature.com/articles/s41591-026-04706-x" aria-label="Source 5: Nature Medicine, MAGIC: an international network for evaluating generative artificial intelligence in global health">[5]</a>. A further study examines how much performance evidence is publicly available for approved AI diagnostic software in pathology and hematology morphology <a href="https://www.nature.com/articles/s41746-026-03356-0" aria-label="Source 15: npj Digital Medicine, Availability of performance evidence of approved AI diagnostic software in pathology and hematology morphology">[15]</a>.</p>
+<p>Also this week: the section holds seven items on safety and evaluation, including a calibrated approach to pharmacovigilance using FAERS, plus three on patient-facing tools, two on clinical documentation, and one each on imaging and diagnostics and clinical decision support. A randomized trial comparing a language model agent with ophthalmology residents for pre-consultation also appears.</p>
+<p class="section-brief-date">The picture as of October 7, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03339-1">AI-assisted telerehabilitation in early Parkinson’s disease: a multicenter, randomized, multi-arm comparative trial</a>
+    <p class="news-card-summary">A multicenter randomized trial compares AI-assisted telerehabilitation approaches in early Parkinson&#x27;s disease, published in npj Digital Medicine.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="clinical-documentation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03321-x">Quality optimization with low positive factual hallucination for the HPI in hyperthyroidism admission notes using multi agent LLM with RAG</a>
+    <p class="news-card-summary">A study evaluates a multi-agent large language model system with retrieval-augmented generation RAG for drafting history of present illness in hyperthyroidism admission notes, aiming for low factual hallucination.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">October 6, 2026</span></div>
@@ -117,20 +131,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 5, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03356-0">Availability of performance evidence of approved AI diagnostic software in pathology and hematology morphology</a>
     <p class="news-card-summary">A study examines how much performance evidence is publicly available for approved AI diagnostic software in pathology and hematology morphology.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03332-8">EyeSeek: a large language model for screening and improving health literacy in primary eye care</a>
-    <p class="news-card-summary">EyeSeek is a large language model developed for screening and improving health literacy in primary eye care, described in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42827276?fc=20260609215449&amp;ff=20261003092545&amp;v=2.20.1">Recommendations for the Development and Implementation of Generative Artificial Intelligence Tools in Pediatric Clinical Care: Policy Statement</a>
-    <p class="news-card-summary">A policy statement offers recommendations for developing and implementing generative artificial intelligence tools, including large language models, in pediatric care, covering decision support, documentation, and education, along with the associated risks.</p>
   </div>
 </div>
 </div>

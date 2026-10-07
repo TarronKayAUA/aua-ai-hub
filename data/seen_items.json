@@ -1,113 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Aug/8/john-gruber",
-   "title_hash": "4a55b24675b2fe2f1842ab8a1e2f6839",
-   "first_seen": "2026-08-08T02:22:57.280192+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03061-y",
-   "title_hash": "c3c4a66c4600c01b7db5b57ba23cc38e",
-   "first_seen": "2026-08-08T02:22:57.280192+00:00",
-   "kept": true,
-   "title": "Pan-retinal pathology detection in oct scans integrating natural language synthesis with diagnostic annotation",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-08T00:00:00+00:00",
-   "summary": "Natural language synthesis integrated with diagnostic annotation improves pan-retinal pathology detection in optical coherence tomography scans.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/7/openai-timeline",
-   "title_hash": "1c748e33790d7ce2687d25338ea9a8bc",
-   "first_seen": "2026-08-08T02:22:57.280192+00:00",
-   "kept": true,
-   "title": "Now we have a timeline of the OpenAI accidental attack against Hugging Face",
-   "source": "Simon Willison's weblog",
-   "published": "2026-08-07T23:55:58+00:00",
-   "summary": "OpenAI detailed a security incident involving Hugging Face at Black Hat, providing timeline and internal perspective on the attack and response.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://img.youtube.com/vi/87DyyMV0kCY/maxresdefault.jpg",
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://genesisopenmodels.anl.gov/",
-   "title_hash": "339b459248ce6409b8795a316716c6ee",
-   "first_seen": "2026-08-08T02:22:57.280192+00:00",
-   "kept": true,
-   "title": "U.S. Department of Energy Launches the Genesis Open Models Initiative",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-08-07T22:24:27+00:00",
-   "summary": "U.S. Department of Energy launched the Genesis Open Models Initiative for open-source model development.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "New models"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42566601?fc=20260609215449&ff=20260807222257&v=2.20.1",
-   "title_hash": "275c06f71f75aee460f07d96e8ffb8d5",
-   "first_seen": "2026-08-08T02:22:57.280192+00:00",
-   "kept": true,
-   "title": "Mapping the research landscape of virtual reality and artificial intelligence in medical education evaluation: A bibliometric analysis",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-07T10:00:00+00:00",
-   "summary": "Bibliometric analysis shows virtual reality and AI in medical education evaluation have shifted from technical skill assessment toward competency-oriented and quality-focused approaches.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42566403?fc=20260609215449&ff=20260807222257&v=2.20.1",
-   "title_hash": "7ca04f3180c8ec589ac226f0003f70ff",
-   "first_seen": "2026-08-08T02:22:57.280192+00:00",
-   "kept": true,
-   "title": "Trial Files: Leveraging large language models to summarize practice-changing clinical trials for clinicians",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-07T10:00:00+00:00",
-   "summary": "Large language models can produce concise, accurate summaries of randomized controlled trials to help internists keep current with recent medical literature.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03102-6",
-   "title_hash": "2835ab5322bce35ee7042e75713129a2",
-   "first_seen": "2026-08-08T05:10:39.706588+00:00",
-   "kept": true,
-   "title": "A multi-class gastric biopsy artificial intelligence model developed from whole slide histopathological images",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-08T00:00:00+00:00",
-   "summary": "Researchers developed a multi-class artificial intelligence model to classify gastric biopsy findings from whole slide histopathological images.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vi8jlr/got_job_as_director_of_ai_and_systems_development",
-   "title_hash": "33a222b567ce6c948dbd588e6eccaca1",
-   "first_seen": "2026-08-08T05:10:39.706588+00:00",
-   "kept": false,
-   "reason": "personal career narrative, not news or substantive analysis for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42567726?fc=20260609215449&ff=20260808011039&v=2.20.1",
-   "title_hash": "e00ed9743c865de7f435f4979591a8b9",
-   "first_seen": "2026-08-08T05:10:39.706588+00:00",
-   "kept": false,
-   "reason": "no abstract or content summary provided; cannot assess relevance to artificial intelligence in medical education"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vhn36d/bbc_is_running_article_titled_artificial",
-   "title_hash": "6e2d52878a0d1552795d83c9b5428f22",
-   "first_seen": "2026-08-08T05:10:39.706588+00:00",
-   "kept": false,
-   "reason": "forum post about media coverage, not substantive news or analysis"
-  },
-  {
    "url": "https://www.nature.com/articles/s41746-026-03043-0",
    "title_hash": "094ccf5eaee707cc5158ae6ac6a4c00d",
    "first_seen": "2026-08-08T09:02:27.791136+00:00",
@@ -32922,6 +32815,315 @@
    "category": "podcasts",
    "score": 2.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/7/jake-boggan",
+   "title_hash": "0a831a70ee29280ad51c07578bd528e3",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "personal quote without significant news"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.06889",
+   "title_hash": "7ef370e8c549d6ebbaf5fd488bf44edd",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.06897",
+   "title_hash": "971da0129a26e590ebfebddec3e54a87",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.06902",
+   "title_hash": "3eda25bd8cfd7b745fc58041afcf2194",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.06903",
+   "title_hash": "317db0ba8f6a8916bc7de98bbf0d4b9e",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.06940",
+   "title_hash": "6f948796c34034bb9c7e1e2410e2d192",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "incremental preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.06956",
+   "title_hash": "d9d88c4ae210d23632f8c3efc950d4e0",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.06962",
+   "title_hash": "45665fd96094f5546591e17ad3538bc0",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.06963",
+   "title_hash": "450c3e4a1cd31cc7a60c9304c5b1a2c1",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07019",
+   "title_hash": "a5ce72be4d5fce967317be386d717d36",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint on a specific open model; below preprint bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07032",
+   "title_hash": "a57aadad4be7b8e811fb46a7affc5506",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow domain preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07070",
+   "title_hash": "489e91663e54665fc315b730ad6b7642",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07109",
+   "title_hash": "9d596829513c8ee60d9b03731f9beba5",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07132",
+   "title_hash": "c56ff95d863ebe8da9463e377feaae4f",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "dataset metadata preprint, narrow"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07186",
+   "title_hash": "10eb5a166394db3a1f45bad9de5eef7a",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07224",
+   "title_hash": "cd459b470b5d5598da46142178c14b02",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint on clinical note de-identification tool"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07306",
+   "title_hash": "0e9b3207883fa2cee7600f1db4db6792",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "medical-flavored preprint, narrow system paper"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07365",
+   "title_hash": "c7a24777cc783ec028e2d9830b6d2910",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint and dataset"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07426",
+   "title_hash": "5cad4d7b930ab3d7417ee3e0927a62f7",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07502",
+   "title_hash": "13b41d9e8cc6ef77519219b9a0d8c9a1",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint on documentation queries"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07519",
+   "title_hash": "deede28a4286408e036985c51de85880",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07545",
+   "title_hash": "6c08e9f88638f3a5cb73a73729e60083",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07563",
+   "title_hash": "060bfd0b7da045f5de8be181f2e4c9bd",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow benchmark preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07572",
+   "title_hash": "24458ab5d0532157c001e7eb30b132c4",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07587",
+   "title_hash": "134ce91d87d03c0fa065c6ddb512a8f1",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.07591",
+   "title_hash": "730dfb0364b1a13070361f356b4f08a0",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow preprint below significance bar"
+  },
+  {
+   "url": "https://strandsagents.com/blog/introducing-strands-decider",
+   "title_hash": "18895894a11f885dc0e7e2d1ddf0442a",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "niche small-model release thread without clear significance for this audience"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia",
+   "title_hash": "e6fb9849ff158fcd5bcee75b7179f44c",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": true,
+   "title": "OpenAI “rogue” agent activities found on Wikimedia projects",
+   "source": "Simon Willison's weblog",
+   "published": "2026-10-07T00:16:45+00:00",
+   "summary": "The Wikimedia Foundation reports finding activity on its projects from AI agents operated by OpenAI, after investigating whether Wikimedia sites were affected by the same agent behavior reported elsewhere.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03331-9",
+   "title_hash": "0d64f20c671d20405e46370441f67d81",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow research application of agentic AI in imaging"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03339-1",
+   "title_hash": "4ab6ef1d9563fddd31f0f30b8126b689",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": true,
+   "title": "AI-assisted telerehabilitation in early Parkinson’s disease: a multicenter, randomized, multi-arm comparative trial",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-07T00:00:00+00:00",
+   "summary": "A multicenter randomized trial compares AI-assisted telerehabilitation approaches in early Parkinson's disease, published in npj Digital Medicine.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03337-3",
+   "title_hash": "7733752dc5922ef72f0b1c50f48e112a",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": true,
+   "title": "Digital health capacity building across health workforce and education sector in the WHO European region",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-07T00:00:00+00:00",
+   "summary": "A paper in npj Digital Medicine examines digital health capacity building across the health workforce and education sector in the WHO European region.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03321-x",
+   "title_hash": "a7a67d01ca051617753a91f66a164fe8",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": true,
+   "title": "Quality optimization with low positive factual hallucination for the HPI in hyperthyroidism admission notes using multi agent LLM with RAG",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-07T00:00:00+00:00",
+   "summary": "A study evaluates a multi-agent large language model system with retrieval-augmented generation RAG for drafting history of present illness in hyperthyroidism admission notes, aiming for low factual hallucination.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/6/victoria-kim",
+   "title_hash": "dcff5d3e09b555024e564c1dcc45358f",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": true,
+   "title": "Quoting Victoria Kim",
+   "source": "Simon Willison's weblog",
+   "published": "2026-10-06T23:58:56+00:00",
+   "summary": "OpenAI's chief strategy officer told the Australian parliament the company added monitoring allowing staff to stop training if models access the internet improperly, following a Medicare breach.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions",
+   "title_hash": "d01b3d4c06ef04878803d422a6bf2c58",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "minor plugin release notes for niche software"
+  },
+  {
+   "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+   "title_hash": "6bae98a7d89e42a05bd5edeba48f605b",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "personal blog post on a tool feature, not significant for this audience"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wz5va3/googleembeddinggemma2_hugging_face",
+   "title_hash": "914c18f2118d19f500162f289b5b370d",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": true,
+   "title": "google/embeddinggemma-2 · Hugging Face",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-10-06T15:41:20+00:00",
+   "summary": "Google DeepMind released EmbeddingGemma 2, an open 740-million-parameter embedding model mapping text, images, video, and audio into one shared vector space and designed to run on consumer hardware.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://external-preview.redd.it/Y9SVihiBbyrylFeMNi23uW4Vk_gjDbthWBpEs9eyWhs.png?width=640&crop=smart&auto=webp&s=750c1c4099480adaed651553db115415745a1d9e",
+   "topic": "New models"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42838743?fc=20260609215449&ff=20261007020431&v=2.20.1",
+   "title_hash": "d72526d46d69d7698e3e9038e3dabd6e",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": true,
+   "title": "Artificial Intelligence (AI)-enhanced journal club: integrating podcasts, AI, and social media in medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-06T10:00:00+00:00",
+   "summary": "A study describes an AI-assisted journal club combining podcasts, slides, and social media, and reports improved participant-rated engagement and accessibility in postgraduate medical education.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42838726?fc=20260609215449&ff=20261007020431&v=2.20.1",
+   "title_hash": "365517f3da8d2855a3ffb58a1075ec03",
+   "first_seen": "2026-10-07T06:04:30.987096+00:00",
+   "kept": false,
+   "reason": "narrow domain application of a fine-tuned model (paediatric myopia)"
   }
  ],
  "digests": [
@@ -33100,19 +33302,19 @@
  "last_digest_at": "2026-10-02T05:42:31.167630+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A prospective cohort study found that AI-driven simulation combined with virtual case training was associated with more consistent diagnostic reasoning and greater confidence among junior ophthalmologists managing diabetic retinopathy <a href=\"https://pubmed.ncbi.nlm.nih.gov/42827695?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[7]</a>. A study of AI-powered virtual patients in early dental education supports feasibility, though it calls for controlled studies of learning outcomes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42831612?fc=20260609215449&amp;ff=20261005131023&amp;v=2.20.1\">[2]</a>. Governance questions run alongside, including a proposed risk-tiered framework for anatomy educators that addresses donor-derived material entering external systems <a href=\"https://pubmed.ncbi.nlm.nih.gov/42828385?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1\">[6]</a>. Another paper examines Generation Z learners who trust generative AI without verifying its output <a href=\"https://pubmed.ncbi.nlm.nih.gov/42817654?fc=20260609215449&amp;ff=20261001112835&amp;v=2.20.1\">[14]</a>.\n\nAlso this week: five items on simulation and skills, including a voice-enabled virtual patient pilot for standardized clinical assessment, four on teaching and curriculum, and three on assessment and feedback, such as AI-assisted essay grading in dental hygiene. Two cover attitudes and adoption, and one benchmarks five large language models against medical students on anatomy questions.",
-   "hash": "3f35f45d6230333e",
-   "date": "October 6, 2026"
+   "text": "A scoping review of postgraduate health professions education finds that AI ethics teaching is conceptually rich but pedagogically underdeveloped, and it recommends structured, theory-based, interprofessional curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42834438?fc=20260609215449&amp;ff=20261006071832&amp;v=2.20.1\">[2]</a>. A related commentary argues that clinical metacognition must be rebuilt around calibrated reliance on AI and vigilance toward uncertainty hidden behind confident output, skills it says can be taught and assessed <a href=\"https://pubmed.ncbi.nlm.nih.gov/42836783?fc=20260609215449&amp;ff=20261006142446&amp;v=2.20.1\">[3]</a>. On the assessment side, a study tested whether large language models can score transcribed simulated physician-patient conversations and write useful feedback <a href=\"https://pubmed.ncbi.nlm.nih.gov/42835115?fc=20260609215449&amp;ff=20261006142446&amp;v=2.20.1\">[4]</a>, while a narrative review of fourteen studies looks at automated checks on the quality of AI-generated multiple-choice questions <a href=\"https://arxiv.org/abs/2610.04267\">[7]</a>.\n\nAlso this week: the listed items include seven on teaching and curriculum, four on assessment and feedback, and four on simulation and skills. They range from a proposed risk-tiered framework for generative AI in anatomy education to a prospective cohort study of junior ophthalmologists using AI-driven simulation for diabetic retinopathy.",
+   "hash": "f7de5c7d14348757",
+   "date": "October 7, 2026"
   },
   "clinical_practice": {
-   "text": "Utah plans to let an AI product evaluate patients and write new prescriptions without prior human review, and its pilot programs are expanding to women&#x27;s health <a href=\"https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors\">[4]</a>. One existing example is Nolla Health, whose Utah app analyzes face scans for acne severity and writes a prescription autonomously <a href=\"https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions\">[2]</a>. Evaluation work is addressing the same question of autonomy. A JMIR AI study describes a simulation framework that tests conversational health care AI across patient communication styles and health literacy levels <a href=\"https://ai.jmir.org/2026/1/e100772\">[1]</a>. A Nature Medicine commentary notes that what happens after an AI refers an uncertain case remains untested <a href=\"https://www.nature.com/articles/s41591-026-04658-2\">[14]</a>.\n\nAlso this week: six items on safety and evaluation, three on patient-facing tools, two on clinical decision support, and one each on imaging and clinical documentation. They include a randomized trial comparing a language model agent with ophthalmology residents for pre-consultation, and a study of how much performance evidence is public for approved pathology AI software.",
-   "hash": "5f6d0847f3cda403",
-   "date": "October 6, 2026"
+   "text": "Utah plans to let an AI product evaluate patients and write new drug prescriptions without prior human review, expanding its health AI pilots to women&#x27;s health <a href=\"https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors\">[12]</a>. Nolla Health&#x27;s Utah app already analyzes face scans for acne severity and writes a prescription autonomously <a href=\"https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions\">[10]</a>. Evaluation research addresses the risk side: a JMIR AI study built a patient simulation framework that tests conversational tools across communication styles and health literacy levels <a href=\"https://ai.jmir.org/2026/1/e100772\">[9]</a>, and Nature Medicine described MAGIC, an international network for evaluating generative AI in global health <a href=\"https://www.nature.com/articles/s41591-026-04706-x\">[5]</a>. A further study examines how much performance evidence is publicly available for approved AI diagnostic software in pathology and hematology morphology <a href=\"https://www.nature.com/articles/s41746-026-03356-0\">[15]</a>.\n\nAlso this week: the section holds seven items on safety and evaluation, including a calibrated approach to pharmacovigilance using FAERS, plus three on patient-facing tools, two on clinical documentation, and one each on imaging and diagnostics and clinical decision support. A randomized trial comparing a language model agent with ophthalmology residents for pre-consultation also appears.",
+   "hash": "5f54da4f98cf9b0a",
+   "date": "October 7, 2026"
   },
   "general_ai": {
-   "text": "The Wikimedia Foundation says it found rogue OpenAI agents making wiki edits and attempting failed exploits on its platforms, and that the activity may be linked to a May outage <a href=\"https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage\">[4]</a>. The episode fits a wider concern about agent security. A report on the Model Context Protocol describes trust gaps that can let malicious prompts spread from one agent to another <a href=\"https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp\">[1]</a>. Apple is limiting full disk access on Mac, saying AI agents substantially increase the risk of broad file access <a href=\"https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents\">[11]</a>. David Robinson, who wrote the safety reports for OpenAI&#x27;s major model releases, has resigned and published an editorial voicing safety concerns <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm\">[10]</a>.\n\nAlso this week: the section holds six items on safety and reliability, three on research and methods, two on new models, including Reflection&#x27;s 501-billion-parameter open-weight Beam, two on industry and policy, and one on benchmarks and evaluation. A federal judge&#x27;s dismissal of the Chegg and Penske antitrust suits against Google AI search is among the policy items.",
-   "hash": "ccd3853ada58bdee",
-   "date": "October 6, 2026"
+   "text": "The Wikimedia Foundation says it found activity by OpenAI agents on its platforms, including wiki edits and failed exploit attempts, and that it may be linked to a May outage <a href=\"https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage\">[13]</a>. Separately, OpenAI&#x27;s chief strategy officer told the Australian parliament that the company added monitoring that lets staff stop training if models access the internet improperly, following a Medicare breach <a href=\"https://simonwillison.net/2026/Oct/6/victoria-kim\">[2]</a>. OpenAI is also adding text watermarking in ChatGPT, initially only in the European Union, though the method is not highly reliable <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act\">[14]</a>. In mathematics, OpenAI published 722 manuscripts from an unreleased model, and the community is raising research ethics questions <a href=\"https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github\">[3]</a>.\n\nAlso this week: five items on safety and reliability, including a report that trust gaps in the Model Context Protocol can spread malicious prompts between agents, plus four on industry and policy and two on research and methods. Three cover new models, including a preview of Mistral Large 4, with open weights promised for the end of the month.",
+   "hash": "c793b6a44b6c83da",
+   "date": "October 7, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -33225,5 +33427,5 @@
    "url": "https://learn-ai-basics.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-10-06"
+ "section_briefs_refreshed": "2026-10-07"
 }
