@@ -280,7 +280,7 @@ Each prompt page has a side panel, "Fill In Your Details" (`_side`), with one fi
 ### 6.10 Explainer videos (data/explainer_videos.yaml, docs/javascripts/explainer-video.js)
 
 - One per page, at a `<!-- render:explainer-video -->` marker at the start of the section the film covers. scripts/layout_width.py places it as a figure: beside that section's opening paragraph from 1100px, above it on narrower screens.
-- A title-case label, then a 16:9 still from the film (1280 by 720, served from docs/assets/video/) with a play button low in the frame, never over the film's own title; under it a muted line with the length and "Plays from YouTube when you press play.", then the caption, upright and left-aligned.
+- A title-case label, then a 16:9 still from the film (1280 by 720, served from docs/assets/video/) with a play button low in the frame, never over the film's own title; under it a muted line with the length, "AI voice" when the narrator is one (the entry's `voice`; Speechify's API terms ask every use of its voices to say so, as the narration player's "Listen (AI voice)" does), and "Plays from YouTube when you press play.", then the caption, upright and left-aligned.
 - Nothing loads from YouTube until the press. The player then replaces the still in the same box and takes keyboard focus; without JavaScript the still is a link to the watch page.
 - The play button is neutral ink, not a kind color: color on this site means a kind of page.
 

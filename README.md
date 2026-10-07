@@ -157,7 +157,9 @@ official channels preferred; build strict, commit.
 caption file, then add an entry to `data/explainer_videos.yaml` (every field
 is documented in its header): the watch URL, the title and channel as
 YouTube shows them, the length in seconds and the upload time from the
-watch page, and a 16:9 still from the film under `docs/assets/video/`. Put
+watch page, who narrates it (`voice: ai` for a Speechify voice, which shows
+"AI voice" beside the length), and a 16:9 still from the film under
+`docs/assets/video/`. Put
 `<!-- render:explainer-video -->` on its own line where the video belongs
 (the start of the section it covers); build strict, check the page, commit.
 

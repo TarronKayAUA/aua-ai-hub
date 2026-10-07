@@ -31,6 +31,9 @@
 #   label        title case, shown above the poster
 #   caption      sentence case, shown under it
 #   description  one sentence for the structured data, sentence case
+#   voice        who narrates: ai (shown as "AI voice" beside the length,
+#                because Speechify's API terms ask every use of its voices
+#                to disclose that the voice is AI-generated) or human
 
 - page: pathway/how-ai-works.md
   # Verified 2026-10-07 from YouTube: public, embeddable (playableInEmbed),
@@ -46,3 +49,5 @@
   label: The Two-Minute Version
   caption: A narrated, animated walk through the core idea, with captions. The trial in it is made up, and so are its numbers.
   description: How a large language model produces an answer, why it can state a guess as confidently as a fact, and three consequences for your own use.
+  # Speechify wyatt_32, the Hub's static-page narrator (added 2026-10-07).
+  voice: ai

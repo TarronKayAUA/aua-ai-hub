@@ -1424,7 +1424,11 @@ def _render_guide_videos_per_tool(config, markdown: str) -> str:
 # player only when pressed (docs/javascripts/explainer-video.js).
 
 EXPLAINER_FIELDS = ("page", "url", "title", "channel", "seconds", "uploaded",
-                    "poster", "label", "caption", "description")
+                    "poster", "label", "caption", "description", "voice")
+# The narrator, which the reader is told before pressing play: Speechify's API
+# terms ask every use of its voices to disclose that the voice is AI-generated
+# (the same reason as the narration player's "Listen (AI voice)").
+EXPLAINER_VOICES = {"ai": "AI voice", "human": ""}
 _EXPLAINERS: dict = {}
 
 
@@ -1454,6 +1458,8 @@ def _load_explainer_videos(config) -> dict:
             raise ValueError(f"{where}: uploaded needs its UTC offset, as the watch page gives it")
         if not isinstance(e["seconds"], int) or e["seconds"] <= 0:
             raise ValueError(f"{where}: seconds must be a whole number above zero")
+        if e["voice"] not in EXPLAINER_VOICES:
+            raise ValueError(f"{where}: voice must be one of {', '.join(EXPLAINER_VOICES)}, got {e['voice']!r}")
         for field in ("label", "caption", "description"):
             if "—" in e[field]:
                 raise ValueError(f"{where}: {field} contains an em dash (site style)")
@@ -1486,6 +1492,7 @@ def _render_explainer_video(entry: dict, src: str) -> str:
     vid = _youtube_id(entry["url"])
     esc = lambda s: html.escape(str(s), quote=True)  # noqa: E731
     length = _clock(entry["seconds"])
+    voice = EXPLAINER_VOICES[entry["voice"]]
     poster = f"{_page_root(src)}assets/video/{entry['poster']}"
     # One line per element and no blank line inside: Python-Markdown keeps a
     # raw <figure> block whole only while it is unbroken.
@@ -1494,12 +1501,13 @@ def _render_explainer_video(entry: dict, src: str) -> str:
         f'<p class="ev-label">{esc(entry["label"])}</p>',
         f'<a class="ev-frame" href="{esc(entry["url"])}" target="_blank" rel="noopener" '
         f'data-ev-id="{esc(vid)}" data-ev-title="{esc(entry["title"])}" '
-        f'aria-label="Play the video: {esc(entry["label"])}, {length}. It plays from YouTube.">',
+        f'aria-label="Play the video: {esc(entry["label"])}, {length}'
+        f'{", narrated by an AI-generated voice" if voice else ""}. It plays from YouTube.">',
         f'<img src="{esc(poster)}" alt="" width="1280" height="720" loading="lazy" decoding="async">',
         '<span class="ev-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30">'
         '<path d="M8.5 5.6v12.8L18.7 12z" fill="currentColor"/></svg></span>',
         '</a>',
-        f'<figcaption><span class="ev-note">{length} · Plays from YouTube when you press play.</span>'
+        f'<figcaption><span class="ev-note">{length}{" · " + voice if voice else ""} · Plays from YouTube when you press play.</span>'
         f'<span class="ev-cap">{esc(entry["caption"])}</span></figcaption>',
         '</figure>',
     ])
