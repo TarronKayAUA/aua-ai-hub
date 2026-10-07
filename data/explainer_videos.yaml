@@ -36,15 +36,17 @@
 #                to disclose that the voice is AI-generated) or human
 
 - page: pathway/how-ai-works.md
-  # Verified 2026-10-07 from YouTube: public, embeddable (playableInEmbed),
-  # 126 seconds, uploaded 2026-10-07T11:04:48-07:00, English caption track
-  # uploaded by the owner (vssId .en, not an automatic a.en track); oEmbed
-  # title and channel as written below.
-  url: https://www.youtube.com/watch?v=8nCyGX1H1Zo
+  # Re-uploaded 2026-10-07 with the shared intro and outro cards (the first
+  # upload, 8nCyGX1H1Zo, was deleted by the owner). Verified the same day
+  # from YouTube: public, embeddable (playableInEmbed), 140 seconds, uploaded
+  # 2026-10-07T16:39:20-07:00, English caption track uploaded by the owner
+  # (vssId .en, beside the automatic a.en); oEmbed title and channel as
+  # written below.
+  url: https://www.youtube.com/watch?v=PV5WZHdeAlk
   title: Module 1 - How AI Works
   channel: Dr. Tarron Kay
-  seconds: 126
-  uploaded: "2026-10-07T11:04:48-07:00"
+  seconds: 140
+  uploaded: "2026-10-07T16:39:20-07:00"
   poster: module1-how-ai-works.jpg
   label: The Two-Minute Version
   caption: A narrated, animated walk through the core idea, with captions. The trial in it is made up, and so are its numbers.
