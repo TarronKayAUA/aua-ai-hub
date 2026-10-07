@@ -140,6 +140,15 @@ def coherent(conf: dict, changes: dict, today_iso: str) -> str:
             and start[:4] not in years):
         return (f"start {start} is a different edition from {conf.get('name')!r}; "
                 f"rename and redate the entry by hand")
+    # The same for a new end alone (independent review, 2026-10-07): an end
+    # in another year belongs to another edition too, unless the event just
+    # runs over New Year, ending within 31 days of a start in the named year.
+    if ("end_date" in changes and years and ISO_DATE.match(end)
+            and end[:4] not in years
+            and not (ISO_DATE.match(start) and start[:4] in years
+                     and (date.fromisoformat(end) - date.fromisoformat(start)).days <= 31)):
+        return (f"end {end} is a different edition from {conf.get('name')!r}; "
+                f"rename and redate the entry by hand")
     return ""
 
 

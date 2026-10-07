@@ -144,8 +144,9 @@ llm:
   # all reviewed with the owner before the switch: the conference watch
   # read next-edition dates Haiku 4.5 missed (AMEE 2027 in Helsinki, SAIL
   # 2027), which in auto mode would have redated "AMEE 2026" to 2027, so
-  # conference_watch.coherent now keeps a start in another year than the
-  # entry's name as a proposal; content_verify marks a blurb "unknown"
+  # conference_watch.coherent now keeps a start (or an end, unless the
+  # event just runs over New Year) in another year than the entry's name
+  # as a proposal; content_verify marks a blurb "unknown"
   # more often where the vendor's page does not show what it claims (six
   # verify items against one); and the opportunity screen keeps a little
   # more widely (ten against eight, the two extras general developer
@@ -207,7 +208,10 @@ llm:
     # Date extraction from each conference's official page, every second
     # day. claude-haiku-5-5 since 2026-10-07; 8000, not 16000, because
     # conference_watch.py gives each call 90 seconds and a ceiling the
-    # timeout cuts off first is no ceiling at all.
+    # timeout cuts off first is no ceiling at all. The live check measured
+    # 142 to 237 output tokens a second (14 calls), so a full 8000 would
+    # take about a minute at the slowest: inside the timeout, but measured
+    # on one day, so watch the first weeks' stop reasons and times.
     conference_watch:
       provider: anthropic
       model: claude-haiku-5-5
