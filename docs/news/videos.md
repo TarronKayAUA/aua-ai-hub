@@ -13,6 +13,30 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=Wkaw03p3BrM" target="_blank" rel="noopener" title="DeepMind&#x27;s New AI Just Cracked The Code Of Life">
+  <img src="https://i4.ytimg.com/vi/Wkaw03p3BrM/hqdefault.jpg" alt="Video: Overview of DeepMind&#x27;s AlphaGenome Atlas for genome interpretation" loading="lazy">
+  <span class="video-card-title">Overview of DeepMind&#x27;s AlphaGenome Atlas for genome interpretation</span>
+  <span class="video-card-meta">Two Minute Papers, October 7, 2026</span>
+  <span class="video-card-desc">Covers Google DeepMind&#x27;s AlphaGenome Atlas, an AI system for interpreting genome sequences, with an overview of what it predicts and why it matters for genetics research.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=fTGIV3e8dTU" target="_blank" rel="noopener" title="OpenAI&#x27;s secret model just BROKE math...">
+  <img src="https://i3.ytimg.com/vi/fTGIV3e8dTU/hqdefault.jpg" alt="Video: OpenAI releases 722 AI-generated math manuscripts and verification questions" loading="lazy">
+  <span class="video-card-title">OpenAI releases 722 AI-generated math manuscripts and verification questions</span>
+  <span class="video-card-meta">Wes Roth, October 7, 2026</span>
+  <span class="video-card-desc">Discusses OpenAI&#x27;s release of 722 mathematical manuscripts produced by an unreleased model and the challenge of verifying AI-generated frontier mathematics.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=Hu1JOK6aXsI" target="_blank" rel="noopener" title="Mistral is BACK! (Le Chonk)">
+  <img src="https://i1.ytimg.com/vi/Hu1JOK6aXsI/hqdefault.jpg" alt="Video: Overview of the Mistral Large 4 release" loading="lazy">
+  <span class="video-card-title">Overview of the Mistral Large 4 release</span>
+  <span class="video-card-meta">Matthew Berman, October 7, 2026</span>
+  <span class="video-card-desc">Reviews the Mistral Large 4 release, covering what the model offers and how it compares with other current models.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=OyzP0Rgiz2I" target="_blank" rel="noopener" title="Mistral Is BACK, Mistral Large 4 First Test (Le Chonk!)">
+  <img src="https://i4.ytimg.com/vi/OyzP0Rgiz2I/hqdefault.jpg" alt="Video: Hands-on first tests of Mistral Large 4 on coding tasks" loading="lazy">
+  <span class="video-card-title">Hands-on first tests of Mistral Large 4 on coding tasks</span>
+  <span class="video-card-meta">Bijan Bowen, October 6, 2026</span>
+  <span class="video-card-desc">Hands-on first test of Mistral Large 4 covering its technical details and practical tasks such as browser OS, C++ and Blender and Godot coding.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=qZBibWYcKH4" target="_blank" rel="noopener" title="How AI Models Scale Beyond a Single GPU Across LLM Workloads">
   <img src="https://i2.ytimg.com/vi/qZBibWYcKH4/hqdefault.jpg" alt="Video: Explainer on distributing large AI models across multiple GPUs" loading="lazy">
   <span class="video-card-title">Explainer on distributing large AI models across multiple GPUs</span>
@@ -109,35 +133,17 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-meta">WorldofAI, September 30, 2026</span>
   <span class="video-card-desc">An independent reviewer presents early benchmark tests of Google&#x27;s Gemini 4 Argon using his own testing tool, showing how the model performs on various tasks.</span>
 </a>
-<a class="video-card" href="https://www.youtube.com/watch?v=dHn0qzSDMO0" target="_blank" rel="noopener" title="Can you trust your chatbot? Inside three AI-powered cyberattacks">
-  <img src="https://i1.ytimg.com/vi/dHn0qzSDMO0/hqdefault.jpg" alt="Video: Three AI-powered cyberattacks involving chatbots and how to guard against them" loading="lazy">
-  <span class="video-card-title">Three AI-powered cyberattacks involving chatbots and how to guard against them</span>
-  <span class="video-card-meta">IBM Technology, September 30, 2026</span>
-  <span class="video-card-desc">Explains three cyberattacks that used AI chatbots, including how a chatbot can return a fraudulent customer service number, and what users and organizations can do to reduce the risk.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=uJNP_FdlR3I" target="_blank" rel="noopener" title="GPT-6.1 Sol IS INSANE! + OpenAI&#x27;s DevDay: Dots, Pro 500, Ultrafast, Codex &amp; More! AI NEWS">
-  <img src="https://i2.ytimg.com/vi/uJNP_FdlR3I/hqdefault.jpg" alt="Video: GPT-6.1 Sol release and OpenAI DevDay announcements roundup" loading="lazy">
-  <span class="video-card-title">GPT-6.1 Sol release and OpenAI DevDay announcements roundup</span>
-  <span class="video-card-meta">WorldofAI, September 30, 2026</span>
-  <span class="video-card-desc">News roundup covering the GPT-6.1 Sol release and announcements from OpenAI&#x27;s DevDay, including Codex and other new products, giving viewers a quick overview of the changes.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=WxuGIqpkfdc" target="_blank" rel="noopener" title="GPT-6.1 Sol Is HERE, Can THIS Beat Claude Opus 5.5?">
-  <img src="https://i4.ytimg.com/vi/WxuGIqpkfdc/hqdefault.jpg" alt="Video: Hands-on testing of GPT-6.1 Sol against Claude Opus 5.5" loading="lazy">
-  <span class="video-card-title">Hands-on testing of GPT-6.1 Sol against Claude Opus 5.5</span>
-  <span class="video-card-meta">Bijan Bowen, September 30, 2026</span>
-  <span class="video-card-desc">Hands-on testing of GPT-6.1 Sol against Claude Opus 5.5, with a technical look and practical tests such as a pool party scene and a browser-based operating system build.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=T-E7rmD6rh4" target="_blank" rel="noopener" title="Sonnet 5.5 Is Here. Look What It Can Build.">
-  <img src="https://i1.ytimg.com/vi/T-E7rmD6rh4/hqdefault.jpg" alt="Video: Claude Sonnet 5.5 capabilities demonstration" loading="lazy">
-  <span class="video-card-title">Claude Sonnet 5.5 capabilities demonstration</span>
-  <span class="video-card-meta">Matthew Berman, September 29, 2026</span>
-  <span class="video-card-desc">Hands-on demonstration of Claude Sonnet 5.5 capabilities and what it can build.</span>
-</a>
 </div>
 
 ## Medical AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=X_xgRiS6-Ns" target="_blank" rel="noopener" title="MedAI #166: Med.ai ASK: An Agentic System for Biomedical Question Answering | Nhung Nguyen">
+  <img src="https://i1.ytimg.com/vi/X_xgRiS6-Ns/hqdefault.jpg" alt="Video: Stanford MedAI seminar on an agentic biomedical question answering system" loading="lazy">
+  <span class="video-card-title">Stanford MedAI seminar on an agentic biomedical question answering system</span>
+  <span class="video-card-meta">Stanford MedAI, October 7, 2026</span>
+  <span class="video-card-desc">Stanford MedAI seminar where Nhung Nguyen presents Med.ai ASK, an agentic system that answers biomedical questions, with discussion of its design and evaluation.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=9ur6K26Drro" target="_blank" rel="noopener" title="AIMI Symposium 2026 Highlights">
   <img src="https://i2.ytimg.com/vi/9ur6K26Drro/hqdefault.jpg" alt="Video: Highlights from the 2026 Stanford AIMI Symposium on AI in medicine" loading="lazy">
   <span class="video-card-title">Highlights from the 2026 Stanford AIMI Symposium on AI in medicine</span>
@@ -179,12 +185,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Toward a radiology foundation model</span>
   <span class="video-card-meta">Stanford AIMI, August 21, 2026</span>
   <span class="video-card-desc">Curt Langlotz discusses foundation models for radiology and their role in clinical practice and medical education.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=q0PRCtu_eOs" target="_blank" rel="noopener" title="AI for Publication vs AI for Improved Patient Outcomes | AIMI Pediatric Symposium 2026 #AIMI26">
-  <img src="https://i2.ytimg.com/vi/q0PRCtu_eOs/hqdefault.jpg" alt="Video: AI for publication versus improved patient outcomes" loading="lazy">
-  <span class="video-card-title">AI for publication versus improved patient outcomes</span>
-  <span class="video-card-meta">Stanford AIMI, July 13, 2026</span>
-  <span class="video-card-desc">Panel discussion on the tensions between using AI to advance academic publication versus directly improving patient outcomes in pediatrics.</span>
 </a>
 </div>
 

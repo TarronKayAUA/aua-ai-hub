@@ -21,14 +21,50 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">4</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42840634?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1">Beyond Perceived Evaluation: Interventional Studies of Artificial Intelligence Use in Medical Education</a>
+    <p class="news-card-summary">A publication examines interventional studies of AI use in medical education, looking beyond learner perception surveys toward measured effects of AI on educational outcomes.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42840383?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1">Generative Artificial Intelligence-Driven Audio Learning Materials for Clinician-Educators: An Exploratory Feasibility Study of Radio- and Narrative-Style Podcasts Using NotebookLM</a>
+    <p class="news-card-summary">An exploratory study used Google&#x27;s NotebookLM to generate radio- and narrative-style podcasts for clinician-educators, finding it feasible but needing human curation and learner evaluation for accuracy.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42839253?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1">How does AI-generated assessment compare to expert assessment in simulation-based experiences: Analyzing AI-human interrater reliability</a>
+    <p class="news-card-summary">A study compared AI-generated scoring and feedback with expert assessment in simulation-based experiences, finding agreement required iterative prompt refinement and worked better for content-specific than context-dependent rubric items.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/10/07/maryland-ai-research-raised-more-questions">A University’s Research on Its Own AI Tool Raised More Questions Than Answers</a>
+    <p class="news-card-summary">The University of Maryland ran a randomized controlled trial of its own virtual study assistant, but only 15 percent of participating students used it, limiting conclusions.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-10/Robot_student_duel_laptops.jpg?itok=pYV5xnqw" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03337-3">Digital health capacity building across health workforce and education sector in the WHO European region</a>
     <p class="news-card-summary">A paper in npj Digital Medicine examines digital health capacity building across the health workforce and education sector in the WHO European region.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03336-4">An examiner-conditioned AI second marker for VR OSCEs</a>
+    <p class="news-card-summary">An npj Digital Medicine paper describes an AI second marker conditioned on individual examiners for virtual reality objective structured clinical examinations OSCEs .</p>
   </div>
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
@@ -66,6 +102,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">A study describes an AI-assisted journal club combining podcasts, slides, and social media, and reports improved participant-rated engagement and accessibility in postgraduate medical education.</p>
   </div>
 </div>
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 6, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42839181?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1">Concordance of five large language models with infectious diseases physicians on clinical decision-making: a multi-model comparative survey study</a>
+    <p class="news-card-summary">A survey study compared five large language models with infectious diseases physicians on case-based multiple-choice questions, finding most models agreed with guidelines more often than physicians, though this reflects test accuracy, not clinical superiority.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">October 6, 2026</span></div>
@@ -85,48 +128,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 5, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42831612?fc=20260609215449&amp;ff=20261005131023&amp;v=2.20.1">AI-Powered Virtual Patients in Health Professions Education: Learner Engagement and Knowledge Application</a>
     <p class="news-card-summary">A study of AI-powered virtual patients in early dental education supports feasibility and perceived value for learner engagement, and calls for controlled studies of effects on learning outcomes and skills.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42829683?fc=20260609215449&amp;ff=20261004100559&amp;v=2.20.1">Exploring the impact of artificial intelligence on dental education: Benefits, challenges, and future directions - A systematic review of the literature</a>
-    <p class="news-card-summary">A systematic review examines the benefits, challenges, and future directions of artificial intelligence in dental education, including its effects on efficiency and learning opportunities.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42829668?fc=20260609215449&amp;ff=20261004100559&amp;v=2.20.1">AI-Enhanced Virtual Simulation as an Adjunct to Skills Laboratory and Clinical Training in Radiography Education: A Commentary from Somalia and Other Resource-Constrained Settin</a>
-    <p class="news-card-summary">A commentary from Somalia argues that AI-enhanced virtual simulation can supplement skills laboratory and clinical training in radiography education in resource-constrained settings, and that evidence for virtual reality, digital simulation, and AI simulation should be.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 4, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42830264?fc=20260609215449&amp;ff=20261005014557&amp;v=2.20.1">AI-Assisted Rubric-Based Essay Grading in Dental Hygiene Education: A retrospective observational study</a>
-    <p class="news-card-summary">A retrospective study examines how consistently a large language model grades reflective, professionalism-focused essays against a rubric in dental hygiene education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42828385?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1">Governing Generative Artificial Intelligence in Anatomy Education: A Proposed Risk-Tiered Framework for Donor-Derived Material, Anatomical Fidelity, and Assessment</a>
-    <p class="news-card-summary">A proposed risk-tiered framework guides anatomy educators on using generative AI, covering entry of donor-derived material into external systems, anatomical accuracy of outputs, and assessment design.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 3, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42827695?fc=20260609215449&amp;ff=20261004015819&amp;v=2.20.1">Effect of AI-driven simulation integrated with virtual case-based training on diagnostic and therapeutic reasoning homogenization among junior ophthalmologists: a prospective cohort study</a>
-    <p class="news-card-summary">A prospective cohort study found that AI-driven simulation combined with virtual case training was associated with more consistent diagnostic reasoning and greater confidence among junior ophthalmologists managing diabetic retinopathy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 2, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e94109">Machine Learning for Human-Autonomy Teaming in Surgical Skill Assessment: Scoping Review</a>
-    <p class="news-card-summary">A scoping review maps machine learning methods for assessing surgical skill, aiming to support adaptive, real-time guidance in partnerships between surgeons and intelligent systems.</p>
   </div>
 </div>
 </div>

@@ -21,9 +21,25 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis">STAT+: Why health AI pilots in Utah may be on a collision course with the FDA</a>
+    <p class="news-card-summary">STAT examines unresolved regulatory questions around Utah&#x27;s AI sandbox for health AI pilots and how they may conflict with US Food and Drug Administration oversight.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/10/AIPrognosis_Wordpress_aipills-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://medicalfuturist.com/five-ideas-that-help-make-sense-of-ai-in-medicine">Five Ideas That Help Make Sense of AI in Medicine</a>
+    <p class="news-card-summary">The Medical Futurist offers five conceptual ideas intended to help readers interpret the steady stream of AI models and benchmarks in medicine.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2023/02/0208_ai_course_header_alternative-01_720.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
@@ -36,6 +52,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03321-x">Quality optimization with low positive factual hallucination for the HPI in hyperthyroidism admission notes using multi agent LLM with RAG</a>
     <p class="news-card-summary">A study evaluates a multi-agent large language model system with retrieval-augmented generation RAG for drafting history of present illness in hyperthyroidism admission notes, aiming for low factual hallucination.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03335-5">Participant-reported minimum acceptable sensitivity and specificity for artificial intelligence-based disease detection</a>
+    <p class="news-card-summary">An npj Digital Medicine study reports the minimum sensitivity and specificity that participants consider acceptable for AI-based disease detection.</p>
   </div>
 </div>
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -110,27 +133,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Utah plans to let an AI product evaluate patients and write new drug prescriptions without prior human review, expanding its health AI pilot programs to include women&#x27;s health.</p>
   </div>
   <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/10/AdobeStock_581923002-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="other">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.statnews.com/2026/10/05/could-ai-win-nobel-prize-medicine">Opinion: Will Claude ever win a Nobel Prize for medicine?</a>
-    <p class="news-card-summary">Physician Jeffrey Flier asks in an opinion piece whether Nobel Prizes in medicine could one day go to AI systems such as Claude or ChatGPT rather than human scientists.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/10/AdobeStock_1946111074_Editorial_Use_Only-1-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03232-x">Standardized pre-consultation by a large language model agent vs ophthalmology residents: a randomized clinical trial</a>
-    <p class="news-card-summary">A randomized clinical trial compared a large language model agent with ophthalmology residents for standardized pre-consultation, assessing how well the AI collects patient history before the visit.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03356-0">Availability of performance evidence of approved AI diagnostic software in pathology and hematology morphology</a>
-    <p class="news-card-summary">A study examines how much performance evidence is publicly available for approved AI diagnostic software in pathology and hematology morphology.</p>
-  </div>
 </div>
 </div>
