@@ -72,3 +72,22 @@
   description: "How to brief an AI assistant the way you would brief a capable new colleague: four habits for a better first draft, asking for reasoning you can check, and matching the check to the stakes."
   # Speechify wyatt_32, the Hub's static-page narrator.
   voice: ai
+
+- page: pathway/rules.md
+  # Verified 2026-10-07 from YouTube: public, embeddable (playableInEmbed),
+  # 219 seconds, uploaded 2026-10-07T18:43:28-07:00, English caption track
+  # uploaded by the owner (vssId .en); oEmbed title and channel as written
+  # below. Poster: the film's own intro card by day. Every scene of the film
+  # has the committee report at the foot of the frame, where a phone's play
+  # button would cover its title; the card leaves the button on open sky.
+  url: https://www.youtube.com/watch?v=fXsTEdJn2CA
+  title: Module 3 - The Policy in Practice
+  channel: Dr. Tarron Kay
+  seconds: 219
+  uploaded: "2026-10-07T18:43:28-07:00"
+  poster: module3-the-policy-in-practice.jpg
+  label: The Three-Minute Version
+  caption: A narrated, animated ride through the core idea, with captions. The citation and the case in it are made up.
+  description: "A guide to the parts of the AI Responsible Use Policy that come up most, and why each one works in your favor: checking before you rely on AI, standing behind the result, saying where AI helped, and thinking about where information goes."
+  # Speechify wyatt_32, the Hub's static-page narrator.
+  voice: ai

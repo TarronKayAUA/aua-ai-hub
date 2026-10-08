@@ -14,6 +14,8 @@ last_reviewed: 2026-09-26
 
 ## The Core Idea
 
+<!-- render:explainer-video -->
+
 AUA encourages artificial intelligence (AI) use where it helps you do your work. The [AI Responsible Use Policy](../governance/policy.md) is the one reference for how, and it is short enough to read in a sitting. This module is a guide to it rather than a substitute: it points to the parts that come up most, and explains why each one is worth doing for your own sake.
 
 1. **Check before you rely on it.** Models write fluent errors and cite papers that do not exist, which is why the policy asks you to verify AI output and to check references at their source (section B of [Responsible Use](../governance/policy.md#responsible-use)). A fabricated citation is quick to catch at your desk and much harder to explain once a reviewer or an examiner finds it. The same section asks that course materials and the established literature stay the main source for foundational knowledge: they are what an AI explanation can be checked against, and for students they are what exams are written from, so an AI earns its place as a study partner for them rather than a replacement.
