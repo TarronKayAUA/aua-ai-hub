@@ -21,9 +21,31 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients">STAT+: Why this startup is taking its AI to predict breast cancer risk directly to patients</a>
+    <p class="news-card-summary">A startup is offering its AI breast cancer risk prediction tool directly to patients rather than waiting for clinician and insurer adoption.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/10/AdobeStock_295013946-645x645.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03346-2">Early epilepsy detection from electronic health records with large language models</a>
+    <p class="news-card-summary">An npj Digital Medicine study evaluates large language models for detecting epilepsy early from electronic health records.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03344-4">Beyond language: embodiment, interpersonal synchrony, and multisensory interaction in AI-mediated psychotherapy</a>
+    <p class="news-card-summary">An npj Digital Medicine article examines embodiment, interpersonal synchrony, and multisensory interaction as factors beyond language in AI-mediated psychotherapy.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 7, 2026</span></div>
@@ -109,27 +131,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 6, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04706-x">MAGIC: an international network for evaluating generative artificial intelligence in global health</a>
     <p class="news-card-summary">Nature Medicine describes MAGIC, an international network formed to evaluate generative artificial intelligence tools in global health settings.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="imaging-and-diagnostics">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04626-w">An open vision-language model for diverse medical applications</a>
-    <p class="news-card-summary">Nature Medicine publishes MedGemma, an open collection of medical vision-language models based on Gemma 3 that outperform similarly sized generative models on medical image and text tasks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03273-2">Calibrated AI approach to pharmacovigilance using FAERS</a>
-    <p class="news-card-summary">A study presents a calibrated artificial intelligence approach to pharmacovigilance drug safety monitoring using the FDA Adverse Event Reporting System FAERS database.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03345-3">A legal and ethical architecture for a surgical video data registry in England</a>
-    <p class="news-card-summary">A paper outlines a legal and ethical framework for a national surgical video data registry in England, relevant to governance of video data used for AI development.</p>
   </div>
 </div>
 </div>

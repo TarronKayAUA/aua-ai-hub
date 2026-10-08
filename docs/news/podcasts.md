@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/ai-am-a-level-we-shouldn-t-pass-notes-from-the-curve-tokens-vs-salaries-is-saas-cooked" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/5d1fb616-c2fb-11f1-bafc-cff9298597f8/image/aef7552479d90fcc19ab25212ac884c5.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI:AM: A Level We Shouldn&#x27;t Pass? Notes from The Curve + Tokens vs. Salaries &amp; Is SaaS Cooked?" loading="lazy">
+  <span class="video-card-title">AI:AM: A Level We Shouldn&#x27;t Pass? Notes from The Curve + Tokens vs. Salaries &amp; Is SaaS Cooked?</span>
+  <span class="video-card-meta">The Cognitive Revolution, October 8, 2026</span>
+  <span class="video-card-desc">Nathan Labenz reports from The Curve conference on frontier lab leaders&#x27; views of shortened AI timelines and risk thresholds, with discussion of AI chip hardware and whether software-as-a-service businesses are threatened.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Best-Way-to-Test-New-AI-Models-e3q3meu" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Best Way to Test New AI Models" loading="lazy">
   <span class="video-card-title">The Best Way to Test New AI Models</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">When Does AI Help Learning - and When Does It Replace It?</span>
   <span class="video-card-meta">AI in Education Podcast, August 20, 2026</span>
   <span class="video-card-desc">Researchers discuss evidence on when generative AI supports versus replaces learning, drawing on recent studies of student outcomes.</span>
-</a>
-<a class="video-card" href="https://ai-podcast.nejm.org/e/dr-suchi-saria-on-building-ai-that-changes-care" target="_blank" rel="noopener">
-  <img src="https://pbcdn1.podbean.com/imglogo/image-logo/14988821/NEJM_AIGR_ID_RGB-3000.jpg" alt="Podcast: Dr. Suchi Saria on Building AI That Changes Care" loading="lazy">
-  <span class="video-card-title">Dr. Suchi Saria on Building AI That Changes Care</span>
-  <span class="video-card-meta">NEJM AI Grand Rounds, August 19, 2026</span>
-  <span class="video-card-desc">Suchi Saria, Johns Hopkins faculty and Bayesian Health CEO, discusses building AI systems to detect early warning signals of patient deterioration buried in electronic health records.</span>
 </a>
 </div>

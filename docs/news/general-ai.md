@@ -21,9 +21,41 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline">Google’s AI note-taking app transcribes your meetings completely offline</a>
+    <p class="news-card-summary">Google released an experimental, free macOS note-taking app called Google AI Edge Foresight that transcribes and summarizes meetings and audio files entirely offline using the on-device EmbeddingGemma 2 model.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/03/STK093_Google_02.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise">Google is launching a one-stop Gemini agent for your work tasks</a>
+    <p class="news-card-summary">Google announced a universal Gemini agent in the Gemini Enterprise app that works across apps and devices in the background and accepts tasks from a single chat interface.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Gemini.max-2000x2000-1.png?quality=90&amp;strip=all&amp;crop=0%2C3.4845840605003%2C100%2C93.030831878999&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free">Can you trust Meta’s Muse or OpenAI’s Dots to run your life?</a>
+    <p class="news-card-summary">The Verge&#x27;s Decoder discusses a new wave of consumer-friendly AI agents, including Meta&#x27;s Muse and OpenAI&#x27;s Dots, and whether people can trust them with daily tasks.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DCD_AI_Agents.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1x0n4pt/last_week_some_of_south_koreas_biggest_banks_were">Last week some of South Korea&#x27;s biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)</a>
+    <p class="news-card-summary">A CrowdStrike report indicates a cyberattack on major South Korean banks may have been carried out by a single person using an open-source AI penetration testing toolset.</p>
+  </div>
+  <img class="news-card-thumb" src="https://preview.redd.it/8qx5q9h6w7uh1.jpg?width=140&amp;height=66&amp;auto=webp&amp;s=06f669b0c96a66f9ccdb33fe1d266bb697c3894a" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">October 8, 2026</span></div>
@@ -71,6 +103,14 @@ Items are selected several times a day by an automated pipeline and the summarie
   </div>
   <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/07/synthid-fingerprint-500x500.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Hugging Face blog</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://huggingface.co/blog/tiiuae/falcon-asr">Introducing Falcon ASR</a>
+    <p class="news-card-summary">Hugging Face introduces Falcon ASR, a speech recognition model, in a new blog post.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn-uploads.huggingface.co/production/uploads/671a3e44cf97dc64441e170a/bJ2aGPIX6WLWagE10j5y3.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 7, 2026</span></div>
@@ -100,45 +140,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">OpenAI published 722 manuscripts with solutions to long-standing mathematics problems produced by an unreleased frontier model, prompting both interest and questions about research ethics in the mathematical community.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/gettyimages-2297765991.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.744316765259%2C100%2C78.511366469482&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/ai/2026/10/openai-will-watermark-chatgpt-outputs-by-default-but-only-in-the-eu">OpenAI will watermark ChatGPT outputs by default, but only in the EU</a>
-    <p class="news-card-summary">OpenAI will watermark ChatGPT outputs by default in the European Union only, though the method is not highly reliable and can be circumvented.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/09/chatgpt-icon-500x500-1789154135.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Oct/6/le-chonk">Introducing Mistral Large 4: Le chonk</a>
-    <p class="news-card-summary">Mistral released a preview of Mistral Large 4, a 1 trillion parameter model with 49 billion active parameters, available through its API, with open weights promised for the end of the month.</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026-10-06/mistral-large-4-pelican.webp" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/column/1005697/we-cant-just-change-the-definition-of-recording">We can’t just change the definition of ‘recording’</a>
-    <p class="news-card-summary">The Verge argues that AI hardware with always-on microphones and cameras is blurring what counts as a recording, raising consent and privacy questions relevant to clinical settings.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/07/268639_Meta_Adventurer_glasses_AKrales_0005.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Hacker News (LLM, 100+ points)</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2">EmbeddingGemma 2: An open, lightweight multimodal embedding model</a>
-    <p class="news-card-summary">Google released EmbeddingGemma 2, an open, lightweight multimodal embedding model that converts text and other inputs into numerical vectors for search and comparison, under the Apache 2.0 license.</p>
-  </div>
-  <img class="news-card-thumb" src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/embeddinggemma2-banner_169.width-1300.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wz5va3/googleembeddinggemma2_hugging_face">google/embeddinggemma-2 · Hugging Face</a>
-    <p class="news-card-summary">Google DeepMind released EmbeddingGemma 2, an open 740-million-parameter embedding model mapping text, images, video, and audio into one shared vector space and designed to run on consumer hardware.</p>
-  </div>
-  <img class="news-card-thumb" src="https://external-preview.redd.it/Y9SVihiBbyrylFeMNi23uW4Vk_gjDbthWBpEs9eyWhs.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=750c1c4099480adaed651553db115415745a1d9e" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

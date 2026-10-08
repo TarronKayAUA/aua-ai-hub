@@ -21,9 +21,24 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/10/08/moral-lessons-demoralized-opinion">Moral Lessons From the Demoralized</a>
+    <p class="news-card-summary">An Inside Higher Ed essay asks what standards of evidence should apply if faculty alone judge whether students cheated with AI.</p>
+  </div>
+  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-10/GettyImages-1344027558.jpg?itok=hD3t5oGZ" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03374-y">Governing cognitive labor delegated to AI in scholarly writing and medical education</a>
+    <p class="news-card-summary">A commentary in npj Digital Medicine discusses how to govern the cognitive work that scholars and trainees delegate to artificial intelligence in scholarly writing and medical education.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 7, 2026</span></div>
@@ -114,20 +129,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 6, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42835042?fc=20260609215449&amp;ff=20261006142446&amp;v=2.20.1">Evaluation of a multi-component AI-guided mechanistic reasoning practical in experimental pharmacology: a single-group pre-post study</a>
     <p class="news-card-summary">A single-group pre-post study of a pharmacology practical with an AI-guided reasoning prompt found it feasible, acceptable, and linked to better short-term scores, though the AI contribution could not be isolated.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42838743?fc=20260609215449&amp;ff=20261007020431&amp;v=2.20.1">Artificial Intelligence (AI)-enhanced journal club: integrating podcasts, AI, and social media in medical education</a>
-    <p class="news-card-summary">A study describes an AI-assisted journal club combining podcasts, slides, and social media, and reports improved participant-rated engagement and accessibility in postgraduate medical education.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="exams-and-benchmarks">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42839181?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1">Concordance of five large language models with infectious diseases physicians on clinical decision-making: a multi-model comparative survey study</a>
-    <p class="news-card-summary">A survey study compared five large language models with infectious diseases physicians on case-based multiple-choice questions, finding most models agreed with guidelines more often than physicians, though this reflects test accuracy, not clinical superiority.</p>
   </div>
 </div>
 </div>

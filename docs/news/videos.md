@@ -13,11 +13,41 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=wZFseoVpSTM" target="_blank" rel="noopener" title="Hiding in plain sight: Fake GPTs, SMTP malware and NetScaler zero-days">
+  <img src="https://i4.ytimg.com/vi/wZFseoVpSTM/hqdefault.jpg" alt="Video: Security podcast on fake GPT ads, SMTP malware and NetScaler zero-days" loading="lazy">
+  <span class="video-card-title">Security podcast on fake GPT ads, SMTP malware and NetScaler zero-days</span>
+  <span class="video-card-meta">IBM Technology, October 8, 2026</span>
+  <span class="video-card-desc">A security podcast episode discussing fraudulent ChatGPT-style ads and fake GPTs, malware spread through SMTP email transfer protocol , and zero-day flaws in NetScaler; useful background on AI-related security risks.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=6gfACqBAKfw" target="_blank" rel="noopener" title="Claude Haiku 5.5 Is a GAME CHANGER! 90% CHEAPER &amp; INSANE Performance! (Fully Tested)">
+  <img src="https://i3.ytimg.com/vi/6gfACqBAKfw/hqdefault.jpg" alt="Video: Hands-on testing of Claude Haiku 5.5 cost and performance" loading="lazy">
+  <span class="video-card-title">Hands-on testing of Claude Haiku 5.5 cost and performance</span>
+  <span class="video-card-meta">WorldofAI, October 8, 2026</span>
+  <span class="video-card-desc">An independent reviewer tests Claude Haiku 5.5 hands-on, covering its pricing relative to other models and its performance on several tasks, giving viewers a practical sense of the model&#x27;s capabilities.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=rGUzoHunuV8" target="_blank" rel="noopener" title="Claude Haiku 5.5 Is INSANE, This IS the BEST Cheap Model Yet!">
   <img src="https://i3.ytimg.com/vi/rGUzoHunuV8/hqdefault.jpg" alt="Video: Hands-on coding tests of Claude Haiku 5.5" loading="lazy">
   <span class="video-card-title">Hands-on coding tests of Claude Haiku 5.5</span>
   <span class="video-card-meta">Bijan Bowen, October 7, 2026</span>
   <span class="video-card-desc">An independent reviewer tests Claude Haiku 5.5 on practical tasks including a browser-based operating system, a C++ skateboarding game, and Blender and Godot projects, giving viewers a hands-on sense of its coding ability.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=IsL4dVezs18" target="_blank" rel="noopener" title="Introducing GPT-6 in ChatGPT with Intelligent UI">
+  <img src="https://i2.ytimg.com/vi/IsL4dVezs18/hqdefault.jpg" alt="Video: OpenAI introduces GPT-6 in ChatGPT with Intelligent UI" loading="lazy">
+  <span class="video-card-title">OpenAI introduces GPT-6 in ChatGPT with Intelligent UI</span>
+  <span class="video-card-meta">OpenAI, October 7, 2026</span>
+  <span class="video-card-desc">OpenAI announces GPT-6 in ChatGPT along with Intelligent UI, which lets ChatGPT answer with interactive interface elements rather than only text; the video demonstrates the new feature.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=_nmlHbSB8kM" target="_blank" rel="noopener" title="Stop Overpaying for Intelligence | DevDay 2026">
+  <img src="https://i4.ytimg.com/vi/_nmlHbSB8kM/hqdefault.jpg" alt="Video: DevDay session on measuring and reducing AI model costs" loading="lazy">
+  <span class="video-card-title">DevDay session on measuring and reducing AI model costs</span>
+  <span class="video-card-meta">OpenAI, October 7, 2026</span>
+  <span class="video-card-desc">A DevDay session on reducing AI costs while keeping quality, covering how to measure cost per completed task, choose models and reasoning effort, and use prompt caching.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=SXCfs7mitPo" target="_blank" rel="noopener" title="How OpenAI Puts ChatGPT to Work | DevDay 2026">
+  <img src="https://i4.ytimg.com/vi/SXCfs7mitPo/hqdefault.jpg" alt="Video: How OpenAI teams use ChatGPT in daily work" loading="lazy">
+  <span class="video-card-title">How OpenAI teams use ChatGPT in daily work</span>
+  <span class="video-card-meta">OpenAI, October 7, 2026</span>
+  <span class="video-card-desc">OpenAI staff describe how internal teams use ChatGPT to manage launches, research competitors, and turn expertise into reusable tools, offering practical workflow ideas for other organizations.</span>
 </a>
 <a class="video-card" href="https://www.youtube.com/watch?v=Wkaw03p3BrM" target="_blank" rel="noopener" title="DeepMind&#x27;s New AI Just Cracked The Code Of Life">
   <img src="https://i4.ytimg.com/vi/Wkaw03p3BrM/hqdefault.jpg" alt="Video: Overview of DeepMind&#x27;s AlphaGenome Atlas for genome interpretation" loading="lazy">
@@ -102,36 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse</span>
   <span class="video-card-meta">IBM Technology, October 2, 2026</span>
   <span class="video-card-desc">A panel discussion from IBM&#x27;s Mixture of Experts podcast on why a company would cancel a model release, plus the Sonnet 5.5 release and Meta Muse&#x27;s implications for work.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=9zVYS00N6mg" target="_blank" rel="noopener" title="MiniMax M3.1 Flash IS REALLY GOOD! INSANELY FAST &amp; FREE! (Fully Tested)">
-  <img src="https://i2.ytimg.com/vi/9zVYS00N6mg/hqdefault.jpg" alt="Video: Hands-on testing of MiniMax M3.1 Flash Preview speed and free access" loading="lazy">
-  <span class="video-card-title">Hands-on testing of MiniMax M3.1 Flash Preview speed and free access</span>
-  <span class="video-card-meta">WorldofAI, October 2, 2026</span>
-  <span class="video-card-desc">An independent reviewer runs hands-on tests of the MiniMax M3.1 Flash Preview model, covering its speed and free access through MiniMax Code, so viewers can judge its practical performance.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=_rtp1XzaP6Q" target="_blank" rel="noopener" title="OpenAI Security: Controlling Models is Now ‘Hell’">
-  <img src="https://i4.ytimg.com/vi/_rtp1XzaP6Q/hqdefault.jpg" alt="Video: AI news digest on OpenAI security, Gemini 4 Argon, and a self-improvement paper" loading="lazy">
-  <span class="video-card-title">AI news digest on OpenAI security, Gemini 4 Argon, and a self-improvement paper</span>
-  <span class="video-card-meta">AI Explained, October 1, 2026</span>
-  <span class="video-card-desc">An expert-run digest of recent AI developments, including an OpenAI security warning, a cracked cipher, Gemini 4 Argon, and a paper on recursive self-improvement co-authored by many leading researchers.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=pYH8x-Nbhbc" target="_blank" rel="noopener" title="GPT-6.1 Sol vs Claude Sonnet 5.5, This Was NOT Even CLOSE!">
-  <img src="https://i1.ytimg.com/vi/pYH8x-Nbhbc/hqdefault.jpg" alt="Video: Hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5" loading="lazy">
-  <span class="video-card-title">Hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5</span>
-  <span class="video-card-meta">Bijan Bowen, October 1, 2026</span>
-  <span class="video-card-desc">An independent reviewer runs a hands-on comparison of GPT-6.1 Sol and Claude Sonnet 5.5 using a demo derby coding prompt, with timestamps showing testing setup and each model&#x27;s result.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=HIUzrxQxTtw" target="_blank" rel="noopener" title="From deepfakes to DNA: the science of watermarking AI">
-  <img src="https://i1.ytimg.com/vi/HIUzrxQxTtw/hqdefault.jpg" alt="Video: Watermarking AI-generated content, from deepfakes to DNA, with DeepMind researchers" loading="lazy">
-  <span class="video-card-title">Watermarking AI-generated content, from deepfakes to DNA, with DeepMind researchers</span>
-  <span class="video-card-meta">Google DeepMind, October 1, 2026</span>
-  <span class="video-card-desc">Hannah Fry interviews Google DeepMind scientists Pushmeet Kohli and Jeremy Ratcliffe about watermarking AI-generated content, from deepfake images to biological sequences, and how provenance can be verified.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=YGgNBcIgI4s" target="_blank" rel="noopener" title="What Is Jev? The AI Model That Doesn&#x27;t Generate Text">
-  <img src="https://i2.ytimg.com/vi/YGgNBcIgI4s/hqdefault.jpg" alt="Video: IBM explainer on Jev, an AI model that does not generate text" loading="lazy">
-  <span class="video-card-title">IBM explainer on Jev, an AI model that does not generate text</span>
-  <span class="video-card-meta">IBM Technology, October 1, 2026</span>
-  <span class="video-card-desc">Martin Keen of IBM explains an AI model called Jev that does not generate text, describing how its approach differs from conventional language models, as an introduction to this model type.</span>
 </a>
 </div>
 
