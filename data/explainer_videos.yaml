@@ -91,3 +91,39 @@
   description: "A guide to the parts of the AI Responsible Use Policy that come up most, and why each one works in your favor: checking before you rely on AI, standing behind the result, saying where AI helped, and thinking about where information goes."
   # Speechify wyatt_32, the Hub's static-page narrator.
   voice: ai
+
+- page: pathway/teaching-assessment.md
+  # Verified 2026-10-08 from YouTube: public, embeddable (playableInEmbed),
+  # 180 seconds, uploaded 2026-10-08T03:58:30-07:00, English caption track
+  # uploaded by the owner (vssId .en); oEmbed title and channel as written
+  # below. Poster: the film's Prep station at 0:51.9, the three dishes on
+  # the pass ticked, chosen so a phone's play button sits on open board.
+  url: https://www.youtube.com/watch?v=vMVTy2VOijY
+  title: Module 4 - Teaching and Assessment
+  channel: Dr. Tarron Kay
+  seconds: 180
+  uploaded: "2026-10-08T03:58:30-07:00"
+  poster: module4-teaching-and-assessment.jpg
+  label: The Three-Minute Version
+  caption: A narrated, animated tour of the core idea, with captions. The exam questions and the course menu in it are made up.
+  description: "Where AI helps most in teaching and assessment, and where your judgment does the work: preparing a session from your own materials, reviewing every AI-drafted exam item, getting feedback on student essays with the names left out, reading a detector flag as a reason to look closer, and setting your course's expectations in the syllabus."
+  # Speechify wyatt_32, the Hub's static-page narrator.
+  voice: ai
+
+- page: pathway/research.md
+  # Verified 2026-10-08 from YouTube: public, embeddable (playableInEmbed),
+  # 235 seconds, uploaded 2026-10-08T04:04:37-07:00, English caption track
+  # uploaded by the owner (vssId .en); oEmbed title and channel as written
+  # below. Poster: the film's close at 3:25, the one star that does not
+  # move named "Accountability", chosen so the play button sits on open sky.
+  url: https://www.youtube.com/watch?v=Zpuet2RaZWA
+  title: Module 5 - Research and Scholarship
+  channel: Dr. Tarron Kay
+  seconds: 235
+  uploaded: "2026-10-08T04:04:37-07:00"
+  poster: module5-research-and-scholarship.jpg
+  label: The Four-Minute Version
+  caption: A narrated, animated night sky through the core idea, with captions. The reference list and the results in it are made up.
+  description: "Using AI in research with the same integrity standards as any other method: screening the literature for recall while you keep the judgment, checking every reference at its source, disclosing AI assistance, and protecting material that belongs to others or identifies research participants."
+  # Speechify wyatt_32, the Hub's static-page narrator.
+  voice: ai

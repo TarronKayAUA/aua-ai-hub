@@ -14,6 +14,8 @@ last_reviewed: 2026-09-01
 
 ## The Core Idea
 
+<!-- render:explainer-video -->
+
 Research offers real gains from artificial intelligence (AI) assistance (literature screening, summarization, drafting, code for analysis), and AI-assisted work is held to the same integrity standards as any other method: what you report has to be accurate and honestly described.
 
 ### Literature Work

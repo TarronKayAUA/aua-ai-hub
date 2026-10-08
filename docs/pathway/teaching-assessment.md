@@ -14,6 +14,8 @@ last_reviewed: 2026-09-01
 
 ## The Core Idea
 
+<!-- render:explainer-video -->
+
 For educators, artificial intelligence (AI) is at its best on structured generation from your materials: outlines, cases, vignettes, draft questions, rubrics, explanations at a chosen level, and alternative examples when students need a concept approached differently. It is weakest exactly where your judgment is the job: deciding what matters for your learners, judging clinical accuracy, and evaluating real student work fairly.
 
 ### Content and Session Preparation
