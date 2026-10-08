@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://aipodcast.education/the-ai-learning-paradox-better-results-less-learning" target="_blank" rel="noopener">
+  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: The AI Learning Paradox: Better Results, Less Learning?" loading="lazy">
+  <span class="video-card-title">The AI Learning Paradox: Better Results, Less Learning?</span>
+  <span class="video-card-meta">AI in Education Podcast, October 8, 2026</span>
+  <span class="video-card-desc">Hosts Ray and Dan discuss whether AI helps students learn or only produces better work, covering Australian universities&#x27; AI announcements UNSW, Flinders, University of Sydney and recent research on learning outcomes.</span>
+</a>
 <a class="video-card" href="https://www.cognitiverevolution.ai/ai-am-a-level-we-shouldn-t-pass-notes-from-the-curve-tokens-vs-salaries-is-saas-cooked" target="_blank" rel="noopener">
   <img src="https://megaphone.imgix.net/podcasts/5d1fb616-c2fb-11f1-bafc-cff9298597f8/image/aef7552479d90fcc19ab25212ac884c5.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI:AM: A Level We Shouldn&#x27;t Pass? Notes from The Curve + Tokens vs. Salaries &amp; Is SaaS Cooked?" loading="lazy">
   <span class="video-card-title">AI:AM: A Level We Shouldn&#x27;t Pass? Notes from The Curve + Tokens vs. Salaries &amp; Is SaaS Cooked?</span>
@@ -52,6 +58,12 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">What the Best Business AI Users Are Doing Different</span>
   <span class="video-card-meta">The AI Daily Brief, October 2, 2026</span>
   <span class="video-card-desc">Episode discusses KPMG research on how leading organizations scale AI agents, manage multiple models, and link AI spending to business value, offering a general view of enterprise AI adoption.</span>
+</a>
+<a class="video-card" href="https://www.nytimes.com/column/hard-fork" target="_blank" rel="noopener">
+  <img src="https://image.simplecastcdn.com/images/4105a47a-42e5-4ccc-887a-832af7989986/23965394-f5e4-4fdb-b150-639f4910353e/3000x3000/nyt-hf-album-art-3000-2.jpg?aid=rss_feed" alt="Podcast: A.I. Agents: Cute, Cuddly and Maybe Catastrophically Dangerous?" loading="lazy">
+  <span class="video-card-title">A.I. Agents: Cute, Cuddly and Maybe Catastrophically Dangerous?</span>
+  <span class="video-card-meta">Hard Fork, October 2, 2026</span>
+  <span class="video-card-desc">Hard Fork discusses the growing use of AI agents and the safety risks they may pose, offering general AI literacy on autonomous software tools.</span>
 </a>
 <a class="video-card" href="https://aipodcast.education/andrew-fuller-on-ai-neurodiversity-and-personalised-learning" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: Andrew Fuller on AI, neurodiversity and personalised learning" loading="lazy">
@@ -178,17 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo</span>
   <span class="video-card-meta">The Cognitive Revolution, August 26, 2026</span>
   <span class="video-card-desc">Interview on reinforcement learning behavior in frontier models: how reward-seeking and chain-of-thought reasoning interact, with analysis of metagaming and grader-aware reasoning.</span>
-</a>
-<a class="video-card" href="https://www.cognitiverevolution.ai/ai-in-the-am-weekly-highlights-relaunch-week-aug-17-20-2026" target="_blank" rel="noopener">
-  <img src="https://megaphone.imgix.net/podcasts/1c66427c-9e23-11f1-bdcf-eb8cc278348e/image/61122eb6e8b7af420752cdc76f260006.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)" loading="lazy">
-  <span class="video-card-title">AI in the AM, Weekly Highlights: Relaunch Week (Aug 17-20, 2026)</span>
-  <span class="video-card-meta">The Cognitive Revolution, August 22, 2026</span>
-  <span class="video-card-desc">Weekly digest covering frontier AI oversight, gaps between internal and public systems, capability deployment locations, and infrastructure costs, with multiple expert guests.</span>
-</a>
-<a class="video-card" href="https://aipodcast.education/when-does-ai-help-learning-and-when-does-it-replace-it" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: When Does AI Help Learning - and When Does It Replace It?" loading="lazy">
-  <span class="video-card-title">When Does AI Help Learning - and When Does It Replace It?</span>
-  <span class="video-card-meta">AI in Education Podcast, August 20, 2026</span>
-  <span class="video-card-desc">Researchers discuss evidence on when generative AI supports versus replaces learning, drawing on recent studies of student outcomes.</span>
 </a>
 </div>

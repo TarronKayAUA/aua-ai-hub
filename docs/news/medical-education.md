@@ -21,9 +21,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="exams-and-benchmarks">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42846137?fc=20260609215449&amp;ff=20261008172136&amp;v=2.20.1">Benchmarking large language models on a Chinese radiation oncology technology examination-preparation question set: accuracy, consensus, and efficiency for AI assisted education</a>
+    <p class="news-card-summary">DeepSeek configurations outperformed GPT models on a Chinese radiation oncology exam-preparation question set, with accuracy varying by question language; educational effectiveness was not established.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="attitudes-and-adoption">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42846015?fc=20260609215449&amp;ff=20261008172136&amp;v=2.20.1">Artificial intelligence readiness and its association with artificial intelligence literacy among Chinese medical students: a latent profile analysis</a>
+    <p class="news-card-summary">A latent profile analysis of Chinese medical students found wide variation in artificial intelligence readiness, with nearly half showing low preparedness and weak practical ability, supporting tiered curricular interventions.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42845536?fc=20260609215449&amp;ff=20261008172136&amp;v=2.20.1">Explainable Artificial Intelligence (XAI) in Medical Education: A Multi- Modal Framework for Enhancing Human-AI Collaboration</a>
+    <p class="news-card-summary">A study evaluates explainable artificial intelligence as an interactive teaching tool to improve clinical reasoning and model interpretability during AI-assisted diagnosis in medical curricula.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="assessment-and-feedback">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">October 8, 2026</span></div>
@@ -108,27 +129,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 6, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42834438?fc=20260609215449&amp;ff=20261006071832&amp;v=2.20.1">Mapping AI Ethics Integration in Postgraduate Health Professions Education: A Scoping Review Through the Lenses of Principlism and Transformative Learning</a>
     <p class="news-card-summary">A scoping review finds that artificial intelligence ethics teaching in postgraduate health professions education is conceptually rich but pedagogically underdeveloped, and recommends structured, theory-based, interprofessional curricula.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42836783?fc=20260609215449&amp;ff=20261006142446&amp;v=2.20.1">When the Algorithm Speaks First: Trust, Reliance and the Reconstruction of Clinical Metacognition</a>
-    <p class="news-card-summary">A commentary argues clinical metacognition must be rebuilt around calibrated reliance on AI, awareness of shared epistemic work, and vigilance toward uncertainty masked by confident output, all of which can be taught and assessed.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42835115?fc=20260609215449&amp;ff=20261006142446&amp;v=2.20.1">Large language model evaluation and feedback of transcribed simulated physician-patient verbal interactions</a>
-    <p class="news-card-summary">A study tested whether large language models can score transcribed simulated physician-patient conversations and produce useful narrative feedback, addressing the time cost and rater variability of manual evaluation.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42835042?fc=20260609215449&amp;ff=20261006142446&amp;v=2.20.1">Evaluation of a multi-component AI-guided mechanistic reasoning practical in experimental pharmacology: a single-group pre-post study</a>
-    <p class="news-card-summary">A single-group pre-post study of a pharmacology practical with an AI-guided reasoning prompt found it feasible, acceptable, and linked to better short-term scores, though the AI contribution could not be isolated.</p>
   </div>
 </div>
 </div>
