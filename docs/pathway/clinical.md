@@ -26,7 +26,7 @@ In patient care, the reason for caution is the patient: a model has not examined
 
 ### Patient Information
 
-A real case makes a good study prompt, and the version that works best with an AI is the teaching abstraction: an age band, a presentation pattern, the findings, and nothing that could identify the patient. A rare combination of details can identify someone as surely as a name, and a photo of a chart or a recording of an encounter carries as much as the chart itself. The pattern is what you are practicing on, and invented variations of it show you what changes the differential. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information.
+A real case makes a good study prompt, and the version that works best with an AI is the teaching abstraction: an age band, a presentation pattern, the findings, and nothing that could identify the patient. A rare combination of details can identify someone as surely as a name, and a photo of a chart or a recording of an encounter carries as much as the chart itself. The pattern is what you are practicing on, and invented variations of it show you what changes the differential. The [AI Responsible Use Policy](../governance/policy.md#responsible-use) is the reference for patient information. If practicing on a case raises something that could matter for that patient now, tell your supervising physician or the patient's nurse now, through your site's usual escalation route: the patient is the reason. And if patient details go into a tool by mistake, the [AI Committee](../governance/committee.md) can help you work out next steps.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">Two kinds of work share the word clinical</p>
