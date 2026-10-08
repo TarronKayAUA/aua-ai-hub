@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=rGUzoHunuV8" target="_blank" rel="noopener" title="Claude Haiku 5.5 Is INSANE, This IS the BEST Cheap Model Yet!">
+  <img src="https://i3.ytimg.com/vi/rGUzoHunuV8/hqdefault.jpg" alt="Video: Hands-on coding tests of Claude Haiku 5.5" loading="lazy">
+  <span class="video-card-title">Hands-on coding tests of Claude Haiku 5.5</span>
+  <span class="video-card-meta">Bijan Bowen, October 7, 2026</span>
+  <span class="video-card-desc">An independent reviewer tests Claude Haiku 5.5 on practical tasks including a browser-based operating system, a C++ skateboarding game, and Blender and Godot projects, giving viewers a hands-on sense of its coding ability.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=Wkaw03p3BrM" target="_blank" rel="noopener" title="DeepMind&#x27;s New AI Just Cracked The Code Of Life">
   <img src="https://i4.ytimg.com/vi/Wkaw03p3BrM/hqdefault.jpg" alt="Video: Overview of DeepMind&#x27;s AlphaGenome Atlas for genome interpretation" loading="lazy">
   <span class="video-card-title">Overview of DeepMind&#x27;s AlphaGenome Atlas for genome interpretation</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">IBM explainer on Jev, an AI model that does not generate text</span>
   <span class="video-card-meta">IBM Technology, October 1, 2026</span>
   <span class="video-card-desc">Martin Keen of IBM explains an AI model called Jev that does not generate text, describing how its approach differs from conventional language models, as an introduction to this model type.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=RMTWayrwYkQ" target="_blank" rel="noopener" title="Gemini 4 Argon Is Google’s Most Powerful AI Model + Early Tests!">
-  <img src="https://i3.ytimg.com/vi/RMTWayrwYkQ/hqdefault.jpg" alt="Video: Early benchmark tests of Google&#x27;s Gemini 4 Argon model" loading="lazy">
-  <span class="video-card-title">Early benchmark tests of Google&#x27;s Gemini 4 Argon model</span>
-  <span class="video-card-meta">WorldofAI, September 30, 2026</span>
-  <span class="video-card-desc">An independent reviewer presents early benchmark tests of Google&#x27;s Gemini 4 Argon using his own testing tool, showing how the model performs on various tasks.</span>
 </a>
 </div>
 

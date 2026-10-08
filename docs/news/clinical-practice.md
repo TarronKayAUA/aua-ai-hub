@@ -12,16 +12,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">Utah plans to let an AI product evaluate patients and write new drug prescriptions without prior human review, expanding its health AI pilots to women&#x27;s health <a href="https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors" aria-label="Source 12: STAT News AI, STAT+: Utah plows ahead with more health AI pilots for prescriptions, women’s health">[12]</a>. Nolla Health&#x27;s Utah app already analyzes face scans for acne severity and writes a prescription autonomously <a href="https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions" aria-label="Source 10: The Verge AI, This startup is issuing AI-generated acne prescriptions">[10]</a>.</p>
+<p class="section-brief-lede">An observational study of the initial Claude Fable 5 deployment found that a safety filter rerouted consumer health questions to the fallback model Claude Opus 4.8, including some safe questions that were declined <a href="https://ai.jmir.org/2026/1/e104856" aria-label="Source 1: JMIR AI, Safety-Filter Fallback on Consumer Health Questions During the Initial Claude Fable 5 Deployment: Observational Study">[1]</a>. Regulatory oversight is also unsettled: STAT reports open questions about how Utah&#x27;s AI sandbox for health AI pilots may conflict with FDA oversight <a href="https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis" aria-label="Source 2: STAT News AI, STAT+: Why health AI pilots in Utah may be on a collision course with the FDA">[2]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Evaluation research addresses the risk side: a JMIR AI study built a patient simulation framework that tests conversational tools across communication styles and health literacy levels <a href="https://ai.jmir.org/2026/1/e100772" aria-label="Source 9: JMIR AI, A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study">[9]</a>, and Nature Medicine described MAGIC, an international network for evaluating generative AI in global health <a href="https://www.nature.com/articles/s41591-026-04706-x" aria-label="Source 5: Nature Medicine, MAGIC: an international network for evaluating generative artificial intelligence in global health">[5]</a>. A further study examines how much performance evidence is publicly available for approved AI diagnostic software in pathology and hematology morphology <a href="https://www.nature.com/articles/s41746-026-03356-0" aria-label="Source 15: npj Digital Medicine, Availability of performance evidence of approved AI diagnostic software in pathology and hematology morphology">[15]</a>.</p>
-<p>Also this week: the section holds seven items on safety and evaluation, including a calibrated approach to pharmacovigilance using FAERS, plus three on patient-facing tools, two on clinical documentation, and one each on imaging and diagnostics and clinical decision support. A randomized trial comparing a language model agent with ophthalmology residents for pre-consultation also appears.</p>
-<p class="section-brief-date">The picture as of October 7, 2026; numbered links go to the items below.</p>
+<p>On evaluation, Nature Medicine describes MAGIC, an international network for assessing generative AI in global health settings <a href="https://www.nature.com/articles/s41591-026-04706-x" aria-label="Source 12: Nature Medicine, MAGIC: an international network for evaluating generative artificial intelligence in global health">[12]</a>. A separate study tests a multi-agent system with retrieval-augmented generation for drafting hyperthyroidism admission notes with low factual hallucination <a href="https://www.nature.com/articles/s41746-026-03321-x" aria-label="Source 5: npj Digital Medicine, Quality optimization with low positive factual hallucination for the HPI in hyperthyroidism admission notes using multi agent LLM with RAG">[5]</a>.</p>
+<p>Also this week: the listed items include eight on safety and evaluation, three on patient facing tools, two on clinical documentation, and one each on decision support and imaging. Among them are a multicenter randomized trial of AI-assisted telerehabilitation in early Parkinson&#x27;s disease and MedGemma, an open set of medical vision-language models.</p>
+<p class="section-brief-date">The picture as of October 8, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
@@ -82,6 +82,13 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">A study analyzes real-world user interactions with large language models that explain home electrocardiogram ECG reports to patients.</p>
   </div>
 </div>
+<div class="news-card" data-topic="clinical-decision-support">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03289-8">Artificial intelligence for the data-driven diagnosis of ADHD: a systematic review and meta-analysis</a>
+    <p class="news-card-summary">A systematic review and meta-analysis assesses how accurately artificial intelligence methods diagnose attention-deficit/hyperactivity disorder ADHD from data.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">October 6, 2026</span></div>
@@ -123,13 +130,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 6, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03345-3">A legal and ethical architecture for a surgical video data registry in England</a>
     <p class="news-card-summary">A paper outlines a legal and ethical framework for a national surgical video data registry in England, relevant to governance of video data used for AI development.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 5, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e100772">A Patient Simulation Framework for Risk Assessment of Conversational Health Care AI: Development and Evaluation Study</a>
-    <p class="news-card-summary">This JMIR AI study develops a patient simulation framework that tests conversational health care AI across different patient communication styles and health literacy levels, aiming to assess risk over multiturn conversations.</p>
   </div>
 </div>
 </div>

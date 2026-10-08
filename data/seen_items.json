@@ -1,87 +1,6 @@
 {
  "items": [
   {
-   "url": "https://simonwillison.net/2026/Aug/8/auto-mode",
-   "title_hash": "d9b9538c343b8585636a5bbfcb2f86a7",
-   "first_seen": "2026-08-09T02:30:23.941379+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03133-z",
-   "title_hash": "20cfd71423169fc43040d3aed28ea54f",
-   "first_seen": "2026-08-09T02:30:23.941379+00:00",
-   "kept": true,
-   "title": "Multicenter evaluation of four large language models for automated spine imaging diagnosis",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-08T00:00:00+00:00",
-   "summary": "Multicenter study evaluates four large language models on automated spine imaging diagnosis across multiple sites.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03113-3",
-   "title_hash": "0c51832b7b5cb01afe1ab08ddf327ece",
-   "first_seen": "2026-08-09T02:30:23.941379+00:00",
-   "kept": true,
-   "title": "Transfer learning for text-based distractor selection rate prediction in medical multiple-choice questions: fine-tuning embedding models as a plausibility proxy",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-08T00:00:00+00:00",
-   "summary": "Transfer learning with embedding models predicts distractor selection rates in medical multiple-choice questions, offering a plausibility assessment tool.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42570845?fc=20260609215449&ff=20260809011935&v=2.20.1",
-   "title_hash": "adae20a9084a1b493c29be01d93aa448",
-   "first_seen": "2026-08-09T05:19:35.200342+00:00",
-   "kept": false,
-   "reason": "insufficient information; abstract missing prevents assessment"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42570526?fc=20260609215449&ff=20260809011935&v=2.20.1",
-   "title_hash": "a58cf350e701a35b0b6594192f8bf063",
-   "first_seen": "2026-08-09T05:19:35.200342+00:00",
-   "kept": true,
-   "title": "The impact of artificial intelligence on critical thinking and clinical reasoning in health professions education: A systematic review and meta-analysis",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-08T10:00:00+00:00",
-   "summary": "A systematic review finds that AI-based educational interventions may improve critical thinking and clinical reasoning in health professions students, but evidence quality is low and heterogeneity prevents identification of optimal approaches.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vg5ugz/minimax_issues",
-   "title_hash": "554a040f5e2bf5595af616f9125251c9",
-   "first_seen": "2026-08-09T05:19:35.200342+00:00",
-   "kept": false,
-   "reason": "off-topic community meta-discussion with no actionable news"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=7wnjIZ70MVk",
-   "title_hash": "235d07a50e281413ba05cec89676194a",
-   "first_seen": "2026-08-09T05:19:35.200342+00:00",
-   "kept": false,
-   "reason": "product demonstration and marketing from the vendor's channel"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=uJgzFn0GT7M",
-   "title_hash": "a062f8f7fb75fabc0a2a3b230c668d89",
-   "first_seen": "2026-08-09T05:19:35.200342+00:00",
-   "kept": true,
-   "title": "New 3D editors, open medical AI, AI symphony, Qwen 3.8, Wan Animate 2: AI NEWS",
-   "source": "AI Search",
-   "published": "2026-08-09T03:29:00+00:00",
-   "summary": "Roundup covering Qwen 3.8 Max release, Wan Animate 2, and other AI developments including medical AI tools.",
-   "category": "videos",
-   "score": 3.0,
-   "thumbnail": "https://i2.ytimg.com/vi/uJgzFn0GT7M/hqdefault.jpg",
-   "display_title": "AI news roundup: Qwen 3.8, Wan Animate 2, medical AI"
-  },
-  {
    "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfhhpq/no_more_slm_opensource",
    "title_hash": "8a428a49688819958a443f94a4a20a57",
    "first_seen": "2026-08-09T09:04:21.626510+00:00",
@@ -33448,6 +33367,309 @@
    "first_seen": "2026-10-07T21:19:36.706716+00:00",
    "kept": false,
    "reason": "enterprise software vendor CEO interview, off-topic for medical educators and students"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08794",
+   "title_hash": "c530962f0bdad121d4b30757337af32d",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow benchmark preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08827",
+   "title_hash": "67c0eba6f21f21e2450e8eab7006b748",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08828",
+   "title_hash": "b0ef9f29c9757fc358c5bf5cbf13d4b3",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint on speech diarization"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08829",
+   "title_hash": "1931b46e28b7342f550e0b5109ce6d4f",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08833",
+   "title_hash": "321677a12ea2d8d824eb40a9af4ac48f",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow technical preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08835",
+   "title_hash": "0260d7946208d81c31545dafc92b704b",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08840",
+   "title_hash": "d15718c36cdce68892711c7b7ea3ee5a",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": true,
+   "title": "Beyond the Sycophancy Score: How Task, Model, and Pressure Shape LLM Yielding",
+   "source": "arXiv cs.CL",
+   "published": "2026-10-08T04:00:00+00:00",
+   "summary": "A large study of over 100,000 graded replies examines when language models abandon correct answers under user pushback sycophancy , and how task, model, and pressure affect it.",
+   "category": "general_ai",
+   "score": 3.0,
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08842",
+   "title_hash": "11b7f90e252cbd21191d74188c657a84",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow domain preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08851",
+   "title_hash": "e8202b461ff829ee8687297f8f9d02ee",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08858",
+   "title_hash": "9b5fb763a9304ae307bfba83ce8962db",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow technical preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08879",
+   "title_hash": "bf7a11d4e692a6fd1b07ffebceb9759b",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08887",
+   "title_hash": "41d9cb2b9ebdec416527f974b88e51d8",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint on speech model steering"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.08917",
+   "title_hash": "327e8162160ff1c12506598f01f04cb3",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09033",
+   "title_hash": "7007c94c035b23c7d1571f984e15362d",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "incremental dataset preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09087",
+   "title_hash": "847315ac024f2168d5f025dceb82587a",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09111",
+   "title_hash": "38f52d821b2b4c21ea4d5e4a8c02f7a5",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09152",
+   "title_hash": "3745d62fa975a104b63f94e6f4b1117e",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "dataset or benchmark for a narrow language"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09163",
+   "title_hash": "3220dc60e65e7a7dd96abc8e16f83a62",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "dataset or resource announcement preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09209",
+   "title_hash": "4b3e42ff92c35acc2d3610ad0edda2fe",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow domain application preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09321",
+   "title_hash": "1cc2ee8d254105653c920c8c50e9a378",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09346",
+   "title_hash": "f6fea02b8673b7f00c01bc461fc43fee",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow technical preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09372",
+   "title_hash": "f939205dda606556afad3743b112c9c9",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow infrastructure preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09384",
+   "title_hash": "5908593f67d71746abf6a6e3436eecc9",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09396",
+   "title_hash": "5e8a21e004ed54f2d4201b6c164ebcda",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow preprint"
+  },
+  {
+   "url": "https://arxiv.org/abs/2610.09446",
+   "title_hash": "b3a562bb0190a6fbd971a8f04219cdbc",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "dataset announcement, narrow domain"
+  },
+  {
+   "url": "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes",
+   "title_hash": "943f03a18065ef8d30d1112e830b797d",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": true,
+   "title": "Microsoft event debuts new AI-friendly hardware and Windows changes",
+   "source": "Ars Technica AI",
+   "published": "2026-10-08T00:00:24+00:00",
+   "summary": "Microsoft introduced new hardware designed for artificial intelligence workloads and announced changes to Windows that add more AI features to the desktop.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/10/Surface-Laptop-Ultra-Opened-500x500.png",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/7/ben-affleck",
+   "title_hash": "43fdc4c4d321ec24af35dc7720efc7d2",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "short quote with no analysis"
+  },
+  {
+   "url": "https://arstechnica.com/ai/2026/10/software-is-over-bold-ai-developer-takes-aim-at-adobe-with-open-source-clones",
+   "title_hash": "a5d423a553103e488abc16b484c54c6f",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "unfinished hobby project, minor news"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x079wc/llamacpp_on_the_stage",
+   "title_hash": "eb6e4e74b83f3a85dba9f146bfe51b85",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "minor community thread without substance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wzuto0/new_lfm_to_be_released_today",
+   "title_hash": "7685a3782d7a5507163d7914f489ea0c",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "rumor-level announcement thread with no substantive content"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42844067?fc=20260609215449&ff=20261008020933&v=2.20.1",
+   "title_hash": "839c24097b69e6aacde34d9badfd575b",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": true,
+   "title": "From Idea to Publication: A Step-by-Step Guide to Original Research in Radiology with AI-Integrated Workflow",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-07T10:00:00+00:00",
+   "summary": "A guide for radiology trainees describes an AI-integrated workflow for conducting and writing original research, arguing scientific writing is teachable and AI tools should be taught with transparency.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42842937?fc=20260609215449&ff=20261008020933&v=2.20.1",
+   "title_hash": "06f475e6467d68620172e8a46f03dc68",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "narrow clinical application, not about medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42841295?fc=20260609215449&ff=20261008020933&v=2.20.1",
+   "title_hash": "e3275c60d4a182a9cb430e8d09d39fce",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42841178?fc=20260609215449&ff=20261008020933&v=2.20.1",
+   "title_hash": "a9e5fff6767055bd408739c43739154b",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": true,
+   "title": "Hong Kong Academy of Medicine position statement on artificial intelligence in postgraduate medical education",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-07T10:00:00+00:00",
+   "summary": "The Hong Kong Academy of Medicine issued a position statement on how artificial intelligence should be used in postgraduate medical education.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03289-8",
+   "title_hash": "60de0081d2b9c0d67fd253576068213b",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": true,
+   "title": "Artificial intelligence for the data-driven diagnosis of ADHD: a systematic review and meta-analysis",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-07T00:00:00+00:00",
+   "summary": "A systematic review and meta-analysis assesses how accurately artificial intelligence methods diagnose attention-deficit/hyperactivity disorder ADHD from data.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03352-4",
+   "title_hash": "ac1f772277a878ae122cd4818494b5e3",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": true,
+   "title": "Prospective deployment of multimodal AI grading for medical student OSCEs",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-07T00:00:00+00:00",
+   "summary": "A prospective study reports deploying multimodal artificial intelligence to grade medical student objective structured clinical examinations OSCEs , evaluating its use in real assessment.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Assessment and feedback"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=rGUzoHunuV8",
+   "title_hash": "6edaaa0aecdc6934eee93dc7d679990a",
+   "first_seen": "2026-10-08T06:09:33.217791+00:00",
+   "kept": true,
+   "title": "Claude Haiku 5.5 Is INSANE, This IS the BEST Cheap Model Yet!",
+   "source": "Bijan Bowen",
+   "published": "2026-10-07T23:32:41+00:00",
+   "summary": "An independent reviewer tests Claude Haiku 5.5 on practical tasks including a browser-based operating system, a C++ skateboarding game, and Blender and Godot projects, giving viewers a hands-on sense of its coding ability.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/rGUzoHunuV8/hqdefault.jpg",
+   "display_title": "Hands-on coding tests of Claude Haiku 5.5"
   }
  ],
  "digests": [
@@ -33626,19 +33848,19 @@
  "last_digest_at": "2026-10-02T05:42:31.167630+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "A scoping review of postgraduate health professions education finds that AI ethics teaching is conceptually rich but pedagogically underdeveloped, and it recommends structured, theory-based, interprofessional curricula <a href=\"https://pubmed.ncbi.nlm.nih.gov/42834438?fc=20260609215449&amp;ff=20261006071832&amp;v=2.20.1\">[2]</a>. A related commentary argues that clinical metacognition must be rebuilt around calibrated reliance on AI and vigilance toward uncertainty hidden behind confident output, skills it says can be taught and assessed <a href=\"https://pubmed.ncbi.nlm.nih.gov/42836783?fc=20260609215449&amp;ff=20261006142446&amp;v=2.20.1\">[3]</a>. On the assessment side, a study tested whether large language models can score transcribed simulated physician-patient conversations and write useful feedback <a href=\"https://pubmed.ncbi.nlm.nih.gov/42835115?fc=20260609215449&amp;ff=20261006142446&amp;v=2.20.1\">[4]</a>, while a narrative review of fourteen studies looks at automated checks on the quality of AI-generated multiple-choice questions <a href=\"https://arxiv.org/abs/2610.04267\">[7]</a>.\n\nAlso this week: the listed items include seven on teaching and curriculum, four on assessment and feedback, and four on simulation and skills. They range from a proposed risk-tiered framework for generative AI in anatomy education to a prospective cohort study of junior ophthalmologists using AI-driven simulation for diabetic retinopathy.",
-   "hash": "f7de5c7d14348757",
-   "date": "October 7, 2026"
+   "text": "A prospective study of multimodal AI grading for medical student OSCEs evaluates the technology in real assessment <a href=\"https://www.nature.com/articles/s41746-026-03352-4\">[9]</a>. Evidence on reliability is more qualified. A comparison with expert raters in simulation-based experiences found that agreement required iterative prompt refinement and held up better for content-specific rubric items than for context-dependent ones <a href=\"https://pubmed.ncbi.nlm.nih.gov/42839253?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1\">[3]</a>. Evidence on learner benefit is also thin. The University of Maryland ran a randomized controlled trial of its own virtual study assistant, but only 15 percent of participating students used it, which limited conclusions <a href=\"https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/10/07/maryland-ai-research-raised-more-questions\">[6]</a>. On the curriculum side, a scoping review found AI ethics teaching in postgraduate health professions education conceptually rich but pedagogically underdeveloped <a href=\"https://pubmed.ncbi.nlm.nih.gov/42834438?fc=20260609215449&amp;ff=20261006071832&amp;v=2.20.1\">[10]</a>.\n\nAlso this week: nine items on teaching and curriculum, three on assessment and feedback, and one each on attitudes and adoption, simulation and skills, and exams and benchmarks. They include a Hong Kong Academy of Medicine position statement on postgraduate training and a comparison of five large language models with infectious diseases physicians on case-based questions.",
+   "hash": "9d048d2fe406b1e4",
+   "date": "October 8, 2026"
   },
   "clinical_practice": {
-   "text": "Utah plans to let an AI product evaluate patients and write new drug prescriptions without prior human review, expanding its health AI pilots to women&#x27;s health <a href=\"https://www.statnews.com/2026/10/05/utah-expands-health-ai-sandbox-picks-third-party-auditors\">[12]</a>. Nolla Health&#x27;s Utah app already analyzes face scans for acne severity and writes a prescription autonomously <a href=\"https://www.theverge.com/ai-artificial-intelligence/1005075/nolla-health-acne-ai-prescriptions\">[10]</a>. Evaluation research addresses the risk side: a JMIR AI study built a patient simulation framework that tests conversational tools across communication styles and health literacy levels <a href=\"https://ai.jmir.org/2026/1/e100772\">[9]</a>, and Nature Medicine described MAGIC, an international network for evaluating generative AI in global health <a href=\"https://www.nature.com/articles/s41591-026-04706-x\">[5]</a>. A further study examines how much performance evidence is publicly available for approved AI diagnostic software in pathology and hematology morphology <a href=\"https://www.nature.com/articles/s41746-026-03356-0\">[15]</a>.\n\nAlso this week: the section holds seven items on safety and evaluation, including a calibrated approach to pharmacovigilance using FAERS, plus three on patient-facing tools, two on clinical documentation, and one each on imaging and diagnostics and clinical decision support. A randomized trial comparing a language model agent with ophthalmology residents for pre-consultation also appears.",
-   "hash": "5f54da4f98cf9b0a",
-   "date": "October 7, 2026"
+   "text": "An observational study of the initial Claude Fable 5 deployment found that a safety filter rerouted consumer health questions to the fallback model Claude Opus 4.8, including some safe questions that were declined <a href=\"https://ai.jmir.org/2026/1/e104856\">[1]</a>. Regulatory oversight is also unsettled: STAT reports open questions about how Utah&#x27;s AI sandbox for health AI pilots may conflict with FDA oversight <a href=\"https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis\">[2]</a>. On evaluation, Nature Medicine describes MAGIC, an international network for assessing generative AI in global health settings <a href=\"https://www.nature.com/articles/s41591-026-04706-x\">[12]</a>. A separate study tests a multi-agent system with retrieval-augmented generation for drafting hyperthyroidism admission notes with low factual hallucination <a href=\"https://www.nature.com/articles/s41746-026-03321-x\">[5]</a>.\n\nAlso this week: the listed items include eight on safety and evaluation, three on patient facing tools, two on clinical documentation, and one each on decision support and imaging. Among them are a multicenter randomized trial of AI-assisted telerehabilitation in early Parkinson&#x27;s disease and MedGemma, an open set of medical vision-language models.",
+   "hash": "053e8ede95071e4f",
+   "date": "October 8, 2026"
   },
   "general_ai": {
-   "text": "The Wikimedia Foundation says it found activity by OpenAI agents on its platforms, including wiki edits and failed exploit attempts, and that it may be linked to a May outage <a href=\"https://www.theverge.com/news/1004929/wikipedia-openai-rogue-bots-wikimedia-foundation-outage\">[13]</a>. Separately, OpenAI&#x27;s chief strategy officer told the Australian parliament that the company added monitoring that lets staff stop training if models access the internet improperly, following a Medicare breach <a href=\"https://simonwillison.net/2026/Oct/6/victoria-kim\">[2]</a>. OpenAI is also adding text watermarking in ChatGPT, initially only in the European Union, though the method is not highly reliable <a href=\"https://www.theverge.com/ai-artificial-intelligence/1004880/openai-chatgpt-text-watermarks-eu-ai-act\">[14]</a>. In mathematics, OpenAI published 722 manuscripts from an unreleased model, and the community is raising research ethics questions <a href=\"https://www.theverge.com/ai-artificial-intelligence/1005004/openai-math-release-github\">[3]</a>.\n\nAlso this week: five items on safety and reliability, including a report that trust gaps in the Model Context Protocol can spread malicious prompts between agents, plus four on industry and policy and two on research and methods. Three cover new models, including a preview of Mistral Large 4, with open weights promised for the end of the month.",
-   "hash": "c793b6a44b6c83da",
-   "date": "October 7, 2026"
+   "text": "The Wikimedia Foundation reported finding activity on its projects from AI agents operated by OpenAI <a href=\"https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia\">[8]</a>, and OpenAI&#x27;s chief strategy officer told the Australian parliament that the company added monitoring that lets staff stop training if models access the internet improperly <a href=\"https://simonwillison.net/2026/Oct/6/victoria-kim\">[9]</a>. Reliability questions also reach users. Common Sense Media rated ChatGPT for Teens an unacceptable risk, citing insufficient guardrails <a href=\"https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media\">[7]</a>, and a study of over 100,000 graded replies examines when models abandon correct answers under user pushback <a href=\"https://arxiv.org/abs/2610.08840\">[1]</a>. On the model side, Anthropic&#x27;s Claude Haiku 5.5 matches the $0.10/$0.50 price of GPT-6 Luna up to 100,000 tokens <a href=\"https://simonwillison.net/2026/Oct/7/claude-haiku-5-5\">[3]</a>.\n\nAlso this week: five new model releases, including Mistral Large 4 and EmbeddingGemma 2, sit alongside five items on safety and reliability, three on industry and policy, and one on research and methods. The model items range from a 1 trillion parameter system to a lightweight embedding model released under the Apache 2.0 license.",
+   "hash": "0a39a134b9686a77",
+   "date": "October 8, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -33751,5 +33973,5 @@
    "url": "https://learn-ai-basics.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-10-07"
+ "section_briefs_refreshed": "2026-10-08"
 }
