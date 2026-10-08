@@ -14,6 +14,8 @@ last_reviewed: 2026-09-26
 
 ## The Core Idea
 
+<!-- render:explainer-video -->
+
 Two different kinds of work share the word "clinical," and each has its own expectations.
 
 ### Learning Clinical Medicine with AI: Encouraged, with Discipline

@@ -127,3 +127,21 @@
   description: "Using AI in research with the same integrity standards as any other method: screening the literature for recall while you keep the judgment, checking every reference at its source, disclosing AI assistance, and protecting material that belongs to others or identifies research participants."
   # Speechify wyatt_32, the Hub's static-page narrator.
   voice: ai
+
+- page: pathway/clinical.md
+  # Verified 2026-10-08 from YouTube: public, embeddable (playableInEmbed),
+  # 265 seconds, uploaded 2026-10-08T07:58:19-07:00, English caption track
+  # uploaded by the owner (vssId .en); oEmbed title and channel as written
+  # below. Poster: the film's opening shot at 0:12, both rooms under the
+  # "Clinical" sign, so the play button sits on the wall between them.
+  url: https://www.youtube.com/watch?v=0HgkRGG22O4
+  title: Module 6 - Clinical Contexts
+  channel: Dr. Tarron Kay
+  seconds: 265
+  uploaded: "2026-10-08T07:58:19-07:00"
+  poster: module6-clinical-contexts.jpg
+  label: The Four-Minute Version
+  caption: A narrated, animated walk through the core idea, with captions. The people, the case and the clinical site in it are made up.
+  description: "Two kinds of work share the word clinical: learning clinical medicine with AI, which is encouraged with discipline, and AI in patient care, where it can inform a decision but never own it; practicing on a teaching abstraction, what to do when practice touches a real patient, what a clinical site expects, and why bias is a clinical issue."
+  # Speechify wyatt_32, the Hub's static-page narrator.
+  voice: ai
