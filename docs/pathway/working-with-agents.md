@@ -15,6 +15,8 @@ last_reviewed: 2026-10-08
 
 ## The Core Idea
 
+<!-- render:explainer-video -->
+
 A chat assistant answers you; an agent works for you. The difference is the loop: an agent can act (read a file, run a command, write a document), check its own result, and continue, repeating until the task is done. That loop lets an agent run checks and hand you *evidence* that the work was completed, not just text that looks right. Those checks improve reliability, but they are the agent grading its own work: they do not replace your review. The loop is also why agents need a control that chat never did: your permission.
 
 ### Tool Calls, and Why You Are the Gate

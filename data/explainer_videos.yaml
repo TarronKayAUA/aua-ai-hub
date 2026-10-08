@@ -145,3 +145,20 @@
   description: "Two kinds of work share the word clinical: learning clinical medicine with AI, which is encouraged with discipline, and AI in patient care, where it can inform a decision but never own it; practicing on a teaching abstraction, what to do when practice touches a real patient, what a clinical site expects, and why bias is a clinical issue."
   # Speechify wyatt_32, the Hub's static-page narrator.
   voice: ai
+- page: pathway/working-with-agents.md
+  # Verified 2026-10-08 from YouTube: public, embeddable (playableInEmbed),
+  # 360 seconds, uploaded 2026-10-08T10:50:51-07:00, English caption track
+  # uploaded by the owner (vssId .en); oEmbed title and channel as written
+  # below. Poster: the film's opening shot at 0:11, the chat card beside the
+  # agent's loop, so the play button sits on the open floor between them.
+  url: https://www.youtube.com/watch?v=q6LPPrCXkIU
+  title: Module 7 - Working with Agents
+  channel: Dr. Tarron Kay
+  seconds: 360
+  uploaded: "2026-10-08T10:50:51-07:00"
+  poster: module7-working-with-agents.jpg
+  label: The Six-Minute Version
+  caption: A narrated, animated walk through the core idea, with captions. The requests, files and software in it are made up.
+  description: "A chat assistant answers you; an agent works for you: the loop that lets an agent act, check and continue, why the permission check is yours in a mode that asks you, what automatic modes change, reading a request before you approve it, prompt injection, when an agent beats chat, setups that persist, and choosing what the agent can see."
+  # Speechify wyatt_32, the Hub's static-page narrator.
+  voice: ai
