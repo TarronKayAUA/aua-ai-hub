@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-01
+last_reviewed: 2026-10-08
 ---
 
 # Skills: Giving an Agent a Playbook
@@ -58,6 +58,7 @@ Translated into practice:
 2. **If you need more, take it from Anthropic's own published skills**, listed in the table above. You are choosing a known author, and you can read what you are installing.
 3. **Read a skill from an open directory before installing it.** Its instruction file is plain text: if you can follow what it tells the assistant to do, and what any bundled scripts do, you can judge it as you would any program. Browsing a directory is a good way to find ideas.
 4. **Try a new skill on ordinary files first.** A skill runs with whatever file access you gave the assistant, so it can read everything you could have pasted. A first run on ordinary files shows you what the skill actually does before you rely on it for real work.
+5. **Judge plugins and connectors the same way.** Add-ons now often arrive as plugins, which can bundle skills with connections to outside services and scripts that run on your computer. Anthropic's guidance for those connections is to verify you trust each one before adding it, because a connection that fetches outside content can carry [prompt injection](agents.md#what-to-watch-for).
 
 The AI Committee has not taken a position on skills, and no skill has been through the [tool review process](../governance/review-process.md); the suggestions above come from the vendor's documentation and ordinary care with files. If you find or write a skill colleagues would benefit from, share it along with where it came from, so each person can judge it for themselves, and tell the [AI Committee](../governance/committee.md) too, so it can be weighed for this page.
 
@@ -65,7 +66,7 @@ The AI Committee has not taken a position on skills, and no skill has been throu
 
 Often the best way to get a skill that fits AUA is to write one: you know exactly what it tells the assistant, and it encodes your own practice rather than someone else's. Anthropic publishes a skill-creator skill for exactly this, and the format is an open standard used by several vendors, so a skill written here is portable rather than tied to one product.
 
-Two practical limits are worth knowing before you invest effort. On personal accounts, custom skills are **per user**: each person uploads their own copy, and there is no central update or withdrawal. On Team and Enterprise accounts, an administrator can provision a skill for the whole organization from Organization settings, which is the route an institution would use. And custom skills **do not follow you between products**: one uploaded to claude.ai is not available in Claude Code, and the reverse.
+Two practical limits are worth knowing before you invest effort. On personal accounts, custom skills are **per user**: each person uploads their own copy, and there is no central update or withdrawal. On Team and Enterprise accounts, an administrator can provision a skill for the whole organization from Organization settings, which is the route an institution would use. And custom skills **only partly follow you between products**: skills you enable on claude.ai now reach Claude Code in terminal sessions signed in with the same account, but a skill kept only on your own computer does not reach claude.ai, Cowork, or cloud sessions until you upload it.
 
 For most teaching tasks, a well-written entry in the [prompt library](../prompts/index.md) does the same job with none of that overhead. Reach for a skill when the task is genuinely repetitive, has a fixed procedure worth encoding, and recurs often enough to be worth maintaining.
 

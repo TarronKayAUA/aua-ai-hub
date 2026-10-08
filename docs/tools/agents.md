@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-01
+last_reviewed: 2026-10-08
 ---
 
 # AI Agents
@@ -73,7 +73,7 @@ More: [Claude Code](https://claude.com/product/claude-code) and its [documentati
 
 ### Cowork (Anthropic)
 
-The same agentic machinery as Claude Code, brought to the desktop for non-coding knowledge work: point it at a folder, give it a goal, and get a finished document or analysis rather than instructions. The natural starting agent for faculty and staff who live in documents.
+The same agentic machinery as Claude Code, brought to the desktop for non-coding knowledge work: point it at a folder, give it a goal, and get a finished document or analysis rather than instructions. The natural starting agent for faculty and staff who live in documents. On Pro and Max plans, Cowork is becoming part of the main Claude app rather than a separate tab; it still asks before acting by default.
 
 <!-- render:guide-videos:agents:cowork -->
 
@@ -121,7 +121,7 @@ More: [OpenClaw](https://openclaw.ai) and its [documentation](https://docs.openc
 
 ## Where to Start
 
-If you have never used an agent, start with ChatGPT Work or Cowork on a task you can fully verify: assembling a comparison table from web sources, or reorganizing a folder of documents you know well. The [Your First Agent Session](first-session.md) walkthrough uses Claude Code or Codex instead, because both work in a folder you choose and show you each permission prompt; the same habits carry over to Cowork and ChatGPT Work. Watch what it does, note where it asks permission, and calibrate from there. The [Prompting Fundamentals module](../pathway/prompting.md) applies doubly here: agents reward precise goals, stated constraints, and explicit deliverables.
+If you have never used an agent, start with ChatGPT Work or Cowork on a task you can fully verify: assembling a comparison table from web sources, or reorganizing a folder of documents you know well. The [Your First Agent Session](first-session.md) walkthrough uses Claude Code or Codex instead, because both work in a folder you choose and show you each permission prompt once you choose the mode that asks you; the same habits carry over to Cowork and ChatGPT Work. Watch what it does, note where it asks permission, and calibrate from there. The [Prompting Fundamentals module](../pathway/prompting.md) applies doubly here: agents reward precise goals, stated constraints, and explicit deliverables.
 
 This page is the field guide; the rest of the site carries the working layer:
 

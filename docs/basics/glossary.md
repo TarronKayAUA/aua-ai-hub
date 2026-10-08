@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-10-06
+last_reviewed: 2026-10-08
 ---
 
 # Glossary
@@ -132,7 +132,7 @@ The billions of adjustable internal values that store what a model learned durin
 
 ## Permission Prompt
 
-The pause where an agent asks your approval before an action (writing a file, running a command). Enforced by the interface software rather than by the model, which makes it one of the user's two main safety controls, alongside the folder you let the agent open: approve what matches your request, question what surprises you. See [Your First Agent Session](../tools/first-session.md).
+The pause where an agent asks your approval before an action (writing a file, running a command). Enforced by the interface software rather than by the model, which makes it one of the user's two main safety controls, alongside the folder you let the agent open: approve what matches your request, question what surprises you. Some agents now start in an automatic mode, where a second AI model screens requests in your place and fewer reach you. See [Your First Agent Session](../tools/first-session.md).
 
 ## PHI and FERPA Considerations
 
@@ -200,7 +200,7 @@ The unit of text a model reads and writes, roughly three quarters of an English 
 
 ## Tool Use (Tool Calls, Function Calling)
 
-A model pausing text generation to request an action (read a file, run a command, search), with the result feeding back into its answer. The mechanism that turns a chat model into an agent; consequential calls pass through a permission prompt first.
+A model pausing text generation to request an action (read a file, run a command, search), with the result feeding back into its answer. The mechanism that turns a chat model into an agent; consequential calls pass through a permission check first (you, in a mode that asks you).
 
 ## Training vs. Inference
 

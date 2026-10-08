@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-01
+last_reviewed: 2026-10-08
 ---
 
 # Module 7: Working with Agents
@@ -19,7 +19,7 @@ A chat assistant answers you; an agent works for you. The difference is the loop
 
 ### Tool Calls, and Why You Are the Gate
 
-When an agent needs something done in the world, it pauses and asks: may I read this file, may I run this command, may I write this document. The interface executes the action only after the request passes a permission check, and in the default permission modes that check is you for anything consequential. Some settings auto-approve certain actions; [Your First Agent Session](../tools/first-session.md#the-settings-that-matter) covers which, and when they are earned. This is the module's one habit to build: **read the request before approving it.** A request that matches what you asked for gets a yes; a request that surprises you gets a no and a question. The permission prompt is not a formality to click through; it is the mechanism that makes an agent safe to use, and it is enforced by the software, not by the model's good intentions.
+When an agent needs something done in the world, it requests an action: read this file, run this command, write this document. The interface executes the action only after the request passes a permission check. In a mode that asks you, that check is you for anything consequential, though agents differ on which steps they treat as routine and run without asking. Some agents now start in an automatic mode instead, where a second AI model reviews requests in your place and lets routine ones run; it cuts down the prompts, and its makers say it does not guarantee safety. For a new kind of task, a mode that asks you is worth the extra clicks, because you see each step before it runs. [Your First Agent Session](../tools/first-session.md#the-settings-that-matter) covers the modes, how to switch, and when the others are earned. This is the module's one habit to build: **read the request before approving it.** A request that matches what you asked for gets a yes; a request that surprises you gets a no and a question. Surprises deserve the closest look after the agent has read something you did not write, such as a downloaded PDF, a web page, or an email, because text inside it can be written to steer the agent ([prompt injection](../tools/agents.md#what-to-watch-for)); a request to send something out or visit a web address during a task that only needed reading is the classic sign. The permission prompt is not a formality to click through: together with the folder you choose, it is one of your two main controls, and it is enforced by the software, not by the working model's good intentions.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">You are the gate</p>
@@ -40,8 +40,8 @@ When an agent needs something done in the world, it pauses and asks: may I read 
 </div>
 </div>
 <p class="hf-return hf-return--stop">Deny, and ask the agent why it wanted that.</p>
-<p class="hf-note">The gate is enforced by the interface software, not by the model's judgment.</p>
-<figcaption>Approve what matches your request; deny what surprises you. That one habit is most of agent safety.</figcaption>
+<p class="hf-note">The gate is enforced by the interface software, not by the working model. In an automatic mode, a second AI model screens requests in your place.</p>
+<figcaption>Approve what matches your request; deny what surprises you. That habit, with a folder that holds only what the task needs, is most of agent safety.</figcaption>
 </figure>
 
 ### When an Agent Beats Chat
@@ -54,7 +54,9 @@ Agents and assistants can both hold standing context so you stop re-explaining y
 
 ### Choosing What the Agent Can See
 
-An agent can read every file in the folder you open for it, and what it reads goes to the model, so the folder you choose decides what the model sees. Open the folder the task needs rather than your whole drive; if that folder also holds student records or patient information, copy just the files you need into a fresh folder and open that instead. Try a new kind of task on copies first, so a misunderstood instruction costs you nothing. And keep the verification habit that runs through this whole pathway: an agent saying a task is complete is a claim, and you open the result and look, the same way you check a citation.
+An agent can read every file in the folder you open for it, and what it reads goes to the model, so the folder you choose decides most of what the model sees. Connected apps widen that view: an email account, a cloud drive, or a calendar you have connected, or your own signed-in browser if you let the agent use it, are within its reach too, and a connection you made for chat can carry over to an agent. Switching off the connections a task does not need keeps what reaches the model to what you chose. Open the folder the task needs rather than your whole drive; if that folder also holds student records or patient information (material the [AI Responsible Use Policy](../governance/policy.md#responsible-use) covers), copy just the files you need into a fresh folder and open that instead.
+
+Try a new kind of task on copies first, so a misunderstood instruction costs you nothing. An agent you schedule, or leave working in the cloud, acts when you are not there to read its requests, so it pays to give it only what the job needs, keep it to work you could undo, and read its first few results before relying on it. And keep the verification habit that runs through this whole pathway: an agent saying a task is complete is a claim, and you open the result and look, the same way you check a citation.
 
 ## Self-Check
 
@@ -69,6 +71,7 @@ An agent can read every file in the folder you open for it, and what it reads go
 
 ## Going Deeper
 
+- [AI Agents](../tools/agents.md): the field guide, including actions that cannot be undone, prompt injection, and a profile of each agent.
 - [Choosing Your Interface](../tools/interfaces.md): the full comparison of chat, working sessions, and agents, including the economics.
 - [Your First Agent Session](../tools/first-session.md): the 20-minute hands-on walkthrough, including the settings worth changing.
 - [Standing Setups](../tools/standing-setups.md): projects, instructions, and folder briefs that persist.

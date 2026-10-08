@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-01
+last_reviewed: 2026-10-08
 ---
 
 # Standing Setups: Assistants That Remember
@@ -55,7 +55,7 @@ The same shape serves research: one project per manuscript or study, with your a
 
 ## Folder Briefs: Standing Instructions for Agents
 
-Agent interfaces have their own version, and it is just a text file. Claude Code reads `CLAUDE.md` files (a personal one in the `.claude` folder of your home directory applies everywhere; a `CLAUDE.md` in the working folder applies to work there), and Codex reads `AGENTS.md` files the same way (a global one in the `.codex` folder of your home directory, then per-folder ones), before doing any work. What belongs in one is what you would otherwise repeat: where things are, what conventions to follow, the "always do X" rules. Two practical notes from Anthropic's guidance: Claude Code can draft a starting brief for you (run `/init` in a folder and it drafts one from what it finds), and the brief should stay short, since the docs recommend under 200 lines; a brief the length of a policy manual stops being read carefully, by models as by people.
+Agent interfaces have their own version, and it is just a text file. Claude Code reads `CLAUDE.md` files (a personal one in the `.claude` folder of your home directory applies everywhere; a `CLAUDE.md` in the working folder applies to work there), and Codex reads `AGENTS.md` files the same way (a global one in the `.codex` folder of your home directory, then per-folder ones), before doing any work. Claude Code also reads an `AGENTS.md` when a folder has no `CLAUDE.md`, so one brief can serve both agents. What belongs in one is what you would otherwise repeat: where things are, what conventions to follow, the "always do X" rules. Two practical notes from Anthropic's guidance: Claude Code can draft a starting brief for you (run `/init` in a folder and it drafts one from what it finds), and the brief should stay short, since the docs recommend under 200 lines; a brief the length of a policy manual stops being read carefully, by models as by people. Claude Code also keeps its own notes of your corrections and preferences (auto memory, on by default, which you can read and switch off with `/memory`); glance at them now and then, since they shape every later session.
 
 The heuristic for what to add: **when the agent makes the same mistake twice, or you type the same correction twice, that correction belongs in the brief.** Standing setups are how one-time feedback becomes permanent behavior.
 

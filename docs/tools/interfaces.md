@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-01
+last_reviewed: 2026-10-08
 ---
 
 # Chat, Work, or Code: Choosing Your AI Interface
@@ -15,7 +15,7 @@ The same model behaves very differently depending on the room you put it in. A w
 
 **Web chat** (chatgpt.com, claude.ai) is a conversation. You paste or upload material, and the model mostly replies with text. It is the right tool for questions, drafting, and thinking out loud, and the wrong tool the moment the work involves files, revisions at scale, or verification.
 
-**Working sessions** are the middle tier: [Claude Cowork](https://claude.com/product/cowork) and [ChatGPT Work](https://openai.com/chatgpt-work/) take a task rather than a message, plan it, execute it over minutes, and hand back finished artifacts: documents, spreadsheets, slide decks. Anthropic's framing is exact: "Where Chat is a conversation, Cowork is a working session." In the Claude desktop app, Cowork works in folders you choose on your computer, and a task started from web or mobile keeps running in Anthropic's cloud; ChatGPT Work on the desktop can likewise use local files and desktop applications with your permission (on web and mobile it cannot reach your computer's files).
+**Working sessions** are the middle tier: [Claude Cowork](https://claude.com/product/cowork) and [ChatGPT Work](https://openai.com/chatgpt-work/) take a task rather than a message, plan it, execute it over minutes, and hand back finished artifacts: documents, spreadsheets, slide decks. Anthropic's framing is exact: "Where Chat is a conversation, Cowork is a working session." In the Claude desktop app, Cowork works in folders you choose on your computer, and a task started from web or mobile keeps running in Anthropic's cloud (on Pro and Max plans, Cowork is becoming part of the main Claude app rather than a separate tab, and it still asks before acting by default); ChatGPT Work on the desktop can likewise use local files and desktop applications with your permission (on web and mobile it cannot reach your computer's files).
 
 **Code agents** are the deepest tier: [Claude Code](https://code.claude.com/docs/en/overview) (the terminal, extensions for code editors, a desktop app, or the web) and [Codex mode](https://openai.com/codex/) in the ChatGPT desktop app. These work directly in a folder you open for them: reading files, editing them in place, and running commands, with every consequential action gated by a permission system. Despite the name, code agents are not only for code: anything that lives in files (a course folder, a manuscript, a data export) is their territory.
 
@@ -30,7 +30,7 @@ The same model behaves very differently depending on the room you put it in. A w
 
 ## What a Tool Call Is
 
-A tool call is the model pausing text generation to request an action: read this file, run this command, search this folder. The interface executes the action (asking your permission where it matters), returns the result, and the model continues with that result in hand. That loop, repeated, is what makes an agent an agent.
+A tool call is the model pausing text generation to request an action: read this file, run this command, search this folder. The interface executes the action (asking your permission where it matters, in a mode that asks you), returns the result, and the model continues with that result in hand. That loop, repeated, is what makes an agent an agent.
 
 <figure class="figure figure--html hf">
 <p class="hf-title">The tool call loop</p>
@@ -107,6 +107,6 @@ All commands verified July 2026 (winget ships with Windows 11; [Homebrew](https:
 
 ## Choosing What the Agent Can See
 
-An agent can read anything in the folder you open, so choosing the folder is how you decide what reaches the model. A folder scoped to the task keeps the agent's searches quick and its answers focused, and it means material the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps out of publicly available tools, such as patient or student records, is not read along the way. Consequential actions prompt for your approval, and that check is enforced by the interface software rather than left to the model's judgment. The [AI Agents guide](agents.md) covers the rest of what is worth knowing (actions that cannot be undone, and prompt injection) and profiles each agent and its maker. When you are ready to try one, [Your First Agent Session](first-session.md) walks you through twenty minutes on a folder of copies.
+An agent can read anything in the folder you open, so choosing the folder is how you decide most of what reaches the model; apps you have connected, such as email or a cloud drive, and a signed-in browser you let it use widen that view. A folder scoped to the task keeps the agent's searches quick and its answers focused, and it means material the [AI Responsible Use Policy](../governance/policy.md#responsible-use) keeps out of publicly available tools, such as patient or student records, is not read along the way. In a mode that asks you, consequential actions prompt for your approval, and that check is enforced by the interface software rather than left to the model's judgment; some agents now start in an automatic mode instead, where a second AI model reviews requests in your place. The [AI Agents guide](agents.md) covers the rest of what is worth knowing (actions that cannot be undone, and prompt injection) and profiles each agent and its maker. When you are ready to try one, [Your First Agent Session](first-session.md) walks you through twenty minutes on a folder of copies.
 
 **Next:** [Your First Agent Session](first-session.md).
