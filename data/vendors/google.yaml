@@ -1,0 +1,935 @@
+# Gemini (Google). Field guide: _fields.yaml in this folder.
+id: google
+page: tools/company/google.md
+name: Gemini
+company: Google
+checked: 2026-10-09
+pricing_url: https://gemini.google/subscriptions/
+plans:
+  - name: Free
+    for: Anyone with a personal Google Account
+    adds: The Gemini app with 3.6 Flash and varying access to 3.1 Pro; image generation and editing, Deep Research, Gemini Live, Canvas and Gems; Gemini Notebook; 15 GB of storage. No Gemini in Gmail or Docs.
+    source: https://gemini.google/subscriptions/
+  - name: Google AI Plus
+    for: Individuals who want more than Free
+    adds: Twice the Free usage limits, video generation, Gemini in Gmail, Vids and more, more Gemini Notebook Audio Overviews and notebooks, and 400 GB of storage.
+    source: https://gemini.google/subscriptions/
+  - name: Google AI Plus student offer
+    for: Eligible college students aged 18 or over
+    adds: Google AI Plus for one year at no cost, with eligibility checked each year. Redeem by December 31, 2026; a payment method is required, and it renews as a paid plan unless canceled.
+    source: https://gemini.google/students/
+  - name: Google AI Pro
+    for: Individuals aged 18 or over who use Gemini heavily for work or study
+    adds: Four times the Free usage limits, more access to 3.1 Pro, a 1-million-token context window (how much it can read at once), Gemini in Gmail, Docs, Vids and more, entry-level limits in Google Antigravity, and 5 TB of storage.
+    source: https://gemini.google/subscriptions/
+  - name: Google AI Ultra
+    for: The heaviest individual users
+    adds: Five or twenty times Pro's limits (two price tiers), first access to Deep Think and Gemini Spark, higher limits in Google Antigravity (the highest on the larger tier), the highest Gemini Notebook limits, Project Genie, and 20 TB or more of storage.
+    source: https://gemini.google/subscriptions/
+  - name: Google Workspace business and enterprise editions
+    for: Organizations on Google Workspace (work accounts need users aged 18 or over)
+    adds: From Business Starter up, the Gemini app with enterprise-grade protections, so chats are not reviewed by people or used to train models. Business and Enterprise Standard and Plus add Pro access (up to 25 Pro prompts per 4 hours, 1-million-token context); the AI Expanded Access and AI Ultra Access add-ons raise this to 200 and 500 Pro prompts a day.
+    source: https://support.google.com/gemini/answer/14620100?hl=en
+  - name: Gemini for Education
+    for: Schools and universities, including those whose main office suite is not Google's
+    adds: The Gemini app and Gemini Notebook, included free of charge in every Google Workspace for Education edition; a separate experience with extra safeguards for students under 18; data not reviewed by people or used to train models.
+    source: https://edu.google.com/ai/gemini-for-education/
+  - name: Google AI Pro for Education
+    for: Institutions that buy the add-on, for users aged 18 or over
+    adds: Priority access in the Gemini app, a 1-million-token context window (32,000 without it), 20 Deep Research reports a day (5 a month without it), up to 3 videos a day, and scheduled actions.
+    source: https://support.google.com/gemini/answer/14620100?hl=en&co=DASHER._Family%3DEducation
+models:
+  - name: Gemini 3.1 Pro
+    released: 2026-02-19
+    best_for: Complex reasoning, math and coding; the Pro model in the Gemini app
+    where: Every plan, with varying access on Free and more on paid plans; choose Pro in the model menu
+    source: https://gemini.google/release-notes/
+  - name: Gemini 3.8 Flash
+    released: 2026-09-02
+    best_for: Coding, agent tasks and multi-step reasoning; Google's newest Flash model
+    where: The Gemini app on Google AI Pro and Ultra, Gemini in Google Sheets, Google Antigravity on every plan (one of several models you can choose there), and the Gemini API (Google's application programming interface for developers)
+    source: https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/
+  - name: Gemini 3.6 Flash
+    released: 2026-07-21
+    best_for: Everyday tasks, such as analyzing several documents or building a working prototype in Canvas
+    where: Every plan, including Free; choose 3.6 Flash in the model menu
+    source: https://gemini.google/release-notes/
+  - name: Gemini 3 Deep Think
+    released: 2026-02-12
+    best_for: Hard problems in science, research and engineering; answers usually take a few minutes
+    where: Google AI Ultra only; choose Deep Think in the prompt bar
+    source: https://gemini.google/release-notes/
+  - name: Gemini 3.8 Live and 3.8 Live Extended Thinking
+    released: 2026-09-15
+    best_for: Spoken conversation, with tools and tasks carried on in the background while you talk; Extended Thinking reasons more deeply as it speaks
+    where: Extended Thinking in Gemini Live in the Gemini app, in Gmail and Keep for Google AI subscribers, and in Docs on Pro and Ultra; 3.8 Live in Search Live; both in the Gemini API
+    source: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/
+  - name: Gemini Omni
+    released: 2026-05-19
+    best_for: Making and editing videos with sound from text, photos and video, in conversation
+    where: Every Google AI plan, for users aged 18 or over
+    source: https://gemini.google/release-notes/
+surfaces:
+  - name: Gemini web app
+    what: The main app at gemini.google.com, in more than 70 languages and over 230 countries and territories, Antigua and Barbuda among them.
+    source: https://support.google.com/gemini/answer/13575153?hl=en
+  - name: Gemini phone apps
+    what: Android and iOS apps, where Gemini Live (talking with Gemini, or showing it your camera) now sits inside the ordinary chat.
+    source: https://gemini.google/release-notes/
+  - name: Gemini desktop apps
+    what: Windows 10 or later (Alt+Space opens Gemini over any app) and Apple silicon Macs with macOS 15 (Option+Space). Screen sharing, dictation and Gemini Spark with local files are on the Mac first.
+    source: https://gemini.google/desktop/
+  - name: Gemini Notebook
+    what: Formerly NotebookLM. A research assistant that answers from the sources you add, with inline citations, and turns them into study guides, Audio Overviews, mind maps and more. On Workspace for Education accounts it is open to all ages.
+    source: https://support.google.com/gemininotebook/answer/16164461?hl=en
+  - name: Google Antigravity
+    what: Google's agent platform. The Antigravity 2.0 desktop app, the Antigravity IDE (integrated development environment, a code editor), the Antigravity CLI and a Python software development kit all run one shared agent; see The Agents below.
+    source: https://antigravity.google/docs/home
+features:
+  - name: Skills
+    what: Saved instructions for a kind of task, written by you, drafted by Gemini from a chat, or uploaded as a SKILL.md file. Type / and the skill's name in any chat, or let Gemini apply a relevant one itself; several can be combined. They are replacing Gems.
+    plans: Personal accounts, 18 or over, with Keep Activity on; web, phone and Mac apps only. Not yet in the Windows app or on work or school accounts.
+    status: Rolling out since September 30, 2026
+    source: https://support.google.com/gemini/answer/17094296?hl=en
+  - name: Gems (being retired)
+    what: Custom versions of Gemini with their own instructions and files. Google will turn existing Gems into skills automatically; Opal and Gems by Google Labs end at the same time.
+    plans: Every plan for now. Removed from personal accounts in November 2026, Workspace business, enterprise and nonprofit accounts in March 2027, and Workspace education accounts in June 2027.
+    status: Being retired
+    source: https://support.google.com/gemini/answer/18560919?hl=en
+  - name: Deep Research
+    what: Gemini drafts a research plan you can edit, searches the web (and your Gmail and Drive if you add them), and writes a multi-page report, usually in 5 to 10 minutes.
+    plans: Every plan, for users 18 or over; higher limits and the Pro model on Pro and Ultra; charts and interactive simulators in Ultra reports
+    status: Available
+    source: https://support.google.com/gemini/answer/15719111?hl=en
+  - name: Canvas
+    what: Draft and refine writing, or describe an idea and get working code, such as an app, game or quiz; a Deep Research report opened in Canvas can become a web page, infographic, quiz or Audio Overview.
+    plans: Every plan; Pro and Ultra get a larger, 1-million-token context window
+    status: Available
+    source: https://gemini.google/overview/canvas/
+  - name: Notebooks in Gemini
+    what: Project spaces that remember their sources, instructions and chats, kept in sync with Gemini Notebook.
+    plans: Every plan (up to 600 sources, depending on plan); web, phone and Mac apps; several functions need Keep Activity on
+    status: Rolling out gradually
+    source: https://support.google.com/gemini/answer/16972047?hl=en
+  - name: Gemini in Gmail and Docs (personal accounts)
+    what: Gemini inside Gmail, Docs and other Google apps, to draft, summarize and organize where you work.
+    plans: Not on Free; Gmail, Vids and more on AI Plus; Gmail, Docs, Vids and more on AI Pro and Ultra. Personal plans need users aged 18 or over.
+    status: Available in select languages
+    source: https://gemini.google/subscriptions/
+  - name: Gemini in Gmail and Docs (Workspace accounts)
+    what: The Gemini assistant in Workspace apps, set by edition.
+    plans: Gemini in Gmail and Vids on Business Starter; Gmail, Docs, Sheets, Meet and more from Business Standard up
+    status: Available
+    source: https://workspace.google.com/pricing
+  - name: Image generation (Nano Banana)
+    what: Create and edit images from a prompt or an upload. Images carry a SynthID digital watermark and a visible one, and you can upload an image to ask whether Google AI made it.
+    plans: Nano Banana 2 on Free; Nano Banana 2.1 with any Google AI plan, which can also redo an image with Nano Banana Pro
+    status: Available
+    source: https://gemini.google/overview/image-generation/
+  - name: Video generation (Gemini Omni)
+    what: Make and edit videos from text, photos or video, refining them over several turns; Gemini can also generate audio for a video when you ask.
+    plans: Any Google AI plan, or a qualifying Workspace license; 18 or over
+    status: Available since May 19, 2026
+    source: https://support.google.com/gemini/answer/16126339?hl=en
+  - name: Model and thinking menu
+    what: Choose Flash-Lite, Flash or Pro, and a thinking level (Standard, Extended, or Deep Think on Ultra). Limits are based on how much computing you use, refresh every 5 hours, and stop at a weekly limit.
+    plans: Every plan; limits are 2 times Free on AI Plus, 4 times on AI Pro, and 5 or 20 times Pro on AI Ultra
+    status: Available
+    source: https://support.google.com/gemini/answer/16275805?hl=en
+  - name: Gemini Live
+    what: Talk with Gemini, or show it your camera, inside the same chat; while you talk it can show maps and cards and use your connected apps.
+    plans: Android and iOS phone apps
+    status: Part of chat since May 19, 2026
+    source: https://gemini.google/release-notes/
+  - name: Connected Apps
+    what: With your permission, Gemini draws on and acts in other apps, such as summarizing email in Gmail or adding events to Calendar.
+    plans: Personal accounts (work and school accounts differ)
+    status: Available
+    source: https://support.google.com/gemini/answer/13695044?hl=en
+harnesses:
+  - id: antigravity-cli
+    name: Antigravity CLI
+    what: Google's agent for the terminal, started by typing agy, and since June 2026 the replacement for Gemini CLI for individual users. It reads the folder you start it in, edits files and runs commands, asking first according to your mode and permission rules. It shares one agent, and synced settings, with the Antigravity 2.0 app, which Google describes as being for knowledge work as well as coding.
+    runs: Windows, macOS, Linux and Googlebook (installed on Windows with one PowerShell command). A conversation can move to the Antigravity 2.0 app, and the reverse.
+    plans: Every plan, including Free. Without Google AI Pro or Ultra the quota refreshes weekly; Pro refreshes every five hours up to a weekly limit; Ultra is highest. /boost and /teamwork-preview need a paid plan. For personal Google Accounts, aged 18 or over, in listed countries (Antigua and Barbuda is one); organizations use it through Gemini Enterprise.
+    acts: It works in a loop of reading, searching, editing, running commands and browsing, and produces artifacts to review, such as an Implementation Plan and a walkthrough of what it did. In the default mode every file change is shown as a diff to accept or reject first.
+    modes:
+      - name: default
+        what: Shows each file change as a diff and waits for y (accept), n (reject) or f (full-screen diff) before saving it. The starting mode.
+      - name: accept-edits
+        what: Saves file edits and new files without asking; helpers it starts inherit this. Commands still follow your permission rules.
+      - name: plan
+        what: Investigates with read-only tools and presents a plan for your approval before writing anything.
+      - name: always-proceed (setting)
+        what: A settings preset that never prompts, listed beside request-review (the default), proceed-in-sandbox and strict (asks before anything that is not a read).
+    instructions: Rules files are read automatically. An AGENTS.md or GEMINI.md file (or a .agents/rules folder) in any folder applies when the agent works there, and ~/.gemini/GEMINI.md applies to every project. /learn turns your corrections into rules.
+    skills: Folders containing a SKILL.md file (an open standard), kept in a project's .agents/skills folder or in your home folder. Each becomes a slash command of its own name; /skills lists them.
+    hooks: Your own scripts that run just before or after the agent acts, set in a hooks.json file; /hooks lists them.
+    subagents: The main agent hands side tasks (research, builds, a browser) to helpers that run in parallel; /agents shows them, and Alt+J jumps to one waiting for your approval.
+    connectors: MCP (Model Context Protocol) servers, which connect outside tools and data, managed with /mcp, and plugins that bundle skills, rules, servers and hooks, managed with /plugin.
+    sandbox: An optional terminal sandbox, off by default in the CLI's settings, uses the operating system's own isolation on Windows, macOS and Linux to keep commands to your project and temporary folders, block sensitive files, and limit network access to sites you have approved.
+    source: https://antigravity.google/docs/cli/overview
+  - id: antigravity-app
+    name: Antigravity 2.0 and the Antigravity IDE
+    what: The desktop app and the code editor built on the same agent as the CLI. Antigravity 2.0 is a stand-alone command center where you start agents inside projects (sets of folders you choose), watch them work, review their plans and changes, and schedule tasks, called Automations since October 7, 2026. The Antigravity IDE is a full code editor with the agent in a side panel and Tab completion.
+    runs: Windows, macOS and Linux, plus a Remote Control web page for following and approving work from another device. Extensions also bring the agent into other code editors, such as Visual Studio Code and Visual Studio. The stand-alone IDE is not offered to enterprise customers, who can use Antigravity 2.0, the CLI or the extensions.
+    plans: The same plans and quotas as the Antigravity CLI; settings, permissions and plugins sync between Antigravity 2.0 and the CLI.
+    acts: Each conversation works in your folders directly or in a separate copy (a Git worktree). The agent drafts an Implementation Plan you can comment on and approve with Proceed, then a walkthrough of what it did, with screenshots for browser work.
+    modes:
+      - name: Default (macOS and Linux)
+        what: Commands run without asking inside the sandbox, which has no network access; running outside it needs your approval. The agent reads and writes the project and temporary folders and asks for anything else.
+      - name: Request Review (macOS and Linux)
+        what: The sandbox is off and every terminal command needs your approval. The agent reads and writes the project and asks for anything else.
+      - name: Turbo (macOS and Linux)
+        what: Every command runs without asking, with no isolation, and the agent can read and write your whole computer.
+      - name: Windows (earlier system)
+        what: Request Review, Proceed in Sandbox or Always Proceed for terminal commands, plus a sandbox mode labeled Preview; by default the agent reaches only your project folders.
+    instructions: The same rules files as the CLI, managed under Customizations, Rules. In the IDE, saved workflows run as /workflow-name stop working on October 19, 2026; Google suggests moving them to skills.
+    skills: The same skill folders; type /skill-name to run one.
+    hooks: Under Settings, Customizations, Hooks.
+    subagents: Helpers shown in a subagent panel, including a browser helper that works in a separate Chrome profile.
+    connectors: An MCP store under Settings, Customizations, and plugins from a Marketplace.
+    sandbox: On macOS and Linux the Default preset runs commands in a sandbox; on Windows, file and network sandboxing arrived on September 19, 2026 and is switched on in Settings.
+    source: https://antigravity.google/docs/agent-settings
+  - id: spark
+    name: Gemini Spark
+    what: Google's personal agent inside the Gemini app. Describe a goal and when it should happen, and it works through the steps on its own, using your connected apps, skills, files and the web, once or on a schedule.
+    runs: The Gemini web app, the phone apps and the Mac app (not the Windows app); on a Mac it can organize and summarize local files.
+    plans: Google AI Pro or Ultra on a personal account, 18 or over, with Keep Activity on. Not on work or school accounts, and not in the European Economic Area, Nigeria, Switzerland or the United Kingdom.
+    acts: It plans and carries out multi-step tasks, browsing either through your own Chrome, where it can reach the sites you are signed in to, or through a separate remote browser. A work panel shows its progress, the files it read or changed, and its schedules.
+    modes:
+      - name: Asks before browsing
+        what: Chrome asks once to connect to Spark; after that, every task that browses the web asks for your confirmation first.
+      - name: Hands control back
+        what: At a sign-in page it asks you to confirm Sign in with Google or to take over and sign in yourself; you can take over its browser at any time.
+      - name: Stop at any time
+        what: Stop browsing or cancel a task whenever you like. A scheduled task can run while you are offline, so Google suggests not scheduling tasks you find sensitive.
+    instructions: Your skills, chosen by typing / in a task, and the files or notebooks you attach.
+    skills: The skills in your Gemini account.
+    connectors: Connected Apps such as Gmail, Calendar and Drive, and custom connected apps.
+    sandbox: Remote browsing and code run on Google's computers; Google's help page asks you not to type sign-in or payment details into a task thread.
+    source: https://support.google.com/gemini/answer/17094507?hl=en
+  - id: gemini-cli
+    name: Gemini CLI
+    what: Google's earlier open-source terminal agent, which also powers agent mode in Gemini Code Assist for VS Code. On June 18, 2026 both stopped serving free individual accounts and Google AI Pro and Ultra subscribers, who move to the Antigravity CLI.
+    runs: The terminal, and agent mode in Gemini Code Assist for VS Code.
+    plans: Organizations with a Gemini Code Assist Standard or Enterprise license, and anyone using a paid Gemini API key. Google stopped selling new Code Assist subscriptions on October 9, 2026; existing ones renew through 2026.
+    acts: It reasons and acts in a loop with its built-in tools and connected MCP servers.
+    modes:
+      - name: default
+        what: Asks before each file edit and shell command.
+      - name: auto_edit
+        what: Approves file edits automatically.
+      - name: plan
+        what: Read-only; researches and writes a plan for approval.
+      - name: yolo
+        what: Approves every action automatically.
+    instructions: GEMINI.md files in the project and in your home folder, which the Antigravity CLI also reads.
+    source: https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/
+  - id: jules
+    name: Jules
+    what: Google's coding agent for GitHub repositories. It works on its own in a cloud virtual machine (copying the code, installing what it needs and editing files) and returns its work through GitHub, so you can leave while it runs. Its documentation still labels it experimental, and the newest changelog entry is dated March 9, 2026.
+    runs: The web at jules.google.com, signed in with a Google Account and connected to GitHub.
+    plans: Free with a Google Account (15 tasks a day); 100 a day with Google AI Pro and 300 with Ultra, which for now apply only to personal Gmail accounts.
+    acts: After setting up, it presents a plan you can read, question and approve before it writes any code; it can also fix failed automated checks on pull requests it opened.
+    modes:
+      - name: Plan review
+        what: You read the plan, ask for changes in the chat, and click approve plan to let it start.
+      - name: Timed auto-approval
+        what: If you leave the page, Jules approves its own plan after a timer, so review promptly when approval matters.
+    instructions: An AGENTS.md file at the root of the repository.
+    connectors: MCP servers for a hand-picked list of services, added in Settings with an API key.
+    sandbox: Each task runs in a cloud virtual machine, not on your computer.
+    source: https://jules.google/docs/review-plan/
+command_groups:
+  - id: start
+    title: Getting Started, Settings, and Help
+  - id: control
+    title: Staying in Control
+  - id: check
+    title: Checking the Work
+  - id: context
+    title: Managing Conversations
+  - id: model
+    title: Model, Usage, and Account
+  - id: extend
+    title: Folders, Skills, and Connections
+  - id: long
+    title: Long Jobs and Background Work
+  - id: dev
+    title: More Commands, Mostly for Developers
+commands:
+  - harness: antigravity-cli
+    group: start
+    command: /help
+    what: Opens the help panel of commands and keyboard shortcuts.
+    example:
+      situation: A first-year student opens the Antigravity CLI in a folder of anatomy lecture notes and is not sure what to type.
+      typed: /help
+      shown:
+        - '[A help panel lists the slash commands and keyboard shortcuts]'
+      note: Typing / on its own opens a menu of commands that narrows as you type, and typing ? also shows the help.
+      why: The quickest way to see what this installation offers.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    group: start
+    command: /config
+    what: Opens the settings editor (also /settings).
+    example:
+      situation: A course director wants every session to start by planning, so nothing in the shared syllabus folder changes before a plan is approved.
+      typed: /config
+      shown:
+        - '[A full-screen list of settings; under Agent Mode the choices are]'
+        - 'option: default'
+        - 'option: accept-edits'
+        - 'option: plan'
+      note: Ctrl+S saves the choice, and it applies to the current session at once.
+      why: Settings change in one place, with no file to edit by hand.
+    source: https://antigravity.google/docs/cli/modes
+  - harness: antigravity-cli
+    group: start
+    command: /voice
+    what: Dictates a prompt with your microphone (also /record, or the F5 key).
+    example:
+      situation: A clerkship coordinator would rather speak a long request than type it between student meetings.
+      typed: /voice
+      shown:
+        - '● Recording 0:07  enter or f5 to insert · esc to discard'
+        - '[Your words appear in the prompt box; Enter stops recording, and the text waits there for you to edit and send]'
+      note: Dictation is not available on business or enterprise accounts. If transcription fails on first use, Google's fix is /logout, then signing in again once.
+      why: Long instructions are often easier to say than to type, and you still check the text before sending.
+    source: https://antigravity.google/docs/cli/commands/voice
+  - harness: antigravity-cli
+    group: start
+    command: /keybindings
+    what: Opens the keyboard shortcut editor, to change which keys do what.
+    example:
+      situation: On a faculty member's laptop the F5 key also needs the Fn key, so starting dictation takes two hands, and they want a simpler key.
+      typed: /keybindings
+      shown:
+        - '[The interactive Keyboard Shortcut Editor opens]'
+        - '[You find the action voice.start_dictation, which F5 starts by default, and give it a new key]'
+      note: The dictation hint on screen changes to show the new key. Other Antigravity CLI shortcuts can be changed the same way.
+      why: Shortcuts that suit your keyboard make features such as dictation easier to use.
+    source: https://antigravity.google/docs/cli/commands/voice
+  - harness: antigravity-cli
+    group: start
+    command: /changelog
+    what: Shows the Antigravity CLI's release notes.
+    example:
+      situation: A staff member who runs training sessions on the Antigravity CLI wants to know what changed in the latest release before the next session.
+      typed: /changelog
+      shown:
+        - '[A full-screen panel shows the release notes for the CLI]'
+      note: Typed in your own terminal, agy changelog shows them too. Google's online changelog also covers Antigravity 2.0 and the other Antigravity apps.
+      why: New features and fixes are easier to use, and to teach, once you know they exist.
+    source: https://antigravity.google/docs/changelog
+  - harness: antigravity-cli
+    group: start
+    command: /feedback
+    what: Opens the panel for sending feedback to Google.
+    example:
+      situation: A faculty member notices the agent keeps misreading the column headings of an exam blueprint table and wants to report it.
+      typed: /feedback
+      shown:
+        - '[The feedback submission panel opens]'
+      note: Antigravity's terms count feedback among the interactions Google records and may review, so describe the problem rather than pasting the material itself.
+      why: Reports a problem to the people who can fix it.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    group: control
+    command: /plan
+    what: Researches first, asks about anything unclear, and drafts an Implementation Plan for you to approve before any change.
+    example:
+      situation: A clerkship coordinator wants 120 objective structured clinical examination (OSCE) station files sorted into weekly folders with an index page, but wants to see the approach first.
+      typed: /plan sort the OSCE station files into one folder per week, with an index page
+      shown:
+        - '[The agent reads the folder and the files that matter]'
+        - '[If anything is unclear, it asks you questions or offers choices]'
+        - '[It drafts an Implementation Plan: the approach, steps with checks, and risks]'
+        - '[You comment on or approve the plan; only then does it start work]'
+      note: Shift+Tab switches to plan mode, which puts /plan in front of every prompt until you switch back.
+      why: Nothing changes until you have read and agreed to the plan, which suits unfamiliar folders and work that matters.
+    source: https://antigravity.google/docs/plan
+  - harness: antigravity-cli
+    group: control
+    command: /grill-me
+    what: Has the agent interview you about details and edge cases before it starts.
+    example:
+      situation: A faculty member wants a self-quiz web page built from the renal physiology question bank but has not decided how it should behave.
+      typed: /grill-me I want a self-quiz page built from the renal physiology question bank
+      shown:
+        - '[The agent asks targeted questions, step by step, before writing anything]'
+      why: Settles the details you would otherwise discover only after the work is done.
+    source: https://antigravity.google/docs/slash-commands
+  - harness: antigravity-cli
+    group: control
+    command: /permissions
+    what: Opens the Permissions Manager, where you list what the agent may do without asking, must ask about, or may never do.
+    example:
+      situation: A faculty member wants the agent never to open the folder of student grade exports kept beside the course files.
+      typed: /permissions
+      shown:
+        - '[First, choose which set of rules to edit]'
+        - 'option: Project'
+        - 'option: Shared'
+        - 'option: Global'
+        - '[Tabs for the allowlist, denylist and asklist; A adds a rule in the form action(target), such as read_file(grade-exports)]'
+      note: Deny beats Ask, and Ask beats Allow. Denying reading a folder also blocks writing to it.
+      why: A hard limit that does not depend on the model's judgment.
+    source: https://antigravity.google/docs/cli/commands/permissions
+  - harness: antigravity-cli
+    group: check
+    command: /artifact
+    what: Opens the Artifact Review panel of plans and files waiting for your approval (also Ctrl+R).
+    example:
+      situation: The agent has drafted three new study-guide files for the cardiology block, and the faculty member wants to read them before they are saved.
+      typed: /artifact
+      shown:
+        - '[A checklist of new and changed files, with open, approve and reject beside each]'
+        - 'Keyboard: ↑/↓ Navigate  y/n Approve/reject  shift+a Approve all  p Preview  esc Done'
+      note: Opening a file shows it in full, and pressing c on a line attaches a comment for the agent.
+      why: You see exactly what will be written before it reaches your folder.
+    source: https://antigravity.google/docs/cli/artifacts
+  - harness: antigravity-cli
+    group: check
+    command: /diff
+    what: Opens a viewer of what changed, including the agent's changes turn by turn.
+    example:
+      situation: Before sending an updated module handbook to colleagues, a course director checks exactly what the agent changed in this session.
+      typed: /diff
+      shown:
+        - '[A list of changed files; Enter opens a file''s line-by-line changes]'
+        - '[Tab switches modes; Turn mode groups the agent''s changes by the turn that made them]'
+        - '[C adds a comment to a line; on leaving, Shift+Y sends your comments to the agent as your next prompt]'
+      note: The first mode lists uncommitted changes in a folder tracked by Git, Mercurial or Jujutsu; the third shows past commits.
+      why: You review the output yourself before anyone else sees it.
+    source: https://antigravity.google/docs/cli/commands/diff
+  - harness: antigravity-cli
+    group: check
+    command: /rewind
+    what: Rolls the conversation back to an earlier step and returns the files to how they were then (also /undo).
+    example:
+      situation: The agent reformatted a reading list across several files in the wrong citation style.
+      typed: /rewind
+      shown:
+        - '[A list of earlier steps, each with a relative time, with the most recent one selected]'
+        - '[Choosing a step takes the conversation and your files back to that point]'
+      note: In very long conversations, older steps cleared to save space are labeled and cannot be chosen.
+      why: An undo for the agent's edits, without needing version control.
+    source: https://antigravity.google/docs/changelog
+  - harness: antigravity-cli
+    group: check
+    command: /codesearch
+    what: Searches the files in your folder from inside the session, without interrupting the agent (also /cs or /search).
+    example:
+      situation: A course director wants to find every lecture note file in the module folder that still uses the old course code, PHM-201.
+      typed: /codesearch -F PHM-201
+      shown:
+        - '[A Code Search panel lists the matches grouped by file, with a line of context above and below]'
+        - '[Enter opens a file at the match; c adds a comment to a line]'
+        - '[On leaving a file with comments, the CLI asks whether to send them]'
+        - 'option: Y (send + close)'
+        - 'option: N (discard + close)'
+      note: 'With -F the text is matched exactly; without it, the query is treated as a pattern. Adding f: and a file pattern limits the search to matching files.'
+      why: Find every place that needs updating, then hand the agent precise, line-by-line instructions.
+    source: https://antigravity.google/docs/cli/commands/codesearch
+  - harness: antigravity-cli
+    group: check
+    command: /btw
+    what: Asks a side question in the background without interrupting the main task.
+    example:
+      situation: Midway through a long task, a faculty member forgets which file held this year's learning objectives.
+      typed: /btw which file has the 2026 learning objectives?
+      shown:
+        - '[The question runs in a light background thread while the main task keeps going]'
+      why: A quick check that does not pause the work.
+    source: https://antigravity.google/docs/slash-commands
+  - harness: antigravity-cli
+    group: check
+    command: /open
+    what: Opens a file in your default text editor.
+    example:
+      situation: The agent has written a one-page summary of a published trial, and the faculty member wants to tidy a sentence by hand.
+      typed: /open summaries/ace-inhibitor-trial.md
+      shown:
+        - '[The file opens in your default editor, outside the CLI]'
+      why: Small fixes are often quicker to make yourself than to describe.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    group: context
+    command: /clear
+    what: Clears the screen and starts a new conversation (also /new).
+    example:
+      situation: A student finishes a cardiology study guide and moves on to an unrelated microbiology task.
+      typed: /clear
+      shown:
+        - '[The terminal clears and a new conversation session starts]'
+      why: Unrelated work gets a clean start, and better answers.
+    source: https://antigravity.google/docs/cli/using
+  - harness: antigravity-cli
+    group: context
+    command: /resume
+    what: Opens a picker of earlier conversations in this folder (also /switch or /conversation).
+    example:
+      situation: A faculty member started outlining a pharmacology workshop in the Antigravity 2.0 app and wants to carry on in the terminal.
+      typed: /resume
+      shown:
+        - '[A list of past conversations, newest first; typing filters it]'
+        - '[Tab switches to the Antigravity tab, which lists conversations from the desktop app]'
+        - '[A prompt asks whether to import the chosen one; y copies its history into the terminal session]'
+      note: F2 renames the highlighted conversation. Typed in your own terminal, agy -c reopens the latest conversation for the current folder.
+      why: You pick up where you left off, even across apps, instead of explaining it all again.
+    source: https://antigravity.google/docs/cli/commands/resume
+  - harness: antigravity-cli
+    group: context
+    command: /rename
+    what: Renames the current conversation.
+    example:
+      situation: A course director keeps several threads for the renal block and wants this one easy to find later.
+      typed: /rename renal-block-question-review
+      shown:
+        - '[The conversation takes the new name, which you can search for in /resume]'
+      why: A clear name makes the right conversation easy to find.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    group: context
+    command: /fork
+    what: Copies the conversation so far into a new, separate session (also /branch).
+    example:
+      situation: A faculty member has a good outline for a case-based lecture and wants to try a different structure without losing it.
+      typed: /fork
+      shown:
+        - '[A new session starts with a copy of the conversation, and the terminal switches to it]'
+      note: The copy is of the conversation, not your files. /resume returns to the original.
+      why: Try an alternative while keeping the version that works.
+    source: https://antigravity.google/docs/cli/conversations
+  - harness: antigravity-cli
+    group: context
+    command: /copy
+    what: Copies the agent's last response to the clipboard.
+    example:
+      situation: The agent drafted an announcement of a curriculum change, and a staff member wants to paste it into an email.
+      typed: /copy
+      shown:
+        - '[The last response is copied to the system clipboard]'
+      why: Saves selecting text by hand in the terminal.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    group: context
+    command: /exit
+    what: Closes the session and returns you to your own terminal (also /quit).
+    example:
+      situation: A faculty member stops for the day partway through drafting small-group cases on sepsis.
+      typed: /exit
+      shown:
+        - '[The session closes, and the CLI prints the exact command that resumes this session later]'
+      note: Ctrl+D on an empty prompt does the same.
+      why: You can stop at any point and come back to the same conversation.
+    source: https://antigravity.google/docs/cli/using
+  - harness: antigravity-cli
+    group: model
+    command: /model
+    what: Chooses the model the agent reasons with; the choice is kept for later sessions.
+    example:
+      situation: A researcher wants Gemini 3.1 Pro for a careful reorganization of a large set of teaching cases.
+      typed: /model
+      shown:
+        - '[A list of the reasoning models your plan includes]'
+      note: Google's Models page shows which models each plan includes; on some plans the list also has Anthropic's Claude models.
+      why: Match capability and quota to the task in front of you.
+    source: https://antigravity.google/docs/models
+  - harness: antigravity-cli
+    group: model
+    command: /effort
+    what: Shows and changes how long the current model reasons before it answers (its reasoning effort).
+    example:
+      situation: A student using Gemini 3.8 Flash wants quicker replies while renaming a folder of lecture files, a job that needs little reasoning.
+      typed: /effort
+      shown:
+        - '[A gauge of the effort levels the current model offers; Left and Right move along it]'
+        - 'option: Low'
+        - 'option: Medium'
+        - 'option: High'
+      note: Typing the level after the command, such as /effort high, sets it in one step. The levels on offer depend on the model, and the same gauge appears in the /model picker.
+      why: Simple jobs come back sooner, and harder ones get more careful reasoning.
+    source: https://antigravity.google/docs/changelog
+  - harness: antigravity-cli
+    group: model
+    command: /usage
+    what: Shows how much of each model's quota you have used (also /quota).
+    example:
+      situation: A student without a paid plan wonders how much of the week's quota a big summarizing task used.
+      typed: /usage
+      shown:
+        - '[A Model Quotas panel with the remaining usage for each model, freshly checked]'
+      note: Without Google AI Pro or Ultra the quota refreshes weekly; on Pro it refreshes every five hours, up to a weekly limit.
+      why: You see a limit coming before it interrupts important work.
+    source: https://antigravity.google/docs/cli/commands/usage
+  - harness: antigravity-cli
+    group: model
+    command: /credits
+    what: Shows your remaining AI credits, what you have used this billing cycle, and links to buy more.
+    example:
+      situation: A faculty member on Google AI Pro has used up the plan's quota and wants to know whether paid credits will be spent.
+      typed: /credits
+      shown:
+        - '[A credits panel: your balance, a usage summary, and links to buy credits or upgrade]'
+      note: Credits are spent after the quota runs out only if the Use G1 Credits setting in /config is on.
+      why: Extra spending stays a deliberate choice.
+    source: https://antigravity.google/docs/cli/credits
+  - harness: antigravity-cli
+    group: model
+    command: /context
+    what: Shows how much of the agent's working memory (its context window) is in use.
+    example:
+      situation: After the agent has read a dozen long review articles, its answers start to drift.
+      typed: /context
+      shown:
+        - '[A panel showing how much of the context window is used]'
+      why: It tells you when to start fresh rather than push on.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    group: model
+    command: /logout
+    what: Signs you out and removes the saved sign-in from this computer.
+    example:
+      situation: A student has used the Antigravity CLI on a shared library computer and is about to leave.
+      typed: /logout
+      shown:
+        - '[Your account is disconnected, and its saved sign-in is removed from the computer''s secure keyring]'
+      why: The next person at the computer cannot use your account or your quota.
+    source: https://antigravity.google/docs/cli/install
+  - harness: antigravity-cli
+    group: extend
+    command: /add-dir
+    what: Adds another folder to the session's workspace.
+    example:
+      situation: While writing new questions, the agent needs to check them against a shared question bank in another folder.
+      typed: /add-dir ../shared-question-bank
+      shown:
+        - '[The folder is added to the active workspace]'
+      why: Access widens one folder at a time, on purpose, rather than to a whole drive.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    group: extend
+    command: /skills
+    what: Lists the skills (saved instructions for a kind of task) loaded for this folder and for your whole computer.
+    example:
+      situation: A faculty member wants to see which skills are already installed before writing one for item writing.
+      typed: /skills
+      shown:
+        - '[A list of the local and global skills that are loaded]'
+      note: Each skill also becomes a command of its own name, so a skill called item-writing-checklist runs as /item-writing-checklist.
+      why: Check what is there before adding more.
+    source: https://antigravity.google/docs/skills
+  - harness: antigravity-cli
+    group: extend
+    command: /learn
+    what: Turns the corrections and feedback from this session into lasting rules or skills.
+    example:
+      situation: After correcting the agent several times, a course director wants every future session to give lab values in SI units (the International System of Units) and use US spelling.
+      typed: /learn save our rule that lab values use SI units and US spelling
+      shown:
+        - '[The agent distills the session''s corrections into a rule or a skill that later sessions follow]'
+      why: Explanations you would otherwise repeat become standing instructions.
+    source: https://antigravity.google/docs/slash-commands
+  - harness: antigravity-cli
+    group: extend
+    command: /plugin
+    what: Opens the Plugins Manager to find, install and switch on bundles of skills, rules and connections (also /plugins).
+    example:
+      situation: A researcher wants to see whether a ready-made plugin exists before building anything.
+      typed: /plugin
+      shown:
+        - '[A Plugins Manager with Installed and Discover tabs; Tab switches between them]'
+        - '[Enter on a plugin shows what it contains; Ctrl+S installs it]'
+      note: In the Installed tab, Space turns a plugin on or off.
+      why: Add capabilities as one bundle, and see exactly what is installed.
+    source: https://antigravity.google/docs/cli/features
+  - harness: antigravity-cli
+    group: extend
+    command: /mcp
+    what: Opens the manager for MCP connections to outside tools and data.
+    example:
+      situation: A researcher's connection to a reference manager has stopped responding.
+      typed: /mcp
+      shown:
+        - '[An MCP Manager panel showing each server as active, disconnected or loading]'
+        - '[Options to reload a server''s configuration or read its connection log]'
+      why: See, and fix, which outside tools the agent can reach.
+    source: https://antigravity.google/docs/mcp
+  - harness: antigravity-cli
+    group: extend
+    command: /agents
+    what: Opens the Agent Manager, to switch to a custom agent or to watch and stop the helpers (subagents) working in the background.
+    example:
+      situation: A faculty member asked the agent to summarize 30 published papers, and it handed the reading to several helpers.
+      typed: /agents
+      shown:
+        - '▸ Subagents (1 running, 2 done)'
+        - '[Each helper shows its state (running, done, error or killed); Enter opens its full log]'
+      note: K stops a running helper. Helpers waiting for your approval can also be reached with Alt+J from the main conversation.
+      why: You see what each helper is doing, and can stop one that has gone astray.
+    source: https://antigravity.google/docs/cli/commands/agents
+  - harness: antigravity-cli
+    group: long
+    command: /goal
+    what: Works toward an objective until it is met, without stopping for turn-by-turn confirmation.
+    example:
+      situation: Every lecture handout in a module folder needs a one-page summary beside it.
+      typed: /goal every handout in this folder has a one-page summary file next to it
+      shown:
+        - '[The agent works through the files, checking and correcting its own work, until the goal is met]'
+      note: Esc stops the agent at any point.
+      why: Suits long jobs with a clear end, and you still review the result.
+    source: https://antigravity.google/docs/slash-commands
+  - harness: antigravity-cli
+    group: long
+    command: /schedule
+    what: Runs an instruction later, once or on a repeating schedule.
+    example:
+      situation: A course coordinator wants a Monday-morning summary of new files added to the shared course folder.
+      typed: '/schedule "0 7 * * 1" summarize the files added to this folder in the past week'
+      shown:
+        - '[The instruction is saved as a scheduled task that runs in the background at that time]'
+      note: The quoted part is a standard schedule pattern (cron) meaning minute 0, hour 7, every Monday. In the desktop app, scheduled tasks are now called Automations.
+      why: Routine checks happen without anyone remembering to start them.
+    source: https://antigravity.google/docs/slash-commands
+  - harness: antigravity-cli
+    group: long
+    command: /browser
+    what: Starts a helper that works in its own sandboxed Chrome browser, for web research or checking a page.
+    example:
+      situation: A librarian has the address of a module's online reading list and wants every link on it checked.
+      typed: /browser open the reading list page and report any links that fail to load
+      shown:
+        - '[The browser helper opens the page in a sandboxed Chrome browser]'
+        - '[Before it visits a site, it asks your permission unless you have allowed that site]'
+        - '[It reports back, often with a walkthrough that includes screenshots]'
+      why: Routine web checks run without tying up your own browser.
+    source: https://antigravity.google/docs/slash-commands
+  - harness: antigravity-cli
+    group: long
+    command: /tasks
+    what: Opens the Task Manager to watch, read the logs of, or stop work running in the background.
+    example:
+      situation: The agent started converting a folder of 200 slide decks in the background, and a staff member wants to see how far it has got.
+      typed: /tasks
+      shown:
+        - '[A Task Manager panel lists background commands, timers and recurring jobs, with their logs and states]'
+      note: A running task can be stopped from the panel.
+      why: Long jobs stay visible, and stoppable, while you keep working.
+    source: https://antigravity.google/docs/cli/features
+  - harness: antigravity-cli
+    group: long
+    command: /remote-control
+    what: Lets you follow and steer this terminal session from a browser on another device.
+    example:
+      situation: A faculty member starts a long reorganization of course files before a meeting and wants to approve steps from a phone.
+      typed: /remote-control
+      shown:
+        - Remote control on for this session.
+        - '[The computer''s hostname, and a link that opens this conversation on another device]'
+      note: Approvals and questions can be answered from either device. /remote-control off ends it, as does closing the session.
+      why: A long job keeps moving without you at the desk.
+    source: https://antigravity.google/docs/remote-control
+  - harness: antigravity-cli
+    group: long
+    command: /teamwork-preview
+    what: Starts a team of agents on a large, long-running project after a scoping interview (paid plans; also /teamwork).
+    example:
+      situation: A journal club leader wants a thorough, multi-angle critique of a published trial report to prepare discussion questions.
+      typed: /teamwork-preview review this published trial report and critique its methods from several angles
+      shown:
+        - '[The agent interviews you about scope, requirements and how success will be checked]'
+        - '[It writes a prompt artifact for you to review; once you approve it, the team works through milestones on its own]'
+      note: Requests to review a paper follow Google's Document Review path, a multi-angle critique and synthesis. The team works in its own project folder.
+      why: Big jobs get several agents checking one another's work before you see the result.
+    source: https://antigravity.google/docs/teamwork
+  - harness: antigravity-cli
+    group: dev
+    command: /boost
+    what: Runs several agents in parallel on a hard programming problem, such as a subtle bug, and checks their solutions before reporting (paid plans).
+    source: https://antigravity.google/docs/boost
+  - harness: antigravity-cli
+    group: dev
+    command: /hooks
+    what: Lists the scripts set to run before or after the agent acts.
+    source: https://antigravity.google/docs/hooks
+  - harness: antigravity-cli
+    group: dev
+    command: /statusline
+    what: Turns the status line on or off, or sets a script to draw it.
+    source: https://antigravity.google/docs/cli/commands/statusline
+  - harness: antigravity-cli
+    group: dev
+    command: /title
+    what: Turns updates to the terminal window's title on or off.
+    source: https://antigravity.google/docs/cli/commands/title
+  - harness: antigravity-app
+    group: dev
+    command: /migrate-workflows
+    what: In Antigravity 2.0, turns saved workflows into skills, before workflows stop working on October 19, 2026.
+    source: https://antigravity.google/docs/migration/workflows-to-skills
+shortcuts:
+  - harness: antigravity-cli
+    keys: Shift+Tab
+    what: Cycle modes (default, accept-edits, plan). At a pending file edit it switches to accept-edits and approves the pending edits.
+    source: https://antigravity.google/docs/cli/modes
+  - harness: antigravity-cli
+    keys: Esc
+    what: Stop the agent's turn, close a panel, or clear an empty prompt.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    keys: y / n / f
+    what: At a proposed file change, accept it, reject it, or open the full-screen diff.
+    source: https://antigravity.google/docs/cli/modes
+  - harness: antigravity-cli
+    keys: Ctrl+R
+    what: Open the Artifact Review panel.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    keys: Ctrl+G
+    what: Write your prompt in your own text editor.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    keys: Ctrl+O
+    what: Show or hide the detail of what the agent's tools did.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    keys: Ctrl+V
+    what: Paste an image or video into the prompt.
+    source: https://antigravity.google/docs/cli/prompting
+  - harness: antigravity-cli
+    keys: Alt+J
+    what: Jump to the next helper (subagent) waiting for your approval.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    keys: Ctrl+K
+    what: Approve that helper's pending action without leaving the main conversation.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    keys: F5
+    what: Start or stop voice dictation.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-cli
+    keys: Shift+Enter
+    what: Start a new line without sending (also Ctrl+J, or \ at the end of a line).
+    source: https://antigravity.google/docs/cli/prompting
+  - harness: antigravity-cli
+    keys: Ctrl+D
+    what: Exit, when the prompt is empty.
+    source: https://antigravity.google/docs/cli/reference
+  - harness: antigravity-app
+    keys: Ctrl+K (Cmd+K on Mac)
+    what: In Antigravity 2.0, open the conversation picker, which searches what conversations contain.
+    source: https://antigravity.google/docs/changelog
+  - harness: antigravity-app
+    keys: Ctrl+N (Cmd+N on Mac)
+    what: In Antigravity 2.0, start a new conversation.
+    source: https://antigravity.google/docs/getting-started
+  - harness: antigravity-app
+    keys: Ctrl+L (Cmd+L on Mac)
+    what: In Antigravity 2.0, move to the message box.
+    source: https://antigravity.google/docs/getting-started
+  - harness: antigravity-app
+    keys: Ctrl+M
+    what: In Antigravity 2.0, start or stop voice transcription.
+    source: https://antigravity.google/docs/features
+symbols:
+  - harness: antigravity-cli
+    syntax: '@'
+    what: Mentions a file, with path suggestions as you type.
+    source: https://antigravity.google/docs/cli/using
+  - harness: antigravity-cli
+    syntax: '!'
+    what: At the start of the prompt, runs a terminal command yourself.
+    source: https://antigravity.google/docs/cli/using
+  - harness: antigravity-cli
+    syntax: '?'
+    what: Shows the help and lists all slash commands.
+    source: https://antigravity.google/docs/cli/using
+  - harness: antigravity-cli
+    syntax: /skill-name
+    what: Runs one of your skills as a command.
+    source: https://antigravity.google/docs/skills
+  - harness: antigravity-cli
+    syntax: agy -c
+    what: Typed in your own terminal, reopens the latest conversation for the current folder.
+    source: https://antigravity.google/docs/cli/commands/resume
+  - harness: antigravity-cli
+    syntax: agy --mode=plan
+    what: Typed in your own terminal, starts the CLI in plan mode (or --mode=accept-edits).
+    source: https://antigravity.google/docs/cli/modes
+  - harness: spark
+    syntax: '@'
+    what: In the Gemini app, chooses a connected app for Gemini to use, such as Gmail; if that app is not connected yet, Gemini connects it or asks your permission first.
+    source: https://support.google.com/gemini/answer/13695044?hl=en
+  - harness: spark
+    syntax: /skill-name
+    what: In the Gemini app, uses one of your skills in a chat or a Gemini Spark task. Google says skills will soon be called with @ instead.
+    source: https://support.google.com/gemini/answer/18560919?hl=en
+full_lists:
+  - title: Antigravity CLI Reference
+    url: https://antigravity.google/docs/cli/reference
+  - title: Slash Commands Overview
+    url: https://antigravity.google/docs/slash-commands
+  - title: Agent Permissions
+    url: https://antigravity.google/docs/permissions
+privacy:
+  - title: Gemini Apps Privacy Hub
+    url: https://support.google.com/gemini/answer/13594961?hl=en
+    covers: How chats on personal accounts are used, including human review of some chats, and how long activity is kept.
+  - title: Manage and delete your Gemini Apps activity
+    url: https://support.google.com/gemini/answer/13278892?hl=en
+    covers: The Keep Activity setting, the auto-delete period, and deleting chats.
+  - title: Use Gemini Apps with a work or school Google Account
+    url: https://support.google.com/gemini/answer/14620100?hl=en
+    covers: Limits and data handling for each Workspace edition, including which have enterprise-grade protections.
+  - title: Generative AI in Google Workspace Privacy Hub
+    url: https://knowledge.workspace.google.com/admin/generative-ai/generative-ai-in-google-workspace-privacy-hub
+    covers: How Google handles Gemini and Gemini Notebook data for business, education and public-sector accounts.
+  - title: Privacy and terms of use in Gemini Notebook
+    url: https://support.google.com/gemininotebook/answer/17004255?hl=en
+    covers: How Gemini Notebook uses your sources and any feedback you give.
+  - title: Google Antigravity Terms
+    url: https://antigravity.google/terms
+    covers: How Antigravity records your interactions, who at Google may review them, and the setting that changes this.
+changes:
+  - date: 2026-10-09
+    change: Google stopped selling new Gemini Code Assist Standard and Enterprise subscriptions; existing ones renew through the rest of 2026.
+    source: https://docs.cloud.google.com/gemini/docs/codeassist/release-notes
+  - date: 2026-10-07
+    change: In Antigravity 2.0, scheduled tasks became Automations and conversation search now looks inside conversations; the Antigravity CLI improved its /diff viewer.
+    source: https://antigravity.google/docs/changelog
+  - date: 2026-10-01
+    change: Guided Vision in Gemini Live, spoken descriptions of your surroundings built with blind and low-vision users, arrived on compatible Android devices.
+    source: https://blog.google/innovation-and-ai/products/gemini-app/guided-vision-gemini-live/
+  - date: 2026-09-30
+    change: Skills arrived in Gemini chat for personal accounts aged 18 or over; Gems will be retired, starting with personal accounts in November.
+    source: https://gemini.google/release-notes/
+  - date: 2026-09-30
+    change: Gemini 4 Argon was announced, for now only for trusted cyber defenders; Google says a wider release will start with paid API customers and Google AI Ultra subscribers.
+    source: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/
+  - date: 2026-09-19
+    change: Antigravity 2.0 added file and network sandboxing on Windows.
+    source: https://antigravity.google/docs/changelog
+  - date: 2026-09-15
+    change: Gemini 3.8 Live and 3.8 Live Extended Thinking were released; Extended Thinking reached Gemini Live, Gmail and Keep for Google AI subscribers, and Docs on Pro and Ultra.
+    source: https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/
+  - date: 2026-09-10
+    change: The Gemini app for Windows launched, opened with Alt+Space.
+    source: https://gemini.google/release-notes/
+  - date: 2026-09-02
+    change: Gemini 3.8 Flash launched for Google AI Pro and Ultra subscribers in the Gemini app, and in Google Antigravity on every plan.
+    source: https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/
+  - date: 2026-07-21
+    change: Gemini 3.6 Flash reached every Gemini app user.
+    source: https://gemini.google/release-notes/
+  - date: 2026-06-18
+    change: Gemini CLI and the Gemini Code Assist editor extensions stopped serving individual accounts, which move to Antigravity and the Antigravity CLI.
+    source: https://docs.cloud.google.com/gemini/docs/codeassist/release-notes
+  - date: 2026-05-19
+    change: The Antigravity CLI became available to everyone, Antigravity 2.0 was released, and Google announced the move from Gemini CLI.
+    source: https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/

@@ -1,0 +1,1422 @@
+# Grok (xAI). Field guide: _fields.yaml in this folder.
+# Commands: every Grok Build command in xAI's reference (docs.x.ai/build/modes-and-commands
+# and /build/cli/reference), plus those its open-source user guide and changelog add.
+# Commands a student, faculty member or staff member might use carry a worked example;
+# developer-only ones sit in the last group without one. Read 2026-10-09.
+id: xai
+page: tools/company/xai.md
+name: Grok
+company: xAI
+checked: 2026-10-09
+pricing_url: https://x.ai/pricing
+plans:
+  - name: Free
+    for: Anyone trying Grok on the web or the phone apps
+    adds: "Chat with Grok 4.6, limited real-time web and X search, voice mode, image generation, connectors, and Grok Build. No video generation and no Grok Bot."
+    source: https://x.ai/pricing
+  - name: SuperGrok Lite
+    for: Not stated (the pricing page names it only in its comparison table, with no price)
+    adds: "In that table: full web and X search and video generation beyond Free; no Grok Bot."
+    source: https://x.ai/pricing
+  - name: SuperGrok
+    for: Individuals who want higher limits
+    adds: Higher limits across all features, image and video generation, and access to Grok Bot.
+    source: https://x.ai/pricing
+  - name: SuperGrok Plus
+    for: Heavy individual use
+    adds: Everything in SuperGrok, plus significantly higher usage across chat, images, voice and Build, 1080p video, faster replies, priority at peak times, and early access to new features.
+    source: https://x.ai/pricing
+  - name: SuperGrok Heavy
+    for: The top individual tier (named in the comparison table, with no price shown)
+    adds: In that table, the same features as SuperGrok plus priority support.
+    source: https://x.ai/pricing
+  - name: Business
+    for: Teams and departments
+    adds: No training on your business data, custom data retention, team seat management, consolidated billing, role-based access, domain verification, user analytics and audit controls. Single sign-on and Grok Bot are not ticked for Business.
+    source: https://x.ai/pricing
+  - name: Enterprise
+    for: Large organizations, through xAI's sales team
+    adds: Everything in Business, plus single sign-on, directory sync, custom roles, customer-managed encryption keys, a dedicated data plane, dedicated onboarding, and options for data residency and custom rate limits.
+    source: https://x.ai/pricing
+  - name: X Premium and X Premium+
+    for: X subscribers who link their X account to Grok
+    adds: "Once the accounts are linked (on grok.com, Settings, Account), xAI reads your X subscription and grants \"relevant benefits\". Which Grok features and limits each X tier includes could not be verified, because X's help pages refuse automated reading. X, not xAI, handles X Premium refunds."
+    source: https://docs.x.ai/grok/faq
+models:
+  - name: Grok 4.7
+    released: 2026-09-21
+    best_for: Coding and knowledge work; xAI's newest model and Grok Build's default
+    where: Grok Build, Cursor and the xAI API (application programming interface, for developers); not announced for grok.com or the Grok apps. Grok 4.7 Fast, a quicker version, runs only in Grok Build and Cursor and is not in Build's free tier.
+    source: https://docs.x.ai/developers/grok-4-7
+  - name: Grok 4.6
+    released: 2026-08-12
+    best_for: Long-running agent work and interactive, visual projects
+    where: The model xAI's pricing table lists for every Grok plan; also Grok Build, Cursor and the xAI API
+    source: https://x.ai/news/grok-4-6
+  - name: Grok Imagine Image 2.0
+    released: 2026-08-07
+    best_for: "Making and editing images: region edits, background removal, and up to five reference images"
+    where: Quality Mode at grok.com/imagine and in the Grok apps (image generation is on every plan); also the xAI API
+    source: https://x.ai/news/grok-imagine-image-2
+  - name: Grok Imagine Video 1.5
+    released: 2026-06-16
+    best_for: Short videos from text, an image or reference pictures, up to 1080p
+    where: grok.com/imagine and the Grok apps on paid plans (video is not on Free); also the xAI API
+    source: https://x.ai/news/grok-imagine-video-1-5-references
+surfaces:
+  - name: grok.com
+    what: The Grok app in a web browser, with chat, search, images and video, voice, files, connectors and Build. xAI's help pages recommend grok.com in Chrome or another Chromium-based browser, since other addresses can lack features such as Projects.
+    source: https://docs.x.ai/grok/faq
+  - name: Grok phone apps
+    what: The same assistant on iOS and Android; your conversations, settings and subscription stay in sync across devices.
+    source: https://docs.x.ai/grok/overview
+  - name: Grok on X
+    what: Grok inside X (x.com and the X apps), under X's own terms, privacy policy and help center rather than xAI's.
+    source: https://x.ai/legal/faq
+  - name: Grok in Microsoft 365
+    what: Add-ins that put Grok inside Word, PowerPoint, Excel and Outlook.
+    source: https://x.ai/news/introducing-outlook-addin
+  - name: Grok in Google Workspace
+    what: An add-on that puts Grok beside the file open in Google Docs, Sheets or Slides.
+    source: https://x.ai/news/introducing-google-workspace-addon
+  - name: xAI API and Console
+    what: For developers, Grok's models through the API, with keys, billing and Grok Business licenses managed in the xAI Console.
+    source: https://docs.x.ai/grok/management
+features:
+  - name: Search
+    what: Live web and X search, with citations to sources.
+    plans: Every plan; limited on Free
+    status: Available
+    source: https://x.ai/grok
+  - name: Multi-agent mode
+    what: Several agents work on parts of a hard question at once, each showing its reasoning, and their results merge into one cited answer.
+    plans: SuperGrok and higher
+    status: Available
+    source: https://x.ai/grok
+  - name: Grok Imagine
+    what: Images and short videos from text or reference pictures; every output carries a Grok watermark, with no setting to remove it.
+    plans: Images on every plan; video on paid plans
+    status: Available
+    source: https://docs.x.ai/grok/faq
+  - name: Voice
+    what: Spoken back-and-forth conversation with Grok.
+    plans: Every plan
+    status: Available
+    source: https://x.ai/grok
+  - name: File uploads
+    what: PDFs, Word, Excel and PowerPoint files, images, audio and video; most files up to 150 MB each, and about 100 files at once on the web (20 on Android).
+    plans: Every plan; limits can vary by plan
+    status: Available
+    source: https://docs.x.ai/grok/faq
+  - name: Memory, custom instructions and Canvas
+    what: Grok remembers preferences across chats; custom instructions tailor its replies; Canvas is a space for long-form writing with inline suggestions.
+    plans: Not stated by plan
+    status: Available
+    source: https://x.ai/grok
+  - name: Private Chat
+    what: A chat that stays out of your history, is deleted from xAI's systems within 30 days, and is not used for training. Start one with the ghost icon at the top right.
+    plans: grok.com and the Grok apps
+    status: Available
+    source: https://x.ai/legal/faq
+  - name: Connectors
+    what: Gmail and Google Calendar, Google Drive, OneDrive, Outlook, Microsoft Teams, SharePoint, Salesforce and a catalog of others, or your own server using MCP (Model Context Protocol), so Grok can use them in a chat.
+    plans: Every plan; on Business and Enterprise an admin must provision each one first
+    status: Available since May 6, 2026
+    source: https://docs.x.ai/grok/connectors
+  - name: Skills
+    what: Instructions Grok reuses in every conversation. Built-in skills make Word documents, presentations, spreadsheets and PDFs, and Skill Creator builds new ones with you.
+    plans: Every account has the built-in skills
+    status: Available since May 18, 2026
+    source: https://x.ai/news/grok-skills
+  - name: Automations
+    what: Jobs Grok runs by itself on a schedule (once, daily, weekdays, weekly, monthly or yearly) or when a matching email arrives, reporting back by email, app notification, both or neither.
+    plans: Scheduled automations on every plan; email triggers with SuperGrok
+    status: Available since July 16, 2026
+    source: https://x.ai/news/grok-automations
+  - name: Build
+    what: Describe an app, game, website or dashboard and Grok builds a working version in the chat; publish it to a grok.me address that only you, anyone with the link, or anyone at all can open.
+    plans: Every plan
+    status: Available since August 19, 2026
+    source: https://x.ai/news/grok-build-for-everyone
+  - name: Weekly usage allowance
+    what: Paid plans share one weekly allowance across chat, images, voice, Build and the API, shown as a percentage under Settings, Usage. Extra Usage Credits, bought on the web, continue past it.
+    plans: Paid plans
+    status: Rolling out since June 2026
+    source: https://docs.x.ai/grok/faq
+  - name: Team workspace
+    what: A workspace for your team beside your personal one on grok.com. Team admins set how widely members can share conversations, projects and skills, from not at all up to public links for conversations; by default, conversations can be shared across the organization.
+    plans: Business and Enterprise
+    status: Available
+    source: https://docs.x.ai/grok/management
+harnesses:
+  - id: grok-build
+    name: Grok Build
+    what: xAI's agent for the terminal, open source since July 15, 2026. It reads the files in the folder you start it in, edits them, and runs commands, asking first by default. xAI presents it as a coding agent, but its tools (reading, searching and editing files, running commands) work on any files. It is not the Build feature in the Grok app, which makes small apps inside a chat.
+    runs: A terminal on Windows (installed from PowerShell), macOS or Linux; also without the full-screen view in scripts, and inside editors and other apps through the Agent Client Protocol (ACP).
+    plans: "Every plan, including Free, in xAI's pricing table (\"Available to try for Free\"); paid plans draw on the same weekly allowance as chat and images. Grok 4.7 Fast is not in its free tier, and xAI publishes no per-plan limits for it."
+    acts: "It works in a loop of tool calls: reading, searching and editing files, running commands, and searching the web (fetching whole web pages is off by default). It keeps a to-do list for multi-step work, saves every session to disk, and can rewind to an earlier prompt. Plan mode has it explore and propose before any edit; /goal hands over long jobs."
+    modes:
+      - name: Ask
+        what: The default. Reading and safe read-only commands run freely; it asks before anything not already allowed, such as an edit or another command.
+      - name: Plan
+        what: It explores and drafts a plan, and only the plan file may be edited until you approve, even in Auto or Always-approve. Commands still follow the permission mode, and xAI notes that a command can still write files.
+      - name: Auto
+        what: A classifier approves tool calls it judges safe; the others still ask. Appears only when the feature is turned on.
+      - name: Always-approve
+        what: No permission prompts for tool calls; deny rules and hooks still apply. Ctrl+O switches it on or off.
+    instructions: At the start of every session it reads AGENTS.md and CLAUDE.md files (and their variants) in the folder and each folder above it up to the project root, plus your global rules, in full with no size limit; outside a git repository it reads only the folder you started in. grok inspect lists what it found. One brief can therefore serve Claude Code, Codex and Grok Build.
+    skills: Folders containing a SKILL.md file, in a project's .grok/skills folder or in your personal .grok folder; it also reads Claude Code's skills. A skill is used when a task matches it, or run by name as /skill-name.
+    hooks: Your own commands, or web addresses, called at fixed points such as before a tool runs. Only the check before a tool runs can block it, and a hook that crashes or times out lets the action through. A project's own hooks run only after you trust the project.
+    subagents: "Helpers with their own context, in three built-in types: general-purpose, explore (reading and searching only) and plan (no commands, no edits). xAI's pages disagree on whether they are on by default."
+    connectors: Outside tools through MCP servers, managed with /mcps; it also loads servers already set up for Claude Code or Cursor.
+    sandbox: An optional sandbox limits where commands can write and, on Linux, their network access. It is off by default and documented for Linux and macOS only; xAI documents no sandbox for Windows.
+    source: https://docs.x.ai/build/features/permissions
+  - id: grok-bot
+    name: Grok Bot
+    what: xAI's work agent. Each Bot is a named teammate with one job, working on a cloud computer with a browser, files and a terminal, so work continues with your laptop closed. Grok Bot signs in with a Cursor account, and the computers Bots work on run in Cursor's cloud; it is separate from Grok on grok.com.
+    runs: Desktop apps for Windows, macOS and Linux; phone apps for iPhone, iPad and Android; and tagging @bot in a post on X (not in every region).
+    plans: A linked SuperGrok, SuperGrok Plus or SuperGrok Heavy subscription, or a paid Cursor plan; not Free or SuperGrok Lite. Bots have their own weekly usage, separate from your Grok plan. An Enterprise version was announced on September 3, 2026.
+    acts: You message a Bot as you would a colleague. It uses connectors where they exist and operates the browser for everything else, hands you control of its computer for passwords, two-factor codes and payments, and returns emails and Slack messages as drafts you send or discard. A process that works can be saved as a skill or a scheduled routine.
+    modes:
+      - name: Per-action approval
+        what: "A card shows the proposed action and its inputs: Allow once, Always allow (which saves a rule), or Deny. Approvals for work that started without you expire after about 10 minutes."
+      - name: Auto Review
+        what: Grok Bot checks tool calls and computer actions before they run, against your Ask first and Allow automatically rules; Ask first wins when both match.
+      - name: Execution on Local Computer
+        what: Whether Bots may run commands on the computer in front of you. Ask every time is the default; Always allow and Never allow are the others, and xAI advises Never allow unless a Bot needs your local files.
+    instructions: No instruction file. Each Bot has a name, one job and a description, and preferences you state in chat are kept in its memory.
+    skills: One private library shared by all your Bots; type / to use one. You can also teach a browser task by doing it once while the Bot records (Teach a task, up to ten minutes).
+    hooks: ''
+    subagents: Instead of helpers, several named Bots run in parallel, message each other and hand work over; Team Bots can be shared with colleagues.
+    connectors: Plugins installed from Marketplace in the sidebar; an installed connector is available to every Bot on your account.
+    sandbox: Bots work on a cloud computer assigned to your account and isolated from other users, but all your Bots share its files, sign-ins and browser sessions; xAI's documentation says not to use separate Bots as a security boundary.
+    source: https://docs.x.ai/grok-bot/approvals-security-and-privacy
+  - id: grok-app
+    name: Agent Features in the Grok App
+    what: "On grok.com and in the phone apps, Grok can act as well as answer: Build makes a working app or website in the chat, connectors reach your email, files and calendar, skills hold reusable instructions, automations run jobs on a schedule, and multi-agent mode splits a hard question among parallel agents."
+    runs: grok.com and the iOS and Android apps.
+    plans: Build, connectors, built-in skills and scheduled automations on every plan, including Free; email-triggered automations and multi-agent mode with SuperGrok and higher.
+    acts: "Chat first: Grok uses a connected service whenever your question relates to it. An automation opens a fresh conversation on each run and saves it to the run history, and Run now starts one at once. Build writes the code and shows a working preview in the conversation before you publish it."
+    modes:
+      - name: Connector sign-in
+        what: A connector works only after you complete its sign-in with that service; from then on Grok uses it whenever a question relates to it. xAI's pages describe no confirmation step before a connector action.
+      - name: Admin provisioning
+        what: On Business and Enterprise, a team admin must provision each connector before members can use it.
+      - name: Publishing a build
+        what: A published app opens for just you, anyone with the link, or anyone on the internet, as you choose.
+    instructions: No instruction file; custom instructions and memory are settings, and skills hold reusable instructions.
+    skills: Built-in skills for Word documents, presentations, spreadsheets and PDFs, plus your own; your version of a built-in skill takes priority over it. Skills can be attached to an automation.
+    hooks: ''
+    subagents: Multi-agent mode only, where several agents work in parallel and their results merge into one answer.
+    connectors: Built-in connectors (Gmail and Google Calendar, Google Drive, OneDrive, Outlook, Microsoft Teams, SharePoint, Salesforce), a catalog of others, and custom MCP servers reachable over the internet.
+    sandbox: ''
+    source: https://docs.x.ai/grok/connectors
+command_groups:
+  - id: start
+    title: Getting Started
+  - id: sessions
+    title: "Sessions: Saving, Finding, and Returning"
+  - id: control
+    title: Staying in Control
+  - id: check
+    title: Checking the Work
+  - id: context
+    title: Context and Memory
+  - id: model
+    title: Model, Effort, and Usage
+  - id: extend
+    title: Skills, Connections, and Extensions
+  - id: long
+    title: Long Jobs and Background Work
+  - id: media
+    title: Images, Video, and Voice
+  - id: display
+    title: Display and Navigation
+  - id: trouble
+    title: Troubleshooting and Feedback
+  - id: dev
+    title: More Commands, Mostly for Developers
+commands:
+  # Getting Started
+  - harness: grok-build
+    group: start
+    command: grok
+    what: In a terminal, starts Grok Build in the current folder.
+    example:
+      situation: A course director has copied this term's anatomy lab handouts into a new folder and opens a terminal there to try Grok Build for the first time.
+      typed: grok
+      shown:
+        - '[On first launch, a browser window opens so you can sign in]'
+        - '[The full-screen app opens on its welcome screen, which lists recent sessions in this folder]'
+      note: Install it first with the one-line installer on xAI's Get Started page, which has a PowerShell version for Windows.
+      why: Every other command starts here. Starting in a copied folder limits what the agent can reach to what the task needs.
+    source: https://docs.x.ai/build/overview
+  - harness: grok-build
+    group: start
+    command: /help
+    what: Lists the commands and keyboard shortcuts available to you.
+    example:
+      situation: A second-year student trying Grok Build on a folder of their own pathology notes cannot remember how to stop a running turn.
+      typed: /help
+      shown:
+        - '[A searchable list of commands and keyboard shortcuts]'
+      note: Typing / on its own opens a list of commands that narrows as you type; Ctrl+P opens a searchable list of every command, shortcut and skill.
+      why: The quickest way to find a command without memorizing it. (Ctrl+C is the one that cancels a running turn.)
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: start
+    command: /tutorial
+    what: Opens xAI's short onboarding tour (also /tour).
+    example:
+      situation: A new instructor in the clinical skills department wants a guided introduction before trying Grok Build on real course files.
+      typed: /tutorial
+      shown:
+        - '[A list of nine short topics, each about a 30-second read, including your first prompt, attaching files, finding your way around, slash commands, worktrees, plan mode and permissions, customizing, switching from another agent tool, and where to go next]'
+      note: The right arrow moves straight on to the next topic. Nothing opens by itself; this command or the command palette is the way in.
+      why: A few minutes here cover the habits that matter most, such as planning first and checking permissions.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: start
+    command: /docs
+    what: Opens xAI's how-to guides inside Grok Build, or its online documentation (also /guides).
+    example:
+      situation: A staff member in the curriculum office wants to read how plan mode works without leaving the terminal.
+      typed: /docs Plan Mode
+      shown:
+        - '[The how-to guide with that title opens inside Grok Build]'
+      note: /docs on its own opens a list of guides to pick from, and /docs web opens docs.x.ai/build/overview in your browser.
+      why: Answers to how-to questions without leaving the session you are in.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: start
+    command: grok inspect
+    what: In a terminal, lists the instruction files, skills, plugins, hooks and MCP servers Grok Build finds for this folder.
+    example:
+      situation: 'A pharmacology course director has put an AGENTS.md file in the course folder ("Use American Medical Association (AMA) citation style. Never edit anything in originals/.") and wants to confirm Grok Build will read it.'
+      typed: grok inspect
+      shown:
+        - '[Each rules file found, with its path and approximate token count]'
+        - '[The skills, plugins, hooks and MCP servers found, each with where it came from]'
+      note: Run it in an ordinary terminal in the course folder, before starting Grok Build. If the folder is not a git repository, only the files in that folder itself are read.
+      why: A quick check that the folder's brief is being read before you rely on the agent to follow it.
+    source: https://docs.x.ai/build/features/project-rules
+  - harness: grok-build
+    group: start
+    command: /import-claude
+    what: "Brings over your Claude Code settings: permissions, environment variables, MCP servers, hooks and paths."
+    example:
+      situation: A faculty member who already uses Claude Code wants the same folder permissions and connections in Grok Build.
+      typed: /import-claude
+      shown:
+        - '[A preview of the settings found in your Claude Code configuration, each with a checkbox]'
+        - '[Confirming writes the items you ticked into Grok Build''s own settings]'
+      note: Grok Build already reads CLAUDE.md files and Claude Code skills without importing. From a terminal, grok import brings over Claude Code sessions, and the /resume-claude, /resume-codex and /resume-cursor skills continue a recent session from those tools.
+      why: Decisions you have already made, such as folders the agent may not touch, carry over instead of being set up again.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/tutorial/01-coming-from-another-tool.md
+  - harness: grok-build
+    group: start
+    command: /login, /logout
+    what: Signs in again without leaving the session, or signs out and returns to the sign-in screen.
+    example:
+      situation: A student finishes a study session on a shared computer in the library and wants to leave no account signed in.
+      typed: /logout
+      shown:
+        - '[You are signed out and returned to the sign-in screen]'
+      note: Sessions are saved on the computer itself, in the .grok folder in your user folder, and xAI does not say that signing out removes them; /delete removes one. From a terminal, grok logout also signs out and clears saved credentials.
+      why: On a shared computer, the next person cannot use Grok Build on your account and plan.
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: start
+    command: /home
+    what: Leaves the current session and returns to the welcome screen (also /welcome).
+    example:
+      situation: A course coordinator finishes tidying one week's handouts and wants to pick a different saved session from the list.
+      typed: /home
+      shown:
+        - '[The welcome screen, listing recent sessions in this folder]'
+      note: The session you leave stays saved.
+      why: Moves between pieces of work without quitting the app.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/17-sessions.md
+  - harness: grok-build
+    group: start
+    command: /quit
+    what: Quits Grok Build (also /exit).
+    example:
+      situation: At the end of the day, a faculty member wants to close Grok Build.
+      typed: /quit
+      shown:
+        - '[Grok Build closes; the session stays saved and can be resumed later]'
+      note: Pressing Ctrl+Q twice also quits (Ctrl+D in terminals inside VS Code and similar editors).
+      why: A clean exit, and the session is saved, so tomorrow grok -c picks it up.
+    source: https://docs.x.ai/build/modes-and-commands
+  # Sessions
+  - harness: grok-build
+    group: sessions
+    command: /new
+    what: Starts a new session; the previous one stays saved (also /clear).
+    example:
+      situation: A faculty member has finished reorganizing lab handouts and now wants to draft a grading rubric, an unrelated task, in the same folder.
+      typed: /new
+      shown:
+        - '[A new, empty session; the finished one stays saved on disk]'
+      why: A fresh session for a new task keeps old context out of it, and /resume still brings the old one back.
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: sessions
+    command: /resume
+    what: Opens a list of recent sessions in this folder so you can carry one on.
+    example:
+      situation: Yesterday a course director started building a practice quiz from her own lecture notes and wants to continue where she stopped.
+      typed: /resume
+      shown:
+        - '[A list of recent sessions for this folder; typing filters by title and also searches what was said in them]'
+        - '[The chosen session returns, with its to-do list and the last status of each item]'
+      why: Long tasks rarely finish in one sitting, and resuming avoids explaining the job again.
+    source: https://docs.x.ai/build/features/sessions
+  - harness: grok-build
+    group: sessions
+    command: grok -c
+    what: In a terminal, starts Grok Build by continuing the most recent session in this folder.
+    example:
+      situation: A student closed Grok Build partway through turning a week of cardiology notes into summary tables, and opens it again the next morning.
+      typed: grok -c
+      shown:
+        - '[Grok Build opens straight into the most recent session for this folder]'
+      note: grok --resume followed by a session's ID opens a particular one.
+      why: One step back into yesterday's work, without the welcome screen.
+    source: https://docs.x.ai/build/features/sessions
+  - harness: grok-build
+    group: sessions
+    command: /rename
+    what: Renames the current session (also /title).
+    example:
+      situation: A clerkship coordinator has several sessions in one folder and wants this one easy to find later.
+      typed: /rename Week 3 rotation schedule
+      shown:
+        - '[The session takes the new title in the session lists]'
+      note: Titles are otherwise written automatically from the conversation; /rename --auto hands the title back to that.
+      why: A clear title makes the right session quick to find in /resume.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/17-sessions.md
+  - harness: grok-build
+    group: sessions
+    command: /session-info
+    what: "Shows the current session's details: model, sign-in method, folder, sandbox and how full the context is (also /status)."
+    example:
+      situation: Before a long task, a teaching assistant wants to confirm which model and folder this session is using.
+      typed: /session-info
+      shown:
+        - '[The session''s title, Grok Build version, sign-in method, session ID, working folder and model]'
+        - '[The sandbox profile, when one is set, and context use in tokens and as a percentage]'
+      note: Click a value to copy it; c copies the session ID.
+      why: A one-screen check that the agent is working where, and with what, you think it is.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/17-sessions.md
+  - harness: grok-build
+    group: sessions
+    command: /dashboard
+    what: 'Opens the Agent Dashboard, a live list of every session in this window (also /sessions, or Ctrl+\).'
+    example:
+      situation: A staff member has one session reformatting handbook chapters and another checking links, and wants to see which is waiting for an answer.
+      typed: /dashboard
+      shown:
+        - '[Sessions grouped by state: Needs input, Working, Idle, Inactive, Completed and Failed]'
+        - '[Selecting one shows its latest activity; typing replies to it, and Enter opens it]'
+      note: Permission questions can be answered from the dashboard with the number keys. From a terminal, grok dashboard opens it directly.
+      why: One view of several jobs, so none sits waiting for a reply you did not see.
+    source: https://docs.x.ai/build/features/dashboard
+  - harness: grok-build
+    group: sessions
+    command: /delete
+    what: Deletes the current session's saved history, after asking you to confirm.
+    example:
+      situation: A faculty member opened the wrong file in a session and does not want that conversation kept on the computer.
+      typed: /delete
+      shown:
+        - '[A confirmation; once confirmed, the session''s history is deleted permanently and you return to the welcome screen]'
+      note: To delete a session you are not in, open /resume, highlight it, and press d then y.
+      why: Saved sessions stay on the computer until deleted, and this removes one you no longer want. What xAI keeps on its side is a separate setting, under /privacy.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/17-sessions.md
+  - harness: grok-build
+    group: sessions
+    command: grok sessions
+    what: In a terminal, lists, searches or permanently deletes the saved sessions for this folder.
+    example:
+      situation: A course director remembers discussing renal clearance in an earlier session, but not which one.
+      typed: grok sessions search "renal clearance"
+      shown:
+        - '[Matching sessions, found by title and by the prompts typed in them]'
+      note: grok sessions list shows recent sessions, and grok sessions delete followed by a session ID removes one for good.
+      why: Finds old work by what was said, not by when it happened.
+    source: https://docs.x.ai/build/features/sessions
+  - harness: grok-build
+    group: sessions
+    command: /share
+    what: Listed by xAI as sharing the current session through a web link; Grok Build's open-source code currently switches it off.
+    example:
+      situation: A faculty member wants to send a colleague the session in which a small-group case was drafted.
+      typed: /share
+      shown:
+        - Session sharing is temporarily disabled
+      note: This is the message in Grok Build's open-source code as published on September 29, 2026; sharing was switched off on July 30, 2026. /export saves a copy you can send instead.
+      why: Worth knowing before promising someone a link. xAI's code describes the link as public, so anyone holding it would see the whole session.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/src/slash/commands/share.rs
+  # Staying in Control
+  - harness: grok-build
+    group: control
+    command: /plan
+    what: "Enters plan mode: Grok Build explores and drafts a plan, and only the plan file can be edited until you approve it."
+    example:
+      situation: A course director wants 40 copied lecture-note files merged into one study guide per organ system, and wants to see the approach before anything changes.
+      typed: /plan Merge these lecture notes into one study guide per organ system. Leave the original files unchanged.
+      shown:
+        - '[The status reads plan while it explores; a plan preview opens when it finishes]'
+        - '[a]pprove [c]omment [q]uit plan'
+        - '[Until you approve, only the plan file can be edited, even in Auto or Always-approve]'
+      note: On the review screen, a approves and starts the work, s asks for changes, c comments on a line, and q leaves plan mode. Shift+Tab also turns plan mode on.
+      why: You check the approach before any file is touched. Commands still follow your permission mode, so read what it asks to run.
+    source: https://docs.x.ai/build/features/plan-mode
+  - harness: grok-build
+    group: control
+    command: /view-plan
+    what: Reopens the saved plan (also /show-plan).
+    example:
+      situation: Halfway through the approved study-guide merge, the course director wants to check what step four of the plan said.
+      typed: /view-plan
+      shown:
+        - '[The plan preview opens again]'
+      why: The plan is the agreement, and checking it mid-task shows whether the work is still following it.
+    source: https://docs.x.ai/build/features/plan-mode
+  - harness: grok-build
+    group: control
+    command: /auto
+    what: "Switches auto mode on or off: a classifier approves tool calls it judges safe, and the rest still ask."
+    example:
+      situation: A teaching assistant is renaming 60 transcript files to a fixed pattern and finds approving each step slow.
+      typed: /auto
+      shown:
+        - '[The status shows auto; actions the classifier does not approve still bring a permission prompt]'
+      note: Appears only when the feature is turned on. Running /auto again returns to asking, and deny rules and hooks still apply.
+      why: Fewer interruptions on routine work, while riskier actions still stop for you.
+    source: https://docs.x.ai/build/features/permissions
+  - harness: grok-build
+    group: control
+    command: /always-approve
+    what: "Switches always-approve mode on or off: no permission prompts for tool calls, though deny rules and hooks still apply."
+    example:
+      situation: A faculty member converting 200 public-domain histology images to a new format is tired of approving each step and is considering turning prompts off.
+      typed: /always-approve
+      shown:
+        - '[Permission prompts stop for tool calls; deny rules and hooks still apply]'
+        - '[Running /always-approve again, or pressing Ctrl+O, returns to asking]'
+      note: xAI's guide suggests this mode for scripts and automation, with deny rules for hard limits, and the ask or auto modes for everyday interactive use.
+      why: With no prompts, nothing pauses a mistaken command, so it suits a copied folder you could afford to lose, ideally with a sandbox (documented for macOS and Linux).
+    source: https://docs.x.ai/build/features/permissions
+  - harness: grok-build
+    group: control
+    command: grok --sandbox
+    what: In a terminal, starts Grok Build with a sandbox profile that limits where its commands can write.
+    example:
+      situation: On a Mac, a staff member wants Grok Build's commands kept inside a copied folder of department forms.
+      typed: grok --sandbox workspace
+      shown:
+        - '[Grok Build starts with commands able to write only in this folder, Grok''s own settings folder and temporary files]'
+      note: Other profiles include read-only (writes only to Grok's own folder and temporary files) and strict (also limits reading). The sandbox is off by default and documented for macOS and Linux only; xAI describes none for Windows.
+      why: A second line of defense, so that even an approved command cannot change files elsewhere on the computer.
+    source: https://docs.x.ai/build/features/sandbox
+  - harness: grok-build
+    group: control
+    command: /privacy
+    what: Opens the setting for whether xAI may keep and train on your Grok Build sessions.
+    example:
+      situation: Before using Grok Build on course materials, a faculty member wants to check whether those sessions can be used to train xAI's models.
+      typed: /privacy
+      shown:
+        - '[Settings opens on Coding data, retention, and training]'
+        - 'option: Opt in'
+        - 'option: Opt out'
+      note: On a team account only an admin can change it, and the row shows ZDR (zero data retention) or Admin Managed instead of the choice.
+      why: Shows, and lets you change, one of the settings that decide what happens to what you type.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  # Checking the Work
+  - harness: grok-build
+    group: check
+    command: /rewind
+    what: Rolls the conversation back to an earlier prompt, dropping the turns after it (also /undo, or Esc twice on an empty prompt).
+    example:
+      situation: A course coordinator's request to reformat an answer key was misread, and the next few turns built on the misunderstanding.
+      typed: /rewind
+      shown:
+        - '[A list of rewind points, one for each prompt you sent]'
+        - '[After you pick one, a confirmation]'
+        - 'option: Yes'
+        - "option: Yes, and don't ask again"
+        - 'option: No'
+      note: Since version 1.0.1 (August 10, 2026), rewinding rolls back only the conversation; files changed after that point stay as they are. xAI's Sessions page still says files are restored, so check the files and put back any you need yourself.
+      why: A clean restart from a good point without retyping the conversation. Working on copies remains the safety net for the files.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/17-sessions.md
+  - harness: grok-build
+    group: check
+    command: /btw
+    what: Asks a side question without interrupting the running task.
+    example:
+      situation: While Grok Build formats 60 practice questions, a new faculty member wants to know what the lead-in of a board-style question is.
+      typed: /btw What is the lead-in in a board-style multiple-choice question?
+      shown:
+        - '[The answer appears while the main task keeps running; the side question is not added to the main task]'
+      note: /btw also works in the middle of a message, and the whole message then becomes the side question.
+      why: You can learn as you go without derailing a long task.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: check
+    command: /export
+    what: Saves the conversation as a Markdown file, or copies it to the clipboard.
+    example:
+      situation: A faculty member wants a record of how a module's exam blueprint was built, to keep with the module files.
+      typed: /export blueprint-session.md
+      shown:
+        - '[The conversation is written to blueprint-session.md]'
+      note: Without a file name, the whole transcript is copied to the clipboard. From a terminal, grok export followed by a session ID exports a saved session.
+      why: Keeps a readable record of what the agent did and why.
+    source: https://docs.x.ai/build/features/sessions
+  - harness: grok-build
+    group: check
+    command: /copy
+    what: Copies the latest response, or an earlier one, to the clipboard or to a file.
+    example:
+      situation: A student wants the summary table Grok Build produced two replies ago, to paste into their own notes.
+      typed: /copy 2
+      shown:
+        - '[A brief confirmation, such as: Copied!]'
+      note: Each copy is also saved to a backup file in Grok's own folder, in case the clipboard cannot be reached. /copy notes.md writes the reply to a file instead.
+      why: Moves a result into your own document without retyping it.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: check
+    command: /history
+    what: Searches the prompts you have typed in this session, newest first, so you can reuse one.
+    example:
+      situation: Earlier in the session, a coordinator wrote a long, carefully worded request for formatting the rotation schedule, and wants it again for the next block.
+      typed: /history
+      shown:
+        - '[A search over this session''s prompts, newest first; Enter or Tab puts the chosen one back in the input box]'
+      note: The up arrow on an empty prompt also steps back through recent prompts.
+      why: A request that worked once can be reused or adjusted instead of rewritten.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: check
+    command: /find
+    what: Searches the conversation for a word or phrase.
+    example:
+      situation: In a long session, a faculty member wants to find where Grok Build mentioned the file of learning objectives.
+      typed: /find learning objectives
+      shown:
+        - '[A search of the conversation opens, starting from the words you typed]'
+      note: Works in the full-screen view; in the minimal view, use your terminal's own search.
+      why: Finds an earlier detail without scrolling through every step.
+    source: https://docs.x.ai/build/modes-and-commands
+  # Context and Memory
+  - harness: grok-build
+    group: context
+    command: /context
+    what: Shows how full the model's working memory (its context window) is, and with what.
+    example:
+      situation: After Grok Build has read a long published clinical guideline and twelve lecture-note files, its answers start to drift.
+      typed: /context
+      shown:
+        - '[The context window split into System prompt, Messages, Reasoning/overhead and Free]'
+      note: Grok Build compacts the conversation by itself once the window reaches 85 percent.
+      why: Tells you when to compact the conversation or start fresh with /new.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: context
+    command: /compact
+    what: Compresses the conversation so far into a summary, to free space in the context window.
+    example:
+      situation: Midway through a long session writing practice questions from her own notes, a faculty member sees from /context that the context window is nearly full.
+      typed: /compact
+      shown:
+        - '[The conversation history is compressed, freeing space in the context window]'
+      note: "xAI's online reference shows an optional instruction about what to keep, but Grok Build's open-source code, as published on September 29, 2026, refuses one with: /compact takes no arguments."
+      why: A long session keeps going with room to work. Rules that must not be lost, such as agreed item-writing conventions, are safest written in the folder's AGENTS.md file rather than left in the conversation.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/17-sessions.md
+  - harness: grok-build
+    group: context
+    command: /context-window
+    what: Picks the size of the context window for this session, when the model offers more than one.
+    example:
+      situation: A researcher wants Grok Build to keep a long published systematic review and its supplement in view at once.
+      typed: /context-window 500k
+      shown:
+        - '[The session uses the 500k window from now on]'
+      note: Listed only when the current model offers more than one size. A size smaller than what is already in use starts a compaction.
+      why: Matches the working memory to the amount of material in front of you.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: context
+    command: /recap
+    what: Summarizes the session so far, to catch up on where things stand (also /summarize).
+    example:
+      situation: A staff member returns from a meeting to a long session that has been reorganizing the student handbook.
+      typed: /recap
+      shown:
+        - '[A short summary of the session appears in the conversation; it is not added to what the model reads]'
+      note: 'In a session with nothing in it yet, it answers: No messages yet.'
+      why: A quick way back into work you stepped away from.
+    source: https://x.ai/changelog/build
+  - harness: grok-build
+    group: context
+    command: /remember
+    what: Saves a note for later sessions.
+    example:
+      situation: A course director wants every future session, in any folder, to use AMA citation style and US English without repeating it.
+      typed: /remember I write in US English and cite in AMA style
+      shown:
+        - '[A review panel shows the note, with an optional reworded version (Tab switches between them); nothing is saved until you confirm]'
+        - Memory saved to ~/.grok/memory/MEMORY.md
+      note: "Starting a prompt with # saves a note the same way. A preference for every folder goes to that global file; a note about one project goes to that project's own memory file instead."
+      why: A light way to set a standing preference; for one course folder, an AGENTS.md file in the folder is easier for colleagues to see and edit.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/13-memory.md
+  - harness: grok-build
+    group: context
+    command: /memory
+    what: Opens a browser of the notes Grok Build has saved to memory, where you can read them, delete one, or turn memory on (also /mem).
+    example:
+      situation: Before sharing a course folder with a colleague, a faculty member wants to see what Grok Build has remembered about it.
+      typed: /memory
+      shown:
+        - '[A Memory window listing Global, Workspace and Sessions notes, with a preview of the selected one]'
+        - '[t turns memory on or off for this session; x deletes the selected note]'
+      note: Memory across sessions is off unless you turn it on, and the t switch here lasts only for the session.
+      why: Memory shapes later sessions, so checking it shows what the agent has kept and lets you remove a wrong note.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: context
+    command: /flush
+    what: Saves what matters from this session into memory now, instead of waiting.
+    example:
+      situation: At the end of a productive session settling the conventions for a new question bank, a faculty member wants them kept before compacting.
+      typed: /flush
+      shown:
+        - Flushing memory…
+        - '[A line reports the result, for example: Memory flushed through turn 12]'
+      note: Needs memory across sessions turned on.
+      why: Locks in decisions before a compaction or the end of the day can lose them.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: context
+    command: /dream
+    what: Merges saved memory notes into organized topics.
+    example:
+      situation: After a month of sessions on one course, a faculty member's memory notes have grown into many small observations.
+      typed: /dream
+      shown:
+        - Consolidating memory…
+        - '[A line reports how many observations were merged into how many topics, or that there was nothing to merge]'
+      note: Needs memory across sessions turned on.
+      why: Tidier notes are easier to read and correct with /memory.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: context
+    command: grok memory clear
+    what: In a terminal, deletes Grok Build's memory files for this folder, its global notes, or both.
+    example:
+      situation: A faculty member is passing a laptop on to a colleague and wants Grok Build's remembered notes removed first.
+      typed: grok memory clear --all
+      shown:
+        - '[A confirmation, then both this folder''s memory and the global notes are cleared]'
+      note: With no option, or with --workspace, only this folder's notes are cleared; --global clears only the notes that apply everywhere.
+      why: Removes what was remembered in one step, rather than note by note.
+    source: https://docs.x.ai/build/cli/reference
+  # Model, Effort, and Usage
+  - harness: grok-build
+    group: model
+    command: /model
+    what: Switches the model, then the context size and effort where the model offers them (also /m).
+    example:
+      situation: A faculty member wants to see which models Grok Build offers before starting a long literature-summary task.
+      typed: /model
+      shown:
+        - '[A picker of models; after the model, it asks for a context size where offered, then an effort level]'
+      note: /model grok-4.6 switches directly. Ctrl+M opens the picker when the prompt is not selected.
+      why: Match the model to the job; Grok 4.7 is Grok Build's default.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: model
+    command: /effort
+    what: "Sets how hard the current model reasons: low, medium, high or xhigh."
+    example:
+      situation: A teaching assistant is renaming 40 lecture PDFs to a fixed pattern, a job that needs little judgment.
+      typed: /effort low
+      shown:
+        - '[Reasoning effort for the current model is set to low]'
+      note: Applies only to models that support effort levels; a level the model does not support is refused.
+      why: Lower effort is quicker for mechanical work; keep higher effort for tasks that need judgment.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: model
+    command: grok models
+    what: In a terminal, lists the models available to Grok Build.
+    example:
+      situation: Before a session, a course director wants to know which models her plan gives her in Grok Build.
+      typed: grok models
+      shown:
+        - '[A list of the models you can use]'
+      why: Know the choices before you start, so you can name one with /model.
+    source: https://docs.x.ai/build/cli/reference
+  - harness: grok-build
+    group: model
+    command: /usage
+    what: Shows how much of your plan's allowance is used, or opens billing (also /cost).
+    example:
+      situation: A student on SuperGrok has run several long Grok Build sessions and wants to know how much of the weekly allowance is left before exam week.
+      typed: /usage
+      shown:
+        - '[Your account''s allowance, with this session''s context and token totals]'
+      note: /usage manage opens billing. The command is hidden for Free and X Basic personal accounts.
+      why: Grok Build draws on the same weekly allowance as chat and images, so a long task can use much of a week's share.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: model
+    command: /release-notes
+    what: Shows what changed in the version you have installed (also /changelog).
+    example:
+      situation: After an update, a faculty member notices a new button and wants to know what changed.
+      typed: /release-notes
+      shown:
+        - '[The release notes for the installed version]'
+      why: Grok Build changes often, and the notes explain new behavior before it surprises you.
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: model
+    command: grok update
+    what: In a terminal, checks for a newer version of Grok Build and installs it.
+    example:
+      situation: A colleague mentions a command that a faculty member's copy of Grok Build does not have.
+      typed: grok update
+      shown:
+        - '[Grok Build checks for a newer version and installs it]'
+      note: grok version shows the version you have. If Grok Build was installed with WinGet on Windows, grok update prints the WinGet command to use instead and changes nothing.
+      why: Commands and fixes arrive in new versions, so an old copy can lack what the documentation describes.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/01-getting-started.md
+  # Skills, Connections, and Extensions
+  - harness: grok-build
+    group: extend
+    command: /skills
+    what: Opens the extensions window on its Skills tab, listing the skills installed.
+    example:
+      situation: A department has shared a case-vignette-writer skill, and a faculty member wants to confirm it is installed.
+      typed: /skills
+      shown:
+        - '[The extensions window opens on its Skills tab, beside tabs for Hooks, Plugins, Marketplace, Workflows and MCP Servers]'
+      note: Turning a skill off here also stops it appearing as a slash command.
+      why: Shows which skills Grok Build may use before you rely on one.
+    source: https://docs.x.ai/build/features/skills-plugins-marketplaces
+  - harness: grok-build
+    group: extend
+    command: /<skill-name>
+    what: Runs a skill by its name, like a command.
+    example:
+      situation: The department's case-vignette-writer skill drafts small-group cases in an agreed format, and a faculty member needs one on diabetic ketoacidosis.
+      typed: /case-vignette-writer diabetic ketoacidosis in a 19-year-old, for second-year small groups
+      shown:
+        - '[Grok Build follows the skill''s instructions to draft the case]'
+      note: If a skill shares a name with a built-in command, the built-in wins and the skill is reached with a prefix, such as /local:compact.
+      why: A department's agreed method is applied the same way every time.
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: extend
+    command: /skillify
+    what: Turns the current session into a new skill.
+    example:
+      situation: After an hour refining how Grok Build turns lecture notes into flashcards, a student wants to reuse the method next week.
+      typed: /skillify
+      shown:
+        - '[Grok Build captures the session as a new skill]'
+      note: Named on xAI's Grok Build product page; it is not in the command reference.
+      why: A method that took effort to get right becomes one command.
+    source: https://x.ai/build
+  - harness: grok-build
+    group: extend
+    command: /mcps
+    what: Opens the list of MCP servers (connections to outside tools), to switch them on or off, add them, or sign in to them.
+    example:
+      situation: The library has set up a read-only connection to a reference manager for a faculty member, who wants to check it works before asking for help with citations.
+      typed: /mcps
+      shown:
+        - '[The MCP tab of the extensions window, listing the configured servers]'
+        - '[Space switches a server on or off, r refreshes, i signs in to a server that needs it, a adds and x removes]'
+      note: Tools from a server appear under its name, such as refs__search.
+      why: Each connection widens what the agent can reach, so seeing and switching them keeps that a deliberate choice.
+    source: https://docs.x.ai/build/features/mcp-servers
+  - harness: grok-build
+    group: extend
+    command: /plugins
+    what: "Opens the extensions window on its Plugins tab: installed plugins, installing new ones, and trust (also /plugin)."
+    example:
+      situation: An instructional designer was told that a plugin bundles the department's skills and connections, and wants to see what is installed.
+      typed: /plugins
+      shown:
+        - '[The Plugins tab, listing installed plugins, with ways to install from the marketplace and manage trust]'
+      note: One plugin can bundle skills, helper agents, hooks and MCP servers.
+      why: A plugin can add several capabilities at once, so it is worth knowing what each one brings.
+    source: https://docs.x.ai/build/features/skills-plugins-marketplaces
+  - harness: grok-build
+    group: extend
+    command: /marketplace
+    what: Opens the extensions window on its Marketplace tab, to browse and install plugins.
+    example:
+      situation: A faculty member wants to see whether a ready-made plugin exists for working with PDFs before building anything.
+      typed: /marketplace
+      shown:
+        - '[The Marketplace tab, listing plugins from the sources in your settings, each with an install option]'
+      note: Sources can include a team's own git repository.
+      why: Check what exists before building your own, and read what a plugin includes before installing it.
+    source: https://docs.x.ai/build/features/skills-plugins-marketplaces
+  # Long Jobs and Background Work
+  - harness: grok-build
+    group: long
+    command: /goal
+    what: "Hands over a long task: Grok Build keeps working, round after round, until a check confirms the goal is met."
+    example:
+      situation: A student wants flashcards made from every file in their own notes folder, each card citing the note it came from.
+      typed: /goal Turn every file in notes/ into flashcards in cards.csv, one card per key fact, each citing its source file
+      shown:
+        - '[Grok Build plans an approach, breaks the work into a progress checklist and starts]'
+        - '[/goal status shows the live progress panel; /goal pause stops and keeps the goal; /goal clear drops it]'
+      note: It marks the goal complete only after an independent review of the evidence; if that fails, the goal stays open or pauses with the gaps listed.
+      why: Suits long jobs with a clear finish line, and you still review the result.
+    source: https://x.ai/news/introducing-goal
+  - harness: grok-build
+    group: long
+    command: /loop
+    what: Runs a prompt again and again at an interval you set.
+    example:
+      situation: In the week before term, a coordinator wants Grok Build to check the shared slides folder every hour and add each newly uploaded deck to the course checklist.
+      typed: /loop 1h check the slides folder for new decks and add each one to checklist.md
+      shown:
+        - '[The prompt runs now, then again every hour, each time as a new turn]'
+      note: Intervals run from 60 seconds to days; a loop expires after 7 days, and up to 50 can be active. Cancel one from the tasks pane (Ctrl+G).
+      why: Repetitive checking happens without you, and stops by itself.
+    source: https://docs.x.ai/build/features/background-tasks
+  - harness: grok-build
+    group: long
+    command: /tasks
+    what: "Lists what is running in the background: commands, helper agents and scheduled prompts."
+    example:
+      situation: A coordinator has a loop running and a long conversion in the background, and wants to see both at once.
+      typed: /tasks
+      shown:
+        - '[A list of background tasks, helper agents and scheduled tasks]'
+      note: Ctrl+G opens the live tasks pane instead. To stop a background command, select it in the conversation and press x, or ask Grok Build to stop it.
+      why: Shows what is still working on your behalf, so nothing runs longer than you meant.
+    source: https://docs.x.ai/build/features/background-tasks
+  - harness: grok-build
+    group: long
+    command: /queue
+    what: Lists the prompts waiting behind the one now running.
+    example:
+      situation: While Grok Build works through a long reformatting job, a faculty member has typed two follow-up requests and wants to check their order.
+      typed: /queue
+      shown:
+        - '[The queued prompts, in the order they will be sent]'
+      note: Prompts typed during a turn are queued, not lost; Ctrl+; opens the queue panel.
+      why: Confirms what will happen next before the current step finishes.
+    source: https://docs.x.ai/build/features/background-tasks
+  - harness: grok-build
+    group: long
+    command: /deep-research
+    what: Starts a research workflow in the background that checks each claim against its sources and writes a cited report.
+    example:
+      situation: While revising a syllabus, a faculty member wants a background review of published evaluations of AI tutors in preclinical anatomy teaching.
+      typed: /deep-research Published evaluations of AI tutors in preclinical anatomy teaching since 2024
+      shown:
+        - '[The command returns at once; the report appears in the conversation when it is ready]'
+        - '[Only claims that pass an independent check are kept, and the report is marked Partial when anything could not be checked]'
+      note: /workflow runs shows its progress.
+      why: A research brief that runs while you keep working. Open and check every citation before you rely on it.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: long
+    command: /workflow
+    what: Starts a saved workflow, or shows and controls the ones running.
+    example:
+      situation: A faculty member wants to see how far the background literature review has got.
+      typed: /workflow runs
+      shown:
+        - '[The Workflow Runs dashboard: each run''s name, phase, helper agents, progress and result]'
+        - '[In a run''s details, p pauses, r resumes and x stops it]'
+      note: /workflow followed by a saved workflow's name starts it.
+      why: Background work stays visible and can be paused or stopped.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: long
+    command: /workflows
+    what: Lists the saved workflows Grok Build has found, built-in, project and personal.
+    example:
+      situation: A course director wants to know which ready-made workflows exist before writing one.
+      typed: /workflows
+      shown:
+        - '[The Workflows tab of the extensions window: each saved workflow with its source, description and file location]'
+      note: xAI's online command table describes /workflows as the live run dashboard; its newer user guide and changelog give that job to /workflow runs.
+      why: Check what already exists before building your own.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: long
+    command: /create-workflow
+    what: Writes and saves a new workflow, after asking how it should divide, check and limit the work.
+    example:
+      situation: Each term a faculty member checks every question in a 300-item bank against the department's style guide, and wants it done the same way each time.
+      typed: /create-workflow Check every question in the bank against the style guide, then verify each finding
+      shown:
+        - '[Grok Build asks about fan-out, verification and scope]'
+        - '[It writes the workflow, tests it briefly, and saves it in the project''s .grok/workflows folder]'
+      note: Run it later with /workflow and its name.
+      why: A repeated, many-step check becomes one command that runs the same way each time.
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: long
+    command: /fork
+    what: Copies the current conversation into a second session that works alongside it.
+    example:
+      situation: A faculty member has an agreed outline for a team-based learning session and wants a second version for an online cohort, without losing the first.
+      typed: /fork write the online version of this session plan
+      shown:
+        - '[A second session starts from a copy of the conversation, with your words as its first prompt]'
+        - '[Unless you say, it asks whether to run in a separate git worktree]'
+      note: Without a worktree, both sessions work in the same folder and can overwrite each other's files; a worktree (which needs a git repository) keeps them apart.
+      why: Two directions from one starting point, each with the full context.
+    source: https://docs.x.ai/build/features/sessions
+  # Images, Video, and Voice
+  - harness: grok-build
+    group: media
+    command: /imagine
+    what: Makes an image from a description, when the feature is available to you.
+    example:
+      situation: A faculty member wants a simple illustration of a stethoscope on a clipboard for the title slide of a study-skills workshop.
+      typed: /imagine a simple flat illustration of a stethoscope resting on a clipboard, for a title slide
+      shown:
+        - '[An image is generated from the description]'
+      why: Quick visuals for teaching materials without leaving the folder you are working in.
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: media
+    command: /imagine-video
+    what: Makes a short video from a description, when the feature is available to you.
+    example:
+      situation: A student-life coordinator wants a few seconds of moving title for an orientation video.
+      typed: /imagine-video a slow pan across a sunny campus lawn with palm trees, for an opening title
+      shown:
+        - '[Grok Build plans the shots, makes source images and animates them into a video]'
+      why: A short clip without separate video software. Video uses far more of your allowance than chat.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: media
+    command: /voice
+    what: Starts voice dictation into the prompt; Esc or Enter stops it, and Enter also sends.
+    example:
+      situation: A faculty member with a long, detailed request finds it easier to say it than to type it.
+      typed: /voice
+      shown:
+        - '[A recording banner shows while you speak, and your words go into the prompt]'
+      note: Ctrl+Space or F8 starts and stops dictation too. An organization can switch dictation off.
+      why: Long instructions are often quicker to say, and Esc leaves the text in the box to edit before sending.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/src/slash/commands/voice.rs
+  # Display and Navigation
+  - harness: grok-build
+    group: display
+    command: /settings
+    what: Opens the settings window (also /config, or F2).
+    example:
+      situation: A staff member wants Grok Build to open in its simpler minimal view every time.
+      typed: /settings
+      shown:
+        - '[The settings window, where options such as Default screen mode can be changed]'
+      why: Every option in one place, without editing configuration files.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: display
+    command: /theme
+    what: Switches the color theme (also /t).
+    example:
+      situation: A faculty member is showing Grok Build on a lecture-hall projector, where the dark default is hard to read.
+      typed: /theme light
+      shown:
+        - '[The display switches to the GrokDay light theme]'
+      note: /theme on its own opens a picker with a live preview, and a theme of auto in the settings follows your computer's light or dark mode.
+      why: Readable on a projector or in a bright room.
+    source: https://docs.x.ai/build/features/theming
+  - harness: grok-build
+    group: display
+    command: /compact-mode
+    what: "Switches a denser layout on or off: less padding and tighter spacing."
+    example:
+      situation: A student working on a small laptop screen wants more of the conversation visible at once.
+      typed: /compact-mode
+      shown:
+        - '[The layout tightens, with less padding between entries]'
+      note: The choice is kept for later sessions.
+      why: More on screen without shrinking the text.
+    source: https://docs.x.ai/build/features/theming
+  - harness: grok-build
+    group: display
+    command: /multiline
+    what: "Switches multiline input on or off: Enter starts a new line and Shift+Enter sends (also /ml)."
+    example:
+      situation: A course director wants to type a request with several numbered steps without each Enter sending it.
+      typed: /multiline
+      shown:
+        - '[Multiline input is on: Enter adds a line, and Shift+Enter (or Alt+Enter) sends]'
+      why: Long, structured requests are easier to write and check before sending.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: display
+    command: /timestamps
+    what: "Sets which messages show the time: off, minimal or on."
+    example:
+      situation: A faculty member wants the time beside each message, to record how long a revision session took for a teaching portfolio.
+      typed: /timestamps on
+      shown:
+        - '[Messages show the time they were sent]'
+      why: A simple record of when things happened in a session.
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: display
+    command: /density
+    what: "Sets how much of each step the conversation shows: Detailed, Diff focus, Balanced, Grouped or Compact."
+    example:
+      situation: A staff member new to Grok Build finds the full detail of every file operation distracting.
+      typed: /density Grouped
+      shown:
+        - '[Tool calls are shown at the Grouped level of detail]'
+      why: Less clutter while you follow the work; switch back to Detailed when you need to check exactly what was done.
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: display
+    command: /minimal, /fullscreen
+    what: Switches the session to the simpler, experimental minimal view, which uses your terminal's own scrolling; /fullscreen switches back.
+    example:
+      situation: A student's terminal does not copy text well from the full-screen view.
+      typed: /minimal
+      shown:
+        - '[The session switches in place; a running task, your draft and your permission mode carry over]'
+      note: A few commands, such as /find, /jump and /theme, work only in the full-screen view, and /expand (which reprints a shortened block in full) only in the minimal one.
+      why: Copying and scrolling then behave like any other text in your terminal.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: display
+    command: /jump
+    what: Jumps to an earlier turn of the conversation.
+    example:
+      situation: A faculty member wants to go back to the turn, much earlier in a long session, where the module's learning objectives were agreed.
+      typed: /jump
+      shown:
+        - '[You pick a turn, and the view moves to it]'
+      note: Full-screen view only. Shift with the left or right arrow also moves between turns.
+      why: Gets back to a decision point without scrolling.
+    source: https://x.ai/changelog/build
+  - harness: grok-build
+    group: display
+    command: /timeline
+    what: Shows or hides a sidebar with a clickable mark for each turn.
+    example:
+      situation: In a session of many turns, a course coordinator wants a quick way to move between them with the mouse.
+      typed: /timeline
+      shown:
+        - '[A sidebar of tick marks, one per turn; clicking one moves there]'
+      note: Full-screen view only.
+      why: An outline of a long session, one click from any turn.
+    source: https://x.ai/changelog/build
+  # Troubleshooting and Feedback
+  - harness: grok-build
+    group: trouble
+    command: /doctor
+    what: Checks the terminal, clipboard, colors, input, notifications and sandbox, and explains how to fix each problem (also /terminal-setup).
+    example:
+      situation: Copying from Grok Build does not reach the clipboard on a faculty member's laptop.
+      typed: /doctor
+      shown:
+        - '[What it found, with how to resolve each problem]'
+      note: /doctor fix lists the fixes it can apply for you; the rest come with steps to follow.
+      why: The first step before asking for technical help.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: trouble
+    command: grok doctor
+    what: In a terminal, diagnoses setup problems, including one that stops Grok Build from starting.
+    example:
+      situation: After a settings change, Grok Build will not open at all on a staff member's computer.
+      typed: grok doctor
+      shown:
+        - '[It names the configuration file or setting that prevents Grok Build from starting]'
+      note: grok doctor fix offers repairs and asks before changing anything.
+      why: Works even when the app cannot start and /doctor is out of reach.
+    source: https://x.ai/changelog/build
+  - harness: grok-build
+    group: trouble
+    command: /feedback
+    what: Reports a problem or sends feedback to xAI.
+    example:
+      situation: Grok Build keeps cutting off long tables in its replies, and a faculty member wants to tell xAI.
+      typed: /feedback Long tables in replies are cut off after about 20 rows
+      shown:
+        - '[The message is sent; if sending fails, it is saved to Drafts]'
+      note: /feedback on its own opens a form with a Write tab and a Drafts tab.
+      why: Reports go straight to the team that builds Grok Build.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  # Other Commands, for Developers (no worked examples)
+  - harness: grok-build
+    group: dev
+    command: grok -p
+    what: Runs one request without the full-screen view, for scripts and automated pipelines.
+    source: https://docs.x.ai/build/cli/headless-scripting
+  - harness: grok-build
+    group: dev
+    command: grok agent stdio
+    what: Runs Grok Build as an agent that an editor or another app drives through ACP.
+    source: https://docs.x.ai/build/cli/headless-scripting
+  - harness: grok-build
+    group: dev
+    command: grok mcp
+    what: Adds, lists, removes or diagnoses MCP servers from a terminal (list, add, remove, doctor).
+    source: https://docs.x.ai/build/features/mcp-servers
+  - harness: grok-build
+    group: dev
+    command: grok plugin
+    what: Installs, updates, enables, disables, checks or removes plugins; grok plugin marketplace manages where plugins come from.
+    source: https://docs.x.ai/build/cli/reference
+  - harness: grok-build
+    group: dev
+    command: grok worktree
+    what: Lists, shows or removes the git worktrees (separate copies of a repository) made for sessions; grok -w starts a session in a new one.
+    source: https://docs.x.ai/build/features/worktrees
+  - harness: grok-build
+    group: dev
+    command: grok clone
+    what: Fetches a git repository through xAI's Grove system, when that is turned on in the settings.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/01-getting-started.md
+  - harness: grok-build
+    group: dev
+    command: grok du
+    what: Reports how much disk space Grok Build's own folder uses, including saved sessions and worktrees.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/17-sessions.md
+  - harness: grok-build
+    group: dev
+    command: grok usage
+    what: Prints the recorded token and cost figures for a saved session, turn by turn, as machine-readable data.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/17-sessions.md
+  - harness: grok-build
+    group: dev
+    command: grok wrap
+    what: Runs a command in a local terminal that passes clipboard copies through, for remote sessions.
+    source: https://docs.x.ai/build/cli/reference
+  - harness: grok-build
+    group: dev
+    command: grok completions
+    what: Generates tab-completion scripts for your shell.
+    source: https://docs.x.ai/build/cli/reference
+  - harness: grok-build
+    group: dev
+    command: grok setup
+    what: Fetches and installs configuration managed by your organization.
+    source: https://docs.x.ai/build/cli/reference
+  - harness: grok-build
+    group: dev
+    command: /code-review
+    what: Reviews code changes; it ships with Grok Build.
+    source: https://x.ai/changelog/build
+  - harness: grok-build
+    group: dev
+    command: /transcript
+    what: Opens the full transcript in your terminal's pager program (also /log).
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: dev
+    command: /vim-mode
+    what: Switches the conversation view to vim-style keys.
+    source: https://docs.x.ai/build/modes-and-commands
+  - harness: grok-build
+    group: dev
+    command: /edit-prompt
+    what: Opens the prompt in the external text editor your environment names.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - harness: grok-build
+    group: dev
+    command: /config-agents
+    what: Manages the definitions of helper agents (also /agents).
+    source: https://docs.x.ai/build/features/subagents
+  - harness: grok-build
+    group: dev
+    command: /personas
+    what: Creates and edits personas, tone and focus settings that helper agents can apply.
+    source: https://docs.x.ai/build/features/subagents
+  - harness: grok-build
+    group: dev
+    command: /hooks
+    what: Opens the extensions window on its Hooks tab, to view, add, remove or switch off hooks; /hooks-trust lets a project's own hooks run.
+    source: https://docs.x.ai/build/features/hooks
+shortcuts:
+  - harness: grok-build
+    keys: Shift+Tab
+    what: Cycle modes (Normal, Plan, Auto where available, Always-approve).
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+C
+    what: Cancel the running turn.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Esc Esc
+    what: Clear the prompt, or open rewind when the prompt is empty.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+O
+    what: Switch always-approve on or off.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+P
+    what: Open the command palette, a searchable list of every command, shortcut and skill.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+.
+    what: Show all keyboard shortcuts (Ctrl+X on Windows and in some other terminals).
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: F2
+    what: Open settings (also Ctrl+,).
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+Enter
+    what: Send a message while a turn is running (also Ctrl+I; Ctrl+L in VS Code and similar editors).
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Shift+Enter
+    what: Start a new line (Alt+Enter where Shift+Enter does not work).
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+R
+    what: Search your earlier prompts.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+T
+    what: Show or hide the to-do list.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+G
+    what: Show or hide the tasks pane of background work.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+B
+    what: Send the running command to the background.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: 'Ctrl+\'
+    what: Open the Agent Dashboard.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    keys: Ctrl+Space
+    what: Start or stop voice dictation (F8 also works).
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/src/slash/commands/voice.rs
+  - harness: grok-build
+    keys: Alt+V
+    what: Paste an image on Windows (Ctrl+V on Linux, Cmd+V on macOS).
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/tutorial/03-attach-and-paste.md
+  - harness: grok-build
+    keys: Ctrl+Q
+    what: Quit (press twice; Ctrl+D in VS Code and similar editors).
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-bot
+    keys: Ctrl+K
+    what: In Grok Bot's desktop app, open the search palette to switch Bots or find earlier messages, files and routines (Cmd+K on macOS).
+    source: https://docs.x.ai/grok-bot/chat-and-collaboration
+  - harness: grok-bot
+    keys: Ctrl+D
+    what: In Grok Bot's desktop app, dictate into the message box while it is selected (Cmd+D on macOS); you can edit the text before sending.
+    source: https://docs.x.ai/grok-bot/chat-and-collaboration
+  - harness: grok-bot
+    keys: Ctrl+Shift+M
+    what: In Grok Bot's desktop app, open Marketplace, where connectors and packaged skills are installed (Cmd+Shift+M on macOS).
+    source: https://docs.x.ai/grok-bot/chat-and-collaboration
+symbols:
+  - harness: grok-build
+    syntax: '@'
+    what: Attaches a file to the prompt, with a file picker; @notes.md:10-50 attaches only those lines, and @! reaches hidden files.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/tutorial/03-attach-and-paste.md
+  - harness: grok-build
+    syntax: '!'
+    what: On an empty prompt, switches to shell mode so you run a command yourself; Grok can see the output too.
+    source: https://docs.x.ai/build/keyboard-shortcuts
+  - harness: grok-build
+    syntax: '#'
+    what: At the start of a prompt, saves the rest as a memory note, as /remember does.
+    source: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/tutorial/08-make-it-yours.md
+  - harness: grok-bot
+    syntax: '@'
+    what: In Grok Bot, mentions a Bot, group, routine or connector, or attaches a connector to a task.
+    source: https://docs.x.ai/grok-bot/chat-and-collaboration
+  - harness: grok-bot
+    syntax: /
+    what: In Grok Bot's desktop app, picks one of your saved skills.
+    source: https://docs.x.ai/grok-bot/skills-routines-and-automations
+  - harness: grok-app
+    syntax: '@'
+    what: In the instructions of a Grok app automation, mentions a connector so every run uses it.
+    source: https://x.ai/news/grok-automations
+full_lists:
+  - title: Grok Build modes and commands
+    url: https://docs.x.ai/build/modes-and-commands
+  - title: Grok Build command-line reference
+    url: https://docs.x.ai/build/cli/reference
+  - title: Grok Build keyboard shortcuts
+    url: https://docs.x.ai/build/keyboard-shortcuts
+  - title: every slash command, in the open-source user guide
+    url: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager/docs/user-guide/04-slash-commands.md
+  - title: the Grok Build changelog
+    url: https://x.ai/changelog/build
+privacy:
+  - title: SpaceXAI Consumer FAQs
+    url: https://x.ai/legal/faq
+    covers: Conversations on grok.com and the Grok apps may be used to train xAI's models unless you turn off "Improve the model" (on a phone, Settings, Data Controls; on grok.com, Settings, Data) or use Private Chat. The page is dated May 12, 2025, and Grok on X follows X's own settings.
+  - title: SpaceXAI Privacy Policy
+    url: https://x.ai/legal/privacy-policy
+    covers: The full policy (effective August 24, 2026), which asks you not to provide sensitive information such as health information.
+  - title: Enterprise FAQs
+    url: https://x.ai/legal/faq-enterprise
+    covers: Written for business customers of the API. xAI does not train on business data (the pricing table shows the same for the Business and Enterprise plans), deletes inputs and outputs within 30 days unless agreed otherwise, and says it can support a customer's obligations under HIPAA (the Health Insurance Portability and Accountability Act, the US health-privacy law) in some circumstances.
+  - title: Business associate agreement questionnaire
+    url: https://x.ai/legal/baa
+    covers: How an organization asks xAI for a HIPAA business associate agreement. xAI describes it as covering use of its APIs, and none of its pages read for this guide extends it to chats on grok.com or the Grok apps.
+  - title: Privacy Portal
+    url: https://x.ai/privacy-portal
+    covers: Requests to see, correct or delete your data, or to opt out of training.
+  - title: 'Grok Bot: approvals, security, and privacy'
+    url: https://docs.x.ai/grok-bot/approvals-security-and-privacy
+    covers: Grok Bot uses a Cursor account, so its data storage and training opt-out follow your Cursor settings and Cursor's privacy policy, not your grok.com settings.
+changes:
+  - date: 2026-09-28
+    change: Team Bots, Grok Bots shared across a team, launched in public beta.
+    source: https://x.ai/news/team-bots
+  - date: 2026-09-21
+    change: Grok 4.7 launched in Grok Build (as its default), Cursor and the xAI API.
+    source: https://x.ai/news/grok-4-7
+  - date: 2026-09-16
+    change: Grok Build gained optional memory across sessions.
+    source: https://x.ai/news/grok-build-memory
+  - date: 2026-09-03
+    change: Grok Bot for Enterprise was announced.
+    source: https://x.ai/news/grok-bot-for-enterprise
+  - date: 2026-08-26
+    change: Grok Bot was included with SuperGrok, SuperGrok Plus and SuperGrok Heavy, with its own separate usage.
+    source: https://x.ai/news/grok-bot-more-plans
+  - date: 2026-08-19
+    change: Build in the Grok app opened to every plan, on the web and on phones.
+    source: https://x.ai/news/grok-build-for-everyone
+  - date: 2026-08-12
+    change: Grok 4.6 launched.
+    source: https://x.ai/news/grok-4-6
+  - date: 2026-08-11
+    change: Grok Bot launched in beta.
+    source: https://x.ai/news/introducing-grok-bot
+  - date: 2026-08-07
+    change: Imagine Image 2.0 became the Quality Mode in the Grok app.
+    source: https://x.ai/news/grok-imagine-image-2
+  - date: 2026-07-31
+    change: Imagine Video 1.5 gained image and voice references, video from text alone, and 1080p.
+    source: https://x.ai/news/grok-imagine-video-1-5-references

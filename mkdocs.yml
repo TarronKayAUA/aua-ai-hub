@@ -329,7 +329,10 @@ nav:
       # Company pages (2026-10-09, owner approved): one in-depth page per
       # vendor, rendered from data/vendors.yaml by scripts/render_vendors.py.
       - By Company:
+          - "ChatGPT (OpenAI)": tools/company/openai.md
           - "Claude (Anthropic)": tools/company/anthropic.md
+          - "Gemini (Google)": tools/company/google.md
+          - "Grok (xAI)": tools/company/xai.md
       - Compare Models:
           - Language Models: benchmarks.md
           - Image Generation: benchmarks/image.md

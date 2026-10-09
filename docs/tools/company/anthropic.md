@@ -4,7 +4,7 @@ last_reviewed: 2026-10-09
 
 # Claude (Anthropic)
 
-<span class="meta-chip">Company guide</span><span class="meta-chip">About 15 minutes</span> <span class="meta-note">Facts checked against Anthropic's own pages on {{ vendor_checked }}</span>
+<span class="meta-chip">Company guide</span><span class="meta-chip">About 30 minutes in full</span> <span class="meta-note">Facts checked against Anthropic's own pages on {{ vendor_checked }}</span>
 
 Claude is the artificial intelligence (AI) assistant made by Anthropic. This page gathers what you need in one place: which plan and model fit your work, the apps and features you will meet, the two agents Anthropic offers (Claude Code and Cowork) and how they ask before acting, and the Claude Code commands worth knowing, each with a small worked example. Plans and models change often, so every fact links to the Anthropic page it came from. A listing here is not an endorsement, and for AUA work the [AI Responsible Use Policy](../../governance/policy.md) applies.
 

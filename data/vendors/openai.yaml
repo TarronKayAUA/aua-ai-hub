@@ -1,0 +1,1124 @@
+# ChatGPT (OpenAI). Field guide: _fields.yaml in this folder.
+id: openai
+page: tools/company/openai.md
+name: ChatGPT
+company: OpenAI
+checked: 2026-10-09
+pricing_url: https://chatgpt.com/pricing
+plans:
+  - name: Free
+    for: Anyone trying ChatGPT
+    adds: Unlimited everyday text chats with GPT-6 (within abuse safeguards); limited uploads, images, voice, deep research and memory; projects, search, study mode and plugins; limited Codex, and limited ChatGPT Work in the desktop app only.
+    source: https://chatgpt.com/pricing
+  - name: Go
+    for: Individuals who want longer conversations at low cost
+    adds: More messages with tools, uploads, images and voice than Free; longer memory; voice with video; scheduled tasks; creating and sharing plugins. ChatGPT Work and Codex stay limited and in the desktop app. The plan may include ads.
+    source: https://chatgpt.com/pricing
+  - name: Plus
+    for: Individuals doing advanced work
+    adds: GPT-6 with Medium and High thinking; GPT-6 Astra (limited), GPT-6.1 Sol and GPT-6 Sol in Work and Codex; expanded deep research, memory and context; projects, scheduled tasks and custom GPTs; ChatGPT Work on desktop, web and phone; Codex in the terminal, code editors and Codex Cloud; Sites.
+    source: https://chatgpt.com/pricing
+  - name: Pro
+    for: Heavy individual use, in three tiers (Pro 100, Pro 200 and Pro 500)
+    adds: Everything in Plus, with Extra High thinking and Pro reasoning powered by GPT-6 Astra; longer Codex and Work sessions; dots, OpenAI's always-on agents; maximum deep research, memory and context; Ultrafast speed on Pro 500 only.
+    source: https://help.openai.com/en/articles/9793128
+  - name: Business
+    for: Teams and organizations, from 2 seats
+    adds: ChatGPT, ChatGPT Work and Codex on every seat; Standard or Premium seats, with Premium giving five times Standard's usage and no five-hour limit; projects, apps, company knowledge and deep research; admin controls and central billing; no training on the workspace's data.
+    source: https://help.openai.com/en/articles/8792828-what-is-chatgpt-business
+  - name: Enterprise
+    for: Large organizations (through OpenAI's sales team)
+    adds: Everything in Business, plus encryption, retention and compliance controls, audit visibility through a Compliance API (application programming interface), and administrator control over who can use agents, connected tools and actions. Business data is not used for training by default.
+    source: https://chatgpt.com/business/enterprise/
+  - name: Edu
+    for: Universities, for students, faculty, researchers and campus operations
+    adds: Expanded access to GPT-6 with much higher message limits than Free; data analysis, web browsing and file tools; custom GPTs shared within the university; no data or conversations used for training; single sign-on, custom retention windows and an admin console.
+    source: https://chatgpt.com/business/education/
+models:
+  - name: GPT-6 (in Chat)
+    released: 2026-10-07
+    best_for: Everyday questions in the Chat tab, with Intelligent UI and a choice of how hard it thinks
+    where: Every plan. Powered by GPT-6 Sol on Plus, Pro, Business and Enterprise, and by GPT-6 Luna on Free and Go (rolling out from October 8); Enterprise depends on admin settings
+    source: https://openai.com/index/gpt-6-for-everyone/
+  - name: GPT-6 Astra
+    released: 2026-09-03
+    best_for: OpenAI's most capable model, for the hardest end-to-end work across documents, apps, research and code
+    where: In Chat as the Pro option (GPT-6 Pro) on Pro 100, Pro 200, Business and Enterprise; in Work and Codex on Plus (limited), Pro, Business and Enterprise; it also powers dots
+    source: https://help.openai.com/en/articles/20001354
+  - name: GPT-6.1 Sol
+    released: 2026-09-29
+    best_for: Results close to Astra's at a lower cost, for repeated, long-running work across documents, apps and code
+    where: Work and Codex only, not Chat. Plus, Pro, Business, Enterprise and Edu (Enterprise and Edu once an administrator turns it on); not Free or Go
+    source: https://openai.com/index/introducing-gpt-6-1-sol/
+  - name: GPT-6 Sol
+    released: 2026-09-22
+    best_for: The middle GPT-6 tier in Work and Codex, and the replacement OpenAI names for GPT-5.5, which retires from ChatGPT, Work and Codex on October 14, 2026
+    where: Work and Codex on Plus, Pro, Business, Enterprise and Edu; it also powers GPT-6 in Chat on Plus, Pro, Business and Enterprise
+    source: https://learn.chatgpt.com/docs/models
+  - name: GPT-6 Luna
+    released: 2026-09-22
+    best_for: OpenAI's most efficient model, for focused, high-volume tasks such as summarizing and extracting
+    where: Work and Codex on paid plans; Free and Go in the desktop app, as it rolls out; it also powers GPT-6 in Chat on Free and Go
+    source: https://openai.com/index/introducing-gpt-6-sol-and-luna/
+  - name: GPT-5.6 Terra
+    released: 2026-07-09
+    best_for: A balanced model for everyday work, in OpenAI's words, alongside the flagship GPT-5.6 Sol and the most cost-efficient GPT-5.6 Luna
+    where: Work and Codex on paid plans; on Free and Go, the model for limited Work and Codex use in the desktop app
+    source: https://openai.com/index/gpt-5-6/
+surfaces:
+  - name: ChatGPT on the web
+    what: The main app at chatgpt.com, with Chat for questions and Work for longer tasks, plus projects, memory, deep research, images and voice. Work on the web runs in the cloud.
+    source: https://help.openai.com/en/articles/20001275
+  - name: ChatGPT desktop app
+    what: One app for Windows and macOS (Linux in public preview) that brings Chat, Work and Codex together; Work and Codex can use local folders, desktop apps and a built-in browser with your permission. The previous app may remain as ChatGPT Classic, which does not get Work, Codex or Intelligent UI.
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - name: Phone apps
+    what: ChatGPT for iOS and Android, with Chat, Work (Plus and higher), voice, Codex Cloud tasks, and a Remote tab for reaching Codex chats running on your desktop.
+    source: https://help.openai.com/en/articles/20001275
+  - name: Codex in the terminal
+    what: The Codex command-line interface (CLI), for Windows, macOS and Linux. It works on the folder you start it in.
+    source: https://learn.chatgpt.com/docs/codex/cli
+  - name: Codex in code editors
+    what: An extension for VS Code, Cursor and Windsurf; Xcode and JetBrains editors have their own Codex integrations.
+    source: https://learn.chatgpt.com/docs/codex/ide
+  - name: ChatGPT for Word, Excel and PowerPoint
+    what: A ChatGPT sidebar in Microsoft Word, Excel and PowerPoint, through one add-in, for drafting, summarizing and revising beside your document. Word is available on every plan, including Free.
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - name: ChatGPT browser extension
+    what: For Chrome, Edge, Brave, Opera and Vivaldi. Mention open tabs as context, or let Work and Codex in the desktop app complete a task in your browser.
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - name: ChatGPT in Slack and Microsoft Teams
+    what: In workspaces that set it up, ChatGPT takes requests in approved Slack and Teams conversations, using the deployment's connected tools.
+    source: https://learn.chatgpt.com/docs/whats-new/devday-2026
+  - name: ChatGPT Atlas (retired)
+    what: OpenAI's former web browser stopped working on August 9, 2026; its browser features moved into the desktop app and the browser extension.
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+features:
+  - name: Intelligent UI
+    what: GPT-6 answers in Chat can mix text with charts, diagrams, buttons, forms and small tools such as calculators, or stay plain text when that works best. No special prompt is needed; on the web, turning off Layout and visuals in Settings reduces the visual elements.
+    plans: Plus, Pro, Business and Enterprise, and Free and Go from October 8 (OpenAI's launch post), in Chat from Instant to Extra High; not with the Pro option, and not in the older ChatGPT Classic desktop app
+    status: Rolling out since October 7, 2026
+    source: https://help.openai.com/en/articles/20001354
+  - name: Thinking slider and Think button
+    what: In Chat, the model menu shows GPT-6 with a Thinking slider (Instant, Medium, High, Extra High, Pro). Asking ChatGPT to "think harder" does not change the level, so choose one; Free and Go have a Think button instead.
+    plans: "Plus: Medium and High. Pro, Business and Enterprise: also Extra High and Pro. Free and Go: Think"
+    status: Available; GPT-6 replaced Latest in the menu on October 7, 2026
+    source: https://help.openai.com/en/articles/20001354
+  - name: Projects
+    what: Workspaces that keep related chats, files and instructions together; project instructions override your general custom instructions. Project-only memory keeps a project's chats and memory apart from the rest of ChatGPT; shared projects always use it, and ChatGPT Work is not available in those projects.
+    plans: Every plan, including shared projects
+    status: Available; the memory setting can be changed since August 14, 2026
+    source: https://help.openai.com/en/articles/10169521-projects-in-chatgpt
+  - name: Memory
+    what: ChatGPT can draw on past chats, saved memories and other sources to personalize answers. Settings, Personalization lets you review, correct or delete what it remembers; turning memory off does not delete your chats.
+    plans: Free limited; Go and higher fuller (Plus and Pro expanded); varies by workspace on Business, Enterprise and Edu
+    status: Available
+    source: https://help.openai.com/en/articles/8590148-memory-faq
+  - name: Temporary chat
+    what: A chat kept out of your history that creates no new memories. By default it does not use memory, custom instructions or plugins either; OpenAI may keep it for up to 30 days for safety.
+    plans: Every plan
+    status: Available; optional personalization since August 27, 2026
+    source: https://help.openai.com/en/articles/7730893-data-controls-faq
+  - name: Deep research
+    what: Multi-step research that returns a cited report. It may ask clarifying questions first, shows a plan you can edit, can be limited to sites you choose, and only reads connected apps. Start it by typing /Deepresearch, from the + menu or from the sidebar; reports download as Markdown, Word or PDF.
+    plans: "Free and Go: limited. Plus: more. Pro: the most. Enterprise and Edu: set by administrators"
+    status: Available
+    source: https://help.openai.com/en/articles/10500283
+  - name: Study mode, quizzes and flashcards
+    what: Study mode asks questions to learn your goals and level, then works toward the answer with you. You can also ask for an interactive quiz, or for flashcards from a topic or your notes, which are saved to your library.
+    plans: "Study mode: Free, Go, Plus and Pro. Quizzes: consumer plans and Edu. Flashcards: every plan"
+    status: Available; flashcards since September 22, 2026
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - name: ChatGPT Images
+    what: Create an image in the conversation, or edit one you upload, describing the change or selecting the part to change; templates give starting points such as a poster.
+    plans: Every plan (Free limited); images with thinking on Plus, Pro and Business
+    status: ChatGPT Images 2.5 since September 8, 2026
+    source: https://help.openai.com/en/articles/11084440-images-in-chatgpt
+  - name: Voice
+    what: Spoken conversation with ChatGPT. The Live option can use web search, memory and plugins; an action that needs approval is approved on screen, not by voice.
+    plans: Every plan, with daily limits; voice with video on Go and higher
+    status: Available; plugins in Voice since September 23, 2026
+    source: https://help.openai.com/en/articles/20001274-chatgpt-voice
+  - name: Plugins, apps and skills
+    what: Plugins bundle skills (instructions for a task) and apps that connect services such as Google Drive or Slack. ChatGPT uses them when relevant, or you choose one with @. OpenAI notes that its Verified badge does not replace an organization's own privacy, security or vendor review.
+    plans: Directory on every plan; creating and sharing plugins from Go; apps that reach internal tools on Plus and higher; administrators decide in workspaces
+    status: Available; the Plugin Directory replaced the App Directory on July 9, 2026
+    source: https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex
+  - name: Education plugins
+    what: College Student (study guides, practice quizzes, flashcards and visual explanations from your own course materials) and College Educator (syllabi, course materials, assessments and content for a learning management system) plugins for ChatGPT Work and Codex; a third is for K-12 teachers.
+    plans: ChatGPT Edu and ChatGPT for Teachers deployments; the institution controls which tools and permissions are available
+    status: Available since August 4, 2026
+    source: https://openai.com/index/learn-teach-chatgpt-work-codex/
+  - name: Scheduled tasks
+    what: Tasks that run once or on a schedule, such as a reminder or a recurring update; in Work they can also start when something happens in a connected app, such as a new email. Tasks can be shared.
+    plans: Go and higher on OpenAI's pricing page (the August 25 release notes also allow up to three on Free); app-triggered tasks on Plus and higher
+    status: Available
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - name: Sites
+    what: Turn work into an interactive website or small app, then preview, publish or share it.
+    plans: Plus and higher; not Free or Go, and not in the European Economic Area, Switzerland or the United Kingdom
+    status: Public beta since July 9, 2026
+    source: https://help.openai.com/en/articles/11369540
+  - name: Space and Pages
+    what: Space gathers Pages (documents you write with ChatGPT and colleagues, with comments) and saved files. Sharing a Page does not give other people your private chats or memory.
+    plans: Eligible Pro, Business and Enterprise (Enterprise sharing is an opt-in preview)
+    status: Introduced September 29, 2026
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - name: Health
+    what: A tab for health information you connect, such as Apple Health and supported medical records from hospital systems in the United States. Since September 2026, new Health connections follow your general plugin permission, by default Allow low-risk actions, so ChatGPT uses the data when relevant without asking each time, except for sensitive actions.
+    plans: Free, Go, Plus and Pro, for users 18 or older in the United States, on the web and iOS
+    status: Rolling out since July 23, 2026
+    source: https://help.openai.com/en/articles/20001036-health-in-chatgpt
+  - name: Custom GPTs (retiring)
+    what: Custom versions of ChatGPT for a course or task. OpenAI plans to retire them in favor of plugins, with a migration path; existing GPTs keep working until the date that applies to your plan.
+    plans: Created on Plus and higher, including workspace plans
+    status: Retirement announced September 11, 2026
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+harnesses:
+  - id: codex
+    name: Codex
+    what: OpenAI's agent for software and technical work. It reads a folder you open for it, edits files and runs commands there, inside a sandbox that keeps its commands to that folder unless you approve more. OpenAI points to ChatGPT Work for everyday documents, though Codex can do non-coding work in a folder too.
+    runs: The terminal (the Codex CLI), the Codex view of the ChatGPT desktop app, code editors, and Codex Cloud, which runs tasks on OpenAI's computers from a prepared copy of a GitHub project, so work continues while your computer sleeps. The phone app's Remote tab reaches Codex chats running on your desktop.
+    plans: Every plan. Free and Go get limited use in the desktop app; Plus and higher add the terminal, code editors and more usage. Codex Cloud needs Plus or higher (Edu included), not Free or Go. Codex shares one allowance with ChatGPT Work.
+    acts: It works in a loop of reading, searching, editing and running commands, and every command it starts stays inside the sandbox. Web search uses a cached index unless you allow live browsing. On launch it recommends Auto for a folder under version control (Git) and Read Only for one that is not. Plan mode (/plan) has it propose before changing anything, and OpenAI suggests a Git checkpoint before and after each task so changes can be undone.
+    modes:
+      - name: Auto (CLI)
+        what: The terminal's default preset. Reads, edits and runs commands inside the folder without asking; asks before working outside it or using the network.
+      - name: Read Only (CLI)
+        what: Reads files and runs commands in a read-only sandbox; asks before anything beyond it. Recommended at launch for a folder that is not under version control.
+      - name: Ask for approval (desktop app and editors)
+        what: OpenAI's recommended start. Works within the open folder and pauses before reaching beyond it, for example to use the internet or change files elsewhere.
+      - name: Approve for me (Auto-review in the CLI)
+        what: The same boundary, but requests to cross it go to an automatic reviewer instead of you; /approve retries one denied action. Changing who reviews does not widen the sandbox.
+      - name: Full access
+        what: No sandbox and no approvals (--yolo in the terminal). OpenAI marks it not recommended and advises it only inside a dedicated sandbox virtual machine.
+    instructions: AGENTS.md files. Codex reads one in your Codex home folder for all projects, then one per folder from the project's top folder down to where you are working, joined so the nearest file wins; it reads them before doing any work, and /init drafts one.
+    skills: Folders containing a SKILL.md file, following the open Agent Skills standard. Codex uses a skill when it is relevant, when you type $ and its name, or when you pick it with /skills; OpenAI bundles a few, such as skill-creator for writing your own.
+    hooks: Your own scripts that run at fixed points, such as before a tool is used or when a session starts, set in hooks.json or config.toml. Codex asks you to review and trust a hook before it runs (/hooks).
+    subagents: On by default. Codex delegates to helpers when you ask, or when AGENTS.md or a skill says to, and the Ultra reasoning level splits work across them; helpers use more of your allowance than a single agent.
+    connectors: Outside tools through MCP (Model Context Protocol) servers and plugins, shared by the terminal, desktop app and editor extension on the same computer; /mcp lists them and /apps inserts a connected app.
+    sandbox: On by default and enforced by the operating system. On Windows, Codex has its own sandbox in PowerShell and uses the Linux one in WSL2 (the Windows Subsystem for Linux); macOS and Linux use Seatbelt and bubblewrap. By default, commands can write only inside the open folder and have no network access. Codex Cloud tasks run in OpenAI-managed containers that cannot reach your computer.
+    source: https://learn.chatgpt.com/docs/agent-approvals-security
+  - id: work
+    name: ChatGPT Work
+    what: OpenAI's agent for finished deliverables, such as a brief, deck, spreadsheet, analysis, Site or recurring update. Chat answers questions; Work completes a task and returns files you can review.
+    runs: ChatGPT on the web and phones, where it runs in the cloud, and the ChatGPT desktop app, where it can also use local folders, desktop apps and a built-in browser with your permission. Where a workspace turns on Local computer access with Work Cloud, a task started on desktop can continue from the web or a phone.
+    plans: "Free and Go: limited, in the desktop app only. Plus, Pro, Business, and eligible Enterprise and Edu workspaces: desktop, web and phone. Work shares one allowance with Codex."
+    acts: You describe an outcome; it plans, works in steps with your files, plugins and approved tools, and returns a file. You can follow its progress, answer questions, change direction and approve important actions as it works. A task can pause for a safety review.
+    modes:
+      - name: Ask for approval, Approve for me, Full access (desktop app)
+        what: Local Work in the desktop app uses the same permission modes and sandbox as Codex.
+      - name: On-screen approvals (web and phone)
+        what: An action that needs approval waits until you approve or decline it on screen; spoken approval is not supported.
+    instructions: Projects hold chats, files and instructions, and a Work chat started from a project uses the project's context; Work is not available in projects that use project-only memory.
+    skills: Skills and plugins from the directory shared with Codex; mention one with @, for example @skill-creator.
+    hooks: Only through plugins, which can include lifecycle hooks.
+    subagents: Ask it to delegate independent parts of a task to helpers, which run in ChatGPT's hosted environment; at the Ultra level it can delegate on its own.
+    connectors: Plugins connect it to tools such as Slack, Google Drive, SharePoint, email and calendars (Customize, then Plugins); type @ and a plugin's name to point it at one.
+    sandbox: Cloud Work runs in OpenAI-managed containers; local Work in the desktop app uses the same sandbox as Codex. Workspace administrators control cloud work, local work, browser use and network access separately.
+    source: https://learn.chatgpt.com/docs/get-started-with-work
+  - id: dots
+    name: Dots
+    what: Always-on agents, introduced at OpenAI's DevDay on September 29, 2026. You give your dot an ongoing responsibility, such as updating a study's summary as new results arrive; it keeps working between conversations on its own cloud computer and browser, and comes back with results or decisions that need you. Dots are powered by GPT-6 Astra and can hand tasks to ChatGPT Work or Codex.
+    runs: Created in the ChatGPT desktop app or ChatGPT in a desktop browser, then reached in ChatGPT on desktop, in the phone app (with the supporting update), in Slack and Microsoft Teams, or by voice call. Mobile web is not supported.
+    plans: "Rolling out gradually to Pro 100, Pro 200 and Pro 500 (users over 18, outside the European Economic Area, the United Kingdom and Switzerland), Business Premium, and Enterprise (off until an administrator turns it on). Not on Free, Go or Plus; Edu is not listed. Conversations with a dot do not count toward ChatGPT usage limits; Work and Codex tasks it starts do."
+    acts: It tracks progress, decides when to pause and pick work up again, runs background agents in parallel, and researches connected apps to suggest next steps (that research is read-only). Before an action affects your accounts or shares information, a review decides whether your dot can go ahead, needs your approval, or must hand the step to you.
+    modes:
+      - name: Built-in safeguards and approval checks
+        what: Apply from the start; a review decides whether an action can proceed, needs your approval, or must be handed to you.
+      - name: Your instructions and custom rules
+        what: Add boundaries, such as showing you drafts before sending them; neither overrides the built-in safety requirements.
+      - name: Take over
+        what: Open its computer and select Take over to do a step yourself, then Return control.
+      - name: Pause
+        what: Stops your dot's current main task; delegated tasks are stopped in Activity and recurring ones in Scheduled.
+    instructions: Your instructions and optional custom rules; it keeps its own notes on your preferences and decisions, alongside relevant ChatGPT memory.
+    skills: Supported plugins enabled for your account; local skills need a connected computer.
+    hooks: ''
+    subagents: Background agents work on several things in parallel, and it can start ChatGPT Work or Codex tasks.
+    connectors: Messaging channels (ChatGPT, Slack, Teams, calls), connected apps and plugins within their existing permissions, and one personal computer you choose to connect; each connection is separate.
+    sandbox: Its own computer and browser in the cloud, separate from your devices and their signed-in sessions. It uses your computer only if you connect it, and only while it is online with the ChatGPT app open.
+    source: https://learn.chatgpt.com/docs/dots
+command_groups:
+  - id: start
+    title: Starting and Ending a Session
+  - id: control
+    title: Staying in Control
+  - id: check
+    title: Checking the Work
+  - id: context
+    title: Managing Context
+  - id: chats
+    title: Finding and Organizing Chats
+  - id: model
+    title: Model, Effort, and Usage
+  - id: extend
+    title: Files, Skills, and Connections
+  - id: long
+    title: Long Jobs and Troubleshooting
+  - id: dev
+    title: More Commands, Mostly for Developers
+commands:
+  # Starting and Ending a Session
+  - harness: codex
+    group: start
+    command: codex
+    what: Starts Codex in the terminal, in the folder you are in; the first run asks you to sign in.
+    example:
+      situation: A faculty member has installed the Codex CLI and wants help tidying a copy of a folder of microbiology lecture notes.
+      typed: codex
+      shown:
+        - '[The first time, a choice of sign-in methods that includes Sign in with ChatGPT]'
+        - '[The Codex composer, ready for a first request such as: Tell me about this project]'
+      note: OpenAI suggests a Git checkpoint before and after a task, so changes can be undone; working on a copy of the notes keeps the originals untouched.
+      why: Codex works on the folder you start it in, so where you launch it decides what it can see.
+    source: https://learn.chatgpt.com/docs/codex/cli
+  - harness: codex
+    group: start
+    command: /init
+    what: Drafts an AGENTS.md file, the standing instructions Codex reads before any work in that folder.
+    example:
+      situation: "A block director keeps a folder of cardiovascular study guides and wants every session to follow the same house rules: US English, objectives that start with a measurable verb, Word formatting left alone."
+      typed: /init
+      shown:
+        - '[Codex writes an AGENTS.md scaffold in the current folder]'
+      note: Review the draft and add your own rules; Codex reads the file at the start of each session.
+      why: Rules written once in AGENTS.md save repeating them in every request.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: start
+    command: /status
+    what: Shows the session's model, approval policy, writable folders and context use (in the desktop app, the chat ID, context use and rate limits).
+    example:
+      situation: Before asking Codex to rename files in a copied anatomy lab folder, a faculty member checks which folders it can write to.
+      typed: /status
+      shown:
+        - '[A summary of the active model, the approval policy, the folders Codex can write to, and current token usage]'
+      note: Run it again after /model or /permissions to confirm the change took effect.
+      why: It confirms Codex is working where you expect before anything changes.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: start
+    command: /app
+    what: Moves the current terminal session into the ChatGPT desktop app on Windows or macOS (CLI).
+    example:
+      situation: A course coordinator started reorganizing a reading list in the terminal and would rather review the results in the desktop app.
+      typed: /app
+      shown:
+        - '[The desktop app opens the same saved chat, ready to continue]'
+      note: If the app is not installed or running, Codex shows an error asking you to install or launch it; codex app, typed in the terminal, opens the app or its installer.
+      why: You keep the same conversation while moving to the view that suits the task.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: start
+    command: /logout
+    what: Signs out of Codex and clears the saved sign-in on this computer (CLI).
+    example:
+      situation: A student used Codex on a shared computer in a library study room and is about to leave.
+      typed: /logout
+      shown:
+        - '[Codex clears the local credentials for this user]'
+      note: From the terminal, codex logout does the same.
+      why: The next person at the computer cannot use your account or your plan's allowance.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: start
+    command: /quit
+    what: Leaves Codex (also /exit, or Ctrl+C; CLI).
+    example:
+      situation: A faculty member has finished drafting tutorial questions with Codex and wants to close the terminal.
+      typed: /quit
+      shown:
+        - '[Codex exits immediately]'
+      note: OpenAI's reference advises saving or committing important work first.
+      why: The session is saved, so /resume can reopen it later.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  # Staying in Control
+  - harness: codex
+    group: control
+    command: /permissions
+    what: Sets what Codex may do without asking first, such as switching between Auto and Read Only (CLI; the desktop app and editors use the control below the composer).
+    example:
+      situation: A course director opens Codex in a folder of exam-item drafts and wants it to read and report, changing nothing yet.
+      typed: /permissions
+      shown:
+        - '[A picker of approval presets, such as Auto and Read Only, plus any custom permission profiles]'
+        - '[Codex announces the updated policy; later actions follow it until you change it]'
+      note: In the desktop app and editors, the same choice is the permissions control below the composer, with Ask for approval, Approve for me and Full access.
+      why: Read Only lets an agent survey a folder before you trust it with edits.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: control
+    command: /plan
+    what: Switches the chat into plan mode, so Codex proposes a plan before doing anything; you can add your first request on the same line.
+    example:
+      situation: A pathology course coordinator wants 40 renal case files sorted into weekly folders, but wants to see the plan first.
+      typed: /plan Propose how to sort the renal case files into weekly folders without changing any file's contents
+      shown:
+        - '[Codex enters plan mode and treats the text as the first planning request]'
+      note: /plan is unavailable while Codex is already working. In the desktop app, /plan turns plan mode on or off.
+      why: You see and correct the plan before any file moves.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: control
+    command: /approve
+    what: Retries, once, an action that automatic review recently denied.
+    example:
+      situation: With automatic review on, a faculty member asked Codex to download a public dataset of vaccination schedules, and the reviewer blocked the download.
+      typed: /approve
+      shown:
+        - '[Codex shows the denied action and asks you to confirm the retry]'
+        - '[Codex retries that action once, under the current session policy]'
+      note: Automatic review is the Approve for me mode (Auto-review in the CLI), in which a reviewer checks requests in your place within the same boundary.
+      why: You stay the final judge when the automatic reviewer is overcautious.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: control
+    command: /setup-default-sandbox
+    what: On Windows, sets up the elevated sandbox when Codex is using the degraded one it falls back to (CLI).
+    example:
+      situation: On a faculty member's Windows laptop, Codex reports that it is using a degraded sandbox and offers the elevated setup.
+      typed: /setup-default-sandbox
+      shown:
+        - '[An administrator setup flow for the elevated Windows sandbox]'
+        - '[Codex configures it and selects the matching automatic approval preset]'
+      note: The command appears only on Windows, when Codex is using the degraded restricted-token sandbox. OpenAI says the elevated sandbox needs administrator-approved setup, so on a university-managed laptop IT may need to approve it.
+      why: The sandbox is what keeps Codex's commands inside the folder you chose.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: control
+    command: /sandbox-add-read-dir
+    what: On Windows, lets the sandbox read one more folder, given as its full path (CLI).
+    example:
+      situation: Codex, working in a pharmacology course folder on Windows, cannot read the department's shared formulary folder that the task needs.
+      typed: '/sandbox-add-read-dir D:\Shared\Formulary'
+      shown:
+        - '[Codex refreshes the Windows sandbox policy and grants read access to that folder for later commands]'
+      note: Give the full path of a folder that exists. This grants reading only. The command is available when Codex runs natively on Windows, not in WSL2.
+      why: Access widens one folder at a time, on purpose, rather than to a whole drive.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: control
+    command: /delete
+    what: Permanently deletes the current session's transcript, and any sessions spawned from it, then exits (CLI).
+    example:
+      situation: A faculty member ran a one-off session on a borrowed skills-lab computer and does not want its transcript left there.
+      typed: /delete
+      shown:
+        - '[Codex asks you to confirm deleting the current session and exiting]'
+        - '[The transcript is deleted and Codex closes]'
+      note: /archive hides a session and keeps its transcript instead. From the terminal, codex delete removes a saved session by name or ID.
+      why: It removes a transcript from the computer for good, when archiving is not enough.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  # Checking the Work
+  - harness: codex
+    group: check
+    command: /diff
+    what: Shows the folder's uncommitted Git changes, including new files Git is not yet tracking (CLI).
+    example:
+      situation: A course coordinator keeps the module handbook in a Git-tracked folder, as OpenAI suggests, and checks exactly what Codex changed before sharing it.
+      typed: /diff
+      shown:
+        - '[Staged changes, unstaged changes and new untracked files, which you scroll through in the terminal]'
+      note: In the desktop app, the review pane (Ctrl+Shift+G on Windows) shows the folder's Git changes, opening on the unstaged ones.
+      why: You review every change yourself before anyone else sees it.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: check
+    command: /review
+    what: Asks Codex to review changes in a Git folder and report problems without changing any file (in the desktop app and editors, uncommitted changes or a base branch).
+    example:
+      situation: A question-bank maintainer keeps items in a Git repository and has just had Codex revise 30 of them; they want a second look before committing.
+      typed: /review
+      shown:
+        - '[A menu of review presets]'
+        - 'option: Review against a base branch'
+        - 'option: Review uncommitted changes'
+        - 'option: Review a commit'
+        - 'option: Custom review instructions'
+        - '[Codex reads the selected changes and reports prioritized findings in the transcript, without changing the files]'
+      note: Review uncommitted changes covers staged, unstaged and new files. Custom review instructions focuses the review on criteria you give, such as the department's item-writing rules; read each change with /diff as well.
+      why: A separate review pass catches unintended edits before they are kept.
+    source: https://learn.chatgpt.com/docs/code-review?surface=cli
+  - harness: codex
+    group: check
+    command: /copy
+    what: Copies Codex's latest finished response to the clipboard (CLI; Ctrl+O does the same).
+    example:
+      situation: Codex has summarized its changes to the year-two assessment folder, and the faculty member wants to paste the summary into an email to the curriculum committee.
+      typed: /copy
+      shown:
+        - '[The latest completed Codex output is copied to the clipboard]'
+      note: If a turn is still running, it copies the last completed output instead.
+      why: No need to select long terminal output by hand.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  # Managing Context
+  - harness: codex
+    group: context
+    command: /compact
+    what: Summarizes the chat so far to free space in a long session.
+    example:
+      situation: After two hours restructuring a clinical skills handbook, a faculty member wants to keep going in the same chat.
+      typed: /compact
+      shown:
+        - '[Codex offers to summarize the chat so far, and you confirm]'
+        - '[Earlier turns are replaced with a concise summary that keeps the critical details]'
+      why: A long session keeps going without starting over.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: context
+    command: /new
+    what: Starts a fresh chat in the same session and folder, optionally named.
+    example:
+      situation: Having finished editing anatomy quiz items, a student wants a clean start on pharmacology flashcards in the same folder.
+      typed: /new pharmacology flashcards
+      shown:
+        - '[A fresh chat starts in the same session, named by the text you typed]'
+      note: Unlike /clear, /new leaves the terminal view as it is.
+      why: Unrelated tasks do not share context, which keeps answers focused.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: context
+    command: /clear
+    what: Clears the terminal and starts a fresh chat (CLI).
+    example:
+      situation: A teaching assistant's terminal is full of output from a long file-renaming job, and the next task is unrelated.
+      typed: /clear
+      shown:
+        - '[The terminal clears, the visible transcript resets, and a fresh chat starts in the same session]'
+      note: Ctrl+L only clears the view and keeps the current chat. Codex disables both while a task is in progress.
+      why: A clean screen and a clean context for the next job.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: context
+    command: /side
+    what: Opens a temporary side chat for a quick question without disturbing the main chat (also /btw in the CLI).
+    example:
+      situation: While Codex rewrites a module's learning objectives, a faculty member wants a quick check on one of them.
+      typed: '/side Does "understand the renin-angiotensin system" use a measurable verb?'
+      shown:
+        - '[A side chat opens, with a transcript separate from the main chat]'
+        - '[The main chat''s status stays visible, so you can see whether it is still running]'
+      why: Quick questions stay out of the main task's context.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: context
+    command: /fork
+    what: Copies the current chat into a new one (in the desktop app, optionally into a Git worktree), so you can try another approach and keep the original.
+    example:
+      situation: Codex has proposed a plan for a case library organized by organ system, and the instructor wants to explore a plan organized by presenting complaint without losing the first.
+      typed: /fork
+      shown:
+        - '[Codex copies the chat into a new chat with a fresh ID, leaving the original transcript untouched]'
+      note: To fork an earlier saved session instead, run codex fork in the terminal.
+      why: Two approaches can be compared without losing either.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: context
+    command: /memories
+    what: Sets whether this chat can use Codex's saved memories, and whether it can add to them.
+    example:
+      situation: A faculty member has Codex memories turned on and is about to try an unusual layout for a single handout that should not shape later sessions.
+      typed: /memories
+      shown:
+        - '[Choices for whether this chat can use existing memories, and whether it can feed future ones]'
+      note: Codex memories are off until you turn them on (in the desktop app, Settings, Personalization). The choice applies to this chat and leaves your overall setting alone.
+      why: You decide which work shapes later sessions; OpenAI advises keeping rules that must always apply in AGENTS.md.
+    source: https://learn.chatgpt.com/docs/customization/memories
+  # Finding and Organizing Chats
+  - harness: codex
+    group: chats
+    command: /resume
+    what: Reopens a saved chat from your session list (CLI).
+    example:
+      situation: Yesterday a faculty member started reorganizing an OSCE (objective structured clinical examination) station folder; today they want to continue.
+      typed: /resume
+      shown:
+        - '[A picker of saved sessions]'
+        - '[Codex reloads the chosen chat''s transcript, with its history intact]'
+      note: From the terminal, codex resume --last reopens the most recent chat in the current folder.
+      why: You pick up where you left off instead of explaining it all again.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: chats
+    command: /rename
+    what: Renames the current chat.
+    example:
+      situation: A course director has several Codex chats with similar names and wants this one easy to find next week.
+      typed: /rename Year 2 renal block question review
+      shown:
+        - '[Codex updates the saved chat name without changing the transcript]'
+      why: A clear name makes the chat easy to find later.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: chats
+    command: /pin
+    what: Pins or unpins the current chat, where available (desktop app).
+    example:
+      situation: In the desktop app, a clerkship coordinator returns to the same rotation-schedule chat every week.
+      typed: /pin
+      shown:
+        - '[The chat is pinned, or unpinned if it already was]'
+      note: Pinning changes only where the chat appears in the sidebar, not what Codex can reach. Ctrl+Alt+P does the same on Windows.
+      why: A chat you use every week stays easy to reach.
+    source: https://learn.chatgpt.com/docs/reference/slash-commands
+  - harness: codex
+    group: chats
+    command: /project
+    what: Chooses the project that new chats start in (desktop app and editors).
+    example:
+      situation: A faculty member keeps a separate project for each course and is about to start work on the neuroscience block.
+      typed: /project
+      shown:
+        - '[A picker of projects; new chats start in the one you choose]'
+      note: Ctrl+Alt+Shift+O opens the same project picker in the desktop app on Windows.
+      why: Each new chat starts with the right course folder and its context.
+    source: https://learn.chatgpt.com/docs/reference/slash-commands
+  - harness: codex
+    group: chats
+    command: /chat
+    what: Starts the next new chat without a project (desktop app).
+    example:
+      situation: In the middle of course work, a faculty member has a quick, unrelated question that should not sit inside the course project.
+      typed: /chat
+      shown:
+        - '[The next new chat is set to start without a project]'
+      note: OpenAI suggests this for self-contained work that needs no shared project files, instructions or folder access.
+      why: Unrelated questions stay out of a course project's history.
+    source: https://learn.chatgpt.com/docs/reference/slash-commands
+  - harness: codex
+    group: chats
+    command: /archive
+    what: Archives the current chat and keeps its transcript (in the CLI, it also exits).
+    example:
+      situation: At the end of the semester, a course director wants last term's Codex chats out of the session list without losing them.
+      typed: /archive
+      shown:
+        - '[In the CLI, Codex asks you to confirm archiving the session and exiting]'
+        - '[The session leaves the active list; its transcript stays on the computer]'
+      note: To bring it back in the CLI, run codex unarchive with the session's name or ID (codex archive works from the terminal too); in the desktop app, restore it from Settings, Archived chats.
+      why: The list stays short, and nothing is lost.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  # Model, Effort, and Usage
+  - harness: codex
+    group: model
+    command: /model
+    what: Chooses the model for the current chat (in the CLI, its reasoning effort too).
+    example:
+      situation: A student wants a quick, low-cost model to reformat a reference list for a pharmacology assignment.
+      typed: /model
+      shown:
+        - '[A picker listing only the models available to your account, such as gpt-6-luna or gpt-6.1-sol]'
+        - '[Codex confirms the new model in the transcript]'
+      note: In the CLI, More reasoning… in the picker shows a model's Max or Ultra options. Run /status to confirm the change.
+      why: Matching the model to the task saves allowance; OpenAI suggests Luna for clear, repeatable tasks.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: model
+    command: /reasoning
+    what: Chooses how hard the model reasons in the current chat (desktop app and editors).
+    example:
+      situation: In the desktop app, a curriculum lead asks Codex to reconcile two versions of the year-one curriculum map and wants more careful reasoning than usual.
+      typed: /reasoning
+      shown:
+        - '[A choice of reasoning efforts for this chat, from Light to Extra High, with Max or Ultra where your model and settings allow]'
+      note: Beneath the composer, the Power setting offers presets of model and effort; move toward Smarter or Faster, or open Advanced to choose a model, effort or speed. Ultra splits a task across helpers working in parallel; GPT-6 Luna goes up to Max, not Ultra.
+      why: OpenAI advises starting at the default and raising effort only for work that needs more planning or checking.
+    source: https://learn.chatgpt.com/docs/models
+  - harness: codex
+    group: model
+    command: /fast
+    what: Turns the current model's Fast speed on or off, when the model offers one.
+    example:
+      situation: A staff member needs Codex to reformat a long event schedule before a meeting starts and wants quicker replies.
+      typed: /fast
+      shown:
+        - '[Codex turns the Fast tier on and saves the choice; /fast again turns it off]'
+      note: Fast draws on your allowance faster than Standard speed (2.5 times, by OpenAI's pricing page). If the model has no Fast tier, /fast does not appear.
+      why: Useful when waiting matters more than allowance.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: model
+    command: /usage
+    what: Shows your account's token use (daily, weekly or overall) or redeems an earned reset; in the desktop app, it opens usage and billing settings.
+    example:
+      situation: A student on Plus wants to know how much of this week's allowance is left before starting a big reorganization of study notes.
+      typed: /usage weekly
+      shown:
+        - '[Your account''s token activity for the week]'
+      note: Plain /usage opens a menu to show activity or redeem an available earned reset.
+      why: Checking first avoids running out partway through a large task.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: model
+    command: /personality
+    what: "Chooses how Codex communicates: friendly, pragmatic or none (CLI and editors)."
+    example:
+      situation: A first-year student finds Codex's replies terse and would like more explanation while learning to use it.
+      typed: /personality
+      shown:
+        - '[A picker of styles]'
+        - 'option: friendly'
+        - 'option: pragmatic'
+        - 'option: none'
+        - '[Codex confirms the new style and uses it for later replies in the chat]'
+      note: If the current model does not support personalities, the command is hidden.
+      why: It changes the tone without rewriting your instructions.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: model
+    command: codex update
+    what: Checks for a newer Codex CLI and installs it, when your installed release supports updating itself (typed in the terminal).
+    example:
+      situation: GPT-6 Astra is missing from a faculty member's model picker, and OpenAI's help says Astra needs Codex CLI 0.153.0 or newer.
+      typed: codex update
+      shown:
+        - '[Codex checks for an update and applies it]'
+      note: Running the installer you first used again (the PowerShell installer on Windows, or npm) also updates Codex.
+      why: New models and fixes often need the latest release.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  # Files, Skills, and Connections
+  - harness: codex
+    group: extend
+    command: /mention
+    what: Attaches a file or folder to the chat so follow-up requests refer to it directly (CLI; typing @ does the same).
+    example:
+      situation: A course director wants Codex to check one syllabus against the block calendar.
+      typed: /mention syllabus/MED201-syllabus.docx
+      shown:
+        - '[A popup of matching paths, from which you select the file]'
+        - '[Codex adds the file to the chat, so follow-up turns refer to it directly]'
+      why: Pointing at the exact file saves Codex guessing which document you mean.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: extend
+    command: /import
+    what: Brings a Claude Code or Cursor setup, project files and recent chats into Codex (CLI).
+    example:
+      situation: A faculty member has used Claude Code for a semester, with a file of course rules, and is trying Codex on the same folder.
+      typed: /import
+      shown:
+        - '[An import picker]'
+        - 'option: Claude Code'
+        - 'option: Cursor'
+        - '[You select the setup, project files or recent chats to bring over, and Codex imports them into its own configuration and files]'
+      note: It looks back at up to 50 chats from the last 30 days, and is unavailable while a task is running.
+      why: Rules you already wrote carry over instead of being rewritten.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: extend
+    command: /skills
+    what: Lists skills and applies one to your next request (CLI; in the desktop app, skills appear in the slash list and on the Skills page).
+    example:
+      situation: A department has written a skill that formats new exam items in its house style (a hypothetical skill, for illustration).
+      typed: /skills
+      shown:
+        - '[A list of skills to choose from]'
+        - '[Codex inserts the chosen skill''s context, so the next request follows its instructions]'
+      note: Typing $ and the skill's name before a request does the same. OpenAI bundles a few skills, such as skill-creator for writing your own.
+      why: A skill applies a repeatable process the same way every time.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: extend
+    command: /apps
+    what: Browses connected apps and inserts one into your request as a $ mention (CLI).
+    example:
+      situation: A course coordinator wants Codex to work from the current timetable in a connected Google Drive before updating a schedule.
+      typed: /apps
+      shown:
+        - '[A list of apps]'
+        - '[Codex inserts the chosen app into the composer as $ and its name, ready for your request]'
+      why: Naming the app tells Codex exactly where to look.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: extend
+    command: /plugins
+    what: Browses installed and available plugins (CLI).
+    example:
+      situation: Before starting a course-materials task, a faculty member wants to see which plugins are installed and what each one can do.
+      typed: /plugins
+      shown:
+        - '[The plugin browser, with installed plugins, plugins your configuration lets you discover, and each one''s state]'
+      note: Press Space on an installed plugin to turn it on or off.
+      why: You see what Codex can reach before relying on it.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: extend
+    command: /mcp
+    what: Lists the outside tools (MCP servers) Codex can call in this session; in the desktop app and editors, it opens MCP status.
+    example:
+      situation: An instructor's IT team has connected a documentation server, and the instructor wants to confirm Codex can use it.
+      typed: /mcp
+      shown:
+        - '[The configured MCP servers and tools Codex can call in this session]'
+      note: /mcp verbose adds detailed diagnostics for each server.
+      why: Before relying on a connection, confirm it is there.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  # Long Jobs and Troubleshooting
+  - harness: codex
+    group: long
+    command: /goal
+    what: Sets a goal Codex keeps working toward across turns; you can view, edit, pause, resume or clear it.
+    example:
+      situation: A faculty member wants all twelve weekly study guides moved onto the new departmental template, with a list of any guide that has no learning objectives.
+      typed: /goal Convert all 12 weekly study guides to the new template and list any guide with no learning objectives
+      shown:
+        - '[Codex keeps the goal attached to the chat while the work continues]'
+      note: In the desktop app, goal progress appears above the composer, with buttons to pause, resume, edit or clear it. A goal can be up to 4,000 characters; for longer instructions, point it at a file.
+      why: A goal keeps a long, many-file job on track across turns, and you still review the result.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: long
+    command: /agent
+    what: Switches between Codex's helper (subagent) threads so you can inspect or continue one (also /subagents; CLI).
+    example:
+      situation: A faculty member asked Codex to split a check of 200 practice questions across helpers, one per organ system, and wants to see how the cardiology helper is doing.
+      typed: /agent
+      shown:
+        - '[A picker of agent threads]'
+        - '[Codex switches to the chosen thread, showing that helper''s work]'
+      note: Helpers use more of your allowance than a single agent, since each does its own work.
+      why: You can check a helper's work before its summary reaches the main chat.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: long
+    command: /ps
+    what: Shows the commands Codex is running in the background, with their latest output (CLI).
+    example:
+      situation: Codex started a long conversion of lecture slides to PDF in the background, and the faculty member wants to know how far it has got.
+      typed: /ps
+      shown:
+        - '[Each background terminal''s command, with up to three recent lines of its output]'
+      note: The list may be empty, depending on how Codex runs commands on your computer.
+      why: You can check progress without interrupting the main chat.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: long
+    command: /stop
+    what: Stops every background command started in this session (also /clean; CLI).
+    example:
+      situation: The slide conversion is no longer needed, because a colleague has already sent the PDFs.
+      typed: /stop
+      shown:
+        - '[Codex may ask you to confirm, then stops all background terminals for this session]'
+      why: It cancels unneeded work without ending the session.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: long
+    command: /feedback
+    what: Sends feedback, and optionally logs, to the Codex team at OpenAI (in the desktop app and editors, through a feedback dialog).
+    example:
+      situation: Codex keeps failing at the same step on a faculty member's laptop, and they want to report it.
+      typed: /feedback
+      shown:
+        - '[Prompts to describe the problem and to choose whether to include logs or diagnostics]'
+        - '[Codex collects what you chose and submits it]'
+      why: The report reaches the team with the details they need to investigate.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: long
+    command: codex doctor
+    what: Writes a diagnostic report on the Codex installation, settings, sign-in and connections (typed in the terminal).
+    example:
+      situation: After a Windows update, Codex will not start properly on a faculty laptop.
+      typed: codex doctor
+      shown:
+        - '[A local report checking installation, configuration, sign-in, runtime, Git, the terminal and other parts]'
+      note: OpenAI's help suggests it on Windows for startup, connection and performance problems.
+      why: The first step before asking IT for help or filing a support request.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  # Other Commands, for Developers (no worked examples)
+  - harness: codex
+    group: dev
+    command: /ide
+    what: Adds open files, the current selection and other editor context to the next request (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /ide-context
+    what: Turns shared editor context on or off (desktop app and editors).
+    source: https://learn.chatgpt.com/docs/reference/slash-commands
+  - harness: codex
+    group: dev
+    command: /local
+    what: Runs the chat in the selected local project, rather than in the cloud (desktop app and editors).
+    source: https://learn.chatgpt.com/docs/reference/slash-commands
+  - harness: codex
+    group: dev
+    command: /worktree
+    what: Runs the chat in a new Git worktree, keeping its changes apart from your current checkout (desktop app and editors).
+    source: https://learn.chatgpt.com/docs/reference/slash-commands
+  - harness: codex
+    group: dev
+    command: /cloud
+    what: Runs the chat in Codex Cloud, when cloud execution is available (desktop app and editors).
+    source: https://learn.chatgpt.com/docs/reference/slash-commands
+  - harness: codex
+    group: dev
+    command: /cloud-environment
+    what: Chooses the Codex Cloud environment for the chat (desktop app and editors).
+    source: https://learn.chatgpt.com/docs/reference/slash-commands
+  - harness: codex
+    group: dev
+    command: /hooks
+    what: Shows lifecycle hooks, and trusts, turns off or turns back on the ones you manage (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /debug-config
+    what: Prints the configuration layers and policy requirements, to explain why a setting differs from your configuration file (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /experimental
+    what: Turns experimental features on or off, such as Network proxy or Prevent sleep while running (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /keymap
+    what: Remaps the terminal interface's keyboard shortcuts and saves them (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /vim
+    what: Turns Vim-style editing in the composer on or off (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /raw
+    what: Turns raw scrollback on or off, for plainer selecting and copying of long output; Alt+R does the same (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /theme
+    what: Chooses a syntax-highlighting theme for code and diffs in the terminal (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /statusline
+    what: Chooses and orders the items in the terminal's footer, such as model, context, limits and Git branch (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /title
+    what: Chooses the items shown in the terminal window or tab title (CLI).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: /pets
+    what: Chooses or hides a terminal pet (also /pet; in the desktop app, /pet wakes or tucks away the desktop pet).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex login
+    what: Signs in from the terminal with a ChatGPT account, a device code, an API key or an access token; Codex also asks you to sign in on first run.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex exec
+    what: Runs a task without interaction, for scripts and automated pipelines (short form codex e).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex review
+    what: Runs a code review without interaction, against uncommitted changes, a base branch, a commit or your own instructions.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex cloud
+    what: Browses or starts Codex Cloud tasks from the terminal (codex cloud exec submits one, codex cloud list lists recent ones; also codex cloud-tasks); experimental.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex apply
+    what: Applies the latest changes from a Codex Cloud task to your local working copy (short form codex a).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex mcp
+    what: Lists, adds, removes and signs in to MCP servers in Codex's configuration file.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex plugin
+    what: Installs, lists and removes plugins; codex plugin marketplace manages the sources they come from.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex sandbox
+    what: Runs any command inside the same sandbox Codex uses, on macOS, Linux or Windows.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex execpolicy
+    what: Checks command-rule files and shows whether a command would be allowed, prompted or blocked (experimental).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex features
+    what: Lists feature flags and turns them on or off in Codex's configuration file.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex completion
+    what: Generates tab-completion scripts for Bash, the Z shell, Fish or PowerShell.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex app-server
+    what: Starts Codex's app server, for local development and debugging (experimental).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex remote-control
+    what: Runs or manages remote control for the local app server, or creates a short-lived pairing code (experimental).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: codex debug
+    what: Debugging tools that send a test message through the app server, print the model catalog Codex sees, or show the exact input the model receives (experimental).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    group: dev
+    command: chatgpt.newChat
+    what: In VS Code and similar editors, starts a new Codex chat (Ctrl+N on Windows); chatgpt.openSidebar, chatgpt.newCodexPanel and chatgpt.openCommandMenu open the sidebar, a new panel or the command menu.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=ide
+  - harness: codex
+    group: dev
+    command: chatgpt.addToThread
+    what: In VS Code and similar editors, adds the selected text to the current Codex chat; chatgpt.addFileToThread adds the whole file.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=ide
+shortcuts:
+  - harness: codex
+    keys: Enter
+    what: While Codex is working in the CLI, sends new instructions into the current turn.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    keys: Tab
+    what: While Codex is working in the CLI, queues a message, slash command or shell command for the next turn.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    keys: Esc Esc
+    what: On an empty prompt in the CLI, edits your previous message and forks the chat from that point.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    keys: Ctrl+R
+    what: Searches your earlier prompts in the CLI.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    keys: Ctrl+O
+    what: Copies the latest finished response in the CLI (same as /copy).
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    keys: Ctrl+G
+    what: Opens your text editor for writing a long prompt in the CLI.
+    source: https://learn.chatgpt.com/docs/cli-customization
+  - harness: codex
+    keys: Ctrl+L
+    what: Clears the terminal view in the CLI but keeps the current chat.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: work
+    keys: Alt+1, Alt+2, Alt+3
+    what: In the desktop app on Windows, switches to Chat, Work or Codex (Control+1 to 3 on a Mac).
+    source: https://learn.chatgpt.com/docs/reference/commands
+  - harness: work
+    keys: Enter or Esc
+    what: In the desktop app, approves or declines an open approval request.
+    source: https://learn.chatgpt.com/docs/reference/commands
+  - harness: work
+    keys: Ctrl+Shift+N
+    what: In the desktop app, starts a temporary chat (Command+Shift+N on a Mac).
+    source: https://learn.chatgpt.com/docs/reference/commands
+  - harness: work
+    keys: Ctrl+Alt+N
+    what: In the desktop app, opens a quick chat for a short question (Command+Option+N on a Mac).
+    source: https://learn.chatgpt.com/docs/reference/commands
+  - harness: work
+    keys: Ctrl+Shift+M
+    what: In the desktop app, opens the model picker (Control+Shift+M on a Mac).
+    source: https://learn.chatgpt.com/docs/reference/commands
+  - harness: codex
+    keys: Ctrl+Shift+G
+    what: In the desktop app, opens Codex's review tab to inspect changes (Control+Shift+G on a Mac).
+    source: https://learn.chatgpt.com/docs/reference/commands
+  - harness: work
+    keys: Ctrl+K
+    what: In the desktop app, opens the command menu (Command+K on a Mac).
+    source: https://learn.chatgpt.com/docs/reference/commands
+  - harness: work
+    keys: Ctrl+/
+    what: In the desktop app, lists the keyboard shortcuts (Command+/ on a Mac); change them under Settings, Keyboard Shortcuts.
+    source: https://learn.chatgpt.com/docs/reference/commands
+symbols:
+  - harness: codex
+    syntax: '@'
+    what: In the Codex CLI, searches for a file in the folder and adds its path to your request.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    syntax: '!'
+    what: At the start of a line in the Codex CLI, runs a shell command yourself, under the current approval and sandbox settings.
+    source: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - harness: codex
+    syntax: $
+    what: In Codex, names a skill to use, such as $skill-creator; /apps inserts apps the same way.
+    source: https://learn.chatgpt.com/docs/skills-and-plugins
+  - harness: work
+    syntax: '@'
+    what: In ChatGPT Chat and Work, points to a plugin or skill, such as @Google Drive or @skill-creator.
+    source: https://learn.chatgpt.com/docs/skills-and-plugins
+  - harness: work
+    syntax: /Deepresearch
+    what: Typed in a ChatGPT message, starts a deep research task.
+    source: https://help.openai.com/en/articles/10500283
+full_lists:
+  - title: Every Codex CLI command
+    url: https://learn.chatgpt.com/docs/developer-commands?surface=cli
+  - title: Slash commands in the desktop app
+    url: https://learn.chatgpt.com/docs/reference/slash-commands
+  - title: Desktop app keyboard shortcuts
+    url: https://learn.chatgpt.com/docs/reference/commands
+  - title: Codex editor extension commands
+    url: https://learn.chatgpt.com/docs/developer-commands?surface=ide
+  - title: Permission modes
+    url: https://learn.chatgpt.com/docs/permission-modes
+privacy:
+  - title: Data controls in ChatGPT
+    url: https://help.openai.com/en/articles/7730893-data-controls-faq
+    covers: Whether your chats, and Codex tasks on personal plans, are used to train OpenAI's models and how to choose; temporary chats; exporting your data.
+  - title: Memory in ChatGPT
+    url: https://help.openai.com/en/articles/8590148-memory-faq
+    covers: What ChatGPT remembers and how to review, correct or delete it.
+  - title: Privacy Center in ChatGPT
+    url: https://help.openai.com/en/articles/20001488
+    covers: The in-app guide to privacy settings, rolling out on Free, Go, Plus, Pro and Business (not Enterprise or Edu).
+  - title: Enterprise privacy at OpenAI
+    url: https://openai.com/enterprise-privacy/
+    covers: OpenAI's commitments for business data in Business, Enterprise and Edu workspaces, including training and retention.
+  - title: OpenAI Privacy Policy
+    url: https://openai.com/policies/privacy-policy/
+    covers: The full privacy policy for OpenAI's consumer services.
+changes:
+  - date: 2026-10-08
+    change: Faster steering began rolling out in Codex in the desktop app; a follow-up message can change a running task sooner (Settings, General, Follow-up behavior).
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - date: 2026-10-07
+    change: GPT-6 with Intelligent UI began rolling out in Chat (GPT-6 Sol on Plus, Pro, Business and Enterprise), reaching Free and Go (GPT-6 Luna) from October 8; the Work and Codex models did not change.
+    source: https://openai.com/index/gpt-6-for-everyone/
+  - date: 2026-10-06
+    change: Audio uploads arrived on paid plans, for transcripts and summaries of recordings such as lectures.
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - date: 2026-09-29
+    change: DevDay brought dots, GPT-6.1 Sol in Work and Codex, Codex Cloud, ChatGPT Space and Pages, and the Pro 500 plan.
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - date: 2026-09-22
+    change: GPT-6 Sol and GPT-6 Luna arrived in ChatGPT Work and Codex, with GPT-6 Luna for Free and Go in the desktop app.
+    source: https://openai.com/index/introducing-gpt-6-sol-and-luna/
+  - date: 2026-09-14
+    change: On Plus and Pro, Instant stopped switching to deeper thinking on its own; new Health connections began defaulting to Allow low-risk actions.
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - date: 2026-09-11
+    change: OpenAI announced plans to retire custom GPTs, with a migration path to plugins.
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+  - date: 2026-09-03
+    change: GPT-6 Astra was introduced, first to a limited set of organizations.
+    source: https://help.openai.com/en/articles/6825453-chatgpt-release-notes
