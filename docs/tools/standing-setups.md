@@ -13,7 +13,7 @@ last_reviewed: 2026-10-08
 | Container | Where it lives | What persists | Best for |
 | --- | --- | --- | --- |
 | Claude Project | claude.ai (all plans; free accounts get five) | Per-project instructions, an uploaded knowledge base, and a separate per-project memory | A course, a manuscript, a committee: any body of work with stable materials |
-| ChatGPT Project | ChatGPT app and web | Project instructions, uploaded sources, and the project's chats (including ChatGPT Work sessions) | The same jobs, on the OpenAI side |
+| ChatGPT Project | ChatGPT app and web | Project instructions, uploaded sources, and the project's chats (including ChatGPT Work sessions, except in a project set to project-only memory, which every shared project is) | The same jobs, on the OpenAI side |
 | Folder brief | A markdown file in a folder an agent works in (`CLAUDE.md` for Claude Code, `AGENTS.md` for Codex) | Standing rules the agent reads before any work in that folder | Recurring agent work on the same files |
 
 The common idea: **instructions plus materials, attached to the work instead of the conversation.** A project's instructions apply to every chat inside it, and its uploaded knowledge is available without re-uploading.
@@ -38,7 +38,7 @@ There is a fourth container worth knowing about, and it works the other way arou
 <figcaption>The container holds what you would otherwise repeat; the chats just use it.</figcaption>
 </figure>
 
-Claude keeps each project's memory separate from your other work. In ChatGPT, do not count on context carrying from one chat to the next unless it is in the project's sources. OpenAI's own guidance is to put rules that must always apply in the instructions rather than relying on automatic memory: "Treat memories as a helpful recall layer, not as the only source for rules that must always apply."
+Claude keeps each project's memory separate from your other work. In ChatGPT, a project can be set to project-only memory, so its chats draw on one another and on nothing outside the project (shared projects always work this way); with the default setting, memory follows your general ChatGPT settings. Either way, anything that must always apply belongs in the project's instructions. OpenAI makes the same point in its guidance for Codex: "Treat memories as a helpful recall layer, not as the only source for rules that must always apply."
 
 ## Worked Pattern: A Course Assistant
 

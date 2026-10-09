@@ -89,7 +89,7 @@ More: [Codex](https://openai.com/codex/) and its [quickstart](https://learn.chat
 
 ### ChatGPT Work (OpenAI)
 
-OpenAI's agent for finished work: give it an outcome and it researches, works in steps, and returns documents, spreadsheets, slides, sites, or analyses rather than chat, with confirmation prompts before consequential steps. On the desktop app it can use local files and applications with your permission; included with every ChatGPT plan on desktop, with web and mobile on paid plans. Still the gentlest entry point on this page. The official walkthrough below is the first of a short series on OpenAI's channel covering computer and browser use, slides and documents, and scheduled tasks.
+OpenAI's agent for finished work: give it an outcome and it researches, works in steps, and returns documents, spreadsheets, slides, sites, or analyses rather than chat, with confirmation prompts before consequential steps. On the desktop app it can use local files and applications with your permission; included with every ChatGPT plan on desktop (limited on Free and Go), with web and mobile on Plus and higher plans. Still the gentlest entry point on this page. The official walkthrough below is the first of a short series on OpenAI's channel covering computer and browser use, slides and documents, and scheduled tasks.
 
 <!-- render:guide-videos:agents:chatgpt-agent -->
 

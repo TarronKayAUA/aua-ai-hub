@@ -30,7 +30,7 @@ The four document skills are available in claude.ai and Cowork, and Anthropic's 
 
 ### Switching File Creation On
 
-If you ask for a document and get text in the chat instead of a file, the setting is off. On a personal Free, Pro, or Max account, open **Settings**, then **Capabilities**, and turn on code execution and file creation. On a Team or Enterprise account, an administrator enables it in **Organization settings**, under **Skills**. Custom skills you add yourself live under **Customize**, then **Skills**.
+If you ask for a document and get text in the chat instead of a file, the setting is off. On a personal Free, Pro, or Max account, open **Settings**, then **Capabilities**, and turn on code execution and file creation. On a Team or Enterprise account, an owner enables it in **Organization settings**, under **Plugins & skills**, on the **Policy** tab (two switches: code execution and file creation, and skills). Custom skills you add yourself live under **Customize**, then **Skills**.
 
 ## Skills from Open Directories
 

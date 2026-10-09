@@ -91,8 +91,42 @@
   verify_url: https://gemini.google/about/
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-22
-  blurb: Google's artificial intelligence assistant, integrated with Google Workspace apps such as Docs and Gmail.
+  # Corrected 2026-10-09 (owner approved; vendor-pages research): Gemini in
+  # Gmail and Docs is not part of a free personal account. gemini.google/
+  # subscriptions, read 2026-10-09, lists it from Google AI Plus ("Gemini in
+  # Gmail, Vids, and more") and Google AI Pro and Ultra ("Gemini in Gmail,
+  # Docs, Vids, and more"), and not on Free; Workspace accounts get it by
+  # edition.
+  last_reviewed: 2026-10-09
+  blurb: Google's artificial intelligence assistant. Gemini inside Gmail, Docs, and other Google apps comes with the paid Google AI plans or a Google Workspace edition that includes it; a free personal account gets the Gemini app on its own.
+
+# Added 2026-10-09 (owner approved: "Yes, as listed", alongside the vendor
+# pages). Verified that day from the company's own pages: x.ai/pricing
+# (Free $0 "within generous limits", with real-time web and X search, voice
+# mode and Connectors; SuperGrok $30 a month adds image and video
+# generation; SuperGrok Plus $100; "No training" ticked only for Business
+# and Enterprise); x.ai/legal/faq (training opt-out under Settings > Data
+# Controls > "Improve the model" in the app and Settings > Data on
+# grok.com; Private Chat is not used for training and is deleted within 30
+# days; ages 13 to 17 need a parent's permission); x.ai/legal/privacy-policy
+# (effective August 24, 2026, operator SpaceXAI LLC: "We do not aim to
+# collect sensitive personal information (ex., information related to ...
+# health ...) and ask that you do not provide us with any such
+# information"); x.ai/news/xai-joins-spacex (SpaceX acquired xAI on
+# 2026-02-02); x.ai/news/grok-build-for-everyone (Build in chat on every
+# plan since 2026-08-19).
+- name: Grok
+  vendor: xAI
+  category: assistants
+  url: https://grok.com
+  # grok.com is an app shell; the product page serves full text to the
+  # pipeline's browser-UA fetch (186 KB, 2026-10-09).
+  verify_url: https://x.ai/grok
+  cost: freemium
+  governance_status: listed
+  status_note: On its consumer plans, your conversations are used to train its models unless you turn off "Improve the model" in its data settings or use Private Chat, and its privacy policy asks you not to share health information, which is worth knowing before you use it for work material.
+  last_reviewed: 2026-10-09
+  blurb: Chat assistant from xAI (now SpaceXAI, part of SpaceX), on the web, in its own apps, and inside X, with real-time web and X search, voice mode, image generation, and an in-chat Build mode that makes small apps and websites. Free within limits; paid SuperGrok plans raise them and add video generation.
 
 - name: Microsoft 365 Copilot
   vendor: Microsoft
@@ -227,8 +261,13 @@
   url: https://claude.com/product/cowork
   cost: paid
   governance_status: listed
-  last_reviewed: 2026-10-06
-  blurb: Anthropic's desktop agent for non-coding knowledge work. Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
+  # Updated 2026-10-09 (owner approved; vendor-pages research): no longer
+  # desktop-only. claude.com/product/cowork, read 2026-10-09: "Claude Cowork
+  # runs on web, desktop, and mobile and is the same Claude, wherever you
+  # work"; banner, "Claude Cowork is now just Claude. Rolling out to Pro and
+  # Max, with more plans to follow."
+  last_reviewed: 2026-10-09
+  blurb: Anthropic's agent for non-coding knowledge work, on web, desktop, and mobile, and now becoming part of Claude itself (rolling out to Pro and Max first). Reads, edits, and creates files in folders you grant it, returning finished documents and analyses rather than instructions.
 
 # Cost and blurb updated 2026-07-28 (issue #28, owner approved): the
 # learn.chatgpt.com pricing page states Codex is included in every
@@ -263,14 +302,20 @@
   url: https://openai.com/chatgpt-work/
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-29
+  last_reviewed: 2026-10-09
   # Blurb and cost updated 2026-07-28 (issue #28, owner approved): the
   # successor-to-Agent-Mode framing no longer appears on any official
   # page (the renamed-from comment above preserves that history), the
   # product spans web and mobile as well as desktop, and the marketing
   # page states availability for all plans on desktop with web and
   # mobile on paid plans.
-  blurb: "OpenAI's agent for finished work: give it an outcome and it returns documents, spreadsheets, slides, sites, or analyses. On the desktop it can use local files and applications with permission; included with every ChatGPT plan on desktop, with web and mobile on paid plans."
+  # Corrected 2026-10-09 (owner approved; vendor-pages research): Go is a
+  # paid plan but gets Work on the desktop only. chatgpt.com/pricing, read
+  # 2026-10-09, lists ChatGPT Work as "Limited (desktop app)" for Free and
+  # Go and "Desktop, web, and mobile" for Plus and Pro; the release notes
+  # say "On web and mobile, Work is rolling out to paid plans except Free
+  # and Go."
+  blurb: "OpenAI's agent for finished work: give it an outcome and it returns documents, spreadsheets, slides, sites, or analyses. On the desktop it can use local files and applications with permission; included with every ChatGPT plan on desktop (limited on Free and Go), with web and mobile on Plus and higher plans."
 
 - name: Manus
   # Vendor history: acquired by Meta 2025-12-30 (manus.im banner and
@@ -436,8 +481,13 @@
   cost: paid
   governance_status: listed
   # WSL expanded 2026-09-08, same reason as the OpenEvidence note above.
-  status_note: Beta on paid Claude plans; macOS and Linux, with Windows through the Windows Subsystem for Linux (WSL).
-  last_reviewed: 2026-09-15
+  # Updated 2026-10-09 (owner approved; vendor-pages research): Windows is
+  # now a download of its own. claude.com/science, read 2026-10-09: "in
+  # beta for macOS, Windows, and Linux on Pro, Max, Team, and Enterprise
+  # plans", with separate downloads for Mac, Windows and Linux and no
+  # mention of WSL; Team and Enterprise administrators enable it first.
+  status_note: Beta on paid Claude plans (on Team and Enterprise, an administrator turns it on first); for macOS, Windows, and Linux.
+  last_reviewed: 2026-10-09
   blurb: Local-first research workbench pairing an agent with curated scientific skills (genomics, proteomics, cheminformatics), local code execution, and a reviewer agent that checks citations and calculations.
 
 - name: ResearchRabbit
@@ -935,9 +985,23 @@
   url: https://antigravity.google
   cost: freemium
   governance_status: listed
-  status_note: Public preview; free-tier quotas have changed several times.
-  last_reviewed: 2026-09-08
-  blurb: "Google's development platform built around agents: an editor and a command-line tool plan and execute multi-step coding tasks using Gemini and other models. It replaced Google's earlier Gemini Command Line Interface for individual users in June 2026."
+  # Updated 2026-10-09 (owner approved; vendor-pages research). Read that
+  # day: antigravity.google/llms.txt lists four products, "Antigravity 2.0"
+  # (a standalone desktop app, "Graphical command center ... for managing
+  # active background agents"), the Antigravity IDE, the Antigravity CLI and
+  # the Antigravity SDK; docs/plans.md describes ordinary plans (free users
+  # "A meaningful quota, refreshed weekly"; Google AI Pro and Ultra higher,
+  # "refreshed every five hours") and no preview label, so "Public preview"
+  # was dropped. The June 2026 retirement of Gemini CLI for individual users
+  # is reported by the press (Google I/O, cutoff June 18, 2026) and
+  # Antigravity's docs carry a "Migrating from Gemini CLI" guide, but the
+  # open-source Gemini CLI is still released (v0.63.0, 2026-10-06) and its
+  # README still offers a personal-account free tier. The research agent
+  # wrongly called the June change unsupported; the blurb keeps it, as the
+  # move of individual users, and does not say Gemini CLI is gone.
+  status_note: Free and paid plans (through Google AI Pro and Ultra); quotas are set by capacity and have changed several times.
+  last_reviewed: 2026-10-09
+  blurb: "Google's development platform built around agents: a desktop app for running and supervising agents, an editor, a command-line tool, and a software development kit, which plan and execute multi-step coding tasks using Gemini and other models. Google moved individual users of its earlier Gemini Command Line Interface to it in June 2026; that tool remains available to organizations and through paid access."
 
 - name: SciSpace
   vendor: SciSpace
