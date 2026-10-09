@@ -326,6 +326,10 @@ nav:
       - Run Models Locally:
           - Running Models Locally: tools/local.md
           - Hardware for Local AI: tools/hardware.md
+      # Company pages (2026-10-09, owner approved): one in-depth page per
+      # vendor, rendered from data/vendors.yaml by scripts/render_vendors.py.
+      - By Company:
+          - "Claude (Anthropic)": tools/company/anthropic.md
       - Compare Models:
           - Language Models: benchmarks.md
           - Image Generation: benchmarks/image.md

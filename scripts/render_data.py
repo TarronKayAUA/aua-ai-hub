@@ -33,6 +33,7 @@ import yaml
 from narration_common import (NEWS_PAGES, STATIC_PAGES, audio_exists, brief_slug,
                               digest_slug, page_slug, player_html,
                               static_audio_current)
+import render_vendors
 
 TOOLS_MARKER = "<!-- render:tools -->"
 OPEN_MODELS_MARKER = "<!-- render:open-models -->"
@@ -2484,6 +2485,8 @@ def on_config(config):
     print(f"  entries read : {len(_EXPLAINERS)} (each with its page marker and poster in place)")
     for src, e in sorted(_EXPLAINERS.items()):
         print(f"  {src}: {_clock(e['seconds'])}, {e['url']}")
+    # The company pages (Tools & Prompts > By Company, 2026-10-09), checked whole.
+    render_vendors.verify(config)
     return config
 
 
@@ -2512,6 +2515,7 @@ def on_page_markdown(markdown, page, config, files):
     markdown += _reviewed_footer(page.meta, src)
     markdown = _inject_narration(src, markdown)
     markdown = _inject_explainer_video(src, markdown, page, config)
+    markdown = render_vendors.render(src, markdown, config)
     if src == "tools/index.md":
         for marker in (TOOLS_MARKER, OPEN_MODELS_MARKER):
             if marker not in markdown:

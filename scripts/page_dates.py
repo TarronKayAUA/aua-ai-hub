@@ -55,6 +55,7 @@ RENDER_SOURCES = {
     "glossary-az": [],   # built from the page's own entries
     "maintainer-profiles": ["mkdocs.yml"],   # extra.maintainer_profiles
     "explainer-video": ["data/explainer_videos.yaml"],
+    "vendor": ["data/vendors.yaml"],   # the company pages (render_vendors.py)
 }
 GENERATED_SOURCES = {re.compile(r"prompts/[\w-]+\.md"): ["data/prompts.yaml"]}
 

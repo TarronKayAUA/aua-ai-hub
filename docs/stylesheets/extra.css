@@ -3504,3 +3504,142 @@
     transition: none;
   }
 }
+
+/* === Company pages: the commands' worked examples (2026-10-09) ==========
+   Each command is drawn as a small illustrated terminal in HTML (words in
+   HTML, as every figure on the site), labelled as an illustration from the
+   company's documentation, never a screenshot. The terminal is dark in both
+   schemes, so its colors are fixed and were checked against its own
+   background (#13212f): text #e7edf3 13.7:1, the typed line #9fdcff 10.9:1,
+   descriptions of the screen #b9c6d2 9.2:1, the prompt mark #7fb8d8 7.4:1.
+   Two or more figures sit side by side when there is room, in rows. */
+.md-typeset .hf-cmd-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 1.1rem 1.3rem;
+  margin: 0.6rem 0 1.4rem;
+}
+
+/* Three across where they fit, one below that: every group holds three
+   commands (render_vendors.py checks it), so no row is left with one. */
+@media screen and (min-width: 68.75em) {
+  .md-typeset .hf-cmd-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.md-typeset .figure.hf-cmd {
+  display: flex;
+  flex-direction: column;
+  max-width: none;
+  margin: 0;
+}
+
+.md-typeset .hf-cmd > .hf-title {
+  margin: 0 0 0.25rem;
+  font-size: 0.75rem;
+  text-align: left;
+}
+
+.md-typeset .hf-cmd > .hf-title > code {
+  margin-right: 0.3em;
+  font-weight: 700;
+}
+
+.md-typeset .hf-cmd-when {
+  margin: 0 0 0.5rem;
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset .hf-term {
+  padding: 0 0 0.55rem;
+  border: 1px solid #2c4258;
+  border-radius: 0.45rem;
+  background: #13212f;
+  color: #e7edf3;
+  font-family: var(--md-code-font-family);
+  font-size: 0.66rem;
+  line-height: 1.5;
+}
+
+.md-typeset .hf-term-bar {
+  margin: 0;
+  padding: 0.28rem 0.7rem;
+  border-bottom: 1px solid #2c4258;
+  color: #b9c6d2;
+  font-family: var(--md-text-font-family);
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+}
+
+.md-typeset .hf-term-in {
+  margin: 0.55rem 0.7rem 0.35rem;
+  overflow-wrap: anywhere;
+}
+
+.md-typeset .hf-term-caret {
+  color: #7fb8d8;
+}
+
+.md-typeset .hf-term-in > kbd {
+  display: inline;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  background: none;
+  color: #9fdcff;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  white-space: pre-wrap;
+}
+
+[dir] .md-typeset ul.hf-term-out {
+  margin: 0 0.7rem;
+  padding: 0;
+  list-style: none;
+}
+
+[dir] .md-typeset ul.hf-term-out > li {
+  margin: 0.15rem 0;
+  font-weight: 400;
+  overflow-wrap: anywhere;
+}
+
+/* A menu's choices, indented under the line that asks. */
+[dir] .md-typeset ul.hf-term-out > li.hf-term-opt {
+  margin-left: 1.2em;
+}
+
+.md-typeset .hf-term-opt::before {
+  content: "\2022\00a0";
+  color: #7fb8d8;
+}
+
+.md-typeset .hf-cmd-note {
+  margin: 0.45rem 0 0;
+  font-size: 0.7rem;
+}
+
+.md-typeset .hf-term-desc {
+  color: #b9c6d2;
+  font-family: var(--md-text-font-family);
+  font-style: italic;
+}
+
+.md-typeset .hf-cmd > figcaption {
+  max-width: none;
+  margin: 0.45rem 0 0;
+  font-size: 0.7rem;
+  text-align: left;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset .hf-cmd-src {
+  display: block;
+  margin-top: 0.15rem;
+  font-size: 0.62rem;
+  color: var(--md-default-fg-color--light);
+}

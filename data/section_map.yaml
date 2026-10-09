@@ -132,6 +132,11 @@ groups:
     kind: guide
     noun: guides
     blurb: Run a model on your own computer, so what you type stays on it.
+  "By Company":
+    icon: domain
+    kind: tool
+    noun: company guides
+    blurb: One company at a time, in depth, from plans and models to its agents and their commands.
   "Compare Models":
     icon: podium
     kind: benchmark
