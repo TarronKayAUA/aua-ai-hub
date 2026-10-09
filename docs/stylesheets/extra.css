@@ -3506,23 +3506,24 @@
 }
 
 /* === Company pages: the commands' worked examples (2026-10-09) ==========
-   Each command is drawn as a small illustrated terminal in HTML (words in
-   HTML, as every figure on the site), labelled as an illustration from the
-   company's documentation, never a screenshot. The terminal is dark in both
-   schemes, so its colors are fixed and were checked against its own
-   background (#13212f): text #e7edf3 13.7:1, the typed line #9fdcff 10.9:1,
-   descriptions of the screen #b9c6d2 9.2:1, the prompt mark #7fb8d8 7.4:1.
-   Two or more figures sit side by side when there is room, in rows. */
+   Each command is a small figure in the site's own vocabulary (words in
+   HTML, shapes in CSS, the .hf colors), revised the same day at the owner's
+   request that the pages match the rest of the site: a white screen with the
+   brand outline of .hf-box, the agent's name as a filled tab (as .hf-mock),
+   what you type on the brand tint, what you see beneath it, and a menu's
+   choices as chips. Labelled as an illustration from the company's
+   documentation, never a screenshot. Colors are the scheme's own tokens, so
+   both schemes keep the body text's contrast. */
 .md-typeset .hf-cmd-grid {
   display: grid;
   grid-template-columns: 1fr;
   align-items: start;
-  gap: 1.1rem 1.3rem;
+  gap: 1.2rem 1.4rem;
   margin: 0.6rem 0 1.4rem;
 }
 
-/* Three across where they fit, one below that: every group holds three
-   commands (render_vendors.py checks it), so no row is left with one. */
+/* Three across where they fit, one below that: every group holds a multiple
+   of three (render_vendors.py checks it), so no row is left with one. */
 @media screen and (min-width: 68.75em) {
   .md-typeset .hf-cmd-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3548,39 +3549,46 @@
 }
 
 .md-typeset .hf-cmd-when {
-  margin: 0 0 0.5rem;
+  margin: 0 0 0.55rem;
   font-size: 0.7rem;
   color: var(--md-default-fg-color--light);
 }
 
 .md-typeset .hf-term {
-  padding: 0 0 0.55rem;
-  border: 1px solid #2c4258;
+  padding: 0.55rem 0.7rem 0.6rem;
+  border: 2px solid var(--aua-figure-line);
   border-radius: 0.45rem;
-  background: #13212f;
-  color: #e7edf3;
-  font-family: var(--md-code-font-family);
-  font-size: 0.66rem;
-  line-height: 1.5;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-size: 0.72rem;
+  line-height: 1.45;
 }
 
 .md-typeset .hf-term-bar {
-  margin: 0;
-  padding: 0.28rem 0.7rem;
-  border-bottom: 1px solid #2c4258;
-  color: #b9c6d2;
-  font-family: var(--md-text-font-family);
-  font-size: 0.62rem;
-  letter-spacing: 0.02em;
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  padding: 0.12rem 0.6rem;
+  border-radius: 0.25rem;
+  background: var(--aua-figure-fill);
+  color: #ffffff;
+  font-size: 0.64rem;
+  font-weight: 700;
 }
 
 .md-typeset .hf-term-in {
-  margin: 0.55rem 0.7rem 0.35rem;
+  margin: 0 0 0.45rem;
+  padding: 0.35rem 0.55rem;
+  border-left: 3px solid var(--aua-figure-line);
+  border-radius: 0 0.3rem 0.3rem 0;
+  background: var(--aua-figure-tint);
+  font-family: var(--md-code-font-family);
+  font-size: 0.68rem;
   overflow-wrap: anywhere;
 }
 
 .md-typeset .hf-term-caret {
-  color: #7fb8d8;
+  color: var(--aua-figure-line);
+  font-weight: 700;
 }
 
 .md-typeset .hf-term-in > kbd {
@@ -3589,7 +3597,7 @@
   border: 0;
   box-shadow: none;
   background: none;
-  color: #9fdcff;
+  color: var(--md-default-fg-color);
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
@@ -3597,49 +3605,91 @@
 }
 
 [dir] .md-typeset ul.hf-term-out {
-  margin: 0 0.7rem;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 [dir] .md-typeset ul.hf-term-out > li {
-  margin: 0.15rem 0;
+  margin: 0.2rem 0;
+  font-family: var(--md-code-font-family);
+  font-size: 0.68rem;
   font-weight: 400;
   overflow-wrap: anywhere;
 }
 
-/* A menu's choices, indented under the line that asks. */
-[dir] .md-typeset ul.hf-term-out > li.hf-term-opt {
-  margin-left: 1.2em;
+/* A line that describes the screen rather than quoting it. */
+[dir] .md-typeset ul.hf-term-out > li.hf-term-desc {
+  font-family: var(--md-text-font-family);
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--md-default-fg-color--light);
 }
 
-.md-typeset .hf-term-opt::before {
-  content: "\2022\00a0";
-  color: #7fb8d8;
+/* A menu's choices: chips, as .hf-chip. */
+[dir] .md-typeset ul.hf-term-out > li.hf-term-opt {
+  display: inline-block;
+  margin: 0.15rem 0.35rem 0.15rem 0;
+  padding: 0.12rem 0.5rem;
+  border: 1px solid var(--md-default-fg-color--light);
+  border-radius: 0.3rem;
+  background: var(--md-default-fg-color--lightest);
+  font-family: var(--md-text-font-family);
+  font-size: 0.66rem;
 }
 
 .md-typeset .hf-cmd-note {
-  margin: 0.45rem 0 0;
+  margin: 0.5rem 0 0;
   font-size: 0.7rem;
-}
-
-.md-typeset .hf-term-desc {
-  color: #b9c6d2;
-  font-family: var(--md-text-font-family);
-  font-style: italic;
 }
 
 .md-typeset .hf-cmd > figcaption {
   max-width: none;
-  margin: 0.45rem 0 0;
+  margin: 0.4rem 0 0;
   font-size: 0.7rem;
   text-align: left;
-  color: var(--md-default-fg-color);
+  color: var(--md-default-fg-color--light);
 }
 
 .md-typeset .hf-cmd-src {
   display: block;
   margin-top: 0.15rem;
   font-size: 0.62rem;
-  color: var(--md-default-fg-color--light);
+}
+
+/* layout_width centres a figure's caption and paragraphs at the reading measure
+   (.w-page figure > :is(figcaption, p)); a command figure is one cell of a grid,
+   so its words run the cell's full width from its left edge. */
+.md-typeset .w-page .hf-cmd > :is(figcaption, p) {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* The commands with no worked example: one short row each, in a grid that
+   runs three across where it fits. */
+.md-typeset .hf-cmd-more-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.1rem 1.6rem;
+  margin: 0.4rem 0 1.2rem;
+}
+
+@media screen and (min-width: 68.75em) {
+  .md-typeset .hf-cmd-more-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.md-typeset .w-page .hf-cmd-more-grid > p {
+  max-width: none;
+  margin: 0;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.72rem;
+}
+
+.md-typeset .hf-cmd-more-grid > p > code {
+  margin-right: 0.35em;
+  font-weight: 700;
 }

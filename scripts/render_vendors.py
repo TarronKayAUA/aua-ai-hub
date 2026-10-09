@@ -46,15 +46,25 @@ def _need(entry: dict, keys: tuple, where: str) -> None:
 
 
 def load(config) -> list:
-    path = Path(config["docs_dir"]).parent / "data" / "vendors.yaml"
-    key = (str(path), path.stat().st_mtime)
+    """Every company file in data/vendors/ (one mapping per file; names starting with _ are guides)."""
+    folder = Path(config["docs_dir"]).parent / "data" / "vendors"
+    files = sorted(p for p in folder.glob("*.yaml") if not p.name.startswith("_"))
+    key = tuple((p.name, p.stat().st_mtime) for p in files)
     if _CACHE.get("key") != key:
-        _CACHE.update(key=key, vendors=yaml.safe_load(path.read_text(encoding="utf-8"))["vendors"])
+        vendors = []
+        for p in files:
+            v = yaml.safe_load(p.read_text(encoding="utf-8"))
+            if not isinstance(v, dict) or v.get("id") != p.stem:
+                raise ValueError(f"render_vendors: data/vendors/{p.name} must hold one company whose id is {p.stem}")
+            vendors.append(v)
+        _CACHE.update(key=key, vendors=vendors)
     return _CACHE["vendors"]
 
 
-def verify(config) -> None:
-    vendors = load(config)
+def verify(config, only: str | None = None) -> None:
+    vendors = [v for v in load(config) if only in (None, v.get("id"))]
+    if only and not vendors:
+        raise ValueError(f"render_vendors: no data/vendors/{only}.yaml")
     seen, totals = set(), dict.fromkeys(("plans", "models", "surfaces", "features", "harnesses",
                                          "commands", "examples", "shortcuts", "privacy", "changes"), 0)
     for v in vendors:
@@ -113,10 +123,11 @@ def verify(config) -> None:
 
 
 def _plans(v) -> str:
-    rows = ["| Plan | Who It Is For | What It Adds |", "| --- | --- | --- |"]
+    rows = [f"What each plan adds, from free upward. Prices change often, so they are not copied "
+            f"here: see {_link(v['company'] + ' pricing', v['pricing_url'])}.", "",
+            "| Plan | Who It Is For | What It Adds |", "| --- | --- | --- |"]
     rows += [f"| {_link(p['name'], p['source'])} | {p['for']} | {p['adds']} |" for p in v["plans"]]
-    return "\n".join(rows) + (f"\n\nPrices change often, so they are not copied here: see "
-                              f"{_link(v['company'] + ' pricing', v['pricing_url'])}.")
+    return "\n".join(rows)
 
 
 def _models(v) -> str:
@@ -188,14 +199,19 @@ def _commands(v) -> str:
         cmds = [c for c in v["commands"] if c["group"] == g["id"]]
         if not cmds:
             continue
-        out += [f"### {g['title']}", "", '<div class="hf-cmd-grid" markdown>', ""]
-        for c in cmds:
-            if c.get("example"):
-                out += [_figure(v, c, names[c["harness"]]), ""]
-        out += ["</div>", ""]
+        out += [f"### {g['title']}", ""]
+        figs = [c for c in cmds if c.get("example")]
+        if figs:
+            out += ['<div class="hf-cmd-grid" markdown>', ""]
+            out += [line for c in figs for line in (_figure(v, c, names[c["harness"]]), "")]
+            out += ["</div>", ""]
         plain = [c for c in cmds if not c.get("example")]
         if plain:
-            out += [f"- `{c['command']}`: {c['what']}" for c in plain] + [""]
+            # a grid in rows (DESIGN 4.2), three across where they fit; a class ending -grid
+            # is what layout_width reads as a grid and gives the full width
+            out += ['<div class="hf-cmd-more-grid">']
+            out += [f'<p><code>{esc(c["command"])}</code> {esc(c["what"])}</p>' for c in plain]
+            out += ["</div>", ""]
     lists = ", ".join(_link(f["title"], f["url"]) for f in v["full_lists"])
     out.append(f"{v['company']}'s own complete references: {lists}.")
     return "\n".join(out)
@@ -236,3 +252,13 @@ def render(src: str, markdown: str, config) -> str:
         return markdown
     markdown = markdown.replace("{{ vendor_checked }}", _long(v["checked"]))
     return MARKER_RE.sub(lambda m: RENDER[m.group(2)](v), markdown)
+
+
+if __name__ == "__main__":
+    # Check the company files without building the site (for whoever is writing one):
+    #   python scripts/render_vendors.py --check [id]
+    import sys
+    if sys.argv[1:2] != ["--check"]:
+        sys.exit("usage: python scripts/render_vendors.py --check [id]")
+    root = Path(__file__).resolve().parent.parent
+    verify({"docs_dir": str(root / "docs")}, sys.argv[2] if len(sys.argv) > 2 else None)

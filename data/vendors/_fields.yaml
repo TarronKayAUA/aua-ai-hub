@@ -1,0 +1,44 @@
+# Company pages (Tools & Prompts > By Company): one file per company in data/vendors/,
+# rendered into docs/tools/company/<page>.md
+# by scripts/render_vendors.py, called from the render_data hook. Owner-owned: started
+# 2026-10-09 at the owner's request ("in-depth ... a discussion of the harnesses and tools
+# as well as / commands", with "a small visual worked example" for the commands).
+#
+# Every company gets the same sections, in the same order, so none is favoured. Every
+# item carries `source`, the official page it was read from, and each company a
+# `checked` date: the day its facts were last read from those sources. Facts came from
+# a read-only research run on 2026-10-09 (archive "2026-10-09 Vendor pages research":
+# two researchers and a fact-checker per company), re-read where they changed text.
+#
+# Pages are named by company (anthropic.md, openai.md), never by product: on Windows,
+# whose file names ignore case, a page called claude.md IS a CLAUDE.md, the instruction
+# file Claude Code loads for any agent working in that folder (found 2026-10-09).
+#
+# Fields, per company:
+#   id, page        the key the page's markers use, and its file under docs/
+#   name, company   the product and the company, as they spell them
+#   checked         YYYY-MM-DD, when the facts below were last read
+#   pricing_url     the company's own pricing page (prices are linked, never copied)
+#   plans           name, for (who it is for), adds (what it adds, plain language)
+#   models          name, released, best_for, where (plans and apps), source
+#   surfaces        name, what, source (the apps and places you use it)
+#   features        name, what, plans, status (beta or available), source
+#   harnesses       the company's agents: id, name, what, runs (where it runs), plans,
+#                   acts (how it works), modes (name, what), instructions, skills,
+#                   hooks, subagents, connectors, sandbox, source
+#   commands        harness, command, what, group, example (situation, typed, shown
+#                   lines, note, why), source. `shown` is what the documentation describes
+#                   or shows the user seeing; it is drawn as an illustration, never a
+#                   screenshot, and the figure says so. Lines in square brackets describe
+#                   the screen rather than quote it; lines starting "option: " are the
+#                   choices of a menu, in the documentation's own words. `note` (optional)
+#                   is an explanation, drawn under the terminal, not inside it.
+#   command_groups  the order and titles of the command groups
+#   shortcuts       harness, keys, what, source
+#   symbols         harness, syntax, what, source (@ mentions, ! shell, keywords)
+#   full_lists      the company's own complete references
+#   privacy         title, url, covers (linked, never restated)
+#   changes         date, change, source (recent dated changes, newest first)
+#
+# Each company file holds one mapping with the fields above. Validate one file without
+# building the site: python scripts/render_vendors.py --check <id>

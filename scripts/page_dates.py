@@ -55,11 +55,13 @@ RENDER_SOURCES = {
     "glossary-az": [],   # built from the page's own entries
     "maintainer-profiles": ["mkdocs.yml"],   # extra.maintainer_profiles
     "explainer-video": ["data/explainer_videos.yaml"],
-    "vendor": ["data/vendors.yaml"],   # the company pages (render_vendors.py)
+    # the company pages: each dates from its own data/vendors/<id>.yaml (see _sources)
+    "vendor": [],
 }
 GENERATED_SOURCES = {re.compile(r"prompts/[\w-]+\.md"): ["data/prompts.yaml"]}
 
 _RENDER = re.compile(r"<!--\s*render:([\w-]+)")
+_VENDOR = re.compile(r"<!--\s*render:vendor:([\w-]+):")
 _TIMELY = re.compile(r"<!--\s*timely:([\w-]+)((?:[ \t]+[^\s>]+)*)[ \t]*-->")
 _SNIPPET = re.compile(r"^\s*--8<--\s+\"([^\"]+)\"", re.M)
 
@@ -138,6 +140,7 @@ def _sources(page) -> list[str] | None:
             raise ValueError(f"page_dates: docs/{f.src_uri} has a render:{name} marker "
                              f"with no entry in RENDER_SOURCES")
         sources += RENDER_SOURCES[name]
+    sources += sorted({f"data/vendors/{v}.yaml" for v in _VENDOR.findall(text)})
     sources += _SNIPPET.findall(text)
     return sources
 

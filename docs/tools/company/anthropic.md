@@ -32,7 +32,7 @@ An agent's harness is the program around the model that lets it act: it reads fi
 
 ## Commands, with Worked Examples
 
-In Claude Code you type a command starting with a slash, such as `/plan`, in the same box as your requests. These are the ones a faculty member or student is most likely to use, grouped by what they help with. Each example is a small, realistic situation, what you type, and what you then see, drawn from Anthropic's documentation.
+In Claude Code you type a command starting with a slash, such as `/plan`, in the same box as your requests. Every command a student, faculty member or staff member is likely to use has a worked example below, grouped by what it helps with: a small, realistic situation, what you type, and what you then see, drawn from Anthropic's documentation. The rest, mostly for software developers, are listed at the end.
 
 <!-- render:vendor:anthropic:commands -->
 
