@@ -6,7 +6,7 @@ comments: true
 
 # This Week
 
-<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">37</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">38</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">40</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">23</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">11</span></a></nav>
+<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">37</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">37</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">43</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">23</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">11</span></a></nav>
 
 Everything kept in the last seven days. Earlier weeks' highlights are in the [News Archive](archive/index.md).
 
@@ -25,7 +25,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">37</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">17</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">3</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">37</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">17</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">2</span></button></div>
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
@@ -36,9 +36,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42852792?fc=20260609215449&amp;ff=20261009165643&amp;v=2.20.1">Artificial Intelligence Training for Informatics Students and Pharmacy Residents</a>
+    <p class="news-card-summary">A paper describes artificial intelligence training for informatics students and pharmacy residents, relevant to curriculum design for health professions learners.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42852079?fc=20260609215449&amp;ff=20261009165643&amp;v=2.20.1">A Randomized Controlled Pilot Study Comparing ChatGPT to Live Coaching Deliberate Practice to Teach Difficult Conversations</a>
+    <p class="news-card-summary">A randomized pilot study found that anesthesiology trainees improved simulated communication performance after didactic teaching plus deliberate practice, with ChatGPT performing comparably to live standardized-patient coaching for difficult conversations.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03376-w">Integrating generative artificial intelligence facilitates faculty interaction network and role transition in a biostatistics curriculum</a>
     <p class="news-card-summary">A study in npj Digital Medicine examines how integrating generative artificial intelligence into a biostatistics curriculum changed faculty interaction networks and teaching roles.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03350-6">Human-validated LLM-assisted assessment of a large-scale online precision medicine course in diabetes</a>
+    <p class="news-card-summary">An npj Digital Medicine study validates large language model assisted assessment, checked by human reviewers, for a large online precision medicine course in diabetes.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -76,33 +97,33 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">A systematic review and meta-analysis compares real-time automated coaching systems with human expert instruction for surgical skills training in simulated tasks.</p>
   </div>
 </div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42846642?fc=20260609215449&amp;ff=20261009021314&amp;v=2.20.1">Human-first, AI-assisted Peer Review: A Proposed Workflow for Community Medicine and Public Health Journals</a>
-    <p class="news-card-summary">The article proposes a human-first, AI-assisted workflow for peer review in community medicine and public health journals, aiming to ease reviewer workload while keeping human judgment central.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/10/08/moral-lessons-demoralized-opinion">Moral Lessons From the Demoralized</a>
-    <p class="news-card-summary">An Inside Higher Ed essay asks what standards of evidence should apply if faculty alone judge whether students cheated with AI.</p>
-  </div>
-  <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-10/GettyImages-1344027558.jpg?itok=hD3t5oGZ" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03374-y">Governing cognitive labor delegated to AI in scholarly writing and medical education</a>
-    <p class="news-card-summary">A commentary in npj Digital Medicine discusses how to govern the cognitive work that scholars and trainees delegate to artificial intelligence in scholarly writing and medical education.</p>
-  </div>
-</div>
 </div>
 
 ??? abstract "Show the other 27 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
+        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42846642?fc=20260609215449&amp;ff=20261009021314&amp;v=2.20.1">Human-first, AI-assisted Peer Review: A Proposed Workflow for Community Medicine and Public Health Journals</a>
+        <p class="news-card-summary">The article proposes a human-first, AI-assisted workflow for peer review in community medicine and public health journals, aiming to ease reviewer workload while keeping human judgment central.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="assessment-and-feedback">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Inside Higher Ed AI</span><span class="news-card-date">October 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.insidehighered.com/opinion/views/2026/10/08/moral-lessons-demoralized-opinion">Moral Lessons From the Demoralized</a>
+        <p class="news-card-summary">An Inside Higher Ed essay asks what standards of evidence should apply if faculty alone judge whether students cheated with AI.</p>
+      </div>
+      <img class="news-card-thumb" src="https://www.insidehighered.com/sites/default/files/styles/large/public/2026-10/GettyImages-1344027558.jpg?itok=hD3t5oGZ" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="teaching-and-curriculum">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03374-y">Governing cognitive labor delegated to AI in scholarly writing and medical education</a>
+        <p class="news-card-summary">A commentary in npj Digital Medicine discusses how to govern the cognitive work that scholars and trainees delegate to artificial intelligence in scholarly writing and medical education.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="teaching-and-curriculum">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 7, 2026</span></div>
@@ -267,27 +288,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     </div>
     <div class="news-card" data-topic="simulation-and-skills">
       <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 2, 2026</span></div>
-        <a class="news-card-title" href="https://ai.jmir.org/2026/1/e94109">Machine Learning for Human-Autonomy Teaming in Surgical Skill Assessment: Scoping Review</a>
-        <p class="news-card-summary">A scoping review maps machine learning methods for assessing surgical skill, aiming to support adaptive, real-time guidance in partnerships between surgeons and intelligent systems.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="teaching-and-curriculum">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42824845?fc=20260609215449&amp;ff=20261002164649&amp;v=2.20.1">Artificial Intelligence in Orthopaedic Education Across the Career Continuum: Moving from Benchmark Performance to Continuing Professional Development</a>
-        <p class="news-card-summary">A review of how artificial intelligence is entering orthopaedic education, noting most evidence comes from trainee settings and arguing for continuing professional development that supports safe adoption by practising surgeons.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="attitudes-and-adoption">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 2, 2026</span></div>
-        <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42824394?fc=20260609215449&amp;ff=20261002164649&amp;v=2.20.1">A Pilot Study of Junior Medical Officers in Sydney, Australia: Knowledge and Attitudes Towards Artificial Intelligence</a>
-        <p class="news-card-summary">A pilot survey of junior medical officers in Northern Sydney examines their knowledge of and attitudes toward artificial intelligence in healthcare.</p>
-      </div>
-    </div>
-    <div class="news-card" data-topic="simulation-and-skills">
-      <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 2, 2026</span></div>
         <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42826247?fc=20260609215449&amp;ff=20261003012207&amp;v=2.20.1">Voice-Enabled Virtual Patients for Interactive Training in Standardized Clinical Assessment: Mixed Methods Pilot Study</a>
         <p class="news-card-summary">A mixed methods pilot study tested voice-enabled virtual patients powered by a large language model for training clinicians in standardized clinical assessment, reporting clinically relevant practice scenarios with reasonable fidelity.</p>
@@ -307,7 +307,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">38</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">18</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">37</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">18</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
 <div class="news-list">
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
@@ -382,7 +382,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 </div>
 
-??? abstract "Show the other 28 items"
+??? abstract "Show the other 27 items"
 
     <div class="news-list news-list--more">
     <div class="news-card" data-topic="safety-and-evaluation">
@@ -580,13 +580,6 @@ Items are selected several times a day by an automated pipeline and the summarie
         <p class="news-card-summary">A scoping review in npj Digital Medicine examines how Shapley value explanations a method for attributing a model&#x27;s prediction to its input features are used in clinical prediction models and offers a practical guide.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-documentation">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 2, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03320-y">Clinician-centered evaluation of large language model-generated discharge summaries for longer hospitalizations</a>
-        <p class="news-card-summary">A peer-reviewed study has clinicians evaluate discharge summaries generated by large language models for longer hospital stays.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -601,8 +594,32 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">40</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">12</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">43</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">16</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">12</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
 <div class="news-list">
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software">AI coding agents generate more code, but not more software</a>
+    <p class="news-card-summary">A study reports that AI coding agents increase the amount of code produced but not the amount of finished software, because human code review becomes the bottleneck.</p>
+  </div>
+  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/GettyImages-2264559974-500x500-1791573923.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="research-and-methods">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos">‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop</a>
+    <p class="news-card-summary">The Verge reports that mathematicians are struggling to assess a large batch of mathematical results OpenAI released this week, which they expect will take years to verify and understand.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/STKS537_AI_MATH_5.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1008930/nikon-small-world-in-motion-winner-ai">Nikon microscopic video competition winner disqualified for using generative AI</a>
+    <p class="news-card-summary">Nikon disqualified the original winner of its Small World in Motion video contest for not complying with rules on generative AI, and a new winner was named.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/nikon-small-world-in-motion-ning-xu.png?quality=90&amp;strip=all&amp;crop=0%2C3.1340895869692%2C100%2C93.731820826062&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 9, 2026</span></div>
@@ -659,34 +676,34 @@ Items are selected several times a day by an automated pipeline and the summarie
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Gemini.max-2000x2000-1.png?quality=90&amp;strip=all&amp;crop=0%2C3.4845840605003%2C100%2C93.030831878999&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free">Can you trust Meta’s Muse or OpenAI’s Dots to run your life?</a>
-    <p class="news-card-summary">The Verge&#x27;s Decoder discusses a new wave of consumer-friendly AI agents, including Meta&#x27;s Muse and OpenAI&#x27;s Dots, and whether people can trust them with daily tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DCD_AI_Agents.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1x0n4pt/last_week_some_of_south_koreas_biggest_banks_were">Last week some of South Korea&#x27;s biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)</a>
-    <p class="news-card-summary">A CrowdStrike report indicates a cyberattack on major South Korean banks may have been carried out by a single person using an open-source AI penetration testing toolset.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/8qx5q9h6w7uh1.jpg?width=140&amp;height=66&amp;auto=webp&amp;s=06f669b0c96a66f9ccdb33fe1d266bb697c3894a" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://arxiv.org/abs/2610.08840">Beyond the Sycophancy Score: How Task, Model, and Pressure Shape LLM Yielding</a>
-    <p class="news-card-summary">A large study of over 100,000 graded replies examines when language models abandon correct answers under user pushback sycophancy , and how task, model, and pressure affect it.</p>
-  </div>
-</div>
 </div>
 
-??? abstract "Show the other 30 items"
+??? abstract "Show the other 33 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free">Can you trust Meta’s Muse or OpenAI’s Dots to run your life?</a>
+        <p class="news-card-summary">The Verge&#x27;s Decoder discusses a new wave of consumer-friendly AI agents, including Meta&#x27;s Muse and OpenAI&#x27;s Dots, and whether people can trust them with daily tasks.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DCD_AI_Agents.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1x0n4pt/last_week_some_of_south_koreas_biggest_banks_were">Last week some of South Korea&#x27;s biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)</a>
+        <p class="news-card-summary">A CrowdStrike report indicates a cyberattack on major South Korean banks may have been carried out by a single person using an open-source AI penetration testing toolset.</p>
+      </div>
+      <img class="news-card-thumb" src="https://preview.redd.it/8qx5q9h6w7uh1.jpg?width=140&amp;height=66&amp;auto=webp&amp;s=06f669b0c96a66f9ccdb33fe1d266bb697c3894a" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">October 8, 2026</span></div>
+        <a class="news-card-title" href="https://arxiv.org/abs/2610.08840">Beyond the Sycophancy Score: How Task, Model, and Pressure Shape LLM Yielding</a>
+        <p class="news-card-summary">A large study of over 100,000 graded replies examines when language models abandon correct answers under user pushback sycophancy , and how task, model, and pressure affect it.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 8, 2026</span></div>

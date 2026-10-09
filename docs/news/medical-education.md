@@ -21,7 +21,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -33,9 +33,30 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42852792?fc=20260609215449&amp;ff=20261009165643&amp;v=2.20.1">Artificial Intelligence Training for Informatics Students and Pharmacy Residents</a>
+    <p class="news-card-summary">A paper describes artificial intelligence training for informatics students and pharmacy residents, relevant to curriculum design for health professions learners.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42852079?fc=20260609215449&amp;ff=20261009165643&amp;v=2.20.1">A Randomized Controlled Pilot Study Comparing ChatGPT to Live Coaching Deliberate Practice to Teach Difficult Conversations</a>
+    <p class="news-card-summary">A randomized pilot study found that anesthesiology trainees improved simulated communication performance after didactic teaching plus deliberate practice, with ChatGPT performing comparably to live standardized-patient coaching for difficult conversations.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03376-w">Integrating generative artificial intelligence facilitates faculty interaction network and role transition in a biostatistics curriculum</a>
     <p class="news-card-summary">A study in npj Digital Medicine examines how integrating generative artificial intelligence into a biostatistics curriculum changed faculty interaction networks and teaching roles.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="assessment-and-feedback">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03350-6">Human-validated LLM-assisted assessment of a large-scale online precision medicine course in diabetes</a>
+    <p class="news-card-summary">An npj Digital Medicine study validates large language model assisted assessment, checked by human reviewers, for a large online precision medicine course in diabetes.</p>
   </div>
 </div>
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -107,27 +128,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 7, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42840383?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1">Generative Artificial Intelligence-Driven Audio Learning Materials for Clinician-Educators: An Exploratory Feasibility Study of Radio- and Narrative-Style Podcasts Using NotebookLM</a>
     <p class="news-card-summary">An exploratory study used Google&#x27;s NotebookLM to generate radio- and narrative-style podcasts for clinician-educators, finding it feasible but needing human curation and learner evaluation for accuracy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42839253?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1">How does AI-generated assessment compare to expert assessment in simulation-based experiences: Analyzing AI-human interrater reliability</a>
-    <p class="news-card-summary">A study compared AI-generated scoring and feedback with expert assessment in simulation-based experiences, finding agreement required iterative prompt refinement and worked better for content-specific than context-dependent rubric items.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42844067?fc=20260609215449&amp;ff=20261008020933&amp;v=2.20.1">From Idea to Publication: A Step-by-Step Guide to Original Research in Radiology with AI-Integrated Workflow</a>
-    <p class="news-card-summary">A guide for radiology trainees describes an AI-integrated workflow for conducting and writing original research, arguing scientific writing is teachable and AI tools should be taught with transparency.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42841178?fc=20260609215449&amp;ff=20261008020933&amp;v=2.20.1">Hong Kong Academy of Medicine position statement on artificial intelligence in postgraduate medical education</a>
-    <p class="news-card-summary">The Hong Kong Academy of Medicine issued a position statement on how artificial intelligence should be used in postgraduate medical education.</p>
   </div>
 </div>
 </div>
