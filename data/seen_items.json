@@ -1,255 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.technologyreview.com/2026/08/10/1141384/ai-agents-for-science",
-   "title_hash": "ce4d1c771a6b2b24af3507025a761629",
-   "first_seen": "2026-08-10T09:49:29.946133+00:00",
-   "kept": true,
-   "title": "AI for science needs reasoning, not just data",
-   "source": "MIT Technology Review AI",
-   "published": "2026-08-10T09:00:00+00:00",
-   "summary": "MIT Technology Review examines how AI systems for scientific discovery require reasoning capabilities beyond pattern matching from data alone.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/08/ai-scientists2.jpg?resize=1200,600",
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://www.technologyreview.com/2026/08/10/1141511/these-startups-are-chasing-the-next-big-thing-in-llms",
-   "title_hash": "3bd82ed6b5e532a15074959825e74d75",
-   "first_seen": "2026-08-10T09:49:29.946133+00:00",
-   "kept": false,
-   "reason": "listicle and vendor marketing; historical recap with startup coverage rather than substantive analysis of capability or deployment"
-  },
-  {
-   "url": "https://medicalfuturist.com/best-examples-of-digital-health-for-patients-with-intellectual-disability",
-   "title_hash": "2ac468f7dcd48bf42bbbcd7cab6041a0",
-   "first_seen": "2026-08-10T09:49:29.946133+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; digital health for intellectual disability is a clinical application but not related to artificial intelligence"
-  },
-  {
-   "url": "https://medicalfuturist.com/the-state-of-exoskeletons-in-healthcare",
-   "title_hash": "ee58c4b9f157bf114a24e486ab080c18",
-   "first_seen": "2026-08-10T09:49:29.946133+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; exoskeletons are not AI systems"
-  },
-  {
-   "url": "https://claude.com/blog/auto-mode-default-in-claude-code",
-   "title_hash": "0b2809f694b3377d89cd8d52a2e66e6c",
-   "first_seen": "2026-08-10T09:49:29.946133+00:00",
-   "kept": false,
-   "reason": "minor product update; auto mode default in Claude Code is a feature change, not a capability shift or release of significance to medical educators"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04550-z",
-   "title_hash": "f154e38fab3e236b42ea886db39a9501",
-   "first_seen": "2026-08-10T09:49:29.946133+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; clinical research on diabetes prevention without AI relevance"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vk0o98/the_gemma_team_will_host_a_special_event_on",
-   "title_hash": "6fb45060c125ec5a5af833f53332ba77",
-   "first_seen": "2026-08-10T09:49:29.946133+00:00",
-   "kept": false,
-   "reason": "rumor and speculation; the candidate is speculation about a possible Gemma release, not reporting of an actual announcement"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=X8K1bW-XfL8",
-   "title_hash": "f2976a3ad2c25010ee86b461a4800eb2",
-   "first_seen": "2026-08-10T09:49:29.946133+00:00",
-   "kept": false,
-   "reason": "speculation about unreleased models with no confirmed events or substantive content"
-  },
-  {
-   "url": "https://arstechnica.com/science/2026/08/peer-review-is-overwhelmed-can-it-survive-in-the-ai-era",
-   "title_hash": "0e1866d8cb0526ec5537d8d1ec564d3b",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": true,
-   "title": "Peer review is overwhelmed, can it survive in the AI era?",
-   "source": "Ars Technica AI",
-   "published": "2026-08-10T11:00:47+00:00",
-   "summary": "Commentary on peer review capacity strain as AI-assisted research submissions surge, raising questions about sustainability of volunteer review systems.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/peer-review-difficulties-500x500.jpg",
-   "topic": "Industry and policy"
-  },
-  {
-   "url": "https://www.theverge.com/transportation/976748/ford-ai-assistant-mobile-app",
-   "title_hash": "9f57f63192f30568e39dcfd604c48bd3",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkgsum/introducing_muse_glimmer_an_openweight_model",
-   "title_hash": "72d3add214ab6bed82a49fbe2e1cba65",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": true,
-   "title": "Introducing Muse Glimmer: an open-weight model optimized for always-on local agent workflows",
-   "source": "r/LocalLLaMA weekly top",
-   "published": "2026-08-10T10:14:15+00:00",
-   "summary": "Meta releases Muse Glimmer, a 30B open-weight multimodal model designed for local agent workflows under Apache 2.0 license.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://preview.redd.it/d61pdytdviih1.jpg?width=140&height=140&crop=1:1,smart&auto=webp&s=a9bd06548c930452218a339ca26a79de14dd13cd",
-   "topic": "New models"
-  },
-  {
-   "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
-   "title_hash": "3058a080f7c005fb3014b5356ad87846",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "duplicate of kept candidate 1"
-  },
-  {
-   "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
-   "title_hash": "07eee18360c5eccb5d5cd49f67a4189b",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "insufficient summary to evaluate"
-  },
-  {
-   "url": "https://www.sensible-med.com/p/atrial-fibrillation-and-symptoms",
-   "title_hash": "48b787bdb57c0be6e0790c2c2a0705f3",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42572759?fc=20260609215449&ff=20260810094622&v=2.20.1",
-   "title_hash": "4cfc9bc438333400a02157f999210101",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": true,
-   "title": "Accuracy, Reliability, and Bloom's Taxonomy Performance of Seven Large Language Models on Microbiology Questions",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-10T10:00:00+00:00",
-   "summary": "Study evaluates seven large language models on microbiology multiple-choice questions, finding marked differences in reliability alongside accuracy.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42572664?fc=20260609215449&ff=20260810094622&v=2.20.1",
-   "title_hash": "5a236c3159194e94a59079170cbd19ca",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": true,
-   "title": "Comparison of Large Language Model Performance on the United Kingdom Neurology Specialty Certificate Examination",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-10T10:00:00+00:00",
-   "summary": "Study compares performance of ChatGPT, Claude, and Gemini on UK neurology specialty certification examination questions.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03107-1",
-   "title_hash": "8af1ed1a8fb7fff791d8b97c45538aae",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": true,
-   "title": "Sequential question answering AI for hierarchical gastric pathology diagnosis",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-10T00:00:00+00:00",
-   "summary": "Study demonstrates sequential question-answering AI approach for hierarchical classification in gastric pathology diagnosis.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03115-1",
-   "title_hash": "3be0bc8683a4317cd68daa3ec83f5fa2",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03029-y",
-   "title_hash": "f49b0e9fcccbaab91b21b05a8f3b303c",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": true,
-   "title": "Surgical scene understanding and the structural validation gap in an industry-led AI ecosystem",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-10T00:00:00+00:00",
-   "summary": "Analysis of validation gaps between academic research and industry AI systems for surgical scene understanding.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41746-026-03029-y/MediaObjects/41746_2026_3029_Fig1_HTML.png",
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03028-z",
-   "title_hash": "6f928d0c3b35d406706bce05afbedd7b",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "duplicate of candidate 11"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04620-2",
-   "title_hash": "94b5dbccda2686e405f07594964f2d95",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04579-0",
-   "title_hash": "08e44e84ed920049d5afedb491548285",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04574-5",
-   "title_hash": "eac1967398636d980a619edf9999dbd8",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": true,
-   "title": "Lessons from deploying the ChatEHR system at Stanford Medicine",
-   "source": "Nature Medicine",
-   "published": "2026-08-10T00:00:00+00:00",
-   "summary": "Stanford Medicine reports that clinical deployment of ChatEHR requires new monitoring methods beyond benchmark evaluation to assess real-world clinician interactions.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04574-5/MediaObjects/41591_2026_4574_Fig1_HTML.png",
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04583-4",
-   "title_hash": "cc36ce61461f295fd5f55de8d12d8357",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04578-1",
-   "title_hash": "ece2e0459b058f0ac6439bbcdf733b71",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://huggingface.co/blog/muse-glimmer",
-   "title_hash": "c508de77957ab4d423573677fa75494d",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "duplicate of kept candidate 1"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vjb15v/no_wonder_qwen_and_gemma_are_so_different",
-   "title_hash": "af3d9a6cfda16cc75e4f8e4100913d6b",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "minor technical analysis of tokenization differences"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=qYNs80FKIVc",
-   "title_hash": "e194a20d162c084cc0541832706fe4fc",
-   "first_seen": "2026-08-10T13:46:22.699320+00:00",
-   "kept": false,
-   "reason": "marketing from the product's own company"
-  },
-  {
    "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
    "title_hash": "03202fad252982f1fd52e3d27ac22205",
    "first_seen": "2026-08-10T17:10:29.522434+00:00",
@@ -34234,6 +33985,246 @@
    "source": "The AI Daily Brief",
    "published": "2026-10-09T00:00:39+00:00",
    "summary": "NLW reviews recent AI product announcements, including ChatGPT's new interface, Claude Haiku 5.5, and GrokBot's use of rival models, and discusses how competition is shifting toward the experience built around models.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://www.theverge.com/policy/1008677/trump-super-intelligence-ai-rebranding",
+   "title_hash": "9f885015a77c85388e41d414adf52e31",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "political commentary without instructive content"
+  },
+  {
+   "url": "https://www.theverge.com/tech/1008254/instinct-agent-ai-hands-on-muse-dots",
+   "title_hash": "7b604dcb412aef6db0ebbdf606ae9e89",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "startup product gossip"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice",
+   "title_hash": "a334f9d7095fd49b805e2292b0e61f09",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "personal blog post about a minor tool workflow"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42851104?fc=20260609215449&ff=20261009111952&v=2.20.1",
+   "title_hash": "0e0279d5b3d2dbd9a8973c188f92c292",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "narrow regional viewpoint with little new information"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42850931?fc=20260609215449&ff=20261009111952&v=2.20.1",
+   "title_hash": "c88ebf8874deb8d8bbfc18aca32a675b",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "Performance and concordance of contemporary large language models on Royal Australasian College of Physicians examination questions: an exploratory analysis",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-09T10:00:00+00:00",
+   "summary": "Six publicly available large language models were tested on Royal Australasian College of Physicians adult medicine exam questions, scoring 93% on a 30-question set with weaker results on image-based questions.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42850851?fc=20260609215449&ff=20261009111952&v=2.20.1",
+   "title_hash": "0e5c0678b2b91db6586ebcf5e78df9b5",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "low-significance article on digital tutorship, no new findings"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42850632?fc=20260609215449&ff=20261009111952&v=2.20.1",
+   "title_hash": "39176172858b0988c02a6088c834063b",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "narrow single-center radiology report study"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers",
+   "title_hash": "34e0231d8c6697209c90e73752bcc0ab",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "OpenAI doubles down on decision to fire three AI safety researchers",
+   "source": "The Verge AI",
+   "published": "2026-10-09T09:48:26+00:00",
+   "summary": "OpenAI said it is standing by its dismissal of three safety researchers, stating an investigation found they violated policies on handling sensitive information.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/a-reflection-on-glp-1s-in-the-clinic",
+   "title_hash": "d040117f58a9ab269b746e492e3d7126",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "not about AI, off-topic for this audience"
+  },
+  {
+   "url": "https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no",
+   "title_hash": "8a378b2dd50d71072f9697fe95205d44",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "We’re putting too much faith in AI’s ability to say no",
+   "source": "MIT Technology Review AI",
+   "published": "2026-10-09T09:00:00+00:00",
+   "summary": "MIT Technology Review argues that society places too much confidence in the ability of AI systems to refuse requests, examining the limits of machine refusal as a safety approach.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://wp.technologyreview.com/wp-content/uploads/2026/10/0924OP.jpg?resize=1200,600",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.statnews.com/2026/10/09/betsy-pleasants-stat-wunderkind-abortion-access-reddit-nlp",
+   "title_hash": "2340ec525a45520fb79db1d2c9408203",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "profile piece on abortion access research, marginal AI relevance"
+  },
+  {
+   "url": "https://www.insidehighered.com/opinion/views/2026/10/09/ai-invasion-has-come-mathematics-opinion",
+   "title_hash": "69ecab9f277df97d847cc6c2a977d8ef",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "opinion on mathematics, not relevant to medical audience"
+  },
+  {
+   "url": "https://lwn.net/Articles/1095811",
+   "title_hash": "a14993d62b1dd24a8e8033a16d5625e0",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "C language forum thread, off-topic"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03387-7",
+   "title_hash": "fcb937b0488e91a6e7ac7074c0ef5a6c",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "narrow domain prediction model"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03376-w",
+   "title_hash": "806b5a4fb2f633ded052d3e8f49affe9",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "Integrating generative artificial intelligence facilitates faculty interaction network and role transition in a biostatistics curriculum",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-09T00:00:00+00:00",
+   "summary": "A study in npj Digital Medicine examines how integrating generative artificial intelligence into a biostatistics curriculum changed faculty interaction networks and teaching roles.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03325-7",
+   "title_hash": "aa99239af0b4b012904916c5b2dc268a",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "The complexity paradox of generalist AI agents in medicine: exploring GPT-5 for real-world multimodal medical diagnosis",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-09T00:00:00+00:00",
+   "summary": "An npj Digital Medicine study evaluates GPT-5 as a generalist AI agent for real-world multimodal medical diagnosis and examines how task complexity affects its performance.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Clinical decision support"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03141-z",
+   "title_hash": "7e36e0db68ec0358bcd41070d01b8e2c",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "narrow domain application"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04736-5",
+   "title_hash": "4a7c091434021c58d909562c299e3cff",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "addendum with no AI relevance"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41591-026-04691-1",
+   "title_hash": "999b16a8d4a0d12e4a524e2f204ed80f",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "AI-assisted scoping review of code sharing in clinical prediction model research",
+   "source": "Nature Medicine",
+   "published": "2026-10-09T00:00:00+00:00",
+   "summary": "A Nature Medicine analysis of open-access literature finds that code sharing in clinical prediction model research remains limited, with wide variation in practices and documentation quality.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=ATBnss54_t4",
+   "title_hash": "9987af5e67f7351950c288440bd159c9",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "HUGE Gemini 4 Argon UPDATE, Fable 5.5 LEAKS, GPT-6.1 Ultrafast, Claude Motion, & Step 5! AI NEWS",
+   "source": "WorldofAI",
+   "published": "2026-10-09T06:26:46+00:00",
+   "summary": "An AI news roundup covering reported updates to Gemini, GPT, Claude, and other models, giving viewers a quick overview of recent releases and developments, with some unconfirmed items mixed in.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i2.ytimg.com/vi/ATBnss54_t4/hqdefault.jpg",
+   "display_title": "Roundup of recent AI model news including Gemini, GPT, and Claude updates"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=rxpV3QLV-pg",
+   "title_hash": "ab5f958503e0092a8054bde4c516198e",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "OpenAI’s “Alien Math” Is Freaking People Out",
+   "source": "Wes Roth",
+   "published": "2026-10-09T04:28:24+00:00",
+   "summary": "Covers OpenAI's release of hundreds of mathematical results, the reaction from mathematicians including a boycott call, and Scott Aaronson's commentary on what AI-generated mathematics means for the field.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i3.ytimg.com/vi/rxpV3QLV-pg/hqdefault.jpg",
+   "display_title": "OpenAI's mathematical results and the mathematicians' reaction"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=MUHjyljBPHI",
+   "title_hash": "2729dc05c752d0e2113b2f9e15d0151c",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "marketing from the product's own company (customer story)"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=RQfg-zo4R-g",
+   "title_hash": "60f38be8eb7f94f9eb0fbe8fb3e2832e",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": false,
+   "reason": "product demo from the product's own company, aimed at software engineering"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=IO6Bhs2iNfk",
+   "title_hash": "b6a807ba5c691c105a4de1a0124c995d",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "OpenAI's always-on agents, 700+ math manuscripts & HackerRank's AI interviewer",
+   "source": "IBM Technology",
+   "published": "2026-10-09T10:00:05+00:00",
+   "summary": "A panel discussion covering OpenAI's always-on agents, a batch of more than 700 AI-generated math manuscripts, and an AI interviewer for hiring, with commentary from IBM experts.",
+   "category": "videos",
+   "score": 3.0,
+   "thumbnail": "https://i2.ytimg.com/vi/IO6Bhs2iNfk/hqdefault.jpg",
+   "display_title": "Panel discussion on OpenAI always-on agents, AI-generated math manuscripts, and AI"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Most-Important-Trends-in-New-AI-Products-e3q6nv0",
+   "title_hash": "73e017f516aec2d3b7c22bd8a5205d04",
+   "first_seen": "2026-10-09T15:19:52.110885+00:00",
+   "kept": true,
+   "title": "The Most Important Trends in New AI Products",
+   "source": "The AI Daily Brief",
+   "published": "2026-10-09T00:00:39+00:00",
+   "summary": "NLW reviews recent AI product announcements, including a new ChatGPT interface, Claude Haiku 5.5, and GrokBot's use of rival models, and discusses how competition is shifting toward interfaces, cost, and choice.",
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"

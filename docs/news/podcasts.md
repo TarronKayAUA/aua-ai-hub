@@ -17,6 +17,12 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">The AI Daily Brief, October 9, 2026</span>
   <span class="video-card-desc">NLW reviews recent AI product announcements, including ChatGPT&#x27;s new interface, Claude Haiku 5.5, and GrokBot&#x27;s use of rival models, and discusses how competition is shifting toward the experience built around models.</span>
 </a>
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Most-Important-Trends-in-New-AI-Products-e3q6nv0" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Most Important Trends in New AI Products" loading="lazy">
+  <span class="video-card-title">The Most Important Trends in New AI Products</span>
+  <span class="video-card-meta">The AI Daily Brief, October 9, 2026</span>
+  <span class="video-card-desc">NLW reviews recent AI product announcements, including a new ChatGPT interface, Claude Haiku 5.5, and GrokBot&#x27;s use of rival models, and discusses how competition is shifting toward interfaces, cost, and choice.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/the-ai-learning-paradox-better-results-less-learning" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: The AI Learning Paradox: Better Results, Less Learning?" loading="lazy">
   <span class="video-card-title">The AI Learning Paradox: Better Results, Less Learning?</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">Building the Foundation for the Agentic AI Era</span>
   <span class="video-card-meta">Practical AI, August 28, 2026</span>
   <span class="video-card-desc">VP of the Agentic AI Foundation discusses open standards and projects for building interoperable AI agent systems, including Model Context Protocol and agent-to-agent communication frameworks.</span>
-</a>
-<a class="video-card" href="https://aipodcast.education/ai-in-education-who-gets-to-decide" target="_blank" rel="noopener">
-  <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: AI in Education: Who Gets to Decide?" loading="lazy">
-  <span class="video-card-title">AI in Education: Who Gets to Decide?</span>
-  <span class="video-card-meta">AI in Education Podcast, August 27, 2026</span>
-  <span class="video-card-desc">Discussion of how different stakeholders, governments, tech companies, parents, universities, and regulators, make decisions about AI deployment in education.</span>
 </a>
 </div>

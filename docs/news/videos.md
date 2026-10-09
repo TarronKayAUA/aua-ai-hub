@@ -13,6 +13,24 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=IO6Bhs2iNfk" target="_blank" rel="noopener" title="OpenAI&#x27;s always-on agents, 700+ math manuscripts &amp; HackerRank&#x27;s AI interviewer">
+  <img src="https://i2.ytimg.com/vi/IO6Bhs2iNfk/hqdefault.jpg" alt="Video: Panel discussion on OpenAI always-on agents, AI-generated math manuscripts, and AI" loading="lazy">
+  <span class="video-card-title">Panel discussion on OpenAI always-on agents, AI-generated math manuscripts, and AI</span>
+  <span class="video-card-meta">IBM Technology, October 9, 2026</span>
+  <span class="video-card-desc">A panel discussion covering OpenAI&#x27;s always-on agents, a batch of more than 700 AI-generated math manuscripts, and an AI interviewer for hiring, with commentary from IBM experts.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=ATBnss54_t4" target="_blank" rel="noopener" title="HUGE Gemini 4 Argon UPDATE, Fable 5.5 LEAKS, GPT-6.1 Ultrafast, Claude Motion, &amp; Step 5! AI NEWS">
+  <img src="https://i2.ytimg.com/vi/ATBnss54_t4/hqdefault.jpg" alt="Video: Roundup of recent AI model news including Gemini, GPT, and Claude updates" loading="lazy">
+  <span class="video-card-title">Roundup of recent AI model news including Gemini, GPT, and Claude updates</span>
+  <span class="video-card-meta">WorldofAI, October 9, 2026</span>
+  <span class="video-card-desc">An AI news roundup covering reported updates to Gemini, GPT, Claude, and other models, giving viewers a quick overview of recent releases and developments, with some unconfirmed items mixed in.</span>
+</a>
+<a class="video-card" href="https://www.youtube.com/watch?v=rxpV3QLV-pg" target="_blank" rel="noopener" title="OpenAI’s “Alien Math” Is Freaking People Out">
+  <img src="https://i3.ytimg.com/vi/rxpV3QLV-pg/hqdefault.jpg" alt="Video: OpenAI&#x27;s mathematical results and the mathematicians&#x27; reaction" loading="lazy">
+  <span class="video-card-title">OpenAI&#x27;s mathematical results and the mathematicians&#x27; reaction</span>
+  <span class="video-card-meta">Wes Roth, October 9, 2026</span>
+  <span class="video-card-desc">Covers OpenAI&#x27;s release of hundreds of mathematical results, the reaction from mathematicians including a boycott call, and Scott Aaronson&#x27;s commentary on what AI-generated mathematics means for the field.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=wZFseoVpSTM" target="_blank" rel="noopener" title="Hiding in plain sight: Fake GPTs, SMTP malware and NetScaler zero-days">
   <img src="https://i4.ytimg.com/vi/wZFseoVpSTM/hqdefault.jpg" alt="Video: Security podcast on fake GPT ads, SMTP malware and NetScaler zero-days" loading="lazy">
   <span class="video-card-title">Security podcast on fake GPT ads, SMTP malware and NetScaler zero-days</span>
@@ -114,24 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Explainer on how AI is changing music creation and creativity</span>
   <span class="video-card-meta">IBM Technology, October 4, 2026</span>
   <span class="video-card-desc">IBM&#x27;s Jeff Crume discusses whether AI generates original music or recombines existing work, giving viewers a conceptual explanation of how AI music tools work and the creativity questions they raise.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=lHmZoRHMZyM" target="_blank" rel="noopener" title="Gemini 4, GPT 6.1, Dots, Claude Sonnet 5.5, Ideogram 4.5, Flux 3: AI NEWS">
-  <img src="https://i1.ytimg.com/vi/lHmZoRHMZyM/hqdefault.jpg" alt="Video: Roundup of recent AI model releases including Gemini 4, GPT 6.1 and Claude Sonnet 5.5" loading="lazy">
-  <span class="video-card-title">Roundup of recent AI model releases including Gemini 4, GPT 6.1 and Claude Sonnet 5.5</span>
-  <span class="video-card-meta">AI Search, October 4, 2026</span>
-  <span class="video-card-desc">A news roundup covering several reported model and tool releases, including Gemini 4, GPT 6.1, Claude Sonnet 5.5, Flux 3 and ElevenLabs V4, useful for a quick overview of recent developments.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=N3REfH4N9Dg" target="_blank" rel="noopener" title="HUGE Fable 5.5 LEAK + First Preview, Gemini 4 Argon, Claude Code Update, FREE Model, &amp; More! AI NEWS">
-  <img src="https://i3.ytimg.com/vi/N3REfH4N9Dg/hqdefault.jpg" alt="Video: AI news roundup: Fable 5.5 preview, Gemini 4 Argon, Claude Code update" loading="lazy">
-  <span class="video-card-title">AI news roundup: Fable 5.5 preview, Gemini 4 Argon, Claude Code update</span>
-  <span class="video-card-meta">WorldofAI, October 3, 2026</span>
-  <span class="video-card-desc">A news roundup covering several AI developments, including a reported preview of Fable 5.5, Gemini 4 Argon, a Claude Code update, and a free model, so viewers get a quick overview of recent releases.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=oBdLhD5nPYw" target="_blank" rel="noopener" title="OpenAI cancels Astra release, Sonnet 5.5 &amp; what Meta Muse means for work">
-  <img src="https://i4.ytimg.com/vi/oBdLhD5nPYw/hqdefault.jpg" alt="Video: Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse" loading="lazy">
-  <span class="video-card-title">Panel discussion on OpenAI&#x27;s cancelled Astra release, Sonnet 5.5, and Meta Muse</span>
-  <span class="video-card-meta">IBM Technology, October 2, 2026</span>
-  <span class="video-card-desc">A panel discussion from IBM&#x27;s Mixture of Experts podcast on why a company would cancel a model release, plus the Sonnet 5.5 release and Meta Muse&#x27;s implications for work.</span>
 </a>
 </div>
 
