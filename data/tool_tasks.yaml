@@ -136,11 +136,13 @@
   # sources beside the Claude entry in data/tools.yaml). start_with holds at
   # most two items, so the earlier "Improve a deck you already have" and
   # "Restyle a deck and keep it in PowerPoint" rows are one row now, with
-  # the same three tools.
+  # the same three tools. Claude Slides left beta for every plan on
+  # 2026-10-08 (updated 2026-10-09, owner approved; sources beside the Claude
+  # entry in data/tools.yaml).
   start_with:
     - need: Make a new deck
       tools: [Claude]
-      why: Its Claude Slides feature (in beta, on paid plans) drafts the deck from notes, a report, or a conversation and exports it to PowerPoint or PDF.
+      why: Its Claude Slides feature, on every plan including Free, drafts the deck from notes, a report, or a conversation and exports it to PowerPoint, PDF, or Google Slides.
     - need: Improve or restyle a deck you already have
       tools: [PowerPoint Design Suggestions, Canva, Claude Design]
       why: Design Suggestions works inside the .pptx file itself; Canva and Claude Design import the deck and export the result back to PowerPoint.

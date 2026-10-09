@@ -209,10 +209,11 @@ CATEGORY_INTROS = {
         "apps, and [Hardware for Local AI](hardware.md) sizes the machine."
     ),
     "presentations_design": (
-        # (new decks point to Claude Slides since 2026-10-02, issue #52)
-        "For a new deck, Claude Slides, a feature of Claude in beta on paid "
-        "plans, builds one from notes, a report, or a conversation and "
-        "exports it to PowerPoint or PDF. "
+        # (new decks point to Claude Slides since 2026-10-02, issue #52; out
+        # of beta on every plan since 2026-10-08, updated 2026-10-09)
+        "For a new deck, Claude Slides, a feature of Claude on every plan "
+        "including Free, builds one from notes, a report, or a conversation "
+        "and exports it to PowerPoint, PDF, or Google Slides. "
         "To improve an existing PowerPoint deck without rebuilding it, "
         "start with tools that work on the .pptx file itself: PowerPoint "
         "Design Suggestions applies suggestions inside the file, and Claude Design "

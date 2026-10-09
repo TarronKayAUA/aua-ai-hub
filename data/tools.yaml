@@ -44,21 +44,43 @@
   # and "You can export your deck to PowerPoint and PDF"; Help Center, Claude
   # Design admin guide, "Make on-brand decks from notes, reports, or an
   # existing conversation, and export them to PowerPoint or PDF".
+  # Updated 2026-10-09 (owner approved): Anthropic took Claude Docs, Slides and
+  # Design out of beta on 2026-10-08. Read 2026-10-09:
+  # claude.com/resources/articles/dashboards-and-motion (dated October 8,
+  # 2026), "Claude Docs, Slides, and Design are out of beta and available on
+  # every plan, including Free"; Help Center, What are artifacts, "The Docs,
+  # Slides, and Design templates are available on all plans and are on by
+  # default" and "Decks export to PowerPoint and PDF, or go straight to Google
+  # Slides as editable files". Two features announced the same day were left
+  # out: Claude Motion (animated explainers exported as MP4; beta on Team and
+  # Enterprise only), offered to the owner and not taken for now, and Claude
+  # Dashboards (beta on paid plans; needs a company data platform such as
+  # BigQuery, Snowflake or Salesforce), which does not fit the Hub's readers.
   also_for: [slides]
   url: https://claude.com
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-10-02
-  blurb: General-purpose artificial intelligence assistant for writing, analysis, coding, and answering questions through a chat interface. On paid plans, its Claude Slides feature (in beta) builds a presentation from notes, a report, or a conversation and exports it to PowerPoint or PDF.
+  last_reviewed: 2026-10-09
+  blurb: General-purpose artificial intelligence assistant for writing, analysis, coding, and answering questions through a chat interface. On every plan, including Free, its Claude Slides feature builds a presentation from notes, a report, or a conversation and exports it to PowerPoint, PDF, or Google Slides.
 
 - name: ChatGPT
   vendor: OpenAI
   category: assistants
+  # Intelligent UI added 2026-10-09 (owner approved). Read that day:
+  # openai.com/index/gpt-6-for-everyone (dated October 7, 2026; it answers 403
+  # to scripted clients and 200 to a browser), "With Intelligent UI,
+  # responses can include graphics, tappable buttons, forms, charts, and
+  # interactive experiences you can use directly in your conversation" and
+  # "when a simple text answer is the most useful response, ChatGPT can give
+  # you that"; OpenAI's launch video description (youtube.com/watch?v=
+  # IsL4dVezs18), "GPT-6 with Intelligent UI starts rolling out globally to
+  # ChatGPT Plus, Pro, Business and Enterprise tiers today in the Chat tab.
+  # Starting tomorrow, the rollout expands to Free and Go tiers."
   url: https://chatgpt.com
   cost: freemium
   governance_status: listed
-  last_reviewed: 2026-09-22
-  blurb: Widely used artificial intelligence chat assistant for drafting, summarizing, brainstorming, and general question answering.
+  last_reviewed: 2026-10-09
+  blurb: Widely used artificial intelligence chat assistant for drafting, summarizing, brainstorming, and general question answering. Since October 2026, on every plan including Free, its answers can include interactive charts, diagrams, forms, and small tools such as a calculator, a feature OpenAI calls Intelligent UI (user interface).
 
 - name: Gemini
   vendor: Google
@@ -581,7 +603,7 @@
   # claude.com/design 301-redirects here (checked 2026-09-08); the card links
   # the destination so a reader is not bounced.
   url: https://claude.com/product/design
-  cost: paid
+  cost: freemium
   governance_status: listed
   # Corrected 2026-09-08 from "Research preview ... sign-in required", which
   # was wrong on the first count and uninformative on the second. Anthropic's
@@ -619,8 +641,19 @@
   # Two things refused on 2026-09-08 now hold: the Enterprise off-by-default
   # claim (its source article then returned 404) and Word and Excel import
   # (now named on the product page as DOCX and XLSX).
-  status_note: Beta on paid Claude plans, used in any Claude conversation, in Claude Code, or at claude.ai/design; on Enterprise plans an administrator turns it on first.
-  last_reviewed: 2026-09-29
+  # Updated 2026-10-09 (owner approved): out of beta and on every plan since
+  # 2026-10-08, so cost moves from paid to freemium (the Free plan has usage
+  # limits, and artifacts "count toward your plan's usage limits"). Read
+  # 2026-10-09 on the product page: "Claude Design, Claude Slides, and Claude
+  # Docs are included within every plan, including the Free plan"; "Claude
+  # Design, Claude Slides, and Claude Docs turn on by default on October 15,
+  # 2026, except in HIPAA-enabled organizations" (Enterprise); "The
+  # standalone site at claude.ai/design stays open until December 14, 2026".
+  # The Help Center's What are artifacts agrees: "available on all plans and
+  # are on by default", and on Enterprise "they turn on by default on October
+  # 15, 2026, and owners can turn them on before then".
+  status_note: On every Claude plan, including Free, in any Claude conversation and in Claude Code; the standalone claude.ai/design site closes on December 14, 2026. On Enterprise plans it turns on by default on October 15, 2026.
+  last_reviewed: 2026-10-09
   # "from Anthropic Labs" dropped 2026-09-08: the word Labs no longer appears
   # anywhere on the product page. The export clause is left as it stands,
   # since PowerPoint, PDF and Canva are all still named there. A suggestion
