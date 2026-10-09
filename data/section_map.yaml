@@ -190,6 +190,11 @@ pages:
   prompts/exchange.md: {icon: forum-outline, sub: "Prompts shared by the community"}
   tools/local.md: {icon: laptop, sub: "A model on your own computer"}
   tools/hardware.md: {icon: memory, sub: "What your machine can run, and how fast"}
+  # By Company: one icon for all four, so no company is singled out
+  tools/company/openai.md: {icon: office-building-outline, sub: "Plans, models, Codex and its commands"}
+  tools/company/anthropic.md: {icon: office-building-outline, sub: "Plans, models, Claude Code and its commands"}
+  tools/company/google.md: {icon: office-building-outline, sub: "Plans, models, Antigravity and its commands"}
+  tools/company/xai.md: {icon: office-building-outline, sub: "Plans, models, Grok Build and its commands"}
   tools/agents.md: {icon: robot-outline, sub: "What an agent is, and what it can do"}
   tools/interfaces.md: {icon: application-outline, sub: "Chat, work, or code"}
   tools/first-session.md: {icon: play-circle-outline, sub: "Run one, once, on a safe folder"}
