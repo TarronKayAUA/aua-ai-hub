@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Most-Important-Trends-Showing-Up-in-New-AI-Products-e3q6nv0" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Most Important Trends Showing Up in New AI Products" loading="lazy">
+  <span class="video-card-title">The Most Important Trends Showing Up in New AI Products</span>
+  <span class="video-card-meta">The AI Daily Brief, October 9, 2026</span>
+  <span class="video-card-desc">NLW reviews recent AI product announcements, including ChatGPT&#x27;s new interface, Claude Haiku 5.5, and GrokBot&#x27;s use of rival models, and discusses how competition is shifting toward the experience built around models.</span>
+</a>
 <a class="video-card" href="https://aipodcast.education/the-ai-learning-paradox-better-results-less-learning" target="_blank" rel="noopener">
   <img src="https://static.libsyn.com/p/assets/6/c/c/8/6cc88ebd9f37ff77/AI_in_Education_1400x1400.png" alt="Podcast: The AI Learning Paradox: Better Results, Less Learning?" loading="lazy">
   <span class="video-card-title">The AI Learning Paradox: Better Results, Less Learning?</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">AI in Education: Who Gets to Decide?</span>
   <span class="video-card-meta">AI in Education Podcast, August 27, 2026</span>
   <span class="video-card-desc">Discussion of how different stakeholders, governments, tech companies, parents, universities, and regulators, make decisions about AI deployment in education.</span>
-</a>
-<a class="video-card" href="https://www.cognitiverevolution.ai/rl-s-a-hell-of-a-drug-metagaming-reward-seeking-motivated-cot-reasoning-bronson-schoen-apollo" target="_blank" rel="noopener">
-  <img src="https://megaphone.imgix.net/podcasts/928ce68a-a130-11f1-a245-53e44e8fe530/image/a3942fcfe350377c0fd8afd08bc53442.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo" loading="lazy">
-  <span class="video-card-title">RL&#x27;s a Hell of a Drug: Metagaming, Reward Seeking &amp; Motivated CoT Reasoning, Bronson Schoen, Apollo</span>
-  <span class="video-card-meta">The Cognitive Revolution, August 26, 2026</span>
-  <span class="video-card-desc">Interview on reinforcement learning behavior in frontier models: how reward-seeking and chain-of-thought reasoning interact, with analysis of metagaming and grader-aware reasoning.</span>
 </a>
 </div>

@@ -12,16 +12,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">A prospective study of multimodal AI grading for medical student OSCEs evaluates the technology in real assessment <a href="https://www.nature.com/articles/s41746-026-03352-4" aria-label="Source 9: npj Digital Medicine, Prospective deployment of multimodal AI grading for medical student OSCEs">[9]</a>. Evidence on reliability is more qualified.</p>
+<p class="section-brief-lede">The Hong Kong Academy of Medicine issued a position statement on how artificial intelligence should be used in postgraduate medical education <a href="https://pubmed.ncbi.nlm.nih.gov/42841178?fc=20260609215449&amp;ff=20261008020933&amp;v=2.20.1" aria-label="Source 13: PubMed AI in medical education, Hong Kong Academy of Medicine position statement on artificial intelligence in postgraduate medical education">[13]</a>. Evidence on effect remains thin.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>A comparison with expert raters in simulation-based experiences found that agreement required iterative prompt refinement and held up better for content-specific rubric items than for context-dependent ones <a href="https://pubmed.ncbi.nlm.nih.gov/42839253?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1" aria-label="Source 3: PubMed AI in medical education, How does AI-generated assessment compare to expert assessment in simulation-based experiences: Analyzing AI-human interrater reliability">[3]</a>. Evidence on learner benefit is also thin. The University of Maryland ran a randomized controlled trial of its own virtual study assistant, but only 15 percent of participating students used it, which limited conclusions <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/10/07/maryland-ai-research-raised-more-questions" aria-label="Source 6: Inside Higher Ed AI, A University’s Research on Its Own AI Tool Raised More Questions Than Answers">[6]</a>. On the curriculum side, a scoping review found AI ethics teaching in postgraduate health professions education conceptually rich but pedagogically underdeveloped <a href="https://pubmed.ncbi.nlm.nih.gov/42834438?fc=20260609215449&amp;ff=20261006071832&amp;v=2.20.1" aria-label="Source 10: PubMed AI in medical education, Mapping AI Ethics Integration in Postgraduate Health Professions Education: A Scoping Review Through the Lenses of Principlism and Transformative Learning">[10]</a>.</p>
-<p>Also this week: nine items on teaching and curriculum, three on assessment and feedback, and one each on attitudes and adoption, simulation and skills, and exams and benchmarks. They include a Hong Kong Academy of Medicine position statement on postgraduate training and a comparison of five large language models with infectious diseases physicians on case-based questions.</p>
-<p class="section-brief-date">The picture as of October 8, 2026; numbered links go to the items below.</p>
+<p>A University of Maryland randomized trial of its virtual study assistant saw only 15 percent of participating students use it <a href="https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/10/07/maryland-ai-research-raised-more-questions" aria-label="Source 14: Inside Higher Ed AI, A University’s Research on Its Own AI Tool Raised More Questions Than Answers">[14]</a>, and one publication looks beyond learner perception surveys toward measured educational outcomes <a href="https://pubmed.ncbi.nlm.nih.gov/42840634?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1" aria-label="Source 9: PubMed AI in medical education, Beyond Perceived Evaluation: Interventional Studies of Artificial Intelligence Use in Medical Education">[9]</a>. Student readiness is uneven, with nearly half of the Chinese medical students in one analysis showing low preparedness <a href="https://pubmed.ncbi.nlm.nih.gov/42846015?fc=20260609215449&amp;ff=20261008172136&amp;v=2.20.1" aria-label="Source 2: PubMed AI in medical education, Artificial intelligence readiness and its association with artificial intelligence literacy among Chinese medical students: a latent profile analysis">[2]</a>. Academic integrity is also unsettled, as an essay asks what standard of evidence should apply when faculty alone judge AI cheating <a href="https://www.insidehighered.com/opinion/views/2026/10/08/moral-lessons-demoralized-opinion" aria-label="Source 7: Inside Higher Ed AI, Moral Lessons From the Demoralized">[7]</a>.</p>
+<p>Also this week: the section holds nine items on teaching and curriculum and two each on attitudes and adoption and on assessment and feedback. One item benchmarks DeepSeek and GPT models on a Chinese radiation oncology question set, and one is a meta-analysis comparing real-time automated coaching with human instruction in surgical skills training.</p>
+<p class="section-brief-date">The picture as of October 9, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
 <div class="news-card" data-topic="exams-and-benchmarks">
@@ -43,6 +43,27 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42845536?fc=20260609215449&amp;ff=20261008172136&amp;v=2.20.1">Explainable Artificial Intelligence (XAI) in Medical Education: A Multi- Modal Framework for Enhancing Human-AI Collaboration</a>
     <p class="news-card-summary">A study evaluates explainable artificial intelligence as an interactive teaching tool to improve clinical reasoning and model interpretability during AI-assisted diagnosis in medical curricula.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42847513?fc=20260609215449&amp;ff=20261009021314&amp;v=2.20.1">Use of generative Artificial Intelligence tools in medical student research projects: An activity system analysis</a>
+    <p class="news-card-summary">A qualitative study using Cultural-Historical Activity Theory examines how medical students use generative AI in a mandatory research project and what tensions this creates for students and supervisors.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="simulation-and-skills">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42846721?fc=20260609215449&amp;ff=20261009021314&amp;v=2.20.1">Real-Time Intelligent Coaching Versus Human Expert Instruction in Surgical Skills Training: A Systematic Review and Meta-Analysis</a>
+    <p class="news-card-summary">A systematic review and meta-analysis compares real-time automated coaching systems with human expert instruction for surgical skills training in simulated tasks.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42846642?fc=20260609215449&amp;ff=20261009021314&amp;v=2.20.1">Human-first, AI-assisted Peer Review: A Proposed Workflow for Community Medicine and Public Health Journals</a>
+    <p class="news-card-summary">The article proposes a human-first, AI-assisted workflow for peer review in community medicine and public health journals, aiming to ease reviewer workload while keeping human judgment central.</p>
   </div>
 </div>
 <div class="news-card" data-topic="assessment-and-feedback">
@@ -108,27 +129,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03337-3">Digital health capacity building across health workforce and education sector in the WHO European region</a>
     <p class="news-card-summary">A paper in npj Digital Medicine examines digital health capacity building across the health workforce and education sector in the WHO European region.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03336-4">An examiner-conditioned AI second marker for VR OSCEs</a>
-    <p class="news-card-summary">An npj Digital Medicine paper describes an AI second marker conditioned on individual examiners for virtual reality objective structured clinical examinations OSCEs .</p>
-  </div>
-</div>
-<div class="news-card" data-topic="assessment-and-feedback">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03352-4">Prospective deployment of multimodal AI grading for medical student OSCEs</a>
-    <p class="news-card-summary">A prospective study reports deploying multimodal artificial intelligence to grade medical student objective structured clinical examinations OSCEs , evaluating its use in real assessment.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 6, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42834438?fc=20260609215449&amp;ff=20261006071832&amp;v=2.20.1">Mapping AI Ethics Integration in Postgraduate Health Professions Education: A Scoping Review Through the Lenses of Principlism and Transformative Learning</a>
-    <p class="news-card-summary">A scoping review finds that artificial intelligence ethics teaching in postgraduate health professions education is conceptually rich but pedagogically underdeveloped, and recommends structured, theory-based, interprofessional curricula.</p>
   </div>
 </div>
 </div>

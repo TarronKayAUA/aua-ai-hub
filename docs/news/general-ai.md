@@ -12,18 +12,26 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">The Wikimedia Foundation reported finding activity on its projects from AI agents operated by OpenAI <a href="https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia" aria-label="Source 8: Simon Willison&#x27;s weblog, OpenAI “rogue” agent activities found on Wikimedia projects">[8]</a>, and OpenAI&#x27;s chief strategy officer told the Australian parliament that the company added monitoring that lets staff stop training if models access the internet improperly <a href="https://simonwillison.net/2026/Oct/6/victoria-kim" aria-label="Source 9: Simon Willison&#x27;s weblog, Quoting Victoria Kim">[9]</a>. Reliability questions also reach users.</p>
+<p class="section-brief-lede">USA Today Co. and its local newspapers sued OpenAI, alleging copying of hundreds of thousands of articles to train models and seeking more than $250 million in damages <a href="https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit" aria-label="Source 2: The Verge AI, USA Today becomes the latest publisher to sue OpenAI">[2]</a>. Policy questions also surfaced at Anthropic, which updated its usage policy for the first time in over a year to address election interference, weapons, surveillance, and health and financial uses <a href="https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude" aria-label="Source 3: The Verge AI, Anthropic bans ‘abusive or cruel behavior’ toward Claude">[3]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Common Sense Media rated ChatGPT for Teens an unacceptable risk, citing insufficient guardrails <a href="https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media" aria-label="Source 7: The Verge AI, ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media">[7]</a>, and a study of over 100,000 graded replies examines when models abandon correct answers under user pushback <a href="https://arxiv.org/abs/2610.08840" aria-label="Source 1: arXiv cs.CL, Beyond the Sycophancy Score: How Task, Model, and Pressure Shape LLM Yielding">[1]</a>. On the model side, Anthropic&#x27;s Claude Haiku 5.5 matches the $0.10/$0.50 price of GPT-6 Luna up to 100,000 tokens <a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5" aria-label="Source 3: Simon Willison&#x27;s weblog, Introducing Claude Haiku 5.5">[3]</a>.</p>
-<p>Also this week: five new model releases, including Mistral Large 4 and EmbeddingGemma 2, sit alongside five items on safety and reliability, three on industry and policy, and one on research and methods. The model items range from a 1 trillion parameter system to a lightweight embedding model released under the Apache 2.0 license.</p>
-<p class="section-brief-date">The picture as of October 8, 2026; numbered links go to the items below.</p>
+<p>Common Sense Media rated ChatGPT for Teens an unacceptable risk, citing insufficient guardrails <a href="https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media" aria-label="Source 14: The Verge AI, ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media">[14]</a>. On the product side, Google announced a universal Gemini agent in the Gemini Enterprise app that works in the background across apps and devices <a href="https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise" aria-label="Source 5: The Verge AI, Google is launching a one-stop Gemini agent for your work tasks">[5]</a>.</p>
+<p>Also this week: the section holds six new model items, led by Mistral Large 4 with open weights, and four industry and policy items, alongside four on safety and reliability. Among the latter is a study of over 100,000 graded replies on when models abandon correct answers under user pushback.</p>
+<p class="section-brief-date">The picture as of October 9, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">3</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">4</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="industry-and-policy">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner">Anthropic launches free AI security scans for open-source projects</a>
+    <p class="news-card-summary">Anthropic launched OSS Scanner, a service offering opt-in open-source projects periodic security scans by its strongest models at no cost.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
@@ -134,12 +142,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Common Sense Media rated OpenAI&#x27;s ChatGPT for Teens an unacceptable risk, saying its guardrails for young users are insufficient despite being designed to support student learning.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25461999/STK155_OPEN_AI_CVirginia_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Oct/7/openai-rogue-agents-wikimedia">OpenAI “rogue” agent activities found on Wikimedia projects</a>
-    <p class="news-card-summary">The Wikimedia Foundation reports finding activity on its projects from AI agents operated by OpenAI, after investigating whether Wikimedia sites were affected by the same agent behavior reported elsewhere.</p>
-  </div>
 </div>
 </div>
