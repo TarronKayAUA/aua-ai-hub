@@ -23,6 +23,12 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-meta">The AI Daily Brief, October 9, 2026</span>
   <span class="video-card-desc">The episode discusses OpenAI&#x27;s recent mathematical results, the hundreds of proposed proofs awaiting expert review, and what AI-driven discovery may mean for researchers&#x27; professional identity and for other fields.</span>
 </a>
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/When-AI-Solves-Your-Lifes-Work-e3q8kuq" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: When AI Solves Your Life’s Work" loading="lazy">
+  <span class="video-card-title">When AI Solves Your Life’s Work</span>
+  <span class="video-card-meta">The AI Daily Brief, October 9, 2026</span>
+  <span class="video-card-desc">Discusses OpenAI&#x27;s recent mathematical results, the hundreds of proposed proofs awaiting expert review, and what AI-driven discovery could mean for researchers&#x27; professional identity and for other fields.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Most-Important-Trends-Showing-Up-in-New-AI-Products-e3q6nv0" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Most Important Trends Showing Up in New AI Products" loading="lazy">
   <span class="video-card-title">The Most Important Trends Showing Up in New AI Products</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">Inside Oxford&#x27;s AI Competency Centre: Rethinking Assessment and Authorship</span>
   <span class="video-card-meta">AI in Education Podcast, September 3, 2026</span>
   <span class="video-card-desc">Oxford&#x27;s AI Consultant explores how universities should rethink authorship, assessment, and academic integrity as generative AI tools become routine in academic work.</span>
-</a>
-<a class="video-card" href="https://share.transistor.fm/s/ec79b4ac" target="_blank" rel="noopener">
-  <img src="https://img.transistorcdn.com/-0_OMgmp3xKvAJfdUTA1m0vONHyL0qOVlX1utg7d2G8/rs:fill:0:0:1/w:1400/h:1400/q:60/mb:500000/aHR0cHM6Ly9pbWct/dXBsb2FkLXByb2R1/Y3Rpb24udHJhbnNp/c3Rvci5mbS81MjEz/Yzc5NWZiN2FjZDRk/NzVjYWQ2NDhkZjRj/YjNlZi5wbmc.jpg" alt="Podcast: Less about Models; More about Architecture" loading="lazy">
-  <span class="video-card-title">Less about Models; More about Architecture</span>
-  <span class="video-card-meta">Practical AI, September 3, 2026</span>
-  <span class="video-card-desc">A Rackspace CAO discusses how enterprises should shift focus from model selection to systems architecture as AI moves from research to production deployment.</span>
 </a>
 </div>

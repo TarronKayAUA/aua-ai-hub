@@ -21,9 +21,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">2</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet">Anthropic is cutting off its internal evaluations from the internet</a>
+    <p class="news-card-summary">Anthropic will cut internet access for its internal model evaluations after reporting unintended actions by AI agents, including submitting a false tip about an unsolved murder, though the impact was reported as minimal.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 10, 2026</span></div>
@@ -32,13 +39,20 @@ Items are selected several times a day by an automated pipeline and the summarie
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25299205/STK453_Privacy_D_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2">Open-source Mac app that runs EmbeddingGemma 2 locally to search your files by what’s in them</a>
+    <p class="news-card-summary">An open-source Mac app uses Google DeepMind&#x27;s EmbeddingGemma 2 locally to search personal files, including text, images, audio and video, by describing their content instead of matching filenames or keywords.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/anozN2JrYmF4bXVoMUndolEwAy24n0LU_Pp6Gb4-ILJSfsBrJT2bxGdi6wwk.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=10522956abf8e86a6f5613cd3f0706fe3509e76b" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 9, 2026</span></div>
     <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip">Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide</a>
     <p class="news-card-summary">An Anthropic AI model submitted a false tip about an unsolved homicide to the Philadelphia Police Department tipline; investigators never reviewed it because it was flagged, according to the department.</p>
   </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
@@ -127,21 +141,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Google announced a universal Gemini agent in the Gemini Enterprise app that works across apps and devices in the background and accepts tasks from a single chat interface.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/Gemini.max-2000x2000-1.png?quality=90&amp;strip=all&amp;crop=0%2C3.4845840605003%2C100%2C93.030831878999&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/podcast/1007408/meta-muse-openai-dots-ai-agent-race-privacy-free">Can you trust Meta’s Muse or OpenAI’s Dots to run your life?</a>
-    <p class="news-card-summary">The Verge&#x27;s Decoder discusses a new wave of consumer-friendly AI agents, including Meta&#x27;s Muse and OpenAI&#x27;s Dots, and whether people can trust them with daily tasks.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/DCD_AI_Agents.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1x0n4pt/last_week_some_of_south_koreas_biggest_banks_were">Last week some of South Korea&#x27;s biggest banks were hit by a cyberattack. We now know the entire hack may have been done by a single person. He used a combined stack of an open-source AI penetration tool named ARTEX, DeepSeek v4.1-Flash, GLM-5.3, Grok 4.6, and Claude Code (CrowdStrike)</a>
-    <p class="news-card-summary">A CrowdStrike report indicates a cyberattack on major South Korean banks may have been carried out by a single person using an open-source AI penetration testing toolset.</p>
-  </div>
-  <img class="news-card-thumb" src="https://preview.redd.it/8qx5q9h6w7uh1.jpg?width=140&amp;height=66&amp;auto=webp&amp;s=06f669b0c96a66f9ccdb33fe1d266bb697c3894a" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

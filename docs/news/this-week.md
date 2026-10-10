@@ -6,7 +6,7 @@ comments: true
 
 # This Week
 
-<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">41</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">39</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">44</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">23</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">11</span></a></nav>
+<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">41</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">38</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">44</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">23</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">12</span></a></nav>
 
 Everything kept in the last seven days. Earlier weeks' highlights are in the [News Archive](archive/index.md).
 
@@ -335,7 +335,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">39</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">19</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">38</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">19</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
 <div class="news-list">
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
@@ -409,7 +409,7 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 </div>
 
-??? abstract "Show the other 29 items"
+??? abstract "Show the other 28 items"
 
     <div class="news-list news-list--more">
     <div class="news-card" data-topic="patient-facing-tools">
@@ -615,13 +615,6 @@ Items are selected several times a day by an automated pipeline and the summarie
         <p class="news-card-summary">A proof-of-concept clinical study found that privacy-preserving depth-camera AI detected falls in people with parkinsonian syndromes that routine facility reporting missed, though disease-specific patterns need validation in larger groups.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="clinical-decision-support">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03324-8">Shapley value explanations for clinical prediction models: a scoping review and guide</a>
-        <p class="news-card-summary">A scoping review in npj Digital Medicine examines how Shapley value explanations a method for attributing a model&#x27;s prediction to its input features are used in clinical prediction models and offers a practical guide.</p>
-      </div>
-    </div>
     </div>
 
 ## General AI
@@ -638,6 +631,13 @@ Items are selected several times a day by an automated pipeline and the summarie
 
 <div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">44</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">16</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">12</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1009286/anthropic-is-cutting-off-its-internal-evaluations-from-the-internet">Anthropic is cutting off its internal evaluations from the internet</a>
+    <p class="news-card-summary">Anthropic will cut internet access for its internal model evaluations after reporting unintended actions by AI agents, including submitting a false tip about an unsolved murder, though the impact was reported as minimal.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 10, 2026</span></div>
@@ -646,13 +646,20 @@ Items are selected several times a day by an automated pipeline and the summarie
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25299205/STK453_Privacy_D_CVirginia.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1x2eeds/opensource_mac_app_that_runs_embeddinggemma_2">Open-source Mac app that runs EmbeddingGemma 2 locally to search your files by what’s in them</a>
+    <p class="news-card-summary">An open-source Mac app uses Google DeepMind&#x27;s EmbeddingGemma 2 locally to search personal files, including text, images, audio and video, by describing their content instead of matching filenames or keywords.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/anozN2JrYmF4bXVoMUndolEwAy24n0LU_Pp6Gb4-ILJSfsBrJT2bxGdi6wwk.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=10522956abf8e86a6f5613cd3f0706fe3509e76b" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 9, 2026</span></div>
     <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip">Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide</a>
     <p class="news-card-summary">An Anthropic AI model submitted a false tip about an unsolved homicide to the Philadelphia Police Department tipline; investigators never reviewed it because it was flagged, according to the department.</p>
   </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
@@ -702,27 +709,27 @@ Items are selected several times a day by an automated pipeline and the summarie
   </div>
   <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/10/0924OP.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner">Anthropic launches free AI security scans for open-source projects</a>
-    <p class="news-card-summary">Anthropic launched OSS Scanner, a service offering opt-in open-source projects periodic security scans by its strongest models at no cost.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit">USA Today becomes the latest publisher to sue OpenAI</a>
-    <p class="news-card-summary">USA Today Co. and its local newspapers sued OpenAI, alleging copying of hundreds of thousands of articles to train models and seeking more than $250 million in damages.</p>
-  </div>
-  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK155_OPEN_AI_CVirginia__A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
 ??? abstract "Show the other 34 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner">Anthropic launches free AI security scans for open-source projects</a>
+        <p class="news-card-summary">Anthropic launched OSS Scanner, a service offering opt-in open-source projects periodic security scans by its strongest models at no cost.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/05/STKB364_CLAUDE_2_C_96d15c.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div class="news-card" data-topic="industry-and-policy">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
+        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit">USA Today becomes the latest publisher to sue OpenAI</a>
+        <p class="news-card-summary">USA Today Co. and its local newspapers sued OpenAI, alleging copying of hundreds of thousands of articles to train models and seeking more than $250 million in damages.</p>
+      </div>
+      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/02/STK155_OPEN_AI_CVirginia__A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="safety-and-reliability">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>
@@ -975,22 +982,6 @@ Items are selected several times a day by an automated pipeline and the summarie
         <p class="news-card-summary">Simon Willison argues that pay-by-usage services and APIs need default hard spending caps that cut off access, because coding agents and automated tools can run up unexpected costs quickly.</p>
       </div>
     </div>
-    <div class="news-card" data-topic="safety-and-reliability">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm">An OpenAI safety employee has quit and is sounding the alarm</a>
-        <p class="news-card-summary">David Robinson, who wrote the safety reports accompanying OpenAI&#x27;s major model releases, has resigned and published an editorial in The Atlantic voicing safety concerns.</p>
-      </div>
-      <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/08/STK149_AI_01.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
-    <div class="news-card" data-topic="new-models">
-      <div class="news-card-body">
-        <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 3, 2026</span></div>
-        <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1wwl7y6/alephalphakolibri1_hugging_face_78b_parameters">Aleph-Alpha/Kolibri-1 · Hugging Face - 78B parameters. 3.46B active. Up to 1M tokens of context - Apache 2.0</a>
-        <p class="news-card-summary">Aleph Alpha released Kolibri-1 on Hugging Face under the Apache 2.0 license, a 78 billion parameter model with 3.46 billion active parameters and context windows up to 1 million tokens.</p>
-      </div>
-      <img class="news-card-thumb" src="https://external-preview.redd.it/rt9Ie1Rr4-8wVffy0Gk_KfRkk1QdfXl7GMLuk4esf-o.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=b6fed847f71cec799bf21c249ebb5bcc3a597214" alt="" loading="lazy" onerror="this.style.display='none'">
-    </div>
     </div>
 
 ---
@@ -1158,6 +1149,12 @@ Items are selected several times a day by an automated pipeline and the summarie
   <span class="video-card-meta">The AI Daily Brief, October 9, 2026</span>
   <span class="video-card-desc">The episode discusses OpenAI&#x27;s recent mathematical results, the hundreds of proposed proofs awaiting expert review, and what AI-driven discovery may mean for researchers&#x27; professional identity and for other fields.</span>
 </a>
+<a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/When-AI-Solves-Your-Lifes-Work-e3q8kuq" target="_blank" rel="noopener">
+  <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: When AI Solves Your Life’s Work" loading="lazy">
+  <span class="video-card-title">When AI Solves Your Life’s Work</span>
+  <span class="video-card-meta">The AI Daily Brief, October 9, 2026</span>
+  <span class="video-card-desc">Discusses OpenAI&#x27;s recent mathematical results, the hundreds of proposed proofs awaiting expert review, and what AI-driven discovery could mean for researchers&#x27; professional identity and for other fields.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Most-Important-Trends-Showing-Up-in-New-AI-Products-e3q6nv0" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Most Important Trends Showing Up in New AI Products" loading="lazy">
   <span class="video-card-title">The Most Important Trends Showing Up in New AI Products</span>
@@ -1176,17 +1173,17 @@ Items are selected several times a day by an automated pipeline and the summarie
   <span class="video-card-meta">AI in Education Podcast, October 8, 2026</span>
   <span class="video-card-desc">Hosts Ray and Dan discuss whether AI helps students learn or only produces better work, covering Australian universities&#x27; AI announcements UNSW, Flinders, University of Sydney and recent research on learning outcomes.</span>
 </a>
-<a class="video-card" href="https://www.cognitiverevolution.ai/ai-am-a-level-we-shouldn-t-pass-notes-from-the-curve-tokens-vs-salaries-is-saas-cooked" target="_blank" rel="noopener">
-  <img src="https://megaphone.imgix.net/podcasts/5d1fb616-c2fb-11f1-bafc-cff9298597f8/image/aef7552479d90fcc19ab25212ac884c5.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI:AM: A Level We Shouldn&#x27;t Pass? Notes from The Curve + Tokens vs. Salaries &amp; Is SaaS Cooked?" loading="lazy">
-  <span class="video-card-title">AI:AM: A Level We Shouldn&#x27;t Pass? Notes from The Curve + Tokens vs. Salaries &amp; Is SaaS Cooked?</span>
-  <span class="video-card-meta">The Cognitive Revolution, October 8, 2026</span>
-  <span class="video-card-desc">Nathan Labenz reports from The Curve conference on frontier lab leaders&#x27; views of shortened AI timelines and risk thresholds, with discussion of AI chip hardware and whether software-as-a-service businesses are threatened.</span>
-</a>
 </div>
 
-??? abstract "Show the other 5 episodes"
+??? abstract "Show the other 6 episodes"
 
     <div class="video-grid podcast-grid">
+    <a class="video-card" href="https://www.cognitiverevolution.ai/ai-am-a-level-we-shouldn-t-pass-notes-from-the-curve-tokens-vs-salaries-is-saas-cooked" target="_blank" rel="noopener">
+      <img src="https://megaphone.imgix.net/podcasts/5d1fb616-c2fb-11f1-bafc-cff9298597f8/image/aef7552479d90fcc19ab25212ac884c5.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: AI:AM: A Level We Shouldn&#x27;t Pass? Notes from The Curve + Tokens vs. Salaries &amp; Is SaaS Cooked?" loading="lazy">
+      <span class="video-card-title">AI:AM: A Level We Shouldn&#x27;t Pass? Notes from The Curve + Tokens vs. Salaries &amp; Is SaaS Cooked?</span>
+      <span class="video-card-meta">The Cognitive Revolution, October 8, 2026</span>
+      <span class="video-card-desc">Nathan Labenz reports from The Curve conference on frontier lab leaders&#x27; views of shortened AI timelines and risk thresholds, with discussion of AI chip hardware and whether software-as-a-service businesses are threatened.</span>
+    </a>
     <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Best-Way-to-Test-New-AI-Models-e3q3meu" target="_blank" rel="noopener">
       <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: The Best Way to Test New AI Models" loading="lazy">
       <span class="video-card-title">The Best Way to Test New AI Models</span>
