@@ -68,6 +68,13 @@ Items are selected several times a day by an automated pipeline and the summarie
 </div>
 <div class="news-card" data-topic="teaching-and-curriculum">
   <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42855633?fc=20260609215449&amp;ff=20261010102932&amp;v=2.20.1">A Hands-On Imaging Informatics Curriculum for Medical Students: Developing a Foundational Understanding of Healthcare Imaging Informatics</a>
+    <p class="news-card-summary">A paper describes a hands-on active learning module that teaches medical students imaging informatics, including the role of artificial intelligence, which is usually absent from the standard medical school curriculum.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 9, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03376-w">Integrating generative artificial intelligence facilitates faculty interaction network and role transition in a biostatistics curriculum</a>
     <p class="news-card-summary">A study in npj Digital Medicine examines how integrating generative artificial intelligence into a biostatistics curriculum changed faculty interaction networks and teaching roles.</p>
@@ -120,13 +127,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
     <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42846721?fc=20260609215449&amp;ff=20261009021314&amp;v=2.20.1">Real-Time Intelligent Coaching Versus Human Expert Instruction in Surgical Skills Training: A Systematic Review and Meta-Analysis</a>
     <p class="news-card-summary">A systematic review and meta-analysis compares real-time automated coaching systems with human expert instruction for surgical skills training in simulated tasks.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="teaching-and-curriculum">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://pubmed.ncbi.nlm.nih.gov/42846642?fc=20260609215449&amp;ff=20261009021314&amp;v=2.20.1">Human-first, AI-assisted Peer Review: A Proposed Workflow for Community Medicine and Public Health Journals</a>
-    <p class="news-card-summary">The article proposes a human-first, AI-assisted workflow for peer review in community medicine and public health journals, aiming to ease reviewer workload while keeping human judgment central.</p>
   </div>
 </div>
 </div>

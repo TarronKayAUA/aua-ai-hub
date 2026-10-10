@@ -1,198 +1,6 @@
 {
  "items": [
   {
-   "url": "https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions",
-   "title_hash": "2531d5baf5d83a847c2092a7bed31600",
-   "first_seen": "2026-08-11T09:15:11.090479+00:00",
-   "kept": true,
-   "title": "STAT+: Nurses seek a seat at the table as they fight expanding clinical AI",
-   "source": "STAT News AI",
-   "published": "2026-08-11T08:30:00+00:00",
-   "summary": "Nursing leaders raise concerns about job displacement and patient safety risks from expanding clinical AI deployment without adequate workforce input.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "thumbnail": "https://www.statnews.com/wp-content/uploads/2026/08/GettyImages-1222271719-645x645.jpg",
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vl8bpt/qwen_3827b_coming_this_week",
-   "title_hash": "5c373a3b66341c95b3e034a01963e072",
-   "first_seen": "2026-08-11T09:15:11.090479+00:00",
-   "kept": false,
-   "reason": "forum post about unreleased model; not a primary source or announcement"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=RqPrJ4WxBzA",
-   "title_hash": "f07baa05b93b17fa06313f349dcdf83e",
-   "first_seen": "2026-08-11T09:15:11.090479+00:00",
-   "kept": false,
-   "reason": "speculation and rumor video with no confirmed subjects; 'mysterious new Claude model' is unconfirmed"
-  },
-  {
-   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-sldd",
-   "title_hash": "773c52b4f27341cc919f2084249df9bd",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": false,
-   "reason": "insufficient summary to evaluate; vendor technical note rather than significant capability change"
-  },
-  {
-   "url": "https://www.aipolicyperspectives.com/p/seb-kriers-8-summer-reads",
-   "title_hash": "a4cf40baf275cdd192d3267dab346faf",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": false,
-   "reason": "listicle; mechanical link list"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun",
-   "title_hash": "277cea24dbfcda793e120daacae020c6",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": true,
-   "title": "The AI takeover of mathematics has begun",
-   "source": "The Verge AI",
-   "published": "2026-08-11T11:00:00+00:00",
-   "summary": "Interview with Fields Medal mathematician James Maynard on how artificial intelligence is reshaping mathematical research and academic adaptation to automated discovery tools.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/268684_OpenAI_claims_to_revolutionize_maths_CVirginia2.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42577284?fc=20260609215449&ff=20260811094422&v=2.20.1",
-   "title_hash": "38615a137ba0ad2e3da8145a459b8c5d",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": true,
-   "title": "Diagnostic performance and short-interval reproducibility of multimodal large language models in differentiating cholesteatoma from chronic otitis media using key-image temporal bone high-resolution computed tomography",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-11T10:00:00+00:00",
-   "summary": "Evaluation of GPT-5 and Gemini 2.5 Pro on temporal bone computed tomography for cholesteatoma diagnosis found fair-to-moderate reproducibility and insufficient agreement to support use as independent diagnostic readers.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Exams and benchmarks"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42577023?fc=20260609215449&ff=20260811094422&v=2.20.1",
-   "title_hash": "9dba0160e54784eeb96626fdb063a983",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": true,
-   "title": "Current Status of Generative Artificial Intelligence Utilization in Medical Education: A Cross-Sectional Survey of Medical Students and Faculty",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-11T10:00:00+00:00",
-   "summary": "Survey of medical students and faculty finds generative AI is widely accepted and used in medical education but requires ethical guidelines, digital literacy training, and careful integration strategies.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Attitudes and adoption"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42576362?fc=20260609215449&ff=20260811094422&v=2.20.1",
-   "title_hash": "28dae3c4975b88b43f4c36718212fbe2",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": true,
-   "title": "The dead still teach the living: Body donor dissection in the digital age of anatomy education",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-11T10:00:00+00:00",
-   "summary": "Review examines the role of cadaveric dissection in medical anatomy curricula as digital platforms, simulation, and AI-supported learning reshape anatomy education alongside reduced curricular time.",
-   "category": "medical_education",
-   "score": 3.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
-   "url": "https://www.sensible-med.com/p/how-not-to-be-fooled-lecture-2",
-   "title_hash": "4583218ab4426e46601244cc182c2e18",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03105-3",
-   "title_hash": "7e86e99a01db669be1012b180e4a3102",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": true,
-   "title": "Eyecare-Cloud enabling 21 years of real world pediatric ophthalmology practice and paperless healthcare",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-11T00:00:00+00:00",
-   "summary": "Cloud-based electronic health record system supporting 21 years of pediatric ophthalmology practice demonstrates feasibility of paperless documentation and real-world healthcare integration.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "topic": "Clinical documentation"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04529-w",
-   "title_hash": "d0f7b6605b19b022273f158ef7236587",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": false,
-   "reason": "duplicate of candidate 2; keeping candidate 2 summary as more complete"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04611-3",
-   "title_hash": "6bf3c594f9f70d5694795a51865162d8",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04556-7",
-   "title_hash": "2e358c04d0415842591640bd6d39cd6a",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": true,
-   "title": "Reinventing health communication for the digital era",
-   "source": "Nature Medicine",
-   "published": "2026-08-11T00:00:00+00:00",
-   "summary": "Commentary on improving access to accurate, timely, evidence-based health information in the digital era as essential to global health outcomes.",
-   "category": "clinical_practice",
-   "score": 2.0,
-   "thumbnail": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-026-04556-7/MediaObjects/41591_2026_4556_Figa_HTML.png",
-   "topic": "Patient facing tools"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41591-026-04537-w",
-   "title_hash": "d8d64ddbd37ca0d50aa9241e8b97ffdf",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkydi5/i_trained_a_1bparameter_llm_from_scratch_on_20b",
-   "title_hash": "9b297e01970cf8d4de1255953194fa14",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": false,
-   "reason": "forum post on narrow technical exercise; no significance for medical educators or students"
-  },
-  {
-   "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B",
-   "title_hash": "b864cb065b75dc74f589965741b19dc5",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": true,
-   "title": "LFM2.5 2.6B model competitive with 4x larger models",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-08-04T18:47:25+00:00",
-   "summary": "LFM2.5 2.6 billion parameter model achieves performance comparable to models four times its size, demonstrating efficiency gains in model scaling.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/models/LiquidAI/LFM2.5-2.6B.png",
-   "topic": "New models"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=0i1ntlGvIqA",
-   "title_hash": "146aac4e72f75355ea45cbe101771179",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": false,
-   "reason": "general tool testing of a consumer product without educational relevance to medical educators or clinical AI"
-  },
-  {
-   "url": "https://www.youtube.com/watch?v=Qx0fCqpkBus",
-   "title_hash": "b9d5b2a4f04a6045b5e8ed3ce33cc3a7",
-   "first_seen": "2026-08-11T13:44:21.945384+00:00",
-   "kept": true,
-   "title": "What Is Context Engineering? Why It Matters for AI Agents",
-   "source": "IBM Technology",
-   "published": "2026-08-11T11:00:03+00:00",
-   "summary": "IBM explainer on context engineering for AI agents and why data quality and context selection matter for system performance.",
-   "category": "videos",
-   "score": 2.0,
-   "thumbnail": "https://i2.ytimg.com/vi/Qx0fCqpkBus/hqdefault.jpg",
-   "display_title": "Context engineering for AI agents explained"
-  },
-  {
    "url": "https://medinform.jmir.org/2026/1/e86461",
    "title_hash": "3a1fa234fd90167b53abbc31d620a678",
    "first_seen": "2026-08-11T17:14:14.390149+00:00",
@@ -33981,6 +33789,101 @@
    "category": "podcasts",
    "score": 3.0,
    "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
+   "title_hash": "489bd5e426f42af66f51c2fb5365745f",
+   "first_seen": "2026-10-10T14:29:32.291255+00:00",
+   "kept": true,
+   "title": "AI agent makers are promising privacy, will they deliver?",
+   "source": "The Verge AI",
+   "published": "2026-10-10T13:00:00+00:00",
+   "summary": "The Verge examines privacy promises made by AI agent makers, after OpenAI introduced its Dots agent at DevDay and criticized Meta's Muse over user data handling.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25299205/STK453_Privacy_D_CVirginia.jpg?quality=90&strip=all&crop=0%2C9.9676601489831%2C100%2C80.064679702034&w=1200",
+   "topic": "Industry and policy"
+  },
+  {
+   "url": "https://www.sensible-med.com/p/confessions-of-a-functional-medicine",
+   "title_hash": "ad4daddb2b4f601ec5f2acfbd5027298",
+   "first_seen": "2026-10-10T14:29:32.291255+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, no AI relevance"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x29hx8/big_or_small",
+   "title_hash": "b94e3cb2b6d0862d6e49277e0999adc0",
+   "first_seen": "2026-10-10T14:29:32.291255+00:00",
+   "kept": false,
+   "reason": "community poll thread with no news content"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03373-z",
+   "title_hash": "0f7ce49d8441247a139009108c8d8606",
+   "first_seen": "2026-10-10T14:29:32.291255+00:00",
+   "kept": true,
+   "title": "VOICE-AE: automated CTCAE scoring from ambient clinical audio using speech recognition and large language models",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-10T00:00:00+00:00",
+   "summary": "npj Digital Medicine reports VOICE-AE, a system that uses speech recognition and large language models to score adverse events using the CTCAE grading scale automatically from ambient clinical audio.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Clinical documentation"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42855633?fc=20260609215449&ff=20261010102932&v=2.20.1",
+   "title_hash": "6d2aaa7c80f4dee5bc36f23b292a9cd6",
+   "first_seen": "2026-10-10T14:29:32.291255+00:00",
+   "kept": true,
+   "title": "A Hands-On Imaging Informatics Curriculum for Medical Students: Developing a Foundational Understanding of Healthcare Imaging Informatics",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-09T10:00:00+00:00",
+   "summary": "A paper describes a hands-on active learning module that teaches medical students imaging informatics, including the role of artificial intelligence, which is usually absent from the standard medical school curriculum.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42855507?fc=20260609215449&ff=20261010102932&v=2.20.1",
+   "title_hash": "709c37b6ba4ce6a7137f9c90bb7ed443",
+   "first_seen": "2026-10-10T14:29:32.291255+00:00",
+   "kept": false,
+   "reason": "narrow surgical tool with only incidental AI mention"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0wg85/running_decision_model_locally_on_an_rtx_4090_to",
+   "title_hash": "7f3b8946d456cee4f1a6a54c38b59fe8",
+   "first_seen": "2026-10-10T14:29:32.291255+00:00",
+   "kept": false,
+   "reason": "performance-tinkering thread on niche models"
+  },
+  {
+   "url": "https://www.youtube.com/watch?v=USpkPjv-lxs",
+   "title_hash": "1b8122ac12da81fe9b6fcb97236a03bd",
+   "first_seen": "2026-10-10T14:29:32.291255+00:00",
+   "kept": true,
+   "title": "HUGE Gemini 4 Carbon LEAKS, Claude Fable 6, GPT-7 Bel, Google CRACKED RSI?! & More! AI NEWS",
+   "source": "WorldofAI",
+   "published": "2026-10-10T07:34:33+00:00",
+   "summary": "A news roundup covering reported Google Gemini checkpoint testing and other recent model developments from several labs, useful as a quick overview, though some items are described as unconfirmed.",
+   "category": "videos",
+   "score": 2.0,
+   "thumbnail": "https://i2.ytimg.com/vi/USpkPjv-lxs/hqdefault.jpg",
+   "display_title": "AI news roundup on Gemini checkpoints and other model developments"
+  },
+  {
+   "url": "https://www.cognitiverevolution.ai/how-agents-decide-goodfire-s-eric-bigelow-on-critical-tokens-phase-shifts-in-context-learning",
+   "title_hash": "60bf7a7808d218d7a584460aef59884a",
+   "first_seen": "2026-10-10T14:29:32.291255+00:00",
+   "kept": true,
+   "title": "How Agents Decide: Goodfire's Eric Bigelow on Critical Tokens, Phase Shifts, & In-Context Learning",
+   "source": "The Cognitive Revolution",
+   "published": "2026-10-10T10:47:14+00:00",
+   "summary": "Goodfire researcher Eric Bigelow explains how language models reach decisions, covering critical tokens, phase shifts, and reasoning as in-context learning, drawing on interpretability research into forking paths in model outputs.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://megaphone.imgix.net/podcasts/1c903b2a-c495-11f1-85f7-d768d17ef297/image/8c237c19a58638569eb38346330576eb.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
   }
  ],
  "digests": [

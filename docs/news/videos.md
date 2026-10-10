@@ -13,6 +13,12 @@ Cards link to YouTube; nothing plays on this site.
 ## General AI
 
 <div class="video-grid">
+<a class="video-card" href="https://www.youtube.com/watch?v=USpkPjv-lxs" target="_blank" rel="noopener" title="HUGE Gemini 4 Carbon LEAKS, Claude Fable 6, GPT-7 Bel, Google CRACKED RSI?! &amp; More! AI NEWS">
+  <img src="https://i2.ytimg.com/vi/USpkPjv-lxs/hqdefault.jpg" alt="Video: AI news roundup on Gemini checkpoints and other model developments" loading="lazy">
+  <span class="video-card-title">AI news roundup on Gemini checkpoints and other model developments</span>
+  <span class="video-card-meta">WorldofAI, October 10, 2026</span>
+  <span class="video-card-desc">A news roundup covering reported Google Gemini checkpoint testing and other recent model developments from several labs, useful as a quick overview, though some items are described as unconfirmed.</span>
+</a>
 <a class="video-card" href="https://www.youtube.com/watch?v=IO6Bhs2iNfk" target="_blank" rel="noopener" title="OpenAI&#x27;s always-on agents, 700+ math manuscripts &amp; HackerRank&#x27;s AI interviewer">
   <img src="https://i2.ytimg.com/vi/IO6Bhs2iNfk/hqdefault.jpg" alt="Video: Panel discussion on OpenAI always-on agents, AI-generated math manuscripts, and AI" loading="lazy">
   <span class="video-card-title">Panel discussion on OpenAI always-on agents, AI-generated math manuscripts, and AI</span>
@@ -126,12 +132,6 @@ Cards link to YouTube; nothing plays on this site.
   <span class="video-card-title">Sonnet 5.5 and the narrowing gap between frontier and cheaper AI models</span>
   <span class="video-card-meta">Two Minute Papers, October 5, 2026</span>
   <span class="video-card-desc">A research-news channel discusses Anthropic&#x27;s Sonnet 5.5 release and how the performance gap between expensive frontier models and cheaper ones is narrowing, with links to the source material.</span>
-</a>
-<a class="video-card" href="https://www.youtube.com/watch?v=83HMZrhL_Uw" target="_blank" rel="noopener" title="AI &amp; Music: How AI Is Changing Music Creation &amp; Creativity">
-  <img src="https://i1.ytimg.com/vi/83HMZrhL_Uw/hqdefault.jpg" alt="Video: Explainer on how AI is changing music creation and creativity" loading="lazy">
-  <span class="video-card-title">Explainer on how AI is changing music creation and creativity</span>
-  <span class="video-card-meta">IBM Technology, October 4, 2026</span>
-  <span class="video-card-desc">IBM&#x27;s Jeff Crume discusses whether AI generates original music or recombines existing work, giving viewers a conceptual explanation of how AI music tools work and the creativity questions they raise.</span>
 </a>
 </div>
 

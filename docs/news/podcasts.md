@@ -11,6 +11,12 @@ Recent episodes from a curated set of shows on artificial intelligence in medici
 Cards link to each episode's own page; nothing plays on this site.
 
 <div class="video-grid podcast-grid">
+<a class="video-card" href="https://www.cognitiverevolution.ai/how-agents-decide-goodfire-s-eric-bigelow-on-critical-tokens-phase-shifts-in-context-learning" target="_blank" rel="noopener">
+  <img src="https://megaphone.imgix.net/podcasts/1c903b2a-c495-11f1-85f7-d768d17ef297/image/8c237c19a58638569eb38346330576eb.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: How Agents Decide: Goodfire&#x27;s Eric Bigelow on Critical Tokens, Phase Shifts, &amp; In-Context Learning" loading="lazy">
+  <span class="video-card-title">How Agents Decide: Goodfire&#x27;s Eric Bigelow on Critical Tokens, Phase Shifts, &amp; In-Context Learning</span>
+  <span class="video-card-meta">The Cognitive Revolution, October 10, 2026</span>
+  <span class="video-card-desc">Goodfire researcher Eric Bigelow explains how language models reach decisions, covering critical tokens, phase shifts, and reasoning as in-context learning, drawing on interpretability research into forking paths in model outputs.</span>
+</a>
 <a class="video-card" href="https://podcasters.spotify.com/pod/show/nlw/episodes/What-Happens-When-AI-Solves-Your-Lifes-Work-e3q8kuq" target="_blank" rel="noopener">
   <img src="https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg" alt="Podcast: What Happens When AI Solves Your Life’s Work" loading="lazy">
   <span class="video-card-title">What Happens When AI Solves Your Life’s Work</span>
@@ -184,11 +190,5 @@ Cards link to each episode's own page; nothing plays on this site.
   <span class="video-card-title">Less about Models; More about Architecture</span>
   <span class="video-card-meta">Practical AI, September 3, 2026</span>
   <span class="video-card-desc">A Rackspace CAO discusses how enterprises should shift focus from model selection to systems architecture as AI moves from research to production deployment.</span>
-</a>
-<a class="video-card" href="https://www.cognitiverevolution.ai/write-change-recall-forget-mongodb-s-pete-johnson-on-how-retrieval-drives-agent-performance" target="_blank" rel="noopener">
-  <img src="https://megaphone.imgix.net/podcasts/5faf9776-a18f-11f1-9dc1-d3d77021b3b7/image/f1f5a517fbd4f64f9f8f82d534066ac8.png?ixlib=rails-4.3.1&amp;max-w=3000&amp;max-h=3000&amp;fit=crop&amp;auto=format,compress" alt="Podcast: Write, Change, Recall, Forget: MongoDB&#x27;s Pete Johnson on How Retrieval Drives Agent Performance" loading="lazy">
-  <span class="video-card-title">Write, Change, Recall, Forget: MongoDB&#x27;s Pete Johnson on How Retrieval Drives Agent Performance</span>
-  <span class="video-card-meta">The Cognitive Revolution, September 1, 2026</span>
-  <span class="video-card-desc">A Field CTO at MongoDB discusses database architecture and the technical challenges of designing memory systems for AI agents.</span>
 </a>
 </div>
