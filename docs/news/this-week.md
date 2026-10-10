@@ -6,7 +6,7 @@ comments: true
 
 # This Week
 
-<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">41</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">38</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">44</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">23</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">12</span></a></nav>
+<nav class="section-chips" aria-label="Sections on this page" data-search-exclude=""><a class="section-chip" href="#medical-education">Medical Education <span class="section-chip__n">42</span></a><a class="section-chip" href="#clinical-practice">Clinical Practice <span class="section-chip__n">40</span></a><a class="section-chip" href="#general-ai">General AI <span class="section-chip__n">45</span></a><a class="section-chip" href="#videos">Videos <span class="section-chip__n">23</span></a><a class="section-chip" href="#podcasts">Podcasts <span class="section-chip__n">12</span></a></nav>
 
 Everything kept in the last seven days. Earlier weeks' highlights are in the [News Archive](archive/index.md).
 
@@ -25,8 +25,15 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">41</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">20</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-medical-education" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-medical-education">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">42</span></button><button type="button" class="topic-chip" data-topic="teaching-and-curriculum" aria-pressed="false">Teaching and curriculum <span class="topic-chip__n">21</span></button><button type="button" class="topic-chip" data-topic="assessment-and-feedback" aria-pressed="false">Assessment and feedback <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="simulation-and-skills" aria-pressed="false">Simulation and skills <span class="topic-chip__n">7</span></button><button type="button" class="topic-chip" data-topic="exams-and-benchmarks" aria-pressed="false">Exams and benchmarks <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="attitudes-and-adoption" aria-pressed="false">Attitudes and adoption <span class="topic-chip__n">2</span></button></div>
 <div class="news-list">
+<div class="news-card" data-topic="teaching-and-curriculum">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03362-2">Artificial intelligence across the medical education continuum: institutional, learning, readiness and safety systems</a>
+    <p class="news-card-summary">Examines how artificial intelligence fits across the medical education continuum, covering institutional, learning, readiness, and safety systems for training programs.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="exams-and-benchmarks">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 9, 2026</span></div>
@@ -90,18 +97,18 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">An npj Digital Medicine study validates large language model assisted assessment, checked by human reviewers, for a large online precision medicine course in diabetes.</p>
   </div>
 </div>
-<div class="news-card" data-topic="simulation-and-skills">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03375-x">Development and validation of an objective skills scoring system for robotic inguinal hernia repairs</a>
-    <p class="news-card-summary">Researchers developed and validated an objective scoring system for assessing surgeons&#x27; skills in robotic inguinal hernia repair.</p>
-  </div>
-</div>
 </div>
 
-??? abstract "Show the other 31 items"
+??? abstract "Show the other 32 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="simulation-and-skills">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03375-x">Development and validation of an objective skills scoring system for robotic inguinal hernia repairs</a>
+        <p class="news-card-summary">Researchers developed and validated an objective scoring system for assessing surgeons&#x27; skills in robotic inguinal hernia repair.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="exams-and-benchmarks">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">PubMed AI in medical education</span><span class="news-card-date">October 8, 2026</span></div>
@@ -335,13 +342,27 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">38</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">19</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">40</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">21</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="other" aria-pressed="false">Other <span class="topic-chip__n">1</span></button></div>
 <div class="news-list">
 <div class="news-card" data-topic="clinical-documentation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 10, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03373-z">VOICE-AE: automated CTCAE scoring from ambient clinical audio using speech recognition and large language models</a>
     <p class="news-card-summary">npj Digital Medicine reports VOICE-AE, a system that uses speech recognition and large language models to score adverse events using the CTCAE grading scale automatically from ambient clinical audio.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03348-0">FHIR-AgentEval: a modular sandbox for benchmarking clinical LLM agents with memory-augmented configurations</a>
+    <p class="news-card-summary">Describes FHIR-AgentEval, a modular test environment for benchmarking clinical large language model agents, including configurations with memory, using the FHIR Fast Healthcare Interoperability Resources health data standard.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03384-w">Six pragmatic steps to separate medical GenAI’s promise from its inherent dangers</a>
+    <p class="news-card-summary">A commentary proposing six practical steps for separating the benefits of generative AI and agentic systems in medicine from their risks, noting that their capacity for good is tied to potential for harm.</p>
   </div>
 </div>
 <div class="news-card" data-topic="patient-facing-tools">
@@ -393,25 +414,25 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">An npj Digital Medicine study evaluates GPT-5 as a generalist AI agent for real-world multimodal medical diagnosis and examines how task complexity affects its performance.</p>
   </div>
 </div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04691-1">AI-assisted scoping review of code sharing in clinical prediction model research</a>
-    <p class="news-card-summary">A Nature Medicine analysis of open-access literature finds that code sharing in clinical prediction model research remains limited, with wide variation in practices and documentation quality.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e101715">Cybersecurity of Large Language Models Across the Deployment Life Cycle in Health Systems</a>
-    <p class="news-card-summary">A Viewpoint proposes a life cycle framework of cybersecurity measures for deploying large language models in health systems, drawing on security and clinical informatics literature.</p>
-  </div>
-</div>
 </div>
 
-??? abstract "Show the other 28 items"
+??? abstract "Show the other 30 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">Nature Medicine</span><span class="news-card-date">October 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.nature.com/articles/s41591-026-04691-1">AI-assisted scoping review of code sharing in clinical prediction model research</a>
+        <p class="news-card-summary">A Nature Medicine analysis of open-access literature finds that code sharing in clinical prediction model research remains limited, with wide variation in practices and documentation quality.</p>
+      </div>
+    </div>
+    <div class="news-card" data-topic="safety-and-evaluation">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">JMIR Medical Informatics</span><span class="news-card-date">October 8, 2026</span></div>
+        <a class="news-card-title" href="https://medinform.jmir.org/2026/1/e101715">Cybersecurity of Large Language Models Across the Deployment Life Cycle in Health Systems</a>
+        <p class="news-card-summary">A Viewpoint proposes a life cycle framework of cybersecurity measures for deploying large language models in health systems, drawing on security and clinical informatics literature.</p>
+      </div>
+    </div>
     <div class="news-card" data-topic="patient-facing-tools">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">STAT News AI</span><span class="news-card-date">October 8, 2026</span></div>
@@ -629,8 +650,16 @@ Items are selected several times a day by an automated pipeline and the summarie
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">44</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">16</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">12</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">45</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">17</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">12</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">10</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="benchmarks-and-evaluation" aria-pressed="false">Benchmarks and evaluation <span class="topic-chip__n">1</span></button></div>
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1009337/satya-nadella-says-we-should-assume-all-ai-models-are-compromised">Satya Nadella says we should assume all AI models are ‘compromised’</a>
+    <p class="news-card-summary">Microsoft CEO Satya Nadella argued in a post on X that advanced AI models should be assumed compromised and that AI can no longer be treated as nested black boxes whose outputs are simply accepted.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/10/STK178_Satya_Nadella_B.jpg?quality=90&amp;strip=all&amp;crop=0%2C9.9676601489831%2C100%2C80.064679702034&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="safety-and-reliability">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 10, 2026</span></div>
@@ -701,19 +730,19 @@ Items are selected several times a day by an automated pipeline and the summarie
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/08/STK155_OPEN_AI_CVirginia_C-1.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
-<div class="news-card" data-topic="safety-and-reliability">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">October 9, 2026</span></div>
-    <a class="news-card-title" href="https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no">We’re putting too much faith in AI’s ability to say no</a>
-    <p class="news-card-summary">MIT Technology Review argues that society places too much confidence in the ability of AI systems to refuse requests, examining the limits of machine refusal as a safety approach.</p>
-  </div>
-  <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/10/0924OP.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
 </div>
 
-??? abstract "Show the other 34 items"
+??? abstract "Show the other 35 items"
 
     <div class="news-list news-list--more">
+    <div class="news-card" data-topic="safety-and-reliability">
+      <div class="news-card-body">
+        <div class="news-card-head"><span class="source-chip">MIT Technology Review AI</span><span class="news-card-date">October 9, 2026</span></div>
+        <a class="news-card-title" href="https://www.technologyreview.com/2026/10/09/1145728/we-are-putting-too-much-faith-in-ai-to-say-no">We’re putting too much faith in AI’s ability to say no</a>
+        <p class="news-card-summary">MIT Technology Review argues that society places too much confidence in the ability of AI systems to refuse requests, examining the limits of machine refusal as a safety approach.</p>
+      </div>
+      <img class="news-card-thumb" src="https://wp.technologyreview.com/wp-content/uploads/2026/10/0924OP.jpg?resize=1200,600" alt="" loading="lazy" onerror="this.style.display='none'">
+    </div>
     <div class="news-card" data-topic="industry-and-policy">
       <div class="news-card-body">
         <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 8, 2026</span></div>

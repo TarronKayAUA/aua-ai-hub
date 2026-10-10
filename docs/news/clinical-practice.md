@@ -31,6 +31,20 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">npj Digital Medicine reports VOICE-AE, a system that uses speech recognition and large language models to score adverse events using the CTCAE grading scale automatically from ambient clinical audio.</p>
   </div>
 </div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03348-0">FHIR-AgentEval: a modular sandbox for benchmarking clinical LLM agents with memory-augmented configurations</a>
+    <p class="news-card-summary">Describes FHIR-AgentEval, a modular test environment for benchmarking clinical large language model agents, including configurations with memory, using the FHIR Fast Healthcare Interoperability Resources health data standard.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 10, 2026</span></div>
+    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03384-w">Six pragmatic steps to separate medical GenAI’s promise from its inherent dangers</a>
+    <p class="news-card-summary">A commentary proposing six practical steps for separating the benefits of generative AI and agentic systems in medicine from their risks, noting that their capacity for good is tied to potential for harm.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="patient-facing-tools">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 9, 2026</span></div>
@@ -114,20 +128,6 @@ Items are selected several times a day by an automated pipeline and the summarie
     <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 8, 2026</span></div>
     <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03344-4">Beyond language: embodiment, interpersonal synchrony, and multisensory interaction in AI-mediated psychotherapy</a>
     <p class="news-card-summary">An npj Digital Medicine article examines embodiment, interpersonal synchrony, and multisensory interaction as factors beyond language in AI-mediated psychotherapy.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03243-8">An audit-ready EHR foundation model for order-time medication-safety auditing across health systems</a>
-    <p class="news-card-summary">An npj Digital Medicine study describes an electronic health record foundation model for auditing medication orders at order time for safety across multiple health systems.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e104856">Safety-Filter Fallback on Consumer Health Questions During the Initial Claude Fable 5 Deployment: Observational Study</a>
-    <p class="news-card-summary">An observational study examines how a safety filter in Claude Fable 5 rerouted consumer health questions to the fallback model Claude Opus 4.8 during the initial deployment, including safe questions that were declined.</p>
   </div>
 </div>
 </div>
