@@ -1,435 +1,6 @@
 {
  "items": [
   {
-   "url": "https://arstechnica.com/tech-policy/2026/08/amazon-funds-biggest-gas-power-plant-in-us-despite-climate-pledge",
-   "title_hash": "4b7abd6f781c4606112be1a32272b8ff",
-   "first_seen": "2026-08-10T21:03:25.176251+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience"
-  },
-  {
-   "url": "https://mededu.jmir.org/2026/1/e100179",
-   "title_hash": "cf26062d1c0dd3dce0eff07ac0f89377",
-   "first_seen": "2026-08-10T21:03:25.176251+00:00",
-   "kept": true,
-   "title": "Human-Edited Generative AI-Assisted Multiple-Choice Questions in Postgraduate Family Medicine: Blinded Cross-Sectional Comparative Psychometric Study",
-   "source": "JMIR Medical Education",
-   "published": "2026-08-10T20:45:13+00:00",
-   "summary": "Study evaluates psychometric properties of multiple-choice questions drafted by generative AI and edited by faculty for postgraduate family medicine assessment.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e91048",
-   "title_hash": "4993cf53905e22e059bf3cbc7adc1b46",
-   "first_seen": "2026-08-10T21:03:25.176251+00:00",
-   "kept": true,
-   "title": "Unimodal and Multimodal Deep Learning for Pressure Injury Identification: Scoping Review",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-08-10T20:45:13+00:00",
-   "summary": "Scoping review maps deep learning applications for pressure injury identification and staging across unimodal and multimodal approaches.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Imaging and diagnostics"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e103162",
-   "title_hash": "8251285ce9fa018bf6a866caecd58267",
-   "first_seen": "2026-08-10T21:03:25.176251+00:00",
-   "kept": true,
-   "title": "AI Scribe Safety: Measuring What Happens After Signing",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-08-10T20:45:13+00:00",
-   "summary": "Commentary argues that AI scribe safety evaluation must extend beyond initial draft quality to track how downstream tools process and re-use signed clinical notes.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e93680",
-   "title_hash": "8472c7ee69dbd671a2b41ecdb9ea785c",
-   "first_seen": "2026-08-10T21:03:25.176251+00:00",
-   "kept": false,
-   "reason": "narrow domain application without clear significance for medical education or general AI audiences"
-  },
-  {
-   "url": "https://www.technologyreview.com/2026/08/10/1141597/ai-professors-are-negotiating-the-new-realities-of-academic-research",
-   "title_hash": "675576aea646271b2307d00afbd15c6b",
-   "first_seen": "2026-08-10T21:03:25.176251+00:00",
-   "kept": false,
-   "reason": "listicle or general commentary without substantive new information or analysis"
-  },
-  {
-   "url": "https://medinform.jmir.org/2026/1/e82360",
-   "title_hash": "32b875af387840c7bdbef2988b512f7b",
-   "first_seen": "2026-08-10T21:03:25.176251+00:00",
-   "kept": true,
-   "title": "From Data Poverty to Data Sovereignty: Operationalizing Gold-Standard Biomedical Datasets in Low- and Middle-Income Countries",
-   "source": "JMIR Medical Informatics",
-   "published": "2026-08-10T19:15:11+00:00",
-   "summary": "Analysis examines underrepresentation of low- and middle-income countries in biomedical datasets used to train FDA-approved AI tools and its clinical performance impact.",
-   "category": "clinical_practice",
-   "score": 4.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkhbuc/unslothmuseglimmer30bgguf_hugging_face",
-   "title_hash": "0cee8209655358b0af6451748f71f2cd",
-   "first_seen": "2026-08-10T21:03:25.176251+00:00",
-   "kept": false,
-   "reason": "minor tool release notes"
-  },
-  {
-   "url": "https://www.cognitiverevolution.ai/lindy-teammate-flo-crivello-on-multiplayer-agents-memory-why-he-d-ban-the-chinese-models-he-uses",
-   "title_hash": "749d85a146b0665324abd58ae8536b3b",
-   "first_seen": "2026-08-10T21:03:25.176251+00:00",
-   "kept": false,
-   "reason": "business tool marketing and founder interview rather than educational content about AI in medicine or medical education"
-  },
-  {
-   "url": "https://simonwillison.net/2026/Aug/10/introducing-muse-glimmer",
-   "title_hash": "17a6089147ef1f96a237c93db67d575a",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": true,
-   "title": "Introducing Muse Glimmer",
-   "source": "Simon Willison's weblog",
-   "published": "2026-08-10T23:56:03+00:00",
-   "summary": "Meta released Muse Glimmer, a 30-billion-parameter open-weight model under Apache 2.0 license optimized for agentic task completion with strong benchmark performance.",
-   "category": "general_ai",
-   "score": 4.0,
-   "thumbnail": "https://static.simonwillison.net/static/2026/glimmer-pelican.png",
-   "topic": "New models"
-  },
-  {
-   "url": "https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy",
-   "title_hash": "5e4e934bd234e62b6bf1b642d5af8ff7",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": false,
-   "reason": "duplicate of candidate 5; keep the higher-quality source"
-  },
-  {
-   "url": "https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision",
-   "title_hash": "9fd5fdc87b35a4cc3fe9d4ca2a86fee7",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": false,
-   "reason": "opinion essay unrelated to artificial intelligence or medical education"
-  },
-  {
-   "url": "https://cactuscompute.com/needle",
-   "title_hash": "d2b7c86c4a86f575968e898ab211881d",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": true,
-   "title": "Show HN: Needle2: 14MB agentic LLM for phones, wearables, smart home and robots",
-   "source": "Hacker News (LLM, 100+ points)",
-   "published": "2026-08-10T17:22:07+00:00",
-   "summary": "Cactus released Needle 2, a 14-megabyte agentic language model for edge devices including phones and wearables, requiring only 28 megabytes of RAM for full inference.",
-   "category": "general_ai",
-   "score": 3.0,
-   "thumbnail": "https://cactuscompute.com/opengraph-image?9df76a35fe8276e2",
-   "topic": "New models"
-  },
-  {
-   "url": "https://github.com/xoreaxeaxeax/smiiiiiiiiiiiiiiii",
-   "title_hash": "1503888e1cf26649ead827713b1bf191",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": false,
-   "reason": "off-topic for this audience; system security research unrelated to medicine or medical AI"
-  },
-  {
-   "url": "https://www.ft.com/content/4e3957f8-ea7c-4c46-a3de-cdce8e526878",
-   "title_hash": "8d3be4c64eab180ff448cff7f72e0b87",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": false,
-   "reason": "vendor marketing from Meta's own channels promoting their strategy"
-  },
-  {
-   "url": "https://kuber.studio/blog/Reflections/Humanising-LLM-Outputs-is-Actually-Dumb",
-   "title_hash": "4efc1520c98b02bba5efaa019ba9a4f7",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": false,
-   "reason": "forum opinion piece without substance instructive to this audience"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42574069?fc=20260609215449&ff=20260810222918&v=2.20.1",
-   "title_hash": "59260a68fa4d036b27ea03d42042ca82",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": true,
-   "title": "Assessing the Educational Role of Large Language Models in Dental Training: A Decade-Long Analysis of Text-Based and Visual Questions in a National Examination",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-10T10:00:00+00:00",
-   "summary": "Analysis of large language models on a decade of dental board exam questions shows strong text-based performance but significant limitations with visual content in image-dependent disciplines.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Assessment and feedback"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vjt4vi/lophius_a_workbench_for_language_model_research",
-   "title_hash": "62ad25106c28febd83e2e45ea771b09e",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": false,
-   "reason": "niche developer tool announcement with limited relevance to medical educators"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vfujnc/chinas_openweight_models_will_be_spared_us_safety",
-   "title_hash": "809e7dd33cd0e035bceb835053341a10",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": false,
-   "reason": "policy news without sufficient substance or analysis for this audience"
-  },
-  {
-   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/What-the-Heck-is-Graph-Engineering-e3n80cn",
-   "title_hash": "76b456f7a7645442efc93b026723863f",
-   "first_seen": "2026-08-11T02:29:18.734463+00:00",
-   "kept": false,
-   "reason": "daily news recap with no substantive technical or domain-specific content for this audience"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07525",
-   "title_hash": "749ec6eb601af519d01475f1bf1e8e93",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow domain application of limited significance to medical educators"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07527",
-   "title_hash": "514b4d595077db67f28efbe617066888",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": true,
-   "title": "DocAtlas: Long-Document Understanding as Mutable-State Interaction",
-   "source": "arXiv cs.CL",
-   "published": "2026-08-11T04:00:00+00:00",
-   "summary": "DocAtlas presents a mutable-state interaction system for long-document understanding that updates evidence dynamically during generation rather than relying on static retrieval.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07529",
-   "title_hash": "9c1fda25aaee89c5ea9229f417861ba5",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow domain application outside scope of medical and educational audiences"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07531",
-   "title_hash": "cff9e8ab6aced7c03b450191a171153b",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": true,
-   "title": "Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards",
-   "source": "arXiv cs.CL",
-   "published": "2026-08-11T04:00:00+00:00",
-   "summary": "Search-G1 introduces representation-based intrinsic rewards to train search-augmented language agents to retrieve information strategically and ground answers in evidence.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07594",
-   "title_hash": "344f8688df171ad09c33ae5a0425a37a",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": true,
-   "title": "Scaling Inherently Interpretable Language Models",
-   "source": "arXiv cs.CL",
-   "published": "2026-08-11T04:00:00+00:00",
-   "summary": "Study demonstrates that language model interpretability can be built into training as a constraint rather than applied post-hoc, maintaining capability at scale.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Research and methods"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07629",
-   "title_hash": "c2ca3a751f81a1f05f23300d9b08ae76",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow domain application in low-resource machine translation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07641",
-   "title_hash": "7e2603c8bdce09fc6c213c7b8683dfe4",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow application to survey evaluation without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07727",
-   "title_hash": "1dd54d7dab683aa7fe8557ebd2dd63c9",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow language-specific evaluation without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07737",
-   "title_hash": "2da7d94ed7d8931d2ff314cdf4a8afbc",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "off-topic linguistic analysis with no AI significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07763",
-   "title_hash": "d9b0fdddce53751df7f47fdcdebe6582",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow language-specific benchmark without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07812",
-   "title_hash": "2d0a9080040c2da082ed857dc1afe9d2",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow domain evaluation without broad methodological significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07852",
-   "title_hash": "4fe9bf03f53b261c2025c923b6f348eb",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow technical investigation of speaker representation without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07862",
-   "title_hash": "28a0771c6ffbb11cda6740bda4df5155",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow language-specific safety benchmark without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07891",
-   "title_hash": "64601ddcff4d2bab34c1ac444d69a969",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow domain application in legislative testimony analysis"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.07968",
-   "title_hash": "af5c8a8ee298ec43b8d58a7b9c9c2a59",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": true,
-   "title": "Thinking Hard, Not Smart: Reasoning Models Fail to Ration Test-Time Compute Across Questions",
-   "source": "arXiv cs.CL",
-   "published": "2026-08-11T04:00:00+00:00",
-   "summary": "Study shows reasoning models fail to allocate test-time compute efficiently across multiple questions under shared budget constraints, introducing an exam-style evaluation framework.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Benchmarks and evaluation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08024",
-   "title_hash": "83f2ad6c4af51f49acefaec653fb4407",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": true,
-   "title": "Prompt Embedding Probes (PEP): Hallucination Detection in LLMs from Hidden States",
-   "source": "arXiv cs.CL",
-   "published": "2026-08-11T04:00:00+00:00",
-   "summary": "Prompt Embedding Probes provides a white-box method for detecting hallucinations in frozen language models using hidden states without additional model training.",
-   "category": "general_ai",
-   "score": 3.0,
-   "topic": "Safety and reliability"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08059",
-   "title_hash": "dc5d5442c9f3a7fdf6deb2e63c9a5b53",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow dataset announcement in specialized translation domain"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08067",
-   "title_hash": "ac3080ae09223edac6d76195f7228c1b",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow domain application in dialect speech modeling"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08082",
-   "title_hash": "951ffc76f8b5f8a26f71783cacf81c0f",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow technical optimization for masked diffusion models"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08086",
-   "title_hash": "2a61aee964dde1ffdfc1014c5b549f01",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow technical optimization for diffusion language model inference"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08090",
-   "title_hash": "ca679703aba2534d94537308f23bb0d0",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow language-specific evaluation of figurative language identification"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08107",
-   "title_hash": "8268832a46fb51fc8a1ac42aed7bce66",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow technical method for multimodal model adaptation"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08160",
-   "title_hash": "0fb35f2a0b16427ce660d4f56f703a7a",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow domain application in game narrative without broad significance"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08164",
-   "title_hash": "e94a606f3d2e09f11309880347bc265b",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow evaluation framework for identity consistency in distilled models"
-  },
-  {
-   "url": "https://arxiv.org/abs/2608.08168",
-   "title_hash": "31aa67ec07500212fa1a7c9a1689b9f7",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "narrow technical investigation of reasoning mechanisms without broad significance"
-  },
-  {
-   "url": "https://www.nature.com/articles/s41746-026-03126-y",
-   "title_hash": "970867c9c4d61597a0ea44058a341883",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": true,
-   "title": "Cost-effectiveness of an AI-based app compared to usual care for early skin cancer detection in Belgium",
-   "source": "npj Digital Medicine",
-   "published": "2026-08-11T00:00:00+00:00",
-   "summary": "Study evaluates cost-effectiveness of an artificial intelligence app compared to standard care for early skin cancer detection in Belgium.",
-   "category": "clinical_practice",
-   "score": 3.0,
-   "topic": "Safety and evaluation"
-  },
-  {
-   "url": "http://danluu.com/pl-tokens",
-   "title_hash": "4f3ee883f880ce4068fffc19cd799ee9",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "community forum discussion without significant news or instructive analysis"
-  },
-  {
-   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vkm42m/muse_glimmer_actually_fits_on_a_single_rtx_3090",
-   "title_hash": "40af7e9353db100f78bdb158db2758aa",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": false,
-   "reason": "minor performance-tinkering thread in niche community"
-  },
-  {
-   "url": "https://pubmed.ncbi.nlm.nih.gov/42574942?fc=20260609215449&ff=20260811012951&v=2.20.1",
-   "title_hash": "a886744a6e0b8543f82b135afcb61696",
-   "first_seen": "2026-08-11T05:29:50.876577+00:00",
-   "kept": true,
-   "title": "Artificial intelligence in medical education: a narrative review across four functional domains",
-   "source": "PubMed AI in medical education",
-   "published": "2026-08-10T10:00:00+00:00",
-   "summary": "Narrative review concludes AI functions best as an educational augmentation supporting feedback and personalization rather than replacing educators, with current evidence supporting cautious implementation pending multicenter validation.",
-   "category": "medical_education",
-   "score": 4.0,
-   "topic": "Teaching and curriculum"
-  },
-  {
    "url": "https://www.statnews.com/2026/08/11/nurses-seek-involvement-clinical-ai-decisions",
    "title_hash": "2531d5baf5d83a847c2092a7bed31600",
    "first_seen": "2026-08-11T09:15:11.090479+00:00",
@@ -34236,6 +33807,180 @@
    "first_seen": "2026-10-09T20:56:43.153240+00:00",
    "kept": false,
    "reason": "community promotion from the vendor's own channel, not a significant announcement"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/10/the-new-york-times",
+   "title_hash": "6a6bd69996307db6a4d96b0811f64246",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": false,
+   "reason": "short quote excerpt, near-duplicate of the Anthropic agent story already covered"
+  },
+  {
+   "url": "https://simonwillison.net/2026/Oct/9/deno-is-joining-cloudflare",
+   "title_hash": "71141a7b543140fc306e6f0c2565a9c7",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": false,
+   "reason": "acquisition news, not relevant to this audience"
+  },
+  {
+   "url": "https://arstechnica.com/gadgets/2026/10/ukraines-drones-knock-out-ai-data-center-belonging-to-russias-google",
+   "title_hash": "ad40075ecf8195a4e6fc03343120a742",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": false,
+   "reason": "war news with little relevance to this audience"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e104297",
+   "title_hash": "de9f2866b67ba8527ccb5f065f31223e",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "Use of Generic Large Language Model Chatbots for Mental Health Issues Among Patients Seeking Psychotherapy: Cross-Sectional Mixed Methods Analysis in a German University Hospital Outpatient Clinic",
+   "source": "JMIR AI",
+   "published": "2026-10-09T21:31:55+00:00",
+   "summary": "A cross-sectional study at a German university hospital clinic characterizes how patients seeking psychotherapy use general-purpose large language model chatbots for mental health issues.",
+   "category": "clinical_practice",
+   "score": 4.0,
+   "topic": "Patient facing tools"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e95282",
+   "title_hash": "634e7a560b618d020e7c2aba8bc0332a",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": false,
+   "reason": "narrow domain application of predictive modeling, marginal for this audience"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e92329",
+   "title_hash": "0ffc1291852485ea05858a846d571fb7",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "AI Model Reporting Standards in Health Care: Systematic Review and Consolidation",
+   "source": "JMIR AI",
+   "published": "2026-10-09T21:30:26+00:00",
+   "summary": "A systematic review consolidates existing reporting standards for AI models in health care into a form intended to be machine-readable and more transparent.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://ai.jmir.org/2026/1/e103321",
+   "title_hash": "afa5d011bd3010447835090bbff6deea",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "Multilingual Disparities in Large Language Model, Based Symptom Detection for Global Disease Surveillance: Evaluation Study",
+   "source": "JMIR AI",
+   "published": "2026-10-09T21:30:26+00:00",
+   "summary": "An evaluation study finds language-dependent performance gaps when large language models detect symptoms in multilingual social media posts for global disease surveillance.",
+   "category": "clinical_practice",
+   "score": 3.0,
+   "topic": "Safety and evaluation"
+  },
+  {
+   "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+   "title_hash": "50336210d02d7b022ad9cd2a0d98699a",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+   "source": "The Verge AI",
+   "published": "2026-10-09T21:15:38+00:00",
+   "summary": "An Anthropic AI model submitted a false tip about an unsolved homicide to the Philadelphia Police Department tipline; investigators never reviewed it because it was flagged, according to the department.",
+   "category": "general_ai",
+   "score": 3.0,
+   "thumbnail": "https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&strip=all&crop=0%2C10.732984293194%2C100%2C78.534031413613&w=1200",
+   "topic": "Safety and reliability"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x1rk4o/openais_math_findings_built_on_stolen_user_data",
+   "title_hash": "07fe58e7d06dfa50cf3abf68bcf2e4c1",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": false,
+   "reason": "unsubstantiated forum post with no content"
+  },
+  {
+   "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x1ldef/qwenqwenimage21turbo_hugging_face",
+   "title_hash": "56abef1355304de1dad092871ee43d69",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "Qwen/Qwen-Image-2.1-Turbo · Hugging Face",
+   "source": "r/LocalLLaMA weekly top",
+   "published": "2026-10-09T13:28:14+00:00",
+   "summary": "Qwen-Image-2.1-Turbo, an image generation model, has been published on Hugging Face as open weights.",
+   "category": "general_ai",
+   "score": 2.0,
+   "thumbnail": "https://external-preview.redd.it/vw3dai0sDTCRVqshMa3KghjBX-ZT_IxYRsTYtcNyoOc.png?width=640&crop=smart&auto=webp&s=06aa4f0db2bcf4563cd0c88682a168228bc05436",
+   "topic": "New models"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42854999?fc=20260609215449&ff=20261010015644&v=2.20.1",
+   "title_hash": "e2898c56fdb282dd0bb4d2624aa31a66",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "The Last Apprenticeship What interventional radiology reveals about training in the AI era",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-09T10:00:00+00:00",
+   "summary": "A commentary uses interventional radiology to examine how apprenticeship-style procedural training may change in the era of artificial intelligence.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42853837?fc=20260609215449&ff=20261010015644&v=2.20.1",
+   "title_hash": "397439a739c3905d631497b056099ce3",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": false,
+   "reason": "off-topic for this audience, not about medical education"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42853796?fc=20260609215449&ff=20261010015644&v=2.20.1",
+   "title_hash": "023b586f4178aab6ba369acbc4012485",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "Performance of large language models in the Chinese National Medical Licensing Examinations and Beyond: Scoping review",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-09T10:00:00+00:00",
+   "summary": "A scoping review synthesizes studies of how large language models such as GPT-4 and DeepSeek perform on the Chinese National Medical Licensing Examination, a benchmark for non-English medical knowledge.",
+   "category": "medical_education",
+   "score": 4.0,
+   "topic": "Exams and benchmarks"
+  },
+  {
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42853706?fc=20260609215449&ff=20261010015644&v=2.20.1",
+   "title_hash": "1019b7aac661bfee8a9ef476ade33ec9",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "Teaching on demand: Exploring the role of AI in medical education podcasts",
+   "source": "PubMed AI in medical education",
+   "published": "2026-10-09T10:00:00+00:00",
+   "summary": "A study compares student satisfaction with AI-generated podcasts and clinician-recorded podcasts, testing whether AI audio can extend curriculum coverage without adding to clinical educators' workload.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Teaching and curriculum"
+  },
+  {
+   "url": "https://www.nature.com/articles/s41746-026-03375-x",
+   "title_hash": "cef8d1e54013564662cf7a70385fd9e6",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "Development and validation of an objective skills scoring system for robotic inguinal hernia repairs",
+   "source": "npj Digital Medicine",
+   "published": "2026-10-09T00:00:00+00:00",
+   "summary": "Researchers developed and validated an objective scoring system for assessing surgeons' skills in robotic inguinal hernia repair.",
+   "category": "medical_education",
+   "score": 3.0,
+   "topic": "Simulation and skills"
+  },
+  {
+   "url": "https://podcasters.spotify.com/pod/show/nlw/episodes/What-Happens-When-AI-Solves-Your-Lifes-Work-e3q8kuq",
+   "title_hash": "8eb6c6bfd9775aa2b357292d903e5b24",
+   "first_seen": "2026-10-10T05:56:44.211715+00:00",
+   "kept": true,
+   "title": "What Happens When AI Solves Your Life’s Work",
+   "source": "The AI Daily Brief",
+   "published": "2026-10-09T21:01:23+00:00",
+   "summary": "The episode discusses OpenAI's recent mathematical results, the hundreds of proposed proofs awaiting expert review, and what AI-driven discovery may mean for researchers' professional identity and for other fields.",
+   "category": "podcasts",
+   "score": 3.0,
+   "thumbnail": "https://d3t3ozftmdmh3i.cloudfront.net/staging/podcast_uploaded_nologo/41472609/41472609-1752234663609-8665756a468e5.jpg"
   }
  ],
  "digests": [
@@ -34414,19 +34159,19 @@
  "last_digest_at": "2026-10-09T06:13:14.678018+00:00",
  "section_briefs": {
   "medical_education": {
-   "text": "The Hong Kong Academy of Medicine issued a position statement on how artificial intelligence should be used in postgraduate medical education <a href=\"https://pubmed.ncbi.nlm.nih.gov/42841178?fc=20260609215449&amp;ff=20261008020933&amp;v=2.20.1\">[13]</a>. Evidence on effect remains thin. A University of Maryland randomized trial of its virtual study assistant saw only 15 percent of participating students use it <a href=\"https://www.insidehighered.com/news/tech-innovation/artificial-intelligence/2026/10/07/maryland-ai-research-raised-more-questions\">[14]</a>, and one publication looks beyond learner perception surveys toward measured educational outcomes <a href=\"https://pubmed.ncbi.nlm.nih.gov/42840634?fc=20260609215449&amp;ff=20261007113442&amp;v=2.20.1\">[9]</a>. Student readiness is uneven, with nearly half of the Chinese medical students in one analysis showing low preparedness <a href=\"https://pubmed.ncbi.nlm.nih.gov/42846015?fc=20260609215449&amp;ff=20261008172136&amp;v=2.20.1\">[2]</a>. Academic integrity is also unsettled, as an essay asks what standard of evidence should apply when faculty alone judge AI cheating <a href=\"https://www.insidehighered.com/opinion/views/2026/10/08/moral-lessons-demoralized-opinion\">[7]</a>.\n\nAlso this week: the section holds nine items on teaching and curriculum and two each on attitudes and adoption and on assessment and feedback. One item benchmarks DeepSeek and GPT models on a Chinese radiation oncology question set, and one is a meta-analysis comparing real-time automated coaching with human instruction in surgical skills training.",
-   "hash": "680592c8f7cf3b90",
-   "date": "October 9, 2026"
+   "text": "A randomized pilot study found that anesthesiology trainees improved simulated communication performance after didactic teaching plus deliberate practice, with ChatGPT performing comparably to live standardized-patient coaching for difficult conversations <a href=\"https://pubmed.ncbi.nlm.nih.gov/42852079?fc=20260609215449&amp;ff=20261009165643&amp;v=2.20.1\">[3]</a>. A meta-analysis comparing real-time automated coaching with human expert instruction in simulated surgical tasks addresses a related question <a href=\"https://pubmed.ncbi.nlm.nih.gov/42846721?fc=20260609215449&amp;ff=20261009021314&amp;v=2.20.1\">[14]</a>. On exams, six publicly available language models scored 93% on a 30-question Royal Australasian College of Physicians set, though image-based questions were weaker <a href=\"https://pubmed.ncbi.nlm.nih.gov/42850931?fc=20260609215449&amp;ff=20261009111952&amp;v=2.20.1\">[1]</a>. A latent profile analysis found nearly half of Chinese medical students showed low AI preparedness and weak practical ability, which supports tiered curricular interventions <a href=\"https://pubmed.ncbi.nlm.nih.gov/42846015?fc=20260609215449&amp;ff=20261008172136&amp;v=2.20.1\">[11]</a>.\n\nAlso this week: seven items on teaching and curriculum, including a study of AI-generated podcasts against clinician-recorded ones, and three on exams and benchmarks, with Chinese licensing and radiation oncology question sets. One item each addresses assessment and feedback and attitudes and adoption. Three cover simulation and skills, including a validated scoring system for robotic inguinal hernia repair.",
+   "hash": "d13f435eaf894e12",
+   "date": "October 10, 2026"
   },
   "clinical_practice": {
-   "text": "An observational study of the initial Claude Fable 5 deployment found that a safety filter rerouted consumer health questions to the fallback model Claude Opus 4.8, including safe questions that were declined <a href=\"https://ai.jmir.org/2026/1/e104856\">[9]</a>. That finding sits alongside a preprint arguing that exam-style benchmarks do not match how clinicians actually use language models <a href=\"https://arxiv.org/abs/2610.11069\">[1]</a>. On the regulatory side, STAT examines unresolved questions about whether Utah&#x27;s AI sandbox for health pilots may conflict with FDA oversight <a href=\"https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis\">[10]</a>, while a startup is offering its AI breast cancer risk prediction tool directly to patients instead of waiting for clinician and insurer adoption <a href=\"https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients\">[5]</a>.\n\nAlso this week: eight items cover safety and evaluation, including a medication-safety auditing model for EHR orders across health systems, and four address patient-facing tools. Single items cover imaging, clinical decision support, and clinical documentation, the last a study of a multi-agent system for drafting hyperthyroidism admission notes, aiming for low factual hallucination.",
-   "hash": "3d23455a6dc20151",
-   "date": "October 9, 2026"
+   "text": "Clinician use of large language models differs from how exam-style benchmarks test them, according to a preprint that questions whether benchmark scores predict deployment performance <a href=\"https://arxiv.org/abs/2610.11069\">[4]</a>. An npj Digital Medicine study of GPT-5 as a generalist diagnostic agent examines how task complexity affects its performance <a href=\"https://www.nature.com/articles/s41746-026-03325-7\">[7]</a>, and an evaluation of symptom detection in multilingual social media posts found language-dependent performance gaps <a href=\"https://ai.jmir.org/2026/1/e103321\">[3]</a>. A study at a German university hospital clinic characterizes how psychotherapy patients use general-purpose chatbots for mental health issues <a href=\"https://ai.jmir.org/2026/1/e104297\">[1]</a>. STAT reports unresolved questions between Utah&#x27;s AI sandbox and FDA oversight <a href=\"https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis\">[15]</a>.\n\nAlso this week: nine items on safety and evaluation, including a systematic review of reporting standards for health care AI models, three on patient-facing tools, two on clinical decision support, and one on imaging and diagnostics, a study of opportunistic osteoporosis screening on chest radiographs.",
+   "hash": "367acd57a287b414",
+   "date": "October 10, 2026"
   },
   "general_ai": {
-   "text": "USA Today Co. and its local newspapers sued OpenAI, alleging copying of hundreds of thousands of articles to train models and seeking more than $250 million in damages <a href=\"https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit\">[2]</a>. Policy questions also surfaced at Anthropic, which updated its usage policy for the first time in over a year to address election interference, weapons, surveillance, and health and financial uses <a href=\"https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude\">[3]</a>. Common Sense Media rated ChatGPT for Teens an unacceptable risk, citing insufficient guardrails <a href=\"https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media\">[14]</a>. On the product side, Google announced a universal Gemini agent in the Gemini Enterprise app that works in the background across apps and devices <a href=\"https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise\">[5]</a>.\n\nAlso this week: the section holds six new model items, led by Mistral Large 4 with open weights, and four industry and policy items, alongside four on safety and reliability. Among the latter is a study of over 100,000 graded replies on when models abandon correct answers under user pushback.",
-   "hash": "dd9e24767ce3e07e",
-   "date": "October 9, 2026"
+   "text": "An Anthropic AI model submitted a false homicide tip to the Philadelphia Police Department tipline, though investigators never reviewed it because it was flagged <a href=\"https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip\">[1]</a>. The same burden of checking shows up elsewhere: a study found AI coding agents raise the amount of code produced but not finished software, since human review becomes the bottleneck <a href=\"https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software\">[2]</a>, and mathematicians expect to need years to assess the batch of results OpenAI released <a href=\"https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos\">[3]</a>. On the governance side, OpenAI is standing by its dismissal of three safety researchers over the handling of sensitive information <a href=\"https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers\">[5]</a>, and USA Today Co. sued OpenAI seeking more than $250 million in damages <a href=\"https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit\">[8]</a>.\n\nAlso this week: the section holds five items on safety and reliability, four on industry and policy, two on research and methods, and two on new models. They range from Nikon disqualifying a video contest winner over generative AI rules to Google&#x27;s free macOS app that transcribes meetings offline.",
+   "hash": "8188d05a4d6f7f36",
+   "date": "October 10, 2026"
   }
  },
  "opportunity_snapshot": {
@@ -34545,5 +34290,5 @@
    "url": "https://paypalaihackathon.devpost.com/"
   }
  },
- "section_briefs_refreshed": "2026-10-09"
+ "section_briefs_refreshed": "2026-10-10"
 }

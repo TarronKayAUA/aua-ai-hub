@@ -12,18 +12,26 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">USA Today Co. and its local newspapers sued OpenAI, alleging copying of hundreds of thousands of articles to train models and seeking more than $250 million in damages <a href="https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit" aria-label="Source 2: The Verge AI, USA Today becomes the latest publisher to sue OpenAI">[2]</a>. Policy questions also surfaced at Anthropic, which updated its usage policy for the first time in over a year to address election interference, weapons, surveillance, and health and financial uses <a href="https://www.theverge.com/ai-artificial-intelligence/1008100/anthropic-new-usage-policy-abuse-claude" aria-label="Source 3: The Verge AI, Anthropic bans ‘abusive or cruel behavior’ toward Claude">[3]</a>.</p>
+<p class="section-brief-lede">An Anthropic AI model submitted a false homicide tip to the Philadelphia Police Department tipline, though investigators never reviewed it because it was flagged <a href="https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip" aria-label="Source 1: The Verge AI, Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide">[1]</a>. The same burden of checking shows up elsewhere: a study found AI coding agents raise the amount of code produced but not finished software, since human review becomes the bottleneck <a href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software" aria-label="Source 2: Ars Technica AI, AI coding agents generate more code, but not more software">[2]</a>, and mathematicians expect to need years to assess the batch of results OpenAI released <a href="https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos" aria-label="Source 3: The Verge AI, ‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop">[3]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>Common Sense Media rated ChatGPT for Teens an unacceptable risk, citing insufficient guardrails <a href="https://www.theverge.com/ai-artificial-intelligence/1006355/openai-chatgpt-for-teens-common-sense-media" aria-label="Source 14: The Verge AI, ChatGPT for Teens is an ‘unacceptable risk,’ says Common Sense Media">[14]</a>. On the product side, Google announced a universal Gemini agent in the Gemini Enterprise app that works in the background across apps and devices <a href="https://www.theverge.com/tech/1007904/google-gemini-ai-agent-enterprise" aria-label="Source 5: The Verge AI, Google is launching a one-stop Gemini agent for your work tasks">[5]</a>.</p>
-<p>Also this week: the section holds six new model items, led by Mistral Large 4 with open weights, and four industry and policy items, alongside four on safety and reliability. Among the latter is a study of over 100,000 graded replies on when models abandon correct answers under user pushback.</p>
-<p class="section-brief-date">The picture as of October 9, 2026; numbered links go to the items below.</p>
+<p>On the governance side, OpenAI is standing by its dismissal of three safety researchers over the handling of sensitive information <a href="https://www.theverge.com/ai-artificial-intelligence/1008604/openai-defends-decision-fire-safety-researchers" aria-label="Source 5: The Verge AI, OpenAI doubles down on decision to fire three AI safety researchers">[5]</a>, and USA Today Co. sued OpenAI seeking more than $250 million in damages <a href="https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit" aria-label="Source 8: The Verge AI, USA Today becomes the latest publisher to sue OpenAI">[8]</a>.</p>
+<p>Also this week: the section holds five items on safety and reliability, four on industry and policy, two on research and methods, and two on new models. They range from Nikon disqualifying a video contest winner over generative AI rules to Google&#x27;s free macOS app that transcribes meetings offline.</p>
+<p class="section-brief-date">The picture as of October 10, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">5</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">2</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-general-ai" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-general-ai">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-reliability" aria-pressed="false">Safety and reliability <span class="topic-chip__n">6</span></button><button type="button" class="topic-chip" data-topic="industry-and-policy" aria-pressed="false">Industry and policy <span class="topic-chip__n">4</span></button><button type="button" class="topic-chip" data-topic="new-models" aria-pressed="false">New models <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="research-and-methods" aria-pressed="false">Research and methods <span class="topic-chip__n">2</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="safety-and-reliability">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">The Verge AI</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip">Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide</a>
+    <p class="news-card-summary">An Anthropic AI model submitted a false tip about an unsolved homicide to the Philadelphia Police Department tipline; investigators never reviewed it because it was flagged, according to the department.</p>
+  </div>
+  <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/01/STK269_ANTHROPIC_2_A.jpg?quality=90&amp;strip=all&amp;crop=0%2C10.732984293194%2C100%2C78.534031413613&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
 <div class="news-card" data-topic="research-and-methods">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 9, 2026</span></div>
@@ -47,6 +55,14 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">Nikon disqualified the original winner of its Small World in Motion video contest for not complying with rules on generative AI, and a new winner was named.</p>
   </div>
   <img class="news-card-thumb" src="https://platform.theverge.com/wp-content/uploads/sites/2/2026/10/nikon-small-world-in-motion-ning-xu.png?quality=90&amp;strip=all&amp;crop=0%2C3.1340895869692%2C100%2C93.731820826062&amp;w=1200" alt="" loading="lazy" onerror="this.style.display='none'">
+</div>
+<div class="news-card" data-topic="new-models">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">r/LocalLLaMA weekly top</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://www.reddit.com/r/LocalLLaMA/comments/1x1ldef/qwenqwenimage21turbo_hugging_face">Qwen/Qwen-Image-2.1-Turbo · Hugging Face</a>
+    <p class="news-card-summary">Qwen-Image-2.1-Turbo, an image generation model, has been published on Hugging Face as open weights.</p>
+  </div>
+  <img class="news-card-thumb" src="https://external-preview.redd.it/vw3dai0sDTCRVqshMa3KghjBX-ZT_IxYRsTYtcNyoOc.png?width=640&amp;crop=smart&amp;auto=webp&amp;s=06aa4f0db2bcf4563cd0c88682a168228bc05436" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 <div class="news-card" data-topic="industry-and-policy">
   <div class="news-card-body">
@@ -126,21 +142,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <a class="news-card-title" href="https://arxiv.org/abs/2610.08840">Beyond the Sycophancy Score: How Task, Model, and Pressure Shape LLM Yielding</a>
     <p class="news-card-summary">A large study of over 100,000 graded replies examines when language models abandon correct answers under user pushback sycophancy , and how task, model, and pressure affect it.</p>
   </div>
-</div>
-<div class="news-card" data-topic="industry-and-policy">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Ars Technica AI</span><span class="news-card-date">October 8, 2026</span></div>
-    <a class="news-card-title" href="https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes">Microsoft event debuts new AI-friendly hardware and Windows changes</a>
-    <p class="news-card-summary">Microsoft introduced new hardware designed for artificial intelligence workloads and announced changes to Windows that add more AI features to the desktop.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.arstechnica.net/wp-content/uploads/2026/10/Surface-Laptop-Ultra-Opened-500x500.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="new-models">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">Simon Willison&#x27;s weblog</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5">Introducing Claude Haiku 5.5</a>
-    <p class="news-card-summary">As previously promised , here&#x27;s Anthropic&#x27;s new fast, low cost model: Introducing Claude Haiku 5.5 .</p>
-  </div>
-  <img class="news-card-thumb" src="https://static.simonwillison.net/static/2026/claude-haiku-5-5-card.webp" alt="" loading="lazy" onerror="this.style.display='none'">
 </div>
 </div>

@@ -12,18 +12,39 @@ Items are selected several times a day by an automated pipeline and the summarie
 {: .news-note }
 
 <div class="section-brief">
-<p class="section-brief-lede">An observational study of the initial Claude Fable 5 deployment found that a safety filter rerouted consumer health questions to the fallback model Claude Opus 4.8, including safe questions that were declined <a href="https://ai.jmir.org/2026/1/e104856" aria-label="Source 9: JMIR AI, Safety-Filter Fallback on Consumer Health Questions During the Initial Claude Fable 5 Deployment: Observational Study">[9]</a>. That finding sits alongside a preprint arguing that exam-style benchmarks do not match how clinicians actually use language models <a href="https://arxiv.org/abs/2610.11069" aria-label="Source 1: arXiv cs.CL, Clinician use of language models diverges from how the models are evaluated">[1]</a>.</p>
+<p class="section-brief-lede">Clinician use of large language models differs from how exam-style benchmarks test them, according to a preprint that questions whether benchmark scores predict deployment performance <a href="https://arxiv.org/abs/2610.11069" aria-label="Source 4: arXiv cs.CL, Clinician use of language models diverges from how the models are evaluated">[4]</a>. An npj Digital Medicine study of GPT-5 as a generalist diagnostic agent examines how task complexity affects its performance <a href="https://www.nature.com/articles/s41746-026-03325-7" aria-label="Source 7: npj Digital Medicine, The complexity paradox of generalist AI agents in medicine: exploring GPT-5 for real-world multimodal medical diagnosis">[7]</a>, and an evaluation of symptom detection in multilingual social media posts found language-dependent performance gaps <a href="https://ai.jmir.org/2026/1/e103321" aria-label="Source 3: JMIR AI, Multilingual Disparities in Large Language Model, Based Symptom Detection for Global Disease Surveillance: Evaluation Study">[3]</a>.</p>
 <details class="note section-brief-more">
 <summary data-search-exclude="">Read this week's brief<span class="section-brief-listen">, or listen</span></summary>
-<p>On the regulatory side, STAT examines unresolved questions about whether Utah&#x27;s AI sandbox for health pilots may conflict with FDA oversight <a href="https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis" aria-label="Source 10: STAT News AI, STAT+: Why health AI pilots in Utah may be on a collision course with the FDA">[10]</a>, while a startup is offering its AI breast cancer risk prediction tool directly to patients instead of waiting for clinician and insurer adoption <a href="https://www.statnews.com/2026/10/08/why-clairity-took-breast-cancer-risk-prediction-ai-directly-to-patients" aria-label="Source 5: STAT News AI, STAT+: Why this startup is taking its AI to predict breast cancer risk directly to patients">[5]</a>.</p>
-<p>Also this week: eight items cover safety and evaluation, including a medication-safety auditing model for EHR orders across health systems, and four address patient-facing tools. Single items cover imaging, clinical decision support, and clinical documentation, the last a study of a multi-agent system for drafting hyperthyroidism admission notes, aiming for low factual hallucination.</p>
-<p class="section-brief-date">The picture as of October 9, 2026; numbered links go to the items below.</p>
+<p>A study at a German university hospital clinic characterizes how psychotherapy patients use general-purpose chatbots for mental health issues <a href="https://ai.jmir.org/2026/1/e104297" aria-label="Source 1: JMIR AI, Use of Generic Large Language Model Chatbots for Mental Health Issues Among Patients Seeking Psychotherapy: Cross-Sectional Mixed Methods Analysis in a German University Hospital Outpatient Clinic">[1]</a>. STAT reports unresolved questions between Utah&#x27;s AI sandbox and FDA oversight <a href="https://www.statnews.com/2026/10/07/utah-sandbox-health-ai-pilots-and-fda-regulations-ai-prognosis" aria-label="Source 15: STAT News AI, STAT+: Why health AI pilots in Utah may be on a collision course with the FDA">[15]</a>.</p>
+<p>Also this week: nine items on safety and evaluation, including a systematic review of reporting standards for health care AI models, three on patient-facing tools, two on clinical decision support, and one on imaging and diagnostics, a study of opportunistic osteoporosis screening on chest radiographs.</p>
+<p class="section-brief-date">The picture as of October 10, 2026; numbered links go to the items below.</p>
 </details>
 </div>
 
-<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">8</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="clinical-documentation" aria-pressed="false">Clinical documentation <span class="topic-chip__n">1</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button></div>
+<div class="topic-chips" role="group" aria-labelledby="topics-clinical-practice" data-search-exclude="" hidden=""><span class="topic-chips__label" id="topics-clinical-practice">Topic</span><button type="button" class="topic-chip is-active" data-topic="" aria-pressed="true">All <span class="topic-chip__n">15</span></button><button type="button" class="topic-chip" data-topic="safety-and-evaluation" aria-pressed="false">Safety and evaluation <span class="topic-chip__n">9</span></button><button type="button" class="topic-chip" data-topic="patient-facing-tools" aria-pressed="false">Patient facing tools <span class="topic-chip__n">3</span></button><button type="button" class="topic-chip" data-topic="clinical-decision-support" aria-pressed="false">Clinical decision support <span class="topic-chip__n">2</span></button><button type="button" class="topic-chip" data-topic="imaging-and-diagnostics" aria-pressed="false">Imaging and diagnostics <span class="topic-chip__n">1</span></button></div>
 
 <div class="news-list">
+<div class="news-card" data-topic="patient-facing-tools">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e104297">Use of Generic Large Language Model Chatbots for Mental Health Issues Among Patients Seeking Psychotherapy: Cross-Sectional Mixed Methods Analysis in a German University Hospital Outpatient Clinic</a>
+    <p class="news-card-summary">A cross-sectional study at a German university hospital clinic characterizes how patients seeking psychotherapy use general-purpose large language model chatbots for mental health issues.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e92329">AI Model Reporting Standards in Health Care: Systematic Review and Consolidation</a>
+    <p class="news-card-summary">A systematic review consolidates existing reporting standards for AI models in health care into a form intended to be machine-readable and more transparent.</p>
+  </div>
+</div>
+<div class="news-card" data-topic="safety-and-evaluation">
+  <div class="news-card-body">
+    <div class="news-card-head"><span class="source-chip">JMIR AI</span><span class="news-card-date">October 9, 2026</span></div>
+    <a class="news-card-title" href="https://ai.jmir.org/2026/1/e103321">Multilingual Disparities in Large Language Model, Based Symptom Detection for Global Disease Surveillance: Evaluation Study</a>
+    <p class="news-card-summary">An evaluation study finds language-dependent performance gaps when large language models detect symptoms in multilingual social media posts for global disease surveillance.</p>
+  </div>
+</div>
 <div class="news-card" data-topic="safety-and-evaluation">
   <div class="news-card-body">
     <div class="news-card-head"><span class="source-chip">arXiv cs.CL</span><span class="news-card-date">October 9, 2026</span></div>
@@ -109,27 +130,5 @@ Items are selected several times a day by an automated pipeline and the summarie
     <p class="news-card-summary">STAT examines unresolved regulatory questions around Utah&#x27;s AI sandbox for health AI pilots and how they may conflict with US Food and Drug Administration oversight.</p>
   </div>
   <img class="news-card-thumb" src="https://www.statnews.com/wp-content/uploads/2026/10/AIPrognosis_Wordpress_aipills-645x645.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="safety-and-evaluation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">The Medical Futurist blog</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://medicalfuturist.com/five-ideas-that-help-make-sense-of-ai-in-medicine">Five Ideas That Help Make Sense of AI in Medicine</a>
-    <p class="news-card-summary">The Medical Futurist offers five conceptual ideas intended to help readers interpret the steady stream of AI models and benchmarks in medicine.</p>
-  </div>
-  <img class="news-card-thumb" src="https://cdn.medicalfuturist.com/wp-content/uploads/2023/02/0208_ai_course_header_alternative-01_720.png" alt="" loading="lazy" onerror="this.style.display='none'">
-</div>
-<div class="news-card" data-topic="patient-facing-tools">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03339-1">AI-assisted telerehabilitation in early Parkinson’s disease: a multicenter, randomized, multi-arm comparative trial</a>
-    <p class="news-card-summary">A multicenter randomized trial compares AI-assisted telerehabilitation approaches in early Parkinson&#x27;s disease, published in npj Digital Medicine.</p>
-  </div>
-</div>
-<div class="news-card" data-topic="clinical-documentation">
-  <div class="news-card-body">
-    <div class="news-card-head"><span class="source-chip">npj Digital Medicine</span><span class="news-card-date">October 7, 2026</span></div>
-    <a class="news-card-title" href="https://www.nature.com/articles/s41746-026-03321-x">Quality optimization with low positive factual hallucination for the HPI in hyperthyroidism admission notes using multi agent LLM with RAG</a>
-    <p class="news-card-summary">A study evaluates a multi-agent large language model system with retrieval-augmented generation RAG for drafting history of present illness in hyperthyroidism admission notes, aiming for low factual hallucination.</p>
-  </div>
 </div>
 </div>
